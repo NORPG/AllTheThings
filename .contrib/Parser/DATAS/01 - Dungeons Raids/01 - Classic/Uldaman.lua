@@ -146,10 +146,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2340, {	-- Deliver the Gems
 					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
-					["providers"] = {
-						{ "n", 6868 },	-- Jarkal Mossmeld
-						{ "i", 7887 },	-- Necklace and Gem Salvage
-					},
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["qi"] = 7887,	-- Necklace and Gem Salvage
 					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -157,10 +155,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2201, {	-- Find the Gems
 					["sourceQuest"] = 2200,	-- Back to Uldaman
-					["providers"] = {
-						{ "n", 6912 },	-- Remains of a Paladin
-						{ "i", 7668 },	-- Bloodstained Journal
-					},
+					["qg"] = 6912,	-- Remains of a Paladin
+					["qi"] = 7668,	-- Bloodstained Journal
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -178,10 +174,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2339, {	-- Find the Gems and Power Source
 					["sourceQuest"] = 2338,	-- Translating the Journal
-					["providers"] = {
-						{ "n", 6868 },	-- Jarkal Mossmeld
-						{ "i", 7668 },	-- Bloodstained Journal
-					},
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["qi"] = 7668,	-- Bloodstained Journal
 					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -354,10 +348,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2946, {	-- Seeing What Happens [Alliance]
 					["sourceQuest"] = 2963,	-- Portents of Uldum [Alliance]
-					["providers"] = {
-						{ "n", 2916 },	-- Historian Karnik
-						{ "i", 6064 },	-- Miniature Platinum Discs
-					},
+					["qg"] = 2916,	-- Historian Karnik
+					["qi"] = 6064,	-- Miniature Platinum Discs
 					["coord"] = { 77.2, 11.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -365,10 +357,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2966, {	-- Seeing What Happens [Horde]
 					["sourceQuest"] = 2965,	-- Portents of Uldum [Horde]
-					["providers"] = {
-						{ "n", 5770 },	-- Nara Wildmane
-						{ "i", 6064 },	-- Miniature Platinum Discs
-					},
+					["qg"] = 5770,	-- Nara Wildmane
+					["qi"] = 6064,	-- Miniature Platinum Discs
 					["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -516,20 +506,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2318, {	-- Translating the Journal (1/2)
 					["sourceQuest"] = 2284,	-- Necklace Recovery, Take 2
-					["providers"] = {
-						{ "n", 6912 },	-- Remains of a Paladin
-						{ "i", 7886 },	-- Untranslated Journal
-					},
+					["qg"] = 6912,	-- Remains of a Paladin
+					["qi"] = 7886,	-- Untranslated Journal
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
 				q(2338, {	-- Translating the Journal (2/2)
 					["sourceQuest"] = 2318,	-- Translating the Journal
-					["providers"] = {
-						{ "n", 6868 },	-- Jarkal Mossmeld
-						{ "i", 7886 },	-- Untranslated Journal
-					},
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["qi"] = 7886,	-- Untranslated Journal
 					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

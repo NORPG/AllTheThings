@@ -89,10 +89,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if AFTER 4.3.0.14890
 					["altQuests"] = { 30120 },	-- Cleansing Drak'Tharon
 					-- #endif
-					["providers"] = {
-						{ "n", 26787 },	-- Image of Drakuru
-						{ "i", 35797 },	-- Drakuru's Elixir
-					},
+					["qg"] = 26787,	-- Image of Drakuru
+					["qi"] = 35797,	-- Drakuru's Elixir
 					["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
 					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
 					["lvl"] = lvlsquish(73, 73, 15),
@@ -105,10 +103,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(30120, {	-- Cleansing Drak'Tharon
 					["altQuests"] = { 12238 },	-- Cleansing Drak'Tharon
-					["providers"] = {
-						{ "n", 58149 },	-- Image of Drakuru
-						{ "i", 35797 },	-- Drakuru's Elixir
-					},
+					["qg"] = 58149,	-- Image of Drakuru
+					["qi"] = 35797,	-- Drakuru's Elixir
 					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
 					["lvl"] = lvlsquish(73, 73, 15),

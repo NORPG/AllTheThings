@@ -1857,10 +1857,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					},
 				})),
 				q(11526, {	-- The Missing Magistrix
-					["providers"] = {
-						{ "n", 24967 },	-- Captain Theris Dawnhearth
-						{ "i", 34420 },	-- Captured Legion Scroll
-					},
+					["qg"] = 24967,	-- Captain Theris Dawnhearth
+					["qi"] = 34420,	-- Captured Legion Scroll
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["lvl"] = lvlsquish(70, 70, 25),
 				}),

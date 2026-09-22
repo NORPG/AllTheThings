@@ -233,18 +233,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3523, {	-- Scourge of the Downs (Before Cataclysm)
-					["providers"] = {
-						{ "n", 8516 },	-- Belnistrasz
-						{ "i", 10682 },	-- Belnistrasz's Oathstone
-					},
+					["qg"] = 8516,	-- Belnistrasz
+					["qi"] = 10682,	-- Belnistrasz's Oathstone
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 32,
 				}),
 				q(27019, {	-- Scourge of the Downs (After Cataclysm)
-					["providers"] = {
-						{ "n", 8516 },	-- Belnistrasz
-						{ "i", 10682 },	-- Belnistrasz's Oathstone
-					},
+					["qg"] = 8516,	-- Belnistrasz
+					["qi"] = 10682,	-- Belnistrasz's Oathstone
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(40, 40, 15),
 				}),

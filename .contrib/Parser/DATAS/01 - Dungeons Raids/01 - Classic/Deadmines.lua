@@ -234,10 +234,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			q(27756, {	-- The Foreman
 				-- ["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
-				["providers"] = {
-					{ "n", 46612 },	-- Lieutenant Horatio Laine
-					{ "i", 62334 },	-- Stormwind Communicator Mk. II
-				},
+				["qg"] = 46612,	-- Lieutenant Horatio Laine
+				["qi"] = 62334,	-- Stormwind Communicator Mk. II
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),

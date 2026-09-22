@@ -179,10 +179,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(31168, {	-- Calligraphed Sigil
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
-							["providers"] = {
-								{ "n", 2077 },	-- Melithar Staghelm
-								{ "i", 85205 },	-- Calligraphed Sigil
-							},
+							["qg"] = 2077,	-- Melithar Staghelm
+							["qi"] = 85205,	-- Calligraphed Sigil
 							["coord"] = { 45.8, 73.0, SHADOWGLEN },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
@@ -206,10 +204,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(928, {	-- Crown of the Earth (2/6)
 							["sourceQuest"] = 921,	-- Crown of the Earth (1/6)
-							["providers"] = {
-								{ "n", 3514 },	-- Tenaron Stormgrip
-								{ "i", 5186 },	-- Partially Filled Vessel
-							},
+							["qg"] = 3514,	-- Tenaron Stormgrip
+							["qi"] = 5186,	-- Partially Filled Vessel
 							["coord"] = { 59.0, 39.4, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -249,10 +245,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(2159, {	-- Dolanaar Delivery
-							["providers"] = {
-								{ "n", 6780 },	-- Porthannius
-								{ "i", 7627 },	-- Dolanaar Delivery
-							},
+							["qg"] = 6780,	-- Porthannius
+							["qi"] = 7627,	-- Dolanaar Delivery
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 54.6, 84.7, SHADOWGLEN },
@@ -460,10 +454,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3522, {	-- Iverron's Antidote (2/2)
 							["sourceQuest"] = 3522,	-- Iverron's Antidote (1/2)
-							["providers"] = {
-								{ "n", 8583 },	-- Dirania Silvershine
-								{ "i", 10642 },	-- Iverron's Antidote
-							},
+							["qg"] = 8583,	-- Dirania Silvershine
+							["qi"] = 10642,	-- Iverron's Antidote
 							["coord"] = { 60.8, 42.0, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -538,10 +530,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						q(28730, {	-- Precious Waters
 							["sourceQuest"] = 28729,	-- Teldrassil: Crown of Azeroth
-							["providers"] = {
-								{ "n", 49479 },	-- Dentaria Silverglade
-								{ "i", 5184 },	-- Filled Crystal Phial
-							},
+							["qg"] = 49479,	-- Dentaria Silverglade
+							["qi"] = 5184,	-- Filled Crystal Phial
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
@@ -738,10 +728,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(28731, {	-- Teldrassil: Passing Awareness
 							["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 							["sourceQuest"] = 28730,	-- Precious Waters
-							["providers"] = {
-								{ "n", 3514 },	-- Tenaron Stormgrip
-								{ "i", 5186 },	-- Partially Filled Vessel
-							},
+							["qg"] = 3514,	-- Tenaron Stormgrip
+							["qi"] = 5186,	-- Partially Filled Vessel
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 47.2, 55.9, SHADOWGLEN },
@@ -1262,10 +1250,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(935, {	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 					["sourceQuest"] = 7383,	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
-					["providers"] = {
-						{ "n", 3515 },	-- Corithras Moonrage
-						{ "i", 5188 },	-- Filled Vessel
-					},
+					["qg"] = 3515,	-- Corithras Moonrage
+					["qi"] = 5188,	-- Filled Vessel
 					["coord"] = { 56.2, 61.7, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1278,10 +1264,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER CATA
 					["sourceQuest"] = 486,	-- Ursal the Mauler
 					-- #endif
-					["providers"] = {
-						{ "n", 2083 },	-- Syral Bladeleaf
-						{ "i", 5391 },	-- Rare Earth
-					},
+					["qg"] = 2083,	-- Syral Bladeleaf
+					["qi"] = 5391,	-- Rare Earth
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 55.8, 50.4, TELDRASSIL },
@@ -1463,10 +1447,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				q(6342, {	-- Flight to Auberdine / An Unexpected Gift [CATA+]
 					["sourceQuest"] = 6341,	-- The Bounty of Teldrassil / To Darnassus [CATA+]
-					["providers"] = {
-						{ "n", 3838 },	-- Vesprystus
-						{ "i", 16262 },	-- Nessa's Collection
-					},
+					["qg"] = 3838,	-- Vesprystus
+					["qi"] = 16262,	-- Nessa's Collection
 					["coord"] = { 58.4, 94.0, TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -1605,10 +1587,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(941, {	-- Planting the Heart
 					["sourceQuest"] = 927,	-- The Moss-twined Heart
 					["qg"] = 2080,	-- Denalan
-					["providers"] = {
-						{ "n", 2080 },	-- Denalan
-						{ "i", 5217 },	-- Tainted Heart
-					},
+					["qg"] = 2080,	-- Denalan
+					["qi"] = 5217,	-- Tainted Heart
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 59.9, 59.8, TELDRASSIL },
@@ -1637,10 +1617,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(922, {	-- Rellian Greenspyre
 					["sourceQuest"] = 918,	-- Timberling Seeds
-					["providers"] = {
-						{ "n", 2080 },	-- Denalan
-						{ "i", 5168 },	-- Timberling Seed
-					},
+					["qg"] = 2080,	-- Denalan
+					["qi"] = 5168,	-- Timberling Seed
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 59.9, 59.8, TELDRASSIL },
@@ -1676,10 +1654,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2943, {	-- Return to Troyas
 					["sourceQuest"] = 2944,	-- The Super Snapper FX
-					["providers"] = {
-						{ "n", 7907 },	-- Daryn Lightwind
-						{ "i", 9331 },	-- Feralas: A History
-					},
+					["qg"] = 7907,	-- Daryn Lightwind
+					["qi"] = 9331,	-- Feralas: A History
 					["coord"] = { 55.4, 92.2, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
@@ -1789,10 +1765,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(940, {	-- Teldrassil
 					["sourceQuest"] = 937,	-- The Enchanted Glade
-					["providers"] = {
-						{ "n", 3519 },	-- Sentinel Arynia Cloudsbreak
-						{ "i", 5219 },	-- Inscribed Bark
-					},
+					["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+					["qi"] = 5219,	-- Inscribed Bark
 					["coord"] = { 38.2, 34.4, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1850,10 +1824,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(2241, {	-- The Apple Falls
-					["providers"] = {
-						{ "n", 3599 },	-- Jannok Breezesong
-						{ "i", 7735 },	-- Jannok's Rose
-					},
+					["qg"] = 3599,	-- Jannok Breezesong
+					["qi"] = 7735,	-- Jannok's Rose
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1862,10 +1834,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2941, {	-- The Borrower
 					["sourceQuest"] = 2940,	-- Feralas: A History
-					["providers"] = {
-						{ "n", 7907 },	-- Daryn Lightwind
-						{ "i", 9329 },	-- A Short Note
-					},
+					["qg"] = 7907,	-- Daryn Lightwind
+					["qi"] = 9329,	-- A Short Note
 					["coord"] = { 55.4, 92.2, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1874,10 +1844,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				q(6341, {	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 					["sourceQuest"] = 6344,	-- Nessa Shadowsong
-					["providers"] = {
-						{ "n", 10118 },	-- Nessa Shadowsong
-						{ "i", 16262 },	-- Nessa's Collection
-					},
+					["qg"] = 10118,	-- Nessa Shadowsong
+					["qi"] = 16262,	-- Nessa's Collection
 					["coord"] = { 56.2, 92.4, TELDRASSIL },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -2217,10 +2185,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(935, {	-- The Waters of Teldrassil [CATA+] / Crown of the Earth (6/6)
 					["sourceQuest"] = 14005,	-- The Vengeance of Elune
-					["providers"] = {
-						{ "n", 1992 },	-- Tarindrella
-						{ "i", 5188 },	-- Filled Vessel
-					},
+					["qg"] = 1992,	-- Tarindrella
+					["qi"] = 5188,	-- Filled Vessel
 					["coord"] = { 42.5, 58.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2292,10 +2258,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(6341, {	-- To Darnassus [CATA+] / The Bounty of Teldrassil
 					["sourceQuest"] = 6344,	-- Reminders of Home
-					["providers"] = {
-						{ "n", 40553 },	-- Fidelio
-						{ "i", 16262 },	-- Dolanaar Recipe Book
-					},
+					["qg"] = 40553,	-- Fidelio
+					["qi"] = 16262,	-- Dolanaar Recipe Book
 					["coord"] = { 55.4, 50.4, TELDRASSIL },
 					["races"] = { NIGHTELF },
 				}),
@@ -2602,10 +2566,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
-					["providers"] = {
-						{ "n", 206248 },	-- Wooden Effigy
-						{ "i", 208760 },	-- Glade Crown
-					},
+					["qg"] = 206248,	-- Wooden Effigy
+					["qi"] = 208760,	-- Glade Crown
 					["coord"] = { 66.8, 58.0, TELDRASSIL },
 					["cost"] = { { "i", 208609, 3 } },	-- Glade Flower
 					["groups"] = {

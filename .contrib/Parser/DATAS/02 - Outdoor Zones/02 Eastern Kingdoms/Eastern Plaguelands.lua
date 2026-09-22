@@ -178,10 +178,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12848, {	-- The Endless Hunger
 								["sourceQuest"] = 12842,	-- Runeforging: Preparation For Battle
-								["providers"] = {
-									{ "n", 28357 },	-- Instructor Razuvious (mobileNPC)
-									{ "i", 40732 },	-- Acherus Shackle Key (PQI!)
-								},
+								["qg"] = 28357,	-- Instructor Razuvious (mobileNPC)
+								["qi"] = 40732,	-- Acherus Shackle Key (PQI!)
 								["coord"] = { 48.1, 28.4, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/1 Unworthy Initiate dominated
@@ -344,10 +342,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12698, {	-- The Gift That Keeps On Giving
 								["sourceQuest"] = 12697,	-- Gothik the Harvester
-								["providers"] = {
-									{ "n", 28658 },	-- Gothik the Harvester
-									{ "i", 39253 },	-- Gift of the Harvester (PQI!)
-								},
+								["qg"] = 28658,	-- Gothik the Harvester
+								["qi"] = 39253,	-- Gift of the Harvester (PQI!)
 								["coord"] = { 54.1, 35.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/5 Scarlet Ghoul Returned
@@ -380,10 +376,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12706, {	-- Victory At Death's Breach!
 								["sourceQuest"] = 12701,	-- Massacre At Light's Point
-								["providers"] = {
-									{ "n", 28377 },	-- Prince Valanar
-									{ "i", 39269 },	-- Prince Valanar's Report (PQI!)
-								},
+								["qg"] = 28377,	-- Prince Valanar
+								["qi"] = 39269,	-- Prince Valanar's Report (PQI!)
 								["coord"] = { 52.3, 34.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38669),	-- Engraved Saronite Legplates
@@ -439,10 +433,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12717, {	-- Noth's Special Brew
 								["sourceQuest"] = 12716,	-- The Plaguebringer's Request
-								["providers"] = {
-									{ "n", 28919 },	-- Noth the Plaguebringer
-									{ "i", 39329 },	-- Pile of Crusader Skulls (PQI!)
-								},
+								["qg"] = 28919,	-- Noth the Plaguebringer
+								["qi"] = 39329,	-- Pile of Crusader Skulls (PQI!)
 								["coord"] = { 54.7, 57.4, THE_SCARLET_ENCLAVE },
 							}),
 							q(12718, {	-- More Skulls For Brew
@@ -732,10 +724,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12754, {	-- Ambush at the Overlook
 								["sourceQuest"] = 12751,	-- A Sort of Homecoming
-								["providers"] = {
-									{ "n", 28914 },	-- Orbaz Bloodbane
-									{ "i", 39645 },	-- Makeshift Cover (PQI!)
-								},
+								["qg"] = 28914,	-- Orbaz Bloodbane
+								["qi"] = 39645,	-- Makeshift Cover (PQI!)
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/1 Scarlet Courier's Belongings
@@ -752,26 +742,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12755, {	-- A Meeting With Fate
 								["sourceQuest"] = 12754,	-- Ambush at the Overlook
-								["providers"] = {
-									{ "n", 28914 },	-- Orbaz Bloodbane
-									{ "i", 39647 },	-- Scarlet Courier's Message (PQI!)
-								},
+								["qg"] = 28914,	-- Orbaz Bloodbane
+								["qi"] = 39647,	-- Scarlet Courier's Message (PQI!)
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 							}),
 							q(12756, {	-- The Scarlet Onslaught Emerges
 								["sourceQuest"] = 12755,	-- A Meeting With Fate
-								["providers"] = {
-									{ "n", 29077 },	-- High General Abbendis
-									{ "i", 39654 },	-- The Path of Redemption (PQI!)
-								},
+								["qg"] = 29077,	-- High General Abbendis
+								["qi"] = 39654,	-- The Path of Redemption (PQI!)
 								["coord"] = { 65.7, 83.8, THE_SCARLET_ENCLAVE },
 							}),
 							q(12757, {	-- Scarlet Armies Approach
 								["sourceQuest"] = 12756,	-- The Scarlet Onslaught Emerges
-								["providers"] = {
-									{ "n", 28914 },	-- Orbaz Bloodbane
-									{ "i", 39654 },	-- The Path of Redemption (PQI!)
-								},
+								["qg"] = 28914,	-- Orbaz Bloodbane
+								["qi"] = 39654,	-- The Path of Redemption (PQI!)
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38663),	-- Blood-Soaked Saronite Plated Spaulders
@@ -784,10 +768,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12779, {	-- An End To All Things...
 								["sourceQuest"] = 12778,	-- The Scarlet Apocalypse
-								["providers"] = {
-									{ "n", 29110 },	-- The Lich King
-									{ "i", 39700 },	-- Horn of the Frostbrood (PQI!)
-								},
+								["qg"] = 29110,	-- The Lich King
+								["qi"] = 39700,	-- Horn of the Frostbrood (PQI!)
 								["coord"] = { 53.5, 36.9, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/150 Scarlet Soldier Proxy slain
@@ -837,19 +819,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(13189, {	-- Saurfang's Blessing
 								["sourceQuest"] = 13166,	-- The Battle For The Ebon Hold
-								["providers"] = {
-									{ "n", 31084 },	-- Highlord Darion Mograine
-									{ "i", 43441 },	-- To Saurfang of the Horde (PQI!)
-								},
+								["qg"] = 31084,	-- Highlord Darion Mograine
+								["qi"] = 43441,	-- To Saurfang of the Horde (PQI!)
 								["coord"] = { 83.4, 49.4, EASTERN_PLAGUELANDS },
 								["races"] = HORDE_ONLY,
 							}),
 							q(13188, {	-- Where Kings Walk
 								["sourceQuest"] = 13166,	-- The Battle For The Ebon Hold
-								["providers"] = {
-									{ "n", 31084 },	-- Highlord Darion Mograine
-									{ "i", 43440 },	-- To King Anduin Wrynn of the Alliance (PQI!)
-								},
+								["qg"] = 31084,	-- Highlord Darion Mograine
+								["qi"] = 43440,	-- To King Anduin Wrynn of the Alliance (PQI!)
 								["coord"] = { 83.4, 49.4, EASTERN_PLAGUELANDS },
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -1657,10 +1635,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27386, {	-- A Strange Historian
 					["sourceQuest"] = 27385,	-- "Little Pamela"
-					["providers"] = {
-						{ "n", 11063 },	-- Carlin Redpath
-						{ "i", 60987 },	-- Joseph's Hunting Blade
-					},
+					["qg"] = 11063,	-- Carlin Redpath
+					["qi"] = 60987,	-- Joseph's Hunting Blade
 					["coord"] = { 35.6, 68.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -3222,10 +3198,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27527, {	-- Journey's End
 					["sourceQuest"] = 27526,	-- Gidwin's Fate Revealed
-					["providers"] = {
-						{ "n", 45730 },	-- Gidwin Goldbraids
-						{ "i", 61379 },	-- Gidwin's Hearthstone
-					},
+					["qg"] = 45730,	-- Gidwin Goldbraids
+					["qi"] = 61379,	-- Gidwin's Hearthstone
 					["coord"] = { 28.5, 25.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3601,10 +3575,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5941, {	-- Return to Chromie
 					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
-					["providers"] = {
-						{ "n", 11063 },	-- Carlin Redpath
-						{ "i", 15314 },	-- Bundle of Relics
-					},
+					["qg"] = 11063,	-- Carlin Redpath
+					["qi"] = 15314,	-- Bundle of Relics
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.8, EASTERN_PLAGUELANDS },
@@ -4146,10 +4118,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84590, {	-- The Balance of Light and Shadow
 					["sourceQuest"] = 7621,	-- A Warning
-					["providers"] = {
-						{ "n",  14494 },	-- Eris Havenfire
-						{ "i", 228749 },	-- Splinter of Nordrassil
-					},
+					["qg"] = 14494,	-- Eris Havenfire
+					["qi"] = 228749,	-- Splinter of Nordrassil
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 17.6, 14.1, EASTERN_PLAGUELANDS },
@@ -4180,10 +4150,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(7622, {	-- The Balance of Light and Shadow
 					["sourceQuest"] = 7621,	-- A Warning
-					["providers"] = {
-						{ "n", 14494 },	-- Eris Havenfire
-						{ "i", 18659 },	-- Splinter of Nordrassil
-					},
+					["qg"] = 14494,	-- Eris Havenfire
+					["qi"] = 18659,	-- Splinter of Nordrassil
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 17.6, 14.1, EASTERN_PLAGUELANDS },
@@ -4544,10 +4512,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27532, {	-- The Plaguewood Tower
 					["description"] = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
 					["sourceQuest"] = 27522,	-- Beat it Out of Them
-					["providers"] = {
-						{ "n", 45451 },	-- Argus Highbeacon
-						{ "i", 61362 },	-- Highbeacon's Parcel
-					},
+					["qg"] = 45451,	-- Argus Highbeacon
+					["qi"] = 61362,	-- Highbeacon's Parcel
 					["coords"] = {
 						{ 28.3, 25.8, EASTERN_PLAGUELANDS },
 						{ 50.5, 20.2, EASTERN_PLAGUELANDS },
@@ -4760,10 +4726,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5248, {	-- Tormented By the Past
 					["sourceQuest"] = 5247,	-- Fragments of the Past
-					["providers"] = {
-						{ "n", 10304 },	-- Aurora Skycaller
-						{ "i", 13347 },	-- Crystal of Zin-Malor
-					},
+					["qg"] = 10304,	-- Aurora Skycaller
+					["qi"] = 13347,	-- Crystal of Zin-Malor
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
@@ -4826,10 +4790,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27392,	-- I'm Not Supposed to Tell You This
 						27384,	-- Pamela's Doll
 					},
-					["providers"] = {
-						{ "n", 10926 },	-- Pamela Redpath
-						{ "i", 60987 },	-- Joseph's Hunting Blade
-					},
+					["qg"] = 10926,	-- Pamela Redpath
+					["qi"] = 60987,	-- Joseph's Hunting Blade
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),

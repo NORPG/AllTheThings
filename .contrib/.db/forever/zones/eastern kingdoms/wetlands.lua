@@ -145,10 +145,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(469, {	-- Daily Delivery
-				["providers"] = {
-					{ "n", 2093 },	-- Einar Stonegrip
-					{ "i", 3347 },	-- Bundle of Crocolisk Skins
-				},
+				["qg"] = 2093,	-- Einar Stonegrip
+				["qi"] = 3347,	-- Bundle of Crocolisk Skins
 				["coord"] = { 49.8, 39.4, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 18,
@@ -221,10 +219,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(306, {	-- In Search of The Excavation Team (2/2)
 				["sourceQuest"] = 305,	-- In Search of The Excavation Team (1/2)
-				["providers"] = {
-					{ "n", 1076 },	-- Merrin Rockweaver
-					{ "i", 2639 },	-- Merrin's Letter
-				},
+				["qg"] = 1076,	-- Merrin Rockweaver
+				["qi"] = 2639,	-- Merrin's Letter
 				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 21,
@@ -269,10 +265,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(465, {	-- Nek'rosh's Gambit
 				["sourceQuest"] = 464,	-- War Banners
-				["providers"] = {
-					{ "n", 2104 },	-- Captain Stoutfist
-					{ "i", 3339 },	-- Dwarven Tinder
-				},
+				["qg"] = 2104,	-- Captain Stoutfist
+				["qi"] = 3339,	-- Dwarven Tinder
 				["coord"] = { 9.8, 57.4, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 23,

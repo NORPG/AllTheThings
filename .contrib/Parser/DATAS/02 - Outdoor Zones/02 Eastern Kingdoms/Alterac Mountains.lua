@@ -160,10 +160,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80453, {	-- Best Laid Plans
 					["sourceQuest"] = 80411,	-- The Talisman of Kazdor
-					["providers"] = {
-						{ "n",   6707 },	-- Fahrad <Grand Master Rogue>
-						{ "i", 217609 },	-- Talisman of Kazdor
-					},
+					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
+					["qi"] = 217609,	-- Talisman of Kazdor
 					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { ROGUE },
@@ -239,10 +237,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1712, {	-- Cyclonian
 					["sourceQuest"] = 1791,	-- The Windwatcher
-					["providers"] = {
-						{ "n", 6176 },	-- Bath'rah the Windwatcher
-						{ "i", 6929 },	-- Bath'rah's Parchment
-					},
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["qi"] = 6929,	-- Bath'rah's Parchment
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ARATHI_HIGHLANDS, STRANGLETHORN_VALE },
@@ -400,10 +396,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(525, {	-- Further Mysteries
 					["sourceQuest"] = 514,	-- Letter to Stormpike
-					["providers"] = {
-						{ "n", 1356 },	-- Prospector Stormpike
-						{ "i", 3518 },	-- Decrypted Letter
-					},
+					["qg"] = 1356,	-- Prospector Stormpike
+					["qi"] = 3518,	-- Decrypted Letter
 					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -476,10 +470,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(514, {	-- Letter to Stormpike
 					["sourceQuest"] = 511,	-- Encrypted Letter
-					["providers"] = {
-						{ "n", 2277 },	-- Loremaster Dibbs
-						{ "i", 3521 },	-- Cleverly Encrypted Letter
-					},
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["qi"] = 3521,	-- Cleverly Encrypted Letter
 					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -524,10 +516,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80454, {	-- One Last Drop
 					["sourceQuest"] = 80453,	-- Best Laid Plans
-					["providers"] = {
-						{ "n",   6777 },	-- Zan Shivsproket <Speciality Engineer>
-						{ "i", 217737 },	-- Modified Talisman
-					},
+					["qg"] = 6777,	-- Zan Shivsproket <Speciality Engineer>
+					["qi"] = 217737,	-- Modified Talisman
 					["coord"] = { 86.0, 80.0, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { SILVERPINE_FOREST },
@@ -584,10 +574,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(554, {	-- Stormpike's Deciphering
 					["sourceQuest"] = 551,	-- The Ensorcelled Parchment
-					["providers"] = {
-						{ "n", 2277 },	-- Loremaster Dibbs
-						{ "i", 3706 },	-- Ensorcelled Parchment
-					},
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["qi"] = 3706,	-- Ensorcelled Parchment
 					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -627,10 +615,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(508, {	-- Taretha's Gift
 					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
-					["providers"] = {
-						{ "n", 2317 },	-- Elysa
-						{ "i", 3498 },	-- Taretha's Necklace
-					},
+					["qg"] = 2317,	-- Elysa
+					["qi"] = 3498,	-- Taretha's Necklace
 					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -713,10 +699,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(521, {	-- The Crown of Will (5/5)
 					["sourceQuest"] = 520,	-- The Crown of Will (4/5)
-					["providers"] = {
-						{ "n", 2278 },	-- Melisara
-						{ "i", 3554 },	-- Crown of Will
-					},
+					["qg"] = 2278,	-- Melisara
+					["qi"] = 3554,	-- Crown of Will
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

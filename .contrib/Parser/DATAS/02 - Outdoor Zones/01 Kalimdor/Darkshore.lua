@@ -208,10 +208,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(993, {	-- A Lost Master (2/2)
 					["sourceQuest"] = 986,	-- A Lost Master (1/2)
-					["providers"] = {
-						{ "n", 3693 },	-- Terenthis
-						{ "i", 5387 },	-- Enchanted Moonstalker Cloak
-					},
+					["qg"] = 3693,	-- Terenthis
+					["qi"] = 5387,	-- Enchanted Moonstalker Cloak
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1581,10 +1579,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				q(6343, {	-- Return to Nessa / Return to Nyoma [CATA+]
 					["sourceQuest"] = 6342,	-- Flight to Auberdine
-					["providers"] = {
-						{ "n", 4200 },	-- Laird
-						{ "i", 16263 },	-- Laird's Response
-					},
+					["qg"] = 4200,	-- Laird
+					["qi"] = 16263,	-- Laird's Response
 					["coord"] = { 36.8, 44.2, DARKSHORE },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -1874,10 +1870,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(741, {	-- The Absent Minded Prospector (3/5)
 					["sourceQuest"] = 731,	-- The Absent Minded Prospector (2/5)
-					["providers"] = {
-						{ "n", 2913 },	-- Archaeologist Hollee
-						{ "i", 4654 },	-- Mysterious Fossil
-					},
+					["qg"] = 2913,	-- Archaeologist Hollee
+					["qi"] = 4654,	-- Mysterious Fossil
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
@@ -2284,10 +2278,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13513,	-- On the Brink
 						13512,	-- Strategic Strikes
 					},
-					["providers"] = {
-						{ "n", 32963 },	-- Lieutenant Morra Starbreeze
-						{ "i", 44985 },	-- Shattershield Arrow
-					},
+					["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+					["qi"] = 44985,	-- Shattershield Arrow
 					["coord"] = { 58.9, 19.4, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2629,10 +2621,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(967, {	-- The Tower of Althalaxx (3/9)
 					["sourceQuest"] = 966,	-- The Tower of Althalaxx (2/9)
-					["providers"] = {
-						{ "n", 3661 },	-- Balthule Shadowstrike
-						{ "i", 5354 },	-- Letter to Delgren
-					},
+					["qg"] = 3661,	-- Balthule Shadowstrike
+					["qi"] = 5354,	-- Letter to Delgren
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },

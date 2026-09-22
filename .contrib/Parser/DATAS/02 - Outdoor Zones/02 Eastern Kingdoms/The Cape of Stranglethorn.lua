@@ -194,10 +194,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26821, {	-- Airwyn Bantamflax
 					["sourceQuest"] = 26824,	-- Results: Inconclusive
-					["providers"] = {
-						{ "n", 44082 },	-- Bronwyn Hewstrike
-						{ "i", 58490 },	-- Opened Mosh'Ogg Bounty
-					},
+					["qg"] = 44082,	-- Bronwyn Hewstrike
+					["qi"] = 58490,	-- Opened Mosh'Ogg Bounty
 					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -219,10 +217,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(623, {	-- Akiris by the Bundle (2/2)
 					["sourceQuest"] = 617,	-- Akiris by the Bundle (1/2)
-					["providers"] = {
-						{ "n", 2494 },	-- Privateer Bloads
-						{ "i", 4028 },	-- Bundle of Akiris Reeds
-					},
+					["qg"] = 2494,	-- Privateer Bloads
+					["qi"] = 4028,	-- Bundle of Akiris Reeds
 					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUSTWALLOW_MARSH },
@@ -465,10 +461,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26495, {	-- Chabal
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
-					["providers"] = {
-						{ "n", 43095 },	-- Sassy Hardwrench
-						{ "i", 58883 },	-- Sassy's Largesse
-					},
+					["qg"] = 43095,	-- Sassy Hardwrench
+					["qi"] = 58883,	-- Sassy's Largesse
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -534,10 +528,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26826, {	-- Dask "The Flask" Gobfizzle
 					["description"] = "This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
-					["providers"] = {
-						{ "n", 44082 },	-- Bronwyn Hewstrike
-						{ "i", 58490 },	-- Opened Mosh'Ogg Bounty
-					},
+					["qg"] = 44082,	-- Bronwyn Hewstrike
+					["qi"] = 58490,	-- Opened Mosh'Ogg Bounty
 					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -545,10 +537,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26825, {	-- Dask "The Flask" Gobfizzle
 					["description"] = "This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
-					["providers"] = {
-						{ "n", 44082 },	-- Bronwyn Hewstrike
-						{ "i", 58490 },	-- Opened Mosh'Ogg Bounty
-					},
+					["qg"] = 44082,	-- Bronwyn Hewstrike
+					["qi"] = 58490,	-- Opened Mosh'Ogg Bounty
 					["coord"] = { 55.2, 42.5, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1243,10 +1233,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(602, {	-- Magical Analysis
 					["sourceQuest"] = 601,	-- Water Elementals
-					["providers"] = {
-						{ "n", 2496 },	-- Baron Revilgaz
-						{ "i", 3960 },	-- Bag of Water Elemental Bracers
-					},
+					["qg"] = 2496,	-- Baron Revilgaz
+					["qi"] = 3960,	-- Bag of Water Elemental Bracers
 					["coord"] = { 27.2, 76.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1274,10 +1262,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26808, {	-- Maywiki
 					["sourceQuest"] = 26819,	-- Akiris by the Bundle
-					["providers"] = {
-						{ "n", 44083 },	-- Linzi Hewstrike
-						{ "i", 60373 },	-- Linzi's Gift
-					},
+					["qg"] = 44083,	-- Linzi Hewstrike
+					["qi"] = 60373,	-- Linzi's Gift
 					["coord"] = { 55.4, 42.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1332,10 +1318,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26494, {	-- Mixmaster Jasper
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
-					["providers"] = {
-						{ "n", 43095 },	-- Sassy Hardwrench
-						{ "i", 58882 },	-- Sassy's Samples
-					},
+					["qg"] = 43095,	-- Sassy Hardwrench
+					["qi"] = 58882,	-- Sassy's Samples
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1405,10 +1389,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26648, {	-- Our Mortal Enemies
 					["sourceQuest"] = 26644,	-- Attracting Attention
-					["providers"] = {
-						{ "n", 43556 },	-- "Dead-Eye" Drederick McGumm
-						{ "i", 59226 },	-- Dead-Eye's Flare Gun
-					},
+					["qg"] = 43556,	-- "Dead-Eye" Drederick McGumm
+					["qi"] = 59226,	-- Dead-Eye's Flare Gun
 					["coord"] = { 46.5, 93.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1615,30 +1597,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26824, {	-- Results: Inconclusive
 					["sourceQuest"] = 26815,	-- Zanzil's Secret
-					["providers"] = {
-						{ "n", 44099 },	-- Dask "The Flask" Gobfizzle
-						{ "i", 58490 },	-- Opened Mosh'Ogg Bounty
-					},
+					["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
+					["qi"] = 58490,	-- Opened Mosh'Ogg Bounty
 					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(607, {	-- Return to MacKinley
 					["sourceQuest"] = 606,	-- Scaring Shaky
-					["providers"] = {
-						{ "n", 2502 },	-- "Shaky" Phillipe
-						{ "i", 3922 },	-- Shaky's Payment
-					},
+					["qg"] = 2502,	-- "Shaky" Phillipe
+					["qi"] = 3922,	-- Shaky's Payment
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(26594, {	-- Return to MacKinley
 					["sourceQuest"] = 26593,	-- Scaring Shaky
-					["providers"] = {
-						{ "n", 2502 },	-- "Shaky" Phillipe
-						{ "i", 3922 },	-- Shaky's Payment
-					},
+					["qg"] = 2502,	-- "Shaky" Phillipe
+					["qi"] = 3922,	-- Shaky's Payment
 					["coord"] = { 40.5, 67.8, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1870,10 +1846,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(198, {	-- Supplies to Private Thorsen
-					["providers"] = {
-						{ "n", 773 },	-- Krazek
-						{ "i", 2252 },	-- Miscellaneous Goblin Supplies
-					},
+					["qg"] = 773,	-- Krazek
+					["qi"] = 2252,	-- Miscellaneous Goblin Supplies
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2234,10 +2208,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2757,	-- Booty Bay or Bust!
 						2759,	-- In Search of Galvan
 					},
-					["providers"] = {
-						{ "n", 7794 },	-- McGavan
-						{ "i", 8686 },	-- Mithril Pendant
-					},
+					["qg"] = 7794,	-- McGavan
+					["qi"] = 8686,	-- Mithril Pendant
 					["coord"] = { 28.8, 75.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
@@ -2274,10 +2246,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(578, {	-- The Stone of the Tides
 					["sourceQuest"] = 616,	-- The Haunted Isle
-					["providers"] = {
-						{ "n", 2496 },	-- Baron Revilgaz
-						{ "i", 3898 },	-- Library Scrip
-					},
+					["qg"] = 2496,	-- Baron Revilgaz
+					["qi"] = 3898,	-- Library Scrip
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2500,10 +2470,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26630,	-- Looks Like a Tauren Pirate to Me
 						26629,	-- Seeing Where Your Loyalties Lie
 					},
-					["providers"] = {
-						{ "n", 43504 },	-- Yancey Grillsen
-						{ "i", 59149 },	-- Yer Papers
-					},
+					["qg"] = 43504,	-- Yancey Grillsen
+					["qi"] = 59149,	-- Yer Papers
 					["coord"] = { 43.8, 56.4, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),

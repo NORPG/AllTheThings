@@ -1217,10 +1217,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10004, {	-- Patience and Understanding
 						["sourceQuest"] = 10001,	-- The Master Planner
-						["providers"] = {
-							{ "n", 18417 },	-- Altruis the Sufferer
-							{ "i", 25751 },	-- The Master Planner's Blueprints (PQI!)
-						},
+						["qg"] = 18417,	-- Altruis the Sufferer
+						["qi"] = 25751,	-- The Master Planner's Blueprints (PQI!)
 						["coord"] = { 27.4, 42.0, NAGRAND },
 						["maps"] = { SHATTRATH_CITY },
 					}),

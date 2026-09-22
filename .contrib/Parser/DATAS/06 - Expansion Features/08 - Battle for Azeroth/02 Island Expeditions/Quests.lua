@@ -289,20 +289,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			["repeatable"] = true,
 		},{
 			q(53112, {	-- Azeroth's Tear
-				["providers"] = {
-					{ "n", 130216 },	-- Magni Bronzebeard
-					{ "i", 163217 },	-- Azeroth's Tear
-				},
+				["qg"] = 130216,	-- Magni Bronzebeard
+				["qi"] = 163217,	-- Azeroth's Tear
 				["coord"] = { 42.2, 44.2, SILITHUS },
 				["groups"] = {
 					i(174502),	-- Tear of Azeroth
 				},
 			}),
 			q(53118, {	-- Dented Coin (A)
-				["providers"] = {
-					{ "n", 122370 },	-- Cyrus Crestfall
-					{ "i", 163616 },	-- Dented Coin (A)
-				},
+				["qg"] = 122370,	-- Cyrus Crestfall
+				["qi"] = 163616,	-- Dented Coin (A)
 				["coord"] = { 68.0, 22.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -310,10 +306,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53120, {	-- Exotic Spices (A)
-				["providers"] = {
-					{ "n", 136269 },	-- Xun Xun Sweetflower
-					{ "i", 163614 },	-- Exotic Spices (A)
-				},
+				["qg"] = 136269,	-- Xun Xun Sweetflower
+				["qi"] = 163614,	-- Exotic Spices (A)
 				["coord"] = { 20.6, 45.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -321,10 +315,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53114, {	-- Golden Beetle (H)
-				["providers"] = {
-					{ "n", 120551 },	-- Krag'wa the Huge
-					{ "i", 163619 },	-- Golden Beetle (H)
-				},
+				["qg"] = 120551,	-- Krag'wa the Huge
+				["qi"] = 163619,	-- Golden Beetle (H)
 				["coord"] = { 75.6, 56.6, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -333,10 +325,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 			q(53115, {	-- Island Flotsam (H)
 				["sourceQuests"] = { 51142 },	-- Pests
-				["providers"] = {
-					{ "n", 126334 },	-- Jani
-					{ "i", 163620 },	-- Island Flotsam (H)
-				},
+				["qg"] = 126334,	-- Jani
+				["qi"] = 163620,	-- Island Flotsam (H)
 				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -344,10 +334,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53119, {	-- Lost Sea Scroll (A)
-				["providers"] = {
-					{ "n", 130576 },	-- Brother Pike
-					{ "i", 163615 },	-- Lost Sea Scroll (A)
-				},
+				["qg"] = 130576,	-- Brother Pike
+				["qi"] = 163615,	-- Lost Sea Scroll (A)
 				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -355,10 +343,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53117, {	-- Rusted Alliance Insignia (A)
-				["providers"] = {
-					{ "n", 135446 },	-- Vindicator Jaelaana
-					{ "i", 163617 },	-- Rusted Alliance Insignia
-				},
+				["qg"] = 135446,	-- Vindicator Jaelaana
+				["qi"] = 163617,	-- Rusted Alliance Insignia
 				["coord"] = { 69.2, 25.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -366,10 +352,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53116, {	-- Rusted Horde Insignia (H)
-				["providers"] = {
-					{ "n", 135447 },	-- Ransa Greyfeather
-					{ "i", 163621 },	-- Rusted Horde Insignia (H)
-				},
+				["qg"] = 135447,	-- Ransa Greyfeather
+				["qi"] = 163621,	-- Rusted Horde Insignia (H)
 				["coord"] = { 58.0, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -377,10 +361,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53113, {	-- Shimmering Shell (H)
-				["providers"] = {
-					{ "n", 135804 },	-- Hoarder Jena
-					{ "i", 163618 },	-- Shimmering Shell (H)
-				},
+				["qg"] = 135804,	-- Hoarder Jena
+				["qi"] = 163618,	-- Shimmering Shell (H)
 				["coord"] = { 56.7, 49.8, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["groups"] = {

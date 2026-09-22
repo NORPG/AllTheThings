@@ -310,10 +310,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["hordeQuestData"] = q(8485, {	-- The Brokering of Peace (H)
 						["maps"] = { ORGRIMMAR },
 					}),
-					["providers"] = {
-						{ "n", 11555 },	-- Gorn One Eye
-						{ "i", 21155 },	-- Timbermaw Offering of Peace
-					},
+					["qg"] = 11555,	-- Gorn One Eye
+					["qi"] = 21155,	-- Timbermaw Offering of Peace
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 64.4, 5.1, FELWOOD },

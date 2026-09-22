@@ -696,10 +696,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 68.8, 45.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -723,10 +721,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 68.8, 45.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -759,10 +755,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6388, {	-- Gryth Thurden
 					["sourceQuest"] = 6391,	-- Ride to Ironforge
-					["providers"] = {
-						{ "n", 4256 },	-- Golnir Bouldertoe
-						{ "i", 16311 },	-- Honorary Picks
-					},
+					["qg"] = 4256,	-- Golnir Bouldertoe
+					["qi"] = 16311,	-- Honorary Picks
 					["coord"] = { 51.0, 26.0, IRONFORGE },
 					["races"] = { DARKIRON, DWARF, GNOME },
 					-- #if BEFORE 4.0.3
@@ -820,10 +814,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1074, {	-- Ineptitude + Chemicals = Fun (2/2)
 					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
-					["providers"] = {
-						{ "n", 4081 },	-- Lomac Gearstrip
-						{ "i", 5732 },	-- NG-5
-					},
+					["qg"] = 4081,	-- Lomac Gearstrip
+					["qi"] = 5732,	-- NG-5
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
@@ -1064,10 +1056,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
 					["sourceQuest"] = 6388,	-- Gryth Thurden
-					["providers"] = {
-						{ "n", 1573 },	-- Gryth Thurden
-						{ "i", 16311 },	-- Honorary Picks
-					},
+					["qg"] = 1573,	-- Gryth Thurden
+					["qi"] = 16311,	-- Honorary Picks
 					["coords"] = {
 						-- #if AFTER 4.0.3
 						{ 55.8, 47.8, IRONFORGE },
@@ -1089,10 +1079,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3461, {	-- Return to Tymor
 					["sourceQuest"] = 3449,	-- Arcane Runes
-					["providers"] = {
-						{ "n", 8392 },	-- Pilot Xiggs Fuselighter
-						{ "i", 10445 },	-- Drawing Kit
-					},
+					["qg"] = 8392,	-- Pilot Xiggs Fuselighter
+					["qi"] = 10445,	-- Drawing Kit
 					["coord"] = { 77.8, 91.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1134,10 +1122,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(683, {	-- Sara Balloo's Plea
 					["sourceQuest"] = 637,	-- Sully Balloo's Letter
-					["providers"] = {
-						{ "n", 2695 },	-- Sara Balloo
-						{ "i", 4514 },	-- Sara Balloo's Plea
-					},
+					["qg"] = 2695,	-- Sara Balloo
+					["qi"] = 4514,	-- Sara Balloo's Plea
 					["coord"] = { 63.5, 67.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1145,10 +1131,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(26118, {	-- Seize the Ambassador
 					["sourceQuest"] = 26112,	-- Demanding Answers
-					["providers"] = {
-						{ "n", 42129 },	-- Moira Thaurissan
-						{ "i", 56837 },	-- Sturdy Manacles (PQI!)
-					},
+					["qg"] = 42129,	-- Moira Thaurissan
+					["qi"] = 56837,	-- Sturdy Manacles (PQI!)
 					["coord"] = { 39.8, 57.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1392,10 +1376,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1779, {	-- The Tome of Divinity (5/8)
 					["sourceQuest"] = 1778,	-- The Tome of Divinity (4/8)
-					["providers"] = {
-						{ "n", 6179 },	-- Tiza Battleforge
-						{ "i", 6866 },	-- Symbol of Life
-					},
+					["qg"] = 6179,	-- Tiza Battleforge
+					["qi"] = 6866,	-- Symbol of Life
 					["coord"] = { 27.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },

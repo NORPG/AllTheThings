@@ -304,10 +304,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9189, {	-- Delivery to the Sepulcher
 					["sourceQuest"] = 9180,	-- Journey to Undercity [Blood Elf Only]
-					["providers"] = {
-						{ "n", 16287 },	-- Ambassador Sunsorrow
-						{ "i", 22629 },	-- Sealed Sin'dorei Orders
-					},
+					["qg"] = 16287,	-- Ambassador Sunsorrow
+					["qi"] = 22629,	-- Sealed Sin'dorei Orders
 					["coord"] = { 57.8, 90.6, UNDERCITY },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
@@ -410,10 +408,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(232, {	-- Errand for Apothecary Zinge (1/2)
-					["providers"] = {
-						{ "n", 5204 },	-- Apothecary Zinge
-						{ "i", 8525 },	-- Zinge's Purchase Order
-					},
+					["qg"] = 5204,	-- Apothecary Zinge
+					["qi"] = 8525,	-- Zinge's Purchase Order
 					["coord"] = { 50.0, 68.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -421,10 +417,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(238, {	-- Errand for Apothecary Zinge (2/2)
 					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge (1/2)
-					["providers"] = {
-						{ "n", 7683 },	-- Alessandro Luca
-						{ "i", 8523 },	-- Field Testing Kit
-					},
+					["qg"] = 7683,	-- Alessandro Luca
+					["qi"] = 8523,	-- Field Testing Kit
 					["coord"] = { 58.2, 55.2, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -522,10 +516,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 4586,	-- Graham Van Talen <Journeyman Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 75.6, 74.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -549,10 +541,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 4586,	-- Graham Van Talen <Journeyman Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 75.6, 74.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -644,10 +634,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(243, {	-- Into the Field
 					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge (2/2)
-					["providers"] = {
-						{ "n", 5204 },	-- Apothecary Zinge
-						{ "i", 8523 },	-- Field Testing Kit
-					},
+					["qg"] = 5204,	-- Apothecary Zinge
+					["qi"] = 8523,	-- Field Testing Kit
 					["coord"] = { 50.1, 68.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
@@ -770,10 +758,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6322, {	-- Michael Garrett
 					["sourceQuest"] = 6323,	-- Ride to the Undercity
-					["providers"] = {
-						{ "n", 4556 },	-- Gordon Wendham
-						{ "i", 16210 },	-- Gordon's Crate
-					},
+					["qg"] = 4556,	-- Gordon Wendham
+					["qi"] = 16210,	-- Gordon's Crate
 					["coord"] = { 61.6, 41.8, UNDERCITY },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
@@ -845,10 +831,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6324, {	-- Return to Morris [CATA+] / Return to Podrig
 					["sourceQuest"] = 6322,	-- Michael Garrett
-					["providers"] = {
-						{ "n", 4551 },	-- Michael Garrett
-						{ "i", 16210 },	-- Gordon's Crate
-					},
+					["qg"] = 4551,	-- Michael Garrett
+					["qi"] = 16210,	-- Gordon's Crate
 					["coords"] = {
 						{ 44.9, 38.9, EASTERN_KINGDOMS },
 						{ 63.4, 48.6, UNDERCITY },
@@ -876,10 +860,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1358, {	-- Sample for Helbrim
 					["sourceQuest"] = 1359,	-- Zinge's Delivery
-					["providers"] = {
-						{ "n", 5204 },	-- Apothecary Zinge
-						{ "i", 6016 },	-- Wolf Heart Sample
-					},
+					["qg"] = 5204,	-- Apothecary Zinge
+					["qi"] = 6016,	-- Wolf Heart Sample
 					["coord"] = { 50.0, 68.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -919,10 +901,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, q(78199, {	-- Secrets of the Loa (2/2)
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the trolls.",
 					["sourceQuest"] = 78198,	-- Secrets of the Loa (1/2)
-					["providers"] = {
-						{ "n", 211225 },	-- Baj'ura
-						{ "i", 210080 },	-- Voodoo Offering
-					},
+					["qg"] = 211225,	-- Baj'ura
+					["qi"] = 210080,	-- Voodoo Offering
 					["coord"] = { 47.2, 19.6, UNDERCITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { DUROTAR },
@@ -974,10 +954,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3569, {	-- Seeping Corruption (2/3)
 					["sourceQuest"] = 3568,	-- Seeping Corruption (1/3)
-					["providers"] = {
-						{ "n", 8390 },	-- Chemist Cuely
-						{ "i", 10712 },	-- Cuely's Elixir
-					},
+					["qg"] = 8390,	-- Chemist Cuely
+					["qi"] = 10712,	-- Cuely's Elixir
 					["coord"] = { 47.6, 73.0, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1182,10 +1160,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1898, {	-- The Deathstalkers (2/4)
 					["sourceQuest"] = 1886,	-- The Deathstalkers (1/4)
-					["providers"] = {
-						{ "n", 6467 },	-- Mennet Carkad
-						{ "i", 7231 },	-- Astor's Letter of Introduction
-					},
+					["qg"] = 6467,	-- Mennet Carkad
+					["qi"] = 7231,	-- Astor's Letter of Introduction
 					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
@@ -1209,10 +1185,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1978, {	-- The Deathstalkers (4/4)
 					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
-					["providers"] = {
-						{ "n", 6467 },	-- Mennet Carkad
-						{ "i", 7294 },	-- Andron's Ledger
-					},
+					["qg"] = 6467,	-- Mennet Carkad
+					["qi"] = 7294,	-- Andron's Ledger
 					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = { UNDEAD },
@@ -1248,10 +1222,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(14419, {	-- The Deathstalkers (2/4)
 					["sourceQuest"] = 14420,	-- The Deathstalkers (1/4)
-					["providers"] = {
-						{ "n", 6467 },	-- Mennet Carkad
-						{ "i", 7231 },	-- Astor's Letter of Introduction
-					},
+					["qg"] = 6467,	-- Mennet Carkad
+					["qi"] = 7231,	-- Astor's Letter of Introduction
 					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },
@@ -1275,10 +1247,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(14418, {	-- The Deathstalkers (4/4)
 					["sourceQuest"] = 14421,	-- The Deathstalkers (3/4)
-					["providers"] = {
-						{ "n", 6467 },	-- Mennet Carkad
-						{ "i", 7294 },	-- Andron's Ledger
-					},
+					["qg"] = 6467,	-- Mennet Carkad
+					["qi"] = 7294,	-- Andron's Ledger
 					["coord"] = { 83.2, 69.0, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { UNDEAD },

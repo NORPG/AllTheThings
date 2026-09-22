@@ -546,10 +546,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
-					["providers"] = {
-						{ "n", 2215 },	-- High Executor Darthalia
-						{ "i", 3701 },	-- Darthalia's Sealed Commendation
-					},
+					["qg"] = 2215,	-- High Executor Darthalia
+					["qi"] = 3701,	-- Darthalia's Sealed Commendation
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -577,10 +575,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
-					["providers"] = {
-						{ "n", 2215 },	-- High Executor Darthalia
-						{ "i", 3701 },	-- Darthalia's Sealed Commendation
-					},
+					["qg"] = 2215,	-- High Executor Darthalia
+					["qi"] = 3701,	-- Darthalia's Sealed Commendation
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -809,10 +805,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				q(1712, {	-- Cyclonian (Alterac Mountains)
 					["sourceQuest"] = 1791,	-- The Windwatcher
-					["providers"] = {
-						{ "n", 6176 },	-- Bath'rah the Windwatcher
-						{ "i", 6929 },	-- Bath'rah's Parchment
-					},
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["qi"] = 6929,	-- Bath'rah's Parchment
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ARATHI_HIGHLANDS, STRANGLETHORN_VALE },
@@ -1166,10 +1160,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(513, {	-- Elixir of Agony (2/5)
 					["sourceQuest"] = 509,	-- Elixir of Agony (1/5)
-					["providers"] = {
-						{ "n", 2216 },	-- Apothecary Lydon
-						{ "i", 3506 },	-- Mudsnout Composite
-					},
+					["qg"] = 2216,	-- Apothecary Lydon
+					["qi"] = 3506,	-- Mudsnout Composite
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -1178,10 +1170,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(515, {	-- Elixir of Agony (3/5)
 					["sourceQuest"] = 513,	-- Elixir of Agony (2/5)
-					["providers"] = {
-						{ "n", 2055 },	-- Master Apothecary Faranell
-						{ "i", 3508 },	-- Mudsnout Mixture
-					},
+					["qg"] = 2055,	-- Master Apothecary Faranell
+					["qi"] = 3508,	-- Mudsnout Mixture
 					["coord"] = { 48.89, 69.21, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3388, 1 } },	-- Strong Troll's Blood Potion
@@ -1280,10 +1270,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(502, {	-- Elixir of Pain (2/2)
 					["sourceQuest"] = 501,	-- Elixir of Pain (1/2)
-					["providers"] = {
-						{ "n", 2216 },	-- Apothecary Lydon
-						{ "i", 3497 },	-- Elixir of Pain
-					},
+					["qg"] = 2216,	-- Apothecary Lydon
+					["qi"] = 3497,	-- Elixir of Pain
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1319,10 +1307,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(499, {	-- Elixir of Suffering (2/2)
 					["sourceQuest"] = 496,	-- Elixir of Suffering (1/2)
-					["providers"] = {
-						{ "n", 2216 },	-- Apothecary Lydon
-						{ "i", 3495 },	-- Elixir of Suffering
-					},
+					["qg"] = 2216,	-- Apothecary Lydon
+					["qi"] = 3495,	-- Elixir of Suffering
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1391,10 +1377,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(560, {	-- Farren's Proof (2/3)
 					["sourceQuest"] = 559,	-- Farren's Proof (1/3)
-					["providers"] = {
-						{ "n", 2228 },	-- Lieutenant Farren Orinelle
-						{ "i", 3717 },	-- Sack of Murloc Heads
-					},
+					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["qi"] = 3717,	-- Sack of Murloc Heads
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1474,10 +1458,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				q(525, {	-- Further Mysteries (Alterac Mountains)
 					["sourceQuest"] = 514,	-- Letter to Stormpike
-					["providers"] = {
-						{ "n", 1356 },	-- Prospector Stormpike
-						{ "i", 3518 },	-- Decrypted Letter
-					},
+					["qg"] = 1356,	-- Prospector Stormpike
+					["qi"] = 3518,	-- Decrypted Letter
 					["coord"] = { 74.4, 12.0, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1808,10 +1790,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1065, {	-- Journey to Tarren Mill
 					["sourceQuest"] = 1064,	-- Forsaken Aid
-					["providers"] = {
-						{ "n", 3419 },	-- Apothecary Zamah
-						{ "i", 5628 },	-- Zamah's Note
-					},
+					["qg"] = 3419,	-- Apothecary Zamah
+					["qi"] = 5628,	-- Zamah's Note
 					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1927,10 +1907,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if AFTER CATA
 				q(514, {	-- Letter to Stormpike (Alterac Mountains)
 					["sourceQuest"] = 511,	-- Encrypted Letter
-					["providers"] = {
-						{ "n", 2277 },	-- Loremaster Dibbs
-						{ "i", 3521 },	-- Cleverly Encrypted Letter
-					},
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["qi"] = 3521,	-- Cleverly Encrypted Letter
 					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2183,10 +2161,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(563, {	-- Reassignment
 					["sourceQuest"] = 562,	-- Stormwind Ho!
-					["providers"] = {
-						{ "n", 2228 },	-- Lieutenant Farren Orinelle
-						{ "i", 3721 },	-- Farren's Report
-					},
+					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["qi"] = 3721,	-- Farren's Report
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2200,10 +2176,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(542, {	-- Return to Milton
 					["sourceQuest"] = 540,	-- Preserving Knowledge
-					["providers"] = {
-						{ "n", 2277 },	-- Loremaster Dibbs
-						{ "i", 3660 },	-- Tomes of Alterac
-					},
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["qi"] = 3660,	-- Tomes of Alterac
 					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -2446,10 +2420,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if AFTER CATA
 				q(554, {	-- Stormpike's Deciphering (Alterac Mountains)
 					["sourceQuest"] = 551,	-- The Ensorcelled Parchment
-					["providers"] = {
-						{ "n", 2277 },	-- Loremaster Dibbs
-						{ "i", 3706 },	-- Ensorcelled Parchment
-					},
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["qi"] = 3706,	-- Ensorcelled Parchment
 					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2523,10 +2495,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(508, {	-- Taretha's Gift (Alterac Mountains)
 					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
-					["providers"] = {
-						{ "n", 2317 },	-- Elysa
-						{ "i", 3498 },	-- Taretha's Necklace
-					},
+					["qg"] = 2317,	-- Elysa
+					["qi"] = 3498,	-- Taretha's Necklace
 					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2646,10 +2616,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				q(521, {	-- The Crown of Will (5/5) (Alterac Mountains)
 					["sourceQuest"] = 520,	-- The Crown of Will (4/5)
-					["providers"] = {
-						{ "n", 2278 },	-- Melisara
-						{ "i", 3554 },	-- Crown of Will
-					},
+					["qg"] = 2278,	-- Melisara
+					["qi"] = 3554,	-- Crown of Will
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ALTERAC_MOUNTAINS },
@@ -2724,10 +2692,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				}),
 				q(28643, {	-- The Durnholde Challenge: Zephyrus
-					["providers"] = {
-						{ "n", 49243 },	-- Captain Jekyll
-						{ "i", 64666 },	-- The Durnholde Challenge
-					},
+					["qg"] = 49243,	-- Captain Jekyll
+					["qi"] = 64666,	-- The Durnholde Challenge
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3034,10 +3000,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 						28571,	-- Warchief's Command: Hillsbrad Foothills!
 						28089,	-- Warchief's Command: Hillsbrad Foothills!
 					},
-					["providers"] = {
-						{ "n", 2215 },	-- High Executor Darthalia
-						{ "i", 62932 },	-- Daily Report - Hillsbrad Foothills
-					},
+					["qg"] = 2215,	-- High Executor Darthalia
+					["qi"] = 62932,	-- Daily Report - Hillsbrad Foothills
 					["coord"] = { 29.2, 63.3, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,

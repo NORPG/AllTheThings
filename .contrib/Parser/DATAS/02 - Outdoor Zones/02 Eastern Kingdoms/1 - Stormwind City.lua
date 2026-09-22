@@ -842,10 +842,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(336, {	-- A Noble Brew (2/2)
 					["sourceQuest"] = 335,	-- A Noble Brew (1/2)
-					["providers"] = {
-						{ "n", 1435 },	-- Zardeth of the Black Claw
-						{ "i", 2788 },	-- Black Claw Stout
-					},
+					["qg"] = 1435,	-- Zardeth of the Black Claw
+					["qi"] = 2788,	-- Black Claw Stout
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 40.1, 85.3, STORMWIND_CITY },
@@ -892,10 +890,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78090, {	-- A Second Opinion
 					["sourceQuest"] = 78089,	-- Advice From Stormwind
-					["providers"] = {
-						{ "n",   5492 },	-- Katherine the Pure <Paladin Trainer>
-						{ "i", 209748 },	-- Althalaxx Orb
-					},
+					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
+					["qi"] = 209748,	-- Althalaxx Orb
 					["coord"] = { 37.4, 32.0, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
@@ -985,10 +981,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(11451, {	-- Alicia's Poem
-					["providers"] = {
-						{ "n", 24729 },	-- Alicia
-						{ "i", 34089 },	-- Alicia's Poem
-					},
+					["qg"] = 24729,	-- Alicia
+					["qi"] = 34089,	-- Alicia's Poem
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 81.6, 28.2, STORMWIND_CITY },
@@ -1007,10 +1001,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(396, {	-- An Audience with the King
 					["sourceQuest"] = 395,	-- Brotherhood's End
-					["providers"] = {
-						{ "n", 1646 },	-- Baros Alexston <City Architect>
-						{ "i", 2956 },	-- Report on the Defias Brotherhood
-					},
+					["qg"] = 1646,	-- Baros Alexston <City Architect>
+					["qi"] = 2956,	-- Report on the Defias Brotherhood
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
@@ -1179,10 +1171,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
 					},
-					["providers"] = {
-						{ "n", 6090 },	-- Bartleby
-						{ "i", 6781 },	-- Bartleby's Mug
-					},
+					["qg"] = 6090,	-- Bartleby
+					["qi"] = 6781,	-- Bartleby's Mug
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 76.8, 52.5, STORMWIND_CITY },
@@ -1592,10 +1582,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",
 					-- #endif
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
-					["providers"] = {
-						{ "n", 1323 },	-- Osric Strang
-						{ "i", 16115 },	-- Osric's Crate (PQI!)
-					},
+					["qg"] = 1323,	-- Osric Strang
+					["qi"] = 16115,	-- Osric's Crate (PQI!)
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 77.0, 61.2, STORMWIND_CITY },
@@ -1609,10 +1597,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26395, {	-- Dungar Longdrink
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
-					["providers"] = {
-						{ "n", 1323 },	-- Osric Strang
-						{ "i", 16115 },	-- Osric's Crate (PQI!)
-					},
+					["qg"] = 1323,	-- Osric Strang
+					["qi"] = 16115,	-- Osric's Crate (PQI!)
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 77.2, 61.0, STORMWIND_CITY },
@@ -1698,10 +1684,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7640, {	-- Exorcising Terrordale
 					["sourceQuest"] = 7639,	-- To Show Due Judgment
-					["providers"] = {
-						{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-						{ "i", 18752 },	-- Exorcism Censer
-					},
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["qi"] = 18752,	-- Exorcism Censer
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 48.6, 50.0, STORMWIND_CITY },
@@ -1770,10 +1754,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1701, {	-- Fire Hardened Mail
 					["sourceQuest"] = 1702,	-- The Shieldsmith
-					["providers"] = {
-						{ "n", 5413 },	-- Furen Longbeard
-						{ "i", 6842 },	-- Furen's Instructions
-					},
+					["qg"] = 5413,	-- Furen Longbeard
+					["qi"] = 6842,	-- Furen's Instructions
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 64.6, 37.2, STORMWIND_CITY },
@@ -1940,10 +1922,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1967,10 +1947,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2013,10 +1991,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1700, {	-- Grimand Elmore
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
-					["providers"] = {
-						{ "n", 5413 },	-- Furen Longbeard
-						{ "i", 6926 },	-- Furen's Notes
-					},
+					["qg"] = 5413,	-- Furen Longbeard
+					["qi"] = 6926,	-- Furen's Notes
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 64.6, 37.2, STORMWIND_CITY },
@@ -2052,10 +2028,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7648, {	-- Grimand's Finest Work
 					["sourceQuest"] = 7642,	-- Collection of Goods
-					["providers"] = {
-						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 18753 },	-- Arcanite Barding
-					},
+					["qg"] = 1416,	-- Grimand Elmore
+					["qi"] = 18753,	-- Arcanite Barding
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 59.7, 33.8, STORMWIND_CITY },
@@ -2081,10 +2055,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(333, {	-- Harlan Needs a Resupply
-					["providers"] = {
-						{ "n", 1427 },	-- Harlan Bagley
-						{ "i", 2724 },	-- Cloth Request (PQI!)
-					},
+					["qg"] = 1427,	-- Harlan Bagley
+					["qi"] = 2724,	-- Cloth Request (PQI!)
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 62.3, 67.9, STORMWIND_CITY },
@@ -2190,10 +2162,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2759, {	-- In Search of Galvan
 					["sourceQuest"] = 2758,	-- The Origins of Smithing
-					["providers"] = {
-						{ "n", 7798 },	-- Hank the Hammer
-						{ "i", 8663 },	-- Mithril Insignia
-					},
+					["qg"] = 7798,	-- Hank the Hammer
+					["qi"] = 8663,	-- Mithril Insignia
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 63.0, 36.4, STORMWIND_CITY },
@@ -2366,10 +2336,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(1704, {	-- Klockmort Spannerspan
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
-					["providers"] = {
-						{ "n", 5413 },	-- Furen Longbeard
-						{ "i", 6926 },	-- Furen's Notes
-					},
+					["qg"] = 5413,	-- Furen Longbeard
+					["qi"] = 6926,	-- Furen's Notes
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 64.6, 37.2, STORMWIND_CITY },
@@ -2541,10 +2509,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1703, {	-- Mathiel
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
-					["providers"] = {
-						{ "n", 5413 },	-- Furen Longbeard
-						{ "i", 6926 },	-- Furen's Notes
-					},
+					["qg"] = 5413,	-- Furen Longbeard
+					["qi"] = 6926,	-- Furen's Notes
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 64.6, 37.2, STORMWIND_CITY },
@@ -2773,10 +2739,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(334, {	-- Package for Thurman
-					["providers"] = {
-						{ "n", 1428 },	-- Rema Schneider
-						{ "i", 2760 },	-- Thurman's Sewing Kit
-					},
+					["qg"] = 1428,	-- Rema Schneider
+					["qi"] = 2760,	-- Thurman's Sewing Kit
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 58.1, 67.5, STORMWIND_CITY },
@@ -2895,10 +2859,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26396, {	-- Return to Argus
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
-					["providers"] = {
-						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-						{ "i", 16115 },	-- Osric's Crate (PQI!)
-					},
+					["qg"] = 352,	-- Dungar Longdrink <Gryphon Master>
+					["qi"] = 16115,	-- Osric's Crate (PQI!)
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
@@ -2909,10 +2871,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",
 					-- #endif
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
-					["providers"] = {
-						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-						{ "i", 16115 },	-- Osric's Crate (PQI!)
-					},
+					["qg"] = 352,	-- Dungar Longdrink <Gryphon Master>
+					["qi"] = 16115,	-- Osric's Crate (PQI!)
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 71.0, 72.5, STORMWIND_CITY },
@@ -3043,10 +3003,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(393, {	-- Shadow of the Past
 					["sourceQuest"] = 392,	-- The Curious Visitor
-					["providers"] = {
-						{ "n", 1646 },	-- Baros Alexston <City Architect>
-						{ "i", 8687 },	-- Sealed Description of Thredd's Visitor
-					},
+					["qg"] = 1646,	-- Baros Alexston <City Architect>
+					["qi"] = 8687,	-- Sealed Description of Thredd's Visitor
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
@@ -3156,10 +3114,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(353, {	-- Stormpike's Delivery
 					["sourceQuest"] = 1097,	-- Elmore's Task
-					["providers"] = {
-						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 2806 },	-- Package for Stormpike (PQI!)
-					},
+					["qg"] = 1416,	-- Grimand Elmore
+					["qi"] = 2806,	-- Package for Stormpike (PQI!)
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 59.7, 33.8, STORMWIND_CITY },
@@ -3170,10 +3126,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(579, {	-- Stormwind Library
-					["providers"] = {
-						{ "n", 2504 },	-- Donyal Tovald <Librarian>
-						{ "i", 3898 },	-- Library Scrip
-					},
+					["qg"] = 2504,	-- Donyal Tovald <Librarian>
+					["qi"] = 3898,	-- Library Scrip
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 84.6, 24.2, STORMWIND_CITY },
@@ -3382,10 +3336,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(392, {	-- The Curious Visitor
 					["sourceQuest"] = 391,	-- The Stockage Riots
-					["providers"] = {
-						{ "n", 1719 },	-- Warden Thelwater
-						{ "i", 8687 },	-- Sealed Description of Thredd's Visitor
-					},
+					["qg"] = 1719,	-- Warden Thelwater
+					["qi"] = 8687,	-- Sealed Description of Thredd's Visitor
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 51.6, 69.4, STORMWIND_CITY },
@@ -3528,10 +3480,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1241, {	-- The Missing Diplomat (2/17)
 					["sourceQuest"] = 1274,	-- The Missing Diplomat (1/17)
-					["providers"] = {
-						{ "n", 4960 },	-- Bishop DeLavey
-						{ "i", 5948 },	-- Letter to Jorgen
-					},
+					["qg"] = 4960,	-- Bishop DeLavey
+					["qi"] = 5948,	-- Letter to Jorgen
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 80.3, 44.1, STORMWIND_CITY },
@@ -3545,10 +3495,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1242, {	-- The Missing Diplomat (3/17)
 					["sourceQuest"] = 1241,	-- The Missing Diplomat (2/17)
-					["providers"] = {
-						{ "n", 4959 },	-- Jorgen
-						{ "i", 5946 },	-- Sealed Note to Elling
-					},
+					["qg"] = 4959,	-- Jorgen
+					["qi"] = 5946,	-- Sealed Note to Elling
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 76.3, 85.1, STORMWIND_CITY },
@@ -3562,10 +3510,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1243, {	-- The Missing Diplomat (4/17)
 					["sourceQuest"] = 1242,	-- The Missing Diplomat (3/17)
-					["providers"] = {
-						{ "n", 482 },	-- Elling Trias <Master of Cheese>
-						{ "i", 5960 },	-- Sealed Note to Watcher Backus
-					},
+					["qg"] = 482,	-- Elling Trias <Master of Cheese>
+					["qi"] = 5960,	-- Sealed Note to Watcher Backus
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 66.0, 74.1, STORMWIND_CITY },
@@ -3597,10 +3543,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1245, {	-- The Missing Diplomat (6/17)
 					["sourceQuest"] = 1244,	-- The Missing Diplomat (5/17)
-					["providers"] = {
-						{ "n", 840 },	-- Watcher Backus
-						{ "i", 5947 },	-- Defias Docket
-					},
+					["qg"] = 840,	-- Watcher Backus
+					["qi"] = 5947,	-- Defias Docket
 					["coord"] = { 73.21, 38.81, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3834,10 +3778,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1642, {	-- The Tome of Divinity (3/10)
 					["sourceQuest"] = 1641,	-- The Tome of Divinity (2/10)
-					["providers"] = {
-						{ "n", 6171 },	-- Duthorian Rall
-						{ "i", 6775 },	-- Tome of Divinity
-					},
+					["qg"] = 6171,	-- Duthorian Rall
+					["qi"] = 6775,	-- Tome of Divinity
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 50.5, 47.5, STORMWIND_CITY },
@@ -3898,10 +3840,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1781, {	-- The Tome of Divinity (7/10)
 					["sourceQuest"] = 1780,	-- The Tome of Divinity (6/10)
-					["providers"] = {
-						{ "n", 6171 },	-- Duthorian Rall
-						{ "i", 6866 },	-- Symbol of Life
-					},
+					["qg"] = 6171,	-- Duthorian Rall
+					["qi"] = 6866,	-- Symbol of Life
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 50.5, 47.5, STORMWIND_CITY },
@@ -4060,10 +4000,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1794,	-- The Tome of Valor [Dwarf]
 						1793,	-- The Tome of Valor [Human]
 					},
-					["providers"] = {
-						{ "n", 6171 },	-- Duthorian Rall
-						{ "i", 6776 },	-- Tome of Valor
-					},
+					["qg"] = 6171,	-- Duthorian Rall
+					["qi"] = 6776,	-- Tome of Valor
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 50.5, 47.5, STORMWIND_CITY },
@@ -4269,10 +4207,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7639, {	-- To Show Due Judgment
 					["sourceQuest"] = 7637,	-- Emphasis on Sacrifice
-					["providers"] = {
-						{ "n", 11406 },	-- High Priest Rohan <Priest Trainer>
-						{ "i", 18819 },	-- Rohan's Exorcism Censer
-					},
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["qi"] = 18819,	-- Rohan's Exorcism Censer
 					["coord"] = { 25.0, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -4434,10 +4370,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE CATA
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					-- #endif
-					["providers"] = {
-						{ "n", 1432 },	-- Renato Gallina
-						{ "i", 2722 },	-- Wine Ticket (PQI!)
-					},
+					["qg"] = 1432,	-- Renato Gallina
+					["qi"] = 2722,	-- Wine Ticket (PQI!)
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 63.8, 73.6, STORMWIND_CITY },
@@ -4490,10 +4424,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78297, {	-- You've Got Yourself A Deal [A]
 					["sourceQuest"] = 78287,	-- Let Me Make You An Offer [A]
-					["providers"] = {
-						{ "n",   8383 },	-- Master Wood
-						{ "i", 211448 },	-- Signed Procurement Contract
-					},
+					["qg"] = 8383,	-- Master Wood
+					["qi"] = 211448,	-- Signed Procurement Contract
 					["coord"] = { 79.2, 47.6, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },

@@ -1140,10 +1140,8 @@ root(ROOTS.Zones, {
 					}),
 					q(9793, {	-- The Fate of Tuurem
 						["altQuests"] = { 10104 },	-- Concerns About Tuurem
-						["providers"] = {
-							{ "n", 18004 },	-- Vindicator Idaar
-							{ "i", 24415 },	-- Vindicator Idaar's Letter
-						},
+						["qg"] = 18004,	-- Vindicator Idaar
+						["qi"] = 24415,	-- Vindicator Idaar's Letter
 						["coord"] = { 68.2, 50.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,

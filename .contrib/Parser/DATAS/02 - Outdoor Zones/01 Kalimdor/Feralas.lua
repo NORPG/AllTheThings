@@ -257,10 +257,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2976, {	-- A Grim Discovery (2/2)
 					["sourceQuest"] = 2974,	-- A Grim Discovery (1/2)
-					["providers"] = {
-						{ "n", 4544 },	-- Krueg Skullsplitter
-						{ "i", 9462 },	-- Crate of Grimtotem Horns
-					},
+					["qg"] = 4544,	-- Krueg Skullsplitter
+					["qi"] = 9462,	-- Crate of Grimtotem Horns
 					["coord"] = { 76.0, 42.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -323,10 +321,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3121, {	-- A Strange Request
-					["providers"] = {
-						{ "n", 8115 },	-- Witch Doctor Uzer'i
-						{ "i", 9629 },	-- A Shrunken Head
-					},
+					["qg"] = 8115,	-- Witch Doctor Uzer'i
+					["qi"] = 9629,	-- A Shrunken Head
 					["coord"] = { 74.4, 43.4, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -456,10 +452,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3841, {	-- An Orphan Looking For a Home
 					["sourceQuest"] = 2972,	-- Doling Justice (2/2)
-					["providers"] = {
-						{ "n", 7956 },	-- Kindal Moonweaver
-						{ "i", 11102 },	-- Unhatched Sprite Darter Egg
-					},
+					["qg"] = 7956,	-- Kindal Moonweaver
+					["qi"] = 11102,	-- Unhatched Sprite Darter Egg
 					["coord"] = { 65.8, 45.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -614,10 +608,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2972, {	-- Doling Justice (2/2)
 					["sourceQuest"] = 2970,	-- Doling Justice (1/2)
-					["providers"] = {
-						{ "n", 7957 },	-- Jer'kai Moonweaver
-						{ "i", 9368 },	-- Jer'kai's Signet Ring
-					},
+					["qg"] = 7957,	-- Jer'kai Moonweaver
+					["qi"] = 9368,	-- Jer'kai's Signet Ring
 					["coord"] = { 65.8, 45.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
@@ -1053,10 +1045,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							2848,	-- Wild Leather Shoulders [A]
 							2849,	-- Wild Leather Vest [A]
 						},
-						["providers"] = {
-							{ "n", 7852 },	-- Pratt McGrubben
-							{ "i", 9235 },	-- Pratt's Letter
-						},
+						["qg"] = 7852,	-- Pratt McGrubben
+						["qi"] = 9235,	-- Pratt's Letter
 						["coord"] = { 30.6, 42.7, FERALAS },
 					}),
 					["hordeQuestData"] = q(2860, {	-- Master of the Wild Leather [H]
@@ -1067,10 +1057,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							2855,	-- Wild Leather Shoulders [H]
 							2856,	-- Wild Leather Vest [H]
 						},
-						["providers"] = {
-							{ "n", 7854 },	-- Jangdor Swiftstrider
-							{ "i", 9236 },	-- Jangdor's Letter
-						},
+						["qg"] = 7854,	-- Jangdor Swiftstrider
+						["qi"] = 9236,	-- Jangdor's Letter
 						["coord"] = { 74.43, 42.91, FERALAS },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1466,10 +1454,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3122, {	-- Return to Witch Doctor Uzer'i
 					["sourceQuest"] = 3121,	-- A Strange Request
-					["providers"] = {
-						{ "n", 3216 },	-- Neeru Fireblade
-						{ "i", 9628 },	-- Neeru's Herb Pouch
-					},
+					["qg"] = 3216,	-- Neeru Fireblade
+					["qi"] = 9628,	-- Neeru's Herb Pouch
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1477,10 +1463,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4267, {	-- Rise of the Silithid
 					["sourceQuest"] = 4266,	-- A Hero's Welcome
-					["providers"] = {
-						{ "n", 3936 },	-- Shandris Feathermoon <General of the Sentinel Army>
-						{ "i", 11466 },	-- Raschal's Report
-					},
+					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
+					["qi"] = 11466,	-- Raschal's Report
 					["coord"] = { 30.3, 46.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1562,10 +1546,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25396,	-- Tears of Stone
 						25397,	-- The Land, Corrupted
 					},
-					["providers"] = {
-						{ "n", 40032 },	-- Telaron Windflight
-						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
-					},
+					["qg"] = 40032,	-- Telaron Windflight
+					["qi"] = 52576,	-- Ysondre's Tear (QI!) not prov
 					["coord"] = { 50.7, 17.2, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1586,10 +1568,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25237,	-- Tears of Stone
 						25241,	-- The Land, Corrupted
 					},
-					["providers"] = {
-						{ "n", 39377 },	-- Konu Runetotem
-						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
-					},
+					["qg"] = 39377,	-- Konu Runetotem
+					["qi"] = 52576,	-- Ysondre's Tear (QI!) not prov
 					["coord"] = { 41.3, 15.4, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1655,10 +1635,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25465, {	-- Still With The Zapped Giants
-					["providers"] = {
-						{ "n", 14637 },	-- Zorbin Fandazzle
-						{ "i", 18904 },	-- Zorbin's Ultra-Shrinker
-					},
+					["qg"] = 14637,	-- Zorbin Fandazzle
+					["qi"] = 18904,	-- Zorbin's Ultra-Shrinker
 					["coord"] = { 48.7, 44.8, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1948,10 +1926,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3002, {	-- The Gordunni Orb
 					["sourceQuest"] = 2979,	-- Dark Ceremony
-					["providers"] = {
-						{ "n", 7777 },	-- Rok Orhan
-						{ "i", 9371 },	-- Gordunni Orb
-					},
+					["qg"] = 7777,	-- Rok Orhan
+					["qi"] = 9371,	-- Gordunni Orb
 					["coord"] = { 74.2, 44.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -2033,10 +2009,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4129, {	-- The Knife Revealed
 					["sourceQuest"] = 4127,	-- Boat Wreckage
-					["providers"] = {
-						{ "n", 7880 },	-- Ginro Hearthkindle
-						{ "i", 11462 },	-- Discarded Knife
-					},
+					["qg"] = 7880,	-- Ginro Hearthkindle
+					["qi"] = 11462,	-- Discarded Knife
 					["coord"] = { 31.9, 45.1, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2967,10 +2941,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7731,	-- Stinglasher
 						7730,	-- Zukk'ash Infestation
 					},
-					["providers"] = {
-						{ "n", 7875 },	-- Hadoken Swiftstrider
-						{ "i", 19020 },	-- Camp Mojache Zukk'ash Report
-					},
+					["qg"] = 7875,	-- Hadoken Swiftstrider
+					["qi"] = 19020,	-- Camp Mojache Zukk'ash Report
 					["coord"] = { 74.8, 42.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },

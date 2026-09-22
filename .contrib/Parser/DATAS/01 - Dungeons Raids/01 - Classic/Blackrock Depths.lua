@@ -340,10 +340,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4122, {	-- Grark Lorkrub
 					["sourceQuests"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
-					["providers"] = {
-						{ "n", 9080 },	-- Lexlort <Kargath Expeditionary Force>
-						{ "i", 11286 },	-- Thorium Shackles
-					},
+					["qg"] = 9080,	-- Lexlort <Kargath Expeditionary Force>
+					["qi"] = 11286,	-- Thorium Shackles
 					["coord"] = { 5.9, 47.6, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1257,10 +1255,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
 					-- #endif
 					["sourceQuest"] = 6403,	-- The Great Masquerade
-					["providers"] = {
-						{ "n", 1748 },	-- Highlord Bolvar Fordragon
-						{ "i", 16662 },	-- Fragment of the Dragon's Eye
-					},
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["qi"] = 16662,	-- Fragment of the Dragon's Eye
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -1523,10 +1519,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4062, {	-- The Rise of the Machines (2/3)
 					["sourceQuest"] = 4061,	-- The Rise of the Machines (1/3)
-					["providers"] = {
-						{ "n", 9079 },	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
-						{ "i", 11267 },	-- Elemental Shard Sample
-					},
+					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
+					["qi"] = 11267,	-- Elemental Shard Sample
 					["coord"] = { 3.02, 47.81, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1614,10 +1608,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4183, {	-- The True Masters (1/6)
 					["sourceQuest"] = 4182,	-- Dragonkin Menace
-					["providers"] = {
-						{ "n", 9562 },	-- Helendis Riverhorn
-						{ "i", 11366 },	-- Helendis Riverhorn's Letter
-					},
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["qi"] = 11366,	-- Helendis Riverhorn's Letter
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -1625,10 +1617,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4184, {	-- The True Masters (2/6)
 					["sourceQuest"] = 4183,	-- The True Masters (1/6)
-					["providers"] = {
-						{ "n", 344 },	-- Magistrate Solomon
-						{ "i", 11367 },	-- Solomon's Plea to Bolvar
-					},
+					["qg"] = 344,	-- Magistrate Solomon
+					["qi"] = 11367,	-- Solomon's Plea to Bolvar
 					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -1649,10 +1639,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4186, {	-- The True Masters (4/6)
 					["sourceQuest"] = 4185,	-- The True Masters (3/6)
-					["providers"] = {
-						{ "n", 1748 },	-- Highlord Bolvar Fordragon
-						{ "i", 11368 },	-- Bolvar's Decree
-					},
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["qi"] = 11368,	-- Bolvar's Decree
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,

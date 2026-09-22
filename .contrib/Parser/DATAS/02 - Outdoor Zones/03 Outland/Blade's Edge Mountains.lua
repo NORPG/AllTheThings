@@ -564,10 +564,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10910, {	-- Death's Door
 						["sourceQuest"] = 10821,	-- You're Fired!
-						["providers"] = {
-							{ "n", 22127 },	-- Wildlord Antelarion
-							{ "i", 31763 },	-- Druid Signal (PQI!)
-						},
+						["qg"] = 22127,	-- Wildlord Antelarion
+						["qi"] = 31763,	-- Druid Signal (PQI!)
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
@@ -744,10 +742,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10594, {	-- Gauging the Resonant Frequency
 						["sourceQuest"] = 10608,	-- Crystal Clear
-						["providers"] = {
-							{ "n", 21755 },	-- Nickwinkle the Metro-Gnome
-							{ "i", 30701 },	-- Oscillating Frequency Scanners (PQI!)
-						},
+						["qg"] = 21755,	-- Nickwinkle the Metro-Gnome
+						["qi"] = 30701,	-- Oscillating Frequency Scanners (PQI!)
 						["coord"] = { 60.2, 68.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
@@ -1216,10 +1212,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10812, {	-- Mystery Mask
 						["sourceQuest"] = 10810,	-- Damaged Mask
-						["providers"] = {
-							{ "n", 22020 },	-- O'Mally Zapnabber
-							{ "i", 31387 },	-- Mystery Mask (PQI!)
-						},
+						["qg"] = 22020,	-- O'Mally Zapnabber
+						["qi"] = 31387,	-- Mystery Mask (PQI!)
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
@@ -1259,10 +1253,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(11040, {	-- Parts for the Rocket-Chief
-						["providers"] = {
-							{ "n", 21112 },	-- Bossi Pentapiston
-							{ "i", 32623 },	-- Bossi's Spare Parts (PQI!)
-						},
+						["qg"] = 21112,	-- Bossi Pentapiston
+						["qi"] = 32623,	-- Bossi's Spare Parts (PQI!)
 						["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -2194,10 +2186,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(10609, {	-- What Came First, the Drake or the Egg?
-						["providers"] = {
-							{ "n", 21110 },	-- Fizit "Doc" Clocktock
-							{ "i", 30742 },	-- Temporal Phase Modulator (PQI!)
-						},
+						["qg"] = 21110,	-- Fizit "Doc" Clocktock
+						["qi"] = 30742,	-- Temporal Phase Modulator (PQI!)
 						["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),

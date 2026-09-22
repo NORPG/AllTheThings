@@ -121,10 +121,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					["description"] = "This quest becomes available after you defeat Princess Theradras.",
 					-- #endif
-					["providers"] = {
-						{ "n", 12238 },	-- Zaetar's Spirit
-						{ "i", 17760 },	-- Seed of Life
-					},
+					["qg"] = 12238,	-- Zaetar's Spirit
+					["qi"] = 17760,	-- Seed of Life
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MOONGLADE },
 					["lvl"] = 39,
@@ -170,10 +168,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				},
 				q(7067, {	-- The Pariah's Instructions
-					["providers"] = {
-						{ "n", 13717 },	-- Centaur Pariah
-						{ "i", 17781 },	-- The Pariah's Instructions
-					},
+					["qg"] = 13717,	-- Centaur Pariah
+					["qi"] = 17781,	-- The Pariah's Instructions
 					["coord"] = { 50.5, 86.7, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,

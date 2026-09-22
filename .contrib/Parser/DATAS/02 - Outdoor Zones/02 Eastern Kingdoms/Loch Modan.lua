@@ -150,10 +150,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(161, {	-- A Dark Threat Looms (3/7)
 					["sourceQuest"] = 199,	-- A Dark Threat Looms (2/7)
-					["providers"] = {
-						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
-						{ "i", 2563 },	-- Strange Smelling Powder
-					},
+					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
+					["qi"] = 2563,	-- Strange Smelling Powder
 					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
@@ -162,10 +160,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(274, {	-- A Dark Threat Looms (4/7)
 					["sourceQuest"] = 161,	-- A Dark Threat Looms (3/7)
-					["providers"] = {
-						{ "n", 1073 },	-- Ashlan Stonesmirk
-						{ "i", 2609 },	-- Disarming Colloid
-					},
+					["qg"] = 1073,	-- Ashlan Stonesmirk
+					["qi"] = 2609,	-- Disarming Colloid
 					["coord"] = { 50.0, 18.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -210,10 +206,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(280, {	-- A Dark Threat Looms (6/7)
 					["sourceQuest"] = 278,	-- A Dark Threat Looms (5/7)
-					["providers"] = {
-						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
-						{ "i", 2610 },	-- Disarming Mixture
-					},
+					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
+					["qi"] = 2610,	-- Disarming Mixture
 					["coord"] = { 46.0, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -636,10 +630,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(298, {	-- Excavation Progress Report
-					["providers"] = {
-						{ "n", 1344 },	-- Prospector Ironband
-						{ "i", 2637 },	-- Ironbrand's Progress Report
-					},
+					["qg"] = 1344,	-- Prospector Ironband
+					["qi"] = 2637,	-- Ironbrand's Progress Report
 					["coord"] = { 65.9, 65.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -891,10 +883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #if BEFORE 4.0.3
 				q(6387, {	-- Honor Students
-					["providers"] = {
-						{ "n", 1681 },	-- Brock Stoneseeker
-						{ "i", 16310 },	-- Brock's List (PQI!)
-					},
+					["qg"] = 1681,	-- Brock Stoneseeker
+					["qi"] = 16310,	-- Brock's List (PQI!)
 					["coord"] = { 37.0, 47.8, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
@@ -1235,10 +1225,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(301, {	-- Report to Ironforge
 					["sourceQuest"] = 298,	-- Excavation Progress Report
-					["providers"] = {
-						{ "n", 1105 },	-- Jern Hornhelm
-						{ "i", 2637 },	-- Ironbrand's Progress Report
-					},
+					["qg"] = 1105,	-- Jern Hornhelm
+					["qi"] = 2637,	-- Ironbrand's Progress Report
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1270,10 +1258,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				q(6391, {	-- Ride to Ironforge
 					["sourceQuest"] = 6387,	-- Honor Students
-					["providers"] = {
-						{ "n", 1572 },	-- Thorgrum Borrelson
-						{ "i", 16310 },	-- Brock's List
-					},
+					["qg"] = 1572,	-- Thorgrum Borrelson
+					["qi"] = 16310,	-- Brock's List
 					["coord"] = { 33.9, 50.9, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
@@ -1304,10 +1290,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(13635, {	-- South Gate Status Report
 					["sourceQuest"] = 26855,	-- A Pilot's Revenge
-					["providers"] = {
-						{ "n",  1960 },	-- Pilot Hammerfoot
-						{ "i", 60494 },	-- South Gate Status Report (PQI!)
-					},
+					["qg"] = 1960,	-- Pilot Hammerfoot
+					["qi"] = 60494,	-- South Gate Status Report (PQI!)
 					["coord"] = { 14.0, 56.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1345,10 +1329,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1338, {	-- Stormpike's Order
 					["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
-					["providers"] = {
-						{ "n", 1343 },	-- Mountaineer Stormpike
-						{ "i", 5998 },	-- Stormpike's Request
-					},
+					["qg"] = 1343,	-- Mountaineer Stormpike
+					["qi"] = 5998,	-- Stormpike's Request
 					["coord"] = { 24.7, 18.3, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -1539,10 +1521,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(531, {	-- Vyrin's Revenge (2/2)
 					["sourceQuest"] = 271,	-- Vyrin's Revenge (1/2)
-					["providers"] = {
-						{ "n", 1187 },	-- Daryl the Youngling
-						{ "i", 2713 },	-- Ol' Sooty's Head
-					},
+					["qg"] = 1187,	-- Daryl the Youngling
+					["qi"] = 2713,	-- Ol' Sooty's Head
 					["coord"] = { 83.4, 65.2, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1977,10 +1957,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
 					["description"] = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
-					["providers"] = {
-						{ "n",   1224 },	-- Young Threshadon
-						{ "i", 208855 },	-- Rainbow Fin Albacore Chum
-					},
+					["qg"] = 1224,	-- Young Threshadon
+					["qi"] = 208855,	-- Rainbow Fin Albacore Chum
 					["coord"] = { 44.8, 39.2, LOCH_MODAN },
 					["classes"] = { DRUID },
 					["groups"] = {

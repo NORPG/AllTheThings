@@ -205,10 +205,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(336, {	-- A Noble Brew (2/2)
 				["sourceQuest"] = 335,	-- A Noble Brew (1/2)
-				["providers"] = {
-					{ "n", 1435 },	-- Zardeth of the Black Claw
-					{ "i", 2788 },	-- Black Claw Stout
-				},
+				["qg"] = 1435,	-- Zardeth of the Black Claw
+				["qi"] = 2788,	-- Black Claw Stout
 				["coord"] = { 40.1, 85.3, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 25,
@@ -243,10 +241,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(396, {	-- An Audience with the King
 				["sourceQuest"] = 395,	-- Brotherhood's End
-				["providers"] = {
-					{ "n", 1646 },	-- Baros Alexston <City Architect>
-					{ "i", 2956 },	-- Report on the Defias Brotherhood
-				},
+				["qg"] = 1646,	-- Baros Alexston <City Architect>
+				["qi"] = 2956,	-- Report on the Defias Brotherhood
 				["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
@@ -339,10 +335,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					1678,	-- Vejrek
 					1683,	-- Vorlus Vilehoof
 				},
-				["providers"] = {
-					{ "n", 6090 },	-- Bartleby
-					{ "i", 6781 },	-- Bartleby's Mug
-				},
+				["qg"] = 6090,	-- Bartleby
+				["qi"] = 6781,	-- Bartleby's Mug
 				["coord"] = { 76.8, 52.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARRIOR },
@@ -473,10 +467,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(6261, {	-- Dungar Longdrink
 				["sourceQuest"] = 6281,	-- Continue to Stormwind
-				["providers"] = {
-					{ "n", 1323 },	-- Osric Strang
-					{ "i", 16115 },	-- Osric's Crate (PQI!)
-				},
+				["qg"] = 1323,	-- Osric Strang
+				["qi"] = 16115,	-- Osric's Crate (PQI!)
 				["coord"] = { 77.0, 61.2, MAP.STORMWIND_CITY },
 				["races"] = { HUMAN },
 				["lvl"] = 10,
@@ -512,10 +504,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(7640, {	-- Exorcising Terrordale
 				["sourceQuest"] = 7639,	-- To Show Due Judgment
-				["providers"] = {
-					{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					{ "i", 18752 },	-- Exorcism Censer
-				},
+				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				["qi"] = 18752,	-- Exorcism Censer
 				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.EASTERN_PLAGUELANDS },
 				["classes"] = { PALADIN },
@@ -530,10 +520,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1701, {	-- Fire Hardened Mail
 				["sourceQuest"] = 1702,	-- The Shieldsmith
-				["providers"] = {
-					{ "n", 5413 },	-- Furen Longbeard
-					{ "i", 6842 },	-- Furen's Instructions
-				},
+				["qg"] = 5413,	-- Furen Longbeard
+				["qi"] = 6842,	-- Furen's Instructions
 				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
 				["classes"] = { WARRIOR },
@@ -630,10 +618,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
+				["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
+				["qi"] = 10789,	-- Manual of Engineering Disciplines
 				["coord"] = { 55.0, 8.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
@@ -652,10 +638,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
+				["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
+				["qi"] = 10789,	-- Manual of Engineering Disciplines
 				["coord"] = { 55.0, 8.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
@@ -664,10 +648,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1700, {	-- Grimand Elmore
 				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["providers"] = {
-					{ "n", 5413 },	-- Furen Longbeard
-					{ "i", 6926 },	-- Furen's Notes
-				},
+				["qg"] = 5413,	-- Furen Longbeard
+				["qi"] = 6926,	-- Furen's Notes
 				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARRIOR },
@@ -687,20 +669,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(7648, {	-- Grimand's Finest Work
 				["sourceQuest"] = 7642,	-- Collection of Goods
-				["providers"] = {
-					{ "n", 1416 },	-- Grimand Elmore
-					{ "i", 18753 },	-- Arcanite Barding
-				},
+				["qg"] = 1416,	-- Grimand Elmore
+				["qi"] = 18753,	-- Arcanite Barding
 				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
 				["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 60,
 			}),
 			q(333, {	-- Harlan Needs a Resupply
-				["providers"] = {
-					{ "n", 1427 },	-- Harlan Bagley
-					{ "i", 2724 },	-- Cloth Request (PQI!)
-				},
+				["qg"] = 1427,	-- Harlan Bagley
+				["qi"] = 2724,	-- Cloth Request (PQI!)
 				["coord"] = { 62.3, 67.9, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -743,10 +721,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(2759, {	-- In Search of Galvan
 				["sourceQuest"] = 2758,	-- The Origins of Smithing
-				["providers"] = {
-					{ "n", 7798 },	-- Hank the Hammer
-					{ "i", 8663 },	-- Mithril Insignia
-				},
+				["qg"] = 7798,	-- Hank the Hammer
+				["qi"] = 8663,	-- Mithril Insignia
 				["coord"] = { 63.0, 36.4, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.STRANGLETHORN_VALE },
 				["requireSkill"] = BLACKSMITHING,
@@ -820,10 +796,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1704, {	-- Klockmort Spannerspan
 				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["providers"] = {
-					{ "n", 5413 },	-- Furen Longbeard
-					{ "i", 6926 },	-- Furen's Notes
-				},
+				["qg"] = 5413,	-- Furen Longbeard
+				["qi"] = 6926,	-- Furen's Notes
 				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				["classes"] = { WARRIOR },
 				["races"] = { DWARF, GNOME },
@@ -881,10 +855,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1703, {	-- Mathiel
 				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["providers"] = {
-					{ "n", 5413 },	-- Furen Longbeard
-					{ "i", 6926 },	-- Furen's Notes
-				},
+				["qg"] = 5413,	-- Furen Longbeard
+				["qi"] = 6926,	-- Furen's Notes
 				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				["classes"] = { WARRIOR },
 				["races"] = { NIGHTELF },
@@ -958,10 +930,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(334, {	-- Package for Thurman
-				["providers"] = {
-					{ "n", 1428 },	-- Rema Schneider
-					{ "i", 2760 },	-- Thurman's Sewing Kit
-				},
+				["qg"] = 1428,	-- Rema Schneider
+				["qi"] = 2760,	-- Thurman's Sewing Kit
 				["coord"] = { 58.1, 67.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1005,10 +975,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(6285, {	-- Return to Lewis
 				["sourceQuest"] = 6261,	-- Dungar Longdrink
-				["providers"] = {
-					{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-					{ "i", 16115 },	-- Osric's Crate (PQI!)
-				},
+				["qg"] = 352,	-- Dungar Longdrink <Gryphon Master>
+				["qi"] = 16115,	-- Osric's Crate (PQI!)
 				["coord"] = { 71.0, 72.5, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.WESTFALL },
 				["races"] = { HUMAN },
@@ -1056,10 +1024,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(393, {	-- Shadow of the Past
 				["sourceQuest"] = 392,	-- The Curious Visitor
-				["providers"] = {
-					{ "n", 1646 },	-- Baros Alexston <City Architect>
-					{ "i", 8687 },	-- Sealed Description of Thredd's Visitor
-				},
+				["qg"] = 1646,	-- Baros Alexston <City Architect>
+				["qi"] = 8687,	-- Sealed Description of Thredd's Visitor
 				["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
@@ -1089,18 +1055,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(353, {	-- Stormpike's Delivery
 				["sourceQuest"] = 1097,	-- Elmore's Task
-				["providers"] = {
-					{ "n", 1416 },	-- Grimand Elmore
-					{ "i", 2806 },	-- Package for Stormpike (PQI!)
-				},
+				["qg"] = 1416,	-- Grimand Elmore
+				["qi"] = 2806,	-- Package for Stormpike (PQI!)
 				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(579, {	-- Stormwind Library
-				["providers"] = {
-					{ "n", 2504 },	-- Donyal Tovald <Librarian>
-					{ "i", 3898 },	-- Library Scrip
-				},
+				["qg"] = 2504,	-- Donyal Tovald <Librarian>
+				["qi"] = 3898,	-- Library Scrip
 				["coord"] = { 84.6, 24.2, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
@@ -1192,10 +1154,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(392, {	-- The Curious Visitor
 				["sourceQuest"] = 391,	-- The Stockage Riots
-				["providers"] = {
-					{ "n", 1719 },	-- Warden Thelwater
-					{ "i", 8687 },	-- Sealed Description of Thredd's Visitor
-				},
+				["qg"] = 1719,	-- Warden Thelwater
+				["qi"] = 8687,	-- Sealed Description of Thredd's Visitor
 				["coord"] = { 51.6, 69.4, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
@@ -1233,30 +1193,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1241, {	-- The Missing Diplomat (2/17)
 				["sourceQuest"] = 1274,	-- The Missing Diplomat (1/17)
-				["providers"] = {
-					{ "n", 4960 },	-- Bishop DeLavey
-					{ "i", 5948 },	-- Letter to Jorgen
-				},
+				["qg"] = 4960,	-- Bishop DeLavey
+				["qi"] = 5948,	-- Letter to Jorgen
 				["coord"] = { 80.3, 44.1, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 28,
 			}),
 			q(1242, {	-- The Missing Diplomat (3/17)
 				["sourceQuest"] = 1241,	-- The Missing Diplomat (2/17)
-				["providers"] = {
-					{ "n", 4959 },	-- Jorgen
-					{ "i", 5946 },	-- Sealed Note to Elling
-				},
+				["qg"] = 4959,	-- Jorgen
+				["qi"] = 5946,	-- Sealed Note to Elling
 				["coord"] = { 76.3, 85.1, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 28,
 			}),
 			q(1243, {	-- The Missing Diplomat (4/17)
 				["sourceQuest"] = 1242,	-- The Missing Diplomat (3/17)
-				["providers"] = {
-					{ "n", 482 },	-- Elling Trias <Master of Cheese>
-					{ "i", 5960 },	-- Sealed Note to Watcher Backus
-				},
+				["qg"] = 482,	-- Elling Trias <Master of Cheese>
+				["qi"] = 5960,	-- Sealed Note to Watcher Backus
 				["coord"] = { 66.0, 74.1, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
@@ -1280,10 +1234,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1245, {	-- The Missing Diplomat (6/17)
 				["sourceQuest"] = 1244,	-- The Missing Diplomat (5/17)
-				["providers"] = {
-					{ "n", 840 },	-- Watcher Backus
-					{ "i", 5947 },	-- Defias Docket
-				},
+				["qg"] = 840,	-- Watcher Backus
+				["qi"] = 5947,	-- Defias Docket
 				["coord"] = { 73.21, 38.81, MAP.DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 28,
@@ -1381,10 +1333,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1642, {	-- The Tome of Divinity (3/10)
 				["sourceQuest"] = 1641,	-- The Tome of Divinity (2/10)
-				["providers"] = {
-					{ "n", 6171 },	-- Duthorian Rall
-					{ "i", 6775 },	-- Tome of Divinity
-				},
+				["qg"] = 6171,	-- Duthorian Rall
+				["qi"] = 6775,	-- Tome of Divinity
 				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				["races"] = { HUMAN },
 				["classes"] = { PALADIN },
@@ -1417,10 +1367,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1781, {	-- The Tome of Divinity (7/10)
 				["sourceQuest"] = 1780,	-- The Tome of Divinity (6/10)
-				["providers"] = {
-					{ "n", 6171 },	-- Duthorian Rall
-					{ "i", 6866 },	-- Symbol of Life
-				},
+				["qg"] = 6171,	-- Duthorian Rall
+				["qi"] = 6866,	-- Symbol of Life
 				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				["races"] = { HUMAN },
 				["classes"] = { PALADIN },
@@ -1523,10 +1471,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					1794,	-- The Tome of Valor [Dwarf]
 					1793,	-- The Tome of Valor [Human]
 				},
-				["providers"] = {
-					{ "n", 6171 },	-- Duthorian Rall
-					{ "i", 6776 },	-- Tome of Valor
-				},
+				["qg"] = 6171,	-- Duthorian Rall
+				["qi"] = 6776,	-- Tome of Valor
 				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { PALADIN },
@@ -1621,10 +1567,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(7639, {	-- To Show Due Judgment
 				["sourceQuest"] = 7637,	-- Emphasis on Sacrifice
-				["providers"] = {
-					{ "n", 11406 },	-- High Priest Rohan <Priest Trainer>
-					{ "i", 18819 },	-- Rohan's Exorcism Censer
-				},
+				["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+				["qi"] = 18819,	-- Rohan's Exorcism Censer
 				["coord"] = { 25.0, 8.2, MAP.IRONFORGE },
 				["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
@@ -1721,10 +1665,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(332, {	-- Wine Shop Advert
 				["sourceQuest"] = 61,	-- Shipment to Stormwind
-				["providers"] = {
-					{ "n", 1432 },	-- Renato Gallina
-					{ "i", 2722 },	-- Wine Ticket (PQI!)
-				},
+				["qg"] = 1432,	-- Renato Gallina
+				["qi"] = 2722,	-- Wine Ticket (PQI!)
 				["coord"] = { 63.8, 73.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {

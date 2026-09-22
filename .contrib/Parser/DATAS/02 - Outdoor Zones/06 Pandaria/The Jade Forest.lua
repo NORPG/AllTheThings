@@ -699,10 +699,8 @@ root(ROOTS.Zones, {
 					}),
 					q(29925, {	-- All We Can Spare
 						["sourceQuest"] = 29723,	-- The Jade Witch
-						["providers"] = {
-							{ "n", 56348 },	-- Toya
-							{ "i", 76483 },	-- Scavenged Jade (QI!)
-						},
+						["qg"] = 56348,	-- Toya
+						["qi"] = 76483,	-- Scavenged Jade (QI!)
 						["coord"] = { 47.1, 46.1, THE_JADE_FOREST },
 					}),
 					q(29576, {	-- An Air of Worry
@@ -1170,10 +1168,8 @@ root(ROOTS.Zones, {
 					}),
 					q(30015, {	-- Dawn's Blossom
 						["sourceQuest"] = 29967,	-- Boom Goes the Doonamite!
-						["providers"] = {
-							{ "n", 56339 },	-- General Nazgrim
-							{ "i", 76761 },	-- Pandaren Scroll (QI!)
-						},
+						["qg"] = 56339,	-- General Nazgrim
+						["qi"] = 76761,	-- Pandaren Scroll (QI!)
 						["coord"] = { 28.6, 47.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1577,20 +1573,16 @@ root(ROOTS.Zones, {
 					}),
 					q(30498, {	-- Get Back Here! (A)
 						["sourceQuest"] = 30000,	-- The Jade Serpent
-						["providers"] = {
-							{ "n", 57242 },	-- Elder Sage Wind-Yi
-							{ "i", 86068 },	-- Alliance Missive
-						},
+						["qg"] = 57242,	-- Elder Sage Wind-Yi
+						["qi"] = 86068,	-- Alliance Missive
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(30499, {	-- Get Back Here! (H)
 						["sourceQuest"] = 30000,	-- The Jade Serpent
 						["qg"] = 57242,	-- Elder Sage Wind-Yi
-						["providers"] = {
-							{ "n", 57242 },	-- Elder Sage Wind-Yi
-							{ "i", 86067 },	-- Horde Missive
-						},
+						["qg"] = 57242,	-- Elder Sage Wind-Yi
+						["qi"] = 86067,	-- Horde Missive
 						["coord"] = { 55.8, 57.0, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -2033,10 +2025,8 @@ root(ROOTS.Zones, {
 					}),
 					q(29821, {	-- Missed Me By... That Much!
 						["sourceQuest"] = 31999,	-- Nazgrim's Command
-						["providers"] = {
-							{ "n", 55521 },	-- Rivett Clutchpop
-							{ "i", 84157 },	-- Rivett's Rocket Jumpers (QI!)
-						},
+						["qg"] = 55521,	-- Rivett Clutchpop
+						["qi"] = 84157,	-- Rivett's Rocket Jumpers (QI!)
 						["coord"] = { 28.1, 24.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
@@ -2145,10 +2135,8 @@ root(ROOTS.Zones, {
 					}),
 					q(29935, {	-- Orders are Orders
 						["sourceQuest"] = 29879,	-- Swallowed Whole
-						["providers"] = {
-							{ "n", 56313 },	-- Tooki Tooki
-							{ "i", 85507 },	-- Alliance Orders (QI!)
-						},
+						["qg"] = 56313,	-- Tooki Tooki
+						["qi"] = 85507,	-- Alliance Orders (QI!)
 						["coord"] = { 26.2, 37.3, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
@@ -3298,10 +3286,8 @@ root(ROOTS.Zones, {
 					}),
 					q(29932, {	-- The Temple of the Jade Serpent
 						["sourceQuest"] = 30495,	-- Love's Labor
-						["providers"] = {
-							{ "n", 59391 },	-- Foreman Raike
-							{ "i", 74030 },	-- Scroll of Introduction (QI!)
-						},
+						["qg"] = 59391,	-- Foreman Raike
+						["qi"] = 74030,	-- Scroll of Introduction (QI!)
 						["coord"] = { 48.3, 61.3, THE_JADE_FOREST },
 					}),
 					q(29866, {	-- The Threads that Stick
@@ -3359,10 +3345,8 @@ root(ROOTS.Zones, {
 					}),
 					q(31112, {	-- They're So Thorny!
 						["sourceQuest"] = 29821,	-- Missed Me By... That Much!
-						["providers"] = {
-							{ "n", 62923 },	-- Empty Package
-							{ "i", 84157 },	-- Rivett's Rocket Jumpers (QI!)
-						},
+						["qg"] = 62923,	-- Empty Package
+						["qi"] = 84157,	-- Rivett's Rocket Jumpers (QI!)
 						["coord"] = { 22.8, 30.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {

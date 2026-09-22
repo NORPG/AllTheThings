@@ -137,10 +137,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1520, {	-- Call of Earth (2/3)
 							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["altQuests"] = { 1517 },	-- Call of Earth (2/3 Durotar)
-							["providers"] = {
-								{ "n", 5888 },	-- Seer Ravenfeather
-								{ "i", 6635 },	-- Earth Sapta
-							},
+							["qg"] = 5888,	-- Seer Ravenfeather
+							["qi"] = 6635,	-- Earth Sapta
 							["coord"] = { 44.8, 76.2, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -150,10 +148,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1521, {	-- Call of Earth (3/3)
 							["sourceQuest"] = 1520,	-- Call of Earth (2/3)
 							["altQuests"] = { 1518 },	-- Call of Earth (3/3 Durotar)
-							["providers"] = {
-								{ "n", 5891 },	-- Minor Manifestation of Earth
-								{ "i", 6656 },	-- Rough Quartz
-							},
+							["qg"] = 5891,	-- Minor Manifestation of Earth
+							["qi"] = 6656,	-- Rough Quartz
 							["coord"] = { 53.8, 80.4, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -207,10 +203,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3092, {	-- Etched Note
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["providers"] = {
-								{ "n", 2980 },	-- Grull Hawkwind
-								{ "i", 9565 },	-- Etched Note
-							},
+							["qg"] = 2980,	-- Grull Hawkwind
+							["qi"] = 9565,	-- Etched Note
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
@@ -546,20 +540,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(763, {	-- Rites of the Earthmother (2/3)
 							["sourceQuest"] = 757,	-- Rite of Strength
-							["providers"] = {
-								{ "n", 2981 },	-- Chief Hawkwind
-								{ "i", 4783 },	-- Totem of Hawkwind
-							},
+							["qg"] = 2981,	-- Chief Hawkwind
+							["qi"] = 4783,	-- Totem of Hawkwind
 							["coord"] = { 44.2, 76.1, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(3093, {	-- Rune-Inscribed Note
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["providers"] = {
-								{ "n", 2980 },	-- Grull Hawkwind
-								{ "i", 9552 },	-- Rune-Inscribed Note
-							},
+							["qg"] = 2980,	-- Grull Hawkwind
+							["qi"] = 9552,	-- Rune-Inscribed Note
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
@@ -575,10 +565,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3091, {	-- Simple Note
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["providers"] = {
-								{ "n", 2980 },	-- Grull Hawkwind
-								{ "i", 9547 },	-- Simple Note
-							},
+							["qg"] = 2980,	-- Grull Hawkwind
+							["qi"] = 9547,	-- Simple Note
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
@@ -764,10 +752,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3094, {	-- Verdant Note
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["providers"] = {
-								{ "n", 2980 },	-- Grull Hawkwind
-								{ "i", 9581 },	-- Verdant Note
-							},
+							["qg"] = 2980,	-- Grull Hawkwind
+							["qi"] = 9581,	-- Verdant Note
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 39.4, 37.0, CAMP_NARACHE },
@@ -942,10 +928,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1656, {	-- A Task Unfinished
-					["providers"] = {
-						{ "n", 6775 },	-- Antur Fallow
-						{ "i", 7626 },	-- Bundle of Furs
-					},
+					["qg"] = 6775,	-- Antur Fallow
+					["qi"] = 7626,	-- Bundle of Furs
 					["coord"] = { 38.6, 81.6, MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1369,10 +1353,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(772, {	-- Rite of Vision (3/3)
 					["sourceQuest"] = 771,	-- Rite of Vision (2/3)
-					["providers"] = {
-						{ "n", 3054 },	-- Zarlman Two-Moons
-						{ "i", 4823 },	-- Water of the Seers
-					},
+					["qg"] = 3054,	-- Zarlman Two-Moons
+					["qi"] = 4823,	-- Water of the Seers
 					["coord"] = { 47.8, 57.5, MULGORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2104,10 +2086,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
-					["providers"] = {
-						{ "n", 206248 },	-- Wooden Effigy
-						{ "i", 206466 },	-- Prairie Crown
-					},
+					["qg"] = 206248,	-- Wooden Effigy
+					["qi"] = 206466,	-- Prairie Crown
 					["coord"] = { 37.8, 49.6, MULGORE },
 					["cost"] = { { "i", 206469, 3 } },	-- Prairie Flower
 					["groups"] = {

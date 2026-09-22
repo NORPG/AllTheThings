@@ -140,70 +140,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28443,	-- Blackened Ashes (H)
 						28444,	-- Latent Demons of the Land (H)
 					},
-					["providers"] = {
-						{ "n", 48565 },	-- Ariok
-						{ "i", 63431 },	-- Rescued Whelplings
-					},
+					["qg"] = 48565,	-- Ariok
+					["qi"] = 63431,	-- Rescued Whelplings
 					["coord"] = { 54.7, 24.5, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28318, {	-- A Delivery for Neeralak (A)
 					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
-					["providers"] = {
-						{ "n", 48307 },	-- Colonel Troteman
-						{ "i", 63430 },	-- Crate of Sleeping Flamekin
-					},
+					["qg"] = 48307,	-- Colonel Troteman
+					["qi"] = 63430,	-- Crate of Sleeping Flamekin
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28451, {	-- A Delivery for Neeralak (H)
 					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
-					["providers"] = {
-						{ "n", 48569 },	-- Eitrigg
-						{ "i", 63430 },	-- Crate of Sleeping Flamekin
-					},
+					["qg"] = 48569,	-- Eitrigg
+					["qi"] = 63430,	-- Crate of Sleeping Flamekin
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28317, {	-- A Delivery for Thorg'izog (A)
 					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
-					["providers"] = {
-						{ "n", 48307 },	-- Colonel Troteman
-						{ "i", 63429 },	-- Slider Cider-Marinated Cutlets
-					},
+					["qg"] = 48307,	-- Colonel Troteman
+					["qi"] = 63429,	-- Slider Cider-Marinated Cutlets
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28450, {	-- A Delivery for Thorg'izog (H)
 					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
-					["providers"] = {
-						{ "n", 48569 },	-- Eitrigg
-						{ "i", 63429 },	-- Slider Cider-Marinated Cutlets
-					},
+					["qg"] = 48569,	-- Eitrigg
+					["qi"] = 63429,	-- Slider Cider-Marinated Cutlets
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28319, {	-- A Delivery for Xi'lun (A)
 					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
-					["providers"] = {
-						{ "n", 48307 },	-- Colonel Troteman
-						{ "i", 63134 },	-- Clear Glass Orb
-					},
+					["qg"] = 48307,	-- Colonel Troteman
+					["qi"] = 63134,	-- Clear Glass Orb
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28452, {	-- A Delivery for Xi'lun (H)
 					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
-					["providers"] = {
-						{ "n", 48569 },	-- Eitrigg
-						{ "i", 63134 },	-- Clear Glass Orb
-					},
+					["qg"] = 48569,	-- Eitrigg
+					["qi"] = 63134,	-- Clear Glass Orb
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1005,10 +991,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(4808, {	-- Felnok Steelspring
 					["sourceQuest"] = 4726,	-- Broodling Essence
-					["providers"] = {
-						{ "n", 10267 },	-- Tinkee Steamboil
-						{ "i", 12438 },	-- Tinkee's Letter
-					},
+					["qg"] = 10267,	-- Tinkee Steamboil
+					["qi"] = 12438,	-- Tinkee's Letter
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -1139,10 +1123,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["hordeQuestData"] = q(28433, {	-- Grunt Work (H)
 						["sourceQuest"] = 28432,	-- Into the Black Tooth Hovel (H)
 					}),
-					["providers"] = {
-						{ "n", 48085 },	-- Quartermaster Kaoshin
-						{ "i", 63357 },	-- Blackrock Disguise
-					},
+					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["qi"] = 63357,	-- Blackrock Disguise
 					["coord"] = { 45.3, 51.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -1169,10 +1151,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["hordeQuestData"] = q(28439, {	-- I Am the Law and I Am the Lash (H)
 						["sourceQuest"] = 28438,	-- Trial by Magma (H)
 					}),
-					["providers"] = {
-						{ "n", 48133 },	-- General Thorg'izog
-						{ "i", 63357 },	-- Blackrock Disguise
-					},
+					["qg"] = 48133,	-- General Thorg'izog
+					["qi"] = 63357,	-- Blackrock Disguise
 					["coord"] = { 30.6, 33.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1192,10 +1172,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7625,	-- Xorothian Stardust
 						7630,	-- Arcanite
 					},
-					["providers"] = {
-						{ "n", 14437 },	-- Gorzeeki Wildeyes
-						{ "i", 18688 },	-- Imp in a Jar
-					},
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["qi"] = 18688,	-- Imp in a Jar
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SCHOLOMANCE },
@@ -1204,20 +1182,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28239, {	-- Into the Black Tooth Hovel (A)
 					["sourceQuests"] = { 28202, 28203, 28204, 28205 },	-- A Perfect Costume (A)
-					["providers"] = {
-						{ "n", 48109 },	-- John J. Keeshan
-						{ "i", 63357 },	-- Blackrock Disguise
-					},
+					["qg"] = 48109,	-- John J. Keeshan
+					["qi"] = 63357,	-- Blackrock Disguise
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28432, {	-- Into the Black Tooth Hovel (H)
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (H)
-					["providers"] = {
-						{ "n", 48568 },	-- Eitrigg
-						{ "i", 63357 },	-- Blackrock Disguise
-					},
+					["qg"] = 48568,	-- Eitrigg
+					["qi"] = 63357,	-- Blackrock Disguise
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1655,10 +1629,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28424,	-- Shadow Boxing (A)
 						28423,	-- Warlocks Have the Neatest Stuff (A)
 					},
-					["providers"] = {
-						{ "n", 14437 },	-- Gorzeeki Wildeyes
-						{ "i", 63354 },	-- Warlock Supplies
-					},
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["qi"] = 63354,	-- Warlock Supplies
 					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1668,10 +1640,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28182,	-- Shadow Boxing (H)
 						28181,	-- Warlocks Have the Neatest Stuff (H)
 					},
-					["providers"] = {
-						{ "n", 14437 },	-- Gorzeeki Wildeyes
-						{ "i", 63354 },	-- Warlock Supplies
-					},
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["qi"] = 63354,	-- Warlock Supplies
 					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1841,10 +1811,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28246,	-- Strategic Cuts (A)
 						28252,	-- The Kodocaller's Horn (A)
 					},
-					["providers"] = {
-						{ "n", 48110 },	-- Colonel Troteman
-						{ "i", 63358 },	-- Horn of the Callers
-					},
+					["qg"] = 48110,	-- Colonel Troteman
+					["qi"] = 63358,	-- Horn of the Callers
 					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1865,10 +1833,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28434,	-- Strategic Cuts (H)
 						28435,	-- The Kodocaller's Horn (H)
 					},
-					["providers"] = {
-						{ "n", 48568 },	-- Eitrigg
-						{ "i", 63358 },	-- Horn of the Callers
-					},
+					["qg"] = 48568,	-- Eitrigg
+					["qi"] = 63358,	-- Horn of the Callers
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2085,10 +2051,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7564, {	-- Wildeyes
 					["sourceQuest"] = 7563,	-- Rage of Blood
-					["providers"] = {
-						{ "n", 14436 },	-- Mor'zul Bloodbringer
-						{ "i", 18591 },	-- Case of Blood
-					},
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["qi"] = 18591,	-- Case of Blood
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },

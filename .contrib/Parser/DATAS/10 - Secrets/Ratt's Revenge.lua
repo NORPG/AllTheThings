@@ -343,10 +343,8 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						}),
 						o(466960, {	-- Treasure of the Wardens
 							["description"] = "Once you place the Sentry Statue in the Vault of Mirrors, a 5x5 grid of watcher statues will appear. You need to make each statue descend into the floor, but each statue you click will toggle the state of 4 other statues.\n\nThere are addons and website tools to solve this, for your sanity, use one. You may solve this secret in a group.\n\nFully lights up the 7 O'clock basin.",
-							["providers"] = {
-								{ "n", 97128 },	-- Fledgling Warden Owl
-								{ "i", 208092 },	-- Torch of Pyrreth
-							},
+							["qg"] = 97128,	-- Fledgling Warden Owl
+							["qi"] = 208092,	-- Torch of Pyrreth
 							["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
 							["crs"] = 109300,	-- Sentry
 							["groups"] = { i(229054) },	-- Warden's Mirror

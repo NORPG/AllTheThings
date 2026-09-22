@@ -136,10 +136,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(14204, {	-- From the Shadows
 							["sourceQuest"] = 14159,	-- The Rebel Lord's Arsenal
-							["providers"] = {
-								{ "n", 35378 },	-- Lorna Crowley
-								{ "i", 48707 },	-- Gilnean Mastiff Collar
-							},
+							["qg"] = 35378,	-- Lorna Crowley
+							["qi"] = 48707,	-- Gilnean Mastiff Collar
 							["coord"] = { 56.87, 81.41, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -167,10 +165,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(24678, {	-- Knee-Deep
 							["sourceQuest"] = 24920,	-- Slowing the Inevitable
-							["providers"] = {
-								{ "n", 38539 },	-- King Genn Greymane
-								{ "i", 50220 },	-- Half-Burnt Torch
-							},
+							["qg"] = 38539,	-- King Genn Greymane
+							["qi"] = 50220,	-- Half-Burnt Torch
 							["coord"] = { 32.37, 57.01, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
@@ -568,10 +564,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24592, {	-- Betrayal at Tempest's Reach
 					["sourceQuest"] = 24672,	-- Onwards and Upwards
-					["providers"] = {
-						{ "n", 37874 },	-- Krennan Aranas
-						{ "i", 50218 },	-- Krennan's Potion of Stealth
-					},
+					["qg"] = 37874,	-- Krennan Aranas
+					["qi"] = 50218,	-- Krennan's Potion of Stealth
 					["coord"] = { 72.73, 80.04, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -806,10 +800,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						14382,	-- Two By Sea
 						14369,	-- Unleash the Beast
 					},
-					["providers"] = {
-						{ "n", 36290 },	-- Lord Godfrey
-						{ "i", 49240 },	-- Mastiff Whistle
-					},
+					["qg"] = 36290,	-- Lord Godfrey
+					["qi"] = 49240,	-- Mastiff Whistle
 					["coord"] = { 28.97, 63.93, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1120,10 +1112,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24646, {	-- Take Back What's Ours
 					["sourceQuest"] = 24627,	-- At Our Doorstep
-					["providers"] = {
-						{ "n", 37195 },	-- Lord Darius Crowley
-						{ "i", 50134 },	-- Horn of Tal'doren
-					},
+					["qg"] = 37195,	-- Lord Darius Crowley
+					["qi"] = 50134,	-- Horn of Tal'doren
 					["coord"] = { 68.69, 73.26, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {

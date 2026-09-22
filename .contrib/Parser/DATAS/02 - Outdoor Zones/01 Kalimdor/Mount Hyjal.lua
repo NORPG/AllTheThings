@@ -317,10 +317,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25381,	-- Fighting Fire With ... Anything
 						25842,	-- Firefight
 					},
-					["providers"] = {
-						{ "n", 41381 },	-- Nordu
-						{ "i", 56057 },	-- Heart of the Forest
-					},
+					["qg"] = 41381,	-- Nordu
+					["qi"] = 56057,	-- Heart of the Forest
 					["coord"] = { 27.3, 55.5, MOUNT_HYJAL },
 					["groups"] = {
 						i(57267),	-- Rebirth Spaulders

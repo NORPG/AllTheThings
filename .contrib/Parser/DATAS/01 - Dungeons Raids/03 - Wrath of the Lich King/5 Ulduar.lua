@@ -436,10 +436,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								13610,	-- Thorim's Sigil
 							},
 							["qg"] = 33957,	-- Prospector Loren
-							["providers"] = {
-								{ "n", 33957 },	-- Prospector Loren
-								{ "i", 45791 },	-- Sigils of the Watchers
-							},
+							["qg"] = 33957,	-- Prospector Loren
+							["qi"] = 45791,	-- Sigils of the Watchers
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								i(45796, {	-- Celestial Planetarium Key
@@ -1301,10 +1299,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								13824,	-- Heroic: Mimiron's Sigil
 								13823,	-- Heroic: Thorim's Sigil
 							},
-							["providers"] = {
-								{ "n", 33957 },	-- Prospector Loren
-								{ "i", 45855 },	-- Sigils of the Watchers
-							},
+							["qg"] = 33957,	-- Prospector Loren
+							["qi"] = 45855,	-- Sigils of the Watchers
 							["groups"] = {
 								i(45798),	-- Heroic Celestial Planetarium Key
 								i(45878, {	-- Large Sack of Ulduar Spoils
@@ -1988,10 +1984,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							13610,	-- Thorim's Sigil
 						},
 						["qg"] = 33957,	-- Prospector Loren
-						["providers"] = {
-							{ "n", 33957 },	-- Prospector Loren
-							{ "i", 45791 },	-- Sigils of the Watchers
-						},
+						["qg"] = 33957,	-- Prospector Loren
+						["qi"] = 45791,	-- Sigils of the Watchers
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							i(45796, {	-- Celestial Planetarium Key
@@ -2075,10 +2069,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							13824,	-- Heroic: Mimiron's Sigil
 							13823,	-- Heroic: Thorim's Sigil
 						},
-						["providers"] = {
-							{ "n", 33957 },	-- Prospector Loren
-							{ "i", 45855 },	-- Sigils of the Watchers
-						},
+						["qg"] = 33957,	-- Prospector Loren
+						["qi"] = 45855,	-- Sigils of the Watchers
 						["groups"] = {
 							i(45798),	-- Heroic Celestial Planetarium Key
 							i(45878, {	-- Large Sack of Ulduar Spoils

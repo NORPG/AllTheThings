@@ -113,19 +113,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 				}),
 				q(11100, {	-- Commander Arcus
 					["sourceQuest"] = 11099,	-- Kill Them All! (Aldor)
-					["providers"] = {
-						{ "n", 21402 },	-- Anchorite Ceyla
-						{ "i", 32842 },	-- Dragonmaw Flare Gun
-					},
+					["qg"] = 21402,	-- Anchorite Ceyla
+					["qi"] = 32842,	-- Dragonmaw Flare Gun
 					["coord"] = { 62.4, 28.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(11095, {	-- Commander Hobb
 					["sourceQuest"] = 11094,	-- Kill Them All! (Scryers)
-					["providers"] = {
-						{ "n", 21955 },	-- Arcanist Thelis
-						{ "i", 32842 },	-- Dragonmaw Flare Gun
-					},
+					["qg"] = 21955,	-- Arcanist Thelis
+					["qi"] = 32842,	-- Dragonmaw Flare Gun
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 				}),
@@ -251,19 +247,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 				}),
 				q(11099, {	-- Kill Them All! (Aldor)
 					["sourceQuest"] = 11092,	-- Hail, Commander!
-					["providers"] = {
-						{ "n", 23139 },	-- Overlord Mor'ghor
-						{ "i", 32842 },	-- Dragonmaw Flare Gun
-					},
+					["qg"] = 23139,	-- Overlord Mor'ghor
+					["qi"] = 32842,	-- Dragonmaw Flare Gun
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_ALDOR, FRIENDLY },	-- The Aldor, Friendly.
 				}),
 				q(11094, {	-- Kill Them All! (Scryers)
 					["sourceQuest"] = 11092,	-- Hail, Commander!
-					["providers"] = {
-						{ "n", 23139 },	-- Overlord Mor'ghor
-						{ "i", 32842 },	-- Dragonmaw Flare Gun
-					},
+					["qg"] = 23139,	-- Overlord Mor'ghor
+					["qi"] = 32842,	-- Dragonmaw Flare Gun
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_SCRYERS, FRIENDLY },	-- The Scryers, Friendly.
 				}),

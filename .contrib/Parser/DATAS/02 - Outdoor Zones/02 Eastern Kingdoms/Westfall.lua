@@ -220,10 +220,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["description"] = "This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",
 					-- #endif
-					["providers"] = {
-						{ "n",   491 },	-- Quartermaster Lewis
-						{ "i", 15998 },	-- Lewis' Note (PQI!)
-					},
+					["qg"] = 491,	-- Quartermaster Lewis
+					["qi"] = 15998,	-- Lewis' Note (PQI!)
 					["coord"] = { 56.9, 47.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
@@ -231,10 +229,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26320, {	-- A Vision of the Past
 					["sourceQuest"] = 26319,	-- Secrets Revealed
-					["providers"] = {
-						{ "n", 42651 },	-- Thoralius the Wise
-						{ "i", 58147 },	-- Incense Burner (PQI!)
-					},
+					["qg"] = 42651,	-- Thoralius the Wise
+					["qi"] = 58147,	-- Incense Burner (PQI!)
 					["coord"] = { 43.0, 65.0, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -399,10 +395,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
 					-- #endif
 					["sourceQuest"] = 6181,	-- A Swift Message
-					["providers"] = {
-						{ "n",   523 },	-- Thor
-						{ "i", 15998 },	-- Lewis' Note (PQI!)
-					},
+					["qg"] = 523,	-- Thor
+					["qi"] = 15998,	-- Lewis' Note (PQI!)
 					["coord"] = { 56.4, 52.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -598,10 +592,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(26266, {	-- Hope for the People
 					["sourceQuest"] = 26270,	-- You Have Our Thanks
-					["providers"] = {
-						{ "n",   235 },	-- Salma Saldean
-						{ "i", 57988 },	-- Westfall Stew (PQI!)
-					},
+					["qg"] = 235,	-- Salma Saldean
+					["qi"] = 57988,	-- Westfall Stew (PQI!)
 					["coord"] = { 56.4, 30.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -705,10 +697,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26257, {	-- It's Alive!
 					["sourceQuest"] = 26252,	-- Heart of the Watcher
-					["providers"] = {
-						{ "n",   233 },	-- Farmer Saldean
-						{ "i", 57954 },	-- Harvest Watcher Heart (PQI!)
-					},
+					["qg"] = 233,	-- Farmer Saldean
+					["qi"] = 57954,	-- Harvest Watcher Heart (PQI!)
 					["coord"] = { 56.0, 31.2, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -792,10 +782,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2359, {	-- Klaven's Tower
 					["sourceQuest"] = 2360,	-- Mathias and the Defias
-					["providers"] = {
-						{ "n", 7024 },	-- Agent Kearnen
-						{ "i", 8046 },	-- Kearnen's Journal (PQI!)
-					},
+					["qg"] = 7024,	-- Agent Kearnen
+					["qi"] = 8046,	-- Kearnen's Journal (PQI!)
 					["coord"] = { 68.5, 70.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1120,10 +1108,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26290, {	-- Secrets of the Tower
 					["sourceQuest"] = 26289,	-- Find Agent Kearnen
-					["providers"] = {
-						{ "n",  7024 },	-- Agent Kearnen
-						{ "i", 58112 },	-- Potion of Shrouding (PQI)
-					},
+					["qg"] = 7024,	-- Agent Kearnen
+					["qi"] = 58112,	-- Potion of Shrouding (PQI)
 					["coord"] = { 68.3, 70.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1337,10 +1323,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(132, {	-- The Defias Brotherhood (2/7)
 					["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
-					["providers"] = {
-						{ "n",  266 },	-- Wiley the Black
-						{ "i", 1327 },	-- Wiley's Note (PQI!)
-					},
+					["qg"] = 266,	-- Wiley the Black
+					["qi"] = 1327,	-- Wiley's Note (PQI!)
 					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1348,10 +1332,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(135, {	-- The Defias Brotherhood (3/7)
 					["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
-					["providers"] = {
-						{ "n",  234 },	-- Gryan Stoutmantle
-						{ "i", 1327 },	-- Wiley's Note (PQI!)
-					},
+					["qg"] = 234,	-- Gryan Stoutmantle
+					["qi"] = 1327,	-- Wiley's Note (PQI!)
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1359,10 +1341,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
 					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
-					["providers"] = {
-						{ "n",  332 },	-- Master Mathias Shaw
-						{ "i", 1353 },	-- Shaw's Report (PQI!)
-					},
+					["qg"] = 332,	-- Master Mathias Shaw
+					["qi"] = 1353,	-- Shaw's Report (PQI!)
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1551,10 +1531,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36, {		-- Westfall Stew (1/2)
-					["providers"] = {
-						{ "n",  238 },	-- Verna Furlbrow
-						{ "i", 2832 },	-- Verna's Westfall Stew Recipe (PQI!)
-					},
+					["qg"] = 238,	-- Verna Furlbrow
+					["qi"] = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
 					["coord"] = { 60.0, 19.4, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

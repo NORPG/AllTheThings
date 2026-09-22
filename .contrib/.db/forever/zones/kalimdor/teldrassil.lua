@@ -353,10 +353,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(935, {	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 				["sourceQuest"] = 7383,	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
-				["providers"] = {
-					{ "n", 3515 },	-- Corithras Moonrage
-					{ "i", 5188 },	-- Filled Vessel
-				},
+				["qg"] = 3515,	-- Corithras Moonrage
+				["qi"] = 5188,	-- Filled Vessel
 				["coord"] = { 56.2, 61.7, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -365,10 +363,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(997, {	-- Denalan's Earth
-				["providers"] = {
-					{ "n", 2083 },	-- Syral Bladeleaf
-					{ "i", 5391 },	-- Rare Earth
-				},
+				["qg"] = 2083,	-- Syral Bladeleaf
+				["qi"] = 5391,	-- Rare Earth
 				["coord"] = { 56.0, 57.8, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
@@ -505,10 +501,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(6342, {	-- Flight to Auberdine / An Unexpected Gift [CATA+]
 				["sourceQuest"] = 6341,	-- The Bounty of Teldrassil / To Darnassus [CATA+]
-				["providers"] = {
-					{ "n", 3838 },	-- Vesprystus
-					{ "i", 16262 },	-- Nessa's Collection
-				},
+				["qg"] = 3838,	-- Vesprystus
+				["qi"] = 16262,	-- Nessa's Collection
 				["coord"] = { 58.4, 94.0, MAP.TELDRASSIL },
 				["races"] = { NIGHTELF },
 				["lvl"] = 10,
@@ -565,10 +559,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(941, {	-- Planting the Heart
 				["sourceQuest"] = 927,	-- The Moss-twined Heart
 				["qg"] = 2080,	-- Denalan
-				["providers"] = {
-					{ "n", 2080 },	-- Denalan
-					{ "i", 5217 },	-- Tainted Heart
-				},
+				["qg"] = 2080,	-- Denalan
+				["qi"] = 5217,	-- Tainted Heart
 				["coord"] = { 60.8, 68.4, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 9,
@@ -588,10 +580,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(922, {	-- Rellian Greenspyre
 				["sourceQuest"] = 918,	-- Timberling Seeds
-				["providers"] = {
-					{ "n", 2080 },	-- Denalan
-					{ "i", 5168 },	-- Timberling Seed
-				},
+				["qg"] = 2080,	-- Denalan
+				["qi"] = 5168,	-- Timberling Seed
 				["coord"] = { 60.8, 68.4, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
@@ -605,10 +595,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(2943, {	-- Return to Troyas
 				["sourceQuest"] = 2944,	-- The Super Snapper FX
-				["providers"] = {
-					{ "n", 7907 },	-- Daryn Lightwind
-					{ "i", 9331 },	-- Feralas: A History
-				},
+				["qg"] = 7907,	-- Daryn Lightwind
+				["qi"] = 9331,	-- Feralas: A History
 				["coord"] = { 55.4, 92.2, MAP.TELDRASSIL },
 				["maps"] = { MAP.FERALAS },
 				["races"] = ALLIANCE_ONLY,
@@ -688,19 +676,15 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(940, {	-- Teldrassil
 				["sourceQuest"] = 937,	-- The Enchanted Glade
-				["providers"] = {
-					{ "n", 3519 },	-- Sentinel Arynia Cloudsbreak
-					{ "i", 5219 },	-- Inscribed Bark
-				},
+				["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+				["qi"] = 5219,	-- Inscribed Bark
 				["coord"] = { 38.2, 34.4, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(2241, {	-- The Apple Falls
-				["providers"] = {
-					{ "n", 3599 },	-- Jannok Breezesong
-					{ "i", 7735 },	-- Jannok's Rose
-				},
+				["qg"] = 3599,	-- Jannok Breezesong
+				["qi"] = 7735,	-- Jannok's Rose
 				["coord"] = { 56.4, 60.1, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { ROGUE },
@@ -708,20 +692,16 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(2941, {	-- The Borrower
 				["sourceQuest"] = 2940,	-- Feralas: A History
-				["providers"] = {
-					{ "n", 7907 },	-- Daryn Lightwind
-					{ "i", 9329 },	-- A Short Note
-				},
+				["qg"] = 7907,	-- Daryn Lightwind
+				["qi"] = 9329,	-- A Short Note
 				["coord"] = { 55.4, 92.2, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 42,
 			}),
 			q(6341, {	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 				["sourceQuest"] = 6344,	-- Nessa Shadowsong
-				["providers"] = {
-					{ "n", 10118 },	-- Nessa Shadowsong
-					{ "i", 16262 },	-- Nessa's Collection
-				},
+				["qg"] = 10118,	-- Nessa Shadowsong
+				["qi"] = 16262,	-- Nessa's Collection
 				["coord"] = { 56.2, 92.4, MAP.TELDRASSIL },
 				["races"] = { NIGHTELF },
 				["lvl"] = 10,

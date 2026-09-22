@@ -288,10 +288,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1118, {	-- Back to Booty Bay
 					["sourceQuest"] = 1117,	-- Rumors for Kravel
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 5826 },	-- Kravel's Scheme
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 5826,	-- Kravel's Scheme
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -648,10 +646,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1114, {	-- Delivery to the Gnomes
 					["sourceQuest"] = 1112,	-- Parts for Kravel
 					["qg"] = 4452,	-- Kravel Koalbeard
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 5802 },	-- Delicate Car Parts
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 5802,	-- Delicate Car Parts
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -813,10 +809,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5361, {	-- Family Tree
-					["providers"] = {
-						{ "n", 10537 },	-- Cliffwatcher Longhorn
-						{ "i", 13507 },	-- Cliffwatcher Longhorn Report
-					},
+					["qg"] = 10537,	-- Cliffwatcher Longhorn
+					["qi"] = 13507,	-- Cliffwatcher Longhorn Report
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DESOLACE },
@@ -985,10 +979,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1120, {	-- Get the Gnomes Drunk
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 					["altQuests"] = { 1121 },	-- Get the Goblins Drunk
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 5806 },	-- Fool's Stout
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 5806,	-- Fool's Stout
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -996,10 +988,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1121, {	-- Get the Goblins Drunk
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 					["altQuests"] = { 1120 },	-- Get the Gnomes Drunk
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 5806 },	-- Fool's Stout
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 5806,	-- Fool's Stout
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -1111,10 +1101,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1183, {	-- Goblin Sponsorship (5/5)
 					["sourceQuest"] = 1182,	-- Goblin Sponsorship (4/5)
-					["providers"] = {
-						{ "n", 2496 },	-- Baron Revilgaz
-						{ "i", 5852 },	-- Fuel Regulator Blueprints
-					},
+					["qg"] = 2496,	-- Baron Revilgaz
+					["qi"] = 5852,	-- Fuel Regulator Blueprints
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
@@ -1344,10 +1332,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5762, {	-- Hemet Nesingwary
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 14542 },	-- Kravel's Crate
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 14542,	-- Kravel's Crate
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -1547,20 +1533,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1105,	-- Hardened Shells
 						1104,	-- Salt Flat Venom
 					},
-					["providers"] = {
-						{ "n", 4454 },	-- Fizzle Brassbolts
-						{ "i", 5827 },	-- Fizzle Brassbolts' Letter
-					},
+					["qg"] = 4454,	-- Fizzle Brassbolts
+					["qi"] = 5827,	-- Fizzle Brassbolts' Letter
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS },
 					["lvl"] = 26,
 				}),
 				q(4542, {	-- Message to Freewind Post
-					["providers"] = {
-						{ "n", 10079 },	-- Brave Moonhorn
-						{ "i", 11886 },	-- Urgent Message
-					},
+					["qg"] = 10079,	-- Brave Moonhorn
+					["qi"] = 11886,	-- Urgent Message
 					["coord"] = { 32.23, 22.17, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1631,10 +1613,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1112, {	-- Parts for Kravel
 					["sourceQuest"] = 1111,	-- Wharfmaster Dizzywig
-					["providers"] = {
-						{ "n", 3453 },	-- Wharfmaster Dizzywig
-						{ "i", 5800 },	-- Kravel's Parts
-					},
+					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["qi"] = 5800,	-- Kravel's Parts
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1781,10 +1761,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1120,	-- Get the Gnomes Drunk
 						1121,	-- Get the Goblins Drunk
 					},
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 5807 },	-- Fool's Stout Report
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 5807,	-- Fool's Stout Report
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -1816,10 +1794,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1117, {	-- Rumors for Kravel
 					["sourceQuest"] = 1116,	-- Dream Dust in the Swamp
-					["providers"] = {
-						{ "n", 773 },	-- Krazek
-						{ "i", 5804 },	-- Goblin Rumors
-					},
+					["qg"] = 773,	-- Krazek
+					["qi"] = 5804,	-- Goblin Rumors
 					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1842,10 +1818,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1188, {	-- Safety First (1/2)
 					["sourceQuest"] = 1187,	-- Razzeric's Tweaking
-					["providers"] = {
-						{ "n", 4706 },	-- Razzeric
-						{ "i", 5862 },	-- Seaforium Booster
-					},
+					["qg"] = 4706,	-- Razzeric
+					["qi"] = 5862,	-- Seaforium Booster
 					["coord"] = { 80.3, 76.1, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
@@ -1853,10 +1827,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1189, {	-- Safety First (2/2)
 					["sourceQuest"] = 1188,	-- Safety First (1/2)
-					["providers"] = {
-						{ "n", 4708 },	-- Shreev
-						{ "i", 5865 },	-- Modified Seaforium Booster
-					},
+					["qg"] = 4708,	-- Shreev
+					["qi"] = 5865,	-- Modified Seaforium Booster
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
@@ -2135,10 +2107,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9434, {	-- Testing the Tonic
 					["sourceQuest"] = 9433,	-- A Dip in the Moonwell
-					["providers"] = {
-						{ "n", 10941 },	-- Wizlo Bearingshiner
-						{ "i", 23644 },	-- Crate of Reagents
-					},
+					["qg"] = 10941,	-- Wizlo Bearingshiner
+					["qi"] = 23644,	-- Crate of Reagents
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2199,10 +2169,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1179, {	-- The Brassbolts Brothers
-					["providers"] = {
-						{ "n", 2092 },	-- Pilot Longbeard
-						{ "i", 5849 },	-- Crate of Crash Helmets
-					},
+					["qg"] = 2092,	-- Pilot Longbeard
+					["qi"] = 5849,	-- Crate of Crash Helmets
 					["coord"] = { 72.4, 93.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2400,10 +2368,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3843, {	-- The Newest Member of the Family
 					["sourceQuest"] = 3842,	-- A Short Incubation
-					["providers"] = {
-						{ "n", 9238 },	-- Quentin
-						{ "i", 11471 },	-- Fragile Sprite Darter Egg
-					},
+					["qg"] = 9238,	-- Quentin
+					["qi"] = 11471,	-- Fragile Sprite Darter Egg
 					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
@@ -2440,10 +2406,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(1145, {	-- The Swarm Grows (1/3)
-					["providers"] = {
-						{ "n", 3428 },	-- Korran
-						{ "i", 5846 },	-- Korran's Sealed Note
-					},
+					["qg"] = 3428,	-- Korran
+					["qi"] = 5846,	-- Korran's Sealed Note
 					["coord"] = { 51.07, 29.62, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -2452,10 +2416,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1146, {	-- The Swarm Grows (2/3)
 					["sourceQuest"] = 1145,	-- The Swarm Grows (1/3)
-					["providers"] = {
-						{ "n", 4485 },	-- Belgrom Rockmaul
-						{ "i", 5850 },	-- Belgrom's Sealed Note
-					},
+					["qg"] = 4485,	-- Belgrom Rockmaul
+					["qi"] = 5850,	-- Belgrom's Sealed Note
 					["coord"] = { 75.0, 34.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2791,10 +2753,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1111, {	-- Wharfmaster Dizzywig
-					["providers"] = {
-						{ "n", 4452 },	-- Kravel Koalbeard
-						{ "i", 5799 },	-- Kravel's Parts Order
-					},
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["qi"] = 5799,	-- Kravel's Parts Order
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -2889,10 +2849,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1119, {	-- Zanzil's Mixture and a Fool's Stout
 					["sourceQuest"] = 1118,	-- Back to Booty Bay
-					["providers"] = {
-						{ "n", 2498 },	-- Crank Fizzlebub
-						{ "i", 5806 },	-- Fool's Stout
-					},
+					["qg"] = 2498,	-- Crank Fizzlebub
+					["qi"] = 5806,	-- Fool's Stout
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -3077,10 +3035,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				hqt(53655, {	-- Speak to Wan'be underwater at Fizzle and Pozzik's Speedway
 					["name"] = "Speak to Wan'be underwater at Fizzle and Pozzik's Speedway",
 					["sourceQuest"] = 53654,	-- Speak to Wan'be infront of Zaladormu in the Caverns of Time
-					["providers"] = {
-						{ "n", 143129 },	-- Wan'be <The Explorer>
-						{ "i", 163213 },	-- Ghostly Explorer's Skull
-					},
+					["qg"] = 143129,	-- Wan'be <The Explorer>
+					["qi"] = 163213,	-- Ghostly Explorer's Skull
 					["coord"] = { 78.8, 77.0, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },

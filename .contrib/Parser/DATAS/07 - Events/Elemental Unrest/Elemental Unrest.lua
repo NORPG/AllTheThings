@@ -191,19 +191,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(25417, {	-- The Doomsday Plan (A)
 					["sourceQuest"] = 25416,	-- The Master's Plan (A)
-					["providers"] = {
-						{ "n", 40098 },	-- Overseer Sylandra
-						{ "i", 52835 },	-- Elemental Devices
-					},
+					["qg"] = 40098,	-- Overseer Sylandra
+					["qi"] = 52835,	-- Elemental Devices
 					["coord"] = { 31.3, 65.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25347, {	-- The Doomsday Plan (B)
 					["sourceQuest"] = 25343,	-- The Master's Plan (B)
-					["providers"] = {
-						{ "n", 39827 },	-- Overseer Jintak
-						{ "i", 52835 },	-- Elemental Devices
-					},
+					["qg"] = 39827,	-- Overseer Jintak
+					["qi"] = 52835,	-- Elemental Devices
 					["coord"] = { 48.2, 16.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),

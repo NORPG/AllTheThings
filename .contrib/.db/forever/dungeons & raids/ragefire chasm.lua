@@ -48,10 +48,8 @@ root(ROOTS.Instances, {
 				}),
 				q(5724, {	-- Returning the Lost Satchel
 					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
-					["providers"] = {
-						{ "n", 11834 },	-- Maur Grimtotem
-						{ "i", 14381 },	-- Grimtotem Satchel
-					},
+					["qg"] = 11834,	-- Maur Grimtotem
+					["qi"] = 14381,	-- Grimtotem Satchel
 					["maps"] = { MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,

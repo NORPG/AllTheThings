@@ -1428,10 +1428,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 				}),
 				q(29311, {	-- The Rest is History
 					["sourceQuest"] = 29310,	-- The Tipping Point
-					["providers"] = {
-						{ "n", 11801 },	-- Rabine Saturna
-						{ "i", 69855 },	-- Smoke-Stained Locket
-					},
+					["qg"] = 11801,	-- Rabine Saturna
+					["qi"] = 69855,	-- Smoke-Stained Locket
 					["coord"] = { 7.6, 34.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(71259),	-- Leyara's Locket (TOY!)
@@ -1555,10 +1553,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 				}),
 				q(29302, {	-- Unlocking the Secrets Within
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
-					["providers"] = {
-						{ "n", 11801 },	-- Rabine Saturna
-						{ "i", 69855 },	-- Smoke-Stained Locket
-					},
+					["qg"] = 11801,	-- Rabine Saturna
+					["qi"] = 69855,	-- Smoke-Stained Locket
 					["coord"] = { 51.6, 44.8, MOONGLADE },
 				}),
 				q(29282, {	-- Well Armed

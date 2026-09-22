@@ -7,10 +7,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		n(QUESTS, {
 			------ Season 1 ------
 			q(82651, {	-- Omens Unified
-				["providers"] = {
-					{ "n", 223533 },	-- Custodian Khubon
-					{ "i", 211297 },	-- Fractured Spark of Omens
-				},
+				["qg"] = 223533,	-- Custodian Khubon
+				["qi"] = 211297,	-- Fractured Spark of Omens
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 				["groups"] = {
@@ -38,10 +36,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			------ Season 2 ------
 			q(86369, {	-- A Sparkling Fortune
-				["providers"] = {
-					{ "n", 223533 },	-- Custodian Khubon
-					{ "i", 230905 },	-- Fractured Spark of Fortunes
-				},
+				["qg"] = 223533,	-- Custodian Khubon
+				["qi"] = 230905,	-- Fractured Spark of Fortunes
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 				["groups"] = {
@@ -84,10 +80,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			------ Season 3 ------
 			q(91624, {	-- Spark of Starlight
-				["providers"] = {
-					{ "n", 223533 },	-- Custodian Khubon
-					{ "i", 231757 },	-- Fractured Spark of Starlight
-				},
+				["qg"] = 223533,	-- Custodian Khubon
+				["qi"] = 231757,	-- Fractured Spark of Starlight
 				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
 					i(231757),	-- Fractured Spark of Starlight

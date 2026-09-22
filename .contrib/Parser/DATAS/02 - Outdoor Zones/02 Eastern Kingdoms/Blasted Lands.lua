@@ -391,10 +391,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26164,	-- The Charred Granite of the Dark Portal (A)
 						26165,	-- The Vile Blood of Demons (A)
 					},
-					["providers"] = {
-						{ "n", 42299 },	-- Watcher Grimeo
-						{ "i", 57140 },	-- Grimeo's Package
-					},
+					["qg"] = 42299,	-- Watcher Grimeo
+					["qi"] = 57140,	-- Grimeo's Package
 					["coord"] = { 55.1, 49.5, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -404,10 +402,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25691,	-- The Charred Granite of the Dark Portal (H)
 						25692,	-- The Vile Blood of Demons (H)
 					},
-					["providers"] = {
-						{ "n", 41159 },	-- Watcher Wazzik
-						{ "i", 56025 },	-- Wazzik's Package
-					},
+					["qg"] = 41159,	-- Watcher Wazzik
+					["qi"] = 56025,	-- Wazzik's Package
 					["coord"] = { 54.3, 50.0, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -516,10 +512,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26157, {	-- Kasim Sharim
 					["sourceQuest"] = 25716,	-- Cultists at our Doorstep
-					["providers"] = {
-						{ "n", 5385 },	-- Watcher Mahar Ba
-						{ "i", 57136 },	-- A Letter to Kasim Sharim
-					},
+					["qg"] = 5385,	-- Watcher Mahar Ba
+					["qi"] = 57136,	-- A Letter to Kasim Sharim
 					["coord"] = { 63.1, 16.8, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -578,10 +572,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25682, {	-- Mission Complete
 					["sourceQuest"] = 25681,	-- Some People Just Need Killing
-					["providers"] = {
-						{ "n", 41134 },	-- Tak'arili
-						{ "i", 56017 },	-- Nethergarde Mine Report
-					},
+					["qg"] = 41134,	-- Tak'arili
+					["qi"] = 56017,	-- Nethergarde Mine Report
 					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1392,10 +1384,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25696, {	-- The Sunveil Excursion
 					["sourceQuest"] = 25695,	-- Watching Our Back
-					["providers"] = {
-						{ "n", 19254 },	-- Warlord Dar'toon
-						{ "i", 57196 },	-- Reliquary Papers
-					},
+					["qg"] = 19254,	-- Warlord Dar'toon
+					["qi"] = 57196,	-- Reliquary Papers
 					["coord"] = { 54.4, 50.5, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1430,20 +1420,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26169,	-- The Amulet of Grol
 						26168,	-- The Amulet of Sevine
 					},
-					["providers"] = {
-						{ "n", 42298 },	-- Kasim Sharim
-						{ "i", 56019 },	-- Discordant Rune
-					},
+					["qg"] = 42298,	-- Kasim Sharim
+					["qi"] = 56019,	-- Discordant Rune
 					["coord"] = { 62.4, 25.9, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25689, {	-- Time is Short (H)
 					["sourceQuest"] = 25688,	-- The Altar of Storms
-					["providers"] = {
-						{ "n", 7783 },	-- Loramus Thalipedes
-						{ "i", 56019 },	-- Discordant Rune
-					},
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["qi"] = 56019,	-- Discordant Rune
 					["coord"] = { 39.3, 35.7, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

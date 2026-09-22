@@ -2119,10 +2119,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		q(7063, {	-- The Feast of Winter Veil (Alliance)
 			["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
-			["providers"] = {
-				{ "n", 2916 },	-- Historian Karnik
-				{ "i", 17735 },	-- The Feast of Winter Veil (QI!)
-			},
+			["qg"] = 2916,	-- Historian Karnik
+			["qi"] = 17735,	-- The Feast of Winter Veil (QI!)
 			["coord"] = { 77.2, 11.8, IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_1_2_0 },
@@ -2131,10 +2129,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		q(7061, {	-- The Feast of Winter Veil (Horde)
 			["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
-			["providers"] = {
-				{ "n", 13417 },	-- Sagorne Creststrider <Shaman Trainer>
-				{ "i", 17735 },	-- The Feast of Winter Veil (QI!)
-			},
+			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+			["qi"] = 17735,	-- The Feast of Winter Veil (QI!)
 			["coord"] = { 38.6, 36.2, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_1_2_0 },

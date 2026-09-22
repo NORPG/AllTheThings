@@ -1227,10 +1227,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1469, {	-- Rhapsody's Tale
 					["sourceQuest"] = 1452,	-- Rhapsody's Kalimdor Kocktail
-					["providers"] = {
-						{ "n", 5634 },	-- Rhapsody Shindigger
-						{ "i", 6287 },	-- Atal'ai Tablet Fragment
-					},
+					["qg"] = 5634,	-- Rhapsody Shindigger
+					["qi"] = 6287,	-- Atal'ai Tablet Fragment
 					["coord"] = { 26.8, 48.4, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1256,10 +1254,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(81, {		-- Ripple Delivery
 					["sourceQuest"] = 77,	-- A Sticky Situation
-					["providers"] = {
-						{ "n", 7801 },	-- Gilveradin Sunchaser
-						{ "i", 8685 },	-- Dran's Ripple Delivery
-					},
+					["qg"] = 7801,	-- Gilveradin Sunchaser
+					["qi"] = 8685,	-- Dran's Ripple Delivery
 					["coord"] = { 26.6, 48.4, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1651,10 +1647,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2990, {	-- Thadius Grimshade
 					["sourceQuest"] = 2989,	-- The Altar of Zul
-					["providers"] = {
-						{ "n", 5636 },	-- Gryphon Master Talonaxe
-						{ "i", 9468 },	-- Sharpbeak's Feather
-					},
+					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["qi"] = 9468,	-- Sharpbeak's Feather
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1935,10 +1929,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2938, {	-- Venom to the Undercity
 					["sourceQuest"] = 2937,	-- Summoning Shadra
-					["providers"] = {
-						{ "n", 2216 },	-- Apothecary Lydon <Royal Apothecary Society>
-						{ "i", 9436 },	-- Faranell's Parcel
-					},
+					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
+					["qi"] = 9436,	-- Faranell's Parcel
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },

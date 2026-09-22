@@ -382,10 +382,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(14304, {	-- Blood Theory
-					["providers"] = {
-						{ "n", 36048 },	-- Thressa Amberglen
-						{ "i", 49138 },	-- Bottle of Leeches (QI!) not prov
-					},
+					["qg"] = 36048,	-- Thressa Amberglen
+					["qi"] = 49138,	-- Bottle of Leeches (QI!) not prov
 					["coord"] = { 58.8, 46.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -847,10 +845,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1052, {	-- Down the Scarlet Path (2/2)
 					["sourceQuest"] = 261,	-- Down the Scarlet Path (1/2)
-					["providers"] = {
-						{ "n", 1182 },	-- Brother Anton <Scarlet Crusade Emissary>
-						{ "i", 5539 },	-- Letter of Commendation
-					},
+					["qg"] = 1182,	-- Brother Anton <Scarlet Crusade Emissary>
+					["qi"] = 5539,	-- Letter of Commendation
 					["coord"] = { 66.5, 7.9, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -1179,10 +1175,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5763, {	-- Hunting in Stranglethorn
-					["providers"] = {
-						{ "n", 11877 },	-- Roon Wildmane
-						{ "i", 14546 },	-- Roon's Kodo Horn
-					},
+					["qg"] = 11877,	-- Roon Wildmane
+					["qi"] = 14546,	-- Roon's Kodo Horn
 					["coord"] = { 25.0, 72.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -1829,10 +1823,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1467, {	-- Reagents for Reclaimers Inc. (4/4)
 					["sourceQuest"] = 1466,	-- Reagents for Reclaimers Inc. (3/4)
-					["providers"] = {
-						{ "n", 5638 },	-- Kreldig Ungor
-						{ "i", 6253 },	-- Leftwitch's Package
-					},
+					["qg"] = 5638,	-- Kreldig Ungor
+					["qi"] = 6253,	-- Leftwitch's Package
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2334,10 +2326,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1457, {	-- The Karnitol Shipwreck (4/4)
 					["sourceQuest"] = 1456,	-- The Karnitol Shipwreck (3/4)
-					["providers"] = {
-						{ "n", 5638 },	-- Kreldig Ungor
-						{ "i", 6245 },	-- Karnitol's Satchel
-					},
+					["qg"] = 5638,	-- Kreldig Ungor
+					["qi"] = 6245,	-- Karnitol's Satchel
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },

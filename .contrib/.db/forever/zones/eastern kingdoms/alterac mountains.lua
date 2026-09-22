@@ -161,10 +161,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(1712, {	-- Cyclonian
 				["sourceQuest"] = 1791,	-- The Windwatcher
-				["providers"] = {
-					{ "n", 6176 },	-- Bath'rah the Windwatcher
-					{ "i", 6929 },	-- Bath'rah's Parchment
-				},
+				["qg"] = 6176,	-- Bath'rah the Windwatcher
+				["qi"] = 6929,	-- Bath'rah's Parchment
 				["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				["maps"] = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
 				["cost"] = { { "i", 3357, 8 } },	-- Liferoot
@@ -283,10 +281,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(525, {	-- Further Mysteries
 				["sourceQuest"] = 514,	-- Letter to Stormpike
-				["providers"] = {
-					{ "n", 1356 },	-- Prospector Stormpike
-					{ "i", 3518 },	-- Decrypted Letter
-				},
+				["qg"] = 1356,	-- Prospector Stormpike
+				["qi"] = 3518,	-- Decrypted Letter
 				["coord"] = { 74.4, 12.0, MAP.IRONFORGE },
 				["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
@@ -336,10 +332,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(514, {	-- Letter to Stormpike
 				["sourceQuest"] = 511,	-- Encrypted Letter
-				["providers"] = {
-					{ "n", 2277 },	-- Loremaster Dibbs
-					{ "i", 3521 },	-- Cleverly Encrypted Letter
-				},
+				["qg"] = 2277,	-- Loremaster Dibbs
+				["qi"] = 3521,	-- Cleverly Encrypted Letter
 				["coord"] = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
@@ -423,10 +417,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(554, {	-- Stormpike's Deciphering
 				["sourceQuest"] = 551,	-- The Ensorcelled Parchment
-				["providers"] = {
-					{ "n", 2277 },	-- Loremaster Dibbs
-					{ "i", 3706 },	-- Ensorcelled Parchment
-				},
+				["qg"] = 2277,	-- Loremaster Dibbs
+				["qi"] = 3706,	-- Ensorcelled Parchment
 				["coord"] = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 28,
@@ -459,10 +451,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(508, {	-- Taretha's Gift
 				["sourceQuest"] = 507,	-- Lord Aliden Perenolde
-				["providers"] = {
-					{ "n", 2317 },	-- Elysa
-					{ "i", 3498 },	-- Taretha's Necklace
-				},
+				["qg"] = 2317,	-- Elysa
+				["qi"] = 3498,	-- Taretha's Necklace
 				["coord"] = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 29,
@@ -536,10 +526,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(521, {	-- The Crown of Will (5/5)
 				["sourceQuest"] = 520,	-- The Crown of Will (4/5)
-				["providers"] = {
-					{ "n", 2278 },	-- Melisara
-					{ "i", 3554 },	-- Crown of Will
-				},
+				["qg"] = 2278,	-- Melisara
+				["qi"] = 3554,	-- Crown of Will
 				["coord"] = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 34,

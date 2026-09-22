@@ -326,10 +326,8 @@ root(ROOTS.Zones, {
 					q(10708, {	-- Akama's Promise
 						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						["altQuests"] = { 11052 },	-- Akama's Promise
-						["providers"] = {
-							{ "n", 21700 },	-- Akama
-							{ "i", 32646 },	-- Medallion of Karabor
-						},
+						["qg"] = 21700,	-- Akama
+						["qi"] = 32646,	-- Medallion of Karabor
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 						["maps"] = { SHATTRATH_CITY },
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -345,10 +343,8 @@ root(ROOTS.Zones, {
 					q(11052, {	-- Akama's Promise
 						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						["altQuests"] = { 10708 },	-- Akama's Promise
-						["providers"] = {
-							{ "n", 21700 },	-- Akama
-							{ "i", 32646 },	-- Medallion of Karabor
-						},
+						["qg"] = 21700,	-- Akama
+						["qi"] = 32646,	-- Medallion of Karabor
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 						["maps"] = { SHATTRATH_CITY },
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -531,10 +527,8 @@ root(ROOTS.Zones, {
 					q(10774, {	-- Blood Elf + Giant = ???
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10773,	-- Breaching the Path
-						["providers"] = {
-							{ "n", 22059 },	-- Wildhammer Gryphon Rider
-							{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
-						},
+						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -562,10 +556,8 @@ root(ROOTS.Zones, {
 					q(10773, {	-- Breaching the Path (A)
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10772,	-- The Path of Conquest (A)
-						["providers"] = {
-							{ "n", 22059 },	-- Wildhammer Gryphon Rider
-							{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
-						},
+						["qg"] = 22059,	-- Wildhammer Gryphon Rider
+						["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -583,10 +575,8 @@ root(ROOTS.Zones, {
 					q(10751, {	-- Breaching the Path (H)
 						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10750,	-- The Path of Conquest (H)
-						["providers"] = {
-							{ "n", 21998 },	-- Kor'kron Wind Rider
-							{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
-						},
+						["qg"] = 21998,	-- Kor'kron Wind Rider
+						["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -607,10 +597,8 @@ root(ROOTS.Zones, {
 								10583,	-- The Fate of Flanis
 								10585,	-- The Summoning Chamber (A)
 							},
-							["providers"] = {
-								{ "n", 21471 },	-- Stormer Ewan Wildwing
-								{ "i", 30688 },	-- Deathforge Key
-							},
+							["qg"] = 21471,	-- Stormer Ewan Wildwing
+							["qi"] = 30688,	-- Deathforge Key
 							["coord"] = { 40.4, 41.2, SHADOWMOON_VALLEY },
 						}),
 						["hordeQuestData"] = q(10603, {	-- Bring Down the Warbringer! (H)
@@ -618,10 +606,8 @@ root(ROOTS.Zones, {
 								10601,	-- The Fate of Kagrosh
 								10602,	-- The Summoning Chamber (H)
 							},
-							["providers"] = {
-								{ "n", 21475 },	-- Scout Zagran
-								{ "i", 30688 },	-- Deathforge Key
-							},
+							["qg"] = 21475,	-- Scout Zagran
+							["qi"] = 30688,	-- Deathforge Key
 							["coord"] = { 38.5, 38.1, SHADOWMOON_VALLEY },
 						}),
 						["lvl"] = lvlsquish(67, 67, 25),
@@ -692,19 +678,15 @@ root(ROOTS.Zones, {
 						["allianceQuestData"] = q(10776, {	-- Dissension Amongst the Ranks... (A)
 							["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10775,	-- Tabards of the Illidari (A)
-							["providers"] = {
-								{ "n", 22059 },	-- Wildhammer Gryphon Rider
-								{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
-							},
+							["qg"] = 22059,	-- Wildhammer Gryphon Rider
+							["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
 							["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						}),
 						["hordeQuestData"] = q(10769, {	-- Dissension Amongst the Ranks... (H)
 							["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10768,	-- Tabards of the Illidari (H)
-							["providers"] = {
-								{ "n", 21998 },	-- Kor'kron Wind Rider
-								{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
-							},
+							["qg"] = 21998,	-- Kor'kron Wind Rider
+							["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
 						}),
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -1415,19 +1397,15 @@ root(ROOTS.Zones, {
 						["allianceQuestData"] = q(10775, {	-- Tabards of the Illidari (A)
 							["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10774,	-- Blood Elf + Giant = ???
-							["providers"] = {
-								{ "n", 22059 },	-- Wildhammer Gryphon Rider
-								{ "i", 31310 },	-- Wildhammer Flare Gun (Provided)
-							},
+							["qg"] = 22059,	-- Wildhammer Gryphon Rider
+							["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
 							["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						}),
 						["hordeQuestData"] = q(10768, {	-- Tabards of the Illidari (H)
 							["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10765,	-- When Worlds Collide
-							["providers"] = {
-								{ "n", 21998 },	-- Kor'kron Wind Rider
-								{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
-							},
+							["qg"] = 21998,	-- Kor'kron Wind Rider
+							["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
 						}),
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -1668,10 +1646,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10550, {	-- The Bundle of Bloodthistle
 						["sourceQuest"] = 10547,	-- Of Thistleheads and Eggs...
-						["providers"] = {
-							{ "n", 21411 },	-- Tobias the Filth Gorger
-							{ "i", 30501 },	-- Bundle of Bloodthistle
-						},
+						["qg"] = 21411,	-- Tobias the Filth Gorger
+						["qi"] = 30501,	-- Bundle of Bloodthistle
 						["coord"] = { 63.8, 69.7, SHATTRATH_CITY },
 						["lvl"] = lvlsquish(68, 68, 25),
 					}),
@@ -1740,10 +1716,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10523, {	-- The Cipher of Damnation - The First Fragment Recovered
 						["sourceQuest"] = 10522,	-- The Cipher of Damnation - Grom'tor's Charge
-						["providers"] = {
-							{ "n", 21291 },	-- Grom'tor, Son of Oronok
-							{ "i", 30429 },	-- Grom'tor's Lockbox
-						},
+						["qg"] = 21291,	-- Grom'tor, Son of Oronok
+						["qi"] = 30429,	-- Grom'tor's Lockbox
 						["coord"] = { 44.6, 23.6, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -1755,10 +1729,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10541, {	-- The Cipher of Damnation - The Second Fragment Recovered
 						["sourceQuest"] = 10540,	-- The Cipher of Damnation - Ar'tor's Charge
-						["providers"] = {
-							{ "n", 21318 },	-- Spirit of Ar'tor
-							{ "i", 30454 },	-- Ar'tor's Lockbox
-						},
+						["qg"] = 21318,	-- Spirit of Ar'tor
+						["qi"] = 30454,	-- Ar'tor's Lockbox
 						["coord"] = { 29.6, 50.6, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -1771,10 +1743,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10579, {	-- The Cipher of Damnation - The Third Fragment Recovered
 						["sourceQuest"] = 10578,	-- The Cipher of Damnation - Borak's Charge
-						["providers"] = {
-							{ "n", 21293 },	-- Borak, Son of Oronok
-							{ "i", 30646 },	-- Borak's Lockbox
-						},
+						["qg"] = 21293,	-- Borak, Son of Oronok
+						["qi"] = 30646,	-- Borak's Lockbox
 						["coord"] = { 47.6, 57.2, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -1908,10 +1878,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10662, {	-- The Hermit Smith (A)
 						["sourceQuest"] = 10626,	-- Capture the Weapons (A)
-						["providers"] = {
-							{ "n", 19370 },	-- Ordinn Thunderfist
-							{ "i", 30822 },	-- Box of Ingots (Provided)
-						},
+						["qg"] = 19370,	-- Ordinn Thunderfist
+						["qi"] = 30822,	-- Box of Ingots (Provided)
 						["coord"] = { 36.8, 54.8, SHADOWMOON_VALLEY },
 						["maps"] = { TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
@@ -1919,10 +1887,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10663, {	-- The Hermit Smith (H)
 						["sourceQuest"] = 10627,	-- Capture the Weapons (H)
-						["providers"] = {
-							{ "n", 19333 },	-- Grokom Deatheye
-							{ "i", 30822 },	-- Box of Ingots (Provided)
-						},
+						["qg"] = 19333,	-- Grokom Deatheye
+						["qi"] = 30822,	-- Box of Ingots (Provided)
 						["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 						["maps"] = { TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
@@ -2309,10 +2275,8 @@ root(ROOTS.Zones, {
 					q(10765, {	-- When Worlds Collide...
 						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10751,	-- Breaching the Path (H)
-						["providers"] = {
-							{ "n", 21998 },	-- Kor'kron Wind Rider
-							{ "i", 31108 },	-- Kor'kron Flare Gun (Provided)
-						},
+						["qg"] = 21998,	-- Kor'kron Wind Rider
+						["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {

@@ -100,59 +100,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				},
 			}),
 			q(8897, {	-- Dearest Colara, [Stormwind City]
-				["providers"] = {
-					{ "n", 16005 },	-- Lieutenant Jocryn Heldric
-					{ "i", 21921 },	-- Carefully Penned Note
-				},
+				["qg"] = 16005,	-- Lieutenant Jocryn Heldric
+				["qi"] = 21921,	-- Carefully Penned Note
 				["coord"] = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(8898, {	-- Dearest Colara, [Ironforge]
-				["providers"] = {
-					{ "n", 16009 },	-- Tormek Stoneriver
-					{ "i", 21920 },	-- Creased Letter
-				},
+				["qg"] = 16009,	-- Tormek Stoneriver
+				["qi"] = 21920,	-- Creased Letter
 				["coord"] = { 32.4, 66.0, MAP.IRONFORGE },
 				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(8899, {	-- Dearest Colara, [Darnassus]
-				["providers"] = {
-					{ "n", 16001 },	-- Aldris Fourclouds
-					{ "i", 21925 },	-- Immaculate Letter
-				},
+				["qg"] = 16001,	-- Aldris Fourclouds
+				["qi"] = 21925,	-- Immaculate Letter
 				["coord"] = { 42.0, 42.0, MAP.DARNASSUS },
 				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(8900, {	-- Dearest Elenia, [Orgrimmar]
-				["providers"] = {
-					{ "n", 16007 },	-- Orok Deathbane
-					{ "i", 21926 },	-- Slightly Creased Note
-				},
+				["qg"] = 16007,	-- Orok Deathbane
+				["qi"] = 21926,	-- Slightly Creased Note
 				["coord"] = { 51.2, 70.2, MAP.ORGRIMMAR },
 				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(8901, {	-- Dearest Elenia, [Thunder Bluff]
-				["providers"] = {
-					{ "n", 16008 },	-- Temma of the Wells
-					{ "i", 22264 },	-- Carefully Written Letter
-				},
+				["qg"] = 16008,	-- Temma of the Wells
+				["qi"] = 22264,	-- Carefully Written Letter
 				["coord"] = { 44.8, 59.6, MAP.THUNDER_BLUFF },
 				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(8902, {	-- Dearest Elenia, [Undercity]
-				["providers"] = {
-					{ "n", 16003 },	-- Deathguard Tor
-					{ "i", 22265 },	-- Lovingly Composed Letter
-				},
+				["qg"] = 16003,	-- Deathguard Tor
+				["qi"] = 22265,	-- Lovingly Composed Letter
 				["coord"] = { 60.6, 59.6, MAP.TIRISFAL_GLADES },
 				["maps"] = { MAP.UNDERCITY },
 				["races"] = HORDE_ONLY,

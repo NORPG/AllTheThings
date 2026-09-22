@@ -758,10 +758,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
-					["providers"] = {
-						{ "n", 10431 },	-- Gregor Greystone
-						{ "i", 15790 },	-- Studies in Spirit Speaking
-					},
+					["qg"] = 10431,	-- Gregor Greystone
+					["qi"] = 15790,	-- Studies in Spirit Speaking
 					["coord"] = { 61.2, 38.8, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -1305,10 +1303,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["sourceQuest"] = 5248,	-- Tormented By the Past
-					["providers"] = {
-						{ "n", 10684 },	-- Remorseful Highborne
-						{ "i", 13347 },	-- Crystal of Zin-Malor (Provided)
-					},
+					["qg"] = 10684,	-- Remorseful Highborne
+					["qi"] = 13347,	-- Crystal of Zin-Malor (Provided)
 					["coord"] = { 56.2, 44.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1316,10 +1312,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4810, {	-- Return to Tinkee
 					["sourceQuest"] = 4809,	-- Chillwind Horns
-					["providers"] = {
-						{ "n", 10468 },	-- Felnok Steelspring
-						{ "i", 12445 },	-- Felnok's Package
-					},
+					["qg"] = 10468,	-- Felnok Steelspring
+					["qi"] = 12445,	-- Felnok's Package
 					["coord"] = { 61.6, 38.6, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BURNING_STEPPES },
@@ -1673,10 +1667,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5253, {	-- The Crystal of Zin-Malor
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
-					["providers"] = {
-						{ "n", 11079 },	-- Wynd Nightchaser
-						{ "i", 13347 },	-- Crystal of Zin-Malor (Provided)
-					},
+					["qg"] = 11079,	-- Wynd Nightchaser
+					["qi"] = 13347,	-- Crystal of Zin-Malor (Provided)
 					["coord"] = { 52.0, 30.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
@@ -1707,10 +1699,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["hordeQuestData"] = q(6029, {	-- The Everlook Report (H)
 						["maps"] = { TIRISFAL_GLADES },
 					}),
-					["providers"] = {
-						{ "n", 10431 },	-- Gregor Greystone
-						{ "i", 15788 },	-- Everlook Report
-					},
+					["qg"] = 10431,	-- Gregor Greystone
+					["qi"] = 15788,	-- Everlook Report
 					["coord"] = { 61.2, 38.8, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -2384,10 +2374,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(SPECIAL, {
 				hqt(53653, {	-- Speak to Wan'be at Frostsaber Rock in Winterspring
 					["name"] = "Speak to Wan'be at Frostsaber Rock in Winterspring",
-					["providers"] = {
-						{ "n", 143129 },	-- Wan'be <The Explorer>
-						{ "i", 163213 },	-- Ghostly Explorer's Skull
-					},
+					["qg"] = 143129,	-- Wan'be <The Explorer>
+					["qi"] = 163213,	-- Ghostly Explorer's Skull
 					["coord"] = { 46.4, 18.1, WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },

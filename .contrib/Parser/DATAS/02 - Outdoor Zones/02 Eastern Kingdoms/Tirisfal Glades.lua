@@ -44,10 +44,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(QUESTS, {
 						q(8, {	-- A Rogue's Deal (1/2)
-							["providers"] = {
-								{ "n", 6784 },	-- Calvin Montague
-								{ "i", 7628 },	-- Nondescript Letter
-							},
+							["qg"] = 6784,	-- Calvin Montague
+							["qi"] = 7628,	-- Nondescript Letter
 							["coord"] = { 38.2, 56.6, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -131,10 +129,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								364,	-- The Mindless Ones
 								-- #endif
 							},
-							["providers"] = {
-								{ "n", 1569 },	-- Shadow Priest Sarvis
-								{ "i", 9559 },	-- Encrypted Scroll
-							},
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 9559,	-- Encrypted Scroll
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
@@ -166,10 +162,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								364,	-- The Mindless Ones
 								-- #endif
 							},
-							["providers"] = {
-								{ "n", 1569 },	-- Shadow Priest Sarvis
-								{ "i", 9574 },	-- Glyphic Scroll
-							},
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 9574,	-- Glyphic Scroll
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
@@ -189,10 +183,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								364,	-- The Mindless Ones
 								-- #endif
 							},
-							["providers"] = {
-								{ "n", 1569 },	-- Shadow Priest Sarvis
-								{ "i", 9569 },	-- Hallowed Scroll
-							},
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 9569,	-- Hallowed Scroll
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
@@ -454,10 +446,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(31146, {	-- Scribbled Scroll
-							["providers"] = {
-								{ "n", 1569 },	-- Shadow Priest Sarvis
-								{ "i", 85164 },	-- Elegant Scroll
-							},
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 85164,	-- Elegant Scroll
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
@@ -485,10 +475,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								364,	-- The Mindless Ones
 								-- #endif
 							},
-							["providers"] = {
-								{ "n", 1569 },	-- Shadow Priest Sarvis
-								{ "i", 9546 },	-- Simple Scroll
-							},
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 9546,	-- Simple Scroll
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
@@ -502,10 +490,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77671, {	-- Spell Research
-							["providers"] = {
-								{ "n", 2124 },	-- Isabella <Mage Trainer>
-								{ "i", 211809 },	-- Comprehension Primer
-							},
+							["qg"] = 2124,	-- Isabella <Mage Trainer>
+							["qi"] = 211809,	-- Comprehension Primer
 							["coord"] = { 30.8, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { UNDEAD },
@@ -539,10 +525,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								364,	-- The Mindless Ones
 								-- #endif
 							},
-							["providers"] = {
-								{ "n", 1569 },	-- Shadow Priest Sarvis
-								{ "i", 9578 },	-- Tainted Scroll
-							},
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 9578,	-- Tainted Scroll
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 46.6, 58.8, DEATHKNELL },
@@ -817,10 +801,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(383, {	-- Vital Intelligence
 							["sourceQuest"] = 382,	-- The Red Messenger
-							["providers"] = {
-								{ "n", 1570 },	-- Executor Arren
-								{ "i", 2885 },	-- Scarlet Crusade Documents
-							},
+							["qg"] = 1570,	-- Executor Arren
+							["qi"] = 2885,	-- Scarlet Crusade Documents
 							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -1367,10 +1349,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(492, {	-- A New Plague (4/4)
 					["sourceQuest"] = 369,	-- A New Plague (3/4)
-					["providers"] = {
-						{ "n", 1518 },	-- Apothecary Johaan
-						{ "i", 3460 },	-- Johaan's Special Drink
-					},
+					["qg"] = 1518,	-- Apothecary Johaan
+					["qi"] = 3460,	-- Johaan's Special Drink
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1689,10 +1669,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(445, {	-- Delivery to Silverpine Forest
-					["providers"] = {
-						{ "n", 1518 },	-- Apothecary Johaan
-						{ "i", 3238 },	-- Johaan's Findings
-					},
+					["qg"] = 1518,	-- Apothecary Johaan
+					["qi"] = 3238,	-- Johaan's Findings
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1770,10 +1748,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(407, {	-- Fields of Grief (2/2)
 					["sourceQuest"] = 365,	-- Fields of Grief (1/2)
-					["providers"] = {
-						{ "n", 1518 },	-- Apothecary Johaan
-						{ "i", 3035 },	-- Laced Pumpkin
-					},
+					["qg"] = 1518,	-- Apothecary Johaan
+					["qi"] = 3035,	-- Laced Pumpkin
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2215,10 +2191,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(366, {	-- Return the Book
 					["sourceQuest"] = 357,	-- The Lich's Identity
-					["providers"] = {
-						{ "n", 1498 },	-- Bethor Iceshard
-						{ "i", 3016 },	-- Gunther's Spellbook
-					},
+					["qg"] = 1498,	-- Bethor Iceshard
+					["qi"] = 3016,	-- Gunther's Spellbook
 					["coord"] = { 84.2, 17.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2286,10 +2260,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				q(6321, {	-- Supplying Brill [CATA+] / Supplying the Sepulcher
-					["providers"] = {
-						{ "n", 1745 },	-- Deathguard Morris
-						{ "i", 16209 },	-- Morris's Order
-					},
+					["qg"] = 1745,	-- Deathguard Morris
+					["qi"] = 16209,	-- Morris's Order
 					["coord"] = { 60.2, 52.4, TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
 				}),
@@ -2513,10 +2485,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(405, {	-- The Prodigal Lich
-					["providers"] = {
-						{ "n", 1499 },	-- Magistrate Sevren
-						{ "i", 3017 },	-- Sevren's Orders
-					},
+					["qg"] = 1499,	-- Magistrate Sevren
+					["qi"] = 3017,	-- Sevren's Orders
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2524,10 +2494,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(411, {	-- The Prodigal Lich Returns
 					["sourceQuest"] = 409,	-- Proving Allegiance
-					["providers"] = {
-						{ "n", 1497 },	-- Gunther Arcanus
-						{ "i", 3081 },	-- Nether Gem
-					},
+					["qg"] = 1497,	-- Gunther Arcanus
+					["qi"] = 3081,	-- Nether Gem
 					["coord"] = { 68.2, 42.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

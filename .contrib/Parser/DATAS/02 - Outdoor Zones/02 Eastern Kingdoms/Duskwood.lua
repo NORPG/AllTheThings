@@ -292,10 +292,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						526,	-- Lightforge Ingots
 						324,	-- The Lost Ingots
 					},
-					["providers"] = {
-						{ "n", 1217 },	-- Glorin Steelbrow
-						{ "i", 2712 },	-- Crate of Lightforge Ingots
-					},
+					["qg"] = 1217,	-- Glorin Steelbrow
+					["qi"] = 2712,	-- Crate of Lightforge Ingots
 					["coord"] = { 10.6, 60.5, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -395,10 +393,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26672, {	-- Clawing at the Truth
 					["sourceQuest"] = 26671,	-- The Fate of Stalvan Mistmantle
-					["providers"] = {
-						{ "n", 43453 },	-- Tobias Mistmantle
-						{ "i", 3629 },	-- Mistmantle Family Ring
-					},
+					["qg"] = 43453,	-- Tobias Mistmantle
+					["qi"] = 3629,	-- Mistmantle Family Ring
 					["coord"] = { 79.0, 44.1, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -433,10 +429,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(157, {	-- Deliver the Thread
 					["sourceQuest"] = 154,	-- Return the Comb
-					["providers"] = {
-						{ "n", 265 },	-- Madame Eva
-						{ "i", 1596 },	-- Ghost Hair Thread
-					},
+					["qg"] = 265,	-- Madame Eva
+					["qi"] = 1596,	-- Ghost Hair Thread
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -444,10 +438,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26655, {	-- Deliver the Thread
 					["sourceQuest"] = 26654,	-- Return the Comb
-					["providers"] = {
-						{ "n", 265 },	-- Madame Eva
-						{ "i", 1596 },	-- Ghost Hair Thread
-					},
+					["qg"] = 265,	-- Madame Eva
+					["qi"] = 1596,	-- Ghost Hair Thread
 					["coord"] = { 75.7, 45.2, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -470,10 +462,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(164, {	-- Deliveries to Sven
-					["providers"] = {
-						{ "n", 633 },	-- Elaine Carevin
-						{ "i", 1922 },	-- Supplies for Sven
-					},
+					["qg"] = 633,	-- Elaine Carevin
+					["qi"] = 1922,	-- Supplies for Sven
 					["coord"] = { 75.3, 48.7, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -482,10 +472,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26719, {	-- Delivery to Master Harris
 					["sourceQuest"] = 26717,	-- The Yorgen Worgen
-					["providers"] = {
-						{ "n", 43738 },	-- Apprentice Fess
-						{ "i", 60205 },	-- Bundle of Corpseweed
-					},
+					["qg"] = 43738,	-- Apprentice Fess
+					["qi"] = 60205,	-- Bundle of Corpseweed
 					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -540,10 +528,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(453, {	-- Finding the Shadowy Figure
 					["sourceQuest"] = 266,	-- Inquire at the Inn
-					["providers"] = {
-						{ "n", 273 },	-- Tavernkeep Smitts
-						{ "i", 2161 },	-- Book from Sven's Farm
-					},
+					["qg"] = 273,	-- Tavernkeep Smitts
+					["qi"] = 2161,	-- Book from Sven's Farm
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -584,10 +570,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(149, {	-- Ghost Hair Thread
 					["sourceQuest"] = 148,	-- Supplies from Darkshire
-					["providers"] = {
-						{ "n", 265 },	-- Madame Eva
-						{ "i", 1453 },	-- Spectral Comb
-					},
+					["qg"] = 265,	-- Madame Eva
+					["qi"] = 1453,	-- Spectral Comb
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -595,10 +579,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26652, {	-- Ghost Hair Thread
 					["sourceQuest"] = 26653,	-- Supplies from Darkshire
-					["providers"] = {
-						{ "n", 265 },	-- Madame Eva
-						{ "i", 1453 },	-- Spectral Comb
-					},
+					["qg"] = 265,	-- Madame Eva
+					["qi"] = 1453,	-- Spectral Comb
 					["coord"] = { 75.8, 45.2, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -679,10 +661,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(266, {	-- Inquire at the Inn
 					["sourceQuest"] = 265,	-- The Shadowy Search Continues
-					["providers"] = {
-						{ "n", 267 },	-- Clerk Daltry
-						{ "i", 2161 },	-- Book from Sven's Farm
-					},
+					["qg"] = 267,	-- Clerk Daltry
+					["qi"] = 2161,	-- Book from Sven's Farm
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -698,10 +678,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(159, {	-- Juice Delivery
 					["sourceQuest"] = 156,	-- Gather Rot Blossoms
-					["providers"] = {
-						{ "n", 273 },	-- Tavernkeep Smitts
-						{ "i", 1451 },	-- Bottle of Zombie Juice
-					},
+					["qg"] = 273,	-- Tavernkeep Smitts
+					["qi"] = 1451,	-- Bottle of Zombie Juice
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -709,10 +687,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26676, {	-- Juice Delivery
 					["sourceQuest"] = 26661,	-- Gather Rot Blossoms
-					["providers"] = {
-						{ "n", 273 },	-- Tavernkeep Smitts
-						{ "i", 1451 },	-- Bottle of Zombie Juice
-					},
+					["qg"] = 273,	-- Tavernkeep Smitts
+					["qi"] = 1451,	-- Bottle of Zombie Juice
 					["coord"] = { 73.7, 44.4, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -931,10 +907,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(160, {	-- Note to the Mayor
 					["sourceQuest"] = 134,	-- Ogre Thieves
-					["providers"] = {
-						{ "n", 289 },	-- Abercrombie
-						{ "i", 1637 },	-- Letter to Ello
-					},
+					["qg"] = 289,	-- Abercrombie
+					["qi"] = 1637,	-- Letter to Ello
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -942,10 +916,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26681, {	-- Note to the Mayor
 					["sourceQuest"] = 26677,	-- Ghoulish Effigy
-					["providers"] = {
-						{ "n", 289 },	-- Abercrombie
-						{ "i", 1637 },	-- Letter to Ello
-					},
+					["qg"] = 289,	-- Abercrombie
+					["qi"] = 1637,	-- Letter to Ello
 					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -991,10 +963,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1388, {	-- Nothing But The Truth (3/4)
 					["sourceQuest"] = 1383,	-- Nothing But The Truth (2/4)
-					["providers"] = {
-						{ "n", 5414 },	-- Apothecary Faustin <Royal Apothecary Society>
-						{ "i", 6086 },	-- Faustin's Truth Serum
-					},
+					["qg"] = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
+					["qi"] = 6086,	-- Faustin's Truth Serum
 					["coord"] = { 87.4, 35.4, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1002,10 +972,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1391, {	-- Nothing But The Truth (4/4)
 					["sourceQuest"] = 1388,	-- Nothing But The Truth (3/4)
-					["providers"] = {
-						{ "n", 5418 },	-- Deathstalker Zraedus
-						{ "i", 6089 },	-- Zraedus's Brew
-					},
+					["qg"] = 5418,	-- Deathstalker Zraedus
+					["qi"] = 6089,	-- Zraedus's Brew
 					["coord"] = { 87.6, 35.6, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1081,10 +1049,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(154, {	-- Return the Comb
 					["sourceQuest"] = 149,	-- Ghost Hair Thread
-					["providers"] = {
-						{ "n", 302 },	-- Blind Mary
-						{ "i", 1518 },	-- Ghost Hair Comb
-					},
+					["qg"] = 302,	-- Blind Mary
+					["qi"] = 1518,	-- Ghost Hair Comb
 					["coord"] = { 81.9, 59.1, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1092,20 +1058,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26654, {	-- Return the Comb
 					["sourceQuest"] = 26652,	-- Ghost Hair Thread
-					["providers"] = {
-						{ "n", 302 },	-- Blind Mary
-						{ "i", 1518 },	-- Ghost Hair Comb
-					},
+					["qg"] = 302,	-- Blind Mary
+					["qi"] = 1518,	-- Ghost Hair Comb
 					["coord"] = { 82.0, 59.3, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(240, {	-- Return to Jitters
 					["sourceQuest"] = 93,	-- Dusky Crab Cakes
-					["providers"] = {
-						{ "n", 272 },	-- Chef Grual
-						{ "i", 2250 },	-- Dusky Crab Cakes
-					},
+					["qg"] = 272,	-- Chef Grual
+					["qi"] = 2250,	-- Dusky Crab Cakes
 					["coord"] = { 73.8, 43.5, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1113,10 +1075,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(268, {	-- Return to Sven
 					["sourceQuest"] = 453,	-- Finding the Shadowy Figure
-					["providers"] = {
-						{ "n", 288 },	-- Jitters
-						{ "i", 2560 },	-- Jitters' Completed Journal
-					},
+					["qg"] = 288,	-- Jitters
+					["qi"] = 2560,	-- Jitters' Completed Journal
 					["coord"] = { 18.2, 56.3, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1189,10 +1149,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(269, {	-- Seeking Wisdom
 					["sourceQuest"] = 323,	-- Proving Your Worth
-					["providers"] = {
-						{ "n", 311 },	-- Sven Yorgen
-						{ "i", 2560 },	-- Jitters' Completed Journal
-					},
+					["qg"] = 311,	-- Sven Yorgen
+					["qi"] = 2560,	-- Jitters' Completed Journal
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1214,10 +1172,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1395, {	-- Supplies for Nethergarde
 					["sourceQuest"] = 1477,	-- Vital Supplies
-					["providers"] = {
-						{ "n", 5464 },	-- Watchmaster Sorigal
-						{ "i", 6091 },	-- Crate of Power Stones
-					},
+					["qg"] = 5464,	-- Watchmaster Sorigal
+					["qi"] = 6091,	-- Crate of Power Stones
 					["coord"] = { 75.8, 46.2, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -1358,10 +1314,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26671, {	-- The Fate of Stalvan Mistmantle
 					["sourceQuest"] = 26670,	-- Roland's Doom
-					["providers"] = {
-						{ "n", 267 },	-- Clerk Daltry
-						{ "i", 59362 },	-- The Legend of Stalvan
-					},
+					["qg"] = 267,	-- Clerk Daltry
+					["qi"] = 59362,	-- The Legend of Stalvan
 					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1512,10 +1466,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(78, {	-- The Legend of Stalvan (9/13)
 					["sourceQuest"] = 75,	-- The Legend of Stalvan (8/13)
-					["providers"] = {
-						{ "n", 294 },	-- Marshal Haggard
-						{ "i", 921 },	-- A Faded Journal Page
-					},
+					["qg"] = 294,	-- Marshal Haggard
+					["qi"] = 921,	-- A Faded Journal Page
 					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1523,10 +1475,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(79, {	-- The Legend of Stalvan (10/13)
 					["sourceQuest"] = 78,	-- The Legend of Stalvan (9/13)
-					["providers"] = {
-						{ "n", 273 },	-- Tavernkeep Smitts
-						{ "i", 938 },	-- Muddy Journal Pages
-					},
+					["qg"] = 273,	-- Tavernkeep Smitts
+					["qi"] = 938,	-- Muddy Journal Pages
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1534,10 +1484,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(80, {	-- The Legend of Stalvan (11/13)
 					["sourceQuest"] = 79,	-- The Legend of Stalvan (10/13)
-					["providers"] = {
-						{ "n", 264 },	-- Commander Althea Ebonlocke
-						{ "i", 939 },	-- A Bloodstained Journal Page
-					},
+					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["qi"] = 939,	-- A Bloodstained Journal Page
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1678,10 +1626,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(262, {	-- The Shadowy Figure
 					["sourceQuest"] = 230,	-- Sven's Camp
-					["providers"] = {
-						{ "n", 311 },	-- Sven Yorgen
-						{ "i", 2161 },	-- Book from Sven's Farm
-					},
+					["qg"] = 311,	-- Sven Yorgen
+					["qi"] = 2161,	-- Book from Sven's Farm
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1689,10 +1635,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(265, {	-- The Shadowy Search Continues
 					["sourceQuest"] = 262,	-- The Shadowy Figure
-					["providers"] = {
-						{ "n", 265 },	-- Madame Eva
-						{ "i", 2161 },	-- Book from Sven's Farm
-					},
+					["qg"] = 265,	-- Madame Eva
+					["qi"] = 2161,	-- Book from Sven's Farm
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1809,10 +1753,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(251, {	-- Translate Abercrombie's Note
 					["sourceQuest"] = 160,	-- Note to the Mayor
-					["providers"] = {
-						{ "n", 263 },	-- Lord Ello Ebonlocke
-						{ "i", 1637 },	-- Letter to Ello
-					},
+					["qg"] = 263,	-- Lord Ello Ebonlocke
+					["qi"] = 1637,	-- Letter to Ello
 					["coord"] = { 71.9, 46.5, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1820,10 +1762,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(252, {	-- Translation to Ello
 					["sourceQuest"] = 401,	-- Wait for Sirra to Finish
-					["providers"] = {
-						{ "n", 268 },	-- Sirra Von'Indi
-						{ "i", 1656 },	-- Translated Letter
-					},
+					["qg"] = 268,	-- Sirra Von'Indi
+					["qi"] = 1656,	-- Translated Letter
 					["coord"] = { 72.6, 47.7, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1974,10 +1914,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(223, {	-- Worgen in the Woods (4/4)
 					["sourceQuest"] = 222,	-- Worgen in the Woods (3/4)
-					["providers"] = {
-						{ "n", 663 },	-- Calor
-						{ "i", 2113 },	-- Calor's Note
-					},
+					["qg"] = 663,	-- Calor
+					["qi"] = 2113,	-- Calor's Note
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2007,10 +1945,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26691, {	-- Worgen in the Woods (2/2)
 					["sourceQuest"] = 26690,	-- Vile and Tainted
-					["providers"] = {
-						{ "n", 663 },	-- Calor
-						{ "i", 2113 },	-- Calor's Note
-					},
+					["qg"] = 663,	-- Calor
+					["qi"] = 2113,	-- Calor's Note
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

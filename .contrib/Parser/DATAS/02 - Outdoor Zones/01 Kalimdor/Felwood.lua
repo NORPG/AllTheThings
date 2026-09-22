@@ -330,10 +330,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(4261, {	-- Ancient Spirit
 					["sourceQuest"] = 4442,	-- Purified!
-					["providers"] = {
-						{ "n", 9598 },	-- Arei
-						{ "i", 11445 },	-- Flute of the Ancients
-					},
+					["qg"] = 9598,	-- Arei
+					["qi"] = 11445,	-- Flute of the Ancients
 					["coord"] = { 49.4, 14.4, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
@@ -476,10 +474,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5159, {	-- Cleansed Water Returns to Felwood
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
-					["providers"] = {
-						{ "n", 5901 },	-- Islen Waterseer
-						{ "i", 12906 },	-- Purified Moonwell Water
-					},
+					["qg"] = 5901,	-- Islen Waterseer
+					["qi"] = 12906,	-- Purified Moonwell Water
 					["coord"] = { 65.8, 43.8, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
@@ -1239,10 +1235,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(4883, {	-- Guarding Secrets (2/2)
 					["sourceQuest"] = 4882,	-- Guarding Secrets (1/2)
-					["providers"] = {
-						{ "n", 10306 },	-- Trull Failbane
-						{ "i", 12558 },	-- Blue-feathered Necklace
-					},
+					["qg"] = 10306,	-- Trull Failbane
+					["qi"] = 12558,	-- Blue-feathered Necklace
 					["coord"] = { 34.6, 52.6, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
@@ -2017,10 +2011,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5158, {	-- Seeking Spiritual Aid
 					["sourceQuest"] = 5157,	-- Collection of the Corrupt Water
-					["providers"] = {
-						{ "n", 10922 },	-- Greta Mosshoof
-						{ "i", 12907 },	-- Corrupt Moonwell Water
-					},
+					["qg"] = 10922,	-- Greta Mosshoof
+					["qi"] = 12907,	-- Corrupt Moonwell Water
 					["coord"] = { 51.2, 82.2, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -2292,10 +2284,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82135, {	-- The Price of Hope
 					["sourceQuest"] = 81885,	-- The Ritual
-					["providers"] = {
-						{ "n", 221587 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-						{ "i", 221519 },	-- Mannoroc Orb
-					},
+					["qg"] = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["qi"] = 221519,	-- Mannoroc Orb
 					["coord"] = { 45.0, 52.0, FELWOOD },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PALADIN },
@@ -2311,10 +2301,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(5385, {	-- The Remains of Trey Lightforge
 					["sourceQuest"] = 5204,	-- Retribution of the Light
-					["providers"] = {
-						{ "n", 11020 },	-- Remains of Trey Lightforge
-						{ "i", 13562 },	-- Remains of Trey Lightforge
-					},
+					["qg"] = 11020,	-- Remains of Trey Lightforge
+					["qi"] = 13562,	-- Remains of Trey Lightforge
 					["coord"] = { 38.4, 50.4, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,

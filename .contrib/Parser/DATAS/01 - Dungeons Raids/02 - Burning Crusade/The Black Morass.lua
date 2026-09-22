@@ -50,10 +50,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(9836, {	-- The Master's Touch
 					["sourceQuest"] = 9832,	-- The Second and Third Fragments
-					["providers"] = {
-						{ "n", 18166 },	-- Khadgar <Sons of Lothar>
-						{ "i", 24489 },	-- Restored Apprentice's Key
-					},
+					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
+					["qi"] = 24489,	-- Restored Apprentice's Key
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_7_1_0 },
 					["lvl"] = lvlsquish(69, 69, 30),

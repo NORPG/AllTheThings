@@ -369,10 +369,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(853, {	-- Apothecary Zamah
 					["sourceQuest"] = 848,	-- Fungal Spores
-					["providers"] = {
-						{ "n", 3390 },	-- Apothecary Helbrim
-						{ "i", 5027 },	-- Rendered Spores
-					},
+					["qg"] = 3390,	-- Apothecary Helbrim
+					["qi"] = 5027,	-- Rendered Spores
 					["coord"] = { 51.44, 30.15, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
@@ -392,10 +390,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1838, {	-- Brutal Armor
 					["sourceQuest"] = 1825,	-- Speak with Thun'grim
-					["providers"] = {
-						{ "n", 5878 },	-- Thun'grim Firegaze
-						{ "i", 7587 },	-- Thun'grim's Instructions
-					},
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["qi"] = 7587,	-- Thun'grim's Instructions
 					["coord"] = { 57.23, 30.34, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS, RAZORFEN_KRAUL, STONETALON_MOUNTAINS },
@@ -494,10 +490,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2983,	-- Call of Fire (1/5) [Durotar]
 						2984,	-- Call of Fire (1/5) [Mulgore]
 					},
-					["providers"] = {
-						{ "n", 5907 },	-- Kranal Fiss
-						{ "i", 6653 },	-- Torch of the Dormant Flame
-					},
+					["qg"] = 5907,	-- Kranal Fiss
+					["qi"] = 6653,	-- Torch of the Dormant Flame
 					["coord"] = { 55.8, 20.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -541,10 +535,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1526, {	-- Call of Fire (4/5)
 					["sourceQuest"] = 1525,	-- Call of Fire (3/5)
-					["providers"] = {
-						{ "n", 5900 },	-- Telf Joolam
-						{ "i", 6653 },	-- Torch of the Dormant Flame
-					},
+					["qg"] = 5900,	-- Telf Joolam
+					["qi"] = 6653,	-- Torch of the Dormant Flame
 					["coord"] = { 38.6, 58.8, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -692,10 +684,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(220, {	-- Call of Water (6/9)
 					["sourceQuest"] = 1534,	-- Call of Water (5/9)
-					["providers"] = {
-						{ "n", 5899 },	-- Brine
-						{ "i", 7810 },	-- Vial of Purest Water
-					},
+					["qg"] = 5899,	-- Brine
+					["qi"] = 7810,	-- Vial of Purest Water
 					["coord"] = { 43.4, 77.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -738,10 +728,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(96, {	-- Call of Water (9/9)
 					["sourceQuest"] = 100,	-- Call of Water (8/9)
-					["providers"] = {
-						{ "n", 5895 },	-- Minor Manifestation of Water
-						{ "i", 7813 },	-- Shard of Water
-					},
+					["qg"] = 5895,	-- Minor Manifestation of Water
+					["qi"] = 7813,	-- Shard of Water
 					["coord"] = { 38.6, 44.6, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -1213,10 +1201,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				q(6385, {	-- Doras the Wind Rider Master
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
-					["providers"] = {
-						{ "n", 6929 },	-- Innkeeper Gryshka
-						{ "i", 16307 },	-- Gryshka's Letter
-					},
+					["qg"] = 6929,	-- Innkeeper Gryshka
+					["qi"] = 16307,	-- Gryshka's Letter
 					["coord"] = { 54.09, 68.43, ORGRIMMAR },
 					["races"] = { ORC, TROLL },
 					["lvl"] = 10,
@@ -1509,10 +1495,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1536,10 +1520,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1563,10 +1545,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						29477,	-- Gnomish Engineering
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-						{ "i", 10789 },	-- Manual of Engineering Disciplines
-					},
+					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
+					["qi"] = 10789,	-- Manual of Engineering Disciplines
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2190,10 +2170,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1060, {	-- Letter to Jin'Zil
 					["sourceQuest"] = 876,	-- Serena Bloodfeather
-					["providers"] = {
-						{ "n", 3449 },	-- Darsok Swiftdagger
-						{ "i", 5594 },	-- Letter to Jin'Zil
-					},
+					["qg"] = 3449,	-- Darsok Swiftdagger
+					["qi"] = 5594,	-- Letter to Jin'Zil
 					["coord"] = { 51.62, 30.90, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2229,10 +2207,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE CATA
 				q(6365, {	-- Meats to Orgrimmar
-					["providers"] = {
-						{ "n", 3489 },	-- Zargh
-						{ "i", 16306 },	-- Zargh's Meats
-					},
+					["qg"] = 3489,	-- Zargh
+					["qi"] = 16306,	-- Zargh's Meats
 					["coord"] = { 52.6, 29.8, THE_BARRENS },
 					["races"] = { ORC, TROLL },
 					["lvl"] = lvlsquish(10, 10, 5),
@@ -2706,10 +2682,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				q(6386, {	-- Return to the Crossroads.
 					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
-					["providers"] = {
-						{ "n", 3310 },	-- Doras
-						{ "i", 16307 },	-- Gryshka's Letter
-					},
+					["qg"] = 3310,	-- Doras
+					["qi"] = 16307,	-- Gryshka's Letter
 					["coord"] = { 45.2, 63.6, ORGRIMMAR },
 					["races"] = { ORC, TROLL },
 					["lvl"] = lvlsquish(10, 10, 5),
@@ -2717,10 +2691,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(4976, {	-- Returning the Cleansed Orb
 					["sourceQuest"] = 4961,	-- Cleansing of the Orb of Orahil
-					["providers"] = {
-						{ "n", 6546 },	-- Tabetha
-						{ "i", 12642 },	-- Cleansed Infernal Orb
-					},
+					["qg"] = 6546,	-- Tabetha
+					["qi"] = 12642,	-- Cleansed Infernal Orb
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -2729,10 +2701,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				q(6384, {	-- Ride to Orgrimmar
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
-					["providers"] = {
-						{ "n", 3615 },	-- Devrak
-						{ "i", 16306 },	-- Zargh's Meats
-					},
+					["qg"] = 3615,	-- Devrak
+					["qi"] = 16306,	-- Zargh's Meats
 					["coord"] = { 51.5, 30.3, THE_BARRENS },
 					["races"] = { ORC, TROLL },
 					["lvl"] = lvlsquish(10, 10, 5),
@@ -2740,10 +2710,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(3923, {	-- Rilli Greasygob
 					["sourceQuest"] = 3922,	-- Nugget Slugs
-					["providers"] = {
-						{ "n", 9316 },	-- Wenikee Boltbucket
-						{ "i", 11146 },	-- Broken and Battered Samophlange
-					},
+					["qg"] = 9316,	-- Wenikee Boltbucket
+					["qi"] = 11146,	-- Broken and Battered Samophlange
 					["coord"] = { 49.0, 11.2, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2829,10 +2797,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(894, {	-- Samophlange (1/4)
-					["providers"] = {
-						{ "n", 3442 },	-- Sputtervalve
-						{ "i", 5088 },	-- Control Console Operating Manual
-					},
+					["qg"] = 3442,	-- Sputtervalve
+					["qi"] = 5088,	-- Control Console Operating Manual
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
@@ -3610,20 +3576,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(890, {	-- The Missing Shipment (1/2)
 					["sourceQuest"] = 887,	-- Southsea Freebooters
-					["providers"] = {
-						{ "n", 3391 },	-- Gazlowe
-						{ "i", 5080 },	-- Gazlowe's Ledger
-					},
+					["qg"] = 3391,	-- Gazlowe
+					["qi"] = 5080,	-- Gazlowe's Ledger
 					["coord"] = { 62.68, 36.24, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 9,
 				}),
 				q(892, {	-- The Missing Shipment (2/2)
 					["sourceQuest"] = 890,	-- The Missing Shipment (1/2)
-					["providers"] = {
-						{ "n", 3453 },	-- Wharfmaster Dizzywig
-						{ "i", 5080 },	-- Gazlowe's Ledger
-					},
+					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["qi"] = 5080,	-- Gazlowe's Ledger
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 9,
@@ -3919,18 +3881,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				{	-- Tome of the Cabal (3/3)
 					["allianceQuestData"] = q(1804, {	-- Tome of the Cabal (3/3) (A)
 						["sourceQuest"] = 1802,	-- Tome of the Cabal (2/3) (A)
-						["providers"] = {
-							{ "n", 6294 },	-- Krom Stoutarm
-							{ "i", 7006 },	-- Reconstructed Tome
-						},
+						["qg"] = 6294,	-- Krom Stoutarm
+						["qi"] = 7006,	-- Reconstructed Tome
 						["coord"] = { 74.4, 9.4, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(1805, {	-- Tome of the Cabal (3/3) (H)
 						["sourceQuest"] = 1803,	-- Tome of the Cabal (2/3) (H)
-						["providers"] = {
-							{ "n", 6293 },	-- Jorah Annison
-							{ "i", 7006 },	-- Reconstructed Tome
-						},
+						["qg"] = 6293,	-- Jorah Annison
+						["qi"] = 7006,	-- Reconstructed Tome
 						["coord"] = { 76.6, 36.8, UNDERCITY },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4177,20 +4135,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3921, {	-- Wenikee Boltbucket
 					["sourceQuest"] = 902,	-- Samophlange (4/4)
-					["providers"] = {
-						{ "n", 3442 },	-- Sputtervalve
-						{ "i", 11142 },	-- Broken Samophlange
-					},
+					["qg"] = 3442,	-- Sputtervalve
+					["qi"] = 11142,	-- Broken Samophlange
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(1492, {	-- Wharfmaster Dizzywig
-					["providers"] = {
-						{ "n", 3390 },	-- Apothecary Helbrim
-						{ "i", 6462 },	-- Secure Crate
-					},
+					["qg"] = 3390,	-- Apothecary Helbrim
+					["qi"] = 6462,	-- Secure Crate
 					["coord"] = { 51.44, 30.15, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

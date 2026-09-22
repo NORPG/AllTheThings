@@ -163,20 +163,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(26317, {	-- A Lashtail Hatchling
 					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
-					["providers"] = {
-						{ "n", 2465 },	-- Far Seer Mok'thardin
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26746, {	-- A Nose for This Sort of Thing (A)
 					["sourceQuest"] = 26745,	-- Favored Skull
-					["providers"] = {
-						{ "n", 43884 },	-- Osborn Obnoticus
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 43884,	-- Osborn Obnoticus
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 47.13, 10.56, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -203,10 +199,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26747, {	-- A Physical Specimen
 					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
-					["providers"] = {
-						{ "n", 43884 },	-- Osborn Obnoticus
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 43884,	-- Osborn Obnoticus
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 47.1, 10.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -467,20 +461,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26748, {	-- Bloodlord Mandokir (A)
 					["sourceQuest"] = 26747,	-- A Physical Specimen
-					["providers"] = {
-						{ "n", 42790 },	-- Bloodlord Mandokir
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 42790,	-- Bloodlord Mandokir
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 47.1, 10.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26334, {	-- Bloodlord Mandokir (H)
 					["sourceQuest"] = 26332,	-- Skullsplitter Mojo
-					["providers"] = {
-						{ "n", 42790 },	-- Bloodlord Mandokir
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 42790,	-- Bloodlord Mandokir
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 38.4, 48.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -838,20 +828,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26745, {	-- Favored Skull (A)
 					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
-					["providers"] = {
-						{ "n", 42736 },	-- Lashtail Hatchling
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 42736,	-- Lashtail Hatchling
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26323, {	-- Favored Skull (H)
 					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
-					["providers"] = {
-						{ "n", 42736 },	-- Lashtail Hatchling
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 42736,	-- Lashtail Hatchling
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1020,10 +1006,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26739, {	-- I Think She's Hungry (A)
 					["sourceQuest"] = 26738,	-- Just Hatched
-					["providers"] = {
-						{ "n", 1422 },	-- Corporal Sethman
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 1422,	-- Corporal Sethman
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1035,10 +1019,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26321, {	-- I Think She's Hungry (H)
 					["sourceQuest"] = 26317,	-- A Lashtail Hatchling
-					["providers"] = {
-						{ "n", 2465 },	-- Far Seer Mok'thardin
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 38.4, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1067,29 +1049,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26738, {	-- Just Hatched
 					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
 					["sourceQuest"] = 26732,	-- Bad Medicine
-					["providers"] = {
-						{ "n", 1422 },	-- Corporal Sethman
-						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
-					},
+					["qg"] = 1422,	-- Corporal Sethman
+					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(210, {	-- Krazek's Cookery
-					["providers"] = {
-						{ "n", 770 },	-- Corporal Kaleb
-						{ "i", 4085 },	-- Krazek's Crock Pot
-					},
+					["qg"] = 770,	-- Corporal Kaleb
+					["qi"] = 4085,	-- Krazek's Crock Pot
 					["coord"] = { 37.7, 3.3, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
 				q(26740, {	-- Krazek's Cookery
-					["providers"] = {
-						{ "n", 770 },	-- Corporal Kaleb
-						{ "i", 4085 },	-- Krazek's Crock Pot
-					},
+					["qg"] = 770,	-- Corporal Kaleb
+					["qi"] = 4085,	-- Krazek's Crock Pot
 					["coord"] = { 47.1, 10.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1611,10 +1587,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(622, {	-- Return to Corporal Kaleb
 					["sourceQuest"] = 627,	-- Favor for Krazek
-					["providers"] = {
-						{ "n", 773 },	-- Krazek
-						{ "i", 1987 },	-- Krazek's Fixed Pot
-					},
+					["qg"] = 773,	-- Krazek
+					["qi"] = 1987,	-- Krazek's Fixed Pot
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1627,10 +1601,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26765, {	-- Return to Corporal Kaleb
 					["sourceQuest"] = 26763,	-- Venture Company Mining
-					["providers"] = {
-						{ "n", 773 },	-- Krazek
-						{ "i", 1987 },	-- Krazek's Fixed Pot
-					},
+					["qg"] = 773,	-- Krazek
+					["qi"] = 1987,	-- Krazek's Fixed Pot
 					["coord"] = { 43.6, 23.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2022,10 +1994,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26731, {	-- The Altar of Naias
 					["sourceQuest"] = 26730,	-- You Can Take the Murloc Out of the Ocean...
-					["providers"] = {
-						{ "n", 43885 },	-- Emerine Junis
-						{ "i", 60273 },	-- Emerine's Telling-Sphere
-					},
+					["qg"] = 43885,	-- Emerine Junis
+					["qi"] = 60273,	-- Emerine's Telling-Sphere
 					["coord"] = { 47.6, 10.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2889,10 +2859,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(26729, {	-- Water Elementals
 					["sourceQuest"] = 26736,	-- Spared from Madness
-					["providers"] = {
-						{ "n", 43885 },	-- Emerine Junis
-						{ "i", 60273 },	-- Emerine's Telling-Sphere
-					},
+					["qg"] = 43885,	-- Emerine Junis
+					["qi"] = 60273,	-- Emerine's Telling-Sphere
 					["coord"] = { 47.6, 10.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2959,10 +2927,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26730, {	-- You Can Take the Murloc Out of the Ocean...
 					["sourceQuest"] = 26729,	-- Water Elementals
-					["providers"] = {
-						{ "n", 43885 },	-- Emerine Junis
-						{ "i", 60273 },	-- Emerine's Telling-Sphere
-					},
+					["qg"] = 43885,	-- Emerine Junis
+					["qi"] = 60273,	-- Emerine's Telling-Sphere
 					["coord"] = { 47.6, 10.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

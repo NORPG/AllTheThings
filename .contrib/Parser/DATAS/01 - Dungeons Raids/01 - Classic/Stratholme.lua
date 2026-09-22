@@ -156,10 +156,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5861, {	-- Find Myranda
 					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
-					["providers"] = {
-						{ "n", 1855 },	-- Tirion Fordring
-						{ "i", 14872 },	-- Tirion's Gift
-					},
+					["qg"] = 1855,	-- Tirion Fordring
+					["qi"] = 14872,	-- Tirion's Gift
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -361,10 +359,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5862, {	-- Scarlet Subterfuge
 					["sourceQuest"] = 5861,	-- Find Myranda
-					["providers"] = {
-						{ "n", 11872 },	-- Myranda the Hag
-						{ "i", 14872 },	-- Tirion's Gift
-					},
+					["qg"] = 11872,	-- Myranda the Hag
+					["qi"] = 14872,	-- Tirion's Gift
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,

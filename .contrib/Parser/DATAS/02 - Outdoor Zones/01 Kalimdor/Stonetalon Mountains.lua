@@ -530,10 +530,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26098, {	-- Betrayal at the Grove
 					["sourceQuest"] = 26097,	-- Proof of Lies
-					["providers"] = {
-						{ "n", 42091 },	-- Orthus Cliffwalker
-						{ "i", 56816 },	-- Krom'gar General's Insignia
-					},
+					["qg"] = 42091,	-- Orthus Cliffwalker
+					["qi"] = 56816,	-- Krom'gar General's Insignia
 					["coord"] = { 39.6, 46.4, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -744,10 +742,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5881, {	-- Calling in the Reserves
-					["providers"] = {
-						{ "n", 11860 },	-- Maggran Earthbinder
-						{ "i", 16189 },	-- Maggran's Reserve Letter
-					},
+					["qg"] = 11860,	-- Maggran Earthbinder
+					["qi"] = 16189,	-- Maggran's Reserve Letter
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -816,10 +812,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1074,	-- Ineptitude + Chemicals = Fun (2/2)
 						1077,	-- Special Delivery for Gaxim
 					},
-					["providers"] = {
-						{ "n", 4077 },	-- Gaxim Rustfizzle
-						{ "i", 5738 },	-- Covert Ops Pack
-					},
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["qi"] = 5738,	-- Covert Ops Pack
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -839,10 +833,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1074,	-- Ineptitude + Chemicals = Fun (2/2)
 						1077,	-- Special Delivery for Gaxim
 					},
-					["providers"] = {
-						{ "n", 4077 },	-- Gaxim Rustfizzle
-						{ "i", 5738 },	-- Covert Ops Pack
-					},
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["qi"] = 5738,	-- Covert Ops Pack
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1163,10 +1155,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1094, {	-- Further Instructions (1/2)
 					["sourceQuest"] = 1093,	-- Super Reaper 6000
-					["providers"] = {
-						{ "n", 4201 },	-- Ziz Fizziks
-						{ "i", 5735 },	-- Sealed Envelope
-					},
+					["qg"] = 4201,	-- Ziz Fizziks
+					["qi"] = 5735,	-- Sealed Envelope
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 16,
@@ -1206,10 +1196,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1092, {	-- Gerenzo's Orders (2/2)
 					["sourceQuest"] = 1090,	-- Gerenzo's Orders (1/2)
-					["providers"] = {
-						{ "n", 4276 },	-- Piznik
-						{ "i", 5733 },	-- Unidentified Ore
-					},
+					["qg"] = 4276,	-- Piznik
+					["qi"] = 5733,	-- Unidentified Ore
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 17,
@@ -1540,10 +1528,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1079,	-- Covert Ops - Alpha
 						1080,	-- Covert Ops - Beta
 					},
-					["providers"] = {
-						{ "n", 4077 },	-- Gaxim Rustfizzle
-						{ "i", 5717 },	-- Venture Co. Letters
-					},
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["qi"] = 5717,	-- Venture Co. Letters
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1559,10 +1545,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1511, {	-- Ken'zigla's Draught
 					["sourceQuest"] = 1510,	-- News of Dogran (2/2)
-					["providers"] = {
-						{ "n", 4197 },	-- Ken'zigla
-						{ "i", 6624 },	-- Ken'zigla's Draught
-					},
+					["qg"] = 4197,	-- Ken'zigla
+					["qi"] = 6624,	-- Ken'zigla's Draught
 					["coord"] = { 73.2, 95.0, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1612,10 +1596,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26004, {	-- Krom'gar Fortress [Krom'gar Sergeant]
 					["sourceQuest"] = 26002,	-- Alliance Attack Plans
-					["providers"] = {
-						{ "n", 34341 },	-- Saurboz
-						{ "i", 56469 },	-- Alliance Attack Plans
-					},
+					["qg"] = 34341,	-- Saurboz
+					["qi"] = 56469,	-- Alliance Attack Plans
 					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1670,10 +1652,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25649, {	-- Minx'll Fix It
 					["sourceQuest"] = 25647,	-- Illegible Orc Letter
-					["providers"] = {
-						{ "n", 40879 },	-- Boog the "Gear Whisperer"
-						{ "i", 67437 },	-- Illegible Orc Letter
-					},
+					["qg"] = 40879,	-- Boog the "Gear Whisperer"
+					["qi"] = 67437,	-- Illegible Orc Letter
 					["coord"] = { 72.5, 61.5, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1810,10 +1790,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25650, {	-- Orders from High Command
 					["sourceQuest"] = 25649,	-- Minx'll Fix It
-					["providers"] = {
-						{ "n", 40881 },	-- Minx
-						{ "i", 55182 },	-- Translated Orc Letter
-					},
+					["qg"] = 40881,	-- Minx
+					["qi"] = 55182,	-- Translated Orc Letter
 					["coord"] = { 70.8, 63.0, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2026,10 +2004,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25844, {	-- Sating the Savage Beast
 					["sourceQuest"] = 25837,	-- A Proper Peace Offerin'
-					["providers"] = {
-						{ "n", 41278 },	-- "Cookie" McWeaksauce
-						{ "i", 56059 },	-- Meaty Offering
-					},
+					["qg"] = 41278,	-- "Cookie" McWeaksauce
+					["qi"] = 56059,	-- Meaty Offering
 					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2224,10 +2200,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26046,	-- Between a Rock and a Hard Place
 						26045,	-- I Got Your Parts Right Here
 					},
-					["providers"] = {
-						{ "n", 41991 },	-- Sergeant Dontrag
-						{ "i", 56577 },	-- Crate of Spare Parts
-					},
+					["qg"] = 41991,	-- Sergeant Dontrag
+					["qi"] = 56577,	-- Crate of Spare Parts
 					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2248,10 +2222,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1077, {	-- Special Delivery for Gaxim
 					["sourceQuest"] = 1076,	-- Devils in Westfall
-					["providers"] = {
-						{ "n", 4078 },	-- Collin Mauren
-						{ "i", 5731 },	-- Scroll of Messaging
-					},
+					["qg"] = 4078,	-- Collin Mauren
+					["qi"] = 5731,	-- Scroll of Messaging
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2303,10 +2275,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25845, {	-- Terms of Service
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
-					["providers"] = {
-						{ "n", 41350 },	-- Ton Windbow
-						{ "i", 56060 },	-- Grimtotem Terms of Service
-					},
+					["qg"] = 41350,	-- Ton Windbow
+					["qi"] = 56060,	-- Grimtotem Terms of Service
 					["coord"] = { 72.7, 81.1, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

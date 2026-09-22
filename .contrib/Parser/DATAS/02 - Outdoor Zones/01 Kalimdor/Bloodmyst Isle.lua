@@ -291,10 +291,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9509, {	-- Call of Water (6/6)
 					["sourceQuest"] = 9508,	-- Call of Water (5/6)
-					["providers"] = {
-						{ "n", 17275 },	-- Aqueous
-						{ "i", 23752 },	-- Flask of Purest Water
-					},
+					["qg"] = 17275,	-- Aqueous
+					["qi"] = 23752,	-- Flask of Purest Water
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },

@@ -390,10 +390,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
+				["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
+				["qi"] = 10789,	-- Manual of Engineering Disciplines
 				["coord"] = { 68.8, 45.2, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
@@ -412,10 +410,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					3637,	-- Gnome Engineering
 					-- 4181,	-- Goblin Engineering
 				},
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
+				["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
+				["qi"] = 10789,	-- Manual of Engineering Disciplines
 				["coord"] = { 68.8, 45.2, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
@@ -438,10 +434,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(6388, {	-- Gryth Thurden
 				["sourceQuest"] = 6391,	-- Ride to Ironforge
-				["providers"] = {
-					{ "n", 4256 },	-- Golnir Bouldertoe
-					{ "i", 16311 },	-- Honorary Picks
-				},
+				["qg"] = 4256,	-- Golnir Bouldertoe
+				["qi"] = 16311,	-- Honorary Picks
 				["coord"] = { 51.0, 26.0, MAP.IRONFORGE },
 				["races"] = { DWARF, GNOME },
 				["lvl"] = 10,
@@ -477,10 +471,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(1074, {	-- Ineptitude + Chemicals = Fun (2/2)
 				["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
-				["providers"] = {
-					{ "n", 4081 },	-- Lomac Gearstrip
-					{ "i", 5732 },	-- NG-5
-				},
+				["qg"] = 4081,	-- Lomac Gearstrip
+				["qi"] = 5732,	-- NG-5
 				["coord"] = { 71.9, 51.9, MAP.IRONFORGE },
 				["maps"] = { MAP.STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
@@ -592,10 +584,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(6392, {	-- Return to Brock
 				["sourceQuest"] = 6388,	-- Gryth Thurden
-				["providers"] = {
-					{ "n", 1573 },	-- Gryth Thurden
-					{ "i", 16311 },	-- Honorary Picks
-				},
+				["qg"] = 1573,	-- Gryth Thurden
+				["qi"] = 16311,	-- Honorary Picks
 				["coord"] = { 55.6, 48.0, MAP.IRONFORGE },
 				["maps"] = { MAP.LOCH_MODAN },
 				["races"] = { DWARF, GNOME },
@@ -603,10 +593,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(3461, {	-- Return to Tymor
 				["sourceQuest"] = 3449,	-- Arcane Runes
-				["providers"] = {
-					{ "n", 8392 },	-- Pilot Xiggs Fuselighter
-					{ "i", 10445 },	-- Drawing Kit
-				},
+				["qg"] = 8392,	-- Pilot Xiggs Fuselighter
+				["qi"] = 10445,	-- Drawing Kit
 				["coord"] = { 77.8, 91.4, MAP.AZSHARA },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 45,
@@ -637,10 +625,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(683, {	-- Sara Balloo's Plea
 				["sourceQuest"] = 637,	-- Sully Balloo's Letter
-				["providers"] = {
-					{ "n", 2695 },	-- Sara Balloo
-					{ "i", 4514 },	-- Sara Balloo's Plea
-				},
+				["qg"] = 2695,	-- Sara Balloo
+				["qi"] = 4514,	-- Sara Balloo's Plea
 				["coord"] = { 63.5, 67.2, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 25,
@@ -796,10 +782,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(1779, {	-- The Tome of Divinity (5/8)
 				["sourceQuest"] = 1778,	-- The Tome of Divinity (4/8)
-				["providers"] = {
-					{ "n", 6179 },	-- Tiza Battleforge
-					{ "i", 6866 },	-- Symbol of Life
-				},
+				["qg"] = 6179,	-- Tiza Battleforge
+				["qi"] = 6866,	-- Symbol of Life
 				["coord"] = { 27.4, 12.0, MAP.IRONFORGE },
 				["races"] = { DWARF },
 				["classes"] = { PALADIN },

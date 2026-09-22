@@ -299,10 +299,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48616, {	-- Bolas and Birds
 				["sourceQuests"] = { 48070 },	-- The Norwington Festival
-				["providers"] = {
-					{ "n", 125398 },	-- Harold Beckett
-					{ "i", 152643 },	-- Bola Launcher (PQI!)
-				},
+				["qg"] = 125398,	-- Harold Beckett
+				["qi"] = 152643,	-- Bola Launcher (PQI!)
 				["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {

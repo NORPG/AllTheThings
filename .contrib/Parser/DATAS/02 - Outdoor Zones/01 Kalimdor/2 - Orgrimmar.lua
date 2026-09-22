@@ -981,10 +981,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2757, {	-- Booty Bay or Bust!
 					["sourceQuest"] = 2756,	-- The Old Ways
-					["providers"] = {
-						{ "n", 7793 },	-- Ox
-						{ "i", 8663 },	-- Mithril Insignia
-					},
+					["qg"] = 7793,	-- Ox
+					["qi"] = 8663,	-- Mithril Insignia
 					["coord"] = { 80.4, 23.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
@@ -1136,10 +1134,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2458, {	-- Deep Cover
 					["sourceQuest"] = 2460,	-- The Shattered Salute
-					["providers"] = {
-						{ "n", 3401 },	-- Shenthul
-						{ "i", 8051 },	-- Flare Gun
-					},
+					["qg"] = 3401,	-- Shenthul
+					["qi"] = 8051,	-- Flare Gun
 					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1350,10 +1346,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2479, {	-- Hinott's Assistance (1/2)
 					["sourceQuest"] = 2478,	-- Mission: Possible But Not Probable
-					["providers"] = {
-						{ "n", 3401 },	-- Shenthul
-						{ "i", 8087 },	-- Sample of Zanzil's Altered Mixture
-					},
+					["qg"] = 3401,	-- Shenthul
+					["qi"] = 8087,	-- Sample of Zanzil's Altered Mixture
 					["coord"] = { 43.0, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -2426,10 +2420,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78304, {	-- You've Got Yourself A Deal [H]
 					["sourceQuest"] = 78288,	-- Let Me Make You An Offer [H]
-					["providers"] = {
-						{ "n",   3408 },	-- Zel'mak <Warrior Trainer>
-						{ "i", 211448 },	-- Signed Procurement Contract
-					},
+					["qg"] = 3408,	-- Zel'mak <Warrior Trainer>
+					["qi"] = 211448,	-- Signed Procurement Contract
 					["coord"] = { 80.2, 29.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },

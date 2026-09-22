@@ -176,20 +176,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(129, {	-- A Free Lunch
-					["providers"] = {
-						{ "n",  379 },	-- Darcy
-						{ "i", 5534 },	-- Parker's Lunch (PQI!)
-					},
+					["qg"] = 379,	-- Darcy
+					["qi"] = 5534,	-- Parker's Lunch (PQI!)
 					["coord"] = { 26.7, 44.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(94, {	-- A Watchful Eye
-					["providers"] = {
-						{ "n",  313 },	-- Theocritus
-						{ "i", 1083 },	-- Glyph of Azora (PQI!)
-					},
+					["qg"] = 313,	-- Theocritus
+					["qi"] = 1083,	-- Glyph of Azora (PQI!)
 					["coord"] = { 65.2, 69.8, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -230,10 +226,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2282, {	-- Alther's Mill
 					["sourceQuest"] = 2281,	-- Redridge Rendezvous
-					["providers"] = {
-						{ "n", 6966 },	-- Lucius
-						{ "i", 5060 },	-- Thieves' Tools (PQI!)
-					},
+					["qg"] = 6966,	-- Lucius
+					["qi"] = 5060,	-- Thieves' Tools (PQI!)
 					["coord"] = { 28.2, 52.2, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -452,10 +446,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(131, {	-- Delivering Daffodils
 					["sourceQuest"] = 130,	-- Visit the Herbalist
-					["providers"] = {
-						{ "n",  342 },	-- Martie Jainrose
-						{ "i", 1325 },	-- Daffodil Bouquet (PQI!)
-					},
+					["qg"] = 342,	-- Martie Jainrose
+					["qi"] = 1325,	-- Daffodil Bouquet (PQI!)
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -885,10 +877,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(145, {	-- Messenger to Darkshire (1/2)
 					["sourceQuest"] = 144,	-- Messenger to Westfall (2/2)
-					["providers"] = {
-						{ "n",  344 },	-- Magistrate Solomon
-						{ "i", 1409 },	-- Solomon's Plea to Darkshire (PQI!)
-					},
+					["qg"] = 344,	-- Magistrate Solomon
+					["qi"] = 1409,	-- Solomon's Plea to Darkshire (PQI!)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -896,20 +886,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(146, {	-- Messenger to Darkshire (2/2)
 					["sourceQuest"] = 145,	-- Messenger to Darkshire (1/2)
-					["providers"] = {
-						{ "n",  263 },	-- Lord Ello Ebonlocke
-						{ "i", 1410 },	-- Ebonlocke's Response to Solomon (PQI!)
-					},
+					["qg"] = 263,	-- Lord Ello Ebonlocke
+					["qi"] = 1410,	-- Ebonlocke's Response to Solomon (PQI!)
 					["coord"] = { 72.0, 46.6, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
 				q(120, {	-- Messenger to Stormwind (1/2)
-					["providers"] = {
-						{ "n",  344 },	-- Magistrate Solomon
-						{ "i", 1293 },	-- The State of Lakeshire (PQI!)
-					},
+					["qg"] = 344,	-- Magistrate Solomon
+					["qi"] = 1293,	-- The State of Lakeshire (PQI!)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -917,10 +903,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(121, {	-- Messenger to Stormwind (2/2)
 					["sourceQuest"] = 120,	-- Messenger to Stormwind (1/2)
-					["providers"] = {
-						{ "n",  466 },	-- General Marcus Jonathan
-						{ "i", 1294 },	-- The General's Response (PQI!)
-					},
+					["qg"] = 466,	-- General Marcus Jonathan
+					["qi"] = 1294,	-- The General's Response (PQI!)
 					["coord"] = { 63.8, 75.4, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -928,10 +912,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(143, {	-- Messenger to Westfall (1/2)
 					["sourceQuest"] = 121,	-- Messenger to Stormwind (2/2)
-					["providers"] = {
-						{ "n",  344 },	-- Magistrate Solomon
-						{ "i", 1407 },	-- Solomon's Plea to Westfall (PQI!)
-					},
+					["qg"] = 344,	-- Magistrate Solomon
+					["qi"] = 1407,	-- Solomon's Plea to Westfall (PQI!)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -939,10 +921,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(144, {	-- Messenger to Westfall (2/2)
 					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
-					["providers"] = {
-						{ "n", 234 },	-- Gryan Stoutmantle
-						{ "i", 1408 },	-- Stoutmantle's Response to Solomon (PQI!)
-					},
+					["qg"] = 234,	-- Gryan Stoutmantle
+					["qi"] = 1408,	-- Stoutmantle's Response to Solomon (PQI!)
 					["coord"] = { 56.2, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1024,10 +1004,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26505, {	-- Parker's Report
 					["sourceQuest"] = 26503,	-- Still Assessing the Threat
-					["providers"] = {
-						{ "n",   464 },	-- Watch Captain Parker
-						{ "i", 58890 },	-- Parker's Report (PQI!)
-					},
+					["qg"] = 464,	-- Watch Captain Parker
+					["qi"] = 58890,	-- Parker's Report (PQI!)
 					["coord"] = { 15.3, 64.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1046,10 +1024,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26638,	-- Hunting the Hunters
 						26640,	-- Unspeakable Atrocities
 					},
-					["providers"] = {
-						{ "n", 43458 },	-- John J. Keeshan
-						{ "i", 60384 },	-- Bravo Company Field Kit (PQI!)
-					},
+					["qg"] = 43458,	-- John J. Keeshan
+					["qi"] = 60384,	-- Bravo Company Field Kit (PQI!)
 					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1127,10 +1103,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(119, {	-- Return to Verner
 					["sourceQuest"] = 118,	-- The Price of Shoes
-					["providers"] = {
-						{ "n",  514 },	-- Smith Argus
-						{ "i", 1284 },	-- Crate of Horseshoes (PQI!)
-					},
+					["qg"] = 514,	-- Smith Argus
+					["qi"] = 1284,	-- Crate of Horseshoes (PQI!)
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1430,10 +1404,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26694, {	-- The Grand Magus Doane
 					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
 					["sourceQuest"] = 26693,	-- The Dark Tower
-					["providers"] = {
-						{ "n", 43611 },	-- John J. Keeshan
-						{ "i", 59522 },	-- Key of Ilgalar (PQI!)
-					},
+					["qg"] = 43611,	-- John J. Keeshan
+					["qi"] = 59522,	-- Key of Ilgalar (PQI!)
 					["coord"] = { 77.7, 65.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1471,10 +1443,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(118, {	-- The Price of Shoes
-					["providers"] = {
-						{ "n",  415 },	-- Verner Osgood
-						{ "i", 1283 },	-- Verner's Notes
-					},
+					["qg"] = 415,	-- Verner Osgood
+					["qi"] = 1283,	-- Verner's Notes
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1498,10 +1468,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1702, {	-- The Shieldsmith
 					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
-					["providers"] = {
-						{ "n", 6166 },	-- Yorus Barleybrew
-						{ "i", 6843 },	-- Cask of Scalder (PQI!)
-					},
+					["qg"] = 6166,	-- Yorus Barleybrew
+					["qi"] = 6843,	-- Cask of Scalder (PQI!)
 					["coord"] = { 26.6, 44.8, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -1531,10 +1499,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26573,	-- His Heart Must Be In It
 						26563,	-- Return of the Bravo Company
 					},
-					["providers"] = {
-						{ "n", 43221 },	-- Colonel Troteman
-						{ "i", 59061 },	-- Keeshan's Possessions (PQI!)
-					},
+					["qg"] = 43221,	-- Colonel Troteman
+					["qi"] = 59061,	-- Keeshan's Possessions (PQI!)
 					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1564,10 +1530,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26651, {	-- To Win a War, You Gotta Become War
 					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
 					["sourceQuest"] = 26646,	-- Prisoners of War
-					["providers"] = {
-						{ "n", 43458 },	-- John J. Keeshan
-						{ "i", 60385 },	-- Bravo Company Field Kit (PQI!)
-					},
+					["qg"] = 43458,	-- John J. Keeshan
+					["qi"] = 60385,	-- Bravo Company Field Kit (PQI!)
 					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1635,10 +1599,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26640, {	-- Unspeakable Atrocities
 					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
-					["providers"] = {
-						{ "n", 43508 },	-- Brubaker
-						{ "i", 59157 },	-- Brubaker's Report (PQI!)
-					},
+					["qg"] = 43508,	-- Brubaker
+					["qi"] = 59157,	-- Brubaker's Report (PQI!)
 					["coord"] = { 53.0, 67.8, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

@@ -489,10 +489,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1220, {	-- Captain Vimes
 					["sourceQuest"] = 1219,	-- The Orc Report
-					["providers"] = {
-						{ "n", 4947 },	-- Theramore Lieutenant
-						{ "i", 5917 },	-- Spy's Report (QI!) not prov
-					},
+					["qg"] = 4947,	-- Theramore Lieutenant
+					["qi"] = 5917,	-- Spy's Report (QI!) not prov
 					["coords"] = {
 						{ 68.1, 48.2, DUSTWALLOW_MARSH },
 						{ 67.2, 51.0, DUSTWALLOW_MARSH },
@@ -808,20 +806,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27218, {	-- Dastardly Denizens of the Deep
 					["sourceQuest"] = 27217,	-- Thresher Oil
-					["providers"] = {
-						{ "n", 23892 },	-- Babs Fizzletorque
-						{ "i", 33127 },	-- Dastardly Denizens of the Deep
-					},
+					["qg"] = 23892,	-- Babs Fizzletorque
+					["qi"] = 33127,	-- Dastardly Denizens of the Deep
 					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11193, {	-- Dastardly Denizens of the Deep
 					["sourceQuest"] = 11192,	-- Thresher Oil
-					["providers"] = {
-						{ "n", 23892 },	-- Babs Fizzletorque
-						{ "i", 33127 },	-- Dastardly Denizens of the Deep
-					},
+					["qg"] = 23892,	-- Babs Fizzletorque
+					["qi"] = 33127,	-- Dastardly Denizens of the Deep
 					["coord"] = { 72.1, 47.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -864,10 +858,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						11207,	-- Secure the Cargo!
 						-- #endif
 					},
-					["providers"] = {
-						{ "n", 23797 },	-- Moxie Steelgrille
-						{ "i", 33163 },	-- Zeppelin Cargo
-					},
+					["qg"] = 23797,	-- Moxie Steelgrille
+					["qi"] = 33163,	-- Zeppelin Cargo
 					["coord"] = { 53.6, 56.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_3_0 },
 					["lvl"] = lvlsquish(35, 35, 15),
@@ -1204,10 +1196,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1948, {	-- Items of Power
 					["sourceQuest"] = 1951,	-- Rituals of Power
-					["providers"] = {
-						{ "n", 6546 },	-- Tabetha
-						{ "i", 7516 },	-- Tabetha's Instructions
-					},
+					["qg"] = 6546,	-- Tabetha
+					["qi"] = 7516,	-- Tabetha's Instructions
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ARATHI_HIGHLANDS },
@@ -2152,10 +2142,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(11138, {	-- Renn McGill
 					["sourceQuest"] = 11137,	-- Defias in Dustwallow?
-					["providers"] = {
-						{ "n", 5086 },	-- Captain Wymor
-						{ "i", 33037 },	-- Defias Orders
-					},
+					["qg"] = 5086,	-- Captain Wymor
+					["qi"] = 33037,	-- Defias Orders
 					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2163,10 +2151,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1262, {	-- Report to Zor
 					["sourceQuest"] = 1261,	-- Marg Speaks
-					["providers"] = {
-						{ "n", 4791 },	-- Nazeer Bloodpike
-						{ "i", 5942 },	-- Jeweled Pendant
-					},
+					["qg"] = 4791,	-- Nazeer Bloodpike
+					["qi"] = 5942,	-- Jeweled Pendant
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2590,10 +2576,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1319, {	-- The Black Shield (2/3) [A]
 					["sourceQuest"] = 1253,	-- The Black Shield (1/3) [A]
-					["providers"] = {
-						{ "n", 4944 },	-- Captain Garran Vimes
-						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
-					},
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["qi"] = 5919,	-- Blackened Iron Shield (QI!) not prov
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2664,10 +2648,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1321, {	-- The Black Shield (2/5) [H]
 					["sourceQuest"] = 1251,	-- The Black Shield (1/5) [H]
-					["providers"] = {
-						{ "n", 4926 },	-- Krog
-						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
-					},
+					["qg"] = 4926,	-- Krog
+					["qi"] = 5919,	-- Blackened Iron Shield (QI!) not prov
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2707,10 +2689,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1276, {	-- The Black Shield (5/5) [H]
 					["sourceQuest"] = 1323,	-- The Black Shield (4/5) [H]
-					["providers"] = {
-						{ "n", 4926 },	-- Krog
-						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
-					},
+					["qg"] = 4926,	-- Krog
+					["qi"] = 5919,	-- Blackened Iron Shield (QI!) not prov
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3175,10 +3155,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1240, {	-- The Troll Witchdoctor
 					["sourceQuest"] = 1239,	-- The Severed Head
-					["providers"] = {
-						{ "n", 4791 },	-- Nazeer Bloodpike
-						{ "i", 5918 },	-- Defiant Orc Head
-					},
+					["qg"] = 4791,	-- Nazeer Bloodpike
+					["qi"] = 5918,	-- Defiant Orc Head
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },

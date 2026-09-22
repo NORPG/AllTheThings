@@ -683,18 +683,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				{	-- Araj the Summoner
 					["allianceQuestData"] = q(27164, {	-- Araj the Summoner (A)
 						["sourceQuest"] = 27161,	-- The Endless Flow
-						["providers"] = {
-							{ "n", 44467 },	-- Lang Loosegrip
-							{ "i", 60849 },	-- Lang's Hand Grenades
-						},
+						["qg"] = 44467,	-- Lang Loosegrip
+						["qi"] = 60849,	-- Lang's Hand Grenades
 						["coord"] = { 41.2, 70.0, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(26925, {	-- Araj the Summoner (H)
 						["sourceQuest"] = 26922,	-- The Endless Flow
-						["providers"] = {
-							{ "n", 44462 },	-- Jearl Donald
-							{ "i", 60678 },	-- Jearl's Hand Grenades
-						},
+						["qg"] = 44462,	-- Jearl Donald
+						["qi"] = 60678,	-- Jearl's Hand Grenades
 						["coord"] = { 47.3, 64.4, WESTERN_PLAGUELANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -837,10 +833,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5210, {	-- Brother Carlin
 					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
-					["providers"] = {
-						{ "n", 10667 },	-- Chromie
-						{ "i", 13202 },	-- Extended Annals of Darrowshire
-					},
+					["qg"] = 10667,	-- Chromie
+					["qi"] = 13202,	-- Extended Annals of Darrowshire
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -1290,10 +1284,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["hordeQuestData"] = q(4987, {	-- Glyphed Oaken Branch [H]
 						["maps"] = { THUNDER_BLUFF },
 					}),
-					["providers"] = {
-						{ "n", 10739 },	-- Mulgris Deepriver
-						{ "i", 12663 },	-- Glyphed Oaken Branch
-					},
+					["qg"] = 10739,	-- Mulgris Deepriver
+					["qi"] = 12663,	-- Glyphed Oaken Branch
 					["sourceQuest"] = 4985,	-- The Wildlife Suffers Too
 					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1321,18 +1313,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5050, {	-- Good Luck Charm
 					["allianceQuestData"] = {
-						["providers"] = {
-							{ "n", 3520 },	-- Ol' Emma
-							{ "i", 12721 },	-- Good Luck Half-Charm
-						},
+						["qg"] = 3520,	-- Ol' Emma
+						["qi"] = 12721,	-- Good Luck Half-Charm
 						["sourceQuest"] = 5048,	-- Good Natured Emma
 						["coord"] = { 52.4, 41.8, STORMWIND_CITY },
 					},
 					["hordeQuestData"] = {
-						["providers"] = {
-							{ "n", 8403 },	-- Jeremiah Payson <Cockroach Vendor>
-							{ "i", 12721 },	-- Good Luck Half-Charm
-						},
+						["qg"] = 8403,	-- Jeremiah Payson <Cockroach Vendor>
+						["qi"] = 12721,	-- Good Luck Half-Charm
 						["sourceQuest"] = 5049,	-- The Jeremiah Blues
 						["coord"] = { 67.4, 43.8, UNDERCITY },
 					},
@@ -1341,10 +1329,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5048, {	-- Good Natured Emma
 					["sourceQuest"] = 5022,	-- Better Late Than Never (2/2) [A]
-					["providers"] = {
-						{ "n", 10782 },	-- Royal Factor Bathrilor <Stormwind Census>
-						{ "i", 12724 },	-- Janice's Parcel
-					},
+					["qg"] = 10782,	-- Royal Factor Bathrilor <Stormwind Census>
+					["qi"] = 12724,	-- Janice's Parcel
 					["coord"] = { 48.6, 30.6, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1409,10 +1395,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8416, {	-- Inert Scourgestones
 					["sourceQuest"] = 8414,	-- Dispelling Evil
-					["providers"] = {
-						{ "n", 1854 },	-- High Priest Thel'danis
-						{ "i", 20612 },	-- Inert Scourgestone
-					},
+					["qg"] = 1854,	-- High Priest Thel'danis
+					["qi"] = 20612,	-- Inert Scourgestone
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1904,10 +1888,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27055, {	-- Students of Krastinov
 					["sourceQuest"] = 27054,	-- Desperate Acts
-					["providers"] = {
-						{ "n", 44454 },	-- Field Agent Kaartish
-						{ "i", 60772 },	-- Cult Orders
-					},
+					["qg"] = 44454,	-- Field Agent Kaartish
+					["qi"] = 60772,	-- Cult Orders
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2250,17 +2232,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- The Endless Flow
 					["allianceQuestData"] = q(27161, {	-- The Endless Flow (A)
-						["providers"] = {
-							{ "n", 44467 },	-- Lang Loosegrip
-							{ "i", 60849 },	-- Lang's Hand Grenades
-						},
+						["qg"] = 44467,	-- Lang Loosegrip
+						["qi"] = 60849,	-- Lang's Hand Grenades
 						["coord"] = { 41.2, 70.0, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(26922, {	-- The Endless Flow (H)
-						["providers"] = {
-							{ "n", 44462 },	-- Jearl Donald
-							{ "i", 60678 },	-- Jearl's Hand Grenades
-						},
+						["qg"] = 44462,	-- Jearl Donald
+						["qi"] = 60678,	-- Jearl's Hand Grenades
 						["coord"] = { 47.3, 64.4, WESTERN_PLAGUELANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -2332,10 +2310,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5049, {	-- The Jeremiah Blues
 					["sourceQuest"] = 5023,	-- Better Late Than Never (2/2) [H]
-					["providers"] = {
-						{ "n", 10781 },	-- Royal Overseer Bauhaus <Undercity Census>
-						{ "i", 12724 },	-- Janice's Parcel
-					},
+					["qg"] = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
+					["qi"] = 12724,	-- Janice's Parcel
 					["coord"] = { 69.6, 43.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2468,10 +2444,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27172, {	-- The Writhing Haunt
 					["sourceQuest"] = 27171,	-- Ambushed!
-					["providers"] = {
-						{ "n", 10838 },	-- Commander Ashlam Valorfist
-						{ "i", 60866 },	-- Battered Weapons and Armor
-					},
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["qi"] = 60866,	-- Battered Weapons and Armor
 					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2825,10 +2799,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(10592, {	-- Wisdom of the Banshee Queen
 					["sourceQuest"] = 10590,	-- Prove Your Hatred
-					["providers"] = {
-						{ "n", 17099 },	-- Mehlar Dawnblade
-						{ "i", 30700 },	-- Scourgestone Fragments
-					},
+					["qg"] = 17099,	-- Mehlar Dawnblade
+					["qi"] = 30700,	-- Scourgestone Fragments
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },

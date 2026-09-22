@@ -1254,10 +1254,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(8350, {	-- Completing the Delivery
 					["sourceQuest"] = 9705,	-- Package Recovery
-					["providers"] = {
-						{ "n", 15301 },	-- Outrunner Alarion
-						{ "i", 20804 },	-- Erona's Package
-					},
+					["qg"] = 15301,	-- Outrunner Alarion
+					["qi"] = 20804,	-- Erona's Package
 					["coord"] = { 40.4, 32.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1337,20 +1335,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(8895, {	-- Delivery to the North Sanctum
 					["sourceQuest"] = 8472,	-- Major Malfunction
-					["providers"] = {
-						{ "n", 15418 },	-- Magister Jaronis
-						{ "i", 21807 },	-- Unmarked Letter
-					},
+					["qg"] = 15418,	-- Magister Jaronis
+					["qi"] = 21807,	-- Unmarked Letter
 					["coord"] = { 47.2, 46.3, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(9148, {	-- Delivery to Tranquillien
 					["sourceQuest"] = 9147,	-- The Fallen Courier
-					["providers"] = {
-						{ "n", 16183 },	-- Courier Dawnstrider
-						{ "i", 22717 },	-- Letter from Silvermoon
-					},
+					["qg"] = 16183,	-- Courier Dawnstrider
+					["qi"] = 22717,	-- Letter from Silvermoon
 					["coord"] = { 48.9, 88.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -1415,19 +1409,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- Before Wrath, this quest was in the Ghostlands and has a higher level requirement.
 				q(9133, {	-- Fly to Silvermoon City
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
-					["providers"] = {
-						{ "n", 44036 },	-- Skymaster Brightdawn
-						{ "i", 22549 },	-- Sathiel's Request
-					},
+					["qg"] = 44036,	-- Skymaster Brightdawn
+					["qi"] = 22549,	-- Sathiel's Request
 					["coord"] = { 43.9, 69.9, EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(9130, {	-- Goods from Silvermoon City
-					["providers"] = {
-						{ "n", 16261 },	-- Sathiel
-						{ "i", 22549 },	-- Sathiel's Request
-					},
+					["qg"] = 16261,	-- Sathiel
+					["qi"] = 22549,	-- Sathiel's Request
 					["coord"] = { 43.6, 71.5, EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1549,10 +1539,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9705, {	-- Package Recovery
 					["sourceQuest"] = 9704,	-- Slain by the Wretched
-					["providers"] = {
-						{ "n", 17849 },	-- Slain Outrunner
-						{ "i", 20804 },	-- Erona's Package
-					},
+					["qg"] = 17849,	-- Slain Outrunner
+					["qi"] = 20804,	-- Erona's Package
 					["coord"] = { 42.0, 35.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1618,10 +1606,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9255, {	-- Research Notes
 					["sourceQuest"] = 8488,	-- Unexpected Results
-					["providers"] = {
-						{ "n", 15402 },	-- Apprentice Mirveda
-						{ "i", 22735 },	-- Research Notes
-					},
+					["qg"] = 15402,	-- Apprentice Mirveda
+					["qi"] = 22735,	-- Research Notes
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1630,10 +1616,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9135, {	-- Return to Quartermaster Lymel
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
-					["providers"] = {
-						{ "n", 16192 },	-- Skymistress Gloaming
-						{ "i", 22550 },	-- Quartermaster Lymel's Goods
-					},
+					["qg"] = 16192,	-- Skymistress Gloaming
+					["qi"] = 22550,	-- Quartermaster Lymel's Goods
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
 					["maps"] = { GHOSTLANDS },
 					["races"] = { BLOODELF },
@@ -1642,10 +1626,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #else
 				q(9135, {	-- Return to Sathiel
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
-					["providers"] = {
-						{ "n", 16192 },	-- Skymistress Gloaming
-						{ "i", 22550 },	-- Sathiel's Goods
-					},
+					["qg"] = 16192,	-- Skymistress Gloaming
+					["qi"] = 22550,	-- Sathiel's Goods
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1768,10 +1750,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9064, {	-- Taking the Fall
 					["sourceQuest"] = 9062,	-- Soaked Pages
-					["providers"] = {
-						{ "n", 15945 },	-- Apprentice Meledor
-						{ "i", 22414 },	-- Antheol's Elemental Grimoire
-					},
+					["qg"] = 15945,	-- Apprentice Meledor
+					["qi"] = 22414,	-- Antheol's Elemental Grimoire
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -2058,10 +2038,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10166, {	-- Whitebark's Memory
 					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
-					["providers"] = {
-						{ "n", 15398 },	-- Larianna Riverwind
-						{ "i", 28209 },	-- Old Whitebark's Pendant
-					},
+					["qg"] = 15398,	-- Larianna Riverwind
+					["qi"] = 28209,	-- Old Whitebark's Pendant
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),

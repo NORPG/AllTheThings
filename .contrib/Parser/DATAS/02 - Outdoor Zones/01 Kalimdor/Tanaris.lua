@@ -1352,10 +1352,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["hordeQuestData"] = q(4509, {	-- Calm Before the Storm (1/2) [H]
 						["maps"] = { ORGRIMMAR },
 					}),
-					["providers"] = {
-						{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
-						{ "i", 11844 },	-- Pestlezugg's Un'Goro Report
-					},
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["qi"] = 11844,	-- Pestlezugg's Un'Goro Report
                     ["sourceQuest"] = 4507,	-- Pawn Captures Queen
                     ["coord"] = { 50.8, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1639,20 +1637,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2661, {	-- Delivery for Marin
 					["sourceQuest"] = 2641,	-- Sprinkle's Secret Ingredient
-					["providers"] = {
-						{ "n", 7583 },	-- Sprinkle
-						{ "i", 8528 },	-- Violet Powder
-					},
+					["qg"] = 7583,	-- Sprinkle
+					["qi"] = 8528,	-- Violet Powder
 					["coord"] = { 51.0, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
 				}),
 				q(2874, {	-- Deliver to MacKinley
 					["sourceQuest"] = 2873,	-- Stoley's Shipment
-					["providers"] = {
-						{ "n", 7881 },	-- Stoley
-						{ "i", 9245 },	-- Stoley's Bottle
-					},
+					["qg"] = 7881,	-- Stoley
+					["qi"] = 9245,	-- Stoley's Bottle
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 40,
@@ -1894,10 +1888,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3022, {	-- Handle With Care
-					["providers"] = {
-						{ "n", 7763 },	-- Curgle Cranklehop
-						{ "i", 9507 },	-- A Carefully-packed Crate
-					},
+					["qg"] = 7763,	-- Curgle Cranklehop
+					["qi"] = 9507,	-- A Carefully-packed Crate
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
@@ -2068,10 +2060,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2606, {	-- In Good Taste
 					["sourceQuest"] = 2605,	-- The Thirsty Goblin
-					["providers"] = {
-						{ "n", 7564 },	-- Marin Noggenfogger
-						{ "i", 8603 },	-- Thistleshrub Dew
-					},
+					["qg"] = 7564,	-- Marin Noggenfogger
+					["qi"] = 8603,	-- Thistleshrub Dew
 					["coord"] = { 51.8, 28.6, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
@@ -2085,10 +2075,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(113, {	-- Insect Part Analysis (2/2)
 					["sourceQuest"] = 110,	-- Insect Part Analysis (1/2)
-					["providers"] = {
-						{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
-						{ "i", 8594 },	-- Insect Analysis Report
-					},
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["qi"] = 8594,	-- Insect Analysis Report
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
@@ -2368,10 +2356,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(864, {	-- Return to Apothecary Zinge
 					["sourceQuest"] = 654,	-- Tanaris Field Sampling
-					["providers"] = {
-						{ "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
-						{ "i", 8527 },	-- Sealed Field Testing Kit
-					},
+					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
+					["qi"] = 8527,	-- Sealed Field Testing Kit
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },

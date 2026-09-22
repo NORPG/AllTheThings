@@ -523,10 +523,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(481, {	-- Dalar's Analysis
 					["sourceQuest"] = 478,	-- Maps and Runes
-					["providers"] = {
-						{ "n", 2121 },	-- Shadow Priest Allister
-						{ "i", 3353 },	-- Rune-inscribed Pendant
-					},
+					["qg"] = 2121,	-- Shadow Priest Allister
+					["qi"] = 3353,	-- Rune-inscribed Pendant
 					["coord"] = { 44.0, 41.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -787,10 +785,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(493, {	-- Journey to Hillsbrad Foothills
-					["providers"] = {
-						{ "n", 1937 },	-- Apothecary Renferrel
-						{ "i", 3468 },	-- Renferrel's Findings
-					},
+					["qg"] = 1937,	-- Apothecary Renferrel
+					["qi"] = 3468,	-- Renferrel's Findings
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1035,10 +1031,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(441, {	-- Raleigh and the Undercity
 					["sourceQuest"] = 440,	-- The Engraved Ring
-					["providers"] = {
-						{ "n", 1499 },	-- Magistrate Sevren
-						{ "i", 3234 },	-- Deliah's Ring
-					},
+					["qg"] = 1499,	-- Magistrate Sevren
+					["qi"] = 3234,	-- Deliah's Ring
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -1112,10 +1106,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(430, {	-- Return to Quinn
 					["sourceQuest"] = 429,	-- Wild Hearts
-					["providers"] = {
-						{ "n", 1937 },	-- Apothecary Renferrel
-						{ "i", 3165 },	-- Quinn's Potion
-					},
+					["qg"] = 1937,	-- Apothecary Renferrel
+					["qi"] = 3165,	-- Quinn's Potion
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1124,10 +1116,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				q(6323, {	-- Ride to the Undercity
 					["sourceQuest"] = 6321,	-- Supplying the Sepulcher / Supplying Brill [CATA+]
-					["providers"] = {
-						{ "n", 2226 },	-- Karos Razok
-						{ "i", 16209 },	-- Podrig's Order
-					},
+					["qg"] = 2226,	-- Karos Razok
+					["qi"] = 16209,	-- Podrig's Order
 					["coord"] = { 45.6, 42.4, SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
@@ -1180,10 +1170,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(444, {	-- Rot Hide Origins
 					["sourceQuest"] = 443,	-- Rot Hide Ichor
-					["providers"] = {
-						{ "n", 1937 },	-- Apothecary Renferrel
-						{ "i", 3237 },	-- Sample Ichor
-					},
+					["qg"] = 1937,	-- Apothecary Renferrel
+					["qi"] = 3237,	-- Sample Ichor
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1268,10 +1256,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				q(6321, {	-- Supplying the Sepulcher / Supplying Brill [CATA+]
-					["providers"] = {
-						{ "n", 6389 },	-- Deathguard Podrig
-						{ "i", 16209 },	-- Podrig's Order
-					},
+					["qg"] = 6389,	-- Deathguard Podrig
+					["qi"] = 16209,	-- Podrig's Order
 					["coord"] = { 43.4, 41.6, SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
@@ -1303,10 +1289,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(449, {	-- The Deathstalkers' Report
 					["sourceQuest"] = 435,	-- Escorting Erland
-					["providers"] = {
-						{ "n", 1950 },	-- Rane Yorick
-						{ "i", 3252 },	-- Deathstalker Report
-					},
+					["qg"] = 1950,	-- Rane Yorick
+					["qi"] = 3252,	-- Deathstalker Report
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1322,10 +1306,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(440, {	-- The Engraved Ring
 					["sourceQuest"] = 439,	-- Rot Hide Clues
-					["providers"] = {
-						{ "n", 1952 },	-- High Executor Hadrec
-						{ "i", 3234 },	-- Deliah's Ring
-					},
+					["qg"] = 1952,	-- High Executor Hadrec
+					["qi"] = 3234,	-- Deliah's Ring
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1429,10 +1411,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(446, {	-- Thule Ravenclaw
 					["sourceQuest"] = 444,	-- Rot Hide Origins
-					["providers"] = {
-						{ "n", 1498 },	-- Bethor Iceshard
-						{ "i", 3250 },	-- Bethor's Scroll
-					},
+					["qg"] = 1498,	-- Bethor Iceshard
+					["qi"] = 3250,	-- Bethor's Scroll
 					["coord"] = { 84.2, 17.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1601,10 +1581,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1359, {	-- Zinge's Delivery
 					["sourceQuest"] = 3221,	-- Speak with Renferrel
-					["providers"] = {
-						{ "n", 1937 },	-- Apothecary Renferrel
-						{ "i", 6016 },	-- Wolf Heart Sample
-					},
+					["qg"] = 1937,	-- Apothecary Renferrel
+					["qi"] = 6016,	-- Wolf Heart Sample
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },

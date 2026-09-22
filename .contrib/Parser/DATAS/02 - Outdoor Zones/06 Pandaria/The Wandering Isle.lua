@@ -198,10 +198,8 @@ root(ROOTS.Zones, {
 							29662,	-- Stronger Than Reeds
 							29663,	-- The Lesson of the Balanced Rock
 						},
-						["providers"] = {
-							{ "n", 54975 },	-- Aysa Cloudsinger
-							{ "i", 73183 },	-- Snowblossom Petals (QI!)
-						},
+						["qg"] = 54975,	-- Aysa Cloudsinger
+						["qi"] = 73183,	-- Snowblossom Petals (QI!)
 						["coord"] = { 65.6, 42.6, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29665, {	-- From Bad to Worse

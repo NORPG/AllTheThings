@@ -115,10 +115,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9723, {	-- A Gesture of Commitment
 					["sourceQuest"] = 9722,	-- The Master's Path
-					["providers"] = {
-						{ "n", 25223 },	-- Lord Solanar Bloodwrath
-						{ "i", 24277 },	-- Items for Magister Astalor Bloodsworn
-					},
+					["qg"] = 25223,	-- Lord Solanar Bloodwrath
+					["qi"] = 24277,	-- Items for Magister Astalor Bloodsworn
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -237,10 +235,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				q(9621, {	-- Envoy to the Horde [Blood Elf Only]
 					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
-					["providers"] = {
-						{ "n", 16802 },	-- Lor'themar Theron
-						{ "i", 23929 },	-- Letter from Lor'themar Theron
-					},
+					["qg"] = 16802,	-- Lor'themar Theron
+					["qi"] = 23929,	-- Letter from Lor'themar Theron
 					["coord"] = { 54.0, 20.4, SILVERMOON_CITY },
 					["maps"] = { UNDERCITY },
 					["races"] = { BLOODELF },
@@ -248,10 +244,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9812, {	-- Envoy to the Horde [Non-Blood Elf Only]
 					["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
-					["providers"] = {
-						{ "n", 16802 },	-- Lor'themar Theron
-						{ "i", 23929 },	-- Letter from Lor'themar Theron
-					},
+					["qg"] = 16802,	-- Lor'themar Theron
+					["qi"] = 23929,	-- Letter from Lor'themar Theron
 					["coord"] = { 54.0, 20.4, SILVERMOON_CITY },
 					["maps"] = { UNDERCITY },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -259,10 +253,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9707, {	-- Forging the Weapon
 					["sourceQuest"] = 9692,	-- The Path of the Adept
-					["providers"] = {
-						{ "n", 17717 },	-- Knight-Lord Bloodvalor
-						{ "i", 24239 },	-- Crate of Materials
-					},
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
+					["qi"] = 24239,	-- Crate of Materials
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -271,10 +263,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9626, {	-- Meeting the Orcs [Blood Elf Only]
 					["sourceQuest"] = 9621,	-- Envoy to the Horde [Blood Elf Only]
-					["providers"] = {
-						{ "n", 10181 },	-- Lady Sylvanas Windrunner <Warchief>
-						{ "i", 23930 },	-- Letter Sealed by Sylvanas
-					},
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
+					["qi"] = 23930,	-- Letter Sealed by Sylvanas
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["maps"] = { ORGRIMMAR },
 					["races"] = { BLOODELF },
@@ -282,10 +272,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9813, {	-- Meeting the Orcs [Non-Blood Elf Only]
 					["sourceQuest"] = 9812,	-- Envoy to the Horde [Non-Blood Elf Only]
-					["providers"] = {
-						{ "n", 10181 },	-- Lady Sylvanas Windrunner <Warchief>
-						{ "i", 23930 },	-- Letter Sealed by Sylvanas
-					},
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
+					["qi"] = 23930,	-- Letter Sealed by Sylvanas
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["maps"] = { ORGRIMMAR },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -337,10 +325,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9134, {	-- Skymistress Gloaming
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
-					["providers"] = {
-						{ "n", 16191 },	-- Sathren Azuredawn
-						{ "i", 22550 },	-- Quartermaster Lymel's Goods
-					},
+					["qg"] = 16191,	-- Sathren Azuredawn
+					["qi"] = 22550,	-- Quartermaster Lymel's Goods
 					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
@@ -349,10 +335,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #else
 				q(9134, {	-- Skymistress Gloaming
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
-					["providers"] = {
-						{ "n", 16191 },	-- Sathren Azuredawn
-						{ "i", 22550 },	-- Sathiel's Goods
-					},
+					["qg"] = 16191,	-- Sathren Azuredawn
+					["qi"] = 22550,	-- Sathiel's Goods
 					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },

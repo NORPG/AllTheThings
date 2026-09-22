@@ -205,10 +205,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(623, {	-- Akiris by the Bundle (2/2)
 				["sourceQuest"] = 617,	-- Akiris by the Bundle (1/2)
-				["providers"] = {
-					{ "n", 2494 },	-- Privateer Bloads
-					{ "i", 4028 },	-- Bundle of Akiris Reeds
-				},
+				["qg"] = 2494,	-- Privateer Bloads
+				["qi"] = 4028,	-- Bundle of Akiris Reeds
 				["coord"] = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
 				["maps"] = { MAP.DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
@@ -765,10 +763,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(210, {	-- Krazek's Cookery
-				["providers"] = {
-					{ "n", 770 },	-- Corporal Kaleb
-					{ "i", 4085 },	-- Krazek's Crock Pot
-				},
+				["qg"] = 770,	-- Corporal Kaleb
+				["qi"] = 4085,	-- Krazek's Crock Pot
 				["coord"] = { 37.7, 3.3, MAP.STRANGLETHORN_VALE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 32,
@@ -814,10 +810,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(602, {	-- Magical Analysis
 				["sourceQuest"] = 601,	-- Water Elementals
-				["providers"] = {
-					{ "n", 2496 },	-- Baron Revilgaz
-					{ "i", 3960 },	-- Bag of Water Elemental Bracers
-				},
+				["qg"] = 2496,	-- Baron Revilgaz
+				["qi"] = 3960,	-- Bag of Water Elemental Bracers
 				["coord"] = { 27.2, 76.8, MAP.STRANGLETHORN_VALE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 32,
@@ -1054,10 +1048,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(622, {	-- Return to Corporal Kaleb
 				["sourceQuest"] = 627,	-- Favor for Krazek
-				["providers"] = {
-					{ "n", 773 },	-- Krazek
-					{ "i", 1987 },	-- Krazek's Fixed Pot
-				},
+				["qg"] = 773,	-- Krazek
+				["qi"] = 1987,	-- Krazek's Fixed Pot
 				["coord"] = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 32,
@@ -1067,10 +1059,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(607, {	-- Return to MacKinley
 				["sourceQuest"] = 606,	-- Scaring Shaky
-				["providers"] = {
-					{ "n", 2502 },	-- \"Shaky\" Phillipe
-					{ "i", 3922 },	-- Shaky's Payment
-				},
+				["qg"] = 2502,	-- \"Shaky\" Phillipe
+				["qi"] = 3922,	-- Shaky's Payment
 				["coord"] = { 26.9, 73.6, MAP.STRANGLETHORN_VALE },
 				["lvl"] = 30,
 			}),
@@ -1325,10 +1315,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(198, {	-- Supplies to Private Thorsen
-				["providers"] = {
-					{ "n", 773 },	-- Krazek
-					{ "i", 2252 },	-- Miscellaneous Goblin Supplies
-				},
+				["qg"] = 773,	-- Krazek
+				["qi"] = 2252,	-- Miscellaneous Goblin Supplies
 				["coord"] = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
@@ -1584,10 +1572,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2757,	-- Booty Bay or Bust!
 					2759,	-- In Search of Galvan
 				},
-				["providers"] = {
-					{ "n", 7794 },	-- McGavan
-					{ "i", 8686 },	-- Mithril Pendant
-				},
+				["qg"] = 7794,	-- McGavan
+				["qi"] = 8686,	-- Mithril Pendant
 				["coord"] = { 28.8, 75.4, MAP.STRANGLETHORN_VALE },
 				["requireSkill"] = BLACKSMITHING,
 				["learnedAt"] = 210,
@@ -1655,10 +1641,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(578, {	-- The Stone of the Tides
 				["sourceQuest"] = 616,	-- The Haunted Isle
-				["providers"] = {
-					{ "n", 2496 },	-- Baron Revilgaz
-					{ "i", 3898 },	-- Library Scrip
-				},
+				["qg"] = 2496,	-- Baron Revilgaz
+				["qi"] = 3898,	-- Library Scrip
 				["coord"] = { 27.2, 76.9, MAP.STRANGLETHORN_VALE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 32,

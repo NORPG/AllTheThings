@@ -112,10 +112,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3913, {	-- A Grave Situation
 					["sourceQuest"] = 3912,	-- Meet at the Grave
-					["providers"] = {
-						{ "n", 9299 },	-- Gaeriyan
-						{ "i", 11136 },	-- Linken's Tempered Sword
-					},
+					["qg"] = 9299,	-- Gaeriyan
+					["qi"] = 11136,	-- Linken's Tempered Sword
 					["coord"] = { 54.0, 23.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -191,10 +189,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4142, {	-- A Visit to Gregan
 					["sourceQuest"] = 4141,	-- Muigin and Larion
-					["providers"] = {
-						{ "n", 9119 },	-- Muigin
-						{ "i", 11316 },	-- Bloodpetal
-					},
+					["qg"] = 9119,	-- Muigin
+					["qi"] = 11316,	-- Bloodpetal
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
@@ -672,10 +668,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(5150, {	-- Dadanga is Hungry!
-					["providers"] = {
-						{ "n", 9274 },	-- Dadanga
-						{ "i", 15699 },	-- Small Brown-wrapped Package
-					},
+					["qg"] = 9274,	-- Dadanga
+					["qi"] = 15699,	-- Small Brown-wrapped Package
 					["coord"] = { 43.6, 7.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11315, 15 } },	-- Bloodpetal Sprout
@@ -781,10 +775,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13903, {	-- Gorishi Grub
 					["altQuests"] = { 13917 },	-- Gorishi Grub (Undead, Troll, Tauren version until MOP)
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -807,10 +799,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(13917, {	-- Gorishi Grub
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
@@ -835,10 +825,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24699, {	-- Gormashh the Glutinous
 					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["sourceQuest"] = 24737,	-- Super Sticky
-					["providers"] = {
-						{ "n", 38276 },	-- Tara (mobileNPC)
-						{ "i", 50746 },	-- Tara's Tar Scraper
-					},
+					["qg"] = 38276,	-- Tara (mobileNPC)
+					["qi"] = 50746,	-- Tara's Tar Scraper
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -918,10 +906,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13889, {	-- Hungry, Hungry Hatchling
 					["altQuests"] = { 13915 },	-- Hungry, Hungry Hatchling (Undead, Troll, Tauren version until MOP)
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -946,10 +932,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(13915, {	-- Hungry, Hungry Hatchling
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
@@ -1012,10 +996,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3908, {	-- It's a Secret to Everybody (3/3)
 					["sourceQuest"] = 3845,	-- It's a Secret to Everybody (2/3)
-					["providers"] = {
-						{ "n", 8737 },	-- Linken
-						{ "i", 11133 },	-- Linken's Training Sword
-					},
+					["qg"] = 8737,	-- Linken
+					["qi"] = 11133,	-- Linken's Training Sword
 					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
@@ -1077,10 +1059,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3961, {	-- Linken's Adventure
 					["sourceQuest"] = 4005,	-- Aquementas
-					["providers"] = {
-						{ "n", 9117 },	-- J.D. Collie
-						{ "i", 11522 },	-- Silver Totem of Aquementas
-					},
+					["qg"] = 9117,	-- J.D. Collie
+					["qi"] = 11522,	-- Silver Totem of Aquementas
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1098,10 +1078,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24742,	-- Finding the Source
 						24794,	-- Speak with Spraggle
 					},
-					["providers"] = {
-						{ "n", 9997 },	-- Spraggle Frock
-						{ "i", 15722 },	-- Spraggle's Canteen
-					},
+					["qg"] = 9997,	-- Spraggle Frock
+					["qi"] = 15722,	-- Spraggle's Canteen
 					["coord"] = { 55.0, 62.7, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1111,10 +1089,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4492, {	-- Lost!
-					["providers"] = {
-						{ "n", 9997 },	-- Spraggle Frock
-						{ "i", 15722 },	-- Spraggle's Canteen
-					},
+					["qg"] = 9997,	-- Spraggle Frock
+					["qi"] = 15722,	-- Spraggle's Canteen
 					["coord"] = { 43.6, 8.5, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -1169,10 +1145,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3912, {	-- Meet at the Grave
 					["sourceQuest"] = 3909,	-- The Videre Elixir
-					["providers"] = {
-						{ "n", 9298 },	-- Donova Snowden
-						{ "i", 11136 },	-- Linken's Tempered Sword
-					},
+					["qg"] = 9298,	-- Donova Snowden
+					["qi"] = 11136,	-- Linken's Tempered Sword
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11243, 1 } },	-- Videre Elixir
@@ -1225,10 +1199,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13904, {	-- Poached, Scrambled, Or Raw?
 					["altQuests"] = { 13916 },	-- Poached, Scrambled, Or Raw? (Undead, Troll, Tauren version until MOP)
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1247,10 +1219,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(13916, {	-- Poached, Scrambled, Or Raw?
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["races"] = { UNDEAD, TROLL, TAUREN },
 					["isDaily"] = true,
@@ -1362,10 +1332,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13905, {	-- Searing Roc Feathers
 					["altQuests"] = { 13914 },	-- Searing Roc Feathers (Undead, Troll, Tauren version until MOP)
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0 },
 					["maps"] = { TANARIS },
 					["races"] = HORDE_ONLY,
@@ -1383,10 +1351,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(13914, {	-- Searing Roc Feathers
-					["providers"] = {
-						{ "n", 34320 },	-- Venomhide Hatchling
-						{ "i", 46362 },	-- Venomhide Hatchling
-					},
+					["qg"] = 34320,	-- Venomhide Hatchling
+					["qi"] = 46362,	-- Venomhide Hatchling
 					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
 					["maps"] = { TANARIS },
 					["races"] = { UNDEAD, TROLL, TAUREN },
@@ -1405,10 +1371,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(24926, {	-- Serving A-Me 01
 					["sourceQuest"] = 24715,	-- Repairing A-Me 01
-					["providers"] = {
-						{ "n",  9623 },	-- A-Me 01
-						{ "i", 51546 },	-- A-Me 01's Thumb Drive
-					},
+					["qg"] = 9623,	-- A-Me 01
+					["qi"] = 51546,	-- A-Me 01's Thumb Drive
 					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1492,10 +1456,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24737, {	-- Super Sticky
 					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["sourceQuest"] = 24693,	-- Mossy Pile
-					["providers"] = {
-						{ "n", 38276 },	-- Tara (mobileNPC)
-						{ "i", 50742 },	-- Tara's Tar Scraper
-					},
+					["qg"] = 38276,	-- Tara (mobileNPC)
+					["qi"] = 50742,	-- Tara's Tar Scraper
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1575,10 +1537,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4292, {	-- The Bait for Lar'korwi
 					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
-					["providers"] = {
-						{ "n", 9619 },	-- Torwa Pathfinder
-						{ "i", 11568 },	-- Torwa's Pouch
-					},
+					["qg"] = 9619,	-- Torwa Pathfinder
+					["qi"] = 11568,	-- Torwa's Pouch
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
@@ -1734,10 +1694,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24708, {	-- The Fossil-Finder 3000
 					["sourceQuest"] = 24730,	-- Roll the Bones
-					["providers"] = {
-						{ "n", 9272 },	-- Spark Nilminer
-						{ "i", 50405 },	-- Fossil-Finder 3000
-					},
+					["qg"] = 9272,	-- Spark Nilminer
+					["qi"] = 50405,	-- Fossil-Finder 3000
 					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {

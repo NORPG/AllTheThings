@@ -258,10 +258,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(84546, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["sourceQuest"] = 7633,	-- An Introduction
-					["providers"] = {
-						{ "n", 14524 },	-- Vartrus the Ancient
-						{ "i", 18708 },	-- Petrified Bark
-					},
+					["qg"] = 14524,	-- Vartrus the Ancient
+					["qi"] = 18708,	-- Petrified Bark
 					["coord"] = { 47.0, 24.48, FELWOOD },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
@@ -323,10 +321,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["sourceQuest"] = 7633,	-- An Introduction
-					["providers"] = {
-						{ "n", 14524 },	-- Vartrus the Ancient
-						{ "i", 18708 },	-- Petrified Bark
-					},
+					["qg"] = 14524,	-- Vartrus the Ancient
+					["qi"] = 18708,	-- Petrified Bark
 					["coord"] = { 47.0, 24.48, FELWOOD },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
@@ -394,10 +390,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84556, {	-- The Forging of Quel'Serrar
 					["sourceQuest"] = 84555,	-- Nostro's Compendium
-					["providers"] = {
-						{ "n",  14368 },	-- Lorekeeper Lydros
-						{ "i", 228695 },	-- A Dull and Flat Elven Blade
-					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["qi"] = 228695,	-- A Dull and Flat Elven Blade
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN, ROGUE },
@@ -406,10 +400,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(7508, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
 					["sourceQuest"] = 7507,	-- Nostro's Compendium
-					["providers"] = {
-						{ "n", 14368 },	-- Lorekeeper Lydros
-						{ "i", 18513 },	-- A Dull and Flat Elven Blade
-					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["qi"] = 18513,	-- A Dull and Flat Elven Blade
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif

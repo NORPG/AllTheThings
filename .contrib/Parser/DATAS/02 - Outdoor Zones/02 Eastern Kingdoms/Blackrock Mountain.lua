@@ -69,10 +69,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				hqt(53656, {	-- Speak to Wan'be in Blackrock Mountain
 					["name"] = "Speak to Wan'be in Blackrock Mountain",
 					["sourceQuest"] = 53655,	-- Speak to Wan'be underwater at Fizzle and Pozzik's Speedway
-					["providers"] = {
-						{ "n", 143129 },	-- Wan'be <The Explorer>
-						{ "i", 163213 },	-- Ghostly Explorer's Skull
-					},
+					["qg"] = 143129,	-- Wan'be <The Explorer>
+					["qi"] = 163213,	-- Ghostly Explorer's Skull
 					["coord"] = { 66.1, 96.6, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },

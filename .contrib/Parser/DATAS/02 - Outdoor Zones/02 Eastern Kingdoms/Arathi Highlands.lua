@@ -224,10 +224,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(695, {	-- An Apprentice's Enchantment
 					["sourceQuest"] = 694,	-- Trelane's Defenses
-					["providers"] = {
-						{ "n", 2788 },	-- Apprentice Kryten
-						{ "i", 4529 },	-- Enchanted Agate
-					},
+					["qg"] = 2788,	-- Apprentice Kryten
+					["qi"] = 4529,	-- Enchanted Agate
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -717,10 +715,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(702, {	-- Guile of the Raptor (2/3)
 					["sourceQuest"] = 701,	-- Guile of the Raptor (1/3)
-					["providers"] = {
-						{ "n", 2706 },	-- Tor'gan
-						{ "i", 4528 },	-- Tor'gan's Orb
-					},
+					["qg"] = 2706,	-- Tor'gan
+					["qi"] = 4528,	-- Tor'gan's Orb
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -923,10 +919,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(647, {	-- MacKreel's Moonshine
-					["providers"] = {
-						{ "n", 2696 },	-- Foggy MacKreel
-						{ "i", 4441 },	-- MacKreel's Moonshine
-					},
+					["qg"] = 2696,	-- Foggy MacKreel
+					["qi"] = 4441,	-- MacKreel's Moonshine
 					["coord"] = { 43.2, 92.6, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -949,10 +943,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(697, {	-- Malin's Request (2/2)
 					["sourceQuest"] = 696,	-- Attack on the Tower
-					["providers"] = {
-						{ "n", 2789 },	-- Skuerto
-						{ "i", 4533 },	-- Sealed Letter to Archmage Malin
-					},
+					["qg"] = 2789,	-- Skuerto
+					["qi"] = 4533,	-- Sealed Letter to Archmage Malin
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -1144,10 +1136,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(674, {	-- Raising Spirits (2/3)
 					["sourceQuest"] = 672,	-- Raising Spirits (1/3)
-					["providers"] = {
-						{ "n", 2706 },	-- Tor'gan
-						{ "i", 4526 },	-- Raptor Talon Amulet
-					},
+					["qg"] = 2706,	-- Tor'gan
+					["qi"] = 4526,	-- Raptor Talon Amulet
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1256,10 +1246,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(641, {	-- Sigil of Thoradin
 					["sourceQuest"] = 640,	-- The Broken Sigil
-					["providers"] = {
-						{ "n", 2706 },	-- Tor'gan
-						{ "i", 4453 },	-- Sigil of Thoradin
-					},
+					["qg"] = 2706,	-- Tor'gan
+					["qi"] = 4453,	-- Sigil of Thoradin
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1299,10 +1287,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26052, {	-- Speak to Shakes
 					["sourceQuest"] = 26051,	-- Sunken Treasure
-					["providers"] = {
-						{ "n", 2774 },	-- Doctor Draxlegauge
-						{ "i", 4493 },	-- Elven Gems
-					},
+					["qg"] = 2774,	-- Doctor Draxlegauge
+					["qi"] = 4493,	-- Elven Gems
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1461,10 +1447,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(666, {	-- Sunken Treasure (2/5)
 					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
-					["providers"] = {
-						{ "n", 2774 },	-- Doctor Draxlegauge
-						{ "i", 4491 },	-- Goggles of Gem Hunting
-					},
+					["qg"] = 2774,	-- Doctor Draxlegauge
+					["qi"] = 4491,	-- Goggles of Gem Hunting
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -1486,20 +1470,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(668, {	-- Sunken Treasure (3/5)
 					["sourceQuest"] = 666,	-- Sunken Treasure (2/5)
-					["providers"] = {
-						{ "n", 2774 },	-- Doctor Draxlegauge
-						{ "i", 4493 },	-- Elven Gems
-					},
+					["qg"] = 2774,	-- Doctor Draxlegauge
+					["qi"] = 4493,	-- Elven Gems
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(669, {	-- Sunken Treasure (4/5)
 					["sourceQuest"] = 668,	-- Sunken Treasure (3/5)
-					["providers"] = {
-						{ "n", 2610 },	-- Shakes O'Breen
-						{ "i", 4502 },	-- Sample Elven Gem
-					},
+					["qg"] = 2610,	-- Shakes O'Breen
+					["qi"] = 4502,	-- Sample Elven Gem
 					["coord"] = { 32.2, 81.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -1507,20 +1487,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(670, {	-- Sunken Treasure (5/5)
 					["sourceQuest"] = 669,	-- Sunken Treasure (4/5)
-					["providers"] = {
-						{ "n", 2487 },	-- Fleet Master Seahorn <Blackwater Raiders>
-						{ "i", 4494 },	-- Seahorn's Sealed Letter
-					},
+					["qg"] = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
+					["qi"] = 4494,	-- Seahorn's Sealed Letter
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(26051, {	-- Sunken Treasure
 					["sourceQuest"] = 26050,	-- Goggle Boggle
-					["providers"] = {
-						{ "n", 2774 },	-- Doctor Draxlegauge
-						{ "i", 4491 },	-- Goggles of Gem Hunting
-					},
+					["qg"] = 2774,	-- Doctor Draxlegauge
+					["qi"] = 4491,	-- Goggles of Gem Hunting
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1943,10 +1919,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26033, {	-- Trol'kalar
 					["sourceQuest"] = 26032,	-- Sigil of Arathor
-					["providers"] = {
-						{ "n", 41944 },	-- Galen Trollbane
-						{ "i", 4466 },	-- Sigil of Trollbane
-					},
+					["qg"] = 41944,	-- Galen Trollbane
+					["qi"] = 4466,	-- Sigil of Trollbane
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

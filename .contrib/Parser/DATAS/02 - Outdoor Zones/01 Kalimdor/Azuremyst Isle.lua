@@ -137,10 +137,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9451, {	-- Call of Earth (3/3)
 							["sourceQuest"] = 9450,	-- Call of Earth (2/3)
-							["providers"] = {
-								{ "n", 17087 },	-- Spirit of the Vale
-								{ "i", 23671 },	-- Earth Crystal
-							},
+							["qg"] = 17087,	-- Spirit of the Vale
+							["qi"] = 23671,	-- Earth Crystal
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.6, 23.8, AMMEN_VALE },

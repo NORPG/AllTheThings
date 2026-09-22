@@ -312,10 +312,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1136, {	-- Frostmaw
 					["sourceQuest"] = 1131,	-- Steelsnap
-					["providers"] = {
-						{ "n", 3441 },	-- Melor Stonehoof
-						{ "i", 5838 },	-- Kodo Skin Scroll
-					},
+					["qg"] = 3441,	-- Melor Stonehoof
+					["qi"] = 5838,	-- Kodo Skin Scroll
 					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ALTERAC_MOUNTAINS },
@@ -427,10 +425,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3782, {	-- Morrowgrain Research (1/2)
 					["sourceQuest"] = 3761,	-- Un'Goro Soil
-					["providers"] = {
-						{ "n", 5769 },	-- Arch Druid Hamuul Runetotem
-						{ "i", 11103 },	-- Seed Voucher
-					},
+					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
+					["qi"] = 11103,	-- Seed Voucher
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -538,10 +534,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
 					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
-					["providers"] = {
-						{ "n", 2995 },	-- Tal
-						{ "i", 16283 },	-- Ahanu's Leather Goods
-					},
+					["qg"] = 2995,	-- Tal
+					["qi"] = 16283,	-- Ahanu's Leather Goods
 					["coord"] = { 46.8, 50.0, THUNDER_BLUFF },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -613,10 +607,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(76156, {	-- Stalk With The Earthmother (1/3)
-					["providers"] = {
-						{ "n", 205729 },	-- Boarton Shadetotem <Rogue Trainer?>
-						{ "i", 206159 },	-- Venture Co Disguise
-					},
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+					["qi"] = 206159,	-- Venture Co Disguise
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { MULGORE },
@@ -701,10 +693,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6363, {	-- Tal the Wind Rider Master
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
-					["providers"] = {
-						{ "n", 8359 },	-- Ahanu
-						{ "i", 16283 },	-- Ahanu's Leather Goods
-					},
+					["qg"] = 8359,	-- Ahanu
+					["qi"] = 16283,	-- Ahanu's Leather Goods
 					["coord"] = { 45.74, 55.86, THUNDER_BLUFF },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -778,10 +768,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1196, {	-- The Sacred Flame (2/3)
 					["sourceQuest"] = 1195,	-- The Sacred Flame (1/3)
-					["providers"] = {
-						{ "n", 4721 },	-- Zangen Stonehoof
-						{ "i", 5868 },	-- Filled Etched Phial
-					},
+					["qg"] = 4721,	-- Zangen Stonehoof
+					["qi"] = 5868,	-- Filled Etched Phial
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -790,10 +778,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1197, {	-- The Sacred Flame (3/3)
 					["sourceQuest"] = 1196,	-- The Sacred Flame (2/3)
-					["providers"] = {
-						{ "n", 4722 },	-- Rau Cliffrunner
-						{ "i", 5868 },	-- Filled Etched Phial
-					},
+					["qg"] = 4722,	-- Rau Cliffrunner
+					["qi"] = 5868,	-- Filled Etched Phial
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 5869, 1 } },	-- 1x Cloven Hoof
@@ -854,10 +840,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(264, {	-- Until Death Do Us Part
-					["providers"] = {
-						{ "n", 5543 },	-- Clarice Foster
-						{ "i", 6145 },	-- Clarice's Pendant
-					},
+					["qg"] = 5543,	-- Clarice Foster
+					["qi"] = 6145,	-- Clarice's Pendant
 					["coord"] = { 28.19, 25.31, THUNDER_BLUFF },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,

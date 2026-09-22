@@ -576,10 +576,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9166, {	-- Deliver the Plans to An'telas
 					["sourceQuest"] = 9163,	-- Into Occupied Territory
-					["providers"] = {
-						{ "n", 16231 },	-- Dame Auriferous
-						{ "i", 22594 },	-- Night Elf Plans
-					},
+					["qg"] = 16231,	-- Dame Auriferous
+					["qi"] = 22594,	-- Night Elf Plans
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 1),
@@ -625,10 +623,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
 				q(9133, {	-- Fly to Silvermoon City
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
-					["providers"] = {
-						{ "n", 16189 },	-- Skymaster Sunwing <Bat Handler>
-						{ "i", 22549 },	-- Quartermaster Lymel's Bill of Lading
-					},
+					["qg"] = 16189,	-- Skymaster Sunwing <Bat Handler>
+					["qi"] = 22549,	-- Quartermaster Lymel's Bill of Lading
 					["coord"] = { 45.4, 30.5, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -655,10 +651,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9811, {	-- Friend of the Sin'dorei [Non-Blood Elf Only]
 					["sourceQuest"] = 9167,	-- The Traitor's Destruction
-					["providers"] = {
-						{ "n", 16239 },	-- Magister Kaendris
-						{ "i", 22653 },	-- Dar'Khan's Head
-					},
+					["qg"] = 16239,	-- Magister Kaendris
+					["qi"] = 22653,	-- Dar'Khan's Head
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["maps"] = { SILVERMOON_CITY },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -689,10 +683,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						9329,	-- The Forsaken [Non-Blood Elf Only]
 					},
 					["qg"] = 16187,	-- Quartermaster Lymel <General Goods>
-					["providers"] = {
-						{ "n", 16187 },	-- Quartermaster Lymel <General Goods>
-						{ "i", 22549 },	-- Quartermaster Lymel's Bill of Lading
-					},
+					["qg"] = 16187,	-- Quartermaster Lymel <General Goods>
+					["qi"] = 22549,	-- Quartermaster Lymel's Bill of Lading
 					["coord"] = { 47.3, 29.3, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -743,10 +735,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9328, {	-- Hero of the Sin'dorei [Blood Elf Only]
 					["sourceQuest"] = 9167,	-- The Traitor's Destruction
-					["providers"] = {
-						{ "n", 16239 },	-- Magister Kaendris
-						{ "i", 22653 },	-- Dar'Khan's Head
-					},
+					["qg"] = 16239,	-- Magister Kaendris
+					["qi"] = 22653,	-- Dar'Khan's Head
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["maps"] = { SILVERMOON_CITY },
 					["races"] = { BLOODELF },
@@ -853,10 +843,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9177, {	-- Journey to Undercity [Non-Blood Elf Only]
 					["sourceQuest"] = 9175,	-- The Lady's Necklace
-					["providers"] = {
-						{ "n", 16252 },	-- High Executor Mavren
-						{ "i", 22627 },	-- The Lady's Necklace
-					},
+					["qg"] = 16252,	-- High Executor Mavren
+					["qi"] = 22627,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["maps"] = { UNDERCITY },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -864,10 +852,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9180, {	-- Journey to Undercity [Blood Elf Only]
 					["sourceQuest"] = 9175,	-- The Lady's Necklace
-					["providers"] = {
-						{ "n", 16252 },	-- High Executor Mavren
-						{ "i", 22627 },	-- The Lady's Necklace
-					},
+					["qg"] = 16252,	-- High Executor Mavren
+					["qi"] = 22627,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["maps"] = { UNDERCITY },
 					["races"] = { BLOODELF },
@@ -918,10 +904,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9172, {	-- Report to Magister Kaendris
 					["sourceQuest"] = 9162,	-- Hints of the Past
-					["providers"] = {
-						{ "n", 16203 },	-- Ranger Vynna
-						{ "i", 22706 },	-- Dar'Khan's Journal
-					},
+					["qg"] = 16203,	-- Ranger Vynna
+					["qi"] = 22706,	-- Dar'Khan's Journal
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -953,10 +937,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9618, {	-- Return the Reports
 					["sourceQuest"] = 9460,	-- Combining Forces
-					["providers"] = {
-						{ "n", 17224 },	-- Keltus Darkleaf
-						{ "i", 23919 },	-- Stack of Reports
-					},
+					["qg"] = 17224,	-- Keltus Darkleaf
+					["qi"] = 23919,	-- Stack of Reports
 					["coord"] = { 33.0, 11.2, GHOSTLANDS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },

@@ -435,10 +435,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78089, {	-- Advice From Stormwind
 					["sourceQuest"] = 78088,	-- A Strange Artifact
-					["providers"] = {
-						{ "n",   3663 },	-- Delgren the Purifier
-						{ "i", 209748 },	-- Althalaxx Orb
-					},
+					["qg"] = 3663,	-- Delgren the Purifier
+					["qi"] = 209748,	-- Althalaxx Orb
 					["coord"] = { 26.2, 38.6, ASHENVALE },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
@@ -1254,10 +1252,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78561, {	-- Elixir of Insight (2/2)
 					["sourceQuest"] = 78537,	-- Elixir of Insight (1/2)
-					["providers"] = {
-						{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
-						{ "i", 210712 },	-- Elixir of Insight
-					},
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["qi"] = 210712,	-- Elixir of Insight
 					["coord"] = { 11.6, 34.2, ASHENVALE },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -1640,10 +1636,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 18,
 				}),
 				q(4581, {	-- Kayneth Stillwind
-					["providers"] = {
-						{ "n", 3845 },	-- Shindrell Swiftfire
-						{ "i", 12060 },	-- Shindrell's Note
-					},
+					["qg"] = 3845,	-- Shindrell Swiftfire
+					["qi"] = 12060,	-- Shindrell's Note
 					["coord"] = { 34.7, 48.9, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2009,10 +2003,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1020, {	-- Orendil's Cure
 					["sourceQuest"] = 1010,	-- Bathran's Hair
-					["providers"] = {
-						{ "n", 3847 },	-- Orendil Broadleaf
-						{ "i", 5460 },	-- Orendil's Cure
-					},
+					["qg"] = 3847,	-- Orendil Broadleaf
+					["qi"] = 5460,	-- Orendil's Cure
 					["coord"] = { 26.4, 38.6, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2140,10 +2132,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1023, {	-- Raene's Cleansing (2/11) [Vanilla] / The Lost Gem [CATA]
 					["sourceQuest"] = 991,	-- Raene's Cleansing (1/11)
-					["providers"] = {
-						{ "n", 3891 },	-- Teronis' Corpse
-						{ "i", 5505 },	-- Teronis' Journal
-					},
+					["qg"] = 3891,	-- Teronis' Corpse
+					["qi"] = 5505,	-- Teronis' Journal
 					["coord"] = { 20.2, 42.2, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2171,10 +2161,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1024, {	-- Raene's Cleansing (3/11) [Vanilla] / Dryad Delivery [CATA]
 					["sourceQuest"] = 1023,	-- Raene's Cleansing (2/11)
-					["providers"] = {
-						{ "n", 3691 },	-- Raene Wolfrunner
-						{ "i", 5463 },	-- Glowing Gem
-					},
+					["qg"] = 3691,	-- Raene Wolfrunner
+					["qi"] = 5463,	-- Glowing Gem
 					["coord"] = { 36.6, 49.6, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2231,10 +2219,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1028, {	-- Raene's Cleansing (6/11)
 					["sourceQuest"] = 1027,	-- Raene's Cleansing (5/11)
-					["providers"] = {
-						{ "n", 3916 },	-- Shael'dryn
-						{ "i", 5547 },	-- Reconstructed Rod
-					},
+					["qg"] = 3916,	-- Shael'dryn
+					["qi"] = 5547,	-- Reconstructed Rod
 					["coord"] = { 53.5, 46.3, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2255,10 +2241,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1029, {	-- Raene's Cleansing (8/11) [Vanilla] / Return to Raene [CATA]
 					["sourceQuest"] = 1055,	-- Raene's Cleansing (7/11)
-					["providers"] = {
-						{ "n", 3916 },	-- Shael'dryn
-						{ "i", 5462 },	-- Dartol's Rod of Transformation
-					},
+					["qg"] = 3916,	-- Shael'dryn
+					["qi"] = 5462,	-- Dartol's Rod of Transformation
 					["coord"] = { 53.5, 46.3, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2266,10 +2250,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1030, {	-- Raene's Cleansing (9/11) [Vanilla] / Dartol's Rod [CATA]
 					["sourceQuest"] = 1029,	-- Raene's Cleansing (8/11)
-					["providers"] = {
-						{ "n", 3691 },	-- Raene Wolfrunner
-						{ "i", 5462 },	-- Dartol's Rod of Transformation
-					},
+					["qg"] = 3691,	-- Raene Wolfrunner
+					["qi"] = 5462,	-- Dartol's Rod of Transformation
 					["coord"] = { 36.6, 49.6, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2277,10 +2259,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1045, {	-- Raene's Cleansing (10/11) [Vanilla] / A New Adornment [CATA]
 					["sourceQuest"] = 1030,	-- Raene's Cleansing (9/11)
-					["providers"] = {
-						{ "n", 3897 },	-- Krolg
-						{ "i", 5462 },	-- Dartol's Rod of Transformation
-					},
+					["qg"] = 3897,	-- Krolg
+					["qi"] = 5462,	-- Dartol's Rod of Transformation
 					["coord"] = { 50.8, 75.0, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2299,10 +2279,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1046, {	-- Raene's Cleansing (11/11) [Vanilla] / True Power of the Rod [CATA]
 					["sourceQuest"] = 1045,	-- Raene's Cleansing (10/11)
 					-- #if AFTER WRATH
-					["providers"] = {
-						{ "n", 3897 },	-- Krolg
-						{ "i", 5388 },	-- Ran Bloodtooth's Skull
-					},
+					["qg"] = 3897,	-- Krolg
+					["qi"] = 5388,	-- Ran Bloodtooth's Skull
 					-- #else
 					["qg"] = 3897,	-- Krolg
 					-- #endif
@@ -2454,10 +2432,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9521, {	-- Report from the Northern Front
-					["providers"] = {
-						{ "n", 17287 },	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
-						{ "i", 23778 },	-- Sentinel Luciel's Report
-					},
+					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
+					["qi"] = 23778,	-- Sentinel Luciel's Report
 					["coord"] = { 86.0, 44.4, ASHENVALE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3379,10 +3355,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6541,	-- Report to Kadrak (Barrens)
 						6542,	-- Report to Kadrak (Stonetalon)
 					},
-					["providers"] = {
-						{ "n", 8582 },	-- Kadrak
-						{ "i", 16783 },	-- Bundle of Reports
-					},
+					["qg"] = 8582,	-- Kadrak
+					["qi"] = 16783,	-- Bundle of Reports
 					["coord"] = { 48.12, 5.42, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3404,10 +3378,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(6545, {	-- Warsong Runner Update
-							["providers"] = {
-								{ "n", 12863 },	-- Warsong Runner
-								{ "i", 16746 },	-- Warsong Report
-							},
+							["qg"] = 12863,	-- Warsong Runner
+							["qi"] = 16746,	-- Warsong Report
 							["coord"] = { 12.2, 34.2, ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
@@ -3419,10 +3391,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(6547, {	-- Warsong Scout Update
-							["providers"] = {
-								{ "n", 12862 },	-- Warsong Scout
-								{ "i", 16746 },	-- Warsong Report
-							},
+							["qg"] = 12862,	-- Warsong Scout
+							["qi"] = 16746,	-- Warsong Report
 							["coord"] = { 71.04, 68.22, ASHENVALE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,

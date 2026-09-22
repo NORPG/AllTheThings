@@ -86,29 +86,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					q(3365, {	-- Bring Back the Mug
 						["sourceQuest"] = 3364,	-- Scalding Mornbrew Delivery
-						["providers"] = {
-							{ "n", 836 },	-- Durnan Furcutter
-							{ "i", 10440 },	-- Nori's Mug
-						},
+						["qg"] = 836,	-- Durnan Furcutter
+						["qi"] = 10440,	-- Nori's Mug
 						["coord"] = { 28.8, 66.4, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 4,
 					}),
 					q(233, {	-- Coldridge Valley Mail Delivery (1/2)
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 2187 },	-- A Stack of Letters (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 2187,	-- A Stack of Letters (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(234, {	-- Coldridge Valley Mail Delivery (2/2)
 						["sourceQuest"] = 233,	-- Coldridge Valley Mail Delivery (1/2)
-						["providers"] = {
-							{ "n", 714 },	-- Talin Keeneye
-							{ "i", 2188 },	-- A Letter to Grelin Whitebeard (PQI!)
-						},
+						["qg"] = 714,	-- Talin Keeneye
+						["qi"] = 2188,	-- A Letter to Grelin Whitebeard (PQI!)
 						["coord"] = { 22.6, 71.4, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -119,10 +113,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					q(3107, {	-- Consecrated Rune
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9563 },	-- Consecrated Rune (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9563,	-- Consecrated Rune (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { DWARF },
 						["classes"] = { PALADIN },
@@ -146,40 +138,32 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					q(3113, {	-- Encrypted Memorandum
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9558 },	-- Encrypted Memorandum (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9558,	-- Encrypted Memorandum (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { GNOME },
 						["classes"] = { ROGUE },
 					}),
 					q(3109, {	-- Encrypted Rune
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9550 },	-- Encrypted Rune (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9550,	-- Encrypted Rune (PQI!)
 						["coord"] ={ 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { DWARF },
 						["classes"] = { ROGUE },
 					}),
 					q(3108, {	-- Etched Rune
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9566 },	-- Etched Rune (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9566,	-- Etched Rune (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { DWARF },
 						["classes"] = { HUNTER },
 					}),
 					q(3114, {	-- Glyphic Memorandum
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9573 },	-- Glyphic Memorandum (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9573,	-- Glyphic Memorandum (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { GNOME },
 						["classes"] = { MAGE },
@@ -206,19 +190,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					q(3110, {	-- Hallowed Rune
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9556 },	-- Hallowed Rune (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9556,	-- Hallowed Rune (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { DWARF },
 						["classes"] = { PRIEST },
 					}),
 					q(3364, {	-- Scalding Mornbrew Delivery
-						["providers"] = {
-							{ "n", 12738 },	-- Nori Pridedrift
-							{ "i", 10439 },	-- Durnan's Scalding Mornbrew (PQI!)
-						},
+						["qg"] = 12738,	-- Nori Pridedrift
+						["qi"] = 10439,	-- Durnan's Scalding Mornbrew (PQI!)
 						["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 4,
@@ -226,48 +206,38 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(282, {	-- Senir's Observations (1/2)
 						["sourceQuest"] = 218,	-- The Stolen Journal
 						["altQuests"] = { 287 },	-- Frostmane Hold
-						["providers"] = {
-							{ "n", 786 },	-- Grelin Whitebeard
-							{ "i", 2619 },	-- Grelin's Report (PQI!)
-						},
+						["qg"] = 786,	-- Grelin Whitebeard
+						["qi"] = 2619,	-- Grelin's Report (PQI!)
 						["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(420, {	-- Senir's Observations (2/2)
 						["sourceQuest"] = 282,	-- Senir's Observations (1/2)
 						["altQuests"] = { 287 },	-- Frostmane Hold
-						["providers"] = {
-							{ "n", 1965 },	-- Mountaineer Thalos
-							{ "i", 2619 },	-- Grelin's Report (PQI!)
-						},
+						["qg"] = 1965,	-- Mountaineer Thalos
+						["qi"] = 2619,	-- Grelin's Report (PQI!)
 						["coord"] = { 33.4, 71.8, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(3112, {	-- Simple Memorandum
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9544 },	-- Simple Memorandum (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9544,	-- Simple Memorandum (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { GNOME },
 						["classes"] = { WARRIOR },
 					}),
 					q(3106, {	-- Simple Rune
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9543 },	-- Simple Rune (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9543,	-- Simple Rune (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { DWARF },
 						["classes"] = { WARRIOR },
 					}),
 					q(2160, {	-- Supplies to Tannok
-						["providers"] = {
-							{ "n", 6782 },	-- Hands Springsprocket
-							{ "i", 7646 },	-- Crate of Inn Supplies (PQI!)
-						},
+						["qg"] = 6782,	-- Hands Springsprocket
+						["qi"] = 7646,	-- Crate of Inn Supplies (PQI!)
 						["coord"] = { 33.8, 72.2, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -275,20 +245,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["sourceQuests"] = {
 							179,	-- Dwarven Outfitters
 						},
-						["providers"] = {
-							{ "n", 658 },	-- Sten Stoutarm
-							{ "i", 9577 },	-- Tainted Memorandum (PQI!)
-						},
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 9577,	-- Tainted Memorandum (PQI!)
 						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
 						["races"] = { GNOME },
 						["classes"] = { WARLOCK },
 					}),
 					q(96628, {	-- The Adventurer [Dun Morogh]
 						["sourceQuest"] = 218,	-- The Stolen Journal
-						["providers"] = {
-							{ "n", 786 },	-- Grelin Whitebeard
-							{ "i", 2619 },	-- Grelin's Report (PQI!)
-						},
+						["qg"] = 786,	-- Grelin Whitebeard
+						["qi"] = 2619,	-- Grelin's Report (PQI!)
 						["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -557,10 +523,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(310, {	-- Bitter Rivals
-				["providers"] = {
-					{ "n", 1375 },	-- Marleth Barleybrew
-					{ "i", 2548 },	-- Barrel of Barleybrew Scalder (PQI!)
-				},
+				["qg"] = 1375,	-- Marleth Barleybrew
+				["qi"] = 2548,	-- Barrel of Barleybrew Scalder (PQI!)
 				["coord"] = { 30.2, 45.6, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 2,
@@ -670,10 +634,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(2239, {	-- Onin's Report
 				["sourceQuest"] = 2238,	-- Simple Subterfugin'
-				["providers"] = {
-					{ "n", 6886 },	-- Onin MacHammer
-					{ "i", 7715 },	-- Onin's Report (PQI!)
-				},
+				["qg"] = 6886,	-- Onin MacHammer
+				["qi"] = 7715,	-- Onin's Report (PQI!)
 				["coord"] = { 25.2, 44.4, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { ROGUE },
@@ -741,10 +703,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(320, {	-- Return to Bellowfiz
 				["sourceQuest"] = 319,	-- A Favor for Evershine
-				["providers"] = {
-					{ "n", 1374 },	-- Rejold Barleybrew
-					{ "i", 2696 },	-- Cask of Evershine (PQI!)
-				},
+				["qg"] = 1374,	-- Rejold Barleybrew
+				["qi"] = 2696,	-- Cask of Evershine (PQI!)
 				["coord"] = { 30.2, 45.8, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 2,
@@ -798,10 +758,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					415,	-- Rejold's New Brew
 					315,	-- The Perfect Stout
 				},
-				["providers"] = {
-					{ "n", 1374 },	-- Rejold Barleybrew
-					{ "i", 3085 },	-- Barrel of Shimmer Stout (PQI!)
-				},
+				["qg"] = 1374,	-- Rejold Barleybrew
+				["qi"] = 3085,	-- Barrel of Shimmer Stout (PQI!)
 				["coord"] = { 30.2, 45.8, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 8,
@@ -855,10 +813,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(414, {	-- Stout to Kadrell
 				["sourceQuest"] = 413,	-- Shimmer Stout
-				["providers"] = {
-					{ "n", 1959 },	-- Mountaineer Barleybrew
-					{ "i", 3086 },	-- Cask of Shimmer Stout (PQI!)
-				},
+				["qg"] = 1959,	-- Mountaineer Barleybrew
+				["qi"] = 3086,	-- Cask of Shimmer Stout (PQI!)
 				["coord"] = { 86.2, 48.8, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 8,
@@ -869,10 +825,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					6075,	-- The Hunter's Path [Dun Morogh]
 					6076,	-- The Hunter's Path [Stormwind City]
 				},
-				["providers"] = {
-					{ "n", 1231 },	-- Grif Wildheart <Hunter Trainer>
-					{ "i", 15911 },	-- Taming Rod (PQI!)
-				},
+				["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+				["qi"] = 15911,	-- Taming Rod (PQI!)
 				["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 				["races"] = { DWARF },
 				["classes"] = { HUNTER },
@@ -887,10 +841,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(6084, {	-- Taming the Beast (2/3)
 				["sourceQuest"] = 6064,	-- Taming the Beast (1/3)
-				["providers"] = {
-					{ "n", 1231 },	-- Grif Wildheart <Hunter Trainer>
-					{ "i", 15913 },	-- Taming Rod (PQI!)
-				},
+				["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+				["qi"] = 15913,	-- Taming Rod (PQI!)
 				["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 				["races"] = { DWARF },
 				["classes"] = { HUNTER },
@@ -905,10 +857,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(6085, {	-- Taming the Beast (3/3)
 				["sourceQuest"] = 6084,	-- Taming the Beast (2/3)
-				["providers"] = {
-					{ "n", 1231 },	-- Grif Wildheart <Hunter Trainer>
-					{ "i", 15908 },	-- Taming Rod (PQI!)
-				},
+				["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+				["qi"] = 15908,	-- Taming Rod (PQI!)
 				["coord"] = { 45.8, 53.0, MAP.DUN_MOROGH },
 				["races"] = { DWARF },
 				["classes"] = { HUNTER },
@@ -1006,10 +956,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(291, {	-- The Reports
 				["sourceQuest"] = 287,	-- Frostmane Hold
-				["providers"] = {
-					{ "n", 1252 },	-- Senir Whitebeard
-					{ "i", 2628 },	-- Senir's Report (PQI!)
-				},
+				["qg"] = 1252,	-- Senir Whitebeard
+				["qi"] = 2628,	-- Senir's Report (PQI!)
 				["coord"] = { 46.6, 53.8, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1023,10 +971,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(1654, {	-- The Test of Righteousness (2/3)
 				["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
-				["providers"] = {
-					{ "n", 6181 },	-- Jordan Stilwell
-					{ "i", 6996 },	-- Jordan's Weapon Notes (PQI!)
-				},
+				["qg"] = 6181,	-- Jordan Stilwell
+				["qi"] = 6996,	-- Jordan's Weapon Notes (PQI!)
 				["coord"] = { 52.6, 36.8, MAP.DUN_MOROGH },
 				["maps"] = { MAP.BLACKFATHOM_DEEPS, MAP.DARKSHORE, MAP.DEADMINES, MAP.LOCH_MODAN, MAP.SHADOWFANG_KEEP },
 				["races"] = ALLIANCE_ONLY,
@@ -1121,10 +1067,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["lvl"] = 16,
 			}),
 			q(400, {	-- Tools for Steelgrill
-				["providers"] = {
-					{ "n", 1872 },	-- Tharek Blackstone
-					{ "i", 2999 },	-- Steelgrill's Tools (PQI!)
-				},
+				["qg"] = 1872,	-- Tharek Blackstone
+				["qi"] = 2999,	-- Steelgrill's Tools (PQI!)
 				["coord"] = { 46.0, 51.6, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 2,

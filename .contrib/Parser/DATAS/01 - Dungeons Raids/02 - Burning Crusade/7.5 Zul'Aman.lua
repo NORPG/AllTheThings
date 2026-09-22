@@ -49,10 +49,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						},
 					}),
 					q(11130, {	-- Oooh, Shinies!
-						["providers"] = {
-							{ "n", 19227 },	-- Griftah
-							{ "i", 33010 },	-- Griftah's Note
-						},
+						["qg"] = 19227,	-- Griftah
+						["qi"] = 33010,	-- Griftah's Note
 						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
 						["isBreadcrumb"] = true,
 						-- #if BEFORE CATA
@@ -65,10 +63,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						["lvl"] = 70,
 						-- #endif
 						["sourceQuest"] = 11165,	-- A Troll Among Trolls
-						["providers"] = {
-							{ "n", 23897 },	-- Zungam
-							{ "i", 33107 },	-- Tattered Voodoo Doll
-						},
+						["qg"] = 23897,	-- Zungam
+						["qi"] = 33107,	-- Tattered Voodoo Doll
 						["coord"] = { 59.3, 36.6, ZULAMAN },
 						["groups"] = {
 							i(34256),	-- Charmed Amani Jewel

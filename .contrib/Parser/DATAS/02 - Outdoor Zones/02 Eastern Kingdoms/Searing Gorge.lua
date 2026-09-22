@@ -401,10 +401,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3201, {	-- At Last!
 					["sourceQuest"] = 3182,	-- Proof of Deed
-					["providers"] = {
-						{ "n", 8256 },	-- Curator Thorius
-						{ "i", 10022 },	-- Proof of Deed
-					},
+					["qg"] = 8256,	-- Curator Thorius
+					["qi"] = 10022,	-- Proof of Deed
 					["coord"] = { 71.4, 16.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { LOCH_MODAN },
@@ -1036,10 +1034,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3182, {	-- Proof of Deed
 					["sourceQuest"] = 3181,	-- The Horn of the Beast
-					["providers"] = {
-						{ "n", 3836 },	-- Mountaineer Pebblebitty
-						{ "i", 10005 },	-- Margol's Gigantic Horn
-					},
+					["qg"] = 3836,	-- Mountaineer Pebblebitty
+					["qi"] = 10005,	-- Margol's Gigantic Horn
 					["coord"] = { 18.2, 84.0, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

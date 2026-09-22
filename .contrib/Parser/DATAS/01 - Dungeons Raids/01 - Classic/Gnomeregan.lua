@@ -688,10 +688,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						26943,	-- Home Sweet Gnome
 						26944,	-- Exploring Gnomeregan
 					},
-					["providers"] = {
-						{ "n", 44556 },	-- Murd Doc
-						{ "i", 60680 },	-- S.A.F.E. "Parachute"
-					},
+					["qg"] = 44556,	-- Murd Doc
+					["qi"] = 60680,	-- S.A.F.E. "Parachute"
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -703,10 +701,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26941, {	-- The G-Team (2/3) [Alliance]
 					["sourceQuest"] = 26939,	-- The G-Team (1/3) [Alliance]
-					["providers"] = {
-						{ "n", 44560 },	-- B.E Barechus <S.A.F.E.>
-						{ "i", 60680 },	-- S.A.F.E. "Parachute"
-					},
+					["qg"] = 44560,	-- B.E Barechus <S.A.F.E.>
+					["qi"] = 60680,	-- S.A.F.E. "Parachute"
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -740,10 +736,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(50338, {	-- The G-Team (1/3) [Horde]
-					["providers"] = {
-						{ "n", 44556 },	-- Murd Doc
-						{ "i", 60680 },	-- S.A.F.E. "Parachute"
-					},
+					["qg"] = 44556,	-- Murd Doc
+					["qi"] = 60680,	-- S.A.F.E. "Parachute"
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -755,10 +749,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(50337, {	-- The G-Team (2/3) [Horde]
 					["sourceQuest"] = 50338,	-- The G-Team (1/3) [Horde]
-					["providers"] = {
-						{ "n", 44560 },	-- B.E Barechus <S.A.F.E.>
-						{ "i", 60680 },	-- S.A.F.E. "Parachute"
-					},
+					["qg"] = 44560,	-- B.E Barechus <S.A.F.E.>
+					["qi"] = 60680,	-- S.A.F.E. "Parachute"
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),

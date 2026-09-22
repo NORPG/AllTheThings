@@ -2904,10 +2904,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8912,	-- An Earnest Proposition [WARRIOR]
 							-- #endif
 						},
-						["providers"] = {
-							{ "n", 16013 },	-- Deliana
-							{ "i", 21985 },	-- Sealed Blood Container
-						},
+						["qg"] = 16013,	-- Deliana
+						["qi"] = 21985,	-- Sealed Blood Container
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8923, {	-- A Supernatural Device [H]
@@ -2935,10 +2933,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8920,	-- An Earnest Proposition [WARRIOR]
 							-- #endif
 						},
-						["providers"] = {
-							{ "n", 16012 },	-- Mokvar
-							{ "i", 22382 },	-- Sealed Venom Container
-						},
+						["qg"] = 16012,	-- Mokvar
+						["qi"] = 22382,	-- Sealed Venom Container
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = { TANARIS },
@@ -2946,10 +2942,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				q(8948, {	-- Anthion's Old Friend
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
-					["providers"] = {
-						{ "n", 16016 },	-- Anthion Harmon
-						{ "i", 21983 },	-- Incomplete Banner of Provocation
-					},
+					["qg"] = 16016,	-- Anthion Harmon
+					["qi"] = 21983,	-- Incomplete Banner of Provocation
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
 					["maps"] = {
 						DIRE_MAUL,

@@ -353,10 +353,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1425, {	-- Deliver the Shipment
 					["sourceQuest"] = 1398,	-- Driftwood
-					["providers"] = {
-						{ "n", 5476 },	-- Watcher Biggs
-						{ "i", 6178 },	-- Shipment to Nethergarde
-					},
+					["qg"] = 5476,	-- Watcher Biggs
+					["qi"] = 6178,	-- Shipment to Nethergarde
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -730,10 +728,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28675,	-- Hero's Call: Swamp of Sorrows!
 						28677,	-- Warchief's Command: Swamp of Sorrows!
 					},
-					["providers"] = {
-						{ "n", 45786 },	-- Trade Baron Silversnap
-						{ "i", 62795 },	-- Silversnap Swim Tonic
-					},
+					["qg"] = 45786,	-- Trade Baron Silversnap
+					["qi"] = 62795,	-- Silversnap Swim Tonic
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -1027,10 +1023,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27916, {	-- Ruag's Report
 					["sourceQuest"] = 27911,	-- With Dying Breath
-					["providers"] = {
-						{ "n", 47041 },	-- Neeka Bloodscar
-						{ "i", 62748 },	-- Splinterspear Report
-					},
+					["qg"] = 47041,	-- Neeka Bloodscar
+					["qi"] = 62748,	-- Splinterspear Report
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1119,10 +1113,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1429, {	-- The Atal'ai Exile
 					["sourceQuest"] = 1424,	-- Pool of Tears [Horde]
-					["providers"] = {
-						{ "n", 1443 },	-- Fel'zerul
-						{ "i", 6193 },	-- Bundle of Atal'ai Artifacts
-					},
+					["qg"] = 1443,	-- Fel'zerul
+					["qi"] = 6193,	-- Bundle of Atal'ai Artifacts
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
@@ -1197,10 +1189,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27840,	-- Draenethyst Crystals
 						27860,	-- The Lost Ones
 					},
-					["providers"] = {
-						{ "n", 18221 },	-- Holaaru
-						{ "i", 62750 },	-- Draenethyst Crystals
-					},
+					["qg"] = 18221,	-- Holaaru
+					["qi"] = 62750,	-- Draenethyst Crystals
 					["coord"] = { 69.9, 36.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

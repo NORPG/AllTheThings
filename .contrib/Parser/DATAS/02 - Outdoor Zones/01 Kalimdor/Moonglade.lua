@@ -410,10 +410,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10978, {	-- Return to Morthis Whisperwing
 					["sourceQuest"] = 10965,	-- No Mere Dream
-					["providers"] = {
-						{ "n", 22837 },	-- Dreamwarden Lurosa
-						{ "i", 32074 },	-- Relics of Aviana
-					},
+					["qg"] = 22837,	-- Dreamwarden Lurosa
+					["qi"] = 32074,	-- Relics of Aviana
 					["coord"] = { 72.5, 63.3, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { ZANGARMARSH },
@@ -664,10 +662,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1123,	-- Rabine Saturna [H]
 						6762,	-- Rabine Saturna [A]
 					},
-					["providers"] = {
-						{ "n", 11801 },	-- Rabine Saturna
-						{ "i", 17355 },	-- Rabine's Letter
-					},
+					["qg"] = 11801,	-- Rabine Saturna
+					["qi"] = 17355,	-- Rabine's Letter
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,

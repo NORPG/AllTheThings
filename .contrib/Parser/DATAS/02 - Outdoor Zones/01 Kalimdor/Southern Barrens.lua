@@ -466,10 +466,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(906, {	-- Betrayal from Within (2/2)
 					["sourceQuest"] = 879,	-- Betrayal from Within (1/2)
-					["providers"] = {
-						{ "n", 3430 },	-- Mangletooth
-						{ "i", 5072 },	-- Lok's Skull
-					},
+					["qg"] = 3430,	-- Mangletooth
+					["qi"] = 5072,	-- Lok's Skull
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -718,10 +716,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25044, {	-- Diplomacy By Another Means
 					["sourceQuest"] = 25022,	-- A Failure to Communicate
-					["providers"] = {
-						{ "n", 38986 },	-- Ambassador Gaines
-						{ "i", 49782 },	-- Horn of Challenge (QI!) not prov
-					},
+					["qg"] = 38986,	-- Ambassador Gaines
+					["qi"] = 49782,	-- Horn of Challenge (QI!) not prov
 					["coord"] = { 50.0, 49.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -745,10 +741,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1515, {	-- Dogran's Captivity
 					["sourceQuest"] = 1511,	-- Ken'zigla's Draught
-					["providers"] = {
-						{ "n", 5911 },	-- Grunt Logmar
-						{ "i", 6624 },	-- Ken'zigla's Draught
-					},
+					["qg"] = 5911,	-- Grunt Logmar
+					["qi"] = 6624,	-- Ken'zigla's Draught
 					["coord"] = { 44.6, 59.2, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
@@ -1219,10 +1213,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24948, {	-- Lifting the Siege
 					["sourceQuest"] = 24943,	-- Re-Take the Courtyard
-					["providers"] = {
-						{ "n", 38620 },	-- Thomas Paxton
-						{ "i", 52017 },	-- Paxton's Torch
-					},
+					["qg"] = 38620,	-- Thomas Paxton
+					["qi"] = 52017,	-- Paxton's Torch
 					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1265,10 +1257,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1512, {	-- Love's Gift
 					["sourceQuest"] = 1515,	-- Dogran's Captivity
-					["providers"] = {
-						{ "n", 5908 },	-- Grunt Dogran
-						{ "i", 6625 },	-- Dirt-caked Pendant
-					},
+					["qg"] = 5908,	-- Grunt Dogran
+					["qi"] = 6625,	-- Dirt-caked Pendant
 					["coord"] = { 43.2, 47.8, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
@@ -1591,10 +1581,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25087, {	-- Report to Twinbraid
 					["sourceQuest"] = 25081,	-- Claim the Battlescar
-					["providers"] = {
-						{ "n", 39083 },	-- Commander Roberts
-						{ "i", 52324 },	-- Frontline Report
-					},
+					["qg"] = 39083,	-- Commander Roberts
+					["qi"] = 52324,	-- Frontline Report
 					["coord"] = { 49.1, 66.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1821,10 +1809,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24654, {	-- Silithissues
-					["providers"] = {
-						{ "n", 37910 },	-- Crawgol
-						{ "i", 50128 },	-- Bucket of Burning Pitch (QI!) not prov
-					},
+					["qg"] = 37910,	-- Crawgol
+					["qi"] = 50128,	-- Bucket of Burning Pitch (QI!) not prov
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1879,10 +1865,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24534, {	-- Speaking Their Language
 					["sourceQuest"] = 24529,	-- Bad to Worse
-					["providers"] = {
-						{ "n", 11857 },	-- Makaba Flathoof
-						{ "i", 49782 },	-- Horn of Challenge (QI!) not prov
-					},
+					["qg"] = 11857,	-- Makaba Flathoof
+					["qi"] = 49782,	-- Horn of Challenge (QI!) not prov
 					["coord"] = { 44.2, 33.6, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2316,10 +2300,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(25082, {	-- Working the Bugs Out
-					["providers"] = {
-						{ "n", 39085 },	-- Logan Talonstrike
-						{ "i", 50128 },	-- Bucket of Burning Pitch (QI!) not prov
-					},
+					["qg"] = 39085,	-- Logan Talonstrike
+					["qi"] = 50128,	-- Bucket of Burning Pitch (QI!) not prov
 					["coord"] = { 49.2, 67.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2334,10 +2316,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25022,	-- A Failure to Communicate
 						25015,	-- Make 'Em Squeal
 					},
-					["providers"] = {
-						{ "n", 38871 },	-- Corporal Teegan
-						{ "i", 52073 },	-- Bramblestaff
-					},
+					["qg"] = 38871,	-- Corporal Teegan
+					["qi"] = 52073,	-- Bramblestaff
 					["coord"] = { 56.1, 42.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

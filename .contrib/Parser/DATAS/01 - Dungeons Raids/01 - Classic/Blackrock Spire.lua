@@ -80,10 +80,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(6601, {	-- Ascension...
 				["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
-				["providers"] = {
-					{ "n", 10321 },	-- Emberstrife
-					{ "i", 16888 },	-- Dull Drakefire Amulet
-				},
+				["qg"] = 10321,	-- Emberstrife
+				["qi"] = 16888,	-- Dull Drakefire Amulet
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DESOLACE },
@@ -109,10 +107,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			},
 			q(4983, {	-- Bijou's Reconnaissance Report
 				["sourceQuest"] = 4982,	-- Bijou's Belongings (H)
-				["providers"] = {
-					{ "n", 10257 },	-- Bijou
-					{ "i", 12652 },	-- Bijou's Reconnaissance Report
-				},
+				["qg"] = 10257,	-- Bijou
+				["qi"] = 12652,	-- Bijou's Reconnaissance Report
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BADLANDS },
 				["races"] = HORDE_ONLY,
@@ -260,10 +256,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4765, {	-- Delivery to Ridgewell
 				["sourceQuest"] = 4764,	-- Doomrigger's Clasp
-				["providers"] = {
-					{ "n", 9565 },	-- Mayara Brightwing
-					{ "i", 12437 },	-- Ridgewell's Crate
-				},
+				["qg"] = 9565,	-- Mayara Brightwing
+				["qi"] = 12437,	-- Ridgewell's Crate
 				["coord"] = { 84.8, 69.0, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -373,10 +367,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(6570, {	-- Emberstrife
 				["sourceQuest"] = 6569,	-- Oculus Illusions
-				["providers"] = {
-					{ "n", 11872 },	-- Myranda the Hag
-					{ "i", 16787 },	-- Amulet of Draconic Subversion
-				},
+				["qg"] = 11872,	-- Myranda the Hag
+				["qi"] = 16787,	-- Amulet of Draconic Subversion
 				["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DUSTWALLOW_MARSH },
@@ -654,10 +646,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5126, {	-- Lorax's Tale
 				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
-				["providers"] = {
-					{ "n", 10918 },	-- Lorax
-					{ "i", 12806 },	-- Unforged Rune Covered Breastplate
-				},
+				["qg"] = 10918,	-- Lorax
+				["qi"] = 12806,	-- Unforged Rune Covered Breastplate
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] = BLACKSMITHING,
@@ -710,10 +700,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5002, {	-- Message to Maxwell
 				["sourceQuest"] = 5001,	-- Bijou's Belongings (A)
-				["providers"] = {
-					{ "n", 10257 },	-- Bijou
-					{ "i", 12770 },	-- Bijou's Information
-				},
+				["qg"] = 10257,	-- Bijou
+				["qi"] = 12770,	-- Bijou's Information
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
@@ -760,10 +748,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
 				-- #endif
-				["providers"] = {
-					{ "n", 10776 },	-- Pip Quickwit
-					{ "i", 12710 },	-- Glowing Hunk of the Beast's Flesh
-				},
+				["qg"] = 10776,	-- Pip Quickwit
+				["qi"] = 12710,	-- Glowing Hunk of the Beast's Flesh
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["cr"] = 10430,	-- The Beast
@@ -996,10 +982,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
 				-- #endif
-				["providers"] = {
-					{ "n", 10740 },	-- Awbee
-					{ "i", 12923 },	-- Awbee's Scale
-				},
+				["qg"] = 10740,	-- Awbee
+				["qi"] = 12923,	-- Awbee's Scale
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["lvl"] = 57,
@@ -1095,10 +1079,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(6568, {	-- The Testament of Rexxar(Classic)/Mistress of Deception(TBC)
 				["sourceQuest"] = 6567,	-- The Champion of the Horde
-				["providers"] = {
-					{ "n", 10182 },	-- Rexxar <Champion of the Horde>/Rokaro <Champion of the Horde>
-					{ "i", 16785 },	-- Rexxar's Testament/Rokaro's Letter
-				},
+				["qg"] = 10182,	-- Rexxar <Champion of the Horde>/Rokaro <Champion of the Horde>
+				["qi"] = 16785,	-- Rexxar's Testament/Rokaro's Letter
 				-- #if BEFORE TBC
 				["coords"] = {
 					{ 54.0, 3.2, DESOLACE },
@@ -1178,10 +1160,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4867, {	-- Urok Doomhowl
-				["providers"] = {
-					{ "n", 10799 },	-- Warosh <The Cursed>
-					{ "i", 12730 },	-- Warosh's Scroll
-				},
+				["qg"] = 10799,	-- Warosh <The Cursed>
+				["qi"] = 12730,	-- Warosh's Scroll
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
@@ -1205,10 +1185,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
 				-- #endif
-				["providers"] = {
-					{ "n", 9077 },	-- Warlord Goretooth <Kargath Expeditionary Force>
-					{ "i", 12563 },	-- Warlord Goretooth's Command
-				},
+				["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
+				["qi"] = 12563,	-- Warlord Goretooth's Command
 				["coord"] = { 5.8, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,

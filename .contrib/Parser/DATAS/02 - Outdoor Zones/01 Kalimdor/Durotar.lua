@@ -1205,10 +1205,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1517, {	-- Call of Earth (2/3)
 							["sourceQuest"] = 1516,	-- Call of Earth (1/3)
 							["altQuests"] = { 1520 },	-- Call to Earth (2/3 Mulgore)
-							["providers"] = {
-								{ "n", 5887 },	-- Canaga Earthcaller
-								{ "i", 6635 },	-- Earth Sapta
-							},
+							["qg"] = 5887,	-- Canaga Earthcaller
+							["qi"] = 6635,	-- Earth Sapta
 							["coord"] = { 42.4, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -1219,10 +1217,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 1517,	-- Call of Earth (2/3)
 							["altQuests"] = { 1521 },	-- Call to Earth (3/3 Mulgore)
 							["qg"] = 5891,	-- Minor Manifestation of Earth
-							["providers"] = {
-								{ "n", 5891 },	-- Minor Manifestation of Earth
-								{ "i", 6656 },	-- Rough Quartz
-							},
+							["qg"] = 5891,	-- Minor Manifestation of Earth
+							["qi"] = 6656,	-- Rough Quartz
 							["coord"] = { 44.0, 76.0, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -1321,10 +1317,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3088, {	-- Encrypted Parchment
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9560 },	-- Encrypted Parchment
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9560,	-- Encrypted Parchment
 							-- #if BEFORE MOP
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
@@ -1334,10 +1328,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3083, {	-- Encrypted Tablet
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9554 },	-- Encrypted Tablet
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9554,	-- Encrypted Tablet
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
@@ -1345,10 +1337,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3087, {	-- Etched Parchment
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9553 },	-- Etched Parchment
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9553,	-- Etched Parchment
 							-- #if BEFORE MOP
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
@@ -1358,10 +1348,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3082, {	-- Etched Tablet
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9564 },	-- Etched Tablet
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9564,	-- Etched Tablet
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
@@ -1415,10 +1403,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(25138, {	-- Glyphic Parchment
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 52513 },	-- Glyphic Parchment
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 52513,	-- Glyphic Parchment
 							-- #if BEFORE MOP
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
@@ -1428,10 +1414,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3086, {	-- Glyphic Tablet
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9575 },	-- Glyphic Tablet
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9575,	-- Glyphic Tablet
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
@@ -1439,10 +1423,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3085, {	-- Hallowed Tablet
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9561 },	-- Hallowed Tablet
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9561,	-- Hallowed Tablet
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
@@ -1650,10 +1632,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						q(3089, {	-- Rune-Inscribed Parchment
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9568 },	-- Rune-Inscribed Parchment
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9568,	-- Rune-Inscribed Parchment
 							-- #if BEFORE MOP
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
@@ -1663,10 +1643,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3084, {	-- Rune-Inscribed Tablet
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9562 },	-- Rune-Inscribed Tablet
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9562,	-- Rune-Inscribed Tablet
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
@@ -1721,10 +1699,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(2383, {	-- Simple Parchment
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 12635 },	-- Simple Parchment
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 12635,	-- Simple Parchment
 							-- #if BEFORE MOP
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							-- #endif
@@ -1734,10 +1710,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(3065, {	-- Simple Tablet
 							["sourceQuest"] = 788,	-- Cutting Teeth
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 6488 },	-- Simple Tablet
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 6488,	-- Simple Tablet
 							["coord"] = { 42.0, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { TROLL },
@@ -1745,10 +1719,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77643, {	-- Spell Research
-							["providers"] = {
-								{ "n", 5884 },	-- Mai'ah <Mage Trainer>
-								{ "i", 211809 },	-- Comprehension Primer
-							},
+							["qg"] = 5884,	-- Mai'ah <Mage Trainer>
+							["qi"] = 211809,	-- Comprehension Primer
 							["coord"] = { 42.4, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_2_0_1 },
 							["races"] = { TROLL },
@@ -1847,10 +1819,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(3090, {	-- Tainted Parchment
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["qg"] = 3143,	-- Gornek
-							["providers"] = {
-								{ "n", 3143 },	-- Gornek
-								{ "i", 9579 },	-- Tainted Parchment
-							},
+							["qg"] = 3143,	-- Gornek
+							["qi"] = 9579,	-- Tainted Parchment
 							["coords"] = {
 								-- #if AFTER CATA
 								{ 43.2, 68.2, DUROTAR },
@@ -2296,10 +2266,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(QUESTS, {
 				q(2161, {	-- A Peon's Burden
-					["providers"] = {
-						{ "n", 6786 },	-- Ukor
-						{ "i", 7629 },	-- Ukor's Burden
-					},
+					["qg"] = 6786,	-- Ukor
+					["qi"] = 7629,	-- Ukor's Burden
 					["coord"] = { 52.0, 68.2, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2345,10 +2313,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25263, {	-- Arnak Fireblade
 					["sourceQuest"] = 25262,	-- Skull Rock
-					["providers"] = {
-						{ "n", 3208 },	-- Margoz
-						{ "i", 6658 },	-- Example Collar
-					},
+					["qg"] = 3208,	-- Margoz
+					["qi"] = 6658,	-- Example Collar
 					["coord"] = { 56.4, 19.8, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -2498,10 +2464,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(840, {	-- Conscript of the Horde
-					["providers"] = {
-						{ "n", 3336 },	-- Takrin Pathseeker
-						{ "i", 4992 },	-- Recruitment Letter
-					},
+					["qg"] = 3336,	-- Takrin Pathseeker
+					["qi"] = 4992,	-- Recruitment Letter
 					["coord"] = { 50.8, 43.5, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2509,10 +2473,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(842, {	-- Crossroads Conscription
 					["sourceQuest"] = 840,	-- Conscript of the Horde
-					["providers"] = {
-						{ "n", 3337 },	-- Kargal Battlescar
-						{ "i", 4995 },	-- Signed Recruitment Letter
-					},
+					["qg"] = 3337,	-- Kargal Battlescar
+					["qi"] = 4995,	-- Signed Recruitment Letter
 					["coord"] = { 62.26, 19.37, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2573,10 +2535,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(6385, {	-- Doras the Wind Rider Master
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
-					["providers"] = {
-						{ "n", 6929 },	-- Innkeeper Gryshka
-						{ "i", 16307 },	-- Gryshka's Letter
-					},
+					["qg"] = 6929,	-- Innkeeper Gryshka
+					["qi"] = 16307,	-- Gryshka's Letter
 					["coord"] = { 53.5, 78.7, ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
@@ -3018,10 +2978,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER CATA
 				q(6365, {	-- Meats to Orgrimmar
-					["providers"] = {
-						{ "n", 3881 },	-- Grimtak
-						{ "i", 16306 },	-- Grimtak's Meats
-					},
+					["qg"] = 3881,	-- Grimtak
+					["qi"] = 16306,	-- Grimtak's Meats
 					["coord"] = { 50.7, 42.8, DUROTAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
@@ -3125,10 +3083,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(829, {	-- Neeru Fireblade
 					["sourceQuest"] = 827,	-- Skull Rock
-					["providers"] = {
-						{ "n", 3208 },	-- Margoz
-						{ "i", 6658 },	-- Example Collar
-					},
+					["qg"] = 3208,	-- Margoz
+					["qi"] = 6658,	-- Example Collar
 					["coord"] = { 56.4, 20.0, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3245,10 +3201,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26806, {	-- Reports to Orgrimmar
 					["sourceQuest"] = 26804,	-- Flight to Razor Hill
-					["providers"] = {
-						{ "n", 3139 },	-- Gar'Thok
-						{ "i", 60370 },	-- Gar'Thok's Reports
-					},
+					["qg"] = 3139,	-- Gar'Thok
+					["qi"] = 60370,	-- Gar'Thok's Reports
 					["coord"] = { 51.8, 43.4, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
@@ -3256,10 +3210,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26807, {	-- Return to Eitrigg
 					["sourceQuest"] = 26806,	-- Reports to Orgrimmar
-					["providers"] = {
-						{ "n", 41140 },	-- Burok
-						{ "i", 60370 },	-- Gar'Thok's Reports
-					},
+					["qg"] = 41140,	-- Burok
+					["qi"] = 60370,	-- Gar'Thok's Reports
 					["coord"] = { 53.0, 43.6, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
@@ -3268,19 +3220,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(6386, {	-- Return to Razor Hill
 					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
-					["providers"] = {
-						{ "n", 3310 },	-- Doras
-						{ "i", 16307 },	-- Gryshka's Letter
-					},
+					["qg"] = 3310,	-- Doras
+					["qi"] = 16307,	-- Gryshka's Letter
 					["coord"] = { 49.5, 59.2, ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(6384, {	-- Ride to Orgrimmar
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
-					["providers"] = {
-						{ "n", 41140 },	-- Burok
-						{ "i", 16306 },	-- Grimtak's Meats
-					},
+					["qg"] = 41140,	-- Burok
+					["qi"] = 16306,	-- Grimtak's Meats
 					["coord"] = { 53.0, 43.6, DUROTAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
@@ -3564,10 +3512,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(831, {	-- The Admiral's Orders (2/2)
 					["sourceQuest"] = 830,	-- The Admiral's Orders (1/2)
-					["providers"] = {
-						{ "n", 3139 },	-- Gar'Thok
-						{ "i", 4883 },	-- Admiral Proudmoore's Orders
-					},
+					["qg"] = 3139,	-- Gar'Thok
+					["qi"] = 4883,	-- Admiral Proudmoore's Orders
 					["coord"] = { 52.0, 43.4, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

@@ -336,10 +336,8 @@ root(ROOTS.Zones, {
 					}),
 					q(12704, {	-- Appeasing the Great Rain Stone
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["providers"] = {
-							{ "n", 28027 },	-- High-Oracle Soo-say
-							{ "i", 38622 },	-- Lafoo's Bug Bag
-						},
+						["qg"] = 28027,	-- High-Oracle Soo-say
+						["qi"] = 38622,	-- Lafoo's Bug Bag
 						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.

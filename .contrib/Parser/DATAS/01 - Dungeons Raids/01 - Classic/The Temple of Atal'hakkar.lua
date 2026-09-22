@@ -563,10 +563,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				q(4146, {	-- Zapper Fuel
 					["sourceQuest"] = 4147,	-- Marvon's Workshop
-					["providers"] = {
-						{ "n", 8496 },	-- Liv Rizzlefix <Workshop Assistant>
-						{ "i", 11319 },	-- Unloaded Zapper
-					},
+					["qg"] = 8496,	-- Liv Rizzlefix <Workshop Assistant>
+					["qi"] = 11319,	-- Unloaded Zapper
 					["coord"] = { 62.5, 38.7, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

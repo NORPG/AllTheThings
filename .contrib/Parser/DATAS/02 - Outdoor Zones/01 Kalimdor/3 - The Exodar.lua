@@ -181,10 +181,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9554, {	-- Call of Air (4/4)
 					["sourceQuest"] = 9553,	-- Call of Air (3/4)
-					["providers"] = {
-						{ "n", 17435 },	-- Susurrus
-						{ "i", 23843 },	-- Whorl of Air
-					},
+					["qg"] = 17435,	-- Susurrus
+					["qi"] = 23843,	-- Whorl of Air
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
 					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },

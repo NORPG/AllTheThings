@@ -92,10 +92,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								9824,	-- Arcane Disturbances
 								9825,	-- Restless Activity
 							},
-							["providers"] = {
-								{ "n", 17613 },	-- Archmage Alturus
-								{ "i", 24482 },	-- Alturus's Report
-							},
+							["qg"] = 17613,	-- Archmage Alturus
+							["qi"] = 24482,	-- Alturus's Report
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 68,
 						}),
@@ -254,10 +252,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}, {	-- Honored
 						q(9631, {	-- A Colleague's Aid
 							["sourceQuest"] = 9680,	-- Digging Up the Past
-							["providers"] = {
-								{ "n", 17613 },	-- Archmage Alturus
-								{ "i", 24152 },	-- Charred Bone Fragment
-							},
+							["qg"] = 17613,	-- Archmage Alturus
+							["qi"] = 24152,	-- Charred Bone Fragment
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["maps"] = { NETHERSTORM },
 							["lvl"] = 70,

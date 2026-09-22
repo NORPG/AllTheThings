@@ -1025,10 +1025,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9794, {	-- No Time for Curiosity
-						["providers"] = {
-							{ "n", 18019 },	-- Timothy Daniels
-							{ "i", 26048 },	-- Letter to Kialon
-						},
+						["qg"] = 18019,	-- Timothy Daniels
+						["qi"] = 26048,	-- Letter to Kialon
 						["coord"] = { 41.2, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1145,10 +1143,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9775, {	-- Report to Shadow Hunter Denjai
-						["providers"] = {
-							{ "n", 18011 },	-- Zurai
-							{ "i", 24382 },	-- Zurai's Report
-						},
+						["qg"] = 18011,	-- Zurai
+						["qi"] = 24382,	-- Zurai's Report
 						["coord"] = { 85.3, 54.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -1251,10 +1247,8 @@ root(ROOTS.Zones, {
 						-- #if AFTER 7.3.5.25632
 						["sourceQuest"] = 50131,	-- An Outside Perspective
 						-- #endif
-						["providers"] = {
-							{ "n", 17923 },	-- Fahssn
-							{ "i", 25491 },	-- Salvaged Spore Sacs
-						},
+						["qg"] = 17923,	-- Fahssn
+						["qi"] = 25491,	-- Salvaged Spore Sacs
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
 						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -1656,10 +1650,8 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10964, {	-- Waking the Sleeper
 						["sourceQuest"] = 10961,	-- The Ward of Wakening
-						["providers"] = {
-							{ "n", 22832 },	-- Morthis Whisperwing <Druid of the Talon>
-							{ "i", 31953 },	-- Ward of Waking (Provided)
-						},
+						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
+						["qi"] = 31953,	-- Ward of Waking (Provided)
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
 						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },

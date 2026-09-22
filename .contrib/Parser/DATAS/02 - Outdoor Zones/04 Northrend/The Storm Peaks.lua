@@ -485,10 +485,8 @@ root(ROOTS.Zones, {
 					}),
 					q(12976, {	-- A Monument to the Fallen
 						["sourceQuest"] = 12975,	-- In Memoriam
-						["providers"] = {
-							{ "n", 30105 },	-- King Jokkum
-							{ "i", 42163 },	-- Horn Fragments
-						},
+						["qg"] = 30105,	-- King Jokkum
+						["qi"] = 42163,	-- Horn Fragments
 						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
 					}),
 					q(13009, {	-- A New Beginning

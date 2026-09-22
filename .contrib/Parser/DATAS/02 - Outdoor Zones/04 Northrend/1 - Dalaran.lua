@@ -1652,10 +1652,8 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return
-						["providers"] = {
-							{ "n", 36506 },	-- Daros Moonlance <The Highborne>
-							{ "i", 49335 },	-- Daros' Journal
-						},
+						["qg"] = 36506,	-- Daros Moonlance <The Highborne>
+						["qi"] = 49335,	-- Daros' Journal
 						["coord"] = { 36.4, 61.0, NORTHREND_DALARAN },
 						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
 						["maps"] = { DARNASSUS },
@@ -1676,10 +1674,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, q(13986, {	-- An Injured Colleague
-						["providers"] = {
-							{ "n", 35471 },	-- Sorn Proudmane
-							{ "i", 46775 },	-- Battered Tribal Shield
-						},
+						["qg"] = 35471,	-- Sorn Proudmane
+						["qi"] = 46775,	-- Battered Tribal Shield
 						["coord"] = { 60.2, 26.6, NORTHREND_DALARAN },
 						["timeline"] = { REMOVED_4_0_3 },
 						["maps"] = { THUNDER_BLUFF },

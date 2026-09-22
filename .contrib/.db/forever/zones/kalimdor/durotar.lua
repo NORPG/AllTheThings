@@ -198,10 +198,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					}),
 					q(3084, {	-- Rune-Inscribed Tablet
 						["sourceQuest"] = 788,	-- Cutting Teeth
-						["providers"] = {
-							{ "n", 3143 },	-- Gornek
-							{ "i", 9562 },	-- Rune-Inscribed Tablet
-						},
+						["qg"] = 3143,	-- Gornek
+						["qi"] = 9562,	-- Rune-Inscribed Tablet
 						["coord"] = { 42.0, 68.4, MAP.DUROTAR },
 						["races"] = { TROLL },
 						["classes"] = { SHAMAN },
@@ -389,10 +387,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 		}),
 		n(QUESTS, {
 			q(2161, {	-- A Peon's Burden
-				["providers"] = {
-					{ "n", 6786 },	-- Ukor
-					{ "i", 7629 },	-- Ukor's Burden
-				},
+				["qg"] = 6786,	-- Ukor
+				["qi"] = 7629,	-- Ukor's Burden
 				["coord"] = { 52.0, 68.2, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
@@ -485,10 +481,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(840, {	-- Conscript of the Horde
-				["providers"] = {
-					{ "n", 3336 },	-- Takrin Pathseeker
-					{ "i", 4992 },	-- Recruitment Letter
-				},
+				["qg"] = 3336,	-- Takrin Pathseeker
+				["qi"] = 4992,	-- Recruitment Letter
 				["coord"] = { 50.8, 43.5, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
@@ -496,10 +490,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(842, {	-- Crossroads Conscription
 				["sourceQuest"] = 840,	-- Conscript of the Horde
-				["providers"] = {
-					{ "n", 3337 },	-- Kargal Battlescar
-					{ "i", 4995 },	-- Signed Recruitment Letter
-				},
+				["qg"] = 3337,	-- Kargal Battlescar
+				["qi"] = 4995,	-- Signed Recruitment Letter
 				["coord"] = { 62.26, 19.37, MAP.THE_BARRENS },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
@@ -696,10 +688,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(829, {	-- Neeru Fireblade
 				["sourceQuest"] = 827,	-- Skull Rock
-				["providers"] = {
-					{ "n", 3208 },	-- Margoz
-					{ "i", 6658 },	-- Example Collar
-				},
+				["qg"] = 3208,	-- Margoz
+				["qi"] = 6658,	-- Example Collar
 				["coord"] = { 56.4, 20.0, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
@@ -862,10 +852,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(831, {	-- The Admiral's Orders (2/2)
 				["sourceQuest"] = 830,	-- The Admiral's Orders (1/2)
-				["providers"] = {
-					{ "n", 3139 },	-- Gar'Thok
-					{ "i", 4883 },	-- Admiral Proudmoore's Orders
-				},
+				["qg"] = 3139,	-- Gar'Thok
+				["qi"] = 4883,	-- Admiral Proudmoore's Orders
 				["coord"] = { 52.0, 43.4, MAP.DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),

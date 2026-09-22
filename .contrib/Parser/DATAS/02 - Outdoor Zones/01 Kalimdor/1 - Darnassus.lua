@@ -221,10 +221,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				q(6342, {	-- An Unexpected Gift [CATA+] / Flight to Auberdine
 					["sourceQuest"] = 6341,	-- To Darnassus [CATA+] / The Bounty of Teldrassil
-					["providers"] = {
-						{ "n", 7316 },	-- Sister Aquinne
-						{ "i", 16262 },	-- Sister Aquinne's Note
-					},
+					["qg"] = 7316,	-- Sister Aquinne
+					["qi"] = 16262,	-- Sister Aquinne's Note
 					["coord"] = { 36.0, 53.4, DARNASSUS },
 					["races"] = { NIGHTELF },
 				}),
@@ -316,10 +314,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(4510, {	-- Calm Before the Storm (2/2)
 					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
-					["providers"] = {
-						{ "n", 7740 },	-- Gracina Spiritmight
-						{ "i", 11843 },	-- Bank Voucher
-					},
+					["qg"] = 7740,	-- Gracina Spiritmight
+					["qi"] = 11843,	-- Bank Voucher
 					["coord"] = { 42.0, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -434,10 +430,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(952, {	-- Grove of the Ancients
 					["sourceQuest"] = 940,	-- Teldrassil
-					["providers"] = {
-						{ "n", 3516 },	-- Arch Druid Fandral Staghelm
-						{ "i", 5390 },	-- Fandral's Message
-					},
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
+					["qi"] = 5390,	-- Fandral's Message
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -544,10 +538,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3781, {	-- Morrowgrain Research (1/2)
 					["sourceQuest"] = 3764,	-- Un'Goro Soil
-					["providers"] = {
-						{ "n", 3516 },	-- Arch Druid Fandral Staghelm
-						{ "i", 11103 },	-- Seed Voucher
-					},
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
+					["qi"] = 11103,	-- Seed Voucher
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -738,10 +730,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(1692, {	-- Smith Mathiel
 					["sourceQuest"] = 1686,	-- The Shade of Elura
-					["providers"] = {
-						{ "n", 4088 },	-- Elanaria
-						{ "i", 6812 },	-- Case of Elunite
-					},
+					["qg"] = 4088,	-- Elanaria
+					["qi"] = 6812,	-- Case of Elunite
 					["coord"] = { 57.4, 34.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -891,10 +881,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(942, {	-- The Absent Minded Prospector (4/5)
 					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
-					["providers"] = {
-						{ "n", 2912 },	-- Chief Archaeologist Greywhisker
-						{ "i", 4654 },	-- Mysterious Fossil
-					},
+					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
+					["qi"] = 4654,	-- Mysterious Fossil
 					["coord"] = { 31.2, 84.2, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },

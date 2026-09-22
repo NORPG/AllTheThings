@@ -214,10 +214,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8287, {	-- A Terrible Purpose
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
-					["providers"] = {
-						{ "n", 15194 },	-- Hermit Ortell
-						{ "i", 20405 },	-- Decoded Tablet Transcription
-					},
+					["qg"] = 15194,	-- Hermit Ortell
+					["qi"] = 20405,	-- Decoded Tablet Transcription
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
@@ -784,10 +782,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER 4.1.0
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 					-- #endif
-					["providers"] = {
-						{ "n", 15181 },	-- Commander Mar'alith
-						{ "i", 68032 },	-- Mar'alith's Speaking Shard
-					},
+					["qg"] = 15181,	-- Commander Mar'alith
+					["qi"] = 68032,	-- Mar'alith's Speaking Shard
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.2, 32.5, SILITHUS },
@@ -1021,10 +1017,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8309, {	-- Glyph Chasing
 					["sourceQuest"] = 8304,	-- Dearest Natalia
-					["providers"] = {
-						{ "n", 15170 },	-- Rutgar Glyphshaper
-						{ "i", 20453 },	-- Geologist's Transcription Kit
-					},
+					["qg"] = 15170,	-- Rutgar Glyphshaper
+					["qi"] = 20453,	-- Geologist's Transcription Kit
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.4, 79.1, SILITHUS },
@@ -1772,10 +1766,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8285, {	-- The Deserter
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
-					["providers"] = {
-						{ "n", 15183 },	-- Geologist Larksbane
-						{ "i", 20401 },	-- Restored Twilight Tablet
-					},
+					["qg"] = 15183,	-- Geologist Larksbane
+					["qi"] = 20401,	-- Restored Twilight Tablet
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 35.3, SILITHUS },
@@ -2069,10 +2061,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(6844, {	-- Umber, Archivist
 					["sourceQuest"] = 1126,	-- Hive in the Tower
-					["providers"] = {
-						{ "n", 13220 },	-- Layo Starstrike
-						{ "i", 17346 },	-- Encrusted Silithid Object
-					},
+					["qg"] = 13220,	-- Layo Starstrike
+					["qi"] = 17346,	-- Encrusted Silithid Object
 					["coord"] = { 81.8, 18.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MOONGLADE },
@@ -2113,10 +2103,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						8310,	-- Breaking the Code
 						8309,	-- Glyph Chasing
 					},
-					["providers"] = {
-						{ "n", 15170 },	-- Rutgar Glyphshaper
-						{ "i", 20463 },	-- Glyphed Crystal Prism
-					},
+					["qg"] = 15170,	-- Rutgar Glyphshaper
+					["qi"] = 20463,	-- Glyphed Crystal Prism
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.4, 79.1, SILITHUS },

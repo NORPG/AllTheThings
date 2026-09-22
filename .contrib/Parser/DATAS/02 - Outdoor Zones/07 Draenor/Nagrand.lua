@@ -209,34 +209,26 @@ root(ROOTS.Zones, {
 									["repeatable"] = true,
 								}),
 								q(37210, {	-- Aogexon's Fang
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118654 },	-- Aogexon's Fang
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118654,	-- Aogexon's Fang
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37211, {	-- Bergruu's Horn
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118655 },	-- Bergruu's Horn
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118655,	-- Bergruu's Horn
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37221, {	-- Dekorhan's Tusk
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118656 },	-- Dekorhan's Tusk
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118656,	-- Dekorhan's Tusk
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37222, {	-- Direhoof's Hide
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118657 },	-- Direhoof's Hide
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118657,	-- Direhoof's Hide
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
@@ -247,42 +239,32 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(37223, {	-- Gagrog's Skull
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118658 },	-- Gagrog's Skull
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118658,	-- Gagrog's Skull
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37224, {	-- Mu'gra's Head
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118659 },	-- Mu'gra's Head
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118659,	-- Mu'gra's Head
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37225, {	-- Thek'talon's Talon
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118660 },	-- Thek'talon's Talon
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118660,	-- Thek'talon's Talon
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37520, {	-- Vileclaw's Claw
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 120172 },	-- Vileclaw's Claw
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 120172,	-- Vileclaw's Claw
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),
 								q(37226, {	-- Xelganak's Stinger
-									["providers"] = {
-										{ "n",  87706 },	-- Gazmolf Futzwangler
-										{ "i", 118661 },	-- Xelganak's Stinger
-									},
+									["qg"] = 87706,	-- Gazmolf Futzwangler
+									["qi"] = 118661,	-- Xelganak's Stinger
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
 								}),

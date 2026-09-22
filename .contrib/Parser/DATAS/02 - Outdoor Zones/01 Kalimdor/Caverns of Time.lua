@@ -107,10 +107,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				hqt(53654, {	-- Speak to Wan'be infront of Zaladormu in the Caverns of Time
 					["name"] = "Speak to Wan'be infront of Zaladormu in the Caverns of Time",
 					["sourceQuest"] = 53653,	-- Speak to Wan'be at Frostsaber Rock in Winterspring
-					["providers"] = {
-						{ "n", 143129 },	-- Wan'be <The Explorer>
-						{ "i", 163213 },	-- Ghostly Explorer's Skull
-					},
+					["qg"] = 143129,	-- Wan'be <The Explorer>
+					["qi"] = 163213,	-- Ghostly Explorer's Skull
 					["coord"] = { 53.6, 55.8, CAVERNS_OF_TIME },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },

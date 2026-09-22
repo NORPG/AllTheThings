@@ -368,10 +368,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7631, {	-- Dreadsteed of Xoroth
 					["sourceQuest"] = 7629,	-- Imp Delivery
-					["providers"] = {
-						{ "n", 14436 },	-- Mor'zul Bloodbringer
-						{ "i", 18818 },	-- Mor'zul's Instructions
-					},
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["qi"] = 18818,	-- Mor'zul's Instructions
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,

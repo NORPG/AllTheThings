@@ -413,10 +413,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(469, {	-- Daily Delivery
-					["providers"] = {
-						{ "n", 2093 },	-- Einar Stonegrip
-						{ "i", 3347 },	-- Bundle of Crocolisk Skins
-					},
+					["qg"] = 2093,	-- Einar Stonegrip
+					["qi"] = 3347,	-- Bundle of Crocolisk Skins
 					["coord"] = { 49.8, 39.4, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -724,10 +722,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(306, {	-- In Search of The Excavation Team (2/2)
 					["sourceQuest"] = 305,	-- In Search of The Excavation Team (1/2)
-					["providers"] = {
-						{ "n", 1076 },	-- Merrin Rockweaver
-						{ "i", 2639 },	-- Merrin's Letter
-					},
+					["qg"] = 1076,	-- Merrin Rockweaver
+					["qi"] = 2639,	-- Merrin's Letter
 					["coord"] = { 38.8, 52.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -857,10 +853,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(465, {	-- Nek'rosh's Gambit
 					["sourceQuest"] = 464,	-- War Banners
-					["providers"] = {
-						{ "n", 2104 },	-- Captain Stoutfist
-						{ "i", 3339 },	-- Dwarven Tinder
-					},
+					["qg"] = 2104,	-- Captain Stoutfist
+					["qi"] = 3339,	-- Dwarven Tinder
 					["coord"] = { 9.8, 57.4, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2007,10 +2001,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
-					["providers"] = {
-						{ "n", 212209 },	-- Vodyanoi
-						{ "i", 210499 },	-- Marshroom
-					},
+					["qg"] = 212209,	-- Vodyanoi
+					["qi"] = 210499,	-- Marshroom
 					["coord"] = { 31.0, 18.0, WETLANDS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },

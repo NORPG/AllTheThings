@@ -214,10 +214,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27764, {	-- A Strange Request
 					["sourceQuest"] = 27774,	-- Easily Swayed
-					["providers"] = {
-						{ "n", 46652 },	-- Dolph Blastus
-						{ "i", 62387 },	-- Dolph's Package
-					},
+					["qg"] = 46652,	-- Dolph Blastus
+					["qi"] = 62387,	-- Dolph's Package
 					["coord"] = { 65.0, 38.3, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -614,18 +612,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(737, {	-- Forbidden Knowledge
 					["allianceQuestData"] = {
-						["providers"] = {
-							{ "n", 2786 },	-- Gerrig Bonegrip
-							{ "i", 4647 },	-- Yagyin's Digest
-						},
+						["qg"] = 2786,	-- Gerrig Bonegrip
+						["qi"] = 4647,	-- Yagyin's Digest
 						["sourceQuest"] = 735,	-- The Star, the Hand and the Heart [A]
 						["coord"] = { 50.8, 5.6, IRONFORGE },
 					},
 					["hordeQuestData"] = {
-						["providers"] = {
-							{ "n", 2934 },	-- Keeper Bel'dugur
-							{ "i", 4647 },	-- Yagyin's Digest
-						},
+						["qg"] = 2934,	-- Keeper Bel'dugur
+						["qi"] = 4647,	-- Yagyin's Digest
 						["sourceQuest"] = 736,	-- The Star, the Hand and the Heart [H]
 						["coord"] = { 53.7, 54.5, UNDERCITY },
 					},
@@ -781,10 +775,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27826, {	-- Into the Dragon's Mouth
 					["sourceQuest"] = 27794,	-- Return to Blam
-					["providers"] = {
-						{ "n", 46664 },	-- Dr. Hieronymus Blam
-						{ "i", 62513 },	-- Purified Black Dragon Egg
-					},
+					["qg"] = 46664,	-- Dr. Hieronymus Blam
+					["qi"] = 62513,	-- Purified Black Dragon Egg
 					["coord"] = { 46.8, 56.5, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -923,10 +915,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27889, {	-- New Kargath
 					["sourceQuest"] = 27888,	-- Return to Blam
-					["providers"] = {
-						{ "n", 46664 },	-- Dr. Hieronymus Blam
-						{ "i", 62513 },	-- Purified Black Dragon Egg
-					},
+					["qg"] = 46664,	-- Dr. Hieronymus Blam
+					["qi"] = 62513,	-- Purified Black Dragon Egg
 					["coord"] = { 46.8, 56.5, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -956,10 +946,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(725, {	-- Passing Word of a Threat (1/2)
 					["sourceQuest"] = 724,	-- Prospect of Faith (2/2)
-					["providers"] = {
-						{ "n", 2916 },	-- Historian Karnik
-						{ "i", 4622 },	-- Sealed Note to Advisor Belgrum
-					},
+					["qg"] = 2916,	-- Historian Karnik
+					["qi"] = 4622,	-- Sealed Note to Advisor Belgrum
 					["coord"] = { 77.5, 11.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1040,10 +1028,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(723, {	-- Prospect of Faith (1/2)
 					["sourceQuest"] = 722,	-- Amulet of Secrets
-					["providers"] = {
-						{ "n", 2909 },	-- Hammertoe Grez
-						{ "i", 4635 },	-- Hammertoe's Amulet
-					},
+					["qg"] = 2909,	-- Hammertoe Grez
+					["qi"] = 4635,	-- Hammertoe's Amulet
 					["coord"] = { 37.94, 10.53, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1051,10 +1037,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(724, {	-- Prospect of Faith (2/2)
 					["sourceQuest"] = 723,	-- Prospect of Faith (1/2)
-					["providers"] = {
-						{ "n", 2910 },	-- Prospector Ryedol
-						{ "i", 4635 },	-- Hammertoe's Amulet
-					},
+					["qg"] = 2910,	-- Prospector Ryedol
+					["qi"] = 4635,	-- Hammertoe's Amulet
 					["coord"] = { 53.4, 43.2, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1096,10 +1080,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1420, {	-- Report to Helgrum
 					["sourceQuest"] = 1418,	-- Neeka Bloodscar
-					["providers"] = {
-						{ "n", 5394 },	-- Neeka Bloodscar
-						{ "i", 6167 },	-- Neeka's Report
-					},
+					["qg"] = 5394,	-- Neeka Bloodscar
+					["qi"] = 6167,	-- Neeka's Report
 					["coord"] = { 6.5, 47.2, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
@@ -1524,20 +1506,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27797, {	-- The Sentinel's Pawn (A)
 					["sourceQuest"] = 27792,	-- All's Fair in Love, War, and Archaeology
-					["providers"] = {
-						{ "n", 46760 },	-- Lead Prospector Durdin
-						{ "i", 62490 },	-- Sentinel's Pawn
-					},
+					["qg"] = 46760,	-- Lead Prospector Durdin
+					["qi"] = 62490,	-- Sentinel's Pawn
 					["coord"] = { 49.3, 36.9, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27884, {	-- The Sentinel's Pawn (H)
 					["sourceQuest"] = 27882,	-- It's Not About History, It's About Power
-					["providers"] = {
-						{ "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-						{ "i", 62490 },	-- Sentinel's Pawn
-					},
+					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+					["qi"] = 62490,	-- Sentinel's Pawn
 					["coord"] = { 52.0, 51.2, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1567,18 +1545,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				{	-- The Star, the Hand and the Heart
 					["allianceQuestData"] = q(735, {	-- The Star, the Hand and the Heart [A]
 						["sourceQuest"] = 727,	-- To Ironforge for Yagyin's Digest
-						["providers"] = {
-							{ "n", 2786 },	-- Gerrig Bonegrip
-							{ "i", 4649 },	-- Bonegrip's Note
-						},
+						["qg"] = 2786,	-- Gerrig Bonegrip
+						["qi"] = 4649,	-- Bonegrip's Note
 						["coord"] = { 50.8, 5.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(736, {	-- The Star, the Hand and the Heart [H]
 						["sourceQuest"] = 728,	-- To the Undercity for Yagyin's Digest
-						["providers"] = {
-							{ "n", 2934 },	-- Keeper Bel'dugur
-							{ "i", 4650 },	-- Bel'dugur's Note
-						},
+						["qg"] = 2934,	-- Keeper Bel'dugur
+						["qi"] = 4650,	-- Bel'dugur's Note
 						["coord"] = { 53.7, 54.5, UNDERCITY },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1626,10 +1600,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27772, {	-- The Venerable Doctor Blam
 					["sourceQuest"] = 27769,	-- Rhea Revealed
-					["providers"] = {
-						{ "n", 46655 },	-- Rheastrasza
-						{ "i", 62395 },	-- Black Dragon Samples
-					},
+					["qg"] = 46655,	-- Rheastrasza
+					["qi"] = 62395,	-- Black Dragon Samples
 					["coord"] = { 66.5, 55.6, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1649,20 +1621,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27796, {	-- The Warden's Pawn (A)
 					["sourceQuest"] = 27792,	-- All's Fair in Love, War, and Archaeology
-					["providers"] = {
-						{ "n", 46760 },	-- Lead Prospector Durdin
-						{ "i", 62489 },	-- Warden's Pawn
-					},
+					["qg"] = 46760,	-- Lead Prospector Durdin
+					["qi"] = 62489,	-- Warden's Pawn
 					["coord"] = { 49.3, 36.9, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27883, {	-- The Warden's Pawn (H)
 					["sourceQuest"] = 27882,	-- It's Not About History, It's About Power
-					["providers"] = {
-						{ "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-						{ "i", 62489 },	-- Warden's Pawn
-					},
+					["qg"] = 46757,	-- High Examiner Tae'thelan Bloodwatcher
+					["qi"] = 62489,	-- Warden's Pawn
 					["coord"] = { 52.0, 51.2, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1789,10 +1757,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(777, {	-- This Is Going to Be Hard (2/3)
 					["sourceQuest"] = 734,	-- This Is Going to Be Hard (1/3)
-					["providers"] = {
-						{ "n", 2920 },	-- Lucien Tosselwrench
-						{ "i", 4846 },	-- Cog #5
-					},
+					["qg"] = 2920,	-- Lucien Tosselwrench
+					["qi"] = 4846,	-- Cog #5
 					["coord"] = { 25.8, 44.4, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -1823,10 +1789,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(727, {	-- To Ironforge for Yagyin's Digest
 					["sourceQuest"] = 709,	-- Solution to Doom
-					["providers"] = {
-						{ "n", 2785 },	-- Theldurin the Lost
-						{ "i", 4648 },	-- Sigil of the Hammer
-					},
+					["qg"] = 2785,	-- Theldurin the Lost
+					["qi"] = 4648,	-- Sigil of the Hammer
 					["coord"] = { 51.4, 76.9, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1846,10 +1810,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(728, {	-- To the Undercity for Yagyin's Digest
 					["sourceQuest"] = 709,	-- Solution to Doom
-					["providers"] = {
-						{ "n", 2785 },	-- Theldurin the Lost
-						{ "i", 4648 },	-- Sigil of the Hammer
-					},
+					["qg"] = 2785,	-- Theldurin the Lost
+					["qi"] = 4648,	-- Sigil of the Hammer
 					["coord"] = { 51.4, 76.9, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

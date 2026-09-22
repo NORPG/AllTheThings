@@ -44,10 +44,8 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 				36404,	-- Clearing the Garden [A]
 				34193,	-- Clearing the Garden [H]
 			},
-			["providers"] = {
-				{ "n",  87553 },	-- Dog
-				{ "i", 147420 },	-- Pebble
-			},
+			["qg"] = 87553,	-- Dog
+			["qi"] = 147420,	-- Pebble
 			["coords"] = {
 				{ 44.6, 84.8, FROSTWALL },
 				{ 58.8, 53.8, LUNARFALL },

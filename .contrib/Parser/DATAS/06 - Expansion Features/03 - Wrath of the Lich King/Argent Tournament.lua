@@ -3734,10 +3734,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					q(24454, {	-- Return To Caladis Brightspear
 						["description"] = "Turning in this quest triggers a lore exposition.",
 						["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
-						["providers"] = {
-							{ "n", 36669 },	-- Arcanist Tybalin
-							{ "i", 49698 },	-- Ancient Dragonforged Blades
-						},
+						["qg"] = 36669,	-- Arcanist Tybalin
+						["qi"] = 49698,	-- Ancient Dragonforged Blades
 						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
 					}),
 					q(24461, {	-- Reforging The Sword (A)
@@ -3791,10 +3789,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					q(24522, {	-- Journey To The Sunwell (A)
 						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
 						["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
-						["providers"] = {
-							{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-							{ "i", 49870 },	-- Tempered Quel'Delar
-						},
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						["qi"] = 49870,	-- Tempered Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { ISLE_OF_QUELDANAS },
 					}),
@@ -3846,10 +3842,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					q(24796, {	-- A Victory For The Silver Covenant (A)
 						["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
-						["providers"] = {
-							{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-							{ "i", 49871 },	-- Restored Quel'Delar
-						},
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						["qi"] = 49871,	-- Restored Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
@@ -3857,10 +3851,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
 						["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
-						["providers"] = {
-							{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-							{ "i", 49871 },	-- Restored Quel'Delar
-						},
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						["qi"] = 49871,	-- Restored Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = { PRIEST, SHAMAN, DRUID },
@@ -3928,10 +3920,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					q(24558, {	-- Return To Myralion Sunblaze
 						["description"] = "Turning in this quest triggers a lore exposition.",
 						["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
-						["providers"] = {
-							{ "n", 36670 },	-- Magister Hathorel <The Sunreavers>
-							{ "i", 49698 },	-- Ancient Dragonforged Blades
-						},
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						["qi"] = 49698,	-- Ancient Dragonforged Blades
 						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
 					}),
 					q(24559, {	-- Reforging The Sword (H)
@@ -3985,10 +3975,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					q(24562, {	-- Journey To The Sunwell (H)
 						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
 						["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
-						["providers"] = {
-							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-							{ "i", 49870 },	-- Tempered Quel'Delar
-						},
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						["qi"] = 49870,	-- Tempered Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { ISLE_OF_QUELDANAS },
 					}),
@@ -4072,10 +4060,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					q(24801, {	-- A Victory For The Sunreavers (H)
 						["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
-						["providers"] = {
-							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-							{ "i", 49871 },	-- Restored Quel'Delar
-						},
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						["qi"] = 49871,	-- Restored Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -4083,10 +4069,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					q(24799, {	-- A Victory For The Sunreavers [H - Maces]
 						["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
-						["providers"] = {
-							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-							{ "i", 49871 },	-- Restored Quel'Delar
-						},
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						["qi"] = 49871,	-- Restored Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = { PRIEST, SHAMAN, DRUID },
@@ -4095,10 +4079,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
 						["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
-						["providers"] = {
-							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-							{ "i", 49871 },	-- Restored Quel'Delar
-						},
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						["qi"] = 49871,	-- Restored Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
@@ -4107,10 +4089,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
 						["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
-						["providers"] = {
-							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-							{ "i", 49871 },	-- Restored Quel'Delar
-						},
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						["qi"] = 49871,	-- Restored Quel'Delar
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = { PRIEST, SHAMAN, DRUID },

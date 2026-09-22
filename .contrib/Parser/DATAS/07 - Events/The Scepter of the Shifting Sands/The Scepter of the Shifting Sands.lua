@@ -45,10 +45,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8303, {	-- Anachronos
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
-					["providers"] = {
-						{ "n", 15180 },	-- Baristolth of the Shifting Sands
-						{ "i", 20415 },	-- The War of the Shifting Sands
-					},
+					["qg"] = 15180,	-- Baristolth of the Shifting Sands
+					["qi"] = 20415,	-- The War of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
@@ -140,10 +138,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8599, {	-- Love Song for Narain
 					["sourceQuest"] = 8576,	-- Translating the Ledger
-					["providers"] = {
-						{ "n", 15526 },	-- Meridith the Mermaiden
-						{ "i", 21032 },	-- Meridith's Love Letter
-					},
+					["qg"] = 15526,	-- Meridith the Mermaiden
+					["qi"] = 21032,	-- Meridith's Love Letter
 					-- #if BEFORE CATA
 					["description"] = "You must be on the quest 'Draconic for Dummies' for this quest to be available.",
 					-- #endif
@@ -199,10 +195,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8587, {	-- Return to Narain
 					["sourceQuest"] = 8586,	-- Dirge's Kickin' Chimaerok Chops
-					["providers"] = {
-						{ "n", 8125 },	-- Dirge Quikcleave <Butcher>
-						{ "i", 21028 },	-- 500 Pound Chicken
-					},
+					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
+					["qi"] = 21028,	-- 500 Pound Chicken
 					["coord"] = { 52.6, 28.1, TANARIS },
 					["lvl"] = 60,
 				}),
@@ -228,10 +222,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8741, {	-- The Champion Returns
 					["sourceQuest"] = 8736,	-- The Nightmare Manifests
-					["providers"] = {
-						{ "n", 11832 },	-- Keeper Remulos
-						{ "i", 21139 },	-- Green Scepter Shard
-					},
+					["qg"] = 11832,	-- Keeper Remulos
+					["qi"] = 21139,	-- Green Scepter Shard
 					["coord"] = { 36.18, 41.79, MOONGLADE },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
@@ -431,10 +423,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8745, {	-- Treasure of the Timeless One
 					["sourceQuest"] = 8742,	-- The Might of Kalimdor
-					["providers"] = {
-						{ "n", 15693 },	-- Jonathan the Revelator
-						{ "i", 21175 },	-- The Scepter of the Shifting Sands
-					},
+					["qg"] = 15693,	-- Jonathan the Revelator
+					["qi"] = 21175,	-- The Scepter of the Shifting Sands
 					["coord"] = { 25.9, 91.0, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {

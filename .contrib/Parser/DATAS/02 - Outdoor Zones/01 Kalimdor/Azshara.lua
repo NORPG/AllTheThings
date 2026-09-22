@@ -359,10 +359,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3564, {	-- Andron's Payment to Jediga
 					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
-					["providers"] = {
-						{ "n", 6522 },	-- Andron Gant
-						{ "i", 10679 },	-- Andron's Note
-					},
+					["qg"] = 6522,	-- Andron Gant
+					["qi"] = 10679,	-- Andron's Note
 					["coord"] = { 54.6, 75.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -504,10 +502,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] ={ i(49211) },	-- Mound o' Meat (QI!)
 				}),
 				q(3504, {	-- Betrayed (1/4)
-					["providers"] = {
-						{ "n", 4485 },	-- Belgrom Rockmaul
-						{ "i", 10643 },	-- Sealed Letter to Ag'tor
-					},
+					["qg"] = 4485,	-- Belgrom Rockmaul
+					["qi"] = 10643,	-- Sealed Letter to Ag'tor
 					["coord"] = { 75.0, 34.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -549,10 +545,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3507, {	-- Betrayed (4/4)
 					["sourceQuest"] = 3506,	-- Betrayed (3/4)
-					["providers"] = {
-						{ "n", 8576 },	-- Ag'tor Bloodfist
-						{ "i", 10597 },	-- Head of Magus Rimtori
-					},
+					["qg"] = 8576,	-- Ag'tor Bloodfist
+					["qi"] = 10597,	-- Head of Magus Rimtori
 					["coord"] = { 22.2, 51.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -649,10 +643,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3542, {	-- Delivery to Andron Gant
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
-					["providers"] = {
-						{ "n", 8587 },	-- Jediga
-						{ "i", 10540 },	-- Tablet of Markri
-					},
+					["qg"] = 8587,	-- Jediga
+					["qi"] = 10540,	-- Tablet of Markri
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -660,10 +652,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3561, {	-- Delivery to Archmage Xylem
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
-					["providers"] = {
-						{ "n", 8587 },	-- Jediga
-						{ "i", 10541 },	-- Tablet of Sael'hai
-					},
+					["qg"] = 8587,	-- Jediga
+					["qi"] = 10541,	-- Tablet of Sael'hai
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -671,10 +661,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3541, {	-- Delivery to Jes'rimon
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
-					["providers"] = {
-						{ "n", 8587 },	-- Jediga
-						{ "i", 10539 },	-- Tablet of Jin'yael
-					},
+					["qg"] = 8587,	-- Jediga
+					["qi"] = 10539,	-- Tablet of Jin'yael
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -682,10 +670,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3518, {	-- Delivery to Magatha
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
-					["providers"] = {
-						{ "n", 8587 },	-- Jediga
-						{ "i", 10538 },	-- Tablet of Beth'Amara
-					},
+					["qg"] = 8587,	-- Jediga
+					["qi"] = 10538,	-- Tablet of Beth'Amara
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -860,10 +846,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(9364, {	-- Fragmented Magic
 					["sourceQuest"] = 9362,	-- Warlord Krellian
-					["providers"] = {
-						{ "n", 8379 },	-- Archmage Xylem
-						{ "i", 23250 },	-- Prismatic Shell
-					},
+					["qg"] = 8379,	-- Archmage Xylem
+					["qi"] = 23250,	-- Prismatic Shell
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
@@ -1078,10 +1062,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3563, {	-- Jes'rimon's Payment to Jediga
 					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
-					["providers"] = {
-						{ "n", 8659 },	-- Jes'rimon
-						{ "i", 10680 },	-- Jes'rimon's Note
-					},
+					["qg"] = 8659,	-- Jes'rimon
+					["qi"] = 10680,	-- Jes'rimon's Note
 					["coord"] = { 55.6, 34.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1185,10 +1167,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
 					["sourceQuest"] = 3518,	-- Delivery to Magatha
-					["providers"] = {
-						{ "n", 4046 },	-- Magatha Grimtotem
-						{ "i", 10678 },	-- Magatha's Note
-					},
+					["qg"] = 4046,	-- Magatha Grimtotem
+					["qi"] = 10678,	-- Magatha's Note
 					["coord"] = { 70.2, 30.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1995,10 +1975,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3621, {	-- The Formation of Felbane
 					["sourceQuest"] = 3602,	-- Azsharite
-					["providers"] = {
-						{ "n", 7783 },	-- Loramus Thalipedes
-						{ "i", 10738 },	-- Shipment to Galvan
-					},
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["qi"] = 10738,	-- Shipment to Galvan
 					["coord"] = { 60.8, 66.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -2099,10 +2077,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3511, {	-- The Name of the Beast (3/3)
 					["sourceQuest"] = 3510,	-- The Name of the Beast (2/3)
-					["providers"] = {
-						{ "n", 6134 },	-- Lord Arkkoroc
-						{ "i", 10610 },	-- Hetaera's Blood
-					},
+					["qg"] = 6134,	-- Lord Arkkoroc
+					["qi"] = 10610,	-- Hetaera's Blood
 					["coord"] = { 77.2, 42.8, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -2434,10 +2410,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3565, {	-- Xylem's Payment to Jediga
 					["sourceQuest"] = 3561,	-- Delivery to Archmage Xylem
-					["providers"] = {
-						{ "n", 8379 },	-- Archmage Xylem
-						{ "i", 10681 },	-- Xylem's Note
-					},
+					["qg"] = 8379,	-- Archmage Xylem
+					["qi"] = 10681,	-- Xylem's Note
 					["coord"] = { 29.2, 40.2, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

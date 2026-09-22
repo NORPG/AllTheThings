@@ -527,10 +527,8 @@ root(ROOTS.Zones, {
 					}),
 					q(9401, {	-- A Strange Weapon
 						["sourceQuest"] = 9400,	-- The Assassin
-						["providers"] = {
-							{ "n", 17062 },	-- Fel Orc Corpse
-							{ "i", 23550 },	-- Heavy Stone Axe
-						},
+						["qg"] = 17062,	-- Fel Orc Corpse
+						["qi"] = 23550,	-- Heavy Stone Axe
 						["coord"] = { 33.6, 43.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -606,20 +604,16 @@ root(ROOTS.Zones, {
 					}),
 					q(10835, {	-- Apothecary Antonivich
 						["sourceQuest"] = 10538,	-- Boiling Blood
-						["providers"] = {
-							{ "n", 21279 },	-- Apothecary Albreck
-							{ "i", 31550 },	-- Albreck's Findings
-						},
+						["qg"] = 21279,	-- Apothecary Albreck
+						["qi"] = 31550,	-- Albreck's Findings
 						["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10449, {	-- Apothecary Zelana
 						["sourceQuest"] = 10450,	-- Bonechewer Blood
-						["providers"] = {
-							{ "n", 21256 },	-- Vurtok Axebreaker
-							{ "i", 30326 },	-- Bonechewer Blood Samples
-						},
+						["qg"] = 21256,	-- Vurtok Axebreaker
+						["qi"] = 30326,	-- Bonechewer Blood Samples
 						["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -676,10 +670,8 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						["sourceQuestNumRequired"] = 1,
-						["providers"] = {
-							{ "n", 19229 },	-- Commander Duron
-							{ "i", 28105 },	-- Duron's Report
-						},
+						["qg"] = 19229,	-- Commander Duron
+						["qi"] = 28105,	-- Duron's Report
 						["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -697,10 +689,8 @@ root(ROOTS.Zones, {
 							60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde]
 							-- #endif
 						},
-						["providers"] = {
-							{ "n", 19253 },	-- Lieutenant General Orion
-							{ "i", 28024 },	-- Orion's Report
-						},
+						["qg"] = 19253,	-- Lieutenant General Orion
+						["qi"] = 28024,	-- Orion's Report
 						["coord"] = { 87.3, 49.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1731,10 +1721,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10140, {	-- Journey to Honor Hold
 						["sourceQuest"] = 10288,	-- Arrival in Outland
-						["providers"] = {
-							{ "n", 18931 },	-- Amish Wildhammer
-							{ "i", 28105 },	-- Duron's Report
-						},
+						["qg"] = 18931,	-- Amish Wildhammer
+						["qi"] = 28105,	-- Duron's Report
 						["coord"] = { 87.3, 52.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1742,10 +1730,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10289, {	-- Journey to Thrallmar
 						["sourceQuest"] = 10120,	-- Arrival in Outland
-						["providers"] = {
-							{ "n", 18930 },	-- Vlagga Freyfeather
-							{ "i", 28024 },	-- Orion's Report
-						},
+						["qg"] = 18930,	-- Vlagga Freyfeather
+						["qi"] = 28024,	-- Orion's Report
 						["coord"] = { 87.3, 48.1, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1924,10 +1910,8 @@ root(ROOTS.Zones, {
 					}),
 					q(9438, {	-- Messenger to Thrall
 						["sourceQuest"] = 9406,	-- The Mag'har
-						["providers"] = {
-							{ "n", 3230 },	-- Nazgrel
-							{ "i", 23662 },	-- Letter from Nazgrel
-						},
+						["qg"] = 3230,	-- Nazgrel
+						["qi"] = 23662,	-- Letter from Nazgrel
 						["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
@@ -2336,10 +2320,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10242, {	-- Spinebreaker Post
 						["sourceQuest"] = 10449,	-- Apothecary Zelana
-						["providers"] = {
-							{ "n", 21257 },	-- Apothecary Zelana
-							{ "i", 30404 },	-- Bleeding Hollow Blood Sample
-						},
+						["qg"] = 21257,	-- Apothecary Zelana
+						["qi"] = 30404,	-- Bleeding Hollow Blood Sample
 						["coord"] = { 66.1, 41.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2404,10 +2386,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10230, {	-- The Battle Horn
 						["sourceQuest"] = 10229,	-- Decipher the Tome
-						["providers"] = {
-							{ "n", 19736 },	-- Althen the Historian
-							{ "i", 28562 },	-- Unyielding Battle Horn
-						},
+						["qg"] = 19736,	-- Althen the Historian
+						["qi"] = 28562,	-- Unyielding Battle Horn
 						["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2491,10 +2471,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10349, {	-- The Earthbinder
 						["sourceQuest"] = 10134,	-- Crimson Crystal Clue
-						["providers"] = {
-							{ "n", 19293 },	-- Tola'thion
-							{ "i", 29477 },	-- Crimson Crystal Shard
-						},
+						["qg"] = 19293,	-- Tola'thion
+						["qi"] = 29477,	-- Crimson Crystal Shard
 						["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
@@ -2619,10 +2597,8 @@ root(ROOTS.Zones, {
 					}),
 					q(9406, {	-- The Mag'har
 						["sourceQuest"] = 9410,	-- A Spirit Guide
-						["providers"] = {
-							{ "n", 16845 },	-- Gorkan Bloodfish
-							{ "i", 23569 },	-- Letter from the Mag'har
-						},
+						["qg"] = 16845,	-- Gorkan Bloodfish
+						["qi"] = 23569,	-- Letter from the Mag'har
 						["coord"] = { 31.9, 27.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2768,10 +2744,8 @@ root(ROOTS.Zones, {
 					}),
 					q(9405, {	-- The Warchief's Mandate
 						["sourceQuest"] = 9401,	-- A Strange Weapon
-						["providers"] = {
-							{ "n", 3230 },	-- Nazgrel
-							{ "i", 23550 },	-- Heavy Stone Axe
-						},
+						["qg"] = 3230,	-- Nazgrel
+						["qi"] = 23550,	-- Heavy Stone Axe
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
