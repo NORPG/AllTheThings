@@ -150,9 +150,13 @@ local function DoReport(reporttype, id)
 		reportData[#reportData + 1] = "LastQuests:"..lastQuests
 	end
 	reportData[#reportData + 1] = "Character: L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")"
-	if next(app.CurrentCharacter.Professions) then
+	-- somehow app.CurrentCharacter nil at this point in some situation...
+	-- maybe an app.report triggered before PLAYER_LOGIN... ?
+	local Professions = app.CurrentCharacter and app.CurrentCharacter.Professions
+	local ActiveSkills = app.CurrentCharacter and app.CurrentCharacter.ActiveSkills
+	if Professions and next(Professions) then
 		local skills = {};
-		for profID,known in pairs(app.CurrentCharacter.Professions) do
+		for profID,known in pairs(Professions) do
 			-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
 			if known ~= 1 then
 				skills[#skills + 1] = "|"..profID..":"
@@ -160,10 +164,10 @@ local function DoReport(reporttype, id)
 			end
 		end
 		reportData[#reportData + 1] = "Profs: "..(app.TableConcat(skills) or "")
-	elseif next(app.CurrentCharacter.ActiveSkills) then
+	elseif ActiveSkills and next(ActiveSkills) then
 		-- Classic uses ActiveSkills instead of Professions
 		local skills = {};
-		for spellID, skillData in pairs(app.CurrentCharacter.ActiveSkills) do
+		for spellID, skillData in pairs(ActiveSkills) do
 			local spellName = app.WOWAPI.GetSpellName(spellID);
 			if spellName then
 				skills[#skills + 1] = spellID.."@"..(skillData[1] or "?").."|"
