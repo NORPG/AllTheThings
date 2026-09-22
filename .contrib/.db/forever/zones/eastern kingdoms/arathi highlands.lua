@@ -38,7 +38,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["coord"] = { 45.8, 46.2, MAP.ARATHI_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
 			}),
-		}),	
+		}),
 		pickpocketing({
 			i(17124, {	-- Syndicate Emblem
 				["crs"] = {
