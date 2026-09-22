@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								1547,	-- Decrepit Darkhound
 							},
 						}),
-						i(3382),	-- Weak Troll's Blood Potion
+						i(3382),	-- Minor Troll's Blood Elixir (RECIPE!)
 					},
 				}),
 				q(368, {	-- A New Plague (2/4)

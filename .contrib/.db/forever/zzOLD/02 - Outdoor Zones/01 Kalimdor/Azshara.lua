@@ -774,7 +774,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ 56.6, 23.6, MAP.AZSHARA },
 						{ 53.6, 23.8, MAP.AZSHARA },
 					},
-					["timeline"] = { ADDED_1_11_1 },	-- ATT Discord 05.09.2023
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus (RECIPE!)

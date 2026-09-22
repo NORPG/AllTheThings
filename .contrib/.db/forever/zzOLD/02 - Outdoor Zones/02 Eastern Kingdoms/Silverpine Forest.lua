@@ -581,10 +581,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
-							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
-						}),
-						i(4596),	-- Discolored Healing Potion
+						i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
+						i(4596),	-- Minor Discolored Healing Potion
 					},
 				}),
 				q(1359, {	-- Zinge's Delivery

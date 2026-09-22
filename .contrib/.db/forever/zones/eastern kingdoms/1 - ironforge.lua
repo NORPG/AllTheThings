@@ -1356,7 +1356,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				["coord"] = { 66.6, 54.6, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
+					i(13478, {	-- Recipe: Elixir of Greater Defense (RECIPE!)
 						["isLimited"] = true,
 					}),
 					i(5642, {	-- Recipe: Free Action Potion (RECIPE!)

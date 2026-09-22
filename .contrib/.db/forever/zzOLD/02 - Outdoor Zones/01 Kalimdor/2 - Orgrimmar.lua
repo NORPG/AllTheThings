@@ -29,10 +29,15 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
-					n(3347, {	-- Yelmak <Alchemy Trainer>
+					n(11046, {	-- Whuut <Journeyman Alchemist>
+						["coord"] = { 56.0, 33.8, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = ALCHEMY_RECIPES.APPRENTICE,
+					}),
+					n(3347, {	-- Yelmak <Expert Alchemist>
 						["coord"] = { 55.6, 46.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_CATA_ALCHEMY,
+						["groups"] = ALCHEMY_RECIPES.JOURNEYMAN,
 					}),
 				}),
 				prof(BLACKSMITHING, {
@@ -1056,7 +1061,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 56.2, 34.2, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
+						i(13478, {	-- Recipe: Elixir of Greater Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)

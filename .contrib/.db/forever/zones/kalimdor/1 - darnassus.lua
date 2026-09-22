@@ -14,6 +14,15 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(4160, {	-- Ainethil <Artisan Alchemist>
+					["coord"] = { 55.6, 24.6, MAP.DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = ALCHEMY_RECIPES.EXPERT,
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(7799, {	-- A Donation of Mageweave
 				["qg"] = 14725,	-- Raedon Duskstriker

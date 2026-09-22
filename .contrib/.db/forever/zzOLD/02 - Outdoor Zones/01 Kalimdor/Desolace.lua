@@ -1038,6 +1038,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			n(VENDORS, {
+				n(253139, {	-- Gorhak <Magram Clan Quartermaster>
+					["coord"] = { 66.2, 79.4, MAP.DESOLACE},
+					["groups"] = {
+						i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!) (Cost Carved Totems)
+						i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
+					},
+				}),
 				n(12045, {	-- Hae'Wilani <Axecrafter>
 					["coords"] = {
 						{ 25.8, 71.0, MAP.DESOLACE },

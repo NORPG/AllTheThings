@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 3508 },	-- Mudsnout Mixture
 					},
 					["coord"] = { 48.89, 69.21, MAP.UNDERCITY },
-					["cost"] = { { "i", 3388, 1 } },	-- Strong Troll's Blood Potion
+					["cost"] = { { "i", 3388, 1 } },	-- Lesser Troll's Blood Elixir
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -1039,8 +1039,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
-							["description"] =
-								"This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
 							["isLimited"] = true,
 						}),
 					},
@@ -1218,7 +1216,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						2266,	-- Hillsbrad Farmer
 					},
 				}),
-				i(6211, {	-- Recipe: Elixir of Ogre's Strength
+				i(6211, {	-- Recipe: Elixir of Ogre Strength (RECIPE!)
 					["cr"] = 2373,	-- Mudsnout Shaman
 				}),
 			}),

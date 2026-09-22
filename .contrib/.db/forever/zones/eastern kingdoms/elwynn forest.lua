@@ -882,7 +882,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 3,
 				groups = {
-					i(2454),	-- Elixir of Lion's Strength
+					i(2454),	-- Elixir of Minor Strength
 					i(1178),	-- Explosive Rocket
 					i(1177),	-- Oil of Olaf
 				},

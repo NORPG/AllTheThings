@@ -53,7 +53,7 @@ i(235518),	-- Timbermaw War Banner
 i(235645),	-- Legashi Firewater Recipe
 i(235899),	-- Corrupted Core
 i(236631),	-- Bloodmaw's Basher
-i(236754),	-- Recipe: Distilled Firewater
+
 i(236755),	-- [TMP] Funerary Headdress
 i(236759),	-- [TMP] Furbolg Ritual Stave
 i(236760),	-- [TMP] Satyrbane
@@ -105,17 +105,17 @@ i(246780),	-- Heart of Vek'zol
 i(246885),	-- Soft Cow Doll
 i(246888),	-- Humongous Crystal
 i(246938),	-- Tear of Mennar
-i(246948),	-- Distilled Firewater
+
 i(247000),	-- Fel-Tainted Rock
 i(247001),	-- Fel-Tainted Branch
 i(247238),	-- Mana-Siphoning Wand
-i(247239),	-- Lesser Discolored Healing Potion
-i(247240),	-- Discolored Healing Potion
-i(247241),	-- Greater Discolored Healing Potion
-i(247242),	-- Superior Discolored Healing Potion
+
+
+
+
 i(247684),	-- Forgotten Ashes
-i(247754),	-- Minor Arcane Elixir
-i(247755),	-- Elixir of Minor Force
+
+
 i(247786),	-- Mote of Magic
 i(247789),	-- Novice's Practice Wand
 i(247805),	-- Stolen Enchanting Supplies
@@ -226,16 +226,15 @@ i(249396),	-- Mystic Mushroom
 i(249397),	-- Tenets of the Silver Hand
 i(249398),	-- Polished Driftwood Icon
 i(249399),	-- Frilled Lichen
-i(249409),	-- Cerulean Dye
-i(249410),	-- Sulfuric Acid
+
 i(249424),	-- Rosecap
 i(249425),	-- Bauxite
 i(249426),	-- Pitchblende
 i(249427),	-- Pristine Leather
 i(249428),	-- Pristine Hide
 i(249429),	-- Pristine Scale
-i(249430),	-- Magenta Dye
-i(249431),	-- Viridian Dye
+
+
 i(249432),	-- Sandpaper
 i(249441),	-- Talons of Wrath
 i(249442),	-- Libram of Invocation
@@ -378,60 +377,46 @@ i(250187),	-- Recipe: Tasty Raptor Bites
 i(250188),	-- Recipe: Breakfast Omelette
 i(250189),	-- Recipe: Clam Linguine
 i(250217),	-- Purveyor of Light
-i(250327),	-- Draught of Predatory Senses
-i(250328),	-- Elixir of Cunning
-i(250329),	-- Elixir of the Phalanx
-i(250330),	-- Minor Cleric's Elixir
-i(250331),	-- Lesser Cleric's Elixir
-i(250332),	-- Cleric's Elixir
-i(250333),	-- Greater Cleric's Elixir
-i(250334),	-- Elixir of Fortitude
-i(250335),	-- Elixir of Greater Fortitude
-i(250336),	-- Elixir of Wicked Regeneration
-i(250337),	-- Elixir of the Owl
-i(250338),	-- Elixir of Sages
-i(250339),	-- Minor Mageblood Elixir
-i(250340),	-- Lesser Mageblood Elixir
-i(250341),	-- Greater Mageblood Elixir
-i(250342),	-- Lesser Arcane Elixir
-i(250343),	-- Elixir of Nature Power
-i(250344),	-- Elixir of Minor Spirit
-i(250345),	-- Elixir of Lesser Spirit
-i(250346),	-- Elixir of Spirit
-i(250347),	-- Elixir of Greater Spirit
-i(250348),	-- Elixir of the Whale
-i(250349),	-- Elixir of Strength
-i(250350),	-- Elixir of Ferocity
-i(250351),	-- Elixir of the Grizzly
-i(250353),	-- Elixir of Lesser Intellect
-i(250354),	-- Elixir of Intellect
-i(250363),	-- Recipe: Draught of Predatory Senses
-i(250364),	-- Recipe: Elixir of Cunning
-i(250365),	-- Recipe: Elixir of the Phalanx
-i(250366),	-- Recipe: Minor Cleric's Elixir
-i(250367),	-- Recipe: Lesser Cleric's Elixir
-i(250368),	-- Recipe: Cleric's Elixir
-i(250369),	-- Recipe: Greater Cleric's Elixir
-i(250370),	-- Recipe: Elixir of Fortitude
-i(250371),	-- Recipe: Elixir of Greater Fortitude
-i(250372),	-- Recipe: Elixir of Wicked Regeneration
-i(250373),	-- Recipe: Elixir of the Owl
-i(250374),	-- Recipe: Elixir of Sages
-i(250375),	-- Recipe: Minor Mageblood Elixir
-i(250376),	-- Recipe: Lesser Mageblood Elixir
-i(250377),	-- Recipe: Greater Mageblood Elixir
-i(250378),	-- Recipe: Lesser Arcane Elixir
-i(250379),	-- Recipe: Elixir of Nature Power
-i(250380),	-- Recipe: Elixir of Minor Spirit
-i(250381),	-- Recipe: Elixir of Lesser Spirit
-i(250382),	-- Recipe: Elixir of Spirit
-i(250383),	-- Recipe: Elixir of Greater Spirit
-i(250384),	-- Recipe: Elixir of the Whale
-i(250385),	-- Recipe: Elixir of Strength
-i(250386),	-- Recipe: Elixir of Ferocity
-i(250387),	-- Recipe: Elixir of the Grizzly
-i(250388),	-- Recipe: Elixir of Lesser Intellect
-i(250389),	-- Recipe: Elixir of Intellect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 i(250482),	-- Glowing Copper Boots
 i(250483),	-- Sterling Silver Boots
 i(250484),	-- Sterling Silver Leggings
@@ -576,59 +561,45 @@ i(250725),	-- Crate of Exotic Parts
 i(250744),	-- Firestarter Fir
 i(250773),	-- Nordrassil Root Cap
 i(250775),	-- Frayed Wire
-i(250932),	-- Minor Spellblasting Potion
-i(250933),	-- Lesser Spellblasting Potion
-i(250934),	-- Spellblasting Potion
-i(250935),	-- Greater Spellblasting Potion
-i(250936),	-- Superior Spellblasting Potion
-i(250937),	-- Major Spellblasting Potion
-i(250938),	-- Minor Frenzy Potion
-i(250939),	-- Lesser Frenzy Potion
-i(250940),	-- Frenzy Potion
-i(250941),	-- Greater Frenzy Potion
-i(250942),	-- Superior Frenzy Potion
-i(250943),	-- Major Frenzy Potion
-i(250944),	-- Minor Mender's Potion
-i(250945),	-- Lesser Mender's Potion
-i(250946),	-- Mender's Potion
-i(250947),	-- Greater Mender's Potion
-i(250948),	-- Superior Mender's Potion
-i(250949),	-- Major Mender's Potion
-i(250950),	-- Potion of Venomous Blood
-i(250951),	-- Caustic Smog Potion
-i(250952),	-- Disorienting Smog Potion
-i(250953),	-- Dragonfire Potion
-i(250954),	-- Potion of Elemental Siphoning
-i(250955),	-- Potion of Beast Culling
-i(250976),	-- Recipe: Minor Spellblasting Potion
-i(250977),	-- Recipe: Lesser Spellblasting Potion
-i(250978),	-- Recipe: Spellblasting Potion
-i(250979),	-- Recipe: Greater Spellblasting Potion
-i(250980),	-- Recipe: Superior Spellblasting Potion
-i(250981),	-- Recipe: Major Spellblasting Potion
-i(250982),	-- Recipe: Minor Frenzy Potion
-i(250983),	-- Recipe: Lesser Frenzy Potion
-i(250984),	-- Recipe: Frenzy Potion
-i(250985),	-- Recipe: Greater Frenzy Potion
-i(250986),	-- Recipe: Superior Frenzy Potion
-i(250987),	-- Recipe: Major Frenzy Potion
-i(250988),	-- Recipe: Minor Mender's Potion
-i(250989),	-- Recipe: Lesser Mender's Potion
-i(250990),	-- Recipe: Mender's Potion
-i(250992),	-- Recipe: Superior Mender's Potion
-i(250993),	-- Recipe: Major Mender's Potion
-i(250994),	-- Recipe: Potion of Venomous Blood
-i(250995),	-- Recipe: Caustic Smog Potion
-i(250996),	-- Recipe: Disorienting Smog Potion
-i(250997),	-- Recipe: Dragonfire Potion
-i(250998),	-- Recipe: Potion of Elemental Siphoning
-i(250999),	-- Recipe: Potion of Beast Culling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 i(251270),	-- Blood-Stained Parchment
 i(251279),	-- [DNT] Fragment of Air Essence REUSE
 i(251280),	-- [DNT] Fragment of Fire Essence REUSE
 i(251281),	-- [DNT] Fragment of Earth Essence REUSE
 i(251282),	-- [DNT] Fragment of Water Essence REUSE
-i(251290),	-- Legionite Bar
+
 i(251291),	-- Heavy Thorium Bar
 i(251320),	-- Satchet of Spirit Powder
 i(251332),	-- Plans: Gemmed Copper Boots
@@ -2960,7 +2931,7 @@ i(273002),	-- Slime Ward - Fel Ash Experimentation Notes
 i(273008),	-- Fel-Slime Ooze
 i(273015),	-- Toxin Extractor
 i(273050),	-- Blackmaw Pouch
-i(273085),	-- Blueprint: Fermenter
+
 i(273086),	-- Blueprint: Anvil
 i(273087),	-- Blueprint: Journeyman Campfire
 i(273092),	-- Blueprint: Repair Bot
@@ -2974,7 +2945,7 @@ i(273103),	-- Blueprint: Arcane Salvager
 i(273105),	-- Blueprint: Toxin Study
 i(273106),	-- Blueprint: Greenhouse
 i(273109),	-- Blueprint: Trapper's Workbench
-i(273112),	-- Blueprint: Alchemy Laboratory
+
 i(273113),	-- Blueprint: Master Forge
 i(273115),	-- Blueprint: Baker's Oven
 i(273116),	-- Blueprint: Arcane Forge
@@ -3506,14 +3477,11 @@ i(274257),	-- Premier Lamellar Armsplints
 i(274258),	-- Premier Lamellar Sabatons
 i(274259),	-- Premier Lamellar Cinch
 i(274268),	-- Dark Iron Map
-i(274273),	-- Flask of Natural Accuracy
-i(274274),	-- Flask of Natural Aggression
-i(274275),	-- Flask of Natural Precision
-i(274276),	-- Flask of Natural Swiftness
-i(274277),	-- Recipe: Flask of Natural Accuracy
-i(274278),	-- Recipe: Flask of Natural Aggression
-i(274279),	-- Recipe: Flask of Natural Precision
-i(274280),	-- Recipe: Flask of Natural Swiftness
+
+
+
+
+
 i(274286),	-- Durgen Dirgehammer's Head
 i(274287),	-- Grand Hippogryph Feather
 i(274288),	-- Oily Chimaera Hair
@@ -4458,7 +4426,7 @@ i(279950),	-- Reagent Bot
 i(279951),	-- Plague Doctor's Laboratory
 i(279952),	-- Molten Foundry
 i(279955),	-- Master Forge
-i(279956),	-- Mana Well
+
 i(279957),	-- Cookie's Feast
 i(279959),	-- Loom
 i(279960),	-- Lodestone
@@ -4470,7 +4438,7 @@ i(279966),	-- Fishing Hut
 i(279967),	-- Fish Bowl
 i(279968),	-- First Aid Kit
 i(279969),	-- Field Guide
-i(279970),	-- Fermenter
+
 i(279972),	-- Faction Banner
 i(279973),	-- Faction Banner
 i(279974),	-- Expert Campfire Kit
@@ -4483,7 +4451,7 @@ i(279985),	-- Arcane Salvager
 i(279987),	-- Arcane Forge
 i(279988),	-- Anvil
 i(279989),	-- Anarchist's Workbench
-i(279990),	-- Alchemy Laboratory
+
 i(279991),	-- Dry Branch
 i(280087),	-- Soft Nightsaber Pelt
 i(280088),	-- Soft Saber Sack
@@ -4786,7 +4754,7 @@ i(284845),	-- Thicket Raptor Hide
 i(284868),	-- Holy Hand Grenade of Alterac
 i(284869),	-- Unsanctified Grenade
 i(284870),	-- Schematic: Unsanctified Grenade
-i(284871),	-- Recipe: Transmute Legionite
+
 i(285168),	-- Theramore Basic Care Package
 i(285169),	-- Theramore Standard Care Package
 i(285170),	-- Theramore Advanced Care Package

@@ -187,10 +187,10 @@ q(7946,{coords={
 i(19462,{b=1,e=1,spellID=23851,g={
 i(19450,{e=1,f=101,spellID=23811})}})}}),
 q(7905,{coords={
-[1455]={{29.2,68.4}}},e=1,lvl=6,providers={{"i",19338}},qgs={14842},r=2,g={
+[1455]={{29.2,68.4}}},e=1,lvl=6,qgs={14842},qis={19338},r=2,g={
 i(19182,{e=1,f=55})}}),
 q(7926,{coords={
-[1454]={{52.2,66}}},e=1,lvl=6,providers={{"i",19338}},qgs={14843},r=1,g={
+[1454]={{52.2,66}}},e=1,lvl=6,qgs={14843},qis={19338},r=1,g={
 i(19182,{e=1,f=55})}}),
 q(7883,{coords={
 [1412]={{36.2,35.2}},
@@ -328,7 +328,7 @@ r(21931,{e=14,itemID=17725,requireSkill=333}),
 r(21943,{e=14,itemID=17722}),
 r(21945,{e=14,itemID=17724}),
 r(21913,{e=14,itemID=17706}),
-r(21923,{e=14,itemID=17709}),
+r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720}),
 i(21325,{b=1,e=14,f=55,spellID=26067}),
 i(21213,{e=14,f=106,lvl=40,spellID=25860})}}),
@@ -339,7 +339,7 @@ r(21931,{e=14,itemID=17725,requireSkill=333}),
 r(21943,{e=14,itemID=17722}),
 r(21945,{e=14,itemID=17724}),
 r(21913,{e=14,itemID=17706}),
-r(21923,{e=14,itemID=17709}),
+r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720})}})}}),
 q(6984,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,qgs={13418},r=1,sourceQuests={6983},g={
@@ -348,7 +348,7 @@ r(21931,{e=14,itemID=17725,requireSkill=333}),
 r(21943,{e=14,itemID=17722}),
 r(21945,{e=14,itemID=17724}),
 r(21913,{e=14,itemID=17706}),
-r(21923,{e=14,itemID=17709}),
+r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720})}})}}),
 q(7022,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=10,qgs={13433},r=2}),
@@ -389,9 +389,9 @@ q(7042,{coords={
 q(6963,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13418},r=1}),
 q(7063,{coords={
-[1455]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,providers={{"i",17735}},qgs={2916},r=2,sourceQuests={7062}}),
+[1455]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,qgs={2916},qis={17735},r=2,sourceQuests={7062}}),
 q(7061,{coords={
-[1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,providers={{"i",17735}},qgs={13417},r=1,sourceQuests={6964}}),
+[1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,qgs={13417},qis={17735},r=1,sourceQuests={6964}}),
 q(8763,{coords={
 [1455]={{33.4,67}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13433},r=2,requireSkill=185,sourceQuests={8762},g={
 i(21213,{e=14,f=106,lvl=40,requireSkill=185,spellID=25860})}}),
@@ -596,17 +596,17 @@ q(8904,{coords={
 [1458]={{66.8,44.4}}},e=9,isYearly=1,qgs={16108},r=1,g={
 qo(1,{e=9,providers={{"i",22145}}})}}),
 q(8897,{coords={
-[1453]={{57,59.8}}},e=9,isYearly=1,providers={{"i",21921}},qgs={16005},r=2}),
+[1453]={{57,59.8}}},e=9,isYearly=1,qgs={16005},qis={21921},r=2}),
 q(8898,{coords={
-[1455]={{32.4,66}}},e=9,isYearly=1,maps={1453},providers={{"i",21920}},qgs={16009},r=2}),
+[1455]={{32.4,66}}},e=9,isYearly=1,maps={1453},qgs={16009},qis={21920},r=2}),
 q(8899,{coords={
-[1457]={{42,42}}},e=9,isYearly=1,maps={1453},providers={{"i",21925}},qgs={16001},r=2}),
+[1457]={{42,42}}},e=9,isYearly=1,maps={1453},qgs={16001},qis={21925},r=2}),
 q(8900,{coords={
-[1454]={{51.2,70.2}}},e=9,isYearly=1,maps={1458},providers={{"i",21926}},qgs={16007},r=1}),
+[1454]={{51.2,70.2}}},e=9,isYearly=1,maps={1458},qgs={16007},qis={21926},r=1}),
 q(8901,{coords={
-[1456]={{44.8,59.6}}},e=9,isYearly=1,maps={1458},providers={{"i",22264}},qgs={16008},r=1}),
+[1456]={{44.8,59.6}}},e=9,isYearly=1,maps={1458},qgs={16008},qis={22264},r=1}),
 q(8902,{coords={
-[1420]={{60.6,59.6}}},e=9,isYearly=1,maps={1458},providers={{"i",22265}},qgs={16003},r=1}),
+[1420]={{60.6,59.6}}},e=9,isYearly=1,maps={1458},qgs={16003},qis={22265},r=1}),
 q(8979,{coords={
 [1458]={{66.8,44.4}}},e=9,isYearly=1,qgs={16108},r=1,sourceQuests={8904},g={
 qo(1,{e=9,providers={{"i",21833}}}),

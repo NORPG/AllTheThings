@@ -1,82 +1,11 @@
 1.60.1.69876
 r(2365),	-- Draught of Tongues \\ Recipe: Elixir of Tongues
-r(1230564),	-- Mana Well
 r(1240943),	-- Alchemy
 r(1240954),	-- Alchemy
 r(1240965),	-- Alchemy
 r(1240977),	-- Alchemy
-r(1244421),	-- Distilled Firewater
-r(1244645),	-- Lesser Discolored Healing Potion
-r(1244646),	-- Discolored Healing Potion
-r(1244647),	-- Greater Discolored Healing Potion
-r(1244648),	-- Superior Discolored Healing Potion
-r(1245246),	-- Minor Arcane Elixir
-r(1245250),	-- Elixir of Minor Force
-r(1249630),	-- Cerulean Dye
-r(1249631),	-- Magenta Dye
-r(1249632),	-- Viridian Dye
-r(1249633),	-- Sulfuric Acid
 r(1250775),	-- Revealing Draught
-r(1250776),	-- Draught of Predatory Senses
-r(1250777),	-- Elixir of Cunning
-r(1250778),	-- Elixir of the Phalanx
-r(1250779),	-- Minor Cleric's Elixir
-r(1250780),	-- Lesser Cleric's Elixir
-r(1250781),	-- Cleric's Elixir
-r(1250782),	-- Greater Cleric's Elixir
-r(1250783),	-- Elixir of Fortitude
-r(1250784),	-- Elixir of Greater Fortitude
-r(1250785),	-- Elixir of Wicked Regeneration
-r(1250786),	-- Elixir of the Owl
-r(1250787),	-- Elixir of Sages
-r(1250788),	-- Minor Mageblood Elixir
-r(1250789),	-- Lesser Mageblood Elixir
-r(1250790),	-- Greater Mageblood Elixir
-r(1250791),	-- Lesser Arcane Elixir
-r(1250792),	-- Elixir of Nature Power
-r(1250793),	-- Elixir of Minor Spirit
-r(1250794),	-- Elixir of Lesser Spirit
-r(1250795),	-- Elixir of Spirit
-r(1250796),	-- Elixir of Greater Spirit
-r(1250797),	-- Elixir of the Whale
-r(1250798),	-- Elixir of Strength
-r(1250799),	-- Elixir of Ferocity
-r(1250800),	-- Elixir of the Grizzly
-r(1250801),	-- Elixir of Lesser Intellect
-r(1250802),	-- Elixir of Intellect
-r(1251729),	-- Minor Spellblasting Potion
-r(1251730),	-- Lesser Spellblasting Potion
-r(1251731),	-- Spellblasting Potion
-r(1251732),	-- Greater Spellblasting Potion
-r(1251733),	-- Superior Spellblasting Potion
-r(1251734),	-- Major Spellblasting Potion
-r(1251735),	-- Minor Frenzy Potion
-r(1251736),	-- Lesser Frenzy Potion
-r(1251737),	-- Frenzy Potion
-r(1251738),	-- Greater Frenzy Potion
-r(1251739),	-- Superior Frenzy Potion
-r(1251740),	-- Major Frenzy Potion
-r(1251741),	-- Minor Mender's Potion
-r(1251742),	-- Lesser Mender's Potion
-r(1251743),	-- Mender's Potion
-r(1251744),	-- Greater Mender's Potion
-r(1251745),	-- Superior Mender's Potion
-r(1251747),	-- Major Mender's Potion
-r(1251748),	-- Potion of Venomous Blood
-r(1251749),	-- Caustic Smog Potion
-r(1251750),	-- Disorienting Smog Potion
-r(1251751),	-- Dragonfire Potion
-r(1251752),	-- Potion of Elemental Siphoning
-r(1251753),	-- Potion of Beast Culling
-r(1263005),	-- Fermenter
-r(1263078),	-- Alchemy Laboratory
 r(1277779),	--
-r(1293559),	-- Flask of Natural Accuracy
-r(1293560),	-- Flask of Natural Aggression
-r(1293561),	-- Flask of Natural Precision
-r(1293562),	-- Flask of Natural Swiftness
-r(1317279),	-- Transmute: Legionite
-
 
 
 
@@ -84,79 +13,9 @@ Missing in Alchemy
 
 1.60.1.69876
 r(2365),	-- Draught of Tongues \\ Recipe: Elixir of Tongues
-r(1230564),	-- Mana Well
 r(1240943),	-- Alchemy
 r(1240954),	-- Alchemy
 r(1240965),	-- Alchemy
 r(1240977),	-- Alchemy
-r(1244421),	-- Distilled Firewater
-r(1244645),	-- Lesser Discolored Healing Potion
-r(1244646),	-- Discolored Healing Potion
-r(1244647),	-- Greater Discolored Healing Potion
-r(1244648),	-- Superior Discolored Healing Potion
-r(1245246),	-- Minor Arcane Elixir
-r(1245250),	-- Elixir of Minor Force
-r(1249630),	-- Cerulean Dye
-r(1249631),	-- Magenta Dye
-r(1249632),	-- Viridian Dye
-r(1249633),	-- Sulfuric Acid
 r(1250775),	-- Revealing Draught
-r(1250776),	-- Draught of Predatory Senses
-r(1250777),	-- Elixir of Cunning
-r(1250778),	-- Elixir of the Phalanx
-r(1250779),	-- Minor Cleric's Elixir
-r(1250780),	-- Lesser Cleric's Elixir
-r(1250781),	-- Cleric's Elixir
-r(1250782),	-- Greater Cleric's Elixir
-r(1250783),	-- Elixir of Fortitude
-r(1250784),	-- Elixir of Greater Fortitude
-r(1250785),	-- Elixir of Wicked Regeneration
-r(1250786),	-- Elixir of the Owl
-r(1250787),	-- Elixir of Sages
-r(1250788),	-- Minor Mageblood Elixir
-r(1250789),	-- Lesser Mageblood Elixir
-r(1250790),	-- Greater Mageblood Elixir
-r(1250791),	-- Lesser Arcane Elixir
-r(1250792),	-- Elixir of Nature Power
-r(1250793),	-- Elixir of Minor Spirit
-r(1250794),	-- Elixir of Lesser Spirit
-r(1250795),	-- Elixir of Spirit
-r(1250796),	-- Elixir of Greater Spirit
-r(1250797),	-- Elixir of the Whale
-r(1250798),	-- Elixir of Strength
-r(1250799),	-- Elixir of Ferocity
-r(1250800),	-- Elixir of the Grizzly
-r(1250801),	-- Elixir of Lesser Intellect
-r(1250802),	-- Elixir of Intellect
-r(1251729),	-- Minor Spellblasting Potion
-r(1251730),	-- Lesser Spellblasting Potion
-r(1251731),	-- Spellblasting Potion
-r(1251732),	-- Greater Spellblasting Potion
-r(1251733),	-- Superior Spellblasting Potion
-r(1251734),	-- Major Spellblasting Potion
-r(1251735),	-- Minor Frenzy Potion
-r(1251736),	-- Lesser Frenzy Potion
-r(1251737),	-- Frenzy Potion
-r(1251738),	-- Greater Frenzy Potion
-r(1251739),	-- Superior Frenzy Potion
-r(1251740),	-- Major Frenzy Potion
-r(1251741),	-- Minor Mender's Potion
-r(1251742),	-- Lesser Mender's Potion
-r(1251743),	-- Mender's Potion
-r(1251744),	-- Greater Mender's Potion
-r(1251745),	-- Superior Mender's Potion
-r(1251747),	-- Major Mender's Potion
-r(1251748),	-- Potion of Venomous Blood
-r(1251749),	-- Caustic Smog Potion
-r(1251750),	-- Disorienting Smog Potion
-r(1251751),	-- Dragonfire Potion
-r(1251752),	-- Potion of Elemental Siphoning
-r(1251753),	-- Potion of Beast Culling
-r(1263005),	-- Fermenter
-r(1263078),	-- Alchemy Laboratory
 r(1277779),	--
-r(1293559),	-- Flask of Natural Accuracy
-r(1293560),	-- Flask of Natural Aggression
-r(1293561),	-- Flask of Natural Precision
-r(1293562),	-- Flask of Natural Swiftness
-r(1317279),	-- Transmute: Legionite

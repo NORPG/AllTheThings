@@ -886,7 +886,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12696, {	-- Plans: Demon Forged Breastplate (RECIPE!)
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
-					i(9224),	-- Elixir of Demonslaying
+					i(9224),	-- Potion of Demonslaying
 					i(12849, {	-- Demon Kissed Sack
 						["timeline"] = { REMOVED_4_0_3 },
 					}),

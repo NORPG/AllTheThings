@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
 						["coord"] = { 32.6, 43.8, MAP.FERALAS },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = EXPERT_ARTISAN_ALCHEMY,
+						["groups"] = ALCHEMY_RECIPES.ARTISAN,
 					}),
 				}),
 				prof(FISHING, {

@@ -3507,49 +3507,38 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {
-			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
-				["timeline"] = { ADDED_8_0_1 },
-			}),
-			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
-			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
-			i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
-			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
+			i(273085, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Fermenter (RECIPE!)
+			i(13518),	-- Flask of Petrification (RECIPE!)
+			i(3832),	-- Recipe: Draught of Detect Lesser Invisibility (RECIPE!)
+			i(9297),	-- Recipe: Draught of Dream Vision (RECIPE!)
+			i(9298),	-- Recipe: Elixir of Greater Strength (RECIPE!)
 			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
+			i(3830),	-- Recipe: Elixir of Lesser Fortitude (RECIPE!)
 			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
-			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
-			-- #if BEFORE TBC
-			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+] (RECIPE!)
-			-- #endif
-			-- #if BEFORE 3.2.0
-			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+] (RECIPE!)
-			-- #endif
-			i(13493, {	-- Recipe: Greater Arcane Elixir (RECIPE!)
-				["timeline"] = { REMOVED_3_0_2 },
-			}),
+			i(250380, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Elixir of Minor Spirit (RECIPE!)
+			i(6211),	-- Recipe: Elixir of Ogre Strength (RECIPE!)
+			i(13493),	-- Recipe: Greater Arcane Elixir (RECIPE!)
 			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
 			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
+			i(250983, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Frenzy Potion (RECIPE!)
+			i(250989, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Mender's Potion (RECIPE!)
+			i(250977, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Spellblasting Potion (RECIPE!)
 			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
-			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },
-			}),
-			i(3831),	-- Recipe: Major Troll's Blood Elixir[Wrath+] / Mighty Troll's Blood Potion  (RECIPE!)
-			i(3393, {	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },
-			}),
-			-- #if AFTER TBC
-			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance (RECIPE!)
-			-- #endif
-			-- #if AFTER 3.2.0
-			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification (RECIPE!)
-			-- #endif
-			i(13492, {	-- Recipe: Purification Potion (RECIPE!)
-				["timeline"] = { REMOVED_2_0_1 },
-			}),
+			i(9293),	-- Recipe: Magic Resistance Potion (RECIPE!)
+			i(250366, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Cleric's Elixir (RECIPE!)
+			i(250982, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Frenzy Potion (RECIPE!)
+			i(250375, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Mageblood Elixir (RECIPE!)
+			i(3393),	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
+			i(250988, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Mender's Potion (RECIPE!)
+			i(250976, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Spellblasting Potion (RECIPE!)
+			i(3394),	-- Recipe: Potion of Poison Cleansing (RECIPE!)
+			i(13492),	-- Recipe: Purification Potion (RECIPE!)
 			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
 			i(13489),	-- Recipe: Transmute Earth to Life (RECIPE!)
 			i(13488),	-- Recipe: Transmute Life to Earth (RECIPE!)
 			i(13486),	-- Recipe: Transmute Undeath to Water (RECIPE!)
 			i(13487),	-- Recipe: Transmute Water to Undeath (RECIPE!)
+			i(3831),	-- Recipe: Troll's Blood Elixir (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)

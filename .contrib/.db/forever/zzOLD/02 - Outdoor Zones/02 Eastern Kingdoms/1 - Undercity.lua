@@ -23,6 +23,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(4611, {	-- Doctor Herbert Halsey <Artisan Alchemist>
+						["coord"] = { 47.6, 73.0, MAP.UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = ALCHEMY_RECIPES.EXPERT,
+					}),
+				}),
 				prof(TAILORING, {
 					n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
 						["coord"] = { 87.0, 20.8, MAP.UNDERCITY },
@@ -871,9 +878,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(13477, {
+						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 							["isLimited"] = true,
-						}),	-- Recipe: Superior Mana Potion (RECIPE!)
+						}),
 					},
 				}),
 				n(4602, {	-- Benijah Fenner

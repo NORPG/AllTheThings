@@ -10,208 +10,183 @@ end
 root(ROOTS.Craftables, {
 	prof(ALCHEMY, {
 		n(COMMON_VENDOR_ITEMS, {
-			["groups"] = appendAllGroups(
-				{
-					i(3371, {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm and becomes the one vial to use in crafting recipes, deprecating all other vials.
-						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
-						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-						--[[["coords"] = {
-							{ 66.6, 54.6, MAP.IRONFORGE },
-							{ 47.4, 33.73, MAP.THUNDER_BLUFF },
-							{ 51.8, 74.6, MAP.UNDERCITY },
-							{ 46.6, 78.8, MAP.STORMWIND_CITY },
-							{ 55.8, 24.5, MAP.DARNASSUS },
-							{ 56.2, 34.2, MAP.ORGRIMMAR },
-						},]]
-					}),
-				},
-				sharedData({	-- Leaded-/Crystal Vials for Vanilla
-					["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
-					["coords"] = {
-						{ 55.8, 24.5, MAP.DARNASSUS },
-						{ 66.6, 54.6, MAP.IRONFORGE },
-						{ 56.2, 34.2, MAP.ORGRIMMAR },
-						{ 47.4, 33.73, MAP.THUNDER_BLUFF },
-						{ 51.8, 74.6, MAP.UNDERCITY },
-						{ 46.6, 78.8, MAP.STORMWIND_CITY },
-					},
-					["timeline"] = { REMOVED_4_0_1 },
-				}, {
-					i(3372),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
-					i(8925),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
-				}),
-				{
-					i(18256, {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial with Cataclysm.
-						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
-						["coords"] = {
-							{ 55.8, 24.5, MAP.DARNASSUS },
-							{ 66.6, 54.6, MAP.IRONFORGE },
-							{ 56.2, 34.2, MAP.ORGRIMMAR },
-							{ 47.4, 33.73, MAP.THUNDER_BLUFF },
-							{ 51.8, 74.6, MAP.UNDERCITY },
-							{ 46.6, 78.8, MAP.STORMWIND_CITY },
-						},
-						["timeline"] = { REMOVED_4_0_1 },
-					}),
-				}
-			)
+			i(3371),	-- Empty Vial
+			i(3372),	-- Leaded Vial
+			i(8925),	-- Crystal Vial
+			i(18256),	-- Imbued Vial
 		}),
 		filter(CONSUMABLES, {
-			i(6452, {["timeline"] = { ADDED_8_0_1 }}),	-- Anti-Venom
 			i(9155),	-- Arcane Elixir
-			i(10592),	-- Catseye Elixir
-			i(4596, {["timeline"] = { REMOVED_4_0_3 }}),	-- Discolored Healing Potion
+			i(10592),	-- Catseye Draught
+			i(250951, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Caustic Smog Potion
+			i(247240, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Discolored Healing Potion
+			i(250952, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Disorienting Smog Potion
+			i(250953, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Dragonfire Potion
+			i(9233),	-- Draught of Detect Demon
+			i(3828),	-- Draught of Detect Lesser Invisibility
+			i(9154),	-- Draught of Detect Undead
+			i(9197),	-- Draught of Dream Vision
+			i(18294),	-- Draught of Greater Water Breathing
+			i(5996),	-- Draught of Water Breathing
 			i(12190),	-- Dreamless Sleep Potion
 			i(8949),	-- Elixir of Agility
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233977, {["timeline"] = { ADDED_1_15_5 }})),	-- Elixir of Alacrity
-			-- #endif
 			i(13453),	-- Elixir of Brute Force
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210708, {["timeline"] = { ADDED_1_15_0 }})),	-- Elixir of Coelesced Regret
-			-- #endif
-			i(3389),	-- Elixir of Defense
-			i(9224),	-- Elixir of Demonslaying
-			i(9233),	-- Elixir of Detect Demon
-			i(3828),	-- Elixir of Detect Lesser Invisibility
-			i(9154),	-- Elixir of Detect Undead
-			i(9197),	-- Elixir of Dream Vision
-			i(6373),	-- Elixir of Firepower
-			i(3825),	-- Elixir of Fortitude
+			i(250328, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Cunning
+			i(8951),	-- Elixir of Defense
+			i(250350, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Ferocity
+			i(6373),	-- Elixir of Fire Power
 			i(17708),	-- Elixir of Frost Power
 			i(6662),	-- Elixir of Giant Growth
-			i(9206),	-- Elixir of Giants
 			i(9187),	-- Elixir of Greater Agility
-			i(8951),	-- Elixir of Greater Defense
-			i(21546, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Elixir of Greater Firepower
+			i(13445),	-- Elixir of Greater Defense
+			i(250335, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Greater Fortitude
 			i(9179),	-- Elixir of Greater Intellect
-			i(18294),	-- Elixir of Greater Water Breathing
+			i(250347, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Greater Spirit
+			i(9206),	-- Elixir of Greater Strength
+			i(21546),	-- Elixir of Holy Power
 			i(3390),	-- Elixir of Lesser Agility
-			i(2454),	-- Elixir of Lion's Strength
-			i(45621, {["timeline"] = { ADDED_3_1_0 }}),	-- Elixir of Minor Accuracy
+			i(3389),	-- Elixir of Lesser Defense
+			i(3825),	-- Elixir of Lesser Fortitude
+			i(250353, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Lesser Intellect
+			i(250345, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Lesser Spirit
 			i(2457),	-- Elixir of Minor Agility
 			i(5997),	-- Elixir of Minor Defense
+			i(247755, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Minor Force
 			i(2458),	-- Elixir of Minor Fortitude
-			i(3391),	-- Elixir of Ogre's Strength
+			i(250344, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Minor Spirit
+			i(2454),	-- Elixir of Minor Strength
+			i(250343, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Nature Power
+			i(3391),	-- Elixir of Ogre Strength
+			i(250338, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Sages
 			i(9264),	-- Elixir of Shadow Power
-			i(13445),	-- Elixir of Superior Defense
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233967, {["timeline"] = { ADDED_1_15_5 }})),	-- Elixir of the Honey Badger
-			applyclassicphase(SOD_PHASE_SIX, i(233969, {["timeline"] = { ADDED_1_15_5 }})),	-- Elixir of the Ironside
-			applyclassicphase(SOD_PHASE_SIX, i(233968, {["timeline"] = { ADDED_1_15_5 }})),	-- Elixir of the Mage-Lord
-			-- #endif
-			i(13452, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Elixir of the Mongoose
+			i(250351, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Grizzly
+			i(13452),	-- Elixir of the Mongoose
+			i(250337, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Owl
+			i(250329, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Phalanx
 			i(13447),	-- Elixir of the Sages
-			i(5996),	-- Elixir of Water Breathing
+			i(250348, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Whale
+			i(250336, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Wicked Regeneration
 			i(3383),	-- Elixir of Wisdom
 			i(6049),	-- Fire Protection Potion
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233964, {["timeline"] = { ADDED_1_15_5 }})),	-- Flask of Ancient Knowledge
-			-- #endif
-			i(13513, {["timeline"] = { REMOVED_5_0_4 }}),	-- Flask of Chromatic Resistance
+			i(13513),	-- Flask of Chromatic Resistance
 			i(13511),	-- Flask of Distilled Wisdom
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(221024, {["timeline"] = { ADDED_1_15_2 }})),	-- Flask of Everlasting Nightmares
-			applyclassicphase(SOD_PHASE_SIX, i(233962, {["timeline"] = { ADDED_1_15_5 }})),	-- Flask of Madness
-			applyclassicphase(SOD_PHASE_THREE, i(221313, {["timeline"] = { ADDED_1_15_2 }})),	-- Flask of Nightmarish Mojo
-			applyclassicphase(SOD_PHASE_THREE, i(222952, {["timeline"] = { ADDED_1_15_2 }})),	-- Flask of Restless Dreams
-			-- #endif
+			i(274273, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Accuracy
+			i(274274, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Aggression
+			i(274275, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Precision
+			i(274276, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Swiftness
+			i(13506),	-- Flask of Petrification
 			i(13512),	-- Flask of Supreme Power
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233966, {["timeline"] = { ADDED_1_15_5 }})),	-- Flask of Unyielding Sorrow
-			-- #endif
 			i(13510),	-- Flask of the Titans
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(233966, {["timeline"] = { ADDED_1_15_5 }})),	-- Flask of Unyielding Sorrow
-			-- #endif
 			i(5634),	-- Free Action Potion
+			i(250940, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Frenzy Potion
+			i(3829),	-- Frost Oil
 			i(6050),	-- Frost Protection Potion
-			i(9088, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Gift of Arthas
+			i(9088),	-- Gift of Arthas
 			i(5633),	-- Great Rage Potion
 			i(13454),	-- Greater Arcane Elixir
-			i(13461, {["timeline"] = { REMOVED_4_0_3, ADDED_9_1_0 }}),	-- Greater Arcane Protection Potion
-			applyclassicphase(PHASE_FOUR, i(20002, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Greater Dreamless Sleep Potion
+			i(13461),	-- Greater Arcane Protection Potion
+			i(250333, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Cleric's Elixir
+			i(247241, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Discolored Healing Potion
 			i(13457),	-- Greater Fire Protection Potion
-			i(13456, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Frost Protection Potion
-			i(1710),	-- Greater Healing Potion
+			i(250941, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Frenzy Potion
+			i(13456),	-- Greater Frost Protection Potion
+			i(250341, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Mageblood Elixir
 			i(6149),	-- Greater Mana Potion
+			i(250947, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Mender's Potion
 			i(13458),	-- Greater Nature Protection Potion
-			i(13459, {["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Greater Shadow Protection Potion
+			i(13459),	-- Greater Shadow Protection Potion
+			i(250935, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Spellblasting Potion
 			i(13455),	-- Greater Stoneshield Potion
-			i(929),	-- Healing Potion
 			i(6051),	-- Holy Protection Potion
 			i(9172),	-- Invisibility Potion
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217398, {["timeline"] = { ADDED_1_15_1 }})),	-- Lesser Arcane Elixir
-			-- #endif
-			i(858),	-- Lesser Healing Potion
+			i(250342, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Arcane Elixir
+			i(250331, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Cleric's Elixir
+			i(247239, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Discolored Healing Potion
+			i(250939, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Frenzy Potion
 			i(3823),	-- Lesser Invisibility Potion
+			i(250340, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Mageblood Elixir
 			i(3385),	-- Lesser Mana Potion
-			i(4623, {["timeline"] = { REMOVED_4_0_3 }}),	-- Lesser Stoneshield Potion
+			i(250945, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Mender's Potion
+			i(250933, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Spellblasting Potion
+			i(4623),	-- Lesser Stoneshield Potion
+			i(3388),	-- Lesser Troll's Blood Elixir
 			i(3387),	-- Limited Invulnerability Potion
-			applyclassicphase(PHASE_FOUR, i(20008)),	-- Living Action Potion
-			applyclassicphase(PHASE_FOUR, i(20007, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Mageblood Elixir[2.1.0+] / Mageblood Potion
-			i(9036, {["timeline"] = { REMOVED_5_0_4 }}),	-- Magic Resistance Potion
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_EIGHT, i(241650, {["timeline"] = { ADDED_1_15_7 }})),	-- Major Discolored Healing Potion
-			-- #endif
-			i(13446),	-- Major Healing Potion
+			i(9036),	-- Magic Resistance Potion
+			i(250943, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Major Frenzy Potion
 			i(13444),	-- Major Mana Potion
-			i(18253),	-- Major Rejuvenation Potion
-			applyclassicphase(PHASE_FOUR, i(3826)),	-- Major Troll's Blood Elixir[Wrath+] / Mighty Troll's Blood Potion
+			i(250949, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Major Mender's Potion
+			i(250937, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Major Spellblasting Potion
 			i(3827),	-- Mana Potion
+			i(250946, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Mender's Potion
 			i(13442),	-- Mighty Rage Potion
-			i(20004),	-- Mighty Troll's Blood Elixir[Wrath+] / Major Troll's Blood Potion
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(215162, {["timeline"] = { ADDED_1_15_1 }})),	-- Mildly Irradiated Rejuvenation Potion
-			-- #endif
-			i(118),	-- Minor Healing Potion
-			i(3384, {["timeline"] = { REMOVED_5_0_4 }}),	-- Minor Magic Resistance Potion
+			i(247754, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Arcane Elixir
+			i(250330, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Cleric's Elixir
+			i(4596),	-- Minor Discolored Healing Potion
+			i(250938, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Frenzy Potion
+			i(250339, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Mageblood Elixir
+			i(3384),	-- Minor Magic Resistance Potion
 			i(2455),	-- Minor Mana Potion
+			i(250944, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Mender's Potion
 			i(2456),	-- Minor Rejuvenation Potion
+			i(250932, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Spellblasting Potion
+			i(3382),	-- Minor Troll's Blood Elixir
 			i(6052),	-- Nature Protection Potion
 			i(8956),	-- Oil of Immolation
-			i(3386),	-- Potion of Curing[TBC+] / Elixir of Poison Resistance
-			i(13506),	-- Potion of Petrification[3.2.0+] / Flask of Petrification
-			i(19440, {["timeline"] = { ADDED_8_0_1 }}),	-- Powerful Anti-Venom
+			i(9224),	-- Potion of Demonslaying
+			i(3386),	-- Potion of Poison Cleansing
+			i(250950, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Venomous Blood
 			i(13462),	-- Purification Potion
 			i(5631),	-- Rage Potion
-			i(9030, {["timeline"] = { REMOVED_4_0_3 }}),	-- Restorative Potion
+			i(9030),	-- Restorative Potion
+			i(3824),	-- Shadow Oil
 			i(6048),	-- Shadow Protection Potion
-			i(6453, {["timeline"] = { ADDED_8_0_1 }}),	-- Strong Anti-Venom
-			i(3388),	-- Strong Troll's Blood Elixir[Wrath+] / Strong Troll's Blood Potion
-			i(3928),	-- Superior Healing Potion
+			i(250934, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Spellblasting Potion
+			i(247242, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Discolored Healing Potion
 			i(13443),	-- Superior Mana Potion
 			i(2459),	-- Swiftness Potion
 			i(6372),	-- Swim Speed Potion
-			i(3382),	-- Weak Troll's Blood Elixir[Wrath+] / Weak Troll's Blood Potion
-			i(9144, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Wildvine Potion
+			i(3826),	-- Troll's Blood Elixir
+			i(9144),	-- Wildvine Potion
+			-- Unknown
+			i(250346, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Spirit
+			i(250354, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Intellect
+			i(250334, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Fortitude
+			i(250332, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Cleric's Elixir
+			i(250349, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Strength
+			i(250327, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Draught of Predatory Senses
+			i(250948, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Mender's Potion
+			i(250936, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Spellblasting Potion
+			i(250942, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Frenzy Potion
+			i(246948, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Distilled Firewater
+			i(250955, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Beast Culling
+			i(250954, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Elemental Siphoning
+			--[[
+			-- MC
+			i(18253),	-- Major Rejuvenation Potion
+			-- ZG
+			i(20002),	-- Greater Dreamless Sleep Potion
+			i(20007),	-- Mageblood Elixir
+			i(20008),	-- Living Action Potion
+			i(20004),	-- Major Troll's Blood Elixir
+			--]]
 		}),
 		filter(REAGENTS, {
 			i(12360),	-- Arcanite Bar
 			i(6370),	-- Blackmouth Oil
+			i(249409, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Cerulean Dye
 			i(6371),	-- Fire Oil
-			i(3829),	-- Frost Oil
 			i(9210),	-- Ghost Dye
 			i(9061),	-- Goblin Rocket Fuel
-			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
-				["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
-				-- #if AFTER 10.0.7
-				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
-				-- #endif
-			})),
-			i(3577),	-- Gold Bar
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(213372, {["timeline"] = { ADDED_1_15_1 }})),	-- Insulating Gniodine
-			-- #endif
-			i(3824, {["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0}}),	-- Shadow Oil
-			i(13423),	-- Stonescale Oil
-			i(6037),	-- Truesilver Bar
-		}),
-		filter(TRINKET_F, {
-			i(75525, {["timeline"] = {ADDED_5_0_4}}),	-- Alchemist's Flask
+			i(251290, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Legionite Bar
+			i(249430, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Magenta Dye
 			i(9149),	-- Philosopher's Stone
+			i(13423),	-- Stonescale Oil
+			i(249410, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Sulfuric Acid
+			i(249431, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Viridian Dye
 		}),
+		i(279990, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Alchemy Laboratory
+		i(279970, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Fermenter
+		i(279956, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Mana Well
 	}),
 	prof(BLACKSMITHING, {
 		n(COMMON_VENDOR_ITEMS, {
@@ -1888,6 +1863,13 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(FIRST_AID, {
+		i(118),	-- Minor Healing Potion
+		i(1710),	-- Greater Healing Potion
+		i(929),	-- Healing Potion
+		i(858),	-- Lesser Healing Potion
+		i(13446),	-- Major Healing Potion
+		i(3928),	-- Superior Healing Potion
+
 		i(6452),	-- Anti-Venom
 		i(2581),	-- Heavy Linen Bandage
 		i(8545),	-- Heavy Mageweave Bandage

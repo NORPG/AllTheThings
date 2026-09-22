@@ -529,7 +529,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							},
 							["coord"] = { 55.8, 18.2, MAP.DARKSHORE },
 						}),
-						i(5996),	-- Elixir of Water Breathing
+						i(5996),	-- Draught of Water Breathing
 					},
 				}),
 				q(984, {	-- How Big a Threat? (1/2)

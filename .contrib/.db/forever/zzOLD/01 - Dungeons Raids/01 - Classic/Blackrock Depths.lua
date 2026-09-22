@@ -956,7 +956,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
 						i(17023),	-- Pattern: Molten Helm (RECIPE!)
 						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
-						applyclassicphase(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire (RECIPE!)
+						i(20761),	-- Recipe: Transmute Elemental Fire (RECIPE!)
 					},
 					{	-- Honored
 						-- #if SEASON_OF_DISCOVERY

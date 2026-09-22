@@ -27,10 +27,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 		}),
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
-				n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
+				n(5499, {	-- Lilyssia Nightbreeze <Expert Alchemist>
 					["coord"] = { 55.6, 85.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = APPRENTICE_JOURNEYMAN_ALCHEMY,
+					["groups"] = ALCHEMY_RECIPES.JOURNEYMAN,
+				}),
+				n(5500, {	-- LTel'Athir <Journeyman Alchemist>
+					["coord"] = { 55.6, 85.6, MAP.STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = ALCHEMY_RECIPES.APPRENTICE,
 				}),
 			}),
 			prof(BLACKSMITHING, {

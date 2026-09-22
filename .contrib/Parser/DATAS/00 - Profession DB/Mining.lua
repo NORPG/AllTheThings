@@ -11,6 +11,7 @@ i(234278, 1213638);	-- Smelt Obsidian-Infused Thorium Bar
 --   CLASSIC   --
 -----------------
 --- TRAINER ---
+i(0, 1240951);	-- Mining
 i(0, 2575);			-- Mining (Apprentice) [REMOVED: 8.0.1]
 i(0, 2576);			-- Mining (Journeyman) [REMOVED: 8.0.1]
 i(0, 3564);			-- Mining (Expert) [REMOVED: 8.0.1]

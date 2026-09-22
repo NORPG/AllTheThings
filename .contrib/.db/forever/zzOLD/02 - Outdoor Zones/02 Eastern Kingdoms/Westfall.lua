@@ -56,6 +56,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
+				q(92110, {	-- My First Real Potion -- Needs more DATA from Forever/Braghe
+					--["sourceQuest"] = 428,	-- Lost Deathstalkers
+					--["qg"] = 1950,	-- Rane Yorick
+					--["coord"] = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
+					["lvl"] = 10,
+					["groups"] = {
+						i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
+						i(4596),	-- Minor Discolored Healing Potion
+					},
+				}),
 				q(6181, {	-- A Swift Message
 					["providers"] = {
 						{ "n",   491 },	-- Quartermaster Lewis

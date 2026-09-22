@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					n(1386, {	-- Rogvar <Alchemy Trainer>
 						["coord"] = { 49.8, 56.0, MAP.SWAMP_OF_SORROWS },
 						["races"] = HORDE_ONLY,
-						["groups"] = EXPERT_ARTISAN_ALCHEMY,
+						["groups"] = ALCHEMY_RECIPES.ARTISAN,
 					}),
 				}),
 				prof(SKINNING, {
@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 45.4, 57.0, MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
+						i(9300, {	-- Recipe: Potion of Demonslaying (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

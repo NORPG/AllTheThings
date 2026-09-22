@@ -678,7 +678,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_1_11_1 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 				}),
-				i(21547, {	-- Recipe: Elixir of Greater Firepower (RECIPE!)
+				i(21547, {	-- Recipe: Elixir of Holy Power (RECIPE!)
 					["coords"] = {
 						{ 41.6, 42.2, MAP.SEARING_GORGE },
 						{ 37.0, 42.8, MAP.SEARING_GORGE },
