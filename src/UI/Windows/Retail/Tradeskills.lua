@@ -453,9 +453,24 @@ app:CreateWindow("Tradeskills", {
 					ProfessionsFrameTabSideBar.selTab = 0
 				end
 
+				local foreverTabs = { "Overview", 1, 2, 3, 4, 5, 6, 7 }
 				if not app.TradeskillTab then
 					app.TradeskillTab = CreateFrame("Frame", nil, ProfessionsFrameTabSideBar, "AllTheThings_Tab")
-					app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, "TOPRIGHT", -2, -52)
+					if app.IsForever then
+						for _, tab in ipairs(foreverTabs) do
+							local frame = ProfessionsFrame["Professions" .. tab .. "Tab"]
+							if not frame:IsShown() then
+								local frameLeft, frameTop = frame:GetLeft(), frame:GetTop()
+								local sidebarLeft, sidebarTop = ProfessionsFrameTabSideBar:GetLeft(), ProfessionsFrameTabSideBar:GetTop()
+								local x = frameLeft - sidebarLeft
+								local y = frameTop - sidebarTop
+								app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, x, y)
+								break
+							end
+						end
+					else
+						app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, "TOPRIGHT", -2, -52)
+					end
 					ProfessionsFrameTabSideBar.Tabs[1] = app.TradeskillTab
 				end
 
