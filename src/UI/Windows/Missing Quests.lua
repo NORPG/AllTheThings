@@ -2,7 +2,7 @@
 local _, app = ...;
 local L = app.L;
 -- This window has a dependency on Questie in Classic.
-if not app.IsClassic then return; end
+if not (app.IsClassic or app.IsForever) then return; end
 local SearchForField = app.SearchForField;
 local GetRelativeValue = app.GetRelativeValue;
 
