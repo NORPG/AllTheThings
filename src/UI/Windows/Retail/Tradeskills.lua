@@ -453,18 +453,28 @@ app:CreateWindow("Tradeskills", {
 					ProfessionsFrameTabSideBar.selTab = 0
 				end
 
-				local foreverTabs = { "Overview", 1, 2, 3, 4, 5, 6, 7 }
 				if not app.TradeskillTab then
 					app.TradeskillTab = CreateFrame("Frame", nil, ProfessionsFrameTabSideBar, "AllTheThings_Tab")
+
 					if app.IsForever then
+						local foreverTabs = { "Overview", 1, 2, 3, 4, 5, 6, 7 }
+						for _, tab in ipairs(foreverTabs) do
+							local frame = ProfessionsFrame["Professions" .. tab .. "Tab"]
+							local frameLeft, frameTop = frame:GetLeft(), frame:GetTop()
+							local sidebarLeft, sidebarTop = ProfessionsFrameTabSideBar:GetLeft(), ProfessionsFrameTabSideBar:GetTop()
+							local x = frameLeft - sidebarLeft
+							local y = frameTop - sidebarTop
+
+							frame:ClearAllPoints()
+							frame:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, x, y)
+							frame:SetParent(ProfessionsFrameTabSideBar)
+						end
+
 						for _, tab in ipairs(foreverTabs) do
 							local frame = ProfessionsFrame["Professions" .. tab .. "Tab"]
 							if not frame:IsShown() then
-								local frameLeft, frameTop = frame:GetLeft(), frame:GetTop()
-								local sidebarLeft, sidebarTop = ProfessionsFrameTabSideBar:GetLeft(), ProfessionsFrameTabSideBar:GetTop()
-								local x = frameLeft - sidebarLeft
-								local y = frameTop - sidebarTop
-								app.TradeskillTab:SetPoint("TOPLEFT", ProfessionsFrameTabSideBar, x, y)
+								app.TradeskillTab:ClearAllPoints()
+								app.TradeskillTab:SetPoint("TOPLEFT", frame)
 								break
 							end
 						end
@@ -566,10 +576,6 @@ app:CreateWindow("Tradeskills", {
 			end
 			if app.Settings:GetTooltipSetting("Auto:ProfessionList") and app.IsClassic then
 				self:SetVisible(true)
-			elseif ProfessionsFrameTabSideBar then
-				ProfessionsFrameTabSideBar:ClearAllPoints()
-				ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
-				ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
 			end
 			self:RefreshRecipes(true)
 		end
