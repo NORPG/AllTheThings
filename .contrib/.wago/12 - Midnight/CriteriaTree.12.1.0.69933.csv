@@ -75590,30 +75590,29 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 137481,,137475,1,0,54663,5,32
 137482,,137475,1,0,54664,6,32
 137483,,137475,1,0,54665,7,32
-137485,,137484,1,0,55042,3,32
-137486,,137484,1,0,55371,4,32
-137487,,137484,1,0,55255,5,32
-137488,,137484,1,0,55349,7,32
-137489,,137484,1,0,55630,6,32
-137490,,137484,1,0,55350,8,32
-137491,,137484,1,0,55375,9,32
-137492,,137484,1,0,55376,10,32
-137493,,137484,1,0,55425,11,32
-137494,,137484,1,0,55043,14,32
-137495,,137484,1,0,55256,13,32
-137496,,137484,1,0,55377,12,32
+137485,,137484,1,0,55042,2,32
+137486,,137484,1,0,55371,3,32
+137487,,137484,1,0,55255,4,32
+137488,,137484,1,0,55349,6,32
+137489,,137484,1,0,55630,5,32
+137490,,137484,1,0,55350,7,32
+137491,,137484,1,0,55375,8,32
+137492,,137484,1,0,55376,9,32
+137493,,137484,1,0,55425,10,32
+137494,,137484,1,0,55043,13,32
+137495,,137484,1,0,55256,12,32
+137496,,137484,1,0,55377,11,32
 137497,,137484,1,0,55374,0,32
-137498,,137484,1,0,55378,2,32
 137499,,137484,1,0,55081,1,32
-137500,,137484,1,0,55257,15,32
-137501,"The Azure Vault Achievement",137484,1,0,55405,16,32
-137502,,137484,1,0,55105,17,32
-137503,,137484,1,0,55411,18,32
-137504,,137484,1,0,55426,19,32
-137505,,137484,1,0,55937,21,32
-137506,,137484,1,0,55104,22,32
-137507,,137484,1,0,54666,23,32
-137508,,137484,1,0,54667,24,32
+137500,,137484,1,0,55257,14,32
+137501,"The Azure Vault Achievement",137484,1,0,55405,15,32
+137502,,137484,1,0,55105,16,32
+137503,,137484,1,0,55411,17,32
+137504,,137484,1,0,55426,18,32
+137505,,137484,1,0,55937,20,32
+137506,,137484,1,0,55104,21,32
+137507,,137484,1,0,54666,22,32
+137508,,137484,1,0,54667,23,32
 137509,"10.0 Plains - Level Up",0,0,4,0,0,0
 137510,"Into the Plains",137509,1,8,0,0,8208
 137511,,137510,0,0,54669,0,0
@@ -75902,6 +75901,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 137808,"Transmogs learned",137807,1,0,54901,0,0
 137974,"Fishing net weights",137970,0,0,55021,3,0
 137975,"Fishing net knots",137970,0,0,55022,4,0
+138406,,138403,0,0,55269,2,0
 137809,"Flex at another player while under the effect of one of the following toys: Eternal Black Diamond Ring, Home Made Party Mask, Horse Head Costume, Kovork Kostume, Magic Pet Mirror, Stylish Black Parasol, Mnemonic Attunement Pane, Moonfang Shroud, Outrider's Bridle Chain, or the Countess' Parasol",0,0,4,0,0,1
 137810,"Player flexed at",137809,1,0,54902,0,1
 137811,"Player curtseyed at",0,10,4,0,0,1
@@ -76353,7 +76353,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 138403,"Complete 3 Centaur/Tuskarr Activites",0,20,5,0,0,4096
 138404,,138403,0,0,55267,0,0
 138405,,138403,0,0,55268,1,0
-138406,,138403,0,0,55269,2,0
 138407,,138403,0,0,55270,3,0
 138408,,138403,0,0,55271,4,0
 138409,,138403,0,0,55272,5,0
@@ -76510,7 +76509,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 138571,"Defeat the Storm Elemental",138570,1,0,55407,0,0
 138572,"Practice Soar",0,0,4,0,0,4096
 138573,"Practice Soar",138572,0,0,55408,0,0
-138658,"Eaglewatch Outpost to Aylaag Outpost",138655,1,0,55482,2,0
 138574,"[DNT] <Hidden> Mythic+ Rating > 0 (Dragonflight, any season)",0,0,4,0,0,0
 138575,,138574,1,0,55409,0,0
 138576,"10.0 Raid - Prinmalist - Boss - Grand Summoner - Achievement",0,0,4,0,0,0
@@ -76591,6 +76589,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 138655,"10.0 Plains - Achievement - Escort Scenario - SJC",0,0,4,0,0,32
 138656,"Aylaag Outpost to river camp",138655,1,0,55480,0,0
 138657,"River camp to Eaglewatch Outpost",138655,1,0,55481,1,0
+138658,"Eaglewatch Outpost to Aylaag Outpost",138655,1,0,55482,2,0
 138659,"Defeat air imbued creatures in the Waking Shores",0,0,4,0,0,0
 138660,"Defeat air imbued creatures within the Waking Shores.",138659,200,0,55483,0,1
 138662,"Achievement - Dragonflight - Pet Battle World Quest",0,8,8,0,0,0
@@ -77401,6 +77400,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 139522,"Earn 1000 honor in The Azure Span while in War Mode.",139521,1000,0,55953,0,1
 139523,"Earn 1000 honor in Thaldraszus while in War Mode.",0,0,4,0,0,0
 139524,"Earn 1000 honor in Thaldraszus while in War Mode.",139523,1000,0,55954,0,1
+139772,Rustlily,139740,1,0,56093,31,0
 139525,"Obtain the maximum skill points in a ""Dragon Isles"" category of two primary professions.",0,2,8,0,0,0
 139526,Alchemy,139525,100,0,53500,0,2
 139527,Blacksmithing,139525,100,0,53501,1,2
@@ -77548,6 +77548,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 139688,"2600 rating",139687,2600,0,56027,0,2
 139689,"Earn a 2800 personal rating in Rated Solo Shuffle in Season 34 (Dragonflight 1)",0,0,4,0,0,0
 139690,"2800 rating",139689,2800,0,56027,0,2
+139773,"Makhra the Ashtouched",139740,1,0,56094,32,0
 139691,"Earn a 3000 personal rating in Rated Solo Shuffle in Season 34 (Dragonflight 1)",0,0,4,0,0,0
 139692,"3000 rating",139691,3000,0,56027,0,2
 139693,,136874,1400,0,56027,3,2
@@ -77629,8 +77630,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 139769,"Vaniik the Stormtouched",139740,1,0,56090,28,0
 139770,"Quackers the Terrible",139740,1,0,56091,29,0
 139771,"Cinta the Forgotten",139740,1,0,56092,30,0
-139772,Rustlily,139740,1,0,56093,31,0
-139773,"Makhra the Ashtouched",139740,1,0,56094,32,0
 139774,"The Great Enla",139740,1,0,56095,33,0
 139775,"Old Stormhide",139740,1,0,56096,34,0
 139776,"Adventurer's Journey: The Azure Span",0,10,8,0,0,0
@@ -77710,9 +77709,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 139854,,139853,0,0,56166,0,0
 139855,"Second Challenge: Might",139850,1,8,0,2,8208
 139856,,139855,0,0,56167,0,0
-140111,"Impaler Horns",140098,1,0,56740,9,0
 139857,"Third Challenge: Persistence",139850,1,8,0,3,8208
 139858,,139857,0,0,56168,0,0
+140112,"Curved Horns",140098,1,0,56741,10,0
 139859,"Fourth Challenge: Resourcefulness",139850,1,8,0,4,8208
 139860,,139859,0,0,56169,0,0
 139861,"Fifth Challenge: Ingenuity",139850,1,8,0,5,8208
@@ -77803,6 +77802,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 139949,"Renewed Proto-Drake: Black and Red Armor",0,0,4,0,0,0
 139950,"Renewed Proto-Drake: Black and Red Armor",139949,1,0,56250,0,0
 139951,"Renewed Proto-Drake: Gold and White Armor",0,0,4,0,0,0
+140113,"Gradient Horns",140098,1,0,56742,11,0
 139952,"Renewed Proto-Drake: Gold and White Armor",139951,1,0,56251,0,0
 139953,"Renewed Proto-Drake: Silver and Purple Armor",0,0,4,0,0,0
 139954,"Renewed Proto-Drake: Silver and Purple Armor",139953,1,0,56252,0,0
@@ -77881,8 +77881,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 140107,"Curled Horns",140098,1,0,56737,6,0
 140108,Ears,140098,1,0,56738,7,0
 140109,"Bovine Horns",140098,1,0,56739,8,0
-140112,"Curved Horns",140098,1,0,56741,10,0
-140113,"Gradient Horns",140098,1,0,56742,11,0
+140111,"Impaler Horns",140098,1,0,56740,9,0
 140114,"White Horns",140098,1,0,56743,12,0
 140115,"Heavy Horns",140098,1,0,56744,13,0
 140116,"Windborne Velocidrake Skins",0,0,4,0,0,0
@@ -78449,7 +78448,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 140805,,140804,1,0,56823,0,0
 140806,"10.0 Intro - Renown Vendor Tutorial - Buy Item (JDA)",0,1,8,0,0,4096
 140807,,140806,1,0,56824,0,0
-140808,,137484,1,0,56825,20,32
+140808,,137484,1,0,56825,19,32
 140809,"10.07 - Forbidden Reach - Treasure Room - Mysterious Cache Looted (MDE)",0,0,4,0,0,4096
 140810,"Mysterious Cache Looted",140809,1,0,56826,0,16
 140812,,140811,5,0,56827,0,2
@@ -78565,7 +78564,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 140943,,140942,50000,0,56767,0,1
 140944,"Fulfill 10,000 Guild Crafting Orders",0,1000,4,0,0,0
 140945,,140944,10000,0,56769,0,1
-141060,,141059,5,0,57018,0,2
 140946,"Fulfill 500 Personal Crafting Orders",0,100,4,0,0,0
 140947,,140946,500,0,56770,0,1
 140948,"Fulfill 500 Crafting Orders from within the Dragon Isles",0,500,4,0,0,0
@@ -78651,6 +78649,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 141056,,141044,0,0,57016,11,0
 141057,"Weekly crafting quests completed",0,2,5,0,0,8193
 141058,,141057,0,0,57017,0,0
+141060,,141059,5,0,57018,0,2
 141061,,141059,5,0,57019,1,2
 141062,,141059,5,0,57020,2,2
 141063,,141059,5,0,57021,3,2
@@ -78732,7 +78731,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 141919,"Win Rated PvP matches while at 1000 rating or higher",141918,2400,0,57338,0,1
 141920,"Achievement - Ahead of the Curve: Raszageth the Storm-Eater",0,1,8,0,0,0
 141921,,141920,1,0,57339,0,2
-142002,,138745,8,0,57415,6,0
 141922,"Achievement - Cutting Edge: Raszageth the Storm-Eater",0,1,8,0,0,0
 141923,,141922,1,0,57340,0,2
 141924,"Achievement - Vault of the Incarnates - The Primal Bulwark",0,0,4,0,0,0
@@ -78813,6 +78811,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 141999,,138745,6,0,57418,3,0
 142000,,138745,5,0,57417,4,0
 142001,,138745,5,0,57416,5,0
+142002,,138745,8,0,57415,6,0
 142003,,138745,10,0,57414,7,0
 142004,,138745,5,0,57413,8,0
 142005,,138745,7,0,57412,9,0
@@ -79060,8 +79059,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 142260,"Rocdrop Scarab",142248,1,0,57587,11,1
 142261,"Soup eaten",0,1,8,0,0,8193
 142262,"Eat Tuskar Soup while under the effects of one of the following toys: Eternal Black Diamond Ring, Home Made Party Mask, Horse Head Costume, Kovork Kostume, Magic Pet Mirror, Stylish Black Parasol, Mnemonic Attunement Pane, Moonfang Shroud, Outrider's Bridle Chain, or the Countess' Parasol",142261,1,0,57590,0,1
-142332,"Uldaman: Legacy of Tyr",142324,1,0,57635,7,2
-142333,Evoker,24236,0,0,64622,12,2
 142263,"Eat Tuskar Soup while under the effects of one of the following toys: Eternal Black Diamond Ring, Home Made Party Mask, Horse Head Costume, Kovork Kostume, Magic Pet Mirror, Stylish Black Parasol, Mnemonic Attunement Pane, Moonfang Shroud, Outrider's Bridle Chain, or the Countess' Parasol",142261,1,0,57591,1,1
 142264,"Eat Tuskar Soup while under the effects of one of the following toys: Eternal Black Diamond Ring, Home Made Party Mask, Horse Head Costume, Kovork Kostume, Magic Pet Mirror, Stylish Black Parasol, Mnemonic Attunement Pane, Moonfang Shroud, Outrider's Bridle Chain, or the Countess' Parasol",142261,1,0,57592,2,1
 142265,"Eat Tuskar Soup while under the effects of one of the following toys: Eternal Black Diamond Ring, Home Made Party Mask, Horse Head Costume, Kovork Kostume, Magic Pet Mirror, Stylish Black Parasol, Mnemonic Attunement Pane, Moonfang Shroud, Outrider's Bridle Chain, or the Countess' Parasol",142261,1,0,57593,3,1
@@ -79130,6 +79127,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 142329,"Ruby Life Pools",142324,1,0,57638,4,2
 142330,"The Azure Vault",142324,1,0,57637,5,2
 142331,"The Nokhud Offensive",142324,1,0,57636,6,2
+142332,"Uldaman: Legacy of Tyr",142324,1,0,57635,7,2
+142333,Evoker,24236,0,0,64622,12,2
 142334,Evoker,24248,0,0,64622,12,2
 142335,Evoker,24260,0,0,64622,12,2
 142336,Evoker,7276,1,0,57644,12,0
@@ -79684,7 +79683,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 143204,"Lorac Slain",143203,1,0,58231,0,0
 143205,"10.1 UG - Ch 1 - Primalist Blockade - Step 5C - Fire Portal Destroyed (JSS)",0,0,4,0,0,0
 143206,"Fire Portal Destroyed",143205,1,0,58232,0,0
-143306,"Receiving Stone: Final Warning",143301,0,0,57815,4,0
 143207,"10.1 UG - Ch 1 - Primalist Blockade - Step 6A - Begin RTC (JSS)",0,0,4,0,0,0
 143208,"Begin RTC",143207,1,0,58233,0,0
 143209,"10.1 UG - Ch 1 - Primalist Blockade - Step 6B - End RTC (JSS)",0,0,4,0,0,0
@@ -79757,6 +79755,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 143303,"Journal Entry: Relics",143301,0,0,57812,1,0
 143304,"Journal Entry: The Creches",143301,0,0,57813,2,0
 143305,"Journal Entry: Silence",143301,0,0,57814,3,0
+143306,"Receiving Stone: Final Warning",143301,0,0,57815,4,0
 143307,"Receiving Stone: Protest",143301,0,0,57816,5,0
 143308,"Receiving Stone: Initial Report",143301,0,0,57817,6,0
 143309,"Receiving Stone: The Prisoner",143301,0,0,57818,7,0
@@ -117555,7 +117554,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229661,Lockjaw,229657,1,0,115284,3,0
 229662,Hisstara,229657,1,0,115281,4,0
 229663,"Szarith the Fanged",229657,1,0,115282,5,0
-229664,Garsecg,229657,1,0,110172,6,0
+229664,Garsecg,229657,1,0,118221,6,0
 229665,Nar'zira,229657,1,0,115283,7,0
 229666,"Coin-Eye Skully",229657,1,0,115285,8,0
 229667,"Big Mon",229657,1,0,115286,9,0
