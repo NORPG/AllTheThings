@@ -344,7 +344,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48521, {	-- Charming the Lifeless
 				["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
-				["provider"] = {"o",273814},	-- Bladed Charm
+				["provider"] = { "o", 273814 },	-- Bladed Charm
 				["coord"] = { 70.0, 62.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47981, {	-- Cracking the Curse
 				["sourceQuests"] = { 47979 },	-- Witch Hunt (must be ON this quest and sit on the stool for this quest to become available)
-				["provider"] = {"o",272422},	-- Gentle's Spellbook
+				["provider"] = { "o", 272422 },	-- Gentle's Spellbook
 				["coord"] = { 60.5, 31.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49805, {	-- Implements of Ill Intent
 				["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
-				["provider"] = {"o",292523},	-- Heartsbane Grimoire
+				["provider"] = { "o", 279337 },	-- Heartsbane Grimoire
 				["coord"] = { 37.7, 50.3, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1014,7 +1014,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50912, {	-- Remix to Ignition
 				-- ["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
-				["provider"] = {"o",284426},	-- Buried Mining Machine
+				["provider"] = { "o", 284426 },	-- Buried Mining Machine
 				["coord"] = { 34.7, 40.0, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48805, {	-- Research Recovery
 				["sourceQuests"] = { 48793 },	-- The Adventurer's Society
-				["provider"] = {"o",276251},	-- Excavation Inventory
+				["provider"] = { "o", 276251 },	-- Excavation Inventory
 				["coord"] = { 51.8, 22.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1142,7 +1142,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47968, {	-- Signs and Portents
 				["sourceQuests"] = { 48622, },	-- The Vanishing Lord
-				["provider"] = {"o",272179},	-- Mayor's Bulletin
+				["provider"] = { "o", 272179 },	-- Mayor's Bulletin
 				["coord"] = { 56.1, 35.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1326,14 +1326,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50586, {	-- The Fall of Corlain
 				["sourceQuests"] = { 50457 },	-- Break on Through
-				["provider"] = {"o",281673},	-- Corlain Citizen's Journal
+				["provider"] = { "o", 281673 },	-- Corlain Citizen's Journal
 				["coord"] = { 30.7, 19.5, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = { i(160109) },	-- The Fall of Corlain
 			}),
 			q(47982, {	-- The Final Effigy
 				["sourceQuests"] = { 47981 },	-- Cracking the Curse
-				["provider"] = {"o",278675},	-- Cursed Effigy
+				["provider"] = { "o", 278675 },	-- Cursed Effigy
 				["coord"] = { 55.8, 35.0, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				-- Awarded "The Final Effigy" criteria
@@ -1486,7 +1486,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47978, {	-- The Wayward Crone
 				["sourceQuests"] = { 47968 },	-- Signs and Portents
-				["provider"] = {"o",278669},	-- Fallhaven Ledger
+				["provider"] = { "o", 278669 },	-- Fallhaven Ledger
 				["coord"] = { 55.6, 35.73, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -1582,13 +1582,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51547, {	-- WANTED: Rindlewoe
 				["sourceQuests"] = { 47982 },	-- The Final Effigy
-				["provider"] = {"o",290419},	-- Wanted Poster
+				["provider"] = { "o", 290419 },	-- Wanted Poster
 				["coord"] = { 55.7, 34.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51356, {	-- WANTED: Sister Lilias
 				["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
-				["provider"] = {"o",288622},	-- Wanted Poster
+				["provider"] = { "o", 288622 },	-- Wanted Poster
 				["coord"] = { 31.7, 30.7, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				-- Not required for "Drust Do It."
@@ -1598,14 +1598,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51390, {	-- WANTED: The Crimson Cutthroats
 				["sourceQuests"] = { 49939 },	-- So Long, Sister
-				["provider"] = {"o",289365},	-- Wanted Poster
+				["provider"] = { "o", 289365 },	-- Wanted Poster
 				["coord"] = { 26.4, 72.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				-- Not required for "Drust Do It."
 			}),
 			q(52033, {	-- WANTED: The Rime Huntress
 				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-				["provider"] = {"o",292523},	-- Wanted Poster
+				["provider"] = { "o", 292523 },	-- Wanted Poster
 				["coord"] = { 41.2, 40.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				-- May have additional sourceQuests; needs confirmation. Picked up after turning in "The Order of Embers."

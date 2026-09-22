@@ -1544,7 +1544,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51358, {	-- WANTED: Gryphon 'Nappers
-				["provider"] = {"o",288641},	-- WANTED: Gryphon 'Nappers
+				["provider"] = { "o", 288641 },	-- WANTED: Gryphon 'Nappers
 				["coord"] = { 66.8, 24.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 			}),

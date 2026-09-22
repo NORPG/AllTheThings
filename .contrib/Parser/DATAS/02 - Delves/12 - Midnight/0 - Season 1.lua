@@ -224,7 +224,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				filter(MISC, {
 					i(252415, {	-- Trovehunter's Bounty
-						["providers"] = {{"o",618495}},	-- Nullaeus Cache (verified)
+						["provider"] = { "o", 618495 },	-- Nullaeus Cache (verified)
 					}),
 					-- Bonus roll
 					i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove

@@ -880,7 +880,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			r(391185, {	-- Primal Invocation Extract
 				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
 				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
-				["provider"] = {"s",13262},	-- Disenchant
+				["provider"] = { "s", 13262 },	-- Disenchant
 				["sourceQuests"] = {
 					71936,	-- Disenchanted Glimmer of Air
 					71937,	-- Disenchanted Glimmer of Earth
@@ -892,31 +892,31 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			hqt(71936, {
 				["name"] = "Disenchanted Glimmer of Air",
 				["sourceQuest"] = 71939,	-- Glimmer of Air Drop
-				["provider"] = {"s",13262},	-- Disenchant
+				["provider"] = { "s", 13262 },	-- Disenchant
 				["cost"] = {{"i",201358,1}},	-- Glimmer of Air
 			}),
 			hqt(71937, {
 				["name"] = "Disenchanted Glimmer of Earth",
 				["sourceQuest"] = 71940,	-- Glimmer of Earth Drop
-				["provider"] = {"s",13262},	-- Disenchant
+				["provider"] = { "s", 13262 },	-- Disenchant
 				["cost"] = {{"i",201359,1}},	-- Glimmer of Earth
 			}),
 			hqt(71934, {
 				["name"] = "Disenchanted Glimmer of Fire",
 				["sourceQuest"] = 71941,	-- Glimmer of Fire Drop
-				["provider"] = {"s",13262},	-- Disenchant
+				["provider"] = { "s", 13262 },	-- Disenchant
 				["cost"] = {{"i",201356,1}},	-- Glimmer of Fire
 			}),
 			hqt(71935, {
 				["name"] = "Disenchanted Glimmer of Frost",
 				["sourceQuest"] = 71942,	-- Glimmer of Frost Drop
-				["provider"] = {"s",13262},	-- Disenchant
+				["provider"] = { "s", 13262 },	-- Disenchant
 				["cost"] = {{"i",201357,1}},	-- Glimmer of Frost
 			}),
 			hqt(71938, {
 				["name"] = "Disenchanted Glimmer of Order",
 				["sourceQuest"] = 71943,	-- Glimmer of Order Drop
-				["provider"] = {"s",13262},	-- Disenchant
+				["provider"] = { "s", 13262 },	-- Disenchant
 				["cost"] = {{"i",201360,1}},	-- Glimmer of Order
 			}),
 			itemDropHQT(201358, 71939),	-- Glimmer of Air Drop
@@ -1451,7 +1451,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			i(198180),	-- D.U.C.K.O.Y.+
 			i(198181),	-- D.U.C.K.O.Y.++
 			i(198182),	-- D.U.C.K.O.Y.+++
-			i(202310, {["provider"]={"i",202309}}),	-- Defective Doomsday Device
+			i(202310, { ["provider"] = { "i", 202309 } }),	-- Defective Doomsday Device
 			i(198163),	-- Endless Stack of Needles+
 			i(198164),	-- Endless Stack of Needles++
 			i(198165),	-- Endless Stack of Needles+++
@@ -1464,9 +1464,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			i(199193),	-- EZ-Thro Grease Grenade+
 			i(199194),	-- EZ-Thro Grease Grenade++
 			i(199195),	-- EZ-Thro Grease Grenade+++
-			i(204827, {["timeline"] = {ADDED_10_1_0}}),	-- EZ-Thro Polarity Bomb+
-			i(204828, {["timeline"] = {ADDED_10_1_0}}),	-- EZ-Thro Polarity Bomb++
-			i(204829, {["timeline"] = {ADDED_10_1_0}}),	-- EZ-Thro Polarity Bomb+++
+			i(204827, { ["timeline"] = { ADDED_10_1_0 } }),	-- EZ-Thro Polarity Bomb+
+			i(204828, { ["timeline"] = { ADDED_10_1_0 } }),	-- EZ-Thro Polarity Bomb++
+			i(204829, { ["timeline"] = { ADDED_10_1_0 } }),	-- EZ-Thro Polarity Bomb+++
 			i(198210),	-- EZ-Thro Primal Deconstruction Charge+
 			i(198211),	-- EZ-Thro Primal Deconstruction Charge++
 			i(198212),	-- EZ-Thro Primal Deconstruction Charge+++
@@ -1477,7 +1477,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			i(198293),	-- Grease Grenade++
 			i(198294),	-- Grease Grenade+++
 			i(198224),	-- Green Fireflight
-			i(203411, {["timeline"] = {ADDED_10_0_7}}),	-- Gnomish Voicebox
+			i(203411, { ["timeline"] = { ADDED_10_0_7 } }),	-- Gnomish Voicebox
 			i(198310),	-- Gyroscopic Kaleidoscope+
 			i(198311),	-- Gyroscopic Kaleidoscope++
 			i(198312),	-- Gyroscopic Kaleidoscope+++
@@ -1490,7 +1490,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			i(198157),	-- I.W.I.N. Button Mk10+
 			i(198158),	-- I.W.I.N. Button Mk10++
 			i(198159),	-- I.W.I.N. Button Mk10+++
-			i(204856, {["timeline"] = {ADDED_10_1_0}}),	-- Inspired Order Recalibrator
+			i(204856, { ["timeline"] = { ADDED_10_1_0 } }),	-- Inspired Order Recalibrator
 			i(198256),	-- Magazine of Healing Darts+
 			i(198257),	-- Magazine of Healing Darts++
 			i(198258),	-- Magazine of Healing Darts+++
@@ -1505,9 +1505,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			i(198220),	-- Overcharged Overclocker++
 			i(198221),	-- Overcharged Overclocker+++
 			i(198651),	-- Piece of Scrap
-			i(204823, {["timeline"] = {ADDED_10_1_0}}),	-- Polarity Bomb+
-			i(204825, {["timeline"] = {ADDED_10_1_0}}),	-- Polarity Bomb++
-			i(204826, {["timeline"] = {ADDED_10_1_0}}),	-- Polarity Bomb+++
+			i(204823, { ["timeline"] = { ADDED_10_1_0 } }),	-- Polarity Bomb+
+			i(204825, { ["timeline"] = { ADDED_10_1_0 } }),	-- Polarity Bomb++
+			i(204826, { ["timeline"] = { ADDED_10_1_0 } }),	-- Polarity Bomb+++
 			i(198265),	-- Portable Alchemist's Lab Bench
 			i(198268),	-- Portable Tinker's Workbench
 			i(198278),	-- Primal Deconstruction Charge+

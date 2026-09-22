@@ -1354,10 +1354,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["qi"] = 11844,	-- Pestlezugg's Un'Goro Report
-                    ["sourceQuest"] = 4507,	-- Pawn Captures Queen
-                    ["coord"] = { 50.8, 27.0, TANARIS },
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["coord"] = { 50.8, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-                    ["lvl"] = 50,
+					["lvl"] = 50,
 				},
 				q(25166, {	-- Captain Dreadbeard (A)
 					["sourceQuests"] = {

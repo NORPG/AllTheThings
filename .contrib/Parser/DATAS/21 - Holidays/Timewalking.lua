@@ -3763,12 +3763,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				["timeline"] = { ADDED_9_1_5 },
 				["description"] = "Can drop from the last boss of any 'Cataclysm Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
-			i(133378, {	-- Smoldering Timewarped Ember (A)
+			a(i(133378, {	-- Smoldering Timewarped Ember [A] (QS!)
 				["description"] = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
-			}),
-			i(133377, {	-- Smoldering Timewarped Ember (H)
+			})),
+			h(i(133377, {	-- Smoldering Timewarped Ember [H] (QS!)
 				["description"] = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
-			}),
+			})),
 		}),
 		n(QUESTS, {
 			-- TW Cata Quest under level 80
@@ -3881,20 +3881,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				},
 			}),
 			q(40787, {	-- The Smoldering Ember (A)
-				["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
+				["qs"] = 133378,	-- Smoldering Timewarped Ember (QS!)
 				["races"] = ALLIANCE_ONLY,
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 			q(40786, {	-- The Smoldering Ember (H)
-				["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
+				["qs"] = 133377,	-- Smoldering Timewarped Ember (QS!)
 				["races"] = HORDE_ONLY,
 				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
-				},
+				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 		}),
 		n(VENDORS, {

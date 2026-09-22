@@ -76,21 +76,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
-                ["groups"] = {
+				["groups"] = {
 					BossOnly(CHARONUS, {
 						ach(61509),	-- Heroic: Voidscar Arena
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-                ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
-                ["groups"] = {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+				["groups"] = {
 					BossOnly(CHARONUS, {
 						ach(61510),	-- Mythic: Voidscar Arena
 						ach(61620),	-- Mythic: Voidscar Arena Guild Run
 					}),
-                },
-            }),
+				},
+			}),
 		},
 	}),
 })));

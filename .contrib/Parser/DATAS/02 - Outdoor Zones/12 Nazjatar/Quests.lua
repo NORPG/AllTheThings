@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		q(55681, {	-- Crab Marks The Spot
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
-			["provider"] = {"o",325954},	-- Illegible Treasure Map
+			["provider"] = { "o", 325954 },	-- Illegible Treasure Map
 			["coord"] = { 43.8, 54.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -1370,7 +1370,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		q(55845, {	-- Plans of Attack
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
-			["provider"] = {"o",326148},	-- Naga Attack Plans
+			["provider"] = { "o", 326148 },	-- Naga Attack Plans
 			["coord"] = { 37.2, 19.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -2559,7 +2559,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		q(55774, {	-- WANTED: Inquisitor Ithriza (A)
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
-			["provider"] = {"o",326141},	-- Bounty Board
+			["provider"] = { "o", 326141 },	-- Bounty Board
 			["coord"] = { 39.2, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -2761,8 +2761,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["providers"] = {
-				{"o",326142},	-- Bounty Board
-				{"n",153364},	-- Scout Marlin
+				{ "o", 326142 },	-- Bounty Board
+				{ "n", 153364 },	-- Scout Marlin
 			},
 			["coord"] = { 45.6, 58.6, NAZJATAR },
 			["races"] = HORDE_ONLY,

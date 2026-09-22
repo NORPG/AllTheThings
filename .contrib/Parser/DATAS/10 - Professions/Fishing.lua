@@ -230,9 +230,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		container(67414, {	-- Bag of Shiny Things
 			["description"] = "Fishing Daily Quest Reward",
 			["timeline"] = { ADDED_4_0_1 },
-			["providers"] = {
-				{"i",112623},	-- Pack of Fishing Supplies
-			},
+			["provider"] = { "i", 112623 },	-- Pack of Fishing Supplies
 			["groups"] = {
 				i(44983),	-- Strand Crawler (PET!)
 				i(33820),	-- Weather-Beaten Fishing Hat

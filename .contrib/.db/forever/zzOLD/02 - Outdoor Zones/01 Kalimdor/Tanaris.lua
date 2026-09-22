@@ -197,9 +197,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
 						{ "i", 11844 },	-- Pestlezugg's Un'Goro Report
 					},
-                    ["sourceQuest"] = 4507,	-- Pawn Captures Queen
-                    ["coord"] = { 50.8, 27.0, MAP.TANARIS },
-                    ["lvl"] = 50,
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["coord"] = { 50.8, 27.0, MAP.TANARIS },
+					["lvl"] = 50,
 				},
 				q(6610, {	-- Clamlette Surprise
 					["sourceQuests"] = {

@@ -58,10 +58,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		["isRaid"] = true,
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-			}),
-            n(QUESTS, {
-            }),
 			Difficulty(DIFFICULTY.RAID.MULTI.MID_WORLD_BOSS_RAID).AddGroups({
 				n(WORLD_QUESTS, {
 					q(97128, {	-- Lair: Nymrissa Wavecaller

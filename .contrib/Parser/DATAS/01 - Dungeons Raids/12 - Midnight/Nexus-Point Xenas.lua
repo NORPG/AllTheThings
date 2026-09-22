@@ -77,14 +77,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-                ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-                ["groups"] = {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				["groups"] = {
 					BossOnly(LOTHRAXION, {
 						ach(61647),	-- Mythic: Nexus-Point Xenas
 						ach(61618),	-- Mythic: Nexus-Point Xenas Guild Run
 					}),
-                },
-            }),
+				},
+			}),
 		},
 	}),
 })));

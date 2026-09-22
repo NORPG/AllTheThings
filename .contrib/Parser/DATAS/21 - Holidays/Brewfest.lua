@@ -3403,17 +3403,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 								["timeline"] = { ADDED_8_0_1 },
 								["cost"] = BREWFEST_TOKEN_COST(10),
 							}),
-                            i(249858, {	-- Brewer's Basic Belt
-                            	["cost"] = BREWFEST_TOKEN_COST(150),
+							i(249858, {	-- Brewer's Basic Belt
+								["cost"] = BREWFEST_TOKEN_COST(150),
 							}),
 							i(241343, {	-- Brewer's Basic Beret
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241347, {	-- Brewer's Basic Kilt
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241232, {	-- Brewer's Basic Shoulder Cape
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(249860, {	-- Brewer's Black Belt
 								["cost"] = BREWFEST_TOKEN_COST(150),
@@ -3427,17 +3427,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(241266, {	-- Brewer's Black Shoulder Cape
 								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
-                            i(249857, {	-- Brewer's Blue Belt
-                            	["cost"] = BREWFEST_TOKEN_COST(150),
+							i(249857, {	-- Brewer's Blue Belt
+								["cost"] = BREWFEST_TOKEN_COST(150),
 							}),
 							i(241345, {	-- Brewer's Blue Beret
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241350, {	-- Brewer's Blue Kilt
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241341, {	-- Brewer's Blue Shoulder Cape
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(249859, {	-- Brewer's Green Belt
 								["cost"] = BREWFEST_TOKEN_COST(150),
@@ -3587,17 +3587,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 								["timeline"] = { ADDED_8_0_1 },
 								["cost"] = BREWFEST_TOKEN_COST(10),
 							}),
-                            i(249858, {	-- Brewer's Basic Belt
-                            	["cost"] = BREWFEST_TOKEN_COST(150),
+							i(249858, {	-- Brewer's Basic Belt
+								["cost"] = BREWFEST_TOKEN_COST(150),
 							}),
 							i(241343, {	-- Brewer's Basic Beret
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241347, {	-- Brewer's Basic Kilt
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241232, {	-- Brewer's Basic Shoulder Cape
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(249860, {	-- Brewer's Black Belt
 								["cost"] = BREWFEST_TOKEN_COST(150),
@@ -3611,17 +3611,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(241266, {	-- Brewer's Black Shoulder Cape
 								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
-                            i(249857, {	-- Brewer's Blue Belt
-                            	["cost"] = BREWFEST_TOKEN_COST(150),
+							i(249857, {	-- Brewer's Blue Belt
+								["cost"] = BREWFEST_TOKEN_COST(150),
 							}),
 							i(241345, {	-- Brewer's Blue Beret
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241350, {	-- Brewer's Blue Kilt
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(241341, {	-- Brewer's Blue Shoulder Cape
-                            	["cost"] = BREWFEST_TOKEN_COST(200),
+								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(249859, {	-- Brewer's Green Belt
 								["cost"] = BREWFEST_TOKEN_COST(150),

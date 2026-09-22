@@ -4,15 +4,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 local L = {
 	-- Temporary
-    EVENT_REMAPPING = {};
-    EVENT_TIMERUNNING_SEASONS = {};
-    HEADER_DESCRIPTIONS = {};
-    HEADER_EVENTS = {};
-    HEADER_ICONS = {};
-    HEADER_LORE = {};
-    HEADER_NAMES = {};
-    QUEST_NAMES = {};
-    MAP_ID_TO_ZONE_TEXT = {};
+	EVENT_REMAPPING = {};
+	EVENT_TIMERUNNING_SEASONS = {};
+	HEADER_DESCRIPTIONS = {};
+	HEADER_EVENTS = {};
+	HEADER_ICONS = {};
+	HEADER_LORE = {};
+	HEADER_NAMES = {};
+	QUEST_NAMES = {};
+	MAP_ID_TO_ZONE_TEXT = {};
 
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
@@ -202,11 +202,11 @@ local ABBREVIATIONS = {
 	["The Tidebound Grotto"] = "Tidebound Grotto",
 	["Nymrissa Wavecaller"] = "Nymrissa",
 	["The Venomous Abyss"] = "Venomous Abyss",
-    ["Nek'zali the Soulcoiler"] = "Nek'zali",
-    ["Vashnik the Malignant"] = "Vashnik",
-    ["The Lost Explorers"] = "Lost Explorers",
-    ["The Twin Fangs"] = "Twin Fangs",
-    ["The Coiled Altar"] = "Coiled Altar",
+	["Nek'zali the Soulcoiler"] = "Nek'zali",
+	["Vashnik the Malignant"] = "Vashnik",
+	["The Lost Explorers"] = "Lost Explorers",
+	["The Twin Fangs"] = "Twin Fangs",
+	["The Coiled Altar"] = "Coiled Altar",
 	-- Outdoor Zones
 	["One Does Not Simply Walk Into Harandar"] = "One Does Not Simply...",
 	["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",

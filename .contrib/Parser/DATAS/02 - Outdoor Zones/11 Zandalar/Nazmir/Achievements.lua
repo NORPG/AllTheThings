@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(13024),	-- Carved in Stone, Written in Blood (automated)
 			ach(12588, {	-- Eat Your Greens
 				crit(40542, {	-- Saurolisk Tail
-					["provider"] = {"o",291233},	-- Saurolisk Tail
+					["provider"] = { "o", 291233 },	-- Saurolisk Tail
 					["coords"] = {
 						{ 30.3, 52.7, NAZMIR },
 						{ 30.1, 39.7, NAZMIR },
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["icon"] = 459041,
 				}),
 				crit(40543, {	-- Bwonsamdi's Tears
-					["provider"] = {"o",291238},	-- Bwonsamdi's Tears
+					["provider"] = { "o", 291238 },	-- Bwonsamdi's Tears
 					["coords"] = {
 						{ 55.6, 74.7, NAZMIR },
 						{ 46.1, 71.9, NAZMIR },
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["icon"] = 1785788,
 				}),
 				crit(40544, {	-- Gnarl Root
-					["provider"] = {"o",291241},	-- Gnarl Root
+					["provider"] = { "o", 291241 },	-- Gnarl Root
 					["coords"] = {
 						{ 28.0, 35.3, NAZMIR },
 						{ 35.2, 66.4, NAZMIR },
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["icon"] = 134187,
 				}),
 				crit(40546, {	-- Sapphire Amaraina
-					["provider"] = {"o",292812},	-- Sapphire Amaraina
+					["provider"] = { "o", 292812 },	-- Sapphire Amaraina
 					["coords"] = {
 						{ 73.7, 39.7, NAZMIR },
 						{ 81.9, 55.9, NAZMIR },
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["icon"] = 959805,
 				}),
 				crit(40549, {	-- Krag'wa's Ire
-					["provider"] = {"o",292823},	-- Krag'wa's Ire
+					["provider"] = { "o", 292823 },	-- Krag'wa's Ire
 					["coords"] = {
 						{ 52.6, 35.8, NAZMIR },
 						{ 50.4, 39.7, NAZMIR },
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["icon"] = 960694,
 				}),
 				crit(40550, {	-- Stonebloom
-					["provider"] = {"o",292825},	-- Stonebloom
+					["provider"] = { "o", 292825 },	-- Stonebloom
 					["coords"] = {
 						{ 29.9, 42.9, NAZMIR },
 						{ 54.5, 56.1, NAZMIR },

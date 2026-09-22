@@ -7,10 +7,10 @@ root(ROOTS.Zones, {
 	header(HEADERS.Object, 206109, sharedDataSelf({	-- Warchief's Command Board
 		["races"] = HORDE_ONLY,
 		["providers"] = {
-			{"o",206109},	-- [Org]
-			{"o",206116},	-- [Org]
-			{"o",207323},	-- [TB]
-			{"o",207324},	-- [UC]
+			{ "o", 206109 },	-- [Org]
+			{ "o", 206116 },	-- [Org]
+			{ "o", 207323 },	-- [TB]
+			{ "o", 207324 },	-- [UC]
 		},
 		["timeline"] = { ADDED_4_0_1 },
 	},{
@@ -42,9 +42,9 @@ root(ROOTS.Zones, {
 	header(HEADERS.Object, 206111, sharedDataSelf({	-- Hero's Call Board
 		["races"] = ALLIANCE_ONLY,
 		["providers"] = {
-			{"o",206111},	-- [SW]
-			{"o",207321},	-- [DA]
-			{"o",207320},	-- [IF]
+			{ "o", 206111 },	-- [SW]
+			{ "o", 207321 },	-- [DA]
+			{ "o", 207320 },	-- [IF]
 		},
 		["timeline"] = { ADDED_4_0_1 },
 	},{

@@ -227,8 +227,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				hqt(86407, {
 					["name"] = "Received Item from Underpin (Delve)",
 					["providers"] = {
-						{"n",234168},	-- The Underpin ?
-						{"n",236626},	-- The Underpin ??
+						{ "n", 234168 },	-- The Underpin ?
+						{ "n", 236626 },	-- The Underpin ??
 					},
 					["timeline"]={ ADDED_11_1_0_SEASONSTART },
 					["isWeekly"] = true,
@@ -4512,13 +4512,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- #endif
 			["providers"] = {
 				-- #if AFTER 11.2.0
-				{"i",248017},	-- Shrieking Quartz (not really a quest provider, but otherwise turns into a quest item cuz providers)
-				{"o",547532},	-- Ky'veza's Etheric Cache
-				{"n",244755},	-- Nexus-Princess Ky'veza
+				{ "i", 248017 },	-- Shrieking Quartz (not really a quest provider, but otherwise turns into a quest item cuz providers)
+				{ "o", 547532 },	-- Ky'veza's Etheric Cache
+				{ "n", 244755 },	-- Nexus-Princess Ky'veza
 				-- #else
-				{"i",233186},	-- Wave Scrambler 2000 (not really a quest provider, but otherwise turns into a quest item cuz providers)
-				{"o",507768},	-- Jettisoned Pile of Goblin-Bucks
-				{"n",236942},	-- The Underpin
+				{ "i", 233186 },	-- Wave Scrambler 2000 (not really a quest provider, but otherwise turns into a quest item cuz providers)
+				{ "o", 507768 },	-- Jettisoned Pile of Goblin-Bucks
+				{ "n", 236942 },	-- The Underpin
 				-- #endif
 			},
 			["timeline"]={ADDED_11_1_0_SEASONSTART},

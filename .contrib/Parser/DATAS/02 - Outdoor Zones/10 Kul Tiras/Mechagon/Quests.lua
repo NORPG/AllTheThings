@@ -1163,12 +1163,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["repeatable"] = true,
 			}),
 			q(56434, {	-- WANTED: Junkbrat and Roadtrogg
-				["provider"] = {"o",329641},	-- Wanted: Junkbrat and Roadtrogg
+				["provider"] = { "o", 329641 },	-- Wanted: Junkbrat and Roadtrogg
 				["coord"] = { 67.3, 35.2, MECHAGON },
 				["isDaily"] = true,
 			}),
 			q(56508, {	-- Waste Not (picked up while doing "A Direct Approach," but not sure if you have to be on that quest or what the SQs are)
-				["provider"] = {"o",329715},	-- Useful Bits and Pieces
+				["provider"] = { "o", 329715 },	-- Useful Bits and Pieces
 				["coords"] = {
 					{ 40.8, 38.8, MECHAGON },
 					{ 43.0, 41.1, MECHAGON },

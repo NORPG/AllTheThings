@@ -603,10 +603,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			["providers"] = {
 				-- no Wowhead data to confirm these in Delves, only a few confirmed drops by word of mouth
 				-- added based on respective Item tooltips of what can contain Recipes in Delve UI
-				{"o",584518},	-- Bountiful Heavy Trunk
-				{"o",584515},	-- Bountiful Heavy Trunk
-				{"o",584517},	-- Heavy Trunk
-				{"o",584519},	-- Heavy Trunk
+				{ "o", 584518 },	-- Bountiful Heavy Trunk
+				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584517 },	-- Heavy Trunk
+				{ "o", 584519 },	-- Heavy Trunk
 			},
 			["groups"] = {
 				i(259366),	-- Design: Replica Haranir Mural (RECIPE!)

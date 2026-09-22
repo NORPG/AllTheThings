@@ -3,7 +3,7 @@
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.TWW, bubbleDown({["timeline"] = {ADDED_11_2_0}}, {
-        -- Class Trial -- Darkal
-        i(243235),	-- Adventurer's Footlocker
-    })),
+		-- Class Trial -- Darkal
+		i(243235),	-- Adventurer's Footlocker
+	})),
 }));

@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42767, {	-- Veteran of the Dawn
-            ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42768, {	-- Champion of the Dawn
 			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },

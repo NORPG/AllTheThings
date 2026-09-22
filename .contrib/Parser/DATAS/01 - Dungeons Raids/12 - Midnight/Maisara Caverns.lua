@@ -79,14 +79,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-                ["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-                ["groups"] = {
+				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				["groups"] = {
 					BossOnly(RAKTUL, {
 						ach(61645),	-- Mythic: Maisara Caverns
 						ach(61616),	-- Mythic: Maisara Caverns Guild Run
 					}),
-                },
-            }),
+				},
+			}),
 		},
 	}),
 })));

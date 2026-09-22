@@ -669,8 +669,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(223097),	-- Pattern: Adrenal Surge Clasp (RECIPE!)
 				}),
 				BossOnly(BANDIT, {
-					i(232526,{provider={"i",232805}}),	-- Best-in-Slots
-					i(232805,{provider={"i",232526}}),	-- Best-in-Slots
+					i(232526,{ ["provider"] = { "i", 232805 } }),	-- Best-in-Slots
+					i(232805,{ ["provider"] = { "i", 232526 } }),	-- Best-in-Slots
 					i(237578, {	-- Counterfeit Dealer's Chip
 						["description"] = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
 						["minReputation"] = { FACTION_GALLAGIO, 15 },

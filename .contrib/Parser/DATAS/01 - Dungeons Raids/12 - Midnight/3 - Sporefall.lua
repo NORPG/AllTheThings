@@ -13,17 +13,17 @@ local EncounterToCRS = {
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[ROTMIRE] = {
-        i(268283),	-- Festerbloom Crown
-        i(268288),	-- Fungarian Folly Faulds
-        i(268289),	-- Girdle of Devouring Rot
-        i(268287),	-- Grudgefiend Stompers
-        i(268282),	-- Luxurious Loamstriders
-        i(268284),	-- Mycomancer's Rot Robes
-        i(268285),	-- Putrid Tender's Battleplate
-        i(268291),	-- Rotmire's Sporeheart
-        i(268286),	-- Sash of the Putrid Giant
-        i(268290),	-- Sporecaller's Blooming Loop
-        i(268292),	-- Sporelord's Mycelial Insignia
+		i(268283),	-- Festerbloom Crown
+		i(268288),	-- Fungarian Folly Faulds
+		i(268289),	-- Girdle of Devouring Rot
+		i(268287),	-- Grudgefiend Stompers
+		i(268282),	-- Luxurious Loamstriders
+		i(268284),	-- Mycomancer's Rot Robes
+		i(268285),	-- Putrid Tender's Battleplate
+		i(268291),	-- Rotmire's Sporeheart
+		i(268286),	-- Sash of the Putrid Giant
+		i(268290),	-- Sporecaller's Blooming Loop
+		i(268292),	-- Sporelord's Mycelial Insignia
 	};
 };
 
@@ -58,13 +58,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					["cost"] = { { "i", 269245, 4 } },	-- 4x Delicious Sporesnack
 				}),
 			}),
-            n(QUESTS, {
-                q(96746, {	-- Sporefall: Rotmire
-                    ["qg"] = 266165,	-- Sporomir
-                    ["coord"] = { 36.8, 68.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-                    ["groups"] = { i(269258) },	-- Void-Twisted Sporbit
-                }),
-            }),
+			n(QUESTS, {
+				q(96746, {	-- Sporefall: Rotmire
+					["qg"] = 266165,	-- Sporomir
+					["coord"] = { 36.8, 68.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = { i(269258) },	-- Void-Twisted Sporbit
+				}),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(QUESTS, {
 				}),
@@ -72,9 +72,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(63237),	-- Rotmire
 					ach(63242),	-- Rotmire Guild Run
 					i(275228, {["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Rotmire
-                    i(247235),	-- Luminous Rotshroom (DECOR!)
-                    i(264313),	-- Madcap Redcap (TOY!)
-                    i(264367),	-- Mycomancer's Hearthspore (TOY!)
+					i(247235),	-- Luminous Rotshroom (DECOR!)
+					i(264313),	-- Madcap Redcap (TOY!)
+					i(264367),	-- Mycomancer's Hearthspore (TOY!)
 					i(268280),	-- Sporelord's Shroom Cap (COSMETIC!)
 					i(269245),	-- Delicious Sporesnack
 				}),
