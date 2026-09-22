@@ -25,6 +25,7 @@ FLAVOR_FOLDERS: dict[str, str] = {
     "Classic": "01 - Classic",
     "SoM": "02 - Season of Mastery",
     "SoD": "03 - Season of Discovery",
+    "Forever": "00 - Forever",
     "TBC": "04 - The Burning Crusade",
     "WotLK": "05 - Wrath of the Lich King",
     "Cata": "06 - Cataclysm",
