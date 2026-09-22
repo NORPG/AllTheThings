@@ -746,9 +746,9 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			q(9247, {	-- The Keeper's Call
 				["description"] = "You should receive this in the mail at level 60.",
-				["qg"] = 16281,	-- Keeper of the Rolls <The Argent Dawn>
-				["qi"] = 22723,	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
+				["qs"] = 22723,	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
 				["coord"] = { 81.1, 60.5, EASTERN_PLAGUELANDS },
+				["cr"] = 16281,	-- Keeper of the Rolls <The Argent Dawn>
 				["isYearly"] = true,
 				["lvl"] = 60,
 				["groups"] = {

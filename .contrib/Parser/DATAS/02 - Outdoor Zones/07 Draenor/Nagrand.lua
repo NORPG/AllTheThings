@@ -205,68 +205,68 @@ root(ROOTS.Zones, {
 								q(37125, {	-- A Rare Find
 									["qg"] = 87393,	-- Sallee Silverclamp
 									["coord"] = { 50.4, 41.3, DRAENOR_NAGRAND },
-									["cost"] = { { "i", 118100, 1 } },	-- Highmaul Relic
 									["repeatable"] = true,
+									["cost"] = { { "i", 118100, 1 } },	-- 1x Highmaul Relic
 								}),
 								q(37210, {	-- Aogexon's Fang
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118654,	-- Aogexon's Fang
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118654, 1 } },	-- 1x Aogexon's Fang
 								}),
 								q(37211, {	-- Bergruu's Horn
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118655,	-- Bergruu's Horn
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118655, 1 } },	-- 1x Bergruu's Horn
 								}),
 								q(37221, {	-- Dekorhan's Tusk
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118656,	-- Dekorhan's Tusk
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118656, 1 } },	-- 1x Dekorhan's Tusk
 								}),
 								q(37222, {	-- Direhoof's Hide
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118657,	-- Direhoof's Hide
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118657, 1 } },	-- 1x Direhoof's Hide
 								}),
 								q(35147, {	-- Fragments of the Past
 									["qg"] = 87393,	-- Sallee Silverclamp
 									["coord"] = { 50.4, 41.3, DRAENOR_NAGRAND },
-									["cost"] = { { "i", 118099, 20 } },	-- Gorian Artifact Fragment
+									["cost"] = { { "i", 118099, 20 } },	-- 1x Gorian Artifact Fragment
 									["isDaily"] = true,
 								}),
 								q(37223, {	-- Gagrog's Skull
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118658,	-- Gagrog's Skull
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118658, 1 } },	-- 1x Gagrog's Skull
 								}),
 								q(37224, {	-- Mu'gra's Head
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118659,	-- Mu'gra's Head
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118659, 1 } },	-- 1x Mu'gra's Head
 								}),
 								q(37225, {	-- Thek'talon's Talon
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118660,	-- Thek'talon's Talon
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118660, 1 } },	-- 1x Thek'talon's Talon
 								}),
 								q(37520, {	-- Vileclaw's Claw
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 120172,	-- Vileclaw's Claw
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 120172, 1 } },	-- 1x Vileclaw's Claw
 								}),
 								q(37226, {	-- Xelganak's Stinger
 									["qg"] = 87706,	-- Gazmolf Futzwangler
-									["qi"] = 118661,	-- Xelganak's Stinger
 									["coord"] = { 50.3, 41.1, DRAENOR_NAGRAND },
 									["isDaily"] = true,
+									["cost"] = { { "i", 118661, 1 } },	-- 1x Xelganak's Stinger
 								}),
 							}),
 							n(RARES, {

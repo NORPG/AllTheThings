@@ -1185,9 +1185,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if BEFORE 4.0.3
 				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
 				-- #endif
-				["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
-				["qi"] = 12563,	-- Warlord Goretooth's Command
+				["qs"] = 12563,	-- Warlord Goretooth's Command
 				["coord"] = { 5.8, 47.6, BADLANDS },
+				["cr"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,

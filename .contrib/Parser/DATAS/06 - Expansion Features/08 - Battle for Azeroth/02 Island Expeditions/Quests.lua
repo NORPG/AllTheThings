@@ -292,92 +292,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["qg"] = 130216,	-- Magni Bronzebeard
 				["qi"] = 163217,	-- Azeroth's Tear
 				["coord"] = { 42.2, 44.2, SILITHUS },
-				["groups"] = {
-					i(174502),	-- Tear of Azeroth
-				},
+				["groups"] = { i(174502) },	-- Tear of Azeroth
 			}),
 			q(53118, {	-- Dented Coin (A)
 				["qg"] = 122370,	-- Cyrus Crestfall
-				["qi"] = 163616,	-- Dented Coin (A)
 				["coord"] = { 68.0, 22.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(174504),	-- Proudmoore War Copper
-				},
+				["cost"] = { { "i", 163616, 1 }, },	-- 1x Dented Coin (A)
+				["groups"] = { i(174504) },	-- Proudmoore War Copper
 			}),
 			q(53120, {	-- Exotic Spices (A)
 				["qg"] = 136269,	-- Xun Xun Sweetflower
-				["qi"] = 163614,	-- Exotic Spices (A)
 				["coord"] = { 20.6, 45.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(174503),	-- Exotically Spiced Carrot
-				},
+				["cost"] = { { "i", 163614, 1 }, },	-- 1x Exotic Spices (A)
+				["groups"] = { i(174503) },	-- Exotically Spiced Carrot
 			}),
 			q(53114, {	-- Golden Beetle (H)
 				["qg"] = 120551,	-- Krag'wa the Huge
-				["qi"] = 163619,	-- Golden Beetle (H)
 				["coord"] = { 75.6, 56.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(174506),	-- Golden Insect Wings
-				},
+				["cost"] = { { "i", 163619, 1 }, },	-- 1x Golden Beetle (H)
+				["groups"] = { i(174506) },	-- Golden Insect Wings
 			}),
 			q(53115, {	-- Island Flotsam (H)
 				["sourceQuests"] = { 51142 },	-- Pests
 				["qg"] = 126334,	-- Jani
-				["qi"] = 163620,	-- Island Flotsam (H)
 				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(174518),	-- Jani Figurine
-				},
+				["cost"] = { { "i", 163620, 1 }, },	-- 1x Island Flotsam (H)
+				["groups"] = { i(174518) },	-- Jani Figurine
 			}),
 			q(53119, {	-- Lost Sea Scroll (A)
 				["qg"] = 130576,	-- Brother Pike
-				["qi"] = 163615,	-- Lost Sea Scroll (A)
 				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(174505),	-- Tide-Speaker's Tome
-				},
+				["cost"] = { { "i", 163615, 1 }, },	-- 1x Lost Sea Scroll (A)
+				["groups"] = { i(174505) },	-- Tide-Speaker's Tome
 			}),
 			q(53117, {	-- Rusted Alliance Insignia (A)
 				["qg"] = 135446,	-- Vindicator Jaelaana
-				["qi"] = 163617,	-- Rusted Alliance Insignia
 				["coord"] = { 69.2, 25.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(174507),	-- Fallen Soldier's Insignia
-				},
+				["cost"] = { { "i", 163617, 1 }, },	-- 1x Rusted Alliance Insignia
+				["groups"] = { i(174507) },	-- Fallen Soldier's Insignia
 			}),
 			q(53116, {	-- Rusted Horde Insignia (H)
 				["qg"] = 135447,	-- Ransa Greyfeather
-				["qi"] = 163621,	-- Rusted Horde Insignia (H)
 				["coord"] = { 58.0, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(174508),	-- Fallen Soldier's Insignia
-				},
+				["cost"] = { { "i", 163621, 1 }, },	-- 1x Rusted Horde Insignia (H)
+				["groups"] = { i(174508) },	-- Fallen Soldier's Insignia
 			}),
 			q(53113, {	-- Shimmering Shell (H)
 				["qg"] = 135804,	-- Hoarder Jena
-				["qi"] = 163618,	-- Shimmering Shell (H)
 				["coord"] = { 56.7, 49.8, VOLDUN },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(174501),	-- Ornate Voldunai Jewelry
-				},
+				["cost"] = { { "i", 163618, 1 }, },	-- 1x Shimmering Shell (H)
+				["groups"] = { i(174501) },	-- Ornate Voldunai Jewelry
 			}),
 			q(54751, {	-- Soggy Page
-				["providers"] = {
-					{ "n", 135793 },	-- Collector Kojo (A)
-					{ "n", 134345 },	-- Collector Kojo (H)
-					{ "i", 166501 },	-- Soggy Page
+				["qgs"] = {
+					135793 ,	-- Collector Kojo (A)
+					134345 ,	-- Collector Kojo (H)
 				},
-				["groups"] = {
-					i(174519),	-- Verdant Hills of Chokingvine - Page 17
-				},
+				["cost"] = { { "i", 166501, 1 }, },	-- 1x Soggy Page
+				["groups"] = { i(174519) },	-- Verdant Hills of Chokingvine - Page 17
 			}),
 		})),
 		-- Island 'Help NPC' Quests

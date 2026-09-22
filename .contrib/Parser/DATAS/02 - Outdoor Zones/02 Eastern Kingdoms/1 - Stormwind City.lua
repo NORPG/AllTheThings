@@ -3778,8 +3778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1642, {	-- The Tome of Divinity (3/10)
 					["sourceQuest"] = 1641,	-- The Tome of Divinity (2/10)
-					["qg"] = 6171,	-- Duthorian Rall
-					["qi"] = 6775,	-- Tome of Divinity
+					["qs"] = 6775,	-- Tome of Divinity
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 50.5, 47.5, STORMWIND_CITY },
@@ -3787,6 +3786,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
+					["cr"] = 6171,	-- Duthorian Rall
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -4000,8 +4000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1794,	-- The Tome of Valor [Dwarf]
 						1793,	-- The Tome of Valor [Human]
 					},
-					["qg"] = 6171,	-- Duthorian Rall
-					["qi"] = 6776,	-- Tome of Valor
+					["qs"] = 6776,	-- Tome of Valor
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 50.5, 47.5, STORMWIND_CITY },
@@ -4009,6 +4008,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.8, 30.8, STORMWIND_CITY },
 						-- #endif
 					},
+					["cr"] = 6171,	-- Duthorian Rall
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },

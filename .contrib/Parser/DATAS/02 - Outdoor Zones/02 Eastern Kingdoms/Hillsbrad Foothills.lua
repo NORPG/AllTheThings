@@ -2420,9 +2420,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if AFTER CATA
 				q(554, {	-- Stormpike's Deciphering (Alterac Mountains)
 					["sourceQuest"] = 551,	-- The Ensorcelled Parchment
-					["qg"] = 2277,	-- Loremaster Dibbs
-					["qi"] = 3706,	-- Ensorcelled Parchment
+					["qs"] = 3706,	-- Ensorcelled Parchment
 					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
+					["cr"] = 2277,	-- Loremaster Dibbs
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,

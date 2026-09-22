@@ -8,12 +8,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			------ Season 1 ------
 			q(82651, {	-- Omens Unified
 				["qg"] = 223533,	-- Custodian Khubon
-				["qi"] = 211297,	-- Fractured Spark of Omens
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-				["groups"] = {
-					i(211297),	-- Fractured Spark of Omens
-				},
+				["groups"] = { i(211297) },	-- Fractured Spark of Omens
 			}),
 			q(82042, {	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
@@ -37,21 +34,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			------ Season 2 ------
 			q(86369, {	-- A Sparkling Fortune
 				["qg"] = 223533,	-- Custodian Khubon
-				["qi"] = 230905,	-- Fractured Spark of Fortunes
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-				["groups"] = {
-					i(230905),	-- Fractured Spark of Fortunes
-				},
+				["groups"] = { i(230905) },	-- Fractured Spark of Fortunes
 			}),
 			q(90660, {	-- A Golden Circumstance
 				["sourceQuest"] = 86369,	-- A Sparkling Fortune
 				["provider"] = { "n", 223533 },	-- Custodian Khubon
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-				["groups"] = {
-					i(230905),	-- Fractured Spark of Fortunes
-				},
+				["groups"] = { i(230905) },	-- Fractured Spark of Fortunes
 			}),
 			q(86396, {	-- The Best Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
@@ -81,11 +73,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			------ Season 3 ------
 			q(91624, {	-- Spark of Starlight
 				["qg"] = 223533,	-- Custodian Khubon
-				["qi"] = 231757,	-- Fractured Spark of Starlight
 				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
-				["groups"] = {
-					i(231757),	-- Fractured Spark of Starlight
-				},
+				["groups"] = { i(231757) },	-- Fractured Spark of Starlight
 			}),
 			q(86363, {	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
@@ -97,9 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
-				["groups"] = {
-					i(236953),	-- Crimson Valorstone
-				},
+				["groups"] = { i(236953) },	-- Crimson Valorstone
 			}),
 			q(86365, {	-- Crest Transmutation
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones

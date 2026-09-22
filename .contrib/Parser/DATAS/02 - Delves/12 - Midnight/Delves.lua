@@ -184,44 +184,44 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		ach(61713, {	-- Midnight Delver Damage Dealer III
 			["groups"] = {
-				crit(110908, {  -- Atal'Aman
+				crit(110908, {	-- Atal'Aman
 					["maps"] = { ATAL_AMAN },
 				}),
-				crit(110912, {  -- Collegiate Calamity
+				crit(110912, {	-- Collegiate Calamity
 					["maps"] = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
-				crit(115844, {  -- Gnarldor Isle
+				crit(115844, {	-- Gnarldor Isle
 					["maps"] = { GNARLDOR_ISLE },
 				}),
 				-- #endif
-				crit(110910, {  -- Parhelion Plaza
+				crit(110910, {	-- Parhelion Plaza
 					["maps"] = { PARHELION_PLAZA },
 				}),
-				crit(110905, {  -- Shadowguard Point
+				crit(110905, {	-- Shadowguard Point
 					["maps"] = { SHADOWGUARD_POINT },
 				}),
-				crit(110913, {  -- Sunkiller Sanctum
+				crit(110913, {	-- Sunkiller Sanctum
 					["maps"] = { SUNKILLER_SANCTUM },
 				}),
-				crit(110911, {  -- The Darkway
+				crit(110911, {	-- The Darkway
 					["maps"] = { THE_DARKWAY },
 				}),
-				crit(110909, {  -- The Grudge Pit
+				crit(110909, {	-- The Grudge Pit
 					["maps"] = { THE_GRUDGE_PIT },
 				}),
-				crit(110914, {  -- The Gulf of Memory
+				crit(110914, {	-- The Gulf of Memory
 					["maps"] = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
-				crit(115856, {  -- The Ring of Glory
+				crit(115856, {	-- The Ring of Glory
 					["maps"] = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
-				crit(110906, {  -- The Shadow Enclave
+				crit(110906, {	-- The Shadow Enclave
 					["maps"] = { THE_SHADOW_ENCLAVE },
 				}),
-				crit(110915, {  -- Twilight Crypts
+				crit(110915, {	-- Twilight Crypts
 					["maps"] = { TWILIGHT_CRYPTS },
 				}),
 			},

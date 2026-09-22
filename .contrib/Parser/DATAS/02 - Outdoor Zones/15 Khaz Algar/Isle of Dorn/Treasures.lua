@@ -71,49 +71,59 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 48.6, 30.0, ISLE_OF_DORN },
 				["groups"] = {
 					i(224185),	-- Crab-Guiding Branch
-					q(82751, {	-- First Crab
+					hqt(82751, {	-- First Crab
 						["name"] = "First Crab",
-						["qg"] = 224548,	-- Pearlescent Shellcrab
-						["qi"] = 224185,	-- Crab-Guiding Branch
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 50.7, 70.6, ISLE_OF_DORN },
 					}),
-					q(82752, {	-- Second Crab
+					hqt(82752, {	-- Second Crab
 						["name"] = "Second Crab",
-						["qg"] = 224548,	-- Pearlescent Shellcrab
-						["qi"] = 224185,	-- Crab-Guiding Branch
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 74.9, 49.4, ISLE_OF_DORN },
 					}),
-					q(82753, {	-- Third Crab
+					hqt(82753, {	-- Third Crab
 						["name"] = "Third Crab",
-						["qg"] = 224548,	-- Pearlescent Shellcrab
-						["qi"] = 224185,	-- Crab-Guiding Branch
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 70.8, 20.0, ISLE_OF_DORN },
 					}),
-					q(82754, {	-- Fourth Crab
+					hqt(82754, {	-- Fourth Crab
 						["name"] = "Fourth Crab",
-						["qg"] = 224548,	-- Pearlescent Shellcrab
-						["qi"] = 224185,	-- Crab-Guiding Branch
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 41.9, 27.0, ISLE_OF_DORN },
 					}),
-					q(82755, {	-- Fifth Crab
+					hqt(82755, {	-- Fifth Crab
 						["name"] = "Fifth Crab",
-						["qg"] = 224548,	-- Pearlescent Shellcrab
-						["qi"] = 224185,	-- Crab-Guiding Branch
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 19.7, 58.4, ISLE_OF_DORN },
 					}),
-					q(82756, {	-- Sixth Crab
+					hqt(82756, {	-- Sixth Crab
 						["name"] = "Sixth Crab",
 						["description"] = "On tree branch.",
-						["qg"] = 224548,	-- Pearlescent Shellcrab
-						["qi"] = 224185,	-- Crab-Guiding Branch
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 38.3, 42.0, ISLE_OF_DORN },
 					}),
 					o(443318, {	-- Tree's Treasure
 						["sourceQuests"] = { 82751, 82752, 82753, 82754, 82755, 82756 },
 						["questID"] = 83242,
-						["groups"] = {
-							i(224585),	-- Hanna's Locket (TOY!)
-						},
+						["groups"] = { i(224585) },	-- Hanna's Locket (TOY!)
 					}),
 				},
 			}),

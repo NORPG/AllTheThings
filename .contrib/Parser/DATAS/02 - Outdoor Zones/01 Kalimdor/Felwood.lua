@@ -1235,9 +1235,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(4883, {	-- Guarding Secrets (2/2)
 					["sourceQuest"] = 4882,	-- Guarding Secrets (1/2)
-					["qg"] = 10306,	-- Trull Failbane
-					["qi"] = 12558,	-- Blue-feathered Necklace
+					["qs"] = 12558,	-- Blue-feathered Necklace
 					["coord"] = { 34.6, 52.6, FELWOOD },
+					["cr"] = 10306,	-- Trull Failbane
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

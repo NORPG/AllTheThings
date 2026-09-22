@@ -390,22 +390,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84556, {	-- The Forging of Quel'Serrar
 					["sourceQuest"] = 84555,	-- Nostro's Compendium
-					["qg"] = 14368,	-- Lorekeeper Lydros
-					["qi"] = 228695,	-- A Dull and Flat Elven Blade
+					["qs"] = 228695,	-- A Dull and Flat Elven Blade
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["cr"] = 14368,	-- Lorekeeper Lydros
 					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				-- #endif
 				q(7508, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
 					["sourceQuest"] = 7507,	-- Nostro's Compendium
-					["qg"] = 14368,	-- Lorekeeper Lydros
-					["qi"] = 18513,	-- A Dull and Flat Elven Blade
+					["qs"] = 18513,	-- A Dull and Flat Elven Blade
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
 					["maps"] = { DIRE_MAUL },
+					["cr"] = 14368,	-- Lorekeeper Lydros
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
