@@ -37,27 +37,25 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L.TOGGLE_RANDOM
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
+--- @type function,function,function,function,function,function,function,function,function,function,function,function,function
 local print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,tinsert,type,math_floor,GetTime
 	= print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,tinsert,type,math.floor,GetTime
 
 -- Global WoW API Cache
+--- @type function
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- App & Module locals
-local SearchForField, SearchForObject
-	= app.SearchForField, app.SearchForObject
-local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local TryColorizeName = app.TryColorizeName;
-local MergeProperties = app.MergeProperties
-local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local GetRelativeValue = app.GetRelativeValue
+--- @type function,function,function,function,function,function
+local SearchForField,SearchForObject,IsRetrieving,TryColorizeName,MergeProperties,GetRelativeValue
+	= app.SearchForField, app.SearchForObject,app.Modules.RetrievingData.IsRetrieving,app.TryColorizeName,app.MergeProperties,app.GetRelativeValue
+--- @type function,function
+local GetGroupItemIDWithModID, GroupMatchesParams
+	= app.GetGroupItemIDWithModID, app.GroupMatchesParams
+local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR
 
-local
-CreateObject,
-NestObject,
-MergeObjects,
-NestObjects,
-PriorityNestObjects
+--- @type function,function,function,function,function
+local CreateObject,NestObject,MergeObjects,NestObjects,PriorityNestObjects
 =
 app.__CreateObject,
 app.NestObject,
@@ -71,11 +69,9 @@ app.FillRunner = app.CreateRunner("fill");
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
 
-local GetGroupItemIDWithModID, GroupMatchesParams
-	= app.GetGroupItemIDWithModID, app.GroupMatchesParams
-
 do
 local ContainsLimit, ContainsExceeded;
+--- @type function,function
 local GetProgressTextForRow, GetUnobtainableTexture
 app.AddEventHandler("OnLoad", function()
 	GetProgressTextForRow = app.GetProgressTextForRow
@@ -1163,7 +1159,7 @@ local function BuildSourceParent(group)
 							pRef = CreateObject(pRef, true);
 							parents[#parents + 1] = pRef
 						else
-							pRef = app.CreateNPC(id);
+							pRef = app.CreateItem(id);
 							parents[#parents + 1] = pRef
 						end
 					end
