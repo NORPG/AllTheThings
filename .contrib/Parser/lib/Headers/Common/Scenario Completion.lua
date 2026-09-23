@@ -17,7 +17,7 @@ SCENARIO_COMPLETION = createHeader({
 		tw = "戰役完成",
 	},
 	description = {
-		en = "Contains Things which are rewarded that upon completing that scenario.",
+		en = "Contains Things which are rewarded upon scenario completion.",
 		-- TODO: de = "",
 		es = "Contiene cosas que se obtienen como recompensa al completar ese escenario.",
 		mx = "Contiene cosas que se obtienen como recompensa al completar este escenario.",
