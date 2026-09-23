@@ -100449,7 +100449,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 280713,"Big Mon's Buckle",3,11,0,0,-1,90,0,0,0,259,0,8192,0,0,0,-1,-1
 280714,"Hull Render Hauberk",3,11,0,0,-1,90,0,0,0,259,0,8192,0,0,0,-1,-1
 280718,"Unflappable Flapping Cape",3,11,0,0,-1,90,0,0,0,259,0,8192,0,0,0,-1,-1
-280799,"Lu'selama, Light's Justice",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
+280799,"Lu'selama, Light's Justice",4,11,0,0,-1,90,0,0,0,219,524288,8192,0,0,0,-1,-1
 280835,"Sigil of the Impending Eclipse",4,11,0,0,-1,90,0,0,0,219,524288,8192,0,0,0,-1,-1
 280842,"Shadowhunters' Hexblade",2,-3,0,0,-1,1,0,0,0,1,134250496,143360,8388608,65536,0,-1,-1
 281029,"Band of the Swarmcaller",4,11,0,0,-1,90,0,0,0,219,524288,8192,0,0,0,-1,-1
@@ -100493,8 +100493,8 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 281213,"Kith'ix's Seal",3,-3,0,0,-1,1,0,0,0,1,134283328,139264,0,0,0,-1,-1
 281215,"Twisted Horror's Tendril",4,11,0,0,-1,90,0,0,0,219,524288,8192,0,0,0,-1,-1
 281227,"Soulcoiler's Rush'kah",3,11,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
-281235,"Voidweaver's Vestments",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
-281236,"Leggings of Palpable Terror",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
+281235,"Voidweaver's Leggings",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
+281236,"Chestwrap of Palpable Terror",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
 281238,"Aberrant Commander's Gauntlets",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
 281239,"Corroded Hulk's Skullcap",4,11,0,0,-1,90,0,0,0,219,0,8192,0,0,0,-1,-1
 281244,"Amani Scout's Quiver",2,11,0,0,-1,1,0,0,0,1,134217728,139264,0,0,0,-1,-1

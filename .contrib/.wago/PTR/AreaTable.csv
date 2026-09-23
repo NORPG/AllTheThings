@@ -9901,7 +9901,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16945,RitualSite,"Ritual Site",3076,0,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,0,128,0,0,0,0
 16946,Lightbloom,Lightbloom,3076,16945,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,128,0,0,0,0
 16947,12EversongGreatSeaScenario,"The Great Sea",3071,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,2112,128,0,0,0,0
-16948,12SilvermoonEasternKingdomsScenario,"Silvermoon City",3071,0,0,96,0,3555,0,3237,0,1682,0,6,0,13,-1,0,0,0,6413,4136,4224,0,0,0,0
+16948,12SilvermoonEasternKingdomsScenario,"Silvermoon City",3071,0,0,96,0,3555,0,3693,0,0,0,6,0,13,-1,0,0,0,6413,4136,4224,0,0,0,0
 16949,12EversongWoodsEasternKingdomsScenario,"Eversong Woods",3071,0,0,96,0,3132,675,3284,0,0,0,0,0,15,-1,0,0,0,3085,16448,128,0,0,0,0
 16950,12SilvermoonBloodQuarterScenario,"Court of Blood",3071,16948,0,0,0,0,0,3321,0,0,0,4,0,13,-1,0,0,0,0,1080033376,128,0,0,0,0
 16951,12SilvermoonSunCourtScenario,"Court of the Sun",3071,16948,0,0,0,0,0,3321,0,0,0,4,0,13,-1,0,0,0,0,1080033376,128,0,0,0,0
@@ -9951,7 +9951,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17027,121UlaTekLabyrinth2bCentralChamber,"Central Chamber",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
 17028,121UlaTekLabyrinth2cCatacombs,"The Catacombs",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
 17029,121UlaTekLabyrinth3aLynxLoa,"Halazzi's Lair",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
-17030,121UlaTekLabyrinth3bDragonhawkLoa,"Jan'alai's Refuge",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17030,121UlaTekLabyrinth3bDragonhawkLoa,"Jan'alai's Refuge",3043,16913,13337,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,0,0,0,0,0
 17031,121UlaTekLabyrinth3cRoyalChamber,"Akil'zon's Roost",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
 17032,121UlaTekLabyrinth3dBearLoa,"Nalorakk's Rest",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
 17033,121UlaTekLabyrinth3eCaveTowers,"The Cave Towers",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
@@ -10005,7 +10005,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17720,121ZulAmanTheForbiddingSea,"The Forbidding Sea",0,15947,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3086,1073741888,128,0,0,0,0
 17729,NorthAmaniBulwarkHub,"Northern Amani Bulwark",2916,16535,0,75,0,3527,0,3635,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
 17730,EastAmaniOutpostHub,"Eastern Amani Outpost",2916,16535,0,75,0,3527,0,3635,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
-17778,KithixPrison,"Kith'ix's Prison",3095,17059,0,0,0,0,0,0,0,0,0,0,0.60000002384,15,-1,0,0,0,0,1342177280,136,0,0,0,0
+17778,KithixPrison,"Kith'ix's Prison",3095,17059,0,0,0,0,0,3675,0,0,0,0,0.60000002384,15,-1,0,0,0,0,1342177280,136,0,0,0,0
 17798,UlatekTomb,"The Tomb of Ula'tek",3095,17059,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1342177280,136,0,0,0,0
 16310,NewQuelDanas12CampaignFinaleScenario,"Isle of Quel'Danas",2907,0,0,96,0,3009,675,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
 16311,SilvermoonEasternKingdoms12CampaignFinaleScenario,"Silvermoon City",2907,0,0,96,0,3249,0,3404,0,0,0,0,0,15,-1,0,0,0,3320,4096,128,0,0,0,0

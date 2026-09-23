@@ -5131,7 +5131,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Helya in Trial of Valor on Mythic difficulty.","Mythic: Helya",,11398,1648,-1,0,15255,0,10,0,26,1530370,0,55801,0,0,0,0
 "Defeat the bosses of Trial of Valor on Normal difficulty or higher, while in a guild group.","Trial of Valor Guild Run",,11403,1648,-1,0,15263,0,10,61440,2,1530373,0,55818,0,0,0,0
 "Defeat Helya in Trial of Valor on Mythic difficulty, while in a guild group.","Mythic: Helya Guild Run",,11404,1648,-1,0,15263,0,10,61440,7,1530370,0,55822,0,0,0,0
-"First guild on the realm to defeat Helya in Trial of Valor on Mythic difficulty while in a guild group.","Realm First! Helya",,11405,1648,-1,0,15093,0,10,61696,25,1530370,0,55824,0,0,0,0
+"First guild on the realm to defeat Helya in Trial of Valor on Mythic difficulty while in a guild group.","Realm First! Helya",,11405,1648,-1,0,15093,0,0,63744,25,1530370,0,55824,0,0,0,0
 ,"Viz'aduum the Watcher kills (Return to Karazhan)",,11406,1651,-1,0,15264,0,0,1,36,136243,0,55826,0,0,0,0
 ,"Odyn defeats (Raid Finder Trial of Valor)",,11407,1648,-1,0,15264,0,0,1,65,136243,0,55835,0,0,0,0
 ,"Odyn defeats (Normal Trial of Valor)",,11408,1648,-1,0,15264,0,0,1,66,136243,0,55837,0,0,0,0
@@ -13872,7 +13872,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Dissipate 5 Storms in Naigtal in Heroic World Tier.","Heroic Climate Strange: Naigtal",,62919,-1,-1,0,15610,0,5,131072,46,775461,0,227826,0,0,0,0
 "Win 50 Solo Shuffle rounds as a Healer at or above Rival I during Midnight Season 2.","Battle Mender: Midnight Season 2","Reward: Seasonal Character Title",62921,-1,-1,0,15270,0,0,145408,8,236249,0,227888,0,0,0,0
 "End Midnight Season 2 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in Midnight Season 2.","Venomous Gladiator: Midnight Season 2","Character Title: Venomous Gladiator",62922,-1,-1,0,15270,0,0,14336,297,236540,0,0,0,0,0,0
-"End Midnight Season 2 in the top 0.1% or top 8 of the Solo Shuffle ladder (requires 50 games won in Midnight Season 2).","Venomous Legend: Midnight Season 2","Character Title: Venomous Legend",62923,-1,-1,0,15270,0,0,14336,303,236540,0,0,0,0,0,0
+"End Midnight Season 2 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won in Midnight Season 2).","Venomous Legend: Midnight Season 2","Character Title: Venomous Legend",62923,-1,-1,0,15270,0,0,14336,303,236540,0,0,0,0,0,0
 "End Midnight Season 2 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 2).","Venomous Marshal: Midnight Season 2","Character Title: Venomous Marshal",62924,-1,1,0,15270,0,0,14336,311,236540,0,0,0,0,0,0
 "End Midnight Season 2 in the top 0.1% or top 8 of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 2).","Venomous Warlord: Midnight Season 2","Character Title: Venomous Warlord",62925,-1,0,0,15270,0,0,14336,313,236540,0,0,0,0,0,0
 "Earn the rank of Combatant I during Midnight Season 2.","Combatant I: Midnight Season 2","Seasonal Character Title: Combatant",62926,-1,-1,0,15270,0,0,14336,540,236543,0,227918,0,0,0,0
