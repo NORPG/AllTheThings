@@ -606,6 +606,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(4840),	-- Long Bayonet
 					i(1158),	-- Solid Metal Club
 					i(1008),	-- Well-used Sword
+					i(276686, {	-- Junior's Hunting Bow
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(97915, {	-- Camping 101: Alchemy [Elwynn Forest]
@@ -1250,8 +1253,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/5 Stolen Enchanting Supplies
-						provider = { "i", 247805 },	-- Stolen Enchanting Supplies
-						--coord = { , MAP.ELWYNN_FOREST },
+						providers = {
+							{ "i", 247805 },	-- Stolen Enchanting Supplies
+							{ "o", 561159 },	-- Stolen Enchanting Supplies
+						},
+						coord = { 64.9, 41.1, MAP.ELWYNN_FOREST },
 					}),
 				},
 			}),
@@ -1259,12 +1265,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qs = 1307,	-- Gold Pickup Schedule (QS!)
 				qi = 2223,	-- The Collector's Schedule (PQI!)
 				races = ALLIANCE_ONLY,
-				crs = {
-					100,	-- Gruff Swiftbite
-					448,	-- Hogger
-					478,	-- Riverpaw Outrunner
-					97,		-- Riverpaw Runt
-				},
 				lvl = 7,
 			}),
 			q(114, {	-- The Escape
@@ -1314,6 +1314,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(6085),	-- Footman Tunic
 					i(6084),	-- Stormwind Guard Leggings
 					i(6215),	-- Balanced Fighting Stick
+					i(270000, {	-- Apprentice Wizard's Gown
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(239, {	-- Westbrook Garrison Needs Help!
@@ -1396,6 +1399,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						cost = 200000,
 						lvl = 40,
 					}),
+				},
+			}),
+		}),
+		n(TREASURES, {
+			o(386759, {	-- Library Book
+				coord = { 65.4, 70.1, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(203755),	-- Archmage Theocritus' Research Journal
 				},
 			}),
 		}),
@@ -1566,6 +1578,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 		n(ZONE_DROPS, {
 			i(769, {	-- Chunk of Boar Meat
 				cr = 113,	-- Stonetusk Boar
+			}),
+			i(1307, {	-- Gold Pickup Schedule (QS!)
+				crs = {
+					100,	-- Gruff Swiftbite
+					448,	-- Hogger
+					478,	-- Riverpaw Outrunner
+					97,		-- Riverpaw Runt
+				},
 			}),
 			i(778, {	-- Kobold Excavation Pick
 				["cr"] = 476,	-- Kobold Geomancer

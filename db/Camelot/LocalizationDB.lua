@@ -2625,6 +2625,7 @@ local ObjectNames = {
 	[207724] = "Shipwreck Debris",
 	[253069] = "Blacker Lotus",
 	[375544] = "Wooden Figurine",
+	[386759] = "Library Book",
 	[100000000] = "Sentinax Portal",
 	[100000001] = "Unlit Torch",
 } _.ObjectNames = ObjectNames
@@ -3755,6 +3756,7 @@ local ObjectModels = {
 	[207724] = 219411,
 	[253069] = 219437,
 	[375544] = 201094,
+	[386759] = 198036,
 	[100000001] = 201129,
 } _.ObjectModels = ObjectModels
 -- Phase Database Module
@@ -5099,6 +5101,7 @@ localize(ObjectNames, {
 	[207724] = "Schiffswracktrümmer",
 	[253069] = "Schwärzerer Lotus",
 	[375544] = "Holzstatuette",
+	[386759] = "Bibliotheksbuch",
 	[100000001] = "Nicht angezündete Fackel",
 })
 for key,value in pairs({
@@ -6284,6 +6287,7 @@ localize(ObjectNames, {
 	[207724] = "Débris d’épave",
 	[253069] = "Lotus encore plus noir",
 	[375544] = "Figurine en bois",
+	[386759] = "Livre de la bibliothèque",
 	[100000001] = "Torche éteinte",
 })
 for key,value in pairs({
@@ -9175,6 +9179,7 @@ localize(ObjectNames, {
 	[207724] = "Обломки кораблекрушения",
 	[253069] = "Чернейший лотос",
 	[375544] = "Деревянная статуэтка",
+	[386759] = "Книга из библиотеки",
 	[100000001] = "Незажженный факел",
 })
 for key,value in pairs({
@@ -10006,6 +10011,7 @@ localize(ObjectNames, {
 	[201579] = "쐐기돌 조각",
 	[207724] = "난파선 파편",
 	[253069] = "더 검은 연꽃",
+	[386759] = "도서관 책",
 	[100000001] = "불을 붙이지 않은 횃불",
 })
 for key,value in pairs({
@@ -11695,6 +11701,7 @@ localize(ObjectNames, {
 	[207724] = "Restos de naufragio",
 	[253069] = "Loto renegrido",
 	[375544] = "Figurilla de madera",
+	[386759] = "Libro de la biblioteca",
 	[100000001] = "Antorcha apagada",
 })
 for key,value in pairs({
@@ -13905,6 +13912,7 @@ localize(ObjectNames, {
 	[190484] = "文件箱 #3",
 	[201579] = "钥石碎片",
 	[207724] = "船只残骸",
+	[386759] = "图书馆书籍",
 	[100000000] = "森提纳克斯号传送门",
 	[100000001] = "未点燃的火把",
 })
