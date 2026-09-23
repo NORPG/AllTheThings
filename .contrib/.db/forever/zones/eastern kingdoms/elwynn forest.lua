@@ -478,6 +478,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 				},
 			}),
+			q(91738, {	-- An Apple Treat
+				sourceQuest = 91736,	-- Applejack Still
+				qg = 955,	-- Sergeant De Vries <Morale Officer>
+				coord = { 24.0, 73.0, MAP.ELWYNN_FOREST },
+				cost = { { "i", 247824, 1 } },	-- Thunder Applejack
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 7,
+			}),
 			q(99130, {	-- An Enticing Offer
 				sourceQuest = 99129,	-- A Man About a Murloc
 				qg = 241,	-- Remy "Two Times"
@@ -509,6 +517,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							822,	-- Young Forest Bear
 						},
 					}),
+				},
+			}),
+			q(91736, {	-- Applejack Still
+				provider = { "o", 562131 },	-- Applejack Still
+				coord = { 24.6, 58.0, MAP.ELWYNN_FOREST },
+				cost = { { "i", 4536, 4 } },	-- Shiny Red Apple
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				repeatable = true,
+				lvl = 7,
+				groups = {
+					i(247824),	-- Thunder Applejack
 				},
 			}),
 			q(84, {	-- Back to Billy
