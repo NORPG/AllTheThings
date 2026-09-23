@@ -7,6 +7,30 @@
 local appName, app = ...;
 local L = app.L;
 
+-- Check for SavedVariable Shenanigans (Beta Only)
+if AllTheThingsAD then
+local myCache = {
+	AllTheThingsAD = AllTheThingsAD;
+	ATTCharacterData = ATTCharacterData;
+	ATTAccountWideData = ATTAccountWideData;
+	AllTheThingsSavedVariables = AllTheThingsSavedVariables;
+};
+app.LocalizeGlobal = function(globalName, init)
+	local val = myCache[globalName]
+	if not val then
+		if init == true then
+			val = {}
+			myCache[globalName] = val
+		elseif init then
+			val = init
+			myCache[globalName] = val
+		end
+	end
+	-- app.PrintDebug("LocalizeGlobal",globalName,val)
+	return val;
+end
+end
+
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
 

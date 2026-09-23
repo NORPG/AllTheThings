@@ -48,3 +48,4 @@ __pycache__
 .DS_Store
 .contrib/.source/Achievement Database Consolidator/bin/
 .contrib/.tools/Wago/
+SavedVariables.lua
