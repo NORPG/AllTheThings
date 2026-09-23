@@ -29,7 +29,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 	},
 	-- #endif
 	["groups"] = {
-		ach(64140, { ["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" } }),	-- Winds of Particularly Mysterious Fortune
+		ach(64140, { ["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" } }),	-- Winds of Particularly Mysterious Fortune
 		i(235054, {	-- Pristine Mysterious Satchel
 			["description"] =
 			-- #if BEFORE MID

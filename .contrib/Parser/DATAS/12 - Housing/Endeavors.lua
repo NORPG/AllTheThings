@@ -248,7 +248,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["groups"] = {
 						i(257886),	-- Ripe Apple (QI!)
 						i(257889),	-- Ripe Carrot (QI!)
-						i(257888),	-- Ripe Grapes (QI!)
+						o(610259, {	-- Ripe Grapes
+							i(257888),	-- Ripe Grapes (QI!)
+						}),
 						i(257890),	-- Ripe Cabbage (QI!)
 						i(257892),	-- Ripe Coconut (QI!)
 						i(257893),	-- Ripe Bananas (QI!)
