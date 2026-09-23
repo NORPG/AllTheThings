@@ -175,6 +175,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
 						}),
+						q(96656, {	-- The Adventurer [Tirisfal Glades]
+							--["sourceQuest"] = ,	-- 
+							["qg"] = 1570,	-- Executor Arren
+							["coord"] = { 32.0, 66.0, MAP.TIRISFAL_GLADES },
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 4,
+						}),
 						q(376, {	-- The Damned
 							["qg"] = 1661,	-- Novice Elreth
 							["coord"] = { 30.9, 66.1, MAP.TIRISFAL_GLADES },
@@ -522,6 +530,149 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(3071),	-- Striking Hatchet
 					},
 				}),
+				q(97951, {	-- Camping 101: Alchemy [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = ALCHEMY,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1230564),	-- Alchemy: Mana Well
+					},
+				}),
+				q(97952, {	-- Camping 101: Blacksmithing [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					maps = { MAP.UNDERCITY },
+					requireSkill = BLACKSMITHING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1230171),	-- Blacksmithing: Sharpening Wheel
+					},
+				}),
+				q(96658, {	-- Camping 101: Cooking [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = HORDE_ONLY,
+					lvl = 4,
+				}),
+				q(97953, {	-- Camping 101: Enchanting [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = ENCHANTING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1230643),	-- Enchanting: Enchanted Lute
+					},
+				}),
+				q(97954, {	-- Camping 101: Engineering [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					maps = { MAP.UNDERCITY },
+					requireSkill = ENGINEERING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1230656),	-- Engineering: Reagent Bot
+					},
+				}),
+				q(97955, {	-- Camping 101: First Aid [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = FIRST_AID,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1230117),	-- First Aid: First Aid Kit
+					},
+				}),
+				q(97956, {	-- Camping 101: Fishing [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = FISHING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1229745),	-- Fishing: Fish Bowl
+					},
+				}),
+				q(97957, {	-- Camping 101: Herbalism [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = HERBALISM,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1229705),	-- Herbalism: Incense Candle
+					},
+				}),
+				q(97958, {	-- Camping 101: Leatherworking [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = LEATHERWORKING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1229432),	-- Leatherworking: Camp Tent
+					},
+				}),
+				q(97959, {	-- Camping 101: Mining [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					maps = { MAP.UNDERCITY },
+					requireSkill = MINING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1230161),	-- Mining: Lodestone
+					},
+				}),
+				q(97960, {	-- Camping 101: Skinning [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = SKINNING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1229517),	-- Skinning: Camp Chair
+					},
+				}),
+				q(97961, {	-- Camping 101: Tailoring [Tirisfal Glades]
+					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+					qg = 265812,	-- Eleanor Shackleton <Adventurer>
+					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					requireSkill = TAILORING,
+					races = HORDE_ONLY,
+					lvl = 4,
+					groups = {
+						recipe(1263425),	-- Tailoring: Camp Chair
+					},
+				}),
 				q(354, {	-- Deaths in the Family
 					["qg"] = 1500,	-- Coleman Farthing
 					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
@@ -782,6 +933,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
+				}),
+				q(96607, {	-- The Great Outdoors [Tirisfal Glades]
+					["sourceQuest"] = 96656,	-- The Adventurer [Tirisfal Glades]
+					["qg"] = 265812,	-- Eleanor Shackleton <Adventurer>
+					["coord"] = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 4,
 				}),
 				q(375, {	-- The Chill of Death
 					["qg"] = 1521,	-- Gretchen Dedmar

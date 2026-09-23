@@ -166,6 +166,15 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["coord"] = { 57.8, 41.6, MAP.TELDRASSIL },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(96630, {	-- The Adventurer [Teldrassil]
+						--["sourceQuest"] = ,	-- 
+						--["provider"] = { "o", 654846 },	-- Quest starts from a book on a table behind Tenaron Stormgrip at the top of Aldrassil in Shadowglen.
+						["qi"] = 275022,	-- Lost Journal (PQI!)
+						--["coord"] = { , MAP.TELDRASSIL },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 4,
+					}),
 					q(456, {	-- The Balance of Nature (1/2)
 						["qg"] = 2079,	-- Conservator Ilthalaine
 						["coord"] = { 58.6, 44.2, MAP.TELDRASSIL },
@@ -304,6 +313,151 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["coord"] = { 56.0, 57.4, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
+			}),
+			q(97938, {	-- Camping 101: Alchemy [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ALCHEMY,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230564),	-- Alchemy: Mana Well
+				},
+			}),
+			q(97939, {	-- Camping 101: Blacksmithing [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARKSHORE },
+				requireSkill = BLACKSMITHING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
+				},
+			}),
+			q(96634, {	-- Camping 101: Cooking [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+			}),
+			q(97940, {	-- Camping 101: Enchanting [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENCHANTING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230643),	-- Enchanting: Enchanted Lute
+				},
+			}),
+			q(97941, {	-- Camping 101: Engineering [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARKSHORE },
+				requireSkill = ENGINEERING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230656),	-- Engineering: Reagent Bot
+				},
+			}),
+			q(97942, {	-- Camping 101: First Aid [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FIRST_AID,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230117),	-- First Aid: First Aid Kit
+				},
+			}),
+			q(97943, {	-- Camping 101: Fishing [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARNASSUS },
+				requireSkill = FISHING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229745),	-- Fishing: Fish Bowl
+				},
+			}),
+			q(97944, {	-- Camping 101: Herbalism [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = HERBALISM,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229705),	-- Herbalism: Incense Candle
+				},
+			}),
+			q(97946, {	-- Camping 101: Leatherworking [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = LEATHERWORKING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229432),	-- Leatherworking: Camp Tent
+				},
+			}),
+			q(97948, {	-- Camping 101: Mining [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARKSHORE },
+				requireSkill = MINING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230161),	-- Mining: Lodestone
+				},
+			}),
+			q(97949, {	-- Camping 101: Skinning [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = SKINNING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229517),	-- Skinning: Camp Chair
+				},
+			}),
+			q(97950, {	-- Camping 101: Tailoring [Teldrassil]
+				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				qg = 265811,	-- Lyreena Duskblade <Adventurer>
+				coord = { 57.6, 56.6, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARNASSUS },
+				requireSkill = TAILORING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1263425),	-- Tailoring: Camp Chair
+				},
 			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				["sourceQuest"] = 928,	-- Crown of the Earth (2/6)
@@ -748,6 +902,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					{ "i", 5189 },	-- Glowing Fruit
 				},
 				["coord"] = { 42.6, 76.1, MAP.TELDRASSIL },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 4,
+			}),
+			q(96606, {	-- The Great Outdoors [Teldrassil]
+				["sourceQuest"] = 96630,	-- The Adventurer [Teldrassil]
+				["qg"] = 265811,	-- Lyreena Duskblade <Adventurer>
+				["coord"] = { 57.6, 56.6, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 			}),

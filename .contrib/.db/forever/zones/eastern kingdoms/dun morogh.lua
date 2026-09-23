@@ -171,6 +171,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(97277, {	-- Grund and Gozwin
 						["qg"] = 2756,	-- Grund Drokda
 						["coord"] = { 28.7, 67.5, MAP.DUN_MOROGH },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 4,
 						["groups"] = {
@@ -256,7 +257,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["qg"] = 786,	-- Grelin Whitebeard
 						["qi"] = 2619,	-- Grelin's Report (PQI!)
 						["coord"] = { 25.0, 75.8, MAP.DUN_MOROGH },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 4,
 					}),
 					q(183, {	-- The Boar Hunter
 						["qg"] = 714,	-- Talin Keeneye
@@ -367,78 +370,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			exploration(804),	-- The Tundrid Hills
 		}),
 		n(QUESTS, {
-			q(96608, {	-- The Great Outdoors [Dun Morogh]
-				["sourceQuest"] = 96628,	-- The Adventurer [Dun Morogh]
-				["qg"] = 265813,	-- Eric Birghthammer
-				["coord"] = { 46.7, 53.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(96046, {	-- Camping 101: Mining [Dun Morogh]
-				["sourceQuest"] = 96608,	-- The Great Outdoors [Dun Morogh]
-				["qg"] = 265813,	-- Eric Birghthammer
-				["coord"] = { 46.7, 53.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(96629, {	-- Camping 101: Cooking [Dun Morogh]
-				["sourceQuest"] = 96608,	-- The Great Outdoors [Dun Morogh]
-				["qg"] = 265813,	-- Eric Birghthammer
-				["coord"] = { 46.7, 53.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(98322, {	-- Secure the Mountain (1/3)
-				["sourceQuest"] = 420,	-- Senir's Observations (2/2)
-				["qg"] = 1252,	-- Senir Whitebeard
-				["coord"] = { 46.8, 53.8, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(98319, {	-- Secure the Mountain (2/3)
-				["sourceQuest"] = 98322,	-- Secure the Mountain (1/3)
-				["qg"] = 271546,	-- Mountaineer Gretchen
-				["coord"] = { 44.1, 57.1, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(98323, {	-- Secure the Mountain (3/3)
-				["sourceQuest"] = 98319,	-- Secure the Mountain (2/3)
-				["qg"] = 271546,	-- Mountaineer Gretchen
-				["coord"] = { 44.1, 57.1, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(280430),	-- Mountaineer Gretchen's Report
-				},
-			}),
-			q(99158, {	-- Dawn in the Mountains
-				["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-				["coord"] = { 47.3, 52.2, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(98321, {	-- Flintfire's Shipment
-				["qg"] = 1241,	-- Tognus Flintfire <Journeyman Blacksmith>
-				["coord"] = { 45.3, 51.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					objective(1, {	-- 0/8 Flintfire's Shipments
-						["providers"] = {
-							{ "i", 280413 },	-- Flintfire's Shipments
-							{ "o", 672508 },	-- Flintfire's Shipments
-						},
-					}),
-				},
-			}),
-			q(98326, {	-- Frosthowl
-				["qg"] = 8508,	-- Gretta Ganter <Fisherman Supplies>
-				["coord"] = { 31.5, 44.6, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					objective(1, {	-- 0/1 Sack of Fish
-						["providers"] = {
-							-- Need IDS /Braghe
-							{ "i", 280413 },	-- Flintfire's Shipments
-							{ "n", 672508 },	-- Frosthowl
-						},
-					}),
-					i(281322),	-- Frosthowl's Footwarmers
-				},
-			}),
 			q(319, {	-- A Favor for Evershine
 				["sourceQuest"] = 318,	-- Evershine
 				["qg"] = 1374,	-- Rejold Barleybrew
@@ -454,25 +385,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					objective(3, {	-- 0/8 Snow Leopard
 						["provider"] = { "n", 1201 },	-- Snow Leopard
-					}),
-				},
-			}),
-			q(5541, {	-- Ammo for Rumbleshot
-				["qg"] = 1694,	-- Loslor Rudge
-				["coord"] = { 50.0, 49.4, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
-					objective(1, {	-- 0/1 Rumbleshot's Ammo
-						["providers"] = {
-							{ "i", 13850 },		-- Rumbleshot's Ammo (QI!)
-							{ "o", 176785 },	-- Ammo Crate
-						},
-						["coord"] = { 44.13, 56.95, MAP.DUN_MOROGH },
-					}),
-					objective(2, {
-						["cr"] = 1243,	-- Hegnar Rumbleshot <Gunsmith>
-						["coord"] = { 40.7, 65.1, MAP.DUN_MOROGH },
 					}),
 				},
 			}),
@@ -493,6 +405,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					i(2218),	-- Craftsman's Dagger
 					i(1009),	-- Compact Hammer
+				},
+			}),
+			q(5541, {	-- Ammo for Rumbleshot
+				["qg"] = 1694,	-- Loslor Rudge
+				["coord"] = { 50.0, 49.4, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
+				["groups"] = {
+					objective(1, {	-- 0/1 Rumbleshot's Ammo
+						["providers"] = {
+							{ "i", 13850 },		-- Rumbleshot's Ammo (QI!)
+							{ "o", 176785 },	-- Ammo Crate
+						},
+						["coord"] = { 44.13, 56.95, MAP.DUN_MOROGH },
+					}),
+					objective(2, {
+						["cr"] = 1243,	-- Hegnar Rumbleshot <Gunsmith>
+						["coord"] = { 40.7, 65.1, MAP.DUN_MOROGH },
+					}),
 				},
 			}),
 			q(384, {	-- Beer Basted Boar Ribs
@@ -555,6 +486,157 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				},
 			}),
+			q(96045, {	-- Camping 101: Alchemy [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.IRONFORGE },
+				requireSkill = ALCHEMY,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230564),	-- Alchemy: Mana Well
+				},
+			}),
+			q(96044, {	-- Camping 101: Blacksmithing [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = BLACKSMITHING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
+				},
+			}),
+			q(96629, {	-- Camping 101: Cooking [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+			}),
+			q(96059, {	-- Camping 101: Enchanting [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENCHANTING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230643),	-- Enchanting: Enchanted Lute
+				},
+			}),
+			q(96058, {	-- Camping 101: Engineering [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENGINEERING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230656),	-- Engineering: Reagent Bot
+				},
+			}),
+			q(96047, {	-- Camping 101: First Aid [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FIRST_AID,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230117),	-- First Aid: First Aid Kit
+				},
+			}),
+			q(96050, {	-- Camping 101: Fishing [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FISHING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229745),	-- Fishing: Fish Bowl
+				},
+			}),
+			q(96055, {	-- Camping 101: Herbalism [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.IRONFORGE },
+				requireSkill = HERBALISM,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229705),	-- Herbalism: Incense Candle
+				},
+			}),
+			q(96031, {	-- Camping 101: Leatherworking [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.IRONFORGE },
+				requireSkill = LEATHERWORKING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229432),	-- Leatherworking: Camp Tent
+				},
+			}),
+			q(96046, {	-- Camping 101: Mining [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = MINING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230161),	-- Mining: Lodestone
+				},
+			}),
+			q(96056, {	-- Camping 101: Skinning [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.IRONFORGE },
+				requireSkill = SKINNING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229517),	-- Skinning: Camp Chair
+				},
+			}),
+			q(96057, {	-- Camping 101: Tailoring [Dun Morogh]
+				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
+				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.IRONFORGE },
+				requireSkill = TAILORING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1263425),	-- Tailoring: Camp Chair
+				},
+			}),
+			q(99158, {	-- Dawn in the Mountains
+				["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+				["coord"] = { 47.3, 52.2, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(5637, {	-- Desperate Prayer
 				["altQuests"] = {
 					5634,	-- Desperate Prayer [Stormwind City #1]
@@ -581,6 +663,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["coord"] = { 49.4, 48.4, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 2,
+			}),
+			q(98321, {	-- Flintfire's Shipment
+				["qg"] = 1241,	-- Tognus Flintfire <Journeyman Blacksmith>
+				["coord"] = { 45.3, 51.9, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					objective(1, {	-- 0/8 Flintfire's Shipments
+						["providers"] = {
+							{ "i", 280413 },	-- Flintfire's Shipments
+							{ "o", 672508 },	-- Flintfire's Shipments
+						},
+					}),
+				},
+			}),
+			q(98326, {	-- Frosthowl
+				["qg"] = 8508,	-- Gretta Ganter <Fisherman Supplies>
+				["coord"] = { 31.5, 44.6, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					objective(1, {	-- 0/1 Sack of Fish
+						["providers"] = {
+							-- Need IDS /Braghe
+							{ "i", 280413 },	-- Flintfire's Shipments
+							{ "n", 672508 },	-- Frosthowl
+						},
+					}),
+					i(281322),	-- Frosthowl's Footwarmers
+				},
 			}),
 			q(287, {	-- Frostmane Hold
 				["sourceQuest"] = 420,	-- Senir's Observations (2/2)
@@ -753,6 +865,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					i(3565),	-- Beerstained Gloves
 				},
 			}),
+			q(98322, {	-- Secure the Mountain (1/3)
+				["sourceQuest"] = 420,	-- Senir's Observations (2/2)
+				["qg"] = 1252,	-- Senir Whitebeard
+				["coord"] = { 46.8, 53.8, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(98319, {	-- Secure the Mountain (2/3)
+				["sourceQuest"] = 98322,	-- Secure the Mountain (1/3)
+				["qg"] = 271546,	-- Mountaineer Gretchen
+				["coord"] = { 44.1, 57.1, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(98323, {	-- Secure the Mountain (3/3)
+				["sourceQuest"] = 98319,	-- Secure the Mountain (2/3)
+				["qg"] = 271546,	-- Mountaineer Gretchen
+				["coord"] = { 44.1, 57.1, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(280430),	-- Mountaineer Gretchen's Report
+				},
+			}),
 			q(413, {	-- Shimmer Stout
 				["sourceQuests"] = {
 					415,	-- Rejold's New Brew
@@ -870,6 +1006,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 					}),
 				},
+			}),
+			q(96608, {	-- The Great Outdoors [Dun Morogh]
+				["sourceQuest"] = 96628,	-- The Adventurer [Dun Morogh]
+				["qg"] = 265813,	-- Eric Birghthammer
+				["coord"] = { 46.7, 53.9, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 4,
 			}),
 			q(313, {	-- The Grizzled Den
 				["qg"] = 1377,	-- Pilot Stonegear

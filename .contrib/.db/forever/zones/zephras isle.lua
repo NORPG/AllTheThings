@@ -9,6 +9,25 @@ maproot(MAP.ZEPHRAS_ISLE, {
 	["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 	["groups"] = {
 		n(QUESTS, {
+			q(92481, {	-- A Student of the Arcane
+				["qg"] = 251361,	-- Rorian the Dayseeker
+				["coords"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				["sourceQuests"] = { 92461 },	-- Harmony in Balance
+				["qi"] = 282416,	-- Glowing Recall Crystal
+			}),
+			q(92465, {	-- Agitators
+				["qg"] = 249363,	-- Yala Windwatcher
+				["coords"] = { 47.3, 21.9, MAP.ZEPHRAS_ISLE },
+				["sourceQuests"] = { 92460 },	-- Coming of Age
+				["groups"] = {
+					objective(1, {	-- 0/7 Slay Al'Aketh Convert
+						["provider"] = { "n", 251160 },	-- Al'Aketh Convert
+					}),
+					objective(2, {	-- 0/6 Destroy Roiling Winds
+						["provider"] = { "n", 251143 },	-- Roiling Winds
+					}),
+				},
+			}),
 			q(92460, {	-- Coming of Age
 				["qg"] = 251362,	-- Ailee Farheart <Rangers of Thendal Grove>
 				["coord"] = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
@@ -38,24 +57,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 				},
 			}),
-			q(92465, {	-- Agitators
-				["qg"] = 249363,	-- Yala Windwatcher
-				["coords"] = { 47.3, 21.9, MAP.ZEPHRAS_ISLE },
-				["sourceQuests"] = { 92460 },	-- Coming of Age
-				["groups"] = {
-					objective(1, {	-- 0/7 Slay Al'Aketh Convert
-						["provider"] = { "n", 251160 },	-- Al'Aketh Convert
-					}),
-					objective(2, {	-- 0/6 Destroy Roiling Winds
-						["provider"] = { "n", 251143 },	-- Roiling Winds
-					}),
-				},
-			}),
-			q(92481, {	-- A Student of the Arcane
-				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coords"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
-				["sourceQuests"] = { 92461 },	-- Harmony in Balance
-				["qi"] = 282416,	-- Glowing Recall Crystal
+			q(96638, {	-- The Adventurer [Zephras Isle]
+				--["sourceQuest"] = ,	-- 
+				["qg"] = 251366,	-- Aetheen of the Gales <Elder of Zephras Isle>
+				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				["lvl"] = 4,
 			}),
 		}),
 	},

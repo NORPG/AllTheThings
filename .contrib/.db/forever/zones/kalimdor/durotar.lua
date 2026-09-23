@@ -283,6 +283,15 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 							}),
 						},
 					}),
+					q(96652, {	-- The Adventurer [Durotar]
+						--["sourceQuest"] = ,	-- 
+						--["provider"] = { "o", 654925 },	--
+						["qi"] = 275022,	-- Lost Journal (PQI!)
+						--["coord"] = { , MAP.DUROTAR },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 4,
+					}),
 					q(792, {	-- Vile Familiars
 						["qg"] = 3145,	-- Zureetha Fargaze
 						["coord"] = { 42.85, 69.14, MAP.DUROTAR },
@@ -458,6 +467,152 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				["races"] = HORDE_ONLY,
 				["cr"] = 3204,	-- Gazz'uz
 				["lvl"] = 4,
+			}),
+			q(97899, {	-- Camping 101: Alchemy [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.ORGRIMMAR },
+				requireSkill = ALCHEMY,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230564),	-- Alchemy: Mana Well
+				},
+			}),
+			q(97900, {	-- Camping 101: Blacksmithing [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = BLACKSMITHING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
+				},
+			}),
+			q(96655, {	-- Camping 101: Cooking [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+			}),
+			q(97901, {	-- Camping 101: Enchanting [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.ORGRIMMAR },
+				requireSkill = ENCHANTING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230643),	-- Enchanting: Enchanted Lute
+				},
+			}),
+			q(97902, {	-- Camping 101: Engineering [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENGINEERING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230656),	-- Engineering: Reagent Bot
+				},
+			}),
+			q(97903, {	-- Camping 101: First Aid [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FIRST_AID,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230117),	-- First Aid: First Aid Kit
+				},
+			}),
+			q(97904, {	-- Camping 101: Fishing [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FISHING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229745),	-- Fishing: Fish Bowl
+				},
+			}),
+			q(97905, {	-- Camping 101: Herbalism [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.ORGRIMMAR },
+				requireSkill = HERBALISM,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229705),	-- Herbalism: Incense Candle
+				},
+			}),
+			q(97906, {	-- Camping 101: Leatherworking [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.ORGRIMMAR },
+				requireSkill = LEATHERWORKING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229432),	-- Leatherworking: Camp Tent
+				},
+			}),
+			q(97907, {	-- Camping 101: Mining [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = MINING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230161),	-- Mining: Lodestone
+				},
+			}),
+			q(97908, {	-- Camping 101: Skinning [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.ORGRIMMAR },
+				requireSkill = SKINNING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229517),	-- Skinning: Camp Chair
+				},
+			}),
+			q(96102, {	-- Camping 101: Tailoring [Durotar]
+				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				qg = 265809,	-- Brakk <Adventurer>
+				coord = { 52.0, 47.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.ORGRIMMAR },
+				requireSkill = TAILORING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1263425),	-- Tailoring: Camp Chair
+				},
 			}),
 			q(791, {	-- Carry Your Weight
 				["qg"] = 3147,	-- Furl Scornbrow
@@ -883,6 +1038,14 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					}),
 					i(5420),	-- Banshee Armor
 				},
+			}),
+			q(96604, {	-- The Great Outdoors [Durotar]
+				["sourceQuest"] = 96652,	-- The Adventurer [Durotar]
+				["qg"] = 265809,	-- Brakk <Adventurer>
+				["coord"] = { 52.0, 47.4, MAP.DUROTAR },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
 			}),
 			q(6068, {	-- The Hunter's Path [Orgrimmar]
 				["qg"] = 3407,	-- Sian'dur <Hunter Trainer>

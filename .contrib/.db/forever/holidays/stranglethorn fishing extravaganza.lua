@@ -44,7 +44,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 			}),
 			q(8228, {	-- Could I get a Fishing Flier?
 				["qg"] = 15116,	-- Grinkle <Fishing Promoter>
-				["coord"] = { 52.4, 73, MAP.ORGRIMMAR },
+				["coord"] = { 52.4, 73.0, MAP.ORGRIMMAR },
 				["requireSkill"] = FISHING,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,

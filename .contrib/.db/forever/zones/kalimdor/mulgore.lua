@@ -175,6 +175,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						["races"] = { TAUREN },
 						["classes"] = { WARRIOR },
 					}),
+					q(96659, {	-- The Adventurer [Mulgore]
+						--["sourceQuest"] = ,	-- 
+						["qg"] = 2981,	-- Chief Hawkwind
+						["qi"] = 275019,	-- Supply Bundle (PQI!)
+						["coord"] = { 44.2, 76.0, MAP.MULGORE },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 4,
+					}),
 					q(780, {	-- The Battleboars
 						["sourceQuest"] = 750,	-- The Hunt Continues
 						["qg"] = 2980,	-- Grull Hawkwind
@@ -294,6 +303,150 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				["qi"] = 7626,	-- Bundle of Furs
 				["coord"] = { 38.6, 81.6, MAP.MULGORE },
 				["races"] = HORDE_ONLY,
+			}),
+			q(97927, {	-- Camping 101: Alchemy [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.THUNDER_BLUFF },
+				requireSkill = ALCHEMY,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230564),	-- Alchemy: Mana Well
+				},
+			}),
+			q(97928, {	-- Camping 101: Blacksmithing [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.THUNDER_BLUFF },
+				requireSkill = BLACKSMITHING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
+				},
+			}),
+			q(96661, {	-- Camping 101: Cooking [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+			}),
+			q(97929, {	-- Camping 101: Enchanting [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENCHANTING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230643),	-- Enchanting: Enchanted Lute
+				},
+			}),
+			q(97930, {	-- Camping 101: Engineering [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENGINEERING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230656),	-- Engineering: Reagent Bot
+				},
+			}),
+			q(97931, {	-- Camping 101: First Aid [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FIRST_AID,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230117),	-- First Aid: First Aid Kit
+				},
+			}),
+			q(97932, {	-- Camping 101: Fishing [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FISHING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229745),	-- Fishing: Fish Bowl
+				},
+			}),
+			q(97933, {	-- Camping 101: Herbalism [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.THUNDER_BLUFF },
+				requireSkill = HERBALISM,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229705),	-- Herbalism: Incense Candle
+				},
+			}),
+			q(97934, {	-- Camping 101: Leatherworking [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = LEATHERWORKING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229432),	-- Leatherworking: Camp Tent
+				},
+			}),
+			q(97935, {	-- Camping 101: Mining [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.THUNDER_BLUFF },
+				requireSkill = MINING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230161),	-- Mining: Lodestone
+				},
+			}),
+			q(97936, {	-- Camping 101: Skinning [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = SKINNING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229517),	-- Skinning: Camp Chair
+				},
+			}),
+			q(97937, {	-- Camping 101: Tailoring [Mulgore]
+				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = TAILORING,
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1263425),	-- Tailoring: Camp Chair
+				},
 			}),
 			q(743, {	-- Dangers of the Windfury
 				["qg"] = 2985,	-- Ruul Eagletalon
@@ -617,6 +770,14 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					i(4971),	-- Skorn's Hammer
 					i(3079),	-- Skorn's Rifle
 				},
+			}),
+			q(96605, {	-- The Great Outdoors [Mulgore]
+				["sourceQuest"] = 96659,	-- The Adventurer [Mulgore]
+				["qg"] = 265810,	-- Kaga Wildhoof <Adventurer>
+				["coord"] = { 46.2, 67.2, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
 			}),
 			q(6065, {	-- The Hunter's Path [Thunder Bluff]
 				["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>

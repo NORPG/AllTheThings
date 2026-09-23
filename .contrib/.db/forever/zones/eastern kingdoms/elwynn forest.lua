@@ -26,6 +26,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91741,	-- Nibbled on Book
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(6, {	-- Bounty on Garrick Padfoot
 						sourceQuest = 18,	-- Brotherhood of Thieves
@@ -93,6 +95,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -197,11 +200,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled on Book
 						qs = 47834,	-- Nibbled on Book (QS!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 						qis = {
 							247857,	-- Nibbled on Book
 						},
@@ -211,6 +216,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/8 Stolen Book
 								provider = { "i", 247839 },	-- Stolen Book
@@ -260,6 +266,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qi = 247970,	-- Kobold Tracking Kit
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 						--[[
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
@@ -307,17 +314,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						--[[
-						CRIEVE NOTE:
-						Also flagged 96659, 96630, 96652, 96638, 98289, 96656
-						Likely the same 'The Adventurer' quest, but from different zones?
-						]]--
+						races = ALLIANCE_ONLY,
+						lvl = 4,
 					}),
 					q(91752, {	-- The Big Picture
 						sourceQuest = 91745,	-- Mining Consultant
 						qg = 247226,	-- Kelsey Fargo
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -468,6 +473,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
+			q(99127, {	-- A Net Disaster
+				qg = 383,	-- Jason Mathers <Fishmonger>
+				coord = { 47.4, 62.2, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/7 Half-Eaten Fish
+						providers = {
+							{ "i", 286205 },	-- Half-Eaten Fish
+							{ "o", 694772 },	-- Fishing Net
+						},
+						coord = { 49.9, 66.7, MAP.ELWYNN_FOREST },
+					}),
+				},
+			}),
 			q(84, {	-- Back to Billy
 				sourceQuest = 86,	-- Pie for Billy
 				providers = {
@@ -477,6 +498,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 34.5, 84.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+			}),
+			q(99143, {	-- Bottles and Baubles
+				qg = 1651,	-- Lee Brown <Fisherman>
+				coord = { 47.6, 62.2, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/6 Shiny Junk
+						providers = {
+							{ "i", 286209 },	-- Shiny Junk
+							{ "o", 694785 },	-- Junk Pile
+						},
+						coord = { 54.4, 66.9, MAP.ELWYNN_FOREST },
+					}),
+				},
 			}),
 			q(46, {	-- Bounty on Murlocs
 				sourceQuest = 39,	-- Deliver Thomas' Report
@@ -497,30 +534,144 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(1008),	-- Well-used Sword
 				},
 			}),
-			q(96626, {	-- Camping 101: Cooking [Elwynn Forest]
+			q(97915, {	-- Camping 101: Alchemy [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				--[[
-				CRIEVE NOTE:
-				Also flagged 
-				Likely the same 'The Great Outdoors' quest, but from different zones?
-				]]--
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ALCHEMY,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230564),	-- Alchemy: Mana Well
+				},
+			}),
+			q(97916, {	-- Camping 101: Blacksmithing [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = BLACKSMITHING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
+				},
+			}),
+			q(96626, {	-- Camping 101: Cooking [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+			}),
+			q(97917, {	-- Camping 101: Enchanting [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENCHANTING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230643),	-- Enchanting: Enchanted Lute
+				},
+			}),
+			q(97918, {	-- Camping 101: Engineering [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENGINEERING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230656),	-- Engineering: Reagent Bot
+				},
+			}),
+			q(97919, {	-- Camping 101: First Aid [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FIRST_AID,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1230117),	-- First Aid: First Aid Kit
+				},
+			}),
+			q(97920, {	-- Camping 101: Fishing [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = FISHING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229745),	-- Fishing: Fish Bowl
+				},
+			}),
+			q(97921, {	-- Camping 101: Herbalism [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = HERBALISM,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229705),	-- Herbalism: Incense Candle
+				},
+			}),
+			q(97922, {	-- Camping 101: Leatherworking [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = LEATHERWORKING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229432),	-- Leatherworking: Camp Tent
+				},
 			}),
 			q(97923, {	-- Camping 101: Mining [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				--[[
-				CRIEVE NOTE:
-				Also flagged 
-				Likely the same 'The Great Outdoors' quest, but from different zones?
-				]]--
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = MINING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
 				groups = {
-					--recipe(),	-- Mining: Lodestone	-- CRIEVE NOTE: Couldn't find the spellID
+					recipe(1230161),	-- Mining: Lodestone
+				},
+			}),
+			q(97924, {	-- Camping 101: Skinning [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = SKINNING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1229517),	-- Skinning: Camp Chair
+				},
+			}),
+			q(97925, {	-- Camping 101: Tailoring [Elwynn Forest]
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				qg = 263399,	-- Sam Sarsaparilla
+				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = TAILORING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					recipe(1263425),	-- Tailoring: Camp Chair
 				},
 			}),
 			q(59, {	-- Cloth and Leather Armor
@@ -896,6 +1047,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				isBreadcrumb = true,
 				lvl = 16,
 			}),
+			q(99128, {	-- Slimy Menace
+				sourceQuest = 99127,	-- A Net Disaster
+				qg = 383,	-- Jason Mathers <Fishmonger>
+				coord = { 47.4, 62.2, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/4 Murloc Streamrunner slain
+						providers = { "n", 735 },	-- Murloc Streamrunner
+						coord = { 52.8, 64.6, MAP.ELWYNN_FOREST },
+					}),
+					objective(2, {	-- 0/7 Murloc slain
+						providers = { "n", 285 },	-- Murloc
+						coord = { 56.4, 65.6, MAP.ELWYNN_FOREST },
+					}),
+				},
+			}),
 			q(111, {	-- Speak with Gramma
 				sourceQuest = 106,	-- Young Lovers
 				qg = 252,	-- Tommy Joe Stonefield
@@ -944,13 +1113,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(95998, {	-- The Great Outdoors [Elwynn Forest]
 				sourceQuest = 96627,	-- The Adventurer [Elwynn Forest]
-				--[[
-				CRIEVE NOTE:
-				Also flagged 96608, 96607, 96604, 96605, 99606, 96101
-				Likely the same 'The Great Outdoors' quest, but from different zones?
-				]]--
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
 			}),
 			q(76, {	-- The Jasperlode Mine
 				sourceQuest = 62,	-- The Fargodeep Mine
