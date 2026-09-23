@@ -2758,10 +2758,12 @@ exp(86,{
 crit(1157,{achID=776,id=1})}),
 exp(1519,{
 crit(1149,{achID=776,id=1})}),
+exp(80,{awp=16001}),
 exp(64),
 exp(63),
 exp(91,{
 crit(1152,{achID=776,id=1})}),
+exp(1617,{awp=16001}),
 exp(120)}),
 h(-45,{
 q(5545,{coords={

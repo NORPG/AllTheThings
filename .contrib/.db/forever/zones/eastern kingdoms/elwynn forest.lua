@@ -422,9 +422,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			exploration(798),	-- Ridgepoint Tower
 			exploration(86),	-- Stone Cairn Lake
 			exploration(1519),	-- Stormwind City
+			exploration(80, {	-- Stormwind Mountains
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(64),	-- The Maclure Vineyards
 			exploration(63),	-- The Stonefield Farm
 			exploration(91),	-- Tower of Azora
+			exploration(1617, {	-- Valley of Heroes
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(120),	-- Westbrook Garrison
 		}),
 		n(QUESTS, {

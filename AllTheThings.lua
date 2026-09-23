@@ -25,6 +25,7 @@ app.LocalizeGlobal = function(globalName, init)
 			val = init
 			myCache[globalName] = val
 		end
+		_G[globalName] = val;
 	end
 	-- app.PrintDebug("LocalizeGlobal",globalName,val)
 	return val;
