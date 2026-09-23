@@ -242,15 +242,15 @@ p(5127,{awp=120100,description="Available from capsule gachapon machines on the 
 h(-521,{u=3,g={
 x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
-q(8547,{awp=20003,maps={94},providers={{"i",20938}},races={10},u=3}),
-q(12781,{awp=30002,c={6},lvl=8,maps={23},providers={{"i",39713}},u=3}),
-q(9278,{awp=20003,c={11},maps={97},providers={{"i",22888}},r=2,u=3}),
-q(5841,{maps={27},providers={{"i",14647}},races={3,7},u=2}),
-q(5805,{maps={37},providers={{"i",14646}},races={1},u=2}),
-q(5842,{maps={57},providers={{"i",14648}},races={4},u=2}),
-q(5843,{maps={1},providers={{"i",14649}},races={2,8},u=2}),
-q(5844,{maps={7},providers={{"i",14650}},races={6},u=2}),
-q(5847,{maps={18},providers={{"i",14651}},races={5},u=2})}}),
+q(8547,{awp=20003,maps={94},qss={20938},races={10},u=3}),
+q(12781,{awp=30002,c={6},lvl=8,maps={23},qss={39713},u=3}),
+q(9278,{awp=20003,c={11},maps={97},qss={22888},r=2,u=3}),
+q(5841,{maps={27},qss={14647},races={3,7},u=2}),
+q(5805,{maps={37},qss={14646},races={1},u=2}),
+q(5842,{maps={57},qss={14648},races={4},u=2}),
+q(5843,{maps={1},qss={14649},races={2,8},u=2}),
+q(5844,{maps={7},qss={14650},races={6},u=2}),
+q(5847,{maps={18},qss={14651},races={5},u=2})}}),
 h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=40006,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
 ach(662,{awp=30002,providers={{"i",13584}},u=3}),
 ach(663,{awp=30002,providers={{"i",13583}},u=3}),
@@ -294,7 +294,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -910,7 +910,7 @@ ach(19724)}),
 h(-39,{
 i(212154,{rwp=100206,u=2})}),
 h(-45,{
-q(79184,{providers={{"i",212154}},rwp=100206,u=2,g={
+q(79184,{qss={212154},rwp=100206,u=2,g={
 i(212157,{b=1,u=2})}}),
 q(79178,{coords={
 [2112]={{61.6,31.1}}},qgs={215409},rwp=100206,sourceQuests={79184},u=2,g={
@@ -1568,9 +1568,9 @@ i(204731,{b=2}),
 i(205189,{b=2,r=2}),
 i(205190,{b=2,r=1})}})}),
 h(-45,{
-q(73183,{providers={{"i",204731}},rwp=100200,u=2}),
-q(75625,{providers={{"i",205189}},r=2,rwp=100200,u=2}),
-q(75626,{providers={{"i",205190}},r=1,rwp=100200,u=2}),
+q(73183,{qss={204731},rwp=100200,u=2}),
+q(75625,{qss={205189},r=2,rwp=100200,u=2}),
+q(75626,{qss={205190},r=1,rwp=100200,u=2}),
 q(75221,{coords={
 [2112]={{48,46.4}}},cost={{"i",202162,1}},qgs={201230},repeatable=1,g={
 i(202163,{spellID=398642,g={

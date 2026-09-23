@@ -92,10 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			header(HEADERS.Item, 19019, {	-- Thunderfury, Blessed Blade of the Windseeker
 				["isRaid"] = true,
 				["groups"] = {
-					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-						["qg"] = 14347,	-- Highlord Demitrian
-						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
+					applyclassicphase(PHASE_THREE, n(14347, {	-- Highlord Demitrian
 						["coords"] = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
@@ -103,9 +100,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						["cost"] = {
-							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
-							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
+						["lvl"] = 60,
+						["groups"] = {
+							i(19016, {	-- Vessel of Rebirth
+								["providers"] = {
+									{ "i", 18563 },	-- Bindings of the Windseeker [Left]
+									{ "i", 18564 },	-- Bindings of the Windseeker [Right]
+								},
+							}),
+						},
+					})),
+					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
+						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+						["qs"] = 19016,	-- Vessel of Rebirthed
+						["coords"] = {
+							-- #if AFTER LEGION
+							{ 29.6, 10.6, SILITHUS },
+							-- #else
+							{ 21.7, 8.6, SILITHUS },
+							-- #endif
 						},
 						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic

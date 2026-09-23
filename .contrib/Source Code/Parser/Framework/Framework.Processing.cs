@@ -1121,6 +1121,8 @@ namespace ATT
             Consolidate_ListOrdering(data);
             Objects.AssignFactionID(data);
 
+            Consolidate_VerifySourcedReferences(data);
+
             // OnTooltip references should be stored in ExportDB.OnTooltipDB, so mark those which are referenced
             CheckExportDataRefs(data, "OnTooltip");
 
@@ -1134,6 +1136,33 @@ namespace ATT
             CheckExportDataRefs(data, "OnClick");
 
             Consolidate_TrackUsage(data);
+        }
+
+        private static void Consolidate_VerifySourcedReferences(Data data)
+        {
+            // Quest Starters should be Sourced
+            if (data.TryGetValue("qss", out List<object> qss))
+            {
+                foreach (decimal qs in qss.AsTypedEnumerable<decimal>())
+                {
+                    if (!TryGetSOURCED("modItemID", qs, out var sourcedList) || sourcedList.Count == 0)
+                    {
+                        LogDebugWarn($"Non-Sourced Quest Starter (qs) {qs}", data);
+                    }
+                }
+            }
+
+            // Provider Items should be Sourced
+            if (data.TryGetValue(out Providers providers))
+            {
+                foreach (decimal pi in providers.GetProviderType("i"))
+                {
+                    if (!TryGetSOURCED("modItemID", pi, out var sourcedList) || sourcedList.Count == 0)
+                    {
+                        LogDebugWarn($"Non-Sourced Item Provider {pi}", data);
+                    }
+                }
+            }
         }
 
         private static void Consolidate_CheckUnsortedDuplicates(Data data)
@@ -1943,6 +1972,15 @@ namespace ATT
                 foreach (var qi in qis.AsTypedEnumerable<decimal>())
                 {
                     Items.MarkItemAsReferenced(qi);
+                }
+            }
+
+            // ensure Quest Starters are referenced
+            if (data.TryGetValue("qss", out List<object> qss))
+            {
+                foreach (var qs in qss.AsTypedEnumerable<decimal>())
+                {
+                    Items.MarkItemAsReferenced(qs);
                 }
             }
 
