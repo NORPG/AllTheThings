@@ -14,68 +14,79 @@ local C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForReci
 
 -- Implementation
 do -- TradeSkill Functionality
-local GetProfessionInfo, C_TradeSkillUI_GetBaseProfessionInfo
-	= GetProfessionInfo, C_TradeSkillUI.GetBaseProfessionInfo
-local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
-local GetSpellName = app.WOWAPI.GetSpellName;
-local tradeSkillSpecializationMap = app.SkillDB.Specializations
-local specializationTradeSkillMap = app.SkillDB.BaseSkills
-local tradeSkillMap = app.SkillDB.Conversion
-local function GetBaseTradeSkillID(skillID)
-	return tradeSkillMap[skillID] or skillID;
-end
-local function GetTradeSkillSpecialization(skillID)
-	return tradeSkillSpecializationMap[skillID];
-end
-app.GetTradeSkillLine = function()
-	local profInfo = C_TradeSkillUI_GetBaseProfessionInfo();
-	return GetBaseTradeSkillID(profInfo.professionID);
-end
-app.GetSpecializationBaseTradeSkill = function(specializationID)
-	return specializationTradeSkillMap[specializationID];
-end
--- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
-local function RefreshTradeSkillCache()
-	local cache = app.CurrentCharacter.Professions;
-	wipe(cache);
-	-- "Professions" that anyone can "know"
-	for _,skillID in ipairs(app.SkillDB.AlwaysAvailable) do
-		cache[skillID] = 1
+	local GetProfessionInfo, C_TradeSkillUI_GetBaseProfessionInfo
+		= GetProfessionInfo, C_TradeSkillUI.GetBaseProfessionInfo
+	local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
+	local GetSpellName = app.WOWAPI.GetSpellName;
+	local tradeSkillSpecializationMap = app.SkillDB.Specializations
+	local specializationTradeSkillMap = app.SkillDB.BaseSkills
+	local tradeSkillMap = app.SkillDB.Conversion
+	local function GetBaseTradeSkillID(skillID)
+		return tradeSkillMap[skillID] or skillID;
 	end
-	-- app.PrintDebug("RefreshTradeSkillCache");
-	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
-	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
-		if j ~= 0 then
-			local prof = select(7, GetProfessionInfo(j));
-			cache[GetBaseTradeSkillID(prof)] = true;
-			-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
-			local specializations = GetTradeSkillSpecialization(prof);
-			if specializations ~= nil then
-				for _,spellID in pairs(specializations) do
-					if spellID and app.IsSpellKnownHelper(spellID) then
-						cache[spellID] = true;
+	local function GetTradeSkillSpecialization(skillID)
+		return tradeSkillSpecializationMap[skillID];
+	end
+	app.GetTradeSkillLine = function()
+		local profInfo = C_TradeSkillUI_GetBaseProfessionInfo();
+		return GetBaseTradeSkillID(profInfo.professionID);
+	end
+	app.GetSpecializationBaseTradeSkill = function(specializationID)
+		return specializationTradeSkillMap[specializationID];
+	end
+	-- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
+	local function RefreshTradeSkillCache()
+		local cache = app.CurrentCharacter.Professions;
+		wipe(cache);
+		-- "Professions" that anyone can "know"
+		for _,skillID in ipairs(app.SkillDB.AlwaysAvailable) do
+			cache[skillID] = 1
+		end
+		-- app.PrintDebug("RefreshTradeSkillCache");
+		local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
+		for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
+			if j ~= 0 then
+				local prof = select(7, GetProfessionInfo(j));
+				cache[GetBaseTradeSkillID(prof)] = true;
+				-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
+				local specializations = GetTradeSkillSpecialization(prof);
+				if specializations ~= nil then
+					for _,spellID in pairs(specializations) do
+						if spellID and app.IsSpellKnownHelper(spellID) then
+							cache[spellID] = true;
+						end
 					end
 				end
 			end
 		end
 	end
-end
-app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
-app.AddEventHandler("OnStartup", function()
-	local conversions = app.Settings.InformationTypeConversionMethods;
-	conversions.professionName = function(skillID)
-		local texture = GetTradeSkillTexture(skillID or 0)
-		local name = GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
-		return texture and "|T"..texture..":0|t "..name or name
-	end;
-end);
-app.AddEventRegistration("SKILL_LINES_CHANGED", function()
-	-- app.PrintDebug("SKILL_LINES_CHANGED")
-	-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
-	app.CallbackHandlers.DelayedCallback(RefreshTradeSkillCache, 2);
-end)
-end -- TradeSkill Functionality
+	app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
+	app.AddEventHandler("OnStartup", function()
+		local conversions = app.Settings.InformationTypeConversionMethods;
+		conversions.professionName = function(skillID)
+			local texture = GetTradeSkillTexture(skillID or 0)
+			local name = GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
+			return texture and "|T"..texture..":0|t "..name or name
+		end;
+	end);
+	app.AddEventRegistration("SKILL_LINES_CHANGED", function()
+		-- app.PrintDebug("SKILL_LINES_CHANGED")
+		-- seems to be a reliable way to notice a player has changed professions? not sure how else often it actually triggers... hopefully not too excessive...
+		app.CallbackHandlers.DelayedCallback(RefreshTradeSkillCache, 2);
 
+		if app.IsForever and app.TradeskillTab then
+			local foreverTabs = { "Overview", 1, 2, 3, 4, 5, 6, 7 }
+			for _, tab in ipairs(foreverTabs) do
+				local frame = ProfessionsFrame["Professions" .. tab .. "Tab"]
+				if not frame:IsShown() then
+					app.TradeskillTab:ClearAllPoints()
+					app.TradeskillTab:SetPoint("TOPLEFT", frame)
+					break
+				end
+			end
+		end
+	end)
+end -- TradeSkill Functionality
 
 app:CreateWindow("Tradeskills", {
 	Commands = { "attskills" },
