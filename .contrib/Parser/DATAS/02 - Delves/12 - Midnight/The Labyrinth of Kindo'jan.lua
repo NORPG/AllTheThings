@@ -129,7 +129,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				fp(3329, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
 			}),
 			n(QUESTS, {
+				q(99306, {	-- The Labyrinth of Kindo'jan
+					["provider"] = { "o", 701639 },	-- Amani Tablet
+					["coord"] = { 62.9, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				}),
 				q(98831, {	-- The Labyrinth
+					["sourceQuest"] = 99306,	-- The Labyrinth of Kindo'jan
 					["qg"] = 265173,	-- Kul'amara the Fierce
 					["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
@@ -137,10 +142,17 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["sourceQuest"] = 98831,	-- The Labyrinth
 					["qg"] = 274915,	-- Valeera Sanguinar
 					["coord"] = { 62.8, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["groups"] = {
+						o(693668, {	-- Broken Tablet
+							-- Exo Note: This is here so that tooltip from object 294114 does not bleed onto this one. If someone has a better way to resolve it, please do.
+							-- IF that gets resolved and/or WHEN WoWhead gets the data for this object parsed, remove Kindo'jan TEMP.lua file from .db\shared\objects\Dynamic\
+							["coord"] = { 44.5, 68.8, LABYRINTH_KINDOJAN },
+						}),
+					},
 				}),
 				q(98833, {	-- You Remind Me of the Bird
 					["sourceQuest"] = 98832,	-- Dangers Untold and Hardships Unnumbered
-					["qg"] = 273203,	-- Kinduru
+					["qg"] = 274918,	-- Kinduru
 					["coord"] = { 38.3, 64.7, LABYRINTH_KINDOJAN },
 				}),
 				q(98834, {	-- The Way Forward...

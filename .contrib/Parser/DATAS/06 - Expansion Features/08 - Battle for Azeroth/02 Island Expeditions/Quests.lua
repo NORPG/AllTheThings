@@ -298,21 +298,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["qg"] = 122370,	-- Cyrus Crestfall
 				["coord"] = { 68.0, 22.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163616, 1 }, },	-- 1x Dented Coin (A)
+				["cost"] = { { "i", 163616, 1 } },	-- 1x Dented Coin (A)
 				["groups"] = { i(174504) },	-- Proudmoore War Copper
 			}),
 			q(53120, {	-- Exotic Spices (A)
 				["qg"] = 136269,	-- Xun Xun Sweetflower
 				["coord"] = { 20.6, 45.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163614, 1 }, },	-- 1x Exotic Spices (A)
+				["cost"] = { { "i", 163614, 1 } },	-- 1x Exotic Spices (A)
 				["groups"] = { i(174503) },	-- Exotically Spiced Carrot
 			}),
 			q(53114, {	-- Golden Beetle (H)
 				["qg"] = 120551,	-- Krag'wa the Huge
 				["coord"] = { 75.6, 56.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163619, 1 }, },	-- 1x Golden Beetle (H)
+				["cost"] = { { "i", 163619, 1 } },	-- 1x Golden Beetle (H)
 				["groups"] = { i(174506) },	-- Golden Insect Wings
 			}),
 			q(53115, {	-- Island Flotsam (H)
@@ -320,35 +320,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["qg"] = 126334,	-- Jani
 				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163620, 1 }, },	-- 1x Island Flotsam (H)
+				["cost"] = { { "i", 163620, 1 } },	-- 1x Island Flotsam (H)
 				["groups"] = { i(174518) },	-- Jani Figurine
 			}),
 			q(53119, {	-- Lost Sea Scroll (A)
 				["qg"] = 130576,	-- Brother Pike
 				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163615, 1 }, },	-- 1x Lost Sea Scroll (A)
+				["cost"] = { { "i", 163615, 1 } },	-- 1x Lost Sea Scroll (A)
 				["groups"] = { i(174505) },	-- Tide-Speaker's Tome
 			}),
 			q(53117, {	-- Rusted Alliance Insignia (A)
 				["qg"] = 135446,	-- Vindicator Jaelaana
 				["coord"] = { 69.2, 25.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163617, 1 }, },	-- 1x Rusted Alliance Insignia
+				["cost"] = { { "i", 163617, 1 } },	-- 1x Rusted Alliance Insignia
 				["groups"] = { i(174507) },	-- Fallen Soldier's Insignia
 			}),
 			q(53116, {	-- Rusted Horde Insignia (H)
 				["qg"] = 135447,	-- Ransa Greyfeather
 				["coord"] = { 58.0, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163621, 1 }, },	-- 1x Rusted Horde Insignia (H)
+				["cost"] = { { "i", 163621, 1 } },	-- 1x Rusted Horde Insignia (H)
 				["groups"] = { i(174508) },	-- Fallen Soldier's Insignia
 			}),
 			q(53113, {	-- Shimmering Shell (H)
 				["qg"] = 135804,	-- Hoarder Jena
 				["coord"] = { 56.7, 49.8, VOLDUN },
 				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163618, 1 }, },	-- 1x Shimmering Shell (H)
+				["cost"] = { { "i", 163618, 1 } },	-- 1x Shimmering Shell (H)
 				["groups"] = { i(174501) },	-- Ornate Voldunai Jewelry
 			}),
 			q(54751, {	-- Soggy Page
@@ -356,7 +356,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					135793 ,	-- Collector Kojo (A)
 					134345 ,	-- Collector Kojo (H)
 				},
-				["cost"] = { { "i", 166501, 1 }, },	-- 1x Soggy Page
+				["cost"] = { { "i", 166501, 1 } },	-- 1x Soggy Page
 				["groups"] = { i(174519) },	-- Verdant Hills of Chokingvine - Page 17
 			}),
 		})),

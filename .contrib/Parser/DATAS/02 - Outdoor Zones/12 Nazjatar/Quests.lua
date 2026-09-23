@@ -882,14 +882,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["qg"] = 150202,	-- Hunter Akana
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
-			["cost"] = { { "i", 170176, 1 }, },	-- 1x Fathom Ray Wing
+			["cost"] = { { "i", 170176, 1 } },	-- 1x Fathom Ray Wing
 		}),
 		q(56972,{	-- Fathom Ray Wing [H]
 			["qg"] = 149904,	-- Neri Sharpfin
 			["coord"] = { 50.2, 64.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
-			["cost"] = { { "i", 170176, 1 }, },	-- 1x Fathom Ray Wing
+			["cost"] = { { "i", 170176, 1 } },	-- 1x Fathom Ray Wing
 		}),
 		q(56149, {	-- Feed Them All (A)
 			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",

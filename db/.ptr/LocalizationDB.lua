@@ -13825,6 +13825,7 @@ local ObjectNames = {
 	[673657] = "Serpent's Hoard",
 	[673863] = "Ossified Relic",
 	[675629] = "Broken Urn",
+	[693668] = "Broken Tablet",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",

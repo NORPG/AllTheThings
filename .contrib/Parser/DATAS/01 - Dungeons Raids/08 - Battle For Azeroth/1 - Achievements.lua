@@ -33,9 +33,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				12549,	-- Not a Fun Guy
 				12498,	-- Taint Nobody Got Time For That
 				12499,	-- Sporely Alive
+				-- #if BEFORE 12.1.5
 				12503,	-- Snake Eyes
 				12507,	-- Snake Eater
 				12508,	-- Good Night, Sweet Prince
+				-- #endif
 				12457,	-- Remix to Ignition
 				12462,	-- Shot Through the Heart
 				12855,	-- Pitch Invasion
