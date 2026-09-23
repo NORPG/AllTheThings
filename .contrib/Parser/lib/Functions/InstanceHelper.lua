@@ -20,20 +20,6 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		end
 		local encounter = (helper.TreatBossesAsNpcOnly and n or e)(id, t)
 		encounter.crs = crs[id]
-		return encounter
-	end
-	local function Boss(id, t)
-		local encounter = BossOnly(id, t)
-		if helper.ExtraLoots then
-			local add, data
-			for _,extraLootData in ipairs(helper.ExtraLoots) do
-				add, data = extraLootData.Add, extraLootData.Data
-				if (not add or type(add) ~= "function") or (not data or type(data) ~= "table") then
-					print("'extraLoots' expects an array of tables with { Add = func(encounter, bossID, difficultyID, [data]), Data = { [bossID] = {i(###),i(###)}, ... } }")
-				end
-				add(encounter, id, CurrentDifficultyID, data)
-			end
-		end
 		if helper.Coords and not encounter.coord then
 			encounter.coord = helper.Coords[id]
 		end
@@ -48,6 +34,20 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 				for i=1,#bossObjects do
 					bossProviders[#bossProviders + 1] = { "o", bossObjects[i] }
 				end
+			end
+		end
+		return encounter
+	end
+	local function Boss(id, t)
+		local encounter = BossOnly(id, t)
+		if helper.ExtraLoots then
+			local add, data
+			for _,extraLootData in ipairs(helper.ExtraLoots) do
+				add, data = extraLootData.Add, extraLootData.Data
+				if (not add or type(add) ~= "function") or (not data or type(data) ~= "table") then
+					print("'extraLoots' expects an array of tables with { Add = func(encounter, bossID, difficultyID, [data]), Data = { [bossID] = {i(###),i(###)}, ... } }")
+				end
+				add(encounter, id, CurrentDifficultyID, data)
 			end
 		end
 		encounter.groups = appendAllGroups(encounter.groups, clone(loots[id]))
