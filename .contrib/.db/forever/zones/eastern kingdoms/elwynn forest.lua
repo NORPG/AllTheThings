@@ -483,7 +483,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					objective(1, {	-- 0/18 Duskweed Petal
 						providers = {
 							{ "i", 286214 },	-- Duskweed Petal
-							--{ "o",  },	-- 
+							{ "o", 694855 },	-- Overgrown Duskweed
 						},
 						coords = {
 							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
@@ -491,7 +491,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ 63.4, 79.4, MAP.ELWYNN_FOREST },
 						},
 					}),
-					objective(1, {	-- 0/6 Vial of Animal Blood
+					objective(2, {	-- 0/6 Vial of Animal Blood
 						providers = { "i", 286215 },	-- Vial of Animal Blood
 						coords = {
 							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
@@ -512,6 +512,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 34.5, 84.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+			}),
+			q(99131, {	-- Baited for Success
+				sourceQuest = 99130,	-- An Enticing Offer
+				qg = 241,	-- Remy "Two Times"
+				coord = { 42.2, 67.2, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
 			}),
 			q(91775, {	-- Book Return
 				sourceQuest = 91772,	-- Shhh! We're Hunting Kobolds
@@ -766,6 +774,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(6985),	-- Haggard's Sword
 				},
 			}),
+			q(91723, {	-- Delicate Instruments (1/2)
+				qg = 248242,	-- Hamish Bergwort
+				coord = { 65.0, 69.8, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/8 Kobold Geomancer slain
+						provider = { "n", 476 },	-- Kobold Geomancer
+						coord = { 62.6, 54.2, MAP.ELWYNN_FOREST },
+					}),
+				},
+			}),
+			q(91724, {	-- Delicate Instruments (2/2)
+				sourceQuest = 91723,	-- Delicate Instruments (1/2)
+				qg = 248242,	-- Hamish Bergwort
+				coord = { 65.0, 69.8, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/8 Defias Rogue Wizard slain
+						provider = { "n", 474 },	-- Defias Rogue Wizard
+						coord = { 75.4, 50.4, MAP.ELWYNN_FOREST },
+					}),
+				},
+			}),
 			q(39, {	-- Deliver Thomas' Report
 				sourceQuest = 71,	-- Report to Thomas
 				qg = 261,	-- Guard Thomas
@@ -800,6 +835,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 72.7, 60.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+			}),
+			q(91733, {	-- Downstream
+				qg = 248265,	-- Ormin Pelford
+				coord = { 76.6, 72.0, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/1 Waterlogged Axe
+						providers = {
+							{ "i", 247817 },	-- Waterlogged Axe
+							{ "o", 562105 },	-- Waterlogged Axe
+						},
+						coord = { 767, 82.5, MAP.ELWYNN_FOREST },
+					}),
+					objective(2, {	-- 0/1 Waterlogged Saw
+						providers = {
+							{ "i", 247813 },	-- Waterlogged Saw
+							{ "o", 562103 },	-- Waterlogged Saw
+						},
+						coord = { 74.3, 76.4, MAP.ELWYNN_FOREST },
+					}),
+					objective(3, {	-- 0/1 Waterlogged Toolbox
+						providers = {
+							{ "i", 247818 },	-- Waterlogged Toolbox
+							{ "o", 562106 },	-- Waterlogged Toolbox
+						},
+						coord = { 77.3, 86.8, MAP.ELWYNN_FOREST },
+					}),
+				},
 			}),
 			q(1097, {	-- Elmore's Task
 				qgs = {
@@ -883,6 +948,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						cr = 327,	-- Goldtooth
 					}),
 					i(1359),	-- Lion-stamped Gloves
+				},
+			}),
+			q(91732, {	-- Good Steel
+				qg = 248266,	-- Hagar Lowe
+				coord = { 82.6, 63.8, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/4 Mining Tools
+						providers = {
+							{ "i", 247816 },	-- Mining Tools
+							{ "o", 562114 },	-- Mining Tools
+						},
+						coord = { 60.8, 52.6, MAP.ELWYNN_FOREST },
+					}),
 				},
 			}),
 			q(60, {	-- Kobold Candles
@@ -1135,6 +1216,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				classes = { MAGE },
 				isBreadcrumb = true,
 				lvl = 10,
+			}),
+			q(91725, {	-- Stolen Enchanting Supplies
+				qg = 248248,	-- Blixie Fitzwink
+				coord = { 63.2, 72.6, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/5 Stolen Enchanting Supplies
+						provider = { "i", 247805 },	-- Stolen Enchanting Supplies
+						--coord = { , MAP.ELWYNN_FOREST },
+					}),
+				},
 			}),
 			q(123, {	-- The Collector
 				qs = 1307,	-- Gold Pickup Schedule (QS!)
