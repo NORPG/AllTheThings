@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(1351, {	-- Fingerbone Bracers
-					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item.",
 					["coords"] = {
 						{ 75.8, 73.6, MAP.ASHENVALE },
 						{ 77.4, 75.4, MAP.ASHENVALE },

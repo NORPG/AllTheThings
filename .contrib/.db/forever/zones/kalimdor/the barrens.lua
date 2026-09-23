@@ -2662,7 +2662,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(4785, {	-- Brimstone Belt
-						["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+						["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					}),
 				},
 			}),
@@ -2723,7 +2723,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(2035, {	-- Sword of the Night Sky
-						["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+						["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					}),
 				},
 			}),

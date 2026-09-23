@@ -1060,7 +1060,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			i(5624, {	-- Circlet of the Order
 				["cr"] = 2584,	-- Stromgarde Defender
-				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				["coords"] = {
 					{ 26.0, 58.0, MAP.ARATHI_HIGHLANDS },
 					{ 22.0, 62.2, MAP.ARATHI_HIGHLANDS },
@@ -1095,7 +1095,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					2780,	-- Caretaker Nevlin
 					2781,	-- Caretaker Weston
 				},
-				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				["coord"] = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(1993, {	-- Ogremind Ring

@@ -603,14 +603,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(8491, {	-- Black Tabby Cat (PET!)
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 							["timeline"] = { ADDED_1_11_1 },
 						}),
 						i(4437, {	-- Channeler's Staff
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 						}),
 					},
 				}),
@@ -804,7 +804,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4767, {	-- Coppercloth Gloves
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["cr"] = 3578,	-- Dalaran Miner
 				}),
 				i(5110, {	-- Dalaran Wizard's Robe
