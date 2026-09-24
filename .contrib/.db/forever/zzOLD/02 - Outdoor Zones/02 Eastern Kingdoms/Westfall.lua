@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(92909, {	-- Harvesting the Harvesters
-					qq = 253395,	-- Ozwin Ironsprocket
+					qg = 253395,	-- Ozwin Ironsprocket
 					coord = { 51.6, 32.2, MAP.WESTFALL },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/14 Golem Isospring
 							provider = { "i", 255007 },	-- Golem Isospring
 						}),
-						objective(1, {	-- 0/5 Harvester Gyrostabilizer
+						objective(2, {	-- 0/5 Harvester Gyrostabilizer
 							provider = { "i", 255010 },	-- Harvester Gyrostabilizer
 						}),
 					},
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				q(92911, {	-- Harvesting the Harvesters (Engineering 2/2)
 					sourceQuest = 92910,	-- Harvesting the Harvesters (Engineering 1/2)
-					qq = 253395,	-- Ozwin Ironsprocket
+					qg = 253395,	-- Ozwin Ironsprocket
 					coord = { 51.6, 32.2, MAP.WESTFALL },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
@@ -268,6 +268,28 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0 },
+						}),
+					},
+				}),
+				q(92744, {	-- Murloc Gills
+					qg = 253092,	-- Alba Fairmoon
+					coord = { 52.5, 53.0, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 9,
+					groups = {
+						objective(1, {	-- 0/7 Longshore Murloc Gill
+							provider = { "i", 254548 },	-- Longshore Murloc Gill
+							crs = {
+								126,	-- Murloc Coastrunner
+								458,	-- Murloc Hunter
+								456,	-- Murloc Minor Oracle
+								513,	-- Murloc Netter
+								517,	-- Murloc Oracle
+								515,	-- Murloc Raider
+								127,	-- Murloc Tidehunter
+								171,	-- Murloc Warrior
+							},
 						}),
 					},
 				}),
@@ -450,6 +472,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(744),	-- Thunderbrew's Boot Flask
 					},
 				}),
+				q(92742, {	-- Testing the Wells
+					qg = 253092,	-- Alba Fairmoon
+					qi = 254545,	-- Well Water Sample Kit (PQI!)
+					coord = { 52.5, 53.0, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 9,
+					groups = {
+						objective(1, {	-- 0/1 Jansen Stead Water Sample
+							provider = { "i", 254546 },	-- Jansen Stead Water Sample
+							coord = { 56.7, 18.7, MAP.WESTFALL },
+						}),
+						objective(2, {	-- 0/1 Molsen Farm Water Sample
+							provider = { "i", 254547 },	-- Molsen Farm Water Sample
+							coord = { 46.2, 38.3, MAP.WESTFALL },
+						}),
+					},
+				}),
 				q(152, {	-- The Coast Isn't Clear
 					["qg"] = 392,	-- Captain Grayson
 					["coord"] = { 30.0, 86.0, MAP.WESTFALL },
@@ -567,6 +607,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 						i(3578),	-- Harvester's Pants
 						i(1561),	-- Harvester's Robe
+						i(276695, {	-- Harvester's Pestslayer
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(12, {		-- The People's Militia (1/3)
@@ -763,6 +806,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(5971),	-- Feathered Cape
 						i(4454),	-- Talon of Vultros
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(408014, {	-- Gnomish Tome
+					coord = { 52.6, 53.8, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					groups = {
+						i(208860),	-- Rumi of Gnomeregan: The Collected Works
 					},
 				}),
 			}),

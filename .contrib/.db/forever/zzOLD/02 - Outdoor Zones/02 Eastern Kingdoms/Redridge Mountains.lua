@@ -1496,7 +1496,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
 						i(253668, { -- Pattern: Woolen Reagent Bag
-							ctimeline = { TIMELINE.ADDED_1_60_1 },
+							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
 						i(4782, {	-- Solstice Robe
 							["isLimited"] = true,
