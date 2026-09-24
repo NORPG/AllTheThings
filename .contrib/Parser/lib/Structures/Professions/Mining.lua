@@ -8,7 +8,9 @@ CLASSIC_MINING = {
 		-- #endif
 		["rank"] = 1,
 	}),
-	r(1240951),
+	-- #IF FOREVER
+	r(1240951),	-- Mining
+	-- #ENDIF
 	r(2575, {	-- Mining (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,

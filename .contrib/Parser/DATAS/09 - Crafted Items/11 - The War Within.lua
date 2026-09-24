@@ -2472,7 +2472,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(439729, 80373),	-- Webbed Ironclaw
 			r_withQuest(439719, 80363),	-- Weeping Aqirite
 			r_withQuest(439718, 80362),	-- Weeping Bismuth
-			r_withQuest(439720, 80364),	-- Weeping Ironclaw
+			r_withQuest(439720, 80364, nil, "Found only in certain Delves.", {	-- Weeping Ironclaw
+				TAK_RETHAN_ABYSS,
+				THE_UNDERKEEP,
+				SKITTERING_BREACH,
+			}),
 		}),
 		header(HEADERS.Spell, 2575, {	-- Mining
 			i(210933),	-- Aqirite+

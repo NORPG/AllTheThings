@@ -60,9 +60,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(VENDORS, {
 				n(243225, {	-- Mirvedon <Competitor's Recipes>
 					["coord"] = { 34.0, 81.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = sharedData({
+					["groups"] = bubbleDownFiltered({
 						["cost"] = { { "c", HONOR, 7500 } },
-					}, {
+					},FILTERFUNC_itemID,{
 						filter(RECIPES, {
 							i(256712),	-- Design: Cognitive Heliotrope (RECIPE!)
 							i(256706),	-- Design: Determined Heliotrope (RECIPE!)
