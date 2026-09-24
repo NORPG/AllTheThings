@@ -876,7 +876,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ "i", 247817 },	-- Waterlogged Axe
 							{ "o", 562105 },	-- Waterlogged Axe
 						},
-						coord = { 767, 82.5, MAP.ELWYNN_FOREST },
+						coord = { 76.7, 82.5, MAP.ELWYNN_FOREST },
 					}),
 					objective(2, {	-- 0/1 Waterlogged Saw
 						providers = {

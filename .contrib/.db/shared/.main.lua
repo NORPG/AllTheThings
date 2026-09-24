@@ -130,7 +130,7 @@ ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
 });
 -- Currently, multiple ItemIDs get assigned to one MountID leading to a conflict/overwrite
 MountDB = CreateDatabaseContainer("MountDB", nil, {IgnoreValueConflicts=true});
-ObjectDB = CreateDatabaseContainer("ObjectDB");
+ObjectDB = CreateDatabaseContainer("ObjectDB", nil, {IgnoreValueConflicts=true});
 QuestDB = CreateDatabaseContainer("QuestDB");
 RecipeDB = CreateDatabaseContainer("RecipeDB");
 -- Currently, multiple ItemIDs get assigned to one SpeciesID leading to a conflict/overwrite
