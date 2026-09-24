@@ -204,27 +204,27 @@ local function GetNameFromCost(costType, id, count)
 		return (count > 1 and ("x" .. count .. " ") or "") .. (app.GetNameFromProvider(costType, id) or UNKNOWN);
 	end
 end
-local ExportKeyValueHandlers = {
+local ExportRawKeyValueHandlers = {
 	providers = function(key, value)
 		local lines = {"{"};
 		for i,o in ipairs(value) do
-			lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN);
+			lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },";
 		end
 		lines[#lines + 1] = "},";
-		return app.TableConcat(lines, nil, nil, "\n");
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
 	end,
 	crs = function(key, value)
 		local lines = {"{"};
 		for i,id in ipairs(value) do
-			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.NPCNameFromID[id] or UNKNOWN);
+			lines[#lines + 1] = "\t" .. id .. ",";
 		end
 		lines[#lines + 1] = "},";
-		return app.TableConcat(lines, nil, nil, "\n");
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
 	end,
 	coords = function(key, value)
 		local lines = {"{"};
 		for mapID,coordsForMap in pairs(value) do
-			lines[#lines + 1] = "\t[" .. mapID .. "] = {\t-- " .. (app.GetMapName(mapID) or UNKNOWN)
+			lines[#lines + 1] = "\t[" .. mapID .. "] = {"
 			for i,o in ipairs(coordsForMap) do
 				-- floor coords to nearest tenth
 				lines[#lines + 1] = "\t\t{ " .. ("%.1f"):format(app.round(o[1], 1)) .. ", " .. ("%.1f"):format(app.round(o[2], 1)) .. " },";
@@ -232,54 +232,49 @@ local ExportKeyValueHandlers = {
 			lines[#lines + 1] = "\t},";
 		end
 		lines[#lines + 1] = "},";
-		return app.TableConcat(lines, nil, nil, "\n");
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
 	end,
 	cost = function(key, value)
 		if type(value) == "number" then
 			-- This is simply a gold value
-			return value .. ",\t-- " .. GetMoneyString(value);
+			return key .. " = " .. value .. ",";
 		else
 			-- This is the traditional cost format.
 			local lines = {"{"};
 			for i,o in ipairs(value) do
-				lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]);
+				lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },";
 			end
 			lines[#lines + 1] = "},";
-			return app.TableConcat(lines, nil, nil, "\n");
+			return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
 		end
-	end,
-	r = function(key, value)
-		-- "r" is a shortcut for "races", where the whole of the faction can do a thing
-		return "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
 	end,
 	maps = function(key, value)
 		local lines = {"{"};
 		for i,id in ipairs(value) do
-			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetMapName(id) or UNKNOWN);
+			lines[#lines + 1] = "\t" .. id .. ",";
 		end
 		lines[#lines + 1] = "},";
-		return app.TableConcat(lines, nil, nil, "\n");
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
 	end,
 	sourceQuests = function(key, value)
 		local lines = {"{"};
 		for i,id in ipairs(value) do
-			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetQuestName(id) or UNKNOWN);
+			lines[#lines + 1] = "\t" .. id .. ",";
 		end
 		lines[#lines + 1] = "},";
-		return app.TableConcat(lines, nil, nil, "\n");
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
 	end,
 }
-ExportKeyValueHandlers.qgs = ExportKeyValueHandlers.crs
-ExportKeyValueHandlers.nextQuests = ExportKeyValueHandlers.sourceQuests
-
-local function ExportKeyValue(key, value)
-	local handler = ExportKeyValueHandlers[key];
+ExportRawKeyValueHandlers.qgs = ExportRawKeyValueHandlers.crs
+ExportRawKeyValueHandlers.nextQuests = ExportRawKeyValueHandlers.sourceQuests
+local function ExportRawKeyValue(key, value)
+	local handler = ExportRawKeyValueHandlers[key];
 	if handler then
-		return key .. " = " .. handler(key, value);
+		return handler(key, value);
 	end
 	-- Default parsing for unrecognized keys
 	if not DefaultParsing[key] then
-		print("DEFAULT PARSING FOR KEY", key);
+		-- print("DEFAULT PARSING FOR KEY", key);
 		DefaultParsing[key] = true;
 	end
 	local str = key .. " = ";
@@ -294,6 +289,99 @@ local function ExportKeyValue(key, value)
 	end
 	return str;
 end
+
+-- Non-Raw key value handlers can shorten it to a constant.
+local ExportKeyValueHandlers = {};
+local ExportKeyValueHandlers = {
+	providers = function(key, value)
+		local lines = {"{"};
+		for i,o in ipairs(value) do
+			lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. " },\t-- " .. (app.GetNameFromProvider(o[1], o[2]) or UNKNOWN);
+		end
+		lines[#lines + 1] = "},";
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
+	end,
+	crs = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.NPCNameFromID[id] or UNKNOWN);
+		end
+		lines[#lines + 1] = "},";
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
+	end,
+	coords = function(key, value)
+		local lines = {"{"};
+		for mapID,coordsForMap in pairs(value) do
+			lines[#lines + 1] = "\t[" .. mapID .. "] = {\t-- " .. (app.GetMapName(mapID) or UNKNOWN)
+			for i,o in ipairs(coordsForMap) do
+				-- floor coords to nearest tenth
+				lines[#lines + 1] = "\t\t{ " .. ("%.1f"):format(app.round(o[1], 1)) .. ", " .. ("%.1f"):format(app.round(o[2], 1)) .. " },";
+			end
+			lines[#lines + 1] = "\t},";
+		end
+		lines[#lines + 1] = "},";
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
+	end,
+	cost = function(key, value)
+		if type(value) == "number" then
+			-- This is simply a gold value
+			return key .. " = " .. value .. ",\t-- " .. GetMoneyString(value);
+		else
+			-- This is the traditional cost format.
+			local lines = {"{"};
+			for i,o in ipairs(value) do
+				lines[#lines + 1] = "\t{ \"" .. o[1] .. "\", " .. o[2] .. ", " .. (o[3] or 1) .. " },\t-- ".. GetNameFromCost(o[1], o[2], o[3]);
+			end
+			lines[#lines + 1] = "},";
+			return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
+		end
+	end,
+	maps = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetMapName(id) or UNKNOWN);
+		end
+		lines[#lines + 1] = "},";
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
+	end,
+	sourceQuests = function(key, value)
+		local lines = {"{"};
+		for i,id in ipairs(value) do
+			lines[#lines + 1] = "\t" .. id .. ",\t-- " .. (app.GetQuestName(id) or UNKNOWN);
+		end
+		lines[#lines + 1] = "},";
+		return key .. " = " .. app.TableConcat(lines, nil, nil, "\n");
+	end,
+	r = function(key, value)
+		-- "r" is a shortcut for "races", where the whole of the faction can do a thing
+		return "races = " .. (value == 2 and "ALLIANCE_ONLY" or "HORDE_ONLY") .. ",";
+	end
+}
+ExportKeyValueHandlers.qgs = ExportKeyValueHandlers.crs
+ExportKeyValueHandlers.nextQuests = ExportKeyValueHandlers.sourceQuests
+local function ExportKeyValue(key, value)
+	local handler = ExportKeyValueHandlers[key];
+	if handler then
+		return handler(key, value);
+	end
+	-- Default parsing for unrecognized keys
+	if not DefaultParsing[key] then
+		-- print("DEFAULT PARSING FOR KEY", key);
+		DefaultParsing[key] = true;
+	end
+	local str = key .. " = ";
+	if type(value) == "string" then
+		if value:find("\"") or value:find("\n") then
+			str = str .. "[[" .. value .. "]],";
+		else
+			str = str .. "\"" .. value .. "\",";
+		end
+	else
+		str = str .. tostring(value) .. ",";
+	end
+	return str;
+end
+
 local IgnoredForRaw = setmetatable({
 	g = true,
 	name = true,
@@ -310,7 +398,7 @@ local function ExportRawDataToString(data, depth)
 		local keyindent = "\n" .. indent
 		for key,value in pairs(data) do
 			if not IgnoredForRaw[key] then
-				datalines[#datalines + 1] = indent .. ExportKeyValue(key,value):gsub("\n", keyindent)
+				datalines[#datalines + 1] = indent .. ExportRawKeyValue(key,value):gsub("\n", keyindent)
 			end
 		end
 		return #datalines > 0 and app.TableConcat(datalines, nil, nil, "\n") or nil
@@ -537,6 +625,7 @@ app:CreateWindow("Debugger", {
 	RootCommands = { "debugger" },
 	AddObject = function(self, info)
 		MergeObject(self.data.g, CloneObject(info));
+		MergeObject(self.rawData, info);
 		self:AssignChildren();
 		app.CallbackHandlers.AfterCombatOrDelayedCallback(self.Update, 1, self, true)
 		app.CallbackHandlers.AfterCombatOrDelayedCallback(self.BackupData, 15, self)
@@ -565,8 +654,9 @@ app:CreateWindow("Debugger", {
 	end,
 	OnLoad = function(self, settings)
 		self.rawData = app.LocalizeGlobal("AllTheThingsDebugData", true);
-		self.data.g = CloneClassInstance(self.rawData);
-		ConvertCoordsForGroup(self.data);
+		for i,info in ipairs(self.rawData) do
+			MergeObject(self.data.g, CloneObject(info));
+		end
 		for i=#self.data.options,1,-1 do
 			tinsert(self.data.g, 1, self.data.options[i]);
 		end
@@ -617,7 +707,10 @@ app:CreateWindow("Debugger", {
 								for i,info in ipairs(row.ref.data) do
 									MergeObject(self.data.g, CloneObject(info));
 									MergeObject(self.rawData, info);
+									self:AssignChildren();
 								end
+								tremove(self.data.options, app.indexOf(self.data.options, row.ref));
+								tremove(self.data.g, app.indexOf(self.data.g, row.ref));
 								self:Update(true);
 								return true;
 							end,
@@ -663,13 +756,26 @@ app:CreateWindow("Debugger", {
 								txt = txt:gsub("groups", "g");
 								local lastChar = txt:sub(-1);
 								if lastChar == "," or lastChar == ";" then txt = txt:sub(1, -2); end
-								local func,err = loadstring("local data = " .. txt .. ";return data,true");
+								local func,err = loadstring("local data = " .. txt .. "\nreturn data,true");
 								if not err and func then
 									local data,success = func();
 									if data and success then
-										ConvertCoordsForGroup(data);
-										MergeObject(self.data.g, CloneObject(data));
-										MergeObject(self.rawData, data);
+										local keyCount = 0;
+										for key,_ in pairs(data) do
+											keyCount = keyCount + 1;
+										end
+										if keyCount == 1 and data.g then
+											for i,o in ipairs(data.g) do
+												ConvertCoordsForGroup(o);
+												MergeObject(self.data.g, CloneObject(o));
+												MergeObject(self.rawData, o);
+											end
+										else
+											ConvertCoordsForGroup(data);
+											MergeObject(self.data.g, CloneObject(data));
+											MergeObject(self.rawData, data);
+										end
+										self:AssignChildren();
 										self:Update(true);
 									else
 										app.print("Something went wrong importing the raw data...");

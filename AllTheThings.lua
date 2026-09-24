@@ -14,6 +14,7 @@ local myCache = {
 	ATTCharacterData = ATTCharacterData;
 	ATTAccountWideData = ATTAccountWideData;
 	AllTheThingsSavedVariables = AllTheThingsSavedVariables;
+	AllTheThingsDebugData = AllTheThingsDebugData;
 };
 app.LocalizeGlobal = function(globalName, init)
 	local val = myCache[globalName]

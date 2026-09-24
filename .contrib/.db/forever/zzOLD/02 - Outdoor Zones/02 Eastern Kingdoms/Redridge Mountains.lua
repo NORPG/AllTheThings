@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				exploration(1002),	-- Three Corners
 				exploration(96),	-- Tower of Ilgalar
 			}),
-			n(FACTION, {
+			n(FACTIONS, {
 				faction(2586, { -- Azeroth Commerce Authority
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
@@ -1492,6 +1492,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 27.2, 45.4, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(253665, { -- Pattern: Linen Reagent Bag
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(253668, { -- Pattern: Woolen Reagent Bag
+							ctimeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(4782, {	-- Solstice Robe
 							["isLimited"] = true,
 						}),
