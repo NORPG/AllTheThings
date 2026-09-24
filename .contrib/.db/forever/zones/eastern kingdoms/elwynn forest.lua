@@ -1621,6 +1621,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					97,		-- Riverpaw Runt
 				},
 			}),
+			i(1972, {	-- Westfall Deed (QS!)
+				["crs"] = {
+					116,	-- Defias Bandit
+					6866,	-- Defias Bodyguard
+					6846,	-- Defias Dockmaster
+					6927,	-- Defias Dockworker
+					474,	-- Defias Rogue Wizard
+					880,	-- Erlan Drudgemoor
+				},
+			}),
 		}),
 	},
 });

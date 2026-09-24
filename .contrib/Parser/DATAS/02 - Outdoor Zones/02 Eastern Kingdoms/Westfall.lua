@@ -522,14 +522,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 24.8, 95.3, ELWYNN_FOREST },
 					-- #else
 					["maps"] = { ELWYNN_FOREST },
-					["crs"] = {
-						116,	-- Defias Bandit
-						6866,	-- Defias Bodyguard
-						6846,	-- Defias Dockmaster
-						6927,	-- Defias Dockworker
-						474,	-- Defias Rogue Wizard
-						880,	-- Erlan Drudgemoor
-					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,

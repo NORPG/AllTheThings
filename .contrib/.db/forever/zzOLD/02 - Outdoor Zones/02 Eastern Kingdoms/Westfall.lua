@@ -177,19 +177,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(184, {	-- Furlbrow's Deed
-					["providers"] = {
-						{ "i",   1972 },	-- Westfall Deed (QS!)
-						{ "i",   1971 },	-- Furlbrow's Deed (PQI!)
-					},
+					["qs"] = 1972,	-- Westfall Deed (QS!)
+					["qi"] = 1971,	-- Furlbrow's Deed (PQI!)
 					["maps"] = { MAP.ELWYNN_FOREST },
-					["crs"] = {
-						116,	-- Defias Bandit
-						6866,	-- Defias Bodyguard
-						6846,	-- Defias Dockmaster
-						6927,	-- Defias Dockworker
-						474,	-- Defias Rogue Wizard
-						880,	-- Erlan Drudgemoor
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {

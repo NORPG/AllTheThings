@@ -3001,21 +3001,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(123, {	-- The Collector
-					["providers"] = {
-						{ "i", 1307 },	-- Gold Pickup Schedule (QS!)
-						{ "i", 2223 },	-- The Collector's Schedule (PQI!)
-					},
+					["qs"] = 1307,	-- Gold Pickup Schedule (QS!)
+					["qi"] = 2223,	-- The Collector's Schedule (PQI!)
 					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
-						-- #if AFTER CATA
-						13159,	-- James Clark
-						-- #else
-						100,	-- Gruff Swiftbite
-						448,	-- Hogger
-						478,	-- Riverpaw Outrunner
-						97,		-- Riverpaw Runt
-						-- #endif
-					},
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(114, {	-- The Escape
@@ -3700,6 +3688,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				i(769),	-- Chunk of Boar Meat
 				-- #endif
+				i(1307, {	-- Gold Pickup Schedule (QS!)
+					["crs"] = {
+						-- #if AFTER CATA
+						13159,	-- James Clark
+						-- #else
+						100,	-- Gruff Swiftbite
+						448,	-- Hogger
+						478,	-- Riverpaw Outrunner
+						97,		-- Riverpaw Runt
+						-- #endif
+					},
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood
 					["coords"] = {
@@ -3852,6 +3852,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						97,		-- Riverpaw Runt
 					},
 				}),
+				-- #if BEFORE CATA
+				i(1972, {	-- Westfall Deed (QS!)
+					["crs"] = {
+						116,	-- Defias Bandit
+						6866,	-- Defias Bodyguard
+						6846,	-- Defias Dockmaster
+						6927,	-- Defias Dockworker
+						474,	-- Defias Rogue Wizard
+						880,	-- Erlan Drudgemoor
+					},
+				}),
+				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
 					["coords"] = {

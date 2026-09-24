@@ -28,6 +28,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				exploration(1002),	-- Three Corners
 				exploration(96),	-- Tower of Ilgalar
 			}),
+			n(FACTION, {
+				faction(2586, { -- Azeroth Commerce Authority
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+				}),
+			}),
 			n(FLIGHT_PATHS, {
 				fp(5, {	-- Lakeshire, Redridge
 					["cr"] = 931,	-- Ariena Stormfeather <Gryphon Master>
@@ -732,6 +738,242 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(256732, { -- Alynsia
+					coord = { 11.1, 71.6, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(249477, { -- Formula: Tenets of the Silver Hand
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249478, { -- Formula: Polished Driftwood Icon
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249476, { -- Formula: Mystic Mushroom
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249483, { -- Formula: Soulstaff
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249485, { -- Formula: Orb of Souls
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249484, { -- Formula: Orb of Mystic Insight
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249482, { -- Formula: Glimmering Staff
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249479, { -- Formula: Enchant Weapon - Insight
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249480, { -- Formula: Enchant Weapon - Recovery
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249481, { -- Formula: Enchant Weapon - Revelation
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(249507, { -- Formula: Dreamstaff
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249495, { -- Formula: Totem of Ancestral Protection
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249493, { -- Formula: Talons of Wrath
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249494, { -- Formula: Libram of Invocation
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249496, { -- Formula: Enchant Necklace - Strength
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249502, { -- Formula: Enchant Necklace - Spell Power
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249503, { -- Formula: Enchant Necklace - Healing Power
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249504, { -- Formula: Enchant Necklace - Agility
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249505, { -- Formula: Enchant Necklace - Deflection
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249509, { -- Formula: Twisting Essence Jar
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249508, { -- Formula: Truesilver Conduit
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249506, { -- Formula: Radiant Staff
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249510, { -- Formula: Enchant Chest - Absorption
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(249537, { -- Formula: Brilliant Wand
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(249536, { -- Formula: Enchant Gloves - Holy Power
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249534, { -- Formula: Enchant Gloves - Arcane Power
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249538, { -- Formula: Enchant Bracer - Superior Intellect
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249539, { -- Formula: Enchant Bracer - Superior Deflection
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249525, { -- Formula: Enchant 2H Weapon - Mighty Spell Power
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249526, { -- Formula: Enchant 2H Weapon - Mighty Healing Power
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(274393, { -- Formula: Enchant Off-Hand - Wisdom
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(274398, { -- Formula: Enchant Gloves - Superior Strength
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(274399, { -- Formula: Enchant Cloak - Agility
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(274401, { -- Formula: Enchant Bracer - Greater Spellpower
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249535, { -- Formula: Enchant Gloves - Natural Power
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249529, { -- Formula: Idol of the Dream
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249530, { -- Formula: Libram of Holy Alacrity
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(249532, { -- Formula: Totem of Thunder
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(274394, { -- Formula: Enchant 2H Weapon - Spellblasting
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(271624, { -- Enchanting Certification
+							cost = {
+								{ "c", 3402, 1000 },	-- x1000 Merchant's Favor
+							},
+						}),
+					},
+				}),
 				n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 					["coord"] = { 88.2, 71.6, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
@@ -772,6 +1014,468 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(256734, { -- Daniel Stitchsong
+					coord = { 10.0, 72.6, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(252770, { -- Pattern: Wisdom's Leather Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252767, { -- Pattern: Defender's Leather Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252765, { -- Pattern: Brawler's Leather Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252768, { -- Pattern: Totemic Leather Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252766, { -- Pattern: Trapper's Leather Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252769, { -- Pattern: Stormrider's Leather Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252809, { -- Pattern: Stormrider's Leather Tunic
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252806, { -- Pattern: Trapper's Leather Tunic
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252807, { -- Pattern: Defender's Leather Tunic
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252805, { -- Pattern: Brawler's Leather Tunic
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252808, { -- Pattern: Totemic Leather Tunic
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252810, { -- Pattern: Wisdom's Leather Tunic
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252825, { -- Pattern: Wisdom's Leather Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252821, { -- Pattern: Trapper's Leather Legguards
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252820, { -- Pattern: Brawler's Leather Legguards
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252823, { -- Pattern: Totemic Leather Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252822, { -- Pattern: Defender's Leather Kilt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252824, { -- Pattern: Stormrider's Leather Kilt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252803, { -- Pattern: Wisdom's Leather Hood
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252778, { -- Pattern: Trapper's Leather Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252782, { -- Pattern: Wisdom's Leather Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252779, { -- Pattern: Defender's Leather Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252780, { -- Pattern: Totemic Leather Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252781, { -- Pattern: Stormrider's Leather Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252777, { -- Pattern: Brawler's Leather Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252788, { -- Pattern: Defender's Leather Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252791, { -- Pattern: Wisdom's Leather Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252789, { -- Pattern: Totemic Leather Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252790, { -- Pattern: Stormrider's Leather Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252786, { -- Pattern: Brawler's Leather Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252787, { -- Pattern: Trapper's Leather Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252798, { -- Pattern: Brawler's Leather Hood
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252799, { -- Pattern: Trapper's Leather Hood
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252801, { -- Pattern: Totemic Leather Hood
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252802, { -- Pattern: Stormrider's Leather Hood
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252800, { -- Pattern: Defender's Leather Hood
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(252836, { -- Pattern: Prowler's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252841, { -- Pattern: Skycaller's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252838, { -- Pattern: Stalker's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252842, { -- Pattern: Mender's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252834, { -- Pattern: Forceful Thick Armor Kit
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252850, { -- Pattern: Warden's Leather Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252901, { -- Pattern: Skycaller's Mail Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252903, { -- Pattern: Mender's Mail Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252848, { -- Pattern: Prowler's Leather Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252837, { -- Pattern: Skulker's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252840, { -- Pattern: Skirmisher's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252839, { -- Pattern: Warden's Leather Gloves
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252900, { -- Pattern: Stalker's Mail Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252849, { -- Pattern: Skulker's Leather Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252902, { -- Pattern: Skirmisher's Mail Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252852, { -- Pattern: Mender's Leather Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252851, { -- Pattern: Skycaller's Leather Shoulder
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(252905, { -- Pattern: Skycaller's Mail Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252873, { -- Pattern: Skulker's Leather Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252857, { -- Pattern: Mender's Leather Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252904, { -- Pattern: Stalker's Mail Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252854, { -- Pattern: Skulker's Leather Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252906, { -- Pattern: Skirmisher's Mail Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252856, { -- Pattern: Skycaller's Leather Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252855, { -- Pattern: Warden's Leather Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252907, { -- Pattern: Mender's Mail Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252863, { -- Pattern: Skycaller's Leather Boots
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252864, { -- Pattern: Mender's Leather Boots
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252912, { -- Pattern: Skirmisher's Mail Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252913, { -- Pattern: Mender's Mail Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252911, { -- Pattern: Skycaller's Mail Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252860, { -- Pattern: Prowler's Leather Boots
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252862, { -- Pattern: Warden's Leather Boots
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252861, { -- Pattern: Skulker's Leather Boots
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252910, { -- Pattern: Stalker's Mail Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252941, { -- Pattern: Mystic Rugged Armor Kit
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252872, { -- Pattern: Prowler's Leather Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252875, { -- Pattern: Skycaller's Leather Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252922, { -- Pattern: Stalker's Mail Belt
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252923, { -- Pattern: Skycaller's Mail Belt
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252925, { -- Pattern: Mender's Mail Belt
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252874, { -- Pattern: Warden's Leather Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252876, { -- Pattern: Mender's Leather Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252924, { -- Pattern: Skirmisher's Mail Belt
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(252853, { -- Pattern: Prowler's Leather Bracers
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(271626, { -- Leatherworking Certification
+							cost = {
+								{ "c", 3402, 1000 },	-- x1000 Merchant's Favor
+							},
+						}),
+					},
+				}),
 				n(956, {	-- Dorin Songblade <Armorer>
 					["coord"] = { 30.8, 46.6, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
@@ -796,6 +1500,179 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 						i(4786, {	-- Wise Man's Belt
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(256733, { -- Fritz Fizzle
+					coord = { 10.4, 74.4, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(264203, { -- Schematic: SAF-T Copper Bomb
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(264201, { -- Schematic: SAF-T Tabs
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(264202, { -- Schematic: SAF-T Dynamite
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(264204, { -- Schematic: EZ-Thro Wrap
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(264206, { -- Schematic: No Slip SAF-T Padding
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(264205, { -- Schematic: EZ-Thro Copper Bomb XL
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(285285, { -- Schematic: Satchel of Copper Bombs
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(280321, { -- Schematic: Whimsical Waistwrap
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(280322, { -- Schematic: Gizmo Girdle
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(280323, { -- Schematic: Clanking Cord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(280325, { -- Schematic: Floppy Goggles
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(264211, { -- Schematic: EZ-Thro Fireproof Fuse
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(280327, { -- Schematic: Stuckbutton Goggles
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(280328, { -- Schematic: Dented Goggles
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(264209, { -- Schematic: SAF-T Bell
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(280326, { -- Schematic: Bent Goggles
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(285286, { -- Schematic: Satchel of Bronze Bombs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(264216, { -- Schematic: Emergency Field Cloak
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(264217, { -- Schematic: Compact Critter Carrier
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(264221, { -- Schematic: Gnomish Army Knife
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(264220, { -- Schematic: SAF-T Disposable Parachute
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(264222, { -- Schematic: Loot-A-Rang
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(285287, { -- Schematic: Satchel of Iron Bombs
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(285288, { -- Schematic: Satchel of Dark Iron Bombs
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 270 },	-- x270 Merchant's Favor
+							},
+						}),
+						i(264234, { -- Schematic: Gnomish Poultryizer
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 360 },	-- x360 Merchant's Favor
+							},
+						}),
+						i(264232, { -- Schematic: Ultrasafe Rechargeable Battery
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 360 },	-- x360 Merchant's Favor
+							},
+						}),
+						i(264235, { -- Schematic: Ultralight Goblin Glider
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 360 },	-- x360 Merchant's Favor
+							},
+						}),
+						i(264237, { -- Schematic: Stealthman 52
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 360 },	-- x360 Merchant's Favor
+							},
+						}),
+						i(271625, { -- Engineering Certification
+							cost = {
+								{ "c", 3402, 1000 },	-- x1000 Merchant's Favor
+							},
 						}),
 					},
 				}),
@@ -831,6 +1708,977 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 						i(4822, {	-- Owl's Disk
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(256731, { -- Kalsey Sanden
+					coord = { 10.8, 72.8, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(249885, { -- Recipe: Venomous Smoothie
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(249886, { -- Recipe: Slimy Smoothie
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(249887, { -- Recipe: Mrrggl Smrrthle
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(249888, { -- Recipe: Calcified Smoothie
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(249889, { -- Recipe: Spicy Smoothie
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(249890, { -- Recipe: Wicked Smoothie
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(21099), -- Recipe: Smoked Sagefish
+						i(21219), -- Recipe: Sagefish Delight
+					},
+				}),
+				n(256735, { -- Mivin Shadowweave
+					coord = { 10.0, 72.8, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(253900, { -- Pattern: Shining Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253896, { -- Pattern: Shadow Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253890, { -- Pattern: Pristine Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253898, { -- Pattern: Pearly Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253894, { -- Pattern: Flame Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253892, { -- Pattern: Silky Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253972, { -- Pattern: Shining Gown
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253968, { -- Pattern: Shadow Gown
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253962, { -- Pattern: Pristine Gown
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253970, { -- Pattern: Pearly Gown
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253966, { -- Pattern: Flame Gown
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253952, { -- Pattern: Silky Circlet
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253960, { -- Pattern: Shining Circlet
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253956, { -- Pattern: Shadow Circlet
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253950, { -- Pattern: Pristine Circlet
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253958, { -- Pattern: Pearly Circlet
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253954, { -- Pattern: Flame Circlet
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253928, { -- Pattern: Silky Sash
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253936, { -- Pattern: Shining Sash
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253932, { -- Pattern: Shadow Sash
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253926, { -- Pattern: Pristine Sash
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253934, { -- Pattern: Pearly Sash
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253930, { -- Pattern: Flame Sash
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253916, { -- Pattern: Silky Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253924, { -- Pattern: Shining Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253920, { -- Pattern: Shadow Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253914, { -- Pattern: Pristine Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253922, { -- Pattern: Pearly Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253918, { -- Pattern: Flame Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253992, { -- Pattern: Flame Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253996, { -- Pattern: Pearly Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253988, { -- Pattern: Pristine Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253994, { -- Pattern: Shadow Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253998, { -- Pattern: Shining Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253990, { -- Pattern: Silky Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(253964, { -- Pattern: Silky Gown
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(254052, { -- Pattern: Netherfroth Shoulders
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254054, { -- Pattern: Netherflame Shoulders
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254032, { -- Pattern: Radiant Handwraps
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254030, { -- Pattern: Golden Handwraps
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254024, { -- Pattern: Frothing Handwraps
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254026, { -- Pattern: Fiery Handwraps
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254028, { -- Pattern: Black Handwraps
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254036, { -- Pattern: Mageweave Reagent Bag
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254056, { -- Pattern: Netherpearl Shoulders
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254058, { -- Pattern: Nethershine Shoulders
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254066, { -- Pattern: Netherflame Cuffs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254064, { -- Pattern: Netherfroth Cuffs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254062, { -- Pattern: Nethergeld Cuffs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254072, { -- Pattern: Netherlight Cuffs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254068, { -- Pattern: Netherpearl Cuffs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254070, { -- Pattern: Nethershine Cuffs
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254088, { -- Pattern: Black Waistcord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254086, { -- Pattern: Fiery Waistcord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254084, { -- Pattern: Frothing Waistcord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254082, { -- Pattern: Gilded Waistcord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254090, { -- Pattern: Golden Waistcord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254060, { -- Pattern: Netherlight Shoulders
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254080, { -- Pattern: Runecloth Reagent Bag
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254092, { -- Pattern: Radiant Waistcord
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254050, { -- Pattern: Nethergeld Shoulders
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(254108, { -- Pattern: Gilded Sandals
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(254110, { -- Pattern: Frothing Sandals
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(254114, { -- Pattern: Black Sandals
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(254112, { -- Pattern: Fiery Sandals
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(254116, { -- Pattern: Golden Sandals
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(254118, { -- Pattern: Radiant Sandals
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(271627, { -- Tailoring Certification
+							cost = {
+								{ "c", 3402, 1000 },	-- x1000 Merchant's Favor
+							},
+						}),
+					},
+				}),
+				n(256729, { -- Nina Surefire
+					coord = { 10.8, 72.6, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(250381, { -- Recipe: Elixir of Lesser Spirit
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250376, { -- Recipe: Lesser Mageblood Elixir
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250978, { -- Recipe: Spellblasting Potion
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250984, { -- Recipe: Frenzy Potion
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250367, { -- Recipe: Lesser Cleric's Elixir
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250388, { -- Recipe: Elixir of Lesser Intellect
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250378, { -- Recipe: Lesser Arcane Elixir
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250990, { -- Recipe: Mender's Potion
+							cost = {
+								{ "c", 3402, 45 },	-- x45 Merchant's Favor
+							},
+						}),
+						i(250997, { -- Recipe: Dragonfire Potion
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(250371, { -- Recipe: Elixir of Greater Fortitude
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(250369, { -- Recipe: Greater Cleric's Elixir
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(250383, { -- Recipe: Elixir of Greater Spirit
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(250377, { -- Recipe: Greater Mageblood Elixir
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(250996, { -- Recipe: Disorienting Smog Potion
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(250981, { -- Recipe: Major Spellblasting Potion
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250379, { -- Recipe: Elixir of Nature Power
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250372, { -- Recipe: Elixir of Wicked Regeneration
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250998, { -- Recipe: Potion of Elemental Siphoning
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250993, { -- Recipe: Major Mender's Potion
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250373, { -- Recipe: Elixir of the Owl
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250994, { -- Recipe: Potion of Venomous Blood
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250386, { -- Recipe: Elixir of Ferocity
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250384, { -- Recipe: Elixir of the Whale
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250374, { -- Recipe: Elixir of Sages
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250364, { -- Recipe: Elixir of Cunning
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250995, { -- Recipe: Caustic Smog Potion
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250365, { -- Recipe: Elixir of the Phalanx
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 180 },	-- x180 Merchant's Favor
+							},
+						}),
+						i(250387, { -- Recipe: Elixir of the Grizzly
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(250987, { -- Recipe: Major Frenzy Potion
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 240 },	-- x240 Merchant's Favor
+							},
+						}),
+						i(271621, { -- Alchemy Certification
+							cost = {
+								{ "c", 3402, 1000 },	-- x1000 Merchant's Favor
+							},
+						}),
+					},
+				}),
+				n(256730, { -- Stondry Darkhammer
+					coord = { 10.4, 74.6, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(251366, { -- Plans: Guard's Chain Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251369, { -- Plans: Crusader's Chain Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251368, { -- Plans: Acolyte's Chain Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251367, { -- Plans: Protector's Chain Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251365, { -- Plans: Veteran's Chain Belt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251357, { -- Plans: Protector's Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251356, { -- Plans: Guard's Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251359, { -- Plans: Crusader's Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251358, { -- Plans: Acolyte's Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251360, { -- Plans: Veteran's Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251361, { -- Plans: Guard's Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251364, { -- Plans: Crusader's Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251363, { -- Plans: Acolyte's Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251362, { -- Plans: Protector's Gloves
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251375, { -- Plans: Veteran's Silvered Chain Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251377, { -- Plans: Protector's Silvered Chain Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251376, { -- Plans: Guard's Silvered Chain Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251379, { -- Plans: Crusader's Silvered Chain Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251378, { -- Plans: Acolyte's Silvered Chain Leggings
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251370, { -- Plans: Veteran's Silvered Chain Shirt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251372, { -- Plans: Protector's Silvered Chain Shirt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251371, { -- Plans: Guard's Silvered Chain Shirt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251374, { -- Plans: Crusader's Silvered Chain Shirt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251373, { -- Plans: Acolyte's Silvered Chain Shirt
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251380, { -- Plans: Veteran's Silvered Chain Helm
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251382, { -- Plans: Protector's Silvered Chain Helm
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251381, { -- Plans: Guard's Silvered Chain Helm
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251384, { -- Plans: Crusader's Silvered Chain Helm
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251383, { -- Plans: Acolyte's Silvered Chain Helm
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251355, { -- Plans: Veteran's Boots
+							cost = {
+								{ "c", 3402, 30 },	-- x30 Merchant's Favor
+							},
+						}),
+						i(251422, { -- Plans: Justicar's Gauntlet
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251418, { -- Plans: Officer's Gauntlet
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251421, { -- Plans: Prefect's Gauntlet
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251419, { -- Plans: Sentinel's Gauntlet
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251420, { -- Plans: Warder's Gauntlet
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251432, { -- Plans: Justicar's Pauldrons
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251428, { -- Plans: Officer's Pauldrons
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251431, { -- Plans: Prefect's Pauldrons
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251429, { -- Plans: Sentinel's Pauldrons
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251430, { -- Plans: Warder's Pauldrons
+							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
+							cost = {
+								{ "c", 3402, 60 },	-- x60 Merchant's Favor
+							},
+						}),
+						i(251437, { -- Plans: Justicar's Wristguards
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251425, { -- Plans: Warder's Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251436, { -- Plans: Prefect's Wristguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251434, { -- Plans: Sentinel's Wristguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251435, { -- Plans: Warder's Wristguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251417, { -- Plans: Justicar's Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251413, { -- Plans: Officer's Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251416, { -- Plans: Prefect's Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251414, { -- Plans: Sentinel's Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251415, { -- Plans: Warder's Sabatons
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251427, { -- Plans: Justicar's Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251423, { -- Plans: Officer's Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251426, { -- Plans: Prefect's Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251424, { -- Plans: Sentinel's Waistguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251466, { -- Plans: Thorium Cestus
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251465, { -- Plans: Thorium Greatmace
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251433, { -- Plans: Officer's Wristguard
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 90 },	-- x90 Merchant's Favor
+							},
+						}),
+						i(251447, { -- Plans: Enriched Thorium Breastplate
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(251449, { -- Plans: Enriched Thorium Helm
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(251448, { -- Plans: Enriched Thorium Leggings
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(251471, { -- Plans: Legionite Glaive
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 120 },	-- x120 Merchant's Favor
+							},
+						}),
+						i(271622, { -- Blacksmithing Certification
+							cost = {
+								{ "c", 3402, 1000 },	-- x1000 Merchant's Favor
+							},
+						}),
+					},
+				}),
+				n(256389, { -- Tamelyn Aldridge
+					coord = { 10.5, 71.3, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(270888, { -- Advertising License Application
+							minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
+							cost = {
+								{ "c", 3402, 1200 },	-- x1200 Merchant's Favor
+							},
+						}),
+						i(262765, { -- Azeroth Commerce Authority Tabard
+							minReputation = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
+							cost = {
+								{ "c", 3402, 200 },	-- x200 Merchant's Favor
+							},
+						}),
+						i(284664, { -- Packmule Treat
+							minReputation = { 2586, REVERED },	-- Azeroth Commerce Authority, Revered.
+							cost = {
+								{ "c", 3402, 1500 },	-- x1500 Merchant's Favor
+							},
 						}),
 					},
 				}),
