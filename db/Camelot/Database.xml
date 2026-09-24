@@ -2,6 +2,7 @@
 	<Script file="LocalizationDB.lua"/>
 	<Script file="Categories/Character.lua"/>
 	<Script file="Categories/Craftables.lua"/>
+	<Script file="Categories/ExpansionFeatures.lua"/>
 	<Script file="Categories/HiddenQuestTriggers.lua"/>
 	<Script file="Categories/Holidays.lua"/>
 	<Script file="Categories/Instances.lua"/>

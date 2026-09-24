@@ -20,6 +20,7 @@ assignRootCategoryHeader(30, ROOTS.Holidays, HOLIDAYS, {
 	difficultyID = 19,	-- 'Event' difficulty, allows auto-expand logic to find it when queueing special holiday dungeons
 	SortType = "EventStart",
 });
+assignRootCategoryHeader(35, ROOTS.ExpansionFeatures, EXPANSION_FEATURES);
 
 -----------------------------------------
 -- L I M I T E D   C A T E G O R I E S --

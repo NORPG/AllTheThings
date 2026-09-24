@@ -375,6 +375,7 @@ HeaderAssignments = {
 	["Level Range 85-89"] = -301,
 	["Leveling Characters"] = -712,
 	["Library"] = -362,
+	["Library Books"] = -799,
 	["Lingering Shadows"] = -758,
 	["Little Scales Daycare"] = -398,
 	["Loamm Niffen"] = -189,
@@ -778,4 +779,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -799
+NextHeaderID = -800

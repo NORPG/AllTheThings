@@ -817,6 +817,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(208860),	-- Rumi of Gnomeregan: The Collected Works
 					},
 				}),
+				o(409562, {	-- Spellbook
+					coord = { 45.4, 70.4, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					groups = {
+						i(209845),	-- Bewitchments and Glamours
+					},
+				}),
 			}),
 			n(VENDORS, {
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>

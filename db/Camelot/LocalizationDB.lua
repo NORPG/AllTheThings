@@ -1221,6 +1221,7 @@ _.HeaderConstants = {
 	DARKMOON_FAIRE_HEADER = -37,
 	DROPS = -27,
 	DUNGEONS_AND_RAIDS = -75,
+	EXPANSION_FEATURES = -735,
 	EXPLORATION = -30,
 	FACTIONS = -31,
 	FEAST_OF_WINTER_VEIL_HEADER = -574,
@@ -1352,7 +1353,9 @@ localize(L.HEADER_NAMES, {
 	[-731] = CHARACTER,
 	[-732] = BUG_CATEGORY2,
 	[-734] = BATTLE_PET_SOURCE_7,
+	[-735] = EXPANSION_FILTER_TEXT,
 	[-796] = "Starter Gear",
+	[-799] = "Library Books",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1377,6 +1380,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-484] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
+	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-796] = "The following contains gear that can be acquired by creating a brand new character of a given class and race.",
 })
 localize(L.HEADER_LORE, {
@@ -1478,7 +1482,9 @@ localize(L.HEADER_ICONS, {
 	[-731] = _.asset("category_itemsets"),
 	[-732] = _.asset("category_zones"),
 	[-734] = _.asset("category_event"),
+	[-735] = _.asset("category_expansionfeatures"),
 	[-796] = 135018,
+	[-799] = 133739,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1510,11 +1516,6 @@ localize(L.EVENT_REMAPPING, {
 	[375] = 1,
 })
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(13, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
-})
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027}),
@@ -1559,6 +1560,11 @@ _.Modules.Events.SetEventInformation(14, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=5,["year"]=2027},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=1,["year"]=2028})
+})
+_.Modules.Events.SetEventInformation(13, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=5,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=7,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=17,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
@@ -2627,6 +2633,7 @@ local ObjectNames = {
 	[375544] = "Wooden Figurine",
 	[386759] = "Library Book",
 	[408014] = "Gnomish Tome",
+	[409562] = "Spellbook",
 	[100000000] = "Sentinax Portal",
 	[100000001] = "Unlit Torch",
 } _.ObjectNames = ObjectNames
@@ -3759,6 +3766,7 @@ local ObjectModels = {
 	[375544] = 201094,
 	[386759] = 198036,
 	[408014] = 198039,
+	[409562] = 198039,
 	[100000001] = 201129,
 } _.ObjectModels = ObjectModels
 -- Phase Database Module
@@ -5105,6 +5113,7 @@ localize(ObjectNames, {
 	[375544] = "Holzstatuette",
 	[386759] = "Bibliotheksbuch",
 	[408014] = "Gnomenfoliant",
+	[409562] = "Zauberbuch",
 	[100000001] = "Nicht angezündete Fackel",
 })
 for key,value in pairs({
@@ -6292,6 +6301,7 @@ localize(ObjectNames, {
 	[375544] = "Figurine en bois",
 	[386759] = "Livre de la bibliothèque",
 	[408014] = "Tome gnome",
+	[409562] = "Grimoire",
 	[100000001] = "Torche éteinte",
 })
 for key,value in pairs({
@@ -9186,6 +9196,7 @@ localize(ObjectNames, {
 	[375544] = "Деревянная статуэтка",
 	[386759] = "Книга из библиотеки",
 	[408014] = "Гномья книга",
+	[409562] = "Книга заклинаний",
 	[100000001] = "Незажженный факел",
 })
 for key,value in pairs({
@@ -10907,6 +10918,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-483] = "Además de que todos los jugadores de un reino trabajaran para completar el Esfuerzo de Guerra, un jugador tenía que crear el El cetro del Mar de Dunas, una tarea muy difícil que solo podía ser resuelta por la mejor hermandad de un servidor cuando se añadió la cadena de misiones. Una vez finalizado el esfuerzo de guerra y llegados los ejércitos de la Alianza y la Horda a Silithus, el El cetro del Mar de Dunas podía usarse en el Gong del Escarabajo. Al hacerlo, se abría Ahn'Qiraj. El primer jugador en golpear el Gong del Escarabajo en cada servidor era recompensado con el título de Señor del Escarabajo (en Burning Crusade, ¡el título no estará disponible en Classic!) y la montura Cristal resonador negro Qiraji. Cualquiera que lo siguiera en las siguientes 10 horas también era recompensado con el título.\n\nAunque todavía es posible completar la cadena de misiones del El cetro del Mar de Dunas después de que se hayan abierto las puertas en tu servidor, hacerlo no otorgará ni el Cristal resonador negro Qiraji ni el título de Señor del Escarabajo.",
 	[-721] = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 	[-723] = "Aumentan los informes de incursiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
+	[-735] = "Esta sección está destinada a sistemas introducidos durante una expansión que involucre varias zonas.\nSi una función de expansión es exclusiva de una sola zona, se puede encontrar dentro de esa zona en ATT; de lo contrario, para reducir la duplicación y el tamaño excesivo de la base de datos, se puede encontrar a continuación.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -11710,6 +11722,7 @@ localize(ObjectNames, {
 	[375544] = "Figurilla de madera",
 	[386759] = "Libro de la biblioteca",
 	[408014] = "Tomo gnómico",
+	[409562] = "Libro de hechizos",
 	[100000001] = "Antorcha apagada",
 })
 for key,value in pairs({
@@ -13224,6 +13237,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-484] = "天灾入侵是1.11补丁中的一项世界事件，并在巫妖王之怒前置补丁3.0.1中再度开启，预示着令人闻风丧胆的克尔苏加德的要塞 ——纳克萨玛斯即将开放。\n\n艾泽拉斯的多个地区遭到了天灾军团部队的袭击。银色黎明的成员组织了一场对抗天灾入侵的全球反击，他们密切监视着任何浮空死灵城堡的动向，并将情报分享给所有愿意投身这场战斗的冒险者。\n\n每一次对天灾军团的胜利，都会让防线愈发坚固。随着越来越多的入侵企图被守军击退，银色黎明将为抗击入侵者的勇士们赋予越来越强大的祝福。\n\n如果凡人们齐心协力，清除散落在世界各地、每一座浮空死灵城堡下方出现的天灾营地，这场入侵或许就能被有效遏制，甚至彻底击退。\n\n凡有意拿起武器对抗亡灵入侵者的勇士，可与银色黎明的代表交谈，了解哪些地区需要支援，以及防线当前的状况。",
 	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 	[-723] = "在卡利姆多的不同地区，元素入侵的报告正在增加。每隔几天，一股新的元素浪潮就会强行涌入希利苏斯、安戈洛环形山、艾萨拉和冬泉谷的区域——显然，只是为了看看它们能在这些领土上深入到什么程度，直到被部落或联盟的军队击退。调查这些地区并帮助你的盟友对抗这些神秘的入侵。",
+	[-735] = "这个部分是为在一个扩展中引入的系统而设立的，这些系统涉及几个区域。\n如果一个扩展功能仅限于一个区域，那么它可以在 ATT 中的那个区域找到，否则为了减少数据库重复和膨胀，它可以在下面找到。",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
