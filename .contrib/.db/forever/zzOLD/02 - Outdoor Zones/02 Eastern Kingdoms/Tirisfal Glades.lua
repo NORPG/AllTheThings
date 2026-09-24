@@ -1292,6 +1292,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						1934,	-- Tirisfal Farmer
 					},
 				}),
+				i(255007, {	-- Golem Isospring
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					coord = { 54.0, 57.4, MAP.TIRISFAL_GLADES },
+					crs = {
+						276061,	-- Decrepit Harvester
+					},
+				}),
 				i(3321, {	-- Gray Fur Booties
 					["coords"] = {
 						{ 86.0, 38.2, MAP.TIRISFAL_GLADES },

@@ -198,6 +198,46 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 					},
 				}),
+				q(92909, {	-- Harvesting the Harvesters
+					qq = 253395,	-- Ozwin Ironsprocket
+					coord = { 51.6, 32.2, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 8,
+					groups = {
+						objective(1, {	-- 0/14 Golem Isospring
+							provider = { "i", 255007 },	-- Golem Isospring
+						}),
+						objective(1, {	-- 0/5 Harvester Gyrostabilizer
+							provider = { "i", 255010 },	-- Harvester Gyrostabilizer
+						}),
+					},
+				}),
+				q(92910, {	-- Harvesting the Harvesters (Engineering 1/2)
+					qs = 255155,	-- Precessive Autocognition Assembly (QS!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					requireSkill = ENGINEERING,
+					lvl = 8,
+				}),
+				q(92911, {	-- Harvesting the Harvesters (Engineering 2/2)
+					sourceQuest = 92910,	-- Harvesting the Harvesters (Engineering 1/2)
+					qq = 253395,	-- Ozwin Ironsprocket
+					coord = { 51.6, 32.2, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					requireSkill = ENGINEERING,
+					cost = {
+						{ "i", 255007, 8 },	-- Golem Isospring
+						{ "i", 4363, 4 },	-- Copper Modulator
+						{ "i", 4405, 1 },	-- Crude Scope
+					},
+					lvl = 8,
+					groups = {
+						i(277132),	-- Harvester Override Signalcaster
+						i(277470),	-- Schematic: Harvester Override Signalcaster
+					},
+				}),
 				q(103, {	-- Keeper of the Flame
 					["qg"] = 392,	-- Captain Grayson
 					["coord"] = { 30.0, 86.0, MAP.WESTFALL },
@@ -854,6 +894,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
 				}),
+				i(255007, {	-- Golem Isospring
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					crs = {
+						 36,	-- Harvest Golem
+						114,	-- Harvest Watcher
+						115,	-- Harvest Reaper
+						480,	-- Rusty Harvest Golem
+					},
+				}),
 				i(723),	-- Goretusk Liver
 				i(731, {	-- Goretusk Snout
 					["crs"] = {
@@ -866,6 +915,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				i(2087, {	-- Hard Crawler Carapace
 					["cr"] = 830,	-- Sand Crawler
+				}),
+				i(255010, {	-- Harvester Gyrostabilizer
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					crs = {
+						 36,	-- Harvest Golem
+						114,	-- Harvest Watcher
+						115,	-- Harvest Reaper
+					},
 				}),
 				i(1274, {	-- Hops
 					["crs"] = {
@@ -930,6 +987,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 					["cr"] = 450,	-- Defias Renegade Mage
+				}),
+				i(255155, {	-- Precessive Autocognition Assembly (QS!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					crs = {
+						 36,	-- Harvest Golem
+						114,	-- Harvest Watcher
+						480,	-- Rusty Harvest Golem
+					},
 				}),
 				i(821, {	-- Riverpaw Leather Vest
 					["cr"] = 123,	-- Riverpaw Mongrel
