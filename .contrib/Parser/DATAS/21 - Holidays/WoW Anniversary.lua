@@ -786,16 +786,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}},
 				}),
 				q(47254, {	-- The Originals [Horde]
-					-- #if BEFORE 11.0.5
-					["qg"] = 110035,	-- Historian Jupa
-					-- #else
-					["qg"] = 223882,	-- Izaik Kadarov
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER 11.0.5
+						223882,	-- Izaik Kadarov
+						-- #else
+						110035,	-- Historian Jupa
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER 11.0.5
+						{ 62.3, 51.8, TANARIS },
+						-- #else
+						{ 51.5, 38.7, CAVERNS_OF_TIME },
+						-- #endif
+					},
 					-- #if BEFORE 11.0.5
 					["races"] = HORDE_ONLY,
-					["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
-					-- #else
-					["coord"] = { 62.3, 51.8, TANARIS },
 					-- #endif
 					["isDaily"] = true,
 					["sym"] = {{"select","npcID",
@@ -2299,13 +2305,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["lvl"] = 60,
 				}),
 				q(57300, {	-- Soldier of Time
-					-- #if BEFORE 11.0.5
-					["qg"] = 157113,	-- Chromie
-					["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
-					-- #else
-					["qg"] = 223882,	-- Izaik Kadarov
-					["coord"] = { 62.3, 51.8, TANARIS },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER 11.0.5
+						223882,	-- Izaik Kadarov
+						-- #else
+						157113,	-- Chromie
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER 11.0.5
+						{ 62.3, 51.8, TANARIS },
+						-- #else
+						{ 53.5, 54.7, CAVERNS_OF_TIME },
+						-- #endif
+					},
 					["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5, ADDED_11_0_2 },
 					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout

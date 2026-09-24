@@ -679,13 +679,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			["timeline"] = { ADDED_2_2_2 },
 			["isDaily"] = true,
-			-- #if AFTER SL
-			["lvl"] = 20,
-			-- #elseif AFTER WRATH
-			["lvl"] = 75,
-			-- #else
-			["lvl"] = 65,
-			-- #endif
+			["lvl"] =
+				-- #if AFTER SL
+				20,
+				-- #elseif AFTER WRATH
+				75,
+				-- #else
+				65,
+				-- #endif
 			["groups"] = {
 				ach(295, {	-- Direbrewfest
 					["timeline"] = { ADDED_3_0_2 },
@@ -695,19 +696,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["lvl"] = 98,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
 						hqt(
-						-- #if AFTER 11.2.0
-						91894,	-- Has rolled for Coren Special Loot (Daily Accountwide)(TWW Version)
-						-- #else
-						77775,	-- Has rolled for Coren Special Loot (Daily Accountwide)(DF Version)
-						-- #endif
+							-- #if AFTER 11.2.0
+							91894,	-- Has rolled for Coren Special Loot (Daily Accountwide) (TWW Version)
+							-- #else
+							77775,	-- Has rolled for Coren Special Loot (Daily Accountwide) (DF Version)
+							-- #endif
 						{
 							["name"] = "Coren Special Loot Attempt (Daily Accountwide)",
 							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
-							-- #if AFTER 11.2.0
-							["timeline"] = { ADDED_11_2_0 },
-							-- #else
-							["timeline"] = { ADDED_10_1_7 },
-							-- #endif
+							["timeline"] = {
+								-- #if AFTER 11.2.0
+								ADDED_11_2_0,
+								-- #else
+								ADDED_10_1_7,
+								-- #endif
+							},
 							["isDaily"] = true,
 							["groups"] = {
 								i(248761, {	-- Brewfest Bomber (MOUNT!)
@@ -1928,13 +1931,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
-					-- #if AFTER SL
-					["lvl"] = 20,
-					-- #elseif AFTER WRATH
-					["lvl"] = 75,
-					-- #else
-					["lvl"] = 65,
-					-- #endif
+					["lvl"] =
+						-- #if AFTER SL
+						20,
+						-- #elseif AFTER WRATH
+						75,
+						-- #else
+						65,
+						-- #endif
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(12492, {	-- Direbrew's Dire Brew (H)
@@ -1942,13 +1946,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
-					-- #if AFTER SL
-					["lvl"] = 20,
-					-- #elseif AFTER WRATH
-					["lvl"] = 75,
-					-- #else
-					["lvl"] = 65,
-					-- #endif
+					["lvl"] =
+						-- #if AFTER SL
+						20,
+						-- #elseif AFTER WRATH
+						75,
+						-- #else
+						65,
+						-- #endif
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(56341, {	-- Direbrew Cog (A)
@@ -2341,11 +2346,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 		}, {
 			fillstein(i(33016, {	-- Blue Brewfest Stein
-				-- #if ANYCLASSIC
-				["lore"] = "This stein was the reward from TBC Classic Brewfest.",
-				-- #else
-				["lore"] = "This stein was the reward from the 2008 Brewfest.",
-				-- #endif
+				["lore"] =
+					-- #if ANYCLASSIC
+					"This stein was the reward from TBC Classic Brewfest.",
+					-- #else
+					"This stein was the reward from the 2008 Brewfest.",
+					-- #endif
 				["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 				["OnInit"] = OnInitForStein(30002),
 				["groups"] = {
@@ -3054,11 +3060,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 						i(33976, {	-- Brewfest Ram (MOUNT!)
-							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
-							-- #else
-							["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
-							-- #endif
+							["timeline"] = {
+								-- #if ANYCLASSIC
+								ADDED_2_2_2, REMOVED_3_0_2,
+								-- #else
+								ADDED_2_2_2, REMOVED_2_4_3,
+								-- #endif
+							},
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
 					},
@@ -3301,11 +3309,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 						i(33976, {	-- Brewfest Ram (MOUNT!)
-							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
-							-- #else
-							["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
-							-- #endif
+							["timeline"] = {
+								-- #if ANYCLASSIC
+								ADDED_2_2_2, REMOVED_3_0_2,
+								-- #else
+								ADDED_2_2_2, REMOVED_2_4_3,
+								-- #endif
+							},
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
 					},

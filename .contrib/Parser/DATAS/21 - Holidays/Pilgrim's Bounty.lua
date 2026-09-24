@@ -604,11 +604,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 			},
 		}),
 		n(REWARDS, {
-			-- #if ANYCLASSIC
-			["description"] = "The following are rewards from completing the dailies. Turn on 'Show incomplete Things' to show them.",
-			-- #else
-			["description"] = "The following are rewards from completing the dailies. Turn on 'Show All Trackable Things' to show them.",
-			-- #endif
+			["description"] =
+				-- #if ANYCLASSIC
+				"The following are rewards from completing the dailies. Turn on 'Show incomplete Things' to show them.",
+				-- #else
+				"The following are rewards from completing the dailies. Turn on 'Show All Trackable Things' to show them.",
+				-- #endif
 			["sourceQuests"] = {
 				14048,	-- Can't Get Enough Turkey (Alliance)
 				14061,	-- Can't Get Enough Turkey (Horde)

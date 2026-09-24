@@ -1716,11 +1716,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				},
 			}),
 			e(536, {	-- Yor
-				-- #if BEFORE 11.0.5
-				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
-				-- #else
-				["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge or a conjured one rarely dropped from Mana Tombs bosses to open.",
-				-- #endif
+				["description"] =
+					-- #if AFTER 11.0.5
+					"Requires one of two keys unlocked via a quest chain in Blades Edge or a conjured one rarely dropped from Mana Tombs bosses to open.",
+					-- #else
+					"Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
+					-- #endif
 				["provider"] = { "i", 32092 },	-- The Eye of Haramad
 				["cost"] = {
 					{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key

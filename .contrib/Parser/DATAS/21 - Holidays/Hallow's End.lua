@@ -148,11 +148,13 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		-- #if BEFORE 11.0.5
-		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
-		-- #else
-		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
-		-- #endif
+		["cost"] = {
+			-- #if AFTER 11.0.5
+			{ "i", 33226, 100 },	-- 100x Tricky Treat
+			-- #else
+			{ "i", 33226, 150 },	-- 150x Tricky Treat
+			-- #endif
+		},
 		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
@@ -965,23 +967,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		},
 		-- #endif
 		-- Minimum level that can queue for event
-		-- #if AFTER 9.0.1
-		["lvl"] = 10,
-		-- #elseif AFTER 7.3.2
-		["lvl"] = 23,
-		-- #elseif AFTER 7.0.1
-		["lvl"] = 101,
-		-- #elseif AFTER 6.0.1
-		["lvl"] = 99,
-		-- #elseif AFTER 5.0.1
-		["lvl"] = 89,
-		-- #elseif AFTER 4.2.2
-		["lvl"] = 84,
-		-- #elseif AFTER 4.0.1
-		["lvl"] = 78,
-		-- #else
-		["lvl"] = 25,	-- Zone in level requirement for SM.
-		-- #endif
+		["lvl"] =
+			-- #if AFTER 9.0.1
+			10,
+			-- #elseif AFTER 7.3.2
+			23,
+			-- #elseif AFTER 7.0.1
+			101,
+			-- #elseif AFTER 6.0.1
+			99,
+			-- #elseif AFTER 5.0.1
+			89,
+			-- #elseif AFTER 4.2.2
+			84,
+			-- #elseif AFTER 4.0.1
+			78,
+			-- #else
+			25,	-- Zone in level requirement for SM.
+			-- #endif
 		["groups"] = {
 			ach(18962, {	-- A Cleansing Fire
 				["timeline"] = { ADDED_10_1_7 },
@@ -1005,13 +1008,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 				-- #endif
 				-- Minimum level this bag drops (not 100% sure)
-				-- #if AFTER 9.0.1
-				["lvl"] = 50,
-				-- #elseif AFTER 8.0.1
-				["lvl"] = 110,
-				-- #elseif AFTER 7.2.5
-				["lvl"] = 98,
-				-- #endif
+				["lvl"] =
+					-- #if AFTER 9.0.1
+					50,
+					-- #elseif AFTER 8.0.1
+					110,
+					-- #elseif AFTER 7.2.5
+					98,
+					-- #else
+					nil,	
+					-- #endif
 				["groups"] = {
 					-- #if BEFORE 10.1.7
 					ach(980, {	-- The Horseman's Reins
@@ -3242,11 +3248,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			-- #if AFTER WRATH
-			["lvl"] = 75,
-			-- #elseif AFTER TBC
-			["lvl"] = 65,
-			-- #endif
+			["lvl"] =
+				-- #if AFTER WRATH
+				75,
+				-- #else
+				65,
+				-- #endif
 		}),
 		q(29144, {	-- Clean Up in Stormwind
 			["qg"] = 51934,	-- Gretchen Fenlow
@@ -4127,11 +4134,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
-			-- #if AFTER WRATH
-			["lvl"] = 75,
-			-- #elseif AFTER TBC
-			["lvl"] = 65,
-			-- #endif
+			["lvl"] =
+				-- #if AFTER WRATH
+				75,
+				-- #else
+				65,
+				-- #endif
 		}),
 		q(11220, {	-- The Headless Horseman (Horde)
 			["qg"] = 23973,	-- Masked Orphan Matron
@@ -4142,11 +4150,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 			["races"] = HORDE_ONLY,
-			-- #if AFTER WRATH
-			["lvl"] = 75,
-			-- #elseif AFTER TBC
-			["lvl"] = 65,
-			-- #endif
+			["lvl"] =
+				-- #if AFTER WRATH
+				75,
+				-- #else
+				65,
+				-- #endif
 		}),
 		q(8373, {	-- The Power of Pine
 			["qg"] = 15199,	-- Sergeant Hartman

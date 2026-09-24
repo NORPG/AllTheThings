@@ -2655,10 +2655,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 					{ "i", 19338 },	-- Free Ticket Voucher
 				},
-				-- #if AFTER 4.3.0
-				["coord"] = { 62.2, 73.0, STORMWIND_CITY },
-				-- #else
-				["coord"] = { 29.2, 68.4, IRONFORGE },
+				["coords"] = {
+					-- #if AFTER 4.3.0
+					{ 62.2, 73.0, STORMWIND_CITY },
+					-- #else
+					{ 29.2, 68.4, IRONFORGE },
+					-- #endif
+				},
+				-- #if BEFORE 4.3.0
 				["lvl"] = 6,
 				-- #endif
 				["races"] = ALLIANCE_ONLY,

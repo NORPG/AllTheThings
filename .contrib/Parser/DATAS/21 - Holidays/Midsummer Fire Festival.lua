@@ -529,11 +529,14 @@ local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 
 root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
 	n(25740, {	-- Ahune
-		-- #if AFTER WRATH
-		["description"] = "You can loot one satchel per character per day by queueing for 'The Frost Lord Ahune' via the Dungeon Finder.",
-		-- #else
+		["description"] =
+			-- #if AFTER WRATH
+			"You can loot one satchel per character per day by queueing for 'The Frost Lord Ahune' via the Dungeon Finder.",
+			-- #else
+			"Ahune is a frost elemental in Neptulon's service. The Twilight's Hammer planned to have him battle Ragnaros to start an elemental war on Azeroth.",
+			-- #endif
+		-- #if BEFORE WRATH
 		["questID"] = 11691,	-- Summon Ahune (Daily) [TODO: Check if this is the same quest ID for the dungeon finder too]
-		["description"] = "Ahune is a frost elemental in Neptulon's service. The Twilight's Hammer planned to have him battle Ragnaros to start an elemental war on Azeroth.",
 		-- #endif
 		["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 		["timeline"] = { ADDED_2_4_0 },
@@ -1537,16 +1540,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["altQuests"] = { 11976 },	-- Ice Shards (Never Implemented?)
 			["provider"] = { "i", 35723 },	-- Shards of Ahune
 			["timeline"] = { ADDED_2_4_0 },
-			-- #if BEFORE WRATH
-			["lvl"] = 65,
-			-- #elseif BEFORE CATA
-			["lvl"] = 75,
-			-- #elseif BEFORE MOP
-			["lvl"] = 75,
-			-- #elseif BEFORE WOD
-			["lvl"] = 75,
-			-- #else
-			["lvl"] = 1,	-- Documentation suggests the level requirement was removed with WOD.
+			-- #if BEFORE WOD
+			["lvl"] =	-- Documentation suggests the level requirement was removed with WOD.
+				-- #if AFTER WRATH
+				75,
+				-- #else
+				65,
+				-- #endif
 			-- #endif
 			["groups"] = {
 				i(35279),	-- Tabard of Summer Skies
@@ -1558,10 +1558,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				{ "o", 181334 },	-- Flame of Darnassus
 				{ "i", 23184 },	-- Flame of Darnassus (Provided)
 			},
-			-- #if AFTER CATA
-			["coord"] = { 64.1, 46.7, DARNASSUS },
-			-- #else
-			["coord"] = { 56.6, 92.3, TELDRASSIL },
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 64.1, 46.7, DARNASSUS },
+				-- #else
+				{ 56.6, 92.3, TELDRASSIL },
+				-- #endif
+			},
+			-- #if BEFORE CATA
 			["maps"] = { DARNASSUS },
 			-- #endif
 			["races"] = HORDE_ONLY,

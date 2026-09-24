@@ -3255,13 +3255,16 @@ for i,o in ipairs({
 				-- #endif
 				["timeline"] = { ADDED_3_3_0 },
 				-- Minimum level this box drops (not 100% sure)
-				-- #if AFTER 9.0.1
-				["lvl"] = 50,
-				-- #elseif AFTER 8.0.1
-				["lvl"] = 110,
-				-- #elseif AFTER 7.2.5
-				["lvl"] = 98,
-				-- #endif
+				["lvl"] =
+					-- #if AFTER 9.0.1
+					50,
+					-- #elseif AFTER 8.0.1
+					110,
+					-- #elseif AFTER 7.2.5
+					98,
+					-- #else
+					nil,
+					-- #endif
 				["groups"] = {
 					ach(4627, {	-- X-45 Heartbreaker
 						["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
