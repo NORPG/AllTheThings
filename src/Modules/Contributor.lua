@@ -80,7 +80,7 @@ local ReportLineFormats = {
 	KeySec = ",%s#<secret>",
 	Info = "%s:%s",
 	PlayerLocation = "PlayerLocation: {%s, %s, %s},    -- %s",
-	ATT = "ATT: \"%s\"GameBuild\"%d\"UTC\"%s\"",
+	ATT = "ATT: \"%s\"GameBuild\"%d\"Locale\"%s\"UTC\"%s\"",
 }
 local function GetReportPlayerLocation()
 	local mapID, px, py, fake = app.GetPlayerPosition()
@@ -257,7 +257,7 @@ local function DoReport(reporttype, id)
 		}
 		reportData[#reportData + 1] = ReportLineFormats.Info:format("unlocks",app.TableConcat(acctUnlocks, nil, nil, "/"))
 	end
-	reportData[#reportData + 1] = ReportLineFormats.ATT:format(app.Version,app.GameBuildVersion,date("!%Y-%m-%dT%H:%M:%SZ", time()))
+	reportData[#reportData + 1] = ReportLineFormats.ATT:format(app.Version,app.GameBuildVersion,GetLocale(),date("!%Y-%m-%dT%H:%M:%SZ", time()))
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
 	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData, allowRepeat) then
