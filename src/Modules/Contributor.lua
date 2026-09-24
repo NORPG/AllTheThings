@@ -257,6 +257,7 @@ local function DoReport(reporttype, id)
 		}
 		reportData[#reportData + 1] = ReportLineFormats.Info:format("unlocks",app.TableConcat(acctUnlocks, nil, nil, "/"))
 	end
+	-- Locale is required to diagnose localized data mismatches.
 	reportData[#reportData + 1] = ReportLineFormats.ATT:format(app.Version,app.GameBuildVersion,GetLocale(),date("!%Y-%m-%dT%H:%M:%SZ", time()))
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
