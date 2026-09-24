@@ -1092,6 +1092,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["cr"] = 619,	-- Defias Conjurer
 				}),
+				i(729, {	-- Stringy Vulture Meat
+					crs = {
+						154,	-- Greater Fleshripper
+						199,	-- Young Fleshripper
+						1109,	-- Fleshripper
+					},
+				}),
 				i(2327, {	-- Sturdy Leather Bracers
 					["coords"] = {
 						{ 59.6, 18.6, MAP.WESTFALL },

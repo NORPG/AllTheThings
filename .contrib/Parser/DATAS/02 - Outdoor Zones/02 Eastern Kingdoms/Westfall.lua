@@ -2521,6 +2521,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 619,	-- Defias Conjurer
 				}),
 				-- #endif
+				-- #if BEFORE CATA
+				i(729, {	-- Stringy Vulture Meat
+					["timeline"] = { REMOVED_4_0_3 },
+					crs = {
+						154,	-- Greater Fleshripper
+						199,	-- Young Fleshripper
+						1109,	-- Fleshripper
+					},
+				}),
+				-- #endif
 				i(2327, {	-- Sturdy Leather Bracers
 					["coords"] = {
 						-- #if AFTER 10.1.7

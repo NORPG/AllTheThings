@@ -3155,6 +3155,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 10760,	-- Grimtotem Geomancer
 				}),
 				-- #endif
+				-- #if BEFORE CATA
+				i(729, {	-- Stringy Vulture Meat
+					["timeline"] = { REMOVED_4_0_3 },
+					crs = {
+						4158,	-- Salt Flats Vulture
+						4154,	-- Salt Flats Scavenger
+					},
+				}),
+				-- #endif
 			}),
 		},
 	}),

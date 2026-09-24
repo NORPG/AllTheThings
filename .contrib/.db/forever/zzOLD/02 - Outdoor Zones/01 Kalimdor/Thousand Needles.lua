@@ -991,6 +991,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						4099,	-- Galak Marauder
 					},
 				}),
+				i(729, {	-- Stringy Vulture Meat
+					crs = {
+						4158,	-- Salt Flats Vulture
+						4154,	-- Salt Flats Scavenger
+					},
+				}),
 			}),
 		},
 	}),
