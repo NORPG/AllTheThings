@@ -152,9 +152,6 @@ src\Expansions\The War Within.lua
 # Load the Settings Menu
 src\Settings\Settings.xml
 
-# SavedVariable Shenanigans
-# SavedVariables.lua
-
 # Load primary addon source files
 AllTheThings.lua
 
