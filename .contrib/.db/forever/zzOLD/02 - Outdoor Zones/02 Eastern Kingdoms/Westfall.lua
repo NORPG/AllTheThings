@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					lvl = 8,
 					groups = {
 						i(277132),	-- Harvester Override Signalcaster
-						i(277470),	-- Schematic: Harvester Override Signalcaster
+						i(277470),	-- Schematic: Harvester Override Signalcaster (RECIPE!)
 					},
 				}),
 				q(103, {	-- Keeper of the Flame
