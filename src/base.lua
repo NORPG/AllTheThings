@@ -276,6 +276,11 @@ end
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon
 app.GetIconFromProviders = function(group)
+	local qss = group.qss;
+	if qss then 
+		local icon = GetItemIcon(qss[1]);
+		if icon then return icon; end
+	end
 	local providers = group.providers
 	if not providers or #providers == 0 then return end
 
