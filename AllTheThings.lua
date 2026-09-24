@@ -8,7 +8,7 @@ local appName, app = ...;
 local L = app.L;
 
 -- Check for SavedVariable Shenanigans (Beta Only)
-if AllTheThingsAD then
+if AllTheThingsAD and app.IsForever then
 local myCache = {
 	AllTheThingsAD = AllTheThingsAD;
 	ATTCharacterData = ATTCharacterData;
