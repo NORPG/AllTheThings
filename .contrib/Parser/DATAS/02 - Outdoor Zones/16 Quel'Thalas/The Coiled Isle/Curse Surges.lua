@@ -108,10 +108,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 					q(96969, {	-- Weekly reputation: Venom Lancer Ori'kassi
 						["name"] = "Venom Lancer Ori'kassi weekly reputation obtained.",
 					}),
-					q(97333, {	-- triggered when skinning/looting Ss'akrithos (along with skin HQT)
-						["name"] = "Explain what you did to trigger this quest??",
-						["u"] = NEVER_IMPLEMENTED,	-- trigger reports
-					}),
+					q(97333),	-- Can be triggered from any of the Cursed Surge bosses
 				}),
 			})),
 		}),

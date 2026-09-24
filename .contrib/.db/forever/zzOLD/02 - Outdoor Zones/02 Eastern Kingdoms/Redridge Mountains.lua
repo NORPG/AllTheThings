@@ -1159,7 +1159,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							i(252855, {	-- Pattern: Warden's Leather Bracers (RECIPE!)
 								cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
 							}),
-							i(252874, {	-- Pattern: Warden's Leather Waistguard
+							i(252874, {	-- Pattern: Warden's Leather Waistguard (RECIPE!)
 								cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
 							}),
 						}, {	-- Revered

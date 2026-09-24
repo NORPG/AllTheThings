@@ -476,7 +476,6 @@ root(ROOTS.Unsorted, {
 			i(271131),	-- Test Weapon
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
-			i(271681),	-- Perennial Frostbound Charm
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll

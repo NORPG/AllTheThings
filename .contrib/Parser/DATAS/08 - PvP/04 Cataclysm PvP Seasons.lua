@@ -344,7 +344,9 @@ root(ROOTS.PVP, {
 							i(77879),	-- Replica General's Dragonhide Gloves
 							i(77877),	-- Replica General's Dragonhide Leggings
 							i(77738),	-- Replica Legionnaire's Dragonhide Breastplate
-							i(77749),	-- Replica Legionnaire's Dragonhide Chestpiece
+							i(77749, {	-- Replica Legionnaire's Dragonhide Chestpiece
+								a(i(77751)),	-- Replica Knight-Captain's Dragonhide Chestpiece
+							}),
 							i(77744),	-- Replica Legionnaire's Dragonhide Leggings
 							i(77740),	-- Replica Legionnaire's Dragonhide Trousers
 							i(77878),	-- Replica Warlord's Dragonhide Epaulets

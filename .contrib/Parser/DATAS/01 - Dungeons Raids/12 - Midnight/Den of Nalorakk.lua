@@ -50,6 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				BossOnly(SENTINEL, {
 					i(251153),	-- Arctic Explorer's Legwraps
+					i(271681),	-- Perennial Frostbound Charm
 					i(250244),	-- Permafrost Essence
 					i(251152),	-- Season's Turn Gauntlets
 					i(251151),	-- Sentinel Challenger's Prize

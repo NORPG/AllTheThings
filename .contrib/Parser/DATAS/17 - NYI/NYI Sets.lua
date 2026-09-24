@@ -1866,9 +1866,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 
 		-- 4.3.0
 		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
-			cl(DRUID, {
-				i(77751),	-- Replica Knight-Captain's Dragonhide Chestpiece
-			}),
 			cl(MAGE, {
 				i(77780),	-- Replica Lieutenant Commander's Silk Mantle
 			}),
