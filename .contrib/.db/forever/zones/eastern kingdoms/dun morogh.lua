@@ -1247,6 +1247,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					i(10550),	-- Wooly Mittens
 				},
 			}),
+			q(96391, {	-- Underground Map
+				qs = 274268,	-- Dark Iron Map (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
 		}),
 		n(RARES, {
 			n(1130, {	-- Bjarn
@@ -1434,6 +1440,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					1126,	-- Large Crag Boar
 				},
 				["coord"] = { 46.6, 59.8, MAP.DUN_MOROGH },
+			}),
+			i(274268, {	-- Dark Iron Map (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				coord = { 78.6, 62.0, MAP.DUN_MOROGH },
+				crs = {
+					6124,	-- Captain Beld <Dark Iron Captain>
+					6123,	-- 6123
+				},
 			}),
 			i(2067, {	-- Frostbit Staff
 				["cr"] = 1117,	-- Rockjaw Bonesnapper
