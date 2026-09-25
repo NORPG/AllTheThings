@@ -372,6 +372,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						},
 					},
 				}),
+				q(93739, {	-- Exploring the Horde
+					["sourceQuest"] = 95350,	-- Welcome to Azeroth
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
+					["races"] = { SKYBORNE_HORDE },
+					["lvl"] = 7,
+					["groups"] = {
+						i(286426),	-- Honorbound Cloak
+					},
+				}),
 				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
