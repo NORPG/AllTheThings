@@ -15,6 +15,8 @@ local GetNumQuestChoices, GetNumQuestRewards, GetNumQuestLogRewardSpells, GetQue
 	= GetNumQuestChoices, GetNumQuestRewards, GetNumQuestLogRewardSpells, GetQuestLogRewardSpell, GetNumQuestLogRewardCurrencies, GetQuestLogRewardCurrencyInfo;
 local GetNumLootItems, GetLootSlotLink, GetLootSourceInfo, GetTaxiMapID, C_TaxiMap_GetAllTaxiNodes
 	= GetNumLootItems, GetLootSlotLink, GetLootSourceInfo, GetTaxiMapID, C_TaxiMap.GetAllTaxiNodes;
+local GetNumTrainerServices, GetTrainerServiceInfo, GetTrainerServiceSkillReq
+	= GetNumTrainerServices, GetTrainerServiceInfo, GetTrainerServiceSkillReq;
 local GetItemID = app.WOWAPI.GetItemID;
 local issecretvalue = app.WOWAPI.issecretvalue;
 local GetItemLinkByGUID = app.WOWAPI.GetItemLinkByGUID;
@@ -204,6 +206,8 @@ local function GetNameFromCost(costType, id, count)
 		return (count > 1 and ("x" .. count .. " ") or "") .. (app.GetNameFromProvider(costType, id) or UNKNOWN);
 	end
 end
+
+-- Raw key value handlers keep it simple and are used to export data to be reimported later.
 local ExportRawKeyValueHandlers = {
 	providers = function(key, value)
 		local lines = {"{"};
@@ -291,6 +295,12 @@ local function ExportRawKeyValue(key, value)
 end
 
 -- Non-Raw key value handlers can shorten it to a constant.
+local IgnoredForRaw = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
 local ExportKeyValueHandlers = {};
 local ExportKeyValueHandlers = {
 	providers = function(key, value)
@@ -359,35 +369,6 @@ local ExportKeyValueHandlers = {
 }
 ExportKeyValueHandlers.qgs = ExportKeyValueHandlers.crs
 ExportKeyValueHandlers.nextQuests = ExportKeyValueHandlers.sourceQuests
-local function ExportKeyValue(key, value)
-	local handler = ExportKeyValueHandlers[key];
-	if handler then
-		return handler(key, value);
-	end
-	-- Default parsing for unrecognized keys
-	if not DefaultParsing[key] then
-		-- print("DEFAULT PARSING FOR KEY", key);
-		DefaultParsing[key] = true;
-	end
-	local str = key .. " = ";
-	if type(value) == "string" then
-		if value:find("\"") or value:find("\n") then
-			str = str .. "[[" .. value .. "]],";
-		else
-			str = str .. "\"" .. value .. "\",";
-		end
-	else
-		str = str .. tostring(value) .. ",";
-	end
-	return str;
-end
-
-local IgnoredForRaw = setmetatable({
-	g = true,
-	name = true,
-	basename = true,
-	text = true,
-}, { __index = CleanFields })
 local function ExportRawDataToString(data, depth)
 	-- ignore string-keyed entries; they should not be exported
 	if data and data.key == "strKey" then return end
@@ -450,20 +431,7 @@ app:RegisterDataStyleExporter("Raw", {
 	afterExport = function(data) return "} -- End Raw Data" end
 })
 
-local KnownShortcutsByType = {
-	Currency = "currency",
-	Decor = "i",
-	Exploration = "exploration",
-	FlightPath = "fp",
-	Header = "n",
-	Item = "i",
-	Map = "m",
-	NPC = "n",
-	Object = "o",
-	Objective = "objective",
-	Quest = "q",
-	QuestAsBreadcrumb = "q",
-}
+
 local KeySwaps
 do
 local function DefaultKeyVal(data) return data[data.key] end
@@ -486,6 +454,26 @@ KeySwaps = setmetatable({
 	return DefaultKeyVal
 end})
 end
+local KnownShortcutsByType = {
+	Currency = "currency",
+	Decor = "i",
+	Exploration = "exploration",
+	FlightPath = "fp",
+	Header = "n",
+	Item = "i",
+	Map = "m",
+	NPC = "n",
+	Object = "o",
+	Objective = "objective",
+	Quest = "q",
+	QuestAsBreadcrumb = "q",
+}
+local IgnoredForReadable = setmetatable({
+	g = true,
+	name = true,
+	basename = true,
+	text = true,
+}, { __index = CleanFields })
 local function FormatReadableKey(data)
 	if not data or not data.key then return end
 
@@ -496,13 +484,6 @@ local function FormatReadableKey(data)
 	local id = KeySwaps[data.__type](data)
 	return shortcut.."("..(id or UNKNOWN)
 end
-
-local IgnoredForReadable = setmetatable({
-	g = true,
-	name = true,
-	basename = true,
-	text = true,
-}, { __index = CleanFields })
 local function HasUsefulFields(data)
 	if not data then return end
 	if data.__ExportTEMP.useful.fields then return true end
@@ -516,7 +497,6 @@ local function HasUsefulFields(data)
 		end
 	end
 end
-
 local function ReadableBeforeData(data, depth)
 	if not data then return end
 	data.__ExportTEMP = setmetatable({}, app.MetaTable.AutoTable)
@@ -547,7 +527,28 @@ local function ReadableBeforeData(data, depth)
 	end
 	return prefix
 end
-
+local function ExportKeyValue(key, value)
+	local handler = ExportKeyValueHandlers[key];
+	if handler then
+		return handler(key, value);
+	end
+	-- Default parsing for unrecognized keys
+	if not DefaultParsing[key] then
+		-- print("DEFAULT PARSING FOR KEY", key);
+		DefaultParsing[key] = true;
+	end
+	local str = key .. " = ";
+	if type(value) == "string" then
+		if value:find("\"") or value:find("\n") then
+			str = str .. "[[" .. value .. "]],";
+		else
+			str = str .. "\"" .. value .. "\",";
+		end
+	else
+		str = str .. tostring(value) .. ",";
+	end
+	return str;
+end
 local function ReadableMain(data, depth)
 	if data and data.key == "strKey" then return end
 	depth = depth or 0
@@ -567,11 +568,9 @@ local function ReadableMain(data, depth)
 	end
 	return indent .. "nil,"
 end
-
 local function ReadableDepthShift(data)
 	return HasUsefulFields(data) and 2 or 1
 end
-
 local function ReadableBeforeSub(data, depth)
 	if not HasUsefulFields(data) then
 		-- only key/g present, nothing to wrap
@@ -579,12 +578,10 @@ local function ReadableBeforeSub(data, depth)
 	end
 	return string.rep("\t", depth + 1) .. "groups = {"
 end
-
 local function ReadableAfterSub(data, depth)
 	if not HasUsefulFields(data) then return end
 	return string.rep("\t", depth + 1) .. "},"
 end
-
 local function ReadableAfterData(data, depth)
 	if not data then return end
 	if data.key == "strKey" then
@@ -628,7 +625,7 @@ app:CreateWindow("Debugger", {
 		MergeObject(self.rawData, info);
 		self:AssignChildren();
 		app.CallbackHandlers.AfterCombatOrDelayedCallback(self.Update, 1, self, true)
-		app.CallbackHandlers.AfterCombatOrDelayedCallback(self.BackupData, 15, self)
+		--app.CallbackHandlers.AfterCombatOrDelayedCallback(self.BackupData, 15, self)
 	end,
 	AddObjectWithHeader = function(self, headerID, info)
 		local header = { key = "headerID", headerID = headerID, g = { info }};
@@ -806,54 +803,7 @@ app:CreateWindow("Debugger", {
 				self:AddObject(info);
 			end
 		end);
-
-		-- Capture Gossip, Merchant, & Flight Master interactions
-		handlers.GOSSIP_SHOW = function(self)
-			local guid = UnitGUID("npc");
-			if guid and not issecretvalue(guid) then
-				local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
-				if npcID then
-					local info;
-					npcID = tonumber(npcID);
-					--print("GOSSIP_SHOW", type, npcID);
-					if type == "GameObject" then
-						info = { key = "objectID", ["objectID"] = npcID };
-					else
-						info = { key = "npcID", ["npcID"] = npcID };
-					end
-					info.name = UnitName("npc");
-					local faction = UnitFactionGroup("npc");
-					if faction then
-						info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
-					end
-					self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
-				end
-			end
-		end
-		handlers.TAXIMAP_OPENED = function(...)
-			local mapID = GetTaxiMapID() or -1
-			if mapID < 0 then return end
-			local guid = UnitGUID("npc");
-			if guid and not issecretvalue(guid) then
-				local ot, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
-				if npcID then
-					local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
-					if allNodeData then
-						for i,nodeData in ipairs(allNodeData) do
-							if nodeData.state == 0 then
-								local info = { key = "flightpathID", ["flightpathID"] = nodeData.nodeID, ["name"] = nodeData.name, ["providers"] = {{ ot == "GameObject" and "o" or "n", tonumber(npcID) }} };
-								local faction = UnitFactionGroup("npc");
-								if faction then
-									info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
-								end
-								self:AddObjectWithHeader(app.HeaderConstants.FLIGHT_PATHS, info);
-								break;
-							end
-						end
-					end
-				end
-			end
-		end
+		
 		local GetMerchantItemInfoX = C_MerchantFrame.GetItemInfo;
 		if not GetMerchantItemInfoX then
 			GetMerchantItemInfoX = function(i)
@@ -920,6 +870,99 @@ app:CreateWindow("Debugger", {
 				self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
 			end
 		end
+		local function LoadTrainer(self)
+			local guid = UnitGUID("npc");
+			local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
+			if guid and not issecretvalue(guid) then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid); end
+			if npcID then
+				npcID = tonumber(npcID);
+
+				-- Ignore vendor mounts...
+				if IgnoredNPCs[npcID] then
+					return true;
+				end
+				
+				local rawGroups = {};
+				local total = GetNumTrainerServices() or 0;
+				for i=1,total,1 do
+					local name, subType, category, texture, requiresLevel, serviceIndex = GetTrainerServiceInfo(i)
+					if name and name ~= "" and category ~= "header" then
+						local spellID = ATTC.SpellNameToSpellID[name];
+						if spellID then
+							local skillName, learnedAt, hasReq = GetTrainerServiceSkillReq(i);
+							local skillID = ATTC.SpellNameToSpellID[skillName];
+							tinsert(rawGroups, {
+								 key = "recipeID",
+								 recipeID = spellID,
+								 learnedAt = learnedAt,
+								 requireSkill = skillID
+							});
+						end
+					end
+				end
+				
+				local key = app.Modules.Search.GetKeyField(ty)
+				local info = { [key] = npcID, key = key };
+				local faction = UnitFactionGroup("npc");
+				if faction then
+					info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+				end
+				info.name = UnitName("npc");
+				info.g = rawGroups;
+				self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
+			end
+		end
+		
+		-- Capture Gossip, Merchant, & Flight Master interactions
+		handlers.GOSSIP_SHOW = function(self)
+			local guid = UnitGUID("npc");
+			if guid and not issecretvalue(guid) then
+				local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
+				if npcID then
+					local info;
+					npcID = tonumber(npcID);
+					--print("GOSSIP_SHOW", type, npcID);
+					if type == "GameObject" then
+						info = { key = "objectID", ["objectID"] = npcID };
+					else
+						info = { key = "npcID", ["npcID"] = npcID };
+					end
+					info.name = UnitName("npc");
+					local faction = UnitFactionGroup("npc");
+					if faction then
+						info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+					end
+					self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
+				end
+			end
+		end
+		handlers.TAXIMAP_OPENED = function(...)
+			local mapID = GetTaxiMapID() or -1
+			if mapID < 0 then return end
+			local guid = UnitGUID("npc");
+			if guid and not issecretvalue(guid) then
+				local ot, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = ("-"):split(guid);
+				if npcID then
+					local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
+					if allNodeData then
+						for i,nodeData in ipairs(allNodeData) do
+							if nodeData.state == 0 then
+								local info = { key = "flightpathID", ["flightpathID"] = nodeData.nodeID, ["name"] = nodeData.name, ["providers"] = {{ ot == "GameObject" and "o" or "n", tonumber(npcID) }} };
+								local faction = UnitFactionGroup("npc");
+								if faction then
+									info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+								end
+								self:AddObjectWithHeader(app.HeaderConstants.FLIGHT_PATHS, info);
+								break;
+							end
+						end
+					end
+				end
+			end
+		end
+		handlers.TRAINER_SHOW = function()
+			app.CallbackHandlers.DelayedCallback(LoadTrainer, 1, self)
+		end
 		handlers.MERCHANT_SHOW = function(self)
 			if SetMerchantFilter then
 				SetMerchantFilter(LE_LOOT_FILTER_ALL)
@@ -932,6 +975,7 @@ app:CreateWindow("Debugger", {
 		self:RegisterEvent("TAXIMAP_OPENED");
 		self:RegisterEvent("MERCHANT_SHOW");
 		self:RegisterEvent("MERCHANT_UPDATE");
+		self:RegisterEvent("TRAINER_SHOW");
 
 		-- Capture various party loot received
 		handlers.CHAT_MSG_LOOT = function(self, msg, player, a, b, c, d, e, f, g, h, i, guid, k, l)
