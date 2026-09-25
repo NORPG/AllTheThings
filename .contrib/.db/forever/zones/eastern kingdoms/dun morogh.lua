@@ -407,6 +407,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					i(1009),	-- Compact Hammer
 				},
 			}),
+			q(96408, {	-- A Vistor to Dun Morogh
+				["qg"] = 1376,	-- Beldin Steelgrill
+				["coord"] = { 50.4, 49.1, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 10,
+			}),
 			q(5541, {	-- Ammo for Rumbleshot
 				["qg"] = 1694,	-- Loslor Rudge
 				["coord"] = { 50.0, 49.4, MAP.DUN_MOROGH },
@@ -664,6 +671,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 2,
 			}),
+			q(96392, {	-- Farsen's Watch
+				["sourceQuest"] = 96408,	-- A Vistor to Dun Morogh
+				["qg"] = 264936,	-- Earthseer Farsen
+				["coord"] = { 64.8, 58.4, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(99159, {	-- Finding Warmth
+				["sourceQuest"] = 99158,	-- Dawn in the Mountains
+				["qg"] = 1253,	-- Father Gavin
+				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/14 Mostly Dry Firewood
+						["providers"] = {
+							{ "o", 694934 },	-- Fallen Log
+							{ "i", 286339 },	-- Mostly Dry Firewood
+						},
+					}),
+				},
+			}),
 			q(98321, {	-- Flintfire's Shipment
 				["qg"] = 1241,	-- Tognus Flintfire <Journeyman Blacksmith>
 				["coord"] = { 45.3, 51.9, MAP.DUN_MOROGH },
@@ -685,11 +714,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					objective(1, {	-- 0/1 Sack of Fish
-						["providers"] = {
-							-- Need IDS /Braghe
-							{ "i", 280413 },	-- Flintfire's Shipments
-							{ "n", 672508 },	-- Frosthowl
-						},
+						["cr"] = 271587,	-- Frosthowl
+						["provider"] = { "i", 280426 },	-- Sack of Fish
+						["coord"] = { 40.0, 48.4, MAP.DUN_MOROGH },
 					}),
 					i(281322),	-- Frosthowl's Footwarmers
 				},
@@ -743,6 +770,31 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["classes"] = { WARRIOR },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
+			}),
+			q(95212, {	-- Never Saddle on Quality
+				["qg"] = 1265,	-- Rudra Amberstill
+				["coord"] = { 63.1, 49.9, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 7,
+				["groups"] = {
+					objective(1, {	-- 0/6  Pristine Leopard Pelt
+						["provider"] = { "i", 267414 },	-- Pristine Leopard Pelt
+						["cr"] = 260157,	-- Elder Snow Leopard
+					}),
+				}
+			}),
+			q(96390, {	-- Nip 'Em in the Bud
+				["sourceQuest"] = 96392,	-- Farsen's Watch
+				["qg"] = 264936,	-- Earthseer Farsen
+				["coord"] = { 64.8, 58.4, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/10  Dark Iron Spy
+						["cr"] = 6123,	-- Dark Iron Spy
+					}),
+				}
 			}),
 			q(2239, {	-- Onin's Report
 				["sourceQuest"] = 2238,	-- Simple Subterfugin'
@@ -843,6 +895,32 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["groups"] = {
 					r(10797, {	-- Starshards (Rank 1)
 						["rank"] = 1,
+					}),
+				},
+			}),
+			q(99160, {	-- Rime's Wrath (1/2)
+				["sourceQuest"] = 99159,	-- Finding Warmth
+				["qg"] = 1253,	-- Father Gavin
+				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/10 Minor Ice Elemental
+						["cr"] = 276003,	-- Minor Ice Elemental
+					}),
+				},
+			}),
+			q(99160, {	-- Rime's Wrath (2/2)
+				["sourceQuest"] = 99160,	-- Rime's Wrath (1/2)
+				["qg"] = 1253,	-- Father Gavin
+				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/1 Avala's Core
+						["cr"] = 276009,	-- Minor Ice Elemental
+						["provider"] = { "i", 286325 },	-- Avala's Core
+						["coord"] = { 58.1, 42.1, MAP.DUN_MOROGH },
 					}),
 				},
 			}),
@@ -1230,6 +1308,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					recipe(1515),	-- Tame Beast
 				},
 			}),
+			q(99162, {	-- Treacherous Cold
+				["sourceQuest"] = 99159,	-- Finding Warmth
+				["qg"] = 1253,	-- Father Gavin
+				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/1 Coalbeard's Rifle
+						["providers"] = {
+							{ "o", 695222 },	-- Coalbeard's Rifle
+							{ "i", 286358 },	-- Coalbeard's Rifle
+						},
+						["coord"] = { 52.1, 44.1, MAP.DUN_MOROGH },
+					}),
+					objective(1, {	-- 0/1 Stoneavil's Rifle
+						["providers"] = {
+							{ "o", 695277 },	-- Stoneavil's Rifle
+							{ "i", 286360 },	-- Stoneavil's Rifle
+						},
+						["coord"] = { 53.1, 58.8, MAP.DUN_MOROGH },
+					}),
+					objective(1, {	-- 0/1 Sunhammers's Rifle
+						["providers"] = {
+							{ "o", 695223 },	-- Sunhammers's Rifle
+							{ "i", 286359 },	-- Sunhammers's Rifle
+						},
+						["coord"] = { 59.9, 50.1, MAP.DUN_MOROGH },
+					}),
+				},
+			}),
 			q(312, {	-- Tundra MacGrann's Stolen Stash
 				["qg"] = 1266,	-- Tundra MacGrann
 				["coord"] = { 34.6, 51.6, MAP.DUN_MOROGH },
@@ -1249,6 +1357,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(96391, {	-- Underground Map
 				qs = 274268,	-- Dark Iron Map (QS!)
+				coord = { 77.4, 61.4, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -1425,6 +1534,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["coord"] = { 63.2, 50.8, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(280797, {	-- Artic Rabbit (PET!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(280801, {	-- Brown Rabbit (PET!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(8497),	-- Snowshoe Rabbit (PET!)
 				},
 			}),

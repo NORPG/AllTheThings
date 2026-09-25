@@ -32,7 +32,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = ALCHEMY_RECIPES.JOURNEYMAN,
 				}),
-				n(5500, {	-- LTel'Athir <Journeyman Alchemist>
+				n(5500, {	-- Tel'Athir <Journeyman Alchemist>
 					["coord"] = { 55.6, 85.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = ALCHEMY_RECIPES.APPRENTICE,

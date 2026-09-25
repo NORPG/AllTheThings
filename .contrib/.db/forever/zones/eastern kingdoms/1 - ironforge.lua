@@ -334,6 +334,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
+			q(95041, {	-- Data Hoaders
+				["qg"] = 11028,	-- Jemma Quikswitch
+				["coord"] = { 67.7, 44.2, MAP.IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["maps"] = { MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/7 Gnomeregan Archival Data
+						["providers"] = {
+							{ "o", 629596 },	-- Snowdrift
+							{ "i", 267413 },	-- Gnomeregan Archival Data
+						},
+					}),
+				}
+			}),
+
 			q(5639, {	-- Desperate Prayer
 				["altQuests"] = {
 					5634,	-- Desperate Prayer [Stormwind City #1]
@@ -874,6 +890,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					r(7386),	-- Sunder Armor
 					r(355),		-- Taunt
 				},
+			}),
+			q(97263, {	-- Your Package Has Arrived
+				["provider"] = { "o", 660964 },	-- Misplaced Packages
+				["qi"] = 277505,	-- Misplaced Package
+				["coord"] = { 72.6, 48.5, MAP.IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 		n(VENDORS, {
