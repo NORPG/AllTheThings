@@ -952,21 +952,33 @@ qo(1,{providers={{"i",3630}}}),
 s(156262,1317,{f=28}),
 s(157286,3400,{f=25})}})}),
 h(-63,{
-i(1076,{f=52})}),
+i(1076,{f=52}),
+i(274092,{awp=16001,f=36})}),
 n(1720,{description="This is a rare that was not always present.",g={
 s(157039,2942,{f=34}),
 s(157189,3228,{f=6,loc=43}),
 s(157038,2941,{f=20})}}),
 n(1666,{
 i(3640),
+s(308601,273808,{awp=16001,f=4,loc=43}),
 s(156749,2280,{f=28,spellID=1292546})}),
 n(1663,{
 i(3628)}),
-n(1717),
+n(1717,{awp=16001,g={
+s(308602,273809,{f=21}),
+s(308603,273810,{f=6,loc=44})}}),
 n(1696,{
-i(3630)}),
+i(3630),
+s(308599,273805,{awp=16001,f=5,loc=42}),
+i(273806,{awp=16001,f=52}),
+s(308598,273804,{awp=16001,f=5,loc=41}),
+i(273820,{awp=16001,f=52,spellID=1292575})}),
 n(1716,{
-i(2926)})}}),
+i(2926),
+s(308615,273827,{awp=16001,f=25,spellID=1292594}),
+s(308617,273829,{awp=16001,f=33}),
+s(308613,273824,{awp=16001,f=5,loc=44,spellID=1292581}),
+s(308614,273825,{awp=16001,f=3})})}}),
 inst(240,{coords={
 [1413]={{45.9,35.7}},
 [1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
