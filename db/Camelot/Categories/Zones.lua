@@ -2526,6 +2526,14 @@ qo(1,{crs={946},providers={{"i",6753}}}),
 r(688,{requireSkill=354})}}),
 q(3365,{coords={
 [1426]={{28.8,66.4}}},lvl=4,qgs={836},qis={10440},r=2,sourceQuests={3364}}),
+q(94373,{awp=16001,c={7},coords={
+[1426]={{28.8,66.2}}},qgs={257446},races={3},sourceQuests={98581},g={
+qo(1,{maps={428},providers={{"i",264356}}})}}),
+q(94374,{awp=16001,c={7},coords={
+[1426]={{28.8,66.2}}},qgs={257446},qis={6635},races={3},sourceQuests={94373}}),
+q(94375,{awp=16001,c={7},coords={
+[1426]={{24.9,61.9}}},qgs={5891},qis={6656},races={3},sourceQuests={94374},g={
+i(5175,{b=1,description="You must keep this in your bags forever."})}}),
 q(233,{coords={
 [1426]={{29.8,71.2}}},qgs={658},qis={2187},r=2,sourceQuests={179}}),
 q(234,{coords={
