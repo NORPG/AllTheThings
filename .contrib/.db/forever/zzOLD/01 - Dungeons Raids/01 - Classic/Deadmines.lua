@@ -7,6 +7,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
 	["mapID"] = MAP.DEADMINES,
 	["coord"] = { 42.2, 82.6, MAP.WESTFALL },
+	["icon"] = 136332,
 	["lvl"] = 10,
 	["groups"] = {
 		n(QUESTS, {
