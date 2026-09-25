@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, q(79007, {	-- ...and that note you found (H)
+				applyclassicphase(SOD_PHASE_TWO, q(79007, {	-- ... and that note you found (H)
 					["providers"] = {
 						{ "o", 415106 },	-- Burned-Out Remains
 						{ "o", 424010 },	-- Nailed Plank
@@ -2827,8 +2827,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79192, {	-- Stepping Stones
 					["sourceQuests"] = {
-						79008,	-- ...and that note you found (A)
-						79007,	-- ...and that note you found (H)
+						79008,	-- ... and that note you found (A)
+						79007,	-- ... and that note you found (H)
 					},
 					["providers"] = {
 						{ "o", 417072 },	-- Nailed Plank

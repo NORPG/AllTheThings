@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ...and that note you found (A)
+				applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ... and that note you found (A)
 					["providers"] = {
 						{ "o", 415107 },	-- Burned-Out Remains
 						{ "o", 417072 },	-- Nailed Plank

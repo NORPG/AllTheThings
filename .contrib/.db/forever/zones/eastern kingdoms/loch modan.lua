@@ -292,6 +292,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(2240),	-- Rugged Cape
 				},
 			}),
+			q(79975, {	-- Eagle's Fist
+				sourceQuest = 79974,	-- Wet Job
+				provider = { "o", 424007 },	-- Carved Figurine
+				coord = { 49.5, 12.8, LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { ARATHI_HIGHLANDS },
+				lvl = 14,
+			}),
 			q(298, {	-- Excavation Progress Report
 				["qg"] = 1344,	-- Prospector Ironband
 				["qi"] = 2637,	-- Ironbrand's Progress Report

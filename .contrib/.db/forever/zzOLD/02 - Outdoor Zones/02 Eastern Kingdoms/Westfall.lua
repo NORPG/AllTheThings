@@ -56,6 +56,23 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
+				q(79008, {	-- ... and that note you found (A)
+					providers = {
+						{ "o", 415107 },	-- Burned-Out Remains
+						{ "o", 417072 },	-- Nailed Plank
+					},
+					coords = {
+						{ 37.5, 50.7, WESTFALL },
+						{ 46.4, 73.8, THE_BARRENS },
+					},
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
+					groups = {
+						i(2459),	-- Swiftness Potion
+						i(3388),	-- Strong Troll's Blood Potion
+					},
+				}),
 				q(92110, {	-- My First Real Potion -- Needs more DATA from Forever/Braghe
 					--["sourceQuest"] = 428,	-- Lost Deathstalkers
 					--["qg"] = 1950,	-- Rane Yorick
@@ -660,6 +677,27 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(1566),	-- Edge of the People's Militia
 						i(1480),	-- Fist of the People's Militia
 						i(12296),	-- Spark of the People's Militia
+					},
+				}),
+				q(92745, {	-- The State of the Mines
+					sourceQuests = {
+						92744,	-- Murloc Gills
+						92742,	-- Testing the Wells
+					},
+					qg = 253092,	-- Alba Fairmoon
+					coord = { 52.5, 53.0, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 9,
+					groups = {
+						objective(1, {	-- 0/4 Kobold Digger slain
+							provider = { "n", 1236 },	-- Kobold Digger
+							coord = { 46.0, 18.6, MAP.WESTFALL },
+						}),
+						objective(2, {	-- 0/6 Riverpaw Miner slain
+							provider = { "n", 1426 },	-- Riverpaw Miner
+							coord = { 30.0, 47.4, MAP.WESTFALL },
+						}),
 					},
 				}),
 				q(117, {	-- Thunderbrew

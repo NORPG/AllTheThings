@@ -115,6 +115,23 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(79007, {	-- ... and that note you found (H)
+				providers = {
+					{ "o", 415106 },	-- Burned-Out Remains
+					{ "o", 424010 },	-- Nailed Plank
+				},
+				coords = {
+					{ 46.4, 73.9, THE_BARRENS },
+					{ 37.5, 50.8, WESTFALL },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 14,
+				groups = {
+					i(2459),	-- Swiftness Potion
+					i(3388),	-- Strong Troll's Blood Potion
+				},
+			}),
 			q(1153, {	-- A New Ore Sample
 				["sourceQuest"] = 893,	-- Weapons of Choice
 				["qg"] = 3433,	-- Tatternack Steelforge
@@ -1950,6 +1967,27 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
 				["lvl"] = 14,
+			}),
+			q(79192, {	-- Stepping Stones
+				sourceQuests = {
+					79008,	-- ... and that note you found (A)
+					79007,	-- ... and that note you found (H)
+				},
+				providers = {
+					{ "o", 417072 },	-- Nailed Plank
+					{ "o", 424010 },	-- Nailed Plank
+				},
+				coords = {
+					{ 46.4, 73.8, THE_BARRENS },
+					{ 37.5, 50.8, WESTFALL },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { STONETALON_MOUNTAINS },
+				lvl = 14,
+				groups = {
+					i(3334),	-- Farmer's Shovel
+					i(221498),	-- Sturdy Lunchbox
+				},
 			}),
 			q(888, {	-- Stolen Booty
 				["sourceQuest"] = 892,	-- The Missing Shipment (2/2)

@@ -714,6 +714,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["maps"] = { MAP.BADLANDS },
 				["lvl"] = 30,
 			}),
+			q(79976, {	-- This Must Be The Place
+				sourceQuest = 79975,	-- Eagle's Fist
+				providers = {
+					{ "o", 406918 },	-- Messenger Bag
+					{ "o", 424006 },	-- Hastily Rolled-Up Satchel
+				},
+				coord = { 22.5, 24.2, ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 14,
+				groups = {
+					i(211527),	-- Cozy Sleeping Bag
+					i(216619),	-- Student Fodder
+				},
+			}),
 			q(694, {	-- Trelane's Defenses
 				["sourceQuest"] = 693,	-- Wand over Fist
 				["qg"] = 2789,	-- Skuerto
