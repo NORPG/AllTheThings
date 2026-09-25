@@ -595,7 +595,7 @@ s(308384,273007,{b=1,f=5,loc=47,lvl=13}),
 s(308383,273005,{b=1,f=3,lvl=13}),
 s(308382,273003,{b=1,f=20,lvl=13,spellID=1291568})}})}}),
 inst(2999,{awp=16001,coords={
-[1420]={{50,50}}},lvl=15,["zone-text-areaID"]=16611,g={
+[1420]={{50,50}}},icon=_.asset("ruinsoflordaeron"),lvl=15,["zone-text-areaID"]=16611,g={
 h(-45,{
 q(92401,{coords={
 [1421]={{44.4,43}}},lvl=15,qgs={250686},r=1,g={
@@ -652,7 +652,7 @@ q(97292,{coords={
 [1458]={{48.4,69.4}}},lvl=16,qgs={2055},r=1,sourceQuests={97291},g={
 qo(1,{providers={{"i",281327}}})}})}),
 h(-46,{
-e(3408,{npcID=255699,g={
+e(3408,{description="This is a Rare Creature and, as such, is not always present.",npcID=255699,g={
 s(158620,6641,{b=1,f=26,lvl=22}),
 s(158621,6642,{b=1,f=6,loc=42,lvl=22})}})}),
 h(-63,{
@@ -753,7 +753,7 @@ s(158417,6324,{f=4,loc=42}),
 s(158446,6392,{f=4,loc=45}),
 crit(3263,{achID=62031,awp=16001,id=5})})}}),
 inst(3065,{awp=16001,coords={
-[1455]={{50,50}}},lore="Hidden beneath the High Seat of Ironforge, the Hall of Thanes is part of the legendary \"Old Ironforge\", forever incapable of access in Classic Azeroth until WoW: Forever. The Hall of Thanes is the resting place of the Legendary Dwarves of the Eastern Kingdoms, but has recently been invaded by the hostile Dark Iron Dwarves",lvl=13,["zone-text-areaID"]=16919,g={
+[1455]={{50,50}}},icon=_.asset("hallofthanes"),lore="Hidden beneath the High Seat of Ironforge, the Hall of Thanes is part of the legendary \"Old Ironforge\", forever incapable of access in Classic Azeroth until WoW: Forever. The Hall of Thanes is the resting place of the Legendary Dwarves of the Eastern Kingdoms, but has recently been invaded by the hostile Dark Iron Dwarves",lvl=13,["zone-text-areaID"]=16919,g={
 h(-45,{
 q(96395,{lvl=10,qgs={265002},r=2,g={
 qo(1,{providers={{"n",261306}}}),
@@ -837,6 +837,115 @@ n(1696,{
 i(3630)}),
 n(1716,{
 i(2926)})}}),
+inst(240,{coords={
+[1413]={{45.9,35.7}},
+[1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
+h(-45,{description="To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",g={
+q(1487,{coords={
+[1413]={{46,35.7}}},lvl=15,qgs={5768},g={
+qo(1,{providers={{"n",3636}}}),
+qo(2,{providers={{"n",5755}}}),
+qo(3,{providers={{"n",5761}}}),
+qo(4,{providers={{"n",5056}}}),
+r(7955,{itemID=6476,requireSkill=165}),
+s(159089,8071,{b=1,f=27}),
+s(158503,6481,{b=1,f=6,loc=44})}}),
+q(1486,{coords={
+[1413]={{46,35.7}}},lvl=13,qgs={5767},g={
+qo(1,{providers={{"i",6443}}}),
+s(158502,6480,{b=1,f=5,loc=46}),
+i(918,{b=1,f=113})}}),
+q(1489,{coords={
+[1413]={{52.3,31.9}}},lvl=10,qgs={3448},qis={10414},r=1,sourceQuests={880}}),
+q(3370,{coords={
+[1413]={{48.2,32.8}}},description="She lives in a house on top of the mountain.",lvl=15,qgs={8418},r=2,sourceQuests={6981},g={
+qo(1,{providers={{"i",10649}}}),
+s(160118,10657,{b=1,f=4,loc=41}),
+s(160119,10658,{b=1,f=6,loc=47})}}),
+q(3369,{coords={
+[1413]={{48.2,32.8}}},description="She lives in a house on top of the mountain.",lvl=15,qgs={8418},r=1,sourceQuests={6981},g={
+qo(1,{providers={{"i",10649}}}),
+s(160118,10657,{b=1,f=4,loc=41}),
+s(160119,10658,{b=1,f=6,loc=47})}}),
+q(914,{coords={
+[1456]={{75.6,31.2}}},lvl=10,qgs={5770},r=1,sourceQuests={1490},g={
+qo(1,{providers={{"i",9738}}}),
+qo(2,{providers={{"i",9739}}}),
+qo(3,{providers={{"i",9740}}}),
+qo(4,{providers={{"i",9741}}}),
+s(158508,6505,{b=1,f=28}),
+s(158507,6504,{b=1,f=25}),
+s(304873,270018,{awp=16001,b=1,f=24})}}),
+q(1490,{coords={
+[1456]={{74.7,30.2}}},lvl=10,qgs={5769},r=1,sourceQuests={1489}}),
+q(962,{coords={
+[1456]={{23.6,21.4}}},lvl=14,qgs={3419},r=1,g={
+qo(1,{providers={{"i",5339},{"o",13891}}}),
+s(160209,10919,{b=1,f=4,loc=44}),
+s(304864,270008,{awp=16001,b=1,f=5,loc=44}),
+s(304865,270009,{awp=16001,b=1,f=6,loc=47})}}),
+q(1491,{coords={
+[1413]={{62.4,37.6}}},lvl=13,qgs={3446},sourceQuests={865},g={
+qo(1,{crs={3638,3640,5763},providers={{"i",6464}}})}}),
+q(6981,{coords={
+[1413]={{63,37.2}}},providers={{"i",10441}},qgs={3442}})}}),
+h(-56,{
+i(209846,{b=1,coords={
+[1413]={{52.83,54.7}}},providers={{"o",409692}}})}),
+h(-58,{
+n(5783,{coords={
+[1413]={{45.9,35.7}}},g={
+r(7953,{itemID=6474,requireSkill=165}),
+r(7954,{itemID=6475,requireSkill=165})}})}),
+h(-63,{
+i(6443,{description="Drops from Deviate creatures in the Wailing Caverns."}),
+s(160046,10413,{crs={3840},f=5,loc=44,lvl=14})}),
+prof(393,{
+i(6470,{description="Can drop-, as well as be skinned from all deviates within the Wailing Caverns."}),
+i(6471,{description="Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low."})}),
+e(474,{npcID=3671,g={
+i(9739),
+s(158158,5404,{b=1,f=5,loc=41,lvl=18}),
+s(160045,10412,{b=1,f=5,loc=45,lvl=16}),
+i(273088,{awp=16001,b=1,f=51,lvl=17}),
+i(6446,{b=1,f=113})}}),
+e(477,{npcID=3653,g={
+s(160906,13245,{b=1,f=8,lvl=18}),
+s(158487,6447,{b=1,f=8,lvl=16}),
+s(308425,273084,{awp=16001,b=1,f=3,lvl=17,spellID=1291748})}}),
+e(476,{npcID=3670,g={
+i(9740),
+s(158498,6472,{b=1,f=23,lvl=19}),
+s(158499,6473,{b=1,f=5,loc=42,lvl=18}),
+s(308426,273089,{awp=16001,b=1,f=4,loc=45,lvl=17,spellID=1291758})}}),
+e(475,{npcID=3669,g={
+i(9738),
+s(158493,6465,{b=1,f=4,loc=42,lvl=17}),
+s(158491,6460,{b=1,f=6,loc=45,lvl=17}),
+s(160043,10410,{b=1,f=5,loc=46,lvl=17})}}),
+e(478,{npcID=3674,g={
+s(158488,6448,{b=1,f=20,lvl=17}),
+s(158489,6449,{b=1,f=3,lvl=18}),
+s(308431,273137,{awp=16001,b=1,f=1,lvl=17,spellID=1291782})}}),
+n(5912,{description="This is a Rare Creature and, as such, is not always present.",g={
+s(158072,5243,{b=1,f=27,lvl=18,spellID=1291686}),
+s(158618,6632,{b=1,f=3,lvl=16})}}),
+e(479,{npcID=3673,g={
+i(9741),
+s(158497,6469,{b=1,f=32,lvl=19}),
+s(158290,5970,{b=1,f=4,loc=44,lvl=18}),
+s(160044,10411,{b=1,f=5,loc=47,lvl=17}),
+s(158490,6459,{b=1,f=6,loc=47,lvl=18})}}),
+e(480,{npcID=5775,g={
+s(158617,6631,{b=1,f=28,lvl=18}),
+s(158616,6630,{b=1,f=8,lvl=19}),
+s(158615,6629,{b=1,f=3,lvl=17,spellID=1291698})}}),
+e(481,{npcID=3654,g={
+i(10441,{b=1,lvl=15}),
+s(158492,6461,{b=1,f=4,loc=41,lvl=20}),
+s(158613,6627,{b=1,f=6,loc=42,lvl=18}),
+i(6463,{b=1,f=52,lvl=19}),
+crit(18524,{achID=62031,awp=16001,id=3})}})}}),
 x(1,{awp=10100,g={
 inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
@@ -5672,108 +5781,6 @@ s(159347,9418,{f=26}),
 s(159343,9413,{f=24}),
 i(11118,{f=52}),
 crit(18531,{achID=62033,awp=16001,id=2})}})}}),
-inst(240,{coords={
-[1413]={{45.9,35.7}},
-[1414]={{52,55.2}}},lore="Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",lvl=10,mapID=279,["zone-text-areaID"]=718,["zone-text-names"]={"The Wailing Caverns","Las Cuevas de los Lamentos"},g={
-h(-45,{description="To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",g={
-q(1487,{coords={
-[1413]={{46,35.7}}},lvl=15,qgs={5768},rwp=40003,g={
-qo(1,{providers={{"n",3636}}}),
-qo(2,{providers={{"n",5755}}}),
-qo(3,{providers={{"n",5761}}}),
-qo(4,{providers={{"n",5056}}}),
-r(7955,{itemID=6476,requireSkill=165}),
-s(159089,8071,{b=1,f=27}),
-s(158503,6481,{b=1,f=6,loc=44})}}),
-q(1486,{coords={
-[1413]={{46,35.7}}},lvl=13,qgs={5767},rwp=40003,g={
-qo(1,{providers={{"i",6443}}}),
-s(158502,6480,{b=1,f=5,loc=46}),
-i(918,{b=1,f=113})}}),
-q(1489,{coords={
-[1413]={{52.3,31.9}}},lvl=10,qgs={3448},qis={10414},r=1,rwp=40003,sourceQuests={880}}),
-q(3370,{coords={
-[1413]={{48.2,32.8}}},description="She lives in a house on top of the mountain.",lvl=15,qgs={8418},r=2,rwp=40003,sourceQuests={6981},g={
-qo(1,{providers={{"i",10649}}}),
-s(160118,10657,{b=1,f=4,loc=41}),
-s(160119,10658,{b=1,f=6,loc=47})}}),
-q(3369,{coords={
-[1413]={{48.2,32.8}}},description="She lives in a house on top of the mountain.",lvl=15,qgs={8418},r=1,rwp=40003,sourceQuests={6981},g={
-qo(1,{providers={{"i",10649}}}),
-s(160118,10657,{b=1,f=4,loc=41}),
-s(160119,10658,{b=1,f=6,loc=47})}}),
-q(914,{coords={
-[1456]={{75.6,31.2}}},lvl=10,qgs={5770},r=1,rwp=40003,sourceQuests={1490},g={
-qo(1,{providers={{"i",9738}}}),
-qo(2,{providers={{"i",9739}}}),
-qo(3,{providers={{"i",9740}}}),
-qo(4,{providers={{"i",9741}}}),
-s(158508,6505,{b=1,f=28}),
-s(158507,6504,{b=1,f=25})}}),
-q(1490,{coords={
-[1456]={{74.7,30.2}}},lvl=10,qgs={5769},r=1,rwp=40003,sourceQuests={1489}}),
-q(962,{coords={
-[1456]={{23.6,21.4}}},lvl=14,qgs={3419},r=1,rwp=40003,g={
-qo(1,{providers={{"i",5339},{"o",13891}}}),
-s(160209,10919,{b=1,f=4,loc=44})}}),
-q(1491,{coords={
-[1413]={{62.4,37.6}}},lvl=13,qgs={3446},rwp=40003,sourceQuests={865},g={
-qo(1,{crs={3638,3640,5763},providers={{"i",6464}}})}}),
-q(6981,{coords={
-[1413]={{63,37.2}}},providers={{"i",10441}},qgs={3442},rwp=40003})}}),
-h(-58,{
-n(5783,{coords={
-[1413]={{45.9,35.7}}},rwp=40003,g={
-r(7953,{itemID=6474,requireSkill=165}),
-r(7954,{itemID=6475,requireSkill=165})}})}),
-h(-63,{
-i(6443,{description="Drops from Deviate creatures in the Wailing Caverns."}),
-n(3840,{
-s(160046,10413,{f=5,loc=44,lvl=14}),
-i(208015)})}),
-prof(393,{
-i(6470,{description="Can drop-, as well as be skinned from all deviates within the Wailing Caverns."}),
-i(6471,{description="Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low."})}),
-e(474,{npcID=3671,g={
-i(9739),
-s(158158,5404,{b=1,f=5,loc=41,lvl=18}),
-s(160045,10412,{b=1,f=5,loc=45,lvl=16}),
-i(6446,{b=1,f=113})}}),
-e(477,{npcID=3653,g={
-s(160906,13245,{b=1,f=8,lvl=18}),
-s(158487,6447,{b=1,f=8,lvl=16})}}),
-e(476,{npcID=3670,g={
-i(9740),
-s(158498,6472,{b=1,f=23,lvl=19}),
-s(158499,6473,{b=1,f=5,loc=42,lvl=18})}}),
-e(475,{npcID=3669,g={
-i(9738),
-s(158493,6465,{b=1,f=4,loc=42,lvl=17}),
-s(158491,6460,{b=1,f=6,loc=45,lvl=17}),
-s(160043,10410,{b=1,f=5,loc=46,lvl=17})}}),
-e(478,{npcID=3674,g={
-s(158488,6448,{b=1,f=20,lvl=17}),
-s(158489,6449,{b=1,f=3,lvl=18})}}),
-n(5912,{description="This is a Rare Creature and, as such, is not always present.",g={
-s(158072,5243,{b=1,f=27,lvl=18,spellID=1291686}),
-s(158618,6632,{b=1,f=3,lvl=16})}}),
-e(479,{npcID=3673,g={
-i(9741),
-s(158497,6469,{b=1,f=32,lvl=19}),
-s(158290,5970,{b=1,f=4,loc=44,lvl=18}),
-s(160044,10411,{b=1,f=5,loc=47,lvl=17}),
-s(158490,6459,{b=1,f=6,loc=47,lvl=18})}}),
-e(480,{npcID=5775,g={
-s(158617,6631,{b=1,f=28,lvl=18}),
-s(158616,6630,{b=1,f=8,lvl=19}),
-s(158615,6629,{b=1,f=3,lvl=17,spellID=1291698})}}),
-e(481,{npcID=3654,g={
-ach(630),
-i(10441,{b=1,lvl=15}),
-s(158492,6461,{b=1,f=4,loc=41,lvl=20}),
-s(158613,6627,{b=1,f=6,loc=42,lvl=18}),
-i(6463,{b=1,f=52,lvl=19}),
-crit(18524,{achID=62031,awp=16001,id=3})}})}}),
 inst(241,{coords={
 [1446]={{39,19}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,["zone-text-areaID"]=978,g={
 h(-45,{

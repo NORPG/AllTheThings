@@ -5,6 +5,7 @@
 root(ROOTS.Instances, {
 	inst(2999, {	-- Ruins of Lordaeron
 		-- ["lore"] = "",
+		["icon"] = [[~_.asset("ruinsoflordaeron")]],
 		["zone-text-areaID"] = 16611,	-- Ruins of Lordaeron
 		["coord"] = { 50.0, 50.0, MAP.TIRISFAL_GLADES },
 		["timeline"] = { TIMELINE.ADDED_1_60_1 },
