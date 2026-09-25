@@ -71,20 +71,6 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(60874, {	-- Deathless Sinew
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				i(60875, {	-- Ghostly Essence
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				i(60872, {	-- Moonsteel Ingots
-					["provider"] = { "o", 205477 },	-- Moonsteel Ingots
-					["timeline"] = { ADDED_4_0_3 },
-				}),
-				i(60871, {	-- Moontouched Wood
-					["provider"] = { "o", 205479 },	-- Moontouched Wood
-					["timeline"] = { ADDED_4_0_3 },
-				}),
 				i(1935),	-- Assassin's Blade
 				i(3194),	-- Black Malice
 				i(2205, {	-- Duskbringer
@@ -124,7 +110,13 @@ root(ROOTS.Instances, {
 				i(1484),	-- Witching Stave
 			}),
 			n(3914, {	-- Rethilgore <The Cell Keeper>
+				i(273456, {	-- Cell Keeper's Claws
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				i(5254),	-- Rugged Spaulders
+				i(273457, {	-- Sorcerer Collar
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(3864, {	-- Fel Steed/Shadow Charger
 				i(6341),	-- Eerie Stable Lantern
@@ -140,6 +132,9 @@ root(ROOTS.Instances, {
 				["groups"] = {
 					i(6323),	-- Baron's Scepter
 					i(6321),	-- Silverlaine's Family Seal
+					i(273637, {	-- Blade of Silverlaine
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			e(98, {	-- Commander Springvale
@@ -148,6 +143,9 @@ root(ROOTS.Instances, {
 					i(3191),	-- Arced War Axe
 					i(6320),	-- Commander's Crest
 					i(6341),	-- Eerie Stable Lantern
+					i(273643, {	-- Worgenbane Talisman
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(3872, {	-- Deathsworn Captain
@@ -160,10 +158,16 @@ root(ROOTS.Instances, {
 			n(4279, {	-- Odo the Blindwatcher
 				i(6318),	-- Odo's Ley Staff
 				i(6319),	-- Girdle of the Blindwatcher
+				i(273645, {	-- Blindwatcher's Sight
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(4274, {	-- Fenrus the Devourer
 				i(3230),	-- Black Wolf Bracers
 				i(6340),	-- Fenrus' Hide
+				i(273646, {	-- Half-Eaten Boots
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(4627, {	-- Arugal's Voidwalker
 				i(5943),	-- Rift Bracers
@@ -171,6 +175,9 @@ root(ROOTS.Instances, {
 			n(3927, {	-- Wolf Master Nandos
 				i(3748),	-- Feline Mantle
 				i(6314),	-- Wolfmaster Cape
+				i(273647, {	-- Worgpelt Leggings
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(4275, {	-- Archmage Arugal
 				i(5442),	-- Head of Arugal
