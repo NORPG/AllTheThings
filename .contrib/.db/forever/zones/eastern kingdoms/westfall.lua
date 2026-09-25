@@ -189,7 +189,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(92748, {	-- Explosive Consultation
+			q(92748, {	-- Explosive Consultation (1/2)
 				sourceQuest = 92747,	-- Moonbrook Espionage
 				qg = 253092,	-- Alba Fairmoon
 				coord = { 52.5, 53.0, MAP.WESTFALL },

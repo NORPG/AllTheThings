@@ -960,7 +960,7 @@ q(5638,{altQuests={5634,5635,5636,5637,5639,5640},c={5},coords={
 [1453]={{20.8,50.2}}},lvl=10,qgs={11397},races={1,3},g={
 r(13908,{rank=1,requireSkill=56})}}),
 q(92750,{awp=16001,coords={
-[1453]={{61.8,30.8}}},lvl=9,qgs={11026},r=2,sourceQuests={92749}}),
+[1453]={{61.8,30.8}}},lvl=9,qgs={11026},r=2,sourceQuests={92748}}),
 q(92751,{awp=16001,coords={
 [1453]={{80,70}}},lvl=9,qgs={1325},qis={254552},r=2,sourceQuests={92750}}),
 q(6261,{coords={
@@ -971,7 +971,7 @@ r(2651,{rank=1,requireSkill=613})}}),
 q(7637,{c={2},coords={
 [1453]={{48.6,50}}},cost=1500000,lvl=60,maps={1455},qgs={928},r=2,sourceQuests={7638,7670}}),
 q(92752,{awp=16001,coords={
-[1453]={{61.8,30.8}}},lvl=9,maps={1436},qgs={11026},qis={254553},r=2,sourceQuests={92751}}),
+[1453]={{61.8,30.8}}},lvl=9,maps={1436},qgs={11026},qis={254553},r=2,sourceQuests={92749,92751}}),
 q(7640,{c={2},coords={
 [1453]={{48.6,50}}},lvl=60,maps={1423},qgs={928},qis={18752},r=2,sourceQuests={7639},g={
 qo(1,{coords={

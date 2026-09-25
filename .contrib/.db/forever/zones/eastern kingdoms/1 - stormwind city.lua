@@ -158,7 +158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["lvl"] = 12,
 			}),
 			q(92749, {	-- A Dynamite Plan
-				sourceQuest = 92748,	-- Explosive Consultation
+				sourceQuest = 92748,	-- Explosive Consultation (1/2)
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -480,7 +480,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(92750, {	-- Detonation at a Distance (1/2)
-				sourceQuest = 92749,	-- A Dynamite Plan
+				sourceQuest = 92748,	-- Explosive Consultation (1/2)
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -533,8 +533,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 60,
 			}),
-			q(92752, {	-- Explosive Consultation
-				sourceQuest = 92751,	-- Detonation at a Distance (2/2)
+			q(92752, {	-- Explosive Consultation (2/2)
+				sourceQuests = {
+					92749,	-- A Dynamite Plan
+					92751,	-- Detonation at a Distance (2/2)
+				},
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				qi = 254553,	-- Extra-Destructive Explosives (PQI!)
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
