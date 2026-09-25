@@ -95,7 +95,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["cr"] = 19168,	-- Sunseeker Astromage
 				}),
 				i(22920, {	-- Recipe: Major Fire Protection Potion (RECIPE!)
-					["cr"] = 19168,	-- Sunseeker Astromage
+					["crs"] = {
+						19221,	-- Nethermancer Sepethrea
+						19168,	-- Sunseeker Astromage
+					},
 				}),
 			}),
 			o(184465, bubbleDownSelf({
@@ -160,7 +163,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
-						i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
 					},
 				}),
 				e(565, {	-- Pathaleon the Calculator
@@ -253,7 +255,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
-							i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
 						},
 					}),
 					e(565, {	-- Pathaleon the Calculator

@@ -494,7 +494,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["groups"] = {
 									objective(1, {	-- "Crimson Dawn" Revealed
 										["provider"] = { "n", 28939 },	-- Scarlet Preacher
+										-- #IF OBJECTIVES
+										-- this is a bit weird in Retail since the cost is transferred to the quest itself, which leads to excessive nesting
 										["cost"] = { { "i", 39371, 2 } },	-- Keleseth's Persuader
+										-- #ENDIF
 									}),
 									i(39418, {	-- Ornately Jeweled Box
 										i(39371, {	-- Keleseth's Persuader

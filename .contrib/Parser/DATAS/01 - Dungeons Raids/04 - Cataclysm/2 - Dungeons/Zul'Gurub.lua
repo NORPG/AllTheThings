@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 								},
 							}),
 							o(180368, {	-- Tablet of Madness
-								["description"] = "Alchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",
+								["description"] = "Can be looted near the Cache of Madness event, above the altar at 61.2, 45.6.\nAlchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",
 								["requireSkill"] = ALCHEMY,
 								["groups"] = {
 									recipe(24266),	-- Gurubashi Mojo Madness
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						}),
 						n(VENDORS, {
 							n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-								["sourceQuest"] = 74576,	-- Restored Hakkari Bijou
+								["sourceAchievement"] = 17366,	-- Relics of a Fallen Empire
 								["coord"] = { 55.0, 86.8, DAZARALOR },
 								["groups"] = {
 									cl(DRUID, {
