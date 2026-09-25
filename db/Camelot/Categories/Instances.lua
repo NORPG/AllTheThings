@@ -5427,11 +5427,18 @@ q(168,{coords={
 [1453]={{65.4,21.2}}},lvl=14,qgs={656},r=2,rwp=40003,g={
 qo(1,{providers={{"i",1894}}}),
 s(156580,2036,{b=1,f=5,loc=44}),
-s(156581,2037,{b=1,f=6,loc=47})}}),
+s(156581,2037,{b=1,f=6,loc=47}),
+s(304863,270007,{awp=16001,b=1,f=4,loc=45})}}),
+q(92753,{awp=16001,coords={
+[1436]={{52.5,53}}},lvl=9,qgs={253092},qis={254553},r=2,sourceQuests={92752}}),
+q(92819,{awp=16001,coords={
+[1436]={{52.5,53}}},lvl=9,qgs={253092},r=2,sourceQuests={92753}}),
 q(167,{coords={
 [1453]={{65.4,21.2}}},lvl=15,qgs={656},r=2,rwp=40003,g={
 qo(1,{providers={{"i",1875}}}),
-s(156499,1893,{b=1,f=22})}}),
+s(156499,1893,{b=1,f=22}),
+s(304868,270012,{awp=16001,b=1,f=4,loc=44}),
+s(304869,270013,{awp=16001,b=1,f=5,loc=47})}}),
 q(214,{coords={
 [1436]={{56.7,47.4}}},lvl=14,qgs={820},r=2,rwp=40003,sourceQuests={153,155},g={
 qo(1,{crs={594,619,824},description="Can also drop from any Defias mob in the Deadmines.",providers={{"i",915}}}),
@@ -5450,7 +5457,9 @@ q(2040,{coords={
 [1453]={{55.5,12.5}}},lvl=15,qgs={6579},r=2,rwp=40003,sourceQuests={2041},g={
 qo(1,{providers={{"i",7365}}}),
 s(158977,7607,{b=1,f=27}),
-s(158976,7606,{b=1,f=6,loc=44})}})}),
+s(158976,7606,{b=1,f=6,loc=44}),
+s(304871,270015,{awp=16001,b=1,f=5,loc=43}),
+s(304872,270016,{awp=16001,b=1,f=5,loc=46})}})}),
 h(-46,{
 n(596,{coords={
 [1436]={{44,78.3}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={

@@ -189,6 +189,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
+			q(92748, {	-- Explosive Consultation
+				sourceQuest = 92747,	-- Moonbrook Espionage
+				qg = 253092,	-- Alba Fairmoon
+				coord = { 52.5, 53.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
 			q(184, {	-- Furlbrow's Deed
 				["qs"] = 1972,	-- Westfall Deed (QS!)
 				["qi"] = 1971,	-- Furlbrow's Deed (PQI!)
@@ -281,6 +290,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 					i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 						["timeline"] = { ADDED_1_3_0 },
+					}),
+				},
+			}),
+			q(92747, {	-- Moonbrook Espionage
+				sourceQuest = 92745,	-- The State of the Mines
+				qg = 253092,	-- Alba Fairmoon
+				coord = { 52.5, 53.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+				groups = {
+					objective(1, {	-- 0/8 Suspicious Industrial Supplies
+						providers = {
+							{ "i", 254676 },	-- Suspicious Industrial Supplies
+							{ "o", 254676 },	-- Suspicious Crate
+						},
+						coord = { 43.2, 68.3, MAP.WESTFALL },
 					}),
 				},
 			}),
@@ -673,6 +699,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(1566),	-- Edge of the People's Militia
 					i(1480),	-- Fist of the People's Militia
 					i(12296),	-- Spark of the People's Militia
+					i(270006, {	-- Boots of the People's Militia
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(92745, {	-- The State of the Mines

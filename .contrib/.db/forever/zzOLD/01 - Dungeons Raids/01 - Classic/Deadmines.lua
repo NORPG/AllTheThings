@@ -32,6 +32,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(2037, {	-- Tunneler's Boots
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
+					i(270007, {	-- Worn Miner's Waistcord
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(44930, {	-- Deadmines: Sea'in Red
@@ -49,6 +52,23 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["_IgnoreSharedEnsembleByQuestID"] = true,	-- some NYI mage ensemble shared questID
 					}),
 				},
+			}),
+			q(92753, {	-- Destruction in Deadmines (1/2)
+				sourceQuest = 92752,	-- Explosive Consultation
+				qg = 253092,	-- Alba Fairmoon
+				qi = 254553,	-- Extra-Destructive Explosives (PQI!)
+				coord = { 52.5, 53.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
+			q(92819, {	-- Destruction in Deadmines (2/2)
+				sourceQuest = 92753,	-- Destruction in Deadmines (1/2)
+				qg = 253092,	-- Alba Fairmoon
+				coord = { 52.5, 53.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
 			}),
 			q(27848, {	-- Good Intentions...Poor Execution
 				["sourceQuest"] = 27847,	-- Not Quite There
@@ -94,6 +114,12 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					}),
 					i(1893, {	-- Miner's Revenge
 						["timeline"] = { REMOVED_4_0_3 },
+					}),
+					i(270012, {	-- Miner's Workgloves
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270013, {	-- Miner's Workboots
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),
@@ -297,6 +323,12 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					}),
 					i(7606, {	-- Polar Gauntlets
 						["timeline"] = { REMOVED_4_0_3 },
+					}),
+					i(270015, {	-- Bravo's Armbands
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270016, {	-- Dreamer's Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),

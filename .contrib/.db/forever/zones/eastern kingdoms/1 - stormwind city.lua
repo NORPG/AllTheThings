@@ -157,6 +157,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 12,
 			}),
+			q(92749, {	-- A Dynamite Plan
+				sourceQuest = 92748,	-- Explosive Consultation
+				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
+				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = { { "i", 4365, 10 } },	-- Coarse Dynamite
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
 			q(5645, {	-- A Lack of Fear
 				["altQuests"] = {
 					5647,	-- A Lack of Fear [Darnassus]
@@ -470,6 +479,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
+			q(92750, {	-- Detonation at a Distance (1/2)
+				sourceQuest = 92749,	-- A Dynamite Plan
+				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
+				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
+			q(92751, {	-- Detonation at a Distance (2/2)
+				sourceQuest = 92750,	-- Detonation at a Distance (1/2)
+				qg = 1325,	-- Jasper Fel <Shady Dealer>
+				qi = 254552,	-- Remote Detonator Kit (PQI!)
+				coord = { 80.0, 70.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
 			q(6261, {	-- Dungar Longdrink
 				["sourceQuest"] = 6281,	-- Continue to Stormwind
 				["qg"] = 1323,	-- Osric Strang
@@ -506,6 +532,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 60,
+			}),
+			q(92752, {	-- Explosive Consultation
+				sourceQuest = 92751,	-- Detonation at a Distance (2/2)
+				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
+				qi = 254553,	-- Extra-Destructive Explosives (PQI!)
+				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.WESTFALL },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
 			}),
 			q(7640, {	-- Exorcising Terrordale
 				["sourceQuest"] = 7639,	-- To Show Due Judgment
