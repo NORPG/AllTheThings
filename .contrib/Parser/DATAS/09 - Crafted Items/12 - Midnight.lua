@@ -905,11 +905,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			FirstCraft(90318, 1229921);	-- HU5H, Nonchalant Pup
 			FirstCraft(90308, 1229924);	-- M3DDY
 			FirstCraft(90300, 1229917);	-- M3DDY, Travel-Sized
+			fc(1297585, {["timeline"] = { ADDED_12_1_0 }}),	-- R0CKY
+			fc(1305148, {["timeline"] = { ADDED_12_1_0 }}),	-- R0CKY-To-Go
 			FirstCraft(90302, 1229926);	-- W-47CH D0G
+			-- Decor
+			fc(1296503, {["timeline"] = { ADDED_12_1_0 }}),	-- Aetherlume Field Lamp
+			fc(1296501, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Amani Hookshot
+			fc(1296502, {["timeline"] = { ADDED_12_1_0 }}),	-- Proudmoore Ship-in-a-Bottle
 			-- Guns
 			fc(1282455),	-- Evercore Dome Dinger
 			fc(1282456),	-- P.O.W. x3
 			fc(1282457),	-- Thalassian Competitor's Rifle
+			-- Toys
+			fc(1297647, {["timeline"] = { ADDED_12_1_0 }}),	-- G-00
 			-- Cloth Equipment
 			FirstCraft(90259, 1229870);	-- Aetherlume Eye Wrap
 			FirstCraft(90263, 1229874);	-- Aetherlume Silken Cuffs
