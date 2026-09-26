@@ -403,14 +403,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["cr"] = 808,	-- Grik'nir the Cold
 						["coord"] = { 30.4, 80.2, MAP.DUN_MOROGH },
 					}),
-					i(2259, {	-- Frostmane Club
-						["cr"] = 1121,	-- Frostmane Snowstrider
-						["coords"] = {
-							{ 29.6, 79.0, MAP.DUN_MOROGH },
-							{ 26.0, 79.8, MAP.DUN_MOROGH },
-							{ 21.6, 77.0, MAP.DUN_MOROGH },
-						},
-					}),
 					i(2108, {	-- Frostmane Leather Vest
 						["cr"] = 706,	-- Frostmane Troll Whelp
 						["coords"] = {
@@ -1727,6 +1719,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["coords"] = {
 					{ 79.2, 48.4, MAP.DUN_MOROGH },
 					{ 78.0, 54.2, MAP.DUN_MOROGH },
+				},
+			}),
+			i(2259, {	-- Frostmane Club
+				["cr"] = 1121,	-- Frostmane Snowstrider
+				["coords"] = {
+					{ 29.6, 79.0, MAP.DUN_MOROGH },
+					{ 26.0, 79.8, MAP.DUN_MOROGH },
+					{ 21.6, 77.0, MAP.DUN_MOROGH },
 				},
 			}),
 			i(2260, {	-- Frostmane Hand Axe

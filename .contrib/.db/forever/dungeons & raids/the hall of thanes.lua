@@ -33,8 +33,7 @@ root(ROOTS.Instances, {
 						objective(1, {	-- 0/8 Dwarven Heirloom
 							providers = {
 								{ "i", 274289 },	-- Dwarven Heirloom
-								-- CRIEVE NOTE: Not sure where this is obtained yet.
-								--{ "o",  },	-- Dwarven Heirloom?
+								{ "o", 457387 },	-- Dwarven Heirloom
 							},
 						}),
 						i(279898),	-- Dwarven Tome
