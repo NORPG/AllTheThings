@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Platform>x64</Platform>
-    <Platforms>x64</Platforms>
+    <Platforms>x64;x86</Platforms>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -14,10 +14,25 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
     <DebugType>full</DebugType>
+    <OutputPath>..\..\.builds\Parser\x64\Debug\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
     <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\.builds\Parser\x86\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
@@ -26,6 +41,6 @@
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="Parser supports only x64 and x86 platforms." />
   </Target>
 </Project>
