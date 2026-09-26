@@ -5,19 +5,17 @@ on:
   # Triggers the workflow on each push event
   push:
     branches:
-      - '**' # Trigger on all branches, including names with slashes
+      - '*' # Trigger on all branches
     tags-ignore:
       - '*' # Ignore all tags
     paths:
       - '.contrib/Parser/**'
-      - '.contrib/Source Code/Parser/**'
       - '.contrib/.db/**'
       - '.github/workflows/Parser.yml'
   # Triggers the workflow on each pull request event
   pull_request:
     paths:
       - '.contrib/Parser/**'
-      - '.contrib/Source Code/Parser/**'
       - '.contrib/.db/**'
       - '.github/workflows/Parser.yml'
   # Allows you to run this workflow manually from the Actions tab
@@ -44,20 +42,9 @@ jobs:
           filters: |
             non_forever:
               - '.contrib/Parser/**'
-              - '.contrib/Source Code/Parser/**'
               - '.contrib/.db/**'
               - '!.contrib/.db/forever/**'
               - '.github/workflows/Parser.yml'
-
-      - name: Add MSBuild to PATH
-        uses: microsoft/setup-msbuild@v3
-
-      - name: Restore NuGet packages and build Parser
-        shell: cmd
-        run: |
-          MSBuild "..\Source Code\Parser\Parser.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64 /m:1 /v:minimal /nologo
-          if errorlevel 1 exit /b 1
-          MSBuild "..\Source Code\Parser\Parser.csproj" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1 /v:minimal /nologo
 
       - parallel:
         - name: Database Parser for Retail
