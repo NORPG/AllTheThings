@@ -568,8 +568,19 @@ FOUNDERS_POINT = 2352;
 RAZORWIND_SHORES = 2351;
 
 -- Midnight
-MAP = {
-	MIDNIGHT = {
+local mapMetatable = {
+	__index = function(t, mapKey)
+		local globalMapID = _G[mapKey];
+		if globalMapID then
+			print("Non-MAP. prefixed map referenced for " .. mapKey .. ". Consider adding it to the MAP namespace.");
+			t[mapKey] = globalMapID;
+			return globalMapID;
+		end
+		error("Unknown map key MAP." .. mapKey .. ". You done messed up, A-aron!");
+	end
+};
+MAP = setmetatable({
+	MIDNIGHT = setmetatable({
 		QUELTHALAS = 2537,
 		ISLE_OF_QUELDANAS = 2424,
 		ISLE_OF_QUELDANAS_SCENARIO = 2432,
@@ -583,8 +594,8 @@ MAP = {
 		THE_COILED_ISLE = 2512;
 		VAULTS_OF_ATALUTEK = 2509;
 		VAULTS_UNDERBELLY = 2613;
-	},
-};
+	}, mapMetatable),
+}, mapMetatable);
 ARCANTINA = 2541;
 
 -- MID Delves

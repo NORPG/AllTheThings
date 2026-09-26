@@ -1,5 +1,16 @@
 -- Map Constants
-MAP = {
+local mapMetatable = {
+	__index = function(t, mapKey)
+		local globalMapID = _G[mapKey];
+		if globalMapID then
+			print("Non-MAP. prefixed map referenced for " .. mapKey .. ". Consider adding it to the MAP namespace.");
+			t[mapKey] = globalMapID;
+			return globalMapID;
+		end
+		error("Unknown map key MAP." .. mapKey .. ". You done messed up, A-aron!");
+	end
+};
+MAP = setmetatable({
 	-- Roots
 	AZEROTH = 947;
 	COSMIC = 947;
@@ -107,7 +118,7 @@ MAP = {
 	MOUNT_HYJAL	= 2482;
 	RIVERGLADES = 2548;
 	SHENDRALAS = 2652;
-};
+}, mapMetatable);
 
 -- Temporary solution forces the map globals to exist.
 for mapConst,mapID in pairs(MAP) do
