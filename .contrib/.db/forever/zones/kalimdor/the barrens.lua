@@ -1923,6 +1923,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			q(98248, {	-- Shipping Label (H)
+				description = "The shipping label appears in your inventory once you seal a waylaid crate for the first time.",
+				qs = 280180,	-- Shipping Label (QS!)
+				qg = 256386,	-- Dokimi <Inventory Intake>
+				coord = { 50.0, 29.2, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 10,
+				groups = {
+					currency(3402),	-- Merchant's Favor x50
+				},
+			}),
 			q(887, {	-- Southsea Freebooters
 				["qg"] = 3391,	-- Gazlowe
 				["coord"] = { 62.68, 36.24, MAP.THE_BARRENS },

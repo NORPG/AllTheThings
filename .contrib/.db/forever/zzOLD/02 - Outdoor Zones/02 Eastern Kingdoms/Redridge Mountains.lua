@@ -439,6 +439,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(98247, {	-- Shipping Label (A)
+					description = "The shipping label appears in your inventory once you seal a waylaid crate for the first time.",
+					qs = 280179,	-- Shipping Label (QS!)
+					qg = 256390,	-- Marcy Baker <Inventory Intake>
+					coord = { 9.6, 71.0, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 10,
+					groups = {
+						currency(3402),	-- Merchant's Favor x50
+					},
+				}),
 				q(91, {	-- Solomon's Law
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 29.6, 44.3, MAP.REDRIDGE_MOUNTAINS },

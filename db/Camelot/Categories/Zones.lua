@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,prof,q,qo,r,s=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
+local ach,ah,crit,cu,exp,faction,flt,fp,h,i,m,mnt,n,o,prof,q,qo,r,s=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.Zones=
 h(-732,{mapID=947,SortPriority=10,g={
 m(1415,{icon=236759,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",["zone-text-continent"]=1,g={
@@ -7327,6 +7327,9 @@ q(115,{coords={
 [1433]={{33.4,49}}},lvl=18,qgs={382},r=2,g={
 qo(1,{coords={
 [1433]={{68.6,57.6}}},crs={436},providers={{"i",1261}}})}}),
+q(98247,{awp=16001,coords={
+[1433]={{9.6,71}}},description="The shipping label appears in your inventory once you seal a waylaid crate for the first time.",lvl=10,qgs={256390},qss={280179},r=2,g={
+cu(3402)}}),
 q(91,{coords={
 [1433]={{29.6,44.3}}},lvl=17,qgs={900},r=2,g={
 qo(1,{crs={429,431,432,433,434,568,579,703,947},providers={{"i",1075}}})}}),
@@ -11494,6 +11497,9 @@ q(4963,{altQuests={4962},c={9},coords={
 [1413]={{62.6,35.2}}},lvl=35,maps={1443},qgs={6252},g={
 qo(1,{coords={
 [1443]={{50,73}}},crs={4676},providers={{"i",12646},{"i",12649}}})}}),
+q(98248,{awp=16001,coords={
+[1413]={{50,29.2}}},description="The shipping label appears in your inventory once you seal a waylaid crate for the first time.",lvl=10,qgs={256386},qss={280180},r=1,g={
+cu(3402)}}),
 q(887,{coords={
 [1413]={{62.68,36.24}}},lvl=9,qgs={3391},g={
 qo(1,{providers={{"n",3381}}}),
