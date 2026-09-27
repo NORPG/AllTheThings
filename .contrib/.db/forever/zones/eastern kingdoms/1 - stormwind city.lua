@@ -423,6 +423,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
+			q(97894, {	-- Business in Auberdine
+				qg = 7232,	-- Borgus Steelhand <Weapon Crafter>
+				coord = { 59.6, 34.2, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
+			}),
 			q(7642, {	-- Collection of Goods
 				["sourceQuest"] = 7641,	-- The Work of Grimand Elmore
 				["qg"] = 1416,	-- Grimand Elmore
@@ -596,6 +604,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
+			q(95065, {	-- Fishin' Time
+				qg = 267118,	-- Gilbert Gray
+				coord = { 26.2, 47.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {
+					{ "i", 6529, 1 },	-- Shiny Bauble
+					{ "i", 6530, 3 },	-- Nightcrawlers
+				},
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+				groups = {
+					i(6290),	-- Brilliant Smallfish
+					i(5095),	-- Rainbow Fin Albacore
+				},
+			}),
 			q(6184, {	-- Flint Shadowmore
 				["sourceQuest"] = 6183,	-- Honor the Dead
 				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -630,6 +653,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["classes"] = { WARLOCK },
 				["isBreadcrumb"] = true,
 				["lvl"] = 20,
+			}),
+			q(97222, {	-- Gatehouse Goods
+				sourceQuest = 97220,	-- Philmor's Favor
+				qg = 483,	-- Elaine Trias <Mistress of Cheese>
+				coord = { 60.4, 63.4, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+				groups = {
+					objective(1, {	-- Gatehouse Shipment delivered
+						provider = { "i", 277198 },	-- Gatehouse Shipment
+						coord = { 66.4, 74.8, MAP.STORMWIND_CITY },
+					}),
+				},
 			}),
 			q(1921, {	-- Gathering Materials
 				["sourceQuest"] = 1920,	-- Investigate the Blue Recluse
@@ -979,6 +1016,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["coord"] = { 58.1, 67.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(97220, {	-- Philmor's Favor
+				qg = 268511,	-- Manifest Clerk Philmor
+				qi = 277119,	-- Gatehouse Shipment (PQI!)
+				coord = { 30.4, 29.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
+			}),
 			q(1940, {	-- Pristine Spider Silk
 				["sourceQuest"] = 1938,	-- Ur's Treatise on Shadow Magic
 				["qg"] = 5694,	-- High Sorcerer Andromath
@@ -996,6 +1041,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						},
 					}),
 				},
+			}),
+			q(97234, {	-- Reading Room
+				qg = 268568,	-- Roy Lewells
+				qi = 277158,	-- Wrapped Reading Material (PQI!)
+				coord = { 38.6, 62.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
 			}),
 			q(2281, {	-- Redridge Rendezvous
 				["sourceQuests"] = {
@@ -1073,6 +1126,45 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
+			}),
+			q(97237, {	-- Shelf Picked
+				sourceQuest = 97234,	-- Reading Room
+				qg = 2504,	-- Donyal Tovald <Librarian>
+				coord = { 75.2, 30.2, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
+				groups = {
+					objective(1, {	-- 0/1 Field Accounts of Horde Razings
+						providers = {
+							{ "i", 277196 },	-- Field Accounts of Horde Razings
+							{ "o", 660731 },	-- Field Accounts of Horde Razings
+						},
+						coord = { 76.1, 31.0, MAP.STORMWIND_CITY },
+					}),
+					objective(2, {	-- 0/1 Trollbane Conquests
+						providers = {
+							{ "i", 277194 },	-- Trollbane Conquests
+							{ "o", 660730 },	-- Trollbane Conquests
+						},
+						coord = { 75.6, 30.5, MAP.STORMWIND_CITY },
+					}),
+					objective(3, {	-- 0/1 The Forsaken Ally
+						providers = {
+							{ "i", 277195 },	-- The Forsaken Ally
+							{ "o", 660729 },	-- The Forsaken Ally
+						},
+						coord = { 76.4, 30.4, MAP.STORMWIND_CITY },
+					}),
+					objective(4, {	-- 0/1 Cycles of Morality
+						providers = {
+							{ "i", 277197 },	-- Cycles of Morality
+							{ "o", 660732 },	-- Cycles of Morality
+						},
+						coord = { 76.3, 29.2, MAP.STORMWIND_CITY },
+					}),
+					i(20709),	-- Rumsey Rum Light
+				},
 			}),
 			q(2206, {	-- Snatch and Grab
 				["sourceQuest"] = 2205,	-- Seek out SI:7
