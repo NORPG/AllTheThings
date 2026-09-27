@@ -779,6 +779,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 				},
 			}),
+			q(91740, {	-- Croaky's Head
+				qs = 247826,	-- Croaky's Head (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
+			}),
 			q(1667, {	-- Dead-tooth Jack
 				sourceQuest = 1666,	-- Marshal Haggard
 				qg = 294,	-- Marshal Haggard
@@ -893,6 +899,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 77.3, 86.8, MAP.ELWYNN_FOREST },
 					}),
 				},
+			}),
+			q(91746, {	-- Elmpaw's Head
+				qs = 247862,	-- Elmpaw's Head (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
 			}),
 			q(1097, {	-- Elmore's Task
 				qgs = {
@@ -1578,6 +1590,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 		n(ZONE_DROPS, {
 			i(769, {	-- Chunk of Boar Meat
 				cr = 113,	-- Stonetusk Boar
+			}),
+			i(247826, {	-- Croaky's Head (QS!)
+				coord = { 76.6, 86.8, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 248278,	-- Croaky
+			}),
+			i(247862, {	-- Elmpaw's Head (QS!)
+				coords = {
+					{ 77.6, 37.8, MAP.ELWYNN_FOREST },
+					{ 81.8, 84.2, MAP.ELWYNN_FOREST },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 248299,	-- Elmpaw
 			}),
 			i(1307, {	-- Gold Pickup Schedule (QS!)
 				crs = {
