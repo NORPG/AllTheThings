@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworks>net48;net8.0</TargetFrameworks>
     <RootNamespace>ATT</RootNamespace>
     <AssemblyName>Parser</AssemblyName>
     <LangVersion>7.3</LangVersion>
@@ -41,6 +41,12 @@
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
     <PlatformTarget>x86</PlatformTarget>
     <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <OutputPath>..\..\.builds\Parser\net8.0\$(Platform)\$(Configuration)\</OutputPath>
+    <RuntimeIdentifier Condition="'$(Platform)' == 'x64'">win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier Condition="'$(Platform)' == 'x86'">win-x86</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Csv" Version="2.0.93" />
