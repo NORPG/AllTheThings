@@ -99,6 +99,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(94611, {	-- Predators and Prey
 					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(95513, {	-- Rattlin' the Reptiles
+					["coord"] = { 65, 38.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(93664, {	-- Rotten Fish
 					["coord"] = { 61.0, 38.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
