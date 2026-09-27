@@ -1,8 +1,26 @@
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
+-- Assignments ideally should use the MAP global. You can sub-assign groupings directly without requiring table assignments first
+-- e.g. MAP.MIDNIGHT.ZONE = ###
 -- The MapID in this file is the UiMapID, see the UiMap in https://warcraft.wiki.gg/wiki/UiMapID.
 -- The MapID in this file should be obtained by the UiMap table, see https://wago.tools/db2/UiMap?build=11.0.7.58238
 -- The UiMapID is widely used in Cata Classic/Retail, almost all dungeons/outdoor areas have UiMapID, but in Classic Era/SoD, only outdoor areas have UiMapID.
 -- Please do not confuse UiMapID with the ID in the Map table, see the Map table in https://wago.tools/db2/Map?build=11.0.7.58238.
+
+MAP = SelfAutoTable({}, function(t, key)
+	-- safety catch for using old map name globals as a MAP identifier without them being converted yet
+	local globalMapID = rawget(_G, key)
+	if globalMapID then
+		print("WARN: Non-MAP. prefixed map referenced for " .. key .. ". Consider adding it to the MAP namespace.");
+		t[key] = globalMapID;
+		return globalMapID;
+	end
+	-- only auto-key string keys
+	if type(key) == "string" then
+		local value = SelfAutoTable()
+		t[key] = value
+		return value
+	end
+end)
 
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
@@ -568,34 +586,19 @@ FOUNDERS_POINT = 2352;
 RAZORWIND_SHORES = 2351;
 
 -- Midnight
-local mapMetatable = {
-	__index = function(t, mapKey)
-		local globalMapID = _G[mapKey];
-		if globalMapID then
-			print("Non-MAP. prefixed map referenced for " .. mapKey .. ". Consider adding it to the MAP namespace.");
-			t[mapKey] = globalMapID;
-			return globalMapID;
-		end
-		error("Unknown map key MAP." .. mapKey .. ". You done messed up, A-aron!");
-	end
-};
-MAP = setmetatable({
-	MIDNIGHT = setmetatable({
-		QUELTHALAS = 2537,
-		ISLE_OF_QUELDANAS = 2424,
-		ISLE_OF_QUELDANAS_SCENARIO = 2432,
-		EVERSONG_WOODS = 2395,
-		SILVERMOON_CITY = 2393,
-		ZULAMAN = 2437,
-		VOIDSTORM = 2405,
-		HARANDAR = 2413,
-		ATAL_AMAN_OUTDOOR = 2536;
-		SLAYERS_RISE_OUTDOOR = 2444;
-		THE_COILED_ISLE = 2512;
-		VAULTS_OF_ATALUTEK = 2509;
-		VAULTS_UNDERBELLY = 2613;
-	}, mapMetatable),
-}, mapMetatable);
+MAP.MIDNIGHT.QUELTHALAS = 2537
+MAP.MIDNIGHT.ISLE_OF_QUELDANAS = 2424
+MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO = 2432
+MAP.MIDNIGHT.EVERSONG_WOODS = 2395
+MAP.MIDNIGHT.SILVERMOON_CITY = 2393
+MAP.MIDNIGHT.ZULAMAN = 2437
+MAP.MIDNIGHT.VOIDSTORM = 2405
+MAP.MIDNIGHT.HARANDAR = 2413
+MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR = 2536
+MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR = 2444
+MAP.MIDNIGHT.THE_COILED_ISLE = 2512
+MAP.MIDNIGHT.VAULTS_OF_ATALUTEK = 2509
+MAP.MIDNIGHT.VAULTS_UNDERBELLY = 2613
 ARCANTINA = 2541;
 
 -- MID Delves

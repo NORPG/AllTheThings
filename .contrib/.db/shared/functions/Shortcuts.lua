@@ -3061,31 +3061,12 @@ end
 
 -- Constants containers
 do
-	local AutoTableMetaFunc
-	--- Wraps a table so missing string keys automatically create nested tables.
-	---@param t table
-	---@return table
-	local function SelfAutoTable(t)
-		return setmetatable(t, { __index = AutoTableMetaFunc })
-	end
-	--- Metatable index function which automatically creates nested tables for string keys.
-	---@param t table
-	---@param key any
-	---@return table|nil
-	AutoTableMetaFunc = function(t, key)
-		-- only auto-key string keys
-		if type(key) == "string" then
-			local value = SelfAutoTable({})
-			t[key] = value
-			return value
-		end
-	end
 	---@type table<string, table>
-	DATAGROUP = SelfAutoTable({})
+	DATAGROUP = SelfAutoTable()
 	---@type table<string, table<string, integer[]>>
-	IDGROUP = SelfAutoTable({})
+	IDGROUP = SelfAutoTable()
 	---@type table<string, table>
-	SYM = SelfAutoTable({})
+	SYM = SelfAutoTable()
 	local symselector = 0
 	--- Returns the next unique symbolic-selector ID.
 	---@return integer

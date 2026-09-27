@@ -10,6 +10,28 @@ IGNORED_VALUE = 'E9B4EEAE-88EA-44F8-B7DF-0831B5F99A44'
 POST_PROCESSING_FUNCTIONS = {};
 SYMLINKS = {}
 
+-- Auto-Metatable handling
+do
+--- Metatable index function which automatically creates nested tables for string keys.
+---@param t table
+---@param key any
+---@return table|nil
+local function AutoTableMetaFunc(t, key)
+	-- only auto-key string keys
+	if type(key) == "string" then
+		local value = SelfAutoTable()
+		t[key] = value
+		return value
+	end
+end
+--- Wraps a table so missing string keys automatically create nested tables.
+---@param t table
+---@return table
+function SelfAutoTable(t, metafunc)
+	return setmetatable(t or {}, { __index = metafunc or AutoTableMetaFunc })
+end
+end
+
 do	-- Database Containers! Super neat things that store persistent data so they don't get wiped out!
 do
 -- The structure of the data is like so:
