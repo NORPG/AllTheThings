@@ -72,33 +72,41 @@ namespace ATT
             {
                 if (_gameFlavors != null) return _gameFlavors;
 
-                _gameFlavors = new List<string> { string.Empty };
-                if (Framework.CURRENT_RELEASE_VERSION < Framework.FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
+                _gameFlavors = new List<string> { };
+                if (Framework.PreProcessorTags.Contains("FOREVER"))
                 {
-                    if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
-                    {
-                        _gameFlavors.Insert(0, "cata");
-                    }
-                    else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
-                    {
-                        _gameFlavors.Insert(0, "wotlk");
-                    }
-                    else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
-                    {
-                        _gameFlavors.Insert(0, "tbc");
-                    }
-                    else
-                    {
-                        _gameFlavors.Insert(0, "classic");
-                    }
+                    _gameFlavors.Insert(0, "forever");
                 }
-                if (Framework.PreProcessorTags.Contains("PTR"))
+                else
                 {
-                    _gameFlavors.Insert(0, "ptr");
-                }
-                if (Framework.PreProcessorTags.Contains("PTR2"))
-                {
-                    _gameFlavors.Insert(0, "ptr-2");
+                    if (Framework.CURRENT_RELEASE_VERSION < Framework.FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
+                    {
+                        if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
+                        {
+                            _gameFlavors.Insert(0, "cata");
+                        }
+                        else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
+                        {
+                            _gameFlavors.Insert(0, "wotlk");
+                        }
+                        else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
+                        {
+                            _gameFlavors.Insert(0, "tbc");
+                        }
+                        else
+                        {
+                            _gameFlavors.Insert(0, "classic");
+                        }
+                    }
+                    else _gameFlavors.Add(string.Empty);
+                    if (Framework.PreProcessorTags.Contains("PTR"))
+                    {
+                        _gameFlavors.Insert(0, "ptr");
+                    }
+                    if (Framework.PreProcessorTags.Contains("PTR2"))
+                    {
+                        _gameFlavors.Insert(0, "ptr-2");
+                    }
                 }
 
                 return _gameFlavors;
