@@ -713,14 +713,17 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(12341, {	-- Blackwood Fruit Sample
 							["provider"] = { "o", 175330 },	-- Blackwood Fruit Stores
 							["coord"] = { 52.91, 33.38, MAP.DARKSHORE },
+							["_allowObjectProvider"] = true,
 						}),
 						i(12342, {	-- Blackwood Grain Sample
 							["provider"] = { "o", 175331 },	-- Blackwood Grain Stores
 							["coord"] = { 50.63, 35.05, MAP.DARKSHORE },
+							["_allowObjectProvider"] = true,
 						}),
 						i(12343, {	-- Blackwood Nut Sample
 							["provider"] = { "o", 175329 },	-- Blackwood Nut Stores
 							["coord"] = { 51.81, 33.43, MAP.DARKSHORE },
+							["_allowObjectProvider"] = true,
 						}),
 						i(15204),	-- Moonstone Wand
 						i(15202),	-- Wildkeeper Leggings

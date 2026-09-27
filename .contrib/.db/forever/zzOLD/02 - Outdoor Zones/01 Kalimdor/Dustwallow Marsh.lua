@@ -556,20 +556,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(11223, {	-- Return to Jaina
-					["sourceQuest"] = 11222,	-- Warn Bolvar! / Proof of Treachery [WRATH+]
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coords"] = {
-						{ 79.8, 38.6, MAP.STORMWIND_CITY },
-					},
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 33,
-					["groups"] = {
-						i(33269),	-- Bejeweled Dagger
-						i(33252),	-- Gleaming Scale Breastplate
-						i(33250),	-- Archer's Wristguard
-					},
-				}),
 				q(1953, {	-- Return to the Marsh
 					["qgs"] = {
 						5885,	-- Deino <Mage Trainer>
@@ -617,13 +603,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(3825),	-- Elixir of Fortitude
 					},
 				},
-				q(11142, {	-- Survey Alcaz Island
-					["sourceQuest"] = 11141,	-- Jaina Must Know
-					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
-					["coord"] = { 66.3, 49.0, MAP.DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 33,
-				}),
 				q(1284, {	-- Suspicious Hoofprints [A]
 					["providers"] = {
 						{ "o", 21015 },	-- Hoofprints

@@ -1857,7 +1857,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
 				["description"] = "Found within the Champion's Hall.",
 				["sym"] = {	-- Grand Marshal Armor
-					{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },
+					SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 					{ "pop" },
 					{ "exclude", "headerID", WEAPONS },
 					{ "exclude", "f", TRINKET_F, NECK_F },
@@ -1866,7 +1866,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
 				["description"] = "Found within the Champion's Hall.",
-				["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS },{ "pop" }},	-- Grand Marshal Weapons
+				["sym"] = {
+					SymSelector.select("CLASSIC_PVP_ALLIANCE"),
+					{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons
+					{ "pop" },
+				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			n(1291, {	-- Carla Granger <Cloth Armor Merchant>

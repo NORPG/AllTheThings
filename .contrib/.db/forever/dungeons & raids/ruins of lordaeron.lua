@@ -92,7 +92,7 @@ root(ROOTS.Instances, {
 					qg = 14450,	-- Orphan Matron Nightingale
 					qi = 251522,	-- Blood-Stained Letter (QS!)
 					coord = { 56.2, 54.2, MAP.STORMWIND_CITY },
-					maps = { MAP.STORMWIND_CITY, MAP.DUSKWOOD },
+					maps = { MAP.DUSKWOOD },
 					races = ALLIANCE_ONLY,
 					lvl = 15,
 					groups = {

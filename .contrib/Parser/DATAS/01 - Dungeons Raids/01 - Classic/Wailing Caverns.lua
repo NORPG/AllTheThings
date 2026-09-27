@@ -259,9 +259,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(SOD_PHASE_ONE, i(209846, {	-- Secrets of the Dreamers
-					["provider"] = { "o", 409692 },	-- Scrolls
+				applyclassicphase(SOD_PHASE_ONE, o(409692, {	-- Scrolls
 					["coord"] = { 52.83, 54.70, THE_BARRENS },
+					["groups"] = {
+						i(209846),	-- Secrets of the Dreamers
+					},
 				})),
 			}),
 			-- #endif

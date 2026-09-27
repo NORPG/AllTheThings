@@ -1031,9 +1031,10 @@ q(1491,{coords={
 qo(1,{crs={3638,3640,5763},providers={{"i",6464}}})}}),
 q(6981,{coords={
 [1413]={{63,37.2}}},providers={{"i",10441}},qgs={3442}})}}),
-h(-56,{
-i(209846,{b=1,coords={
-[1413]={{52.83,54.7}}},providers={{"o",409692}}})}),
+h(-56,{awp=16001,g={
+o(409692,{coords={
+[1413]={{52.83,54.7}}},g={
+i(209846,{b=1})}})}}),
 h(-58,{
 n(5783,{coords={
 [1413]={{45.9,35.7}}},g={
@@ -1588,7 +1589,7 @@ q(8240,{coords={
 [1434]={{14.5,15.8}}},cost={{"i",19709,1},{"i",19714,1},{"i",19707,1},{"i",19712,1},{"i",19710,1},{"i",19711,1},{"i",19715,1},{"i",19713,1},{"i",19708,1}},description="Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",lvl=58,qgs={15070},qis={19707,19708,19710,19711,19712,19713,19714,19715},repeatable=1,u=14,g={
 i(19858,{b=1,spellID=24226,u=14})}}),
 q(8201,{coords={
-[1434]={{15.3,15.5}}},lvl=58,qgs={14910},u=14,g={
+[1434]={{15.3,15.5}}},lvl=58,qgs={14910},qis={19883},u=14,g={
 qo(1,{cost={{"i",19881,5},{"i",19883,1}},providers={{"i",19880}},u=14}),
 s(164252,20216,{b=1,f=5,loc=45,u=14}),
 s(164251,20215,{b=1,f=6,loc=45,u=14}),

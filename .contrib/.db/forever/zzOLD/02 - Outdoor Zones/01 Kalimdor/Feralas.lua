@@ -956,18 +956,22 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(9258, {	-- Byltan Essence
 							["provider"] = { "o", 142185 },	-- Flame of Byltan
 							["coord"] = { 38.5, 15.8, MAP.FERALAS },
+							["_allowObjectProvider"] = true,
 						}),
 						i(9256, {	-- Imbel Essence
 							["provider"] = { "o", 142187 },	-- Flame of Imbel
 							["coord"] = { 39.9, 9.5, MAP.FERALAS },
+							["_allowObjectProvider"] = true,
 						}),
 						i(9255, {	-- Lahassa Essence
 							["provider"] = { "o", 142186 },	-- Flame of Lahassa
 							["coord"] = { 37.8, 12.1, MAP.FERALAS },
+							["_allowObjectProvider"] = true,
 						}),
 						i(9257, {	-- Samha Essence
 							["provider"] = { "o", 142188 },	-- Flame of Samha
 							["coord"] = { 40.6, 12.6, MAP.FERALAS },
+							["_allowObjectProvider"] = true,
 						}),
 					},
 				}),

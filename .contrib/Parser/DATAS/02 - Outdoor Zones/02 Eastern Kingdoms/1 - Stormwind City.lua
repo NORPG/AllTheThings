@@ -5088,7 +5088,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE 3.0.2.8970
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS },{ "pop" }},	-- Grand Marshal Weapons
+					["sym"] = {
+						SymSelector.select("CLASSIC_PVP_ALLIANCE"),
+						{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons
+						{ "pop" },
+					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -6116,12 +6120,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Reagent Vendor.
 					["sym"] = {
 						-- #if ANYCLASSIC
-						{ "sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },	-- Grand Marshal Weapons
+						SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 						-- #if AFTER CATA
-						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },
-						{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR }, { "merge" },
+						{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR }, { "merge" },
 						-- #endif
-						{ "merge" }, { "pop" }, { "where", "headerID", WEAPONS }, { "pop" },
+						{ "pop" }, { "where", "headerID", WEAPONS }, { "pop" },
 						-- #else
 						SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 						{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons

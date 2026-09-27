@@ -172,9 +172,12 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(TREASURES, {
-				i(209846, {	-- Secrets of the Dreamers
-					["provider"] = { "o", 409692 },	-- Scrolls
+				o(409692, {	-- Scrolls
 					["coord"] = { 52.83, 54.70, MAP.THE_BARRENS },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["groups"] = {
+						i(209846),	-- Secrets of the Dreamers
+					},
 				}),
 			}),
 			n(VENDORS, {
