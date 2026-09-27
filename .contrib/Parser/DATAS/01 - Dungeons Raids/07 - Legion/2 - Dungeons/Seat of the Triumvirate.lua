@@ -144,14 +144,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(213015, {	-- Grimoire of the Eredathian Darkglare (CI!)
 						["timeline"] = { ADDED_10_2_5 },
 					}),
-					i(258514, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Umbral Spire of Zuraal
+					i(258514, {["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 }}),	-- Umbral Spire of Zuraal
 				})),
 				cr(122316, e(1980, {	-- Saprish
-					i(258516, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Wand of Saprish's Gaze
+					i(258516, {["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 }}),	-- Wand of Saprish's Gaze
 				})),
 				cr(122056, e(1981, {	-- Viceroy Nezhar
-					i(258524, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Grips of the Dark Viceroy
-					i(258523, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Nezhar's Netherclaw
+					i(258524, {["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 }}),	-- Grips of the Dark Viceroy
+					i(258523, {["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 }}),	-- Nezhar's Netherclaw
 				})),
 				cr(122314, e(1982, {	-- L'ura
 					["crs"] = { 124729 },	-- L'ura
@@ -161,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 							["timeline"] = { ADDED_11_2_7 },
 						}),
 						i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
-						i(258525, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Scepter of the Endless Night
+						i(258525, {["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 }}),	-- Scepter of the Endless Night
 					},
 				})),
 			}),

@@ -57,6 +57,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				2641,	-- Crypt of the Lost Warrior
 				2642,	-- Tomb of the Lost Priest
 			},
+			["cr"] = 265506,	-- Portal to The Coiled Isle
 		}),
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 			m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {

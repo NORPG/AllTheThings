@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(885, {	-- Washte Pawne
 					["provider"] = { "i", 5103 },	-- Washte Pawne's Feather
-					["coord"] = { 44.8, 78.8, MAP.THE_BARRENS },
+					["coord"] = { 44.8, 78.8, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["cr"] = 3472,	-- Washte Pawne

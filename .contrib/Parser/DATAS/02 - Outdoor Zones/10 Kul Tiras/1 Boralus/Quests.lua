@@ -798,6 +798,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(47952, {	-- The Missing Fleet
 				["sourceQuests"] = { 47962 },	-- Stormsong Valley
 				["provider"] = { "n", 121235 },	-- Taelia
+				["coord"] = { 68.1, 22.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(47181, {	-- The Smoking Gun

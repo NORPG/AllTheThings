@@ -255,7 +255,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)
 						},
 					}),
-					i(276548),	-- Tormented Soul
+					i(276548, {	-- Tormented Soul
+						["description"] = "Use before starting your Prey quest to work properly.",
+					}),
 					i(274374, {	-- Trovehunter's Bounty
 						["providers"] = {
 							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)

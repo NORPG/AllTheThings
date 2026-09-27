@@ -763,7 +763,6 @@ root(ROOTS.Unsorted, {
 			i(279141),	-- [ph] SpiceWitch Shoulders 02 - Pink
 			i(279142),	-- Intact Spine Segment
 			i(279143),	-- Elongated Viscera
-			i(279145),	-- Vial of Venom
 			i(279146),	-- Lopped Rattle
 			i(279147),	-- Unrecognizable bone
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue

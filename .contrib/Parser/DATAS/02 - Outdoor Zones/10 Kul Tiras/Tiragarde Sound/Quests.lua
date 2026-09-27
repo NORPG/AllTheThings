@@ -384,7 +384,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49405, {	-- Defenders of Daelin's Gate
 				["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
-				["provider"] = { "n", 128927 },	-- Taelia
+				["provider"] = { "n", 130159 },	-- Taelia
 				["coord"] = { 77.1, 82.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -912,7 +912,21 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.4, 61.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162522),	-- Evermoss Clump (QI!)
+					o(293800, {	-- Evermoss
+						["coords"] = {
+							{ 55.0, 59.2, TIRAGARDE_SOUND },
+							{ 55.2, 60.4, TIRAGARDE_SOUND },
+							{ 55.2, 61.2, TIRAGARDE_SOUND },
+							{ 55.7, 62.0, TIRAGARDE_SOUND },
+							{ 55.9, 59.8, TIRAGARDE_SOUND },
+							{ 56.0, 61.2, TIRAGARDE_SOUND },
+							{ 56.3, 58.4, TIRAGARDE_SOUND },
+							{ 56.3, 58.6, TIRAGARDE_SOUND },
+							{ 57.0, 58.7, TIRAGARDE_SOUND },
+							{ 57.1, 59.6, TIRAGARDE_SOUND },
+						},
+						["groups"] = { i(162522) },	-- Evermoss Clump (QI!)
+					}),
 				},
 			}),
 			q(48366, {	-- Paddle to Safety

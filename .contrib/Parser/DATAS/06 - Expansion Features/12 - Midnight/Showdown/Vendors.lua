@@ -210,6 +210,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						{ 63.7, 21.2, VAL },
 					},
 					["groups"] = {
+						i(268112),	-- Argunite Beacon
+						i(268111),	-- Arkonite Beacon
 						i(276432, {	-- De-Powered Lightforged Siegebreaker (DECOR!)
 							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
 							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },

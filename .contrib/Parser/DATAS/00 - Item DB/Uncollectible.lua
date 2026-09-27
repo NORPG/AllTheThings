@@ -2933,3 +2933,4 @@ i(273288);	-- Sou'jin Soup
 i(278276);	-- Spoils of Azta'rec
 i(279148);	-- Strip of Snake Hide
 i(280184);	-- Sweetsaw Surprise
+i(279145);	-- Vial of Venom
