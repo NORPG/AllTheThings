@@ -578,7 +578,7 @@ local AccountWideDataHandlers = setmetatable({
 		return whiteListedFields[key] and DefaultAccountWideDataHandler or app.EmptyFunction;
 	end,
 });
-if app.GameBuildVersion > 30000 then
+if app.GameBuildVersion > 30000 or app.IsForever then
 	AccountWideDataHandlers.Achievements = PartialSyncCharacterData;
 	AccountWideDataHandlers.BattlePets = PartialSyncCharacterData;
 	AccountWideDataHandlers.Mounts = PartialSyncCharacterData;
@@ -1539,7 +1539,7 @@ local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed
 end
 
 -- Versioning
-if C_TransmogCollection and app.GameBuildVersion >= 40000 then
+if C_TransmogCollection and (app.GameBuildVersion >= 40000 or app.IsForever) then
 	deserializers.Sources = ignoreField;
 	serializers.Sources = ignoreField;
 end
