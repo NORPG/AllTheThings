@@ -1,42 +1,42 @@
-# 在 macOS 建置及執行 Parser 與 CSVCleaner
+# Build and run Parser and CSVCleaner on macOS
 
-## 準備
+## Prerequisites
 
-- 安裝 .NET 8 SDK；執行產物的 Mac 也需要 .NET 8 runtime。可用 `dotnet --list-sdks` 及 `dotnet --list-runtimes` 檢查。
-- Apple Silicon 使用 `MacArm64`，Intel Mac 使用 `MacX64`。以下指令都從儲存庫根目錄執行。
+- Install the .NET 8 SDK. A Mac running the built applications also needs the .NET 8 runtime. Check with `dotnet --list-sdks` and `dotnet --list-runtimes`.
+- Use the `MacArm64` platform on Apple Silicon or `MacX64` on an Intel Mac. Run the following build commands from the repository root.
 
-## 建置
+## Build
 
 ```sh
 dotnet build ".contrib/Source Code/Parser/Parser.sln" -f net8.0 -c Debug -p:Platform=MacArm64
 dotnet build ".contrib/Source Code/Parser/Parser.sln" -f net8.0 -c Release -p:Platform=MacArm64
 ```
 
-`-f net8.0` 讓方案中的 Parser 使用 .NET 8 目標。Intel Mac 將上述指令的 `MacArm64` 改成 `MacX64`，並分別建置 Debug、Release。輸出目錄如下：
+The `-f net8.0` option selects the .NET 8 target for Parser in the solution. On an Intel Mac, replace `MacArm64` with `MacX64` and build both Debug and Release. The output directories are:
 
-| 專案 | MacArm64 輸出目錄 | MacX64 輸出目錄 |
+| Project | MacArm64 output | MacX64 output |
 | --- | --- | --- |
-| Parser | `.contrib/.builds/Parser/net8.0/osx-arm64/<Debug 或 Release>/` | `.contrib/.builds/Parser/net8.0/osx-x64/<Debug 或 Release>/` |
-| CSVCleaner | `.contrib/.builds/CSVCleaner/net8.0/osx-arm64/<Debug 或 Release>/` | `.contrib/.builds/CSVCleaner/net8.0/osx-x64/<Debug 或 Release>/` |
+| Parser | `.contrib/.builds/Parser/net8.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/Parser/net8.0/osx-x64/<Debug or Release>/` |
+| CSVCleaner | `.contrib/.builds/CSVCleaner/net8.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/CSVCleaner/net8.0/osx-x64/<Debug or Release>/` |
 
-兩個專案都依賴已安裝的 .NET 8 runtime；執行時須保留各自輸出目錄的執行檔、DLL 與 runtime 設定。Parser 還需要相依組件及 `liblua54.dylib`。
+Both projects use the installed .NET 8 runtime. Keep each application's executable, DLL, and runtime configuration files together in its output directory. Parser also needs its dependency assemblies and `liblua54.dylib`.
 
-目前 Parser 的資料合併順序會受 .NET 可見的處理器數影響。以下執行指令設定 `DOTNET_PROCESSOR_COUNT=4`，讓這次驗證的 8 個版本在 macOS Debug、Release 產生一致內容，並與既有 Windows 輸出維持相同資料值。省略此設定仍可執行，但少數重複資料的合併結果可能不同；後續應在程式中明確定義合併順序。
+Parser's data merge order currently depends on the processor count visible to .NET. The command below sets `DOTNET_PROCESSOR_COUNT=4` so the eight versions checked in this migration produce consistent output across macOS Debug and Release, while retaining the same data values as the existing Windows output. Parser still runs without this setting, but the merge result for a few duplicate records may differ. A future code change should define the merge order explicitly.
 
-## 執行 Retail
+## Run Retail
 
-Parser 會從目前工作目錄讀取設定與資料，因此先切換至 `.contrib/Parser`，再執行剛建置的程式：
+Parser reads settings and data relative to its working directory. Change to `.contrib/Parser` before running the built application:
 
 ```sh
 cd .contrib/Parser
 DOTNET_PROCESSOR_COUNT=4 ../.builds/Parser/net8.0/osx-arm64/Release/Parser auto baseconfig=.config/retail/retail.config
 ```
 
-Intel Mac 將執行檔路徑中的 `osx-arm64` 改成 `osx-x64`；Debug 建置則將 `Release` 改成 `Debug`。
+On an Intel Mac, replace `osx-arm64` with `osx-x64` in the executable path. For a Debug build, replace `Release` with `Debug`.
 
-## 執行 CSVCleaner
+## Run CSVCleaner
 
-CSVCleaner 需要依序傳入 CSV 檔與正規表示式檔，並會直接覆寫傳入的 CSV。以下範例先複製一份資料再清理：
+CSVCleaner takes a CSV file followed by a file containing the allowed-line regular expressions. It overwrites the CSV file, so this example cleans a copy:
 
 ```sh
 cleaner_tmp=$(mktemp -d)
@@ -44,4 +44,4 @@ cp ".contrib/.wago/12 - Midnight/ItemBonus.12.1.0.69933.csv" "$cleaner_tmp/ItemB
 ".contrib/.builds/CSVCleaner/net8.0/osx-arm64/Release/CSVCleaner" "$cleaner_tmp/ItemBonus.csv" ".contrib/.wago/ItemBonus.regex"
 ```
 
-Intel Mac 將執行檔路徑中的 `osx-arm64` 改成 `osx-x64`；Debug 建置則將 `Release` 改成 `Debug`。Windows 的方案組態、現有發佈產物與 CI 流程維持原設定。
+On an Intel Mac, replace `osx-arm64` with `osx-x64` in the executable path. For a Debug build, replace `Release` with `Debug`. The Windows solution configurations, existing release artifacts, and CI workflow retain their current settings.
