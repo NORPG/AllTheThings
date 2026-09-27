@@ -540,6 +540,164 @@ s(158721,6910,{f=4,loc=46}),
 s(158722,6911,{f=5,loc=45}),
 s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
+inst(231,{coords={
+[1426]={{18.4,38.6}}},lore="Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",lvl=19,mapID=226,["zone-text-areaID"]=133,g={
+h(-63,{
+s(159404,9510,{crs={6228,6235,7079,7800},f=6,loc=47}),
+i(5108,{crs={6212},f=5,loc=42,lvl=27}),
+s(159399,9490,{crs={6206,6207,6212,6220,6222,6223,6225,6226,6227,6230,6232,6233,6234,6329,7603},f=26}),
+i(9308),
+i(9326,{b=1,crs={6212},lvl=28}),
+s(159398,9489,{crs={6212,6220,6227,6230,6232,6233,6234,7603},f=27}),
+s(159396,9487,{crs={6206,6207,6211,6212,6220,6223,6230,6232,6233,6234,6329,6391,7603},f=31}),
+s(159400,9491,{f=4,loc=44}),
+s(159402,9508,{crs={6212,6223,6230,6232,6233,6234},f=4,loc=42}),
+s(159397,9488,{crs={6206,6207,6211,6212,6223,6225,6226,6227,6230,6232,6233,6234,6329,7603},f=23}),
+s(159403,9509,{crs={6206,6207,6212,6218,6220,6223,6227,6230,6232,6233,6234,6329,6391,7603},f=5,loc=46,spellID=1293003}),
+i(9309,{description="These can drop from any mechanical unit in Gnomeregan.",r=2}),
+s(159395,9486,{crs={6206,6207,6211,6212,6220,6223,6224,6225,6227,6230,6232,6233,6234,6329,6392},f=22}),
+s(159394,9485,{crs={6206,6207,6212,6220,6223,6226,6227,6230,6232,6233,6234,6329,7603},f=21}),
+i(9279,{b=1,description="This can be looted from creatures outside of the instance.",rwp=50004})}),
+h(-45,{
+ah(142487,{type="o",g={
+q(2951,{cost={{"i",9308,1}},providers={{"o",142487}}}),
+q(4601,{cost={{"i",9308,1}},providers={{"o",15084}}}),
+q(4602,{cost={{"i",9308,1}},providers={{"o",15085}}}),
+q(2952,{cost={{"i",9308,1}},providers={{"o",142487}},sourceQuests={2951},g={
+i(9363,{b=1})}}),
+q(4605,{cost={{"i",9308,1}},providers={{"o",15084}},sourceQuests={4601},g={
+i(9363,{b=1})}}),
+q(4606,{cost={{"i",9308,1}},providers={{"o",15085}},sourceQuests={4602},g={
+i(9363,{b=1})}}),
+q(2953,{cost={{"i",9308,1}},providers={{"o",142487}},repeatable=1,sourceQuests={2952},g={
+i(9363,{b=1})}}),
+q(4603,{cost={{"i",9308,1}},providers={{"o",15084}},repeatable=1,sourceQuests={4605},g={
+i(9363,{b=1})}}),
+q(4604,{cost={{"i",9308,1}},providers={{"o",15085}},repeatable=1,sourceQuests={4606},g={
+i(9363,{b=1})}})}}),
+q(2904,{lvl=20,maps={1434},qgs={7850},g={
+s(159421,9536,{f=4,loc=41}),
+s(159420,9535,{f=6,loc=43})}}),
+q(2931,{coords={
+[1442]={{59.6,67}}},isBreadcrumb=1,lvl=25,nextQuests={2930},qgs={4077},r=2}),
+q(2842,{coords={
+[1454]={{75.6,25.2}}},description="Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",lvl=20,maps={1434},qgs={3413},r=1}),
+q(2930,{coords={
+[1455]={{70.2,48.4}}},lvl=25,qgs={7950},r=2,sourceQuests={2931},g={
+qo(1,{providers={{"i",9316}}}),
+s(159427,9604,{f=24}),
+s(159428,9605,{f=3})}}),
+q(2924,{coords={
+[1455]={{68.2,46.2}}},lvl=24,qgs={6169},r=2,sourceQuests={2925},g={
+qo(1,{description="These are scattered throughout the instance. They are loud mechanical mailboxes.",providers={{"i",9278},{"o",142344}}})}}),
+q(2926,{coords={
+[1426]={{45.8,49.2}}},lvl=20,qgs={1268},r=2,sourceQuests={2927},g={
+qo(1,{cost={{"i",9283,1}},crs={6329},providers={{"i",9284}}})}}),
+q(2948,{coords={
+[1455]={{36.2,3.8}}},cost={{"i",1206,1},{"i",2842,1},{"i",9362,1},{"g",3000}},lvl=28,qgs={6826},r=2,sourceQuests={2947},g={
+i(9538,{f=52})}}),
+q(2843,{coords={
+[1434]={{27.6,77.4}}},lvl=20,qgs={7853},r=1,sourceQuests={2842},g={
+i(9173,{description="You do not need to keep this in your inventory. You can simply discard it after transporting. To get another one, simply speak to Scooty again and tell him that you lost the first one."})}}),
+q(2945,{description="Take this to The Sparklematic 5200.",lvl=24,qss={9326},g={
+i(9362,{b=1,f=52})}}),
+q(2928,{coords={
+[1453]={{62.8,34.8}}},lvl=20,qgs={6579},r=2,g={
+qo(1,{providers={{"i",9309}}}),
+s(159430,9608,{b=1,f=21}),
+s(159431,9609,{b=1,f=4,loc=44}),
+s(304897,270045,{awp=16001,b=1,f=5,loc=44})}}),
+q(2925,{coords={
+[1457]={{59.2,45.2}}},isBreadcrumb=1,lvl=24,nextQuests={2924},qgs={6142},r=2}),
+q(2950,{coords={
+[1454]={{75.8,25.2}}},cost={{"i",1206,1},{"i",2842,1},{"i",9362,1},{"g",3000}},lvl=28,qgs={3412},r=1,sourceQuests={2949},g={
+i(9588,{f=52})}}),
+q(2947,{lvl=28,maps={1455},providers={{"o",142487}},r=2,sourceQuests={2945},g={
+i(9362,{b=1,f=52})}}),
+q(2949,{lvl=28,maps={1454},providers={{"o",142487}},r=1,sourceQuests={2945},g={
+i(9362,{b=1,f=52})}}),
+q(2841,{coords={
+[1454]={{75.8,25.2}}},lc={1,"questID",2842},lvl=25,qgs={3412},r=1,g={
+qo(1,{providers={{"i",9153},{"o",142477}}}),
+qo(2,{crs={7800},providers={{"i",9299}}}),
+s(159432,9623,{f=4,loc=42}),
+s(159434,9625,{f=6,loc=46}),
+s(159433,9624,{f=5,loc=46})}}),
+q(2922,{coords={
+[1455]={{70.4,49.4}}},lvl=20,qgs={7944},r=2,sourceQuests={2923},g={
+qo(1,{providers={{"i",9277}}})}}),
+q(2927,{coords={
+[1455]={{69.6,50.6}}},isBreadcrumb=1,lvl=20,nextQuests={2926},qgs={6569},r=2}),
+q(2929,{coords={
+[1455]={{69.2,49.2}}},lvl=25,qgs={7937},r=2,g={
+qo(1,{providers={{"n",7800}}}),
+s(159432,9623,{f=4,loc=42}),
+s(159434,9625,{f=6,loc=46}),
+s(159433,9624,{f=5,loc=46})}}),
+q(2962,{coords={
+[1426]={{45.8,49.2}}},lvl=20,qgs={1268},r=2,sourceQuests={2926},g={
+qo(1,{cost={{"i",9364,1}},crs={6219},providers={{"i",9365}}})}}),
+q(2923,{coords={
+[1453]={{51.6,48.6}}},isBreadcrumb=1,lvl=20,maps={1455},nextQuests={2922},qgs={7917},r=2})}),
+h(-47,{
+ah(9363,{description="Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",providers={{"i",9363}},type="i",g={
+i(9280),
+i(10299,{b=1,f=51,lvl=26}),
+i(10298,{b=1,f=52,lvl=25})}})}),
+o(142345,{cost={{"i",9279,1}},description="This is located outside of the instance just to the north of both the elevator or the transporter.",rwp=50004,g={
+i(9280)}}),
+n(6231,{description="Located outside the instance near the teleporter.",g={
+i(9277),
+s(159364,9444,{f=8,lvl=21})}}),
+e(419,{npcID=7361,g={
+s(159365,9445,{f=6,loc=44})}}),
+o(142475,{cost={{"i",9280,1}},description="This is located in the bottom of the Dormitories.",g={
+i(9282),
+r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,requireSkill=202})}}),
+o(142476,{cost={{"i",9282,1}},description="This is located at the bottom of the platform in the Engineering Labs.",g={
+i(9281)}}),
+e(420,{npcID=7079,g={
+s(159370,9452,{f=28,spellID=11789}),
+s(159371,9453,{f=20}),
+s(159372,9454,{f=4,loc=47})}}),
+e(421,{npcID=6235,g={
+i(6893,{b=1,description="This key allows you to get into the back door of Gnomeregan.",spellID=3366}),
+s(159366,9446,{f=25}),
+s(159367,9448,{f=4,loc=43}),
+i(9447,{f=52})}}),
+o(142696,{cost={{"i",9281,1}},description="This is located in the Workshop below Crowd Pummeler.",g={
+i(9316),
+r(3959,{description="If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",itemID=4413,providers={{"i",9327}},requireSkill=202})}}),
+e(418,{npcID=6229,g={
+s(159368,9449,{b=1,f=24,lvl=29,spellID=13494}),
+s(159369,9450,{f=5,loc=47})}}),
+n(6228,{description="This is a Rare Creature and, as such, is not always present.",g={
+i(5108,{f=5,loc=42,lvl=27}),
+s(159374,9456,{f=31}),
+s(159375,9457,{f=23}),
+s(159373,9455,{f=5,loc=43})}}),
+e(422,{npcID=7800,g={
+s(159377,9459,{f=22}),
+s(159376,9458,{f=8,spellID=1292880}),
+s(159401,9492,{f=4,loc=40,spellID=11826}),
+i(9461,{f=52}),
+r(3966,{itemID=4415,requireSkill=202}),
+r(3959,{itemID=4413,requireSkill=202}),
+r(8339,{itemID=6716}),
+r(3944,{itemID=4411,requireSkill=202}),
+r(8243,{itemID=6672,requireSkill=202}),
+r(3971,{b=1,itemID=7742,requireSkill=202}),
+r(9269,{b=1,itemID=7560,requireSkill=202}),
+r(9273,{b=1,itemID=7561,requireSkill=202}),
+r(3968,{itemID=4416,requireSkill=202}),
+i(7192,{f=200,requireSkill=202}),
+r(3972,{itemID=4417,requireSkill=202}),
+r(3928,{itemID=4408,requireSkill=202}),
+r(3954,{itemID=4412,requireSkill=202}),
+r(3960,{itemID=4414,requireSkill=202}),
+r(3940,{itemID=4410,requireSkill=202}),
+r(3933,{itemID=4409,requireSkill=202}),
+crit(18529,{achID=62032,awp=16001,id=3})}})}}),
 inst(226,{coords={
 [1454]={{50.6,51.6}}},icon=136350,lore="Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",lvl=13,mapID=213,["zone-text-areaID"]=2437,g={
 h(-45,{
@@ -4247,164 +4405,6 @@ s(163496,18375,{f=5,loc=43,u=1101}),
 s(163501,18380,{f=7,loc=46,u=1101}),
 s(163499,18378,{f=6,loc=46,u=1101}),
 i(18395,{f=52,u=1101})}})}})}}),
-inst(231,{coords={
-[1426]={{18.4,38.6}}},lore="Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",lvl=19,mapID=226,["zone-text-areaID"]=133,g={
-h(-63,{
-s(159404,9510,{crs={6228,6235,7079,7800},f=6,loc=47}),
-i(5108,{crs={6212},f=5,loc=42,lvl=27}),
-s(159399,9490,{crs={6206,6207,6212,6220,6222,6223,6225,6226,6227,6230,6232,6233,6234,6329,7603},f=26}),
-i(9308),
-i(9326,{b=1,crs={6212},lvl=28}),
-s(159398,9489,{crs={6212,6220,6227,6230,6232,6233,6234,7603},f=27}),
-s(159396,9487,{crs={6206,6207,6211,6212,6220,6223,6230,6232,6233,6234,6329,6391,7603},f=31}),
-s(159400,9491,{f=4,loc=44}),
-s(159402,9508,{crs={6212,6223,6230,6232,6233,6234},f=4,loc=42}),
-s(159397,9488,{crs={6206,6207,6211,6212,6223,6225,6226,6227,6230,6232,6233,6234,6329,7603},f=23}),
-s(159403,9509,{crs={6206,6207,6212,6218,6220,6223,6227,6230,6232,6233,6234,6329,6391,7603},f=5,loc=46,spellID=1293003}),
-i(9309,{description="These can drop from any mechanical unit in Gnomeregan.",r=2}),
-s(159395,9486,{crs={6206,6207,6211,6212,6220,6223,6224,6225,6227,6230,6232,6233,6234,6329,6392},f=22}),
-s(159394,9485,{crs={6206,6207,6212,6220,6223,6226,6227,6230,6232,6233,6234,6329,7603},f=21}),
-i(9279,{b=1,description="This can be looted from creatures outside of the instance.",rwp=50004})}),
-h(-45,{
-ah(142487,{type="o",g={
-q(2951,{cost={{"i",9308,1}},providers={{"o",142487}}}),
-q(4601,{cost={{"i",9308,1}},providers={{"o",15084}}}),
-q(4602,{cost={{"i",9308,1}},providers={{"o",15085}}}),
-q(2952,{cost={{"i",9308,1}},providers={{"o",142487}},sourceQuests={2951},g={
-i(9363,{b=1})}}),
-q(4605,{cost={{"i",9308,1}},providers={{"o",15084}},sourceQuests={4601},g={
-i(9363,{b=1})}}),
-q(4606,{cost={{"i",9308,1}},providers={{"o",15085}},sourceQuests={4602},g={
-i(9363,{b=1})}}),
-q(2953,{cost={{"i",9308,1}},providers={{"o",142487}},repeatable=1,sourceQuests={2952},g={
-i(9363,{b=1})}}),
-q(4603,{cost={{"i",9308,1}},providers={{"o",15084}},repeatable=1,sourceQuests={4605},g={
-i(9363,{b=1})}}),
-q(4604,{cost={{"i",9308,1}},providers={{"o",15085}},repeatable=1,sourceQuests={4606},g={
-i(9363,{b=1})}})}}),
-q(2904,{lvl=20,maps={1434},qgs={7850},rwp=40003,g={
-s(159421,9536,{f=4,loc=41}),
-s(159420,9535,{f=6,loc=43})}}),
-q(2931,{coords={
-[1442]={{59.6,67}}},isBreadcrumb=1,lvl=25,nextQuests={2930},qgs={4077},r=2,rwp=40003}),
-q(2842,{coords={
-[1454]={{75.6,25.2}}},description="Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",lvl=20,maps={1434},qgs={3413},r=1,rwp=40003}),
-q(2930,{coords={
-[1455]={{70.2,48.4}}},lvl=25,qgs={7950},r=2,rwp=40003,sourceQuests={2931},g={
-qo(1,{providers={{"i",9316}}}),
-s(159427,9604,{f=24}),
-s(159428,9605,{f=3})}}),
-q(2924,{coords={
-[1455]={{68.2,46.2}}},lvl=24,qgs={6169},r=2,rwp=40003,sourceQuests={2925},g={
-qo(1,{description="These are scattered throughout the instance. They are loud mechanical mailboxes.",providers={{"i",9278},{"o",142344}}})}}),
-q(2926,{coords={
-[1426]={{45.8,49.2}}},lvl=20,qgs={1268},r=2,sourceQuests={2927},g={
-qo(1,{cost={{"i",9283,1}},crs={6329},providers={{"i",9284}}})}}),
-q(2948,{coords={
-[1455]={{36.2,3.8}}},cost={{"i",1206,1},{"i",2842,1},{"i",9362,1},{"g",3000}},lvl=28,qgs={6826},r=2,sourceQuests={2947},g={
-i(9538,{f=52})}}),
-q(2843,{coords={
-[1434]={{27.6,77.4}}},lvl=20,qgs={7853},r=1,rwp=40003,sourceQuests={2842},g={
-i(9173,{description="You do not need to keep this in your inventory. You can simply discard it after transporting. To get another one, simply speak to Scooty again and tell him that you lost the first one."})}}),
-q(2945,{description="Take this to The Sparklematic 5200.",lvl=24,qss={9326},g={
-i(9362,{b=1,f=52})}}),
-q(2928,{coords={
-[1453]={{55.5,12.5}}},lvl=20,qgs={6579},r=2,rwp=40003,g={
-qo(1,{providers={{"i",9309}}}),
-s(159430,9608,{b=1,f=21}),
-s(159431,9609,{b=1,f=4,loc=44})}}),
-q(2925,{coords={
-[1457]={{59.2,45.2}}},isBreadcrumb=1,lvl=24,nextQuests={2924},qgs={6142},r=2,rwp=40003}),
-q(2950,{coords={
-[1454]={{75.8,25.2}}},cost={{"i",1206,1},{"i",2842,1},{"i",9362,1},{"g",3000}},lvl=28,qgs={3412},r=1,sourceQuests={2949},g={
-i(9588,{f=52})}}),
-q(2947,{lvl=28,maps={1455},providers={{"o",142487}},r=2,sourceQuests={2945},g={
-i(9362,{b=1,f=52})}}),
-q(2949,{lvl=28,maps={1454},providers={{"o",142487}},r=1,sourceQuests={2945},g={
-i(9362,{b=1,f=52})}}),
-q(2841,{coords={
-[1454]={{75.8,25.2}}},lc={1,"questID",2842},lvl=25,qgs={3412},r=1,rwp=40003,g={
-qo(1,{providers={{"i",9153},{"o",142477}}}),
-qo(2,{crs={7800},providers={{"i",9299}}}),
-s(159432,9623,{f=4,loc=42}),
-s(159434,9625,{f=6,loc=46}),
-s(159433,9624,{f=5,loc=46})}}),
-q(2922,{coords={
-[1455]={{70.4,49.4}}},lvl=20,qgs={7944},r=2,rwp=40003,sourceQuests={2923},g={
-qo(1,{providers={{"i",9277}}})}}),
-q(2927,{coords={
-[1455]={{69.6,50.6}}},isBreadcrumb=1,lvl=20,nextQuests={2926},qgs={6569},r=2,rwp=40003}),
-q(2929,{coords={
-[1455]={{69.2,49.2}}},lvl=25,qgs={7937},r=2,rwp=40003,g={
-qo(1,{providers={{"n",7800}}}),
-s(159432,9623,{f=4,loc=42}),
-s(159434,9625,{f=6,loc=46}),
-s(159433,9624,{f=5,loc=46})}}),
-q(2962,{coords={
-[1426]={{45.8,49.2}}},lvl=20,qgs={1268},r=2,rwp=40003,sourceQuests={2926},g={
-qo(1,{cost={{"i",9364,1}},crs={6219},providers={{"i",9365}}})}}),
-q(2923,{coords={
-[1453]={{40.6,30}}},isBreadcrumb=1,lvl=20,maps={1455},nextQuests={2922},qgs={7917},r=2,rwp=40003})}),
-h(-47,{
-ah(9363,{description="Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",providers={{"i",9363}},type="i",g={
-i(9280),
-i(10299,{b=1,f=51,lvl=26}),
-i(10298,{b=1,f=52,lvl=25})}})}),
-o(142345,{cost={{"i",9279,1}},description="This is located outside of the instance just to the north of both the elevator or the transporter.",rwp=50004,g={
-i(9280)}}),
-n(6231,{description="Located outside the instance near the teleporter.",rwp=40003,g={
-i(9277),
-s(159364,9444,{f=8,lvl=21})}}),
-e(419,{npcID=7361,g={
-s(159365,9445,{f=6,loc=44})}}),
-o(142475,{cost={{"i",9280,1}},description="This is located in the bottom of the Dormitories.",g={
-i(9282),
-r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,requireSkill=202})}}),
-o(142476,{cost={{"i",9282,1}},description="This is located at the bottom of the platform in the Engineering Labs.",g={
-i(9281)}}),
-e(420,{npcID=7079,g={
-s(159370,9452,{f=28,spellID=11789}),
-s(159371,9453,{f=20}),
-s(159372,9454,{f=4,loc=47})}}),
-e(421,{npcID=6235,g={
-i(6893,{b=1,description="This key allows you to get into the back door of Gnomeregan.",spellID=3366}),
-s(159366,9446,{f=25}),
-s(159367,9448,{f=4,loc=43}),
-i(9447,{f=52})}}),
-o(142696,{cost={{"i",9281,1}},description="This is located in the Workshop below Crowd Pummeler.",g={
-i(9316),
-r(3959,{description="If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",itemID=4413,providers={{"i",9327}},requireSkill=202})}}),
-e(418,{npcID=6229,g={
-s(159368,9449,{b=1,f=24,lvl=29,spellID=13494}),
-s(159369,9450,{f=5,loc=47})}}),
-n(6228,{description="This is a Rare Creature and, as such, is not always present.",g={
-i(5108,{f=5,loc=42,lvl=27}),
-s(159374,9456,{f=31}),
-s(159375,9457,{f=23}),
-s(159373,9455,{f=5,loc=43})}}),
-e(422,{npcID=7800,g={
-ach(634),
-s(159377,9459,{f=22}),
-s(159376,9458,{f=8,spellID=1292880}),
-s(159401,9492,{f=4,loc=40,spellID=11826}),
-i(9461,{f=52}),
-r(3966,{itemID=4415,requireSkill=202}),
-r(3959,{itemID=4413,requireSkill=202}),
-r(8339,{itemID=6716}),
-r(3944,{itemID=4411,requireSkill=202}),
-r(8243,{itemID=6672,requireSkill=202}),
-r(3971,{b=1,itemID=7742,requireSkill=202}),
-r(9269,{b=1,itemID=7560,requireSkill=202}),
-r(9273,{b=1,itemID=7561,requireSkill=202}),
-r(3968,{itemID=4416,requireSkill=202}),
-i(7192,{f=200,requireSkill=202,rwp=30002}),
-r(3972,{itemID=4417,requireSkill=202}),
-r(3928,{itemID=4408,requireSkill=202}),
-r(3954,{itemID=4412,requireSkill=202}),
-r(3960,{itemID=4414,requireSkill=202}),
-r(3940,{itemID=4410,requireSkill=202}),
-r(3933,{itemID=4409,requireSkill=202}),
-crit(18529,{achID=62032,awp=16001,id=3})}})}}),
 inst(232,{coords={
 [1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,["zone-text-areaID"]=2100,g={
 h(-45,{
