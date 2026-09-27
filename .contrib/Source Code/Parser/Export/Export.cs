@@ -182,6 +182,10 @@ namespace ATT
         /// <returns>The english-formatted string.</returns>
         public static string ToString(object data)
         {
+#if NET8_0_OR_GREATER
+            if (data is float single) return single.ToString("G7", CultureInfo.InvariantCulture);
+            if (data is double number) return number.ToString("G15", CultureInfo.InvariantCulture);
+#endif
             return Convert.ToString(data, CultureInfo.InvariantCulture);
         }
     }
