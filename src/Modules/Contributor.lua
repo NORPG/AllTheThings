@@ -2825,6 +2825,7 @@ MobileDB.GameObject = {
 	[413246] = true,	-- Elemental Silt Mound
 	[413563] = true,	-- Heavy Trunk (archival assault)
 	[413590] = true,	-- Bountiful Coffer
+	[413874] = true,	-- Rich Bismuth
 	[413875] = true,	-- Rich Aqirite
 	[414080] = true,	-- Molten Treatise Vol. 2
 	[414082] = true,	-- Molten Treatise Vol. 4
@@ -3806,7 +3807,9 @@ local function OnPLAYER_SOFT_INTERACT_CHANGED(previousGuid, newGuid)
 	-- only check object soft-interact (for now)
 	if guidtype ~= "GameObject" then return end
 
-	local objRef = SearchForObject("objectID", id, "field") or SearchForObject("objectID", id)
+	-- commenting out the fallback search for now
+	-- don't really see a reason this logic should run on 'items' or anything else marked with an object provider
+	local objRef = SearchForObject("objectID", id, "field") -- or SearchForObject("objectID", id)
 	-- only check sourced objects
 	if not objRef then return end
 	-- app.PrintDebug("GameObject",app:SearchLink(objRef))
