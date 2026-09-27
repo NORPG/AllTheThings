@@ -463,7 +463,7 @@ namespace ATT
                     foreach (var fileName in luaFiles)
                     {
                         if (Errored) break;
-                        if (!fileName.Contains("\\.config\\")) continue;
+                        if (!fileName.Contains($"{Path.DirectorySeparatorChar}.config{Path.DirectorySeparatorChar}")) continue;
                         ParseLUAFile(lua, fileName);
                     }
                 }
@@ -523,7 +523,7 @@ namespace ATT
                 foreach (var fileName in luaFiles)
                 {
                     if (Errored) break;
-                    if (fileName.Contains("\\.config\\")) continue;
+                    if (fileName.Contains($"{Path.DirectorySeparatorChar}.config{Path.DirectorySeparatorChar}")) continue;
                     ParseLUAFile(lua, fileName);
                 }
 
@@ -865,7 +865,8 @@ namespace ATT
         {
             // Attempt to parse a command that initiates a command block.
             int newLineIndex = content.IndexOf('\n', index += 4);
-            var command = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim().ToUpper().Split(' ');
+            var originalCommand = content.Substring(index, (newLineIndex > 0 ? newLineIndex : length) - index).Trim();
+            var command = originalCommand.ToUpper().Split(' ');
             index = newLineIndex;
             switch (command[0])
             {
@@ -881,7 +882,7 @@ namespace ATT
                     break;
                 case "IMPORT:":
                     // This is an IMPORT command. It indicates that a Live DB file should be loaded.
-                    ProcessImportCommand(command, builder, content, ref index, length);
+                    ProcessImportCommand(Path.DirectorySeparatorChar == '\\' ? command : originalCommand.Split(' '), builder, content, ref index, length);
                     break;
                 default:
                     throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'\nNear Index {index}:\n{content.Substring(Math.Max(0, index - 15), Math.Min(index, 15))}");
@@ -977,7 +978,9 @@ namespace ATT
             builder.Append("-- ").Append(shortname).AppendLine();
 
             // Are we already using the Retail DB?
-            string filename = ".\\DATAS\\" + shortname;
+            string filename = Path.DirectorySeparatorChar == '\\'
+                ? ".\\DATAS\\" + shortname
+                : Path.Combine(".", "DATAS", shortname.Replace('\\', '/'));
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;
