@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 
-if (args.Length == 0)
+if (args.Length < 2)
 {
-    Trace.WriteLine("[0] => CSV File to Clean | [1] => File containing Regex line(s) for allowed CSV lines");
-    Console.ReadKey();
+    Console.Error.WriteLine("[0] => CSV File to Clean | [1] => File containing Regex line(s) for allowed CSV lines");
+    if (!Console.IsInputRedirected) Console.ReadKey();
     return -1;
 }
 
@@ -21,8 +21,8 @@ string regexFile = args[1];
 
 if (!File.Exists(filepath) || !File.Exists(regexFile))
 {
-    Trace.WriteLine("[0] => CSV File to Clean | [1] => File containing Regex line(s) for allowed CSV lines");
-    Console.ReadKey();
+    Console.Error.WriteLine("[0] => CSV File to Clean | [1] => File containing Regex line(s) for allowed CSV lines");
+    if (!Console.IsInputRedirected) Console.ReadKey();
     return -1;
 }
 
