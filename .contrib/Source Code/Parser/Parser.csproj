@@ -10,7 +10,7 @@
     <StartupObject>ATT.Program</StartupObject>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <FileAlignment>512</FileAlignment>
-    <Platforms>x86;x64</Platforms>
+    <Platforms>x86;x64;MacArm64;MacX64</Platforms>
     <Platform>x64</Platform>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
@@ -48,7 +48,25 @@
     <RuntimeIdentifier Condition="'$(Platform)' == 'x86'">win-x86</RuntimeIdentifier>
     <SelfContained>false</SelfContained>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0' and '$(Platform)' == 'MacArm64'">
+    <OutputPath>..\..\.builds\Parser\net8.0\osx-arm64\$(Configuration)\</OutputPath>
+    <RuntimeIdentifier>osx-arm64</RuntimeIdentifier>
+    <PlatformTarget>arm64</PlatformTarget>
+    <DefineConstants Condition="'$(Configuration)' == 'Debug'">TRACE;DEBUG;RETAIL;TWW</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)' == 'Release'">TRACE;RETAIL;TWW</DefineConstants>
+    <Optimize Condition="'$(Configuration)' == 'Release'">true</Optimize>
+    <Optimize Condition="'$(Configuration)' == 'Debug'">false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0' and '$(Platform)' == 'MacX64'">
+    <OutputPath>..\..\.builds\Parser\net8.0\osx-x64\$(Configuration)\</OutputPath>
+    <RuntimeIdentifier>osx-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants Condition="'$(Configuration)' == 'Debug'">TRACE;DEBUG;RETAIL;TWW</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)' == 'Release'">TRACE;RETAIL;TWW</DefineConstants>
+    <Optimize Condition="'$(Configuration)' == 'Release'">true</Optimize>
+    <Optimize Condition="'$(Configuration)' == 'Debug'">false</Optimize>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0' and ('$(RuntimeIdentifier)' == 'win-x64' or '$(RuntimeIdentifier)' == 'win-x86')">
     <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +75,8 @@
     <PackageReference Include="NLua" Version="1.7.9" />
   </ItemGroup>
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="Parser supports only the x64 and x86 platforms. Select one in Parser.sln." />
+    <Error Condition="'$(TargetFramework)' == 'net48' and '$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="Parser net48 supports only the x64 and x86 platforms. Select one in Parser.sln." />
+    <Error Condition="'$(TargetFramework)' == 'net8.0' and '$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'MacArm64' and '$(Platform)' != 'MacX64'" Text="Parser net8.0 supports x64, x86, MacArm64, and MacX64 platforms." />
   </Target>
   <UsingTask TaskName="MarkPeLargeAddressAware" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
     <ParameterGroup>
@@ -95,10 +114,10 @@
       ]]></Code>
     </Task>
   </UsingTask>
-  <Target Name="MarkParserX86LargeAddressAware" AfterTargets="CoreCompile" Condition="'$(Platform)' == 'x86' and '$(DesignTimeBuild)' != 'true'">
+  <Target Name="MarkParserX86LargeAddressAware" AfterTargets="CoreCompile" Condition="'$(Platform)' == 'x86' and ('$(TargetFramework)' == 'net48' or '$(RuntimeIdentifier)' == 'win-x86') and '$(DesignTimeBuild)' != 'true'">
     <MarkPeLargeAddressAware ImagePath="$(IntermediateOutputPath)$(TargetFileName)" />
   </Target>
-  <Target Name="MarkParserNet8X86AppHostLargeAddressAware" AfterTargets="_CreateAppHost" Condition="'$(TargetFramework)' == 'net8.0' and '$(Platform)' == 'x86' and '$(DesignTimeBuild)' != 'true'">
+  <Target Name="MarkParserNet8X86AppHostLargeAddressAware" AfterTargets="_CreateAppHost" Condition="'$(TargetFramework)' == 'net8.0' and '$(RuntimeIdentifier)' == 'win-x86' and '$(Platform)' == 'x86' and '$(DesignTimeBuild)' != 'true'">
     <MarkPeLargeAddressAware ImagePath="$(AppHostIntermediatePath)" />
   </Target>
 </Project>
