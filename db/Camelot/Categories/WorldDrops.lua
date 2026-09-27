@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ah,cat,cl,flt,h,i,prof,r,s,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
+local ah,cat,cl,flt,h,i,prof,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
 x(1,{awp=10100,g={
@@ -241,7 +241,7 @@ s(156395,1733,{f=3,lvl=10,rwp=40003}),
 s(156303,1421,{f=3,lvl=5,rwp=40003}),
 s(162239,15333,{f=3,lvl=17})}),
 flt(102,{
-i(1973,{lvl=54,spellID=16739})}),
+toy(1973,{lvl=54})}),
 cat(106,{
 i(19236,{spellID=23677,u=13}),
 i(19275,{spellID=23679,u=13}),

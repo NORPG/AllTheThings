@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,crit,e,faction,flt,h,i,inst,mnt,n,o,prof,q,qo,r,s,settings,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateExpansion;
+local ach,ah,cl,crit,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
 h(-318,{
@@ -577,7 +577,8 @@ q(4604,{cost={{"i",9308,1}},providers={{"o",15085}},repeatable=1,sourceQuests={4
 i(9363,{b=1})}})}}),
 q(2904,{lvl=20,maps={1434},qgs={7850},g={
 s(159421,9536,{f=4,loc=41}),
-s(159420,9535,{f=6,loc=43})}}),
+s(159420,9535,{f=6,loc=43}),
+s(304894,270042,{awp=16001,f=5,loc=43})}}),
 q(2931,{coords={
 [1442]={{59.6,67}}},isBreadcrumb=1,lvl=25,nextQuests={2930},qgs={4077},r=2}),
 q(2842,{coords={
@@ -986,7 +987,7 @@ s(156530,1943,{crs={3947},f=6,loc=46,lvl=14}),
 s(156527,1936,{crs={622},f=20,lvl=13}),
 s(156531,1944,{crs={1731},f=5,loc=44,lvl=13}),
 i(1894,{crs={623,624,625}}),
-i(8492,{crs={657},f=101,spellID=10683}),
+p(50,{crs={657},itemID=8492,npcID=7387,spellID=10683}),
 r(6703,{b=1,crs={657},itemID=5787,requireSkill=165}),
 s(156536,1958,{crs={625},f=23,lvl=12}),
 s(159084,7997,{b=1,c={4},description="Can drop in Westfall and The Deadmines.",f=2,loc=40}),
@@ -1036,7 +1037,7 @@ s(158055,5202,{b=1,f=4,loc=42,lvl=17}),
 s(160032,10399,{b=1,f=5,loc=42,lvl=17}),
 crit(3262,{achID=62031,awp=16001,id=4})}),
 n(645,{
-i(8490,{f=101,spellID=10677}),
+p(44,{itemID=8490,npcID=7380,spellID=10677}),
 s(158051,5198,{b=1,f=27,lvl=17}),
 s(158050,5197,{b=1,f=23,lvl=16}),
 i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883})})}}),
@@ -1909,7 +1910,7 @@ i(19930,{f=53,spellID=24268,u=14}),
 i(19871,{f=51,u=14})}}),
 n(11382,{u=14,g={
 ach(881,{providers={{"i",19872}},u=14}),
-i(19872,{b=1,f=100,lvl=60,spellID=24242,u=14}),
+mnt(24242,{b=1,itemID=19872,lvl=60,u=14}),
 s(164036,19867,{f=25,u=14}),
 s(164039,19874,{f=29,spellID=25669,u=14}),
 s(164110,20038,{f=32,u=14}),
@@ -1954,7 +1955,7 @@ s(164085,19965,{f=20,u=14}),
 s(164101,19993,{f=32,u=14})}})}}),
 n(14509,{u=14,g={
 ach(880,{providers={{"i",19902}},u=14}),
-i(19902,{b=1,f=100,lvl=60,spellID=24252,u=14}),
+mnt(24252,{b=1,itemID=19902,lvl=60,u=14}),
 s(164054,19896,{f=34,u=14}),
 s(164058,19901,{f=25,u=14}),
 s(164267,20266,{f=7,loc=46,u=14}),
@@ -2467,10 +2468,10 @@ r(25079,{b=1,itemID=20730,requireSkill=333,u=15}),
 r(25073,{b=1,itemID=20727,requireSkill=333,u=15}),
 r(25080,{b=1,itemID=20731,requireSkill=333,u=15})}}),
 h(-63,{u=15,g={
-i(21218,{b=1,f=100,lvl=60,spellID=25953,u=15}),
-i(21323,{b=1,f=100,lvl=60,spellID=26056,u=15}),
-i(21321,{b=1,f=100,lvl=60,spellID=26054,u=15}),
-i(21324,{b=1,f=100,lvl=60,spellID=26055,u=15}),
+mnt(25953,{b=1,itemID=21218,lvl=60,u=15}),
+mnt(26056,{b=1,itemID=21323,lvl=60,u=15}),
+mnt(26054,{b=1,itemID=21321,lvl=60,u=15}),
+mnt(26055,{b=1,itemID=21324,lvl=60,u=15}),
 s(164763,21837,{crs={15229,15230,15233,15235,15236,15247,15249,15250,15262,15264},f=23,u=15}),
 s(164766,21856,{crs={15229,15230,15233,15235,15236,15247,15249,15250,15262,15264},f=22,u=15}),
 s(164764,21838,{crs={15229,15230,15233,15235,15236,15247,15249,15250,15262,15264},f=4,loc=42,u=15}),
@@ -3668,7 +3669,7 @@ i(16787,{f=51,spellID=19937})}}),
 q(4862,{coords={
 [1428]={{65.8,22}}},lvl=55,qgs={10260},rwp=40003,g={
 qo(1,{description="Interacting with a spider egg may spawn baby spiders, beware!",providers={{"i",12530},{"o",175606}}}),
-i(12529,{spellID=16450})}}),
+p(90,{itemID=12529,npcID=10598,spellID=16450})}}),
 q(5124,{coords={
 [1452]={{61,38.8}}},cost={{"i",7910,4},{"i",7078,2},{"i",12655,6},{"i",12812,1}},lvl=55,qgs={10637},requireSkill=9788,rwp=40003,sourceQuests={5103},g={
 i(12699,{b=1,f=200,requireSkill=9788}),
@@ -3691,7 +3692,7 @@ i(12812,{b=1,providers={{"o",176089}},requireSkill=9788})}}),
 q(4729,{coords={
 [1428]={{65.8,22}}},lvl=55,qgs={10260},rwp=40003,g={
 qo(1,{cost={{"i",12262,1}},crs={10221},description="Can be pulled outside of the room without engaging the boss.",providers={{"i",12263}}}),
-i(12264,{spellID=15999})}}),
+p(89,{itemID=12264,npcID=10259,spellID=15999})}}),
 q(5067,{coords={
 [1452]={{61,38.8}}},cost={{"i",12736,5},{"i",12360,5},{"i",12735,5},{"i",12731,1},{"g",500000}},lvl=57,maps={317,476},qgs={10637},repeatable=1,rwp=40003,sourceQuests={5047},g={
 s(160620,12756,{f=5,loc=46})}}),
@@ -5251,7 +5252,7 @@ s(160969,13389,{f=4,loc=46}),
 s(160971,13391,{f=4,loc=47}),
 i(13392,{f=52})}}),
 e(443,{npcID=10558,g={
-i(13379,{spellID=18400}),
+toy(13379),
 s(160960,13378,{f=5,loc=42}),
 s(160964,13384,{f=7,loc=45}),
 s(160963,13383,{f=6,loc=46}),
@@ -5389,7 +5390,7 @@ i(13515,{f=53,spellID=1299443})}}),
 e(456,{npcID=10440,rwp=40003,g={
 i(13251),
 ach(729,{providers={{"i",13335}}}),
-i(13335,{b=1,f=100,lvl=60,spellID=17481}),
+mnt(17481,{b=1,itemID=13335,lvl=60}),
 s(160994,13505,{f=26,spellID=17625}),
 s(160952,13368,{f=20}),
 s(164931,22408,{f=27,u=15}),
