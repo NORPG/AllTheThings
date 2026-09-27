@@ -335,7 +335,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		local itemID = reference.itemID;
 		if itemID then
 			local knownByGUID = {};
-			if app.GameBuildVersion < 30000 then
+			if app.GameBuildVersion < 30000 and not app.IsForever then
 				-- Prior to Wrath, mounts, pets, and toys were not tracked account wide
 				if key == "mountID" then
 					for guid,character in pairs(ATTCharacterData) do

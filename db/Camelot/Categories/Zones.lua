@@ -4654,7 +4654,7 @@ s(157259,3344,{b=1,f=4,loc=45}),
 s(157258,3342,{b=1,f=10}),
 i(2842)}}),
 q(3861,{cost={{"i",11109,1}},description="Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",maps={1413,1420,1424,1429,1431,1433,1436,1445},qgs={620},r=2,repeatable=1,g={
-p(84,{b=1,description="A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",itemID=11110,spellID=13548})}}),
+p(5004,{b=1,description="A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",itemID=11110,npcID=7392,spellID=13548})}}),
 q(6281,{coords={
 [1436]={{56.4,52.6}}},lvl=10,maps={1453},qgs={523},qis={15998},races={1},sourceQuests={6181}}),
 q(1076,{coords={

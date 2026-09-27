@@ -1,6 +1,9 @@
 -- BattlePet Class
 local _, app = ...
 
+-- Battle Pets are handled in Mounts & Battle Pets for Classic/TBC
+if app.GameBuildVersion < 30000 and not app.IsForever then return; end
+
 -- Globals
 local wipe, setmetatable, rawget, select,pairs
 	= wipe, setmetatable, rawget, select,pairs
@@ -10,8 +13,6 @@ local wipe, setmetatable, rawget, select,pairs
 -- Module
 
 -- App
--- Battle Pets are handled in Mounts & Battle Pets for Classic/TBC
-if app.GameBuildVersion < 30000 then return; end
 
 -- BattlePet Lib / Species Lib
 local KEY, CACHE = "speciesID", "BattlePets"

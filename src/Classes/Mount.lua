@@ -2,7 +2,7 @@
 local app = select(2, ...);
 
 -- Use the Mounts & Battle Pets Lib for Classic/TBC
-if app.GameBuildVersion <= 30000 then
+if app.GameBuildVersion <= 30000 and not app.IsForever then
 	return;
 end
 

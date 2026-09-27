@@ -1127,7 +1127,11 @@ i(21309, 117);		-- Tiny Snowman
 i(21277, 116);		-- Tranquil Mechanical Yeti
 i(11026, 65);		-- Tree Frog
 i(10393, 55);		-- Undercity Cockroach
+-- #if FOREVER
+i(11110, 5004);		-- Prairie Chicken
+-- #else
 i(11110, 84);		-- Westfall Chicken
+-- #endif
 i(23015, 127);		-- Whiskers the Rat
 i(8489, 46);		-- White Kitten
 i(21308, 118);		-- Winter Reindeer
