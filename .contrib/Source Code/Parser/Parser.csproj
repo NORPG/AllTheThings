@@ -98,4 +98,7 @@
   <Target Name="MarkParserX86LargeAddressAware" AfterTargets="CoreCompile" Condition="'$(Platform)' == 'x86' and '$(DesignTimeBuild)' != 'true'">
     <MarkPeLargeAddressAware ImagePath="$(IntermediateOutputPath)$(TargetFileName)" />
   </Target>
+  <Target Name="MarkParserNet8X86AppHostLargeAddressAware" AfterTargets="_CreateAppHost" Condition="'$(TargetFramework)' == 'net8.0' and '$(Platform)' == 'x86' and '$(DesignTimeBuild)' != 'true'">
+    <MarkPeLargeAddressAware ImagePath="$(AppHostIntermediatePath)" />
+  </Target>
 </Project>
