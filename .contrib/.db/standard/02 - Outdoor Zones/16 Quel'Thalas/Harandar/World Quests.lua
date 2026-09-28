@@ -12,13 +12,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},FILTERFUNC_questID,{
 				q(92086, {	-- A Taste of Accord
 					["coord"] = { 41.5, 24.3, MAP.MIDNIGHT.HARANDAR },
+					["qis"] = {
+						252259,	-- Drifter Jelly (QI!)
+						252234,	-- Savory Saptor Slice (QI!)
+						252246,	-- Sweet Beetle Wings (QI!)
+					},
 					["groups"] = {
-						i(252259),	-- Drifter Jelly (QI!)
 						o(574619, {	-- Rick Loamy Soil
 							i(252257),	-- Rich Loamy Soil (QI!)
 						}),
-						i(252234),	-- Savory Saptor Slice (QI!)
-						i(252246),	-- Sweet Beetle Wings (QI!)
 					},
 				}),
 				q(92162, {	-- A Refined Potadpalate
@@ -26,7 +28,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92582, {	-- Apply to Roots
 					["coord"] = { 41.4, 32.3, MAP.MIDNIGHT.HARANDAR },
-					["groups"] = { i(269603) },	-- Verdant Stalker Sludge (QI!)
+					["qi"] = 269603,	-- Verdant Stalker Sludge (QI!)
 				}),
 				q(92119, {	-- Bitterbloom Burn Down
 					["coord"] = { 32.1, 69.5, MAP.MIDNIGHT.HARANDAR },
@@ -57,11 +59,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(93046, {	-- Nestled Belongings
 					["coord"] = { 31.3, 85.5, MAP.MIDNIGHT.HARANDAR },
-					["groups"] = {
-						i(256145),	-- Bird Whistle (QI!)
-						i(256144),	-- Bone Comb (QI!)
-						i(256138),	-- Har'old (QI!)
-						i(256143),	-- Wooden Spoon (QI!)
+					["qis"] = {
+						256145,	-- Bird Whistle (QI!)
+						256144,	-- Bone Comb (QI!)
+						256138,	-- Har'old (QI!)
+						256143,	-- Wooden Spoon (QI!)
 					},
 				}),
 				q(91927, {	-- Ooze Booting
@@ -90,12 +92,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(91802, {	-- The Best Bites are Bog Bugs
 					["coord"] = { 43.2, 61.3, MAP.MIDNIGHT.HARANDAR },
-					["groups"] = {
-						i(260453),	-- Leech Tick (QI!)
-					},
+					["qi"] = 260453,	-- Leech Tick (QI!)
 				}),
 				q(91981, {	-- To Poison and to Heal
 					["coord"] = { 43.6, 54.6, MAP.MIDNIGHT.HARANDAR },
+					["qi"] = 269023,	-- Phytogenic Poison Part (QI!)
 					["groups"] = {
 						o(539208, {	-- Healing Waters of Ahl'ua
 							["coords"] = {
@@ -116,7 +117,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 							["groups"] = { i(269022) },	-- Healing Waters of Ahl'ua (QI!)
 						}),
-						i(269023),	-- Phytogenic Poison Part (QI!)
 					},
 				}),
 				q(91799, {	-- Trial of Flight

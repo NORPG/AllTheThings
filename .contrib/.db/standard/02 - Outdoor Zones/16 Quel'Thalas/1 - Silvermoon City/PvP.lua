@@ -28,28 +28,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93503),	-- Enshrouded in Teamwork
 				q(93505),	-- Enshrouded in War
 				q(93423, {	-- Sparks of War: Eversong Woods
-					i(219934),	-- Spark of War (QI!)
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(93425, {	-- Sparks of War: Harandar
-					i(219934),	-- Spark of War (QI!)
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(96726, {	-- Sparks of War: Naigtal
 					["timeline"] = { ADDED_12_0_7 },
-					["groups"] = { i(275134) },	-- Otherworldly Spark of War (QI!)
+					["qi"] = 275134,	-- Otherworldly Spark of War (QI!)
 				}),
 				q(96808, {	-- Sparks of War: The Coiled Isle
 					["timeline"] = { ADDED_12_1_0 },
-					["groups"] = { i(219934) },	-- Spark of War (QI!)
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(96725, {	-- Sparks of War: Val
 					["timeline"] = { ADDED_12_0_7 },
-					["groups"] = { i(275134) },	-- Otherworldly Spark of War (QI!)
+					["qi"] = 275134,	-- Otherworldly Spark of War (QI!)
 				}),
 				q(93426, {	-- Sparks of War: Voidstorm
-					i(219934),	-- Spark of War (QI!)
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(93424, {	-- Sparks of War: Zul'Aman
-					i(219934),	-- Spark of War (QI!)
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				-- #IF AFTER MID
 				-- #IF BEFORE TLT

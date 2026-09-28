@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 46.7, 80.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 						{ 44.2, 34.8, DORNOGAL },
 					},
-					["groups"] = { i(239151) },	-- Light's Summon (PQI!)
+					["qi"] = 239151,	-- Light's Summon (PQI!)
 				}),
 				q(86769, {	-- Last Bastion of the Light
 					["sourceQuests"] = { 88719 },	-- A Voice from the Light
@@ -60,9 +60,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 					["provider"] = { "n", 236896 },	-- Lor'themar Theron
 					["coord"] = { 35.4, 44.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
+					["qi"] = 248239,	-- Healing Flask (PQI!)
 					["groups"] = {
-						i(248239),	-- Healing Flask (PQI!)
-						--
 						i(268326),	-- Sin'dorei Citizen's Cloak
 						i(268327),	-- Sin'dorei Citizen's Shawl
 					},
@@ -117,15 +116,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 					["provider"] = { "n", 237253 },	-- Lady Liadrin
 					["coord"] = { 45.2, 26.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
+					["qis"] = {
+						238842,	-- Cosmic Infuser (QI!)
+						238843,	-- Devastation (QI!)
+						238844,	-- Infinity Blades (QI!)
+						238846,	-- Netherstrand Longbow (QI!)
+						238890,	-- Scourgebane (QI!)
+						238845,	-- Staff of Disintegration (QI!)
+						238807,	-- Warp Slicer (QI!)
+					},
 					["groups"] = {
-						i(238842),	-- Cosmic Infuser (QI!)
-						i(238843),	-- Devastation (QI!)
-						i(238844),	-- Infinity Blades (QI!)
-						i(238846),	-- Netherstrand Longbow (QI!)
-						i(238890),	-- Scourgebane (QI!)
-						i(238845),	-- Staff of Disintegration (QI!)
-						i(238807),	-- Warp Slicer (QI!)
-						-- rewards --
 						i(251252),	-- Recovered Sanctum Axe
 						i(251256),	-- Recovered Sanctum Blade
 						i(251259),	-- Recovered Sanctum Bow

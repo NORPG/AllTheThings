@@ -141,10 +141,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86621 },	-- The Wayward Magister
 						["provider"] = { "n", 236100 },	-- Arator
 						["coord"] = { 47.7, 69.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(244194),	-- Torn-Out Page (QI!)
-							i(244195),	-- Torn-Out Page (QI!)
-							i(244197),	-- Torn-Out Page (QI!)
+						["qis"] = {
+							244194,	-- Torn-Out Page (QI!)
+							244195,	-- Torn-Out Page (QI!)
+							244197,	-- Torn-Out Page (QI!)
 						},
 					}),
 					q(90907, {	-- The First to Know
@@ -160,9 +160,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90907 },	-- The First to Know
 						["provider"] = { "n", 245004 },	-- Lord Antenorian
 						["coord"] = { 47.2, 68.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 243221,	-- Suspicious Missive (QI!)
 						["groups"] = {
-							i(243221),	-- Suspicious Missive (QI!)
-							--
 							i(248049),	-- Eversong Chain
 							i(248050),	-- Tranquillien Choker
 						},
@@ -211,8 +210,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 243984 },	-- Arator
 						["coord"] = { 49.0, 68.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 243468,	-- Jeweled Key (QI!)
 						["groups"] = {
-							i(243468),	-- Jeweled Key (QI!)
 							o(542854, {	-- Ominous Lockbox
 								["coord"] = { 47.1, 68.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 								["groups"] = { i(239134) },	-- Plans of Infiltration (QI!)
@@ -264,9 +263,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86635 },	-- To Deatholme
 						["provider"] = { "n", 236730 },	-- Magister Umbric
 						["coord"] = { 44.3, 84.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 253153,	-- Stolen Knowledge (QI!)
 						["groups"] = {
-							i(253153),	-- Stolen Knowledge (QI!)
-							--
 							i(249646),	-- Elder Mossclogs
 							i(249650),	-- Elder Mossvein Greatleaves
 							i(249638),	-- Osseoclad Bonecrushers
@@ -351,10 +349,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86643 },	-- Following the Root
 						["provider"] = { "n", 236610 },	-- Arator
 						["coord"] = { 43.7, 30.1, 2579 },	-- Wartha'nan Crypts
+						["qis"] = {
+							244144,	-- Bloodvein Clot (QI!)
+							244143,	-- Bonecarapace Fangs (QI!)
+						},
 						["groups"] = {
-							i(244144),	-- Bloodvein Clot (QI!)
-							i(244143),	-- Bonecarapace Fangs (QI!)
-							--
 							i(252677),	-- Puzzling Crypt Relic
 						},
 					}),
@@ -460,10 +459,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 244443 },	-- Belath Dawnblade
 						["coord"] = { 56.1, 56.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["qis"] = {
+							244407,	-- Cracked Wyrm Core (QI!)
+							253212,	-- Rogue's Signet (QI!)
+							253211,	-- Smuggler's Signet (QI!)
+						},
 						["groups"] = {
-							i(244407),	-- Cracked Wyrm Core (QI!)
-							i(253212),	-- Rogue's Signet (QI!)
-							i(253211),	-- Smuggler's Signet (QI!)
 							o(539728, {	-- Crate of Fel Artifacts
 								["coord"] = { 59.0, 52.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 								["groups"] = {
@@ -477,7 +478,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90819 },	-- Murder Row: Acting the Part
 						["provider"] = { "n", 244454 },	-- Belath Dawnblade
 						["coord"] = { 54.5, 54.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-						["groups"] = { i(244547) },	-- Folded Receipt (QI!)
+						["qi"] = 244547,	-- Folded Receipt (QI!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61957.02, {	-- Flowers for Amalthea
@@ -509,7 +510,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90494 },	-- The Missing Magister
 						["provider"] = { "n", 249337 },	-- Talandra Dawnsprite
 						["coord"] = { 37.5, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = { i(253869) },	-- Potent Mournbat Venom (QI!)
+						["qi"] = 253869,	-- Potent Mournbat Venom (QI!)
 					}),
 					q(92023, {	-- Suspicious Sundries
 						["sourceQuests"] = {
@@ -518,10 +519,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 249337 },	-- Talandra Dawnsprite
 						["coord"] = { 37.5, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(254280),	-- Vial of Quicksilver (QI!)
-							i(254281),	-- Flask of Dragon's Blood (QI!)
-							i(254282),	-- Bottle of Magister's Reserve (QI!)
+						["qis"] = {
+							254280,	-- Vial of Quicksilver (QI!)
+							254281,	-- Flask of Dragon's Blood (QI!)
+							254282,	-- Bottle of Magister's Reserve (QI!)
 						},
 					}),
 					q(92024, {	-- House Call
@@ -542,11 +543,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86745 },	--	Silvermoon Must Know
 						["provider"] = { "n", 245745 },	-- Valdekar Solaar
 						["coord"] = { 48.8, 76.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(246379),	-- Absolutely Adequate Fish (QI!)
-							i(246382),	-- Fabulous Fish (QI!)
-							i(246380),	-- Fairly Fine Fish (QI!)
-							i(246381),	-- Pretty Plump Fish (QI!)
+						["qis"] = {
+							246379,	-- Absolutely Adequate Fish (QI!)
+							246382,	-- Fabulous Fish (QI!)
+							246380,	-- Fairly Fine Fish (QI!)
+							246381,	-- Pretty Plump Fish (QI!)
 						},
 					}),
 					q(91328, {	-- Secret Ingredients
@@ -608,8 +609,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 238505 },	-- Lyssara Duskmourne
 						["coord"] = { 39.5, 45.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 239022,	-- Elixir of the Sea's Bounty (QI!)
 						["groups"] = {
-							i(239022),	-- Elixir of the Sea's Bounty (PQI!)
 							o(520354, {	-- Submerged Cargo
 								i(242552),	-- Unstable Arcana (QI!)
 							}),
@@ -681,7 +682,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 89201 },	-- Outschemed
 						["provider"] = { "n", 241398 },	-- Magister Dawnblaze
 						["coord"] = { 38.8, 75.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-						["groups"] = { i(259992) },	-- Duplicate Documents (QI!)
+						["qi"] = 259992,	-- Duplicate Documents (QI!)
 					}),
 					q(89203, {	-- Mutual Benefit
 						["sourceQuests"] = { 89202 },	-- Stir the Nest
@@ -750,7 +751,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86650 },	-- Fractured
 						["provider"] = { "n", 241553 },	-- Vaelith Sunplume
 						["coord"] = { 56.8, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = { i(244214) },	-- Juicy Frog Leg (QI!)
+						["qi"] = 244214,	-- Juicy Frog Leg (QI!)
 					}),
 					q(89386, {	-- A Roost-ed Development
 						["sourceQuests"] = { 86650 },	-- Fractured
@@ -865,8 +866,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91463 },	-- To the South Tower
 						["provider"] = { "n", 247500 },	-- Arcanist Taemin
 						["coord"] = { 43.9, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 248244,	-- Corruption Resonator (QI!)
 						["groups"] = {
-							i(248244),	-- Corruption Resonator (PQI!)
 							o(568515, {	-- Mysterious Bloom
 								["coord"] = { 42.8, 79.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 								["groups"] = { i(249492) },	-- Mysterious Bloom (QI!)
@@ -923,9 +924,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92408 },	-- Material Gains
 						["provider"] = { "n", 250888 },	-- Solwin Brightstitch
 						["coord"] = { 46.9, 35.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(250919),	-- Empty Manasilk Bobbin (PQI!)
-							i(251521),	-- Full Bobbin of Manasilk (QI!)
+						["qis"] = {
+							250919,	-- Empty Manasilk Bobbin (PQI!)
+							251521,	-- Full Bobbin of Manasilk (QI!)
 						},
 					}),
 					q(91389, {	-- Clothes Make the Man
@@ -950,7 +951,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 87399 },	-- Facing the Sun
 						["provider"] = { "n", 238084 },	-- Harris Lightsbreath
 						["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = { i(238677) },	-- Humming Core (QI!)
+						["qi"] = 238677,	-- Humming Core (QI!)
 					}),
 					q(87402, {	-- The Light Provides
 						["sourceQuests"] = {
@@ -959,9 +960,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 238084 },	-- Harris Lightsbreath
 						["coord"] = { 50.5, 78.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 246441,	-- Humming Core (QI!)
 						["groups"] = {
-							i(246441),	-- Humming Core (PQI!)
-							--
 							i(263331),	-- Lignified Helmet
 							i(263326),	-- Mirveda's Sunhat
 							i(263328),	-- Sanctum Keeper's Hood
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["provider"] = { "n", 242890 },	-- Salandria
 						["coord"] = { 44.1, 67.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = { i(244844), }	-- Twilight's Blade Missive (QI!)
+						["qi"] = 244844,	-- Twilight's Blade Missive (QI!)
 					}),
 					q(90549, {	-- Signs of the Struggle
 						["sourceQuests"] = {
@@ -1090,24 +1090,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91284 },	-- A Path Not Yet Chosen (TODO: ??)
 						["provider"] = { "n", 245202 },	-- Ranger Hannovia
 						["coord"] = { 42.2, 13.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(246166),	-- Farstrider Recommendation (QI!)
-							i(246153),	-- Invasive Lynx Pelt (QI!)
+						["qis"] = {
+							246166,	-- Farstrider Recommendation (QI!)
+							246153,	-- Invasive Lynx Pelt (QI!)
 						},
 					}),
 					q(91291, {	-- A Test of Blood
 						["sourceQuests"] = { 91284 },	-- A Path Not Yet Chosen (TODO: ??)
 						["provider"] = { "n", 245200 },	-- Jesthenis Sunstriker
 						["coord"] = { 43.0, 13.8, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = { i(246167) },	-- Blood Knight Recommendation (QI!)
+						["qi"] = 246167,	-- Blood Knight Recommendation (QI!)
 					}),
 					q(91292, {	-- A Test of the Arcane
 						["sourceQuests"] = { 91284 },	-- A Path Not Yet Chosen (TODO: ??)
 						["provider"] = { "n", 245201 },	-- Magister Jaronis
 						["coord"] = { 43.2, 14.7, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(244539),	-- Arcane Transfer Staff (QI!)
-							i(246168),	-- Magister Recommendation (QI!)
+						["qis"] = {
+							244539,	-- Arcane Transfer Staff (QI!)
+							246168,	-- Magister Recommendation (QI!)
 						},
 					}),
 					q(91301, {	-- How to Train Your Protege
@@ -1211,7 +1211,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 87455 },	-- Trials and Tabulations
 						["provider"] = { "n", 238732 },	-- Gidwin Goldbraids
 						["coord"] = { 33.4, 89.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-						["groups"] = { i(237167) },	-- Antique Necklace (QI!)
+						["qi"] = 237167,	-- Antique Necklace (QI!)
 					}),
 					q(87458, {	-- Debts Paid
 						["sourceQuests"] = {
@@ -1237,14 +1237,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 94388 },	-- Second Time's a Choice
 						["provider"] = { "n", 240403 },	-- Magister Meledor
 						["coord"] = { 41.1, 38.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(238730),	-- Arcane Timepiece (PQI!)
-							i(240962),	-- Chewed-Up Letter of Devotion (QI!)
-							i(240946),	-- Digested Object (QI!)
-							i(240965),	-- Half Eaten Diplomatic Letter (QI!)
-							i(240964),	-- Mangled Scroll of Elven Etiquette (QI!)
-							i(240961),	-- Partially Digested Lor'themar Portrait Necklace (QI!)
-							i(240963),	-- Soggy Copy of 'Magic and You: An Arcane Awakening" (QI!)
+						["qis"] = {
+							238730,	-- Arcane Timepiece (PQI!)
+							240962,	-- Chewed-Up Letter of Devotion (QI!)
+							240946,	-- Digested Object (QI!)
+							240965,	-- Half Eaten Diplomatic Letter (QI!)
+							240964,	-- Mangled Scroll of Elven Etiquette (QI!)
+							240961,	-- Partially Digested Lor'themar Portrait Necklace (QI!)
+							240963,	-- Soggy Copy of 'Magic and You: An Arcane Awakening" (QI!)
 						},
 					}),
 					q(88978, {	-- Tracking the Trail
@@ -1316,7 +1316,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91493 },	-- Not What I Ordered
 						["provider"] = { "n", 250298 },	-- Numia Golden
 						["coord"] = { 39.0, 61.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = { i(247593) },	-- Borrowed Wand (PQI!)
+						["qi"] = 247593,	-- Borrowed Wand (PQI!)
 					}),
 					q(91495, {	-- Familiar Faces In Peril
 						["sourceQuests"] = { 91493 },	-- Not What I Ordered
@@ -1334,9 +1334,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{ "n", 250388 },	-- Hathvelion Sungaze
 						},
 						["coord"] = { 39.0, 61.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 247753,	-- Empowered Wand (PQI!)
 						["groups"] = {
-							i(247753),	-- Empowered Wand (PQI!)
-							--
 							i(263344),	-- Eversong Farstrider's Ring Mail
 							i(263345),	-- Goldenmist Defender's Chestplate
 							i(263334),	-- Goldenmist Noble's Robes

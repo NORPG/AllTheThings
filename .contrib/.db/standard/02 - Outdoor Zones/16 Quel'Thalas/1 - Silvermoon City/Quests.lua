@@ -20,17 +20,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["sourceQuests"] = { ??? },	-- ??
 				["provider"] = { "n", 257039 },	-- Hawkrancher Saman
 				["coord"] = { 41.8, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					i(264165),	-- Tiff (QI!)
-				},
+				["qi"] = 264165,	-- Tiff (QI!)
 			}),
 			q(93965, {	-- Pet Wranglin'
 				["sourceQuests"] = { 94012 },	-- Lost Lil' Strider
 				["provider"] = { "n", 257039 },	-- Hawkrancher Saman
 				["coord"] = { 41.8, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					i(263871),	-- Holy Pet Leash (QI!)
-				},
+				["qi"] = 263871,	-- Holy Pet Leash (QI!)
 			}),
 			-- Catalyst
 			q(93687, {	-- Taste True Power
@@ -109,9 +105,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(94474, {	-- The Great Vault
 				["qg"] = 239670,	-- Vaultkeeper Elysa
 				["coord"] = { 50.4, 64.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					i(265039),	-- Silvermoon Splendor (QI!)
-				},
+				["qi"] = 265039,	-- Silvermoon Splendor (QI!)
 			}),
 			q(95245, {	-- Midnight: World Tour
 				["provider"] = { "n", 235787 },	-- Lor'themar Theron
@@ -134,9 +128,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_12_1_0 },
+				["qi"] = 279573,	-- Fading Voidwhisper (QI!)
 				["groups"] = {
-					i(279573),	-- Fading Voidwhisper (QI!)
-					--
 					i(279576),	-- Void Vestige
 				},
 			}),
@@ -151,10 +144,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 269987,	-- Orin Straylight
 				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = {
-					--spell(1305977),	-- Nebulous Voidcores
-					i(265695),	-- Elementary Voidcore Shard (QI!)
-				},
+				["qi"] = 265695,	-- Elementary Voidcore Shard (QI!)
 			}),
 		}),
 		-- PVP 4 Part Quest

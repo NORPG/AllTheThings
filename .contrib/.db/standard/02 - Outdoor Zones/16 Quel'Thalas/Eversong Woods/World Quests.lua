@@ -15,9 +15,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92143, {	-- Arcane Reallocation
 					["coord"] = { 37.5, 64.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(269606),	-- Borrowed Wand (QI!)
-						i(258034),	-- Unstable Arcana (QI!)
+					["qis"] = {
+						269606,	-- Borrowed Wand (QI!)
+						258034,	-- Unstable Arcana (QI!)
 					},
 				}),
 				q(92152, {	-- Battling the Bloom
@@ -28,9 +28,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92141, {	-- Classic Threats
 					["coord"] = { 38.2, 22.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(258966),	-- Lynx Collar (QI!)
-					},
+					["qi"] = 258966,	-- Lynx Collar (QI!)
 				}),
 				q(92195, {	-- Come On Down
 					["coord"] = { 64.3, 32.2, MAP.MIDNIGHT.EVERSONG_WOODS },
@@ -58,9 +56,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92364, {	-- Sun Support
 					["coord"] = { 50.5, 75.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = {
-						i(250854),	-- Sun's Focus (QI!)
-					},
+					["qi"] = 250854,	-- Sun's Focus (QI!)
 				}),
 				q(92121, {	-- The Great Outdoors
 					["coord"] = { 58.7, 68.9, MAP.MIDNIGHT.EVERSONG_WOODS },

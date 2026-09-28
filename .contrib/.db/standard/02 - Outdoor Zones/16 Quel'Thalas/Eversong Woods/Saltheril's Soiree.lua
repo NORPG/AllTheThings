@@ -72,11 +72,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(91979),	-- Chop It Down
 				q(90574),	-- Fortify the Runestones: Blood Knights
 				q(91971, {	-- Hitting the Hammer
-					i(249416),	-- Partially Eaten Rations (QI!)
-					i(249413),	-- Previously Loved Earring (QI!)
-					i(249412),	-- Smelly Left Shoe (QI!)
-					i(249415),	-- Throk's Scroll of Doom (QI!)
-					i(249411),	-- Twilight Tokens (QI!)
+					["qis"] = {
+						249416,	-- Partially Eaten Rations (QI!)
+						249413,	-- Previously Loved Earring (QI!)
+						249412,	-- Smelly Left Shoe (QI!)
+						249415,	-- Throk's Scroll of Doom (QI!)
+						249411,	-- Twilight Tokens (QI!)
+					},
 				}),
 				q(91972),	-- Hold the Watch
 				q(91977),	-- Less Lawless
@@ -93,7 +95,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91974, {	-- Sunfire to the Blade
-					i(249691),	-- Holy Sunfire (QI!)
+					["qi"] = 249691,	-- Holy Sunfire (QI!)
 				}),
 				q(91978, {	-- Taxing the Tideborne
 					o_repeated({
@@ -114,7 +116,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91975, {	-- That's Our Wood
-					i(249407),	-- Harvested Lightwood (QI!)
+					["qi"] = 249407,	-- Harvested Lightwood (QI!)
 				}),
 			})),
 			-- Farstriders weekly
@@ -131,7 +133,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91988, {	-- Brightwing Conservation
-					i(249775),	-- Bright Berry (QI!)
+					["qi"] = 249775,	-- Bright Berry (QI!)
 				}),
 				q(90575),	-- Fortify the Runestones: Farstriders
 				q(91989, {	-- Ghostland Peppers
@@ -152,41 +154,43 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91987, {	-- Potted Lashers
-					i(249418),	-- Lightblooming Bulb (QI!)
+					["qi"] = 249418,	-- Lightblooming Bulb (QI!)
 				}),
 				q(91986, {	-- Put a Little Snap in Their Step
-					i(249779),	-- Discordant Tune (QI!)
+					["qi"] = 249779,	-- Discordant Tune (QI!)
 				}),
 				q(91984, {	-- Sungrub Silk
-					i(249422),	-- Sunsilk (QI!)
+					["qi"] = 249422,	-- Sunsilk (QI!)
 				}),
 				q(91990, {	-- Sunset to Sea
-					i(267040),	-- Sea Caller (QI!)
+					["qi"] = 267040,	-- Sea Caller (QI!)
 				}),
 				q(91985, {	-- Windrunner Memorabilia
-					i(249542),	-- Partially Used Memento (QI!)
-					o(568507, {	-- Relocation Crate
-						["coords"] = {
-							{ 36.3, 73.0, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 36.4, 75.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 36.4, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 36.7, 74.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 37.0, 73.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 37.4, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 37.4, 73.4, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 37.8, 74.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-							{ 37.8, 74.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-						},
-						["groups"] = {
-							i(249527),	-- Elder Painting (QI!)
-							i(249553),	-- Lost Mirror (QI!)
-							i(249552),	-- Mischievous Mask (QI!)
-							i(249531),	-- Mysterious Cube (QI!)
-							i(249540),	-- Oddly Sealed Book (QI!)
-							i(249543),	-- Special Remedy (QI!)
-							i(249554),	-- Variable Timepiece (QI!)
-						},
-					}),
+					["qi"] = 249542,	-- Partially Used Memento (QI!)
+					["groups"] = {
+						o(568507, {	-- Relocation Crate
+							["coords"] = {
+								{ 36.3, 73.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 36.4, 75.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 36.4, 75.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 36.7, 74.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 37.0, 73.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 37.4, 72.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 37.4, 73.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 37.8, 74.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+								{ 37.8, 74.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+							},
+							["groups"] = {
+								i(249527),	-- Elder Painting (QI!)
+								i(249553),	-- Lost Mirror (QI!)
+								i(249552),	-- Mischievous Mask (QI!)
+								i(249531),	-- Mysterious Cube (QI!)
+								i(249540),	-- Oddly Sealed Book (QI!)
+								i(249543),	-- Special Remedy (QI!)
+								i(249554),	-- Variable Timepiece (QI!)
+							},
+						}),
+					},
 				}),
 			})),
 			-- Magisters weekly
@@ -197,7 +201,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,
 			}, {
 				q(91993, {	-- Diminutive Demand
-					i(249437),	-- Wand of Diminutive Proportions (QI!)
+					["qi"] = 249437,	-- Wand of Diminutive Proportions (QI!)
 				}),
 				q(91996, {	-- Fit for a Magister
 					o(568276, {	-- Unoccupied Mana Loom
@@ -207,15 +211,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(90573),	-- Fortify the Runestones: Magisters
 				q(89277, {	-- Illuminate the Space
-					i(239067),	-- Luminous Fibers
+					["qi"] = 239067,	-- Luminous Fibers
 				}),
 				q(89276),	-- Light Snacks
 				q(89278),	-- Minding Our Duty
 				q(91997, {	-- Power Clean
-					i(249452),	-- Inanimate Broom (QI!)
+					["qi"] = 249452,	-- Inanimate Broom (QI!)
 				}),
 				q(91994, {	-- Pyrepetal Purposes
-					i(249444),	-- Eversong Pyrepetal (QI!)
+					["qi"] = 249444,	-- Eversong Pyrepetal (QI!)
 				}),
 				q(91995),	-- What Horrible Magic
 				q(91992, {	-- Where Has the Wine Gone?
@@ -237,10 +241,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,
 			}, {
 				q(91999, {	-- A Bit of Bloodthistle
-					i(249472),	-- Fragrant Bloodthistle (QI!)
+					["qi"] = 249472,	-- Fragrant Bloodthistle (QI!)
 				}),
 				q(92003, {	-- Artisanal Replicas
-					i(249688),	-- Felo'melorn Replica (QI!)
+					["qi"] = 249688,	-- Felo'melorn Replica (QI!)
 				}),
 				q(92007, {	-- Begged, Borrowed or Stolen
 					o(568519, {	-- Chest of Stolen Valuables
@@ -250,7 +254,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92000),	-- Bring the Ruckus
 				q(92002, {	-- Dangerous Showpieces
-					i(249528),	-- Twilight Weaponry (QI!)
+					["qi"] = 249528,	-- Twilight Weaponry (QI!)
 				}),
 				q(90576),	-- Fortify the Runestone: Shades of the Row
 				q(92001, {	-- One Smuggler to Another
@@ -269,15 +273,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(92004, {	-- Shady Dealings
-					i(249687),	-- Poisonous Frog Secretions (QI!)
+					["qi"] = 249687,	-- Poisonous Frog Secretions (QI!)
 				}),
 				q(92005, {	-- Throw The Dice
-					i(249541),	-- Naga Fang (QI!)
+					["qi"] = 249541,	-- Naga Fang (QI!)
 				}),
 				q(92006, {	-- We Need a Refill
-					i(249555),	-- Bloodthistle Brandy (QI!)
-					i(249556),	-- Mana Burner (QI!)
-					i(249557),	-- Sun-Kissed Tranquilla (QI!)
+					["qis"] = {
+						249555,	-- Bloodthistle Brandy (QI!)
+						249556,	-- Mana Burner (QI!)
+						249557,	-- Sun-Kissed Tranquilla (QI!)
+					},
 				}),
 			})),
 			n(BONUS_OBJECTIVES, {

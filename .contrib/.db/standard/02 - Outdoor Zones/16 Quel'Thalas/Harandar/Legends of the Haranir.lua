@@ -157,10 +157,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["sourceQuest"] = 88994,	-- The Cauldron of Echoes
 					["provider"] = { "n", 245531 },	-- Ancient Visionstone
 					["coord"] = { 61.6, 20.6, MAP.MIDNIGHT.HARANDAR },
-					["groups"] = {
-						i(243589),	-- Alndust (QI!)
-						i(243584),	-- Amethryl Petals (QI!)
-						i(243583),	-- Iridescent Carapace (QI!)
+					["qis"] = {
+						243589,	-- Alndust (QI!)
+						243584,	-- Amethryl Petals (QI!)
+						243583,	-- Iridescent Carapace (QI!)
 					},
 				}),
 				q(92724),	-- The Story of the Root of the World
@@ -183,6 +183,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["sourceQuest"] = 88993,	-- Wey'nan's Ward
 					["provider"] = { "n", 241117 },	-- Ancient Visionstone
 					["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
+					["qi"] = 241611,	-- Zarat's Head (QI!)
 					["groups"] = {
 						o(531174, {	-- Fragrant Mushroom
 							["coords"] = {
@@ -195,7 +196,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 							["groups"] = { i(241349) },	-- Fragrant Mushroom Cap (QI!)
 						}),
-						i(241611),	-- Zarat's Head (QI!)
 					},
 				}),
 			})),

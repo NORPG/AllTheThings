@@ -201,9 +201,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86913 },	-- A Hut in Har'mara
 						["provider"] = { "n", 237572 },	-- Hagar
 						["coord"] = { 34.9, 25.0, MAP.MIDNIGHT.HARANDAR },
+						["qi"] = 238024,	-- Watering Can (PQI!)
 						["groups"] = {
-							i(238024),	-- Watering Can (PQI!)
-							--
 							i(256175),	-- Spore-Touched Baton
 							i(256188),	-- Spore-Touched Bludgeon
 							i(256174),	-- Spore-Touched Buckler
@@ -325,9 +324,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86836 },	-- The Hunter Awaits
 						["provider"] = { "n", 237236 },	-- Amarakk
 						["coord"] = { 62.0, 54.6, MAP.MIDNIGHT.HARANDAR },
+						["qi"] = 243595,	-- Salve of Aln (PQI!)
 						["groups"] = {
-							i(243595),	-- Salve of Aln (PQI!)
-							--
 							i(256335),	-- Amarakk's Woven Signet
 							i(256334),	-- Band of Severed Connections
 						},
@@ -336,9 +334,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86836 },	-- The Hunter Awaits
 						["provider"] = { "n", 237236 },	-- Amarakk
 						["coord"] = { 62.0, 54.6, MAP.MIDNIGHT.HARANDAR },
+						["qi"] = 238417,	-- Diminished Alndust (QI!)
 						["groups"] = {
-							i(238417),	-- Diminished Alndust (QI!)
-							--
 							i(266259),	-- Altar of the Shul'ka (DECOR!)
 						},
 					}),
@@ -395,7 +392,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86858 },	-- The Madness Roots Deep
 						["provider"] = { "n", 237284 },	-- Amarakk
 						["coord"] = { 61.1, 57.3, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(239131) },	-- Amarakk's Influence (PQI!)
+						["qi"] = 239131,	-- Amarakk's Influence (PQI!)
 					}),
 					q(86861, {	-- Herding Manifestations
 						["sourceQuests"] = { 86858 },	-- The Madness Roots Deep
@@ -555,9 +552,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86883 },	-- The Frenzied March
 						["provider"] = { "n", 237361 },	-- Orweyna
 						["coord"] = { 62.2, 59.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["qi"] = 238196,	-- Lightbleached Rootbone (QI!)
 						["groups"] = {
-							i(238196),	-- Lightbleached Rootbone (QI!)
-							--
 							i(256224),	-- Light-Bleached Amulet
 							i(256225),	-- Rootbone Choker
 						},
@@ -644,7 +640,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86898 },	-- Rise of the Haranir
 						["provider"] = { "n", 242593 },	-- Monte Gazlowe
 						["coord"] = { 47.1, 45.8, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(241125) },	-- Handcrafted Plush (QI!)
+						["qi"] = 241125,	-- Handcrafted Plush (QI!)
 					}),
 					q(90534, {	-- The Home of the Haranir
 						["sourceQuests"] = { 90533 },	-- Go Get Orweyna!
@@ -685,7 +681,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["sourceQuests"] = { 86930 },	-- To Sow the Seed
 							["provider"] = { "n", 242358 },	-- Kuri
 							["coord"] = { 67.8, 27.5, MAP.MIDNIGHT.HARANDAR },
-							["groups"] = { i(240485) },	-- Intact Saptor Frond (QI!)
+							["qi"] = 240485,	-- Intact Saptor Frond (QI!)
 						}),
 						q(90469, {	-- Carry On, Wayward Kuri
 							["sourceQuests"] = {
@@ -729,7 +725,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90537 },	-- Late Bloomers
 						["provider"] = { "n", 243053 },	-- Ney'leia
 						["coord"] = { 48.9, 29.7, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(242226) },	-- Stolen Seeds (QI!)
+						["qi"] = 242226,	-- Stolen Seeds (QI!)
 					}),
 					q(90963, {	-- Caves of the Cleft
 						["sourceQuests"] = {
@@ -761,8 +757,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90963 },	-- Caves of the Cleft
 						["provider"] = { "n", 245166 },	-- Ney'leia
 						["coord"] = { 49.7, 23.3, MAP.MIDNIGHT.HARANDAR },
+						["qi"] = 246117,	-- Carved Key (QI!)
 						["groups"] = {
-							i(246117),	-- Carved Key (QI!)
 							o(553808, {	-- Gomphusta's Chest
 								["coord"] = { 48.6, 22.4, MAP.MIDNIGHT.HARANDAR },
 								["groups"] = { i(246120) },	-- Cultivation Notes (QI!)
@@ -782,7 +778,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91346 },	-- Supplicants to The Goddess
 						["provider"] = { "n", 246607 },	-- Greenspeaker Cyenna
 						["coord"] = { 65.4, 28.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(246886) },	-- Harmonious Lash (QI!)
+						["qi"] = 246886,	-- Harmonious Lash (QI!)
 					}),
 					q(91360, {	-- Weeding Out the Unwanted
 						["sourceQuests"] = { 91346 },	-- Supplicants to The Goddess
@@ -913,9 +909,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86930 },	-- To Sow the Seed
 						["provider"] = { "n", 247936 },	-- Yu'relen
 						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = {
-							i(246923),	-- Frillfish Fillet (QI!)
-							i(246924),	-- Root Drift Jelly (QI!)
+						["qis"] = {
+							246923,	-- Frillfish Fillet (QI!)
+							246924,	-- Root Drift Jelly (QI!)
 						},
 					}),
 					q(91586, {	-- Soil-based Alternatives
@@ -946,7 +942,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 86930 },	-- To Sow the Seed
 						["provider"] = { "n", 247936 },	-- Yu'relen
 						["coord"] = { 40.9, 23.2, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(246942) },	-- Corpse Rind (QI!)
+						["qi"] = 246942,	-- Corpse Rind (QI!)
 					}),
 					q(91588, {	-- Harandar's Kitchen
 						["sourceQuests"] = {
@@ -975,7 +971,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 91375,	-- The Silence at Fungara Village
 						["provider"] = { "n", 246777 },	-- Ghikal
 						["coord"] = { 43.9, 71.7, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(247243) },	-- Strange Mycelium (QI!)
+						["qi"] = 247243,	-- Strange Mycelium (QI!)
 					}),
 					q(91377, {	-- Spawn of the Dead
 						["sourceQuest"] = 91375,	-- The Silence at Fungara Village
@@ -1028,7 +1024,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 91873 },	-- Buffer Zone
 						["provider"] = { "n", 252497 },	-- Hagar
 						["coord"] = { 42.3, 34.1, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(252649) },	-- Verdant Stalker Sludge (QI!)
+						["qi"] = 252649,	-- Verdant Stalker Sludge (QI!)
 					}),
 					q(91874, {	-- Flare Up
 						["sourceQuests"] = { 91875 },	-- Natural Remedy
@@ -1055,10 +1051,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92882 },	-- A Hunter's Plight
 						["provider"] = { "n", 253392 },	-- Akazi
 						["coord"] = { 70.5, 50.7, MAP.MIDNIGHT.HARANDAR },
+						["qis"] = {
+							255259,	-- Chloroceros Bone (QI!)
+							255258,	-- Grovecrawler Fang (QI!)
+							255260,	-- Lasher Vine (QI!)
+						},
 						["groups"] = {
-							i(255259),	-- Chloroceros Bone (QI!)
-							i(255258),	-- Grovecrawler Fang (QI!)
-							i(255260),	-- Lasher Vine (QI!)
 							o(584525, {	-- Sporeglider's Tail Spore
 								["coords"] = {
 									{ 69.4, 43.1, MAP.MIDNIGHT.HARANDAR },
@@ -1118,7 +1116,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 92695 },	-- The Stroke of Storms
 						["provider"] = { "n", 252872 },	-- Orn'shan
 						["coord"] = { 72.4, 55.7, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(258571) },	-- Mushroom Pigment (QI!)
+						["qi"] = 258571,	-- Mushroom Pigment (QI!)
 					}),
 					q(92697, {	-- Hues of Tomorrow
 						["sourceQuests"] = { 92696 },	-- Colors Reborn Anew
@@ -1267,8 +1265,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90824 },	-- My Brother's Alive!
 						["provider"] = { "n", 244242 },	-- En'liahn
 						["coord"] = { 43.1, 61.4, MAP.MIDNIGHT.HARANDAR },
+						["qi"] = 246118,	-- En'liahn's Jug (QI!)
 						["groups"] = {
-							i(246118),	-- En'liahn's Jug (QI!)
 							o(539208, {	-- Healing Waters of Ahl'ua
 								["coords"] = {
 									{ 39.7, 53.1, MAP.MIDNIGHT.HARANDAR },
@@ -1294,7 +1292,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuests"] = { 90824 },	-- My Brother's Alive!
 						["provider"] = { "n", 244242 },	-- En'liahn
 						["coord"] = { 43.1, 61.4, MAP.MIDNIGHT.HARANDAR },
-						["groups"] = { i(243598) },	-- Phytogenic Poison Part (QI!)
+						["qi"] = 243598,	-- Phytogenic Poison Part (QI!)
 					}),
 					q(90829, {	-- Meeting My Mentor
 						["sourceQuests"] = {
@@ -1415,23 +1413,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["isWeekly"] = true,	-- Probably? Blue !
 		}, {
 			q(92013, {	-- WANTED: Dionaea's Thorntusks
-				["groups"] = { i(249408) },	-- Thorntusks of Dionaea (QI!)
+				["qi"] = 249408,	-- Thorntusks of Dionaea (QI!)
 			}),
 			q(91970),	-- WANTED: Gelatonius
 			q(92012, {	-- WANTED: Gorebarb's Pincers
-				["groups"] = { i(249406) },	-- Gorebarb's Pincers (QI!)
+				["qi"] = 249406,	-- Gorebarb's Pincers (QI!)
 			}),
 			q(91980, {	-- WANTED: Hellebora's Thorn
-				["groups"] = { i(249402) },	-- Hellebora's Thorn (QI!)
+				["qi"] = 249402,	-- Hellebora's Thorn (QI!)
 			}),
 			q(91998, {	-- WANTED: Muckmire's Choking Vines
-				["groups"] = { i(249404) },	-- Choking Vines (QI!)
+				["qi"] = 249404,	-- Choking Vines (QI!)
 			}),
 			q(92010, {	-- WANTED: Slewstalk's Stalks
-				["groups"] = { i(249405) },	-- Luminescent Stalks (QI!)
+				["qi"] = 249405,	-- Luminescent Stalks (QI!)
 			}),
 			q(91982, {	-- WANTED: Toadshade's Petals
-				["groups"] = { i(249403) },	-- Toadshade Petals (QI!)
+				["qi"] = 249403,	-- Toadshade Petals (QI!)
 			}),
 		})),
 	}),
