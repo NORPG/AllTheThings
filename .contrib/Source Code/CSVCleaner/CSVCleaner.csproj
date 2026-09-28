@@ -18,6 +18,13 @@
     <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Platform)'=='x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <PublishAot>False</PublishAot>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <OutputPath>..\..\.builds\CSVCleaner\x86\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebugType>full</DebugType>
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
@@ -29,7 +36,15 @@
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
   <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64'" Text="CSVCleaner supports only the x64 platform in this revision." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="CSVCleaner supports only the x64 and x86 platforms. Select one in Parser.sln." />
   </Target>
 </Project>
