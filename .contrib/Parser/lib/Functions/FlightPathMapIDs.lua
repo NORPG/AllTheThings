@@ -1,24 +1,7 @@
 do
--- Contains various information which should be exported by the Parser into addon-visible DB files whose names
--- & addon DB assignment match the respective key of the ExportDB
--- This allows us to keep DB information in one place, usable both for parsing and in the addon
-ExportDB.OnUpdateDB.FOR_CRAFTER = [[~function(t)
-	t.visible = nil;
-	t.collectible = nil;
-	if _.MODE_DEBUG_OR_ACCOUNT then
-		return false;
-	else
-		local skills = _.CurrentCharacter.ActiveSkills;
-		if skills[2018] or skills[2108] or skills[3908] then
-			return false;
-		end
-		t.collectible = false;
-		t.visible = false;
-		return true;
-	end
-end]];
-
-
+-- #if FOREVER
+if true then return; end
+-- #endif
 
 -- FlightPathDB --
 -- Represents the mapID used by the game to show FlightPaths at a Flight Master

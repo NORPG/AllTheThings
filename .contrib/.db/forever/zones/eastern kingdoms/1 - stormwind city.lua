@@ -1728,12 +1728,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["lvl"] = 26,
 				["groups"] = {
 					objective(1, {	-- 0/1 Ur's Treatise on Shadow Magic
-						["providers"] = {
+						providers = {
 							{ "i",   7266 },	-- Ur's Treatise on Shadow Magic
 							{ "o", 103628 },	-- Ur's Treatise on Shadow Magic
 						},
-						["coord"] = { 75.6, 37.6, MAP.REDRIDGE_MOUNTAINS },
-						["description"] = "Located in one of the bookshelves at the top of the tower.",
+						coord = { 70.6, 37.6, MAP.REDRIDGE_MOUNTAINS },
+						description = "Located in one of the bookshelves at the top of the tower.",
 					}),
 				},
 			}),

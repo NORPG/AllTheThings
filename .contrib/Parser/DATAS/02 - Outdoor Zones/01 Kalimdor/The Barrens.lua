@@ -2674,7 +2674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 211419, 1 },	-- Handful of Shifting Scales
 						{ "g", 50000 },	-- 5g
 					},
-					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
+					["OnUpdate"] = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
 					["groups"] = {
 						i(211420, {	-- Shifting Scale Talisman
 							["timeline"] = { REMOVED_2_0_1 },
@@ -2785,7 +2785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
 					["timeline"] = { REMOVED_2_0_1 },
-					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
+					["OnUpdate"] = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
 					["lvl"] = 20,
 				})),
 				-- #endif

@@ -35,9 +35,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(5, {	-- Lakeshire, Redridge
-					["cr"] = 931,	-- Ariena Stormfeather <Gryphon Master>
-					["coord"] = { 30.6, 59.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					cr = 931,	-- Ariena Stormfeather <Gryphon Master>
+					coord = { 25.5, 59.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
 				}),
 			}),
 			lockpicking({
@@ -157,11 +157,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(128, {	-- Blackrock Bounty
-					["qg"] = 903,	-- Guard Howe
-					["coord"] = { 26.5, 57.9, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
-					["groups"] = {
+					qg = 903,	-- Guard Howe
+					coord = { 26.5, 57.9, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 20,
+					groups = {
 						objective(1, {	-- 0/15 Blackrock Champion
 							provider = { "n", 435 },	-- Blackrock Champion
 						}),
@@ -240,10 +240,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "i",  10958 },	-- Hilary's Necklace (QI!)
 								{ "o", 154357 },	-- Glinting Mud
 							},
-							["coords"] = {
-								{ 19.3, 51.8, MAP.REDRIDGE_MOUNTAINS },
-								{ 25.9, 54.1, MAP.REDRIDGE_MOUNTAINS },
-								{ 37.8, 54.4, MAP.REDRIDGE_MOUNTAINS },
+							coords = {
+								{ 14.3, 51.8, MAP.REDRIDGE_MOUNTAINS },
+								{ 21.9, 54.1, MAP.REDRIDGE_MOUNTAINS },
+								{ 32.8, 54.4, MAP.REDRIDGE_MOUNTAINS },
 							},
 						}),
 					},
@@ -256,9 +256,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					lvl = 15,
 					groups = {
 						objective(1, {	-- 0/1 Yowler's Paw
-							["provider"] = { "i", 3614 },	-- Yowler's Paw (QI!)
-							["coord"] = { 28.8, 23.2, MAP.REDRIDGE_MOUNTAINS },
-							["cr"] = 518,	-- Yowler
+							provider = { "i", 3614 },	-- Yowler's Paw (QI!)
+							coord = { 27.0, 20.0, MAP.REDRIDGE_MOUNTAINS },
+							cr = 518,	-- Yowler
 						}),
 						i(1319),	-- Ring of Iron Will
 						i(2910),	-- Gold Militia Boots
@@ -380,12 +380,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(347, {	-- Rethban Ore
-					["sourceQuest"] = 345,	-- Ink Supplies (Elwynn Forest)
-					["qg"] = 341,	-- Foreman Oslow
-					["coord"] = { 32.2, 48.6, MAP.REDRIDGE_MOUNTAINS },
-					["cost"] = { { "i", 2798, 5 } },	-- Rethban Ore
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
+					sourceQuest = 345,	-- Ink Supplies (Elwynn Forest)
+					qg = 341,	-- Foreman Oslow
+					coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
+					cost = { { "i", 2798, 5 } },	-- Rethban Ore
+					races = ALLIANCE_ONLY,
+					lvl = 20,
 				}),
 				q(119, {	-- Return to Verner
 					sourceQuest = 118,	-- The Price of Shoes
@@ -425,9 +425,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					lvl = 18,
 					groups = {
 						objective(1, {	-- 0/3 Midnight Orb
-							["provider"] = { "i", 1261 },	-- Midnight Orb (QI!)
-							["coord"] = { 68.6, 57.6, MAP.REDRIDGE_MOUNTAINS },
-							["cr"] = 436,	-- Blackrock Shadowcaster
+							provider = { "i", 1261 },	-- Midnight Orb (QI!)
+							coord = { 63.6, 57.6, MAP.REDRIDGE_MOUNTAINS },
+							cr = 436,	-- Blackrock Shadowcaster
 						}),
 					},
 				}),
@@ -461,11 +461,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(91, {	-- Solomon's Law
-					["qg"] = 900,	-- Bailiff Conacher
-					["coord"] = { 24.6, 44.3, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 17,
-					["groups"] = {
+					qg = 900,	-- Bailiff Conacher
+					coord = { 24.6, 44.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 17,
+					groups = {
 						objective(1, {	-- 0/10 Shadowhide Pendant
 							provider = { "i", 1075 },	-- Shadowhide Pendant (QI!)
 							crs = {
@@ -489,20 +489,20 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					lvl = 18,
 					groups = {
 						objective(1, {	-- 0/1 Tharil'zun's Head
-							["provider"] = { "i", 1260 },	-- Tharil'zun's Head (QI!)
-							["coord"] = { 68.4, 58.8, MAP.REDRIDGE_MOUNTAINS },
-							["cr"] = 486,	-- Tharil'zun
+							provider = { "i", 1260 },	-- Tharil'zun's Head (QI!)
+							coord = { 63.4, 58.8, MAP.REDRIDGE_MOUNTAINS },
+							cr = 486,	-- Tharil'zun
 						}),
 						i(1276),	-- Fire Hardened Buckler
 						i(6093),	-- Orc Crusher
 					},
 				}),
 				q(89, {	-- The Everstill Bridge
-					["qg"] = 341,	-- Foreman Oslow
-					["coord"] = { 32.2, 48.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					qg = 341,	-- Foreman Oslow
+					coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/5 Iron Pike
 							provider = { "i", 2856 },	-- Iron Pike (QI!)
 							crs = {
@@ -529,17 +529,17 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(125, {	-- The Lost Tools
-					["qg"] = 341,	-- Foreman Oslow
-					["coord"] = { 32.2, 48.7, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					qg = 341,	-- Foreman Oslow
+					coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/1 Oslow's Toolbox
-							["providers"] = {
+							providers = {
 								{ "i", 1309 },	-- Oslow's Toolbox (QI!)
 								{ "o",   32 },	-- Sunken Chest
 							},
-							["coord"] = { 41.5, 54.68, MAP.REDRIDGE_MOUNTAINS },
+							coord = { 36.5, 54.68, MAP.REDRIDGE_MOUNTAINS },
 						}),
 						i(2313),	-- Medium Armor Kit
 					},
@@ -607,28 +607,45 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					lvl = 12,
 				}),
 				q(169, {	-- Wanted: Gath'Ilzogg
-					["provider"] = { "o", 60 },	-- Wanted: Gath'Ilzogg
-					["coord"] = { 29.6, 46.2, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					provider = { "o", 60 },	-- Wanted: Gath'Ilzogg
+					coord = { 24.6, 46.2, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/1 Head of Gath'Ilzogg
-							["provider"] = { "i", 3633 },	-- Head of Gath'Ilzogg (QI!)
-							["coord"] = { 69.6, 55.8, MAP.REDRIDGE_MOUNTAINS },
-							["cr"] = 334,	-- Gath'Ilzogg <Warlord of the Blackrock Clan>
+							provider = { "i", 3633 },	-- Head of Gath'Ilzogg (QI!)
+							coord = { 64.6, 55.8, MAP.REDRIDGE_MOUNTAINS },
+							cr = 334,	-- Gath'Ilzogg <Warlord of the Blackrock Clan>
 						}),
 					},
 				}),
+				q(95999, {	-- Wanted: Insinerator Gar'im
+					provider = { "o", 649051 },	-- Wanted: Insinerator Gar'im
+					coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
+						objective(1, {	-- 0/1 Broken Staff of Incinerator Gar'im
+							provider = { "i", 271872 },	-- Broken Staff of Incinerator Gar'im (QI!)
+							coord = { 77.8, 86.6, MAP.REDRIDGE_MOUNTAINS },
+							cr = 214519,	-- Incinerator Gar'im
+						}),
+						i(277234),	-- Alacritous Treads
+						i(277226),	-- Disjointed Shoes
+						i(277218),	-- Incinerator's Boots
+					},
+				}),
 				q(180, {	-- Wanted: Lieutenant Fangore
-					["provider"] = { "o", 47 },	-- Wanted: Lieutenant Fangore
-					["coord"] = { 26.7, 46.5, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					provider = { "o", 47 },	-- Wanted: Lieutenant Fangore
+					coord = { 21.7, 46.5, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/1 Fangore's Paw
-							["provider"] = { "i", 3632 },	-- Fangore's Paw (QI!)
-							["coord"] = { 80.0, 39.0, MAP.REDRIDGE_MOUNTAINS },
-							["cr"] = 703,	-- Lieutenant Fangore
+							provider = { "i", 3632 },	-- Fangore's Paw (QI!)
+							coord = { 75.0, 39.0, MAP.REDRIDGE_MOUNTAINS },
+							cr = 703,	-- Lieutenant Fangore
 						}),
 					},
 				}),
@@ -903,7 +920,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 74.5, 79.6, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						-- No longer sells any of this stuff after 4.0.3
 						i(4790, {	-- Inferno Cloak
 							isLimited = true,
 						}),
@@ -1193,9 +1209,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3091, {	-- Franklin Hamar <Tailoring Supplies>
-					["coord"] = { 27.2, 45.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 22.1, 45.6, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(253665, {	-- Pattern: Linen Reagent Bag
 							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
@@ -1314,9 +1330,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(3085, {	-- Gloria Femmel <Cooking Supplies>
-					["coord"] = { 26.7, 43.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 21.5, 43.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
@@ -2083,7 +2099,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2798, {	-- Rethban Ore
-					["providers"] = {
+					providers = {
 						{ "n", 580 },	-- Redridge Drudger
 						{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
 						{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
@@ -2116,10 +2132,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						14270,	-- Squiddic
 					},
 					["coords"] = {
-						{ 37.8, 41.4, MAP.REDRIDGE_MOUNTAINS },
-						{ 36.4, 43.8, MAP.REDRIDGE_MOUNTAINS },
-						{ 57.8, 51.8, MAP.REDRIDGE_MOUNTAINS },
-						{ 41.8, 48.2, MAP.REDRIDGE_MOUNTAINS },
+						{ 32.8, 41.4, MAP.REDRIDGE_MOUNTAINS },
+						{ 31.4, 43.8, MAP.REDRIDGE_MOUNTAINS },
+						{ 52.8, 51.8, MAP.REDRIDGE_MOUNTAINS },
+						{ 36.8, 48.2, MAP.REDRIDGE_MOUNTAINS },
 					},
 				}),
 				i(2175, {	-- Shadowhide Battle Axe

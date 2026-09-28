@@ -1106,7 +1106,7 @@ q(391,{coords={
 [1453]={{51.6,69.4}}},lvl=16,qgs={1719},r=2,sourceQuests={389},g={
 qo(1,{providers={{"i",2926}}})}}),
 q(386,{coords={
-[1433]={{26,43}}},lvl=22,qgs={859},r=2,g={
+[1433]={{21.2,46.6}}},lvl=22,qgs={859},r=2,g={
 qo(1,{providers={{"i",3630}}}),
 s(156262,1317,{f=28}),
 s(157286,3400,{f=25})}})}),
@@ -3324,14 +3324,14 @@ r(14891,{learnedAt=230,requireSkill=186,skillID=2946})}}),
 q(4183,{coords={
 [1428]={{85.8,69}}},lvl=48,qgs={9562},qis={11366},r=2,rwp=30002,sourceQuests={4182}}),
 q(4184,{coords={
-[1433]={{30,44.5}}},lvl=48,qgs={344},qis={11367},r=2,rwp=30002,sourceQuests={4183}}),
+[1433]={{24.9,44.4}}},lvl=48,qgs={344},qis={11367},r=2,rwp=30002,sourceQuests={4183}}),
 q(4185,{coords={
 [1453]={{78.2,18.1}}},lvl=48,qgs={1748},r=2,rwp=30002,sourceQuests={4184},g={
 qo(1,{providers={{"n",1749}}})}}),
 q(4186,{coords={
 [1453]={{78.2,18.1}}},lvl=48,qgs={1748},qis={11368},r=2,rwp=30002,sourceQuests={4185}}),
 q(4223,{coords={
-[1433]={{30,44.5}}},lvl=48,qgs={344},r=2,rwp=30002,sourceQuests={4186}}),
+[1433]={{24.9,44.4}}},lvl=48,qgs={344},r=2,rwp=30002,sourceQuests={4186}}),
 q(4224,{coords={
 [1428]={{84.74,69.02}}},lvl=48,qgs={9560},r=2,rwp=30002,sourceQuests={4223},g={
 qo(1,{coords={

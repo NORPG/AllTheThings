@@ -925,7 +925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(PROFESSIONS, {
 						n(212159, {	-- Old Serra'kis <The Devoured>
 							["sourceQuest"] = 78907,	-- Speak to the Dead
-							["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
+							["OnUpdate"] = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
 							["groups"] = {
 								i(211419),	-- Handful of Shifting Scales
 							},
@@ -934,7 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 211420 },	-- Shifting Scale Talisman
 							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
 							["timeline"] = { REMOVED_2_0_1 },
-							["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
+							["OnUpdate"] = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
 							["groups"] = {
 								i(211421),	-- The Box
 							},

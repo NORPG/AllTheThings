@@ -2828,7 +2828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 17.3, 26.7, ASHENVALE },
 					["cost"] = { { "i", 210708, 1 } },	-- Elixir of Coalesced Regret
 					["timeline"] = { REMOVED_2_0_1 },
-					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
+					["OnUpdate"] = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
 				})),
 				-- #endif
 				q(13962, {	-- Stalemate

@@ -6,6 +6,7 @@
 	<Script file="Categories/HiddenQuestTriggers.lua"/>
 	<Script file="Categories/Holidays.lua"/>
 	<Script file="Categories/Instances.lua"/>
+	<Script file="Categories/NeverImplemented.lua"/>
 	<Script file="Categories/Professions.lua"/>
 	<Script file="Categories/PVP.lua"/>
 	<Script file="Categories/Unsorted.lua"/>

@@ -4,13 +4,13 @@ _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local hqt,inst,m,x=_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{awp=10100,g={
-m(1415,{
+m(1415,{maps={1463},g={
 m(1434,{
 hqt(7908,{awp=11201}),
 hqt(618),
 hqt(614),
 hqt(615,{awp=11201}),
-hqt(620,{awp=11201})})}),
+hqt(620,{awp=11201})})}}),
 inst(760,{isRaid=1,g={
 hqt(76175)}})}})}
 end)
