@@ -2775,11 +2775,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 29460, 1 } },	-- Ethereum Prison Key (required to summon/"release" mobs)
 						["groups"] = {
 							i(31957),	-- Ethereum Prisoner I.D. Tag
-							i(31581),	-- Slatesteel Boots
-							i(31565),	-- Skystalker's Boots
-							i(31557),	-- Windchanneller's Boots
 							i(32520),	-- Manaforged Sphere
-							i(31573),	-- Mistshroud Boots
 							i(31938),	-- Enigmatic Cloak
 							i(31943),	-- Ethereum Band
 							i(31940),	-- Ethereum Torque
@@ -2792,6 +2788,26 @@ root(ROOTS.Zones, {
 							i(31928),	-- Dark Band
 							i(31925),	-- Fiery Band
 							i(31927),	-- Living Band
+							n(20783, {	-- Porfus the Gem Gorger (Cloth)
+								["groups"] = {
+									i(31557),	-- Windchanneller's Boots
+								},
+							}),
+							n(20788, {	-- Forgosh (Leather)
+								["groups"] = {
+									i(31565),	-- Skystalker's Boots
+								},
+							}),
+							n(20785, {	-- Fel Tinkerer Zortan (Mail)
+								["groups"] = {
+									i(31573),	-- Mistshroud Boots
+								},
+							}),
+							n(20790, {	-- Malevus the Mad (Plate)
+								["groups"] = {
+									i(31581),	-- Slatesteel Boots
+								},
+							}),
 						},
 					}),
 					i(22530, {	-- Formula: Enchant Bracer - Greater Dodge / TBC: Formula: Enchant Bracer - Major Defense (RECIPE!)
