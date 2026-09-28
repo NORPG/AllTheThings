@@ -30,7 +30,7 @@ call :download WorldMapOverlay
 
 @REM Run the locale update script from its own folder
 pushd "%~dp0localized"
-call "Update Wago Build Files.bat" %BUILD%
+call ".update.bat" %BUILD%
 popd
 
 exit /b
@@ -58,5 +58,7 @@ exit /b
 :downloadcleaned
 call :download %1
 echo Cleaning %1...
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "..\%1.regex"
+cd "..\..\..\..\..\.tools\"
+call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
+cd /d "%~dp0"
 exit /b

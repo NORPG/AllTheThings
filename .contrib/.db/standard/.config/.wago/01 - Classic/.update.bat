@@ -19,8 +19,6 @@ call :download UiMap
 call :download UiMapAssignment
 call :download WorldMapOverlay
 
-@REM Cleanup the SpellEffect file
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.%BUILD%.csv" "..\SpellEffect.regex"
 exit /b
 
 :download
@@ -44,5 +42,7 @@ exit /b
 :downloadcleaned
 call :download %1
 echo Cleaning %1...
-call "..\..\Release\net8.0\CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "..\..\%1.regex"
+cd "..\..\..\..\..\.tools\"
+call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
+cd /d "%~dp0"
 exit /b

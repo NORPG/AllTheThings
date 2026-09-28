@@ -88,5 +88,7 @@ exit /b
 :downloadcleaned
 call :download %1
 echo Cleaning %1...
-call "..\..\Release\net8.0\CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "..\..\%1.regex"
+cd "..\..\..\..\..\.tools\"
+call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
+cd /d "%~dp0"
 exit /b

@@ -1,21 +1,27 @@
 @echo off
-SET BUILD=2.5.6.69795
+SET BUILD=5.5.0.60481
 
 @REM Download new file versions
+call :download Achievement
 call :downloadrenamed AreaTable areatable
+call :downloadrenamed BattlePetSpecies battlepetspecies
 call :download ContentTuning
+call :download Criteria
+call :download CriteriaTree
+call :download GlyphProperties
+call :downloadrenamed Holiday Holidays
 call :download Item
 call :download ItemEffect
-call :download ItemModifiedAppearance
 call :download ItemSearchName
 call :download ModifierTree
-call :download SpellEffect
+call :downloadcleaned SpellEffect
 call :download TaxiNodes
+call :download TransmogSet
+call :download TransmogSetItem
 call :download UiMap
 call :download UiMapAssignment
+call :downloadrenamed WorldMapOverlay worldmapoverlay
 
-@REM Cleanup the SpellEffect file
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.%BUILD%.csv" "..\SpellEffect.regex"
 exit /b
 
 :download
@@ -34,4 +40,12 @@ if not exist "%1.%BUILD%.csv" (
 	)
 	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
+exit /b
+
+:downloadcleaned
+call :download %1
+echo Cleaning %1...
+cd "..\..\..\..\..\.tools\"
+call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
+cd /d "%~dp0"
 exit /b

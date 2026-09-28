@@ -15,14 +15,14 @@ call :download GlyphProperties
 call :downloadrenamed Holiday Holidays
 call :download HouseDecor
 call :download Item
-call :download ItemBonus
+call :downloadcleaned ItemBonus
 call :download ItemEffect
 call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
 call :download ModifierTree
 call :download SkillLineAbility
-call :download SpellEffect
+call :downloadcleaned SpellEffect
 call :download TaxiNodes
 call :download TransmogSet
 call :download TransmogSetItem
@@ -30,15 +30,6 @@ call :download UiMap
 call :download UiMapAssignment
 call :download WorldMapOverlay
 
-@REM Run the locale update script from its own folder
-pushd "%~dp0localized"
-call "Update Wago Build Files.bat"
-popd
-
-@REM Cleanup the ItemBonus file
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\ItemBonus.csv" "..\ItemBonus.regex"
-@REM Cleanup the SpellEffect file
-call "..\Release\net8.0\CSVCleaner.exe" "%~dp0\SpellEffect.csv" "..\SpellEffect.regex"
 exit /b
 
 :download
@@ -47,4 +38,12 @@ exit /b
 
 :downloadrenamed
 curl -o "%1.csv" "https://wago.tools/db2/%2/csv"
+exit /b
+
+:downloadcleaned
+call :download %1
+echo Cleaning %1...
+cd "..\..\..\..\..\.tools\"
+call "CSVCleaner.exe" "%~dp0\%1.csv" "%1.regex"
+cd /d "%~dp0"
 exit /b
