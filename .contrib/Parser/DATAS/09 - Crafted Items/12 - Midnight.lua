@@ -2483,9 +2483,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(97517, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97518, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97519, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
-			--q(98507),	-- ??
-			--q(98508),	-- ??
-			--q(98509),	-- ??
 		}),
 		prof(MINING, {
 			q(87670),	-- 40/40 Over-LODED

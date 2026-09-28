@@ -817,6 +817,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91415),	-- After choosing a Preference Killing
 			q(98337, { ["timeline"] = { ADDED_12_1_0 } }),	-- First Prey completed in MID:S2
 			q(98456, name(HEADERS.Item, 274422, { ["timeline"] = { ADDED_12_1_0 } })),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
+			-- Renown levels, per character when unlocked?
+			-- q(98507, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 2, weekly assumed. possibly daily?
+			-- q(98508, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 3, weekly assumed. possibly daily?
+			-- q(98509, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 4, weekly assumed. possibly daily?
 		}),
 	}),
 }))
