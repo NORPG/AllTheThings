@@ -263,13 +263,13 @@ namespace ATT
                 if (!Framework.HasConfig())
                 {
                     // Ensure the Parser uses the default config if nothing is specified.
-                    Framework.InitConfigSettings(".config/retail/retail.config");
+                    Framework.InitConfigSettings("../.db/standard/.config/retail/retail.config");
 #if DEBUG
-                    Framework.InitConfigSettings(".config/retail/debug.config");
+                    Framework.InitConfigSettings("../.db/standard/.config/retail/debug.config");
 #endif
                 }
 
-                Framework.InitConfigSettings(".config/root.config");
+                Framework.InitConfigSettings("../.db/shared/.config/root.config");
 
                 Framework.Objects.SINGULAR_PLURAL_FIELDS_LONG = Framework.Config["SINGULAR_PLURAL_FIELDS_LONG"];
                 Framework.Objects.NON_SORTED_FIELDS = Framework.Config["NON_SORTED_FIELDS"];
@@ -289,7 +289,7 @@ namespace ATT
                 return ErrorCode;
             }
 
-            // Default is relative to where the executable is. (.contrib/Parser)
+            // Default is relative to where the executable is. (.contrib/.tools)
             string addonRootFolder = Framework.Config["root-addon"] ?? "../..";
             string dbRootFolder = Framework.Config["db-relative"] ?? Framework.GetBaseDBRootFolder();
 
@@ -455,7 +455,7 @@ namespace ATT
                 }
 
                 // Load the main lua header file and all associated lib files first.
-                string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
+                string databaseRootFolder = Framework.Config["root-data"] ?? "./../.db/standard";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
                 luaFiles.Sort(StringComparer.InvariantCulture);
                 try
@@ -977,7 +977,7 @@ namespace ATT
             builder.Append("-- ").Append(shortname).AppendLine();
 
             // Are we already using the Retail DB?
-            string filename = ".\\DATAS\\" + shortname;
+            string filename =  (Framework.Config["root-data"] ?? "./../.db/standard/").Replace("/","\\") + shortname;
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;
