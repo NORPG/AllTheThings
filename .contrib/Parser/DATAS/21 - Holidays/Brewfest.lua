@@ -1578,7 +1578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qis"] = {
 						33306,	-- Ram Racing Reins
 						33797,	-- Portable Brewfest Keg
-						},
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 38.6, DUN_MOROGH },
@@ -1596,7 +1596,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qis"] = {
 						33306,	-- Ram Racing Reins
 						33797,	-- Portable Brewfest Keg
-						},
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 17.6, DUROTAR },
@@ -2212,7 +2212,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qis"] = {
 						33306,	-- Ram Racing Reins
 						33797,	-- Portable Brewfest Keg
-						},
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 38.6, DUN_MOROGH },
@@ -2231,7 +2231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["qis"] = {
 						33306,	-- Ram Racing Reins
 						33797,	-- Portable Brewfest Keg
-						},
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 17.6, DUROTAR },
