@@ -3488,6 +3488,50 @@ for i,o in ipairs({
 			]]--
 		},
 	})),
+	--[[ TODO: going to collapse this nesting of real Instance groups just for duped drops of flowers
+	However right now NPC Filler ignores filling into Encounters since there's no way to distinguish proper difficulty of the Encounter from NPCID alone. So will figure out what to do to make this work.
+	applyevent(EVENTS.LOVE_IS_IN_THE_AIR,
+	n(COMMON_BOSS_DROPS, {
+		i(22206, {	-- Bouquet of Red Roses
+			crs = {
+				23953,	-- Prince Keleseth
+				39679,	-- Corla, Herald of Twilight
+				54445,	-- Echo of Jaina
+				40319,	-- Drahga Shadowburner
+				54968,	-- Asira Dawnslayer
+				46964,	-- Lord Godfrey
+				47626,	-- Admiral Ripsnarl
+				42333,	-- High Priestess Azil
+			},
+		}),
+		i(44731, {	-- Bouquet of Ebon Roses
+			crs = {
+				27975,	-- Maiden of Grief
+				54123,	-- Echo of Sylvanas
+				46964,	-- Lord Godfrey
+				47626,	-- Admiral Ripsnarl
+				75509,	-- Sadana Bloodfury
+			},
+			timeline = { ADDED_3_0_3 },
+		}),
+		i(188693, {	-- Pouch of Red Rose Petals
+			crs = {
+				39679,	-- Corla, Herald of Twilight
+			},
+			timeline = { ADDED_9_1_5 },
+		}),
+		i(188692, {	-- Pouch of Ebon Rose Petals
+			crs = {
+				177269,	-- So'leah
+				164266,	-- Domina Venomblade
+			},
+			timeline = { ADDED_9_1_5 },
+			-- #if AFTER 10.2.5
+			description = "Does NOT give progression towards 'Traveler's Log - Love is in the Air: Throw Rose Petals on Players'.",
+			-- #endif
+		}),
+	})),
+	--]]
 	expansion(EXPANSION.WRATH, {
 		inst(277, {	-- Halls of Stone
 			["maps"] = { HALLS_OF_STONE },
