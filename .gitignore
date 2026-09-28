@@ -5,7 +5,6 @@
 .contrib/Harvesters/*.json
 .contrib/Parser/Parser.exe.config
 .contrib/Parser/Parser.pdb
-.contrib/Parser/Debug/
 .contrib/Parser/Parser V2.exe.config
 .contrib/Parser/Parser V2.pdb
 .contrib/Debugging/
