@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32526.322
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12217.157 stable
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Build Tool", "Build Tool\Build Tool.csproj", "{8E1C5ED4-274D-4668-96B5-050C29DF0150}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{A4B72C2C-EE53-4224-9EE0-69BE1F190C1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATT Sync Tool", "ATT Sync Tool\ATT Sync Tool.csproj", "{372B2DCF-17CA-43B4-B6EE-88F0D392C6D7}"
@@ -30,20 +28,6 @@ Global
 		Retail|Any CPU = Retail|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic Era|Any CPU.ActiveCfg = Classic Era|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic Era|Any CPU.Build.0 = Classic Era|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic TBC|Any CPU.ActiveCfg = Classic TBC|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic TBC|Any CPU.Build.0 = Classic TBC|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic Wrath|Any CPU.ActiveCfg = Classic Wrath|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic Wrath|Any CPU.Build.0 = Classic Wrath|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic|Any CPU.ActiveCfg = Classic|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Classic|Any CPU.Build.0 = Classic|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Debug|Any CPU.ActiveCfg = Retail|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Debug|Any CPU.Build.0 = Retail|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Release|Any CPU.ActiveCfg = Retail|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Release|Any CPU.Build.0 = Retail|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Retail|Any CPU.ActiveCfg = Retail|Any CPU
-		{8E1C5ED4-274D-4668-96B5-050C29DF0150}.Retail|Any CPU.Build.0 = Retail|Any CPU
 		{A4B72C2C-EE53-4224-9EE0-69BE1F190C1A}.Classic Era|Any CPU.ActiveCfg = Classic Era|x86
 		{A4B72C2C-EE53-4224-9EE0-69BE1F190C1A}.Classic Era|Any CPU.Build.0 = Classic Era|x86
 		{A4B72C2C-EE53-4224-9EE0-69BE1F190C1A}.Classic TBC|Any CPU.ActiveCfg = Classic TBC|x86
