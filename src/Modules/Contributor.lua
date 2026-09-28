@@ -84,6 +84,13 @@ local LorewalkingIgnoredReportTypes = {
 	Quest = true,
 	["Inaccurate Unflagged Quests"] = true,
 }
+local ReportTitleSuffixFuncs = {
+	Quest = function()
+		local mapID, px, py, fake = app.GetPlayerPosition()
+		local mapName = app.GetMapName(mapID)
+		return " ("..(mapName or "Unknown Map")..")"
+	end,
+}
 local function DoReport(reporttype, id)
 	-- ignore certain contrib reports if the player is in Lorewalking
 	if LorewalkingIgnoredReportTypes[reporttype] and GetPlayerAura(463943) then return end
@@ -138,7 +145,12 @@ local function DoReport(reporttype, id)
 		keyedData[#keyedData + 1] = val
 	end
 	-- common report data
-	reportData[#reportData + 1] = "### "..reporttype..":"..id
+	local headerTitle = "### "..reporttype..":"..id
+	local titleSuffix = ReportTitleSuffixFuncs[reporttype]
+	if titleSuffix then
+		headerTitle = headerTitle..titleSuffix()
+	end
+	reportData[#reportData + 1] = headerTitle
 	reportData[#reportData + 1] = "```vbnet"	-- discord fancy box start (testing: https://highlightjs.org/demo)
 	-- add distinct ordered/keyed data
 	app.ArrayAppendDistinct(reportData, orderedReportData, keyedData)

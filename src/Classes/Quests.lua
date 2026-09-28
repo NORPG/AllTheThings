@@ -919,7 +919,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 				RealQuest = realQuest and true or false,
 			};
 			app.Modules.Contributor.AddReportData(
-				questType,
+				"Quest",
 				id,
 				BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks),
 				L.REPORT_INACCURATE_QUEST)
