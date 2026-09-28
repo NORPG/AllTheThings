@@ -4,8 +4,7 @@
 
 root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 	m(MAP.REDRIDGE_MOUNTAINS, {
-		["lore"] =
-		"The Redridge Mountains are located east of Elwynn Forest, northeast of Duskwood, and south of the Burning Steppes. Although it may be considered contested, Horde characters have no settlements or NPCs and it is thus a place they use mostly for passing through to reach Flame Crest or Stonard.\n\nAn idyllic region of rushing rivers, towering elms and rising elevations, the Redridge Mountains are under Stormwind's protection (though since the second war it is technically independent), and remain one of the last peaceful regions in Azeroth. The people are content and calm, and supply Stormwind with timber, fish, and crops. A force of Blackrock orcs from the Burning Steppes has secured Stonewatch Keep, but so far the orcs keep to themselves.",
+		["lore"] = "The Redridge Mountains are located east of Elwynn Forest, northeast of Duskwood, and south of the Burning Steppes. Although it may be considered contested, Horde characters have no settlements or NPCs and it is thus a place they use mostly for passing through to reach Flame Crest or Stonard.\n\nAn idyllic region of rushing rivers, towering elms and rising elevations, the Redridge Mountains are under Stormwind's protection (though since the second war it is technically independent), and remain one of the last peaceful regions in Azeroth. The people are content and calm, and supply Stormwind with timber, fish, and crops. A force of Blackrock orcs from the Burning Steppes has secured Stonewatch Keep, but so far the orcs keep to themselves.",
 		["icon"] = 236814,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -59,7 +58,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			n(PROFESSIONS, {
 				prof(SKINNING, {
 					i(7286, {	-- Black Whelp Scale
-						["crs"] = {
+						crs = {
 							441,	-- Black Dragon Whelp
 							14272,	-- Snarlflare
 						},
@@ -68,106 +67,115 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
-					["sourceQuest"] = 119,	-- Return to Verner
-					["qg"] = 415,	-- Verner Osgood
-					["coord"] = { 31.0, 47.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					sourceQuest = 119,	-- Return to Verner
+					qg = 415,	-- Verner Osgood
+					coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/10 Redridge Brute
-							["provider"] = { "n", 426 },	-- Redridge Brute
+							provider = { "n", 426 },	-- Redridge Brute
 						}),
 						objective(2, {	-- 0/10 Redridge Mystic
-							["provider"] = { "n", 430 },	-- Redridge Mystic
+							provider = { "n", 430 },	-- Redridge Mystic
 						}),
 					},
 				}),
 				q(129, {	-- A Free Lunch
-					["providers"] = {
-						{ "n",  379 },	-- Darcy
-						{ "i", 5534 },	-- Parker's Lunch (PQI!)
-					},
-					["coord"] = { 26.7, 44.3, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
+					qg = 379,	-- Darcy
+					qi = 5534,	-- Parker's Lunch (PQI!)
+					coord = { 22.0, 45.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 12,
 				}),
 				q(94, {	-- A Watchful Eye
-					["providers"] = {
-						{ "n",  313 },	-- Theocritus
-						{ "i", 1083 },	-- Glyph of Azora (PQI!)
-					},
-					["coord"] = { 65.2, 69.8, MAP.ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
+					qg = 313,	-- Theocritus
+					qi = 1083,	-- Glyph of Azora (PQI!)
+					coord = { 65.2, 69.8, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					lvl = 20,
 				}),
 				q(2282, {	-- Alther's Mill
-					["sourceQuest"] = 2281,	-- Redridge Rendezvous
-					["providers"] = {
-						{ "n", 6966 },	-- Lucius
-						{ "i", 5060 },	-- Thieves' Tools (PQI!)
-					},
-					["coord"] = { 28.2, 52.2, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 16,
-					["groups"] = {
+					sourceQuest = 2281,	-- Redridge Rendezvous
+					qg = 6966,	-- Lucius
+					qi = 5060,	-- Thieves' Tools (PQI!)
+					coord = { 23.0, 52.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					classes = { ROGUE },
+					lvl = 16,
+					groups = {
 						objective(1, {	-- 0/1 Token of Thievery
-							["provider"] = { "i", 7871 },	-- Token of Thievery (QI!)
+							provider = { "i", 7871 },	-- Token of Thievery (QI!)
 						}),
 						i(7907, {	-- Certificate of Thievery
-							["description"] = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
+							description = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
 						}),
 					},
 				}),
 				q(34, {	-- An Unwelcome Guest
-					["qg"] = 342,	-- Martie Jainrose
-					["coord"] = { 21.9, 46.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
-					["groups"] = {
+					qg = 342,	-- Martie Jainrose
+					coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
+					groups = {
 						objective(1, {	-- 0/1 Bellygrub's Tusk
-							["provider"] = { "i", 3631 },	-- Bellygrub's Tusk (QI!)
-							["coord"] = { 16.6, 49.8, MAP.REDRIDGE_MOUNTAINS },
-							["cr"] = 345,	-- Bellygrub
+							provider = { "i", 3631 },	-- Bellygrub's Tusk (QI!)
+							coord = { 10.8, 49.25, MAP.REDRIDGE_MOUNTAINS },
+							cr = 345,	-- Bellygrub
 						}),
 						i(2562),	-- Bouquet of Scarlet Begonias
 					},
 				}),
 				q(246, {	-- Assessing the Threat
-					["sourceQuest"] = 244,	-- Encroaching Gnolls
-					["qg"] = 1070,	-- Deputy Feldon
-					["coord"] = { 30.8, 60.0, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 11,
-					["groups"] = {
+					sourceQuest = 244,	-- Encroaching Gnolls
+					qg = 1070,	-- Deputy Feldon
+					coord = { 25.6, 60.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 11,
+					groups = {
 						objective(1, {	-- 0/10 Redridge Mongrel
-							["provider"] = { "n", 423 },	-- Redridge Mongrel
+							provider = { "n", 423 },	-- Redridge Mongrel
 						}),
 						objective(2, {	-- 0/10 Redridge Poacher
-							["provider"] = { "n", 424 },	-- Redridge Poacher
+							provider = { "n", 424 },	-- Redridge Poacher
+						}),
+					},
+				}),
+				q(98387, {	-- Blackrock Blockade
+					qg = 382,	-- Marshal Marris
+					coord = { 28.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
+					groups = {
+						objective(1, {	-- 0/10 Stolen Supplies
+							provider = { "i", 280839 },	-- Stolen Supplies (QI!)
+						}),
+						objective(2, {	-- 0/8 Stolen Weapon
+							provider = { "i", 280841 },	-- Stolen Weapon (QI!)
 						}),
 					},
 				}),
 				q(128, {	-- Blackrock Bounty
 					["qg"] = 903,	-- Guard Howe
-					["coord"] = { 31.5, 58.0, MAP.REDRIDGE_MOUNTAINS },
+					["coord"] = { 26.5, 57.9, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/15 Blackrock Champion
-							["provider"] = { "n", 435 },	-- Blackrock Champion
+							provider = { "n", 435 },	-- Blackrock Champion
 						}),
 					},
 				}),
 				q(20, {	-- Blackrock Menace
-					["qg"] = 382,	-- Marshal Marris
-					["coord"] = { 33.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
-					["groups"] = {
+					qg = 382,	-- Marshal Marris
+					coord = { 28.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
+					groups = {
 						objective(1, {	-- 0/10 Battleworn Axe
-							["provider"] = { "i", 3014 },	-- Battleworn Axe (QI!)
-							["crs"] = {
+							provider = { "i", 3014 },	-- Battleworn Axe (QI!)
+							crs = {
 								435,	-- Blackrock Champion
 								4464,	-- Blackrock Gladiator
 								440,	-- Blackrock Grunt
@@ -184,53 +192,51 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(131, {	-- Delivering Daffodils
-					["sourceQuest"] = 130,	-- Visit the Herbalist
-					["providers"] = {
-						{ "n",  342 },	-- Martie Jainrose
-						{ "i", 1325 },	-- Daffodil Bouquet (PQI!)
-					},
-					["coord"] = { 21.9, 46.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
-					["groups"] = {
+					sourceQuest = 130,	-- Visit the Herbalist
+					qg = 342,	-- Martie Jainrose
+					qi = 1325,	-- Daffodil Bouquet (PQI!)
+					coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 12,
+					groups = {
 						i(1326),	-- Sauteed Sunfish
 					},
 				}),
 				q(116, {	-- Dry Times
-					["qg"] = 346,	-- Barkeep Daniels
-					["coord"] = { 26.5, 44.2, MAP.REDRIDGE_MOUNTAINS },
-					["maps"] = {
+					qg = 346,	-- Barkeep Daniels
+					coord = { 21.4, 44.0, MAP.REDRIDGE_MOUNTAINS },
+					maps = {
 						MAP.DUSKWOOD,
 						MAP.ELWYNN_FOREST,
 						MAP.STORMWIND_CITY,
 						MAP.WESTFALL,
 					},
-					["cost"] = {
+					cost = {
 						{ "i", 1942, 1 },	-- Bottle of Moonshine
 						{ "i", 1941, 1 },	-- Cask of Merlot
 						{ "i", 1262, 1 },	-- Keg of Thunderbrew
 						{ "i", 1939, 1 },	-- Skin of Sweet Rum
 					},
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					lvl = 12,
+					groups = {
 						i(1270),	-- Finely Woven Cloak
 						i(10456),	-- A Bulging Coin Purse
 					},
 				}),
 				q(244, {	-- Encroaching Gnolls
-					["qg"] = 464,	-- Guard Parker
-					["coord"] = { 17.3, 69.5, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 11,
+					qg = 464,	-- Guard Parker
+					coord = { 10.4, 71.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 11,
 				}),
 				q(3741, {	-- Hilary's Necklace
-					["qg"] = 8965,	-- Shawn
-					["coord"] = { 29.3, 53.4, MAP.REDRIDGE_MOUNTAINS },
-					["lvl"] = 12,
-					["groups"] = {
+					qg = 8965,	-- Shawn
+					coord = { 24.2, 53.6, MAP.REDRIDGE_MOUNTAINS },
+					lvl = 12,
+					groups = {
 						objective(1, {	-- 0/1 Hilary's Necklace
-							["providers"] = {
+							providers = {
 								{ "i",  10958 },	-- Hilary's Necklace (QI!)
 								{ "o", 154357 },	-- Glinting Mud
 							},
@@ -243,12 +249,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(126, {	-- Howling in the Hills
-					["sourceQuest"] = 124,	-- A Baying of Gnolls
-					["qg"] = 415,	-- Verner Osgood
-					["coord"] = { 31.0, 47.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					sourceQuest = 124,	-- A Baying of Gnolls
+					qg = 415,	-- Verner Osgood
+					coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/1 Yowler's Paw
 							["provider"] = { "i", 3614 },	-- Yowler's Paw (QI!)
 							["coord"] = { 28.8, 23.2, MAP.REDRIDGE_MOUNTAINS },
@@ -270,63 +276,51 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(145, {	-- Messenger to Darkshire (1/2)
-					["sourceQuest"] = 144,	-- Messenger to Westfall (2/2)
-					["providers"] = {
-						{ "n",  344 },	-- Magistrate Solomon
-						{ "i", 1409 },	-- Solomon's Plea to Darkshire (PQI!)
-					},
-					["coord"] = { 30.0, 44.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
+					sourceQuest = 144,	-- Messenger to Westfall (2/2)
+					qg = 344,	-- Magistrate Solomon
+					qi = 1409,	-- Solomon's Plea to Darkshire (PQI!)
+					coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
 				}),
 				q(146, {	-- Messenger to Darkshire (2/2)
-					["sourceQuest"] = 145,	-- Messenger to Darkshire (1/2)
-					["providers"] = {
-						{ "n",  263 },	-- Lord Ello Ebonlocke
-						{ "i", 1410 },	-- Ebonlocke's Response to Solomon (PQI!)
-					},
-					["coord"] = { 72.0, 46.6, MAP.DUSKWOOD },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
+					sourceQuest = 145,	-- Messenger to Darkshire (1/2)
+					qg = 263,	-- Lord Ello Ebonlocke
+					qi = 1410,	-- Ebonlocke's Response to Solomon (PQI!)
+					coord = { 72.0, 46.6, MAP.DUSKWOOD },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
 				}),
 				q(120, {	-- Messenger to Stormwind (1/2)
-					["providers"] = {
-						{ "n",  344 },	-- Magistrate Solomon
-						{ "i", 1293 },	-- The State of Lakeshire (PQI!)
-					},
-					["coord"] = { 30.0, 44.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
+					qg = 344,	-- Magistrate Solomon
+					qi = 1293,	-- The State of Lakeshire (PQI!)
+					coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
 				}),
 				q(121, {	-- Messenger to Stormwind (2/2)
-					["sourceQuest"] = 120,	-- Messenger to Stormwind (1/2)
-					["providers"] = {
-						{ "n",  466 },	-- General Marcus Jonathan
-						{ "i", 1294 },	-- The General's Response (PQI!)
-					},
-					["coord"] = { 63.8, 75.4, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
+					sourceQuest = 120,	-- Messenger to Stormwind (1/2)
+					qg = 466,	-- General Marcus Jonathan
+					qi = 1294,	-- The General's Response (PQI!)
+					coord = { 63.8, 75.4, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
 				}),
 				q(143, {	-- Messenger to Westfall (1/2)
-					["sourceQuest"] = 121,	-- Messenger to Stormwind (2/2)
-					["providers"] = {
-						{ "n",  344 },	-- Magistrate Solomon
-						{ "i", 1407 },	-- Solomon's Plea to Westfall (PQI!)
-					},
-					["coord"] = { 30.0, 44.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
+					sourceQuest = 121,	-- Messenger to Stormwind (2/2)
+					qg = 344,	-- Magistrate Solomon
+					qi = 1407,	-- Solomon's Plea to Westfall (PQI!)
+					coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
 				}),
 				q(144, {	-- Messenger to Westfall (2/2)
-					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
-					["providers"] = {
-						{ "n", 234 },	-- Gryan Stoutmantle
-						{ "i", 1408 },	-- Stoutmantle's Response to Solomon (PQI!)
-					},
-					["coord"] = { 56.2, 47.6, MAP.WESTFALL },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
+					sourceQuest = 143,	-- Messenger to Westfall (1/2)
+					qg = 234,	-- Gryan Stoutmantle
+					qi = 1408,	-- Stoutmantle's Response to Solomon (PQI!)
+					coord = { 56.2, 47.6, MAP.WESTFALL },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
 				}),
 				q(219, {	-- Missing In Action
 					["qg"] = 349,	-- Corporal Keeshan
@@ -361,26 +355,26 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(150, {	-- Murloc Poachers
-					["qg"] = 381,	-- Dockmaster Baren
-					["coord"] = { 27.7, 47.3, MAP.REDRIDGE_MOUNTAINS },
-					["cost"] = { { "i", 1468, 8 } },	-- Murloc Fin
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
-					["groups"] = {
+					qg = 381,	-- Dockmaster Baren
+					coord = { 22.6, 47.4, MAP.REDRIDGE_MOUNTAINS },
+					cost = { { "i", 1468, 8 } },	-- Murloc Fin
+					races = ALLIANCE_ONLY,
+					lvl = 20,
+					groups = {
 						i(3567),	-- Dwarven Fishing Pole
 					},
 				}),
 				q(92, {	-- Redridge Goulash
-					["qg"] = 343,	-- Chef Breanna
-					["coord"] = { 22.7, 44.0, MAP.REDRIDGE_MOUNTAINS },
-					["cost"] = {
+					qg = 343,	-- Chef Breanna
+					coord = { 17.6, 43.8, MAP.REDRIDGE_MOUNTAINS },
+					cost = {
 						{ "i", 2296, 5 },	-- Great Goretusk Snout
 						{ "i", 1080, 5 },	-- Tough Condor Meat
 						{ "i", 1081, 5 },	-- Crisp Spider Meat
 					},
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						i(1082),	-- Redridge Goulash
 						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
 					},
@@ -394,24 +388,22 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(119, {	-- Return to Verner
-					["sourceQuest"] = 118,	-- The Price of Shoes
-					["providers"] = {
-						{ "n",  514 },	-- Smith Argus
-						{ "i", 1284 },	-- Crate of Horseshoes (PQI!)
-					},
-					["coord"] = { 41.7, 65.5, MAP.ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 13,
+					sourceQuest = 118,	-- The Price of Shoes
+					qg = 514,	-- Smith Argus
+					qi = 1284,	-- Crate of Horseshoes (PQI!)
+					coord = { 41.7, 65.5, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					lvl = 13,
 				}),
 				q(127, {	-- Selling Fish
-					["qg"] = 381,	-- Dockmaster Baren
-					["coord"] = { 27.8, 47.2, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 16,
-					["groups"] = {
+					qg = 381,	-- Dockmaster Baren
+					coord = { 22.6, 47.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 16,
+					groups = {
 						objective(1, {	-- 0/10 Spotted Sunfish
-							["provider"] = { "i", 1467 },	-- Spotted Sunfish (QI!)
-							["crs"] = {
+							provider = { "i", 1467 },	-- Spotted Sunfish (QI!)
+							crs = {
 								422,	-- Murloc Flesheater
 								548,	-- Murloc Minor Tidecaller
 								544,	-- Murloc Nightcrawler
@@ -427,15 +419,32 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(115, {	-- Shadow Magic
-					["qg"] = 382,	-- Marshal Marris
-					["coord"] = { 33.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
-					["groups"] = {
+					qg = 382,	-- Marshal Marris
+					coord = { 28.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
+					groups = {
 						objective(1, {	-- 0/3 Midnight Orb
 							["provider"] = { "i", 1261 },	-- Midnight Orb (QI!)
 							["coord"] = { 68.6, 57.6, MAP.REDRIDGE_MOUNTAINS },
 							["cr"] = 436,	-- Blackrock Shadowcaster
+						}),
+					},
+				}),
+				q(98407, {	-- Show of Force
+					qg = 1070,	-- Deputy Feldon
+					coord = { 25.6, 60.0, MAP.REDRIDGE_MOUNTAINS },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					races = ALLIANCE_ONLY,
+					lvl = 11,
+					groups = {
+						objective(1, {	-- 0/5 Spiked Collar
+							provider = { "i", 280911 },	-- Spiked Collar
+							coords = {
+								{ 16.0, 61.4, MAP.REDRIDGE_MOUNTAINS },
+								{ 31.0, 83.6, MAP.REDRIDGE_MOUNTAINS },
+							},
+							cr = 712,	-- Redridge Thrasher
 						}),
 					},
 				}),
@@ -453,13 +462,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				q(91, {	-- Solomon's Law
 					["qg"] = 900,	-- Bailiff Conacher
-					["coord"] = { 29.6, 44.3, MAP.REDRIDGE_MOUNTAINS },
+					["coord"] = { 24.6, 44.3, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/10 Shadowhide Pendant
-							["provider"] = { "i", 1075 },	-- Shadowhide Pendant (QI!)
-							["crs"] = {
+							provider = { "i", 1075 },	-- Shadowhide Pendant (QI!)
+							crs = {
 								703,	-- Lieutenant Fangore
 								434,	-- Rabid Shadowhide Gnoll
 								947,	-- Rohh the Silent
@@ -474,11 +483,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(19, {	-- Tharil'zun
-					["qg"] = 382,	-- Marshal Marris
-					["coord"] = { 33.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
-					["groups"] = {
+					qg = 382,	-- Marshal Marris
+					coord = { 28.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 18,
+					groups = {
 						objective(1, {	-- 0/1 Tharil'zun's Head
 							["provider"] = { "i", 1260 },	-- Tharil'zun's Head (QI!)
 							["coord"] = { 68.4, 58.8, MAP.REDRIDGE_MOUNTAINS },
@@ -495,8 +504,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/5 Iron Pike
-							["provider"] = { "i", 2856 },	-- Iron Pike (QI!)
-							["crs"] = {
+							provider = { "i", 2856 },	-- Iron Pike (QI!)
+							crs = {
 								446,	-- Redridge Basher
 								426,	-- Redridge Brute
 								580,	-- Redridge Drudger
@@ -505,8 +514,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 						}),
 						objective(2, {	-- 0/5 Iron Rivet
-							["provider"] = { "i", 1013 },	-- Iron Rivet (QI!)
-							["crs"] = {
+							provider = { "i", 1013 },	-- Iron Rivet (QI!)
+							crs = {
 								446,	-- Redridge Basher
 								426,	-- Redridge Brute
 								580,	-- Redridge Drudger
@@ -536,60 +545,52 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(118, {	-- The Price of Shoes
-					["providers"] = {
-						{ "n",  415 },	-- Verner Osgood
-						{ "i", 1283 },	-- Verner's Notes
-					},
-					["coord"] = { 31.0, 47.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
+					qg = 415,	-- Verner Osgood
+					qi = 1283,	-- Verner's Notes
+					coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
 				}),
 				q(1699, {	-- The Rethban Gauntlet
-					["sourceQuests"] = {
-						1698,	-- Yorus Barleybrew
-					},
-					["qg"] = 6166,	-- Yorus Barleybrew
-					["coord"] = { 26.6, 44.8, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 20,
+					sourceQuest = 1698,	-- Yorus Barleybrew
+					qg = 6166,	-- Yorus Barleybrew
+					coord = { 21.5, 44.7, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					classes = { WARRIOR },
+					lvl = 20,
 				}),
 				q(1702, {	-- The Shieldsmith
-					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
-					["providers"] = {
-						{ "n", 6166 },	-- Yorus Barleybrew
-						{ "i", 6843 },	-- Cask of Scalder (PQI!)
-					},
-					["coord"] = { 26.6, 44.8, MAP.REDRIDGE_MOUNTAINS },
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
-					["groups"] = {
+					sourceQuest = 1699,	-- The Rethban Gauntlet
+					qg = 6166,	-- Yorus Barleybrew
+					qi = 6843,	-- Cask of Scalder (PQI!)
+					coord = { 21.5, 44.7, MAP.REDRIDGE_MOUNTAINS },
+					classes = { WARRIOR },
+					races = ALLIANCE_ONLY,
+					lvl = 20,
+					groups = {
 						i(6970),	-- Furen's Favor
 					},
 				}),
 				q(178, {	-- Theocritus' Retrieval
-					["providers"] = {
-						{ "i", 1962 },	-- Glowing Shadowhide Pendant (QS!)
-						{ "i", 1956 },	-- Faded Shadowhide Pendant (PQI!)
-					},
-					["maps"] = { MAP.ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					qs = 1962,	-- Glowing Shadowhide Pendant (QS!)
+					qi = 1956,	-- Faded Shadowhide Pendant (PQI!)
+					maps = { MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						i(1970),	-- Restoring Balm
 					},
 				}),
 				q(122, {	-- Underbelly Scales
-					["sourceQuest"] = 119,	-- Return to Verner
-					["qg"] = 415,	-- Verner Osgood
-					["coord"] = { 31.0, 47.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
-					["groups"] = {
+					sourceQuest = 119,	-- Return to Verner
+					qg = 415,	-- Verner Osgood
+					coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
+					groups = {
 						objective(1, {	-- 0/6 Underbelly Whelp Scale
-							["provider"] = { "i", 1221 },	-- Underbelly Whelp Scale (QI!)
-							["crs"] = {
+							provider = { "i", 1221 },	-- Underbelly Whelp Scale (QI!)
+							crs = {
 								14272,	-- Snarlflare
 								441,	-- Black Dragon Whelp
 							},
@@ -599,11 +600,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(130, {	-- Visit the Herbalist
-					["sourceQuest"] = 129,	-- A Free Lunch
-					["qg"] = 464,	-- Guard Parker
-					["coord"] = { 17.3, 69.5, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
+					sourceQuest = 129,	-- A Free Lunch
+					qg = 464,	-- Guard Parker
+					coord = { 10.4, 71.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 12,
 				}),
 				q(169, {	-- Wanted: Gath'Ilzogg
 					["provider"] = { "o", 60 },	-- Wanted: Gath'Ilzogg
@@ -632,18 +633,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1698, {	-- Yorus Barleybrew
-					["qgs"] = {
+					qgs = {
 						5479,	-- Wu Shen <Warrior Trainer>
 						7315,	-- Darnath Bladesinger <Warrior Trainer>
 					},
-					["coords"] = {
+					coords = {
 						{ 48.6, 35.6, MAP.DARNASSUS },
 						{ 78.8, 45.6, MAP.STORMWIND_CITY },
 					},
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-					["isBreadcrumb"] = true,
-					["lvl"] = 20,
+					races = ALLIANCE_ONLY,
+					classes = { WARRIOR },
+					isBreadcrumb = true,
+					lvl = 20,
 				}),
 			}),
 			n(RARES, {
@@ -739,14 +740,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(777, {	-- Amy Davenport <Tradeswoman>
-					["coord"] = { 29.0, 47.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 24.0, 47.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(20576, {	-- Pattern: Black Whelp Tunic (RECIPE!)
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),
@@ -888,13 +889,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4795, {	-- Bear Bracers
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4796, {	-- Owl Bracers
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4794, {	-- Wolf Bracers
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),
@@ -904,13 +905,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- No longer sells any of this stuff after 4.0.3
 						i(4790, {	-- Inferno Cloak
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4792, {	-- Spirit Cloak
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4793, {	-- Sylvan Cloak
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),
@@ -919,7 +920,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7289, {	-- Pattern: Black Whelp Cloak (RECIPE!)
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),
@@ -1180,16 +1181,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					}),
 				}),
 				n(956, {	-- Dorin Songblade <Armorer>
-					["coord"] = { 30.8, 46.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
-						1853,	-- Scalemail Belt
-						287,	-- Scalemail Boots
-						1852,	-- Scalemail Bracers
-						718,	-- Scalemail Gloves
-						286,	-- Scalemail Pants
-						285,	-- Scalemail Vest
-					}},
+					coord = { 25.8, 46.5, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(1853),	-- Scalemail Belt
+						i(287),	-- Scalemail Boots
+						i(1852),	-- Scalemail Bracers
+						i(718),	-- Scalemail Gloves
+						i(286),	-- Scalemail Pants
+						i(285),	-- Scalemail Vest
+					},
 				}),
 				n(3091, {	-- Franklin Hamar <Tailoring Supplies>
 					["coord"] = { 27.2, 45.4, MAP.REDRIDGE_MOUNTAINS },
@@ -1202,13 +1203,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
 						i(4782, {	-- Solstice Robe
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4781, {	-- Whispering Vest
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4786, {	-- Wise Man's Belt
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),
@@ -1321,29 +1322,29 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3088, {	-- Henry Chapal <Gunsmith>
-					["coord"] = { 23.8, 41.4, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
+					coord = { 18.8, 41.3, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {{"select","itemID",
 						2511,	-- Hunter's Boomstick
 						3023,	-- Large Bore Blunderbuss
 					}},
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
-					["coord"] = { 30.6, 46.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
+					coord = { 25.5, 46.5, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {{"select","itemID",
 						2445,	-- Large Metal Shield
 						17188,	-- Ringed Buckler
 					}},
-					["groups"] = {
+					groups = {
 						i(4821, {	-- Bear Buckler
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4820, {	-- Guardian Buckler
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(4822, {	-- Owl's Disk
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),

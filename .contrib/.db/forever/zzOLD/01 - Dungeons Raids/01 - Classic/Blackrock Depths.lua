@@ -820,10 +820,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4183, {	-- The True Masters (1/6)
 					["sourceQuest"] = 4182,	-- Dragonkin Menace
-					["providers"] = {
-						{ "n", 9562 },	-- Helendis Riverhorn
-						{ "i", 11366 },	-- Helendis Riverhorn's Letter
-					},
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["qi"] = 11366,	-- Helendis Riverhorn's Letter
 					["coord"] = { 85.8, 69.0, MAP.BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -831,11 +829,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4184, {	-- The True Masters (2/6)
 					["sourceQuest"] = 4183,	-- The True Masters (1/6)
-					["providers"] = {
-						{ "n", 344 },	-- Magistrate Solomon
-						{ "i", 11367 },	-- Solomon's Plea to Bolvar
-					},
-					["coord"] = { 30.0, 44.5, MAP.REDRIDGE_MOUNTAINS },
+					["qg"] = 344,	-- Magistrate Solomon
+					["qi"] = 11367,	-- Solomon's Plea to Bolvar
+					["coord"] = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -867,7 +863,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4223, {	-- The True Masters (5/6)
 					["sourceQuest"] = 4186,	-- The True Masters (4/6)
 					["qg"] = 344,	-- Magistrate Solomon
-					["coord"] = { 30.0, 44.5, MAP.REDRIDGE_MOUNTAINS },
+					["coord"] = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,

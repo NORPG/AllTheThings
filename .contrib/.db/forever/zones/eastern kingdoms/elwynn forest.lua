@@ -517,6 +517,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							822,	-- Young Forest Bear
 						},
 					}),
+					-- CRIEVE NOTE: Check this.
+					i(286733),	-- Fightin' Fish
 				},
 			}),
 			q(91736, {	-- Applejack Still
@@ -913,7 +915,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 				coords = {
 					{ 41.7, 65.6, MAP.ELWYNN_FOREST },	-- Smith Argus
-					{ 31.0, 47.4, MAP.REDRIDGE_MOUNTAINS },	-- Verner Osgood
+					{ 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },	-- Verner Osgood
 				},
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,

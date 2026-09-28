@@ -1732,7 +1732,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 							{ "i",   7266 },	-- Ur's Treatise on Shadow Magic
 							{ "o", 103628 },	-- Ur's Treatise on Shadow Magic
 						},
-						["coord"] = { 79.0, 37.6, MAP.REDRIDGE_MOUNTAINS },
+						["coord"] = { 75.6, 37.6, MAP.REDRIDGE_MOUNTAINS },
 						["description"] = "Located in one of the bookshelves at the top of the tower.",
 					}),
 				},

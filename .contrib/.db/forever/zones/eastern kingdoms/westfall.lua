@@ -570,34 +570,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				["lvl"] = 14,
 			}),
 			q(132, {	-- The Defias Brotherhood (2/7)
-				["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
-				["providers"] = {
-					{ "n",  266 },	-- Wiley the Black
-					{ "i", 1327 },	-- Wiley's Note (PQI!)
-				},
-				["coord"] = { 26.6, 45.3, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 14,
+				sourceQuest = 65,	-- The Defias Brotherhood (1/7)
+				qg = 266,	-- Wiley the Black
+				qi = 1327,	-- Wiley's Note (PQI!)
+				coord = { 21.4, 45.3, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 14,
 			}),
 			q(135, {	-- The Defias Brotherhood (3/7)
-				["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
-				["providers"] = {
-					{ "n",  234 },	-- Gryan Stoutmantle
-					{ "i", 1327 },	-- Wiley's Note (PQI!)
-				},
-				["coord"] = { 56.3, 47.6, MAP.WESTFALL },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 14,
+				sourceQuest = 132,	-- The Defias Brotherhood (2/7)
+				qg = 234,	-- Gryan Stoutmantle
+				qi = 1327,	-- Wiley's Note (PQI!)
+				coord = { 56.3, 47.6, MAP.WESTFALL },
+				races = ALLIANCE_ONLY,
+				lvl = 14,
 			}),
 			q(141, {	-- The Defias Brotherhood (4/7)
-				["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
-				["providers"] = {
-					{ "n",  332 },	-- Master Mathias Shaw
-					{ "i", 1353 },	-- Shaw's Report (PQI!)
-				},
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 14,
+				sourceQuest = 135,	-- The Defias Brotherhood (3/7)
+				qg = 332,	-- Master Mathias Shaw
+				qi = 1353,	-- Shaw's Report (PQI!)
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 14,
 			}),
 			q(142, {	-- The Defias Brotherhood (5/7)
 				["sourceQuest"] = 141,	-- The Defias Brotherhood (4/7)

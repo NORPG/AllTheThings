@@ -90,7 +90,7 @@ root(ROOTS.Instances, {
 				}),
 				q(386, {	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
-					["coord"] = { 26.0, 43.0, MAP.REDRIDGE_MOUNTAINS },
+					["coord"] = { 21.2, 46.6, MAP.REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
