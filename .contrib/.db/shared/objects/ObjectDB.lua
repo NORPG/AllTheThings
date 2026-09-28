@@ -6935,7 +6935,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = "~_.asset(\"Holiday_noblegarden\")",
 		model = 199691,
 		text = {
-			en = "C_Spell.GetSpellName(61820)",
+			en = "_.WOWAPI.GetSpellName(61820)",
 		},
 	},
 	[113769] = {
@@ -23533,6 +23533,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182485] = {
@@ -23553,6 +23554,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182487] = {
@@ -23565,6 +23567,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182488] = {
@@ -23577,6 +23580,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182489] = {
@@ -23589,6 +23593,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182490] = {
@@ -23601,6 +23606,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182491] = {
@@ -23613,6 +23619,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182492] = {
@@ -23625,6 +23632,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182493] = {
@@ -23637,6 +23645,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182494] = {
@@ -23649,6 +23658,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182495] = {
@@ -23661,6 +23671,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182496] = {
@@ -23673,6 +23684,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182497] = {
@@ -23685,6 +23697,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182498] = {
@@ -23697,6 +23710,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182499] = {
@@ -23709,6 +23723,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182500] = {
@@ -23721,6 +23736,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182501] = {
@@ -23733,6 +23749,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182502] = {
@@ -23745,6 +23762,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182503] = {
@@ -23757,6 +23775,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182504] = {
@@ -23769,6 +23788,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			mx = "Prisión de Mazo de Guerra",
 			fr = "Prison des Cogneguerre",
 			ru = "Тюрьма Боевого Молота",
+			cn = "战槌监狱",
 		},
 	},
 	[182505] = {
@@ -100389,7 +100409,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Spirit of the Wolf",
 		icon = 442737,
 		text = {
-			en = "C_Spell.GetSpellName(154259)",
+			en = "_.WOWAPI.GetSpellName(154259)",
 		},
 	},
 	[226521] = {
@@ -330272,14 +330292,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 6935639,
 		text = {
 			en = "Forgotten Ink and Quill",
-			de = "Vergessene Tinte und Feder",
 			es = "Tinta y pluma olvidadas",
 			mx = "Tinta y pluma olvidadas",
+			de = "Vergessene Tinte und Feder",
 			fr = "Encre et plume oubliées",
 			it = "Penna e Inchiostro Dimenticati",
-			ko = "잊힌 잉크와 깃펜",
 			pt = "Tinta e Cálamo Esquecidos",
 			ru = "Забытые перо и чернила",
+			ko = "잊힌 잉크와 깃펜",
 			cn = "被遗忘的墨水和羽毛笔",
 			tw = "遺忘的羽毛筆與墨水",
 		},
@@ -334691,6 +334711,13 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "깨진 단지",
 			cn = "破损的瓮",
 			tw = "破損的甕",
+		},
+	},
+	[693668] = {
+		readable = "Broken Tablet",
+		ignorewowhead = true,
+		text = {
+			en = "Broken Tablet",
 		},
 	},
 	[9000000] = {
