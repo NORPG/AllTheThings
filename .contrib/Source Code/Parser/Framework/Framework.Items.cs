@@ -96,7 +96,7 @@ namespace ATT
             /// <summary>
             /// The total number of items loaded into the database.
             /// </summary>
-            public static int Count { get; private set; }
+            public static int Count => ITEMS.Count;
 
             private static IDictionary<string, object> _Garbage { get; } = new Dictionary<string, object>();
 
@@ -116,9 +116,7 @@ namespace ATT
                 if (itemID == 0)
                     return _Garbage;
 
-                // Create a new item dictionary.
-                ++Count;
-
+                // Get or create the item dictionary.
                 return ITEMS.GetOrAdd(itemID, _ =>
                 {
                     var newItem = new ConcurrentDictionary<string, object>();
