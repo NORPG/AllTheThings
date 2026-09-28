@@ -159,28 +159,44 @@ A tool is considered cross-platform only when its application code and all requi
 
 ## Source Layout
 
-The six projects formerly under `.contrib/Source Code` now live under `.contrib/src`: Parser, CSVCleaner, Blizzard API Harvester, Classic Item Detector, Item DB Compare Tool and Profession Automator. Open the Parser, Harvester and Profession solutions separately. The existing `.contrib/.source` projects keep their source and output names.
+Six Visual Studio/C# projects are maintained under `.contrib/src/`: Parser, CSVCleaner, Blizzard API Harvester, Classic Item Detector, Item DB Compare Tool and Profession Automator. Parser, Harvester and Profession use separate Visual Studio solutions.
 
-Migrated project directories and executable names use underscores. Harvester and database comparison batch files call the matching renamed executables. Parser and CSVCleaner keep their existing `.contrib/.tools` entry points; output directories, frameworks and dependency versions are preserved.
+The other six projects retain their original source directories and project filenames under `.contrib/.source/`, using `.contrib/.source/All The Tools.sln`. Migrating this source tree is a separate project. Migrated `src` tool executable names use underscores; legacy `.source` output names are preserved. Namespaces remain unchanged. Harvester and database comparison batch files call the renamed executables.
+
+The source relocation preserves each project's framework, dependency model, and output directories. Existing shared Release outputs remain in `.contrib/.tools/`; the artifact layout below remains a future migration.
+
+| Tool | Executable in `.contrib/.tools/` |
+| --- | --- |
+| Parser | `Parser.exe` |
+| CSV cleaner | `CSVCleaner.exe` |
+| ATT Sync Tool | `ATT Sync Tool.exe` |
+| AssetDB Builder | `AssetDB Builder.exe` |
+| IconID Converter | `IconID Converter.exe` |
+| Item Database Consolidator | `Item Database Consolidator.exe` |
+| Skill Level Requirements | `Skill Level Requirements.exe` |
+
+Other maintained outputs are `Blizzard_API_Harvester.exe` and `Classic_Item_Detector.exe` under `.contrib/Harvesters/`, `Item_DB_Compare_Tool.exe` under `.contrib/Harvesters/DBs/`, and `Profession_Automator.exe` under its existing project output directory.
+
+Associated DLL, configuration, dependency manifest, and runtime configuration filenames use the same executable stem. `Database.dll` remains the shared ATT Sync Tool dependency.
+
+Maintained Python and JavaScript source should eventually join the same tree. Their current `.contrib/.tools/Localization/` and `.contrib/.tools/Lua/` directories remain in place until that separate migration.
 
 ### Current Windows Build
 
-Use Visual Studio MSBuild with the existing .NET Framework targeting packs and a .NET SDK supporting .NET 8. From the repository root:
+Use the x64 Developer Command Prompt for Visual Studio with the existing .NET Framework targeting packs and .NET 8 SDK installed. From the repository root:
 
 ```bat
-msbuild .contrib\src\Parser\Parser.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Parser\packages"
-msbuild .contrib\src\Blizzard_API_Harvester\Blizzard_API_Harvester.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Blizzard_API_Harvester\packages"
-msbuild ".contrib\src\Parser\Parser.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
-msbuild ".contrib\src\Blizzard_API_Harvester\Blizzard API Harvester.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release "/p:Platform=Any CPU"
-msbuild ".contrib\src\Profession_Automator\Profession Automator.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
-msbuild ".contrib\src\Parser\Parser.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
-msbuild ".contrib\src\Blizzard_API_Harvester\Blizzard API Harvester.sln" /t:Rebuild /p:Configuration=Release "/p:Platform=Any CPU" /m:1
-msbuild ".contrib\src\Profession_Automator\Profession Automator.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild ".contrib\src\Parser\Parser.sln" /restore /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild ".contrib\src\Blizzard_API_Harvester\Blizzard API Harvester.sln" /restore /t:Rebuild /p:Configuration=Release "/p:Platform=Any CPU" /m:1
+msbuild ".contrib\src\Profession_Automator\Profession Automator.sln" /restore /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild ".contrib\.source\All The Tools.sln" /restore /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
 ```
 
-Use `Debug` for debug builds. On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to preserve the existing x64 apphosts. Runtime scripts continue to use their existing working directories.
+Managed dependencies are declared by their owner projects. Restore keeps packages in each project's ignored `packages` directory; `.tools` is runtime output, never a managed build input. Profession restores NLua 1.4.1 separately from the shared tools' NLua 1.5.7. See `../src/README.md` for dependency versions and details.
 
-The following proposed structure and shared build settings describe later modernization work.
+On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to preserve the existing x64 apphosts. Managed Any CPU targets remain unchanged.
+
+The following proposed structure and shared build settings describe the separate source migration and later modernization work.
 
 ### Proposed Structure
 
