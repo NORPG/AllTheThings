@@ -7,7 +7,6 @@
 <br>
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/ATTWoWAddon/AllTheThings?logo=github&label=Issues)](https://github.com/ATTWoWAddon/AllTheThings/issues)
 ![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/ATTWoWAddon/AllTheThings?logo=github&label=Activity&cacheSeconds=600)
-[![Process Automation Tool (PAT)](https://github.com/ATTWoWAddon/AllTheThings/actions/workflows/Process%20Automation%20Tool%20(PAT).yml/badge.svg)](https://github.com/ATTWoWAddon/AllTheThings/actions/workflows/Process%20Automation%20Tool%20(PAT).yml)
 <br>
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white)](https://discord.gg/allthethings)
 [![Patreon](https://img.shields.io/badge/Patreon-F96854?&logo=patreon&logoColor=white)](https://www.patreon.com/allthethings)
