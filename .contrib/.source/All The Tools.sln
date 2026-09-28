@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.10.12217.157 stable
+VisualStudioVersion = 18.10.12217.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{A4B72C2C-EE53-4224-9EE0-69BE1F190C1A}"
 EndProject
@@ -12,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item Database Consolidator", "Item Database Consolidator\Item Database Consolidator.csproj", "{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconID Converter", "IconID Converter\IconID Converter.csproj", "{327F1D35-980F-46B7-8FB7-4754702CEC92}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization Converter", "Localization Converter\Localization Converter.csproj", "{C64289F2-448E-4369-8995-F1C18180569D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetDB Builder", "AssetDB Builder\AssetDB Builder.csproj", "{94069991-F504-4657-822A-1E446CF37361}"
 EndProject
@@ -98,20 +96,6 @@ Global
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Retail|Any CPU.ActiveCfg = Release|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Retail|Any CPU.Build.0 = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Era|Any CPU.ActiveCfg = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Era|Any CPU.Build.0 = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic TBC|Any CPU.ActiveCfg = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic TBC|Any CPU.Build.0 = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Wrath|Any CPU.ActiveCfg = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Wrath|Any CPU.Build.0 = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic|Any CPU.ActiveCfg = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Classic|Any CPU.Build.0 = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Retail|Any CPU.ActiveCfg = Debug|Any CPU
-		{C64289F2-448E-4369-8995-F1C18180569D}.Retail|Any CPU.Build.0 = Debug|Any CPU
 		{94069991-F504-4657-822A-1E446CF37361}.Classic Era|Any CPU.ActiveCfg = Release|Any CPU
 		{94069991-F504-4657-822A-1E446CF37361}.Classic Era|Any CPU.Build.0 = Release|Any CPU
 		{94069991-F504-4657-822A-1E446CF37361}.Classic TBC|Any CPU.ActiveCfg = Release|Any CPU
