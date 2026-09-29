@@ -1045,6 +1045,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(19774, {	-- Souldarite
 					["provider"] = { "o", 180215 },	-- Hakkari Thorium Vein
 				}),
+				o(180215, {	-- Hakkari Thorium Vein
+					["learnedAt"] = 275,
+				}),
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather

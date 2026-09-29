@@ -6683,13 +6683,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						-- ____________________________________________
 						-- Thorium
-						o(180215, {	-- Hakkari Thorium Vein
-							-- #if BEFORE 6.0.0
-							["learnedAt"] = 275,
-							-- #endif
-							["maps"] = { ZULGURUB },
-							["timeline"] = { REMOVED_4_0_1 },
-						}),
 						o(177388, {	-- Ooze Covered Rich Thorium Vein
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 275,

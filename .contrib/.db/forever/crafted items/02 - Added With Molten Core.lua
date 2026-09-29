@@ -9,6 +9,9 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(BLACKSMITHING, {
+		n(WEAPONS, {
+			i(17193),	-- Sulfuron Hammer
+		}),
 		filter(MISC, {
 			i(18262),	-- Elemental Sharpening Stone
 		}),
