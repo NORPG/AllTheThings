@@ -1552,7 +1552,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["isYearly"] = true,
 				}),
 				q(11400, {	-- Brewfest Riding Rams (A)
-					["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (A)
+					["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (A)
 					["timeline"] = {
 						-- #if AFTER WRATH
 						ADDED_2_2_2, REMOVED_2_4_3,
@@ -1565,7 +1565,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["lvl"] = lvlsquish(40, 40, 1),
 				}),
 				q(11419, {	-- Brewfest Riding Rams (H)
-					["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (H)
+					["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (H)
 					["timeline"] = {
 						-- #if AFTER WRATH
 						ADDED_2_2_2, REMOVED_2_4_3,
@@ -2693,7 +2693,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 								["cost"] = BREWFEST_TOKEN_COST(200),
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
+							i(33978, {	-- "Honorary Brewer" Hand Stamp (A)
 								["timeline"] = {
 									-- #if AFTER WRATH
 									ADDED_2_2_2, REMOVED_2_4_3,
@@ -2961,7 +2961,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 								["cost"] = BREWFEST_TOKEN_COST(200),
 								["races"] = HORDE_ONLY,
 							}),
-							i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
+							i(34028, {	-- "Honorary Brewer" Hand Stamp (H)
 								["timeline"] = {
 									-- #if AFTER WRATH
 									ADDED_2_2_2, REMOVED_2_4_3,
