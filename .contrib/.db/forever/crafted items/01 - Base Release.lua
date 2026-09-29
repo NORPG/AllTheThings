@@ -319,11 +319,6 @@ root(ROOTS.Craftables, {
 					applyclassicphase(PHASE_THREE_RECIPES, i(19048)),	-- Heavy Timbermaw Boots
 				},
 				{
-					applyclassicphase(PHASE_SIX, i(22671)),	-- Icebane Bracers
-					applyclassicphase(PHASE_SIX, i(22669)),	-- Icebane Breastplate
-					applyclassicphase(PHASE_SIX, i(22670)),	-- Icebane Gauntlets
-				},
-				{
 					i(12424),	-- Imperial Plate Belt
 					i(12426),	-- Imperial Plate Boots
 					i(12425),	-- Imperial Plate Bracers
@@ -2628,9 +2623,6 @@ root(ROOTS.Craftables, {
 				i(8175),	-- Nightscape Tunic
 				i(7285),	-- Nimble Leather Gloves
 				i(7358),	-- Pilferer's Gloves
-				applyclassicphase(PHASE_SIX, i(22663)),	-- Polar Bracers
-				applyclassicphase(PHASE_SIX, i(22662)),	-- Polar Gloves
-				applyclassicphase(PHASE_SIX, i(22661)),	-- Polar Tunic
 				i(4456, {	-- Raptor Hide Belt
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2674,9 +2666,6 @@ root(ROOTS.Craftables, {
 				i(15080),	-- Heavy Scorpid Helm
 				i(15081),	-- Heavy Scorpid Shoulders
 				i(15076),	-- Heavy Scorpid Vest
-				applyclassicphase(PHASE_SIX, i(22665)),	-- Icy Scale Bracers
-				applyclassicphase(PHASE_SIX, i(22664)),	-- Icy Scale Breastplate
-				applyclassicphase(PHASE_SIX, i(22666)),	-- Icy Scale Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
 				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
 				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
@@ -3901,10 +3890,6 @@ root(ROOTS.Craftables, {
 			i(14142),	-- Ghostweave Gloves
 			i(14144),	-- Ghostweave Pants
 			i(14141),	-- Ghostweave Vest
-			applyclassicphase(PHASE_SIX, i(22658)),	-- Glacial Cloak
-			applyclassicphase(PHASE_SIX, i(22654)),	-- Glacial Gloves
-			applyclassicphase(PHASE_SIX, i(22652)),	-- Glacial Vest
-			applyclassicphase(PHASE_SIX, i(22655)),	-- Glacial Wrists
 			i(4318),	-- Gloves of Meditation
 			i(14146),	-- Gloves of Spell Mastery
 			i(2585),	-- Gray Woolen Robe
