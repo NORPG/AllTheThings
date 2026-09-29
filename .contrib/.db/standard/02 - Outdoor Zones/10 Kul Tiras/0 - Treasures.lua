@@ -92,6 +92,7 @@ root(ROOTS.Zones, {
 					["coords"] = {
 						{ 69.9, 52.6, STORMSONG_VALLEY },
 						{ 70.2, 59.1, STORMSONG_VALLEY },
+						{ 70.6, 51.2, STORMSONG_VALLEY },
 					},
 				}),
 				o(291246, {	-- Small Treasure Chest
@@ -99,12 +100,14 @@ root(ROOTS.Zones, {
 					["coords"] = {
 						{ 66.1, 45.3, STORMSONG_VALLEY },
 						{ 66.8, 43.7, STORMSONG_VALLEY },
+						{ 66.9, 42.6, STORMSONG_VALLEY },
 					},
 				}),
 				o(291254, {	-- Small Treasure Chest
 					["questID"] = 51935,
 					["coords"] = {
 						{ 59.3, 42.5, STORMSONG_VALLEY },
+						{ 59.8, 39.1, STORMSONG_VALLEY },
 						{ 62.0, 40.1, STORMSONG_VALLEY },
 						{ 61.2, 40.3, STORMSONG_VALLEY },
 					},

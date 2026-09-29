@@ -26,7 +26,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["crs"] = { 130094 },	-- Tidesage Seacaller
 				["groups"] = {
-					i(158139),	-- Tideblood (QI!)
+					o(281708, {	-- Sealed Tideblood
+						["coords"] = {
+							{ 65.8, 43.4, STORMSONG_VALLEY },
+							{ 65.8, 43.5, STORMSONG_VALLEY },
+							{ 66.3, 45.4, STORMSONG_VALLEY },
+							{ 66.3, 45.5, STORMSONG_VALLEY },
+							{ 66.4, 40.8, STORMSONG_VALLEY },
+							{ 66.5, 40.8, STORMSONG_VALLEY },
+							{ 66.8, 42.5, STORMSONG_VALLEY },
+							{ 66.9, 42.4, STORMSONG_VALLEY },
+							{ 67.4, 40.0, STORMSONG_VALLEY },
+							{ 67.5, 40.1, STORMSONG_VALLEY },
+							{ 67.6, 41.3, STORMSONG_VALLEY },
+						},
+						["groups"] = { i(158139) },	-- Tideblood (QI!)
+					}),
 				},
 			}),
 			q(50781, {	-- A Bridge Too Far
@@ -1156,7 +1171,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 66.4, 56.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(156609),	-- Stormfused Weapon (QI!)
+					o_repeated({
+						["coords"] = {
+							{ 68.1, 50.8, STORMSONG_VALLEY },
+							{ 69.0, 50.5, STORMSONG_VALLEY },
+							{ 69.4, 51.9, STORMSONG_VALLEY },
+							{ 69.4, 53.2, STORMSONG_VALLEY },
+							{ 69.8, 51.5, STORMSONG_VALLEY },
+							{ 70.3, 50.4, STORMSONG_VALLEY },
+							{ 70.3, 50.4, STORMSONG_VALLEY },
+							{ 70.3, 50.6, STORMSONG_VALLEY },
+							{ 70.4, 51.9, STORMSONG_VALLEY },
+							{ 70.6, 51.2, STORMSONG_VALLEY },
+							{ 70.9, 50.4, STORMSONG_VALLEY },
+						},
+						["groups"] = {
+							i(156609),	-- Stormfused Weapon (QI!)
+							o(280926),	-- Abyssal Spear
+							o(280927),	-- Thundershot Rifle
+						},
+					}),
+					--
 					i(155204),	-- Brineworks Boot Knife
 					i(155214),	-- Brineworks Hullcracker
 					i(155199),	-- Great Sea Waraxe
@@ -1523,6 +1558,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 137220 },	-- Brother Pike / Awakened Tidesage
 				["races"] = ALLIANCE_ONLY,
+				["qi"] = 160056,	-- Dead Ringer (QI!)
 			}),
 			q(53476, {	-- The Great Sea Scrolls
 				["description"] = "You receive the item that starts this quest from looting any treasure chest.",

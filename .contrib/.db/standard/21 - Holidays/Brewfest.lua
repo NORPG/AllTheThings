@@ -1233,7 +1233,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(29396, {	-- A New Supplier of Souvenirs (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
-					["qg"] = 24497,	-- Ram Master Ray
+					["qgs"] = {
+						24497,	-- Ram Master Ray
+						24510,	-- Driz Tumblequick
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 17.6, DUROTAR },

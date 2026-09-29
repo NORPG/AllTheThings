@@ -259,6 +259,7 @@ i(158811);	-- Ashen Coal
 i(162675);	-- Ashvane Ledger
 i(158871);	-- Autographed Painting of Anduin
 i(163849);	-- Bad Troll Love Poem
+i(158836);	-- Barbed Stinger
 i(162681);	-- Bent Sickle
 i(156624);	-- Blemished Pearl
 i(158820);	-- Blind-Worm Sting

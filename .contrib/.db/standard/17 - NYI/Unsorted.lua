@@ -2368,7 +2368,6 @@ root(ROOTS.Unsorted, {
 				i(158832),	-- Bushy Tail \\ PH Flavor - Kul Tiran
 				i(158833),	-- PH Flavor - Unused \\ PH Flavor - Tiki Mask - Blood Troll
 				i(158835),	-- PH Flavor - Unused \\ PH Flavor - Krolusk
-				i(158836),	-- Barbed Stinger \\ PH Flavor - Pirate
 				i(158837),	-- PH Flavor - Unused \\ PH Flavor - Hyena
 				i(158842),	-- Nibbled Crystal \\ PH Flavor - Thunder Lizard - Reptile
 				i(158843),	-- PH Flavor - Unused \\ PH Flavor - Bee - Insect
@@ -2746,7 +2745,6 @@ root(ROOTS.Unsorted, {
 				i(160042),	-- Smoke Filter
 				i(160043),	-- Standard Goblin Telescope
 				i(160045),	-- Antidote Salve
-				i(160056),	-- Dead Ringer
 				i(160245),	-- R.A.D.A.R.
 				i(160316),	-- Dark Iron Curiosity
 				i(160444),	-- Pile of Storm Silver Ingots

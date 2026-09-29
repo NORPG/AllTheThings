@@ -867,6 +867,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 50.3, 59.0, THE_WANDERING_ISLE },
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["groups"] = {
+							i(267372, {	-- Banner of Five Dawns (DECOR!)
+								["timeline"] = { ADDED_12_0_7 },
+								["cost"] = { { "c", ORDER_RESOURCES, 250 } },
+							}),
 							i(248942, {	-- Five Dawns Planning Table (DECOR!)
 								["sourceAchievement"] = 60986,	-- Raise an Army for the Temple of Five Dawns
 								["timeline"] = { ADDED_11_2_7 },
@@ -874,15 +878,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(248936, {	-- Five Dawns Shrine of the Smoking Fish (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 							}),
 							i(248935, {	-- Five Dawns Weapon Rack (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
-							}),
-							i(267372, {	-- Banner of Five Dawns (DECOR!)
-								["timeline"] = { ADDED_12_0_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 150 } },
 							}),
 							i(140543),	-- Fist of the Broken Temple
 							i(140940, {	-- Grandmaster's Armor Kit
@@ -921,15 +921,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							i(136800),	-- Meditation Manual: Zen Flight (CI!)
 							i(248958, {	-- Monastery Gong (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 1500 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 350 } },
 							}),
 							i(256679, {	-- Replica Chronicle of Ages (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 3000 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 400 } },
 							}),
 							i(262619, {	-- Replica Forge of the Roaring Mountain (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
-								["cost"] = { { "c", ORDER_RESOURCES, 5000 } },
+								["cost"] = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(140564),	-- Rod of the Broken Temple
 							i(140551),	-- Staff of the Broken Temple
