@@ -965,7 +965,9 @@ root(ROOTS.Craftables, {
 			i(16009),	-- Voice Amplification Modulator
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(6219),	-- Arclight Spanner
+			i(6219, {	-- Arclight Spanner
+				collectible = false,	-- CRIEVE NOTE: Not collectible in Forever... yet?
+			}),
 			i(10498),	-- Gyromatic Micro-Adjustor
 		}),
 		filter(REAGENTS, {
