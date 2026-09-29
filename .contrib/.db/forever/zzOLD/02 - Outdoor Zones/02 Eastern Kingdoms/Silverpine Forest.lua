@@ -47,6 +47,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(1937, {	-- Apothecary Renferrel <Royal Apothecary Society>
+						coord = { 42.8, 40.8, MAP.SILVERPINE_FOREST },
+						groups = ALCHEMY_RECIPES.DISCOLORED_HEALING_POTION,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(530, {	-- A Husband's Revenge
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity

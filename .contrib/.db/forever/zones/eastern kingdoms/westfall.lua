@@ -51,6 +51,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				["cr"] = 7051,	-- Malformed Defias Drone
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(249713, {	-- Odd Child
+					coord = { 41.2, 79.0, MAP.WESTFALL },
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					groups = ALCHEMY_RECIPES.DISCOLORED_HEALING_POTION,
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(79008, {	-- ... and that note you found (A)
 				providers = {
@@ -69,12 +78,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(3388),	-- Strong Troll's Blood Potion
 				},
 			}),
-			q(92110, {	-- My First Real Potion -- Needs more DATA from Forever/Braghe
-				--["sourceQuest"] = 428,	-- Lost Deathstalkers
-				--["qg"] = 1950,	-- Rane Yorick
-				--["coord"] = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
-				["lvl"] = 10,
-				["groups"] = {
+			q(92110, {	-- My First Real Potion
+				qg = 249713,	-- Odd Child
+				coord = { 41., 79.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
+				lvl = 10,
+				groups = {
 					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
 					i(4596),	-- Minor Discolored Healing Potion
 				},
