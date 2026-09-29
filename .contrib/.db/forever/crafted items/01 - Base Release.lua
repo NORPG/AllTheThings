@@ -161,8 +161,6 @@ root(ROOTS.Craftables, {
 			i(250955, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Beast Culling
 			i(250954, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Elemental Siphoning
 			--[[
-			-- MC
-			i(18253),	-- Major Rejuvenation Potion
 			-- ZG
 			i(20002),	-- Greater Dreamless Sleep Potion
 			i(20007),	-- Mageblood Elixir
@@ -685,7 +683,6 @@ root(ROOTS.Craftables, {
 			i(12644),	-- Dense Grinding Stone
 			i(12404),	-- Dense Sharpening Stone
 			i(12643),	-- Dense Weightstone
-			i(18262),	-- Elemental Sharpening Stone
 			i(15870),	-- Golden Skeleton Key
 			i(3486),	-- Heavy Grinding Stone
 			i(2871),	-- Heavy Sharpening Stone
@@ -1466,7 +1463,6 @@ root(ROOTS.Craftables, {
 			i(38838),	-- Enchant Weapon - Fiery Weapon
 			i(38845),	-- Enchant 2H Weapon - Greater Impact
 			i(38848),	-- Enchant Weapon - Greater Striking
-			i(38878),	-- Enchant Weapon - Healing Power
 			i(38868),	-- Enchant Weapon - Icy Chill
 			i(38822),	-- Enchant 2H Weapon - Impact
 			i(38813),	-- Enchant Weapon - Lesser Beastslayer
@@ -1483,7 +1479,6 @@ root(ROOTS.Craftables, {
 			i(38779),	-- Enchant Weapon - Minor Beastslayer
 			i(38772),	-- Enchant 2H Weapon - Minor Impact
 			i(38780),	-- Enchant Weapon - Minor Striking
-			i(38877),	-- Enchant Weapon - Spellpower
 			i(38879),	-- Enchant Weapon - Strength
 			i(38821),	-- Enchant Weapon - Striking
 			i(38869, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Enchant 2H Weapon - Superior Impact
@@ -1819,11 +1814,6 @@ root(ROOTS.Craftables, {
 			i(10576),	-- Mithril Mechanical Dragonling
 		}),
 		n(WEAPONS, {
-			i(18282, {	-- Core Marksman Rifle
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_3 },
-				-- #endif
-			}),
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss
 			-- #if SEASON_OF_DISCOVERY
@@ -1832,7 +1822,6 @@ root(ROOTS.Craftables, {
 			})),
 			-- #endif
 			i(16007, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 }}),	-- Flawless Arcanite Rifle
-			i(18168),	-- Force Reactive Disk
 			i(4372, {["timeline"] = { REMOVED_4_0_3, ADDED_4_1_0 }}),	-- Lovingly Crafted Boomstick
 			i(10508),	-- Mithril Blunderbuss
 			i(10510),	-- Mithril Heavy-Bore Rifle
@@ -1855,7 +1844,6 @@ root(ROOTS.Craftables, {
 		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(4407),	-- Accurate Scope
-			i(18283),	-- Biznicks 247x128 Accurascope
 			i(4405),	-- Crude Scope
 			i(10546),	-- Deadly Scope
 			i(10548),	-- Sniper Scope
@@ -4132,7 +4120,6 @@ root(ROOTS.Craftables, {
 			i(242948),	-- Loch Modan Bearskin Rug (DECOR!)
 		})),
 		filter(MISC, {
-			i(18251),	-- Core Armor Kit
 			i(4236),	-- Cured Heavy Hide
 			i(4231),	-- Cured Light Hide
 			i(4233),	-- Cured Medium Hide
@@ -5586,7 +5573,6 @@ root(ROOTS.Craftables, {
 			i(16980),	-- Flarecore Mantle
 			applyclassicphase(PHASE_THREE_RECIPES, i(19165)),	-- Flarecore Leggings
 			applyclassicphase(PHASE_THREE_RECIPES, i(19156)),	-- Flarecore Robe
-			i(18263),	-- Flarecore Wraps
 			i(4334),	-- Formal White Shirt
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, i(220750, {["timeline"] = { ADDED_1_15_2 }})),	-- Fractured Mind Pauldrons
@@ -5835,7 +5821,6 @@ root(ROOTS.Craftables, {
 			-- #else
 			i(14156),	-- Bottomless Bag
 			-- #endif
-			i(21342),	-- Core Felcloth Bag
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_EIGHT, i(239148, {["timeline"] = { ADDED_1_15_7 }})),	-- Crimson Dawnwoven Bag
 			applyclassicphase(SOD_PHASE_EIGHT, i(239147, {["timeline"] = { ADDED_1_15_7 }})),	-- Crusader's Knapsack
