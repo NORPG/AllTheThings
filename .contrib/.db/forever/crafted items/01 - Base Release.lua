@@ -3737,8 +3737,6 @@ root(ROOTS.Craftables, {
 					MAP.MOLTEN_CORE,
 				},
 			}),
-			applyclassicphase(PHASE_FOUR, i(19767)),	-- Primal Bat Leather (Sourced in Zul'gurub)
-			applyclassicphase(PHASE_FOUR, i(19768)),	-- Primal Tiger Leather (Sourced in Zul'gurub)
 			i(15419, {	-- Warbear Leather
 				["crs"] = {
 					7446,	-- Rabid Shardtooth

@@ -7954,8 +7954,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						MOLTEN_CORE,
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Bat Leather (Sourced in Zul'gurub)
-				applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Primal Tiger Leather (Sourced in Zul'gurub)
 				i(15419, {	-- Warbear Leather
 					["crs"] = {
 						7446,	-- Rabid Shardtooth
