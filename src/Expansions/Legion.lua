@@ -15,15 +15,17 @@ local C_ArtifactUI_GetAppearanceInfoByID
 	= C_ArtifactUI.GetAppearanceInfoByID
 
 -- WoW API Cache
+--- @type function
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+--- @type function
 local IsArtifactRelicItem = app.WOWAPI.IsArtifactRelicItem;
 
 local CurrentArtifactRelicItemLevels = {}
 local pairs, select, math_floor,tinsert,tremove
 	= pairs, select, math.floor,tinsert,tremove
+--- @type table,function,function,function,
 local L, ColorizeRGB, contains, CloneDictionary
 	= app.L, app.Modules.Color.ColorizeRGB, app.contains, app.CloneDictionary
-local GetRelativeField = app.GetRelativeField
 local GetDetailedItemLevelInfo = GetDetailedItemLevelInfo;
 local ArtifactDB = setmetatable(app.ArtifactDB or {}, { __index = function(t,key)
 	app.PrintDebug("ArtifactID not in DB!",key)
@@ -201,14 +203,15 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 app.AddGenericFieldConverter(KEY);
 app.AddEventHandler("OnRefreshCollections", function()
 	-- app.PrintDebug("OnRefreshCollections.Artifact")
-	local object
-	local SearchForObject = app.SearchForObject
+	local info, class
+	local ClassIndex = app.ClassIndex
 	local saved, none = {}, {}
 	for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-		object = SearchForObject(KEY, id, "field")
+		info = ArtifactInfoStatic[id]
+		class = info.class
 		-- This artifact is listed for the current class
-		if not GetRelativeField(object, "nmc", true) then
-			if ArtifactInfoStatic[id][5] then
+		if not class or class == ClassIndex then
+			if info[5] then
 				saved[id] = true
 			else
 				none[id] = true
