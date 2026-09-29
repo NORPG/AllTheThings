@@ -49,3 +49,4 @@ __pycache__
 .contrib/.source/Achievement Database Consolidator/bin/
 .contrib/.tools/Wago/
 SavedVariables.lua
+.contrib/.tools/ATT-ERROR-FILE.txt
