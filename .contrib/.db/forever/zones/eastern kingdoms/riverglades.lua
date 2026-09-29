@@ -21,8 +21,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(259860, {	-- Martha Wellsworth <General Goods>
 				coord = { 64.2, 84.0, MAP.RIVERGLADES },
 				groups = {
-					i(251460),	-- Plans: Mithril Warhammer
-					i(274977),	-- Recipe: Plain Ol' Paletusk
+					i(251460),	-- Plans: Mithril Warhammer (RECIPE!)
+					i(274977),	-- Recipe: Plain Ol' Paletusk (RECIPE!)
 				},
 			}),
 		}),

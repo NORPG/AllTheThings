@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added with the release of Phase 5 and Ahn'Qiraj.
 root(ROOTS.Craftables, {
+	--[[
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 			i(22194),	-- Black Grasp of the Destroyer
@@ -13,6 +14,7 @@ root(ROOTS.Craftables, {
 			i(22198),	-- Jagged Obsidian Shield
 		}),
 	}),
+	--]]
 	prof(COOKING, {
 		i(21023),	-- Dirge's Kickin' Chimaerok Chops
 	}),

@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added with the release of Phase 6 and Naxxramas.
 root(ROOTS.Craftables, {
+	--[[
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 			i(22671),	-- Icebane Bracers
@@ -10,6 +11,7 @@ root(ROOTS.Craftables, {
 			i(22670),	-- Icebane Gauntlets
 		}),
 	}),
+	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {

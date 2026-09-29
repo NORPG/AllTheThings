@@ -1040,8 +1040,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			n(VENDORS, {
 				n(253139, {	-- Gorhak <Magram Clan Quartermaster>
 					["coord"] = { 66.2, 79.4, MAP.DESOLACE},
-					["groups"] = {
-						i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!) (Cost Carved Totems)
+					["groups"] = {	-- Need to add Cost here //Braghe
+						i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!)
 						i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
 						i(251458),	-- Plans: Iron Morningstar (RECIPE!)
 						i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)

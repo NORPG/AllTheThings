@@ -29,7 +29,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			exploration(284),	-- The Uplands
 		}),
 		n(FACTIONS, {
-			faction(FACTION_KIRIN_TOR),
+			faction(FACTION_FOREVER_KIRIN_TOR, {
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			faction(FACTION_RAVENHOLDT, {	-- Ravenholdt
 				["icon"] = 132292,
 				["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
@@ -672,17 +674,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 		n(VENDORS, {
 			n(32287, {	-- Archmage Alvareaux <Quartermaster>
 				coord = { 14.0, 63.2, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = bubbleDownClassicRep(FACTION_FOREVER_KIRIN_TOR, {
 					{		-- Neutral
 					}, {	-- Friendly
-						i(276986),	-- Pattern: Azure Gustwoven Hood
-						i(276987),	-- Pattern: Azure Gustwoven Spaulders
-						i(276990),	-- Pattern: Azure Stormsewn Cowl
-						i(276991),	-- Pattern: Azure Stormsewn Epaulets
-						i(276988),	-- Pattern: Azure Windraveled Cover
-						i(276989),	-- Pattern: Azure Windraveled Drapes
-						i(276984),	-- Plans: Azure Skyforged Helm
-						i(276985),	-- Plans: Azure Skyforged Pauldrons
+						i(276986),	-- Pattern: Azure Gustwoven Hood (RECIPE!)
+						i(276987),	-- Pattern: Azure Gustwoven Spaulders (RECIPE!)
+						i(276990),	-- Pattern: Azure Stormsewn Cowl (RECIPE!)
+						i(276991),	-- Pattern: Azure Stormsewn Epaulets (RECIPE!)
+						i(276988),	-- Pattern: Azure Windraveled Cover (RECIPE!)
+						i(276989),	-- Pattern: Azure Windraveled Drapes (RECIPE!)
+						i(276984),	-- Plans: Azure Skyforged Helm (RECIPE!)
+						i(276985),	-- Plans: Azure Skyforged Pauldrons (RECIPE!)
 					}, {	-- Honored
 					}, {	-- Revered
 					}, {	-- Exalted

@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added just before Phase 6 and the Scourge Invasion began.
 root(ROOTS.Craftables, {
+	--[[
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 			i(22764),	-- Ironvine Belt
@@ -10,6 +11,7 @@ root(ROOTS.Craftables, {
 			i(22763),	-- Ironvine Gloves
 		}),
 	}),
+	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {

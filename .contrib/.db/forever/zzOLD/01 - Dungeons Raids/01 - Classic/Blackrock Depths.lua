@@ -972,11 +972,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
-
-						-- bwl
+						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
-
-						
+						--]]
 						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
 						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
 
@@ -1223,23 +1221,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
 
-						-- BWL
+						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_RECIPES, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19209)),	-- Plans: Blackfury (RECIPE!)
-						--
-						-- bwl
 						applyclassicphase(PHASE_THREE_RECIPES, i(19207)),	-- Plans: Dark Iron Gauntlets (RECIPE!)
-						--
+						--]]
 						i(17052),	-- Plans: Dark Iron Leggings (RECIPE!)
 						i(17053),	-- Plans: Fiery Chain Shoulders (RECIPE!)
 					},
 					{	-- Exalted
-						-- BWL
+						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_RECIPES, i(19211)),	-- Plans: Blackguard (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19212)),	-- Plans: Nightfall (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
 						--- P4
 						applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
+						--]]
 						
 						
 					},

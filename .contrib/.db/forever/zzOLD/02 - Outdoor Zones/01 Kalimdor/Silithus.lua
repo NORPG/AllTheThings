@@ -1981,10 +1981,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
 							i(20548),	-- Pattern: Runed Stygian Belt (RECIPE!)
 							i(20546),	-- Pattern: Runed Stygian Leggings (RECIPE!)
-							-- Maybe??
+							--[[Commented out until confirmed
 							i(20554),	-- Plans: Darkrune Breastplate (RECIPE!)
 							i(20553),	-- Plans: Darkrune Gauntlets (RECIPE!)
 							i(20555),	-- Plans: Darkrune Helm (RECIPE!)
+							--]]
 							i(20527),	-- Scroll: Create Crest of Beckoning (Earth)
 							i(20518),	-- Scroll: Create Crest of Beckoning (Fire)
 							i(20526),	-- Scroll: Create Crest of Beckoning (Thunder)
@@ -2136,16 +2137,22 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(15176, {	-- Vargus <Blacksmith>
 					["coord"] = { 51.2, 38.8, MAP.SILITHUS },
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
+						-- Commented out recipes, does not seem to be on vendor on beta
 						{		-- Neutral
 						}, {	-- Friendly
-							-- Maybe?
-							i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
-							i(22768),	-- Plans: Ironvine Belt (RECIPE!)
+							i(275601),	-- Plans: Clutchlord's Grips
+							i(275598),	-- Plans: Goregasher Grips
+							--i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
+							--i(22768),	-- Plans: Ironvine Belt (RECIPE!)
 						}, {	-- Honored
-							i(22767),	-- Plans: Ironvine Gloves (RECIPE!)
-							i(22214),	-- Plans: Light Obsidian Belt (RECIPE!)
+							i(275603),	-- Plans: Clutchlord's Stompers
+							i(275602),	-- Plans: Clutchlord's Support
+							i(275600),	-- Plans: Goregasher Stompers
+							i(275599),	-- Plans: Goregasher Support
+							--i(22767),	-- Plans: Ironvine Gloves (RECIPE!)
+							--i(22214),	-- Plans: Light Obsidian Belt (RECIPE!)
 						}, {	-- Revered
-							i(22766),	-- Plans: Ironvine Breastplate (RECIPE!)
+							--i(22766),	-- Plans: Ironvine Breastplate (RECIPE!)
 						}, {	-- Exalted
 						},
 					}),

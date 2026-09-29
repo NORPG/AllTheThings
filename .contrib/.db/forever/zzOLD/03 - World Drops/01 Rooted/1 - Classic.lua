@@ -3599,10 +3599,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 			i(7989),	-- Plans: Mithril Spurs (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
-			--- Hmmm might exist?
+			--[[Commented out until found
 			i(22390),	-- Plans: Persuader (RECIPE!)
 			i(22389),	-- Plans: Sageblade (RECIPE!)
 			i(22388),	-- Plans: Titanic Leggings (RECIPE!)
+			--]]
 		}),
 		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)

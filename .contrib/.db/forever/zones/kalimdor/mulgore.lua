@@ -287,7 +287,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			exploration(396),	-- Winterhoof Water Well
 		}),
 		n(FACTIONS, {
-			faction(FACTION_FOREVER_EARTHEN_RING)
+			faction(FACTION_FOREVER_EARTHEN_RING, {
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		n(QUESTS, {
 			q(833, {	-- A Sacred Burial
@@ -1074,17 +1076,18 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			n(264078, {	-- Sutara Plainstalker <Quartermaster>
 				coord = { 34.6, 22.8, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = bubbleDownClassicRep(FACTION_FOREVER_EARTHEN_RING, {
 					{		-- Neutral
 					}, {	-- Friendly
-						i(276978),	-- Pattern: Cloudy Gustwoven Hood
-						i(276979),	-- Pattern: Cloudy Gustwoven Spaulders
-						i(276982),	-- Pattern: Cloudy Stormsewn Cowl
-						i(276983),	-- Pattern: Cloudy Stormsewn Epaulets
-						i(276980),	-- Pattern: Cloudy Windraveled Cover
-						i(276981),	-- Pattern: Cloudy Windraveled Drapes
-						i(276976),	-- Plans: Cloudy Skyforged Helm
-						i(276977),	-- Plans: Cloudy Skyforged Pauldrons
+						i(276978),	-- Pattern: Cloudy Gustwoven Hood (RECIPE!)
+						i(276979),	-- Pattern: Cloudy Gustwoven Spaulders (RECIPE!)
+						i(276982),	-- Pattern: Cloudy Stormsewn Cowl (RECIPE!)
+						i(276983),	-- Pattern: Cloudy Stormsewn Epaulets (RECIPE!)
+						i(276980),	-- Pattern: Cloudy Windraveled Cover (RECIPE!)
+						i(276981),	-- Pattern: Cloudy Windraveled Drapes (RECIPE!)
+						i(276976),	-- Plans: Cloudy Skyforged Helm (RECIPE!)
+						i(276977),	-- Plans: Cloudy Skyforged Pauldrons (RECIPE!)
 					}, {	-- Honored
 					}, {	-- Revered
 					}, {	-- Exalted

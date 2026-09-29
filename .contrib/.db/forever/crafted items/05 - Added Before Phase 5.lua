@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added at the end of Phase 4 before the opening of AQ.
 root(ROOTS.Craftables, {
+	--[[
 	prof(BLACKSMITHING, {
 		prof(ARMORSMITH, {
 			i(20039),	-- Dark Iron Boots
@@ -24,6 +25,7 @@ root(ROOTS.Craftables, {
 			i(22195),	-- Light Obsidian Belt
 		}),
 	}),
+	--]]
 	prof(ENCHANTING, {
 		filter(MISC, {
 			i(20747),	-- Lesser Mana Oil

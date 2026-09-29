@@ -8,6 +8,7 @@ root(ROOTS.Craftables, {
 			i(18253),	-- Major Rejuvenation Potion
 		}),
 	}),
+	--[[ -- This might be in the Iconic Raid Revamp
 	prof(BLACKSMITHING, {
 		n(WEAPONS, {
 			i(17193),	-- Sulfuron Hammer
@@ -16,6 +17,7 @@ root(ROOTS.Craftables, {
 			i(18262),	-- Elemental Sharpening Stone
 		}),
 	}),
+	--]]
 	--[[
 	-- Enchanters can't enchant scrolls in Forever
 	-- ... or can they?

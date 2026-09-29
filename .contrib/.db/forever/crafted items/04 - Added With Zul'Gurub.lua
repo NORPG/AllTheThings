@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added with the release of Phase 4 and Zul'Gurub.
 root(ROOTS.Craftables, {
+	--[[
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(20002),	-- Greater Dreamless Sleep Potion
@@ -21,6 +22,7 @@ root(ROOTS.Craftables, {
 			i(19695),	-- Darksoul Shoulders
 		}),
 	}),
+	--]]
 	prof(ENCHANTING, {
 		filter(MISC, {
 			i(20748),	-- Brilliant Mana Oil

@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added with Phase 3 just after Blackwing Lair was released.
 root(ROOTS.Craftables, {
+	--[[
 	prof(BLACKSMITHING, {
 		prof(ARMORSMITH, {
 			i(19164),	-- Dark Iron Gauntlets
@@ -33,6 +34,7 @@ root(ROOTS.Craftables, {
 			i(19048),	-- Heavy Timbermaw Boots
 		}),
 	}),
+	--]]
 	prof(COOKING, {
 		i(20452),	-- Smoked Desert Dumplings
 	}),
