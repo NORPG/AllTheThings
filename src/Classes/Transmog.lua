@@ -36,8 +36,8 @@ local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local L, contains, containsAny, SearchForField
-	= app.L, app.contains, app.containsAny, app.SearchForField
+local L, contains, containsAny
+	= app.L, app.contains, app.containsAny
 local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
@@ -48,8 +48,13 @@ local ATTAccountWideData, AccountSources, CharacterData
 -- Stores the SourceID's which are considered collected via Unique logic per Session
 -- Each SourceID value represents how many 'learned' SourceIDs grant Unique-collection for itself
 local AccountUniqueSources = {}
-local function AccountUniqueSources_ADD(sourceID)
-	AccountUniqueSources[sourceID] = (AccountUniqueSources[sourceID] or 0) + 1
+-- Directly known sources already represented by the published Unique counts.
+local AppliedUniqueSources = {}
+local PublishedKnownSources = {}
+local HasPublishedUniqueRefresh
+local function AccountUniqueSources_ADD(sourceID, sources)
+	sources = sources or AccountUniqueSources
+	sources[sourceID] = (sources[sourceID] or 0) + 1
 	-- app.PrintDebug("+UniqueSource",sourceID,AccountUniqueSources[sourceID])
 end
 local function AccountUniqueSources_REM(sourceID)
@@ -271,7 +276,10 @@ end
 -- NOTE: Do not use this function when the results are being passed into an Update afterward
 -- or if ATT data has not been loaded yet
 local function SearchForSourceIDQuickly(sourceID)
-	if sourceID then return SearchForField("sourceID", sourceID)[1]; end
+	if sourceID then
+		local sources = app.GetRawField("sourceID", sourceID)
+		return sources and sources[1]
+	end
 end
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected
@@ -288,7 +296,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 	local knownItem, knownSource, valid;
 	-- app.PrintDebug("FISU",checkSourceID,item.f,item.races,item.c,item.r)
 	local factionRaces = app.Modules.FactionData.FACTION_RACES;
-	for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+	for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable) do
 		-- only compare against other Sources of the VisualID which the Account knows
 		if sourceID ~= checkSourceID and AccountSources[sourceID] == 1 then
 			knownItem = SearchForSourceIDQuickly(sourceID);
@@ -331,7 +339,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 					if valid then
 						knownSource = C_TransmogCollection_GetSourceInfo(sourceID);
 						-- both sources are the same category (Equip-Type)
-						if knownSource.categoryID == sourceInfo.categoryID
+						if knownSource and knownSource.categoryID == sourceInfo.categoryID
 							-- and same Inventory Type
 							and (knownSource.invType == sourceInfo.invType
 								or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
@@ -346,7 +354,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 				-- OH NOES! It doesn't exist!
 				knownSource = C_TransmogCollection_GetSourceInfo(sourceID);
 				-- both sources are the same category (Equip-Type)
-				if knownSource.categoryID == sourceInfo.categoryID
+				if knownSource and knownSource.categoryID == sourceInfo.categoryID
 					-- and same Inventory Type
 					and (knownSource.invType == sourceInfo.invType
 						or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
@@ -369,7 +377,7 @@ local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 	if item and not item.nmc and not item.nmr then
 		-- This item is for my race and class.
-		for i,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+		for i,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable) do
 			-- only compare against other Sources of the VisualID which the Account knows
 			if sourceID ~= sourceInfo.sourceID and AccountSources[sourceID] == 1 then
 				local otherItem = SearchForSourceIDQuickly(sourceID);
@@ -383,7 +391,11 @@ local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 end
 
 local function GetUniqueUnlockedSourceIDs(sourceID, visualID, filter)
+	if AccountSources[sourceID] ~= 1 then return {} end
+	if (AppliedUniqueSources[sourceID] == true) == (AccountSources[sourceID] == 1) then return {}, true end
 	local unlockedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(visualID)
+	PublishedKnownSources[sourceID] = true
+	if not allSources then return unlockedSourceIDs end
 	for _,otherSourceID in ipairs(allSources) do
 		-- If this isn't the source we already did work on and we haven't already completed it
 		-- app.PrintDebug("CheckUniqueUnlock",otherSourceID,AccountSources[otherSourceID],AccountUniqueSources[otherSourceID])
@@ -408,10 +420,15 @@ local function GetUniqueUnlockedSourceIDs(sourceID, visualID, filter)
 			end
 		end
 	end
+	AppliedUniqueSources[sourceID] = true
+	PublishedKnownSources[sourceID] = true
 	return unlockedSourceIDs
 end
 local function GetUniqueRemovedSourceIDs(sourceID, visualID, filter)
+	if AccountSources[sourceID] == 1 then return {} end
+	if HasPublishedUniqueRefresh and not PublishedKnownSources[sourceID] then return {}, true end
 	local removedSourceIDs, allSources = {}, C_TransmogCollection_GetAllAppearanceSources(visualID)
+	if not allSources then return removedSourceIDs end
 	for _,otherSourceID in ipairs(allSources) do
 		if not AccountSources[otherSourceID] then
 			local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID)
@@ -425,6 +442,8 @@ local function GetUniqueRemovedSourceIDs(sourceID, visualID, filter)
 			end
 		end
 	end
+	AppliedUniqueSources[sourceID] = nil
+	PublishedKnownSources[sourceID] = nil
 	return removedSourceIDs
 end
 local function GetSourceAppearanceLink(sourceID)
@@ -461,20 +480,29 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 		-- app.PrintDebug("Unique Report",app:SearchLink(t))
 		local sourceID = t.sourceID
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-		local unlockedSourceIDs = GetUniqueUnlockedSourceIDs(sourceID, sourceInfo.visualID, app.ItemSourceFilter)
+		local unlockedSourceIDs, alreadyApplied
+		if sourceInfo then
+			unlockedSourceIDs, alreadyApplied = GetUniqueUnlockedSourceIDs(sourceID, sourceInfo.visualID, app.ItemSourceFilter)
+		else
+			unlockedSourceIDs = {}
+		end
 		local newAppearancesLearned = #unlockedSourceIDs
 		local newCollected = newAppearancesLearned > 0
 		if not t._missing then
 			-- TODO eventual setting to control reporting of already collected Things
-			if newAppearancesLearned > 0 then
+			if newCollected or alreadyApplied then
 				if app.Settings:GetTooltipSetting("Report:Collected") then
-					app.print(L.ITEM_ID_ADDED_SHARED:format(
-						app:SearchLink(t) or GetSourceAppearanceLink(sourceID),
-						t.itemID,
-						newAppearancesLearned))
+					if newCollected then
+						app.print(L.ITEM_ID_ADDED_SHARED:format(
+							app:SearchLink(t) or GetSourceAppearanceLink(sourceID),
+							t.itemID,
+							newAppearancesLearned))
+					else
+						app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or GetSourceAppearanceLink(sourceID), t.itemID))
+					end
 				end
 				app.HandleEvent("OnThingCollected", t)
-				app.UpdateRawIDs(tkey, unlockedSourceIDs)
+				if newCollected then app.UpdateRawIDs(tkey, unlockedSourceIDs) end
 			end
 		else
 			-- always report missing
@@ -511,30 +539,47 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 		-- app.PrintDebug("Unique Remove",app:SearchLink(t))
 		local sourceID = t.sourceID
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-		local removedSourceIDs = GetUniqueRemovedSourceIDs(sourceID, sourceInfo.visualID, app.ItemSourceFilter)
+		local removedSourceIDs, alreadyApplied
+		if sourceInfo then
+			removedSourceIDs, alreadyApplied = GetUniqueRemovedSourceIDs(sourceID, sourceInfo.visualID, app.ItemSourceFilter)
+		else
+			removedSourceIDs = {}
+		end
 		local uniqueRemoved = #removedSourceIDs
 		-- TODO eventual setting to control reporting of already collected Things
-		if uniqueRemoved > 0 then
+		if uniqueRemoved > 0 or (alreadyApplied and not AccountUniqueSources[sourceID] and not app.ItemSourceFilter(sourceInfo)) then
 			if app.Settings:GetTooltipSetting("Report:Collected") then
-				app.report("Missing Appearance Removed",
-						L.ITEM_ID_REMOVED_SHARED:format(
-						GetSourceAppearanceLink(sourceID),
-						sourceInfo.itemID,
-						uniqueRemoved),
-					t.rawlink or t.link)
+				if uniqueRemoved > 0 then
+					app.report("Missing Appearance Removed",
+							L.ITEM_ID_REMOVED_SHARED:format(
+								GetSourceAppearanceLink(sourceID),
+								sourceInfo.itemID,
+								uniqueRemoved),
+							t.rawlink or t.link)
+				else
+					app.print(L.ITEM_ID_REMOVED:format(app:SearchLink(t) or GetSourceAppearanceLink(sourceID), t.itemID))
+				end
 			end
 			app.HandleEvent("OnThingRemoved", t)
-			app.UpdateRawIDs(tkey, removedSourceIDs)
+			if uniqueRemoved > 0 then app.UpdateRawIDs(tkey, removedSourceIDs) end
 		end
 	end
 	app.UpdateRawID(tkey, tval)
 end)
 
+local MissingVisualSourceIDs = {}
 local VisualIDSourceIDsCache = setmetatable({}, { __index = function(t, visualID)
 	local sourceIDs = C_TransmogCollection_GetAllAppearanceSources(visualID)
 	t[visualID] = sourceIDs or app.EmptyTable
-	return sourceIDs
+	if not sourceIDs then MissingVisualSourceIDs[visualID] = true end
+	return sourceIDs or app.EmptyTable
 end})
+local function RetryMissingVisualSources()
+	for visualID in pairs(MissingVisualSourceIDs) do
+		VisualIDSourceIDsCache[visualID] = nil
+		MissingVisualSourceIDs[visualID] = nil
+	end
+end
 local CurrentCharacterFilterIDSet
 local ArmorTypeMogs = {
 	[2] = true,	-- Cosmetic
@@ -564,22 +609,30 @@ local AllianceVisualIDs = {}
 local Known = {}
 -- track dual-faction-collected appearances so that we can post-assign those items' shared appearances as also collected in Unique mode...
 DualFactionCollectedVisualIDs = {
-	Add = function(visualID, faction)
+	Add = function(visualID, faction, pending)
+		local horde = pending and pending.horde or HordeVisualIDs
+		local alliance = pending and pending.alliance or AllianceVisualIDs
+		local known = pending and pending.known or Known
 		if faction == HordeFaction then
-			if AllianceVisualIDs[visualID] then
-				Known[visualID] = true
+			if AllianceVisualIDs[visualID] or alliance[visualID] then
+				known[visualID] = true
 				-- app.PrintDebug("VisualID",visualID,"known by both Factions!")
 				return
 			end
-			HordeVisualIDs[visualID] = true
+			horde[visualID] = true
 		else
-			if HordeVisualIDs[visualID] then
-				Known[visualID] = true
+			if HordeVisualIDs[visualID] or horde[visualID] then
+				known[visualID] = true
 				-- app.PrintDebug("VisualID",visualID,"known by both Factions!")
 				return
 			end
-			AllianceVisualIDs[visualID] = true
+			alliance[visualID] = true
 		end
+	end,
+	Commit = function(pending)
+		for visualID in pairs(pending.horde) do HordeVisualIDs[visualID] = true end
+		for visualID in pairs(pending.alliance) do AllianceVisualIDs[visualID] = true end
+		for visualID in pairs(pending.known) do Known[visualID] = true end
 	end,
 	Known = Known,
 }
@@ -610,21 +663,24 @@ local ClassesByArmorType = {
 local Known = {}
 -- track class-encompassing known visualIDs so we can post-assign those items' shared appearances as also collected in Unique mode...
 EncompassingClassArmorTypeVisualIDs = {
-	Add = function(visualID, classes, f)
+	Add = function(visualID, classes, f, pending)
 		-- don't assign this for cloaks UNLESS literally every class is assigned on the cloak
 		if f == 3 and #classes ~= 13 then return end
 
 		-- the first class assigned to the visualID gives an armor-matched set of classes which is a different count than the visualID's classes...
 		if #ClassesByArmorType[ArmorTypeClasses[classes[1]]] ~= #classes then return end
 
-		Known[visualID] = true
+		(pending or Known)[visualID] = true
 		-- app.PrintDebug("VisualID",visualID,"known by encompassing Armor-Type Item!")
+	end,
+	Commit = function(pending)
+		for visualID in pairs(pending) do Known[visualID] = true end
 	end,
 	Known = Known,
 }
 end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
+local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly, uniqueSources, factionState, classState)
 	-- Find this source in ATT
 	local knownItem = SearchForSourceIDQuickly(knownSourceID);
 	if not knownItem then return end
@@ -663,9 +719,9 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 	-- race/class to consider all shared appearances as 'collected' for the current character
 	if currentCharacterOnly and MainOnlyCanTransmogAppearanceItem(knownItem) then
 		for _,sourceID in ipairs(verifySourceIDs) do
-			AccountUniqueSources_ADD(sourceID)
+			AccountUniqueSources_ADD(sourceID, uniqueSources)
 		end
-		return
+		return true
 	end
 
 	local checkItem, checkSource, valid, checkFilter
@@ -674,18 +730,18 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 
 	-- if the known item is faction-based, then capture which faction has it known
 	if knownFaction then
-		DualFactionCollectedVisualIDs.Add(visualID, knownFaction)
+		DualFactionCollectedVisualIDs.Add(visualID, knownFaction, factionState)
 		-- if this visual is now learned for both factions, ignore the knownfaction requirement
 		-- note: this will properly apply to all shared appearances regardless of the order of processing
 		-- since the set of unlearned sourceIDs will be repeatably checked for each matching visualID
-		if DualFactionCollectedVisualIDs.Known[visualID] then
+		if DualFactionCollectedVisualIDs.Known[visualID] or factionState.known[visualID] then
 			knownFaction = nil
 			-- app.PrintDebug("Skip Faction Unique Check for shared",app:SearchLink(knownItem))
 		end
 	end
 	if knownClasses then
-		EncompassingClassArmorTypeVisualIDs.Add(visualID, knownClasses, knownItem.f)
-		if EncompassingClassArmorTypeVisualIDs.Known[visualID] then
+		EncompassingClassArmorTypeVisualIDs.Add(visualID, knownClasses, knownItem.f, classState)
+		if EncompassingClassArmorTypeVisualIDs.Known[visualID] or classState[visualID] then
 			knownClasses = nil
 			-- app.PrintDebug("Skip Classes Unique Check for shared",app:SearchLink(knownItem))
 		end
@@ -733,17 +789,17 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 				end
 
 				-- found a known item which meets all the criteria to grant credit for the source in question
-				if valid then
-					checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-					-- both sources are the same category (Equip-Type)
-					if knownSource.categoryID == checkSource.categoryID
+					if valid then
+						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+						-- both sources are the same category (Equip-Type)
+						if checkSource and knownSource.categoryID == checkSource.categoryID
 						-- and same Inventory Type
 						and (knownSource.invType == checkSource.invType
 							or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 							or SlotByInventoryType[knownSource.invType] == SlotByInventoryType[checkSource.invType])
 					then
 						-- app.PrintDebug("Unique Collected sourceID:",sourceID);
-						AccountUniqueSources_ADD(sourceID)
+						AccountUniqueSources_ADD(sourceID, uniqueSources)
 					-- else print("sources share visual and filters but different equips",item.sourceID,sourceID)
 					end
 				end
@@ -752,18 +808,19 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 			-- OH NOES! It doesn't exist!
 			checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
 			-- both sources are the same category (Equip-Type)
-			if checkSource.categoryID == knownSource.categoryID
+			if checkSource and checkSource.categoryID == knownSource.categoryID
 				-- and same Inventory Type
 				and (checkSource.invType == knownSource.invType
 					or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 					or SlotByInventoryType[checkSource.invType] == SlotByInventoryType[knownSource.invType])
 			then
 				-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-				AccountUniqueSources_ADD(sourceID)
+				AccountUniqueSources_ADD(sourceID, uniqueSources)
 			-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
 			end
 		end
 	end
+	return true
 end
 local function DetermineMaxATTSourceID()
 	-- app.PrintDebug("Initial Session Refresh")
@@ -775,38 +832,100 @@ local function DetermineMaxATTSourceID()
 	app.MaxSourceID = maxSourceID;
 	-- app.PrintDebug("MaxSourceID",maxSourceID)
 end
-local function CollectUniqueAppearances()
-	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
-	-- app.PrintDebug("Unique Refresh",app.MaxSourceID)
-	wipe(AccountUniqueSources);
-	local currentCharacterOnly = app.Settings:Get("MainOnly");
-	local ItemSourceFilter = app.ItemSourceFilter;
-	-- Simply determine the max known SourceID from ATT cached sources
-	if not app.MaxSourceID then DetermineMaxATTSourceID() end
-	CurrentCharacterFilterIDSet = app.Presets[app.Class]
-	for sourceID=1,app.MaxSourceID do
-		-- for each known source
-		if AccountSources[sourceID] == 1 then
-			-- collect shared visual sources
-			MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly)
-		end
-	end
+-- Use the event runner so its OnRecalculateDone sequence waits for all Unique batches.
+local UniqueRefreshRunner = app.CreateRunner("events")
+local UniqueRefreshGeneration, UniqueSourceVersion = 0, 0
+local UniqueSourcesPerFrame, UniqueSecondsPerFrame = 64, 0.002
+local CollectUniqueAppearances
+local function FinishUniqueAppearances(job)
 	local brokenUniqueSources = ATTAccountWideData.BrokenUniqueSources;
 	if brokenUniqueSources then
 		for sourceID,_ in pairs(brokenUniqueSources) do
-			-- special reverse-check-logic for unknown SourceID's whose VisualID does not return
-			-- the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
-			-- and haven't already been marked as unique-collected
+			-- These SourceIDs are missing from Blizzard's visual source list.
 			if not AccountSources[sourceID] then
 				local sInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-				if ItemSourceFilter(sInfo) then
-					-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
-					AccountUniqueSources_ADD(sourceID)
+				if sInfo and job.itemSourceFilter(sInfo) then
+					AccountUniqueSources_ADD(sourceID, job.uniqueSources)
 				end
 			end
 		end
 	end
-	-- app.PrintDebug("Unique Refresh done")
+
+	-- Keep the published table unchanged until the entire calculation is ready.
+	wipe(AccountUniqueSources)
+	for sourceID,count in pairs(job.uniqueSources) do
+		AccountUniqueSources[sourceID] = count
+	end
+	DualFactionCollectedVisualIDs.Commit(job.factionState)
+	EncompassingClassArmorTypeVisualIDs.Commit(job.classState)
+	AppliedUniqueSources = job.appliedSources
+	PublishedKnownSources = job.knownSources
+	HasPublishedUniqueRefresh = true
+	app.HandleEvent("OnSourcesCollected")
+end
+local function ProcessUniqueAppearances(job)
+	if job.generation ~= UniqueRefreshGeneration
+		or app.Settings:Get("Completionist")
+		or (not app.MODE_DEBUG and not app.Settings:Get("Thing:Transmog"))
+	then return end
+	-- A source learned or removed during the calculation requires a fresh snapshot.
+	if job.sourceVersion ~= UniqueSourceVersion then
+		UniqueRefreshGeneration = UniqueRefreshGeneration + 1
+		CollectUniqueAppearances(UniqueRefreshGeneration)
+		return
+	end
+
+	local sourceIDs = job.sourceIDs
+	local last = math.min(job.index + UniqueSourcesPerFrame - 1, #sourceIDs)
+	local started = GetTimePreciseSec()
+	for i=job.index,last do
+		local sourceID = sourceIDs[i]
+		if AccountSources[sourceID] == 1 then
+			if MarkUniqueCollectedSourcesBySource(sourceID, job.currentCharacterOnly, job.uniqueSources, job.factionState, job.classState) then
+				job.appliedSources[sourceID] = true
+			end
+		end
+		if i < #sourceIDs and GetTimePreciseSec() - started >= UniqueSecondsPerFrame then
+			job.index = i + 1
+			UniqueRefreshRunner.Run(ProcessUniqueAppearances, job)
+			return
+		end
+	end
+	job.index = last + 1
+	if job.index <= #sourceIDs then
+		UniqueRefreshRunner.Run(ProcessUniqueAppearances, job)
+	else
+		FinishUniqueAppearances(job)
+	end
+end
+CollectUniqueAppearances = function(generation)
+	-- Retain the old ascending SourceID order: faction and class checks accumulate state.
+	RetryMissingVisualSources()
+	if not app.MaxSourceID then DetermineMaxATTSourceID() end
+	local sourceIDs, knownSources, appliedSources = {}, {}, {}
+	for sourceID,collected in pairs(AccountSources) do
+		if collected == 1 and type(sourceID) == "number" and sourceID >= 1
+			and sourceID <= app.MaxSourceID and sourceID % 1 == 0
+		then
+			sourceIDs[#sourceIDs + 1] = sourceID
+			knownSources[sourceID] = true
+		end
+	end
+	table.sort(sourceIDs)
+	CurrentCharacterFilterIDSet = app.Presets[app.Class]
+	UniqueRefreshRunner.Run(ProcessUniqueAppearances, {
+		generation = generation,
+		sourceVersion = UniqueSourceVersion,
+		sourceIDs = sourceIDs,
+		knownSources = knownSources,
+		appliedSources = appliedSources,
+		index = 1,
+		uniqueSources = {},
+		factionState = { horde = {}, alliance = {}, known = {} },
+		classState = {},
+		currentCharacterOnly = app.Settings:Get("MainOnly"),
+		itemSourceFilter = app.ItemSourceFilter,
+	})
 end
 local function RefreshAppearanceSources()
 	-- app.PrintDebug("RefreshAppearanceSources")
@@ -832,14 +951,14 @@ end
 -- and a separate storage for Unique-collected Sources, then adjusting Transmog class logic to allow referencing
 -- the Unique table when in Unique mode? maybe once events are all good it won't really matter
 app.AddEventHandler("OnRecalculate", function()
+	UniqueRefreshGeneration = UniqueRefreshGeneration + 1
 	if app.MODE_DEBUG or app.Settings:Get("Thing:Transmog") then
 		RefreshAppearanceSources();
-		app.HandleEvent("OnSourcesCollected")
-	end
-end)
-app.AddEventHandler("OnSourcesCollected", function()
-	if not app.Settings:Get("Completionist") then
-		CollectUniqueAppearances();
+		if app.Settings:Get("Completionist") then
+			app.HandleEvent("OnSourcesCollected")
+		else
+			CollectUniqueAppearances(UniqueRefreshGeneration)
+		end
 	end
 end)
 
@@ -1269,7 +1388,7 @@ local function BuildSourceInformationForPopout(group)
 	-- Show a list of all of the Shared Appearances.
 	local g = {};
 	-- Go through all of the shared appearances and see if we've "unlocked" any of them.
-	for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+	for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable) do
 		-- If this isn't the source we already did work on and we haven't already completed it
 		if otherSourceID ~= group.sourceID then
 			local shared = app.SearchForObject("sourceID", otherSourceID, "key");
@@ -1287,6 +1406,9 @@ local function BuildSourceInformationForPopout(group)
 				if otherSourceInfo then
 					local newItem = UnknownAppearancesCache[otherSourceID]
 					if otherSourceInfo.isCollected then
+						if not AccountSources[otherSourceID] then
+							UniqueSourceVersion = UniqueSourceVersion + 1
+						end
 						AccountSources[otherSourceID] = 1;
 					end
 					g[#g + 1] = newItem
@@ -1321,11 +1443,19 @@ app.AddEventHandler("OnNewPopoutGroup", BuildSourceInformationForPopout)
 -- Event Handling
 app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_ADDED", function(sourceID)
 	-- app.PrintDebug("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
+	local previous = AccountSources[sourceID]
 	app.SetThingCollected("sourceID", sourceID, true, true)
+	if AccountSources[sourceID] ~= previous then
+		UniqueSourceVersion = UniqueSourceVersion + 1
+	end
 end)
 app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_REMOVED", function(sourceID)
 	-- app.PrintDebug("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
+	local previous = AccountSources[sourceID]
 	app.SetThingCollected("sourceID", sourceID, true)
+	if AccountSources[sourceID] ~= previous then
+		UniqueSourceVersion = UniqueSourceVersion + 1
+	end
 end)
 
 app.AddEventHandler("OnLoad", function()
