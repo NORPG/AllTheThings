@@ -210,14 +210,9 @@ root(ROOTS.Craftables, {
 		prof(9788, {	-- Armorsmith
 			applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, i(20039)),	-- Dark Iron Boots
 			i(17014),	-- Dark Iron Bracers
-			applyclassicphase(PHASE_THREE_RECIPES, i(19164)),	-- Dark Iron Gauntlets
-			applyclassicphase(PHASE_THREE_RECIPES, i(19148)),	-- Dark Iron Helm
 			i(17013),	-- Dark Iron Leggings
 			i(11604),	-- Dark Iron Plate
 			i(12628),	-- Demon Forged Breastplate
-			applyclassicphase(PHASE_THREE_RECIPES, i(12618)),	-- Enchanted Thorium Breastplate
-			applyclassicphase(PHASE_THREE_RECIPES, i(12620)),	-- Enchanted Thorium Helm
-			applyclassicphase(PHASE_THREE_RECIPES, i(12619)),	-- Enchanted Thorium Leggings
 			i(12631),	-- Fiery Plate Gauntlets
 			i(16989),	-- Fiery Chain Girdle
 			i(16988),	-- Fiery Chain Shoulders
@@ -238,10 +233,8 @@ root(ROOTS.Craftables, {
 				i(12784),	-- Arcanite Reaper
 				i(17016),	-- Dark Iron Destroyer
 				i(12774),	-- Dawn's Edge
-				applyclassicphase(PHASE_THREE_RECIPES, i(19169)),	-- Nightfall
 			}),
 			prof(17040, {	-- Master Hammersmith
-				applyclassicphase(PHASE_THREE_RECIPES, i(19170)),	-- Ebon Hand
 				i(12776),	-- Enchanted Battlehammer
 				i(12796),	-- Hammer of the Titans
 				i(12794),	-- Masterwork Stormhammer
@@ -250,7 +243,6 @@ root(ROOTS.Craftables, {
 			}),
 			prof(17039, {	-- Master Swordsmith
 				i(12790),	-- Arcanite Champion
-				applyclassicphase(PHASE_THREE_RECIPES, i(19168)),	-- Blackguard
 				i(12777),	-- Blazing Rapier
 				i(12782),	-- Corruption
 				i(17015),	-- Dark Iron Reaver
@@ -258,8 +250,6 @@ root(ROOTS.Craftables, {
 				applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 			}),
 			n(WEAPONS, {
-				applyclassicphase(PHASE_THREE_RECIPES, i(19166)),	-- Black Amnesty
-				applyclassicphase(PHASE_THREE_RECIPES, i(19167)),	-- Blackfury
 				i(7959),	-- Blight
 				i(11608),	-- Dark Iron Pulverizer
 				i(11607),	-- Dark Iron Sunderer
@@ -292,8 +282,6 @@ root(ROOTS.Craftables, {
 					applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
 					i(12625),	-- Dawnbringer Shoulders
 					i(3474),	-- Gemmed Copper Gauntlets
-					applyclassicphase(PHASE_THREE_RECIPES, i(19051)),	-- Girdle of the Dawn
-					applyclassicphase(PHASE_THREE_RECIPES, i(19057)),	-- Gloves of the Dawn
 					i(3847),	-- Golden Scale Boots
 					i(6040),	-- Golden Scale Bracers
 					i(3837),	-- Golden Scale Coif
@@ -315,8 +303,6 @@ root(ROOTS.Craftables, {
 					i(7921),	-- Heavy Mithril Pants
 					i(7918),	-- Heavy Mithril Shoulder
 					applyclassicphase(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
-					applyclassicphase(PHASE_THREE_RECIPES, i(19043)),	-- Heavy Timbermaw Belt
-					applyclassicphase(PHASE_THREE_RECIPES, i(19048)),	-- Heavy Timbermaw Boots
 				},
 				{
 					i(12424),	-- Imperial Plate Belt
@@ -1002,7 +988,6 @@ root(ROOTS.Craftables, {
 		i(3531),	-- Heavy Wool Bandage
 		i(1251),	-- Linen Bandage
 		i(8544),	-- Mageweave Bandage
-		applyclassicphase(PHASE_THREE_RECIPES, i(19440)),	-- Powerful Anti-Venom
 		i(14529),	-- Runecloth Bandage
 		i(6450),	-- Silk Bandage
 		i(6453),	-- Strong Anti-Venom
@@ -2485,7 +2470,6 @@ root(ROOTS.Craftables, {
 			i(15048),	-- Blue Dragonscale Breastplate
 			i(20295),	-- Blue Dragonscale Leggings
 			i(15049),	-- Blue Dragonscale Shoulders
-			applyclassicphase(PHASE_THREE_RECIPES, i(19157)),	-- Chromatic Gauntlets
 			i(8367),	-- Dragonscale Breastplate
 			i(8347),	-- Dragonscale Gauntlets
 			applyclassicphase(PHASE_FOUR, i(20380)),	-- Dreamscale Breastplate
@@ -2500,7 +2484,6 @@ root(ROOTS.Craftables, {
 			i(15059),	-- Living Breastplate
 			i(15060),	-- Living Leggings
 			i(15061),	-- Living Shoulders
-			applyclassicphase(PHASE_THREE_RECIPES, i(19163)),	-- Molten Belt
 			i(16983),	-- Molten Helm
 			i(15056),	-- Stormshroud Armor
 			i(21278),	-- Stormshroud Gloves
@@ -2515,7 +2498,6 @@ root(ROOTS.Craftables, {
 			i(15074),	-- Chimeric Gloves
 			i(15072),	-- Chimeric Leggings
 			i(15075),	-- Chimeric Vest
-			applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
 			i(16982),	-- Corehound Boots
 			i(15063),	-- Devilsaur Gauntlets
 			i(15062),	-- Devilsaur Leggings
@@ -2566,7 +2548,6 @@ root(ROOTS.Craftables, {
 				i(5961),	-- Dark Leather Pants
 				i(4252),	-- Dark Leather Shoulders
 				i(2317),	-- Dark Leather Tunic
-				applyclassicphase(PHASE_THREE_RECIPES, i(19052)),	-- Dawn Treaders
 				i(6468),	-- Deviate Scale Belt
 				i(6467),	-- Deviate Scale Gloves
 				i(7387),	-- Dusky Belt
@@ -2586,7 +2567,6 @@ root(ROOTS.Craftables, {
 				i(4243),	-- Fine Leather Tunic
 				i(4262),	-- Gem-Studded Leather Belt
 				i(17721),	-- Gloves of the Greatfather
-				applyclassicphase(PHASE_THREE_RECIPES, i(19058)),	-- Golden Mantle of the Dawn
 				i(4255),	-- Green Leather Armor
 				i(4257),	-- Green Leather Belt
 				i(4259),	-- Green Leather Bracers
@@ -2608,10 +2588,8 @@ root(ROOTS.Craftables, {
 				i(4247),	-- Hillman's Leather Gloves
 				i(4244),	-- Hillman's Leather Vest
 				i(4251),	-- Hillman's Shoulders
-				applyclassicphase(PHASE_THREE_RECIPES, i(19149)),	-- Lava Belt
 				i(7281),	-- Light Leather Bracers
 				i(7282),	-- Light Leather Pants
-				applyclassicphase(PHASE_THREE_RECIPES, i(19044)),	-- Might of the Timbermaw
 				i(6709),	-- Moonglow Vest
 				i(5780),	-- Murloc Scale Belt
 				i(5783),	-- Murloc Scale Bracers
@@ -2641,7 +2619,6 @@ root(ROOTS.Craftables, {
 				i(18238),	-- Shadowskin Gloves
 				i(7391),	-- Swift Boots
 				i(5782),	-- Thick Murloc Armor
-				applyclassicphase(PHASE_THREE_RECIPES, i(19049)),	-- Timbermaw Brawlers
 				i(2314),	-- Toughened Leather Armor
 				i(4253),	-- Toughened Leather Gloves
 				i(2311),	-- White Leather Jerkin
@@ -3814,8 +3791,6 @@ root(ROOTS.Craftables, {
 	prof(TAILORING, {
 		n(ARMOR, {
 			i(10030),	-- Admiral's Hat
-			applyclassicphase(PHASE_THREE_RECIPES, i(19056)),	-- Argent Boots
-			applyclassicphase(PHASE_THREE_RECIPES, i(19059)),	-- Argent Shoulders
 			i(7060),	-- Azure Shoulders
 			i(7052),	-- Azure Silk Belt
 			i(7053),	-- Azure Silk Cloak
@@ -3878,8 +3853,6 @@ root(ROOTS.Craftables, {
 			i(21542),	-- Festival Suit
 			i(16979),	-- Flarecore Gloves
 			i(16980),	-- Flarecore Mantle
-			applyclassicphase(PHASE_THREE_RECIPES, i(19165)),	-- Flarecore Leggings
-			applyclassicphase(PHASE_THREE_RECIPES, i(19156)),	-- Flarecore Robe
 			i(4334),	-- Formal White Shirt
 			i(13870),	-- Frostweave Gloves
 			i(13871),	-- Frostweave Pants
@@ -3914,7 +3887,6 @@ root(ROOTS.Craftables, {
 			i(2569),	-- Linen Boots
 			i(2570),	-- Linen Cloak
 			i(4326),	-- Long Silken Cloak
-			applyclassicphase(PHASE_THREE_RECIPES, i(19050)),	-- Mantle of the Timbermaw
 			i(15802),	-- Mooncloth Boots
 			i(14140),	-- Mooncloth Circlet
 			i(14137),	-- Mooncloth Leggings
@@ -4003,7 +3975,6 @@ root(ROOTS.Craftables, {
 			i(6795),	-- White Swashbuckler's Shirt
 			i(10040),	-- White Wedding Dress
 			i(6787),	-- White Woolen Dress
-			applyclassicphase(PHASE_THREE_RECIPES, i(19047)),	-- Wisdom of the Timbermaw
 			i(14132),	-- Wizardweave Leggings
 			i(14128),	-- Wizardweave Robe
 			i(14130),	-- Wizardweave Turban
