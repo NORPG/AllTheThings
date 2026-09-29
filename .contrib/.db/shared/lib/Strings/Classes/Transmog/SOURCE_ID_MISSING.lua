@@ -1,4 +1,6 @@
--- #if ANYCLASSIC
+-- #if FOREVER
+local discordErrorChannel = '#forever-reports';
+-- #elseif ANYCLASSIC
 local discordErrorChannel = '#classic-errors';
 -- #else
 local discordErrorChannel = '#retail-errors';
