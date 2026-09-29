@@ -38,26 +38,27 @@ app.GetArtifactModItemID = GetArtifactModItemID
 
 local KEY, CACHE, SETTING = "artifactID", "Artifacts", "Transmog"
 local CLASSNAME = "Artifact"
-local ArtifactInfoStatic, ArtifactInfoCached
--- This is for Artifact data which doesn't change while playing
-ArtifactInfoStatic = setmetatable({}, { __index = function(t,key)
-	local info = { C_ArtifactUI_GetAppearanceInfoByID(key) }
-	if info[1] then
-		-- copy our DB data into the info
-		CloneDictionary(ArtifactDB[key], info)
-		t[key] = info
-		ArtifactInfoCached[key] = info
+
+local ArtifactInfoUnlockedMeta = { __index = function(t,key)
+	-- unlocked lookup
+	if key == 5 then
+		local id = t[2]
+		if not id then return end
+
+		local unlocked = select(5, C_ArtifactUI_GetAppearanceInfoByID(id))
+		return unlocked
 	end
-	return info
-end})
--- This is for Artifact data which can change while playing (collection status)
-ArtifactInfoCached = setmetatable({}, { __index = function(t,key)
+end}
+-- This is for Artifact data which doesn't change while playing
+local ArtifactInfoStatic = setmetatable({}, { __index = function(t,key)
 	local info = { C_ArtifactUI_GetAppearanceInfoByID(key) }
 	if info[1] then
 		-- copy our DB data into the info
 		CloneDictionary(ArtifactDB[key], info)
+		-- hook the unlocked metatable
+		setmetatable(info, ArtifactInfoUnlockedMeta)
 		t[key] = info
-		ArtifactInfoStatic[key] = info
+		-- ArtifactInfoCached[key] = info
 	end
 	return info
 end})
@@ -199,14 +200,15 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 
 app.AddGenericFieldConverter(KEY);
 app.AddEventHandler("OnRefreshCollections", function()
+	-- app.PrintDebug("OnRefreshCollections.Artifact")
 	local object
-	wipe(ArtifactInfoCached)
+	local SearchForObject = app.SearchForObject
 	local saved, none = {}, {}
 	for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-		object = app.SearchForObject(KEY, id, "field")
+		object = SearchForObject(KEY, id, "field")
 		-- This artifact is listed for the current class
 		if not GetRelativeField(object, "nmc", true) then
-			if ArtifactInfoCached[id][5] then
+			if ArtifactInfoStatic[id][5] then
 				saved[id] = true
 			else
 				none[id] = true
@@ -216,6 +218,15 @@ app.AddEventHandler("OnRefreshCollections", function()
 	-- Character Cache
 	app.SetBatchCached(CACHE, saved, 1)
 	app.SetBatchCached(CACHE, none)
+	-- app.PrintDebugPrior("---- Done")
+end)
+app.AddEventHandlerOnce("OnRefreshCollections", function()
+	-- app.PrintDebug("OnRefreshCollections.Artifact.FRESH")
+	for key,value in pairs(ArtifactInfoStatic) do
+		-- wipe the unlock keys to allow metatable checks
+		value[5] = nil
+	end
+	-- app.PrintDebugPrior("---- Done")
 end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
