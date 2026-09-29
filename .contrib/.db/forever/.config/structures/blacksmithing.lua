@@ -12,13 +12,13 @@ BLACKSMITHING_RECIPES = {
 			r(2661),	-- Copper Chain Belt
 			r(3319),	-- Copper Chain Boots
 			r(2662),	-- Copper Chain Pants
-			r(1252229),	-- Gemmed Copper Boots
-			r(1252231),	-- Glowing Copper Boots
+			r(1252229, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Gemmed Copper Boots
+			r(1252231, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Glowing Copper Boots
 			r(12260),	-- Rough Copper Vest
 			r(2666),	-- Runed Copper Belt
 			r(3323),	-- Runed Copper Gauntlets
 			r(3324),	-- Runed Copper Pants
-			r(1252230),	-- Strange Copper Boots
+			r(1252230, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Strange Copper Boots
 		}),
 		filter(MISC, {
 			r(2665),	-- Coarse Sharpening Stone
@@ -27,7 +27,7 @@ BLACKSMITHING_RECIPES = {
 			r(3115),	-- Rough Weightstone
 		}),
 		filter(REAGENTS, {
-			r(1245287),	-- Copper Rod
+			r(1245287, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Copper Rod
 			r(3320),	-- Rough Grinding Stone
 		}),
 		n(WEAPONS, {
@@ -46,6 +46,41 @@ BLACKSMITHING_RECIPES = {
 			["lvl"] = 10,
 			["rank"] = 2,
 		}),
+		n(ARMOR, {
+			r(1252250, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Acolyte's Chain Helm
+			r(1252245, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Acolyte's Chain Leggings
+			r(1252240, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Acolyte's Chain Shirt
+			r(1252251, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Crusader's Chain Helm
+			r(1252246, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Crusader's Chain Leggings
+			r(1252241, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Crusader's Chain Shirt
+			r(1252248, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Guard's Chain Helm
+			r(1252243, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Guard's Chain Leggings
+			r(2672),	-- Patterned Bronze Bracers
+			r(1252249, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Protector's Chain Helm
+			r(1252244, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Protector's Chain Leggings
+			r(1252239, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Protector's Chain Shirt
+			r(7817),	-- Rough Bronze Boots
+			r(2670),	-- Rough Bronze Cuirass
+			r(2668),	-- Rough Bronze Leggings
+			r(3328),	-- Rough Bronze Shoulders
+			r(2664),	-- Runed Copper Bracers
+			r(2675),	-- Shining Silver Breastplate
+			r(3331),	-- Silvered Bronze Boots
+			r(3333),	-- Silvered Bronze Gauntlets
+			r(1252247, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Veteran's Chain Helm
+			r(1252242, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Veteran's Chain Leggings
+			r(1252237, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Veteran's Chain Shirt
+		}),
+		filter(MISC, {
+			r(2674),	-- Heavy Sharpening Stone
+			r(3117),	-- Heavy Weightstone
+			r(19666),	-- Silver Skeleton Key
+		}),
+		filter(REAGENTS, {
+			r(3326),	-- Coarse Grinding Stone
+			r(3337),	-- Heavy Grinding Stone
+			r(7818),	-- Silver Rod
+		}),
 		n(WEAPONS, {
 			r(3491),	-- Big Bronze Knife
 			r(2740),	-- Bronze Mace
@@ -58,94 +93,73 @@ BLACKSMITHING_RECIPES = {
 			r(9987),	-- Bronze Battle Axe
 			r(9986),	-- Bronze Greatsword
 		}),
-		r(1252250),	-- Acolyte's Chain Helm
-		r(1252247),	-- Veteran's Chain Helm
-		r(1252248),	-- Guard's Chain Helm
-		r(1252249),	-- Protector's Chain Helm
-		r(1252251),	-- Crusader's Chain Helm
-		r(3328),	-- Rough Bronze Shoulders
-		r(1252237),	-- Veteran's Chain Shirt
-		r(1252239),	-- Protector's Chain Shirt
-		r(1252240),	-- Acolyte's Chain Shirt
-		r(1252241),	-- Crusader's Chain Shirt
-		r(2670),	-- Rough Bronze Cuirass
-		r(2675),	-- Shining Silver Breastplate
-		r(2664),	-- Runed Copper Bracers
-		r(2672),	-- Patterned Bronze Bracers
-		r(3333),	-- Silvered Bronze Gauntlets
-		r(1252242),	-- Veteran's Chain Leggings
-		r(1252243),	-- Guard's Chain Leggings
-		r(1252244),	-- Protector's Chain Leggings
-		r(1252245),	-- Acolyte's Chain Leggings
-		r(1252246),	-- Crusader's Chain Leggings
-		r(2668),	-- Rough Bronze Leggings
-		r(7817),	-- Rough Bronze Boots
-		r(3331),	-- Silvered Bronze Boots
-
-		r(3326),	-- Coarse Grinding Stone
-		r(3337),	-- Heavy Grinding Stone
-		r(2674),	-- Heavy Sharpening Stone
-		r(3117),	-- Heavy Weightstone
-		r(19666),	-- Silver Skeleton Key
-		r(7818, {["timeline"] = {REMOVED_5_0_4}}),	-- Silver Rod
 	},
 	EXPERT = {
 		r(3538, {	-- Blacksmithing (Expert)
 			["lvl"] = 20,
 			["rank"] = 3,
 		}),
-		r(15972),	-- Glinting Steel Dagger
-		r(9993),	-- Heavy Mithril Axe
-
-		r(3501),	-- Green Iron Bracers
-		r(3508),	-- Green Iron Hauberk
-		r(3502),	-- Green Iron Helm
-		r(3506),	-- Green Iron Leggings
-		r(9935),	-- Steel Plate Helm
-		r(9928),	-- Heavy Mithril Gauntlet
-		r(9926),	-- Heavy Mithril Shoulder
-		r(9916),	-- Steel Breastplate
-		r(7223),	-- Golden Scale Bracers
-		r(9931),	-- Mithril Plate Pants
-
-		r(9920),	-- Solid Grinding Stone
-		r(9918),	-- Solid Sharpening Stone
-		r(9921),	-- Solid Weightstone
-		r(19668),	-- Truesilver Skeleton Key
-		r(19667),	-- Golden Skeleton Key
-		r(14379, {["timeline"] = {REMOVED_5_0_4}}),	-- Golden Rod
-		r(8768),	-- Iron Buckle
-		
-		r(14380, {["timeline"] = {REMOVED_5_0_4}}),	-- Truesilver Rod
-	
+		n(ARMOR, {
+			r(7223),	-- Golden Scale Bracers
+			r(3501),	-- Green Iron Bracers
+			r(3508),	-- Green Iron Hauberk
+			r(3502),	-- Green Iron Helm
+			r(3506),	-- Green Iron Leggings
+			r(9928),	-- Heavy Mithril Gauntlet
+			r(9926),	-- Heavy Mithril Shoulder
+			r(9931),	-- Mithril Plate Pants
+			r(9916),	-- Steel Breastplate
+			r(9935),	-- Steel Plate Helm
+		}),
+		filter(MISC, {
+			r(19667),	-- Golden Skeleton 
+			r(8768),	-- Iron Buckle
+			r(9918),	-- Solid Sharpening Stone
+			r(9921),	-- Solid Weightstone
+			r(19668),	-- Truesilver Skeleton Key
+		}),
+		filter(REAGENTS, {
+			r(14379),	-- Golden Rod
+			r(9920),	-- Solid Grinding Stone
+			r(14380),	-- Truesilver Rod
+		}),
+		n(WEAPONS, {
+			r(15972),	-- Glinting Steel Dagger
+			r(9993),	-- Heavy Mithril Axe
+		}),
 	},
 	ARTISAN = {
 		r(9785, {	-- Blacksmithing (Artisan)
 			["lvl"] = 35,
 			["rank"] = 4,
 		}),
+		n(ARMOR, {
+			r(9968),	-- Heavy Mithril Boots
+			r(9959),	-- Heavy Mithril Breastplate
+			r(9961),	-- Mithril Coif
+			r(1252292),	-- Shining Mithril Helm
+		}),
+		filter(MISC, {
+			r(19669),	-- Arcanite Skeleton Key
+			r(16639),	-- Dense Grinding Stone
+			r(16641),	-- Dense Sharpening Stone
+			r(16640),	-- Dense Weightstone
+		}),
+		filter(REAGENTS, {
+			r(20201),	-- Arcanite Rod
+		}),
 		n(WEAPONS, {
 			r(10001),	-- Big Black Mace
 		}),
-		r(9968),	-- Heavy Mithril Boots
-		r(9959),	-- Heavy Mithril Breastplate
-		r(9961),	-- Mithril Coif
-		r(1252292),	-- Shining Mithril Helm
-
-		r(20201, {["timeline"] = {REMOVED_5_0_4}}),	-- Arcanite Rod
-		r(19669),	-- Arcanite Skeleton Key
-		r(16639),	-- Dense Grinding Stone
-		r(16641),	-- Dense Sharpening Stone
-		r(16640),	-- Dense Weightstone
 	},
 	WEAPONSMITHING = {
 		r(WEAPONSMITH),
 		r(MASTER_AXESMITH),
 		r(MASTER_HAMMERSMITH),
 		r(MASTER_SWORDSMITH),
-		r(10003),	-- The Shatterer
-		r(10007),	-- Phantom Blade
 		r(10011),	-- Blight
+		r(10007),	-- Phantom Blade
+		r(10003),	-- The Shatterer
 		r(10015),	-- Truesilver Champion
 	};
 	ARMORSMITHING = {
