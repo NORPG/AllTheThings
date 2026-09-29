@@ -1,6 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+-- CRIEVE NOTE: This was originally added just before Phase 6 and the Scourge Invasion began.
 root(ROOTS.Craftables, {
 	prof(BLACKSMITHING, {
 		n(ARMOR, {

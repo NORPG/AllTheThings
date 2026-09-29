@@ -1,6 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+-- CRIEVE NOTE: This was originally added with the release of Phase 2 and Blackwing Lair.
 root(ROOTS.Craftables, {
 	prof(MINING, {
 		header(HEADERS.Spell, 2656, {	-- Smelting

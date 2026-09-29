@@ -208,7 +208,6 @@ root(ROOTS.Craftables, {
 			)
 		}),
 		prof(9788, {	-- Armorsmith
-			applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, i(20039)),	-- Dark Iron Boots
 			i(17014),	-- Dark Iron Bracers
 			i(17013),	-- Dark Iron Leggings
 			i(11604),	-- Dark Iron Plate
@@ -257,107 +256,98 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 		n(ARMOR, {
-			["groups"] = appendAllGroups(
-				{
-					i(7916),	-- Barbaric Iron Boots
-					i(7914, {	-- Barbaric Iron Breastplate
-						["requireSkill"] = BLACKSMITHING,
-					}),
-					i(7917),	-- Barbaric Iron Gloves
-					i(7915),	-- Barbaric Iron Helm
-					i(7913),	-- Barbaric Iron Shoulders
-					i(2853),	-- Copper Bracers
-					i(2851),	-- Copper Chain Belt
-					i(3469),	-- Copper Chain Boots
-					i(2852),	-- Copper Chain Pants
-					i(3471),	-- Copper Chain Vest
-					i(7166),	-- Copper Dagger
-					i(11606),	-- Dark Iron Mail
-					i(11605),	-- Dark Iron Shoulders
-					applyclassicphase(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
-					applyclassicphase(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
-					applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
-					i(12625),	-- Dawnbringer Shoulders
-					i(3474),	-- Gemmed Copper Gauntlets
-					i(3847),	-- Golden Scale Boots
-					i(6040),	-- Golden Scale Bracers
-					i(3837),	-- Golden Scale Coif
-					i(3845),	-- Golden Scale Cuirass
-					i(9366),	-- Golden Scale Gauntlets
-					i(3843),	-- Golden Scale Leggings
-					i(3841),	-- Golden Scale Shoulders
-					i(3484),	-- Green Iron Boots
-					i(3835),	-- Green Iron Bracers
-					i(3485),	-- Green Iron Gauntlets
-					i(3844),	-- Green Iron Hauberk
-					i(3836),	-- Green Iron Helm
-					i(3842),	-- Green Iron Leggings
-					i(3840),	-- Green Iron Shoulders
-					i(7933),	-- Heavy Mithril Boots
-					i(7930),	-- Heavy Mithril Breastplate
-					i(7919),	-- Heavy Mithril Gauntlet
-					i(7934),	-- Heavy Mithril Helm
-					i(7921),	-- Heavy Mithril Pants
-					i(7918),	-- Heavy Mithril Shoulder
-				},
-				{
-					i(12424),	-- Imperial Plate Belt
-					i(12426),	-- Imperial Plate Boots
-					i(12425),	-- Imperial Plate Bracers
-					i(12422),	-- Imperial Plate Chest
-					i(12427),	-- Imperial Plate Helm
-					i(12429),	-- Imperial Plate Leggings
-					i(12428),	-- Imperial Plate Shoulders
-					i(7931),	-- Mithril Coif
-					i(7924),	-- Mithril Scale Bracers
-					i(7920),	-- Mithril Scale Pants
-					i(7932),	-- Mithril Scale Shoulders
-					i(7929),	-- Orcish War Leggings
-					i(7936),	-- Ornate Mithril Boots
-					i(7935),	-- Ornate Mithril Breastplate
-					i(7927),	-- Ornate Mithril Gloves
-					i(7937),	-- Ornate Mithril Helm
-					i(7926),	-- Ornate Mithril Pants
-					i(7928),	-- Ornate Mithril Shoulder
-					i(2868),	-- Patterned Bronze Bracers
-					i(3846),	-- Polished Steel Boots
-					i(12416),	-- Radiant Belt
-					i(12419),	-- Radiant Boots
-					i(12415),	-- Radiant Breastplate
-					i(12417),	-- Radiant Circlet
-					i(12418),	-- Radiant Gloves
-					i(12420),	-- Radiant Leggings
-					i(6350),	-- Rough Bronze Boots
-					i(2866),	-- Rough Bronze Cuirass
-					i(2865),	-- Rough Bronze Leggings
-					i(3480),	-- Rough Bronze Shoulders
-					i(10421),	-- Rough Copper Vest
-					i(2857),	-- Runed Copper Belt
-					i(2854),	-- Runed Copper Bracers
-					i(2864),	-- Runed Copper Breastplate
-					i(3472),	-- Runed Copper Gauntlets
-					i(3473),	-- Runed Copper Pants
-					i(12611),	-- Runic Plate Boots
-					i(12613),	-- Runic Breastplate
-					i(12612),	-- Runic Plate Helm
-					i(12614),	-- Runic Plate Leggings
-					i(12610),	-- Runic Plate Shoulders
-					i(2870),	-- Shining Silver Breastplate
-					i(3482),	-- Silvered Bronze Boots
-					i(2869),	-- Silvered Bronze Breastplate
-					i(3483),	-- Silvered Bronze Gauntlets
-					i(10423),	-- Silvered Bronze Leggings
-					i(3481),	-- Silvered Bronze Shoulders
-					i(7963),	-- Steel Breastplate
-					i(7922),	-- Steel Plate Helm
-					i(12405),	-- Thorium Armor
-					i(12406),	-- Thorium Belt
-					i(12409),	-- Thorium Boots
-					i(12408),	-- Thorium Bracers
-					i(12410),	-- Thorium Helm
-					i(12414),	-- Thorium Leggings
-				}
-			),
+			i(7916),	-- Barbaric Iron Boots
+			i(7914, {	-- Barbaric Iron Breastplate
+				["requireSkill"] = BLACKSMITHING,
+			}),
+			i(7917),	-- Barbaric Iron Gloves
+			i(7915),	-- Barbaric Iron Helm
+			i(7913),	-- Barbaric Iron Shoulders
+			i(2853),	-- Copper Bracers
+			i(2851),	-- Copper Chain Belt
+			i(3469),	-- Copper Chain Boots
+			i(2852),	-- Copper Chain Pants
+			i(3471),	-- Copper Chain Vest
+			i(7166),	-- Copper Dagger
+			i(11606),	-- Dark Iron Mail
+			i(11605),	-- Dark Iron Shoulders
+			i(12625),	-- Dawnbringer Shoulders
+			i(3474),	-- Gemmed Copper Gauntlets
+			i(3847),	-- Golden Scale Boots
+			i(6040),	-- Golden Scale Bracers
+			i(3837),	-- Golden Scale Coif
+			i(3845),	-- Golden Scale Cuirass
+			i(9366),	-- Golden Scale Gauntlets
+			i(3843),	-- Golden Scale Leggings
+			i(3841),	-- Golden Scale Shoulders
+			i(3484),	-- Green Iron Boots
+			i(3835),	-- Green Iron Bracers
+			i(3485),	-- Green Iron Gauntlets
+			i(3844),	-- Green Iron Hauberk
+			i(3836),	-- Green Iron Helm
+			i(3842),	-- Green Iron Leggings
+			i(3840),	-- Green Iron Shoulders
+			i(7933),	-- Heavy Mithril Boots
+			i(7930),	-- Heavy Mithril Breastplate
+			i(7919),	-- Heavy Mithril Gauntlet
+			i(7934),	-- Heavy Mithril Helm
+			i(7921),	-- Heavy Mithril Pants
+			i(7918),	-- Heavy Mithril Shoulder
+			i(12424),	-- Imperial Plate Belt
+			i(12426),	-- Imperial Plate Boots
+			i(12425),	-- Imperial Plate Bracers
+			i(12422),	-- Imperial Plate Chest
+			i(12427),	-- Imperial Plate Helm
+			i(12429),	-- Imperial Plate Leggings
+			i(12428),	-- Imperial Plate Shoulders
+			i(7931),	-- Mithril Coif
+			i(7924),	-- Mithril Scale Bracers
+			i(7920),	-- Mithril Scale Pants
+			i(7932),	-- Mithril Scale Shoulders
+			i(7929),	-- Orcish War Leggings
+			i(7936),	-- Ornate Mithril Boots
+			i(7935),	-- Ornate Mithril Breastplate
+			i(7927),	-- Ornate Mithril Gloves
+			i(7937),	-- Ornate Mithril Helm
+			i(7926),	-- Ornate Mithril Pants
+			i(7928),	-- Ornate Mithril Shoulder
+			i(2868),	-- Patterned Bronze Bracers
+			i(3846),	-- Polished Steel Boots
+			i(12416),	-- Radiant Belt
+			i(12419),	-- Radiant Boots
+			i(12415),	-- Radiant Breastplate
+			i(12417),	-- Radiant Circlet
+			i(12418),	-- Radiant Gloves
+			i(12420),	-- Radiant Leggings
+			i(6350),	-- Rough Bronze Boots
+			i(2866),	-- Rough Bronze Cuirass
+			i(2865),	-- Rough Bronze Leggings
+			i(3480),	-- Rough Bronze Shoulders
+			i(10421),	-- Rough Copper Vest
+			i(2857),	-- Runed Copper Belt
+			i(2854),	-- Runed Copper Bracers
+			i(2864),	-- Runed Copper Breastplate
+			i(3472),	-- Runed Copper Gauntlets
+			i(3473),	-- Runed Copper Pants
+			i(12611),	-- Runic Plate Boots
+			i(12613),	-- Runic Breastplate
+			i(12612),	-- Runic Plate Helm
+			i(12614),	-- Runic Plate Leggings
+			i(12610),	-- Runic Plate Shoulders
+			i(2870),	-- Shining Silver Breastplate
+			i(3482),	-- Silvered Bronze Boots
+			i(2869),	-- Silvered Bronze Breastplate
+			i(3483),	-- Silvered Bronze Gauntlets
+			i(10423),	-- Silvered Bronze Leggings
+			i(3481),	-- Silvered Bronze Shoulders
+			i(7963),	-- Steel Breastplate
+			i(7922),	-- Steel Plate Helm
+			i(12405),	-- Thorium Armor
+			i(12406),	-- Thorium Belt
+			i(12409),	-- Thorium Boots
+			i(12408),	-- Thorium Bracers
+			i(12410),	-- Thorium Helm
+			i(12414),	-- Thorium Leggings
 		}),
 		filter(MISC, {
 			i(15872),	-- Arcanite Skeleton Key
@@ -539,7 +529,6 @@ root(ROOTS.Craftables, {
 		i(1017),	-- Seasoned Wolf Kabob
 		i(787),	-- Slitherskin Mackerel
 		i(6890),	-- Smoked Bear Meat
-		applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20452)),	-- Smoked Desert Dumplings
 		i(21072),	-- Smoked Sagefish
 		i(3729),	-- Soothing Turtle Bisque
 		i(12216),	-- Spiced Chili Crab
@@ -2456,7 +2445,6 @@ root(ROOTS.Craftables, {
 			i(15049),	-- Blue Dragonscale Shoulders
 			i(8367),	-- Dragonscale Breastplate
 			i(8347),	-- Dragonscale Gauntlets
-			applyclassicphase(PHASE_FOUR, i(20380)),	-- Dreamscale Breastplate
 			i(15045),	-- Green Dragonscale Breastplate
 			i(20296),	-- Green Dragonscale Gauntlets
 			i(15046),	-- Green Dragonscale Leggings
@@ -2624,12 +2612,6 @@ root(ROOTS.Craftables, {
 				i(15080),	-- Heavy Scorpid Helm
 				i(15081),	-- Heavy Scorpid Shoulders
 				i(15076),	-- Heavy Scorpid Vest
-				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
-				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
-				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
-				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
-				applyclassicphase(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
-				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
 				i(8209),	-- Tough Scorpid Boots
 				i(8205),	-- Tough Scorpid Bracers
 				i(8203),	-- Tough Scorpid Breastplate
@@ -3889,9 +3871,6 @@ root(ROOTS.Craftables, {
 			i(13858),	-- Runecloth Robe
 			i(13867),	-- Runecloth Shoulders
 			i(13857),	-- Runecloth Tunic
-			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20539)),	-- Runed Stygian Belt
-			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20537)),	-- Runed Stygian Boots
-			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20538)),	-- Runed Stygian Leggings
 			i(4323),	-- Shadow Hood
 			i(10031),	-- Shadoweave Boots
 			i(10023),	-- Shadoweave Gloves

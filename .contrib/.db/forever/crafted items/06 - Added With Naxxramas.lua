@@ -1,6 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+-- CRIEVE NOTE: This was originally added with the release of Phase 6 and Naxxramas.
 root(ROOTS.Craftables, {
 	prof(BLACKSMITHING, {
 		n(ARMOR, {

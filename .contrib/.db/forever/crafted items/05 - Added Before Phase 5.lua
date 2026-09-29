@@ -1,9 +1,11 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+-- CRIEVE NOTE: This was originally added at the end of Phase 4 before the opening of AQ.
 root(ROOTS.Craftables, {
 	prof(BLACKSMITHING, {
 		prof(9788, {	-- Armorsmith
+			i(20039),	-- Dark Iron Boots
 			i(22385),	-- Titanic Leggings
 		}),
 		prof(9787, {	-- Weaponsmith
@@ -15,16 +17,14 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 		n(ARMOR, {
+			i(20550),	-- Darkrune Breastplate
+			i(20549),	-- Darkrune Gauntlets
+			i(20551),	-- Darkrune Helm
 			i(22197),	-- Heavy Obsidian Belt
 			i(22195),	-- Light Obsidian Belt
 		}),
 	}),
 	prof(ENCHANTING, {
-		header(HEADERS.Spell, 13262, {	-- Disenchant
-			i(20725, {	-- Nexus Crystal 
-				["description"] = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
-			}),
-		}),
 		filter(MISC, {
 			i(20747),	-- Lesser Mana Oil
 			i(20746),	-- Lesser Wizard Oil
@@ -33,29 +33,18 @@ root(ROOTS.Craftables, {
 			i(20750),	-- Wizard Oil
 		}),
 	}),
-	prof(MINING, {
-		spell(2575, {	-- Mining
-			i(22203, {	-- Large Obsidian Shard
-				["maps_disp"] = {
-					MAP.RUINS_OF_AHNQIRAJ,
-					MAP.TEMPLE_OF_AHNQIRAJ,
-					MAP.SILITHUS,
-				},
-				["providers"] = {
-					{ "o", 181069 },	-- Large Obsidian Chunk
-					{ "o", 181068 },	-- Small Obsidian Chunk
-				},
-			}),
-			i(22202, {	-- Small Obsidian Shard
-				["maps_disp"] = {
-					MAP.RUINS_OF_AHNQIRAJ,
-					MAP.TEMPLE_OF_AHNQIRAJ,
-					MAP.SILITHUS,
-				},
-				["providers"] = {
-					{ "o", 181069 },	-- Large Obsidian Chunk
-					{ "o", 181068 },	-- Small Obsidian Chunk
-				},
+	prof(LEATHERWORKING, {
+		prof(10656, {	-- Dragonscale Leatherworking
+			applyclassicphase(PHASE_FOUR, i(20380)),	-- Dreamscale Breastplate
+		}),
+		n(ARMOR, {
+			filter(MAIL, {
+				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
+				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
+				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
+				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
+				applyclassicphase(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
+				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
 			}),
 		}),
 	}),

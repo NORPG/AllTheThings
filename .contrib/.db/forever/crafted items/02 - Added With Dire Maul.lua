@@ -1,6 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+-- CRIEVE NOTE: This was originally added with the release of Dire Maul during Phase 2.
 root(ROOTS.Craftables, {
 	prof(COOKING, {
 		i(18254),	-- Runn Tum Tuber Surprise

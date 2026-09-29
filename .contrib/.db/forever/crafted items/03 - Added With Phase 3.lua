@@ -1,6 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+-- CRIEVE NOTE: This was originally added with Phase 3 just after Blackwing Lair was released.
 root(ROOTS.Craftables, {
 	prof(BLACKSMITHING, {
 		prof(9788, {	-- Armorsmith
@@ -32,6 +33,9 @@ root(ROOTS.Craftables, {
 			i(19048),	-- Heavy Timbermaw Boots
 		}),
 	}),
+	prof(COOKING, {
+		i(20452),	-- Smoked Desert Dumplings
+	}),
 	prof(FIRST_AID, {
 		i(19440),	-- Powerful Anti-Venom
 	}),
@@ -62,6 +66,9 @@ root(ROOTS.Craftables, {
 			i(19165),	-- Flarecore Leggings
 			i(19156),	-- Flarecore Robe
 			i(19050),	-- Mantle of the Timbermaw
+			i(20539),	-- Runed Stygian Belt
+			i(20537),	-- Runed Stygian Boots
+			i(20538),	-- Runed Stygian Leggings
 			i(19047),	-- Wisdom of the Timbermaw
 		}),
 	}),
