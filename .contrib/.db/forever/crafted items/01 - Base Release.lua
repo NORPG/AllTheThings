@@ -221,7 +221,6 @@ root(ROOTS.Craftables, {
 			i(12640),	-- Lionheart Helm
 			i(12632),	-- Storm Gauntlets
 			i(12639),	-- Stronghold Gauntlets
-			applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 			i(7939),	-- Truesilver Breastplate
 			i(7938),	-- Truesilver Gauntlets
 			i(12633),	-- Whitesoul Helm
@@ -238,7 +237,6 @@ root(ROOTS.Craftables, {
 				i(12776),	-- Enchanted Battlehammer
 				i(12796),	-- Hammer of the Titans
 				i(12794),	-- Masterwork Stormhammer
-				applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 				i(12781),	-- Serenity
 			}),
 			prof(17039, {	-- Master Swordsmith
@@ -247,7 +245,6 @@ root(ROOTS.Craftables, {
 				i(12782),	-- Corruption
 				i(17015),	-- Dark Iron Reaver
 				i(12797),	-- Frostguard
-				applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 			}),
 			n(WEAPONS, {
 				i(7959),	-- Blight
@@ -302,7 +299,6 @@ root(ROOTS.Craftables, {
 					i(7934),	-- Heavy Mithril Helm
 					i(7921),	-- Heavy Mithril Pants
 					i(7918),	-- Heavy Mithril Shoulder
-					applyclassicphase(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
 				},
 				{
 					i(12424),	-- Imperial Plate Belt
@@ -312,7 +308,6 @@ root(ROOTS.Craftables, {
 					i(12427),	-- Imperial Plate Helm
 					i(12429),	-- Imperial Plate Leggings
 					i(12428),	-- Imperial Plate Shoulders
-					applyclassicphase(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 					i(7931),	-- Mithril Coif
 					i(7924),	-- Mithril Scale Bracers
 					i(7920),	-- Mithril Scale Pants
@@ -682,9 +677,6 @@ root(ROOTS.Craftables, {
 			i(11138, {	-- Small Glowing Shard
 				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
 			}),
-			applyclassicphase(PHASE_FIVE, i(20725, {	-- Nexus Crystal 
-				["description"] = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
-			})),
 			i(11178, {	-- Large Radiant Shard
 				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
 			}),
@@ -695,11 +687,6 @@ root(ROOTS.Craftables, {
 		filter(MISC, {
 			i(12810),	-- Enchanted Leather
 			i(12655),	-- Enchanted Thorium Bar
-			applyclassicphase(PHASE_FIVE_RECIPES, i(20747)),	-- Lesser Mana Oil
-			applyclassicphase(PHASE_FIVE_RECIPES, i(20746)),	-- Lesser Wizard Oil
-			applyclassicphase(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
-			applyclassicphase(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
-			applyclassicphase(PHASE_FIVE, i(20750)),	-- Wizard Oil
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(16207),	-- Runed Arcanite Rod
@@ -3034,17 +3021,6 @@ root(ROOTS.Craftables, {
 						},
 						["provider"] = { "o", 1735 },	-- Iron Deposit
 					}),
-					applyclassicphase(PHASE_FIVE, i(22203, {	-- Large Obsidian Shard
-						["maps_disp"] = {
-							MAP.RUINS_OF_AHNQIRAJ,
-							MAP.TEMPLE_OF_AHNQIRAJ,
-							MAP.SILITHUS,
-						},
-						["providers"] = {
-							{ "o", 181069 },	-- Large Obsidian Chunk
-							{ "o", 181068 },	-- Small Obsidian Chunk
-						},
-					})),
 					i(3858, {	-- Mithril Ore
 						["maps_disp"] = {
 							MAP.BADLANDS,
@@ -3080,17 +3056,6 @@ root(ROOTS.Craftables, {
 							{ "o", 1733 },	-- Silver Vein
 						},
 					}),
-					applyclassicphase(PHASE_FIVE, i(22202, {	-- Small Obsidian Shard
-						["maps_disp"] = {
-							MAP.RUINS_OF_AHNQIRAJ,
-							MAP.TEMPLE_OF_AHNQIRAJ,
-							MAP.SILITHUS,
-						},
-						["providers"] = {
-							{ "o", 181069 },	-- Large Obsidian Chunk
-							{ "o", 181068 },	-- Small Obsidian Chunk
-						},
-					})),
 					i(10620, {	-- Thorium Ore
 						["maps_disp"] = {
 							MAP.UNGORO_CRATER,
@@ -3215,7 +3180,7 @@ root(ROOTS.Craftables, {
 					-- Elements with unviably low droprate:
 					-- i(7067),	-- Elemental Earth
 					-- i(7068),	-- Elemental Fire
-					-- applyclassicphase(PHASE_FIVE, i(7076)),	-- Essence of Earth
+					-- i(7076),	-- Essence of Earth
 					-- Misc:
 					i(12363, {	-- Arcane Crystal
 						["description"] = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
@@ -3985,10 +3950,6 @@ root(ROOTS.Craftables, {
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
-			applyclassicphase(PHASE_FIVE_RECIPES, i(22249)),	-- Big Bag of Enchantment
-			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
-			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)),	-- Enchanted Runecloth Bag
-			applyclassicphase(PHASE_FIVE, i(22252)),	-- Satchel of Cenarius
 		}),
 		n(COMMON_VENDOR_ITEMS, {
 			["groups"] = appendAllGroups(
