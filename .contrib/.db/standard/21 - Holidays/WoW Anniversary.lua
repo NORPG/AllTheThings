@@ -914,6 +914,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(150404),	-- Ring of the Unliving
 								i(150388),	-- Hibernation Crystal
 								i(150407),	-- Dragonheart Necklace
+								prof(SKINNING, {
+									i(20381),	-- Dreamscale
+								}),
 							},
 						}),
 						n(121913, {	-- Emeriss [Duskwood - 4th Rotation]

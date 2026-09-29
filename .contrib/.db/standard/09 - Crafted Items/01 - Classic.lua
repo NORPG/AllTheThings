@@ -8034,19 +8034,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
-				applyclassicphase(PHASE_FOUR, i(20381, {	-- Dreamscale
-					-- #if AFTER 10.1.5
-					["description"] = "Can be skinned from corrupted creatures of the Green Dragonflight in Temple of Atal'hakkar. Can also be skinned from the Dragons of Nightmare during the Anniversary event.",
-					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
-					-- #elseif AFTER 7.2.5
-					["description"] = "Can be skinned from the Dragons of Nightmare during the Anniversary event.",
-					-- #elseif AFTER 4.0.3
-					["description"] = "Blizzard being blizzard, Dreamscale is no longer obtainable.",
-					-- #else
-					["description"] = "Can be skinned from the world bosses Dragons of Nightmare.",
-					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_7_2_5 },
-				})),
 				i(15412, {	-- Green Dragonscale
 					["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
 					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },

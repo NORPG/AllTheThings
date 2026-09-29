@@ -3748,9 +3748,6 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
-			applyclassicphase(PHASE_FOUR, i(20381, {	-- Dreamscale
-				["description"] = "Can be skinned from the world bosses Dragons of Nightmare.",
-			})),
 			i(15412, {	-- Green Dragonscale
 				["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
 				["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
