@@ -2893,6 +2893,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 		}),
 		n(VENDORS, {
+			n(248196, {	-- Apothecary Durelle <Alchemist>
+				["coord"] = { 49.8, 29.6, MAP.THE_BARRENS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
+			}),
 			n(3495, {	-- Gagsprocket <Engineering Goods>
 				["coord"] = { 62.7, 36.3, MAP.THE_BARRENS },
 				["groups"] = {
@@ -2900,6 +2905,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						["isLimited"] = true,
 					}),
 				},
+			}),
+			n(248197, {	-- Gor'mak <Blacksmith>
+				["coord"] = { 49.8, 29.6, MAP.THE_BARRENS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 				["coord"] = { 62.2, 38.4, MAP.THE_BARRENS },
