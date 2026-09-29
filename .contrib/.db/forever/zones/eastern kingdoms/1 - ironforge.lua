@@ -31,17 +31,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				n(4258, {	-- Bengus Deepforge <Artisan Blacksmith>
 					["coord"] = { 52.6, 40.8, MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING,
+					["groups"] = BLACKSMITHING_RECIPES.EXPERT,
 				}),
 				n(5164, {	-- Grumnus Steelshaper <Armor Crafter>
 					["coord"] = { 50.2, 42.6, MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_ARMORSMITHING,
+					["groups"] = BLACKSMITHING_RECIPES.ARMORSMITHING,
 				}),
 				n(11146, {	-- Ironus Coldsteel <Special Weapon Crafter>
 					["coord"] = { 50.8, 43.0, MAP.IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_WEAPONSMITHING,
+					["groups"] = BLACKSMITHING_RECIPES.WEAPONSMITHING,
 				}),
 			}),
 		}),

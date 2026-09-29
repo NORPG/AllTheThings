@@ -1364,6 +1364,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							i(19446),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
 							i(19216),	-- Pattern: Argent Boots (RECIPE!)
 							i(19328),	-- Pattern: Dawn Treaders (RECIPE!)
+							-- Maybe??
 							i(19203),	-- Plans: Girdle of the Dawn (RECIPE!)
 							i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)
 							i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
@@ -1416,6 +1417,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 							i(19217),	-- Pattern: Argent Shoulders (RECIPE!)
 							i(19329),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
+							-- maybe?
 							i(19205),	-- Plans: Gloves of the Dawn (RECIPE!)
 							i(13810),	-- Blessed Sunfruit
 							i(13813),	-- Blessed Sunfruit Juice

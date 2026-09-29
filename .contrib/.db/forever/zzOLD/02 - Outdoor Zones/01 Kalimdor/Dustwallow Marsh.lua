@@ -1153,7 +1153,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["cr"] = 4834,	-- Theramore Infiltrator
 				}),
 				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
-					["timeline"] = { ADDED_1_11_1 },
 					["crs"] = {
 						4368,	-- Strashaz Myrmidon
 						16072,	-- Tidelord Rrurgaz

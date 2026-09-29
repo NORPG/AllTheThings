@@ -286,6 +286,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			exploration(819),	-- Windfury Ridge
 			exploration(396),	-- Winterhoof Water Well
 		}),
+		n(FACTIONS, {
+			faction(FACTION_FOREVER_EARTHEN_RING)
+		}),
 		n(QUESTS, {
 			q(833, {	-- A Sacred Burial
 				["qg"] = 3233,	-- Lorekeeper Raintotem
@@ -1068,6 +1071,25 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 				},
+			}),
+			n(264078, {	-- Sutara Plainstalker <Quartermaster>
+				coord = { 34.6, 22.8, MAP.MULGORE },
+				groups = bubbleDownClassicRep(FACTION_FOREVER_EARTHEN_RING, {
+					{		-- Neutral
+					}, {	-- Friendly
+						i(276978),	-- Pattern: Cloudy Gustwoven Hood
+						i(276979),	-- Pattern: Cloudy Gustwoven Spaulders
+						i(276982),	-- Pattern: Cloudy Stormsewn Cowl
+						i(276983),	-- Pattern: Cloudy Stormsewn Epaulets
+						i(276980),	-- Pattern: Cloudy Windraveled Cover
+						i(276981),	-- Pattern: Cloudy Windraveled Drapes
+						i(276976),	-- Plans: Cloudy Skyforged Helm
+						i(276977),	-- Plans: Cloudy Skyforged Pauldrons
+					}, {	-- Honored
+					}, {	-- Revered
+					}, {	-- Exalted
+					},
+				}),
 			}),
 			n(3081, {	-- Wunna Darkmane <Trade Goods>
 				["coord"] = { 46.2, 58.2, MAP.MULGORE },

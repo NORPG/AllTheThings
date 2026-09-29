@@ -417,146 +417,85 @@ i(250217),	-- Purveyor of Light
 
 
 
-i(250482),	-- Glowing Copper Boots
-i(250483),	-- Sterling Silver Boots
-i(250484),	-- Sterling Silver Leggings
-i(250485),	-- Sterling Silver Gauntlet
-i(250486),	-- Sterling Silver Shoulders
-i(250487),	-- Sterling Silver Breastplate
-i(250488),	-- Veteran's Chain Shirt
-i(250489),	-- Guard's Chain Shirt
-i(250490),	-- Protector's Chain Shirt
-i(250491),	-- Acolyte's Chain Shirt
-i(250492),	-- Crusader's Chain Shirt
-i(250493),	-- Veteran's Chain Leggings
-i(250494),	-- Guard's Chain Leggings
-i(250495),	-- Protector's Chain Leggings
-i(250496),	-- Acolyte's Chain Leggings
-i(250497),	-- Crusader's Chain Leggings
-i(250498),	-- Veteran's Chain Helm
-i(250499),	-- Guard's Chain Helm
-i(250500),	-- Protector's Chain Helm
-i(250501),	-- Acolyte's Chain Helm
-i(250502),	-- Crusader's Chain Helm
-i(250503),	-- Veteran's Boots
-i(250504),	-- Guard's Boots
-i(250505),	-- Protector's Boots
-i(250506),	-- Acolyte's Boots
-i(250507),	-- Crusader's Boots
-i(250508),	-- Veteran's Gloves
-i(250509),	-- Guard's Gloves
-i(250510),	-- Protector's Gloves
-i(250511),	-- Acolyte's Gloves
-i(250512),	-- Crusader's Gloves
-i(250513),	-- Veteran's Chain Belt
-i(250514),	-- Guard's Chain Belt
-i(250515),	-- Protector's Chain Belt
-i(250516),	-- Acolyte's Chain Belt
-i(250517),	-- Crusader's Chain Belt
-i(250518),	-- Veteran's Silvered Chain Shirt
-i(250519),	-- Guard's Silvered Chain Shirt
-i(250520),	-- Protector's Silvered Chain Shirt
-i(250521),	-- Acolyte's Silvered Chain Shirt
-i(250522),	-- Crusader's Silvered Chain Shirt
-i(250523),	-- Veteran's Silvered Chain Leggings
-i(250524),	-- Guard's Silvered Chain Leggings
-i(250525),	-- Protector's Silvered Chain Leggings
-i(250526),	-- Acolyte's Silvered Chain Leggings
-i(250527),	-- Crusader's Silvered Chain Leggings
-i(250528),	-- Veteran's Silvered Chain Helm
-i(250529),	-- Guard's Silvered Chain Helm
-i(250530),	-- Protector's Silvered Chain Helm
-i(250531),	-- Acolyte's Silvered Chain Helm
-i(250532),	-- Crusader's Silvered Chain Helm
-i(250533),	-- Hard Gold Cuirass
-i(250534),	-- Hard Gold Boots
-i(250535),	-- Hard Gold Bracers
-i(250536),	-- Hard Gold Leggings
-i(250537),	-- Hard Gold Coif
-i(250538),	-- Hard Gold Gauntlet
-i(250539),	-- Hard Gold Pauldrons
-i(250540),	-- Shining Mithril Breastplate
-i(250541),	-- Shining Mithril Pauldrons
-i(250542),	-- Shining Mithril Boots
-i(250543),	-- Shining Mithril Helm
-i(250544),	-- Shining Mithril Pants
-i(250545),	-- Shining Mithril Gauntlet
-i(250546),	-- Officer's Boots
-i(250547),	-- Sentinel's Boots
-i(250548),	-- Warder's Boots
-i(250549),	-- Prefect's Boots
-i(250550),	-- Justicar's Boots
-i(250551),	-- Officer's Gloves
-i(250552),	-- Sentinel's Gloves
-i(250553),	-- Warder's Gloves
-i(250554),	-- Prefect's Gloves
-i(250555),	-- Justicar's Gloves
-i(250556),	-- Officer's Belt
-i(250557),	-- Sentinel's Belt
-i(250558),	-- Warder's Belt
-i(250559),	-- Prefect's Belt
-i(250560),	-- Justicar's Belt
-i(250561),	-- Officer's Sabatons
-i(250562),	-- Sentinel's Sabatons
-i(250563),	-- Warder's Sabatons
-i(250564),	-- Prefect's Sabatons
-i(250565),	-- Justicar's Sabatons
-i(250566),	-- Officer's Gauntlet
-i(250567),	-- Sentinel's Gauntlet
-i(250568),	-- Warder's Gauntlet
-i(250569),	-- Prefect's Gauntlet
-i(250570),	-- Justicar's Gauntlet
-i(250571),	-- Officer's Waistguard
-i(250572),	-- Sentinel's Waistguard
-i(250573),	-- Warder's Waistguard
-i(250574),	-- Prefect's Waistguard
-i(250575),	-- Justicar's Waistguard
-i(250576),	-- Officer's Pauldrons
-i(250577),	-- Sentinel's Pauldrons
-i(250578),	-- Warder's Pauldrons
-i(250579),	-- Prefect's Pauldrons
-i(250580),	-- Justicar's Pauldrons
-i(250581),	-- Officer's Wristguards
-i(250582),	-- Sentinel's Wristguards
-i(250583),	-- Warder's Wristguards
-i(250584),	-- Prefect's Wristguards
-i(250585),	-- Justicar's Wristguards
-i(250586),	-- Blessed Plate Pauldrons
-i(250587),	-- Blessed Plate Boots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 i(250588),	-- Blessed Plate Gauntlet
-i(250589),	-- Imperial Plate Gauntlets
-i(250590),	-- Blessed Plate Bracers
-i(250591),	-- Blessed Plate Leggings
-i(250592),	-- Blessed Plate Belt
-i(250593),	-- Blessed Plate Helm
-i(250594),	-- Blessed Plate Chest
-i(250595),	-- Enriched Thorium Breastplate
+
+
+
+
+
+
 i(250596),	-- Enriched Thorium Leggings
-i(250597),	-- Enriched Thorium Helm
-i(250598),	-- Champion's Legplates
-i(250599),	-- Stalwart Helm
-i(250600),	-- Martyr's Legplates
+
+
+
+
 i(250601),	-- Breastplate of Salvation
-i(250602),	-- Brass Knuckles
-i(250603),	-- Bronze Dory
-i(250604),	-- Iron Fists
-i(250605),	-- Steel Spear
-i(250606),	-- Iron Morningstar
-i(250607),	-- Mithril Shortsword
-i(250608),	-- Mithril Warhammer
-i(250609),	-- Mithril Claws
+
+
+
+
+
+
+
+
 i(250610),	-- Mithril Claymore
-i(250611),	-- Mithril Stiletto
-i(250612),	-- Charged Mithril Battleaxe
-i(250613),	-- Thorium Greatmace
-i(250614),	-- Thorium Cestus
-i(250615),	-- Thorium Poleaxe
-i(250616),	-- Bold Dirk
-i(250617),	-- Stormcarver
-i(250618),	-- Bagh Nakh
-i(250619),	-- Legionite Glaive
-i(250620),	-- Gemmed Copper Boots
-i(250621),	-- Strange Copper Boots
+
+
+
+
+
+
+
+
+
+
+
 i(250725),	-- Crate of Exotic Parts
 i(250744),	-- Firestarter Fir
 i(250773),	-- Nordrassil Root Cap
@@ -605,128 +544,62 @@ i(251320),	-- Satchet of Spirit Powder
 i(251332),	-- Plans: Gemmed Copper Boots
 i(251333),	-- Plans: Strange Copper Boots
 i(251334),	-- Plans: Glowing Copper Boots
-i(251335),	-- Plans: Sterling Silver Boots
-i(251336),	-- Plans: Sterling Silver Leggings
-i(251337),	-- Plans: Sterling Silver Gauntlet
-i(251338),	-- Plans: Sterling Silver Shoulders
-i(251339),	-- Plans: Sterling Silver Breastplate
-i(251341),	-- Plans: Guard's Chain Shirt
-i(251355),	-- Plans: Veteran's Boots
-i(251356),	-- Plans: Guard's Boots
-i(251357),	-- Plans: Protector's Boots
-i(251358),	-- Plans: Acolyte's Boots
-i(251359),	-- Plans: Crusader's Boots
-i(251360),	-- Plans: Veteran's Gloves
-i(251361),	-- Plans: Guard's Gloves
-i(251362),	-- Plans: Protector's Gloves
-i(251363),	-- Plans: Acolyte's Gloves
-i(251364),	-- Plans: Crusader's Gloves
+
+
+
+
+
+
+
+
 i(251365),	-- Plans: Veteran's Chain Belt
 i(251366),	-- Plans: Guard's Chain Belt
 i(251367),	-- Plans: Protector's Chain Belt
 i(251368),	-- Plans: Acolyte's Chain Belt
 i(251369),	-- Plans: Crusader's Chain Belt
-i(251370),	-- Plans: Veteran's Silvered Chain Shirt
-i(251371),	-- Plans: Guard's Silvered Chain Shirt
-i(251372),	-- Plans: Protector's Silvered Chain Shirt
-i(251373),	-- Plans: Acolyte's Silvered Chain Shirt
-i(251374),	-- Plans: Crusader's Silvered Chain Shirt
-i(251375),	-- Plans: Veteran's Silvered Chain Leggings
-i(251376),	-- Plans: Guard's Silvered Chain Leggings
-i(251377),	-- Plans: Protector's Silvered Chain Leggings
-i(251378),	-- Plans: Acolyte's Silvered Chain Leggings
-i(251379),	-- Plans: Crusader's Silvered Chain Leggings
-i(251380),	-- Plans: Veteran's Silvered Chain Helm
-i(251381),	-- Plans: Guard's Silvered Chain Helm
-i(251382),	-- Plans: Protector's Silvered Chain Helm
+
+
+
+
+
 i(251383),	-- Plans: Acolyte's Silvered Chain Helm
-i(251384),	-- Plans: Crusader's Silvered Chain Helm
-i(251385),	-- Plans: Hard Gold Cuirass
-i(251386),	-- Plans: Hard Gold Boots
-i(251387),	-- Plans: Hard Gold Bracers
-i(251388),	-- Plans: Hard Gold Leggings
-i(251389),	-- Plans: Hard Gold Coif
-i(251390),	-- Plans: Hard Gold Gauntlet
-i(251391),	-- Plans: Hard Gold Pauldrons
-i(251392),	-- Plans: Shining Mithril Breastplate
-i(251393),	-- Plans: Shining Mithril Pauldrons
-i(251394),	-- Plans: Shining Mithril Boots
-i(251396),	-- Plans: Shining Mithril Pants
-i(251397),	-- Plans: Shining Mithril Gauntlet
-i(251398),	-- Plans: Officer's Boots
-i(251399),	-- Plans: Sentinel's Boots
-i(251400),	-- Plans: Warder's Boots
-i(251401),	-- Plans: Prefect's Boots
-i(251402),	-- Plans: Justicar's Boots
-i(251403),	-- Plans: Officer's Gloves
-i(251404),	-- Plans: Sentinel's Gloves
-i(251405),	-- Plans: Warder's Gloves
-i(251406),	-- Plans: Prefect's Gloves
-i(251407),	-- Plans: Justicar's Gloves
-i(251408),	-- Plans: Officer's Belt
-i(251409),	-- Plans: Sentinel's Belt
-i(251410),	-- Plans: Warder's Belt
-i(251411),	-- Plans: Prefect's Belt
-i(251412),	-- Plans: Justicar's Belt
-i(251413),	-- Plans: Officer's Sabatons
-i(251414),	-- Plans: Sentinel's Sabatons
-i(251415),	-- Plans: Warder's Sabatons
-i(251416),	-- Plans: Prefect's Sabatons
-i(251417),	-- Plans: Justicar's Sabatons
-i(251418),	-- Plans: Officer's Gauntlet
-i(251419),	-- Plans: Sentinel's Gauntlet
-i(251420),	-- Plans: Warder's Gauntlet
-i(251421),	-- Plans: Prefect's Gauntlet
-i(251422),	-- Plans: Justicar's Gauntlet
-i(251423),	-- Plans: Officer's Waistguard
-i(251424),	-- Plans: Sentinel's Waistguard
-i(251425),	-- Plans: Warder's Waistguard
-i(251426),	-- Plans: Prefect's Waistguard
-i(251427),	-- Plans: Justicar's Waistguard
-i(251428),	-- Plans: Officer's Pauldrons
-i(251429),	-- Plans: Sentinel's Pauldrons
-i(251430),	-- Plans: Warder's Pauldrons
-i(251431),	-- Plans: Prefect's Pauldrons
-i(251432),	-- Plans: Justicar's Pauldrons
-i(251433),	-- Plans: Officer's Wristguard
-i(251434),	-- Plans: Sentinel's Wristguard
-i(251435),	-- Plans: Warder's Wristguard
-i(251436),	-- Plans: Prefect's Wristguard
-i(251437),	-- Plans: Justicar's Wristguards
-i(251438),	-- Plans: Blessed Plate Pauldrons
-i(251439),	-- Plans: Blessed Plate Boots
-i(251440),	-- Plans: Blessed Plate Gauntlet
-i(251441),	-- Plans: Imperial Plate Gauntlets
-i(251442),	-- Plans: Blessed Plate Bracers
-i(251443),	-- Plans: Blessed Plate Leggings
-i(251444),	-- Plans: Blessed Plate Belt
-i(251445),	-- Plans: Blessed Plate Helm
-i(251446),	-- Plans: Blessed Plate Chest
-i(251447),	-- Plans: Enriched Thorium Breastplate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 i(251448),	-- Plans: Enriched Thorium Leggings
-i(251449),	-- Plans: Enriched Thorium Helm
-i(251450),	-- Plans: Champion's Legplates
-i(251451),	-- Plans: Stalwart Helm
-i(251452),	-- Plans: Martyr's Legplates
-i(251453),	-- Plans: Breastplate of Salvation
-i(251454),	-- Plans: Brass Knuckles
-i(251455),	-- Plans: Bronze Dory
-i(251456),	-- Plans: Iron Fists
-i(251457),	-- Plans: Steel Spear
-i(251458),	-- Plans: Iron Morningstar
-i(251459),	-- Plans: Mithril Shortsword
-i(251460),	-- Plans: Mithril Warhammer
-i(251461),	-- Plans: Mithril Claws
+
+
+
+
+
+
+
+
+
 i(251462),	-- Plans: Mithril Claymore
-i(251463),	-- Plans: Mithril Stiletto
-i(251464),	-- Plans: Charged Mithril Battleaxe
-i(251465),	-- Plans: Thorium Greatmace
+
+
 i(251466),	-- Plans: Thorium Cestus
-i(251467),	-- Plans: Thorium Poleaxe
-i(251468),	-- Plans: Bold Dirk
-i(251469),	-- Plans: Stormcarver
-i(251470),	-- Plans: Bagh Nakh
-i(251471),	-- Plans: Legionite Glaive
+
+
+
+
+
 i(251520),	-- Last Scrawlings of Edward Heartweaver
 i(251522),	-- Blood-Stained Letter
 i(251523),	-- The Friends We Made Along the Way
@@ -2932,7 +2805,7 @@ i(273008),	-- Fel-Slime Ooze
 i(273015),	-- Toxin Extractor
 i(273050),	-- Blackmaw Pouch
 
-i(273086),	-- Blueprint: Anvil
+
 i(273087),	-- Blueprint: Journeyman Campfire
 i(273092),	-- Blueprint: Repair Bot
 i(273096),	-- Blueprint: Tanning Rack
@@ -2946,7 +2819,6 @@ i(273105),	-- Blueprint: Toxin Study
 i(273106),	-- Blueprint: Greenhouse
 i(273109),	-- Blueprint: Trapper's Workbench
 
-i(273113),	-- Blueprint: Master Forge
 i(273115),	-- Blueprint: Baker's Oven
 i(273116),	-- Blueprint: Arcane Forge
 i(273117),	-- Blueprint: Anarchist's Workbench
@@ -3329,18 +3201,7 @@ i(273972),	-- Pattern: Manaflare Pants
 i(273973),	-- Pattern: Manaflare Gloves
 i(273974),	-- Pattern: Manaflare Mantle
 i(273975),	-- Pattern: Manaflare Boots
-i(273976),	-- Plans: Justice Leggings
-i(273977),	-- Plans: Justice Gauntlets
-i(273978),	-- Plans: Justice Spaulders
-i(273979),	-- Plans: Justice Greaves
-i(273980),	-- Plans: Justice Legplates
-i(273981),	-- Plans: Justice Gloves
-i(273982),	-- Plans: Justice Epaulets
-i(273983),	-- Plans: Justice Treads
-i(273984),	-- Plans: Justice Legguards
-i(273985),	-- Plans: Justice Handguards
-i(273986),	-- Plans: Justice Pauldrons
-i(273987),	-- Plans: Justice Sabatons
+
 i(273988),	-- Pattern: Pants of Conviction
 i(273989),	-- Pattern: Gloves of Conviction
 i(273990),	-- Pattern: Mantle of Conviction
@@ -3365,14 +3226,7 @@ i(274008),	-- Pattern: Demonheart Leggings
 i(274009),	-- Pattern: Demonheart Gloves
 i(274010),	-- Pattern: Demonheart Spaulders
 i(274011),	-- Pattern: Demonheart Boots
-i(274012),	-- Plans: Legplates of Glory
-i(274013),	-- Plans: Gauntlets of Glory
-i(274014),	-- Plans: Shoulders of Glory
-i(274015),	-- Plans: Greaves of Glory
-i(274016),	-- Plans: Legguards of Glory
-i(274017),	-- Plans: Handguards of Glory
-i(274018),	-- Plans: Pauldrons of Glory
-i(274019),	-- Plans: Sabatons of Glory
+
 i(274020),	-- Seal of Armorcrafting
 i(274021),	-- Barrens Headband
 i(274022),	-- Tough Guy's Eyepatch
@@ -3701,12 +3555,8 @@ i(275594),	-- Pattern: Scalegut Treaders
 i(275595),	-- Pattern: Broodwatcher's Clenchers
 i(275596),	-- Pattern: Broodwatcher's Belt
 i(275597),	-- Pattern: Broodwatcher's Treaders
-i(275598),	-- Plans: Goregasher Grips
-i(275599),	-- Plans: Goregasher Support
-i(275600),	-- Plans: Goregasher Stompers
-i(275601),	-- Plans: Clutchlord's Grips
-i(275602),	-- Plans: Clutchlord's Support
-i(275603),	-- Plans: Clutchlord's Stompers
+
+
 i(275604),	-- Venomspew Gloves
 i(275605),	-- Venomspew Cord
 i(275606),	-- Venomspew Footpads
@@ -3725,12 +3575,9 @@ i(275618),	-- Scalegut Treaders
 i(275619),	-- Broodwatcher's Clenchers
 i(275620),	-- Broodwatcher's Belt
 i(275621),	-- Broodwatcher's Treaders
-i(275622),	-- Goregasher Grips
-i(275623),	-- Goregasher Support
-i(275624),	-- Goregasher Stompers
-i(275625),	-- Clutchlord's Grips
-i(275626),	-- Clutchlord's Support
-i(275627),	-- Clutchlord's Stompers
+
+
+
 i(275630),	-- Depleted Eye of Influence
 i(275633),	-- Foxtail Ward
 i(275635),	-- Blade of House Perenolde
@@ -3974,27 +3821,26 @@ i(276972),	-- Pattern: Azure Stormsewn Handwraps
 i(276973),	-- Pattern: Azure Stormsewn Cord
 i(276974),	-- Pattern: Azure Stormsewn Leggings
 i(276975),	-- Pattern: Azure Stormsewn Shoes
-i(276976),	-- Plans: Cloudy Skyforged Helm
-i(276977),	-- Plans: Cloudy Skyforged Pauldrons
+
 i(276978),	-- Pattern: Cloudy Gustwoven Hood
 i(276979),	-- Pattern: Cloudy Gustwoven Spaulders
 i(276980),	-- Pattern: Cloudy Windraveled Cover
 i(276981),	-- Pattern: Cloudy Windraveled Drapes
 i(276982),	-- Pattern: Cloudy Stormsewn Cowl
 i(276983),	-- Pattern: Cloudy Stormsewn Epaulets
-i(276984),	-- Plans: Azure Skyforged Helm
-i(276985),	-- Plans: Azure Skyforged Pauldrons
+
+
 i(276986),	-- Pattern: Azure Gustwoven Hood
 i(276987),	-- Pattern: Azure Gustwoven Spaulders
 i(276988),	-- Pattern: Azure Windraveled Cover
 i(276989),	-- Pattern: Azure Windraveled Drapes
 i(276990),	-- Pattern: Azure Stormsewn Cowl
 i(276991),	-- Pattern: Azure Stormsewn Epaulets
-i(276992),	-- Cloudy Skyforged Chainmail
-i(276993),	-- Cloudy Skyforged Wristguards
-i(276994),	-- Cloudy Skyforged Gauntlets
-i(276995),	-- Cloudy Skyforged Chain
-i(276996),	-- Cloudy Skyforged Legguards
+
+
+
+
+
 i(276997),	-- Cloudy Skyforged Greaves
 i(276998),	-- Cloudy Gustwoven Harness
 i(276999),	-- Cloudy Gustwoven Bracers
@@ -4014,11 +3860,11 @@ i(277012),	-- Cloudy Stormsewn Handwraps
 i(277013),	-- Cloudy Stormsewn Cord
 i(277014),	-- Cloudy Stormsewn Leggings
 i(277015),	-- Cloudy Stormsewn Shoes
-i(277016),	-- Azure Skyforged Chainmail
-i(277017),	-- Azure Skyforged Wristguards
-i(277018),	-- Azure Skyforged Gauntlets
-i(277019),	-- Azure Skyforged Chain
-i(277020),	-- Azure Skyforged Legguards
+
+
+
+
+
 i(277021),	-- Azure Skyforged Greaves
 i(277022),	-- Azure Gustwoven Harness
 i(277023),	-- Azure Gustwoven Bracers
@@ -4038,16 +3884,16 @@ i(277036),	-- Azure Stormsewn Handwraps
 i(277037),	-- Azure Stormsewn Cord
 i(277038),	-- Azure Stormsewn Leggings
 i(277039),	-- Azure Stormsewn Shoes
-i(277040),	-- Cloudy Skyforged Helm
-i(277041),	-- Cloudy Skyforged Pauldrons
+
+
 i(277042),	-- Cloudy Gustwoven Hood
 i(277043),	-- Cloudy Gustwoven Spaulders
 i(277044),	-- Cloudy Windraveled Cover
 i(277045),	-- Cloudy Windraveled Drapes
 i(277046),	-- Cloudy Stormsewn Cowl
 i(277047),	-- Cloudy Stormsewn Epaulets
-i(277048),	-- Azure Skyforged Helm
-i(277049),	-- Azure Skyforged Pauldrons
+
+
 i(277050),	-- Azure Gustwoven Hood
 i(277051),	-- Azure Gustwoven Spaulders
 i(277052),	-- Azure Windraveled Cover
@@ -4336,13 +4182,13 @@ i(279255),	-- Eternity Pauldrons
 i(279256),	-- Tranquil Wristguards
 i(279257),	-- Mourning Handguards
 i(279258),	-- Wild Leather Armor Kit
-i(279259),	-- Ironwood Blade
-i(279260),	-- Forest Defender's Axe
-i(279261),	-- Greenhammer
-i(279262),	-- Evergreen Shield
+
+
+
+
 i(279263),	-- Depleted Thorium Sabatons
-i(279264),	-- Heavy Thorium Gauntlets
-i(279265),	-- Azerothium Legplates
+
+
 i(279266),	-- Robes of Fiery Devastation
 i(279267),	-- Mana-infused Cord
 i(279268),	-- Rime-encrusted Boots
@@ -4365,13 +4211,9 @@ i(279304),	-- Pattern: Eternity Pauldrons
 i(279305),	-- Pattern: Tranquil Wristguards
 i(279306),	-- Pattern: Mourning Handguards
 i(279307),	-- Pattern: Wild Leather Armor Kit
-i(279308),	-- Plans: Ironwood Blade
-i(279309),	-- Plans: Forest Defender's Axe
-i(279310),	-- Plans: Greenhammer
-i(279311),	-- Plans: Evergreen Shield
-i(279312),	-- Plans: Depleted Thorium Sabatons
-i(279313),	-- Plans: Heavy Thorium Gauntlets
-i(279314),	-- Plans: Azerothium Legplates
+
+
+
 i(279315),	-- Pattern: Robes of Fiery Devastation
 i(279316),	-- Pattern: Mana-infused Cord
 i(279317),	-- Pattern: Rime-encrusted Boots
@@ -4417,7 +4259,7 @@ i(279939),	-- Collecting Basket
 i(279940),	-- Toxin Study
 i(279941),	-- Tanning Rack
 i(279943),	-- Spinning Wheel
-i(279944),	-- Sharpening Wheel
+
 i(279945),	-- Sewing Machine
 i(279947),	-- Seed Hybridizer
 i(279948),	-- Rock Garden
@@ -4425,7 +4267,7 @@ i(279949),	-- Repair Bot
 i(279950),	-- Reagent Bot
 i(279951),	-- Plague Doctor's Laboratory
 i(279952),	-- Molten Foundry
-i(279955),	-- Master Forge
+
 
 i(279957),	-- Cookie's Feast
 i(279959),	-- Loom
@@ -4449,7 +4291,7 @@ i(279981),	-- Basic Campfire Kit
 i(279982),	-- Iron Oven
 i(279985),	-- Arcane Salvager
 i(279987),	-- Arcane Forge
-i(279988),	-- Anvil
+
 i(279989),	-- Anarchist's Workbench
 
 i(279991),	-- Dry Branch
@@ -4766,16 +4608,14 @@ i(285275),	-- Satchel of Copper Bombs
 i(285276),	-- Satchel of Bronze Bombs
 i(285277),	-- Satchel of Iron Bombs
 i(285278),	-- Satchel of Dark Iron Bombs
-i(285279),	-- Cracked Blacksmith Hammer
-i(285280),	-- Mithril Blacksmith Hammer
-i(285281),	-- Arcanite Blacksmith Hammer
+
+
+
 i(285285),	-- Schematic: Satchel of Copper Bombs
 i(285286),	-- Schematic: Satchel of Bronze Bombs
 i(285287),	-- Schematic: Satchel of Iron Bombs
 i(285288),	-- Schematic: Satchel of Dark Iron Bombs
-i(285289),	-- Plans: Cracked Blacksmith Hammer
-i(285290),	-- Plans: Mithril Blacksmith Hammer
-i(285291),	-- Plans: Arcanite Blacksmith Hammer
+
 i(285326),	-- Leafre's Ring of Armor Piercing
 i(285327),	-- Kirin Tor Tabard
 i(285356),	-- Advisor Emerson's Instructions

@@ -4,15 +4,15 @@
 -- CRIEVE NOTE: This was originally added at the end of Phase 4 before the opening of AQ.
 root(ROOTS.Craftables, {
 	prof(BLACKSMITHING, {
-		prof(9788, {	-- Armorsmith
+		prof(ARMORSMITH, {
 			i(20039),	-- Dark Iron Boots
 			i(22385),	-- Titanic Leggings
 		}),
-		prof(9787, {	-- Weaponsmith
-			prof(17040, {	-- Master Hammersmith
+		prof(WEAPONSMITH, {
+			prof(MASTER_HAMMERSMITH, {
 				i(22384),	-- Persuader
 			}),
-			prof(17039, {	-- Master Swordsmith
+			prof(MASTER_SWORDSMITH, {
 				i(22383),	-- Sageblade
 			}),
 		}),

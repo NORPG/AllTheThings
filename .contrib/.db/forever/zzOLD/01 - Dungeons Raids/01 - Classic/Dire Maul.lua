@@ -419,9 +419,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #if AFTER TBC
 						BLACKSMITHING,
 						-- #else
-						9788,	-- Armorsmith
+						ARMORSMITH,
 						-- #endif
 					["groups"] = {
+						-- maybe?
 						i(12727, {	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -447,7 +448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #if AFTER TBC
 						BLACKSMITHING,
 						-- #else
-						9788,	-- Armorsmith
+						ARMORSMITH,
 						-- #endif
 					["lvl"] = 50,
 					["groups"] = {
@@ -476,10 +477,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #if AFTER TBC
 						BLACKSMITHING,
 						-- #else
-						9788,	-- Armorsmith
+						ARMORSMITH,
 						-- #endif
 					["lvl"] = 50,
 					["groups"] = {
+						-- maybe?
 						i(12725, {	-- Plans: Enchanted Thorium Helm (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },
 						}),

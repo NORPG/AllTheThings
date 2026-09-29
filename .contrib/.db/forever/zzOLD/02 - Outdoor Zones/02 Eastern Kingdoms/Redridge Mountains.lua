@@ -1857,6 +1857,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							i(251417, {	-- Plans: Justicar's Sabatons (RECIPE!)
 								cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
 							}),
+							i(251427, {	-- Plans: Justicar's Waistguard (RECIPE!)
+								cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
+							}),
 							i(251437, {	-- Plans: Justicar's Wristguards (RECIPE!)
 								cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
 							}),

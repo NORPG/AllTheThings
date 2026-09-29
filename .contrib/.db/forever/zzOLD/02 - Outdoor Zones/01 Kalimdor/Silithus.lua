@@ -1981,6 +1981,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
 							i(20548),	-- Pattern: Runed Stygian Belt (RECIPE!)
 							i(20546),	-- Pattern: Runed Stygian Leggings (RECIPE!)
+							-- Maybe??
 							i(20554),	-- Plans: Darkrune Breastplate (RECIPE!)
 							i(20553),	-- Plans: Darkrune Gauntlets (RECIPE!)
 							i(20555),	-- Plans: Darkrune Helm (RECIPE!)
@@ -2137,6 +2138,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
+							-- Maybe?
 							i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 							i(22768),	-- Plans: Ironvine Belt (RECIPE!)
 						}, {	-- Honored

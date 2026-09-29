@@ -575,9 +575,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					-- #endif
 				}),
-				i(142337, {	-- Plans: Blight (RECIPE!)
-					["timeline"] = { ADDED_7_1_5 },
-				}),
 				i(18743),	-- Gracious Cape
 				i(17061),	-- Juno's Shadow
 				-- #if SEASON_OF_DISCOVERY
@@ -1147,13 +1144,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["timeline"] = {
-									-- #if SEASON_OF_DISCOVERY
-									REMOVED_1_15_3,
-									-- #else
-									REMOVED_2_0_1, ADDED_3_0_2,
-									-- #endif
-								},
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228308, {	-- Plans: Tranquility (RECIPE!)
@@ -1166,16 +1156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(446, {	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["creatureID"] = 10997,	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["groups"] = {
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_FOUR, i(228307, {	-- Plans: Deadly Heartseeker (RECIPE!)
-								["timeline"] = { ADDED_1_15_3 },
-							})),
-							-- #endif
-							i(12839, {	-- Plans: Heartseeker (RECIPE!)
-								-- #if SEASON_OF_DISCOVERY
-								["timeline"] = { REMOVED_1_15_3 },
-								-- #endif
-							}),
+							i(12839),	-- Plans: Heartseeker (RECIPE!)
 							applyclassicphase(PHASE_FIVE, i(22406)),	-- Redemption
 							applyclassicphase(PHASE_FIVE, i(22404)),	-- Willey's Back Scratcher
 							-- #if SEASON_OF_DISCOVERY
@@ -1473,13 +1454,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { REMOVED_2_0_5 },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
-						i(74274, {	-- Plans: Phantom Blade (RECIPE!)
-							["timeline"] = { ADDED_4_3_0 },
-							["crs"] = {
-								10463,	-- Shrieking Banshee
-								10464,	-- Wailing Banshee
-							},
-						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
 							["timeline"] = { ADDED_1_15_3 },
@@ -1562,20 +1536,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-								["timeline"] = {
-									-- #if SEASON_OF_DISCOVERY
-									REMOVED_1_15_3,
-									-- #else
-									REMOVED_2_0_1, ADDED_3_0_2,
-									-- #endif
-								},
 							}),
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_FOUR, i(228306, {	-- Plans: Desecration (RECIPE!)
-								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-								["timeline"] = { ADDED_1_15_3 },
-							})),
-							-- #endif
 						},
 					}),
 					e(451, {	-- Baroness Anastari

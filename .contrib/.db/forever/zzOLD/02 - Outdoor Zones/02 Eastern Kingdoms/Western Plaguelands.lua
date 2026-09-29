@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						1813,	-- Decaying Horror
 					},
 				}),
-				i(12707, {	-- Plans: Runic Plate Boots
+				i(12707, {	-- Plans: Runic Plate Boots (RECIPE!)
 					["cr"] = 1836,	-- Scarlet Cavalier
 				}),
 				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)

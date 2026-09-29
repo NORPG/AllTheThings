@@ -829,7 +829,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 13.4, 44.1, MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
+						i(7995, {	-- Plans: Mithril Plate Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -29,6 +29,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			exploration(284),	-- The Uplands
 		}),
 		n(FACTIONS, {
+			faction(FACTION_KIRIN_TOR),
 			faction(FACTION_RAVENHOLDT, {	-- Ravenholdt
 				["icon"] = 132292,
 				["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
@@ -669,6 +670,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(VENDORS, {
+			n(32287, {	-- Archmage Alvareaux <Quartermaster>
+				coord = { 14.0, 63.2, MAP.ALTERAC_MOUNTAINS },
+				groups = bubbleDownClassicRep(FACTION_FOREVER_KIRIN_TOR, {
+					{		-- Neutral
+					}, {	-- Friendly
+						i(276986),	-- Pattern: Azure Gustwoven Hood
+						i(276987),	-- Pattern: Azure Gustwoven Spaulders
+						i(276990),	-- Pattern: Azure Stormsewn Cowl
+						i(276991),	-- Pattern: Azure Stormsewn Epaulets
+						i(276988),	-- Pattern: Azure Windraveled Cover
+						i(276989),	-- Pattern: Azure Windraveled Drapes
+						i(276984),	-- Plans: Azure Skyforged Helm
+						i(276985),	-- Plans: Azure Skyforged Pauldrons
+					}, {	-- Honored
+					}, {	-- Revered
+					}, {	-- Exalted
+						i(285327),	-- Kirin Tor Tabard
+					},
+				}),
+			}),
 			n(2480, {	-- Bro'kin <Alchemy Supplies>
 				["coord"] = { 38.0, 38.0, MAP.ALTERAC_MOUNTAINS },
 				["groups"] = {

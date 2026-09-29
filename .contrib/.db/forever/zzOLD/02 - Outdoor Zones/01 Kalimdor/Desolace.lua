@@ -1043,6 +1043,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!) (Cost Carved Totems)
 						i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
+						i(251458),	-- Plans: Iron Morningstar (RECIPE!)
+						i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
 					},
 				}),
 				n(12045, {	-- Hae'Wilani <Axecrafter>

@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 45.6, 51.6, MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
+						i(7995, {	-- Plans: Mithril Plate Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

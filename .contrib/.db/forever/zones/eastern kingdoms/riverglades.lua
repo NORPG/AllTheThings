@@ -17,5 +17,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
+		n(VENDORS, {
+			n(259860, {	-- Martha Wellsworth <General Goods>
+				coord = { 64.2, 84.0, MAP.RIVERGLADES },
+				groups = {
+					i(251460),	-- Plans: Mithril Warhammer
+					i(274977),	-- Recipe: Plain Ol' Paletusk
+				},
+			}),
+		}),
 	},
 });

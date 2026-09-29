@@ -4,21 +4,21 @@
 -- CRIEVE NOTE: This was originally added with Phase 3 just after Blackwing Lair was released.
 root(ROOTS.Craftables, {
 	prof(BLACKSMITHING, {
-		prof(9788, {	-- Armorsmith
+		prof(ARMORSMITH, {
 			i(19164),	-- Dark Iron Gauntlets
 			i(19148),	-- Dark Iron Helm
 			i(12618),	-- Enchanted Thorium Breastplate
 			i(12620),	-- Enchanted Thorium Helm
 			i(12619),	-- Enchanted Thorium Leggings
 		}),
-		prof(9787, {	-- Weaponsmith
-			prof(17041, {	-- Master Axesmith
+		prof(WEAPONSMITH, {
+			prof(MASTER_AXESMITH, {
 				i(19169),	-- Nightfall
 			}),
-			prof(17040, {	-- Master Hammersmith
+			prof(MASTER_HAMMERSMITH, {
 				i(19170),	-- Ebon Hand
 			}),
-			prof(17039, {	-- Master Swordsmith
+			prof(MASTER_SWORDSMITH, {
 				i(19168),	-- Blackguard
 			}),
 			n(WEAPONS, {

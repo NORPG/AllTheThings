@@ -44,17 +44,27 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					n(11178, {	-- Borgosh Corebender <Weaponsmith>
 						["coord"] = { 79.6, 23.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_WEAPONSMITHING,
+						["groups"] = BLACKSMITHING_RECIPES.WEAPONSMITHING,
 					}),
 					n(11177, {	-- Okothos Ironrager <Armorsmith>
 						["coord"] = { 79.8, 23.8, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_ARMORSMITHING,
+						["groups"] = BLACKSMITHING_RECIPES.ARMORSMITHING,
 					}),
-					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
+					n(3355, {	-- Saru Steelfury <Artisan Blacksmith>
 						["coord"] = { 76.4, 34.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_CATA_BLACKSMITHING,
+						["groups"] = BLACKSMITHING_RECIPES.EXPERT,
+					}),
+					n(1383, {	-- Snarl <Expert Blacksmith>
+						["coord"] = { 79.8, 23.4, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = BLACKSMITHING_RECIPES.JOURNEYMAN,
+					}),
+					n(10266, {	-- Ug'thok <Journeyman Blacksmith>
+						["coord"] = { 80.6, 23.6, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = BLACKSMITHING_RECIPES.APPRENTICE,
 					}),
 				}),
 				prof(COOKING, {
@@ -239,8 +249,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
-							["description"] =
-								"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -440,8 +449,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7980, {	-- Plans: Barbaric Iron Helm (RECIPE!)
-							["description"] =
-								"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -457,8 +465,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
-							["description"] =
-								"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -516,8 +523,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
-						["description"] =
-							"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -698,8 +704,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
-						["description"] =
-							"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),

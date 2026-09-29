@@ -4,19 +4,19 @@
 root(ROOTS.Craftables, {
 	prof(ALCHEMY),
 	prof(BLACKSMITHING, {
-		prof(9788, {	-- Armorsmith
+		prof(ARMORSMITH, {
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
 		}),
-		prof(9787, {	-- Weaponsmith
+		prof(WEAPONSMITH, {
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
 			["groups"] = {
-				prof(17041, {	-- Master Axesmith
+				prof(MASTER_AXESMITH, {
 					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 				}),
-				prof(17040, {	-- Master Hammersmith
+				prof(MASTER_HAMMERSMITH, {
 					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				}),
-				prof(17039, {	-- Master Swordsmith
+				prof(MASTER_SWORDSMITH, {
 					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 				}),
 				n(WEAPONS, {

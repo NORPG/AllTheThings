@@ -451,9 +451,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ 73.8, 35.6, MAP.BURNING_STEPPES },
 					},
 					["groups"] = {
-						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
-							["timeline"] = { ADDED_1_0_1 },
-						}),
+						i(12828),	-- Plans: Volcanic Hammer (RECIPE!)
 					},
 				}),
 			}),

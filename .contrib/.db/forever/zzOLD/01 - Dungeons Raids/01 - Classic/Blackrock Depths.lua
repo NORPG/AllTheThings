@@ -972,7 +972,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
+
+						-- bwl
 						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
+
+						
 						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
 						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
 
@@ -1218,21 +1222,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
+
+						-- BWL
 						applyclassicphase(PHASE_THREE_RECIPES, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19209)),	-- Plans: Blackfury (RECIPE!)
+						--
+						-- bwl
 						applyclassicphase(PHASE_THREE_RECIPES, i(19207)),	-- Plans: Dark Iron Gauntlets (RECIPE!)
+						--
 						i(17052),	-- Plans: Dark Iron Leggings (RECIPE!)
 						i(17053),	-- Plans: Fiery Chain Shoulders (RECIPE!)
 					},
 					{	-- Exalted
+						-- BWL
 						applyclassicphase(PHASE_THREE_RECIPES, i(19211)),	-- Plans: Blackguard (RECIPE!)
-						applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19212)),	-- Plans: Nightfall (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
-						applyclassicphase(PHASE_THREE_RECIPES, i(19212, {	-- Plans: Nightfall (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-							["timeline"] = { REMOVED_1_15_0 },
-							-- #endif
-						})),
+						--- P4
+						applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
+						
+						
 					},
 				})),
 				n(9499, {	-- Plugger Spazzring
@@ -1874,16 +1883,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Speak to him to start the encounter.",
 					["groups"] = {
 						i(11313),	-- Ribbly's Head
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(227901, {	-- Plans: Tempered Dark Iron Plate (RECIPE!)
-							["timeline"] = { ADDED_1_15_3 },
-						})),
-						-- #endif
-						i(11612, {	-- Plans: Dark Iron Plate (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-							["timeline"] = { REMOVED_1_15_3 },
-							-- #endif
-						}),
+						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
 						i(2663, {	-- Ribbly's Bandolier
 							["timeline"] = { REMOVED_4_0_1 },
 						}),

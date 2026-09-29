@@ -327,7 +327,7 @@ q(8769,{coords={
 r(21931,{e=14,itemID=17725,requireSkill=333}),
 r(21943,{e=14,itemID=17722}),
 r(21945,{e=14,itemID=17724}),
-r(21913,{e=14,itemID=17706}),
+r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720}),
 i(21325,{b=1,e=14,f=55,spellID=26067}),
@@ -338,7 +338,7 @@ i(17726,{b=1,e=14,g={
 r(21931,{e=14,itemID=17725,requireSkill=333}),
 r(21943,{e=14,itemID=17722}),
 r(21945,{e=14,itemID=17724}),
-r(21913,{e=14,itemID=17706}),
+r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720})}})}}),
 q(6984,{coords={
@@ -347,7 +347,7 @@ i(17726,{b=1,e=14,g={
 r(21931,{e=14,itemID=17725,requireSkill=333}),
 r(21943,{e=14,itemID=17722}),
 r(21945,{e=14,itemID=17724}),
-r(21913,{e=14,itemID=17706}),
+r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720})}})}}),
 q(7022,{coords={

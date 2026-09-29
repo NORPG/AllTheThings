@@ -252,7 +252,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(19445),	-- Formula: Enchant Weapon - Agility (RECIPE!)
 							i(19326),	-- Pattern: Might of the Timbermaw (RECIPE!)
 							i(19215),	-- Pattern: Wisdom of the Timbermaw (RECIPE!)
+							i(251470),	-- Plans: Bagh Nakh (RECIPE!)
 							i(19202),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
+							i(251469),	-- Plans: Stormcarver (RECIPE!)
 						}, {	-- Revered
 							i(19218),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
 							i(19327),	-- Pattern: Timbermaw Brawlers (RECIPE!)

@@ -196,8 +196,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 11193,	-- Seril Scourgebane
 					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["maps"] = { MAP.STRATHOLME },
-					["requireSkill"] =
-						9787,	-- Weaponsmith
+					["requireSkill"] = WEAPONSMITH,
 					["learnedAt"] = 250,
 					["lvl"] = 50,
 					["groups"] = {
@@ -516,8 +515,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 11192,	-- Kilram
 					["coord"] = { 61.2, 37.0, MAP.WINTERSPRING },
 					["maps"] = { MAP.BLACKROCK_SPIRE },
-					["requireSkill"] =
-						9787,	-- Weaponsmith
+					["requireSkill"] = WEAPONSMITH,
 					["learnedAt"] = 250,
 					["lvl"] = 50,
 					["groups"] = {
@@ -553,8 +551,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 11191,	-- Lilith the Lithe
 					["coord"] = { 61.2, 37.2, MAP.WINTERSPRING },
 					["maps"] = { MAP.STRATHOLME },
-					["requireSkill"] =
-						9787,	-- Weaponsmith
+					["requireSkill"] = WEAPONSMITH,
 					["learnedAt"] = 250,
 					["lvl"] = 50,
 					["groups"] = {

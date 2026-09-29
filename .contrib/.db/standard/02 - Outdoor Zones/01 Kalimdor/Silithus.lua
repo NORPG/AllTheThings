@@ -3201,6 +3201,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
+							i(275601),	-- Plans: Clutchlord's Grips
+							i(275598),	-- Plans: Goregasher Grips
 							applyclassicphase(PHASE_FIVE, i(22209)),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
@@ -3212,6 +3214,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							})),
 							-- #endif
 						}, {	-- Honored
+							i(275603),	-- Plans: Clutchlord's Stompers
+							i(275602),	-- Plans: Clutchlord's Support
+							i(275600),	-- Plans: Goregasher Stompers
+							i(275599),	-- Plans: Goregasher Support
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_SIX, i(234278, {		-- Manual: Smelt Obsidian-Infused Thorium Bar (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },

@@ -124,8 +124,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(9980, {	-- Ornate Mithril Helm
-						}),
+						recipe(9980),	-- Ornate Mithril Helm
 					},
 				}),
 				q(2747, {	-- An Extraordinary Egg
@@ -796,8 +795,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(9972, {	-- Ornate Mithril Breastplate
-						}),
+						recipe(9972),	-- Ornate Mithril Breastplate
 					},
 				}),
 				q(3638, {	-- The Pledge of Secrecy
@@ -944,8 +942,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(9979, {	-- Ornate Mithril Boots
-						}),
+						recipe(9979),	-- Ornate Mithril Boots
 					},
 				}),
 				q(3362, {	-- Thistleshrub Valley

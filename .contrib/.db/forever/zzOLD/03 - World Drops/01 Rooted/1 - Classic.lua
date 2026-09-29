@@ -3541,132 +3541,68 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3831),	-- Recipe: Troll's Blood Elixir (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
-			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
-			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-				["timeline"] = {
-					-- #if SEASON_OF_DISCOVERY
-					ADDED_1_15_3,
-					-- #else
-					CREATED_1_12_1, ADDED_2_0_1,
-					-- #endif
-				},
-			}),
-			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
-			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
-			i(3868),	-- Plans: Frost Tiger Blade (RECIPE!)
+			i(2881),	-- Plans: Runed Copper Breastplate (RECIPE!)
 			i(3610),	-- Plans: Gemmed Copper Gauntlets (RECIPE!)
-			i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217276, {	-- Plans: Golden Scale Boots (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(217278, {	-- Plans: Golden Scale Cuirass (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(217286, {	-- Plans: Golden Scale Leggings (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(217284, {	-- Plans: Golden Scale Shoulders (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
-			})),
-			-- #endif
-			i(3875, {	-- Plans: Golden Scale Boots (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3873, {	-- Plans: Golden Scale Cuirass (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3872, {	-- Plans: Golden Scale Leggings (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3871, {	-- Plans: Golden Scale Shoulders (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
-			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
-			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
-			i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
-			i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
-			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
-				-- ["timeline"] = { REMOVED_1_15_3 },
-				-- #endif
-			}),
+			i(251454),	-- Plans: Brass Knuckles
+			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)
-			i(6045),	-- Plans: Iron Counterweight (RECIPE!)
-			i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
-			i(3866),	-- Plans: Jade Serpentblade (RECIPE!)
-			i(12717),	-- Plans: Lionheart Helm (RECIPE!)
 			i(3608),	-- Plans: Mighty Iron Hammer (RECIPE!)
-			i(7991),	-- Plans: Mithril Scale Shoulders (RECIPE!)
+			i(3866),	-- Plans: Jade Serpentblade (RECIPE!)
+			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
+			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
+			i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
+			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
+			i(8028),	-- Plans: Runed Mithril Hammer (RECIPE!)
+			i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
+			i(3868),	-- Plans: Frost Tiger Blade (RECIPE!)
+			i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
+			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
+			i(251338),	-- Plans: Sterling Silver Shoulders
+			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
+			i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
+			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
+			i(251339),	-- Plans: Sterling Silver Breastplate
+			i(251337),	-- Plans: Sterling Silver Gauntlet
+			i(251336),	-- Plans: Sterling Silver Leggings
+			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
+			i(3872),	-- Plans: Golden Scale Leggings (RECIPE!)
+			i(251335),	-- Plans: Sterling Silver Boots
+			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
+			i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
+			i(3871),	-- Plans: Golden Scale Shoulders (RECIPE!)
+			i(7991),	-- Plans: Mithril Plate Shoulders (RECIPE!)
+			i(3873),	-- Plans: Golden Scale Cuirass (RECIPE!)
+			i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
+			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
+			i(3875),	-- Plans: Golden Scale Boots (RECIPE!)
+			i(12694),	-- Plans: Thorium Helm (RECIPE!)
+			i(12702),	-- Plans: Radiant Circlet (RECIPE!)
+			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
+			i(12698),	-- Plans: Dawnbringer Shoulders (RECIPE!)
+			i(12682),	-- Plans: Thorium Armor (RECIPE!)
+			i(12689),	-- Plans: Radiant Breastplate (RECIPE!)
+			i(12684),	-- Plans: Thorium Bracers (RECIPE!)
+			i(12695),	-- Plans: Radiant Gloves (RECIPE!)
+			i(12683),	-- Plans: Thorium Belt (RECIPE!)
+			i(12685),	-- Plans: Radiant Belt (RECIPE!)
+			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
+			i(12713),	-- Plans: Radiant Leggings (RECIPE!)
+			i(12693),	-- Plans: Thorium Boots (RECIPE!)
+			i(12697),	-- Plans: Radiant Boots (RECIPE!)
+			i(12717),	-- Plans: Lionheart Helm (RECIPE!)
+			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
+			i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
+			i(6045),	-- Plans: Iron Counterweight (RECIPE!)
+			i(273086),	-- Blueprint: Anvil
+			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
 			i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 			i(7989),	-- Plans: Mithril Spurs (RECIPE!)
-			applyclassicphase(PHASE_FIVE_RECIPES, i(22390)),	-- Plans: Persuader (RECIPE!)
-			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
-			i(12685),	-- Plans: Radiant Belt (RECIPE!)
-			i(12697),	-- Plans: Radiant Boots (RECIPE!)
-			i(12689),	-- Plans: Radiant Breastplate (RECIPE!)
-			i(12702),	-- Plans: Radiant Circlet (RECIPE!)
-			i(12695),	-- Plans: Radiant Gloves (RECIPE!)
-			i(12713),	-- Plans: Radiant Leggings (RECIPE!)
-			i(2881),	-- Plans: Runed Copper Breastplate (RECIPE!)
-			i(8028),	-- Plans: Runed Mithril Hammer (RECIPE!)
-			applyclassicphase(PHASE_FIVE_RECIPES, i(22389)),	-- Plans: Sageblade (RECIPE!)
-			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
-			i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
-			i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
-			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
-			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227905, {	-- Plans: Skyrider's Masterwork Stormhammer (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
-			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
-			i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_3 },
-				-- #endif
-			}),
-			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(12682),	-- Plans: Thorium Armor (RECIPE!)
-			i(12683),	-- Plans: Thorium Belt (RECIPE!)
-			i(12693),	-- Plans: Thorium Boots (RECIPE!)
-			i(12684),	-- Plans: Thorium Bracers (RECIPE!)
-			i(12694),	-- Plans: Thorium Helm (RECIPE!)
-			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
-			applyclassicphase(PHASE_FIVE, i(22388)),	-- Plans: Titanic Leggings (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228314, {	-- Plans: Warcrest of the Great Chief (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
-			i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
-			i(12691),	-- Plans: Wildthorn Mail (RECIPE!)
+			--- Hmmm might exist?
+			i(22390),	-- Plans: Persuader (RECIPE!)
+			i(22389),	-- Plans: Sageblade (RECIPE!)
+			i(22388),	-- Plans: Titanic Leggings (RECIPE!)
 		}),
 		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
@@ -3758,6 +3694,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(21944),	-- Design: Truesilver Boar (RECIPE!)
 		}))),
 		prof(LEATHERWORKING, {
+			-- Moved to Leatherworking
+			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
+			i(12728),	-- Plans: Invulnerable Mail (RECIPE!)
+			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
+			i(12691),	-- Plans: Wildthorn Mail (RECIPE!)
+
 			i(4301),	-- Pattern: Barbaric Belt (RECIPE!)
 			i(4297),	-- Pattern: Barbaric Gloves (RECIPE!)
 			i(8390),	-- Pattern: Big Voodoo Cloak (RECIPE!)

@@ -12,10 +12,6 @@ root(ROOTS.Craftables, {
 		filter(CONSUMABLES, {
 			i(9155),	-- Arcane Elixir
 			i(10592),	-- Catseye Draught
-			i(250951, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Caustic Smog Potion
-			i(247240, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Discolored Healing Potion
-			i(250952, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Disorienting Smog Potion
-			i(250953, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Dragonfire Potion
 			i(9233),	-- Draught of Detect Demon
 			i(3828),	-- Draught of Detect Lesser Invisibility
 			i(9154),	-- Draught of Detect Undead
@@ -25,220 +21,123 @@ root(ROOTS.Craftables, {
 			i(12190),	-- Dreamless Sleep Potion
 			i(8949),	-- Elixir of Agility
 			i(13453),	-- Elixir of Brute Force
-			i(250328, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Cunning
 			i(8951),	-- Elixir of Defense
-			i(250350, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Ferocity
 			i(6373),	-- Elixir of Fire Power
 			i(17708),	-- Elixir of Frost Power
 			i(6662),	-- Elixir of Giant Growth
 			i(9187),	-- Elixir of Greater Agility
 			i(13445),	-- Elixir of Greater Defense
-			i(250335, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Greater Fortitude
 			i(9179),	-- Elixir of Greater Intellect
-			i(250347, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Greater Spirit
 			i(9206),	-- Elixir of Greater Strength
 			i(21546),	-- Elixir of Holy Power
 			i(3390),	-- Elixir of Lesser Agility
 			i(3389),	-- Elixir of Lesser Defense
 			i(3825),	-- Elixir of Lesser Fortitude
-			i(250353, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Lesser Intellect
-			i(250345, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Lesser Spirit
 			i(2457),	-- Elixir of Minor Agility
 			i(5997),	-- Elixir of Minor Defense
-			i(247755, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Minor Force
 			i(2458),	-- Elixir of Minor Fortitude
-			i(250344, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Minor Spirit
 			i(2454),	-- Elixir of Minor Strength
-			i(250343, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Nature Power
 			i(3391),	-- Elixir of Ogre Strength
-			i(250338, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Sages
 			i(9264),	-- Elixir of Shadow Power
-			i(250351, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Grizzly
 			i(13452),	-- Elixir of the Mongoose
-			i(250337, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Owl
-			i(250329, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Phalanx
 			i(13447),	-- Elixir of the Sages
-			i(250348, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of the Whale
-			i(250336, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Wicked Regeneration
 			i(3383),	-- Elixir of Wisdom
 			i(6049),	-- Fire Protection Potion
 			i(13513),	-- Flask of Chromatic Resistance
 			i(13511),	-- Flask of Distilled Wisdom
-			i(274273, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Accuracy
-			i(274274, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Aggression
-			i(274275, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Precision
-			i(274276, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Flask of Natural Swiftness
 			i(13506),	-- Flask of Petrification
 			i(13512),	-- Flask of Supreme Power
 			i(13510),	-- Flask of the Titans
 			i(5634),	-- Free Action Potion
-			i(250940, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Frenzy Potion
 			i(3829),	-- Frost Oil
 			i(6050),	-- Frost Protection Potion
 			i(9088),	-- Gift of Arthas
 			i(5633),	-- Great Rage Potion
 			i(13454),	-- Greater Arcane Elixir
 			i(13461),	-- Greater Arcane Protection Potion
-			i(250333, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Cleric's Elixir
-			i(247241, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Discolored Healing Potion
 			i(13457),	-- Greater Fire Protection Potion
-			i(250941, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Frenzy Potion
 			i(13456),	-- Greater Frost Protection Potion
-			i(250341, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Mageblood Elixir
 			i(6149),	-- Greater Mana Potion
-			i(250947, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Mender's Potion
 			i(13458),	-- Greater Nature Protection Potion
 			i(13459),	-- Greater Shadow Protection Potion
-			i(250935, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Greater Spellblasting Potion
 			i(13455),	-- Greater Stoneshield Potion
 			i(6051),	-- Holy Protection Potion
 			i(9172),	-- Invisibility Potion
-			i(250342, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Arcane Elixir
-			i(250331, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Cleric's Elixir
-			i(247239, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Discolored Healing Potion
-			i(250939, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Frenzy Potion
 			i(3823),	-- Lesser Invisibility Potion
-			i(250340, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Mageblood Elixir
 			i(3385),	-- Lesser Mana Potion
-			i(250945, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Mender's Potion
-			i(250933, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Lesser Spellblasting Potion
 			i(4623),	-- Lesser Stoneshield Potion
 			i(3388),	-- Lesser Troll's Blood Elixir
 			i(3387),	-- Limited Invulnerability Potion
 			i(9036),	-- Magic Resistance Potion
-			i(250943, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Major Frenzy Potion
 			i(13444),	-- Major Mana Potion
-			i(250949, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Major Mender's Potion
-			i(250937, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Major Spellblasting Potion
 			i(3827),	-- Mana Potion
-			i(250946, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Mender's Potion
 			i(13442),	-- Mighty Rage Potion
-			i(247754, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Arcane Elixir
-			i(250330, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Cleric's Elixir
 			i(4596),	-- Minor Discolored Healing Potion
-			i(250938, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Frenzy Potion
-			i(250339, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Mageblood Elixir
 			i(3384),	-- Minor Magic Resistance Potion
 			i(2455),	-- Minor Mana Potion
-			i(250944, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Mender's Potion
 			i(2456),	-- Minor Rejuvenation Potion
-			i(250932, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Minor Spellblasting Potion
 			i(3382),	-- Minor Troll's Blood Elixir
 			i(6052),	-- Nature Protection Potion
 			i(8956),	-- Oil of Immolation
 			i(9224),	-- Potion of Demonslaying
 			i(3386),	-- Potion of Poison Cleansing
-			i(250950, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Venomous Blood
 			i(13462),	-- Purification Potion
 			i(5631),	-- Rage Potion
 			i(9030),	-- Restorative Potion
 			i(3824),	-- Shadow Oil
 			i(6048),	-- Shadow Protection Potion
-			i(250934, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Spellblasting Potion
-			i(247242, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Discolored Healing Potion
 			i(13443),	-- Superior Mana Potion
 			i(2459),	-- Swiftness Potion
 			i(6372),	-- Swim Speed Potion
 			i(3826),	-- Troll's Blood Elixir
 			i(9144),	-- Wildvine Potion
-			-- Unknown
-			i(250346, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Spirit
-			i(250354, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Intellect
-			i(250334, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Fortitude
-			i(250332, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Cleric's Elixir
-			i(250349, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Elixir of Strength
-			i(250327, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Draught of Predatory Senses
-			i(250948, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Mender's Potion
-			i(250936, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Spellblasting Potion
-			i(250942, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Superior Frenzy Potion
-			i(246948, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Distilled Firewater
-			i(250955, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Beast Culling
-			i(250954, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Potion of Elemental Siphoning
 		}),
 		filter(REAGENTS, {
 			i(12360),	-- Arcanite Bar
 			i(6370),	-- Blackmouth Oil
-			i(249409, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Cerulean Dye
 			i(6371),	-- Fire Oil
 			i(9210),	-- Ghost Dye
 			i(9061),	-- Goblin Rocket Fuel
-			i(251290, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Legionite Bar
-			i(249430, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Magenta Dye
 			i(9149),	-- Philosopher's Stone
 			i(13423),	-- Stonescale Oil
-			i(249410, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Sulfuric Acid
-			i(249431, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Viridian Dye
 		}),
-		i(279990, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Alchemy Laboratory
-		i(279970, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Fermenter
-		i(279956, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Mana Well
 	}),
 	prof(BLACKSMITHING, {
 		n(COMMON_VENDOR_ITEMS, {
-			["groups"] = appendAllGroups(
-				{
-					i(5956, {	-- Blacksmithing Hammer
-						["description"] = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",
-					}),
-				},
-				sharedData({
-					["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
-					["coords"] = {
-						{ 51.8, 41.2, MAP.IRONFORGE },
-						{ 39.8, 55.6, MAP.THUNDER_BLUFF },
-						{ 61.4, 30.1, MAP.UNDERCITY },
-						{ 56.3, 17.2, MAP.STORMWIND_CITY },
-						{ 82.4, 23.8, MAP.ORGRIMMAR },
-					},
-					["providers"] = {
-						{ "n", 5512},	-- Kaita Deepforge <Blacksmithing Supplies>
-						{ "n", 4597},	-- Samuel Van Brunt <Blacksmithing Supplies>
-						{ "n", 3356},	-- Sumi <Blacksmithing Supplies>
-						{ "n", 2999},	-- Taur Stonehoof <Blacksmithing Supplies>
-						{ "n", 4259},	-- Thurgrum Deepforge <Blacksmithing Supplies>
-					},]]
-				}, {
-					i(2880),	-- Weak Flux
-					i(3466),	-- Strong Flux
-					i(18567),	-- Elemental Flux
-					i(3857),	-- Coal
-				})
-			)
+			i(5956),	-- Blacksmithing Hammer
+			i(3857),	-- Coal
+			i(18567),	-- Elemental Flux
+			i(3466),	-- Strong Flux
+			i(2880),	-- Weak Flux
 		}),
-		prof(9788, {	-- Armorsmith
+		prof(ARMORSMITH, {
 			i(17014),	-- Dark Iron Bracers
 			i(17013),	-- Dark Iron Leggings
 			i(11604),	-- Dark Iron Plate
 			i(12628),	-- Demon Forged Breastplate
-			i(12631),	-- Fiery Plate Gauntlets
 			i(16989),	-- Fiery Chain Girdle
 			i(16988),	-- Fiery Chain Shoulders
-			i(12636),	-- Helm of the Great Chief
-			i(12641),	-- Invulnerable Mail
+			i(12631),	-- Fiery Plate Gauntlets
 			i(12640),	-- Lionheart Helm
-			i(12632),	-- Storm Gauntlets
 			i(12639),	-- Stronghold Gauntlets
 			i(7939),	-- Truesilver Breastplate
 			i(7938),	-- Truesilver Gauntlets
 			i(12633),	-- Whitesoul Helm
-			i(12624),	-- Wildthorn Mail
 		}),
-		prof(9787, {	-- Weaponsmith
-			prof(17041, {	-- Master Axesmith
+		prof(WEAPONSMITH, {
+			prof(MASTER_AXESMITH, {
 				i(12798),	-- Annihilator
 				i(12784),	-- Arcanite Reaper
 				i(17016),	-- Dark Iron Destroyer
 				i(12774),	-- Dawn's Edge
 			}),
-			prof(17040, {	-- Master Hammersmith
+			prof(MASTER_HAMMERSMITH, {
 				i(12776),	-- Enchanted Battlehammer
 				i(12796),	-- Hammer of the Titans
 				i(12794),	-- Masterwork Stormhammer
 				i(12781),	-- Serenity
 			}),
-			prof(17039, {	-- Master Swordsmith
+			prof(MASTER_SWORDSMITH, {
 				i(12790),	-- Arcanite Champion
 				i(12777),	-- Blazing Rapier
 				i(12782),	-- Corruption
@@ -257,9 +156,7 @@ root(ROOTS.Craftables, {
 		}),
 		n(ARMOR, {
 			i(7916),	-- Barbaric Iron Boots
-			i(7914, {	-- Barbaric Iron Breastplate
-				["requireSkill"] = BLACKSMITHING,
-			}),
+			i(7914),	-- Barbaric Iron Breastplate
 			i(7917),	-- Barbaric Iron Gloves
 			i(7915),	-- Barbaric Iron Helm
 			i(7913),	-- Barbaric Iron Shoulders
@@ -268,7 +165,6 @@ root(ROOTS.Craftables, {
 			i(3469),	-- Copper Chain Boots
 			i(2852),	-- Copper Chain Pants
 			i(3471),	-- Copper Chain Vest
-			i(7166),	-- Copper Dagger
 			i(11606),	-- Dark Iron Mail
 			i(11605),	-- Dark Iron Shoulders
 			i(12625),	-- Dawnbringer Shoulders
@@ -300,17 +196,18 @@ root(ROOTS.Craftables, {
 			i(12427),	-- Imperial Plate Helm
 			i(12429),	-- Imperial Plate Leggings
 			i(12428),	-- Imperial Plate Shoulders
+			i(6731),	-- Ironforge Breastplate
 			i(7931),	-- Mithril Coif
-			i(7924),	-- Mithril Scale Bracers
-			i(7920),	-- Mithril Scale Pants
-			i(7932),	-- Mithril Scale Shoulders
+			i(7924),	-- Mithril Plate Bracers
+			i(7920),	-- Mithril Plate Pants
+			i(7932),	-- Mithril Plate Shoulders
 			i(7929),	-- Orcish War Leggings
 			i(7936),	-- Ornate Mithril Boots
 			i(7935),	-- Ornate Mithril Breastplate
 			i(7927),	-- Ornate Mithril Gloves
 			i(7937),	-- Ornate Mithril Helm
 			i(7926),	-- Ornate Mithril Pants
-			i(7928),	-- Ornate Mithril Shoulder
+			i(7928),	-- Ornate Mithril Shoulders
 			i(2868),	-- Patterned Bronze Bracers
 			i(3846),	-- Polished Steel Boots
 			i(12416),	-- Radiant Belt
@@ -329,8 +226,8 @@ root(ROOTS.Craftables, {
 			i(2864),	-- Runed Copper Breastplate
 			i(3472),	-- Runed Copper Gauntlets
 			i(3473),	-- Runed Copper Pants
-			i(12611),	-- Runic Plate Boots
 			i(12613),	-- Runic Breastplate
+			i(12611),	-- Runic Plate Boots
 			i(12612),	-- Runic Plate Helm
 			i(12614),	-- Runic Plate Leggings
 			i(12610),	-- Runic Plate Shoulders
@@ -351,25 +248,20 @@ root(ROOTS.Craftables, {
 		}),
 		filter(MISC, {
 			i(15872),	-- Arcanite Skeleton Key
-			i(3478),	-- Coarse Grinding Stone
 			i(2863),	-- Coarse Sharpening Stone
 			i(3240),	-- Coarse Weightstone
-			i(12644),	-- Dense Grinding Stone
 			i(12404),	-- Dense Sharpening Stone
 			i(12643),	-- Dense Weightstone
 			i(15870),	-- Golden Skeleton Key
-			i(3486),	-- Heavy Grinding Stone
 			i(2871),	-- Heavy Sharpening Stone
 			i(3241),	-- Heavy Weightstone
 			i(6043),	-- Iron Counterweight
 			i(6042),	-- Iron Shield Spike
 			i(7967),	-- Mithril Shield Spike
 			i(7969),	-- Mithril Spurs
-			i(3470),	-- Rough Grinding Stone
 			i(2862),	-- Rough Sharpening Stone
 			i(3239),	-- Rough Weightstone
 			i(15869),	-- Silver Skeleton Key
-			i(7966),	-- Solid Grinding Stone
 			i(7964),	-- Solid Sharpening Stone
 			i(7965),	-- Solid Weightstone
 			i(6041),	-- Steel Weapon Chain
@@ -378,16 +270,21 @@ root(ROOTS.Craftables, {
 		}),
 		filter(REAGENTS, {
 			i(16206),	-- Arcanite Rod
+			i(3478),	-- Coarse Grinding Stone
+			i(6217),	-- Copper Rod
+			i(12644),	-- Dense Grinding Stone
 			i(11128),	-- Golden Rod
+			i(3486),	-- Heavy Grinding Stone
 			i(9060),	-- Inlaid Mithril Cylinder
 			i(7071),	-- Iron Buckle
+			i(3470),	-- Rough Grinding Stone
 			i(6338),	-- Silver Rod
+			i(7966),	-- Solid Grinding Stone
 			i(11144),	-- Truesilver Rod
 		}),
 		n(WEAPONS, {
 			i(7945),	-- Big Black Mace
 			i(3848),	-- Big Bronze Knife
-			i(12769),	-- Bleakwood Hew
 			i(7942),	-- Blue Glittering Axe
 			i(2849),	-- Bronze Axe
 			i(7958),	-- Bronze Battle Axe
@@ -398,9 +295,9 @@ root(ROOTS.Craftables, {
 			i(2845),	-- Copper Axe
 			i(3488),	-- Copper Battle Axe
 			i(7955),	-- Copper Claymore
+			i(7166),	-- Copper Dagger
 			i(2844),	-- Copper Mace
 			i(2847),	-- Copper Shortsword
-			i(12802),	-- Darkspear
 			i(7944),	-- Dazzling Mithril Rapier
 			i(3490),	-- Deadly Bronze Poniard
 			i(7947),	-- Ebon Shiv
@@ -415,14 +312,11 @@ root(ROOTS.Craftables, {
 			i(7941),	-- Heavy Mithril Axe
 			i(12775),	-- Huge Thorium Battleaxe
 			i(5541),	-- Iridescent Hammer
-			i(6731),	-- Ironforge Breastplate
 			i(3850),	-- Jade Serpentblade
 			i(3855),	-- Massive Iron Axe
 			i(3492),	-- Mighty Iron Hammer
 			i(3853),	-- Moonsteel Broadsword
-			i(12773, {	-- Ornate Thorium Handaxe
-				["requireSkill"] = BLACKSMITHING,
-			}),
+			i(12773),	-- Ornate Thorium Handaxe
 			i(5540),	-- Pearl-handled Dagger
 			i(7946),	-- Runed Mithril Hammer
 			i(12260),	-- Searing Golden Blade
@@ -2651,6 +2545,11 @@ root(ROOTS.Craftables, {
 			i(4304),	-- Thick Leather
 			i(8218),	-- Thick Leather Ammo Pouch
 		}),
+		-- Moved to Leatherworking
+		i(12636),	-- Helm of the Great Chief
+		i(12641),	-- Invulnerable Mail
+		i(12632),	-- Storm Gauntlets
+		i(12624),	-- Wildthorn Mail
 	}),
 	prof(MINING, {
 		spell(2575, {	-- Mining

@@ -1346,7 +1346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			e(1543, {	-- The Prophet Skeram
 				["creatureID"] = 15263,
 				["groups"] = {
-					i(22222, {	-- Plans: Thick Obisidan Breastplate (RECIPE!)
+					i(22222, {	-- Plans: Thick Obsidian Breastplate (RECIPE!)
 					}),
 					i(21703),	-- Hammer of Ji'zhi
 					i(21128),	-- Staff of the Qiraji Prophets
@@ -2148,12 +2148,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				e(1543, {	-- The Prophet Skeram
 					["creatureID"] = 15263,
 					["groups"] = {
-						i(22222, {	-- Plans: Thick Obisidan Breastplate (RECIPE!)
+						i(22222, {	-- Plans: Thick Obsidian Breastplate (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { REMOVED_1_15_5 },
 						-- #endif
 						}),
-						i(235039),	-- Plans: Thick Obisidan Breastplate (RECIPE!)
+						i(235039),	-- Plans: Thick Obsidian Breastplate (RECIPE!)
 						i(233496),	-- Barrage Shoulders
 						i(233502),	-- Amulet of Foul Warding
 						i(233503),	-- Pendant of the Qiraji Guardian

@@ -159,7 +159,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			prof(BLACKSMITHING, {
 				n(2836, {	-- Brikk Keencraft <Master Blacksmith>
 					["coord"] = { 29.0, 75.4, MAP.STRANGLETHORN_VALE },
-					["groups"] = ARTISAN_BLACKSMITHING,
+					["groups"] = BLACKSMITHING_RECIPES.ARTISAN,
 				}),
 			}),
 			prof(ENGINEERING, {
@@ -1344,7 +1344,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["learnedAt"] = 210,
 				["lvl"] = 40,
 				["groups"] = {
-					i(7985),	-- Plans: Ornate Mithril Shoulder (RECIPE!)
+					i(7985),	-- Plans: Ornate Mithril Shoulders (RECIPE!)
 				},
 			}),
 			q(595, {	-- The Bloodsail Buccaneers (1/5)

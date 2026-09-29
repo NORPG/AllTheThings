@@ -8,6 +8,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = { 2665 },	-- Zephras Isle (Flight Path Map)
 	groups = {
+		n(FACTIONS, {
+			faction(FACTION_NIGHTCLAW_DRUIDS),
+		}),
 		n(QUESTS, {
 			q(93746, {	-- A Firm Response
 				["qg"] = 251968,	-- Ayessa Dawnsinger
@@ -1223,6 +1226,66 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(277103),	-- Zephrali Shoes
 					i(277098),	-- Zephrali Vest
 				},
+			}),
+			n(254151, {	-- Vayn Moongaze
+				["coord"] = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
+				["groups"] = bubbleDownClassicRep(FACTION_NIGHTCLAW_DRUIDS, {
+					{		-- Neutral
+					}, {	-- Friendly
+						i(276961),	-- Pattern: Azure Gustwoven Belt (RECIPE!)
+						i(276963),	-- Pattern: Azure Gustwoven Boots (RECIPE!)
+						i(276959),	-- Pattern: Azure Gustwoven Bracers (RECIPE!)
+						i(276960),	-- Pattern: Azure Gustwoven Gloves (RECIPE!)
+						i(276973),	-- Pattern: Azure Stormsewn Cord (RECIPE!)
+						i(276971),	-- Pattern: Azure Stormsewn Cuffs (RECIPE!)
+						i(276972),	-- Pattern: Azure Stormsewn Handwraps (RECIPE!)
+						i(276975),	-- Pattern: Azure Stormsewn Shoes (RECIPE!)
+						i(276965),	-- Pattern: Azure Windraveled Armguards (RECIPE!)
+						i(276969),	-- Pattern: Azure Windraveled Footwraps (RECIPE!)
+						i(276966),	-- Pattern: Azure Windraveled Mitts (RECIPE!)
+						i(276967),	-- Pattern: Azure Windraveled Strap (RECIPE!)
+						i(276937),	-- Pattern: Cloudy Gustwoven Belt (RECIPE!)
+						i(276939),	-- Pattern: Cloudy Gustwoven Boots (RECIPE!)
+						i(276935),	-- Pattern: Cloudy Gustwoven Bracers (RECIPE!)
+						i(276936),	-- Pattern: Cloudy Gustwoven Gloves (RECIPE!)
+						i(276949),	-- Pattern: Cloudy Stormsewn Cord (RECIPE!)
+						i(276947),	-- Pattern: Cloudy Stormsewn Cuffs (RECIPE!)
+						i(276948),	-- Pattern: Cloudy Stormsewn Handwraps (RECIPE!)
+						i(276951),	-- Pattern: Cloudy Stormsewn Shoes (RECIPE!)
+						i(276941),	-- Pattern: Cloudy Windraveled Armguards (RECIPE!)
+						i(276945),	-- Pattern: Cloudy Windraveled Footwraps (RECIPE!)
+						i(276942),	-- Pattern: Cloudy Windraveled Mitts (RECIPE!)
+						i(276943),	-- Pattern: Cloudy Windraveled Strap (RECIPE!)
+						i(276955),	-- Plans: Azure Skyforged Chain (RECIPE!)
+						i(276954),	-- Plans: Azure Skyforged Gauntlets (RECIPE!)
+						i(276957),	-- Plans: Azure Skyforged Greaves (RECIPE!)
+						i(276953),	-- Plans: Azure Skyforged Wristguards (RECIPE!)
+						i(276931),	-- Plans: Cloudy Skyforged Chain (RECIPE!)
+						i(276930),	-- Plans: Cloudy Skyforged Gauntlets (RECIPE!)
+						i(276933),	-- Plans: Cloudy Skyforged Greaves (RECIPE!)
+						i(276929),	-- Plans: Cloudy Skyforged Wristguards (RECIPE!)
+					}, {	-- Honored
+						i(276958),	-- Pattern: Azure Gustwoven Harness (RECIPE!)
+						i(276962),	-- Pattern: Azure Gustwoven Trousers (RECIPE!)
+						i(276974),	-- Pattern: Azure Stormsewn Leggings (RECIPE!)
+						i(276970),	-- Pattern: Azure Stormsewn Vest (RECIPE!)
+						i(276964),	-- Pattern: Azure Windraveled Jerkin (RECIPE!)
+						i(276968),	-- Pattern: Azure Windraveled Pants (RECIPE!)
+						i(276934),	-- Pattern: Cloudy Gustwoven Harness (RECIPE!)
+						i(276938),	-- Pattern: Cloudy Gustwoven Trousers (RECIPE!)
+						i(276950),	-- Pattern: Cloudy Stormsewn Leggings (RECIPE!)
+						i(276946),	-- Pattern: Cloudy Stormsewn Vest (RECIPE!)
+						i(276940),	-- Pattern: Cloudy Windraveled Jerkin (RECIPE!)
+						i(276944),	-- Pattern: Cloudy Windraveled Pants (RECIPE!)
+						i(276952),	-- Plans: Azure Skyforged Chainmail (RECIPE!)
+						i(276956),	-- Plans: Azure Skyforged Legguards (RECIPE!)
+						i(276928),	-- Plans: Cloudy Skyforged Chainmail (RECIPE!)
+						i(276932),	-- Plans: Cloudy Skyforged Legguards (RECIPE!)
+					}, {	-- Revered
+						i(280347),	-- Shadowgale Squirrel (PET!)
+					}, {	-- Exalted
+					},
+				}),
 			}),
 		}),
 		n(ZONE_DROPS, {
