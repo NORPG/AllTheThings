@@ -312,9 +312,6 @@ root(ROOTS.Craftables, {
 					i(12427),	-- Imperial Plate Helm
 					i(12429),	-- Imperial Plate Leggings
 					i(12428),	-- Imperial Plate Shoulders
-					applyclassicphase(PHASE_FIVE_CATCH_UP, i(22764)),	-- Ironvine Belt
-					applyclassicphase(PHASE_FIVE_CATCH_UP, i(22762)),	-- Ironvine Breastplate
-					applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
 					applyclassicphase(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 					i(7931),	-- Mithril Coif
 					i(7924),	-- Mithril Scale Bracers
@@ -2538,9 +2535,6 @@ root(ROOTS.Craftables, {
 				i(8202),	-- Big Voodoo Pants
 				i(8200),	-- Big Voodoo Robe
 				i(20575),	-- Black Whelp Tunic
-				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22761)),	-- Bramblewood Belt
-				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots
-				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22759)),	-- Bramblewood Helm
 				i(8174),	-- Comfortable Leather Hat
 				i(4249),	-- Dark Leather Belt
 				i(2315),	-- Dark Leather Boots
@@ -3858,7 +3852,6 @@ root(ROOTS.Craftables, {
 			i(13871),	-- Frostweave Pants
 			i(13868),	-- Frostweave Robe
 			i(13869),	-- Frostweave Tunic
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
 			i(14143),	-- Ghostweave Belt
 			i(14142),	-- Ghostweave Gloves
 			i(14144),	-- Ghostweave Pants
@@ -3958,9 +3951,6 @@ root(ROOTS.Craftables, {
 			i(6384),	-- Stylish Blue Shirt
 			i(6385),	-- Stylish Green Shirt
 			i(4330),	-- Stylish Red Shirt
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757)),	-- Sylvan Crown
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758)),	-- Sylvan Shoulders
-			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22756)),	-- Sylvan Vest
 			i(7049),	-- Truefaith Gloves
 			i(14154, {	-- Truefaith Vestments
 				["classes"] = { PRIEST },
