@@ -10,16 +10,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		n(ACHIEVEMENTS, {
 			ach(62354),	-- Explore Riverglades
 		}),
+		n(FACTIONS, {
+			faction(2826, {	-- Brotherhood of the Horse
+				races = ALLIANCE_ONLY,
+			}),
+		}),
 		n(FLIGHT_PATHS, {
 			fp(3276, {	-- Farholde Keep, Riverglades
-				["cr"] = 257087,	-- Gretchen Mayberry <Gryphon Master>
-				["coord"] = { 60.6, 81.6, MAP.RIVERGLADES },
-				["races"] = ALLIANCE_ONLY,
+				cr = 257087,	-- Gretchen Mayberry <Gryphon Master>
+				coord = { 60.6, 81.6, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(VENDORS, {
 			n(259860, {	-- Martha Wellsworth <General Goods>
 				coord = { 64.2, 84.0, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
 				groups = {
 					i(251460),	-- Plans: Mithril Warhammer (RECIPE!)
 					i(274977),	-- Recipe: Plain Ol' Paletusk (RECIPE!)
