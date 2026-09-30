@@ -14,6 +14,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			faction(2826, {	-- Brotherhood of the Horse
 				races = ALLIANCE_ONLY,
 			}),
+			faction(2827),	-- Powderfuse
 		}),
 		n(FLIGHT_PATHS, {
 			fp(3276, {	-- Farholde Keep, Riverglades
@@ -22,7 +23,90 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				races = ALLIANCE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			n(260562, {	-- Melbin Powderfuse <Master Goblin Engineer>
+				coord = { 77.8, 50.8, MAP.RIVERGLADES },
+				groups = ENGINEERING_RECIPES.GOBLIN_ENGINEERING,
+			}),
+		}),
 		n(VENDORS, {
+			n(259962, {	-- Fimbo Greasemitz
+				coord = { 79.0, 54.2, MAP.RIVERGLADES },
+				groups = {
+					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+				},
+			}),
+			n(260566, {	-- Fizzix Boomshot <Gunsmith>
+				["coord"] = { 78.6, 53.6, MAP.RIVERGLADES },
+				["groups"] = {
+					i(18650),	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
+				},
+			}),
+			n(255897, { -- Friz Frazzlespark <Specialty Goods>
+				coord = { 77.1, 52.9, MAP.RIVERGLADES },
+				sym = {{ "select", "itemID", 
+					-- Weapons
+					2520, -- Broadsword
+					2521, -- Flamberge
+					2522, -- Crescent Axe
+					2523, -- Bullova
+					2524, -- Truncheon
+					2525, -- War Hammer
+					2526, -- Main Gauche
+					2527, -- Battle Staff
+					-- Poison Supplies
+					-- Not included.
+				}},
+				groups = bubbleDownClassicRep(2827, {	-- Powderfuse
+					{	-- Neutral
+						
+					}, {	-- Friendly
+						i(276200), -- Crawler's Clackers
+						i(276202), -- Disengagement Ring
+						i(276201), -- Misplaced Pantaloons
+					}, {	-- Honored
+						i(276203), -- Primitive Fishing Pole
+						i(276204), -- Thrash's Trash
+					}, {	-- Revered
+						i(276199), -- Haughty Fellow's Monocle
+					}, {	-- Exalted
+					},
+				}),
+			}),
+			n(260487, { -- Gritta Chumwater <Fisherman>
+				coord = { 78.4, 55.1, MAP.RIVERGLADES },
+				groups = {
+					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					i(271657),	-- Fresh Chum
+				},
+			}),
+			n(255895, {	-- Grizzek <General Goods>
+				coord = { 76.6, 53.3, MAP.RIVERGLADES },
+				groups = {
+					i(16767),	-- Recipe: Undermine Clam Chowder (RECIPE!)
+				},
+			}),
+			n(255894, {	-- Innkeeper Zizplink <Innkeeper>
+				coord = { 78.8, 54.0, MAP.RIVERGLADES },
+				groups = {
+					i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
+				},
+			}),
+			n(260565, {	-- Kor'gar <Engineering Supplies>
+				coord = { 77.6, 50.8, MAP.RIVERGLADES },
+				groups = {
+					i(16046),	-- Schematic: Masterwork Target Dummy (RECIPE!)
+					i(16047),	-- Schematic: Thorium Tube (RECIPE!)
+				},
+			}),
+			n(260560, {	-- Fimbo Greasemitz <Poison Vendor>
+				coord = { 76.8, 51.1, MAP.RIVERGLADES },
+				groups = {
+					i(271654),	-- Expired Poison
+				},
+			}),
 			n(259860, {	-- Martha Wellsworth <General Goods>
 				coord = { 64.2, 84.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -37,6 +121,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+				},
+			}),
+			n(263384, { -- Mister Graphed
+				coord = { 78.1, 51.9, MAP.RIVERGLADES },
+				groups = {
+					i(271871, { -- Gift of Galloping
+						cost = 1500000,	-- 150g
+					}),
+					i(12363), -- Arcane Crystal
+					i(249425), -- Bauxite
+					i(13468), -- Black Lotus
+					i(248822), -- Death Lotus
+					i(248819), -- Fel Crystal
+					i(249399), -- Frilled Lichen
+					i(249426), -- Pitchblende
+					i(249427), -- Pristine Leather
+					i(249428), -- Pristine Hide
+					i(249429), -- Pristine Scale
+					i(249391), -- Pyrite
+					i(249424), -- Rosecap
+					i(249274), -- Stranglevine
+					i(248820), -- Torbernite
 				},
 			}),
 			n(259861, { -- Paige Armstrong
@@ -75,6 +181,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					2526, -- Main Gauche
 					2527, -- Battle Staff
 				}},
+			}),
+			n(6568, {	-- Vizzklick <Tailoring Supplies>
+				coord = { 77.3, 51.3, MAP.RIVERGLADES },
+				groups = {
+					i(7088),	-- Pattern: Crimson Silk Robe (RECIPE!)
+					i(21358),	-- Pattern: Soul Pouch (RECIPE!)
+					i(253665),	-- Pattern: Linen Reagent Bag (RECIPE!)
+					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)
+				},
 			}),
 		}),
 	},
