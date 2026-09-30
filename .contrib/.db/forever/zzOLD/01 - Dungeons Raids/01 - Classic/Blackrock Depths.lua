@@ -1237,8 +1237,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						--- P4
 						applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
 						--]]
-						
-						
 					},
 				})),
 				n(9499, {	-- Plugger Spazzring
