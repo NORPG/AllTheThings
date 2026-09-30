@@ -1289,8 +1289,8 @@ n(1319,{coords={
 [1453]={{69.6,57.8}}},r=2,sym={{"select","itemID",2451,2448,2446,17189,17190,17192}},g={
 s(156831,2445,{f=8,lvl=17}),
 s(163288,17188,{f=8,lvl=14})}}),
-n(12777,{description="Found within the Champion's Hall.",r=2,sym={{"select","symselector",3},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}}}),
-n(12782,{description="Found within the Champion's Hall.",r=2,sym={{"select","symselector",3},{"find","headerID",-101},{"pop"}}}),
+n(12777,{description="Found within the Champion's Hall.",r=2,sym={{"select","symselector",4},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}}}),
+n(12782,{description="Found within the Champion's Hall.",r=2,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}}}),
 n(1291,{coords={
 [1453]={{62.2,67.6}}},r=2,g={
 s(162718,16059,{f=10}),
@@ -4583,6 +4583,8 @@ r(19795,{b=1,itemID=16047})}}),
 n(260560,{coords={
 [2548]={{76.8,51.1}}},g={
 i(271654)}}),
+n(263326,{coords={
+[2548]={{78.3,51.8}}},sym={{"select","symselector",3}}}),
 n(259860,{coords={
 [2548]={{64.2,84}}},r=2,g={
 r(1252357,{b=1,itemID=251460,learnedAt=210,requireSkill=164,skillID=2938}),

@@ -107,6 +107,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(271654),	-- Expired Poison
 				},
 			}),
+			n(263326, {	-- Madam Swyndle <Agent of the Black Market>
+				coord = { 78.3, 51.8, MAP.RIVERGLADES },
+				sym = { SymSelector.select("BMAH") },	-- Select BMAH header
+			}),
 			n(259860, {	-- Martha Wellsworth <General Goods>
 				coord = { 64.2, 84.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,

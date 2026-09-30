@@ -1127,6 +1127,9 @@ i(21309, 117);		-- Tiny Snowman
 i(21277, 116);		-- Tranquil Mechanical Yeti
 i(11026, 65);		-- Tree Frog
 i(10393, 55);		-- Undercity Cockroach
+-- #if NOT FOREVER
+i(11110, 84);		-- Westfall Chicken
+-- #endif
 i(23015, 127);		-- Whiskers the Rat
 i(8489, 46);		-- White Kitten
 i(21308, 118);		-- Winter Reindeer
@@ -1137,7 +1140,9 @@ i(13582, 94);		-- Zergling
 --- NYI ---
 i(11903, 0);		-- Cat Carrier (Corrupted Kitten)
 i(18964, 0);		-- Loggerhead Snapjaw / Turtle Egg (Loggerhead)
+-- #if NOT FOREVER
 i(13342, 0);		-- Pet Fish
+-- #endif
 i(13343, 0);		-- Pet Stone
 
 -----------------
@@ -1145,10 +1150,11 @@ i(13343, 0);		-- Pet Stone
 -----------------
 i(282047, 5162);	-- Baby Crocolisk
 i(275682, 5075);	-- Excitable Slime
+i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
+i(249898, 0);	-- Wilted Lashling Bud [TODO: Find the speciesID]
 -- #if FOREVER
+i(13342, 0);		-- Pet Fish [TODO: Find the speciesID]
 i(11110, 5004);		-- Prairie Chicken
--- #else
-i(11110, 84);		-- Westfall Chicken
 -- #endif
 
 -----------------
