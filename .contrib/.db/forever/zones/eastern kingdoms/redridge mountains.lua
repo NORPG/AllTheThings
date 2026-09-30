@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
-	["lore"] = "The Redridge Mountains are located east of Elwynn Forest, northeast of Duskwood, and south of the Burning Steppes. Although it may be considered contested, Horde characters have no settlements or NPCs and it is thus a place they use mostly for passing through to reach Flame Crest or Stonard.\n\nAn idyllic region of rushing rivers, towering elms and rising elevations, the Redridge Mountains are under Stormwind's protection (though since the second war it is technically independent), and remain one of the last peaceful regions in Azeroth. The people are content and calm, and supply Stormwind with timber, fish, and crops. A force of Blackrock orcs from the Burning Steppes has secured Stonewatch Keep, but so far the orcs keep to themselves.",
-	["icon"] = 236814,
-	["groups"] = {
+	lore = "The Redridge Mountains are located east of Elwynn Forest, northeast of Duskwood, and south of the Burning Steppes. Although it may be considered contested, Horde characters have no settlements or NPCs and it is thus a place they use mostly for passing through to reach Flame Crest or Stonard.\n\nAn idyllic region of rushing rivers, towering elms and rising elevations, the Redridge Mountains are under Stormwind's protection (though since the second war it is technically independent), and remain one of the last peaceful regions in Azeroth. The people are content and calm, and supply Stormwind with timber, fish, and crops. A force of Blackrock orcs from the Burning Steppes has secured Stonewatch Keep, but so far the orcs keep to themselves.",
+	icon = 236814,
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(780),	-- Explore Redridge Mountains
 		}),
@@ -157,7 +157,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						},
 					}),
 					objective(2, {	-- 0/8 Stolen Weapon
-						provider = { "i", 280841 },	-- Stolen Weapon (QI!)
+						providers = {
+							{ "i", 280841 },	-- Stolen Weapon (QI!)
+							{ "o", 673399 },	-- Stolen Weapon
+							{ "o", 673390 },	-- Weapon Rack
+						},
+						coords = {
+							{ 65.3, 75.9, MAP.REDRIDGE_MOUNTAINS },
+							{ 69.6, 82.3, MAP.REDRIDGE_MOUNTAINS },
+						},
 					}),
 				},
 			}),
