@@ -151,9 +151,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						providers = {
 							{ "i", 280839 },	-- Stolen Supplies (QI!)
 							{ "o", 673384 },	-- Water Barrel
+							{ "o", 673385 },	-- Grain Sack
+							{ "o", 673399 },	-- Meat Haunch
 						},
 						coords = {
 							{ 66.1, 73.6, MAP.REDRIDGE_MOUNTAINS },
+							{ 69.4, 79.5, MAP.REDRIDGE_MOUNTAINS },
 						},
 					}),
 					objective(2, {	-- 0/8 Stolen Weapon
@@ -915,9 +918,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				}),
 			}),
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
-				["coord"] = { 88.2, 71.6, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
 					}),
@@ -930,9 +933,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			n(3096, {	-- Captured Servant of Azora <Specialist Tailoring Supplies>
-				["coord"] = { 74.5, 79.6, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 69.4, 79.5, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(4790, {	-- Inferno Cloak
 						isLimited = true,
 					}),
@@ -945,9 +948,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
-				["coord"] = { 89.0, 70.2, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 83.9, 70.9, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(7289, {	-- Pattern: Black Whelp Cloak (RECIPE!)
 						isLimited = true,
 					}),
