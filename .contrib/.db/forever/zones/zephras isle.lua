@@ -1284,6 +1284,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}, {	-- Revered
 						i(280347),	-- Shadowgale Squirrel (PET!)
 					}, {	-- Exalted
+						i(280363),	-- Nightclaw Mantle
 					},
 				}),
 			}),

@@ -486,6 +486,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 7,
 			}),
+			q(91753, {	-- An Enchanting Lesson
+				qg = 11072,	-- Kitta Firewind <Artisan Enchanter>
+				coord = { 64.8, 70.6, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				requireSkill = ENCHANTING,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/3 Luminous Residue
+						provider = { "i", 247884 },	-- Luminous Residue
+						cost = {{ "i", 247883, 3 }},	-- Crude Wax Effigy
+					}),
+				},
+			}),
 			q(99130, {	-- An Enticing Offer
 				sourceQuest = 99129,	-- A Man About a Murloc
 				qg = 241,	-- Remy "Two Times"
@@ -1193,6 +1207,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(2238),	-- Urchin's Pants
 				},
 			}),
+			q(91751, {	-- Rough Wolf Pelts
+				qg = 6306,	-- Helene Peltskinner <Skinner>
+				coord = { 46.2, 62.2, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				requireSkill = SKINNING,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/7 Rough Wolf Pelt
+						provider = { "i", 247877 },	-- Rough Wolf Pelt
+						crs = {
+							1922,	-- Gray Forest Wolf
+							118,	-- Prowler
+						},
+					}),
+				},
+			}),
 			q(2205, {	-- Seek out SI: 7
 				qg = 917,	-- Keryn Sylvius
 				qi = 7674,	-- Delivery to Mathias (PQI!)
@@ -1350,6 +1381,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 		}),
 		n(RARES, {
+			n(276180, {	-- Elder Finseer
+				coords = {
+					{ 78.2, 57.0, MAP.ELWYNN_FOREST },
+					{ 79.6, 46.8, MAP.ELWYNN_FOREST },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			n(472, {	-- Fedfennel
 				coord = { 68.0, 40.6, MAP.ELWYNN_FOREST },
 				groups = {
@@ -1608,6 +1646,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 76.6, 86.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 248278,	-- Croaky
+			}),
+			i(247883, {	-- Crude Wax Effigy
+				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 476,	-- Kobold Geomancer
 			}),
 			i(247862, {	-- Elmpaw's Head (QS!)
 				coords = {

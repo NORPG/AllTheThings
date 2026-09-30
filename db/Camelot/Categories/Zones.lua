@@ -3200,6 +3200,9 @@ qo(1,{coords={
 [1429]={{49.9,66.7}}},providers={{"i",286205},{"o",694772}}})}}),
 q(91738,{awp=16001,coords={
 [1429]={{24,73}}},cost={{"i",247824,1}},lvl=7,qgs={955},sourceQuests={91736}}),
+q(91753,{awp=16001,coords={
+[1429]={{64.8,70.6}}},lvl=5,qgs={11072},r=2,requireSkill=333,g={
+qo(1,{cost={{"i",247883,3}},providers={{"i",247884}},requireSkill=333})}}),
 q(99130,{awp=16001,coords={
 [1429]={{42.2,67.2}}},lvl=4,qgs={241},r=2,sourceQuests={99129},g={
 qo(1,{coords={
@@ -3387,6 +3390,9 @@ q(11,{coords={
 qo(1,{crs={97,478},providers={{"i",782}}}),
 s(156730,2249,{b=1,f=8}),
 s(156723,2238,{b=1,f=4,loc=46})}}),
+q(91751,{awp=16001,coords={
+[1429]={{46.2,62.2}}},lvl=5,qgs={6306},r=2,requireSkill=393,g={
+qo(1,{crs={118,1922},providers={{"i",247877}},requireSkill=393})}}),
 q(2205,{c={4},coords={
 [1429]={{43.9,65.9}}},isBreadcrumb=1,lvl=10,nextQuests={2206,2300},qgs={917},qis={7674},r=2}),
 q(61,{coords={
@@ -3432,12 +3438,17 @@ q(239,{coords={
 q(106,{coords={
 [1429]={{43.2,89.6}}},lvl=5,qgs={251},qis={1208},r=2})}),
 h(-46,{
+n(276180,{awp=16001,coords={
+[1429]={{78.2,57},{79.6,46.8}}}}),
 n(472,{coords={
 [1429]={{68,40.6}}},g={
 i(3233,{f=113}),
 s(158233,5744,{f=25,lvl=9})}}),
 n(100,{coords={
 [1429]={{27.6,88.4}}}}),
+n(276189,{awp=16001,coords={
+[1429]={{52.4,79.8},{59.8,80.2},{65.6,76.4}}},g={
+s(317487,286748,{f=32})}}),
 n(99,{coords={
 [1429]={{31.8,65.6}}},g={
 s(156517,1917,{f=20,lvl=7}),
@@ -3516,6 +3527,7 @@ h(-63,{
 i(769,{crs={113}}),
 i(247826,{awp=16001,b=1,coords={
 [1429]={{76.6,86.8}}},crs={248278},lvl=7}),
+i(247883,{awp=16001,crs={476},description="You can continue to Disenchant these to level your enchanting well beyond skill level 40."}),
 i(247862,{awp=16001,b=1,coords={
 [1429]={{77.6,37.8},{81.8,84.2}}},crs={248299},lvl=7}),
 i(1307,{b=1,crs={97,100,448,478},lvl=7}),
@@ -18904,7 +18916,8 @@ r(1301445,{b=1,itemID=276952,learnedAt=65,minReputation={2758,9000},requireSkill
 r(1301449,{b=1,itemID=276956,learnedAt=65,minReputation={2758,9000},requireSkill=164,skillID=2938}),
 r(1301421,{b=1,itemID=276928,learnedAt=65,minReputation={2758,9000},requireSkill=164,skillID=2938}),
 r(1301425,{b=1,itemID=276932,learnedAt=65,minReputation={2758,9000},requireSkill=164,skillID=2938}),
-i(280347,{b=1,f=101,minReputation={2758,21000},spellID=1308283})}})}),
+i(280347,{b=1,f=101,minReputation={2758,21000},spellID=1308283}),
+s(311474,280363,{b=1,f=2,loc=41,lvl=15,minReputation={2758,42000}})}})}),
 h(-63,{
 s(156595,2057,{coords={
 [2521]={{45.7,18.7},{47,20}}},crs={251160},f=25}),
