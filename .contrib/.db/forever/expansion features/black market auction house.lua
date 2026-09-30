@@ -22,43 +22,49 @@ BLACK_MARKET_AUCTION_HOUSE = createHeader({
 		-- TODO: tw = "",
 	},
 });
-assignRootCategoryHeader(80, ROOTS.BlackMarket, BLACK_MARKET_AUCTION_HOUSE, {symselector=SymSelector.BMAH}).u = BLACK_MARKET;
-root(ROOTS.BlackMarket, {
-	n(ARMOR, {
-		---- DUNGEON SET 1 ----
-		-- Hunter
-		i(16674),	-- Beaststalker's Tunic
-		-- Mage
-		i(16686),	-- Magister's Crown
-		i(16688),	-- Magister's Robes
-		-- Rogue
-		i(16709),	-- Shadowcraft Pants
-		-- Shaman
-		i(16670),	-- Boots of Elements
-		-- Warrior
-		i(16733),	-- Spaulders of Valor
-		-- Warlock
-		i(16701),	-- Dreadmist Mantle
-	}),
-	filter(BATTLE_PETS, {
-		i(249897),	-- Flowery Lashling Bud
-		i(23713),	-- Hippogryph Hatchling
-		i(13342),	-- Pet Fish
-		i(11474),	-- Sprite Darter Egg
-		i(249898),	-- Wilted Lashling Bud
-	}),
-	--[[
-	filter(MOUNTS, {
-		
-	}),
-	filter(SHIRTS, {
-		
-	}),
-	]]--
-	filter(TABARDS, {
-		i(23705),	-- Tabard of Flame
-	}),
-	filter(TOYS, {
-		i(23716),	-- Carved Ogre Idol
+root(ROOTS.ExpansionFeatures, {
+	n(BLACK_MARKET_AUCTION_HOUSE, {
+		timeline = { TIMELINE.ADDED_1_60_1 },
+		symselector=SymSelector.BMAH,
+		u = BLACK_MARKET,
+		groups = {
+			n(ARMOR, {
+				---- DUNGEON SET 1 ----
+				-- Hunter
+				i(16674),	-- Beaststalker's Tunic
+				-- Mage
+				i(16686),	-- Magister's Crown
+				i(16688),	-- Magister's Robes
+				-- Rogue
+				i(16709),	-- Shadowcraft Pants
+				-- Shaman
+				i(16670),	-- Boots of Elements
+				-- Warrior
+				i(16733),	-- Spaulders of Valor
+				-- Warlock
+				i(16701),	-- Dreadmist Mantle
+			}),
+			filter(BATTLE_PETS, {
+				i(249897),	-- Flowery Lashling Bud
+				i(23713),	-- Hippogryph Hatchling
+				i(13342),	-- Pet Fish
+				i(11474),	-- Sprite Darter Egg
+				i(249898),	-- Wilted Lashling Bud
+			}),
+			--[[
+			filter(MOUNTS, {
+				
+			}),
+			filter(SHIRTS, {
+				
+			}),
+			]]--
+			filter(TABARDS, {
+				i(23705),	-- Tabard of Flame
+			}),
+			filter(TOYS, {
+				i(23716),	-- Carved Ogre Idol
+			}),
+		},
 	}),
 });
