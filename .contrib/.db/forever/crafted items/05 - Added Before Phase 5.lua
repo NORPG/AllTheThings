@@ -37,16 +37,16 @@ root(ROOTS.Craftables, {
 	}),
 	prof(LEATHERWORKING, {
 		prof(10656, {	-- Dragonscale Leatherworking
-			applyclassicphase(PHASE_FOUR, i(20380)),	-- Dreamscale Breastplate
+			i(20380),	-- Dreamscale Breastplate
 		}),
 		n(ARMOR, {
 			filter(MAIL, {
-				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
-				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
-				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
-				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
-				applyclassicphase(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
-				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
+				i(20476),	-- Sandstalker Bracers
+				i(20478),	-- Sandstalker Breastplate
+				i(20477),	-- Sandstalker Gauntlets
+				i(20481),	-- Spitfire Bracers
+				i(20479),	-- Spitfire Breastplate
+				i(20480),	-- Spitfire Gauntlets
 			}),
 		}),
 	}),
