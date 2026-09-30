@@ -1360,6 +1360,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(100, {	-- Gruff Swiftbite
 				coord = { 27.6, 88.4, MAP.ELWYNN_FOREST },
 			}),
+			n(276189, {	-- Matriarch Bristlefur
+				coords = {
+					{ 52.4, 79.8, MAP.ELWYNN_FOREST },
+					{ 59.8, 80.2, MAP.ELWYNN_FOREST },
+					{ 65.6, 76.4, MAP.ELWYNN_FOREST },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286748),	-- Bristlebark Bow
+				},
+			}),
 			n(99, {	-- Morgaine the Sly
 				coord = { 31.8, 65.6, MAP.ELWYNN_FOREST },
 				groups = {
