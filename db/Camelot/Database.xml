@@ -11,6 +11,5 @@
 	<Script file="Categories/PVP.lua"/>
 	<Script file="Categories/Unsorted.lua"/>
 	<Script file="Categories/WorldDrops.lua"/>
-	<Script file="Categories/WorldEvents.lua"/>
 	<Script file="Categories/Zones.lua"/>
 </Ui>

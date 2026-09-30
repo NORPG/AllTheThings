@@ -1,36 +1,34 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-
-THE_AHNQIRAJ_WAR_EFFORT = createHeader({
-	readable = "The Ahn'Qiraj War Effort",
-	icon = 132594,
-	text = {
-		en = "The Ahn'Qiraj War Effort",
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		fr = "Effort de guerre d’Ahn'Qiraj",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		ru = "Война в Ан'Кираже",
-		cn = "安其拉之战捐献",
-		tw = "安其拉之戰捐獻",
-	},
-	description = {
-		-- #if AFTER TBC
-		en = "The Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj were not be immediately available with the release of Phase 5. Instead, server communities had to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
-		cn = "安其拉废墟和安其拉神庙在第五阶段上线时并不会立即开放。相反，服务器上的玩家群体必须发起一场大规模的备战行动，通过收集战争物资以及完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，将里面的恐怖之物释放到世间。\n\n一旦两个阵营都完成了各自的贡献，会有一个为期5天的缓冲期。在此之后，当有人敲响铜锣，服务器将触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡状况。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都将获得相同奖励！",
-		-- #else
-		en = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
-		cn = "当第五阶段最终上线时，安其拉废墟和安其拉神庙不会即刻开放。相反，服务器上的全体玩家需开展一场大规模的备战行动，通过收集战备物资并完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，让其中的恐怖之物降临世间。\n\n一旦两个阵营都完成各自的贡献，会有一个5天的宽限期。之后，一旦有人敲响铜锣，就会触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都会获得相同奖励！",
-		-- #endif
-	},
-});
-
-root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
-	applyclassicphase(PHASE_FIVE_WAR_EFFORT, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, {
+--[[
+root(ROOTS.WorldEvents, {
+	n(createHeader({
+		readable = "The Ahn'Qiraj War Effort",
+		icon = 132594,
+		text = {
+			en = "The Ahn'Qiraj War Effort",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			fr = "Effort de guerre d’Ahn'Qiraj",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			ru = "Война в Ан'Кираже",
+			cn = "安其拉之战捐献",
+			tw = "安其拉之戰捐獻",
+		},
+		description = {
+			-- #if AFTER TBC
+			en = "The Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj were not be immediately available with the release of Phase 5. Instead, server communities had to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+			cn = "安其拉废墟和安其拉神庙在第五阶段上线时并不会立即开放。相反，服务器上的玩家群体必须发起一场大规模的备战行动，通过收集战争物资以及完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，将里面的恐怖之物释放到世间。\n\n一旦两个阵营都完成了各自的贡献，会有一个为期5天的缓冲期。在此之后，当有人敲响铜锣，服务器将触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡状况。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都将获得相同奖励！",
+			-- #else
+			en = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+			cn = "当第五阶段最终上线时，安其拉废墟和安其拉神庙不会即刻开放。相反，服务器上的全体玩家需开展一场大规模的备战行动，通过收集战备物资并完成一条史诗任务线，最终敲响铜锣，才能开启这些团队副本，让其中的恐怖之物降临世间。\n\n一旦两个阵营都完成各自的贡献，会有一个5天的宽限期。之后，一旦有人敲响铜锣，就会触发一个持续10小时、横跨卡利姆多多个区域的全服事件。\n\n安其拉开放的速度取决于服务器及其阵营平衡。\n\n我们建议尽可能推迟备战行动，以便让更多人获得 “甲虫之王” 坐骑，因为所有完成 “流沙节杖” 任务线的玩家都会获得相同奖励！",
+			-- #endif
+		},
+	}), {
 		["maps"] = {
 			MAP.ORGRIMMAR,
 			MAP.IRONFORGE,
@@ -40,9 +38,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					q(8811, {	-- One Commendation Signet (1/2) [Stormwind]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Stormwind",
-						-- #endif
 						["qgs"] = {
 							15766,	-- Officer Maloof <Stormwind Commendations> [SW]
 							15735,	-- Stormwind Commendation Officer [IF]
@@ -56,9 +52,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8830, {	-- One Commendation Signet (2/2) [Stormwind]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Stormwind",
-						-- #endif
 						["sourceQuest"] = 8811,	-- One Commendation Signet (1/2) [Stormwind]
 						["qgs"] = {
 							15766,	-- Officer Maloof <Stormwind Commendations> [SW]
@@ -73,9 +67,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8812, {	-- One Commendation Signet (1/2) [Ironforge]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Ironforge",
-						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Ironbeard <Ironforge Commendations> [IF]
 							15734,	-- Ironforge Commendation Officer [IF]
@@ -89,9 +81,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8834, {	-- One Commendation Signet (2/2) [Ironforge]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Ironforge",
-						-- #endif
 						["sourceQuest"] = 8812,	-- One Commendation Signet (1/2) [Ironforge]
 						["qgs"] = {
 							15764,	-- Officer Ironbeard <Ironforge Commendations> [IF]
@@ -106,9 +96,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8813, {	-- One Commendation Signet (1/2) [Darnassus]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Darnassus",
-						-- #endif
 						["qgs"] = {
 							15762,	-- Officer Lunalight <Darnassus Commendations> [Darn]
 							15731,	-- Darnassus Commendation Officer [IF]
@@ -122,9 +110,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8836, {	-- One Commendation Signet (2/2) [Darnassus]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Darnassus",
-						-- #endif
 						["sourceQuest"] = 8813,	-- One Commendation Signet (1/2) [Darnassus]
 						["qgs"] = {
 							15762,	-- Officer Lunalight <Darnassus Commendations> [Darn]
@@ -139,9 +125,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8814, {	-- One Commendation Signet (1/2) [Gnomeregan]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Gnomeregan",
-						-- #endif
 						["qgs"] = {
 							15733,	-- Gnomeregan Commendation Officer [IF]
 							15763,	-- Officer Porterhouse <Gnomeregan Commendations> [IF]
@@ -155,9 +139,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8838, {	-- One Commendation Signet (2/2) [Gnomeregan]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Gnomeregan",
-						-- #endif
 						["sourceQuest"] = 8814,	-- One Commendation Signet (1/2) [Gnomeregan]
 						["qgs"] = {
 							15733,	-- Gnomeregan Commendation Officer [IF]
@@ -172,9 +154,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8819, {	-- Ten Commendation Signets (1/2) [Stormwind]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Stormwind",
-						-- #endif
 						["qgs"] = {
 							15766,	-- Officer Maloof <Stormwind Commendations> [SW]
 							15735,	-- Stormwind Commendation Officer [IF]
@@ -188,9 +168,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8831, {	-- Ten Commendation Signets (2/2) [Stormwind]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Stormwind",
-						-- #endif
 						["sourceQuest"] = 8819,	-- Ten Commendation Signets (1/2) [Stormwind]
 						["qgs"] = {
 							15766,	-- Officer Maloof <Stormwind Commendations> [SW]
@@ -205,9 +183,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8820, {	-- Ten Commendation Signets (1/2) [Ironforge]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Ironforge",
-						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Ironbeard <Ironforge Commendations> [IF]
 							15734,	-- Ironforge Commendation Officer [IF]
@@ -221,9 +197,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8835, {	-- Ten Commendation Signets (2/2) [Ironforge]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Ironforge",
-						-- #endif
 						["sourceQuest"] = 8820,	-- Ten Commendation Signets (1/2) [Ironforge]
 						["qgs"] = {
 							15764,	-- Officer Ironbeard <Ironforge Commendations> [IF]
@@ -238,9 +212,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8821, {	-- Ten Commendation Signets (1/2) [Darnassus]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Darnassus",
-						-- #endif
 						["qgs"] = {
 							15762,	-- Officer Lunalight <Darnassus Commendations> [Darn]
 							15731,	-- Darnassus Commendation Officer [IF]
@@ -254,9 +226,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8837, {	-- Ten Commendation Signets (2/2) [Darnassus]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Darnassus",
-						-- #endif
 						["sourceQuest"] = 8821,	-- Ten Commendation Signets (1/2) [Darnassus]
 						["qgs"] = {
 							15762,	-- Officer Lunalight <Darnassus Commendations> [Darn]
@@ -271,9 +241,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8822, {	-- Ten Commendation Signets (1/2) [Gnomeregan]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Gnomeregan",
-						-- #endif
 						["qgs"] = {
 							15733,	-- Gnomeregan Commendation Officer [IF]
 							15763,	-- Officer Porterhouse <Gnomeregan Commendations> [IF]
@@ -287,9 +255,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8839, {	-- Ten Commendation Signets (2/2) [Gnomeregan]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Gnomeregan",
-						-- #endif
 						["sourceQuest"] = 8822,	-- Ten Commendation Signets (1/2) [Gnomeregan]
 						["qgs"] = {
 							15733,	-- Gnomeregan Commendation Officer [IF]
@@ -708,23 +674,13 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 10,
 					}),
-					-- #if AFTER TBC
-					-- They added this War Effort Quest after the TBC Prepatch... long after the event was over. Why though?
-					q(10501, {	-- The Alliance Needs Your Help! [The Exodar]
-						["qg"] = 21156,	-- Master Sergeant Thelaana <War Effort Recruiter>
-						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 10,
-					}),
-					-- #endif
 				},
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					q(8815, {	-- One Commendation Signet (1/2) [Orgrimmar]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Orgrimmar",
-						-- #endif
 						["qgs"] = {
 							15765,	-- Officer Redblade <Orgrimmar Commendations> [ORG]
 							15736,	-- Orgrimmar Commendation Officer [ORG]
@@ -738,9 +694,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8840, {	-- One Commendation Signet (2/2) [Orgrimmar]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Orgrimmar",
-						-- #endif
 						["sourceQuest"] = 8815,	-- One Commendation Signet (1/2) [Orgrimmar]
 						["qgs"] = {
 							15765,	-- Officer Redblade <Orgrimmar Commendations> [ORG]
@@ -755,9 +709,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8816, {	-- One Commendation Signet (1/2) [Undercity]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Undercity",
-						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Gothena <Undercity Commendations> [UC]
 							15734,	-- Undercity Commendation Officer [ORG]
@@ -771,9 +723,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8832, {	-- One Commendation Signet (2/2) [Undercity]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Undercity",
-						-- #endif
 						["sourceQuest"] = 8816,	-- One Commendation Signet (1/2) [Undercity]
 						["qgs"] = {
 							15764,	-- Officer Gothena <Undercity Commendations> [UC]
@@ -788,9 +738,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8817, {	-- One Commendation Signet (1/2) [Thunder Bluff]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Thunder Bluff",
-						-- #endif
 						["qgs"] = {
 							15767,	-- Officer Thunderstrider <Thunder Bluff Commendations> [TB]
 							15739,	-- Thunder Bluff Commendation Officer [ORG]
@@ -804,9 +752,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8842, {	-- One Commendation Signet (2/2) [Thunder Bluff]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Thunder Bluff",
-						-- #endif
 						["sourceQuest"] = 8817,	-- One Commendation Signet (1/2) [Thunder Bluff]
 						["qgs"] = {
 							15767,	-- Officer Thunderstrider <Thunder Bluff Commendations> [TB]
@@ -821,9 +767,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8818, {	-- One Commendation Signet (1/2) [Darkspear]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Darkspear",
-						-- #endif
 						["qgs"] = {
 							15733,	-- Darkspear Commendation Officer [ORG]
 							15761,	-- Officer Vu'Shalay <Darkspear Commendations> [ORG]
@@ -837,9 +781,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8844, {	-- One Commendation Signet (2/2) [Darkspear]
-						-- #if BEFORE TBC
 						["description"] = "Grants 5 reputation with Darkspear",
-						-- #endif
 						["sourceQuest"] = 8818,	-- One Commendation Signet (1/2) [Darkspear]
 						["qgs"] = {
 							15733,	-- Darkspear Commendation Officer [ORG]
@@ -854,9 +796,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8823, {	-- Ten Commendation Signets (1/2) [Orgrimmar]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Orgrimmar",
-						-- #endif
 						["qgs"] = {
 							15765,	-- Officer Redblade <Orgrimmar Commendations> [ORG]
 							15736,	-- Orgrimmar Commendation Officer [ORG]
@@ -870,9 +810,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8841, {	-- Ten Commendation Signets (2/2) [Orgrimmar]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Orgrimmar",
-						-- #endif
 						["sourceQuest"] = 8823,	-- Ten Commendation Signets (1/2) [Orgrimmar]
 						["qgs"] = {
 							15765,	-- Officer Redblade <Orgrimmar Commendations> [ORG]
@@ -887,9 +825,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8824, {	-- Ten Commendation Signets (1/2) [Undercity]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Undercity",
-						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Gothena <Undercity Commendations> [UC]
 							15734,	-- Undercity Commendation Officer [ORG]
@@ -903,9 +839,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8833, {	-- Ten Commendation Signets (2/2) [Undercity]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Undercity",
-						-- #endif
 						["sourceQuest"] = 8824,	-- Ten Commendation Signets (1/2) [Undercity]
 						["qgs"] = {
 							15764,	-- Officer Gothena <Undercity Commendations> [UC]
@@ -920,9 +854,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8825, {	-- Ten Commendation Signets (1/2) [Thunder Bluff]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Thunder Bluff",
-						-- #endif
 						["qgs"] = {
 							15767,	-- Officer Thunderstrider <Thunder Bluff Commendations> [TB]
 							15739,	-- Thunder Bluff Commendation Officer [ORG]
@@ -936,9 +868,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8843, {	-- Ten Commendation Signets (2/2) [Thunder Bluff]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Thunder Bluff",
-						-- #endif
 						["sourceQuest"] = 8825,	-- Ten Commendation Signets (1/2) [Thunder Bluff]
 						["qgs"] = {
 							15767,	-- Officer Thunderstrider <Thunder Bluff Commendations> [TB]
@@ -953,9 +883,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8826, {	-- Ten Commendation Signets (1/2) [Darkspear]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Darkspear",
-						-- #endif
 						["qgs"] = {
 							15733,	-- Darkspear Commendation Officer [ORG]
 							15761,	-- Officer Vu'Shalay <Darkspear Commendations> [ORG]
@@ -969,9 +897,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["repeatable"] = true,
 					}),
 					q(8845, {	-- Ten Commendation Signets (2/2) [Darkspear]
-						-- #if BEFORE TBC
 						["description"] = "Grants 150 reputation with Darkspear",
-						-- #endif
 						["sourceQuest"] = 8826,	-- Ten Commendation Signets (1/2) [Darkspear]
 						["qgs"] = {
 							15733,	-- Darkspear Commendation Officer [ORG]
@@ -1388,18 +1314,9 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
-					-- #if AFTER TBC
-					-- They added this War Effort Quest after the TBC Prepatch... long after the event was over. Why though?
-					q(10500, {	-- The Horde Needs Your Help! [Silvermoon City]
-						["qg"] = 21155,	-- Senior Sergeant Eveningshade <War Effort Recruiter>
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
-						["lvl"] = 10,
-					}),
-					-- #endif
 				},
 			}),
-			applyclassicphase(PHASE_FIVE_WAR, n(QUESTS, {
+			n(QUESTS, {
 				q(8857, {	-- Secrets of the Colossus - Ashi
 					["provider"] = { "i", 21534 },	-- Colossus of Ashi's Husk
 					["cr"] = 15742,	-- Colossus of Ashi
@@ -1424,7 +1341,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 						i(21528),	-- Colossal Bag of Loot
 					},
 				}),
-			})),
+			}),
 			n(REWARDS, {
 				i(21436, {	-- Alliance Commendation Signet
 					["races"] = ALLIANCE_ONLY,
@@ -1449,5 +1366,6 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 				}),
 			}),
 		},
-	}))
-));
+	}),
+});
+]]--
