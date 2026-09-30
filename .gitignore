@@ -1,6 +1,7 @@
 .contrib/.builds/
 .contrib/.source/Spell Learned At/bin/
 .contrib/.tools/log.txt
+.contrib/.tools/**/Debug/
 .contrib/Harvesters/RAW/
 .contrib/Harvesters/*.json
 .contrib/Debugging/

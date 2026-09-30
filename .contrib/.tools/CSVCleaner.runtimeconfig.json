@@ -6,11 +6,8 @@
       "version": "8.0.0"
     },
     "configProperties": {
-      "System.Diagnostics.Tracing.EventSource.IsSupported": false,
       "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
-      "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported": false,
-      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
-      "System.Linq.Expressions.CanEmitObjectArrayDelegate": false
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
     }
   }
 }
