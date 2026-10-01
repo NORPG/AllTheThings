@@ -4519,9 +4519,6 @@ i(1080,{coords={
 m(2548,{awp=16001,icon=1032150,lore="A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",g={
 h(-12,{
 ach(62354,{
-crit(116895,{achID=62354,id=4}),
-crit(116896,{achID=62354,id=9}),
-crit(116888,{achID=62354,id=10}),
 crit(112651,{achID=62353,id=15})})}),
 h(-30,{
 exp(16726,{
@@ -4531,6 +4528,9 @@ crit(116897,{achID=62354,id=2})}),
 exp(16734),
 exp(16724,{
 crit(116889,{achID=62354,id=3})}),
+exp(17780),
+exp(16735,{
+crit(116895,{achID=62354,id=4})}),
 exp(16727,{
 crit(116892,{achID=62354,id=5})}),
 exp(16743,{
@@ -4539,6 +4539,10 @@ exp(16723,{
 crit(116887,{achID=62354,id=7})}),
 exp(16729,{
 crit(116893,{achID=62354,id=8})}),
+exp(16736,{
+crit(116896,{achID=62354,id=9})}),
+exp(16685,{
+crit(116888,{achID=62354,id=10})}),
 exp(16725,{
 crit(116890,{achID=62354,id=11})}),
 exp(16731,{
@@ -4577,6 +4581,8 @@ s(309606,276201,{b=1,f=6,loc=46,lvl=40,minReputation={2827,3000}}),
 s(309608,276203,{b=1,f=29,lvl=40,minReputation={2827,9000}}),
 s(309617,276204,{b=1,lvl=40,minReputation={2827,9000}}),
 s(309604,276199,{b=1,f=2,loc=40,minReputation={2827,21000}})}}),
+n(272435,{coords={
+[2548]={{37.7,76}}},r=2,sym={{"select","itemID",2417,2419,2418,2420,2421,2422,3891,17189,2448,2429,3593,2431,2432,3594,2434,3889,2463,2464,2465,2467,2468,2469,3890}}}),
 n(260487,{coords={
 [2548]={{78.4,55.1}}},g={
 r(7755,{itemID=6330,requireSkill=185}),

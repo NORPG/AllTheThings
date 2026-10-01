@@ -15,10 +15,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			exploration(16737),	-- Bristle Hills
 			exploration(16734),	-- Elbrim's Farm
 			exploration(16724),	-- Farholde Keep
+			exploration(17780),	-- Krol'dok Stronghold
+			exploration(16735),	-- Meadowsbrook
 			exploration(16727),	-- Powderfuse Port
 			exploration(16743),	-- Rog'mar
 			exploration(16723),	-- Sunnyglade
 			exploration(16729),	-- Terral's Watch
+			exploration(16736),	-- Turner's Logging Camp
+			exploration(16685),	-- Twilight's Shroud
 			exploration(16725),	-- Wheeler's Grange
 			exploration(16731),	-- Windstead
 		}),
@@ -85,6 +89,35 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					}, {	-- Exalted
 					},
 				}),
+			}),
+			n(272435, { -- Goren Grayfellow <Armorer>
+				coord = { 37.7, 76.0, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2417, -- Augmented Chain Vest
+					2419, -- Augmented Chain Belt
+					2418, -- Augmented Chain Leggings
+					2420, -- Augmented Chain Boots
+					2421, -- Augmented Chain Bracers
+					2422, -- Augmented Chain Gloves
+					3891, -- Augmented Chain Helm
+					17189, -- Metal Buckler
+					2448, -- Heavy Pavise
+					2429, -- Russet Vest
+					3593, -- Russet Belt
+					2431, -- Russet Pants
+					2432, -- Russet Boots
+					3594, -- Russet Bracers
+					2434, -- Russet Gloves
+					3889, -- Russet Hat
+					2463, -- Studded Doublet
+					2464, -- Studded Belt
+					2465, -- Studded Pants
+					2467, -- Studded Boots
+					2468, -- Studded Bracers
+					2469, -- Studded Gloves
+					3890, -- Studded Hat
+				}},
 			}),
 			n(260487, { -- Gritta Chumwater <Fisherman>
 				coord = { 78.4, 55.1, MAP.RIVERGLADES },
