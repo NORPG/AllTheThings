@@ -3886,10 +3886,10 @@ fp(5,{coords={
 [1433]={{25.5,59.4}}},crs={931},r=2})}),
 prof(633,{c={4},g={
 o(121264,{coords={
-[1433]={{52,44.9}}},learnedAt=25,requireSkill=633,g={
+[1433]={{47,44.9}}},learnedAt=25,requireSkill=633,g={
 i(7871,{requireSkill=633})}}),
 o(178244,{coords={
-[1433]={{51.9,45}}},requireSkill=633})}}),
+[1433]={{46.8,45.1}}},requireSkill=633})}}),
 h(-44,{
 prof(393,{
 i(7286,{crs={441,14272}})})}),
@@ -4491,6 +4491,8 @@ s(156238,1220,{coords={
 [1433]={{20,23.8},{23,19}}},crs={580},f=22}),
 s(156292,1406,{coords={
 [1433]={{80.4,58.4},{81,70}}},crs={544},f=29}),
+r(1250157,{awp=16001,b=1,coords={
+[1433]={{46.4,34.6},{56.4,75.6}}},crs={428},itemID=250188,requireSkill=185}),
 s(156237,1219,{coords={
 [1433]={{32.2,82.6},{44,72.8}}},crs={424},f=25,lvl=11}),
 i(2798,{providers={{"n",580},{"o",2054},{"o",2055}}}),
@@ -4515,7 +4517,7 @@ s(156323,1460,{coords={
 s(156324,1461,{coords={
 [1433]={{78.4,38.2},{81.6,48.6}}},crs={431},f=22}),
 i(1080,{coords={
-[1433]={{52,40},{55,72}}},crs={428},description="Only drops from Dire Condors in Redridge Mountains."})})}}),
+[1433]={{46.4,34.6},{56.4,75.6}}},crs={428}})})}}),
 m(2548,{awp=16001,icon=1032150,lore="A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",g={
 h(-12,{
 ach(62354,{

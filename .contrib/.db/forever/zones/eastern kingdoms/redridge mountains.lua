@@ -41,17 +41,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 		}),
 		lockpicking({
 			o(121264, {	-- Lucius's Lockbox
-				["coord"] = { 52.0, 44.9, MAP.REDRIDGE_MOUNTAINS },
-				["requireSkill"] = LOCKPICKING,
-				["learnedAt"] = 25,
-				["groups"] = {
+				coord = { 47.0, 44.9, MAP.REDRIDGE_MOUNTAINS },
+				requireSkill = LOCKPICKING,
+				learnedAt = 25,
+				groups = {
 					i(7871),	-- Token of Thievery
 				},
 			}),
 			o(178244, {	-- Practice Lockbox
-				["coord"] = { 51.9, 45.0, MAP.REDRIDGE_MOUNTAINS },
-				["requireSkill"] = LOCKPICKING,
-				["learnedAt"] = 1,
+				coord = { 46.8, 45.1, MAP.REDRIDGE_MOUNTAINS },
+				requireSkill = LOCKPICKING,
+				learnedAt = 1,
 			}),
 		}),
 		n(PROFESSIONS, {
@@ -1820,6 +1820,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 81.0, 70.0, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
+			i(250188, {	-- Recipe: Breakfast Omelet (RECIPE!)
+				coords = {
+					{ 46.4, 34.6, MAP.REDRIDGE_MOUNTAINS },	-- Northside
+					{ 56.4, 75.6, MAP.REDRIDGE_MOUNTAINS },	-- Southside
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 428,	-- Dire Condor
+			}),
 			i(1219, {	-- Redridge Machete
 				["cr"] = 424,	-- Redridge Poacher
 				["coords"] = {
@@ -1913,14 +1921,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			i(1080, {	-- Tough Condor Meat
-				["coords"] = {
-					{ 52.0, 40.0, MAP.REDRIDGE_MOUNTAINS },	-- Northside
-					{ 55.0, 72.0, MAP.REDRIDGE_MOUNTAINS },	-- Southside
+				coords = {
+					{ 46.4, 34.6, MAP.REDRIDGE_MOUNTAINS },	-- Northside
+					{ 56.4, 75.6, MAP.REDRIDGE_MOUNTAINS },	-- Southside
 				},
-				["crs"] = {
-					428,	-- Dire Condor
-				},
-				["description"] = "Only drops from Dire Condors in Redridge Mountains."
+				cr = 428,	-- Dire Condor
 			}),
 		}),
 	},
