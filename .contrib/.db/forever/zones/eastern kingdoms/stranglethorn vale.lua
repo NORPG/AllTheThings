@@ -2004,6 +2004,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			n(265575, {	-- Gezzy Gunkgear <Booty Bay Quartermaster>
+				coord = { 28.2, 74.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = bubbleDownClassicRep(FACTION_BOOTY_BAY, {
+					{	-- Neutral
+						
+					}, {	-- Friendly
+						i(274745),	-- Deckswabber's Mitts
+						i(274746),	-- Sea Giant's Toe Ring
+						i(274747),	-- Soggy Boots
+					}, {	-- Honored
+						i(274748),	-- Booty Bay Bruiser's Buckshot
+						i(274749),	-- Souvenier Sea Shell
+					}, {	-- Revered
+						i(274022),	-- Tough Guy's Eyepatch
+					}, {	-- Exalted
+					},
+				}),
+			}),
 			n(2848, {	-- Glyx Brewright <Alchemy Supplies>
 				["coord"] = { 28.0, 78.0, MAP.STRANGLETHORN_VALE },
 				["groups"] = {

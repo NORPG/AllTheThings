@@ -5228,6 +5228,14 @@ r(23068,{b=1,isLimited=1,itemID=18648,requireSkill=202})}}),
 n(2845,{coords={
 [1434]={{29,75}}},g={
 s(160471,12257,{f=6,isLimited=1,loc=45,lvl=37})}}),
+n(265575,{awp=16001,coords={
+[1434]={{28.2,74.8}}},g={
+s(308972,274745,{b=1,f=6,loc=44,lvl=30,minReputation={21,3000}}),
+i(274746,{b=1,f=52,lvl=30,minReputation={21,3000}}),
+s(308965,274747,{b=1,f=4,loc=47,lvl=30,minReputation={21,3000},spellID=1295267}),
+s(308973,274748,{b=1,f=31,lvl=30,minReputation={21,9000},spellID=1295313}),
+i(274749,{b=1,f=51,lvl=30,minReputation={21,9000}}),
+s(308983,274022,{b=1,f=2,loc=40,minReputation={21,21000}})}}),
 n(2848,{coords={
 [1434]={{28,78}}},g={
 r(7258,{b=1,isLimited=1,itemID=6056,learnedAt=205,requireSkill=171,skillID=2937}),
