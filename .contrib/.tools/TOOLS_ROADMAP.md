@@ -159,32 +159,34 @@ A tool is considered cross-platform only when its application code and all requi
 
 ## Source Layout
 
-All maintained ATT contributor tool source code should eventually be consolidated under a single source directory:
+The six projects formerly under `.contrib/Source Code` now live under `.contrib/src`: Parser, CSVCleaner, Blizzard API Harvester, Classic Item Detector, Item DB Compare Tool and Profession Automator. Open the Parser, Harvester and Profession solutions separately. The existing `.contrib/.source` projects keep their source and output names.
 
-```text
-.contrib/
-└── src/
+Migrated project directories and executable names use underscores. Harvester and database comparison batch files call the matching renamed executables. Parser and CSVCleaner keep their existing `.contrib/.tools` entry points; output directories, frameworks and dependency versions are preserved.
+
+### Current Windows Build
+
+Use Visual Studio MSBuild with the existing .NET Framework targeting packs and a .NET SDK supporting .NET 8. From the repository root:
+
+```bat
+msbuild .contrib\src\Parser\Parser.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Parser\packages"
+msbuild .contrib\src\Blizzard_API_Harvester\Blizzard_API_Harvester.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Blizzard_API_Harvester\packages"
+msbuild ".contrib\src\Parser\Parser.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
+msbuild ".contrib\src\Blizzard_API_Harvester\Blizzard API Harvester.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release "/p:Platform=Any CPU"
+msbuild ".contrib\src\Profession_Automator\Profession Automator.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
+msbuild ".contrib\src\Parser\Parser.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild ".contrib\src\Blizzard_API_Harvester\Blizzard API Harvester.sln" /t:Rebuild /p:Configuration=Release "/p:Platform=Any CPU" /m:1
+msbuild ".contrib\src\Profession_Automator\Profession Automator.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
 ```
 
-The existing split between:
+Use `Debug` for debug builds. On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to preserve the existing x64 apphosts. Runtime scripts continue to use their existing working directories.
 
-```text
-.contrib/.source/
-.contrib/Source Code/
-```
-
-should be removed.
-
-Source code should not be stored in `.contrib/.tools/`.
-
-This applies to maintained contributor tooling regardless of implementation language, including C#, Python, and JavaScript.
+The following proposed structure and shared build settings describe later modernization work.
 
 ### Proposed Structure
 
 ```text
 .contrib/
 ├── src/
-│   ├── ATT.Tools.sln
 │   ├── Directory.Build.props
 │   ├── Directory.Packages.props
 │   │
@@ -220,6 +222,22 @@ This applies to maintained contributor tooling regardless of implementation lang
 │   │   ├── Database.csproj
 │   │   └── ...
 │   │
+│   ├── Blizzard_API_Harvester/
+│   │   ├── Blizzard_API_Harvester.csproj
+│   │   └── ...
+│   │
+│   ├── Classic_Item_Detector/
+│   │   ├── Classic_Item_Detector.csproj
+│   │   └── ...
+│   │
+│   ├── Item_DB_Compare_Tool/
+│   │   ├── Item_DB_Compare_Tool.csproj
+│   │   └── ...
+│   │
+│   ├── Profession_Automator/
+│   │   ├── Profession_Automator.csproj
+│   │   └── ...
+│   │
 │   ├── Localization/
 │   │   ├── requirements.txt
 │   │   ├── object_localization.py
@@ -245,8 +263,7 @@ Common .NET build configuration should be moved to the root of the source tree r
 ```text
 .contrib/src/
 ├── Directory.Build.props
-├── Directory.Packages.props
-└── ATT.Tools.sln
+└── Directory.Packages.props
 ```
 
 `Directory.Build.props` should contain common compiler and build settings.
