@@ -2315,7 +2315,6 @@ i(246920, 1244260);	-- Void-Razed Elekk
 i(239687, 1229288);	-- Wretched Fel Bat
 --- NYI ---
 i(0, 1254363);	-- (PH LEGION REMIX MOUNT)
-i(250191, 1250481);	-- Bilebound Ur'zul
 i(239647, 1229264);	-- Bloodguard Fel Ba
 i(250762, 0);		-- Felfueled Memento of the Abyss
 i(250106, 1250287);	-- Floestrider Crest-Horn
@@ -2515,6 +2514,7 @@ i(272920, 1291315);	-- Spring Panda
 ------------------
 i(275657, 1297404);	-- Apophic Soul Crusher
 i(275656, 1297224);	-- Auriferous Venomfang
+i(250191, 1250481);	-- Bilebound Ur'zul
 i(276881, 1301070);	-- Breath of Blight
 i(276882, 1301074);	-- Breath of Ruin
 i(275654, 1297217);	-- Caustic Venomfang

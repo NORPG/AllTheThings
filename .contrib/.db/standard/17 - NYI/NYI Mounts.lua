@@ -1035,9 +1035,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(250927, {	-- Quirky Turkey
 				["displayID"] = 136375,
 			}),
-			i(250191, {	-- Reins of the Bilebound Ur'zul
-				-- ["displayID"] = ,
-			}),
 			i(239647, {	-- Reins of the Bloodguard Fel Bat
 				-- ["displayID"] = ,
 			}),

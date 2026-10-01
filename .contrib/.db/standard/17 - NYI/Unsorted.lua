@@ -556,7 +556,6 @@ root(ROOTS.Unsorted, {
 			i(277261),	-- [PH] Pygmy Owl
 			i(277266),	-- The First Troll Legend
 			i(277270),	-- Kirin Tor Kitty
-			i(277282),	-- Kirin Tor Cat
 			i(277318),	-- Catsramas
 			i(277319),	-- Cat'Thuzad
 			i(277321),	-- Mewkahen
@@ -588,20 +587,6 @@ root(ROOTS.Unsorted, {
 			i(278115),	-- DNT Ula'tek Pole Dummy F
 			i(278335),	-- Cerulean Pearl
 			i(278576),	-- Crested Violet Leafmimic
-			i(278577),	-- Nightfall Assassin's Tunic
-			i(278578),	-- Nightfall Assassin's Mask
-			i(278579),	-- Nightfall Assassin's Spaulder
-			i(278580),	-- Nightfall Assassin's Gloves
-			i(278581),	-- Nightfall Assassin's Belt
-			i(278582),	-- Nightfall Assassin's Leggings
-			i(278583),	-- Nightfall Assassin's Boots
-			i(278584),	-- Thornshadow Assassin's Tunic
-			i(278585),	-- Thornshadow Assassin's Mask
-			i(278586),	-- Thornshadow Assassin's Spaulder
-			i(278587),	-- Thornshadow Assassin's Gloves
-			i(278588),	-- Thornshadow Assassin's Belt
-			i(278589),	-- Thornshadow Assassin's Leggings
-			i(278590),	-- Thornshadow Assassin's Boots
 			i(278591),	-- Bloodfang Assassin's Tunic
 			i(278592),	-- Bloodfang Assassin's Mask
 			i(278593),	-- Bloodfang Assassin's Spaulder
@@ -609,17 +594,7 @@ root(ROOTS.Unsorted, {
 			i(278595),	-- Bloodfang Assassin's Belt
 			i(278596),	-- Bloodfang Assassin's Leggings
 			i(278597),	-- Bloodfang Assassin's Boots
-			i(278598),	-- Moonlit Assassin's Tunic
-			i(278599),	-- Moonlit Assassin's Mask
-			i(278600),	-- Moonlit Assassin's Spaulder
-			i(278601),	-- Moonlit Assassin's Gloves
-			i(278602),	-- Moonlit Assassin's Belt
-			i(278603),	-- Moonlit Assassin's Leggings
-			i(278604),	-- Moonlit Assassin's Boots
-			i(278605),	-- Ensemble: Nightfall Assassin's Attire
-			i(278609),	-- Ensemble: Thornshadow Assassin's Attire
 			i(278610),	-- Ensemble: Bloodfang Assassin's Attire
-			i(278612),	-- Ensemble: Moonlit Assassin's Attire
 			i(278617),	-- Ensemble: Venomous Skirmisher's Cloth Armor
 			i(278618),	-- Ensemble: Venomous Skirmisher's Leather Armor
 			i(278619),	-- Ensemble: Venomous Skirmisher's Mail Armor
@@ -654,36 +629,6 @@ root(ROOTS.Unsorted, {
 			i(278652),	-- Ensemble: Elite Venomous Gladiator's Warlock Armor
 			i(278653),	-- Ensemble: Elite Venomous Gladiator's Warrior Armor
 			i(278654),	-- Arsenal: Elite Venomous Gladiator's Weapons
-			i(278776),	-- Brown Mogu Mask
-			i(278777),	-- Blue Mogu Mask
-			i(278778),	-- Green Mogu Mask
-			i(278779),	-- Red Mogu Mask
-			i(278780),	-- Classic Witch Mask
-			i(278781),	-- Blue Witch Mask
-			i(278782),	-- Purple Witch Mask
-			i(278783),	-- Red Witch Mask
-			i(278784),	-- Classic Tol'vir Mask
-			i(278785),	-- Purple Tol'vir Mask
-			i(278786),	-- Green Tol'vir Mask
-			i(278787),	-- Sandswept Tol'vir Mask
-			i(278788),	-- Classic Abomination Mask
-			i(278789),	-- Blue Abomination Mask
-			i(278790),	-- Green Abomination Mask
-			i(278791),	-- Red Abomination Mask
-			i(278798),	-- Classic Sha Mask
-			i(278799),	-- Blue Sha Mask
-			i(278800),	-- Green Sha Mask
-			i(278801),	-- Red Sha Mask
-			i(278802),	-- Purple Treant Mask
-			i(278803),	-- Ancient Treant Mask
-			i(278804),	-- Classic Treant Mask
-			i(278805),	-- Withered Treant Mask
-			i(278806),	-- Collection: Mogu Mask
-			i(278808),	-- Collection: Witch Mask
-			i(278814),	-- Collection: Tol'vir Mask
-			i(278815),	-- Collection: Abomination Mask
-			i(278816),	-- Collection: Sha Mask
-			i(278818),	-- Collection: Treant Mask
 			i(278841),	-- Ensemble: Galerider's Panoply
 			i(278842),	-- Ensemble: Miststalker's Harness
 			i(278843),	-- Ensemble: Pyrewalker's Battlegear
@@ -692,12 +637,9 @@ root(ROOTS.Unsorted, {
 			i(278869),	-- Lil' Blue Perdition
 			i(278870),	-- Lil' Green Perdition
 			i(278871),	-- Lil' Purple Perdition
-			i(278872),	-- Lil' Red Perdition
-			i(278873),	-- Lil' Blue Armageddon
 			i(278874),	-- Lil' Dark Armageddon
 			i(278875),	-- Lil' Green Armageddon
 			i(278876),	-- Lil' Red Armageddon
-			i(278993),	-- Big Blue Armageddon
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
@@ -763,7 +705,6 @@ root(ROOTS.Unsorted, {
 			i(279141),	-- [ph] SpiceWitch Shoulders 02 - Pink
 			i(279142),	-- Intact Spine Segment
 			i(279143),	-- Elongated Viscera
-			i(279146),	-- Lopped Rattle
 			i(279147),	-- Unrecognizable bone
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
@@ -794,7 +735,6 @@ root(ROOTS.Unsorted, {
 			i(279437),	-- Faded Gloomcap
 			i(279438),	-- Carrot Gloomcap
 			i(279439),	-- Rosy Gloomcap
-			i(279440),	-- Plum Gloomcap
 			i(279441),	-- Crimson Gloomcap
 			i(279442),	-- Violet Gloomcap
 			i(279444),	-- Snowy Gloomcap
@@ -807,7 +747,6 @@ root(ROOTS.Unsorted, {
 			i(279548),	-- Villager's Labor Vest
 			i(279549),	-- Witch-Hunter's Undercoat
 			i(279551),	-- Radical's Gilded Vestment
-			i(279579),	-- Cruel Warrior's Blade
 			i(279610),	-- Bundle of Adventurer Dawncrests
 			i(279611),	-- Satchel of Champion Dawncrests
 			i(279612),	-- Pack of Hero Dawncrests
@@ -824,12 +763,9 @@ root(ROOTS.Unsorted, {
 			i(279623),	-- Nebulous Voidcache: Murder Row
 			i(279624),	-- Nebulous Voidcache:Temple of Sethraliss
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
-			i(279818),	-- Basic Iron Sabatons
-			i(279819),	-- Basic Steel Sabatons
 			i(280131),	-- Nebulous Voidcache: Prey
 			i(280102),	-- Handful of Corrosive Coins
 			i(280581),	-- Wintry Witchwick's Rider
-			i(280842),	-- Shadowhunters' Hexblade
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(274677),	-- Sky Blue Riverside Room Plans
@@ -1005,11 +941,6 @@ root(ROOTS.Unsorted, {
 				i(274780),	-- Fungal Spore Vapor [NYI]
 			}),
 			filter(COSMETIC, {
-				i(269751),	-- Artisan Sai
-				i(269752),	-- Nunchuck of the Artisan
-				i(269753),	-- Artisan Katana
-				i(269754),	-- Offhand Artisan Nunchuck
-				i(269755),	-- Large Artisan Katana
 				i(271568),	-- Bloodwatch Outlaw's Headgear
 				i(271569),	-- Bloodwatch Outlaw's Tunic
 				i(271570),	-- Bloodwatch Outlaw's Buckle
@@ -1049,7 +980,6 @@ root(ROOTS.Unsorted, {
 				i(274059),	-- Bandit's Faded Highboot
 				i(274060),	-- Bandit's Carrot Highboot
 				i(274061),	-- Bandit's Rosy Highboot
-				i(274062),	-- Bandit's Plum Highboot
 				i(274063),	-- Bandit's Crimson Highboot
 				i(274064),	-- Bandit's Violet Highboot
 				i(274067),	-- Bandit's Sunny Highboot
@@ -1072,7 +1002,6 @@ root(ROOTS.Unsorted, {
 				i(274628),	-- Gunslinger's Lively Lid
 				i(274629),	-- Gunslinger's Faded Lid
 				i(274631),	-- Gunslinger's Rosy Lid
-				i(274632),	-- Gunslinger's Plum Lid
 				i(274633),	-- Gunslinger's Crimson Lid
 				i(274634),	-- Gunslinger's Violet Lid
 				i(274637),	-- Gunslinger's Sunny Lid
@@ -1128,7 +1057,6 @@ root(ROOTS.Unsorted, {
 					i(270285),	-- Crown of Deep Springflowers
 					i(270283),	-- Crown of Grassy Springflowers
 					i(270288),	-- Crown of Lively Springflowers
-					i(270292),	-- Crown of Plum Springflowers
 					i(270291),	-- Crown of Rosy Springflowers
 					i(270281),	-- Crown of Sepia Springflowers
 					i(270294),	-- Crown of Violet Springflowers

@@ -999,7 +999,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(249717),	-- Golden Food Fanatic Backpack
 				i(252713),	-- Grassy Winter Toque
 				i(250291),	-- Hot and Fresh Portable Bakery
-				i(252747),	-- Plum Winter Toque
 				i(251669),	-- Sturdy Wearable Pot Lid
 				i(251985),	-- Trapper's Black Quiver
 				i(251986),	-- Trapper's Blue Quiver
@@ -1136,11 +1135,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(257784),	-- Sorcerer's Deep Cape
 				i(257764),	-- Sorcerer's Deep Cowl
 
-				------ Sorcerer's Plum Garb Set ------
-				i(258003),	-- Ensemble: Sorcerer's Plum Garb
-				i(257791),	-- Sorcerer's Plum Cape
-				i(257772),	-- Sorcerer's Plum Cowl
-
 				------ Corrupted Regalia of the Crusader Set ------
 				i(258186),	-- Ensemble: Corrupted Regalia of the Crusader
 				i(258178),	-- Corrupted Belt of the Crusader
@@ -1209,7 +1203,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(257428),	-- Anubisath's Ethereal Greatblade
 				i(257710),	-- Anubisath's Green Blade
 				i(257425),	-- Anubisath's Green Greatblade
-				i(260379),	-- Black Wooden Shortbow
 				i(260380),	-- Blue Wooden Shortbow
 				i(260381),	-- Bronze Wooden Shortbow
 				i(253045),	-- Crusader's Amethyst Blade
@@ -1227,7 +1220,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(260384),	-- Dark Red Wooden Shortbow
 				i(260385),	-- Frost Wooden Shortbow
 				i(250315),	-- Hunter's Etched Glaive
-				i(260387),	-- Icey Wooden Shortbow
 				i(260390),	-- Light Brown Wooden Shortbow
 				i(260388),	-- Light Wooden Shortbow
 				i(260391),	-- Pale Wooden Shortbow
@@ -1238,11 +1230,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(251516),	-- Shield of Unending Pain
 				i(251514),	-- Shield of Unending Sorrow
 				i(250309),	-- Simple Dagger
-				i(250310),	-- Simple Knife
-				i(250314),	-- Standard Hunter's Glaive
 				i(250311),	-- Standard Warrior's Sword
 				i(250313),	-- Vicious Warrior's Blade
-				i(250312),	-- Warrior's Katana
 				i(260378),	-- Wooden Shortbow
 			}),
 		})),
@@ -1262,12 +1251,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262838),	-- Azure Dunecloth Belt
 				i(262820),	-- Azure Dunecloth Skirt
 				i(262856),	-- Azure Dunecloth Vest
-				i(266077),	-- Basic Black Quiver
 				i(266078),	-- Basic Blue Quiver
 				i(266079),	-- Basic Bronze Quiver
 				i(266082),	-- Basic Dark Red Quiver
 				i(266083),	-- Basic Frost Quiver
-				i(266085),	-- Basic Ice Quiver
 				i(266088),	-- Basic Light Brown Quiver
 				i(266086),	-- Basic Light Quiver
 				i(266089),	-- Basic Pale Quiver
@@ -1289,12 +1276,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262824),	-- Deep Dunecloth Skirt
 				i(262860),	-- Deep Dunecloth Vest
 				i(258032),	-- Ensemble: Skilled Preyseeker's Attire
-				i(262840),	-- Grassy Dunecloth Belt
-				i(262822),	-- Grassy Dunecloth Skirt
-				i(262859),	-- Grassy Dunecloth Vest
-				i(262849),	-- Plum Dunecloth Belt
-				i(262831),	-- Plum Dunecloth Skirt
-				i(262867),	-- Plum Dunecloth Vest
 				i(262585),	-- Pristine Lunch Bag
 				i(262848),	-- Rosy Dunecloth Belt
 				i(262830),	-- Rosy Dunecloth Skirt

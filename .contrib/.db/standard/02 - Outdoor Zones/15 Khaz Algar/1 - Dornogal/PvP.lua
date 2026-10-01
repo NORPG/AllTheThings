@@ -52,27 +52,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(80189),	-- Preserving Teamwork
 				q(81796, {	-- Sparks of War: Azj-Kahet
 					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["groups"] = {
-						i(219934),	-- Spark of War (QI!)
-					},
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(81795, {	-- Sparks of War: Hallowfall
 					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["groups"] = {
-						i(219934),	-- Spark of War (QI!)
-					},
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(81793, {	-- Sparks of War: Isle of Dorn
 					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["groups"] = {
-						i(219934),	-- Spark of War (QI!)
-					},
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(81794, {	-- Sparks of War: The Ringing Deeps
 					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["groups"] = {
-						i(219934),	-- Spark of War (QI!)
-					},
+					["qi"] = 219934,	-- Spark of War (QI!)
 				}),
 				q(86853, {	-- Sparks of War: Undermine
 					["timeline"] = { ADDED_11_1_0, REMOVED_12_0_0 },

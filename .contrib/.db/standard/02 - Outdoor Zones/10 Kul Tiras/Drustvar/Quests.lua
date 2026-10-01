@@ -150,7 +150,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.0, 42.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(151934),	-- Juicy Onion (QI!)
+					o(272769, {	-- Onion
+						["coords"] = {
+							{ 65.4, 42.4, DRUSTVAR },
+							{ 65.4, 42.5, DRUSTVAR },
+							{ 65.5, 42.5, DRUSTVAR },
+							{ 66.3, 41.8, DRUSTVAR },
+							{ 66.5, 42.5, DRUSTVAR },
+							{ 66.6, 42.1, DRUSTVAR },
+						},
+						["groups"] = { i(151934) },	-- Juicy Onion (QI!)
+					}),
 				},
 			}),
 			q(48522, {	-- A Revealing Missive

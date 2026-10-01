@@ -2926,6 +2926,7 @@ i(280183);	-- Harrier Hotcakes
 i(279152);	-- Intact Snake Head
 i(279154);	-- Large Leaf
 i(279153);	-- Large Trophy
+i(279146);	-- Lopped Rattle
 i(279160);	-- Mud-Caked Footwraps
 i(274954);	-- Pristine Fang
 i(274953);	-- Serpentine Iris

@@ -32,7 +32,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}
 			})),
 			ach(62104),	-- Midnight Lore Hunter
-			ach(61839),	-- Midnight Pathfinder
+			ach(61839, {	-- Midnight Pathfinder
+				i(FINERY_FUNDS),
+			}),
 			ach(61091, {	-- Midnight Safari
 				i(258189),	-- Do, child of Filo (PET!)
 			}),

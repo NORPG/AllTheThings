@@ -1678,7 +1678,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(575, iensemble(246965)),	-- Ensemble: Felreaver's Azure Attire
 				traderstender(375, iensemble(242345)),	-- Ensemble: Girded Mist Attire
 				traderstender(800, iensemble(226429)),	-- Ensemble: Ragged Harvest Golem
-				traderstender(600, iensemble(247991)),	-- Ensemble: The Horseman's Ghostly Collection
+				traderstender(600, iensemble(247991)),	-- Ensemble: The Horseman's Hallowed Collection
 				traderstender(125, i(246992)),	-- Infernal's Profane Staff
 				traderstender(100, i(246999)),	-- Infernal's Profane Touched
 				traderstender(40, i(233105)),	-- Long Faded War Skirt
@@ -2415,7 +2415,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235035)),	-- Vigilante's Snowy Mask
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 12.1.0.69587", "removed 12.1.0.99999" } }, {	-- TODO: Timeline out correctly
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 12.1.0.69587", "removed 12.1.0.69933" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(278573),	-- Crested Ember Leafmimic (MOUNT!)
 			}),
@@ -2426,7 +2426,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(325, i(247795)),	-- Ornery Breezestrider (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
-				traderstender(250, i(228765)),	-- Gummi
+				traderstender(250, i(228765)),	-- Gummi (PET!)
 			}),
 			filter(COSMETIC, {
 				traderstender(50, i(279443)),	-- Aquatic Gloomcap
@@ -2847,6 +2847,63 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 						traderstender(175, i(212611)),	-- Wings of the Tourmaline Monarch
 					},
 				}),
+			}),
+		})),
+		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 12.1.0.69933", "removed 12.1.5.99999" } }, {	-- TODO: Timeline Out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				iensemble(278609),	-- Ensemble: Thornshadow Assassin's Attire
+			}),
+			filter(MOUNTS, {
+				traderstender(700, i(93671)),	-- Ghastly Charger's Skull (MOUNT!)
+				traderstender(700, i(250191)),	-- Reins of the Bilebound Ur'zul (MOUNT!)
+				traderstender(750, i(247723)),	-- The Headless Horseman's Hallowed Charger (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(350, i(277282)),	-- Archmage's Familiar (PET!)
+				traderstender(350, i(190609)),	-- Watcher of the Huntress (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(110, i(269753)),	-- Artisan Katana
+				traderstender(120, i(269751)),	-- Artisan Sai
+				traderstender(40, i(274062)),	-- Bandit's Plum Highboot
+				traderstender(40, i(279819)),	-- Basic Dark Iron Sabatons
+				traderstender(40, i(279818)),	-- Basic Steel Sabatons
+				traderstender(50, i(270292)),	-- Crown of Plum Springflowers
+				traderstender(250, i(233053)),	-- Crown of the Violet Rose
+				traderstender(125, i(279579)),	-- Crusader's Zweihander
+				traderstender(100, i(266077)),	-- Dark Ranger's Shadow Quiver
+				traderstender(80, i(260379)),	-- Dark Ranger's Shortbow
+				traderstender(700, iensemble(278612)),	-- Ensemble: Moonlit Assassin's Attire
+				traderstender(700, iensemble(278605)),	-- Ensemble: Ravenholdt Assassin's Attire
+				traderstender(100, iensemble(258003)),	-- Ensemble: Sorcerer's Plum Garb
+				traderstender(600, iensemble(247991)),	-- Ensemble: The Horseman's Hallowed Collection
+				traderstender(50, i(274632)),	-- Gunslinger's Plum Lid
+				traderstender(125, i(250314)),	-- Initiate's Training Glaive
+				traderstender(130, i(269755)),	-- Large Artisan Katana
+				traderstender(100, i(278873)),	-- Lil' Armegeddon's Play-Blade
+				traderstender(115, i(278993)),	-- Lil' Armegeddon's Play-More
+				traderstender(100, i(278872)),	-- Lil' Perdition's Play-Blade
+				traderstender(100, i(250312)),	-- Monastery's Katana
+				traderstender(120, i(269752)),	-- Nunchucks of the Artisan
+				traderstender(120, i(269754)),	-- Offhand Artisan Nunchucks
+				traderstender(200, iensemble(278815)),	-- Playwright's Collection: Painted Abomination Masks
+				traderstender(200, iensemble(278818)),	-- Playwright's Collection: Painted Grovetender's Masks
+				traderstender(200, iensemble(278806)),	-- Playwright's Collection: Painted Mogu Masks
+				traderstender(200, iensemble(278816)),	-- Playwright's Collection: Painted Sha Masks
+				traderstender(200, iensemble(278814)),	-- Playwright's Collection: Painted Sun Masks
+				traderstender(200, iensemble(278808)),	-- Playwright's Collection: Painted Witch's Masks
+				traderstender(30, i(262849)),	-- Plum Dunecloth Belt
+				traderstender(35, i(262831)),	-- Plum Dunecloth Skirt
+				traderstender(35, i(262867)),	-- Plum Dunecloth Vest
+				traderstender(50, i(279440)),	-- Plum Gloomcap
+				traderstender(50, i(252747)),	-- Plum Winter Toque
+				traderstender(125, i(280842)),	-- Shadowhunters' Hexblade
+				traderstender(80, i(260387)),	-- Silver Ranger's Shortbow
+				traderstender(100, i(266085)),	-- Silver Ranger's Spell Quiver
+				traderstender(230, i(247708)),	-- The Horseman's Hallowed Blade
+				traderstender(100, i(247717)),	-- The Horseman's Hallowed Bulwark
+				traderstender(260, i(247712)),	-- The Horseman's Hallowed Great Blade
+				traderstender(125, i(250310)),	-- Theif's Notched Blade
 			}),
 		})),
 	}),

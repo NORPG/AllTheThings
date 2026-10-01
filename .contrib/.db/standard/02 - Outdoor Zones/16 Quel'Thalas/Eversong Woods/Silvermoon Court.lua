@@ -50,9 +50,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 					}, {	-- RENOWN 10 --
 						q(94816, {	-- Fine Fashion Funding
-							["groups"] = {
-								i(FINERY_FUNDS),
-							},
+							i(FINERY_FUNDS),
 						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --

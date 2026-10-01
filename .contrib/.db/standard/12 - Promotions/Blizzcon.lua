@@ -215,45 +215,45 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["u"] = REAL_MONEY,
 	}),
 
-	-- Blizzcon 2026 Collection	-- TODO: removed September 28, 2026
+	-- Blizzcon 2026 Collection
 	iensemble(276872, {	-- Ensemble: Garb of the Dawnfire Phoenix (COSMETIC!)
 		["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
-		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
 		["u"] = REAL_MONEY,
 	}),
 	i(274150, {	-- Murk'atath (PET!)
 		["description"] = "Received after buying the Blizzcon 2026 Ultimate Bundle.",
-		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
 		["u"] = REAL_MONEY,
 	}),
 	i(276873, {	-- Perch of the Dawnfire Phoenix (DECOR!)
 		["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
-		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
 		["u"] = REAL_MONEY,
 	}),
 	i(274260, {	-- Rabbit'ath (MOUNT!)
 		["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
-		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
 		["u"] = REAL_MONEY,
 	}),
 	-- 2 Hours: 200x Trader's Tender
 	i(263303, {	-- Cuddly Blue Grrgle (DECOR!)
 		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
 		["u"] = IGNORED_VALUE,
 	}),
 	i(263449, {	-- Fluffy Comfy Flying Quilt (MOUNT!)
 		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
 		["u"] = IGNORED_VALUE,
 	}),
 	i(279590, {	-- Venomous Champion's Illustrious Banner (TOY!)
 		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
 		["u"] = IGNORED_VALUE,
 	}),
 	ach(63685, {	-- BlizzCon 2026
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
 		["u"] = IGNORED_VALUE,
 		["groups"] = { i(281107, { ["u"] = IGNORED_VALUE }) },	-- BlizzCon Doormat (DECOR!)
 	}),

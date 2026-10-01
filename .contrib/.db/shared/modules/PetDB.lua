@@ -4659,6 +4659,7 @@ i(246723, 4860);	-- Unfazed Diver
 -- PATCH 12.1.0 --
 ------------------
 i(278231, 5124);	-- Aquatic Clockwork Quacker
+i(277282, 5115);	-- Archmage's Familiar
 i(270248, 5035);	-- Autumn Snapling
 i(280189, 5134);	-- Cauldron Concoction
 i(270254, 5031);	-- Caustic Writhling
@@ -4698,7 +4699,6 @@ i(277318, 5116);	-- Catsramas
 i(277319, 5117);	-- Cat'Thuzad
 i(0, 5061);		-- Crabbers
 i(274925, 5067);	-- Delta
-i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
 i(277321, 5118);	-- Mewkahen
 i(279197, 5129);	-- Slitherfang
