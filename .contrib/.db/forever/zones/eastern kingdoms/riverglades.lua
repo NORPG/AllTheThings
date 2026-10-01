@@ -10,6 +10,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		n(ACHIEVEMENTS, {
 			ach(62354),	-- Explore Riverglades
 		}),
+		n(EXPLORATION, {
+			exploration(16726),	-- Bolder'ok
+			exploration(16737),	-- Bristle Hills
+			exploration(16734),	-- Elbrim's Farm
+			exploration(16724),	-- Farholde Keep
+			exploration(16727),	-- Powderfuse Port
+			exploration(16743),	-- Rog'mar
+			exploration(16723),	-- Sunnyglade
+			exploration(16729),	-- Terral's Watch
+			exploration(16725),	-- Wheeler's Grange
+			exploration(16731),	-- Windstead
+		}),
 		n(FACTIONS, {
 			faction(2826, {	-- Brotherhood of the Horse
 				races = ALLIANCE_ONLY,
