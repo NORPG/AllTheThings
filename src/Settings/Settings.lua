@@ -746,30 +746,26 @@ settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
 
 	-- need to allow some suffixes from old Retail to new common ones
 	local points = profileWindows[suffix] or profileWindows[OldSuffixConversion[suffix]]
-	local window = app.Windows[suffix]
 	-- app.PrintDebug("GetWindowSettingsFromProfile",suffix,OldSuffixConversion[suffix],points,window)
-	if window then
-		if RawSettings then
-			windowSettings.scale = settings:GetTooltipSetting(suffix == "Prime" and "MainListScale" or "MiniListScale") or 1
+	-- should be a Global setting but can deal with the conversion when Layouts become a thing
+	windowSettings.scale = settings:GetTooltipSetting(suffix == "Prime" and "MainListScale" or "MiniListScale") or 1
+	if points then
+		-- TODO: this is only 1 point
+		for _,point in ipairs(points) do
+			windowSettings.point = point.Point
+			windowSettings.relativeTo = nil
+			windowSettings.relativePoint = point.PointRef
+			windowSettings.x = point.X
+			windowSettings.y = point.Y
 		end
-		if points then
-			-- TODO: this is only 1 point
-			for _,point in ipairs(points) do
-				windowSettings.point = point.Point
-				windowSettings.relativeTo = nil
-				windowSettings.relativePoint = point.PointRef
-				windowSettings.x = point.X
-				windowSettings.y = point.Y
-			end
-			windowSettings.width = points.Width
-			windowSettings.height = points.Height
-			windowSettings.visible = points.visible
-			windowSettings.isLocked = points.Locked
-		end
-		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
-		windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
-		windowSettings.borderColor = { rBd, gBd, bBd, aBd }
+		windowSettings.width = points.Width
+		windowSettings.height = points.Height
+		windowSettings.visible = points.visible
+		windowSettings.isLocked = points.Locked
 	end
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
+	windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
+	windowSettings.borderColor = { rBd, gBd, bBd, aBd }
 end
 -- TEMP function to ensure profile is updated with any changed window layouts which already exist in a Profile
 -- Eventually moving to a Layout system

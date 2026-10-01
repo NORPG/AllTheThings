@@ -3012,7 +3012,7 @@ function app:CreateMiniListForGroup(group)
 		--Debugging = true,
 		Preload = true,
 		Defaults = {
-			["visible"] = true,
+			visible = true,
 		},
 		OnInit = function(self)
 			OnInitForPopout(self, (group.OnPopout and group:OnPopout()) or group)
