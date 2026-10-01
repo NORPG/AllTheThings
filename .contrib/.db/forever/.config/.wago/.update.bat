@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=1.60.1.70124
+SET BUILD=1.60.1.70170
 
 @REM Download new file versions
 call :download Achievement
@@ -88,7 +88,7 @@ exit /b
 :downloadcleaned
 call :download %1
 echo Cleaning %1...
-cd "..\..\..\..\..\.tools\"
+cd "..\..\..\..\.tools\"
 call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
 cd /d "%~dp0"
 exit /b

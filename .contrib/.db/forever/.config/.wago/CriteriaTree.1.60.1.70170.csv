@@ -221,22 +221,22 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 95516,,95515,1,0,53401,0,0
 95610,"The Immortal",0,0,4,0,0,0
 95611,,95610,0,0,53412,0,0
-121217,,0,42000,7,0,0,0
-121218,"Exalted with Silverwing Sentinels",121217,42000,0,5334,0,0
-121219,"Exalted with Wintersaber Trainers",121217,42000,0,5338,0,0
-121220,"Exalted with Valiance Expedition",121217,42000,0,5339,0,0
-121221,"Exalted with The Silver Covenant",121217,42000,0,5340,0,0
-121222,"Exalted with Ironforge",121217,42000,0,5330,0,0
-121223,"Exalted with Stormpike Guard",121217,42000,0,5335,0,0
-121224,"Exalted with Exodar",121217,42000,0,5332,0,0
-121225,"Exalted with Honor Hold",121217,42000,0,5336,0,0
-121226,"Exalted with Explorers' League",121217,42000,0,5341,0,0
-121227,"Exalted with Darnassus",121217,42000,0,5328,0,0
-121228,"Exalted with Gnomergan",121217,42000,0,5329,0,0
-121229,"Exalted with The League of Arathor",121217,42000,0,5333,0,0
-121230,"Exalted with Kurenai",121217,42000,0,5337,0,0
+121217,"Most Alliance Factions at Exalted",0,42000,7,0,0,0
+121218,"Exalted with Silverwing Sentinels",121217,42000,0,5334,6,0
+121219,"Exalted with Wintersaber Trainers",121217,42000,0,5338,12,0
+121220,"Exalted with Valiance Expedition",121217,42000,0,5339,3,0
+121221,"Exalted with The Silver Covenant",121217,42000,0,5340,2,0
+121222,"Exalted with Ironforge",121217,42000,0,5330,4,0
+121223,"Exalted with Stormpike Guard",121217,42000,0,5335,7,0
+121224,"Exalted with Exodar",121217,42000,0,5332,9,0
+121225,"Exalted with Honor Hold",121217,42000,0,5336,13,0
+121226,"Exalted with Explorers' League",121217,42000,0,5341,14,0
+121227,"Exalted with Darnassus",121217,42000,0,5328,10,0
+121228,"Exalted with Gnomeregan",121217,42000,0,5329,5,0
+121229,"Exalted with The League of Arathor",121217,42000,0,5333,8,0
+121230,"Exalted with Kurenai",121217,42000,0,5337,1,0
 121231,"Exalted with Stormwind",121217,42000,0,5331,0,0
-121232,"Exalted with The Sunreavers",121217,42000,0,5342,0,0
+121232,"Exalted with The Sunreavers",121217,42000,0,5342,11,0
 121233,"Explore Alterac Mountains",0,0,4,0,0,0
 121234,"Ruins of Alterac",121233,1,0,957,7,0
 121235,"Chillwind Point",121233,1,0,944,9,0
@@ -369,25 +369,26 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121773,"Warsong Gulch Mageweave Bandage",121744,1,0,3322,0,0
 121774,"Runecloth Bandage",121744,1,0,3319,0,0
 121781,"Total Killing Blows",121780,0,0,5529,0,0
-121784,,0,400,7,0,0,0
-121785,Guns,121784,400,0,5583,0,0
-121786,Axes,121784,400,0,5578,0,0
-121787,"Two-Handed Axes",121784,400,0,5579,0,0
-121788,Maces,121784,400,0,5580,0,0
-121789,"Two-Handed Maces",121784,400,0,5581,0,0
-121790,"Fist Weapons",121784,400,0,5582,0,0
-121791,Blows,121784,400,0,5584,0,0
-121792,Daggers,121784,400,0,5585,0,0
+121784,"Weapon skills at maximum skill",0,400,7,0,0,0
+121785,Guns,121784,400,0,5583,14,0
+121786,Axes,121784,400,0,5578,4,0
+121787,"Two-Handed Axes",121784,400,0,5579,12,0
+121788,Maces,121784,400,0,5580,15,0
+121789,"Two-Handed Maces",121784,400,0,5581,7,0
+121790,"Fist Weapons",121784,400,0,5582,13,0
+121791,Bows,121784,400,0,5584,5,0
+121792,Daggers,121784,400,0,5585,3,0
 121793,Wands,121784,400,0,5586,0,0
-121794,Thrown,121784,400,0,5587,0,0
-121795,Crossbows,121784,400,0,5588,0,0
-121796,Unarmed,121784,400,0,5589,0,0
-121797,Polearms,121784,400,0,5590,0,0
-121798,Swords,121784,400,0,5576,0,0
-121799,"Two-Handed Swords",121784,400,0,5577,0,0
-121800,Staves,121784,400,0,5591,0,0
-121802,"Kill an NPC that yields XP",121801,0,0,4946,0,0
-121803,"Honroable Kills",121801,0,0,9160,0,0
+121794,Thrown,121784,400,0,5587,2,0
+121795,Crossbows,121784,400,0,5588,1,0
+121796,Unarmed,121784,400,0,5589,8,0
+121797,Polearms,121784,400,0,5590,9,0
+121798,Swords,121784,400,0,5576,6,0
+121799,"Two-Handed Swords",121784,400,0,5577,10,0
+121800,Staves,121784,400,0,5591,11,0
+121801,"Total kills that grant experience or honor",0,0,5,0,0,0
+121802,"Kill an NPC that yields XP",121801,0,0,4946,1,0
+121803,"Honorable Kills",121801,0,0,9160,0,0
 121810,"Nagrand 5v5 Matches",121809,0,0,8596,0,0
 121811,"Blade's Edge 5v5 Matches",121809,0,0,5723,0,0
 121812,"Dalara 5v5 Matches",121809,0,0,8595,0,0
@@ -933,6 +934,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122864,"Crunchy Serpent",122443,0,0,6553,66,2
 122865,"Mag'har Mild Cheese",122443,0,0,6873,67,2
 122873,"Gold from vendors",122872,0,0,3361,0,8
+122874,,0,42000,7,0,0,0
 122875,"Exlated with the Sha'tar",122874,42000,0,4764,0,0
 122876,"Exlated with the Scale of the Sands",122874,42000,0,4766,0,0
 122877,"Exlated with Cenarion Expedition",122874,42000,0,4751,0,0
@@ -2466,6 +2468,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128206,"Exlated with the Oracles",128200,42000,0,4740,0,0
 128207,"Exlated with the Kirin Tor",128200,42000,0,4742,0,0
 128208,"Exlated with the Hand of Vengeance",128200,42000,0,5325,0,0
+128516,Thaddius,128515,1,0,5119,0,0
 128209,"Exlated with the Silver Convenant",128200,42000,0,5340,0,0
 128210,"Exlated with the Taunka",128200,42000,0,5326,0,0
 128211,"Exlated with the Wyrmrest Accord",128200,42000,0,4741,0,0
@@ -2547,7 +2550,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128509,"Cooking recipes known",128508,0,0,7221,0,0
 128510,"Cooking recipes known",128508,0,0,6393,0,0
 128514,Anub'Rekhan,128513,1,0,5111,0,0
-128516,Thaddius,128515,1,0,5119,0,0
 128518,"<NYI> Need to hook up event",128517,1,0,5121,0,0
 128519,"The Four Horsemen",128517,1,0,7805,0,0
 128548,"Algalon the Observer",128547,1,0,10566,0,0
@@ -4798,7 +4800,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 133797,,133796,0,0,13425,0,0
 133799,,133798,0,0,13426,0,0
 133882,"Disenchant rolls made on loot",133881,0,0,13258,0,0
-168235,"The Molten Core",168234,1,0,69971,0,0
 133884,"Isle of Conquest Honorable Kills",133883,0,0,13260,0,0
 133890,Halion,133889,1,0,13465,0,2
 133892,Halion,133891,1,0,13466,0,2
@@ -4878,6 +4879,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 168117,"S03 - P5 - Speak With Fallen Syndicate Member",0,0,4,0,0,4096
 168118,,168117,1,0,69926,0,0
 168234,"The Molten Core kills (Molten Core)",0,0,4,0,0,0
+168235,"The Molten Core",168234,1,0,69971,0,0
 168721,"S03 - Mage Epic Staff Quest - Translate Fire Scroll",0,0,4,0,0,4098
 168722,,168721,0,0,70332,0,0
 168723,"S03 - Mage Epic Staff Quest - Imbue Essence of Fire",0,0,4,0,0,4098
@@ -5337,7 +5339,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230779,"Master Spelunker",0,0,4,0,0,32
 230780,"Razorfen Downs",230779,1,0,18530,0,0
 230781,Uldaman,230779,1,0,18531,1,0
-230782,Zul'farrak,230779,1,0,3265,2,0
+230782,Zul'Farrak,230779,1,0,3265,2,0
 230783,Maraudon,230779,1,0,18532,3,0
 230784,"Alcaz Prison",230779,1,0,116057,4,0
 230785,"The Temple of Atal'Hakkar",230779,1,0,18533,5,0
@@ -5347,9 +5349,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230789,Scholomance,230779,1,0,19263,10,0
 230790,"Stratholme: Live",230779,1,0,550,11,0
 230791,"Stratholme: Dead",230779,1,0,18471,12,0
-230792,"Diremaul: East",230779,1,0,545,13,0
-230793,"Diremaul: North",230779,1,0,18535,14,0
-230794,"Diremaul: West",230779,1,0,546,15,0
+230792,"Dire Maul: East",230779,1,0,545,13,0
+230793,"Dire Maul: North",230779,1,0,18535,14,0
+230794,"Dire Maul: West",230779,1,0,546,15,0
 230795,"The Shaper's Terrace",230779,1,0,116056,16,0
 230796,"Blackmaw Hold",230779,1,0,116055,7,0
 230797,"Kill Onyxia",0,0,4,0,0,0
@@ -5361,7 +5363,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230803,Amethrax,230799,1,0,116064,4,0
 230804,"Well of Sorrow",230799,1,0,116065,3,0
 230805,"Del'lynar Songwood",230799,1,0,116066,5,0
-230806,"Deepscar Matriarch",230799,1,0,116067,0,0
+230806,Chillhowl,230799,1,0,116067,0,0
 230807,"Ravus and Darlissa",230799,1,0,116068,6,0
 230811,"Complete Hyjal Summit",0,0,4,0,0,0
 230812,Bandalar,230811,1,0,116081,0,0
@@ -5377,9 +5379,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230822,"Council of Thorns",230811,1,0,116072,10,0
 230823,"Nythus the Dreambound",230811,1,0,116071,11,0
 230824,"The Wild King",230811,1,0,116070,12,0
-230971,"Kill Edwin Vancleef",0,1,5,0,0,0
-230972,"Edwin Vancleef",230971,1,0,3262,0,2
-230973,"Kill Rathmael",0,1,5,0,0,0
+230971,"Kill Edwin VanCleef",0,1,5,0,0,0
+230972,"Edwin VanCleef",230971,1,0,3262,0,2
+230973,"Kill Rath'mael",0,1,5,0,0,0
 230974,Rath'mael,230973,1,0,116049,0,2
 230975,"Kill Shade of the Archmage",0,1,5,0,0,0
 230976,"Shade of the Archmage",230975,1,0,116050,0,2
@@ -5604,6 +5606,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234123,"225 Tailoring Skill",234122,225,0,117726,0,1
 234125,"300 Tailoring Skill",234124,300,0,117726,0,1
 234127,,234126,1,0,117727,0,0
+234128,"Explore Azeroth - Account Wide",0,0,4,0,0,0
 234129,Explorer,234128,1,0,117728,0,0
 234131,"Ruins of Lordaeron",234130,1,0,117729,1,0
 234132,"Excavation Site: Wetlands",234130,1,0,117730,5,0
@@ -5623,7 +5626,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234147,"Krol'dok Stronghold",234137,1,0,117744,9,0
 234149,"Razorfen Downs",234148,1,0,117745,0,0
 234150,Uldaman,234148,1,0,117746,1,0
-234151,Zul'farrak,234148,1,0,117747,2,0
+234151,Zul'Farrak,234148,1,0,117747,2,0
 234152,Maraudon,234148,1,0,117748,3,0
 234153,"Alcaz Prison",234148,1,0,117749,4,0
 234154,"The Temple of Atal'Hakkar",234148,1,0,117750,5,0
@@ -5633,9 +5636,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234158,Scholomance,234148,1,0,117754,10,0
 234159,"Stratholme: Live",234148,1,0,117755,11,0
 234160,"Stratholme: Dead",234148,1,0,117756,12,0
-234161,"Diremaul: East",234148,1,0,117757,13,0
-234162,"Diremaul: North",234148,1,0,117758,14,0
-234163,"Diremaul: West",234148,1,0,117759,15,0
+234161,"Dire Maul: East",234148,1,0,117757,13,0
+234162,"Dire Maul: North",234148,1,0,117758,14,0
+234163,"Dire Maul: West",234148,1,0,117759,15,0
 234164,"The Shaper's Terrace",234148,1,0,117760,16,0
 234165,"Blackmaw Hold",234148,1,0,117761,7,0
 234167,Bandalar,234166,1,0,117762,0,0
@@ -5657,7 +5660,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234184,Amethrax,234180,1,0,117778,4,0
 234185,"Well of Sorrow",234180,1,0,117779,3,0
 234186,"Del'lynar Songwood",234180,1,0,117780,5,0
-234187,"Deepscar Matriarch",234180,1,0,117781,0,0
+234187,Chillhowl,234180,1,0,117781,0,0
 234188,"Ravus and Darlissa",234180,1,0,117782,6,0
 234190,,234189,3,0,117783,0,0
 234192,,234191,7,0,117783,0,0
@@ -5746,10 +5749,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234976,"Player Learns or Knows Apprentice Riding",234975,0,0,118169,0,0
 234977,"Player Learns or Knows Journeyman Riding [Dwarf]",0,0,4,0,0,4096
 234978,"Player Learns or Knows Journeyman Riding",234977,0,0,118170,0,0
-235075,"New Criteria Tree",0,0,4,0,0,0
+235075,"Darkspear Islands victories",0,0,4,0,0,0
 235076,"Darkspear Island victories",235075,0,0,118228,0,0
 235077,"Darkspear Islands",0,0,4,0,0,0
 235078,"Darkspear Islands",235077,0,0,118229,0,0
+235079,"New Criteria Tree",0,0,4,0,0,0
 235080,,235079,0,0,118229,0,0
 235082,"Darkspear Islands Honorable Kills",235081,0,0,118230,0,0
 235084,"Darkspear Island Killing Blows",235083,0,0,118231,0,0
@@ -5760,6 +5764,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235098,"40-man raids run",235097,0,0,118238,0,0
 235099,"40 man raids",0,0,5,0,0,0
 235100,,235099,0,0,8838,0,0
+235217,"[DNT] Learn Flight Path - A - Westfall, Sentinel Hill",0,0,4,0,0,0
+235218,,235217,1,0,118305,0,2
+235219,"[DNT] Learn Flight Path - A - Stormwind, Elwynn",0,0,4,0,0,0
+235220,,235219,1,0,118306,0,2
+235221,"[DNT] Learn Flight Path - A - Refuge Pointe, Arathi",0,0,4,0,0,0
+235222,,235221,1,0,118307,0,2
+235223,"[DNT] Learn Flight Path - A - Menethil Harbor, Wetlands",0,0,4,0,0,0
+235224,,235223,1,0,118308,0,2
+235225,"[DNT] Learn Flight Path - A - Powderfuse Port, Riverglades",0,0,4,0,0,0
+235226,,235225,1,0,118309,0,2
+235227,"[DNT] Learn Flight Path - A - Farholde Keep, Riverglades",0,0,4,0,0,0
+235228,,235227,1,0,118310,0,2
+235229,"[DNT] Learn Flight Path - A - Lakeshire, Redridge",0,0,4,0,0,0
+235230,,235229,1,0,118311,0,2
+235231,"[DNT] Learn Flight Path - A - Southshore, Hillsbrad",0,0,4,0,0,0
+235232,,235231,1,0,118312,0,2
+235233,"[DNT] Learn Flight Path - A - Darkshire, Duskwood",0,0,4,0,0,0
+235234,,235233,1,0,118313,0,2
 18064,,0,0,4,0,0,0
 18070,,0,0,4,0,0,0
 18143,,0,0,4,0,0,0
@@ -6310,9 +6332,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 133893,,0,0,4,0,0,0
 133895,,0,0,4,0,0,0
 82062,server-only,0,0,4,0,0,2
-122874,,0,42000,7,0,0,0
-122893,,0,42000,7,0,0,0
-128200,,0,42000,7,0,0,0
 125754,,0,0,6,0,0,0
 126170,,0,0,6,0,0,0
 126745,,0,0,6,0,0,0
@@ -6326,7 +6345,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130975,,0,0,6,0,0,0
 132036,,0,0,6,0,0,0
 132873,,0,0,6,0,0,0
-121801,,0,0,5,0,0,0
 121809,,0,0,5,0,0,0
 121815,,0,0,5,0,0,0
 121821,,0,0,5,0,0,0
@@ -6358,6 +6376,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128330,,0,1,6,0,0,0
 129100,,0,1,6,0,0,0
 130283,,0,1,6,0,0,0
+122893,,0,42000,7,0,0,0
+128200,,0,42000,7,0,0,0
 123834,,0,1,5,0,0,0
 123966,,0,1,5,0,0,0
 125419,,0,1,5,0,0,0
@@ -6466,7 +6486,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 222670,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
 223703,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
 223257,"1.60 Legendary - Solo Encounter Completed (Tracking Quest)",0,0,4,0,0,4096
-234128,"Exploer Azeroth - Account Wide",0,0,4,0,0,0
 225092,"1.60.0 - Warlock - Quest - Fel Rites - Survived the Ritual",0,0,4,0,0,4098
 225212,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 227678,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
@@ -6598,7 +6617,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234951,"Player Learns or Knows Apprentice Riding [Skyborne]",0,0,4,0,0,4096
 233726,"Win Darkspear Islands while controlling all four bases",0,0,4,0,0,4096
 233756,"Win Darkspear Islands while controlling at least three bases",0,0,4,0,0,4096
-235079,"New Criteria Tree",0,0,4,0,0,0
 235081,"New Criteria Tree",0,0,4,0,0,0
 235083,"New Criteria Tree",0,0,4,0,0,0
 235085,"New Criteria Tree",0,0,4,0,0,0
