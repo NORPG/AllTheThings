@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blizzard API Harvester", "Blizzard API Harvester.csproj", "{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blizzard API Harvester", "Blizzard_API_Harvester.csproj", "{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classic Item Detector", "..\Classic Item Detector\Classic Item Detector.csproj", "{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classic Item Detector", "..\Classic_Item_Detector\Classic_Item_Detector.csproj", "{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item DB Compare Tool", "..\Item DB Compare Tool\Item DB Compare Tool.csproj", "{EC726264-8DB9-4DA1-811E-240E9D65AF6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item DB Compare Tool", "..\Item_DB_Compare_Tool\Item_DB_Compare_Tool.csproj", "{EC726264-8DB9-4DA1-811E-240E9D65AF6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
