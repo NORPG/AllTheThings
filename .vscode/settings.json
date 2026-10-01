@@ -22,11 +22,14 @@
     "Lua.workspace.ignoreDir": [
         ".vscode",
         "db",
+        ".config/.exports",
+        ".contrib/.source",
         ".contrib/.raw/ItemDB",
         ".contrib/.db/standard/00 - Item DB",
         ".contrib/.db/standard/00 - DB/AssetDB",
         ".contrib/.db/shared/objects/ObjectDB.lua",
-        ".contrib/.db/standard/00 - DB/ReagentsDB.Retail.lua"
+        ".contrib/.db/standard/00 - DB/ReagentsDB.Retail.lua",
+        "Debugging/"
     ],
     "Lua.diagnostics.enable": false,
     "Lua.diagnostics.ignoredFiles": "Disable",
