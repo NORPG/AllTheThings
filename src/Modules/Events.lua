@@ -151,6 +151,11 @@ local function GetEventCache()
 		return cache;
 	end
 
+	-- Calendar is secret while in combat keklol, so just don't build a new cache if that's the case...
+	if InCombatLockdown() then
+		return {lease = 0}
+	end
+
 	-- Create a new cache with a week long lease (24hr for Git)
 	cache = {
 		lease = now + (app.Version == "[Git]" and 86400 or 604800),
