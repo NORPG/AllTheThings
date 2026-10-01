@@ -63,12 +63,6 @@ app.MergeObjects,
 app.NestObjects,
 app.PriorityNestObjects
 
--- Coroutine Helper Functions
-app.FillRunner = app.CreateRunner("fill");
-
--- Data Lib
-local AllTheThingsAD = {};			-- For account-wide data.
-
 do
 local ContainsLimit, ContainsExceeded;
 --- @type function,function
@@ -1226,34 +1220,30 @@ end
 app.AddEventHandler("OnNewPopoutGroup", BuildSourceParent)
 end)();
 
+-- Main Data
+-- Initial Data Loading Events
+-- TODO: with Progressive loading, these cache events might also need to be per-frame spread...
+app.AddEventHandler("OnHiddenDataCached", function(categories)
+	for key,category in pairs(categories) do
+		--print("Found Hidden Category:", key);
+		category.RootCategory = key;
+		-- hidden data fields are only cached when hooked to a Window
+	end
+end)
+app.AddEventHandler("OnDataCached", function(categories, rootData)
+	for key,category in pairs(categories) do
+		--print("Found Category:", key);
+		category.RootCategory = key;
+		NestObject(rootData, category)
+	end
 
-
-do	-- Main Data
-
-do -- Initial Data Loading Events
-	-- TODO: with Progressive loading, these cache events might also need to be per-frame spread...
-	app.AddEventHandler("OnHiddenDataCached", function(categories)
-		for key,category in pairs(categories) do
-			--print("Found Hidden Category:", key);
-			category.RootCategory = key;
-			-- hidden data fields are only cached when hooked to a Window
-		end
-	end)
-	app.AddEventHandler("OnDataCached", function(categories, rootData)
-		for key,category in pairs(categories) do
-			--print("Found Category:", key);
-			category.RootCategory = key;
-			NestObject(rootData, category)
-		end
-
-		-- app.PrintMemoryUsage()
-		-- app.PrintDebug("Begin Cache Prime")
-		app.AssignChildren(rootData);
-		app.CacheFields(rootData);
-		-- app.PrintDebugPrior("Ended Cache Prime")
-		-- app.PrintMemoryUsage()
-	end)
-end
+	-- app.PrintMemoryUsage()
+	-- app.PrintDebug("Begin Cache Prime")
+	app.AssignChildren(rootData);
+	app.CacheFields(rootData);
+	-- app.PrintDebugPrior("Ended Cache Prime")
+	-- app.PrintMemoryUsage()
+end)
 
 function app:GetDatabaseRoot()
 	-- app.PrintMemoryUsage("app:GetDatabaseRoot init")
@@ -1330,31 +1320,6 @@ function app:GetDatabaseRoot()
 	return rootData;
 end
 
-end	-- Dynamic/Main Data
---[[ -- achievement_criteria symlink is obsolete
-local function PrePopulateAchievementSymlinks()
-	local achCache = app.GetRawFieldContainer("achievementID")
-	-- app.PrintDebug("FillAchSym")
-	if achCache then
-		local FillSym = app.FillAchievementCriteriaAsync
-		app.FillRunner.SetPerFrame(500)
-		local Run = app.FillRunner.Run
-		local group
-		for achID,groups in pairs(achCache) do
-			for i=1,#groups do
-				group = groups[i]
-				if group.__type == "Achievement" and not GetRelativeValue(group, "sourceIgnored") then
-					-- app.PrintDebug("FillAchSym",group.hash)
-					Run(FillSym, group)
-				end
-			end
-		end
-		app.FillRunner.SetPerFrame(25)
-	end
-	-- app.PrintDebug("Done:FillAchSym")
-end
-app.AddEventHandlerOnce("OnRefreshCollectionsDone", PrePopulateAchievementSymlinks)--]]
-
 app.AddEventHandler("OnReady", function()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
@@ -1363,7 +1328,7 @@ end);
 -- Startup Event
 app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	-- Old Saved Variables
-	AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
+	local AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
@@ -1396,32 +1361,16 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	if app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 	if app.Class then currentCharacter.class = app.Class; end
 	if app.Race then currentCharacter.race = app.Race; end
-	if not currentCharacter.Achievements then currentCharacter.Achievements = {}; end
 	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
-	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Professions then currentCharacter.Professions = {}; end
 	app.CurrentCharacter = currentCharacter;
 	app.AddEventHandler("OnPlayerLevelUp", function()
 		currentCharacter.lvl = app.Level;
 	end);
 
-	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
-	local currentQuestsCache = currentCharacter.Quests;
-	for questID,completion in pairs(currentQuestsCache) do
-		if completion == 2 then currentQuestsCache[questID] = nil; end
-	end
-
 	-- Account Wide Data Storage
 	local accountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
-	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
-	if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
-	if not accountWideData.Exploration then accountWideData.Exploration = {}; end
-	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
-	if not accountWideData.Quests then accountWideData.Quests = {}; end
-	if not accountWideData.Spells then accountWideData.Spells = {}; end
-	if not accountWideData.Titles then accountWideData.Titles = {}; end
-	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
 	-- Notify Event Handlers that Saved Variable Data is available.
 	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
@@ -1434,85 +1383,87 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	accountWideData.CommonItems = nil
 
 	-- Clean up other matching Characters with identical Name-Realm but differing GUID
-	local myGUID = app.GUID;
-	local myName, myRealm = currentCharacter.name, currentCharacter.realm;
-	local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
-	local otherName, otherRealm, otherText;
-	local toClean;
-	for guid,character in pairs(characterData) do
-		-- simple check on name/realm first
-		otherName = character.name;
-		otherRealm = character.realm;
-		otherText = character.text;
-		if guid ~= myGUID then
-			if otherName == myName and otherRealm == myRealm then
-				if toClean then tinsert(toClean, guid)
-				else toClean = { guid }; end
-			elseif otherText and otherText:match(myRegex) then
-				if toClean then tinsert(toClean, guid)
-				else toClean = { guid }; end
+	app.AddEventHandler("OnLoad", function()
+		local myGUID = app.GUID;
+		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
+		local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
+		local otherName, otherRealm, otherText;
+		local toClean;
+		for guid,character in pairs(characterData) do
+			-- simple check on name/realm first
+			otherName = character.name;
+			otherRealm = character.realm;
+			otherText = character.text;
+			if guid ~= myGUID then
+				if otherName == myName and otherRealm == myRealm then
+					if toClean then toClean[#toClean+1] = guid
+					else toClean = { guid } end
+				elseif otherText and otherText:match(myRegex) then
+					if toClean then toClean[#toClean+1] = guid
+					else toClean = { guid } end
+				end
 			end
 		end
-	end
-	if toClean then
-		local copyTables = { "Buildings","GarrisonBuildings","Factions","FlightPaths" };
-		local cleanCharacterFunc = function(guid)
-			-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
-			local character = characterData[guid];
-			for _,tableName in ipairs(copyTables) do
-				local copyTable = character[tableName];
-				if copyTable then
-					-- app.PrintDebug("Copying Dupe",tableName)
-					local currentTable = currentCharacter[tableName];
-					if not currentTable then
-						-- old/restored character missing copied data
-						currentTable = {}
-						currentCharacter[tableName] = currentTable
-					end
-					for ID,complete in pairs(copyTable) do
-						-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
-						if complete and not currentTable[ID] then
-							-- app.PrintDebug("Copied Completed",ID)
-							currentTable[ID] = complete;
+		if toClean then
+			local copyTables = { "Buildings","GarrisonBuildings","FlightPaths" };
+			local cleanCharacterFunc = function(guid)
+				-- copy the set of IDs from the duplicate character which are not easily refreshed
+				local character = characterData[guid];
+				for _,tableName in ipairs(copyTables) do
+					local copyTable = character[tableName];
+					if copyTable then
+						-- app.PrintDebug("Copying Dupe",tableName)
+						local currentTable = currentCharacter[tableName];
+						if not currentTable then
+							-- old/restored character missing copied data
+							currentTable = {}
+							currentCharacter[tableName] = currentTable
+						end
+						for ID,complete in pairs(copyTable) do
+							-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
+							if complete and not currentTable[ID] then
+								-- app.PrintDebug("Copied Completed",ID)
+								currentTable[ID] = complete;
+							end
 						end
 					end
 				end
+				-- Remove the actual dupe data afterwards
+				-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
+				local backups = accountWideData._CharacterBackups;
+				if not backups then
+					backups = {};
+					accountWideData._CharacterBackups = backups;
+				end
+				backups[guid] = character;
+				characterData[guid] = nil;
+				local count = 0
+				for guid,char in pairs(backups) do
+					count = count + 1
+				end
+				app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid,"[You have",count,"total character backups]")
+				app.print("Use '/att remove-deleted-character-backups help' for more info")
 			end
-			-- Remove the actual dupe data afterwards
-			-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
-			local backups = accountWideData._CharacterBackups;
-			if not backups then
-				backups = {};
-				accountWideData._CharacterBackups = backups;
+			for _,guid in ipairs(toClean) do
+				app.FunctionRunner.Run(cleanCharacterFunc, guid);
 			end
-			backups[guid] = character;
-			characterData[guid] = nil;
-			local count = 0
-			for guid,char in pairs(backups) do
-				count = count + 1
-			end
-			app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid,"[You have",count,"total character backups]")
-			app.print("Use '/att remove-deleted-character-backups help' for more info")
 		end
-		for _,guid in ipairs(toClean) do
-			app.FunctionRunner.Run(cleanCharacterFunc, guid);
-		end
-	end
 
-	-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
-	app.ChatCommands.Add("remove-deleted-character-backups", function(args)
-		local backups = 0
-		for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
-			backups = backups + 1
-		end
-		accountWideData._CharacterBackups = nil
-		app.print("Cleaned up",backups,"character backups!")
-		return true
-	end, {
-		"Usage : /att remove-deleted-character-backups",
-		"Allows permanently removing all deleted character backup data",
-		"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
-	})
+		-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
+		app.ChatCommands.Add("remove-deleted-character-backups", function(args)
+			local backups = 0
+			for guid,char in pairs(accountWideData._CharacterBackups or app.EmptyTable) do
+				backups = backups + 1
+			end
+			accountWideData._CharacterBackups = nil
+			app.print("Cleaned up",backups,"character backups!")
+			return true
+		end, {
+			"Usage : /att remove-deleted-character-backups",
+			"Allows permanently removing all deleted character backup data",
+			"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
+		})
+	end)
 
 	-- Initialize Settings
 	app.Settings:Initialize();

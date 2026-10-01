@@ -561,7 +561,7 @@ local function DirectGroupUpdate(group)
 			return
 		end
 		-- app.PrintDebug("Delayed DGU_Fill",app:SearchLink(group))
-		app.FillRunner.Run(DirectGroupUpdate, group)
+		Runner.Run(DirectGroupUpdate, group)
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate

@@ -325,6 +325,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	if not currentCharacter.PriorQuests then currentCharacter.PriorQuests = {} end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {} end
 
+	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
+	local currentQuestsCache = currentCharacter[CACHE]
+	for questID,completion in pairs(currentQuestsCache) do
+		if completion == 2 then currentQuestsCache[questID] = nil; end
+	end
+
 	ATTCharacterData = characterData;
 	OneTimeQuests = accountWideData.OneTimeQuests
 	local userignored = accountWideData.IGNORE_QUEST_PRINT
@@ -1093,6 +1099,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
 	end
 
+	-- Setup Retail PriorQuests
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 		-- convert cached quests into the current CompleteQuestSequence so unflagged quests can be properly tracked and reported at startup
 		local priorQuests = currentCharacter.PriorQuests
@@ -1129,6 +1136,7 @@ else	-- no C_QuestLog_GetAllCompletedQuestIDs
 			app.CallbackHandlers.DelayedCallback(SyncDirtyQuests, 0.5)
 		end
 	end
+	-- Setup Classic PriorQuests
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 		-- convert cached quests into the current RawQuests so they don't all appear 'dirty' on first refresh
 		local priorQuests = currentCharacter.PriorQuests

@@ -338,4 +338,5 @@ end
 
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
+	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
 end)

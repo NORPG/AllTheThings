@@ -942,35 +942,6 @@ app.ResolveSymbolicLink = ResolveSymbolicLink
 if app.__perf then
 	app.__perf.AutoCaptureTable(ResolveFunctions, "Symlink.ResolveFunctions");
 end
---[[ -- achievment_criteria symlink is obsolete
-local function ResolveSymlinkGroupAsync(group)
-	-- app.PrintDebug("RSGa",group.hash)
-	local groups = ResolveSymbolicLink(group);
-	group.sym = nil;
-	if groups then
-		PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
-		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
-		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
-		-- on the initial pass due to the async nature
-		app.FillGroups(group);
-		AssignChildren(group);
-		-- auto-expand the symlink group
-		app.ExpandGroupsRecursively(group, true);
-		app.DirectGroupUpdate(group);
-	end
-end
--- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
--- NOTE: ONLY performs the symlink for 'achievement_criteria'
-app.FillAchievementCriteriaAsync = function(o)
-	local sym = o.sym
-	if not sym then return end
-
-	local sym = sym[1][1]
-	if sym ~= "achievement_criteria" then return end
-
-	-- app.PrintDebug("resolve achievement_criteria",o.hash)
-	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
-end--]]
 
 local function GetRelativeFieldInSet(group, field, set)
 	if group then

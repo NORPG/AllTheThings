@@ -533,3 +533,7 @@ app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields,
 		return data;
 	end
 end);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter.Achievements then currentCharacter.Achievements = {} end
+	if not accountWideData.Achievements then accountWideData.Achievements = {} end
+end);
