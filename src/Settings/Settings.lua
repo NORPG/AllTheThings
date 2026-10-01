@@ -742,14 +742,18 @@ local OldSuffixConversion = {
 -- TEMP function to ensure profile is referenced for any custom window layouts which already exist in a Profile
 -- Eventually moving to a Layout system
 settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
+	-- should be a Global setting but can deal with the conversion when Layouts become a thing
+	windowSettings.scale = settings:GetTooltipSetting(suffix == "Prime" and "MainListScale" or "MiniListScale") or 1
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
+	windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
+	windowSettings.borderColor = { rBd, gBd, bBd, aBd }
+	-- app.PrintDebug("GetWindowSettingsFromProfile",suffix,OldSuffixConversion[suffix])
+
 	local profileWindows = RawSettings and RawSettings.Windows
 	if not profileWindows then return end
 
 	-- need to allow some suffixes from old Retail to new common ones
 	local points = profileWindows[suffix] or profileWindows[OldSuffixConversion[suffix]]
-	-- app.PrintDebug("GetWindowSettingsFromProfile",suffix,OldSuffixConversion[suffix],points,window)
-	-- should be a Global setting but can deal with the conversion when Layouts become a thing
-	windowSettings.scale = settings:GetTooltipSetting(suffix == "Prime" and "MainListScale" or "MiniListScale") or 1
 	if points then
 		-- TODO: this is only 1 point
 		for _,point in ipairs(points) do
@@ -764,9 +768,6 @@ settings.GetWindowSettingsFromProfile = function(suffix, windowSettings)
 		windowSettings.visible = points.visible
 		windowSettings.isLocked = points.Locked
 	end
-	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
-	windowSettings.backdropColor = { rBg, gBg, bBg, aBg }
-	windowSettings.borderColor = { rBd, gBd, bBd, aBd }
 end
 -- TEMP function to ensure profile is updated with any changed window layouts which already exist in a Profile
 -- Eventually moving to a Layout system
