@@ -594,6 +594,7 @@ settings.NewProfile = function(self, key)
 		local raw = {
 			General = {},
 			Tooltips = {},
+			Seasonal = {},
 			Unobtainable = {},
 			Filters = {},
 		}
