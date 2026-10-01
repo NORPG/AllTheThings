@@ -48,6 +48,10 @@ local ArtifactInfoUnlockedMeta = { __index = function(t,key)
 		if not id then return end
 
 		local unlocked = select(5, C_ArtifactUI_GetAppearanceInfoByID(id))
+		-- we can cache 'true' results
+		if unlocked then
+			t[5] = unlocked
+		end
 		return unlocked
 	end
 end}
@@ -226,8 +230,10 @@ end)
 app.AddEventHandlerOnce("OnRefreshCollections", function()
 	-- app.PrintDebug("OnRefreshCollections.Artifact.FRESH")
 	for key,value in pairs(ArtifactInfoStatic) do
-		-- wipe the unlock keys to allow metatable checks
-		value[5] = nil
+		-- wipe the 'false' unlock keys to allow metatable checks
+		if value[5] == false then
+			value[5] = nil
+		end
 	end
 	-- app.PrintDebugPrior("---- Done")
 end)
