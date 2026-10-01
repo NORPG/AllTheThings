@@ -68,8 +68,8 @@ local ExportWindowRowGroups = setmetatable({}, {
 app:CreateWindow("Export", {
 	Commands = {
 		"attexport",
-		-- "export",	-- TODO uncomment when fixing how commands are defined
 	},
+	RootCommands = { "export" },
 	OnInit = function(self, handlers)
 		local data = app.CreateRawText(L.EXPORT, {
 			-- icon = app.asset("Interface_Vendor"),
