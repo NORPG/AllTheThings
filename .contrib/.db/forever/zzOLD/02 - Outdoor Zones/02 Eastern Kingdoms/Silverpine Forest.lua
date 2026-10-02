@@ -732,15 +732,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
 					["coord"] = { 54.0, 82.2, MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-							20752,	-- Formula: Minor Mana Oil (RECIPE!)
-							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-						},
-					},
+					["sym"] = {{ "select","itemID",
+						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+						20752,	-- Formula: Minor Mana Oil (RECIPE!)
+						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+					}},
 					["groups"] = {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
@@ -750,17 +748,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				n(5757, {	-- Lilly <Enchanting Supplies>
 					["coord"] = { 43.0, 50.8, MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-							20752,	-- Formula: Minor Mana Oil (RECIPE!)
-							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-						},
-					},
+					["sym"] = {{ "select","itemID",
+						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+						20752,	-- Formula: Minor Mana Oil (RECIPE!)
+						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+					}},
 					["groups"] = {
-						i(6346),	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
+						i(6346),	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>

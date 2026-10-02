@@ -2917,6 +2917,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["groups"] = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
+			n(248199, {	-- Beneris <Enchanting>
+				["coord"] = { 49.6, 29.8, MAP.THE_BARRENS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
+			}),
 			n(3495, {	-- Gagsprocket <Engineering Goods>
 				["coord"] = { 62.7, 36.3, MAP.THE_BARRENS },
 				["groups"] = {

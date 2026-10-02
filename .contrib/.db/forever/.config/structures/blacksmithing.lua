@@ -1,7 +1,6 @@
 -------------------
 -- BLACKSMITHING --
 -------------------
-
 BLACKSMITHING_RECIPES = {
 	APPRENTICE = {
 		r(2018, {	-- Blacksmithing (Apprentice)

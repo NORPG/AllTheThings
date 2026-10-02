@@ -1391,7 +1391,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 		-- #endif
 			n(ZONE_DROPS, {
 				i(16244, {	-- Formula: Enchant Gloves - Greater Strength
-					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9198,	-- Spirestone Mystic
 				}),
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
@@ -2225,7 +2224,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- Danny Donkey: This is an ordinary drop from these mobs, not from Skinning.
 					}),
 					i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact (RECIPE!)
-						["timeline"] = { REMOVED_6_0_2 },
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
 					applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(24102, {	-- Manual of Eviscerate IX

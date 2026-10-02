@@ -681,15 +681,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 					["coord"] = { 44.9, 37.7, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-							20752,	-- Formula: Minor Mana Oil (RECIPE!)
-							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					},
+					["sym"] = {{ "select","itemID",
+						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+						20752,	-- Formula: Minor Mana Oil (RECIPE!)
+						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+						6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+					}},
 					["groups"] = {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,

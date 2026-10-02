@@ -79,7 +79,7 @@ root(ROOTS.WorldDrops, {
 					11984,	-- Cobalt Ring
 					11994,	-- Coral Band
 					12054,	-- Demon Band
-					6375,	-- Formula: Enchant Bracer - Lesser Versatility / CLASSIC: Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
+					6375,	-- Enchant Bracer - Lesser Spirit (RECIPE!)
 					5002,	-- Glowing Green Talisman
 					11969,	-- Jacinth Circle
 					6454,	-- Manual: Strong Anti-Venom (RECIPE!)
@@ -134,7 +134,7 @@ root(ROOTS.WorldDrops, {
 					"select", "itemID",
 					1728,	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 					16215,	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
-					16218,	-- Formula: Enchant Bracer Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
+					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 					14494,	-- Pattern: Brightcloth Pants (RECIPE!)
 					15746,	-- Pattern: Chimeric Leggings (RECIPE!)
 					15755,	-- Pattern: Chimeric Vest (RECIPE!)
@@ -300,7 +300,7 @@ root(ROOTS.WorldDrops, {
 					-- #endif
 					16215,	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					11225,	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
-					16218,	-- Formula: Enchant Bracer - Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
+					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 					11208,	-- Formula: Enchant Weapon - Demonslaying (RECIPE!)
 					8390,	-- Pattern: Big Voodoo Cloak (RECIPE!)
 					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
@@ -333,7 +333,7 @@ root(ROOTS.WorldDrops, {
 			i(4637, {	-- Steel Lockbox
 				["sym"] = { {
 					"select", "itemID",
-					11204,	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
+					11204,	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 					11202,	-- Formula: Enchant Shield - Stamina (RECIPE!)
 					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
 					8386,	-- Pattern: Big Voodoo Robe (RECIPE!)
@@ -354,7 +354,7 @@ root(ROOTS.WorldDrops, {
 			i(4636, {	-- Strong Iron Lockbox
 				["sym"] = { {
 					"select", "itemID",
-					11167,	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
+					11167,	-- Formula: Enchant Boots - Lesser Spirit (RECIPE!)
 					11165,	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 					7085,	-- Pattern: Azure Shoulders (RECIPE!)
 					7086,	-- Pattern: Earthen Silk Belt (RECIPE!)
@@ -422,7 +422,7 @@ root(ROOTS.WorldDrops, {
 					7552,	-- Falcon's Hook
 					12011,	-- Forest Loop
 					11225,	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
-					11204,	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
+					11204,	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 					11973,	-- Hematite Link
 					11987,	-- Iridium Circle
 					11999,	-- Lodestone Hoop

@@ -1,8 +1,7 @@
 local i = GetRecipeHelperForProfession(BLACKSMITHING);
-
------------------
---   CLASSIC   --
------------------
+-------------------
+-- BLACKSMITHING --
+-------------------
 --- TRAINER ---
 i(0, 2018);			-- Blacksmithing (Apprentice)
 i(0, 3100);			-- Blacksmithing (Journeyman)

@@ -439,61 +439,11 @@ root(ROOTS.Craftables, {
 	}),
 	prof(ENCHANTING, {
 		n(COMMON_VENDOR_ITEMS, {
-			["groups"] = appendAllGroups(
-				sharedData({	-- Enchanting supplies
-					["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[["coords"] = {
-						{ 60.8, 44.2, MAP.IRONFORGE },
-						{ 44.9, 37.7, MAP.THUNDER_BLUFF },
-						{ 62.0, 60.8, MAP.UNDERCITY },
-						{ 43.0, 64.2, MAP.STORMWIND_CITY },
-						{ 58.6, 14.7, MAP.DARNASSUS },
-						{ 53.6, 38.0, MAP.ORGRIMMAR },
-					},
-					["providers"] = {
-						{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
-						{ "n", 3346},	-- Kithas <Enchanting Supplies>
-						{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
-						{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
-						{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
-						{ "n", 4228},	-- Vaean <Enchanting Supplies>
-					},]]
-				},{
-					i(4470),	-- Simple Wood
-					i(11291),	-- Star Wood
-				}),
-				sharedData({	-- Runed Copper Rod reagents
-					-- Danny Donkey:	This structure is used for Vanilla content as well as BFA and onwards when professions
-					-- 					are split on an expansion-basis, but one still need to craft and use this basic rod.
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[["coords"] = {
-						{ 60.8, 44.2, MAP.IRONFORGE },
-						{ 44.9, 37.7, MAP.THUNDER_BLUFF },
-						{ 62.0, 60.8, MAP.UNDERCITY },
-						{ 43.0, 64.2, MAP.STORMWIND_CITY },
-						{ 58.6, 14.7, MAP.DARNASSUS },
-						{ 53.6, 38.0, MAP.ORGRIMMAR },
-					},
-					["providers"] = {
-						{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
-						{ "n", 3346},	-- Kithas <Enchanting Supplies>
-						{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
-						{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
-						{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
-						{ "n", 4228},	-- Vaean <Enchanting Supplies>
-					},]]
-				},{
-					i(6217, {	-- Copper Rod
-						["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-					}),
-					i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
-					i(10940, { ["isLimited"] = true, }),	-- Strange Dust
-				})
-			)
+			i(6217),	-- Copper Rod
+			i(4470),	-- Simple Wood
+			i(11291),	-- Star Wood
 		}),
 		header(HEADERS.Spell, 13262, {	-- Disenchant
-			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
 			-- Dust:
 			i(11176, {	-- Dream Dust
 				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
@@ -568,8 +518,9 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 		filter(MISC, {
-			i(12810),	-- Enchanted Leather
-			i(12655),	-- Enchanted Thorium Bar
+			i(20746),	-- Lesser Wizard Oil
+			i(20745),	-- Minor Mana Oil
+			i(20744),	-- Minor Wizard Oil
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(16207),	-- Runed Arcanite Rod
@@ -578,12 +529,17 @@ root(ROOTS.Craftables, {
 			i(6339),	-- Runed Silver Rod
 			i(11145),	-- Runed Truesilver Rod
 		}),
+		filter(REAGENTS, {
+			i(12810),	-- Enchanted Leather
+			i(12655),	-- Enchanted Thorium Bar
+		}),
 		filter(TRINKET_F, {
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
 		n(WEAPONS, {
 			i(11288),	-- Greater Magic Wand
-			i(11290),	-- Greater Mystic Wand
+			i(11290),	-- Greater Mystic Wand (Does not load?)
+			i(217287),	-- Greater Mystic Wand (SOD?)
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 		}),

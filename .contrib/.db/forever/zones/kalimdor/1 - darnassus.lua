@@ -964,7 +964,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				["coord"] = { 61.0, 17.7, MAP.DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection
+					i(11223, {	-- Formula: Enchant Bracer - Deflection (RECIPE!)
 						["isLimited"] = true,
 					}),
 					i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
@@ -1022,15 +1022,13 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4228, {	-- Vaean <Enchanting Supplies>
 				["coord"] = { 58.6, 14.7, MAP.DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
-				["sym"] = {
-					{ "select","itemID",
-						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-						20752,	-- Formula: Minor Mana Oil (RECIPE!)
-						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-						6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-					},
-				},
+				["sym"] = {{ "select","itemID",
+					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+					20752,	-- Formula: Minor Mana Oil (RECIPE!)
+					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+				}},
 			}),
 			n(4175, {	-- Vinasia <Cloth Armor Merchant>
 				["coord"] = { 60.7, 72.5, MAP.DARNASSUS },

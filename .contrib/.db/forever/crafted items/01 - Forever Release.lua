@@ -279,4 +279,55 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250615),	-- Thorium Poleaxe
 		}),
 	}),
+	prof(ENCHANTING, {
+		filter(REAGENTS, {
+			i(247786),	-- Mote of Magic
+		}),
+		filter(RELICS_F, {
+			i(220606),	-- Idol of the Dream
+			i(228175),	-- Libram of Holy Alacrity
+			i(249442),	-- Libram of Invocation
+			i(249396),	-- Mystic Mushroom
+			i(249398),	-- Polished Driftwood Icon
+			i(249441),	-- Talons of Wrath
+			i(249397),	-- Tenets of the Silver Hand
+			i(249443),	-- Totem of Ancestral Protectio
+			i(228176),	-- Totem of Thunder
+			-- Unknown
+			i(279250),	-- Idol of Swiftness
+			i(279251),	-- Idol of the Ursine Twins
+			i(279248),	-- Libram of Infusion
+			i(279247),	-- Steadfast Libram
+			i(279249),	-- Totem of Urgency
+		}),
+		filter(MISC, {
+			i(279987),	-- Arcane Forge
+			i(279985),	-- Arcane Salvager
+			i(279976),	-- Enchanted Lute
+		}),
+		filter(TRINKET_F, {
+			-- Unknown
+			i(249473),	-- Dormant Heart of the Mountain
+			i(249469),	-- Frozen Heart of the Mountain
+			i(249470),	-- Molten Heart of the Mountain
+		}),
+		n(WEAPONS, {
+			i(249385),	-- Brilliant Wand
+			i(249454),	-- Dreamstaff
+			i(249392),	-- Glimmering Staff
+			i(247789),	-- Novice's Practice Wand
+			i(249394),	-- Orb of Mystic Insight
+			i(249395),	-- Orb of Souls
+			i(249453),	-- Radiant Staff
+			i(249393),	-- Soulstaff
+			i(249455),	-- Truesilver Conduit
+			i(249144),	-- Twisted Nether Wand
+			i(249456),	-- Twisting Essence Jar
+			-- unknown
+			i(249234),	-- Dreambough Wand
+			i(249237),	-- Greater Eternal Wand
+			i(249232),	-- Lesser Eternal Wand
+			i(279246),	-- Torch of Light
+		}),
+	}),
 }));

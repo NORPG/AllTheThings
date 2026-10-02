@@ -440,6 +440,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			exploration(120),	-- Westbrook Garrison
 		}),
+		n(PROFESSIONS, {
+			prof(ENCHANTING, {
+				n(11072, {	-- Kitta Firewind <Artisan Enchanter>
+					coord = { 64.8, 70.6, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					groups = ENCHANTING_RECIPES.EXPERT,
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(5545, {	-- A Bundle of Trouble
 				qg = 10616,	-- Supervisor Raelen

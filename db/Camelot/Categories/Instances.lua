@@ -3441,13 +3441,11 @@ q(4324,{coords={
 h(-58,{
 n(12944,{
 i(18628,{b=1,cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=60,minReputation={59,0}}),
-r(23799,{b=1,itemID=19444,minReputation={59,3000},requireSkill=333,u=13}),
 i(17022,{b=1,f=200,minReputation={59,3000},requireSkill=10660}),
 r(20849,{b=1,itemID=17018,minReputation={59,3000},requireSkill=197}),
 i(17023,{b=1,f=200,minReputation={59,3000},requireSkill=10658}),
 r(20874,{b=1,itemID=17051,learnedAt=290,minReputation={59,3000},requireSkill=9788,skillID=2938}),
 r(25146,{b=1,itemID=20761,learnedAt=301,minReputation={59,3000},requireSkill=171,skillID=2937}),
-r(23803,{b=1,itemID=19448,minReputation={59,9000},requireSkill=333,u=13}),
 i(17025,{b=1,f=200,minReputation={59,9000},requireSkill=10656}),
 r(20848,{b=1,itemID=17017,minReputation={59,9000},requireSkill=197}),
 r(23666,{b=1,itemID=19219,minReputation={59,9000},requireSkill=197,u=13}),
@@ -3455,7 +3453,6 @@ r(23707,{b=1,itemID=19330,minReputation={59,9000},requireSkill=165,u=13}),
 r(20897,{b=1,itemID=17060,learnedAt=320,minReputation={59,9000},requireSkill=17041,skillID=2938}),
 r(20890,{b=1,itemID=17059,learnedAt=320,minReputation={59,9000},requireSkill=17039,skillID=2938}),
 r(20872,{b=1,itemID=17049,learnedAt=290,minReputation={59,9000},requireSkill=9788,skillID=2938}),
-r(23804,{b=1,itemID=19449,minReputation={59,21000},requireSkill=333,u=13}),
 i(19331,{b=1,f=200,minReputation={59,21000},requireSkill=10656,u=13}),
 i(19332,{b=1,f=200,minReputation={59,21000},requireSkill=10660,u=13}),
 r(23667,{b=1,itemID=19220,minReputation={59,21000},requireSkill=197,u=13}),
@@ -3505,7 +3502,7 @@ s(160290,11626,{f=3}),
 s(160288,11624,{f=4,loc=41}),
 s(164865,22240,{f=6,loc=47,u=15})}}),
 e(370,{npcID=9025,g={
-r(15596,{itemID=11813,rwp=30100}),
+r(15596,{itemID=11813,learnedAt=285,requireSkill=333,skillID=2940}),
 s(160295,11631,{f=8}),
 s(160296,11632,{f=7,loc=41}),
 s(164864,22234,{f=4,loc=41,u=15}),
@@ -3576,7 +3573,7 @@ s(160357,11842,{f=6,loc=41}),
 s(160356,11841,{f=4,loc=46})}})}),
 h(-352,{
 e(373,{npcID=9024,g={
-r(13898,{itemID=11207,requireSkill=333}),
+r(13898,{itemID=11207,learnedAt=285,requireSkill=333,skillID=2940}),
 s(160325,11750,{f=28,spellID=1300781}),
 s(160323,11748,{f=27}),
 s(160322,11747,{f=5,loc=42}),
@@ -3922,8 +3919,8 @@ s(163031,16716,{crs={9258,9692},f=5,loc=45,lvl=53,rwp=40003}),
 s(163032,16717,{crs={9262,9692},f=5,loc=44,lvl=54,rwp=40003})}),
 h(-353,{
 h(-63,{
-r(20013,{crs={9198},itemID=16244,requireSkill=333,rwp=20300}),
-r(20031,{crs={9216},itemID=16250,requireSkill=333}),
+r(20013,{crs={9198},itemID=16244,learnedAt=315,requireSkill=333,skillID=2940}),
+r(20031,{crs={9216},itemID=16250,learnedAt=320,requireSkill=333,skillID=2940}),
 r(18457,{crs={9264},itemID=14513,requireSkill=197}),
 i(15749,{crs={9259},f=200,requireSkill=10658}),
 i(15775,{crs={9260},f=200,requireSkill=10658}),
@@ -4039,7 +4036,7 @@ crit(18534,{achID=62033,awp=16001,id=9})}})}),
 h(-354,{cost={{"i",12344,1}},g={
 h(-63,{
 i(12607,{crs={10442,10447,10814},rwp=60002}),
-r(20030,{crs={10317},itemID=16247,requireSkill=333,rwp=60002}),
+r(20030,{crs={10317},itemID=16247,learnedAt=315,requireSkill=333,skillID=2940}),
 r(31016,{c={4},crs={10318},itemID=24102,lvl=60,rank=9,rwp=40001,u=16}),
 s(160918,13260,{f=6,loc=47})}),
 n(9816,{rwp=60002,g={
@@ -4958,8 +4955,8 @@ h(-56,{awp=10300,rwp=50004,g={
 i(12736,{awp=11101,b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}}})}}),
 h(-63,{awp=10300,rwp=50004,g={
 i(20520,{spellID=27869}),
-r(20035,{crs={10469},itemID=16255,requireSkill=333}),
-r(20032,{crs={10499},itemID=16254,requireSkill=333}),
+r(20035,{crs={10469},itemID=16255,learnedAt=320,requireSkill=333,skillID=2940}),
+r(20032,{crs={10499},itemID=16254,learnedAt=320,requireSkill=333,skillID=2940}),
 r(19102,{awp=11101,crs={11582},itemID=15776,requireSkill=165,rwp=40003}),
 r(19098,{awp=11101,crs={10499},itemID=15773,requireSkill=165,rwp=40003}),
 i(22526,{u=16}),
@@ -5225,7 +5222,7 @@ h(-365,{coords={
 h(-63,{
 i(12811,{description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands."}),
 i(12734,{b=1,description="These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",providers={{"o",175966}}}),
-r(20036,{crs={10422},itemID=16249,requireSkill=333}),
+r(20036,{crs={10422},itemID=16249,learnedAt=320,requireSkill=333,skillID=2940}),
 r(18441,{crs={10384},itemID=14495,requireSkill=197,rwp=40003}),
 r(19103,{crs={10425},itemID=15777,requireSkill=165,rwp=40003}),
 r(23082,{crs={10426},itemID=18658,requireSkill=202}),
@@ -5323,7 +5320,7 @@ s(165056,22736,{collectible=false,description="He drops this midway through the 
 h(-366,{coords={
 [1423]={{48.18,21.9}}},cost={{"i",12382,1}},providers={{"o",175369}},g={
 h(-63,{
-r(20033,{crs={10398},itemID=16248,requireSkill=333}),
+r(20033,{crs={10398},itemID=16248,learnedAt=315,requireSkill=333,skillID=2940}),
 r(19092,{crs={10406},itemID=15768,requireSkill=165,rwp=20005}),
 s(163025,16710,{crs={10405},f=5,loc=43,lvl=52,rwp=40003})}),
 n(10809,{description="This is a Rare Creature and, as such, is not always present.",g={
@@ -5515,7 +5512,7 @@ qo(1,{providers={{"i",11318}}})}})}),
 h(-63,{
 i(11318,{crs={5226,5228,8384}}),
 i(6181),
-r(20014,{crs={5259},itemID=16216,requireSkill=333,rwp=40003}),
+r(20014,{crs={5259},itemID=16216,learnedAt=285,requireSkill=333,skillID=2940}),
 i(15733,{f=200,requireSkill=10656,rwp=40003}),
 s(160102,10627,{f=28}),
 s(160103,10628,{f=26}),
@@ -5599,46 +5596,20 @@ inst(239,{coords={
 h(-44,{
 prof(333,{
 n(11073,{description="To get the Annora to spawn, you'll have to kill all scorpions first.",g={
-r(13920,{lvl=35,rank=4,requireSkill=333,rwp=80001}),
+r(13920,{lvl=35,rank=4,requireSkill=333}),
 h(-243,{
 r(13935,{learnedAt=255,requireSkill=333,skillID=2940}),
-r(13815,{learnedAt=230,requireSkill=333,skillID=2940}),
-r(13635,{learnedAt=175,requireSkill=333,skillID=2940}),
-r(13657,{learnedAt=195,requireSkill=333,rwp=50004,skillID=2940}),
-r(13746,{learnedAt=225,requireSkill=333,skillID=2940}),
-r(13640,{learnedAt=180,requireSkill=333,skillID=2940}),
-r(13663,{learnedAt=205,requireSkill=333,skillID=2940}),
 r(13939,{learnedAt=260,requireSkill=333,skillID=2940}),
-r(13822,{learnedAt=230,requireSkill=333,skillID=2940}),
-r(13637,{learnedAt=180,requireSkill=333,skillID=2940}),
-r(13644,{learnedAt=190,requireSkill=333,skillID=2940}),
-r(13700,{learnedAt=220,requireSkill=333,skillID=2940}),
-r(13948,{learnedAt=270,requireSkill=333,skillID=2940}),
-r(13890,{learnedAt=245,requireSkill=333,skillID=2940}),
-r(13794,{learnedAt=225,requireSkill=333,rwp=50004,skillID=2940}),
-r(13642,{learnedAt=185,requireSkill=333,skillID=2940}),
-r(13836,{learnedAt=235,requireSkill=333,skillID=2940}),
-r(13648,{learnedAt=190,requireSkill=333,skillID=2940}),
 r(13941,{learnedAt=265,requireSkill=333,skillID=2940}),
-r(13661,{learnedAt=200,requireSkill=333,skillID=2940}),
-r(13887,{learnedAt=245,requireSkill=333,skillID=2940}),
-r(13858,{learnedAt=240,requireSkill=333,skillID=2940}),
-r(13917,{learnedAt=250,requireSkill=333,skillID=2940})}),
-flt(50,{
+r(13917,{learnedAt=250,requireSkill=333,skillID=2940}),
+r(13948,{learnedAt=270,requireSkill=333,skillID=2940})}),
+flt(56,{
 r(17181,{learnedAt=250,requireSkill=333,skillID=2940}),
-r(17180,{learnedAt=250,requireSkill=333,skillID=2940}),
-r(13702,{learnedAt=220,requireSkill=333,rwp=50004,skillID=2940})}),
-h(-101,{
-r(14810,{learnedAt=195,requireSkill=333,skillID=2940}),
-r(14809,{learnedAt=175,requireSkill=333,skillID=2940})}),
+r(17180,{learnedAt=250,requireSkill=333,skillID=2940})}),
 h(-245,{
 r(13937,{learnedAt=260,requireSkill=333,skillID=2940}),
 r(13905,{learnedAt=250,requireSkill=333,skillID=2940}),
-r(13943,{learnedAt=265,requireSkill=333,skillID=2940}),
-r(13695,{learnedAt=220,requireSkill=333,skillID=2940}),
-r(13631,{learnedAt=175,requireSkill=333,skillID=2940}),
-r(13659,{learnedAt=200,requireSkill=333,skillID=2940}),
-r(13693,{learnedAt=215,requireSkill=333,skillID=2940})})}})})}),
+r(13943,{learnedAt=265,requireSkill=333,skillID=2940})})}})})}),
 h(-45,{
 q(2964,{coords={
 [1455]={{77.2,11.8}}},lvl=45,qgs={2916},r=2,rwp=40003,sourceQuests={2977}}),

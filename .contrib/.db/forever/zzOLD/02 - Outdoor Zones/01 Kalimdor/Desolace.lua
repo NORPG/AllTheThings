@@ -1039,12 +1039,27 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(253139, {	-- Gorhak <Magram Clan Quartermaster>
-					["coord"] = { 66.2, 79.4, MAP.DESOLACE},
+					["coord"] = { 66.2, 79.4, MAP.DESOLACE },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
 					["groups"] = {	-- Need to add Cost here //Braghe
 						i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!)
 						i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
 						i(251458),	-- Plans: Iron Morningstar (RECIPE!)
 						i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
+						i(249486),	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
+						i(273615),	-- Enchant Bracer - Lesser Healing Power
+					},
+				}),
+				n(253140, {	-- Molkar <Gelkis Clan Quartermaster>
+					["coord"] = { 35.6, 92.0, MAP.DESOLACE },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["groups"] = {	-- Need to add Cost here //Braghe
+						i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!)
+						i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
+						i(251458),	-- Plans: Iron Morningstar (RECIPE!)
+						i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
+						i(249486),	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
+						i(273615),	-- Enchant Bracer - Lesser Healing Power
 					},
 				}),
 				n(12045, {	-- Hae'Wilani <Axecrafter>

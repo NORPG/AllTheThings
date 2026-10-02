@@ -1021,7 +1021,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 49.0, 55.2, MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
+						i(11163, {	-- Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(4355, {	-- Pattern: Icy Cloak (RECIPE!)

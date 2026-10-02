@@ -18,6 +18,7 @@ root(ROOTS.Craftables, {
 	prof(COOKING, {
 		i(21023),	-- Dirge's Kickin' Chimaerok Chops
 	}),
+	--[[
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(20725, {	-- Nexus Crystal 
@@ -36,8 +37,8 @@ root(ROOTS.Craftables, {
 		i(),	-- Enchant Gloves - Threat
 		i(),	-- Enchant Gloves - Superior Agility
 		i(),	-- Enchant Gloves - Shadow Power
-		]]--
 	}),
+	--]]
 	prof(MINING, {
 		spell(2575, {	-- Mining
 			i(22203, {	-- Large Obsidian Shard

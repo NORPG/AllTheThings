@@ -75,10 +75,15 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					}),
 				}),
 				prof(ENCHANTING, {
-					n(3345, {	-- Godan <Enchanting Trainer>
-						["coord"] = { 53.4, 49.4, MAP.ORGRIMMAR },
+					n(3345, {	-- Godan <Expert Enchanter>
+						["coord"] = { 53.8, 38.6, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_CATA_ENCHANTING,
+						["groups"] = ENCHANTING_RECIPES.JOURNEYMAN,
+					}),
+					n(11066, {	-- Jhag <Journeyman Enchanter>
+						["coord"] = { 53.6, 38.2, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = ENCHANTING_RECIPES.APPRENTICE,
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -1043,23 +1048,14 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(3346, {	-- Kithas <Enchanting Supplies>
 					["coord"] = { 53.6, 38.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-							20752,	-- Formula: Minor Mana Oil (RECIPE!)
-							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					},
-					["groups"] = {
+					["groups"] = appendGroups(ENCHANTING_RECIPES.COMMON_RECIPES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6346, {	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
+						i(6346, {	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
-					},
+					}),
 				}),
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, MAP.ORGRIMMAR },

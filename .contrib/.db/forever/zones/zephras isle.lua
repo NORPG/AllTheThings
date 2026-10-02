@@ -1580,7 +1580,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(257020, {	-- Nasalanna Windsinger <Enchanter>
 				["coord"] = { 60.8, 44.2, MAP.ZEPHRAS_ISLE },
-				["groups"] = VANILLA_ENCHANTING_COMMON_RECIPES,
+				["groups"] = ENCHANTING_RECIPES.COMMON_RECIPES,
 			}),
 			n(257006, {	-- Nyalah Brightfire
 				["coord"] = { 60.7, 72.7, MAP.ZEPHRAS_ISLE },

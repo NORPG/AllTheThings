@@ -1385,10 +1385,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(VANILLA_ENCHANTING_COMMON_RECIPES, {}),
+					["sym"] = {{ "select","itemID",
+						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+						20752,	-- Formula: Minor Mana Oil (RECIPE!)
+						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+						6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+					}},
 				}),
 				n(4559, {	-- Timothy Weldon
 					["coord"] = { 63.6, 39.6, MAP.UNDERCITY },

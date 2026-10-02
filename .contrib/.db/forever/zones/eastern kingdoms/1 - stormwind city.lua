@@ -58,10 +58,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			prof(ENCHANTING, {
-				n(1317, {	-- Lucan Cordell <Enchanting Trainer>
+				n(11068, {	-- Betty Quin <Journeyman Enchanter>
+					["coord"] = { 53.0, 73.8, MAP.STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = ENCHANTING_RECIPES.APPRENTICE,
+				}),
+				n(1317, {	-- Lucan Cordell <Expert Enchanter>
 					["coord"] = { 53.0, 74.2, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_ENCHANTING,
+					["groups"] = ENCHANTING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 			prof(ENGINEERING, {
@@ -2296,15 +2301,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 				["coord"] = { 53.0, 74.2, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["sym"] = {
-					{ "select","itemID",
-						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-						20752,	-- Formula: Minor Mana Oil (RECIPE!)
-						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-						6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-					},
-				},
+				["groups"] = ENCHANTING_RECIPES.COMMON_RECIPES,
 			}),
 			n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
 				["coord"] = { 63.2, 37.6, MAP.STORMWIND_CITY },

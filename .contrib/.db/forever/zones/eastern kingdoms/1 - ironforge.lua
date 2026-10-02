@@ -1452,7 +1452,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 				["coord"] = { 60.8, 44.2, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = appendGroups(VANILLA_ENCHANTING_COMMON_RECIPES, {
+				["sym"] = {{ "select","itemID",
+					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+					20752,	-- Formula: Minor Mana Oil (RECIPE!)
+					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+				}},
+				["groups"] = {
+					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
+						["isLimited"] = true,
+					}),
+				},
+			}),
+			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+				["coord"] = { 60.8, 44.2, MAP.IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = appendGroups(ENCHANTING_RECIPES.COMMON_RECIPES, {
 					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 						["isLimited"] = true,
 					}),

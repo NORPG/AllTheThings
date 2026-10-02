@@ -2086,20 +2086,20 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
 					["coord"] = { 52.0, 39.7, MAP.SILITHUS },
-					["sym"] = {
-						{ "select","itemID",
-							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-							20752,	-- Formula: Minor Mana Oil (RECIPE!)
-							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-						},
-					},
+					["sym"] = {{ "select","itemID",
+						20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+						20752,	-- Formula: Minor Mana Oil (RECIPE!)
+						20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+						22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+					}},
 					["groups"] = {
+						--[[Commented out until confirmed
 						i(20732),	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
 						i(20733),	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
 						i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
 						i(20755),	-- Formula: Wizard Oil (RECIPE!)
+						--]]
 						i(22308),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 					},
 				}),

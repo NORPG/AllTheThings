@@ -25,16 +25,13 @@ root(ROOTS.Craftables, {
 			i(22195),	-- Light Obsidian Belt
 		}),
 	}),
-	--]]
 	prof(ENCHANTING, {
 		filter(MISC, {
 			i(20747),	-- Lesser Mana Oil
-			i(20746),	-- Lesser Wizard Oil
-			i(20745),	-- Minor Mana Oil
-			i(20744),	-- Minor Wizard Oil
 			i(20750),	-- Wizard Oil
 		}),
 	}),
+	--]]
 	prof(LEATHERWORKING, {
 		prof(10656, {	-- Dragonscale Leatherworking
 			i(20380),	-- Dreamscale Breastplate

@@ -58,13 +58,9 @@ local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 		},
 	}),
 	i(6181),	-- Fetish of Hakkar
-	i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
-		["timeline"] = { DELETED_4_0_3 },
+	i(16216, {	-- Formula: Enchant Cloak - Greater Resistance (RECIPE!)
 		["crs"] = {
 			5259,	-- Atal'ai Witch Doctor
-			-- #if SEASON_OF_DISCOVERY
-			224263,	-- Atal'ai Witch Doctor
-			-- #endif
 		},
 	}),
 	i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)

@@ -628,7 +628,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 44.6, 56.8, MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection (RECIPE!)
+						i(11223, {	-- Formula: Enchant Bracer - Deflection (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)

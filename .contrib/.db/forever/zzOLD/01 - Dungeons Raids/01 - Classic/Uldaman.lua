@@ -28,9 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				prof(ENCHANTING, {
 					n(11073, {	-- Annora <Master Enchanter>
 						["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
-						-- #if BEFORE 2.1.0
-						["groups"] = EXPERT_ARTISAN_ENCHANTING,
-						-- #endif
+						["groups"] = ENCHANTING_RECIPES.ARTISAN,
 					}),
 				}),
 			}),

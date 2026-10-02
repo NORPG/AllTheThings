@@ -22,13 +22,13 @@ root(ROOTS.Craftables, {
 			i(19695),	-- Darksoul Shoulders
 		}),
 	}),
-	--]]
 	prof(ENCHANTING, {
 		filter(MISC, {
 			i(20748),	-- Brilliant Mana Oil
 			i(20749),	-- Brilliant Wizard Oil
 		}),
 	}),
+	--]]
 	prof(ENGINEERING, {
 		i(19999),	-- Bloodvine Goggles
 		i(19998),	-- Bloodvine Lens

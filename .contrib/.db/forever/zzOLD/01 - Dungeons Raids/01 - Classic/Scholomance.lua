@@ -742,7 +742,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	}),
 	n(ZONE_DROPS, {
 		i(20520),	-- Dark Rune
-		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
+		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit (RECIPE!)
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
@@ -2116,7 +2116,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 		}),
 	})),
 	n(ZONE_DROPS, {
-		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
+		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit (RECIPE!)
 			["cr"] = 58757,	-- Scholomance Acolyte
 		}),
 		i(18702),	-- Belt of the Ordained

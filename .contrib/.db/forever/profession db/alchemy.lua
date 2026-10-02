@@ -1,5 +1,7 @@
 local i = GetRecipeHelperForProfession(ALCHEMY);
-
+-------------
+-- ALCHEMY --
+-------------
 --- TRAINER ---
 i(0, 2259);			-- Alchemy (Apprentice)
 i(0, 3101);			-- Alchemy (Journeyman)
@@ -35,7 +37,6 @@ i(0, 3173);			-- Lesser Mana Potion
 i(0, 3176);			-- Lesser Troll's Blood Elixir
 i(0, 1249631);		-- Magenta Dye
 i(0, 3452);			-- Mana Potion
-i(0, 1230564);		-- Mana Well
 i(0, 1245246);		-- Minor Arcane Elixir
 i(0, 2331);			-- Minor Mana Potion
 i(0, 2332);			-- Minor Rejuvenation Potion
@@ -157,6 +158,7 @@ i(13487, 17564);	-- Transmute: Water to Undeath
 i(3831, 3451);		-- Troll's Blood Elixir
 i(9294, 11458);		-- Wildvine Potion
 --- QUEST ---
+i(0, 1230564);		-- Mana Well
 i(0, 11452);		-- Restorative Potion
 --[[
 --- UNKNOWN ---
@@ -193,6 +195,7 @@ i(274277, 1293559);	-- Flask of Natural Accuracy
 i(274278, 1293560);	-- Flask of Natural Aggression
 i(274279, 1293561);	-- Flask of Natural Precision
 i(274280, 1293562);	-- Flask of Natural Swiftness
+--- UNRELEASED CONTENT ---
 -- MC
 i(18257, 22732);	-- Major Rejuvenation Potion
 --ZG

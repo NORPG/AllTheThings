@@ -947,7 +947,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 					{	-- Friendly
-						applyclassicphase(PHASE_THREE_ENCHANTS, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
+						--[[Commented out until confirmed
+						i(19444),	-- Formula: Enchant Weapon - Strength (RECIPE!)
+						--]]
 						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
 						i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
 						i(17023),	-- Pattern: Molten Helm (RECIPE!)
@@ -966,7 +968,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
-						applyclassicphase(PHASE_THREE_ENCHANTS, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
+						--[[ BWL Removed until confirmed
+						applyclassicphase(PHASE_THREE_ENCHANTS, i(19448)),	-- Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
+						--]]
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						i(17017),	-- Pattern: Flarecore Mantle (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
@@ -1215,7 +1219,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					{	-- Revered
+						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
+						--]]
 						applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings (RECIPE!)
@@ -1370,12 +1376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(370, {	-- Lord Roccor
 					["creatureID"] = 9025,
 					["groups"] = {
-						i(45050, {	-- Formula: Smoking Heart of the Mountain [BOP] (RECIPE!)
-							["timeline"] = { ADDED_3_1_0 },
-						}),
-						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
-							["timeline"] = { REMOVED_3_1_0 },
-						}),
+						i(11813),	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
 						i(11631),	-- Stoneshell Guard
 						i(11632),	-- Earthslag Shoulders
 						applyclassicphase(PHASE_FIVE, i(22234)),	-- Mantle of Lost Hope

@@ -53,6 +53,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			n(PROFESSIONS, {
+				prof(ENCHANTING, {
+					n(11074, {	-- Hgarth <Artisan Enchanter>
+						["coord"] = { 49.2, 57.2, MAP.STONETALON_MOUNTAINS },
+						["races"] = HORDE_ONLY,
+						["groups"] = ENCHANTING_RECIPES.EXPERT,
+					}),
+				}),
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage
 				}),
