@@ -16,8 +16,10 @@ local select, next, type, rawget, wipe,math_floor
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 
 -- App locals
+---@type function,
 local containsAny = app.containsAny;
 local ALLIANCE_ONLY, HORDE_ONLY = unpack(app.Modules.FactionData.FACTION_RACES);
+---@type function,
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Module locals
@@ -410,12 +412,24 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 	DefineToggleFilter("ExpansionContent", AccountFilters,
 	function(item)
-		if item.g and not item.collectible then
-			return true
+		-- 'awp' is consolidated when parsed, meaning all common values flow upwards in hierachy
+		-- so if a Thing has an explicit 'awp' we know that it and all sub-content match that awp
+		local awp = item.awp
+		if awp then
+			-- awp field uses patch format like 10205 for patch 1.2.5
+			-- Extract expansion ID from patch value (e.g., 10205 -> 1)
+			return ExpansionFilters[math_floor(awp / 10000)]
 		end
 
-		local awp = GetRelativeValue(item, "awp")
-		if awp then
+		-- if it contains more things, we can never assume all those things have an equivalent 'awp' value
+		if item.g then return true end
+
+		-- otherwise we fallback to the relative 'awp' value since this Thing may use the hierarchical 'awp' rather
+		-- than have its own
+		awp = GetRelativeValue(item, "awp")
+		-- ignoring 10000 since that's a non-real awp currently assigned as a default on the MainRoot
+		-- once everything is properly 'timeline'd in data, we can remove that default and this extra exclusion here
+		if awp and awp ~= 10000 then
 			-- awp field uses patch format like 10205 for patch 1.2.5
 			-- Extract expansion ID from patch value (e.g., 10205 -> 1)
 			return ExpansionFilters[math_floor(awp / 10000)]
