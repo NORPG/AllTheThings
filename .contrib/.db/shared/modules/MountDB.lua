@@ -93,7 +93,9 @@ i(0, 471440);		-- Skybound Spectral Tiger		(CN Only)
 -- #endif
 i(272920, 1291315);	-- Spring Panda (CN ONLY)
 i(268924, 1284044);	-- Scorching Imperial Quilen (CN ONLY)
-i(254735, 1258573);	-- Thunderhoof Celestial (CN ONLY)
+-- #if ANYCLASSIC
+i(254735, 1285725);	-- Thunderhoof Celestial (CN ONLY)
+-- #endif
 
 -- Wrath Titanforged
 i(0, 1280400);		-- Reforged Invincible
@@ -2374,6 +2376,9 @@ i(260895, 1267002);	-- Lavender Pseudoshell
 i(262708, 1269280);	-- Savage Snapvine
 i(253587, 0);		-- Scale of Aln'sharan
 i(0, 1238827);		-- Swift Spectral Dragonhawk
+-- #if NOT ANYCLASSIC
+i(254735, 1258573);	-- Thunderhoof Celestial (CN ONLY)
+-- #endif
 
 ------------------
 -- PATCH 12.0.1 --
