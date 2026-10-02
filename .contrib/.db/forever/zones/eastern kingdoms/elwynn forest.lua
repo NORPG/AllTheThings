@@ -28,7 +28,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						["lvl"] = 1,
 					}),
 					q(6, {	-- Bounty on Garrick Padfoot
 						sourceQuest = 18,	-- Brotherhood of Thieves
@@ -93,7 +92,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						["lvl"] = 1,
 					}),
 					q(3104, {	-- Glyphic Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
@@ -187,7 +185,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						["lvl"] = 1,
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled on Book
@@ -197,7 +194,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qis = {
 							247857,	-- Nibbled on Book
 						},
-						["lvl"] = 1,
 					}),
 					q(91743, {	-- Rascally Rodents
 						sourceQuest = 92124,	-- Book Inventory
@@ -205,7 +201,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						["lvl"] = 1,
 						groups = {
 							objective(1, {	-- 0/8 Stolen Book
 								provider = { "i", 247839 },	-- Stolen Book
@@ -252,7 +247,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						["lvl"] = 1,
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
 								provider = { "o", 563442 },	-- Kobold Tracks
@@ -303,7 +297,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						["lvl"] = 1,
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -495,12 +488,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(91738, {	-- An Apple Treat
-				["races"] = ALLIANCE_ONLY,
 				sourceQuest = 91736,	-- Applejack Still
 				qg = 955,	-- Sergeant De Vries <Morale Officer>
 				coord = { 24.0, 73.0, MAP.ELWYNN_FOREST },
 				cost = { { "i", 247824, 1 } },	-- Thunder Applejack
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
 			q(91753, {	-- An Enchanting Lesson
@@ -553,12 +546,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(91736, {	-- Applejack Still
-				["races"] = ALLIANCE_ONLY,
 				provider = { "o", 562131 },	-- Applejack Still
 				coord = { 24.6, 58.0, MAP.ELWYNN_FOREST },
 				cost = { { "i", 4536, 4 } },	-- Shiny Red Apple
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				repeatable = true,
+				races = ALLIANCE_ONLY,
 				lvl = 7,
 				groups = {
 					i(247824),	-- Thunder Applejack
@@ -587,7 +580,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				["lvl"] = 1,
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
 						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals
@@ -1137,7 +1129,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				["lvl"] = 1,
 				groups = {
 					objective(1, {	-- 0/1 Geomancy for Curious Young Wizards
 						provider = { "i", 248003 },	-- Geomancy for Curious Young Wizards

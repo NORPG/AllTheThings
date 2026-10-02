@@ -79,7 +79,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
 						["cr"] = 1994,	-- Githyiss the Vile
-						["lvl"] = 1,
 					}),
 					q(3119, {	-- Hallowed Sigil
 						["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
@@ -143,7 +142,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["coord"] = { 57.8, 45.0, MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 1,
 						["groups"] = {
 							objective(1, {	-- 0/4 Gnarlpine Totem
 								["providers"] = {
@@ -190,12 +188,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(96630, {	-- The Adventurer [Teldrassil]
-						["provider"] = { "o", 654846 },
-						["coord"] = { 59.1, 39.49, MAP.TELDRASSIL },
 						--["sourceQuest"] = ,	-- 
-						--["provider"] = { "o", 654846 },	-- Quest starts from a book on a table behind Tenaron Stormgrip at the top of Aldrassil in Shadowglen.
+						["provider"] = { "o", 654846 },	-- Lost Journal
+						["coord"] = { 59.1, 39.49, MAP.TELDRASSIL },
 						["qi"] = 275022,	-- Lost Journal (PQI!)
-						--["coord"] = { , MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 4,
@@ -236,7 +232,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["coord"] = { 59.2, 40.4, MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = { NIGHTELF },
-						["lvl"] = 1,
 					}),
 					q(458, {	-- The Woodland Protector (1/2)
 						["qg"] = 2077,	-- Melithar Staghelm

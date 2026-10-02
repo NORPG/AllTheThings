@@ -35,13 +35,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
 				}),
 				ach(63718, {	-- Lock and Key
-					["coords"] = {	-- Coordinates of Locked Doors
+					["coords"] = {	-- Potential Coordinates of Locked Doors
 						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
 					},
 					["cost"] = { { "i", 282402, 1 } },	-- 1x Archaic Amani Key
 				}),
 				ach(63719, {	-- Lock and Key Master
-					["coords"] = {	-- Coordinates of Locked Doors
+					["coords"] = {	-- Potential Coordinates of Locked Doors
 						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
 					},
 					["cost"] = { { "i", 282402, 20 } },	-- 20x Archaic Amani Key

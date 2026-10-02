@@ -844,7 +844,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(97583, {	-- WRIGGLE.
-					["races"] = HORDE_ONLY,
 					description = "Spam /dance at the excitable slimes that patrol around the Undercity.",
 					qg = 269452,	-- Excitable Slime
 					coords = {
@@ -856,7 +855,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					cost = {{ "i", 278265, 1 }},	-- Nutritious Slime Sludge
-					["lvl"] = 1,
+					races = HORDE_ONLY,
 					groups = {
 						i(275682),	-- Excitable Slime
 					},

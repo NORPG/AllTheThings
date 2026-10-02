@@ -898,7 +898,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				["coord"] = { 72.6, 48.5, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["lvl"] = 1,
 			}),
 		}),
 		n(VENDORS, {

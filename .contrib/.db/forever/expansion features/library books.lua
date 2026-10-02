@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, {
 			q(79091, {	-- Archmage Antonidas: The Unabridged Autobiography
 				["provider"] = { "i", 203754 },	-- Archmage Antonidas: The Unabridged Autobiography
 				["maps"] = { IRONFORGE },
-				["races"] = ALLIANCE_ONLY, 
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -48,8 +48,7 @@ root(ROOTS.ExpansionFeatures, {
 			q(79092, {	-- Archmage Theocritus's Research Journal
 				["provider"] = { "i", 203755 },	-- Archmage Theocritus's Research Journal
 				["maps"] = { ELWYNN_FOREST },
-				["races"] = ALLIANCE_ONLY, 
-				["lvl"] = 1,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -57,7 +56,7 @@ root(ROOTS.ExpansionFeatures, {
 			q(79096, {	-- Ataeric: On Arcane Curiosities
 				["provider"] = { "i", 210177 },	-- Ataeric: On Arcane Curiosities
 				["maps"] = { SILVERPINE_FOREST },
-				["races"] = HORDE_ONLY, 
+				["races"] = HORDE_ONLY,
 			}),
 			q(79097, {	-- Baxtan: On Destructive Magics
 				["provider"] = { "i", 208800 },	-- Baxtan: On Destructive Magics
@@ -120,8 +119,7 @@ root(ROOTS.ExpansionFeatures, {
 				},
 			}),
 			q(79536, {	-- Greater Friend of the Library
-				["races"] = ALLIANCE_ONLY,
-				["qg"] = 211033,
+				["qg"] = 211033,	-- Garion Wendell <Librarian>
 				["sourceQuests"] = {
 					78145,	-- Arcanic Systems Manual
 					79091,	-- Archmage Antonidas: The Unabridged Autobiography
@@ -142,6 +140,7 @@ root(ROOTS.ExpansionFeatures, {
 					-- TODO: Need to add more book quests
 				},
 				["sourceQuestNumRequired"] = 20,
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 				["groups"] = {
 					i(281634),	-- Field Researcher's Loop
@@ -150,7 +149,7 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(78124, {	-- Nar'thalas Almanac
 				["provider"] = { "i", 209843 },	-- Nar'thalas Almanac, Vol. 74
-				["maps"] = { DARKSHORE }, 
+				["maps"] = { DARKSHORE },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -158,23 +157,22 @@ root(ROOTS.ExpansionFeatures, {
 			q(79093, {	-- Rumi of Gnomeregan: The Collected Works
 				["provider"] = { "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
 				["maps"] = { WESTFALL, LOCH_MODAN },
-				["races"] = ALLIANCE_ONLY, 
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
 			q(78148, {	-- Runes of the Sorceror-Kings
-				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "i", 209850 },	-- Runes of the Sorcerer-Kings
-				["maps"] = { LOCH_MODAN }, 
-				["lvl"] = 1,
+				["maps"] = { LOCH_MODAN },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
 			q(78143, {	-- Secrets of the Dreamers
 				["provider"] = { "i", 209846 },	-- Secrets of the Dreamers
-				["maps"] = { WAILING_CAVERNS }, 
+				["maps"] = { WAILING_CAVERNS },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -182,15 +180,14 @@ root(ROOTS.ExpansionFeatures, {
 			q(79095, {	-- The Apothecary's Metaphysical Primer
 				["provider"] = { "i", 208185 },	-- The Apothecary's Metaphysical Primer
 				["maps"] = { TIRISFAL_GLADES },
-				["races"] = HORDE_ONLY, 
-				["lvl"] = 1,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
 			q(78127, {	-- The Dalaran Digest
 				["provider"] = { "i", 209844 },	-- The Dalaran Digest, Vol. 23
-				["maps"] = { SILVERPINE_FOREST }, 
+				["maps"] = { SILVERPINE_FOREST },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -198,7 +195,7 @@ root(ROOTS.ExpansionFeatures, {
 			q(79094, {	-- The Lessons of Ta'zo
 				["provider"] = { "i", 207972 },	-- The Lessons of Ta'zo
 				["maps"] = { ORGRIMMAR },
-				["races"] = HORDE_ONLY, 
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
