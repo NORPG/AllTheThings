@@ -22,6 +22,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {	-- Deliver the Nondescript Letter to Innkeeper Renee
+									["provider"] = { "n", 5688 },	-- Innkeeper Renee
+									["coord"] = { 61.7, 52.1, MAP.TIRISFAL_GLADES },
+								}),
+							},
 						}),
 						q(590, {	-- A Rogue's Deal (2/2)
 							["sourceQuest"] = 8,	-- A Rogue's Deal (1/2)
@@ -84,6 +90,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 									},
 									["cr"] = 1919,	-- Samuel Fipps
 								}),
+								i(247840),	-- Mining for Dummies
+								i(247841),	-- Wild Harvest
+								i(247846),	-- Pelt Collecting for Beginners
 							},
 						}),
 						q(380, {	-- Night Web's Hollow
@@ -182,6 +191,62 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["timeline"] = { TIMELINE.ADDED_1_60_1 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 4,
+							["groups"] = {
+								objective(1, {	-- Speak to Eleanor Shackleton
+									["provider"] = { "n", 265812 },	-- Eleanor Shackleton
+									["coord"] = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
+								}),
+							},
+						}),
+						q(98601, {	-- A Difficult Path
+							["qg"] = 1569,	-- Shadow Priest Sarvis
+							["qi"] = 282423,	-- Consecrated Scroll
+							["coord"] = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+							["races"] = { UNDEAD },
+							["classes"] = { PALADIN },
+							["lvl"] = 1,
+							["groups"] = {
+								i(6060),	-- Flax Bracers
+								i(2173),	-- Old Leather Belt
+							},
+						}),
+						q(90902, {	-- Rediscovering the Light
+							["qg"] = 244808,	-- Aramis Hammerhand
+							["coord"] = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+							["races"] = { UNDEAD },
+							["classes"] = { PALADIN },
+							["lvl"] = 2,
+						}),
+						q(91208, {	-- Coming to Terms
+							["qg"] = 244808,	-- Aramis Hammerhand
+							["coord"] = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+							["races"] = { UNDEAD },
+							["classes"] = { PALADIN },
+							["lvl"] = 4,
+						}),
+						q(91209, {	-- Continue Your Training
+							["qg"] = 244808,	-- Aramis Hammerhand
+							["coord"] = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+							["races"] = { UNDEAD },
+							["classes"] = { PALADIN },
+							["lvl"] = 4,
+							["groups"] = {
+								objective(1, {	-- Report to Shari Stilwell
+									["provider"] = { "n", 246152 },	-- Shari Stilwell
+									["coord"] = { 60.3, 52.7, MAP.TIRISFAL_GLADES },
+								}),
+							},
+						}),
+						q(98389, {	-- A Light in the Darkness
+							["qg"] = 244808,	-- Aramis Hammerhand
+							["coord"] = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 2,
 						}),
 						q(376, {	-- The Damned
 							["qg"] = 1661,	-- Novice Elreth
@@ -558,10 +623,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(96658, {	-- Camping 101: Cooking [Tirisfal Glades]
 					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 					qg = 265812,	-- Eleanor Shackleton <Adventurer>
-					coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
 					lvl = 4,
+					groups = {
+						objective(1, {	-- Learn Cooking from William Pickman
+							provider = { "n", 265944 },	-- William Pickman
+							coord = { 61.8, 51.5, MAP.TIRISFAL_GLADES },
+						}),
+					},
 				}),
 				q(97953, {	-- Camping 101: Enchanting [Tirisfal Glades]
 					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
@@ -728,7 +799,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "i", 2846 },	-- Tirisfal Pumpkin
 								{ "o", 375 },	-- Tirisfal Pumpkin
 							},
-							["coord"] = { 35.5, 52.5, MAP.TIRISFAL_GLADES },
+							["coords"] = {
+								{ 35.5, 52.5, MAP.TIRISFAL_GLADES },
+								{ 36.1, 52.0, MAP.TIRISFAL_GLADES },
+							},
 						}),
 					},
 				}),
@@ -774,7 +848,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "i",  12737 },	-- Gloom Weed
 								{ "o", 175566 },	-- Gloom Weed
 							},
-							["coord"] = { 49.7, 54.9, MAP.TIRISFAL_GLADES },
+							["coords"] = {
+								{ 49.7, 54.9, MAP.TIRISFAL_GLADES },
+								{ 44.4, 57.3, MAP.TIRISFAL_GLADES },
+							},
 						}),
 					},
 				}),
@@ -937,10 +1014,108 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(96607, {	-- The Great Outdoors [Tirisfal Glades]
 					["sourceQuest"] = 96656,	-- The Adventurer [Tirisfal Glades]
 					["qg"] = 265812,	-- Eleanor Shackleton <Adventurer>
-					["coord"] = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
+					["coord"] = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
 					["timeline"] = { TIMELINE.ADDED_1_60_1 },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
+				}),
+				q(86784, {	-- Sticks and Bones
+					["qg"] = 1742,	-- Deathguard Bartholomew
+					["qi"] = 279937,	-- Collecting Basket
+					["coord"] = { 58.3, 50.4, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- Dry Branch
+							["providers"] = {
+								{ "i", 279991 },	-- Dry Branch
+								{ "o", 671154 },	-- Dry Branch
+							},
+						}),
+						objective(2, {	-- Deliver Dry Branches to Eleanor Shackleton
+							["provider"] = { "n", 265812 },	-- Eleanor Shackleton
+							["coord"] = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
+						}),
+						i(279939),	-- Collecting Basket
+					},
+				}),
+				q(95314, {	-- That Shadowvale Green Elixir
+					["qg"] = 2132,	-- Carolai Anise
+					["coord"] = { 59.4, 52.3, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 7,
+					["groups"] = {
+						objective(1, {	-- Bottle of Whispering Elixir
+							["providers"] = {
+								{ "i", 268801 },	-- Bottle of Whispering Elixir
+								{ "o", 630871 },	-- Bottle
+								{ "o", 630885 },	-- Bottle
+							},
+						}),
+					},
+				}),
+				q(99134, {	-- Discipline
+					["qg"] = 1515,	-- Executor Zygand
+					["qi"] = 286176,	-- Executor's Motivator
+					["coord"] = { 60.6, 51.7, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- Deathguards motivated
+							["providers"] = {
+								{ "i", 286176 },	-- Executor's Motivator
+								{ "n", 257655 },	-- Deathguard Billmuth
+								{ "n", 1737 },	-- Deathguard Oliver
+								{ "n", 275103 },	-- Deathguard Veteran
+								{ "n", 1519 },	-- Deathguard Simmer
+								{ "n", 5725 },	-- Deathguard Lundmark
+								{ "n", 1742 },	-- Deathguard Bartholomew
+								{ "n", 1738 },	-- Deathguard Terrence
+							},
+							["coords"] = {
+								{ 22.0, 44.4, MAP.TIRISFAL_GLADES },	-- Deathguard Billmuth
+								{ 30.9, 66.6, MAP.TIRISFAL_GLADES },	-- Deathguard Oliver
+								{ 38.6, 55.6, MAP.TIRISFAL_GLADES },	-- Deathguard Veteran
+								{ 40.8, 54.2, MAP.TIRISFAL_GLADES },	-- Deathguard Simmer
+								{ 52.9, 55.7, MAP.TIRISFAL_GLADES },	-- Deathguard Lundmark
+								{ 57.4, 49.2, MAP.TIRISFAL_GLADES },	-- Deathguard Bartholomew
+								{ 61.4, 53.4, MAP.TIRISFAL_GLADES },	-- Deathguard Terrence
+							},
+						}),
+					},
+				}),
+				q(99141, {	-- Patience
+					["qg"] = 1515,	-- Executor Zygand
+					["coord"] = { 60.6, 51.7, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- Dillinger's Report
+							["providers"] = {
+								{ "i", 286200 },	-- Dillinger's Report
+								{ "n", 1496 },	-- Deathguard Dillinger
+							},
+							["coord"] = { 58.2, 51.5, MAP.TIRISFAL_GLADES },
+						}),
+						objective(2, {	-- Kristof's Report
+							["providers"] = {
+								{ "i", 286201 },	-- Kristof's Report
+								{ "n", 251001 },	-- Deathguard Kristof
+							},
+							["coord"] = { 65.2, 60.2, MAP.TIRISFAL_GLADES },
+						}),
+						objective(3, {	-- Gordo's Report
+							["providers"] = {
+								{ "i", 286202 },	-- Gordo's Report
+								{ "n", 10666 },	-- Gordo
+							},
+							["coord"] = { 48.0, 55.4, MAP.TIRISFAL_GLADES },
+						}),
+					},
 				}),
 				q(375, {	-- The Chill of Death
 					["qg"] = 1521,	-- Gretchen Dedmar

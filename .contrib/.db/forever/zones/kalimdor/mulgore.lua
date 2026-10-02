@@ -979,6 +979,101 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
+			q(96130, { -- Chakuyak
+				["qg"] = 3065, -- Yaw Sharpmane
+				["coord"] = { 46.9, 59.6, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 5,
+				["groups"] = {
+					objective(1, { -- Chakuyak's Pelt
+						["provider"] = { "i", 270302 }, -- Chakuyak's Pelt
+						["cr"] = 268558, -- Chakuyak
+						["coord"] = { 38.5, 63.1, MAP.MULGORE },
+					}),
+				},
+			}),
+			q(99079, { -- Longwalker Malah
+				["qg"] = 3222, -- Brave Wildrunner
+				["coord"] = { 46.6, 63.0, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, { -- Find Longwalker Malah
+						["provider"] = { "n", 275789 }, -- Malah Longwind
+						["coord"] = { 57.6, 63.2, MAP.MULGORE },
+					}),
+				},
+			}),
+			q(99080, { -- Drive Them Out
+				["qg"] = 2993, -- Baine Bloodhoof
+				["coord"] = { 47.4, 60.2, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, { -- Galak Centaur slain
+						["provider"] = { "n", 2967 }, -- Galak Centaur
+						["coord"] = { 59.3, 57.3, MAP.MULGORE },
+					}),
+					objective(2, { -- Galak Outrunner slain
+						["provider"] = { "n", 2968 }, -- Galak Outrunner
+						["coord"] = { 59.8, 59.4, MAP.MULGORE },
+					}),
+					objective(3, { -- Herak's Head
+						["provider"] = { "i", 286075 }, -- Herak's Head
+						["cr"] = 275767, -- Herak the Pillager
+						["coord"] = { 60.5, 59.7, MAP.MULGORE },
+					}),
+				},
+			}),
+			q(99081, { -- Grim Tidings
+				["qg"] = 275789, -- Malah Longwind
+				["qi"] = 286104, -- Longwalker Malah's Report
+				["coord"] = { 57.6, 63.2, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+			}),
+			q(99082, { -- The High Chieftain
+				["qg"] = 2993, -- Baine Bloodhoof
+				["coord"] = { 47.4, 60.2, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+				["groups"] = {
+					i(286740), -- Proud Brave's Guard
+					i(286741), -- Centaur Skull Basher
+				},
+			}),
+			q(99101, { -- Our Ancient Enemy
+				["qg"] = 3222, -- Brave Wildrunner
+				["qi"] = 286104, -- Longwalker Malah's Report
+				["coord"] = { 46.6, 63.0, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, { -- Bring Longwalker Malah's Report to Baine Bloodhoof
+						["provider"] = { "n", 2993 }, -- Baine Bloodhoof
+						["coord"] = { 47.4, 60.2, MAP.MULGORE },
+					}),
+				},
+			}),
+			q(99108, { -- Sparring Match
+				["qg"] = 3063, -- Krang Stonehoof
+				["coord"] = { 49.4, 60.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, { -- Novice Warrior slain
+						["provider"] = { "n", 10721 }, -- Novice Warrior
+						["coord"] = { 49.0, 62.0, MAP.MULGORE },
+					}),
+				},
+			}),
 		}),
 		n(RARES, {
 			n(5787, {	-- Enforcer Emilgund
