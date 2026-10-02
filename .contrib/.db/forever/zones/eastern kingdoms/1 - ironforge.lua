@@ -1465,15 +1465,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
-			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
-				["coord"] = { 60.8, 44.2, MAP.IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = appendGroups(ENCHANTING_RECIPES.COMMON_RECIPES, {
-					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
-						["isLimited"] = true,
-					}),
-				}),
-			}),
 			n(8117, {	-- Wizbang Booms
 				["coord"] = { 31.8, 63.4, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
