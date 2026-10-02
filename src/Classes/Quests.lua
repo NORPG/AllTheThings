@@ -317,7 +317,6 @@ local function PrintQuestInfoViaCallback(questID, new)
 	RequestLoadQuestByID(questID, PrintQuestInfoCallback, new)
 end
 local DirtyQuests = {}
-local IsQuestFlaggedCompletedForObject;
 local CACHE = "Quests"
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -505,24 +504,6 @@ local OtherCharacterCompletedQuests = setmetatable({}, {
 	end
 })
 local IsPartySyncActive = false;
-IsQuestFlaggedCompletedForObject = function(t)
-	local questID = t.questID;
-	if questID then
-		if IsQuestFlaggedCompleted(questID) then return 1; end
-		if not t.repeatable then
-			-- ATT Account cache tracking (may eventually remove)
-			if app.IsAccountTracked("Quests", questID) then return 2 end
-			-- WoW Account tracking
-			if app.Settings.AccountWide.Quests and IsQuestFlaggedCompletedOnAccount(questID) then return 2 end
-		end
-	end
-	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
-	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
-	-- If the quest has an altQuest which was completed on this character and this character is not in Party Sync nor tracking Locked Quests, return shared completed
-	if not app.MODE_DEBUG_OR_ACCOUNT and not IsPartySyncActive and not app.Settings.Collectibles.QuestsLocked and t.altcollected then
-		return 2;
-	end
-end
 local CollectibleAsQuest = function(t)
 	-- consolidated representation of whether a Thing can be collectible via QuestID
 	local questID = t.questID;
@@ -2977,7 +2958,7 @@ app.GetQuestName = function(questID)
 	return QuestNameFromID[questID];
 end;
 app.IsQuestFlaggedCompleted = IsQuestFlaggedCompleted;
-app.IsQuestFlaggedCompletedForObject = IsQuestFlaggedCompletedForObject;
+app.IsQuestFlaggedCompletedForObject = function() app.print("IsQuestFlaggedCompletedForObject is no longer implemented") end
 app.IsQuestReadyForTurnIn = C_QuestLog_ReadyForTurnIn;
 app.IsQuestSaved = IsQuestSaved;
 end
