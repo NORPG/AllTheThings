@@ -73,10 +73,15 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(98423, {	-- The Treaty of Understanding
-					-- CRIEVE NOTE: Not sure where this is obtained yet.
 					qs = 281030,	-- Treaty of Understanding (QS!)
 					races = ALLIANCE_ONLY,
 					lvl = 9,
+					groups = {
+						objective(1, {	-- Deliver the Treaty of Understanding to Magni Bronzebeard
+							provider = { "n", 2784 },	-- King Magni Bronzebeard
+							coord = { 39.3, 56.0, MAP.IRONFORGE },
+						}),
+					},
 				}),
 			}),
 			e(3493, {	-- Faldrim Anvilmar
