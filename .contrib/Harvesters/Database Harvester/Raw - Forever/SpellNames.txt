@@ -31766,3 +31766,88 @@
 1320580@@@Desert Winds
 1320643@@@Water Breathing
 1320658@@@Unleash Swarm
+1.60.1.70009
+2833@@@Heavy Armor Kit
+8230@@@Flametongue Totem
+8250@@@Flametongue Totem
+8515@@@Windfury Totem
+10344@@@Thick Armor Kit
+10521@@@Flametongue Totem
+10609@@@Windfury Totem
+10612@@@Windfury Totem
+11406@@@Potion of Demon Slaying
+11477@@@Potion of Demon Slaying
+15036@@@Flametongue Totem
+16953@@@Blood Frenzy
+16958@@@Blood Frenzy
+16959@@@Blood Frenzy
+19057@@@Rugged Armor Kit
+22725@@@Core Armor Kit
+25109@@@Increase Spell Dam 8
+25110@@@Increase Spell Dam 16
+25111@@@Increase Spell Dam 24
+407995@@@Primal Bite
+1238069@@@Primal Bite
+1238070@@@Primal Bite
+1238073@@@Primal Bite
+1251752@@@Potion of Elemental Purging
+1251753@@@Potion of Beast Slaying
+1252558@@@Potion of Elemental Purging
+1252559@@@Potion of Beast Slaying
+1254748@@@Forceful Heavy Armor Kit
+1254750@@@Mystic Heavy Armor Kit
+1254767@@@Mystic Thick Armor Kit
+1254768@@@Forceful Thick Armor Kit
+1254770@@@Mystic Rugged Armor Kit
+1254772@@@Forceful Rugged Armor Kit
+1291816@@@Recently Siphoned the Grave
+1292969@@@Spiritcaller Leggings
+1292970@@@Spiritcaller Grips
+1292971@@@Spiritcaller Spaulders
+1299735@@@Necropile Drain
+1299737@@@Necropile Drain
+1299914@@@Spiritcaller Kilt
+1299915@@@Spiritcaller Gloves
+1299916@@@Spiritcaller Mantle
+1306907@@@Wild Leather Armor Kit
+1320726@@@Increased Feral Combat
+1320758@@@Summon Spawn of Grubthor
+1320808@@@Wound
+1320824@@@Rend
+1320864@@@Repair the Atal'ai Spear
+1320898@@@Toss Crystal Heart
+1320904@@@Conjure Pylon Protector
+1320922@@@Stock Crate
+1320925@@@Ablaze
+1320930@@@Shock
+1320965@@@Mend Windstone
+1320971@@@Gather Data
+1320972@@@Gather Data
+1321139@@@Night Watchman's Torch
+1321196@@@Chain Lightning
+1321197@@@Spirit Wolves
+1321234@@@Rend
+1321320@@@Shiny Silver Coin
+1321323@@@Shiny Silver Coin
+1321337@@@DNT
+1321339@@@DNT
+1321343@@@DNT
+1321449@@@Create Area Trigger
+1321558@@@Siphon the Grave
+1321560@@@Siphon the Grave
+1321572@@@Evasive
+1321586@@@Rotmending
+1321587@@@Rotmending
+1321861@@@Resting
+1321936@@@Disease Cloud
+1321937@@@Disease Cloud
+1321938@@@Knockdown
+1321952@@@Gargoyle Strike
+1321960@@@Move to Highest Threat Target Primer
+1321998@@@Immolation
+1321999@@@Immolation
+1322000@@@Flame Buffet
+1322001@@@Flame Buffet
+1322004@@@Infernal
+1322005@@@Infernal
+1322007@@@Summon Voidwalker
