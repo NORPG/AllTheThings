@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(258916, {	-- Garsecg <The Hull Render>
 				["coord"] = { 69.7, 44.9, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["questID"] = 94856,	-- Shared with Lady Liminus from Eversong Woods? 01.08.2026.
+				["questID"] = 94856,
 				["groups"] = {
 					i(280710),	-- Garsecg's Barnacled Girdle
 					i(280714),	-- Hull Render Hauberk
@@ -144,9 +144,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(98344, {	-- Weekly reputation: Farthik the Plunderer
 					["name"] = "Farthik the Plunderer weekly reputation obtained.",
 				}),
-				q(98350, {	-- Weekly reputation: Garsecg
-					["name"] = "Garsecg weekly reputation obtained.",
-				}),
+				-- Blizzard switched to using this questID for the Achievement Criteria recently since it was originally set to 94856
+				-- which was correct, but killing Garsecg actually triggered 92393 instead, so since no one could get achievement criteria for the rare, they changed the Criteria. Then they fixed the rare questID trigger. Quite strange.
+				-- q(98350, {	-- Weekly reputation: Garsecg
+				-- 	["name"] = "Garsecg weekly reputation obtained.",
+				-- }),
 				q(98348, {	-- Weekly reputation: Hisstara
 					["name"] = "Hisstara weekly reputation obtained.",
 				}),
