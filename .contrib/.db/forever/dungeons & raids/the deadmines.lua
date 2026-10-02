@@ -38,7 +38,7 @@ root(ROOTS.Instances, {
 				}),
 				q(92819, {	-- Destruction in Deadmines (2/2)
 					sourceQuest = 92753,	-- Destruction in Deadmines (1/2)
-					qg = 253092,	-- Alba Fairmoon
+					qg = 253279,	-- Alba Fairmoon
 					coord = { 52.5, 53.0, MAP.WESTFALL },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
