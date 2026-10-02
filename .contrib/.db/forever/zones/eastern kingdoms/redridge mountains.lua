@@ -399,9 +399,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				sourceQuest = 345,	-- Ink Supplies (Elwynn Forest)
 				qg = 341,	-- Foreman Oslow
 				coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
-				cost = { { "i", 2798, 5 } },	-- Rethban Ore
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/5 Rethban Ore
+						["providers"] = {
+							{ "i", 2798 },	-- Rethban Ore
+							{ "n", 580 },	-- Redridge Drudger
+							{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
+							{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
+						},
+					}),
+				},
 			}),
 			q(119, {	-- Return to Verner
 				sourceQuest = 118,	-- The Price of Shoes
@@ -1833,13 +1842,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				["coords"] = {
 					{ 44.0, 72.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 32.2, 82.6, MAP.REDRIDGE_MOUNTAINS },
-				},
-			}),
-			i(2798, {	-- Rethban Ore
-				providers = {
-					{ "n", 580 },	-- Redridge Drudger
-					{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
-					{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
 				},
 			}),
 			i(1462, {	-- Ring of the Shadow
