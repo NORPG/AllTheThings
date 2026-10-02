@@ -6,7 +6,10 @@ from packaging.version import Version
 from typing import Optional
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
-DEBUGGING_FOLDER = Path("..", "..", "..", ".contrib", "Debugging")
+STANDARD_FOLDER = Path("..", "..", ".db", "standard")
+SHARED_FOLDER = Path("..", "..", ".db", "shared")
+FOREVER_FOLDER = Path("..", "..", ".db", "forever")
+DEBUGGING_FOLDER = Path("..", "..", "Debugging")
 DELIMITER = "@@@"
 # Define patch version ranges per flavor
 FLAVOR_RANGES: dict[str, tuple[Version, Optional[Version]]] = {
@@ -320,7 +323,7 @@ class Followers(Thing):
 
 
 class Illusions(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "IllusionDB.lua")
+    db_path = Path(STANDARD_FOLDER, "00 - DB", "IllusionDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -388,7 +391,7 @@ class Items(Thing):
 
 
 class Mounts(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "MountDB.lua")
+    db_path = Path(SHARED_FOLDER, "modules", "MountDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -424,7 +427,7 @@ class Mounts(Thing):
 
 
 class Pets(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "PetDB.lua")
+    db_path = Path(SHARED_FOLDER, "modules", "PetDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -546,7 +549,7 @@ class Titles(Thing):
 
 
 class Toys(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "ToyDB.lua")
+    db_path = Path(SHARED_FOLDER, "modules", "ToyDB.lua")
 
     @staticmethod
     def table() -> str:

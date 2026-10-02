@@ -5,6 +5,8 @@ from pathlib import Path
 from packaging import version
 from ThingTypes import (
     DATAS_FOLDER,
+    STANDARD_FOLDER,
+    FOREVER_FOLDER,
     DELIMITER,
     FLAVOR_FOLDERS
 )
@@ -139,12 +141,19 @@ def get_quest_names(flavor: str) -> None:
         expansion: create_dict_from_raw(f"{expansion}.txt")
         for expansion in expansion_dict
     }
-    missing_path = Path(
-        DATAS_FOLDER,
-        "00 - Missing DB",
-        f"{FLAVOR_FOLDERS[flavor]}",
-        "MissingQuests.txt",
-    )
+    if flavor == "Forever":
+        missing_path = Path(
+            FOREVER_FOLDER,
+            "00 - Missing DB",
+            "MissingQuests.txt",
+        )
+    else:
+        missing_path = Path(
+            STANDARD_FOLDER,
+            "00 - Missing DB",
+            f"{FLAVOR_FOLDERS[flavor]}",
+            "MissingQuests.txt",
+        )
     with open(missing_path, "r") as missing_file:
         missing_lines: list[str] = missing_file.readlines()
         for index, missing_line in enumerate(missing_lines):

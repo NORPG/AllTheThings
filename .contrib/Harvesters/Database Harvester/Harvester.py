@@ -12,6 +12,9 @@ from collections.abc import Iterable
 from QuestNames import get_quest_names
 from ThingTypes import (
     DATAS_FOLDER,
+    FOREVER_FOLDER,
+    STANDARD_FOLDER,
+    SHARED_FOLDER,
     DEBUGGING_FOLDER,
     DELIMITER,
     FLAVOR_RANGES,
@@ -70,9 +73,29 @@ def things_version(build: str) -> list[type[Thing]]:
     return thing_list
 
 
-def create_dict_from_raw(file_name: str, n: int) -> dict[str, list[str]]:
+def create_dict_from_raw_retail(file_name: str, n: int) -> dict[str, list[str]]:
     """This function creates a dict of raw files"""
     raw_path = Path("Raw", file_name)
+    item_dict: dict[str, list[str]] = {}
+    with open(raw_path, "r+") as raw_file:
+        lines = raw_file.readlines()
+        for line in lines:
+            try:
+                key = line.split(DELIMITER)[0].strip()
+                value = line.split(DELIMITER)[n].strip()
+            except IndexError:
+                continue
+            if key in item_dict.keys():
+                name_list: list[str] = item_dict[key]
+                name_list.append(value)
+                item_dict[key] = name_list
+            else:
+                item_dict[key] = [f"{value}"]
+    return item_dict
+
+def create_dict_from_raw_forever(file_name: str, n: int) -> dict[str, list[str]]:
+    """This function creates a dict of raw files"""
+    raw_path = Path("Raw - Forever", file_name)
     item_dict: dict[str, list[str]] = {}
     with open(raw_path, "r+") as raw_file:
         lines = raw_file.readlines()
@@ -95,8 +118,12 @@ def create_patch_dict_from_raw(thing: type[Thing], flavor: str) -> dict[str, lis
     patch_data: dict[str, list[dict[str, Optional[str]]]] = {}
     keys: list[str] = thing.id_schema()
     current_patch: str = "1.0.0.00000"
+    if flavor == "Forever":
+        raw_patch = Path("Raw", f"{thing.__name__}.txt")
+    else:
+        raw_patch = Path("Raw - Forever", f"{thing.__name__}.txt")
 
-    with open(Path("Raw", f"{thing.__name__}.txt"), "r", encoding="utf-8-sig") as file:
+    with open(raw_patch, "r", encoding="utf-8-sig") as file:
         for line in file:
             line = line.strip()
             if DELIMITER in line or line.isdigit():
@@ -115,8 +142,12 @@ def create_patch_dict_from_raw_recipes(profession: str, flavor: str) -> dict[str
     patch_data: dict[str, list[dict[str, Optional[str]]]] = {}
     keys: list[str] = Recipes.id_schema()
     current_patch: str = "1.0.0.00000"
+    if flavor == "Forever":
+        raw_patch = Path("Raw", "Professions", f"{profession}.txt")
+    else:
+        raw_patch = Path("Raw - Forever", "Professions", f"{profession}.txt")
 
-    with open(Path("Raw", "Professions", f"{profession}.txt"), "r", encoding="utf-8-sig") as file:
+    with open(raw_patch, "r", encoding="utf-8-sig") as file:
         for line in file:
             line = line.strip()
             if DELIMITER in line or line.isdigit():
@@ -220,26 +251,36 @@ def remove_empty_builds(lines: list[str]) -> list[str]:
     return clean_lines
 
 
-def get_other_skilllines() -> list[str]:
+def get_other_skilllines(flavor: str) -> list[str]:
     """Get other interesting skilllines ."""
     other_skilllines = list[str]()
-    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
+    if flavor == "Forever":
+        exclusion_path = Path("Exclusion - Forever", "SkillLineOther.txt")
+    else:
+        exclusion_path = Path("Exclusion", "SkillLineOther.txt")
+    with open(exclusion_path) as skilllineother_file:
         for line in skilllineother_file:
             skillline_id = remove_non_digits(line.split(DELIMITER)[0])
             other_skilllines.append(skillline_id)
     return other_skilllines
 
 
-def build_profession_dict() -> dict[str, list[str]]:
+def build_profession_dict(flavor: str) -> dict[str, list[str]]:
     profession_dict: dict[str, list[str]] = {}
+    if flavor == "Forever":
+        create_dict_from_raw = create_dict_from_raw_forever
+        exclusion_list = extract_nth_column(Path("Exclusion - Forever", "SkillLines.txt"), 0)
+    else:
+        create_dict_from_raw = create_dict_from_raw_retail
+        exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
+        profession_dict["Runeforging"] = ["776", "960"]    
     raw_profession_dict: dict[str, list[str]] = create_dict_from_raw("SkillLines.txt", 1)
-    exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
     for exclusion in exclusion_list:
         raw_profession_dict.pop(exclusion.strip(), "")
     for key, value in raw_profession_dict.items():
         profession_dict[value[0]] = [key]
-    profession_dict["Other"] = get_other_skilllines()
-    profession_dict["Runeforging"] = ["776", "960"]
+    
+    profession_dict["Other"] = get_other_skilllines(flavor)
     return profession_dict
 
 
@@ -321,14 +362,22 @@ def get_thing_data(thing: type[Thing], build: str) -> list[str]:
     return thing_list
 
 
-def sort_raw_file_recipes() -> None:
+def sort_raw_file_recipes(flavor: str) -> None:
     """Sort raw files for recipes."""
-    profession_dict: dict[str, list[str]] = build_profession_dict()
-    raw_path_dict: dict[str, Path] = {
-        profession: Path("Raw", "Professions", f"{profession}.txt")
-        for profession in profession_dict
+    profession_dict: dict[str, list[str]] = build_profession_dict(flavor)
+    if flavor == "Forever":
+        recipe_path = Path("Raw - Forever", "Recipes.txt")
+        raw_path_dict: dict[str, Path] = {
+            profession: Path("Raw - Forever", "Professions", f"{profession}.txt")
+            for profession in profession_dict   
+      }
+    else:
+        recipe_path = Path("Raw", "Recipes.txt")
+        raw_path_dict: dict[str, Path] = {
+            profession: Path("Raw", "Professions", f"{profession}.txt")
+            for profession in profession_dict
     }
-    with open(Path("Raw", "Recipes.txt")) as raw_file:
+    with open(recipe_path) as raw_file:
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
             print(profession)
@@ -345,14 +394,21 @@ def sort_raw_file_recipes() -> None:
                 sorted_file.writelines(recipe_list)
 
 
-def get_itemdb_difference(profession: str) -> list[str]:
+def get_itemdb_difference(profession: str, flavor: str) -> list[str]:
     """Get itemDB difference for recipes"""
     itemdb_list = list[str]()
-    itemdb_path = Path(
-        DATAS_FOLDER,
-        "00 - Profession DB",
-        f"{profession}.lua",
-    )
+    if flavor == "Forever":
+        itemdb_path = Path(
+            FOREVER_FOLDER,
+            "profession dB",
+            f"{profession.lower()}.lua",
+        )
+    else:
+        itemdb_path = Path(
+            STANDARD_FOLDER,
+            "00 - Profession DB",
+            f"{profession}.lua",
+        )
     try:
         with open(itemdb_path) as itemdb_file:
             for line in itemdb_file:
@@ -425,16 +481,21 @@ def write_missing_file(
 
 
 def create_missing_file_recipes(flavor: str) -> None:
-    profession_dict = build_profession_dict()
+    profession_dict = build_profession_dict(flavor)
 
     for profession in profession_dict:
         patch_data = create_patch_dict_from_raw_recipes(profession, flavor)
         raw_ids = get_raw_ids(patch_data)
         existing_ids = get_existing_ids(Recipes)
-        excluded_ids = extract_nth_column(Path("Exclusion", "Professions", f"{profession}.txt"), 0)
-        db_ids = get_itemdb_difference(profession)
+        if flavor == "Forever":
+            excluded_ids = extract_nth_column(Path("Exclusion - Forever", "Professions", f"{profession}.txt"), 0)
+            missing_path = Path(FOREVER_FOLDER, "00 - Missing DB", "Professions", f"{profession}.txt")
+        else:
+            excluded_ids = extract_nth_column(Path("Exclusion", "Professions", f"{profession}.txt"), 0)
+            missing_path = Path(STANDARD_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", "Professions", f"{profession}.txt")
+        
+        db_ids = get_itemdb_difference(profession, flavor)
 
-        missing_path = Path(DATAS_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", "Professions", f"{profession}.txt")
         write_missing_file(profession, patch_data, Recipes, raw_ids, existing_ids, excluded_ids, db_ids, missing_path, profession)
 
 
@@ -448,7 +509,12 @@ def create_missing_file(thing: type[Thing], flavor: str) -> None:
     patch_data = create_patch_dict_from_raw(thing, flavor)
     raw_ids = get_raw_ids(patch_data)
     existing_ids = get_existing_ids(thing)
-    excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
+    if flavor == "Forever":
+        excluded_ids = extract_nth_column(Path("Exclusion - Forever", f"{thing.__name__}.txt"), 0)
+        missing_path = Path(FOREVER_FOLDER, "00 - Missing DB", f"Missing{thing.__name__}.txt")
+    else:
+        excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
+        missing_path = Path(STANDARD_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", f"Missing{thing.__name__}.txt")
     db_ids: list[str] | None = None
 
     if thing.db_path:
@@ -459,23 +525,37 @@ def create_missing_file(thing: type[Thing], flavor: str) -> None:
                 if info:
                     db_ids.append(info.strip())
 
-    missing_path = Path(DATAS_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", f"Missing{thing.__name__}.txt")
+    
     write_missing_file(thing.__name__, patch_data, thing, raw_ids, existing_ids, excluded_ids, db_ids, missing_path, thing.db_path.name if thing.db_path else "Database")
 
 
 def post_process_recipes(flavor: str) -> None:
-    profession_dict: dict[str, list[str]] = build_profession_dict()
-    spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt", 1)
-    missing_path_dict: dict[str, Path] = {
-        profession: Path(
-            DATAS_FOLDER,
-            "00 - Missing DB",
-            f"{FLAVOR_FOLDERS[flavor]}",
-            "Professions",
-            f"{profession}.txt",
-        )
+    profession_dict: dict[str, list[str]] = build_profession_dict(flavor)
+    if flavor == "Forever":
+        create_dict_from_raw = create_dict_from_raw_forever
+        missing_path_dict: dict[str, Path] = {
+            profession: Path(
+                FOREVER_FOLDER,
+                "00 - Missing DB",
+                "Professions",
+                f"{profession}.txt",
+            )
+            for profession in profession_dict
+        }
+    else:
+        create_dict_from_raw = create_dict_from_raw_retail
+        missing_path_dict: dict[str, Path] = {
+            profession: Path(
+                STANDARD_FOLDER,
+                "00 - Missing DB",
+                f"{FLAVOR_FOLDERS[flavor]}",
+                "Professions",
+                f"{profession}.txt",
+            )
         for profession in profession_dict
-    }
+        }
+    spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt", 1)
+    
     for profession in profession_dict:
         print(profession)
         if not missing_path_dict[profession].exists():
@@ -503,12 +583,21 @@ def post_process(thing: type[Thing], flavor: str) -> None:
     if thing == Recipes:
         post_process_recipes(flavor)
         return
-    missing_path = Path(
-        DATAS_FOLDER,
-        "00 - Missing DB",
-        f"{FLAVOR_FOLDERS[flavor]}",
-        f"Missing{thing.__name__}.txt",
-    )
+    if flavor == "Forever":
+        create_dict_from_raw = create_dict_from_raw_forever
+        missing_path = Path(
+            FOREVER_FOLDER,
+            "00 - Missing DB",
+            f"Missing{thing.__name__}.txt",
+        )
+    else:
+        create_dict_from_raw = create_dict_from_raw_retail
+        missing_path = Path(
+            STANDARD_FOLDER,
+            "00 - Missing DB",
+            f"{FLAVOR_FOLDERS[flavor]}",
+            f"Missing{thing.__name__}.txt",
+        )
     if not missing_path.exists():
         return
     missing_lines = extract_nth_column(missing_path, 0)
@@ -650,7 +739,12 @@ def add_latest_data(build: str) -> None:
         print(thing)
         before_list: list[str] = []
         after_list: list[str] = []
-        raw_path = Path("Raw", f"{thing.__name__}.txt")
+        if (
+            version.parse("1.60.0.00000") < version.parse(build) < version.parse("1.61.0.00000")
+        ):
+            raw_path = Path("Raw - Forever", f"{thing.__name__}.txt")
+        else:
+            raw_path = Path("Raw", f"{thing.__name__}.txt")
         thing_list = get_thing_data(thing, build.strip())
         with open(raw_path, "r", encoding="utf-8") as raw_file:
             old_lines = raw_file.readlines()
@@ -703,14 +797,14 @@ def create_missing_files(flavor: str) -> None:
 
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
-add_latest_data("1.60.1.69876")
+# add_latest_data("1.60.1.69876")
 """Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
-# sort_raw_file_recipes()
+# sort_raw_file_recipes("Forever")
 """Step 2b: If new items has been detected. They will be in FastItem.txt please add them to unsorted."""
 
 """How to generate Missing Files"""
 """Step 1: Delete questDB.json in DATAS/00 - Item DB folder"""
 """Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
 """Step 3: Run create_missing_files(flavor) and (you have to uncomment it)"""
-# create_missing_files("Retail")
+create_missing_files("Forever")
