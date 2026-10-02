@@ -229,6 +229,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					r(11452),	-- Restorative Potion
 				},
 			}),
+			q(86585, {	-- Banner of the Fallen
+				["qg"] = 269153,	-- Mountaineer Ylva
+				["qi"] = 253247,	-- Banner of Ironforge
+				["coord"] = { 31.8, 86.2, MAP.LOCH_MODAN },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					objective(1, {	-- 0/1 Headsplitter slain
+						["provider"] = { "n", 269185 },	-- Headsplitter
+					}),
+					i(281253),	-- Mountaineer's Greataxe
+					i(281254),	-- Invader's Mace
+				},
+			}),
 			q(2038, {	-- Bingles' Missing Supplies
 				["sourceQuest"] = 2039,	-- Find Bingles
 				["qg"] = 6577,	-- Bingles Blastenheimer
