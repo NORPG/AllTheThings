@@ -14,13 +14,13 @@ MAP = setmetatable({
 	-- Roots
 	AZEROTH = 947;
 	COSMIC = 947;
-	
+
 	-- Battlegrounds
 	ALTERAC_VALLEY = 1459;
 	ARATHI_BASIN = 1461;
 	WARSONG_GULCH = 1460;
 	DARKSPEAR_ISLANDS = 2524;
-	
+
 	-- Raids (Classic)
 	BLACKWING_LAIR = 287;
 	MOLTEN_CORE = 232;
@@ -42,6 +42,7 @@ MAP = setmetatable({
 	DIRE_MAUL_COURT_OF_THE_HIGHBORNE = 237;	-- Court of the Highborne
 	DIRE_MAUL_PRISON_OF_IMMOLTHAR = 238;	-- Prison of Immol'Thar
 	GNOMEREGAN = 226;
+	LBRS = 250,	-- TODO: @Crieve - verify pls
 	MARAUDON = 280;
 	RAGEFIRE_CHASM = 213;
 	RAZORFEN_DOWNS = 300;
@@ -56,7 +57,7 @@ MAP = setmetatable({
 	ULDAMAN_OUTDOORS = 16;
 	WAILING_CAVERNS = 279;
 	ZULFARRAK = 219;
-	
+
 	-- Kalimdor
 	KALIMDOR = 1414;
 	ASHENVALE = 1440;
@@ -80,7 +81,7 @@ MAP = setmetatable({
 	THUNDER_BLUFF = 1456;
 	UNGORO_CRATER = 1449;
 	WINTERSPRING = 1452;
-	
+
 	-- Eastern Kingdoms
 	EASTERN_KINGDOMS = 1415;
 	ALTERAC_MOUNTAINS = 1416;
@@ -112,7 +113,7 @@ MAP = setmetatable({
 	WESTERN_PLAGUELANDS = 1422;
 	WESTFALL = 1436;
 	WETLANDS = 1437;
-	
+
 	-- Forever
 	ZEPHRAS_ISLE = 2521;
 	MOUNT_HYJAL	= 2482;

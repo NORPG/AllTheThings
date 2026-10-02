@@ -103,7 +103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7635, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- A Proper String
-					["sourceQuest"] = 7633,	-- An Introduction
+					-- ["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
 					["qg"] = 14525,	-- Stoma the Ancient
 					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
 					-- #if AFTER WRATH
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7634, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Ancient Sinew Wrapped Lamina
-					["sourceQuest"] = 7633,	-- An Introduction
+					-- ["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
 					["qg"] = 14526,	-- Hastat the Ancient
 					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
 					["maps"] = { MAP.WINTERSPRING },
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				q(84546, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
-					["sourceQuest"] = 7633,	-- An Introduction
+					-- ["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
@@ -322,7 +322,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
-					["sourceQuest"] = 7633,	-- An Introduction
+					-- ["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
