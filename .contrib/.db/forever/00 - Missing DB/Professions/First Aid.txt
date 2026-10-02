@@ -1,4 +1,8 @@
 1.60.1.69876
+r(7935),	-- Strong Anti-Venom
+r(23787),	-- Powerful Anti-Venom
+r(30021),	-- Crystal Infused Bandage
+r(470349),	-- Dense Runecloth Bandage
 r(1240927),	-- First Aid
 r(1240928),	-- First Aid
 r(1240929),	-- First Aid

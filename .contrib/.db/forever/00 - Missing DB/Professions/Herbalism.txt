@@ -1,4 +1,7 @@
 1.60.1.69876
+r(2369),	-- Herbalism
+r(2371),	-- Herbalism
+r(8387),	-- Find Herbs
 r(1235236),	-- Herb Gathering
 r(1240949),	-- Herbalism
 r(1240960),	-- Herbalism

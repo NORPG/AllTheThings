@@ -1,7 +1,186 @@
 1.60.1.69876
+r(2158),	-- Fine Leather Boots
+r(2163),	-- White Leather Jerkin
+r(2164),	-- Fine Leather Gloves
+r(2169),	-- Dark Leather Tunic
+r(3762),	-- Hillman's Leather Vest
+r(3765),	-- Dark Leather Gloves
+r(3767),	-- Hillman's Belt
+r(3769),	-- Dark Leather Shoulders
+r(3771),	-- Barbaric Gloves
+r(3772),	-- Green Leather Armor
+r(3773),	-- Guardian Armor
+r(3775),	-- Guardian Belt
+r(3777),	-- Guardian Leather Bracers
+r(3778),	-- Gem-studded Leather Belt
+r(3779),	-- Barbaric Belt
+r(4096),	-- Raptor Hide Harness
+r(4097),	-- Raptor Hide Belt
+r(5244),	-- Kodo Hide Bag
+r(6702),	-- Murloc Scale Belt
+r(6703),	-- Murloc Scale Breastplate
+r(6704),	-- Thick Murloc Armor
+r(6705),	-- Murloc Scale Bracers
+r(7133),	-- Fine Leather Pants
+r(7149),	-- Barbaric Leggings
+r(7153),	-- Guardian Cloak
+r(7953),	-- Deviate Scale Cloak
+r(7954),	-- Deviate Scale Gloves
+r(7955),	-- Deviate Scale Belt
+r(8322),	-- Moonglow Vest
+r(9064),	-- Rugged Leather Pants
+r(9070),	-- Black Whelp Cloak
+r(9072),	-- Red Whelp Gloves
+r(9146),	-- Herbalist's Gloves
+r(9147),	-- Earthen Leather Shoulders
+r(9148),	-- Pilferer's Gloves
+r(9149),	-- Heavy Earthen Gloves
+r(9195),	-- Dusky Leather Leggings
+r(9197),	-- Green Whelp Armor
+r(9202),	-- Green Whelp Bracers
+r(9207),	-- Dusky Boots
+r(9208),	-- Swift Boots
+r(10490),	-- Comfortable Leather Hat
+r(10509),	-- Turtle Scale Gloves
+r(10516),	-- Nightscape Shoulders
+r(10520),	-- Big Voodoo Robe
+r(10525),	-- Tough Scorpid Breastplate
+r(10529),	-- Wild Leather Shoulders
+r(10531),	-- Big Voodoo Mask
+r(10533),	-- Tough Scorpid Bracers
+r(10542),	-- Tough Scorpid Gloves
+r(10544),	-- Wild Leather Vest
+r(10546),	-- Wild Leather Helmet
+r(10550),	-- Nightscape Cloak
+r(10554),	-- Tough Scorpid Boots
+r(10560),	-- Big Voodoo Pants
+r(10562),	-- Big Voodoo Cloak
+r(10564),	-- Tough Scorpid Shoulders
+r(10566),	-- Wild Leather Boots
+r(10568),	-- Tough Scorpid Leggings
+r(10570),	-- Tough Scorpid Helm
+r(10572),	-- Wild Leather Leggings
+r(10574),	-- Wild Leather Cloak
+r(19048),	-- Heavy Scorpid Bracers
+r(19049),	-- Wicked Leather Gauntlets
+r(19051),	-- Heavy Scorpid Vest
+r(19064),	-- Heavy Scorpid Gauntlets
+r(19070),	-- Heavy Scorpid Belt
+r(19075),	-- Heavy Scorpid Leggings
+r(19088),	-- Heavy Scorpid Helm
+r(19100),	-- Heavy Scorpid Shoulders
+r(19106),	-- Onyxia Scale Breastplate
+r(21943),	-- Gloves of the Greatfather
+r(22711),	-- Shadowskin Gloves
+r(22727),	-- Core Armor Kit
+r(22921),	-- Girdle of Insight
+r(22922),	-- Mongoose Boots
+r(22923),	-- Swift Flight Bracers
+r(23190),	-- Heavy Leather Ball
+r(23399),	-- Barbaric Bracers
 r(23628),	-- Heavy Timbermaw Belt
 r(23629),	-- Heavy Timbermaw Boots
+r(23703),	-- Might of the Timbermaw
+r(23704),	-- Timbermaw Brawlers
+r(23705),	-- Dawn Treaders
+r(23706),	-- Golden Mantle of the Dawn
+r(23707),	-- Lava Belt
+r(24121),	-- Primal Batskin Jerkin
+r(24122),	-- Primal Batskin Gloves
+r(24123),	-- Primal Batskin Bracers
+r(24124),	-- Blood Tiger Breastplate
+r(24125),	-- Blood Tiger Shoulders
+r(24846),	-- Spitfire Bracers
+r(24847),	-- Spitfire Gauntlets
+r(24848),	-- Spitfire Breastplate
+r(24849),	-- Sandstalker Bracers
+r(24850),	-- Sandstalker Gauntlets
+r(24851),	-- Sandstalker Breastplate
+r(24940),	-- Black Whelp Tunic
+r(28472),	-- Bramblewood Helm
+r(28473),	-- Bramblewood Boots
+r(28474),	-- Bramblewood Belt
 r(44953),	-- Winter Boots
+r(429354),	-- Void-Touched Leather Gloves
+r(429869),	-- Void-Touched Leather Gauntlets
+r(435819),	-- Faintly Glowing Leather
+r(435904),	-- Glowing Gneuro-Linked Cowl
+r(435949),	-- Glowing Hyperconductive Scale Coif
+r(435951),	-- Gneuro-Conductive Channeler's Hood
+r(435953),	-- Rad-Resistant Scale Hood
+r(439105),	-- Big Voodoo Mask
+r(439108),	-- Big Voodoo Robe
+r(439110),	-- Guardian Leather Bracers
+r(439112),	-- Guardian Belt
+r(439114),	-- Guardian Pants
+r(439116),	-- Turtle Scale Breastplate
+r(439118),	-- Turtle Scale Gloves
+r(446183),	-- Paranoia Mantle
+r(446185),	-- Shrieking Spaulders
+r(446186),	-- Cacophonous Chain Shoulderguards
+r(446189),	-- Shoulderpads of Obsession
+r(446190),	-- Wailing Chain Mantle
+r(446192),	-- Membrane of Dark Neurosis
+r(451706),	-- Screaming Chain Pauldrons
+r(461645),	-- Honed Blue Dragonscale Shoulders
+r(461649),	-- Living Green Dragonscale Leggings
+r(461653),	-- Brilliant Chromatic Cloak
+r(461655),	-- Hardened Black Dragonscale Breastplate
+r(461657),	-- Hardened Black Dragonscale Leggings
+r(461659),	-- Hardened Black Dragonscale Shoulders
+r(461661),	-- Masterwork Volcanic Breastplate
+r(461663),	-- Masterwork Volcanic Shoulders
+r(461665),	-- Masterwork Volcanic Leggings
+r(461673),	-- Honed Blue Dragonscale Breastplate
+r(461677),	-- Living Green Dragonscale Gauntlets
+r(461690),	-- Mastercrafted Shifting Cloak
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461706),	-- Swift Flight Vambraces
+r(461720),	-- Living Green Dragonscale Breastplate
+r(461722),	-- Devilcore Gauntlets
+r(461724),	-- Devilcore Leggings
+r(461754),	-- Girdle of Arcane Insight
+r(462227),	-- Honed Blue Dragonscale Leggings
+r(1213513),	-- Glowing Chitin Armor Kit
+r(1213519),	-- Sharpened Chitin Armor Kit
+r(1213521),	-- Razorbramble Cowl
+r(1213523),	-- Razorbramble Shoulderpads
+r(1213525),	-- Razorbramble Leathers
+r(1213717),	-- Sandstalker Bracers
+r(1213720),	-- Sandstalker Gauntlets
+r(1213723),	-- Sandstalker Breastplate
+r(1213726),	-- Spitfire Bracers
+r(1213728),	-- Spitfire Gauntlets
+r(1213731),	-- Spitfire Breastplate
+r(1213734),	-- Bramblewood Belt
+r(1213736),	-- Bramblewood Boots
+r(1213738),	-- Bramblewood Helm
+r(1213751),	-- Dreamscale Breastplate
+r(1214303),	-- Dreamscale Kilt
+r(1223774),	-- Icy Scale Breastplate
+r(1223776),	-- Icy Scale Gauntlets
+r(1223778),	-- Icy Scale Bracers
+r(1223780),	-- Polar Tunic
+r(1223782),	-- Polar Gloves
+r(1223784),	-- Polar Bracers
+r(1224615),	-- Scarlet Infiltrator's Bandana
+r(1224616),	-- Scarlet Infiltrator's Shoulderpads
+r(1224617),	-- Scarlet Infiltrator's Vest
+r(1224618),	-- Scarlet Infiltrator's Bracers
+r(1224619),	-- Scarlet Infiltrator's Gloves
+r(1224620),	-- Scarlet Infiltrator's Belt
+r(1224621),	-- Scarlet Infiltrator's Trousers
+r(1224622),	-- Scarlet Infiltrator's Shoes
+r(1224623),	-- Scarlet Huntsman's Coif
+r(1224624),	-- Scarlet Huntsman's Pauldrons
+r(1224625),	-- Scarlet Huntsman's Chain
+r(1224626),	-- Scarlet Huntsman's Wristguards
+r(1224627),	-- Scarlet Huntsman's Handguards
+r(1224628),	-- Scarlet Huntsman's Clasp
+r(1224629),	-- Scarlet Huntsman's Legguards
+r(1224630),	-- Scarlet Huntsman's Boots
+r(1226689),	-- Scarlet Quiver
+r(1226690),	-- Scarlet Ammo Pouch
 r(1240950),	-- Leatherworking
 r(1240961),	-- Leatherworking
 r(1240972),	-- Leatherworking

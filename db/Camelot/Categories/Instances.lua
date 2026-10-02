@@ -1353,10 +1353,10 @@ inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
 h(-45,{
 q(7635,{awp=10001,c={3},coords={
-[1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},rwp=40003,sourceQuests={7633},g={
+[1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},rwp=40003,g={
 i(18724,{b=1,c={3},lvl=60})}}),
 q(7634,{awp=10001,c={3},coords={
-[1448]={{47,24.48}}},cost={{"i",18704,1}},lvl=60,maps={1452},qgs={14526},rwp=40003,sourceQuests={7633},g={
+[1448]={{47,24.48}}},cost={{"i",18704,1}},lvl=60,maps={1452},qgs={14526},rwp=40003,g={
 i(18714,{b=1,c={3},f=113,lvl=60,spellID=29414})}}),
 q(7496,{awp=10001,coords={
 [1453]={{67.2,85.1}}},lvl=60,qgs={1748},r=2,rwp=100000,sourceQuests={7495},g={
@@ -1371,7 +1371,7 @@ i(18406,{b=1,f=53,spellID=1287808})}}),
 q(7507,{c={1,2},description="You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",lvl=60,maps={234},qss={18401},rwp=30300,g={
 i(18513,{b=1,lvl=60})}}),
 q(7636,{awp=10001,c={3},coords={
-[1448]={{47,24.48}}},description="You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",lvl=60,maps={1428,1449,1451,1452},qgs={14524},qis={18708},rwp=40003,sourceQuests={7633},g={
+[1448]={{47,24.48}}},description="You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",lvl=60,maps={1428,1449,1451,1452},qgs={14524},qis={18708},rwp=40003,g={
 qo(1,{coords={
 [1449]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",providers={{"i",18952}}}),
 qo(2,{coords={

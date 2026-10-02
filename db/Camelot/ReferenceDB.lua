@@ -3,315 +3,315 @@ local appName, _ = ...
 _.ExplorationAreaPositionDB=
 {[9]={[1429]={{50.5,42}},[1453]={{42.5,32.5}}},[18]={[1429]={{52,63.5}}},[20]={[1436]={{43.5,66.5}}},[57]={[1429]={{37.5,84}}},[60]={[1429]={{25,76}},[1436]={{23,87}}},[62]={[1429]={{66.5,79}},[1431]={{63.5,83.5}}},[68]={[1433]={{41.5,59}}},[69]={[1433]={{20.5,44.5}}},[71]={[1433]={{72.5,65.5}}},[77]={[1426]={{27.5,79}}},[80]={[1429]={{20.5,52.5}},[1453]={{23.5,34.5}}},[86]={[1429]={{74,49}}},[87]={[1429]={{40,64.5}}},[88]={[1429]={{83,65.5}}},[91]={[1429]={{66.5,66.5}}},[95]={[1433]={{23,28}}},[96]={[1433]={{70.5,42}},[2548]={{65.5,32}}},[98]={[1433]={{23,28}}},[107]={[1436]={{54.5,32.5}}},[108]={[1436]={{55,49.5}}},[109]={[1436]={{50,21}}},[111]={[1436]={{43,24}}},[113]={[1436]={{30,40.5}}},[115]={[1436]={{31,85.5}}},[132]={[1426]={{27.5,79}}},[133]={[1426]={{23.5,37.5}}},[134]={[1426]={{68,57.5}}},[135]={[1426]={{27,52}}},[136]={[1426]={{39.5,60}}},[137]={[1426]={{29.5,45.5}}},[144]={[1432]={{34,45.5}}},[146]={[1432]={{48,17.5}},[1437]={{47.5,11}}},[149]={[1432]={{33.5,23}},[1437]={{33.5,14.5}}},[211]={[1426]={{34,38}}},[212]={[1426]={{76,54}}},[219]={[1436]={{37.5,52}}},[279]={[1416]={{15,65.5}},[1421]={{7.5,65}}},[493]={[1439]={{28,30.5}},[1450]={{54,52.5}}},[556]={[1432]={{49.5,42.5}}},[656]={[1439]={{28,30.5}},[1450]={{54,52.5}}},[797]={[1429]={{53,82.5}},[1431]={{60,87}}},[798]={[1429]={{84,80}},[1431]={{90.5,83.5}}},[799]={[1429]={{47.5,18}},[1431]={{61,24}}},[801]={[1426]={{35,53}}},[802]={[1426]={{38.5,39.5}}},[803]={[1426]={{62.5,50}}},[806]={[1426]={{84.5,50.5}}},[808]={[1426]={{82,37.5}},[1432]={{85.5,33}}},[809]={[1426]={{53.5,43.5}},[1437]={{45.5,25.5}},[1455]={{57.5,30}}},[838]={[1432]={{21.5,20}},[1437]={{21.5,11.5}}},[916]={[1436]={{57,16.5}}},[917]={[1436]={{61.5,61.5}}},[918]={[1436]={{44,36}}},[920]={[1436]={{46.5,79}}},[921]={[1436]={{30.5,69}}},[922]={[1436]={{62.5,72}}},[924]={[1426]={{19,66.5}},[1432]={{20,79}}},[997]={[1433]={{70,78.5}}},[1000]={[1433]={{70.5,42}},[2548]={{65.5,32}}},[1001]={[1433]={{36.5,76.5}}},[1002]={[1429]={{6.5,72.5}},[1433]={{13,73}}},[1519]={[1429]={{20.5,52.5}},[1453]={{23.5,34.5}}},[1537]={[1426]={{53.5,43.5}},[1437]={{45.5,25.5}},[1455]={{57.5,30}}},[1617]={[1429]={{20.5,52.5}},[1453]={{23.5,34.5}}},[2361]={[1439]={{28,30.5}},[1450]={{54,52.5}}},[2362]={[1439]={{28,30.5}},[1450]={{54,52.5}}},[16622]={[2521]={{40.5,29}}},[16623]={[2521]={{40,55}}},[16624]={[2521]={{44,44}}},[16635]={[2521]={{44.5,20}}},[16685]={[1428]={{23.5,43.5}},[2548]={{29.5,43}}},[16723]={[2548]={{45.5,51}}},[16724]={[2548]={{64,82.5}}},[16725]={[2548]={{53.5,77}}},[16726]={[2548]={{65,16}}},[16727]={[2548]={{76,51}}},[16729]={[2548]={{59.5,63.5}}},[16731]={[2548]={{75.5,33.5}}},[16734]={[2548]={{51.5,45}}},[16735]={[2548]={{44,80.5}}},[16736]={[2548]={{37.5,60.5}}},[16737]={[1428]={{22,60}},[2548]={{28.5,63.5}}},[16743]={[2548]={{58,45.5}}},[17678]={[2521]={{48,18.5}}},[17780]={[1418]={{42,21.5}},[2548]={{45.5,30}}}}
 _.FlightPathDB=
-{["FlightPathMapIDs"]={1464,1463,2665}}
+{FlightPathMapIDs={1464,1463,2665}}
 _.OnInitDB=
 {}
 _.OnTooltipDB=
 {
-	["DesolaceCentaurs"] = function(t,tooltipInfo)local reputation=t.reputation if reputation>0 and reputation<9000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Kill Centaurs to Honored.",20,9000)end	end,
-	["ForAlteracValley"] = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Concerted Efforts",150,42000)addRepInfo(tooltipInfo,reputation,"Kill the General",389,42000)addRepInfo(tooltipInfo,reputation,"Kill a Captain",125,42000)addRepInfo(tooltipInfo,reputation,"Kill a Commander",12,42000)addRepInfo(tooltipInfo,reputation,"Kill an Air Master",5,42000)if reputation<21000 then	addRepInfo(tooltipInfo,reputation,"Kill a Guard (To Revered)",5,21000)end	end	end,
-	["ForArathiBasin"] = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Concerted Efforts",100,42000)_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Resources",10,42000,200)addRepInfo(tooltipInfo,reputation,"Resource Ticks",10,42000)tinsert(tooltipInfo,{left=" Every 200 or 150 Resources during AB Weekend.",r=1,g=1,b=1})end	end,
-	["ForEverlook"] = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5})end	end,
-	["ForLockpicking"] = function(t,tooltipInfo)local skills=_.CurrentCharacter.ActiveSkills[t.spellID] if skills and skills[1]<300 then	local data=t.lpdata if not data then	data={}local requireSkill=t.requireSkill _:BuildFlatSearchFilteredResponse(_:GetDatabaseRoot().g,function(group)return group.requireSkill==requireSkill and group.learnedAt and not group.nmr end,data)table.sort(data,function(a,b)return a.learnedAt>b.learnedAt end)t.lpdata=data end	tinsert(tooltipInfo,{left="Recommended Locations:",right="Minimum"})local lastLearnedAt for i,o in ipairs(data)do	if o.learnedAt<=skills[2] then	if o.learnedAt<skills[1] then	if lastLearnedAt and o.learnedAt<lastLearnedAt then	break end	lastLearnedAt=o.learnedAt end	local text="  "..o.text mapID=_.GetBestMapForGroup(o,_.CurrentMapID)if mapID then text=text.." (".._.GetMapName(mapID)..")" end	tinsert(tooltipInfo,{left=text,right=tostring(o.learnedAt),r=1,g=1,b=1})end	end	end	end,
-	["ForRatchet"] = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet (To 11999 Honored)",5,20999)end	addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)end	end,
-	["ForTimbermawHold"] = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation>=0 then	if not t.deadwood then	local f=_.SearchForField("questID",8470)if f and #f>0 then t.deadwood=f[1] end	end	if not t.winterfall then	local f=_.SearchForField("questID",8471)if f and #f>0 then t.winterfall=f[1] end	end	if not t.deadwood.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.deadwood)end	if not t.winterfall.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.winterfall)end	end	if reputation<8999 then	addRepInfo(tooltipInfo,reputation,"Kill Deadwood Furbolgs (Stops at Honored)",5,8999,-3000)end	if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Winterfall Furbolgs (Stops at Revered)",5,20999,-3000)end	local repPerTurnIn=50 addRepInfo(tooltipInfo,reputation,"Turn in Deadwood Feathers (x5) in Felwood",repPerTurnIn,42000)local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Winterfall Beads (x5) in Winterspring",repPerTurnIn,42000)local remaining=((remainingTurnIns * 5)- _.WOWAPI.GetItemCount(21383,true)- _.WOWAPI.GetItemCount(21377,true))if remaining>0 then	tinsert(tooltipInfo,{left="You need "..remaining.." more feathers/beads for Exalted.",r=1,g=1,b=0})end	if reputation<8999 then	tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in the totems or feathers until after Honored!",r=1,g=0.5,b=0.5})end	end	end,
-	["ForWarsongGulch"] = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Concerted Efforts",100,42000)local repPerFlagCapture=35 addRepInfo(tooltipInfo,reputation,"Flags Captured",repPerFlagCapture,42000)tinsert(tooltipInfo,{left=" Each capture is worth "..repPerFlagCapture.." rep, +10 on WSG Weekend.",r=1,g=1,b=1})end	end,
-	["Ravenholdt"] = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	tinsert(tooltipInfo,{left=" * PROTIP: Bring a stack of Repair Bots with you.",r=0.5,g=1,b=0.5})_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Turn in Heavy Junkboxes.",50,42000,5)end	end,
-	["RuneclothTurnIns"] = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Runecloth Turn Ins",50,42000)end	end,
-	["ThoriumBrotherhood"] = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Turn In Blood & Cores (1x each)",200,42000)addRepInfo(tooltipInfo,reputation,"Turn In Core Leather (2x each)",150,42000)addRepInfo(tooltipInfo,reputation,"Turn In Dark Iron Ore (10x each)",50,42000)end	end
+	DesolaceCentaurs = function(t,tooltipInfo)local reputation=t.reputation if reputation>0 and reputation<9000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Kill Centaurs to Honored.",20,9000)end	end,
+	ForAlteracValley = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Concerted Efforts",150,42000)addRepInfo(tooltipInfo,reputation,"Kill the General",389,42000)addRepInfo(tooltipInfo,reputation,"Kill a Captain",125,42000)addRepInfo(tooltipInfo,reputation,"Kill a Commander",12,42000)addRepInfo(tooltipInfo,reputation,"Kill an Air Master",5,42000)if reputation<21000 then	addRepInfo(tooltipInfo,reputation,"Kill a Guard (To Revered)",5,21000)end	end	end,
+	ForArathiBasin = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Concerted Efforts",100,42000)_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Resources",10,42000,200)addRepInfo(tooltipInfo,reputation,"Resource Ticks",10,42000)tinsert(tooltipInfo,{left=" Every 200 or 150 Resources during AB Weekend.",r=1,g=1,b=1})end	end,
+	ForEverlook = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5})end	end,
+	ForLockpicking = function(t,tooltipInfo)local skills=_.CurrentCharacter.ActiveSkills[t.spellID] if skills and skills[1]<300 then	local data=t.lpdata if not data then	data={}local requireSkill=t.requireSkill _:BuildFlatSearchFilteredResponse(_:GetDatabaseRoot().g,function(group)return group.requireSkill==requireSkill and group.learnedAt and not group.nmr end,data)table.sort(data,function(a,b)return a.learnedAt>b.learnedAt end)t.lpdata=data end	tinsert(tooltipInfo,{left="Recommended Locations:",right="Minimum"})local lastLearnedAt for i,o in ipairs(data)do	if o.learnedAt<=skills[2] then	if o.learnedAt<skills[1] then	if lastLearnedAt and o.learnedAt<lastLearnedAt then	break end	lastLearnedAt=o.learnedAt end	local text="  "..o.text mapID=_.GetBestMapForGroup(o,_.CurrentMapID)if mapID then text=text.." (".._.GetMapName(mapID)..")" end	tinsert(tooltipInfo,{left=text,right=tostring(o.learnedAt),r=1,g=1,b=1})end	end	end	end,
+	ForRatchet = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet (To 11999 Honored)",5,20999)end	addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)end	end,
+	ForTimbermawHold = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation>=0 then	if not t.deadwood then	local f=_.SearchForField("questID",8470)if f and #f>0 then t.deadwood=f[1] end	end	if not t.winterfall then	local f=_.SearchForField("questID",8471)if f and #f>0 then t.winterfall=f[1] end	end	if not t.deadwood.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.deadwood)end	if not t.winterfall.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.winterfall)end	end	if reputation<8999 then	addRepInfo(tooltipInfo,reputation,"Kill Deadwood Furbolgs (Stops at Honored)",5,8999,-3000)end	if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Winterfall Furbolgs (Stops at Revered)",5,20999,-3000)end	local repPerTurnIn=50 addRepInfo(tooltipInfo,reputation,"Turn in Deadwood Feathers (x5) in Felwood",repPerTurnIn,42000)local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Winterfall Beads (x5) in Winterspring",repPerTurnIn,42000)local remaining=((remainingTurnIns * 5)- _.WOWAPI.GetItemCount(21383,true)- _.WOWAPI.GetItemCount(21377,true))if remaining>0 then	tinsert(tooltipInfo,{left="You need "..remaining.." more feathers/beads for Exalted.",r=1,g=1,b=0})end	if reputation<8999 then	tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in the totems or feathers until after Honored!",r=1,g=0.5,b=0.5})end	end	end,
+	ForWarsongGulch = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Concerted Efforts",100,42000)local repPerFlagCapture=35 addRepInfo(tooltipInfo,reputation,"Flags Captured",repPerFlagCapture,42000)tinsert(tooltipInfo,{left=" Each capture is worth "..repPerFlagCapture.." rep, +10 on WSG Weekend.",r=1,g=1,b=1})end	end,
+	Ravenholdt = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	tinsert(tooltipInfo,{left=" * PROTIP: Bring a stack of Repair Bots with you.",r=0.5,g=1,b=0.5})_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Turn in Heavy Junkboxes.",50,42000,5)end	end,
+	RuneclothTurnIns = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Runecloth Turn Ins",50,42000)end	end,
+	ThoriumBrotherhood = function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Turn In Blood & Cores (1x each)",200,42000)addRepInfo(tooltipInfo,reputation,"Turn In Core Leather (2x each)",150,42000)addRepInfo(tooltipInfo,reputation,"Turn In Dark Iron Ore (10x each)",50,42000)end	end
 }
 _.OnUpdateDB=
 {
-	["ForLockpicking"] = function(t)if _.Settings.Collectibles.Recipes then	t.collectible=true local id=t.spellID local skills=_.CurrentCharacter.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=1 return end	if _.Settings.AccountWide.Recipes then	for guid,ch in pairs(ATTCharacterData)do	skills=ch.ActiveSkills and ch.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=2 return end	end	end	t.collected=false else	t.collectible=false end	end,
-	["OMARIONS_HANDBOOK"] = function(t)t.visible=true t.collectible=nil if _.MODE_DEBUG_OR_ACCOUNT or _.IsQuestFlaggedCompleted(9233)or C_QuestLog.IsOnQuest(9233)then	return false else	for spellID,skills in pairs(_.CurrentCharacter.ActiveSkills)do	if(spellID==2018 or spellID==2108 or spellID==3908)and skills[1]>270 then	t.collectible=false t.visible=false return true end	end	end	end
+	ForLockpicking = function(t)if _.Settings.Collectibles.Recipes then	t.collectible=true local id=t.spellID local skills=_.CurrentCharacter.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=1 return end	if _.Settings.AccountWide.Recipes then	for guid,ch in pairs(ATTCharacterData)do	skills=ch.ActiveSkills and ch.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=2 return end	end	end	t.collected=false else	t.collectible=false end	end,
+	OMARIONS_HANDBOOK = function(t)t.visible=true t.collectible=nil if _.MODE_DEBUG_OR_ACCOUNT or _.IsQuestFlaggedCompleted(9233)or C_QuestLog.IsOnQuest(9233)then	return false else	for spellID,skills in pairs(_.CurrentCharacter.ActiveSkills)do	if(spellID==2018 or spellID==2108 or spellID==3908)and skills[1]>270 then	t.collectible=false t.visible=false return true end	end	end	end
 }
 _.Presets=
-{["DRUID"]={[1]=1,[2]=1,[3]=1,[4]=1,[5]=1,[9]=1,[10]=1,[11]=1,[20]=1,[23]=1,[24]=1,[28]=1,[29]=1,[34]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["HUNTER"]={[1]=1,[2]=1,[3]=1,[5]=1,[6]=1,[9]=1,[10]=1,[11]=1,[20]=1,[21]=1,[22]=1,[25]=1,[26]=1,[28]=1,[29]=1,[31]=1,[32]=1,[33]=1,[34]=1,[36]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["MAGE"]={[1]=1,[2]=1,[3]=1,[4]=1,[9]=1,[10]=1,[11]=1,[20]=1,[25]=1,[27]=1,[28]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["PALADIN"]={[1]=1,[2]=1,[3]=1,[4]=1,[5]=1,[6]=1,[7]=1,[8]=1,[9]=1,[10]=1,[11]=1,[21]=1,[22]=1,[23]=1,[24]=1,[25]=1,[26]=1,[29]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["PRIEST"]={[1]=1,[2]=1,[3]=1,[4]=1,[9]=1,[10]=1,[11]=1,[20]=1,[23]=1,[27]=1,[28]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["ROGUE"]={[1]=1,[2]=1,[3]=1,[5]=1,[9]=1,[10]=1,[11]=1,[20]=1,[23]=1,[25]=1,[31]=1,[32]=1,[33]=1,[34]=1,[36]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["SHAMAN"]={[1]=1,[2]=1,[3]=1,[4]=1,[5]=1,[6]=1,[8]=1,[9]=1,[10]=1,[11]=1,[20]=1,[21]=1,[22]=1,[23]=1,[24]=1,[28]=1,[34]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["WARLOCK"]={[1]=1,[2]=1,[3]=1,[4]=1,[9]=1,[10]=1,[11]=1,[20]=1,[25]=1,[27]=1,[28]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},["WARRIOR"]={[1]=1,[2]=1,[3]=1,[5]=1,[6]=1,[7]=1,[8]=1,[9]=1,[10]=1,[11]=1,[20]=1,[21]=1,[22]=1,[23]=1,[24]=1,[25]=1,[26]=1,[28]=1,[29]=1,[31]=1,[32]=1,[33]=1,[34]=1,[36]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1}}
+{DRUID={[1]=1,[2]=1,[3]=1,[4]=1,[5]=1,[9]=1,[10]=1,[11]=1,[20]=1,[23]=1,[24]=1,[28]=1,[29]=1,[34]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},HUNTER={[1]=1,[2]=1,[3]=1,[5]=1,[6]=1,[9]=1,[10]=1,[11]=1,[20]=1,[21]=1,[22]=1,[25]=1,[26]=1,[28]=1,[29]=1,[31]=1,[32]=1,[33]=1,[34]=1,[36]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},MAGE={[1]=1,[2]=1,[3]=1,[4]=1,[9]=1,[10]=1,[11]=1,[20]=1,[25]=1,[27]=1,[28]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},PALADIN={[1]=1,[2]=1,[3]=1,[4]=1,[5]=1,[6]=1,[7]=1,[8]=1,[9]=1,[10]=1,[11]=1,[21]=1,[22]=1,[23]=1,[24]=1,[25]=1,[26]=1,[29]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},PRIEST={[1]=1,[2]=1,[3]=1,[4]=1,[9]=1,[10]=1,[11]=1,[20]=1,[23]=1,[27]=1,[28]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},ROGUE={[1]=1,[2]=1,[3]=1,[5]=1,[9]=1,[10]=1,[11]=1,[20]=1,[23]=1,[25]=1,[31]=1,[32]=1,[33]=1,[34]=1,[36]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},SHAMAN={[1]=1,[2]=1,[3]=1,[4]=1,[5]=1,[6]=1,[8]=1,[9]=1,[10]=1,[11]=1,[20]=1,[21]=1,[22]=1,[23]=1,[24]=1,[28]=1,[34]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[54]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},WARLOCK={[1]=1,[2]=1,[3]=1,[4]=1,[9]=1,[10]=1,[11]=1,[20]=1,[25]=1,[27]=1,[28]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1},WARRIOR={[1]=1,[2]=1,[3]=1,[5]=1,[6]=1,[7]=1,[8]=1,[9]=1,[10]=1,[11]=1,[20]=1,[21]=1,[22]=1,[23]=1,[24]=1,[25]=1,[26]=1,[28]=1,[29]=1,[31]=1,[32]=1,[33]=1,[34]=1,[36]=1,[40]=1,[41]=1,[42]=1,[43]=1,[44]=1,[45]=1,[46]=1,[47]=1,[50]=1,[51]=1,[52]=1,[53]=1,[55]=1,[56]=1,[100]=1,[101]=1,[102]=1,[103]=1,[104]=1,[106]=1,[113]=1,[114]=1,[200]=1}}
 _.RaceDB=
 {
 	["Blood Elf"] = 10,
-	["BloodElf"] = 10,
+	BloodElf = 10,
 	["Dark Iron Dwarf"] = 34,
-	["DarkIronDwarf"] = 34,
-	["Dracthyr"] = {
-		["Alliance"] = 52,
-		["Horde"] = 70
+	DarkIronDwarf = 34,
+	Dracthyr = {
+		Alliance = 52,
+		Horde = 70
 	},
-	["Draenei"] = 11,
-	["Dwarf"] = 3,
-	["Earthen"] = {
-		["Alliance"] = 85,
-		["Horde"] = 84
+	Draenei = 11,
+	Dwarf = 3,
+	Earthen = {
+		Alliance = 85,
+		Horde = 84
 	},
-	["Gnome"] = 7,
-	["Goblin"] = 9,
-	["Haranir"] = {
-		["Alliance"] = 86,
-		["Horde"] = 91
+	Gnome = 7,
+	Goblin = 9,
+	Haranir = {
+		Alliance = 86,
+		Horde = 91
 	},
 	["High Order Skyborne"] = 95,
 	["Highmountain Tauren"] = 28,
-	["HighmountainTauren"] = 28,
-	["Human"] = 1,
-	["ID"] = {
+	HighmountainTauren = 28,
+	Human = 1,
+	ID = {
 		[1] = {
-			["faction"] = 1,
-			["gender"] = {
+			faction = 1,
+			gender = {
 				[2] = {
-					["icon"] = 236448
+					icon = 236448
 				},
 				[3] = {
-					["icon"] = 236447
+					icon = 236447
 				}
 			}
 		},
 		[2] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 236452
+					icon = 236452
 				},
 				[3] = {
-					["icon"] = 236451
+					icon = 236451
 				}
 			}
 		},
 		[3] = {
-			["faction"] = 1,
-			["gender"] = {
+			faction = 1,
+			gender = {
 				[2] = {
-					["icon"] = 236444
+					icon = 236444
 				},
 				[3] = {
-					["icon"] = 236443
+					icon = 236443
 				}
 			}
 		},
 		[4] = {
-			["faction"] = 1,
-			["gender"] = {
+			faction = 1,
+			gender = {
 				[2] = {
-					["icon"] = 236450
+					icon = 236450
 				},
 				[3] = {
-					["icon"] = 236449
+					icon = 236449
 				}
 			}
 		},
 		[5] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 236458
+					icon = 236458
 				},
 				[3] = {
-					["icon"] = 236457
+					icon = 236457
 				}
 			}
 		},
 		[6] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 236454
+					icon = 236454
 				},
 				[3] = {
-					["icon"] = 236453
+					icon = 236453
 				}
 			}
 		},
 		[7] = {
-			["faction"] = 1,
-			["gender"] = {
+			faction = 1,
+			gender = {
 				[2] = {
-					["icon"] = 236446
+					icon = 236446
 				},
 				[3] = {
-					["icon"] = 236445
+					icon = 236445
 				}
 			}
 		},
 		[8] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 236456
+					icon = 236456
 				},
 				[3] = {
-					["icon"] = 236455
+					icon = 236455
 				}
 			}
 		},
 		[9] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 463874
+					icon = 463874
 				},
 				[3] = {
-					["icon"] = 632354
+					icon = 632354
 				}
 			}
 		},
 		[10] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 236440
+					icon = 236440
 				},
 				[3] = {
-					["icon"] = 236439
+					icon = 236439
 				}
 			}
 		},
 		[11] = {
-			["faction"] = 1,
-			["gender"] = {
+			faction = 1,
+			gender = {
 				[2] = {
-					["icon"] = 236442
+					icon = 236442
 				},
 				[3] = {
-					["icon"] = 236441
+					icon = 236441
 				}
 			}
 		},
 		[22] = {
-			["faction"] = 1,
-			["icon"] = 463876
+			faction = 1,
+			icon = 463876
 		},
 		[24] = {
-			["icon"] = 626190
+			icon = 626190
 		},
 		[25] = {
-			["faction"] = 1,
-			["icon"] = 626190
+			faction = 1,
+			icon = 626190
 		},
 		[26] = {
-			["faction"] = 2,
-			["icon"] = 626190
+			faction = 2,
+			icon = 626190
 		},
 		[27] = {
-			["faction"] = 2,
-			["icon"] = 1786421
+			faction = 2,
+			icon = 1786421
 		},
 		[28] = {
-			["faction"] = 2,
-			["icon"] = 1786419
+			faction = 2,
+			icon = 1786419
 		},
 		[29] = {
-			["faction"] = 1,
-			["icon"] = 1786422
+			faction = 1,
+			icon = 1786422
 		},
 		[30] = {
-			["faction"] = 1,
-			["icon"] = 1786420
+			faction = 1,
+			icon = 1786420
 		},
 		[31] = {
-			["faction"] = 2,
-			["icon"] = 1851465
+			faction = 2,
+			icon = 1851465
 		},
 		[32] = {
-			["faction"] = 1,
-			["icon"] = 2447785
+			faction = 1,
+			icon = 2447785
 		},
 		[34] = {
-			["faction"] = 1,
-			["icon"] = 1851464
+			faction = 1,
+			icon = 1851464
 		},
 		[35] = {
-			["faction"] = 2,
-			["icon"] = 3208033
+			faction = 2,
+			icon = 3208033
 		},
 		[36] = {
-			["faction"] = 2,
-			["icon"] = 1989713
+			faction = 2,
+			icon = 1989713
 		},
 		[37] = {
-			["faction"] = 1,
-			["icon"] = 3208032
+			faction = 1,
+			icon = 3208032
 		},
 		[52] = {
-			["faction"] = 1,
-			["icon"] = 4696175
+			faction = 1,
+			icon = 4696175
 		},
 		[70] = {
-			["faction"] = 2,
-			["icon"] = 4696175
+			faction = 2,
+			icon = 4696175
 		},
 		[84] = {
-			["faction"] = 2,
-			["icon"] = 5930319
+			faction = 2,
+			icon = 5930319
 		},
 		[85] = {
-			["faction"] = 1,
-			["icon"] = 5930319
+			faction = 1,
+			icon = 5930319
 		},
 		[86] = {
-			["faction"] = 1,
-			["gender"] = {
+			faction = 1,
+			gender = {
 				[2] = {
-					["icon"] = 7431081
+					icon = 7431081
 				},
 				[3] = {
-					["icon"] = 7431080
+					icon = 7431080
 				}
 			},
-			["icon"] = 7448213
+			icon = 7448213
 		},
 		[91] = {
-			["faction"] = 2,
-			["gender"] = {
+			faction = 2,
+			gender = {
 				[2] = {
-					["icon"] = 7431081
+					icon = 7431081
 				},
 				[3] = {
-					["icon"] = 7431080
+					icon = 7431080
 				}
 			},
-			["icon"] = 7448213
+			icon = 7448213
 		},
 		[95] = {
-			["faction"] = 1,
-			["icon"] = 7749892
+			faction = 1,
+			icon = 7749892
 		},
 		[96] = {
-			["faction"] = 2,
-			["icon"] = 7813745
+			faction = 2,
+			icon = 7813745
 		}
 	},
 	["Kul Tiran"] = 32,
-	["KulTiran"] = 32,
+	KulTiran = 32,
 	["Kul'Tiran"] = 32,
 	["Lightforged Draenei"] = 30,
-	["LightforgedDraenei"] = 30,
+	LightforgedDraenei = 30,
 	["Mag har Orc"] = 36,
 	["Mag'har Orc"] = 36,
-	["MagharOrc"] = 36,
-	["Mechagnome"] = 37,
+	MagharOrc = 36,
+	Mechagnome = 37,
 	["Night Elf"] = 4,
-	["Nightborne"] = 27,
-	["NightElf"] = 4,
-	["Orc"] = 2,
-	["Pandaren"] = {
-		["Alliance"] = 25,
-		["Horde"] = 26,
-		["Neutral"] = 24
+	Nightborne = 27,
+	NightElf = 4,
+	Orc = 2,
+	Pandaren = {
+		Alliance = 25,
+		Horde = 26,
+		Neutral = 24
 	},
-	["Scourge"] = 5,
-	["Tauren"] = 6,
-	["Troll"] = 8,
-	["Undead"] = 5,
+	Scourge = 5,
+	Tauren = 6,
+	Troll = 8,
+	Undead = 5,
 	["Void Elf"] = 29,
-	["VoidElf"] = 29,
-	["Vulpera"] = 35,
+	VoidElf = 29,
+	Vulpera = 35,
 	["Windshaper Skyborne"] = 96,
-	["Worgen"] = 22,
+	Worgen = 22,
 	["Zandalari Troll"] = 31,
-	["ZandalariTroll"] = 31
+	ZandalariTroll = 31
 }
 _.SkillDB=
 {
-	["AlwaysAvailable"] = {
+	AlwaysAvailable = {
 		2720,
 		2787,
 		2791,
@@ -320,7 +320,7 @@ _.SkillDB=
 		2847,
 		2886
 	},
-	["BaseSkills"] = {
+	BaseSkills = {
 		[9787] = 9787,
 		[9788] = 9788,
 		[10656] = 10656,
@@ -335,7 +335,7 @@ _.SkillDB=
 		[26798] = 26798,
 		[26801] = 26801
 	},
-	["Conversion"] = {
+	Conversion = {
 		[129] = 129,
 		[164] = 164,
 		[165] = 165,
@@ -551,7 +551,7 @@ _.SkillDB=
 		[125588] = 185,
 		[125589] = 185
 	},
-	["SkillToSpell"] = {
+	SkillToSpell = {
 		[40] = 2842,
 		[43] = 201,
 		[44] = 196,
@@ -619,7 +619,7 @@ _.SkillDB=
 		[125588] = 125588,
 		[125589] = 125589
 	},
-	["Specializations"] = {
+	Specializations = {
 		[164] = {
 			9788,
 			9787
@@ -629,7 +629,7 @@ _.SkillDB=
 			20222
 		}
 	},
-	["SpecializationSpells"] = {
+	SpecializationSpells = {
 		[9787] = 2018,
 		[9788] = 2018,
 		[10656] = 2108,
@@ -650,7 +650,7 @@ _.SkillDB=
 		[125588] = 2550,
 		[125589] = 2550
 	},
-	["SpellToSkill"] = {
+	SpellToSkill = {
 		[196] = 44,
 		[197] = 172,
 		[198] = 54,
