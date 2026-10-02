@@ -31851,3 +31851,65 @@
 1322004@@@Infernal
 1322005@@@Infernal
 1322007@@@Summon Voidwalker
+1.60.1.70170
+471@@@Palomino Stallion
+3222@@@Lesser Troll's Blood Elixir
+3223@@@Troll's Blood Elixir
+24361@@@Major Troll's Blood Elixir
+400624@@@Heating Up
+400625@@@Heating Up
+437032@@@Soul Harvest
+1249114@@@Dormant Heart of the Mountain
+1255255@@@First Aid Kit
+1255950@@@Sit A While...
+1255951@@@Sit A While...
+1256875@@@Sit A While...
+1270478@@@Flame Charged
+1272216@@@Mithril Lode
+1286699@@@Twilight Empowerment
+1291059@@@Shifting Power Cooldown Reduction
+1292972@@@Spiritcaller Treads
+1299917@@@Spiritcaller Boots
+1300952@@@Heal Health 1.0 Coefficient Over Time
+1301247@@@1.60.0 - Item - Tier 1 - Druid - Feral 5P Bonus - Shifting Power
+1301947@@@Mischievous Zephyr
+1309588@@@[DNT] Play Sound - Spawn Virulent Blood
+1313291@@@Rule of Rage (DND)
+1317038@@@Increase Strength 22
+1322054@@@Summon Skeletal Servant
+1322065@@@[DNT]Avatar of Hakkar Player Checker
+1322067@@@[DNT]Avatar of Hakkar Player Checker Ping
+1322218@@@Holy Forgefire
+1322287@@@Shadow Channeling
+1322295@@@Firebolt
+1322296@@@Ritual Circle
+1322297@@@(DNT) Mod Armor No Mods
+1322299@@@(DNT) Mod Resistance by Bonus Defense
+1322303@@@Corpse Chopper
+1322304@@@Crystal Breaker
+1322305@@@Corpse Chopper
+1322311@@@Recently Siphoned the Grave
+1322312@@@Cookie's Stirring Rod
+1322318@@@Twilight Empowerment
+1322574@@@Rule of Rage (DND)
+1322587@@@Yay
+1322605@@@Shifting Power
+1322629@@@Capturing
+1322670@@@Improved Shifting Power
+1322901@@@Dummy
+1322935@@@Dummy
+1323075@@@Lunch for Kyle
+1323184@@@Shark Attack
+1323209@@@War Stomp
+1323240@@@Rain of Arrows
+1323243@@@Rain of Arrows
+1323246@@@Shoot
+1323289@@@Enrage
+1323377@@@Revelation
+1323390@@@Tapped
+1323392@@@Revelation
+1323400@@@Revelation
+1323410@@@Revelation
+1323418@@@Revelation
+1323419@@@Revelation
+1323420@@@Totemic Recall
