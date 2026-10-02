@@ -123,6 +123,22 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						["races"] = { TAUREN },
 						["classes"] = { HUNTER },
 					}),
+					q(95805, {	-- Grace of An'she and Mu'sha
+						["qg"] = 2982,	-- Seer Graytongue
+						["coord"] = { 42.5, 90.1, MAP.MULGORE },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- Use Pouch of Smoldering Incense at the Ritual Fire
+								["providers"] = {
+									{ "i", 277199 },	-- Pouch of Smoldering Incense
+									{ "o", 660739 },	-- Ritual Fire
+								},
+								["coord"] = { 56.6, 88.7, MAP.MULGORE },
+							}),
+							i(277200),	-- Scorched Leather Pouch
+						},
+					}),
 					q(757, {	-- Rite of Strength
 						["sourceQuest"] = 755,	-- Rites of the Earthmother (1/3)
 						["qg"] = 2982,	-- Seer Graytongue

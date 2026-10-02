@@ -624,6 +624,42 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(5095),	-- Rainbow Fin Albacore
 				},
 			}),
+			q(93963, {	-- Exploring the Alliance
+				["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				["coord"] = { 80.1, 38.4, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.IRONFORGE, MAP.DARNASSUS },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					objective(1, {	-- Randal Emerson
+						["provider"] = { "n", 275491 },
+						["coords"] = {
+							{ 79.0, 44.8, MAP.STORMWIND_CITY },
+							{ 79.2, 44.2, MAP.STORMWIND_CITY },
+						},
+					}),
+					objective(2, {	-- High Tinker Mekkatorque
+						["provider"] = { "n", 7937 },
+						["coord"] = { 69.2, 49.2, MAP.IRONFORGE },
+					}),
+					objective(3, {	-- King Magni Bronzebeard
+						["provider"] = { "n", 2784 },
+						["coord"] = { 39.4, 55.8, MAP.IRONFORGE },
+					}),
+					objective(4, {	-- Tyrande Whisperwind
+						["provider"] = { "n", 7999 },
+						["coord"] = { 43.0, 77.8, MAP.DARNASSUS },
+					}),
+					i(286427),	-- Cloak of the Honored Guest
+				},
+			}),
+			q(98021, {	-- Journey to Sentinel Hill
+				["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				["coord"] = { 80.1, 38.4, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.WESTFALL },
+				["races"] = { SKYBORNE_ALLIANCE },
+			}),
 			q(6184, {	-- Flint Shadowmore
 				["sourceQuest"] = 6183,	-- Honor the Dead
 				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -1853,6 +1889,38 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 		}),
 		n(VENDORS, {
+			n(1301, {	-- Julia Gallina
+				["coord"] = { 59.8, 77.4, MAP.STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(2723),	-- Bottle of Dalaran Noir
+					i(2593),	-- Flask of Stormwind Tawny
+					i(2596),	-- Skin of Dwarven Stout
+					i(2594),	-- Flagon of Dwarven Honeymead
+					i(2595),	-- Jug of Badlands Bourbon
+				},
+			}),
+			n(258568, {	-- Antonio Bolero
+				["coord"] = { 53.5, 81.8, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(253665),	-- Pattern: Linen Reagent Bag (RECIPE!)
+					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)
+				},
+			}),
+			n(1310, {	-- Evan Larson
+				["coord"] = { 52.5, 83.6, MAP.STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					3889,	-- Russet Hat
+					3890,	-- Studded Hat
+					3891,	-- Augmented Chain Helm
+					3892,	-- Embroidered Hat
+					3893,	-- Reinforced Leather Cap
+					3894,	-- Brigandine Helm
+				}},
+			}),
 			n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
 				["coord"] = { 53.2, 81.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,

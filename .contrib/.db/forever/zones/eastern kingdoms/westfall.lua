@@ -898,6 +898,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 		}),
 		n(VENDORS, {
+			n(233, {	-- Farmer Saldean
+				["coord"] = { 56.1, 31.3, MAP.WESTFALL },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(11109),	-- Special Chicken Feed
+				},
+			}),
 			n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
 				["coord"] = { 43.4, 66.8, MAP.WESTFALL },
 				["races"] = ALLIANCE_ONLY,

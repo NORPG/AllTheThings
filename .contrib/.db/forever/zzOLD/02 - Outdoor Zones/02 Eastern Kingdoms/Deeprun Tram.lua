@@ -9,6 +9,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 		["zone-text-areaID"] = 2257,	-- Deeprun Tram's mapID doesn't exist until later as well, maybe Cataclysm?
 		["icon"] = 133861,
 		["groups"] = {
+			n(VENDORS, {
+				n(13018, {	-- Nipsy
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(17119),	-- Deeprun Rat Kabob
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(6661, {	-- Deeprun Rat Roundup
 					["qg"] = 12997,	-- Monty
