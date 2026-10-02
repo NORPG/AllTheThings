@@ -1,7 +1,192 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
+root(ROOTS.WorldDrops, {
+	pickpocketing(true, {
+		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
+		["groups"] = {
+			i(6150, {	-- A Frayed Knot
+				["description"] = "Can be pickpocketed from Classic humanoids.",
+			}),
+			i(5373, {	-- Lucky Charm
+				["description"] = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
+			}),
+		},
+	}),
+	header(HEADERS.Spell, 1810, {	-- Lockpicking
+		["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
+		["groups"] = {
+			i(16882, {	-- Battered Junkbox
+				["groups"] = {
+					i(4446),	-- Blackvenom Blade
+					i(2567),	-- Evocator's Blade
+					i(5756),	-- Sliverblade
+				},
+				["sym"] = {{"select", "itemID",
+					11968,	-- Amber Hoop
+					4999,	-- Azora's Will
+					11984,	-- Cobalt Ring
+					11994,	-- Coral Band
+					12054,	-- Demon Band
+					6375,	-- Enchant Bracer - Lesser Spirit (RECIPE!)
+					5002,	-- Glowing Green Talisman
+					11969,	-- Jacinth Circle
+					6454,	-- Manual: Strong Anti-Venom (RECIPE!)
+					12006,	-- Meadow Ring
+					7360,	-- Pattern: Dark Leather Gloves (RECIPE!)
+					5972,	-- Pattern: Fine Leather Pants (RECIPE!)
+					2601,	-- Pattern: Gray Woolen Robe (RECIPE!)
+					7092,	-- Pattern: Hands of Darkness (RECIPE!)
+					7364,	-- Pattern: Heavy Earthen Gloves (RECIPE!)
+					7363,	-- Pattern: Pilferer's Gloves (RECIPE!)
+					4350,	-- Pattern: Spider Silk Slippers (RECIPE!)
+					6390,	-- Pattern: Stylish Blue Shirt (RECIPE!)
+					3611,	-- Plans: Green Iron Boots (RECIPE!)
+					6044,	-- Plans: Iron Shield Spike (RECIPE!)
+					3608,	-- Plans: Mighty Iron Hammer (RECIPE!)
+					5578,	-- Plans: Silvered Bronze Breastplate (RECIPE!)
+					10424,	-- Plans: Silvered Bronze Leggings (RECIPE!)
+					2882,	-- Plans: Silvered Bronze Shoulders (RECIPE!)
+					12007,	-- Prairie Ring
+					3396,	-- Recipe: Elixir of Lesser Agility (RECIPE!)
+					12008,	-- Savannah Ring
+					11967,	-- Zircon Band
+				}},
+			}),
+			i(5760, {	-- Eternium Lockbox
+				["sym"] = {{"select", "itemID",
+					12058,	-- Demonic Bone Ring
+				}},
+			}),
+			i(4633),	-- Heavy Bronze Lockbox
+			i(16885, {	-- Heavy Junkbox
+				["sym"] = {{"select", "itemID",
+					1728,	-- Teebu's Blazing Longsword (Does not currently load on beta)
+					16215,	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
+					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
+					14494,	-- Pattern: Brightcloth Pants (RECIPE!)
+					15746,	-- Pattern: Chimeric Leggings (RECIPE!)
+					15755,	-- Pattern: Chimeric Vest (RECIPE!)
+					15743,	-- Pattern: Heavy Scorpid Belt (RECIPE!)
+					14499,	-- Pattern: Mooncloth Bag (RECIPE!)
+					12689,	-- Plans: Radiant Breastplate (RECIPE!)
+					12695,	-- Plans: Radiant Gloves (RECIPE!)
+					12683,	-- Plans: Thorium Belt (RECIPE!)
+					12693,	-- Plans: Thorium Boots (RECIPE!)
+					12684,	-- Plans: Thorium Bracers (RECIPE!)
+					12694,	-- Plans: Thorium Helm (RECIPE!)
+					12704,	-- Plans: Thorium Leggings (RECIPE!)
+					12691,	-- Plans: Wildthorn Mail (RECIPE!)
+					2163,	-- Shadowblade
+					12044,	-- Arctic Pendant
+					12014,	-- Arctic Ring
+					12057,	-- Dragonscale Band
+					12046,	-- Jungle Necklace
+					12002,	-- Marble Circle
+					12034,	-- Marble Necklace
+					12004,	-- Obsidian Band
+					12035,	-- Obsidian Pendant
+					12026,	-- Quicksilver Pendant
+					11991,	-- Quicksilver Ring
+					12056,	-- Ring Of The Heavens
+					11976,	-- Sardonyx Knuckle
+					12025,	-- Selenium Chain
+					11990,	-- Selenium Loop
+					11977,	-- Serpentine Loop
+					12055,	-- Stardust Band
+					12015,	-- Swamp Ring
+					11989,	-- Vanadium Loop
+				}},
+			}),
+			i(4634,	{	-- Iron Lockbox
+				["sym"] = {{"select", "itemID",
+					11164,	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
+					7449,	-- Pattern: Dusky Leather Leggings (RECIPE!)
+					5774,	-- Pattern: Green Silk Pack (RECIPE!)
+					7450,	-- Pattern: Green Whelp Armor (RECIPE!)
+					4299,	-- Pattern: Guardian Armor (RECIPE!)
+					3867,	-- Plans: Golden Iron Destroyer (RECIPE!)
+					3872,	-- Plans: Golden Scale Leggings (RECIPE!)
+					3611,	-- Plans: Green Iron Boots (RECIPE!)
+					3870,	-- Plans: Green Iron Shoulders (RECIPE!)
+					6045,	-- Plans: Iron Counterweight (RECIPE!)
+					3830,	-- Recipe: Elixir of Fortitude (RECIPE!)
+					10601,	-- Schematic: Bright-Eye Goggles (RECIPE!)
+					4416,	-- Schematic: Goblin Land Mine (RECIPE!)
+					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
+					13063,	-- Starfaller
+				}},
+			}),
+			i(5758),	-- Mithril Lockbox,
+			i(4632),	-- Ornate Bronze Lockbox
+			i(4638, {	-- Reinforced Steel Lockbox
+				["sym"] = {{"select", "itemID",
+					16215,	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
+					11225,	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
+					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
+					11208,	-- Formula: Enchant Weapon - Demonslaying (RECIPE!)
+					8390,	-- Pattern: Big Voodoo Cloak (RECIPE!)
+					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
+					8389,	-- Pattern: Big Voodoo Pants (RECIPE!)
+					14467,	-- Pattern: Frostweave Robe (RECIPE!)
+					10320,	-- Pattern: Red Mageweave Headband (RECIPE!)
+					10302,	-- Pattern: Red Mageweave Pants (RECIPE!)
+					10315,	-- Pattern: Red Mageweave Shoulders (RECIPE!)
+					7993,	-- Plans: Dazzling Mithril Rapier (RECIPE!)
+					7990,	-- Plans: Heavy Mithril Helm (RECIPE!)
+					7989,	-- Plans: Mithril Spurs (RECIPE!)
+					12683,	-- Plans: Thorium Belt (RECIPE!)
+					9295,	-- Recipe: Invisibility Potion (RECIPE!)
+					3395 	-- Recipe: Limited Invulnerability Potion (RECIPE!)
+				}},
+			}),
+			i(4637, {	-- Steel Lockbox
+				["sym"] = {{"select", "itemID",
+					11204,	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
+					11202,	-- Formula: Enchant Shield - Stamina (RECIPE!)
+					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
+					8386,	-- Pattern: Big Voodoo Robe (RECIPE!)
+					10312,	-- Pattern: Red Mageweave Gloves (RECIPE!)
+					10300,	-- Pattern: Red Mageweave Vest (RECIPE!)
+					8385,	-- Pattern: Turtle Scale Gloves (RECIPE!)
+					10301,	-- Pattern: White Bandit Mask (RECIPE!)
+					7992,	-- Plans: Blue Glittering Axe (RECIPE!)
+					7975,	-- Plans: Heavy Mithril Pants (RECIPE!)
+					7976,	-- Plans: Mithril Shield Spike (RECIPE!)
+					3874,	-- Plans: Polished Steel Boots (RECIPE!)
+					8029,	-- Plans: Wicked Mithril Blade (RECIPE!)
+					9295,	-- Recipe: Invisibility Potion (RECIPE!)
+					10603,	-- Schematic: Catseye Ultra Goggles (RECIPE!)
+					10606	-- Schematic: Parachute Cloak (RECIPE!)
+				}},
+			}),
+			i(4636, {	-- Strong Iron Lockbox
+				["sym"] = {{"select", "itemID",
+					11167,	-- Formula: Enchant Boots - Lesser Spirit (RECIPE!)
+					11165,	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
+					7085,	-- Pattern: Azure Shoulders (RECIPE!)
+					7086,	-- Pattern: Earthen Silk Belt (RECIPE!)
+					5974,	-- Pattern: Guardian Cloak (RECIPE!)
+					4300,	-- Pattern: Guardian Leather Bracers (RECIPE!)
+					10300,	-- Pattern: Red Mageweave Vest (RECIPE!)
+					4353,	-- Pattern: Spider Belt (RECIPE!)
+					8385,	-- Pattern: Turtle Scale Gloves (RECIPE!)
+					10301,	-- Pattern: White Bandit Mask (RECIPE!)
+					3874,	-- Plans: Polished Steel Boots (RECIPE!)
+					3869,	-- Plans: Shadow Crescent Axe (RECIPE!)
+					3830,	-- Recipe: Elixir of Fortitude (RECIPE!)
+					3831,	-- Recipe: Troll's Blood Elixir (RECIPE!)
+					10601,	-- Schematic: Bright-Eye Goggles (RECIPE!)
+					4416,	-- Schematic: Goblin Land Mine (RECIPE!)
+					4417,	-- Schematic: Large Seaforium Charge (RECIPE!)
+					10606,	-- Schematic: Parachute Cloak (RECIPE!)
+					4414	-- Schematic: Portable Bronze Mortar (RECIPE!)
+				}},
+			}),
+			i(5759),	-- Thorium Lockbox
+			i(16883),	-- Worn Junkbox
+		},
+	}),
 	filter(CLOAKS, {
 		i(9938),	-- Abjurer's Cloak
 		i(14116),	-- Aboriginal Cape
@@ -46,7 +231,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15475),	-- Charger's Cloak
 		i(4726),	-- Chief Brigadier Cloak
 		i(9951),	-- Chieftain's Cloak
-		i(3475),	-- Cloak of Flames
+		i(3475),	-- Cloak of Flames (Does not currently load)
 		i(4716),	-- Combat Cloak
 		i(9847),	-- Conjurer's Cloak
 		i(10098),	-- Councillor's Cloak
@@ -74,15 +259,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14331),	-- Eternal Cloak
 		i(15309),	-- Feral Cloak
 		i(12979),	-- Firebane Cloak
-		i(2652, {	-- Flimsy Chain Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(2652),	-- Flimsy Chain Cloak
 		i(4710),	-- Forest Cloak
 		i(15632),	-- Formidable Cape
 		i(9812),	-- Fortified Cloak
-		i(1376, {	-- Frayed Cloak
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
+		i(1376),	-- Frayed Cloak
 		i(14270),	-- Gaea's Cloak
 		i(14219),	-- Geomancer's Cloak
 		i(15147),	-- Ghostwalker Cloak
@@ -105,27 +286,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14745),	-- Hulking Cloak
 		i(4689),	-- Hunting Cloak
 		i(9890),	-- Huntsman's Cape
-		i(68762, {	-- Imbued Cadet Cloak
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68748, {	-- Imbued Disciple's Cloak
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68759, {	-- Imbued Gypsy Cloak
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68743, {	-- Imbued Infantry Cloak
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68744, {	-- Imbued Pioneer Cloak
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68746, {	-- Imbued Primal Cape
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68756, {	-- Imbued Simple Cape
-			["timeline"] = { ADDED_4_0_6 },
-		}),
 		i(15661),	-- Impenetrable Cloak
 		i(6432),	-- Imperial Cloak
 		i(8248),	-- Imperial Red Cloak
@@ -144,15 +304,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14665),	-- Keeper's Cloak
 		i(14781),	-- Khan's Cloak
 		i(7460),	-- Knight's Cloak
-		i(1741, {	-- Laced Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(1741),	-- Laced Cloak
 		i(4706),	-- Lambent Scale Cloak
 		i(3995),	-- Laminated Scale Cloak
 		i(1749),	-- Linked Chain Cloak
-		i(2644, {	-- Loose Chain Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(2644),	-- Loose Chain Cloak
 		i(10079),	-- Lord's Cape
 		i(14251),	-- Lunar Cloak
 		i(15015),	-- Lupine Cloak
@@ -178,9 +334,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15501),	-- Outrunner's Cloak
 		i(4003),	-- Overlinked Chain Cloak
 		i(14161),	-- Pagan Cape
-		i(1790, {	-- Patched Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(1790),	-- Patched Cloak
 		i(1429),	-- Patchwork Cloak
 		i(15340),	-- Pathfinder Cloak
 		i(15427),	-- Peerless Cloak
@@ -194,9 +348,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14563),	-- Prospector's Cloak
 		i(14791),	-- Protector Cape
 		i(15382),	-- Rageclaw Cloak
-		i(1372, {	-- Ragged Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(1372),	-- Ragged Cloak
 		i(9786),	-- Raider's Cloak
 		i(14188),	-- Raincaller Cloak
 		i(7483),	-- Ranger Cloak
@@ -224,14 +376,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(8259),	-- Serpentskin Cloak
 		i(6564),	-- Shimmering Cloak
 		i(14420),	-- Silksand Cape
-		i(4713),	-- Silver-Thread Cloak [CATA+] / Silver-thread Cloak
+		i(4713),	-- Silver-thread Cloak
 		i(9745),	-- Simple Cape
-		i(22782, {	-- Sin'dorei Cloak of Warding
-			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			-- #endif
-			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
-		}),
 		i(14752),	-- Slayer's Cape
 		i(3972),	-- Smooth Cloak
 		i(6549),	-- Soldier's Cloak
@@ -264,9 +410,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15483),	-- War Torn Cape
 		i(14602),	-- Warden's Cloak
 		i(9959),	-- Warmonger's Cloak
-		i(1505, {	-- Warped Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(1505),	-- Warped Cloak
 		i(4658),	-- Warrior's Cloak
 		i(14813),	-- Warstrike Cape
 		i(14179),	-- Watcher's Cape
@@ -275,12 +419,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14430),	-- Windchaser Cloak
 		i(13121),	-- Wing of the Whelpling
 		i(15371),	-- Wolf Rider's Cloak
-		i(1733, {	-- Worn Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
-		i(1421, {	-- Worn Hide Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
-		}),
+		i(1733),	-- Worn Cloak
+		i(1421),	-- Worn Hide Cloak
 		i(15333),	-- Wrangler's Cloak
 	}),
 	filter(CLOTH, {
@@ -530,26 +670,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14334),	-- Eternal Sarong
 		i(14335),	-- Eternal Spaulders
 		i(14336),	-- Eternal Wraps
-		i(3075),	-- Eye of Flame
+		i(3075),	-- Eye of Flame  (Does not currently load)
 		i(9433),	-- Forgotten Wraps
-		i(3363, {	-- Frayed Belt
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
-		i(3365, {	-- Frayed Bracers
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
-		i(1377, {	-- Frayed Gloves
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
-		i(1378, {	-- Frayed Pants
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
-		i(1380, {	-- Frayed Robe
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
-		i(1374, {	-- Frayed Shoes
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),
+		i(3363),	-- Frayed Belt
+		i(3365),	-- Frayed Bracers
+		i(1377),	-- Frayed Gloves
+		i(1378),	-- Frayed Pants
+		i(1380),	-- Frayed Robe
+		i(1374),	-- Frayed Shoes
 		i(13100),	-- Furen's Boots
 		i(14273),	-- Gaea's Amice
 		i(14276),	-- Gaea's Belt
@@ -624,18 +752,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3797),	-- Interlaced Pants
 		i(3798),	-- Interlaced Shoulderpads
 		i(3799),	-- Interlaced Vest
-		i(68754, {	-- Imbued Disciple's Boots
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68749, {	-- Imbued Disciple's Bracers
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68755, {	-- Imbued Disciple's Gloves
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68747, {	-- Imbued Disciple's Sash
-			["timeline"] = { ADDED_4_0_6 },
-		}),
 		i(8246),	-- Imperial Red Boots
 		i(8247),	-- Imperial Red Bracers
 		i(8254),	-- Imperial Red Circlet
@@ -795,7 +911,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14127),	-- Ritual Shroud
 		i(14133),	-- Ritual Tunic
 		i(1716),	-- Robe of the Magi
-		i(940),	-- Robes of Insight
+		i(940),	-- Robes of Insight  (Does not currently load)
 		i(9912),	-- Royal Amice
 		i(9909),	-- Royal Bands
 		i(9905),	-- Royal Blouse
@@ -848,14 +964,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14423),	-- Silksand Shoulder Pads
 		i(14417),	-- Silksand Tunic
 		i(14425),	-- Silksand Wraps
-		i(6395),	-- Silver-Thread Amice [CATA+] / Silver-thread Amice
-		i(7110),	-- Silver-Thread Armor [CATA+] / Silver-thread Armor
-		i(6394),	-- Silver-Thread Boots [CATA+] / Silver-thread Boots
-		i(4036),	-- Silver-Thread Cuffs [CATA+] / Silver-thread Cuffs
-		i(6393),	-- Silver-Thread Gloves [CATA+] / Silver-thread Gloves
-		i(4037),	-- Silver-Thread Pants [CATA+] / Silver-thread Pants
-		i(4035),	-- Silver-Thread Robe [CATA+] / Silver-thread Robe
-		i(4714),	-- Silver-Thread Sash [CATA+] / Silver-thread Sash
+		i(6395),	-- Silver-thread Amice
+		i(7110),	-- Silver-thread Armor
+		i(6394),	-- Silver-thread Boots
+		i(4036),	-- Silver-thread Cuffs
+		i(6393),	-- Silver-thread Gloves
+		i(4037),	-- Silver-thread Pants
+		i(4035),	-- Silver-thread Robe
+		i(4714),	-- Silver-thread Sash
 		i(9744),	-- Simple Bands
 		i(9749),	-- Simple Blouse
 		i(9747),	-- Simple Britches
@@ -1161,21 +1277,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9892),	-- Huntsman's Gloves
 		i(9893),	-- Huntsman's Leggings
 		i(9894),	-- Huntsman's Shoulders
-		i(68750, {	-- Imbued Pioneer Belt
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68758, {	-- Imbued Pioneer Boots
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68751, {	-- Imbued Pioneer Bracers
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68757, {	-- Imbued Pioneer Gloves
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68745, {	-- Imbued Primal Belt
-			["timeline"] = { ADDED_4_0_6 },
-		}),
 		i(4738),	-- Imperial Leather Belt
 		i(6431),	-- Imperial Leather Boots
 		i(4061),	-- Imperial Leather Bracers
@@ -1393,14 +1494,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15126),	-- Robust Leggings
 		i(15127),	-- Robust Shoulders
 		i(15128),	-- Robust Tunic
-		i(5968, {	-- Rugged Boots
-			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			-- #endif
-			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
-		}),
 		i(13111),	-- Sandals of the Insurgent
-		i(14553),	-- Sash of Mercy
+		i(14553),	-- Sash of Mercy  (Does not currently load)
 		i(9827),	-- Scaled Leather Belt
 		i(9828),	-- Scaled Leather Boots
 		i(9829),	-- Scaled Leather Bracers
@@ -1442,7 +1537,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(8262),	-- Serpentskin Leggings
 		i(8263),	-- Serpentskin Spaulders
 		i(13115),	-- Sheepshear Mantle
-		i(13011),	-- Silver-Lined Belt [CATA+] / Silver-lined Belt
+		i(13011),	-- Silver-lined Belt
 		i(3976),	-- Smooth Leather Armor
 		i(3969),	-- Smooth Leather Belt
 		i(3970),	-- Smooth Leather Boots
@@ -1591,12 +1686,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4669),	-- Battle Chain Girdle
 		i(3281),	-- Battle Chain Gloves
 		i(3282),	-- Battle Chain Pants
-		i(3283, {	-- Battle Chain Tunic
-			["timeline"] = { REMOVED_6_1_0 },
-		}),
-		i(120950, {	-- Battle Chain Vest
-			["timeline"] = { ADDED_6_1_0 },
-		}),
+		i(3283),	-- Battle Chain Tunic
 		i(13126),	-- Battlecaller Gauntlets
 		i(6592),	-- Battleforge Armor
 		i(6590),	-- Battleforge Boots
@@ -1641,12 +1731,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3303),	-- Brackwater Bracers
 		i(3304),	-- Brackwater Gauntlets
 		i(4681),	-- Brackwater Girdle
-		i(3305, {	-- Brackwater Leggings
-			["timeline"] = { REMOVED_6_1_0 },
-		}),
-		i(120954, {	-- Brackwater Legguards
-			["timeline"] = { ADDED_6_1_0 },
-		}),
+		i(3305),	-- Brackwater Leggings
 		i(3306),	-- Brackwater Vest
 		i(9926),	-- Brigade Boots
 		i(9927),	-- Brigade Bracers
@@ -1663,12 +1748,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(2990),	-- Burnished Leggings
 		i(4694),	-- Burnished Pauldrons
 		i(2989),	-- Burnished Tunic
-		i(54784, {	-- Burnished Tunic
-			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			-- #endif
-			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
-		}),
 		i(9758),	-- Cadet Belt
 		i(9759),	-- Cadet Boots
 		i(9760),	-- Cadet Bracers
@@ -1733,12 +1812,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13133),	-- Drakesfire Epaulets
 		i(13010),	-- Dreamsinger Legguards
 		i(13123),	-- Dreamwalker Armor
-		i(2016, {	-- Dusty Chain Armor
-			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			-- #endif
-			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
-		}),
 		i(2649),	-- Flimsy Chain Belt
 		i(2650),	-- Flimsy Chain Boots
 		i(2651),	-- Flimsy Chain Bracers
@@ -1753,7 +1826,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(8271),	-- Ebonhold Leggings
 		i(8272),	-- Ebonhold Shoulderpads
 		i(8264),	-- Ebonhold Wristguards
-		i(14551),	-- Edgemaster's Handguards
+		i(14551),	-- Edgemaster's Handguards (Does not currently load)
 		i(13125),	-- Elven Chain Boots
 		i(14761),	-- Enduring Belt
 		i(14762),	-- Enduring Boots
@@ -1797,7 +1870,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4073),	-- Glimmering Mail Greaves
 		i(6386),	-- Glimmering Mail Legguards
 		i(6388),	-- Glimmering Mail Pauldrons
-		i(15506),	-- Grunt's Ankle Wraps [CATA+] / Grunt's AnkleWraps
+		i(15506),	-- Grunt's AnkleWraps
 		i(15510),	-- Grunt's Belt
 		i(15507),	-- Grunt's Bracers
 		i(15514),	-- Grunt's Chestpiece
@@ -1812,12 +1885,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15626),	-- Gryphon Mail Greaves
 		i(15627),	-- Gryphon Mail Legguards
 		i(15628),	-- Gryphon Mail Pauldrons
-		i(2273, {	-- Guerrilla Armor
-			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			-- #endif
-			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
-		}),
 		i(2245),	-- Helm of Narv
 		i(8308),	-- Hero's Band
 		i(8306),	-- Hero's Belt
@@ -1835,19 +1902,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14747),	-- Hulking Gauntlets
 		i(14748),	-- Hulking Leggings
 		i(14749),	-- Hulking Spaulders
-		i(1981),	-- Icemail Jerkin
-		i(68752, {	-- Imbued Infantry Belt
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68761, {	-- Imbued Infantry Boots
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68753, {	-- Imbued Infantry Bracers
-			["timeline"] = { ADDED_4_0_6 },
-		}),
-		i(68760, {	-- Imbued Infantry Gauntlets
-			["timeline"] = { ADDED_4_0_6 },
-		}),
+		i(1981),	-- Icemail Jerkin (Does not currently load)
 		i(15663),	-- Impenetrable Belt
 		i(15659),	-- Impenetrable Bindings
 		i(15660),	-- Impenetrable Breastplate
@@ -2036,11 +2091,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(1715),	-- Polished Jazeraint Armor
 		i(14794),	-- Protector Ankleguards
 		i(14788),	-- Protector Armguards
-		i(14789, {	-- Protector Breastplate
-			-- #if AFTER 9.2.0
-			["description"] = "Is currently bugged and cannot be sold to vendor.",
-			-- #endif
-		}),
+		i(14789),	-- Protector Breastplate
 		i(14792),	-- Protector Gauntlets
 		i(14795),	-- Protector Helm
 		i(14796),	-- Protector Legguards
@@ -2086,13 +2137,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15531),	-- Sentry's Shoulderguards
 		i(15525),	-- Sentry's Slippers
 		i(15524),	-- Sentry's Surcoat
-		i(12982),	-- Silver-Linked Footguards [CATA+] / Silver-linked Footguards
+		i(12982),	-- Silver-linked Footguards
 		i(13132),	-- Skeletal Shoulders
 		i(14750),	-- Slayer's Cuffs
 		i(14754),	-- Slayer's Gloves
 		i(14757),	-- Slayer's Pants
 		i(14755),	-- Slayer's Sash
-		i(14758),	-- Slayer's Shoulderguards [TBC+] / Slayer's Shoulder Pads
+		i(14758),	-- Slayer's Shoulder Pads
 		i(14753),	-- Slayer's Skullcap
 		i(14756),	-- Slayer's Slippers
 		i(14751),	-- Slayer's Surcoat
@@ -2126,7 +2177,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15596),	-- Steadfast Legplates
 		i(15597),	-- Steadfast Shoulders
 		i(15589),	-- Steadfast Stompers
-		i(17007),	-- Stonerender Gauntlets
+		i(17007),	-- Stonerender Gauntlets (does not currently load)
 		i(12978),	-- Stormbringer Belt
 		i(15549),	-- Thick Scale Belt
 		i(15545),	-- Thick Scale Bracelets
@@ -2150,12 +2201,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3213),	-- Veteran Bracers
 		i(4678),	-- Veteran Girdle
 		i(2980),	-- Veteran Gloves
-		i(2978, {	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
-			["timeline"] = { REMOVED_6_1_0 },	-- Likely unobtainable since adding of Vetaran Legguards
-		}),
-		i(120953, {	-- Veteran Legguards
-			["timeline"] = { ADDED_6_1_0 },
-		}),
+		i(2978),	-- Veteran Leggings
 		i(14722),	-- War Paint Anklewraps
 		i(14723),	-- War Paint Bindings
 		i(14730),	-- War Paint Chestpiece
@@ -2250,7 +2296,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(10382),	-- Commander's Leggings
 		i(10383),	-- Commander's Pauldrons
 		i(10377),	-- Commander's Vambraces
-		i(14554),	-- Cloudkeeper Legplates
+		i(14554),	-- Cloudkeeper Legplates (does not currently load)
 		i(13075),	-- Direwing Legguards
 		i(9966),	-- Embossed Plate Armor
 		i(9973),	-- Embossed Plate Boots
@@ -2400,12 +2446,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14897),	-- Saltstone Gauntlets
 		i(14898),	-- Saltstone Girdle
 		i(14899),	-- Saltstone Helm
-		i(14900),	-- Saltstone LegChains [LEGION+] / Saltstone Legplates
+		i(14900),	-- Saltstone Legplates
 		i(14896),	-- Saltstone Sabatons
 		i(14901),	-- Saltstone Shoulder Pads
 		i(14895),	-- Saltstone Surcoat
 		i(13070),	-- Sapphiron's Scale Boots
-		i(14552),	-- Stockade Pauldrons
+		i(14552),	-- Stockade Pauldrons (does not currently load)
 		i(13072),	-- Stonegrip Gauntlets
 		i(14847),	-- Sunscale Belt
 		i(14844),	-- Sunscale Chestguard
@@ -2469,18 +2515,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14866),	-- Warleader's Crown
 		i(14863),	-- Warleader's Gauntlets
 		i(14865),	-- Warleader's Greaves
-		i(14867),	-- Warleader's Leggings
+		i(14867),	-- Warleader's Leggings (does not currently load)
 		i(14868),	-- Warleader's Shoulders
 		i(13066),	-- Wyrmslayer Spaulders
 	}),
-	category(227, {	-- Weapons
+	n(WEAPONS, {
 		filter(ONE_HANDED_AXES, {
 			i(13014),	-- Axe of Rin'ji
-			i(811),	-- Axe of the Deep Woods
+			i(811),	-- Axe of the Deep Woods (does not currently load)
 			i(2878),	-- Bearded Boneaxe
 			i(15237),	-- Corpse Harvester
 			i(15235),	-- Crescent Edge
-			i(2815),	-- Curve-Bladed Ripper [CATA+] / Curve-bladed Ripper
+			i(2815),	-- Curve-bladed Ripper
 			i(15240),	-- Demon's Claw
 			i(2073),	-- Dwarven Hatchet
 			i(1994),	-- Ebonclaw Reaver
@@ -2488,9 +2534,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(871),	-- Flurry Axe
 			i(790),	-- Forester's Axe
 			i(863),	-- Gloom Reaper
-			-- #if BEFORE DF
 			i(1819),	-- Gouging Pick
-			-- #endif
 			i(15234),	-- Greater Scythe
 			i(4568),	-- Grunt Axe
 			i(15232),	-- Hacking Cleaver
@@ -2519,7 +2563,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3195),	-- Barbaric Battle Axe
 			i(3199),	-- Battle Slayer
 			i(1417),	-- Beaten Battle Axe
-			i(1263),	-- Brain Hacker
+			i(1263),	-- Brain Hacker (does not currently load)
 			i(3210),	-- Brutal War Axe
 			i(2299),	-- Burning War Axe
 			i(15271),	-- Colossal Great Axe
@@ -2531,7 +2575,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(1639),	-- Grinning Axe
 			i(3779),	-- Hefty War Axe
 			i(13017),	-- Hellslayer Battle Axe
-			i(2291),	-- Kang the Decapitator
+			i(2291),	-- Kang the Decapitator (does not currently load)
 			i(13016),	-- Killmaim
 			i(13003),	-- Lord Alexander's Battle Axe
 			i(15269),	-- Massive Battle Axe
@@ -2567,12 +2611,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15226),	-- Giant Club
 			i(8194),	-- Goblin Nutcracker
 			i(810),	-- Hammer of the Northern Wind
-			i(2243),	-- Hand of Edward the Odd
+			i(2243),	-- Hand of Edward the Odd (does not currently load)
 			i(13026),	-- Heaven's Light
 			i(1510),	-- Heavy Hammer
-			-- #if AFTER CATA
-			i(2075),	-- Heavy Mace [CATA+] / Priest's Mace
-			-- #endif
 			i(15223),	-- Jagged Star
 			i(11411),	-- Large Bear Bone
 			i(865),	-- Leaden Mace
@@ -2582,9 +2623,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4090),	-- Mug O' Hurt
 			i(1207),	-- Murphstar
 			i(1815),	-- Ornamental Mace
-			-- #if BEFORE CATA
-			i(2075),	-- Priest's Mace / Heavy Mace [CATA+]
-			-- #endif
+			i(2075),	-- Priest's Mace
 			i(15225),	-- Sequoia Hammer
 			i(2079),	-- Sergeant's Warhammer
 			i(2256),	-- Skeletal Club
@@ -2622,7 +2661,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15261),	-- Sequoia Branch
 			i(4564),	-- Spiked Club
 			i(15260),	-- Stone Hammer
-			i(2915),	-- Taran Icebreaker
+			i(2915),	-- Taran Icebreaker (does not currently load)
 			i(1722),	-- Thornstone Sledgehammer
 			i(13047),	-- Twig of the World Tree
 			i(13045),	-- Viscous Hammer
@@ -2631,11 +2670,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		filter(ONE_HANDED_SWORDS, {
 			i(13036),	-- Assassination Blade
 			i(15220),	-- Battlefell Sabre
-			i(809),	-- Bloodrazor
+			i(809),	-- Bloodrazor (does not currently load)
 			i(9719),	-- Broken Blade of Heroes
 			i(1511),	-- Commoner's Sword
 			i(15218),	-- Crystal Sword
-			i(869),	-- Dazzling Longsword
+			i(869),	-- Dazzling Longsword (does not currently load)
 			i(3740),	-- Decapitating Sword
 			i(15219),	-- Dimensional Blade
 			i(8196),	-- Ebon Scimitar
@@ -2648,7 +2687,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15221),	-- Holy War Sword
 			i(12976),	-- Ironpatch Blade
 			i(864),	-- Knightly Longsword
-			i(2244),	-- Krol Blade
+			i(2244),	-- Krol Blade (does not currently load)
 			i(3783),	-- Light Scimitar
 			i(15213),	-- Mercenary Blade
 			i(15211),	-- Militant Shortsword
@@ -2676,7 +2715,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(1817),	-- Stock Shortsword
 			i(13032),	-- Sword of Corruption
 			i(6622),	-- Sword of Zeal
-			i(1728),	-- Teebu's Blazing Longsword
+			i(1728),	-- Teebu's Blazing Longsword (Does not currently load on beta)
 			i(12974),	-- The Black Knight
 			i(2011),	-- Twisted Sabre
 			i(3186),	-- Viking Sword
@@ -2688,22 +2727,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(9385),	-- Archaic Defender
 			i(8199),	-- Battlefield Destroyer
 			i(15253),	-- Beheading Blade
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227691, {	-- Blade of Hanna
-				["timeline"] = { CREATED_1_15_3 },
-			})),
-			-- #endif
 			i(2801),	-- Blade of Hanna
 			i(13043),	-- Blade of the Titans
 			i(1811),	-- Blunt Claymore
 			i(3781),	-- Broad Claymore
-			i(3206),	-- Cavalier Two-Hander [CATA+] / Cavalier Two-hander
+			i(3206),	-- Cavalier Two-hander
 			i(2877),	-- Combatant Claymore
 			i(1412),	-- Crude Bastard Sword
 			i(15254),	-- Dark Espadon
 			i(13049),	-- Deanship Claymore
 			i(13044),	-- Demonslayer
-			i(647),	-- Destiny
+			i(647),	-- Destiny (does not currently load)
 			i(15258),	-- Divine Warblade
 			i(13053),	-- Doombringer
 			i(3196),	-- Edged Bastard Sword
@@ -2716,7 +2750,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(1830),	-- Long Bastard Sword
 			i(15256),	-- Massacre Sword
 			i(4567),	-- Merc Sword
-			i(1982),	-- Nightblade
+			i(1982),	-- Nightblade (does not currently load)
 			i(1513),	-- Old Greatsword
 			i(15249),	-- Polished Zweihander
 			i(8177),	-- Practice Sword
@@ -2738,7 +2772,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15289),	-- Archstrike Bow
 			i(4025),	-- Balanced Long Bow
 			i(15288),	-- Blasthorn Bow
-			i(2825),	-- Bow of Searing Arrows
+			i(2825),	-- Bow of Searing Arrows (does not currently load)
 			i(8179),	-- Cadet's Bow
 			i(2773),	-- Cracked Shortbow
 			i(15287),	-- Crusader Bow
@@ -2750,7 +2784,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15296),	-- Hawkeye Bow
 			i(3036),	-- Heavy Shortbow
 			i(8180),	-- Hunting Bow
-			i(2824),	-- Hurricane
+			i(2824),	-- Hurricane (does not currently load)
 			i(4576),	-- Light Bow
 			i(2780),	-- Light Hunting Bow
 			i(15284),	-- Long Battle Bow
@@ -2776,7 +2810,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(13038),	-- Swiftwind
 		}),
 		filter(DAGGERS, {
-			i(14555),	-- Alcor's Sunrazor
+			i(14555),	-- Alcor's Sunrazor (does not currently load)
 			i(15241),	-- Battle Knife
 			i(2236),	-- Blackfang
 			i(15247),	-- Bloodstrike Dagger
@@ -2790,7 +2824,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4088),	-- Dreadblade
 			i(4023),	-- Fine Pointed Dagger
 			i(2763),	-- Fisherman Knife
-			i(2164),	-- Gut Ripper
+			i(2164),	-- Gut Ripper (does not currently load)
 			i(15242),	-- Honed Stiletto
 			i(3184),	-- Hook Dagger
 			i(2765),	-- Hunting Knife
@@ -2798,7 +2832,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15244),	-- Razor Blade
 			i(3187),	-- Sacrificial Kris
 			i(5267),	-- Scarlet Kris
-			i(2163),	-- Shadowblade
+			i(2163),	-- Shadowblade (does not currently load)
 			i(2138),	-- Sharpened Letter Opener
 			i(3786),	-- Shiny Dirk
 			i(4565),	-- Simple Dagger
@@ -2819,8 +2853,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2778),	-- Cheap Blunderbuss
 			i(4577),	-- Compact Shotgun
 			i(2781),	-- Dirty Blunderbuss
-			i(2098),	-- Double-Barreled Shotgun [CATA+] / Double-barreled Shotgun
-			i(2099),	-- Dwarven Hand Cannon
+			i(2098),	-- Double-barreled Shotgun
+			i(2099),	-- Dwarven Hand Cannon (does not currently load)
 			i(8188),	-- Explosive Shotgun
 			i(13139),	-- Guttbuster
 			i(3040),	-- Hunter's Muzzle Loader
@@ -2831,7 +2865,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2786),	-- Oiled Blunderbuss
 			i(8182),	-- Pellet Rifle
 			i(15323),	-- Percussion Shotgun
-			i(2100),	-- Precisely Calibrated Boomstick
+			i(2100),	-- Precisely Calibrated Boomstick (does not currently load)
 			i(13825),	-- Primed Musket
 			i(4089),	-- Ricochet Blunderbuss
 			i(2774),	-- Rust-Covered Blunderbuss
@@ -2850,7 +2884,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12989),	-- Gargoyle's Bite
 			i(13054),	-- Grim Reaper
 			i(13058),	-- Khoo's Point
-			i(1726),	-- Poison-Tipped Bone Spear [CATA+] / Poison-tipped Bone Spear
+			i(1726),	-- Poison-tipped Bone Spear
 			i(13059),	-- Stoneraven
 			i(13060),	-- The Needler
 		}),
@@ -2861,8 +2895,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(1813),	-- Chipped Quarterstaff
 			i(15274),	-- Diviner Long Staff
 			i(2072),	-- Dwarven Magestaff
-			i(944),	-- Elemental Mage Staff
-			i(812),	-- Glowing Brightwood Staff
+			i(944),	-- Elemental Mage Staff (does not currently load)
+			i(812),	-- Glowing Brightwood Staff (does not currently load)
 			i(791),	-- Gnarled Ash Staff
 			i(4024),	-- Heavy War Staff
 			i(767),	-- Long Bo Staff
@@ -2883,7 +2917,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(1720),	-- Tanglewood Staff
 			i(15275),	-- Thaumaturgist Staff
 			i(890),	-- Twisted Chanter's Staff
-			i(943),	-- Warden Staff
+			i(943),	-- Warden Staff (does not currently load)
 			i(1411),	-- Withered Staff
 		}),
 		filter(WANDS, {
@@ -2926,7 +2960,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(6599),	-- Battleforge Shield
 		i(2211),	-- Bent Large Shield
 		i(4069),	-- Blackforge Buckler
-		i(1169),	-- Blackskull Shield
+		i(1169),	-- Blackskull Shield (does not currently load)
 		i(3989),	-- Blocking Targe
 		i(14954),	-- Bloodforged Shield
 		i(14800),	-- Bloodlust Buckler
@@ -3039,18 +3073,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13079),	-- Shield of Thorsen
 		i(2216),	-- Simple Buckler
 		i(13081),	-- Skullance Shield
-		i(1168),	-- Skullflame Shield
+		i(1168),	-- Skullflame Shield (does not currently load)
 		i(15892),	-- Slayer's Shield
 		i(2219),	-- Small Round Shield
 		i(6560),	-- Soldier's Shield
 		i(15584),	-- Sparkleshell Shield
 		i(15522),	-- Spiked Chain Shield
 		i(15592),	-- Steadfast Buckler
-		-- #if BEFORE 8.2.0
-		i(7188, {	-- Stormwind Guard Shield
-			["timeline"] = { CREATED_1_12_1, ADDED_8_2_0 },
-		}),
-		-- #endif
 		i(14852),	-- Sunscale Shield
 		i(9804),	-- Superior Buckler
 		i(14825),	-- Symbolic Crest
@@ -3066,7 +3095,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(8282),	-- Valorous Shield
 		i(15890),	-- Vanguard Shield
 		i(3651),	-- Veteran Shield
-		i(1979),	-- Wall of the Dead
+		i(1979),	-- Wall of the Dead (does not currently load)
 		i(14729),	-- War Paint Shield
 		i(15486),	-- War Torn Shield
 		i(14947),	-- Warbringer's Shield
@@ -3104,13 +3133,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7609),	-- Elder's Amber Stave
 		i(15940),	-- Elegant Scepter
 		i(15968),	-- Elunarian Sphere
-		-- #if BEFORE CATA
-		i(15979),	-- Embersilk Stave / Flamecloth Stave [CATA+]
-		-- #endif
+		i(15979),	-- Embersilk Stave
 		i(15989),	-- Eternal Rod
-		-- #if AFTER CATA
-		i(15979),	-- Flamecloth Stave [CATA+] / Embersilk Stave
-		-- #endif
 		i(15983),	-- Gaea's Scepter
 		i(15978),	-- Geomancer's Rod
 		i(7557),	-- Gossamer Rod
@@ -3145,7 +3169,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7608),	-- Seer's Fine Stein
 		i(7558),	-- Shimmering Stave
 		i(15964),	-- Silksand Star
-		i(15928),	-- Silver-Thread Rod [CATA+] / Silver-thread Rod
+		i(15928),	-- Silver-thread Rod
 		i(15933),	-- Simple Branch
 		i(9882),	-- Sorcerer Sphere
 		i(15926),	-- Spellbinder Orb
@@ -3173,28 +3197,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13085),	-- Horizon Choker
 		i(12022),	-- Iridium Chain
 		i(12030),	-- Jet Chain
-		i(1443),	-- Jeweled Amulet of Cainwyn
+		i(1443),	-- Jeweled Amulet of Cainwyn (does not currently load)
 		i(12046),	-- Jungle Necklace
 		i(13084),	-- Kaleidoscope Chain
 		i(13002),	-- Lady Alizabeth's Pendant
-		i(14558),	-- Lady Maye's Pendant
-		i(1315),	-- Lei of Lilies
+		i(14558),	-- Lady Maye's Pendant (does not currently load)
+		i(1315),	-- Lei of Lilies (does not currently load)
 		i(12031),	-- Lodestone Necklace
 		i(12034),	-- Marble Necklace
-		i(5004, {	-- Mark of the Kirin Tor
-			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Crate of Salvage during Warlords of Draenor.",
-			-- #endif
-			["timeline"] = { CREATED_1_11_1, ADDED_6_0_2, REMOVED_7_0_3 },
-		}),
 		i(12042),	-- Marsh Chain
 		i(13091),	-- Medallion of Grand Marshal Morris
 		i(1714),	-- Necklace of Calisea
 		i(12035),	-- Obsidian Pendant
 		i(12032),	-- Onyx Choker
-		i(4614, {	-- Pendant of Myzrael
-			["timeline"] = { REMOVED_4_0_3 },
-		}),
+		i(4614),	-- Pendant of Myzrael
 		i(12048),	-- Prismatic Pendant
 		i(12026),	-- Quicksilver Pendant
 		i(13087),	-- River Pride Choker
@@ -3236,7 +3252,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7552),	-- Falcon's Hook
 		i(12010),	-- Fen Ring
 		i(12011),	-- Forest Hoop
-		i(942),	-- Freezing Band
+		i(942),	-- Freezing Band (does not currently load)
 		i(12005),	-- Granite Ring
 		i(11997),	-- Greenstone Circle
 		i(5001),	-- Heart Ring
@@ -3249,12 +3265,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12016),	-- Jungle Ring
 		i(11981),	-- Lead Band
 		i(11999),	-- Lodestone Hoop
-		i(13001),	-- Maiden's Circle
+		i(13001),	-- Maiden's Circle (does not currently load)
 		i(12002),	-- Marble Circle
 		i(12012),	-- Marsh Ring
 		i(12006),	-- Meadow Ring
 		i(5009),	-- Mindbender Loop
-		i(2246),	-- Myrmidon's Signet
+		i(2246),	-- Myrmidon's Signet (does not currently load)
 		i(12004),	-- Obsidian Band
 		i(12001),	-- Onyx Ring
 		i(11980),	-- Opal Ring
@@ -3281,7 +3297,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13097),	-- Thunderbrow Ring
 		i(11975),	-- Topaz Ring
 		i(12009),	-- Tundra Ring
-		i(1980),	-- Underworld Band
+		i(1980),	-- Underworld Band (does not currently load)
 		i(11989),	-- Vanadium Loop
 		i(11992),	-- Vermilion Band
 		i(11982),	-- Viridian Band
@@ -3292,14 +3308,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(TRINKET_F, {
 		i(1713),	-- Ankh of Life
 		i(2802),	-- Blazing Emblem
-		i(833),	-- Lifestone
+		i(833),	-- Lifestone (does not currently load)
 		i(7734),	-- Six Demon Bag
-		i(14557, {	-- The Lion Horn of Stormwind
-			-- #if WOD
-			["description"] = "Drops from Big Crate of Salvage.",
-			-- #endif
-			["timeline"] = { REMOVED_7_0_3 },
-		}),
+		i(14557),	-- The Lion Horn of Stormwind (does not currently load)
 		i(11302),	-- Uther's Strength
 	}),
 	filter(BAGS, {
@@ -3323,118 +3334,80 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(1685),	-- Troll-Hide Bag
 		i(5574),	-- White Leather Bag
 	}),
+	filter(RELICS_F, {
+		i(23197),	-- Idol of the Moon
+		i(23203),	-- Libram of Fervor
+		i(23199),	-- Totem of the Storm
+
+		i(11733),	-- Libram of Constitution
+		i(11736),	-- Libram of Resilience
+		i(11732),	-- Libram of Rumination
+		i(11734),	-- Libram of Tenacity
+		i(11737),	-- Libram of Voracity
+	}),
 	filter(MISC, {
-		-- #if BEFORE 5.0.4
-		applyclassicphase(PHASE_FIVE_RECIPES, i(23197, {	-- Idol of the Moon [Phase 5/6]
-			["timeline"] = { REMOVED_5_0_4 },
-		})),
-		-- #endif
-		-- #if AFTER 9.1.0
-		i(3670, {	-- Large Slimy Bone
-			["description"] = "Drops from Slimes in Classic zones.",
-		}),
-		-- #endif
-		i(11733, {	-- Libram of Constitution
-			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
-			-- #endif
-		}),
-		-- #if BEFORE 5.0.4
-		applyclassicphase(PHASE_FIVE_RECIPES, i(23203, {	-- Libram of Fervor [Phase 5/6]
-			["timeline"] = { REMOVED_5_0_4 },
-		})),
-		-- #endif
-		i(11736, {	-- Libram of Resilience
-			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
-			-- #endif
-		}),
-		i(11732, {	-- Libram of Rumination
-			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
-			-- #endif
-		}),
-		i(11734, {	-- Libram of Tenacity
-			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
-			-- #endif
-		}),
-		i(11737, {	-- Libram of Voracity
-			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
-			-- #endif
-		}),
-		-- #if AFTER 9.1.0
-		i(3300, {	-- Rabbit's Foot
-			["description"] = "Drops from wolves or dogs in vanilla zones.",
-		}),
-		i(11406, {	-- Rotting Bear Carcass
-			["description"] = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
-		}),
-		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_ONE, i(211786, {	-- Scroll: CHAP BALK WELLES
+		i(211786, {	-- Scroll: CHAP BALK WELLES
 			["description"] = "'Black Sheep Wall'",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211785, {	-- Scroll: CWAL
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211785, {	-- Scroll: CWAL
 			["description"] = "'Claw'",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211780, {	-- Scroll: KWYJIBO
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211780, {	-- Scroll: KWYJIBO
 			["description"] = "This might just be a Simpsons quote.",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211787, {	-- Scroll: LOWER PING WHOMEVER
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211787, {	-- Scroll: LOWER PING WHOMEVER
 			["description"] = "'Overwhelming Power'",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211854, {	-- Scroll: OMIT KESA
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211854, {	-- Scroll: OMIT KESA
 			["description"] = "'Time Soak'",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211855, {	-- Scroll: STHENIC LUNATE
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211855, {	-- Scroll: STHENIC LUNATE
 			["description"] = "'Ancient Hustle'",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211853, {	-- Scroll: VOCE WELL
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211853, {	-- Scroll: VOCE WELL
 			["description"] = "'Cow Level'",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211784, {	-- Scroll: WUBBA WUBBA
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(211784, {	-- Scroll: WUBBA WUBBA
 			["description"] = "This might just be a Pee Wee Herman quote.",
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(213545, {	-- PEATCHY ATTAX
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213546, {	-- Scroll: SHOOBEEDOOP
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(213546, {	-- Scroll: SHOOBEEDOOP
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213547, {	-- Scroll: THAW WORDS
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(213547, {	-- Scroll: THAW WORDS
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213544, {	-- Scroll: TOPAZ YORAK
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(213544, {	-- Scroll: TOPAZ YORAK
 			["classes"] = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213543, {	-- Scroll: UPDOG
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
+		}),
+		i(213543, {	-- Scroll: UPDOG
 			["classes"] = { MAGE },
-		})),
-		-- #endif
-		-- #if BEFORE 5.0.4
-		applyclassicphase(PHASE_FIVE_RECIPES, i(23199, {	-- Totem of the Storm [Phase 5/6]
-			["timeline"] = { REMOVED_5_0_4 },
-		})),
-		-- #endif
-	}),
-	filter(PROFESSION_EQUIPMENT, {
-		i(1819, {	-- Gouging Pick
-			-- #IF BEFORE 12.0.5
-			["collectible"] = false,
-			-- #ENDIF
+			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 	}),
-	category(106, applyclassicphase(PHASE_THREE_DMF_CARDS, {	-- Tarot Cards
+	category(106, {	-- Tarot Cards
 		i(19230),	-- Two of Beasts
 		i(19231),	-- Three of Beasts
 		i(19232),	-- Four of Beasts
@@ -3442,17 +3415,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19234),	-- Six of Beasts
 		i(19235),	-- Seven of Beasts
 		i(19236),	-- Eight of Beasts
-
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221293)),	-- Four of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221294)),	-- Five of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221295)),	-- Six of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221296)),	-- Seven of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221297)),	-- Eight of Dunes
-		-- #endif
-
 		i(19269),	-- Two of Elementals
 		i(19270),	-- Three of Elementals
 		i(19271),	-- Four of Elementals
@@ -3460,25 +3422,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19273),	-- Six of Elementals
 		i(19274),	-- Seven of Elementals
 		i(19275),	-- Eight of Elementals
-
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221302)),	-- Four of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221303)),	-- Five of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
-
-		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221285)),	-- Five of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221286)),	-- Six of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221287)),	-- Seven of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221288)),	-- Eight of Plagues
-		-- #endif
-
 		i(19278),	-- Two of Portals
 		i(19279),	-- Three of Portals
 		i(19280),	-- Four of Portals
@@ -3486,7 +3429,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19282),	-- Six of Portals
 		i(19283),	-- Seven of Portals
 		i(19284),	-- Eight of Portals
-
 		i(19259),	-- Two of Warlords
 		i(19260),	-- Three of Warlords
 		i(19261),	-- Four of Warlords
@@ -3495,7 +3437,28 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19264),	-- Seven of Warlords
 		i(19265),	-- Eight of Warlords
 
-		-- #if SEASON_OF_DISCOVERY
+		--[[ Might exist??
+		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221293)),	-- Four of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221294)),	-- Five of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221295)),	-- Six of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221296)),	-- Seven of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221297)),	-- Eight of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221302)),	-- Four of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221303)),	-- Five of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221285)),	-- Five of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221286)),	-- Six of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221287)),	-- Seven of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221288)),	-- Eight of Plagues
 		applyclassicphase(SOD_PHASE_THREE, i(221273)),	-- Two of Wilds
 		applyclassicphase(SOD_PHASE_THREE, i(221274)),	-- Three of Wilds
 		applyclassicphase(SOD_PHASE_THREE, i(221275)),	-- Four of Wilds
@@ -3503,8 +3466,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		applyclassicphase(SOD_PHASE_THREE, i(221277)),	-- Six of Wilds
 		applyclassicphase(SOD_PHASE_THREE, i(221278)),	-- Seven of Wilds
 		applyclassicphase(SOD_PHASE_THREE, i(221279)),	-- Eight of Wilds
-		-- #endif
-	})),
+		--]]
+	}),
 	filter(TOYS, {
 		i(1973),	-- Orb of Deception (TOY!)
 	}),
@@ -3637,6 +3600,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 			i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer (RECIPE!)
 		}),
+		--[[ Until profession complete
 		prof(ENGINEERING, {
 			i(16055),	-- Schematic: Arcane Bomb (RECIPE!)
 			i(10601),	-- Schematic: Bright-Eye Goggles (RECIPE!)
@@ -3668,16 +3632,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_8_0_1 },
 			}),
 		}),
-		applyclassicphase(TBC_PHASE_ONE, prof(JEWELCRAFTING, sharedDataSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
-			i(20976),	-- Design: Citrine Pendant of Golden Healing (RECIPE!)
-			i(21953),	-- Design: Emerald Owl (RECIPE!)
-			i(21947),	-- Design: Gem Studded Band (RECIPE!)
-			i(21940),	-- Design: Golden Hare (RECIPE!)
-			i(20974),	-- Design: Jade Pendant of Blasting (RECIPE!)
-			i(21949),	-- Design: Ruby Serpent (RECIPE!)
-			i(21945),	-- Design: The Aquamarine Ward (RECIPE!)
-			i(21944),	-- Design: Truesilver Boar (RECIPE!)
-		}))),
 		prof(LEATHERWORKING, {
 			-- Moved to Leatherworking
 			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
@@ -3835,6 +3789,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
 		}),
+		--]]
 		cl(DRUID, {
 			{
 				["itemID"] = 17682,	-- Book: Gift of the Wild
@@ -3920,29 +3875,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		--
 		-- Cloth:
 		i(14256, {	-- Felcloth
-			-- #if AFTER CATA
-			["coords"] = {
-				{ 52.0, 70.15, MAP.WINTERSPRING },	-- Xorothian Imps (Mazthoril)
-				{ 52.3, 75.70, MAP.WINTERSPRING },	-- Xorothian Satyrs (Mazthoril)
-				{ 52.75, 64.65, MAP.WINTERSPRING },	-- Xorothian Eredar (Mazthoril)
-				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
-				{ 17.7, 37.7, MAP.FELWOOD },	-- Misty Valley
-				{ 37.7, 67.85, MAP.BLASTED_LANDS },	-- The Tainted Forest
-				{ 33.4, 46.8, MAP.BLASTED_LANDS },	-- The Tainted Scar
-				{ 45.9, 46.8, MAP.BLASTED_LANDS },	-- The Dark Portal, west of
-			},
-			["crs"] = {
-				50315,	-- Xorothian Eredar
-				50321,	-- Xorothian Imp
-				50318,	-- Xorothian Satyr
-				7136,	-- Infernal Sentry
-				46950,	-- Misty Grell
-				41253,	-- Oath-Chained Infernal
-				41470,	-- Doomguard Destroyer
-				41471,	-- Dreadlord Defiler
-				6011,	-- Felguard Sentry
-			},
-			-- #endif
 			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
 			["maps"] = {
 				MAP.DIRE_MAUL_WARPWOOD_QUARTER,
@@ -4452,24 +4384,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				i(5498),	-- Small Lustrous Pearl
 			},
 		}),
-		-- CRIEVE NOTE: If something is from a specific zone, don't put them in here.
-		--[[
-		o(2744),	-- Giant Clam (with Giant Clam Meat, found in STV)
-		o(19017, {	-- Giant Clam (with Clam Meat, found in Bloodmyst Isle and Ghostlands)
-			["description"] = "Can be found in the sea.",
-			["groups"] = {
-				i(5503),	-- Clam Meat
-				i(5498),	-- Small Lustrous Pearl
-			},
-		}),
-		o(19018, {	-- Giant Clam (with Tangy Clam Meat, found in BfD)
-			["groups"] = {
-				i(2143),	-- Cuirboulli Boots (confirmed - Danny Donkey)
-				i(5500),	-- Iridescent Pearl
-				i(5504),	-- Tangy Clam Meat
-			},
-		}),
-		]]--
 		i(5523, {	-- Small Barnacled Clam
 			["maps"] = {
 				MAP.THE_BARRENS,
@@ -4500,20 +4414,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		-- Cooking:
-		i(35562, {	-- Bear Flank
-			["coords"] = {
-				{ 39.0, 45.2, MAP.FELWOOD },	-- Shatter Scale Vale, west of
-				{ 43.5, 63.0, MAP.FELWOOD },	-- Wildhearth Point, west of
-				{ 46.1, 83.0, MAP.FELWOOD },	-- Dreadwood Village, north of
-				{ 54.1, 86.7, MAP.FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border)
-			},
-			["crs"] = {
-				8956,	-- Angerclaw Bear
-				8958,	-- Angerclaw Mauler
-			},
-			["description"] = "Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",
-			["timeline"] = { ADDED_2_4_0 },
-		}),
 		i(3173, {	-- Bear Meat
 			["coords"] = {
 				{ 73.7, 44.8, MAP.LOCH_MODAN },	-- Eastside bear valley
@@ -4597,7 +4497,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			["description"] = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
 		}),
-		-- i(5503),	-- Clam Meat > Properly sourced under Giant Clam listed above.
 		i(2675, {	-- Crawler Claw
 			["maps"] = {
 				MAP.ASHENVALE,
@@ -4660,19 +4559,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["coord"] = { 54.3, 57.8, MAP.LOCH_MODAN },	-- The Loch (southern isle)
 			["cr"] = 1693,	-- Loch Crocolisk
 			["description"] = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
-		}),
-		i(22644, {	-- Crunchy Spider Leg
-			["coords"] = {
-				{ 86.0, 54.0, MAP.DUSKWOOD },	-- By spider cave east of Darkshire
-				{ 77.0, 60.0, MAP.DUSKWOOD },	-- Windmill crossroad
-				{ 64.0, 20.1, MAP.DUSKWOOD },	-- The Darkened Bank, east.
-			},
-			["crs"] = {
-				930,	-- Black Widow Hatchling
-				217,	-- Venom Web Spider
-			},
-			["description"] = "Drops from spiders in the level bracket 10-35 like spiders in Duskwood.",
-			["timeline"] = { ADDED_2_0_1 },
 		}),
 		i(12207, {	-- Giant Egg
 			["coords"] = {
@@ -4927,16 +4813,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2960,	-- Prairie Wolf Alpha
 				118,	-- Prowler
 			},
-			["description"] =
-				-- #if AFTER BFA
-				"Drops from wolves in previously entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
-				-- #elseif AFTER 4.0.3
-				"Drops from wolves in the entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
-				-- #else
-				"Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
-				-- #endif
+			["description"] = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
 		}),
-		-- i(5504),	-- Tangy Clam Meat > Properly sourced under Giant Clam listed above.
 		i(12206, {	-- Tender Crab Meat
 			["coords"] = {
 				{ 81.9, 11.5, MAP.SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
@@ -4946,14 +4824,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1088,	-- Monstrous Crawler
 				922,	-- Silt Crawler
 			},
-			["description"] =
-				-- #if AFTER BFA
-				"Drops from crawlers in previously higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
-				-- #elseif AFTER 4.0.3
-				"Drops from crawlers in higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
-				-- #else
-				"Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
-				-- #endif
+			["description"] = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
 		}),
 		i(3667, {	-- Tender Crocolisk Meat
 			["coords"] = {
@@ -5017,32 +4888,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			["description"] = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
 		}),
-		-- i(7974),	-- Zesty Clam Meat > Properly sourced under Big-mouth Clam listed above.
-		-- ______________________________________
-		--
 		-- Sacks of Gems
 		i(17962),	-- Blue Sack of Gems
-		-- #IF BEFORE 4.0.3
 		i(17963),	-- Green Sack of Gems
 		i(17965),	-- Yellow Sack of Gems
-		-- #ENDIF
-		-- ______________________________________
-		--
 		-- Other reagents:
 		i(11754, {["maps"] = { MAP.BLACKROCK_DEPTHS }, }),	-- Black Diamond
-		-- #if AFTER MOP
-		-- Danny Donkey: Dark Rune was only obtainable from Scholomance prior to MoP. With it's revamp Dark Runes became a zone drop from given mobs in Eastern Plaguelands. With the return of old Scholomance in 10.1.5, that is again a source for Dark Runes.
-		i(20520, {	-- Dark Rune
-			["coords"] = {
-				{ 55.1, 62.2, MAP.EASTERN_PLAGUELANDS },	-- Corin's Crossing
-				{ 62.4, 76.0, MAP.EASTERN_PLAGUELANDS },	-- Death Cultist Base Camp
-			},
-			["crs"] = {
-				8551,	-- Dark Summoner
-				8548,	-- Vile Tutor
-			},
-		}),
-		-- #endif
 		i(7191),	-- Fused Wiring
 		i(19441, {	-- Huge Venom Sac
 			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",
@@ -5063,7 +4914,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5982,	-- Black Slayer
 				8299,	-- Spiteflayer
 			},
-			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(5637, {	-- Large Fang
 			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
@@ -5120,7 +4970,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
 			["maps"] = { MAP.THE_HINTERLANDS },
-			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(5116, {	-- Long Tail Feather
 			["coords"] = {
@@ -5133,7 +4982,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.BADLANDS,
 				MAP.DESOLACE,
 			},
-			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(7072, {	-- Naga Scale
 			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
@@ -5292,4 +5140,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 	}),
-}));
+});

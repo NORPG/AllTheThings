@@ -1552,7 +1552,8 @@ i(10922,{c={4},f=55,lvl=56,spellID=13227}),
 i(20844,{c={4},f=55,lvl=60,spellID=25351})}}),
 prof(393,{description="The following items can be gathered by skinning creatures out in the world.",g={
 h(-22,{
-s(158751,7005,{description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",f=2})}),
+s(158751,7005,{description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",f=2}),
+i(277114,{awp=16001,b=1,f=113})}),
 sp(8613,{
 i(4234,{maps_disp={1425,1445,1446}}),
 i(2318,{maps_disp={1421,1432,1436,1439}}),
