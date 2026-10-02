@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ATT
 {
@@ -11,6 +12,8 @@ namespace ATT
     /// </summary>
     public static partial class Export
     {
+        private static Regex DirectLuaFieldName = new Regex(@"^[A-z][A-z0-9]*$", RegexOptions.Compiled);
+
         /// <summary>
         /// Whether debug information will be printed from Export functions
         /// </summary>
@@ -172,6 +175,21 @@ namespace ATT
             }
             builder2.Append("}").AppendLine();
             builder.Replace("--STRUCTURE_REPLACEMENTS" + Environment.NewLine, builder2.ToString());
+        }
+
+        public static void ExportFieldName(Exporter builder, object field)
+        {
+            var name = ToString(field);
+            if (DirectLuaFieldName.IsMatch(name))
+            {
+                builder.Append(name);
+            }
+            else
+            {
+                builder.Append("[");
+                ExportPureLua(builder, field);
+                builder.Append("]");
+            }
         }
 
         /// <summary>

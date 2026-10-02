@@ -2733,7 +2733,7 @@ namespace ATT
                             //        if (TryGetTypeDBObjectChildren(child, out List<CriteriaTree> childTrees))
                             //        {
                             //            LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(childTrees.Select(c => c.CriteriaID).ToList())}");
-                            //            Log($"Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
+                            //            Log($"Please ensure the data is accurate and add _noautomation = true, to the crit() group to remove this warning.");
                             //            return;
                             //        }
                             //    }
@@ -2745,7 +2745,7 @@ namespace ATT
 
                 // See if we didn't end up with a valid UID with nothing nested
                 LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(criteriaTreeData.EnumerateChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
-                Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
+                Log($"--- Please ensure the data is accurate and add _noautomation = true, to the crit() group to remove this warning.");
                 return;
             }
 

@@ -1041,7 +1041,7 @@ namespace ATT
                     message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
                     if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
                     {
-                        message = $"{message} Assign: {{ [\"ItemAppearanceModifierID\"] = {itemModifiedAppearance.ItemAppearanceModifierID} }}";
+                        message = $"{message} Assign: {{ ItemAppearanceModifierID = {itemModifiedAppearance.ItemAppearanceModifierID} }}";
                         substituted = true;
                     }
 

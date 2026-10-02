@@ -164,7 +164,7 @@ namespace ATT
                 }
 
                 // Append the Sub-Indent and the Field Name
-                builder.Append(subindent).Append("[\"g\"] = ");
+                builder.Append(subindent).Append("g=");
 
                 // Append the undetermined object's format to the builder.
                 ExportRawLua(builder, g, subindent);

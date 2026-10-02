@@ -1855,7 +1855,7 @@ i(19182,{b=1,e=1,f=55,u=2})}}),
 q(7901,{coords={
 [407]={{51.6,81.8}}},e=1,qgs={14829},repeatable=1,rwp=40300,u=2,g={
 i(19182,{b=1,e=1,f=55,u=2})}}),
-q(7946,{coords={
+q(7946,{awp=11101,coords={
 [407]={{55.9,70.7}}},cost={{"i",11325,2}},description="You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",e=1,isMonthly=1,qgs={14871},g={
 i(19462,{b=1,e=1,f=101,spellID=23851,g={
 p(106,{b=1,e=1,itemID=19450,npcID=14878,spellID=23811})}})}}),

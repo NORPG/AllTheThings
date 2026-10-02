@@ -2639,12 +2639,12 @@ n(262455,{isWeekly=1,questID=92888,g={
 ach(63326,{
 s(309591,276163,{f=3}),
 crit(115861,{achID=61906,id=4})}),
-s(303636,264971,{description="The first kill per week per character has a very high chance to grant you this item.",f=28}),
-s(303635,264970,{description="The first kill per week per character has a very high chance to grant you this item.",f=22}),
+s(303636,264971,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=28}),
+s(303635,264970,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=22}),
 p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687}),
-s(303846,265368,{description="The first kill per week per character has a very high chance to grant you this item.",f=25}),
-s(303844,265366,{description="The first kill per week per character has a very high chance to grant you this item.",f=21}),
-s(303845,265367,{description="The first kill per week per character has a very high chance to grant you this item.",f=20})}}),
+s(303846,265368,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=25}),
+s(303844,265366,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=21}),
+s(303845,265367,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=20})}}),
 n(265500,{isWeekly=1,questID=97913,g={
 ach(63334,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",rwp=120100,u=2,g={
 title(776,{u=2})}}),

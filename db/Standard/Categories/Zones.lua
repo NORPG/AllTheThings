@@ -40554,13 +40554,13 @@ n(12040,{awp=40003,coords={
 [26]={{66.6,44.2}}},r=2,sym={{"select","itemID",2424,2426,2427,2428,3894,2425,2423,2451,17190,8094,8088,8089,8090,8091,8092,8093}},g={
 s(4381,12257,{f=6,isLimited=1,loc=45,lvl=16}),
 s(4382,12258,{f=6,isLimited=1,loc=45,lvl=17})}}),
-n(12958,{coords={
+n(12958,{awp=11101,coords={
 [26]={{34.4,38.6}}},g={
 r(19062,{isLimited=1,itemID=15735,requireSkill=165,skillID=2532})}}),
 n(8161,{coords={
 [26]={{13.6,44.8}}},r=2,g={
 r(9937,{isLimited=1,itemID=7995,requireSkill=164,skillID=2477})}}),
-n(8160,{coords={
+n(8160,{awp=11101,coords={
 [26]={{13.3,43.4}}},r=2,g={
 r(10516,{isLimited=1,itemID=8409,requireSkill=165,skillID=2532})}}),
 n(14738,{coords={
@@ -40993,7 +40993,7 @@ q(360,{coords={
 [18]={{65.4,60.2}}},qgs={1495},r=1,rwp=40003,sourceQuests={359},u=2}),
 q(24989,{awp=40003,coords={
 [18]={{65.4,60.2}}},qgs={1495},r=1,sourceQuests={24988}}),
-q(6323,{coords={
+q(6323,{awp=11101,coords={
 [18]={{58.8,51.8}}},qgs={43124},races={5},sourceQuests={6321}}),
 q(1820,{c={1},coords={
 [18]={{58.21,51.45}}},isBreadcrumb=1,nextQuests={1821},qgs={1496},r=1,rwp=40003,sourceQuests={1819},u=2}),
@@ -41003,7 +41003,7 @@ q(355,{coords={
 [18]={{61.73,52.3}}},qgs={1500},r=1,rwp=40003,u=2}),
 q(25005,{awp=40003,coords={
 [18]={{54.5,29.8}}},qgs={1500},r=1,sourceQuests={25004,25029}}),
-q(6321,{coords={
+q(6321,{awp=11101,coords={
 [18]={{60.2,52.4}}},qgs={1745},qis={16209},races={5}}),
 q(25012,{awp=40003,coords={
 [18]={{83.5,69.9}}},qgs={37915},r=1,sourceQuests={25011}}),
