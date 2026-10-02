@@ -418,9 +418,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92460, {	-- Coming of Age
-				["lvl"] = 1,
 				qg = 251362,	-- Ailee Farheart
 				coord = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
+				["lvl"] = 1,
 				groups = {
 					i(264908),	-- Ancient Heirloom
 				},
@@ -569,10 +569,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92461, {	-- Harmony in Balance
-				["lvl"] = 1,
 				sourceQuest = 92460,	-- Coming of Age
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				["lvl"] = 1,
 				groups = {
 					objective(1, {	-- 0/8 Juvenile Vuldren
 						provider = { "n", 250873 },	-- Juvenile Vuldren
@@ -638,10 +638,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 			}),
 			q(92462, {	-- Infestation Investigation
-				["lvl"] = 1,
 				sourceQuest = 92460,	-- Coming of Age
 				qg = 251368,	-- Elatrell Featherlight
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
+				["lvl"] = 1,
 				groups = {
 					objective(1, {	-- 0/8 Pesky Cirrusfly
 						["provider"] = { "n", 251169 },	-- Pesky Cirrusfly

@@ -75,11 +75,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["classes"] = { HUNTER },
 					}),
 					q(97236, {	-- Fang of Githyiss
-						["lvl"] = 1,
 						["provider"] = { "i", 277190 },	-- Fang of Githyiss
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
 						["cr"] = 1994,	-- Githyiss the Vile
+						["lvl"] = 1,
 					}),
 					q(3119, {	-- Hallowed Sigil
 						["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
@@ -139,11 +139,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97977, {	-- Nature's Call
-						["lvl"] = 1,
 						["qg"] = 1992,	-- Tarindrella
 						["coord"] = { 57.8, 45.0, MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 1,
 						["groups"] = {
 							objective(1, {	-- 0/4 Gnarlpine Totem
 								["providers"] = {
@@ -232,11 +232,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97979, {	-- The Goddess Provides
-						["lvl"] = 1,
 						["qg"] = 3595,	-- Shanda <Priest Trainer>
 						["coord"] = { 59.2, 40.4, MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = { NIGHTELF },
+						["lvl"] = 1,
 					}),
 					q(458, {	-- The Woodland Protector (1/2)
 						["qg"] = 2077,	-- Melithar Staghelm

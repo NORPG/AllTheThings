@@ -71,7 +71,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 					}),
 					q(98581, {	-- Archaic Rune
-						["lvl"] = 1,
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
 						["qg"] = 658,	-- Sten Stoutarm
 						["qi"] = 282400,	-- Archaic Rune (PQI!)
@@ -79,6 +78,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = { DWARF },
 						["classes"] = { SHAMAN },
+						["lvl"] = 1,
 					}),
 					q(1599, {	-- Beginnings
 						["altQuests"] = { 1598 },	-- The Stolen Tome
@@ -103,13 +103,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["lvl"] = 4,
 					}),
 					q(94373, {	-- Call of Earth (1/3)
-						["lvl"] = 4,
 						["sourceQuest"] = 98581,	-- Archaic Rune
 						["qg"] = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						["coord"] = { 28.8, 66.2, MAP.DUN_MOROGH },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = { DWARF },
 						["classes"] = { SHAMAN },
+						["lvl"] = 4,
 						["groups"] = {
 							objective(1, {	-- 0/2 Frostmane Bear Pendant
 								["provider"] = { "i", 264356 },	-- Iceclaw Bear Pendant
@@ -118,7 +118,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 					}),
 					q(94374, {	-- Call of Earth (2/3)
-						["lvl"] = 4,
 						["sourceQuest"] = 94373,	-- Call of Earth (1/3)
 						["qg"] = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						["qi"] = 6635,	-- Earth Sapta
@@ -126,9 +125,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = { DWARF },
 						["classes"] = { SHAMAN },
+						["lvl"] = 4,
 					}),
 					q(94375, {	-- Call of Earth (3/3)
-						["lvl"] = 4,
 						["sourceQuest"] = 94374,	-- Call of Earth (2/3)
 						["qg"] = 5891,	-- Minor Manifestation of Earth
 						["qi"] = 6656,	-- Rough Quartz
@@ -136,6 +135,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = { DWARF },
 						["classes"] = { SHAMAN },
+						["lvl"] = 4,
 						["groups"] = {
 							i(5175, {	-- Earth Totem
 								["description"] = "You must keep this in your bags forever.",
@@ -730,12 +730,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(99158, {	-- Dawn in the Mountains
-				["lvl"] = 5,
 				["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
 				["qi"] = 286355,	-- Crate of Candles (QI!)
 				["coord"] = { 47.3, 52.2, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
 			}),
 			q(5637, {	-- Desperate Prayer
 				["altQuests"] = {
@@ -765,20 +765,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["lvl"] = 2,
 			}),
 			q(96392, {	-- Farsen's Watch
-				["lvl"] = 9,
 				["sourceQuest"] = 96408,	-- A Vistor to Dun Morogh
 				["qg"] = 264936,	-- Earthseer Farsen
 				["coord"] = { 64.8, 58.4, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 9,
 			}),
 			q(99159, {	-- Finding Warmth
-				["lvl"] = 5,
 				["sourceQuest"] = 99158,	-- Dawn in the Mountains
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 5,
 				["groups"] = {
 					objective(1, {	-- 0/14 Mostly Dry Firewood
 						["providers"] = {
@@ -789,11 +789,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(98321, {	-- Flintfire's Shipment
-				["lvl"] = 4,
 				["qg"] = 1241,	-- Tognus Flintfire <Journeyman Blacksmith>
 				["coord"] = { 45.3, 51.9, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 4,
 				["groups"] = {
 					objective(1, {	-- 0/8 Flintfire's Shipments
 						["providers"] = {
@@ -804,11 +804,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(98326, {	-- Frosthowl
-				["lvl"] = 5,
 				["qg"] = 8508,	-- Gretta Ganter <Fisherman Supplies>
 				["coord"] = { 31.5, 44.6, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
 				["groups"] = {
 					objective(1, {	-- 0/1 Sack of Fish
 						["provider"] = { "i", 280426 },	-- Sack of Fish
@@ -882,12 +882,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				}
 			}),
 			q(96390, {	-- Nip 'Em in the Bud
-				["lvl"] = 9,
 				["sourceQuest"] = 96392,	-- Farsen's Watch
 				["qg"] = 264936,	-- Earthseer Farsen
 				["coord"] = { 64.8, 58.4, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 9,
 				["groups"] = {
 					objective(1, {	-- 0/10 Dark Iron Spy slain
 						["provider"] = { "n", 6123 },	-- Dark Iron Spy
@@ -997,12 +997,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(99160, {	-- Rime's Wrath (1/2)
-				["lvl"] = 5,
 				["sourceQuest"] = 99159,	-- Finding Warmth
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
 				["groups"] = {
 					objective(1, {	-- 0/10 Minor Ice Elemental
 						["provider"] = { "n", 276003 },	-- Minor Ice Elemental
@@ -1010,12 +1010,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(99161, {	-- Rime's Wrath (2/2)
-				["lvl"] = 5,
 				["sourceQuest"] = 99160,	-- Rime's Wrath (1/2)
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
 				["groups"] = {
 					objective(1, {	-- 0/1 Avala's Core
 						["provider"] = { "i", 286325 },	-- Avala's Core
@@ -1045,28 +1045,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(98322, {	-- Secure the Mountain (1/3)
-				["lvl"] = 4,
 				["sourceQuest"] = 420,	-- Senir's Observations (2/2)
 				["qg"] = 1252,	-- Senir Whitebeard
 				["coord"] = { 46.8, 53.8, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 4,
 			}),
 			q(98319, {	-- Secure the Mountain (2/3)
-				["lvl"] = 4,
 				["sourceQuest"] = 98322,	-- Secure the Mountain (1/3)
 				["qg"] = 271546,	-- Mountaineer Gretchen
 				["coord"] = { 44.1, 57.1, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 4,
 			}),
 			q(98323, {	-- Secure the Mountain (3/3)
-				["lvl"] = 4,
 				["sourceQuest"] = 98319,	-- Secure the Mountain (2/3)
 				["qg"] = 271546,	-- Mountaineer Gretchen
 				["coord"] = { 44.1, 57.1, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 4,
 				["groups"] = {
 					i(280430),	-- Mountaineer Gretchen's Report
 				},
@@ -1436,12 +1436,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(99162, {	-- Treacherous Cold
-				["lvl"] = 5,
 				["sourceQuest"] = 99159,	-- Finding Warmth
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
 				["groups"] = {
 					objective(1, {	-- 0/1 Coalbeard's Rifle
 						["providers"] = {

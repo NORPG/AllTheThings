@@ -436,9 +436,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(86776, {	-- Ingredients for the Forge
-				["groups"] = {
-					i(3576),	-- Tin Bar
-				},
 				["races"] = ALLIANCE_ONLY,
 				-- CRIEVE NOTE: This might be a mining exclusive quest
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
@@ -447,6 +444,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				maps = { ARATHI_HIGHLANDS },
 				cost = {{ "i", 2841, 10 }},	-- Bronze Bar
 				lvl = 15,
+				["groups"] = {
+					i(3576),	-- Tin Bar
+				},
 			}),
 			q(436, {	-- Ironband's Excavation
 				["qg"] = 1105,	-- Jern Hornhelm

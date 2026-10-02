@@ -23,12 +23,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						races = ALLIANCE_ONLY,
 					}),
 					q(92124, {	-- Book Inventory
-						["lvl"] = 1,
 						sourceQuest = 91741,	-- Nibbled on Book
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						["lvl"] = 1,
 					}),
 					q(6, {	-- Bounty on Garrick Padfoot
 						sourceQuest = 18,	-- Brotherhood of Thieves
@@ -88,12 +88,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						classes = { ROGUE },
 					}),
 					q(91758, {	-- Follow That Kobold!
-						["lvl"] = 1,
 						sourceQuest = 91752,	-- The Big Picture
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						["lvl"] = 1,
 					}),
 					q(3104, {	-- Glyphic Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
@@ -182,30 +182,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					q(91745, {	-- Mining Consultant
-						["lvl"] = 1,
 						sourceQuest = 91743,	-- Rascally Rodents
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						["lvl"] = 1,
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled on Book
-						["lvl"] = 1,
 						qs = 247834,	-- Nibbled on Book (QS!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						qis = {
 							247857,	-- Nibbled on Book
 						},
+						["lvl"] = 1,
 					}),
 					q(91743, {	-- Rascally Rodents
-						["lvl"] = 1,
 						sourceQuest = 92124,	-- Book Inventory
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						["lvl"] = 1,
 						groups = {
 							objective(1, {	-- 0/8 Stolen Book
 								provider = { "i", 247839 },	-- Stolen Book
@@ -246,13 +246,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					q(91772, {	-- Shhh! We're Hunting Kobolds
-						["lvl"] = 1,
 						sourceQuest = 91758,	-- Follow That Kobold!
 						qg = 248415,	-- Tordrin Sternblade
 						qi = 247970,	-- Kobold Tracking Kit (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						["lvl"] = 1,
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
 								provider = { "o", 563442 },	-- Kobold Tracks
@@ -298,12 +298,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						lvl = 4,
 					}),
 					q(91752, {	-- The Big Picture
-						["lvl"] = 1,
 						sourceQuest = 91745,	-- Mining Consultant
 						qg = 247226,	-- Kelsey Fargo
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						["lvl"] = 1,
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -572,13 +572,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 4,
 			}),
 			q(91775, {	-- Book Return
-				["lvl"] = 1,
 				sourceQuest = 91772,	-- Shhh! We're Hunting Kobolds
 				qg = 240,	-- Marshal Dughan
 				qi = 279935,	-- Book Bag (PQI!)
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				["lvl"] = 1,
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
 						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals
@@ -1123,12 +1123,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(91777, {	-- Rare Books
-				["lvl"] = 1,
 				sourceQuest = 91775,	-- Book Return
 				qg = 240,	-- Marshal Dughan
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				["lvl"] = 1,
 				groups = {
 					objective(1, {	-- 0/1 Geomancy for Curious Young Wizards
 						provider = { "i", 248003 },	-- Geomancy for Curious Young Wizards

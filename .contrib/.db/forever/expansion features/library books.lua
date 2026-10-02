@@ -31,28 +31,28 @@ root(ROOTS.ExpansionFeatures, {
 		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			q(78145, {	-- Arcanic Systems Manual
+				["provider"] = { "i", 209847 },	-- Arcanic Systems Manual
+				["maps"] = { THE_BARRENS },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["provider"] = { "i", 209847 },	-- Arcanic Systems Manual
-				["maps"] = { THE_BARRENS }, 
 			}),
 			q(79091, {	-- Archmage Antonidas: The Unabridged Autobiography
-				["groups"] = {
-					i(211779),	-- Comprehension Charm
-				},
 				["provider"] = { "i", 203754 },	-- Archmage Antonidas: The Unabridged Autobiography
 				["maps"] = { IRONFORGE },
 				["races"] = ALLIANCE_ONLY, 
-			}),
-			q(79092, {	-- Archmage Theocritus's Research Journal
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["lvl"] = 1,
+			}),
+			q(79092, {	-- Archmage Theocritus's Research Journal
 				["provider"] = { "i", 203755 },	-- Archmage Theocritus's Research Journal
 				["maps"] = { ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY, 
+				["lvl"] = 1,
+				["groups"] = {
+					i(211779),	-- Comprehension Charm
+				},
 			}),
 			q(79096, {	-- Ataeric: On Arcane Curiosities
 				["provider"] = { "i", 210177 },	-- Ataeric: On Arcane Curiosities
@@ -60,25 +60,25 @@ root(ROOTS.ExpansionFeatures, {
 				["races"] = HORDE_ONLY, 
 			}),
 			q(79097, {	-- Baxtan: On Destructive Magics
+				["provider"] = { "i", 208800 },	-- Baxtan: On Destructive Magics
+				["maps"] = { THE_BARRENS },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["provider"] = { "i", 208800 },	-- Baxtan: On Destructive Magics
-				["maps"] = { THE_BARRENS }, 
 			}),
 			q(78142, {	-- Bewitchments and Glamours
+				["provider"] = { "i", 209845 },	-- Bewitchments and Glamours
+				["maps"] = { WESTFALL },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["provider"] = { "i", 209845 },	-- Bewitchments and Glamours
-				["maps"] = { WESTFALL }, 
 			}),
 			q(78147, {	-- Crimes Against Anatomy
+				["provider"] = { "i", 209849 },	-- Crimes Against Anatomy
+				["maps"] = { DUSKWOOD },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["provider"] = { "i", 209849 },	-- Crimes Against Anatomy
-				["maps"] = { DUSKWOOD }, 
 			}),
 			q(78150, {	-- Friend of the Library
 				["sourceQuests"] = {
@@ -106,21 +106,20 @@ root(ROOTS.ExpansionFeatures, {
 				},
 			}),
 			q(78149, {	-- Fury of the Land
+				["provider"] = { "i", 209851 },	-- Fury of the Land
+				["maps"] = { STONETALON_MOUNTAINS },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["provider"] = { "i", 209851 },	-- Fury of the Land
-				["maps"] = { STONETALON_MOUNTAINS }, 
 			}),
 			q(78146, {	-- Goaz Scrolls
+				["provider"] = { "i", 209848 },	-- Goaz Scrolls
+				["maps"] = { WETLANDS },
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["provider"] = { "i", 209848 },	-- Goaz Scrolls
-				["maps"] = { WETLANDS }, 
 			}),
 			q(79536, {	-- Greater Friend of the Library
-				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 211033,
 				["sourceQuests"] = {
@@ -143,65 +142,66 @@ root(ROOTS.ExpansionFeatures, {
 					-- TODO: Need to add more book quests
 				},
 				["sourceQuestNumRequired"] = 20,
+				["lvl"] = 20,
 				["groups"] = {
 					i(281634),	-- Field Researcher's Loop
 					i(281635),	-- Philanthropist's Ring
 				},
 			}),
 			q(78124, {	-- Nar'thalas Almanac
-				["groups"] = {
-					i(211779),	-- Comprehension Charm
-				},
 				["provider"] = { "i", 209843 },	-- Nar'thalas Almanac, Vol. 74
 				["maps"] = { DARKSHORE }, 
-			}),
-			q(79093, {	-- Rumi of Gnomeregan: The Collected Works
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
+			}),
+			q(79093, {	-- Rumi of Gnomeregan: The Collected Works
 				["provider"] = { "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
 				["maps"] = { WESTFALL, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY, 
-			}),
-			q(78148, {	-- Runes of the Sorceror-Kings
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["lvl"] = 1,
+			}),
+			q(78148, {	-- Runes of the Sorceror-Kings
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "i", 209850 },	-- Runes of the Sorcerer-Kings
 				["maps"] = { LOCH_MODAN }, 
+				["lvl"] = 1,
+				["groups"] = {
+					i(211779),	-- Comprehension Charm
+				},
 			}),
 			q(78143, {	-- Secrets of the Dreamers
-				["groups"] = {
-					i(211779),	-- Comprehension Charm
-				},
 				["provider"] = { "i", 209846 },	-- Secrets of the Dreamers
 				["maps"] = { WAILING_CAVERNS }, 
-			}),
-			q(79095, {	-- The Apothecary's Metaphysical Primer
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
-				["lvl"] = 1,
+			}),
+			q(79095, {	-- The Apothecary's Metaphysical Primer
 				["provider"] = { "i", 208185 },	-- The Apothecary's Metaphysical Primer
 				["maps"] = { TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY, 
+				["lvl"] = 1,
+				["groups"] = {
+					i(211779),	-- Comprehension Charm
+				},
 			}),
 			q(78127, {	-- The Dalaran Digest
-				["groups"] = {
-					i(211779),	-- Comprehension Charm
-				},
 				["provider"] = { "i", 209844 },	-- The Dalaran Digest, Vol. 23
 				["maps"] = { SILVERPINE_FOREST }, 
-			}),
-			q(79094, {	-- The Lessons of Ta'zo
 				["groups"] = {
 					i(211779),	-- Comprehension Charm
 				},
+			}),
+			q(79094, {	-- The Lessons of Ta'zo
 				["provider"] = { "i", 207972 },	-- The Lessons of Ta'zo
 				["maps"] = { ORGRIMMAR },
 				["races"] = HORDE_ONLY, 
+				["groups"] = {
+					i(211779),	-- Comprehension Charm
+				},
 			}),
 		},
 	}),
