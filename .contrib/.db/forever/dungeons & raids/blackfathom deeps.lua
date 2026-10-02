@@ -93,6 +93,9 @@ root(ROOTS.Instances, {
 						}),
 						i(7002),	-- Arctic Buckler
 						i(7001),	-- Gravestone Scepter
+						i(270031, {	-- Dark Ritual Leggings
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(6561, {	-- Blackfathom Villainy (H)
@@ -107,6 +110,9 @@ root(ROOTS.Instances, {
 						}),
 						i(7002),	-- Arctic Buckler
 						i(7001),	-- Gravestone Scepter
+						i(270031, {	-- Dark Ritual Leggings
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(1198, {	-- In Search of Thaelrid
@@ -156,6 +162,9 @@ root(ROOTS.Instances, {
 						}),
 						i(7003),	-- Beetle Clasps
 						i(7004),	-- Prelacy Cape
+						i(270021, {	-- Staghide Armguards
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(3765, {	-- The Corruption Abroad
@@ -210,6 +219,9 @@ root(ROOTS.Instances, {
 						}),
 						i(7000),	-- Heartwood Girdle
 						i(6998),	-- Nimbus Boots
+						i(270025, {	-- Silvered Gauntlets
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 			}),
@@ -253,9 +265,15 @@ root(ROOTS.Instances, {
 				i(6906),	-- Algae Fists
 				i(1470),	-- Murloc Skin Bag
 				i(6905),	-- Reef Axe
+				i(273840, {	-- Cursed Murloc Eye
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(12902, {	-- Lorgus Jett
 				i(273843, {	-- Fallenroot Longbow
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(273841, {	-- Twilight Maul
 					["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				}),
 				i(273842, {	-- Treacherous Treads

@@ -1611,7 +1611,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)
 				},
 			}),
-			n(271480, {	-- Taliaa Brightsky
+			n(271480, {	-- Taliaa Brightsky <Artisan Clothier>
 				["coord"] = { 59.3, 76.2, MAP.ZEPHRAS_ISLE },
 				["groups"] = {
 					i(273812),	-- Airy Magister's Shirt
