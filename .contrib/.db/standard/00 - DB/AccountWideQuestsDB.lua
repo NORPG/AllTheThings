@@ -2608,6 +2608,7 @@ local AccountWideQuestsDB = {
 	93154,	-- Ensemble: Sargerei Commander's Voidscarred Regalia
 	93155,	-- Quest #93155*
 	93200,	-- A Handful of Voidlight Marl (Silvermoon Court)
+	93466,	-- Spring Butterfly Attempt
 	93470,	-- Laments of Wey'nan--Part 1: Finding Hope
 	93471,	-- Laments of Wey'nan--Part 2:  Hunting Purpose
 	93472,	-- Laments of Wey'nan--Part 3: There Must Be More
