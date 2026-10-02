@@ -232,3 +232,205 @@
 64157@@@Hidden: BETA Survey - Level 30 - Rogue
 64158@@@Hidden: BETA Survey - Level 30 - Priest
 64159@@@Hidden: BETA Survey - Level 30 - Paladin
+1.60.1.70009
+49@@@Alterac Valley victories
+51@@@Arathi Basin victories
+52@@@Warsong Gulch battles
+53@@@Alterac Valley battles
+55@@@Arathi Basin battles
+56@@@Deaths in Warsong Gulch
+57@@@Deaths in Alterac Valley
+58@@@Deaths from Drek'Thar
+59@@@Deaths in Arathi Basin
+60@@@Total deaths
+94@@@Quests abandoned
+95@@@Average quests completed per day
+98@@@Quests completed
+105@@@Warsong Gulch victories
+107@@@Creatures killed
+108@@@Critters killed
+112@@@Deaths from drowning
+113@@@Deaths from fatigue
+114@@@Deaths from falling
+115@@@Deaths from fire and lava
+178@@@Enchanting formulae learned
+181@@@Items disenchanted
+183@@@Materials produced from disenchanting
+189@@@Largest heal cast
+193@@@Largest hit dealt
+197@@@Total damage done
+198@@@Total healing done
+281@@@First Aid skill
+318@@@Total deaths from opposite faction
+319@@@Duels won
+320@@@Duels lost
+321@@@Total raid and dungeon deaths
+326@@@Gold from quest rewards
+328@@@Total gold acquired
+329@@@Auctions posted
+330@@@Auction purchases
+331@@@Most expensive bid on auction
+332@@@Most expensive auction sold
+333@@@Gold looted
+334@@@Most gold ever owned
+336@@@Legendary items acquired
+338@@@Vanity pets owned
+339@@@Mounts owned
+341@@@Epic items looted
+342@@@Epic items acquired
+344@@@Bandages used
+345@@@Health potions consumed
+346@@@Beverages consumed
+347@@@Food eaten
+349@@@Flight paths taken
+350@@@Mage Portals taken
+353@@@Number of times hearthed
+377@@@Most factions at Exalted
+378@@@Most factions at Revered or higher
+381@@@World Honorable Kills
+382@@@Battleground Honorable Kills
+393@@@Alterac Valley towers defended
+394@@@Alterac Valley towers captured
+395@@@Warsong Gulch flags captured
+527@@@Largest hit received
+528@@@Total damage received
+529@@@Most factions at Honored or higher
+586@@@Warsong Gulch flags returned
+588@@@Total Honorable Kills
+593@@@Deaths from Vanndar Stormpike
+594@@@Deaths from Hogger
+753@@@Average gold earned per day
+796@@@Resurrected by priests
+798@@@Rebirthed by druids
+799@@@Spirit returned to body by shamans
+800@@@Redeemed by paladins
+801@@@Resurrected by soulstones
+811@@@Flasks consumed
+812@@@Healthstones used
+829@@@Largest heal received
+830@@@Total healing received
+839@@@Battlegrounds played
+840@@@Battlegrounds won
+917@@@Total deaths in 10-player raids
+918@@@Total deaths in 5-player dungeons
+919@@@Gold earned from auctions
+921@@@Gold from vendors
+922@@@Mana potions consumed
+923@@@Elixirs consumed
+926@@@Most Horde factions at Exalted
+927@@@Equipped epic items in item slots
+928@@@Extra bank slots purchased
+931@@@Total factions encountered
+932@@@Total 5-player dungeons entered
+933@@@Total 10-player raids entered
+934@@@Total 20-player raids entered
+1042@@@Number of hugs
+1043@@@Greed rolls made on loot
+1044@@@Need rolls made on loot
+1045@@@Total cheers
+1047@@@Total facepalms
+1065@@@Total waves
+1066@@@Total times LOL'd
+1067@@@Total times playing world's smallest violin
+1092@@@Archmage Arugal kills (Shadowfang Keep)
+1093@@@Scarlet Commander Mograine kills (Scarlet Monastery)
+1094@@@Chief Ukorz Sandscalp kills (Zul'Farrak)
+1095@@@Emperor Dagran Thaurissan kills (Blackrock Depths)
+1096@@@General Drakkisath kills (Upper Blackrock Spire)
+1097@@@Baron Rivendare kills (Stratholme)
+1098@@@Onyxia kills (Onyxia's Lair)
+1113@@@Alterac Valley Honorable Kills
+1114@@@Arathi Basin Honorable Kills
+1115@@@Warsong Gulch Honorable Kills
+1125@@@Bandage used most
+1146@@@Gold spent on travel
+1147@@@Gold spent at barber shops
+1148@@@Gold spent on postage
+1149@@@Talent tree respecs
+1150@@@Gold spent on talent tree respecs
+1197@@@Total kills
+1198@@@Total kills that grant experience or honor
+1199@@@Professions learned
+1200@@@Secondary skills at maximum skill
+1201@@@Professions at maximum skill
+1202@@@Weapon skills at maximum skill
+1229@@@Revived by druids
+1336@@@Creature type killed the most
+1337@@@Different creature types killed
+1339@@@Mage portal taken most
+1456@@@Fish and other things caught
+1458@@@Continent with the most Honorable Kills
+1466@@@Most Alliance factions at Exalted
+1487@@@Total Killing Blows
+1488@@@World Killing Blows
+1489@@@Continent with the most Killing Blows
+1491@@@Battleground Killing Blows
+1495@@@Alterac Valley Killing Blows
+1496@@@Arathi Basin Killing Blows
+1497@@@Warsong Gulch Killing Blows
+1501@@@Total deaths from other players
+1518@@@Fish caught
+1519@@@Fishing skill
+1524@@@Cooking skill
+1525@@@Cooking daily quests completed
+1526@@@Fishing daily quests completed
+1527@@@Highest Alchemy skill
+1532@@@Highest Blacksmithing skill
+1535@@@Highest Enchanting skill
+1536@@@Highest Leatherworking skill
+1537@@@Highest Mining skill
+1538@@@Highest Herbalism skill
+1539@@@Highest Inscription skill
+1541@@@Highest Skinning skill
+1542@@@Highest Tailoring skill
+1544@@@Highest Engineering skill
+1716@@@Battleground with the most Killing Blows
+1719@@@Battleground with the most Honorable Kills
+1729@@@Alchemy Recipes learned
+1730@@@Blacksmithing Plans learned
+1734@@@Engineering Schematics learned
+1735@@@Inscriptions learned
+1740@@@Leatherworking Patterns learned
+1741@@@Tailoring Patterns learned
+1745@@@Cooking Recipes known
+1748@@@First Aid Manuals learned
+1976@@@Dalaran Cooking Awards gained
+2277@@@Summons accepted
+2396@@@Battleground played the most
+2397@@@Battleground won the most
+3216@@@Smelting Recipes learned
+6137@@@Aku'mai kills (Blackfathom Deeps)
+6139@@@Charlga Razorflank kills (Razorfen Kraul)
+6140@@@Mekgineer Thermaplugg kills (Gnomeregan)
+6141@@@Amnennar the Coldbringer kills (Razorfen Downs)
+6142@@@Archaedas kills (Uldaman)
+6143@@@Princess Theradras kills (Maraudon)
+6144@@@Shade of Eranikus kills (Sunken Temple)
+6145@@@Overlord Wyrmthalak kills (Lower Blackrock Spire)
+6146@@@King Gordok kills (Dire Maul)
+6786@@@High Inquisitor Whitemane kills (Scarlet Monastery)
+15027@@@Bazzalan kills (Ragefire Chasm)
+15028@@@Mutanus the Devourer kills (Wailing Caverns)
+15029@@@Bazil Thredd kills (Stormwind Stockade)
+15030@@@Darkmaster Gandling kills (Scholomance)
+15031@@@Baron Rivendare kills (Stratholme)
+63570@@@Edwin Vancleef Kills (Deadmines)
+63571@@@Rath'mael Kills (Ruins of Lordaeron)
+63572@@@Shade of the Archmage Kills (City of Dalaran)
+63573@@@Durgen Dirgehammer Kills (Hall of Thanes)
+63574@@@Nanaya Kills (Shaper's Terrace)
+63575@@@Blazeroar Kills (Alcaz Prison)
+63580@@@The Wild King kills (Hyjal Summit)
+63581@@@Sonya Darkhallow Kills (Barrow Deeps)
+63589@@@Lyn the Ignored Kills (City of Dalaran)
+63590@@@Cinder Kills (Shaper's Terrace)
+63592@@@Bolt Kills (Shaper's Terrace)
+63593@@@Snowtalon Kills (Shaper's Terrace)
+64176@@@Darkspear Island victories
+64179@@@Darkspear Islands battles
+64180@@@Darkspear Islands Honorable Kills
+64181@@@Darkspear Island Killing Blows
+64182@@@Deaths in Darkspear Islands
+64183@@@Total deaths in 20-player raids
+64184@@@Total 40-player raids entered
+64185@@@Total deaths in 40-player raids

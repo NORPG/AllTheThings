@@ -19170,3 +19170,86 @@
 286425@@@Monster - Sword, Scimitar Basic
 286426@@@Honorbound Cloak
 286427@@@Cloak of the Honored Guest
+1.60.1.70009
+9224@@@Potion of Demon Slaying
+9300@@@Recipe: Potion of Demon Slaying
+23567@@@DEPRECATED ITEM
+250954@@@Potion of Elemental Purging
+250955@@@Potion of Beast Slaying
+250998@@@Recipe: Potion of Elemental Purging
+250999@@@Recipe: Potion of Beast Slaying
+255645@@@Swollen Venom Sac
+272160@@@Monster - Sword1H, Skyborne (Blue)
+272161@@@Monster - Sword1H, Skyborne (Blue)
+277172@@@Corrupted Chillhowl Shard
+277174@@@Corrupted Dreadspinner Shard
+277175@@@Corrupted Tangleclaw Shard
+277178@@@Corrupted Sorrowful Shard
+277179@@@Corrupted Amethrax Shard
+279045@@@Thundris' Letter
+279048@@@Alexston's Reply
+279082@@@Gnarlpine Totem
+279275@@@Clouded Water Globe
+279276@@@Mathystral Amulet Fragment
+279277@@@Mathystral Amulet
+279279@@@Peerless Eye
+279291@@@Drained Vessel
+279331@@@Moonwell Remnants
+279378@@@Lunar Pendant
+279589@@@Menethil Statuette
+279595@@@Menethil Statuette
+279598@@@Menethil Statuette
+279821@@@Khaz Modan Timber
+279822@@@Khaz Modan Iron
+279915@@@Nord'el
+279924@@@Nord'el
+279993@@@Titanic Keystone
+279996@@@Goaz Stone
+280042@@@Tattered Spellbook
+280099@@@Crimson Crate
+280103@@@Razormaw Incisor
+280132@@@Perfect Razormaw Egg
+280319@@@Unruptured Stalker Gland
+280330@@@Carnage's Head
+280331@@@Malignant Rotclaw Flesh
+280369@@@Dragonmaw Armaments
+280392@@@Howin's Missive
+280394@@@Goaz Stone
+280395@@@Heart of Ados
+280396@@@Heart of Modr
+280397@@@Heart of Golm
+280398@@@Heart of Neru
+280403@@@Whelgar Relic Package
+280608@@@Eldarath Relic
+280610@@@Lord Sarthiss' Head
+280831@@@Hatescreech's Amulet
+280832@@@Windmistress Gaedress' Amulet
+280834@@@Witchmother Arysa's Amulet
+281019@@@Monster - Sword1H, Skyborne Back Sheathe (Blue)
+281023@@@Mature Fel Moss
+281031@@@Mulgore Expansion Plans
+281035@@@Shredder Operation Instructions
+281036@@@Barrens Operations Best Practices
+281037@@@One "Gerenzo", of Stonetalon
+281039@@@Mulgore Expansion Plans
+281048@@@Clearcutter Key
+281059@@@Loose Clearcutter Blade
+281139@@@Thunderhorn's Report
+281240@@@Tom's Gift
+281243@@@Hollee's Note
+286017@@@Dewy Lasher Frond
+286069@@@Lashwater Salve
+286075@@@Herak's Head
+286104@@@Longwalker Malah's Report
+286176@@@Executor's Motivator
+286200@@@Dillinger's Report
+286201@@@Kristof's Report
+286202@@@Gordo's Report
+286204@@@Tomb Weed
+286259@@@Faintly Glowing Bone
+286269@@@Glowing Crystal Fragment
+286326@@@Riptear's Heart
+286647@@@Depleted Crystal Heart
+286648@@@Depleted Crystal Heart
+286737@@@Avala's Binding
+287090@@@Sharpened Letter Opener
