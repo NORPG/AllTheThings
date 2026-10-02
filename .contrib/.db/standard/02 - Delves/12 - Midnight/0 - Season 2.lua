@@ -84,20 +84,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 								i(276163),	-- Apophic Patagia (COSMETIC!)
 							}),
 							i(264971, {	-- Annihilation Rod (COSMETIC!)
-								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(264970, {	-- Oblivion's Edge (COSMETIC!)
-								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(262391),	-- Ominous Dominus (PET)
 							i(265368, {	-- Twilight Destroyer (COSMETIC!)
-								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(265366, {	-- Twilight Executioner (COSMETIC!)
-								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(265367, {	-- Twilight Fang (COSMETIC!)
-								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 						},
 					}),
