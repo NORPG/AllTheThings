@@ -802,7 +802,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(941, {	-- Planting the Heart
 				["sourceQuest"] = 927,	-- The Moss-twined Heart
 				["qg"] = 2080,	-- Denalan
-				["qg"] = 2080,	-- Denalan
 				["qi"] = 5217,	-- Tainted Heart
 				["coord"] = { 60.8, 68.4, MAP.TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
