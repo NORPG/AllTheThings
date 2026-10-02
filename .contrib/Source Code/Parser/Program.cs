@@ -265,7 +265,7 @@ namespace ATT
                     // Ensure the Parser uses the default config if nothing is specified.
                     Framework.InitConfigSettings("../.db/standard/.config/retail/retail.config");
 #if DEBUG
-                    Framework.InitConfigSettings("../.db/standard/.config/retail/debug.config");
+                    Framework.InitConfigSettings("../.db/shared/.config/debug.config");
 #endif
                 }
 
