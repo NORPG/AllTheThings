@@ -408,9 +408,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92840, {	-- Catching Wind
-				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 99260,	-- Fillion's Mission
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 5,
 				["groups"] = {
 					i(263404),	-- Bow of Hours
@@ -525,6 +526,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
 			}),
+			q(99260, {	-- Fillion's Mission
+				["sourceQuest"] = 92850,	-- The Missing Scholar
+				["qg"] = 253285,	-- Fillion Flamebreeze
+				["coord"] = { 66.2, 79.9, MAP.ZEPHRAS_ISLE },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
+			}),
 			q(92683, {	-- Flutterfly Dust
 				["sourceQuest"] = 92679,	-- Blood Tithe
 				["qg"] = 252800,	-- Aamelia Windfield
@@ -624,7 +632,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 			}),
 			q(92860, {	-- In Service of Zephras
-				["sourceQuest"] = 92840,	-- Catching Wind
+				["sourceQuest"] = 92834,	-- Avenged Tenfold
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
@@ -1421,6 +1429,28 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			n(257020, {	-- Nasalanna Windsinger <Enchanter>
 				["coord"] = { 60.8, 44.2, MAP.ZEPHRAS_ISLE },
 				["groups"] = VANILLA_ENCHANTING_COMMON_RECIPES,
+			}),
+			n(257006, {	-- Nyalah Brightfire
+				["coord"] = { 60.7, 72.7, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
+					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+				},
+			}),
+			n(257422, {	-- Railee Thriceforged
+				["coord"] = { 59.0, 75.5, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					2488,	-- Gladius
+					2489,	-- Two-handed Sword
+					2490,	-- Tomahawk
+					2491,	-- Large Axe
+					2492,	-- Cudgel
+					2493,	-- Wooden Mallet
+					2494,	-- Stiletto
+					2495,	-- Walking Stick
+					11303,	-- Fine Shortbow
+				}},
 			}),
 			n(251991, {	-- Taleen Shimmerthread <Tailor>
 				coord = { 77.3, 51.3, MAP.ZEPHRAS_ISLE },
