@@ -742,26 +742,6 @@ app:CreateWindow("Debugger", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Export New", {
-					icon = 135468,
-					description = "Export data that is not present in the database.",
-					visible = true,
-					count = 0,
-					OnClick = function(row, button)
-						local oldData = self.data;
-						local results = app:BuildSearchFilteredResponse({oldData}, function(group)
-							local key = group.key;
-							if key and app.GetField(key, group[key]) then
-								return false;
-							end
-							return true;
-						end);
-						app.NestObjects(self.data, results)
-						app:ExportStylizedData(self, "Readable");
-						self.data = oldData;
-						return true;
-					end,
-				}),
 				app.CreateRawText(L.SESSION_HISTORY_IMPORT_RAW, {
 					icon = 135468,
 					description = L.SESSION_HISTORY_IMPORT_RAW_DESC,
