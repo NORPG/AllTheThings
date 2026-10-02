@@ -43,6 +43,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
+				["groups"] = {
+					objective(1, {	-- 0/1 Listen to Elaadrin
+						["provider"] = { "n", 252475 },	-- Elaadrin Evengale
+						["coord"] = { 66.5, 79.8, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(93927, {	-- A Last Request
 				["sourceQuest"] = 93926,	-- The Western Watch
@@ -133,6 +139,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 259012,	-- Ealaane Nimbuswalker
 				["coord"] = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["groups"] = {
+					objective(1, {	-- 0/8 Abandoned Belongings
+						["providers"] = {
+							{ "i", 266433 },	-- Abandoned Belongings
+							{ "o", 623295 },	-- Abandonded Belongings
+						},
+						["coord"] = { 58.0, 31.9, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(98512, {	-- Al'Aketh Assassins
 				["qg"] = 273017,	-- Fendaal Windstone
@@ -181,6 +196,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 				["groups"] = {
+					objective(1, {	-- 0/10 Al'Aketh Windstone Charm
+						["provider"] = { "i", 255658 },	-- Al'Aketh Windstone Charm
+						["crs"] = {
+							253511,	-- Al'Aketh Pillager
+							253195,	-- Al'Aketh Preacher
+						},
+						["coords"] = {
+							{ 66.2, 62.2, MAP.ZEPHRAS_ISLE },
+							{ 64.6, 62.7, MAP.ZEPHRAS_ISLE },
+						},
+					}),
 					i(263401),	-- Martyr's Armor
 					i(263402),	-- Sash of Sorrow
 					i(263403),	-- Cilice of Regret
@@ -197,6 +223,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252448,	-- Alvarion Windfield
 				["coord"] = { 62.0, 73.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
+				["groups"] = {
+					objective(1, {	-- 0/1 Find Aamelia Windfield
+						["provider"] = { "n", 252800 },	-- Aamelia Windfield
+						["coord"] = { 47.3, 79.6, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 0/1 Listen to Alvarion Windfield's Story (Optional)
+						["provider"] = { "n", 252448 },	-- Alvarion Windfield
+						["coord"] = { 62.0, 73.2, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(93797, {	-- Boughs in the Wind
 				["qg"] = 256507,	-- Belann Windwood
@@ -215,6 +251,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
 				["groups"] = {
+					objective(1, {	-- 0/1 Commander Belguilos slain
+						["provider"] = { "n", 252666 },	-- Commander Belguilos
+						["coord"] = { 65.6, 65.5, MAP.ZEPHRAS_ISLE },
+					}),
 					i(263335),	-- Hunter's Cord
 					i(263336),	-- Windsong Bangles
 					i(263337),	-- Breaker's Gauntlets
@@ -225,6 +265,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
+				["groups"] = {
+					objective(1, {	-- 0/8 Enchanted Skyhopper Exterminated
+						["provider"] = { "n", 251314 },	-- Skyhopper
+						["coord"] = { 61.7, 75.8, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(92466, {	-- Call of Earth
 				["qg"] = 251374,	-- Windshaper Boro
@@ -410,6 +456,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92840, {	-- Catching Wind
 				["sourceQuest"] = 99260,	-- Fillion's Mission
 				["qg"] = 252475,	-- Elaadrin Evengale
+				["qi"] = 254584,	-- Index Esoteria
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 5,
@@ -457,6 +504,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 60.6, 72.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 				["groups"] = {
+					objective(1, {	-- 0/6 Windsong Crawler Meat
+						["provider"] = { "i", 257941 },	-- Windsong Crawler Meat
+						["cr"] = 254588,	-- Windsong Crawler
+						["coord"] = { 64.1, 61.5, MAP.ZEPHRAS_ISLE },
+					}),
 					i(263513),	-- Recipe Pincer Bites
 					i(263512),	-- Pincer Bites
 				},
@@ -477,6 +529,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
+				["groups"] = {
+					objective(1, {	-- Deliver the Shadowsong Family Signet to Talaanis Shadowsong in Valanaar.
+						["provider"] = { "n", 252476 },	-- Talaanis Shadowsong
+						["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(92640, {	-- Desperate Times
 				["sourceQuest"] = 94568,	-- The Cult's True Plans
@@ -494,6 +552,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252378,	-- Yorana Windyreed
 				["coord"] = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
+				["groups"] = {
+					objective(1, {	-- 0/4 Al'Aketh Healer slain
+						["provider"] = { "n", 254596 },	-- Al'Aketh Healer
+						["coord"] = { 65.5, 67.0, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 0/8 Al'Aketh Brawler slain
+						["provider"] = { "n", 270201 },	-- Al'Aketh Brawler
+						["coord"] = { 65.5, 66.6, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(92464, {	-- Elemental Unrest
 				sourceQuest = 92461,	-- Harmony in Balance
@@ -539,6 +607,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 				["groups"] = {
+					objective(1, {	-- 0/5 Flutterfly Dust
+						["providers"] = {
+							{ "i", 253595 },	-- Flutterfly Dust
+							{ "o", 578959 },	-- Object ID #578959
+						},
+						["coord"] = { 51.9, 83.4, MAP.ZEPHRAS_ISLE },
+					}),
 					i(263329),	-- Flutterfly Swatter
 					i(2455),	-- Minor Mana Potion
 				},
@@ -668,6 +743,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 				["groups"] = {
+					objective(1, {	-- 10/10 Ripe Stormapple
+						["providers"] = {
+							{ "i", 253591 },	-- Ripe Stormapple
+							{ "o", 578937 },	-- Ripe Stormapple
+						},
+						["coord"] = { 47.6, 82.7, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 5/5 Hungry Bandit slain
+						["provider"] = { "n", 252802 },	-- Hungry Bandit
+						["coord"] = { 48.3, 82.6, MAP.ZEPHRAS_ISLE },
+					}),
 					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
@@ -711,6 +797,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 				["groups"] = {
+					objective(1, {	-- 0/7 Lowlands Galestrider Tenderloin
+						["provider"] = { "i", 253597 },	-- Lowlands Galestrider Tenderloin
+						["cr"] = 251707,	-- Ornery Galestrider
+						["coord"] = { 53.3, 72.2, MAP.ZEPHRAS_ISLE },
+					}),
 					i(257340),	-- Farmer's Field Boots
 					i(257331),	-- Brass Banded Bracers
 					i(257334),	-- Well Worn Pants
@@ -796,6 +887,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 				["groups"] = {
+					objective(1, {	-- 0/1 Speak with Aamelia Windfield
+						["provider"] = { "n", 252800 },	-- Aamelia Windfield
+						["coord"] = { 47.3, 79.6, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 0/1 Follow Aamelia and make your final stand
+						["provider"] = { "n", 252800 },	-- Aamelia Windfield
+						["coord"] = { 47.3, 79.6, MAP.ZEPHRAS_ISLE },
+					}),
 					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
@@ -812,6 +911,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["classes"] = { DRUID },
 				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
+				["groups"] = {
+					objective(1, {	-- 0/1 Ur'endra slain
+						["provider"] = { "n", 258443 },	-- Ur'endra
+						["coord"] = { 53.9, 65.3, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(94007, {	-- Taming the Beast
 				["qg"] = 254084,	-- Elayaa Easewind
@@ -933,6 +1038,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 259012,	-- Ealaane Nimbuswalker
 				["coord"] = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["groups"] = {
+					objective(1, {	-- 0/1 Heirloom
+						["provider"] = { "i", 266434 },	-- Resaan's Heirloom
+						["cr"] = 259013,	-- Resaan Nimbuswalker
+						["coord"] = { 57.0, 29.5, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(94491, {	-- The Fate of the Den
 				["sourceQuest"] = 94490,	-- Ripped Missive
@@ -1009,6 +1121,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 				["groups"] = {
+					objective(1, {	-- 7/7 Blood-Stained Bandit Mask
+						["provider"] = { "i", 253596 },	-- Blood-Stained Bandit Mask
+						["cr"] = 252820,	-- Bandit Highwayman
+						["coord"] = { 47.6, 76.1, MAP.ZEPHRAS_ISLE },
+					}),
 					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
@@ -1031,6 +1148,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 50.6, 65.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 1/1 Find Fillion Flamebreeze
+						["provider"] = { "n", 253284 },	-- Fillion Flamebreeze
+						["coord"] = { 52.0, 69.4, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 1/1 Carry Fillion Flamebreeze to safety while avoiding enemies
+						["provider"] = { "n", 253284 },	-- Fillion Flamebreeze
+						["coord"] = { 52.0, 69.4, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(92727, {	-- The Missing Scholar
 				["sourceQuest"] = 92699,	-- The Supreme Magister
@@ -1045,6 +1172,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 52.0, 69.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 1/1 Shriekling Matriarch's Head
+						["provider"] = { "i", 257107 },	-- Shriekling Matriarch's Head
+						["cr"] = 253283,	-- Shriekling Matriarch
+						["coord"] = { 52.3, 65.6, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(92472, {	-- The Next Step
 				sourceQuest = 92470,	-- Foul Matriarch
@@ -1147,6 +1281,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
+				["groups"] = {
+					objective(1, {	-- Deliver Aonda's Written Report to Valennia Stormfist in Valanaar.
+						["provider"] = { "n", 252383 },	-- Valennia Stormfist
+						["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(93320, {	-- Tower Defense
 				["sourceQuests"] = {
@@ -1205,6 +1345,18 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 253004,	-- Iaadaria Bitterwind
 				["coord"] = { 66.2, 79.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["groups"] = {
+					objective(1, {	-- 0/8 Shriekling Talons
+						["provider"] = { "i", 254378 },	-- Shriekling Talons
+						["crs"] = {
+							256092,	-- Shadowgale Shriekling
+							251247,	-- Shadowgale Manticore (location unknown)
+						},
+						["coords"] = {
+							{ 59.9, 38.4, MAP.ZEPHRAS_ISLE },	-- Shadowgale Shriekling
+						},
+					}),
+				},
 			}),
 			q(93318, {	-- WANTED: Vulgara the Insatiable
 				["sourceQuests"] = {
