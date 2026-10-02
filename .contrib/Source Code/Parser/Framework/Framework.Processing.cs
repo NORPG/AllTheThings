@@ -4909,6 +4909,10 @@ namespace ATT
                 LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
                 data.Remove(conversionObject.ConvertedKey);
                 data[conversionObject.ObjectType] = convertValue;
+                if (DebugMode)
+                {
+                    CaptureDebugDBData(data);
+                }
             }
         }
 
