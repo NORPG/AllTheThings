@@ -434,3 +434,12 @@
 64183@@@Total deaths in 20-player raids
 64184@@@Total 40-player raids entered
 64185@@@Total deaths in 40-player raids
+1.60.1.70170
+62034@@@Conqueror of the Wilds
+62035@@@Conqueror of the Deeps
+63570@@@Edwin VanCleef Kills (Deadmines)
+64019@@@Conqueror of the Wilds
+64020@@@Conqueror of the Deeps
+64176@@@Darkspear Islands victories
+64181@@@Darkspear Islands Killing Blows
+64208@@@<Hidden> Completed New Player Experience (Account)

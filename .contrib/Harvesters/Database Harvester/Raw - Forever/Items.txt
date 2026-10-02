@@ -19253,3 +19253,22 @@
 286648@@@Depleted Crystal Heart
 286737@@@Avala's Binding
 287090@@@Sharpened Letter Opener
+1.60.1.70170
+13503@@@Alchemist's Stone
+13517@@@Recipe: Alchemist's Stone
+251320@@@Sachet of Spirit Powder
+254696@@@Reverence
+263411@@@Idol of Shifting Tides
+263412@@@Totem of Charged Flames
+272025@@@Dathrohan's Correspondence
+273115@@@Blueprint: Iron Oven
+273310@@@Alchemy Ward - Fel Ash Experimentation Notes
+274749@@@Souvenir Sea Shell
+276158@@@Crystallized Shard
+277128@@@Bloodtalon Matriarch Eggs
+277533@@@Fel Tainted Journal
+280797@@@Rabbit Crate (Arctic)
+280839@@@Blackrock Supplies
+286140@@@Monster - Shield, Paladin
+287416@@@Truskis' Cheesecake Slice
+287505@@@Tender Strider Meat

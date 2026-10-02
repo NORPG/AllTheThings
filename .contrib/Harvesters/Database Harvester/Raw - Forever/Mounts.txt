@@ -140,3 +140,5 @@
 1309380@@@Green Druid Moose Mount
 1309381@@@Gray Druid Moose Mount
 1309405@@@Veteran Adventurer's Loyal Companion
+1.60.1.70170
+1295387@@@Ochre Skeletal Warhorse
