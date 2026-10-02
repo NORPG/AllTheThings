@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(65593, {	-- Hearts of the Lovers
-					["sourceQuest"] = 1472,
+					["sourceQuest"] = 1472,	-- Devourer of Souls [Undercity]
 					["altQuests"] = { 65610 },	-- Wish You Were Here
 					["qg"] = 5675,	-- Carendin Halgar
 					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },

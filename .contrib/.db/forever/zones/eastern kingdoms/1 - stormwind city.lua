@@ -1745,7 +1745,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(65602, {	-- What Is Love?
-				["sourceQuest"] = 1716,
+				["sourceQuest"] = 1716,	-- Devourer of Souls [Stormwind City]
 				["qg"] = 6122,	-- Gakin the Darkbinder
 				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.ASHENVALE },
