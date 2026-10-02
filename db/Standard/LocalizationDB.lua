@@ -165,7 +165,7 @@ L.AUCTIONS_NO_DATA = "No auctions cached. Waiting on Auction data."
 L.AUCTIONS_NO_LIMIT = "NO LIMIT"
 L.AUCTIONS_OTHER_ITEMS_DESC = "All items that could be used for some non-transmog related purpose such as for an achievement are displayed here."
 L.AUCTIONS_QUEST_ITEMS_DESC = "All items that trigger a non-character unlock quest."
-L.AUCTIONS_REMOVED_ITEMS_DESC = "All items that were removed from game that you could probably still collect for a... nominal fee.\n\nAlso if you have found something here, feel free to post about it on the ATT Discord's #classic-general channel! I'm sure some folks might want to find these."
+L.AUCTIONS_REMOVED_ITEMS_DESC = "All items that were removed from game that you could probably still collect for a... nominal fee.\n\nAlso if you have found something here, feel free to post about it on the ATT Discord's #retail-general channel! I'm sure some folks might want to find these."
 L.AUCTIONS_REPUTATION_DESC = "All items that can be used to increase reputation for a faction that you have not collected yet are displayed here."
 L.AUCTIONS_SCAN_CLICK_DESC = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data."
 L.AUCTIONS_SCAN_CLICK_TEXT = "Click to run a Full Scan"
@@ -2019,6 +2019,7 @@ localize(L.HEADER_NAMES, {
 	[-793] = "Upgrade: Myth",
 	[-795] = "Warcraft Forever Collection",
 	[-797] = "World of Warcraft: Forever",
+	[-800] = "Alliance Outrunners",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2155,6 +2156,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-785] = "The 2026 bundle was available from 6 August to 31 October 2026.\n\nPlayers who already owned a reward from the bundle can exchange it for alternate rewards or Trader's Tender.",
 	[-795] = "These rewards are available to anyone who purchased Warcraft Forever Collection or physical equivalents.",
 	[-797] = "These rewards are available to anyone who purchased a World of Warcraft: Forever upgrade.",
+	[-800] = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2802,6 +2804,7 @@ localize(L.HEADER_ICONS, {
 	[-793] = _.asset("interface_upgrade"),
 	[-795] = 1120721,
 	[-797] = 1120721,
+	[-800] = 236449,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -9505,6 +9508,7 @@ local ObjectNames = {
 	[272622] = "Cursed Treasure",
 	[272745] = "Lightweave Loom",
 	[272768] = "Empyrium Deposit",
+	[272769] = "Onion",
 	[272770] = "Eredar War Supplies",
 	[272771] = "Eredar War Supplies",
 	[272778] = "Rich Empyrium Deposit",
@@ -9700,6 +9704,8 @@ local ObjectNames = {
 	[280883] = "Sun-Worn Chest",
 	[280886] = "Star-Touched Chest",
 	[280903] = "Lost Cat Toy",
+	[280926] = "Abyssal Spear",
+	[280927] = "Thundershot Rifle",
 	[280948] = "Twilight Outhouse",
 	[280951] = "Ashvane Spoils",
 	[280957] = "Zukashi's Satchel",
@@ -9724,6 +9730,7 @@ local ObjectNames = {
 	[281647] = "Posted Notice",
 	[281655] = "Gift of the Brokenhearted",
 	[281673] = "Corlain Citizen's Journal",
+	[281708] = "Sealed Tideblood",
 	[281718] = "HELP WANTED",
 	[281722] = "Grimy Scroll",
 	[281867] = "Star Moss",
@@ -19080,6 +19087,7 @@ local ObjectModels = {
 	[272622] = 1255734,
 	[272745] = 1695044,
 	[272768] = 1244486,
+	[272769] = 875392,
 	[272770] = 1353175,
 	[272771] = 1353175,
 	[272778] = 1692857,
@@ -19275,6 +19283,8 @@ local ObjectModels = {
 	[280883] = 1062118,
 	[280886] = 1709672,
 	[280903] = 1335538,
+	[280926] = 1911507,
+	[280927] = 1327488,
 	[280948] = 321660,
 	[280951] = 1805764,
 	[280957] = 878854,
@@ -19299,6 +19309,7 @@ local ObjectModels = {
 	[281647] = 1305630,
 	[281655] = 1804876,
 	[281673] = 1852972,
+	[281708] = 1602489,
 	[281718] = 936411,
 	[281722] = 1675098,
 	[281867] = 1794521,
@@ -31771,6 +31782,7 @@ localize(ObjectNames, {
 	[272622] = "Verfluchter Schatz",
 	[272745] = "Leuchtgarnwebstuhl",
 	[272768] = "Empyriumvorkommen",
+	[272769] = "Zwiebel",
 	[272770] = "Kriegsvorräte der Eredar",
 	[272771] = "Kriegsvorräte der Eredar",
 	[272778] = "Reiches Empyriumvorkommen",
@@ -31965,6 +31977,8 @@ localize(ObjectNames, {
 	[280883] = "Sonnengebleichte Truhe",
 	[280886] = "Sternenberührte Truhe",
 	[280903] = "Verlorenes Katzenspielzeug",
+	[280926] = "Tiefenspeer",
+	[280927] = "Donnerschussgewehr",
 	[280948] = "Plumpsklo des Schattenhammerkults",
 	[280951] = "Aschenwindschätze",
 	[280957] = "Zukashis Säckchen",
@@ -31989,6 +32003,7 @@ localize(ObjectNames, {
 	[281647] = "Aushang",
 	[281655] = "Geschenk der gebrochenen Herzen",
 	[281673] = "Tagebuch eines Bewohners von Korlach",
+	[281708] = "Versiegeltes Gezeitenblut",
 	[281718] = "AUSHILFE GESUCHT",
 	[281722] = "Schmierige Schriftrolle",
 	[281867] = "Sternmoos",
@@ -40530,6 +40545,7 @@ localize(ObjectNames, {
 	[272622] = "Trésor maudit",
 	[272745] = "Métier à tisser le tisse-lumière",
 	[272768] = "Gisement d'empyrium",
+	[272769] = "Oignon",
 	[272770] = "Fournitures de guerre érédars",
 	[272771] = "Fournitures de guerre érédars",
 	[272778] = "Riche gisement d'empyrium",
@@ -40724,6 +40740,8 @@ localize(ObjectNames, {
 	[280883] = "Coffre abîmé par le soleil",
 	[280886] = "Coffre touché par les étoiles",
 	[280903] = "Jouet pour chat perdu",
+	[280926] = "Lance abyssale",
+	[280927] = "Fusil à traits foudroyants",
 	[280948] = "Appentis du Crépuscule",
 	[280951] = "Butin corsandre",
 	[280957] = "Sacoche de Zukashi",
@@ -40748,6 +40766,7 @@ localize(ObjectNames, {
 	[281647] = "Avis posté",
 	[281655] = "Don du cœur brisé",
 	[281673] = "Journal de villageois de Corlain",
+	[281708] = "Sang de mer scellé",
 	[281718] = "ON EMBAUCHE",
 	[281722] = "Parchemin crasseux",
 	[281867] = "Mousse étoilée",
@@ -48518,6 +48537,7 @@ localize(ObjectNames, {
 	[272622] = "Tesoro Maledetto",
 	[272745] = "Telaio di Fontemagica",
 	[272768] = "Deposito d'Empirio",
+	[272769] = "Cipolla",
 	[272770] = "Rifornimenti di Guerra degli Eredar",
 	[272771] = "Rifornimenti di Guerra degli Eredar",
 	[272778] = "Deposito Ricco d'Empirio",
@@ -48711,6 +48731,8 @@ localize(ObjectNames, {
 	[280845] = "|cFFFFFFFFStep 8:|r Dono da Dama Graham",
 	[280883] = "Cassa Consumata dal Sole",
 	[280886] = "Cassa Toccata dalle Stelle",
+	[280926] = "Lancia Abissale",
+	[280927] = "Archibugio del Tiro del Tuono",
 	[280948] = "Latrina del Crepuscolo",
 	[280951] = "Spoglie dei Bracescura",
 	[281079] = "Muschio Stellare",
@@ -48734,6 +48756,7 @@ localize(ObjectNames, {
 	[281647] = "Avviso Appeso",
 	[281655] = "Dono del Cuore Spezzato",
 	[281673] = "Diario di Cittadino di Corlain",
+	[281708] = "Sangue di Marea Sigillato",
 	[281718] = "AIUTO CERCASI",
 	[281722] = "Pergamena Sporca",
 	[281867] = "Muschio Stellare",
@@ -56600,6 +56623,7 @@ localize(ObjectNames, {
 	[272622] = "Tesouro Amaldiçoado",
 	[272745] = "Tear de Teceluma",
 	[272768] = "Depósito de Empirita",
+	[272769] = "Cebola",
 	[272770] = "Suprimentos de Guerra Eredares",
 	[272771] = "Suprimentos de Guerra Eredares",
 	[272778] = "Depósito de Empirita Abundante",
@@ -56786,6 +56810,8 @@ localize(ObjectNames, {
 	[280837] = "|cFFFFFFFFStep 3:|r Carta da Srta. Graham III",
 	[280843] = "|cFFFFFFFFStep 6:|r Carta da Srta. Graham VI",
 	[280845] = "|cFFFFFFFFStep 8:|r Presente da Srta. Graham",
+	[280926] = "Lança Abissal",
+	[280927] = "Rifle Tiro do Trovão",
 	[280948] = "Casinha do Crepúsculo",
 	[280951] = "Espólios de Grimpagris",
 	[281079] = "Musgo-estrela",
@@ -56809,6 +56835,7 @@ localize(ObjectNames, {
 	[281647] = "Divulgação",
 	[281655] = "Dádiva do Coração Partido",
 	[281673] = "Diário de Cidadão de Corlain",
+	[281708] = "Sangue-do-mar Encerrado",
 	[281718] = "PRECISA-SE DE AJUDA",
 	[281722] = "Pergaminho Sujo",
 	[281867] = "Musgo-estrela",
@@ -65652,6 +65679,7 @@ localize(ObjectNames, {
 	[272622] = "Проклятое сокровище",
 	[272745] = "Ткацкий станок для светоткани",
 	[272768] = "Залежи эмпиреита",
+	[272769] = "Лук",
 	[272770] = "Эредарские военные припасы",
 	[272771] = "Эредарские военные припасы",
 	[272778] = "Богатые залежи эмпиреита",
@@ -65847,6 +65875,8 @@ localize(ObjectNames, {
 	[280883] = "Рассохшийся под солнцем сундук",
 	[280886] = "Залитый звездным светом сундук",
 	[280903] = "Потерянная кошачья игрушка",
+	[280926] = "Глубоководное копье",
+	[280927] = "Громовое ружье",
 	[280948] = "Туалет Сумеречного форта",
 	[280951] = "Трофеи Эшвейнов",
 	[280957] = "Сумка Зукаши",
@@ -65871,6 +65901,7 @@ localize(ObjectNames, {
 	[281647] = "Объявление",
 	[281655] = "Дар Несчастной",
 	[281673] = "Дневник жителя Корлейна",
+	[281708] = "Бочонок с кровью моря",
 	[281718] = "ТРЕБУЕТСЯ ПОМОЩЬ!",
 	[281722] = "Грязный свиток",
 	[281867] = "Звездный мох",
@@ -73805,6 +73836,7 @@ localize(ObjectNames, {
 	[272563] = "그랄의 칙령",
 	[272622] = "저주받은 보물",
 	[272768] = "창천석 광맥",
+	[272769] = "양파",
 	[272771] = "에레다르 전쟁 물자",
 	[272778] = "풍부한 창천석 광맥",
 	[272780] = "창천석 융기",
@@ -73968,6 +74000,8 @@ localize(ObjectNames, {
 	[280842] = "|cFFFFFFFFStep 5:|r 그레이엄 부인의 편지 V",
 	[280843] = "|cFFFFFFFFStep 6:|r 그레이엄 부인의 편지 VI",
 	[280844] = "|cFFFFFFFFStep 7:|r 그레이엄 부인의 편지 VII",
+	[280926] = "심연의 창",
+	[280927] = "천둥포 소총",
 	[280948] = "황혼의 화장실",
 	[280951] = "애쉬베인 전리품",
 	[281079] = "별이끼",
@@ -73989,6 +74023,7 @@ localize(ObjectNames, {
 	[281647] = "게시된 공지문",
 	[281655] = "부서진 마음의 선물",
 	[281673] = "콜레인 시민의 일기",
+	[281708] = "밀봉된 파도피",
 	[281718] = "인력 급구",
 	[281722] = "더러워진 두루마리",
 	[281867] = "별이끼",
@@ -82656,6 +82691,7 @@ localize(ObjectNames, {
 	[272622] = "Tesoro maldito",
 	[272745] = "Telar de tejido de luz",
 	[272768] = "Depósito de empirium",
+	[272769] = "Cebolla",
 	[272770] = "Suministros bélicos eredar",
 	[272771] = "Suministros bélicos eredar",
 	[272778] = "Depósito rico en empirium",
@@ -82850,6 +82886,8 @@ localize(ObjectNames, {
 	[280883] = "Cofre descolorido por el sol",
 	[280886] = "Cofre tocado por las estrellas",
 	[280903] = "Juguete de gato perdido",
+	[280926] = "Lanza abisal",
+	[280927] = "Rifle de disparo del trueno",
 	[280948] = "Letrina de la avanzada",
 	[280951] = "Botín de los Gobernalle",
 	[280957] = "Bolsa de Zukashi",
@@ -82874,6 +82912,7 @@ localize(ObjectNames, {
 	[281647] = "Aviso colgado",
 	[281655] = "Favor de corazón roto",
 	[281673] = "Diario de ciudadano de Corlain",
+	[281708] = "Olasangre sellado",
 	[281718] = "SE BUSCA AYUDANTE",
 	[281722] = "Pergamino mugriento",
 	[281867] = "Musgo estelar",
@@ -88315,7 +88354,7 @@ L.AUCTIONS_NO_DATA = "尚未缓存拍卖数据，正在等待拍卖数据。"
 L.AUCTIONS_NO_LIMIT = "无限制"
 L.AUCTIONS_OTHER_ITEMS_DESC = "此处显示了所有可用于非幻化用途（例如成就）的物品。"
 L.AUCTIONS_QUEST_ITEMS_DESC = "所有可以触发非角色解锁任务的物品。"
-L.AUCTIONS_REMOVED_ITEMS_DESC = "所有已从游戏移除、但你大概仍能花点小钱收集到的物品。\n\n另外，如果你在这里发现了什么，欢迎在 ATT Discord 的 #classic-general 频道发帖！我相信有些人会想找到这些东西。"
+L.AUCTIONS_REMOVED_ITEMS_DESC = "所有已从游戏移除、但你大概仍能花点小钱收集到的物品。\n\n另外，如果你在这里发现了什么，欢迎在 ATT Discord 的 #retail-general 频道发帖！我相信有些人会想找到这些东西。"
 L.AUCTIONS_REPUTATION_DESC = "此处显示了所有可用于提升你尚未收集的阵营声望的物品。"
 L.AUCTIONS_SCAN_CLICK_DESC = "点击此按钮对拍卖行执行一次完整扫描。扫描结果将显示在此窗口中，并会清除已有数据。"
 L.AUCTIONS_SCAN_CLICK_TEXT = "点击执行完整扫描"
@@ -93488,6 +93527,8 @@ localize(ObjectNames, {
 	[280883] = "被久晒的箱子",
 	[280886] = "染星之箱",
 	[280903] = "丢失的猫玩具",
+	[280926] = "深渊之矛",
+	[280927] = "雷霆射击步枪",
 	[280948] = "暮光厕所",
 	[280951] = "艾什凡战利品",
 	[281079] = "星光苔",
@@ -93511,6 +93552,7 @@ localize(ObjectNames, {
 	[281647] = "张贴的布告",
 	[281655] = "伤心者的礼物",
 	[281673] = "克莱因市民的日记",
+	[281708] = "被封印的潮汐之血",
 	[281718] = "求助",
 	[281722] = "肮脏卷轴",
 	[281867] = "星光苔",

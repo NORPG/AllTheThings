@@ -2027,7 +2027,7 @@ i(101304,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101305,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101303,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
 i(101306,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
-x(6,{awp=70003,g={
+x(6,{awp=60003,g={
 ah(9060,{awp=60200,description="These were obtained by boosting a character to Level 100 for each class and specialization.",rwp=70305,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
@@ -2797,8 +2797,8 @@ i(117347,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117348,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117346,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
 i(117349,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
-x(7,{awp=80001,g={
-ah(9060,{awp=70003,description="These were obtained by creating a Level 100 Class Trial for each class and specialization.",rwp=80001,type="a",u=2,g={
+x(7,{awp=70003,g={
+ah(9060,{description="These were obtained by creating a Level 100 Class Trial for each class and specialization.",rwp=80001,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
 s(74071,129435,{b=1,c={6},f=25,lvl=40,u=2})}}),

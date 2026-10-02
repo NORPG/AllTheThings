@@ -123,7 +123,7 @@ toy(268695)}}),
 de(15148,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263298,rwp=120001,spellID=1270366,u=2}),
 de(15149,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263299,rwp=120001,spellID=1270367,u=2}),
 p(4897,{awp=120001,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between February 26th, 03:00 p.m. & March 26th, 03:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",itemID=252194,npcID=251819,rwp=120001,spellID=1254207,u=2}),
-p(4944,{awp=120001,b=1,description="Trolli + Xbox promotional item. Available between March 1st 2026 - September 30th 2026 by purchasing Trolli Gummi Pop products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Sometime later you should receive a code to your email to redeem on Battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",itemID=260360,npcID=255750,rwp=120100,spellID=1266148,u=3}),
+p(4944,{awp=120001,b=1,description="Trolli + Xbox promotional item. Available between March 1st 2026 - September 30th 2026 by purchasing Trolli Gummi Pop products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Sometime later you should receive a code to your email to redeem on Battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",itemID=260360,npcID=255750,rwp=120100,spellID=1266148,u=2}),
 mnt(1244247,{awp=120001,b=1,description="Available from the pringleswow.de promotion in a limited quantity to the first 3000 players who scanned a QR code found around cities in Germany.",itemID=246917,rwp=120001,u=2}),
 en(229822,{awp=120001,description="Included as a code when ordering the World of Warcraft The Lich King 7-Inch Deluxe Figure (McFarlane Elite Edition #9)",questID=84999,rwp=120005,spellID=465518,tmogSetID=3901,u=2,g={
 s(227686,229820,{f=3}),
@@ -150,7 +150,10 @@ en(257974,{awp=120100,description="Obtained through watching Twitch Streamers wi
 s(301329,257782,{f=3}),
 s(301311,257762,{f=2,loc=40})}}),
 s(297815,250293,{awp=120100,description="McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",f=3,rwp=120100,u=3}),
-p(4893,{awp=120100,description="Available with the purchase of an Emrrrgl Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=251038,npcID=250776,spellID=1251934,u=3})}}),
+p(4893,{awp=120100,description="Available with the purchase of an Emrrrgl Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=251038,npcID=250776,spellID=1251934,u=3}),
+s(302524,262840,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=45,rwp=120105,u=3}),
+s(302506,262822,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=46,rwp=120105,u=3}),
+s(302543,262859,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=42,rwp=120105,u=3})}}),
 h(-519,{awp=100007,rwp=100206,u=2,g={
 mnt(51412,{itemID=49282,lvl=10,rwp=100007,u=2}),
 p(256,{b=1,itemID=54847,npcID=40703,rwp=100100,spellID=75906,u=2}),
@@ -222,20 +225,20 @@ mnt(358072,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 
 toy(210042,{awp=100107,b=1,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",rwp=100205,u=2}),
 p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collection: Epic Pack.",itemID=258482,npcID=205467,rwp=100205,spellID=411448,u=2}),
 ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2}),
-en(276872,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",questID=97195,rwp=120100,spellID=1300978,tmogSetID=5715,u=3,g={
+en(276872,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",questID=97195,rwp=120100,spellID=1300978,tmogSetID=5715,u=2,g={
 s(309897,276864,{f=2,loc=40}),
 s(309896,276861,{f=2,loc=41}),
 s(309899,276868,{f=3}),
 s(309898,276866,{f=3}),
 s(309900,276870,{f=3})}}),
-p(5064,{awp=120007,description="Received after buying the Blizzcon 2026 Ultimate Bundle.",itemID=274150,npcID=264863,rwp=120100,spellID=1293301,u=3}),
-de(25936,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=276873,rwp=120100,spellID=1300983,u=3}),
-mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=274260,rwp=120100,u=3}),
-de(15153,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263303,rwp=120100,spellID=1270372}),
-mnt(1270520,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263449,lvl=10,rwp=120100}),
-toy(279590,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",rwp=120100}),
-ach(63685,{awp=120100,rwp=120100,g={
-de(28350,{itemID=281107,spellID=1310204})}}),
+p(5064,{awp=120007,description="Received after buying the Blizzcon 2026 Ultimate Bundle.",itemID=274150,npcID=264863,rwp=120100,spellID=1293301,u=2}),
+de(25936,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=276873,rwp=120100,spellID=1300983,u=2}),
+mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=274260,rwp=120100,u=2}),
+de(15153,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263303,rwp=120100,spellID=1270372,u=2}),
+mnt(1270520,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",itemID=263449,lvl=10,rwp=120100,u=2}),
+toy(279590,{awp=120100,description="Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",rwp=120100,u=2}),
+ach(63685,{awp=120100,rwp=120100,u=2,g={
+de(28350,{itemID=281107,spellID=1310204,u=2})}}),
 p(5124,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278231,npcID=269374,rwp=120100,spellID=1304106,u=2}),
 p(5123,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278230,npcID=269373,rwp=120100,spellID=1304105,u=2}),
 p(5127,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278688,npcID=269780,rwp=120100,spellID=1305392,u=2})}),
@@ -309,11 +312,11 @@ s(287328,238035,{f=2,loc=40}),
 s(287329,238038,{f=2,loc=46}),
 s(287331,238047,{f=2,loc=41}),
 s(287294,238025,{f=2,loc=42})}})}})}}),
-x(6,{awp=70003,description="These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",u=3,g={
+x(6,{awp=60003,description="These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",u=3,g={
 p(1386,{awp=50407,itemID=109014,npcID=77137,rwp=60202,spellID=155748,u=2,g={
 crit(24600,{achID=8917,awp=100100,id=3,u=3})}}),
 mnt(155741,{awp=50407,b=1,itemID=109013,lvl=10,rwp=60202,u=2})}}),
-x(7,{awp=80001,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
+x(7,{awp=70003,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(10320,{awp=60202,providers={{"i",128425}},rwp=70305,u=2}),
 ach(10321,{awp=60202,rwp=70305,u=2}),
 mnt(189998,{awp=60202,b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
