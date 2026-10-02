@@ -167,7 +167,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				cost = { { "i", 4365, 10 } },	-- Coarse Dynamite
+				cost = { { "i", 4358, 10 } },	-- Rough Dynamite
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 			}),
