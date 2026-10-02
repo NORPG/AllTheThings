@@ -3389,6 +3389,9 @@ root(ROOTS.Craftables, {
 			i(7005, {	-- Skinning Knife
 				["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 			}),
+			i(277114, {	-- Apprentice's Skinning Satchel
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		spell(8613, {	-- Skinning
 			-- Base leathers:

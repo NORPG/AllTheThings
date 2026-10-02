@@ -2041,6 +2041,96 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ "exclude", "f", TRINKET_F, NECK_F },
 				},
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = pvp({
+					i(272738, { -- Premier Plate Helm
+						cost = {
+							{ "i", 20560, 15 }, -- x15 Alterac Valley Mark of Honor
+							{ "c", 1792, 6000 }, -- x6000 Honor Points
+						},
+					}),
+					i(272741, { -- Premier Plate Pauldrons
+						cost = {
+							{ "i", 20559, 10 }, -- x10 Arathi Basin Mark of Honor
+							{ "c", 1792, 4250 }, -- x4250 Honor Points
+						},
+					}),
+					i(273325, { -- Premier Plate Girdle
+						cost = {
+							{ "i", 20559, 10 }, -- x10 Arathi Basin Mark of Honor
+							{ "c", 1792, 4000 }, -- x4000 Honor Points
+						},
+					}),
+					i(272740, { -- Premier Plate Leggings
+						cost = {
+							{ "i", 20558, 15 }, -- x15 Warsong Gulch Mark of Honor
+							{ "c", 1792, 6000 }, -- x6000 Honor Points
+						},
+					}),
+					i(272716, { -- Premier Plate Boots
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 5000 }, -- x5000 Honor Points
+						},
+					}),
+					i(272828, { -- Premier Plate Wristguards
+						cost = {
+							{ "i", 20558, 10 }, -- x10 Warsong Gulch Mark of Honor
+							{ "c", 1792, 3000 }, -- x3000 Honor Points
+						},
+					}),
+					i(272717, { -- Premier Plate Gauntlets
+						cost = {
+							{ "i", 20558, 10 }, -- x10 Warsong Gulch Mark of Honor
+							{ "c", 1792, 5000 }, -- x5000 Honor Points
+						},
+					}),
+					i(272739, { -- Premier Plate Chestguard
+						cost = {
+							{ "i", 20559, 15 }, -- x15 Arathi Basin Mark of Honor
+							{ "c", 1792, 6250 }, -- x6250 Honor Points
+						},
+					}),
+					i(275240, { -- Premier Emboldened Wrist Seal
+						cost = {
+							{ "c", 1792, 750 }, -- x750 Honor Points
+						},
+					}),
+					i(275244, { -- Premier Emboldened Belt Seal
+						cost = {
+							{ "c", 1792, 1000 }, -- x1000 Honor Points
+						},
+					}),
+					i(275243, { -- Premier Emboldened Feet Seal
+						cost = {
+							{ "c", 1792, 1000 }, -- x1000 Honor Points
+						},
+					}),
+					i(275239, { -- Premier Emboldened Hands Seal
+						cost = {
+							{ "c", 1792, 1500 }, -- x1500 Honor Points
+						},
+					}),
+					i(275242, { -- Premier Emboldened Legs Seal
+						cost = {
+							{ "c", 1792, 2000 }, -- x2000 Honor Points
+						},
+					}),
+					i(275229, { -- Premier Emboldened Shoulder Seal
+						cost = {
+							{ "c", 1792, 1500 }, -- x1500 Honor Points
+						},
+					}),
+					i(275241, { -- Premier Emboldened Head Seal
+						cost = {
+							{ "c", 1792, 2000 }, -- x2000 Honor Points
+						},
+					}),
+					i(275238, { -- Premier Emboldened Chest Seal
+						cost = {
+							{ "c", 1792, 1750 }, -- x1750 Honor Points
+						},
+					}),
+				}),
 			}),
 			n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
 				["description"] = "Found within the Champion's Hall.",
@@ -2050,6 +2140,140 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ "pop" },
 				},
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = pvp({
+					i(272858, { -- Premier Grand Marshal's Demolisher
+						cost = {
+							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 }, -- x15000 Honor Points
+						},
+					}),
+					i(272849, { -- Premier Grand Marshal's Glaive
+						cost = {
+							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 }, -- x15000 Honor Points
+						},
+					}),
+					i(272848, { -- Premier Grand Marshal's Battle Hammer
+						cost = {
+							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 }, -- x15000 Honor Points
+						},
+					}),
+					i(272850, { -- Premier Grand Marshal's Stave
+						cost = {
+							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 }, -- x15000 Honor Points
+						},
+					}),
+					i(272840, { -- Premier Grand Marshal's Sunderer
+						cost = {
+							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 }, -- x15000 Honor Points
+						},
+					}),
+					i(272851, { -- Premier Grand Marshal's Claymore
+						cost = {
+							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 }, -- x15000 Honor Points
+						},
+					}),
+					i(272846, { -- Premier Grand Marshal's Hand Cannon
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272859, { -- Premier Grand Marshal's Swiftblade
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272856, { -- Premier Grand Marshal's Mageblade
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272839, { -- Premier Grand Marshal's Handaxe
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272857, { -- Premier Grand Marshal's Warhammer
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272693, { -- Premier Grand Marshal's Longsword
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272847, { -- Premier Grand Marshal's Punisher
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272843, { -- Premier Grand Marshal's Dirk
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272844, { -- Premier Grand Marshal's Right Hand Blade
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272845, { -- Premier Grand Marshal's Left Hand Blade
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272841, { -- Premier Grand Marshal's Bullseye
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272842, { -- Premier Grand Marshal's Repeater
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 }, -- x8000 Honor Points
+						},
+					}),
+					i(272838, { -- Premier Grand Marshal's Aegis
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 }, -- x7000 Honor Points
+						},
+					}),
+					i(278158, { -- Premier Grand Marshal's Tome of Power
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 }, -- x7000 Honor Points
+						},
+					}),
+					i(278157, { -- Premier Grand Marshal's Tome of Restoration
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 }, -- x7000 Honor Points
+						},
+					}),
+					i(278468, { -- Premier Grand Marshal's Barricade
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 }, -- x7000 Honor Points
+						},
+					}),
+				}),
 			}),
 			n(1291, {	-- Carla Granger <Cloth Armor Merchant>
 				["coord"] = { 62.2, 67.6, MAP.STORMWIND_CITY },
@@ -2471,6 +2695,31 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(18839),	-- Combat Healing Potion
 					i(18841),	-- Combat Mana Potion
 					moh(1, i(15198)),	-- Knight's Colors
+					i(272694),	-- Private's Tabard
+					i(274445, { -- Greater Insignia of the Alliance
+						cost = {
+							{ "c", 1792, 3500 }, -- x3500 Honor Points
+						},
+					}),
+					i(272699, { -- Premier Sergeant's Cape
+						cost = {
+							{ "i", 20559, 10 }, -- x10 Arathi Basin Mark of Honor
+							{ "c", 1792, 3000 }, -- x3000 Honor Points
+						},
+					}),
+					i(272698, { -- Premier Sergeant's Cloak
+						cost = {
+							{ "i", 20559, 10 }, -- x10 Arathi Basin Mark of Honor
+							{ "c", 1792, 3000 }, -- x3000 Honor Points
+						},
+					}),
+					i(274969, { -- Premier Master Sergeant's Insignia
+						cost = {
+							{ "i", 274895, 10 }, -- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 5000 }, -- x5000 Honor Points
+						},
+					}),
+					i(272695),	-- Knight's Colors
 				}),
 			}),
 			n(12805, {	-- Officer Areyn <Accessories Quartermaster>
