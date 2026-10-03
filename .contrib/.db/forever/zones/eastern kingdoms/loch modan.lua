@@ -639,6 +639,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 				},
 			}),
+			q(86758, {	-- Twisting the Knife
+				["qg"] = 1154,	-- Marek Ironheart
+				["coord"] = { 81.8, 61.8, MAP.LOCH_MODAN },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 12,
+				["groups"] = {
+					objective(1, {	-- 0/1 Marek's Croc-Hunting Knife
+						["provider"] = { "i", 279591 },	-- Marek's Croc-Hunting Knife
+						["coord"] = { 62.8, 51.4, MAP.LOCH_MODAN },
+						["cr"] = 270693,	-- Daggerfang
+					}),
+					i(281257),	-- Daggerfang's Daggerfang
+				},
+			}),
 			q(17, {	-- Uldaman Reagent Run
 				["sourceQuest"] = 2500,	-- Badlands Reagent Run
 				["qg"] = 1470,	-- Ghak Healtouch

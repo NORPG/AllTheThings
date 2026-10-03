@@ -900,6 +900,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
+		n(TREASURES, {
+			o(386691, {	-- Library Book
+				["coord"] = { 75.7, 10.5, IRONFORGE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(203754),	-- Archmage Antonidas: The Unabridged Autobiography
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(7978, {	-- Bimble Longberry <Fruit Vendor>
 				["coord"] = { 32.4, 21.2, MAP.IRONFORGE },
