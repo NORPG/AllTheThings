@@ -20,6 +20,7 @@ CN_PROMOTIONS_RETAIL = createHeader({
 	},
 });
 root(ROOTS.Promotions, {
+	-- #if NOT ANYCLASSIC
 	cnONLY(n(CN_PROMOTIONS_RETAIL, {
 		["groups"] = {
 			ach(40910, {	-- Successfully Stress Test CN Realms
@@ -412,4 +413,5 @@ root(ROOTS.Promotions, {
 			}),
 		},
 	})),
+	-- #endif
 });

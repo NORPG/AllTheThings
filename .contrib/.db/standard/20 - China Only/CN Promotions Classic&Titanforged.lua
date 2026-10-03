@@ -43,6 +43,7 @@ CN_PROMOTIONS_CLASSIC = createHeader({
 	},
 });
 root(ROOTS.Promotions, {
+	-- #if ANYCLASSIC
 	cnONLY(n(CN_PROMOTIONS_CLASSIC, {
 		cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger (MOUNT!)
 			["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
@@ -328,6 +329,7 @@ root(ROOTS.Promotions, {
 			}),
 		},
 	})),
+	-- #endif
 });
 
 --https://warcraft.wiki.gg/wiki/Titan_Reforged_-_Chrono
