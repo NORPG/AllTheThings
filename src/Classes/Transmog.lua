@@ -834,10 +834,13 @@ local function DetermineMaxATTSourceID()
 end
 -- Use the event runner so its OnRecalculateDone sequence waits for all Unique batches.
 local UniqueRefreshRunner = app.CreateRunner("events")
+local Profiler = app.Profiler
 local UniqueRefreshGeneration, UniqueSourceVersion = 0, 0
 local UniqueSourcesPerFrame, UniqueSecondsPerFrame = 64, 0.002
 local CollectUniqueAppearances
 local function FinishUniqueAppearances(job)
+	local profileSession = Profiler and Profiler.Enabled and Profiler.SessionID
+	local profileStarted = profileSession and GetTimePreciseSec()
 	local brokenUniqueSources = ATTAccountWideData.BrokenUniqueSources;
 	if brokenUniqueSources then
 		for sourceID,_ in pairs(brokenUniqueSources) do
@@ -861,22 +864,42 @@ local function FinishUniqueAppearances(job)
 	AppliedUniqueSources = job.appliedSources
 	PublishedKnownSources = job.knownSources
 	HasPublishedUniqueRefresh = true
+	if profileSession and Profiler.Enabled and profileSession == Profiler.SessionID then
+		local now = GetTimePreciseSec()
+		Profiler.Record("transmog.unique.publish", (now - profileStarted) * 1000)
+		if job.profileSession == profileSession then
+			Profiler.Record("transmog.unique.wall", (now - job.profileStartedAt) * 1000)
+			Profiler.Count("transmog.unique.completed")
+		else
+			Profiler.Count("transmog.unique.partial_completed")
+		end
+	end
 	app.HandleEvent("OnSourcesCollected")
 end
 local function ProcessUniqueAppearances(job)
+	local profileSession = Profiler and Profiler.Enabled and Profiler.SessionID
 	if job.generation ~= UniqueRefreshGeneration
 		or app.Settings:Get("Completionist")
 		or (not app.MODE_DEBUG and not app.Settings:Get("Thing:Transmog"))
-	then return end
+	then
+		if profileSession and Profiler.Enabled and profileSession == Profiler.SessionID then
+			Profiler.Count("transmog.unique.cancelled")
+		end
+		return
+	end
 	-- A source learned or removed during the calculation requires a fresh snapshot.
 	if job.sourceVersion ~= UniqueSourceVersion then
+		if profileSession and Profiler.Enabled and profileSession == Profiler.SessionID then
+			Profiler.Count("transmog.unique.restarted")
+		end
 		UniqueRefreshGeneration = UniqueRefreshGeneration + 1
 		CollectUniqueAppearances(UniqueRefreshGeneration)
 		return
 	end
 
 	local sourceIDs = job.sourceIDs
-	local last = math.min(job.index + UniqueSourcesPerFrame - 1, #sourceIDs)
+	local first = job.index
+	local last = math.min(first + UniqueSourcesPerFrame - 1, #sourceIDs)
 	local started = GetTimePreciseSec()
 	for i=job.index,last do
 		local sourceID = sourceIDs[i]
@@ -887,11 +910,17 @@ local function ProcessUniqueAppearances(job)
 		end
 		if i < #sourceIDs and GetTimePreciseSec() - started >= UniqueSecondsPerFrame then
 			job.index = i + 1
+			if profileSession and Profiler.Enabled and profileSession == Profiler.SessionID then
+				Profiler.Record("transmog.unique.batch", (GetTimePreciseSec() - started) * 1000, i - first + 1)
+			end
 			UniqueRefreshRunner.Run(ProcessUniqueAppearances, job)
 			return
 		end
 	end
 	job.index = last + 1
+	if profileSession and Profiler.Enabled and profileSession == Profiler.SessionID and last >= first then
+		Profiler.Record("transmog.unique.batch", (GetTimePreciseSec() - started) * 1000, last - first + 1)
+	end
 	if job.index <= #sourceIDs then
 		UniqueRefreshRunner.Run(ProcessUniqueAppearances, job)
 	else
@@ -899,6 +928,8 @@ local function ProcessUniqueAppearances(job)
 	end
 end
 CollectUniqueAppearances = function(generation)
+	local profileSession = Profiler and Profiler.Enabled and Profiler.SessionID
+	local profileStarted = profileSession and GetTimePreciseSec()
 	-- Retain the old ascending SourceID order: faction and class checks accumulate state.
 	RetryMissingVisualSources()
 	if not app.MaxSourceID then DetermineMaxATTSourceID() end
@@ -913,8 +944,10 @@ CollectUniqueAppearances = function(generation)
 	end
 	table.sort(sourceIDs)
 	CurrentCharacterFilterIDSet = app.Presets[app.Class]
-	UniqueRefreshRunner.Run(ProcessUniqueAppearances, {
+	local job = {
 		generation = generation,
+		profileSession = profileSession,
+		profileStartedAt = profileStarted,
 		sourceVersion = UniqueSourceVersion,
 		sourceIDs = sourceIDs,
 		knownSources = knownSources,
@@ -925,9 +958,16 @@ CollectUniqueAppearances = function(generation)
 		classState = {},
 		currentCharacterOnly = app.Settings:Get("MainOnly"),
 		itemSourceFilter = app.ItemSourceFilter,
-	})
+	}
+	if profileSession and Profiler.Enabled and profileSession == Profiler.SessionID then
+		Profiler.Record("transmog.unique.prepare", (GetTimePreciseSec() - profileStarted) * 1000, #sourceIDs)
+		Profiler.Count("transmog.unique.started")
+	end
+	UniqueRefreshRunner.Run(ProcessUniqueAppearances, job)
 end
 local function RefreshAppearanceSources()
+	local profileStarted = Profiler and Profiler.Enabled and GetTimePreciseSec()
+	local profileSession = profileStarted and Profiler.SessionID
 	-- app.PrintDebug("RefreshAppearanceSources")
 	wipe(AccountSources);
 	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
@@ -942,6 +982,9 @@ local function RefreshAppearanceSources()
 		end
 	end
 	-- app.PrintDebugPrior("Completionist Refresh done")
+	if profileStarted and Profiler.Enabled and profileSession == Profiler.SessionID then
+		Profiler.Record("transmog.sources.scan", (GetTimePreciseSec() - profileStarted) * 1000, app.MaxSourceID)
+	end
 end
 -- These events are technically 'refresh' of collections, but they also cause different results on
 -- 'new settings' since they literally change the cached collection state of SourceIDs based on current
