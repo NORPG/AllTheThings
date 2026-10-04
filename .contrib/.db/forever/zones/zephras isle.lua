@@ -4,7 +4,7 @@
 
 maproot(MAP.ZEPHRAS_ISLE, {
 	lore = "Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",
-	--icon = ,	-- TODO: Add an icon for Zephras Isle
+	icon = [[~_.asset("zephrasisland")]],
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = { 2665 },	-- Zephras Isle (Flight Path Map)
 	groups = {

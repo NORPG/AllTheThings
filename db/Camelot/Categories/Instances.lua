@@ -546,7 +546,7 @@ s(158721,6910,{f=4,loc=46}),
 s(158722,6911,{f=5,loc=45}),
 s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
-inst(2959,{awp=16001,lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",["zone-text-areaID"]=16544,g={
+inst(2959,{awp=16001,icon=_.asset("cityofdalaran"),lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",["zone-text-areaID"]=16544,g={
 h(-46,{
 e(3310,{npcID=247032})}),
 e(3311,{npcID=247126}),
@@ -559,7 +559,7 @@ e(3302,{npcID=246017}),
 e(3303,{npcID=246020,g={
 crit(116050,{achID=62032,id=1})}})}}),
 inst(2998,{awp=16001,coords={
-[1437]={{48.1,56.4}}},lore="Rogue Titan constructs, mist and flashing lights at a dig in the Wetlands. The Explorers' League is taking an interest.",lvl=23,["zone-text-areaID"]=17732,g={
+[1437]={{48.1,56.4}}},icon=_.asset("excavationsite"),lore="Rogue Titan constructs, mist and flashing lights at a dig in the Wetlands. The Explorers' League is taking an interest.",lvl=23,["zone-text-areaID"]=17732,g={
 h(-45,{
 q(95697,{coords={
 [1454]={{57.4,53.4}}},lvl=24,qgs={3368},r=1,g={
@@ -844,7 +844,7 @@ s(308384,273007,{b=1,f=5,loc=47,lvl=13}),
 s(308383,273005,{b=1,f=3,lvl=13}),
 s(308382,273003,{b=1,f=20,lvl=13,spellID=1291568})}})}}),
 inst(234,{coords={
-[1413]={{40.94,94.55}}},lore="Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",lvl=17,mapID=301,["zone-text-areaID"]=491,g={
+[1413]={{40.94,94.55}}},icon=136353,lore="Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",lvl=17,mapID=301,["zone-text-areaID"]=491,g={
 h(-45,{
 q(1102,{coords={
 [1456]={{36.2,59.8}}},lvl=29,qgs={4451},r=1,g={
