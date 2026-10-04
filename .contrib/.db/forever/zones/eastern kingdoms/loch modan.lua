@@ -562,6 +562,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["races"] = { DWARF, GNOME },
 				["lvl"] = 10,
 			}),
+			q(86614, {	-- Silver of the Waves
+				["provider"] = { "o", 665289 },	-- Discarded Fishing Toolbox
+				["qi"] = 278051,	-- Monogrammed Silver Hair Clip
+				["coord"] = { 50.6, 53.4, MAP.LOCH_MODAN },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 12,
+				["groups"] = {
+					i(281256),	-- Repurposed Hair Band
+				},
+			}),
 			q(86667, {	-- Snowbound
 				qg = 49808,	-- Grenhild Darktalon
 				coord = { 36.4, 48.2, LOCH_MODAN },
@@ -694,6 +705,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["groups"] = {
 					i(3574),	-- Hunting Ammo Sack
 					i(3573),	-- Hunting Quiver
+					i(270017, {	-- Hunting Satchel
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(256, {	-- WANTED: Chok'sul

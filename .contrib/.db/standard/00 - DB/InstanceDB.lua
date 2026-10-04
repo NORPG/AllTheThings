@@ -20,6 +20,13 @@ inst(2875, 2875);	-- Karazhan Crypts
 
 -- #endif
 
+-- #if FOREVER
+inst(3065, 3273);	-- Hall of Thanes
+inst(2998, 3274);	-- Excavation Site: Wetlands
+inst(2959, 3271);	-- City of Dalaran
+inst(2999, 3272);	-- Ruins of Lordaeron
+-- #endif
+
 -- This list was exported using excel manually using data from this url:
 -- https://wago.tools/db2/JournalInstance?build=11.1.5.59651
 inst(63, 36);	-- Deadmines
