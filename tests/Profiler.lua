@@ -147,5 +147,23 @@ report = p.Report()
 contains(report, "Ticks over 5 ms during capture: 3")
 contains(report, "Ticks over 10 ms during capture: 1")
 
+-- Runner must attribute work only to the session active before its slice.
+unpack = table.unpack or unpack
+tremove = table.remove
+assert(loadfile("lib/Runner.lua"))("AllTheThings", app)
+p.Start(30)
+app.FunctionRunner.Run(function()
+  now = now + 0.010
+  p.Start(30)
+end)
+local callback
+for i = #timers, 1, -1 do
+  if timers[i].seconds == 0 then callback = timers[i].callback; break end
+end
+assert(callback, "runner stack callback missing")
+callback()
+report = p.Report()
+assert(p.SessionID >= 6)
+absent(report, "runner.default.slice\t1")
 
-print("PASS: profiler capture lifecycle, aggregation, limits, and optional Blizzard API")
+print("PASS: profiler disabled path, timing/counter aggregation, validation, stop/reset/timeout, bounded metrics, optional Blizzard API, Runner session attribution")
