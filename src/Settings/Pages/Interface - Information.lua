@@ -235,6 +235,10 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 local knownBy = {};
+--- Format character text for flat or realm-grouped lists, preserving colors and quantities.
+---@param character table Character record to display.
+---@param stripRealm boolean? Remove the saved realm when grouping; otherwise remove the current realm.
+---@return string text
 local function GetCharacterDisplayName(character, stripRealm)
 	local text = character.text or character.name or "???";
 	local realm;
@@ -256,15 +260,27 @@ local function GetCharacterDisplayName(character, stripRealm)
 	end
 	return text;
 end
+--- Return the localized faction label for a character.
+---@param character table Character record whose faction is displayed.
+---@return string factionName
 local function GetCharacterFactionName(character)
 	if character.factionID == Enum.FlightPathFaction.Horde then return FACTION_HORDE; end
 	if character.factionID == Enum.FlightPathFaction.Alliance then return FACTION_ALLIANCE; end
 	return UNKNOWN;
 end
+--- Return the saved realm label or Unknown.
+---@param character table Character record whose realm is displayed.
+---@return string realmName
 local function GetCharacterRealmName(character)
 	local realm = character.realm;
 	return realm and realm ~= "" and realm or UNKNOWN;
 end
+--- Compare characters by enabled realm and faction groups, then by plain name.
+---@param a table First character record.
+---@param b table Second character record.
+---@param groupByRealm boolean Whether to group characters by realm.
+---@param groupByFaction boolean Whether to group characters by faction.
+---@return boolean precedes
 local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
 	if groupByRealm then
 		local realmA, realmB = GetCharacterRealmName(a), GetCharacterRealmName(b);
@@ -287,10 +303,17 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 		local groupByRealm = settings:GetTooltipSetting("GroupByRealm");
 		local groupByFaction = settings:GetTooltipSetting("GroupByFaction");
 		if groupByRealm or groupByFaction then
-			app.Sort(knownBy, function(a, b)
-				return SortCharactersForGrouping(a, b, groupByRealm, groupByFaction);
-			end);
+			app.Sort(knownBy,
+				--- Apply the current grouping settings when sorting character records.
+				---@param a table First character record.
+				---@param b table Second character record.
+				---@return boolean precedes
+				function(a, b)
+					return SortCharactersForGrouping(a, b, groupByRealm, groupByFaction);
+				end);
 			local names, realm, faction, titleAdded = {}, nil, nil, nil;
+			--- Append the current group header and names, then clear its name buffer.
+			---@type fun()
 			local function FlushGroup()
 				if #names > 0 then
 					local label = realm and faction and (realm .. ", " .. faction) or realm or faction;
@@ -509,6 +532,10 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 	end
 end
 
+--- Append characters eligible to learn a recipe using saved ranks and character restrictions.
+---@param t table Tooltip information type.
+---@param reference table Recipe or recipe-linked object.
+---@param tooltipInfo table[] Tooltip rows to append.
 local function ProcessForUsefulFor(t, reference, tooltipInfo)
 	-- Only actual recipes can be useful to a character; arbitrary item/spell IDs are not recipes.
 	local recipe, recipeID = reference, reference.recipeID;

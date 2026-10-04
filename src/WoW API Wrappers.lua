@@ -169,7 +169,11 @@ AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTr
 AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
 local GetTradeSkillLineForRecipe = C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillLineForRecipe;
 AssignAPIWrapper("GetProfessionInfoByRecipeID", C_TradeSkillUI and C_TradeSkillUI.GetProfessionInfoByRecipeID,
-	GetTradeSkillLineForRecipe and function(recipeID)
+	GetTradeSkillLineForRecipe and
+	--- Adapts the legacy recipe skill-line result to the modern profession-info table shape.
+	---@param recipeID number Recipe spell ID.
+	---@return {professionID: number}|nil professionInfo Nil when the recipe has no skill line.
+	function(recipeID)
 		local professionID = GetTradeSkillLineForRecipe(recipeID);
 		if professionID then return { professionID = professionID }; end
 	end,

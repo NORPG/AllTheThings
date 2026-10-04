@@ -547,6 +547,8 @@ checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
 local checkboxUsefulFor = child:CreateCheckBox(L.USEFUL_FOR_CHECKBOX,
+---Refreshes the Useful For checkbox value and enabled state.
+---@param self ATTSettingsCheckButton
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("UsefulFor"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -557,6 +559,8 @@ function(self)
 		self:SetAlpha(1)
 	end
 end,
+---Saves the Useful For tooltip setting.
+---@param self ATTSettingsCheckButton
 function(self)
 	settings:SetTooltipSetting("UsefulFor", self:GetChecked())
 end)
@@ -564,6 +568,8 @@ checkboxUsefulFor:SetATTTooltip(L.USEFUL_FOR_CHECKBOX_TOOLTIP)
 checkboxUsefulFor:AlignBelow(checkboxKnownBy)
 
 local checkboxGroupByRealm = child:CreateCheckBox(L.GROUP_BY_REALM_CHECKBOX,
+---Refreshes the realm grouping checkbox value and enabled state.
+---@param self ATTSettingsCheckButton
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("GroupByRealm"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -574,6 +580,8 @@ function(self)
 		self:SetAlpha(1)
 	end
 end,
+---Saves whether character tooltip entries are grouped by realm.
+---@param self ATTSettingsCheckButton
 function(self)
 	settings:SetTooltipSetting("GroupByRealm", self:GetChecked())
 end)
@@ -584,6 +592,8 @@ checkboxGroupByRealm.Text:SetWordWrap(true)
 checkboxGroupByRealm:SetHitRectInsets(0, -checkboxGroupByRealm.Text:GetWidth() * checkboxGroupByRealm.Text:GetScale(), 0, 0)
 
 local checkboxGroupByFaction = child:CreateCheckBox(L.GROUP_BY_FACTION_CHECKBOX,
+---Refreshes the faction grouping checkbox value and enabled state.
+---@param self ATTSettingsCheckButton
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("GroupByFaction"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -594,6 +604,8 @@ function(self)
 		self:SetAlpha(1)
 	end
 end,
+---Saves whether character tooltip entries are grouped by faction.
+---@param self ATTSettingsCheckButton
 function(self)
 	settings:SetTooltipSetting("GroupByFaction", self:GetChecked())
 end)

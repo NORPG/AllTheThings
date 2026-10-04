@@ -39,6 +39,10 @@ do -- TradeSkill Functionality
 	app.GetSpecializationBaseTradeSkill = function(specializationID)
 		return specializationTradeSkillMap[specializationID];
 	end
+	--- Detects added, removed, or changed values in the profession and rank caches.
+	---@param previous table<number, boolean|number> Previous cache values.
+	---@param current table<number, boolean|number> Refreshed cache values.
+	---@return true|nil changed Nil when both caches contain the same values.
 	local function HasCacheChanged(previous, current)
 		for id,value in pairs(previous) do
 			if current[id] ~= value then return true; end
@@ -47,7 +51,9 @@ do -- TradeSkill Functionality
 			if previous[id] ~= value then return true; end
 		end
 	end
-	-- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
+	--- Refreshes owned professions and personal ranks, excluding linked and guild views from rank updates.
+	--- Marks changed cache fields for account sync and invalidates cached tooltip searches.
+	---@type fun()
 	local function RefreshTradeSkillCache()
 		local cache = app.CurrentCharacter.Professions;
 		local previousCache = {};
@@ -115,6 +121,8 @@ do -- TradeSkill Functionality
 		end
 	end
 	app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
+	--- Schedules a profession-cache refresh after a two-second delay.
+	---@type fun()
 	local function QueueTradeSkillCacheRefresh()
 		app.CallbackHandlers.DelayedCallback(RefreshTradeSkillCache, 2);
 	end
