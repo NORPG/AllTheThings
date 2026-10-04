@@ -241,6 +241,13 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 	["rank"] = function(t) return t.data.rank; end,
 	["collected"] = function(t)
 		if t.data.collectible then
+			-- TODO: use this check instead of the below. it should provide completion of the Criteria based on Achievement completion
+
+			-- completion based on achievement is faster check, otherwise lookup character saved criteria
+			-- return app.TypicalCharacterCollected("Achievements", t.achievementID) or (t.saved and 1)
+
+			-- TODO: remove this
+			-- vv
 			if t.data.collected then
 				return 1;
 			end
@@ -251,6 +258,7 @@ app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteria
 					return 2;
 				end
 			end
+			-- ^^
 		end
 	end,
 	["saved"] = function(t)
@@ -427,6 +435,8 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		achievementID = tonumber(achievementID) or achievementID;
 		local collected = select(13, GetAchievementInfo(achievementID));
 		if collected ~= app.CurrentCharacter.Achievements[achievementID] then
+			-- TODO: just do this
+			-- local reference = app.SearchForObject("achievementID", achievementID, "key")
 			local reference;
 			for i,o in ipairs(SearchForField("achievementID", achievementID)) do
 				if o.key == "achievementID" or o.key == "guildAchievementID" then
