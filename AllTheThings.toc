@@ -44,6 +44,7 @@ db\Standard\ReferenceDB.lua [AllowLoadGameType wowhack]
 lib\Debugging.lua
 lib\Print.lua
 lib\EventRegistration.lua
+lib\Profiler.lua
 lib\Runner.lua
 lib\Colors.lua
 lib\Sort.lua
