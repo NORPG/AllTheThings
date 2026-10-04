@@ -111,6 +111,31 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(98386, {	-- Alther's Mill
+				sourceQuest = 89,	-- The Everstill Bridge
+				qg = 341,	-- Foreman Oslow
+				coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 15,
+				groups = {
+					objective(1, {	-- 0/12 Greater Tarantula slain
+						providers = {
+							{ "n", 505 },	-- Greater Tarantula
+							{ "n", 271898 },	-- Greater Tarantula
+							{ "n", 271988 },	-- Greater Tarantula
+						},
+						coord = { 52.6, 41.2, MAP.REDRIDGE_MOUNTAINS },
+					}),
+					objective(2, {	-- 0/6 Tarantula Egg destroyed
+						providers = {
+							{ "o", 673101 },	-- Tarantula Egg
+							{ "o", 673085 },	-- Tarantula Egg
+						},
+						coord = { 47.3, 43.6, MAP.REDRIDGE_MOUNTAINS },
+					}),
+				},
+			}),
 			q(34, {	-- An Unwelcome Guest
 				qg = 342,	-- Martie Jainrose
 				coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },

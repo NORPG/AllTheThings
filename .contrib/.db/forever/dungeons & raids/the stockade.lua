@@ -99,6 +99,9 @@ root(ROOTS.Instances, {
 						}),
 						i(1317),	-- Hardened Root Staff
 						i(3400),	-- Lucine Longsword
+						i(270027, {	-- Ursine Hammer
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 			}),
