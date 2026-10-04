@@ -2164,6 +2164,7 @@ MobileDB.GameObject = {
 	[282660] = true,	-- Urn of Agussu
 	[282740] = true,	-- Mysterious Trashpile
 	[284468] = true,	-- 7th Legion Supply Crate (q:50966)
+	[284473] = true,	-- Plundered Supplies
 	[287006] = true,	-- Faithless Weapon Rack (q:49665)
 	[287066] = true,	-- Morgrum's Device (q:49282)
 	[287068] = true,	-- Morgrum's Device

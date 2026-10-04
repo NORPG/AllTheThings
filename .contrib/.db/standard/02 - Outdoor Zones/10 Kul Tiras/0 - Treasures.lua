@@ -40,7 +40,10 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(291217, {	-- Small Treasure Chest
-					["coord"] = { 67.6, 57.5, DRUSTVAR },
+					["coords"] = {
+						{ 65.1, 51.9, DRUSTVAR },
+						{ 67.6, 57.5, DRUSTVAR },
+					},
 				}),
 				o(291223, {	-- Small Treasure Chest
 					--["questID"] = 51899,

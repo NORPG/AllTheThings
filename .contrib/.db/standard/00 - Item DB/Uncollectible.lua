@@ -321,6 +321,7 @@ i(158855);	-- Grim Skull Fetish
 i(152698);	-- Grimestone Stew
 i(158860);	-- Grindstone Molar
 i(158765);	-- Hardshell Mollusk
+i(158826);	-- Hardy Hoof
 i(162559);	-- Hearty Swamp Gumbo
 i(158806);	-- Hooked Talon
 i(155600);	-- How to Make Money and Influence Subordinates

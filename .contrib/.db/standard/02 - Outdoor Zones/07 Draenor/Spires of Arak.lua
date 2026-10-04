@@ -743,7 +743,10 @@ root(ROOTS.Zones, {
 					}),
 					q(34805, {	-- Echo Hunters
 						["sourceQuest"] = 34659,	-- The Crone
-						["qg"] = 80265,	-- Reshad
+						["qgs"] = {
+							79519,	-- Reshad
+							80265,	-- Reshad
+						},
 						["coord"] = { 51.6, 31.2, SPIRES_OF_ARAK },
 					}),
 					q(36425, {	-- Egg Punt

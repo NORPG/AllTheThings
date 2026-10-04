@@ -200,6 +200,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			i(273000, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corrosive Soul
 			i(269006),	-- Preyseeker's Gleaming Coin Pouch
 			i(269007),	-- Preyseeker's Glittering Coin Pouch
+			i(279574, { ["timeline"] = { ADDED_12_1_0 } }),	-- Preyhunter's Hero Chest
 		}),
 		n(QUESTS, {
 			q(95114, {	-- Prey: A Crimson Summons

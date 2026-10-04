@@ -532,7 +532,6 @@ root(ROOTS.Unsorted, {
 			i(276912),	-- Middle Fragment of Ulantu's Log
 			i(276914),	-- End Fragment of Ulantu's Log
 			i(277525),	-- Ulantu's Belongings
-			i(279574),	-- Preyhunter's Hero Chest
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -2290,7 +2289,6 @@ root(ROOTS.Unsorted, {
 				i(158822),	-- Lustrous Black Feather \\ PH Flavor - Wind Serpent
 				i(158824),	-- PH Flavor - Unused \\ PH Flavor - Firefly - Insect
 				i(158825),	-- PH Flavor - Unused \\ PH Flavor - K'thir
-				i(158826),	-- Hardy Hoof \\ PH Flavor - Honey Elemental \\ PH Flavor
 				i(158827),	-- PH Flavor - Unused \\ PH Flavor - Fish - Generic
 				i(158829),	-- PH Flavor - Unused \\ PH Flavor - Cockroach - Insect
 				i(158832),	-- Bushy Tail \\ PH Flavor - Kul Tiran

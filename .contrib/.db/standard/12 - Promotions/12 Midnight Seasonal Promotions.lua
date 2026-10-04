@@ -189,17 +189,17 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_12_1_0 },
 				["u"] = REAL_MONEY,
 			}),
-			i(262840, {	-- Grassy Dunecloth Belt
+			i(262840, {	-- Grassy Dunecloth Belt (COSMETIC!)
 				["description"] = "Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },	-- Removed 12th October 2026
 				["u"] = REAL_MONEY,
 			}),
-			i(262822, {	-- Grassy Dunecloth Skirt
+			i(262822, {	-- Grassy Dunecloth Skirt (COSMETIC!)
 				["description"] = "Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },	-- Removed 12th October 2026
 				["u"] = REAL_MONEY,
 			}),
-			i(262859, {	-- Grassy Dunecloth Vest
+			i(262859, {	-- Grassy Dunecloth Vest (COSMETIC!)
 				["description"] = "Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },	-- Removed 12th October 2026
 				["u"] = REAL_MONEY,

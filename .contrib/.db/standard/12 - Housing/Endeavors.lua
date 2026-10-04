@@ -710,7 +710,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 60.3, 52.5, FOUNDERS_POINT },
 				}),
 				n(266728, {	-- Secret Souvenir (55)
-					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",
+					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
 					["coord"] = { 36.8, 46.8, FOUNDERS_POINT },
 				}),
 				n(266729, {	-- Secret Souvenir (56)
@@ -922,7 +922,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coords"] = { 67.8, 55.5, RAZORWIND_SHORES },
 				}),
 				n(266667, {	-- Secret Souvenir (55)
-					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",
+					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
 					["coord"] = { 52.6, 73.1, RAZORWIND_SHORES },
 				}),
 				n(266668, {	-- Secret Souvenir (56)
@@ -1003,14 +1003,17 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 				n(268106, {	-- Taifa <Endeavor Trader>
 					["coords"] = {
-						{ 52.9, 39.0, FOUNDERS_POINT },
+						{ 53.2, 38.3, FOUNDERS_POINT },
 						{ 54.4, 56.0, RAZORWIND_SHORES },
 					},
 					["groups"] = {
 						i_DecorCoupons(280236, 30),	-- Ancient Memories of the Sea (DECOR!)
 						i_DecorCoupons(280227, 25),	-- Apothecary's Tortollan Display Rack (DECOR!)
 						i(280846, {	-- Beguiling Memories of the Sea (DECOR!)
-							["sourceAchievement"] = 63605,	-- Souvenir Seeker, Founder's Point
+							["sourceAchievements"] = {
+								63605,	-- Souvenir Seeker, Founder's Point
+								63441,	-- Souvenir Seeker, Razorwind Shores
+							},
 							["cost"] = { { "c", COMMUNITY_COUPONS, 30 } },
 						}),
 						i_DecorCoupons(280223, 25),	-- Collector's Tortollan Display Rack (DECOR!)
