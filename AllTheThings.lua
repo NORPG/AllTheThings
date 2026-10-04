@@ -1285,7 +1285,7 @@ function app:GetDatabaseRoot()
 		text = L.TITLE,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
-		awp = app.IsForever and 16000 or 10000,
+		awp = app.IsForever and 16000 or nil,
 		description = L.DESCRIPTION,
 		font = "GameFontNormalLarge",
 		SortType = "Global",
