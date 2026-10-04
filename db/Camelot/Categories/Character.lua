@@ -259,8 +259,7 @@ crit(116057,{achID=62033,id=5,providers={{"n",255702}}}),
 crit(550,{achID=62033,id=12,providers={{"n",10813}}}),
 crit(116056,{achID=62033,id=17,providers={{"n",261809}}}),
 crit(116055,{achID=62033,id=8,providers={{"n",247234}}})}),
-ach(62031,{
-crit(116054,{achID=62031,id=6,providers={{"n",260326}}})})}}),
+ach(62031)}}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(891,{icon=374217,r=2}),

@@ -6,10 +6,10 @@ root(ROOTS.Instances, {
 	inst(2998, {	-- Excavation Site: Wetlands
 		lore = "Rogue Titan constructs, mist and flashing lights at a dig in the Wetlands. The Explorers' League is taking an interest.",
 		--icon = [[~_.asset("hallofthanes")]],
-		--["zone-text-areaID"] = ,	-- The Hall of Thanes
-		coord = { 50.0, 50.0, MAP.WETLANDS },
+		["zone-text-areaID"] = 17732,	-- Excavation Site: Wetlands
+		coord = { 48.1, 56.4, MAP.WETLANDS },
 		timeline = { TIMELINE.ADDED_1_60_1 },
-		lvl = 24,
+		lvl = 23,
 		groups = {
 			n(QUESTS, {
 				q(95697, {	-- Changing Tastes
