@@ -1067,7 +1067,9 @@ s(125332,13004,{f=27,lvl=53,q=3}),
 s(120279,5216,{f=27,lvl=40,q=2}),
 s(125393,13065,{f=27,lvl=45,q=3}),
 s(120277,5214,{f=27,lvl=27,q=2}),
-s(127211,15280,{f=27,lvl=48,q=2})})}),
+s(127211,15280,{f=27,lvl=48,q=2})}),
+flt(36,{
+i(5379,{lvl=3})})}),
 flt(7,{
 s(122499,8312,{f=7,loc=42,lvl=52,q=2}),
 s(122501,8314,{f=7,loc=44,lvl=48,q=2}),
@@ -3558,7 +3560,7 @@ i(12184,{coords={
 i(4461,{description="Drops from raptors ranging from level 30 to 40.",maps={1417,1434,1445},q=1}),
 i(12203,{coords={
 [1448]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",q=1}),
-i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={-353,242,317,1419,1435,1451,1452},q=1}),
+i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={242,250,317,1419,1435,1451,1452},q=1}),
 i(10285,{crs={1821,1822,1824,5856,5857},description="Drops from spiders in the level bracket 45-60.",q=1}),
 i(5635,{description="Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",maps={279,301,310,1413,1421,1424,1431,1432,1433,1436,1437,1439,1440,1441,1442,1942,1950},q=1}),
 i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={230,235,280,301,1417,1425,1443,1444},q=1}),
@@ -4852,7 +4854,7 @@ r(31442,{itemID=24302,learnedAt=365,q=4,requireSkill=197,u=17}),
 r(31449,{itemID=24306,learnedAt=365,q=4,requireSkill=197,u=17}),
 r(31441,{itemID=24301,learnedAt=350,q=3,requireSkill=197,u=17})}})}})}}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
-i(16882,{q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
+i(16882,{awp=11101,q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
 s(119604,4446,{f=20,lvl=21,q=3}),
 s(118058,2567,{f=20,lvl=18,q=3}),
 s(120709,5756,{f=20,lvl=32,q=3})}}),

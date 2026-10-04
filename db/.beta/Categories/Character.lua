@@ -2029,7 +2029,7 @@ i(101304,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101305,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101303,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
 i(101306,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
-x(6,{awp=70003,g={
+x(6,{awp=60003,g={
 ah(9060,{awp=60200,description="These were obtained by boosting a character to Level 100 for each class and specialization.",rwp=70305,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
@@ -2799,8 +2799,8 @@ i(117347,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117348,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117346,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
 i(117349,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
-x(7,{awp=80001,g={
-ah(9060,{awp=70003,description="These were obtained by creating a Level 100 Class Trial for each class and specialization.",rwp=80001,type="a",u=2,g={
+x(7,{awp=70003,g={
+ah(9060,{description="These were obtained by creating a Level 100 Class Trial for each class and specialization.",rwp=80001,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
 s(74071,129435,{b=1,c={6},f=25,lvl=40,u=2})}}),
@@ -6162,8 +6162,8 @@ i(154114,{b=1,c={1},f=52,lvl=45}),
 i(154116,{b=1,c={1},f=53,lvl=45}),
 i(154117,{b=1,c={1},f=53,lvl=45})})})}})}})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
-faction(469,{icon=374217,r=2}),
-faction(67,{icon=374221,r=1}),
+faction(469,{awp=10001,icon=374217,r=2}),
+faction(67,{awp=10001,icon=374221,r=1}),
 faction(891,{collectible=false,r=2}),
 faction(892,{collectible=false,r=1}),
 faction(1118,{awp=30002,collectible=false}),
@@ -8043,17 +8043,17 @@ s(8900,22632,{b=1,c={11},f=28,spellID=28148,u=2}),
 s(8896,22589,{b=1,c={8},f=28,spellID=28148,u=2}),
 s(8899,22631,{b=1,c={5},f=28,spellID=28148,u=2}),
 s(8898,22630,{b=1,c={9},f=28,spellID=28148,u=2}),
-s(36447,71086,{b=1,c={5,7,8,9,11,13},f=28,lvl=35,spellID=101641}),
-s(39516,77949,{b=1,c={4},f=20,spellID=107082}),
-s(145985,186414,{b=1,c={3},f=32,lvl=60,spellID=353511}),
-s(24303,49623,{b=1,c={1,2,6},f=22,lvl=30,spellID=71903}),
-s(7098,17182,{b=1,c={1,2,6,7,11,13},f=24,lvl=25,spellID=21142}),
-s(7545,19019,{b=1,f=25,lvl=25}),
-s(15886,34334,{b=1,c={1,3,4},f=32,lvl=27,spellID=46699}),
-s(39517,77950,{b=1,c={4},f=20,spellID=107082}),
-s(22178,46017,{b=1,c={2,5,7,10,11,13},f=23,spellID=64415}),
-s(15136,32837,{b=1,c={1,4,6,10,12},collectible=false,f=25,lvl=27}),
-s(15137,32838,{b=1,c={1,4,6,10,12},collectible=false,f=25,lvl=27})}),
+s(36447,71086,{awp=40200,b=1,c={5,7,8,9,11,13},f=28,lvl=35,spellID=101641}),
+s(39516,77949,{awp=40300,b=1,c={4},f=20,spellID=107082}),
+s(145985,186414,{awp=90100,b=1,c={3},f=32,lvl=60,spellID=353511}),
+s(24303,49623,{awp=30300,b=1,c={1,2,6},f=22,lvl=30,spellID=71903}),
+s(7098,17182,{awp=10100,b=1,c={1,2,6,7,11,13},f=24,lvl=25,spellID=21142}),
+s(7545,19019,{awp=10600,b=1,f=25,lvl=25}),
+s(15886,34334,{awp=20402,b=1,c={1,3,4},f=32,lvl=27,spellID=46699}),
+s(39517,77950,{awp=40300,b=1,c={4},f=20,spellID=107082}),
+s(22178,46017,{awp=30100,b=1,c={2,5,7,10,11,13},f=23,spellID=64415}),
+s(15136,32837,{awp=20100,b=1,c={1,4,6,10,12},collectible=false,f=25,lvl=27}),
+s(15137,32838,{awp=20100,b=1,c={1,4,6,10,12},collectible=false,f=25,lvl=27})}),
 h(-10,{awp=90205,g={
 ra(10,{description="To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",races={10},g={
 q(65652,{c={1,3,4,5,6,8,9,10,12},coords={
@@ -8189,11 +8189,11 @@ s(2259,6124,{f=5,loc=46,rwp=90105,u=2}),
 s(2258,6123,{f=5,loc=42,rwp=90105,u=2}),
 s(2269,6139,{f=5,loc=42,rwp=90105,u=2})}),
 h(-101,{
-s(16,35,{f=28}),
+s(16,35,{awp=10100,f=28}),
 s(304104,266262,{awp=120001,b=1,c={11},f=28,lvl=10}),
 i(270431,{awp=120001,f=55,g={
 s(305112,270433,{c={11},f=28})}}),
-s(1372,3661,{f=28})}),
+s(1372,3661,{awp=10100,f=28})}),
 h(-6,{awp=70305,g={
 s(93852,157666,{b=1,c={11},f=5,loc=42,lvl=10}),
 s(93859,157673,{b=1,c={11},f=5,loc=43,lvl=10}),
@@ -8260,7 +8260,7 @@ h(-101,{
 s(230180,232277,{awp=110005,b=1,f=31,lvl=10}),
 i(270431,{awp=120001,f=55,g={
 s(305114,270439,{c={3},f=29})}}),
-s(833,2508,{f=31}),
+s(833,2508,{awp=10100,f=31}),
 s(8277,20982,{awp=20003,f=20,rwp=90001,u=2}),
 s(8275,20980,{awp=20003,description="New Blood Elf Hunters start with this weapon.",f=32}),
 s(28167,57244,{awp=40001,f=29,rwp=50004,u=2}),
@@ -8352,9 +8352,9 @@ s(301220,257592,{awp=120001,b=1,f=4,loc=43,lvl=10}),
 s(301182,257523,{awp=120001,b=1,f=4,loc=42,lvl=10})}),
 h(-101,{
 s(8273,20978,{awp=30002,f=28}),
-s(16,35,{f=28}),
+s(16,35,{awp=10100,f=28}),
 s(230216,232336,{awp=110005,b=1,f=28,lvl=10}),
-s(1372,3661,{f=28}),
+s(1372,3661,{awp=10100,f=28}),
 s(304106,266264,{awp=120001,b=1,c={8},f=28,lvl=10})}),
 h(-6,{awp=70305,g={
 s(93872,157686,{b=1,c={8},f=4,loc=42,lvl=10}),
@@ -8374,7 +8374,7 @@ mnt(69826,{awp=40003,c={2},description="Received on reaching Level 17 as a Taure
 mnt(69820,{awp=40003,c={2},description="Received on reaching Level 10 as a Tauren Paladin.",races={6}}),
 mnt(34767,{awp=20003,c={2},description="Received on reaching Level 17 as a Blood Elf Paladin.",races={10}}),
 mnt(34769,{awp=20003,c={2},description="Received on reaching Level 10 as a Blood Elf Paladin.",races={10}}),
-mnt(13819,{c={2},description="Received on reaching Level 10 as a Human or Dwarf Paladin.",races={1,3}}),
+mnt(13819,{awp=10100,c={2},description="Received on reaching Level 10 as a Human or Dwarf Paladin.",races={1,3}}),
 mnt(290608,{awp=80105,description="Received on reaching Level 10 as a Zandalari Paladin.",races={31}}),
 mnt(270562,{awp=80001,description="Received on reaching Level 10 as a Dark Iron Dwarf Paladin.",races={34}}),
 mnt(363613,{awp=90105,description="Received on reaching Level 10 as a Lightforged Draenei Paladin.",races={30}})}),
@@ -8399,8 +8399,8 @@ s(28824,58233,{awp=40003,f=7,loc=42,rwp=90105,u=2}),
 s(28830,58242,{awp=40003,f=7,loc=42,rwp=90105,u=2})}),
 h(-101,{
 s(25771,52557,{awp=40001,f=24,rwp=90001,u=2}),
-s(17,36,{f=23}),
-s(746,2362,{f=8})}),
+s(17,36,{awp=10100,f=23}),
+s(746,2362,{awp=10100,f=8})}),
 h(-6,{awp=70305,g={
 s(93884,157698,{b=1,c={2},f=7,loc=42,lvl=10}),
 s(93891,157705,{b=1,c={2},f=7,loc=43,lvl=10}),
@@ -8450,9 +8450,9 @@ s(301220,257592,{awp=120001,b=1,f=4,loc=43,lvl=10}),
 s(301182,257523,{awp=120001,b=1,f=4,loc=42,lvl=10})}),
 h(-101,{
 s(8273,20978,{awp=30002,f=28}),
-s(16,35,{f=28}),
+s(16,35,{awp=10100,f=28}),
 s(230209,232329,{awp=110005,b=1,f=28,lvl=10}),
-s(1372,3661,{f=28}),
+s(1372,3661,{awp=10100,f=28}),
 s(304108,266266,{awp=120001,b=1,c={5},f=28,lvl=10}),
 s(8276,20981,{awp=20003,f=23,rwp=30002,u=2})}),
 h(-6,{awp=70305,g={
@@ -8506,7 +8506,7 @@ s(8272,20977,{awp=40001,f=25,rwp=90001,u=2}),
 s(8277,20982,{awp=20003,f=20,rwp=90001,u=2}),
 s(24524,50057,{awp=30300,description="New Blood Elves start with this weapon.",f=20}),
 s(304109,266267,{awp=120001,b=1,c={4},f=20,lvl=10}),
-s(590,2092,{f=20}),
+s(590,2092,{awp=10100,f=20}),
 s(24522,50055,{awp=30300,f=20})}),
 h(-6,{awp=70305,g={
 s(93900,157714,{b=1,c={4},f=5,loc=42,lvl=10}),
@@ -8547,8 +8547,8 @@ i(270431,{awp=120001,f=55,g={
 s(305117,270442,{c={7},f=21})}}),
 s(304111,266269,{awp=120001,b=1,c={7},f=8,lvl=10}),
 s(305115,270440,{awp=120001,c={7},f=21}),
-s(17,36,{f=23}),
-s(746,2362,{f=8})}),
+s(17,36,{awp=10100,f=23}),
+s(746,2362,{awp=10100,f=8})}),
 h(-6,{awp=70305,g={
 s(93908,157722,{b=1,c={7},f=6,loc=42,lvl=10}),
 s(93915,157729,{b=1,c={7},f=6,loc=43,lvl=10}),
@@ -8559,8 +8559,8 @@ s(93909,157723,{b=1,c={7},f=6,loc=47,lvl=10}),
 s(93824,157638,{b=1,description="New Allied Race Shamans start with this weapon.",f=34,lvl=10}),
 s(93841,157655,{b=1,description="New Allied Race Shamans start with this weapon.",f=8,lvl=10})}})}),
 cl(9,{
-flt(100,{
-mnt(5784,{c={9},description="Received on reaching Level 10 as a Warlock."})}),
+flt(100,{awp=10100,g={
+mnt(5784,{c={9},description="Received on reaching Level 10 as a Warlock."})}}),
 h(-39,{awp=100105,g={
 i(206681,{b=1,lvl=30}),
 i(208226,{b=1,lvl=30,r=2}),
@@ -8632,7 +8632,7 @@ s(301220,257592,{awp=120001,b=1,f=4,loc=43,lvl=10}),
 s(301182,257523,{awp=120001,b=1,f=4,loc=42,lvl=10})}),
 h(-101,{
 s(8273,20978,{awp=30002,f=28}),
-s(16,35,{f=28}),
+s(16,35,{awp=10100,f=28}),
 s(229958,232038,{awp=110005,b=1,f=28,lvl=10}),
 s(304112,266270,{awp=120001,b=1,c={9},f=28,lvl=10})}),
 h(-6,{awp=70305,g={
@@ -8693,8 +8693,8 @@ s(305119,270444,{c={1},f=21})}}),
 s(304113,266271,{awp=120001,b=1,c={1},f=26,lvl=10}),
 s(4385,12282,{f=22,rwp=90001,u=2}),
 s(24361,49778,{awp=20003,f=26,rwp=90001,u=2}),
-s(15,25,{f=25}),
-s(746,2362,{f=8})}),
+s(15,25,{awp=10100,f=25}),
+s(746,2362,{awp=10100,f=8})}),
 h(-6,{awp=70305,g={
 s(93924,157738,{b=1,c={1},f=7,loc=42,lvl=10}),
 s(93931,157745,{b=1,c={1},f=7,loc=43,lvl=10}),
@@ -8738,7 +8738,7 @@ s(27,49,{description="Former Starter Shirt for Human, Night Elf, Dwarf & Gnome R
 s(24263,49567,{awp=40003,description="New Worgen Hunters, Rogues, and Warriors start out with this shirt.",f=10}),
 s(9458,24143,{awp=20003,description="Former Starter Shirt for Blood Elf Paladins",f=10,rwp=40003,u=2}),
 s(8246,20897,{awp=20003,description="Former Starter Shirt for Blood Elf Rogues.",f=10,rwp=40003,u=2}),
-s(30,53,{f=10}),
+s(30,53,{awp=10100,f=10}),
 s(50,154,{description="Former Starter Shirt for Orc & Tauren Shamans",f=10,rwp=40003,u=2}),
 s(2264,6134,{description="Former Starter Shirt for Troll Shamans",f=10,rwp=40003,u=2}),
 s(9293,23473,{awp=20003,description="Former Starter Shirt for Draenei Warriors and Mages",f=10,rwp=40003,u=2}),

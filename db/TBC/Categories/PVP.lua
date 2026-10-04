@@ -1531,21 +1531,21 @@ flt(53,{pvp=1,u=21,g={
 i(37864,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,r=2,rwp=40003,u=21}),
 i(37865,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,r=1,rwp=40003,u=21})}})}})}})}}),
 h(-292,{pvp=1,g={
-m(1459,{lore="Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",lvl=51,pvp=1,g={
-n(13419,{awp=10500,isRaid=1,pvp=1,r=1,g={
-s(129925,19110,{b=1,f=25,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129920,19105,{b=1,f=4,loc=40,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129926,19111,{b=1,f=6,loc=41,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129927,19112,{b=1,f=7,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129928,19113,{b=1,f=5,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-i(19109,{b=1,f=52,lvl=58,pvp=1,q=3,rwp=10600,u=2})}}),
-n(13256,{awp=10500,isRaid=1,pvp=1,r=2,g={
-s(129925,19110,{b=1,f=25,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129920,19105,{b=1,f=4,loc=40,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129926,19111,{b=1,f=6,loc=41,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129927,19112,{b=1,f=7,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-s(129928,19113,{b=1,f=5,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
-i(19109,{b=1,f=52,lvl=58,pvp=1,q=3,rwp=10600,u=2})}}),
+m(1459,{awp=11101,lore="Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",lvl=51,pvp=1,g={
+n(13419,{isRaid=1,pvp=1,r=1,g={
+s(129925,19110,{awp=10500,b=1,f=25,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129920,19105,{awp=10500,b=1,f=4,loc=40,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129926,19111,{awp=10500,b=1,f=6,loc=41,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129927,19112,{awp=10500,b=1,f=7,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129928,19113,{awp=10500,b=1,f=5,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+i(19109,{awp=10500,b=1,f=52,lvl=58,pvp=1,q=3,rwp=10600,u=2})}}),
+n(13256,{isRaid=1,pvp=1,r=2,g={
+s(129925,19110,{awp=10500,b=1,f=25,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129920,19105,{awp=10500,b=1,f=4,loc=40,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129926,19111,{awp=10500,b=1,f=6,loc=41,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129927,19112,{awp=10500,b=1,f=7,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+s(129928,19113,{awp=10500,b=1,f=5,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
+i(19109,{awp=10500,b=1,f=52,lvl=58,pvp=1,q=3,rwp=10600,u=2})}}),
 h(-12,{pvp=1,g={
 ach(708,{minReputation={729,42000},pvp=1,r=1,u=12,g={
 crit(645,{achID=714,id=1,pvp=1,r=1,u=12})}}),
@@ -1560,7 +1560,7 @@ h(-45,{pvp=1,g={
 q(7385,{coords={
 [1459]={{50.1,85.1}}},cost={{"i",17306,5}},maxReputation={729,42000},pvp=1,qgs={13236},r=1,repeatable=1}),
 q(7362,{awp=10500,pvp=1,qgs={14186},r=1,rwp=11000,u=2}),
-q(7081,{awp=11101,coords={
+q(7081,{coords={
 [1416]={{36.8,77.2}}},pvp=1,qgs={13777},r=2,rwp=80205}),
 q(7223,{coords={
 [1459]={{43.5,15.5}}},cost={{"i",17422,20}},pvp=1,qgs={13257},r=2}),
@@ -1585,9 +1585,9 @@ q(6942,{coords={
 [1459]={{50.6,65.8}}},cost={{"i",17502,1}},maxReputation={730,42000},pvp=1,qgs={13438},r=2,repeatable=1}),
 q(6941,{coords={
 [1459]={{50.3,81.6}}},cost={{"i",17503,1}},maxReputation={730,42000},pvp=1,qgs={13439},r=2,repeatable=1}),
-q(7122,{awp=11101,coords={
+q(7122,{coords={
 [1416]={{36.8,77.2}}},pvp=1,qgs={13777},r=2,rwp=80205}),
-q(7124,{awp=11101,coords={
+q(7124,{coords={
 [1416]={{65.6,55.1}}},pvp=1,qgs={12097,13776},r=1,rwp=80205,sourceQuests={7123}}),
 q(6982,{coords={
 [1459]={{43.1,17.6}}},cost={{"i",17542,10}},maxReputation={730,42000},pvp=1,qgs={12096},r=2,repeatable=1,sourceQuests={7121}}),
@@ -1620,13 +1620,13 @@ q(7302,{awp=90001,coords={
 [1459]={{49.5,88.2}}},pvp=1,qgs={13153},r=1,rwp=20300,u=2}),
 q(7361,{awp=10500,pvp=1,qgs={14185},r=1,rwp=11000,u=2}),
 q(7364,{awp=10500,pvp=1,qgs={14188},r=2,rwp=11000,u=2}),
-q(8272,{awp=11101,coords={
+q(8272,{coords={
 [1416]={{63.6,60.4}}},pvp=1,qgs={13817},r=1,rwp=80205,sourceQuests={7142},g={
 s(129922,19107,{b=1,f=33,pvp=1,q=3}),
 s(131143,20648,{b=1,f=23,pvp=1,q=3}),
 s(129921,19106,{b=1,f=29,pvp=1,q=3}),
 s(129923,19108,{b=1,f=27,pvp=1,q=3})}}),
-q(8271,{awp=11101,coords={
+q(8271,{coords={
 [1416]={{41,79.6}}},pvp=1,qgs={13816},r=2,rwp=80205,sourceQuests={7141},g={
 s(129921,19106,{b=1,f=29,pvp=1,q=3}),
 s(129922,19107,{b=1,f=33,pvp=1,q=3}),
@@ -1708,11 +1708,11 @@ q(7425,{awp=10500,pvp=1,qgs={14187},r=2,rwp=11000,u=2}),
 q(7365,{awp=10500,pvp=1,qgs={14187},r=2,rwp=11000,u=2}),
 q(7366,{awp=10500,coords={
 [1459]={{50.9,30.8}}},pvp=1,qgs={13320},r=2,rwp=11000,u=2}),
-q(7141,{awp=11101,coords={
+q(7141,{coords={
 [1416]={{41,79.6}}},pvp=1,qgs={13816},r=2,rwp=80205,g={
 qo(1,{coords={
 [1459]={{47.2,86.9}}},providers={{"n",11946}},pvp=1})}}),
-q(7142,{awp=11101,coords={
+q(7142,{coords={
 [1416]={{63.6,60.4}}},pvp=1,qgs={13817},r=1,rwp=80205,g={
 qo(1,{coords={
 [1459]={{42.3,12.8}}},providers={{"n",11948}},pvp=1})}}),
@@ -1724,7 +1724,7 @@ q(7167,{coords={
 [1416]={{62.2,59}}},minReputation={729,42998},pvp=1,qgs={13840},r=1,sourceQuests={7166},g={
 qo(1,{providers={{"i",17908}},pvp=1}),
 i(17909,{b=1,f=53,pvp=1,q=4})}}),
-q(7082,{awp=11101,coords={
+q(7082,{coords={
 [1416]={{65.6,55.1}}},pvp=1,qgs={13776},r=1,rwp=80205}),
 q(7363,{awp=10500,coords={
 [1459]={{50.4,65.5}}},pvp=1,qgs={13154},r=1,rwp=11000,u=2}),
@@ -1735,9 +1735,9 @@ q(7381,{awp=10500,pvp=1,qgs={13840},r=1,repeatable=1,rwp=10800,sourceQuests={718
 i(18149,{b=1,pvp=1,q=2,u=2})}}),
 q(7261,{coords={
 [1455]={{32.8,64.6}}},isBreadcrumb=1,nextQuests={7162},pvp=1,qgs={13843},r=2,rwp=40003}),
-q(7102,{awp=11101,coords={
+q(7102,{coords={
 [1416]={{36.8,77.2}}},pvp=1,qgs={13777},r=2,rwp=80205}),
-q(7101,{awp=11101,coords={
+q(7101,{coords={
 [1416]={{65.6,55.1}}},pvp=1,qgs={13776},r=1,rwp=80205}),
 q(7422,{awp=10500,pvp=1,qgs={14186},r=1,rwp=11000,u=2}),
 q(7401,{awp=10500,pvp=1,qgs={13448},r=1,rwp=11000,u=2}),
@@ -1845,7 +1845,7 @@ i(17327,{b=1,pvp=1,q=1}),
 i(17306,{b=1,pvp=1,q=1}),
 i(17326,{b=1,pvp=1,q=1}),
 s(129191,18231,{f=10,pvp=1,q=0})}})}}),
-m(1461,{lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
+m(1461,{awp=11101,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(711,{minReputation={509,42000},pvp=1,r=2,u=12,g={
 crit(1899,{achID=907,id=1,pvp=1,r=2,u=12})}}),
@@ -2191,7 +2191,7 @@ i(21119,{b=1,f=53,lvl=28,pvp=1,q=3})}})}})}}),
 m(1956,{awp=20003,pvp=1,u=17,g={
 h(-47,{pvp=1,u=17,g={
 i(29024,{b=1,f=55,pvp=1,q=2,rwp=30303,u=17})}})}}),
-m(1460,{lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
+m(1460,{awp=11101,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(713,{maps={1440},minReputation={890,42000},pvp=1,r=2,u=12,g={
 crit(1901,{achID=907,id=1,pvp=1,r=2,u=12})}}),

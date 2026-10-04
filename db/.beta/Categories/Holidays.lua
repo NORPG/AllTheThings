@@ -282,7 +282,7 @@ q(29397,{awp=40001,coords={
 [27]={{53.6,38.6}}},e=7,isYearly=1,providers={{"i",33955}},qgs={24468},r=2,sourceQuests={11318},g={
 s(27941,56836,{e=7,f=2,spellID=101582})}}),
 q(29396,{awp=40001,coords={
-[1]={{42.6,17.6}}},e=7,isYearly=1,providers={{"i",33955}},qgs={24497},r=1,sourceQuests={11409},g={
+[1]={{42.6,17.6}}},e=7,isYearly=1,providers={{"i",33955}},qgs={24497,24510},r=1,sourceQuests={11409},g={
 s(27941,56836,{e=7,f=2,spellID=101582})}}),
 q(13932,{awp=30002,coords={
 [27]={{53.6,38.6}}},e=7,providers={{"i",33955}},qgs={24468},r=2,rwp=40001,sourceQuests={11318},u=2,g={
@@ -333,8 +333,8 @@ q(76579,{awp=100107,coords={
 [1]={{41.6,18.4}}},e=7,isYearly=1,lvl=10,qgs={155194},r=1}),
 q(76545,{awp=100107,coords={
 [2112]={{31.2,66.1},{54.4,60.2},{54.9,37.4},{55.1,37}}},e=7,isYearly=1,lvl=10,qgs={199261}}),
-q(11400,{awp=20202,e=7,lvl=10,maps={27},qss={34028},r=2,rwp=20403,u=2}),
-q(11419,{awp=20202,e=7,lvl=10,maps={1},qss={33978},r=1,rwp=20403,u=2}),
+q(11400,{awp=20202,e=7,lvl=10,maps={27},qss={33978},r=2,rwp=20403,u=2}),
+q(11419,{awp=20202,e=7,lvl=10,maps={1},qss={34028},r=1,rwp=20403,u=2}),
 q(29394,{awp=40200,coords={
 [27]={{53.6,38.6}}},e=7,isDaily=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11122}}),
 q(29393,{awp=40200,coords={
@@ -523,7 +523,7 @@ n(23710,{awp=20202,coords={
 flt(104,{e=7,g={
 i(37571,{awp=30002,b=1,cost={{"i",37829,200}},e=7,r=2}),
 i(37736,{b=1,cost={{"i",37829,200}},e=7,r=2,rwp=30002,u=2}),
-i(34028,{b=1,cost={{"i",37829,600}},e=7,lvl=10,r=2,rwp=20403,u=2}),
+i(33978,{b=1,cost={{"i",37829,600}},e=7,lvl=10,r=2,rwp=20403,u=2}),
 i(119209,{awp=60002,cost={{"i",37829,50}},e=7,f=55,questID=37247,spellID=176887})}}),
 h(-219,{e=7,g={
 i(122339,{awp=60100,b=2,cost={{"i",37829,300}},e=7,f=55,spellID=180735}),
@@ -552,7 +552,7 @@ n(24495,{awp=20202,coords={
 flt(104,{e=7,g={
 i(37599,{awp=30002,b=1,cost={{"i",37829,200}},e=7,r=1}),
 i(37737,{b=1,cost={{"i",37829,200}},e=7,r=1,rwp=30002,u=2}),
-i(33978,{b=1,cost={{"i",37829,600}},e=7,lvl=10,r=1,rwp=20403,u=2}),
+i(34028,{b=1,cost={{"i",37829,600}},e=7,lvl=10,r=1,rwp=20403,u=2}),
 i(119209,{awp=60002,cost={{"i",37829,50}},e=7,f=55,questID=37247,spellID=176887})}}),
 h(-219,{e=7,g={
 i(122339,{awp=60100,b=2,cost={{"i",37829,300}},e=7,f=55,spellID=180735}),
@@ -1288,15 +1288,15 @@ p(125,{b=1,cost={{"i",241215,1}},e=13,itemID=23002,npcID=16547,spellID=28738}),
 p(127,{b=1,cost={{"i",241215,1}},e=13,itemID=23015,npcID=16549,spellID=28740}),
 p(157,{b=1,cost={{"i",241215,1}},e=13,itemID=32617,npcID=23231,spellID=40613,g={
 crit(52727,{achID=275,e=13,id=2,providers={{"i",32617}}})}})}})}})}}),
-h(-37,{e=1,mapID=407,maps={408},g={
-h(-12,{awp=40300,e=1,g={
-ach(6019,{e=1,providers={{"s",102864}}}),
-ach(6028,{e=1}),
-ach(6029,{e=1}),
-ach(6027,{e=1}),
-ach(6032,{e=1,g={
+h(-37,{awp=10600,e=1,mapID=407,maps={408},g={
+h(-12,{e=1,g={
+ach(6019,{awp=40300,e=1,providers={{"s",102864}}}),
+ach(6028,{awp=40300,e=1}),
+ach(6029,{awp=40300,e=1}),
+ach(6027,{awp=40300,e=1}),
+ach(6032,{awp=40300,e=1,g={
 crit(18300,{achID=6032,e=1,id=1,questID=30562})}}),
-ach(6026,{e=1,g={
+ach(6026,{awp=40300,e=1,g={
 crit(7313,{achID=6026,e=1,id=4,providers={{"i",19223}}}),
 crit(6903,{achID=6026,e=1,id=8,providers={{"i",19305}}}),
 crit(4665,{achID=6026,e=1,id=13,providers={{"i",19222}}}),
@@ -1315,17 +1315,17 @@ crit(4678,{achID=6026,e=1,id=14,providers={{"i",19221}}}),
 crit(7957,{achID=6026,e=1,id=7,providers={{"i",33246}}}),
 crit(18252,{achID=6026,e=1,id=2,providers={{"i",44940}}}),
 crit(18609,{achID=6026,e=1,id=17,providers={{"i",44941}}})}}),
-ach(6025,{coords={
+ach(6025,{awp=40300,coords={
 [407]={{56.6,81.6}}},e=1,providers={{"n",55715}}}),
-ach(6020,{e=1}),
-ach(6030,{e=1,r=2,g={
+ach(6020,{awp=40300,e=1}),
+ach(6030,{awp=40300,e=1,r=2,g={
 crit(27726,{achID=6030,e=1,id=4,providers={{"i",74142},{"i",122119}},r=2}),
 crit(27724,{achID=6030,e=1,id=2,providers={{"i",74142},{"i",122119}},r=2}),
 crit(27725,{achID=6030,e=1,id=3,providers={{"i",74142},{"i",122119}},r=2}),
 crit(27720,{achID=6030,e=1,id=5,providers={{"i",74142},{"i",122119}},r=2}),
 crit(27718,{achID=6030,e=1,id=1,providers={{"i",74142},{"i",122119}},r=2}),
 crit(27727,{achID=6030,e=1,id=6,providers={{"i",74142},{"i",122119}},r=2})}}),
-ach(6031,{e=1,r=1,g={
+ach(6031,{awp=40300,e=1,r=1,g={
 crit(27718,{achID=6031,e=1,id=1,providers={{"i",74142},{"i",122119}},r=1}),
 crit(27719,{achID=6031,e=1,id=2,providers={{"i",74142},{"i",122119}},r=1}),
 crit(27720,{achID=6031,e=1,id=3,providers={{"i",74142},{"i",122119}},r=1}),
@@ -1346,9 +1346,9 @@ i(71716,{description="Can drop from instanced PvE content when a Darkmoon Advent
 i(71951,{description="Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=7}),
 i(71952,{description="Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=7}),
 i(71953,{description="Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=7})}}),
-h(-31,{awp=30002,e=1,g={
+h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),g={
-crit(8823,{achID=2336,id=6})}})}}),
+crit(8823,{achID=2336,awp=30002,id=6})}})}}),
 h(-560,{cost={{"i",71083,1}},e=1,g={
 h(-561,{awp=90200,coords={
 [407]={{51.2,74}}},crs={181097},e=1,g={
@@ -1800,7 +1800,7 @@ i(19182,{b=1,e=1,f=55,u=2})}}),
 q(7901,{coords={
 [407]={{51.6,81.8}}},e=1,qgs={14829},repeatable=1,rwp=40300,u=2,g={
 i(19182,{b=1,e=1,f=55,u=2})}}),
-q(7946,{coords={
+q(7946,{awp=11101,coords={
 [407]={{55.9,70.7}}},cost={{"i",11325,2}},description="You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",e=1,isMonthly=1,qgs={14871},g={
 i(19462,{b=1,e=1,f=101,spellID=23851,g={
 p(106,{b=1,e=1,itemID=19450,npcID=14878,spellID=23811})}})}}),
@@ -1844,15 +1844,15 @@ q(29458,{awp=40300,coords={
 cu(515,{e=1}),
 crit(18649,{achID=6028,e=1,id=2}),
 crit(18649,{achID=6029,e=1,id=2})}}),
-q(7905,{awp=40300,coords={
+q(7905,{coords={
 [84]={{62.2,73}}},e=1,qgs={54334},qis={19338},r=2,g={
-cu(515,{e=1}),
-i(71634,{b=1,e=1,spellID=100775})}}),
-q(7926,{awp=40300,coords={
+cu(515,{awp=40300,e=1}),
+i(71634,{awp=40300,b=1,e=1,spellID=100775})}}),
+q(7926,{coords={
 [85]={{48,62}},
 [110]={{74.6,82}}},e=1,qgs={55382},qis={19338},r=1,g={
-cu(515,{e=1}),
-i(71634,{b=1,e=1,spellID=100775})}}),
+cu(515,{awp=40300,e=1}),
+i(71634,{awp=40300,b=1,e=1,spellID=100775})}}),
 q(29457,{awp=40300,coords={
 [407]={{51.9,60.9}}},e=1,isMonthly=1,maxReputation={909,42000},providers={{"n",14847}},qss={71952},g={
 cu(515,{e=1}),
@@ -2013,8 +2013,8 @@ p(335,{awp=40300,b=1,e=1,itemID=73765,npcID=54487,spellID=103074}),
 toy(90899,{awp=50100,b=1,e=1}),
 p(339,{awp=40300,b=1,e=1,itemID=73905,npcID=55367,spellID=103549}),
 i(97987,{awp=50300,b=1,e=1,lvl=40,rwp=70003,u=2})}})}}),
-h(-56,{awp=100105,e=1,g={
-o(405068,{c={9},coords={
+h(-56,{e=1,g={
+o(405068,{awp=100105,c={9},coords={
 [407]={{44.8,78.8}}},description="Should you complete 'Fel Suspicions' (75639) without killing 'Twinkle', this will be available in the Darkmoon Faire Deathmatch.",e=1,sourceQuests={75539},g={
 cq(76747,{b=1,c={9},e=1,itemID=207294,lvl=11,spellID=416360})}})}}),
 h(-58,{e=1,g={
@@ -11312,8 +11312,8 @@ h(-586,{e=133889,maps={17,51},g={
 i(13756,{description="Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 20th March to 22nd September.",e=133889,lvl=15,spellID=1127})}}),
 h(-587,{e=133899,maps={17,51},g={
 i(13755,{description="Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 23nd September to 20th March.",e=133899,f=55,lvl=15,spellID=1127})}}),
-h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={50,210},g={
-h(-12,{awp=30002,e=6,g={
+h(-588,{awp=10700,description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={50,210},g={
+h(-12,{e=6,g={
 ach(306,{e=6,providers={{"i",19970},{"i",19979},{"i",50287}},requireSkill=356,g={
 crit(5666,{achID=1516,awp=30003,id=6})}})}}),
 h(-45,{e=6,g={
@@ -11332,7 +11332,7 @@ i(19979,{b=1,e=6,f=53,requireSkill=356,spellID=24347}),
 s(24667,50287,{awp=50100,b=1,e=6,f=2,loc=47,requireSkill=356,spellID=71436}),
 heir(50255,{awp=50100,e=6,requireSkill=356,rwp=60100,u=2}),
 heir(122529,{awp=60100,e=6,requireSkill=356}),
-crit(406,{achID=306,awp=30002,e=6,id=1})}}),
+crit(406,{achID=306,e=6,id=1})}}),
 q(8225,{coords={
 [210]={{41.4,73}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(7883,19969,{b=1,e=6,f=4,loc=47,lvl=15,requireSkill=356,spellID=7823})}}),
@@ -15810,7 +15810,9 @@ s(88898,150411,{b=1,e=242,f=3,spellID=243815}),
 i(150392,{b=1,e=242,f=52}),
 i(150404,{b=1,e=242,f=52}),
 i(150388,{b=1,e=242,f=53,spellID=243877}),
-i(150407,{b=1,e=242,f=51})}}),
+i(150407,{b=1,e=242,f=51}),
+prof(393,{e=242,g={
+i(20381,{e=242})}})}}),
 n(121913,{coords={
 [47]={{46.54,39.73}}},e=242,isRaid=1,g={
 s(88893,150405,{b=1,e=242,f=5,loc=40}),

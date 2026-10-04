@@ -546,6 +546,18 @@ s(158721,6910,{f=4,loc=46}),
 s(158722,6911,{f=5,loc=45}),
 s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
+inst(2959,{awp=16001,lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",["zone-text-areaID"]=16544,g={
+h(-46,{
+e(3310,{npcID=247032})}),
+e(3311,{npcID=247126}),
+e(3298,{npcID=245999}),
+e(3299,{npcID=246003}),
+e(3301,{npcID=14689}),
+e(3300,{npcID=246008}),
+e(3312,{npcID=246931}),
+e(3302,{npcID=246017}),
+e(3303,{npcID=246020,g={
+crit(116050,{achID=62032,id=1})}})}}),
 inst(2998,{awp=16001,coords={
 [1437]={{48.1,56.4}}},lore="Rogue Titan constructs, mist and flashing lights at a dig in the Wetlands. The Explorers' League is taking an interest.",lvl=23,["zone-text-areaID"]=17732,g={
 h(-45,{
@@ -1281,7 +1293,8 @@ q(386,{coords={
 [1433]={{21.2,46.6}}},lvl=22,qgs={859},r=2,g={
 qo(1,{providers={{"i",3630}}}),
 s(156262,1317,{f=28}),
-s(157286,3400,{f=25})}})}),
+s(157286,3400,{f=25}),
+s(304881,270027,{awp=16001,f=24})}})}),
 h(-63,{
 i(1076,{f=52}),
 i(274092,{awp=16001,f=36})}),

@@ -1557,7 +1557,8 @@ o(180166,{learnedAt=280,u=2}),
 o(180165,{learnedAt=210,u=2}),
 o(180164,{learnedAt=230,u=2})}}),
 prof(186,{u=2,g={
-i(19774,{providers={{"o",180215}},u=2})}}),
+i(19774,{providers={{"o",180215}},u=2}),
+o(180215,{learnedAt=275,u=2})}}),
 prof(393,{u=2,g={
 i(19768,{crs={11360,11361,15067},q=1,u=2}),
 i(19767,{crs={11368},q=1,u=2})}}),
@@ -5011,8 +5012,7 @@ q(1109,{coords={
 qo(1,{providers={{"i",5801}},u=2})}}),
 q(26901,{awp=40003,qgs={44402},g={
 qo(1,{providers={{"i",5801}}})}}),
-q(1100,{coords={
-[1441]={{30,24}}},lvl=29,providers={{"o",19861}},qis={5790},qss={5791},r=2,rwp=40003,u=2}),
+q(1100,{lvl=29,qis={5790},qss={5791},r=2,rwp=40003,u=2}),
 q(1142,{coords={
 [1457]={{69.4,67.6}}},lvl=25,qgs={4510},r=2,rwp=40003,u=2,g={
 qo(1,{description="Drops from any creature in the Dungeon.",providers={{"i",5825}},u=2}),

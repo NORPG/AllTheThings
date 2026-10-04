@@ -3751,7 +3751,7 @@ h(-12,{awp=50004,g={
 ach(8327,{providers={{"n",71030}}}),
 ach(8295,{providers={{"n",71030}}}),
 ach(8294,{providers={{"n",71030}}})}})}}),
-h(-315,{maps={483},g={
+h(-315,{maps={416},g={
 h(-12,{
 ach(7526,{providers={{"n",64900}},r=2}),
 ach(7529,{providers={{"n",58777}},r=1}),
@@ -5977,7 +5977,7 @@ n(69769,{coords={
 [418]={{38.8,67.6}}},g={
 mnt(138425,{b=1,itemID=94229,lvl=10}),
 crit(22732,{achID=8078})}})}})}}),
-x(6,{awp=70003,g={
+x(6,{awp=60003,g={
 h(-419,{awp=60002,maps={480},g={
 h(-12,{
 ach(9572),
@@ -6003,7 +6003,7 @@ ach(9583,{
 title(216)}),
 ach(9590),
 ach(9597)})}}),
-h(-130,{awp=60003,g={
+h(-130,{
 h(-12,{maps={582,590},g={
 ach(9130),
 ach(9131),
@@ -10655,7 +10655,7 @@ r(181415,{b=1,cost={{"i",110609,60}},itemID=122547,requireSkill=165,rwp=60200,u=
 r(187513,{awp=60200,b=1,collectible=false,cost={{"i",110609,60}},itemID=127740,requireSkill=165,u=5}),
 r(182121,{b=1,cost={{"i",110609,60}},itemID=122715,requireSkill=165,skillID=2527})}})}}),
 m(590,{description="Frostwall is the Horde Garrison, located in Frostfire Ridge. A fully-upgraded Frostwall garrison is considered to be a fortress.",icon=1046795,isRaid=1,maps={585,586,587},petBattleLvl=25}),
-m(582,{description="Lunarfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunarfall garrison is considered to be a castle.",icon=1046782,isRaid=1,maps={579,580,581},petBattleLvl=25})}}),
+m(582,{description="Lunarfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunarfall garrison is considered to be a castle.",icon=1046782,isRaid=1,maps={579,580,581},petBattleLvl=25})}),
 h(-220,{icon=1097305,isRaid=1,maps={525,534,535,539,550,573,582,590,593,596,597,598,599,600,601,602,606,607,608,609,610,611,612,613,614,615,620,621,661,662,663,664,665,666,667,668,669,670},title="Darkness Incarnate",g={
 q(35988,{awp=60002,coords={
 [582]={{46,50.6}},
@@ -10706,27 +10706,27 @@ i(115981,{b=1,crs={77404,77428,78237,78238,78491,78714,78948,79015},spellID=1706
 q(40235,{awp=60202,coords={
 [534]={{57,58.6},{59.6,46.2}}},cost={{"c",823,14958}},isWeekly=1,lvl=40,qgs={99180},rwp=70003,sourceQuests={35998},u=2,g={
 i(115981,{b=1,spellID=170648,u=2})}}),
-q(36005,{awp=60003,coords={
+q(36005,{coords={
 [535]={{85.2,31.6}}},lvl=40,qgs={83823},rwp=70003,sourceQuests={35997,35998},u=2}),
-q(36006,{awp=60003,coords={
+q(36006,{coords={
 [535]={{84.8,31.4}}},lvl=40,qgs={83929},rwp=70003,sourceQuests={36005},u=2,g={
 ach(9641,{u=2})}}),
-q(36007,{awp=60003,coords={
+q(36007,{coords={
 [535]={{85.2,31.6}}},lvl=40,qgs={83823},rwp=70003,sourceQuests={36006},u=2,g={
 i(118302,{b=1,f=52,lvl=40,spellID=177163,u=2}),
 i(118303,{b=1,f=52,lvl=40,spellID=177163,u=2}),
 i(118300,{b=1,f=52,lvl=40,spellID=177163,u=2}),
 i(118304,{b=1,f=52,lvl=40,spellID=177163,u=2}),
 i(118301,{b=1,f=52,lvl=40,spellID=177163,u=2})}}),
-q(36013,{awp=60003,coords={
+q(36013,{coords={
 [535]={{85.2,31.6}}},lvl=40,qgs={83823},rwp=70003,sourceQuests={36007},u=2,g={
 ach(9642,{u=2}),
 crit(26488,{achID=9642,u=2})}}),
-q(36009,{awp=60003,coords={
+q(36009,{coords={
 [535]={{85.2,31.6}}},lvl=40,qgs={83823},rwp=70003,sourceQuests={36007},u=2}),
-q(36010,{awp=60003,coords={
+q(36010,{coords={
 [535]={{85.2,31.6}}},lvl=40,qgs={83823},rwp=70003,sourceQuests={36007},u=2}),
-q(36012,{awp=60003,coords={
+q(36012,{coords={
 [535]={{85.2,31.6}}},lvl=40,qgs={83823},rwp=70003,sourceQuests={36007},u=2}),
 q(40237,{awp=60202,coords={
 [534]={{58,58.6},{59.8,46.2}}},cost={{"c",823,20000}},isWeekly=1,lvl=40,qgs={99183},rwp=70003,sourceQuests={36013},u=2,g={
@@ -10742,7 +10742,7 @@ i(118305,{b=1,f=52,lvl=40,spellID=177171,u=2}),
 i(118309,{b=1,f=52,lvl=40,spellID=177171,u=2}),
 i(118306,{b=1,f=52,lvl=40,spellID=177171,u=2}),
 i(118307,{b=1,f=52,lvl=40,spellID=177171,u=2})}}),
-q(36018,{awp=60003,coords={
+q(36018,{coords={
 [535]={{85.2,31.6}}},isBreadcrumb=1,lvl=40,nextQuests={36017},qgs={83823},rwp=70003,sourceQuests={36014,36016},u=2}),
 q(39023,{awp=60200,isBreadcrumb=1,lvl=40,nextQuests={36017},rwp=70003,sourceQuests={36014,36016},u=2}),
 q(36017,{awp=60100,coords={
@@ -11003,8 +11003,8 @@ i(118776,{b=1,f=53,lvl=35,spellID=165825}),
 s(66660,118771,{b=1,f=3,lvl=35})}})}),
 h(-63,{
 p(1563,{description="Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",itemID=118675,npcID=7546,spellID=10699})})}})}}),
-x(7,{awp=80001,g={
-h(-214,{awp=70003,description="\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",g={
+x(7,{awp=70003,g={
+h(-214,{description="\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",g={
 cl(1,{
 ah(128910,{type="i",g={
 s(73752,128910,{b=1,c={1},f=26,spellID=214870}),
@@ -13036,7 +13036,7 @@ i(144249,{b=1,c={1,2,6,10,11,12},f=53,lvl=40,spellID=235169}),
 i(154172,{b=1,f=53,lvl=45,spellID=256817}),
 i(144259,{b=1,f=53,lvl=40,spellID=235991}),
 i(144258,{b=1,c={2,5,7,10,11,13},f=53,lvl=40,spellID=235966})}),
-h(-138,{awp=70003,icon=1408997,g={
+h(-138,{icon=1408997,g={
 h(-12,{maps={24,626,647,648,695,702,709,717,720,721,726,734,735,739,747},g={
 ach(11298,{
 crit(5212,{achID=11298,description="Rewarded by a quest in your class's Order Hall campaign.",sourceQuests={44213,44217,44232,44233,44240,44249,44250,44251,44252,44253,44254,44255}}),
@@ -43000,7 +43000,8 @@ flt(56,{
 i(251283)}),
 i(273000,{awp=120100}),
 i(269006,{f=55}),
-i(269007,{f=55})}}),
+i(269007,{f=55}),
+i(279574,{awp=120100,f=55})}}),
 h(-45,{
 q(95114,{coords={
 [2393]={{47.6,71.1}},

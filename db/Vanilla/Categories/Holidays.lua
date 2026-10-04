@@ -54,7 +54,7 @@ qo(1,{coords={
 q(915,{awp=10400,e=13,isYearly=1,lvl=10,maps={1454},providers={{"n",14444}},qss={18597},r=1,rwp=40001,sourceQuests={910,911,1800},g={
 qo(1,{coords={
 [1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}})}}),
-h(-37,{e=1,maps={1412,1429},g={
+h(-37,{awp=10600,e=1,maps={1412,1429},g={
 h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerTierTurnIn=100 local tierOneMaxRep=500 if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep)else	local tierTwoMaxRep=1050 if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep)else	local tierThreeMaxRep=1700 if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep)else	local tierFourMaxRep=2500 if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep)else	local tierFiveMaxRep=5001 if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep)end	end	end	end	end	local repPerDeckTurnIn=150 addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000)end	end,g={
 crit(8823,{achID=2336,id=8,u=13})}})}}),
@@ -199,7 +199,7 @@ q(7901,{coords={
 [1412]={{37.5,39.6}},
 [1429]={{40.2,69.7}}},cost={{"i",4582,5}},e=1,lvl=20,maxReputation={909,1700},qgs={14829},repeatable=1,rwp=40300,g={
 i(19182,{b=1,e=1,f=55,q=1})}}),
-q(7946,{coords={
+q(7946,{awp=11101,coords={
 [1412]={{35.9,35.3}},
 [1429]={{43.3,70.3}}},cost={{"i",11325,2}},description="You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",e=1,isMonthly=1,lvl=10,qgs={14871},g={
 i(19462,{b=1,e=1,q=1,g={
@@ -1212,7 +1212,7 @@ h(-586,{e=133889,maps={1425,1434,1444,1446,1447},g={
 i(13756,{description="Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",e=133889,f=55,lvl=35,q=1})}}),
 h(-587,{e=133899,maps={1425,1434,1444,1446,1447},g={
 i(13755,{description="Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",e=133899,f=55,lvl=35,q=1})}}),
-h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={1434},g={
+h(-588,{awp=10700,description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={1434},g={
 h(-12,{e=6,g={
 ach(306,{e=6,providers={{"i",19970},{"i",19979}},requireSkill=356,g={
 crit(12910,{achID=306,e=6,id=1,questID=24803,u=1})}})}}),

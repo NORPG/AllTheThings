@@ -129,7 +129,7 @@ q(29397,{awp=40001,coords={
 [1426]={{53.6,38.6}}},e=7,isYearly=1,providers={{"i",33955}},qgs={24468},r=2,sourceQuests={11318},g={
 s(204780,56836,{b=1,e=7,f=2,q=3})}}),
 q(29396,{awp=40001,coords={
-[1411]={{42.6,17.6}}},e=7,isYearly=1,providers={{"i",33955}},qgs={24497},r=1,sourceQuests={11409},g={
+[1411]={{42.6,17.6}}},e=7,isYearly=1,providers={{"i",33955}},qgs={24497,24510},r=1,sourceQuests={11409},g={
 s(204780,56836,{b=1,e=7,f=2,q=3})}}),
 q(13932,{awp=30002,coords={
 [1426]={{53.6,38.6}}},e=7,providers={{"i",33955}},qgs={24468},r=2,rwp=40001,sourceQuests={11318},u=2,g={
@@ -139,15 +139,31 @@ q(13931,{awp=30002,coords={
 s(145411,37892,{b=1,e=7,f=2,q=3,u=2})}}),
 q(11293,{altQuests={11294},awp=20202,coords={
 [1426]={{56,38}}},e=7,isDaily=1,maps={1455},qgs={23627},qis={33306},r=2,rwp=110200,sourceQuests={11318},g={
+qo(1,{e=7,providers={{"i",33306}}}),
+qo(2,{e=7,providers={{"i",33306}}}),
+qo(3,{e=7,providers={{"i",33306}}}),
+qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11407,{altQuests={11408},awp=20202,coords={
 [1411]={{40.5,18.3}}},e=7,isDaily=1,maps={1454},qgs={24498},qis={33306},r=1,rwp=110200,sourceQuests={11409},g={
+qo(1,{e=7,providers={{"i",33306}}}),
+qo(2,{e=7,providers={{"i",33306}}}),
+qo(3,{e=7,providers={{"i",33306}}}),
+qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11294,{altQuests={11293},awp=20202,coords={
 [1426]={{56.6,36.8}}},e=7,isDaily=1,maps={1455},qgs={23628},qis={33306},r=2,rwp=110200,sourceQuests={11318},g={
+qo(1,{e=7,providers={{"i",33306}}}),
+qo(2,{e=7,providers={{"i",33306}}}),
+qo(3,{e=7,providers={{"i",33306}}}),
+qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11408,{altQuests={11407},awp=20202,coords={
 [1411]={{40.5,18.3}}},e=7,isDaily=1,maps={1454},qgs={24499},qis={33306},r=1,rwp=110200,sourceQuests={11409},g={
+qo(1,{e=7,providers={{"i",33306}}}),
+qo(2,{e=7,providers={{"i",33306}}}),
+qo(3,{e=7,providers={{"i",33306}}}),
+qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(11441,{altQuests={11442},awp=20202,e=7,isYearly=1,maps={1453,1455,1457,1947},qgs={18927,19148,19171,19172,19173,20102},r=2,g={
 i(33030,{e=7,f=55,q=1}),
@@ -157,8 +173,8 @@ q(11446,{altQuests={11447},awp=20202,e=7,isYearly=1,maps={120,125,210,1411,1413,
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(34020,{e=7,f=55,lvl=25,q=1}),
 i(34017,{e=7,f=55,q=1})}}),
-q(11400,{awp=20202,e=7,lvl=40,maps={1426},qss={34028},r=2,rwp=20403,u=2}),
-q(11419,{awp=20202,e=7,lvl=40,maps={1411},qss={33978},r=1,rwp=20403,u=2}),
+q(11400,{awp=20202,e=7,lvl=40,maps={1426},qss={33978},r=2,rwp=20403,u=2}),
+q(11419,{awp=20202,e=7,lvl=40,maps={1411},qss={34028},r=1,rwp=20403,u=2}),
 q(29394,{awp=40200,coords={
 [1426]={{53.6,38.6}}},e=7,isDaily=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11122}}),
 q(29393,{awp=40200,coords={
@@ -197,9 +213,15 @@ q(12492,{awp=20202,e=7,isYearly=1,lvl=75,qss={38281},r=1,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(12062,{awp=20403,e=7,isDaily=1,lvl=65,maps={242},qgs={26719},rwp=30303,sourceQuests={12318},u=2}),
 q(11318,{awp=20202,coords={
-[1426]={{53.6,38.6}}},e=7,isYearly=1,qgs={23558},qis={33306},r=2,sourceQuests={11441,11442}}),
+[1426]={{53.6,38.6}}},e=7,isYearly=1,qgs={23558},qis={33306},r=2,sourceQuests={11441,11442},g={
+qo(1,{e=7,providers={{"i",33306}}}),
+qo(2,{e=7,providers={{"i",33306}}}),
+qo(3,{e=7,providers={{"i",33306}}})}}),
 q(11409,{awp=20202,coords={
-[1411]={{42.6,17.6}}},e=7,isYearly=1,qgs={24497},qis={33306},r=1,sourceQuests={11446,11447}}),
+[1411]={{42.6,17.6}}},e=7,isYearly=1,qgs={24497},qis={33306},r=1,sourceQuests={11446,11447},g={
+qo(1,{e=7,providers={{"i",33306}}}),
+qo(2,{e=7,providers={{"i",33306}}}),
+qo(3,{e=7,providers={{"i",33306}}})}}),
 q(11118,{awp=30002,coords={
 [1426]={{55.2,37.8}}},e=7,isYearly=1,maps={1429,1438,1457,1943,1947,1955},qgs={23486},r=2,g={
 qo(1,{crs={23528},e=7,providers={{"i",32960}}}),
@@ -332,9 +354,9 @@ i(37750,{awp=20403,b=1,cost={{"i",37829,2}},e=7,f=55,lvl=20,q=1}),
 i(39476,{awp=20403,b=1,cost={{"i",37829,5}},e=7,f=55,lvl=20,q=1}),
 i(37816,{awp=20403,b=1,cost={{"i",37829,20}},e=7,f=106,lvl=20,q=2})}}),
 flt(104,{e=7,g={
-i(37571,{b=1,cost={{"i",37829,200}},e=7,q=1,r=2,u=1}),
+i(37571,{awp=20501,b=1,cost={{"i",37829,200}},e=7,q=1,r=2}),
 i(37736,{b=1,cost={{"i",37829,200}},e=7,q=1,r=2}),
-i(34028,{b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=2,rwp=20403,u=2})}}),
+i(33978,{b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=2,rwp=20403,u=2})}}),
 flt(102,{e=7,g={
 toy(71137,{awp=40200,b=1,cost={{"i",37829,200}},e=7,q=3}),
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
@@ -368,7 +390,7 @@ i(37816,{awp=20403,b=1,cost={{"i",37829,20}},e=7,f=106,lvl=20,q=2})}}),
 flt(104,{e=7,g={
 i(37599,{awp=20501,b=1,cost={{"i",37829,200}},e=7,q=1,r=1}),
 i(37737,{b=1,cost={{"i",37829,200}},e=7,q=1,r=1}),
-i(33978,{b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=20403,u=2})}}),
+i(34028,{b=1,cost={{"i",37829,600}},e=7,lvl=40,q=1,r=1,rwp=20403,u=2})}}),
 flt(102,{e=7,g={
 toy(71137,{awp=40200,b=1,cost={{"i",37829,200}},e=7,q=3}),
 toy(33927,{awp=20200,b=1,cost={{"i",37829,100}},e=7,q=3})}})}}),
@@ -655,14 +677,14 @@ n(52358,{coords={
 [1453]={{56.31,68.45},{56.67,66.57},{56.75,70.04},{57.19,71.63},{57.57,65.42},{57.63,73.23},{58.07,74.83},{58.44,64.31},{58.51,76.42},{59.12,77.98},{59.44,63.31},{60.44,62.44},{61.21,61.78},{62.31,61.34},{63.44,61.05},{64.62,61.54},{65.63,62.99},{66.61,64.43}}},e=13,r=2,g={
 toy(69895,{b=1,e=13,q=1}),
 toy(69896,{b=1,e=13,q=1})}})}})}}),
-h(-37,{e=1,mapID=407,maps={408},g={
-h(-12,{awp=40300,e=1,g={
-ach(6019,{e=1,providers={{"s",102864}}}),
-ach(6028,{e=1}),
-ach(6029,{e=1}),
-ach(6027,{e=1}),
-ach(6032,{e=1}),
-ach(6026,{e=1,g={
+h(-37,{awp=10600,e=1,mapID=407,maps={408},g={
+h(-12,{e=1,g={
+ach(6019,{awp=40300,e=1,providers={{"s",102864}}}),
+ach(6028,{awp=40300,e=1}),
+ach(6029,{awp=40300,e=1}),
+ach(6027,{awp=40300,e=1}),
+ach(6032,{awp=40300,e=1}),
+ach(6026,{awp=40300,e=1,g={
 crit(7313,{achID=6026,e=1,id=1,providers={{"i",19223}}}),
 crit(6903,{achID=6026,e=1,id=1,providers={{"i",19305}}}),
 crit(4665,{achID=6026,e=1,id=1,providers={{"i",19222}}}),
@@ -681,11 +703,11 @@ crit(4678,{achID=6026,e=1,id=1,providers={{"i",19221}}}),
 crit(7957,{achID=6026,e=1,id=1,providers={{"i",33246}}}),
 crit(18252,{achID=6026,e=1,id=1,providers={{"i",44940}}}),
 crit(18609,{achID=6026,e=1,id=1,providers={{"i",44941}}})}}),
-ach(6025,{coords={
+ach(6025,{awp=40300,coords={
 [407]={{56.6,81.6}}},e=1,providers={{"n",55715}}}),
-ach(6020,{e=1}),
-ach(6030,{e=1,r=2}),
-ach(6031,{e=1,r=1})}}),
+ach(6020,{awp=40300,e=1}),
+ach(6030,{awp=40300,e=1,r=2}),
+ach(6031,{awp=40300,e=1,r=1})}}),
 h(-27,{awp=40300,description="The following can drop from instanced content when a Darkmoon Adventurer's Guide is in your bags or purchased from the auction house.",e=1,providers={{"i",71634}},g={
 i(71715,{description="Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=85,q=3}),
 i(71635,{description="Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=15,q=3}),
@@ -696,18 +718,18 @@ i(71716,{description="Can drop from instanced PvE content when a Darkmoon Advent
 i(71951,{description="Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=15,q=3}),
 i(71952,{description="Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=15,q=3}),
 i(71953,{description="Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",e=1,lvl=15,q=3})}}),
-h(-31,{awp=30002,e=1,g={
+h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),g={
-crit(8823,{achID=2336,id=8,u=13})}})}}),
-h(-560,{awp=40300,cost={{"i",71083,1}},e=1,g={
-h(-563,{coords={
+crit(8823,{achID=2336,awp=30002,id=8,u=13})}})}}),
+h(-560,{cost={{"i",71083,1}},e=1,g={
+h(-563,{awp=40300,coords={
 [407]={{49.6,60.8}}},crs={14841},e=1,g={
 h(-12,{e=1,g={
 ach(6022,{e=1})}}),
 q(29438,{coords={
 [407]={{49.6,60.8}}},e=1,isDaily=1,maxReputation={909,42000},qgs={14841},g={
 crit(18236,{achID=6020,e=1,id=1})}})}}),
-h(-564,{coords={
+h(-564,{awp=40300,coords={
 [407]={{53.2,54.3}}},crs={54601},e=1,g={
 q(29463,{coords={
 [407]={{53.2,54.3}}},e=1,isDaily=1,maxReputation={909,42000},qgs={54601},g={
@@ -957,7 +979,7 @@ i(19182,{b=1,e=1,f=55,q=1,u=2})}}),
 q(7901,{coords={
 [407]={{51.6,81.8}}},e=1,qgs={14829},repeatable=1,rwp=40300,u=2,g={
 i(19182,{b=1,e=1,f=55,q=1,u=2})}}),
-q(7946,{coords={
+q(7946,{awp=11101,coords={
 [407]={{55.9,70.7}}},cost={{"i",11325,2}},description="You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",e=1,isMonthly=1,lvl=10,qgs={14871},g={
 i(19462,{b=1,e=1,f=101,q=1,g={
 p(106,{b=1,e=1,itemID=19450,npcID=14878,petTypeID=9,q=1,spellID=23811})}})}}),
@@ -987,13 +1009,13 @@ q(29458,{awp=40300,coords={
 [407]={{51.9,60.9}}},e=1,isMonthly=1,maxReputation={909,42000},providers={{"n",14847}},qss={71953},g={
 crit(18649,{achID=6028,e=1,id=1}),
 crit(18649,{achID=6029,e=1,id=1})}}),
-q(7905,{awp=40300,coords={
+q(7905,{coords={
 [1453]={{62.2,73}}},e=1,qgs={54334},qis={19338},r=2,g={
-i(71634,{b=1,e=1,q=1})}}),
-q(7926,{awp=40300,coords={
+i(71634,{awp=40300,b=1,e=1,q=1})}}),
+q(7926,{coords={
 [1454]={{48,62}},
 [1954]={{74.6,82}}},e=1,qgs={55382},qis={19338},r=1,g={
-i(71634,{b=1,e=1,q=1})}}),
+i(71634,{awp=40300,b=1,e=1,q=1})}}),
 q(29457,{awp=40300,coords={
 [407]={{51.9,60.9}}},e=1,isMonthly=1,maxReputation={909,42000},providers={{"n",14847}},qss={71952},g={
 crit(18651,{achID=6028,e=1,id=1}),
@@ -1045,10 +1067,10 @@ crit(18234,{achID=6020,e=1,id=1})}}),
 q(29434,{awp=40300,coords={
 [407]={{50.7,65.1}}},e=1,isDaily=1,qgs={54605},g={
 crit(18237,{achID=6020,e=1,id=1})}})}}),
-h(-303,{awp=40300,e=1,pvp=1,u=42,g={
+h(-303,{e=1,pvp=1,u=42,g={
 o(209620,{coords={
 [407]={{44.6,78.9}}},e=1,pvp=1,u=42,g={
-i(74034,{b=1,e=1,f=53,lvl=85,pvp=1,q=3,u=42})}})}}),
+i(74034,{awp=40300,b=1,e=1,f=53,lvl=85,pvp=1,q=3,u=42})}})}}),
 h(-47,{e=1,g={
 i(19422,{b=1,coords={
 [407]={{53.6,75.6}}},crs={14822},description="This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.\n\nSayge offers a buff if you answer his questions correctly.\n\n1:1 +10% Damage\n1:2  +25 Magical Resistance\n1:3 +10% Armor\n2:1 +10% Spirit\n2:2 +10% Int\n2:3  +25 Magical Resistance\n3:1 +10% Stamina\n3:2 +10% Strength\n3:3 +10% Agility\n4:1 +10% Int\n4:2 +10% Spirit\n4:3 +10% Armor",e=1,q=1,repeatable=1,g={
@@ -5524,8 +5546,8 @@ h(-586,{e=133889,maps={1419,1435},g={
 i(13756,{description="Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 20th March to 22nd September.",e=133889,lvl=35,q=1})}}),
 h(-587,{e=133899,maps={1419,1435},g={
 i(13755,{description="Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 23nd September to 20th March.",e=133899,f=55,lvl=35,q=1})}}),
-h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={210,1434},g={
-h(-12,{awp=30002,e=6,g={
+h(-588,{awp=10700,description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={210,1434},g={
+h(-12,{e=6,g={
 ach(306,{e=6,providers={{"i",19970},{"i",19979}},requireSkill=356,g={
 crit(5666,{achID=1516,awp=30003,id=1,u=30})}})}}),
 h(-45,{e=6,g={
@@ -5541,7 +5563,7 @@ q(8193,{coords={
 [210]={{41.4,73}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(130584,19970,{b=1,e=6,f=57,learnedAt=300,q=3,requireSkill=356}),
 i(19979,{b=1,e=6,f=53,q=3,requireSkill=356}),
-crit(406,{achID=306,awp=30002,e=161,id=1,rwp=50004,u=30})}}),
+crit(406,{achID=306,e=161,id=1,rwp=50004,u=30})}}),
 q(8225,{coords={
 [210]={{41.4,73}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(130583,19969,{b=1,e=6,f=4,loc=47,lvl=35,q=2,requireSkill=356})}}),

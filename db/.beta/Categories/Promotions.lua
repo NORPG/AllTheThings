@@ -268,7 +268,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -283,11 +283,11 @@ s(287328,238035,{f=2,loc=40}),
 s(287329,238038,{f=2,loc=46}),
 s(287331,238047,{f=2,loc=41}),
 s(287294,238025,{f=2,loc=42})}})}})}}),
-x(6,{awp=70003,description="These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",u=3,g={
+x(6,{awp=60003,description="These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",u=3,g={
 p(1386,{awp=50407,itemID=109014,npcID=77137,rwp=60202,spellID=155748,u=2,g={
 crit(24600,{achID=8917,awp=100100,id=3,u=3})}}),
 mnt(155741,{awp=50407,b=1,itemID=109013,lvl=10,rwp=60202,u=2})}}),
-x(7,{awp=80001,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
+x(7,{awp=70003,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(10320,{awp=60202,providers={{"i",128425}},rwp=70305,u=2}),
 ach(10321,{awp=60202,rwp=70305,u=2}),
 mnt(189998,{awp=60202,b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
@@ -1619,163 +1619,6 @@ o(405584,{coords={
 [2025]={{49.2,58.3}}},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={
 [2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-h(-782,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(471440,{awp=50502,description="Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",rwp=50510,u=2})),
-h(-691,{awp=50500,rwp=50510,u=2,g={
-i(265944,{u=2}),
-toy(79769,{b=1,u=2}),
-p(333,{b=1,itemID=72134,npcID=54730,spellID=102317,u=2}),
-mnt(107516,{b=1,itemID=76889,lvl=10,r=2,u=2}),
-mnt(107517,{b=1,itemID=76902,lvl=10,r=1,u=2}),
-toy(72159,{b=1,u=2}),
-p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
-crit(34643,{achID=6185,id=3,u=2})}}),
-i(264986,{u=2}),
-mnt(107203,{b=1,itemID=76755,lvl=10,u=2})}}),
-h(-778,{awp=50500,rwp=50510,u=2,g={
-mnt(51412,{b=1,itemID=38576,lvl=10,u=2}),
-toy(49704,{b=1,u=2}),
-mnt(88990,{b=1,itemID=63125,lvl=10,sourceAchievements={4988},u=2}),
-i(226812,{u=2}),
-mnt(110051,{b=1,itemID=78924,lvl=10,u=2}),
-p(4907,{b=1,itemID=257515,npcID=254356,spellID=1261676,u=2}),
-mnt(30174,{b=1,itemID=23720,u=2}),
-s(18370,38312,{b=1,f=9,u=2})}}),
-h(-784,{awp=50500,rwp=50510,u=2,g={
-i(248263,{u=2}),
-mnt(155741,{b=1,itemID=109013,lvl=10,u=2}),
-mnt(463045,{u=2}),
-i(258883,{u=2}),
-i(231312,{u=2}),
-i(266129,{u=2}),
-i(267301,{u=2})}}),
-h(-760,{awp=50500,rwp=50510,u=2,g={
-i(267279,{u=2}),
-i(268924,{u=2}),
-mnt(1258573,{itemID=254735,u=2,g={
-toy(258136,{u=2})}})}}),
-h(-776,{awp=50500,rwp=50510,u=2,g={
-i(272312,{u=2}),
-s(21629,45037,{b=1,f=10,spellID=63604,u=2}),
-mnt(457485,{u=2}),
-i(273849,{description="1.25% chance for any of the following:",u=2,g={
-p(5060,{itemID=273021,npcID=264163,spellID=1291667,u=2}),
-mnt(1285897,{itemID=269640,u=2}),
-mnt(1284679,{itemID=269012,u=2}),
-mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
-i(269590,{u=2}),
-p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
-crit(34633,{achID=665,id=3,rwp=30002,u=2})}}),
-p(3024,{b=1,customCollect={"SL_COV_VEN"},itemID=183107,npcID=173842,spellID=340710,u=2}),
-mnt(1267077,{itemID=262344,u=2}),
-mnt(1266982,{itemID=269659,u=2}),
-p(5042,{itemID=271652,npcID=263232,spellID=1289296,u=2}),
-h(-771,{u=2,g={
-mnt(423869,{u=2}),
-mnt(457485,{u=2}),
-mnt(121820,{b=1,itemID=83086,lvl=10,u=2}),
-mnt(1267077,{itemID=262344,u=2}),
-mnt(1266982,{itemID=269659,u=2})}}),
-h(-772,{u=2,g={
-mnt(74856,{itemID=54069,lvl=10,u=2}),
-i(272312,{u=2}),
-i(201699,{u=2}),
-mnt(463045,{u=2}),
-i(207097,{u=2}),
-mnt(107516,{b=1,itemID=76889,lvl=10,r=2,u=2}),
-mnt(107517,{b=1,itemID=76902,lvl=10,r=1,u=2})}}),
-h(-773,{u=2,g={
-toy(49704,{b=1,u=2}),
-s(21629,45037,{b=1,f=10,spellID=63604,u=2}),
-toy(33223,{b=1,u=2}),
-i(209945,{u=2}),
-p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
-crit(34643,{achID=6185,id=3,u=2})}}),
-p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
-crit(34633,{achID=665,id=3,rwp=30002,u=2})}}),
-toy(34499,{b=1,u=2}),
-p(242,{b=1,itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
-crit(23598,{achID=8397,id=23,pb=1})}}),
-p(5042,{itemID=271652,npcID=263232,spellID=1289296,u=2})}}),
-h(-774,{u=2,g={
-toy(38301,{b=1,u=2}),
-p(247,{b=1,itemID=49664,npcID=36910,spellID=69539,u=2}),
-toy(33219,{b=1,u=2}),
-toy(67097,{b=1,u=2}),
-p(130,{b=1,itemID=23713,npcID=17255,spellID=30156,u=2}),
-toy(32542,{b=1,u=2}),
-toy(54212,{b=1,u=2}),
-i(23714,{b=1,f=53,spellID=69773,u=2}),
-toy(32566,{b=1,u=2}),
-p(171,{b=1,itemID=34519,npcID=25147,spellID=45175,u=2}),
-toy(72161,{b=1,u=2})}})}}),
-h(-777,{awp=50500,rwp=50510,u=2,g={
-p(1248,{b=1,itemID=98550,npcID=71488,spellID=142880,u=2}),
-s(105400,170206,{f=2,loc=40,u=2}),
-i(273849,{description="1.25% chance for any of the following:",u=2,g={
-p(5060,{itemID=273021,npcID=264163,spellID=1291667,u=2}),
-mnt(1285897,{itemID=269640,u=2}),
-mnt(1284679,{itemID=269012,u=2}),
-mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
-i(275818,{f=101,spellID=1297823,u=2}),
-mnt(1291315,{itemID=272920,u=2})}}),
-h(-767,{awp=50500,rwp=50510,u=2,g={
-p(3326,{b=1,itemID=193837,npcID=189655,spellID=375473,u=2}),
-s(183067,200882,{f=28,lvl=10,u=2}),
-p(5067,{itemID=274925,npcID=265748,spellID=1295658,u=2}),
-p(4897,{itemID=252194,npcID=251819,spellID=1254207,u=2}),
-toy(198428,{b=1,u=2}),
-mnt(1293028,{itemID=274037,u=2}),
-toy(274730,{u=2}),
-i(273849,{description="1.25% chance for any of the following:",u=2,g={
-p(5060,{itemID=273021,npcID=264163,spellID=1291667,u=2}),
-mnt(1285897,{itemID=269640,u=2}),
-mnt(1284679,{itemID=269012,u=2}),
-mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
-i(269590,{u=2}),
-h(-771,{u=2,g={
-mnt(423869,{u=2}),
-mnt(121820,{b=1,itemID=83086,lvl=10,u=2}),
-mnt(1293028,{itemID=274037,u=2})}}),
-h(-772,{u=2,g={
-mnt(74856,{itemID=54069,lvl=10,u=2}),
-i(201699,{u=2}),
-mnt(463045,{u=2}),
-i(207097,{u=2}),
-mnt(107516,{b=1,itemID=76889,lvl=10,r=2,u=2}),
-mnt(107517,{b=1,itemID=76902,lvl=10,r=1,u=2}),
-toy(198428,{b=1,u=2})}}),
-h(-773,{u=2,g={
-p(3326,{b=1,itemID=193837,npcID=189655,spellID=375473,u=2}),
-toy(49704,{b=1,u=2}),
-p(5067,{itemID=274925,npcID=265748,spellID=1295658,u=2}),
-toy(33223,{b=1,u=2}),
-p(4897,{itemID=252194,npcID=251819,spellID=1254207,u=2}),
-i(209945,{u=2}),
-p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
-crit(34643,{achID=6185,id=3,u=2})}}),
-p(242,{b=1,itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
-crit(23598,{achID=8397,id=23,pb=1})}}),
-toy(274730,{u=2})}}),
-h(-774,{u=2,g={
-toy(38301,{b=1,u=2}),
-p(247,{b=1,itemID=49664,npcID=36910,spellID=69539,u=2}),
-toy(33219,{b=1,u=2}),
-toy(67097,{b=1,u=2}),
-p(130,{b=1,itemID=23713,npcID=17255,spellID=30156,u=2}),
-toy(32542,{b=1,u=2}),
-toy(54212,{b=1,u=2}),
-i(23714,{b=1,f=53,spellID=69773,u=2}),
-toy(32566,{b=1,u=2}),
-p(171,{b=1,itemID=34519,npcID=25147,spellID=45175,u=2}),
-toy(72161,{b=1,u=2})}})}}),
-h(-781,{awp=50500,rwp=50510,u=2,g={
-mnt(139448,{b=1,itemID=95059,lvl=10,u=2}),
-i(273150,{u=2}),
-i(281681,{u=2})}})})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-h(-775,{awp=38000,rwp=38010,u=2,g={
-mnt(1280400,{description="This red version of the iconic Invincible mount has so far only been available in China. We don't know if or when it'll become available in the rest of the world. It was obtainable only through a special event on China's Titan Reforged servers in September-November 2025, awarded to players who defeated the Lich King in Icecrown Citadel on any difficulty.",u=2})}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 h(-780,{
 ach(40910,{awp=110000,description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2}),
 mnt(366962,{awp=110000,itemID=190231,lvl=10,u=2}),

@@ -1403,7 +1403,6 @@ o(1733,{learnedAt=75,maps={1416,1417,1418,1424,1431,1433,1434,1437,1440,1441,144
 o(105569,{coords={
 [1413]={{47.9,87.2}},
 [1424]={{27.5,57.5}}},learnedAt=75,r=1,requireSkill=186}),
-o(180215,{learnedAt=275,maps={337},requireSkill=186,rwp=40001}),
 o(177388,{learnedAt=275,maps={1451},requireSkill=186}),
 o(123848,{coords={
 [1449]={{50,81.2}}},learnedAt=245,requireSkill=186}),
@@ -1517,8 +1516,6 @@ i(8171,{description="Is a rare drop in place of Rugged Leather.",maps_disp={1419
 i(8169,{description="Is a rare drop in place of Thick Leather.",maps_disp={1418,1441,1448,1449,1452},q=1}),
 i(15423,{crs={7447,7448,7449,8763,8764,10807},maps_disp={1447,1452},q=1,rwp=30100}),
 i(17012,{crs={11673,11982},maps_disp={232},q=1}),
-i(19767,{awp=100007,q=1,rwp=40003,u=1609}),
-i(19768,{awp=100007,q=1,rwp=40003,u=1609}),
 i(15419,{coords={
 [1452]={{55.1,37.8},{58.1,89.4}}},crs={1815,1816,7443,7444,7445,7446,8957},description="Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",q=1}),
 i(7428,{crs={684,768,1713},description="Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",maps_disp={1434,1435},q=1,rwp=30100}),
@@ -1529,7 +1526,6 @@ i(15415,{coords={
 [1447]={{38,75}},
 [1452]={{57.2,65.9}}},description="Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",q=1}),
 i(12607,{q=3}),
-i(20381,{awp=70205,description="Can be skinned from the world bosses Dragons of Nightmare.",q=2,rwp=40003,u=1609}),
 i(15412,{description="Can be skinned from elite creatures of the Green Dragonflight around the world.",maps_disp={220},q=1}),
 i(15408,{description="Can be skinned from scorpids in the level bracket 50-60.",maps_disp={1428,1451},q=1}),
 i(15414,{coords={

@@ -5147,8 +5147,7 @@ q(26908,{awp=40003,coords={
 q(1109,{coords={
 [90]={{49,69.8}}},qgs={2055},qis={5801},r=1,rwp=40003,u=2}),
 q(26901,{awp=40003,lvl=10,qgs={44402},qis={5801}}),
-q(1100,{coords={
-[64]={{30,24}}},providers={{"o",19861}},qis={5790},qss={5791},r=2,rwp=40003,u=2}),
+q(1100,{qis={5790},qss={5791},r=2,rwp=40003,u=2}),
 q(1142,{coords={
 [89]={{69.4,67.6}}},qgs={4510},qis={5825},r=2,rwp=40003,u=2,g={
 s(2605,6751,{b=1,f=3,u=2}),
@@ -31681,8 +31680,8 @@ ach(6886,{u=2}),
 ach(6887,{u=2,g={
 cs(131204,{u=2})}})}}),
 d(24,{sym={{"sub","tw_instance",313}}})}})}}),
-x(6,{awp=70003,g={
-h(-12,{awp=60003,g={
+x(6,{awp=60003,g={
+h(-12,{
 ach(9619,{
 title(300),
 crit(26439,{achID=9619}),
@@ -31704,16 +31703,16 @@ mnt(171436,{b=1,itemID=116383,lvl=10})}),
 ach(9631,{r=2}),
 ach(9255,{r=1}),
 ach(9838,{awp=60100,providers={{"n",86470}},g={
-toy(122293,{awp=60003,b=1})}})}}),
-h(-47,{awp=60003,g={
+toy(122293,{awp=60003,b=1})}})}),
+h(-47,{
 cu(994,{coords={
 [622]={{51.6,61.8}},
 [624]={{64.6,62}}},cost=3000000,description="Purchased for 300g from an NPC at your Ashran hub in Draenor.\n\n|cff3f48ccAlliance:|r Purchased from Fate-Twister Seress in Stormshield |cffffffff(51.6,  61.8)|r.\n\n|cff880015Horde:|r Purchased from Fate-Twister Tiklal in Warspear |cffffffff(64.6, 62.0)|r.\n"}),
 cu(1129,{coords={
 [622]={{51.6,61.8}},
 [624]={{64.6,62}}},description="Up to 3 per week obtained via quests in your faction's Ashran hub. Costs for the week increase each time you purchase a seal with the same currency.\n\n|cff3f48ccAlliance:|r Obtained from Fate-Twister Seress in Stormshield |cffffffff(51.6, 61.8)|r.\n\n|cff880015Horde:|r Obtained from Fate-Twister Tiklal in Warspear|cffffffff(64.6, 62.0)|r.\n\nApexis Crystals: 500 > 1,000 > 2,000\n\nGarrison Resources: 1,000 > 2,000 > 4,000\n\nGold: 500 > 1,000 > 2,000\n"}),
-i(122618,{awp=60100,b=1,description="From the first Heroic Dungeon completed per day while on certain quests",rwp=90001,u=2})}}),
-h(-61,{awp=60003,isRaid=1,g={
+i(122618,{awp=60100,b=1,description="From the first Heroic Dungeon completed per day while on certain quests",rwp=90001,u=2})}),
+h(-61,{isRaid=1,g={
 h(-12,{
 ach(9423),
 gach(9418)}),
@@ -31794,7 +31793,7 @@ s(64391,115432,{b=1,f=7,loc=45,lvl=40}),
 crit(25767,{achID=9423,id=1}),
 gcat(25769,{achID=9418}),
 crit(27651,{achID=9838,id=26})}})}}),
-inst(477,{awp=60003,coords={
+inst(477,{coords={
 [550]={{32.9,38.3}}},isRaid=1,mapID=612,maps={610,611,613,614,615},savedInstanceID=1228,g={
 h(-12,{
 ach(8986),
@@ -32263,7 +32262,7 @@ s(67095,113850,{b=1,f=4,loc=42,lvl=40,modID=6}),
 i(113860,{b=1,f=52,lvl=40,modID=6}),
 s(62652,113857,{b=1,f=28,lvl=40,modID=6}),
 s(67178,113855,{b=1,f=7,loc=41,lvl=40,modID=6})}})})}}),
-inst(457,{awp=60003,coords={
+inst(457,{coords={
 [543]={{51.55,27.23}}},isRaid=1,mapID=598,maps={596,597,599,600},savedInstanceID=1205,g={
 h(-12,{
 ach(11740,{awp=70200,g={
@@ -34587,7 +34586,7 @@ i(124520,{b=1,c={4},f=53,lvl=40,modID=6,spellID=184916}),
 i(124513,{b=1,c={6},f=53,lvl=40,modID=6,spellID=184897}),
 i(124514,{b=1,c={11},f=53,lvl=40,modID=6,spellID=184876}),
 i(124516,{b=1,c={8},f=53,lvl=40,modID=6,spellID=184903})}})})}}),
-h(-65,{awp=60003,rwp=70003,u=2,g={
+h(-65,{rwp=70003,u=2,g={
 ach(8895,{sym={{"meta_achievement",8879,8875,8887,8997,8883,8871,9001,8891}},u=2}),
 ach(8897,{sym={{"meta_achievement",8880,8876,8888,8998,8884,8872,9002,8892}},u=2,g={
 title(290,{u=2})}}),
@@ -34666,7 +34665,7 @@ cs(159902,{u=2})}}),
 ach(9627,{cm=1,u=2,g={
 title(296,{cm=1,gender=2,u=2}),
 title(297,{cm=1,gender=3,u=2})}})}}),
-h(-21,{awp=60003,description="The following items can be obtained in the mentioned dungeons.",g={
+h(-21,{description="The following items can be obtained in the mentioned dungeons.",g={
 r(227562,{b=1,itemID=141643,lvl=10,maps={573,574,593,595,601,606,616,620},requireSkill=773,skillID=2509}),
 d(103,{difficulties={1,23},g={
 h(-93,{maps_disp={573,574,593,595,601,606,616,620},g={
@@ -35397,7 +35396,7 @@ heir(133585,{awp=60203,modID=23,rwp=70003,spellID=201371,u=2}),
 heir(133596,{awp=60203,modID=23,rwp=70003,spellID=201409,u=2}),
 heir(133598,{awp=60203,modID=23,rwp=70003,spellID=201414,u=2}),
 heir(133597,{awp=60203,modID=23,rwp=70003,spellID=201407,u=2})}})})}}),
-inst(547,{awp=60003,coords={
+inst(547,{coords={
 [535]={{46.27,73.92}}},mapID=593,savedInstanceID=1182,g={
 d(101,{difficulties={1,2,23},g={
 e(1185,{npcID=75839}),
@@ -35473,7 +35472,7 @@ e(1216,{npcID=75927}),
 e(1225,{npcID=77734,g={
 ach(10080)}})}),
 d(24,{sym={{"sub","tw_instance",547}}})}}),
-inst(385,{awp=60003,coords={
+inst(385,{coords={
 [525]={{49.93,24.8}}},mapID=573,savedInstanceID=1175,g={
 d(101,{difficulties={1,2,23},g={
 e(888,{npcID=74787}),
@@ -35545,7 +35544,7 @@ e(887,{npcID=75786}),
 e(889,{npcID=74790,g={
 ach(10076)}})}),
 d(24,{sym={{"sub","tw_instance",385}}})}}),
-inst(536,{awp=60003,coords={
+inst(536,{coords={
 [543]={{55,31.3}}},maps={606,607,608,609},savedInstanceID=1208,g={
 d(101,{difficulties={1,2,23},g={
 e(1138,{crs={77803,77816}}),
@@ -35604,7 +35603,7 @@ e(1163,{crs={79545,79548}}),
 e(1133,{npcID=80005,g={
 ach(10082)}})}),
 d(24,{sym={{"sub","tw_instance",536}}})}}),
-inst(558,{awp=60003,coords={
+inst(558,{coords={
 [543]={{45.36,13.52}}},mapID=595,savedInstanceID=1195,g={
 d(101,{difficulties={1,2,23},g={
 e(1235,{crs={81297,81305}}),
@@ -35681,7 +35680,7 @@ e(1236,{crs={80805,80808,80816}}),
 e(1237,{npcID=79852}),
 e(1238,{crs={83612,83613,83616},g={
 ach(10079)}})})}}),
-inst(537,{awp=60003,coords={
+inst(537,{coords={
 [539]={{31.91,42.55}}},maps={574,575,576},savedInstanceID=1176,g={
 d(101,{difficulties={1,2,23},g={
 e(1139,{npcID=75509}),
@@ -35752,7 +35751,7 @@ e(1140,{npcID=75452}),
 e(1160,{npcID=76407,g={
 ach(10084)}})}),
 d(24,{sym={{"sub","tw_instance",537}}})}}),
-inst(476,{awp=60003,coords={
+inst(476,{coords={
 [542]={{35.5,33.6}}},maps={601,602},savedInstanceID=1209,g={
 d(101,{difficulties={1,2,23},g={
 e(965,{npcID=75964}),
@@ -35881,7 +35880,7 @@ i(252420,{awp=60003,b=1,f=53,lvl=78,modID=35,spellID=1254640}),
 s(301520,258587,{awp=60003,b=1,f=7,loc=41,modID=35}),
 s(301408,258049,{awp=60003,b=1,f=8,modID=35})}})}}),
 d(24,{sym={{"sub","tw_instance",476}}})}}),
-inst(556,{awp=60003,coords={
+inst(556,{coords={
 [543]={{59.55,45.45}}},maps={620,621},savedInstanceID=1279,g={
 d(101,{difficulties={1,2,23},g={
 e(1214,{npcID=81522}),
@@ -35967,7 +35966,7 @@ e(1208,{npcID=82682}),
 e(1210,{npcID=83846,g={
 ach(10083)}})}),
 d(24,{sym={{"sub","tw_instance",556}}})}}),
-inst(559,{awp=60003,coords={
+inst(559,{coords={
 [33]={{78.94,33.62}}},maps={616,617,618},savedInstanceID=1358,g={
 d(101,{difficulties={1,2,23},g={
 e(1226,{npcID=76413,g={
@@ -36062,15 +36061,15 @@ e(1228,{crs={79912,80098}}),
 e(1229,{npcID=76585}),
 e(1234,{npcID=77120,g={
 ach(10085)}})})}})}}),
-x(7,{awp=80001,g={
-h(-12,{awp=70003,g={
+x(7,{awp=70003,g={
+h(-12,{
 ach(11164),
 ach(11163,{
 mnt(225765,{b=1,itemID=141217}),
 crit(33649,{achID=10748,id=4})}),
 ach(11180,{maps={764,765,766,767,768,769,770,771,772,777,778,779,780,781,782,783,784,785,786,787,788,789},g={
-mnt(193007,{b=1,itemID=141216})}})}}),
-h(-61,{awp=70003,isRaid=1,g={
+mnt(193007,{b=1,itemID=141216})}})}),
+h(-61,{isRaid=1,g={
 h(-12,{
 ach(11786),
 ach(11160,{
@@ -36257,7 +36256,7 @@ i(141492,{b=1,f=52,lvl=45,modID=3}),
 i(141482,{b=1,f=53,lvl=45,modID=3}),
 crit(33785,{achID=11189,id=143}),
 crit(35022,{achID=11160,id=11})}})}}),
-inst(768,{awp=70003,coords={
+inst(768,{coords={
 [641]={{56.3,36.9}}},isRaid=1,maps={777,778,779,780,781,782,783,784,785,786,787,788,789},savedInstanceID=1520,g={
 h(-12,{
 ach(10818,{
@@ -40733,10 +40732,10 @@ crit(32356,{achID=11181,u=2}),
 crit(32357,{achID=11181,u=2}),
 crit(32355,{achID=11181,u=2}),
 crit(32354,{achID=11181,u=2})}})})}),
-h(-21,{awp=70003,g={
+h(-21,{
 r(227239,{b=1,crs={91007,95676,95888,96028,96759,98208,98965,98970,99192,102387,102446,104218,114790,120793,122314,124729},itemID=141591,lvl=10,requireSkill=773,skillID=2508}),
-r(227240,{b=1,crs={102387,102446,114895,122314,124729},description="Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",itemID=141592,lvl=10,requireSkill=773,skillID=2508})}}),
-inst(777,{awp=70003,coords={
+r(227240,{b=1,crs={102387,102446,114895,122314,124729},description="Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",itemID=141592,lvl=10,requireSkill=773,skillID=2508})}),
+inst(777,{coords={
 [627]={{66.2,68.3}}},description="The bosses are random on all difficulties except Mythic.",mapID=732,savedInstanceID=1544,g={
 d(101,{difficulties={1,2,23},g={
 h(-651,{
@@ -41084,7 +41083,7 @@ s(79051,137455,{b=1,f=5,loc=41,lvl=40,modID=23}),
 s(79050,134446,{b=1,f=5,loc=40,lvl=40,modID=23}),
 i(137472,{b=1,f=54,lvl=40,modID=23}),
 i(137476,{b=1,f=54,lvl=40,modID=23})}})})})}}),
-inst(740,{awp=70003,coords={
+inst(740,{coords={
 [641]={{38.4,50.8}}},maps={751,752,753,754,755,756},savedInstanceID=1501,g={
 h(-12,{
 ach(10709,{description="These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",g={
@@ -41427,7 +41426,7 @@ s(84606,144487,{b=1,f=5,loc=47,lvl=40,modID=23}),
 i(144465,{b=1,f=54,lvl=40,modID=23}),
 i(144464,{b=1,f=54,lvl=40,modID=23}),
 i(144463,{b=1,f=54,lvl=40,modID=23})}})})}}),
-inst(800,{awp=70003,coords={
+inst(800,{coords={
 [680]={{51,65.6}}},maps={761,762,763},savedInstanceID=1571,g={
 h(-62,{
 q(42769,{isWorldQuest=1,g={
@@ -41552,7 +41551,7 @@ i(137486,{b=1,f=53,lvl=40,modID=23,spellID=214980}),
 i(137495,{b=1,f=54,lvl=40,modID=23}),
 i(137493,{b=1,f=54,lvl=40,modID=23})}})}),
 d(24,{sym={{"sub","tw_instance",800}}})}}),
-inst(762,{awp=70003,coords={
+inst(762,{coords={
 [641]={{59,31.3}}},mapID=733,savedInstanceID=1466,g={
 h(-62,{
 q(42745,{isWorldQuest=1,g={
@@ -41759,7 +41758,7 @@ s(78921,137314,{b=1,f=4,loc=43,lvl=40,modID=23}),
 i(137315,{b=1,f=53,lvl=40,modID=23,spellID=214224}),
 i(137317,{b=1,f=54,lvl=40,modID=23})}})}),
 d(24,{sym={{"sub","tw_instance",762}}})}}),
-inst(716,{awp=70003,coords={
+inst(716,{coords={
 [630]={{61.2,41.1}}},mapID=713,savedInstanceID=1456,g={
 h(-63,{
 r(209645,{b=1,itemID=137726,lvl=10,requireSkill=202,skillID=2500}),
@@ -42000,7 +41999,7 @@ i(137381,{b=1,f=54,lvl=40,modID=23}),
 i(137380,{b=1,f=54,lvl=40,modID=23}),
 i(137379,{b=1,f=54,lvl=40,modID=23})}})}),
 d(24,{sym={{"sub","tw_instance",716}}})}}),
-inst(721,{awp=70003,coords={
+inst(721,{coords={
 [634]={{70.4,69.4}}},maps={703,704,705},savedInstanceID=1477,g={
 h(-45,{
 q(43349,{lvl=10,modelScale=3,providers={{"o",251991}},sourceQuests={40072},g={
@@ -42264,7 +42263,7 @@ s(80583,139283,{b=1,f=7,loc=43,lvl=40,modID=23}),
 i(133685,{b=1,f=54,lvl=40,modID=23}),
 i(133686,{b=1,f=54,lvl=40,modID=23}),
 i(136784)}})})}}),
-inst(727,{awp=70003,coords={
+inst(727,{coords={
 [634]={{52.5,45.3}}},maps={706,707,708},savedInstanceID=1492,g={
 h(-62,{
 q(42780,{isWorldQuest=1,g={
@@ -42395,7 +42394,7 @@ i(137329,{b=1,f=53,lvl=40,modID=23,spellID=215670}),
 i(133634,{b=1,f=52,lvl=40,modID=23}),
 i(133684,{b=1,f=54,lvl=40,modID=23}),
 i(133683,{b=1,f=54,lvl=40,modID=23})}})})}}),
-inst(767,{awp=70003,coords={
+inst(767,{coords={
 [650]={{49.5,68.5}}},mapID=731,savedInstanceID=1458,g={
 h(-12,{
 ach(10996,{crs={111746},description="As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",providers={{"i",140212}},g={
@@ -43106,7 +43105,7 @@ s(89359,151322,{b=1,f=6,loc=44,lvl=40,modID=23}),
 i(151289,{b=1,f=54,lvl=40,modID=23}),
 i(151296,{b=1,f=54,lvl=40,modID=23}),
 i(151292,{b=1,f=54,lvl=40,modID=23})}})})}}),
-inst(726,{awp=70003,mapID=749,savedInstanceID=1516,g={
+inst(726,{mapID=749,savedInstanceID=1516,g={
 h(-62,{
 q(43639,{isWorldQuest=1,g={
 crit(34258,{achID=11189,id=666})}}),
@@ -43262,7 +43261,7 @@ s(79006,137417,{b=1,f=7,loc=47,lvl=40,modID=23}),
 i(137421,{b=1,f=54,lvl=40,modID=23}),
 i(137420,{b=1,f=54,lvl=40,modID=23}),
 i(146678,{spellID=239181})}})})}}),
-inst(707,{awp=70003,coords={
+inst(707,{coords={
 [630]={{48,82.1}}},maps={710,711,712},savedInstanceID=1493,g={
 h(-45,{
 q(44486,{lvl=45,providers={{"o",258979}},qis={141360},g={

@@ -1328,7 +1328,7 @@ n(266727,{coords={
 [2352]={{60.3,52.5}}},description="On a turtle who may waddle around a bit...",g={
 crit(118087,{achID=63605,id=54})}}),
 n(266728,{coords={
-[2352]={{36.8,46.8}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",g={
+[2352]={{36.8,46.8}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",g={
 crit(118088,{achID=63605,id=55})}}),
 n(266729,{crs={270577},description="This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",maps={2352},g={
 crit(118089,{achID=63605,id=56})}}),
@@ -1507,7 +1507,7 @@ n(266666,{coords={
 [2351]={{67.8,55.5}}},description="On a turtle who may waddle around a bit...",g={
 crit(118027,{achID=63441,id=54})}}),
 n(266667,{coords={
-[2351]={{52.6,73.1}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",g={
+[2351]={{52.6,73.1}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",g={
 crit(118028,{achID=63441,id=55})}}),
 n(266668,{crs={267939},description="This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",maps={2351},g={
 crit(118029,{achID=63441,id=56})}}),
@@ -1556,10 +1556,10 @@ i(276613,{f=55,spellID=1300021}),
 i(276612,{f=55,spellID=11009})}}),
 n(268106,{coords={
 [2351]={{54.4,56}},
-[2352]={{52.9,39}}},g={
+[2352]={{53.2,38.3}}},g={
 de(26478,{cost={{"c",3363,30}},itemID=280236,spellID=1307970}),
 de(26389,{cost={{"c",3363,25}},itemID=280227,spellID=1307960}),
-de(27044,{cost={{"c",3363,30}},itemID=280846,sourceAchievements={63605},spellID=1309929}),
+de(27044,{cost={{"c",3363,30}},itemID=280846,sourceAchievements={63441,63605},spellID=1309929}),
 de(26483,{cost={{"c",3363,25}},itemID=280223,spellID=1307955}),
 de(26365,{cost={{"c",3363,20}},itemID=280240,spellID=1307974}),
 de(26370,{cost={{"c",3363,20}},itemID=280230,spellID=1307963}),

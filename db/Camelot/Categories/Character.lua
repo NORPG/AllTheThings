@@ -251,7 +251,6 @@ ach(62355,{
 crit(112672,{achID=62053,id=2})}),
 ach(62382),
 ach(62032,{
-crit(116050,{achID=62032,id=1,providers={{"n",246020}}}),
 crit(116053,{achID=62032,id=4,providers={{"n",260274}}}),
 crit(116052,{achID=62032,id=10,providers={{"n",258968}}})}),
 ach(62033,{

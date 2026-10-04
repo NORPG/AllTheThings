@@ -922,8 +922,8 @@ i(199528,{awp=30400,f=53,lvl=70,rwp=30403,u=2}),
 i(199529,{awp=30400,f=53,lvl=70,q=2,rwp=30403,u=2}),
 i(199530,{awp=30400,f=53,lvl=70,rwp=30403,u=2})}})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
-faction(469,{icon=374217,r=2}),
-faction(67,{icon=374221,r=1}),
+faction(469,{awp=10001,icon=374217,r=2}),
+faction(67,{awp=10001,icon=374221,r=1}),
 faction(891,{collectible=false,r=2}),
 faction(892,{collectible=false,r=1}),
 faction(1118,{awp=30002,collectible=false}),
@@ -949,9 +949,9 @@ h(-88,{
 s(120957,6124,{f=4,loc=46,q=0,rwp=90105}),
 s(120956,6123,{f=4,loc=42,q=0,rwp=90105}),
 s(120968,6139,{f=4,loc=42,q=0,rwp=90105})}),
-h(-101,{
+h(-101,{awp=10100,g={
 s(116883,35,{f=28,q=1}),
-s(118957,3661,{f=28,q=1})})}),
+s(118957,3661,{f=28,q=1})}})}),
 cl(3,{
 h(-88,{
 s(116912,129,{f=2,loc=47,q=1,rwp=90105}),
@@ -965,7 +965,7 @@ s(120967,6138,{f=2,loc=47,q=1,rwp=90105}),
 s(131391,20900,{awp=20003,f=4,loc=47,q=0,rwp=90105}),
 s(131390,20899,{awp=20003,f=4,loc=46,q=0,rwp=90105})}),
 h(-101,{
-s(118011,2508,{f=31,q=1}),
+s(118011,2508,{awp=10100,f=31,q=1}),
 s(131473,20982,{awp=20003,f=20,q=1,rwp=90001}),
 s(131471,20980,{awp=20003,description="New Blood Elf Hunters start with this weapon.",f=32,q=1}),
 s(133745,23347,{awp=20003,description="New Human, Draenei, and Undead Hunters start with this weapon.",f=33,q=1}),
@@ -983,13 +983,13 @@ s(133874,23478,{awp=20003,f=4,loc=46,q=0,rwp=90105}),
 s(133875,23479,{awp=20003,f=4,loc=42,q=0,rwp=90105})}),
 h(-101,{
 s(131469,20978,{awp=30002,f=28,q=1}),
-s(116883,35,{f=28,q=1}),
-s(118957,3661,{f=28,q=1})})}),
+s(116883,35,{awp=10100,f=28,q=1}),
+s(118957,3661,{awp=10100,f=28,q=1})})}),
 cl(2,{
 flt(100,{
 mnt(34767,{awp=20003,c={2},lvl=40,races={10}}),
 mnt(34769,{awp=20003,c={2},lvl=20,races={10}}),
-mnt(13819,{c={2},lvl=20,races={1,3}})}),
+mnt(13819,{awp=10100,c={2},lvl=20,races={1,3}})}),
 h(-88,{
 s(134524,24146,{awp=20003,f=4,loc=47,q=0,rwp=90105}),
 s(134523,24145,{awp=20003,f=4,loc=46,q=0,rwp=90105}),
@@ -997,9 +997,9 @@ s(116889,43,{f=2,loc=47,q=1,rwp=90105}),
 s(116890,44,{f=4,loc=46,q=0,rwp=90105}),
 s(120951,6118,{f=4,loc=46,q=0,rwp=40003}),
 s(133873,23477,{awp=20003,f=4,loc=46,q=0,rwp=90105})}),
-h(-101,{
+h(-101,{awp=10100,g={
 s(116884,36,{f=23,q=1}),
-s(117901,2362,{f=8,q=0})})}),
+s(117901,2362,{f=8,q=0})}})}),
 cl(5,{
 h(-88,{
 s(117293,1396,{f=4,loc=46,q=0,rwp=90105}),
@@ -1012,8 +1012,8 @@ s(120973,6144,{f=4,loc=42,q=0,rwp=90105}),
 s(131382,20891,{awp=20003,f=4,loc=42,q=0,rwp=90105})}),
 h(-101,{
 s(131469,20978,{awp=30002,f=28,q=1}),
-s(116883,35,{f=28,q=1}),
-s(118957,3661,{f=28,q=1}),
+s(116883,35,{awp=10100,f=28,q=1}),
+s(118957,3661,{awp=10100,f=28,q=1}),
 s(131472,20981,{awp=20003,f=23,q=1,rwp=30002,u=2})})}),
 cl(4,{
 h(-88,{
@@ -1026,18 +1026,18 @@ s(116909,120,{f=4,loc=46,q=0,rwp=90105})}),
 h(-101,{
 s(131473,20982,{awp=20003,f=20,q=1,rwp=90001}),
 s(178271,50057,{awp=30300,description="New Blood Elves start with this weapon.",f=20,q=1}),
-s(117713,2092,{f=20,q=1}),
+s(117713,2092,{awp=10100,f=20,q=1}),
 s(178269,50055,{awp=30300,f=20,q=1})})}),
 cl(7,{
 h(-88,{
 s(116918,153,{f=5,loc=46,q=0,rwp=40003}),
 s(120964,6135,{f=5,loc=46,q=0,rwp=40003})}),
-h(-101,{
+h(-101,{awp=10100,g={
 s(116884,36,{f=23,q=1}),
-s(117901,2362,{f=8,q=0})})}),
+s(117901,2362,{f=8,q=0})}})}),
 cl(9,{
-flt(100,{
-mnt(5784,{c={9},lvl=20})}),
+flt(100,{awp=10100,g={
+mnt(5784,{c={9},lvl=20})}}),
 h(-88,{
 s(117293,1396,{f=4,loc=46,q=0,rwp=90105}),
 s(116900,57,{f=4,loc=42,q=0,rwp=90105}),
@@ -1046,7 +1046,7 @@ s(131383,20892,{awp=20003,f=4,loc=42,q=0,rwp=90105}),
 s(116901,59,{f=2,loc=47,q=1,rwp=90105})}),
 h(-101,{
 s(131469,20978,{awp=30002,f=28,q=1}),
-s(116883,35,{f=28,q=1})})}),
+s(116883,35,{awp=10100,f=28,q=1})})}),
 cl(1,{
 h(-88,{
 s(116914,140,{f=2,loc=47,q=1,rwp=90105}),
@@ -1060,14 +1060,14 @@ s(133870,23474,{awp=20003,f=4,loc=46,q=0,rwp=90105})}),
 h(-101,{
 s(124786,12282,{f=22,q=1,rwp=90001}),
 s(178108,49778,{awp=20003,f=26,q=1,rwp=90001}),
-s(116882,25,{f=25,q=1}),
-s(117901,2362,{f=8,q=0})})}),
+s(116882,25,{awp=10100,f=25,q=1}),
+s(117901,2362,{awp=10100,f=8,q=0})})}),
 flt(10,{
 s(120958,6125,{description="Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",f=10,q=1,rwp=40003}),
 s(116894,49,{description="Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",f=10,q=1,rwp=40003}),
 s(134521,24143,{awp=20003,description="Former Starter Shirt for Blood Elf Paladins",f=10,q=0,rwp=40003}),
 s(131388,20897,{awp=20003,description="Former Starter Shirt for Blood Elf Rogues.",f=10,q=0,rwp=40003}),
-s(116897,53,{description="Former Starter Shirt for Priests. (Also available from Old Hillsbrad)",f=10,q=1,rwp=40003}),
+s(116897,53,{awp=10100,description="Former Starter Shirt for Priests. (Also available from Old Hillsbrad)",f=10,q=1,rwp=40003}),
 s(116919,154,{description="Former Starter Shirt for Orc & Tauren Shamans",f=10,q=1,rwp=40003}),
 s(120963,6134,{description="Former Starter Shirt for Troll Shamans",f=10,q=1,rwp=40003}),
 s(133869,23473,{awp=20003,description="Former Starter Shirt for Draenei Warriors and Mages",f=10,q=1,rwp=40003}),

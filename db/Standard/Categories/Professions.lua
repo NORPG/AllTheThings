@@ -7543,7 +7543,7 @@ q(93540,{isWeekly=1,qss={259200},requireSkill=165,g={
 cu(3157,{requireSkill=165})}}),
 q(93541,{isWeekly=1,qss={259201},requireSkill=165,g={
 cu(3157,{requireSkill=165})}})}})}})}),
-prof(633,{c={4},description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",DontEnforceSkillRequirements=1,g={
+prof(633,{awp=10100,c={4},description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",DontEnforceSkillRequirements=1,g={
 r(1804,{c={4},requireSkill=921}),
 r(921,{c={4},requireSkill=921})}}),
 prof(186,{

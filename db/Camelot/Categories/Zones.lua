@@ -4047,6 +4047,12 @@ q(2282,{c={4},coords={
 [1433]={{23,52}}},lvl=16,qgs={6966},qis={5060},r=2,sourceQuests={2281},g={
 qo(1,{providers={{"i",7871}}}),
 i(7907,{b=1,description="This item has no function, but if you get caught, just hand them this like you're Ron Swanson."})}}),
+q(98386,{awp=16001,coords={
+[1433]={{27,48.6}}},lvl=15,qgs={341},r=2,sourceQuests={89},g={
+qo(1,{coords={
+[1433]={{52.6,41.2}}},providers={{"n",505},{"n",271898},{"n",271988}}}),
+qo(2,{coords={
+[1433]={{47.3,43.6}}},providers={{"o",673085},{"o",673101}}})}}),
 q(34,{coords={
 [1433]={{16.8,46.3}}},lvl=18,qgs={342},r=2,g={
 qo(1,{coords={

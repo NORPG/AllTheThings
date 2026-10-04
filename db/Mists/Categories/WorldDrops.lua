@@ -1072,7 +1072,9 @@ s(125332,13004,{f=27,lvl=53,q=3}),
 s(120279,5216,{f=27,lvl=40,q=2}),
 s(125393,13065,{f=27,lvl=45,q=3}),
 s(120277,5214,{f=27,lvl=27,q=2}),
-s(127211,15280,{f=27,lvl=48,q=2})})}),
+s(127211,15280,{f=27,lvl=48,q=2})}),
+flt(36,{
+i(5379,{lvl=3})})}),
 flt(7,{
 s(122499,8312,{f=7,loc=42,lvl=52,q=2}),
 s(122501,8314,{f=7,loc=44,lvl=48,q=2}),
@@ -3585,7 +3587,7 @@ i(4461,{coords={
 [14]={{50,70}}},crs={2561},description="Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",q=1}),
 i(12203,{coords={
 [77]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",q=1}),
-i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={-353,17,51,81,83,242,317},q=1}),
+i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={17,51,81,83,242,250,317},q=1}),
 i(10285,{crs={1822,1824,5856,5857},description="Drops from spiders in higher level vanilla zones.",q=1}),
 i(5635,{coords={
 [95]={{27,60},{50,60},{70,38}}},crs={16347,16348,16349},description="Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",q=1}),
@@ -7313,7 +7315,7 @@ i(76061,{b=1,q=3,u=50}),
 cu(395,{awp=40003,rwp=60002,u=50}),
 cu(396,{awp=40003,rwp=60002,u=50})}})}}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
-i(16882,{q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
+i(16882,{awp=11101,q=1,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
 s(119604,4446,{f=20,lvl=21,q=3}),
 s(118058,2567,{f=20,lvl=20,q=3}),
 s(120709,5756,{f=20,lvl=32,q=3})}}),
