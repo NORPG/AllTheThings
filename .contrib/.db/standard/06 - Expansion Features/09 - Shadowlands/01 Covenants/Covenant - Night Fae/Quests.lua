@@ -123,25 +123,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 47.6, 36.4, THE_TRUNK },
 			}),
 			q(63347, {	-- Night Fae Tactician
-				["description"] = "Requires Renown 22.",
+				["description"] = "~L.REQUIRES_RENOWN_22",
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64085, {	-- Night Fae Tactician #2
-				["description"] = "Requires Renown 59.",
+				["description"] = "~L.REQUIRES_RENOWN_59",
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 			}),
 			q(63346, {	-- Night Fae Veteran
-				["description"] = "Requires Renown 7.",
+				["description"] = "~L.REQUIRES_RENOWN_7",
 				["sourceQuests"] = { 62899 },	-- The Endless Forest
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64322, {	-- Night Fae Veteran #2
-				["description"] = "Requires Renown 43.",
+				["description"] = "~L.REQUIRES_RENOWN_43",
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 			}),
@@ -171,7 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62858, {	-- Return Lost Souls (10 soul version)
-				["description"] = "Requires Renown 15.",
+				["description"] = "~L.REQUIRES_RENOWN_15",
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
@@ -179,7 +179,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62859, {	-- Return Lost Souls (15 soul version)
-				["description"] = "Requires Renown 24.",
+				["description"] = "~L.REQUIRES_RENOWN_24",
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
@@ -187,7 +187,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
-				["description"] = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
+					constant = "REQUIRES_RENOWN_32_DEPENDING_ON_THE_LEVEL_OF",
+					export = true,
+					text = {
+						en = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 32。根据你女王的温室的等级，这会奖励更高品质的灵种。5 级会给予你一个史诗品质的灵种。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
@@ -281,7 +298,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 42.4, 45.2, ARDENWEALD },
 			}),
 			q(63006, {	-- For Queen and Grove! [Covenant Intro Skip]
-				["description"] = "Available when skipping Night Fae covenant intro quests.",
+				["description"] = createLocalizationString({
+					readable = "Available when skipping Night Fae covenant intro quests.",
+					constant = "AVAILABLE_WHEN_SKIPPING_NIGHT_FAE_COVENANT",
+					export = true,
+					text = {
+						en = "Available when skipping Night Fae covenant intro quests.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "跳过法夜盟约引导任务时可用。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["altQuests"] = { 58160 },	-- For Queen and Grove! [Covenant Intro Skip]
 				["qg"] = 161509,	-- Lady Moonberry
@@ -445,7 +479,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 
 			-- Chapter 4: Da Boss (Renown 8 required to start)
 			q(59809, {	-- On De Other Side
-				["description"] = "Requires Renown 8.",
+				["description"] = "~L.REQUIRES_RENOWN_8",
 				["sourceQuests"] = { 59242 },	-- Their New Home
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
 				["coord"] = { 44.6, 37.6, THE_TRUNK },

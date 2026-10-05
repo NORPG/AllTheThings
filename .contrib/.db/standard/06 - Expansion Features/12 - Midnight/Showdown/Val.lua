@@ -6,7 +6,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_0_7 },
 		["groups"] = {
 			m(VAL, {
-				["description"] = "Val is a planet of nothing but ice-covered valleys and billowing storms; even the Legion loathed it. The planet is protected by enormous hailstorms capable of tearing through the hulls of Legion ships, and even after the demons established outposts, the soldiers sent there were usually done so as punishment.",
+				["description"] = createLocalizationString({
+					readable = "Val is a planet of nothing but ice-covered valleys and billowing storms; even the Legion loathed it. The planet is protected by enormous hailstorms capable of tearing through the hulls of Legion ships, and even after the demons established outposts, the soldiers sent there were usually done so as punishment.",
+					constant = "VAL_IS_A_PLANET_OF_NOTHING_BUT_ICE_COVERED",
+					export = true,
+					text = {
+						en = "Val is a planet of nothing but ice-covered valleys and billowing storms; even the Legion loathed it. The planet is protected by enormous hailstorms capable of tearing through the hulls of Legion ships, and even after the demons established outposts, the soldiers sent there were usually done so as punishment.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "瓦尔是一颗只有冰雪覆盖的山谷和汹涌风暴的星球；就连军团也厌恶它。这颗星球被巨大的冰雹风暴所保护，这些风暴能够撕开军团舰船的船体，即使恶魔建立了前哨站，被派往那里的士兵通常也是一种惩罚。",
+						-- TODO: tw = "",
+					},
+				}),
 				["icon"] = 429385,
 				["cr"] = 264308,	-- Greater Void Portal
 				["coord"] = { 51.4, 71.3, MAP.MIDNIGHT.VOIDSTORM },
@@ -83,7 +100,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 47.6, 51.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 						}),
 						q(96048, {	-- The Time to Strike
-							["description"] = "Can be accepted from the Adventure Journal.",	-- Or will it pop-up on first log-in when eligible?
+							["description"] = createLocalizationString({
+								readable = "Can be accepted from the Adventure Journal.",
+								constant = "CAN_BE_ACCEPTED_FROM_THE_ADVENTURE_JOURNAL",
+								export = true,
+								text = {
+									en = "Can be accepted from the Adventure Journal.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "可从冒险日志中接取。",
+									-- TODO: tw = "",
+								},
+							}),	-- Or will it pop-up on first log-in when eligible?
 							["isBreadcrumb"] = true,
 							["qg"] = 263929,	-- Riftblade Maella's Summons
 							["coord"] = { 48.3, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -393,11 +427,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					n(TREASURES, {
 						o(655270, {	-- Dominaar Storage Vessel
-							["description"] = "Spawns randomly throughout the zone.",
+							["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
 							["sym"] = {{"select","itemID",278027},{"pop"}},	-- TODO: use source tech eventually
 						}),
 						o(658799, {	-- Enchanted Hilt
-							["description"] = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. You will have 2 stacks of the 'Vanquishing' buff when completed. Return to the hilt again to claim your reward.",
+							["description"] = createLocalizationString({
+								readable = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. You will have 2 stacks of the 'Vanquishing' buff when completed. Return to the hilt again to claim your reward.",
+								constant = "INTERACT_WITH_THE_ENCHANTED_HILT_AT_THE_BACK_OF",
+								export = true,
+								text = {
+									en = "Interact with the Enchanted Hilt at the back of the cave then slay two rares within 30 minutes to prove your worth. You will have 2 stacks of the 'Vanquishing' buff when completed. Return to the hilt again to claim your reward.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "与洞穴深处的附魔剑柄互动，然后在 30 分钟内击杀两个稀有怪以证明你的价值。完成后你将拥有 2 层“征服”增益。再次回到剑柄处领取奖励。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coords"] = {
 								{ 61.4, 78.8, VAL },	-- Cave
 								{ 70.5, 84.3, VAL },	-- Enchanted Hilt

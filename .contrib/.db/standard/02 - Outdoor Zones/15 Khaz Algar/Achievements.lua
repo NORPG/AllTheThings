@@ -330,7 +330,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		ach(40762, {	-- Khaz Algar Lore Hunter (automated)
 			-- #if AFTER 11.0.2.56313
 			-- #if BEFORE 11.0.7
-			["description"] = "This achievement is currently disabled by Blizzard and will be readded in a future patch.",
+			["description"] = createLocalizationString({
+				readable = "This achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				constant = "THIS_ACHIEVEMENT_IS_CURRENTLY_DISABLED_BY",
+				export = true,
+				text = {
+					en = "This achievement is currently disabled by Blizzard and will be readded in a future patch.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "该成就目前已被暴雪禁用，将在未来的补丁中重新加入。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			-- #endif
 			["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },

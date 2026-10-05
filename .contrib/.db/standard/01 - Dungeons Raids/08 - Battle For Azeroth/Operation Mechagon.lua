@@ -484,7 +484,24 @@ appendAllGroups(SeasonDifficultyGroups, {
 			BossOnly(KUJO, {
 				-- Not entirely sure how this version is obtainable if at all during Seasons... so we will assume it isn't and see if any report
 				i(168970, {	-- Trashmaster's Mantle
-					["description"] = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+					["description"] = createLocalizationString({
+						readable = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+						constant = "EQUIPPING_THIS_CLOAK_GIVES_YOU_A_TEMPORARY",
+						export = true,
+						text = {
+							en = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "装备这件披风会给予你一个临时的“垃圾大师”头衔。要获得永久的角色专属“垃圾大师”头衔，请把这件披风带到达萨罗（部落）或沃顿（联盟）的贾尼垃圾堆。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 				}),
 			}),
@@ -512,7 +529,7 @@ appendAllGroups(SeasonDifficultyGroups, {
 				BossOnly(KUJO, {
 					-- Not entirely sure how this version is obtainable if at all during Seasons... so we will assume it isn't and see if any report
 					i(168970, {	-- Trashmaster's Mantle
-						["description"] = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+						["description"] = "~L.EQUIPPING_THIS_CLOAK_GIVES_YOU_A_TEMPORARY",
 						["timeline"] = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 					}),
 				}),
@@ -651,7 +668,24 @@ local INSTANCE_GROUPS = {
 	}),
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 		ach(13789, {	-- Hertz Locker
-			["description"] = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence. You must already have the Rank 3 version.",
+			["description"] = createLocalizationString({
+				readable = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence. You must already have the Rank 3 version.",
+				constant = "AFTER_COMPLETING_THE_ACHIEVEMENT_SPEAK_TO",
+				export = true,
+				text = {
+					en = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence. You must already have the Rank 3 version.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成该成就后，与麦卡贡岛上的伊拉兹敏王子交谈以获取精华。你必须已经拥有等级 3 的版本。",
+					-- TODO: tw = "",
+				},
+			}),
 			["u"] = REMOVED_FROM_GAME,
 			["groups"] = {
 				i(168845, {	-- Mecha-Perfection Turbo (Rank 4)

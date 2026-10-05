@@ -3,7 +3,24 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(PRESTIGE, {
-	["description"] = "System that was used during Legion Expansion.",
+	["description"] = createLocalizationString({
+		readable = "System that was used during Legion Expansion.",
+		constant = "SYSTEM_THAT_WAS_USED_DURING_LEGION_EXPANSION",
+		export = true,
+		text = {
+			en = "System that was used during Legion Expansion.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "军团再临资料片期间使用的系统。",
+			-- TODO: tw = "",
+		},
+	}),
 	["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	["groups"] = {
 		ach(10991, {	-- First Step into a Larger World [1]
@@ -20,7 +37,24 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42978, {	-- A Royal Audience [Alliance]
-					["description"] = "You get this quest when you reach Prestige Rank 2.",
+					["description"] = createLocalizationString({
+						readable = "You get this quest when you reach Prestige Rank 2.",
+						constant = "YOU_GET_THIS_QUEST_WHEN_YOU_REACH_PRESTIGE_RANK",
+						export = true,
+						text = {
+							en = "You get this quest when you reach Prestige Rank 2.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你达到威望等级 2 时，你会获得这个任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["maps"] = { STORMWIND_CITY },
@@ -42,7 +76,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(42985, {	-- A Royal Audience [Horde]
-					["description"] = "You get this quest when you reach Prestige Rank 2.",
+					["description"] = "~L.YOU_GET_THIS_QUEST_WHEN_YOU_REACH_PRESTIGE_RANK",
 					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["maps"] = { UNDERCITY },

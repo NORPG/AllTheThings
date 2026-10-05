@@ -12,7 +12,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(71093, {	-- Legacy of Tyr: Secrets of the Past
-					["description"] = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
+					["description"] = createLocalizationString({
+						readable = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
+						constant = "GIVEN_ON_ZONING_INTO_THE_INSTANCE_ON_A",
+						export = true,
+						text = {
+							en = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在未完成该任务前夕版本的角色上进入副本时获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["altQuests"] = {
 						66458,	-- Legacy of Tyr: Secrets of the Past [A]
 						66586,	-- Legacy of Tyr: Secrets of the Past [H]
@@ -26,31 +43,116 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(384653, {	-- Ancient Volume
-					["description"] = "After second boss room, to the right of the broken bench.",
+					["description"] = createLocalizationString({
+						readable = "After second boss room, to the right of the broken bench.",
+						constant = "AFTER_SECOND_BOSS_ROOM_TO_THE_RIGHT_OF_THE",
+						export = true,
+						text = {
+							en = "After second boss room, to the right of the broken bench.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "第二个首领房间之后，在破损长椅的右侧。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(201920),	-- Obeservational Report: Earthen
 					},
 				}),
 				o(384313, {	-- Ancient Volume
-					["description"] = "Third boss room to the right of the exit door on the shelf.",
+					["description"] = createLocalizationString({
+						readable = "Third boss room to the right of the exit door on the shelf.",
+						constant = "THIRD_BOSS_ROOM_TO_THE_RIGHT_OF_THE_EXIT_DOOR",
+						export = true,
+						text = {
+							en = "Third boss room to the right of the exit door on the shelf.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "第三个首领房间，在出口门右侧的架子上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(201727),	-- To My Staunchest Allies
 					},
 				}),
 				o(384311, {	-- Ancient Volume
-					["description"] = "Before entering the Fourth boss room on top of some chests.",
+					["description"] = createLocalizationString({
+						readable = "Before entering the Fourth boss room on top of some chests.",
+						constant = "BEFORE_ENTERING_THE_FOURTH_BOSS_ROOM_ON_TOP_OF",
+						export = true,
+						text = {
+							en = "Before entering the Fourth boss room on top of some chests.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在进入第四个首领房间之前，在一些箱子的顶部。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(201722),	-- Edicts of the Prime Designate, Volume 742
 					},
 				}),
 				o(384654, {	-- Ancient Volume
-					["description"] = "To the right on shelf in the circle room before final boss.",
+					["description"] = createLocalizationString({
+						readable = "To the right on shelf in the circle room before final boss.",
+						constant = "TO_THE_RIGHT_ON_SHELF_IN_THE_CIRCLE_ROOM_BEFORE",
+						export = true,
+						text = {
+							en = "To the right on shelf in the circle room before final boss.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在最终首领前圆形房间右侧的架子上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(201833),	-- Wreckage Analysis Report
 					},
 				}),
 				o(384312, {	-- Ancient Volume
-					["description"] = "In the room before final boss, left side under the middle bench.",
+					["description"] = createLocalizationString({
+						readable = "In the room before final boss, left side under the middle bench.",
+						constant = "IN_THE_ROOM_BEFORE_FINAL_BOSS_LEFT_SIDE_UNDER",
+						export = true,
+						text = {
+							en = "In the room before final boss, left side under the middle bench.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在最终首领前的房间里，左侧中间长凳下方。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(201726),	-- Progress Report: Uldorus
 					},

@@ -13,7 +13,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		a(ach(13755)),	-- Veteran: Farseer Ori
 		a(ach(13753)),	-- Veteran: Hunter Akana
 		a(ach(13704, {	-- Nautical Battlefield Training
-			["description"] = "Requires hitting Rank 20 with each bodyguard.",
+			["description"] = createLocalizationString({
+				readable = "Requires hitting Rank 20 with each bodyguard.",
+				constant = "REQUIRES_HITTING_RANK_20_WITH_EACH_BODYGUARD",
+				export = true,
+				text = {
+					en = "Requires hitting Rank 20 with each bodyguard.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要将每名保镖的等级提升到 20 级。",
+					-- TODO: tw = "",
+				},
+			}),
 		})),
 		a(ach(13759)),	-- Battle-Scarred: Bladesman Inowari
 		a(ach(13760)),	-- Battle-Scarred: Farseer Ori
@@ -27,55 +44,191 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		h(ach(13751)),	-- Veteran: Poen Gillbrack
 		h(ach(13752)),	-- Veteran: Vim Brineheart
 		h(ach(13645, {	-- Nautical Battlefield Training
-			["description"] = "Requires hitting Rank 20 with each bodyguard.",
+			["description"] = "~L.REQUIRES_HITTING_RANK_20_WITH_EACH_BODYGUARD",
 		})),
 		h(ach(13750)),	-- Battle-Scarred: Neri Sharpfin
 		h(ach(13756)),	-- Battle-Scarred: Poen Gillbrack
 		h(ach(13757)),	-- Battle-Scarred: Vim Brineheart
 		h(ach(13761)),	-- Aqua Team Murder Force (H)
 		ach(13763, {	-- Back to the Depths!
-			["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+			["description"] = createLocalizationString({
+				readable = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+				constant = "THIS_EVENT_TAKES_PLACE_EVERY_3_HOURS_3_00_6_00",
+				export = true,
+				text = {
+					en = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "此事件每 3 小时发生一次（3:00、6:00、9:00 和 12:00，按服务器时间）。区域公告会显示“|cffe1780c空气中弥漫着力量的气息，艾萨拉的部队开始从深渊中召唤爪牙|r”，地图上会出现一个紫色骷髅标记事件发生的地点。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		ach(13712),	-- Explore Nazjatar
 		ach(13836, {	-- Feline Figurines Found
 			o(245286, {	-- Crystalline Cat Figurine
 				["questID"] = 56983,
 				["coord"] = { 28.8, 29.1, NAZJATAR },
-				["description"] = "In an underwater cave filled with |cFFFFD700Bloodfin Murlocs|r. ",
+				["description"] = createLocalizationString({
+					readable = "In an underwater cave filled with |cFFFFD700Bloodfin Murlocs|r. ",
+					constant = "IN_AN_UNDERWATER_CAVE_FILLED_WITH",
+					export = true,
+					text = {
+						en = "In an underwater cave filled with |cFFFFD700Bloodfin Murlocs|r. ",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在满是|cFFFFD700血鳍鱼人|r的水下洞穴中。 ",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(332569, {	-- Crystalline Cat Figurine
 				["questID"] = 56988,
 				["coord"] = { 71.4, 23.7, NAZJATAR },
-				["description"] = "Hidden behind a starfish on the left side of an underwater cave.",
+				["description"] = createLocalizationString({
+					readable = "Hidden behind a starfish on the left side of an underwater cave.",
+					constant = "HIDDEN_BEHIND_A_STARFISH_ON_THE_LEFT_SIDE_OF_AN",
+					export = true,
+					text = {
+						en = "Hidden behind a starfish on the left side of an underwater cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "隐藏在水下洞穴左侧的海星后面。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(332570, {	-- Crystalline Cat Figurine
 				["questID"] = 56992,
 				["coord"] = { 73.6, 25.9, NAZJATAR },
-				["description"] = "On the left side of a small underwater cave, tucked behind a curved piece of broken shell on the ground.",
+				["description"] = createLocalizationString({
+					readable = "On the left side of a small underwater cave, tucked behind a curved piece of broken shell on the ground.",
+					constant = "ON_THE_LEFT_SIDE_OF_A_SMALL_UNDERWATER_CAVE",
+					export = true,
+					text = {
+						en = "On the left side of a small underwater cave, tucked behind a curved piece of broken shell on the ground.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在一个小型水下洞穴的左侧，藏在地面上一块弯曲的碎贝壳后面。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(332571, {	-- Crystalline Cat Figurine
 				["questID"] = 56990,
 				["coord"] = { 58.2, 22.0, NAZJATAR },
-				["description"] = "In an underwater cave.",
+				["description"] = "~L.IN_AN_UNDERWATER_CAVE",
 			}),
 			o(332572, {	-- Crystalline Cat Figurine
 				["questID"] = 56986,
 				["coord"] = { 55.3, 27.2, NAZJATAR },
-				["description"] = "On top of a pillar at the back of the room. Jump onto one of the conch shells to reach it."
+				["description"] = createLocalizationString({
+					readable = "On top of a pillar at the back of the room. Jump onto one of the conch shells to reach it.",
+					constant = "ON_TOP_OF_A_PILLAR_AT_THE_BACK_OF_THE_ROOM_JUMP",
+					export = true,
+					text = {
+						en = "On top of a pillar at the back of the room. Jump onto one of the conch shells to reach it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在房间后方一根柱子的顶部。跳到一只海螺壳上即可够到。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 			o(332573, {	-- Crystalline Cat Figurine
 				["questID"] = 56984,
 				["coord"] = { 61.1, 26.8, NAZJATAR },
-				["description"] = "Behind the sea urchin in a small cave filled with wind elementals.",
+				["description"] = createLocalizationString({
+					readable = "Behind the sea urchin in a small cave filled with wind elementals.",
+					constant = "BEHIND_THE_SEA_URCHIN_IN_A_SMALL_CAVE_FILLED",
+					export = true,
+					text = {
+						en = "Behind the sea urchin in a small cave filled with wind elementals.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在一个满是风元素的小洞穴里，海胆后面。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(332574, {	-- Crystalline Cat Figurine
 				["questID"] = 56991,
 				["coord"] = { 61.6, 10.7, NAZJATAR },
-				["description"] = "In an underwater cave with a school of |cFFFFD700Deeptide Frenzy|r swimming around. It's on a rocky outcrop at the top of the cave."
+				["description"] = createLocalizationString({
+					readable = "In an underwater cave with a school of |cFFFFD700Deeptide Frenzy|r swimming around. It's on a rocky outcrop at the top of the cave.",
+					constant = "IN_AN_UNDERWATER_CAVE_WITH_A_SCHOOL_OF",
+					export = true,
+					text = {
+						en = "In an underwater cave with a school of |cFFFFD700Deeptide Frenzy|r swimming around. It's on a rocky outcrop at the top of the cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在有一群|cFFFFD700深潮狂鱼|r游弋的水下洞穴中。它位于洞穴顶部的岩石突出处。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 			o(332575, {	-- Crystalline Cat Figurine
 				["questID"] = 56989,
-				["description"] = "Drop down carefully from the path to a small cave hidden in the wall.",
+				["description"] = createLocalizationString({
+					readable = "Drop down carefully from the path to a small cave hidden in the wall.",
+					constant = "DROP_DOWN_CAREFULLY_FROM_THE_PATH_TO_A_SMALL",
+					export = true,
+					text = {
+						en = "Drop down carefully from the path to a small cave hidden in the wall.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "从路径上小心地向下跳到岩壁中隐藏的一个小洞穴。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 38.7, 49.3, NAZJATAR },	-- Cave Entrance
 					{ 38.0, 49.3, NAZJATAR },	-- Crystalline Cat Figurine
@@ -87,12 +240,46 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ 40.3, 81.3, NAZJATAR },	-- Cave Entrance
 					{ 40.1, 86.5, NAZJATAR },	-- Crystalline Cat Figurine
 				},
-				["description"] = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
+				["description"] = createLocalizationString({
+					readable = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
+					constant = "AT_THE_BACK_OF_AN_UNDERWATER_CAVE_FILLED_WITH",
+					export = true,
+					text = {
+						en = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在满是|cFFFFD700暗花涉水者|r的水下洞穴深处。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(332568, {	-- Crystalline Cat Figurine
 				["questID"] = 56985,
 				["coord"] = { 59.1, 30.4, NAZJATAR },
-				["description"] = "In a coral outcropping at the back of a small cave filled with water elementals.",
+				["description"] = createLocalizationString({
+					readable = "In a coral outcropping at the back of a small cave filled with water elementals.",
+					constant = "IN_A_CORAL_OUTCROPPING_AT_THE_BACK_OF_A_SMALL",
+					export = true,
+					text = {
+						en = "In a coral outcropping at the back of a small cave filled with water elementals.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在一个满是水元素的小洞穴后方的珊瑚礁石上。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		pvp(ach(13568)),	-- For Nazjatar!
@@ -193,7 +380,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			crit(45475, {	-- Kelpstone
 				["crs"] = { 154918 },	-- Kelpstone
 				["coord"] = { 46.6, 28.0, NAZJATAR },
-				["description"] = "Inside a cave at the bottom of the waterfall.",
+				["description"] = createLocalizationString({
+					readable = "Inside a cave at the bottom of the waterfall.",
+					constant = "INSIDE_A_CAVE_AT_THE_BOTTOM_OF_THE_WATERFALL",
+					export = true,
+					text = {
+						en = "Inside a cave at the bottom of the waterfall.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在瀑布底部的洞穴内。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			crit(45476, {	-- Voltgorger
 				["crs"] = { 154919 },	-- Voltgorger
@@ -202,7 +406,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			crit(45477, {	-- Frenzied Knifefang
 				["crs"] = { 154920 },	-- Frenzied Knifefang
 				["coord"] = { 61.40, 19.85, NAZJATAR },
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 			}),
 			crit(45478, {	-- Giant Opaline Conch
 				["crs"] = { 154921 },	-- Giant Opaline Conch
@@ -226,7 +430,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		ach(13713),	-- Nothing to Scry About
 		ach(13699, {	-- Periodic Destruction
 			["coord"] = { 60.7, 32.1, NAZJATAR },
-			["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob. Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
+			["description"] = createLocalizationString({
+				readable = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob. Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
+				constant = "YOU_MUST_COMBINE_LESSER_AND_GREATER_CRYSTALS_IN",
+				export = true,
+				text = {
+					en = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob. Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在激活元素精华融合器召唤特定怪物之前，你必须以不同的组合方式组合次级和强效水晶。更多信息请查看专门介绍马尔迪瓦斯实验室的迷你列表部分！",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		ach(13764),	-- Puzzle Performer
 		ach(13765),	-- Subaquatic Support
@@ -236,7 +457,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		pvp(ach(13720)),	-- Supplying the Assassins
 		ach(13722, {	-- Terror of the Tadpoles
 			["coord"] = { 28.5, 31.2, NAZJATAR },
-			["description"] = "Tadpoles are easily found in and around Bloodfin Village.",
+			["description"] = createLocalizationString({
+				readable = "Tadpoles are easily found in and around Bloodfin Village.",
+				constant = "TADPOLES_ARE_EASILY_FOUND_IN_AND_AROUND",
+				export = true,
+				text = {
+					en = "Tadpoles are easily found in and around Bloodfin Village.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在血鳍村及其周围很容易找到蝌蚪。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {
 				152275,	-- Bloodfin Tadpole
 			},

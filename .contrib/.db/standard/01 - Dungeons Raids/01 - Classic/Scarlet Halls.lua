@@ -27,7 +27,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["coord"] = { 48.4, 20.0, SCARLET_HALLS_ATHENAEUM },
 							["groups"] = {
 								i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
-									["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
+									["description"] = createLocalizationString({
+										readable = "Can be looted from a bookshelf if the boss didn't burn them.",
+										constant = "CAN_BE_LOOTED_FROM_A_BOOKSHELF_IF_THE_BOSS_DIDN",
+										export = true,
+										text = {
+											en = "Can be looted from a bookshelf if the boss didn't burn them.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "如果首领没有烧毁它们，可从书架上拾取。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							},
 						}),

@@ -186,7 +186,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(23901),	-- Nazan's Head (QI!)
 				}),
 				o(185168, {	-- Reinforced Fel Iron Chest
-					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
+					["description"] = createLocalizationString({
+						readable = "Available after defeating both Vazruden the Herald and Nazan.",
+						constant = "AVAILABLE_AFTER_DEFEATING_BOTH_VAZRUDEN_THE",
+						export = true,
+						text = {
+							en = "Available after defeating both Vazruden the Herald and Nazan.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "击败传令官瓦兹德和纳赞后开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
 					["groups"] = {
 						i(27453),	-- Averinn's Ring of Slaying
@@ -286,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					h(i(23892)),	-- Ominous Letter [Horde]
 				}),
 				o(185168, {	-- Reinforced Fel Iron Chest
-					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
+					["description"] = "~L.AVAILABLE_AFTER_DEFEATING_BOTH_VAZRUDEN_THE",
 					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
 					["groups"] = {
 						i(24045),	-- Band of Renewal
@@ -304,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
 				["cost"] = {
 					{ "i", 30622, 1 },	-- Flamewrought Key [A]
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
@@ -371,7 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(33833),	-- Nazan's Riding Crop (QI!)
 				}),
 				o(185168, {	-- Reinforced Fel Iron Chest
-					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
+					["description"] = "~L.AVAILABLE_AFTER_DEFEATING_BOTH_VAZRUDEN_THE",
 					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
 					["groups"] = {
 						i(27453),	-- Averinn's Ring of Slaying

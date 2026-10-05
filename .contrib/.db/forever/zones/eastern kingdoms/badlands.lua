@@ -533,7 +533,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(795, {	-- Seal of the Earth [A]
-				["description"] = "This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",
+				["description"] = createLocalizationString({
+					readable = "This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",
+					constant = "THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE",
+					export = true,
+					text = {
+						en = "This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务可以重复完成，但只有当|cffe50d12破碎的同盟|r或|cff4a54e8大地之颤|r在你的任务日志中时才能完成。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "o", 2933 },	-- Seal of the Earth
 					{ "i", 4845 },	-- Diamond Runestone
@@ -554,7 +571,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(779, {	-- Seal of the Earth [A]
-				["description"] = "This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",
+				["description"] = "~L.THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE",
 				["providers"] = {
 					{ "o", 2933 },	-- Seal of the Earth
 					{ "i", 4845 },	-- Diamond Runestone

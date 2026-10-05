@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(141, {	-- Salvage Yard (rank 1: 52, rank 2: 140, rank 3: 141)
 					n(ACHIEVEMENTS, {
 						ach(9468, {		-- Salvaging Pays Off
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = { i(111977) },	-- Salvage Yard, Level 3 [Blueprints]
 						}),
 					}),

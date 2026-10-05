@@ -53,7 +53,24 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66636, {	-- Nearly Headless Jacob <Master Pet Tamer>
 						["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
-						["description"] = "Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Biletoad (Tongue Lash/Cleansing Rain/Swarm of Flies) and Huge Toad (Tongue Lash/Healing Wave/Swarm of Flies).",
+						["description"] = createLocalizationString({
+							readable = "Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Biletoad (Tongue Lash/Cleansing Rain/Swarm of Flies) and Huge Toad (Tongue Lash/Healing Wave/Swarm of Flies).",
+							constant = "JACOB_S_PETS_ARE_LEVEL_25_OF_THE_FOLLOWING",
+							export = true,
+							text = {
+								en = "Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Biletoad (Tongue Lash/Cleansing Rain/Swarm of Flies) and Huge Toad (Tongue Lash/Healing Wave/Swarm of Flies).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "Jacob 的宠物都是 25 级，且属于以下连续的宠物类型：\n1. 亡灵 - 使用小动物（高伤害）或水栖（耐打）宠物。\n2. 亡灵 - 参见上文。\n3. 亡灵 - 参见上文。\n\n要获得“一次了不起的大冒险”的进度，请使用雷象毛绒玩具和两只强力宠物组队作战，例如胆汁蟾蜍（舌鞭/净化之雨/蝇群）和巨型蟾蜍（舌鞭/治疗波/蝇群）。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
@@ -67,7 +84,24 @@ root(ROOTS.Zones, {
 				}),
 				n(SPECIAL, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45000, {	-- Winter Hyacinth
-						["description"] = "Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",
+						["description"] = createLocalizationString({
+							readable = "Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",
+							constant = "CAN_BE_FOUND_BENEATH_THE_IRONWALL_DAM",
+							export = true,
+							text = {
+								en = "Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在分隔冰冠冰川与晶歌森林的铁墙水坝下方找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "o", 194213 },	-- Winter Hyacinth
 						["coords"] = {
 							{ 18.5, 15.7, CRYSTALSONG_FOREST },

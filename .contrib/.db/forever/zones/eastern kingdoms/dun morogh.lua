@@ -138,7 +138,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["lvl"] = 4,
 						["groups"] = {
 							i(5175, {	-- Earth Totem
-								["description"] = "You must keep this in your bags forever.",
+								["description"] = createLocalizationString({
+									readable = "You must keep this in your bags forever.",
+									constant = "YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+									export = true,
+									text = {
+										en = "You must keep this in your bags forever.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "你必须永远把它留在背包里。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),
@@ -947,7 +964,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(415, {	-- Rejold's New Brew
-				["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
+				["description"] = createLocalizationString({
+					readable = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
+					constant = "IF_YOU_WANT_TO_FINISH_THIS_COMPLETE_THE_PERFECT",
+					export = true,
+					text = {
+						en = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果你想完成此任务，请先完成“完美的烈酒”，之后不要接受微光烈酒。等你接到此任务并回去找他之后，就可以接受微光烈酒了！",
+						-- TODO: tw = "",
+					},
+				}),
 				["qgs"] = {
 					1378,	-- Pilot Bellowfiz
 					1872,	-- Tharek Blackstone
@@ -1289,7 +1323,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(433, {	-- The Public Servant
-				["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
+				["description"] = createLocalizationString({
+					readable = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
+					constant = "THE_QUEST_THE_PUBLIC_SERVANT_GETS_FLAGGED_AS",
+					export = true,
+					text = {
+						en = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "任务“公仆”每年都会被标记为未完成，因此会意外地可以重复完成。这不会影响任务奖励的已收集状态。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
 				["coord"] = { 68.6, 56.0, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
@@ -1504,7 +1555,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			n(1137, {	-- Edan the Howler
-				["description"] = "Located in The Grizzled Den.",
+				["description"] = createLocalizationString({
+					readable = "Located in The Grizzled Den.",
+					constant = "LOCATED_IN_THE_GRIZZLED_DEN",
+					export = true,
+					text = {
+						en = "Located in The Grizzled Den.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "位于灰白巢穴。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 43.6, 49.6, MAP.DUN_MOROGH },
 					{ 39.6, 48.2, MAP.DUN_MOROGH },
@@ -1746,7 +1814,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 		n(ZONE_DROPS, {
 			i(769),	-- Chunk of Boar Meat
 			i(2886, {	-- Crag Boar Rib
-				["description"] = "Only drops from Crag Boars in Dun Morogh.",
+				["description"] = createLocalizationString({
+					readable = "Only drops from Crag Boars in Dun Morogh.",
+					constant = "ONLY_DROPS_FROM_CRAG_BOARS_IN_DUN_MOROGH",
+					export = true,
+					text = {
+						en = "Only drops from Crag Boars in Dun Morogh.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅由丹莫罗的峭壁野猪掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = {
 					1125,	-- Crag Boar
 					1689,	-- Scarred Crag Boar

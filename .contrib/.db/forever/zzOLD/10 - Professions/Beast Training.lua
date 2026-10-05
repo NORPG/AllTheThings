@@ -1,7 +1,24 @@
 -- See Reference: https://www.wow-petopia.com/classic_bc/abilities.php
 -- #if BEFORE 3.0.2
 profession(261, {	-- Beast Training
-	["description"] = "Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",
+	["description"] = createLocalizationString({
+		readable = "Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",
+		constant = "LETS_THE_HUNTER_TRAIN_THEIR_PET_WITH_VARIOUS",
+		export = true,
+		text = {
+			en = "Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "让猎人可以训练宠物学习自己已学会的各种技能。\n\n在巫妖王之怒中被宠物天赋树取代。",
+			-- TODO: tw = "",
+		},
+	}),
 	["timeline"] = { REMOVED_3_0_2 },
 	["classes"] = { HUNTER },
 	["lvl"] = 10,
@@ -1389,7 +1406,24 @@ profession(261, {	-- Beast Training
 		-- #if AFTER TBC
 		applyclassicphase(TBC_PHASE_ONE, {
 			["recipeID"] = 27063,	-- Thunderstomp [Rank 4]
-			["description"] = "No known sources, contact Crieve if you find one!",
+			["description"] = createLocalizationString({
+				readable = "No known sources, contact Crieve if you find one!",
+				constant = "NO_KNOWN_SOURCES_CONTACT_CRIEVE_IF_YOU_FIND_ONE",
+				export = true,
+				text = {
+					en = "No known sources, contact Crieve if you find one!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "暂无已知来源，如果你找到了请联系 Crieve！",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { CREATED_2_0_1 },
 			["rank"] = 4,
 			["lvl"] = 60,

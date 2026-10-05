@@ -1,7 +1,7 @@
 -- #if ANYCLASSIC
 profession(BLACKSMITHING, {
 	prof(9787, {	-- Weaponsmith
-		["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
+		["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS_4",
 		["sourceQuests"] = {
 			-- #if SEASON_OF_DISCOVERY
 			82662,	-- The Way of the Weaponsmith [Alliance]
@@ -15,7 +15,7 @@ profession(BLACKSMITHING, {
 		["groups"] = {
 			prof(17041, {	-- Master Axesmith
 				["sourceQuest"] = 5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
-				["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
+				["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER",
 				["groups"] = {
 					-- #if BEFORE TBC
 					{
@@ -23,7 +23,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16991,
 						["requireSkill"] = 17041,
 						-- #if SEASON_OF_DISCOVERY
-						["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+						["description"] = "~L.BLIZZARD_STATED_THAT_ANNIHILATOR_WAS_AN_ITEM",
 						["timeline"] = { REMOVED_1_15_0 },
 						-- #endif
 					},
@@ -138,7 +138,7 @@ profession(BLACKSMITHING, {
 					5305,	-- Sweet Serenity [Master Hammersmith]
 					-- #endif
 				},
-				["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
+				["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_2",
 				["groups"] = {
 					-- #if BEFORE TBC
 					applyclassicphase(PHASE_THREE_RECIPES, {
@@ -289,7 +289,7 @@ profession(BLACKSMITHING, {
 			}),
 			prof(17039, {	-- Master Swordsmith
 				["sourceQuest"] = 5307,	-- Corruption [Master Swordsmith]
-				["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
+				["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_3",
 				["groups"] = {
 					-- #if BEFORE TBC
 					{
@@ -427,7 +427,7 @@ profession(BLACKSMITHING, {
 			}),
 			{
 				["name"] = "Weapons",
-				["description"] = "These can be crafted by any Weaponsmith.",
+				["description"] = "~L.THESE_CAN_BE_CRAFTED_BY_ANY_WEAPONSMITH",
 				["categoryID"] = 227,
 				["groups"] = {
 					-- #if BEFORE TBC

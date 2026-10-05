@@ -3,7 +3,24 @@
 -------------------------------------------
 root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
 	race(BLOODELF, bubbleDown({ ["timeline"] = { ADDED_9_2_5 }, ["races"] = { BLOODELF } }, {
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",
+		["description"] = createLocalizationString({
+			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",
+			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_24",
+			export = true,
+			text = {
+				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "解锁此任务线需要你以 |cFFa335ee60 级血精灵|r 登录。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = bubbleDown({
 			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED }
 		}, {
@@ -125,7 +142,24 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 		}),
 	})),
 	race(DARKIRON, bubbleDown({ ["timeline"] = { ADDED_9_2_5 }, ["races"] = { DARKIRON } }, {
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dark Iron Dwarf|r and completed |cFFFFD700 Heritage o' the Dark Iron|r, The Dark Iron Dwarf Heritage Quest.",
+		["description"] = createLocalizationString({
+			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dark Iron Dwarf|r and completed |cFFFFD700 Heritage o' the Dark Iron|r, The Dark Iron Dwarf Heritage Quest.",
+			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_25",
+			export = true,
+			text = {
+				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dark Iron Dwarf|r and completed |cFFFFD700 Heritage o' the Dark Iron|r, The Dark Iron Dwarf Heritage Quest.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "解锁此任务线需要你以 |cFFa335ee50 级黑铁矮人|r 登录，并完成 |cFFFFD700黑铁之传承|r，即黑铁矮人传承任务。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			q(63494, {	-- The Anvil-Thane's Designs
 				["sourceQuests"] = { 51483 },	-- Heritage o' the Dark Iron

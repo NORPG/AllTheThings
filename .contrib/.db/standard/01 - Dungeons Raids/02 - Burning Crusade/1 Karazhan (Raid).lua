@@ -7,7 +7,24 @@ local REMOVED_WITH_RETURN_TO_KARAZHAN = { REMOVED_7_1_0 };
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
-		["description"] = "The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
+		["description"] = createLocalizationString({
+			readable = "The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
+			constant = "THE_BEST_ROUTE_FOR_A_FULL_CLEAR_1_TURN_RIGHT",
+			export = true,
+			text = {
+				en = "The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "全清的最佳路线：\n1. 穿过门楼大门后立即右转，进入仆从区。\n2. 从西侧的蝙蝠房间有一条通往客房区的通道。在清理完本区域之前，先忽略右侧的通道。\n3. 忽略歌剧院，穿过舞厅下楼前往摩罗斯，再穿过厨房和马厩去见猎手阿图门。在这里你还能找到实用商人科伦（需要紫罗兰之眼崇敬）。\n4. 回到门楼并上楼前往歌剧院，从那里开始就是通往最终首领的线性路线。",
+				-- TODO: tw = "",
+			},
+		}),
 		-- #if BEFORE CATA
 		["zone-text-areaID"] = 2562,	-- Karazhan
 		-- #endif
@@ -120,7 +137,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 										{ "i",  24492 },	-- Keanna's Log
 										{ "o", 182199 },	-- Keanna's Log
 									},
-									["description"] = "In the second room on a table in the hall leading to Maiden.",
+									["description"] = createLocalizationString({
+										readable = "In the second room on a table in the hall leading to Maiden.",
+										constant = "IN_THE_SECOND_ROOM_ON_A_TABLE_IN_THE_HALL",
+										export = true,
+										text = {
+											en = "In the second room on a table in the hall leading to Maiden.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "在通往贞洁圣女的走廊的第二个房间里，一张桌子上。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							},
 						}),
@@ -615,12 +649,46 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			})),
 			filter(REAGENTS, {
 				i(21882, {	-- Soul Essence
-					["description"] = "Drops from Undead creatures in Karazhan."
+					["description"] = createLocalizationString({
+						readable = "Drops from Undead creatures in Karazhan.",
+						constant = "DROPS_FROM_UNDEAD_CREATURES_IN_KARAZHAN",
+						export = true,
+						text = {
+							en = "Drops from Undead creatures in Karazhan.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由卡拉赞的亡灵生物掉落。",
+							-- TODO: tw = "",
+						},
+					})
 				}),
 			}),
 			n(VENDORS, {
 				n(16388, {	-- Koren
-					["description"] = "This vendor is located in the Livery Stables, but will only serve characters that are at least Honoured with The Violet Eye.",
+					["description"] = createLocalizationString({
+						readable = "This vendor is located in the Livery Stables, but will only serve characters that are at least Honoured with The Violet Eye.",
+						constant = "THIS_VENDOR_IS_LOCATED_IN_THE_LIVERY_STABLES",
+						export = true,
+						text = {
+							en = "This vendor is located in the Livery Stables, but will only serve characters that are at least Honoured with The Violet Eye.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此商人位于马厩内，但只接待与紫罗兰之眼至少达到尊敬的角色。",
+							-- TODO: tw = "",
+						},
+					}),
 					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored
 					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
@@ -629,13 +697,47 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				n(17518, {	-- Ythyar
-					["description"] = "This vendor is located in the Guardian's Library.",
+					["description"] = createLocalizationString({
+						readable = "This vendor is located in the Guardian's Library.",
+						constant = "THIS_VENDOR_IS_LOCATED_IN_THE_GUARDIAN_S",
+						export = true,
+						text = {
+							en = "This vendor is located in the Guardian's Library.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此商人位于守护者图书馆内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(25903),	-- Design: Bracing Earthstorm Diamond (RECIPE!)
 						i(25902),	-- Design: Powerful Earthstorm Diamond (RECIPE!)
 						i(22535, {	-- Formula: Enchant Ring - Striking (RECIPE!)
 							-- #if AFTER 6.0.2
-							["description"] = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
+							["description"] = createLocalizationString({
+								readable = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
+								constant = "THIS_GREY_ITEM_IS_NOW_NEEDED_FOR_THE_SECOND",
+								export = true,
+								text = {
+									en = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "现在，涉及战斗宠物巴尔的秘密的后半部分需要这件灰色物品。",
+									-- TODO: tw = "",
+								},
+							}),
 							["f"] = MISC,
 							["_drop"] = { "requireSkill" },
 							-- #endif
@@ -667,7 +769,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				i(30667),	-- Ring of Unrelenting Storms
 			}),
 			e(1552, {	-- Servant's Quarters
-				["description"] = "One of the following rares will spawn after clearing 90% of the mobs in the Servant's Quarters. An emote will appear in the General Chat when one of the spawns. This is not a boss encounter, thus you can leave the raid, reset the instance and repeat the process as many times as you want as long as no bosses are killed.",
+				["description"] = createLocalizationString({
+					readable = "One of the following rares will spawn after clearing 90% of the mobs in the Servant's Quarters. An emote will appear in the General Chat when one of the spawns. This is not a boss encounter, thus you can leave the raid, reset the instance and repeat the process as many times as you want as long as no bosses are killed.",
+					constant = "ONE_OF_THE_FOLLOWING_RARES_WILL_SPAWN_AFTER",
+					export = true,
+					text = {
+						en = "One of the following rares will spawn after clearing 90% of the mobs in the Servant's Quarters. An emote will appear in the General Chat when one of the spawns. This is not a boss encounter, thus you can leave the raid, reset the instance and repeat the process as many times as you want as long as no bosses are killed.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "清掉仆从区 90% 的小怪后，下列稀有之一会刷新。有稀有刷新时综合频道会出现一条表情提示。这不是首领战，因此只要不击杀任何首领，你就可以离开团队、重置副本并重复此过程任意次数。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #if BEFORE WOD
 				["headerID"] = RARES,
 				-- #endif
@@ -676,7 +795,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(25707),	-- Fel Hide
 					}),
 					n(16181, {	-- Rokad the Ravager
-						["description"] = "Spawns innermost in the big hounds room.",
+						["description"] = createLocalizationString({
+							readable = "Spawns innermost in the big hounds room.",
+							constant = "SPAWNS_INNERMOST_IN_THE_BIG_HOUNDS_ROOM",
+							export = true,
+							text = {
+								en = "Spawns innermost in the big hounds room.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "刷新在大猎犬房间的最里面。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(30686),	-- Ravager's Bands
 							i(30687),	-- Ravager's Bracers
@@ -685,7 +821,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(16179, {	-- Hyakiss the Lurker
-						["description"] = "Spawns in the northwestern corner of the big spider room. This rare is in stealth thus can be hard to find.",
+						["description"] = createLocalizationString({
+							readable = "Spawns in the northwestern corner of the big spider room. This rare is in stealth thus can be hard to find.",
+							constant = "SPAWNS_IN_THE_NORTHWESTERN_CORNER_OF_THE_BIG",
+							export = true,
+							text = {
+								en = "Spawns in the northwestern corner of the big spider room. This rare is in stealth thus can be hard to find.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "刷新在大蜘蛛房间的西北角。该稀有处于潜行状态，因此可能很难找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(30677),	-- Lurker's Belt
 							i(30675),	-- Lurker's Cord
@@ -694,7 +847,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(16180, {	-- Shadikith the Glider
-						["description"] = "Spawns in the eastern bat room.",
+						["description"] = createLocalizationString({
+							readable = "Spawns in the eastern bat room.",
+							constant = "SPAWNS_IN_THE_EASTERN_BAT_ROOM",
+							export = true,
+							text = {
+								en = "Spawns in the eastern bat room.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在东侧的蝙蝠房间刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(30681),	-- Glider's Boots
 							i(30680),	-- Glider's Foot-Wraps
@@ -778,10 +948,44 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1556, {	-- Opera Hall
 				["creatureID"] = 16812,	-- Barnes <The Stage Manager>
-				["description"] = "|CFFFF0000Moroes MUST be killed before you are allowed to participate in the Opera event.|r",
+				["description"] = createLocalizationString({
+					readable = "|CFFFF0000Moroes MUST be killed before you are allowed to participate in the Opera event.|r",
+					constant = "CFFFF0000MOROES_MUST_BE_KILLED_BEFORE_YOU_ARE",
+					export = true,
+					text = {
+						en = "|CFFFF0000Moroes MUST be killed before you are allowed to participate in the Opera event.|r",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|CFFFF0000必须先击杀莫罗斯，才被允许参加歌剧事件。|r",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
-						["description"] = "These items can drop from any of the Opera Hall bosses.",
+						["description"] = createLocalizationString({
+							readable = "These items can drop from any of the Opera Hall bosses.",
+							constant = "THESE_ITEMS_CAN_DROP_FROM_ANY_OF_THE_OPERA_HALL",
+							export = true,
+							text = {
+								en = "These items can drop from any of the Opera Hall bosses.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这些物品可以由歌剧院内的任意首领掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["crs"] = {
 							17603,	-- Grandmother
 							17521,	-- The Big Bad Wolf
@@ -919,7 +1123,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1560, {	-- Terestian Illhoof
 				["creatureID"] = 15688,
-				["description"] = "|CFFFF0000This boss is easy to miss!|r Working your way upwards through Guardian's Library, you will find the passage sloping slightly down to a room with a Disconcerting Bookshelf. This bookshelf reveals the hidden corridor to the boss.",
+				["description"] = createLocalizationString({
+					readable = "|CFFFF0000This boss is easy to miss!|r Working your way upwards through Guardian's Library, you will find the passage sloping slightly down to a room with a Disconcerting Bookshelf. This bookshelf reveals the hidden corridor to the boss.",
+					constant = "CFFFF0000THIS_BOSS_IS_EASY_TO_MISS_R_WORKING",
+					export = true,
+					text = {
+						en = "|CFFFF0000This boss is easy to miss!|r Working your way upwards through Guardian's Library, you will find the passage sloping slightly down to a room with a Disconcerting Bookshelf. This bookshelf reveals the hidden corridor to the boss.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|CFFFF0000这个首领很容易错过！|r 沿守护者图书馆向上走，你会发现通道略微向下倾斜，通往一个有令人不安的书架的房间。这个书架会揭示通往首领的隐藏走廊。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(22561),	-- Formula: Enchant Weapon - Soulfrost (RECIPE!)
 					i(138799, {	-- Illusion: Soulfrost (ILLUSION!)
@@ -975,7 +1196,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1561, {	-- Netherspite
 				["creatureID"] = 15689,
-				["description"] = "At the top of Guardian's Library does the passage split in two, a left upwards and a right downwards. The left passage takes you to Netherspite, and the right takes you to the two last bosses.",
+				["description"] = createLocalizationString({
+					readable = "At the top of Guardian's Library does the passage split in two, a left upwards and a right downwards. The left passage takes you to Netherspite, and the right takes you to the two last bosses.",
+					constant = "AT_THE_TOP_OF_GUARDIAN_S_LIBRARY_DOES_THE",
+					export = true,
+					text = {
+						en = "At the top of Guardian's Library does the passage split in two, a left upwards and a right downwards. The left passage takes you to Netherspite, and the right takes you to the two last bosses.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在守护者图书馆顶部，通道分成两条，左边向上，右边向下。左侧通道通往虚空幽龙，右侧则通往最后两个首领。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(28729),	-- Spiteblade
 					i(28734),	-- Jewel of Infinite Possibilities
@@ -998,7 +1236,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["provider"] = { "o", 185119 },	-- Dust Covered Chest
 				-- #if AFTER 9.0.2
-				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate, or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this has a 50% success rate.",
+				["description"] = createLocalizationString({
+					readable = "You have two options with this chess event: Either actively play it through with a higher success rate, or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this has a 50% success rate.",
+					constant = "YOU_HAVE_TWO_OPTIONS_WITH_THIS_CHESS_EVENT",
+					export = true,
+					text = {
+						en = "You have two options with this chess event: Either actively play it through with a higher success rate, or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this has a 50% success rate.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这个国际象棋事件有两种做法：要么积极玩完整局，成功率更高；要么在事件开始后立刻离开国王载具并离开游戏 5 分钟，这样做有 50% 的成功率。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["groups"] = {
 					i(28749),	-- King's Defender

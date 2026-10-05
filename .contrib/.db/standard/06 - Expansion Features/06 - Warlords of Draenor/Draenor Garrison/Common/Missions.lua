@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures,
 						ach(9140),	-- On A Metric Ton of Missions
 						ach(9146),	-- Patrolling Mission Specialist
 						ach(9523, {	-- Patrolling Draenor
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = {
 								i(111971),	-- Barracks, Level 3 [Blueprints]
 							},
@@ -62,7 +62,24 @@ root(ROOTS.ExpansionFeatures,
 						mi(2,   {	-- Gronnlings Abound
 							i(112737, {	-- Contract: Ka'la of the Frostwolves
 								follower(153, {	-- Ka'la
-									["description"] = "Press Shift+Click to refresh or relog once you obtain this follower.",
+									["description"] = createLocalizationString({
+										readable = "Press Shift+Click to refresh or relog once you obtain this follower.",
+										constant = "PRESS_SHIFT_CLICK_TO_REFRESH_OR_RELOG_ONCE_YOU",
+										export = true,
+										text = {
+											en = "Press Shift+Click to refresh or relog once you obtain this follower.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "获得该追随者后，按 Shift+点击刷新或重新登录。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							}),
 						}),
@@ -92,7 +109,24 @@ root(ROOTS.ExpansionFeatures,
 						mi(478),	-- Early Mover
 						mi(479),	-- Mountain of Spirits
 						i(114053, {	-- Shimmering Gauntlets
-							["description"] = "This token is a reward from one of the first missions when you initially unlock your garrison.",
+							["description"] = createLocalizationString({
+								readable = "This token is a reward from one of the first missions when you initially unlock your garrison.",
+								constant = "THIS_TOKEN_IS_A_REWARD_FROM_ONE_OF_THE_FIRST",
+								export = true,
+								text = {
+									en = "This token is a reward from one of the first missions when you initially unlock your garrison.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此代币是初次解锁要塞时最早几个任务之一的奖励。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(112810),	-- Windowhanger Wraps
 								i(112812),	-- Softfinger Grips
@@ -101,37 +135,71 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(118529, {	-- Cache of Highmaul Treasures [Normal]
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = createLocalizationString({
+								readable = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+								constant = "THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
+								export = true,
+								text = {
+									en = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此宝箱中的物品仅通过鼠标悬停显示，以展示潜在奖励。",
+									-- TODO: tw = "",
+								},
+							}),
 							["skipFill"] = true,
 							["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 						}),
 						i(118530, {	-- Cache of Highmaul Treasures [Heroic]
 							["skipFill"] = true,
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 						}),
 						i(118531, {	-- Cache of Highmaul Treasures [Mythic]
 							["skipFill"] = true,
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["sym"] = {{"select", "instanceID", 477}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 8, 51, 52, 53 }},
 						}),
 						i(122484, {	-- Blackrock Foundry Spoils [Normal]
 							["skipFill"] = true,
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(122485, {	-- Blackrock Foundry Spoils [Heroic]
 							["skipFill"] = true,
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(122486, {	-- Blackrock Foundry Spoils [Mythic]
 							["skipFill"] = true,
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["sym"] = {{"select", "instanceID", 457}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 2, 3, 4, 5, 6, 7, 51, 52, 53 }, {"not", "b", 2 }},
 						}),
 						i(114108, {	-- Tormented Armament
-							["description"] = "You must have level 34 active followers in order to get missions that reward this token.",
+							["description"] = createLocalizationString({
+								readable = "You must have level 34 active followers in order to get missions that reward this token.",
+								constant = "YOU_MUST_HAVE_LEVEL_34_ACTIVE_FOLLOWERS_IN",
+								export = true,
+								text = {
+									en = "You must have level 34 active followers in order to get missions that reward this token.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你必须拥有 34 级的激活追随者，才能获得奖励此代币的任务。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(115303),	-- Tormented Axe
 								i(115306),	-- Tormented Dagger
@@ -511,7 +579,24 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						mi(649, {	-- For Hate's Sake
-							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
+							["description"] = createLocalizationString({
+								readable = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
+								constant = "THIS_RARE_MISSION_HAS_A_CHANCE_TO_SPAWN_AFTER",
+								export = true,
+								text = {
+									en = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在你建造 3 级船坞并完成任务“装备蓝图：幽灵望远镜”后，此稀有任务有几率出现，该任务物品由塔纳安丛林的铁胡子船长掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(128172),	-- Captain Sander's Returned Band
 								a(crit(29703, {	-- For Hate's Sake
@@ -549,7 +634,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						mi(650, {	-- The House always wins
-							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
+							["description"] = "~L.THIS_RARE_MISSION_HAS_A_CHANCE_TO_SPAWN_AFTER",
 							["groups"] = {
 								i(128173),	-- Admiral Taylor's Loyalty Ring
 								a(crit(29701, {	-- The House Always Wins
@@ -561,7 +646,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						mi(616, {	-- The Wave Mistress
-							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
+							["description"] = "~L.THIS_RARE_MISSION_HAS_A_CHANCE_TO_SPAWN_AFTER",
 							["groups"] = {
 								i(128169),	-- Signet of the Third Fleet
 								a(crit(29702, {	-- The Wave Mistress
@@ -573,7 +658,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(128391, {	-- Iron Fleet Treasure Chest [Raid Finder]
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
@@ -584,7 +669,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(127853, {	-- Iron Fleet Treasure Chest [Normal]
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
@@ -595,7 +680,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(127854, {	-- Iron Fleet Treasure Chest [Heroic]
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},
@@ -606,7 +691,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(127855, {	-- Iron Fleet Treasure Chest [Mythic]
-							["description"] = "The items from this cache are only displayed via mouseover to help showcase the potential rewards.",
+							["description"] = "~L.THE_ITEMS_FROM_THIS_CACHE_ARE_ONLY_DISPLAYED",
 							["skipFill"] = true,
 							["sym"] = {
 								{"select", "instanceID", 669}, {"pop"},

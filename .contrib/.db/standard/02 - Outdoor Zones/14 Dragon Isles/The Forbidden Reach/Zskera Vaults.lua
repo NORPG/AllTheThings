@@ -295,7 +295,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["cost"] = { { "i", 204340, 30 } },	-- 30x Torn Recipe Scrap
 				}),
 				i(202252, {	-- Recipe Rat
-					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
+					["description"] = createLocalizationString({
+						readable = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
+						constant = "INTERACT_WITH_RECIPE_RAT_IT_WILL_ONLY_CONTINUE",
+						export = true,
+						text = {
+							en = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与食谱老鼠互动。它只有在有足够陈年切达奶酪时才会继续谈判。注意，即使不谈判，这只老鼠也会不停地吃。\n在宝库内每 5 分钟也可以继续拾取并使用这只老鼠，从而在不消耗奶酪的情况下获得残渣。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = { 202982 },	-- Recipe Rat
 					["cost"] = { { "i", 3927, 200 } },	-- 200x Fine Aged Cheddar
 					["groups"] = {
@@ -552,7 +569,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["groups"] = {
 								i(204405, {	-- Stuffed Bear (TOY!)
 									-- #if BEFORE TWW
-									["description"] = "This will be a Toy in The War Within.",
+									["description"] = createLocalizationString({
+										readable = "This will be a Toy in The War Within.",
+										constant = "THIS_WILL_BE_A_TOY_IN_THE_WAR_WITHIN",
+										export = true,
+										text = {
+											en = "This will be a Toy in The War Within.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "它将在《地心之战》中成为玩具。",
+											-- TODO: tw = "",
+										},
+									}),
 									-- #endif
 								}),
 							},
@@ -723,7 +757,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
 							["groups"] = {
 								i(203690, {	-- Pearlescent Bubble Key
-									["description"] = "This item is needed to unlock next floor",
+									["description"] = createLocalizationString({
+										readable = "This item is needed to unlock next floor",
+										constant = "THIS_ITEM_IS_NEEDED_TO_UNLOCK_NEXT_FLOOR",
+										export = true,
+										text = {
+											en = "This item is needed to unlock next floor",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要此物品才能解锁下一层。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							},
 						}),
@@ -743,7 +794,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75129,
 						}),
 						o(386428, {	-- Primordial Earth Cache
-							["description"] = "The Key can be looted by nearby elemental, after interacting with the orb.",
+							["description"] = createLocalizationString({
+								readable = "The Key can be looted by nearby elemental, after interacting with the orb.",
+								constant = "THE_KEY_CAN_BE_LOOTED_BY_NEARBY_ELEMENTAL_AFTER",
+								export = true,
+								text = {
+									en = "The Key can be looted by nearby elemental, after interacting with the orb.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "与法球互动后，附近的元素生物可以拾取这把钥匙。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 27.0, 53.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74402,
 						}),
@@ -766,7 +834,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(386442, {	-- Primordial Void Cache
-							["description"] = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+							["description"] = createLocalizationString({
+								readable = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+								constant = "REQUIRES_INTERACTING_WITH_MYSTERIOUS_VOIDMARK",
+								export = true,
+								text = {
+									en = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "需要与“神秘的虚空印记”互动才能使其可见。",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 74527,	-- (maybe on other one)
 						}),
 						-- o(386602, {	-- Primordial Void Cache
@@ -832,7 +917,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(390136, {	-- Spore-bound Essence
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75136,
-							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["description"] = createLocalizationString({
+								readable = "Use Restorative Water on an Overgrown Skeleton.",
+								constant = "USE_RESTORATIVE_WATER_ON_AN_OVERGROWN_SKELETON",
+								export = true,
+								text = {
+									en = "Use Restorative Water on an Overgrown Skeleton.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "对一具过度生长的骷髅使用恢复之水。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 203720, 1 } },	-- Restorative Water
 							["cr"] = 202336,	-- Overgrown Skeleton
 							["groups"] = {
@@ -907,7 +1009,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(398778, {	-- Disgusting Vat
-							["description"] = "You must fish when interacting with this.",
+							["description"] = createLocalizationString({
+								readable = "You must fish when interacting with this.",
+								constant = "YOU_MUST_FISH_WHEN_INTERACTING_WITH_THIS",
+								export = true,
+								text = {
+									en = "You must fish when interacting with this.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "与此物体互动时必须进行钓鱼。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(193853),	-- Emmah (PET!)
 								i(203701),	-- Neltharion Gift Token
@@ -1129,12 +1248,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74425,
 						}),
 						o(389789, {	-- Primordial Earth Cache
-							["description"] = "Use Stone Dissolver.",
+							["description"] = createLocalizationString({
+								readable = "Use Stone Dissolver.",
+								constant = "USE_STONE_DISSOLVER",
+								export = true,
+								text = {
+									en = "Use Stone Dissolver.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "使用溶石剂。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 30.6, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75066,
 						}),
 						o(389902, {	-- Primordial Earth Cache
-							["description"] = "Use Stone Dissolver.",
+							["description"] = "~L.USE_STONE_DISSOLVER",
 							["coord"] = { 30.6, 55.3, THE_FORBIDDEN_REACH },
 							["questID"] = 75068,
 						}),
@@ -1184,7 +1320,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(387853, {	-- Shattered Crystals
-							["description"] = "Use Stone Dissolver.",
+							["description"] = "~L.USE_STONE_DISSOLVER",
 							["coord"] = { 27.0, 49.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74865,
 							["groups"] = {
@@ -1193,7 +1329,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(392583, {	-- Void-Bound Strongbox
-							["description"] = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+							["description"] = "~L.REQUIRES_INTERACTING_WITH_MYSTERIOUS_VOIDMARK",
 							["questID"] = 75185,
 						}),
 						o(386451, {	-- Wind-Bound Strongbox
@@ -1203,7 +1339,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				})),
 				o(389471, {	-- Grand Obsidian Cache
-					["description"] = "Can be accessed through the Broken Waygate repaired with an Obsidian Toolkit.",
+					["description"] = createLocalizationString({
+						readable = "Can be accessed through the Broken Waygate repaired with an Obsidian Toolkit.",
+						constant = "CAN_BE_ACCESSED_THROUGH_THE_BROKEN_WAYGATE",
+						export = true,
+						text = {
+							en = "Can be accessed through the Broken Waygate repaired with an Obsidian Toolkit.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可通过用黑曜石工具包修复的破损界门进入。",
+							-- TODO: tw = "",
+						},
+					}),
 					["questID"] = 75047,
 					["sourceQuest"] = 74978,	-- Broken Waygate (repaired)
 					["coord"] = { 29.5, 55.7, THE_FORBIDDEN_REACH },

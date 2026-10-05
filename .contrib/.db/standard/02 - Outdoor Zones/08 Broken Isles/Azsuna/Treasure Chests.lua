@@ -32,7 +32,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 55.9, 56.9, AZSUNA },
 				}),
 				o(256790, {	-- Elven Treasure Chest
-					["description"] = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah."
+					["description"] = createLocalizationString({
+						readable = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah.",
+						constant = "THESE_REPEATABLE_CHESTS_SPAWN_ALL_OVER_THE_MAP",
+						export = true,
+						text = {
+							en = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些可重复的宝箱会在阿苏纳和瓦尔莎拉的地图各处刷新。",
+							-- TODO: tw = "",
+						},
+					})
 				}),
 				o(240637, {	-- Glimmering Treasure Chest
 					["questID"] = 38367,
@@ -45,7 +62,24 @@ root(ROOTS.Zones, {
 				o(240645, {	-- Glimmering Treasure Chest
 					["questID"] = 37649,
 					["coord"] = { 69.5, 49.3, 632 },	-- Oceanus Cove
-					["description"] = "In the Oceanus Cove cave next to Lady Sssurine.",
+					["description"] = createLocalizationString({
+						readable = "In the Oceanus Cove cave next to Lady Sssurine.",
+						constant = "IN_THE_OCEANUS_COVE_CAVE_NEXT_TO_LADY_SSSURINE",
+						export = true,
+						text = {
+							en = "In the Oceanus Cove cave next to Lady Sssurine.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在瑟苏琳女士旁边的欧申纳斯海湾洞穴中。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = { i(129078) },	-- Sssurine's Luxurious Sssandals
 				}),
 				o(250107, {	-- Glimmering Treasure Chest
@@ -70,7 +104,24 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(269064, {	-- Small Treasure Chest (need to verify objectID)
-					["description"] = "Inside Nar'thalas Academy, down the right branching hallway. May require Nar'thalas Academy quests to open the door.",
+					["description"] = createLocalizationString({
+						readable = "Inside Nar'thalas Academy, down the right branching hallway. May require Nar'thalas Academy quests to open the door.",
+						constant = "INSIDE_NAR_THALAS_ACADEMY_DOWN_THE_RIGHT",
+						export = true,
+						text = {
+							en = "Inside Nar'thalas Academy, down the right branching hallway. May require Nar'thalas Academy quests to open the door.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在纳萨拉斯学院内，沿右侧分岔走廊下去。可能需要完成纳萨拉斯学院的任务才能打开门。",
+							-- TODO: tw = "",
+						},
+					}),
 					["questID"] = 42285,
 					["coord"] = { 71.7, 21.7, 631 },
 				}),
@@ -121,7 +172,24 @@ root(ROOTS.Zones, {
 				o(254025, {	-- Small Treasure Chest
 					["questID"] = 44103,
 					["coord"] = { 68.9, 29.7, AZSUNA },
-					["description"] = "In an underwater cave.",
+					["description"] = createLocalizationString({
+						readable = "In an underwater cave.",
+						constant = "IN_AN_UNDERWATER_CAVE",
+						export = true,
+						text = {
+							en = "In an underwater cave.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在水下洞穴中。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				o(246205, {	-- Small Treasure Chest
 					["questID"] = 40751,
@@ -201,7 +269,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 55.6, 18.5, AZSUNA },
 				}),
 				o(240634, {	-- Treasure Chest
-					["description"] = "At the back of the room, behind some Withered Leyfeeders channeling a floating mana crystal.",
+					["description"] = createLocalizationString({
+						readable = "At the back of the room, behind some Withered Leyfeeders channeling a floating mana crystal.",
+						constant = "AT_THE_BACK_OF_THE_ROOM_BEHIND_SOME_WITHERED",
+						export = true,
+						text = {
+							en = "At the back of the room, behind some Withered Leyfeeders channeling a floating mana crystal.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在房间深处，一些正在引导一颗漂浮魔力水晶的枯法魔网吞食者后面。",
+							-- TODO: tw = "",
+						},
+					}),
 					["questID"] = 37958,
 					["coord"] = { 57.3, 12.9, AZSUNA },
 				}),
@@ -218,7 +303,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 56.4, 34.8, AZSUNA },
 				}),
 				o(250092, {	-- Treasure Chest
-					["description"] = "At the far back of the Leyhollow cave.",
+					["description"] = createLocalizationString({
+						readable = "At the far back of the Leyhollow cave.",
+						constant = "AT_THE_FAR_BACK_OF_THE_LEYHOLLOW_CAVE",
+						export = true,
+						text = {
+							en = "At the far back of the Leyhollow cave.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在魔网洞穴的最深处。",
+							-- TODO: tw = "",
+						},
+					}),
 					["questID"] = 42289,
 					["coord"] = { 51.5, 24.3, AZSUNA },
 				}),
@@ -234,7 +336,24 @@ root(ROOTS.Zones, {
 				o(250109, {	-- Treasure Chest
 					["questID"] = 42339,
 					["coord"] = { 52.9, 20.6, AZSUNA },
-					["description"] = "At the end of the cave full of sleeping bears. Tread lightly!",
+					["description"] = createLocalizationString({
+						readable = "At the end of the cave full of sleeping bears. Tread lightly!",
+						constant = "AT_THE_END_OF_THE_CAVE_FULL_OF_SLEEPING_BEARS",
+						export = true,
+						text = {
+							en = "At the end of the cave full of sleeping bears. Tread lightly!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在满是沉睡熊的洞穴尽头。脚步放轻！",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				o(250432, {	-- Unstable Riftstone
 					["coord"] = { 28.0, 51.1, AZSUNA },

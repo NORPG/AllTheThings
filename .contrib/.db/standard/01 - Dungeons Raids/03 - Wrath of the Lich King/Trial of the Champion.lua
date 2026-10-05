@@ -351,7 +351,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
 					-- #if BEFORE 5.0.4
-					["description"] = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
+					["description"] = createLocalizationString({
+						readable = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
+						constant = "BLIZZARD_BROKE_AUTO_COMPLETE_QUESTS_SO_UNTIL",
+						export = true,
+						text = {
+							en = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "暴雪弄坏了自动完成任务，所以在他们修复该系统之前，这个任务无法上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["isBounty"] = true,
 					-- #endif
 					["qg"] = 34996,	-- Highlord Tirion Fordring

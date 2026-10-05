@@ -401,7 +401,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(43668),	-- Ley Line Tuner
 							-- #endif
 							applyclassicphase(WRATH_PHASE_FOUR, i(52676, {	-- Cache of the Ley-Guardian
-								["description"] = "This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",
+								["description"] = createLocalizationString({
+									readable = "This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",
+									constant = "THIS_BAG_IS_ONLY_AVAILABLE_IF_YOU_QUEUE_FOR_THE",
+									export = true,
+									text = {
+										en = "This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这个袋子只有在你使用随机地下城查找器排队进入副本时才会出现。它不会在明确组建的队伍中掉落，也不会通过“选择副本”界面进入时掉落。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(43953),	-- Blue Drake (MOUNT!)
 									-- #IF BEFORE CATA

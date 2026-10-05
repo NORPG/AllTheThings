@@ -15,28 +15,96 @@ root(ROOTS.Zones, {
 					ach(11189),	-- Variety is the Spice of Life
 				}),
 				header(HEADERS.Spell, 41341, {	-- Balance of Power
-					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
+					["description"] = createLocalizationString({
+						readable = "The only known requirement to start this questline is the completion of your class campaign.",
+						constant = "THE_ONLY_KNOWN_REQUIREMENT_TO_START_THIS",
+						export = true,
+						text = {
+							en = "The only known requirement to start this questline is the completion of your class campaign.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "开启此任务线唯一已知的要求是完成你的职业战役。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						q(43496, {	-- The Power Within
-							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
+							["description"] = createLocalizationString({
+								readable = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
+								constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_HAVE_COMPLETED",
+								export = true,
+								text = {
+									en = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你*已经*完成阿苏纳蓝翼憩地的任务，此任务就会开放。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 110768 },	-- Image of Kalec
 							["maps"] = exclude({HALL_OF_THE_GUARDIAN_2ND_FLOOR, HALL_OF_THE_GUARDIAN}, CLASS_HALL_MAPS),
 							["classes"] = exclude(MAGE, ALL_CLASSES),
 						}),
 						q(43501, {	-- The Power Within
-							["description"] = "This quest is available if you *have not* completed the quests at Azurewing Repose in Azsuna.",
+							["description"] = createLocalizationString({
+								readable = "This quest is available if you *have not* completed the quests at Azurewing Repose in Azsuna.",
+								constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_HAVE_NOT",
+								export = true,
+								text = {
+									en = "This quest is available if you *have not* completed the quests at Azurewing Repose in Azsuna.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你*尚未*完成阿苏纳蓝翼栖地的任务，则可以接取此任务。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 110768 },	-- Image of Kalec
 							["maps"] = exclude({HALL_OF_THE_GUARDIAN_2ND_FLOOR, HALL_OF_THE_GUARDIAN}, CLASS_HALL_MAPS),
 							["classes"] = exclude(MAGE, ALL_CLASSES),
 						}),
 						q(43503, {	-- The Power Within
-							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
+							["description"] = "~L.THIS_QUEST_IS_AVAILABLE_IF_YOU_HAVE_COMPLETED",
 							["provider"] = { "n", 108247 },	-- Image of Kalec
 							["maps"] = { HALL_OF_THE_GUARDIAN_2ND_FLOOR, HALL_OF_THE_GUARDIAN },
 							["classes"] = { MAGE },
 						}),
 						q(43505, {	-- The Power Within
-							["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna.",
+							["description"] = createLocalizationString({
+								readable = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna.",
+								constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_HAVE_NOT_2",
+								export = true,
+								text = {
+									en = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你*尚未*完成阿苏纳蓝翼栖地的任务，则可以接取此任务。",
+									-- TODO: tw = "",
+								},
+							}),
 							["altQuests"] = { 43503 },	-- The Power Within (this is the only version that doesn't autocomplete with the others when you turn one in)
 							["provider"] = { "n", 108247 },	-- Image of Kalec
 							["coord"] = { 56.4, 39.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -128,12 +196,46 @@ root(ROOTS.Zones, {
 							["maps"] = { SURAMAR },
 						}),
 						q(43523, {	-- Repaid Debt
-							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar.",
+							["description"] = createLocalizationString({
+								readable = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar.",
+								constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_HAVE_COMPLETED_2",
+								export = true,
+								text = {
+									en = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你*已经*完成苏拉玛月卫要塞的任务，则可以接取此任务。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuests"] = { 43522 },	-- Essential Consumption
 							["provider"] = { "n", 110773 },	-- Archmage Kalec
 						}),
 						q(43527, {	-- Saving the Guard
-							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar.",
+							["description"] = createLocalizationString({
+								readable = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar.",
+								constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_HAVE_NOT_3",
+								export = true,
+								text = {
+									en = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你*尚未*完成苏拉玛月卫要塞的任务，则可以接取此任务。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuests"] = { 43522 },	-- Essential Consumption
 							["provider"] = { "n", 110773 },	-- Archmage Kalec
 							["coord"] = { 48.1, 25.6, AZSUNA },
@@ -396,7 +498,24 @@ root(ROOTS.Zones, {
 					["maps"] = CLASS_HALL_MAPS,
 					["groups"] = {
 						q(44009, {	-- A Falling Star (non-Paladin)
-							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required. not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
+							["description"] = createLocalizationString({
+								readable = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",
+								constant = "THE_PREREQUISITE_FOR_THIS_QUEST_IS_RECRUITING",
+								export = true,
+								text = {
+									en = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此任务的前提条件是招募你职业的前两名勇士、完成你的第一个短任务，并招募你的第一批部队。",
+									-- TODO: tw = "",
+								},
+							}),	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required. not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
 							["classes"] = exclude(PALADIN, ALL_CLASSES),
@@ -410,7 +529,24 @@ root(ROOTS.Zones, {
 							["groups"] = { i(140574) },	-- Mysterious Lightbound Object (QI!)
 						}),
 						q(44004, {	-- Bringer of the Light
-							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
+							["description"] = createLocalizationString({
+								readable = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
+								constant = "THIS_QUEST_SENDS_YOU_TO_A_SCENARIO_INVOLVING",
+								export = true,
+								text = {
+									en = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此任务会把你送入一个涉及埃索达和先知维伦的场景战役。在击杀最终首领之前，请务必完成场景内的所有内容！",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuests"] = {
 								44009,	-- A Falling Star (non-Paladin version)
 								44257,	-- A Falling Star (Paladin version)
@@ -440,7 +576,24 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(43705, {	-- Nobundo's Last Stand
-									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
+									["description"] = createLocalizationString({
+										readable = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
+										constant = "THIS_QUEST_CAN_ONLY_BE_COMPLETED_DURING_THE_IN",
+										export = true,
+										text = {
+											en = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "此任务只能在“保卫埃索达”场景战役期间完成。如果你想完成这个可选任务，必须在完成第 2 步目标（传送门和受惊的市民）之前接取它，否则它将不再可用！",
+											-- TODO: tw = "",
+										},
+									}),
 									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["provider"] = { "n", 110695 },	-- Farseer Nobundo
 									["coord"] = { 44.9, 9.3, 775 },	-- The Exodar
@@ -465,12 +618,46 @@ root(ROOTS.Zones, {
 							["groups"] = { i(140763) },	-- Light's Heart (QI!)
 						}),
 						q(44337, {	-- Goddess Watch Over You
-							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",
+							["description"] = createLocalizationString({
+								readable = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",
+								constant = "THERE_ARE_TWO_VERSIONS_OF_THIS_QUEST_ONE_FOR",
+								export = true,
+								text = {
+									en = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个任务有两个版本：一个面向已完成夺回艾露恩之泪任务链的玩家，另一个面向尚未完成的玩家。\n\n这个是面向已完成的玩家的。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 44153,	-- Light's Charge
 							["provider"] = { "n", 113686 },	-- Archmage Khadgar
 						}),
 						q(44338, {	-- Goddess Watch Over You
-							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that haven't.",
+							["description"] = createLocalizationString({
+								readable = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that haven't.",
+								constant = "THERE_ARE_TWO_VERSIONS_OF_THIS_QUEST_ONE_FOR_2",
+								export = true,
+								text = {
+									en = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that haven't.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个任务有两个版本：一个面向已完成夺回艾露恩之泪任务链的玩家，另一个面向尚未完成的玩家。\n\n这个是面向尚未完成的玩家的。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 44153,	-- Light's Charge
 							["provider"] = { "n", 113686 },	-- Archmage Khadgar
 						}),
@@ -493,13 +680,47 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 113857 },	-- Light's Heart
 						}),
 						q(44479, {	-- Ravencrest's Legacy
-							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
+							["description"] = createLocalizationString({
+								readable = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
+								constant = "THIS_QUEST_SENDS_YOU_TO_A_SCENARIO_INVOLVING_2",
+								export = true,
+								text = {
+									en = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此任务会把你送入一个涉及库塔洛斯·拉文凯斯、伊利丹·怒风和命运多舛的月卫的场景战役。在击杀最终首领之前，请务必完成场景内的所有内容！",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 44466,	-- An Unclear Path
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["maps"] = { 793 },	-- Scenario: Black Rook Hold
 							["groups"] = {
 								q(44414, {	-- Felspawns of Lothros
-									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
+									["description"] = createLocalizationString({
+										readable = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
+										constant = "THIS_QUEST_CAN_ONLY_BE_COMPLETED_WHILE_IN_THE",
+										export = true,
+										text = {
+											en = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "此任务只能在“雷文凯斯的遗产”场景战役中完成。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuest"] = 44479,	-- Ravencrest's Legacy
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
 									["qgs"] = {
@@ -509,7 +730,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 38.7, 53.1, 793 },	-- Scenario: Black Rook Hold
 								}),
 								q(44415, {	-- The Red Axe
-									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
+									["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_COMPLETED_WHILE_IN_THE",
 									["sourceQuest"] = 44414,	-- Felspawns of Lothros
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
 									["qgs"] = {
@@ -519,7 +740,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 40.4, 53.0, 793 },	-- Scenario: Black Rook Hold
 								}),
 								q(44416, {	-- Hunter of Night
-									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
+									["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_COMPLETED_WHILE_IN_THE",
 									["sourceQuest"] = 44415,	-- The Red Axe
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
 									["provider"] = { "n", 113355 },	-- Broxigar the Red
@@ -548,7 +769,24 @@ root(ROOTS.Zones, {
 							["groups"] = { i(249230, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END }}) },	-- Temple of Zin-Malor Scroll (QI!)
 						}),
 						q(44496, {	-- Destiny Unfulfilled
-							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
+							["description"] = createLocalizationString({
+								readable = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
+								constant = "THERE_ARE_THREE_VERSIONS_OF_THIS_QUEST_ONE_FOR",
+								export = true,
+								text = {
+									en = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个任务有三个版本：一个面向恶魔猎手，一个面向已在黑暗神殿击败伊利丹的玩家，还有一个面向前者之外的玩家。\n\n这个是面向尚未击杀他的玩家的。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["groups"] = {
 								i(249229, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END }}),	-- Black Temple Scroll (QI!)
@@ -559,7 +797,24 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(44497, {	-- Destiny Unfulfilled
-							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
+							["description"] = createLocalizationString({
+								readable = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
+								constant = "THERE_ARE_THREE_VERSIONS_OF_THIS_QUEST_ONE_FOR_2",
+								export = true,
+								text = {
+									en = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个任务有三个版本：一个面向恶魔猎手，一个面向已在黑暗神殿击败伊利丹的玩家，还有一个面向前者之外的玩家。\n\n这个版本仅限猎人和恶魔猎手。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["classes"] = { HUNTER, DEMONHUNTER },
@@ -572,7 +827,24 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(44481, {	-- Destiny Unfulfilled
-							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
+							["description"] = createLocalizationString({
+								readable = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
+								constant = "THERE_ARE_THREE_VERSIONS_OF_THIS_QUEST_ONE_FOR_3",
+								export = true,
+								text = {
+									en = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个任务有三个版本：一个面向恶魔猎手，一个面向已在黑暗神殿击败伊利丹的玩家，还有一个面向前者之外的玩家。\n\n这个是面向已经击败他的玩家的。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["groups"] = {
@@ -636,15 +908,66 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(41368, {	-- Lost Mail
-						["description"] = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran. It can spawn in multiple places and has a long respawn timer. If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
+						["description"] = createLocalizationString({
+							readable = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran. It can spawn in multiple places and has a long respawn timer. If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
+							constant = "TO_GET_THIS_QUEST_YOU_MUST_FIND_A_SMALL",
+							export = true,
+							text = {
+								en = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran. It can spawn in multiple places and has a long respawn timer. If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要获得此任务，你必须在破碎群岛达拉然的邮箱附近找到一个小信封。它可能在多个位置刷新，且刷新时间很长。如果你不想等，可以尝试在拍卖行购买失落的信件。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 134859 },	-- Lost Mail
 					}),
 					q(41411, {	-- Lost Mail
-						["description"] = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House. (Players who complete the questline will get a piece of mail that can be traded or sold.)",
+						["description"] = createLocalizationString({
+							readable = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House. (Players who complete the questline will get a piece of mail that can be traded or sold.)",
+							constant = "IF_YOU_DON_T_WANT_TO_CAMP_OUT_TO_START_THE",
+							export = true,
+							text = {
+								en = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House. (Players who complete the questline will get a piece of mail that can be traded or sold.)",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你不想蹲守来开启任务线，你可以试着在拍卖行购买失落的邮件。（完成该任务线的玩家会获得一封可以交易或出售的邮件。）",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 135479 },	-- Lost Mail
 					}),
 					q(46278, {	-- Return to Sender
-						["description"] = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
+						["description"] = createLocalizationString({
+							readable = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
+							constant = "AFTER_TURNING_IN_THE_LOST_MAIL_TO_MADAM_GOYA_IN",
+							export = true,
+							text = {
+								en = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在达拉然下水道把遗失的邮件交给郭雅夫人后，你会收到一封来自邮差的信，指示你前去报到！使用所提供坐标处的邮件管道前往下方的邮件室。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 41368, 41411 },	-- Lost Mail
 						["provider"] = { "n", 103976 },	-- The Postmaster
 						["coord"] = { 33.0, 31.7, LEGION_DALARAN },
@@ -678,7 +1001,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.6, 73.1, FERALAS },
 					}),
 					q(50247, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- The Mail Must Flow
-						["description"] = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
+						["description"] = createLocalizationString({
+							readable = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
+							constant = "AFTER_YOU_FINISH_PERFORMING_MENIAL_TASKS_FOR",
+							export = true,
+							text = {
+								en = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "为乔尼·了不起完成杂活后，你会收到邮差寄来的另一封信，要求你前往邮件室。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 41395 },	-- Due Reward
 						["provider"] = { "n", 103976 },	-- The Postmaster
 						["groups"] = {
@@ -687,7 +1027,24 @@ root(ROOTS.Zones, {
 					})),
 					ach(12431, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Post Haste
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
-						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+						["description"] = createLocalizationString({
+							readable = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+							constant = "ONCE_YOU_VE_DONE_THE_LAST_QUEST_YOU_CAN_SPEAK",
+							export = true,
+							text = {
+								en = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成最后一个任务后，你可以再次与邮政长交谈，提供更多分拣信件的帮助。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(156721),	-- Mailemental (PET!)
 							i(156836, {	-- Bulging Package
@@ -698,7 +1055,7 @@ root(ROOTS.Zones, {
 					})),
 					ach(12439, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Priority Mail
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
-						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+						["description"] = "~L.ONCE_YOU_VE_DONE_THE_LAST_QUEST_YOU_CAN_SPEAK",
 						["groups"] = {
 							title(372),	-- Postmaster <Name>
 						},

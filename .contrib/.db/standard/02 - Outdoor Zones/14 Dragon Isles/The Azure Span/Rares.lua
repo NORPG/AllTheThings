@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193178, {	-- Blightfur
-				["description"] = "Speak to nearby NPC to spawn.",
+				["description"] = "~L.SPEAK_TO_NEARBY_NPC_TO_SPAWN",
 				["cr"] = 193633,	-- Golkrin
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
@@ -69,7 +69,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
 				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 7 },
-				["description"] = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
+				["description"] = createLocalizationString({
+					readable = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
+					constant = "COLLECT_THE_BROKEN_FISHING_POLE_TORN_FISHING",
+					export = true,
+					text = {
+						en = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在附近收集破损的鱼竿、破烂的渔网和旧鱼叉来召唤他。\n\n如果你是召唤者，可获得 950 点声望；普通标记则获得 60 点声望。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
 				["questID"] = 72730,
 				["isDaily"] = IGNORED_VALUE,
@@ -87,7 +104,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 73876,
 			}),
 			n(191356, {	-- Frostpaw
-				["description"] = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
+				["description"] = createLocalizationString({
+					readable = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
+					constant = "CAN_BE_SPAWNED_WHEN_THE_THREE_TOYS_ARE_PRESENT",
+					export = true,
+					text = {
+						en = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "当附近树桩上放置了三个玩具时即可刷新——在 58.6, 43.4 处使用锤子。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 58.2, 43.7, THE_AZURE_SPAN },
 				["questID"] = 73877,
 			}),
@@ -131,7 +165,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 73884,
 			}),
 			n(193201, {	-- Mucka the Raker
-				["description"] = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
+				["description"] = createLocalizationString({
+					readable = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
+					constant = "IN_ORDER_TO_FULLY_KILL_THIS_RARE_AND_NOT_HAVE",
+					export = true,
+					text = {
+						en = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "为了彻底杀死这只稀有并防止她重置，你必须先击杀区域内的两只泥泞幼崽。它们常常卡在岩石里。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 57.2, 53.6, THE_AZURE_SPAN },
 				["questID"] = 73885,
 			}),
@@ -169,7 +220,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 74032,
 			}),
 			n(193238, {	-- Spellwrought Snowman
-				["description"] = "Collect 10 arcane energy around the small mountain & after turning them in, click the Arcane Pedestal to summon the mob.",
+				["description"] = createLocalizationString({
+					readable = "Collect 10 arcane energy around the small mountain & after turning them in, click the Arcane Pedestal to summon the mob.",
+					constant = "COLLECT_10_ARCANE_ENERGY_AROUND_THE_SMALL",
+					export = true,
+					text = {
+						en = "Collect 10 arcane energy around the small mountain & after turning them in, click the Arcane Pedestal to summon the mob.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在小山周围收集 10 份奥术能量，全部上交后点击奥术基座以召唤该怪物。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 55.0, 34.0, THE_AZURE_SPAN },	-- Rare
 					{ 53.9, 35.6, THE_AZURE_SPAN },	-- Arcane Pedestal
@@ -196,7 +264,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- },
 			}),
 			n(193196, {	-- Trilvarus Loreweaver
-				["description"] = "Collect a little blue crystal called Singing Fragment north of Olias & bring it to him to summon Trilvarus.",
+				["description"] = createLocalizationString({
+					readable = "Collect a little blue crystal called Singing Fragment north of Olias & bring it to him to summon Trilvarus.",
+					constant = "COLLECT_A_LITTLE_BLUE_CRYSTAL_CALLED_SINGING",
+					export = true,
+					text = {
+						en = "Collect a little blue crystal called Singing Fragment north of Olias & bring it to him to summon Trilvarus.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在奥利亚斯北边收集一块名为歌唱碎片的蓝色小水晶，带给他以召唤特里尔瓦鲁斯。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = {
 					193782,	-- Olias Rivershaw
 				},

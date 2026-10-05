@@ -148,7 +148,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		n(REWARDS, {
 			i(11423, {	-- Gnome Engineer's Renewal Gift
-				["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+				["description"] = "~L.IF_YOU_DESTROY_YOUR_GNOME_ENGINEER_MEMBERSHIP",
 				["provider"] = { "i", 10790 },	-- Gnome Engineer Membership Card
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
@@ -158,7 +158,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			i(11422, {	-- Goblin Engineer's Renewal Gift
-				["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+				["description"] = "~L.IF_YOU_DESTROY_YOUR_GOBLIN_ENGINEER_MEMBERSHIP",
 				["provider"] = { "i", 10791 },	-- Goblin Engineer Membership Card
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
@@ -500,7 +500,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			------ Tools of Trade Questline ------
 			q(55028, {	-- It's Scrap Work... [A]
-				["description"] = "Requires 150 Kul Tiran Engineering.",
+				["description"] = createLocalizationString({
+					readable = "Requires 150 Kul Tiran Engineering.",
+					constant = "REQUIRES_150_KUL_TIRAN_ENGINEERING",
+					export = true,
+					text = {
+						en = "Requires 150 Kul Tiran Engineering.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 150 点库尔提拉斯工程学。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 136059 },	-- Layla Evenkeel
 				["coord"] = { 77.4, 14.2, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
@@ -511,7 +528,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(55031, {	-- It's Scrap Work... [H]
-				["description"] = "Requires 150 Zandalari Engineering.",
+				["description"] = createLocalizationString({
+					readable = "Requires 150 Zandalari Engineering.",
+					constant = "REQUIRES_150_ZANDALARI_ENGINEERING",
+					export = true,
+					text = {
+						en = "Requires 150 Zandalari Engineering.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 150 点赞达拉工程学。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 131840 },	-- Shuga Blastcaps
 				["coord"] = { 45.1, 40.6, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
@@ -664,7 +698,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		n(QUESTS, {
 			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
-				["description"] = "You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",
+				["description"] = createLocalizationString({
+					readable = "You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",
+					constant = "YOU_CAN_COLLECT_ADDITIONAL_PORTAL_OPTIONS",
+					export = true,
+					text = {
+						en = "You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你可以收集更多传送门选项。\n随机地点 = 冒失地跳进传送门……\n觉醒海岸 = 祈祷自己回到觉醒海岸。\n欧恩哈拉平原 = 跺跺你的蹄子，无论是否真实存在……\n碧蓝林海 = 确保你抵达碧蓝林海……\n索德拉苏斯 = 大声拼出“索德拉苏斯”……\n禁忌离岛 = 无视“禁忌”二字，勇往直前……\n扎拉莱克洞窟 = 把传送门水平翻转……\n翡翠梦境 = 闭上眼睛大声打呼。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- Object IDs and quest IDs are put at random to each other.
 				-- There seems to be no way of getting the correct object ID for the Deactivated Signal Transmitter in game. (does not matter for ATT purpose)
 				["groups"] = {
@@ -740,7 +791,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(72242, {	-- Dragon Isles Engineering
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
+				["description"] = createLocalizationString({
+					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
+					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_5",
+					export = true,
+					text = {
+						en = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务只能在学会巨龙群岛工程学之前接取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -749,7 +817,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(70359, {	-- Dragon Isles Engineering
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
+				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_5",
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -788,7 +856,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		},{
 			------ Requires 25 Skill ------
 			q(66942, {	-- Enemy Engineering
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["groups"] = {
@@ -796,17 +864,17 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(70591, {	-- Engineering Services Requested
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66891, {	-- Explosive Ash
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 			}),
 			q(72396, {	-- Horns of Plenty
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -814,7 +882,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(66890, {	-- Stolen Tools
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -824,22 +892,22 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 
 			------ Requires 45 Skill ------
 			q(70540, {	-- An Engineer's Best Friend
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 			}),
 			q(70539, {	-- And You Thought They Did Nothing
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 			}),
 			q(70545, {	-- Blingtron 8000...?
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 			}),
 			q(70557, {	-- No Scopes
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 			}),
@@ -871,7 +939,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ENGINEERING, 1 }} }, {
 				r(382345),	-- Assorted Safety Fuses
 				r(382408),	-- Cartomancy Cannon
@@ -906,7 +974,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			})),
 			o(380571, {	-- Boomthyr Rocket
-				["description"] = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
+				["description"] = createLocalizationString({
+					readable = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
+					constant = "INTERACT_WITH_THE_NOTE_NEXT_TO_THE_ROCKET_THEN",
+					export = true,
+					text = {
+						en = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与火箭旁的笔记互动，然后收集周围区域内的物品。收集完所有物品后，你可能需要离开并重新回到该区域，宝藏才能被点击。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 70270,
 				["coord"] = { 56.0, 44.9, THE_WAKING_SHORES },
 				["groups"] = {
@@ -935,7 +1020,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			})),
 			o(380560, {	-- Disabled Tesla Coil
-				["description"] = "Click on the three exposed items to make the treasure appear.",
+				["description"] = createLocalizationString({
+					readable = "Click on the three exposed items to make the treasure appear.",
+					constant = "CLICK_ON_THE_THREE_EXPOSED_ITEMS_TO_MAKE_THE",
+					export = true,
+					text = {
+						en = "Click on the three exposed items to make the treasure appear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "点击三件暴露在外的物品，使宝藏出现。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 70275,
 				["coord"] = { 49.1, 77.5, THE_WAKING_SHORES },
 				["groups"] = {
@@ -976,7 +1078,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			})),
 			o(410458,	-- Insomniotron
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["description"] = "In cavern.",
+				["description"] = "~L.IN_CAVERN",
 				["coord"] = { 49.0, 70.9, 2254 },
 				["questID"] = 78279,
 				["groups"] = {
@@ -1019,7 +1121,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			i(198611),	-- Engineering Details
 			q(74111, {	-- DF Inscription Order: Engineering
 				["name"] = "DF Inscription Order: Engineering",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 			}),
 			q(66379, {	-- DF Weekly Engineering Knowledgepoint #1
@@ -1032,14 +1134,48 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			q(70517, {	-- DF Weekly Engineering Knowledgepoint #3
 				["name"] = "DF Engineering Drop #1: Dragon-esque",
-				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_DRAGON_KIN_PROTO_DRAKES",
+					export = true,
+					text = {
+						en = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意龙类/始祖龙/龙形野兽掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198970 },	-- Infinitely Attachable Pair o' Docks
 				["coord"] = { 49.4, 62.6, THALDRASZUS },
 				["crs"] = { 196632 },	-- Reservoir Dapple
 			}),
 			q(70516, {	-- DF Weekly Engineering Knowledgepoint #4
 				["name"] = "DF Engineering Drop #2: Tyrhold Ancient",
-				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
+					constant = "DROPS_FROM_ANY_TYRHOLD_ESQUE_MOB_COORDINATES",
+					export = true,
+					text = {
+						en = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意提尔要塞风格的怪物掉落。\n坐标指向提尔要塞，那里几乎所有怪物都可能掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198969 },	-- Keeper's Mark
 				["coord"] = { 57.2, 60.4, THALDRASZUS },
 				["crs"] = { 193244 },	-- Titan Defense Matrix
@@ -1081,7 +1217,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }} }, {
 				r(447356),	-- Adjustable Cogwheel
 				r(447333),	-- Aqirite Fueled Samophlange
@@ -1159,7 +1295,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			i(228775),	-- Algari Engineer's Notepad
 			q(83728, {	-- TWW Inscription Order: Engineering
 				["name"] = "TWW Inscription Order: Engineering",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
 			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
@@ -1236,7 +1372,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }} }, {
 				r(1229875),	-- Aetherlume Bands
 				r(1229876),	-- Aetherlume Bracelets
@@ -1329,7 +1465,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			i(263456),	-- Thalassian Engineer's Notepad
 			q(95138, {	-- MID Inscription Order: Engineering
 				["name"] = "MID Inscription Order: Engineering",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 245809 },	-- Thalassian Treatise on Engineering
 			}),
 			q(93534, {	-- MID Weekly Engineering Knowledgepoint #1

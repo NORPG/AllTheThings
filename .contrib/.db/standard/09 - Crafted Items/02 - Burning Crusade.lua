@@ -195,7 +195,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
 		prof(9788, {	-- Armorsmith
-			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS",
 			["groups"] = {
 				i(28483, {["timeline"] = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Breastplate of Kings
 				i(28484, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of Kings
@@ -210,10 +210,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		prof(9787, {	-- Weaponsmith
-			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS_2",
 			["groups"] = {
 				prof(17041, {	-- Master Axesmith
-					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
+					["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER",
 					["groups"] = {
 						i(28432, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Black Planar Edge
 						i(28436, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bloodmoon
@@ -226,7 +226,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					},
 				}),
 				prof(17040, {	-- Master Hammersmith
-					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
+					["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_2",
 					["groups"] = {
 						i(28441, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Deep Thunder
 						i(28438, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonmaw
@@ -239,7 +239,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					},
 				}),
 				prof(17039, {	-- Master Swordsmith
-					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
+					["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_3",
 					["groups"] = {
 						i(28427, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazefury
 						i(28426, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazeguard
@@ -252,7 +252,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					},
 				}),
 				n(WEAPONS, {
-					["description"] = "These can be crafted by any Weaponsmith.",
+					["description"] = "~L.THESE_CAN_BE_CRAFTED_BY_ANY_WEAPONSMITH",
 					["groups"] = {
 						i(30071,  {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Light Earthforged Blade
 						i(30073, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Emberforged Hammer
@@ -441,46 +441,250 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Dust:
 			i(22445, {	-- Arcane Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_12",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的燃烧的远征服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_13",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 87-120 范围内的优秀（绿色）品质的燃烧的远征服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			-- Essences:
 			i(22446, {	-- Greater Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_14",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的燃烧的远征武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_15",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 102-120 范围内的优秀（绿色）品质的燃烧的远征武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(22447, {	-- Lesser Planar Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_16",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality TBC weapons, except shields and off-hand frills. This gives you Greater Planar Essence which you then have to split into Lesser Planar Essence.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的燃烧的远征武器获得，盾牌和副手物品除外。这会给予你强效位面精华，随后你需要把它拆分成次级位面精华。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_17",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 80-98 范围内的优秀（绿色）品质的燃烧的远征武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			-- Shards and crystals:
 			i(22449, {	-- Large Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality TBC gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_6",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality TBC gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解所有稀有（蓝色）品质的燃烧的远征装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_7",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 100-115 范围内的所有稀有（蓝色）品质的燃烧的远征装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(22448, {	-- Small Prismatic Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear. This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality TBC gear. This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_8",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality TBC gear. This gives you Large Prismatic Shard which you then have to split into Small Prismatic Shard by crafting. Requires skill level 35 to learn from trainer.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解所有稀有（蓝色）品质的燃烧的远征装备获得。这会给予你大块棱光碎片，随后你需要通过制造把它拆分成小块棱光碎片。需要 35 点技能等级才能从训练师处学习。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_9",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 68-97 范围内的所有稀有（蓝色）品质的燃烧的远征装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(22450, {	-- Void Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all epic (purple) quality TBC gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE_2",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all epic (purple) quality TBC gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解所有史诗（紫色）品质的燃烧的远征装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE_3",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 100-141 范围内的所有史诗（紫色）品质的燃烧的远征装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 		}),
@@ -546,7 +750,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(22521),	-- Superior Mana Oil
 			i(22522),	-- Superior Wizard Oil
 			i(22459, {	-- Void Sphere
-				["description"] = "This craft have a 48 hours cooldown.",
+				["description"] = createLocalizationString({
+					readable = "This craft have a 48 hours cooldown.",
+					constant = "THIS_CRAFT_HAVE_A_48_HOURS_COOLDOWN",
+					export = true,
+					text = {
+						en = "This craft have a 48 hours cooldown.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此制造物品有 48 小时的冷却时间。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		filter(PROFESSION_EQUIPMENT, sharedDataSelf({ ["timeline"] = { REMOVED_5_0_4 }}, {
@@ -580,7 +801,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	}),
 	prof(ENGINEERING, {
 		prof(GNOMISH_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS",
 			["groups"] = {
 				n(ARMOR, {
 					i(23829),	-- Gnomish Battle Goggles
@@ -599,7 +820,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS_2",
 			["groups"] = {
 				n(ARMOR, {
 					i(23838),	-- Foreman's Enchanted Helmet
@@ -956,13 +1177,47 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				{ 46.6, 40.7, TEROKKAR_FOREST },	-- Lake Jorune
 				{ 66.0, 78.3, TEROKKAR_FOREST },	-- Skettis
 			},
-			["description"] = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
+			["description"] = createLocalizationString({
+				readable = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
+				constant = "FISHED_UP_FROM_HIGHLAND_MIXED_SCHOOLS_YOU_HAVE",
+				export = true,
+				text = {
+					en = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "从高地混合鱼群中钓出。每个平奇先生有 3 个愿望，每个愿望会给予以下效果之一：\n\n1) 平奇先生的祝福（合剂）\n2) 召唤狂怒的平奇先生（敌人）\n3) 魔法小龙虾盒（稀有宠物）\n4) 平奇先生的礼物（药水）\n5) 仁慈的平奇先生（守护者）",
+					-- TODO: tw = "",
+				},
+			}),
 			["_allowObjectProvider"] = true,
 			["provider"] = { "o", 182957 },	-- Highland Mixed School
 			["groups"] = {
 				i(27445),	-- Magical Crawdad (PET!)
 				i(27446, {	-- Mr. Pinchy's Gift
-					["description"] = "Contains an assortment of potions.",
+					["description"] = createLocalizationString({
+						readable = "Contains an assortment of potions.",
+						constant = "CONTAINS_AN_ASSORTMENT_OF_POTIONS",
+						export = true,
+						text = {
+							en = "Contains an assortment of potions.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "内含各类药水。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(8350),	-- The 1 Ring
 					},
@@ -1017,7 +1272,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		-- Recipe
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 		}),
@@ -1040,7 +1295,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			o(181271, {	-- Dreaming Glory
-				["description"] = "Found near edges and highly uneven terrain.",
+				["description"] = createLocalizationString({
+					readable = "Found near edges and highly uneven terrain.",
+					constant = "FOUND_NEAR_EDGES_AND_HIGHLY_UNEVEN_TERRAIN",
+					export = true,
+					text = {
+						en = "Found near edges and highly uneven terrain.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在边缘处和高度不平的地形附近找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 315,
 				-- #endif
@@ -1090,7 +1362,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["maps"] = { NETHERSTORM },
 			}),
 			o(181280, {	-- Nightmare Vine
-				["description"] = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+				["description"] = createLocalizationString({
+					readable = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+					constant = "ALTHOUGH_THIS_CAN_BE_FOUND_ALL_OVER_SHADOWMOON",
+					export = true,
+					text = {
+						en = "Although this can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "虽然这可以在影月谷各处找到，但效率更高的刷取地点是所列坐标。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 63.9, 68.3, BLADES_EDGE_MOUNTAINS },	-- Death's Door
 					{ 34.8, 40.4, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Wrath
@@ -1114,7 +1403,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			o(181277, {	-- Terocone
-				["description"] = "Found near the base of trees.",
+				["description"] = createLocalizationString({
+					readable = "Found near the base of trees.",
+					constant = "FOUND_NEAR_THE_BASE_OF_TREES",
+					export = true,
+					text = {
+						en = "Found near the base of trees.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在树木根部附近找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 43.4, 55.8, SHADOWMOON_VALLEY },	-- Sketh'lon Base Camp
 					{ 36.5, 32.5, SHADOWMOON_VALLEY },	-- Sketh'lon Wreckage
@@ -1148,7 +1454,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(22786, {	-- Dreaming Glory
-				["description"] = "Found near edges and highly uneven terrain.",
+				["description"] = "~L.FOUND_NEAR_EDGES_AND_HIGHLY_UNEVEN_TERRAIN",
 				["maps_disp"] = {
 					BLADES_EDGE_MOUNTAINS,
 					NAGRAND,
@@ -1169,7 +1475,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				["provider"] = { "o", 181270 },	-- Felweed
 			}),
 			i(22794, {	-- Fel Lotus
-				["description"] = "Can uncommonly be looted when gathering TBC herbs.",
+				["description"] = createLocalizationString({
+					readable = "Can uncommonly be looted when gathering TBC herbs.",
+					constant = "CAN_UNCOMMONLY_BE_LOOTED_WHEN_GATHERING_TBC",
+					export = true,
+					text = {
+						en = "Can uncommonly be looted when gathering TBC herbs.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "采集燃烧的远征草药时偶尔可以拾取到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "o", 181278 },	-- Ancient Lichen
 					{ "o", 181271 },	-- Dreaming Glory
@@ -1254,7 +1577,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 				},
-				["description"] = "Although it can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+				["description"] = createLocalizationString({
+					readable = "Although it can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+					constant = "ALTHOUGH_IT_CAN_BE_FOUND_ALL_OVER_SHADOWMOON",
+					export = true,
+					text = {
+						en = "Although it can be found all over Shadowmoon Valley, the more efficient farm is the listed coordinates.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "虽然它可以在影月谷各处找到，但效率更高的刷取地点是所列坐标。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = SHADOWMOON_VALLEY,
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 181280 },	-- Nightmare Vine
@@ -1284,7 +1624,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 				},
-				["description"] = "Found near the base of trees.",
+				["description"] = "~L.FOUND_NEAR_THE_BASE_OF_TREES",
 				["maps_disp"] = TEROKKAR_FOREST,
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 181277 },	-- Terocone
@@ -1418,7 +1758,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			-- Note: Epic quality (purple) gems CANNOT be obtained from prospecting, see Mining.
 			["groups"] = appendAllGroups(
 				sharedData({	-- Uncommon quality (green) gems:
-					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting.",
+					["description"] = createLocalizationString({
+						readable = "This gem is most reliably obtained from prospecting ore with Jewelcrafting.",
+						constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_2",
+						export = true,
+						text = {
+							en = "This gem is most reliably obtained from prospecting ore with Jewelcrafting.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这颗宝石最可靠的获取方式是用珠宝加工选矿矿石。",
+							-- TODO: tw = "",
+						},
+					}),
 					["providers"] = {
 						{ "i", 23425 },	-- Adamantite Ore
 						{ "i", 23424 },	-- Fel Iron Ore
@@ -1433,9 +1790,43 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				}),
 				sharedData({	-- Rare quality (blue) gems:
 					-- #if AFTER CATA
-					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",
+					["description"] = createLocalizationString({
+						readable = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",
+						constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_3",
+						export = true,
+						text = {
+							en = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宝石最可靠的获取方式是用珠宝加工勘探矿石，其中精金矿石的掉率更高。在团队副本海加尔山之战中开采远古宝石矿脉也是一个可靠的来源。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #else
-					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",
+					["description"] = createLocalizationString({
+						readable = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",
+						constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_4",
+						export = true,
+						text = {
+							en = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宝石最可靠的获取方式是用珠宝加工勘探矿石，其中精金矿石的掉率更高。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["providers"] = {
 						{ "i", 23425 },	-- Adamantite Ore
@@ -1816,7 +2207,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	prof(LEATHERWORKING, {
 		-- #if BEFORE CATA
 		prof(10656, {	-- Dragonscale Leatherworking
-			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY",
 			["groups"] = {
 				i(29971),	-- Dragonstrike Leggings
 				i(29516, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
@@ -1829,7 +2220,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		prof(10658, {	-- Elemental Leatherworking
-			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY",
 			["groups"] = {
 				i(29964),	-- Blackstorm Leggings
 				i(29973),	-- Primalstorm Breastplate
@@ -1839,7 +2230,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		prof(10660, {	-- Tribal Leatherworking
-			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY",
 			["groups"] = {
 				i(29974),	-- Living Crystal Breastplate
 				i(29970),	-- Wildfeather Leggings
@@ -2224,7 +2615,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(22055),	-- Wound Poison V
 	})),
 	prof(SKINNING, {
-		["description"] = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+		["description"] = createLocalizationString({
+			readable = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+			constant = "THE_FOLLOWING_ITEMS_CAN_BE_GATHERED_BY_SKINNING_3",
+			export = true,
+			text = {
+				en = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "以下物品可以通过在外域对生物剥皮来收集。请注意，结缔皮是最常见的剥皮材料。所有其他剥皮材料从相应怪物身上的掉落几率都低于 100%，因此你必须预期要剥多只生物才能获得该材料。\n\n即使在启用“调试模式”时，此标题也常常不会显示其中所有未收集的内容。追踪特定材料的最佳方式是使用 /att item:[物品ID] 或弹出此标题。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			i(29539, {	-- Cobra Scales
 				["crs"] = {
@@ -2298,7 +2706,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 73.0, 85.4, SHADOWMOON_VALLEY },	-- Netherwing Ledge flayer hill
 					-- #endif
 				},
-				["description"] = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales",
+				["description"] = createLocalizationString({
+					readable = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales",
+					constant = "CAN_BE_EFFICIENTLY_FARMED_IN_BLADE_S_EDGE",
+					export = true,
+					text = {
+						en = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在刀锋山和赞加沼泽高效刷取：从赞加沼泽西南端出发，沿西侧边缘向北，再向东前往刀锋山。然后向上飞，沿着漩涡峰前行，再下降到格里施纳，随后向东沿水晶脊向上，前往斯卡尔德，最后下降到鲁安面纱。\n\n也可在泰罗卡森林各处的蜥蜴身上找到，其中大多数掉落湿鳞蜥蜴之眼。\n\n对大多数怪物剥皮也能获得魔鳞",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(25707, {	-- Fel Hide
 				["crs"] = {
@@ -2380,10 +2805,44 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 14.9, 28.9, ZANGARMARSH },	-- Ango'rosh, west of
 					{ 8.3, 52.7, ZANGARMARSH },	-- Sporewind Lake, west of
 				},
-				["description"] = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning all mobs can also give Crystal-Infused Leather.",
+				["description"] = createLocalizationString({
+					readable = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning all mobs can also give Crystal-Infused Leather.",
+					constant = "CAN_BE_EFFICIENTLY_FARMED_IN_BLADE_S_EDGE_2",
+					export = true,
+					text = {
+						en = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning all mobs can also give Crystal-Infused Leather.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在刀锋山和赞加沼泽高效刷取：从赞加沼泽西南端出发，沿西侧边缘向北，再向东前往刀锋山。然后向上飞，沿着漩涡峰前行，再下降到格里施纳，随后向东沿水晶脊向上，前往斯卡尔德，最后下降到鲁安面纱。\n\n也可在泰罗卡森林各处的蜥蜴身上找到，其中大多数掉落湿鳞蜥蜴之眼。\n\n对任何怪物剥皮也能获得晶化皮革。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(21887, {	-- Knothide Leather
-				["description"] = "Can be skinned from any skinnable TBC mobs.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from any skinnable TBC mobs.",
+					constant = "CAN_BE_SKINNED_FROM_ANY_SKINNABLE_TBC_MOBS",
+					export = true,
+					text = {
+						en = "Can be skinned from any skinnable TBC mobs.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从任何可剥皮的燃烧的远征怪物身上剥取。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(25649, {	-- Knothide Leather Scraps
 				["groups"] = {
@@ -2391,7 +2850,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(29548, {	-- Nether Dragonscales
-				["description"] = "Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction.",
+				["description"] = createLocalizationString({
+					readable = "Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction.",
+					constant = "IS_SKINNED_FROM_NETHERWING_DRAKES_IN_OUTLAND",
+					export = true,
+					text = {
+						en = "Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由外域的灵翼龙剥皮获得。已开始灵翼任务线的角色只能在刀锋山和虚空风暴击杀灵翼龙，并且需要在声望面板中将灵翼设为“交战”。击杀灵翼龙不会降低与该阵营的声望。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = {
 					21722,	-- Enslaved Netherwing Drake
 					21004,	-- Lesser Nether Drake
@@ -2406,7 +2882,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			}),
 			i(35229),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
 			i(25708, {	-- Thick Clefthoof Leather
-				["description"] = "Clefthoofs can be found all over Nagrand.",
+				["description"] = "~L.CLEFTHOOFS_CAN_BE_FOUND_ALL_OVER_NAGRAND",
 				["crs"] = {
 					17133,	-- Aged Clefthoof
 					17132,	-- Clefthoof Bull
@@ -2436,7 +2912,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	prof(TAILORING, {
 		-- #if BEFORE CATA
 		prof(MOONCLOTH_TAILORING, {
-			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+			["description"] = createLocalizationString({
+				readable = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+				constant = "THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_TAILORINGS",
+				export = true,
+				text = {
+					en = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品只能由完成了沙塔斯“成为月布裁缝”任务的裁缝制作。\n\n注意：每个角色只能激活其中一种专精。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(21873),	-- Primal Mooncloth Belt
 				i(21875),	-- Primal Mooncloth Robe
@@ -2444,7 +2937,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		prof(SHADOWEAVE_TAILORING, {
-			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+			["description"] = createLocalizationString({
+				readable = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+				constant = "THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_TAILORINGS_2",
+				export = true,
+				text = {
+					en = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品只能由完成了沙塔斯“成为暗纹裁缝”任务的裁缝制作。\n\n注意：每个角色只能激活其中一种专精。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(21869),	-- Frozen Shadoweave Shoulders
 				i(21871),	-- Frozen Shadoweave Robe
@@ -2452,7 +2962,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		prof(SPELLFIRE_TAILORING, {
-			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+			["description"] = createLocalizationString({
+				readable = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+				constant = "THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_TAILORINGS_3",
+				export = true,
+				text = {
+					en = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品只能由完成了沙塔斯“成为魔焰裁缝”任务的裁缝制作。\n\n注意：每个角色只能激活其中一种专精。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(21846),	-- Spellfire Belt
 				i(21847),	-- Spellfire Gloves
@@ -2564,7 +3091,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(21840),	-- Bolt of Netherweave
 			i(21844),	-- Bolt of Soulcloth
 			i(21845, {	-- Primal Mooncloth
-				["description"] = "Coordinates are for select Moonwells around the world.",
+				["description"] = "~L.COORDINATES_ARE_FOR_SELECT_MOONWELLS_AROUND_THE",
 				["coords"] = {
 					{ 43.10, 80.27, DARNASSUS },	-- Temple of the Moon
 					-- #if BEFORE 4.0.3

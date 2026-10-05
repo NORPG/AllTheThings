@@ -54,7 +54,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29660, {	-- Saving the Botanica
-					["description"] = "Automatically provided upon starting the instance.",
+					["description"] = createLocalizationString({
+						readable = "Automatically provided upon starting the instance.",
+						constant = "AUTOMATICALLY_PROVIDED_UPON_STARTING_THE",
+						export = true,
+						text = {
+							en = "Automatically provided upon starting the instance.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "开始该副本时自动提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -179,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
 				["cost"] = { { "i", 30634, 1 } },	-- Warpforged Key
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),

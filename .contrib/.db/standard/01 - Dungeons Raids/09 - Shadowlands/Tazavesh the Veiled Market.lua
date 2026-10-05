@@ -122,7 +122,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
 				q(64607, {	-- Tazavesh: A Hard Bargain
-					["description"] = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",
+					["description"] = createLocalizationString({
+						readable = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",
+						constant = "REQUIRES_CFFFFFFFFPASSABLY_FORGED_CREDENTIALS_R",
+						export = true,
+						text = {
+							en = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要装备|cFFFFFFFF勉强伪造的凭证|r才能接受该任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
 					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
@@ -138,7 +155,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 			}),
 			n(VENDORS, {
-				["description"] = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
+				["description"] = createLocalizationString({
+					readable = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
+					constant = "ALL_THE_VENDORS_WITH_THE_NAME_VENDOR_IN_THEM",
+					export = true,
+					text = {
+						en = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "所有名字中带有“商人”字样的商人都可以在副本入口内侧找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					n(180130, {	-- Antique Vendor
 						i(34828),	-- Antique Silver Cufflinks
@@ -146,7 +180,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(161208),	-- Pirate's Snuff Box
 					}),
 					n(180750, {	-- Au'manal <Master Forger>
-						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
+						["description"] = createLocalizationString({
+							readable = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
+							constant = "REQUIRES_CFFFFFFFFFRAUDULENT_CREDENTIALS_R_TO",
+							export = true,
+							text = {
+								en = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要装备|cFFFFFFFF伪造的凭证|r才能交易获得新的项链。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(185954, {	-- Passably-Forged Credentials
 								["cost"] = { { "i", 185953, 1 } },	-- Fraudulent Credentials
@@ -178,7 +229,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(185953),	-- Fraudulent Credentials
 					}),
 					n(180161, {	-- Shopkeeper
-						["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
+						["description"] = createLocalizationString({
+							readable = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
+							constant = "WHEN_THE_NPC_WHISPERS_YOU_CFFFFFFFF_NOD_R_AT",
+							export = true,
+							text = {
+								en = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当该 NPC 对你密语时，对它使用|cFFFFFFFF/nod|r。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(186540, {	-- Rarity (PET!)
 								["cost"] = {
@@ -488,7 +556,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 						}),
 						i(185047, {	-- Yak Soul (SS!)
-							["description"] = "Drops on Hard Mode or M+.",
+							["description"] = createLocalizationString({
+								readable = "Drops on Hard Mode or M+.",
+								constant = "DROPS_ON_HARD_MODE_OR_M",
+								export = true,
+								text = {
+									en = "Drops on Hard Mode or M+.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在困难模式或大秘境中掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -674,7 +759,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						ach(15652, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
 						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 						i(185047, {	-- Yak Soul (SS!)
-							["description"] = "Drops on Hard Mode or M+.",
+							["description"] = "~L.DROPS_ON_HARD_MODE_OR_M",
 						}),
 						-- Conduits
 						i(181838),	-- Charitable Soul

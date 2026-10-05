@@ -5,7 +5,24 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		m(1673, {	-- The Crucible
-			["description"] = "The Crucible - sub-zone accessed via Tal-Inara",
+			["description"] = createLocalizationString({
+				readable = "The Crucible - sub-zone accessed via Tal-Inara",
+				constant = "THE_CRUCIBLE_SUB_ZONE_ACCESSED_VIA_TAL_INARA",
+				export = true,
+				text = {
+					en = "The Crucible - sub-zone accessed via Tal-Inara",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "熔炉——通过塔尔-伊纳拉进入的子区域",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 159478 },	-- Tal-Inara
 			["sourceQuest"] = 63857,	-- Voices of the Eternal
 			["groups"] = {

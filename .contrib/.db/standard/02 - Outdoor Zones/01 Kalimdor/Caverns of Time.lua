@@ -14,7 +14,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			battlepets({ ADDED_5_1_0 }, {
 				pet(1161, {	-- Infinite Whelpling (PET!)
-					["description"] = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
+					["description"] = createLocalizationString({
+						readable = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
+						constant = "THIS_PET_CAN_BE_FOUND_AROUND_THE_CAVERNS_OF",
+						export = true,
+						text = {
+							en = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物可以在时光之穴入口周围以及通往主厅的通道上找到。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			-- #if AFTER TBC
@@ -40,7 +57,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(66, 66, 15),
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(10445, {	-- The Vials of Eternity
-					["description"] = "The questgiver can be found walking around the Caverns of Time.",
+					["description"] = createLocalizationString({
+						readable = "The questgiver can be found walking around the Caverns of Time.",
+						constant = "THE_QUESTGIVER_CAN_BE_FOUND_WALKING_AROUND_THE",
+						export = true,
+						text = {
+							en = "The questgiver can be found walking around the Caverns of Time.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可以在时光之穴中四处走动找到该任务给予者。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qgs"] = {
 						19935,	-- Soridormi
 						19936,	-- Arazmodu
@@ -68,7 +102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(13432, {	-- The Vials of Eternity
-					["description"] = "The questgiver can be found walking around the Caverns of Time.",
+					["description"] = "~L.THE_QUESTGIVER_CAN_BE_FOUND_WALKING_AROUND_THE",
 					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
 					["qgs"] = {
 						19935,	-- Soridormi

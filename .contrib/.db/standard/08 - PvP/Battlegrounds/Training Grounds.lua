@@ -255,7 +255,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						ach(7057),	-- End of the Line
 						ach(7062),	-- Mine Mine Mine!
 						ach(7099, {	-- Five for Five
-							["description"] = "An easy way to do this is via Training Grounds, capping in the following order:\n\n1) Water\n2) Top\n3) Lava\n4) Lava (again)\n5) Water\n\nStay mounted and ignore NPCs until you're in the circle!"
+							["description"] = createLocalizationString({
+								readable = "An easy way to do this is via Training Grounds, capping in the following order:\n\n1) Water\n2) Top\n3) Lava\n4) Lava (again)\n5) Water\n\nStay mounted and ignore NPCs until you're in the circle!",
+								constant = "AN_EASY_WAY_TO_DO_THIS_IS_VIA_TRAINING_GROUNDS",
+								export = true,
+								text = {
+									en = "An easy way to do this is via Training Grounds, capping in the following order:\n\n1) Water\n2) Top\n3) Lava\n4) Lava (again)\n5) Water\n\nStay mounted and ignore NPCs until you're in the circle!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "一个简单的方法是通过训练场，按以下顺序占领：\n\n1) 水\n2) 顶部\n3) 岩浆\n4) 岩浆（再次）\n5) 水\n\n保持骑乘状态，在进入圆圈之前无视 NPC！",
+									-- TODO: tw = "",
+								},
+							})
 						}),
 						ach(7100),	-- My Diamonds and Your Rust
 						ach(7102),	-- Escort Service

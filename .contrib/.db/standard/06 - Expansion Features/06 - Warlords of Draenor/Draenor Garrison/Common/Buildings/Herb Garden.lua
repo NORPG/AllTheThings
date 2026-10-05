@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(137, {	-- Herb Garden (rank 1: 29, rank 2: 136, rank 3: 137)
 					n(ACHIEVEMENTS, {
 						ach(9454, {	-- Draenic Seed Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = { i(111997) },	-- Herb Garden, Level 3
 						}),
 					}),

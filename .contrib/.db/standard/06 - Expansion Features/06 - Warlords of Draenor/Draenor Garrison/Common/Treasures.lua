@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures,
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 			n(TREASURES, {
 				o(231063, {	-- Lady Sena's Materials Stash
-					["description"] = "In an underwater cave.",
+					["description"] = "~L.IN_AN_UNDERWATER_CAVE",
 					["questID"] = 34936,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 63.2, FROSTWALL },

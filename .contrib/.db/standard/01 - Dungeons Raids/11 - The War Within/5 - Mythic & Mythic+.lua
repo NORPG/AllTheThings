@@ -5,7 +5,24 @@
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 		i(234425, {	-- Forgotten Folio
-			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			["description"] = createLocalizationString({
+				readable = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+				constant = "DROPS_FROM_THE_LAST_BOSS_OF_MYTHIC_DUNGEONS_IT",
+				export = true,
+				text = {
+					en = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由史诗地下城的最终首领掉落。它包含各种地下城掉落的专业配方。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sym"] = {{"select","itemID",
 				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
 				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
@@ -313,7 +330,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		})),
 		n(QUESTS, {
 			q(87327, {	-- A Challenger's Resilience
-				["description"] = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
+				["description"] = createLocalizationString({
+					readable = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
+					constant = "GRANTED_AUTOMATICALLY_ONCE_YOU_HAVE_COMPLETED",
+					export = true,
+					text = {
+						en = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在至少 +12 难度下按时完成每个赛季地下城后自动获得。\n\n每个赛季都可以完成。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qgs"] = {
 					197711,	-- Lindormi
 					197915,	-- Lindormi

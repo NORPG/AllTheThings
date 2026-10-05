@@ -204,7 +204,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 4 --
 					q(70812, {	-- Expedition Cloaks
-						["description"] = "Buying the Renowned cloaks will remove this quest from being available!",
+						["description"] = createLocalizationString({
+							readable = "Buying the Renowned cloaks will remove this quest from being available!",
+							constant = "BUYING_THE_RENOWNED_CLOAKS_WILL_REMOVE_THIS",
+							export = true,
+							text = {
+								en = "Buying the Renowned cloaks will remove this quest from being available!",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "购买名望披风后，此任务将不再可用！",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "n", 187700 },	-- Pathfinder Jab
 						["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 						["groups"] = {
@@ -352,7 +369,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 13 --
 					q(69093, {	-- A New Mystery
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 196643 },	-- Doc Nanners
 						["maps"] = { THE_WAKING_SHORES },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 					}),
@@ -720,7 +737,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 24 --
 					q(69097, {	-- A Vault Unsealed
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 196643 },	-- Doc Nanners
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 						["isBreadcrumb"] = true,	-- TODO: double check this
@@ -773,7 +790,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 54.4, 55.5, THALDRASZUS },
 					}),
 					q(69888, {	-- Unusual Suspects
-						["description"] = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
+						["description"] = createLocalizationString({
+							readable = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
+							constant = "THIS_QUEST_WILL_BECOME_AVAILABLE_ON_THE_NEXT",
+							export = true,
+							text = {
+								en = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务将在完成 |cffffff00它终将属于博物馆……|r 后的下一次每周重置时开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 66547 },	-- It Belongs in a Museum... Eventually
 						["provider"] = { "n", 187276 },	-- Toddy Whiskers
 						["coord"] = { 47.2, 82.7, THE_WAKING_SHORES },

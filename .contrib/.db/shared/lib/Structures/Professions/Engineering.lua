@@ -719,7 +719,24 @@ ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
 
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	["description"] = createLocalizationString({
+		readable = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+		constant = "THIS_IS_A_REWARD_FOR_COMPLETING_THE_4",
+		export = true,
+		text = {
+			en = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这是完成工程学入门任务线的奖励，可从任何德拉诺生物身上掉落。也可在熔炉处以 100 金币购买。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158739, {	-- Engineering (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -785,7 +802,7 @@ COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData
 	}),
 	i(118491, {	-- Schematic: Linkgrease Locksprocket (RECIPE!)
 		["collectible"] = false,
-		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["description"] = "~L.THE_ITEM_IS_STILL_IN_GAME_BUT_YOU_CAN_T_LEARN",
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),
@@ -833,7 +850,7 @@ COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData
 	}),
 	i(120268, {	-- Schematic: True Iron Trigger (RECIPE!)
 		["collectible"] = false,
-		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["description"] = "~L.THE_ITEM_IS_STILL_IN_GAME_BUT_YOU_CAN_T_LEARN",
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),

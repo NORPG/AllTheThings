@@ -1133,16 +1133,50 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				}),
 			}),
 			i(219192, {	-- Comprehensibly Organized Ideas
-				["description"] = "NOTE: Some of these require a specific specialization to discover.",
+				["description"] = createLocalizationString({
+					readable = "NOTE: Some of these require a specific specialization to discover.",
+					constant = "NOTE_SOME_OF_THESE_REQUIRE_A_SPECIFIC",
+					export = true,
+					text = {
+						en = "NOTE: Some of these require a specific specialization to discover.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "注意：其中一些需要特定专精才能发现。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					r(447325, {	-- Aqirite Brainwave Projector
-						["description"] = "Requires specialization - Profession Gear to discover",
+						["description"] = createLocalizationString({
+							readable = "Requires specialization - Profession Gear to discover",
+							constant = "REQUIRES_SPECIALIZATION_PROFESSION_GEAR_TO",
+							export = true,
+							text = {
+								en = "Requires specialization - Profession Gear to discover",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要专精——专业装备才能发现",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					r(447327, {	-- Aqirite Fisherfriend
-						["description"] = "Requires specialization - Profession Gear to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_PROFESSION_GEAR_TO",
 					}),
 					r(447331, {	-- Aqirite Miner's Headgear
-						["description"] = "Requires specialization - Profession Gear to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_PROFESSION_GEAR_TO",
 					}),
 					r(447324),	-- Bismuth Brainwave Projector
 					r(447326),	-- Bismuth Fisherfriend
@@ -1150,47 +1184,81 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(447330),	-- Bismuth Miner's Headgear
 					r(447358),	-- Blame Redirection Device
 					r(447318, {	-- Blasting Bracers
-						["description"] = "Requires specialization - Bracers to discover",
+						["description"] = createLocalizationString({
+							readable = "Requires specialization - Bracers to discover",
+							constant = "REQUIRES_SPECIALIZATION_BRACERS_TO_DISCOVER",
+							export = true,
+							text = {
+								en = "Requires specialization - Bracers to discover",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要专精——护腕才能发现",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					r(459299),	-- Bottled Brilliance
 					r(447321, {	-- Clanking Cuffs
-						["description"] = "Requires specialization - Bracers to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_BRACERS_TO_DISCOVER",
 					}),
 					r(447360),	-- Complicated Fuse Box
 					r(447373),	-- Crowd Pummeler 2-30
 					r(447362),	-- Concealed Chaos Module
 					r(447317, {	-- Dangerous Distraction Inhibitor
-						["description"] = "Requires specialization - Goggles to discover",
+						["description"] = createLocalizationString({
+							readable = "Requires specialization - Goggles to discover",
+							constant = "REQUIRES_SPECIALIZATION_GOGGLES_TO_DISCOVER",
+							export = true,
+							text = {
+								en = "Requires specialization - Goggles to discover",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要专精——护目镜才能发现",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					r(447363),	-- Energy Redistribution Beacon
 					r(447329, {	-- Lapidary's Aqirite Clamps
-						["description"] = "Requires specialization - Profession Gear to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_PROFESSION_GEAR_TO",
 					}),
 					r(447328),	-- Lapidary's Bismuth Clamps
 					r(447335, {	-- Miner's Aqirite Hoard
-						["description"] = "Requires specialization - Profession Gear to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_PROFESSION_GEAR_TO",
 					}),
 					r(447334),	-- Miner's Bismuth Hoard
 					r(447315, {	-- Overclocked Idea Generator
-						["description"] = "Requires specialization - Goggles to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_GOGGLES_TO_DISCOVER",
 					}),
 					r(447361),	-- Pouch of Pocket Grenades
 					r(447357),	-- Recalibrated Safety Switch
 					r(447323, {	-- Spring-Loaded Aqirite Fabric Cutters
-						["description"] = "Requires specialization - Profession Gear to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_PROFESSION_GEAR_TO",
 					}),
 					r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
 					r(447314, {	-- Studious Brilliance Expeditor
-						["description"] = "Requires specialization - Goggles to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_GOGGLES_TO_DISCOVER",
 					}),
 					r(447316, {	-- Supercharged Thought Enhancer
-						["description"] = "Requires specialization - Goggles to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_GOGGLES_TO_DISCOVER",
 					}),
 					r(447319, {	-- Venting Vambraces
-						["description"] = "Requires specialization - Bracers to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_BRACERS_TO_DISCOVER",
 					}),
 					r(447320, {	-- Whirring Wristwraps
-						["description"] = "Requires specialization - Bracers to discover",
+						["description"] = "~L.REQUIRES_SPECIALIZATION_BRACERS_TO_DISCOVER",
 					}),
 				},
 			}),
@@ -2502,7 +2570,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213611),	-- Writhing Sample
 		}),
 		o(413902, {	-- Weeping Ironclaw
-			["description"] = "Has a chance to spawn only in a few Delves.",
+			["description"] = createLocalizationString({
+				readable = "Has a chance to spawn only in a few Delves.",
+				constant = "HAS_A_CHANCE_TO_SPAWN_ONLY_IN_A_FEW_DELVES",
+				export = true,
+				text = {
+					en = "Has a chance to spawn only in a few Delves.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只会在少数几个地下堡中刷新。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { SKITTERING_BREACH, THE_UNDERKEEP, TAK_RETHAN_ABYSS },
 		}),
 	}),

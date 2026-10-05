@@ -43,7 +43,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					pet(398),	-- Black Rat (PET!)
 					pet(396, {	-- Dusk Spiderling (PET!)
-						["description"] = "Found commonly in the area around the given coordinate.",
+						["description"] = createLocalizationString({
+							readable = "Found commonly in the area around the given coordinate.",
+							constant = "FOUND_COMMONLY_IN_THE_AREA_AROUND_THE_GIVEN",
+							export = true,
+							text = {
+								en = "Found commonly in the area around the given coordinate.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于指定坐标周围的区域。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 32.6, 51.6, DUSKWOOD },
 					}),
 					pet(399),	-- Rat Snake (PET!)
@@ -91,7 +108,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(65655, {	-- Eric Davidson <Master Pet Tamer>
 					["coord"] = { 19.8, 44.8, DUSKWOOD },
-					["description"] = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
+						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_ERIC_S_PETS_ARE",
+						export = true,
+						text = {
+							en = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限联盟。\n\nEric 的宠物为 7 级，三个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 野兽 - 同上。\n3. 野兽 - 同上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["petBattleLvl"] = 7,
@@ -136,7 +170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					-- #if AFTER 7.0.3
-					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
+					["description"] = "~L.HIGH_LEVEL_PLAYERS_MAY_REQUIRE_CFF0070DDSOFT",
 					-- #endif
 					["sourceQuest"] = 26719,	-- Delivery to Master Harris
 					["qg"] = 43730,	-- Oliver Harris
@@ -1118,7 +1152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
 					-- #if BEFORE 4.0.3
-					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
+					["description"] = "~L.BUY_THE_STORMWIND_SEASONING_HERBS_FROM_FELICIA",
 					-- #endif
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.8, 43.5, DUSKWOOD },
@@ -2083,7 +2117,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(91592, {	-- Forlorn Composer
-					["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",
+					["description"] = createLocalizationString({
+						readable = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",
+						constant = "TRAVEL_TO_THE_NORTHEAST_CORNER_OF_RAVEN_HILL",
+						export = true,
+						text = {
+							en = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "前往乌鸦岭墓地的东北角。获取这份乐谱需要你在死亡状态下与孤寂的作曲家交谈。最简单的方法是飞到非常高的地方再解散坐骑（先脱掉装备可以避免修理费）。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 23.7, 36.3, DUSKWOOD },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
@@ -2184,7 +2235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(534, {	-- Nefaru
 					-- #if BEFORE 4.0.3
-					["description"] = "Spawns randomly in the south and south-eastern part of the zone.",
+					["description"] = "~L.SPAWNS_RANDOMLY_IN_THE_SOUTH_AND_SOUTH_EASTERN",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 4.0.3
@@ -2224,7 +2275,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 16.7, 28.5, DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210568, {	-- Decrepit Phylactery
-					["description"] = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
+					["description"] = createLocalizationString({
+						readable = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
+						constant = "GO_INTO_THE_NORTHEASTERN_CRYPT_23_6_35_0_HEAD",
+						export = true,
+						text = {
+							en = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "进入东北方的墓穴（23.6, 35.0），向下走，然后左转进入第一个大房间（大约 26.0, 30.9）。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 411348 },	-- Dusty Coffer
 					["coord"] = { 26.0, 31.0, DUSKWOOD },
 				})),
@@ -2235,7 +2303,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
-					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
+					["description"] = createLocalizationString({
+						readable = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
+						constant = "WITH_BOTH_RINGS_KNEEL_IN_FRONT_OF_THE_STATUE_IN",
+						export = true,
+						text = {
+							en = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "同时装备两枚戒指，在乌鸦岭墓地中央的雕像前使用 /kneel。",
+							-- TODO: tw = "",
+						},
+					}),
 					["providers"] = {
 						-- { "o",  },	-- TODO: Find ObjectID
 						{ "i", 210250 },	-- Engraved Gold Ring
@@ -2427,7 +2512,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ZONE_DROPS, {
 				i(2794, {	-- An Old History Book
 					-- #if AFTER 4.0.3
-					["description"] = "Quest obtained from the book has been made obsolete at the release of Cataclysm expansion. Book is safe to be destroyed but, you will loot another one eventually.\n\nIf you are questing in Duskwood and come upon it, keep it in your inventory until you finish to avoid having to destroy it every time you loot another copy.",
+					["description"] = createLocalizationString({
+						readable = "Quest obtained from the book has been made obsolete at the release of Cataclysm expansion. Book is safe to be destroyed but, you will loot another one eventually.\n\nIf you are questing in Duskwood and come upon it, keep it in your inventory until you finish to avoid having to destroy it every time you loot another copy.",
+						constant = "QUEST_OBTAINED_FROM_THE_BOOK_HAS_BEEN_MADE",
+						export = true,
+						text = {
+							en = "Quest obtained from the book has been made obsolete at the release of Cataclysm expansion. Book is safe to be destroyed but, you will loot another one eventually.\n\nIf you are questing in Duskwood and come upon it, keep it in your inventory until you finish to avoid having to destroy it every time you loot another copy.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "从书中获得的任务在大灾变资料片发布时已被废弃。这本书可以安全销毁，但你最终还会再拾取到一本。\n\n如果你在暮色森林做任务时遇到它，请把它留在背包里直到完成，以免每次拾取到新的副本时都要销毁它。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				i(885, {	-- Black Metal Axe

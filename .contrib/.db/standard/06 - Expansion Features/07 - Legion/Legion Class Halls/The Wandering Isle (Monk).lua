@@ -24,7 +24,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ARTIFACTS, {
 					cl(MONK, BREWMASTER, {
 						gt(254, {	-- Brewhouse
-							["description"] = "Click this once per day.",
+							["description"] = createLocalizationString({
+								readable = "Click this once per day.",
+								constant = "CLICK_THIS_ONCE_PER_DAY",
+								export = true,
+								text = {
+									en = "Click this once per day.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "每天点击一次。",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 43974,
 							["isDaily"] = true,
 							["coord"] = { 55.0, 56.5, THE_WANDERING_ISLE },
@@ -366,7 +383,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41729, {	-- Slowing the Spread
-						["description"] = "You can get this quest after taking the flight to Tian Monastery during |cffffff00The Defense of Tian Monastery|r.",
+						["description"] = createLocalizationString({
+							readable = "You can get this quest after taking the flight to Tian Monastery during |cffffff00The Defense of Tian Monastery|r.",
+							constant = "YOU_CAN_GET_THIS_QUEST_AFTER_TAKING_THE_FLIGHT",
+							export = true,
+							text = {
+								en = "You can get this quest after taking the flight to Tian Monastery during |cffffff00The Defense of Tian Monastery|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在|cffffff00保卫天神寺|r期间，乘坐飞行路线前往天神寺后即可获得此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 41905 },	-- Report from Tian Monastery
 						["provider"] = { "n", 104745 },	-- Instructor Myang
 						["coord"] = { 38.3, 25.8, THE_JADE_FOREST },

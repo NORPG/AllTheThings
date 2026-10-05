@@ -87,7 +87,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 				i(89428, {	-- Ancient Mogu Treasure
-					["description"] = "Contains some gold and a several green-quality gems.",
+					["description"] = createLocalizationString({
+						readable = "Contains some gold and a several green-quality gems.",
+						constant = "CONTAINS_SOME_GOLD_AND_A_SEVERAL_GREEN_QUALITY",
+						export = true,
+						text = {
+							en = "Contains some gold and a several green-quality gems.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "内含一些金币和数颗绿色品质宝石。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = { { "i", 87806, 1 } },	-- 1x Ancient Mogu Key
 				}),
 			}),

@@ -95,14 +95,14 @@ root(ROOTS.PVP, {
 						filter(MAIL, {
 							i(77612),	-- Replica Sergeant Major's Chain Armguards
 							i(77613, {	-- Replica Sergeant Major's Chain Armguards
-								["description"] = "Horde appearance is learned when buying the Alliance version.",
+								["description"] = "~L.HORDE_APPEARANCE_IS_LEARNED_WHEN_BUYING_THE",
 								["groups"] = { h(i(77836)) },	-- Replica First Sergeant's Mail Wristguards
 							}),
 						}),
 						filter(PLATE, {
 							i(77659),	-- Replica Sergeant Major's Plate Wristguards
 							i(77660, {	-- Replica Sergeant Major's Plate Wristguards
-								["description"] = "Horde appearance is learned when buying the Alliance version.",
+								["description"] = "~L.HORDE_APPEARANCE_IS_LEARNED_WHEN_BUYING_THE",
 								["groups"] = { h(i(77870)) },	-- Replica First Sergeant's Plate Bracers
 							}),
 						}),
@@ -550,7 +550,24 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				i(71339, {	-- Vicious Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
+					["description"] = createLocalizationString({
+						readable = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
+						constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_9",
+						export = true,
+						text = {
+							en = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "授予大地的裂变第 1 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}))),
 			n(PVP_HONOR, bubbleDownSelf({
@@ -560,7 +577,24 @@ root(ROOTS.PVP, {
 			}, {
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = createLocalizationString({
+							readable = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+							constant = "YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
+							export = true,
+							text = {
+								en = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你需要登出并重新登录才能登记恶毒角斗士 |cFF1eff00第 10 赛季|r 荣誉幻化。\n\n|cffde1c1c你不会|r获得同名的恶毒角斗士 |cFF1eff00第 9 赛季|r 幻化。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(64735)),	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
@@ -571,7 +605,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(64727)),	-- Bloodthirsty Gladiator's Dragonhide Gloves
@@ -592,7 +626,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(64708)),	-- Bloodthirsty Gladiator's Chain Armor
@@ -603,7 +637,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
 						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
@@ -630,7 +664,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(64802)),	-- Bloodthirsty Gladiator's Ornamented Chestguard
@@ -646,7 +680,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(64795)),	-- Bloodthirsty Gladiator's Mooncloth Gloves
@@ -662,7 +696,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(64769)),	-- Bloodthirsty Gladiator's Leather Gloves
@@ -673,7 +707,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(64776)),	-- Bloodthirsty Gladiator's Linked Armor
@@ -694,7 +728,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(64745)),	-- Bloodthirsty Gladiator's Felweave Amice
@@ -705,7 +739,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
-						["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(64811)),	-- Bloodthirsty Gladiator's Plate Chestpiece
@@ -1488,7 +1522,24 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				i(71954, {	-- Ruthless Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
+					["description"] = createLocalizationString({
+						readable = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
+						constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_10",
+						export = true,
+						text = {
+							en = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "授予大地的裂变第 2 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}))),
 			n(PVP_HONOR, bubbleDownSelf({
@@ -1608,13 +1659,64 @@ root(ROOTS.PVP, {
 					i(70529),	-- Vicious Gladiator's Bracers of Meditation
 					i(70530),	-- Vicious Gladiator's Bracers of Prowess
 					i(70547, {	-- Vicious Gladiator's Cuffs of Accuracy
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+						["description"] = createLocalizationString({
+							readable = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+							constant = "THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE",
+							export = true,
+							text = {
+								en = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该物品只能通过嗜血角斗士法师套装获得。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(70548, {	-- Vicious Gladiator's Cuffs of Meditation
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+						["description"] = createLocalizationString({
+							readable = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+							constant = "THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_2",
+							export = true,
+							text = {
+								en = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该物品只能通过嗜血角斗士牧师套装获得。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(70549, {	-- Vicious Gladiator's Cuffs of Prowess
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+						["description"] = createLocalizationString({
+							readable = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+							constant = "THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_3",
+							export = true,
+							text = {
+								en = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该物品只能通过嗜血角斗士术士套装获得。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(70669),	-- Vicious Gladiator's Wristguards of Accuracy
 					i(70670),	-- Vicious Gladiator's Wristguards of Alacrity
@@ -1625,13 +1727,13 @@ root(ROOTS.PVP, {
 					i(70540),	-- Vicious Gladiator's Clasp of Cruelty
 					i(70541),	-- Vicious Gladiator's Clasp of Meditation
 					i(70544, {	-- Vicious Gladiator's Cord of Accuracy
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_3",
 					}),
 					i(70545, {	-- Vicious Gladiator's Cord of Cruelty
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE",
 					}),
 					i(70546, {	-- Vicious Gladiator's Cord of Meditation
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_2",
 					}),
 					i(70573),	-- Vicious Gladiator's Girdle of Cruelty
 					i(70574),	-- Vicious Gladiator's Girdle of Prowess
@@ -1654,13 +1756,13 @@ root(ROOTS.PVP, {
 					i(70641),	-- Vicious Gladiator's Sabatons of Cruelty
 					i(70642),	-- Vicious Gladiator's Sabatons of Meditation
 					i(70660, {	-- Vicious Gladiator's Treads of Alacrity
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_3",
 					}),
 					i(70661, {	-- Vicious Gladiator's Treads of Cruelty
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE",
 					}),
 					i(70662, {	-- Vicious Gladiator's Treads of Meditation
-						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_2",
 					}),
 					i(70667),	-- Vicious Gladiator's Warboots of Alacrity
 					i(70668),	-- Vicious Gladiator's Warboots of Cruelty
@@ -1759,7 +1861,24 @@ root(ROOTS.PVP, {
 				})),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = createLocalizationString({
+							readable = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+							constant = "YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
+							export = true,
+							text = {
+								en = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你需要登出并重新登录才能登记每一件无情角斗士物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(70244, {	-- Ruthless Gladiator's Dreadplate Chestpiece
@@ -1782,7 +1901,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 						-- CRIEVE NOTE: These were not available for purchase, but apparently got added to the Ensemble in 7.2.0.
 						-- DARKAL NOTE: And then they removed them from the Ensemble in 11.0.0
@@ -1865,7 +1984,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(70259, {	-- Ruthless Gladiator's Chain Armor
@@ -1888,7 +2007,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(70303, {	-- Ruthless Gladiator's Silk Amice
@@ -1911,7 +2030,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(70353, {	-- Ruthless Gladiator's Ornamented Chestguard
@@ -1951,7 +2070,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(70304)),	-- Ruthless Gladiator's Mooncloth Gloves
@@ -1991,7 +2110,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(70295)),	-- Ruthless Gladiator's Leather Gloves
@@ -2014,7 +2133,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(70269, {	-- Ruthless Gladiator's Linked Armor
@@ -2071,7 +2190,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(2, i(70318, {	-- Ruthless Gladiator's Felweave Amice
@@ -2094,7 +2213,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
-						["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
+						["description"] = "~L.YOU_WILL_NEED_TO_LOG_OUT_AND_BACK_IN_TO_2",
 						["timeline"] = { ADDED_7_2_0 },
 					})),
 					moh(3, i(70254, {	-- Ruthless Gladiator's Plate Chestpiece
@@ -2417,12 +2536,46 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
+					["description"] = createLocalizationString({
+						readable = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
+						constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_11",
+						export = true,
+						text = {
+							en = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "授予大地的裂变第 3 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}))),
 			n(PVP_HONOR, {
 				-- #if AFTER 7.2.0.23436
-				["description"] = "These items are only available from Ruthless Gladiator class ensembles.",
+				["description"] = createLocalizationString({
+					readable = "These items are only available from Ruthless Gladiator class ensembles.",
+					constant = "THESE_ITEMS_ARE_ONLY_AVAILABLE_FROM_RUTHLESS",
+					export = true,
+					text = {
+						en = "These items are only available from Ruthless Gladiator class ensembles.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这些物品只能从无情角斗士职业套装中获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["groups"] = {
 					cl(DEATHKNIGHT, {

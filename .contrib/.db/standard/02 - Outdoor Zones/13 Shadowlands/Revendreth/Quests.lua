@@ -121,7 +121,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(58932, {	-- Temel, the Sin Herald
-					["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
+					["description"] = createLocalizationString({
+						readable = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
+						constant = "AUTOMATICALLY_OFFERED_AFTER_ECHELON_DROPS_YOU",
+						export = true,
+						text = {
+							en = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在审判官斯特莉亚的罪石期间，艾切隆把你放下后自动提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["coord"] = { 69.4, 53.9, REVENDRETH },
 				}),
@@ -641,7 +658,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 72.5, 73.2, REVENDRETH },
 				}),
 				q(62190, {	-- It's a Dirty Job
-					["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+					["description"] = createLocalizationString({
+						readable = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+						constant = "THIS_QUEST_IS_AVAILABLE_TO_PLAYERS_WITH_EMBER",
+						export = true,
+						text = {
+							en = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务面向灰烬王庭等级达到 2、且在雷文德斯先完成泥仆任务线（需在“脏活”任务线之前）的玩家。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 60509 },	-- Not My Job
 					["altQuests"] = { 57471 },	-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
@@ -892,7 +926,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			header(HEADERS.Item, 182589, {	-- Loyal Gorger
 				q(61839, {	-- Nipping at the Undergrowth
-					["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+					["description"] = createLocalizationString({
+						readable = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+						constant = "BECOMES_AVAILABLE_IN_THE_ENDMIRE_NORTH_OF",
+						export = true,
+						text = {
+							en = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在拾取世界边缘饕餮者掉落的易受影响的饕餮者幼体后，于暗港以北的终末泥潭开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
 					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
@@ -965,7 +1016,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(58062, {	-- A Very Special Guest
-				["description"] = "Unlocks the Black Market Auction House and item drops for Favor quests.",
+				["description"] = createLocalizationString({
+					readable = "Unlocks the Black Market Auction House and item drops for Favor quests.",
+					constant = "UNLOCKS_THE_BLACK_MARKET_AUCTION_HOUSE_AND_ITEM",
+					export = true,
+					text = {
+						en = "Unlocks the Black Market Auction House and item drops for Favor quests.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁黑市拍卖行以及恩惠任务的任务物品掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 58060 },	-- The Night Market
 				["provider"] = { "n", 160091 },	-- Ta'ruca
 				["coord"] = { 51.0, 78.6, REVENDRETH },
@@ -979,7 +1047,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(57928, {	-- Atonement Crypt Key
-				["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
+				["description"] = createLocalizationString({
+					readable = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
+					constant = "THE_QUEST_ITEM_DROPS_FROM_DEPRAVED_AND_DREDGER",
+					export = true,
+					text = {
+						en = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该任务物品由收割者庭院中的堕落者和泥仆怪物掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 57925 },	-- Archivist Fane
 				["provider"] = { "i", 173735 },	-- Atonement Crypt Key (QI!)
 			}),
@@ -1026,7 +1111,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 31.1, 55.1, REVENDRETH },
 			}),
 			q(60501, {	-- Redemption for the Redeemer
-				["description"] = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
+				["description"] = createLocalizationString({
+					readable = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
+					constant = "DEFEAT_SIRE_DENATHRIUS_ON_ANY_DIFFICULTY_IN",
+					export = true,
+					text = {
+						en = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以任意难度在纳斯利亚堡击败德纳修斯大帝即可开启该任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qs"] = 179358,	-- Remornia (QS!)
 			}),
 			q(58725, {	-- Sinkeeper
@@ -1039,7 +1141,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(58327, {	-- Snacks for Stonehead
-				["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
+				["description"] = createLocalizationString({
+					readable = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
+					constant = "PICK_UP_THE_HOLLOW_ROCK_AT_CFFFFFFFF38_8_64_3_R",
+					export = true,
+					text = {
+						en = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在|cFFFFFFFF38.8, 64.3|r处拾取空心岩石，否则在你尝试接近任务时，石首会把你扔出去。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 39.2, 65.2, REVENDRETH },
 				["groups"] = {
 					ach(14272),	-- Best Bud With Benefits
@@ -1119,7 +1238,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(57177, {	-- A Fresh Start
-					["description"] = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
+					["description"] = createLocalizationString({
+						readable = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
+						constant = "PROBABLY_HAVE_TO_BE_ON_QUEST_57175_INQUISITOR",
+						export = true,
+						text = {
+							en = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可能需要处于任务 57175（审判官维尔海姆的罪石）才能使其出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 					["coord"] = { 65.2, 47.0, REVENDRETH },
 				}),

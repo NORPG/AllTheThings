@@ -20,17 +20,85 @@ root(ROOTS.Zones, {
 				["groups"] = {
 					pet(1743),	-- Black-Footed Fox Kit (PET!)
 					pet(1726, {	-- Burrow Spiderling (PET!)
-						["description"] = "Found inside Neltharion's Vault. Coord is entrance.",
+						["description"] = createLocalizationString({
+							readable = "Found inside Neltharion's Vault. Coord is entrance.",
+							constant = "FOUND_INSIDE_NELTHARION_S_VAULT_COORD_IS",
+							export = true,
+							text = {
+								en = "Found inside Neltharion's Vault. Coord is entrance.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于奈萨里奥的宝库内。坐标是入口位置。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 44.6, 72.4, HIGHMOUNTAIN },
 					}),
 					pet(1775, {	-- Coralback Fiddler (PET!)
-						["description"] = "Found on the northern coastline of Highmountain.",
+						["description"] = createLocalizationString({
+							readable = "Found on the northern coastline of Highmountain.",
+							constant = "FOUND_ON_THE_NORTHERN_COASTLINE_OF_HIGHMOUNTAIN",
+							export = true,
+							text = {
+								en = "Found on the northern coastline of Highmountain.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在至高岭北部海岸线找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(1761, {	-- Echo Batling (PET!)
-						["description"] = "Found in Rockcrawler Chasm and Mucksnout Den. Something is making the critter form of this pet unattackable, so this pet may be hard to come across.",
+						["description"] = createLocalizationString({
+							readable = "Found in Rockcrawler Chasm and Mucksnout Den. Something is making the critter form of this pet unattackable, so this pet may be hard to come across.",
+							constant = "FOUND_IN_ROCKCRAWLER_CHASM_AND_MUCKSNOUT_DEN",
+							export = true,
+							text = {
+								en = "Found in Rockcrawler Chasm and Mucksnout Den. Something is making the critter form of this pet unattackable, so this pet may be hard to come across.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于岩爬者裂谷和泥鼻兽穴。有某种原因使这只宠物的野生小动物形态无法被攻击，因此这只宠物可能很难遇到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(1731, {	-- Felspider (PET!)
-						["description"] = "Found in the Blind Marshlands and in Faronaar (in a small area under the 'F' on the map.)",
+						["description"] = createLocalizationString({
+							readable = "Found in the Blind Marshlands and in Faronaar (in a small area under the 'F' on the map.)",
+							constant = "FOUND_IN_THE_BLIND_MARSHLANDS_AND_IN_FARONAAR",
+							export = true,
+							text = {
+								en = "Found in the Blind Marshlands and in Faronaar (in a small area under the 'F' on the map.)",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于盲眼沼泽以及法拉纳尔（地图上“F”字母下方的一小片区域）。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(569, {	-- Garden Frog (PET!)
 						["coord"] = { 43.0, 59.8, HIGHMOUNTAIN },
@@ -43,14 +111,48 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.8, 30.6, HIGHMOUNTAIN },
 					}),
 					pet(1776, {	-- Mudshell Conch (PET!)
-						["description"] = "Found on the northern coastline of Highmountain.",
+						["description"] = "~L.FOUND_ON_THE_NORTHERN_COASTLINE_OF_HIGHMOUNTAIN",
 					}),
 					pet(1714, {	-- Northern Hawk Owl (PET!)
-						["description"] = "Found in the snowy area of Highmountain by Frosthoof Watch.",
+						["description"] = createLocalizationString({
+							readable = "Found in the snowy area of Highmountain by Frosthoof Watch.",
+							constant = "FOUND_IN_THE_SNOWY_AREA_OF_HIGHMOUNTAIN_BY",
+							export = true,
+							text = {
+								en = "Found in the snowy area of Highmountain by Frosthoof Watch.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于至高岭霜蹄岗哨附近的雪地区域。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(1763),	-- Spiketail Beaver (PET!)
 					header(HEADERS.NPC, 115784, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Snowfeather Hatchling
-						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
+						["description"] = createLocalizationString({
+							readable = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
+							constant = "1_BUY_SMOKED_ELDERHORN_FROM_MARIUS_FELBANE_IN",
+							export = true,
+							text = {
+								en = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "1. 在至高岭向马里乌斯·灭魔购买熏制长者鹿角。\n2. 杀死雪羽母鹰。\n3. /target 孤雏雪羽鹰\n4. 用熏制长者鹿角喂食孤雏雪羽鹰。\n5. 享受新的雪羽雏鹰|r",
+								-- TODO: tw = "",
+							},
+						}),
 						["crs"] = { 115737 },	-- Orphaned Snowfeather
 						["groups"] = {
 							pet(1974),	-- Snowfeather Hatchling (PET!)

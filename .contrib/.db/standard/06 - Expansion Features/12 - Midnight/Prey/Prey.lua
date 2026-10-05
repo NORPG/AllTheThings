@@ -446,7 +446,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			q(91229),	-- Prey: Zadu, Fist of Nalorakk (Nightmare)
 		})),
 		n(258928, {	-- Ral'kala <Terror of the Isle>
-			["description"] = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
+			["description"] = createLocalizationString({
+				readable = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
+				constant = "REPEATABLE_SPECIAL_PREY_MOB_ON_THE_COILED_ISLE",
+				export = true,
+				text = {
+					en = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "盘蛇岛上可重复出现的特殊猎物怪物。\n通过在闹鬼火盆处燃烧 98 个骨化遗物作为公共事件刷新。它拥有延迟死亡（刷新后 15 秒免疫），持续攻击它，否则它会消失且遗物会损失。\n\n需要解锁猎物猎人的旅程 1 级，以及由 NPC 266481 阿斯塔洛·血誓激活的猎物：岛屿诅咒。\n要看到并与它战斗以及获得战利品，你必须亲自在火盆处燃烧至少 1 个骨化遗物。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coords"] = {
 				{ 29.5, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				{ 52.9, 42.2, MAP.MIDNIGHT.THE_COILED_ISLE },

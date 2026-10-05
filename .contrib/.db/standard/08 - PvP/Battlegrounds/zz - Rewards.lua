@@ -5,7 +5,24 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 		filter(CONSUMABLES, {
-			["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
+			["description"] = createLocalizationString({
+				readable = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
+				constant = "THESE_ARE_COMMONLY_SOLD_BY_PVP_VENDORS_AND_CAN",
+				export = true,
+				text = {
+					en = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些通常由 PvP 商人出售，也可以从奖励箱中获得。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(138478),	-- Feast of Ribs
 				i(138727),	-- Potion of Defiance
@@ -95,7 +112,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		}),
 		i(135540, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crate of Battlefield Goods 40-59 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
+				constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN",
+				export = true,
+				text = {
+					en = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 9.0 之前赢得等级 40-59 范围内的随机战场后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
@@ -128,7 +162,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		i(135541, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
+				constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_2",
+				export = true,
+				text = {
+					en = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 9.0 之前赢得等级 60-69 范围内的随机战场后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(134584),	-- Inciter's Cord
 				i(134585),	-- Inciter's Cuffs
@@ -156,7 +207,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		i(135542, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
+				constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_3",
+				export = true,
+				text = {
+					en = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 9.0 之前赢得等级 70-79 范围内的随机战场后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(134724),	-- Icyweave Amice*
 				i(134722),	-- Icyweave Robes*
@@ -190,10 +258,44 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		i(135543, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
-			["description"] = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
+				constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_4",
+				export = true,
+				text = {
+					en = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 9.0 之前赢得等级 80-89 范围内的随机战场后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				n(LEVEL_RANGE_80_84, {
-					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
+					["description"] = createLocalizationString({
+						readable = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
+						constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_5",
+						export = true,
+						text = {
+							en = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在 9.0 之前赢得等级 80-84 范围内的随机战场后奖励。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(134616),	-- Inflammatory Cord*
 						i(134615),	-- Inflammatory Hood*
@@ -223,7 +325,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(LEVEL_RANGE_85_89, {
-					["description"] = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
+					["description"] = createLocalizationString({
+						readable = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
+						constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_6",
+						export = true,
+						text = {
+							en = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在 9.0 之前赢得等级 85-89 范围内的随机战场后奖励。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(134754),	-- Veiled Cuffs*
 						i(134752),	-- Veiled Leggings*
@@ -258,7 +377,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		i(135545, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
+				constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_7",
+				export = true,
+				text = {
+					en = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 9.0 之前赢得等级 90-99 范围内的随机战场后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(134787),	-- Entrenched Cowl*
 				i(134786),	-- Entrenched Handwraps*
@@ -293,7 +429,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		container(135546, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
-			["description"] = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
+				constant = "REWARDED_FOR_WINNING_A_RANDOM_BATTLEGROUND_IN_8",
+				export = true,
+				text = {
+					en = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 9.0 之前赢得等级 100-109 范围内的随机战场，或完成阿什兰任务后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(135578),	-- Battle Touched Banner
 				i(135568),	-- Battle Touched Blood of the Fallen

@@ -11,7 +11,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(KYRIAN, {
 		n(REWARDS, {
 			i(183701, {	-- Cleansing Rite Materials
-				["description"] = "Only Obtainable via Pelagos Soulbind.",
+				["description"] = createLocalizationString({
+					readable = "Only Obtainable via Pelagos Soulbind.",
+					constant = "ONLY_OBTAINABLE_VIA_PELAGOS_SOULBIND",
+					export = true,
+					text = {
+						en = "Only Obtainable via Pelagos Soulbind.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅可通过佩拉戈斯的灵魂羁绊获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		n(VENDORS, {

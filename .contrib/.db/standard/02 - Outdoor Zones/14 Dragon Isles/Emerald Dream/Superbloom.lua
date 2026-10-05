@@ -129,7 +129,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			n(207554, {		-- Verlann Timbercrush
-				["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
+				["description"] = createLocalizationString({
+					readable = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
+					constant = "SPAWNS_AT_THE_END_OF_THE_SUPERBLOOM_EVENT_THE",
+					export = true,
+					text = {
+						en = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在超级绽放事件结束时刷新。\n该事件总是在整点开始。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 43.8, 71.8, EMERALD_DREAM },
 				["isWeekly"] = true,
 				["groups"] = {
@@ -150,10 +167,44 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(REWARDS, {
 				i(211414, {	-- Blossoming Dreamtrove
-					["description"] = "Granted for achieving 8000 points during the Superbloom Event.\nThe Event always starts on the hour.",
+					["description"] = createLocalizationString({
+						readable = "Granted for achieving 8000 points during the Superbloom Event.\nThe Event always starts on the hour.",
+						constant = "GRANTED_FOR_ACHIEVING_8000_POINTS_DURING_THE",
+						export = true,
+						text = {
+							en = "Granted for achieving 8000 points during the Superbloom Event.\nThe Event always starts on the hour.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在超级绽放事件期间获得 8000 点积分即可获得。\n该事件总是在整点开始。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(211413, {	-- Budding Dreamtrove
-					["description"] = "Granted for achieving 5333 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+					["description"] = createLocalizationString({
+						readable = "Granted for achieving 5333 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+						constant = "GRANTED_FOR_ACHIEVING_5333_OR_MORE_POINTS",
+						export = true,
+						text = {
+							en = "Granted for achieving 5333 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在超级绽放事件期间获得 5333 点或以上积分即可获得。\n该事件总是在整点开始。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(207762),	-- Grotto Netherwing Drake: Chin Spike (MM!)
 						i(207774),	-- Grotto Netherwing Drake: Finned Jaw (MM!)
@@ -166,7 +217,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				i(211411, {	-- Sprouting Dreamtrove
-					["description"] = "Granted for achieving 2600 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+					["description"] = createLocalizationString({
+						readable = "Granted for achieving 2600 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+						constant = "GRANTED_FOR_ACHIEVING_2600_OR_MORE_POINTS",
+						export = true,
+						text = {
+							en = "Granted for achieving 2600 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在超级绽放事件中获得 2600 点或更多积分即可获得。\n事件总是在整点开始。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 		}),

@@ -128,7 +128,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 					prof(FISHING, {
 						spell(1306775, {	-- Venom Fishing
-							["description"] = "Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",
+							["description"] = createLocalizationString({
+								readable = "Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",
+								constant = "ENABLES_FISHING_IN_THE_VENOMOUS_WATERS",
+								export = true,
+								text = {
+									en = "Enables fishing in the venomous waters surrounding the Temple of Ula'tek on The Coiled Isle.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "使你能在盘蛇岛上乌拉特克神殿周围的剧毒水域中钓鱼。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 							["groups"] = {
 								i(274805),	-- Envenomed Chopper (COSMETIC!)
@@ -152,64 +169,200 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						filter(QUEST_ITEMS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 							i(279384, {	-- Bonemail Gauntlet (QS!)
-								["description"] = "Can be fished in open waters",
+								["description"] = createLocalizationString({
+									readable = "Can be fished in open waters",
+									constant = "CAN_BE_FISHED_IN_OPEN_WATERS",
+									export = true,
+									text = {
+										en = "Can be fished in open waters",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "可在开阔水域钓到",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
 							}),
 							i(278339, {	-- Cursebound Pearl (CI!)
-								["description"] = "Can be fished from Abyssal Swirl pools created with the Eerie Bauble",
+								["description"] = createLocalizationString({
+									readable = "Can be fished from Abyssal Swirl pools created with the Eerie Bauble",
+									constant = "CAN_BE_FISHED_FROM_ABYSSAL_SWIRL_POOLS_CREATED",
+									export = true,
+									text = {
+										en = "Can be fished from Abyssal Swirl pools created with the Eerie Bauble",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "可用诡异饰物制造的深渊漩涡鱼群中钓到",
+										-- TODO: tw = "",
+									},
+								}),
 								["provider"] = { "i", 278391 },	-- Eerie Bauble
 							}),
 							i(278001, {	-- Forgotten Amani Fishing Rod (QS!)
-								["description"] = "Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",
+								["description"] = createLocalizationString({
+									readable = "Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",
+									constant = "CAN_BE_FISHED_IN_TORRENTIAL_GORGERSWARM_POOLS",
+									export = true,
+									text = {
+										en = "Can be fished in Torrential Gorgerswarm pools created by a Coiled Stargorger Lure.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "可在由盘绕的星噬者诱饵生成的汹涌贪食虫群鱼群中钓到。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
 								["cost"] = { { "i", 241151, 1 } },	-- 1x Coiled Stargorger Lure
 							}),
 							i(277989, {	-- Ghostcaller's Bell (QS!)
-								["description"] = "Can be fished from Bubbling Beryl pools.",
+								["description"] = createLocalizationString({
+									readable = "Can be fished from Bubbling Beryl pools.",
+									constant = "CAN_BE_FISHED_FROM_BUBBLING_BERYL_POOLS",
+									export = true,
+									text = {
+										en = "Can be fished from Bubbling Beryl pools.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "可从沸腾绿柱石鱼群中钓到。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
 							}),
 							i(277998, {	-- Lump of Crystalline Malachite (QS!)
-								["description"] = "Can be fished from Willow Sea and Bubbling Beryl pools.",
+								["description"] = createLocalizationString({
+									readable = "Can be fished from Willow Sea and Bubbling Beryl pools.",
+									constant = "CAN_BE_FISHED_FROM_WILLOW_SEA_AND_BUBBLING",
+									export = true,
+									text = {
+										en = "Can be fished from Willow Sea and Bubbling Beryl pools.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "可从柳林海和沸腾绿柱石鱼群中钓到。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
 							}),
 							i(277997, {	-- Malevolent Fishing Codex (QS!)
-								["description"] = "Can be fished from Abyssal Swirl pools created with the Eerie Bauble",
+								["description"] = "~L.CAN_BE_FISHED_FROM_ABYSSAL_SWIRL_POOLS_CREATED",
 								["provider"] = { "i", 278391 },	-- Eerie Bauble
 								["sourceQuest"] = 97565,	-- Tipping the Scaled
 							}),
 							i(277999, {	-- Ritual Dagger (QS!)
-								["description"] = "Can be fished in open waters",
+								["description"] = "~L.CAN_BE_FISHED_IN_OPEN_WATERS",
 								["sourceQuest"] = 98343,	-- Venom Fishing: My Second-Best
 							}),
 							i(278000, {	-- Sealed Vial of Mysterious Green Liquid (QS!)
-								["description"] = "Can be fished in venomous waters surrounding the Temple.",
+								["description"] = createLocalizationString({
+									readable = "Can be fished in venomous waters surrounding the Temple.",
+									constant = "CAN_BE_FISHED_IN_VENOMOUS_WATERS_SURROUNDING",
+									export = true,
+									text = {
+										en = "Can be fished in venomous waters surrounding the Temple.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "可在神殿周围的剧毒水域中钓到。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 							}),
 							i(277991, {	-- Shrieking Tacklebox (QS!)
-								["description"] = "Can be fished in venomous waters surrounding the Temple.",
+								["description"] = "~L.CAN_BE_FISHED_IN_VENOMOUS_WATERS_SURROUNDING",
 								["sourceQuest"] = 96112,	-- Venom Fishing: Maddening Concoction
 							}),
 							i(277993, {	-- Spiritsurge Incense (QS!)
-								["description"] = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+								["description"] = createLocalizationString({
+									readable = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+									constant = "CAN_BE_FISHED_IN_OPEN_CURSED_WATERS_AROUND",
+									export = true,
+									text = {
+										en = "Can be fished in open cursed waters around areas following a successfully completed Cursed Surge event. Look for the Cursed Land and Waters buff.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在成功完成诅咒涌动事件后，可在相关区域周围的诅咒开阔水域中钓到。寻找诅咒之地与水域增益。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 96111,	-- Venom Fishing: Shell of Yourself
 							}),
 							i(277996, {	-- Summoning Salt (QS!)
-								["description"] = "Can be fished in open waters",
+								["description"] = "~L.CAN_BE_FISHED_IN_OPEN_WATERS",
 								["sourceQuest"] = 96113,	-- Venom Fishing: Maximum Potency
 							}),
 						})),
 					}),
 					n(RARES, {
 						n(270024, {	-- Cook Leathertongue
-							["description"] = "Provides 50 Captain Tokka Reputation on kill",
+							["description"] = createLocalizationString({
+								readable = "Provides 50 Captain Tokka Reputation on kill",
+								constant = "PROVIDES_50_CAPTAIN_TOKKA_REPUTATION_ON_KILL",
+								export = true,
+								text = {
+									en = "Provides 50 Captain Tokka Reputation on kill",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "击杀时提供 50 点托卡队长声望",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "i", 279207 },	-- Blackened Sludgefish
 						}),
 						n(270222, {	-- Master Grenadier Birdie
-							["description"] = "Provides 50 Captain Tokka Reputation on kill",
+							["description"] = "~L.PROVIDES_50_CAPTAIN_TOKKA_REPUTATION_ON_KILL",
 							["provider"] = { "i", 279210 },	-- Explosive Tlhapi
 						}),
 						n(269765, {	-- Quartermaster Inktail
-							["description"] = "Provides 50 Captain Tokka Reputation on kill",
+							["description"] = "~L.PROVIDES_50_CAPTAIN_TOKKA_REPUTATION_ON_KILL",
 							["provider"] = { "i", 278848 },	-- Pustulent Blightswarmer
 						}),
 					}),
@@ -271,7 +424,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(278391, {	-- Eerie Bauble
-									["description"] = "Throw at a pool of fish to convert it to an Abyssal Swirl.",
+									["description"] = createLocalizationString({
+										readable = "Throw at a pool of fish to convert it to an Abyssal Swirl.",
+										constant = "THROW_AT_A_POOL_OF_FISH_TO_CONVERT_IT_TO_AN",
+										export = true,
+										text = {
+											en = "Throw at a pool of fish to convert it to an Abyssal Swirl.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "投向鱼群可将其转化为深渊漩涡。",
+											-- TODO: tw = "",
+										},
+									}),
 									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),

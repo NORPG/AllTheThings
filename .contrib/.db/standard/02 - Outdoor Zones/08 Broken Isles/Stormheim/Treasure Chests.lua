@@ -187,7 +187,7 @@ root(ROOTS.Zones, {
 				o(241153, {	-- Small Treasure Chest
 					["questID"] = 38483,
 					["coord"] = { 50.3, 41.0, STORMHEIM },
-					["description"] = "Inside the cave.",
+					["description"] = "~L.INSIDE_THE_CAVE",
 				}),
 				o(269079, {	-- Small Treasure Chest
 					["coord"] = { 59.9, 70.8, STORMHEIM },
@@ -274,7 +274,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 78.4, 71.4, STORMHEIM },
 				}),
 				o(255963, {	-- Vrykul Ancestral Chest
-					["description"] = "These repeatable chests spawn all over the map in Stormheim."
+					["description"] = createLocalizationString({
+						readable = "These repeatable chests spawn all over the map in Stormheim.",
+						constant = "THESE_REPEATABLE_CHESTS_SPAWN_ALL_OVER_THE_MAP_3",
+						export = true,
+						text = {
+							en = "These repeatable chests spawn all over the map in Stormheim.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些可重复开启的箱子会在风暴峡湾的地图各处刷新。",
+							-- TODO: tw = "",
+						},
+					})
 				}),
 			}),
 		}),

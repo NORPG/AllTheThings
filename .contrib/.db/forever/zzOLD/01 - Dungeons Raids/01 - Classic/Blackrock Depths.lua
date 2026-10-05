@@ -52,7 +52,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		-- #endif
-		["description"] = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
+		["description"] = createLocalizationString({
+			readable = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
+			constant = "THE_BEST_ROUTE_FOR_A_FULL_CLEAR_IS_TO_ENTER",
+			export = true,
+			text = {
+				en = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "全清的最佳路线是第一次就经黑铁公路进入暗炉城。拘留区则随时都可以清理。",
+				-- TODO: tw = "",
+			},
+		}),
 		["mapID"] = MAP.BLACKROCK_DEPTHS,
 		["coord"] = { 39.06, 18.12, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 		["lvl"] = 42,
@@ -83,7 +100,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4264, {	-- A Crumpled Up Note
 					-- #if BEFORE 3.0.2
-					["description"] = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
+					["description"] = createLocalizationString({
+						readable = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
+						constant = "AFTER_COMPLETING_THE_ABANDONED_HOPE_QUEST_KILL",
+						export = true,
+						text = {
+							en = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成任务“被遗弃的希望”后，击杀小怪直到此物品掉落。如果你的队伍还没有击杀黑暗守护者，它们也有相当高的几率掉落此物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 4242,	-- Abandoned Hope
 					["provider"] = { "i", 11446 },	-- A Crumpled Up Note
@@ -108,7 +142,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4022, {	-- A Taste of Flame (1/2) (A)
 					-- #if BEFORE 4.0.3
-					["description"] = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
+					["description"] = createLocalizationString({
+						readable = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
+						constant = "IF_YOU_COMPLETED_THE_QUEST_TRINKETS_IN_SEARING",
+						export = true,
+						text = {
+							en = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你已完成灼热峡谷的任务“小饰品……”，只要随身携带黑龙军团蜕皮，就可以立即完成此任务，无需与精英龙战斗。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 3481,	-- Trinkets...
 					["altQuests"] = { 4023 },	-- A Taste of Flame
@@ -184,7 +235,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3801, {	-- Dark Iron Legacy (1/2)
 					-- #if BEFORE 4.0.3
-					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
+					["description"] = createLocalizationString({
+						readable = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
+						constant = "YOU_MUST_BE_A_GHOST_IN_ORDER_TO_INTERACT_WITH",
+						export = true,
+						text = {
+							en = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须处于幽灵状态才能与这个任务给予者互动。他在黑石山中央、他那座陵墓顶部的浮空岛上。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["qg"] = 8888,	-- Franclorn Forgewright
 					["timeline"] = { REMOVED_4_0_3 },
@@ -253,7 +321,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4182, {	-- Dragonkin Menace
 					-- #if BEFORE 3.0.2
-					["description"] = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
+					["description"] = createLocalizationString({
+						readable = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
+						constant = "YOU_SHOULD_FINISH_THIS_FULL_QUEST_CHAIN_UP_TO",
+						export = true,
+						text = {
+							en = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在加入黑石深渊队伍之前，你应该先完成这条完整的任务链直到温德索尔元帅。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["qg"] = 9562,	-- Helendis Riverhorn
 					["coord"] = { 85.8, 69.0, MAP.BURNING_STEPPES },
@@ -560,7 +645,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6501, {	-- The Dragon's Eye
 					-- #if BEFORE 3.0.2
-					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
+					["description"] = createLocalizationString({
+						readable = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
+						constant = "GO_TO_HALEH_IN_WINTERSPRING_USE_THE_BLUE_RUNE",
+						export = true,
+						text = {
+							en = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "前往冬泉谷的哈莱。使用洞穴内地面上的蓝色符文即可抵达她那里。不必去尘泥沼泽。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 6403,	-- The Great Masquerade
 					["providers"] = {
@@ -595,7 +697,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6403, {	-- The Great Masquerade
 					-- #if BEFORE 3.0.2
-					["description"] = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
+					["description"] = createLocalizationString({
+						readable = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
+						constant = "THIS_QUEST_CAN_BE_SOLO_D_DO_NOT_TOUCH_ANYTHING",
+						export = true,
+						text = {
+							en = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务可以单刷。不要碰任何东西，让伯瓦尔去对付那些龙。它们会施放强力的范围伤害，除非你在一个 20 人以上的团队中，否则很可能会死。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
 					["qg"] = 12580,	-- Reginald Windsor
@@ -804,7 +923,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4083, {	-- The Spectral Chalice
-					["description"] = "If you are a miner with 230 skill, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
+					["description"] = createLocalizationString({
+						readable = "If you are a miner with 230 skill, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
+						constant = "IF_YOU_ARE_A_MINER_WITH_230_SKILL_SPEAK_WITH",
+						export = true,
+						text = {
+							en = "If you are a miner with 230 skill, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你是一名技能 230 的矿工，与格鲁姆雷尔交谈，让他召唤出幽灵圣杯。\n\n存入所需物品后，再次与格鲁姆雷尔交谈，即可学会如何熔炼黑铁矿石。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 164869 },	-- Spectral Chalice
 					["cost"] = {
 						{ "i", 3577, 20 },	-- 20x Gold Bar
@@ -922,7 +1058,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{	-- Neutral
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(227730, {	-- Thorium Brotherhood Contract
-							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+							["description"] = createLocalizationString({
+								readable = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+								constant = "WITH_A_SULFURON_INGOT_IN_YOUR_BAGS_SPEAK_WITH",
+								export = true,
+								text = {
+									en = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "背包中带有萨弗隆铁锭时，与洛克托斯交谈并点击新的对话选项，即可获得瑟银兄弟会契约。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { ADDED_1_15_3 },
 							["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 							["lvl"] = 60,
@@ -938,7 +1091,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(18628, {	-- Thorium Brotherhood Contract
-							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+							["description"] = "~L.WITH_A_SULFURON_INGOT_IN_YOUR_BAGS_SPEAK_WITH",
 							-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { REMOVED_1_15_3 },
 							-- #endif
@@ -1302,11 +1455,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
-					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",
+					["description"] = createLocalizationString({
+						readable = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",
+						constant = "CFFFFD700PLANS_DARK_IRON_MAIL_R_CAN_SPAWN_IN",
+						export = true,
+						text = {
+							en = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "|cFFFFD700设计图：黑铁锁甲|r 可能在四个位置之一刷新。\n\n|cFFFFFFFF位置 1：|r 位于 |cFFFFD700西部兵营|r。从 |cFFFFD700安格弗将军|r 所在处沿斜坡上去后，你左侧有几张桌子。它会在火焰护卫毁灭者所在的后方角落，以及它前面的两张桌子处。这张桌子靠近那张摆着花瓶、位于酒桶附近的桌子。\n\n|cFFFFFFFF位置 2：|r 在 |cFFFFD700傀儡统帅阿格曼奇|r 的房间内。走进房间后，它会在后方左侧角落的桶之间。它的左边会有两个桶，右边有一个桶。\n\n|cFFFFFFFF位置 3：|r 在 |cFFFFD700制造厂|r，放在一张长椅上。\n\n|cFFFFFFFF位置 4：|r 离开 |cFFFFD700弗莱拉斯大使|r 的房间后，你会穿过一座桥进入 |cFFFFD700模具铸造厂|r。进入房间后一直往前走，直到看到斜坡。不要走下斜坡，而是从斜坡右侧的边沿跳下去。落地后你就会看到设计图在这里。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
 				i(11615, {	-- Plans: Dark Iron Shoulders (RECIPE!)
-					["description"] = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",
+					["description"] = createLocalizationString({
+						readable = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",
+						constant = "CFFFFD700PLANS_DARK_IRON_SHOULDERS_R_SPAWN_IN",
+						export = true,
+						text = {
+							en = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "|cFFFFD700设计图：黑铁护肩|r 在两个位置之一刷新。\n\n|cFFFFFFFF位置 1：|r 在 |cFFFFD700安格弗将军|r 的房间内。它们放在悬浮水晶旁边的底层架子上。\n\n|cFFFFFFFF位置 2：|r 在 |cFFFFD700监狱区|r 的地面上。经过莱克斯洛特后，继续往下进入房间。当你遇到第一个分成两个房间的岔路时，进入左边的房间。它们会放在长椅后面的座位上，长椅位于 3 个红色罐子旁边。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
 				i(11611, {	-- Plans: Dark Iron Sunderer (RECIPE!)
@@ -1322,7 +1509,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cr"] = 8897,	-- Doomforge Craftsman
 				}),
 				i(18235, {	-- Schematic: Field Repair Bot 74A (RECIPE!)
-					["description"] = "On the floor next to Golem Lord Argelmach.",
+					["description"] = createLocalizationString({
+						readable = "On the floor next to Golem Lord Argelmach.",
+						constant = "ON_THE_FLOOR_NEXT_TO_GOLEM_LORD_ARGELMACH",
+						export = true,
+						text = {
+							en = "On the floor next to Golem Lord Argelmach.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在魔像领主阿格曼奇旁边的地上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 179552 },	-- Schematic: Field Repair Bot 74A
 				}),
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot (RECIPE!)
@@ -1330,7 +1534,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(16053, {	-- Schematic: Master Engineer's Goggles
 					-- #if AFTER 2.0.1
-					["description"] = "This is now learned from the trainer.",
+					["description"] = createLocalizationString({
+						readable = "This is now learned from the trainer.",
+						constant = "THIS_IS_NOW_LEARNED_FROM_THE_TRAINER",
+						export = true,
+						text = {
+							en = "This is now learned from the trainer.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "现在可以从训练师处学习。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["timeline"] = { REMOVED_2_0_1 },
 					["cr"] = 8900,	-- Doomforge Arcanasmith
@@ -1420,7 +1641,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				e(372, {	-- Ring of Law
-					["description"] = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
+					["description"] = createLocalizationString({
+						readable = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
+						constant = "APPROACHING_THE_CENTER_OF_THE_RING_WILL_START",
+						export = true,
+						text = {
+							en = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "靠近圆环中心会触发一个事件，大法官将会出现，走向其中一座大门并释放三波非精英敌人，随后出现六个可能的小首领之一。",
+							-- TODO: tw = "",
+						},
+					}),
 					["creatureID"] = 10096,	-- High Justice Grimstone
 					["groups"] = {
 						n(9031, {	-- Anub'shiah
@@ -1556,7 +1794,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						}),
 						applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16059, {	-- Theldren
-							["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",
+							["description"] = createLocalizationString({
+								readable = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",
+								constant = "REQUIRES_BANNER_OF_PROVOCATION_DUNGEON_SET_2",
+								export = true,
+								text = {
+									en = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "需要挑衅之旗（地下城套装 2 任务线）才能召唤这个首领。杀死怪物后拾取灰色格栅上的灰色宝箱。你必须在非精英被杀死之前使用旗帜。\n召唤地点：法律之环。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { REMOVED_4_0_3 },
 							-- #if AFTER 4.0.3
 							["sourceQuest"] = 9015,	-- The Challenge
@@ -1587,7 +1842,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(223265, {	-- Delirious Ancient
-					["description"] = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
+					["description"] = createLocalizationString({
+						readable = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
+						constant = "SPAWNS_AFTER_DEFEATING_HIGH_INTERROGATOR",
+						export = true,
+						text = {
+							en = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "击败黑铁公路的高阶审讯官格斯塔恩、驯犬者格雷布玛尔以及法律之环后刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 					["groups"] = {
 						i(221271),	-- Ace of Wilds
@@ -1619,7 +1891,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11768, {	-- Incendic Bracers
 							-- #if BEFORE 10.1.7
 							-- #if AFTER 2.0.1
-							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["description"] = createLocalizationString({
+								readable = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+								constant = "THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
+								export = true,
+								text = {
+									en = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此物品似乎已在《燃烧的远征》前夕版本中移除。如果你让它掉落了，请 @Crieve。",
+									-- TODO: tw = "",
+								},
+							}),
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
@@ -1707,11 +1996,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(PHASE_FIVE, i(22242)),	-- Verek's Leash
 				}),
 				n(9476, {	-- Watchman Doomgrip
-					["description"] = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
+					["description"] = createLocalizationString({
+						readable = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
+						constant = "WATCHMAN_DOOMGRIP_SPAWNS_ONCE_ALL_TWELVE_RELIC",
+						export = true,
+						text = {
+							en = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "守望者末日之握会在所有十二个圣物保险箱都被打开后生成，打开它们需要用到副本内任何黑铁怪物掉落的圣物保险箱钥匙。击败所有敌人后，黑暗保险箱下方的一道暗门会打开，让你可以进入秘密保险箱以及山脉之心。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = { { "i", 11078, 12 } },	-- Relic Coffer Key
 					["groups"] = {
 						o(160836, {	-- Relic Coffer
-							["description"] = "Relic Coffer Keys can drop from any Dark Iron mob in the instance.",
+							["description"] = createLocalizationString({
+								readable = "Relic Coffer Keys can drop from any Dark Iron mob in the instance.",
+								constant = "RELIC_COFFER_KEYS_CAN_DROP_FROM_ANY_DARK_IRON",
+								export = true,
+								text = {
+									en = "Relic Coffer Keys can drop from any Dark Iron mob in the instance.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "遗物宝箱钥匙可以由副本中的任何黑铁怪物掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(11946),	-- Fire Opal Necklace
 								i(11945),	-- Dark Iron Ring
@@ -1722,13 +2045,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						o(165554, {	-- Heart of the Mountain
-							["description"] = "This spawns after defeating Watchman Doomgrip.",
+							["description"] = createLocalizationString({
+								readable = "This spawns after defeating Watchman Doomgrip.",
+								constant = "THIS_SPAWNS_AFTER_DEFEATING_WATCHMAN_DOOMGRIP",
+								export = true,
+								text = {
+									en = "This spawns after defeating Watchman Doomgrip.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "击败看守者末日之握后刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(11309),	-- The Heart of the Mountain
 							},
 						}),
 						o(161495, {	-- Secret Safe
-							["description"] = "This spawns after defeating Watchman Doomgrip.",
+							["description"] = "~L.THIS_SPAWNS_AFTER_DEFEATING_WATCHMAN_DOOMGRIP",
 							["groups"] = {
 								-- #if BEFORE 1.13.5
 								i(11923),	-- The Hammer of Grace
@@ -1745,7 +2085,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				o(164820, {	-- Dark Keeper Nameplate
-					["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",
+					["description"] = createLocalizationString({
+						readable = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",
+						constant = "INSPECT_THE_PORTRAIT_IN_FRONT_OF_THE_COFFER",
+						export = true,
+						text = {
+							en = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "检查遗物宝箱房前的画像。打开它会告诉你所需黑暗守护者的名字及其位置。每次重置只会刷新一个。\n\n|cff3399ff黑暗守护者：|r\n\n|cFFFFD700黑暗守护者贝塞克|r 会在你打开画像后立刻刷新在宝库房间内。\n\n|cFFFFD700黑暗守护者奥夫古特|r 位于|cFFFFD700安格弗将军|r的房间。当你走下楼梯正对|cFFFFD700安格弗将军|r时，会看到他就在左侧水晶附近。\n\n|cFFFFD700黑暗守护者佩尔弗|r 位于|cFFFFD700居所|r。为更快到达，你可以乘坐任意钻探机并点击|cFFFFD700前往居所|r，他就会在顶部。\n\n|cFFFFD700黑暗守护者乌格尔|r 距离很近；走出宝库房间后右转，走到最后一个房间。他就在所有魔像聚集的入口附近。\n\n|cFFFFD700黑暗守护者沃法克|r 位于|cFFFFD700黑铁酒吧|r。当你从桥那边第一次进入该房间时，他会在你右侧的角落里（乐队演奏处前方）。\n\n|cFFFFD700黑暗守护者兹姆雷尔|r 位于|cFFFFD700法律之环|r的二层。从|cFFFFD700东部兵营|r（有暗炉锁的房间）进入这一层后，向右绕行，他会坐在座位区中间。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						9438,	-- Dark Keeper Bethek
 						9442,	-- Dark Keeper Ofgut
@@ -1856,7 +2213,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(380, {	-- Hurley Blackbreath
 					["creatureID"] = 9537,
 					["provider"] = { "o", 164911 },	-- Thunderbrew Lager Keg
-					["description"] = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
+					["description"] = createLocalizationString({
+						readable = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
+						constant = "BREAK_THE_3_THUNDERBREW_LAGER_KEGS_TO_START_THE",
+						export = true,
+						text = {
+							en = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "打破 3 个雷酒淡啤酒桶即可开始战斗。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(11312),	-- Lost Thunderbrew Recipe
 						-- #if AFTER 7.3.2
@@ -1876,7 +2250,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(9543, {	-- Ribbly Screwspigot
 					["creatureID"] = 9543,
-					["description"] = "Speak to him to start the encounter.",
+					["description"] = createLocalizationString({
+						readable = "Speak to him to start the encounter.",
+						constant = "SPEAK_TO_HIM_TO_START_THE_ENCOUNTER",
+						export = true,
+						text = {
+							en = "Speak to him to start the encounter.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与他交谈以开始战斗。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(11313),	-- Ribbly's Head
 						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
@@ -1906,7 +2297,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, n(28067, {	-- Dark Iron Brewer
-					["description"] = "Speak to him until he passes out, a Mug will appear on the ground",
+					["description"] = createLocalizationString({
+						readable = "Speak to him until he passes out, a Mug will appear on the ground",
+						constant = "SPEAK_TO_HIM_UNTIL_HE_PASSES_OUT_A_MUG_WILL",
+						export = true,
+						text = {
+							en = "Speak to him until he passes out, a Mug will appear on the ground",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与他交谈直到他醉倒，地上会出现一个酒杯。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_2_4_3 },
 					["groups"] = {
 						o(190394, {	-- Mug of Dire Brew
@@ -1916,13 +2324,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				e(381, {	-- Phalanx
 					["creatureID"] = 9502,
-					["description"] = "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
+					["description"] = createLocalizationString({
+						readable = "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
+						constant = "PRIVATE_ROCKNOT_MUST_BE_SENT_INTO_A_DRUNKEN",
+						export = true,
+						text = {
+							en = "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须让列兵罗克诺特陷入醉酒的暴怒，才能引到法拉克斯。\n为此，给他 6 个黑铁酒杯，这些可以从普拉格·斯帕兹林处购买。\n罗克诺特会打破其中一只酒桶，把门炸开，法拉克斯就会发怒。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(11744),	-- Bloodfist
 						i(11743, {	-- Rockfist
 							-- #if BEFORE 10.1.7
 							-- #if AFTER 2.0.1
-							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
@@ -1987,7 +2412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(8923, {	-- Panzor the Invincible
-					["description"] = "This is a Rare Creature and, as such, is not always present.",
+					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 					["groups"] = {
 						i(11786),	-- Stone of the Earth
 						i(11785),	-- Rock Golem Bulwark
@@ -2104,7 +2529,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if BEFORE 7.3.2
 				n(8929, {	-- Princess Moira Bronzebeard <Princess of Ironforge> / Thaurissan High Priest
-					["description"] = "In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",
+					["description"] = createLocalizationString({
+						readable = "In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",
+						constant = "IN_ORDER_TO_BE_ELIGIBLE_FOR_THIS_LOOT_YOU_NEED",
+						export = true,
+						text = {
+							en = "In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要获得这件战利品，你需要完成“王国的命运”或“王室救援”。（4.0.3 中移除）",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						4362,	-- The Fate of the Kingdom
 						4003,	-- The Royal Rescue

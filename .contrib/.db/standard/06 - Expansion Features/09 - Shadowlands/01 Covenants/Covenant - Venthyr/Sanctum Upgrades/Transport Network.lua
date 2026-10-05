@@ -92,7 +92,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 						}),
 						n(TIER_THREE, {
-							["description"] = "Each day, a set of 3 Broken Mirrors is active in Revendreth. They are not on a predictable cycle, so the same set may be up two days in a row. Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
+							["description"] = createLocalizationString({
+								readable = "Each day, a set of 3 Broken Mirrors is active in Revendreth. They are not on a predictable cycle, so the same set may be up two days in a row. Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
+								constant = "EACH_DAY_A_SET_OF_3_BROKEN_MIRRORS_IS_ACTIVE_IN",
+								export = true,
+								text = {
+									en = "Each day, a set of 3 Broken Mirrors is active in Revendreth. They are not on a predictable cycle, so the same set may be up two days in a row. Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "每天，雷文德斯会有一组 3 面破碎的镜子处于激活状态。它们没有可预测的循环，因此同一组镜子可能连续两天出现。开启调试模式、“显示所有可追踪事物”或“追踪可重复任务”，即可查看可供修复的镜子组列表。\n\n如果你的镜子把你传送到疯狂圣所，请返回已修复的镜子并再次进入，即可被传送到正确的房间。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								n(MIRROR_RESTORATION, {
 									n(166133, {	-- Simone
@@ -102,7 +119,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										}),
 									}),
 									n(SET_A, {
-										["description"] = "Wowhead: |cffffffffGroup 1|r",
+										["description"] = createLocalizationString({
+											readable = "Wowhead: |cffffffffGroup 1|r",
+											constant = "WOWHEAD_CFFFFFFFFGROUP_1_R",
+											export = true,
+											text = {
+												en = "Wowhead: |cffffffffGroup 1|r",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "Wowhead：|cffffffff分组 1|r",
+												-- TODO: tw = "",
+											},
+										}),
 										["groups"] = {
 											n(BROKEN_MIRROR_A1, {
 												["questID"] = 61818,
@@ -146,7 +180,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 									}),
 									n(SET_B, {
-										["description"] = "Wowhead: |cffffffffGroup 2|r",
+										["description"] = createLocalizationString({
+											readable = "Wowhead: |cffffffffGroup 2|r",
+											constant = "WOWHEAD_CFFFFFFFFGROUP_2_R",
+											export = true,
+											text = {
+												en = "Wowhead: |cffffffffGroup 2|r",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "Wowhead：|cffffffff分组 2|r",
+												-- TODO: tw = "",
+											},
+										}),
 										["groups"] = {
 											n(BROKEN_MIRROR_B1, {
 												["questID"] = 61819,
@@ -190,7 +241,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 									}),
 									n(SET_C, {
-										["description"] = "Wowhead: |cffffffffGroup 3|r",
+										["description"] = createLocalizationString({
+											readable = "Wowhead: |cffffffffGroup 3|r",
+											constant = "WOWHEAD_CFFFFFFFFGROUP_3_R",
+											export = true,
+											text = {
+												en = "Wowhead: |cffffffffGroup 3|r",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "Wowhead：|cffffffff分组 3|r",
+												-- TODO: tw = "",
+											},
+										}),
 										["groups"] = {
 											n(BROKEN_MIRROR_C1, {
 												["questID"] = 61817,
@@ -234,7 +302,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 									}),
 									n(SET_D, {
-										["description"] = "Wowhead: |cffffffffGroup 4|r",
+										["description"] = createLocalizationString({
+											readable = "Wowhead: |cffffffffGroup 4|r",
+											constant = "WOWHEAD_CFFFFFFFFGROUP_4_R",
+											export = true,
+											text = {
+												en = "Wowhead: |cffffffffGroup 4|r",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "Wowhead：|cffffffff分组 4|r",
+												-- TODO: tw = "",
+											},
+										}),
 										["groups"] = {
 											n(BROKEN_MIRROR_D1, {
 												["questID"] = 59236,
@@ -290,7 +375,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
 									q(59740, {	-- Repair and Restore
-										["description"] = "Requires completing 2 of the pre-requisite quests.",
+										["description"] = createLocalizationString({
+											readable = "Requires completing 2 of the pre-requisite quests.",
+											constant = "REQUIRES_COMPLETING_2_OF_THE_PRE_REQUISITE",
+											export = true,
+											text = {
+												en = "Requires completing 2 of the pre-requisite quests.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "需要完成 2 个前置任务。",
+												-- TODO: tw = "",
+											},
+										}),
 										["sourceQuests"] = {
 											60060,	-- Mirror Attunement: Pridefall Hamlet
 											60147,	-- Mirror Attunement: The Eternal Terrace
@@ -317,15 +419,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183973),	-- Lost Winged Ritual Kris
 										i(183976, {	-- Rogue Researcher's Dagger
-											["description"] = "Drops for any class.",
+											["description"] = createLocalizationString({
+												readable = "Drops for any class.",
+												constant = "DROPS_FOR_ANY_CLASS",
+												export = true,
+												text = {
+													en = "Drops for any class.",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "任何职业都可掉落。",
+													-- TODO: tw = "",
+												},
+											}),
 										}),
 										i(183978, {	-- Silver-Etched Hopebreaker Dirk
-											["description"] = "Drops for any class.",
+											["description"] = "~L.DROPS_FOR_ANY_CLASS",
 										}),
 										filter(CLOTH, {
 											i(181129, {	-- Soulbreaker's Burnished Drape
 												["classes"] = CLOTH_CLASSES,
-												["description"] = "This cloak is only awarded to cloth characters.",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_CLOTH_CHARACTERS",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181123),	-- Soulbreaker's Burnished Handwraps
 											i(181124),	-- Soulbreaker's Burnished Hood
@@ -343,7 +462,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(181062),	-- Burnished Death Shroud Breeches
 											i(181066, {	-- Burnished Death Shroud Cloak
 												["classes"] = LEATHER_CLASSES,
-												["description"] = "This cloak is only awarded to leather characters.",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_LEATHER",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181060),	-- Burnished Death Shroud Gloves
 											i(181061),	-- Burnished Death Shroud Hood
@@ -355,7 +474,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(181092),	-- Fearstalker's Burnished Bracers
 											i(181093, {	-- Fearstalker's Burnished Cloak
 												["classes"] = MAIL_CLASSES,
-												["description"] = "This cloak is only awarded to mail characters.",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_MAIL_CHARACTERS",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181087),	-- Fearstalker's Burnished Gauntlets
 											i(181085),	-- Fearstalker's Burnished Hauberk
@@ -368,7 +487,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(181023),	-- Dread Sentinel's Burnished Chestplate
 											i(181030, {	-- Dread Sentinel's Burnished Cloak
 												["classes"] = PLATE_CLASSES,
-												["description"] = "This cloak is only awarded to Plate characters.",	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
+												["description"] = createLocalizationString({
+													readable = "This cloak is only awarded to Plate characters.",
+													constant = "THIS_CLOAK_IS_ONLY_AWARDED_TO_PLATE_CHARACTERS_2",
+													export = true,
+													text = {
+														en = "This cloak is only awarded to Plate characters.",
+														-- TODO: de = "",
+														-- TODO: es = "",
+														-- TODO: mx = "",
+														-- TODO: fr = "",
+														-- TODO: it = "",
+														-- TODO: ko = "",
+														-- TODO: pt = "",
+														-- TODO: ru = "",
+														cn = "此披风只会授予穿着板甲的角色。",
+														-- TODO: tw = "",
+													},
+												}),	-- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181028),	-- Dread Sentinel's Burnished Girdle
 											i(181024),	-- Dread Sentinel's Burnished Greatboots

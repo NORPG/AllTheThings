@@ -99,7 +99,24 @@ root(ROOTS.Zones, {
 						crit(20956, {	-- Iron Mantid
 							["provider"] = { "n",  62774 },	-- Malik the Unscathed
 							["coord"] = { 55.1, 35.4, DREAD_WASTES },
-							["description"] = "If for some reason you can't find Malik, you can interact with the Halberd of the Unscathed instead to get the buff.",
+							["description"] = createLocalizationString({
+								readable = "If for some reason you can't find Malik, you can interact with the Halberd of the Unscathed instead to get the buff.",
+								constant = "IF_FOR_SOME_REASON_YOU_CAN_T_FIND_MALIK_YOU_CAN",
+								export = true,
+								text = {
+									en = "If for some reason you can't find Malik, you can interact with the Halberd of the Unscathed instead to get the buff.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果由于某种原因你找不到马利克，你可以改为与无伤长戟互动来获得增益。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								o(215872),	-- Halberd of the Unscathed
 							},
@@ -399,7 +416,24 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_KLAXXI, REVERED },
 					}),
 					q(31090, {	-- Better With Age
-						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						["description"] = createLocalizationString({
+							readable = "This version is available if Kor'ik has not been killed yet.",
+							constant = "THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_NOT",
+							export = true,
+							text = {
+								en = "This version is available if Kor'ik has not been killed yet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果考里克尚未被击杀，则此版本可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 31087,	-- Extending Our Coverage
 						["altQuests"] = { 31681 },	-- Better With Age
 						["qg"] = 65365,	-- Kor'ik
@@ -413,7 +447,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31681, {	-- Better With Age
-						["description"] = "This version is available if Kor'ik has been killed.",
+						["description"] = createLocalizationString({
+							readable = "This version is available if Kor'ik has been killed.",
+							constant = "THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_BEEN",
+							export = true,
+							text = {
+								en = "This version is available if Kor'ik has been killed.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果考里克已被击杀，则此版本可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 31679,	-- Extending Our Coverage
 						["altQuests"] = { 31090 },	-- Better With Age
 						["qg"] = 65975,	-- Zer'ik
@@ -485,7 +536,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31682, {	-- By the Sea, Nevermore
-						["description"] = "This version is only available if Kor'ik has been killed & you did not complete the other version yet. If you did the alt version of this quest, there is no chance you will ever complete this quest on your current character.",
+						["description"] = createLocalizationString({
+							readable = "This version is only available if Kor'ik has been killed & you did not complete the other version yet. If you did the alt version of this quest, there is no chance you will ever complete this quest on your current character.",
+							constant = "THIS_VERSION_IS_ONLY_AVAILABLE_IF_KOR_IK_HAS",
+							export = true,
+							text = {
+								en = "This version is only available if Kor'ik has been killed & you did not complete the other version yet. If you did the alt version of this quest, there is no chance you will ever complete this quest on your current character.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅当科里克已被击杀且你尚未完成另一个版本时，此版本才可用。如果你做了此任务的替代版本，那么你当前角色就再也没有机会完成此任务了。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							31681,	-- Better With Age
 							31680,	-- Crime and Punishment
@@ -497,7 +565,7 @@ root(ROOTS.Zones, {
 						["DisablePartySync"] = true,
 					}),
 					q(31089, {	-- By the Sea, Nevermore
-						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						["description"] = "~L.THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_NOT",
 						["sourceQuests"] = {
 							31090,	-- Better With Age
 							31088,	-- Crime and Punishment
@@ -542,19 +610,36 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.2, 58.2, DREAD_WASTES },
 					}),
 					q(31680, {	-- Crime and Punishment
-						["description"] = "This version is available if Kor'ik has been killed.",
+						["description"] = "~L.THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_BEEN",
 						["sourceQuest"] = 31679,	-- Extending Our Coverage
 						["altQuests"] = { 31088 },	-- Crime and Punishment
 						["qg"] = 65975,	-- Zer'ik
 					}),
 					q(31088, {	-- Crime and Punishment
-						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						["description"] = "~L.THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_NOT",
 						["sourceQuest"] = 31087,	-- Extending Our Coverage
 						["altQuests"] = { 31680 },	-- Crime and Punishment
 						["qg"] = 65365,	-- Kor'ik
 					}),
 					q(56577, {	-- Crippling the Hive
-						["description"] = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
+						["description"] = createLocalizationString({
+							readable = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
+							constant = "MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700ONCE_MORE",
+							export = true,
+							text = {
+								en = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须正在进行或已完成|cFFFFD700再入科弗斯|r才能接到此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 56574,	-- Reflections in Amber
 						["qg"] = 155562,	-- Shado-Pan Master (Taoshi follower)
 						["coord"] = { 44.8, 19.1, DREAD_WASTES },
@@ -662,7 +747,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.0, 20.4, DREAD_WASTES },
 					}),
 					q(31087, {	-- Extending Our Coverage
-						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						["description"] = "~L.THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_NOT",
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
 						["altQuests"] = { 31679 },	-- Extending Our Coverage
 						["qg"] = 64815,	-- Kor'ik
@@ -672,7 +757,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31679, {	-- Extending Our Coverage
-						["description"] = "This version is available if Kor'ik has been killed.",
+						["description"] = "~L.THIS_VERSION_IS_AVAILABLE_IF_KOR_IK_HAS_BEEN",
 						["sourceQuest"] = 31441,	-- Corruption Runs Deep
 						["altQuests"] = { 31087 },	-- Extending Our Coverage
 						["qg"] = 65975,	-- Zer'ik
@@ -828,7 +913,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31727, {	-- Gambling Problem
-						["description"] = "Gambling Problem showed up at Ambersmith Zikk after completed all Paragons except for |cFF006211Iyyokuk the Lucid and Ka'roz the Locust|r. \nDo not touch any quests at Soggy's Gamble, otherwise you are not eligible for the quest.\n\n By Niixten.",
+						["description"] = createLocalizationString({
+							readable = "Gambling Problem showed up at Ambersmith Zikk after completed all Paragons except for |cFF006211Iyyokuk the Lucid and Ka'roz the Locust|r. \nDo not touch any quests at Soggy's Gamble, otherwise you are not eligible for the quest.\n\n By Niixten.",
+							constant = "GAMBLING_PROBLEM_SHOWED_UP_AT_AMBERSMITH_ZIKK",
+							export = true,
+							text = {
+								en = "Gambling Problem showed up at Ambersmith Zikk after completed all Paragons except for |cFF006211Iyyokuk the Lucid and Ka'roz the Locust|r. \nDo not touch any quests at Soggy's Gamble, otherwise you are not eligible for the quest.\n\n By Niixten.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在除|cFF006211明晰的伊约库克和蝗虫卡洛兹|r之外的所有至尊者都完成后，“赌瘾”会出现在琥珀匠师兹克处。\n不要接取索吉的赌局的任何任务，否则你将无法获得该任务。\n\n 作者：Niixten。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 31398,	-- Falling to Pieces
 						["qg"] = 64599,	-- Ambersmith Zikk
 						["coord"] = { 55.0, 35.5, DREAD_WASTES },
@@ -1211,7 +1313,24 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 					}),
 					q(31068, {	-- Sacred Recipe
-						["description"] = "Must be on or have completed |cFFFFD700The Heavens Hum With War|r.",
+						["description"] = createLocalizationString({
+							readable = "Must be on or have completed |cFFFFD700The Heavens Hum With War|r.",
+							constant = "MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700THE",
+							export = true,
+							text = {
+								en = "Must be on or have completed |cFFFFD700The Heavens Hum With War|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须正在进行或已完成|cFFFFD700天空因战争而嗡鸣|r。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 31398,	-- Falling to Pieces
 						["provider"] = { "o", 212389 },	-- Scroll of Auspice
 						["coord"] = { 53.1, 12.4, DREAD_WASTES },
@@ -1368,7 +1487,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.0, 35.4, DREAD_WASTES },
 					}),
 					q(31959, {	-- The Empress' Gambit
-						["description"] = "Must also have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
+						["description"] = createLocalizationString({
+							readable = "Must also have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
+							constant = "MUST_ALSO_HAVE_COMPLETED_THE_CFFFFD700AMBER_IS",
+							export = true,
+							text = {
+								en = "Must also have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "还必须完成|cFFFFD700琥珀是我能量之色|r成就。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 62774,	-- Malik the Unscathed
 						["coord"] = { 55.1, 35.5, DREAD_WASTES },
 						["minReputation"] = { FACTION_THE_KLAXXI, EXALTED },
@@ -1519,7 +1655,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31677, {	-- The Warlord's Ashes
-						["description"] = "Requires 2 players. One must |cFFFFD700/sit|r on the red rune while the other must |cFFFFD700/lay|r on the green rune.",
+						["description"] = createLocalizationString({
+							readable = "Requires 2 players. One must |cFFFFD700/sit|r on the red rune while the other must |cFFFFD700/lay|r on the green rune.",
+							constant = "REQUIRES_2_PLAYERS_ONE_MUST_CFFFFD700_SIT_R_ON",
+							export = true,
+							text = {
+								en = "Requires 2 players. One must |cFFFFD700/sit|r on the red rune while the other must |cFFFFD700/lay|r on the green rune.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要 2 名玩家。一人必须|cFFFFD700/sit|r在红色符文上，另一人必须|cFFFFD700/lay|r在绿色符文上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 88715 },	-- Ashes of Warlord Gurthan
 						["coord"] = { 66.3, 31.7, DREAD_WASTES },
 						["isDaily"] = true,

@@ -58,10 +58,44 @@ root(ROOTS.Zones, {
 				}),
 				battlepets({
 					pet(724, {	-- Alpine Foxling (PET!)
-						["description"] = "Can be found spread through the zone around the snowline, and as secondary pets.",
+						["description"] = createLocalizationString({
+							readable = "Can be found spread through the zone around the snowline, and as secondary pets.",
+							constant = "CAN_BE_FOUND_SPREAD_THROUGH_THE_ZONE_AROUND_THE",
+							export = true,
+							text = {
+								en = "Can be found spread through the zone around the snowline, and as secondary pets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可散布在该区域雪线一带找到，也会作为次要宠物出现。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(725, {	-- Alpine Foxling Kit (PET!)
-						["description"] = "Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",
+						["description"] = createLocalizationString({
+							readable = "Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",
+							constant = "RESPAWNS_AFTER_SOME_MINUTES_AS_LONG_AS_THEIR",
+							export = true,
+							text = {
+								en = "Respawns after some minutes as long as their Alpine Foxling parent is still alive. Can be found spread through the zone around the snowline, and common as secondary pets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只要其高山狐幼崽父母仍然存活，几分钟后就会重新刷新。可在该区域雪线附近各处找到，作为次级宠物很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 40.0, 68.2, KUN_LAI_SUMMIT },	-- Shado Li Basin by Kota Basecamp
 							{ 39.2, 82.1, KUN_LAI_SUMMIT },	-- Kota Peak by Tallmug's Camp
@@ -69,28 +103,130 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(1166, {	-- Kun-Lai Runt (PET!)
-						["description"] = "Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
+						["description"] = createLocalizationString({
+							readable = "Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
+							constant = "CAN_BE_FOUND_THROUGH_THE_SNOWY_VALLEYS_OF_KUN",
+							export = true,
+							text = {
+								en = "Can be found through the snowy valleys of Kun-Lai Summit.\n\nThis is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在昆莱山的雪谷中找到。\n\n这在 PvE 中是一只好宠物，但取决于品种。你可能想捕捉多个品种。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(726, {	-- Plains Monitor (PET!)
-						["description"] = "Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",
+						["description"] = createLocalizationString({
+							readable = "Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",
+							constant = "COMMONLY_FOUND_IN_GROUPS_OF_THREE_THROUGH_THE",
+							export = true,
+							text = {
+								en = "Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于昆莱山草原上，以三只一群出现。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(727, {	-- Prairie Mouse (PET!)
-						["description"] = "Commonly found in groups of three through the grassy plains of Kun-Lai Summit.",
+						["description"] = "~L.COMMONLY_FOUND_IN_GROUPS_OF_THREE_THROUGH_THE",
 					}),
 					pet(679, {	-- Summit Kid (PET!)
-						["description"] = "Can be found through the snowy valleys of Kun-Lai Summit.",
+						["description"] = createLocalizationString({
+							readable = "Can be found through the snowy valleys of Kun-Lai Summit.",
+							constant = "CAN_BE_FOUND_THROUGH_THE_SNOWY_VALLEYS_OF_KUN_2",
+							export = true,
+							text = {
+								en = "Can be found through the snowy valleys of Kun-Lai Summit.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在昆莱山的雪谷中找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 35.5, 56.6, KUN_LAI_SUMMIT },	-- Winter's Blossom, north of
 					}),
 					pet(728, {	-- Szechuan Chicken (PET!)
-						["description"] = "Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",
+						["description"] = createLocalizationString({
+							readable = "Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",
+							constant = "CAN_SOMETIMES_BE_FOUND_AS_A_PRIMARY_PET_AT_THE",
+							export = true,
+							text = {
+								en = "Can sometimes be found as a primary pet at the given coords. Otherwise common as a secondary pet through the zone.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "有时会在给定坐标处作为主要宠物出现。否则会作为次要宠物在该区域中常见出现。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 60.0, 86.6, KUN_LAI_SUMMIT },
 					}),
 					pet(729, {	-- Tolai Hare (PET!)
-						["description"] = "Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+						["description"] = createLocalizationString({
+							readable = "Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+							constant = "CAN_BE_FOUND_SPREAD_THROUGH_THE_GRASSY_PLAINS",
+							export = true,
+							text = {
+								en = "Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "散布在昆莱山的草原上，作为次级宠物很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(730, {	-- Tolai Hare Pup (PET!)
-						["description"] = "Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+						["description"] = createLocalizationString({
+							readable = "Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+							constant = "RESPAWNS_AFTER_SOME_MINUTES_AS_LONG_AS_THEIR_2",
+							export = true,
+							text = {
+								en = "Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只要其托莱兔父母仍然存活，几分钟后就会重新刷新。散布在昆莱山的草原上，作为次级宠物很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 44.2, 79.9, KUN_LAI_SUMMIT },	-- The Yaungol Advance 
 							{ 44.0, 70.4, KUN_LAI_SUMMIT },	-- Kota Basecamp, east of
@@ -99,7 +235,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(731, {	-- Zooey Snake (PET)
-						["description"] = "Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
+						["description"] = "~L.CAN_BE_FOUND_SPREAD_THROUGH_THE_GRASSY_PLAINS",
 					}),
 				}),
 				explorationHeader({
@@ -418,7 +554,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30796, {	-- An End to Everything
-						["description"] = "Use |cFFFFD700The Tongue of Ba-Shon|r.",
+						["description"] = createLocalizationString({
+							readable = "Use |cFFFFD700The Tongue of Ba-Shon|r.",
+							constant = "USE_CFFFFD700THE_TONGUE_OF_BA_SHON_R",
+							export = true,
+							text = {
+								en = "Use |cFFFFD700The Tongue of Ba-Shon|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用 |cFFFFD700巴-尚之舌|r。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 30795,	-- Staying Connected
 						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["coord"] = { 57.3, 48.0, KUN_LAI_SUMMIT },
@@ -509,7 +662,24 @@ root(ROOTS.Zones, {
 					}),
 					q(31695, {	-- Beyond the Wall
 						-- #if AFTER 7.3.5
-						["description"] = "Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",
+						["description"] = createLocalizationString({
+							readable = "Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",
+							constant = "MIGHT_NOT_BE_OBTAINABLE_UNTIL_YOU_COMPLETE_HERO",
+							export = true,
+							text = {
+								en = "Might not be obtainable until you complete Hero's Call-/Warchief's Commands: Townlong Steppes.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在你完成“英雄的召唤”/“大酋长的命令：螳螂高原”之前，可能无法获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						["sourceQuests"] = {
 							30660,	-- The Ordo Warbringer (A)
@@ -1283,7 +1453,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
 					}),
 					q(31306, {	-- Seeker's Folly
-						["description"] = "This version becomes available if you abandon the first version.",
+						["description"] = createLocalizationString({
+							readable = "This version becomes available if you abandon the first version.",
+							constant = "THIS_VERSION_BECOMES_AVAILABLE_IF_YOU_ABANDON",
+							export = true,
+							text = {
+								en = "This version becomes available if you abandon the first version.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你放弃第一个版本，此版本就会开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 30683,	-- One Traveler's Misfortune
 						["qg"] = 60180,	-- Lucky Bluestring
 						["coord"] = { 48.0, 49.1, KUN_LAI_SUMMIT },
@@ -1504,7 +1691,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.6, 70.2, KUN_LAI_SUMMIT },
 					}),
 					q(30660, {	-- The Ordo Warbringer (A)
-						["description"] = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
+						["description"] = createLocalizationString({
+							readable = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
+							constant = "AUTOMATICALLY_GRANTED_AFTER_COMPLETING_THE",
+							export = true,
+							text = {
+								en = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成|cFFFFD700帐篷引导|r的条件后自动获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 30652,	-- In Tents Channeling
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1521,7 +1725,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30662, {	-- The Ordo Warbringer (A)
-						["description"] = "Only available if you abandon the original version of the quest.",
+						["description"] = createLocalizationString({
+							readable = "Only available if you abandon the original version of the quest.",
+							constant = "ONLY_AVAILABLE_IF_YOU_ABANDON_THE_ORIGINAL",
+							export = true,
+							text = {
+								en = "Only available if you abandon the original version of the quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有在你放弃原版任务后才会出现。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 30652,	-- In Tents Channeling
 						["qg"] = 59441,	-- Admiral Taylor
 						["coord"] = { 53.9, 83.4, KUN_LAI_SUMMIT },
@@ -1540,7 +1761,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30661, {	-- The Ordo Warbringer (H)
-						["description"] = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
+						["description"] = "~L.AUTOMATICALLY_GRANTED_AFTER_COMPLETING_THE",
 						["sourceQuest"] = 30657,	-- In Tents Channeling
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1557,7 +1778,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30663, {	-- The Ordo Warbringer (H)
-						["description"] = "Only available if you abandon the original version of the quest.",
+						["description"] = "~L.ONLY_AVAILABLE_IF_YOU_ABANDON_THE_ORIGINAL",
 						["sourceQuest"] = 30657,	-- In Tents Channeling
 						["qg"] = 59442,	-- General Nazgrim
 						["coord"] = { 62.4, 80.4, KUN_LAI_SUMMIT },
@@ -1618,7 +1839,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(38936, {	-- The Road to Kun-Lai (Adventure guide)
-						["description"] = "This quest needs to be accepted from the 'Adventure Guide'.",
+						["description"] = createLocalizationString({
+							readable = "This quest needs to be accepted from the 'Adventure Guide'.",
+							constant = "THIS_QUEST_NEEDS_TO_BE_ACCEPTED_FROM_THE",
+							export = true,
+							text = {
+								en = "This quest needs to be accepted from the 'Adventure Guide'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务需要从“冒险指南”中接取。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isBreadcrumb"] = true,
 						["timeline"] = { ADDED_6_2_0 },
 					}),
@@ -1973,7 +2211,24 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(214438, {	-- Ancient Mogu Tablet
-						["description"] = "Entrance is at |cFFFFD70063.94 49.84|r.",
+						["description"] = createLocalizationString({
+							readable = "Entrance is at |cFFFFD70063.94 49.84|r.",
+							constant = "ENTRANCE_IS_AT_CFFFFD70063_94_49_84_R",
+							export = true,
+							text = {
+								en = "Entrance is at |cFFFFD70063.94 49.84|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "入口位于|cFFFFD70063.94 49.84|r。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 31420,
 						["coord"] = { 64.2, 45.2, KUN_LAI_SUMMIT },
 						["groups"] = {
@@ -1985,7 +2240,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 59.4, KUN_LAI_SUMMIT },
 					}),
 					o(213768, {	-- Hozen Warrior Spear
-						["description"] = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
+						["description"] = createLocalizationString({
+							readable = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
+							constant = "CAVE_ENTRANCE_IS_AT_CFFFFD70052_8_71_3_R_GO",
+							export = true,
+							text = {
+								en = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "洞穴入口位于 |cFFFFD70052.8 71.3|r，下去后前往有水的那片区域，它在一块岩石中。可能需要等一段时间才会刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 31413,
 						["coords"] = {
 							{ 52.8, 71.3, KUN_LAI_SUMMIT },	-- Cave entrance
@@ -2011,7 +2283,24 @@ root(ROOTS.Zones, {
 					}),
 					o(214407, {	-- Mo-Mo's Treasure Chest
 						["coord"] = { 47.8, 73.5, KUN_LAI_SUMMIT },
-						["description"] = "Inside Mo-Mo's Cave",
+						["description"] = createLocalizationString({
+							readable = "Inside Mo-Mo's Cave",
+							constant = "INSIDE_MO_MO_S_CAVE",
+							export = true,
+							text = {
+								en = "Inside Mo-Mo's Cave",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在莫莫的洞穴内",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 31868,
 					}),
 					o(213438, {	-- Ren Yun the Blind
@@ -2028,25 +2317,93 @@ root(ROOTS.Zones, {
 						["coord"] = { 74.5, 83.5, KUN_LAI_SUMMIT },
 					}),
 					o(213751, {	-- Sprite's Cloth Chest
-						["description"] = "Cave entrance is at 73.2, 73.6. This chest might be personal loot and obey rules based on your current Spec, NOT your Loot Spec.",
+						["description"] = createLocalizationString({
+							readable = "Cave entrance is at 73.2, 73.6. This chest might be personal loot and obey rules based on your current Spec, NOT your Loot Spec.",
+							constant = "CAVE_ENTRANCE_IS_AT_73_2_73_6_THIS_CHEST_MIGHT",
+							export = true,
+							text = {
+								en = "Cave entrance is at 73.2, 73.6. This chest might be personal loot and obey rules based on your current Spec, NOT your Loot Spec.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "洞穴入口位于 73.2, 73.6。这个宝箱可能是个人拾取，并遵循基于你当前专精（而非拾取专精）的规则。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 74.6, 74.8, 381 },
 						["modelScale"] = 1.5,
 						["questID"] = 31412,
 						["groups"] = {
 							i(86223, {	-- Agile Sprite Cloak
-								["description"] = "Recommended to be an Agility DPS Spec (Hunter/Rogue) to guarantee this item.",	-- verified 2021-10-21 Hunter(Surv)
+								["description"] = createLocalizationString({
+									readable = "Recommended to be an Agility DPS Spec (Hunter/Rogue) to guarantee this item.",
+									constant = "RECOMMENDED_TO_BE_AN_AGILITY_DPS_SPEC_HUNTER",
+									export = true,
+									text = {
+										en = "Recommended to be an Agility DPS Spec (Hunter/Rogue) to guarantee this item.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "建议使用敏捷 DPS 专精（猎人/潜行者）以保证获得该物品。",
+										-- TODO: tw = "",
+									},
+								}),	-- verified 2021-10-21 Hunter(Surv)
 							}),
 							i(86222, {	-- Precise Sprite Cloak
-								["description"] = "Recommended to be in an Intellect DPS Spec (Mage/Warlock) to guarantee this item.",	-- verified 2021-10-18 Mage(Frost)
+								["description"] = createLocalizationString({
+									readable = "Recommended to be in an Intellect DPS Spec (Mage/Warlock) to guarantee this item.",
+									constant = "RECOMMENDED_TO_BE_IN_AN_INTELLECT_DPS_SPEC_MAGE",
+									export = true,
+									text = {
+										en = "Recommended to be in an Intellect DPS Spec (Mage/Warlock) to guarantee this item.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "建议使用智力 DPS 专精（法师/术士）以保证获得该物品。",
+										-- TODO: tw = "",
+									},
+								}),	-- verified 2021-10-18 Mage(Frost)
 							}),
 							i(86225, {	-- Strong Sprite Cloak
-								["description"] = "Recommended to be in a Strength DPS Spec to guarantee this item.",	-- verified 2021-10-22 DK(Unholy)
+								["description"] = "~L.RECOMMENDED_TO_BE_IN_A_STRENGTH_DPS_SPEC_TO",	-- verified 2021-10-22 DK(Unholy)
 							}),
 							i(86221, {	-- Wise Sprite Cloak
-								["description"] = "Recommended to be in a Healer Spec to guarantee this item.",	-- verified ?? Shaman(Resto)
+								["description"] = createLocalizationString({
+									readable = "Recommended to be in a Healer Spec to guarantee this item.",
+									constant = "RECOMMENDED_TO_BE_IN_A_HEALER_SPEC_TO_GUARANTEE",
+									export = true,
+									text = {
+										en = "Recommended to be in a Healer Spec to guarantee this item.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "建议使用治疗专精以保证获得该物品。",
+										-- TODO: tw = "",
+									},
+								}),	-- verified ?? Shaman(Resto)
 							}),
 							i(86224, {	-- Steadfast Sprite Cape
-								["description"] = "Recommended to be in a Strength Tank Spec to guarantee this item.",	-- verified 2021-10-18 Paladin(Prot)
+								["description"] = "~L.RECOMMENDED_TO_BE_IN_A_STRENGTH_TANK_SPEC_TO",	-- verified 2021-10-18 Paladin(Prot)
 							}),
 						},
 					}),
@@ -2069,7 +2426,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(213770, {	-- Stolen Sprite Treasure
-						["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
+						["description"] = createLocalizationString({
+							readable = "Entrance is at |cFFFFD70059.5 52.9|r.",
+							constant = "ENTRANCE_IS_AT_CFFFFD70059_5_52_9_R",
+							export = true,
+							text = {
+								en = "Entrance is at |cFFFFD70059.5 52.9|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "入口位于|cFFFFD70059.5 52.9|r。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 31415,	-- Stolen Sprite Treasure
 						["coord"] = { 41.6, 44.1, 380 },	-- Howlingwind Cavern
 					}),
@@ -2088,7 +2462,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(213328, {	-- The Defiant
-						["description"] = "At the north end of the circular room at the back of the cave.",
+						["description"] = createLocalizationString({
+							readable = "At the north end of the circular room at the back of the cave.",
+							constant = "AT_THE_NORTH_END_OF_THE_CIRCULAR_ROOM_AT_THE",
+							export = true,
+							text = {
+								en = "At the north end of the circular room at the back of the cave.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在洞穴后方圆形房间的北端。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 73.2, 94.6, KUN_LAI_SUMMIT },	-- entrance
 							{ 54.9, 16.9, 434 },	-- actual object
@@ -2108,7 +2499,24 @@ root(ROOTS.Zones, {
 					}),
 					o(213331, {	-- Valley of the Emperors (Kun-Lai Summit)
 						["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
-						["description"] = "The scroll is in the first big room."
+						["description"] = createLocalizationString({
+							readable = "The scroll is in the first big room.",
+							constant = "THE_SCROLL_IS_IN_THE_FIRST_BIG_ROOM",
+							export = true,
+							text = {
+								en = "The scroll is in the first big room.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "卷轴在第一个大房间里。",
+								-- TODO: tw = "",
+							},
+						})
 					}),
 					o(213511, {	-- Victory in Kun-Lai
 						["coord"] = { 63.1, 40.8, KUN_LAI_SUMMIT },
@@ -3671,7 +4079,24 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(97978, {	-- Knockoff Grumplefloot (QI!)
-						["description"] = "Dance with Grandpa Grumplefloot to receive the Knockoff Grumplefloot.",
+						["description"] = createLocalizationString({
+							readable = "Dance with Grandpa Grumplefloot to receive the Knockoff Grumplefloot.",
+							constant = "DANCE_WITH_GRANDPA_GRUMPLEFLOOT_TO_RECEIVE_THE",
+							export = true,
+							text = {
+								en = "Dance with Grandpa Grumplefloot to receive the Knockoff Grumplefloot.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与牢骚笛爷爷共舞，即可获得山寨牢骚笛。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 65.0, 60.0, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 					})),

@@ -96,7 +96,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(PROFESSIONS, {
 						prof(ENCHANTING, {
-							["description"] = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
+							["description"] = createLocalizationString({
+								readable = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
+								constant = "BEFORE_YOU_CAN_ENTER_THE_MAGE_TOWER_TO_PICK_UP",
+								export = true,
+								text = {
+									en = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在你能够进入法师塔拾取书籍之前，你需要完成一个小谜题。首先使用血色徽记伪装自己，然后前往新阿瓦隆内的法师塔。\n穿过石拱门后，你会获得一个名为神秘折射的增益，它让你能看到区域内的彩色水晶。\n你需要让水晶的颜色与法师塔传送门大门相匹配。从漂浮的树下跑过即可混合这些颜色。\n解开谜题后，只需穿过传送门进入法师塔。进去后，你会遇到必须避开的心烦意乱的血色巫师。\n进去后，你会在各处的书架上找到这些书籍。\n每本书都对应一个不同的附魔公式。拾取书籍后，分解它，然后使用 15 个幻影之尘和 1 个正义宝珠来学习该附魔。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(242268, {	-- If You Give a Crusader an Enchant
 									i(241191),	-- Formula: Enchant Weapon - Grand Crusader
@@ -326,7 +343,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["coord"] = { 55.2, 46.2, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(39317, {	-- News From The North
-										["description"] = "This explains the disappearance of Naxxramas from the Eastern Plaguelands.",
+										["description"] = createLocalizationString({
+											readable = "This explains the disappearance of Naxxramas from the Eastern Plaguelands.",
+											constant = "THIS_EXPLAINS_THE_DISAPPEARANCE_OF_NAXXRAMAS",
+											export = true,
+											text = {
+												en = "This explains the disappearance of Naxxramas from the Eastern Plaguelands.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "这解释了纳克萨玛斯从东瘟疫之地消失的原因。",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 								},
 							}),
@@ -995,13 +1029,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if AFTER 10.1.5
 			header(HEADERS.Achievement, 18372, {	-- Wards of the Dread Citadel
-				["description"] = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStage 1: Memory of Scholomance, this unlocks Old Scholomance on an accound-wide basis, see the instructions in it's header in Western Plaguelands.\n\nStage 2: Obtain your first Argent Dawn Commission, see the instructions in the subheader below.\n\nHereafter any of your characters may need to have an Argent Dawn Commission equipped for any progression if the game does not automatically provide you with a substituting buff.\n\nStage 3: Experience Sleight of Hand, see the instructions in the subheader below.\n\nThe stages 4-6 takes place in Naxxramas. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.",
+				["description"] = createLocalizationString({
+					readable = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStage 1: Memory of Scholomance, this unlocks Old Scholomance on an accound-wide basis, see the instructions in it's header in Western Plaguelands.\n\nStage 2: Obtain your first Argent Dawn Commission, see the instructions in the subheader below.\n\nHereafter any of your characters may need to have an Argent Dawn Commission equipped for any progression if the game does not automatically provide you with a substituting buff.\n\nStage 3: Experience Sleight of Hand, see the instructions in the subheader below.\n\nThe stages 4-6 takes place in Naxxramas. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.",
+					constant = "WITH_10_1_5_BLIZZARD_READDED_VANILLA_NAXXRAMAS_2",
+					export = true,
+					text = {
+						en = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStage 1: Memory of Scholomance, this unlocks Old Scholomance on an accound-wide basis, see the instructions in it's header in Western Plaguelands.\n\nStage 2: Obtain your first Argent Dawn Commission, see the instructions in the subheader below.\n\nHereafter any of your characters may need to have an Argent Dawn Commission equipped for any progression if the game does not automatically provide you with a substituting buff.\n\nStage 3: Experience Sleight of Hand, see the instructions in the subheader below.\n\nThe stages 4-6 takes place in Naxxramas. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "随着 10.1.5 版本，暴雪重新加入了原版纳克萨玛斯和 T3 制造。解锁此内容需要完成以下阶段：\n\n第 1 阶段：通灵学院的记忆，这会在账号范围内解锁旧版通灵学院，请参阅西瘟疫之地中该标题下的说明。\n\n第 2 阶段：获得你的第一个银色黎明委任徽章，请参阅下方子标题中的说明。\n\n此后，如果游戏没有自动为你提供替代增益，你的任何角色在进行后续进度时都可能需要装备银色黎明委任徽章。\n\n第 3 阶段：体验顺手牵羊，请参阅下方子标题中的说明。\n\n第 4-6 阶段发生在纳克萨玛斯。由于需要在狭窄空间内进行跳跃攀爬，建议使用侏儒或地精角色进行。\n所需物品：\n至少 1 个斯坦索姆圣水\n3 个黑暗符文\n20 个入侵者的天灾石\n1 个黑咖啡，在沙塔斯（70.6, 51.8）/ 暴风城（69.4, 65.4）购买\n2 瓶速度药水，如果你没有类似燃烧狂奔的技能。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					header(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 						["groups"] = {
 							n(TREASURES, {
 								o(403536, {	-- The Road Ahead
-									["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
+									["description"] = createLocalizationString({
+										readable = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
+										constant = "LOCATED_BY_CORRIN_S_CROSSING_IN_THE_EASTERN",
+										export = true,
+										text = {
+											en = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "位于东瘟疫之地科林十字路口，曾作为旅店的那栋建筑旁。画作在一楼，通往二楼的楼梯旁的墙边。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = 76250,	-- Spectral Essence
 									["coord"] = { 55.0, 64.1, EASTERN_PLAGUELANDS },
 									["timeline"] = { ADDED_10_2_5 },
@@ -1010,7 +1078,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								o(403534, {	-- Trampled Doll
-									["description"] = "Located by a meat wagon in Darrowshire.",
+									["description"] = createLocalizationString({
+										readable = "Located by a meat wagon in Darrowshire.",
+										constant = "LOCATED_BY_A_MEAT_WAGON_IN_DARROWSHIRE",
+										export = true,
+										text = {
+											en = "Located by a meat wagon in Darrowshire.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "位于达隆郡的一辆运肉车旁。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = 76250,	-- Spectral Essence
 									["coord"] = { 35.7, 83.6, EASTERN_PLAGUELANDS },
 									["timeline"] = { ADDED_10_2_5 },
@@ -1019,7 +1104,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								o(403533, {	-- Undelivered Shipment of Smokes
-									["description"] = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
+									["description"] = createLocalizationString({
+										readable = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
+										constant = "LOCATED_IN_LIVE_STRATHOLME_NEAR_EZRA_GRIMM_S",
+										export = true,
+										text = {
+											en = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "位于活人区斯坦索姆，埃兹拉·格里姆的烟草店附近（进入副本后，向左转，再向左转）。在埃兹拉·格里姆刷新点旁边的一辆推车旁。",
+											-- TODO: tw = "",
+										},
+									}),
 									["maps"] = { STRATHOLME },
 									["sourceQuests"] = { 76250 },	-- Spectral Essence
 									["timeline"] = { ADDED_10_1_5 },
@@ -1031,10 +1133,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					header(HEADERS.Item, 12846, {	-- Argent Dawn Commission
-						["description"] = "1. Enter Old Scholomance and go to the room with Rattlegore (beneath The Great Ossuary). On the southwestern pile of bones can you find and loot the tiny object 'Cracked Argent Dawn Commission'.\n\n2. Obtain 1x Righteous Orb and 4x Truesilver Bars, and use the 'Cracked Argent Dawn Commission' to repair it. Equip your new 'Argent Dawn Commission'.\n\n3. Kill Darkmaster Gandling in Old Scholomance and loot the quest item 'Darkmaster's Scourgestone'.\n\n4. Accept the quest, and turn it in to the Argent Crusade representative in Light's Hope Chapel or Chillwind Camp/The Bulwark.\n\n5. You now have unlocked the ability to obtain Invader's Scourgestones on an account-wide basis, but it might require an Argent Dawm Commission to be equipped unless Scholomance/Stratholme/Nazzramas automatically gives you the eligibility as a buff. Your alts can get theirs by interacting with Duke Nicholas Zverenhoff in Light's Hope Chapel if eligibility is not automatically provided as buffs in the given instances.",
+						["description"] = createLocalizationString({
+							readable = "1. Enter Old Scholomance and go to the room with Rattlegore (beneath The Great Ossuary). On the southwestern pile of bones can you find and loot the tiny object 'Cracked Argent Dawn Commission'.\n\n2. Obtain 1x Righteous Orb and 4x Truesilver Bars, and use the 'Cracked Argent Dawn Commission' to repair it. Equip your new 'Argent Dawn Commission'.\n\n3. Kill Darkmaster Gandling in Old Scholomance and loot the quest item 'Darkmaster's Scourgestone'.\n\n4. Accept the quest, and turn it in to the Argent Crusade representative in Light's Hope Chapel or Chillwind Camp/The Bulwark.\n\n5. You now have unlocked the ability to obtain Invader's Scourgestones on an account-wide basis, but it might require an Argent Dawm Commission to be equipped unless Scholomance/Stratholme/Nazzramas automatically gives you the eligibility as a buff. Your alts can get theirs by interacting with Duke Nicholas Zverenhoff in Light's Hope Chapel if eligibility is not automatically provided as buffs in the given instances.",
+							constant = "1_ENTER_OLD_SCHOLOMANCE_AND_GO_TO_THE_ROOM_WITH",
+							export = true,
+							text = {
+								en = "1. Enter Old Scholomance and go to the room with Rattlegore (beneath The Great Ossuary). On the southwestern pile of bones can you find and loot the tiny object 'Cracked Argent Dawn Commission'.\n\n2. Obtain 1x Righteous Orb and 4x Truesilver Bars, and use the 'Cracked Argent Dawn Commission' to repair it. Equip your new 'Argent Dawn Commission'.\n\n3. Kill Darkmaster Gandling in Old Scholomance and loot the quest item 'Darkmaster's Scourgestone'.\n\n4. Accept the quest, and turn it in to the Argent Crusade representative in Light's Hope Chapel or Chillwind Camp/The Bulwark.\n\n5. You now have unlocked the ability to obtain Invader's Scourgestones on an account-wide basis, but it might require an Argent Dawm Commission to be equipped unless Scholomance/Stratholme/Nazzramas automatically gives you the eligibility as a buff. Your alts can get theirs by interacting with Duke Nicholas Zverenhoff in Light's Hope Chapel if eligibility is not automatically provided as buffs in the given instances.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "1. 进入旧通灵学院，前往有响骨的房间（大骨库下方）。在西南方的骸骨堆上，你可以找到并拾取那个微小的物体“破裂的银色黎明委任徽章”。\n\n2. 获取 1 个正义宝珠和 4 个真银锭，然后使用“破裂的银色黎明委任徽章”将其修复。装备你新的“银色黎明委任徽章”。\n\n3. 在旧通灵学院杀死黑暗院长加丁，拾取任务物品“黑暗院长的天灾石”。\n\n4. 接受任务，并将其交给圣光之愿礼拜堂或冰风营地/壁垒的银色北伐军代表。\n\n5. 你现在已经解锁了在账号通用基础上获取入侵者天灾石的能力，但可能需要装备银色黎明委任徽章，除非通灵学院/斯坦索姆/纳克萨玛斯会以增益的形式自动赋予你资格。如果这些副本没有自动以增益形式提供资格，你的小号可以在圣光之愿礼拜堂与尼古拉斯·兹维伦霍夫公爵互动来获得自己的资格。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-								["description"] = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+								["description"] = "~L.CAN_BE_FOUND_AT_THE_TOP_OF_THE_SOUTHWEST_BONE",
 								["maps"] = { 306 },
 								["groups"] = {
 									i(206372),	-- Cracked Argent Dawn Commission
@@ -1052,7 +1171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["groups"] = {
 									i(206373, {	-- Darkmaster's Scourgestone (QI!)
 										["provider"] = { "i", 12846 },	-- Argent Dawn Commission
-										["description"] = "Drops only with equipped Argent Dawn Commission",
+										["description"] = "~L.DROPS_ONLY_WITH_EQUIPPED_ARGENT_DAWN_COMMISSION",
 										["timeline"] = { ADDED_10_1_5 },
 									}),
 								},
@@ -1060,7 +1179,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					header(HEADERS.Spell, 413407, {	-- Sleight of Hand
-						["description"] = "1. Make sure you have equipped your Argent Dawn Commission, and enter Stratholme through the Main Gate.\n\n2. Kill mobs until Eye of Nazzramas spawns. Kill it and loot 'Ward of Naxxramas'.\n\n3. Interact with a Supply Crate to obtain 'Stratholme Holy Water'.\n\n4. Clear a path from Festival Lane through Market Row to Crusader's Square.\n\n5. Use your 'Ward of Naxxramas' in Crusader's square to obtain truesight and you should find a Dread Ward by the southern gate. (Prematurely killing any bosses in Undead Stratholme will prevent this spawn!)\n\n6. Use your 'Stratholme Holy Water' on the Dread Ward. This will trigger 'Sleight of Hand', and a five minute timer.\n\n7. You now have 5 minutes to do the following:\n7.1: Get back to Festival Lane and enter Elder's Square of the Undead seaction of Stratholme.\n7.2: Kill all bosses in Undead Stratholme. Remember to also take out the cultists inside the ziggurats.\n7.3: After killing Lord Aurius Rivendare in Slaughter Square, head into the southern gate where the Naxxramas portal is blocked off.\n7.4: An undead creature named 'Hand of Naxxramas' should be waiting for you, and an Extra Action Button should appear. Use it to burn the creature to dust before the timer tuns out.\n\n8. Travel to Light's Hope Chapel and find Archmage Angela Dosantos at 75.5, 52.8. Interact with her first, and she will offer a version of the quest named 'The Dread Citadel - Naxxramas' appropriate to your reputation with Argent Dawn. (Lower standing means she requires more gold and reagents from you, Exalted makes it free.)\n\n9. You have now unlocked the ability to obtain Corruptor's Scourgestones on an accound-wide basis, as well as a portal to Naxxramas at coordinates 35.7, 23.1.",
+						["description"] = createLocalizationString({
+							readable = "1. Make sure you have equipped your Argent Dawn Commission, and enter Stratholme through the Main Gate.\n\n2. Kill mobs until Eye of Nazzramas spawns. Kill it and loot 'Ward of Naxxramas'.\n\n3. Interact with a Supply Crate to obtain 'Stratholme Holy Water'.\n\n4. Clear a path from Festival Lane through Market Row to Crusader's Square.\n\n5. Use your 'Ward of Naxxramas' in Crusader's square to obtain truesight and you should find a Dread Ward by the southern gate. (Prematurely killing any bosses in Undead Stratholme will prevent this spawn!)\n\n6. Use your 'Stratholme Holy Water' on the Dread Ward. This will trigger 'Sleight of Hand', and a five minute timer.\n\n7. You now have 5 minutes to do the following:\n7.1: Get back to Festival Lane and enter Elder's Square of the Undead seaction of Stratholme.\n7.2: Kill all bosses in Undead Stratholme. Remember to also take out the cultists inside the ziggurats.\n7.3: After killing Lord Aurius Rivendare in Slaughter Square, head into the southern gate where the Naxxramas portal is blocked off.\n7.4: An undead creature named 'Hand of Naxxramas' should be waiting for you, and an Extra Action Button should appear. Use it to burn the creature to dust before the timer tuns out.\n\n8. Travel to Light's Hope Chapel and find Archmage Angela Dosantos at 75.5, 52.8. Interact with her first, and she will offer a version of the quest named 'The Dread Citadel - Naxxramas' appropriate to your reputation with Argent Dawn. (Lower standing means she requires more gold and reagents from you, Exalted makes it free.)\n\n9. You have now unlocked the ability to obtain Corruptor's Scourgestones on an accound-wide basis, as well as a portal to Naxxramas at coordinates 35.7, 23.1.",
+							constant = "1_MAKE_SURE_YOU_HAVE_EQUIPPED_YOUR_ARGENT_DAWN",
+							export = true,
+							text = {
+								en = "1. Make sure you have equipped your Argent Dawn Commission, and enter Stratholme through the Main Gate.\n\n2. Kill mobs until Eye of Nazzramas spawns. Kill it and loot 'Ward of Naxxramas'.\n\n3. Interact with a Supply Crate to obtain 'Stratholme Holy Water'.\n\n4. Clear a path from Festival Lane through Market Row to Crusader's Square.\n\n5. Use your 'Ward of Naxxramas' in Crusader's square to obtain truesight and you should find a Dread Ward by the southern gate. (Prematurely killing any bosses in Undead Stratholme will prevent this spawn!)\n\n6. Use your 'Stratholme Holy Water' on the Dread Ward. This will trigger 'Sleight of Hand', and a five minute timer.\n\n7. You now have 5 minutes to do the following:\n7.1: Get back to Festival Lane and enter Elder's Square of the Undead seaction of Stratholme.\n7.2: Kill all bosses in Undead Stratholme. Remember to also take out the cultists inside the ziggurats.\n7.3: After killing Lord Aurius Rivendare in Slaughter Square, head into the southern gate where the Naxxramas portal is blocked off.\n7.4: An undead creature named 'Hand of Naxxramas' should be waiting for you, and an Extra Action Button should appear. Use it to burn the creature to dust before the timer tuns out.\n\n8. Travel to Light's Hope Chapel and find Archmage Angela Dosantos at 75.5, 52.8. Interact with her first, and she will offer a version of the quest named 'The Dread Citadel - Naxxramas' appropriate to your reputation with Argent Dawn. (Lower standing means she requires more gold and reagents from you, Exalted makes it free.)\n\n9. You have now unlocked the ability to obtain Corruptor's Scourgestones on an accound-wide basis, as well as a portal to Naxxramas at coordinates 35.7, 23.1.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "1. 确保你已经装备了银色黎明委任徽章，然后从正门进入斯坦索姆。\n\n2. 杀怪直到纳克萨玛斯之眼生成。杀死它并拾取“纳克萨玛斯结界”。\n\n3. 与一个补给箱互动以获得“斯坦索姆圣水”。\n\n4. 从节日小径穿过市场区到十字军广场清出一条路。\n\n5. 在十字军广场使用你的“纳克萨玛斯结界”以获得真实视野，你应该能在南门旁找到一个恐惧结界。（过早杀死亡灵斯坦索姆中的任何首领都会阻止它生成！）\n\n6. 对恐惧结界使用你的“斯坦索姆圣水”。这会触发“障眼法”，并开始一个五分钟的计时。\n\n7. 你现在有 5 分钟时间完成以下事项：\n7.1：回到节日小径，进入斯坦索姆亡灵区的长者广场。\n7.2：杀死亡灵斯坦索姆中的所有首领。记住也要清掉通灵塔里的邪教徒。\n7.3：在屠宰广场杀死奥里乌斯·瑞文戴尔领主后，进入纳克萨玛斯传送门被封锁的南门。\n7.4：一个名为“纳克萨玛斯之手”的亡灵生物应该会在那里等你，并且会出现一个额外动作按钮。在计时结束前使用它把这个生物烧成灰烬。\n\n8. 前往圣光之愿礼拜堂，在 75.5, 52.8 处找到大法师安吉拉·多桑托斯。先与她互动，她会根据你在银色黎明的声望提供一个相应版本的名为“恐惧堡垒 - 纳克萨玛斯”的任务。（声望越低，她索要的金币和材料就越多，崇拜则完全免费。）\n\n9. 你现在已经解锁了在账号通用基础上获取腐蚀者天灾石的能力，以及在坐标 35.7, 23.1 处通往纳克萨玛斯的传送门。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(206377, {	-- Ward of Naxxramas
 								["cr"] = 10411,	-- Eye of Naxxramas
@@ -1068,7 +1204,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_10_1_5 },
 							}),
 							n(206148, {	-- Hand of Naxxramas
-								["description"] = "When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",
+								["description"] = createLocalizationString({
+									readable = "When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",
+									constant = "WHEN_YOU_HAVE_BOTH_THE_WARD_AND_HOLY_WATER_HEAD",
+									export = true,
+									text = {
+										en = "When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "当你同时拥有结界和圣水后，前往十字军大教堂的入口，但不要进去——而是使用你的纳克萨玛斯结界并转向左侧。如果操作正确，你会看到大门旁有一个纳克萨玛斯恐惧结界。找到恐惧结界后，把你的斯坦索姆圣水倒进里面。\n\n如果操作正确，你会收到一条全区域喊话和一个名为顺手牵羊的减益。获得该减益后，你有 5 分钟时间一路跑到斯坦索姆的亡灵区，跑到纳克萨玛斯左侧、奥里乌斯·瑞文戴尔领主所在位置的大门。你必须击杀奥里乌斯·瑞文戴尔领主才能打开大门。如果你及时赶到，那里会有一个纳克萨玛斯之手 NPC，你将能够使用你的银色黎明委任徽章把它烧成灰烬。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuests"] = { 76257 },	-- Darkmaster's Scourgestone
 								["questID"] = 76261,
 								["maps"] = { 318 },	-- Stratholme - Undead
@@ -1079,7 +1232,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							n(16116, {	-- Archmage Angela Dosantos
-								["description"] = "Talk to Archmage after defeating Hand of Naxxramas",
+								["description"] = createLocalizationString({
+									readable = "Talk to Archmage after defeating Hand of Naxxramas",
+									constant = "TALK_TO_ARCHMAGE_AFTER_DEFEATING_HAND_OF",
+									export = true,
+									text = {
+										en = "Talk to Archmage after defeating Hand of Naxxramas",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "击败纳克萨玛斯之手后与大法师交谈",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuests"] = { 76261 },	-- Hand of Naxxramas
 								["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
 								["questID"] = 76262,
@@ -1139,10 +1309,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					header(HEADERS.Spell, 413594, {	-- Forgotten Knowledge
-						["description"] = "See Stage 6 'Forgotten Knowledge' in Naxxramas.",
+						["description"] = createLocalizationString({
+							readable = "See Stage 6 'Forgotten Knowledge' in Naxxramas.",
+							constant = "SEE_STAGE_6_FORGOTTEN_KNOWLEDGE_IN_NAXXRAMAS",
+							export = true,
+							text = {
+								en = "See Stage 6 'Forgotten Knowledge' in Naxxramas.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "参见纳克萨玛斯第 6 阶段“被遗忘的知识”。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
-								["description"] = "To unlock this vendor you are required to complete the 'Wards of the Dread Citadel' stage 6 named 'Forgotten Knowledge in Naxxramas.",
+								["description"] = createLocalizationString({
+									readable = "To unlock this vendor you are required to complete the 'Wards of the Dread Citadel' stage 6 named 'Forgotten Knowledge in Naxxramas.",
+									constant = "TO_UNLOCK_THIS_VENDOR_YOU_ARE_REQUIRED_TO",
+									export = true,
+									text = {
+										en = "To unlock this vendor you are required to complete the 'Wards of the Dread Citadel' stage 6 named 'Forgotten Knowledge in Naxxramas.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "解锁此商人需要你完成“恐惧堡垒的守护”第 6 阶段，即“纳克萨玛斯中被遗忘的知识”。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 76290,	-- Omarion's Second Handbook
 								["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 								["groups"] = sharedData({
@@ -1186,7 +1390,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 								ach(18557, {	-- Never Bothered, Anyway
-									["description"] = "Equip the full crafted set of Glacial (cloth), Icebane (plate), Icy Scale (mail), or Polar (leather). Note that the tailor-crafted Glacial Cloak is required for any of the sets!",
+									["description"] = createLocalizationString({
+										readable = "Equip the full crafted set of Glacial (cloth), Icebane (plate), Icy Scale (mail), or Polar (leather). Note that the tailor-crafted Glacial Cloak is required for any of the sets!",
+										constant = "EQUIP_THE_FULL_CRAFTED_SET_OF_GLACIAL_CLOTH",
+										export = true,
+										text = {
+											en = "Equip the full crafted set of Glacial (cloth), Icebane (plate), Icy Scale (mail), or Polar (leather). Note that the tailor-crafted Glacial Cloak is required for any of the sets!",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "装备整套制造装备：冰川（布甲）、冰灾（板甲）、冰鳞（锁甲）或极地（皮甲）。请注意，任何一套都需要裁缝制造的冰川斗篷！",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 								ach(18616, {	-- Putting Wilhelm Out of Business
 									crit(60649, {	-- Omarion's Notes - Pages 1 & 2
@@ -1243,7 +1464,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(COMMON_BOSS_DROPS, {
 						i(206374, {	-- Invader's Scourgestone
-							["description"] = "Although this is an explicit drop from bosses in Old Scholomance and Stratholme, it will not drop from indoor bosses in Stratholme living, AKA the Scarlet section of the dungeon.",
+							["description"] = createLocalizationString({
+								readable = "Although this is an explicit drop from bosses in Old Scholomance and Stratholme, it will not drop from indoor bosses in Stratholme living, AKA the Scarlet section of the dungeon.",
+								constant = "ALTHOUGH_THIS_IS_AN_EXPLICIT_DROP_FROM_BOSSES",
+								export = true,
+								text = {
+									en = "Although this is an explicit drop from bosses in Old Scholomance and Stratholme, it will not drop from indoor bosses in Stratholme living, AKA the Scarlet section of the dungeon.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "虽然这是旧通灵学院和斯坦索姆首领的明确掉落物，但它不会从斯坦索姆活人区（即副本的血色区域）的室内首领身上掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 							["maps"] = { STRATHOLME },
 							["timeline"] = { ADDED_10_1_5 },
 						}),
@@ -1369,7 +1607,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27457,	-- An Opportune Alliance
 						}),
 						crit(17428, {	-- Beezil Linkspanner
-							["description"] = "Collect all other travelers, then speak to Beezil at Light Hope's Chapel.",
+							["description"] = createLocalizationString({
+								readable = "Collect all other travelers, then speak to Beezil at Light Hope's Chapel.",
+								constant = "COLLECT_ALL_OTHER_TRAVELERS_THEN_SPEAK_TO",
+								export = true,
+								text = {
+									en = "Collect all other travelers, then speak to Beezil at Light Hope's Chapel.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "收集所有其他旅行者，然后在光耀希望教堂与比兹尔交谈。",
+									-- TODO: tw = "",
+								},
+							}),
 							["_npcs"] = { 46022 },	-- Beezil Linkspanner
 						}),
 						i(248796, {	-- Goldshire Food Cart (DECOR!)
@@ -1453,7 +1708,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 44232,	-- Janice Myers <Flight Master>
 					["coord"] = { 34.9, 67.9, EASTERN_PLAGUELANDS },
 					-- #else
-					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["description"] = "~L.IF_PLAGUEWOOD_TOWER_IS_CONTROLLED_BY_YOUR",
 					["collectible"] = false,
 					-- #endif
 				}),
@@ -1462,7 +1717,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 44230,	-- Richard Trueflight <Flight Master>
 					["coord"] = { 61.6, 43.8, EASTERN_PLAGUELANDS },
 					-- #else
-					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["description"] = "~L.IF_PLAGUEWOOD_TOWER_IS_CONTROLLED_BY_YOUR",
 					["collectible"] = false,
 					-- #endif
 				}),
@@ -1500,7 +1755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 28621,	-- Grayson Ironwing <Flight Master>
 					["coord"] = { 51.4, 21.3, EASTERN_PLAGUELANDS },
 					-- #else
-					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["description"] = "~L.IF_PLAGUEWOOD_TOWER_IS_CONTROLLED_BY_YOUR",
 					["collectible"] = false,
 					-- #endif
 				}),
@@ -1522,7 +1777,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					-- #if BEFORE 4.0.3.13277
-					["description"] = "If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls.",
+					["description"] = "~L.IF_THIS_TOWER_IS_CONTROLLED_BY_YOUR_FACTION_YOU",
 					["collectible"] = false,
 					-- #endif
 				}),
@@ -1556,7 +1811,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						66.5, 56.9, EASTERN_PLAGUELANDS,
 						-- #endif
 					},
-					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
+						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_THOUGH_HORDE_2",
+						export = true,
+						text = {
+							en = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限联盟，不过部落玩家可以在完成部落版任务“宠物对战训练师：东部王国”时与他们对战一次。\n\nDeiza 的宠物为 14 级，三个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 野兽 - 同上。\n3. 亡灵 - 使用小动物（强力）或水栖（耐打）宠物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 14,
 					["groups"] = {
@@ -1600,7 +1872,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27372, {	-- A Gift For Fiona
-					["description"] = "If you abandon this quest, you can pick it up again at Fiona's Caravan at the zone entrance on the border with Western Plaguelands.",
+					["description"] = createLocalizationString({
+						readable = "If you abandon this quest, you can pick it up again at Fiona's Caravan at the zone entrance on the border with Western Plaguelands.",
+						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_5",
+						export = true,
+						text = {
+							en = "If you abandon this quest, you can pick it up again at Fiona's Caravan at the zone entrance on the border with Western Plaguelands.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃这个任务，你可以在区域入口处、与西瘟疫之地交界处的菲奥娜的商队重新接取。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 27371,	-- What I Do Best
 					["qg"] = 45429,	-- Tarenar Sunstrike
 					["coord"] = { 8.9, 66.5, EASTERN_PLAGUELANDS },
@@ -2134,7 +2423,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27453, {	-- Catalysm
-					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
+					["description"] = createLocalizationString({
+						readable = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
+						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_6",
+						export = true,
+						text = {
+							en = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃此任务，可以再次从光盾塔的贝蒂娜·比格辛克处接取。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						27452,	-- Dark Garb
 						27451,	-- To Kill With Purpose
@@ -3118,7 +3424,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27482, {	-- Into the Flames
-					["description"] = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
+					["description"] = createLocalizationString({
+						readable = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
+						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_7",
+						export = true,
+						text = {
+							en = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃这个任务，你可以在东墙塔楼的维克斯图尔处重新接取。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 27481,	-- Out of the Ziggurat
 					["qg"] = 45574,	-- Vex'tul (mobileNPC)
 					["coords"] = {	-- Walks back-and-forth between these two points
@@ -3224,7 +3547,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27454, {	-- Just a Drop in the Bucket
-					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
+					["description"] = "~L.IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_6",
 					["sourceQuest"] = 27453,	-- Catalysm
 					["qg"] = 11035,	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.6, EASTERN_PLAGUELANDS },
@@ -4273,7 +4596,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6144, {	-- The Call to Command
 					-- #if AFTER 3.3.0
-					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+					["description"] = createLocalizationString({
+						readable = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+						constant = "THIS_VERSION_OF_THE_QUEST_IS_ONLY_AVAILABLE_TO",
+						export = true,
+						text = {
+							en = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此版本的任务只对尚未完成愤怒之门的玩家开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuests"] = {
 						6135,	-- Duskwing, Oh How I Hate Thee...
@@ -4415,7 +4755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6145, {	-- The Crimson Courier
 					-- #if AFTER 3.3.0
-					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+					["description"] = "~L.THIS_VERSION_OF_THE_QUEST_IS_ONLY_AVAILABLE_TO",
 					-- #endif
 					["sourceQuest"] = 6144,	-- The Call to Command
 					["qgs"] = {
@@ -4513,7 +4853,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27532, {	-- The Plaguewood Tower
-					["description"] = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
+					["description"] = createLocalizationString({
+						readable = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
+						constant = "POSITION_OF_ARGUS_HIGHBEACON_DEPENDS_ON_THE",
+						export = true,
+						text = {
+							en = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "阿古斯·高塔的位置取决于菲奥娜的商队的位置以及你完成任务的顺序。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 27522,	-- Beat it Out of Them
 					["qg"] = 45451,	-- Argus Highbeacon
 					["qi"] = 61362,	-- Highbeacon's Parcel
@@ -4682,7 +5039,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(15454),	-- Mortar and Pestle
 						i(15447, {	-- Living Rot
-							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
+							["description"] = "~L.PROTIP_DO_NOT_LOOT_THESE_UNTIL_YOU_HAVE_A",
 						}),
 					},
 				}),
@@ -4711,7 +5068,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(15454),	-- Mortar and Pestle
 						i(15447, {	-- Living Rot
-							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
+							["description"] = "~L.PROTIP_DO_NOT_LOOT_THESE_UNTIL_YOU_HAVE_A",
 						}),
 					},
 				}),
@@ -4969,7 +5326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
-					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
+					["description"] = "~L.TWICE_PER_DAY_GUARD_DIDIER_STARTS_A_CARAVAN",
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -5290,7 +5647,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(REWARDS, {
-				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
+				["description"] = "~L.THESE_ARE_REWARDED_FROM_MULTIPLE_QUESTS_IN_THE",
 				["groups"] = {
 					CRAFTSMANS_WRIT_QUEST(9188, 22609, { "i", 14104, 6 }),	-- Craftsman's Writ - Brightcloth Pants
 					CRAFTSMANS_WRIT_QUEST(9178, 22600, { "i", 12643, 120 }),	-- Craftsman's Writ - Dense Weightstone
@@ -5347,7 +5704,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				-- #if BEFORE 4.0.3
 				o(176213, {	-- Blood of Heroes
-					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
+					["description"] = "~L.THIS_ITEM_CAN_BE_FOUND_SPORATICALLY_ON_THE",
 					["coords"] = {
 						-- Plaguewood
 						{ 34.5, 25.8, EASTERN_PLAGUELANDS },
@@ -5560,7 +5917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
-					["description"] = "Vendor will not sell anything until you complete his quest.",
+					["description"] = "~L.VENDOR_WILL_NOT_SELL_ANYTHING_UNTIL_YOU",
 					["sourceQuests"] = {
 						-- #if AFTER CATA
 						27534,	-- Augustus' Receipt Book
@@ -5577,7 +5934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(15902, {	-- A Crazy Grab Bag
-							["description"] = "Contains a random green item. In later expansions due to gold inflation, this might not be a bad purchase, but if you're trying to buy it before say Legion, don't bother.",
+							["description"] = "~L.CONTAINS_A_RANDOM_GREEN_ITEM_IN_LATER",
 							["cost"] = { { "g", 80000 } },	-- 8g
 							["isLimited"] = true,
 						}),
@@ -5798,7 +6155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						{	-- Revered
 							i(18171, {	-- Arcane Mantle of the Dawn
-								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -5806,7 +6163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18169, {	-- Flame Mantle of the Dawn
-								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -5814,7 +6171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18170, {	-- Frost Mantle of the Dawn
-								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -5822,7 +6179,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18172, {	-- Nature Mantle of the Dawn
-								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -5830,7 +6187,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18173, {	-- Shadow Mantle of the Dawn
-								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -5852,7 +6209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						{	-- Exalted
 							i(18182, {	-- Chromatic Mantle of the Dawn
-								["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_CHROMATIC_MANTLE",
 								["sourceQuests"] = {
 									5517,	-- Chromatic Mantle of the Dawn
 									5521,	-- Chromatic Mantle of the Dawn
@@ -5861,7 +6218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(227819, {	-- Blessed Flame Mantle of the Dawn
-								["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
+								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_CHROMATIC_MANTLE",
 								["sourceQuests"] = {
 									5517,	-- Chromatic Mantle of the Dawn
 									5521,	-- Chromatic Mantle of the Dawn
@@ -5904,12 +6261,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
-					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
 					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #endif
 				i(61387, {	-- Hidden Stash
-					["description"] = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage, choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
+					["description"] = createLocalizationString({
+						readable = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage, choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
+						constant = "BEFORE_BEING_ABLE_TO_FARM_FOR_THIS_COMPANION",
+						export = true,
+						text = {
+							en = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage, choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在能够刷这个同伴之前，玩家必须完成菲奥娜的任务链。当被要求从马车中选择一个增益时，选择菲奥娜的幸运符。这会在你身处该区域时提供一个带有蓝色兔脚的增益。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(66076, {	-- Mr. Grubbs (PET!)
@@ -5919,11 +6293,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
-					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
-					["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "~L.CAN_DROP_FROM_WEAK_UNDEAD_CREATURE_IN_THE",
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
@@ -6007,12 +6381,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(12811, {	-- Righteous Orb
-					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_SCARLET_CRUSADE_MEMBER_IN",
 					["cr"] = 12339,	-- Demetria <The Scarlet Oracle>
 				}),
 				-- #endif
 				i(16056, {	-- Schematic: Flawless Arcanite Rifle (RECIPE!)
-					["description"] = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",
+					["description"] = "~L.CAN_KILL_MOSSFLAYER_SCOUT_AND_MOSSFLAYER",
 					["coords"] = {
 						-- #if AFTER 10.1.7
 						{ 60.4, 17.8, EASTERN_PLAGUELANDS },

@@ -31,7 +31,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61863, {	-- Adventurer: Apolon
-									["description"] = "Requires Renown 27.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 27.",
+										constant = "REQUIRES_RENOWN_27",
+										export = true,
+										text = {
+											en = "Requires Renown 27.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 27。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -40,7 +57,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(64463, {	-- Adventurer: Auric Spiritguide
-									["description"] = "Requires Renown 71.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 71.",
+										constant = "REQUIRES_RENOWN_71",
+										export = true,
+										text = {
+											en = "Requires Renown 71.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 71。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -49,7 +83,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61864, {	-- Adventurer: Bron
-									["description"] = "Requires Renown 33.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 33.",
+										constant = "REQUIRES_RENOWN_33",
+										export = true,
+										text = {
+											en = "Requires Renown 33.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 33。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -58,7 +109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61862, {	-- Adventurer: Clora
-									["description"] = "Requires Renown 17.",
+									["description"] = "~L.REQUIRES_RENOWN_17",
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -67,7 +118,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(64462, {	-- Adventurer: Cromas the Mystic
-									["description"] = "Requires Renown 62.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 62.",
+										constant = "REQUIRES_RENOWN_62",
+										export = true,
+										text = {
+											en = "Requires Renown 62.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 62。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -76,7 +144,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61865, {	-- Adventurer: Disciple Kosmas
-									["description"] = "Requires Renown 38.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 38.",
+										constant = "REQUIRES_RENOWN_38",
+										export = true,
+										text = {
+											en = "Requires Renown 38.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 38。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -85,7 +170,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(64461, {	-- Adventurer: Hermestes
-									["description"] = "Requires Renown 44.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 44.",
+										constant = "REQUIRES_RENOWN_44",
+										export = true,
+										text = {
+											en = "Requires Renown 44.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 44。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -94,7 +196,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61859, {	-- Adventurer: Nemea
-									["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
+										constant = "REQUIRES_RENOWN_4_MUST_CHOOSE_NEMEA_IN_THE",
+										export = true,
+										text = {
+											en = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 4。必须在“骄傲还是团结”任务中选择涅墨亚才能获得该追随者。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = {
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
@@ -108,7 +227,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61860, {	-- Adventurer: Pelodis
-									["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
+										constant = "REQUIRES_RENOWN_4_MUST_CHOOSE_PELODIS_IN_THE",
+										export = true,
+										text = {
+											en = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 4。必须在“骄傲还是团结”任务中选择佩洛迪斯才能获得该追随者。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = {
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
@@ -122,7 +258,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61861, {	-- Adventurer: Sika
-									["description"] = "Requires Renown 12.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 12.",
+										constant = "REQUIRES_RENOWN_12",
+										export = true,
+										text = {
+											en = "Requires Renown 12.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 12。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
 									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -135,7 +288,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 								}),
 								q(63068, {	-- Settling Disputes
-									["description"] = "Requires Renown 4.",
+									["description"] = createLocalizationString({
+										readable = "Requires Renown 4.",
+										constant = "REQUIRES_RENOWN_4",
+										export = true,
+										text = {
+											en = "Requires Renown 4.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要名望 4。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 57899 },	-- More Work?
 									["altQuests"] = { 59674 },	-- A Friendly Rivalry
 									["provider"] = { "n", 160389 },	-- Koros

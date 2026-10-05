@@ -10,7 +10,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				-- Everything else related to 'The Coiled Isle' is 12.1.0. A personal decision has been made to separate the first chapter from everything else and place it in Zul'Aman.
 				header(HEADERS.AchCriteria, 62297.02, {	-- An Island of Fangs
 					q(98218, {	-- Return to Amani'Zar
-						["description"] = "Pops-up on first log-in. Can be accepted from Adventure Guide.",
+						["description"] = createLocalizationString({
+							readable = "Pops-up on first log-in. Can be accepted from Adventure Guide.",
+							constant = "POPS_UP_ON_FIRST_LOG_IN_CAN_BE_ACCEPTED_FROM",
+							export = true,
+							text = {
+								en = "Pops-up on first log-in. Can be accepted from Adventure Guide.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "首次登录时弹出。可以从冒险指南中接取。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isBreadcrumb"] = true,
 					}),
 					q(92916, {	-- A Call for Aid
@@ -27,7 +44,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 37.0, 23.2, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					q(92919, {	-- All Bark, All Bite
-						["description"] = "Quest becomes available after accepting 'Saving Those Bound' (92917).",
+						["description"] = createLocalizationString({
+							readable = "Quest becomes available after accepting 'Saving Those Bound' (92917).",
+							constant = "QUEST_BECOMES_AVAILABLE_AFTER_ACCEPTING_SAVING",
+							export = true,
+							text = {
+								en = "Quest becomes available after accepting 'Saving Those Bound' (92917).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在接受“拯救被束缚者”（92917）后任务变为可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 92916,	-- A Call for Aid
 						["qg"] = 253493,	-- Orweyna
 						["coord"] = { 37.0, 23.4, MAP.MIDNIGHT.ZULAMAN },
@@ -407,7 +441,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(95960, {	-- Stay awhile and listen: Arator
 						["name"] = "Stay awhile and listen: Arator",
-						["description"] = "Dialogue becomes available after accepting 'Under New Management' (94524).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after accepting 'Under New Management' (94524).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_5",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after accepting 'Under New Management' (94524).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“新官上任”（94524）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							94521,	-- The Direct Method
 							94522,	-- They Always Write It Down
@@ -452,7 +503,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(95959, {	-- Stay awhile and listen: Arator
 						["name"] = "Stay awhile and listen: Arator",
-						["description"] = "Dialogue becomes available after accepting 'A Dark Shadow Looms' (94529).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after accepting 'A Dark Shadow Looms' (94529).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_A",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after accepting 'A Dark Shadow Looms' (94529).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“黑暗阴影逼近”（94529）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 94527,	-- Null Space
 						["qg"] = 263465,	-- Arator
 						["coord"] = { 38.8, 74.1, MAP.MIDNIGHT.ZULAMAN },
@@ -478,7 +546,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(95958, {	-- Stay awhile and listen: Magister Umbric
 						["name"] = "Stay awhile and listen: Magister Umbric",
-						["description"] = "Dialogue becomes available after completing 'Like Mother, Like Son' (94531).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after completing 'Like Mother, Like Son' (94531).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_4",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after completing 'Like Mother, Like Son' (94531).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成“有其母必有其子”（94531）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 94531,	-- Like Mother, Like Son
 						["qg"] = 258538,	-- Magister Umbric
 						["coord"] = { 45.3, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -631,7 +716,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["isBreadcrumb"] = true,
 					}),
 					q(96469, {	-- The Crypt of the Disgraced
-						["description"] = "To bypass the barrier, interact with the objects in the following order:\n\nCharm, Mortar and Pestle, Urn, Bones.",
+						["description"] = createLocalizationString({
+							readable = "To bypass the barrier, interact with the objects in the following order:\n\nCharm, Mortar and Pestle, Urn, Bones.",
+							constant = "TO_BYPASS_THE_BARRIER_INTERACT_WITH_THE_OBJECTS",
+							export = true,
+							text = {
+								en = "To bypass the barrier, interact with the objects in the following order:\n\nCharm, Mortar and Pestle, Urn, Bones.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要绕过屏障，请按以下顺序与物品互动：\n\n护符、研钵与杵、骨灰瓮、骸骨。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 96467,	-- Thirst for Knowledge
 						["qg"] = 265329,	-- Zei'ka
 						["coord"] = { 75.0, 62.6, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -1107,7 +1209,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["groups"] = {
 							i(280189, {	-- Cauldron Concoction (PET!)
-								["description"] = "If you get this pet from any other offering, please let us know",
+								["description"] = createLocalizationString({
+									readable = "If you get this pet from any other offering, please let us know",
+									constant = "IF_YOU_GET_THIS_PET_FROM_ANY_OTHER_OFFERING",
+									export = true,
+									text = {
+										en = "If you get this pet from any other offering, please let us know",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "如果你从任何其他途径获得这只宠物，请告知我们",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),

@@ -203,7 +203,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(100966, {	-- Tolakesh, Horn of the Black Ox
 							-- #if BEFORE WOD
 							-- CRIEVE NOTE: This may be available in MOP Classic, keep an eye on it.
-							["description"] = "If you get this item to drop in MOP Classic, please @Crieve on Discord! Thanks!",
+							["description"] = createLocalizationString({
+								readable = "If you get this item to drop in MOP Classic, please @Crieve on Discord! Thanks!",
+								constant = "IF_YOU_GET_THIS_ITEM_TO_DROP_IN_MOP_CLASSIC",
+								export = true,
+								text = {
+									en = "If you get this item to drop in MOP Classic, please @Crieve on Discord! Thanks!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你在《熊猫人之谜》经典版中刷出了这个物品，请在 Discord 上 @Crieve！谢谢！",
+									-- TODO: tw = "",
+								},
+							}),
 							["isBounty"] = true,
 							-- #endif
 							["timeline"] = { CREATED_5_4_0 },

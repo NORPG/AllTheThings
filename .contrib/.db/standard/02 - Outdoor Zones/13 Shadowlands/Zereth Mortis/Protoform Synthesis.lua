@@ -33,7 +33,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(QUESTS, {
 				-- Unlock Pet Forge Available with Dealic Understanding
 				q(65419, {	-- Protoform Synthesis
-					["description"] = "Require Dealic Understanding.",
+					["description"] = createLocalizationString({
+						readable = "Require Dealic Understanding.",
+						constant = "REQUIRE_DEALIC_UNDERSTANDING",
+						export = true,
+						text = {
+							en = "Require Dealic Understanding.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要迪力之悟。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 181059 },	-- Pocopoc
 					["groups"] = {
 						recipe(364571),	-- Archetype of Animation
@@ -54,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				-- Unlock Mount Forge Available with Sopranian Understanding
 				q(64829, {	-- Finding Tahli
-					["description"] = "Requires Sorpranian Understanding.",
+					["description"] = "~L.REQUIRES_SORPRANIAN_UNDERSTANDING",
 					["provider"] = { "n", 180630 },	-- Elder Amir
 					["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 				}),
@@ -440,63 +457,216 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			n(TREASURES, {
 				o(375391, {	-- Protoform Schematic
-					["description"] = "Hidden atop the ramp.",
+					["description"] = createLocalizationString({
+						readable = "Hidden atop the ramp.",
+						constant = "HIDDEN_ATOP_THE_RAMP",
+						export = true,
+						text = {
+							en = "Hidden atop the ramp.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "隐藏在坡道顶部。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 48.93, 40.47, 2029 },
 					["groups"] = {
 						i(189473),	-- Schematic: Bronzewing Vespoid
 					},
 				}),
 				o(375388, {	-- Protoform Schematic
-					["description"] = "Inside the top cage.",
+					["description"] = createLocalizationString({
+						readable = "Inside the top cage.",
+						constant = "INSIDE_THE_TOP_CAGE",
+						export = true,
+						text = {
+							en = "Inside the top cage.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在最上面的笼子里。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
 					["groups"] = {
 						i(189477),	-- Schematic: Darkened Vombata
 					},
 				}),
 				o(375393, {	-- Protoform Schematic
-					["description"] = "On top a pillar. Need door of shadows/flying.",
+					["description"] = createLocalizationString({
+						readable = "On top a pillar. Need door of shadows/flying.",
+						constant = "ON_TOP_A_PILLAR_NEED_DOOR_OF_SHADOWS_FLYING",
+						export = true,
+						text = {
+							en = "On top a pillar. Need door of shadows/flying.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在一根柱子顶部。需要暗影之门/飞行。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189458),	-- Schematic: Desertwing Hunter
 					},
 				}),
 				o(375748, {	-- Protoform Schematic
-					["description"] = "Under the platform.",
+					["description"] = createLocalizationString({
+						readable = "Under the platform.",
+						constant = "UNDER_THE_PLATFORM",
+						export = true,
+						text = {
+							en = "Under the platform.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在平台下方。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
 					["groups"] = {
 						i(189434),	-- Schematic: Fierce Scarabid
 					},
 				}),
 				o(375389, {	-- Protoform Schematic
-					["description"] = "Inside the vespoid nest.",
+					["description"] = createLocalizationString({
+						readable = "Inside the vespoid nest.",
+						constant = "INSIDE_THE_VESPOID_NEST",
+						export = true,
+						text = {
+							en = "Inside the vespoid nest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在异种蜂巢穴内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 62.0, 43.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189475),	-- Schematic: Forged Spiteflyer
 					},
 				}),
 				o(375694, {	-- Protoform Schematic
-					["description"] = "On top of the build and behind a pillar.",
+					["description"] = createLocalizationString({
+						readable = "On top of the build and behind a pillar.",
+						constant = "ON_TOP_OF_THE_BUILD_AND_BEHIND_A_PILLAR",
+						export = true,
+						text = {
+							en = "On top of the build and behind a pillar.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在建筑顶部、一根柱子后面。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
 					["groups"] = {
 						i(189465),	-- Schematic: Genesis Crawler
 					},
 				}),
 				o(375900, {	-- Protoform Schematic
-					["description"] = "Inside a Cave.",
+					["description"] = createLocalizationString({
+						readable = "Inside a Cave.",
+						constant = "INSIDE_A_CAVE",
+						export = true,
+						text = {
+							en = "Inside a Cave.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在一个洞穴内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
 					["groups"] = {
 						i(189435),	-- Schematic: Multichicken
 					},
 				}),
 				o(375383, {	-- Protoform Schematic
-					["description"] = "On top of the tree circle.",
+					["description"] = createLocalizationString({
+						readable = "On top of the tree circle.",
+						constant = "ON_TOP_OF_THE_TREE_CIRCLE",
+						export = true,
+						text = {
+							en = "On top of the tree circle.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在环形树顶上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
 					["groups"] = {
 						i(189444),	-- Schematic: Leaping Leporid
 					},
 				}),
 				o(375498, {	-- Protoform Schematic
-					["description"] = "Mount or stand at precisely 52.3, 75.3. Behind the chain. Hard to spot.",
+					["description"] = createLocalizationString({
+						readable = "Mount or stand at precisely 52.3, 75.3. Behind the chain. Hard to spot.",
+						constant = "MOUNT_OR_STAND_AT_PRECISELY_52_3_75_3_BEHIND",
+						export = true,
+						text = {
+							en = "Mount or stand at precisely 52.3, 75.3. Behind the chain. Hard to spot.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "骑乘坐骑或精确站在 52.3, 75.3 处。在锁链后面。很难发现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
 					["groups"] = {
 						i(189442),	-- Schematic: Prototickles
@@ -509,14 +679,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				o(375371, {	-- Protoform Schematic
-					["description"] = "Inside the building.",
+					["description"] = createLocalizationString({
+						readable = "Inside the building.",
+						constant = "INSIDE_THE_BUILDING",
+						export = true,
+						text = {
+							en = "Inside the building.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在建筑内部。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
 					["groups"] = {
 						i(189460),	-- Schematic: Raptora Swooper
 					},
 				}),
 				o(375486, {	-- Protoform Schematic
-					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
+					["description"] = createLocalizationString({
+						readable = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
+						constant = "THIS_CAN_ONLY_BE_REACHED_WITH_HELP_OF_WARLOCK",
+						export = true,
+						text = {
+							en = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有在术士/暗影之门/空间传送器/炽热硫磺（玩具）的帮助下才能到达这里。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 57.9, 78.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189446),	-- Schematic: Shelly
@@ -529,63 +733,199 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				o(375370, {	-- Protoform Schematic
-					["description"] = "Inside the building.",
+					["description"] = "~L.INSIDE_THE_BUILDING",
 					["coord"] = { 62.9, 22.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189466),	-- Schematic: Tarachnid Creeper
 					},
 				}),
 				o(375387, {	-- Protoform Schematic
-					["description"] = "On top of the pillar.",
+					["description"] = createLocalizationString({
+						readable = "On top of the pillar.",
+						constant = "ON_TOP_OF_THE_PILLAR",
+						export = true,
+						text = {
+							en = "On top of the pillar.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在柱子顶部。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
 					["groups"] = {
 						i(189443),	-- Schematic: Terror Jelly
 					},
 				}),
 				o(375693, {	-- Protoform Schematic
-					["description"] = "Inside Locarian Esper, next to the rumble.",
+					["description"] = createLocalizationString({
+						readable = "Inside Locarian Esper, next to the rumble.",
+						constant = "INSIDE_LOCARIAN_ESPER_NEXT_TO_THE_RUMBLE",
+						export = true,
+						text = {
+							en = "Inside Locarian Esper, next to the rumble.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在洛卡里安·埃斯珀内，轰鸣声旁边。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 74.7, 50.5, 2028 },
 					["groups"] = {
 						i(189448),	-- Schematic: Tunneling Vombata
 					},
 				}),
 				o(375390, {	-- Protoform Schematic
-					["description"] = "On one of the first locus platforms in the sand.",
+					["description"] = createLocalizationString({
+						readable = "On one of the first locus platforms in the sand.",
+						constant = "ON_ONE_OF_THE_FIRST_LOCUS_PLATFORMS_IN_THE_SAND",
+						export = true,
+						text = {
+							en = "On one of the first locus platforms in the sand.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在沙地中最初的几个节点平台之一上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
 					["groups"] = {
 						i(189472),	-- Schematic: Vespoid Flutterer
 					},
 				}),
 				o(375479, {	-- Protoform Schematic
-					["description"] = "Underwater left to Ancient Bufonid",
+					["description"] = createLocalizationString({
+						readable = "Underwater left to Ancient Bufonid",
+						constant = "UNDERWATER_LEFT_TO_ANCIENT_BUFONID",
+						export = true,
+						text = {
+							en = "Underwater left to Ancient Bufonid",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在水下，上古蟾蜍人的左侧。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
 					["groups"] = {
 						i(189418),	-- Schematic: Ambystan Darter
 					},
 				}),
 				o(375981, {	-- Protoform Schematic
-					["description"] = "Atop the arch.",
+					["description"] = createLocalizationString({
+						readable = "Atop the arch.",
+						constant = "ATOP_THE_ARCH",
+						export = true,
+						text = {
+							en = "Atop the arch.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在拱门顶部。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
 					["groups"] = {
 						i(189464),	-- Schematic: Scarlet Helicid
 					},
 				}),
 				o(375502, {	-- Protoform Schematic
-					["description"] = "Hidden in tree leaves, on branch with small orb above water.",
+					["description"] = createLocalizationString({
+						readable = "Hidden in tree leaves, on branch with small orb above water.",
+						constant = "HIDDEN_IN_TREE_LEAVES_ON_BRANCH_WITH_SMALL_ORB",
+						export = true,
+						text = {
+							en = "Hidden in tree leaves, on branch with small orb above water.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "隐藏在树叶中，位于水面上方带有小球的树枝上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 28.1, 50.0, ZERETH_MORTIS },
 					["groups"] = {
 						i(189445),	-- Schematic: Microlicid
 					},
 				}),
 				o(375270, {	-- Protoform Schematic
-					["description"] = "Requires Aealic Understanding and Chapter 6.\nUnlock Rondure Locus Arrangement at 50.5, 27.6 (close to Tertius Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Rondure Alcove.\n\nHidden behind the top of the door frame near a large orb.\nDisappears when looted by another player recently.",
+					["description"] = createLocalizationString({
+						readable = "Requires Aealic Understanding and Chapter 6.\nUnlock Rondure Locus Arrangement at 50.5, 27.6 (close to Tertius Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Rondure Alcove.\n\nHidden behind the top of the door frame near a large orb.\nDisappears when looted by another player recently.",
+						constant = "REQUIRES_AEALIC_UNDERSTANDING_AND_CHAPTER_6",
+						export = true,
+						text = {
+							en = "Requires Aealic Understanding and Chapter 6.\nUnlock Rondure Locus Arrangement at 50.5, 27.6 (close to Tertius Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Rondure Alcove.\n\nHidden behind the top of the door frame near a large orb.\nDisappears when looted by another player recently.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要埃阿利克理解和第 6 章。\n在 50.5, 27.6 处（靠近特提乌斯节点）解锁圆弧节点布局。\n收集 60 点宇宙能量，前往内部节点，然后使用奥秘节点前往圆弧壁龛。\n\n隐藏在一道门框顶部附近、一个大球体旁。\n最近被其他玩家拾取后会消失。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 42.8, 40.6, 2029 },
 					["groups"] = {
 						i(189440),	-- Schematic: Omnipotential Core
 					},
 				}),
 				o(375746, {	-- Protoform Schematic
-					["description"] = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
+					["description"] = createLocalizationString({
+						readable = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
+						constant = "REQUIRES_SOPRANIAN_UNDERSTANDING_AND_CHAPTER_6",
+						export = true,
+						text = {
+							en = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要索普拉尼之悟和第六章。\n在 47.7 34.5 处解锁拱弧节点布局，位于容器房间的背面（可通过飞行或经由终末节点抵达）。\n收集 60 点宇宙能量并前往内部节点，然后使用秘匣节点前往拱弧壁龛。\n\n成功完成这个小游戏会奖励一张图纸。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 49.0, 73.1, 2029 },
 					["questID"] = 65651,
 					["groups"] = {

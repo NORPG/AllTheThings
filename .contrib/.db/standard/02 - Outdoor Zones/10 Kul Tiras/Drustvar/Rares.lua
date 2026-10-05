@@ -76,7 +76,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(129805, {	-- Beshol
-				["description"] = "Interact with \"Obviously Safe Chest\" to spawn this mob.",
+				["description"] = createLocalizationString({
+					readable = "Interact with \"Obviously Safe Chest\" to spawn this mob.",
+					constant = "INTERACT_WITH_OBVIOUSLY_SAFE_CHEST_TO_SPAWN",
+					export = true,
+					text = {
+						en = "Interact with \"Obviously Safe Chest\" to spawn this mob.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与“显然安全的箱子”互动以刷新这个怪物。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "o", 278432 },	-- Obviously Safe Chest
 				["questID"] = 49481,
 				["coord"] = { 50.61, 30.01, DRUSTVAR },
@@ -274,7 +291,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.0, 83.2, DRUSTVAR },
 				["groups"] = {
 					q(52061, {	-- Taptaf the Pig!
-						["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
+						["description"] = createLocalizationString({
+							readable = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
+							constant = "KILLING_IDEJ_THE_WISE_WILL_CAUSE_TAPTAF_TO",
+							export = true,
+							text = {
+								en = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击杀智者伊德吉会使塔普塔夫刷新，并给予你任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "n", 139380 },	-- Taptaf
 						["coord"] = { 65.0, 83.2, DRUSTVAR },
 						["groups"] = {

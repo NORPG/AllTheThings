@@ -26,7 +26,24 @@ local function MarkOfWHOOOWHATNow(t)
 end
 
 root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
-	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
+	["description"] = createLocalizationString({
+		readable = "In order to collect these, you need to have the original title associated with the gear.",
+		constant = "IN_ORDER_TO_COLLECT_THESE_YOU_NEED_TO_HAVE_THE",
+		export = true,
+		text = {
+			en = "In order to collect these, you need to have the original title associated with the gear.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "要收集这些，你需要拥有与这些装备相关联的原始称号。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		n(HONOR_TITLES, {
 			["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },

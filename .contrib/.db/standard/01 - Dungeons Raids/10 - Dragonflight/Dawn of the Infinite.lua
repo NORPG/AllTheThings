@@ -16,7 +16,24 @@ DIVERGENT = createHeader({
 });
 
 local QUANTUM_GROUP = sharedData({
-	["description"] = "Has a 100% drop chance on Mythic Difficulty. This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
+	["description"] = createLocalizationString({
+		readable = "Has a 100% drop chance on Mythic Difficulty. This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
+		constant = "HAS_A_100_DROP_CHANCE_ON_MYTHIC_DIFFICULTY_THIS",
+		export = true,
+		text = {
+			en = "Has a 100% drop chance on Mythic Difficulty. This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "在史诗难度下有 100% 的掉落几率。该物品会根据物品ID/来源ID转化为一件（1）你在龙军团（10.0）之前尚未学会的物品。\n只有没有其他获取途径的物品才会被附加到量子令牌上。\n\n|cFF1EFF0C可能的物品：量子令牌会转化为以下来源之一的物品：\n任何可用的团队副本\n任何地下城（包括已移除的死亡矿井和暴风城监狱）\n低级 PvP 的箱子物品（包括已移除的）\n地下城时光漫游等活动（包括已移除的活动）\n要塞令牌（德拉诺之王）\n海岛探险\n永远无法获得的物品（如果外观手册中列出）\n野外掉落与奖励（包括已移除的）\n随机升级地下城的背包物品（包括已移除的）\n场景战役（熊猫人之谜和托加斯特）|r\n\n|CFFFF0000不可能的物品：量子令牌不会给予你来自以下来源的物品：\n未在手册中列出的外观\n挑战模式物品\n龙军团及之后的物品\n制造物品\n任务奖励\n已移除的团队副本\n商人出售的物品\nT3 套装物品|r\n\n|cFFFF0000如果你遇到了已从游戏中移除或此前无法获得的物品，\n请在 ATT 的 Discord 上通知我们。|r",
+			-- TODO: tw = "",
+		},
+	}),
 },{
 	-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 	-- If the item needs different/other ModID or BonusID you need to use 'i()' instead
@@ -682,7 +699,24 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
-		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
+		["description"] = createLocalizationString({
+			readable = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
+			constant = "TURNS_INTO_ONE_1_UNLEARNED_DUNGEON_MOUNT_FROM",
+			export = true,
+			text = {
+				en = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "会变成一（1）个你尚未学会的、龙军团之前的副本坐骑。",
+				-- TODO: tw = "",
+			},
+		}),
 		["filter"] = MISC,	-- Not an actual Mount itself
 		["sym"] = {{"select","itemID",
 			-- Dungeon

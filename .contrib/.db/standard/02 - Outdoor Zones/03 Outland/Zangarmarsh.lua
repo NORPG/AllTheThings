@@ -215,7 +215,24 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66551, {	-- Ras'an <Master Pet Tamer>
 						["coord"] = { 17.2, 50.6, ZANGARMARSH },
-						["description"] = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",
+						["description"] = createLocalizationString({
+							readable = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",
+							constant = "RAS_AN_S_PETS_ARE_LEVEL_21_OF_THE_FOLLOWING",
+							export = true,
+							text = {
+								en = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "拉桑的宠物是 21 级的，依次为以下连续的宠物类别：\n1. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。\n2. 魔法 - 使用龙类（强力）或机械（耐打）宠物。\n3. 人形 - 使用亡灵（强力）或野兽（耐打）宠物。\n\n若要为“一场可怕的大冒险”积累进度，请使用雷象玩偶与两只强力宠物（例如永生的青铜幼龙和枯萎松鼠）组成的阵容进行对战。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 21,
 						["groups"] = {
@@ -234,7 +251,24 @@ root(ROOTS.Zones, {
 							["groups"] = TBC_FISHING,
 						}),
 						i(34469, {	-- Strange Engine Part
-							["description"] = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
+							["description"] = createLocalizationString({
+								readable = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
+								constant = "DON_T_PAY_ANYBODY_IN_ADVANCE_AND_DON_T_RIDE_IN",
+								export = true,
+								text = {
+									en = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "“不要预先付钱给任何人。也别乘坐任何装有卡皮森 38 型引擎的东西，它们会直接从天上掉下来。”——凯莉·弗莱",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "o", 182952 },	-- Steam Pump Flotsam
 						}),
 					}),
@@ -510,7 +544,24 @@ root(ROOTS.Zones, {
 									{ "i",  32364 },	-- Southfury Moonstone
 									{ "o", 185566 },	-- Southfury Moonstone
 								},
-								["description"] = "Jump into the water and catch Rizzle Sprysprocket by using aquatic form to race down the river avoiding the depth charges she leaves behind.",
+								["description"] = createLocalizationString({
+									readable = "Jump into the water and catch Rizzle Sprysprocket by using aquatic form to race down the river avoiding the depth charges she leaves behind.",
+									constant = "JUMP_INTO_THE_WATER_AND_CATCH_RIZZLE",
+									export = true,
+									text = {
+										en = "Jump into the water and catch Rizzle Sprysprocket by using aquatic form to race down the river avoiding the depth charges she leaves behind.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "跳入水中，使用水栖形态顺流而下追赶里兹尔·疾轮，并避开她留下的深水炸弹。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 14.2, 47.8, AZSHARA },
 							}),
 						},
@@ -996,7 +1047,24 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(10105, {	-- News for Rakoria
-						["description"] = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
+						["description"] = createLocalizationString({
+							readable = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
+							constant = "ONLY_ONE_OF_NEWS_FROM_ZANGARMARSH_9796_AND_NEWS",
+							export = true,
+							text = {
+								en = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "“来自赞加沼泽的消息”（9796）和“给拉科里亚的消息”（10105）只能接取其中一个",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 						["coord"] = { 30.6, 50.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -1004,7 +1072,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(9796, {	-- News from Zangarmarsh
-						["description"] = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
+						["description"] = "~L.ONLY_ONE_OF_NEWS_FROM_ZANGARMARSH_9796_AND_NEWS",
 						["qg"] = 18011,	-- Zurai
 						["coord"] = { 85.3, 54.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -1837,7 +1905,24 @@ root(ROOTS.Zones, {
 				n(SPECIAL, {
 					o(373437, {	-- Pungent Blobfish Cluster
 						["timeline"] = { ADDED_9_2_5 },
-						["description"] = "Inside Coilfang Reservoir area.",
+						["description"] = createLocalizationString({
+							readable = "Inside Coilfang Reservoir area.",
+							constant = "INSIDE_COILFANG_RESERVOIR_AREA",
+							export = true,
+							text = {
+								en = "Inside Coilfang Reservoir area.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在盘牙水库区域内。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "i", 187662, 1 } },	-- Strange Goop
 						["coord"] = { 52.2, 37.9, ZANGARMARSH },
 						["groups"] = {
@@ -2106,7 +2191,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(23373, {	-- Mortog Steamhead
-						["description"] = "Will only serve players who are Exalted with Cenarion Expedition.",
+						["description"] = createLocalizationString({
+							readable = "Will only serve players who are Exalted with Cenarion Expedition.",
+							constant = "WILL_ONLY_SERVE_PLAYERS_WHO_ARE_EXALTED_WITH",
+							export = true,
+							text = {
+								en = "Will only serve players who are Exalted with Cenarion Expedition.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只会为与塞纳里奥远征队达到崇拜的玩家服务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["minReputation"] = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
 						["timeline"] = { ADDED_2_1_0 },
 					}),
@@ -2229,13 +2331,47 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(29960, {	-- Captured Firefly (item) / Firefly (PET!)
-						["description"] = "This is an extremely rare drop.",
+						["description"] = createLocalizationString({
+							readable = "This is an extremely rare drop.",
+							constant = "THIS_IS_AN_EXTREMELY_RARE_DROP",
+							export = true,
+							text = {
+								en = "This is an extremely rare drop.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是极其稀有的掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_2_1_0 },
 						["cr"] = 20197,	-- Bogflare Needler
 					}),
 					i(24330, {	-- Drain Schematics (QS!)
 						["cr"] = 18340,	-- Steam Pump Overseer
-						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",
+						["description"] = createLocalizationString({
+							readable = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",
+							constant = "MUST_HAVE_ACCEPTED_OR_COMPLETED",
+							export = true,
+							text = {
+								en = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须已接受或完成|cFFFFD700必须保持平衡（9720）|r才能拾取此物品。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {
@@ -2248,7 +2384,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(24401, {	-- Unidentified Plant Parts
-						["description"] = "Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",
+						["description"] = createLocalizationString({
+							readable = "Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",
+							constant = "LAURANNA_THAR_WELL_IN_CENARION_REFUGEE_WILL",
+							export = true,
+							text = {
+								en = "Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "塞纳里奥庇护所的劳拉娜·萨尔维尔会接受这些物品，并提高你与塞纳里奥远征队的声望。该可重复任务只在你与该阵营达到尊敬之前可用。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 			},

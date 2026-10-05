@@ -286,7 +286,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					o(175382, {	-- Doomrigger's Coffer
 						-- #if BEFORE 4.0.3
-						["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
+						["description"] = "~L.CAN_BE_FOUND_IN_A_COFFER_IN_THE_WHELP_ROOM",
 						-- #endif
 						["groups"] = {
 							i(12352),	-- Doomrigger's Clasp
@@ -344,7 +344,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(12144, {	-- Eggscilloscope
 						-- #if BEFORE 4.0.3
-						["description"] = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
+						["description"] = "~L.YOU_DON_T_NEED_TO_KEEP_THIS_BUT_IT_MIGHT_BE",
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
@@ -391,7 +391,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12530 },	-- Spire Spider Egg
 							{ "o", 175606 },	-- Spire Spider Egg
 						},
-						["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
+						["description"] = "~L.INTERACTING_WITH_A_SPIDER_EGG_MAY_SPAWN_BABY",
 					}),
 					i(12529, {	-- Smolderweb Hatchling (PET!)
 						["timeline"] = { REMOVED_4_0_3 },
@@ -569,7 +569,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5103, {	-- Hot Fiery Death
-				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
+				["description"] = "~L.AT_THE_BOTTOM_FLOOR_OF_LOWER_BLACKROCK_SPIRE",
 				["provider"] = { "o", 176090 },	-- Human Remains
 				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] =
@@ -594,7 +594,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					objective(1, {	-- 0/1 Caged Worg Pup
 						["provider"] = { "i", 12263 },	-- Caged Worg Pup
-						["description"] = "Can be pulled outside of the room without engaging the boss.",
+						["description"] = "~L.CAN_BE_PULLED_OUTSIDE_OF_THE_ROOM_WITHOUT",
 						["cost"] = { { "i", 12262, 1 } },	-- Empty Worg Pup Cage
 						["cr"] = 10221,	-- Bloodaxe Worg Pup
 					}),
@@ -645,7 +645,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5126, {	-- Lorax's Tale
-				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
+				["description"] = "~L.HAVE_AN_UNFORGED_RUNE_COVERED_BREASTPLATE_IN",
 				["qg"] = 10918,	-- Lorax
 				["qi"] = 12806,	-- Unforged Rune Covered Breastplate
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
@@ -709,7 +709,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4866, {	-- Mother's Milk
 				-- #if BEFORE 4.0.3
-				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
+				["description"] = "~L.YOU_NEED_TO_SETUP_A_COORDINATED_GROUP_ONLY_FOR",
 				-- #endif
 				["qg"] = 9563,	-- Ragged John
 				["coord"] = { 65.0, 23.6, BURNING_STEPPES },
@@ -746,7 +746,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5047, {	-- Pip Quickwit, At Your Service!
 				-- #if BEFORE 4.0.3
-				["description"] = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
+				["description"] = "~L.KILL_THE_BEAST_IN_UBRS_USING_PIP_S_SKINNER_AND",
 				-- #endif
 				["qg"] = 10776,	-- Pip Quickwit
 				["qi"] = 12710,	-- Glowing Hunk of the Beast's Flesh
@@ -778,7 +778,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4742, {	-- Seal of Ascension (1/2)
 				-- #if BEFORE 4.0.3
-				["description"] = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
+				["description"] = "~L.PICKUP_THIS_QUEST_BY_GOING_UP_TO_THE_HIDDEN",
 				-- #endif
 				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
 				["timeline"] = { REMOVED_4_0_3 },
@@ -792,7 +792,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4743, {	-- Seal of Ascension (2/2)
 				-- #if BEFORE 4.0.3
-				["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
+				["description"] = "~L.ASK_YOUR_PARTY_TO_COME_WITH_YOU_TO_DUSTWALLOW",
 				-- #endif
 				["sourceQuest"] = 4742,	-- Seal of Ascension (1/2)
 				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
@@ -810,15 +810,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(12339, {	-- Vaelan's Gift
 						i(12323, {	-- Unforged Seal of Ascension
-							["description"] = "Use this once the dragon reaches 10-20% health.",
+							["description"] = "~L.USE_THIS_ONCE_THE_DRAGON_REACHES_10_20_HEALTH",
 						}),
 						i(12300, {	-- Orb of Draconic Energy
-							["description"] = "Use this once the dragon reaches 10% health. Instruct your party NOT to kill Emberstrife.",
+							["description"] = "~L.USE_THIS_ONCE_THE_DRAGON_REACHES_10_HEALTH",
 						}),
 					}),
 					i(12344, {	-- Seal of Ascension
 						-- #if BEFORE 3.0.8
-						["description"] = "This item must be in your bags to open the door to UBRS.",
+						["description"] = "~L.THIS_ITEM_MUST_BE_IN_YOUR_BAGS_TO_OPEN_THE_DOOR",
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
@@ -854,7 +854,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					o(175385, {	-- Darkstone Tablet
 						-- #if BEFORE 4.0.3
-						["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
+						["description"] = "~L.THIS_IS_THE_WHITE_TABLET_LEANING_UP_AGAINST_THE",
 						-- #endif
 						["groups"] = {
 							i(12358),	-- Darkstone Tablet
@@ -980,7 +980,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5160, {	-- The Matron Protectorate
 				-- #if BEFORE 4.0.3
-				["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
+				["description"] = "~L.SPEAK_WITH_AWBEE_IN_UBRS_TO_ACCEPT_THIS_QUEST",
 				-- #endif
 				["qg"] = 10740,	-- Awbee
 				["qi"] = 12923,	-- Awbee's Scale
@@ -1183,7 +1183,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4903, {	-- Warlord's Command
 				-- #if BEFORE 4.0.3
-				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
+				["description"] = "~L.TALK_TO_WARLORD_GORETOOTH_AND_READ_THROUGH_HIS",
 				-- #endif
 				["qs"] = 12563,	-- Warlord Goretooth's Command
 				["coord"] = { 5.8, 47.6, BADLANDS },
@@ -1206,7 +1206,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12562 },	-- Important Blackrock Documents
 							{ "o", 175785 },	-- Inconspicuous Documents
 						},
-						["description"] = "On the ground next to Overlord Wyrmthalak.",
+						["description"] = "~L.ON_THE_GROUND_NEXT_TO_OVERLORD_WYRMTHALAK",
 					}),
 					i(13961, {	-- Halycon's Muzzle
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1511,7 +1511,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 			}),
 			n(9257, {	-- Scarshield Warlock
-				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
+				["description"] = "~L.DO_NOT_KILL_THIS_MOB_IF_YOU_ARE_TRYING_TO_GET",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
 						["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
@@ -1521,7 +1521,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 					}),
 					n(10263, {	-- Burning Felguard
-						["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
+						["description"] = "~L.THIS_MOB_IS_INFINITELY_FARMABLE_IF_YOU_DON_T",
 						["groups"] = {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228554, {	-- Demonskin Gloves
@@ -1548,7 +1548,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			i(12533, {	-- Roughshod Pike
-				["description"] = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
+				["description"] = "~L.THIS_ITEM_CAN_BE_FOUND_ALONG_THE_BACK_WALL_AS",
 				["provider"] = { "o", 175886 },	-- Roughshod Pike
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
@@ -1597,7 +1597,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			n(9217, {	-- Spirestone Lord Magus (Rare)
 				["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, i(228563, {	-- Globe of D'sak
@@ -1683,7 +1683,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12740, {	-- Fifth Mosh'aru Tablet
 						-- #if BEFORE 4.0.3
-						["description"] = "Located directly behind the boss.",
+						["description"] = "~L.LOCATED_DIRECTLY_BEHIND_THE_BOSS",
 						-- #endif
 						["provider"] = { "o", 175949 },	-- Fifth Mosh'aru Tablet
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1761,7 +1761,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12741, {	-- Sixth Mosh'aru Tablet
 						-- #if BEFORE 4.0.3
-						["description"] = "Located directly behind the boss.",
+						["description"] = "~L.LOCATED_DIRECTLY_BEHIND_THE_BOSS",
 						-- #endif
 						["provider"] = { "o", 175950 },	-- Sixth Mosh'aru Tablet
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1771,7 +1771,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13175, {	-- Voone's Twitchbow [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
 						-- #if BEFORE 10.1.7
 						-- #if AFTER 2.0.1
-						["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+						["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
@@ -1838,7 +1838,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16080, {	-- Mor Grayhoof
-				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
+				["description"] = "~L.THIS_BOSS_CAN_BE_SUMMONED_USING_THE_BRAZIER_OF",
 				-- #if BEFORE 6.0.2
 				["cost"] = {
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
@@ -1893,7 +1893,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 53.0, 67.0, LBRS_TAZZALOR },
 					{ 49.0, 55.0, LBRS_TAZZALOR },
 				},
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["groups"] = {
 					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
 					i(12621),	-- Demonfork
@@ -2009,7 +2009,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(392, {	-- Urok Doomhowl
 				["creatureID"] = 10584,	-- Urok Doomhowl
 				["provider"] = { "o", 175621 },	-- Urok's Tribute Pile
-				["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
+				["description"] = "~L.SUMMONABLE_BOSS_LOOT_A_ROUGHSHOD_PIKE_FOUND_ON",
 				["cost"] = {
 					{ "i", 12533, 1 },	-- Roughshod Pike
 					{ "i", 12534, 1 },	-- Omokk's Head
@@ -2044,7 +2044,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					})),
 					i(12835, {	-- Plans: Annihilator (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
-						["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+						["description"] = "~L.BLIZZARD_STATED_THAT_ANNIHILATOR_WAS_AN_ITEM",
 						["timeline"] = { REMOVED_1_15_0 },
 						-- #endif
 					}),
@@ -2060,7 +2060,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13247, {	-- Quartermaster Zigris' Footlocker
-						["description"] = "Contains a random green item.",
+						["description"] = "~L.CONTAINS_A_RANDOM_GREEN_ITEM",
 						["timeline"] = { REMOVED_6_0_2 },	-- NOTE: Exact patch not known
 					}),
 				},
@@ -2094,7 +2094,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			e(395, {	-- Gizrul the Slavener
 				["creatureID"] = 10268,	-- Gizrul the Slavener
-				["description"] = "Summoned immediately after Halycon is defeated.",
+				["description"] = "~L.SUMMONED_IMMEDIATELY_AFTER_HALYCON_IS_DEFEATED",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, i(228591, {	-- Rhombeard Protector
@@ -2168,7 +2168,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					i(13148, {	-- Chillpike
 						-- #if BEFORE 10.1.7
-						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						["description"] = "~L.THIS_ITEM_SEEMS_TO_HAVE_DISAPPEARED_IN_CLASSIC",
 						-- #if AFTER 2.0.1
 						["isBounty"] = true,
 						-- #endif
@@ -2397,14 +2397,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 				i(13371, {	-- Father Flame
 					-- #if BEFORE 6.0.2
-					["description"] = "Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",
+					["description"] = "~L.OPENING_THIS_WILL_SPAWN_8_WAVES_OF_DRAKE_ADDS",
 					-- #endif
 					["provider"] = { "o", 175245 },	-- Father Flame
 					["timeline"] = { REMOVED_6_0_2 },
 				}),
 				n(10264, {	-- Solakar Flamewreath
 					-- #if BEFORE 6.0.2
-					["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
+					["description"] = "~L.THIS_IS_SPAWNED_BY_CLICKING_ON_THE_FATHER_FLAME",
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
@@ -2465,7 +2465,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #if SEASON_OF_DISCOVERY
 					-- Its always up in SoD
 					-- #else
-					["description"] = "This is a Rare Creature and, as such, is not always present.",
+					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
@@ -2499,7 +2499,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 						i(12848, {	-- Unforged Rune Covered Breastplate
 							-- #if BEFORE 4.0.3
-							["description"] = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
+							["description"] = "~L.FOUND_ON_THE_RACK_BEHIND_ANVILCRACK_IN_UPPER",
 							-- #endif
 							["provider"] = { "o", 175970 },	-- Unforged Runic Breastplate
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2681,7 +2681,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						i(12588, {	-- Bonespike Shoulder
 							-- #if AFTER 2.0.1
-							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
 							["isBounty"] = true,
 							-- #endif
 							["timeline"] = {
@@ -2904,7 +2904,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						prof(SKINNING, {
 							-- #if BEFORE TBC
-							["description"] = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",
+							["description"] = "~L.YOU_MUST_HAVE_315_SKINNING_SKILL_THIS_CAN_ONLY",
 							["cost"] = {
 								{ "i", 12709, 1 },	-- Pip's Skinner
 								{ "i", 19901, 1 },	-- Zulian Slicer
@@ -2919,7 +2919,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					},
 				}),
 				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16042, {	-- Lord Valthalak
-					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
+					["description"] = "~L.THIS_BOSS_CAN_BE_SUMMONED_USING_THE_BRAZIER_OF_2",
 					-- #if BEFORE 6.0.2
 					["cost"] = {
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
@@ -2941,7 +2941,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(22336),	-- Draconian Aegis of the Legion
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228682, {	-- Lord Valthalak's Staff of Command
-							["description"] = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
+							["description"] = "~L.THIS_VERSION_OF_THE_STAFF_WAS_CREATED_AND_ADDED",
 							["timeline"] = { CREATED_1_15_3 },
 						})),
 						-- #endif

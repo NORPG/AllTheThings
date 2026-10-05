@@ -6,7 +6,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	n(COMMON_BOSS_DROPS, {
 		d(DIFFICULTY.RAID.HEROIC, {
 			i(191910, {	-- Confounding Antique Cypher
-				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
+				["description"] = createLocalizationString({
+					readable = "Drops from Fated Heroic Shadowlands Raid bosses.",
+					constant = "DROPS_FROM_FATED_HEROIC_SHADOWLANDS_RAID_BOSSES",
+					export = true,
+					text = {
+						en = "Drops from Fated Heroic Shadowlands Raid bosses.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由暗影国度宿命团队副本的英雄难度首领掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(191911, {	-- Cosmic Creation Impetus
 				["cost"] = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
@@ -14,7 +31,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		}),
 		d(DIFFICULTY.RAID.MYTHIC, {
 			i(191926, {	-- Confounding Ancient Cypher
-				["description"] = "Drops from Fated Mythic Shadowlands Raid bosses.",
+				["description"] = createLocalizationString({
+					readable = "Drops from Fated Mythic Shadowlands Raid bosses.",
+					constant = "DROPS_FROM_FATED_MYTHIC_SHADOWLANDS_RAID_BOSSES",
+					export = true,
+					text = {
+						en = "Drops from Fated Mythic Shadowlands Raid bosses.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由暗影国度宿命团队副本的史诗难度首领掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(191927, {	-- Sacred Creation Impetus
 				["cost"] = { { "i", 191926, 20 } },	-- 20x Confounding Ancient Cypher
@@ -23,7 +57,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	}),
 	n(QUESTS, {
 		q(66648, {	-- Crossing Fate
-			["description"] = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
+			["description"] = createLocalizationString({
+				readable = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
+				constant = "AUTO_ACCEPTED_BY_ENTERING_ANY_FATED_SHADOWLANDS",
+				export = true,
+				text = {
+					en = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "进入任意“宿命”暗影界团队副本时自动接受。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				-- Castle Nathria
 				1735,	-- The Grand Walk

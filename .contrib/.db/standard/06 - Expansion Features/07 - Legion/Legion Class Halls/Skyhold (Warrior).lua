@@ -229,7 +229,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ARTIFACTS, {
 					cl(WARRIOR, ARMS, {
 						q(43643, {	-- Secrets of the Axes
-							["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+							["description"] = createLocalizationString({
+								readable = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+								constant = "EVERY_DAY_THERE_IS_A_CHANCE_THAT_SPEAKING_TO",
+								export = true,
+								text = {
+									en = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "每天都有机会在铁匠大师赫尔加处出现一个对话选项“有能与斯特罗姆卡媲美的斧头吗？”，最终会向你提供任务“斧之秘辛”。当此任务激活时，它会在整个区域范围内激活，当天所有人都可以接取。\n\n这会让你前往达拉然的克拉苏斯平台与萨鲁法尔大王交谈。完成后，跳回天盾堡并再次与铁匠大师赫尔加交谈，她会送你去意志之环与萨鲁法尔决斗。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 96586 },	-- Master Smith Helgar
 							["coord"] = { 41.0, 37.1, SKYHOLD },
 							["groups"] = {
@@ -253,7 +270,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 					cl(WARRIOR, PROTECTION, {
-						["description"] = "Read the Saga of the Valajar tablet (right behind your AK research guy) in your Order Hall first.\nGo to Highmount and go forward into the cave until the zone changes to \"Neltharions Vault\" (just to make sure, the next step can already trigger in front of the cave)\nIf you see the chat emote \"You hear a strange roar from the cavern ahead\"(May not be seen anymore as of 9.1.0) carefully search all gold piles for your appreance (it can be on multiple locations, so search carefully)\nIf you do not see that emote, try visiting the cave the next day...\n\nYou must be spec'd Protection to see the appearance on the ground.",
+						["description"] = createLocalizationString({
+							readable = "Read the Saga of the Valajar tablet (right behind your AK research guy) in your Order Hall first.\nGo to Highmount and go forward into the cave until the zone changes to \"Neltharions Vault\" (just to make sure, the next step can already trigger in front of the cave)\nIf you see the chat emote \"You hear a strange roar from the cavern ahead\"(May not be seen anymore as of 9.1.0) carefully search all gold piles for your appreance (it can be on multiple locations, so search carefully)\nIf you do not see that emote, try visiting the cave the next day...\n\nYou must be spec'd Protection to see the appearance on the ground.",
+							constant = "READ_THE_SAGA_OF_THE_VALAJAR_TABLET_RIGHT",
+							export = true,
+							text = {
+								en = "Read the Saga of the Valajar tablet (right behind your AK research guy) in your Order Hall first.\nGo to Highmount and go forward into the cave until the zone changes to \"Neltharions Vault\" (just to make sure, the next step can already trigger in front of the cave)\nIf you see the chat emote \"You hear a strange roar from the cavern ahead\"(May not be seen anymore as of 9.1.0) carefully search all gold piles for your appreance (it can be on multiple locations, so search carefully)\nIf you do not see that emote, try visiting the cave the next day...\n\nYou must be spec'd Protection to see the appearance on the ground.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "先在职业大厅阅读瓦拉加尔石板上的萨迦（就在你的神器知识研究员正后方）。\n前往至高岭，向前进入洞穴，直到区域名称变为“奈萨里奥的巢穴”（保险起见，下一步也可能在洞穴前就触发）\n如果你看到聊天表情“你听到前方洞穴传来一阵奇怪的咆哮”（自 9.1.0 起可能已看不到），请仔细搜索所有金堆以寻找你的外观（它可能出现在多个位置，所以要仔细搜索）\n如果你没有看到那个表情，试着第二天再来洞穴……\n\n你必须选择防护专精才能看到地面上的外观。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 45.1, 28.6, SKYHOLD },
 							{ 49.6, 68.5, HIGHMOUNTAIN },
@@ -261,11 +295,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = {
 							q(44311, {	-- Burning Plate of the Worldbreaker Available
 								["name"] = "Burning Plate of the Worldbreaker Available",
-								["description"] = "This quest indicates if the appearance spawns and can be looted.",
+								["description"] = createLocalizationString({
+									readable = "This quest indicates if the appearance spawns and can be looted.",
+									constant = "THIS_QUEST_INDICATES_IF_THE_APPEARANCE_SPAWNS",
+									export = true,
+									text = {
+										en = "This quest indicates if the appearance spawns and can be looted.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "此任务用于指示该外观是否刷新并可被拾取。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							q(44312, {	-- Burning Plate of the Worldbreaker Denied
 								["name"] = "Burning Plate of the Worldbreaker Denied",
-								["description"] = "This quest apparently makes you unable to see/obtain the container while it is true.",
+								["description"] = createLocalizationString({
+									readable = "This quest apparently makes you unable to see/obtain the container while it is true.",
+									constant = "THIS_QUEST_APPARENTLY_MAKES_YOU_UNABLE_TO_SEE",
+									export = true,
+									text = {
+										en = "This quest apparently makes you unable to see/obtain the container while it is true.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "看来此任务会让你在该状态为真时无法看到或获取该容器。",
+										-- TODO: tw = "",
+									},
+								}),
 								["isDaily"] = true,
 							}),
 							o(257392, {	-- Burning Plate of the Worldbreaker
@@ -877,7 +945,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					i(144436, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of Odyn
-						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+						["description"] = createLocalizationString({
+							readable = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+							constant = "THIS_ITEM_CAN_DROP_OFF_OF_ANY_VRYKUL_IN_THE",
+							export = true,
+							text = {
+								en = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该物品可以由战士（任意专精）从破碎群岛的任何维库人身上掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							n(GREAT_ODYN_AND_THE_FIRELORD, { ["questID"] = 46223, }),
 							n(THE_WANDERER_AND_THE_SERPENT, { ["questID"] = 46224, }),
@@ -888,7 +973,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					})),
 					i(144437, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of the Valarjar
-						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+						["description"] = "~L.THIS_ITEM_CAN_DROP_OFF_OF_ANY_VRYKUL_IN_THE",
 						["cr"] = 115732,	-- Jorvild the Trusted (highest drop chance)
 						["groups"] = {
 							n(HIS_NAME_IS_DRAGONBLOOD, { ["questID"] = 46229, }),
@@ -910,7 +995,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					gt(408, {	-- For Honor and Glory
 						o(252570, {	-- Skyhold Chest of Riches
-							["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
+							["description"] = createLocalizationString({
+								readable = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
+								constant = "THE_CHESTS_SPAWN_EVERY_3_HOURS_IN_THE_ARENA_OF",
+								export = true,
+								text = {
+									en = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "\n宝箱每 3 小时在荣耀竞技场刷新一次，从服务器时间 0:00 开始，若处于夏令时则为服务器时间 02:00。你必须从符文师埃纳尔那里研究第二层职业大厅升级|cFFFFD700为了荣耀与光荣|r才能看到宝箱。你每周只能拾取一次。\n\n它可能包含狂怒隐藏外观物品，不过考虑到有那么多战士在抢那个玩具，你还是去野外各自的来源收集这些物品更好。（即：如果你已经有那个玩具了，就不要打开这个宝箱）",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 43763,	-- Chest of Riches Weekly Lockout
 							["isWeekly"] = true,
 							["groups"] = {

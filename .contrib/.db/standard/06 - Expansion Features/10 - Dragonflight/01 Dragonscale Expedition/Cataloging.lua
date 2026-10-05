@@ -54,7 +54,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 8 ------
 				q(69869, {	-- A Cataloger's Paradise
-					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["description"] = createLocalizationString({
+						readable = "Spawns Anywhere on Dragon Isles.",
+						constant = "SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
+						export = true,
+						text = {
+							en = "Spawns Anywhere on Dragon Isles.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在龙群岛任意地点刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),

@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9450),	-- The Trap Game (50)
 						ach(9565, {		-- Master Trapper (125)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = { i(111969) },	-- Barn, Level 3 [Blueprints]
 						}),
 						ach(9451),	-- Trapper's Delight (250)

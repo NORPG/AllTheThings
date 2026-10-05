@@ -91,26 +91,77 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["lvl"] = 85,
 				["groups"] = {
 					a(q(29453, {	-- Your Time Has Come [A]
-						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+						["description"] = createLocalizationString({
+							readable = "This quest is auto accepted upon killing a Molten Lord.",
+							constant = "THIS_QUEST_IS_AUTO_ACCEPTED_UPON_KILLING_A",
+							export = true,
+							text = {
+								en = "This quest is auto accepted upon killing a Molten Lord.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击杀熔岩领主后会自动接受此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { STORMWIND_CITY },
 						["isBreadcrumb"] = true,	-- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
-						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+						["description"] = "~L.THIS_QUEST_IS_AUTO_ACCEPTED_UPON_KILLING_A",
 						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { ORGRIMMAR },
 						["isBreadcrumb"] = true,	-- for A Legendary Engagement
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
-						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["description"] = createLocalizationString({
+							readable = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+							constant = "LOCATED_INSIDE_PORTAL_TOWER_THIS_IS_A_REALLY",
+							export = true,
+							text = {
+								en = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于传送门塔内。\n\n如果你有个角色并不打算拿到传说物品，这个任务非常值得接。只要你不完成这个任务，你就拥有一个从暴风城或奥格瑞玛直达时光之穴核心地带的极其便利的传送点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
 						["qg"] = 52408,	-- Coridormi
 						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					h(q(29129, {	-- A Legendary Engagement [H]
-						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["description"] = createLocalizationString({
+							readable = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+							constant = "THIS_IS_A_REALLY_GREAT_QUEST_TO_PICK_UP_ON_A",
+							export = true,
+							text = {
+								en = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "对于你不打算拿到传说物品的角色来说，这是一个非常值得接取的任务。只要你不完成这个任务，就拥有一条从暴风城或奥格瑞玛通往时光之穴中心的非常方便的传送路线。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
 						["qg"] = 52382,	-- Ziradormi
 						["coord"] = { 48.8, 70.1, ORGRIMMAR },
@@ -198,7 +249,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["questID"] = 29432,	-- Delegation Tracker HQT
 						["lockCriteria"] = { 1, "questID", 29234 },	-- Delegation
 						-- #IF ANYCLASSIC
-						["description"] = "Completing this quest means that you personally unlocked the Circle of Thorns Portal and can open the portal for others in the future instead of taking the lazy route and having someone else open the portal for you.",
+						["description"] = createLocalizationString({
+							readable = "Completing this quest means that you personally unlocked the Circle of Thorns Portal and can open the portal for others in the future instead of taking the lazy route and having someone else open the portal for you.",
+							constant = "COMPLETING_THIS_QUEST_MEANS_THAT_YOU_PERSONALLY",
+							export = true,
+							text = {
+								en = "Completing this quest means that you personally unlocked the Circle of Thorns Portal and can open the portal for others in the future instead of taking the lazy route and having someone else open the portal for you.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成该任务意味着你亲自解锁了荆棘之环传送门，今后你可以为他人开启传送门，而不必偷懒让别人替你开。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #ENDIF
 						["cost"] = {
 							{ "i", 71017, 1 },	-- Charged Chitinous Focus
@@ -272,7 +340,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["groups"] = {
 							objective(1, {	-- 0/250 Smouldering Essences Collected
 								["provider"] = { "i", 71085 },	-- Runestaff of Nordrassil
-								["description"] = "Gather Essences by killing the bosses and syphoning the essences with your staff.",
+								["description"] = createLocalizationString({
+									readable = "Gather Essences by killing the bosses and syphoning the essences with your staff.",
+									constant = "GATHER_ESSENCES_BY_KILLING_THE_BOSSES_AND",
+									export = true,
+									text = {
+										en = "Gather Essences by killing the bosses and syphoning the essences with your staff.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "通过击杀首领并用你的法杖吸取精华来收集精华。",
+										-- TODO: tw = "",
+									},
+								}),
 								["crs"] = {
 									53691,	-- Shannox
 									52498,	-- Beth'tilac <The Red Widow>
@@ -287,7 +372,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 									{ "i", 69848 },	-- Heart of Flame
 									{ "n", 54293 },	-- Heart of Ragnaros
 								},
-								["description"] = "The heart spawns after killing Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty. Only one person can loot the heart per lockout.",
+								["description"] = createLocalizationString({
+									readable = "The heart spawns after killing Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty. Only one person can loot the heart per lockout.",
+									constant = "THE_HEART_SPAWNS_AFTER_KILLING_RAGNAROS_FOR",
+									export = true,
+									text = {
+										en = "The heart spawns after killing Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty. Only one person can loot the heart per lockout.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在击杀拉格纳罗斯后，只要你已获得 250 份阴燃精华，无论团队人数或难度如何，心脏都会为任务中的任何人刷新。每次锁定只能有一个人拾取这颗心脏。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					},
@@ -473,11 +575,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["cost"] = { { "i", 70998, 1 } },	-- Dull Chitinous Focus
 						}),
 						i(70998, {	-- Dull Chitinous Focus
-							["description"] = "Use on top of the web just before she uses Smoldering Devastation at 0 Energy. Loot the Charged Chitinous Focus afterwards.",
+							["description"] = createLocalizationString({
+								readable = "Use on top of the web just before she uses Smoldering Devastation at 0 Energy. Loot the Charged Chitinous Focus afterwards.",
+								constant = "USE_ON_TOP_OF_THE_WEB_JUST_BEFORE_SHE_USES",
+								export = true,
+								text = {
+									en = "Use on top of the web just before she uses Smoldering Devastation at 0 Energy. Loot the Charged Chitinous Focus afterwards.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在她 0 点能量使用阴燃毁灭之前，在蛛网顶上使用。之后拾取充能甲壳焦点。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 70999, 3 } },	-- Obsidian-Flecked Chitin Fragment
 						}),
 						i(70999, {	-- Obsidian-Flecked Chitin Fragment
-							["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus.",
+							["description"] = createLocalizationString({
+								readable = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus.",
+								constant = "WHILE_FIGHTING_BETH_TILAC_YOU_LOOT_THE_OBSIDIAN",
+								export = true,
+								text = {
+									en = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "与贝丝缇拉克战斗时，你可以拾取黑曜斑驳甲壳碎片，每当一只烬网工蜂被击杀就会生成三个。收集它们并合成一个暗淡的甲壳聚焦物。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "o", 209037 },	-- Obsidian-Flecked Chitin
 							["cr"] = 52581,	-- Cinderweb Drone
 						}),
@@ -485,10 +621,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 				n(53833, {	-- Volcanus <Firelord>
 					["sourceQuest"] = 29432,	-- Circle of Thorns Portal (Delegation Tracker HQT)
-					["description"] = "This encounter does not drop any loot directly, instead, the Branch of Nordrassil is spawned on the ground after he is defeated.\n\nOnly available when someone in your party that has completed their Circle of Thorns Portal quest opens the portal. NOTE: You can have someone that has completed their staff AND opened THEIR OWN PORTAL during Delegation open the portal for you. HOWEVER, this means that you specifically will not be able to do the same for other players in the future.",
+					["description"] = createLocalizationString({
+						readable = "This encounter does not drop any loot directly, instead, the Branch of Nordrassil is spawned on the ground after he is defeated.\n\nOnly available when someone in your party that has completed their Circle of Thorns Portal quest opens the portal. NOTE: You can have someone that has completed their staff AND opened THEIR OWN PORTAL during Delegation open the portal for you. HOWEVER, this means that you specifically will not be able to do the same for other players in the future.",
+						constant = "THIS_ENCOUNTER_DOES_NOT_DROP_ANY_LOOT_DIRECTLY",
+						export = true,
+						text = {
+							en = "This encounter does not drop any loot directly, instead, the Branch of Nordrassil is spawned on the ground after he is defeated.\n\nOnly available when someone in your party that has completed their Circle of Thorns Portal quest opens the portal. NOTE: You can have someone that has completed their staff AND opened THEIR OWN PORTAL during Delegation open the portal for you. HOWEVER, this means that you specifically will not be able to do the same for other players in the future.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这场首领战不会直接掉落任何战利品，而是在他被打败后于地面上生成诺达希尔的枝干。\n\n只有当队伍中完成了荆棘之环传送门任务的人打开传送门时才可获得。注意：你可以让已经完成法杖、并且在委派期间打开过自己传送门的人为你打开传送门。但是，这意味着你本人今后将无法为其他玩家做同样的事。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						title(146, {	-- <Name>, Blessed Defender of Nordrassil
-							["description"] = "You only have this title for as long as you are in tree form. :(",
+							["description"] = createLocalizationString({
+								readable = "You only have this title for as long as you are in tree form. :(",
+								constant = "YOU_ONLY_HAVE_THIS_TITLE_FOR_AS_LONG_AS_YOU_ARE",
+								export = true,
+								text = {
+									en = "You only have this title for as long as you are in tree form. :(",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "只要你处于树人形态，就拥有这个头衔。:(",
+									-- TODO: tw = "",
+								},
+							}),
 							["collectible"] = false,
 						}),
 						i(69646, {	-- Branch of Nordrassil
@@ -507,11 +677,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["cost"] = { { "i", 70996, 1 } },	-- Dull Rhyolite Focus
 						}),
 						i(70996, {	-- Dull Rhyolite Focus
-							["description"] = "Use just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
+							["description"] = createLocalizationString({
+								readable = "Use just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
+								constant = "USE_JUST_BEFORE_HE_USES_CONCUSSIVE_STOMP_STOMP",
+								export = true,
+								text = {
+									en = "Use just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在他使用震荡践踏之前使用。（现在踩！）他必须几乎正站在上面，所以使用前请确保你离得很近。之后拾取充能流纹岩焦点。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 70997, 3 } },	-- Rhyolite Fragment
 						}),
 						i(70997, {	-- Rhyolite Fragment
-							["description"] = "Rhyolite Fragments which randomly spawn around the edge of the area after killing mobs spawned during the encounter. Gather three of them and create a Dull Rhyolite Focus.",
+							["description"] = createLocalizationString({
+								readable = "Rhyolite Fragments which randomly spawn around the edge of the area after killing mobs spawned during the encounter. Gather three of them and create a Dull Rhyolite Focus.",
+								constant = "RHYOLITE_FRAGMENTS_WHICH_RANDOMLY_SPAWN_AROUND",
+								export = true,
+								text = {
+									en = "Rhyolite Fragments which randomly spawn around the edge of the area after killing mobs spawned during the encounter. Gather three of them and create a Dull Rhyolite Focus.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "击杀遭遇战中刷新的怪物后，流纹岩碎片会随机在该区域边缘刷新。收集三个即可制作一个黯淡的流纹岩聚焦器。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "o", 209033 },	-- Rhyolite Fragment
 						}),
 					},
@@ -533,11 +737,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["cost"] = { { "i", 70995, 1 } },	-- Dull Pyreshell Focus
 						}),
 						i(70995, {	-- Dull Pyreshell Focus
-							["description"] = "Use when she is on the ground and close to full resources during Burnout. Loot the Charged Pyreshell Focus afterwards.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
+							["description"] = createLocalizationString({
+								readable = "Use when she is on the ground and close to full resources during Burnout. Loot the Charged Pyreshell Focus afterwards.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
+								constant = "USE_WHEN_SHE_IS_ON_THE_GROUND_AND_CLOSE_TO_FULL",
+								export = true,
+								text = {
+									en = "Use when she is on the ground and close to full resources during Burnout. Loot the Charged Pyreshell Focus afterwards.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "当她在地面上、处于燃尽状态且资源接近满值时使用。之后拾取充能火壳焦点。\n\n如果她一直留在地面上，而你需要更多碎片或需要为焦点充能，你可以飞出副本重置，此时不会再有更多蛋刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 70994, 3 } },	-- Pyreshell Fragment
 						}),
 						i(70994, {	-- Pyreshell Fragment
-							["description"] = "A Pyreshell Fragment spawns whenever a Molten Egg hatches during the encounter. Gather three and create a Dull Pyreshell Focus.",
+							["description"] = createLocalizationString({
+								readable = "A Pyreshell Fragment spawns whenever a Molten Egg hatches during the encounter. Gather three and create a Dull Pyreshell Focus.",
+								constant = "A_PYRESHELL_FRAGMENT_SPAWNS_WHENEVER_A_MOLTEN",
+								export = true,
+								text = {
+									en = "A Pyreshell Fragment spawns whenever a Molten Egg hatches during the encounter. Gather three and create a Dull Pyreshell Focus.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "战斗中每当一个熔火之卵孵化时，都会生成一个赤壳碎片。集齐三个即可制作一个黯淡的赤壳聚焦器。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "o", 209036 },	-- Pyreshell Fragment
 						}),
 					},
@@ -563,11 +801,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							["cost"] = { { "i", 71001, 1 } },	-- Dull Emberstone Focus
 						}),
 						i(71001, {	-- Dull Emberstone Focus
-							["description"] = "Use just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
+							["description"] = createLocalizationString({
+								readable = "Use just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
+								constant = "USE_JUST_BEFORE_HE_USES_HURL_SPEAR_THE_SPEAR",
+								export = true,
+								text = {
+									en = "Use just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在他使用掷矛之前使用。长矛必须命中焦点，所以请确保你离得近。火焰熄灭后拾取充能烬石焦点。\n\n注意：这至少需要两个目标：\n法师可以使用冰霜元素。\n萨满可以召唤土元素。\n术士可以使用其宠物。\n牧师或德鲁伊需要一位朋友。:(",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 71000, 3 } },	-- Emberstone Fragment
 						}),
 						i(71000, {	-- Emberstone Fragment
-							["description"] = "An Emberstone Fragment spawns whenever a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus.",
+							["description"] = createLocalizationString({
+								readable = "An Emberstone Fragment spawns whenever a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus.",
+								constant = "AN_EMBERSTONE_FRAGMENT_SPAWNS_WHENEVER_A",
+								export = true,
+								text = {
+									en = "An Emberstone Fragment spawns whenever a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "每当一个水晶监狱陷阱被摧毁时，就会生成一块烬石碎片。集齐三块即可制作一个黯淡的烬石聚焦器。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "o", 209035 },	-- Emberstone Fragment
 						}),
 					},
@@ -585,7 +857,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					["creatureID"] = 52571,
 					["groups"] = {
 						ach(5799, {	-- Only the Penitent...
-							["description"] = "If you aim to do this achievement, do not move past the Circle of Thorns Portal unprepared! The objective is to reach and interact with the two orbs of flame on each side of the Druids of Flame without getting hit by the AoE effect. You avoid getting hit by not standing on it's way, you have to duck beneath it with /kneel or any other emotes lowering your height. Any shrinking effects from toys does not counts. If the orbs disappear you have failed and need to reset the instance.\n\nAlthough some classes might be able to solo it, being two is easier.",
+							["description"] = createLocalizationString({
+								readable = "If you aim to do this achievement, do not move past the Circle of Thorns Portal unprepared! The objective is to reach and interact with the two orbs of flame on each side of the Druids of Flame without getting hit by the AoE effect. You avoid getting hit by not standing on it's way, you have to duck beneath it with /kneel or any other emotes lowering your height. Any shrinking effects from toys does not counts. If the orbs disappear you have failed and need to reset the instance.\n\nAlthough some classes might be able to solo it, being two is easier.",
+								constant = "IF_YOU_AIM_TO_DO_THIS_ACHIEVEMENT_DO_NOT_MOVE",
+								export = true,
+								text = {
+									en = "If you aim to do this achievement, do not move past the Circle of Thorns Portal unprepared! The objective is to reach and interact with the two orbs of flame on each side of the Druids of Flame without getting hit by the AoE effect. You avoid getting hit by not standing on it's way, you have to duck beneath it with /kneel or any other emotes lowering your height. Any shrinking effects from toys does not counts. If the orbs disappear you have failed and need to reset the instance.\n\nAlthough some classes might be able to solo it, being two is easier.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你打算完成这个成就，在没有准备好的情况下不要越过荆棘之环传送门！目标是抵达并与烈焰德鲁伊两侧的两个火焰宝珠互动，同时不被范围效果击中。避免被击中的方法是不要站在它的行进路线上，你必须用 /kneel 或其他能降低身高的表情动作伏低身体。玩具带来的任何缩小效果都不算数。如果宝珠消失，你就失败了，需要重置副本。\n\n虽然有些职业或许能单刷，但两个人会更容易。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(152978, {	-- Infernal Pyreclaw (PET!)
 							["timeline"] = { ADDED_7_3_0 },
@@ -634,7 +923,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71775),	-- Smoldering Censer of Purity
 							i(71780),	-- Zoid's Firelit Greatsword
 							ig(69237, {	-- Living Ember
-								["description"] = "Drops commonly from Firelands bosses.",
+								["description"] = createLocalizationString({
+									readable = "Drops commonly from Firelands bosses.",
+									constant = "DROPS_COMMONLY_FROM_FIRELANDS_BOSSES",
+									export = true,
+									text = {
+										en = "Drops commonly from Firelands bosses.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "常见掉落于火焰之地首领。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),
@@ -784,7 +1090,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["groups"] = {
 					n(VENDORS, {
 						n(54402, {	-- Lurah Wrathvine
-							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
+							["description"] = createLocalizationString({
+								readable = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
+								constant = "BRING_THIS_VENDOR_CRYSTALLIZED_FIRESTONES_FROM",
+								export = true,
+								text = {
+									en = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "把首领掉落的以及装绑的结晶火焰石带给这名商人，她就会把它升级为英雄版本。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(69113, {	-- Apparatus of Khaz'goroth
 									["cost"] = {
@@ -953,7 +1276,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71781),	-- Zoid's Firelit Greatsword
 							ig(69237),	-- Living Ember
 							i(71617, {	-- Crystallized Firestone
-								["description"] = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
+								["description"] = createLocalizationString({
+									readable = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
+									constant = "YOU_CAN_USE_THIS_ITEM_TO_UPGRADE_CERTAIN_NORMAL",
+									export = true,
+									text = {
+										en = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "你可以使用此物品将某些普通模式的装绑物品升级为英雄模式的拾取绑定版本。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),

@@ -9,7 +9,24 @@ root(ROOTS.Zones, {
 				ach(11264),	-- Adventurer of Highmountain (automated)
 				ach(10059),	-- Ain't No Mountain High Enough (automated)
 				ach(10398, {	-- Drum Circle
-					["description"] = "This achievement can be soloed since after 'Battle for Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working.",
+					["description"] = createLocalizationString({
+						readable = "This achievement can be soloed since after 'Battle for Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working.",
+						constant = "THIS_ACHIEVEMENT_CAN_BE_SOLOED_SINCE_AFTER",
+						export = true,
+						text = {
+							en = "This achievement can be soloed since after 'Battle for Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "自“争霸艾泽拉斯”之后，这个成就可以单人完成。在雷霆图腾下层的中间圆环处反复跳跃 1-3 分钟。你**不能**在处于“突袭雷霆图腾”状态时完成它，而且你必须能听到鼓点声才能确认成就在生效。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(257721, {	-- Skyhorn Arrow Kite (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },

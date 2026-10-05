@@ -56,9 +56,43 @@ ExportDB.OnTooltipDB.ForLockpicking = [[~function(t, tooltipInfo)
 end]];
 root(ROOTS.Professions, lockpicking({
 	-- #if AFTER CATA
-	["description"] = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
+	["description"] = createLocalizationString({
+		readable = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
+		constant = "LOCKPICKING_NOW_SKILLS_UP_AS_YOU_LEVEL_YOU_NO",
+		export = true,
+		text = {
+			en = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "现在开锁技能会随着你升级而提升，不再需要练习。将鼠标悬停在解锁技能上会显示你当前能打开的箱子等级。",
+			-- TODO: tw = "",
+		},
+	}),
 	-- #else
-	["description"] = "Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",
+	["description"] = createLocalizationString({
+		readable = "Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",
+		constant = "LOCKPICKING_NEEDS_TO_BE_LEVELED_UP_BY",
+		export = true,
+		text = {
+			en = "Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "开锁技能需要通过练习来提升：可以开世界上找到的锁箱，以及用搜索技能从等级合适的怪物身上偷来的垃圾箱。",
+			-- TODO: tw = "",
+		},
+	}),
 	-- TODO: Maybe add a thing in the tooltip for suggestions on where to level next?
 	-- #endif
 	-- This makes it ignore the profession requirement.

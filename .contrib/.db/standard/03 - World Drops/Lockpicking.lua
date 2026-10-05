@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, {
 	header(HEADERS.Spell, 1810, {	-- Lockpicking
-		["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
+		["description"] = "~L.THESE_CONTAINERS_CAN_BE_OPENED_BY_A_ROGUE_WITH",
 		["groups"] = {
 			i(169475, {	-- Barnacled Lockbox
 				["timeline"] = { ADDED_8_2_0 },

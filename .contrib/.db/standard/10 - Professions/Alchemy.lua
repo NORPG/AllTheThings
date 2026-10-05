@@ -127,7 +127,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["lvl"] = 68,
 		}),
 		q(10902, {	-- Master of Elixirs (2/2)
-			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
+			["description"] = createLocalizationString({
+				readable = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
+				constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_5",
+				export = true,
+				text = {
+					en = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成此任务后，你将成为一名药剂大师，并且无法再成为转化大师或药水大师。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
 			["altQuests"] = {
 				10897,	-- Master of Potions (2/2)
@@ -174,7 +191,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["lvl"] = 68,
 		}),
 		q(10897, {	-- Master of Potions (2/2)
-			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
+			["description"] = createLocalizationString({
+				readable = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
+				constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_6",
+				export = true,
+				text = {
+					en = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成此任务后，你将成为一名药水大师，并且无法再成为转化大师或药剂大师。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 10905,	-- Master of Potions (1/2)
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
@@ -224,7 +258,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["lvl"] = 68,
 		}),
 		q(10899, {	-- Master of Transmutation (2/2)
-			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
+			["description"] = createLocalizationString({
+				readable = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
+				constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_7",
+				export = true,
+				text = {
+					en = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成此任务后，你将成为一名转化大师，并且无法再成为药水大师或药剂大师。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
@@ -407,7 +458,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(39341, {	-- Vault of the Wardens: Demon's Bile
-			["description"] = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
+			["description"] = createLocalizationString({
+				readable = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
+				constant = "NEED_TO_BRING_A_SKAGGLDRYNK_AND_DRINK_INFRONT",
+				export = true,
+				text = {
+					en = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要带上一瓶斯卡格德林克，并在首领门前饮用，该门位于审判官托门托鲁姆之后的西侧区域。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = {
 				39339,	-- A Fragile Crucible
 				39340,	-- Lining the Crucible
@@ -478,7 +546,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39349, {	-- Black Rook Hold: Heavy, But Helpful
-			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["description"] = createLocalizationString({
+				readable = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+				constant = "THE_RESPECTIVE_RANK_2_RECIPE_WILL_DROP_FROM_THE",
+				export = true,
+				text = {
+					en = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "相应的 2 级配方会从该地下城中掉落，别忘了拾取。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
@@ -486,7 +571,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["cost"] = {{ "i", 127849, 1 }},	-- 1x Flask of the Countless Armies
 		}),
 		q(39348, {	-- Halls of Valor: The Prime Ingredient
-			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["description"] = "~L.THE_RESPECTIVE_RANK_2_RECIPE_WILL_DROP_FROM_THE",
 			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
@@ -494,7 +579,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["cost"] = {{ "i", 127850, 1 }},	-- 1x Flask of Ten Thousand Scars
 		}),
 		q(39350, {	-- Maw of Souls: A Hope in Helheim
-			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["description"] = "~L.THE_RESPECTIVE_RANK_2_RECIPE_WILL_DROP_FROM_THE",
 			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
@@ -576,7 +661,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			------ Tools of Trade Questline ------
 			q(50121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Casting the First Stone [A]
-				["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
+				["description"] = createLocalizationString({
+					readable = "This quest chain requires 150 in Kul Tiran Alchemy.",
+					constant = "THIS_QUEST_CHAIN_REQUIRES_150_IN_KUL_TIRAN",
+					export = true,
+					text = {
+						en = "This quest chain requires 150 in Kul Tiran Alchemy.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务线需要 150 点库尔提拉斯炼金术。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["coord"] = { 74.2, 6.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -592,7 +694,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			})),
 			q(50112, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Casting the First Stone [H]
-				["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
+				["description"] = createLocalizationString({
+					readable = "This quest chain requires 150 in Zandalari Alchemy.",
+					constant = "THIS_QUEST_CHAIN_REQUIRES_150_IN_ZANDALARI",
+					export = true,
+					text = {
+						en = "This quest chain requires 150 in Zandalari Alchemy.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务线需要 150 点赞达拉炼金术。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -782,7 +901,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		n(QUESTS, {
 			q(70355, {	-- Dragon Isles Alchemy
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+				["description"] = createLocalizationString({
+					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO",
+					export = true,
+					text = {
+						en = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务只能在学会巨龙群岛炼金术之前接取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -791,7 +927,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(72245, {	-- Dragon Isles Alchemy
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO",
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -830,7 +966,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		},{
 			------ Requires 25 Skill ------
 			q(72427, {	-- Animated Infusion
-				["description"] = "Requires 25 Skill.",
+				["description"] = createLocalizationString({
+					readable = "Requires 25 Skill.",
+					constant = "REQUIRES_25_SKILL",
+					export = true,
+					text = {
+						en = "Requires 25 Skill.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 25 点技能。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -838,7 +991,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(66937, {	-- Decaying News
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -846,7 +999,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(66940, {	-- Elixir Experiment
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -854,7 +1007,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(66938, {	-- Mammoth Marrow
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -864,22 +1017,39 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 
 			------ Requires 45 Skill ------
 			q(70532, {	-- Aiding the Raiding
-				["description"] = "Requires 45 Skill.",
+				["description"] = createLocalizationString({
+					readable = "Requires 45 Skill.",
+					constant = "REQUIRES_45_SKILL",
+					export = true,
+					text = {
+						en = "Requires 45 Skill.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 45 点技能。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 			}),
 			q(70533, {	-- Decaying News
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 			}),
 			q(70530, {	-- Examination Week
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 			}),
 			q(70531, {	-- Mana Markets
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 			}),
@@ -922,7 +1092,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = createLocalizationString({
+				readable = "These are learned by specialization.",
+				constant = "THESE_ARE_LEARNED_BY_SPECIALIZATION",
+				export = true,
+				text = {
+					en = "These are learned by specialization.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些通过专精学习。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }} }, {
 				r(370747),	-- Advanced Phial Experimentation
 				r(370745),	-- Advanced Potion Experimentation
@@ -935,7 +1122,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}),
 		n(TREASURES, {
 			o(380611, {	-- Canteen of Suspicious Water
-				["description"] = "Inside cave.",
+				["description"] = createLocalizationString({
+					readable = "Inside cave.",
+					constant = "INSIDE_CAVE",
+					export = true,
+					text = {
+						en = "Inside cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴内。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
 				["questID"] = 70305,
 				["groups"] = {
@@ -943,7 +1147,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			o(380605, {	-- Contraband Concoction
-				["description"] = "Hidden in some bushes, hard to see.",
+				["description"] = createLocalizationString({
+					readable = "Hidden in some bushes, hard to see.",
+					constant = "HIDDEN_IN_SOME_BUSHES_HARD_TO_SEE",
+					export = true,
+					text = {
+						en = "Hidden in some bushes, hard to see.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "隐藏在灌木丛中，很难被发现。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 59.5, 38.4, THALDRASZUS },
 				["questID"] = 70301,
 				["groups"] = {
@@ -973,7 +1194,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			})),
 			o(380586, {	-- Mysterious Cauldrons
-				["description"] = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
+				["description"] = createLocalizationString({
+					readable = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
+					constant = "GRAB_AND_DROP_A_DISCARDED_TOY_IN_EACH_OF_THESE",
+					export = true,
+					text = {
+						en = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在这些位置各放入一个被丢弃的玩具，然后你就可以收集宝藏了。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 55.2, 30.5, THALDRASZUS },
 				["questID"] = 70278,
 				["groups"] = {
@@ -1022,7 +1260,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			})),
 			o(410434,	-- Splash Potion of Narcolepsy
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["description"] = "In cavern.",
+				["description"] = createLocalizationString({
+					readable = "In cavern.",
+					constant = "IN_CAVERN",
+					export = true,
+					text = {
+						en = "In cavern.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞窟中。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 51.6, 48.5, 2254 },
 				["questID"] = 78269,
 				["groups"] = {
@@ -1046,7 +1301,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			i(198608),	-- Alchemy Notes
 			q(74108, {	-- DF Inscription Order: Alchemy
 				["name"] = "DF Inscription Order: Alchemy",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = createLocalizationString({
+					readable = "Requires a crafting order from Inscription.",
+					constant = "REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+					export = true,
+					text = {
+						en = "Requires a crafting order from Inscription.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要一份来自铭文的制造订单。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
 			}),
 			q(66373, {	-- DF Weekly Alchemy Knowledgepoint #1
@@ -1059,14 +1331,48 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			q(70504, {	-- DF Weekly Alchemy Knowledgepoint #3
 				["name"] = "DF Alchemy Drop #1: Decayed",
-				["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_DECAYED_MOB_COORDINATES_LINK_TO",
+					export = true,
+					text = {
+						en = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意腐朽怪物掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198963 },	-- Decaying Phlegm
 				["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 				["crs"] = { 186361 },	-- Rotting Treant
 			}),
 			q(70511, {	-- DF Weekly Alchemy Knowledgepoint #4
 				["name"] = "DF Alchemy Drop #2: Elemental",
-				["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_ELEMENTAL_COORDINATES_LINK_TO",
+					export = true,
+					text = {
+						en = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意元素生物掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198964 },	-- Elementious Splinter
 				["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
 				["crs"] = { 191712 },	-- Hissing Springsoul
@@ -1111,7 +1417,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ALCHEMY, 1 }} }, {
 				r(432962),	-- Algari Flask Cauldron
 				r(432963),	-- Algari Potion Cauldron
@@ -1192,7 +1498,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			i(228773),	-- Algari Alchemist's Notebook
 			q(83725, {	-- TWW Inscription Order: Alchemy
 				["name"] = "TWW Inscription Order: Alchemy",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
 			}),
 			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
@@ -1266,7 +1572,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ALCHEMY, 1 }} }, {
 				r(1230891),	-- Box of Rocks
 				r(1230874),	-- Cauldron of Sin'dorei Flasks
@@ -1346,7 +1652,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			i(263454),	-- Thalassian Alchemist's Notebook
 			q(95127, {	-- MID Inscription Order: Alchemy
 				["name"] = "MID Inscription Order: Alchemy",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 245755 },	-- Thalassian Treatise on Alchemy
 			}),
 			q(93529, {	-- MID Weekly Alchemy Knowledgepoint #1

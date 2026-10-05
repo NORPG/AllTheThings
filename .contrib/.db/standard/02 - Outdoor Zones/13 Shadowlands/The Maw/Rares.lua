@@ -13,7 +13,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}, {
 			n(COMMON_BOSS_DROPS, {
 				i(184395, {	-- Fallen Adventurer's Cache
-					["description"] = "Drops from numerous rares, elites, and named mobs in The Maw and Korthia.",
+					["description"] = createLocalizationString({
+						readable = "Drops from numerous rares, elites, and named mobs in The Maw and Korthia.",
+						constant = "DROPS_FROM_NUMEROUS_RARES_ELITES_AND_NAMED_MOBS",
+						export = true,
+						text = {
+							en = "Drops from numerous rares, elites, and named mobs in The Maw and Korthia.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由噬渊和刻希亚的众多稀有生物、精英和命名怪物掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						169102,	-- Agonix
 						170301,	-- Apholeias, Herald of Loss
@@ -83,7 +100,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(170301, {	-- Apholeias, Herald of Loss
-				["description"] = "Requires 4 players to summon.",
+				["description"] = createLocalizationString({
+					readable = "Requires 4 players to summon.",
+					constant = "REQUIRES_4_PLAYERS_TO_SUMMON",
+					export = true,
+					text = {
+						en = "Requires 4 players to summon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 4 名玩家才能召唤。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 19.6, 42.0, THE_MAW },
 				["questID"] = 60788,
 				["groups"] = {
@@ -100,7 +134,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(180246, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Carriage Crusher
-				["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns. You can hop into the carriage to heal it and yourself.",
+				["description"] = createLocalizationString({
+					readable = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns. You can hop into the carriage to heal it and yourself.",
+					constant = "THE_ASSAULT_SUPPLY_CARRIAGE_STARTS_IN_KORTHIA",
+					export = true,
+					text = {
+						en = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns. You can hop into the carriage to heal it and yourself.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "突袭补给车从刻希亚出发，驶向野兽战场东北方的桥，然后完成向当前盟约突袭的补给行程。\n\n当补给车抵达桥边时，会出现货车粉碎者。你可以跳上货车为自己和它治疗。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = {
 					180182,	-- Assault Supply Carriage
 					180181,	-- Wicklick [Vignette]
@@ -114,7 +165,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(171317, {	-- Conjured Death
-				["description"] = "Spawns outside the Tremaculum when the Venthyr assault is active and inside the Tremaculum at all other times.",
+				["description"] = createLocalizationString({
+					readable = "Spawns outside the Tremaculum when the Venthyr assault is active and inside the Tremaculum at all other times.",
+					constant = "SPAWNS_OUTSIDE_THE_TREMACULUM_WHEN_THE_VENTHYR",
+					export = true,
+					text = {
+						en = "Spawns outside the Tremaculum when the Venthyr assault is active and inside the Tremaculum at all other times.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "温西尔突袭激活时刷新在特雷玛库鲁姆外面，其他时间则在特雷玛库鲁姆内部。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 27.8, 13.2, THE_MAW },
 					{ 28.6, 19.4, THE_MAW },	-- Venthyr assault spawnpoint
@@ -133,7 +201,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(160770, {	-- Darithis the Bleak
-				["description"] = "At the back of the cave.",
+				["description"] = "~L.AT_THE_BACK_OF_THE_CAVE",
 				["coord"] = { 59.3, 51.9, THE_MAW },
 				["questID"] = 62281,
 				["groups"] = {
@@ -153,7 +221,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(162452, {	-- Dartanos
-				["description"] = "Coordinates are for a teleportation pad that will take you to the rare's platform.",
+				["description"] = createLocalizationString({
+					readable = "Coordinates are for a teleportation pad that will take you to the rare's platform.",
+					constant = "COORDINATES_ARE_FOR_A_TELEPORTATION_PAD_THAT",
+					export = true,
+					text = {
+						en = "Coordinates are for a teleportation pad that will take you to the rare's platform.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "坐标指向一处传送台，可将你送到稀有怪物所在的平台。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 27.5, 17.3, THE_MAW },
 				["questID"] = 63373,
 				["groups"] = {
@@ -173,7 +258,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(179779, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Deomen the Vortex
-				["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r. There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
+				["description"] = createLocalizationString({
+					readable = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r. There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
+					constant = "IF_THE_CAGE_IS_LOCKED_ENTER_THE_BUILDING_TO_THE",
+					export = true,
+					text = {
+						en = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r. There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果笼子锁着，就进入稀有怪左侧的建筑，坐标 |cFFFFFFFF63.3, 43.6|r。楼梯底部房间两侧的凹室内，墙上各有一个拉杆。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = { 179791 },	-- Deomen the Vortex (while in cage)
 				["coord"] = { 61.3, 41.3, THE_MAW },
 				["questID"] = 64251,
@@ -183,7 +285,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(170711, {	-- Dolos
-				["description"] = "Will not spawn during Necrolord assault.",
+				["description"] = createLocalizationString({
+					readable = "Will not spawn during Necrolord assault.",
+					constant = "WILL_NOT_SPAWN_DURING_NECROLORD_ASSAULT",
+					export = true,
+					text = {
+						en = "Will not spawn during Necrolord assault.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在通灵领主突袭期间不会刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 28.6, 60.6, THE_MAW },
 				["questID"] = 60909,
 				["groups"] = {
@@ -191,7 +310,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(158314, {	-- Drifting Sorrow
-				["description"] = "To summon the mob, kill Agonizing Shades near the dark floating orb.",
+				["description"] = createLocalizationString({
+					readable = "To summon the mob, kill Agonizing Shades near the dark floating orb.",
+					constant = "TO_SUMMON_THE_MOB_KILL_AGONIZING_SHADES_NEAR",
+					export = true,
+					text = {
+						en = "To summon the mob, kill Agonizing Shades near the dark floating orb.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要召唤该怪物，请击杀黑暗漂浮法球附近的苦痛之影。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 32.0, 21.7, THE_MAW },
 				["questID"] = 63372,
 				["groups"] = {
@@ -209,7 +345,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(169827, {	-- Ekphoras, Herald of Grief
-				["description"] = "Requires 4 players to summon.",
+				["description"] = "~L.REQUIRES_4_PLAYERS_TO_SUMMON",
 				["coord"] = { 42.2, 21.0, THE_MAW },
 				["questID"] = 60666,
 				["groups"] = {
@@ -228,7 +364,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(170303, {	-- Exos, Herald of Domination
-				["description"] = "Summoned using |cff0070ddDomination's Calling|r.",
+				["description"] = createLocalizationString({
+					readable = "Summoned using |cff0070ddDomination's Calling|r.",
+					constant = "SUMMONED_USING_CFF0070DDDOMINATION_S_CALLING_R",
+					export = true,
+					text = {
+						en = "Summoned using |cff0070ddDomination's Calling|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "使用 |cff0070dd统御的召唤|r 召唤。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 21.0, 70.2, THE_MAW },
 				["questID"] = 62260,
 				["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
@@ -241,7 +394,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(179460, {	-- Fallen Charger
-				["description"] = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt either runs (A) through the Tremaculum, south past Ve'nari's Refuge, and down the eastern side of the Beastwarrens or (B) down the western side of Zovaal's Cauldron, past Perdition Hold, and down the western side of the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
+				["description"] = createLocalizationString({
+					readable = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt either runs (A) through the Tremaculum, south past Ve'nari's Refuge, and down the eastern side of the Beastwarrens or (B) down the western side of Zovaal's Cauldron, past Perdition Hold, and down the western side of the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
+					constant = "IT_SPAWNS_IN_THE_CRUCIBLE_OF_THE_DAMNED_WITH_A",
+					export = true,
+					text = {
+						en = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt either runs (A) through the Tremaculum, south past Ve'nari's Refuge, and down the eastern side of the Beastwarrens or (B) down the western side of Zovaal's Cauldron, past Perdition Hold, and down the western side of the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "它在诅咒熔炉刷新，并会有全区域公告：|cFFff8040一声刺耳的嘶鸣响彻噬渊，堕落战马开始了它的奔驰。|r\n\n它要么（A）穿过特雷玛库鲁姆，向南经过维娜丽的避难所，再沿野兽巢穴的东侧向下；要么（B）沿佐瓦尔的熔炉西侧向下，经过湮灭堡垒，再沿野兽巢穴的西侧向下。\n\n如果它一路跑到刻希亚，就会消失，并伴随另一条全区域公告：|cFFff8040堕落战马在消散之际发出最后一声悲鸣。|r",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 64164,
 				["groups"] = {
 					i(186659),	-- Fallen Charger (MOUNT!)
@@ -265,7 +435,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(175012, {	-- Ikras the Devourer
-				["description"] = "Flies along the gap between islands.",
+				["description"] = createLocalizationString({
+					readable = "Flies along the gap between islands.",
+					constant = "FLIES_ALONG_THE_GAP_BETWEEN_ISLANDS",
+					export = true,
+					text = {
+						en = "Flies along the gap between islands.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "沿着岛屿之间的缝隙飞行。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 35.6, 52.2, THE_MAW },
 				["questID"] = 62788,
 				["groups"] = {
@@ -291,7 +478,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(162849, {	-- Morguliax <Lord of Decapitation>
-				["description"] = "Spawns next to the Herald of Loss when the Night Fae assault is active.",
+				["description"] = createLocalizationString({
+					readable = "Spawns next to the Herald of Loss when the Night Fae assault is active.",
+					constant = "SPAWNS_NEXT_TO_THE_HERALD_OF_LOSS_WHEN_THE",
+					export = true,
+					text = {
+						en = "Spawns next to the Herald of Loss when the Night Fae assault is active.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "法夜突袭激活时，会在失落先驱旁边刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 16.6, 50.6, THE_MAW },
 					{ 19.0, 43.8, THE_MAW },	-- Night Fae assault spawnpoint
@@ -341,7 +545,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(172577, {	-- Orophea
-				["description"] = "Collect Eurydea's Necklace and offer it to Orophea.",
+				["description"] = createLocalizationString({
+					readable = "Collect Eurydea's Necklace and offer it to Orophea.",
+					constant = "COLLECT_EURYDEA_S_NECKLACE_AND_OFFER_IT_TO",
+					export = true,
+					text = {
+						en = "Collect Eurydea's Necklace and offer it to Orophea.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "收集欧律狄亚的项链，并将其献给奥罗菲亚。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 23.6, 21.6, THE_MAW },
 				["questID"] = 61519,
 				["groups"] = {
@@ -357,7 +578,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coord"] = { 20.8, 39.1, THE_MAW },
 				["questID"] = 63388,
 				["groups"] = {
@@ -375,7 +596,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(172521, {	-- Sanngror the Torturer
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 55.8, 67.5, THE_MAW },
 					{ 55.7, 67.6, THE_MAW },
@@ -397,7 +618,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(172524, {	-- Skittering Broodmother
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					-- #if BEFORE 9.1.0
 					{ 59.2, 79.9, THE_MAW },	-- pre-9.1
@@ -442,7 +663,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(170302, {	-- Talaporas, Herald of Pain
-				["description"] = "Requires 4 players to summon.",
+				["description"] = "~L.REQUIRES_4_PLAYERS_TO_SUMMON",
 				["coord"] = { 28.6, 12.6, THE_MAW },
 				["questID"] = 60789,
 				["groups"] = {
@@ -475,19 +696,87 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(173086, {	-- Valis the Cruel
-				["description"] = "Click the runes in the correct order.",
+				["description"] = createLocalizationString({
+					readable = "Click the runes in the correct order.",
+					constant = "CLICK_THE_RUNES_IN_THE_CORRECT_ORDER",
+					export = true,
+					text = {
+						en = "Click the runes in the correct order.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "按正确顺序点击符文。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 40.8, 59.8, THE_MAW },
 				["questID"] = 63387,
 				["groups"] = {
 					i(186632),	-- Rune Covered Bindings
 					n(174810, {	-- Rune of Cruelty (1)
-						["description"] = "Click 1st.",
+						["description"] = createLocalizationString({
+							readable = "Click 1st.",
+							constant = "CLICK_1ST",
+							export = true,
+							text = {
+								en = "Click 1st.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "第 1 个点击。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(174811, {	-- Rune of Cruelty (2)
-						["description"] = "Click 2nd.",
+						["description"] = createLocalizationString({
+							readable = "Click 2nd.",
+							constant = "CLICK_2ND",
+							export = true,
+							text = {
+								en = "Click 2nd.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "第 2 个点击。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(174812, {	-- Rune of Cruelty (3)
-						["description"] = "Click 3rd.",
+						["description"] = createLocalizationString({
+							readable = "Click 3rd.",
+							constant = "CLICK_3RD",
+							export = true,
+							text = {
+								en = "Click 3rd.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "第 3 个点击。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					bo(61728),	-- Valis bonus objective
 				},
@@ -504,7 +793,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 66.7, 42.4, THE_MAW },
 				["groups"] = {
 					ach(14943, {	-- Guarmageddon
-						["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare. You must be within range of the baby guarm when they die to get the debuff.",
+						["description"] = createLocalizationString({
+							readable = "Kill all of Ylva and Guarm's children, and then kill the rare. You must be within range of the baby guarm when they die to get the debuff.",
+							constant = "KILL_ALL_OF_YLVA_AND_GUARM_S_CHILDREN_AND_THEN",
+							export = true,
+							text = {
+								en = "Kill all of Ylva and Guarm's children, and then kill the rare. You must be within range of the baby guarm when they die to get the debuff.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击杀伊尔瓦和古尔姆的所有子嗣，然后击杀该稀有。子嗣死亡时你必须在它们附近才能获得该减益效果。",
+								-- TODO: tw = "",
+							},
+						}),
 							["crs"] = {
 								177441,	-- Frekki
 								177422,	-- Girs
@@ -531,7 +837,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			i(182329, {	-- Domination's Calling
-				["description"] = "This is NOT consumed upon use.",
+				["description"] = createLocalizationString({
+					readable = "This is NOT consumed upon use.",
+					constant = "THIS_IS_NOT_CONSUMED_UPON_USE",
+					export = true,
+					text = {
+						en = "This is NOT consumed upon use.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此物品在使用时不会被消耗。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = {
 					{ "i", 182328, 1 },	-- Dominion Etching: Grief
 					{ "i", 182327, 1 },	-- Dominion Etching: Loss

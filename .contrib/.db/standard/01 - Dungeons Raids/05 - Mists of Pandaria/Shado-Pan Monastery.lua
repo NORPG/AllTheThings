@@ -20,7 +20,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					["isBreadcrumb"] = true,
 				}),
 				q(31031, {	-- Into the Monastery
-					["description"] = "This version is available if you abandon the other version.",
+					["description"] = createLocalizationString({
+						readable = "This version is available if you abandon the other version.",
+						constant = "THIS_VERSION_IS_AVAILABLE_IF_YOU_ABANDON_THE",
+						export = true,
+						text = {
+							en = "This version is available if you abandon the other version.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃另一个版本，此版本就会开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 30752,	-- Unbelievable!
 					["provider"] = { "n", 62227 },	-- Ban Bearheart
 					["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },

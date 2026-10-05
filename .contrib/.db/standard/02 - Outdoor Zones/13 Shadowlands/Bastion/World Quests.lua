@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(WORLD_QUESTS, {
 			n(REWARDS, {
 				i(187858, {	-- Bunny Soul
-					["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
+					["description"] = "~L.HAS_A_CHANCE_TO_BE_LISTED_AS_A_REWARD_FOR",
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 			}),
@@ -144,7 +144,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60844),	-- Flight School: Falling With Style
 			q(60911, {	-- Flight School: Flapping Frenzy
 				ach(14741, {	-- Aerial Ace
-					["description"] = "Speak to the NPC after completing the WQ and ask to complete the Paragon's Challenge.",
+					["description"] = createLocalizationString({
+						readable = "Speak to the NPC after completing the WQ and ask to complete the Paragon's Challenge.",
+						constant = "SPEAK_TO_THE_NPC_AFTER_COMPLETING_THE_WQ_AND",
+						export = true,
+						text = {
+							en = "Speak to the NPC after completing the WQ and ask to complete the Paragon's Challenge.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成世界任务后与该 NPC 交谈，请求完成典范的挑战。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			q(60858, {	-- Flight School: Up and Away!

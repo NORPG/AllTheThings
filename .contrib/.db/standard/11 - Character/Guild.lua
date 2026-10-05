@@ -255,7 +255,24 @@ root(ROOTS.Character, n(createHeader({
 		}),
 		ach(9651, {	-- Challenge Warlords: Gold - Guild Edition
 			-- #if AFTER 7.0.3
-			["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
+			["description"] = createLocalizationString({
+				readable = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
+				constant = "ACHIEVEMENT_NO_LONGER_OBTAINABLE_YOU_WILL_NEED",
+				export = true,
+				text = {
+					en = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "该成就已无法获得。你需要找到一个已经拥有该成就的公会才能购买死眼幼崽。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -321,7 +338,7 @@ root(ROOTS.Character, n(createHeader({
 	}),
 	n(FACTIONS, {
 		faction(1169, {	-- Guild
-			["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+			["description"] = "~L.THIS_IS_A_HIDDEN_REPUTATION_IT_MIGHT_NOT_COUNT",
 			["collectible"] = false,
 		}),
 		faction(FACTION_GUILD, {
@@ -772,7 +789,7 @@ root(ROOTS.Character, n(createHeader({
 				i(114968, {	-- Deathwatch Hatchling (PET!)
 					["sourceAchievement"] = 9651,	-- Challenge Warlords: Gold - Guild Edition
 					-- #if AFTER 7.0.3
-					["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
+					["description"] = "~L.ACHIEVEMENT_NO_LONGER_OBTAINABLE_YOU_WILL_NEED",
 					-- #endif
 					["timeline"] = { ADDED_6_0_2 },
 				}),

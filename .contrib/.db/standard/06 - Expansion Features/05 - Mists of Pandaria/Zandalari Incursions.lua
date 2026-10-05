@@ -69,11 +69,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 				["groups"] = {
 					i(94158, {	-- Big Bag of Zandalari Supplies
-						["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
+						["description"] = "~L.CAN_CONTAIN_ALL_SORTS_OF_CRAFTING_REAGENTS_GEMS",
 						["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 					}),
 					i(94159, {	-- Small Bag of Zandalari Supplies
-						["description"] = "Can contain all sorts of herbs, ore, and cloth.",
+						["description"] = "~L.CAN_CONTAIN_ALL_SORTS_OF_HERBS_ORE_AND_CLOTH",
 					}),
 					i(94225),	-- Stolen Celestial Insignia
 					i(94227),	-- Stolen Golden Lotus Insignia
@@ -99,7 +99,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					{ 36.8, 85.2, TOWNLONG_STEPPES },
 					{ 48.4, 86.0, TOWNLONG_STEPPES },
 				},
-				["description"] = "Can be found patroling the roads along the posted coordinates.",
+				["description"] = createLocalizationString({
+					readable = "Can be found patroling the roads along the posted coordinates.",
+					constant = "CAN_BE_FOUND_PATROLING_THE_ROADS_ALONG_THE",
+					export = true,
+					text = {
+						en = "Can be found patroling the roads along the posted coordinates.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在所列坐标沿线的道路上巡逻时找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			n(69841, {	-- Zandalari Warbringer (Amber)
 				i(94230),	-- Amber Primordial Direhorn (MOUNT!)

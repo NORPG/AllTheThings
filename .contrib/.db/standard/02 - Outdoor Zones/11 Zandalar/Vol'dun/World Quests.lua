@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50848, {	-- Brgl-Lrgl the Basher
 				n(134643, {	-- Brgl-Lrgl the Basher
 					["questID"] = 50663,
-					["description"] = "This rare is only up when its associated world quest is active.",
+					["description"] = "~L.THIS_RARE_IS_ONLY_UP_WHEN_ITS_ASSOCIATED_WORLD",
 					["coord"] = { 29.78, 46.47, VOLDUN },
 					["repeatable"] = true,
 					["groups"] = {
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51156, {	-- Fangcaller Xorreth
 				n(136323, {	-- Fangcaller Xorreth
 					["questID"] = 51065,
-					["description"] = "This rare is only up when its associated world quest is active.",
+					["description"] = "~L.THIS_RARE_IS_ONLY_UP_WHEN_ITS_ASSOCIATED_WORLD",
 					["coord"] = { 53.60, 35.01, VOLDUN },
 					["groups"] = {
 						i(162612),	-- Cobra Priest's Headdress
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51157, {	-- Golanar
 				n(129027, {	-- Golanar
 					["questID"] = 50362,
-					["description"] = "This rare is only up when its associated world quest is active.",
+					["description"] = "~L.THIS_RARE_IS_ONLY_UP_WHEN_ITS_ASSOCIATED_WORLD",
 					["coords"] = {
 						{ 57.6, 6.40, VOLDUN },
 						{ 59.6, 8.80, VOLDUN },
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50851, {	-- Mor'fani the Exile
 				n(134694, {	-- Mor'fani the Exile
 					["questID"] = 50666,
-					["description"] = "This rare is only up when its associated world quest is active.",
+					["description"] = "~L.THIS_RARE_IS_ONLY_UP_WHEN_ITS_ASSOCIATED_WORLD",
 					["coord"] = { 37.41, 88.71, VOLDUN },
 					["repeatable"] = true,
 					["groups"] = {

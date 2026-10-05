@@ -52,7 +52,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}},
 			}),
 			n(186564, {	-- Jiq
-				["description"] = "Runs around in the village.",
+				["description"] = createLocalizationString({
+					readable = "Runs around in the village.",
+					constant = "RUNS_AROUND_IN_THE_VILLAGE",
+					export = true,
+					text = {
+						en = "Runs around in the village.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在村庄里四处跑动。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 13.5, 48.7, THE_AZURE_SPAN },
 				["sym"] = {{"select","itemID",
 					------ RENOWN 9 ------

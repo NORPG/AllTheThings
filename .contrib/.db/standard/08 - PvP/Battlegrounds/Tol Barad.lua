@@ -21,7 +21,24 @@ end
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(TOL_BARAD, {
-		["description"] = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
+		["description"] = createLocalizationString({
+			readable = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
+			constant = "TOL_BARAD_IS_A_WORLD_PVP_ZONE_VERY_SIMILAR_TO",
+			export = true,
+			text = {
+				en = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "托尔巴拉德是一个与冬拥湖非常相似的世界 PvP 区域。战斗按固定时间间隔开始，比赛获胜方可以进入巴拉丁监狱团队副本，并获得若干给予声望和货币的特殊日常任务。除此之外，胜方和败方都可以接取该区域的标准任务。",
+				-- TODO: tw = "",
+			},
+		}),
 		["icon"] = 236396,
 		-- #if ANYCLASSIC
 		["maps"] = { 244 },
@@ -160,7 +177,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				["coord"] = { 51.45, 49.65, TOL_BARAD },
 				-- Danny Donkey: Because classic does not show descriptions on questgivers.
 				-- #if ANYCLASSIC
-				["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+				["description"] = createLocalizationString({
+					readable = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+					constant = "THIS_QUESTGIVER_SHARES_IT_S_SPAWN_WITH_TWO",
+					export = true,
+					text = {
+						en = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该任务给予者与另外两个任务给予者共享刷新点。赢得托尔巴拉德之战，就有机会让另一个提供其他任务的任务给予者取代它出现。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}, {
 				TolBaradDailyQuest(28117, {	-- Clearing the Depths [A]
@@ -422,7 +456,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 			})),
 			-- #if NOT ANYCLASSIC
 			n(QUESTS, sharedData({	-- Rotating questgivers in Tol Barad
-				["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+				["description"] = "~L.THIS_QUESTGIVER_SHARES_IT_S_SPAWN_WITH_TWO",
 			}, {
 				n(48039),	-- Commander Stevens
 				n(48061),	-- 2nd Lieutenant Wansworth
@@ -435,9 +469,43 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 			-- Helpful event descriptions
 			n(45344, {	-- Abandoned Siege Engine
 				-- #if BEFORE 8.0.3
-				["description"] = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Players of the defending faction can attack deployed siege engines for credit towards the achievements 'Towers of Power' and 'Tol Barad Saboteur'.",
+				["description"] = createLocalizationString({
+					readable = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Players of the defending faction can attack deployed siege engines for credit towards the achievements 'Towers of Power' and 'Tol Barad Saboteur'.",
+					constant = "IS_USED_BY_THE_ATTACKING_FACTION_TO_DESTROY",
+					export = true,
+					text = {
+						en = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Players of the defending faction can attack deployed siege engines for credit towards the achievements 'Towers of Power' and 'Tol Barad Saboteur'.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由进攻方用于摧毁塔楼，需要玩家在本次战斗中取得一次荣誉击杀。防守方玩家可以攻击已部署的攻城车，以获得“权力之塔”和“托尔巴拉德破坏者”成就的进度。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #else
-				["description"] = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Abandoned siege engines can be attacked by high-level players of the defending faction for credit towards the achievement 'Towers of Power'. 'Tol Barad Saboteur' however requires defeating deployed siege engines.",
+				["description"] = createLocalizationString({
+					readable = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Abandoned siege engines can be attacked by high-level players of the defending faction for credit towards the achievement 'Towers of Power'. 'Tol Barad Saboteur' however requires defeating deployed siege engines.",
+					constant = "IS_USED_BY_THE_ATTACKING_FACTION_TO_DESTROY_2",
+					export = true,
+					text = {
+						en = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Abandoned siege engines can be attacked by high-level players of the defending faction for credit towards the achievement 'Towers of Power'. 'Tol Barad Saboteur' however requires defeating deployed siege engines.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由进攻方用于摧毁塔楼，需要玩家在本次战斗中取得一次荣誉击杀。被遗弃的攻城车可以被防守方的高等级玩家攻击，以获得“权力之塔”成就的进度。但“托尔巴拉德破坏者”需要击败已部署的攻城车。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 		},

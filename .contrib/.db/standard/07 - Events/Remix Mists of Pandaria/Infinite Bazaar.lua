@@ -658,18 +658,35 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(219025, {	-- Larah Treebender <World Apparel>
 				iensemble(215219, {	-- Ensemble: Guise of the Shado-Pan (Dark)
 					["cost"] = { { "c", BRONZE, 2500 } },
-					["description"] = "All appearances are MoP: Remix exclusive.",
+					["description"] = createLocalizationString({
+						readable = "All appearances are MoP: Remix exclusive.",
+						constant = "ALL_APPEARANCES_ARE_MOP_REMIX_EXCLUSIVE",
+						export = true,
+						text = {
+							en = "All appearances are MoP: Remix exclusive.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "所有外观均为《熊猫人之谜》幻境新生专属。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				iensemble(215220, {	-- Ensemble: Guise of the Shado-Pan (Original)
 					["cost"] = { { "c", BRONZE, 2500 } },
 				}),
 				iensemble(215275, {	-- Ensemble: Kor'kron Shaman Vestments (Cool)
 					["cost"] = { { "c", BRONZE, 2500 } },
-					["description"] = "All appearances are MoP: Remix exclusive.",
+					["description"] = "~L.ALL_APPEARANCES_ARE_MOP_REMIX_EXCLUSIVE",
 				}),
 				iensemble(215276, {	-- Ensemble: Kor'kron Shaman Vestments (Warm)
 					["cost"] = { { "c", BRONZE, 2500 } },
-					["description"] = "All appearances are MoP: Remix exclusive.",
+					["description"] = "~L.ALL_APPEARANCES_ARE_MOP_REMIX_EXCLUSIVE",
 				}),
 				iensemble(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
 					["cost"] = { { "c", BRONZE, 2500 } },
@@ -682,7 +699,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				iensemble(215354, {	-- Ensemble: Robes of Quiet Reflection (Red)
 					["cost"] = { { "c", BRONZE, 1250 } },
-					["description"] = "All appearances are MoP: Remix exclusive.",
+					["description"] = "~L.ALL_APPEARANCES_ARE_MOP_REMIX_EXCLUSIVE",
 				}),
 				iensemble(215355, {	-- Ensemble: Robes of Quiet Reflection (Yellow)
 					["cost"] = { { "c", BRONZE, 1250 } },

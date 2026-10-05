@@ -535,7 +535,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				---
 				q(82219, {	-- Spice Up Your Life
-					["description"] = "Becomes available after daily reset.",
+					["description"] = createLocalizationString({
+						readable = "Becomes available after daily reset.",
+						constant = "BECOMES_AVAILABLE_AFTER_DAILY_RESET",
+						export = true,
+						text = {
+							en = "Becomes available after daily reset.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "日常重置后开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 82217 },	-- Underground Economics
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
@@ -549,7 +566,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(82220, {	-- Eagle Eye, Eagle Die
-					["description"] = "Becomes available after daily reset.",
+					["description"] = "~L.BECOMES_AVAILABLE_AFTER_DAILY_RESET",
 					["sourceQuests"] = { 82217 },	-- Underground Economics
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
@@ -683,7 +700,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.AchCriteria, 40844.06, {	-- Crushing Depths
 				q(81797, {	-- Targeted Recon
-					["description"] = "Look for Arathi Captives in the area. They are an illusion. You can find Kobyss Shadeshapers right behind them.",
+					["description"] = createLocalizationString({
+						readable = "Look for Arathi Captives in the area. They are an illusion. You can find Kobyss Shadeshapers right behind them.",
+						constant = "LOOK_FOR_ARATHI_CAPTIVES_IN_THE_AREA_THEY_ARE",
+						export = true,
+						text = {
+							en = "Look for Arathi Captives in the area. They are an illusion. You can find Kobyss Shadeshapers right behind them.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在该区域寻找阿拉希俘虏。他们其实是幻象。你可以在他们正后方找到寇拜斯塑影者。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 218508 },	-- Joseph Brayvemarc
 					["coord"] = { 42.6, 55.3, HALLOWFALL },
@@ -1022,7 +1056,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(83279, {	-- Prove One's Mettle
-					["description"] = "This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf.",
+					["description"] = createLocalizationString({
+						readable = "This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf.",
+						constant = "THIS_QUEST_IS_ONLY_OBTAINABLE_AS_EITHER_A_DEATH",
+						export = true,
+						text = {
+							en = "This quest is only obtainable as either a Death Knight, Demon Hunter, Shadow Priest, or Warlock or as an Undead or Void Elf.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务只能以死亡骑士、恶魔猎手、暗影牧师或术士的身份获得，也可以以亡灵或虚空精灵的身份获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 83247 },	-- Suspicious Minds
 					["provider"] = { "n", 225879 },	-- Derill Fayn
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
@@ -1068,7 +1119,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(82810, {	-- Time Found
-					["description"] = "Becomes available a week after 'Time Lost' was finished.",
+					["description"] = createLocalizationString({
+						readable = "Becomes available a week after 'Time Lost' was finished.",
+						constant = "BECOMES_AVAILABLE_A_WEEK_AFTER_TIME_LOST_WAS",
+						export = true,
+						text = {
+							en = "Becomes available a week after 'Time Lost' was finished.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在“时光迷失”完成一周后开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 80678 },	-- Time Lost
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
@@ -1088,7 +1156,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(82813, {	-- Time Borrowed
-					["description"] = "Become available a week after 'Time Found' was finished.",
+					["description"] = createLocalizationString({
+						readable = "Become available a week after 'Time Found' was finished.",
+						constant = "BECOME_AVAILABLE_A_WEEK_AFTER_TIME_FOUND_WAS",
+						export = true,
+						text = {
+							en = "Become available a week after 'Time Found' was finished.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在“时光寻回”完成一周后开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 82810 },	-- Time Found
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
@@ -1188,7 +1273,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			hqt(82025, {	-- Talk with Sky-Captain Aerthin
 				["name"] = "Talk with Sky-Captain Aerthin",
-				["description"] = "This npc is on a patrolling airship.",
+				["description"] = createLocalizationString({
+					readable = "This npc is on a patrolling airship.",
+					constant = "THIS_NPC_IS_ON_A_PATROLLING_AIRSHIP",
+					export = true,
+					text = {
+						en = "This npc is on a patrolling airship.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该 NPC 位于一艘巡逻的飞艇上。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 222323 },	-- Sky-Captain Aerthin
 				["coords"] = {
 					{ 33.0, 43.0, HALLOWFALL },
@@ -1197,7 +1299,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			hqt(82024, {	-- Talk with Sky-Captain Clairmonte
 				["name"] = "Talk with Sky-Captain Clairmonte",
-				["description"] = "This npc is on a patrolling airship.",
+				["description"] = "~L.THIS_NPC_IS_ON_A_PATROLLING_AIRSHIP",
 				["provider"] = { "n", 222311 },	-- Sky-Captain Clairmonte
 				["coords"] = {
 					{ 44.6, 45.8, HALLOWFALL },
@@ -1206,7 +1308,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			hqt(82012, {	-- Talk with Sky-Captain Dornald
 				["name"] = "Talk with Sky-Captain Dornald",
-				["description"] = "This npc is on a patrolling airship.",
+				["description"] = "~L.THIS_NPC_IS_ON_A_PATROLLING_AIRSHIP",
 				["provider"] = { "n", 222333 },	-- Sky-Captain Dornald
 				["coords"] = {
 					{ 45.4, 47.4, HALLOWFALL },
@@ -1215,7 +1317,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			hqt(82026, {	-- Talk with Sky-Captain Onaro
 				["name"] = "Talk with Sky-Captain Onaro",
-				["description"] = "This npc is on a patrolling airship.",
+				["description"] = "~L.THIS_NPC_IS_ON_A_PATROLLING_AIRSHIP",
 				["provider"] = { "n", 222337 },	-- Sky-Captain Onaro
 				["coords"] = {
 					{ 45.4, 47.4, HALLOWFALL },

@@ -16,7 +16,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(221128, {	-- Clawbreaker K'zithix
-				["description"] = "Walking around in the area.",
+				["description"] = createLocalizationString({
+					readable = "Walking around in the area.",
+					constant = "WALKING_AROUND_IN_THE_AREA",
+					export = true,
+					text = {
+						en = "Walking around in the area.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在该区域四处走动。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 55.6, 27.0, ISLE_OF_DORN},	-- old coords: 80.3, 35.1 / 79.1, 34.2 / 64.0, 39.2
 				["questID"] = 81920,
 			}),
@@ -29,7 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(219279, {	-- Flamekeeper Graz
-				["description"] = "Walking around in the area.",
+				["description"] = "~L.WALKING_AROUND_IN_THE_AREA",
 				["coords"] = {
 					{ 65.6, 39.9, ISLE_OF_DORN },
 					{ 64.6, 39.8, ISLE_OF_DORN },
@@ -69,7 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(220890, {	-- Matriarch Charfuria
-				["description"] = "Walking around in the area.",
+				["description"] = "~L.WALKING_AROUND_IN_THE_AREA",
 				["coord"] = { 73.1, 40.0, ISLE_OF_DORN },
 				["questID"] = 81921,
 				["groups"] = {
@@ -121,7 +138,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(221126, {	-- Tephratennae
-				["description"] = "Flying around in the area.",
+				["description"] = createLocalizationString({
+					readable = "Flying around in the area.",
+					constant = "FLYING_AROUND_IN_THE_AREA",
+					export = true,
+					text = {
+						en = "Flying around in the area.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在该区域飞行寻找。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 74.6, 36.7, ISLE_OF_DORN },
 				["questID"] = 81923,
 				["groups"] = {
@@ -150,7 +184,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		})),
 		n(RARES, {
 			n(219264, {	-- Bloodmaw
-				["description"] = "Walking around in the area.",
+				["description"] = "~L.WALKING_AROUND_IN_THE_AREA",
 				["coords"] = {
 					{ 49.9, 74.8, ISLE_OF_DORN },
 					{ 39.6, 82.4, ISLE_OF_DORN },
@@ -166,7 +200,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(219265, {	-- Emperor Pitfang
-				["description"] = "Walking around in the area.",
+				["description"] = "~L.WALKING_AROUND_IN_THE_AREA",
 				["coord"] = { 47.9, 60.1, ISLE_OF_DORN },
 				["questID"] = 81895,
 				["groups"] = {
@@ -177,12 +211,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(220068, {	-- Malfuctioning Spire
-				["description"] = "This Rare might only be available during the introduction.",
+				["description"] = createLocalizationString({
+					readable = "This Rare might only be available during the introduction.",
+					constant = "THIS_RARE_MIGHT_ONLY_BE_AVAILABLE_DURING_THE",
+					export = true,
+					text = {
+						en = "This Rare might only be available during the introduction.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此稀有怪可能仅在开场阶段可用。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 26.7, 57.4, ISLE_OF_DORN },
 				["questID"] = 81891,
 			}),
 			n(213115, {	-- Rustul Titancap
-				["description"] = "Walking around in the area.",
+				["description"] = "~L.WALKING_AROUND_IN_THE_AREA",
 				["coords"] = {
 					{ 31.7, 80.8, ISLE_OF_DORN },
 					{ 33.5, 81.3, ISLE_OF_DORN },
@@ -215,7 +266,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(219263, {	-- Warphorn
-				["description"] = "Walking around in the area.",
+				["description"] = "~L.WALKING_AROUND_IN_THE_AREA",
 				["coords"] = {
 					{ 58.0, 37.0, ISLE_OF_DORN },
 					{ 56.2, 36.5, ISLE_OF_DORN },

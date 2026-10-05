@@ -17,7 +17,24 @@ end
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	o(382621, {	-- Revival Catalyst Console
-		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+		["description"] = createLocalizationString({
+			readable = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+			constant = "HELP_US_GATHER_INFORMATION_OF_WHAT_IS_ISN_T",
+			export = true,
+			text = {
+				en = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "请通过在 ATT Discord 中提交报告，帮助我们收集哪些内容可用、哪些不可用的信息。尤其是替代套装，以及 PvP 幻化是否可在其他地方获得。",
+				-- TODO: tw = "",
+			},
+		}),
 		["coord"] = { 60.6, 53.8, THALDRASZUS },
 		["modelScale"] = 4,
 		["sourceQuests"] = { 72360 },	-- Reviving the Machine
@@ -2609,7 +2626,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				-- #else
 				-- Blizzard forgot to remove season 4 from dungeons, so all of these are possible to gain from Mythic difficulty
 				d(DIFFICULTY.RAID.NORMAL, {
-					["description"] = "These items are still obtainable by converting Dragonflight Mythic Dungeon items in the Catalyst",
+					["description"] = createLocalizationString({
+						readable = "These items are still obtainable by converting Dragonflight Mythic Dungeon items in the Catalyst",
+						constant = "THESE_ITEMS_ARE_STILL_OBTAINABLE_BY_CONVERTING",
+						export = true,
+						text = {
+							en = "These items are still obtainable by converting Dragonflight Mythic Dungeon items in the Catalyst",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些物品仍然可以通过在造物催化剂中转化龙军团史诗地下城物品来获得",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
 							-- "Tier Slots"
@@ -3295,7 +3329,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = createLocalizationString({
+						readable = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+						constant = "THESE_ITEMS_ARE_OBTAINED_BY_UPGRADING_YOUR",
+						export = true,
+						text = {
+							en = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些物品通过将你的催化 PvP 装备升级至 9/9 获得。\n|CFFFF0000需要任意 PvP 分组的 2400 评级。|r",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
@@ -3391,7 +3442,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = "~L.THESE_ITEMS_ARE_OBTAINED_BY_UPGRADING_YOUR",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(202458),	-- Lingering Phantom's Deathlink
@@ -3649,7 +3700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = "~L.THESE_ITEMS_ARE_OBTAINED_BY_UPGRADING_YOUR",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(207203),	-- Casket of the Risen Nightmare
@@ -3745,7 +3796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = "~L.THESE_ITEMS_ARE_OBTAINED_BY_UPGRADING_YOUR",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(207202),	-- Graveboots of the Risen Nightmare
@@ -4005,7 +4056,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
-					["description"] = "These items are obtained by catalysing a PVP from the Great Vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = createLocalizationString({
+						readable = "These items are obtained by catalysing a PVP from the Great Vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+						constant = "THESE_ITEMS_ARE_OBTAINED_BY_CATALYSING_A_PVP",
+						export = true,
+						text = {
+							en = "These items are obtained by catalysing a PVP from the Great Vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些物品可通过在任意分段达到 2400 后，使用复生催化剂转化宏伟宝库中的一件 PvP 装备来获得。\n|CFFFF0000需要在任意 PvP 分段达到 2400 等级。|r",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(217221),	-- Casket of the Risen Nightmare
@@ -4101,7 +4169,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
-					["description"] = "These items are obtained by catalysing a PVP from the Great Vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = "~L.THESE_ITEMS_ARE_OBTAINED_BY_CATALYSING_A_PVP",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(207202),	-- Graveboots of the Risen Nightmare

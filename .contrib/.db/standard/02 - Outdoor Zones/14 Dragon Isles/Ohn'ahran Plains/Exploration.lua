@@ -38,7 +38,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			exploration(13766),	-- Nelthazan Ruins
 			exploration(13782),	-- Nokhudon Hold
 			exploration(13645, {	-- Ohn'ahran Plains
-				["description"] = "This node can only be uncovered by characters who have not yet unlocked the Emerald Dream.",
+				["description"] = createLocalizationString({
+					readable = "This node can only be uncovered by characters who have not yet unlocked the Emerald Dream.",
+					constant = "THIS_NODE_CAN_ONLY_BE_UNCOVERED_BY_CHARACTERS",
+					export = true,
+					text = {
+						en = "This node can only be uncovered by characters who have not yet unlocked the Emerald Dream.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此节点只能由尚未解锁翡翠梦境的角色发现。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			visit_exploration(13765,{coord={58.3,33.3,OHNAHRAN_PLAINS}}),	-- Ohn'ahra's Roost
 			exploration(13776),	-- Ohn'ir Geysers

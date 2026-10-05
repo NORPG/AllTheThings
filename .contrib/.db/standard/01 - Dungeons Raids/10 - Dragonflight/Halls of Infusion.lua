@@ -4,7 +4,24 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1204, {	-- Halls of Infusion
-		["description"] = "The Entrance is located at the last layer inside the cyndrical building.",
+		["description"] = createLocalizationString({
+			readable = "The Entrance is located at the last layer inside the cyndrical building.",
+			constant = "THE_ENTRANCE_IS_LOCATED_AT_THE_LAST_LAYER",
+			export = true,
+			text = {
+				en = "The Entrance is located at the last layer inside the cyndrical building.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "入口位于这座圆柱形建筑内的最里层。",
+				-- TODO: tw = "",
+			},
+		}),
 		["coord"] = { 59.2, 60.6, THALDRASZUS },
 		["maps"] = {
 			2082,	-- Infuser's Rotunda

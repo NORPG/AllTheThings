@@ -5,7 +5,24 @@
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		i(162460, {	-- Hydrocore
-			["description"] = "Drops from any final bosses at Mythic or Heroic",
+			["description"] = createLocalizationString({
+				readable = "Drops from any final bosses at Mythic or Heroic",
+				constant = "DROPS_FROM_ANY_FINAL_BOSSES_AT_MYTHIC_OR_HEROIC",
+				export = true,
+				text = {
+					en = "Drops from any final bosses at Mythic or Heroic",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在史诗或英雄难度下由任何最终首领掉落",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 },
 			["crs"] = {
 				122968,	-- Yazma
@@ -22,7 +39,24 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			},
 		}),
 		i(162520, {	-- Recipe: Mystical Cauldron [Rank 2] (RECIPE!)
-			["description"] = "Drops from any final bosses at Mythic",
+			["description"] = createLocalizationString({
+				readable = "Drops from any final bosses at Mythic",
+				constant = "DROPS_FROM_ANY_FINAL_BOSSES_AT_MYTHIC",
+				export = true,
+				text = {
+					en = "Drops from any final bosses at Mythic",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由史诗难度的任意最终首领掉落",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {
 				122968,	-- Yazma
 				126983,	-- Harlan Sweete
@@ -43,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			},
 		}),
 		i(165948, {	-- Tidalcore
-			["description"] = "Drops from any final bosses at Mythic or Heroic",
+			["description"] = "~L.DROPS_FROM_ANY_FINAL_BOSSES_AT_MYTHIC_OR_HEROIC",
 			["timeline"] = { ADDED_8_1_0 },
 			["crs"] = {
 				122968,	-- Yazma

@@ -210,7 +210,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(185092, {	-- Shade of Irik-tu
-				["description"] = "Only available while dead.",
+				["description"] = createLocalizationString({
+					readable = "Only available while dead.",
+					constant = "ONLY_AVAILABLE_WHILE_DEAD",
+					export = true,
+					text = {
+						en = "Only available while dead.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅在死亡状态下可用。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
 				["groups"] = {
 					i(189467),	-- Schematic: Ineffable Skitterer

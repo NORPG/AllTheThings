@@ -1586,8 +1586,25 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(216638),	-- Timerunner's Intro Kit
 			i(219218),	-- Timerunner's Starter Kit
 			i(219219),	-- Timerunner's Starter Kit
-			i(223639, {["isBounty"] = true, ["description"] = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Aspirant's Cloak Rack
-			i(223640, {["isBounty"] = true, ["description"] = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Gladiator's Cloak Rack
+			i(223639, {["isBounty"] = true, ["description"] = createLocalizationString({
+				readable = "This ensemble is broken and will most likely not work when used.",
+				constant = "THIS_ENSEMBLE_IS_BROKEN_AND_WILL_MOST_LIKELY",
+				export = true,
+				text = {
+					en = "This ensemble is broken and will most likely not work when used.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这套幻化套装已损坏，使用时很可能无法生效。",
+					-- TODO: tw = "",
+				},
+			})}),	-- Unburied Aspirant's Cloak Rack
+			i(223640, {["isBounty"] = true, ["description"] = "~L.THIS_ENSEMBLE_IS_BROKEN_AND_WILL_MOST_LIKELY"}),	-- Unburied Gladiator's Cloak Rack
 			i(213532),	-- Void Rune
 			i(213537),	-- Void Tendril
 		})),

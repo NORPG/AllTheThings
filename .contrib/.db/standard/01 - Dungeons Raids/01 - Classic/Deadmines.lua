@@ -50,7 +50,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(44930, {	-- Deadmines: Sea'in Red
-				["description"] = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to the questgiver to turn it in.",
+				["description"] = createLocalizationString({
+					readable = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to the questgiver to turn it in.",
+					constant = "CFF3399FFSTEP_1_R_MUST_BE_PLAYING_A_ROGUE_IN",
+					export = true,
+					text = {
+						en = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to the questgiver to turn it in.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|cff3399ff第 1 步：|r 必须是以狂徒专精游玩的潜行者，并且必须拥有一只绿翼金刚鹦鹉宠物。\n|cff3399ff第 2 步：|r 前往铁甲海湾，靠近地下城的尽头（有码头和船只的区域）。\n|cff3399ff第 3 步：|r 找到幽灵鹦鹉（36.5, 17.0）。\n|cff3399ff第 4 步：|r 召唤你的绿翼金刚鹦鹉。会出现一个额外动作按钮，让你能够钩索上墙。\n|cff3399ff第 5 步：|r 接受任务并击杀海盗以收集 100 条头巾。\n|cff3399ff第 6 步：|r 重复此过程回到任务给予者处交任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 115818,	-- Captain Bramblebeard
 				["timeline"] = { ADDED_7_1_0 },
 				["classes"] = { ROGUE },
@@ -138,7 +155,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["groups"] = {
 					objective(1, {	-- 0/10 Red Silk Bandana
 						["provider"] = { "i", 915 },	-- Red Silk Bandana
-						["description"] = "Can also drop from any Defias mob in the Deadmines.",
+						["description"] = "~L.CAN_ALSO_DROP_FROM_ANY_DEFIAS_MOB_IN_THE",
 						["crs"] = {
 							619,	-- Defias Conjurer
 							824,	-- Defias Digger
@@ -259,7 +276,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(373, {	-- The Unsent Letter
-				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
+				["description"] = "~L.DROPS_FROM_VANCLEEF_DELIVER_IT_TO_BAROS",
 				["providers"] = {
 					{ "i", 2874 },	-- An Unsent Letter
 					{ "n", 1646 },	-- Baros Alexston <City Architect>
@@ -316,7 +333,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		}),
 		n(RARES, {
 			n(596, {	-- Brainwashed Noble
-				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_3",
 				["coords"] = {
 					-- #if BEFORE CATA
 					{ 44.0, 78.3, WESTFALL },
@@ -339,7 +356,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			n(626, {	-- Foreman Thistlenettle
-				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_3",
 				["coords"] = {
 					-- #if BEFORE CATA
 					{ 42.2, 82.6, WESTFALL },
@@ -355,7 +372,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			n(599, {	-- Marisa du'Paige
-				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_3",
 				["coords"] = {
 					-- #if BEFORE CATA
 					{ 42.2, 79.9, WESTFALL },
@@ -421,7 +438,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1928, {	-- Defias Mage Staff
 				-- #if AFTER 10.1.7
-				["description"] = "The item drops from Blood Wizards or Defias Pirates which are located on the boat near the end of the dungeon.",
+				["description"] = createLocalizationString({
+					readable = "The item drops from Blood Wizards or Defias Pirates which are located on the boat near the end of the dungeon.",
+					constant = "THE_ITEM_DROPS_FROM_BLOOD_WIZARDS_OR_DEFIAS",
+					export = true,
+					text = {
+						en = "The item drops from Blood Wizards or Defias Pirates which are located on the boat near the end of the dungeon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该物品由血法师或迪菲亚海盗掉落，他们位于副本尽头附近的船上。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				["crs"] = {
@@ -435,7 +469,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1925, {	-- Defias Rapier
 				-- #if AFTER 10.1.7
-				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
+				["description"] = createLocalizationString({
+					readable = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
+					constant = "THE_ITEM_DROPS_FROM_DEFIAS_PIRATES_WHICH_ARE",
+					export = true,
+					text = {
+						en = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该物品由迪菲亚海盗掉落，他们位于副本末尾附近的船上。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				["crs"] = {
@@ -448,7 +499,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1943, {	-- Goblin Mail Leggings
 				-- #if AFTER 10.1.7
-				["description"] = "Drops from Goblin Engineer's around 2nd Boss or Goblin Overseer's around last Boss.",
+				["description"] = createLocalizationString({
+					readable = "Drops from Goblin Engineer's around 2nd Boss or Goblin Overseer's around last Boss.",
+					constant = "DROPS_FROM_GOBLIN_ENGINEER_S_AROUND_2ND_BOSS_OR",
+					export = true,
+					text = {
+						en = "Drops from Goblin Engineer's around 2nd Boss or Goblin Overseer's around last Boss.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由第 2 个首领附近的地精工程师或最终首领附近的地精监工掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				["crs"] = {
@@ -462,7 +530,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1936, {	-- Goblin Screwdriver
 				-- #if AFTER 10.1.7
-				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["description"] = createLocalizationString({
+					readable = "The item drops from Goblins between 1st and 2nd boss.",
+					constant = "THE_ITEM_DROPS_FROM_GOBLINS_BETWEEN_1ST_AND_2ND",
+					export = true,
+					text = {
+						en = "The item drops from Goblins between 1st and 2nd boss.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该物品由第一个和第二个首领之间的地精掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				["crs"] = {
@@ -475,7 +560,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1944, {	-- Metalworking Gloves
 				-- #if AFTER 10.1.7
-				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["description"] = "~L.THE_ITEM_DROPS_FROM_GOBLINS_BETWEEN_1ST_AND_2ND",
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				["crs"] = {
@@ -495,7 +580,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(8492, {	-- Green Wing Macaw (PET!)
 				-- #if AFTER 4.0.3
-				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
+				["description"] = "~L.THE_ITEM_DROPS_FROM_DEFIAS_PIRATES_WHICH_ARE",
 				-- #endif
 				["crs"] = {
 					-- #if AFTER 4.0.3
@@ -510,7 +595,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(7997, {	-- Red Defias Mask
 				-- #if BEFORE CATA
-				["description"] = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
+				["description"] = createLocalizationString({
+					readable = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
+					constant = "CAN_DROP_IN_WESTFALL_AND_THE_DEADMINES_ROGUES",
+					export = true,
+					text = {
+						en = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在西部荒野和死亡矿井掉落。盗贼通常会保留这张面具用于幻化套装。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(915),	-- Red Silk Bandana
@@ -561,7 +663,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1945, {	-- Woodworking Gloves
 				-- #if AFTER 10.1.7
-				["description"] = "The item drops from Goblins or Oaf's Lackey between 1st and 2nd boss.",
+				["description"] = createLocalizationString({
+					readable = "The item drops from Goblins or Oaf's Lackey between 1st and 2nd boss.",
+					constant = "THE_ITEM_DROPS_FROM_GOBLINS_OR_OAF_S_LACKEY",
+					export = true,
+					text = {
+						en = "The item drops from Goblins or Oaf's Lackey between 1st and 2nd boss.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该物品由地精或笨蛋的跟班掉落，位置在第一个和第二个首领之间。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				["crs"] = {
@@ -586,7 +705,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		d(DIFFICULTY.DUNGEON.NORMAL, {
 		-- #endif
 			n(3586, {	-- Miner Johnson
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["timeline"] = { REMOVED_4_0_3 },
 				-- #if BEFORE 4.0.3
 				["groups"] = {
@@ -601,7 +720,24 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["groups"] = {
 					i(5187, {	-- Rhahk'Zor's Hammer [Classic] / Foe Reaper [TBC+]
 						-- #if BEFORE TBC
-						["description"] = "This item was redesigned to a rare quality item called 'Foe Reaper' in Patch 2.3, so if you are making a twink, you may want to keep this item despite it being lower quality now.",
+						["description"] = createLocalizationString({
+							readable = "This item was redesigned to a rare quality item called 'Foe Reaper' in Patch 2.3, so if you are making a twink, you may want to keep this item despite it being lower quality now.",
+							constant = "THIS_ITEM_WAS_REDESIGNED_TO_A_RARE_QUALITY_ITEM",
+							export = true,
+							text = {
+								en = "This item was redesigned to a rare quality item called 'Foe Reaper' in Patch 2.3, so if you are making a twink, you may want to keep this item despite it being lower quality now.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此物品在 2.3 补丁中被重新设计为一件名为“敌人收割者”的稀有品质物品，所以如果你在练小号，尽管它现在品质更低，你可能还是想留着它。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 					}),
 					i( 872),	-- Rockslicer

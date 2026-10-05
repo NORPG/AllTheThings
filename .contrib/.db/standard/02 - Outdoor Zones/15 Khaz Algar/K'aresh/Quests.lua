@@ -170,14 +170,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(90600, {	-- Stay awhile and listen: Xal'atath
 						["name"] = "Stay awhile and listen: Xal'atath",
-						["description"] = "Dialogue becomes available after you accept 'What Is Left of Home' (85032).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'What Is Left of Home' (85032).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'What Is Left of Home' (85032).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在你接受“家中所剩之物”(85032) 后，对话变为可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
 						["qg"] = 235448,	-- Xal'atath
 						["coord"] = { 37.5, 74.7, KARESH_TAZAVESH },
 					}),
 					hqt(90732, {	-- Stay awhile and listen: Alleria Windrunner
 						["name"] = "Stay awhile and listen: Alleria Windrunner",
-						["description"] = "Dialogue becomes available after you accept 'What Is Left of Home' (85032).",
+						["description"] = "~L.DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT",
 						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
 						["qg"] = 240293,	-- Alleria Windrunner
 						["coord"] = { 34.2, 10.6, KARESH_TAZAVESH },
@@ -345,7 +362,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(90572, {	-- Stay awhile and listen: Locus-Walker
 						["name"] = "Stay awhile and listen: Locus-Walker",
-						["description"] = "Dialogue becomes available after you accept 'My Part of the Deal' (90517).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'My Part of the Deal' (90517).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_MY",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'My Part of the Deal' (90517).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“我该做的交易”（90517）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86946 },	-- Unwrapped and Unraveled
 						["qg"] = 230811,	-- Locus-Walker
 						["coord"] = { 47.1, 54.5, KARESH },
@@ -404,7 +438,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(85774, {	-- Stay awhile and listen: Xal'atath
 						["name"] = "Stay awhile and listen: Xal'atath",
-						["description"] = "Dialogue becomes available after you accept 'The Tempest Fields' (86327).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'The Tempest Fields' (86327).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_THE",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'The Tempest Fields' (86327).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“风暴平原”（86327）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 85730 },	-- Salvaging What's Left
 						["qg"] = 230602,	-- Xal'atath
 						["coord"] = { 68.4, 51.9, KARESH },
@@ -464,7 +515,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(86815, {	-- Stay awhile and listen: Xal'atath
 						["name"] = "Stay awhile and listen: Xal'atath",
-						["description"] = "Dialogue becomes available after you accept 'Stalking Stalkers' (84867).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'Stalking Stalkers' (84867).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_2",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'Stalking Stalkers' (84867).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“追踪追踪者”（84867）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 84848 },	-- Before the Void
 						["qg"] = 230658,	-- Xal'atath
 						["coord"] = { 63.1, 39.0, KARESH },
@@ -472,7 +540,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					--
 					q(86332, {	-- Distribution of Power
-						["description"] = "Quest becomes available after you talk to Narathe during 'Stalking Stalkers' (84867).",
+						["description"] = createLocalizationString({
+							readable = "Quest becomes available after you talk to Narathe during 'Stalking Stalkers' (84867).",
+							constant = "QUEST_BECOMES_AVAILABLE_AFTER_YOU_TALK_TO",
+							export = true,
+							text = {
+								en = "Quest becomes available after you talk to Narathe during 'Stalking Stalkers' (84867).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“追踪跟踪者”（84867）期间与娜拉泽交谈后，任务变为可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 84848 },	-- Before the Void
 						["qg"] = 234190,	-- Narathe
 						["coord"] = { 61.0, 39.9, KARESH },
@@ -631,7 +716,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(90614, {	-- Stay awhile and listen: Locus-Walker
 						["name"] = "Stay awhile and listen: Locus-Walker",
-						["description"] = "Dialogue becomes available after you accept 'That's a Wrap' (85037).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'That's a Wrap' (85037).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_3",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'That's a Wrap' (85037).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“收工了”（85037）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 84906 },	-- Nexus Regicide
 						["qg"] = 231524,	-- Locus-Walker
 						["coord"] = { 42.9, 21.6, KARESH },
@@ -657,7 +759,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(90753, {	-- Stay awhile and listen: Alleria Windrunner
 						["name"] = "Stay awhile and listen: Alleria Windrunner",
-						["description"] = "Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_AN",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“寂静世界的挽歌”（86456）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 86456,	-- An Elegy for a Silent World
 						["qg"] = 243653,	-- Alleria Windrunner
 						["coord"] = { 75.4, 33.7, KARESH },
@@ -884,7 +1003,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(89305, {	-- Stay awhile and listen: Botanist Alaenra
 						["name"] = "Stay awhile and listen: Botanist Alaenra",
-						["description"] = "Dialogue becomes available after you accept 'Oh Honey Honey' (85258).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'Oh Honey Honey' (85258).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_OH",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'Oh Honey Honey' (85258).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“哦，蜂蜜蜂蜜”（85258）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 89348 },	-- Let There Bee Love
 						["qg"] = 232385,	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
@@ -996,7 +1132,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(89330, {	-- Stay awhile and listen: Hemet Nesingwary
 						["name"] = "Stay awhile and listen: Hemet Nesingwary",
-						["description"] = "Dialogue becomes available after you accept 'Ghost Buster' (86182).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'Ghost Buster' (86182).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_4",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'Ghost Buster' (86182).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“捉鬼敢死队”（86182）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86359 },	-- Return to K'aresh
 						["qg"] = 235353,	-- Hemet Nesingwary
 						["coord"] = { 75.8, 34.0, KARESH },
@@ -1101,7 +1254,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					------ Stay awhile and listen ------
 					hqt(89292, {	-- Stay awhile and listen: Rhubarn
 						["name"] = "Stay awhile and listen: Rhubarn",
-						["description"] = "Dialogue becomes available after you accept 'Slateback Soccer' (86195).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after you accept 'Slateback Soccer' (86195).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_ACCEPT_5",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after you accept 'Slateback Soccer' (86195).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "接受“石板背足球”（86195）后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86192 },	-- On a Bed of Bones They Lie
 						["qg"] = 234316,	-- Rhubarn
 						["coord"] = { 75.9, 34.6, KARESH },
@@ -1538,7 +1708,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			header(HEADERS.Achievement, 41809, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Ecological Variety (Weekly Quests)
 				header(HEADERS.AchCriteria, 41809.01, {	-- Honey Bees
 					q(90545, {	-- A Reel Problem
-						["description"] = "Requires Fishing profession.",
+						["description"] = createLocalizationString({
+							readable = "Requires Fishing profession.",
+							constant = "REQUIRES_FISHING_PROFESSION",
+							export = true,
+							text = {
+								en = "Requires Fishing profession.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要钓鱼专业技能。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,
@@ -1743,7 +1930,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			})),
 			header(HEADERS.Achievement, 42731, {	-- Become a Hero. Become a Phasediver!
 				q(90938, {	-- A Skip Through the Void
-					["description"] = "It may be possible to acquire this quest (if it is already locked) by doing the following steps (guessed from personal experience)\n1. Log out/in without the Reshii Wraps equipped.\n2. Zone to K'aresh\n3. Equip Reshii Wraps\n4. Enter Untethered Space\nAt this point the quest was active in my log when previously it was not. However it never showed in chat that it was 'accepted' at a certain point, so I'm unsure of when specifically it became available. -- Runaway",
+					["description"] = createLocalizationString({
+						readable = "It may be possible to acquire this quest (if it is already locked) by doing the following steps (guessed from personal experience)\n1. Log out/in without the Reshii Wraps equipped.\n2. Zone to K'aresh\n3. Equip Reshii Wraps\n4. Enter Untethered Space\nAt this point the quest was active in my log when previously it was not. However it never showed in chat that it was 'accepted' at a certain point, so I'm unsure of when specifically it became available. -- Runaway",
+						constant = "IT_MAY_BE_POSSIBLE_TO_ACQUIRE_THIS_QUEST_IF_IT",
+						export = true,
+						text = {
+							en = "It may be possible to acquire this quest (if it is already locked) by doing the following steps (guessed from personal experience)\n1. Log out/in without the Reshii Wraps equipped.\n2. Zone to K'aresh\n3. Equip Reshii Wraps\n4. Enter Untethered Space\nAt this point the quest was active in my log when previously it was not. However it never showed in chat that it was 'accepted' at a certain point, so I'm unsure of when specifically it became available. -- Runaway",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果此任务已被锁定，或许可以通过以下步骤重新接到（根据个人经验推测）\n1. 在未装备雷希裹布的情况下下线再上线。\n2. 切换到卡雷什区域\n3. 装备雷希裹布\n4. 进入无束空间\n此时任务就出现在了我的任务日志中，而之前并没有。不过聊天框从未提示它在某个时刻被“接受”，所以我不确定它究竟是何时变为可接的。—— Runaway",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 84957 },	-- Return to the Veiled Market
 					["qg"] = 241588,	-- Hashim
 					["coord"] = { 50.3, 36.3, KARESH },
@@ -2288,7 +2492,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(239314) },	-- Arcane Lure (QS!)
 					}),
 					q(90081, {	-- Arcane Runed Sigil
-						["description"] = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_ARCANA",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务在“通缉：奥术贩子索泽尔”期间可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238181,	-- Acquisitioner Xy'gui
 						["coords"] = {
 							{ 51.2, 48.2, KARESH },
@@ -2302,7 +2523,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(89501, {	-- Charged Crystal
-						["description"] = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_ARCANA",
 						["qg"] = 238057,	-- Engineer Om'loof
 						["coord"] = { 48.0, 57.4, KARESH },
 						["repeatable"] = true,
@@ -2315,7 +2536,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(89505, {	-- Smuggler's Mark
-						["description"] = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_ARCANA",
 						["qg"] = 238486,	-- Citizen Om'sto
 						["coord"] = { 46.6, 50.2, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2342,7 +2563,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(236967) },	-- Grubber Lure (QS!)
 					}),
 					q(87548, {	-- A Dozen Veilshards
-						["description"] = "This quest is available during 'Warrant: Grubber'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Grubber'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_GRUBBER",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Grubber'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“通缉令：格鲁伯”期间可接取此任务。\n找到并戳一下偷窃的奔窜者，它就会带你去被盗的帷幕碎片藏匿处。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238486,	-- Citizen Om'sto
 						["coord"] = { 46.6, 50.3, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2356,7 +2594,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87420, {	-- Basket of Zo'kita Fruit
-						["description"] = "This quest is available during 'Warrant: Grubber'.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Grubber'.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_GRUBBER_2",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Grubber'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务在“通缉：格鲁伯”期间可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238474,	-- Zo'kita
 						["coord"] = { 52.4, 57.8, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2370,7 +2625,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87426, {	-- Flavorful Scraps
-						["description"] = "This quest is available during 'Warrant: Grubber'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_GRUBBER_2",
 						["qg"] = 238591,	-- Zo'nog
 						["coord"] = { 68.6, 42.5, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2398,7 +2653,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(236957) },	-- Hollowbane Portal Key (QS!)
 					}),
 					q(87597, {	-- A Bag of Veilshards
-						["description"] = "This quest is available during 'Warrant: Hollowbane'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Hollowbane'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Hollowbane'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“通缉令：空祸”期间可接取此任务。\n找到并戳一下偷窃的奔窜者，它就会带你去被盗的帷幕碎片藏匿处。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238486,	-- Citizen Om'sto
 						["coord"] = { 46.6, 50.3, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2412,13 +2684,47 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87324, {	-- Pile of Voidbane Gems
-						["description"] = "This quest is available during 'Warrant: Hollowbane'.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Hollowbane'.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_2",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Hollowbane'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务在“通缉：空祸”期间可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238181,	-- Acquisitioner Xy'gui
 						["coord"] = { 53.9, 26.9, KARESH },
 						["repeatable"] = true,
 						["groups"] = {
 							i(236632, {	-- Pouch of Voidbane Gems
-								["description"] = "|cFFE50D12WARNING:|r Do not buy unless you are on a Warrant Quest.\nContains nothing but a fraction of spent gold otherwise.",
+								["description"] = createLocalizationString({
+									readable = "|cFFE50D12WARNING:|r Do not buy unless you are on a Warrant Quest.\nContains nothing but a fraction of spent gold otherwise.",
+									constant = "CFFE50D12WARNING_R_DO_NOT_BUY_UNLESS_YOU_ARE_ON",
+									export = true,
+									text = {
+										en = "|cFFE50D12WARNING:|r Do not buy unless you are on a Warrant Quest.\nContains nothing but a fraction of spent gold otherwise.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "|cFFE50D12警告：|r 除非你正在进行搜查令任务，否则不要购买。\n否则其中只有所花金币的一小部分。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 50.6, 19.3, KARESH },
 								["cr"] = 238291,	-- Associate Xy'got
 								["groups"] = {
@@ -2430,7 +2736,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87358, {	-- Umbral Facade
-						["description"] = "This quest is available during 'Warrant: Hollowbane'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_2",
 						["qg"] = 238181,	-- Acquisitioner Xy'gui
 						["coord"] = { 53.9, 26.9, KARESH },
 						["repeatable"] = true,
@@ -2453,7 +2759,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(239276) },	-- Purple Peat Cell Key (QS!)
 					}),
 					q(87404, {	-- Energy Encapsulation
-						["description"] = "This quest is available during 'Warrant: Purple Peat'.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Purple Peat'.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_PURPLE",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Purple Peat'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务在“通缉：紫色泥炭”期间可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238057,	-- Engineer Om'loof
 						["coord"] = { 47.9, 57.4, KARESH },
 						["repeatable"] = true,
@@ -2464,7 +2787,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87425, {	-- Large Sticky Voidmass
-						["description"] = "This quest is available during 'Warrant: Purple Peat'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_PURPLE",
 						["qg"] = 238069,	-- Botanist Mo'chee
 						["coord"] = { 49.4, 54.3, KARESH },
 						["repeatable"] = true,
@@ -2475,7 +2798,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87301, {	-- Untethered Battery
-						["description"] = "This quest is available during 'Warrant: Purple Peat'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_PURPLE",
 						["qg"] = 238057,	-- Engineer Om'loof
 						["coord"] = { 47.9, 57.4, KARESH },
 						["repeatable"] = true,
@@ -2496,7 +2819,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(236353) },	-- Shatterpulse Cell Key (QS!)
 					}),
 					q(87010, {	-- Calculation Container
-						["description"] = "This quest is available during 'Warrant: Shatterpulse'.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Shatterpulse'.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_3",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Shatterpulse'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务在“通缉：碎脉”期间可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238057,	-- Engineer Om'loof
 						["coord"] = { 47.9, 57.4, KARESH },
 						["repeatable"] = true,
@@ -2505,7 +2845,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87285, {	-- Marking Matrix
-						["description"] = "This quest is available during 'Warrant: Shatterpulse'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_3",
 						["qg"] = 238057,	-- Engineer Om'loof
 						["coord"] = { 47.9, 57.4, KARESH },
 						["repeatable"] = true,
@@ -2516,7 +2856,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87298, {	-- Void Fused Resin
-						["description"] = "This quest is available during 'Warrant: Shatterpulse'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_3",
 						["qg"] = 238069,	-- Botanist Mo'chee
 						["coord"] = { 49.4, 54.3, KARESH },
 						["repeatable"] = true,
@@ -2539,7 +2879,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["groups"] = { i(236753) },	-- Xy'vox Refuge Dampener (QS!)
 					}),
 					q(87376, {	-- Ethereal Seal
-						["description"] = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+						["description"] = createLocalizationString({
+							readable = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+							constant = "THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_XY_VOX",
+							export = true,
+							text = {
+								en = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务在“通缉：扭曲者赛沃克斯”期间可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 238486,	-- Citizen Om'sto
 						["coord"] = { 46.6, 50.3, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2555,7 +2912,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87363, {	-- Tazavesh Facade
-						["description"] = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_XY_VOX",
 						["qg"] = 238387,	-- Deputy Zo'mi
 						["coord"] = { 46.9, 57.5, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2566,7 +2923,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(87380, {	-- Zo'kita Fruit
-						["description"] = "This quest is available during 'Warrant: Xy'vox the Twisted'.",
+						["description"] = "~L.THIS_QUEST_IS_AVAILABLE_DURING_WARRANT_XY_VOX",
 						["qg"] = 238474,	-- Zo'kita
 						["coord"] = { 52.4, 57.8, KARESH_TAZAVESH },
 						["repeatable"] = true,
@@ -2665,25 +3022,42 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			-- These source quests aren't 'really' required since the item can be looted and quest started at a later time
 			-- Maybe somehow they should link to the respective rares? probably not important enough
 			q(85722, {	-- Making a Deposit
-				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
+				["description"] = createLocalizationString({
+					readable = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
+					constant = "CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_THIS_QUEST",
+					export = true,
+					text = {
+						en = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|cFFE50D12建议：|r 除非“生态演替”世界任务处于激活状态，否则不要交还此任务。它对世界任务完成度贡献 20%。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- ["sourceQuests"] = { 84993 },	-- Devourer Attack: The Oasis
 				["provider"] = { "i", 232467 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 			q(89061, {	-- Making a Deposit
-				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
+				["description"] = "~L.CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_THIS_QUEST",
 				-- ["sourceQuests"] = { 86447 },	-- Devourer Attack: Eco-dome: Primus
 				["provider"] = { "i", 238663 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 			q(89062, {	-- Making a Deposit
-				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
+				["description"] = "~L.CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_THIS_QUEST",
 				-- ["sourceQuests"] = { 86464 },	-- Devourer Attack: The Atrium
 				["provider"] = { "i", 238664 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 			q(89063, {	-- Making a Deposit
-				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
+				["description"] = "~L.CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_THIS_QUEST",
 				-- ["sourceQuests"] = { 86465 },	-- Devourer Attack: Tazavesh
 				["provider"] = { "i", 238665 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,

@@ -106,7 +106,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(70126, {	-- A Finishing Touch
-				["description"] = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
+				["description"] = createLocalizationString({
+					readable = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
+					constant = "EVEN_THOUGH_MIGUEL_CAN_BE_FOUND_IN_NUMEROUS",
+					export = true,
+					text = {
+						en = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "尽管米格尔可以在龙群岛的许多地方找到，但只有在完成知识巨龙碎片任务链后，此任务才会在瓦德拉肯提供。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					69979,	-- A Worthy Hunt
 					67298,	-- The Wonders of the World
@@ -366,7 +383,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(SPECIAL, {
 			i(200932, {	-- Encaged Airy Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elite air elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = createLocalizationString({
+					readable = "In order to capture a soul with Empty Soul Cage, the elite air elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					constant = "IN_ORDER_TO_CAPTURE_A_SOUL_WITH_EMPTY_SOUL_CAGE",
+					export = true,
+					text = {
+						en = "In order to capture a soul with Empty Soul Cage, the elite air elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要使用空荡的灵魂牢笼捕捉灵魂，必须让精英空气元素在带有电击灵魂吸入器减益效果时死亡。\n\n获得灵魂后，在“被囚禁”变为“温顺”之前不要打开该物品，这会在 15 分钟计时结束后发生。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 199414 },	-- Zapthrottle Soul Inhaler
 				["cost"] = { { "i", 200938, 1 } },	-- 1x Empty Soul Cage
 				["coord"] = { 58.2, 66.6, THE_AZURE_SPAN },
@@ -378,7 +412,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(200936, {	-- Encaged Earthen Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elite earth elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = createLocalizationString({
+					readable = "In order to capture a soul with Empty Soul Cage, the elite earth elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					constant = "IN_ORDER_TO_CAPTURE_A_SOUL_WITH_EMPTY_SOUL_CAGE_2",
+					export = true,
+					text = {
+						en = "In order to capture a soul with Empty Soul Cage, the elite earth elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要使用空荡的灵魂牢笼捕捉灵魂，必须让精英土元素在带有电击灵魂吸入器减益效果时死亡。\n\n获得灵魂后，在“被囚禁”变为“温顺”之前不要打开该物品，这会在 15 分钟计时结束后发生。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 199414 },	-- Zapthrottle Soul Inhaler
 				["cost"] = { { "i", 200938, 1 } },	-- 1x Empty Soul Cage
 				["coords"] = {
@@ -394,7 +445,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(200931, {	-- Encaged Fiery Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elite fire elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = createLocalizationString({
+					readable = "In order to capture a soul with Empty Soul Cage, the elite fire elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					constant = "IN_ORDER_TO_CAPTURE_A_SOUL_WITH_EMPTY_SOUL_CAGE_3",
+					export = true,
+					text = {
+						en = "In order to capture a soul with Empty Soul Cage, the elite fire elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要使用空荡的灵魂牢笼捕捉灵魂，必须让精英火元素在带有电击灵魂吸入器减益效果时死亡。\n\n获得灵魂后，在“被囚禁”变为“温顺”之前不要打开该物品，这会在 15 分钟计时结束后发生。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 199414 },	-- Zapthrottle Soul Inhaler
 				["cost"] = { { "i", 200938, 1 } },	-- 1x Empty Soul Cage
 				["coord"] = { 78.4, 38.8, THE_AZURE_SPAN },
@@ -406,7 +474,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(200934, {	-- Encaged Frosty Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elite frost elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = createLocalizationString({
+					readable = "In order to capture a soul with Empty Soul Cage, the elite frost elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					constant = "IN_ORDER_TO_CAPTURE_A_SOUL_WITH_EMPTY_SOUL_CAGE_4",
+					export = true,
+					text = {
+						en = "In order to capture a soul with Empty Soul Cage, the elite frost elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要使用空荡的灵魂牢笼捕捉灵魂，必须让精英冰霜元素在带有电击灵魂吸入器减益效果时死亡。\n\n获得灵魂后，在“被囚禁”变为“温顺”之前不要打开该物品，这会在 15 分钟计时结束后发生。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 199414 },	-- Zapthrottle Soul Inhaler
 				["cost"] = { { "i", 200938, 1 } },	-- 1x Empty Soul Cage
 				["coord"] = { 58.2, 66.6, THE_AZURE_SPAN },

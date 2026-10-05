@@ -620,7 +620,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				},
 			}),
 			o(532226, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+				["description"] = "~L.HELP_US_GATHER_INFORMATION_OF_WHAT_IS_ISN_T",
 				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["modelScale"] = 4,
 				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
@@ -812,7 +812,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 		n(REWARDS, {
 			i(257194, {	-- Artisan's Consortium Flyer (QS!)
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-				["description"] = "Rewarded within the first few wins in queued PvP Content.",
+				["description"] = "~L.REWARDED_WITHIN_THE_FIRST_FEW_WINS_IN_QUEUED",
 			}),
 			i(271341, {	-- Galactic Voidsliver
 				["timeline"] = { ADDED_12_0_5, REMOVED_12_0_7 },

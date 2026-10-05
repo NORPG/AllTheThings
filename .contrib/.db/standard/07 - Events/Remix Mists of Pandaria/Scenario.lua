@@ -268,11 +268,45 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			i(89196, {	-- Theramore Tabard
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."	-- Fixed on 3-June-2024
+				["description"] = createLocalizationString({
+					readable = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great.",
+					constant = "BUYABLE_FROM_THE_TOY_VENDOR_AT_ANY_INFINITE",
+					export = true,
+					text = {
+						en = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在任意无限集市的玩具商人处购买，或由联盟玩家在完成塞拉摩的沦陷场景战役时|cffFF0000恰好为 35 级|R 获得。如果你的经验加成过高，可以卸下披风。",
+						-- TODO: tw = "",
+					},
+				})	-- Fixed on 3-June-2024
 			}),
 			i(89205, {	-- Mini Mana Bomb Toy (TOY!)
 				["races"] = HORDE_ONLY,
-				["description"] = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."	-- Fixed on 3-June-2024
+				["description"] = createLocalizationString({
+					readable = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great.",
+					constant = "BUYABLE_FROM_THE_TOY_VENDOR_AT_ANY_INFINITE_2",
+					export = true,
+					text = {
+						en = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在任意无限集市的玩具商人处购买，或由部落玩家在完成塞拉摩的沦陷场景战役时|cffFF0000恰好为 35 级|R 获得。如果你的经验加成过高，可以卸下披风。",
+						-- TODO: tw = "",
+					},
+				})	-- Fixed on 3-June-2024
 			}),
 		}),
 		m(450, {	-- Unga Ingoo

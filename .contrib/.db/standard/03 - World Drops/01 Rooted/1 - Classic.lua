@@ -228,7 +228,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9745),	-- Simple Cape
 		i(22782, {	-- Sin'dorei Cloak of Warding
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			["description"] = createLocalizationString({
+				readable = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+				constant = "DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
+				export = true,
+				text = {
+					en = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "《德拉诺之王》期间从大型回收箱中掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -1395,7 +1412,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15128),	-- Robust Tunic
 		i(5968, {	-- Rugged Boots
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
 			-- #endif
 			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -1665,7 +1682,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(2989),	-- Burnished Tunic
 		i(54784, {	-- Burnished Tunic
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
 			-- #endif
 			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -1735,7 +1752,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13123),	-- Dreamwalker Armor
 		i(2016, {	-- Dusty Chain Armor
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
 			-- #endif
 			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -1814,7 +1831,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15628),	-- Gryphon Mail Pauldrons
 		i(2273, {	-- Guerrilla Armor
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
 			-- #endif
 			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -2038,7 +2055,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14788),	-- Protector Armguards
 		i(14789, {	-- Protector Breastplate
 			-- #if AFTER 9.2.0
-			["description"] = "Is currently bugged and cannot be sold to vendor.",
+			["description"] = createLocalizationString({
+				readable = "Is currently bugged and cannot be sold to vendor.",
+				constant = "IS_CURRENTLY_BUGGED_AND_CANNOT_BE_SOLD_TO",
+				export = true,
+				text = {
+					en = "Is currently bugged and cannot be sold to vendor.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "目前存在漏洞，无法出售给商人。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		i(14792),	-- Protector Gauntlets
@@ -3183,7 +3217,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12034),	-- Marble Necklace
 		i(5004, {	-- Mark of the Kirin Tor
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Crate of Salvage during Warlords of Draenor.",
+			["description"] = createLocalizationString({
+				readable = "Dropped from Crate of Salvage during Warlords of Draenor.",
+				constant = "DROPPED_FROM_CRATE_OF_SALVAGE_DURING_WARLORDS",
+				export = true,
+				text = {
+					en = "Dropped from Crate of Salvage during Warlords of Draenor.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在德拉诺之王期间由回收箱掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { CREATED_1_11_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -3296,7 +3347,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7734),	-- Six Demon Bag
 		i(14557, {	-- The Lion Horn of Stormwind
 			-- #if WOD
-			["description"] = "Drops from Big Crate of Salvage.",
+			["description"] = createLocalizationString({
+				readable = "Drops from Big Crate of Salvage.",
+				constant = "DROPS_FROM_BIG_CRATE_OF_SALVAGE",
+				export = true,
+				text = {
+					en = "Drops from Big Crate of Salvage.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由大回收箱掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { REMOVED_7_0_3 },
 		}),
@@ -3331,12 +3399,46 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		-- #if AFTER 9.1.0
 		i(3670, {	-- Large Slimy Bone
-			["description"] = "Drops from Slimes in Classic zones.",
+			["description"] = createLocalizationString({
+				readable = "Drops from Slimes in Classic zones.",
+				constant = "DROPS_FROM_SLIMES_IN_CLASSIC_ZONES",
+				export = true,
+				text = {
+					en = "Drops from Slimes in Classic zones.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由经典旧世区域的软泥怪掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		-- #endif
 		i(11733, {	-- Libram of Constitution
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			["description"] = createLocalizationString({
+				readable = "This item is now completely worthless.",
+				constant = "THIS_ITEM_IS_NOW_COMPLETELY_WORTHLESS",
+				export = true,
+				text = {
+					en = "This item is now completely worthless.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "此物品现在已完全无用。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		-- #if BEFORE 5.0.4
@@ -3346,63 +3448,97 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		i(11736, {	-- Libram of Resilience
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			["description"] = "~L.THIS_ITEM_IS_NOW_COMPLETELY_WORTHLESS",
 			-- #endif
 		}),
 		i(11732, {	-- Libram of Rumination
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			["description"] = "~L.THIS_ITEM_IS_NOW_COMPLETELY_WORTHLESS",
 			-- #endif
 		}),
 		i(11734, {	-- Libram of Tenacity
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			["description"] = "~L.THIS_ITEM_IS_NOW_COMPLETELY_WORTHLESS",
 			-- #endif
 		}),
 		i(11737, {	-- Libram of Voracity
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			["description"] = "~L.THIS_ITEM_IS_NOW_COMPLETELY_WORTHLESS",
 			-- #endif
 		}),
 		-- #if AFTER 9.1.0
 		i(3300, {	-- Rabbit's Foot
-			["description"] = "Drops from wolves or dogs in vanilla zones.",
+			["description"] = createLocalizationString({
+				readable = "Drops from wolves or dogs in vanilla zones.",
+				constant = "DROPS_FROM_WOLVES_OR_DOGS_IN_VANILLA_ZONES",
+				export = true,
+				text = {
+					en = "Drops from wolves or dogs in vanilla zones.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由经典旧世区域的狼或狗掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		i(11406, {	-- Rotting Bear Carcass
-			["description"] = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
+			["description"] = createLocalizationString({
+				readable = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
+				constant = "DROPS_FROM_BEARS_IN_VANILLA_ZONES_AND_THE",
+				export = true,
+				text = {
+					en = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由经典旧世区域的熊以及地下城旧希尔斯布莱德丘陵中的熊掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		-- #endif
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_ONE, i(211786, {	-- Scroll: CHAP BALK WELLES
-			["description"] = "'Black Sheep Wall'",
+			["description"] = "~L.BLACK_SHEEP_WALL",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211785, {	-- Scroll: CWAL
-			["description"] = "'Claw'",
+			["description"] = "~L.CLAW",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211780, {	-- Scroll: KWYJIBO
-			["description"] = "This might just be a Simpsons quote.",
+			["description"] = "~L.THIS_MIGHT_JUST_BE_A_SIMPSONS_QUOTE",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211787, {	-- Scroll: LOWER PING WHOMEVER
-			["description"] = "'Overwhelming Power'",
+			["description"] = "~L.OVERWHELMING_POWER",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211854, {	-- Scroll: OMIT KESA
-			["description"] = "'Time Soak'",
+			["description"] = "~L.TIME_SOAK",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211855, {	-- Scroll: STHENIC LUNATE
-			["description"] = "'Ancient Hustle'",
+			["description"] = "~L.ANCIENT_HUSTLE",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211853, {	-- Scroll: VOCE WELL
-			["description"] = "'Cow Level'",
+			["description"] = "~L.COW_LEVEL",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211784, {	-- Scroll: WUBBA WUBBA
-			["description"] = "This might just be a Pee Wee Herman quote.",
+			["description"] = "~L.THIS_MIGHT_JUST_BE_A_PEE_WEE_HERMAN_QUOTE",
 			["classes"] = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX
@@ -3556,7 +3692,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 4.0.3
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				-- #if AFTER 10.1.7
-				["description"] = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
+				["description"] = createLocalizationString({
+					readable = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
+					constant = "CAN_DROP_FROM_ANY_TROLL_IN_ZONES_SUCH_AS_ARATHI",
+					export = true,
+					text = {
+						en = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从阿拉希高地、丹莫罗、荆棘谷、希利苏斯、辛特兰和祖尔格拉布等区域的任意巨魔身上掉落。祖尔格拉布内部是个绝佳的刷点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
 				-- #endif
 				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -4039,7 +4192,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				6011,	-- Felguard Sentry
 			},
 			-- #endif
-			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
+			["description"] = "~L.FELCLOTH_DROPS_UNCOMMONLY_FROM_GIVEN_SATYRS_AND",
 			["maps"] = {
 				DIRE_MAUL_WARPWOOD_QUARTER,
 				-- #if BEFORE CATA
@@ -4048,7 +4201,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(2589, {	-- Linen Cloth
-			["description"] = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["description"] = "~L.LINEN_CLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID",
 			["maps"] = {
 				DUN_MOROGH,
 				DUROTAR,
@@ -4062,7 +4215,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
-			["description"] = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["description"] = "~L.MAGEWEAVE_CLOTH_DROPS_COMMONLY_FROM_ANY",
 			["maps"] = {
 				BADLANDS,
 				BURNING_STEPPES,
@@ -4074,7 +4227,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(14047, {	-- Runecloth
-			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["description"] = "~L.RUNECLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID_AND",
 			["maps"] = {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
@@ -4088,7 +4241,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(4306, {	-- Silk Cloth
-			["description"] = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["description"] = "~L.SILK_CLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID_AND",
 			["maps"] = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
@@ -4101,7 +4254,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(2592, {	-- Wool Cloth
-			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["description"] = "~L.WOOL_CLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID_AND",
 			["maps"] = {
 				ASHENVALE,
 				BLACKFATHOM_DEEPS,
@@ -4148,7 +4301,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5858,	-- Greater Lava Spider
 				5857,	-- Searing Lava Spider
 			},
-			["description"] = "Drops from spiders in Searing Gorge.",
+			["description"] = createLocalizationString({
+				readable = "Drops from spiders in Searing Gorge.",
+				constant = "DROPS_FROM_SPIDERS_IN_SEARING_GORGE",
+				export = true,
+				text = {
+					en = "Drops from spiders in Searing Gorge.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由灼热峡谷的蜘蛛掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { SEARING_GORGE },
 			-- #elseif AFTER 4.0.3
 			["crs"] = {
@@ -4157,7 +4327,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			["description"] = "Drops from spiders in higher level vanilla zones.",
+			["description"] = createLocalizationString({
+				readable = "Drops from spiders in higher level vanilla zones.",
+				constant = "DROPS_FROM_SPIDERS_IN_HIGHER_LEVEL_VANILLA",
+				export = true,
+				text = {
+					en = "Drops from spiders in higher level vanilla zones.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由高等经典旧世区域的蜘蛛掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #else
 			["crs"] = {
 				1821,	-- Carrion Lurker
@@ -4166,7 +4353,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			["description"] = "Drops from spiders in the level bracket 45-60.",
+			["description"] = "~L.DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_45_60",
 			-- #endif
 		}),
 		i(3182, {	-- Spider's Silk
@@ -4209,7 +4396,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1822,	-- Venom Mist Lurker
 				-- #endif
 			},
-			["description"] = "Drops from spiders in the level bracket 32-60.",
+			["description"] = "~L.DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_32_60",
 			["maps"] = {
 				DUSTWALLOW_MARSH,
 				-- #if BEFORE CATA
@@ -4292,7 +4479,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			-- #if AFTER 4.0.3
-			["description"] = "Silithus is the best place to farm these in terms of mob density and drop rate.",
+			["description"] = createLocalizationString({
+				readable = "Silithus is the best place to farm these in terms of mob density and drop rate.",
+				constant = "SILITHUS_IS_THE_BEST_PLACE_TO_FARM_THESE_IN",
+				export = true,
+				text = {
+					en = "Silithus is the best place to farm these in terms of mob density and drop rate.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "就怪物密度和掉率而言，希利苏斯是刷这些物品的最佳地点。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		i(7082, {	-- Essence of Air
@@ -4320,7 +4524,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			-- #if AFTER TBC
-			["description"] = "If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",
+			["description"] = createLocalizationString({
+				readable = "If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",
+				constant = "IF_THERE_IS_COMPETITION_ABOUT_SPAWNS_IN",
+				export = true,
+				text = {
+					en = "If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "如果希利苏斯的刷新点有竞争，纳格兰是第二好的选择，那里几乎到处都能找到风元素。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { NAGRAND },
 			-- #endif
 		}),
@@ -5349,7 +5570,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				15651,	-- Springpaw Stalker
 				16347,	-- Starving Ghostclaw
 			},
-			["description"] = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
+			["description"] = createLocalizationString({
+				readable = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
+				constant = "ONLY_DROPS_FROM_LYNXES_IN_EVERSONG_FOREST",
+				export = true,
+				text = {
+					en = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "仅从永歌森林（逐日岛除外）和幽魂之地的山猫身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_1 },
 		}),
 		i(12223, {	-- Meaty Bat Wing
@@ -5588,7 +5826,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				6033,	-- Lake Frenzy
 				2173,	-- Reef Frenzy
 			},
-			["description"] = "Drops from frenzies found in bodies of water.",
+			["description"] = "~L.DROPS_FROM_FRENZIES_FOUND_IN_BODIES_OF_WATER",
 			["maps"] = { SILVERPINE_FOREST },
 		}),
 		i(67229, {	-- Stag Flank
@@ -5602,7 +5840,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				33311,	-- Darkshore Stag
 				35096,	-- Weakened Mosshoof Stag
 			},
-			["description"] = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
+			["description"] = createLocalizationString({
+				readable = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
+				constant = "ONLY_DROPS_FROM_THE_GIVEN_STAGS_BROWN_STAGS_CAN",
+				export = true,
+				text = {
+					en = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "仅从下列雄鹿身上掉落。棕鹿只能在吉尔尼斯相位中找到，仅限新创建的狼人角色。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_4_0_3 },	-- Danny Conkey: At earliest, possibly added in a later patch.
 		}),
 		i(5471, {	-- Stag Meat
@@ -5616,7 +5871,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				3817,	-- Shadowhorn Stag
 				3816,	-- Wild Buck
 			},
-			["description"] = "Drops from stags in Ashenvale as well as some other vanilla zones.",
+			["description"] = "~L.DROPS_FROM_STAGS_IN_ASHENVALE_AS_WELL_AS_SOME",
 		}),
 		i(5469, {	-- Strider Meat
 			-- #if AFTER 4.0.3
@@ -5909,13 +6164,30 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(1288, {	-- Large Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "~L.CAN_DROP_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_20",
 			["maps"] = {
 				ASHENVALE,
 				DUSKWOOD,
 			},
 			-- #elseif AFTER BFA
-			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = createLocalizationString({
+				readable = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+				constant = "CAN_DROP_FROM_SPIDERS_IN_MOST_VANILLA_ZONES_AND",
+				export = true,
+				text = {
+					en = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可从大多数经典旧世区域的蜘蛛身上掉落，在灰谷和暮色森林最为丰富。蜘蛛常与其他野兽共享刷新点，所以如果找不到蜘蛛，就杀掉熊或其他怪物。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				ASHENVALE,
 				DUSKWOOD,
@@ -5939,9 +6211,26 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			-- #endif
 			-- #if AFTER 4.0.3
-			["description"] = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
+			["description"] = createLocalizationString({
+				readable = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
+				constant = "CAN_DROP_FROM_ALL_BIRDS_HARPIES_OWLKIN_AND",
+				export = true,
+				text = {
+					en = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可从卡利姆多、东部王国、外域和诺森德的所有鸟类、鹰身女妖、枭兽和长脚鸟身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #else
-			["description"] = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
+			["description"] = "~L.DROPS_FROM_BIRDS_HARPIES_OWLKIN_AND_STRIDERS_IN",
 			-- #endif
 		}),
 		i(4589, {	-- Long Elegant Feather
@@ -5961,7 +6250,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2658,	-- Razorbeak Gryphon
 				2651,	-- Witherbark Hideskinner
 			},
-			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
+			["description"] = "~L.ALLIANCE_PLAYERS_CAN_DISREGARD_THE_HINTERLANDS",
 			["maps"] = { THE_HINTERLANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
@@ -5970,7 +6259,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 32.4, 66.0, STONETALON_MOUNTAINS },
 				{ 79.0, 77.0, THOUSAND_NEEDLES },
 			},
-			["description"] = "Drops from birds and harpies in the given zones.",
+			["description"] = "~L.DROPS_FROM_BIRDS_AND_HARPIES_IN_THE_GIVEN_ZONES",
 			["maps"] = {
 				ARATHI_HIGHLANDS,
 				BADLANDS,
@@ -5980,7 +6269,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(7072, {	-- Naga Scale
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
+			["description"] = "~L.DROPS_FROM_NAGAS_RANGING_FROM_LEVEL_28_TO_40",
 			["maps"] = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
@@ -5989,25 +6278,42 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #else
 			["coord"] = { 29.0, 11.0, DESOLACE },
 			["cr"] = 4719,	-- Slitherblade Sea Witch
-			["description"] = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
+			["description"] = createLocalizationString({
+				readable = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
+				constant = "CATACLYSM_MESSED_UP_WITH_THE_DROP_SOURCES_FOR",
+				export = true,
+				text = {
+					en = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "大灾变搞乱了纳迦鳞片的掉落来源。滑刃海巫似乎是最可靠的来源。建议用更擅长在水中刷怪的角色来刷取。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		i(12804, {	-- Powerful Mojo
 			-- #if BEFORE 4.0.3
 			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
 			-- #endif
-			["description"] = "Can drop from trolls.",
+			["description"] = "~L.CAN_DROP_FROM_TROLLS",
 			["maps"] = {
 				LBRS_TAZZALOR,
 				ZULGURUB,
 			},
 		}),
 		i(18335, {	-- Pristine Black Diamond
-			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
+			["description"] = "~L.CAN_DROP_FROM_ANY_CONTENT_INTENDED_FOR_LEVEL",
 		}),
 		i(4461, {	-- Raptor Hide
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from raptors ranging from level 30 to 40.",
+			["description"] = "~L.DROPS_FROM_RAPTORS_RANGING_FROM_LEVEL_30_TO_40",
 			["maps"] = {
 				ARATHI_HIGHLANDS,
 				DUSTWALLOW_MARSH,
@@ -6016,12 +6322,29 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #else
 			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
 			["cr"] = 2561,	-- Highland Fleshstalker
-			["description"] = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			["description"] = createLocalizationString({
+				readable = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+				constant = "CATACLYSM_MESSED_UP_WITH_THE_DROP_SOURCES_FOR_2",
+				export = true,
+				text = {
+					en = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "大灾变搞乱了迅猛龙皮的掉落来源。按理说应在特定等级范围内的所有迅猛龙身上掉落。高地猎肉者似乎是最可靠的来源。建议用需要剥皮技能或剥皮材料的角色来刷取。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		i(5635, {	-- Sharp Claw
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
+			["description"] = "~L.DROPS_FROM_SOME_BEAST_AND_DEMON_CREATURES_LIKE_2",
 			["maps"] = {
 				ASHENVALE,
 				DARKSHORE,
@@ -6054,15 +6377,49 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				16349,	-- Ghostclaw Ravager
 				16347,	-- Starving Ghostclaw
 			},
-			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+			["description"] = createLocalizationString({
+				readable = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+				constant = "CATACLYSM_MESSED_UP_WITH_THE_DROP_SOURCES_FOR_3",
+				export = true,
+				text = {
+					en = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "大灾变搞乱了锋利爪子的掉落来源。按理说应从猎犬、猫科动物、蜘蛛、迅猛龙和蝙蝠等野兽与恶魔生物身上掉落。幽魂之地的幽灵爪猞猁似乎是最可靠的来源。建议用需要剥皮技能或剥皮材料的角色来刷取！",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		i(5784, {	-- Slimy Murloc Scale
 			-- #if AFTER 4.0.3
-			["description"] = "Drops from murlocs Blackfathom Deeps.",
+			["description"] = createLocalizationString({
+				readable = "Drops from murlocs Blackfathom Deeps.",
+				constant = "DROPS_FROM_MURLOCS_BLACKFATHOM_DEEPS",
+				export = true,
+				text = {
+					en = "Drops from murlocs Blackfathom Deeps.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由黑暗深渊的鱼人掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { BLACKFATHOM_DEEPS },
 			-- #else
-			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
+			["description"] = "~L.DROPS_FROM_MURLOCS_IN_THE_LEVEL_BRACKET_15_25",
 			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
 			["crs"] = {
 				1026,	-- Bluegill Forager
@@ -6078,7 +6435,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4402, {	-- Small Flame Sac
 			-- #if AFTER 4.0.3
 			["cr"] = 14398,	-- Eldreth Darter
-			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+			["description"] = createLocalizationString({
+				readable = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+				constant = "CATACLYSM_MESSED_UP_WITH_THE_DROP_SOURCES_FOR_4",
+				export = true,
+				text = {
+					en = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "大灾变搞乱了小火囊的掉落来源。按理说应从尖啸者和小龙等小型龙类身上掉落。厄运之槌首都花园中的埃尔德雷什疾龙似乎是最可靠的来源。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { DIRE_MAUL },
 			-- #else
 			["coords"] = {
@@ -6089,12 +6463,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 15.0, 61.0, SWAMP_OF_SORROWS },
 				{ 62.0, 42.0, WETLANDS },
 			},
-			["description"] = "Drops from small dragonkin like darters and whelps.",
+			["description"] = "~L.DROPS_FROM_SMALL_DRAGONKIN_LIKE_DARTERS_AND",
 			-- #endif
 		}),
 		i(1475, {	-- Small Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "~L.CAN_DROP_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_5_20",
 			["maps"] = {
 				LOCH_MODAN,
 				STONETALON_MOUNTAINS,
@@ -6106,7 +6480,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				17522,	-- Myst Spinner
 				17683,	-- Zarakh
 			},
-			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+			["description"] = createLocalizationString({
+				readable = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+				constant = "CATACLYSM_MESSED_UP_WITH_THE_DROP_SOURCES_FOR_5",
+				export = true,
+				text = {
+					en = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "大灾变搞乱了小毒囊的掉落来源，不幸的是对部落玩家来说唯一可靠的刷取地点在秘蓝岛。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 		i(3174, {	-- Spider Ichor
@@ -6163,7 +6554,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				41426,	-- Bluegill Oracle
 				42110,	-- Bluegill Puddlejumper
 			},
-			["description"] = "Drops from Bluegill murlocs in Wetlands.",
+			["description"] = createLocalizationString({
+				readable = "Drops from Bluegill murlocs in Wetlands.",
+				constant = "DROPS_FROM_BLUEGILL_MURLOCS_IN_WETLANDS",
+				export = true,
+				text = {
+					en = "Drops from Bluegill murlocs in Wetlands.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由湿地中的蓝鳃鱼人掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #elseif ANYCLASSIC
 			["maps"] = {
 				-- #if AFTER MOP
@@ -6238,13 +6646,30 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(8153, {	-- Wildvine
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from trolls ranging from level 40 to 50.",
+			["description"] = "~L.DROPS_FROM_TROLLS_RANGING_FROM_LEVEL_40_TO_50",
 			["maps"] = {
 				STRANGLETHORN_VALE,
 				THE_HINTERLANDS,
 			},
 			-- #else
-			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+			["description"] = createLocalizationString({
+				readable = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+				constant = "CATACLYSM_MESSED_UP_WITH_THE_DROP_SOURCES_FOR_6",
+				export = true,
+				text = {
+					en = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "大灾变搞乱了野葡萄藤的掉落来源。按理说应从辛特兰和荆棘谷的巨魔身上掉落，但用草药学采集紫莲花才是最可靠的来源。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 		}),
 	}),

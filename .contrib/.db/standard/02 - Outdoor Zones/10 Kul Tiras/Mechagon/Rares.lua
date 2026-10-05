@@ -7,7 +7,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 		n(RARES, {
 			n(COMMON_BOSS_DROPS, {
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
-					["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
+					["description"] = createLocalizationString({
+						readable = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
+						constant = "THIS_BLUEPRINT_WILL_DROP_FROM_THE_FIRST_RARE",
+						export = true,
+						text = {
+							en = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你的锈栓抵抗军声望达到中立后，这张图纸会从你击杀的第一只稀有生物身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(168327),	-- Chain Ignitercoil
 			}),
@@ -16,13 +33,47 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			]]--
 			-- TODO:  See Hidden Quest Triggers.lua for remaining first kill id's needed
 			n(150306, {	-- Drill Rig
-				["description"] = "These rares are only available when the Drill Rig is an active construction project. Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement. Hover over each rare in the list to see its announcement.",
+				["description"] = createLocalizationString({
+					readable = "These rares are only available when the Drill Rig is an active construction project. Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement. Hover over each rare in the list to see its announcement.",
+					constant = "THESE_RARES_ARE_ONLY_AVAILABLE_WHEN_THE_DRILL",
+					export = true,
+					text = {
+						en = "These rares are only available when the Drill Rig is an active construction project. Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement. Hover over each rare in the list to see its announcement.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "只有在钻探机是进行中的建造项目时，这些稀有才会出现。与 |Cff00991a沃伦·齿轮之心|r |Cffffffff(73.0, 33.5)|r 交谈，查看当前可用的建造项目。\r\r每个稀有刷新时都会伴随一条特定的全区域公告。将鼠标悬停在列表中的每个稀有上即可查看其公告。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					n(153200, {	-- Boilburn
 						["questID"] = 55857,	-- no second questID
 						["coord"] = { 51.1, 50.4, MECHAGON },
 						["isDaily"] = true,
-						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_SEE_THIS_MESSAGE_IN_CHAT",
+							export = true,
+							text = {
+								en = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-JD41...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(167042),	-- Blueprint: Scrap Trap
 							i(169691),	-- Vinyl: Depths of Ulduar
@@ -35,7 +86,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							-- { 51.3, 47.8, MECHAGON },
 						},
 						["isDaily"] = true,
-						["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_THIS_MESSAGE_IN_CHAT",
+							export = true,
+							text = {
+								en = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-CC73...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(169170),	-- Blueprint: Utility Mechanoclaw
 						},
@@ -44,7 +112,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["questID"] = 55814,
 						["coord"] = { 63.9, 24.4, MECHAGON },
 						["isDaily"] = true,
-						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_SEE_THIS_MESSAGE_IN_CHAT_2",
+							export = true,
+							text = {
+								en = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-TR35...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(167042),	-- Blueprint: Scrap Trap
 						},
@@ -53,7 +138,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["questID"] = 55855,
 						["coord"] = { 57.6, 69.2, MECHAGON },
 						["isDaily"] = true,
-						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_SEE_THIS_MESSAGE_IN_CHAT_3",
+							export = true,
+							text = {
+								en = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-JD99...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(169691),	-- Vinyl: Depths of Ulduar
 						},
@@ -65,7 +167,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							-- { 51.3, 47.8, MECHAGON },
 						},
 						["isDaily"] = true,
-						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_SEE_THIS_MESSAGE_IN_CHAT_4",
+							export = true,
+							text = {
+								en = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-CC61...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(167846),	-- Blueprint: Mechano-Treat
 						},
@@ -74,7 +193,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["questID"] = 55853,
 						["coord"] = { 55.6, 39.5, MECHAGON },
 						["isDaily"] = true,
-						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_SEE_THIS_MESSAGE_IN_CHAT_5",
+							export = true,
+							text = {
+								en = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-TR28...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(167846),	-- Blueprint: Mechano-Treat
 							i(169691),	-- Vinyl: Depths of Ulduar
@@ -88,7 +224,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							-- { 51.3, 47.8, MECHAGON },
 						},
 						["isDaily"] = true,
-						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["description"] = createLocalizationString({
+							readable = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+							constant = "SPAWNING_WHEN_YOU_SEE_THIS_MESSAGE_IN_CHAT_6",
+							export = true,
+							text = {
+								en = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r. Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你看到聊天中的这条消息“|cffe1780c钻井平台 DR-CC88...|r，”时刷新，或激活|cFFFFD700钻井平台|r。仅当|cFFFFD700钻井平台|r为建造项目时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(169886),	-- Spraybot 0D (PET!)
 						},
@@ -96,7 +249,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			n(151934, {	-- Arachnoid Harvester
-				["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout. You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
+				["description"] = createLocalizationString({
+					readable = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout. You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
+					constant = "BOTH_VERSIONS_OF_ARACHNOID_HARVESTER_THE",
+					export = true,
+					text = {
+						en = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout. You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "蛛形收割者的两个版本（当前时间线和替代时间线）掉落相同的战利品，并共享每日锁定。如果克罗米不在锈栓镇，你可以使用个人时光置换器前往替代时间线。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 55512,
 				["isDaily"] = true,
 				["coord"] = { 52.6, 41.0, MECHAGON },
@@ -109,7 +279,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["cr"] = 154968,	-- future ID
 				["questID"] = 55546,
 				["isDaily"] = true,
-				["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat. If you've time-traveled to the future, you must use a key to unlock it.",
+				["description"] = createLocalizationString({
+					readable = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat. If you've time-traveled to the future, you must use a key to unlock it.",
+					constant = "KITE_IT_TO_THE_LARGE_MAGNET_AT_CFFFFD700BONDO_S",
+					export = true,
+					text = {
+						en = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat. If you've time-traveled to the future, you must use a key to unlock it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "将它风筝到|cFFFFD700邦多的废料场|r的大型磁铁处，使它变得脆弱以便击杀；或者在它进入战斗之前使用|cFFFFD700装甲保险库机器人钥匙|r解锁它。如果你穿越到了未来时间线，则必须使用钥匙才能解锁它。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 167062, 1 } },	-- 1x Armored Vaultbot Key
 				["coords"] = {
 					{ 53.6, 46.4, MECHAGON },
@@ -145,7 +332,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["questID"] = 55812,
 				["coord"] = { 82.3, 21.0, MECHAGON },
 				["isDaily"] = true,
-				["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
+				["description"] = createLocalizationString({
+					readable = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
+					constant = "THE_TROGG_WILL_YELL_A_SPECIFIC_COLOR_GO_TO",
+					export = true,
+					text = {
+						en = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "穴居人会喊出一种特定颜色。前往邦多的院子|cFFFFFFFF(63.3, 42.5)|r把自己染成那个颜色，然后回到他的洞穴。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = {
 					149847,	-- Crazed Trogg
 					152570,	-- Crazed Trogg
@@ -164,14 +368,48 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["questID"] = 55514,
 				["coord"] = { 35.3, 43.0, MECHAGON },
 				["isDaily"] = true,
-				["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw. Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
+				["description"] = createLocalizationString({
+					readable = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw. Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
+					constant = "MUST_COMPLETE_THE_CFFFFD700LET_S_FISH_R",
+					export = true,
+					text = {
+						en = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw. Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须完成|cFFFFD700来钓鱼吧！|r任务线才能刷出深水巨喉。召唤需要|cffa335ee百噚诱饵|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(168804),	-- Powered Piscine Procurement Pole
 					i(167836),	-- Blueprint: Canned Minnows
 				},
 			}),
 			n(155060, {	-- Doppel Ganger
-				["description"] = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
+				["description"] = createLocalizationString({
+					readable = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
+					constant = "THIS_RARE_ONLY_SPAWNS_WHEN_THE",
+					export = true,
+					text = {
+						en = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此稀有怪仅在 |cFFFFD700齿轮狂乱的建设狂潮|r 任务激活时刷新，并需要三个 |cFF0070dd泄压阀|r 才能召唤。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 56419,
 				["coord"] = { 81.0, 20.2, MECHAGON },
 				["cost"] = {{"i",169470,3}},	-- Pressure Relief Valve
@@ -201,7 +439,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			n(151884, {	-- Fungarian Furor
-				["description"] = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the quest area and look for a mushroom with the NPC ID 135497. Clicking on that mushroom will spawn the rare. If no mushroom with that ID is up, you'll need to click on some other ones to try to get the correct one to respawn.",
+				["description"] = createLocalizationString({
+					readable = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the quest area and look for a mushroom with the NPC ID 135497. Clicking on that mushroom will spawn the rare. If no mushroom with that ID is up, you'll need to click on some other ones to try to get the correct one to respawn.",
+					constant = "WHEN_THE_CFFFFD700AID_FROM_NORDRASSIL_R_QUEST",
+					export = true,
+					text = {
+						en = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the quest area and look for a mushroom with the NPC ID 135497. Clicking on that mushroom will spawn the rare. If no mushroom with that ID is up, you'll need to click on some other ones to try to get the correct one to respawn.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "当|cFFFFD700来自诺达希尔的援助|r任务激活时，在任务区域飞行，寻找 NPC ID 为 135497 的蘑菇。点击那个蘑菇会刷新稀有。如果没有该 ID 的蘑菇，你需要点击其他一些蘑菇，试着让正确的那一个刷新出来。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 55367,
 				["isDaily"] = true,
 				["coord"] = { 44.5, 41.1, MECHAGON },	-- center of quest area / area with mushrooms
@@ -214,7 +469,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			n(153228, {	-- Gear Checker Cogstar	-- possibly 154184?
 				["questID"] = 55852,
 				["isDaily"] = true,
-				["description"] = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
+				["description"] = createLocalizationString({
+					readable = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
+					constant = "RANDOM_SPAWN_WHEN_YOU_KILL_CFFFFD700UPGRADED",
+					export = true,
+					text = {
+						en = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "击杀|cFFFFD700升级哨兵|r时随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
 					i(170467),	-- Whirring Chainblade
@@ -229,7 +501,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			n(152007, {	-- Killsaw
-				["description"] = "This rare doesn't spawn on days when the Venture Co. invades the Fleeting Forest.",
+				["description"] = createLocalizationString({
+					readable = "This rare doesn't spawn on days when the Venture Co. invades the Fleeting Forest.",
+					constant = "THIS_RARE_DOESN_T_SPAWN_ON_DAYS_WHEN_THE",
+					export = true,
+					text = {
+						en = "This rare doesn't spawn on days when the Venture Co. invades the Fleeting Forest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "当风险投资公司入侵瞬息森林的日子，此稀有怪不会刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 55369,
 				["coords"] = {
 					{ 42.6, 48.7, MECHAGON },
@@ -244,7 +533,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["questID"] = 55544,
 				["coord"] = { 60.7, 42.2, MECHAGON },
 				["isDaily"] = true,
-				["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
+				["description"] = createLocalizationString({
+					readable = "Requires a |cFFFFD700Beastbot Powerpack|r.",
+					constant = "REQUIRES_A_CFFFFD700BEASTBOT_POWERPACK_R",
+					export = true,
+					text = {
+						en = "Requires a |cFFFFD700Beastbot Powerpack|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要|cFFFFD700野兽机器人动力包|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(169173),	-- Blueprint: Anti-Gravity Pack
 					i(169382),	-- Lost Robogrip (PET!)
@@ -283,7 +589,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			n(151296, {	-- OOX-Avenger/MG
-				["description"] = "This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",
+				["description"] = createLocalizationString({
+					readable = "This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",
+					constant = "THIS_RARE_ONLY_SPAWNS_WHEN_THE_CFFFFD700MY",
+					export = true,
+					text = {
+						en = "This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此稀有怪仅在 |cFFFFD700我的鸡不是用来吃的！|r 任务激活时刷新。找到并杀死 OOX-迅足/MG 会刷新该稀有怪，但你很可能需要组队才能做到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 55515,
 				["coord"] = { 57.0, 39.8, MECHAGON },
 				["crs"] = { 151159 },	-- OOX-Fleetfoot/MG
@@ -336,7 +659,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					}),
 					i(168395, {	-- Irradiated Box of Assorted Parts
 						["questID"] = 55794,	-- popped immediately upon death of final golems; shift+clicking to refresh afterwards also popped 55848. this item was the only thing i received from HM rig. it's possible that 55848 is the "item received" quest and that 55794 is the "rig done for the first time today" quest when hardmode is active (or vice versa!)... if we could isolate the non-hardmode "rig is done for the first time today" quest then we could maybe attach both with altQuests. WHY IS QUEST TRACKING SO COMPLICATED. @BLIZZARD ANSWER FOR YOUR CRIMES
-						["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable. If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
+						["description"] = createLocalizationString({
+							readable = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable. If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
+							constant = "DURING_THE_RECLAMATION_RIG_EVENT_USE_THE",
+							export = true,
+							text = {
+								en = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable. If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“回收钻井平台”事件期间，对每个被辐射的元素使用超级对撞机，使它们变得不稳定。如果你正确完成了困难模式事件，将在遭遇战结束时面对三个不稳定的被辐射魔像。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isDaily"] = true,
 						["groups"] = {
 							i(168495),	-- Blueprint: Rustbolt Requisitions
@@ -345,7 +685,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						},
 					}),
 					i(169878, {	-- Irradiated Undercoat
-						["description"] = "This shirt can drop from mobs during the Reclamation Rig event. Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes. You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
+						["description"] = createLocalizationString({
+							readable = "This shirt can drop from mobs during the Reclamation Rig event. Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes. You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
+							constant = "THIS_SHIRT_CAN_DROP_FROM_MOBS_DURING_THE",
+							export = true,
+							text = {
+								en = "This shirt can drop from mobs during the Reclamation Rig event. Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes. You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此衬衫可以在回收装置事件期间从怪物身上掉落。装备它，通过攻击更多事件怪物收集 100 个不稳定的同位素，然后使用衬衫吸收这些同位素。每 24 小时只能吸收一次同位素，用掉衬衫全部五次充能后你就会获得该宠物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(169879),	-- Irradiated Elementaling (PET!)
 							i(169877),	-- Unstable Isotopes
@@ -389,7 +746,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			n(153000, {	-- Sparkqueen P'Emp
-				["description"] = "This rare only spawns when the |cFFFFD700Bugs, Lots of 'Em!|r quest is active. When it spawns, Razak Ironsides will yell, \"|cFFff4040Wait till that bug gets close, then blow it to pieces!  I want nothing left.|r  Kill it before it gets close to Razak, or he'll kill it and you won't get loot or credit.",
+				["description"] = createLocalizationString({
+					readable = "This rare only spawns when the |cFFFFD700Bugs, Lots of 'Em!|r quest is active. When it spawns, Razak Ironsides will yell, \"|cFFff4040Wait till that bug gets close, then blow it to pieces!  I want nothing left.|r  Kill it before it gets close to Razak, or he'll kill it and you won't get loot or credit.",
+					constant = "THIS_RARE_ONLY_SPAWNS_WHEN_THE_CFFFFD700BUGS",
+					export = true,
+					text = {
+						en = "This rare only spawns when the |cFFFFD700Bugs, Lots of 'Em!|r quest is active. When it spawns, Razak Ironsides will yell, \"|cFFff4040Wait till that bug gets close, then blow it to pieces!  I want nothing left.|r  Kill it before it gets close to Razak, or he'll kill it and you won't get loot or credit.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此稀有怪仅在 |cFFFFD700虫子，好多虫子！|r 任务激活时刷新。它刷新时，拉扎克·铁肋会喊道：“|cFFff4040等那虫子靠近点，再把它炸成碎片！我一点都不要剩下。|r  在它靠近拉扎克之前杀死它，否则他会杀了它，你将无法获得战利品或击杀计数。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 55810,
 				["coord"] = { 83.8, 22.0, MECHAGON },
 				["isDaily"] = true,
@@ -409,7 +783,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["questID"] = 56182,
 				["coord"] = { 57.2, 58.6, MECHAGON },
 				["isDaily"] = true,
-				["description"] = "Does not spawn when the daily quest |cFFFFD700The Other Place|r is active, must use the Personal Time Displacer to access Alt Time.",
+				["description"] = createLocalizationString({
+					readable = "Does not spawn when the daily quest |cFFFFD700The Other Place|r is active, must use the Personal Time Displacer to access Alt Time.",
+					constant = "DOES_NOT_SPAWN_WHEN_THE_DAILY_QUEST",
+					export = true,
+					text = {
+						en = "Does not spawn when the daily quest |cFFFFD700The Other Place|r is active, must use the Personal Time Displacer to access Alt Time.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "当日常任务|cFFFFD700另一个地方|r激活时不会刷新，必须使用个人时间置换器进入平行时间。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(169347),	-- Judgment of Mechagon (TOY!)
 					i(170467),	-- Whirring Chainblade

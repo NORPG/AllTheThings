@@ -487,7 +487,24 @@ local MERCHANT_GROUPS = {
 	}),
 	i(34599, {	-- Juggling Torch
 		-- #if AFTER WRATH
-		["description"] = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
+		["description"] = createLocalizationString({
+			readable = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
+			constant = "YOU_WILL_NEED_10_OF_THESE_TORCHES_TO_COMPLETE",
+			export = true,
+			text = {
+				en = "You will need 10 of these torches to complete the |cffffff00Torch Juggler|r achievement.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "你需要 10 个这种火炬才能完成|cffffff00火炬杂耍|r成就。",
+				-- TODO: tw = "",
+			},
+		}),
 		-- #endif
 		["cost"] = { { "i", BURNING_BLOSSOM, 5 } },
 		["timeline"] = { ADDED_2_4_0 },
@@ -569,7 +586,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						}),
 						hqt(83134, {	-- Has rolled for Ahune Special Loot (2025) (Daily Accountwide)
 							["name"] = "Has rolled for Ahune Special Loot (2025) (Daily Accountwide)",
-							["description"] = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["description"] = createLocalizationString({
+								readable = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+								constant = "THESE_ITEMS_ARE_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
+								export = true,
+								text = {
+									en = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这些物品每个战团每天只有第一次尝试才有掉落资格，但每一次符合条件的失败尝试都会提高掉落几率。\n\n你可以在战网账号上使用额外的（新手版）许可证来提高几率。这样可以同时登录多个游戏客户端，最多可让 5 个角色同时排队。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { ADDED_10_2_7 },
 							["isDaily"] = true,
 							["groups"] = {
@@ -597,7 +631,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							["name"] = "Sun Festival's Painted Roc Attempt (Daily Account Lockout)",
 							["timeline"] = { ADDED_12_0_7 },
 							["isDaily"] = true,
-							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["description"] = "~L.THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
 							["groups"] = {
 								i(275464, {	-- Sun Festival's Painted Roc (MOUNT!)
 									["timeline"] = { ADDED_12_0_7 },
@@ -606,7 +640,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						}),
 						hqt(97116, {	-- Has rolled for Ahune Special Loot (2026) (Daily Accountwide)
 							["name"] = "Has rolled for Ahune Special Loot (2026) (Daily Accountwide)",
-							["description"] = "These items are only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["description"] = "~L.THESE_ITEMS_ARE_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
 							["timeline"] = { ADDED_12_0_7 },
 							["isDaily"] = true,
 							["groups"] = {
@@ -664,7 +698,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					},
 				}),
 				i(35723, {	-- Shards of Ahune
-					["description"] = "This item can be looted and completed once per character.",
+					["description"] = createLocalizationString({
+						readable = "This item can be looted and completed once per character.",
+						constant = "THIS_ITEM_CAN_BE_LOOTED_AND_COMPLETED_ONCE_PER",
+						export = true,
+						text = {
+							en = "This item can be looted and completed once per character.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此物品每个角色可以拾取并完成一次。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_2_4_0 },
 				}),
 				i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
@@ -1053,7 +1104,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 		})),
 		ach(271, {	-- Burning Hot Pole Dance
-			["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
+			["description"] = createLocalizationString({
+				readable = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
+				constant = "YOU_NEED_THE_MANTLE_OF_THE_FIRE_FESTIVAL",
+				export = true,
+				text = {
+					en = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "你需要火焰节衬肩、夏日外衣和夏日凉鞋来凑齐仲夏套装。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(263, {	-- Ice the Frost Lord
@@ -1188,7 +1256,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["lvl"] = lvlsquish(65, 15, 15),
 		}),
 		q(11891, {	-- An Innocent Disguise
-			["description"] = "Use your Totemic Beacon to summon the quest giver.",
+			["description"] = createLocalizationString({
+				readable = "Use your Totemic Beacon to summon the quest giver.",
+				constant = "USE_YOUR_TOTEMIC_BEACON_TO_SUMMON_THE_QUEST",
+				export = true,
+				text = {
+					en = "Use your Totemic Beacon to summon the quest giver.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "使用你的图腾信标来召唤任务发布者。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 11886,	-- Unusual Activity
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 10.2, 15.3, ASHENVALE },
@@ -1366,7 +1451,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(29092, {	-- Inform the Elder (A)
-			["description"] = "Use your Totemic Beacon to summon the quest giver.",
+			["description"] = "~L.USE_YOUR_TOTEMIC_BEACON_TO_SUMMON_THE_QUEST",
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
@@ -1376,7 +1461,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["lvl"] = lvlsquish(16, 1, 1),
 		}),
 		q(12012, {	-- Inform the Elder (H)
-			["description"] = "Use your Totemic Beacon to summon the quest giver.",
+			["description"] = "~L.USE_YOUR_TOTEMIC_BEACON_TO_SUMMON_THE_QUEST",
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },

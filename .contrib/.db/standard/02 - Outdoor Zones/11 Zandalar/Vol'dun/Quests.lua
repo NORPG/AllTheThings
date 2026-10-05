@@ -275,7 +275,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					i(153419),	-- Captain Gulnaku's Key (QI!)
 					i(163633, {	-- Captain Gulnaku's Treasure
-						["description"] = "Contains a small amount of gold and some green gems.",
+						["description"] = createLocalizationString({
+							readable = "Contains a small amount of gold and some green gems.",
+							constant = "CONTAINS_A_SMALL_AMOUNT_OF_GOLD_AND_SOME_GREEN",
+							export = true,
+							text = {
+								en = "Contains a small amount of gold and some green gems.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "内含少量金币和一些绿色宝石。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -327,7 +344,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49261, {	-- Crabby Crew Stew
-				["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
+				["description"] = createLocalizationString({
+					readable = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
+					constant = "MUST_BE_WEARING_ASHVANE_GARB_TO_PICK_UP_AND",
+					export = true,
+					text = {
+						en = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须穿着艾什凡服装才能接取和交付该任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 				["coord"] = { 44.6, 88.2, VOLDUN },
 				-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
@@ -531,7 +565,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(50596, {	-- Exterminate the Vermin
-				["description"] = "Use the Scepter of Prescience in the building at 47.73 to get the snake disguise to pick up this quest.",
+				["description"] = createLocalizationString({
+					readable = "Use the Scepter of Prescience in the building at 47.73 to get the snake disguise to pick up this quest.",
+					constant = "USE_THE_SCEPTER_OF_PRESCIENCE_IN_THE_BUILDING",
+					export = true,
+					text = {
+						en = "Use the Scepter of Prescience in the building at 47.73 to get the snake disguise to pick up this quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在 47.73 处的建筑中使用预知权杖获得蛇形伪装，以接取此任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 50536 },	-- Magic Decoder Device (appears while on quest while friendly to sethrak)
 				["provider"] = { "n", 134408 },	-- Foreman Jethek
 				["coords"] = {
@@ -543,7 +594,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["crs"] = { 134245 },	-- Scepter of Prescience
 			}),
 			q(49040, {	-- Fond Farewells
-				["description"] = "This version is available before completing Ending the Madness.",
+				["description"] = createLocalizationString({
+					readable = "This version is available before completing Ending the Madness.",
+					constant = "THIS_VERSION_IS_AVAILABLE_BEFORE_COMPLETING",
+					export = true,
+					text = {
+						en = "This version is available before completing Ending the Madness.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此版本在完成终结疯狂之前开放。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 48895 },	-- The Perfect Offering
 				["provider"] = { "n", 127691 },	-- Jorak
 				["coord"] = { 52.8, 89.2, VOLDUN },
@@ -553,7 +621,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49731, {	-- Fond Farewells
-				["description"] = "This version is available after completing Ending the Madness.",
+				["description"] = createLocalizationString({
+					readable = "This version is available after completing Ending the Madness.",
+					constant = "THIS_VERSION_IS_AVAILABLE_AFTER_COMPLETING",
+					export = true,
+					text = {
+						en = "This version is available after completing Ending the Madness.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此版本在完成终结疯狂后开放。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 48996 },	-- Ending the Madness
 				["provider"] = { "n", 128339 },	-- Jorak
 				["coord"] = { 52.9, 89.1, VOLDUN },
@@ -593,7 +678,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49262, {	-- Gang Bustin'
-				["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
+				["description"] = "~L.MUST_BE_WEARING_ASHVANE_GARB_TO_PICK_UP_AND",
 				["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 				["coord"] = { 44.6, 88.2, VOLDUN },
 				-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
@@ -662,7 +747,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(56250, {	-- I Am the Trashmaster
-				["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
+				["description"] = "~L.YOU_NEED_TO_GET_TRASHMASTER_S_MANTLE_FROM_K_U_J",
 				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
 				["coord"] = { 36.2, 36.8, VOLDUN },

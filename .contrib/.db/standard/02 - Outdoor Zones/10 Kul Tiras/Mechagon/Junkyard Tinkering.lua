@@ -151,7 +151,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					r(291524),	-- Scrap Trap
 					r(300122, {["u"]=TRAINING}),	-- Scrapmaster's Blowtorch
 					r(298141, {	-- Subroutine: Optimization (Might not be collectible)
-						["description"] = "Only available when wearing Pocket-Sized Computation Device with Remote Circuit Bypasser socketed.",
+						["description"] = createLocalizationString({
+							readable = "Only available when wearing Pocket-Sized Computation Device with Remote Circuit Bypasser socketed.",
+							constant = "ONLY_AVAILABLE_WHEN_WEARING_POCKET_SIZED",
+							export = true,
+							text = {
+								en = "Only available when wearing Pocket-Sized Computation Device with Remote Circuit Bypasser socketed.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅在装备了镶嵌远程电路绕过器的袖珍计算装置时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["u"]=TRAINING,
 						["providers"] = {
 							{ "i", 168435 },	-- Remote Circuit Bypasser

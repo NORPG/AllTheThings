@@ -122,7 +122,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(63194, {	-- Steven Lisbane <Master Pet Tamer>
 					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
-					["description"] = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_STEVEN_S_PETS",
+						export = true,
+						text = {
+							en = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限联盟。\n\nSteven 的宠物为 9 级，三个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 野兽 - 同上。\n3. 魔法 - 使用龙类（强力）或机械（耐打）宠物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["petBattleLvl"] = 9,
@@ -162,7 +179,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(26317, {	-- A Lashtail Hatchling
-					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
+						constant = "AUTOMATICALLY_GRANTED_AFTER_KILLING_12_EGGS",
+						export = true,
+						text = {
+							en = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任务|cFFFFD700格罗姆高的防御：迅猛龙危机|r期间击杀 12 枚蛋后自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
@@ -826,7 +860,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26745, {	-- Favored Skull (A)
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
+					["description"] = createLocalizationString({
+						readable = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
+						constant = "AVAILABLE_ON_ARRIVAL_TO_THE_CFFFFD700BAL_LAL",
+						export = true,
+						text = {
+							en = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "抵达|cFFFFD700巴尔拉尔废墟|r时开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
 					["qg"] = 42736,	-- Lashtail Hatchling
 					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
@@ -834,7 +885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26323, {	-- Favored Skull (H)
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
+					["description"] = "~L.AVAILABLE_ON_ARRIVAL_TO_THE_CFFFFD700BAL_LAL",
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
 					["qg"] = 42736,	-- Lashtail Hatchling
 					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
@@ -1038,7 +1089,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(215, {	-- Jungle Secrets
 					-- #if BEFORE 4.0.3
-					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
+					["description"] = "~L.EVERY_SO_OFTEN_THORSEN_WILL_GO_ON_PATROL_IF_YOU",
 					-- #endif
 					["qg"] = 738,	-- Private Thorsen
 					["coord"] = { 40.0, 8.0, STRANGLETHORN_VALE },
@@ -1047,7 +1098,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(26738, {	-- Just Hatched
-					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
+						constant = "AUTOMATICALLY_GRANTED_AFTER_OBTAINING_7_JUNGLE",
+						export = true,
+						text = {
+							en = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任务|cFFFFD700劣药|r期间获得 7 个“丛林药剂”后自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 26732,	-- Bad Medicine
 					["qg"] = 1422,	-- Corporal Sethman
 					["qi"] = 58165,	-- Lashtail Raptor Egg Fragment
@@ -1258,7 +1326,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
-					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					["description"] = createLocalizationString({
+						readable = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+						constant = "TYPICALLY_DROPS_DURING_CFFFFD700THE_DEFENSE_OF",
+						export = true,
+						text = {
+							en = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "通常掉落于 |cFFFFD700格罗姆高保卫战：食人魔压迫|r。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2528,7 +2613,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26782, {	-- The Mosh'Ogg Bounty (A)
-					["description"] = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+					["description"] = createLocalizationString({
+						readable = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+						constant = "THIS_QUEST_IS_OFFERED_TO_PLAYERS_THAT_HAVE",
+						export = true,
+						text = {
+							en = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在反抗军营地，向*已*完成“|cff4a54e8疯狂之源|r”（26734）的玩家提供此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2544,7 +2646,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26783, {	-- The Mosh'Ogg Bounty (A)
-					["description"] = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+					["description"] = createLocalizationString({
+						readable = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+						constant = "THIS_QUEST_IS_OFFERED_TO_PLAYERS_THAT_HAVE_NOT",
+						export = true,
+						text = {
+							en = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在反抗军营地，向*尚未*完成“|cff4a54e8疯狂之源|r”（26734）的玩家提供此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -3250,7 +3369,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1677, {	-- Drake-scale Vest
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
+						constant = "DROPS_FROM_MOSH_OGG_LORDS_WHICH_HAVE_THREE",
+						export = true,
+						text = {
+							en = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由莫什奥格领主掉落，已知有三个刷新点。莫什奥格屠夫会替代其刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 69.2, 47.0, NORTHERN_STRANGLETHORN },
 						{ 67.0, 54.0, NORTHERN_STRANGLETHORN },
@@ -3261,7 +3397,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1659, {	-- Engineering Gloves
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Venture Co. Tinkerer. Venture Co. Foremans, Venture Co. Surveyors, and Venture Co. Strip Miners very often spawns in its place.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Venture Co. Tinkerer. Venture Co. Foremans, Venture Co. Surveyors, and Venture Co. Strip Miners very often spawns in its place.",
+						constant = "DROPS_FROM_VENTURE_CO_TINKERER_VENTURE_CO",
+						export = true,
+						text = {
+							en = "Drops from Venture Co. Tinkerer. Venture Co. Foremans, Venture Co. Surveyors, and Venture Co. Strip Miners very often spawns in its place.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由风险投资公司修补匠掉落。风险投资公司工头、风险投资公司勘测员和风险投资公司露天矿工经常会替代其刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 53.8, 75.8, NORTHERN_STRANGLETHORN },
 						{ 53.6, 70.0, NORTHERN_STRANGLETHORN },
@@ -3282,7 +3435,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1564,	-- Bloodsail Warlock
 					},
 					-- #else
-					["description"] = "This item has a chance to drop from any killed creature in the zone.",
+					["description"] = createLocalizationString({
+						readable = "This item has a chance to drop from any killed creature in the zone.",
+						constant = "THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_KILLED",
+						export = true,
+						text = {
+							en = "This item has a chance to drop from any killed creature in the zone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此物品有几率从该区域任何被击杀的生物身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining (RECIPE!)
@@ -3310,7 +3480,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1522, {	-- Headhunting Spear
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Bloodscalp Headhunters, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Bloodscalp Headhunters, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+						constant = "DROPS_FROM_BLOODSCALP_HEADHUNTERS_WHICH_SHARES",
+						export = true,
+						text = {
+							en = "Drops from Bloodscalp Headhunters, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由血顶猎头者掉落，它与祖尔达亚废墟中的其他血顶巨魔共享刷新点。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 21.6, 24.6, NORTHERN_STRANGLETHORN },
 						{ 19.8, 24.8, NORTHERN_STRANGLETHORN },
@@ -3321,7 +3508,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1523, {	-- Huge Stone Club
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Bloodscalp Berserkers, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Bloodscalp Berserkers, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+						constant = "DROPS_FROM_BLOODSCALP_BERSERKERS_WHICH_SHARES",
+						export = true,
+						text = {
+							en = "Drops from Bloodscalp Berserkers, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由血顶狂暴者掉落，它与祖尔达亚废墟中的其他血顶巨魔共享刷新点。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 21.6, 24.6, NORTHERN_STRANGLETHORN },
 						{ 19.8, 24.8, NORTHERN_STRANGLETHORN },
@@ -3370,7 +3574,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2546,	-- Fleet Master Firallon
 					},
 					-- #else
-					["description"] = "This item has a chance to drop from any killed creature in the zone.",
+					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_KILLED",
 					-- #endif
 					["timeline"] = { ADDED_1_11_1 },
 				}),
@@ -3381,7 +3585,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(1997, {	-- Pressed Felt Robe
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Bloodscalp Mystics, which shares its spawn with other Bloodscalp trolls in the Ruins of Zul'Kunda.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Bloodscalp Mystics, which shares its spawn with other Bloodscalp trolls in the Ruins of Zul'Kunda.",
+						constant = "DROPS_FROM_BLOODSCALP_MYSTICS_WHICH_SHARES_ITS",
+						export = true,
+						text = {
+							en = "Drops from Bloodscalp Mystics, which shares its spawn with other Bloodscalp trolls in the Ruins of Zul'Kunda.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由血顶秘法师掉落，它与祖尔库达废墟中的其他血顶巨魔共享刷新点。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 29.2, 24.4, NORTHERN_STRANGLETHORN },
 						{ 25.8, 22.8, NORTHERN_STRANGLETHORN },
@@ -3395,7 +3616,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1624, {	-- Skullsplitter Helm
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Skullsplitter Berserkers and Skullsplitter Headhunters. Skullsplitter Spiritchasers very often spawns in its place.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Skullsplitter Berserkers and Skullsplitter Headhunters. Skullsplitter Spiritchasers very often spawns in its place.",
+						constant = "DROPS_FROM_SKULLSPLITTER_BERSERKERS_AND",
+						export = true,
+						text = {
+							en = "Drops from Skullsplitter Berserkers and Skullsplitter Headhunters. Skullsplitter Spiritchasers very often spawns in its place.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由碎颅狂暴者和碎颅猎头者掉落。碎颅追灵者经常会替代其刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 63.0, 72.8, NORTHERN_STRANGLETHORN },
 						{ 61.2, 75.6, NORTHERN_STRANGLETHORN },
@@ -3409,7 +3647,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1664, {	-- Spellforce Rod
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawns in its place.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawns in its place.",
+						constant = "DROPS_FROM_VENTURE_CO_SURVEYORS_VENTURE_CO",
+						export = true,
+						text = {
+							en = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawns in its place.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由风险投资公司勘测员掉落。风险投资公司工头、风险投资公司修补匠和风险投资公司露天矿工经常会替代其刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 53.8, 77.2, NORTHERN_STRANGLETHORN },
 						{ 53.4, 70.4, NORTHERN_STRANGLETHORN },
@@ -3440,7 +3695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
 				}),
 				i(8153, {	-- Wildvine
-					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
 				}),
 			}),
 		},

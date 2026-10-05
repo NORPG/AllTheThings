@@ -112,7 +112,24 @@ MOP_SKINNING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] =
 	applyclassicphase(BFA_PHASE_ONE, r(265863, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Skinning (Pandaria)
 }));
 DRAENOR_SKINNING = applyclassicphase(WOD_PHASE_ONE, i(111351, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This item can drop while skinning mobs in Draenor.",
+	["description"] = createLocalizationString({
+		readable = "This item can drop while skinning mobs in Draenor.",
+		constant = "THIS_ITEM_CAN_DROP_WHILE_SKINNING_MOBS_IN",
+		export = true,
+		text = {
+			en = "This item can drop while skinning mobs in Draenor.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "在德拉诺对生物剥皮时可能掉落此物品。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158756, {	-- Skinning (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

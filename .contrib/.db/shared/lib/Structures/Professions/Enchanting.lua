@@ -471,7 +471,24 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"]
 	}),
 }));
 DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+	["description"] = createLocalizationString({
+		readable = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+		constant = "THIS_IS_A_REWARD_FOR_COMPLETING_THE_3",
+		export = true,
+		text = {
+			en = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这是完成附魔入门任务线的奖励，可从任何德拉诺生物身上掉落。也可在附魔研究室以 100 金币购买。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

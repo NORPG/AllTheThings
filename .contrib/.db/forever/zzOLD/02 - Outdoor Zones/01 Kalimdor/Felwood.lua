@@ -41,13 +41,47 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			prof(HERBALISM, {
 				i(11514, {	-- Fel Creep
-					["description"] = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
+					["description"] = createLocalizationString({
+						readable = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
+						constant = "IN_ORDER_FOR_THIS_TO_DROP_WHILE_HERBING_YOU",
+						export = true,
+						text = {
+							en = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要让它在采药时掉落，你的背包中必须带有塞纳里奥信标。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 				}),
 			}),
 			prof(MINING, {
 				i(11513, {	-- Tainted Vitriol
-					["description"] = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
+					["description"] = createLocalizationString({
+						readable = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
+						constant = "IN_ORDER_FOR_THIS_TO_DROP_WHILE_MINING_YOU_MUST",
+						export = true,
+						text = {
+							en = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要让它在采矿时掉落，你的背包中必须带有塞纳里奥信标。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 				}),
 			}),
@@ -184,7 +218,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							},
 						}),
 						i(11511, {	-- Cenarion Beacon
-							["description"] = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
+							["description"] = createLocalizationString({
+								readable = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
+								constant = "YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOR_THE_FEL",
+								export = true,
+								text = {
+									en = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你必须把这个留在背包里，才能通过各种采集方式掉落魔藤、受污染的皮块、受污染的硫酸和腐化的灵魂碎片。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				},
@@ -248,7 +299,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 								{ "i", 12565 },	-- Winna's Kitten Carrier
 							},
 							["coord"] = { 32.0, 66.0, MAP.FELWOOD },
-							["description"] = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
+							["description"] = createLocalizationString({
+								readable = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
+								constant = "WHEN_YOU_GET_BACK_TO_WINNA_THE_CAT_STOPS_AND",
+								export = true,
+								text = {
+									en = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "当你回到温娜身边时，猫会停下来，你必须和猫对话。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -651,7 +719,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						{
 							["itemID"] = 11445,	-- Flute of the Ancients
-							["description"] = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
+							["description"] = createLocalizationString({
+								readable = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
+								constant = "YOU_NEED_TO_SAVE_THIS_FLUTE_FOR_THE_ANCIENT",
+								export = true,
+								text = {
+									en = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你需要为“上古之魂”护送任务保留这支长笛，之后就可以放心地丢弃它了。",
+									-- TODO: tw = "",
+								},
+							}),
 						},
 					},
 				}),
@@ -1197,7 +1282,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			prof(SKINNING, {
 				i(11512, {	-- Patch of Tainted Skin
-					["description"] = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
+					["description"] = createLocalizationString({
+						readable = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
+						constant = "IN_ORDER_FOR_THIS_TO_DROP_WHILE_SKINNING_YOU",
+						export = true,
+						text = {
+							en = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要让它在剥皮时掉落，你的背包中必须带有塞纳里奥信标。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["crs"] = {
 						8956,	-- Angerclaw Bear
@@ -1249,11 +1351,45 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(11515, {	-- Corrupted Soul Shard
-					["description"] = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
+					["description"] = createLocalizationString({
+						readable = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
+						constant = "IN_ORDER_FOR_THIS_TO_DROP_BY_KILLING_MOBS_YOU",
+						export = true,
+						text = {
+							en = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要让它在击杀怪物时掉落，你的背包中必须带有塞纳里奥信标。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 				}),
 				i(21377, {	-- Deadwood Headdress Feather
-					["description"] = "Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
+					["description"] = createLocalizationString({
+						readable = "Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
+						constant = "DROPS_COMMMONLY_FROM_ALL_DEADWOOD_FURBOLGS_AND",
+						export = true,
+						text = {
+							en = "Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "常见的掉落来源是所有死木熊怪，可交给名为格拉兹勒和纳菲恩的 NPC 以换取木喉要塞声望。每次上交需要 5 根死木头饰羽毛。格拉兹勒位于该区域最南端的翡翠圣地。纳菲恩位于该区域最北端，木喉要塞入口处。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						9462,	-- Chieftain Bloodmaw
 						7157,	-- Deadwood Avenger

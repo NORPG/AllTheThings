@@ -79,7 +79,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		["groups"] = {
 			applyclassicphase(WRATH_PHASE_FOUR_SHADOWMOURNE,
 			header(HEADERS.Item, 49623, {	-- Shadowmourne
-				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
+				["description"] = createLocalizationString({
+					readable = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
+					constant = "THESE_QUESTS_CAN_ONLY_BE_COMPLETED_ON_25_MAN",
+					export = true,
+					text = {
+						en = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这些任务只能在 25 人普通或英雄难度下完成。",
+						-- TODO: tw = "",
+					},
+				}),
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["isRaid"] = true,
 				["lvl"] = 80,
@@ -160,7 +177,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						},
 					}),
 					q(24548, {	-- The Splintered Throne
-						["description"] = "These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",
+						["description"] = createLocalizationString({
+							readable = "These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",
+							constant = "THESE_CAN_DROP_FROM_ANY_OF_THE_BOSSES_ON_25_MAN",
+							export = true,
+							text = {
+								en = "These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这些可以由 25 人普通或英雄难度下的任意首领掉落。你需要 50 个，所以这个任务要花好几周才能完成。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 24757,	-- Frost Infusion
 						["qg"] = 37120,	-- Highlord Darion Mograine
 						["groups"] = {
@@ -192,14 +226,48 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					}),
 					i(51315, {	-- Sealed Chest
 						["questID"] = 24914,	-- Personal Property
-						["description"] = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
+						["description"] = createLocalizationString({
+							readable = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
+							constant = "DROPPED_BY_THE_LICH_KING_ON_25_MAN_DIFFICULTY",
+							export = true,
+							text = {
+								en = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在 25 人难度下，于任务|cFFefc400巫妖王的最后一战|r期间由巫妖王掉落。只有你的首次击杀才会触发该物品掉落。你不需要装备影之哀伤。\n\n该物品包含大量非常畅销的装绑外观物品。在当时，它被用来奖励团队中协助会长（很可能）完成影之哀伤的其他成员，因为完成这条任务链耗费了数月之久。\n\n除了奖励丰厚之外，这些任务也是《魔兽世界》漫长历史中最受珍视的内容之一。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 24549,	-- Shadowmourne...
 						["qg"] = 36597,	-- The Lich King
 						["provider"] = { "i", 51316 },	-- Unsealed Chest
 						["groups"] = {
 							i(51317, {	-- Alexandros' Soul Shard
 								["questID"] = 24915,	-- Mograine's Reunion
-								["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
+								["description"] = createLocalizationString({
+									readable = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
+									constant = "ALEXANDROS_DARION_MY_SON_AT_LAST_I_AM_ABLE_TO",
+									export = true,
+									text = {
+										en = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "亚历山德罗斯：达里安，我的儿子。我终于能再次亲眼见到你了。巫妖王无休止地折磨我，达里安。他不断地想摧毁我的意志，逼我为他效劳，把我束缚在他的剑中。最后，当事态需要他全神贯注时，他离开了我。我唯一紧抓不放的记忆，达里安，唯一让我没有屈服的念头，就是你的牺牲，我的儿子。它再一次把我从永恒的危难中拯救出来。\n\n达里安：父亲，父亲，我……我曾担心你的神智，父亲，为了你，我愿意献出一千次生命。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(52200, {	-- Crimson Deathcharger (MOUNT!)
 										["b"] = 2,	-- Mounts don't inherently assign themselves as BoE, so the Ignore Filters for BoEs trigger wasn't picking this up.
@@ -208,28 +276,96 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 							i(51319, {	-- Arthas' Training Sword
 								["questID"] = 24917,	-- Muradin's Lament
-								["description"] = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
+								["description"] = createLocalizationString({
+									readable = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
+									constant = "MURADIN_OH_LAD_HOW_I_MISSED_THOSE_ENDLESS_DAYS",
+									export = true,
+									text = {
+										en = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "穆拉丁：哦，孩子，我多么怀念在洛丹伦的那些无尽岁月，用这把钝剑磨砺你的技艺。把你锻造成一件足以承受伟大命运要求的武器。呵……你确实把这些本事都用上了，不是吗，孩子？\n\n要是我那天能拦住你，事情会多么不同啊。要是我从未发现那把该死的剑就好了。别了，阿尔萨斯，我的兄弟。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(52201)	-- Muradin's Favor (TOY!)
 								},
 							}),
 							i(51320, {	-- Badge of the Silver Hand
 								["questID"] = 24919,	-- The Lightbringer's Redemption
-								["description"] = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
+								["description"] = createLocalizationString({
+									readable = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
+									constant = "UTHER_ARTHAS_ALAS_HERO_OF_AZEROTH_YOU_GIVE_ME_A",
+									export = true,
+									text = {
+										en = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "乌瑟尔：阿尔萨斯……唉，艾泽拉斯的英雄。你给予我的馈赠远比你想象的更珍贵。长久以来，我一直难以原谅王子所犯下的可怕罪行。我的灵魂饱受难以承受的焦虑与黑暗念头的折磨，使我与圣光渐行渐远。\n\n我仍清楚地记得……他站在我面前时眼中那抹骄傲的光芒，渴望击败圣光的敌人……渴望不惜一切代价保卫他的人民。正是这段关于阿尔萨斯的记忆，我选择留在心中。\n\n我将永远欠你一份情，朋友。谢谢你。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(52252)	-- Tabard of the Lightbringer
 								},
 							}),
 							i(51321, {	-- Blood of Sylvanas
 								["questID"] = 24918,	-- Sylvanas' Vengeance
-								["description"] = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
+								["description"] = createLocalizationString({
+									readable = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
+									constant = "SYLVANAS_SO_IT_IS_DONE_I_HAD_NOT_DARED_TO_TRUST",
+									export = true,
+									text = {
+										en = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "希尔瓦娜斯：那么，一切都结束了。我此前不敢相信自己的感知。巫妖王已太多次让我沦为傻瓜。终于，他为自己加诸于我族人民身上的暴行付出了代价。\n\n愿艾泽拉斯永远不要忘记我们为软弱、为骄傲所付出的可怕代价。但如今又如何，英雄？那些从他手中获得自由，却仍被肉身束缚的人又该怎么办？\n\n让我一个人待着。我还有许多事要想。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(52253)	-- Sylvanas' Music Box (TOY!)
 								},
 							}),
 							i(51318, {	-- Jaina's Locket
 								["questID"] = 24916,	-- Jaina's Locket
-								["description"] = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
+								["description"] = createLocalizationString({
+									readable = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
+									constant = "JAINA_WHAT_S_THIS_HE_HE_KEPT_IT_ALL_THIS_TIME",
+									export = true,
+									text = {
+										en = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "吉安娜：这是什么？\n他……他一直留着它……这么久以来他一直留着它！\n<哭泣> 我就知道！\n<哭泣> 我感觉到他的一部分仍然活着……被困住……在挣扎。哦，阿尔萨斯！\n也许有一天他会想起自己曾经的模样……\n愿圣光让他终于得以安息，摆脱那把可怕利刃的冰冷束缚！",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(52251, {	-- Jaina's Locket
 										-- #if NOT ANYCLASSIC
@@ -344,7 +480,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			n(QUESTS, {
 				q(24815, {	-- Choose Your Path
-					["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
+					["description"] = createLocalizationString({
+						readable = "If the quest does not appear when you hit Friendly, you may have to relog.",
+						constant = "IF_THE_QUEST_DOES_NOT_APPEAR_WHEN_YOU_HIT",
+						export = true,
+						text = {
+							en = "If the quest does not appear when you hit Friendly, you may have to relog.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果在达到友善时任务没有出现，你可能需要重新登录。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 38316,	-- Ormus the Penitent
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, FRIENDLY },	-- The Ashen Verdict
 					["groups"] = {
@@ -791,7 +944,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					24870,	-- Securing the Ramparts [10] (H)
 					24877,	-- Securing the Ramparts [25] (H)
 				},
-				["description"] = "Rewarded for completing the Weekly Raid quests.",
+				["description"] = createLocalizationString({
+					readable = "Rewarded for completing the Weekly Raid quests.",
+					constant = "REWARDED_FOR_COMPLETING_THE_WEEKLY_RAID_QUESTS",
+					export = true,
+					text = {
+						en = "Rewarded for completing the Weekly Raid quests.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成每周团队副本任务后奖励。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(52006, {	-- Sack of Frosty Treasures
 						["timeline"] = { REMOVED_4_0_1 },
@@ -823,13 +993,64 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			cnONLY(n(SPECIAL, {
 				["groups"] = {
 					title(675, {	-- Northbound Rush, %s
-						["description"] = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ will grant you this title."
+						["description"] = createLocalizationString({
+							readable = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ will grant you this title.",
+							constant = "SUBMITTING_A_SPEEDRUN_TO_HTTPS_WOW_BLIZZARD_CN",
+							export = true,
+							text = {
+								en = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ will grant you this title.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "向 https://wow.blizzard.cn/iccspeedrun/#/ 提交一次竞速通关即可获得该头衔。",
+								-- TODO: tw = "",
+							},
+						})
 					}),
 					title(674, {	-- Dawn's Vanguard, %s
-						["description"] = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 16 will grant you this title."
+						["description"] = createLocalizationString({
+							readable = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 16 will grant you this title.",
+							constant = "SUBMITTING_A_SPEEDRUN_TO_HTTPS_WOW_BLIZZARD_CN_2",
+							export = true,
+							text = {
+								en = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 16 will grant you this title.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "向 https://wow.blizzard.cn/iccspeedrun/#/ 提交一次竞速通关并获得前 16 名，即可获得该头衔。",
+								-- TODO: tw = "",
+							},
+						})
 					}),
 					title(673, {	-- The Overlord of Dawn, %s
-						["description"] = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 3 will grant you this title."
+						["description"] = createLocalizationString({
+							readable = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 3 will grant you this title.",
+							constant = "SUBMITTING_A_SPEEDRUN_TO_HTTPS_WOW_BLIZZARD_CN_3",
+							export = true,
+							text = {
+								en = "Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 3 will grant you this title.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "向 https://wow.blizzard.cn/iccspeedrun/#/ 提交一次竞速通关并获得前 3 名，即可获得该头衔。",
+								-- TODO: tw = "",
+							},
+						})
 					}),
 				},
 			})),
@@ -1131,7 +1352,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					currency(341),	-- Emblem of Frost
 					-- #endif
 					i(49908, {	-- Primordial Saronite
-						["description"] = "Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",
+						["description"] = createLocalizationString({
+							readable = "Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",
+							constant = "CAN_DROP_FROM_ALL_BOSSES_IN_ICECROWN_CITADEL",
+							export = true,
+							text = {
+								en = "Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可从冰冠堡垒的所有首领身上掉落，但 10 人团队规模的普通难度除外。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -1158,7 +1396,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						},
 					}),
 					n(37904, {	-- Brazie Getz
-						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+						["description"] = createLocalizationString({
+							readable = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+							constant = "AFTER_YOU_KILL_DEATHBRINGER_SAURFANG_THIS",
+							export = true,
+							text = {
+								en = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "杀死死亡使者萨鲁法尔后，这名商人会出现在营地中。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(49926),	-- Brazie's Black Book of Secrets
@@ -1967,7 +2222,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
 							i(50226, {	-- Festergut's Acidic Blood
-								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
+								["description"] = createLocalizationString({
+									readable = "This can drop from Festergut on 25-Man Normal or Heroic.",
+									constant = "THIS_CAN_DROP_FROM_FESTERGUT_ON_25_MAN_NORMAL",
+									export = true,
+									text = {
+										en = "This can drop from Festergut on 25-Man Normal or Heroic.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这可以从 25 人普通或英雄难度的烂肠身上掉落。",
+										-- TODO: tw = "",
+									},
+								}),
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							ach(4615),	-- Flu Shot Shortage (25 player)
@@ -1993,7 +2265,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
 							i(50231, {	-- Rotface's Acidic Blood
-								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
+								["description"] = createLocalizationString({
+									readable = "This can drop from Rotface on 25-Man Normal or Heroic.",
+									constant = "THIS_CAN_DROP_FROM_ROTFACE_ON_25_MAN_NORMAL_OR",
+									export = true,
+									text = {
+										en = "This can drop from Rotface on 25-Man Normal or Heroic.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这可以从 25 人普通或英雄难度的腐面身上掉落。",
+										-- TODO: tw = "",
+									},
+								}),
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							ach(4614),	-- Dances with Oozes (25 player)
@@ -2309,7 +2598,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
 							i(50226, {	-- Festergut's Acidic Blood
-								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
+								["description"] = "~L.THIS_CAN_DROP_FROM_FESTERGUT_ON_25_MAN_NORMAL",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							ach(4615),	-- Flu Shot Shortage (25 player)
@@ -2335,7 +2624,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
 							i(50231, {	-- Rotface's Acidic Blood
-								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
+								["description"] = "~L.THIS_CAN_DROP_FROM_ROTFACE_ON_25_MAN_NORMAL_OR",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							ach(4614),	-- Dances with Oozes (25 player)

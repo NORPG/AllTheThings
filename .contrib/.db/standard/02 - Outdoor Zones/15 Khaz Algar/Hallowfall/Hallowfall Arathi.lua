@@ -209,7 +209,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["isWeekly"] = true,
 						}, {
 							q(76338, {	-- A Better Cabbage Smacker
-								["description"] = "Whirring Field Keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Whirring Field Keyflame.",
+									constant = "WHIRRING_FIELD_KEYFLAME",
+									export = true,
+									text = {
+										en = "Whirring Field Keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "嗡鸣力场钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 65.0, 29.3, HALLOWFALL },
 								["groups"] = {
 									o(403740, {	-- Cleanbrass Bolts
@@ -219,22 +236,90 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							q(79471, {	-- Bleak Sand
-								["description"] = "Bleak Sand Keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Bleak Sand Keyflame.",
+									constant = "BLEAK_SAND_KEYFLAME",
+									export = true,
+									text = {
+										en = "Bleak Sand Keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "荒沙钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 61.6, 12.8, HALLOWFALL },
 								["groups"] = {
 									i(211073),	-- Sentry Flare (QI!)
 								},
 							}),
 							q(79380, {	-- Bog Beast Banishment
-								["description"] = "Stillstone Pond Keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Stillstone Pond Keyflame.",
+									constant = "STILLSTONE_POND_KEYFLAME",
+									export = true,
+									text = {
+										en = "Stillstone Pond Keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "静石池塘钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 66.5, 24.0, HALLOWFALL },
 							}),
 							q(78590, {	-- Cutting Edge
-								["description"] = "Fungal Field Keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Fungal Field Keyflame.",
+									constant = "FUNGAL_FIELD_KEYFLAME",
+									export = true,
+									text = {
+										en = "Fungal Field Keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "真菌原野钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 63.8, 31.9, HALLOWFALL },
 							}),
 							q(79329, {	-- Glowing Harvest
-								["description"] = "Light's Blooming Keyflame",
+								["description"] = createLocalizationString({
+									readable = "Light's Blooming Keyflame",
+									constant = "LIGHT_S_BLOOMING_KEYFLAME",
+									export = true,
+									text = {
+										en = "Light's Blooming Keyflame",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "圣光绽放钥焰",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 63.4, 28.5, HALLOWFALL },
 								["groups"] = {
 									o(421070, {	-- Remnant Satchel
@@ -243,21 +328,72 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							q(79469, {	-- Lurking Below
-								["description"] = "Duskrise Acerage Keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Duskrise Acerage Keyflame.",
+									constant = "DUSKRISE_ACERAGE_KEYFLAME",
+									export = true,
+									text = {
+										en = "Duskrise Acerage Keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "暮升田地钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 61.9, 32.0, HALLOWFALL },
 								["groups"] = {
 									i(215467),	-- Dirt-Cracker Pick (QI!)
 								},
 							}),
 							q(78657, {	-- The Midnight Sentry
-								["description"] = "Torchlight Mine Keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Torchlight Mine Keyflame.",
+									constant = "TORCHLIGHT_MINE_KEYFLAME",
+									export = true,
+									text = {
+										en = "Torchlight Mine Keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "火炬矿洞的钥匙之焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 63.9, 19.6, HALLOWFALL },
 								["groups"] = {
 									i(211073),	-- Sentry Flare (QI!)
 								},
 							}),
 							q(79470, {	-- Water of War
-								["description"] = "Faded Shore keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Faded Shore keyflame.",
+									constant = "FADED_SHORE_KEYFLAME",
+									export = true,
+									text = {
+										en = "Faded Shore keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "褪色海岸钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 62.6, 17.0, HALLOWFALL },
 								["groups"] = {
 									i(211073),	-- Sentry Flare (QI!)
@@ -284,7 +420,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						n(QUESTS, {
 							q(82006, {	-- Speak to Attica Whiskervale
 								["name"] = "Speak to Attica Whiskervale",
-								["description"] = "Speak to Attica Whiskervale about Captain Lancekat. If Attica is not there, relight the nearby lesser keyflame.",
+								["description"] = createLocalizationString({
+									readable = "Speak to Attica Whiskervale about Captain Lancekat. If Attica is not there, relight the nearby lesser keyflame.",
+									constant = "SPEAK_TO_ATTICA_WHISKERVALE_ABOUT_CAPTAIN",
+									export = true,
+									text = {
+										en = "Speak to Attica Whiskervale about Captain Lancekat. If Attica is not there, relight the nearby lesser keyflame.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "与阿提卡·须谷交谈，询问兰斯凯特队长的下落。如果阿提卡不在那里，就重新点燃附近的次级钥焰。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
 								["provider"] = { "n", 212419 },	-- Attica Whiskervale
 								["coord"] = { 64.5, 18.8, HALLOWFALL },
@@ -624,7 +777,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							n(214757, {	-- Croakit
-								["description"] = "Bring 10x Shadowblind Grouper (buy or fish up) and feed him",
+								["description"] = createLocalizationString({
+									readable = "Bring 10x Shadowblind Grouper (buy or fish up) and feed him",
+									constant = "BRING_10X_SHADOWBLIND_GROUPER_BUY_OR_FISH_UP",
+									export = true,
+									text = {
+										en = "Bring 10x Shadowblind Grouper (buy or fish up) and feed him",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "带上 10 条影盲石斑鱼（购买或钓取）并喂给他",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 67.3, 23.5, HALLOWFALL },
 								["questID"] = 82560,
 								["cost"] = { { "i", 211474, 10 } },	-- 10x Shadowblind Grouper
@@ -676,7 +846,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							n(206977, {	-- Parasidious
-								["description"] = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
+								["description"] = createLocalizationString({
+									readable = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
+									constant = "PULL_MANY_SHADOWROOT_VINES_UNTIL_EVENTUALLY_THE",
+									export = true,
+									text = {
+										en = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "反复拉扯影根藤蔓，直到最终刷新出稀有。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 61.8, 32.5, HALLOWFALL },
 								["questID"] = 82563,
 								["provider"] = { "i", 206670 },	-- Darkroot Grips
@@ -712,7 +899,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						})),
 						n(REWARDS, {
 							i(228741, {	-- Lamplighter Supply Satchel
-								["description"] = "Received upon completing the Weekly Bonus Objectives and Weekly Quests in the Hallowed Light Area.\n\nEach unlocked Lesser and Major Keyflame unlocks either a weekly quest or bonus objective in the area.",
+								["description"] = createLocalizationString({
+									readable = "Received upon completing the Weekly Bonus Objectives and Weekly Quests in the Hallowed Light Area.\n\nEach unlocked Lesser and Major Keyflame unlocks either a weekly quest or bonus objective in the area.",
+									constant = "RECEIVED_UPON_COMPLETING_THE_WEEKLY_BONUS",
+									export = true,
+									text = {
+										en = "Received upon completing the Weekly Bonus Objectives and Weekly Quests in the Hallowed Light Area.\n\nEach unlocked Lesser and Major Keyflame unlocks either a weekly quest or bonus objective in the area.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在圣光之地完成每周奖励目标和每周任务后获得。\n\n每个解锁的小型钥焰和大型钥焰都会在该区域解锁一个每周任务或奖励目标。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									filter(MOUNTS, {
 										i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
@@ -842,7 +1046,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(428472, {	-- Captain Lancekat's Discretionary Funds
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = createLocalizationString({
+									readable = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+									constant = "REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
+									export = true,
+									text = {
+										en = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "需要任意光源（例如火把、烛台）才能显现此宝藏。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 66.56, 15.14, HALLOWFALL },
 								["questID"] = 81612,
 								-- using sym for non-guaranteed
@@ -858,19 +1079,70 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(423959, {	-- Faded Supply Chest
-								["description"] = "The key drops rarely from Drowned Arathi nearby.",
+								["description"] = createLocalizationString({
+									readable = "The key drops rarely from Drowned Arathi nearby.",
+									constant = "THE_KEY_DROPS_RARELY_FROM_DROWNED_ARATHI_NEARBY",
+									export = true,
+									text = {
+										en = "The key drops rarely from Drowned Arathi nearby.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这把钥匙有较低几率从附近的溺亡阿拉希人身上掉落。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 61.8, 17.5, HALLOWFALL },
 								["questID"] = 79964,
 								["cost"] = { { "i", 216528, 1 } },	-- 1x Faded Supply Chest Key
 							}),
 							o(441795, {	-- Hallowfall Sparkfly
-								["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
+								["description"] = createLocalizationString({
+									readable = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
+									constant = "REQUIRES_LEVEL_80_USE_A_LIGHT_SOURCE_ITEM_THEN",
+									export = true,
+									text = {
+										en = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "需要 80 级。使用一个光源物品，然后沿着静石池附近的河流行走。过一段时间后，火花虫会出现在你身边，并可能随机变为可交互，从而给予你这只宠物。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 66.8, 25.3, HALLOWFALL },
 								["provider"] = { "i", 218107 },	-- Sparkbug Jar
 								["groups"] = { i(220771) },	-- Hallowed Glowfly (PET!)
 							}),
 							o(451993, {	-- Nerubian Device
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+								["description"] = createLocalizationString({
+									readable = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+									constant = "REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH_2",
+									export = true,
+									text = {
+										en = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "需要任意光源（如火把、烛台）才能在任何农田区域揭示这个宝藏。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coords"] = {
 									{ 62.3, 31.7, HALLOWFALL },
 									{ 64.6, 28.4, HALLOWFALL },
@@ -902,7 +1174,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									-- confirmed x2
 									i(221819, {	-- Shadowbog Hopper (PET!)
-										["description"] = "Seems to only come from vines in Stillstone Pond",
+										["description"] = createLocalizationString({
+											readable = "Seems to only come from vines in Stillstone Pond",
+											constant = "SEEMS_TO_ONLY_COME_FROM_VINES_IN_STILLSTONE",
+											export = true,
+											text = {
+												en = "Seems to only come from vines in Stillstone Pond",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "似乎只来自静石池的藤蔓",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 								},
 							}),
@@ -912,7 +1201,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["isWeekly"] = true,
 						},{
 							o(434502, {	-- Anglers Supply Box
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coord"] = { 66.4, 23.0, HALLOWFALL },
 								["questID"] = 80541,
 								["groups"] = {
@@ -935,7 +1224,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(441723, {	-- Farm Satchel
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coords"] = {
 									{ 64.36, 26.03, HALLOWFALL },
 									{ 64.9, 25.6, HALLOWFALL },
@@ -947,7 +1236,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(435008, {	-- Farmhand Stash
-								["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
+								["description"] = createLocalizationString({
+									readable = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
+									constant = "REQUIRES_WEEKLY_QUEST_WITH_CONTROLLING",
+									export = true,
+									text = {
+										en = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "需要在控制收割机器人雷米的情况下完成每周任务才会刷新。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coords"] = {
 									{ 61.6, 32.6, HALLOWFALL },
 									{ 63.1, 30.7, HALLOWFALL },
@@ -958,7 +1264,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(457246, {	-- Fieldhand Stash
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coords"] = {
 									{ 64.4, 27.0, HALLOWFALL },
 									{ 64.5, 28.8, HALLOWFALL },
@@ -970,7 +1276,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(433377, {	-- Harvest Box
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coords"] = {
 									{ 64.8, 29.4, HALLOWFALL },
 									{ 64.8, 29.5, HALLOWFALL },
@@ -984,7 +1290,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(452005, {	-- Lil Piggy
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
+								["description"] = createLocalizationString({
+									readable = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
+									constant = "REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH_3",
+									export = true,
+									text = {
+										en = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "需要任何光源（例如火炬、烛台）才能揭示这个位于嗡鸣之地某处的宝藏。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coords"] = {
 									{ 63.8, 26.4, HALLOWFALL },
 									{ 64.0, 26.0, HALLOWFALL },
@@ -995,7 +1318,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = { i(224457) },	-- Lil Piggy (QS!/QI!)
 							}),
 							o(453186, {	-- Nightfarm Growthling (may be daily)
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH_2",
 								["coords"] = {
 									{ 61.4, 31.8, HALLOWFALL },
 									{ 63.3, 31.1, HALLOWFALL },
@@ -1008,7 +1331,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(457251, {	-- Old Rotting Crate
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coords"] = {
 									{ 64.5, 31.6, HALLOWFALL },
 									{ 64.9, 33.5, HALLOWFALL },
@@ -1019,7 +1342,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(457270, {	-- Surveyor's Box
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coords"] = {
 									{ 63.8, 26.8, HALLOWFALL },
 									{ 65.2, 27.7, HALLOWFALL },
@@ -1059,7 +1382,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 79191,
 							}),
 							o(451967, {	-- Hillhelm Lunchbox
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coord"] = { 62.0, 31.7, HALLOWFALL },
 								["questID"] = 82996,
 								["groups"] = {
@@ -1067,7 +1390,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							o(457260, {	-- Misplaced Supplies
-								["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+								["description"] = "~L.REQUIRES_ANY_SOURCE_OF_LIGHT_E_G_TORCH",
 								["coord"] = { 68.2, 26.6, HALLOWFALL },
 								["questID"] = 84340,
 								["groups"] = {

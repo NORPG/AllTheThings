@@ -251,7 +251,24 @@ WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"]
 	r(104302),	-- Valley Stir Fry
 }));
 DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+	["description"] = createLocalizationString({
+		readable = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+		constant = "THIS_CAN_DROP_FROM_ANY_WARLORDS_OF_DRAENOR_MOB",
+		export = true,
+		text = {
+			en = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "如果你尚未学会它，这可以从任意《德拉诺之王》怪物身上掉落。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158765, {	-- Cooking (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

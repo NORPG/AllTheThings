@@ -51,60 +51,111 @@ root(ROOTS.Promotions, {
 
 		-- Chinese & Taiwan Servers only until 5.4.1
 		ach(3636, {	-- Jade Tiger
-			["description"] = "Chinese & Taiwan Only",
+			["description"] = createLocalizationString({
+				readable = "Chinese & Taiwan Only",
+				constant = "CHINESE_TAIWAN_ONLY",
+				export = true,
+				text = {
+					en = "Chinese & Taiwan Only",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "仅限中文与台湾地区",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_4_0_3 },
 		}),
 		i(46894, {	-- Jade Tiger (PET!)
-			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
+			["description"] = createLocalizationString({
+				readable = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
+				constant = "ORIGINALLY_ONLY_AVAILABLE_TO_THE_CHINESE_TAIWAN",
+				export = true,
+				text = {
+					en = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "最初仅限中国大陆和台湾地区玩家获得，它们已在 5.4.1 中加入战友招募计划。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 		}),
 		i(49664, {	-- Zipao Tiger (PET!)
-			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
+			["description"] = "~L.ORIGINALLY_ONLY_AVAILABLE_TO_THE_CHINESE_TAIWAN",
 			["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 		}),
 		i(34518, {	-- Golden Pig (PET!)
-			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
+			["description"] = "~L.ORIGINALLY_ONLY_AVAILABLE_TO_THE_CHINESE_TAIWAN",
 			["timeline"] = { ADDED_2_3_0 },
 		}),
 		i(34519, {	-- Silver Pig (PET!)
-			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
+			["description"] = "~L.ORIGINALLY_ONLY_AVAILABLE_TO_THE_CHINESE_TAIWAN",
 			["timeline"] = { ADDED_2_3_0 },
 		}),
 
 		-- Desert Path
 		iensemble(173300, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = createLocalizationString({
+				readable = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+				constant = "AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
+				export = true,
+				text = {
+					en = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "任何在 10.0.7 补丁刷新之前解锁了战友招募奖励的玩家均可获得。",
+					-- TODO: tw = "",
+				},
+			}),
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 		})),
 		i(171363, {	-- Illusion: Stinging Sands (ILLUSION!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173298, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Explorer's Certification
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = { title(410) },	-- Renowned Explorer <Name>
 		})),
 		i(171333, {	-- Renowned Explorer's Rucksack
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(171361, {	-- Renowned Explorer's Tabard
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173296, {	-- Rikki (PET!)
-			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
+			["description"] = "~L.AVAILABLE_TO_ANY_PLAYER_WHO_HAS_UNLOCKED_THE",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 	})),

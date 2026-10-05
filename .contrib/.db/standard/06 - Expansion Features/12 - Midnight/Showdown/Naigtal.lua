@@ -6,7 +6,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_0_7 },
 		["groups"] = {
 			m(NAIGTAL, {
-				["description"] = "Naigtal, is a world of giant mushrooms, rich in arcane energy, covered in vast oceans with ley lines running beneath them. The Azerothian forces on Naigtal during the War of Light and Shadow presume the natives to have been wiped out by the Legion.",
+				["description"] = createLocalizationString({
+					readable = "Naigtal, is a world of giant mushrooms, rich in arcane energy, covered in vast oceans with ley lines running beneath them. The Azerothian forces on Naigtal during the War of Light and Shadow presume the natives to have been wiped out by the Legion.",
+					constant = "NAIGTAL_IS_A_WORLD_OF_GIANT_MUSHROOMS_RICH_IN",
+					export = true,
+					text = {
+						en = "Naigtal, is a world of giant mushrooms, rich in arcane energy, covered in vast oceans with ley lines running beneath them. The Azerothian forces on Naigtal during the War of Light and Shadow presume the natives to have been wiped out by the Legion.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "奈格塔尔是一个遍布巨型蘑菇的世界，富含奥术能量，被广阔海洋覆盖，海底有魔网穿行。光与影之战期间驻扎在奈格塔尔的艾泽拉斯军队推测当地居民已被燃烧军团消灭殆尽。",
+						-- TODO: tw = "",
+					},
+				}),
 				["icon"] = 775461,
 				["cr"] = 264322,	-- Greater Void Portal
 				["coord"] = { 51.4, 71.3, MAP.MIDNIGHT.VOIDSTORM },
@@ -402,7 +419,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							n(264571, {	-- Indomitable Mk XII <Blazing Reaver>
-								["description"] = "Patrols up and down the central road.",
+								["description"] = createLocalizationString({
+									readable = "Patrols up and down the central road.",
+									constant = "PATROLS_UP_AND_DOWN_THE_CENTRAL_ROAD",
+									export = true,
+									text = {
+										en = "Patrols up and down the central road.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在中央道路上来回巡逻。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 53.8, 51.6, NAIGTAL },
 								["questID"] = 96317,
 								["sym"] = {{"select","itemID",
@@ -430,7 +464,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							n(263955, {	-- Lomelith <The Bogshaker>
-								["description"] = "Roams around the area.",
+								["description"] = createLocalizationString({
+									readable = "Roams around the area.",
+									constant = "ROAMS_AROUND_THE_AREA",
+									export = true,
+									text = {
+										en = "Roams around the area.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在该区域四处游荡。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 67.7, 62.9, NAIGTAL },
 								["questID"] = 96208,
 								["sym"] = {{"select","itemID",
@@ -440,7 +491,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								}},
 							}),
 							n(263954, {	-- Swalewing Matriarch <The Manabog Apex>
-								["description"] = "Roams around the area.",
+								["description"] = "~L.ROAMS_AROUND_THE_AREA",
 								["coord"] = { 77.7, 38.0, NAIGTAL },
 								["questID"] = 96207,
 								["sym"] = {{"select","itemID",
@@ -454,7 +505,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							n(264576, {	-- Slaipaan <The Fel-Gorged>
-								["description"] = "Roams around the area.",
+								["description"] = "~L.ROAMS_AROUND_THE_AREA",
 								["coord"] = { 56.1, 61.4, NAIGTAL },
 								["questID"] = 96320,
 								["sym"] = {{"select","itemID",
@@ -481,7 +532,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							n(267422, {	-- Warbringer Thal'kuur <The Mutinied>
-								["description"] = "Roams around the area.",
+								["description"] = "~L.ROAMS_AROUND_THE_AREA",
 								["coord"] = { 56.1, 61.4, NAIGTAL },
 								["questID"] = 97014,
 								["sym"] = {{"select","itemID",
@@ -532,7 +583,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								97094,	-- Feed the Sleepy Mandrake a Partially-Digested Redcap
 								97095,	-- Feed the Sleepy Mandrake an Airy Redcap
 							},
-							["description"] = "Feed the Sleepy Mandrake 5 different Redcap Mushrooms from Naigtal to wake it up and become your pet.",
+							["description"] = createLocalizationString({
+								readable = "Feed the Sleepy Mandrake 5 different Redcap Mushrooms from Naigtal to wake it up and become your pet.",
+								constant = "FEED_THE_SLEEPY_MANDRAKE_5_DIFFERENT_REDCAP",
+								export = true,
+								text = {
+									en = "Feed the Sleepy Mandrake 5 different Redcap Mushrooms from Naigtal to wake it up and become your pet.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "喂给困倦的曼德拉草 5 种来自奈格塔尔的不同的红帽蘑菇，将其唤醒并使其成为你的宠物。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 68.2, 51.6, NAIGTAL },
 							["groups"] = { i(262768) },	-- Sleepy Mandrake (PET!)
 						}),
@@ -568,7 +636,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = { i(276369) },	-- Airy Redcap
 						}),
 						o(658802, {	-- Ancient Crypt Reliquary
-							["description"] = "Spawns randomly in Vilaldoun cave.",
+							["description"] = createLocalizationString({
+								readable = "Spawns randomly in Vilaldoun cave.",
+								constant = "SPAWNS_RANDOMLY_IN_VILALDOUN_CAVE",
+								export = true,
+								text = {
+									en = "Spawns randomly in Vilaldoun cave.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在维拉尔敦洞穴中随机刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(276292),	-- Ancient Anchorite's Beacon (COSMETIC!)
 								i(276303),	-- Blessed Blade of Taalvilor (COSMETIC!)
@@ -581,7 +666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = { i(276366) },	-- Dusty Redcap
 						}),
 						o(655271, {	-- Hal'hadar Pocket-Storage
-							["description"] = "Spawns randomly throughout the zone.",
+							["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
 							["sym"] = {{"select","itemID",278026},{"pop"}},	-- TODO: use source tech eventually
 						}),
 						o(659301, {	-- Highland Redcap

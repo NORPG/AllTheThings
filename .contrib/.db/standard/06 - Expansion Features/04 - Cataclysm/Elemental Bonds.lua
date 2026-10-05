@@ -114,7 +114,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["coord"] = { 60.6, 31.4, MOUNT_HYJAL },
 				["groups"] = {
 					n(54313, {
-						["description"] = "Ignore Thrall if you are doing the initial quests around Nordrassil, he will become relevant later in the story.",
+						["description"] = createLocalizationString({
+							readable = "Ignore Thrall if you are doing the initial quests around Nordrassil, he will become relevant later in the story.",
+							constant = "IGNORE_THRALL_IF_YOU_ARE_DOING_THE_INITIAL",
+							export = true,
+							text = {
+								en = "Ignore Thrall if you are doing the initial quests around Nordrassil, he will become relevant later in the story.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你正在做诺达希尔周围的最初任务，请忽略萨尔，他会在故事后期变得重要。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),

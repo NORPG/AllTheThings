@@ -113,7 +113,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66518, {	-- Everessa <Master Pet Tamer>
 					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
-					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_THOUGH_HORDE_4",
+						export = true,
+						text = {
+							en = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限联盟，不过部落玩家可以在完成部落版任务“宠物对战训练师：东部王国”时与他们对战一次。\n\nEveressa 的宠物为 16 级，三个宠物的类别依次为：\n1. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。\n2. 水栖 - 使用飞行（强力）或魔法（耐打）宠物。\n3. 野兽 - 使用机械（强力）或飞行（耐打）宠物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 16,
 					["groups"] = {
@@ -1651,7 +1668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["coord"] = { 30.53, 47.19, SWAMP_OF_SORROWS },
 					-- #else
-					["description"] = "Spawns outside of the entrance to the Sunken Temple.",
+					["description"] = "~L.SPAWNS_OUTSIDE_OF_THE_ENTRANCE_TO_THE_SUNKEN",
 					-- #endif
 				}),
 				n(50837, {	-- Kash

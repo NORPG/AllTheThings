@@ -2,7 +2,24 @@
 profession(LEATHERWORKING, {
 	expansion(EXPANSION.CLASSIC, {
 		prof(10656, {	-- Dragonscale Leatherworking
-			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",
+			["description"] = createLocalizationString({
+				readable = "These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",
+				constant = "THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_2",
+				export = true,
+				text = {
+					en = "These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品只能由完成了相关任务的制皮师制作。\n\n注意：每个角色只能激活其中一种专精。如果你想完成收藏，就必须练多个制皮师并完成对立的专精。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = {
 				5141,	-- Dragonscale Leatherworking [Alliance]
 				5145,	-- Dragonscale Leatherworking [Horde]

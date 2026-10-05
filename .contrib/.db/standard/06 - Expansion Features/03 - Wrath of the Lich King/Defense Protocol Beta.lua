@@ -57,7 +57,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					412470, 424201,	-- Shadow Rune Buffs
 					413078, 424205	-- Titan Rune Buffs
 				),
-				["description"] = "Defeating the final boss encounter on Defense Protocol Beta will reward 1 Sidereal Essence and can also drop T8 tokens.",
+				["description"] = createLocalizationString({
+					readable = "Defeating the final boss encounter on Defense Protocol Beta will reward 1 Sidereal Essence and can also drop T8 tokens.",
+					constant = "DEFEATING_THE_FINAL_BOSS_ENCOUNTER_ON_DEFENSE_2",
+					export = true,
+					text = {
+						en = "Defeating the final boss encounter on Defense Protocol Beta will reward 1 Sidereal Essence and can also drop T8 tokens.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在防御协议贝塔中击败最终首领战会奖励 1 枚恒星精华，还可能掉落 T8 套装兑换物。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,

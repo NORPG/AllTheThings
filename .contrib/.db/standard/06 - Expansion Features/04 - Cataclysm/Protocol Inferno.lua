@@ -104,7 +104,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 						470595	-- Fury of the Firelord [Protocol Inferno buff]
 					),
-					["description"] = "Two Fissure Stone Fragments drop per boss in Protocol Inferno and the final boss of each dungeon will drop an extra three Fissure Stone Fragments if players have defeated all of the other bosses in the dungeon.",
+					["description"] = createLocalizationString({
+						readable = "Two Fissure Stone Fragments drop per boss in Protocol Inferno and the final boss of each dungeon will drop an extra three Fissure Stone Fragments if players have defeated all of the other bosses in the dungeon.",
+						constant = "TWO_FISSURE_STONE_FRAGMENTS_DROP_PER_BOSS_IN",
+						export = true,
+						text = {
+							en = "Two Fissure Stone Fragments drop per boss in Protocol Inferno and the final boss of each dungeon will drop an extra three Fissure Stone Fragments if players have defeated all of the other bosses in the dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在炼狱协议中，每个首领都会掉落两块裂隙石碎片；如果玩家已击败副本中的所有其他首领，每个副本的最终首领还会额外掉落三块裂隙石碎片。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = PROTOCOL_MAPS,
 					["crs"] = PROTOCOL_BOSSES,
 				}),

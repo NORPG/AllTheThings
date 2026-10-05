@@ -13,26 +13,77 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(379296, {	-- Broken Banding
 				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
-				["description"] = "Found on the right foot of the statue.",
+				["description"] = createLocalizationString({
+					readable = "Found on the right foot of the statue.",
+					constant = "FOUND_ON_THE_RIGHT_FOOT_OF_THE_STATUE",
+					export = true,
+					text = {
+						en = "Found on the right foot of the statue.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "位于雕像的右脚上。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(198475),	-- Broken Banding
 				},
 			}),
 			o(381071, {	-- Box of Rocks
-				["description"] = "Can almost be anywhere in the zone, won't show up via treasure tracking.",
+				["description"] = createLocalizationString({
+					readable = "Can almost be anywhere in the zone, won't show up via treasure tracking.",
+					constant = "CAN_ALMOST_BE_ANYWHERE_IN_THE_ZONE_WON_T_SHOW",
+					export = true,
+					text = {
+						en = "Can almost be anywhere in the zone, won't show up via treasure tracking.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "几乎可以在该区域的任何地方出现，不会通过宝藏追踪显示。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(199216),	-- A Box of Rocks
 				},
 			}),
 			o(381065, {	-- Broken Waygate
-				["description"] = "In a cave.",
+				["description"] = "~L.IN_A_CAVE_2",
 				["coord"] = { 34.7, 45.8, THE_WAKING_SHORES },
 				["provider"] = { "i", 204278 },	-- Neltharion's Toolkit
 				["questID"] = 74978,
 			}),
 			n(195939, {	-- Bubble Drifter
 				["coord"] = { 40.6, 41.2, THE_WAKING_SHORES },
-				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
+				["description"] = createLocalizationString({
+					readable = "Use nearby Fragrant Plant to attract Bubble Drifter.",
+					constant = "USE_NEARBY_FRAGRANT_PLANT_TO_ATTRACT_BUBBLE",
+					export = true,
+					text = {
+						en = "Use nearby Fragrant Plant to attract Bubble Drifter.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "使用附近的芬芳植物来吸引泡泡漂流者。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 70599,
 				["cost"] = { { "i", 199061, 1 } },	-- 1x A Guide to Rare Fish
 				["groups"] = {
@@ -42,7 +93,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380654, {	-- Dead Man's Chestplate
 				["coord"] = { 69.3, 46.5, THE_WAKING_SHORES },
 				["questID"] = 70346,
-				["description"] = "This treasure will drop the corresponding chest piece for your armor class. Players will have to collect it four times total for all appearances.",
+				["description"] = createLocalizationString({
+					readable = "This treasure will drop the corresponding chest piece for your armor class. Players will have to collect it four times total for all appearances.",
+					constant = "THIS_TREASURE_WILL_DROP_THE_CORRESPONDING_CHEST",
+					export = true,
+					text = {
+						en = "This treasure will drop the corresponding chest piece for your armor class. Players will have to collect it four times total for all appearances.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此宝藏会掉落与你护甲类型对应的胸甲。玩家总共需要收集四次才能集齐所有外观。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(202191),	-- Dead Man's Breastplate
 					i(202190),	-- Dead Man's Chains
@@ -52,7 +120,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380518, {	-- Dislodged Dragoneye
 				["coord"] = { 60.5, 57.8, THE_WAKING_SHORES },
-				["description"] = "Behind a pile of stones underneath the dragon statue.",
+				["description"] = createLocalizationString({
+					readable = "Behind a pile of stones underneath the dragon statue.",
+					constant = "BEHIND_A_PILE_OF_STONES_UNDERNEATH_THE_DRAGON",
+					export = true,
+					text = {
+						en = "Behind a pile of stones underneath the dragon statue.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在龙雕像下方的一堆石头后面。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(198626),	-- Dislodged Dragoneye
 				},
@@ -116,7 +201,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(385022, {	-- Eroded Fossil
-				["description"] = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
+				["description"] = createLocalizationString({
+					readable = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
+					constant = "ONLY_AVAILABLE_WHEN_WORLD_QUEST",
+					export = true,
+					text = {
+						en = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅当世界任务|cffffffff亮刃的遗骨|r（66070）激活时开放。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 26.0, 94.6, THE_WAKING_SHORES },
 					{ 21.6, 92.1, THE_WAKING_SHORES },
@@ -140,7 +242,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381355, {	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
-				["description"] = "Underneath the dragon statue.",
+				["description"] = "~L.UNDERNEATH_THE_DRAGON_STATUE",
 				["groups"] = {
 					i(199841),	-- Finely Carved Wing
 				},
@@ -157,7 +259,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(375668, {	-- Misty Treasure Chest
-				["description"] = "Stand on the Handhold sticking out of the waterfall and walk forward to find this treasure (It's very hidden behind the water).",
+				["description"] = createLocalizationString({
+					readable = "Stand on the Handhold sticking out of the waterfall and walk forward to find this treasure (It's very hidden behind the water).",
+					constant = "STAND_ON_THE_HANDHOLD_STICKING_OUT_OF_THE",
+					export = true,
+					text = {
+						en = "Stand on the Handhold sticking out of the waterfall and walk forward to find this treasure (It's very hidden behind the water).",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "站在瀑布中突出的把手上，向前走即可找到这件宝藏（它藏在水的后面，非常隐蔽）。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 58.6, 53.1, THE_WAKING_SHORES },
 				["questID"] = 65646,
 				["groups"] = {
@@ -210,7 +329,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380648, {	-- Odd Book
 				["sourceQuests"] = { 70134 },	-- Memories
-				["description"] = "Underneath the Obsidian Citadel.",
+				["description"] = createLocalizationString({
+					readable = "Underneath the Obsidian Citadel.",
+					constant = "UNDERNEATH_THE_OBSIDIAN_CITADEL",
+					export = true,
+					text = {
+						en = "Underneath the Obsidian Citadel.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在黑曜堡垒下方。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 23.2, 60.5, THE_WAKING_SHORES },
 				["groups"] = {
 					i(198661),	-- Partially Destroyed Diary
@@ -223,7 +359,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}
 			}),
 			o(382325, {	-- Onyx Gem Cluster
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 29.4, 52.6, THE_WAKING_SHORES },	-- Cave Entrance
 					{ 29.4, 47.0, THE_WAKING_SHORES },	-- Onyx Gem Cluster
@@ -236,7 +372,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(385021, {	-- Petrified Dragon Egg
-				["description"] = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
+				["description"] = "~L.ONLY_AVAILABLE_WHEN_WORLD_QUEST",
 				["coords"] = {
 					{ 33.4, 77.1, THE_WAKING_SHORES },
 					{ 23.0, 88.8, THE_WAKING_SHORES },
@@ -256,7 +392,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380430, {	-- Tail Fragment
 				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
-				["description"] = "Underneath the tail of the dragon statue.",
+				["description"] = createLocalizationString({
+					readable = "Underneath the tail of the dragon statue.",
+					constant = "UNDERNEATH_THE_TAIL_OF_THE_DRAGON_STATUE",
+					export = true,
+					text = {
+						en = "Underneath the tail of the dragon statue.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在巨龙雕像尾巴的下方。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(198543),	-- Tail Fragment
 				},

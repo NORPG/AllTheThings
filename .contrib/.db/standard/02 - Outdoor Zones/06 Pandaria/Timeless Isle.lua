@@ -106,7 +106,24 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(33136, {	-- The Rainy Day is Here
-								["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+								["description"] = createLocalizationString({
+									readable = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+									constant = "YOU_CAN_COMPLETE_THIS_QUEST_ONCE_ACROSS_YOUR",
+									export = true,
+									text = {
+										en = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "此任务在整个账号上只能完成一次。在你首次赢得天神比武大会后，它会给予你。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceQuest"] = 33137,	-- The Celestial Tournament
 								["qg"] = 73082,	-- Master Li
 								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
@@ -216,14 +233,48 @@ root(ROOTS.Zones, {
 					pet(1324),	-- Ashwing Moth (PET!)
 					pet(1325),	-- Flamering Moth (PET!)
 					pet(1326, {	-- Skywisp Moth (PET!)
-						["description"] = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+						["description"] = createLocalizationString({
+							readable = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+							constant = "FOUND_ON_THE_TALLEST_PEAKS_OF_THE_ISLE",
+							export = true,
+							text = {
+								en = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于该岛最高的山峰上，骑乘信天翁前往最容易到达。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 				n(BURDEN_OF_ETERNITY, {
 					-- Cloth
 					-- Amaranthine (Priest Only)
 					i(101891, {	-- Amaranthine Cowl
-						["description"] = "Any Priest spec.",
+						["description"] = createLocalizationString({
+							readable = "Any Priest spec.",
+							constant = "ANY_PRIEST_SPEC",
+							export = true,
+							text = {
+								en = "Any Priest spec.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "任意牧师专精。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102287, 1 },	-- Timeless Cloth Helm
@@ -231,7 +282,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101897, {	-- Amaranthine Shoulderpads
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102289, 1 },	-- Timeless Cloth Spaulders
@@ -239,7 +290,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101895, {	-- Amaranthine Robes
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102284, 1 },	-- Timeless Cloth Robes
@@ -247,7 +298,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101899, {	-- Amaranthine Wristwraps
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102321, 1 },	-- Timeless Cloth Bracers
@@ -255,7 +306,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101892, {	-- Amaranthine Handwraps
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102286, 1 },	-- Timeless Cloth Gloves
@@ -263,7 +314,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101890, {	-- Amaranthine Cord
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102290, 1 },	-- Timeless Cloth Belt
@@ -271,7 +322,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101893, {	-- Amaranthine Leggings
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102288, 1 },	-- Timeless Cloth Leggings
@@ -279,7 +330,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { PRIEST },
 					}),
 					i(101896, {	-- Amaranthine Sandals
-						["description"] = "Any Priest spec.",
+						["description"] = "~L.ANY_PRIEST_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102285, 1 },	-- Timeless Cloth Boots
@@ -288,7 +339,24 @@ root(ROOTS.Zones, {
 					}),
 					-- Cloudscorcher (Mage & Warlock Only)
 					i(101901, {	-- Cloudscorcher Cowl
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = createLocalizationString({
+							readable = "Any Mage/Warlock spec.",
+							constant = "ANY_MAGE_WARLOCK_SPEC",
+							export = true,
+							text = {
+								en = "Any Mage/Warlock spec.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "任意法师/术士专精。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102287, 1 },	-- Timeless Cloth Helm
@@ -296,7 +364,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101906, {	-- Cloudscorcher Shoulderpads
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102289, 1 },	-- Timeless Cloth Spaulders
@@ -304,7 +372,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101904, {	-- Cloudscorcher Robes
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102284, 1 },	-- Timeless Cloth Robes
@@ -312,7 +380,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101907, {	-- Cloudscorcher Wristwraps
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102321, 1 },	-- Timeless Cloth Bracers
@@ -320,7 +388,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101902, {	-- Cloudscorcher Handwraps
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102286, 1 },	-- Timeless Cloth Gloves
@@ -328,7 +396,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101900, {	-- Cloudscorcher Belt
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102290, 1 },	-- Timeless Cloth Belt
@@ -336,7 +404,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101903, {	-- Cloudscorcher Leggings
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102288, 1 },	-- Timeless Cloth Leggings
@@ -344,7 +412,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101905, {	-- Cloudscorcher Sandals
-						["description"] = "Any Mage/Warlock spec.",
+						["description"] = "~L.ANY_MAGE_WARLOCK_SPEC",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102285, 1 },	-- Timeless Cloth Boots
@@ -355,7 +423,24 @@ root(ROOTS.Zones, {
 					-- Leather
 					-- Cranefeather (Rogue, Druid, Monk) [DPS]
 					i(101953, {	-- Cranefeather Hood
-						["description"] = "Set loot spec to Agility.",
+						["description"] = createLocalizationString({
+							readable = "Set loot spec to Agility.",
+							constant = "SET_LOOT_SPEC_TO_AGILITY",
+							export = true,
+							text = {
+								en = "Set loot spec to Agility.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将拾取专精设为敏捷。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102280, 1 },	-- Timeless Leather Helm
@@ -363,7 +448,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101955, {	-- Cranefeather Shoulders
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102282, 1 },	-- Timeless Leather Spaulders
@@ -371,7 +456,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101954, {	-- Cranefeather Jerkin
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
@@ -379,7 +464,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101949, {	-- Cranefeather Bindings
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102322, 1 },	-- Timeless Leather Bracers
@@ -387,7 +472,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101952, {	-- Cranefeather Gloves
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102279, 1 },	-- Timeless Leather Gloves
@@ -395,7 +480,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101956, {	-- Cranefeather Waistband
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102283, 1 },	-- Timeless Leather Belt
@@ -403,7 +488,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101951, {	-- Cranefeather Britches
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102281, 1 },	-- Timeless Leather Leggings
@@ -411,7 +496,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101950, {	-- Cranefeather Boots
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102278, 1 },	-- Timeless Leather Boots
@@ -420,7 +505,24 @@ root(ROOTS.Zones, {
 					}),
 					-- Fire-Chanter (Druid, Monk)
 					i(101874, {	-- Fire-Chanter Hood
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = createLocalizationString({
+							readable = "Set loot spec to Intellect.",
+							constant = "SET_LOOT_SPEC_TO_INTELLECT",
+							export = true,
+							text = {
+								en = "Set loot spec to Intellect.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将拾取专精设置为智力。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102280, 1 },	-- Timeless Leather Helm
@@ -428,7 +530,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101876, {	-- Fire-Chanter Shoulders
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102282, 1 },	-- Timeless Leather Spaulders
@@ -436,7 +538,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101875, {	-- Fire-Chanter Jerkin
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
@@ -444,7 +546,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101870, {	-- Fire-Chanter Bindings
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102322, 1 },	-- Timeless Leather Bracers
@@ -452,7 +554,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101873, {	-- Fire-Chanter Gloves
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102279, 1 },	-- Timeless Leather Gloves
@@ -460,7 +562,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101877, {	-- Fire-Chanter Waistband
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102283, 1 },	-- Timeless Leather Belt
@@ -468,7 +570,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101872, {	-- Fire-Chanter Britches
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102281, 1 },	-- Timeless Leather Leggings
@@ -476,7 +578,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101871, {	-- Fire-Chanter Boots
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102278, 1 },	-- Timeless Leather Boots
@@ -487,7 +589,7 @@ root(ROOTS.Zones, {
 					-- Mail
 					-- Crimsonscale (Shaman, Hunter) [DPS]
 					i(101931, {	-- Crimsonscale Helm
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102273, 1 },	-- Timeless Mail Helm
@@ -495,7 +597,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101933, {	-- Crimsonscale Spaulders
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102275, 1 },	-- Timeless Mail Shoulders
@@ -503,7 +605,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101934, {	-- Crimsonscale Vest
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102270, 1 },	-- Timeless Mail Chestpiece
@@ -511,7 +613,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101928, {	-- Crimsonscale Bracers
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102323, 1 },	-- Timeless Mail Bracers
@@ -519,7 +621,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101929, {	-- Crimsonscale Gauntlets
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102272, 1 },	-- Timeless Mail Gloves
@@ -527,7 +629,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101927, {	-- Crimsonscale Belt
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102276, 1 },	-- Timeless Mail Belt
@@ -535,7 +637,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101932, {	-- Crimsonscale Legguards
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102274, 1 },	-- Timeless Mail Leggings
@@ -543,7 +645,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101930, {	-- Crimsonscale Greaves
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102271, 1 },	-- Timeless Mail Boots
@@ -552,7 +654,24 @@ root(ROOTS.Zones, {
 					}),
 					-- Ordon Legend-Keeper (Shaman, Evoker) [HEALER]
 					i(101923, {	-- Ordon Legend-Keeper Helm
-						["description"] = "Set loot spec to Healer.",
+						["description"] = createLocalizationString({
+							readable = "Set loot spec to Healer.",
+							constant = "SET_LOOT_SPEC_TO_HEALER",
+							export = true,
+							text = {
+								en = "Set loot spec to Healer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将拾取专精设置为治疗。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102273, 1 },	-- Timeless Mail Helm
@@ -560,7 +679,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101925, {	-- Ordon Legend-Keeper Spaulders
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102275, 1 },	-- Timeless Mail Shoulders
@@ -568,7 +687,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101926, {	-- Ordon Legend-Keeper Vest
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102270, 1 },	-- Timeless Mail Chestpiece
@@ -576,7 +695,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101920, {	-- Ordon Legend-Keeper Bracers
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102323, 1 },	-- Timeless Mail Bracers
@@ -584,7 +703,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101921, {	-- Ordon Legend-Keeper Gauntlets
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102272, 1 },	-- Timeless Mail Gloves
@@ -592,7 +711,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101919, {	-- Ordon Legend-Keeper Belt
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102276, 1 },	-- Timeless Mail Belt
@@ -600,7 +719,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101924, {	-- Ordon Legend-Keeper Legguards
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102274, 1 },	-- Timeless Mail Leggings
@@ -608,7 +727,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101922, {	-- Ordon Legend-Keeper Greaves
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102271, 1 },	-- Timeless Mail Boots
@@ -619,7 +738,24 @@ root(ROOTS.Zones, {
 					-- Plate
 					-- Cliffbreaker (Warrior, Paladin, Death Knight) [DPS]
 					i(101882, {	-- Cliffbreaker Helm
-						["description"] = "Set loot spec to DPS.",
+						["description"] = createLocalizationString({
+							readable = "Set loot spec to DPS.",
+							constant = "SET_LOOT_SPEC_TO_DPS",
+							export = true,
+							text = {
+								en = "Set loot spec to DPS.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将拾取专精设置为 DPS。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102266, 1 },	-- Timeless Plate Helm
@@ -627,7 +763,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101885, {	-- Cliffbreaker Pauldrons
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102268, 1 },	-- Timeless Plate Spaulders
@@ -635,7 +771,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101878, {	-- Cliffbreaker Breastplate
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
@@ -643,7 +779,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101888, {	-- Cliffbreaker Vambraces
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102320, 1 },	-- Timeless Plate Bracers
@@ -651,7 +787,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101880, {	-- Cliffbreaker Gauntlets
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102265, 1 },	-- Timeless Plate Gloves
@@ -659,7 +795,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101881, {	-- Cliffbreaker Girdle
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102269, 1 },	-- Timeless Plate Belt
@@ -667,7 +803,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101883, {	-- Cliffbreaker Legplates
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102267, 1 },	-- Timeless Plate Leggings
@@ -675,7 +811,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101886, {	-- Cliffbreaker Sabatons
-						["description"] = "Set loot spec to DPS.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_DPS",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102264, 1 },	-- Timeless Plate Boot
@@ -684,7 +820,24 @@ root(ROOTS.Zones, {
 					}),
 					-- Elder Tortoiseshell (Warrior, Paladin, Death Knight) [TANK]
 					i(101942, {	-- Elder Tortoiseshell Helm
-						["description"] = "Set loot spec to Tank.",
+						["description"] = createLocalizationString({
+							readable = "Set loot spec to Tank.",
+							constant = "SET_LOOT_SPEC_TO_TANK",
+							export = true,
+							text = {
+								en = "Set loot spec to Tank.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将拾取专精设置为坦克。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102266, 1 },	-- Timeless Plate Helm
@@ -692,7 +845,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101945, {	-- Elder Tortoiseshell Pauldrons
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102268, 1 },	-- Timeless Plate Spaulders
@@ -700,7 +853,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101938, {	-- Elder Tortoiseshell Breastplate
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
@@ -708,7 +861,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101948, {	-- Elder Tortoiseshell Vambraces
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102320, 1 },	-- Timeless Plate Bracers
@@ -716,7 +869,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101940, {	-- Elder Tortoiseshell Gauntlets
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102265, 1 },	-- Timeless Plate Gloves
@@ -724,7 +877,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101941, {	-- Elder Tortoiseshell Girdle
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102269, 1 },	-- Timeless Plate Belt
@@ -732,7 +885,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101943, {	-- Elder Tortoiseshell Legplates
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102267, 1 },	-- Timeless Plate Leggings
@@ -740,7 +893,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101946, {	-- Elder Tortoiseshell Sabatons
-						["description"] = "Set loot spec to Tank.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_TANK",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102264, 1 },	-- Timeless Plate Boot
@@ -749,7 +902,7 @@ root(ROOTS.Zones, {
 					}),
 					-- Everbright (Paladin Only) [HEALER]
 					i(101911, {	-- Everbright Helm
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102266, 1 },	-- Timeless Plate Helm
@@ -757,7 +910,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101913, {	-- Everbright Pauldrons
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102268, 1 },	-- Timeless Plate Spaulders
@@ -765,7 +918,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101908, {	-- Everbright Breastplate
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
@@ -773,7 +926,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101915, {	-- Everbright Vambraces
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102320, 1 },	-- Timeless Plate Bracers
@@ -781,7 +934,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101909, {	-- Everbright Gauntlets
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102265, 1 },	-- Timeless Plate Gloves
@@ -789,7 +942,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101910, {	-- Everbright Girdle
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102269, 1 },	-- Timeless Plate Belt
@@ -797,7 +950,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101912, {	-- Everbright Legplates
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102267, 1 },	-- Timeless Plate Leggings
@@ -805,7 +958,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101914, {	-- Everbright Sabatons
-						["description"] = "Set loot spec to Healer.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_HEALER",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102264, 1 },	-- Timeless Plate Boot
@@ -815,7 +968,7 @@ root(ROOTS.Zones, {
 
 					-- Cloaks
 					i(101889, {	-- Amaranthine Cloak
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102318, 1 },	-- Timeless Cloak
@@ -823,7 +976,24 @@ root(ROOTS.Zones, {
 						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101879, {	-- Cliffbreaker Drape
-						["description"] = "Set loot spec to Strength.",
+						["description"] = createLocalizationString({
+							readable = "Set loot spec to Strength.",
+							constant = "SET_LOOT_SPEC_TO_STRENGTH",
+							export = true,
+							text = {
+								en = "Set loot spec to Strength.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将拾取专精设置为力量。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102318, 1 },	-- Timeless Cloak
@@ -831,7 +1001,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101939, {	-- Elder Tortoiseshell Drape
-						["description"] = "Set loot spec to Strength.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_STRENGTH",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102318, 1 },	-- Timeless Cloak
@@ -839,7 +1009,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101935, {	-- Kiln-Stoker Cloak
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102318, 1 },	-- Timeless Cloak
@@ -847,7 +1017,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101917, {	-- Warmsun Cloak
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102318, 1 },	-- Timeless Cloak
@@ -857,7 +1027,7 @@ root(ROOTS.Zones, {
 
 					-- Necklaces
 					i(101894, {	-- Amaranthine Necklace
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
@@ -865,7 +1035,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101884, {	-- Cliffbreaker Neck
-						["description"] = "Set loot spec to Strength.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_STRENGTH",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
@@ -873,7 +1043,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101944, {	-- Elder Tortoiseshell Neck
-						["description"] = "Set loot spec to Strength.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_STRENGTH",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
@@ -881,7 +1051,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101936, {	-- Kiln-Stoker Collar
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
@@ -889,7 +1059,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101916, {	-- Warmsun Choker
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
@@ -899,7 +1069,7 @@ root(ROOTS.Zones, {
 
 					-- Rings
 					i(101898, {	-- Amaranthine Signet
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102291, 1 },	-- Timeless Signet
@@ -907,7 +1077,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101887, {	-- Cliffbreaker Seal
-						["description"] = "Set loot spec to Strength.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_STRENGTH",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102291, 1 },	-- Timeless Signet
@@ -915,7 +1085,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101947, {	-- Elder Tortoiseshell Seal
-						["description"] = "Set loot spec to Strength.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_STRENGTH",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102291, 1 },	-- Timeless Signet
@@ -923,7 +1093,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101937, {	-- Kiln-Stoker Ring
-						["description"] = "Set loot spec to Intellect.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_INTELLECT",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102291, 1 },	-- Timeless Signet
@@ -931,7 +1101,7 @@ root(ROOTS.Zones, {
 						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101918, {	-- Warmsun Ring
-						["description"] = "Set loot spec to Agility.",
+						["description"] = "~L.SET_LOOT_SPEC_TO_AGILITY",
 						["cost"] = {
 							{ "i", 103982, 1 },	-- Burden of Eternity
 							{ "i", 102291, 1 },	-- Timeless Signet
@@ -958,7 +1128,24 @@ root(ROOTS.Zones, {
 				n(PROFESSIONS, {
 					prof(FISHING, {
 						i(104034, {	-- Purse of Timeless Coins
-							["description"] = "Can be fished up from Jewel Danio Schools.",
+							["description"] = createLocalizationString({
+								readable = "Can be fished up from Jewel Danio Schools.",
+								constant = "CAN_BE_FISHED_UP_FROM_JEWEL_DANIO_SCHOOLS",
+								export = true,
+								text = {
+									en = "Can be fished up from Jewel Danio Schools.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "可从珠宝鲐鱼群中钓到。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					}),
 				}),
@@ -1087,20 +1274,71 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32974, {	-- Rolo's Riddle #1
-						["description"] = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
+						["description"] = createLocalizationString({
+							readable = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
+							constant = "THE_RIDDLE_CAN_BE_FOUND_IN_CFFFFFFFFGLINTING",
+							export = true,
+							text = {
+								en = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "谜语可以在岛屿海岸沿线的|cFFFFFFFF闪光的沙子|r中找到。在每周闪亮宝箱附近的石柱处寻找第一条线索（|cFFFFFFFF49.4, 69.3|r）。",
+								-- TODO: tw = "",
+							},
+						}),
 						["providers"] = {
 							{ "i", 102225 },	-- Rolo's Riddle
 							{ "o", 222684 },	-- Glinting Sand
 						},
 					}),
 					q(32975, {	-- Rolo's Riddle #2
-						["description"] = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
+						["description"] = createLocalizationString({
+							readable = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
+							constant = "FIND_THE_SECOND_CLUE_AT_THE_BACK_OF_THREE",
+							export = true,
+							text = {
+								en = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在三风露台后方找到第二条线索（|cFFFFFFFF34.5, 26.5|r）。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 32974,	-- Rolo's Riddle
 						["qg"] = 72751,	-- Mound of Dirt
 						["coord"] = { 49.4, 69.3, TIMELESS_ISLE },
 					}),
 					q(32976, {	-- Rolo's Riddle #3
-						["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["description"] = createLocalizationString({
+							readable = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+							constant = "THE_FINAL_TREASURE_YOU_RE_LOOKING_FOR_IS_HIGH",
+							export = true,
+							text = {
+								en = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你要找的最终宝藏高高位于加尼亚居住的血湖处（|cFFFFFFFF66.0, 23.2|r）。\n\n你可以搭上信天翁，或者从岛外通过精心计算的飞行/坠落/滑翔靠近。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 32975,	-- Rolo's Riddle #2
 						["qgs"] = {
 							72754,	-- Mound of Dirt
@@ -1210,7 +1448,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73666, {	-- Archiereus of Flame
-						["description"] = "This is the summonable version of this rare. It drops more things.",
+						["description"] = createLocalizationString({
+							readable = "This is the summonable version of this rare. It drops more things.",
+							constant = "THIS_IS_THE_SUMMONABLE_VERSION_OF_THIS_RARE_IT",
+							export = true,
+							text = {
+								en = "This is the summonable version of this rare. It drops more things.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是该稀有生物的召唤版本。它会掉落更多东西。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 34.6, 31.6, TIMELESS_ISLE },
 						["cost"] = { { "i", 103684, 1 } },	-- Scroll of Challenge
 						["groups"] = {
@@ -1236,7 +1491,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73171, {	-- Champion of the Black Flame
-						["description"] = "This rare patrols all the way down the pathway from the upper bridge to the lower one.",
+						["description"] = createLocalizationString({
+							readable = "This rare patrols all the way down the pathway from the upper bridge to the lower one.",
+							constant = "THIS_RARE_PATROLS_ALL_THE_WAY_DOWN_THE_PATHWAY",
+							export = true,
+							text = {
+								en = "This rare patrols all the way down the pathway from the upper bridge to the lower one.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此稀有怪会从上层桥一路巡逻到下层桥。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33299,
 						["isDaily"] = true,
 						["coords"] = {
@@ -1252,7 +1524,24 @@ root(ROOTS.Zones, {
 					n(72045, {	-- Chelon
 						["questID"] = 32966,
 						["provider"] = { "o", 221027 },	-- Conspicuously Empty Shell
-						["description"] = "Click on Conspicuously Empty Shell to spawn Chelon.",
+						["description"] = createLocalizationString({
+							readable = "Click on Conspicuously Empty Shell to spawn Chelon.",
+							constant = "CLICK_ON_CONSPICUOUSLY_EMPTY_SHELL_TO_SPAWN",
+							export = true,
+							text = {
+								en = "Click on Conspicuously Empty Shell to spawn Chelon.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "点击明显空了的贝壳以刷新切隆。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1270,7 +1559,24 @@ root(ROOTS.Zones, {
 					}),
 					-- INFO: Old ID was possibly 72049, but since 7.3.5 (as far back as Wago.tools goes) it has always been 73854. Can't really timeline when we don't know when the change look place.
 					n(73854, {	-- Cranegnasher
-						["description"] = "Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",
+						["description"] = createLocalizationString({
+							readable = "Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",
+							constant = "LOCATE_THE_BLOODIED_RED_CRANE_CORPSE_FISHGORGED",
+							export = true,
+							text = {
+								en = "Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在约 44, 70 处找到沾血的红色仙鹤尸体——饱食鱼肉的仙鹤。如果它不在那里，说明这只稀有怪还无法刷新。\n\n如果尸体在那里，向南走，在约 45, 84 处的海边引一只饱食鱼肉的仙鹤。把它风筝回尸体处，噬鹤者就会出现并发动攻击！",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 32967,
 						["isDaily"] = true,
 						["coord"] = { 44.0, 70.0, TIMELESS_ISLE },
@@ -1288,7 +1594,24 @@ root(ROOTS.Zones, {
 							{ "i", 104115 },	-- Mist-Filled Spirit Lantern
 							{ "o", 223139 },	-- Cursed Gravestone
 						},
-						["description"] = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
+						["description"] = createLocalizationString({
+							readable = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
+							constant = "YOU_NEED_TO_HAVE_A_MIST_FILLED_SPIRIT_LANTERN",
+							export = true,
+							text = {
+								en = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当被诅咒的墓碑激活时，你需要持有从永恒之喉获得的充满迷雾的灵魂灯笼才能召唤此首领。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 26.5, 27.8, TIMELESS_ISLE },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1296,7 +1619,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73158, {	-- Emerald Gander
-						["description"] = "Travel around the area where the Celestial bosses spawn and kill Brilliant Windfeathers — whenever one respawns, there's a chance it will respawn as an Emerald Gander instead of the normal mob.",
+						["description"] = createLocalizationString({
+							readable = "Travel around the area where the Celestial bosses spawn and kill Brilliant Windfeathers — whenever one respawns, there's a chance it will respawn as an Emerald Gander instead of the normal mob.",
+							constant = "TRAVEL_AROUND_THE_AREA_WHERE_THE_CELESTIAL",
+							export = true,
+							text = {
+								en = "Travel around the area where the Celestial bosses spawn and kill Brilliant Windfeathers — whenever one respawns, there's a chance it will respawn as an Emerald Gander instead of the normal mob.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在天神首领刷新的区域内巡视并击杀亮羽风鹤——每当其刷新时，都有几率以翡翠雄鹅的形态刷新，而非普通怪物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33295,
 						["isDaily"] = true,
 						["coords"] = {
@@ -1315,7 +1655,24 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["groups"] = {
 							i(104115, {	-- Mist-Filled Spirit Lantern
-								["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius.",
+								["description"] = createLocalizationString({
+									readable = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius.",
+									constant = "USE_THIS_ITEM_AT_THE_CURSED_GRAVESTONE_TO",
+									export = true,
+									text = {
+										en = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在诅咒墓碑处使用此物品，召唤恐惧之船瓦祖维斯。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),
@@ -1351,7 +1708,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73161, {	-- Great Turtle Furyshell
-						["description"] = "Travel along the beach and kill Great Turtles — whenever one respawns, there's a chance it will respawn as a Great Turtle Furyshell instead of the normal mob.",
+						["description"] = createLocalizationString({
+							readable = "Travel along the beach and kill Great Turtles — whenever one respawns, there's a chance it will respawn as a Great Turtle Furyshell instead of the normal mob.",
+							constant = "TRAVEL_ALONG_THE_BEACH_AND_KILL_GREAT_TURTLES",
+							export = true,
+							text = {
+								en = "Travel along the beach and kill Great Turtles — whenever one respawns, there's a chance it will respawn as a Great Turtle Furyshell instead of the normal mob.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "沿着海滩前行并击杀巨型海龟——每当其刷新时，都有几率以怒壳巨型海龟的形态刷新，而非普通怪物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33297,
 						["isDaily"] = true,
 						["coords"] = {
@@ -1377,7 +1751,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73167, {	-- Huolon
-						["description"] = "Huolon spawns around the coordinate we have listed, but if he's not pulled immediately he will fly up the hill, over the first upper bridge, and loop back down.",
+						["description"] = createLocalizationString({
+							readable = "Huolon spawns around the coordinate we have listed, but if he's not pulled immediately he will fly up the hill, over the first upper bridge, and loop back down.",
+							constant = "HUOLON_SPAWNS_AROUND_THE_COORDINATE_WE_HAVE",
+							export = true,
+							text = {
+								en = "Huolon spawns around the coordinate we have listed, but if he's not pulled immediately he will fly up the hill, over the first upper bridge, and loop back down.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "胡隆会在我们列出的坐标附近刷新，但如果没有立即被拉走，他会飞上山丘，越过第一座上层桥，然后绕回来。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33311,
 						["isDaily"] = true,
 						["coord"] = { 66.0, 58.8, TIMELESS_ISLE },
@@ -1387,7 +1778,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73163, {	-- Imperial Python
-						["description"] = "Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",
+						["description"] = createLocalizationString({
+							readable = "Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",
+							constant = "TRAVEL_AROUND_THE_ZONE_AND_KILL_DEATH_ADDERS",
+							export = true,
+							text = {
+								en = "Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在该区域内巡视并击杀死亡蝰蛇——每当其刷新时，都有几率以帝王巨蟒的形态刷新，而非普通怪物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33303,
 						["isDaily"] = true,
 						["provider"] = { "n", 72841 },	-- Death Adder
@@ -1412,7 +1820,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73160, {	-- Ironfur Steelhorn
-						["description"] = "Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",
+						["description"] = createLocalizationString({
+							readable = "Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",
+							constant = "TRAVEL_AROUND_THE_AREA_WHERE_THE_CELESTIAL_2",
+							export = true,
+							text = {
+								en = "Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在天神首领刷新的区域内巡视并击杀铁鬃大公牛——每当其刷新时，都有几率以铁鬃钢角牛的形态刷新，而非普通怪物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33296,
 						["isDaily"] = true,
 						["provider"] = { "n", 72844 },	-- Ironfur Great Bull
@@ -1460,7 +1885,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73166, {	-- Monstrous Spineclaw
-						["description"] = "Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",
+						["description"] = createLocalizationString({
+							readable = "Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",
+							constant = "TRAVEL_ALONG_THE_BEACH_AND_KILL_ANCIENT",
+							export = true,
+							text = {
+								en = "Travel along the beach and kill Ancient Spineclaws — whenever one respawns, there's a chance it will respawn as a Monstrous Spineclaw instead of the normal mob.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "沿着海滩前行并击杀上古刺爪蟹——每当其刷新时，都有几率以巨型刺爪蟹的形态刷新，而非普通怪物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33302,
 						["isDaily"] = true,
 						["coords"] = {
@@ -1502,7 +1944,24 @@ root(ROOTS.Zones, {
 					}),
 					o(220807, {	-- Neverending Spritewood
 						["questID"] = 32961,
-						["description"] = "Click on this to receive a buff that will allow you to kill the sprites. Use your AOE attacks and run around the tree where they are clustered for maximum effect.",
+						["description"] = createLocalizationString({
+							readable = "Click on this to receive a buff that will allow you to kill the sprites. Use your AOE attacks and run around the tree where they are clustered for maximum effect.",
+							constant = "CLICK_ON_THIS_TO_RECEIVE_A_BUFF_THAT_WILL_ALLOW",
+							export = true,
+							text = {
+								en = "Click on this to receive a buff that will allow you to kill the sprites. Use your AOE attacks and run around the tree where they are clustered for maximum effect.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "点击它以获得一个能让你击杀妖精的增益。使用你的范围攻击，并绕着它们聚集的那棵树跑动，以获得最大效果。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 44.7, 70.5, TIMELESS_ISLE },
 							{ 46.3, 71.0, TIMELESS_ISLE },
@@ -1549,7 +2008,24 @@ root(ROOTS.Zones, {
 							{ "o", 220815 },	-- Cave-in
 							{ "o", 222796 },	-- Cloudstrike Family Helm
 						},
-						["description"] = "Use the Cloudstrike ability from the Cloudstrike Family Helm to break down the caved in rocks. If you AFK inside the cave or Mage Blink / Warrior Leap through the rocks, you can interact with the Rock-breaking Hammer to open the way.",
+						["description"] = createLocalizationString({
+							readable = "Use the Cloudstrike ability from the Cloudstrike Family Helm to break down the caved in rocks. If you AFK inside the cave or Mage Blink / Warrior Leap through the rocks, you can interact with the Rock-breaking Hammer to open the way.",
+							constant = "USE_THE_CLOUDSTRIKE_ABILITY_FROM_THE",
+							export = true,
+							text = {
+								en = "Use the Cloudstrike ability from the Cloudstrike Family Helm to break down the caved in rocks. If you AFK inside the cave or Mage Blink / Warrior Leap through the rocks, you can interact with the Rock-breaking Hammer to open the way.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用云击家族头盔上的云击技能击碎塌陷的岩石。如果你在洞穴里挂机，或者用法师闪现/战士冲锋穿过岩石，就可以与碎石之锤互动来开路。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1611,7 +2087,24 @@ root(ROOTS.Zones, {
 						["questID"] = 32962,
 						["isDaily"] = true,
 						["coord"] = { 53.5, 56.4, 555 },	-- Cavern of Lost Spirits
-						["description"] = "Daily Lockout\nTraverse the cave to the skeleton at the end within 5 minutes without touching any ghosts.",
+						["description"] = createLocalizationString({
+							readable = "Daily Lockout\nTraverse the cave to the skeleton at the end within 5 minutes without touching any ghosts.",
+							constant = "DAILY_LOCKOUT_TRAVERSE_THE_CAVE_TO_THE_SKELETON",
+							export = true,
+							text = {
+								en = "Daily Lockout\nTraverse the cave to the skeleton at the end within 5 minutes without touching any ghosts.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "每日锁定\n在 5 分钟内穿过洞穴抵达尽头的骸骨，且不能碰到任何幽灵。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							ach(8743),	-- Zarhym Altogether
 						},
@@ -1632,7 +2125,24 @@ root(ROOTS.Zones, {
 							{ "n", 71944 },	-- Skunked Keg of Beer
 							{ "n", 71908 },	-- Skunky Brew Alemental
 						},
-						["description"] = "Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",
+						["description"] = createLocalizationString({
+							readable = "Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",
+							constant = "KILL_10_SKUNKY_BREW_ALEMENTALS_TO_SPAWN_ZHU_GON",
+							export = true,
+							text = {
+								en = "Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在活动期间击杀 10 个臭酒元素，即可在镇子里刷出酸腐的朱贡。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 32959,
 						["isDaily"] = true,
 						["coord"] = { 37.8, 77.2, TIMELESS_ISLE },
@@ -1643,7 +2153,24 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(220986, {	-- Blackguard's Jetsam
-						["description"] = "Coordinates are for an underwater cave entrance off the coast of the island.",
+						["description"] = createLocalizationString({
+							readable = "Coordinates are for an underwater cave entrance off the coast of the island.",
+							constant = "COORDINATES_ARE_FOR_AN_UNDERWATER_CAVE_ENTRANCE",
+							export = true,
+							text = {
+								en = "Coordinates are for an underwater cave entrance off the coast of the island.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "坐标指向岛屿海岸外的一处水下洞穴入口。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isWeekly"] = true,
 						["questID"] = 32956,
 						["coord"] = { 17.3, 57.0, TIMELESS_ISLE },
@@ -1706,11 +2233,45 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(220903, {	-- Gleaming Crane Statue
-						["description"] = "Click the statue, and you will be thrown up into the air and given a slow-fall buff. Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",
+						["description"] = createLocalizationString({
+							readable = "Click the statue, and you will be thrown up into the air and given a slow-fall buff. Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",
+							constant = "CLICK_THE_STATUE_AND_YOU_WILL_BE_THROWN_UP_INTO",
+							export = true,
+							text = {
+								en = "Click the statue, and you will be thrown up into the air and given a slow-fall buff. Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "点击雕像，你将被抛向空中并获得缓落增益。落在任意平台上并拾取任意|cFFFFFFFF雾气覆盖的宝箱|r，以获得该成就标准的进度。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 58.4, 60.0, TIMELESS_ISLE },
 					}),
 					o(220901, {	-- Gleaming Treasure Chest
-						["description"] = "Coordinates are for the side of the hill, where you start to jump across the pillars toward the treasure.",
+						["description"] = createLocalizationString({
+							readable = "Coordinates are for the side of the hill, where you start to jump across the pillars toward the treasure.",
+							constant = "COORDINATES_ARE_FOR_THE_SIDE_OF_THE_HILL_WHERE",
+							export = true,
+							text = {
+								en = "Coordinates are for the side of the hill, where you start to jump across the pillars toward the treasure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "坐标指向山丘侧面，你将从此处开始踏着石柱跳向宝藏。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isWeekly"] = true,
 						["questID"] = 32969,
 						["coords"] = {
@@ -1719,7 +2280,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(221036, {	-- Gleaming Treasure Satchel
-						["description"] = "Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform. Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump. Once you're on the beam, dismount and walk carefully toward the treasure.",
+						["description"] = createLocalizationString({
+							readable = "Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform. Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump. Once you're on the beam, dismount and walk carefully toward the treasure.",
+							constant = "STARTING_AT_AROUND_CFFFFFFFF71_5_79_8_R_MOUNT",
+							export = true,
+							text = {
+								en = "Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform. Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump. Once you're on the beam, dismount and walk carefully toward the treasure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "从大约 |cFFFFFFFF71.5, 79.8|r 处开始，骑上坐骑，从后方平台的角落起跳。能否成功落在横梁上可能要试几次，取决于起跳的角度和位置。落到横梁上后，下坐骑并小心地朝宝藏走去。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isWeekly"] = true,
 						["questID"] = 32970,
 						["coord"] = { 70.6, 80.9, TIMELESS_ISLE },
@@ -1796,7 +2374,24 @@ root(ROOTS.Zones, {
 						["isWeekly"] = true,
 						["questID"] = 32971,
 						["coord"] = { 59.0, 60.0, TIMELESS_ISLE },
-						["description"] = "Coordinates are for the Gleaming Crane Statue which allows you to fly up to the chests.",
+						["description"] = createLocalizationString({
+							readable = "Coordinates are for the Gleaming Crane Statue which allows you to fly up to the chests.",
+							constant = "COORDINATES_ARE_FOR_THE_GLEAMING_CRANE_STATUE",
+							export = true,
+							text = {
+								en = "Coordinates are for the Gleaming Crane Statue which allows you to fly up to the chests.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "坐标指向闪亮仙鹤雕像，借助它可以飞向那些宝箱。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					o(221670, {	-- Moss-Covered Chest
 						["questID"] = 33170,
@@ -1855,7 +2450,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.7, 79.5, TIMELESS_ISLE },
 					}),
 					o(223097, {	-- Moss-Covered Chest
-						["description"] = "Underwater, at the base of one of the pier legs.",
+						["description"] = createLocalizationString({
+							readable = "Underwater, at the base of one of the pier legs.",
+							constant = "UNDERWATER_AT_THE_BASE_OF_ONE_OF_THE_PIER_LEGS",
+							export = true,
+							text = {
+								en = "Underwater, at the base of one of the pier legs.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在水下，其中一根码头支柱的底部。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33184,
 						["coord"] = { 34.8, 84.2, TIMELESS_ISLE },
 					}),
@@ -1952,14 +2564,48 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(220902, {	-- Rope-Bound Treasure Chest
-						["description"] = "Coordinates are for the beginning of the rope pathway. You need to carefully walk along the ropes, dropping down to the lower ropes, until you've crossed Red Stone Run and can drop down to the treasure.",
+						["description"] = createLocalizationString({
+							readable = "Coordinates are for the beginning of the rope pathway. You need to carefully walk along the ropes, dropping down to the lower ropes, until you've crossed Red Stone Run and can drop down to the treasure.",
+							constant = "COORDINATES_ARE_FOR_THE_BEGINNING_OF_THE_ROPE",
+							export = true,
+							text = {
+								en = "Coordinates are for the beginning of the rope pathway. You need to carefully walk along the ropes, dropping down to the lower ropes, until you've crossed Red Stone Run and can drop down to the treasure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "坐标指向绳索路径的起点。你需要小心地沿绳索前行，逐段下到更低的绳索，直到越过红石溪，即可下落到宝藏处。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isWeekly"] = true,
 						["questID"] = 32968,
 						["coord"] = { 60.1, 45.9, TIMELESS_ISLE },
 					}),
 					o(221690),	-- Sand-Covered Egg
 					o(221617, {	-- Skull-Covered Chest
-						["description"] = "Inside the Cavern of Lost Spirits.",
+						["description"] = createLocalizationString({
+							readable = "Inside the Cavern of Lost Spirits.",
+							constant = "INSIDE_THE_CAVERN_OF_LOST_SPIRITS",
+							export = true,
+							text = {
+								en = "Inside the Cavern of Lost Spirits.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在失落灵魂洞穴内。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33203,
 						["coord"] = { 62.9, 35.3, 555 },	-- Cavern of Lost Spirits
 					}),
@@ -1974,12 +2620,29 @@ root(ROOTS.Zones, {
 					o(223539),	-- Snowdrift Tiger Talons
 					o(223228),	-- Southsea Firebrew
 					o(221671, {	-- Sturdy Chest
-						["description"] = "On top of a plateau. You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["description"] = createLocalizationString({
+							readable = "On top of a plateau. You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+							constant = "ON_TOP_OF_A_PLATEAU_YOU_CAN_PICK_UP_AN",
+							export = true,
+							text = {
+								en = "On top of a plateau. You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在一处高原顶部。你可以搭乘信天翁，或者从岛屿外借助巧妙的飞行/下落/滑翔抵达。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33204,
 						["coord"] = { 28.1, 35.1, TIMELESS_ISLE },
 					}),
 					o(223116, {	-- Sturdy Chest
-						["description"] = "On top of a plateau. You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["description"] = "~L.ON_TOP_OF_A_PLATEAU_YOU_CAN_PICK_UP_AN",
 						["questID"] = 33205,
 						["coord"] = { 26.7, 64.9, TIMELESS_ISLE },
 					}),
@@ -1988,12 +2651,46 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.6, 70.5, TIMELESS_ISLE },
 					}),
 					o(223118, {	-- Sturdy Chest
-						["description"] = "The chest is inside Spelurk's cave. Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave. Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
+						["description"] = createLocalizationString({
+							readable = "The chest is inside Spelurk's cave. Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave. Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
+							constant = "THE_CHEST_IS_INSIDE_SPELURK_S_CAVE_CLASSES_THAT",
+							export = true,
+							text = {
+								en = "The chest is inside Spelurk's cave. Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave. Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "宝箱在斯佩拉克的洞穴里。能够突然向前突进/跳跃的职业（如法师的闪现）可以强行进入洞穴。使用蘑菇椅或皮革双人沙发之类的玩具也许同样有效。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33207,
 						["coord"] = { 59.2, 49.5, TIMELESS_ISLE },
 					}),
 					o(220832, {	-- Sunken Treasure
-						["description"] = "In the belly of the sunken ship.",
+						["description"] = createLocalizationString({
+							readable = "In the belly of the sunken ship.",
+							constant = "IN_THE_BELLY_OF_THE_SUNKEN_SHIP",
+							export = true,
+							text = {
+								en = "In the belly of the sunken ship.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在沉船的船腹中。",
+								-- TODO: tw = "",
+							},
+						}),
 						["isWeekly"] = true,
 						["questID"] = 32957,
 						["coord"] = { 40.4, 92.9, TIMELESS_ISLE },
@@ -2018,7 +2715,24 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
 					}),
 					n(73657, {	-- Great Chef Woo <Food & Drink>
-						["description"] = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
+						["description"] = createLocalizationString({
+							readable = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
+							constant = "YOU_CAN_TURN_IN_VARIOUS_ZONE_DROPS_TO_THIS",
+							export = true,
+							text = {
+								en = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你可以将各种区域掉落物交给该商人以换取永恒币。\n\n这些任务可以无限重复。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
 						["groups"] = sharedData({
 							["repeatable"] = true,
@@ -2408,7 +3122,24 @@ root(ROOTS.Zones, {
 								["cost"] = { { "c", 789, 100 } },	-- 100x Bloody Coin
 							})),
 							pvp(currency(789, {	-- Bloody Coin
-								["description"] = "Earn Bloody Coins by transforming into an Emissary of Ordos and getting killing blows on enemy players.",
+								["description"] = createLocalizationString({
+									readable = "Earn Bloody Coins by transforming into an Emissary of Ordos and getting killing blows on enemy players.",
+									constant = "EARN_BLOODY_COINS_BY_TRANSFORMING_INTO_AN",
+									export = true,
+									text = {
+										en = "Earn Bloody Coins by transforming into an Emissary of Ordos and getting killing blows on enemy players.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "通过变身为斡耳朵斯使者并击杀敌方玩家来赚取血腥硬币。",
+										-- TODO: tw = "",
+									},
+								}),
 								["providers"] = {
 									{ "i", 102467 },	-- Censer of Eternal Agony
 									{ "i", 102463 },	-- Fire-Watcher's Oath
@@ -2417,7 +3148,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73293, {	-- Whizzig
-						["description"] = "This vendor is rare and is not always available.",
+						["description"] = createLocalizationString({
+							readable = "This vendor is rare and is not always available.",
+							constant = "THIS_VENDOR_IS_RARE_AND_IS_NOT_ALWAYS_AVAILABLE",
+							export = true,
+							text = {
+								en = "This vendor is rare and is not always available.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此商人很稀有，并非始终可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 40.0, 63.0, TIMELESS_ISLE },
 							{ 42.8, 59.4, TIMELESS_ISLE },
@@ -2506,7 +3254,24 @@ root(ROOTS.Zones, {
 						i(104227),	-- Technique: Glyph of Pillar of Light
 					}),
 					i(104265, {	-- Great Turtle Meat
-						["description"] = "Can be turned in for 50 Timeless Coins.",
+						["description"] = createLocalizationString({
+							readable = "Can be turned in for 50 Timeless Coins.",
+							constant = "CAN_BE_TURNED_IN_FOR_50_TIMELESS_COINS",
+							export = true,
+							text = {
+								en = "Can be turned in for 50 Timeless Coins.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可上交以换取 50 枚永恒币。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(72777, {	-- Gulp Frog
 						i(104241, {	-- Technique: Glyph of Rain of Frogs
@@ -2514,7 +3279,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					i(104266, {	-- Heavy Yak Flank
-						["description"] = "Can be turned in for 50 Timeless Coins.",
+						["description"] = "~L.CAN_BE_TURNED_IN_FOR_50_TIMELESS_COINS",
 					}),
 					n(72898, {	-- High Priest of Ordos
 						i(104329),	-- Ash-Covered Horn (TOY!)
@@ -2525,7 +3290,24 @@ root(ROOTS.Zones, {
 						i(104224),	-- Technique: Glyph of Evaporation
 					}),
 					i(104264, {	-- Meaty Crane Leg
-						["description"] = "Can be turned in for 20 Timeless Coins.",
+						["description"] = createLocalizationString({
+							readable = "Can be turned in for 20 Timeless Coins.",
+							constant = "CAN_BE_TURNED_IN_FOR_20_TIMELESS_COINS",
+							export = true,
+							text = {
+								en = "Can be turned in for 20 Timeless Coins.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可上交换取 20 枚永恒币。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(72888, {	-- Molten Guardian
 						i(104328),	-- Cauterizing Core
@@ -2559,7 +3341,24 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					i(104257, {	-- Pristine Firestorm Egg
-						["description"] = "Can be turned in for 500 Timeless Coins.",
+						["description"] = createLocalizationString({
+							readable = "Can be turned in for 500 Timeless Coins.",
+							constant = "CAN_BE_TURNED_IN_FOR_500_TIMELESS_COINS",
+							export = true,
+							text = {
+								en = "Can be turned in for 500 Timeless Coins.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可上交换取 500 枚永恒币。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(73018, {	-- Spectral Brewmaster
 						i(104235),	-- Technique: Glyph of Lingering Ancestors
@@ -2577,7 +3376,24 @@ root(ROOTS.Zones, {
 						i(104290),	-- Sticky Silkworm Goo
 					}),
 					i(104267, {	-- Thick Tiger Haunch
-						["description"] = "Can be turned in for 100 Timeless Coins.",
+						["description"] = createLocalizationString({
+							readable = "Can be turned in for 100 Timeless Coins.",
+							constant = "CAN_BE_TURNED_IN_FOR_100_TIMELESS_COINS",
+							export = true,
+							text = {
+								en = "Can be turned in for 100 Timeless Coins.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可上交换取 100 枚永恒币。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(72761, {	-- Windfeather Nestkeeper
 						i(104231),	-- Technique: Glyph of Inspired Hymns
@@ -2646,7 +3462,24 @@ root(ROOTS.Zones, {
 						i(101828),	-- Warmsun Cloak
 					}),
 					i(104013, {	-- Timeless Cloth Armor Cache
-						["description"] = "The item created will be class- and spec-specific.|r",
+						["description"] = createLocalizationString({
+							readable = "The item created will be class- and spec-specific.|r",
+							constant = "THE_ITEM_CREATED_WILL_BE_CLASS_AND_SPEC",
+							export = true,
+							text = {
+								en = "The item created will be class- and spec-specific.|r",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "所创造的物品将专属于特定职业和专精。|r",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(101801),	-- Amaranthine Cord
 							i(101802),	-- Amaranthine Cowl
@@ -2755,7 +3588,7 @@ root(ROOTS.Zones, {
 						i(101816),	-- Cloudscorcher Sandals
 					}),
 					i(104012, {	-- Timeless Leather Armor Cache
-						["description"] = "The item created will be class- and spec-specific.|r",
+						["description"] = "~L.THE_ITEM_CREATED_WILL_BE_CLASS_AND_SPEC",
 						["groups"] = {
 							i(101862),	-- Cranefeather Bindings
 							i(101863),	-- Cranefeather Boots
@@ -2864,7 +3697,7 @@ root(ROOTS.Zones, {
 						i(101782),	-- Fire-Chanter Boots
 					}),
 					i(104010, {	-- Timeless Mail Armor Cache
-						["description"] = "The item created will be class- and spec-specific.|r",
+						["description"] = "~L.THE_ITEM_CREATED_WILL_BE_CLASS_AND_SPEC",
 						["groups"] = {
 							i(101838),	-- Crimsonscale Belt
 							i(101839),	-- Crimsonscale Bracers
@@ -2973,7 +3806,7 @@ root(ROOTS.Zones, {
 						i(101833),	-- Ordon Legend-Keeper Greaves
 					}),
 					i(104009, {	-- Timeless Plate Armor Cache
-						["description"] = "The item created will be class- and spec-specific.|r",
+						["description"] = "~L.THE_ITEM_CREATED_WILL_BE_CLASS_AND_SPEC",
 						["groups"] = {
 							i(101789),	-- Cliffbreaker Breastplate
 							i(101791),	-- Cliffbreaker Gauntlets

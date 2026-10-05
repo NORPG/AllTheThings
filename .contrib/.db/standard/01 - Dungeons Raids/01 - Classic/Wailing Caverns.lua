@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			n(QUESTS, {
 				-- #if BEFORE CATA
-				["description"] = "To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",
+				["description"] = "~L.TO_GET_TO_THE_QUEST_GIVER_HUB_OUTSIDE_THE",
 				-- #endif
 				["groups"] = {
 					q(26870, {	-- Cleansing the Caverns
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = 10,
 					}),
 					q(3370, {	-- In Nightmares [A]
-						["description"] = "She lives in a house on top of the mountain.",
+						["description"] = "~L.SHE_LIVES_IN_A_HOUSE_ON_TOP_OF_THE_MOUNTAIN",
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(3369, {	-- In Nightmares [H]
-						["description"] = "She lives in a house on top of the mountain.",
+						["description"] = "~L.SHE_LIVES_IN_A_HOUSE_ON_TOP_OF_THE_MOUNTAIN",
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(6443, {	-- Deviate Hide
-					["description"] = "Drops from Deviate creatures in the Wailing Caverns.",
+					["description"] = "~L.DROPS_FROM_DEVIATE_CREATURES_IN_THE_WAILING",
 				}),
 				n(3840, {	-- Druid of the Fang
 					i(10413),	-- Gloves of the Fang
@@ -311,10 +311,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			prof(SKINNING, {
 				i(6470, {	-- Deviate Scale
-					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",
+					["description"] = "~L.CAN_DROP_AS_WELL_AS_BE_SKINNED_FROM_ALL",
 				}),
 				i(6471, {	-- Perfect Deviate Scale
-					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",
+					["description"] = "~L.CAN_DROP_AS_WELL_AS_BE_SKINNED_FROM_ALL_2",
 				}),
 			}),
 			e(474, {	-- Lady Anacondra
@@ -385,7 +385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(5912, {	-- Deviate Faerie Dragon
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["groups"] = {
 					i(5243),	-- Firebelcher
 					i(6632),	-- Feyscale Cloak

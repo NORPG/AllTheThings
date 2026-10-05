@@ -758,7 +758,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
 			}),
 			o(584503, {	-- Grand Sanctified Spoils
-				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
+				["description"] = createLocalizationString({
+					readable = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
+					constant = "REQUIRES_DELVER_S_JOURNEY_RANK_3_TO_SPAWN_WHEN",
+					export = true,
+					text = {
+						en = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要地下堡行者之旅 3 级才会刷新。当你进入地下堡时，可能会收到一条消息“一面圣化战旗已刷新”。然后你需要找到这面战旗（它看起来像一根圣光主题的旗杆，比你的角色稍高，并微微发光），点击它，然后完成地下堡即可获得额外的宝箱/奖励。\n\n激活战旗时，可能会刷新一只精英怪物。如果刷新了，你将获得一个大型圣化战利品，而不是普通的战利品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
@@ -891,7 +908,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	}),
 	n(MAILBOX, {
 		i(258738, {	-- A Cordial Invitation (QS!)
-			["description"] = "Mailed to you after your first death in a delve.",
+			["description"] = createLocalizationString({
+				readable = "Mailed to you after your first death in a delve.",
+				constant = "MAILED_TO_YOU_AFTER_YOUR_FIRST_DEATH_IN_A_DELVE",
+				export = true,
+				text = {
+					en = "Mailed to you after your first death in a delve.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在你首次于地下堡中死亡后邮寄给你。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 	}),
 	n(QUESTS, {
@@ -928,7 +962,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			["timeline"] = { ADDED_12_1_0 },
 			["groups"] = {
 				ach(61456, {	-- Die in Lordaeron or Undercity (Hidden Achievement Trigger)
-					["description"] = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
+					["description"] = createLocalizationString({
+						readable = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
+						constant = "ACQUISITION_OF_THE_GRAVESTONE_IS_LOCKED_BEHIND",
+						export = true,
+						text = {
+							en = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "墓碑的获取被一个隐藏成就锁定，该成就不会显示在你的成就界面中。\n\n你需要前往洛丹伦的现在时间相位，并在城市范围内杀死你的角色。\n\n杀死角色后强制刷新。如果此条目消失，请返回银月城并应用墓碑。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			},
 		}),
@@ -980,7 +1031,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	})),
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
-			["description"] = "Contains Chunk of Companion Experience tokens.",
+			["description"] = "~L.CONTAINS_CHUNK_OF_COMPANION_EXPERIENCE_TOKENS",
 			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["groups"] = {
 				-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff

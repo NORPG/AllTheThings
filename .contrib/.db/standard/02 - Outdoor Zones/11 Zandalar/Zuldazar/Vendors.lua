@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(142839, {	-- Old Jen'tay
-				["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
+				["description"] = "~L.WHEN_YOU_HAVE_150_BFA_INSCRIPTION_SPEAK_TO_THE",
 				["coord"] = { 76.2, 39.8, ZULDAZAR },
 				["groups"] = {
 					i(162030),	-- Technique: Glyph of the Humble Flyer (RECIPE!)
@@ -254,13 +254,13 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 					})),
 					moh(10, i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_2",
 					})),
 					moh(10, i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_3",
 					})),
 					moh(25, i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_4",
 						["classes"] = HEALERS,
 						["u"] = REMOVED_FROM_GAME,
 					})),
@@ -268,26 +268,26 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 					})),
 					moh(25, i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_2",
 					})),
 					moh(25, i(168444, {	-- Churning Blood of the Conquered [Rank 3]
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_3",
 					})),
 					moh(25, i(168814, {	-- Animated Blood of the Decimated (Rank 4)
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_4",
 						["u"] = REMOVED_FROM_GAME,
 					})),
 					moh(5, i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 					})),
 					moh(10, i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_2",
 					})),
 					moh(25, i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_3",
 					})),
 					moh(25, i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
-						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_4",
 						["classes"] = TANKS,
 						["u"] = REMOVED_FROM_GAME,
 					})),

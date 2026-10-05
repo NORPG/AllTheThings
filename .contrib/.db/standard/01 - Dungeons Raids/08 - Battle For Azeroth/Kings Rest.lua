@@ -104,16 +104,84 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				["groups"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
 						crit(41269, {	-- First trinket found
-							["description"] = "The first trinket is in the first room, on the pedestal in the center of the room.",
+							["description"] = createLocalizationString({
+								readable = "The first trinket is in the first room, on the pedestal in the center of the room.",
+								constant = "THE_FIRST_TRINKET_IS_IN_THE_FIRST_ROOM_ON_THE",
+								export = true,
+								text = {
+									en = "The first trinket is in the first room, on the pedestal in the center of the room.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "第一件饰品在第一个房间里，位于房间中央的基座上。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						crit(41270, {	-- Second trinket found
-							["description"] = "The trinket is located on the inside of the stairwell that leads up to the closed door in the room that is next to the pedestal for the rejected serpent followers.",
+							["description"] = createLocalizationString({
+								readable = "The trinket is located on the inside of the stairwell that leads up to the closed door in the room that is next to the pedestal for the rejected serpent followers.",
+								constant = "THE_TRINKET_IS_LOCATED_ON_THE_INSIDE_OF_THE",
+								export = true,
+								text = {
+									en = "The trinket is located on the inside of the stairwell that leads up to the closed door in the room that is next to the pedestal for the rejected serpent followers.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这件饰品位于通往紧闭房门的楼梯井内侧，那个房间紧邻被遗弃的蛇类追随者的基座。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						crit(41271, {	-- Third trinket found
-							["description"] = "At 44.2 / 32.6, the brute slams the ground and knocks you up. The trinket is on the ledge.",
+							["description"] = createLocalizationString({
+								readable = "At 44.2 / 32.6, the brute slams the ground and knocks you up. The trinket is on the ledge.",
+								constant = "AT_44_2_32_6_THE_BRUTE_SLAMS_THE_GROUND_AND",
+								export = true,
+								text = {
+									en = "At 44.2 / 32.6, the brute slams the ground and knocks you up. The trinket is on the ledge.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在 44.2 / 32.6 处，蛮兵猛击地面并将你击飞。饰品在岩架上。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						crit(41272, {	-- Fourth trinket found
-							["description"] = "It is on the right pillar after coming down the stairs to the final boss.",
+							["description"] = createLocalizationString({
+								readable = "It is on the right pillar after coming down the stairs to the final boss.",
+								constant = "IT_IS_ON_THE_RIGHT_PILLAR_AFTER_COMING_DOWN_THE",
+								export = true,
+								text = {
+									en = "It is on the right pillar after coming down the stairs to the final boss.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在走下通往最终首领的楼梯后，位于右侧的柱子上。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					}),
 					e(2171, {	-- Mchimba the Embalmer
@@ -128,7 +196,24 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							ach(12848),	-- Kings' Rest
 							ach(13008),	-- Kings' Rest Guild Run
 							ach(12723, {	-- How to Keep a Mummy
-								["description"] = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them. Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom. When they are full, it locks in and the rightmost sarcophagus will begin to shake. Simply kill the boss at this point and Miimii is yours!",
+								["description"] = createLocalizationString({
+									readable = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them. Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom. When they are full, it locks in and the rightmost sarcophagus will begin to shake. Simply kill the boss at this point and Miimii is yours!",
+									constant = "ON_THE_FINAL_BOSS_THERE_ARE_TWO_SARCOPHAGI_WITH",
+									export = true,
+									text = {
+										en = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them. Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom. When they are full, it locks in and the rightmost sarcophagus will begin to shake. Simply kill the boss at this point and Miimii is yours!",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在最终首领处，有两个石棺，前方各有 2 块发绿的石头。只需开怪并让 1 名队员站在每块石头上。底部周围的光会开始充能。充满后就会锁定，最右侧的石棺会开始晃动。此时只需击杀首领，咪咪就归你了！",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(161214),	-- Miimii (PET!)
 								},

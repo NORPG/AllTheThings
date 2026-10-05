@@ -819,7 +819,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(79343, {	-- Everyday I'm Snufflin'
-					["description"] = "Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar",
+					["description"] = createLocalizationString({
+						readable = "Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar",
+						constant = "STRANGE_LUMP_OF_WAX_IS_A_SOMEWHAT_RARE_DROP",
+						export = true,
+						text = {
+							en = "Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "奇怪的蜡块是来自卡兹阿加大陆的较为稀有的掉落物",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						80082,	-- Back to Gundargaz
 						TWW_ACCOUNT_CAMPAIGN_QUEST,

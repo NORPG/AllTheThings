@@ -187,7 +187,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
 			ach(41709),	-- Journey's End (Season 2)
 			ach(41531, {	-- The Hataclysm
-				["description"] = "After you've defeated the Underpin once (specifically on '?' difficulty; '??' won't unlock this achievement), Ask Brann to change his hat 10 times at his spot in Dornogal.",
+				["description"] = createLocalizationString({
+					readable = "After you've defeated the Underpin once (specifically on '?' difficulty; '??' won't unlock this achievement), Ask Brann to change his hat 10 times at his spot in Dornogal.",
+					constant = "AFTER_YOU_VE_DEFEATED_THE_UNDERPIN_ONCE",
+					export = true,
+					text = {
+						en = "After you've defeated the Underpin once (specifically on '?' difficulty; '??' won't unlock this achievement), Ask Brann to change his hat 10 times at his spot in Dornogal.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "击败一次地下堡主之后（特指“？”难度；“？？”难度不会解锁此成就），在多恩诺嘉尔他的位置让布莱恩换 10 次帽子。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 				["coord"] = { 47.6, 44.6, DORNOGAL },
 				["timeline"] = { REMOVED_11_2_0_SEASONSTART },
@@ -1316,7 +1333,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						i(235489),	-- Bullet Biter
 						i(235490),	-- Clawbacker Halberd
 						i(236003, {	-- Fate Weaver
-							["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+							["description"] = createLocalizationString({
+								readable = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+								constant = "FLY_TO_FATE_WEAVER_S_SPOOL_IN_AZJ_KAHET_TO",
+								export = true,
+								text = {
+									en = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "飞往艾基-卡赫特的命运编织者的线轴进行仪式，坐标 64.2, 74.8",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(219941),	-- Fateweaved Mallet
 								i(219382),	-- Fateweaved Needle
@@ -1341,7 +1375,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						i(237997),	-- Ethereal Handchopper
 						i(238004),	-- Exile's Beacon
 						i(246086, {	-- Fate Weaver
-							["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+							["description"] = "~L.FLY_TO_FATE_WEAVER_S_SPOOL_IN_AZJ_KAHET_TO",
 							["groups"] = {
 								i(219941),	-- Fateweaved Mallet
 								i(219382),	-- Fateweaved Needle
@@ -1961,7 +1995,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(90779, {	-- Cracked Keystone
-			["description"] = "Can be completed once per TWW Season.\n\nNOTE: This will allow over-capping crests if you are already capped, otherwise the rewarded crests will be considered part of the current cap.",
+			["description"] = createLocalizationString({
+				readable = "Can be completed once per TWW Season.\n\nNOTE: This will allow over-capping crests if you are already capped, otherwise the rewarded crests will be considered part of the current cap.",
+				constant = "CAN_BE_COMPLETED_ONCE_PER_TWW_SEASON_NOTE_THIS",
+				export = true,
+				text = {
+					en = "Can be completed once per TWW Season.\n\nNOTE: This will allow over-capping crests if you are already capped, otherwise the rewarded crests will be considered part of the current cap.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "每个地心之战赛季可完成一次。\n\n注意：如果你已达到上限，这将允许纹章超出上限；否则奖励的纹章将计入当前上限。",
+					-- TODO: tw = "",
+				},
+			}),
 			["providers"] = {
 				-- #if AFTER 11.2.0
 				{ "i", 251543 },	-- Cracked Keystone (S3)
@@ -2207,12 +2258,29 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		o(455759, {	-- Hulking Raptorial Claw
-			["description"] = "Left behind by Zekvir when he is defeated in a delve.",
+			["description"] = createLocalizationString({
+				readable = "Left behind by Zekvir when he is defeated in a delve.",
+				constant = "LEFT_BEHIND_BY_ZEKVIR_WHEN_HE_IS_DEFEATED_IN_A",
+				export = true,
+				text = {
+					en = "Left behind by Zekvir when he is defeated in a delve.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "泽克维尔在地下堡中被击败后留下的物品。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 			["groups"] = {
 				i(218126),	-- Befouler's Syringe
 				i(219381, {	-- Fate Weaver
-					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+					["description"] = "~L.FLY_TO_FATE_WEAVER_S_SPOOL_IN_AZJ_KAHET_TO",
 					["groups"] = {
 						i(219941),	-- Fateweaved Mallet
 						i(219382),	-- Fateweaved Needle
@@ -2222,7 +2290,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		o(507768, {	-- Jettisoned Pile of Goblin-Bucks
-			["description"] = "Left behind by Underpin when he is defeated in a delve.",
+			["description"] = createLocalizationString({
+				readable = "Left behind by Underpin when he is defeated in a delve.",
+				constant = "LEFT_BEHIND_BY_UNDERPIN_WHEN_HE_IS_DEFEATED_IN",
+				export = true,
+				text = {
+					en = "Left behind by Underpin when he is defeated in a delve.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "昂德平在地下堡中被击败后留下的物品。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 			["cr"] = 236942,	-- The Underpin
 			["groups"] = {
@@ -2231,7 +2316,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		o(547532, {	-- Ky'veza's Etheric Cache
-			["description"] = "Left behind by Ky'veza when she is defeated in a delve.",
+			["description"] = createLocalizationString({
+				readable = "Left behind by Ky'veza when she is defeated in a delve.",
+				constant = "LEFT_BEHIND_BY_KY_VEZA_WHEN_SHE_IS_DEFEATED_IN",
+				export = true,
+				text = {
+					en = "Left behind by Ky'veza when she is defeated in a delve.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "凯维扎在地下堡中被击败后留下的物品。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_11_2_0 },
 			["cr"] = 244755,	-- Nexus-Princess Ky'veza
 			["groups"] = {
@@ -2252,7 +2354,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		o(455914, {	-- Mislaid Curiosity
 			-- #if BEFORE 12.0.0
-			["description"] = "Contains Chunk of Companion Experience tokens.",
+			["description"] = createLocalizationString({
+				readable = "Contains Chunk of Companion Experience tokens.",
+				constant = "CONTAINS_CHUNK_OF_COMPANION_EXPERIENCE_TOKENS",
+				export = true,
+				text = {
+					en = "Contains Chunk of Companion Experience tokens.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "包含同伴经验块令牌。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 			["groups"] = {
@@ -2268,7 +2387,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 		}),
 		o(478443, {	-- Mislaid Curiosity
 			-- #if BEFORE 12.0.0
-			["description"] = "Contains a 'Chunk of Companion Experience' token.\n\n|cFF40bf40Massively buffed in 11.1, they can now provide up to 18k Brann XP each, depending on the Delves' Level & which experience token you receive.|r",
+			["description"] = createLocalizationString({
+				readable = "Contains a 'Chunk of Companion Experience' token.\n\n|cFF40bf40Massively buffed in 11.1, they can now provide up to 18k Brann XP each, depending on the Delves' Level & which experience token you receive.|r",
+				constant = "CONTAINS_A_CHUNK_OF_COMPANION_EXPERIENCE_TOKEN",
+				export = true,
+				text = {
+					en = "Contains a 'Chunk of Companion Experience' token.\n\n|cFF40bf40Massively buffed in 11.1, they can now provide up to 18k Brann XP each, depending on the Delves' Level & which experience token you receive.|r",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "内含一个“一份伙伴经验”令牌。\n\n|cFF40bf40在 11.1 中大幅增强，每个现在最多可提供 1.8 万点布莱恩经验，具体取决于地下堡的等级以及你获得的经验令牌。|r",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_11_1_0 },
 			["groups"] = {
@@ -3034,7 +3170,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						["cost"] = { { "c", UNDERCOIN, 2000 } },
 						-- Blizzard added the same note on the item.
 						-- #if BEFORE 11.1.0
-						["description"] = "Contains 250 Resonance Crystals.",
+						["description"] = createLocalizationString({
+							readable = "Contains 250 Resonance Crystals.",
+							constant = "CONTAINS_250_RESONANCE_CRYSTALS",
+							export = true,
+							text = {
+								en = "Contains 250 Resonance Crystals.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "内含 250 枚共鸣水晶。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 					}),
 					i(224172, {	-- Restored Coffer Key
@@ -3408,7 +3561,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(455498, {	-- Sturdy Chest
-					["description"] = "Use Waygate on the 1st Level.",
+					["description"] = createLocalizationString({
+						readable = "Use Waygate on the 1st Level.",
+						constant = "USE_WAYGATE_ON_THE_1ST_LEVEL",
+						export = true,
+						text = {
+							en = "Use Waygate on the 1st Level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在 1 层使用传送门。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 47.9, 24.6, 2455 },	-- Lower Chamber (Waygate)
 						{ 62.1, 38.2, 2454 },	-- Lower Chamber (Sturdy Chest)
@@ -3420,7 +3590,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 83673,
 				}),
 				o(455535, {	-- Sturdy Chest
-					["description"] = "Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",
+					["description"] = createLocalizationString({
+						readable = "Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",
+						constant = "USE_CFFFFFFFFPHASE_CUTTER_R_ABILITY_TO",
+						export = true,
+						text = {
+							en = "Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "使用 |cFFFFFFFF相位切割者|r 技能穿透屏障。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 49.7, 92.6, 2455 },	-- Lower Chamber
 					["questID"] = 92573,
 				}),
@@ -3654,7 +3841,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					},
 				}),
 				o(455496, {	-- Sturdy Chest
-					["description"] = "Jumping Mushroom close by",
+					["description"] = createLocalizationString({
+						readable = "Jumping Mushroom close by",
+						constant = "JUMPING_MUSHROOM_CLOSE_BY",
+						export = true,
+						text = {
+							en = "Jumping Mushroom close by",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "附近有跳跃蘑菇",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 53.5, 41.7, FUNGAL_FOLLY },
 					["questID"] = 83690,
 				}),
@@ -3883,7 +4087,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 83701,
 				}),
 				o(455515, {	-- Sturdy Chest
-					["description"] = "On mushroom",
+					["description"] = createLocalizationString({
+						readable = "On mushroom",
+						constant = "ON_MUSHROOM",
+						export = true,
+						text = {
+							en = "On mushroom",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在蘑菇上",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 70.9, 44.4, NIGHTFALL_SANCTUM },
 					["questID"] = 83670,
 				}),
@@ -3924,7 +4145,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 86787,
 				}),
 				o(507226, {	-- Sturdy Chest
-					["description"] = "Walk along the metal beam to access.",
+					["description"] = createLocalizationString({
+						readable = "Walk along the metal beam to access.",
+						constant = "WALK_ALONG_THE_METAL_BEAM_TO_ACCESS",
+						export = true,
+						text = {
+							en = "Walk along the metal beam to access.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "沿着金属梁走过去即可到达。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 77.6, 39.5, 2422 },
 					["questID"] = 86789,
 				}),
@@ -4181,10 +4419,44 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 				}),
 			}),
 			n(219713, {	-- Arathi Captive
-				["description"] = "Attempting to save this captive will spawn an assassin and not count towards any progress",
+				["description"] = createLocalizationString({
+					readable = "Attempting to save this captive will spawn an assassin and not count towards any progress",
+					constant = "ATTEMPTING_TO_SAVE_THIS_CAPTIVE_WILL_SPAWN_AN",
+					export = true,
+					text = {
+						en = "Attempting to save this captive will spawn an assassin and not count towards any progress",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "试图拯救这名俘虏会生成一名刺客，并且不会计入任何进度",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			n(219718, {	-- Arathi Captive
-				["description"] = "Save this captive",
+				["description"] = createLocalizationString({
+					readable = "Save this captive",
+					constant = "SAVE_THIS_CAPTIVE",
+					export = true,
+					text = {
+						en = "Save this captive",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "拯救这名俘虏",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		},
 	}),
@@ -4243,7 +4515,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(455487, {	-- Sturdy Chest
-					["description"] = "Located ontop of pillar, accessible after killing last boss.",
+					["description"] = createLocalizationString({
+						readable = "Located ontop of pillar, accessible after killing last boss.",
+						constant = "LOCATED_ONTOP_OF_PILLAR_ACCESSIBLE_AFTER",
+						export = true,
+						text = {
+							en = "Located ontop of pillar, accessible after killing last boss.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于柱子顶部，需在击杀最后一名首领后才能到达。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 46.0, 46.1, THE_SPIRAL_WEAVE },
 					["questID"] = 83681,
 				}),
@@ -4252,12 +4541,46 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 					["questID"] = 83649,
 				}),
 				o(455506, {	-- Sturdy Chest
-					["description"] = "Located on beam over your head. Accessible during the From the Weaver with Love story.",
+					["description"] = createLocalizationString({
+						readable = "Located on beam over your head. Accessible during the From the Weaver with Love story.",
+						constant = "LOCATED_ON_BEAM_OVER_YOUR_HEAD_ACCESSIBLE",
+						export = true,
+						text = {
+							en = "Located on beam over your head. Accessible during the From the Weaver with Love story.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于你头顶的横梁上。可在“来自织网者的爱”剧情期间到达。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 36.3, 10.5, THE_SPIRAL_WEAVE },
 					["questID"] = 83661,
 				}),
 				o(455507, {	-- Sturdy Chest
-					["description"] = "Located on beam over your head, accessible after killing last boss",
+					["description"] = createLocalizationString({
+						readable = "Located on beam over your head, accessible after killing last boss",
+						constant = "LOCATED_ON_BEAM_OVER_YOUR_HEAD_ACCESSIBLE_AFTER",
+						export = true,
+						text = {
+							en = "Located on beam over your head, accessible after killing last boss",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于你头顶的横梁上，需在击杀最后一名首领后才能到达",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 42.5, 47.7, THE_SPIRAL_WEAVE },
 					["questID"] = 83662,
 				}),
@@ -4315,7 +4638,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(455508, {	-- Sturdy Chest
-					["description"] = "Not available during Torture Victims story.",	-- Completed in Runaway Evolution
+					["description"] = createLocalizationString({
+						readable = "Not available during Torture Victims story.",
+						constant = "NOT_AVAILABLE_DURING_TORTURE_VICTIMS_STORY",
+						export = true,
+						text = {
+							en = "Not available during Torture Victims story.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在折磨受害者剧情期间无法获得。",
+							-- TODO: tw = "",
+						},
+					}),	-- Completed in Runaway Evolution
 					["coord"] = { 39.6, 69.3, THE_UNDERKEEP },
 					["questID"] = 83663,
 				}),

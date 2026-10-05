@@ -6,14 +6,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(TREASURES, {
 			i(220123, {	-- Ominous Offering
-				["description"] = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide'.",
+				["description"] = createLocalizationString({
+					readable = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide'.",
+					constant = "COMBINE_OFFERING_OF_PURE_WATER_AND_JAR_OF_MUCUS",
+					export = true,
+					text = {
+						en = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide'.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "将“纯净之水供品”和“黏液罐”组合以获得该物品。\n用于召唤“死亡之潮”。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = {
 					{ "i", 220124, 1 },	-- 1x Jar of Mucus
 					{ "i", 220122, 1 },	-- 1x Offering of Pure Water
 				},
 			}),
 			o(444798, {	-- Arathi Treasure Hoard
-				["description"] = "Spawns randomly throughout the zone.",
+				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
 				["maps"] = { HALLOWFALL },
 				["groups"] = {
 					i(212333),	-- Expedition Tinderbox (QS!)
@@ -26,7 +43,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["maps"] = { HALLOWFALL },
 			}),
 			n(225948, {	-- Caesper
-				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you.",
+				["description"] = createLocalizationString({
+					readable = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you.",
+					constant = "BRING_CAESPER_MEATY_HAUNCH_AND_FOLLOW_HIM_HE",
+					export = true,
+					text = {
+						en = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "给凯斯珀带一份多汁的腿肉并跟着他，他会为你挖出宝藏。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 41.8, 58.3, HALLOWFALL },	-- Caesper
 				["cost"] = { { "i", 225238, 1 } },	-- Meaty Haunch
 				["groups"] = {
@@ -39,21 +73,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(444804, {	-- Concentrated Shadow
-				["description"] = "Spawns all over the zone only when Beledar shifts into its Void state.",
+				["description"] = createLocalizationString({
+					readable = "Spawns all over the zone only when Beledar shifts into its Void state.",
+					constant = "SPAWNS_ALL_OVER_THE_ZONE_ONLY_WHEN_BELEDAR",
+					export = true,
+					text = {
+						en = "Spawns all over the zone only when Beledar shifts into its Void state.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅当贝雷达尔转变为虚空状态时，才会在该区域各处刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = { HALLOWFALL },
 				["groups"] = {
 					-- some crafting reagents and gray item
 				},
 			}),
 			o(444799, {	-- Potent Concentrated Shadow
-				["description"] = "Spawns all over the zone only when Beledar shifts into its Void state.",
+				["description"] = "~L.SPAWNS_ALL_OVER_THE_ZONE_ONLY_WHEN_BELEDAR",
 				["maps"] = { HALLOWFALL },
 				["groups"] = {
 					-- some crafting reagents and gray item
 				},
 			}),
 			o(453374, {	-- Shadowed Essence (Dark Ritual, event)
-				["description"] = "Inside the cave. Interract with the book and start the ritual. Survive the attack and kill the shadows.",
+				["description"] = createLocalizationString({
+					readable = "Inside the cave. Interract with the book and start the ritual. Survive the attack and kill the shadows.",
+					constant = "INSIDE_THE_CAVE_INTERRACT_WITH_THE_BOOK_AND",
+					export = true,
+					text = {
+						en = "Inside the cave. Interract with the book and start the ritual. Survive the attack and kill the shadows.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴内。与书互动并开始仪式。在攻击中存活下来并击杀暗影。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "o", 453359 },	-- Dark Ritual (vignette)
 				["coord"] = { 59.5, 59.7, HALLOWFALL },
 				["questID"] = 83284,
@@ -62,7 +130,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(437211, {	-- Illuminated Footlocker
-				["description"] = "Starblessed Glimmerfly flies around in circle casting Lightning Orbs on the ground.\nCatch 5 Lightning Orbs by standing in illuminated circles in order to reveal the treasure.",
+				["description"] = createLocalizationString({
+					readable = "Starblessed Glimmerfly flies around in circle casting Lightning Orbs on the ground.\nCatch 5 Lightning Orbs by standing in illuminated circles in order to reveal the treasure.",
+					constant = "STARBLESSED_GLIMMERFLY_FLIES_AROUND_IN_CIRCLE",
+					export = true,
+					text = {
+						en = "Starblessed Glimmerfly flies around in circle casting Lightning Orbs on the ground.\nCatch 5 Lightning Orbs by standing in illuminated circles in order to reveal the treasure.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "星佑微光蝇会盘旋飞行，并在地面施放闪电宝珠。\n站在发光的圆圈中接住 5 个闪电宝珠，即可让宝藏显现。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 58.4, 27.2, HALLOWFALL },
 				["questID"] = 81468,
 				["crs"] = { 220703 },	-- Starblessed Glimmerfly
@@ -71,7 +156,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(440926, {	-- Jar of Mucus
-				["description"] = "One of two parts required to create 'Ominous Offering'. An item required to summon 'Deathtide'.",
+				["description"] = createLocalizationString({
+					readable = "One of two parts required to create 'Ominous Offering'. An item required to summon 'Deathtide'.",
+					constant = "ONE_OF_TWO_PARTS_REQUIRED_TO_CREATE_OMINOUS",
+					export = true,
+					text = {
+						en = "One of two parts required to create 'Ominous Offering'. An item required to summon 'Deathtide'.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "制作“不祥的祭品”所需的两部分之一。这是召唤“死亡之潮”所需的物品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 48.0, 16.7, HALLOWFALL },
 					{ 48.8, 50.2, HALLOWFALL },
@@ -81,7 +183,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(441606, {	-- Jewel of the Cliffs
-				["description"] = "Located inside the crack of the pillar high above ground.",
+				["description"] = createLocalizationString({
+					readable = "Located inside the crack of the pillar high above ground.",
+					constant = "LOCATED_INSIDE_THE_CRACK_OF_THE_PILLAR_HIGH",
+					export = true,
+					text = {
+						en = "Located inside the crack of the pillar high above ground.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "位于高悬于地面的柱子裂缝内。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 55.8, 69.5, HALLOWFALL },
 				["questID"] = 81971,
 				["groups"] = {
@@ -91,7 +210,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(444802, {	-- Kobyss Ritual Cache
-				["description"] = "Spawns randomly around the costal regions of the zone.",
+				["description"] = createLocalizationString({
+					readable = "Spawns randomly around the costal regions of the zone.",
+					constant = "SPAWNS_RANDOMLY_AROUND_THE_COSTAL_REGIONS_OF",
+					export = true,
+					text = {
+						en = "Spawns randomly around the costal regions of the zone.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在该区域的沿海地带随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = { HALLOWFALL },
 			}),
 			o(441638, {	-- Lost Memento
@@ -111,19 +247,53 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			o_repeated({	-- Smuggler's Treasure
 				o(453283, {
-					["description"] = "Fly down to the Dead Arathi body and loot key.",
+					["description"] = createLocalizationString({
+						readable = "Fly down to the Dead Arathi body and loot key.",
+						constant = "FLY_DOWN_TO_THE_DEAD_ARATHI_BODY_AND_LOOT_KEY",
+						export = true,
+						text = {
+							en = "Fly down to the Dead Arathi body and loot key.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "飞到死亡的阿拉希人尸体处并拾取钥匙。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 55.1, 51.9, HALLOWFALL },
 					["questID"] = 83273,
 				}),
 				o(453274, {
-					["description"] = "Fly down to the Dead Arathi body and loot key.",
+					["description"] = "~L.FLY_DOWN_TO_THE_DEAD_ARATHI_BODY_AND_LOOT_KEY",
 					["coord"] = { 55.1, 51.9, HALLOWFALL },
 				}),
 				i(225335),	-- Smuggler's Key
 				i(226021),	-- Jar of Pickles
 			}),
 			o(419695, {	-- Spore-Covered Coffer
-				["description"] = "Inside the Shadowmire cave.",
+				["description"] = createLocalizationString({
+					readable = "Inside the Shadowmire cave.",
+					constant = "INSIDE_THE_SHADOWMIRE_CAVE",
+					export = true,
+					text = {
+						en = "Inside the Shadowmire cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在暗影泥沼洞穴内。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 76.8, 53.8, HALLOWFALL },
 				["questID"] = 79275,
 			}),
@@ -149,7 +319,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(440914, {	-- Offering of Pure Water
-				["description"] = "One of two parts required to create 'Ominous Offering'. An item required to summon 'Deathtide'.",
+				["description"] = "~L.ONE_OF_TWO_PARTS_REQUIRED_TO_CREATE_OMINOUS",
 				["coords"] = {
 					{ 28.9, 51.2, HALLOWFALL },
 					{ 34.2, 57.9, HALLOWFALL },
@@ -206,7 +376,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(439473, {	-- Tenir and the Order of Night
-				["description"] = "In the basement.",
+				["description"] = createLocalizationString({
+					readable = "In the basement.",
+					constant = "IN_THE_BASEMENT",
+					export = true,
+					text = {
+						en = "In the basement.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在地下室中。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 63.5, 29.5, HALLOWFALL },
 				["groups"] = {
 					i(219384),	-- Tenir and the Order of Night
@@ -302,7 +489,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82066,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -312,7 +499,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82065,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -322,7 +509,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82064,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -332,7 +519,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82063,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -342,13 +529,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82061,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
 			}),
 			o(441800, {	-- Sunken Cache
-				["description"] = "You need to talk to Sky-Captains Aerthin, Clairmonte, Dornald, and Onaro on their respective airships.",
+				["description"] = createLocalizationString({
+					readable = "You need to talk to Sky-Captains Aerthin, Clairmonte, Dornald, and Onaro on their respective airships.",
+					constant = "YOU_NEED_TO_TALK_TO_SKY_CAPTAINS_AERTHIN",
+					export = true,
+					text = {
+						en = "You need to talk to Sky-Captains Aerthin, Clairmonte, Dornald, and Onaro on their respective airships.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你需要分别在他们各自的飞艇上与天空船长艾尔辛、克莱尔蒙特、多纳尔德和奥纳罗对话。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 82012, 82024, 82025, 82026 },	-- Talk to all Sky-Captains
 				["coord"] = { 45.9, 45.1, HALLOWFALL },
 				["questID"] = 82005,

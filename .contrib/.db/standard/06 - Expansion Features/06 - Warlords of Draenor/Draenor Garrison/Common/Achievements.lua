@@ -40,7 +40,24 @@ root(ROOTS.ExpansionFeatures,
 				ach(9110),	-- Following Up
 				ach(9111),	-- Raising the Bar
 				ach(9129, {	-- Filling the Ranks
-					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						constant = "UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
+						export = true,
+						text = {
+							en = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "解锁从图纸供应商处购买该蓝图的能力。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						a(i(111967)),	-- Dwarven Bunker, Level 3 (Garrison Blueprint)
 						h(i(116186)),	-- War Mill, Level 3 (Garrison Blueprint)
@@ -83,7 +100,7 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 				}),
 				ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
-					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+					["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 					["groups"] = { i(111983) },	-- Storehouse, Level 3 (Garrison Blueprint)
 				}),
 				ach(9125),	-- Draftsman (20)
@@ -298,7 +315,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				ach(9405),	-- Working Some Orders (125)
 				ach(9406, {	-- Working More Orders (250)
-					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+					["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 					["groups"] = {
 						i(111930),	-- Alchemy Lab, Level 3 (Garrison Blueprint)
 						i(111973),	-- Enchanter's Study, Level 3 (Garrison Blueprint)

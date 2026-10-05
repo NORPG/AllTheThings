@@ -269,7 +269,24 @@ root(ROOTS.Zones, {
 				}),
 				header(HEADERS.Faction, FACTION_TALONS_VENGENCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
 					hqt(45029, {	-- Talon's Vengeance - Intro Complete
-						["description"] = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengence faction.",
+						["description"] = createLocalizationString({
+							readable = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengence faction.",
+							constant = "TALK_TO_AVIANA_WHILE_MOUNTED_ON_ANY_FALCOSAUR",
+							export = true,
+							text = {
+								en = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengence faction.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "骑乘任意隼龙坐骑时与艾维娜交谈，即可解锁利爪的复仇阵营。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 97925,	-- Aviana
 						["coord"] = { 32.2, 66.8, HIGHMOUNTAIN },
 					}),

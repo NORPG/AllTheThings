@@ -30,7 +30,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(240691),	-- Nar'thalas Graduate's Sabatons
 		}),
 		n(REWARDS, {
-			["description"] = "These items are equipped on your character or in the box you get when you make a new character during Legion Remix.",
+			["description"] = createLocalizationString({
+				readable = "These items are equipped on your character or in the box you get when you make a new character during Legion Remix.",
+				constant = "THESE_ITEMS_ARE_EQUIPPED_ON_YOUR_CHARACTER_OR",
+				export = true,
+				text = {
+					en = "These items are equipped on your character or in the box you get when you make a new character during Legion Remix.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品装备在你的角色身上，或在军团再临混搭再造中创建新角色时获得的箱子里。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(243373),	-- Timerunner's Weaponry
 				filter(BOWS, {

@@ -662,7 +662,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				["description"] = "~L.THIS_ALLOWS_CONVERTING_CERTAIN_PIECES_OF_GEAR",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3
@@ -696,7 +696,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					}),
 					hqt(91064, {	-- Stay awhile and listen: Alleria Windrunnner
 						["name"] = "Stay awhile and listen: Alleria Windrunnner",
-						["description"] = "Dialogue becomes available after defeating Dimensius.",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available after defeating Dimensius.",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_DEFEATING",
+							export = true,
+							text = {
+								en = "Dialogue becomes available after defeating Dimensius.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击败迪门修斯后即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 242456,	-- Alleria Windrunnner
 					}),
 				}),
@@ -721,7 +738,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(SALHADAAR, {
 					i(243365),	-- Maw of the Void
 					i(246727, {	-- Ethereal Essence Sliver
-						["description"] = "Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",
+						["description"] = createLocalizationString({
+							readable = "Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",
+							constant = "HAS_A_SMALL_CHANCE_DROPPING_AS_PERSONAL_LOOT_2",
+							export = true,
+							text = {
+								en = "Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你在法力熔炉破坏者的名望达到 12 后，有很小的几率作为个人拾取从节点之王萨哈达尔身上掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["minReputation"] = { FACTION_MANAFORGE_VANDALS, 12 },
 					}),
 				}),

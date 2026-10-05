@@ -3599,7 +3599,24 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 		}))),
 		n(ACHIEVEMENTS, {
 			currency(RIDERS_OF_AZEROTH_BADGE, {
-				["description"] = "For each achievement in the Dragonriding Cup players earn one badge, with up to 9 badges available per race track by obtaining gold in all three courses.",
+				["description"] = createLocalizationString({
+					readable = "For each achievement in the Dragonriding Cup players earn one badge, with up to 9 badges available per race track by obtaining gold in all three courses.",
+					constant = "FOR_EACH_ACHIEVEMENT_IN_THE_DRAGONRIDING_CUP",
+					export = true,
+					text = {
+						en = "For each achievement in the Dragonriding Cup players earn one badge, with up to 9 badges available per race track by obtaining gold in all three courses.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在驭龙术杯中，每达成一个成就，玩家即可获得一枚徽章；在全部三条赛道上都获得金牌，则每条赛道最多可获得 9 枚徽章。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		n(VENDORS, {

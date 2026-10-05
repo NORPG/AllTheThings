@@ -339,7 +339,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								crit(49921, {	-- Plague Pack
-									["description"] = "You need to obtain either Grungy Containment Pack or Pristine Containment Pack to be able to see this at the crafting table.",
+									["description"] = createLocalizationString({
+										readable = "You need to obtain either Grungy Containment Pack or Pristine Containment Pack to be able to see this at the crafting table.",
+										constant = "YOU_NEED_TO_OBTAIN_EITHER_GRUNGY_CONTAINMENT",
+										export = true,
+										text = {
+											en = "You need to obtain either Grungy Containment Pack or Pristine Containment Pack to be able to see this at the crafting table.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "你需要获得污秽的收容包或纯净的收容包，才能在制造台上看到它。",
+											-- TODO: tw = "",
+										},
+									}),
 									["cost"] = {
 										{ "i", 183744, 5 },	-- 5x Superior Parts
 										{ "i", 184156, 1 },	-- 1x Pristine Containment Pack
@@ -366,7 +383,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								crit(49925, {	-- Barrel O' Fish
-									["description"] = "Becomes available at max Shadowlands Fishing skill.",
+									["description"] = createLocalizationString({
+										readable = "Becomes available at max Shadowlands Fishing skill.",
+										constant = "BECOMES_AVAILABLE_AT_MAX_SHADOWLANDS_FISHING",
+										export = true,
+										text = {
+											en = "Becomes available at max Shadowlands Fishing skill.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "达到暗影界钓鱼技能上限后开放。",
+											-- TODO: tw = "",
+										},
+									}),
 									["requireSkill"] = FISHING,
 									["cost"] = {
 										{ "i", 173032, 5 },	-- 5x Lost Sole
@@ -377,7 +411,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								crit(50559, {	-- Underpowered Gravity Pack
-									["description"] = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
+									["description"] = createLocalizationString({
+										readable = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
+										constant = "YOUR_CHARACTER_MUST_HAVE_UNLOCKED_MECHAGON_AND",
+										export = true,
+										text = {
+											en = "Your character must have unlocked Mechagon and learned the blueprint for Anti-Gravity Pack, and constructed rank 4 of the Abomination table, for this recipe to become available.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "你的角色必须已解锁麦卡贡并学会反重力背包的图纸，且已建造 4 级憎恶工作台，此配方才会可用。",
+											-- TODO: tw = "",
+										},
+									}),
 									["cost"] = {
 										{ "i", 169610,  3 },	-- 3x S.P.A.R.E. Crate
 										{ "i", 166970, 10 },	-- 10x Energy Cell
@@ -421,7 +472,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								},
 							}),
 							ach(14764, {	-- The Great Luckydo
-								["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
+								["description"] = createLocalizationString({
+									readable = "Possible to find the Great Luckydo when Chordy finds treasure.",
+									constant = "POSSIBLE_TO_FIND_THE_GREAT_LUCKYDO_WHEN_CHORDY",
+									export = true,
+									text = {
+										en = "Possible to find the Great Luckydo when Chordy finds treasure.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "当乔迪找到宝藏时，有可能找到大幸运符。",
+										-- TODO: tw = "",
+									},
+								}),
 								["provider"] = { "i", 178554 },	-- Call Chordy
 								["crs"] = {
 									-- 158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
@@ -443,16 +511,84 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						}),
 						n(REWARDS, {
 							i(184304, {	-- Anima-Touched Weapon Fragments
-								["description"] = "Rewarded by the Weekly Quests from your Constructs and Chordy's Treasure Finding.",
+								["description"] = createLocalizationString({
+									readable = "Rewarded by the Weekly Quests from your Constructs and Chordy's Treasure Finding.",
+									constant = "REWARDED_BY_THE_WEEKLY_QUESTS_FROM_YOUR",
+									export = true,
+									text = {
+										en = "Rewarded by the Weekly Quests from your Constructs and Chordy's Treasure Finding.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "由你的构造体和弦迪的寻宝任务提供的每周任务奖励。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							i(178061, {	-- Malleable Flesh
-								["description"] = "Rewarded by any Shadowlands Activity.",
+								["description"] = createLocalizationString({
+									readable = "Rewarded by any Shadowlands Activity.",
+									constant = "REWARDED_BY_ANY_SHADOWLANDS_ACTIVITY",
+									export = true,
+									text = {
+										en = "Rewarded by any Shadowlands Activity.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "由任意暗影界活动奖励。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							i(184843, {	-- Salvaged Supplies
-								["description"] = "Rewarded by the Weekly Quests from your Constructs.",
+								["description"] = createLocalizationString({
+									readable = "Rewarded by the Weekly Quests from your Constructs.",
+									constant = "REWARDED_BY_THE_WEEKLY_QUESTS_FROM_YOUR_2",
+									export = true,
+									text = {
+										en = "Rewarded by the Weekly Quests from your Constructs.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "由你的构造体提供的每周任务奖励。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							i(183744, {	-- Superior Parts
-								["description"] = "Rewarded by the Weekly Quests from your Constructs and Command Table.",
+								["description"] = createLocalizationString({
+									readable = "Rewarded by the Weekly Quests from your Constructs and Command Table.",
+									constant = "REWARDED_BY_THE_WEEKLY_QUESTS_FROM_YOUR_3",
+									export = true,
+									text = {
+										en = "Rewarded by the Weekly Quests from your Constructs and Command Table.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "由你的构造体和指挥台提供的每周任务奖励。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						}),
 						n(TIER_ONE, {
@@ -498,16 +634,84 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["groups"] = {
 										i(182489, {	-- Stitched Harbinger's Greatcloak
-											["description"] = "This cloak is only awarded to plate characters.",
+											["description"] = createLocalizationString({
+												readable = "This cloak is only awarded to plate characters.",
+												constant = "THIS_CLOAK_IS_ONLY_AWARDED_TO_PLATE_CHARACTERS",
+												export = true,
+												text = {
+													en = "This cloak is only awarded to plate characters.",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "该披风只会奖励给板甲角色。",
+													-- TODO: tw = "",
+												},
+											}),
 										}),
 										i(182498, {	-- Stitched Wraith's Cloak
-											["description"] = "This cloak is only awarded to leather characters.",
+											["description"] = createLocalizationString({
+												readable = "This cloak is only awarded to leather characters.",
+												constant = "THIS_CLOAK_IS_ONLY_AWARDED_TO_LEATHER",
+												export = true,
+												text = {
+													en = "This cloak is only awarded to leather characters.",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "此披风仅授予皮甲角色。",
+													-- TODO: tw = "",
+												},
+											}),
 										}),
 										i(182507, {	-- Stitched Conjurer's Cape
-											["description"] = "This cloak is only awarded to cloth characters.",
+											["description"] = createLocalizationString({
+												readable = "This cloak is only awarded to cloth characters.",
+												constant = "THIS_CLOAK_IS_ONLY_AWARDED_TO_CLOTH_CHARACTERS",
+												export = true,
+												text = {
+													en = "This cloak is only awarded to cloth characters.",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "此披风仅授予布甲角色。",
+													-- TODO: tw = "",
+												},
+											}),
 										}),
 										i(182516, {	-- Stitched Tactician's Drape
-											["description"] = "This cloak is only awarded to mail characters.",
+											["description"] = createLocalizationString({
+												readable = "This cloak is only awarded to mail characters.",
+												constant = "THIS_CLOAK_IS_ONLY_AWARDED_TO_MAIL_CHARACTERS",
+												export = true,
+												text = {
+													en = "This cloak is only awarded to mail characters.",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "此披风仅授予锁甲角色。",
+													-- TODO: tw = "",
+												},
+											}),
 										}),
 									},
 								}),
@@ -580,7 +784,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["coord"] = { 24.2, 38.6, MALDRAXXUS },
 									}),
 									q(59747, {	-- A Lost Soul
-										["description"] = "Pull the chain on the right side of the vault as you enter.",
+										["description"] = createLocalizationString({
+											readable = "Pull the chain on the right side of the vault as you enter.",
+											constant = "PULL_THE_CHAIN_ON_THE_RIGHT_SIDE_OF_THE_VAULT",
+											export = true,
+											text = {
+												en = "Pull the chain on the right side of the vault as you enter.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "进入宝库后拉动右侧的锁链。",
+												-- TODO: tw = "",
+											},
+										}),
 										["providers"] = {
 											{ "n", 166096 },	-- Miru Soulblossom
 											{ "o", 350972 },	-- Cell Portcullis Chain
@@ -876,7 +1097,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 								}),
 								n(161270, {	-- Chordy
-									["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
+									["description"] = createLocalizationString({
+										readable = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
+										constant = "THESE_ABOMINATION_CRAFTING_REAGENTS_CAN",
+										export = true,
+										text = {
+											en = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "在暗影界的任意区域使用科迪的技能，都可以随机找到这些憎恶制造材料",
+											-- TODO: tw = "",
+										},
+									}),
 									["crs"] = {
 										-- 158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
 										161270,	-- Chordy (in world)
@@ -1012,7 +1250,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 									}),
 									q(59615, {	-- Every Dog Has Its Day
-										["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available. The key will only drop if you have tier 2 or higher Abomination Table.",
+										["description"] = createLocalizationString({
+											readable = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available. The key will only drop if you have tier 2 or higher Abomination Table.",
+											constant = "KILL_SOUL_HARVESTER_ANKA_AT_70_1_40_8_TO_OBTAIN",
+											export = true,
+											text = {
+												en = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available. The key will only drop if you have tier 2 or higher Abomination Table.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "在 70.1, 40.8 击杀灵魂收割者安卡以获得灵魂收割者钥匙，用它打开笼子即可接到任务。只有在你拥有 2 级或更高的憎恶台时，钥匙才会掉落。",
+												-- TODO: tw = "",
+											},
+										}),
 										["provider"] = { "n", 162151 },	-- Neena
 										["coord"] = { 69.3, 40.6, MALDRAXXUS },
 										["cost"] = { { "i", 184354, 1 } },	-- 1x Soul Harvester Key (for opening Neena's Cage)
@@ -1500,11 +1755,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 								}),
 								n(REWARDS, {
-									["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
+									["description"] = createLocalizationString({
+										readable = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
+										constant = "THE_COSMETIC_ITEMS_UNDER_THIS_HEADER_ARE",
+										export = true,
+										text = {
+											en = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "此标题下的装饰物品，是以团结作为激活的憎恶体完成玛卓克萨斯世界任务时偶尔获得的随机奖励。",
+											-- TODO: tw = "",
+										},
+									}),
 									["groups"] = {
 										filter(CLOTH, {
 											i(182543, {	-- Duty-Bound Conjurer's Cape
-												["description"] = "This cloak is only awarded to cloth characters.",
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_CLOTH_CHARACTERS",
 											}),
 											i(182541),	-- Duty-Bound Conjurer's Cinch
 											i(182535),	-- Duty-Bound Conjurer's Cowl
@@ -1521,7 +1793,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(182528),	-- Duty-Bound Wraith's Boots
 											i(182530),	-- Duty-Bound Wraith's Breeches
 											i(182534, {	-- Duty-Bound Wraith's Cloak
-												["description"] = "This cloak is only awarded to leather characters.",
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_LEATHER",
 											}),
 											i(182527),	-- Duty-Bound Wraith's Jerkin
 											i(182531),	-- Duty-Bound Wraith's Shoulders
@@ -1532,7 +1804,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(182551),	-- Duty-Bound Tactician's Bracers
 											i(182548),	-- Duty-Bound Tactician's Chausses
 											i(182552, {	-- Duty-Bound Tactician's Drape
-												["description"] = "This cloak is only awarded to mail characters.",
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_MAIL_CHARACTERS",
 											}),
 											i(182544),	-- Duty-Bound Tactician's Faceguard
 											i(182547),	-- Duty-Bound Tactician's Gauntlets
@@ -1545,7 +1817,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(182518),	-- Duty-Bound Harbinger's Chestguard
 											i(182520),	-- Duty-Bound Harbinger's Crushers
 											i(182525, {	-- Duty-Bound Harbinger's Greatcloak
-												["description"] = "This cloak is only awarded to plate characters.",
+												["description"] = "~L.THIS_CLOAK_IS_ONLY_AWARDED_TO_PLATE_CHARACTERS",
 											}),
 											i(182517),	-- Duty-Bound Harbinger's Greathelm
 											i(182521),	-- Duty-Bound Harbinger's Greaves
@@ -1564,12 +1836,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								["crs"] = { 167161 },	-- Atticus (Ghost)
 								["groups"] = appendGroups(ATTICUS_GROUP, {
 									i(184589, {	-- Bag of Potions
-										["description"] = "This becomes available within Chill's Reach during 'A Brokered Deal'.",
+										["description"] = createLocalizationString({
+											readable = "This becomes available within Chill's Reach during 'A Brokered Deal'.",
+											constant = "THIS_BECOMES_AVAILABLE_WITHIN_CHILL_S_REACH",
+											export = true,
+											text = {
+												en = "This becomes available within Chill's Reach during 'A Brokered Deal'.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "在“一笔交易”期间，这会在寒冰之触内变为可用。",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 									i(180442),	-- Bag of Sin Stones
 									i(180277),	-- Battlefront Ration Key
 									i(184037, {	-- Maldraxxus Candles
-										["description"] = "These become available after you build rank 5 Abomination table.",
+										["description"] = createLocalizationString({
+											readable = "These become available after you build rank 5 Abomination table.",
+											constant = "THESE_BECOME_AVAILABLE_AFTER_YOU_BUILD_RANK_5",
+											export = true,
+											text = {
+												en = "These become available after you build rank 5 Abomination table.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "在建造 5 级憎恶台后即可解锁这些。",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 									i(183166),	-- Nidore Ocularis
 									i(178547),	-- Questionable Fried Poultry
@@ -1588,22 +1894,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 									}),
 									i(184047, {	-- Ascended Chest of Arms
-										["description"] = "Contains one random weapon.",
+										["description"] = createLocalizationString({
+											readable = "Contains one random weapon.",
+											constant = "CONTAINS_ONE_RANDOM_WEAPON",
+											export = true,
+											text = {
+												en = "Contains one random weapon.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "包含一件随机武器。",
+												-- TODO: tw = "",
+											},
+										}),
 										["cost"] = { { "c", ANIMA, 1000 } },
 										["groups"] = ASCENDED_CHEST_OF_ARMS,
 									}),
 									i(184045, {	-- Martial Tithe of the Court of Harvesters
-										["description"] = "Contains one random weapon.",
+										["description"] = "~L.CONTAINS_ONE_RANDOM_WEAPON",
 										["cost"] = { { "c", ANIMA, 1000 } },
 										["groups"] = MARTIAL_TITHE_OF_THE_COURT_OF_HARVESTERS,
 									}),
 									i(184046, {	-- Undying Army Weapon Cache
-										["description"] = "Contains one random weapon.",
+										["description"] = "~L.CONTAINS_ONE_RANDOM_WEAPON",
 										["cost"] = { { "c", ANIMA, 1000 } },
 										["groups"] = UNDYING_ARMOY_WEAPON_CACHE,
 									}),
 									i(184048, {	-- Weapon Satchel of the Wild Hunt
-										["description"] = "Contains one random weapon.",
+										["description"] = "~L.CONTAINS_ONE_RANDOM_WEAPON",
 										["cost"] = { { "c", ANIMA, 1000 } },
 										["groups"] = WEAPON_SATCHEL_OF_THE_WILD_HUNT,
 									}),

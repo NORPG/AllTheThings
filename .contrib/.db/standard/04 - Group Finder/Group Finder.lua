@@ -24,7 +24,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.CLASSIC, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
-			["description"] = "Rewarded for completing a random 'Classic' dungeon.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Classic' dungeon.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_CLASSIC",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Classic' dungeon.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成随机“经典旧世”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_7_3_5 },
 			["groups"] = {
 				i(51982),			-- Earthbound Boots				— 01/14/22
@@ -71,7 +88,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 		i(51999, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 15-25
-			["description"] = "Rewarded for completing a random dungeon in the level 15-25 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random dungeon in the level 15-25 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_DUNGEON_IN_THE",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random dungeon in the level 15-25 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 15-25 范围内的随机地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51994),	-- Tumultuous Cloak [INT]
 				i(143580, {	-- Earthbound Girdle
@@ -86,7 +120,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(52000, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 26-35
-			["description"] = "Rewarded for completing a random dungeon in the level 26-35 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random dungeon in the level 26-35 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_DUNGEON_IN_THE_2",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random dungeon in the level 26-35 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 26-35 范围内的随机地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51996),	-- Tumultuous Necklace
 				i(143581, {	-- Earthbound Grips
@@ -100,33 +151,84 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(67248, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
-			["description"] = "This is only rewarded for completing Maraudon - Earth Song Falls (level 36-39 range).",
+			["description"] = createLocalizationString({
+				readable = "This is only rewarded for completing Maraudon - Earth Song Falls (level 36-39 range).",
+				constant = "THIS_IS_ONLY_REWARDED_FOR_COMPLETING_MARAUDON",
+				export = true,
+				text = {
+					en = "This is only rewarded for completing Maraudon - Earth Song Falls (level 36-39 range).",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只有在完成玛拉顿 - 大地之歌瀑布（等级 36-39 范围）时才会获得此奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51976),	-- Earthbound Shoulderguards
 				i(51974),	-- Enumerated Shoulderpads
 				i(51984, {	-- Stalwart Shoulderpads
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available at level 40+.",
+					["description"] = createLocalizationString({
+						readable = "These may only be available at level 40+.",
+						constant = "THESE_MAY_ONLY_BE_AVAILABLE_AT_LEVEL_40",
+						export = true,
+						text = {
+							en = "These may only be available at level 40+.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些可能仅在 40 级以上可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				i(51997, {	-- Stalwart Spaulders
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available below level 40.",
+					["description"] = createLocalizationString({
+						readable = "These may only be available below level 40.",
+						constant = "THESE_MAY_ONLY_BE_AVAILABLE_BELOW_LEVEL_40",
+						export = true,
+						text = {
+							en = "These may only be available below level 40.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些可能只在 40 级以下可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				i(51966, {	-- Vigorous Spaulders
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available at level 40+.",
+					["description"] = "~L.THESE_MAY_ONLY_BE_AVAILABLE_AT_LEVEL_40",
 					-- #endif
 				}),
 				i(51998, {	-- Vigorous Spaulders
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available below level 40.",
+					["description"] = "~L.THESE_MAY_ONLY_BE_AVAILABLE_BELOW_LEVEL_40",
 					-- #endif
 				}),
 				i(143583, {	-- Stalwart Grips
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available at level 40+.",
+					["description"] = "~L.THESE_MAY_ONLY_BE_AVAILABLE_AT_LEVEL_40",
 					-- #endif
 					["timeline"] = { ADDED_7_1_0, REMOVED_7_3_5 },
 				}),
@@ -149,7 +251,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(52002, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 46-55
-			["description"] = "Rewarded for completing a random dungeon in the level 46-55 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random dungeon in the level 46-55 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_DUNGEON_IN_THE_3",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random dungeon in the level 46-55 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 46-55 范围内的随机地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51982),	-- Earthbound Boots
 				i(51981),	-- Earthbound Wristguards
@@ -162,7 +281,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(52003, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 56-60
-			["description"] = "Rewarded for completing a random dungeon in the level 56-60 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random dungeon in the level 56-60 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_DUNGEON_IN_THE_4",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random dungeon in the level 56-60 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 56-60 范围内的随机地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51993),	-- Turbulent Cloak
 				i(51977),	-- Earthbound Girdle
@@ -226,7 +362,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 		i(52004, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 60-64
-			["description"] = "Rewarded for completing a random dungeon in the level 60-64 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random dungeon in the level 60-64 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_DUNGEON_IN_THE_5",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random dungeon in the level 60-64 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 60-64 范围内的随机地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51995),	-- Turbulent Necklace
 				i(51979),	-- Earthbound Grips
@@ -236,7 +389,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(52005, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 65-70
-			["description"] = "Rewarded for completing a random dungeon in the level 65-70 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random dungeon in the level 65-70 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_DUNGEON_IN_THE_6",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random dungeon in the level 65-70 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 65-70 范围内的随机地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(51991),	-- Turbulent Signet
 				i(51975),	-- Earthbound Shoulders
@@ -282,7 +452,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 		i(114634, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 70-74
-			["description"] = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_WRATH_OF_THE",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 70-74 范围内的随机“巫妖王之怒”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(112361),	-- Ice-Encrusted Plate Belt
 				i(112362),	-- Ice-Encrusted Plate Girdle
@@ -308,7 +495,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(114641, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 75-80
-			["description"] = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_WRATH_OF_THE_2",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 75-80 范围内的随机“巫妖王之怒”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(113687),	-- Dark Rune Lavalliere
 				i(113686),	-- Nerubian Prince's Pendant
@@ -418,7 +622,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 		i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_CATACLYSM",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 80-84 范围内的随机“大地的裂变”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(113760),	-- Smoldercloth Bracers
 				i(113759),	-- Smoldercloth Cap
@@ -445,7 +666,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		}),
 		i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_CATACLYSM_2",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 84-85 范围内的随机“大地的裂变”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(113763),	-- Smoldercloth Gloves
 				i(113761),	-- Smoldercloth Leggings
@@ -516,7 +754,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(114662, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
-			["description"] = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_MISTS_OF",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 85-89 范围内的随机“熊猫人之谜”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),	-- Saying 89, because at level 90 you can no longer queue for this.
 			["groups"] = {
 				i(113788),	-- Blossoming Belt
 				i(113764),	-- Blossoming Cap
@@ -543,7 +798,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(114669, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
-			["description"] = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
+			["description"] = createLocalizationString({
+				readable = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",
+				constant = "REWARDED_FOR_COMPLETING_A_RANDOM_MISTS_OF_2",
+				export = true,
+				text = {
+					en = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成等级 88-89 范围内的随机“熊猫人之谜”地下城后奖励。",
+					-- TODO: tw = "",
+				},
+			}),	-- Again, saying 89 because at level 90 you can no longer queue for this.
 			["groups"] = {
 				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves

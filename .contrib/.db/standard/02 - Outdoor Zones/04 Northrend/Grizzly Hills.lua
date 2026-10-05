@@ -576,7 +576,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.0, 47.9, GRIZZLY_HILLS },
 					}),
 					q(11984, {	-- Filling the Cages
-						["description"] = "This quest requires the use of a pet named Budd.\nAny pet classes must dismiss their active pets.\nSpeak with Budd in the camp to get him as a pet.\nThe ability to tag a troll can be found on the pet bar.",
+						["description"] = createLocalizationString({
+							readable = "This quest requires the use of a pet named Budd.\nAny pet classes must dismiss their active pets.\nSpeak with Budd in the camp to get him as a pet.\nThe ability to tag a troll can be found on the pet bar.",
+							constant = "THIS_QUEST_REQUIRES_THE_USE_OF_A_PET_NAMED_BUDD",
+							export = true,
+							text = {
+								en = "This quest requires the use of a pet named Budd.\nAny pet classes must dismiss their active pets.\nSpeak with Budd in the camp to get him as a pet.\nThe ability to tag a troll can be found on the pet bar.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务需要使用名为巴德的宠物。\n所有宠物职业都必须解散当前激活的宠物。\n与营地中的巴德交谈，将他收为宠物。\n标记巨魔的技能位于宠物动作条上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							12210,	-- Troll Season! (A)
 							12208,	-- Good Troll Hunting (H)
@@ -1942,7 +1959,24 @@ root(ROOTS.Zones, {
 				}),
 				n(RARES, {
 					n(38453, {	-- Arcturis
-						["description"] = "This is a highly sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+						["description"] = createLocalizationString({
+							readable = "This is a highly sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+							constant = "THIS_IS_A_HIGHLY_SOUGHT_AFTER_HUNTER_PET_IF_YOU",
+							export = true,
+							text = {
+								en = "This is a highly sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是一种非常抢手的猎人宠物。如果你看到这只生物，请做个好心人，在综合频道里通知大家，而不是直接杀掉它。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 31.2, 55.4, GRIZZLY_HILLS },
 						["groups"] = {
 							i(51958),	-- Pristine Glowbear Pelt
@@ -2006,7 +2040,24 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.4, GRIZZLY_HILLS },
-							["description"] = "Is only visible while your faction controls Venture Bay.",
+							["description"] = createLocalizationString({
+								readable = "Is only visible while your faction controls Venture Bay.",
+								constant = "IS_ONLY_VISIBLE_WHILE_YOUR_FACTION_CONTROLS",
+								export = true,
+								text = {
+									en = "Is only visible while your faction controls Venture Bay.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "只有在你方阵营控制风险湾时才可见。",
+									-- TODO: tw = "",
+								},
+							}),
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = pvp({
 								-- TODO: For Cata, we're gonna need to add the honor costs... yuck.
@@ -2059,7 +2110,24 @@ root(ROOTS.Zones, {
 						}),
 						n(29275, {	-- Aspen Grove Supplier <Food & Drink>
 							["coord"] = { 34.6, 55.0, GRIZZLY_HILLS },
-							["description"] = "This vendor is only friendly to Alliance players, and even then it only applies until you finalise your relationship with the people at Silverbrook!",
+							["description"] = createLocalizationString({
+								readable = "This vendor is only friendly to Alliance players, and even then it only applies until you finalise your relationship with the people at Silverbrook!",
+								constant = "THIS_VENDOR_IS_ONLY_FRIENDLY_TO_ALLIANCE",
+								export = true,
+								text = {
+									en = "This vendor is only friendly to Alliance players, and even then it only applies until you finalise your relationship with the people at Silverbrook!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此商人只对联盟玩家友好，而且仅在你与银溪镇的居民最终确立关系之前有效。",
+									-- TODO: tw = "",
+								},
+							}),
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(40359),	-- Fresh Eagle Meat
@@ -2076,7 +2144,24 @@ root(ROOTS.Zones, {
 						}),
 						n(29244, {	-- Jesse Masters <Butcher>
 							["coord"] = { 31.6, 59.8, GRIZZLY_HILLS },
-							["description"] = "Access to this vendor requires completing 'Replenishing the Storehouse' and the following 'Take Their Rear!'.",
+							["description"] = createLocalizationString({
+								readable = "Access to this vendor requires completing 'Replenishing the Storehouse' and the following 'Take Their Rear!'.",
+								constant = "ACCESS_TO_THIS_VENDOR_REQUIRES_COMPLETING",
+								export = true,
+								text = {
+									en = "Access to this vendor requires completing 'Replenishing the Storehouse' and the following 'Take Their Rear!'.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "要接触这名商人，需要完成任务“补充仓库”以及随后的“抄他们的后路！”。",
+									-- TODO: tw = "",
+								},
+							}),
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(40202),	-- Sizzling Grizzly Flank
@@ -2092,7 +2177,7 @@ root(ROOTS.Zones, {
 						}),
 						n(27730, {	-- Purkom <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.2, GRIZZLY_HILLS },
-							["description"] = "Is only visible while your faction controls Venture Bay.",
+							["description"] = "~L.IS_ONLY_VISIBLE_WHILE_YOUR_FACTION_CONTROLS",
 							["races"] = HORDE_ONLY,
 							["groups"] = pvp({
 								-- TODO: For Cata, we're gonna need to add the honor costs... yuck.
@@ -2144,7 +2229,24 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						n(91632, {	-- Remington Brode <Traveling Lumberjack>
-							["description"] = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
+							["description"] = createLocalizationString({
+								readable = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
+								constant = "PATROLS_ALL_OVER_GRIZZLY_HILLS_WHEN_YOU_FIND",
+								export = true,
+								text = {
+									en = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在灰熊丘陵全境巡逻。找到他后依次选择\n“<深呼吸。>”、\n“我在找一首歌……”、\n“一首关于荒野的歌。”，\n以及“没错！”",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {
 								i(122236, {	-- Music Roll: Totems of the Grizzlemaw
@@ -2174,23 +2276,57 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					applyclassicphase(WRATH_PHASE_TWO, n(33224, {	-- Maiden of Ashwood Lake
-						["description"] = "Kiss this frog.",
+						["description"] = createLocalizationString({
+							readable = "Kiss this frog.",
+							constant = "KISS_THIS_FROG",
+							export = true,
+							text = {
+								en = "Kiss this frog.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "亲吻这只青蛙。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 44986 },	-- Warts-B-Gone Lip Balm
 						["coord"] = { 60.5, 51.5, GRIZZLY_HILLS },
 						["groups"] = { i(44981) },	-- Ashwood Brand (QI!)
 					})),
 					i(36743, {	-- Desperate Mojo
-						["description"] = "Only used for a given quest, can otherwise be vendored.",
+						["description"] = createLocalizationString({
+							readable = "Only used for a given quest, can otherwise be vendored.",
+							constant = "ONLY_USED_FOR_A_GIVEN_QUEST_CAN_OTHERWISE_BE",
+							export = true,
+							text = {
+								en = "Only used for a given quest, can otherwise be vendored.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅用于某个特定任务，其他情况下可以卖给商人。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(35799, {	-- Frozen Mojo
-						["description"] = "Only used for a given quest, can otherwise be vendored.",
+						["description"] = "~L.ONLY_USED_FOR_A_GIVEN_QUEST_CAN_OTHERWISE_BE",
 					}),
 					i(41123, {	-- Plans: Reinforced Cobalt Helm (RECIPE!)
 						["coord"] = { 68.4, 16.0, GRIZZLY_HILLS },
 						["cr"] = 26270,	-- Iron Rune-Shaper
 					}),
 					i(36758, {	-- Sacred Mojo
-						["description"] = "Only used for a given quest, can otherwise be vendored.",
+						["description"] = "~L.ONLY_USED_FOR_A_GIVEN_QUEST_CAN_OTHERWISE_BE",
 					}),
 					i(46108, {	-- Technique: Rituals of the New Moon
 						["crs"] = {
@@ -2201,7 +2337,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(35836, {	-- Zim'bo's Mojo
-						["description"] = "Only used for a given quest, can otherwise be vendored.",
+						["description"] = "~L.ONLY_USED_FOR_A_GIVEN_QUEST_CAN_OTHERWISE_BE",
 					}),
 				}),
 			},

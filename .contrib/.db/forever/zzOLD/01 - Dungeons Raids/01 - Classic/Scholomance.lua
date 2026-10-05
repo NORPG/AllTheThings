@@ -145,28 +145,96 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 						{ "i",  13471 },	-- The Deed to Brill
 						{ "o", 176484 },	-- The Deed to Brill
 					},
-					["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
+					["description"] = createLocalizationString({
+						readable = "Can be found along the wall in Ras Frostwhisper's room.",
+						constant = "CAN_BE_FOUND_ALONG_THE_WALL_IN_RAS_FROSTWHISPER",
+						export = true,
+						text = {
+							en = "Can be found along the wall in Ras Frostwhisper's room.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在拉丝·霜语的房间中沿墙找到。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				objective(2, {	-- 0/1 The Deed to Caer Darrow
 					["providers"] = {
 						{ "i",  13448 },	-- The Deed to Caer Darrow
 						{ "o", 176485 },	-- The Deed to Caer Darrow
 					},
-					["description"] = "Can be found right next to Alexi Barov.",
+					["description"] = createLocalizationString({
+						readable = "Can be found right next to Alexi Barov.",
+						constant = "CAN_BE_FOUND_RIGHT_NEXT_TO_ALEXI_BAROV",
+						export = true,
+						text = {
+							en = "Can be found right next to Alexi Barov.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在阿莱克斯·巴罗夫旁边找到。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				objective(3, {	-- 0/1 The Deed to Southshore
 					["providers"] = {
 						{ "i",  13450 },	-- The Deed to Southshore
 						{ "o", 176486 },	-- The Deed to Southshore
 					},
-					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
+					["description"] = createLocalizationString({
+						readable = "Can be found in the very back of the first room hidden behind some bookshelves.",
+						constant = "CAN_BE_FOUND_IN_THE_VERY_BACK_OF_THE_FIRST_ROOM",
+						export = true,
+						text = {
+							en = "Can be found in the very back of the first room hidden behind some bookshelves.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在第一个房间最深处、书架后面找到。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				objective(4, {	-- 0/1 The Deed to Tarren Mill
 					["providers"] = {
 						{ "i",  13451 },	-- The Deed to Tarren Mill
 						{ "o", 176487 },	-- The Deed to Tarren Mill
 					},
-					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
+					["description"] = createLocalizationString({
+						readable = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
+						constant = "CAN_BE_FOUND_ON_THE_TABLE_IN_THE_BACK_CORNER",
+						export = true,
+						text = {
+							en = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在后方角落的桌子上找到，就在你进入幼龙房间或下楼与詹迪斯·巴罗夫战斗之前。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			},
 		},
@@ -180,28 +248,28 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 						{ "i",  13471 },	-- The Deed to Brill
 						{ "o", 176484 },	-- The Deed to Brill
 					},
-					["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
+					["description"] = "~L.CAN_BE_FOUND_ALONG_THE_WALL_IN_RAS_FROSTWHISPER",
 				}),
 				objective(2, {	-- 0/1 The Deed to Caer Darrow
 					["providers"] = {
 						{ "i",  13448 },	-- The Deed to Caer Darrow
 						{ "o", 176485 },	-- The Deed to Caer Darrow
 					},
-					["description"] = "Can be found right next to Alexi Barov.",
+					["description"] = "~L.CAN_BE_FOUND_RIGHT_NEXT_TO_ALEXI_BAROV",
 				}),
 				objective(3, {	-- 0/1 The Deed to Southshore
 					["providers"] = {
 						{ "i",  13450 },	-- The Deed to Southshore
 						{ "o", 176486 },	-- The Deed to Southshore
 					},
-					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
+					["description"] = "~L.CAN_BE_FOUND_IN_THE_VERY_BACK_OF_THE_FIRST_ROOM",
 				}),
 				objective(4, {	-- 0/1 The Deed to Tarren Mill
 					["providers"] = {
 						{ "i",  13451 },	-- The Deed to Tarren Mill
 						{ "o", 176487 },	-- The Deed to Tarren Mill
 					},
-					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
+					["description"] = "~L.CAN_BE_FOUND_ON_THE_TABLE_IN_THE_BACK_CORNER",
 				}),
 				i(65923, {	-- Barov Servant Caller
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -223,7 +291,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		q(4771, {	-- Dawn's Gambit
 			-- #if BEFORE 4.0.3
-			["description"] = "After completing this quest, you can return to Betina to have her give you another Gambit.",
+			["description"] = createLocalizationString({
+				readable = "After completing this quest, you can return to Betina to have her give you another Gambit.",
+				constant = "AFTER_COMPLETING_THIS_QUEST_YOU_CAN_RETURN_TO",
+				export = true,
+				text = {
+					en = "After completing this quest, you can return to Betina to have her give you another Gambit.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "完成此任务后，你可以回到贝蒂娜处，让她再给你一个计策。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["sourceQuest"] = 5531,	-- Betina Bigglezink
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
@@ -236,7 +321,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				}),
 				objective(2, {	-- 0/1 Place Dawn's Gambit
 					["provider"] = { "i", 12368 },	-- Dawn's Gambit
-					["description"] = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
+					["description"] = createLocalizationString({
+						readable = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
+						constant = "THIS_WILL_SIGNIFICANTLY_REDUCE_ALL_OF_THE",
+						export = true,
+						text = {
+							en = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这会大幅降低附近所有学员的生命值和伤害。一旦组件打开，你应该让坦克或板甲/潜行者输出去拉住房间里除两个首领之外的所有怪，并准备进行范围攻击。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(15854, {	-- Dancing Sliver
 					["timeline"] = { REMOVED_4_0_3 },
@@ -247,7 +349,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			},
 		}),
 		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
-			["description"] = "Talk to Eva until she offers the quest.",
+			["description"] = createLocalizationString({
+				readable = "Talk to Eva until she offers the quest.",
+				constant = "TALK_TO_EVA_UNTIL_SHE_OFFERS_THE_QUEST",
+				export = true,
+				text = {
+					en = "Talk to Eva until she offers the quest.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "与伊娃交谈，直到她提供该任务。",
+					-- TODO: tw = "",
+				},
+			}),
 			["qg"] = 11216,	-- Eva Sarkhoff
 			["coord"] = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
@@ -401,7 +520,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["lvl"] = 58,
 		}),
 		q(76249, name(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
-			["description"] = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+			["description"] = createLocalizationString({
+				readable = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+				constant = "IT_S_RECOMMENDED_TO_ACTIVATE_THE_DEBUG_MODE_TO",
+				export = true,
+				text = {
+					en = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "建议开启调试模式，以便正确查看每个步骤和说明。\n\n要开始解锁旧通灵学院，你必须先通关一次英雄难度通灵学院。完成之后，前往原通灵学院中曾是瑟尔林·克拉斯托诺夫医生房间的那个房间（顶部中央的房间）。在房间左上方，使用玩具克拉斯托诺夫的恐怖之袋。使用后，伊娃·萨克霍夫的幽灵会出现，并且害怕你（因为该玩具会把你变成屠夫本人）。移除玩具的增益效果后，伊娃会意识到你并不是杀害她的凶手，便会与你交谈，交给你旧的幽灵精华饰品，并让你可以拾取地上的伊娃的股骨。这样你就能在凯尔达隆看到幽灵了。\n\n完成之后，你可以在通灵学院外她原来的位置与她交谈，她会请求你寻找她的日记以及五支蜡烛，以举行一场可怕的仪式。蜡烛需要与凯尔达隆的居民交易，并需要他们生前珍视的物品。下面是所有物品的位置：",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_10_1_5 },
 			["maps"] = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME, MAP.WESTERN_PLAGUELANDS },
 			["cost"] = {
@@ -415,7 +551,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			},
 		})),
 		q(5463, {	-- Menethil's Gift (1/2)
-			["description"] = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
+			["description"] = createLocalizationString({
+				readable = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
+				constant = "TAKE_THE_KEEPSAKE_TO_THE_SYMBOL_ON_THE_FLOOR_IN",
+				export = true,
+				text = {
+					en = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "将纪念品带到斯坦索姆瑞文戴尔男爵房间地上的符号处。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 			["providers"] = {
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
@@ -723,19 +876,70 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	}),
 	n(TREASURES, {
 		o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-			["description"] = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+			["description"] = createLocalizationString({
+				readable = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+				constant = "CAN_BE_FOUND_AT_THE_TOP_OF_THE_SOUTHWEST_BONE",
+				export = true,
+				text = {
+					en = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可以在碎骨者房间西南角的骨堆顶部找到。从大骨库的西南洞口跳下进入碎骨者的房间并向下看，它是骨堆上的一个小物件。\n\n如果你的角色已经拥有银色黎明委任徽章或黎明符文/黎明徽记，则无法看到此物品！",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(206372),	-- Cracked Argent Dawn Commission
 			},
 		})),
 		o(405388, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Familiar Journal
-			["description"] = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+			["description"] = createLocalizationString({
+				readable = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+				constant = "THE_FAMILIAR_JOURNAL_ITSELF_CAN_BE_FOUND_IN_THE",
+				export = true,
+				text = {
+					en = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "魔宠日志本身可以在旧通灵学院的观阅室中找到，位于从左墙数第二个书架上，就在小首领马杜克·布莱克波尔附近。你只需捡起这本书，玩具就归你了！就是这么简单。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(208096),	-- Familiar Journal (TOY!)
 			},
 		})),
 		i(12736, {	-- Frostwhisper's Embalming Fluid
-			["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
+			["description"] = createLocalizationString({
+				readable = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
+				constant = "CAN_BE_FOUND_INSIDE_THE_CHEMISTRY_LAB_IN",
+				export = true,
+				text = {
+					en = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在通灵学院内的化学实验室中找到，就在拉斯·霜语的房间。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
 			["timeline"] = { ADDED_1_11_1, REMOVED_5_0_4, ADDED_10_2_5 }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
 		}),
@@ -750,33 +954,101 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)
 			-- #if AFTER 4.0.3
-			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
+			["description"] = createLocalizationString({
+				readable = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
+				constant = "THIS_PATTERN_NO_LONGER_DROPS_THE_RECIPE_CAN_NOW",
+				export = true,
+				text = {
+					en = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "该图样已不再掉落。现在可以在任意制皮训练师处学会该配方。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 11582,	-- Scholomance Dark Summoner
 		}),
 		i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
 			-- #if AFTER 4.0.3
-			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
+			["description"] = "~L.THIS_PATTERN_NO_LONGER_DROPS_THE_RECIPE_CAN_NOW",
 			-- #endif
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
 		applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 		i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
-			["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+			["description"] = createLocalizationString({
+				readable = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				constant = "CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
+				export = true,
+				text = {
+					en = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只要你装备了任意一件银色黎明饰品，就能从瘟疫之地及相关副本中的任意亡灵生物身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
-			["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+			["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
-			["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+			["description"] = createLocalizationString({
+				readable = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				constant = "CAN_DROP_FROM_WEAK_UNDEAD_CREATURE_IN_THE",
+				export = true,
+				text = {
+					en = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只要你装备了任意一件银色黎明饰品，就能从瘟疫之地及相关副本中的弱小亡灵生物身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(13920, {	-- Healthy Dragon Scale
-			["description"] = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
+			["description"] = createLocalizationString({
+				readable = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
+				constant = "THIS_ITEM_CAN_ONLY_DROP_FROM_THE_HATCHLINGS",
+				export = true,
+				text = {
+					en = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只有在完成瘟疫雏龙任务后，该物品才会从雏龙身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 			["cr"] = 10678,	-- Plagued Hatchling
 		}),
@@ -803,7 +1075,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_FOUR, i(228703, {	-- Coldstone Slippers
-			["description"] = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+			["description"] = createLocalizationString({
+				readable = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+				constant = "NONE_OF_THESE_HAVE_BEEN_FOUND_ON_WOWHEAD_OR_THE",
+				export = true,
+				text = {
+					en = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品均未在 WoWHead 或拍卖行上被发现。如果你让其中一件掉落了，请 @Crieve！",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { CREATED_1_15_3 },
 		})),
 		-- #endif
@@ -922,7 +1211,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_FOUR, i(228704, {	-- Tattered Leather Hood
-			["description"] = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+			["description"] = "~L.NONE_OF_THESE_HAVE_BEEN_FOUND_ON_WOWHEAD_OR_THE",
 			["timeline"] = { CREATED_1_15_3 },
 		})),
 		-- #endif
@@ -987,7 +1276,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			{ "i", 206370 },	-- Blood of Innocents
 			-- #endif
 		},
-		["description"] = "Can only be summoned if someone in your group has the Blood of Innocents.",
+		["description"] = createLocalizationString({
+			readable = "Can only be summoned if someone in your group has the Blood of Innocents.",
+			constant = "CAN_ONLY_BE_SUMMONED_IF_SOMEONE_IN_YOUR_GROUP",
+			export = true,
+			text = {
+				en = "Can only be summoned if someone in your group has the Blood of Innocents.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "只有当队伍中有人拥有无辜者之血时才能召唤。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228015, {	-- Frightalon
@@ -1082,7 +1388,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		i(13725),	-- Krastinov's Bag of Horrors
 		o(180794, {	-- Journal of Jandice Barov
-			["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+			["description"] = createLocalizationString({
+				readable = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+				constant = "JANDICE_BAROV_DROPS_THIS_ITEM_WHEN_KILLED_WHICH",
+				export = true,
+				text = {
+					en = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "杀死詹迪斯·巴罗夫后她会掉落此物品，可学会恶魔布包。你必须是一名技能 285 或更高的裁缝才能学习该配方。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				r(26086, {	-- Felcloth Bag
 					["requireSkill"] = TAILORING,
@@ -1123,7 +1446,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		-- #endif
 		i(14543, {	-- Darkshade Gloves
 			-- #if AFTER 2.0.1
-			["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+			["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
 			["isBounty"] = true,
 			-- #endif
 			["timeline"] = {
@@ -1157,11 +1480,28 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	}),
 	n(11622, {	-- Rattlegore
 		i(13873, {	-- Viewing Room Key
-			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
+			["description"] = createLocalizationString({
+				readable = "You must use this item on the door prior to Vectus and Marduk.",
+				constant = "YOU_MUST_USE_THIS_ITEM_ON_THE_DOOR_PRIOR_TO",
+				export = true,
+				text = {
+					en = "You must use this item on the door prior to Vectus and Marduk.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "你必须在维克图斯和马尔杜克之前对门使用此物品。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		i(206371, {	-- Viewing Room Key
-			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
+			["description"] = "~L.YOU_MUST_USE_THIS_ITEM_ON_THE_DOOR_PRIOR_TO",
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
@@ -1224,7 +1564,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			i(18880),	-- Darkreaver's Head
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228030, {	-- Malicious Axe
-				["description"] = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+				["description"] = createLocalizationString({
+					readable = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+					constant = "THERE_ARE_NO_RECORDED_DROPS_FOR_THIS_VERSION_IF",
+					export = true,
+					text = {
+						en = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此版本没有任何掉落记录，如果你让它掉落了，请在 Discord 上 @Crieve！",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { CREATED_1_15_3 },
 			})),
 			-- #endif
@@ -1251,7 +1608,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	n(10433, {	-- Marduk Blackpool
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_FOUR, i(227993, {	-- Ebon Hilt of Marduk
-			["description"] = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+			["description"] = "~L.THERE_ARE_NO_RECORDED_DROPS_FOR_THIS_VERSION_IF",
 			["timeline"] = { CREATED_1_15_3 },
 		})),
 		-- #endif
@@ -1278,7 +1635,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 	}),
 	n(10508, {	-- Ras Frostwhisper
 		i(13626, {	-- Human Head of Ras Frostwhisper
-			["description"] = "Use the Keepsake on him before he dies to turn him back into a human.",
+			["description"] = createLocalizationString({
+				readable = "Use the Keepsake on him before he dies to turn him back into a human.",
+				constant = "USE_THE_KEEPSAKE_ON_HIM_BEFORE_HE_DIES_TO_TURN",
+				export = true,
+				text = {
+					en = "Use the Keepsake on him before he dies to turn him back into a human.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在他死前对他使用纪念品，将他变回人类。",
+					-- TODO: tw = "",
+				},
+			}),
 			["cost"] = { { "i", 13752, 1 } },	-- Soulbound Keepsake
 		}),
 		i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
@@ -1441,7 +1815,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		},
 	})),
 	n(COMMON_BOSS_DROPS, {
-		["description"] = "The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",
+		["description"] = createLocalizationString({
+			readable = "The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",
+			constant = "THE_FOLLOWING_ITEMS_CAN_DROP_FROM_ANY_OF_THE_2",
+			export = true,
+			text = {
+				en = "The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "以下物品可以从与黑暗院长加丁战斗之前墓室中的任何小首领身上掉落。除伊露希亚·巴罗夫女士之外的首领都有一两件专属掉落列表的物品。",
+				-- TODO: tw = "",
+			},
+		}),
 		["crs"] = {
 			10505,	-- Instructor Malicia
 			11261,	-- Doctor Theolen Krastinov <The Butcher>
@@ -1734,10 +2125,44 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 	}),
 	n(1853, {	-- Darkmaster Gandling
-		["description"] = "You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
+		["description"] = createLocalizationString({
+			readable = "You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
+			constant = "YOU_MUST_FULLY_CLEAR_OUT_THE_SIX_ROOMS_AROUND",
+			export = true,
+			text = {
+				en = "You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "你必须彻底清空院长书房周围的六个房间，这个首领才会在底层生成。建议最后清理顶层，这样你就有机会妥善安排队伍站位。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			i(206373, {	-- Darkmaster's Scourgestone (QI!)
-				["description"] = "Drops only with equipped Argent Dawn Commission",
+				["description"] = createLocalizationString({
+					readable = "Drops only with equipped Argent Dawn Commission",
+					constant = "DROPS_ONLY_WITH_EQUIPPED_ARGENT_DAWN_COMMISSION",
+					export = true,
+					text = {
+						en = "Drops only with equipped Argent Dawn Commission",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅在装备银色黎明委任徽章时掉落",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 12846 },	-- Argent Dawn Commission
 				["timeline"] = { ADDED_10_1_5 },
 			}),
@@ -1922,7 +2347,24 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			})),
 			-- #endif
 			i(13950, {	-- Detention Strap [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-				["description"] = "This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",
+				["description"] = createLocalizationString({
+					readable = "This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",
+					constant = "THIS_ITEM_SEEMS_TO_HAVE_DISAPPEARED_IN_CLASSIC_2",
+					export = true,
+					text = {
+						en = "This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "该物品似乎在经典怀旧服中消失了。如果你在任何游戏版本中获得该物品，请截图并直接发送到 Discord 上的 @Crieve！",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
 					REMOVED_1_15_3,
@@ -1978,7 +2420,24 @@ end
 -- #if AFTER 10.1.5
 table.insert(SCHOLOMANCE_GROUPS, header(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 	["sourceQuest"] = 76249,	-- Memory of Scholomance
-	["description"] = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spectral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candlelit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
+	["description"] = createLocalizationString({
+		readable = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spectral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candlelit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
+		constant = "WITH_10_1_5_BLIZZARD_READDED_THE_ORIGINAL",
+		export = true,
+		text = {
+			en = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spectral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candlelit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "从 10.1.5 补丁开始，暴雪重新加入了通灵学院的原始版本！\n\n谢谢你，暴雪！\n  -Crieve\n\n以下是入门方法：\n\n1. 在英雄难度的通灵学院中，从稀有刷新塞奥林·克拉斯特诺夫医生身上获得“克拉斯特诺夫的恐怖之袋”。如果你有已经拥有该玩具的人陪同，可以跳过这一步。\n\n2. 在院长密室击败黑暗院长加丁，然后进入上层的中央房间。\n\n3. 在房间东南部的地面上找到一堆骸骨，使用玩具“克拉斯特诺夫的恐怖之袋”。\n\n4. 此时伊娃·萨克霍夫应该已经生成，但在你移除名为“外科改造”的玩具幻象/增益之前，你无法与她互动。\n\n5. 接受伊娃·萨克霍夫的任务并获得她的惰性幽灵精华。从骸骨堆中拾取伊娃的股骨。\n\n6. 走回楼上前往观览室。房间西南角有两个书架。伊娃的日志可以在左侧书架背面的中层隔板上找到。\n\n7. 获取所需材料：3 个黑暗符文和 5 个不死精华，然后使用惰性幽灵精华。装备制作出的饰品“幽灵精华”。\n\n8. 通过在凯尔达隆（通灵学院外）周围完成目标来获取蜡烛：\n8.1 在安多哈尔市政厅内 43.35, 69.3 处拾取“安多哈尔的地契”，并把它交给 70.5, 74.0 处的执政官马杜克。\n8.2 从 68.9, 78.8 处点着蜡烛的喷泉拾取“一桶喷泉水”，并把它交给 68.0, 74.8 处的约瑟夫·迪尔特。\n8.3 从东瘟疫之地达隆郡 35.7, 83.5 处的肉车上拾取“被踩踏的玩偶”，返回凯尔达隆并把它交给 69.15, 78.7 处的萨米。\n8.4 从东瘟疫之地旧科林十字路口酒馆内 55.0, 64.0 处的一堵墙上拾取“前方的路”，返回凯尔达隆并把它交给 65.8, 75.4 处的画家伦弗雷。\n8.5 从斯坦索姆国王广场喷泉后的一辆货车上拾取“未送达的烟草货物”，返回凯尔达隆并把它交给 63.4, 75.5 处的罗里。\n\n9. 使用伊娃的日志，在 69.7, 71.7 处、凯尔达隆要塞/开放世界通灵学院内开始仪式。",
+			-- TODO: tw = "",
+		},
+	}),
 	["mapID"] = 306,
 	["maps"] = { 307, 308, 309 },
 	["modID"] = 1,
@@ -2015,7 +2474,24 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 	["groups"] = {
 		-- #if AFTER 10.1.5
 		header(HEADERS.NPC, 206014, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
-			["description"] = "See the 'Memory of Scholomance'-header for proper instructions on how to do this.",
+			["description"] = createLocalizationString({
+				readable = "See the 'Memory of Scholomance'-header for proper instructions on how to do this.",
+				constant = "SEE_THE_MEMORY_OF_SCHOLOMANCE_HEADER_FOR_PROPER",
+				export = true,
+				text = {
+					en = "See the 'Memory of Scholomance'-header for proper instructions on how to do this.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "有关具体做法的说明，请参阅“通灵学院的记忆”标题。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				n(TREASURES, {
 					o(403552, {	-- Eva's Femur
@@ -2028,7 +2504,24 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 						["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
 						["groups"] = {
 							i(206346, {	-- Eva's Journal
-								["description"] = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+								["description"] = createLocalizationString({
+									readable = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+									constant = "USE_AT_69_7_71_7_OUTSIDE_THE_SCHOLOMANCE",
+									export = true,
+									text = {
+										en = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在通灵学院副本外的 69.7, 71.7 处使用",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),
@@ -2058,7 +2551,24 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = bubbleDown({["ignoreBonus"] = true},{
 				i(85580, {	-- Empty Polyformic Acid Vial
-					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once applied.",
+					["description"] = createLocalizationString({
+						readable = "Use this at the table nearby to apply the appearance, or to store the appearance once applied.",
+						constant = "USE_THIS_AT_THE_TABLE_NEARBY_TO_APPLY_THE",
+						export = true,
+						text = {
+							en = "Use this at the table nearby to apply the appearance, or to store the appearance once applied.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在附近的桌子上使用此物以应用外观，或在应用后储存该外观。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(85589),	-- Nearly Full Vial of Polyformic Acid
 						i(85592),	-- Half Full Vial of Polyformic Acid
@@ -2091,7 +2601,24 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			["repeatable"] = true,
 			["lvl"] = lvlsquish(40, 40, 15),
 			-- #if AFTER 10.1.5
-			["description"] = "Killing Rattlegore in Old Scholomance DOES NOT progress this quest.",
+			["description"] = createLocalizationString({
+				readable = "Killing Rattlegore in Old Scholomance DOES NOT progress this quest.",
+				constant = "KILLING_RATTLEGORE_IN_OLD_SCHOLOMANCE_DOES_NOT",
+				export = true,
+				text = {
+					en = "Killing Rattlegore in Old Scholomance DOES NOT progress this quest.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在旧通灵学院杀死血骨傀儡不会推进此任务。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["groups"] = {
 				objective(1, {	-- 0/1 Rattlegore slain
@@ -2374,7 +2901,24 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 			},
 		}),
 		n(59369, {	-- Doctor Theolen Krastinov
-			["description"] = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
+			["description"] = createLocalizationString({
+				readable = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
+				constant = "THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_4",
+				export = true,
+				text = {
+					en = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这是一种稀有生物，因此并不总是存在。\n只有在拉特戈尔被击杀后，你才能知道他是否会出现。\n他会让人知道他的存在……",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(88566, {	-- Krastinov's Bag of Horrors (TOY!)

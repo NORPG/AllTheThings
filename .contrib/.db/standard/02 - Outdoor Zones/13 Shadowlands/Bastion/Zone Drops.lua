@@ -7,7 +7,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(ZONE_DROPS, {
 			currency(MEDALLION_OF_SERVICE, {
 				["customCollect"] = "SL_COV_KYR",
-				["description"] = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
+				["description"] = createLocalizationString({
+					readable = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
+					constant = "ONE_OF_THE_BEST_SPOTS_TO_FARM_THOSE_IS_IN_THE",
+					export = true,
+					text = {
+						en = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "刷这些物品的最佳地点之一是晋升堡垒西北部世界首领周围。该区域有 4 个可重复拾取的宝箱，每个都包含 1 个勋章，且没有每日冷却限制。\n\n也可以从任何弃誓者敌人身上掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(184397, {	-- Lost Featherling (PET!)
 				["customCollect"] = "SL_COV_KYR",
@@ -54,7 +71,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(176987),	-- Ossein Scale Belt
 			i(176799),	-- Reverent Dagger
 			i(178915, {	-- Ripe Purian
-				["description"] = "Can be looted from objects scattered around the zone. Used to open Silver Strongboxes and the Steward's Golden Chest.",
+				["description"] = createLocalizationString({
+					readable = "Can be looted from objects scattered around the zone. Used to open Silver Strongboxes and the Steward's Golden Chest.",
+					constant = "CAN_BE_LOOTED_FROM_OBJECTS_SCATTERED_AROUND_THE",
+					export = true,
+					text = {
+						en = "Can be looted from objects scattered around the zone. Used to open Silver Strongboxes and the Steward's Golden Chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从散布在该区域的物体上拾取。用于打开白银保险箱和管事的金箱子。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(176797),	-- Ritual Bell
 			i(176791),	-- Steelscale Bracers

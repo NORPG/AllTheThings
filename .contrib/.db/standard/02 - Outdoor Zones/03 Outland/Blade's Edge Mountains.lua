@@ -90,15 +90,66 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(1164, {	-- Cogblade Raptor
-							["description"] ="Found often to the left and right of Death's Door.",
+							["description"] = createLocalizationString({
+								readable = "Found often to the left and right of Death's Door.",
+								constant = "FOUND_OFTEN_TO_THE_LEFT_AND_RIGHT_OF_DEATH_S",
+								export = true,
+								text = {
+									en = "Found often to the left and right of Death's Door.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "常见于死亡之门的左右两侧。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(528, {	-- Scalded Basilisk Hatchling (PET!)
 							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },
-							["description"] = "Found in a fairly large area around Skald, the volcanic area in northeast before the road slopes downwards towards Netherstorm.",
+							["description"] = createLocalizationString({
+								readable = "Found in a fairly large area around Skald, the volcanic area in northeast before the road slopes downwards towards Netherstorm.",
+								constant = "FOUND_IN_A_FAIRLY_LARGE_AREA_AROUND_SKALD_THE",
+								export = true,
+								text = {
+									en = "Found in a fairly large area around Skald, the volcanic area in northeast before the road slopes downwards towards Netherstorm.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "位于斯卡尔德周围相当大的一片区域内，那是东北方的火山地带，在道路向下通往虚空风暴之前。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						pet(637, {	-- Skittering Cavern Crawler (PET!)
-							["description"] = "Found in the two caves that connect Blade's Edge to Zangarmarsh, and as secondary pet in the zone.",
+							["description"] = createLocalizationString({
+								readable = "Found in the two caves that connect Blade's Edge to Zangarmarsh, and as secondary pet in the zone.",
+								constant = "FOUND_IN_THE_TWO_CAVES_THAT_CONNECT_BLADE_S",
+								export = true,
+								text = {
+									en = "Found in the two caves that connect Blade's Edge to Zangarmarsh, and as secondary pet in the zone.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "位于连接刀锋山与赞加沼泽的两个洞穴中，也会作为该区域的副宠物出现。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -584,7 +635,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10719, {	-- Did You Get The Note?
-						["description"] = "You have to accept or complete the quest '...and a Time for Action' to receive the item.",
+						["description"] = createLocalizationString({
+							readable = "You have to accept or complete the quest '...and a Time for Action' to receive the item.",
+							constant = "YOU_HAVE_TO_ACCEPT_OR_COMPLETE_THE_QUEST_AND_A",
+							export = true,
+							text = {
+								en = "You have to accept or complete the quest '...and a Time for Action' to receive the item.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你必须接受或完成“……以及行动的时刻”任务才能获得该物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 10682,	-- A Time for Negotiation...
 						["provider"] = { "i", 31120 },	-- Meeting Note
 						["lvl"] = lvlsquish(65, 65, 20),
@@ -603,7 +671,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10997, {	-- Even Gronn Have Standards
-						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+						["description"] = createLocalizationString({
+							readable = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+							constant = "THIS_QUEST_HAS_THREE_POSSIBLE_BREADCRUMB_QUESTS",
+							export = true,
+							text = {
+								en = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务有三个可能的前置引导任务。完成其中一个就会同时计入另外两个，但如果你想尽可能多地完成引导任务，就应该先在沙塔斯城中央接取“与食人魔交谈”来开启此任务链。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							10983,	-- Mog'dorg the Wizened
 							10989,	-- Mog'dorg the Wizened
@@ -645,7 +730,24 @@ root(ROOTS.Zones, {
 						["lvl"] = 70,
 					})),
 					q(10797, {	-- Favor of the Gronn
-						["description"] = "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
+						["description"] = createLocalizationString({
+							readable = "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
+							constant = "YOU_HAVE_TO_ACCEPT_OR_COMPLETE_THE_QUEST_A_DATE",
+							export = true,
+							text = {
+								en = "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你必须接受或完成“与多戈克的约会”任务才能获得该物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 31363 },	-- Gorgrom's Favor
 						["coord"] = { 55.0, 24.2, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
@@ -680,7 +782,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10911, {	-- Fire At Will!
-						["description"] = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
+						["description"] = createLocalizationString({
+							readable = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
+							constant = "QUEST_GIVER_LOCATION_DEPENDS_ON_WHERE_YOU_USE",
+							export = true,
+							text = {
+								en = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "任务发布者的位置取决于你在何处使用|cFFFFFFFF德鲁伊信号|r，该物品在你接受任务|cFFFFD700死亡之门|r（10910）时获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 10904,	-- Harvesting the Fel Ammunition
 						["qg"] = 22423,	-- Evergrove Druid
 						["coord"] = { 63.5, 35.5, BLADES_EDGE_MOUNTAINS },	-- Location of the "?" on the mini-map
@@ -858,7 +977,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10995, {	-- Grulloc Has Two Skulls
-						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+						["description"] = "~L.THIS_QUEST_HAS_THREE_POSSIBLE_BREADCRUMB_QUESTS",
 						["sourceQuests"] = {
 							10983,	-- Mog'dorg the Wizened
 							10989,	-- Mog'dorg the Wizened
@@ -891,7 +1010,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(10904, {	-- Harvesting the Fel Ammunition
-						["description"] = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
+						["description"] = "~L.QUEST_GIVER_LOCATION_DEPENDS_ON_WHERE_YOU_USE",
 						["sourceQuest"] = 10910,	-- Death's Door
 						["qg"] = 22423,	-- Evergrove Druid
 						["coord"] = { 63.5, 35.5, BLADES_EDGE_MOUNTAINS },	-- Location of the "?" on the mini-map
@@ -1061,7 +1180,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10996, {	-- Maggoc's Treasure Chest
-						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+						["description"] = "~L.THIS_QUEST_HAS_THREE_POSSIBLE_BREADCRUMB_QUESTS",
 						["sourceQuests"] = {
 							10983,	-- Mog'dorg the Wizened
 							10989,	-- Mog'dorg the Wizened
@@ -1220,7 +1339,24 @@ root(ROOTS.Zones, {
 					q(11009, {	-- Ogre Heaven
 						-- #if ANYCLASSIC
 						-- #if BEFORE WRATH
-						["description"] = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
+						["description"] = createLocalizationString({
+							readable = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
+							constant = "YOU_CAN_PICK_UP_THIS_QUEST_DURING_PHASE_1_BUT",
+							export = true,
+							text = {
+								en = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你可以在第 1 阶段接取此任务，但直到后续阶段引入奥格瑞拉阵营之前都无法交付。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						-- #endif
 						["sourceQuests"] = {
@@ -1459,7 +1595,24 @@ root(ROOTS.Zones, {
 							i(31456),	-- Gnomish Casting Boots
 							i(30690, {	-- Power Converter (Toy !)
 								-- #if BEFORE WRATH
-								["description"] = "It's an unlimited Firework Launcher that eventually becomes a Toy and is also a Star Wars reference. Keep it forever.",
+								["description"] = createLocalizationString({
+									readable = "It's an unlimited Firework Launcher that eventually becomes a Toy and is also a Star Wars reference. Keep it forever.",
+									constant = "IT_S_AN_UNLIMITED_FIREWORK_LAUNCHER_THAT",
+									export = true,
+									text = {
+										en = "It's an unlimited Firework Launcher that eventually becomes a Toy and is also a Star Wars reference. Keep it forever.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "它是一个可以无限使用的烟花发射器，最终会变成玩具，同时也是对《星球大战》的致敬。永远留着它吧。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -1857,7 +2010,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(10912, {	-- The Hound-Master
-						["description"] = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
+						["description"] = "~L.QUEST_GIVER_LOCATION_DEPENDS_ON_WHERE_YOU_USE",
 						["sourceQuest"] = 10911,	-- Fire At Will!
 						["qg"] = 22423,	-- Evergrove Druid
 						["coord"] = { 63.5, 35.5, BLADES_EDGE_MOUNTAINS },	-- Location of the "?" on the mini-map
@@ -2035,7 +2188,24 @@ root(ROOTS.Zones, {
 					q(10867, {	-- There Can Be Only One Response
 						["sourceQuest"] = 10865,	-- Inform Leoroxx!
 						["qg"] = 22004,	-- Leoroxx
-						["description"] = "Nexus-Prince Razaan spawns after killing etereals in the area.",
+						["description"] = createLocalizationString({
+							readable = "Nexus-Prince Razaan spawns after killing etereals in the area.",
+							constant = "NEXUS_PRINCE_RAZAAN_SPAWNS_AFTER_KILLING",
+							export = true,
+							text = {
+								en = "Nexus-Prince Razaan spawns after killing etereals in the area.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在击杀该区域的虚灵后，节点亲王拉扎安会刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
@@ -2481,7 +2651,24 @@ root(ROOTS.Zones, {
 				}),
 				n(VENDORS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23245, {	-- Aether-tech Master
-						["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
+						["description"] = createLocalizationString({
+							readable = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
+							constant = "THE_SKYGUARD_SENDS_OUT_A_GROUP_TO_STUDY_THE",
+							export = true,
+							text = {
+								en = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "天空卫队每两小时会派出一支小队前往巴什伊尔登陆点研究巴什伊尔水晶熔炉。|n事件开始后，你必须保护天空卫队抵挡三波攻击。|n第一波：战斗直到精英巴什伊尔血肉魔出现，然后击杀它。|n第二波：战斗直到三座干扰塔出现，然后摧毁它们。|n第三波：战斗直到大收集者现身。他起初无法被攻击，但当你击败足够多的巴什伊尔之后，他会决定亲自解决你，并变得可以攻击。|n处理掉大收集者之后，以太科技大师会抵达，你可以用埃匹希斯水晶购买他的货物。|r",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
@@ -2704,14 +2891,48 @@ root(ROOTS.Zones, {
 					}),
 					n(21494, {	-- Smiles O'Byron <Engineer>
 						["requireSkill"] = GNOMISH_ENGINEERING,
-						["description"] = "Gnomish Engineers can speak to Smiles to learn the recipe.",
+						["description"] = createLocalizationString({
+							readable = "Gnomish Engineers can speak to Smiles to learn the recipe.",
+							constant = "GNOMISH_ENGINEERS_CAN_SPEAK_TO_SMILES_TO_LEARN",
+							export = true,
+							text = {
+								en = "Gnomish Engineers can speak to Smiles to learn the recipe.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "侏儒工程师可以与斯迈尔斯交谈来学习该配方。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 60.2, 65.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
 							r(36955),	-- Ultrasafe Transporter - Toshley's Station
 						},
 					}),
 					n(22099, {	-- Wyrmcult Provisioner
-						["description"] = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.",
+						["description"] = createLocalizationString({
+							readable = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.",
+							constant = "TO_ACCESS_THIS_VENDOR_YOU_MUST_BE_WEARING_AN",
+							export = true,
+							text = {
+								en = "To access this vendor, you must be wearing an Overseer Disguise. To get the disguise, you must either be currently on, or have completed, the quest 'Meeting at the Blackwing Coven' which will allow you to loot 'Costume Scraps' from Wyrmcultists. You will need 5 Costume Scraps to make an Overseer Disguise.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要接触此商人，你必须穿着监工伪装。要获得该伪装，你必须正在进行或已完成任务“黑翼集会所之会”，这样才能从龙鳞教徒身上拾取“戏服碎片”。你需要 5 个戏服碎片来制作监工伪装。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 33.8, 34.6, BLADES_EDGE_MOUNTAINS },
 						["cost"] = { { "i", 31122, 1 } },	-- Overseer Disguise
 						["groups"] = {
@@ -2720,7 +2941,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(20916, {	-- Xerintha Ravenoak <Food & Drink>
-						["description"] = "This vendor stocks a limited supply of these items. Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities. Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
+						["description"] = createLocalizationString({
+							readable = "This vendor stocks a limited supply of these items. Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities. Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
+							constant = "THIS_VENDOR_STOCKS_A_LIMITED_SUPPLY_OF_THESE",
+							export = true,
+							text = {
+								en = "This vendor stocks a limited supply of these items. Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities. Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此商人的这些物品库存有限。联盟玩家可以从萨萨·焊井处购买，她出售的数量不限。不想等待泽林莎补货的部落玩家可以完成任务 |cFFefc400莫克纳萨小吃|r，该任务会奖励这两个配方。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 62.4, 40.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
 							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
@@ -2828,7 +3066,24 @@ root(ROOTS.Zones, {
 						["cr"] = 21300,	-- Fel Corrupter
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31942, {	-- Deathwing Brood Cloak
-						["description"] = "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
+						["description"] = createLocalizationString({
+							readable = "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
+							constant = "YOU_NEED_TO_SUMMON_THE_FOUR_DRAGONS_FOR_35",
+							export = true,
+							text = {
+								en = "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你需要用 35 个埃匹希斯碎片召唤四条巨龙，并拾取鳞片来拼合披风。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32684, 1 },	-- Insidion's Ebony Scale
@@ -3217,7 +3472,24 @@ root(ROOTS.Zones, {
 						},
 					})),
 					o(184595, {	-- Ethereum Stasis Chamber
-						["description"] = "You can use either of the listed keys to open an Ethereum Stasis Chamber.",
+						["description"] = createLocalizationString({
+							readable = "You can use either of the listed keys to open an Ethereum Stasis Chamber.",
+							constant = "YOU_CAN_USE_EITHER_OF_THE_LISTED_KEYS_TO_OPEN",
+							export = true,
+							text = {
+								en = "You can use either of the listed keys to open an Ethereum Stasis Chamber.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你可以使用列出的任意一把钥匙打开一个以太静滞舱。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 51.2, 11.6, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 							{ 49.6, 15.8, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)

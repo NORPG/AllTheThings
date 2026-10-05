@@ -172,7 +172,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(245398) },	-- Tusked Fireplace (DECOR!)
 			}),
 			q(93111, {	-- Decor Treasure Hunt
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 53.7, 57.4, RAZORWIND_SHORES },	-- qg
 					{ 40.0, 73.0, RAZORWIND_SHORES },	-- Cave entrance
@@ -189,7 +189,24 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(246868) },	-- Wide Hide-Covered Bench (DECOR!)
 			}),
 			q(93132, {	-- Decor Treasure Hunt
-				["description"] = "Under the water.",
+				["description"] = createLocalizationString({
+					readable = "Under the water.",
+					constant = "UNDER_THE_WATER",
+					export = true,
+					text = {
+						en = "Under the water.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在水下。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 42.6, 50.4, RAZORWIND_SHORES },	-- Treasure
 				["groups"] = { i(246869) },	-- Razorwind Wall Mirror (DECOR!)
 			}),
@@ -250,7 +267,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				["groups"] = { i(243495) },	-- Elegant Padded Divan (DECOR!)
 			}),
 			q(93150, {	-- Decor Treasure Hunt
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 53.7, 57.4, RAZORWIND_SHORES },	-- qg
 					{ 39.7, 57.8, RAZORWIND_SHORES },	-- Cave entrance
@@ -282,7 +299,24 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 				},
 			}),
 			n(255326, {	-- "Len" Splinthoof <Decor Vendor>
-				["description"] = "Inside the cave or outside fishing.",
+				["description"] = createLocalizationString({
+					readable = "Inside the cave or outside fishing.",
+					constant = "INSIDE_THE_CAVE_OR_OUTSIDE_FISHING",
+					export = true,
+					text = {
+						en = "Inside the cave or outside fishing.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴内，或在外面钓鱼。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 39.8, 70.2, RAZORWIND_SHORES },
 					{ 39.9, 73.3, RAZORWIND_SHORES }

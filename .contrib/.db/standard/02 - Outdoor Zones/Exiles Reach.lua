@@ -1231,7 +1231,24 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 			}),
 			q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
-				["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+				["description"] = createLocalizationString({
+					readable = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+					constant = "THIS_QUEST_STARTS_THE_BATTLE_FOR_AZEROTH",
+					export = true,
+					text = {
+						en = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "对于来自流放者离岛的玩家，此任务会开启《争霸艾泽拉斯》战役。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
 				["qg"] = 163219,	-- Captain Garrick
 				["coord"] = { 85.2, 32.1, STORMWIND_CITY },
@@ -1382,7 +1399,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 			}),
 			q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)
-				["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+				["description"] = "~L.THIS_QUEST_STARTS_THE_BATTLE_FOR_AZEROTH",
 				["sourceQuest"] = 60360,	-- An Urgent Meeting
 				["qg"] = 168431,	-- Warlord Breka Grimaxe
 				["coord"] = { 48.3, 71.4, ORGRIMMAR },

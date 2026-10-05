@@ -87,7 +87,24 @@ root(ROOTS.Zones, {
 					o(214325, {	-- Forgotten Lockbox
 						["questID"] = 31867,	-- Forgotten Lockbox
 						["coord"] = { 54.66, 71.67, THE_VEILED_STAIR },
-						["description"] = "Located on a barrel on the second floor of the inn",
+						["description"] = createLocalizationString({
+							readable = "Located on a barrel on the second floor of the inn",
+							constant = "LOCATED_ON_A_BARREL_ON_THE_SECOND_FLOOR_OF_THE",
+							export = true,
+							text = {
+								en = "Located on a barrel on the second floor of the inn",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于旅店二楼的木桶上",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					o(213845, {	-- The Hammer of Folly
 						["questID"] = 31428,

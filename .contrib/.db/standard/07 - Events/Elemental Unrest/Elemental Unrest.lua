@@ -400,7 +400,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(25181, {	-- Tablets of Fire
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 2 of the Elemental Unrest.",
+					["description"] = createLocalizationString({
+						readable = "Activated with phase 2 of the Elemental Unrest.",
+						constant = "ACTIVATED_WITH_PHASE_2_OF_THE_ELEMENTAL_UNREST",
+						export = true,
+						text = {
+							en = "Activated with phase 2 of the Elemental Unrest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在元素骚乱的第 2 阶段激活。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["qg"] = 39283,	-- Earthmender Norsala
 					["coord"] = { 52.2, 73.2, ORGRIMMAR },
@@ -418,7 +435,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(25180, {	-- Tablets of the Earth
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 2 of the Elemental Unrest.",
+					["description"] = "~L.ACTIVATED_WITH_PHASE_2_OF_THE_ELEMENTAL_UNREST",
 					-- #endif
 					["qg"] = 45702,	-- Erunak Stonespeaker <The Earthen Ring>
 					["coord"] = { 62.5, 75.5, STORMWIND_CITY },
@@ -435,7 +452,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(27473, {	-- What's Shaking in Ironforge
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 2 of the Elemental Unrest.",
+					["description"] = "~L.ACTIVATED_WITH_PHASE_2_OF_THE_ELEMENTAL_UNREST",
 					-- #endif
 					["qgs"] = {
 						45341,	-- Earthen Ring Emissary
@@ -448,7 +465,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				-- Phase Three Quests
 				q(27566, {	-- A Gathering in Outland (A)
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 3 of the Elemental Unrest.",
+					["description"] = createLocalizationString({
+						readable = "Activated with phase 3 of the Elemental Unrest.",
+						constant = "ACTIVATED_WITH_PHASE_3_OF_THE_ELEMENTAL_UNREST",
+						export = true,
+						text = {
+							en = "Activated with phase 3 of the Elemental Unrest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在元素骚乱的第 3 阶段激活。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["qg"] = 45341,	-- Earthen Ring Emissary
 					["maps"] = { NAGRAND },
@@ -456,7 +490,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(27572, {	-- A Gathering in Outland (H)
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 3 of the Elemental Unrest.",
+					["description"] = "~L.ACTIVATED_WITH_PHASE_3_OF_THE_ELEMENTAL_UNREST",
 					-- #endif
 					["qg"] = 39283,	-- Earthmender Norsala
 					["coord"] = { 52.2, 73.2, ORGRIMMAR },
@@ -567,7 +601,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(27741, {	-- Show Me Your Papers (A)
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 3 of the Elemental Unrest.",
+					["description"] = "~L.ACTIVATED_WITH_PHASE_3_OF_THE_ELEMENTAL_UNREST",
 					-- #endif
 					["qg"] = 12481,	-- Justine Demalier
 					["coord"] = { 62.2, 71.6, STORMWIND_CITY },
@@ -588,7 +622,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				}),
 				q(27801, {	-- Show Me Your Papers (H)
 					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 3 of the Elemental Unrest.",
+					["description"] = "~L.ACTIVATED_WITH_PHASE_3_OF_THE_ELEMENTAL_UNREST",
 					-- #endif
 					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
@@ -638,7 +672,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 			}),
 			-- #else
 			n(COMMON_BOSS_DROPS, {
-				["description"] = "The following items drop from the elemental bosses during the Elemental Unrest World Event. Since they aren't in the game yet and the items are, we are using this header as a placeholder to show you what will be available when they are available.",
+				["description"] = createLocalizationString({
+					readable = "The following items drop from the elemental bosses during the Elemental Unrest World Event. Since they aren't in the game yet and the items are, we are using this header as a placeholder to show you what will be available when they are available.",
+					constant = "THE_FOLLOWING_ITEMS_DROP_FROM_THE_ELEMENTAL",
+					export = true,
+					text = {
+						en = "The following items drop from the elemental bosses during the Elemental Unrest World Event. Since they aren't in the game yet and the items are, we are using this header as a placeholder to show you what will be available when they are available.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以下物品在元素骚乱世界事件期间由元素首领掉落。由于它们尚未加入游戏而物品已经存在，我们用这个标题作为占位，向你展示它们可用时将提供什么。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					-- Crown Princess Theradras
 					i(53496),	-- Barrier of the Earth Princess

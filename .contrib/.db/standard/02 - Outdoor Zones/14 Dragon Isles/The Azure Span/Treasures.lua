@@ -19,14 +19,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381362, {	-- Chunk of Sculpture
 				["coord"] = { 60.1, 60.1, THE_AZURE_SPAN },
-				["description"] = "Behind the dragon statue next to the mountain.",
+				["description"] = createLocalizationString({
+					readable = "Behind the dragon statue next to the mountain.",
+					constant = "BEHIND_THE_DRAGON_STATUE_NEXT_TO_THE_MOUNTAIN",
+					export = true,
+					text = {
+						en = "Behind the dragon statue next to the mountain.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在山旁的龙雕像后面。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(199895),	-- Chunk of Sculpture
 				},
 			}),
 			o(381356, {	-- Coldwashed Dragonclaw
 				["coord"] = { 47.1, 38.9, THE_AZURE_SPAN },
-				["description"] = "Underwater.",
+				["description"] = "~L.UNDERWATER",
 				["groups"] = {
 					i(199843),	-- Coldwashed Dragonclaw
 				},
@@ -74,25 +91,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["groups"] = {
 					i(201368, {	-- Brackenhide Hollow Barbslinger
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = createLocalizationString({
+							readable = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+							constant = "DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
+							export = true,
+							text = {
+								en = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "由蕨皮谷周围的豺狼人生物或覆满腐朽的宝箱掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(201363, {	-- Brackenhide Hollow Maul
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = "~L.DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
 					}),
 					i(201365, {	-- Brackenhide Gnoll Guard
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = "~L.DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
 					}),
 					i(201370, {	-- Brackenhide Skullcracker
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = "~L.DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
 					}),
 					i(201369, {	-- Hollow Greatwood Pestilence
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = "~L.DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
 					}),
 					i(201367, {	-- Hollow Hunter's Sticker
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = "~L.DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
 					}),
 					i(194312, {	-- Pattern: Gnoll Tent (RECIPE!)
-						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
+						["description"] = "~L.DROPS_FROM_GNOLL_CREATURES_OR_DECAY_COVERED",
 					}),
 				},
 			}),
@@ -119,7 +153,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(381511, {	-- Harpoon Head
-				["description"] = "On the anvil in the Tuskaar area.",
+				["description"] = createLocalizationString({
+					readable = "On the anvil in the Tuskaar area.",
+					constant = "ON_THE_ANVIL_IN_THE_TUSKAAR_AREA",
+					export = true,
+					text = {
+						en = "On the anvil in the Tuskaar area.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在塔斯卡尔区域的铁砧上。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 12.9, 48.7, THE_AZURE_SPAN },
 				["groups"] = {
 					i(200076),	-- Harpoon Head
@@ -136,14 +187,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(381513, {	-- Old Pickaxe
-				["description"] = "Visible when reaching 50 Fishing Skill (including Equipment Bonuses).",
+				["description"] = createLocalizationString({
+					readable = "Visible when reaching 50 Fishing Skill (including Equipment Bonuses).",
+					constant = "VISIBLE_WHEN_REACHING_50_FISHING_SKILL",
+					export = true,
+					text = {
+						en = "Visible when reaching 50 Fishing Skill (including Equipment Bonuses).",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "达到 50 点钓鱼技能（包括装备加成）时可见。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 18.9, 24.3, THE_AZURE_SPAN },
 				["groups"] = {
 					i(200078),	-- Pickaxe Blade
 				},
 			}),
 			n(195373, {	-- Pepper Hammer
-				["description"] = "Use nearby Stick and Tree Sap to lure the bird.",
+				["description"] = createLocalizationString({
+					readable = "Use nearby Stick and Tree Sap to lure the bird.",
+					constant = "USE_NEARBY_STICK_AND_TREE_SAP_TO_LURE_THE_BIRD",
+					export = true,
+					text = {
+						en = "Use nearby Stick and Tree Sap to lure the bird.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "使用附近的树枝和树液来引诱这只鸟。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 26.5, 46.3, THE_AZURE_SPAN },
 				["questID"] = 70441,
 				["groups"] = {
@@ -158,7 +243,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(383660, {	-- Salt Crystal
-				["description"] = "In a cave.",
+				["description"] = createLocalizationString({
+					readable = "In a cave.",
+					constant = "IN_A_CAVE_2",
+					export = true,
+					text = {
+						en = "In a cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴中。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 11.6, 41.0, THE_AZURE_SPAN },
 				["groups"] = {
 					i(201033),	-- Magical Salt Crystal
@@ -182,7 +284,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381353, {	-- Stone Dragontooth
 				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
-				["description"] = "Next to the dragon statue on the ground.",
+				["description"] = createLocalizationString({
+					readable = "Next to the dragon statue on the ground.",
+					constant = "NEXT_TO_THE_DRAGON_STATUE_ON_THE_GROUND",
+					export = true,
+					text = {
+						en = "Next to the dragon statue on the ground.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在地面上的巨龙雕像旁边。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(199842),	-- Stone Dragontooth
 				},
@@ -228,7 +347,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381354, {	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
-				["description"] = "Underneath the back left foot of the dragon statue.",
+				["description"] = createLocalizationString({
+					readable = "Underneath the back left foot of the dragon statue.",
+					constant = "UNDERNEATH_THE_BACK_LEFT_FOOT_OF_THE_DRAGON",
+					export = true,
+					text = {
+						en = "Underneath the back left foot of the dragon statue.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在巨龙雕像左后脚的下方。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(199840),	-- Wrapped Gold Band
 				},

@@ -150,7 +150,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					1224923	-- Twilight's Madness
 				),
-				["description"] = "The following can drop from the final boss of any heroic dungeon on Protocol Twilight difficulty.",
+				["description"] = createLocalizationString({
+					readable = "The following can drop from the final boss of any heroic dungeon on Protocol Twilight difficulty.",
+					constant = "THE_FOLLOWING_CAN_DROP_FROM_THE_FINAL_BOSS_OF",
+					export = true,
+					text = {
+						en = "The following can drop from the final boss of any heroic dungeon on Protocol Twilight difficulty.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以下物品可以在暮光协议难度下任意英雄地下城的最终首领处掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = PROTOCOL_MAPS,
 				["crs"] = PROTOCOL_LAST_BOSSES,
 				["groups"] = {
@@ -175,7 +192,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					1224923	-- Twilight's Madness
 				),
-				["description"] = "The following can drop from specific final bosses in heroic dungeons on Protocol Twilight difficulty or from the new End Time, Hour of Twilight, or Well of Eternity heroic dungeons.",
+				["description"] = createLocalizationString({
+					readable = "The following can drop from specific final bosses in heroic dungeons on Protocol Twilight difficulty or from the new End Time, Hour of Twilight, or Well of Eternity heroic dungeons.",
+					constant = "THE_FOLLOWING_CAN_DROP_FROM_SPECIFIC_FINAL",
+					export = true,
+					text = {
+						en = "The following can drop from specific final bosses in heroic dungeons on Protocol Twilight difficulty or from the new End Time, Hour of Twilight, or Well of Eternity heroic dungeons.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以下物品可以在暮光协议难度下的英雄地下城的特定最终首领处掉落，也可以在新的“时光之末”、“暮光之时”或“永恒之井”英雄地下城中掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = HOUR_OF_TWILIGHT_DUNGEON_MAPS,	-- End Time, Hour of Twilight, Well of Eternity
 				["crs"] = HOUR_OF_TWILIGHT_DUNGEON_LAST_BOSSES,
 				["groups"] = {
@@ -278,7 +312,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 						1224923	-- Twilight's Madness
 					),
-					["description"] = "Two Obsidian Fragments drop per boss in Protocol Twilight and the final boss of each dungeon will drop an extra three Obsidian Fragments if players have defeated all of the other bosses in the dungeon.",
+					["description"] = createLocalizationString({
+						readable = "Two Obsidian Fragments drop per boss in Protocol Twilight and the final boss of each dungeon will drop an extra three Obsidian Fragments if players have defeated all of the other bosses in the dungeon.",
+						constant = "TWO_OBSIDIAN_FRAGMENTS_DROP_PER_BOSS_IN",
+						export = true,
+						text = {
+							en = "Two Obsidian Fragments drop per boss in Protocol Twilight and the final boss of each dungeon will drop an extra three Obsidian Fragments if players have defeated all of the other bosses in the dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在暮光协议中，每个首领都会掉落两块黑曜石碎片；如果玩家已击败副本中的所有其他首领，每个副本的最终首领还会额外掉落三块黑曜石碎片。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = PROTOCOL_MAPS,
 					["crs"] = PROTOCOL_BOSSES,
 				}),

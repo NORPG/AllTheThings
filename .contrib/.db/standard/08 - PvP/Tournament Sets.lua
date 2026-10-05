@@ -11,7 +11,24 @@ TOURNAMENT_GEAR = createHeader({
 });
 
 root(ROOTS.PVP, pvp(n(TOURNAMENT_GEAR, {
-	["description"] = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
+	["description"] = createLocalizationString({
+		readable = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
+		constant = "THESE_ITEMS_WERE_AVAILABLE_DURING_WARLORDS_OF",
+		export = true,
+		text = {
+			en = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这些物品在德拉诺之王期间可以获得，但只是为参加战争游戏娱乐的玩家提供物品等级加成。它们无法被幻化，也不能用于战争游戏以外的任何用途。",
+			-- TODO: tw = "",
+		},
+	}),
 	["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 	["groups"] = {
 		i(117714),	-- Tournament Gladiator's Choker of Cruelty

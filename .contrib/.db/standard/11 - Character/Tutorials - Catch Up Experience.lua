@@ -6,7 +6,24 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 		["icon"] = 236712,
 		["maps"] = { 2451 },	-- Arathi Highlands (Catch Up Experience)
 		["lore"] = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character.",
-		["description"] = "Accessible through Tutorials tab of your Adventure Guide.\n\n|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
+		["description"] = createLocalizationString({
+			readable = "Accessible through Tutorials tab of your Adventure Guide.\n\n|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
+			constant = "ACCESSIBLE_THROUGH_TUTORIALS_TAB_OF_YOUR",
+			export = true,
+			text = {
+				en = "Accessible through Tutorials tab of your Adventure Guide.\n\n|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "可通过冒险指南的教程标签页进入。\n\n|cFFE50D12警告：|r 试图飞出该区域会重置整个体验。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			n(QUESTS, sharedData({
 				["isRepeatable"] = true,

@@ -23,7 +23,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["groups"] = {
 						i(202412, {	-- Wildfire (PET!)
-							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+							["description"] = createLocalizationString({
+								readable = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+								constant = "WEAKEN_THE_BOSS_BY_DEFEATING_BATTLE_PETS_IN_THE",
+								export = true,
+								text = {
+									en = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "击败周围区域内的战斗宠物可以削弱首领。只有稀有版本的首领才会给予这只宠物。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				})),
@@ -38,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["groups"] = {
 						i(202413, {	-- Vortex (PET!)
-							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+							["description"] = "~L.WEAKEN_THE_BOSS_BY_DEFEATING_BATTLE_PETS_IN_THE",
 						}),
 					},
 				})),
@@ -53,7 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["groups"] = {
 						i(202407, {	-- Flow (PET!)
-							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+							["description"] = "~L.WEAKEN_THE_BOSS_BY_DEFEATING_BATTLE_PETS_IN_THE",
 						}),
 					},
 				})),
@@ -68,7 +85,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["groups"] = {
 						i(202411, {	-- Tremblor (PET!)
-							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+							["description"] = "~L.WEAKEN_THE_BOSS_BY_DEFEATING_BATTLE_PETS_IN_THE",
 						}),
 					},
 				})),

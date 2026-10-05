@@ -1070,7 +1070,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { REMOVED_3_3_3 },
 				}),
 				i(185048, {	-- Shoveltusk Soul
-					["description"] = "Available during Brawl: Comp Stomp",
+					["description"] = createLocalizationString({
+						readable = "Available during Brawl: Comp Stomp",
+						constant = "AVAILABLE_DURING_BRAWL_COMP_STOMP",
+						export = true,
+						text = {
+							en = "Available during Brawl: Comp Stomp",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在乱斗：痛扁电脑期间可用",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_9_0_5 },
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				}),

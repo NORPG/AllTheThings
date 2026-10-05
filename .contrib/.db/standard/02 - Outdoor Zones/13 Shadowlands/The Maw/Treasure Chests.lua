@@ -31,7 +31,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			o(369129, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Nilganihmaht's Gold Band
-				["description"] = "Start climbing up at |cFFFFFFFF18.6, 39.0|r.",
+				["description"] = createLocalizationString({
+					readable = "Start climbing up at |cFFFFFFFF18.6, 39.0|r.",
+					constant = "START_CLIMBING_UP_AT_CFFFFFFFF18_6_39_0_R",
+					export = true,
+					text = {
+						en = "Start climbing up at |cFFFFFFFF18.6, 39.0|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "从 |cFFFFFFFF18.6, 39.0|r 处开始向上攀爬。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 19.2, 32.3, THE_MAW },
 				["groups"] = {
 					i(186608),	-- Nilganihmaht's Gold Band
@@ -44,7 +61,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			o(369145, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Helgarde Supply Cache
-				["description"] = "This chest does not glow or sparkle. After the first loot of these chests, which will drop the key, they are repeatable and appear to just drop Stygia.",
+				["description"] = createLocalizationString({
+					readable = "This chest does not glow or sparkle. After the first loot of these chests, which will drop the key, they are repeatable and appear to just drop Stygia.",
+					constant = "THIS_CHEST_DOES_NOT_GLOW_OR_SPARKLE_AFTER_THE",
+					export = true,
+					text = {
+						en = "This chest does not glow or sparkle. After the first loot of these chests, which will drop the key, they are repeatable and appear to just drop Stygia.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此宝箱不会发光或闪烁。首次拾取这些宝箱时会掉落钥匙，之后它们可以重复拾取，但似乎只掉落冥殇。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 62.2, 51.6, THE_MAW },
 					{ 65.7, 61.2, THE_MAW },
@@ -79,7 +113,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(369224, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Jeweled Heart of Ezekiel
-				["description"] = "In a small cave.",
+				["description"] = createLocalizationString({
+					readable = "In a small cave.",
+					constant = "IN_A_SMALL_CAVE",
+					export = true,
+					text = {
+						en = "In a small cave.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在一个小洞穴中。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 66.5, 62.2, THE_MAW },
 				["questID"] = 64261,
 				["groups"] = {
@@ -87,7 +138,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(173841, {	-- Paper Scrap
-				["description"] = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
+				["description"] = createLocalizationString({
+					readable = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
+					constant = "A_TINY_CFFFFFFFFPAPER_SCRAP_R_ON_SOME_ROCKS",
+					export = true,
+					text = {
+						en = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "岩石上有一小片|cFFFFFFFF纸片|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 19.3, 33.5, THE_MAW },
 				["groups"] = {
 					i(183063),	-- Words of the Warden
@@ -128,7 +196,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(369144, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- The Harrower's Key Ring
-				["description"] = "Entrance at 66.9, 55.9.\n\nKey Ring is hanging on the right side wall.",
+				["description"] = createLocalizationString({
+					readable = "Entrance at 66.9, 55.9.\n\nKey Ring is hanging on the right side wall.",
+					constant = "ENTRANCE_AT_66_9_55_9_KEY_RING_IS_HANGING_ON",
+					export = true,
+					text = {
+						en = "Entrance at 66.9, 55.9.\n\nKey Ring is hanging on the right side wall.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "入口位于 66.9, 55.9。\n\n钥匙环挂在右侧的墙上。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 65.6, 60.0, THE_MAW },	-- Key Ring
 					{ 66.9, 55.9, THE_MAW },	-- Entrance
@@ -139,7 +224,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(173837, {	-- Torture Implements
-				["description"] = "Once you are inside the cave, you can find the box of |cFFFFFFFFTorture Implements|r at the back, around |cFFFFFFFF72.8, 16.9|r.",
+				["description"] = createLocalizationString({
+					readable = "Once you are inside the cave, you can find the box of |cFFFFFFFFTorture Implements|r at the back, around |cFFFFFFFF72.8, 16.9|r.",
+					constant = "ONCE_YOU_ARE_INSIDE_THE_CAVE_YOU_CAN_FIND_THE",
+					export = true,
+					text = {
+						en = "Once you are inside the cave, you can find the box of |cFFFFFFFFTorture Implements|r at the back, around |cFFFFFFFF72.8, 16.9|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "进入洞穴后，你可以在最里面找到装有 |cFFFFFFFF拷问道具|r 的箱子，位置大约在 |cFFFFFFFF72.8, 16.9|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 27.7, 20.2, THE_MAW },
 				["groups"] = {
 					i(183060),	-- Box of Torments
@@ -158,7 +260,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			o(368663, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Lil'Abom's Right Hand
-				["description"] = "At the back of the cave, behind a rock on the left side.",
+				["description"] = createLocalizationString({
+					readable = "At the back of the cave, behind a rock on the left side.",
+					constant = "AT_THE_BACK_OF_THE_CAVE_BEHIND_A_ROCK_ON_THE",
+					export = true,
+					text = {
+						en = "At the back of the cave, behind a rock on the left side.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴深处，左侧一块岩石后面。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 38.5, 58.5, THE_MAW },
 				["questID"] = 64008,
 				["isDaily"] = true,

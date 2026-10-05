@@ -277,7 +277,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				{ "i", 22166 },	-- Gift of Adoration: Undercity
 				{ "i", 22157 },	-- Pledge of Adoration: Undercity
 			},
-			["description"] = "These items are contained within the Gifts and Pledges of Adoration.",
+			["description"] = createLocalizationString({
+				readable = "These items are contained within the Gifts and Pledges of Adoration.",
+				constant = "THESE_ITEMS_ARE_CONTAINED_WITHIN_THE_GIFTS_AND",
+				export = true,
+				text = {
+					en = "These items are contained within the Gifts and Pledges of Adoration.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品包含在爱慕的礼物和信物中。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(21813, {	-- Bag of Heart Candies
 					i(21816),	-- Heart Candy (Be Mine!)
@@ -318,7 +335,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			},
 		}),
 		n(ZONE_DROPS, {
-			["description"] = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
+			["description"] = createLocalizationString({
+				readable = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
+				constant = "APPLY_A_PERFUME_OR_COLOGNE_BUFF_TO_YOUR",
+				export = true,
+				text = {
+					en = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "给你的角色施加香水或古龙水增益，然后与主城中的一名卫兵交谈，即可获得这些物品中的一件。每个容器内独有的物品都会在其中列出。",
+					-- TODO: tw = "",
+				},
+			}),
 			["cost"] = {
 				{ "i", 21833, 1 },	-- Cologne Bottle
 				{ "i", 21829, 1 },	-- Perfume Bottle

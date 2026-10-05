@@ -810,7 +810,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 
 				-- The Ring of Blood
 				q(36219, {	-- Garrison Campaign: The Ring of Blood
-					["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+					["description"] = createLocalizationString({
+						readable = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						constant = "OFFERED_IF_YOU_HAVE_NOT_COMPLETED_CFFFFD700THE",
+						export = true,
+						text = {
+							en = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你尚未在纳格兰完成 |cFFFFD700试炼之环|r，也未在戈尔隆德完成 |cFFFFD700石槌竞技场|r 奖励目标，则提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
 					["coords"] = {
 						{ 34.4, 32.8, LUNARFALL },
@@ -818,7 +835,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(36280, {	-- Garrison Campaign: The Ring of Blood
-					["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+					["description"] = createLocalizationString({
+						readable = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+						constant = "OFFERED_IF_YOU_COMPLETE_CFFFFD700THE_RING_OF",
+						export = true,
+						text = {
+							en = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你在纳格兰完成 |cFFFFD700试炼之环|r，则提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
 					["coords"] = {
 						{ 34.4, 32.8, LUNARFALL },
@@ -826,7 +860,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(36281, {	-- Garrison Campaign: The Ring of Blood
-					["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+					["description"] = createLocalizationString({
+						readable = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						constant = "OFFERED_IF_YOU_COMPLETE_THE_CFFFFD700STONEMAUL",
+						export = true,
+						text = {
+							en = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你在戈尔隆德完成 |cFFFFD700石槌竞技场|r 奖励目标，则提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
 					["coords"] = {
 						{ 34.4, 32.8, LUNARFALL },
@@ -834,7 +885,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(36282, {	-- Garrison Campaign: The Ring of Blood
-					["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+					["description"] = createLocalizationString({
+						readable = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+						constant = "OFFERED_IF_YOU_COMPLETE_CFFFFD700THE_RING_OF_2",
+						export = true,
+						text = {
+							en = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你在纳格兰完成 |cFFFFD700试炼之环|r，并在戈尔隆德完成 |cFFFFD700石槌竞技场|r 奖励目标，则提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 234243 },	-- Overly Gaudy Note
 					["coords"] = {
 						{ 34.4, 32.8, LUNARFALL },
@@ -985,13 +1053,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 
 				-- War Council
 				q(38253, {	-- Garrison Campaign: War Council
-					["description"] = "Automatically granted upon entering your garrison.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted upon entering your garrison.",
+						constant = "AUTOMATICALLY_GRANTED_UPON_ENTERING_YOUR",
+						export = true,
+						text = {
+							en = "Automatically granted upon entering your garrison.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "进入你的要塞时自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 36615,	-- My Very Own Castle
 					["altQuests"] = { 40418 },	-- To Tanaan!
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38567, {	-- Garrison Campaign: War Council
-					["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted upon upgrading your garrison to Rank 3.",
+						constant = "AUTOMATICALLY_GRANTED_UPON_UPGRADING_YOUR",
+						export = true,
+						text = {
+							en = "Automatically granted upon upgrading your garrison to Rank 3.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "将你的要塞升级到 3 级后自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 36614,	-- My Very Own Fortress
 					["altQuests"] = { 40417 },	-- To Tanaan!
 					["races"] = HORDE_ONLY,
@@ -1088,7 +1190,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			}),
 			n(SPECIAL, {
 				container(123975, {	-- Greater Bounty Spoils
-					["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
+					["description"] = createLocalizationString({
+						readable = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
+						constant = "THIS_SATCHEL_IS_AN_AWARD_FROM_SOME_OF_THE",
+						export = true,
+						text = {
+							en = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此背包是部分每周要塞团队任务奖励的，这些任务可以从高阶督军萨鲁法尔和穆拉丁·铜须处接取。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(114111, {	-- Formidable Armament
 							i(115335),	-- Formidable Axe
@@ -1244,11 +1363,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				i(122191, {	-- Bloody Stack of Invitations
-					["description"] = "Has a chance to be rewarded when killing the target NPC of certain Daily Quests from the special visitor in the Garrison. May also drop on repeat kills while on the respective quest.",
+					["description"] = createLocalizationString({
+						readable = "Has a chance to be rewarded when killing the target NPC of certain Daily Quests from the special visitor in the Garrison. May also drop on repeat kills while on the respective quest.",
+						constant = "HAS_A_CHANCE_TO_BE_REWARDED_WHEN_KILLING_THE",
+						export = true,
+						text = {
+							en = "Has a chance to be rewarded when killing the target NPC of certain Daily Quests from the special visitor in the Garrison. May also drop on repeat kills while on the respective quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在要塞的特殊访客发布某些日常任务时，击杀任务目标 NPC 有几率获得奖励。持有相应任务时重复击杀也可能掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = { i(122190) },	-- Ring of Blood Invitation
 				}),
 				header(HEADERS.NPC,	89763, {	-- Muradin Bronzebeard
-					["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+					["description"] = createLocalizationString({
+						readable = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+						constant = "MURADIN_BRONZEBEARD_HAS_A_CHANCE_TO_SPAWN_IN",
+						export = true,
+						text = {
+							en = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "穆拉丁·铜须每天有几率在你的要塞中刷新，你也可以找到已将他刷出的玩家并加入他们的要塞。他会给予一个每周团队任务，奖励为大型赏金战利品或埃匹希斯水晶。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cr"] = 91196,	-- Muradin Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownFiltered({ ["coord"] = { 34.1, 32.6, LUNARFALL }, ["races"] = ALLIANCE_ONLY, ["qgs"] = { 91196, 89763 }},FILTERFUNC_questID,{
@@ -1355,7 +1508,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 				}),
 				header(HEADERS.NPC, 89753, {	-- High Overlord Saurfang
-					["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+					["description"] = createLocalizationString({
+						readable = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+						constant = "HIGH_OVERLORD_SAURFANG_HAS_A_CHANCE_TO_SPAWN_IN",
+						export = true,
+						text = {
+							en = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "最高督军萨鲁法尔有几率在你的要塞中每日刷新，或者你可以找到已刷出他的玩家并加入其要塞。他会开启一个每周团队任务，奖励为丰厚的赏金战利品或埃匹希斯水晶。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cr"] = 91195,	-- High Overlord Saurfang
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDownFiltered({ ["coord"] = { 40.2, 56.7, FROSTWALL }, ["races"] = HORDE_ONLY, ["qgs"] = { 91195, 89753 }},FILTERFUNC_questID,{
@@ -1993,7 +2163,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(36100, {	-- Building For Professions
-				["description"] = "Becomes available after completing any seconday profession intro quest.",
+				["description"] = createLocalizationString({
+					readable = "Becomes available after completing any seconday profession intro quest.",
+					constant = "BECOMES_AVAILABLE_AFTER_COMPLETING_ANY_SECONDAY",
+					export = true,
+					text = {
+						en = "Becomes available after completing any seconday profession intro quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成任意次要专业的入门任务后开放。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 34586,	-- Establish Your Garrison
 				["qg"] = 77209,	-- Baros Alexston
 				["coords"] = {
@@ -2004,7 +2191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["DisablePartySync"] = true,
 			}),
 			q(37669, {	-- Building For Professions
-				["description"] = "Becomes available after completing any seconday profession intro quest.",
+				["description"] = "~L.BECOMES_AVAILABLE_AFTER_COMPLETING_ANY_SECONDAY",
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
 				["qg"] = 78466,	-- Gazlowe
 				["coords"] = {
@@ -3026,7 +3213,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["groups"] = { garrisonBuilding(61) },	-- Frostwall Mines lvl 1
 			}),
 			q(40418, {	-- To Tanaan!
-				["description"] = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
+				["description"] = createLocalizationString({
+					readable = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
+					constant = "THIS_QUEST_IS_ONLY_AVAILABLE_TO_CHARACTERS_WHO",
+					export = true,
+					text = {
+						en = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务只对在《德拉诺之王》末期至《军团再临》期间使用过角色直升的角色开放。如果你在一个当时没有使用过直升的角色上接到了此任务，请在 Discord 的错误频道中报告！",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 36615,	-- My Very Own Castle
 				["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 				["races"] = ALLIANCE_ONLY,
@@ -3034,7 +3238,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				-- FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
 			}),
 			q(40417, {	-- To Tanaan!
-				["description"] = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
+				["description"] = "~L.THIS_QUEST_IS_ONLY_AVAILABLE_TO_CHARACTERS_WHO",
 				["sourceQuest"] = 36614,	-- My Very Own Fortress
 				["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
 				["races"] = HORDE_ONLY,
@@ -3108,7 +3312,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isDaily"] = true,
 			}),
 			q(37290, {	-- Upgrades in Ashran
-				["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory.",
+				["description"] = createLocalizationString({
+					readable = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory.",
+					constant = "YOU_NEED_TO_HAVE_COMPREHENSIVE_CONSTRUCTION",
+					export = true,
+					text = {
+						en = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你的背包中需要有《全面建造前哨站指南》（物品 116395）。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 78466,	-- Gazlowe
 				["coord"] = { 37.5, 50.3, FROSTWALL },	-- lvl 3
 				["races"] = HORDE_ONLY,

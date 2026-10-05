@@ -3044,7 +3044,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
+					["description"] = "~L.BODLEY_IS_STANDING_RIGHT_OUTSIDE_THE_ENTRANCE",
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
 				},
@@ -3433,7 +3433,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["groups"] = {
 						i(22057, {	-- Brazier of Invocation
 							-- #if AFTER CATA
-							["description"] = "If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",
+							["description"] = "~L.IF_YOU_DID_COMPLETE_THE_QUEST_BEFORE_THE",
 							-- #endif
 						}),
 						i(22344),	-- Brazier of Invocation: User's Manual
@@ -3475,7 +3475,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						}),
 						{
 							["itemID"] = 21986,	-- Banner of Provocation
-							["description"] = "Long after Classic is over, you can use this item to summon Unobtainable bosses and earn quite a bit of gold doing so for Transmog and other purposes. Save this item forever.",
+							["description"] = "~L.LONG_AFTER_CLASSIC_IS_OVER_YOU_CAN_USE_THIS",
 						},
 					},
 				}),

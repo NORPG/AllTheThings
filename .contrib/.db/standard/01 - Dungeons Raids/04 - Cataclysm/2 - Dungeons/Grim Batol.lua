@@ -97,7 +97,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28852, {	-- Soften them Up
-					["description"] = "Blizzard will occasionally mess with the way creatures scales with level, which can make this quest impossible to complete.",
+					["description"] = createLocalizationString({
+						readable = "Blizzard will occasionally mess with the way creatures scales with level, which can make this quest impossible to complete.",
+						constant = "BLIZZARD_WILL_OCCASIONALLY_MESS_WITH_THE_WAY",
+						export = true,
+						text = {
+							en = "Blizzard will occasionally mess with the way creatures scales with level, which can make this quest impossible to complete.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "暴雪偶尔会改动生物随等级缩放的方式，这可能会使此任务无法完成。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 50390 },	-- Velastrasza
 					["coord"] = { 50.0, 50.0, 293 },	-- Grim Batol
 				}),

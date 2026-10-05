@@ -22,7 +22,24 @@ local MageTowerFilter92 =
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	-- Original Legion content
 	n(MAGE_TOWER, bubbleDown(MageTowerFilter, {
-		["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
+		["description"] = createLocalizationString({
+			readable = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
+			constant = "THE_MAGE_TOWER_CHALLENGES_WERE_SOLO_ENCOUNTERS",
+			export = true,
+			text = {
+				en = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "法师塔挑战是《军团再临》期间为游戏中全部 36 个天赋专精设计的单人遭遇战。它们的难度设计得具有挑战性但可以完成。进入这些挑战的途径随 8.0.1 争霸艾泽拉斯前夕补丁被移除。\n\n恭喜所有为了收集这些外观而付出巨大努力的人！\n\n - Crieve (31/36)",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(11611, {	-- A Challenging Look
 				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
@@ -270,7 +287,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	})),
 	-- Rehashed Permanent content
 	n(MAGE_TOWER, bubbleDown(MageTowerFilter92, {
-		["description"] = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
+		["description"] = createLocalizationString({
+			readable = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
+			constant = "THE_MAGE_TOWER_CHALLENGES_ARE_BACK_MORE",
+			export = true,
+			text = {
+				en = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "法师塔挑战回归了，而且比以往更具挑战性。祝大家好运！",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(15309),	-- A Towering Success

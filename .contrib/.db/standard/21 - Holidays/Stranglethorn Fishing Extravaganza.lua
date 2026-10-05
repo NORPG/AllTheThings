@@ -23,7 +23,7 @@ STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 
 root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
     ["timeline"] = { ADDED_1_7_0 },
-	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+	["description"] = "~L.THE_STRANGLETHORN_FISHING_EXTRAVAGANZA_IS_A",
 	["maps"] = {
 		-- #if AFTER CATA
 		NORTHERN_STRANGLETHORN,
@@ -224,7 +224,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 		prof(FISHING, {
 			-- #if AFTER 5.1.0
 			n(SPECIAL, {
-				["description"] = "Tastyfish and the other special event fish can be fished up from any pool within Stranglethorn for two hours once the event has started, even if winners have been found.",
+				["description"] = createLocalizationString({
+					readable = "Tastyfish and the other special event fish can be fished up from any pool within Stranglethorn for two hours once the event has started, even if winners have been found.",
+					constant = "TASTYFISH_AND_THE_OTHER_SPECIAL_EVENT_FISH_CAN",
+					export = true,
+					text = {
+						en = "Tastyfish and the other special event fish can be fished up from any pool within Stranglethorn for two hours once the event has started, even if winners have been found.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "活动开始后的两小时内，可以在荆棘谷内任意鱼群中钓到美味鱼和其他特殊活动鱼类，即使已经产生了获胜者。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "o", 180901 },	-- Bloodsail Wreckage
 					{ "o", 216761 },	-- Mixed Ocean School

@@ -218,7 +218,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				}),
 				n(QUESTS, {
 					q(31611, {	-- The Kun-Lai Kicker
-						["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
+						["description"] = createLocalizationString({
+							readable = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
+							constant = "IF_YOU_DON_T_SEE_QUESTGIVER_IN_THE_VEILED_STAIR",
+							export = true,
+							text = {
+								en = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你在迷雾栈道看不到任务给予者，请到北边的比南村看看。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 63367,	-- Brewmaster Boof
 						["coords"] = {
 							{ 72.6, 93.0, KUN_LAI_SUMMIT },
@@ -415,12 +432,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			n(REWARDS, {
 				-- #if AFTER 6.0.1
-				["description"] = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",
+				["description"] = createLocalizationString({
+					readable = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",
+					constant = "MINI_GUIDE_TO_FARM_BOTH_BOXES_STEP_1_CREATE_A",
+					export = true,
+					text = {
+						en = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "刷取两个宝箱的简要指南：\n第 1 步：创建一个职业试玩角色。\n第 2 步：进入传送门房间前往翡翠林，然后飞往锦绣谷的主城。\n第 3 步：在主城中央接取任务“英雄事迹”。\n第 4 步：飞往知识之座，接取任务“国王与议会”。\n第 5 步：以英雄难度完成“雪中血”场景战役。\n第 6 步：交还任务“国王与议会”，并接取后续任务“大酋长与黑暗”。\n第 7 步：以普通或英雄难度完成“潘达利亚的黑暗之心”场景战役。\n第 8 步：交还所有任务，打开所有宝箱，登出并删除试玩角色。重复第 1-8 步。\n每小时可以创建 4 个试玩角色，每周 12 个（按现实时间计算）。\n额外提示：试玩角色还可以用来击杀永恒岛上的世界首领。在知识之座入口处与克罗米交谈即可免费传送。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["groups"] = {
 					-- #if MOP
 					applyclassicphase(MOP_PHASE_ONE, container(89613, {	-- Cache of Treasures
-						["description"] = "Rewarded for completing a random scenario.",
+						["description"] = createLocalizationString({
+							readable = "Rewarded for completing a random scenario.",
+							constant = "REWARDED_FOR_COMPLETING_A_RANDOM_SCENARIO",
+							export = true,
+							text = {
+								en = "Rewarded for completing a random scenario.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成随机场景战役后奖励。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
 						-- #if ANYCLASSIC
 						["OnUpdate"] = REMOVED_WITH_LANDFALL_ONUPDATE,
@@ -829,7 +880,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					})),
 					-- #endif
 					applyclassicphase(MOP_PHASE_ESCALATION, container(98133, {	-- Greater Cache of Treasures
-						["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",
+						["description"] = createLocalizationString({
+							readable = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",
+							constant = "REWARDED_FOR_COMPLETING_CFFFFD700THE_KING_AND",
+							export = true,
+							text = {
+								en = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成任务|cFFFFD700国王与议会|r和|cFFFFD700大酋长与黑暗|r后奖励。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #if AFTER WOD
 						["providers"] = {
 							{ "i", 92813 },	-- Greater Cache of Treasures
@@ -844,14 +912,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 									-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 									-- #if BEFORE 5.5.3
-									["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+									["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
 									-- #endif
 								}),
 								i(97982, {	-- Vial of Reddish Ooze (QI!)
 									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 									-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 									-- #if BEFORE 5.5.3
-									["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+									["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
 									-- #endif
 								}),
 							}),
@@ -1151,7 +1219,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						},
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, container(98546, {	-- Bulging Heroic Cache of Treasures
-						["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",
+						["description"] = createLocalizationString({
+							readable = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",
+							constant = "REWARDED_FOR_COMPLETING_CFFFFD700HEROIC_DEEDS_R",
+							export = true,
+							text = {
+								en = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成任务|cFFFFD700英雄事迹|r后奖励。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_3_0 },
 						-- no longer available to queue random scenarios post 9.0 squish
 						["groups"] = {

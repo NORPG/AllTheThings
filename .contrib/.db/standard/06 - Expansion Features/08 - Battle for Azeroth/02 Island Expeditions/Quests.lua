@@ -252,7 +252,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- TODO: Verify map/npc id
 			}),
 			q(53172, {	-- Venture Co. Business Plan
-				["description"] = "Pats along the road between The Crossroads and Ratchet.",
+				["description"] = createLocalizationString({
+					readable = "Pats along the road between The Crossroads and Ratchet.",
+					constant = "PATS_ALONG_THE_ROAD_BETWEEN_THE_CROSSROADS_AND",
+					export = true,
+					text = {
+						en = "Pats along the road between The Crossroads and Ratchet.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在十字路口与棘齿城之间的道路上来回走动。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "i", 163479 },	-- Venture Co. Business Plan
 					{ "n", 3658 },	-- Lizzarik

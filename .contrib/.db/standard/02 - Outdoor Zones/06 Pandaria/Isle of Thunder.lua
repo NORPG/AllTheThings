@@ -76,7 +76,24 @@ root(ROOTS.Zones, {
 					achpart(8109, 8110),	-- The Mogu Below-gu
 					ach(8110),	-- These Mogu Have Gotta Go-gu (automated)
 					ach(8111, {	-- This Isn't Even My Final Form
-						["description"] = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
+						["description"] = createLocalizationString({
+							readable = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
+							constant = "KILL_DRAKKARI_GOD_HULK_PATROLLING_ON_FOOT_PATH",
+							export = true,
+							text = {
+								en = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击杀在坐标附近小路上巡逻的达卡莱神之巨怪，然后在附近喝下赞达拉药水。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 36.6, 70.2, ISLE_OF_THUNDER },
 						["providers"] = {
 							{ "n", 69200 },	-- Drakkari God-Hulk
@@ -637,13 +654,47 @@ root(ROOTS.Zones, {
 								["coord"] = { 53.6, 19.2, 518 },	-- Thunder King's Citadel
 								["groups"] = {
 									i(95497, {	-- Burial Trove Key
-										["description"] = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
+										["description"] = createLocalizationString({
+											readable = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
+											constant = "YOU_ARE_GIVEN_ONE_KEY_FOR_TURNING_IN_THE_QUEST",
+											export = true,
+											text = {
+												en = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "交任务本身会给你一把钥匙，其余的可以在堡垒内各处散落的宝箱中找到。",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 									i(95491),	-- Tattered Historical Parchments
 								},
 							}),
 							n(70321, {	-- Tenwu of the Red Smoke
-								["description"] = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
+								["description"] = createLocalizationString({
+									readable = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
+									constant = "TALKING_TO_TENWU_OF_THE_RED_SMOKE_WILL_END_YOUR",
+									export = true,
+									text = {
+										en = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "与红雾腾武交谈会结束你的限时挑战，并额外获得一把墓葬宝库钥匙作为奖励。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 52.6, 10.2, 518 },	-- Thunder King's Citadel
 							}),
 							n(TREASURES, {
@@ -762,14 +813,48 @@ root(ROOTS.Zones, {
 						i(94130),	-- Incantation of Haqin
 						i(95350),	-- Incantation of Vu
 						i(94221, {	-- Shan'ze Ritual Stone
-							["description"] = "You will need 3 stones to summon special rares at their specific spawn points.",
+							["description"] = createLocalizationString({
+								readable = "You will need 3 stones to summon special rares at their specific spawn points.",
+								constant = "YOU_WILL_NEED_3_STONES_TO_SUMMON_SPECIAL_RARES",
+								export = true,
+								text = {
+									en = "You will need 3 stones to summon special rares at their specific spawn points.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你需要 3 块石头才能在特定刷新点召唤特殊稀有。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(97268, {	-- Tome of Valor
 							["timeline"] = { ADDED_5_2_0, REMOVED_5_3_0 },
 						}),
 						-- TODO: maybe make it more clear this is a 'looted' trigger via built-in handling?
 						header(HEADERS.Item, 94221, {	-- Shan'ze Ritual Stone [looted]
-							["description"] = "Whether this will be lootable from Rares.",
+							["description"] = createLocalizationString({
+								readable = "Whether this will be lootable from Rares.",
+								constant = "WHETHER_THIS_WILL_BE_LOOTABLE_FROM_RARES",
+								export = true,
+								text = {
+									en = "Whether this will be lootable from Rares.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此物品能否从稀有身上拾取。",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 32610,
 							["isDaily"] = true,
 						}),
@@ -898,11 +983,11 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(95566),	-- Ra'sha's Sacrificial Dagger
 							i(94158, {	-- Big Bag of Zandalari Supplies
-								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
+								["description"] = "~L.CAN_CONTAIN_ALL_SORTS_OF_CRAFTING_REAGENTS_GEMS",
 								["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 							}),
 							i(94159, {	-- Small Bag of Zandalari Supplies
-								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
+								["description"] = "~L.CAN_CONTAIN_ALL_SORTS_OF_HERBS_ORE_AND_CLOTH",
 							}),
 						},
 					}),
@@ -972,7 +1057,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(69471, {	-- Spirit of Warlord Teng
-						["description"] = "Located underneath the building.",
+						["description"] = createLocalizationString({
+							readable = "Located underneath the building.",
+							constant = "LOCATED_UNDERNEATH_THE_BUILDING",
+							export = true,
+							text = {
+								en = "Located underneath the building.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于建筑物下方。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 35.6, 63.8, ISLE_OF_THUNDER },
 						["crs"] = { 70201 },	-- Spiritual Ritual Stone
 						["groups"] = {

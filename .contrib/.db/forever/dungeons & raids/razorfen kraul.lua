@@ -99,7 +99,24 @@ root(ROOTS.Instances, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Treshala's Pendant
 							["provider"] = { "i", 5825 },	-- Treshala's Pendant
-							["description"] = "Drops from any creature in the Dungeon.",
+							["description"] = createLocalizationString({
+								readable = "Drops from any creature in the Dungeon.",
+								constant = "DROPS_FROM_ANY_CREATURE_IN_THE_DUNGEON",
+								export = true,
+								text = {
+									en = "Drops from any creature in the Dungeon.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "地下城中的任何生物都会掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(6751),	-- Mourning Shawl
 						i(6752),	-- Lancer Boots
@@ -160,7 +177,24 @@ root(ROOTS.Instances, {
 				i(1978),	-- Wolfclaw Gloves
 			}),
 			n(6168, {	-- Roogug
-				["description"] = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
+				["description"] = createLocalizationString({
+					readable = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
+					constant = "WARRIORS_WILL_NEED_TO_KILL_THIS_BOSS_FOR_THEIR",
+					export = true,
+					text = {
+						en = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "战士需要击杀这个首领来完成他们的种族护甲任务。如果你是队伍的队长，他们要求先击杀这个首领也不要感到意外。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(274155, {	-- Geomancer Headdress
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -193,14 +227,31 @@ root(ROOTS.Instances, {
 				i(6686),	-- Tusken Helm
 			}),
 			n(4842, {	-- Earthcaller Halmgar
-				["description"] = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
+				["description"] = createLocalizationString({
+					readable = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
+					constant = "AFTER_YOU_KILL_OVERLORD_RAMTUSK_GO_WEST_OVER_A",
+					export = true,
+					text = {
+						en = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "击杀霸主拉姆塔斯克后，向西越过一座桥到达一处高地。\n\n这是一个稀有生物，因此并不总是存在。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(6689),	-- Wind Spirit Staff
 					i(6688),	-- Whisperwind Headdress
 				},
 			}),
 			n(4425, {	-- Blind Hunter
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["groups"] = {
 					i(6696),	-- Nightstalker Bow
 					i(6695),	-- Stygian Bone Amulet

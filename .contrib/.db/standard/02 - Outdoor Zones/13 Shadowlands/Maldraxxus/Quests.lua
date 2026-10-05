@@ -832,7 +832,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Miscellaneous ------
 			q(57284, {	-- Blade of Blades
-				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+				["description"] = createLocalizationString({
+					readable = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+					constant = "HAS_A_CHANCE_TO_BE_OFFERED_BY_A_RECRUITABLE",
+					export = true,
+					text = {
+						en = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "使用由位于 |cffffffff26.3, 42.7|r 的“辛德·六重”提供的 |cffffffff活化物质宝珠|r 时，有几率由可招募的活化体提供。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
 				["qgs"] = {
 					157168,	-- Stubborn Animate
@@ -848,7 +865,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(57278, {	-- Bring Me Their Heads
-				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+				["description"] = "~L.HAS_A_CHANCE_TO_BE_OFFERED_BY_A_RECRUITABLE",
 				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
 				["qgs"] = {
 					157168,	-- Stubborn Animate

@@ -170,7 +170,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["coord"] = { 41.5, 86.2, ZARALEK_CAVERN },
 						["groups"] = {
 							i(205114, {	-- Brul (PET!)
-								["description"] = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
+								["description"] = createLocalizationString({
+									readable = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
+									constant = "AFTER_DEFEATING_BRULLO_EAT_ROCKS_ON_THE_ROCKS",
+									export = true,
+									text = {
+										en = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "击败布鲁洛后，吃掉“石上石”变形，然后打开箱子。",
+										-- TODO: tw = "",
+									},
+								}),
 								["cost"] = { { "i", 204845, 1 } },	-- 1x Rocks on the Rocks
 							}),
 							i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!)

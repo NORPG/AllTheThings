@@ -4,7 +4,24 @@
 
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_AUGUST_CELESTIALS, {
-		["description"] = "Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
+		["description"] = createLocalizationString({
+			readable = "Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
+			constant = "EACH_DAY_THE_AUGUST_CELESTIALS_REQUIRE_YOUR_AID",
+			export = true,
+			text = {
+				en = "Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "每天，至尊天神都需要你在他们其中一座神殿提供帮助。与你阵营在锦绣谷的祭坛中的代表交谈，了解哪里需要你的帮助（|cff3f48cc联盟的贤者白心|r，|cff880015部落的贤者莲心|r）。\n\n日常任务将位于以下地点之一：\n翡翠林 - 玉蛇神殿\n卡桑琅丛林 - 赤精之巢\n昆莱山 - 白虎神殿\n螳螂高原 - 砮皂神殿\n\n",
+				-- TODO: tw = "",
+			},
+		}),
 		["icon"] = 645203,
 		["lvl"] = lvlsquish(90, 90, 15),
 		["groups"] = {
@@ -90,7 +107,24 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						30717,	-- Gifts of the Great Crane
 						30718,	-- Students of Chi-Ji
 					},
-					["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days. After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger. You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.",
+					["description"] = createLocalizationString({
+						readable = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days. After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger. You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.",
+						constant = "REQUIRES_COMPLETING_AUGUST_CELESTIALS_DAILIES",
+						export = true,
+						text = {
+							en = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days. After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger. You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要在赤精摇篮完成至尊天神日常任务，累计 15 天。完成第一组日常后，你会接到一个额外任务，要求击败一名挑战者。只有在至尊天神于红鹤寺请求你援助的日子里，你才能推进该成就。",
+							-- TODO: tw = "",
+						},
+					}),
 					["icon"] = 605484,
 					["groups"] = sharedData({
 						["qg"] = 60506,	-- Thelonius

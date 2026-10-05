@@ -35,7 +35,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			n(205227, {	-- Tarasek Fighter
-				["description"] = "Not technically a rare but behaves like one in regards to certain drops. May require killing any active 'Sundered Flame Cleaver' NPCs to trigger a spawn after 10 minutes.",
+				["description"] = createLocalizationString({
+					readable = "Not technically a rare but behaves like one in regards to certain drops. May require killing any active 'Sundered Flame Cleaver' NPCs to trigger a spawn after 10 minutes.",
+					constant = "NOT_TECHNICALLY_A_RARE_BUT_BEHAVES_LIKE_ONE_IN",
+					export = true,
+					text = {
+						en = "Not technically a rare but behaves like one in regards to certain drops. May require killing any active 'Sundered Flame Cleaver' NPCs to trigger a spawn after 10 minutes.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "严格来说不是稀有怪，但在某些掉落上表现得像稀有怪。可能需要击杀所有活跃的“破碎烈焰切割者”NPC，10 分钟后触发刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_10_1_0 },
 				["coords"] = {
 					{ 45.4, 56.2, ZARALEK_CAVERN },

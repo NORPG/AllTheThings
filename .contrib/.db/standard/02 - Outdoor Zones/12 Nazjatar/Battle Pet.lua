@@ -33,12 +33,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["crs"] = { 154915 },	-- Elderspawn of Nalaada
 			}),
 			i(169633, {	-- Frenzy Fang (QS!)
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coord"] = { 61.40, 19.85, NAZJATAR },	-- cave entrance
 				["crs"] = { 154920 },	-- Frenzied Knifefang
 			}),
 			i(169636, {	-- Frenzy Fang (QS!)
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coord"] = { 61.40, 19.85, NAZJATAR },	-- cave entrance
 				["crs"] = { 154920 },	-- Frenzied Knifefang
 			}),

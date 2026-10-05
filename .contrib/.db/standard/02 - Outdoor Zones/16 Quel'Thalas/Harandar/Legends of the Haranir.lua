@@ -31,7 +31,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264259),	-- On'ohia's Call (DECOR!)
 				}),
 				ach(42278, {	-- The Empty Cradle
-					["description"] = "Currently requires completing all 7 Legends on ONE character, and due to the account-wide lockout per week of completing 'Lost Legends' (89268) you can only get credit for one legend for one character per week! Choose wisely!",
+					["description"] = createLocalizationString({
+						readable = "Currently requires completing all 7 Legends on ONE character, and due to the account-wide lockout per week of completing 'Lost Legends' (89268) you can only get credit for one legend for one character per week! Choose wisely!",
+						constant = "CURRENTLY_REQUIRES_COMPLETING_ALL_7_LEGENDS_ON",
+						export = true,
+						text = {
+							en = "Currently requires completing all 7 Legends on ONE character, and due to the account-wide lockout per week of completing 'Lost Legends' (89268) you can only get credit for one legend for one character per week! Choose wisely!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "目前需要在同一个角色上完成全部 7 个传说，而由于“失落的传说”（89268）每周的账号共享锁定，你每周只能为一个角色的一个传说获得进度！请谨慎选择！",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			n(EVENT_COMPLETION, {
@@ -126,7 +143,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(89268),	-- Lost Legends
 				q(92720),	-- The Story of Aln'hara's Bloom
 				q(91492, {	-- The Tale of Aln'hara's Bloom
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = createLocalizationString({
+						readable = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+						constant = "THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
+						export = true,
+						text = {
+							en = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此“奖励目标”需要你与上古视界石互动并踏上视界之行后触发。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 88995,	-- Aln'hara's Bloom
 					["provider"] = { "n", 241541 },	-- Ancient Visionstone
 					["coord"] = { 54.7, 65.1, MAP.MIDNIGHT.HARANDAR },
@@ -139,21 +173,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92722),	-- The Story of Russula's Outreach
 				q(91507, {	-- The Tale of Russula
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = "~L.THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
 					["sourceQuest"] = 88997,	-- Russula's Outreach
 					["provider"] = { "n", 241836 },	-- Ancient Visionstone
 					["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(92725),	-- The Story of Sky's Hope
 				q(91509, {	-- The Tale of a Stone Falls from the Sky
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = "~L.THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
 					["sourceQuest"] = 88999,	-- Sky's Hope
 					["provider"] = { "n", 241836 },	-- Ancient Visionstone
 					["coord"] = { 72.3, 55.7, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(92719),	-- The Story of the Cauldron of Echoes
 				q(90889, {	-- Tale of the Echoes of Sai'alyo
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = "~L.THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
 					["sourceQuest"] = 88994,	-- The Cauldron of Echoes
 					["provider"] = { "n", 245531 },	-- Ancient Visionstone
 					["coord"] = { 61.6, 20.6, MAP.MIDNIGHT.HARANDAR },
@@ -165,21 +199,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(92724),	-- The Story of the Root of the World
 				q(91508, {	-- Tale of Rootways and Wardens
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = "~L.THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
 					["sourceQuest"] = 88998,	-- Root of the World
 					["provider"] = { "n", 241836 },	-- Ancient Visionstone
 					["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(92721),	-- The Story of the Echoless Flame
 				q(91506, {	-- Tale of the First Shul'ka and the Flame
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = "~L.THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
 					["sourceQuest"] = 88996,	-- The Echoless Flame
 					["provider"] = { "n", 241836 },	-- Ancient Visionstone
 					["coord"] = { 64.6, 38.6, MAP.MIDNIGHT.HARANDAR },
 				}),
 				q(92716),	-- The Story of Wey'nan's Ward
 				q(90536, {	-- The Tale of Wey'nan's Ward
-					["description"] = "This 'Bonus Objective' is triggered after you interact with Ancient Visionstone and embark on a Vision Walk.",
+					["description"] = "~L.THIS_BONUS_OBJECTIVE_IS_TRIGGERED_AFTER_YOU",
 					["sourceQuest"] = 88993,	-- Wey'nan's Ward
 					["provider"] = { "n", 241117 },	-- Ancient Visionstone
 					["coord"] = { 44.3, 38.3, MAP.MIDNIGHT.HARANDAR },
@@ -296,7 +330,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(TREASURES, {
 				["lore"] = "Discover all of the lore objects found within the Legends of the Haranir relic stories.",
-				["description"] = "You need to be on the respective 'Legends Never Die' Quest in order to see the lore objects. You can discover 3 of them per week.",
+				["description"] = createLocalizationString({
+					readable = "You need to be on the respective 'Legends Never Die' Quest in order to see the lore objects. You can discover 3 of them per week.",
+					constant = "YOU_NEED_TO_BE_ON_THE_RESPECTIVE_LEGENDS_NEVER",
+					export = true,
+					text = {
+						en = "You need to be on the respective 'Legends Never Die' Quest in order to see the lore objects. You can discover 3 of them per week.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你需要处于对应的“传奇永不灭”任务中才能看到这些传说物品。你每周可以发现其中 3 个。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					o(579236, {	-- Echoes of Our Past--Part 1: Fading History
 						["sourceQuest"] = 88994,	-- The Cauldron of Echoes

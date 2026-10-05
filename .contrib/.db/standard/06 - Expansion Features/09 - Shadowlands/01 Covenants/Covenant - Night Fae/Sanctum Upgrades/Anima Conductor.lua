@@ -11,12 +11,46 @@ local MIKAI_DEATHSCYTHE = i(179534);
 local DREAMERS_MENDING = i(182455);
 local MURMURS_IN_THE_DARK = i(182454);
 local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT!)
-	["description"] = "Available to purchase after defeating every rare at Star Lake Amphitheater",
+	["description"] = createLocalizationString({
+		readable = "Available to purchase after defeating every rare at Star Lake Amphitheater",
+		constant = "AVAILABLE_TO_PURCHASE_AFTER_DEFEATING_EVERY",
+		export = true,
+		text = {
+			en = "Available to purchase after defeating every rare at Star Lake Amphitheater",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "击败星湖圆形剧场的所有稀有后可购买",
+			-- TODO: tw = "",
+		},
+	}),
 	["cost"] = { { "c", ANIMA, 5000 } },
 });
 local GREATAXE_OF_UNRELENTING_PURSUIT = i(180154);
 local STAR_LAKE_AMPHITHEATER = n(STAR_LAKE_AMPHITHEATER,   {
-	["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
+	["description"] = createLocalizationString({
+		readable = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
+		constant = "YOU_HAVE_TO_BE_IN_THE_CFFA330C9NIGHT_FAE_R",
+		export = true,
+		text = {
+			en = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "你必须加入|cFFA330C9法夜|r盟约才能亲自召唤怪物，但如果是由其他人召唤的，任何人都可以击杀并拾取。每天只能召唤一只怪物。",
+			-- TODO: tw = "",
+		},
+	}),
 	["questID"] = 61633,
 	["isDaily"] = true,
 	["coord"] = { 41.5, 44.8, ARDENWEALD },
@@ -65,7 +99,24 @@ local STAR_LAKE_AMPHITHEATER = n(STAR_LAKE_AMPHITHEATER,   {
 	},
 });
 local VALFIR = n(168647, {	-- Valfir the Unrelenting
-	["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
+	["description"] = createLocalizationString({
+		readable = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
+		constant = "REQUIRES_A_MEMBER_OF_THE_CFFA330C9NIGHT_FAE",
+		export = true,
+		text = {
+			en = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "需要一名|cFFA330C9法夜盟约|r成员向提尔纳·西瑟引导心能。之后，你就能拾取首领处的心能之种之光来揭开它的面纱。",
+			-- TODO: tw = "",
+		},
+	}),
 	["questID"] = 61632,
 	["isDaily"] = true,
 	["coord"] = { 30.0, 55.0, ARDENWEALD },
@@ -88,7 +139,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							["groups"] = {
 								currency(GRATEFUL, {
 									["customCollect"] = IGNORED_VALUE,
-									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+									["description"] = "~L.GRATEFUL_OFFERINGS_CAN_BE_COLLECTED_ONCE_YOU",
 								}),
 							},
 						}),
@@ -109,7 +160,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(TREASURES, {
 								o(356820, {	-- Large Lunarlight Pod
-									["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin. To unlock the chest, run over 5 nearby Lunarlight Buds.",
+									["description"] = createLocalizationString({
+										readable = "Requires channeling the Anima Conductor to Glitterfall Basin. To unlock the chest, run over 5 nearby Lunarlight Buds.",
+										constant = "REQUIRES_CHANNELING_THE_ANIMA_CONDUCTOR_TO",
+										export = true,
+										text = {
+											en = "Requires channeling the Anima Conductor to Glitterfall Basin. To unlock the chest, run over 5 nearby Lunarlight Buds.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要将心能导流器引导至闪瀑盆地。要解锁宝箱，请跑过附近 5 个月光花蕾。",
+											-- TODO: tw = "",
+										},
+									}),
 									["isDaily"] = true,
 									["questID"] = 61691,
 									["coord"] = { 51.7, 32.3, ARDENWEALD },

@@ -175,7 +175,24 @@ local EncounterToLoot = {
 		}),
 		i(186410, {	-- Jaithys, the Prison Blade
 			-- #if BEFORE 10.0.2
-			["description"] = "Only available in the great Vault.",	-- Found as Drop 20.09.2023
+			["description"] = createLocalizationString({
+				readable = "Only available in the great Vault.",
+				constant = "ONLY_AVAILABLE_IN_THE_GREAT_VAULT",
+				export = true,
+				text = {
+					en = "Only available in the great Vault.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "仅在宏伟宝库中可用。",
+					-- TODO: tw = "",
+				},
+			}),	-- Found as Drop 20.09.2023
 			-- #endif
 		}),
 		i(186406),	-- Maledict Opus

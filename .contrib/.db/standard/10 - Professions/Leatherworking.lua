@@ -158,7 +158,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(36176, {	-- A Call for Huntsman
-				["description"] = "This item can drop from any Draenor mob.",
+				["description"] = "~L.THIS_ITEM_CAN_DROP_FROM_ANY_DRAENOR_MOB",
 				["providers"] = {
 					{ "i", 114877 },	-- Dirty Note
 					{ "n", 75043 },	-- Karnoth
@@ -176,7 +176,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36505, {	-- A Warrior's Shroud
-				["description"] = "This item can drop from any Draenor mob.",
+				["description"] = "~L.THIS_ITEM_CAN_DROP_FROM_ANY_DRAENOR_MOB",
 				["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
 				["timeline"] = { ADDED_6_0_2 },
 				["maps"] = {
@@ -826,14 +826,48 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 				------ Tools of Trade Questline ------
 			q(55227, {	-- The Aeonian Artisan
-				["description"] = "Requires 150 Kul Tiran Leatherworking.",
+				["description"] = createLocalizationString({
+					readable = "Requires 150 Kul Tiran Leatherworking.",
+					constant = "REQUIRES_150_KUL_TIRAN_LEATHERWORKING",
+					export = true,
+					text = {
+						en = "Requires 150 Kul Tiran Leatherworking.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 150 点库尔提拉斯制皮。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 136063 },	-- Cassandra Brennor
 				["coord"] = { 75.5, 12.6, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53995, {	-- The Tauren Tanner
-				["description"] = "Requires 150 Zandalari Leatherworking.",
+				["description"] = createLocalizationString({
+					readable = "Requires 150 Zandalari Leatherworking.",
+					constant = "REQUIRES_150_ZANDALARI_LEATHERWORKING",
+					export = true,
+					text = {
+						en = "Requires 150 Zandalari Leatherworking.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要 150 点赞达拉制皮。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 122698 },	-- Xanjo
 				["coord"] = { 44.1, 34.6, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
@@ -1041,7 +1075,24 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		})),
 		n(QUESTS, {
 			q(70362, {	-- Dragon Isles Leatherworking
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
+				["description"] = createLocalizationString({
+					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
+					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_10",
+					export = true,
+					text = {
+						en = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务只能在学会龙群岛制皮之前接取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 366249 },	-- Dragon Isles Leatherworking
@@ -1087,7 +1138,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		},{
 			-- Requires 25 Skill
 			q(66363, {	-- Basilisk Bucklers
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -1095,12 +1146,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(70594, {	-- Leatherworking Services Requested
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66951, {	-- Population Control
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -1108,7 +1159,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(72407, {	-- Soaked in Success
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -1116,7 +1167,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(66364, {	-- To Fly a Kite
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -1126,22 +1177,22 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 
 			-- Requires 45 Skill
 			q(70571, {	-- Drums Here!
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 			}),
 			q(70569, {	-- For Trisket, a Task Kit
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 			}),
 			q(70568, {	-- Tipping the Scales
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 			}),
 			q(70567, {	-- When You Give Bakar a Bone
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 			}),
@@ -1183,7 +1234,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }} }, {
 				r(375125),	-- Bow of the Dragon Hunters
 				r(375159),	-- Fang Adornments
@@ -1288,7 +1339,24 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			o(380554, {	-- Well-Danced Drum
-				["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
+				["description"] = createLocalizationString({
+					readable = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
+					constant = "FIX_THE_DRUM_BY_INTERACTING_WITH_IT_WAIT_FOR",
+					export = true,
+					text = {
+						en = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与鼓互动来修好它，等待小海象人跳完舞，然后你就可以拾取宝藏了。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 70269,
 				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
 				["groups"] = {
@@ -1312,7 +1380,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			i(198613),	-- Leatherworking Designs
 			q(74113, {	-- DF Inscription Order: Leatherworking
 				["name"] = "DF Inscription Order: Leatherworking",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
 			}),
 			q(66384, {	-- DF Weekly Leatherworking Knowledgepoint #1
@@ -1325,7 +1393,24 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(70522, {	-- DF Weekly Leatherworking Knowledgepoint #3
 				["name"] = "DF Leatherworking Drop #1: Proto Drake",
-				["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_PROTO_DRAKE_COORDINATES_LINK_TO",
+					export = true,
+					text = {
+						en = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意始祖龙掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198975 },	-- Ossified Hide
 				["coords"] = {
 					{ 80.6, 33.8, THE_WAKING_SHORES },
@@ -1341,7 +1426,24 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(70523, {	-- DF Weekly Leatherworking Knowledgepoint #4
 				["name"] = "DF Leatherworking Drop #2: Sylvern&Vorquin",
-				["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_SYLVERN_OR_VORQUIN_COORDINATES",
+					export = true,
+					text = {
+						en = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意希尔文或沃昆掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198976 },	-- Exceedingly Soft Skin
 				["coords"] = {
 					{ 36.6, 72.8, THALDRASZUS },
@@ -1406,7 +1508,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }} }, {
 				r(441460),	-- Blessed Weapon Grip
 				r(441065),	-- Glyph-Etched Binding
@@ -1497,7 +1599,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			i(228778),	-- Algari Leatherworker's Journal
 			q(83732, {	-- TWW Inscription Order: Leatherworking
 				["name"] = "TWW Inscription Order: Leatherworking",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 222549 },	-- Algari Treatise on Leatherworking
 			}),
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
@@ -1581,7 +1683,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.LEATHERWORKING, 1 }} }, {
 				r(1237545),	-- Blood Knight's Armor Kit
 				r(1237579),	-- Devouring Banding
@@ -1670,7 +1772,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			i(263459),	-- Thalassian Leatherworker's Journal
 			q(95134, {	-- MID Inscription Order: Leatherworking
 				["name"] = "MID Inscription Order: Leatherworking",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 245758 },	-- Thalassian Treatise on Leatherworking
 			}),
 			q(93540, {	-- MID Weekly Leatherworking Knowledgepoint #1

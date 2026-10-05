@@ -1068,7 +1068,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(70268, {	-- Memories Revived
-					["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
+					["description"] = createLocalizationString({
+						readable = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
+						constant = "TO_OBTAIN_THIS_QUEST_YOU_MUST_ENTER_THE_VAULT",
+						export = true,
+						text = {
+							en = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要获得此任务，你必须进入位于 27, 61 的宝库。进入后，下楼左转，再左转进入房间。这个房间里有一个书架，上面放着开启此任务的物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 70134 },	-- Memories
 					["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
 					["coord"] = { 23.0, 60.0, THE_WAKING_SHORES },
@@ -1125,7 +1142,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			header(HEADERS.Achievement, 16323, {	-- Fragments of History
 				q(70231, {	-- Talk to Emilia Bellocq
 					["name"] = "Talk to Emilia Bellocq",
-					["description"] = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
+					["description"] = createLocalizationString({
+						readable = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
+						constant = "TALK_TO_EMILIA_BELLOCQ_AND_CHOSE_HER_DIALOGUE",
+						export = true,
+						text = {
+							en = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与艾米莉亚·贝洛克交谈并选择她的对话选项，即可完成此任务并解锁完成成就历史的碎片所需的物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 193915 },	-- Emilia Bellocq
 					["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
 				}),

@@ -27,7 +27,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				}),
 				ach(14159, {	-- Combating the Corruption
 					crit(47211, {		-- Corrupted Acolyte slain
-						["description"] = "Shares a spawn with Acolyte of N'Zoth.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Acolyte of N'Zoth.",
+							constant = "SHARES_A_SPAWN_WITH_ACOLYTE_OF_N_ZOTH",
+							export = true,
+							text = {
+								en = "Shares a spawn with Acolyte of N'Zoth.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与恩佐斯侍僧共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162249,	-- Corrupted Acolyte
 						["coords"] = {
 							{ 49.5, 39.9, NZOTH_ASSAULT_ULDUM },
@@ -48,7 +65,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47212, {		-- Corrupted Assassin slain
-						["description"] = "Shares a spawn with Black Empire Assassin.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Black Empire Assassin.",
+							constant = "SHARES_A_SPAWN_WITH_BLACK_EMPIRE_ASSASSIN",
+							export = true,
+							text = {
+								en = "Shares a spawn with Black Empire Assassin.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与黑暗帝国刺客共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162250,	-- Corrupted Assassin
 						["coords"] = {
 							{ 51.7, 71.1, NZOTH_ASSAULT_ULDUM },
@@ -67,7 +101,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47213, {		-- Corrupted Beheader slain
-						["description"] = "Shares a spawn with Black Empire Beheader.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Black Empire Beheader.",
+							constant = "SHARES_A_SPAWN_WITH_BLACK_EMPIRE_BEHEADER",
+							export = true,
+							text = {
+								en = "Shares a spawn with Black Empire Beheader.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与黑暗帝国斩首者共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162252,	-- Corrupted Beheader
 						["coords"] = {
 							{ 58.4, 42.8, NZOTH_ASSAULT_ULDUM },
@@ -84,7 +135,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47214,	{		-- Corrupted Bloodseeker slain
-						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum. It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
+						["description"] = createLocalizationString({
+							readable = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum. It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
+							constant = "THIS_DOESN_T_APPEAR_TO_SHARE_A_SPAWN_WITH_ANY",
+							export = true,
+							text = {
+								en = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum. It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "它似乎不与任何其他生物共享刷新点，但它是刷新在奥丹姆南海岸外的精英鲨鱼。它能游得非常远，接近疲劳水域，所以如果你在寻找腐化的觅血鲨，沿着外缘而不是贴着海岸搜寻可能更有帮助。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162290,	-- Corrupted Bloodseeker
 						["coords"] = {
 							{ 13.8, 63.6, NZOTH_ASSAULT_ULDUM },
@@ -93,7 +161,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47215,	{		-- Corrupted Bonestripper slain
-						["description"] = "Shares a spawn with N'Zoth Bonestripper. Found in most water locations.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with N'Zoth Bonestripper. Found in most water locations.",
+							constant = "SHARES_A_SPAWN_WITH_N_ZOTH_BONESTRIPPER_FOUND",
+							export = true,
+							text = {
+								en = "Shares a spawn with N'Zoth Bonestripper. Found in most water locations.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与恩佐斯剥骨者共享刷新点。在大多数水域位置都能找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 159087,	-- Corrupted Bonestripper
 						["coords"] = {
 							{ 55.7, 43.8, NZOTH_ASSAULT_ULDUM },
@@ -110,7 +195,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47216,	{		-- Corrupted Despoiler slain
-						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater. Can also result in Corrupted Mind Eater spawning.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Faceless Despoiler and Mind Eater. Can also result in Corrupted Mind Eater spawning.",
+							constant = "SHARES_A_SPAWN_WITH_FACELESS_DESPOILER_AND_MIND",
+							export = true,
+							text = {
+								en = "Shares a spawn with Faceless Despoiler and Mind Eater. Can also result in Corrupted Mind Eater spawning.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与无面掠夺者和噬心者共享刷新点。也可能刷新出腐化的噬心者。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 156709,	-- Corrupted Despoiler
 						["coords"] = {
 							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
@@ -141,7 +243,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47217,	{		-- Corrupted Dominator slain
-						["description"] = "Shares a spawn with Faceless Dominator.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Faceless Dominator.",
+							constant = "SHARES_A_SPAWN_WITH_FACELESS_DOMINATOR",
+							export = true,
+							text = {
+								en = "Shares a spawn with Faceless Dominator.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与无面支配者共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162246,	-- Corrupted Dominator
 						["coords"] = {
 							{ 63.0, 71.0, NZOTH_ASSAULT_ULDUM },
@@ -153,7 +272,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47218, {		-- Corrupted Doomsayer slain
-						["description"] = "Shares a spawn with K'thir Doomsayer.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with K'thir Doomsayer.",
+							constant = "SHARES_A_SPAWN_WITH_K_THIR_DOOMSAYER",
+							export = true,
+							text = {
+								en = "Shares a spawn with K'thir Doomsayer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与克希尔末日预言者共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162244,	-- Corrupted Doomsayer
 						["coords"] = {
 							{ 60.8, 71.5, NZOTH_ASSAULT_ULDUM },
@@ -180,7 +316,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47219, {		-- Corrupted Fleshbeast slain
-						["description"] = "Shares a spawn with Burbling Fleshbeast.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Burbling Fleshbeast.",
+							constant = "SHARES_A_SPAWN_WITH_BURBLING_FLESHBEAST",
+							export = true,
+							text = {
+								en = "Shares a spawn with Burbling Fleshbeast.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与汩汩冒泡的血肉兽共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 158632,	-- Corrupted Fleshbeast
 						["coords"] = {
 							{ 59.5, 48.6, NZOTH_ASSAULT_ULDUM },
@@ -204,7 +357,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47220, {		-- Corrupted Jailer slain
-						["description"] = "Shares a spawn with Faceless Jailer.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Faceless Jailer.",
+							constant = "SHARES_A_SPAWN_WITH_FACELESS_JAILER",
+							export = true,
+							text = {
+								en = "Shares a spawn with Faceless Jailer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与无面典狱官共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162247,	-- Corrupted Jailer
 						["coords"] = {
 							{ 60.8, 71.5, NZOTH_ASSAULT_ULDUM },
@@ -214,7 +384,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47221, {		-- Corrupted Mind Eater slain
-						["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler. Can also result in Corrupted Despoiler spawning.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Mind Eater and Faceless Despoiler. Can also result in Corrupted Despoiler spawning.",
+							constant = "SHARES_A_SPAWN_WITH_MIND_EATER_AND_FACELESS",
+							export = true,
+							text = {
+								en = "Shares a spawn with Mind Eater and Faceless Despoiler. Can also result in Corrupted Despoiler spawning.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与噬心者和无面掠夺者共享刷新点。也可能刷新出腐化的掠夺者。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162243,	-- Corrupted Mind Eater
 						["coords"] = {
 							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
@@ -245,7 +432,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47222, {		-- Corrupted Neferset Guard slain
-						["description"] = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
+							constant = "SHARES_A_SPAWN_WITH_VOIDWARPED_NEFERSET_AND",
+							export = true,
+							text = {
+								en = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与虚空扭曲的尼斐塞特和虚空扭曲的尼斐塞特高阶卫兵共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 158531,	-- Corrupted Neferset Guard
 						["coords"] = {
 							{ 50.9, 82.9, NZOTH_ASSAULT_ULDUM },
@@ -263,7 +467,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47223, {		-- Corrupted Observer slain
-						["description"] = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Foul Observer.",
+							constant = "SHARES_A_SPAWN_WITH_FOUL_OBSERVER",
+							export = true,
+							text = {
+								en = "Shares a spawn with Foul Observer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与污秽观察者共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
 						["cr"] = 162254,	-- Corrupted Observer
 						["coords"] = {
 							{ 55.4, 51.0, NZOTH_ASSAULT_ULDUM },
@@ -290,7 +511,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47224, {		-- Corrupted Putrefaction slain
-						["description"] = "Shares a spawn with Oozing Putrefaction.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Oozing Putrefaction.",
+							constant = "SHARES_A_SPAWN_WITH_OOZING_PUTREFACTION",
+							export = true,
+							text = {
+								en = "Shares a spawn with Oozing Putrefaction.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与渗液腐化物共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 158706,	-- Corrupted Putrefaction
 						["coords"] = {
 							{ 59.3, 41.4, NZOTH_ASSAULT_ULDUM },
@@ -301,7 +539,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47225, {		-- Corrupted Summoner slain
-						["description"] = "Shares a spawn with Black Empire Conjurers.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Black Empire Conjurers.",
+							constant = "SHARES_A_SPAWN_WITH_BLACK_EMPIRE_CONJURERS",
+							export = true,
+							text = {
+								en = "Shares a spawn with Black Empire Conjurers.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与黑暗帝国咒术师共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162251,	-- Corrupted Summoner
 						["coords"] = {
 							{ 58.9, 46.2, NZOTH_ASSAULT_ULDUM },
@@ -321,7 +576,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47226, {		-- Corrupted Thaumaturge slain
-						["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
+							constant = "SHARES_A_SPAWN_WITH_BLACK_EMPIRE_THAUMATURGE",
+							export = true,
+							text = {
+								en = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与黑暗帝国奇术师和黑暗帝国咒术师共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 162253,	-- Corrupted Thaumaturge
 						["coords"] = {
 							{ 51.9, 70.3, NZOTH_ASSAULT_ULDUM },
@@ -340,7 +612,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47227, {		-- Corrupted Thoughtstealer slain
-						["description"] = "Shares a spawn with K'thir Thoughtstealer.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with K'thir Thoughtstealer.",
+							constant = "SHARES_A_SPAWN_WITH_K_THIR_THOUGHTSTEALER",
+							export = true,
+							text = {
+								en = "Shares a spawn with K'thir Thoughtstealer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与克希尔窃念者共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 62.7, 75.4, NZOTH_ASSAULT_ULDUM },
 							{ 61.0, 72.0, NZOTH_ASSAULT_ULDUM },
@@ -352,7 +641,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["cr"] = 162241,	-- Corrupted Thoughtstealer
 					}),
 					crit(47228, {		-- Corrupted Tormentor slain	-- TODO:  Add coords
-						["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
+							constant = "SHARES_A_SPAWN_WITH_TENTACLE_TORMENTORS_FOUND",
+							export = true,
+							text = {
+								en = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与触须折磨者共享刷新点，位于奥丹姆南部海岸外。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 13.0, 64.6, NZOTH_ASSAULT_ULDUM },
 							{ 32.6, 73.2, NZOTH_ASSAULT_ULDUM },
@@ -363,7 +669,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["cr"] = 162245,	-- Corrupted Tormentor
 					}),
 					crit(47229, {		-- Corrupted Watcher slain
-						["description"] = "Shares a spawn with Voidwarped Watcher.",
+						["description"] = createLocalizationString({
+							readable = "Shares a spawn with Voidwarped Watcher.",
+							constant = "SHARES_A_SPAWN_WITH_VOIDWARPED_WATCHER",
+							export = true,
+							text = {
+								en = "Shares a spawn with Voidwarped Watcher.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与虚空扭曲的看守者共享刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 61.8, 73.0, NZOTH_ASSAULT_ULDUM },
 							{ 63.4, 72.9, NZOTH_ASSAULT_ULDUM },
@@ -409,7 +732,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["groups"] = {
 							i(173810),	-- Darksight Potion (QI!)
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								["description"] = createLocalizationString({
+									readable = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+									constant = "AWARDED_ONCE_A_WEEK_UPON_COMPLETION_OF_YOUR",
+									export = true,
+									text = {
+										en = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "每周完成你的第一个黑暗幻象任务时获得一次。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 						},
 					}),
@@ -425,7 +765,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								["description"] = "~L.AWARDED_ONCE_A_WEEK_UPON_COMPLETION_OF_YOUR",
 							}),
 						},
 					}),
@@ -441,7 +781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								["description"] = "~L.AWARDED_ONCE_A_WEEK_UPON_COMPLETION_OF_YOUR",
 							}),
 						},
 					}),
@@ -458,7 +798,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								["description"] = "~L.AWARDED_ONCE_A_WEEK_UPON_COMPLETION_OF_YOUR",
 							}),
 						},
 					}),
@@ -475,7 +815,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								["description"] = "~L.AWARDED_ONCE_A_WEEK_UPON_COMPLETION_OF_YOUR",
 							}),
 						},
 					}),
@@ -489,7 +829,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(174456, {	-- Gloop (PET!)
-						["description"] = "Can be caught from schools of fish in a zone currently affected by a N'Zoth Assault.",
+						["description"] = createLocalizationString({
+							readable = "Can be caught from schools of fish in a zone currently affected by a N'Zoth Assault.",
+							constant = "CAN_BE_CAUGHT_FROM_SCHOOLS_OF_FISH_IN_A_ZONE",
+							export = true,
+							text = {
+								en = "Can be caught from schools of fish in a zone currently affected by a N'Zoth Assault.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在当前受恩佐斯突袭影响的区域中的鱼群处钓到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 			}),

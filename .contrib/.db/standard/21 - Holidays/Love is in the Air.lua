@@ -44,7 +44,24 @@ local POUCH_OF_RED_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188693,
 local POUCH_OF_EBON_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188692, {	-- Pouch of Ebon Rose Petals
 	["timeline"] = { ADDED_9_1_5 },
 	-- #if AFTER 10.2.5
-	["description"] = "Does NOT give progression towards 'Traveler's Log - Love is in the Air: Throw Rose Petals on Players'.",
+	["description"] = createLocalizationString({
+		readable = "Does NOT give progression towards 'Traveler's Log - Love is in the Air: Throw Rose Petals on Players'.",
+		constant = "DOES_NOT_GIVE_PROGRESSION_TOWARDS_TRAVELER_S",
+		export = true,
+		text = {
+			en = "Does NOT give progression towards 'Traveler's Log - Love is in the Air: Throw Rose Petals on Players'.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "不会为“旅行者日志 - 爱就在空气中：向玩家投掷玫瑰花瓣”提供进度。",
+			-- TODO: tw = "",
+		},
+	}),
 	-- #endif
 }));
 local BOSS_GROUPS = {};
@@ -272,7 +289,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["maps"] = { FERALAS },
 					["groups"] = {
 						crit(64676, {	-- Novelty
-							["description"] = "Bring Vernon a Shiny New Weapon from the table.",
+							["description"] = createLocalizationString({
+								readable = "Bring Vernon a Shiny New Weapon from the table.",
+								constant = "BRING_VERNON_A_SHINY_NEW_WEAPON_FROM_THE_TABLE",
+								export = true,
+								text = {
+									en = "Bring Vernon a Shiny New Weapon from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "从桌上拿一把闪亮的新武器带给弗农。",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "o", 411691 },	-- Shiny New Weapon
 								{ "n", 212812 },	-- Vernon Whitlock
@@ -280,7 +314,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["coord"] = { 69.01, 72.4, FERALAS },
 						}),
 						crit(64680, {	-- Beauty
-							["description"] = "Bring Bratley a Mystery Gift (Flower) from the table.",
+							["description"] = createLocalizationString({
+								readable = "Bring Bratley a Mystery Gift (Flower) from the table.",
+								constant = "BRING_BRATLEY_A_MYSTERY_GIFT_FLOWER_FROM_THE",
+								export = true,
+								text = {
+									en = "Bring Bratley a Mystery Gift (Flower) from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "从桌上拿一份神秘礼物（花朵）带给布拉特利。",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "n", 212817 },	-- Bratley Graston
 								{ "i", 211922 },	-- Bouquet of Flowers
@@ -288,12 +339,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["coord"] = { 69.09, 72.93, FERALAS },
 						}),
 						crit(64681, {	-- Comfort
-							["description"] = "/hug Theoderic while holding a gift from the table.",
+							["description"] = createLocalizationString({
+								readable = "/hug Theoderic while holding a gift from the table.",
+								constant = "HUG_THEODERIC_WHILE_HOLDING_A_GIFT_FROM_THE",
+								export = true,
+								text = {
+									en = "/hug Theoderic while holding a gift from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "拿着桌上的一件礼物时，对泰奥德里克使用 /hug。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 214853 },	-- Theoderic Prescott
 							["coord"] = { 69.95, 74.1, FERALAS },
 						}),
 						crit(64677, {	-- Festivity
-							["description"] = "Bring Clarissa a Barrel of Wine from the table.",
+							["description"] = createLocalizationString({
+								readable = "Bring Clarissa a Barrel of Wine from the table.",
+								constant = "BRING_CLARISSA_A_BARREL_OF_WINE_FROM_THE_TABLE",
+								export = true,
+								text = {
+									en = "Bring Clarissa a Barrel of Wine from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "从桌上拿一桶酒带给克拉丽莎。",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "n", 212815 },	-- Clarissa Buchannan
 								{ "o", 411744 },	-- Barrel of Wine
@@ -301,7 +386,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["coord"] = { 69.16, 72.66, FERALAS },
 						}),
 						crit(64679, {	-- Challenge
-							["description"] = "Bring Bront a Shiny New Weapon from the table, then duel him.",
+							["description"] = createLocalizationString({
+								readable = "Bring Bront a Shiny New Weapon from the table, then duel him.",
+								constant = "BRING_BRONT_A_SHINY_NEW_WEAPON_FROM_THE_TABLE",
+								export = true,
+								text = {
+									en = "Bring Bront a Shiny New Weapon from the table, then duel him.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "从桌上拿一把闪亮的新武器带给布朗特，然后与他决斗。",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "n", 214850 },	-- Bront Axecrusher
 								{ "o", 411691 },	-- Shiny New Weapon
@@ -309,12 +411,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["coord"] = { 69.64, 73.35, FERALAS },
 						}),
 						crit(64682, {	-- Respect
-							["description"] = "/bow to Wilber.",
+							["description"] = createLocalizationString({
+								readable = "/bow to Wilber.",
+								constant = "BOW_TO_WILBER",
+								export = true,
+								text = {
+									en = "/bow to Wilber.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "对威尔伯使用 /bow。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 212813 },	-- Wilber Campbell
 							["coord"] = { 69.19, 72.62, FERALAS },
 						}),
 						crit(64678, {	-- Companionship
-							["description"] = "Bring Angus back his puppy.",
+							["description"] = createLocalizationString({
+								readable = "Bring Angus back his puppy.",
+								constant = "BRING_ANGUS_BACK_HIS_PUPPY",
+								export = true,
+								text = {
+									en = "Bring Angus back his puppy.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "把安格斯的小狗带回去给他。",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "n", 212811 },	-- Angus Flagonshot
 								{ "n", 212850 },	-- Lost Puppy
@@ -322,12 +458,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["coord"] = { 69.78, 74.08, FERALAS },
 						}),
 						crit(64683, {	-- Attention
-							["description"] = "Exhaust Rizzi's dialogue while holding a gift from the table.",
+							["description"] = createLocalizationString({
+								readable = "Exhaust Rizzi's dialogue while holding a gift from the table.",
+								constant = "EXHAUST_RIZZI_S_DIALOGUE_WHILE_HOLDING_A_GIFT",
+								export = true,
+								text = {
+									en = "Exhaust Rizzi's dialogue while holding a gift from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "手拿桌上的礼物时，把里兹的所有对话都听完。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 215151 },	-- Rizzi
 							["coord"] = { 68.75, 72.1, FERALAS },
 						}),
 						crit(64736, {	-- Style
-							["description"] = "Bring Halene a Mystery Gift (Flower) from the table.",
+							["description"] = createLocalizationString({
+								readable = "Bring Halene a Mystery Gift (Flower) from the table.",
+								constant = "BRING_HALENE_A_MYSTERY_GIFT_FLOWER_FROM_THE",
+								export = true,
+								text = {
+									en = "Bring Halene a Mystery Gift (Flower) from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "从桌上拿一份神秘礼物（花朵）带给哈琳。",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "n", 215148 },	-- Halene Mistrunner
 								{ "i", 211922 },	-- Bouquet of Flowers
@@ -335,7 +505,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							["coord"] = { 68.78, 73.66, FERALAS },
 						}),
 						crit(64703, {	-- Praise
-							["description"] = "Bring Verilas a Mystery Gift (Sealed Letter) from the table.",
+							["description"] = createLocalizationString({
+								readable = "Bring Verilas a Mystery Gift (Sealed Letter) from the table.",
+								constant = "BRING_VERILAS_A_MYSTERY_GIFT_SEALED_LETTER_FROM",
+								export = true,
+								text = {
+									en = "Bring Verilas a Mystery Gift (Sealed Letter) from the table.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "从桌上拿一份神秘礼物（密封信件）带给维里拉斯。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "i", 211923 },	-- Sealed Letter
 							["coord"] = { 68.95, 73.32, FERALAS },
 						}),
@@ -390,7 +577,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
 				}),
 				ach(19400, {	-- Support Your Local Artisans
-					["description"] = "You can donate once per day with a maximum of 10.000 gold",
+					["description"] = createLocalizationString({
+						readable = "You can donate once per day with a maximum of 10.000 gold",
+						constant = "YOU_CAN_DONATE_ONCE_PER_DAY_WITH_A_MAXIMUM_OF",
+						export = true,
+						text = {
+							en = "You can donate once per day with a maximum of 10.000 gold",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你每天可以捐献一次，最多 10.000 金币",
+							-- TODO: tw = "",
+						},
+					}),
 					["providers"] = {
 						{ "n", 213457 },	-- Galvus Ironhammer <Artisan's Consortium> [A]
 						{ "n", 214508 },	-- Torgando Featherhoof <Artisan's Consortium> [H]
@@ -452,7 +656,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		-- #if AFTER 10.2.5
 		prof(FISHING, {
 			i(211383, {	-- Luvkip
-				["description"] = "Fished in Olivia's pond during event.",
+				["description"] = createLocalizationString({
+					readable = "Fished in Olivia's pond during event.",
+					constant = "FISHED_IN_OLIVIA_S_POND_DURING_EVENT",
+					export = true,
+					text = {
+						en = "Fished in Olivia's pond during event.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在活动期间于奥利维亚的池塘中钓到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_10_2_5 },
 			}),
 		}),
@@ -1908,7 +2129,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 22166 },	-- Gift of Adoration: Undercity
 				{ "i", 22157 },	-- Pledge of Adoration: Undercity
 			},
-			["description"] = "These items are contained within the Gifts and Pledges of Adoration.",
+			["description"] = "~L.THESE_ITEMS_ARE_CONTAINED_WITHIN_THE_GIFTS_AND",
 			-- #endif
 			["groups"] = {
 				i(21813, {	-- Bag of Heart Candies
@@ -1979,7 +2200,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		n(DROPS, bubbleDownSelf({["timeline"] = { ADDED_10_2_5 }}, {
-			["description"] = "Perfumes and Colognes can be looted from any killed creature related to the Holiday.",
+			["description"] = createLocalizationString({
+				readable = "Perfumes and Colognes can be looted from any killed creature related to the Holiday.",
+				constant = "PERFUMES_AND_COLOGNES_CAN_BE_LOOTED_FROM_ANY",
+				export = true,
+				text = {
+					en = "Perfumes and Colognes can be looted from any killed creature related to the Holiday.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "香水和古龙水可以从与该节日相关的任何被击杀生物身上拾取。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(49859),	-- "Bravado" Cologne
 				i(49857),	-- "Enchantress" Perfume
@@ -2740,7 +2978,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		-- #endif
 		n(ZONE_DROPS, {
 			-- #if BEFORE 3.3.2.11403
-			["description"] = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
+			["description"] = "~L.APPLY_A_PERFUME_OR_COLOGNE_BUFF_TO_YOUR",
 			["timeline"] = { REMOVED_3_3_2 },
 			["cost"] = {
 				{ "i", 21833, 1 },	-- Cologne Bottle
@@ -2751,7 +2989,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["groups"] = {
 				i(49655, {	-- Lovely Charm
 					["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
-					["description"] = "With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",
+					["description"] = createLocalizationString({
+						readable = "With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",
+						constant = "WITH_A_LOVELY_CHARM_COLLECTOR_S_KIT_IN_YOUR",
+						export = true,
+						text = {
+							en = "With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "背包中带有可爱的情人符收集包时，外出击杀与你角色等级相近的怪物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
 				}),
 				i(49916, {	-- Lovely Charm Bracelet (Cosmetic)
@@ -3224,7 +3479,24 @@ for i,o in ipairs({
 
 			-- #if BEFORE CATA
 			i(54537, {	-- Heart-Shaped Box
-				["description"] = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
+				["description"] = createLocalizationString({
+					readable = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
+					constant = "THIS_BOX_DOESN_T_ACTUALLY_EXIST_WITHOUT_RDF_THE",
+					export = true,
+					text = {
+						en = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果没有随机地下城查找器，这个箱子实际上并不存在。通常装在里面掉落物今年会直接从首领身上掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sym"] = {{ "select", "itemID", 50250, 49715, 50446, 50741, 50471 }},
 				["timeline"] = { CREATED_3_3_0 },
 			}),
@@ -3251,7 +3523,24 @@ for i,o in ipairs({
 			-- #else
 			i(54537, {	-- Heart-Shaped Box
 				-- #if BEFORE 10.0.5
-				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+				["description"] = createLocalizationString({
+					readable = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+					constant = "YOU_CAN_LOOT_THE_HEART_SHAPED_BOX_ONCE_A_DAY",
+					export = true,
+					text = {
+						en = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你可以通过在地下城查找器中排队进入该战斗，每个角色每天拾取一次心形盒。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { ADDED_3_3_0 },
 				-- Minimum level this box drops (not 100% sure)
@@ -3275,7 +3564,7 @@ for i,o in ipairs({
 						["name"] = "X-45 Heartbreaker Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_10_0_5 },
 						["isDaily"] = true,
-						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
 						["groups"] = {
 							i(211413, {    -- X-45 Heartbreaker (MOUNT!)
 								["timeline"] = { ADDED_10_0_5 },
@@ -3286,7 +3575,7 @@ for i,o in ipairs({
 						["name"] = "Love Witch's Sweeper Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_11_0_7 },
 						["isDaily"] = true,
-						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
 						["groups"] = {
 							i(236043, {    -- Love Witch's Sweeper (MOUNT!)
 								["timeline"] = { ADDED_11_0_7 },
@@ -3297,7 +3586,7 @@ for i,o in ipairs({
 						["name"] = "Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_10_2_5 },
 						["isDaily"] = true,
-						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
 						["groups"] = {
 							i(211438, {    -- Renewed Proto-Drake: Love Armor (Item)
 								["timeline"] = { ADDED_10_2_5 },
@@ -3308,7 +3597,7 @@ for i,o in ipairs({
 						["name"] = "Spring Butterfly Attempt (Daily Accountwide)",
 						["timeline"] = { ADDED_12_0_0 },
 						["isDaily"] = true,
-						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+						["description"] = "~L.THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
 						["groups"] = {
 							i(256312, {    -- Spring Butterfly (MOUNT!)
 								["timeline"] = { ADDED_12_0_0 },

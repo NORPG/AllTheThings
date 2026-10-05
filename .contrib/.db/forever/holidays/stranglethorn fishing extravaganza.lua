@@ -20,7 +20,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 		tw = "荊棘谷釣魚大賽",
 	},
 }), {
-	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+	["description"] = createLocalizationString({
+		readable = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+		constant = "THE_STRANGLETHORN_FISHING_EXTRAVAGANZA_IS_A",
+		export = true,
+		text = {
+			en = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "荆棘谷钓鱼大赛是每周日在荆棘谷举行的钓鱼活动。活动包含一场竞争激烈的钓鱼比赛，以及一个较为休闲的稀有鱼类上交环节。",
+			-- TODO: tw = "",
+		},
+	}),
 	["maps"] = { MAP.STRANGLETHORN_VALE },
 	["groups"] = {
 		n(QUESTS, {

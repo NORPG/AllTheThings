@@ -101,7 +101,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			n(256828, {	-- Dennia Silvertongue
-				["description"] = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
+				["description"] = createLocalizationString({
+					readable = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
+					constant = "THIS_VENDOR_SELLS_ADDITIONAL_COPIES_OF_THE",
+					export = true,
+					text = {
+						en = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此商人只向在促销活动期间已获得该物品的玩家出售额外的促销装饰副本。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 51.1, 56.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(252668, {	-- "The Harbinger" Painting (DECOR!)
@@ -389,7 +406,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coord"] = { 24.8, 69.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(265674, {	-- Tasty Meat
-						["description"] = "If you feed a nearby Mischevious Chick, you'll get a reward.",
+						["description"] = createLocalizationString({
+							readable = "If you feed a nearby Mischevious Chick, you'll get a reward.",
+							constant = "IF_YOU_FEED_A_NEARBY_MISCHEVIOUS_CHICK_YOU_LL",
+							export = true,
+							text = {
+								en = "If you feed a nearby Mischevious Chick, you'll get a reward.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你喂附近的一只淘气小鸡，你会得到奖励。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -437,7 +471,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(274734),	-- Framed Horde Pride (DECOR!)
 					i(276281, {	-- Kickable Practice Ball
 						ach(63343, {	-- Goal!
-							["description"] = "Kick three balls from the center of the field into either nearby goal.",
+							["description"] = createLocalizationString({
+								readable = "Kick three balls from the center of the field into either nearby goal.",
+								constant = "KICK_THREE_BALLS_FROM_THE_CENTER_OF_THE_FIELD",
+								export = true,
+								text = {
+									en = "Kick three balls from the center of the field into either nearby goal.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "将三个球从场地中央踢进附近的任一球门。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 39.4, 59.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 							["groups"] = {
 								i(274736),	-- Framed Alliance Pride (DECOR!)
@@ -464,86 +515,154 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Season 1
 					--- Trade DOWN
 					i(263976, {	-- Bundle of Adventurer Dawncrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
+						["description"] = createLocalizationString({
+							readable = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
+							constant = "CFFFF0000_DOWNGRADE_R_COST_LFR_CREST_RECEIVE",
+							export = true,
+							text = {
+								en = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n|cffff0000 -- 降级 --|r\n\n消耗：随机团队纹章\n获得：冒险者纹章",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "c", VETERAN_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246754, {	-- Pouch of Veteran Dawncrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_NORMAL_CREST_RECEIVE",
 						["cost"] = { { "c", CHAMPION_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246755, {	-- Satchel of Champion Dawncrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_HEROIC_CREST_RECEIVE",
 						["cost"] = { { "c", HERO_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246756, {	-- Pack of Hero Dawncrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_MYTHIC_CREST_RECEIVE",
 						["cost"] = { { "c", MYTH_DAWNCREST, 10 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					--- Trade UP
 					i(263977, {	-- Venerable Satchel of Veteran Dawncrests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+						["description"] = createLocalizationString({
+							readable = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+							constant = "CFF4CAF50_UPGRADE_R_COST_ADVENTURER_CREST",
+							export = true,
+							text = {
+								en = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n|cff4caf50 -- 升级 --|r\n\n消耗：冒险者纹章\n获得：随机团队纹章",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "c", ADVENTURER_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246751, {	-- Triumphant Satchel of Champion Dawncrests (TODO: Blizzard bug - same item ID as vault vendor)
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "~L.CFF4CAF50_UPGRADE_R_COST_LFR_CREST_RECEIVE",
 						["cost"] = { { "c", VETERAN_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246752, {	-- Celebratory Pack of Hero Dawncrests (TODO: Blizzard bug - same item ID as vault vendor)
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+						["description"] = createLocalizationString({
+							readable = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+							constant = "CFF4CAF50_UPGRADE_R_COST_NORMAL_CREST_RECEIVE_2",
+							export = true,
+							text = {
+								en = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n|cff4caf50 -- 升级 --|r\n\n消耗：普通纹章\n获得：英雄纹章",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "c", CHAMPION_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					i(246753, {	-- Glorious Cluster of Myth Dawncrests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+						["description"] = createLocalizationString({
+							readable = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+							constant = "CFF4CAF50_UPGRADE_R_COST_HERO_CREST_RECEIVE",
+							export = true,
+							text = {
+								en = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n|cff4caf50 -- 升级 --|r\n\n消耗：英雄纹章\n获得：神话纹章",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "c", HERO_DAWNCREST, 30 } },
 						["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 					}),
 					-- Season 2
 					--- Trade DOWN
 					i(269856, {	-- Bundle of Adventurer Mistcrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: LFR Crest\nReceive: Adventurer Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_LFR_CREST_RECEIVE",
 						["cost"] = { { "c", VETERAN_MISTCREST, 10 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					i(269859, {	-- Pouch of Veteran Mistcrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_NORMAL_CREST_RECEIVE",
 						["cost"] = { { "c", CHAMPION_MISTCREST, 10 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					i(269857, {	-- Satchel of Champion Mistcrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_HEROIC_CREST_RECEIVE",
 						["cost"] = { { "c", HERO_MISTCREST, 10 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					i(269858, {	-- Pack of Hero Mistcrests
-						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["description"] = "~L.CFFFF0000_DOWNGRADE_R_COST_MYTHIC_CREST_RECEIVE",
 						["cost"] = { { "c", MYTH_MISTCREST, 10 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					--- Trade UP
 					i(269867, {	-- Venerable Satchel of Veteran Mistcrests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Adventurer Crest\nReceive: LFR Crest",
+						["description"] = "~L.CFF4CAF50_UPGRADE_R_COST_ADVENTURER_CREST",
 						["cost"] = { { "c", ADVENTURER_MISTCREST, 30 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					i(269864, {	-- Triumphant Satchel of Champion Mistcrests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["description"] = "~L.CFF4CAF50_UPGRADE_R_COST_LFR_CREST_RECEIVE",
 						["cost"] = { { "c", VETERAN_MISTCREST, 30 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					i(269865, {	-- Celebratory Pack of Hero Mistcrests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Hero Crest",
+						["description"] = "~L.CFF4CAF50_UPGRADE_R_COST_NORMAL_CREST_RECEIVE_2",
 						["cost"] = { { "c", CHAMPION_MISTCREST, 30 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 					i(269866, {	-- Glorious Cluster of Myth Mistcrests
-						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Hero Crest\nReceive: Myth Crest",
+						["description"] = "~L.CFF4CAF50_UPGRADE_R_COST_HERO_CREST_RECEIVE",
 						["cost"] = { { "c", HERO_MISTCREST, 30 } },
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),

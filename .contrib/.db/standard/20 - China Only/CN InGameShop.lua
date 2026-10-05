@@ -44,7 +44,24 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	}),
 	-- #endif
 	cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
-		["description"] = "Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",
+		["description"] = createLocalizationString({
+			readable = "Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",
+			constant = "CAN_BE_BOUGHT_FOR_200_RMB_27_USD_IN_THE_INGAME",
+			export = true,
+			text = {
+				en = "Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "可在游戏内商城以 ¥200 人民币（约 27 美元）购买。\n\n每年只能购买 12 个箱子。",
+				-- TODO: tw = "",
+			},
+		}),
 		["timeline"] = { ADDED_3_4_3, "removed 3.5.10", "added 4.0.3" },	-- Originally added in Wotlk Classic, it later got also added in Retail. Not available in Titan Reforged
 		["groups"] = {
 			cnONLY(i(227362)),	-- Golden Ashes of Al'ar (MOUNT!) (CN Only)

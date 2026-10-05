@@ -19,7 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["customCollect"] = "SL_COV_VEN",
 			}, {
 				q(62691, {	-- A Calling in Revendreth
-					["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
+					["description"] = "~L.WILL_ONLY_BE_OFFERED_AS_THE_INITIAL_CALLING",
 					["sourceQuests"] = { 62695 },	-- A Call to Service
 					["provider"] = { "n", 165302 },	-- Rendle
 					["coord"] = { 61.6, 75.6, SINFALL_DEPTHS },

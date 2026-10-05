@@ -261,7 +261,24 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			n(QUESTS, {
 				spell(281237, {	-- Reorigination Array
-					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
+					["description"] = createLocalizationString({
+						readable = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
+						constant = "AS_MENTIONED_ABOVE_REORIGINATION_ARRAY_CAN",
+						export = true,
+						text = {
+							en = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如上所述，复原阵列最多可叠加 10 层，其提示框会说明这个系统的运作方式。每周都有一个隐藏的小任务，要求击败奥迪尔中的 3 个首领，该目标可在任意难度下完成。你不需要拥有任何来自奥迪尔的艾泽里特护甲就能推进这些任务。完成此任务后，你在奥迪尔中将永久获得一层复原阵列。\n\n整套升级系统的进度由十几个不同的标记任务构成，列于下方。但请注意，这些任务没有数据库条目，因为它们只用作标记，不过仍可在游戏内查询其完成状态。该系统的第一部分决定当周在奥迪尔中击杀了多少个首领：",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						q(53568, {	-- Kill Credit 1
 							["name"] = "Kill Credit 1",

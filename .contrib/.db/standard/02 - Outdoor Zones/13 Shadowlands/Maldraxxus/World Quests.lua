@@ -7,10 +7,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(WORLD_QUESTS, {
 			n(REWARDS, {
 				i(183111, {	-- Animated Ulna
-					["description"] = "A rare reward from pet battle WQs in Maldraxxus.",
+					["description"] = createLocalizationString({
+						readable = "A rare reward from pet battle WQs in Maldraxxus.",
+						constant = "A_RARE_REWARD_FROM_PET_BATTLE_WQS_IN_MALDRAXXUS",
+						export = true,
+						text = {
+							en = "A rare reward from pet battle WQs in Maldraxxus.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "来自玛卓克萨斯宠物对战世界任务的稀有奖励。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(187858, {	-- Bunny Soul
-					["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
+					["description"] = "~L.HAS_A_CHANCE_TO_BE_LISTED_AS_A_REWARD_FOR",
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 			}),
@@ -83,7 +100,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(58490, {	-- Deadly Reminder
 				n(161857, {	-- Nirvaska the Summoner
 					["questID"] = 58629,
-					["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
+					["description"] = createLocalizationString({
+						readable = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
+						constant = "ONLY_SPAWNS_WHEN_THE_CFFFFD700DEADLY_REMINDER_R",
+						export = true,
+						text = {
+							en = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅在 |cFFFFD700致命提醒|r 世界任务激活时刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 50.6, 63.2, MALDRAXXUS },
 					["isDaily"] = true,
 					["groups"] = {

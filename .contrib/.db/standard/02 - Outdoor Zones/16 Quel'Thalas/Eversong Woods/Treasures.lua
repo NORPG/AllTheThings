@@ -62,7 +62,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(263211),	-- Gilded Eversong Cup (DECOR!)
 						o(613729, {	-- Sunstrider Vessel
 							["provider"] = { "o", 613708 },	-- Sunstrider Vessel / Gift of the Phoenix mid-phase ID for treasure
-							["description"] = "Pick up the Vessel and catch 5 Cinder Embers, then place it back where you picked it up.",
+							["description"] = createLocalizationString({
+								readable = "Pick up the Vessel and catch 5 Cinder Embers, then place it back where you picked it up.",
+								constant = "PICK_UP_THE_VESSEL_AND_CATCH_5_CINDER_EMBERS",
+								export = true,
+								text = {
+									en = "Pick up the Vessel and catch 5 Cinder Embers, then place it back where you picked it up.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "拾取容器并接住 5 个炽炭余烬，然后把它放回你拾取它的地方。",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 93545,
 						}),
 					},
@@ -73,7 +90,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						i(265828),	-- Gilded Armillary Sphere (750g JUNK!)
 						i(262453, {	-- Heathlight Armillary (DECOR!)
-							["description"] = "Complete any quest after looting the 'Gilded Armillary Sphere' to automatically collect this item.",
+							["description"] = createLocalizationString({
+								readable = "Complete any quest after looting the 'Gilded Armillary Sphere' to automatically collect this item.",
+								constant = "COMPLETE_ANY_QUEST_AFTER_LOOTING_THE_GILDED",
+								export = true,
+								text = {
+									en = "Complete any quest after looting the 'Gilded Armillary Sphere' to automatically collect this item.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "拾取“鎏金浑天仪”后完成任意任务，即可自动收集该物品。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -118,7 +152,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				o(613252, {	-- Triple-Locked Safebox
-					["description"] = "Pick up the torch and find three keys in your general area.",
+					["description"] = createLocalizationString({
+						readable = "Pick up the torch and find three keys in your general area.",
+						constant = "PICK_UP_THE_TORCH_AND_FIND_THREE_KEYS_IN_YOUR",
+						export = true,
+						text = {
+							en = "Pick up the torch and find three keys in your general area.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "拾取火炬，并在附近区域找到三把钥匙。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 38.9, 76.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["questID"] = 93456,
 					["cost"] = {

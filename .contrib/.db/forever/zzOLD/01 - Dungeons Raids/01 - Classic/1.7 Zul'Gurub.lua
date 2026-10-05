@@ -566,7 +566,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 				})),
 				q(8240, {	-- A Bijou for Zanza
-					["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
+					["description"] = createLocalizationString({
+						readable = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
+						constant = "COSTS_1_BIJOU_OF_ANY_COLOR_PER_TURN_IN_THERE",
+						export = true,
+						text = {
+							en = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "每次上交需要 1 枚任意颜色的宝石。游戏中有 9 种颜色和 8 个职业（萨满和圣骑士各额外多 1 个），因此一些公会会给特定职业分配特定颜色的宝石，并把其中一种当作万能牌。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 15070,	-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, MAP.STRANGLETHORN_VALE },
 					["cost"] = {
@@ -604,7 +621,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				q(8196, {	-- Essence Mangoes
-					["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
+					["description"] = createLocalizationString({
+						readable = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
+						constant = "NO_STOP_WHAT_ARE_YOU_DOING_DO_NOT_WASTE_YOUR",
+						export = true,
+						text = {
+							en = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "不。住手。你在干什么！看在老天爷的份上，别把代币浪费在这上面！\n - Crieve",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, MAP.STRANGLETHORN_VALE },
 					["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
@@ -658,7 +692,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				q(8183, {	-- The Heart of Hakkar
-					["description"] = "Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
+					["description"] = createLocalizationString({
+						readable = "Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
+						constant = "TURNING_THIS_QUEST_IN_WILL_CAUSE_A_WORLD_BUFF",
+						export = true,
+						text = {
+							en = "Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "交还此任务会让岛上或藏宝海湾的玩家获得一个世界增益。打算交任务时请提前通知，方便那些想为团队副本获取世界增益的人！",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 					["maps"] = { MAP.STRANGLETHORN_VALE },
 					["lvl"] = 58,
@@ -1066,7 +1117,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			d(DIFFICULTY.LEGACY_RAID.PLAYER20, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
 			-- #endif
 			o(180229, {	-- Jinxed Hoodoo Pile
-				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
+				["description"] = createLocalizationString({
+					readable = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
+					constant = "THESE_CAN_RANDOMLY_MIND_CONTROL_A_NEARBY_PLAYER",
+					export = true,
+					text = {
+						en = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "它们会随机精神控制附近的玩家。小心。\n\n另外别杀了它们！（说的就是你，Diz！）",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(19727, {	-- Blood Scythe
 						["requireSkill"] = HERBALISM,
@@ -1133,16 +1201,67 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			o(180368, {	-- Tablet of Madness
-				["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
+				["description"] = createLocalizationString({
+					readable = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
+					constant = "ALCHEMISTS_WITH_300_SKILL_CAN_INTERACT_WITH_THE",
+					export = true,
+					text = {
+						en = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "拥有 300 点技能的炼金师可以与疯狂石板互动以学习该配方。",
+						-- TODO: tw = "",
+					},
+				}),
 				["requireSkill"] = ALCHEMY,
 				["groups"] = { recipe(24266) },	-- Gurubashi Mojo Madness
 			}),
 			o(180327, {	-- Brazier of Madness
-				["description"] = "There are tablets on the walls describing each boss; one of these tablets will indicate which boss will spawn by commenting that he is \"close to the edge of madness.\" The boss that spawns is chosen according to a spawn calendar, going by the day the instance ID was created.",
+				["description"] = createLocalizationString({
+					readable = "There are tablets on the walls describing each boss; one of these tablets will indicate which boss will spawn by commenting that he is \"close to the edge of madness.\" The boss that spawns is chosen according to a spawn calendar, going by the day the instance ID was created.",
+					constant = "THERE_ARE_TABLETS_ON_THE_WALLS_DESCRIBING_EACH",
+					export = true,
+					text = {
+						en = "There are tablets on the walls describing each boss; one of these tablets will indicate which boss will spawn by commenting that he is \"close to the edge of madness.\" The boss that spawns is chosen according to a spawn calendar, going by the day the instance ID was created.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "墙上有描述每个首领的石板；其中一块石板会通过评论他“濒临疯狂的边缘”来提示即将刷新的首领。刷新的首领根据刷新日历决定，按副本 ID 创建的那一天计算。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 19931, 1 } },	-- Gurubashi Mojo Madness
 				["groups"] = {
 					filter(TRINKET_F, {
-						["description"] = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
+						["description"] = createLocalizationString({
+							readable = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
+							constant = "THE_FOLLOWING_TRINKETS_CAN_BE_CRAFTED_BY_USING",
+							export = true,
+							text = {
+								en = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "以下饰品可以通过使用一个职业专属的穿孔巫毒娃娃以及每个指定材料各一份来制作，这些材料由疯狂首领掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(19951, {	-- Gri'lek's Charm of Might [Warrior]
 								["cost"] = {
@@ -1268,7 +1387,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			}),
 			n(15114, {	-- Gahz'ranka
 				["sourceQuest"] = 8227,	-- Nat's Measuring Tape
-				["description"] = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
+				["description"] = createLocalizationString({
+					readable = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
+					constant = "YOU_CAN_FISH_UP_ZULIAN_MUDSKUNK_FROM_THE_MUDDY",
+					export = true,
+					text = {
+						en = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你可以在副本中的浑浊翻涌水域钓上祖利安泥鳅，在交付纳特的卷尺后，可以从纳特·帕格处购买鱼饵。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = {
 					{ "i", 19974, 1 },	-- Mudskunk Lure
 					{ "i", 19975, 5 },	-- Zulian Mudskunk

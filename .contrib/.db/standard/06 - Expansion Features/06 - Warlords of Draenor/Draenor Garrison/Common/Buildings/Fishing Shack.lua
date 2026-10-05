@@ -12,7 +12,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["groups"] = {
 					n(QUESTS, {
 						container(112623, {	-- Pack of Fishing Supplies
-							["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
+							["description"] = createLocalizationString({
+								readable = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
+								constant = "REWARDED_BY_THE_CURRENT_FISHING_DAILY_QUEST",
+								export = true,
+								text = {
+									en = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "由渔夫小屋当前的钓鱼日常任务奖励。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								-- Only excluding 'Bag of Shiny Things' content since this container also provides those drops
 								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
@@ -233,12 +250,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(36870, {	-- Luring Nat
-							["description"] = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
+							["description"] = createLocalizationString({
+								readable = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
+								constant = "REQUIRES_UPGRADING_YOUR_FISHING_SHACK_TO_LEVEL",
+								export = true,
+								text = {
+									en = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "需要将渔夫小屋升级到 3 级，并且拥有至少 100 点德拉诺钓鱼技能（包含物品/增益）。",
+									-- TODO: tw = "",
+								},
+							}),
 							["qg"] = 85708,	-- Segumi
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36612, {	-- Luring Nat
-							["description"] = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
+							["description"] = "~L.REQUIRES_UPGRADING_YOUR_FISHING_SHACK_TO_LEVEL",
 							["qg"] = 79971,	-- Rak'jin
 							["races"] = HORDE_ONLY,
 						}),
@@ -304,7 +338,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					n(REWARDS, {
 						i(NATS_LUCKY_COIN, {
-							["description"] = "Received from turning in Lunkers at Nat Paggle in your Garrison.\nLunkers can be fished anywhere in WoD, except in your Garrison, if your Fishing Shack is at Rank3.\n\nFishing in pools is more efficient than fishing in open water.",
+							["description"] = createLocalizationString({
+								readable = "Received from turning in Lunkers at Nat Paggle in your Garrison.\nLunkers can be fished anywhere in WoD, except in your Garrison, if your Fishing Shack is at Rank3.\n\nFishing in pools is more efficient than fishing in open water.",
+								constant = "RECEIVED_FROM_TURNING_IN_LUNKERS_AT_NAT_PAGGLE",
+								export = true,
+								text = {
+									en = "Received from turning in Lunkers at Nat Paggle in your Garrison.\nLunkers can be fished anywhere in WoD, except in your Garrison, if your Fishing Shack is at Rank3.\n\nFishing in pools is more efficient than fishing in open water.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在你的要塞中向纳特·帕格上交巨型淡水鱼获得。\n如果你的钓鱼小屋达到 3 级，巨型淡水鱼可以在德拉诺的任何地方钓到，除了你的要塞内。\n\n在渔点钓鱼比在开阔水域钓鱼效率更高。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					}),
 					n(VENDORS, {

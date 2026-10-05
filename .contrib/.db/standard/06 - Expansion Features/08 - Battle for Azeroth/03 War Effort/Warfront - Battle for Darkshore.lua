@@ -105,7 +105,24 @@ root(ROOTS.ExpansionFeatures,
 						},
 						["groups"] = {
 							n(WEAPONS, {
-								["description"] = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+								["description"] = createLocalizationString({
+									readable = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+									constant = "APPEARANCES_FROM_DARKSHORE_RARES_TREASURES",
+									export = true,
+									text = {
+										en = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "外观来源：\n黑海岸稀有/宝藏\n普通战争前线通关\n普通战争前线任务\n英雄战争前线任务",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									-- Alliance
 									i(164966, { ["timeline"] = { CREATED_8_1_0 }}),	-- Glade Warden's Glaive
@@ -138,7 +155,24 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							n(BACK, {
-								["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+								["description"] = createLocalizationString({
+									readable = "Appearances from:\nDarkshore Rares/Treasures",
+									constant = "APPEARANCES_FROM_DARKSHORE_RARES_TREASURES_2",
+									export = true,
+									text = {
+										en = "Appearances from:\nDarkshore Rares/Treasures",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "外观来源：\n黑海岸稀有生物/宝藏",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									-- Alliance
 									i(166758),	-- Moonpriest's Cloak
@@ -153,7 +187,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							n(ARMOR, {
-								["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+								["description"] = "~L.APPEARANCES_FROM_DARKSHORE_RARES_TREASURES_2",
 								["groups"] = {
 									-- Alliance
 									i(166572),	-- Moonpriest's Visor
@@ -264,7 +298,24 @@ root(ROOTS.ExpansionFeatures,
 							["questID"] = 54883,
 							["isWeekly"] = true,
 							["coord"] = { 49.5, 25.1, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
+							["description"] = createLocalizationString({
+								readable = "Only shows up when Alliance Controlled.",
+								constant = "ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED",
+								export = true,
+								text = {
+									en = "Only shows up when Alliance Controlled.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "仅在被联盟控制时出现。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(166438),	-- Caged Bear (MOUNT!)
 							},
@@ -296,7 +347,24 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 40.69, 73.23, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = createLocalizationString({
+								readable = "Only shows up when Horde Controlled.",
+								constant = "ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
+								export = true,
+								text = {
+									en = "Only shows up when Horde Controlled.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "仅在被部落控制时出现。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(166449),	-- Darkshore Sentinel (PET!)
 								i(166803),	-- Umber Nightsaber (MOUNT!)
@@ -316,7 +384,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 49.68, 24.94, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
 							["groups"] = {
 								i(166428),	-- Blackpaw (MOUNT!)
 							},
@@ -327,7 +395,7 @@ root(ROOTS.ExpansionFeatures,
 							["questID"] = 54768,
 							["isWeekly"] = true,
 							["coord"] = { 41.5, 76.4, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED",
 							["groups"] = {
 								i(166449),	-- Darkshore Sentinel (PET!)
 								i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
@@ -339,7 +407,7 @@ root(ROOTS.ExpansionFeatures,
 							["questID"] = 54309,
 							["isWeekly"] = true,
 							["coord"] = { 46.51, 86.14, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED",
 							["groups"] = {
 								i(166790),	-- Highborne Memento (TOY!)
 							},
@@ -371,7 +439,7 @@ root(ROOTS.ExpansionFeatures,
 							["questID"] = 54886,
 							["isWeekly"] = true,
 							["coord"] = { 50.79, 32.22, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED",
 							["groups"] = {
 								i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)
 							},
@@ -386,7 +454,24 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						n(148790, {	-- Frightened Kodo
-							["description"] = "This npc roams around. Once you spot it, you will then need to click it to obtain the mount.",
+							["description"] = createLocalizationString({
+								readable = "This npc roams around. Once you spot it, you will then need to click it to obtain the mount.",
+								constant = "THIS_NPC_ROAMS_AROUND_ONCE_YOU_SPOT_IT_YOU_WILL",
+								export = true,
+								text = {
+									en = "This npc roams around. Once you spot it, you will then need to click it to obtain the mount.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此 NPC 会四处游荡。一旦发现它，你需要点击它才能获得坐骑。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coords"] = {
 								{ 37.01, 65.01, DARKSHORE },
 								{ 38.01, 66.01, DARKSHORE },
@@ -429,7 +514,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 50.72, 32.32, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
 							["groups"] = {
 								i(166525, {	-- Nightwreathed Egg
 									i(166528),	-- Nightwreathed Watcher (PET!)
@@ -462,7 +547,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 65.54, 19.98, DARKSHORE },
 								{ 64.39, 20.09, DARKSHORE },
 							},
-							["description"] = "Only shows up when Alliance Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED",
 							["groups"] = {
 								i(166434),	-- Captured Umber Nightsaber (MOUNT!)
 							},
@@ -478,7 +563,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 45.17, 74.99, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
 							["groups"] = {
 								i(166453),	-- Everburning Treant (PET!)
 							},
@@ -489,7 +574,7 @@ root(ROOTS.ExpansionFeatures,
 							["questID"] = 54889,
 							["isWeekly"] = true,
 							["coord"] = { 39.79, 32.94, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED",
 							["groups"] = {
 								i(166525, {	-- Nightwreathed Egg
 									i(166528),	-- Nightwreathed Watcher (PET!)
@@ -501,7 +586,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 32.98, 83.94, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
 							["groups"] = {
 								i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
 							},
@@ -517,7 +602,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 39.79, 32.94, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
 							["groups"] = {
 								-- i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)	-- Possible it's a drop here; will need data
 								i(166435),	-- Kaldorei Nightsaber (MOUNT!)
@@ -549,7 +634,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 62.12, 16.49, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
+							["description"] = "~L.ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED",
 							["groups"] = {
 								i(166790),	-- Highborne Memento (TOY!)
 							},
@@ -1356,7 +1441,24 @@ root(ROOTS.ExpansionFeatures,
 												i(166758),	-- Moonpriest's Cloak
 												i(166759),	-- Darkwood Sentinel's Drape
 												i(166760, {	-- Kaldorei Archer's Greatcloak
-													["description"] = "This might be only available as Mail class.",
+													["description"] = createLocalizationString({
+														readable = "This might be only available as Mail class.",
+														constant = "THIS_MIGHT_BE_ONLY_AVAILABLE_AS_MAIL_CLASS",
+														export = true,
+														text = {
+															en = "This might be only available as Mail class.",
+															-- TODO: de = "",
+															-- TODO: es = "",
+															-- TODO: mx = "",
+															-- TODO: fr = "",
+															-- TODO: it = "",
+															-- TODO: ko = "",
+															-- TODO: pt = "",
+															-- TODO: ru = "",
+															cn = "该物品可能仅限锁甲职业获得。",
+															-- TODO: tw = "",
+														},
+													}),
 												}),
 												i(166761),	-- Wardenguard's Drape
 												i(166572),	-- Moonpriest's Visor
@@ -1429,13 +1531,47 @@ root(ROOTS.ExpansionFeatures,
 												i(165625),	-- Sentinel's Warhammer
 												i(166758),	-- Moonpriest's Cloak
 												i(166759, {	-- Darkwood Sentinel's Drape
-													["description"] = "This might be only available as Leather class.",
+													["description"] = createLocalizationString({
+														readable = "This might be only available as Leather class.",
+														constant = "THIS_MIGHT_BE_ONLY_AVAILABLE_AS_LEATHER_CLASS",
+														export = true,
+														text = {
+															en = "This might be only available as Leather class.",
+															-- TODO: de = "",
+															-- TODO: es = "",
+															-- TODO: mx = "",
+															-- TODO: fr = "",
+															-- TODO: it = "",
+															-- TODO: ko = "",
+															-- TODO: pt = "",
+															-- TODO: ru = "",
+															cn = "该物品可能仅限皮甲职业获得。",
+															-- TODO: tw = "",
+														},
+													}),
 												}),
 												i(166760, {	-- Kaldorei Archer's Greatcloak
-													["description"] = "This might be only available as Mail class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_MAIL_CLASS",
 												}),
 												i(166761, {	-- Wardenguard's Drape
-													["description"] = "This might be only available as Plate class.",
+													["description"] = createLocalizationString({
+														readable = "This might be only available as Plate class.",
+														constant = "THIS_MIGHT_BE_ONLY_AVAILABLE_AS_PLATE_CLASS",
+														export = true,
+														text = {
+															en = "This might be only available as Plate class.",
+															-- TODO: de = "",
+															-- TODO: es = "",
+															-- TODO: mx = "",
+															-- TODO: fr = "",
+															-- TODO: it = "",
+															-- TODO: ko = "",
+															-- TODO: pt = "",
+															-- TODO: ru = "",
+															cn = "该物品可能仅限板甲职业获得。",
+															-- TODO: tw = "",
+														},
+													}),
 												}),
 												i(166572),	-- Moonpriest's Visor
 												i(165435),	-- Moonpriest's Coronet
@@ -1644,16 +1780,33 @@ root(ROOTS.ExpansionFeatures,
 												i(166802),	-- Plaguebringer's Spellblade
 												i(166762, {	-- Plaguebringer's Drape
 													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
-													["description"] = "This might be only available as Cloth class.",
+													["description"] = createLocalizationString({
+														readable = "This might be only available as Cloth class.",
+														constant = "THIS_MIGHT_BE_ONLY_AVAILABLE_AS_CLOTH_CLASS",
+														export = true,
+														text = {
+															en = "This might be only available as Cloth class.",
+															-- TODO: de = "",
+															-- TODO: es = "",
+															-- TODO: mx = "",
+															-- TODO: fr = "",
+															-- TODO: it = "",
+															-- TODO: ko = "",
+															-- TODO: pt = "",
+															-- TODO: ru = "",
+															cn = "这可能只有布甲职业才能获得。",
+															-- TODO: tw = "",
+														},
+													}),
 												}),
 												i(166763, {	-- Deathstalker's Cloak
-													["description"] = "This might be only available as Leather class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_LEATHER_CLASS",
 												}),
 												i(166764, {	-- Blightguard's Cloak
-													["description"] = "This might be only available as Mail class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_MAIL_CLASS",
 												}),
 												i(166765, {	-- Deathguard's Greatcloak
-													["description"] = "This might be only available as Plate class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_PLATE_CLASS",
 												}),
 												i(165467),	-- Plaguebringer's Cowl
 												i(166564),	-- Plaguebringer's Skullcap
@@ -1725,16 +1878,16 @@ root(ROOTS.ExpansionFeatures,
 												i(166802),	-- Plaguebringer's Spellblade
 												i(166762, {	-- Plaguebringer's Drape
 													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
-													["description"] = "This might be only available as Cloth class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_CLOTH_CLASS",
 												}),
 												i(166763, {	-- Deathstalker's Cloak
-													["description"] = "This might be only available as Leather class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_LEATHER_CLASS",
 												}),
 												i(166764, {	-- Blightguard's Cloak
-													["description"] = "This might be only available as Mail class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_MAIL_CLASS",
 												}),
 												i(166765, {	-- Deathguard's Greatcloak
-													["description"] = "This might be only available as Plate class.",
+													["description"] = "~L.THIS_MIGHT_BE_ONLY_AVAILABLE_AS_PLATE_CLASS",
 												}),
 												i(165467),	-- Plaguebringer's Cowl
 												i(166564),	-- Plaguebringer's Skullcap
@@ -1806,7 +1959,24 @@ root(ROOTS.ExpansionFeatures,
 								-- [ ] Normal Quest (6) [Weapons]
 								-- [ ] Heroic Quest (23) [Cloaks/Armor/Weapons]
 
-								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
+								["description"] = createLocalizationString({
+									readable = "These are obtained by winning the warfront and can be awarded multiple times a week.",
+									constant = "THESE_ARE_OBTAINED_BY_WINNING_THE_WARFRONT_AND",
+									export = true,
+									text = {
+										en = "These are obtained by winning the warfront and can be awarded multiple times a week.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "通过赢得战争前线获得，每周可多次获得。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = bubbleDown({["modID"] = 3}, {
 									-- ALLIANCE SET --
 									un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive

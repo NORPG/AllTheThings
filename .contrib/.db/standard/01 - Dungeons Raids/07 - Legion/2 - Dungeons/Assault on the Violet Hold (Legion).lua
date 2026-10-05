@@ -4,7 +4,24 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	inst(777, {	-- Assault on Violet Hold (Legion)
-		["description"] = "The bosses are random on all difficulties except Mythic.",
+		["description"] = createLocalizationString({
+			readable = "The bosses are random on all difficulties except Mythic.",
+			constant = "THE_BOSSES_ARE_RANDOM_ON_ALL_DIFFICULTIES_2",
+			export = true,
+			text = {
+				en = "The bosses are random on all difficulties except Mythic.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "除史诗难度外，所有难度下首领都是随机的。",
+				-- TODO: tw = "",
+			},
+		}),
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 		["lvl"] = 105,

@@ -48,36 +48,138 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(169778) },	-- Enchanting Crystal (QI!)
 		}),
 		q(56787, {	-- Additional Supplies
-			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 2.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 2.",
+				constant = "OFFERED_WHEN_CFFFFD700BLADESMAN_INOWARI_R",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 2.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700剑客伊诺瓦里|r 达到 2 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169903) },	-- Nazjatar Survival Pack
 		}),
 		q(56810, {	-- A Friend Indeed
-			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 7.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 7.",
+				constant = "OFFERED_WHEN_CFFFFD700POEN_GILLBRACK_R_REACHES",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700鲍恩·分鳃|r 达到 7 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrack)
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(169919) },	-- Unshackled Commendation Crate
 		}),
 		q(56777, {	-- A Gift From The Clan
-			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 2.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Hunter Akana|r reaches rank 2.",
+				constant = "OFFERED_WHEN_CFFFFD700HUNTER_AKANA_R_REACHES",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Hunter Akana|r reaches rank 2.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700猎人阿卡纳|r 达到 2 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 150202 },	-- Waveblade Hunter (Hunter Akana)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169903) },	-- Nazjatar Survival Pack
 		}),
 		q(56789, {	-- A Gift of Supplies
-			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 7.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 7.",
+				constant = "OFFERED_WHEN_CFFFFD700BLADESMAN_INOWARI_R_2",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700剑客伊诺瓦里|r 达到 7 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169904) },	-- Ankoan Commendation Crate
 		}),
 		q(56778, {	-- A Glint of the Darkness
-			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
+				constant = "OFFERED_WHEN_CFFFFD700HUNTER_AKANA_R_REACHES_2",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700猎人阿卡纳|r 达到 5 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 150202 },	-- Waveblade Hunter (Hunter Akana)
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(55984, {	-- A Good Offense
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = createLocalizationString({
+				readable = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				constant = "REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
+				export = true,
+				text = {
+					en = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要|cFFFFD700维姆·盐心|r成为你的朋友。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend	-- todo: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153623 },	-- Korl
 			["coord"] = { 36.3, 30.1, NAZJATAR },
@@ -85,13 +187,47 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 		}),
 		q(56816, {	-- A Kelfin's Best Friend
-			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 9.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 9.",
+				constant = "OFFERED_WHEN_CFFFFD700NERI_SHARPFIN_R_REACHES",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 9.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700奈莉·锐鳍|r 达到 9 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151300 },	-- Kelfin Scout (Neri Sharpfin)
 			["coord"] = { 45.0, 60.9, NAZJATAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(55636, {	-- A Life's Work
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = createLocalizationString({
+				readable = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				constant = "REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
+				export = true,
+				text = {
+					en = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要|cFFFFD700先知奥里|r成为你的朋友。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "o", 325853 },	-- Empty Bookcase
 			["coord"] = { 78.4, 28.6, NAZJATAR },
@@ -105,7 +241,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55993, {	-- A Little Edge
-			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+			["description"] = createLocalizationString({
+				readable = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+				constant = "REQUIRES_CFFFFD700NERI_SHARPFIN_R_AS_YOUR",
+				export = true,
+				text = {
+					en = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要|cFFFFD700内里·利鳍|r成为你的朋友。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 153743 },	-- Kade Makreef
 			["coord"] = { 26.0, 41.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -113,7 +266,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168605) },	-- Chitterspine Spine (QI!)
 		}),
 		q(55662, {	-- Arcane Cache (A)
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = createLocalizationString({
+				readable = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+				constant = "REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
+				export = true,
+				text = {
+					en = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要|cFFFFD700猎人阿卡纳|r成为你的朋友。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 325894 },	-- Arcane Cache
 			["coord"] = { 53.1, 28.3, NAZJATAR },
@@ -122,7 +292,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168199) },	-- Arcane Cache Key (QI!)
 		}),
 		q(56233, {	-- Arcane Cache (H)
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = createLocalizationString({
+				readable = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+				constant = "REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
+				export = true,
+				text = {
+					en = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要|cFFFFD700波恩·鳃棘|r成为你的朋友。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "o", 325894 },	-- Arcane Cache
 			["coord"] = { 53.1, 28.3, NAZJATAR },
@@ -143,7 +330,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56156, {	-- A Tempered Blade
-			["description"] = "Must complete this quest for the rest of the zone to become available.",
+			["description"] = createLocalizationString({
+				readable = "Must complete this quest for the rest of the zone to become available.",
+				constant = "MUST_COMPLETE_THIS_QUEST_FOR_THE_REST_OF_THE",
+				export = true,
+				text = {
+					en = "Must complete this quest for the rest of the zone to become available.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "必须完成此任务，该区域的其他内容才会开放。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55363,	-- Rescue the Farseer
 			["provider"] = { "n", 154248 },	-- Bladesman Inowari
 			["coord"] = { 39.4, 53.4, NAZJATAR },
@@ -153,7 +357,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56779, {	-- A Valorous Reward
-			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 7.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Hunter Akana|r reaches rank 7.",
+				constant = "OFFERED_WHEN_CFFFFD700HUNTER_AKANA_R_REACHES_3",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Hunter Akana|r reaches rank 7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700猎人阿卡纳|r 达到 7 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 150202 },	-- Hunter Akana
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169904) },	-- Ankoan Commendation Crate
@@ -226,7 +447,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56813, {	-- An Unexpected Friend
-			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 2.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 2.",
+				constant = "OFFERED_WHEN_CFFFFD700NERI_SHARPFIN_R_REACHES_2",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 2.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700奈莉·锐鳍|r 达到 2 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["qgs"] = {
 				149904,	-- Neri Sharpfin
 				151300,	-- Kelfin Scout
@@ -257,7 +495,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["repeatable"] = true,
 		}),
 		q(56346, {	-- Ancient Technology
-			["description"] = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+			["description"] = createLocalizationString({
+				readable = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+				constant = "THIS_QUEST_IS_NOT_AVAILABLE_UNLESS_YOU_HAVE_150",
+				export = true,
+				text = {
+					en = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "除非你的库尔提拉斯炼金、锻造、工程学、珠宝加工、制皮或裁缝达到 150 点，否则无法接取此任务。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "o", 327596 },	-- Broken Abyssal Focus
 			["coord"] = { 38.1, 36.9, NAZJATAR },
@@ -265,7 +520,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(169320) },	-- Broken Power Core (QI!)
 		}),
 		q(56354, {	-- Ancient Technology
-			["description"] = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+			["description"] = createLocalizationString({
+				readable = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+				constant = "THIS_QUEST_IS_NOT_AVAILABLE_UNLESS_YOU_HAVE_150_2",
+				export = true,
+				text = {
+					en = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "除非你的赞达拉炼金、锻造、工程学、珠宝加工、制皮或裁缝达到 150 点，否则无法接取此任务。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "o", 327596 },	-- Broken Abyssal Focus
 			["coord"] = { 38.1, 36.9, NAZJATAR },
@@ -273,7 +545,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(169320) },	-- Broken Power Core (QI!)
 		}),
 		q(56814, {	-- Anytime You Need a Friend
-			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
+				constant = "OFFERED_WHEN_CFFFFD700NERI_SHARPFIN_R_REACHES_3",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700奈莉·锐鳍|r 达到 5 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["qgs"] = {
 				149904,	-- Neri Sharpfin
 				151300,	-- Kelfin Scout
@@ -282,7 +571,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(169908) },	-- Cleverly Concealed Supplies
 		}),
 		q(56218, {	-- Beauty in the Deeps
-			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",
+				constant = "OFFERED_WHEN_CFFFFD700BLADESMAN_INOWARI_R_3",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700剑客伊诺瓦里|r 达到 20 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["qgs"] = {
 				154297,	-- Bladesman Inowari
 				149803,	-- Bladesman Inowari (inactive in front of the bonfire)
@@ -539,7 +845,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 		}),
 		q(56370, {	-- Break a Few Eggs (A)
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["qgs"] = {
 				154075,	-- Tracker Kenji
@@ -553,7 +859,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 		}),
 		q(55986, {	-- Break a Few Eggs (H)
-			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700NERI_SHARPFIN_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save A Friend	-- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 			["provider"] = { "n", 153684 },	-- Caitfin Gills
 			["coord"] = { 70.2, 23.2, NAZJATAR },
@@ -612,7 +918,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168540) },	-- Deepsea Crystal (QI!)
 		}),
 		q(55681, {	-- Crab Marks The Spot
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = createLocalizationString({
+				readable = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+				constant = "REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
+				export = true,
+				text = {
+					en = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要|cFFFFD700剑士伊诺瓦里|r成为你的朋友。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 325954 },	-- Illegible Treasure Map
 			["coord"] = { 43.8, 54.5, NAZJATAR },
@@ -766,7 +1089,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168850) },	-- Time-Lost Battlefield Memento (Rank 1)
 		})),
 		q(56001, {	-- Drunk Angry Murlocs (A)
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.5, 26.5, NAZJATAR },
@@ -782,7 +1105,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56265, {	-- Drunk Angry Murlocs (H)
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save A Friend
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.5, 26.5, NAZJATAR },
@@ -835,14 +1158,31 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168433) },	-- Vent Kelp Sprout (QI!)
 		}),
 		q(56246, {	-- Enchanted Lock (A)
-			["description"] = "Match 3 purple runes.",
+			["description"] = createLocalizationString({
+				readable = "Match 3 purple runes.",
+				constant = "MATCH_3_PURPLE_RUNES",
+				export = true,
+				text = {
+					en = "Match 3 purple runes.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "配对 3 个紫色符文。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 56243,	-- Diaries of the Dead
 			["provider"] = { "o", 327592 },	-- Enchanted Lock
 			["coord"] = { 78.8, 41.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56245, {	-- Enchanted Lock (H)
-			["description"] = "Match 3 purple runes.",
+			["description"] = "~L.MATCH_3_PURPLE_RUNES",
 			["sourceQuest"] = 56244,	-- Diaries of the Dead
 			["provider"] = { "o", 327592 },	-- Enchanted Lock
 			["coord"] = { 78.8, 41.1, NAZJATAR },
@@ -863,7 +1203,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55985, {	-- Extra Shiny
-			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700NERI_SHARPFIN_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153685 },	-- Mari Lazarfin
 			["coord"] = { 60.8, 30.9, NAZJATAR },
@@ -892,7 +1232,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["cost"] = { { "i", 170176, 1 } },	-- 1x Fathom Ray Wing
 		}),
 		q(56149, {	-- Feed Them All (A)
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "n", 154235 },	-- Harvester Akaro
 			["coord"] = { 55.6, 47.0, NAZJATAR },
@@ -904,7 +1244,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55715, {	-- Feed Them All (H)
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 152786 },	-- Oben Sandfin
 			["coord"] = { 57.4, 45.6, NAZJATAR },
@@ -916,7 +1256,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55661, {	-- Fighting Venomous With Venom	-- TODO:  verify sourceQuest
-			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700NERI_SHARPFIN_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153777 },	-- Cando Mikfin
 			["coord"] = { 64.5, 48.5, NAZJATAR },
@@ -929,7 +1269,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55846, {	-- Forbidden Rituals
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 153147 },	-- Apprentice Ukaro
 			["coord"] = { 56.5, 29.2, NAZJATAR },
@@ -938,7 +1278,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168398) },	-- Tome of Binding (QI!)
 		}),
 		q(55683, {	-- Forgotten Memories
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 152716 },	-- Arylina
 			["coord"] = { 78.5, 26.8, NAZJATAR },
@@ -974,7 +1314,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56812, {	-- Friendship Is Magic
-			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 13.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 13.",
+				constant = "OFFERED_WHEN_CFFFFD700POEN_GILLBRACK_R_REACHES_2",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 13.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700鲍恩·分鳃|r 达到 13 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrack)
 			["races"] = HORDE_ONLY,
@@ -988,7 +1345,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168847) },	-- Pearl of Manifest Ambitions (Rank 2)
 		}),
 		q(56806, {	-- Friends Through Eternity
-			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 9.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 9.",
+				constant = "OFFERED_WHEN_CFFFFD700VIM_BRINEHEART_R_REACHES",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 9.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700维姆·盐心|r 达到 9 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["qgs"] = {
 				151309,	-- Kelfin Scout (Vim Brineheart)
@@ -1000,7 +1374,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55871, {	-- Gather Friends	-- also triggered 56544, 56682
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151311 },	-- Narm
 			["coord"] = { 26.6, 42.3, NAZJATAR },
@@ -1022,25 +1396,93 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["repeatable"] = true,
 		}),
 		q(56215, {	-- Glittering Shell
-			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
+				constant = "OFFERED_WHEN_CFFFFD700POEN_GILLBRACK_R_REACHES_3",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700鲍恩·分鳃|r 达到 20 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151310 },	-- Poen Gillbrack
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
 			["groups"] = { i(169353) },	-- Lustrous Glimmershell (PET!)
 		}),
 		q(56214, {	-- Good Girl
-			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 20.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 20.",
+				constant = "OFFERED_WHEN_CFFFFD700NERI_SHARPFIN_R_REACHES_4",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 20.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700奈莉·锐鳍|r 达到 20 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151300 },	-- Neri Sharpfin
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
 			["groups"] = {
 				i(169199, {	-- Snapdragon Kelpstalker (MOUNT!)
-					["description"] = "Learning this mount also unlocks the Alliance |cFFA330C9Deepcoral Snapdragon|r mount.",
+					["description"] = createLocalizationString({
+						readable = "Learning this mount also unlocks the Alliance |cFFA330C9Deepcoral Snapdragon|r mount.",
+						constant = "LEARNING_THIS_MOUNT_ALSO_UNLOCKS_THE_ALLIANCE",
+						export = true,
+						text = {
+							en = "Learning this mount also unlocks the Alliance |cFFA330C9Deepcoral Snapdragon|r mount.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "学习此坐骑还会解锁联盟的|cFFA330C9深珊瑚海龙|r坐骑。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			},
 		}),
 		q(56784, {	-- Helpful Provisions
-			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 7.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 7.",
+				constant = "OFFERED_WHEN_CFFFFD700FARSEER_ORI_R_REACHES",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700先知奥利|r 达到 7 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154304 },	-- Farseer Ori
 			["races"] = ALLIANCE_ONLY,
@@ -1056,7 +1498,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56780, {	-- Hidden, But Dangerous
-			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 9.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Hunter Akana|r reaches rank 9.",
+				constant = "OFFERED_WHEN_CFFFFD700HUNTER_AKANA_R_REACHES_4",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Hunter Akana|r reaches rank 9.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700猎人阿卡纳|r 达到 9 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 150202 },	-- Hunter Akana
 			["races"] = ALLIANCE_ONLY,
@@ -1100,7 +1559,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56803, {	-- Just A Friend
-			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 2.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 2.",
+				constant = "OFFERED_WHEN_CFFFFD700VIM_BRINEHEART_R_REACHES_2",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 2.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700维姆·盐心|r 达到 2 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- ["sourceQuest"] = ,
 			["qgs"] = {
 				149906,	-- Vim Brineheart
@@ -1110,7 +1586,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56150, {	-- Kill the Kritch (A)
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 153537 },	-- Rlgmrr
 			["coord"] = { 45.0, 76.7, NAZJATAR },
@@ -1125,7 +1601,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 		}),
 		q(56216, {	-- Last Heirloom
-			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
+				constant = "OFFERED_WHEN_CFFFFD700FARSEER_ORI_R_REACHES_2",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700先知奥利|r 达到 20 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["qgs"] = {
 				154304,	-- Farseer Ori (active bodyguard ID)
 				149805,	-- (inactive in front of the bonfire)
@@ -1134,7 +1627,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["lvl"] = 120,
 			["groups"] = {
 				i(170155, {	-- Carved Ankoan Charm (TOY!)
-					["description"] = "Learning this toy also unlocks the Horde |cFF0070DEBook of the Unshackled|r toy.",
+					["description"] = createLocalizationString({
+						readable = "Learning this toy also unlocks the Horde |cFF0070DEBook of the Unshackled|r toy.",
+						constant = "LEARNING_THIS_TOY_ALSO_UNLOCKS_THE_HORDE",
+						export = true,
+						text = {
+							en = "Learning this toy also unlocks the Horde |cFF0070DEBook of the Unshackled|r toy.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "学习此玩具还会解锁部落的|cFF0070DE破镣者之书|r玩具。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			},
 		}),
@@ -1147,7 +1657,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 66.4, 47.3, NAZJATAR },
 		}),
 		q(57086, {	-- Legacy of the Mad Mage
-			["description"] = "Loot the Arcane Chest at the provided coordinates to get the item that starts this quest.",
+			["description"] = createLocalizationString({
+				readable = "Loot the Arcane Chest at the provided coordinates to get the item that starts this quest.",
+				constant = "LOOT_THE_ARCANE_CHEST_AT_THE_PROVIDED",
+				export = true,
+				text = {
+					en = "Loot the Arcane Chest at the provided coordinates to get the item that starts this quest.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在所示坐标处拾取奥术宝箱，即可获得开启此任务的物品。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 170512 },	-- Lesser Benthic Arcanocrystal
 			["coord"] = { 79.4, 27.2, NAZJATAR },
 			["groups"] = {
@@ -1176,7 +1703,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168541) },	-- Residue Detector (QI!)
 		}),
 		q(56146, {	-- Making Kelpberry Wine (A)
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 325869 },	-- Empty Cask
 			["coord"] = { 59.5, 42.0, NAZJATAR },
@@ -1260,7 +1787,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(54949, {	-- More Mouths To Feed
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 150123 },	-- Tracker Onu
 			["coord"] = { 35.0, 49.0, NAZJATAR },
@@ -1272,7 +1799,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56153, {	-- Most Delicious Clams (A)
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154239 },	-- Tracker Otaru
 			["coord"] = { 45.6, 19.6, NAZJATAR },
@@ -1286,7 +1813,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56035, {	-- Most Delicious Clams (H)
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend	-- todo: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153900 },	-- Sardina Lauray
 			["coord"] = { 48.7, 22.6, NAZJATAR },
@@ -1300,7 +1827,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56002, {	-- Mgglurky's Mugglrgl
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.4, 26.3, NAZJATAR },
@@ -1309,14 +1836,48 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168647) },	-- Mgglurky's Mugglrgl (QI!)
 		}),
 		q(56791, {	-- Mysterious Treasure
-			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 13.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 13.",
+				constant = "OFFERED_WHEN_CFFFFD700BLADESMAN_INOWARI_R_4",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 13.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700剑客伊诺瓦里|r 达到 13 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169917) },	-- Mysterious Azshari Chest
 		}),
 		q(56786, {	-- Naga Treasure
-			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 13.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 13.",
+				constant = "OFFERED_WHEN_CFFFFD700FARSEER_ORI_R_REACHES_3",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 13.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700先知奥利|r 达到 13 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154304 },	-- Farseer Ori
 			["races"] = ALLIANCE_ONLY,
@@ -1340,7 +1901,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 80.2, 31.8, NAZJATAR },
 		}),
 		q(55625, {	-- Pearls of Unimaginable Power
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "n", 152407 },	-- Arcanist Owara
 			["coord"] = { 31.5, 37.6, NAZJATAR },
@@ -1368,7 +1929,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55845, {	-- Plans of Attack
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326148 },	-- Naga Attack Plans
 			["coord"] = { 37.2, 19.2, NAZJATAR },
@@ -1379,7 +1940,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55877, {	-- Plug the Geysers (H)
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuests"] = { 55500 },	-- Save a Friend
 			["provider"] = { "n", 153522 },	-- Scout Tuli
 			["coord"] = { 48.0, 46.6, NAZJATAR },
@@ -1388,7 +1949,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(56157, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "n", 154246 },	-- Apprentice Inari
 			["coord"] = { 31.0, 37.7, NAZJATAR },
@@ -1397,7 +1958,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(56158, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 			["provider"] = { "n", 154245 },	-- Apprentice Unato
 			["coord"] = { 45.9, 76.6, NAZJATAR },
@@ -1406,7 +1967,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(56159, {	-- Plug the Geysers (A)
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 			["provider"] = { "n", 154244 },	-- Apprentice Uataro
 			["coord"] = { 44.6, 45.2, NAZJATAR },
@@ -1415,7 +1976,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(56160, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",	-- NOT Farseer Ori!
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",	-- NOT Farseer Ori!
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154243 },	-- Apprentice Aonari
 			["coord"] = { 71.5, 31.5, NAZJATAR },
@@ -1424,7 +1985,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(56155, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["provider"] = { "n", 154247 },	-- Apprentice Utapo
 			["coord"] = { 60.7, 50.2, NAZJATAR },
@@ -1433,7 +1994,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(55874, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153524 },	-- Scout Kleda
 			["coord"] = { 60.6, 52.8, NAZJATAR },
@@ -1442,7 +2003,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(55875, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153834 },	-- Scout Tambrine
 			["coord"] = { 33.5, 47.9, NAZJATAR },
@@ -1451,7 +2012,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(55876, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153833 },	-- Scout Newly
 			["coord"] = { 48.2, 73.8, NAZJATAR },
@@ -1460,7 +2021,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(55878, {	-- Plug the Geysers
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153819 },	-- Scout Barbscale
 			["coord"] = { 71.5, 32.4, NAZJATAR },
@@ -1469,7 +2030,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168482) },	-- Benthic Sealant (QI!)
 		}),
 		q(56151, {	-- Poen's Favorite Dish
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151635 },	-- Slen Darkroe
 			["coord"] = { 50.8, 64.7, NAZJATAR },
@@ -1478,7 +2039,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(169234) },	-- Fresh Unagi (QI!)
 		}),
 		q(55637, {	-- Poor, Unfortunate Souls
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 152494 },	-- Elycina Starcaller
 			["coord"] = { 74.2, 24.8, NAZJATAR },
@@ -1507,11 +2068,45 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56050, {	-- PvP Event: Battle for Nazjatar
-			["description"] = "500 rep with your Nazjatar faction",
+			["description"] = createLocalizationString({
+				readable = "500 rep with your Nazjatar faction",
+				constant = "500_REP_WITH_YOUR_NAZJATAR_FACTION",
+				export = true,
+				text = {
+					en = "500 rep with your Nazjatar faction",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "与你的纳沙塔尔阵营获得 500 点声望",
+					-- TODO: tw = "",
+				},
+			}),
 			["isWeekly"] = true,
 		}),
 		q(56807, {	-- Real Friends Help Hide Bodies
-			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 13.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 13.",
+				constant = "OFFERED_WHEN_CFFFFD700VIM_BRINEHEART_R_REACHES_3",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 13.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700维姆·盐心|r 达到 13 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["qgs"] = {
 				151309,	-- Kelfin Scout (Vim Brineheart)
@@ -1543,14 +2138,31 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["repeatable"] = true,
 		}),
 		q(56788, {	-- Reclaimed Treasure
-			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
+				constant = "OFFERED_WHEN_CFFFFD700BLADESMAN_INOWARI_R_5",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700剑客伊诺瓦里|r 达到 5 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169905) },	-- Faintly Glowing Supplies
 		}),
 		q(55728, {	-- Reinforced Cache
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326047 },	-- Reinforced Cache
 			["coord"] = { 45.0, 22.1, NAZJATAR },
@@ -1559,7 +2171,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168261) },	-- Reinforced Cache Key (QI!)
 		}),
 		q(56231, {	-- Reinforced Cache
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuests"] = { 55500 },	-- Save a Friend
 			["provider"] = { "o", 326047 },	-- Reinforced Cache
 			["coord"] = { 45.0, 22.1, NAZJATAR },
@@ -1568,7 +2180,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168261) },	-- Reinforced Cache Key (QI!)
 		}),
 		q(55659, {	-- Relics of the Sundering
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 152532 },	-- Shirelle McFadden
 			["coord"] = { 78.9, 42.5, NAZJATAR },
@@ -1868,7 +2480,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168753) },	-- Chitterspine Roe (QI!)
 		}),
 		q(55500, {	-- Save a Friend
-			["description"] = "Unlocks the rest of the zone and opens up World Quests.",
+			["description"] = createLocalizationString({
+				readable = "Unlocks the rest of the zone and opens up World Quests.",
+				constant = "UNLOCKS_THE_REST_OF_THE_ZONE_AND_OPENS_UP_WORLD",
+				export = true,
+				text = {
+					en = "Unlocks the rest of the zone and opens up World Quests.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "解锁该区域的其余部分并开放世界任务。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55385,	-- Scouting the Pens
 			["provider"] = { "n", 152047 },	-- Poen Gillbrack
 			["coord"] = { 38.8, 42.4, NAZJATAR },
@@ -2018,7 +2647,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168947) },	-- Scroll of Bursting Power (QI!)
 		}),
 		q(55701, {	-- Snapdragon Claws
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 152737 },	-- Tracker Ikuto
 			["coord"] = { 62.5, 51.7, NAZJATAR },
@@ -2070,17 +2699,51 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168841) },	-- Scroll of Shirakess (QI!)
 		}),
 		q(56239, {	-- Strange Silver Knife (A)
-			["description"] = "Obtained from the first Arcane Chest you find.",
+			["description"] = createLocalizationString({
+				readable = "Obtained from the first Arcane Chest you find.",
+				constant = "OBTAINED_FROM_THE_FIRST_ARCANE_CHEST_YOU_FIND",
+				export = true,
+				text = {
+					en = "Obtained from the first Arcane Chest you find.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "从你找到的第一个奥术宝箱中获得。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 169215 },	-- Silver Knife
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56240, {	-- Strange Silver Knife (H)
-			["description"] = "Obtained from the first Arcane Chest you find.",
+			["description"] = "~L.OBTAINED_FROM_THE_FIRST_ARCANE_CHEST_YOU_FIND",
 			["provider"] = { "i", 169216 },	-- Silver Knife
 			["races"] = HORDE_ONLY,
 		}),
 		q(56830, {	-- Summons from the Deep
-			["description"] = "This event takes place every 3 hours (based on realm time, it starts at 3:00, 6:00, 9:00, and 12:00 for NA realms; 1:00, 4:00, 7:00, and 10:00 for EU realms). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+			["description"] = createLocalizationString({
+				readable = "This event takes place every 3 hours (based on realm time, it starts at 3:00, 6:00, 9:00, and 12:00 for NA realms; 1:00, 4:00, 7:00, and 10:00 for EU realms). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+				constant = "THIS_EVENT_TAKES_PLACE_EVERY_3_HOURS_BASED_ON",
+				export = true,
+				text = {
+					en = "This event takes place every 3 hours (based on realm time, it starts at 3:00, 6:00, 9:00, and 12:00 for NA realms; 1:00, 4:00, 7:00, and 10:00 for EU realms). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "此事件每 3 小时发生一次（按服务器时间，美服为 3:00、6:00、9:00 和 12:00；欧服为 1:00、4:00、7:00 和 10:00）。区域公告会显示“|cffe1780c空气中弥漫着力量的气息，艾萨拉的部队开始从深渊中召唤爪牙|r”，地图上会出现一个紫色骷髅标记事件发生的地点。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coords"] = {
 				{ 48.5, 40.4, NAZJATAR },
 				{ 58.2, 28.7, NAZJATAR },
@@ -2102,7 +2765,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56809, {	-- Super Friends
-			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
+				constant = "OFFERED_WHEN_CFFFFD700POEN_GILLBRACK_R_REACHES_4",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700鲍恩·分鳃|r 达到 5 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrack)
 			["races"] = HORDE_ONLY,
@@ -2113,7 +2793,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56817, {	-- Thank You For Being A Friend
-			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 13.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 13.",
+				constant = "OFFERED_WHEN_CFFFFD700NERI_SHARPFIN_R_REACHES_5",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 13.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700奈莉·锐鳍|r 达到 13 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151300 },	-- Kelfin Scout (Neri Sharpfin)
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(169920) },	-- Neri's Spare Supplies
@@ -2125,7 +2822,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56805, {	-- That's What Friends Are For
-			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 7.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 7.",
+				constant = "OFFERED_WHEN_CFFFFD700VIM_BRINEHEART_R_REACHES_4",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700维姆·盐心|r 达到 7 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["qgs"] = {
 				151309,	-- Kelfin Scout (Vim Brineheart)
@@ -2135,7 +2849,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(169919) },	-- Unshackled Commendation Crate
 		}),
 		q(55665, {	-- The Dark Garden
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 152787 },	-- Moris Criz
 			["coord"] = { 56.0, 18.4, NAZJATAR },
@@ -2190,7 +2904,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56312, {	-- The Ever Drowning (H)
-			["description"] = "Dodge the fleeing civilians.",
+			["description"] = createLocalizationString({
+				readable = "Dodge the fleeing civilians.",
+				constant = "DODGE_THE_FLEEING_CIVILIANS",
+				export = true,
+				text = {
+					en = "Dodge the fleeing civilians.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "躲开逃跑的平民。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 56310,	-- City of Drowned Friends
 			["provider"] = { "n", 154661 },	-- First Arcanist Thalyssra
 			["coord"] = { 73.9, 41.7, NAZJATAR },
@@ -2225,7 +2956,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168212) },	-- Javelin of Suramar (QI!)
 		}),
 		q(55751, {	-- The Heart of the Water
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 153685 },	-- Mari Lazarfin
 			["coord"] = { 60.8, 30.9, NAZJATAR },
@@ -2252,7 +2983,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168212) },	-- Javelin of Suramar (QI!)
 		}),
 		q(56783, {	-- The Lambent Lockbox
-			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 5.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 5.",
+				constant = "OFFERED_WHEN_CFFFFD700FARSEER_ORI_R_REACHES_4",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 5.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700先知奥利|r 达到 5 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154304 },	-- Farseer Ori
 			["races"] = ALLIANCE_ONLY,
@@ -2265,7 +3013,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56785, {	-- The Mystic Chest
-			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 9.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 9.",
+				constant = "OFFERED_WHEN_CFFFFD700FARSEER_ORI_R_REACHES_5",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 9.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700先知奥利|r 达到 9 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["qgs"] = {
 				154304,	-- Farseer Ori
@@ -2291,7 +3056,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56782, {	-- The Speaker's Gift (also gave credit for Horde quest 56803 "Just a Friend")
-			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 2.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Farseer Ori|r reaches rank 2.",
+				constant = "OFFERED_WHEN_CFFFFD700FARSEER_ORI_R_REACHES_6",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Farseer Ori|r reaches rank 2.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700先知奥利|r 达到 2 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 154304 },	-- Waveblade Shaman (Farseer Ori)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169903) },	-- Nazjatar Survival Pack
@@ -2327,7 +3109,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(55633, {	-- The Sunken Chest
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 325795 },	-- Sunken Chest
 			["coord"] = { 45.7, 83.7, NAZJATAR },
@@ -2366,13 +3148,47 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56219, {	-- Tome of Tears
-			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
+				constant = "OFFERED_WHEN_CFFFFD700VIM_BRINEHEART_R_REACHES_5",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700维姆·盐心|r 达到 20 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151309 },	-- Vim Brineheart
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
 			["groups"] = {
 				i(170154, {	-- Book of the Unshackled (TOY!)
-					["description"] = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
+					["description"] = createLocalizationString({
+						readable = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
+						constant = "LEARNING_THIS_TOY_ALSO_UNLOCKS_THE_ALLIANCE",
+						export = true,
+						text = {
+							en = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "学习此玩具还会解锁联盟的|cFF0070DE雕刻的安科亚护符|r玩具。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			},
 		}),
@@ -2396,7 +3212,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56781, {	-- Treasure in the Deep
-			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
+				constant = "OFFERED_WHEN_CFFFFD700HUNTER_AKANA_R_REACHES_5",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当|cFFFFD700猎人阿卡纳|r达到 20 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 150202 },	-- Hunter Akana
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(169917) },	-- Mysterious Azshari Cache
@@ -2416,7 +3249,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { spell(305101) },	-- Curios of Nazjatar
 		}),
 		q(56790, {	-- Treasure to Find
-			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
+				constant = "OFFERED_WHEN_CFFFFD700BLADESMAN_INOWARI_R_6",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700剑客伊诺瓦里|r 达到 9 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
@@ -2426,7 +3276,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(56152, {	-- Turn the Scale (A)
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["provider"] = { "n", 154238 },	-- Tracker Akatani
 			["coord"] = { 31.2, 37.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -2434,7 +3284,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168519) },	-- Hydra Scale (QI!)
 		}),
 		q(55980, {	-- Turn the Scale (H)
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["provider"] = { "n", 153543 },	-- Krato Flipperfoot
 			["coord"] = { 34.4, 37.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -2442,7 +3292,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168519) },	-- Hydra Scale (QI!)
 		}),
 		q(55032, {	-- Unchained Resistance
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 150553 },	-- Tracker Okaju
 			["coord"] = { 48.4, 52.5, NAZJATAR },
@@ -2481,7 +3331,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(55714, {	-- Void Cache (A)
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 			["provider"] = { "o", 326026 },	-- Void Cache
 			["coord"] = { 56.3, 15.0, NAZJATAR },
@@ -2490,7 +3340,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168260) },	-- Void Cache Key (QI!)
 		}),
 		q(56232, {	-- Void Cache (H)
-			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700NERI_SHARPFIN_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "o", 326026 },	-- Void Cache
 			["coord"] = { 56.3, 15.0, NAZJATAR },
@@ -2499,7 +3349,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168260) },	-- Void Cache Key (QI!)
 		}),
 		q(55777, {	-- Wanted: Braxicus
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["provider"] = { "o", 326140 },	-- Bounty Board
 			["coord"] = { 39.1, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -2507,7 +3357,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168324) },	-- Braxicus' Giant Claw (QI!)
 		}),
 		q(55770, {	-- WANTED: Commander Sarj'eth (A)
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["provider"] = { "o", 326141 },	-- Bounty Board
 			["coord"] = { 39.1, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -2522,7 +3372,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168317) },	-- Commander Sarj'eth's Head (QI!)
 		}),
 		q(55776, {	-- WANTED: Emorneth
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326140 },	-- Bounty Board
 			["coord"] = { 39.2, 54.1, NAZJATAR },
@@ -2530,7 +3380,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 		}),
 		q(55773, {	-- WANTED: Gler'thogg (A)
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326142 },	-- Bounty Board
 			["coord"] = { 39.2, 54.1, NAZJATAR },
@@ -2539,7 +3389,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168321) },	-- Eye of Gler'thogg (QI!)
 		}),
 		q(56226, {	-- WANTED: Gler'thogg (H)
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "o", 327585 },	-- Bounty Board
 			["coord"] = { 48.0, 61.5, NAZJATAR },
@@ -2548,7 +3398,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168321) },	-- Eye of Gler'thogg (QI!)
 		}),
 		q(55775, {	-- WANTED: Haggronar
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326140 },	-- Bounty Board
 			["coord"] = { 39.2, 54.1, NAZJATAR },
@@ -2557,7 +3407,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168323) },	-- Haggronar's Head (QI!)
 		}),
 		q(55774, {	-- WANTED: Inquisitor Ithriza (A)
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 			["provider"] = { "o", 326141 },	-- Bounty Board
 			["coord"] = { 39.2, 54.1, NAZJATAR },
@@ -2573,7 +3423,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168322) },	-- Inquisitor Ithriza's Head (QI!)
 		}),
 		q(55772, {	-- WANTED: Lady Narjiss (A)
-			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700FARSEER_ORI_R_AS_YOUR_FRIEND",
 			["provider"] = { "o", 326141 },	-- Bounty Board
 			["coord"] = { 39.1, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -2581,7 +3431,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168319) },	-- Lady Narjiss' Head (QI!)
 		}),
 		q(56225, {	-- Wanted: Lady Narjiss (H)
-			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700NERI_SHARPFIN_R_AS_YOUR",
 			["provider"] = { "o", 327585 },	-- Bounty Board
 			["coord"] = { 47.9, 61.3, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -2589,7 +3439,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168319) },	-- Lady Narjiss' Head (QI!)
 		}),
 		q(55750, {	-- WANTED: Lady Naz'jess
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326142 },	-- Bounty Board
 			["coord"] = { 39.1, 54.1, NAZJATAR },
@@ -2607,7 +3457,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168265) },	-- Lady Naz'jess' Head (QI!)
 		}),
 		q(55771, {	-- WANTED: Lord Ha'kass
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "o", 326142 },	-- Bounty Board
 			["coord"] = { 39.1, 54.1, NAZJATAR },
@@ -2616,7 +3466,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] ={ i(168318) },	-- Lord Ha'kass' Head (QI!)
 		}),
 		q(56224, {	-- WANTED: Lord Ha'kass
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "o", 327585 },	-- Bounty Board
 			["coord"] = { 48.0, 61.5, NAZJATAR },
@@ -2649,12 +3499,29 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 		}),
 		q(56808, {	-- We're Going To Be Friends
-			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 2.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 2.",
+				constant = "OFFERED_WHEN_CFFFFD700POEN_GILLBRACK_R_REACHES_5",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 2.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700鲍恩·分鳃|r 达到 2 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrack)
 			["races"] = HORDE_ONLY,
 		}),
 		q(56000, {	-- We've Got Crabs! (A)
-			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700HUNTER_AKANA_R_AS_YOUR_FRIEND",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.5, 26.5, NAZJATAR },
@@ -2663,7 +3530,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168628) },	-- Crackleclaw Crab (QI!)
 		}),
 		q(56264, {	-- We've Got Crabs! (H)
-			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700POEN_GILLBRACK_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend	-- todo: verify sourceQuest. Most likely after unlocking the conch
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["coord"] = { 25.4, 26.3, NAZJATAR },
@@ -2708,7 +3575,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55426, {	-- What Will It Grow?
-			["description"] = "Germinating Seed can drop from any rare in Nazjatar.",
+			["description"] = createLocalizationString({
+				readable = "Germinating Seed can drop from any rare in Nazjatar.",
+				constant = "GERMINATING_SEED_CAN_DROP_FROM_ANY_RARE_IN",
+				export = true,
+				text = {
+					en = "Germinating Seed can drop from any rare in Nazjatar.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "萌芽的种子可以从纳沙塔尔的任何稀有怪身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 167786 },	-- Germinating Seed
 			["_drop"] = { "g" },	-- Drops Zin'anthid
 			["groups"] = {
@@ -2717,7 +3601,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55602, {	-- What Will It Lure?
-			["description"] = "Chum can drop from any rare in Nazjatar.",
+			["description"] = createLocalizationString({
+				readable = "Chum can drop from any rare in Nazjatar.",
+				constant = "CHUM_CAN_DROP_FROM_ANY_RARE_IN_NAZJATAR",
+				export = true,
+				text = {
+					en = "Chum can drop from any rare in Nazjatar.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "鱼饵可以从纳沙塔尔的任何稀有怪身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 168155 },	-- Chum
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -2728,7 +3629,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		q(55531, {	-- What Will It Mine?
-			["description"] = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
+			["description"] = createLocalizationString({
+				readable = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
+				constant = "BRINESTONE_PICKAXE_CAN_DROP_FROM_ANY_RARE_IN",
+				export = true,
+				text = {
+					en = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "盐卤石矿镐可从纳沙塔尔的任意稀有身上掉落，也可从锇矿矿脉或矿层中开采获得。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 168081 },	-- Brinestone Pickaxe
 			["_drop"] = { "g" },	-- Drop Osmemite Ore
 			["groups"] = {
@@ -2749,7 +3667,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(56154, {	-- Where They Hide
-			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700BLADESMAN_INOWARI_R_AS_YOUR",
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["provider"] = { "n", 154241 },	-- Seeker Anagi
 			["coord"] = { 41.3, 58.2, NAZJATAR },
@@ -2758,7 +3676,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168432) },	-- Fresh Sponge (QI!)
 		}),
 		q(55872, {	-- Where They Hide
-			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+			["description"] = "~L.REQUIRES_CFFFFD700VIM_BRINEHEART_R_AS_YOUR",
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["providers"] = {
 				{ "o", 326142 },	-- Bounty Board
@@ -2770,7 +3688,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168432) },	-- Fresh Sponge (QI!)
 		}),
 		q(56217, {	-- Wild Tame
-			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
+			["description"] = "~L.OFFERED_WHEN_CFFFFD700HUNTER_AKANA_R_REACHES_5",
 			["qgs"] = {
 				150202,	-- Hunter Akana	(active bodyguard ID)
 				149804,	-- Hunter Akana (inactive in front of the bonfire)
@@ -2779,18 +3697,69 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["lvl"] = 120,
 			["groups"] = {
 				i(169200, {	-- Deepcoral Snapdragon (MOUNT!)
-					["description"] = "Learning this mount also unlocks the Horde |cFFA330C9Snapdragon Kelpstalker|r mount.",
+					["description"] = createLocalizationString({
+						readable = "Learning this mount also unlocks the Horde |cFFA330C9Snapdragon Kelpstalker|r mount.",
+						constant = "LEARNING_THIS_MOUNT_ALSO_UNLOCKS_THE_HORDE",
+						export = true,
+						text = {
+							en = "Learning this mount also unlocks the Horde |cFFA330C9Snapdragon Kelpstalker|r mount.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "学习此坐骑还会解锁部落的|cFFA330C9海带潜行者海龙|r坐骑。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			},
 		}),
 		q(56815, {	-- With A Little Help From My Friends
-			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 7.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 7.",
+				constant = "OFFERED_WHEN_CFFFFD700NERI_SHARPFIN_R_REACHES_6",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 7.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700奈莉·锐鳍|r 达到 7 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 151300 },	-- Kelfin Scout (Neri Sharpfin)
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(169919) },	-- Unshackled Commendation Crate
 		}),
 		q(56804, {	-- With Friends Like You, Who Needs Anemones?
-			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
+				constant = "OFFERED_WHEN_CFFFFD700VIM_BRINEHEART_R_REACHES_6",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700维姆·盐心|r 达到 5 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151309 },	-- Vim Brineheart
 			["races"] = HORDE_ONLY,
@@ -2815,7 +3784,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = { i(168810) },	-- Iridescent Pearl (QI!)
 		}),
 		q(56811, {	-- You've Got A Friend In Me
-			["description"] = "Offered when |cFFFFD700Poen Gillbract|r reaches Rank 9.",
+			["description"] = createLocalizationString({
+				readable = "Offered when |cFFFFD700Poen Gillbract|r reaches Rank 9.",
+				constant = "OFFERED_WHEN_CFFFFD700POEN_GILLBRACT_R_REACHES",
+				export = true,
+				text = {
+					en = "Offered when |cFFFFD700Poen Gillbract|r reaches Rank 9.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "当 |cFFFFD700鲍恩·分鳃|r 达到 9 级时提供。",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["provider"] = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrac)
 			["races"] = HORDE_ONLY,

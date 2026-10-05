@@ -183,7 +183,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 85.1, 22.5, OHNAHRAN_PLAINS },
 				}),
 				crit(55321, {	-- Ellam
-					["description"] = "Only available while the Daily Quest Counting Argali(66698) is up.",
+					["description"] = createLocalizationString({
+						readable = "Only available while the Daily Quest Counting Argali(66698) is up.",
+						constant = "ONLY_AVAILABLE_WHILE_THE_DAILY_QUEST_COUNTING",
+						export = true,
+						text = {
+							en = "Only available while the Daily Quest Counting Argali(66698) is up.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅在日常任务数盘羊（66698）激活时可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = { 187667 },	-- Ellam
 					["coord"] = { 76.7, 30.5, OHNAHRAN_PLAINS },
 				}),
@@ -196,7 +213,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 83.9, 25.9, OHNAHRAN_PLAINS },
 				}),
 				crit(55327, {	-- Hugo
-					["description"] = "Only available where camp is at.",
+					["description"] = createLocalizationString({
+						readable = "Only available where camp is at.",
+						constant = "ONLY_AVAILABLE_WHERE_CAMP_IS_AT",
+						export = true,
+						text = {
+							en = "Only available where camp is at.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅在营地所在的位置可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = { 189377 },	-- Hugo
 					["coord"] = { 70.6, 63.6, OHNAHRAN_PLAINS },
 				}),
@@ -223,12 +257,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				crit(55347, {	-- Soyoo
 					["crs"] = { 197514 },	-- Soyoo
 					["coord"] = { 71.6, 49.7, OHNAHRAN_PLAINS },
-					["description"] = "This good bakar won't show up until you start |cffffff00The Trouble with Taivan|r.",
+					["description"] = createLocalizationString({
+						readable = "This good bakar won't show up until you start |cffffff00The Trouble with Taivan|r.",
+						constant = "THIS_GOOD_BAKAR_WON_T_SHOW_UP_UNTIL_YOU_START",
+						export = true,
+						text = {
+							en = "This good bakar won't show up until you start |cffffff00The Trouble with Taivan|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有在你开始|cffffff00泰万的麻烦|r之后，这只善良的巴卡才会出现。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				crit(55325, {	-- Taivan
 					["crs"] = { 197518 },	-- Taivan
 					["coord"] = { 61.8, 38.7, OHNAHRAN_PLAINS },
-					["description"] = "This good (large) bakar will be unavailable to pet until completing |cffffff00Taivan's Purpose|r.",
+					["description"] = createLocalizationString({
+						readable = "This good (large) bakar will be unavailable to pet until completing |cffffff00Taivan's Purpose|r.",
+						constant = "THIS_GOOD_LARGE_BAKAR_WILL_BE_UNAVAILABLE_TO",
+						export = true,
+						text = {
+							en = "This good (large) bakar will be unavailable to pet until completing |cffffff00Taivan's Purpose|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有完成|cffffff00泰万的使命|r后，这只善良的（大型）巴卡才能作为宠物获得。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				crit(55318, {	-- Tseg
 					["crs"] = { 189276 },	-- Tseg

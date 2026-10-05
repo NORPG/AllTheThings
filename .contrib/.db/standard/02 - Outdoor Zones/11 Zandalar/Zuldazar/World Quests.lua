@@ -344,7 +344,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50853, {	-- Umbra'rix
 				["groups"] = {
 					n(134717, {	-- Umbra'rix
-						["description"] = "This rare is only up when its associated world quest is active.",
+						["description"] = "~L.THIS_RARE_IS_ONLY_UP_WHEN_ITS_ASSOCIATED_WORLD",
 						["questID"] = 50673,
 						["isDaily"] = true,	-- this questID seems to reset / trigger again when you complete the WQ
 						["coord"] = { 49.0, 29.2, ZULDAZAR },

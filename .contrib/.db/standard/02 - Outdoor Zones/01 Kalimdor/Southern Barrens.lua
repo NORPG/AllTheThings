@@ -90,7 +90,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(475, {	-- Giraffe Calf (PET!)
-						["description"] = "Can be found with groups of roaming Dusthoof Giraffe.",
+						["description"] = createLocalizationString({
+							readable = "Can be found with groups of roaming Dusthoof Giraffe.",
+							constant = "CAN_BE_FOUND_WITH_GROUPS_OF_ROAMING_DUSTHOOF",
+							export = true,
+							text = {
+								en = "Can be found with groups of roaming Dusthoof Giraffe.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可与游荡的尘蹄长颈鹿群一同找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -158,7 +175,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66422, {	-- Cassandra Kaboom <Master Pet Tamer>
 					["coord"] = { 39.6, 79.2, SOUTHERN_BARRENS },
-					["description"] = "This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",
+						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_CASSANDRA_S_PETS",
+						export = true,
+						text = {
+							en = "This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限部落。\n\nCassandra 的宠物为 11 级，三个宠物的类别依次为：\n机械 - 使用元素（强力且耐打）宠物。\n2. 机械 - 同上。\n3. 机械 - 同上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["petBattleLvl"] = 11,
@@ -544,7 +578,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Go to the Top of the Tower
-							["description"] = "In case event not starting: 1. Look at window. 2. Stand on middle wooden section on the left corner. 3. Take two steps backwards.",
+							["description"] = createLocalizationString({
+								readable = "In case event not starting: 1. Look at window. 2. Stand on middle wooden section on the left corner. 3. Take two steps backwards.",
+								constant = "IN_CASE_EVENT_NOT_STARTING_1_LOOK_AT_WINDOW_2",
+								export = true,
+								text = {
+									en = "In case event not starting: 1. Look at window. 2. Stand on middle wooden section on the left corner. 3. Take two steps backwards.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果事件没有开始：1. 看向窗户。2. 站在左角中间的木质部分上。3. 向后退两步。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 40.0, 69.0, SOUTHERN_BARRENS },
 						}),
 						objective(2, {	-- 0/1 Gar'dul "Relieved" of Command
@@ -596,7 +647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25057, {	-- Clap 'Em In Irons
 					-- #if AFTER 7.0.3
-					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
+					["description"] = "~L.HIGH_LEVEL_PLAYERS_MAY_REQUIRE_CFF0070DDSOFT",
 					-- #endif
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
@@ -1054,7 +1105,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				heroscall(q(28550, {	-- Hero's Call: Southern Barrens!
 					-- #if NOT ANYCLASSIC
-					["description"] = "This quest can only be accepted from the 'Adventure Guide' by a character in Chromie timeline: Cataclysm.",
+					["description"] = createLocalizationString({
+						readable = "This quest can only be accepted from the 'Adventure Guide' by a character in Chromie timeline: Cataclysm.",
+						constant = "THIS_QUEST_CAN_ONLY_BE_ACCEPTED_FROM_THE",
+						export = true,
+						text = {
+							en = "This quest can only be accepted from the 'Adventure Guide' by a character in Chromie timeline: Cataclysm.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有处于克罗米时间线：《大地的裂变》的角色才能从冒险指南中接取此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
@@ -1972,7 +2040,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(25197, {	-- The Admiral Won't Back Down
-					["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
+					["description"] = createLocalizationString({
+						readable = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
+						constant = "THE_ONLY_WAY_TO_DO_BOTH_THIS_AND_REPORT_TO",
+						export = true,
+						text = {
+							en = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "同时完成这个任务和“向奥布里报到”的唯一方法，是在接取并完成“击退登船者”之前先完成它。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 25191,	-- Survey the Destruction
 					["qg"] = 39322,	-- Horton Gimbleheart
 					["coord"] = { 68.6, 49.0, SOUTHERN_BARRENS },
@@ -2397,7 +2482,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This Rare NPC is friendly to Alliance players.",
+					["description"] = createLocalizationString({
+						readable = "This Rare NPC is friendly to Alliance players.",
+						constant = "THIS_RARE_NPC_IS_FRIENDLY_TO_ALLIANCE_PLAYERS",
+						export = true,
+						text = {
+							en = "This Rare NPC is friendly to Alliance players.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此稀有 NPC 对联盟玩家友好。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
 					["coords"] = {
@@ -2408,7 +2510,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This Rare NPC is friendly to Alliance players.",
+					["description"] = "~L.THIS_RARE_NPC_IS_FRIENDLY_TO_ALLIANCE_PLAYERS",
 					["groups"] = {
 						i(4785, {	-- Brimstone Belt
 							["description"] =
@@ -2467,7 +2569,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This Rare NPC is friendly to Alliance players.",
+					["description"] = "~L.THIS_RARE_NPC_IS_FRIENDLY_TO_ALLIANCE_PLAYERS",
 					["groups"] = {
 						i(2035, {	-- Sword of the Night Sky
 							["description"] =
@@ -2491,7 +2593,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This Rare NPC is friendly to Alliance players and functions as a vendor.",
+					["description"] = createLocalizationString({
+						readable = "This Rare NPC is friendly to Alliance players and functions as a vendor.",
+						constant = "THIS_RARE_NPC_IS_FRIENDLY_TO_ALLIANCE_PLAYERS_2",
+						export = true,
+						text = {
+							en = "This Rare NPC is friendly to Alliance players and functions as a vendor.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此稀有 NPC 对联盟玩家友好，并充当商人。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				n(3253, {	-- Silithid Harvester
 					["coords"] = {
@@ -2621,7 +2740,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(5051, {	-- Dig Rat
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },	-- Bael Modan Excavation
 					["cr"] = 3444,	-- Dig Rat
-					["description"] = "Only drops from Dig Rats in Southern Barrens."
+					["description"] = createLocalizationString({
+						readable = "Only drops from Dig Rats in Southern Barrens.",
+						constant = "ONLY_DROPS_FROM_DIG_RATS_IN_SOUTHERN_BARRENS",
+						export = true,
+						text = {
+							en = "Only drops from Dig Rats in Southern Barrens.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅从南贫瘠之地的掘地鼠身上掉落。",
+							-- TODO: tw = "",
+						},
+					})
 				}),
 				i(78342, {	-- Plump Dig Rat (RECIPE!)
 					["timeline"] = { ADDED_4_3_0 },
@@ -2679,10 +2815,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
-					["description"] = "Can drop from any creature in the Barrens.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_CREATURE_IN_THE_BARRENS",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
-					["description"] = "Can drop from any creature in the Barrens.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_CREATURE_IN_THE_BARRENS",
 				}),
 				i(5052, {	-- Unconscious Dig Rat
 					["cr"] = 3444,	-- Dig Rat

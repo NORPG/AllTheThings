@@ -55,7 +55,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
 				["isWeekly"] = true,
-				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
+				["description"] = createLocalizationString({
+					readable = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
+					constant = "INTERACT_WITH_THIS_NPC_3_TIMES_TO_SPAWN_CHEST",
+					export = true,
+					text = {
+						en = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与这个 NPC 互动 3 次以刷新宝箱，每次互动后他都会跑开。跟着他就行。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 64.3, 61.3, EMERALD_DREAM },
 					{ 62.9, 60.4, EMERALD_DREAM },
@@ -97,7 +114,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(212009, {	-- Statue of the Ashen Panther
 				["questID"] = 78365,
-				["description"] = "Find a Mark of Ashamane and return to the statute with the buff still active. Druids can activate in cat form.",
+				["description"] = createLocalizationString({
+					readable = "Find a Mark of Ashamane and return to the statute with the buff still active. Druids can activate in cat form.",
+					constant = "FIND_A_MARK_OF_ASHAMANE_AND_RETURN_TO_THE",
+					export = true,
+					text = {
+						en = "Find a Mark of Ashamane and return to the statute with the buff still active. Druids can activate in cat form.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "找到一枚阿莎曼印记，并在增益效果仍然激活时返回雕像。德鲁伊可以在猎豹形态下激活。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 63.4, 72.9, EMERALD_DREAM },
 				["groups"] = {
 					o(411065, {	-- Reliquary of Ashamane
@@ -110,7 +144,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(210732, {	-- Statue of the Bear Lord
 				["questID"] = 78095,
-				["description"] = "Find a Mark of Ursol and return to the statute with the buff still active. Druids can activate in bear form.",
+				["description"] = createLocalizationString({
+					readable = "Find a Mark of Ursol and return to the statute with the buff still active. Druids can activate in bear form.",
+					constant = "FIND_A_MARK_OF_URSOL_AND_RETURN_TO_THE_STATUTE",
+					export = true,
+					text = {
+						en = "Find a Mark of Ursol and return to the statute with the buff still active. Druids can activate in bear form.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "找到一枚乌索尔印记，并在增益效果仍然激活时返回雕像。德鲁伊可以在熊形态下激活。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 47.0, 53.1, EMERALD_DREAM },
 				["groups"] = {
 					o(409222, {	-- Reliquary of Ursol
@@ -123,7 +174,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(212012, {	-- Statue of the Great Wolf
 				["questID"] = 78368,
-				["description"] = "Find a Mark of Goldrinn and return to the statute with the buff still active.",	-- possibly for shamans?
+				["description"] = createLocalizationString({
+					readable = "Find a Mark of Goldrinn and return to the statute with the buff still active.",
+					constant = "FIND_A_MARK_OF_GOLDRINN_AND_RETURN_TO_THE",
+					export = true,
+					text = {
+						en = "Find a Mark of Goldrinn and return to the statute with the buff still active.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "找到一枚戈德林印记，并在增益效果仍然激活时返回雕像。",
+						-- TODO: tw = "",
+					},
+				}),	-- possibly for shamans?
 				["coord"] = { 32.9, 83.1, EMERALD_DREAM },
 				["groups"] = {
 					o(411067, {	-- Reliquary of Goldrinn
@@ -136,7 +204,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(212011, {	-- Statue of the Sky Mistress
 				["questID"] = 78367,
-				["description"] = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in travel (fly) form.",
+				["description"] = createLocalizationString({
+					readable = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in travel (fly) form.",
+					constant = "FIND_A_MARK_OF_AVIANNA_AND_RETURN_TO_THE",
+					export = true,
+					text = {
+						en = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in travel (fly) form.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "找到一枚艾维娜印记，并在增益效果仍然激活时返回雕像。德鲁伊可以在旅行（飞行）形态下激活。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 64.2, 19.3, EMERALD_DREAM },
 				["groups"] = {
 					o(411066, {	-- Reliquary of Aviana
@@ -149,22 +234,90 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			o(407739, {	-- Triflesnatcher's Roving Trove
-				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
+				["description"] = createLocalizationString({
+					readable = "You need to interact with owl 3 times in order to spawn chest.",
+					constant = "YOU_NEED_TO_INTERACT_WITH_OWL_3_TIMES_IN_ORDER",
+					export = true,
+					text = {
+						en = "You need to interact with owl 3 times in order to spawn chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你需要与猫头鹰互动 3 次才能刷新宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 77872,
 				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
 				["groups"] = {
 					n(210060, {	-- Triflesnatcher
-						["description"] = "1st owl",
+						["description"] = createLocalizationString({
+							readable = "1st owl",
+							constant = "1ST_OWL",
+							export = true,
+							text = {
+								en = "1st owl",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "第 1 只猫头鹰",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 77855,
 						["coord"] = { 39.7, 52.1, EMERALD_DREAM },
 					}),
 					n(210081, {	-- Triflesnatcher
-						["description"] = "2nd owl",
+						["description"] = createLocalizationString({
+							readable = "2nd owl",
+							constant = "2ND_OWL",
+							export = true,
+							text = {
+								en = "2nd owl",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "第 2 只猫头鹰",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 77857,
 						["coord"] = { 42.2, 56.2, EMERALD_DREAM },
 					}),
 					n(210084, {	-- Triflesnatcher
-						["description"] = "3rd owl",
+						["description"] = createLocalizationString({
+							readable = "3rd owl",
+							constant = "3RD_OWL",
+							export = true,
+							text = {
+								en = "3rd owl",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "第 3 只猫头鹰",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 77860,
 						["coord"] = { 41.7, 62.5, EMERALD_DREAM },
 					}),
@@ -172,7 +325,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(411447, {	-- Unwaking Echo
 				["questID"] = 78547,
-				["description"] = "Use /sleep to loot the chest.",
+				["description"] = createLocalizationString({
+					readable = "Use /sleep to loot the chest.",
+					constant = "USE_SLEEP_TO_LOOT_THE_CHEST",
+					export = true,
+					text = {
+						en = "Use /sleep to loot the chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "使用 /sleep 来拾取宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 55.7, 22.6, EMERALD_DREAM },
 				["groups"] = {
 					i(210675),	-- Gardener's Lightstaff (COSMETIC!)
@@ -180,7 +350,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(411463, {	-- Unwaking Echo
 				["questID"] = 78550,
-				["description"] = "Use /sleep to loot the chest.",
+				["description"] = "~L.USE_SLEEP_TO_LOOT_THE_CHEST",
 				["coord"] = { 69.6, 52.8, EMERALD_DREAM },
 				["groups"] = {
 					i(210686),	-- Grovekeeper's Barrier (COSMETIC!)
@@ -188,7 +358,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(411465, {	-- Unwaking Echo
 				["questID"] = 78551,
-				["description"] = "Use /sleep to loot the chest.",
+				["description"] = "~L.USE_SLEEP_TO_LOOT_THE_CHEST",
 				["coord"] = { 55.3, 45.4, EMERALD_DREAM },
 				["groups"] = {
 					i(210678),	-- Verdant Gleaner's Scythe (COSMETIC!)
@@ -196,7 +366,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(411466, {	-- Unwaking Echo
 				["questID"] = 78552,
-				["description"] = "Use /sleep to loot the chest.",
+				["description"] = "~L.USE_SLEEP_TO_LOOT_THE_CHEST",
 				["coord"] = { 46.3, 86.2, EMERALD_DREAM },
 				["groups"] = {
 					i(210682),	-- Camper's Knife (COSMETIC!)

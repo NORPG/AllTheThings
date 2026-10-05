@@ -105,7 +105,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["crs"] = { 54938 },	-- Archbishop Benedictus
 					["groups"] = {
 						ach(6132, {	-- Eclipse
-							["description"] = "You need to get Benedictus down to 60% to trigger stage two and surrounding Twilight Sparks.",
+							["description"] = createLocalizationString({
+								readable = "You need to get Benedictus down to 60% to trigger stage two and surrounding Twilight Sparks.",
+								constant = "YOU_NEED_TO_GET_BENEDICTUS_DOWN_TO_60_TO",
+								export = true,
+								text = {
+									en = "You need to get Benedictus down to 60% to trigger stage two and surrounding Twilight Sparks.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你需要把本尼迪塔斯的生命值降到 60% 才能触发第二阶段和周围的暮光火花。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						ach(6119),	-- Heroic: Hour of Twilight
 						ach(6122),	-- Heroic: Hour of Twilight Guild Run

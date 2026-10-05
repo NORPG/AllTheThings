@@ -320,14 +320,48 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_3, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(20980, {	-- Warder's Shortbow
-				["description"] = "New Blood Elf Hunters start with this weapon.",
+				["description"] = createLocalizationString({
+					readable = "New Blood Elf Hunters start with this weapon.",
+					constant = "NEW_BLOOD_ELF_HUNTERS_START_WITH_THIS_WEAPON",
+					export = true,
+					text = {
+						en = "New Blood Elf Hunters start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的血精灵猎人初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_2_0_3 }
 			}),
 			i(57244, {	-- Warder's Spear
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 }
 			}),
 			i(23347, {	-- Weathered Crossbow
-				["description"] = "New Human, Draenei, and Undead Hunters start with this weapon.",
+				["description"] = createLocalizationString({
+					readable = "New Human, Draenei, and Undead Hunters start with this weapon.",
+					constant = "NEW_HUMAN_DRAENEI_AND_UNDEAD_HUNTERS_START_WITH",
+					export = true,
+					text = {
+						en = "New Human, Draenei, and Undead Hunters start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的人类、德莱尼和亡灵猎人初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_2_0_3 }
 			}),
 			i(266263, {	-- Wildgrove Haranir Longbow
@@ -349,14 +383,65 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157678),	-- Heartbonded Legguards
 			i(157675),	-- Heartbonded Greaves
 			i(157649, {	-- Goldstring Recurve
-				["description"] = "New Highmountain Tauren Hunters start with this weapon.",
+				["description"] = createLocalizationString({
+					readable = "New Highmountain Tauren Hunters start with this weapon.",
+					constant = "NEW_HIGHMOUNTAIN_TAUREN_HUNTERS_START_WITH_THIS",
+					export = true,
+					text = {
+						en = "New Highmountain Tauren Hunters start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的至高岭牛头人猎人初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(157622, {	-- Silverscope Longrifle
-				["description"] = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
+				["description"] = createLocalizationString({
+					readable = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
+					constant = "NEW_MECHAGNOME_HUNTERS_START_WITH_THIS_WEAPON",
+					export = true,
+					text = {
+						en = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的机械侏儒猎人初始就带有这件武器。剩下的 4 名机械侏儒玩家把持了它太久。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(232631, {	-- Wrapped Spear
 				i(157650, {	-- Tracker's Spear
-					["description"] = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+					["description"] = createLocalizationString({
+						readable = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+						constant = "NEW_HIGHMOUNTAIN_TAUREN_HUNTERS_START_WITH_THIS_2",
+						export = true,
+						text = {
+							en = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "新的至高岭牛头人猎人通过“包裹的长矛”在背包中获得这件初始武器。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 		})),
@@ -677,44 +762,163 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	cl(PALADIN, {
 		filter(MOUNTS, {
 			mount(453785, {	-- Earthen Ordinant's Ramolith (MOUNT!)
-				["description"] = "Received on reaching Level 10 as an Earthen Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as an Earthen Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_AN_EARTHEN",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as an Earthen Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以土灵圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_11_0_2 }
 			}),
 			mount(270564, {	-- Dawnforge Ram (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Dwarf Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Dwarf Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_DWARF",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Dwarf Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以矮人圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = { DWARF },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_8_0_1 }
 			}),
 			mount(73629, {	-- Exarch's Elekk (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Draenei Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Draenei Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_DRAENEI",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Draenei Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以德莱尼圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = { DRAENEI },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(73630, {	-- Great Exarch's Elekk (MOUNT!)
-				["description"] = "Received on reaching Level 17 as a Draenei Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 17 as a Draenei Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_17_AS_A_DRAENEI",
+					export = true,
+					text = {
+						en = "Received on reaching Level 17 as a Draenei Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以德莱尼圣骑士达到 17 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = { DRAENEI },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(69826, {	-- Great Sunwalker Kodo (MOUNT!)
-				["description"] = "Received on reaching Level 17 as a Tauren Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 17 as a Tauren Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_17_AS_A_TAUREN",
+					export = true,
+					text = {
+						en = "Received on reaching Level 17 as a Tauren Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以牛头人圣骑士达到 17 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = { TAUREN },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(69820, {	-- Sunwalker Kodo (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Tauren Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Tauren Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_TAUREN",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Tauren Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以牛头人圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = { TAUREN },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(34767, {	-- Thalassian Charger (MOUNT!)
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 17 as a Blood Elf Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 17 as a Blood Elf Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_17_AS_A_BLOOD_ELF",
+					export = true,
+					text = {
+						en = "Received on reaching Level 17 as a Blood Elf Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以血精灵圣骑士达到 17 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["lvl"] = 17,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 40,
@@ -727,7 +931,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			mount(34769, {	-- Thalassian Warhorse (MOUNT!)
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 10 as a Blood Elf Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Blood Elf Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_BLOOD_ELF",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Blood Elf Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以血精灵圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["lvl"] = 10,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 20,
@@ -741,7 +962,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			mount(13819, {	-- Warhorse (MOUNT!)
                 ["timeline"] = { ADDED_1_1_0 },
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 10 as a Human or Dwarf Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Human or Dwarf Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_HUMAN_OR",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Human or Dwarf Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以人类或矮人圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["lvl"] = 10,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 20,
@@ -752,17 +990,68 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["classes"] = { PALADIN },
 			}),
 			mount(290608, {	-- Crusader's Direhorn (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Zandalari Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Zandalari Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_ZANDALARI",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Zandalari Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以赞达拉圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = { ZANDALARI },
 			}),
 			mount(270562, {	-- Darkforge Ram (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Dark Iron Dwarf Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Dark Iron Dwarf Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_DARK_IRON",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Dark Iron Dwarf Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以黑铁矮人圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_8_0_1 },
 				["races"] = { DARKIRON },
 			}),
 			mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Lightforged Draenei Paladin.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Lightforged Draenei Paladin.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_LIGHTFORGED",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Lightforged Draenei Paladin.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以光铸德莱尼圣骑士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_9_1_5 },
 				["races"] = { LIGHTFORGED },
 			}),
@@ -859,7 +1148,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157702),	-- Lightsoul Legplates
 			i(157699),	-- Lightsoul Sabatons
 			i(157631, {	-- Maul of Smiting
-				["description"] = "New Lightforged Draenei Paladins start with this weapon."
+				["description"] = createLocalizationString({
+					readable = "New Lightforged Draenei Paladins start with this weapon.",
+					constant = "NEW_LIGHTFORGED_DRAENEI_PALADINS_START_WITH",
+					export = true,
+					text = {
+						en = "New Lightforged Draenei Paladins start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的光铸德莱尼圣骑士初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 		})),
 	}),
@@ -1080,7 +1386,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157709),	-- Curate's Pants
 			i(157706),	-- Curate's Boots
 			i(157632, {	-- Staff of Interwoven Power
-				["description"] = "New Nightborne or Void Elf Priests start with this weapon."
+				["description"] = createLocalizationString({
+					readable = "New Nightborne or Void Elf Priests start with this weapon.",
+					constant = "NEW_NIGHTBORNE_OR_VOID_ELF_PRIESTS_START_WITH",
+					export = true,
+					text = {
+						en = "New Nightborne or Void Elf Priests start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的夜之子或虚空精灵牧师初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 		})),
 	}),
@@ -1269,7 +1592,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_3, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(50057, {	-- Sharp Dirk
-				["description"] = "New Blood Elves start with this weapon.",
+				["description"] = createLocalizationString({
+					readable = "New Blood Elves start with this weapon.",
+					constant = "NEW_BLOOD_ELVES_START_WITH_THIS_WEAPON",
+					export = true,
+					text = {
+						en = "New Blood Elves start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的血精灵初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_3_3_0 }
 			}),
 			i(266267, {	-- Thornpierce Haranir Fang
@@ -1417,10 +1757,27 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157726),	-- Totem-Caller Legwraps
 			i(157723),	-- Totem-Caller Boots
 			i(157638, {	-- Lightning-Binder's Claws
-				["description"] = "New Allied Race Shamans start with this weapon."
+				["description"] = createLocalizationString({
+					readable = "New Allied Race Shamans start with this weapon.",
+					constant = "NEW_ALLIED_RACE_SHAMANS_START_WITH_THIS_WEAPON",
+					export = true,
+					text = {
+						en = "New Allied Race Shamans start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的同盟种族萨满初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 			i(157655, {	-- Lightning-Binder's Bulwark
-				["description"] = "New Allied Race Shamans start with this weapon."
+				["description"] = "~L.NEW_ALLIED_RACE_SHAMANS_START_WITH_THIS_WEAPON"
 			}),
 		})),
 	}),
@@ -1429,7 +1786,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			mount(5784, {	-- Felsteed (MOUNT!)
                 ["timeline"] = { ADDED_1_1_0 },
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 10 as a Warlock.",
+				["description"] = createLocalizationString({
+					readable = "Received on reaching Level 10 as a Warlock.",
+					constant = "RECEIVED_ON_REACHING_LEVEL_10_AS_A_WARLOCK",
+					export = true,
+					text = {
+						en = "Received on reaching Level 10 as a Warlock.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以术士达到 10 级时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["lvl"] = 10,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 20,
@@ -1452,7 +1826,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_9_2_0 },
 			["groups"] = {
 				q(65425, {	-- Whatever You Sayaad (A)
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["description"] = createLocalizationString({
+						readable = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+						constant = "START_THIS_QUEST_VIA_YOUR_OWN_SAYAAD_SUCCUBUS",
+						export = true,
+						text = {
+							en = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "通过你自己的萨亚德（魅魔/夜魔宠物）来开始此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
@@ -1460,7 +1851,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["classes"] = { WARLOCK },
 				}),
 				q(65424, {	-- Whatever You Sayaad (H)
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["description"] = "~L.START_THIS_QUEST_VIA_YOUR_OWN_SAYAAD_SUCCUBUS",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 74.6, 47.4, ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
@@ -1565,7 +1956,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					},
 				}),
 				q(76163, {	-- A Lighter Shade of Fel
-					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+					["description"] = createLocalizationString({
+						readable = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+						constant = "YOU_GET_THIS_QUEST_IN_YOUR_MAILBOX_NEXT_WEEKLY",
+						export = true,
+						text = {
+							en = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在完成“当复仇燃起绿焰”后，你会在下次每周重置时于邮箱中收到此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
 					["providers"] = {
 						{ "i", 206681 },	-- Letter from Oman (QI!)
@@ -1726,7 +2134,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157733),	-- Felburner's Leggings
 			i(157730),	-- Felburner's Sandals
 			i(157652, {	-- Shadow-Binder's Spire
-				["description"] = "New Allied Race Warlocks start with this weapon."
+				["description"] = createLocalizationString({
+					readable = "New Allied Race Warlocks start with this weapon.",
+					constant = "NEW_ALLIED_RACE_WARLOCKS_START_WITH_THIS_WEAPON",
+					export = true,
+					text = {
+						en = "New Allied Race Warlocks start with this weapon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "新的同盟种族术士初始就带有这件武器。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 		})),
 	}),
@@ -1933,12 +2358,46 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	filter(BACK_F, {
 		i(52940, {	-- Candy's Cloak
 			["races"] = { GOBLIN },
-			["description"] = "Former Starter Cloak for Male Goblins",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Cloak for Male Goblins",
+				constant = "FORMER_STARTER_CLOAK_FOR_MALE_GOBLINS",
+				export = true,
+				text = {
+					en = "Former Starter Cloak for Male Goblins",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "男性地精曾用的初始披风",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 		}),
 		i(52937, {	-- Chip's Cloak
 			["races"] = { GOBLIN },
-			["description"] = "Former Starter Cloak for Female Goblins",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Cloak for Female Goblins",
+				constant = "FORMER_STARTER_CLOAK_FOR_FEMALE_GOBLINS",
+				export = true,
+				text = {
+					en = "Former Starter Cloak for Female Goblins",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "女性地精曾用的初始披风",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 		}),
 		i(232351, {	-- Creche-Waker's Cloak
@@ -1998,31 +2457,150 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		-- #endif
 		i(6125, {	-- Brawler's Harness
-			["description"] = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
+				constant = "FORMER_STARTER_SHIRT_FOR_ORC_TROLL_TAUREN",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "兽人、巨魔、牛头人和亡灵战士曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(49, {	-- Footpad's Shirt
-			["description"] = "Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",
+				constant = "FORMER_STARTER_SHIRT_FOR_HUMAN_NIGHT_ELF_DWARF",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "人类、暗夜精灵、矮人和侏儒潜行者曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(49567, {	-- Gilnean Adventurer's Shirt
-			["description"] = "New Worgen Hunters, Rogues, and Warriors start out with this shirt.",
+			["description"] = createLocalizationString({
+				readable = "New Worgen Hunters, Rogues, and Warriors start out with this shirt.",
+				constant = "NEW_WORGEN_HUNTERS_ROGUES_AND_WARRIORS_START",
+				export = true,
+				text = {
+					en = "New Worgen Hunters, Rogues, and Warriors start out with this shirt.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "新的狼人猎人、潜行者和战士初始就带有这件衬衣。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_4_0_3 },
 		}),
 		i(24143, {	-- Initiate's Shirt
-			["description"] = "Former Starter Shirt for Blood Elf Paladins",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Blood Elf Paladins",
+				constant = "FORMER_STARTER_SHIRT_FOR_BLOOD_ELF_PALADINS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Blood Elf Paladins",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "血精灵圣骑士曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 		}),
 		i(20897, {	-- Lookout's Tunic
-			["description"] = "Former Starter Shirt for Blood Elf Rogues.",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Blood Elf Rogues.",
+				constant = "FORMER_STARTER_SHIRT_FOR_BLOOD_ELF_ROGUES",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Blood Elf Rogues.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "血精灵潜行者曾用的初始衬衣。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 		}),
 		i(53, {	-- Neophyte's Shirt
 			-- #if BEFORE 4.0.3
 			-- #if AFTER 2.0.1
-			["description"] = "Former Starter Shirt for Priests. (Also available from Old Hillsbrad)",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Priests. (Also available from Old Hillsbrad)",
+				constant = "FORMER_STARTER_SHIRT_FOR_PRIESTS_ALSO_AVAILABLE",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Priests. (Also available from Old Hillsbrad)",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "牧师曾用的初始衬衣。（也可从旧希尔斯布莱德获得）",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #else
-			["description"] = "Former Starter Shirt for Priests.",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Priests.",
+				constant = "FORMER_STARTER_SHIRT_FOR_PRIESTS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Priests.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "牧师曾用的初始衬衣。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_1_1_0, REMOVED_4_0_3 },
             -- #else
@@ -2030,56 +2608,277 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #endif
 		}),
 		i(154, {	-- Primitive Mantle
-			["description"] = "Former Starter Shirt for Orc & Tauren Shamans",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Orc & Tauren Shamans",
+				constant = "FORMER_STARTER_SHIRT_FOR_ORC_TAUREN_SHAMANS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Orc & Tauren Shamans",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "兽人和牛头人萨满祭司曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(6134, {	-- Primitive Mantle
-			["description"] = "Former Starter Shirt for Troll Shamans",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Troll Shamans",
+				constant = "FORMER_STARTER_SHIRT_FOR_TROLL_SHAMANS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Troll Shamans",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "巨魔萨满祭司曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(23473, {	-- Recruit's Shirt
-			["description"] = "Former Starter Shirt for Draenei Warriors and Mages",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Draenei Warriors and Mages",
+				constant = "FORMER_STARTER_SHIRT_FOR_DRAENEI_WARRIORS_AND",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Draenei Warriors and Mages",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "德莱尼战士和法师曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 		}),
 		i(6120, {	-- Recruit's Shirt
-			["description"] = "Former Starter Shirt for Night Elf Warriors",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Night Elf Warriors",
+				constant = "FORMER_STARTER_SHIRT_FOR_NIGHT_ELF_WARRIORS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Night Elf Warriors",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "暗夜精灵战士曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		-- #if BEFORE 2.0.1
 		i(38, {	-- Recruit's Shirt
-			["description"] = "Former Starter Shirt for Human Warriors",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Human Warriors",
+				constant = "FORMER_STARTER_SHIRT_FOR_HUMAN_WARRIORS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Human Warriors",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "人类战士曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		-- #endif
 		i(148, {	-- Rugged Trapper's Shirt
-			["description"] = "Former Starter Shirt for Dwarf & Night Elf Hunters",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Dwarf & Night Elf Hunters",
+				constant = "FORMER_STARTER_SHIRT_FOR_DWARF_NIGHT_ELF",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Dwarf & Night Elf Hunters",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "矮人和暗夜精灵猎人曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(23345, {	-- Scout's Shirt
-			["description"] = "Former Starter Shirt for Draenei Hunters and Shamans",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Draenei Hunters and Shamans",
+				constant = "FORMER_STARTER_SHIRT_FOR_DRAENEI_HUNTERS_AND",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Draenei Hunters and Shamans",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "德莱尼猎人和萨满祭司曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 		}),
 		i(6117, {	-- Squire's Shirt
-			["description"] = "Former Starter Shirt for Dwarf Paladins",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Dwarf Paladins",
+				constant = "FORMER_STARTER_SHIRT_FOR_DWARF_PALADINS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Dwarf Paladins",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "矮人圣骑士曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(23476, {	-- Squire's Shirt
-			["description"] = "Former Starter Shirt for Draenei Paladins",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Draenei Paladins",
+				constant = "FORMER_STARTER_SHIRT_FOR_DRAENEI_PALADINS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Draenei Paladins",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "德莱尼圣骑士曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 		}),
 		i(2105, {	-- Thug Shirt
-			["description"] = "Former Starter Shirt for Undead & Orc Rogues",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Undead & Orc Rogues",
+				constant = "FORMER_STARTER_SHIRT_FOR_UNDEAD_ORC_ROGUES",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Undead & Orc Rogues",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "亡灵和兽人潜行者曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(127, {	-- Trapper's Shirt
-			["description"] = "Former Starter Shirt for Orc, Tauren & Troll Hunters",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Orc, Tauren & Troll Hunters",
+				constant = "FORMER_STARTER_SHIRT_FOR_ORC_TAUREN_TROLL",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Orc, Tauren & Troll Hunters",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "兽人、牛头人和巨魔猎人曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(6136, {	-- Trapper's Shirt [CATA+] / Thug Shirt [Classic]
-			["description"] = "Former Starter Shirt for Troll Rogues",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Troll Rogues",
+				constant = "FORMER_STARTER_SHIRT_FOR_TROLL_ROGUES",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Troll Rogues",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "巨魔潜行者曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(20901, {	-- Warder's Shirt
-			["description"] = "Former Starter Shirt for Blood Elf Hunters",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Shirt for Blood Elf Hunters",
+				constant = "FORMER_STARTER_SHIRT_FOR_BLOOD_ELF_HUNTERS",
+				export = true,
+				text = {
+					en = "Former Starter Shirt for Blood Elf Hunters",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "血精灵猎人曾用的初始衬衣",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 		}),
 	}),
@@ -2105,7 +2904,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(37, {	-- Worn Axe
 			-- #if BEFORE 10.1.7
 			-- #if AFTER 7.3.5
-			["description"] = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
+				constant = "FORMER_STARTER_WEAPON_FOR_ORC_TROLL_WORGEN",
+				export = true,
+				text = {
+					en = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "兽人、巨魔和狼人潜行者，以及矮人、兽人、牛头人和巨魔猎人曾用的初始武器。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			-- #endif
 			["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_3_5 },
@@ -2115,7 +2931,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		--	["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
 			-- #if BEFORE 10.1.7
 			-- #if AFTER 5.0.4
-			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
+			["description"] = createLocalizationString({
+				readable = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
+				constant = "FORMER_STARTER_WEAPON_FOR_GOBLIN_HUMAN_UNDEAD",
+				export = true,
+				text = {
+					en = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "地精、人类、亡灵和狼人猎人曾用的初始武器。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			-- #endif
 			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },

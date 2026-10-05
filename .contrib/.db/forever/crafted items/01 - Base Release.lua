@@ -331,7 +331,24 @@ root(ROOTS.Craftables, {
 		n(COMMON_VENDOR_ITEMS, {
 			["groups"] = appendAllGroups(
 				sharedData({	-- Vanilla cooking reagents
-					["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
+					["description"] = createLocalizationString({
+						readable = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
+						constant = "CAN_BE_BOUGHT_FROM_COOKING_SUPPLIERS_AS_WELL_AS",
+						export = true,
+						text = {
+							en = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可从烹饪供应商以及世界各地的一些贸易商人处购买。",
+							-- TODO: tw = "",
+						},
+					}),
 				}, {
 					i(159),	-- Refreshing Spring Water
 					i(2678),	-- Mild Spices
@@ -351,7 +368,24 @@ root(ROOTS.Craftables, {
 				}),
 				{
 					i(1179, {	-- Ice Cold Milk
-						["description"] = "Can be bought from bartenders, innkeepers and general goods vendors.",
+						["description"] = createLocalizationString({
+							readable = "Can be bought from bartenders, innkeepers and general goods vendors.",
+							constant = "CAN_BE_BOUGHT_FROM_BARTENDERS_INNKEEPERS_AND",
+							export = true,
+							text = {
+								en = "Can be bought from bartenders, innkeepers and general goods vendors.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可从酒保、旅店老板和杂货商处购买。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}
 			),
@@ -444,75 +478,466 @@ root(ROOTS.Craftables, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			-- Dust:
 			i(11176, {	-- Dream Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 46-55 范围内的优秀（绿色）品质的服装、项链和戒指获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(16204, {	-- Illusion Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_2",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 56-65 范围内的优秀（绿色）品质的服装、项链和戒指获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11083, {	-- Soul Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_3",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 26-35 范围内的优秀（绿色）品质的服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(10940, {	-- Strange Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_4",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 10-25 范围内的优秀（绿色）品质的服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11137, {	-- Vision Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_5",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 36-45 范围内的优秀（绿色）品质的服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			-- Essences:
 			i(11082, {	-- Greater Astral Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_6",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 26-30 范围内的优秀（绿色）品质的服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(10998, {	-- Lesser Astral Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_7",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 21-25 范围内的优秀（绿色）品质的服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(16203, {	-- Greater Eternal Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_8",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 56-65 范围内的优秀（绿色）品质武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(16202, {	-- Lesser Eternal Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 51-55 范围内的所有优秀（绿色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(10939, {	-- Greater Magic Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_9",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 16-30 范围内的优秀（绿色）品质武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(10938, {	-- Lesser Magic Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_10",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 11-15 范围内的优秀（绿色）品质武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11135, {	-- Greater Mystic Essence 
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_2",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 36-40 范围内的所有优秀（绿色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11134, {	-- Lesser Mystic Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_3",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 31-35 范围内的所有优秀（绿色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11175, {	-- Greater Nether Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_4",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 46-50 范围内的所有优秀（绿色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11174, {	-- Lesser Nether Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_5",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 41-45 范围内的所有优秀（绿色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			-- Shards and crystals:
 			i(14344, {	-- Large Brilliant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 56-71 范围内的所有稀有（蓝色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(14343, {	-- Small Brilliant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 51-55 范围内的所有稀有（蓝色）和史诗（紫色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11084, {	-- Large Glimmering Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_2",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 26-30 范围内的所有稀有（蓝色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(10978, {	-- Small Glimmering Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_3",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 20-25 范围内的所有稀有（蓝色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11139, {	-- Large Glowing Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_4",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 36-40 范围内的所有稀有（蓝色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11138, {	-- Small Glowing Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_5",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 31-35 范围内的所有稀有（蓝色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11178, {	-- Large Radiant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND_2",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 46-50 范围内的所有稀有（蓝色）和史诗（紫色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(11177, {	-- Small Radiant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND_3",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 41-45 范围内的所有稀有（蓝色）和史诗（紫色）品质装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		filter(MISC, {
@@ -544,7 +969,24 @@ root(ROOTS.Craftables, {
 	}),
 	prof(ENGINEERING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+			["description"] = createLocalizationString({
+				readable = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+				constant = "CAN_BE_BOUGHT_FROM_ENGINEERING_SUPPLIERS_AS",
+				export = true,
+				text = {
+					en = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可从工程学供应商以及世界各地的一些贸易商人处购买。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 			["coords"] = {
@@ -590,7 +1032,24 @@ root(ROOTS.Craftables, {
 			}),
 			filter(RECIPES, {
 				i(10713, {	-- Plans: Inlaid Mithril Cylinder (RECIPE!)
-					["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+					["description"] = createLocalizationString({
+						readable = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+						constant = "THIS_RECIPE_IS_CRAFTED_BY_GNOMISH_ENGINEERS_AND",
+						export = true,
+						text = {
+							en = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "该配方由侏儒工程师制作并交给锻造师学习，以便锻造师制造工程师所需的物品。\n\n如果你缺少这个配方，可以请一位侏儒工程师为你制作。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			filter(TOYS, {
@@ -630,7 +1089,24 @@ root(ROOTS.Craftables, {
 			}),
 			filter(RECIPES, {
 				i(10644, {	-- Recipe: Goblin Rocket Fuel (RECIPE!)
-					["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+					["description"] = createLocalizationString({
+						readable = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+						constant = "THIS_RECIPE_IS_CRAFTED_BY_GOBLIN_ENGINEERS_AND",
+						export = true,
+						text = {
+							en = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "该配方由地精工程师制作并交给炼金师学习，以便炼金师制造工程师所需的物品。\n\n如果你缺少这个配方，可以请一位地精工程师为你制作。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			filter(TOYS, {
@@ -816,7 +1292,24 @@ root(ROOTS.Craftables, {
 	}),
 	prof(FISHING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
+			["description"] = createLocalizationString({
+				readable = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
+				constant = "CAN_BE_BOUGHT_FROM_FISHING_SUPPLIERS_AS_WELL_AS",
+				export = true,
+				text = {
+					en = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可从钓鱼供应商以及世界各地的一些贸易商人处购买。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 			--[[["coords"] = {
 				{ 47.8, 6.6, MAP.IRONFORGE },
@@ -849,7 +1342,24 @@ root(ROOTS.Craftables, {
 		})),
 		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish
-				["description"] = "Can be caught in open water in the given zones.",
+				["description"] = createLocalizationString({
+					readable = "Can be caught in open water in the given zones.",
+					constant = "CAN_BE_CAUGHT_IN_OPEN_WATER_IN_THE_GIVEN_ZONES",
+					export = true,
+					text = {
+						en = "Can be caught in open water in the given zones.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在指定区域的开放水域中钓到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.ASHENVALE,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -859,7 +1369,24 @@ root(ROOTS.Craftables, {
 		}),
 		filter(FINGER_F, {
 			i(8350, {	-- The 1 Ring
-				["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+				["description"] = createLocalizationString({
+					readable = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+					constant = "INTERESTINGLY_ENOUGH_YOU_CAN_FISH_THIS_OUT_OF",
+					export = true,
+					text = {
+						en = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "有趣的是，你可以在铁炉堡的岩浆里把它钓上来。我猜是侏儒们的任务失败了……",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, sharedData({ ["collectible"] = false, }, {
@@ -1061,7 +1588,24 @@ root(ROOTS.Craftables, {
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(6366, {	-- Darkwood Fishing Pole
-				["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Stranglethorn Vale, Redridge Mountains and Wetlands.",
+				["description"] = createLocalizationString({
+					readable = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Stranglethorn Vale, Redridge Mountains and Wetlands.",
+					constant = "CAN_BE_CAUGHT_IN_ASHENVALE_ARATHI_HIGHLANDS",
+					export = true,
+					text = {
+						en = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Stranglethorn Vale, Redridge Mountains and Wetlands.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在灰谷、阿拉希高地、希尔斯布莱德丘陵、荆棘谷、赤脊山和湿地钓到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.ASHENVALE,
 					MAP.ARATHI_HIGHLANDS,
@@ -1075,7 +1619,24 @@ root(ROOTS.Craftables, {
 		-- Danny Donkey: The post Cata data for fish and school locations is accurate for viability in retail and might deviate from Cata+ classic. Pre Cata data is also not validated in-game.
 		-- Fish:
 		i(13888, {	-- Darkclaw Lobster
-			["description"] = "Can be caught on the seaside.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught on the seaside.",
+				constant = "CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				export = true,
+				text = {
+					en = "Can be caught on the seaside.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在海边钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				MAP.AZSHARA,
 			},
@@ -1090,7 +1651,24 @@ root(ROOTS.Craftables, {
 			["provider"] = { "o", 180658 },	-- School of Deviate Fish
 		}),
 		i(6359, {	-- Firefin Snapper
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = createLocalizationString({
+				readable = "Schools can be found on the seaside.",
+				constant = "SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
+				export = true,
+				text = {
+					en = "Schools can be found on the seaside.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在海边找到鱼群。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1115,14 +1693,31 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13893, {	-- Large Raw Mightfish
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.AZSHARA,
 			},
 		}),
 		i(13757, {	-- Lightening Eel
 			["coord"] = { 60.6, 71.7, MAP.SILITHUS },
-			["description"] = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
+				constant = "CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS",
+				export = true,
+				text = {
+					en = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域和水道中钓到。这种鱼的掉落率为 5-10%。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				MAP.BURNING_STEPPES,
 				MAP.EASTERN_PLAGUELANDS,
@@ -1131,7 +1726,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6358, {	-- Oily Blackmouth
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1156,7 +1751,24 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6291, {	-- Raw Brilliant Smallfish
-			["description"] = "Can be caught in inland waters and waterways.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in inland waters and waterways.",
+				constant = "CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				export = true,
+				text = {
+					en = "Can be caught in inland waters and waterways.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域和水道中钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				MAP.DUN_MOROGH,
 				MAP.ELWYNN_FOREST,
@@ -1165,7 +1777,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6308, {	-- Raw Bristle Whisker Catfish
-			["description"] = "Can be caught in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
 			["maps_disp"] = {
 				MAP.ASHENVALE,
 				MAP.DUSKWOOD,
@@ -1174,7 +1786,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13754, {	-- Raw Glossy Mightfish
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
@@ -1183,7 +1795,24 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(21153, {	-- Raw Greater Sagefish
-			["description"] = "Schools can be found in inland waters and waterways.",
+			["description"] = createLocalizationString({
+				readable = "Schools can be found in inland waters and waterways.",
+				constant = "SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERS_AND",
+				export = true,
+				text = {
+					en = "Schools can be found in inland waters and waterways.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域和水道中找到鱼群。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				MAP.ALTERAC_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
@@ -1191,11 +1820,28 @@ root(ROOTS.Craftables, {
 			["provider"] = { "o", 180684 },	-- Greater Sagefish School
 		}),
 		i(6317, {	-- Raw Loch Frenzy
-			["description"] = "Can be caught in The Loch.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in The Loch.",
+				constant = "CAN_BE_CAUGHT_IN_THE_LOCH",
+				export = true,
+				text = {
+					en = "Can be caught in The Loch.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在洛克湖中钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = { MAP.LOCH_MODAN },
 		}),
 		i(6289, {	-- Raw Longjaw Mud Snapper
-			["description"] = "Can be caught in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
 			["maps_disp"] = {
 				MAP.DARNASSUS,
 				MAP.ORGRIMMAR,
@@ -1204,14 +1850,31 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(8365, {	-- Raw Mithril Head Trout
-			["description"] = "Can be caught in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
 			["maps_disp"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.THOUSAND_NEEDLES,
 			},
 		}),
 		i(13759, {	-- Raw Nightfin Snapper
-			["description"] = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
+				constant = "CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_3",
+				export = true,
+				text = {
+					en = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域和水道中于夜间钓到：服务器时间 18:00/6pm 至 12:00/12pm。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				MAP.DEADWIND_PASS,
 				MAP.MOONGLADE,
@@ -1224,7 +1887,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6361, {	-- Raw Rainbow Fin Albacore
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1236,7 +1899,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13758, {	-- Raw Redgill
-			["description"] = "Can be caught in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
 			["maps_disp"] = {
 				MAP.FELWOOD,
 				MAP.MOONGLADE,
@@ -1245,7 +1908,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6362, {	-- Raw Rockscale Cod
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.DUSTWALLOW_MARSH,
 				MAP.SWAMP_OF_SORROWS,
@@ -1255,7 +1918,7 @@ root(ROOTS.Craftables, {
 			["coords"] = {
 				{ 50.0, 40.0, MAP.STONETALON_MOUNTAINS },	-- Mirkfallon Lake
 			},
-			["description"] = "Schools can be found in inland waters and waterways.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERS_AND",
 			["maps_disp"] = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1268,14 +1931,14 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6303, {	-- Raw Slitherskin Mackerel
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.DUROTAR,
 				MAP.TELDRASSIL,
 			},
 		}),
 		i(4603, {	-- Raw Spotted Yellowtail
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.TANARIS,
 				MAP.SWAMP_OF_SORROWS,
@@ -1284,11 +1947,28 @@ root(ROOTS.Craftables, {
 		}),
 		-- i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		i(13760, {	-- Raw Sunscale Salmon
-			["description"] = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
+				constant = "CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_4",
+				export = true,
+				text = {
+					en = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域和水道中于白天钓到：服务器时间 06:00/6am 至 21:00/9pm。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coord"] = { 60.6, 71.7, MAP.SILITHUS },
 		}),
 		i(13889, {	-- Raw Whitescale Salmon
-			["description"] = "Can be caught in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
 			["maps_disp"] = {
 				MAP.DEADWIND_PASS,
 				MAP.EASTERN_PLAGUELANDS,
@@ -1297,7 +1977,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13422, {	-- Stonescale Eel
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
@@ -1310,7 +1990,24 @@ root(ROOTS.Craftables, {
 		-- i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		-- Fish schools:
 		o(180683, {	-- Firefin Snapper School
-			["description"] = "Can be found on the seaside.",
+			["description"] = createLocalizationString({
+				readable = "Can be found on the seaside.",
+				constant = "CAN_BE_FOUND_ON_THE_SEASIDE",
+				export = true,
+				text = {
+					en = "Can be found on the seaside.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在海边找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1336,14 +2033,31 @@ root(ROOTS.Craftables, {
 		o(180752),	-- Firefin Snapper School 4
 		o(180902),	-- Firefin Snapper School 5
 		o(180684, {	-- Greater Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
+			["description"] = createLocalizationString({
+				readable = "Can be found in inland waters and waterways.",
+				constant = "CAN_BE_FOUND_IN_INLAND_WATERS_AND_WATERWAYS",
+				export = true,
+				text = {
+					en = "Can be found in inland waters and waterways.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域和水道中找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				MAP.ALTERAC_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180682, {	-- Oily Blackmouth School
-			["description"] = "Can be found on the seaside.",
+			["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1365,13 +2079,13 @@ root(ROOTS.Craftables, {
 		}),
 		-- The following pre-5.1.0 Sagefish school IDs needs to be confirmed in game.
 		o(180656, {	-- Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERS_AND_WATERWAYS",
 		}),
 		o(180663, {	-- Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERS_AND_WATERWAYS",
 		}),
 		o(216764, {	-- Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
+			["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERS_AND_WATERWAYS",
 			["maps"] = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1391,7 +2105,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180712, {	-- Stonescale Eel Swarm
-			["description"] = "Can be found on the seaside.",
+			["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps"] = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
@@ -1402,13 +2116,30 @@ root(ROOTS.Craftables, {
 		}),
 		-- Wreckages:
 		o(180901, {	-- Bloodsail Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			["description"] = createLocalizationString({
+				readable = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+				constant = "WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
+				export = true,
+				text = {
+					en = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "残骸可以在海边找到，也可以在类人生物建筑附近的内陆水域找到。如果你一个也找不到，就把附近的鱼群钓光，因为它们共享刷新点。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180655, {	-- Floating Debris
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
 			["maps"] = {
 				MAP.DARKSHORE,
 				MAP.DUSKWOOD,
@@ -1419,7 +2150,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180751, {	-- Floating Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
 			["maps"] = {
 				MAP.BLASTED_LANDS,
 				MAP.EASTERN_PLAGUELANDS,
@@ -1428,7 +2159,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180662, {	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
 			["maps"] = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1437,7 +2168,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180685, {	-- Waterlogged Wreckage / Pre WotLK: Floating Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
 			["maps"] = {
 				MAP.TANARIS,
 				MAP.STRANGLETHORN_VALE,
@@ -1461,7 +2192,24 @@ root(ROOTS.Craftables, {
 				["maps"] = { MAP.FELWOOD },
 			}),
 			o(176589, {	-- Black Lotus
-				["description"] = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
+				["description"] = createLocalizationString({
+					readable = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
+					constant = "BLACK_LOTUS_IS_A_RARE_SPAWN_AND_CAN_SPAWN_IN",
+					export = true,
+					text = {
+						en = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "黑莲花是稀有刷新，可以代替其他草药刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["learnedAt"] = 300,
 				["maps"] = {
 					MAP.SILITHUS,
@@ -1473,7 +2221,24 @@ root(ROOTS.Craftables, {
 			o(142143, {	-- Blindweed
 				["maps"] = { MAP.SWAMP_OF_SORROWS },
 				["learnedAt"] = 235,
-				["description"] = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+				["description"] = createLocalizationString({
+					readable = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+					constant = "CAN_BE_FOUND_NEAR_WET_TERRAIN_AND_OR_WATERWAYS",
+					export = true,
+					text = {
+						en = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在潮湿地带和/或水道附近找到，不知为何暴雪在某些区域把这一点做得非常不一致。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(1621, {	-- Briarthorn
 				["learnedAt"] = 70,
@@ -1487,7 +2252,24 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.SILVERPINE_FOREST,
 				},
-				["description"] = "Usually found near trees.",
+				["description"] = createLocalizationString({
+					readable = "Usually found near trees.",
+					constant = "USUALLY_FOUND_NEAR_TREES",
+					export = true,
+					text = {
+						en = "Usually found near trees.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通常出现在树木附近。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(3729, {	-- Briarthorn (The Barrens)
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
@@ -1507,7 +2289,24 @@ root(ROOTS.Craftables, {
 					MAP.THOUSAND_NEEDLES,
 					MAP.WETLANDS,
 				},
-				["description"] = "Usually found near hillsides, buildings and structures.",
+				["description"] = createLocalizationString({
+					readable = "Usually found near hillsides, buildings and structures.",
+					constant = "USUALLY_FOUND_NEAR_HILLSIDES_BUILDINGS_AND",
+					export = true,
+					text = {
+						en = "Usually found near hillsides, buildings and structures.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通常出现在山坡、建筑和结构物附近。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
@@ -1530,7 +2329,24 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				["description"] = "Can usually be found on flat open spaces.",
+				["description"] = createLocalizationString({
+					readable = "Can usually be found on flat open spaces.",
+					constant = "CAN_USUALLY_BE_FOUND_ON_FLAT_OPEN_SPACES",
+					export = true,
+					text = {
+						en = "Can usually be found on flat open spaces.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通常可在平坦开阔的地方找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(176693, {	-- Dreamfoil (Felwood)
 				["learnedAt"] = 270,
@@ -1550,7 +2366,24 @@ root(ROOTS.Craftables, {
 					MAP.DARKSHORE,
 					MAP.REDRIDGE_MOUNTAINS,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				["description"] = createLocalizationString({
+					readable = "Can be found on uneven terrain and mountain sides.",
+					constant = "CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
+					export = true,
+					text = {
+						en = "Can be found on uneven terrain and mountain sides.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在崎岖地形和山坡上找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(3726, {	-- Earthroot (The Barrens)
 				-- Note: This node get replaced by o(1619) at an unknown point between MOP and TWW.
@@ -1565,7 +2398,24 @@ root(ROOTS.Craftables, {
 					MAP.DUSTWALLOW_MARSH,
 					MAP.STRANGLETHORN_VALE,
 				},
-				["description"] = "Can be found in fertile terrain and fields.",
+				["description"] = createLocalizationString({
+					readable = "Can be found in fertile terrain and fields.",
+					constant = "CAN_BE_FOUND_IN_FERTILE_TERRAIN_AND_FIELDS",
+					export = true,
+					text = {
+						en = "Can be found in fertile terrain and fields.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在肥沃的地带和田野中找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(2866, {	-- Firebloom
 				["learnedAt"] = 205,
@@ -1575,7 +2425,24 @@ root(ROOTS.Craftables, {
 					MAP.TANARIS,
 					MAP.BLASTED_LANDS,
 				},
-				["description"] = "Can be found on hot deserts.",
+				["description"] = createLocalizationString({
+					readable = "Can be found on hot deserts.",
+					constant = "CAN_BE_FOUND_ON_HOT_DESERTS",
+					export = true,
+					text = {
+						en = "Can be found on hot deserts.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在炎热的沙漠中找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(142144, {	-- Ghost Mushroom
 				["coords"] = {
@@ -1583,7 +2450,24 @@ root(ROOTS.Craftables, {
 					{ 55.8, 68.1, MAP.THE_HINTERLANDS },
 					{ 57.0, 81.0, MAP.THE_HINTERLANDS },
 				},
-				["description"] = "Can be found inside caves.",
+				["description"] = createLocalizationString({
+					readable = "Can be found inside caves.",
+					constant = "CAN_BE_FOUND_INSIDE_CAVES",
+					export = true,
+					text = {
+						en = "Can be found inside caves.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在洞穴内找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["learnedAt"] = 245,
 			}),
 			o(176583, {	-- Golden Sansam
@@ -1597,7 +2481,24 @@ root(ROOTS.Craftables, {
 					MAP.FERALAS,
 					MAP.THE_HINTERLANDS,
 				},
-				["description"] = "Can be found by trees and other natural structures.",
+				["description"] = createLocalizationString({
+					readable = "Can be found by trees and other natural structures.",
+					constant = "CAN_BE_FOUND_BY_TREES_AND_OTHER_NATURAL",
+					export = true,
+					text = {
+						en = "Can be found by trees and other natural structures.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在树木和其他自然结构附近找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(176638, {	-- Golden Sansam (Felwood)
 				["learnedAt"] = 260,
@@ -1614,7 +2515,7 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
 			}),
 			o(1628, {	-- Grave Moss
 				["coords"] = {
@@ -1622,7 +2523,24 @@ root(ROOTS.Craftables, {
 					{ 50.0, 58.0, MAP.DESOLACE },
 					{ 80.0, 71.0, MAP.DUSKWOOD },
 				},
-				["description"] = "Can be found on graves.",
+				["description"] = createLocalizationString({
+					readable = "Can be found on graves.",
+					constant = "CAN_BE_FOUND_ON_GRAVES",
+					export = true,
+					text = {
+						en = "Can be found on graves.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在坟墓上找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["learnedAt"] = 120,
 			}),
 			o(142145, {	-- Gromsblood
@@ -1631,7 +2549,24 @@ root(ROOTS.Craftables, {
 					{ 53.5, 46.5, MAP.BLASTED_LANDS },
 					{ 50.0, 80.0, MAP.DESOLACE },
 				},
-				["description"] = "Found in locations corrupted by the Burning Legion.",
+				["description"] = createLocalizationString({
+					readable = "Found in locations corrupted by the Burning Legion.",
+					constant = "FOUND_IN_LOCATIONS_CORRUPTED_BY_THE_BURNING",
+					export = true,
+					text = {
+						en = "Found in locations corrupted by the Burning Legion.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在被燃烧军团腐化的地点找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["learnedAt"] = 250,
 			}),
 			o(176637, {	-- Gromsblood (Felwood)
@@ -1654,7 +2589,24 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["description"] = "Can be found near trees.",
+				["description"] = createLocalizationString({
+					readable = "Can be found near trees.",
+					constant = "CAN_BE_FOUND_NEAR_TREES",
+					export = true,
+					text = {
+						en = "Can be found near trees.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在树木附近找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(1624, {	-- Kingsblood
 				["learnedAt"] = 125,
@@ -1673,7 +2625,24 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.THOUSAND_NEEDLES,
 				},
-				["description"] = "Can be found in the woods.",
+				["description"] = createLocalizationString({
+					readable = "Can be found in the woods.",
+					constant = "CAN_BE_FOUND_IN_THE_WOODS",
+					export = true,
+					text = {
+						en = "Can be found in the woods.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在森林中找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(2041, {	-- Liferoot
 				["learnedAt"] = 150,
@@ -1690,7 +2659,24 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				["description"] = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
+				["description"] = createLocalizationString({
+					readable = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
+					constant = "CAN_USUALLY_BE_FOUND_ON_FERTILE_GROUNDS_BY",
+					export = true,
+					text = {
+						en = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通常可在内陆水域和水道旁的肥沃土地上找到，不过逻辑一致可不是暴雪的强项。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(1620, {	-- Mageroyal
 				["learnedAt"] = 50,
@@ -1722,7 +2708,7 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WINTERSPRING,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
 			}),
 			o(176640, {	-- Mountain Silversage (Felwood)
 				["learnedAt"] = 280,
@@ -1756,7 +2742,24 @@ root(ROOTS.Craftables, {
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
-				["description"] = "Can be found in elven or troll ruins.",
+				["description"] = createLocalizationString({
+					readable = "Can be found in elven or troll ruins.",
+					constant = "CAN_BE_FOUND_IN_ELVEN_OR_TROLL_RUINS",
+					export = true,
+					text = {
+						en = "Can be found in elven or troll ruins.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在精灵或巨魔废墟中找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["learnedAt"] = 210,
 			}),
 			o(1617, {	-- Silverleaf
@@ -1807,7 +2810,24 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THE_BARRENS,
 				},
-				["description"] = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
+				["description"] = createLocalizationString({
+					readable = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
+					constant = "CAN_USUALLY_BE_FOUND_IN_THE_SEA_BUT_ALSO",
+					export = true,
+					text = {
+						en = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通常可在海中找到，但有时也会出现在内陆水域和水道中。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(142142, {	-- Sungrass
 				["learnedAt"] = 230,
@@ -1834,7 +2854,7 @@ root(ROOTS.Craftables, {
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
 			}),
 		}),
 		{	-- Herbs:
@@ -2242,7 +3262,24 @@ root(ROOTS.Craftables, {
 			["groups"] = appendAllGroups(
 				{
 					i(4289, {	-- Salt
-						["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+						["description"] = createLocalizationString({
+							readable = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+							constant = "CAN_BE_BOUGHT_FROM_LEATHERWORKING_SUPPLIERS_AS",
+							export = true,
+							text = {
+								en = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可从制皮供应商以及世界各地的一些贸易商人处购买。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 						--[[["providers"] = {
 							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
@@ -2255,7 +3292,24 @@ root(ROOTS.Craftables, {
 					}),
 				},
 				sharedData({
-					["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+					["description"] = createLocalizationString({
+						readable = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+						constant = "CAN_BE_BOUGHT_FROM_LEATHERWORKING_AND_TAILORING",
+						export = true,
+						text = {
+							en = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可从制皮和裁缝供应商以及世界各地的一些贸易商人处购买。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[["providers"] = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -2555,7 +3609,24 @@ root(ROOTS.Craftables, {
 					-- ____________________________________________
 					-- Gold
 					o(1734, {	-- Gold Vein
-						["description"] = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
+						["description"] = createLocalizationString({
+							readable = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
+							constant = "GOLD_VEIN_IS_A_RARE_SPAWN_IN_PLACE_OF_IRON",
+							export = true,
+							text = {
+								en = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "金矿脉是代替铁矿脉和秘银矿脉出现的稀有刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["learnedAt"] = 155,
 						["maps"] = {
 							MAP.ARATHI_HIGHLANDS,
@@ -2890,7 +3961,24 @@ root(ROOTS.Craftables, {
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(2775, {	-- Silver Ore
-						["description"] = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
+						["description"] = createLocalizationString({
+							readable = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
+							constant = "SILVER_VEINS_IS_A_RARE_SPAWN_IN_PLACE_OF_TIN",
+							export = true,
+							text = {
+								en = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "银矿脉是替代锡矿脉和铁矿床的稀有刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["maps_disp"] = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.ASHENVALE,
@@ -2942,7 +4030,24 @@ root(ROOTS.Craftables, {
 						["provider"] = { "o", 1732 },	-- Tin Vein
 					}),
 					i(7911, {	-- Truesilver Ore
-						["description"] = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
+						["description"] = createLocalizationString({
+							readable = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
+							constant = "TRUESILVER_DEPOSITS_IS_A_RARE_SPAWN_IN_PLACE_OF",
+							export = true,
+							text = {
+								en = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "真银矿脉是取代秘银矿脉和瑟银矿脉出现的稀有刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["maps_disp"] = {
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
@@ -3039,7 +4144,24 @@ root(ROOTS.Craftables, {
 					-- i(7076),	-- Essence of Earth
 					-- Misc:
 					i(12363, {	-- Arcane Crystal
-						["description"] = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
+						["description"] = createLocalizationString({
+							readable = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
+							constant = "ARCANE_CRYSTAL_IS_MOST_RELIABLY_OBTAINABLE_FROM",
+							export = true,
+							text = {
+								en = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "奥术水晶最可靠的获取方式是从富瑟银矿脉中采矿，尽管掉率很低。",
+								-- TODO: tw = "",
+							},
+						}),
 						["maps_disp"] = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
@@ -3057,7 +4179,24 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(9262, {	-- Black Vitriol
-						["description"] = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
+						["description"] = createLocalizationString({
+							readable = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
+							constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_MINING",
+							export = true,
+							text = {
+								en = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这颗宝石最可靠的获取方式是开采矿脉，不过掉率只有 1%。",
+								-- TODO: tw = "",
+							},
+						}),
 						["providers"] = {
 							{ "o", 2040 },	-- Mithril Deposit
 							{ "o", 324 },	-- Small Thorium Vein
@@ -3073,7 +4212,24 @@ root(ROOTS.Craftables, {
 						["provider"] = { "o", 165658 },	-- Dark Iron Deposit
 					}),
 					i(8150, {	-- Deeprock Salt
-						["description"] = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
+						["description"] = createLocalizationString({
+							readable = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
+							constant = "CAN_DROP_FROM_ANY_HIGHLEVEL_EARTH_ELEMENTAL_AND",
+							export = true,
+							text = {
+								en = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可从任何高等级土元素和构造体生物身上掉落，矿工还能通过采集尸体获得额外收获。",
+								-- TODO: tw = "",
+							},
+						}),
 						["maps_disp"] = {
 							MAP.BLACKROCK_DEPTHS,
 							MAP.MARAUDON,
@@ -3085,7 +4241,24 @@ root(ROOTS.Craftables, {
 				-- Gems (obtainable from prospecting):
 				-- Note: The gems are linked to respective ores with provider for prospecting in JEWELCRAFTING > Prospecting.
 				sharedData({
-					["description"] = "This gem is most reliably obtained from mining veins, although the droprate is low.",
+					["description"] = createLocalizationString({
+						readable = "This gem is most reliably obtained from mining veins, although the droprate is low.",
+						constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_MINING_2",
+						export = true,
+						text = {
+							en = "This gem is most reliably obtained from mining veins, although the droprate is low.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这颗宝石最可靠的获取方式是开采矿脉，不过掉率很低。",
+							-- TODO: tw = "",
+						},
+					}),
 				}, {
 					i(7909, {	-- Aquamarine
 						["maps_disp"] = {
@@ -3364,7 +4537,24 @@ root(ROOTS.Craftables, {
 			}),
 			i(11371, {	-- Dark Iron Bar
 				["cost"] = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
-				["description"] = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
+				["description"] = createLocalizationString({
+					readable = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
+					constant = "LEARNING_HOW_TO_MELT_DARK_IRON_ORE_FROM_GLOOM",
+					export = true,
+					text = {
+						en = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "向格鲁姆雷尔学习熔炼黑铁矿石需要花费 2 个星红宝石、20 个金锭和 10 个真银锭。\n\n黑色熔炉位于黑石深渊，就在召唤者之墓过去一点。向右进入熔岩之桥，熔炉就在左侧。\n黑铁砧可以在同一副本中伊森迪奥斯领主附近找到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(3577, {	-- Gold Bar
 				["cost"] = ClassicCost({ { "i", 2776, 1 } }),	-- Gold Ore
@@ -3420,7 +4610,7 @@ root(ROOTS.Craftables, {
 	prof(SKINNING, {
 		n(COMMON_VENDOR_ITEMS, {
 			i(7005, {	-- Skinning Knife
-				["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+				["description"] = "~L.CAN_BE_BOUGHT_FROM_LEATHERWORKING_SUPPLIERS_AS",
 			}),
 			i(277114, {	-- Apprentice's Skinning Satchel
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3475,7 +4665,24 @@ root(ROOTS.Craftables, {
 			}),
 			-- Base hides:
 			i(4235, {	-- Heavy Hide
-				["description"] = "Is a rare drop in place of Heavy Leather.",
+				["description"] = createLocalizationString({
+					readable = "Is a rare drop in place of Heavy Leather.",
+					constant = "IS_A_RARE_DROP_IN_PLACE_OF_HEAVY_LEATHER",
+					export = true,
+					text = {
+						en = "Is a rare drop in place of Heavy Leather.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "是替代重皮的稀有掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.DUSTWALLOW_MARSH,
 					MAP.TANARIS,
@@ -3483,7 +4690,24 @@ root(ROOTS.Craftables, {
 				},
 				}),
 			i(783, {	-- Light Hide
-				["description"] = "Is a rare drop in place of Light Leather.",
+				["description"] = createLocalizationString({
+					readable = "Is a rare drop in place of Light Leather.",
+					constant = "IS_A_RARE_DROP_IN_PLACE_OF_LIGHT_LEATHER",
+					export = true,
+					text = {
+						en = "Is a rare drop in place of Light Leather.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "是替代轻皮的稀有掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.DARKSHORE,
 					MAP.LOCH_MODAN,
@@ -3492,20 +4716,71 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(4232, {	-- Medium Hide
-				["description"] = "Is a rare drop in place of Medium Leather.",
+				["description"] = createLocalizationString({
+					readable = "Is a rare drop in place of Medium Leather.",
+					constant = "IS_A_RARE_DROP_IN_PLACE_OF_MEDIUM_LEATHER",
+					export = true,
+					text = {
+						en = "Is a rare drop in place of Medium Leather.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "是替代中皮的稀有掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.STONETALON_MOUNTAINS,
 				},
 			}),
 			i(8171, {	-- Rugged Hide
-				["description"] = "Is a rare drop in place of Rugged Leather.",
+				["description"] = createLocalizationString({
+					readable = "Is a rare drop in place of Rugged Leather.",
+					constant = "IS_A_RARE_DROP_IN_PLACE_OF_RUGGED_LEATHER",
+					export = true,
+					text = {
+						en = "Is a rare drop in place of Rugged Leather.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "是替代硬甲皮的稀有掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.BLASTED_LANDS,
 				},
 			}),
 			i(8169, {	-- Thick Hide
-				["description"] = "Is a rare drop in place of Thick Leather.",
+				["description"] = createLocalizationString({
+					readable = "Is a rare drop in place of Thick Leather.",
+					constant = "IS_A_RARE_DROP_IN_PLACE_OF_THICK_LEATHER",
+					export = true,
+					text = {
+						en = "Is a rare drop in place of Thick Leather.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "是替代厚皮的稀有掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.BADLANDS,
 					MAP.FELWOOD,
@@ -3548,7 +4823,24 @@ root(ROOTS.Craftables, {
 					7445,	-- Elder Shardtooth
 					7444,	-- Shardtooth Mauler
 				},
-				["description"] = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
+					constant = "CAN_BE_SKINNED_FROM_BEARS_IN_THE_LEVEL_BRACKET",
+					export = true,
+					text = {
+						en = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从 50-60 级范围内的熊身上剥皮获得，例如冬泉谷的碎齿熊。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 55.1, 37.8, MAP.WINTERSPRING },
 					{ 58.1, 89.4, MAP.WINTERSPRING },
@@ -3561,19 +4853,70 @@ root(ROOTS.Craftables, {
 					768,	-- Shadow Panther
 					684,	-- Shadowmaw Panther
 				},
-				["description"] = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
+				["description"] = createLocalizationString({
+					readable = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
+					constant = "PANTHERS_CAN_BE_FOUND_IN_CENTRAL_STRANGLETHORN",
+					export = true,
+					text = {
+						en = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "黑豹可在荆棘谷中部和悲伤沼泽东部找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
 			}),
 			i(8368, {	-- Thick Wolfhide
-				["description"] = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
+					constant = "CAN_BE_SKINNED_FROM_ALL_WOLFS_IN_THE_LEVEL",
+					export = true,
+					text = {
+						en = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从 40-60 级范围内的所有狼身上剥皮获得，不过掉落率为 3-5 %。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = { MAP.BURNING_STEPPES },
 			}),
 			-- Scales
 			i(15416, {	-- Black Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Black Dragonflight.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from elite creatures of the Black Dragonflight.",
+					constant = "CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE",
+					export = true,
+					text = {
+						en = "Can be skinned from elite creatures of the Black Dragonflight.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从黑龙军团的精英生物身上剥皮获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.BLACKWING_LAIR,
 					MAP.BLACKROCK_SPIRE,
@@ -3582,7 +4925,24 @@ root(ROOTS.Craftables, {
 			}),
 			i(7286),	-- Black Whelp Scale (Sourced in Wetlands [CATA+] / Redridge Mountains)
 			i(15415, {	-- Blue Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
+					constant = "CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE_BLUE",
+					export = true,
+					text = {
+						en = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可以从蓝龙军团的精英生物身上剥皮获得，不过就掉率而言，刷起来实在痛苦。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 57.2, 65.9, MAP.WINTERSPRING },	-- Mazthoril
 					{ 38.0, 75.0, MAP.AZSHARA },	-- Lake Mennar
@@ -3590,32 +4950,134 @@ root(ROOTS.Craftables, {
 			}),
 			i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
 			i(15412, {	-- Green Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
+					constant = "CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE_2",
+					export = true,
+					text = {
+						en = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从世界各地绿龙军团的精英生物身上剥皮获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 			}),
 			i(15408, {	-- Heavy Scorpid Scale
-				["description"] = "Can be skinned from scorpids in the level bracket 50-60.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from scorpids in the level bracket 50-60.",
+					constant = "CAN_BE_SKINNED_FROM_SCORPIDS_IN_THE_LEVEL",
+					export = true,
+					text = {
+						en = "Can be skinned from scorpids in the level bracket 50-60.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从 50-60 级范围内的蝎子身上剥皮获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.BURNING_STEPPES,
 					MAP.SILITHUS
 				},
 			}),
 			i(15414, {	-- Red Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
+					constant = "CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE_RED",
+					export = true,
+					text = {
+						en = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从世界各地红龙军团的精英生物身上剥皮获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 80.0, 48.0, MAP.WETLANDS },
 			}),
 			i(8154, {	-- Scorpid Scale
 				["maps_disp"] = { MAP.TANARIS },
-				["description"] = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
+				["description"] = createLocalizationString({
+					readable = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
+					constant = "DROPS_FROM_SCORPIDS_IN_THE_LEVEL_BRACKET_40_60",
+					export = true,
+					text = {
+						en = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由 40-60 级范围内的蝎子掉落，例如塔纳利斯的蝎子。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(8167, {	-- Turtle Scale
-				["description"] = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
+					constant = "CAN_BE_SKINNED_FROM_TURTLES_IN_THE_LEVEL",
+					export = true,
+					text = {
+						en = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从 35-60 级范围内的海龟身上剥皮获得，例如尘泥沼泽的泥岩海龟。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					MAP.DUSTWALLOW_MARSH,
 				},
 			}),
 			i(8165, {	-- Worn Dragonscale
-				["description"] = "Can be skinned from elite creatures of any Dragonflights around the world.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from elite creatures of any Dragonflights around the world.",
+					constant = "CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_ANY",
+					export = true,
+					text = {
+						en = "Can be skinned from elite creatures of any Dragonflights around the world.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从世界各地任何龙军团的精英生物身上剥皮获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 			}),
 		}),
@@ -3840,7 +5302,24 @@ root(ROOTS.Craftables, {
 					i(14341),	-- Rune Thread
 				},
 				sharedData({
-					["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+					["description"] = createLocalizationString({
+						readable = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+						constant = "CAN_BE_BOUGHT_FROM_TAILORING_SUPPLIERS_AS_WELL",
+						export = true,
+						text = {
+							en = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可从裁缝供应商以及世界各地的一些贸易商人处购买。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[["providers"] = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -3866,7 +5345,24 @@ root(ROOTS.Craftables, {
 			i(4305),	-- Bolt of Silk Cloth
 			i(2997),	-- Bolt of Woolen Cloth
 			i(14342, {	-- Mooncloth
-				["description"] = "Coordinates are for select Moonwells around the world.",
+				["description"] = createLocalizationString({
+					readable = "Coordinates are for select Moonwells around the world.",
+					constant = "COORDINATES_ARE_FOR_SELECT_MOONWELLS_AROUND_THE",
+					export = true,
+					text = {
+						en = "Coordinates are for select Moonwells around the world.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "坐标对应世界各地选定的月亮井。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 43.10, 80.27, MAP.DARNASSUS },	-- Temple of the Moon
 					{ 21.0, 53.0, MAP.STORMWIND_CITY },	-- The Park

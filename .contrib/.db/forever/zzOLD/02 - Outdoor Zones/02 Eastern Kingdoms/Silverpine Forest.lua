@@ -611,14 +611,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(8491, {	-- Black Tabby Cat (PET!)
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+							["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
 							["timeline"] = { ADDED_1_11_1 },
 						}),
 						i(4437, {	-- Channeler's Staff
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+							["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+							["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
 						}),
 					},
 				}),
@@ -808,11 +808,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4767, {	-- Coppercloth Gloves
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+					["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
 					["cr"] = 3578,	-- Dalaran Miner
 				}),
 				i(5110, {	-- Dalaran Wizard's Robe
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+					["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
 					["crs"] = {
 						2120,	-- Archmage Ataeric
 						1867,	-- Dalaran Apprentice

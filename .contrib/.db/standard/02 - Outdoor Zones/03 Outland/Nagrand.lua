@@ -236,7 +236,24 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66552, {	-- Narrok <Master Pet Tamer>
 						["coord"] = { 61.0, 49.4, NAGRAND },
-						["description"] = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Demolish/Sandstorm/Deflection) and Turkey (Peck/Squawk/Food Coma).",
+						["description"] = createLocalizationString({
+							readable = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Demolish/Sandstorm/Deflection) and Turkey (Peck/Squawk/Food Coma).",
+							constant = "NARROK_S_PETS_ARE_LEVEL_22_OF_THE_FOLLOWING",
+							export = true,
+							text = {
+								en = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Demolish/Sandstorm/Deflection) and Turkey (Peck/Squawk/Food Coma).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "纳洛克的宠物是 22 级，按以下连续宠物类别：\n1. 水生 - 使用飞行（强力）或魔法（耐打）宠物。\n2. 小动物 - 使用野兽（强力）或人形（耐打）宠物。\n3. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n\n若要计入“一次糟糕的大冒险”，请使用雷象毛绒玩具和两只强力宠物组队作战，例如阿努比萨斯雕像（粉碎/沙尘暴/偏斜）和火鸡（啄击/尖啸/食物昏迷）。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 22,
 						["groups"] = {
@@ -423,7 +440,24 @@ root(ROOTS.Zones, {
 								-- #IF BEFORE 4.2.0
 								["provider"] = { "i", 27808 },	-- Jump-a-tron 4000 Key
 								-- #ENDIF
-								["description"] = "You can also just fly up there if you have flying.",
+								["description"] = createLocalizationString({
+									readable = "You can also just fly up there if you have flying.",
+									constant = "YOU_CAN_ALSO_JUST_FLY_UP_THERE_IF_YOU_HAVE",
+									export = true,
+									text = {
+										en = "You can also just fly up there if you have flying.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "如果你有飞行能力，也可以直接飞上去。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							objective(2, {	-- Severed Talon of the Matriarch
 								["provider"] = { "i", 27841 },	-- Severed Talon of the Matriarch
@@ -768,7 +802,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9897, {	-- I'm Saved!
-						["description"] = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws.",
+						["description"] = createLocalizationString({
+							readable = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws.",
+							constant = "YOU_HAVE_TO_RESCUE_KRISTEN_DIPSWITCH_FROM",
+							export = true,
+							text = {
+								en = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你必须从甘克利·腐拳手中救出克里斯滕·迪普斯维奇，才会被提供此任务。当她没有受到甘克利攻击时，你需要让一只怪物把她杀死，然后等待约 90 分钟直到她重新刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 18294,	-- Kristen Dipswitch
 						["coord"] = { 71.4, 40.6, NAGRAND },
 					}),
@@ -1098,7 +1149,24 @@ root(ROOTS.Zones, {
 						-- #endif
 					},
 					q(9867, {	-- Murkblood Leaders..
-						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+						["description"] = createLocalizationString({
+							readable = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+							constant = "COMPLETING_9888_THE_IMPOTENT_LEADER_WILL_GRANT",
+							export = true,
+							text = {
+								en = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成任务 [9888]“无能的领袖”将使你在玛格汉的声望达到中立。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 18068,	-- Farseer Margadesh <The Lightning Sons>
 						["coord"] = { 54.6, 39.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
@@ -1148,7 +1216,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10076, {	-- Oshu'gun Crystal Powder (A)
-						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						["description"] = createLocalizationString({
+							readable = "This quest is only accessible when the Alliance controls Halaa.",
+							constant = "THIS_QUEST_IS_ONLY_ACCESSIBLE_WHEN_THE_ALLIANCE",
+							export = true,
+							text = {
+								en = "This quest is only accessible when the Alliance controls Halaa.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有当联盟控制哈兰时才能接取此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 18817,	-- Chief Researcher Kartos
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["cost"] = {
@@ -1164,7 +1249,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10077, {	-- Oshu'gun Crystal Powder (A)
-						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						["description"] = "~L.THIS_QUEST_IS_ONLY_ACCESSIBLE_WHEN_THE_ALLIANCE",
 						["sourceQuest"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)
 						["qg"] = 18817,	-- Chief Researcher Kartos
 						["coord"] = { 41.2, 44.2, NAGRAND },
@@ -1182,7 +1267,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10074, {	-- Oshu'gun Crystal Powder (H)
-						["description"] = "This quest is only accessible when the Horde controls Halaa.",
+						["description"] = createLocalizationString({
+							readable = "This quest is only accessible when the Horde controls Halaa.",
+							constant = "THIS_QUEST_IS_ONLY_ACCESSIBLE_WHEN_THE_HORDE",
+							export = true,
+							text = {
+								en = "This quest is only accessible when the Horde controls Halaa.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有当部落控制哈兰时才能接取此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 18816,	-- Chief Researcher Amereldine
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["cost"] = {
@@ -1198,7 +1300,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10075, {	-- Oshu'gun Crystal Powder (H)
-						["description"] = "This quest is only accessible when the Horde controls Halaa.",
+						["description"] = "~L.THIS_QUEST_IS_ONLY_ACCESSIBLE_WHEN_THE_HORDE",
 						["sourceQuest"] = 10074,	-- Oshu'gun Crystal Powder (Horde Version)
 						["qg"] = 18816,	-- Chief Researcher Amereldine
 						["coord"] = { 41.2, 44.2, NAGRAND },
@@ -1396,7 +1498,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9888, {	-- The Impotent Leader
-						["description"] = "Completing this quest will grant Neutral with The Mag'har.",
+						["description"] = createLocalizationString({
+							readable = "Completing this quest will grant Neutral with The Mag'har.",
+							constant = "COMPLETING_THIS_QUEST_WILL_GRANT_NEUTRAL_WITH",
+							export = true,
+							text = {
+								en = "Completing this quest will grant Neutral with The Mag'har.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成该任务将使你在玛格汉的声望达到中立。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							9797,	-- Reinforcements for Garadar
 							-- #if AFTER 6.2.0.19953
@@ -1425,7 +1544,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9864, {	-- The Missing War Party
-						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+						["description"] = "~L.COMPLETING_9888_THE_IMPOTENT_LEADER_WILL_GRANT",
 						["qg"] = 18067,	-- Farseer Corhuk <The Lightning Sons>
 						["coord"] = { 54.8, 39.8, NAGRAND },
 						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
@@ -1698,7 +1817,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(9863, {	-- Vile Idolatry
-						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+						["description"] = "~L.COMPLETING_9888_THE_IMPOTENT_LEADER_WILL_GRANT",
 						["qg"] = 18066,	-- Farseer Kurkush <The Lightning Sons>
 						["coord"] = { 54.8, 39.4, NAGRAND },
 						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
@@ -1965,7 +2084,24 @@ root(ROOTS.Zones, {
 				-- #endif
 				n(VENDORS, {
 					n(21485, {	-- Aldraan <Blade Merchant>
-						["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
+						["description"] = createLocalizationString({
+							readable = "This vendor is only accessible when the Alliance controls Halaa.",
+							constant = "THIS_VENDOR_IS_ONLY_ACCESSIBLE_WHEN_THE",
+							export = true,
+							text = {
+								en = "This vendor is only accessible when the Alliance controls Halaa.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有在联盟控制哈兰时才能接触到此商人。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 42.8, 42.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{"select", "itemID",
@@ -2030,7 +2166,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(21474, {	-- Coreiel <Blade Merchant>
-						["description"] = "This vendor is only accessible when the Horde controls Halaa.",
+						["description"] = createLocalizationString({
+							readable = "This vendor is only accessible when the Horde controls Halaa.",
+							constant = "THIS_VENDOR_IS_ONLY_ACCESSIBLE_WHEN_THE_HORDE",
+							export = true,
+							text = {
+								en = "This vendor is only accessible when the Horde controls Halaa.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有在部落控制哈兰时才能接触到此商人。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 42.8, 42.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = pvp({
@@ -2094,7 +2247,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(19015, {	-- Mathar G'ochar <Trade Supplies>
-						["description"] = "This vendor pats around Garadar.",
+						["description"] = createLocalizationString({
+							readable = "This vendor pats around Garadar.",
+							constant = "THIS_VENDOR_PATS_AROUND_GARADAR",
+							export = true,
+							text = {
+								en = "This vendor pats around Garadar.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此商人在加拉达尔一带巡逻。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 55.2, 37.0, NAGRAND },
 							{ 57.0, 40.0, NAGRAND },
@@ -2180,7 +2350,24 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(18822, {	-- Quartermaster Davian Vaclav
-						["description"] = "This NPC is only accessible when the Alliance controls Halaa.",
+						["description"] = createLocalizationString({
+							readable = "This NPC is only accessible when the Alliance controls Halaa.",
+							constant = "THIS_NPC_IS_ONLY_ACCESSIBLE_WHEN_THE_ALLIANCE",
+							export = true,
+							text = {
+								en = "This NPC is only accessible when the Alliance controls Halaa.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有当联盟控制哈兰时才能接触到此 NPC。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2282,7 +2469,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(18821, {	-- Quartermaster Jaffrey Noreliqe
-						["description"] = "This NPC is only accessible when the Horde controls Halaa.",
+						["description"] = createLocalizationString({
+							readable = "This NPC is only accessible when the Horde controls Halaa.",
+							constant = "THIS_NPC_IS_ONLY_ACCESSIBLE_WHEN_THE_HORDE",
+							export = true,
+							text = {
+								en = "This NPC is only accessible when the Horde controls Halaa.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有当部落控制哈兰时才能接触到此 NPC。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {

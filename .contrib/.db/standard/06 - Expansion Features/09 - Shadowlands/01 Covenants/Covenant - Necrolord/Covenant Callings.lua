@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["customCollect"] = "SL_COV_NEC",
 			}, {
 				q(62694, {	-- A Calling in Maldraxxus
-					["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
+					["description"] = "~L.WILL_ONLY_BE_OFFERED_AS_THE_INITIAL_CALLING",
 					["sourceQuests"] = { 62835 },	-- A Call to Service
 					["provider"] = { "n", 158339 },	-- Sergeant Romark
 					["coord"] = { 47.7, 29.1, SEAT_OF_THE_PRIMUS },

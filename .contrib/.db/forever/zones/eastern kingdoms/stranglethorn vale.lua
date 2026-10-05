@@ -247,7 +247,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["coord"] = { 30.5, 47.8, MAP.STRANGLETHORN_VALE },
 			})),
 			q(4621, {	-- Avast Ye, Admiral!
-				["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
+				["description"] = createLocalizationString({
+					readable = "This quest also requires you to be hated or lower with Booty Bay.",
+					constant = "THIS_QUEST_ALSO_REQUIRES_YOU_TO_BE_HATED_OR",
+					export = true,
+					text = {
+						en = "This quest also requires you to be hated or lower with Booty Bay.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务还要求你与藏宝海湾的声望为仇恨或更低。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 				["qg"] = 2546,	-- Fleet Master Firallon
 				["coord"] = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
@@ -594,7 +611,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["lvl"] = 35,
 				["groups"] = {
 					q(619, {	-- Enticing Negolash
-						["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
+						["description"] = createLocalizationString({
+							readable = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
+							constant = "THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE_2",
+							export = true,
+							text = {
+								en = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务可重复完成，但只有当你的任务日志中有“直面尼戈拉什”任务时才能完成。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 						["cost"] = {
 							{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
@@ -727,7 +761,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["lvl"] = 28,
 			}),
 			q(215, {	-- Jungle Secrets
-				["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
+				["description"] = createLocalizationString({
+					readable = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
+					constant = "EVERY_SO_OFTEN_THORSEN_WILL_GO_ON_PATROL_IF_YOU",
+					export = true,
+					text = {
+						en = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "索尔森会时不时地出去巡逻。如果你跟着他，他会遭到库尔森的两名手下的伏击——如果他活下来，就会向你提供此任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 738,	-- Private Thorsen
 				["coord"] = { 40.0, 8.0, MAP.STRANGLETHORN_VALE },
 				["races"] = ALLIANCE_ONLY,
@@ -1932,7 +1983,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 		}),
 		n(TREASURES, {
 			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+				["description"] = createLocalizationString({
+					readable = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+					constant = "CHEST_IS_DROPPED_IN_ARENA_EVERY_3_HOURS_WARNING",
+					export = true,
+					text = {
+						en = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "宝箱每 3 小时在竞技场掉落一次。\n\n警告：自由混战 PvP 事件\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 30.5, 47.8, MAP.STRANGLETHORN_VALE },
 				["groups"] = {
 					i(18706),	-- Arena Master
@@ -2327,7 +2395,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["cr"] = 701,	-- Bloodscalp Mystic
 			}),
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
-				["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+				["description"] = createLocalizationString({
+					readable = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					constant = "CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					export = true,
+					text = {
+						en = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可由辛特兰或荆棘谷的任意巨魔掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(1624, {	-- Skullsplitter Helm
 				["crs"] = {
@@ -2348,7 +2433,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["cr"] = 660,	-- Bloodscalp Witch Doctor
 			}),
 			i(8153, {	-- Wildvine
-				["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+				["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
 			}),
 		}),
 	},

@@ -27,7 +27,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(PROFESSIONS, {
 				prof(ENCHANTING, {
 					n(11073, {	-- Annora <Master Enchanter>
-						["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+						["description"] = createLocalizationString({
+							readable = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+							constant = "TO_GET_THE_ANNORA_TO_SPAWN_YOU_LL_HAVE_TO_KILL",
+							export = true,
+							text = {
+								en = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要让安诺拉刷新，你必须先杀掉所有蝎子。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = ENCHANTING_RECIPES.ARTISAN,
 					}),
 				}),
@@ -428,7 +445,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2278, {	-- The Platinum Discs (1/3)
-					["description"] = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
+					["description"] = createLocalizationString({
+						readable = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
+						constant = "RIGHT_CLICK_ON_THE_DISCS_OF_NORGANNON_AFTER",
+						export = true,
+						text = {
+							en = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "击败阿扎达斯后右键点击诺甘农圆盘来开始此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["lvl"] = lvlsquish(40, 40, 15),
 				}),
@@ -620,7 +654,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(TREASURES, {
 				o(141979, {	-- Ancient Treasure
-					["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
+					["description"] = createLocalizationString({
+						readable = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
+						constant = "FOUND_IN_THE_HALL_OF_THE_CRAFTERS_AFTER_YOU",
+						export = true,
+						text = {
+							en = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "击败阿扎达斯后可在工匠大厅中找到。包含 2-3 件物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["modelScale"] = 3,
 					["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
 						8029,	-- Plans: Wicked Mithril Blade
@@ -628,24 +679,92 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				o(123329, {	-- Baelog's Chest
 					i(7740, {	-- Gni'kiv Medallion
-						["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
+						["description"] = createLocalizationString({
+							readable = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
+							constant = "USE_THIS_ITEM_ALONG_WITH_THE_SHAFT_OF_TSOL_TO",
+							export = true,
+							text = {
+								en = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将此物品与索尔之柄一起使用，即可制作出打开伊罗娜之门所需的史前法杖。\n\n你应当请从雷弗洛什身上拾取到索尔之柄的人把它交易给你。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { REMOVED_4_1_0 },
 					}),
 				}),
 				o(125477, {	-- Conspicuous Urn
-					["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",
+					["description"] = createLocalizationString({
+						readable = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",
+						constant = "IN_THE_ROOM_WITH_THE_LOST_DWARVES_NEXT_TO_THE",
+						export = true,
+						text = {
+							en = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在密封之门旁、楼梯上方矮人对面的房间里，那里有失踪的矮人。你需要杀死一些潜行的穴居人才能到达那里。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(7671),	-- Shattered Necklace Topaz
 					},
 				}),
 				o(113757, {	-- Shadowforge Cache
-					["description"] = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
+					["description"] = createLocalizationString({
+						readable = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
+						constant = "WARNING_DEFEAT_THE_GALGANN_FIREHAMMER_FIRST_AS",
+						export = true,
+						text = {
+							en = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "警告：请先击败加加恩·火锤，因为拾取这个箱子会生成两个矮人伏击者。\n\n注意：此触发每个副本锁定周期只会发生一次。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(7669),	-- Shattered Necklace Ruby
 					},
 				}),
 				i(7733, {	-- Staff of Prehistoria
-					["description"] = "Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
+					["description"] = createLocalizationString({
+						readable = "Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
+						constant = "USE_THIS_ON_THE_KEYSTONE_IN_THE_DIGSITE_THAT",
+						export = true,
+						text = {
+							en = "Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在有微缩城市的挖掘场中对拱心石使用此物，即可打开通往伊罗娜的门。\n\n这是对《夺宝奇兵》的致敬。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { REMOVED_4_1_0 },
 					["cost"] = {
 						{ "i", 7740, 1 },	-- Gni'kiv Medallion
@@ -653,13 +772,47 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				o(142088, {	-- Tablet of Will
-					["description"] = "Located in the same room as Galgann Firehammer.",
+					["description"] = createLocalizationString({
+						readable = "Located in the same room as Galgann Firehammer.",
+						constant = "LOCATED_IN_THE_SAME_ROOM_AS_GALGANN_FIREHAMMER",
+						export = true,
+						text = {
+							en = "Located in the same room as Galgann Firehammer.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与加加恩·火锤在同一个房间内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(5824),	-- Tablet of Will
 					},
 				}),
 				o(131474, {	-- The Discs of Norgannon
-					["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
+					["description"] = createLocalizationString({
+						readable = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
+						constant = "TALK_TO_THE_LORE_KEEPER_UNTIL_HE_HAS_FINISHED",
+						export = true,
+						text = {
+							en = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与博学者交谈，直到他说完话，然后再次从诺甘农圆盘处接取任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["modelScale"] = 3,
 					["groups"] = {
 						i(6064),	-- Miniature Platinum Discs
@@ -691,7 +844,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #else
 			n(6906, {	-- Baelog
-				["description"] = "This dwarf is named after the French Archiologist, René Belloq, from the Raiders of the Lost Ark.",
+				["description"] = createLocalizationString({
+					readable = "This dwarf is named after the French Archiologist, René Belloq, from the Raiders of the Lost Ark.",
+					constant = "THIS_DWARF_IS_NAMED_AFTER_THE_FRENCH",
+					export = true,
+					text = {
+						en = "This dwarf is named after the French Archiologist, René Belloq, from the Raiders of the Lost Ark.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这位矮人的名字来源于《夺宝奇兵》中的法国考古学家勒内·贝洛克。",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(9399),	-- Precision Arrow
@@ -724,7 +894,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(6912, {	-- Remains of a Paladin
 				-- #if AFTER 4.0.3
-				["description"] = "This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",
+				["description"] = createLocalizationString({
+					readable = "This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",
+					constant = "THIS_DEAD_PALADIN_WAS_CENTRAL_IN_NOW_REMOVED",
+					export = true,
+					text = {
+						en = "This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这位死去的圣骑士曾是现已移除的地下城任务的关键人物，如今仍被遗弃在地上，没有任何用途。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["groups"] = {
 					i(7886),	-- Untranslated Journal
@@ -734,7 +921,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 6910,
 				["groups"] = {
 					i(7741, {	-- The Shaft of Tsol
-						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
+						["description"] = createLocalizationString({
+							readable = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
+							constant = "USE_THIS_ITEM_ALONG_WITH_THE_GNI_KIV_MEDALLION",
+							export = true,
+							text = {
+								en = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将此物品与格尼基夫徽章一起使用，即可制作出打开伊罗娜之门所需的史前法杖。\n\n你应当把它交易给拾取到格尼基夫徽章的人。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { REMOVED_4_1_0 },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons

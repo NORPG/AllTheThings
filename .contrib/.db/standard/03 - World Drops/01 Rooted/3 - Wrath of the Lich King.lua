@@ -996,7 +996,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		i(36453),	-- Embossed Brazen Shield
 		i(36454, {	-- Domed Buckler [Removed from Game - Crates Only!]
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
 			-- #endif
 			["timeline"] = { CREATED_3_0_2, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
@@ -1073,7 +1073,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 	}),
 	filter(MISC, {
 		i(44663, {	-- Abandoned Adventurer's Satchel
-			["description"] = "Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",
+			["description"] = createLocalizationString({
+				readable = "Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",
+				constant = "DROPS_FROM_ANY_OF_THE_NORTHREND_RARES_CONTAINS",
+				export = true,
+				text = {
+					en = "Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由任意诺森德稀有怪物掉落。内含一些金币、霜纹布和结晶微粒。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {
 				32481,	-- Aotona
 				38453,	-- Arcturis
@@ -1106,7 +1123,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		}),
 		i(43297),	-- Damaged Necklace
 		i(36812, {	-- Ground Gear
-			["description"] = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
+			["description"] = createLocalizationString({
+				readable = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
+				constant = "DROPS_FROM_MECHS_IN_NORTHREND_FOR_LEVEL_10_12",
+				export = true,
+				text = {
+					en = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由诺森德的机械生物掉落，适合 10-12 级的角色。也可由奥杜尔的米米尔隆掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 	}),
 	filter(TOYS, {
@@ -1263,7 +1297,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			-- 	Cloth + Silk:
 			{
 				i(33470, {
-					["description"] = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
+					["description"] = createLocalizationString({
+						readable = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures.",
+						constant = "FROSTWEAVE_CLOTH_IS_A_VERY_COMMON_DROP_FROM",
+						export = true,
+						text = {
+							en = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "霜纹布是《巫妖王之怒》类人生物和亡灵生物非常常见的掉落物。",
+							-- TODO: tw = "",
+						},
+					})
 				}),
 				i(42253, {	-- Iceweb Silk
 					["coords"] = {
@@ -1310,7 +1361,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					30875,	-- Tempest Revenant
 					30848,	-- Whispering Wind
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["description"] = createLocalizationString({
+					readable = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+					constant = "MOST_OF_THE_GIVEN_MAPS_COORDINATES_AND_SOURCES",
+					export = true,
+					text = {
+						en = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "所提供的地图、坐标和来源大多适用于如何获得此元素的结晶形态。",
+						-- TODO: tw = "",
+					},
+				}),
 			}, {
 				i(37700),	-- Crystallized Air
 				i(35623),	-- Eternal Air
@@ -1331,7 +1399,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					29436,	-- Icetouched Earthrager
 					26284,	-- Runic Battle Golem
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["description"] = "~L.MOST_OF_THE_GIVEN_MAPS_COORDINATES_AND_SOURCES",
 				["providers"] = {
 					{ "o", 189978 },	-- Cobalt Deposit
 					{ "o", 189979 },	-- Rich Cobalt Deposit
@@ -1358,7 +1426,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					32544,	-- Steam Cloud (Gas cloud)
 					30450,	-- Wailing Winds
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["description"] = "~L.MOST_OF_THE_GIVEN_MAPS_COORDINATES_AND_SOURCES",
 			}, {
 				i(37702),	-- Crystallized Fire
 				i(36860),	-- Eternal Fire
@@ -1378,7 +1446,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					29036,	-- Servant of Freya
 					23874,	-- Thornwine Creeper
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["description"] = "~L.MOST_OF_THE_GIVEN_MAPS_COORDINATES_AND_SOURCES",
 				["providers"] = {
 					{ "o", 191019 },	-- Adder's Tongue
 					{ "o", 191303 },	-- Firethorn
@@ -1406,7 +1474,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					{ "o", 189981 },	-- Rich Saronite Deposit
 					{ "o", 189980 },	-- Saronite Deposit
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["description"] = "~L.MOST_OF_THE_GIVEN_MAPS_COORDINATES_AND_SOURCES",
 			}, {
 				i(37703),	-- Crystallized Shadow
 				i(35627),	-- Eternal Shadow
@@ -1443,7 +1511,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					32544,	-- Steam Cloud (Gas cloud)
 					30877,	-- Water Revenant
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["description"] = "~L.MOST_OF_THE_GIVEN_MAPS_COORDINATES_AND_SOURCES",
 				["providers"] = {
 					{ "o", 189978 },	-- Cobalt Deposit
 					{ "o", 189979 },	-- Rich Cobalt Deposit
@@ -1485,7 +1553,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25215,	-- Winterfin Shorestriker
 						25217,	-- Winterfin Warrior
 					},
-					["description"] = "Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+					["description"] = createLocalizationString({
+						readable = "Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+						constant = "IS_A_RARE_DROP_FROM_WATER_CREATURES_LIKE",
+						export = true,
+						text = {
+							en = "Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "是鱼人和鲸鱼等水生生物的稀有掉落物，且有很大几率开出珍珠。对于与神谕者结盟的玩家，可以忽略索拉查盆地的坐标。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(36782),	-- Succulent Clam Meat
 						i(36783),	-- Northsea Pearl
@@ -1521,7 +1606,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25215,	-- Winterfin Shorestriker
 						25217,	-- Winterfin Warrior
 					},
-					["description"] = "Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+					["description"] = createLocalizationString({
+						readable = "Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+						constant = "IS_A_COMMON_DROP_FROM_WATER_CREATURES_LIKE",
+						export = true,
+						text = {
+							en = "Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "是鱼人和鲸鱼等水生生物的常见掉落物。对于与神谕者结盟的玩家，可以忽略索拉查盆地的坐标。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(36782),	-- Succulent Clam Meat
 						i(36783),	-- Northsea Pearl
@@ -1533,7 +1635,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			--
 			-- 	Cooking reagents:
 				i(43013, {	-- Chilled Meat
-					["description"] = "Can drop from any Northrend beasts.",
+					["description"] = createLocalizationString({
+						readable = "Can drop from any Northrend beasts.",
+						constant = "CAN_DROP_FROM_ANY_NORTHREND_BEASTS",
+						export = true,
+						text = {
+							en = "Can drop from any Northrend beasts.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可从任意诺森德野兽身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(34736, {	-- Chunk o' Mammoth
 					["coords"] = {
@@ -1659,7 +1778,24 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			--
 			-- Other reagents:
 				i(43102, {	-- Frozen Orb
-					["description"] = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",
+					["description"] = createLocalizationString({
+						readable = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",
+						constant = "HAS_A_CHANCE_TO_DROP_FROM_THE_LAST_BOSS_OF_ANY",
+						export = true,
+						text = {
+							en = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "有几率从英雄难度《巫妖王之怒》地下城的最终首领身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}
 		),

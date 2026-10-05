@@ -198,7 +198,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 45.3, 30.3, SINFALL_DEPTHS },
 			}),
 			q(62902, {	-- Anima is Power
-				["description"] = "Becomes available after you complete your first Calling quest.",
+				["description"] = "~L.BECOMES_AVAILABLE_AFTER_YOU_COMPLETE_YOUR_FIRST",
 				["sourceQuests"] = { 62691 },	-- A Calling in Revendreth
 				["provider"] = { "n", 165302 },	-- Rendle
 				["coord"] = { 61.6, 75.7, SINFALL_DEPTHS },
@@ -252,13 +252,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 65.9, 32.2, REVENDRETH },
 			}),
 			q(59701, {	-- Common Ground
-				["description"] = "Requires Renown 5.",
+				["description"] = "~L.REQUIRES_RENOWN_5",
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 51.0, 38.0, SINFALL_REACHES },
 			}),
 			q(61077, {	-- Confronting Sin
-				["description"] = "Requires Renown 17.",
+				["description"] = "~L.REQUIRES_RENOWN_17",
 				["sourceQuests"] = { 59233 },	-- The Prince's New Crown
 				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 52.0, 37.6, SINFALL_REACHES },
@@ -393,7 +393,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 55.3, 27.4, SINFALL_REACHES },
 			}),
 			q(61050, {	-- How to Wear Seven Medallions
-				["description"] = "Requires Renown 13.",
+				["description"] = "~L.REQUIRES_RENOWN_13",
 				["sourceQuests"] = { 58444 },	-- Return to Sinfall
 				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 51.3, 38.0, SINFALL_REACHES },
@@ -501,19 +501,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(60935, {	-- Medallion of Avarice
-				["description"] = "Requires Renown 11.",
+				["description"] = "~L.REQUIRES_RENOWN_11",
 				["sourceQuest"] = 57893,	-- Neither Enemy nor Ally
 				["provider"] = { "o", 353949 },	-- Medallion of Avarice
 				["coord"] = { 54.9, 30.9, SINFALL_REACHES },
 			}),
 			q(60904, {	-- Medallion of Desire
-				["description"] = "Requires Renown 8.",
+				["description"] = "~L.REQUIRES_RENOWN_8",
 				["sourceQuests"] = { 59719 },	-- The Court
 				["provider"] = { "o", 353948 },	-- Medallion of Desire
 				["coord"] = { 53.6, 32.9, SINFALL_REACHES },
 			}),
 			q(58406, {	-- Mirror to Maldraxxus
-				["description"] = "Requires Renown 22.",
+				["description"] = "~L.REQUIRES_RENOWN_22",
 				["sourceQuests"] = { 57646 },	-- The Tithelord
 				["provider"] = { "n", 158653 },	-- Prince Renethal
 				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
@@ -639,7 +639,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 50.9, 38.1, SINFALL_REACHES },
 			}),
 			q(63341, {	-- Sinfall Tactician
-				["description"] = "Requires Renown 22.",
+				["description"] = "~L.REQUIRES_RENOWN_22",
 				["sourceQuests"] = { 63340 },	-- Sinfall Veteran
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
@@ -647,19 +647,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- TODO: Assumed SQ... double check by skipping to Renown 22
 			}),
 			q(64083, {	-- Sinfall Tactician #2
-				["description"] = "Requires Renown 59.",
+				["description"] = "~L.REQUIRES_RENOWN_59",
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 			}),
 			q(63340, {	-- Sinfall Veteran
-				["description"] = "Requires Renown 7.",
+				["description"] = "~L.REQUIRES_RENOWN_7",
 				-- ["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64325, {	-- Sinfall Veteran #2
-				["description"] = "Requires Renown 43.",
+				["description"] = "~L.REQUIRES_RENOWN_43",
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 			}),
@@ -695,7 +695,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(57727, {	-- Stonevigil Unrest
-				["description"] = "Requires Renown 20.",
+				["description"] = "~L.REQUIRES_RENOWN_20",
 				["sourceQuests"] = { 58395 },	-- Enough Vengeance For One Day
 				["provider"] = { "n", 158653 },	-- Prince Renethal
 				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
@@ -725,7 +725,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			q(57918, {	-- The Absolution of Souls
-				["description"] = "Becomes available after unlocking tier 1 of the Command Table sanctum upgrade.",
+				["description"] = createLocalizationString({
+					readable = "Becomes available after unlocking tier 1 of the Command Table sanctum upgrade.",
+					constant = "BECOMES_AVAILABLE_AFTER_UNLOCKING_TIER_1_OF_THE",
+					export = true,
+					text = {
+						en = "Becomes available after unlocking tier 1 of the Command Table sanctum upgrade.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁指挥台圣所升级的第 1 层后开放。",
+						-- TODO: tw = "",
+					},
+				}),
 				["altQuests"] = { 58093 },	-- Our Forgotten Purpose
 				["provider"] = { "n", 165291 },	-- The Accuser
 				["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
@@ -801,7 +818,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(61492, {	-- The Princeguard
-				["description"] = "Requires Renown 5.",
+				["description"] = "~L.REQUIRES_RENOWN_5",
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 				["provider"] = { "n", 161977 },	-- General Draven
 				["coord"] = { 46.3, 15.7, SINFALL_REACHES },
@@ -903,7 +920,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62867, {	-- Return Lost Souls (10)
-				["description"] = "Requires Renown 15.",
+				["description"] = "~L.REQUIRES_RENOWN_15",
 				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
@@ -911,7 +928,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62868, {	-- Return Lost Souls (15)
-				["description"] = "Requires Renown 24.",
+				["description"] = "~L.REQUIRES_RENOWN_24",
 				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
@@ -919,7 +936,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62869, {	-- Return Lost Souls (20)
-				["description"] = "Requires Renown 32.",
+				["description"] = "~L.REQUIRES_RENOWN_32",
 				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },

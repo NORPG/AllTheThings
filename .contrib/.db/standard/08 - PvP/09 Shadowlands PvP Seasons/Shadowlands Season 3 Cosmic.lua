@@ -381,7 +381,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			}),
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				["description"] = createLocalizationString({
+					readable = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+					constant = "CAN_ONLY_BE_OBTAINED_FROM_THE_GREAT_VAULT",
+					export = true,
+					text = {
+						en = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "只能从宏伟宝库/造物催化台获得。外观在评级达到 1800 时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = bubbleDownFiltered({
 					["bonusID"] = 7897,
 				},FILTERFUNC_itemID,{
@@ -522,7 +539,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		}),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }, ["modID"] = 14, ["bonusID"] = 7551 }, {
 			n(CLASSES,{
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				["description"] = "~L.CAN_ONLY_BE_OBTAINED_FROM_THE_GREAT_VAULT",
 				["groups"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon

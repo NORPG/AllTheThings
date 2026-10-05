@@ -1327,7 +1327,24 @@ MOP_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	}),
 });
 DRAENOR_JEWELCRAFTING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Jewelcrafting questline that can drop from any Draenor mob. Also sold at Gem Boutique for 100 gold.",
+	["description"] = createLocalizationString({
+		readable = "This is a reward for completing the introductory Jewelcrafting questline that can drop from any Draenor mob. Also sold at Gem Boutique for 100 gold.",
+		constant = "THIS_IS_A_REWARD_FOR_COMPLETING_THE_5",
+		export = true,
+		text = {
+			en = "This is a reward for completing the introductory Jewelcrafting questline that can drop from any Draenor mob. Also sold at Gem Boutique for 100 gold.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这是完成珠宝加工入门任务线的奖励，可从任何德拉诺生物身上掉落。也可在宝石精品店以 100 金币购买。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158750, {	-- Jewelcrafting (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -1418,7 +1435,7 @@ COMMON_DRAENOR_JEWELCRAFTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 	}),
 	i(116079, {	-- Design: Taladite Amplifier (RECIPE!)
 		["collectible"] = false,
-		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["description"] = "~L.THE_ITEM_IS_STILL_IN_GAME_BUT_YOU_CAN_T_LEARN",
 		["cost"] = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 5}},
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),

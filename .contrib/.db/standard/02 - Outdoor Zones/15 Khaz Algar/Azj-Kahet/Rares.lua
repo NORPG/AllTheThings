@@ -8,7 +8,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["isDaily"] = true,
 		}, {
 			n(216042, {	-- Cha'tak
-				["description"] = "Inside the cave, behind the waterfall.",
+				["description"] = createLocalizationString({
+					readable = "Inside the cave, behind the waterfall.",
+					constant = "INSIDE_THE_CAVE_BEHIND_THE_WATERFALL",
+					export = true,
+					text = {
+						en = "Inside the cave, behind the waterfall.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴内，瀑布后面。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 70.7, 21.4, AZJ_KAHET },
 				["questID"] = 81704,
 				["groups"] = {
@@ -35,7 +52,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(216050, {	-- Harverster Qixt
-				["description"] = "Patrols in the area.",
+				["description"] = createLocalizationString({
+					readable = "Patrols in the area.",
+					constant = "PATROLS_IN_THE_AREA",
+					export = true,
+					text = {
+						en = "Patrols in the area.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在该区域巡逻。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 82036,
 				["coords"] = {
 					{ 62.4, 86.4, AZJ_KAHET_LOWER},	-- Start
@@ -61,7 +95,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(221327, {	-- Kaheti Silk Hauler
-				["description"] = "Patrols on the road.",
+				["description"] = createLocalizationString({
+					readable = "Patrols on the road.",
+					constant = "PATROLS_ON_THE_ROAD",
+					export = true,
+					text = {
+						en = "Patrols on the road.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在道路上巡逻。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 65.2, 18.9, AZJ_KAHET },	-- Start
 					{ 63.2, 25.2, AZJ_KAHET },	-- Mid
@@ -93,7 +144,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
-				["description"] = "Patrolling the path from the base to the top.",
+				["description"] = createLocalizationString({
+					readable = "Patrolling the path from the base to the top.",
+					constant = "PATROLLING_THE_PATH_FROM_THE_BASE_TO_THE_TOP",
+					export = true,
+					text = {
+						en = "Patrolling the path from the base to the top.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在从基地到顶端的道路上巡逻。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 						{ 61.3, 7.6, AZJ_KAHET },
 						{ 62.9, 4.8, AZJ_KAHET },
@@ -203,7 +271,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(216037, {	-- Vilewing
-				["description"] = "Flies around the area.",
+				["description"] = createLocalizationString({
+					readable = "Flies around the area.",
+					constant = "FLIES_AROUND_THE_AREA",
+					export = true,
+					text = {
+						en = "Flies around the area.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在该区域周围飞行。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 36.6, 44.3, AZJ_KAHET },
 				["questID"] = 81700,
 				["groups"] = {

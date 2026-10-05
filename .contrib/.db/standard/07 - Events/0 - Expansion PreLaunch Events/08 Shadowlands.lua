@@ -225,7 +225,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			-------------------------- Week 2 --------------------------
 			q(62162, {	-- A Message from the Justicar (A)
-				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1.",
+				["description"] = createLocalizationString({
+					readable = "Only available if you've done \"Advancing the Effort\" in week 1.",
+					constant = "ONLY_AVAILABLE_IF_YOU_VE_DONE_ADVANCING_THE",
+					export = true,
+					text = {
+						en = "Only available if you've done \"Advancing the Effort\" in week 1.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "只有在第 1 周完成了“推进努力”后才可获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 60827,	-- Advancing the Effort
 				["qg"] = 166383,	-- Commander Gregor
 				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
@@ -242,7 +259,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["lvl"] = { 50 },
 			}),
 			q(62163, {	-- A Message from the Justicar (H)
-				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1.",
+				["description"] = "~L.ONLY_AVAILABLE_IF_YOU_VE_DONE_ADVANCING_THE",
 				["sourceQuest"] = 60827,	-- Advancing the Effort
 				["qg"] = 169878,	-- Commander Throgg
 				["coord"] = { 52.9, 77.3, ORGRIMMAR },
@@ -578,7 +595,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 36.5, 67.7, ICECROWN },
 				["questID"] = 62344,
 				["isRepeatable"] = true,
-				["description"] = "Inside the Sanctum of Reanimation at the Fleshworks.",
+				["description"] = createLocalizationString({
+					readable = "Inside the Sanctum of Reanimation at the Fleshworks.",
+					constant = "INSIDE_THE_SANCTUM_OF_REANIMATION_AT_THE",
+					export = true,
+					text = {
+						en = "Inside the Sanctum of Reanimation at the Fleshworks.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在血肉工场的复生圣所内。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(183200),	-- Pitch Black Scourgestone
 					i(183645),	-- Cinch of the Tortured
@@ -897,7 +931,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				}),
 			}),
 			n(173791, {	-- Crusader Adevald Ironbeard
-				["description"] = "While this vendor and his items are still available, the currency required to buy the items is not.\nTagging the vendor and his goods as removed as otherwise they would show up as collectible.",
+				["description"] = createLocalizationString({
+					readable = "While this vendor and his items are still available, the currency required to buy the items is not.\nTagging the vendor and his goods as removed as otherwise they would show up as collectible.",
+					constant = "WHILE_THIS_VENDOR_AND_HIS_ITEMS_ARE_STILL",
+					export = true,
+					text = {
+						en = "While this vendor and his items are still available, the currency required to buy the items is not.\nTagging the vendor and his goods as removed as otherwise they would show up as collectible.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "虽然此商人和他的物品仍然可以获取，但购买这些物品所需的货币已无法获取。\n将该商人及其商品标记为已移除，否则它们会显示为可收集。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 69.4, 23.3, ICECROWN },
 				["groups"] = bubbleDown({
 					["cost"] = { { "c", 1754, 15 } },	-- 15x Argent Commendation

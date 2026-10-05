@@ -170,7 +170,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61785, {	-- An Expected Visitor
-				["description"] = "Requires Renown 11.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 11.",
+					constant = "REQUIRES_RENOWN_11",
+					export = true,
+					text = {
+						en = "Requires Renown 11.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 11。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 58181 },	-- Building the Base
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.2, ARCHONS_RISE },
@@ -187,7 +204,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58557, {	-- Assistance from Sinfall
-				["description"] = "Requires Renown 13.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 13.",
+					constant = "REQUIRES_RENOWN_13",
+					export = true,
+					text = {
+						en = "Requires Renown 13.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 13。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 61878 },	-- Creat of Greatness
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 45.0, 56.9, ARCHONS_RISE },
@@ -245,7 +279,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 64.7, 45.6, BASTION },
 			}),
 			q(58854, {	-- Convene the Paragons
-				["description"] = "Requires Renown 22.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 22.",
+					constant = "REQUIRES_RENOWN_22",
+					export = true,
+					text = {
+						en = "Requires Renown 22.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 22。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62555 },	-- A Touch of Humility
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
@@ -492,24 +543,75 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 33.8, 55.7, THE_MAW },
 			}),
 			q(63345, {	-- Kyrian Tactician
-				["description"] = "Requires Renown 22.",
+				["description"] = "~L.REQUIRES_RENOWN_22",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64086, {	-- Kyrian Tactician #2
-				["description"] = "Requires Renown 59.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 59.",
+					constant = "REQUIRES_RENOWN_59",
+					export = true,
+					text = {
+						en = "Requires Renown 59.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 59。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 			}),
 			q(63344, {	-- Kyrian Veteran
-				["description"] = "Requires Renown 7.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 7.",
+					constant = "REQUIRES_RENOWN_7",
+					export = true,
+					text = {
+						en = "Requires Renown 7.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 7。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64323, {	-- Kyrian Veteran #2
-				["description"] = "Requires Renown 43.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 43.",
+					constant = "REQUIRES_RENOWN_43",
+					export = true,
+					text = {
+						en = "Requires Renown 43.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 43。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 			}),
@@ -558,13 +660,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 68.3, 41.6, BASTION },
 			}),
 			q(57113, {	-- Lysonia's Trail
-				["description"] = "Requires Renown 20.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 20.",
+					constant = "REQUIRES_RENOWN_20",
+					export = true,
+					text = {
+						en = "Requires Renown 20.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 20。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 61697 },	-- A New Age
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58775, {	-- Meet the Queen
-				["description"] = "Requires Renown 17.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 17.",
+					constant = "REQUIRES_RENOWN_17",
+					export = true,
+					text = {
+						en = "Requires Renown 17.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 17。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 58571 },	-- The Seal of Contrition
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
@@ -620,7 +756,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 			}),
 			q(62791, {	-- Our Most Precious Resource
-				["description"] = "Becomes available after you complete your first Calling quest.",
+				["description"] = createLocalizationString({
+					readable = "Becomes available after you complete your first Calling quest.",
+					constant = "BECOMES_AVAILABLE_AFTER_YOU_COMPLETE_YOUR_FIRST",
+					export = true,
+					text = {
+						en = "Becomes available after you complete your first Calling quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成你的第一个使命任务后开放。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 160387 },	-- Hermestes
 				["coord"] = { 40.9, 40.9, ARCHONS_RISE },
 			}),
@@ -708,21 +861,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["isWeekly"] = true,
 			}),
 			q(62861, {	-- Return Lost Souls (10 Souls)
-				["description"] = "Requires Renown 15.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 15.",
+					constant = "REQUIRES_RENOWN_15",
+					export = true,
+					text = {
+						en = "Requires Renown 15.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 15。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62862, {	-- Return Lost Souls (15 Souls)
-				["description"] = "Requires Renown 24.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 24.",
+					constant = "REQUIRES_RENOWN_24",
+					export = true,
+					text = {
+						en = "Requires Renown 24.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 24。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62863, {	-- Return Lost Souls (20 Souls)
-				["description"] = "Requires Renown 32.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 32.",
+					constant = "REQUIRES_RENOWN_32",
+					export = true,
+					text = {
+						en = "Requires Renown 32.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 32。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 				["isWeekly"] = true,
@@ -946,12 +1150,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 32.1, 21.2, BASTION },
 			}),
 			q(58787, {	-- Trial of Ascension
-				["description"] = "Requires Renown 5.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 5.",
+					constant = "REQUIRES_RENOWN_5",
+					export = true,
+					text = {
+						en = "Requires Renown 5.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 5。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58832, {	-- Trinkle Trinkle Little Twerp
-				["description"] = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
+				["description"] = createLocalizationString({
+					readable = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
+					constant = "DROPS_FROM_SICKLETHORNS_WHILE_DOING_QUEST_WHO",
+					export = true,
+					text = {
+						en = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在进行任务“你在骗谁？”期间由镰棘掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 58775 },	-- Meet the Queen
 				["provider"] = { "i", 175982 },	-- Sicklethorn To-Do List
 				["coord"] = { 40.4, 54.7, ARDENWEALD },

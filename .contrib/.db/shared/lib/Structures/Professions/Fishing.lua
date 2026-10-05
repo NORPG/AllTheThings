@@ -101,7 +101,24 @@ MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = 
 	r(7738),	-- Fishing Poles
 }));
 DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "Rewarded for fishing",
+	["description"] = createLocalizationString({
+		readable = "Rewarded for fishing",
+		constant = "REWARDED_FOR_FISHING",
+		export = true,
+		text = {
+			en = "Rewarded for fishing",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "钓鱼获得",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158743, {	-- Fishing (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

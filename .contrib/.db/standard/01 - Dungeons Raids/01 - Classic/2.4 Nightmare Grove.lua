@@ -44,7 +44,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = 60,
 		["groups"] = {
 			n(DRAGONS_OF_NIGHTMARE, bubbleDown({ ["timeline"] = { ADDED_1_11_0, REMOVED_1_15_5 } }, {
-				["description"] = "The original version of the nightmare dragon loot in Classic Era.",
+				["description"] = createLocalizationString({
+					readable = "The original version of the nightmare dragon loot in Classic Era.",
+					constant = "THE_ORIGINAL_VERSION_OF_THE_NIGHTMARE_DRAGON",
+					export = true,
+					text = {
+						en = "The original version of the nightmare dragon loot in Classic Era.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "经典旧世中梦魇之龙掉落的原始版本。",
+						-- TODO: tw = "",
+					},
+				}),
 				["isRaid"] = true,
 				["groups"] = {
 					n(QUESTS, {
@@ -217,7 +234,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(234880, {	-- Emeriss
 				-- Unconfirmed Drop:
 				i(234159, {	-- Polished Ironwood Crossbow
-					["description"] = "If you get this to drop, @crieve on Discord!",
+					["description"] = createLocalizationString({
+						readable = "If you get this to drop, @crieve on Discord!",
+						constant = "IF_YOU_GET_THIS_TO_DROP_CRIEVE_ON_DISCORD",
+						export = true,
+						text = {
+							en = "If you get this to drop, @crieve on Discord!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你刷出了这个物品，请在 Discord 上 @crieve！",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 
 				-- Confirmed Drops:

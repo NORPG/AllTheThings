@@ -164,7 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5243, {	-- Houses of the Holy
 					-- #if BEFORE 4.0.3
-					["description"] = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
+					["description"] = "~L.WHEN_MOUSING_OVER_THE_CRATES_LOOK_FOR_REQUIRES",
 					-- #endif
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
@@ -541,19 +541,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					-- #if BEFORE 4.0.3
-					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					-- #if BEFORE 4.0.3
-					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					-- #if BEFORE 4.0.3
-					["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "~L.CAN_DROP_FROM_WEAK_UNDEAD_CREATURE_IN_THE",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
@@ -824,13 +824,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(ZONE_DROPS, {
 						i(12811, {	-- Righteous Orb
 							-- #if BEFORE 4.0.3
-							["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
+							["description"] = "~L.CAN_DROP_FROM_ANY_SCARLET_CRUSADE_MEMBER_IN",
 							-- #endif
 						}),
 						i(12734, {	-- Enchanted Scarlet Thread
 							["provider"] = { "o", 175966 },	-- Enchanted Scarlet Thread
 							-- #if BEFORE 4.0.3
-							["description"] = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
+							["description"] = "~L.THESE_CAN_BE_FOUND_IN_4_PLACES_IN_THE_SCARLET",
 							-- #endif
 						}),
 						i(16249, {	-- Formula: Enchant 2H Weapon - Major Intellect (RECIPE!)
@@ -852,7 +852,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(10393, {	-- Skul
-						["description"] = "This is a Rare Creature and, as such, is not always present.",
+						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 						["groups"] = {
 							i(13396),	-- Skul's Ghastly Touch
 							i(13394),	-- Skul's Cold Embrace
@@ -861,7 +861,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(11058, {	-- Fras Siabi / Ezra Grimm
 						-- #if BEFORE 4.0.3
-						["description"] = "In order to summon this boss, one of your party members must be on the quest.",
+						["description"] = "~L.IN_ORDER_TO_SUMMON_THIS_BOSS_ONE_OF_YOUR_PARTY",
 						-- #endif
 						["groups"] = {
 							i(13172),	-- Siabi's Premium Tobacco / Grimm's Premium Tobacco
@@ -870,7 +870,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					n(11082, {	-- Stratholme Courier
 						["timeline"] = { REMOVED_4_0_3 },
-						["description"] = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
+						["description"] = "~L.DROPS_3_RANDOM_KEYS_USED_TO_OPEN_POSTBOXES",
 						["groups"] = {
 							i(13303, {	-- Crusaders' Square Postbox Key
 								["timeline"] = { DELETED_4_0_3 },
@@ -1123,7 +1123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12845, {	-- Medallion of Faith
 							["provider"] = { "o", 176112 },	-- Malor's Strongbox
 							-- #if BEFORE 4.0.3
-							["description"] = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
+							["description"] = "~L.LOCATED_IN_MALOR_S_STRONGBOX_CAN_BE_TURNED_IN",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -1133,7 +1133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(11120, {	-- Crimson Hammersmith [Classic] / Risen Hammersmith [CATA+]
 						["provider"] = { "o", 176325 },	-- Blacksmithing Plans
-						["description"] = "Found in the Hoard on the way to Cannon Master Willey.",
+						["description"] = "~L.FOUND_IN_THE_HOARD_ON_THE_WAY_TO_CANNON_MASTER",
 						["groups"] = {
 							i(18781, {	-- Bottom Half of Advanced Armorsmithing: Volume II
 								["timeline"] = { REMOVED_4_0_3 },
@@ -1142,7 +1142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
-								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
+								["description"] = "~L.YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS",
 								["timeline"] = {
 									-- #if SEASON_OF_DISCOVERY
 									REMOVED_1_15_3,
@@ -1153,7 +1153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228308, {	-- Plans: Tranquility (RECIPE!)
-								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
+								["description"] = "~L.YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS",
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
@@ -1235,7 +1235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(14679, {	-- Of Love and Family
 								-- #if BEFORE 4.0.3
-								["description"] = "Found on the wall near Archivist Galford.",
+								["description"] = "~L.FOUND_ON_THE_WALL_NEAR_ARCHIVIST_GALFORD",
 								-- #endif
 							}),
 							applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
@@ -1427,12 +1427,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(PHASE_SIX, n(16387, {	-- Atiesh <Hand of Sargeras>
-						["description"] = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
+						["description"] = "~L.SUMMONED_AND_DEFEATED_AS_PART_OF_THE_ATIESH",
 						["timeline"] = { REMOVED_3_0_2 },
 						["groups"] = {
 							i(22736, {	-- Andonisus, Reaper of Souls
 								-- #if BEFORE 3.0.2
-								["description"] = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
+								["description"] = "~L.HE_DROPS_THIS_MIDWAY_THROUGH_THE_ENCOUNTER_AND",
 								-- #endif
 								["timeline"] = { REMOVED_3_0_2 },
 								["collectible"] = false,
@@ -1494,7 +1494,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(10809, {	-- Stonespine
-						["description"] = "This is a Rare Creature and, as such, is not always present.",
+						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 						["groups"] = {
 							i(13399),	-- Gargoyle Shredder Talons
 							i(13397),	-- Stoneskin Gargoyle Cape
@@ -1507,7 +1507,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13176, {	-- Scourge Data
 								["provider"] = { "o", 176249 },	-- Scourge Data
 								-- #if BEFORE 4.0.3
-								["description"] = "Located in the Ziggurat behind the boss.",
+								["description"] = "~L.LOCATED_IN_THE_ZIGGURAT_BEHIND_THE_BOSS",
 								-- #endif
 							}),
 							i(18738),	-- Carapace Spine Crossbow
@@ -1548,7 +1548,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- This is what it should be, but since tooltips for objects with EXACTLY THE SAME NAME are wonky in the same instance (due to a lack of coordinates....), this is necessary to make the tooltips make more sense.
 							-- { "o", 176327 },	-- Blacksmithing Plans
 						},
-						["description"] = "Found outside of Baroness Anastari's ziggurat.",
+						["description"] = "~L.FOUND_OUTSIDE_OF_BARONESS_ANASTARI_S_ZIGGURAT",
 						["groups"] = {
 							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III
 								["timeline"] = { REMOVED_4_0_1 },
@@ -1557,7 +1557,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
-								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
+								["description"] = "~L.YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS_2",
 								["timeline"] = {
 									-- #if SEASON_OF_DISCOVERY
 									REMOVED_1_15_3,
@@ -1568,7 +1568,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228306, {	-- Plans: Desecration (RECIPE!)
-								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
+								["description"] = "~L.YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS_2",
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
@@ -1599,7 +1599,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(13514, {	-- Wail of the Banshee
 								-- #if BEFORE 4.0.3
-								["description"] = "This can be used on raid bosses and in PVP... Probably not a bad idea to keep on you.",
+								["description"] = "~L.THIS_CAN_BE_USED_ON_RAID_BOSSES_AND_IN_PVP",
 								-- #endif
 							}),
 						},
@@ -1633,7 +1633,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					e(454, {	-- Magistrate Barthilas
 						["creatureID"] = 10435,	-- Magistrate Barthilas
-						["description"] = "If you enter from the Main Gate side, you can fight this boss first, otherwise he runs to the Slaughter House.",
+						["description"] = "~L.IF_YOU_ENTER_FROM_THE_MAIN_GATE_SIDE_YOU_CAN",
 						["groups"] = {
 							i(12382),	-- Key to the City
 							-- #if SEASON_OF_DISCOVERY

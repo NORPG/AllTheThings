@@ -20,7 +20,7 @@ root(ROOTS.ExpansionFeatures,
 						-- not nesting these since they are neutral achievements within horde/alliance achievements... ugh
 						ach(9076),	-- Choppin' Some Logs (10)
 						ach(9429, {		-- Upgrading the Mill
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = {
 								crit(25174),	-- Place 75 Work Order at the Lumber Mill
 								crit(25733),	-- Legacy of the Ancients
@@ -44,40 +44,125 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 						}),
 						q(36296, {	-- Phylarch the Evergreen
-							["description"] = "Chance to spawn when you cut down trees with a rank 3 lumbermill in your garrison. After spawning 3 times, he will become your follower.",
+							["description"] = createLocalizationString({
+								readable = "Chance to spawn when you cut down trees with a rank 3 lumbermill in your garrison. After spawning 3 times, he will become your follower.",
+								constant = "CHANCE_TO_SPAWN_WHEN_YOU_CUT_DOWN_TREES_WITH_A",
+								export = true,
+								text = {
+									en = "Chance to spawn when you cut down trees with a rank 3 lumbermill in your garrison. After spawning 3 times, he will become your follower.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "当你在要塞中用 3 级伐木场砍树时有几率刷新。刷新 3 次后，他会成为你的追随者。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = { follower(194) },	-- Phylarch the Evergreen
 						}),
 						q(36448, {	-- Reduction in Force
-							["description"] = "Weldon Barov must be an active follower (ideally assigned to a building) to be available to give this quest.",
+							["description"] = createLocalizationString({
+								readable = "Weldon Barov must be an active follower (ideally assigned to a building) to be available to give this quest.",
+								constant = "WELDON_BAROV_MUST_BE_AN_ACTIVE_FOLLOWER_IDEALLY",
+								export = true,
+								text = {
+									en = "Weldon Barov must be an active follower (ideally assigned to a building) to be available to give this quest.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "韦尔登·巴罗夫必须是一名处于激活状态的追随者（最好被分配到某座建筑中），才能提供这个任务。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 36429,	-- The Rise and Fall of Barov Industries: Weldon Barov
 							["qg"] = 85413,	-- Weldon Barov <Barov Industries>
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = { i(116154) },	-- Barov Lumberjack Caller
 						}),
 						q(36449, {	-- Reduction in Force
-							["description"] = "Weldon Barov must be an active follower (ideally assigned to a building) to be available to give this quest.",
+							["description"] = "~L.WELDON_BAROV_MUST_BE_AN_ACTIVE_FOLLOWER_IDEALLY",
 							["sourceQuest"] = 36427,	-- The Rise and Fall of Barov Industries: Alexi Barov
 							["qg"] = 85414,	-- Alexi Barov <Barov Industries>
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(116154) },	-- Barov Lumberjack Caller
 						}),
 						q(36194, {	-- Sharper Blades, Bigger Timber
-							["description"] = "Requires Lumber Mill level 2",
+							["description"] = createLocalizationString({
+								readable = "Requires Lumber Mill level 2",
+								constant = "REQUIRES_LUMBER_MILL_LEVEL_2",
+								export = true,
+								text = {
+									en = "Requires Lumber Mill level 2",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "需要 2 级伐木场",
+									-- TODO: tw = "",
+								},
+							}),
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36142, {	-- Sharper Blades, Bigger Timber
-							["description"] = "Requires Lumber Mill level 2",
+							["description"] = "~L.REQUIRES_LUMBER_MILL_LEVEL_2",
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 							["races"] = HORDE_ONLY,
 						}),
 						q(36813, {	-- Subversive Infestation
-							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
+							["description"] = createLocalizationString({
+								readable = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
+								constant = "THIS_QUEST_REQUIRES_A_LEVEL_3_LUMBER_MILL_AS",
+								export = true,
+								text = {
+									en = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此任务需要 3 级伐木场，以及追随者绿之族长处于激活状态或派驻在伐木场。",
+									-- TODO: tw = "",
+								},
+							}),
 							["qg"] = 84889,	-- Phylarch the Evergreen
 							["groups"] = { i(117398) },	-- Everbloom Seed Pouch
 						}),
 						q(36429, {	-- The Rise and Fall of Barov Industries: Weldon Barov
-							["description"] = "Weldon Barov is found at various locations in Draenor. He is stuck under a log and you need the lumber mill to get him out of there.",
+							["description"] = createLocalizationString({
+								readable = "Weldon Barov is found at various locations in Draenor. He is stuck under a log and you need the lumber mill to get him out of there.",
+								constant = "WELDON_BAROV_IS_FOUND_AT_VARIOUS_LOCATIONS_IN",
+								export = true,
+								text = {
+									en = "Weldon Barov is found at various locations in Draenor. He is stuck under a log and you need the lumber mill to get him out of there.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "韦尔登·巴罗夫出现在德拉诺的多个地点。他被困在一根原木下，你需要伐木场才能把他救出来。",
+									-- TODO: tw = "",
+								},
+							}),
 							["qg"] = 85378,	-- Weldon Barov <Barov Industries>
 							["coords"] = {
 								{ 54.9, 79.7, SPIRES_OF_ARAK },
@@ -93,7 +178,24 @@ root(ROOTS.ExpansionFeatures,
 							["groups"] = { follower(195) },	-- Weldon Barov / Alexi Barov
 						}),
 						q(36427, {	-- The Rise and Fall of Barov Industries: Alexi Barov
-							["description"] = "Alexi Barov can be found in multiple zones under a Fallen Tree. A lumber mill is required to rescue him.",
+							["description"] = createLocalizationString({
+								readable = "Alexi Barov can be found in multiple zones under a Fallen Tree. A lumber mill is required to rescue him.",
+								constant = "ALEXI_BAROV_CAN_BE_FOUND_IN_MULTIPLE_ZONES",
+								export = true,
+								text = {
+									en = "Alexi Barov can be found in multiple zones under a Fallen Tree. A lumber mill is required to rescue him.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "阿莱克西·巴罗夫可以在多个区域的倒下的树下找到。解救他需要一座伐木场。",
+									-- TODO: tw = "",
+								},
+							}),
 							["qg"] = 85379,	-- Alexi Barov <Barov Industries>
 							["coords"] = {
 								{ 36.0, 48.3, DRAENOR_NAGRAND },
@@ -121,12 +223,29 @@ root(ROOTS.ExpansionFeatures,
 							["groups"] = { follower(195) },	-- Weldon Barov / Alexi Barov
 						}),
 						q(36195, {	-- Tree-i-cide
-							["description"] = "This Quest requires a Level 3 Lumber Mill.",
+							["description"] = createLocalizationString({
+								readable = "This Quest requires a Level 3 Lumber Mill.",
+								constant = "THIS_QUEST_REQUIRES_A_LEVEL_3_LUMBER_MILL",
+								export = true,
+								text = {
+									en = "This Quest requires a Level 3 Lumber Mill.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此任务需要 3 级伐木场。",
+									-- TODO: tw = "",
+								},
+							}),
 							["qg"] = 84248,	-- Justin Timberlord <Work Orders>
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36182, {	-- Tree-i-cide
-							["description"] = "This Quest requires a Level 3 Lumber Mill.",
+							["description"] = "~L.THIS_QUEST_REQUIRES_A_LEVEL_3_LUMBER_MILL",
 							["qg"] = 84247,	-- Lumber Lord Oktron <Work Orders>
 							["races"] = HORDE_ONLY,
 						}),
@@ -141,7 +260,24 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 						}),
 						n(85199, {	-- Petrified Ancient
-							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
+							["description"] = createLocalizationString({
+								readable = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
+								constant = "THESE_WILL_APPEAR_AS_NODES_ON_YOUR_MINI_MAP_AS",
+								export = true,
+								text = {
+									en = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在你建造 2 级伐木场后，这些会像树木一样以小地图节点显示。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								q(36385, {	-- Legacy of the Ancients
 									["provider"] = { "i", 115467 },	-- Barkskin Tome

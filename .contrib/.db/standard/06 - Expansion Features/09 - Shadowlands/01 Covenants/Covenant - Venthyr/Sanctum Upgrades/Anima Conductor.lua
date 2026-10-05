@@ -7,13 +7,47 @@ local SHRIEKERS_VOICEBOX = i(180713);
 local DREDBATSKIN_JERKIN = i(183720);
 local FORGEMASTERS_MANYFOLD_RAPIER = i(180489);
 local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
-	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Find a Dredhollow Bolt and give it to Wingsmash.",
+	["description"] = createLocalizationString({
+		readable = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Find a Dredhollow Bolt and give it to Wingsmash.",
+		constant = "CAN_BE_KILLED_AND_LOOTED_BY_ANY_COVENANT_BUT_A_2",
+		export = true,
+		text = {
+			en = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Wanecrypt Hill to summon it. Find a Dredhollow Bolt and give it to Wingsmash.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "任何盟约的玩家都可以击杀并拾取，但必须有|cFFfe040f温西尔盟约|r的成员向哀穴丘陵引导心能才能召唤它。找到一根泥穴弩箭并交给翼碎。",
+			-- TODO: tw = "",
+		},
+	}),
 	["questID"] = 59612,
 	["isDaily"] = true,
 	["coord"] = { 45.8, 79.0, REVENDRETH },
 	["groups"] = {
 		q(59607, {	-- Takin' Down the Beast
-			["description"] = "This quest is offered in order to make Harika attackable.\n\nSeek out a Dredhollow Bolt in Dredhollow north-east from here.\nAfter completing the quest, talk to Wingsmash and tell him to Smash.",
+			["description"] = createLocalizationString({
+				readable = "This quest is offered in order to make Harika attackable.\n\nSeek out a Dredhollow Bolt in Dredhollow north-east from here.\nAfter completing the quest, talk to Wingsmash and tell him to Smash.",
+				constant = "THIS_QUEST_IS_OFFERED_IN_ORDER_TO_MAKE_HARIKA",
+				export = true,
+				text = {
+					en = "This quest is offered in order to make Harika attackable.\n\nSeek out a Dredhollow Bolt in Dredhollow north-east from here.\nAfter completing the quest, talk to Wingsmash and tell him to Smash.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "提供此任务是为了让哈丽卡变为可攻击目标。\n\n在此处东北方的德雷德霍洛寻找德雷德霍洛弩箭。\n完成任务后，与翼击交谈并让他发动“猛击”。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "n", 165327 },	-- Wingsmash
 			["coord"] = { 46.30, 77.7, REVENDRETH },
 			["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
@@ -39,7 +73,24 @@ local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
 	},
 });
 local FORGEMASTER_MADALAV = n(159496, {	-- Forgemaster Madalav
-	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
+	["description"] = createLocalizationString({
+		readable = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
+		constant = "CAN_BE_KILLED_AND_LOOTED_BY_ANY_COVENANT_BUT_A_3",
+		export = true,
+		text = {
+			en = "Can be killed and looted by any Covenant, but a member of the |cFFfe040fVenthyr Covenant|r must channel anima to Dominance Keep and click on |cFFFFFFFFMadalav's Hammer|r to summon the rare.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "任何盟约的玩家都可以击杀并拾取，但必须有|cFFfe040f温西尔盟约|r的成员向统御堡垒引导心能，并点击|cFFFFFFFF玛达拉夫的锤子|r来召唤该稀有。",
+			-- TODO: tw = "",
+		},
+	}),
 	["questID"] = 61618,
 	["isDaily"] = true,
 	["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer
@@ -61,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							["groups"] = {
 								currency(GRATEFUL, {
 									["customCollect"] = IGNORED_VALUE,
-									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+									["description"] = "~L.GRATEFUL_OFFERINGS_CAN_BE_COLLECTED_ONCE_YOU",
 								}),
 							},
 						}),
@@ -82,13 +133,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(TREASURES, {
 								o(356757, {	-- Greed's Desire
-									["description"] = "Part of the Greater Greedstone treasure. Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+									["description"] = createLocalizationString({
+										readable = "Part of the Greater Greedstone treasure. Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+										constant = "PART_OF_THE_GREATER_GREEDSTONE_TREASURE",
+										export = true,
+										text = {
+											en = "Part of the Greater Greedstone treasure. Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "强效贪婪之石宝藏的一部分。需要将被遗忘者墓穴的心能导流器聚焦。",
+											-- TODO: tw = "",
+										},
+									}),
 									["questID"] = 61646,
 									["isDaily"] = true,
 									["coord"] = { 71.9, 34.5, REVENDRETH },
 								}),
 								o(354211, {	-- Greed's Reward
-									["description"] = "Part of the Greater Greedstone treasure. Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+									["description"] = "~L.PART_OF_THE_GREATER_GREEDSTONE_TREASURE",
 									["questID"] = 61045,
 									["isDaily"] = true,
 									["coord"] = { 46.0, 29.1, REVENDRETH },

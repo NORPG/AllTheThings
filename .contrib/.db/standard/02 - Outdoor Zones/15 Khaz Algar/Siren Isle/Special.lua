@@ -37,7 +37,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			})),
 			n(233694, {	-- Zexel Fingersnap
 				["sourceQuest"] = 86485,	-- A Loyal Friend
-				["description"] = "Vendor who sells Snapdragon Treats once they've been unlocked.",
+				["description"] = createLocalizationString({
+					readable = "Vendor who sells Snapdragon Treats once they've been unlocked.",
+					constant = "VENDOR_WHO_SELLS_SNAPDRAGON_TREATS_ONCE_THEY_VE",
+					export = true,
+					text = {
+						en = "Vendor who sells Snapdragon Treats once they've been unlocked.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁之后出售金鱼草零食的商人。",
+						-- TODO: tw = "",
+					},
+				}),
 				["skipFill"] = true,	-- only care to show the tooltips for this NPC or in popouts
 				["sym"] = {{"select","itemID",
 					233500,	-- Crimson Snapdragon Treat

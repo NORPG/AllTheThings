@@ -386,7 +386,24 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 						["filterID"] = MOUNTS,
 					}),
 					i(30609, {	-- Swift Nether Drake
-						["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予燃烧的远征第 1 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					ach(11706, {["timeline"] = {ADDED_7_2_0}}),	-- The Original (PvP Season 1)
 					-- #if ANYCLASSIC
@@ -1030,7 +1047,24 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 						["filterID"] = MOUNTS,
 					}),
 					i(34092, {	-- Merciless Nether Drake
-						["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_2",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予燃烧的远征第 2 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(15210),	-- Challenger: Season 2
@@ -1365,7 +1399,24 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 						["filterID"] = MOUNTS,
 					}),
 					i(37676, {	-- Vengeful Nether Drake
-						["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_3",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予燃烧的远征第 3 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(15207),	-- Challenger: Season 3
@@ -1727,7 +1778,24 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 						["filterID"] = MOUNTS,
 					}),
 					i(43516, {	-- Brutal Nether Drake
-						["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_4",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予燃烧的远征第 4 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(15203),	-- Challenger: Season 4

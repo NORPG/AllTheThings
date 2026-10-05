@@ -168,14 +168,65 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					pet(487),	-- Alpine Chipmunk (PET!)
 					pet(1163, {	-- Anodized Robo Cub (PET!)
-						["description"] = "Found in Everlook.",
+						["description"] = createLocalizationString({
+							readable = "Found in Everlook.",
+							constant = "FOUND_IN_EVERLOOK",
+							export = true,
+							text = {
+								en = "Found in Everlook.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于永望镇。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(634, {	-- Crystal Spider (PET!)
-						["description"] = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",
+						["description"] = createLocalizationString({
+							readable = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",
+							constant = "CAN_MOST_COMMONLY_BE_FOUND_IN_FROSTWHISPER",
+							export = true,
+							text = {
+								en = "Can most commonly be found in Frostwhisper Gorge in southern Winterspring and Lake Kel'theril.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "最常见于冬泉谷南部的霜语峡谷和凯斯利尔湖。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(69, {	-- Snowy Owl (PET!)
-						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
+						["description"] = createLocalizationString({
+							readable = "Starts spawning December 21st. Stops spawning March 20th",
+							constant = "STARTS_SPAWNING_DECEMBER_21ST_STOPS_SPAWNING",
+							export = true,
+							text = {
+								en = "Starts spawning December 21st. Stops spawning March 20th",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "12 月 21 日开始刷新。3 月 20 日停止刷新",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -239,7 +290,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
 					["coord"] = { 65.6, 64.6, WINTERSPRING },
-					["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
+					["description"] = createLocalizationString({
+						readable = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
+						constant = "TRIXXY_S_PETS_ARE_LEVEL_19_OF_THE_FOLLOWING",
+						export = true,
+						text = {
+							en = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "特里克西的宠物为 19 级，依次属于以下连续的宠物类型：\n1. 龙类——使用人型（高输出）或亡灵（高生存）宠物。\n2. 野兽——使用机械（高输出）或飞行（高生存）宠物。\n3. 飞行——使用魔法（高输出）或龙类（高生存）宠物。\n\n若想计入“一次可怕的伟大冒险”，请使用雷象毛绒玩具加两只强力宠物（如枯萎松鼠和火鸡）的阵容进行战斗。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 19,
 					["groups"] = {
@@ -471,7 +539,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5163, {	-- Are We There, Yeti? (3/3)
 					-- #if AFTER CATA
-					["description"] = "This quest gets marked as completed when you complete the quest 'Yetiphobia' (28722).",
+					["description"] = createLocalizationString({
+						readable = "This quest gets marked as completed when you complete the quest 'Yetiphobia' (28722).",
+						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_6",
+						export = true,
+						text = {
+							en = "This quest gets marked as completed when you complete the quest 'Yetiphobia' (28722).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你完成任务“雪人恐惧症”（28722）时，此任务会被标记为已完成。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 977,	-- Are We There, Yeti? (2/3)
 					["qg"] = 10305,	-- Umi Rumplesnicker
@@ -833,7 +918,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5084, {	-- Falling to Corruption
 					-- #if AFTER CATA
-					["description"] = "This quest gets marked as completed when you complete the quest 'Falling to Corruption' (28464).",
+					["description"] = createLocalizationString({
+						readable = "This quest gets marked as completed when you complete the quest 'Falling to Corruption' (28464).",
+						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_7",
+						export = true,
+						text = {
+							en = "This quest gets marked as completed when you complete the quest 'Falling to Corruption' (28464).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你完成任务“堕入腐化”（28464）时，此任务会被标记为已完成。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
 					["qg"] = 9298,	-- Donova Snowden
@@ -1457,7 +1559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5306, {	-- Snakestone of the Shadow Huntress
 					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
+					["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A",
 					-- #endif
 					-- #if BEFORE TBC
 					["altQuests"] = {
@@ -1555,7 +1657,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28656, {	-- Strange Life Forces
-					["description"] = "Kill mobs at close range until you receive an E'ko buff.",
+					["description"] = createLocalizationString({
+						readable = "Kill mobs at close range until you receive an E'ko buff.",
+						constant = "KILL_MOBS_AT_CLOSE_RANGE_UNTIL_YOU_RECEIVE_AN_E",
+						export = true,
+						text = {
+							en = "Kill mobs at close range until you receive an E'ko buff.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "近距离击杀怪物，直到你获得一个魂能增益。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["coords"] = {
 						{ 46.3, 18.0, WINTERSPRING },
@@ -1583,7 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84496, {	-- Sweet Serenity
 					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
+					["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_2",
 					-- #endif
 					-- #if BEFORE TBC
 					["altQuests"] = {
@@ -1616,7 +1735,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(5305, {	-- Sweet Serenity
 					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
+					["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_2",
 					-- #endif
 					-- #if BEFORE TBC
 					["altQuests"] = {
@@ -1787,7 +1906,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 53,
 				}),
 				q(29034, {	-- They Grow Up So Fast
-					["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
+					["description"] = createLocalizationString({
+						readable = "This quest must remain in your quest log to do the relevant daily quests.",
+						constant = "THIS_QUEST_MUST_REMAIN_IN_YOUR_QUEST_LOG_TO_DO",
+						export = true,
+						text = {
+							en = "This quest must remain in your quest log to do the relevant daily quests.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务必须留在任务日志中，才能完成相关的日常任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 29032,	-- Get Them While They're Young
 					["qg"] = 10618,	-- Rivern Frostwind
 					["coord"] = { 46.6, 17.6, WINTERSPRING },
@@ -2397,7 +2533,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(TREASURES, {
 				o(240616, {	-- Frozen Supplies
-					["description"] = "Loot the Frozen Supplies in a nook at the base of the pillar.",
+					["description"] = createLocalizationString({
+						readable = "Loot the Frozen Supplies in a nook at the base of the pillar.",
+						constant = "LOOT_THE_FROZEN_SUPPLIES_IN_A_NOOK_AT_THE_BASE",
+						export = true,
+						text = {
+							en = "Loot the Frozen Supplies in a nook at the base of the pillar.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在柱子底部的一个凹角处拾取冰冻的补给品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 68.0, 73.9, WINTERSPRING },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
@@ -2571,7 +2724,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(11184, {	-- Wixxrak <Weaponsmith & Gunsmith>
 					-- #if AFTER 7.1.5.23360
 					["sourceQuest"] = 44952,	-- Blackrock Depths: Jewel of the Depths
-					["description"] = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths' before he'll sell you the plans.",
+					["description"] = createLocalizationString({
+						readable = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths' before he'll sell you the plans.",
+						constant = "MUST_HAVE_COMPLETED_THE_QUEST_BLACKROCK_DEPTHS",
+						export = true,
+						text = {
+							en = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths' before he'll sell you the plans.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须完成“黑石深渊：深渊之珠”任务，他才会向你出售图纸。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2620,7 +2790,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(201794, {	-- Schematic: Tranquil Mechanical Yeti
-							["description"] = "Available for purchase after you complete |cFFFFD700Yetiphobia|r quest.",
+							["description"] = createLocalizationString({
+								readable = "Available for purchase after you complete |cFFFFD700Yetiphobia|r quest.",
+								constant = "AVAILABLE_FOR_PURCHASE_AFTER_YOU_COMPLETE",
+								export = true,
+								text = {
+									en = "Available for purchase after you complete |cFFFFD700Yetiphobia|r quest.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "完成|cFFFFD700雪怪恐惧症|r任务后可购买。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 28722,	-- Yetiphobia
 							["timeline"] = { ADDED_10_0_2 },
 							["isLimited"] = true,
@@ -2628,7 +2815,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14742, {	-- Zap Farflinger <Unbalanced Engineer>
-					["description"] = "Goblin Engineers can speak to Zap to learn the recipe.",
+					["description"] = "~L.GOBLIN_ENGINEERS_CAN_SPEAK_TO_ZAP_TO_LEARN_THE",
 					["requireSkill"] = GOBLIN_ENGINEERING,
 					["coords"] = {
 						-- #if AFTER CATA

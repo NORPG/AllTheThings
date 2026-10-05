@@ -29,7 +29,24 @@ root(ROOTS.ExpansionFeatures,
 							["sym"] = {{"sub", "common_vendor", 87049}},	-- Steven Cochrane <Tailoring Patterns>
 						}),
 						n(88283, {	-- Tailoring Follower (Alliance)
-							["description"] = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells.",
+							["description"] = createLocalizationString({
+								readable = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells.",
+								constant = "YOU_HAVE_TO_BUILD_LEVEL_3_TAILORING_EMPORIUM",
+								export = true,
+								text = {
+									en = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你必须建造 3 级裁缝店，并在那里雇佣一名裁缝，才能使用这些法术。",
+									-- TODO: tw = "",
+								},
+							}),
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = sharedData({["u"] = UNLEARNABLE},{
 								r(176314),	-- Fearsome Battle Standard [Alliance]
@@ -37,7 +54,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						}),
 						n(88285, {	-- Tailoring Follower (Horde)
-							["description"] = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells.",
+							["description"] = "~L.YOU_HAVE_TO_BUILD_LEVEL_3_TAILORING_EMPORIUM",
 							["races"] = HORDE_ONLY,
 							["groups"] = sharedData({["u"] = UNLEARNABLE},{
 								r(176316),	-- Fearsome Battle Standard [Horde]

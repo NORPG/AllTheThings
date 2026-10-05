@@ -1183,7 +1183,24 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(75, i(230044)),	-- Prowler's Pink Shoulder Cape
 				i(190855, {	-- Rosy Corsage
 					-- #if BEFORE 11.1.0
-					["description"] = "This is also sold at the discount vendor, no reason to buy it from the main trading post offering."
+					["description"] = createLocalizationString({
+						readable = "This is also sold at the discount vendor, no reason to buy it from the main trading post offering.",
+						constant = "THIS_IS_ALSO_SOLD_AT_THE_DISCOUNT_VENDOR_NO",
+						export = true,
+						text = {
+							en = "This is also sold at the discount vendor, no reason to buy it from the main trading post offering.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此物品也在折扣商人处出售，没有理由从主贸易站的商品中购买它。",
+							-- TODO: tw = "",
+						},
+					})
 					-- #endif
 					-- ["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
@@ -1521,17 +1538,68 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			n(FILLED_TRAVELERS_LOG, {
 				i(242522, {	-- Forsaken's Grotesque Cauldron
 					-- #if BEFORE 11.2.0
-					["description"] = "Rewarded when reaching 600 points in the Travelers Log."
+					["description"] = createLocalizationString({
+						readable = "Rewarded when reaching 600 points in the Travelers Log.",
+						constant = "REWARDED_WHEN_REACHING_600_POINTS_IN_THE",
+						export = true,
+						text = {
+							en = "Rewarded when reaching 600 points in the Travelers Log.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在旅行者日志中达到 600 点时奖励。",
+							-- TODO: tw = "",
+						},
+					})
 					-- #endif
 				}),
 				iensemble(244225, {	-- Ensemble: Forsaken's Grotesque Collection
 					-- #if BEFORE 11.2.0
-					["description"] = "Rewarded when reaching 1000 points in the Travelers Log."
+					["description"] = createLocalizationString({
+						readable = "Rewarded when reaching 1000 points in the Travelers Log.",
+						constant = "REWARDED_WHEN_REACHING_1000_POINTS_IN_THE",
+						export = true,
+						text = {
+							en = "Rewarded when reaching 1000 points in the Travelers Log.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在旅行者日志中达到 1000 点时奖励。",
+							-- TODO: tw = "",
+						},
+					})
 					-- #endif
 				}),
 				i(243594, {	-- Forsaken's Grotesque Charger (MOUNT!)
 					-- #if BEFORE 11.2.0
-					["description"] = "Rewarded when reaching 1400 points in the Travelers Log."
+					["description"] = createLocalizationString({
+						readable = "Rewarded when reaching 1400 points in the Travelers Log.",
+						constant = "REWARDED_WHEN_REACHING_1400_POINTS_IN_THE",
+						export = true,
+						text = {
+							en = "Rewarded when reaching 1400 points in the Travelers Log.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在旅行者日志中达到 1400 点时奖励。",
+							-- TODO: tw = "",
+						},
+					})
 					-- #endif
 				}),
 			}),
@@ -2071,7 +2139,24 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 							traderstender(275, i(213106)),	-- Gladiator's Battered Greatsword
 							traderstender(275, i(213107, {	-- Gladiator's Ragged Greatsword // Previously NYI
 								-- #if BEFORE 12.0.1
-								["description"] = "This item is not a returning item, it has never actually been available before.",
+								["description"] = createLocalizationString({
+									readable = "This item is not a returning item, it has never actually been available before.",
+									constant = "THIS_ITEM_IS_NOT_A_RETURNING_ITEM_IT_HAS_NEVER",
+									export = true,
+									text = {
+										en = "This item is not a returning item, it has never actually been available before.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "此物品不是回归物品，它以前从未真正开放过。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 							})),
 							traderstender(250, i(226428)),	-- Harvester's Claw

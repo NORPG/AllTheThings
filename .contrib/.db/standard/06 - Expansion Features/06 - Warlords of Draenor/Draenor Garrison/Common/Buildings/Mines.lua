@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(63, {	-- Frostwall Mines (rank 1: 61, rank 2: 62, rank 3: 63)
 					n(ACHIEVEMENTS, {
 						ach(9453, {	-- Draenic Stone Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = {
 								i(116249),	-- Frostwall Mines, Level 3
 								i(111996),	-- Lunarfall Excavation, Level 3

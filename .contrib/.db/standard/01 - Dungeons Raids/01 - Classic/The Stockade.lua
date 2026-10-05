@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
-				["description"] = "This is a rare that was not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_THAT_WAS_NOT_ALWAYS_PRESENT",
 				["timeline"] = { REMOVED_4_0_1 },
 				["groups"] = {
 					i(2942, {	-- Iron Knuckles

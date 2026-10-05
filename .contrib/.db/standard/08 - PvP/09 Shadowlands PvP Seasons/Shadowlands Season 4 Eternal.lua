@@ -361,7 +361,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			}),
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				["description"] = "~L.CAN_ONLY_BE_OBTAINED_FROM_THE_GREAT_VAULT",
 				["groups"] = bubbleDownFiltered({
 					["bonusID"] = 7897,
 				},FILTERFUNC_itemID,{
@@ -502,7 +502,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		}),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES,{
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				["description"] = "~L.CAN_ONLY_BE_OBTAINED_FROM_THE_GREAT_VAULT",
 				["groups"] = {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon

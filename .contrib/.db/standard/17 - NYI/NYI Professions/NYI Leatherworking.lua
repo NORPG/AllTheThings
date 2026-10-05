@@ -194,7 +194,24 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			-- #if ANYCLASSIC
 			expansion(EXPANSION.TBC, {
 				applyclassicphase(TBC_PHASE_FOUR, i(185922, {	-- Pattern: Greater Drums of War
-					["description"] = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
+					["description"] = createLocalizationString({
+						readable = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
+						constant = "NOT_ACTUALLY_SURE_IF_THIS_IS_IN_THE_GAME_AT_ALL",
+						export = true,
+						text = {
+							en = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "实际上不确定这个是否还在游戏中，因为该配方所教的法术可以在训练师处学到。",
+							-- TODO: tw = "",
+						},
+					}),
 				})),
 			}),
 			-- #endif

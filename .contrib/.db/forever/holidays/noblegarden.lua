@@ -29,7 +29,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(createHeader({
 	["timeline"] = { TIMELINE.ADDED_1_60_1 },
 	["groups"] = {
 		o_repeated({	-- Brightly Colored Egg
-			["description"] = "These eggs can be found spread out in all of the starting zones.",
+			["description"] = createLocalizationString({
+				readable = "These eggs can be found spread out in all of the starting zones.",
+				constant = "THESE_EGGS_CAN_BE_FOUND_SPREAD_OUT_IN_ALL_OF",
+				export = true,
+				text = {
+					en = "These eggs can be found spread out in all of the starting zones.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些蛋散布在所有新手区域中。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				MAP.DUROTAR,
 				MAP.MULGORE,

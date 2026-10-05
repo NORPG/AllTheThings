@@ -13,7 +13,24 @@ root(ROOTS.Zones, {
 					},
 				}),
 				i(141011, {	-- Recipe: Surf
-					["description"] = "Drops from any marine mob in the zone.",
+					["description"] = createLocalizationString({
+						readable = "Drops from any marine mob in the zone.",
+						constant = "DROPS_FROM_ANY_MARINE_MOB_IN_THE_ZONE",
+						export = true,
+						text = {
+							en = "Drops from any marine mob in the zone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由该区域的任意海洋生物掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						99720,	-- Coastal Spikeback
 						99506,	-- Colossal Striper
@@ -31,7 +48,24 @@ root(ROOTS.Zones, {
 					},
 				}),
 				i(141012, {	-- Recipe: Turf
-					["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
+					["description"] = createLocalizationString({
+						readable = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
+						constant = "FLY_TO_CRIMSON_THICKET_SURAMAR_KILL_THE",
+						export = true,
+						text = {
+							en = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "飞往苏拉玛的绯红丛林。击杀心木雄鹿，杀 3-4 只应该就能得到。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(136851, {	-- Commander Domitille's Helm (QS!)
 					["cr"] = 106275,	-- Commander Domitille

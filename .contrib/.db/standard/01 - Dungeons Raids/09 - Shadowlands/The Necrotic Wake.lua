@@ -13,13 +13,64 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				header(HEADERS.Achievement, 14339, {	-- Shard Labor
-					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion. Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+					["description"] = createLocalizationString({
+						readable = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion. Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+						constant = "QUEST_TRACKING_MUST_BE_ENABLED_TO_SEE_THE_2",
+						export = true,
+						text = {
+							en = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion. Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须开启任务追踪才能看到列表中每块碎片的位置。\n\n碎片为账号通用收集。在晋升堡垒、凋魂之殇和晋升之巅都有碎片可收集。\n\n晋升堡垒的一些碎片需要地精滑翔器。不必加入|cFFfe040f温西尔盟约|r，但|cFFfe040f暗影之门|r技能确实能让几块比较麻烦的碎片变得微不足道！",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = sharedData({ ["name"] = "Anima Crystal Shard", ["icon"] = 3528288 }, {
 						q(61296, {	-- Anima Crystal Shard
-							["description"] = "After Blightbone, go up the stairs to the middle platform. Straight ahead is a large fallen bell. The shard is behind it on the right-hand side.",
+							["description"] = createLocalizationString({
+								readable = "After Blightbone, go up the stairs to the middle platform. Straight ahead is a large fallen bell. The shard is behind it on the right-hand side.",
+								constant = "AFTER_BLIGHTBONE_GO_UP_THE_STAIRS_TO_THE_MIDDLE",
+								export = true,
+								text = {
+									en = "After Blightbone, go up the stairs to the middle platform. Straight ahead is a large fallen bell. The shard is behind it on the right-hand side.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "击败凋骨后，沿楼梯上到中间的平台。正前方有一口巨大的倒下的钟。碎片就在它后面靠右侧。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						q(61297, {	-- Anima Crystal Shard
-							["description"] = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north. Climb behind the large broken pillar. Behind it is a small broken pillar, and the shard is behind that.",
+							["description"] = createLocalizationString({
+								readable = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north. Climb behind the large broken pillar. Behind it is a small broken pillar, and the shard is behind that.",
+								constant = "BEFORE_AMARTH_AT_THE_MIDDLE_OF_THE_TOP_OF_THE",
+								export = true,
+								text = {
+									en = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north. Climb behind the large broken pillar. Behind it is a small broken pillar, and the shard is behind that.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在阿玛斯之前，最终平台顶部的中央有一块向北突出的小岩石。爬到巨大断裂石柱的后面。它后面还有一根小的断裂石柱，碎片就在那后面。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					}),
 				}),

@@ -84,7 +84,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210339),	-- Timerunner's Staff
 		}),
 		n(REWARDS, {
-			["description"] = "These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!",
+			["description"] = createLocalizationString({
+				readable = "These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!",
+				constant = "THESE_ITEMS_ARE_IN_THE_BOX_YOU_GET_WHEN_YOU",
+				export = true,
+				text = {
+					en = "These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品在你创建新角色时获得的箱子里。它们的 ID 与你身上穿的新手装备不同！",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				-- TODO: The users would benefit from knowing what class to make to access these rewards. Description could be used to clarify this easily.
 				filter(ONE_HANDED_AXES, {

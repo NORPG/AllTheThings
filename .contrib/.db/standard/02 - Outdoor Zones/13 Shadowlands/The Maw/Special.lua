@@ -46,7 +46,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- The Tormentors of Torghast
-				["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
+				["description"] = createLocalizationString({
+					readable = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
+					constant = "YOU_CAN_ONLY_GET_THE_CACHE_ONCE_A_WEEK_BUT_YOU",
+					export = true,
+					text = {
+						en = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你每周只能获得一次宝箱，但你可以继续参与事件以获得成就进度和个人首领战利品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["icon"] = 3257863,
 				["questID"] = 63854,
 				["isWeekly"] = true,
@@ -155,7 +172,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(177370, {	-- Grievous Soul Crusher
-						["description"] = "This tormentor can sometimes spawn instead of another tormentor ( which are on the achievement ). Shares loot table with Malleus Grakizz",
+						["description"] = createLocalizationString({
+							readable = "This tormentor can sometimes spawn instead of another tormentor ( which are on the achievement ). Shares loot table with Malleus Grakizz",
+							constant = "THIS_TORMENTOR_CAN_SOMETIMES_SPAWN_INSTEAD_OF",
+							export = true,
+							text = {
+								en = "This tormentor can sometimes spawn instead of another tormentor ( which are on the achievement ). Shares loot table with Malleus Grakizz",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此折磨者有时会代替另一个折磨者刷新（那些折磨者计入成就）。与马勒乌斯·格拉基兹共享掉落列表。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- ["repeatable"] = true,
 						["groups"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
@@ -262,7 +296,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			})),
 			header(HEADERS.Spell, 347208, {
 				["icon"] = 3257863,
-				["description"] = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",
+				["description"] = createLocalizationString({
+					readable = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",
+					constant = "THE_WEEKLY_LOCKOUT_PERTAINS_ONLY_TO_EPIC_GEAR",
+					export = true,
+					text = {
+						en = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "每周锁定只针对史诗装备掉落，稀有装备掉落无论如何都可以重复刷取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 63414,
 				["isWeekly"] = true,
 				["groups"] = {
@@ -287,7 +338,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(175846, {	-- Dathlane the Herald <Torghast Executioner>
-						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["description"] = createLocalizationString({
+							readable = "A possible boss for the 'Wrath of the Jailer' event.",
+							constant = "A_POSSIBLE_BOSS_FOR_THE_WRATH_OF_THE_JAILER",
+							export = true,
+							text = {
+								en = "A possible boss for the 'Wrath of the Jailer' event.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "“典狱长之怒”事件中可能出现的首领之一。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 64126,
 						["isWeekly"] = true,
 						["groups"] = {
@@ -296,7 +364,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(175877, {	-- Lumisende <Torghast Executioner>
-						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["description"] = "~L.A_POSSIBLE_BOSS_FOR_THE_WRATH_OF_THE_JAILER",
 						["questID"] = 64125,
 						["isWeekly"] = true,
 						["groups"] = {
@@ -305,7 +373,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(175881, {	-- Naelcrotix <Torghast Executioner>
-						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["description"] = "~L.A_POSSIBLE_BOSS_FOR_THE_WRATH_OF_THE_JAILER",
 						["questID"] = 64124,
 						["isWeekly"] = true,
 						["groups"] = {
@@ -314,7 +382,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					n(176173, {	-- Zograthos <Torghast Executioner>
-						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["description"] = "~L.A_POSSIBLE_BOSS_FOR_THE_WRATH_OF_THE_JAILER",
 						["questID"] = 64123,
 						["isWeekly"] = true,
 						["groups"] = {
@@ -325,7 +393,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(186188, {	-- Lil' Abom (PET!)
-				["description"] = "What controls the availability of parts is currently unknown. They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards. If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+				["description"] = createLocalizationString({
+					readable = "What controls the availability of parts is currently unknown. They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards. If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+					constant = "WHAT_CONTROLS_THE_AVAILABILITY_OF_PARTS_IS",
+					export = true,
+					text = {
+						en = "What controls the availability of parts is currently unknown. They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards. If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "目前不清楚部件的刷新条件。它们似乎会在毁灭要塞及周边区域刷新，旁边有死去的禁卫守卫。如果你在提供的任何坐标处都找不到部件，可以试试使用|cFFFFFFFF/tar 禁卫守卫|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_9_1_0 },
 				["cost"] = {
 					{ "i", 186183, 1 },	-- Lil' Abom Head

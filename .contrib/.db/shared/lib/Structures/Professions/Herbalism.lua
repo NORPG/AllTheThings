@@ -110,7 +110,24 @@ MOP_HERBALISM = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 	applyclassicphase(BFA_PHASE_ONE, r(265827, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Pandaria)
 }));
 DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This can drop from any herb gathering node on Draenor.",
+	["description"] = createLocalizationString({
+		readable = "This can drop from any herb gathering node on Draenor.",
+		constant = "THIS_CAN_DROP_FROM_ANY_HERB_GATHERING_NODE_ON",
+		export = true,
+		text = {
+			en = "This can drop from any herb gathering node on Draenor.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这可以从德拉诺的任意草药采集节点掉落。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158745, {	-- Herb Gathering (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

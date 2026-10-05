@@ -248,7 +248,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(101846, {	-- Nomi
-						["description"] = "Takes various meat, fish, and other reagents for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
+						["description"] = createLocalizationString({
+							readable = "Takes various meat, fish, and other reagents for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
+							constant = "TAKES_VARIOUS_MEAT_FISH_AND_OTHER_REAGENTS_FOR",
+							export = true,
+							text = {
+								en = "Takes various meat, fish, and other reagents for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要各种肉类、鱼类和其他材料来制作工作订单（类似德拉诺的要塞），一次 5 个。他同时最多可以维持 24 个工作订单。\n\n每个工作订单需要 4 小时完成。一个（或多个）工作订单完成后，你从试验厨房成果台收取时会获得一个配方、肉/鱼、烧焦的食物（很常见），或这些物品的某种组合。\n\n诺米提供的工作订单选项取决于你背包（背包、银行和材料银行）中拥有的材料。你可以用同一种材料排满所有工作订单，也可以为任意数量的工作订单使用多种不同材料，只要同时激活的工作订单总数不超过 24 个。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = appendAllGroups(
 							sharedData({
 								["cost"] = { { "i", 124119, 5 } },	-- Big Gamy Ribs
@@ -462,7 +479,24 @@ root(ROOTS.Zones, {
 									133861,	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
 							}}}, {
 								header(HEADERS.Item, 151653, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Broken Isles Recipe Scrap
-									["description"] = "Use 10 of Broken Isles Recipe Scrap to create an unlearned recipe.",
+									["description"] = createLocalizationString({
+										readable = "Use 10 of Broken Isles Recipe Scrap to create an unlearned recipe.",
+										constant = "USE_10_OF_BROKEN_ISLES_RECIPE_SCRAP_TO_CREATE",
+										export = true,
+										text = {
+											en = "Use 10 of Broken Isles Recipe Scrap to create an unlearned recipe.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "使用 10 个破碎群岛配方残页来制作一份尚未学会的配方。",
+											-- TODO: tw = "",
+										},
+									}),
 									["groups"] = sharedData({
 										["cost"] = { { "i", 151653, 10 } },	-- 10x Broken Isles Recipe Scrap
 									}, {
@@ -511,11 +545,45 @@ root(ROOTS.Zones, {
 									}),
 								})),
 								i(146757, {	-- Prepared Ingredients
-									["description"] = "Use 10 of these to create food or unlearned recipes. It appears as though you can only get Rank 2+ recipes from this item.",
+									["description"] = createLocalizationString({
+										readable = "Use 10 of these to create food or unlearned recipes. It appears as though you can only get Rank 2+ recipes from this item.",
+										constant = "USE_10_OF_THESE_TO_CREATE_FOOD_OR_UNLEARNED",
+										export = true,
+										text = {
+											en = "Use 10 of these to create food or unlearned recipes. It appears as though you can only get Rank 2+ recipes from this item.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "使用 10 个此物品来制作食物或尚未学会的配方。看来你只能从该物品中获得 2 级及以上的配方。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							}),
 							n(VENDORS, {
-								["description"] = "Before Nomi will sell you any of these, you need to complete the quest that awards them.\n\nUse the ATT Source Text in the tooltip for more information on where you can find them.",
+								["description"] = createLocalizationString({
+									readable = "Before Nomi will sell you any of these, you need to complete the quest that awards them.\n\nUse the ATT Source Text in the tooltip for more information on where you can find them.",
+									constant = "BEFORE_NOMI_WILL_SELL_YOU_ANY_OF_THESE_YOU_NEED",
+									export = true,
+									text = {
+										en = "Before Nomi will sell you any of these, you need to complete the quest that awards them.\n\nUse the ATT Source Text in the tooltip for more information on where you can find them.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在诺米向你出售这些之前，你需要完成奖励它们的任务。\n\n使用提示框中的 ATT 来源文本，了解可以在哪里找到它们。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sym"] = { {"select","itemID",
 									133818,	-- Recipe: Barracuda Mrglgagh [Rank 1] (RECIPE!)
 									133812,	-- Recipe: Deep-Fried Mossgill [Rank 1] (RECIPE!)
@@ -555,7 +623,24 @@ root(ROOTS.Zones, {
 					}),
 					faction(FACTION_CONJURER_MARGOSS, {	-- Conjurer Margoss
 						["creatureID"] = 108825,
-						["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["description"] = createLocalizationString({
+							readable = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+							constant = "CAN_BE_FOUND_ON_A_FLOATING_ISLAND_CALLED",
+							export = true,
+							text = {
+								en = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在达拉然正北方一座名为玛尔高斯的隐居地的浮空岛上找到。\n\n建议组队前往，以便最快达到挚友。",
+								-- TODO: tw = "",
+							},
+						}),
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							q(42911, {	-- Drowned Mana
@@ -582,7 +667,24 @@ root(ROOTS.Zones, {
 					}),
 					n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
 						ach(10722, {	-- The Wish Remover
-							["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
+							["description"] = createLocalizationString({
+								readable = "You need to use the special lures sold by the trainer to earn this achievement.",
+								constant = "YOU_NEED_TO_USE_THE_SPECIAL_LURES_SOLD_BY_THE",
+								export = true,
+								text = {
+									en = "You need to use the special lures sold by the trainer to earn this achievement.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你需要使用训练师出售的特殊诱饵才能获得此成就。",
+									-- TODO: tw = "",
+								},
+							}),
 							["requireSkill"] = FISHING,
 							["groups"] = THE_WISH_REMOVER,
 						}),

@@ -78,7 +78,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 	})),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
-			["description"] = "This item can drop from any Draenor mob.",
+			["description"] = "~L.THIS_ITEM_CAN_DROP_FROM_ANY_DRAENOR_MOB",
 			["altQuests"] = { 36255 },	-- Enchanted Highmaul Bracer (H)
 			["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
 			["maps"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(36255, {	-- Enchanted Highmaul Bracer (H)
-			["description"] = "This item can drop from any Draenor mob.",
+			["description"] = "~L.THIS_ITEM_CAN_DROP_FROM_ANY_DRAENOR_MOB",
 			["altQuests"] = { 36308 },	-- Enchanted Highmaul Bracer (A)
 			["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
 			["maps"] = {
@@ -362,14 +362,48 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			------ Tools of Trade Questline ------
 			q(54005, {	-- What the Drust Knew [A]
-				["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
+				["description"] = createLocalizationString({
+					readable = "This quest chain requires 150 in Kul Tiran Enchanting.",
+					constant = "THIS_QUEST_CHAIN_REQUIRES_150_IN_KUL_TIRAN_2",
+					export = true,
+					text = {
+						en = "This quest chain requires 150 in Kul Tiran Enchanting.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务线需要 150 点库尔提拉斯附魔。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 136041 },	-- Emily Fairweather
 				["coord"] = { 74.2, 11.3, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54161, {	-- What the Drust Knew [H]
-				["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
+				["description"] = createLocalizationString({
+					readable = "This quest chain requires 150 in Zandalari Enchanting.",
+					constant = "THIS_QUEST_CHAIN_REQUIRES_150_IN_ZANDALARI_2",
+					export = true,
+					text = {
+						en = "This quest chain requires 150 in Zandalari Enchanting.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务线需要 150 点赞达拉附魔。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 122702 },	-- Enchantress Quinni
 				["coord"] = { 47.1, 35.7, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
@@ -510,7 +544,24 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		n(QUESTS, {
 			q(70360, {	-- Dragon Isles Enchanting
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
+				["description"] = createLocalizationString({
+					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
+					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_4",
+					export = true,
+					text = {
+						en = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务只能在学会龙群岛附魔之前接取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 192055 },	-- Veeno <Enchanting Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 366255 },	-- Dragon Isles Enchanting
@@ -554,7 +605,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		}, {
 			------ Requires 25 Skill ------
 			q(66935, {	-- Crystal Quill Pens
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["groups"] = {
@@ -562,7 +613,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			q(66900, {	-- Enchanted Relics
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -570,7 +621,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			q(66884, {	-- Fireproof Gear
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -578,7 +629,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			q(72423, {	-- Weathering the Storm
-				["description"] = "Requires 25 Skill.",
+				["description"] = "~L.REQUIRES_25_SKILL",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -588,17 +639,17 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 
 			------ Requires 45 Skill ------
 			q(72175, {	-- A Scept-acular Time
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 			}),
 			q(72173, {	-- Braced for Enchantment
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["qgs"] = {
 					193744,	-- Soragosa
 					216267,	-- Enchanter Falrin Treeshaper <House of Shen'dralar>
@@ -609,7 +660,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			q(72155, {	-- Spread the Enchantment
-				["description"] = "Requires 45 Skill.",
+				["description"] = "~L.REQUIRES_45_SKILL",
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 			}),
@@ -653,7 +704,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.ENCHANTING, 1 } } }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
@@ -680,7 +731,24 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		}),
 		n(TREASURES, {
 			o(380558, {	-- Enchanted Debris
-				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
+				["description"] = createLocalizationString({
+					readable = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
+					constant = "INTERACT_WITH_THE_DISENCHANTED_BROOM_THEN",
+					export = true,
+					text = {
+						en = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与被解除魔力的扫帚互动，然后跟着它前往宝藏所在的位置。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 70272,
 				["coord"] = { 59.9, 57.0, THE_WAKING_SHORES },
 				["groups"] = {
@@ -795,7 +863,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			i(198610),	-- Enchanter's Script
 			q(74110, {	-- DF Inscription Order: Enchanting
 				["name"] = "DF Inscription Order: Enchanting",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
 			}),
 			q(66377, {	-- DF Weekly Enchanting Knowledgepoint #1
@@ -808,14 +876,48 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			q(70515, {	-- DF Weekly Enchanting Knowledgepoint #3
 				["name"] = "DF Enchanting Drop #1: Primalist",
-				["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_MOB_WITH_PRIMALIST_IN_THE_NAME",
+					export = true,
+					text = {
+						en = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由名称中带有“原始主义者”的任意怪物掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198968 },	-- Primalist Charm
 				["coord"] = { 53.4, 56.2, THALDRASZUS },
 				["crs"] = { 194656 },	-- Primalist Surgecrusher
 			}),
 			q(70514, {	-- DF Weekly Enchanting Knowledgepoint #4
 				["name"] = "DF Enchanting Drop #2: Arcane Elemental",
-				["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
+				["description"] = createLocalizationString({
+					readable = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
+					constant = "DROPS_FROM_ANY_ARCANE_ELEMENTAL_COORDINATES",
+					export = true,
+					text = {
+						en = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由任意奥术元素掉落。\n坐标指向我们找到的最佳地点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 198967 },	-- Primordial Aether
 				["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
 				["crs"] = { 181536 },	-- Destabilized Elemental
@@ -867,7 +969,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			q(84085),	-- The Power of Potential
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 } } }, {
 				r(445378),	-- Algari Ingenuity
 				r(445403),	-- Authority of Fiery Resolve
@@ -972,7 +1074,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			i(227667),	-- Algari Enchanter's Folio
 			q(83727, {	-- TWW Inscription Order: Enchanting
 				["name"] = "TWW Inscription Order: Enchanting",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
 			}),
 			q(83258, {	-- TWW Weekly Enchanting Knowledgepoint #1
@@ -985,32 +1087,49 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			q(84290, {	-- TWW Weekly Enchanting Knowledgepoint #3
 				["name"] = "TWW Weekly Enchanting Disenchant #1",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = createLocalizationString({
+					readable = "Rewarded when disenchanting items.",
+					constant = "REWARDED_WHEN_DISENCHANTING_ITEMS",
+					export = true,
+					text = {
+						en = "Rewarded when disenchanting items.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "分解物品时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
 			q(84291, {	-- TWW Weekly Enchanting Knowledgepoint #4
 				["name"] = "TWW Weekly Enchanting Disenchant #2",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
 			q(84292, {	-- TWW Weekly Enchanting Knowledgepoint #5
 				["name"] = "TWW Weekly Enchanting Disenchant #3",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
 			q(84293, {	-- TWW Weekly Enchanting Knowledgepoint #6
 				["name"] = "TWW Weekly Enchanting Disenchant #4",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
 			q(84294, {	-- TWW Weekly Enchanting Knowledgepoint #7
 				["name"] = "TWW Weekly Enchanting Disenchant #5",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
 			q(84295, {	-- TWW Weekly Enchanting Knowledgepoint #8
 				["name"] = "TWW Weekly Enchanting Disenchant #6",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 227661 },	-- Gleaming Telluric Crystal
 			}),
 		})),
@@ -1076,7 +1195,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			q(93698),	-- Splintered Radiance
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.ENCHANTING, 1 } } }, {
 				r(1236057),	-- Enchant Boots - Lynx's Dexterity
 				r(1236069),	-- Enchant Chest - Mark of the Worldsoul
@@ -1160,7 +1279,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			i(263464),	-- Thalassian Enchanter's Folio
 			q(95129, {	-- MID Inscription Order: Enchanting
 				["name"] = "MID Inscription Order: Enchanting",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 245759 },	-- Thalassian Treatise on Enchanting
 			}),
 			q(93533, {	-- MID Weekly Enchanting Knowledgepoint #1
@@ -1173,32 +1292,32 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			q(95048, {	-- MID Weekly Enchanting Knowledgepoint #3
 				["name"] = "MID Weekly Enchanting Disenchant #1",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
 			q(95049, {	-- MID Weekly Enchanting Knowledgepoint #4
 				["name"] = "MID Weekly Enchanting Disenchant #2",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
 			q(95050, {	-- MID Weekly Enchanting Knowledgepoint #5
 				["name"] = "MID Weekly Enchanting Disenchant #3",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
 			q(95051, {	-- MID Weekly Enchanting Knowledgepoint #6
 				["name"] = "MID Weekly Enchanting Disenchant #4",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
 			q(95052, {	-- MID Weekly Enchanting Knowledgepoint #7
 				["name"] = "MID Weekly Enchanting Disenchant #5",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 267654 },	-- Swirling Arcane Essence
 			}),
 			q(95053, {	-- MID Weekly Enchanting Knowledgepoint #8
 				["name"] = "MID Weekly Enchanting Disenchant #6",
-				["description"] = "Rewarded when disenchanting items.",
+				["description"] = "~L.REWARDED_WHEN_DISENCHANTING_ITEMS",
 				["provider"] =  { "i", 267655 },	-- Brimming Mana Shard
 			}),
 		})),
@@ -1226,7 +1345,24 @@ profession(ENCHANTING, {
 			r(158889),	-- Gift of Versatility
 		}),
 		cat(653, {	-- Illusions
-			["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
+			["description"] = createLocalizationString({
+				readable = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
+				constant = "TALK_TO_YOUR_GARRISON_FOLLOWER_TO_LEARN_THESE",
+				export = true,
+				text = {
+					en = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "与你的要塞追随者交谈即可学会这些。如果没有立即记录，试着重新登录后再与他们交谈。\n\n - Crieve",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				r(217655),	-- Tome of Illusions: Draenor
 			},

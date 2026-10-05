@@ -51,10 +51,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(508, {	-- Darkshore Cub (PET!)
-						["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
+							constant = "CAN_BE_FOUND_IN_THE_WOODS_WEST_OF_THE_GROVE_OF",
+							export = true,
+							text = {
+								en = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在远古之林以西的森林中找到，通常在海滩前不远的林线上。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(493, {	-- Shimmershell Snail (PET!)
-						["description"] = "Can commonly be found on the beaches of Old Darkshore.",
+						["description"] = createLocalizationString({
+							readable = "Can commonly be found on the beaches of Old Darkshore.",
+							constant = "CAN_COMMONLY_BE_FOUND_ON_THE_BEACHES_OF_OLD",
+							export = true,
+							text = {
+								en = "Can commonly be found on the beaches of Old Darkshore.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于旧黑海岸的海滩上。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -1008,7 +1042,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(994, {	-- Escape Through Force
 					-- #if BEFORE 4.0.3
 					["altQuests"] = { 995 },	-- Escape Through Stealth
-					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
+					["description"] = "~L.THIS_QUEST_BECOMES_UNAVAILABLE_IF_YOU_COMPLETE",
 					-- #endif
 					["sourceQuest"] = 993,	-- A Lost Master (2/2)
 					["qg"] = 3692,	-- Volcor
@@ -1025,7 +1059,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(995, {	-- Escape Through Stealth
 					-- #if BEFORE 4.0.3
 					["altQuests"] = { 994 },	-- Escape Through Force
-					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
+					["description"] = "~L.THIS_QUEST_BECOMES_UNAVAILABLE_IF_YOU_COMPLETE_2",
 					-- #endif
 					["sourceQuest"] = 993,	-- A Lost Master (2/2)
 					["qg"] = 3692,	-- Volcor
@@ -1451,7 +1485,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 12,
 				}),
 				q(960, {	-- Onu is meditating
-					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
+					["description"] = "~L.TO_COMPLETE_THIS_QUEST_YOU_MUST_RETURN_TO_ONU",
 					["sourceQuest"] = 944,	-- The Master's Glaive
 					["qg"] = 3616,	-- Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE },
@@ -1463,7 +1497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(961, {	-- Onu is meditating
-					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
+					["description"] = "~L.TO_COMPLETE_THIS_QUEST_YOU_MUST_RETURN_TO_ONU_2",
 					["sourceQuest"] = 949,	-- The Twilight Camp
 					["qg"] = 3616,	-- Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE },
@@ -1677,7 +1711,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13568, {	-- Spirit of the Moonstalker
-					["description"] = "Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",
+					["description"] = createLocalizationString({
+						readable = "Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",
+						constant = "GREAT_MOONSTALKER_SPIRIT_GRANTS_A_BUFF",
+						export = true,
+						text = {
+							en = "Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "巨型月爪之灵提供增益，使你的急速提高 10%。\n请谨慎选择，你只能获得 1 个增益。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
 						13565,	-- Twice Removed
@@ -1694,7 +1745,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13567, {	-- Spirit of the Stag
-					["description"] = "Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",
+					["description"] = createLocalizationString({
+						readable = "Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",
+						constant = "GREAT_STAG_SPIRIT_GRANTS_A_BUFF_INCREASING_YOUR",
+						export = true,
+						text = {
+							en = "Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "巨型雄鹿之灵提供增益，使你的移动速度提高 10%。\n请谨慎选择，你只能获得 1 个增益。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
 						13565,	-- Twice Removed
@@ -1711,7 +1779,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13597, {	-- Spirit of the Thistle Bear
-					["description"] = "Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",
+					["description"] = createLocalizationString({
+						readable = "Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",
+						constant = "GREAT_THISTLE_BEAR_SPIRIT_GRANTS_A_BUFF",
+						export = true,
+						text = {
+							en = "Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "巨型蓟熊之灵提供增益，使你受到的伤害降低 10%。\n请谨慎选择，你只能获得 1 个增益。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
 						13565,	-- Twice Removed
@@ -1910,7 +1995,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13897, {	-- The Battle for Darkshore
-					["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
+					["description"] = createLocalizationString({
+						readable = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
+						constant = "IF_YOU_DON_T_PICK_THIS_QUEST_UP_PROMPTLY_AFTER",
+						export = true,
+						text = {
+							en = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你在事件结束后没有及时接取这个任务，玛法里奥会消失，你将不得不重复该事件才能获得任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 13900,	-- The Offering to Azshara
 					["qg"] = 34422,	-- Malfurion Stormrage
 					["coord"] = { 32.8, 84.3, DARKSHORE },
@@ -2220,7 +2322,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1141, {	-- The Family and the Fishing Pole
 					-- #if BEFORE 4.0.3
-					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
+					["description"] = "~L.TALK_TO_GUBBER_BLUMP_AFTER_ACCEPTING_THE_QUEST",
 					-- #endif
 					["qg"] = 10216,	-- Gubber Blump
 					["coord"] = { 36.1, 44.9, DARKSHORE },
@@ -2236,7 +2338,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13562, {	-- The Final Flame of Bashal'Aran
-					["description"] = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
+					["description"] = createLocalizationString({
+						readable = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
+						constant = "RANGER_GLYNDA_NAL_SHEA_PATROLS_AROUND_LOR_DANEL",
+						export = true,
+						text = {
+							en = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "游侠格琳达·纳尔谢在洛达内尔周边巡逻。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 					["qg"] = 32971,	-- Ranger Glynda Nal'Shea (mobileNPC)
 					["coords"] = {
@@ -2506,7 +2625,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13589, {	-- The Shatterspear Invaders
-					["description"] = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
+					["description"] = "~L.RANGER_GLYNDA_NAL_SHEA_PATROLS_AROUND_LOR_DANEL",
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 					["qg"] = 32971,	-- Ranger Glynda Nal'Shea (mobileNPC)
 					["coords"] = {
@@ -2586,7 +2705,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = { { "i", 46702, 5 } },	-- Ancient Device Fragment
 						}),
 						o(195055, {	-- Buried Debris
-							["description"] = "Use the detector to spawn these on the beach.",
+							["description"] = createLocalizationString({
+								readable = "Use the detector to spawn these on the beach.",
+								constant = "USE_THE_DETECTOR_TO_SPAWN_THESE_ON_THE_BEACH",
+								export = true,
+								text = {
+									en = "Use the detector to spawn these on the beach.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "使用探测器在海滩上刷出这些。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "i", 46388 },	-- Buried Artifact Detector
 							["coord"] = { 36.8, 81.7, DARKSHORE },
 							["groups"] = {
@@ -2773,7 +2909,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 11,
 				}),
 				q(13510, {	-- Timely Arrival
-					["description"] = "In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",
+					["description"] = createLocalizationString({
+						readable = "In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",
+						constant = "IN_ORDER_TO_OBTAIN_THIS_QUEST_LOOT_A",
+						export = true,
+						text = {
+							en = "In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要获得此任务，请拾取一件|cffffffff碎矛拷问者牢笼钥匙|r，它由|cffe50d12里特科|r掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["providers"] = {
 						{ "i",  45040 },	-- Shatterspear Torturer's Cage Key
 						{ "o", 194101 },	-- Shatterspear Cage
@@ -2815,7 +2968,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(990, {	-- Trek to Ashenvale
-					["description"] = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
+					["description"] = "~L.THE_QUEST_GIVER_APPEARS_AFTER_TURNING_IN_ESCAPE",
 					["sourceQuests"] = {
 						994,	-- Escape Through Force
 						995,	-- Escape Through Stealth
@@ -2903,7 +3056,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Murkdeep slain
 							["provider"] = { "n", 10323 },	-- Murkdeep
-							["description"] = "Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
+							["description"] = "~L.KILL_THE_MURLOCS_AT_THE_CAMP_AND_THEN_A_FEW",
 							["coord"] = { 35.4, 76.4, DARKSHORE },
 						}),
 						i(15404, {	-- Breakwater Girdle
@@ -2986,7 +3139,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,	-- for "The Bear's Paw"
 				}),
 				q(28529, {	-- Writings of the Void
-					["description"] = "Jump into the whirlpool.",
+					["description"] = createLocalizationString({
+						readable = "Jump into the whirlpool.",
+						constant = "JUMP_INTO_THE_WHIRLPOOL",
+						export = true,
+						text = {
+							en = "Jump into the whirlpool.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "跳入漩涡中。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 64450 },	-- Writings of the Dark Herald
 					["coord"] = { 52.4, 32.0, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
@@ -3149,7 +3319,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209836, {	-- Althalaxx Orb
-					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["description"] = createLocalizationString({
+						readable = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+						constant = "CLIMB_THE_TOWER_IN_DARKSHORE_YOU_LL_LIKELY_NEED",
+						export = true,
+						text = {
+							en = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "攀爬黑海岸的塔，你很可能需要一支队伍或一位朋友，能够存活足够长的时间，为你争取大约 3 秒不被打断的拾取时间。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 409289 },	-- Strange Orb
 					["coord"] = { 56.2, 26.5, DARKSHORE },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -3157,7 +3344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				o(13359, {	-- Cat Figurine
-					["description"] = "Can be found scattered around the Ruins of Mathystra. Rarely spawns a Ghost Saber which can be tamed by a Hunter and can also drop a Glowing Cat Figurine.",
+					["description"] = "~L.CAN_BE_FOUND_SCATTERED_AROUND_THE_RUINS_OF",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 60.9, 18.9, DARKSHORE },
@@ -3208,7 +3395,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
-					["description"] = "Use Crab Treats on a young reef crawler to receive this rune.",
+					["description"] = createLocalizationString({
+						readable = "Use Crab Treats on a young reef crawler to receive this rune.",
+						constant = "USE_CRAB_TREATS_ON_A_YOUNG_REEF_CRAWLER_TO",
+						export = true,
+						text = {
+							en = "Use Crab Treats on a young reef crawler to receive this rune.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "对一只年幼的礁石爬行者使用螃蟹零食即可获得这枚符文。",
+							-- TODO: tw = "",
+						},
+					}),
 					["providers"] = {
 						{ "n",   2234 },	-- Young Reef Crawler
 						{ "i", 209027 },	-- Crab Treats
@@ -3399,7 +3603,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				i(45040, {	-- Shatterspear Torturer's Cage Key
-					["description"] = "Use the Key on a nearby cage to release Sentinel Aynasha and receive an Escort Quest.",
+					["description"] = createLocalizationString({
+						readable = "Use the Key on a nearby cage to release Sentinel Aynasha and receive an Escort Quest.",
+						constant = "USE_THE_KEY_ON_A_NEARBY_CAGE_TO_RELEASE",
+						export = true,
+						text = {
+							en = "Use the Key on a nearby cage to release Sentinel Aynasha and receive an Escort Quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "对附近的笼子使用钥匙，释放哨兵艾娜莎并获得一个护送任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 64.1, 5.3, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 32970,	-- Rit'ko

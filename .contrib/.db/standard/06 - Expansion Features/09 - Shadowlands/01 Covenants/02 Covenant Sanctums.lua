@@ -4,7 +4,24 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
-		["description"] = "These rewards are shared across Covenants.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are shared across Covenants.",
+			constant = "THESE_REWARDS_ARE_SHARED_ACROSS_COVENANTS",
+			export = true,
+			text = {
+				en = "These rewards are shared across Covenants.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "这些奖励在各大盟约之间共享。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14835),	-- A Resolute Bond
@@ -191,7 +208,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					i(185942),	-- Sinheart Choker
 					i(187821, {	-- Bar-Fusan's Hackblade
 						["sourceQuests"] = { 64963 },	-- A Defector's Request
-						["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
+						["description"] = createLocalizationString({
+							readable = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
+							constant = "CAN_ONLY_SPAWN_AFTER_COMPLETING_THE_QUEST",
+							export = true,
+							text = {
+								en = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有在完成任务 |cFFFFD700一个叛逃者的请求(64963)|r 后才会刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(190178, {	-- Pouch of Protogenic Provisions
 						["timeline"] = { ADDED_9_2_0 },
@@ -200,7 +234,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			}),
 			n(COVENANT_CALLINGS, {
 				n(175390, {	-- Dirty Glinting Object
-					["description"] = "Can appear when on certain Training callings. Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+					["description"] = createLocalizationString({
+						readable = "Can appear when on certain Training callings. Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+						constant = "CAN_APPEAR_WHEN_ON_CERTAIN_TRAINING_CALLINGS",
+						export = true,
+						text = {
+							en = "Can appear when on certain Training callings. Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在承接某些训练任务时可能出现。大约每 5 分钟，在脱离战斗后，你的学徒会提醒你注意他们发现的东西。\n\n通常包含药水、宠物升级与稀有度提升物品，或食物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						-- Confirmed Follower ID's which will drop the loot objects
 						170035,	-- Deos [Kyrian]

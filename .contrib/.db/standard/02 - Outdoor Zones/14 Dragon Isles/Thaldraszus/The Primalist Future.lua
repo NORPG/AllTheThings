@@ -206,7 +206,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				})),
 				n(199541, {	-- Tarndormu <Temporal Squadron Commander>
-					["description"] = "This Vendor is only visible during the Storm's Fury event.",
+					["description"] = createLocalizationString({
+						readable = "This Vendor is only visible during the Storm's Fury event.",
+						constant = "THIS_VENDOR_IS_ONLY_VISIBLE_DURING_THE_STORM_S",
+						export = true,
+						text = {
+							en = "This Vendor is only visible during the Storm's Fury event.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此商人仅在风暴之怒事件期间可见。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 60.8, 46.6, THE_PRIMALIST_FUTURE },
 					["groups"] = {
 						i(202096),	-- Armaments of the Scale
@@ -217,19 +234,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(203469),	-- Coalesced Storm Remnants
 			}),
 			n(199502, {		-- Glakis, Winter's Wrath
-				["description"] = "Possible Boss at the end of the Storm's Fury Event.",
+				["description"] = createLocalizationString({
+					readable = "Possible Boss at the end of the Storm's Fury Event.",
+					constant = "POSSIBLE_BOSS_AT_THE_END_OF_THE_STORM_S_FURY",
+					export = true,
+					text = {
+						en = "Possible Boss at the end of the Storm's Fury Event.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "风暴之怒事件结束时可能出现的首领。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"]	= {
 					i(204215),	-- Dormanted Primordial Fragment
 				},
 			}),
 			n(199667, {		-- Nimbulatus, Storm's Wrath
-				["description"] = "Possible Boss at the end of the Storm's Fury Event.",
+				["description"] = "~L.POSSIBLE_BOSS_AT_THE_END_OF_THE_STORM_S_FURY",
 				["groups"]	= {
 					i(204215),	-- Dormanted Primordial Fragment
 				},
 			}),
 			n(200439, {		-- Seismodor, Earth's Wrath
-				["description"] = "Possible Boss at the end of the Storm's Fury Event.",
+				["description"] = "~L.POSSIBLE_BOSS_AT_THE_END_OF_THE_STORM_S_FURY",
 				["groups"]	= {
 					i(204215),	-- Dormanted Primordial Fragment
 				},

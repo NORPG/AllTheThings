@@ -98,7 +98,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						["groups"] = {
 							recipe(8071),	-- Stoneskin Totem
 							i(5175, {	-- Earth Totem
-								["description"] = "You must keep this in your bags forever.",
+								["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 							}),
 						},
 					}),

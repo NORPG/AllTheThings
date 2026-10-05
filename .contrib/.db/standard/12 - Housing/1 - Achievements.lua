@@ -82,7 +82,24 @@ root(ROOTS.Housing, n(ACHIEVEMENTS, {
 			["timeline"] = { "added 12.0.1" },
 		}),
 		ach(61211, {	-- Welcome Home
-			["description"] = "Build your own home through Housing",
+			["description"] = createLocalizationString({
+				readable = "Build your own home through Housing",
+				constant = "BUILD_YOUR_OWN_HOME_THROUGH_HOUSING",
+				export = true,
+				text = {
+					en = "Build your own home through Housing",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "通过房屋系统建造属于自己的家",
+					-- TODO: tw = "",
+				},
+			}),
 			["sourceQuests"] = { 91863 },	-- My First House
 		}),
 	},

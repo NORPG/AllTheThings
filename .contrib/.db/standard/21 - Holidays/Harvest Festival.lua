@@ -95,7 +95,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 		}),
 	}),
 	n(REWARDS, {
-		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+		["description"] = "~L.THIS_IS_SOME_OF_THE_BEST_FOOD_AND_WATER_YOU_CAN",
 		["timeline"] = { ADDED_1_12_1 },
 		["groups"] = {
 			i(19995),	-- Harvest Boar

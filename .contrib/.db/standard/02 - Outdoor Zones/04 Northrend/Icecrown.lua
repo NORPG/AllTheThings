@@ -147,14 +147,48 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 								-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 								-- #if BEFORE 5.5.3
-								["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+								["description"] = createLocalizationString({
+									readable = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+									constant = "THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
+									export = true,
+									text = {
+										en = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "此物品本应在第 4 阶段之前不会出现在游戏中，且目前尚无法使用，在那之前请将其放在银行里。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 							})),
 						},
 					}),
 					n(66675, {	-- Major Payne <Grand Master Pet Tamer>
 						["coord"] = { 77.4, 19.6, ICECROWN },
-						["description"] = "Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",
+						["description"] = createLocalizationString({
+							readable = "Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",
+							constant = "MAJOR_PAYNE_S_PETS_ARE_LEVEL_25_OF_EPIC_QUALITY",
+							export = true,
+							text = {
+								en = "Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "佩恩少校的宠物是 25 级史诗品质，并按以下顺序拥有极强的宠物类别：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 机械 - 使用元素（强力且耐打）宠物。\n3. 元素 - 使用水生（强力）或小动物（耐打）宠物。\n\n若要计入“一次糟糕的大冒险”，请使用雷象毛绒玩具和两只强力宠物组队作战，例如齿轮刃翼龙（猛击/超频/暴露伤口）和剥皮幼崽（闪击/专注/踢）。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
@@ -205,7 +239,24 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(13286, {	-- ...All the Help We Can Get.
-						["description"] = "On the Skybreaker.",
+						["description"] = createLocalizationString({
+							readable = "On the Skybreaker.",
+							constant = "ON_THE_SKYBREAKER",
+							export = true,
+							text = {
+								en = "On the Skybreaker.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在破天号上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 13231,	-- The Broken Front
 						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
@@ -234,7 +285,24 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(13068, {	-- A Tale of Valor
-						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
+						["description"] = createLocalizationString({
+							readable = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
+							constant = "FOR_THOSE_THAT_DIDN_T_KNOW_THIS_QUEST_LINE_WAS",
+							export = true,
+							text = {
+								en = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "也许还有人不知道，这条任务线是为了纪念布拉德·布莱登贝克——在线技术副总裁罗布·布莱登贝克的弟弟。布拉德曾饱受癌症折磨，也是一位狂热的《魔兽世界》玩家。他的哥哥请求为弟弟设立某种纪念，于是克里斯·梅森和其他人一起构思了这条任务线，让他在我们热爱的奇幻世界中与癌症抗争的故事永存。\n\n向你们致敬，暴雪、克里斯·梅森以及整个布莱登贝克家族。作为一名童年癌症幸存者，我对你们的荣誉与愿景致以最高的敬意与忠诚。你们真实地再现了一个人经历病痛与抗争的过程，堪称最精准的刻画，也让我们所有经历过、或亲眼目睹过同样抗争的人感到荣耀。\n\nLok'tar，布拉德兄弟。Lok'tar。\n\n——Wowhead 用户 Fellwing",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
 						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["coord"] = { 79.7, 71.7, ICECROWN },
@@ -262,13 +330,30 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(13294, {	-- Against the Giants (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13287,	-- Poke and Prod
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13277, {	-- Against the Giants (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = createLocalizationString({
+							readable = "On Orgrim's Hammer.",
+							constant = "ON_ORGRIM_S_HAMMER",
+							export = true,
+							text = {
+								en = "On Orgrim's Hammer.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在奥格瑞姆之锤上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 13237,	-- Poke and Prod
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -294,7 +379,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13363, {	-- Argent Aid
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13362,	-- Knowledge is a Terrible Burden
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -362,7 +447,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13295, {	-- Basic Chemistry (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13294,	-- Against the Giants
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -373,7 +458,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13279, {	-- Basic Chemistry (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13277,	-- Against the Giants
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -426,13 +511,13 @@ root(ROOTS.Zones, {
 						["_drop"] = { "g" },	-- Runic Healing Potion
 					}),
 					q(13335, {	-- Before the Gate of Horror (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13337,	-- The Ironwall Rampart
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13329, {	-- Before the Gate of Horror (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13312,	-- The Ironwall Rampart
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -444,7 +529,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(13313, {	-- Blinding the Eyes in the Sky
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13306,	-- Raise the Barricades
 						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
@@ -455,7 +540,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 19.5, 48.1, ICECROWN },
 					}),
 					q(13336, {	-- Blood of the Chosen (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13225,	-- The Skybreaker
 						["qg"] = 32302,	-- Knight-Captain Drosche
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
@@ -463,7 +548,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13330, {	-- Blood of the Chosen (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["qg"] = 32301,	-- Warbringer Davos Rioht
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
@@ -471,13 +556,13 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13334, {	-- Bloodspattered Banners (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13332,	-- Raise the Barricades
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13307, {	-- Bloodspattered Banners (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13306,	-- Raise the Barricades
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -489,7 +574,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(13291, {	-- Borrowed Technology
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13290,	-- Your Attention, Please
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
@@ -517,19 +602,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13320, {	-- Cannot Reproduce (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13315,	-- Sneak Preview
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13355, {	-- Cannot Reproduce (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13351,	-- Sneak Preview
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13333, {	-- Capture More Dispatches
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13314,	-- Get the Message
 						["qg"] = 29799,	-- Thassarian
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
@@ -537,7 +622,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13319, {	-- Chain of Command (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13315,	-- Sneak Preview
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -549,7 +634,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13354, {	-- Chain of Command (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuests"] = {
 							13351,	-- Sneak Preview
 							-- TODO:  confirm below:
@@ -565,19 +650,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13298, {	-- Coprous the Defiled (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13294,	-- Against the Giants
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13278, {	-- Coprous the Defiled (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13277,	-- Against the Giants
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13349, {	-- Cradle of the Frostbrood
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13348,	-- Futility
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -665,26 +750,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13318, {	-- Drag and Drop (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13315,	-- Sneak Preview
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13323, {	-- Drag and Drop (A) (daily)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13318,	-- Drag and Drop
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13352, {	-- Drag and Drop (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13351,	-- Sneak Preview
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13353, {	-- Drag and Drop (H) (daily)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13352,	-- Drag and Drop
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -726,19 +811,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13386, {	-- Exploiting an Opening
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13225,	-- The Skybreaker
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13393, {	-- Field Repairs (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13392,	-- Return to the Surface
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13304, {	-- Field Repairs (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13282,	-- Return to the Surface
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -805,25 +890,25 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.0, 23.8, ICECROWN },
 					}),
 					q(13314, {	-- Get the Message
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13332,	-- Raise the Barricades
 						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13296, {	-- Get to Ymirheim! (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13225,	-- The Skybreaker
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13293, {	-- Get to Ymirheim! (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
 					}),
 					q(13238, {	-- Good For Something?
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuests"] = {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
@@ -970,12 +1055,12 @@ root(ROOTS.Zones, {
 						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(12887, {	-- It's All Fun and Games (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12892, {	-- It's All Fun and Games (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
@@ -988,31 +1073,31 @@ root(ROOTS.Zones, {
 						["cr"] = 30597,	-- Spiked Ghoul
 					}),
 					q(13341, {	-- Joining the Assault (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13225,	-- The Skybreaker
 						["qg"] = 32302,	-- Knight-Captain Drosche
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13340, {	-- Joining the Assault (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["qg"] = 31240,	-- Warbringer Davos Rioht
 						["races"] = HORDE_ONLY,
 					}),
 					q(13226, {	-- Judgment Day Comes! (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["qg"] = 31259,	-- Absalan the Pious
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(13227, {	-- Judgment Day Comes! (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["qg"] = 31261,	-- Brother Keltan
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(13331, {	-- Keeping the Alliance Blind
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
 						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
@@ -1114,7 +1199,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13234, {	-- Make Them Pay!
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuests"] = {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
@@ -1143,26 +1228,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13345, {	-- Need More Info (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13318,	-- Drag and Drop
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13366, {	-- Need More Info (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13352,	-- Drag and Drop
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13297, {	-- Neutralizing the Plague (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13295,	-- Basic Chemistry
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13281, {	-- Neutralizing the Plague (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13279,	-- Basic Chemistry
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1181,13 +1266,13 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					pvp(q(13233, {	-- No Mercy!
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					})),
 					q(13346, {	-- No Rest For The Wicked (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13345,	-- Need More Info
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -1199,14 +1284,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13350, {	-- No Rest For The Wicked (A) (daily)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13346,	-- No Rest For The Wicked
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13367, {	-- No Rest For The Wicked (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13366,	-- Need More Info
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1218,14 +1303,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13368, {	-- No Rest For The Wicked (H) (daily)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13367,	-- No Rest For The Wicked
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13342, {	-- Not a Bug (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13318,	-- Drag and Drop
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -1238,14 +1323,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13344, {	-- Not a Bug (A) (daily)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13342,	-- Not a Bug
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13358, {	-- Not a Bug (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13352,	-- Drag and Drop
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1258,7 +1343,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13365, {	-- Not a Bug (H) (daily)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13358,	-- Not a Bug
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1318,7 +1403,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13287, {	-- Poke and Prod (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13286,	-- All the Help We Can Get.
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -1329,7 +1414,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13237, {	-- Poke and Prod (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13260,	-- Takes One to Know One
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1369,13 +1454,13 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13332, {	-- Raise the Barricades (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13345,	-- Need More Info
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13306, {	-- Raise the Barricades (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13366,	-- Need More Info
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1406,7 +1491,7 @@ root(ROOTS.Zones, {
 						}},
 					}),
 					q(13321, {	-- Retest Now (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13320,	-- Cannot Reproduce
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
@@ -1421,14 +1506,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13322, {	-- Retest Now (A) (daily)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13321,	-- Retest Now
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13356, {	-- Retest Now (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13355,	-- Cannot Reproduce
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
@@ -1443,7 +1528,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13357, {	-- Retest Now (H) (daily)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13356,	-- Retest Now
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
@@ -1548,13 +1633,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13339, {	-- Shatter the Shards (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13335,	-- Before the Gate of Horror
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13328, {	-- Shatter the Shards (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13329,	-- Before the Gate of Horror
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1567,7 +1652,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13397, {	-- Sindragosa's Fall
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13396,	-- Futility
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -1580,7 +1665,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13300, {	-- Slaves to Saronite (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13225,	-- The Skybreaker
 						["qg"] = 31259,	-- Absalan the Pious
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
@@ -1588,7 +1673,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13302, {	-- Slaves to Saronite (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["qg"] = 31261,	-- Brother Keltan
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
@@ -1596,13 +1681,13 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13315, {	-- Sneak Preview (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13288,	-- That's Abominable!
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13351, {	-- Sneak Preview (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13264,	-- That's Abominable!
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1621,7 +1706,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.1, 71.1, ICECROWN },
 					}),
 					q(13260, {	-- Takes One to Know One
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuests"] = {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
@@ -1630,7 +1715,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(13288, {	-- That's Abominable! (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13287,	-- Poke and Prod
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -1642,7 +1727,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13289, {	-- That's Abominable! (A) (daily)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13288,	-- That's Abominable!
 						["qg"] = 29799,	-- Thassarian
 						["timeline"] = { REMOVED_4_1_0 },
@@ -1651,7 +1736,7 @@ root(ROOTS.Zones, {
 						-- NOTE:: Oddly enough, this doesn't exist for alliance despite the horde version being available
 					}),
 					q(13264, {	-- That's Abominable! (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13237,	-- Poke and Prod
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1663,7 +1748,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13276, {	-- That's Abominable! (H) (daily)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13264,	-- That's Abominable!
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1733,13 +1818,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13231, {	-- The Broken Front (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13225,	-- The Skybreaker
 						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13228, {	-- The Broken Front (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
@@ -1791,19 +1876,36 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12839, {	-- The Grand (Admiral's) Plan
-						["description"] = "Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",
+						["description"] = createLocalizationString({
+							readable = "Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",
+							constant = "MUST_BE_IN_CFFFFD700INTELLIGENCE_GATHERING_R_TO",
+							export = true,
+							text = {
+								en = "Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须正在进行|cFFFFD700情报收集|r，才能从宝箱中拾取任务物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 12838,	-- Intelligence Gathering	-- NOTE: this isn't actually a sourceQuest, but you must have it to start this one
 						["provider"] = { "i", 40666 },	-- Note from the Grand Admiral
 						["coord"] = { 9.2, 41.0, ICECROWN },
 					}),
 					q(13338, {	-- The Guardians of Corp'rethar (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13335,	-- Before the Gate of Horror
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13316, {	-- The Guardians of Corp'rethar (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13329,	-- Before the Gate of Horror
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1833,13 +1935,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13337, {	-- The Ironwall Rampart (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13332,	-- Raise the Barricades
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13312, {	-- The Ironwall Rampart (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13306,	-- Raise the Barricades
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1941,7 +2043,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 83.0, 72.9, ICECROWN },
 					}),
 					q(12898, {	-- The Shadow Vault (A)
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 12896,	-- If He Cannot Be Turned
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -1952,7 +2054,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12899, {	-- The Shadow Vault (H)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 12897,	-- If He Cannot Be Turned
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
@@ -1969,7 +2071,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13292, {	-- The Solution Solution
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13291,	-- Borrowed Technology
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
@@ -2103,7 +2205,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13402, {	-- Tirion's Help
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13401,	-- Knowledge is a Terrible Burden
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
@@ -2163,7 +2265,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13239, {	-- Volatility
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13238,	-- Sky-Reaver Korm Blackscar
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
@@ -2175,7 +2277,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13261, {	-- Volatility (daily)
-						["description"] = "On Orgrim's Hammer.",
+						["description"] = "~L.ON_ORGRIM_S_HAMMER",
 						["sourceQuest"] = 13239,	-- Volatility
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
@@ -2224,7 +2326,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13290, {	-- Your Attention, Please
-						["description"] = "On the Skybreaker.",
+						["description"] = "~L.ON_THE_SKYBREAKER",
 						["sourceQuest"] = 13231,	-- The Broken Front
 						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,

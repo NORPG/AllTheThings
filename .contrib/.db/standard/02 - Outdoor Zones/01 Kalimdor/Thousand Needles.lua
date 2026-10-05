@@ -40,7 +40,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(505, {	-- Twilight Iguana (PET!)
-						["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
+							constant = "CAN_BE_FOUND_IN_AREAS_WHERE_THE_TWILIGHT_HAMMER_3",
+							export = true,
+							text = {
+								en = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在暮光之锤扎营的区域找到，包括暮光壁垒和暮光凋零。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 55.8, 61.6, THOUSAND_NEEDLES },
 							{ 33.8, 58.4, THOUSAND_NEEDLES },
@@ -107,7 +124,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66452, {	-- Kela Grimtotem <Master Pet Tamer>
 					["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_THOUGH_ALLIANCE_5",
+						export = true,
+						text = {
+							en = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限部落，不过联盟玩家可以在完成联盟版任务“宠物对战训练师：卡利姆多”时与他们对战一次。\n\nKela 的宠物为 15 级，三个宠物的类别依次为：\n1. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n2. 小动物 - 同上。\n3. 野兽 - 使用机械（强力）或飞行（耐打）宠物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 15,
 					["groups"] = {
@@ -278,7 +312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4881, {	-- Assassination Plot
-					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
+					["description"] = "~L.THE_ITEM_THAT_STARTS_THIS_QUEST_IS_DROPPED_BY",
 					["provider"] = { "i", 12564 },	-- Assassination Note
 					["coord"] = { 21.2, 32.0, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -398,7 +432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(5178, {	-- Air Totem
-							["description"] = "You must keep this in your bags forever.",
+							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 						}),
 					},
 				}),
@@ -411,7 +445,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(5178, {	-- Air Totem
-							["description"] = "You must keep this in your bags forever.",
+							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 						}),
 					},
 				}),
@@ -1004,7 +1038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Secret phrase found
 							["provider"] = { "n", 6626 },	-- "Plucky" Johnson
-							["description"] = "Target Plucky and then use /beckon at him.",
+							["description"] = "~L.TARGET_PLUCKY_AND_THEN_USE_BECKON_AT_HIM",
 							["coord"] = { 79.6, 75.6, THOUSAND_NEEDLES },
 						}),
 					},
@@ -1322,7 +1356,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25660, {	-- Haunted
-					["description"] = "The Spirit of Tony Two-Tusk will appear and start haunting you shortly after you complete quest |cFFFFD700Two-Tusk Takedown|r.",
+					["description"] = createLocalizationString({
+						readable = "The Spirit of Tony Two-Tusk will appear and start haunting you shortly after you complete quest |cFFFFD700Two-Tusk Takedown|r.",
+						constant = "THE_SPIRIT_OF_TONY_TWO_TUSK_WILL_APPEAR_AND",
+						export = true,
+						text = {
+							en = "The Spirit of Tony Two-Tusk will appear and start haunting you shortly after you complete quest |cFFFFD700Two-Tusk Takedown|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在你完成|cFFFFD700双牙擒拿|r任务后不久，双牙托尼的灵魂就会出现并开始缠着你。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						25627,	-- Two-Tusk Takedown [A]
 						25628,	-- Two-Tusk Takedown [H]
@@ -2065,7 +2116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- Answer Braug Dimspirit's question correctly
-							["description"] = "The answer is Neltharion.",
+							["description"] = "~L.THE_ANSWER_IS_NELTHARION",
 						}),
 					},
 				}),
@@ -2087,7 +2138,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- Answer Parqual Fintallas' question correctly
-							["description"] = "The answer is Nerzhul.",
+							["description"] = "~L.THE_ANSWER_IS_NERZHUL",
 						}),
 					},
 				}),
@@ -2534,7 +2585,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(28143, {	-- To the Withering
-					["description"] = "This quest is offered as a replacement to |cFFFFD700To the Withering|r (28142) if you happen to abandon it.",
+					["description"] = createLocalizationString({
+						readable = "This quest is offered as a replacement to |cFFFFD700To the Withering|r (28142) if you happen to abandon it.",
+						constant = "THIS_QUEST_IS_OFFERED_AS_A_REPLACEMENT_TO",
+						export = true,
+						text = {
+							en = "This quest is offered as a replacement to |cFFFFD700To the Withering|r (28142) if you happen to abandon it.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃了 |cFFFFD700走向枯萎|r（28142），会提供此任务作为替代。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 28140,	-- The Elder Crone
 					["qg"] = 47580,	-- Lakota Windsong
 					["coord"] = { 30.5, 49.3, THOUSAND_NEEDLES },
@@ -2542,7 +2610,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- This quest gets marked as completed when you complete 28142
 				}),
 				q(28142, {	-- To the Withering
-					["description"] = "This quest pops-up and gets Auto-Accepted when you complete the quest |cFFFFD700The Elder Crone|r (28140).\nIf you happen to abandon this quest, you can get its replacement, |cFFFFD700To the Withering|r (28143), from Lakota Windsong.",
+					["description"] = createLocalizationString({
+						readable = "This quest pops-up and gets Auto-Accepted when you complete the quest |cFFFFD700The Elder Crone|r (28140).\nIf you happen to abandon this quest, you can get its replacement, |cFFFFD700To the Withering|r (28143), from Lakota Windsong.",
+						constant = "THIS_QUEST_POPS_UP_AND_GETS_AUTO_ACCEPTED_WHEN",
+						export = true,
+						text = {
+							en = "This quest pops-up and gets Auto-Accepted when you complete the quest |cFFFFD700The Elder Crone|r (28140).\nIf you happen to abandon this quest, you can get its replacement, |cFFFFD700To the Withering|r (28143), from Lakota Windsong.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你完成任务 |cFFFFD700老妪|r（28140）时，此任务会弹出并被自动接受。\n如果你放弃了此任务，可以从拉科塔·风歌处获得其替代任务 |cFFFFD700走向枯萎|r（28143）。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 28140,	-- The Elder Crone
 					["coord"] = { 35.9, 60.7, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2839,7 +2924,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1191, {	-- Zamek's Distraction
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",
+					["description"] = "~L.THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE_3",
 					["altQuests"] = { 1190 },	-- Keeping Pace
 					["qg"] = 4709,	-- Zamek
 					["coord"] = { 79.8, 77.0, THOUSAND_NEEDLES },

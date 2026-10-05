@@ -280,7 +280,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 31.0, 85.0, SURAMAR },
 				}),
 				q(41107, {	-- Bad Apples
-					["description"] = "Must be disguised as a Nightborne.",
+					["description"] = createLocalizationString({
+						readable = "Must be disguised as a Nightborne.",
+						constant = "MUST_BE_DISGUISED_AS_A_NIGHTBORNE",
+						export = true,
+						text = {
+							en = "Must be disguised as a Nightborne.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须伪装成夜之子。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 103131 },	-- Keelay Moongrow
 					["coord"] = { 47.2, 56.5, SURAMAR },
 					["groups"] = {
@@ -362,7 +379,7 @@ root(ROOTS.Zones, {
 					["groups"] = { i(132244) },	-- Sashj'tar Fang (QI!)
 				}),
 				q(41256, {	-- Blast of Spice Fish
-					["description"] = "Must be disguised as a Nightborne.",
+					["description"] = "~L.MUST_BE_DISGUISED_AS_A_NIGHTBORNE",
 					["provider"] = { "n", 103131 },	-- Keelay Moongrow
 					["coord"] = { 47.2, 56.5, SURAMAR },
 				}),
@@ -1087,7 +1104,24 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(44492, {	-- Leyline Apprentice
-					["description"] = "Must restore 3 Leyline feeds to get this quest.",
+					["description"] = createLocalizationString({
+						readable = "Must restore 3 Leyline feeds to get this quest.",
+						constant = "MUST_RESTORE_3_LEYLINE_FEEDS_TO_GET_THIS_QUEST",
+						export = true,
+						text = {
+							en = "Must restore 3 Leyline feeds to get this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须恢复 3 处魔网供能才能接到此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
 					["coord"] = { 37.0, 46.2, SURAMAR },
 				}),
@@ -1161,7 +1195,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 37.0, 46.2, SURAMAR },
 				}),
 				q(44493, {	-- Leyline Proficiency
-					["description"] = "Must restore 5 Leyline feeds to get this quest.",
+					["description"] = createLocalizationString({
+						readable = "Must restore 5 Leyline feeds to get this quest.",
+						constant = "MUST_RESTORE_5_LEYLINE_FEEDS_TO_GET_THIS_QUEST",
+						export = true,
+						text = {
+							en = "Must restore 5 Leyline feeds to get this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须恢复 5 处魔网供能才能接到此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
 					["coord"] = { 36.9, 46.3, SURAMAR },
 				}),
@@ -1346,7 +1397,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 52.0, 79.1, SURAMAR },
 				}),
 				q(45260, {	-- One Day at a Time
-					["description"] = "You may need to leave Shal'aran before this quest appears.",
+					["description"] = createLocalizationString({
+						readable = "You may need to leave Shal'aran before this quest appears.",
+						constant = "YOU_MAY_NEED_TO_LEAVE_SHAL_ARAN_BEFORE_THIS",
+						export = true,
+						text = {
+							en = "You may need to leave Shal'aran before this quest appears.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你可能需要离开沙尔艾兰，此任务才会出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						43568,	-- Arcan'dor, Gift of the Ancient Magi
 						43569,	-- Arluin's Request
@@ -1453,7 +1521,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 37.8, 61.5, SURAMAR },
 				}),
 				q(41108, {	-- Rain Death Upon Them
-					["description"] = "Automatically granted when you mount a hippogryph.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted when you mount a hippogryph.",
+						constant = "AUTOMATICALLY_GRANTED_WHEN_YOU_MOUNT_A",
+						export = true,
+						text = {
+							en = "Automatically granted when you mount a hippogryph.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你骑上一只角鹰兽时自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						41109,	-- Waiting for Revenge (auto)
 						41110,	-- Waiting for Revenge (hippogryph)
@@ -1649,7 +1734,24 @@ root(ROOTS.Zones, {
 					["groups"] = { i(138147) },	-- Control Orb (QI!)
 				}),
 				q(41030, {	-- Sigil Reclamation
-					["description"] = "Automated granted when approaching the first fallen Moon Guard member.",
+					["description"] = createLocalizationString({
+						readable = "Automated granted when approaching the first fallen Moon Guard member.",
+						constant = "AUTOMATED_GRANTED_WHEN_APPROACHING_THE_FIRST",
+						export = true,
+						text = {
+							en = "Automated granted when approaching the first fallen Moon Guard member.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "接近第一名倒下的月卫成员时自动授予。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 40883,	-- Fate of the Guard
 					["coord"] = { 27.4, 17.3, SURAMAR },
 					["groups"] = { i(133675) },	-- Moon Guard Sigil (QI!)
@@ -1910,7 +2012,24 @@ root(ROOTS.Zones, {
 					["groups"] = { i(132860 ) },	-- The Black Tome (QI!)
 				}),
 				q(44176, {	-- The Conveniences of Home
-					["description"] = "Obtained through Withered Army Training.",
+					["description"] = createLocalizationString({
+						readable = "Obtained through Withered Army Training.",
+						constant = "OBTAINED_THROUGH_WITHERED_ARMY_TRAINING",
+						export = true,
+						text = {
+							en = "Obtained through Withered Army Training.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "通过枯法者训练获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 140778 },	-- Traveler's Banking Chest
 				}),
 				q(40747, {	-- The Delicate Art of Telemancy
@@ -2299,7 +2418,24 @@ root(ROOTS.Zones, {
 					["coord"] = { 57.5, 57.5, SURAMAR },
 				}),
 				q(41109, {	-- Waiting for Revenge
-					["description"] = "Automatically granted after looting the |cFFFFD700Volatile Spell Focus|r.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted after looting the |cFFFFD700Volatile Spell Focus|r.",
+						constant = "AUTOMATICALLY_GRANTED_AFTER_LOOTING_THE",
+						export = true,
+						text = {
+							en = "Automatically granted after looting the |cFFFFD700Volatile Spell Focus|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "拾取|cFFFFD700不稳定的法术焦点|r后自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 40968,	-- Recovering Stolen Power
 					["groups"] = { i(133956) },	-- Volatile Spell Focus (QI!)
 				}),

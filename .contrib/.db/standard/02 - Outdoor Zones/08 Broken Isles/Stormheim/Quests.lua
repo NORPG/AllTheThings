@@ -774,7 +774,24 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						i(138111, {	-- Stormforged Grapple Launcher	// (TOY!) as of 11.2.5
 							-- #if BEFORE 11.2.5
-							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+							["description"] = createLocalizationString({
+								readable = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+								constant = "THIS_ITEM_CAN_BE_SAFELY_DELETED_AND_YOU_LL",
+								export = true,
+								text = {
+									en = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此物品可以安全删除，你仍然能够与钩子互动。",
+									-- TODO: tw = "",
+								},
+							}),
 							-- #endif
 						}),
 					},

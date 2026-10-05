@@ -24,7 +24,24 @@ root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 	["timeline"] = { ADDED_6_0_2 },
 	["groups"] = {
 		ach(10657, {	-- Fledgling Hero of Warcraft
-			["description"] = "Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone.",
+			["description"] = createLocalizationString({
+				readable = "Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone.",
+				constant = "CROSS_GAME_REWARD_LADY_LIADRIN_PALADIN_HERO_IN",
+				export = true,
+				text = {
+					en = "Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "跨游戏奖励：炉石传说中的女伯爵莉亚德琳圣骑士英雄。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_7_0_3 },
 		}),
 		n(REWARDS, bubbleDown({

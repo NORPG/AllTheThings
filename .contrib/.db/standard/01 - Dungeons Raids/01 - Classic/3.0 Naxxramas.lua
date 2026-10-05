@@ -46,7 +46,24 @@ applyclassicphase(PHASE_SIX,
 		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		-- #endif
 		-- #if SEASON_OF_DISCOVERY
-		["description"] = "[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",
+		["description"] = createLocalizationString({
+			readable = "[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",
+			constant = "TBC_NAXX_IS_THE_RAID_THAT_OPENED_IN_SOD_PHASE_7",
+			export = true,
+			text = {
+				en = "[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "[TBC] \n纳克萨玛斯是探索赛季第 7 阶段开放的团本。\n掉落和任务信息尚不明确，将在 wowhead 攻略更新后补充。",
+				-- TODO: tw = "",
+			},
+		}),
 		-- #endif
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3456,	-- Naxxramas
@@ -194,7 +211,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 							-- #endif
 							q(9250, {	-- Frame of Atiesh
-								["description"] = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
+								["description"] = "~L.COLLECT_40_OF_THE_SPLINTERS_TO_CRAFT_THE_FRAME",
 								["provider"] = { "i", 22727 },	-- Frame of Atiesh
 								["cost"] = { { "i", 22726, 40 } },	-- Splinter of Atiesh
 								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
@@ -213,7 +230,7 @@ applyclassicphase(PHASE_SIX,
 							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 						})),
 						applyclassicphase(SOM_PHASE_ONE, i(191481, {	-- Tabard of Mastery
-							["description"] = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
+							["description"] = "~L.THIS_WAS_OBTAINED_FROM_KILLING_KEL_THUZAD_IN",
 							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Not be available in SOD.
 						})),
 					}),
@@ -1619,7 +1636,7 @@ applyclassicphase(PHASE_SIX,
 							},
 						}),
 						q(9233, {	-- Omarion's Handbook
-							["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
+							["description"] = "~L.YOU_MUST_NOT_HAVE_A_PROFESSION_ABOVE_270_SKILL",
 							["provider"] = { "i", 22719 },	-- Omarion's Handbook
 							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 							["lvl"] = 60,
@@ -1794,7 +1811,7 @@ applyclassicphase(PHASE_SIX,
 						i(22375),	-- Wartorn Plate Scrap
 						-- #endif
 						i(23055, {	-- Word of Thawing
-							["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+							["description"] = "~L.THESE_CAN_BE_USED_TO_LOOT_THE_FROZEN_RUNES",
 						}),
 						i(23221),	-- Misplaced Servo Arm
 						i(23044),	-- Harbinger of Doom
@@ -1814,7 +1831,7 @@ applyclassicphase(PHASE_SIX,
 						i(22682),	-- Frozen Rune
 						-- #else
 						o(181287, {	-- Frozen Rune
-							["description"] = "Use a Word of Thawing on this to collect 3-6 Frozen Runes.",
+							["description"] = "~L.USE_A_WORD_OF_THAWING_ON_THIS_TO_COLLECT_3_6",
 							["cost"] = { { "i", 23055, 1 } },	-- Word of Thawing
 							["groups"] = {
 								i(22682),	-- Frozen Rune
@@ -2014,7 +2031,7 @@ applyclassicphase(PHASE_SIX,
 								["timeline"] = { ADDED_1_11_1 },
 								["groups"] = {
 									i(22719, {	-- Omarion's Handbook
-										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
+										["description"] = "~L.NON_CRAFTERS_CAN_TAKE_HIS_HANDBOOK_TO_CRAFTSMAN",
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 									}),
 									r(28208, {	-- Glacial Cloak (RECIPE!)
@@ -2172,7 +2189,7 @@ applyclassicphase(PHASE_SIX,
 									i(23045),	-- Shroud of Dominion
 									i(23072, {	-- Fists of the Unrelenting
 										-- #if BEFORE TBC
-										["description"] = "These were made available after the TBC Prepatch.",
+										["description"] = "~L.THESE_WERE_MADE_AVAILABLE_AFTER_THE_TBC",
 										-- #endif
 										["timeline"] = { CREATED_1_11_1, ADDED_2_0_1, REMOVED_3_0_2 },
 									}),
@@ -3756,7 +3773,7 @@ applyclassicphase(PHASE_SIX,
 								},
 							}),
 							q(9233, {	-- Omarion's Handbook
-								["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
+								["description"] = "~L.YOU_MUST_NOT_HAVE_A_PROFESSION_ABOVE_270_SKILL",
 								["provider"] = { "i", 22719 },	-- Omarion's Handbook
 								["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 								["lvl"] = 60,
@@ -4126,12 +4143,12 @@ applyclassicphase(PHASE_SIX,
 							i(22373),	-- Wartorn Leather Scrap
 							i(22375),	-- Wartorn Plate Scrap
 							i(237773, {	-- Word of Thawing
-								["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+								["description"] = "~L.THESE_CAN_BE_USED_TO_LOOT_THE_FROZEN_RUNES",
 							}),
 						}),
 						n(TREASURES, {
 							o(181287, {	-- Frozen Rune
-								["description"] = "Use a Word of Thawing on this to collect 3-6 Frozen Runes.",
+								["description"] = "~L.USE_A_WORD_OF_THAWING_ON_THIS_TO_COLLECT_3_6",
 								["cost"] = { { "i", 237773, 1 } },	-- Word of Thawing
 								["groups"] = {
 									i(236656),	-- Frozen Rune
@@ -4352,7 +4369,7 @@ applyclassicphase(PHASE_SIX,
 									["timeline"] = { ADDED_1_11_1 },
 									["groups"] = {
 										i(22719, {	-- Omarion's Handbook
-											["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
+											["description"] = "~L.NON_CRAFTERS_CAN_TAKE_HIS_HANDBOOK_TO_CRAFTSMAN",
 											["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										}),
 										r(28208, {	-- Glacial Cloak (RECIPE!)

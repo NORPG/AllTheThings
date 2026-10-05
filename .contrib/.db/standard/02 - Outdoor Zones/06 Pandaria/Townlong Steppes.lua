@@ -805,7 +805,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30933, {	-- Seeking Father
-						["description"] = "This quest is not always available due to zone phasing issues.",
+						["description"] = createLocalizationString({
+							readable = "This quest is not always available due to zone phasing issues.",
+							constant = "THIS_QUEST_IS_NOT_ALWAYS_AVAILABLE_DUE_TO_ZONE",
+							export = true,
+							text = {
+								en = "This quest is not always available due to zone phasing issues.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "由于区域相位问题，此任务并非始终可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 30932,	-- Father's Footsteps
 						["qg"] = 65341,	-- Ku-Mo
 						["coord"] = { 48.6, 71.0, TOWNLONG_STEPPES },
@@ -915,37 +932,88 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(31127, {	-- The Challenger's Ring: Chao the Voice
-						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
+						["description"] = createLocalizationString({
+							readable = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
+							constant = "ONLY_AVAILABLE_WHEN_CFFFFD700YAUNGOL_R_THEMED",
+							export = true,
+							text = {
+								en = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅当|cFFFFD700野牛人|r主题日常任务可用时开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31220, {	-- The Challenger's Ring: Hawkmaster Nurong
-						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
+						["description"] = createLocalizationString({
+							readable = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
+							constant = "ONLY_AVAILABLE_WHEN_CFFFFD700MANTID_R_THEMED",
+							export = true,
+							text = {
+								en = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅当|cFFFFD700螳螂妖|r主题日常任务可用时开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31128, {	-- The Challenger's Ring: Lao-Chin the Iron Belly
-						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
+						["description"] = "~L.ONLY_AVAILABLE_WHEN_CFFFFD700YAUNGOL_R_THEMED",
 						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31038, {	-- The Challenger's Ring: Snow Blossom
-						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
+						["description"] = createLocalizationString({
+							readable = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
+							constant = "ONLY_AVAILABLE_WHEN_CFFFFD700MOGU_R_THEMED",
+							export = true,
+							text = {
+								en = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅当|cFFFFD700魔古|r主题日常任务可用时开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31221, {	-- The Challenger's Ring: Tenwu of the Red Smoke
-						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
+						["description"] = "~L.ONLY_AVAILABLE_WHEN_CFFFFD700MANTID_R_THEMED",
 						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31104, {	-- The Challenger's Ring: Yalia Sagewhisper
-						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
+						["description"] = "~L.ONLY_AVAILABLE_WHEN_CFFFFD700MOGU_R_THEMED",
 						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
@@ -1389,7 +1457,24 @@ root(ROOTS.Zones, {
 					})),
 					n(66900, {	-- Huggalon the Heart Watcher
 						["coord"] = { 65.6, 23.8, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
-						["description"] = "Located in the catacombs.",
+						["description"] = createLocalizationString({
+							readable = "Located in the catacombs.",
+							constant = "LOCATED_IN_THE_CATACOMBS",
+							export = true,
+							text = {
+								en = "Located in the catacombs.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于墓穴中。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(90067),	-- B. F. F. Necklace (TOY!)
 						},
@@ -1502,12 +1587,46 @@ root(ROOTS.Zones, {
 							{ 56.5, 64.7, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 							{ 64.9, 21.5, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 						},
-						["description"] = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
+						["description"] = createLocalizationString({
+							readable = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
+							constant = "ENTRANCE_IS_AT_CFFFFD70032_6_61_8_R_THERE_ARE_4",
+							export = true,
+							text = {
+								en = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "入口位于|cFFFFD70032.6 61.8|r。有 4 个可能的刷新点。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = { i(86516) },	-- Fragment of Dread
 					}),
 					o(213959, {	-- Hardened Sap of Kri'vess
 						["questID"] = 31424,
-						["description"] = "Located all around Kri'vess.",
+						["description"] = createLocalizationString({
+							readable = "Located all around Kri'vess.",
+							constant = "LOCATED_ALL_AROUND_KRI_VESS",
+							export = true,
+							text = {
+								en = "Located all around Kri'vess.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "分布在克里维斯各处。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 53.9, 58.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(86517),	-- Hardened Sap of Kri'vess

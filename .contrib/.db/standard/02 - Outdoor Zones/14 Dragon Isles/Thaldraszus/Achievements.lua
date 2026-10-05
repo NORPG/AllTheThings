@@ -46,7 +46,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			ach(16518),	-- Explore Thaldraszus
 			ach(16634, {	-- Framing a New Perspective
-				["description"] = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
+				["description"] = createLocalizationString({
+					readable = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
+					constant = "EXACT_POINT_IN_THE_WORLD_WILL_BE_WITHIN_A_LIGHT",
+					export = true,
+					text = {
+						en = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在正确位置附近使用“自拍神器 MkII”时，世界中的确切地点会位于一道浅粉色光束之内。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					crit(55994, {	-- The Seat of the Aspects
 						["coord"] = { 56.1, 44.4, VALDRAKKEN },

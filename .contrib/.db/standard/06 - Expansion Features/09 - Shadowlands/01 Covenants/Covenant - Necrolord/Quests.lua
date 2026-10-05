@@ -89,7 +89,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 70.4, 27.7, MALDRAXXUS },
 				["groups"] = {
 					i(183394, {	-- Discarded Grimoire (CI!)
-						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+						["description"] = "~L.THIS_MAY_DROP_FOR_ANY_CHARACTER_ON_YOUR_ACCOUNT",
 					}),
 				},
 			}),
@@ -140,7 +140,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			q(58504, {	-- Accusatory Missive
-				["description"] = "Requires Renown 17.",
+				["description"] = "~L.REQUIRES_RENOWN_17",
 				["sourceQuests"] = { 62161 },	-- Blood from a Bone
 				["provider"] = { "n", 161907 },	-- Baroness Draka
 				["coord"] = { 49.8, 50.6, SEAT_OF_THE_PRIMUS },
@@ -258,7 +258,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58833, {	-- Calling in All Favors
-				["description"] = "Requires Renown 20.",
+				["description"] = "~L.REQUIRES_RENOWN_20",
 				["sourceQuests"] = { 62391 },	-- Mobilize Maldraxxus
 				["provider"] = { "n", 161907 },	-- Baroness Draka
 				["coord"] = { 49.6, 50.6, SEAT_OF_THE_PRIMUS },
@@ -277,7 +277,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
 				["groups"] = {
 					i(183397, {	-- Sorcerer's Blade (CI!)
-						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+						["description"] = "~L.THIS_MAY_DROP_FOR_ANY_CHARACTER_ON_YOUR_ACCOUNT",
 					}),
 				},
 			}),
@@ -386,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 161474 },	-- Baroness Draka
 			}),
 			q(59555, {	-- Enemy at the Door
-				["description"] = "Requires Renown 5.",
+				["description"] = "~L.REQUIRES_RENOWN_5",
 				["sourceQuests"] = { 62448 },	-- Securing the House
 				["provider"] = { "n", 161907 },	-- Baroness Draka
 				["coord"] = { 49.6, 50.7, SEAT_OF_THE_PRIMUS },
@@ -420,7 +420,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 49.7, 50.6, SEAT_OF_THE_PRIMUS },
 			}),
 			q(62169, {	-- Eyes to the Sky
-				["description"] = "Requires Renown 8.",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 8.",
+					constant = "REQUIRES_RENOWN_8",
+					export = true,
+					text = {
+						en = "Requires Renown 8.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 8。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 57648, },	-- The Impossible Plan
 				["provider"] = { "n", 161907 },	-- Baroness Draka
 				["coord"] = { 49.6, 50.4, SEAT_OF_THE_PRIMUS },
@@ -522,7 +539,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 67.9, 30.6, MALDRAXXUS },
 				["groups"] = {
 					i(183399, {	-- Ritualist's Mantle (CI!)
-						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+						["description"] = "~L.THIS_MAY_DROP_FOR_ANY_CHARACTER_ON_YOUR_ACCOUNT",
 					}),
 				},
 			}),
@@ -542,24 +559,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 44.3, 28.3, 1652 },	-- Vault of Souls
 			}),
 			q(63343, {	-- Necrolord Tactician
-				["description"] = "Requires Renown 22.",
+				["description"] = "~L.REQUIRES_RENOWN_22",
 				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64084, {	-- Necrolord Tactician
-				["description"] = "Requires Renown 59.",
+				["description"] = "~L.REQUIRES_RENOWN_59",
 				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 			}),
 			q(63342, {	-- Necrolord Veteran
-				["description"] = "Requires Renown 7.",
+				["description"] = "~L.REQUIRES_RENOWN_7",
 				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64324, {	-- Necrolord Veteran #2
-				["description"] = "Requires Renown 43.",
+				["description"] = "~L.REQUIRES_RENOWN_43",
 				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 			}),
@@ -708,7 +725,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 71.7, 32.9, MALDRAXXUS },
 				["groups"] = {
 					i(183401, {	-- Amethystine Dye (CI!)
-						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+						["description"] = "~L.THIS_MAY_DROP_FOR_ANY_CHARACTER_ON_YOUR_ACCOUNT",
 					}),
 					o(358326, {	-- Amethystine Powder
 						i(183400),	-- Amethystine Powder (QI!)
@@ -897,7 +914,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 27.3, 23.8, MALDRAXXUS },
 			}),
 			q(59625, {	-- The Only Cure
-				["description"] = "Requires Renown 11.",
+				["description"] = "~L.REQUIRES_RENOWN_11",
 				["sourceQuests"] = { 58820 },	-- Bindings of Fleshcrafting
 				["provider"] = { "n", 161988 },	-- Alexandros Mograine
 				["coord"] = { 49.0, 51.6, SEAT_OF_THE_PRIMUS },
@@ -949,7 +966,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(61739, {	-- The Wayward Baron
-				["description"] = "Requires Renown 20.",
+				["description"] = "~L.REQUIRES_RENOWN_20",
 				["sourceQuests"] = { 62388 },	-- House of Rituals
 				["provider"] = { "n", 173172 },	-- Balmedar
 				["coord"] = { 49.7, 49.8, SEAT_OF_THE_PRIMUS },
@@ -1010,7 +1027,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62864, {	-- Return Lost Souls (10 soul version)
-				["description"] = "Requires Renown 15.",
+				["description"] = "~L.REQUIRES_RENOWN_15",
 				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
@@ -1018,7 +1035,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62865, {	-- Return Lost Souls (15 soul version)
-				["description"] = "Requires Renown 24.",
+				["description"] = "~L.REQUIRES_RENOWN_24",
 				-- ["sourceQuests"] = {  },	-- TODO
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
@@ -1026,7 +1043,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["isWeekly"] = true,
 			}),
 			q(62866, {	-- Return Lost Souls (20 soul version)
-				["description"] = "Requires Renown 32.",
+				["description"] = "~L.REQUIRES_RENOWN_32",
 				["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },

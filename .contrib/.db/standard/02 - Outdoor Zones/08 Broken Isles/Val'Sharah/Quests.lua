@@ -65,7 +65,24 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					},
 				}),
 				q(38323, {	-- Return to the Grove
-					["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests. Turning in whichever version you pick up should give you credit for all three.",
+					["description"] = createLocalizationString({
+						readable = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests. Turning in whichever version you pick up should give you credit for all three.",
+						constant = "YOU_WILL_ONLY_BE_ABLE_TO_PICK_UP_ONE_RETURN_TO",
+						export = true,
+						text = {
+							en = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests. Turning in whichever version you pick up should give you credit for all three.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你只能接到一个“重返林地”任务，具体取决于你完成任务的顺序。交付你接到的那个版本后，应该会同时计入全部三个。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 40573 },	-- The Nightmare Lord
 					["provider"] = { "n", 100573 },	-- Evelle Nightwhisper
 					["coord"] = { 62.2, 76.2, VALSHARAH },
@@ -147,7 +164,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					},
 				}),
 				q(38148, {	-- Return to the Grove
-					["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests. Turning in whichever version you pick up should give you credit for all three.",
+					["description"] = "~L.YOU_WILL_ONLY_BE_ABLE_TO_PICK_UP_ONE_RETURN_TO",
 					["sourceQuests"] = { 38147 },	-- Entangled Dreams
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
 					["coords"] = {
@@ -189,7 +206,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["coord"] = { 48.9, 70.1, VALSHARAH },
 				}),
 				q(38322, {	-- Return to the Grove
-					["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests. Turning in whichever version you pick up should give you credit for all three.",
+					["description"] = "~L.YOU_WILL_ONLY_BE_ABLE_TO_PICK_UP_ONE_RETURN_TO",
 					["sourceQuests"] = {
 						38225,	-- Death to the Witchmother
 						38235,	-- Solid as a Rock
@@ -768,7 +785,24 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["coord"] = { 69.5, 49.4, VALSHARAH },
 				}),
 				q(38889, {	-- Adopting the Adorable
-					["description"] = "You have to kill Jinikki the Puncturer to get this quest.",
+					["description"] = createLocalizationString({
+						readable = "You have to kill Jinikki the Puncturer to get this quest.",
+						constant = "YOU_HAVE_TO_KILL_JINIKKI_THE_PUNCTURER_TO_GET",
+						export = true,
+						text = {
+							en = "You have to kill Jinikki the Puncturer to get this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你需要击杀穿刺者吉尼基才能获得此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 93677,	-- Shivering Ashmaw Cub
 					["coord"] = { 53.1, 87.9, VALSHARAH },	-- cave entrance
 					["crs"] = { 93686 },	-- Jinikki the Puncturer

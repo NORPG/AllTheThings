@@ -27,7 +27,24 @@ end
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SCRAP, {
-			["description"] = "Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstables and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",
+			["description"] = createLocalizationString({
+				readable = "Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstables and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",
+				constant = "FREQUENTLY_AROUND_THE_ZONE_A_PILE_OF_SCRAP_WILL",
+				export = true,
+				text = {
+					en = "Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstables and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "该区域各处经常会在地图上标记出一堆废料，可供挖掘。开始后有两分钟时间，尽可能多地挖掘，清除障碍并躲避投射物。名望可解锁新的掉落和效率升级，挖掘进度达到最大时有时会刷出一只稀有怪物。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				FromSCRAP(n(ACHIEVEMENTS, {
 					ach(41590),	-- No Littering
@@ -145,7 +162,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				FromSCRAP(n(RARES, {
 					n(234621, {	-- Gallagio Garbage <Luxury Trash>
-						["description"] = "Can spawn when players fill the 'Trash Shoveled' progress bar to 500 during a S.C.R.A.P. Job event in Undermine.\n\nNote: All loot can drop even when the daily flag is saved.",
+						["description"] = createLocalizationString({
+							readable = "Can spawn when players fill the 'Trash Shoveled' progress bar to 500 during a S.C.R.A.P. Job event in Undermine.\n\nNote: All loot can drop even when the daily flag is saved.",
+							constant = "CAN_SPAWN_WHEN_PLAYERS_FILL_THE_TRASH_SHOVELED",
+							export = true,
+							text = {
+								en = "Can spawn when players fill the 'Trash Shoveled' progress bar to 500 during a S.C.R.A.P. Job event in Undermine.\n\nNote: All loot can drop even when the daily flag is saved.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在安德麦的 S.C.R.A.P. 工作事件期间，当玩家将“已铲除垃圾”进度条填满至 500 时可能刷新。\n\n注意：即使已保存日常进度标记，所有战利品仍然可以掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 87007,
 						["isDaily"] = true,
 						["groups"] = {
@@ -174,19 +208,53 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					--
 					i(236161, {	-- Broiler Supreme 300 (COSMETIC!)
-						["description"] = "Can randomly drop while scraping.",
+						["description"] = createLocalizationString({
+							readable = "Can randomly drop while scraping.",
+							constant = "CAN_RANDOMLY_DROP_WHILE_SCRAPING",
+							export = true,
+							text = {
+								en = "Can randomly drop while scraping.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "拆解时可能随机掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(236181, {	-- Center-Stage Remover (COSMETIC!)
-						["description"] = "Can randomly drop while scraping.",
+						["description"] = "~L.CAN_RANDOMLY_DROP_WHILE_SCRAPING",
 					}),
 					i(236178, {	-- Gammy's Hand-Me-Down Bow (COSMETIC!)
-						["description"] = "Can randomly drop while scraping.",
+						["description"] = "~L.CAN_RANDOMLY_DROP_WHILE_SCRAPING",
 					}),
 					i(236191, {	-- Mechanic's Best Motivator (COSMETIC!)
-						["description"] = "Can randomly drop while scraping.",
+						["description"] = "~L.CAN_RANDOMLY_DROP_WHILE_SCRAPING",
 					}),
 					i(233246, {	-- Gunk-Covered Thingy
-						["description"] = "Requires the 'Scrappy S.C.R.A.P.per III' perk unlocked by reaching Renown 11 with The Cartels of Undermine.\n\nThen you have a chance to loot them from the progress-based reward containers that will appear for participating players when the 2-minute timer of their actual S.C.R.A.P. job ends.",
+						["description"] = createLocalizationString({
+							readable = "Requires the 'Scrappy S.C.R.A.P.per III' perk unlocked by reaching Renown 11 with The Cartels of Undermine.\n\nThen you have a chance to loot them from the progress-based reward containers that will appear for participating players when the 2-minute timer of their actual S.C.R.A.P. job ends.",
+							constant = "REQUIRES_THE_SCRAPPY_S_C_R_A_P_PER_III_PERK",
+							export = true,
+							text = {
+								en = "Requires the 'Scrappy S.C.R.A.P.per III' perk unlocked by reaching Renown 11 with The Cartels of Undermine.\n\nThen you have a chance to loot them from the progress-based reward containers that will appear for participating players when the 2-minute timer of their actual S.C.R.A.P. job ends.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要与安德麦财阀达到名望 11 解锁的“S.C.R.A.P. 好手 III”特长。\n\n之后，当实际 S.C.R.A.P. 工作的 2 分钟计时结束时，参与玩家会出现基于进度的奖励容器，你有几率从中拾取它们。",
+								-- TODO: tw = "",
+							},
+						}),
 						["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 11 },
 					}),
 				})),

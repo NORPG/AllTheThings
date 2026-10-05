@@ -472,7 +472,24 @@ root(ROOTS.Zones, {
 				}),
 				n(109562, {	-- Sundries Merchant
 					["coord"] = { 50.0, 77.3, SURAMAR },
-					["description"] = "You must complete the Suramar quest chain starting with |cffffff00Magic Message|r up to completing |cffffff00Masquerade|r in order to interact with this merchant.",
+					["description"] = createLocalizationString({
+						readable = "You must complete the Suramar quest chain starting with |cffffff00Magic Message|r up to completing |cffffff00Masquerade|r in order to interact with this merchant.",
+						constant = "YOU_MUST_COMPLETE_THE_SURAMAR_QUEST_CHAIN",
+						export = true,
+						text = {
+							en = "You must complete the Suramar quest chain starting with |cffffff00Magic Message|r up to completing |cffffff00Masquerade|r in order to interact with this merchant.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须完成从|cffffff00魔法讯息|r开始到完成|cffffff00假面舞会|r为止的苏拉玛任务链，才能与该商人互动。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(147768, {	-- Suramarian Sapphire (QI!)
 							["b"] = 1,	-- Force BoP since this is only available as a quest item

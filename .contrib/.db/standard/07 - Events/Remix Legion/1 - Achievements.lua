@@ -9,7 +9,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(42503),	-- Artifact, Remixed III
 		ach(42565, {	-- Bringing Order to the Isles
 		-- Added with Phase3 Legion Remix Release	-- Gold 5th Nov 2025
-			["description"] = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",
+			["description"] = createLocalizationString({
+				readable = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",
+				constant = "REQUIRES_COMPLETION_OF_ALL_12_CLASS_ORDER_HALL",
+				export = true,
+				text = {
+					en = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "需要完成全部 12 个职业大厅战役，包括破碎海滩章节，直到获得你的职业坐骑。\n\n德鲁伊可以跳过部分地下城任务。\n\n潜行者必须完成每一个任务，包括招募每一位追随者。",
+					-- TODO: tw = "",
+				},
+			}),
 			["OnTooltip"] = [[function(t, tooltipInfo)
 				tinsert(tooltipInfo, { left = " " });
 				local index = #tooltipInfo + 1;
@@ -93,12 +110,46 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		ach(11065, {	-- It All Makes Sense Now (Originally under Legion PreLaunch Event)
-			["description"] = "Locate one of the many Doomsayers in Dalaran (Legion Remix).\nSpeak with them and take a pamphlet.\nNormally there is a 20-minute cooldown between acquiring pamphlets, but you circumvent that with the death mechanic:\n\nFind a Doomsayer near a graveyard.\nFly up into the sky and then fall to the ground to die.\nRelease spirit and talk to the Spirit Healer to take Resurrection sickness.\nFly back to the Doomsayer and talk to him again for a new pamphlet.\nRepeat until done.",
+			["description"] = createLocalizationString({
+				readable = "Locate one of the many Doomsayers in Dalaran (Legion Remix).\nSpeak with them and take a pamphlet.\nNormally there is a 20-minute cooldown between acquiring pamphlets, but you circumvent that with the death mechanic:\n\nFind a Doomsayer near a graveyard.\nFly up into the sky and then fall to the ground to die.\nRelease spirit and talk to the Spirit Healer to take Resurrection sickness.\nFly back to the Doomsayer and talk to him again for a new pamphlet.\nRepeat until done.",
+				constant = "LOCATE_ONE_OF_THE_MANY_DOOMSAYERS_IN_DALARAN",
+				export = true,
+				text = {
+					en = "Locate one of the many Doomsayers in Dalaran (Legion Remix).\nSpeak with them and take a pamphlet.\nNormally there is a 20-minute cooldown between acquiring pamphlets, but you circumvent that with the death mechanic:\n\nFind a Doomsayer near a graveyard.\nFly up into the sky and then fall to the ground to die.\nRelease spirit and talk to the Spirit Healer to take Resurrection sickness.\nFly back to the Doomsayer and talk to him again for a new pamphlet.\nRepeat until done.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在达拉然找到众多末日预言者中的一位（军团再临：幻境新生）。\n与他们交谈并拿取一份传单。\n通常获取传单之间有 20 分钟的冷却时间，但你可以利用死亡机制绕过它：\n\n在墓地附近找一位末日预言者。\n飞到空中然后摔到地面死亡。\n释放灵魂并与灵魂医者交谈以获得复活虚弱。\n飞回末日预言者处再次与他交谈，获取一份新传单。\n重复直到完成。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { LEGION_DALARAN, STORMWIND_CITY, ORGRIMMAR },
 		}),
 		ach(42593),	-- Pillars of Creation
 		ach(61339, {	-- Putting the Finite in Infinite
-			["description"] = "Earned upon completing a +49 or higher Keystone in time.",	-- There is some reaching 999 Infinite Power stuff, but everyone will do a dungeon at +49 before reaching 999 power
+			["description"] = createLocalizationString({
+				readable = "Earned upon completing a +49 or higher Keystone in time.",
+				constant = "EARNED_UPON_COMPLETING_A_49_OR_HIGHER_KEYSTONE",
+				export = true,
+				text = {
+					en = "Earned upon completing a +49 or higher Keystone in time.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在限时内完成 +49 或更高层数的史诗钥石后获得。",
+					-- TODO: tw = "",
+				},
+			}),	-- There is some reaching 999 Infinite Power stuff, but everyone will do a dungeon at +49 before reaching 999 power
 			["maps"] = {
 				751,	-- Black Rook Hold
 				845,	-- Cathedral of Eternal Night

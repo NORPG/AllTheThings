@@ -111,7 +111,24 @@ root(ROOTS.BlackMarket, bubbleDown({["u"] = BLACK_MARKET }, timelineSelf({["time
 	}),
 	n(ARMOR, bubbleDown({
 		-- #if BEFORE 6.0.2
-		["description"] = "Only available on the BMAH for a limited time!",
+		["description"] = createLocalizationString({
+			readable = "Only available on the BMAH for a limited time!",
+			constant = "ONLY_AVAILABLE_ON_THE_BMAH_FOR_A_LIMITED_TIME",
+			export = true,
+			text = {
+				en = "Only available on the BMAH for a limited time!",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "仅在黑市拍卖行限时上架！",
+				-- TODO: tw = "",
+			},
+		}),
 		["IgnoreWarnings"] = true,
 		-- #endif
 		["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
@@ -233,7 +250,24 @@ root(ROOTS.BlackMarket, bubbleDown({["u"] = BLACK_MARKET }, timelineSelf({["time
 		i(34492),	-- Rocket Chicken (PET!)
 		i(45606),	-- Sen'jin Fetish (PET!)
 		i(69992, {	-- Shimmering Wyrmling (PET!)
-			["description"] = "Can also be bought from the Wrath of the Lich King Argent Tournament Vendor.\n\nBlizzard made 3 different Items which all learn the same pet.",
+			["description"] = createLocalizationString({
+				readable = "Can also be bought from the Wrath of the Lich King Argent Tournament Vendor.\n\nBlizzard made 3 different Items which all learn the same pet.",
+				constant = "CAN_ALSO_BE_BOUGHT_FROM_THE_WRATH_OF_THE_LICH",
+				export = true,
+				text = {
+					en = "Can also be bought from the Wrath of the Lich King Argent Tournament Vendor.\n\nBlizzard made 3 different Items which all learn the same pet.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "也可从巫妖王之怒的银色锦标赛商人处购买。\n\n暴雪制作了 3 件不同的物品，它们学习的都是同一只宠物。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		i(94152, {	-- Son of Animus (PET!)
 			["timeline"] = { ADDED_6_0_2 },
@@ -426,7 +460,24 @@ root(ROOTS.BlackMarket, bubbleDown({["u"] = BLACK_MARKET }, timelineSelf({["time
 		i(50379),	-- Battered Hilt (Alliance)
 		i(50380),	-- Battered Hilt (Horde)
 		i(110678, {	-- Darkmoon Ticket Fanny Pack
-			["description"] = "Contains 250-500 Darkmoon Faire Tickets",
+			["description"] = createLocalizationString({
+				readable = "Contains 250-500 Darkmoon Faire Tickets",
+				constant = "CONTAINS_250_500_DARKMOON_FAIRE_TICKETS",
+				export = true,
+				text = {
+					en = "Contains 250-500 Darkmoon Faire Tickets",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "内含 250-500 枚暗月马戏团奖券",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_6_0_2 },
 			["groups"] = {
 				currency(515),	-- Darkmoon Prize Ticket [Cataclysm Version]

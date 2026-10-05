@@ -1234,7 +1234,24 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(17502),	-- Frostwolf Soldier's Medal
 				i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
 					-- #if AFTER LEGION
-					["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
+					["description"] = createLocalizationString({
+						readable = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
+						constant = "REQUIRED_FOR_THE_RETRIBUTION_PALADIN_HIDDEN",
+						export = true,
+						text = {
+							en = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "为惩戒圣骑士隐藏神器外观所需。\n\n从奥特兰克山谷的玩家尸体上拾取。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				i(17423),	-- Storm Crystal

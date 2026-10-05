@@ -9,7 +9,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13083, {	-- Better, Faster, Stronger
-				["description"] = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
+				["description"] = createLocalizationString({
+					readable = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
+					constant = "COLLECT_AND_HAVE_ACTIVE_WITCH_S_BOONS",
+					export = true,
+					text = {
+						en = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "收集并保持激活以下女巫的恩赐：卓越、额外活力、愤怒和坚韧，它们有 5 分钟计时，以及减益女巫的诅咒：蝾螈。减益可能会移除你的一个增益。这些坐标为可能的酒水刷新点。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 25.00, 53.35, DRUSTVAR },
 					{ 22.64, 54.18, DRUSTVAR },
@@ -222,7 +239,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12557),	-- Explore Drustvar
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Turn in all items at 44.90, 27.41.",
+				["description"] = createLocalizationString({
+					readable = "Turn in all items at 44.90, 27.41.",
+					constant = "TURN_IN_ALL_ITEMS_AT_44_90_27_41",
+					export = true,
+					text = {
+						en = "Turn in all items at 44.90, 27.41.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在 44.90, 27.41 处上交所有物品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 44.90, 27.41, DRUSTVAR },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
@@ -230,7 +264,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(13087, {	-- Sausage Sampler
-				["description"] = "Can be completed as Horde by purchasing items on the AH.",
+				["description"] = createLocalizationString({
+					readable = "Can be completed as Horde by purchasing items on the AH.",
+					constant = "CAN_BE_COMPLETED_AS_HORDE_BY_PURCHASING_ITEMS",
+					export = true,
+					text = {
+						en = "Can be completed as Horde by purchasing items on the AH.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "部落玩家可通过在拍卖行购买物品来完成。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			pvp(ach(12579)),	-- Tour of Duty: Drustvar
 			ach(12995),	-- Treasures of Drustvar

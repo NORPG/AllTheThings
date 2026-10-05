@@ -208,7 +208,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-				["description"] = "The following can drop from the final boss of any Celestial dungeon.",
+				["description"] = createLocalizationString({
+					readable = "The following can drop from the final boss of any Celestial dungeon.",
+					constant = "THE_FOLLOWING_CAN_DROP_FROM_THE_FINAL_BOSS_OF_2",
+					export = true,
+					text = {
+						en = "The following can drop from the final boss of any Celestial dungeon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "以下物品可以在任意天神地下城的最终首领处掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = CELESTIAL_DUNGEON_MAPS,
 				["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES,
 				["groups"] = appendGroups(
@@ -328,21 +345,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 				-- #if AFTER 5.5.5
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER, {
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+					["description"] = createLocalizationString({
+						readable = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+						constant = "TWO_TOKENS_DROP_PER_BOSS_IN_CELESTIAL_AND_THE",
+						export = true,
+						text = {
+							en = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在天神难度下，每个首领掉落两个代币；如果玩家已击败地下城中的所有其他首领，每个地下城的最终首领还会额外掉落三个代币。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = CELESTIAL_DUNGEON_MAPS,
 					["crs"] = CELESTIAL_DUNGEON_BOSSES,
 				})),
 				-- #elseif AFTER 5.5.3
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_SHARD, {
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+					["description"] = "~L.TWO_TOKENS_DROP_PER_BOSS_IN_CELESTIAL_AND_THE",
 					["maps"] = CELESTIAL_DUNGEON_MAPS,
 					["crs"] = CELESTIAL_DUNGEON_BOSSES,
 				})),
 				-- #else
 				currency(AUGUST_STONE_FRAGMENT, {
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+					["description"] = "~L.TWO_TOKENS_DROP_PER_BOSS_IN_CELESTIAL_AND_THE",
 					["maps"] = CELESTIAL_DUNGEON_MAPS,
 					["crs"] = CELESTIAL_DUNGEON_BOSSES,
 				}),
@@ -350,11 +384,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 				i(87208, {	-- Sigil of Power
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 					-- #if BEFORE 5.5.3
-					["description"] = "This can drop from any \"physical\" last boss of a Celestial dungeon.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from any \"physical\" last boss of a Celestial dungeon.",
+						constant = "THIS_CAN_DROP_FROM_ANY_PHYSICAL_LAST_BOSS_OF_A",
+						export = true,
+						text = {
+							en = "This can drop from any \"physical\" last boss of a Celestial dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从任意天神地下城的“物理”类最终首领掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = CELESTIAL_DUNGEON_MAPS_SIGIL_OF_POWER,
 					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES_SIGIL_OF_POWER,
 					-- #else
-					["description"] = "This can drop from any last boss of a Celestial dungeon.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from any last boss of a Celestial dungeon.",
+						constant = "THIS_CAN_DROP_FROM_ANY_LAST_BOSS_OF_A_CELESTIAL",
+						export = true,
+						text = {
+							en = "This can drop from any last boss of a Celestial dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从任何天神地下城的最终首领身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = CELESTIAL_DUNGEON_MAPS,
 					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES,
 					-- #endif
@@ -362,11 +430,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 				i(87209, {	-- Sigil of Wisdom
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 					-- #if BEFORE 5.5.3
-					["description"] = "This can drop from any \"magical\" last boss of a Celestial dungeon.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from any \"magical\" last boss of a Celestial dungeon.",
+						constant = "THIS_CAN_DROP_FROM_ANY_MAGICAL_LAST_BOSS_OF_A",
+						export = true,
+						text = {
+							en = "This can drop from any \"magical\" last boss of a Celestial dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从任意天神地下城的“魔法”类最终首领掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = CELESTIAL_DUNGEON_MAPS_SIGIL_OF_WISDOM,
 					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES_SIGIL_OF_WISDOM,
 					-- #else
-					["description"] = "This can drop from any last boss of a Celestial dungeon.",
+					["description"] = "~L.THIS_CAN_DROP_FROM_ANY_LAST_BOSS_OF_A_CELESTIAL",
 					["maps"] = CELESTIAL_DUNGEON_MAPS,
 					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES,
 					-- #endif

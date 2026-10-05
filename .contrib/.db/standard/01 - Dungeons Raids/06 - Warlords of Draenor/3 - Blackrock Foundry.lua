@@ -719,7 +719,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
+						["description"] = createLocalizationString({
+							readable = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
+							constant = "THE_QUESTGIVER_IS_HIDDEN_BEHIND_A_LOAD_OF_BOXES",
+							export = true,
+							text = {
+								en = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "任务给予者藏在钢铁女武神右侧的一堆箱子和板条箱后面。\n\n完成此任务将让你每周立即获得普通难度黑手的进入权限。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = {
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
@@ -909,7 +926,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(37030, {	-- Sigil of the Black Hand (Heroic)
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							constant = "THE_QUESTGIVER_IS_HIDDEN_BEHIND_A_LOAD_OF_BOXES_2",
+							export = true,
+							text = {
+								en = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "任务给予者藏在钢铁女武神右侧的一堆箱子和板条箱后面。\n\n完成此任务将让你每周立即获得英雄难度黑手的进入权限。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = { 37031 },	-- Sigil of the Black Hand (Mythic)
 						["qg"] = 87225,	-- Goraluk Anvilcrack
 						["qis"] = {
@@ -1101,7 +1135,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
+						["description"] = createLocalizationString({
+							readable = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
+							constant = "THE_QUESTGIVER_IS_HIDDEN_BEHIND_A_LOAD_OF_BOXES_3",
+							export = true,
+							text = {
+								en = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "任务给予者藏在钢铁女武神右侧的一堆箱子和板条箱后面。\n\n完成此任务将让你每周立即获得史诗难度黑手的进入权限。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 87225,	-- Goraluk Anvilcrack
 						["qis"] = {
 							118390,	-- Ember of the Mountain (QI!)

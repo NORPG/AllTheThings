@@ -189,7 +189,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(29991),	-- Sunhawk Leggings
 					i(29997),	-- Band of the Ranger-General
 					i(30320, {	-- Bundle of Nether Spikes
-						["description"] = "Contains 6 stacks of Nether Spike arrows.",
+						["description"] = createLocalizationString({
+							readable = "Contains 6 stacks of Nether Spike arrows.",
+							constant = "CONTAINS_6_STACKS_OF_NETHER_SPIKE_ARROWS",
+							export = true,
+							text = {
+								en = "Contains 6 stacks of Nether Spike arrows.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "内含 6 组虚空尖刺箭。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 21268,	-- Netherstrand Longbow
 						["groups"] = {

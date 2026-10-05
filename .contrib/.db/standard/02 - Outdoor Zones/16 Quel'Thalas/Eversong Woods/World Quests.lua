@@ -100,7 +100,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 40.7, 61.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
 						ach(62187, {	-- Grand Magister's Sommelier
-							["description"] = "Set to 'Raid' group to complete all dialogs without completing the quest.",
+							["description"] = createLocalizationString({
+								readable = "Set to 'Raid' group to complete all dialogs without completing the quest.",
+								constant = "SET_TO_RAID_GROUP_TO_COMPLETE_ALL_DIALOGS",
+								export = true,
+								text = {
+									en = "Set to 'Raid' group to complete all dialogs without completing the quest.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "将小队转换为“团队”即可在不完成任务的情况下完成所有对话。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								crit(111945, {	-- Heron's Vision of Cloudwalking
 									["provider"] = { "n", 249861 },

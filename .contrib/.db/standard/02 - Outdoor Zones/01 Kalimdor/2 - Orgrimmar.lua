@@ -368,7 +368,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32009, {	-- Varzok
-					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
+					["description"] = createLocalizationString({
+						readable = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
+						constant = "CFFFF0000DO_NOT_UNDER_ANY_CIRCUMSTANCES_ABANDON",
+						export = true,
+						text = {
+							en = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "|CFFFF0000无论如何都不要放弃此任务，你无法再次获得它。|r",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
@@ -755,7 +772,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(62265, {	-- A New Adventure Awaits
-					["description"] = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
+					["description"] = createLocalizationString({
+						readable = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
+						constant = "THIS_QUEST_IS_AUTOMATICALLY_OFFERED_UPON",
+						export = true,
+						text = {
+							en = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在克罗米时间中达到指定等级时，此任务会自动提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { CREATED_9_0_2, ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
@@ -1012,7 +1046,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
-					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+					["description"] = createLocalizationString({
+						readable = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+						constant = "COMPLETE_THE_PREREQUISITE_QUEST_SWITCH_TO",
+						export = true,
+						text = {
+							en = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成前置任务，切换到另一条时间线，再切回燃烧的远征，即可获得该任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
@@ -1214,7 +1265,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { GOBLIN },
 				}),
 				q(27686, {	-- Forged Documents
-					["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
+					["description"] = createLocalizationString({
+						readable = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
+						constant = "AFTER_CREATING_FORGED_DOCUMENTS_WITH",
+						export = true,
+						text = {
+							en = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "用铭文制造伪造文件后，在城市中寻找可以接收它们的 NPC——该任务可能在不同的地方结束。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 63276 },	-- Forged Documents
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = INSCRIPTION,
@@ -1378,7 +1446,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(32674, {	-- I Believe You Can Fly
-					["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
+					["description"] = createLocalizationString({
+						readable = "This quest is automatically offered to Horde players upon reaching level 30.",
+						constant = "THIS_QUEST_IS_AUTOMATICALLY_OFFERED_TO_HORDE",
+						export = true,
+						text = {
+							en = "This quest is automatically offered to Horde players upon reaching level 30.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "部落玩家达到 30 级后会自动获得此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1,
@@ -1548,7 +1633,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(14086, {	-- Learn to Ride in Orgrimmar
-					["description"] = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
+					["description"] = createLocalizationString({
+						readable = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
+						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_2",
+						export = true,
+						text = {
+							en = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "开启此任务的小册子会在兽人达到指定等级时寄送到他们的邮箱。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 46880 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { ORC },
@@ -1770,7 +1872,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78197, {	-- Secrets of Undeath (2/2)
-					["description"] = "Completing this quest will allow you to meditate in the same manner as the undead.",
+					["description"] = createLocalizationString({
+						readable = "Completing this quest will allow you to meditate in the same manner as the undead.",
+						constant = "COMPLETING_THIS_QUEST_WILL_ALLOW_YOU_TO_2",
+						export = true,
+						text = {
+							en = "Completing this quest will allow you to meditate in the same manner as the undead.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成该任务后，你可以像亡灵一样冥想。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 78196,	-- Secrets of Undeath (1/2)
 					["providers"] = {
 						{ "n", 211229 },	-- Dietrich Praice
@@ -1856,7 +1975,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Pray over the Supplicant
 							["provider"] = { "n", 215096 },	-- Supplicant
-							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+							["description"] = "~L.YOU_MUST_FIRST_HAVE_YOUR_MEDITATION_BUFF_AND",
 						}),
 					},
 				})),
@@ -2016,7 +2135,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
 				q(75519, {	-- The Long Hunt
-					["description"] = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
+					["description"] = createLocalizationString({
+						readable = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
+						constant = "PROBABLY_UNDEAD_NEED_TO_COMPLETE_THE_HIDDEN",
+						export = true,
+						text = {
+							en = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "大概来说，被遗忘者需要完成“隐藏的需求”和“吾即被遗忘者”，而非被遗忘者只需完成“最忠诚者”。被遗忘者在幽暗城可接取此任务，非被遗忘者则在奥格瑞玛可接取此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						57376,	-- The Hidden Need
 						72867,	-- I Am Forsaken
@@ -2269,7 +2405,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #elseif AFTER 9.0.3
 					["groups"] = {
 						n(14720, {	-- High Overlord Saurfang
-							["description"] = "Saurfang will not give you any quests after turning in 'Warchief's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
+							["description"] = createLocalizationString({
+								readable = "Saurfang will not give you any quests after turning in 'Warchief's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
+								constant = "SAURFANG_WILL_NOT_GIVE_YOU_ANY_QUESTS_AFTER",
+								export = true,
+								text = {
+									en = "Saurfang will not give you any quests after turning in 'Warchief's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在交掉“大酋长的命令：暮光高地！”后，萨鲁法尔不会再给你任何任务。你可以在同一个房间里从伊崔格处接到任务“战争机器”，从而正确开启暮光高地引导任务线。\n\n任务“萨鲁法尔会很高兴”也是如此，后续同样要从伊崔格处通过任务“叛徒的诱饵”获得。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 					-- #endif
@@ -2344,7 +2497,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(7660, {	-- Wolf Swapping - Arctic Wolf
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2361,7 +2514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				}),
 				q(7661, {	-- Wolf Swapping - Red Wolf
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2378,7 +2531,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				}),
 				q(60963, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
-					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+					["description"] = createLocalizationString({
+						readable = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+						constant = "COMPLETE_THE_PREREQUISITE_QUEST_SWITCH_TO_2",
+						export = true,
+						text = {
+							en = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成前置任务，切换到另一条时间线，再切回巫妖王之怒，即可获得该任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 60097,	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
@@ -2685,7 +2855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
-					["description"] = "Found within the Hall of Legends.",
+					["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
 					["maps"] = { ORGRIMMAR },
 					-- #endif
 					["coords"] = {
@@ -2826,7 +2996,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(3367, {	-- Felika <Trade Supplies>
-					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
+					["description"] = "~L.THIS_NPC_WALKS_BETWEEN_THE_VALLEY_OF_WISDOM_AND",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 48.4, 47.8, ORGRIMMAR },
@@ -3156,7 +3326,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_TWELVE_GROUPS,
 					-- #if AFTER 4.2.0
-					["description"] = "Sells gear related to Cataclysm raid tier 12 (Firelands) as well as Baradin Hold.",
+					["description"] = createLocalizationString({
+						readable = "Sells gear related to Cataclysm raid tier 12 (Firelands) as well as Baradin Hold.",
+						constant = "SELLS_GEAR_RELATED_TO_CATACLYSM_RAID_TIER_12",
+						export = true,
+						text = {
+							en = "Sells gear related to Cataclysm raid tier 12 (Firelands) as well as Baradin Hold.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "出售与《大灾变》T12 团队副本（火焰之地）以及巴拉丁监狱相关的装备。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				n(3335, {	-- Hagrus <Reagents>
@@ -3255,7 +3442,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
 					-- #if AFTER 4.3.0
-					["description"] = "Sells gear related to Cataclysm raid tier 13 (Dragon Soul).",
+					["description"] = createLocalizationString({
+						readable = "Sells gear related to Cataclysm raid tier 13 (Dragon Soul).",
+						constant = "SELLS_GEAR_RELATED_TO_CATACLYSM_RAID_TIER_13",
+						export = true,
+						text = {
+							en = "Sells gear related to Cataclysm raid tier 13 (Dragon Soul).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "出售与《大灾变》T13 团队副本（巨龙之魂）相关的装备。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				n(3410, {	-- Jin'sora <Bow Merchant>
@@ -3627,7 +3831,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #else
 				n(12792, {	-- Lady Palanseer <Armor Quartermaster>
-					["description"] = "Found within the Hall of Legends.",
+					["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -4128,7 +4332,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.0, 79.8, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER 7.3.5.25961
-					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
+					["description"] = createLocalizationString({
+						readable = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
+						constant = "THIS_NPC_IS_ONLY_VISIBLE_IF_YOU_HAVE_NOT_YET",
+						export = true,
+						text = {
+							en = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有当你尚未解锁同盟种族至高岭牛头人时，此 NPC 才可见。",
+							-- TODO: tw = "",
+						},
+					}),
 					["OnUpdate"] = [[function(t,parent,defaultUpdate)
 						if _.MODE_DEBUG or (defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452]) then
 							t.visible = true;
@@ -4173,7 +4394,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(256119, {	-- Lonalo <Traveling Book Shop>
-					["description"] = "Not all items are sold each day.",
+					["description"] = createLocalizationString({
+						readable = "Not all items are sold each day.",
+						constant = "NOT_ALL_ITEMS_ARE_SOLD_EACH_DAY",
+						export = true,
+						text = {
+							en = "Not all items are sold each day.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "并非所有物品每天都有出售。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 58.6, 50.3, ORGRIMMAR },
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = HORDE_ONLY,
@@ -4512,7 +4750,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(169166, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Provisioner Jin'hake
-					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
+					["description"] = createLocalizationString({
+						readable = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
+						constant = "ONLY_SELLS_ITEMS_ONCE_THE_ACHIEVEMENT",
+						export = true,
+						text = {
+							en = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有在成就|cffebae34流放者离岛|r [14222] 完成后才会出售物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 72.6, 44.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -4537,7 +4792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
 						-- #if BEFORE WRATH
-						["description"] = "Found within the Hall of Legends.",
+						["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
 						-- #else
 						["coord"] = { 41.8, 72.6, ORGRIMMAR },
 						-- #endif
@@ -4690,7 +4945,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
-					["description"] = "Sells gear related to Cataclysm raid tier 11 (Throne of the Four Winds, Blackwing Descent, and Bastion of Twilight) as well as Baradin Hold.",
+					["description"] = createLocalizationString({
+						readable = "Sells gear related to Cataclysm raid tier 11 (Throne of the Four Winds, Blackwing Descent, and Bastion of Twilight) as well as Baradin Hold.",
+						constant = "SELLS_GEAR_RELATED_TO_CATACLYSM_RAID_TIER_11",
+						export = true,
+						text = {
+							en = "Sells gear related to Cataclysm raid tier 11 (Throne of the Four Winds, Blackwing Descent, and Bastion of Twilight) as well as Baradin Hold.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "出售与《大灾变》T11 团队副本（四风王座、黑翼血环和暮光堡垒）以及巴拉丁监狱相关的装备。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				-- #if AFTER CATA
 				n(3319, {	-- Sana <Mail Armor Merchant>
@@ -4812,7 +5084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
-					["description"] = "Found within the Hall of Legends.",
+					["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18831),	-- High Warlord's Battle Axe
@@ -5337,7 +5609,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(8404, {	-- Xan'tish <Snake Vendor>
-					["description"] = "This NPC walks around in a circle in the Valley of Spirits.",
+					["description"] = "~L.THIS_NPC_WALKS_AROUND_IN_A_CIRCLE_IN_THE_VALLEY",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 34.0, 67.6, ORGRIMMAR },

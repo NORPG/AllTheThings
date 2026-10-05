@@ -131,7 +131,24 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(514, {	-- Flayer Youngling (PET!)
-							["description"] = "Found in Razorthorn Rise, on the mountain range between Hellfire Peninsula and Terokkar Forest. Flying is required.",
+							["description"] = createLocalizationString({
+								readable = "Found in Razorthorn Rise, on the mountain range between Hellfire Peninsula and Terokkar Forest. Flying is required.",
+								constant = "FOUND_IN_RAZORTHORN_RISE_ON_THE_MOUNTAIN_RANGE",
+								export = true,
+								text = {
+									en = "Found in Razorthorn Rise, on the mountain range between Hellfire Peninsula and Terokkar Forest. Flying is required.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "位于棘刺高地，即地狱火半岛与泰罗卡森林之间的山脉上。需要飞行。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},
@@ -1621,7 +1638,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(21724, {	-- Hawkbane
-						["description"] = "This is a tameable hunter pet that has no notable drops.",
+						["description"] = createLocalizationString({
+							readable = "This is a tameable hunter pet that has no notable drops.",
+							constant = "THIS_IS_A_TAMEABLE_HUNTER_PET_THAT_HAS_NO",
+							export = true,
+							text = {
+								en = "This is a tameable hunter pet that has no notable drops.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是一种可驯服的猎人宠物，没有值得注意的掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 76.2, 81.2, TEROKKAR_FOREST },
 					}),
 					n(18685, {	-- Okrek
@@ -1647,7 +1681,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(185913, {	-- Skull Pile
-						["description"] = "Summons one of 4 Rares using 10 Time-Lost Scrolls. See Terokk's description for more info.",
+						["description"] = createLocalizationString({
+							readable = "Summons one of 4 Rares using 10 Time-Lost Scrolls. See Terokk's description for more info.",
+							constant = "SUMMONS_ONE_OF_4_RARES_USING_10_TIME_LOST",
+							export = true,
+							text = {
+								en = "Summons one of 4 Rares using 10 Time-Lost Scrolls. See Terokk's description for more info.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用 10 个时光迷失卷轴召唤 4 个稀有之一。更多信息请参见泰罗克的说明。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 69.7, 74.7, TEROKKAR_FOREST },
 							{ 70.1, 79.4, TEROKKAR_FOREST },
@@ -1699,7 +1750,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(21838, {	-- Terokk
-						["description"] = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
+						["description"] = createLocalizationString({
+							readable = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
+							constant = "THE_PROCESS_TO_SUMMON_THIS_BOSS_IS_AS_FOLLOWS_1",
+							export = true,
+							text = {
+								en = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "召唤这个首领的流程如下。\n\n1. 从斯克提斯的怪物身上收集暗影之尘。\n2. 向塞弗林上交 6 份暗影之尘以接取“更多暗影之尘”任务，从而获得暗影药剂。\n3. 喝下药剂获得持续 20 分钟的增益，使你能够看到斯克提斯周围的迷失怪物。\n4. 击杀这些怪物以获得迷失卷轴（每次召唤需要 40 张）。\n5. 如果你这是第一次，请确保已接取“敌对的鲜血”任务；它始于“依沙尔年鉴”任务。\n6. 前往骷髅堆并使用 10 张迷失卷轴召唤首领。（黑暗尖啸者阿卡莱 [阿卡莱的利爪]、卡洛格 [卡洛格的脊骨]、女猎手格兹拉克 [格兹拉克的利爪]、怒风者瓦基兹 [瓦基兹的鳞片]）。\n7. 将这 4 件物品交给哈吉克以完成“敌对的鲜血”，奖励一个迷失的祭品。\n8. 在中央岛屿的远古骷髅堆处使用迷失的祭品召唤泰罗克。（它大约有 15 分钟的刷新计时）",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "o", 185928 },	-- Ancient Skull Pile
 						["coord"] = { 66.2, 77.5, TEROKKAR_FOREST },
 						["cost"] = { { "i", 32720, 1 } },	-- Time-Lost Offering
@@ -1720,7 +1788,24 @@ root(ROOTS.Zones, {
 				}),
 				n(REWARDS, {
 					container(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
-						["description"] = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
+						["description"] = createLocalizationString({
+							readable = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
+							constant = "THIS_BAG_IS_EXCLUSIVE_TO_THE_DAILY_QUEST",
+							export = true,
+							text = {
+								en = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这个袋子是日常任务“城中鳄鱼”专属的。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34828),	-- Antique Silver Cufflinks
@@ -1738,7 +1823,24 @@ root(ROOTS.Zones, {
 						},
 					})),
 					container(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
-						["description"] = "Shared reward bag for all the non-Croc dailies.",
+						["description"] = createLocalizationString({
+							readable = "Shared reward bag for all the non-Croc dailies.",
+							constant = "SHARED_REWARD_BAG_FOR_ALL_THE_NON_CROC_DAILIES",
+							export = true,
+							text = {
+								en = "Shared reward bag for all the non-Croc dailies.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "所有非鳄鱼日常任务共用的奖励袋。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34828),	-- Antique Silver Cufflinks

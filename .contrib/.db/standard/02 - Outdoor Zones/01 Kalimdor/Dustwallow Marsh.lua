@@ -138,7 +138,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					pet(385),	-- Mouse (PET!)
 					pet(489, {	-- Spawn of Onyxia (PET!)
-						["description"] = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",
+							constant = "CAN_BE_FOUND_IN_THE_AREA_AROUND_ONYXIA_S_LAIR",
+							export = true,
+							text = {
+								en = "Can be found in the area around Onyxia's Lair in Dustwallow Marsh.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在尘泥沼泽奥妮克希亚的巢穴周边区域找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -196,7 +213,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66436, {	-- Grazzle the Great <Master Pet Tamer>
 					["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_THOUGH_ALLIANCE",
+						export = true,
+						text = {
+							en = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限部落，不过联盟玩家可以在完成联盟版任务“宠物对战训练师：卡利姆多”时与他们对战一次。\n\nGrazzle 的宠物为 14 级，三个宠物的类别依次为：\n1. 龙类 - 使用人型（强力）或亡灵（耐打）宠物。\n2. 龙类 - 同上。\n3. 龙类 - 同上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 14,
 					["groups"] = {
@@ -269,7 +303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(6801, {	-- Baroque Apron
 							-- #if ANYCLASSIC
-							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
+							["description"] = "~L.THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -954,7 +988,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(1271, {	-- Feast at the Blue Recluse
-					["description"] = "Don't forget to loot all the food and drinks off the tables.",
+					["description"] = "~L.DON_T_FORGET_TO_LOOT_ALL_THE_FOOD_AND_DRINKS",
 					["sourceQuests"] = {
 						1258,	-- ... and Bugs
 						1222,	-- Stinky's Escape
@@ -1704,7 +1738,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13826, {	-- Nat Pagle, Angler Extreme
-					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
+					["description"] = createLocalizationString({
+						readable = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
+						constant = "IF_YOU_DELETED_YOUR_FISHING_POLE_FROM_THE_OLD",
+						export = true,
+						text = {
+							en = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你在旧版本的任务中删除了你的鱼竿，你可以通过完成这个任务获得一根新的。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 12919,	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_3_1_0 },
@@ -3848,7 +3899,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12919, {	-- Nat Pagle
 					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
 					["coord"] = { 58.6, 60.1, DUSTWALLOW_MARSH },
-					["description"] = "He will only sell you the Mudskunk Lures once you have turned in Nat's Measuring Tape.",
+					["description"] = "~L.HE_WILL_ONLY_SELL_YOU_THE_MUDSKUNK_LURES_ONCE",
 					["groups"] = {
 						i(19974),	-- Mudskunk Lure
 					},
@@ -3942,7 +3993,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
 					-- #if AFTER 10.1.7
-					["description"] = "This recipe has a very low droprate & is recommend to farm from Spiny Rock Crabs, but can also drop from any other creature in the zone. |cFFE50D12WARNING:|r This recipe binds to your character when looted.",
+					["description"] = createLocalizationString({
+						readable = "This recipe has a very low droprate & is recommend to farm from Spiny Rock Crabs, but can also drop from any other creature in the zone. |cFFE50D12WARNING:|r This recipe binds to your character when looted.",
+						constant = "THIS_RECIPE_HAS_A_VERY_LOW_DROPRATE_IS",
+						export = true,
+						text = {
+							en = "This recipe has a very low droprate & is recommend to farm from Spiny Rock Crabs, but can also drop from any other creature in the zone. |cFFE50D12WARNING:|r This recipe binds to your character when looted.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此配方的掉率非常低，推荐从多刺岩蟹刷取，但该区域的任何其他生物也可能掉落。|cFFE50D12警告：|r 拾取此配方时会绑定到你的角色。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					-- #if AFTER 10.1.7
 					["coords"] = {

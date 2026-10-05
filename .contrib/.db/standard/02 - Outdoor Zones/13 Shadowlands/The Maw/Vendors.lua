@@ -106,7 +106,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 					}, {	-- Appreciative
 						i(185350, {	-- Partial Rune Codex
-							["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
+							["description"] = createLocalizationString({
+								readable = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
+								constant = "USED_FOR_THE_CFFB19CD9BOUND_SHADEHOUND_R_SECRET",
+								export = true,
+								text = {
+									en = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "用于|cFFb19cd9被束缚的影犬|r秘密坐骑。只有维娜里声望满的角色才能获得。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { ADDED_9_0_5 },
 							["cost"] = { { "c", STYGIA, 2000 } },	-- 2,000x Stygia
 						}),
@@ -114,7 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["cost"] = { { "c", STYGIA, 1525 } },
 						}),
 						i(184870, {	-- Stygia Dowser
-							["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
+							["description"] = "~L.USED_FOR_THE_CFFB19CD9BOUND_SHADEHOUND_R_SECRET",
 							["timeline"] = { ADDED_9_0_5 },
 							["cost"] = { { "c", STYGIA, 1500 } },
 						}),

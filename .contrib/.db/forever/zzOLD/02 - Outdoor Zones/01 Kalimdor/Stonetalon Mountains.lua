@@ -593,7 +593,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					lvl = 14,
 					groups = {
 						i(216619, {	-- Student Fodder
-							["description"] = "This item gives you 4 bars of Rested Experience when consumed.",
+							["description"] = createLocalizationString({
+								readable = "This item gives you 4 bars of Rested Experience when consumed.",
+								constant = "THIS_ITEM_GIVES_YOU_4_BARS_OF_RESTED_EXPERIENCE",
+								export = true,
+								text = {
+									en = "This item gives you 4 bars of Rested Experience when consumed.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "使用该物品可为你提供 4 格休息经验。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(217314),	-- Moonsight Rifle
 						i(217315),	-- Precision Bow
@@ -764,8 +781,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(4015, {	-- Pridewing Patriarch
-					["description"] =
-						"Can spawn after killing any Pridewing Beasts.",
+					["description"] = createLocalizationString({
+						readable = "Can spawn after killing any Pridewing Beasts.",
+						constant = "CAN_SPAWN_AFTER_KILLING_ANY_PRIDEWING_BEASTS",
+						export = true,
+						text = {
+							en = "Can spawn after killing any Pridewing Beasts.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "击杀任意傲翼野兽后可能刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 45.2, 39.2, MAP.STONETALON_MOUNTAINS },
 						{ 44.8, 45.6, MAP.STONETALON_MOUNTAINS },

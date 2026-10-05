@@ -161,7 +161,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				-- AZJ'KAHET
 				-- Rak-Zakaz
 				o(527416, {	-- Suspicious Document (Dissenter Oathland/Whisperer Warsididel)
-					["description"] = "Spawns Dissenter Oathland/Whisperer Warsididel.",
+					["description"] = createLocalizationString({
+						readable = "Spawns Dissenter Oathland/Whisperer Warsididel.",
+						constant = "SPAWNS_DISSENTER_OATHLAND_WHISPERER_WARSIDIDEL",
+						export = true,
+						text = {
+							en = "Spawns Dissenter Oathland/Whisperer Warsididel.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "会刷新异议者奥瑟兰/低语者瓦西迪德尔。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 61.9, 30.1, AZJ_KAHET },
 						{ 62.6, 26.7, AZJ_KAHET },
@@ -171,14 +188,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241228, {	-- Dissenter Oathland
-					["description"] = "Within the Rak-Zakaz assault.",
+					["description"] = createLocalizationString({
+						readable = "Within the Rak-Zakaz assault.",
+						constant = "WITHIN_THE_RAK_ZAKAZ_ASSAULT",
+						export = true,
+						text = {
+							en = "Within the Rak-Zakaz assault.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在拉克-扎卡兹突袭内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 527416 },	-- Suspicious Document
 					["maps"] = { AZJ_KAHET },
 					["questID"] = 91150,
 					["isDaily"] = true,
 				}),
 				n(241237, {	-- Whisperer Warsididel
-					["description"] = "Within the Rak-Zakaz assault.",
+					["description"] = "~L.WITHIN_THE_RAK_ZAKAZ_ASSAULT",
 					["provider"] = { "o", 527416 },	-- Suspicious Document
 					["maps"] = { AZJ_KAHET },
 					["questID"] = 91156,
@@ -194,14 +228,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241230, {	-- Dissenter Tailtrek
-					["description"] = "Within the Sureki's End assault.",
+					["description"] = createLocalizationString({
+						readable = "Within the Sureki's End assault.",
+						constant = "WITHIN_THE_SUREKI_S_END_ASSAULT",
+						export = true,
+						text = {
+							en = "Within the Sureki's End assault.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在苏雷基之终突袭内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 527415 },	-- Suspicious Document
 					["maps"] = { AZJ_KAHET },
 					["questID"] = 91154,
 					["isDaily"] = true,
 				}),
 				n(241235, {	-- Whisperer Hillhelm
-					["description"] = "Within the Sureki's End assault.",
+					["description"] = "~L.WITHIN_THE_SUREKI_S_END_ASSAULT",
 					["provider"] = { "o", 527415 },	-- Suspicious Document
 					["maps"] = { AZJ_KAHET },
 					["questID"] = 91152,
@@ -217,14 +268,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241227, {	-- Dissenter Glaivefur
-					["description"] = "Within the Toxins and Pheromones assault.",
+					["description"] = createLocalizationString({
+						readable = "Within the Toxins and Pheromones assault.",
+						constant = "WITHIN_THE_TOXINS_AND_PHEROMONES_ASSAULT",
+						export = true,
+						text = {
+							en = "Within the Toxins and Pheromones assault.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在毒素与信息素突袭内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 527413 },	-- Suspicious Document
 					["maps"] = { AZJ_KAHET },
 					["questID"] = 89273,
 					["isDaily"] = true,
 				}),
 				n(241239, {	-- Whisperer Warhavuk
-					["description"] = "Within the Toxins and Pheromones assault.",
+					["description"] = "~L.WITHIN_THE_TOXINS_AND_PHEROMONES_ASSAULT",
 					["provider"] = { "o", 527413 },	-- Suspicious Document
 					["maps"] = { AZJ_KAHET },
 					["questID"] = 91160,
@@ -243,13 +311,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241231, {	-- Dissenter Fortfervor
-					["description"] = "Within the Hold the Wall assault.",
+					["description"] = createLocalizationString({
+						readable = "Within the Hold the Wall assault.",
+						constant = "WITHIN_THE_HOLD_THE_WALL_ASSAULT",
+						export = true,
+						text = {
+							en = "Within the Hold the Wall assault.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在守墙突袭内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 527398 },	-- Suspicious Document
 					["questID"] = 91157,
 					["isDaily"] = true,
 				}),
 				n(241234, {	-- Whisperer Batalsworn
-					["description"] = "Within the Hold the Wall assault.",
+					["description"] = "~L.WITHIN_THE_HOLD_THE_WALL_ASSAULT",
 					["provider"] = { "o", 527398 },	-- Suspicious Document
 					["questID"] = 91151,
 					["isDaily"] = true,
@@ -265,13 +350,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241229, {	-- Dissenter Fervormyt
-					["description"] = "Within the Southern Swarm assault.",
+					["description"] = createLocalizationString({
+						readable = "Within the Southern Swarm assault.",
+						constant = "WITHIN_THE_SOUTHERN_SWARM_ASSAULT",
+						export = true,
+						text = {
+							en = "Within the Southern Swarm assault.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在南部虫群突袭内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 527409 },	-- Suspicious Document
 					["questID"] = 91153,
 					["isDaily"] = true,
 				}),
 				n(241238, {	-- Whisperer Siegesage
-					["description"] = "Within the Southern Swarm assault.",
+					["description"] = "~L.WITHIN_THE_SOUTHERN_SWARM_ASSAULT",
 					["provider"] = { "o", 527409 },	-- Suspicious Document
 					["questID"] = 91159,
 					["isDaily"] = true,
@@ -287,13 +389,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241232, {	-- Dissenter Troosilver
-					["description"] = "Within The Eastern Assault.",
+					["description"] = createLocalizationString({
+						readable = "Within The Eastern Assault.",
+						constant = "WITHIN_THE_EASTERN_ASSAULT",
+						export = true,
+						text = {
+							en = "Within The Eastern Assault.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在东侧突袭内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 527411 },	-- Suspicious Document
 					["questID"] = 91158,
 					["isDaily"] = true,
 				}),
 				n(241236, {	-- Whisperer Bravefort
-					["description"] = "Within The Eastern Assault.",
+					["description"] = "~L.WITHIN_THE_EASTERN_ASSAULT",
 					["provider"] = { "o", 527411 },	-- Suspicious Document
 					["questID"] = 91155,
 					["isDaily"] = true,
@@ -302,7 +421,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			n(REWARDS, {
 				-- Special Single List Item:
 				container(239546, {	-- Confiscated Cultist's Bag
-					["description"] = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
+					["description"] = createLocalizationString({
+						readable = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
+						constant = "REWARDED_BY_COMPLETING_RADIANT_INCURSION_OR",
+						export = true,
+						text = {
+							en = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "通过完成光辉入侵或苏雷基入侵日常任务奖励。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(239563),	-- Shadowbound Leash (MOUNT!)
 						i(241126),	-- Sovereign Sureki Emblem (COSMETIC!)
@@ -385,7 +521,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				i(237743, {	-- Arathi Soldier's Coffer (Uncommon) Only Green Cosmetics
-					["description"] = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+					["description"] = createLocalizationString({
+						readable = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+						constant = "GRANTED_FOR_ACHIEVING_33_DURING_THE_NIGHTFALL",
+						export = true,
+						text = {
+							en = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在夜幕事件中达到 33% 进度即可获得。\n进度条通过击杀苏雷奇怪物和完成夜幕中的目标来增长。\n\n事件总是在整点开始。\n\n首领本身提供 41%。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(241019),	-- Arathi Camper's Knife (COSMETIC!)
 						i(241016),	-- Arathi Lancer's Polearm (COSMETIC!)
@@ -393,7 +546,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				i(237759, {	-- Arathi Cleric's Chest (Rare) Only Weapons
-					["description"] = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+					["description"] = createLocalizationString({
+						readable = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+						constant = "GRANTED_FOR_ACHIEVING_66_DURING_THE_NIGHTFALL",
+						export = true,
+						text = {
+							en = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在夜幕事件期间达到 66% 即可获得。\n进度条通过击杀苏雷基怪物和完成夜幕事件中的目标来提升。\n\n该事件总是在整点开始。\n\n首领本身提供 41%。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						n(WEAPONS, {
 							i(237795),	-- Arathi Abbot's Gavel
@@ -419,7 +589,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				i(237760, {	-- Arathi Champion's Spoils (Epic)
-					["description"] = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+					["description"] = createLocalizationString({
+						readable = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+						constant = "GRANTED_FOR_ACHIEVING_100_DURING_THE_NIGHTFALL",
+						export = true,
+						text = {
+							en = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在夜幕事件中达到 100% 进度即可获得。\n进度条通过击杀苏雷奇怪物和完成夜幕中的目标来增长。\n\n事件总是在整点开始。\n\n首领本身提供 41%。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sym"] = {	-- Arathi Cleric's Chest (Rare)
 						{"select","itemID",237759},{"pop"},
 						{"where","headerID",WEAPONS},
@@ -489,7 +676,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				-- Crafting reagent?
 				n(EVENT_COMPLETION, {
-					["description"] = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
+					["description"] = createLocalizationString({
+						readable = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
+						constant = "THE_BOSS_SPAWNS_AT_THE_END_OF_THE_NIGHTFALL",
+						export = true,
+						text = {
+							en = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "首领在夜幕事件结束时刷新。\n该事件总是在整点开始。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 25.2, 55.6, HALLOWFALL },
 					["crs"] = {
 						240968,	-- Ahn'tak

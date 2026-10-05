@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 170563 },	-- Runespeaker Phaeton
 			}),
 			i(183691, {	-- Mucosal Pigment (CI!)
-				["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+				["description"] = "~L.THIS_MAY_DROP_FOR_ANY_CHARACTER_ON_YOUR_ACCOUNT",
 				["crs"] = {
 					165014,	-- Animated Plague
 					161599,	-- Bubbling Sclerosis

@@ -348,7 +348,24 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				}),
 				n(160210, {	-- Tasha Riley
 					["coord"] = { 41.1, 49.1, 1578 },
-					["description"] = "Speak with Tasha after you finish the last fight and join the COUNCIL OF CHAOS to get title.",
+					["description"] = createLocalizationString({
+						readable = "Speak with Tasha after you finish the last fight and join the COUNCIL OF CHAOS to get title.",
+						constant = "SPEAK_WITH_TASHA_AFTER_YOU_FINISH_THE_LAST",
+						export = true,
+						text = {
+							en = "Speak with Tasha after you finish the last fight and join the COUNCIL OF CHAOS to get title.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成最后一场战斗后与塔莎交谈，加入混乱议会即可获得头衔。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						title(415),	-- <Name>, Minion of Mayhem
 					},
@@ -502,7 +519,24 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					i(169670),	-- Minimancer (PET!)
 				}),
 				ach(13766, {	-- Malowned
-					["description"] = "To summon Postmaster Malown, find a Discarded Letter on the ground at one of the coordinates provided and put it in the mailbox at |cFFFfffff57.8, 13.6|r.\n",
+					["description"] = createLocalizationString({
+						readable = "To summon Postmaster Malown, find a Discarded Letter on the ground at one of the coordinates provided and put it in the mailbox at |cFFFfffff57.8, 13.6|r.\n",
+						constant = "TO_SUMMON_POSTMASTER_MALOWN_FIND_A_DISCARDED",
+						export = true,
+						text = {
+							en = "To summon Postmaster Malown, find a Discarded Letter on the ground at one of the coordinates provided and put it in the mailbox at |cFFFfffff57.8, 13.6|r.\n",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要召唤邮政长马洛恩，请在所列坐标之一的地面上找到一封被丢弃的信件，并将其放入 |cFFFfffff57.8, 13.6|r 处的邮箱中。\n",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 40.2, 10.4, 1505 },
 						{ 48.6, 24.9, 1505 },
@@ -638,12 +672,29 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			pvp(i(165944, {	-- A Shady Message [A] (CI!)
-				["description"] = "Rewarded from winning PvP Pet Battles",
+				["description"] = createLocalizationString({
+					readable = "Rewarded from winning PvP Pet Battles",
+					constant = "REWARDED_FROM_WINNING_PVP_PET_BATTLES",
+					export = true,
+					text = {
+						en = "Rewarded from winning PvP Pet Battles",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "赢得 PVP 宠物对战后奖励",
+						-- TODO: tw = "",
+					},
+				}),
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_0 },
 			})),
 			pvp(i(166242, {	-- A Shady Message [H] (CI!)
-				["description"] = "Rewarded from winning PvP Pet Battles",
+				["description"] = "~L.REWARDED_FROM_WINNING_PVP_PET_BATTLES",
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_0 },
 			})),
@@ -672,7 +723,24 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			-- This itemID is for the bugged Caged Pet tooltip.
 			-- Keep it here to prevent NYI false reports whenever someone hovers over the tooltip.
 			i(82800, {	-- Pet Cage (PET!) [NYI]
-				["description"] = "|cffff0000This item serves as a placeholder for a Caged Pet.\nIt appears in chat tooltips when caging a pet, or as a tooltip when viewing pets in the guild bank.|r",
+				["description"] = createLocalizationString({
+					readable = "|cffff0000This item serves as a placeholder for a Caged Pet.\nIt appears in chat tooltips when caging a pet, or as a tooltip when viewing pets in the guild bank.|r",
+					constant = "CFFFF0000THIS_ITEM_SERVES_AS_A_PLACEHOLDER_FOR",
+					export = true,
+					text = {
+						en = "|cffff0000This item serves as a placeholder for a Caged Pet.\nIt appears in chat tooltips when caging a pet, or as a tooltip when viewing pets in the guild bank.|r",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|cffff0000该物品用作笼中宠物的占位符。\n当你笼装宠物时，它会出现在聊天悬浮提示中；在公会银行查看宠物时也会作为悬浮提示显示。|r",
+						-- TODO: tw = "",
+					},
+				}),
 				["collectible"] = false,
 			}),
 		},
@@ -912,7 +980,24 @@ root(ROOTS.Character, n(PET_BATTLES, {
 			["groups"] = {
 				i(86143, {	-- Battle Pet Bandage
 					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
-					["description"] = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
+					["description"] = createLocalizationString({
+						readable = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
+						constant = "YOU_CAN_ALSO_BUY_25_BANDAGES_FOR_5_POLISHED_PET",
+						export = true,
+						text = {
+							en = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你也可以从大多数战斗宠物商人处以 5 个抛光宠物符咒购买 25 个绷带。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(116429, {	-- Flawless Battle Training Stone
 					["cost"] = { { "i", POLISHED_PET_CHARM, 3 } },
@@ -955,7 +1040,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 			["groups"] = {
 				i(86143, {	-- Battle Pet Bandage
 					["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
-					["description"] = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
+					["description"] = "~L.YOU_CAN_ALSO_BUY_25_BANDAGES_FOR_5_POLISHED_PET",
 				}),
 				i(116429, {	-- Flawless Battle Training Stone
 					["cost"] = { { "i", POLISHED_PET_CHARM, 3 } },

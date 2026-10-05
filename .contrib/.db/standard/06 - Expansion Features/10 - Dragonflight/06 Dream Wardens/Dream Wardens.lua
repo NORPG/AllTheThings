@@ -72,7 +72,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(78595, {	-- Dream Infused
-				["description"] = "Requires Renown 18",
+				["description"] = createLocalizationString({
+					readable = "Requires Renown 18",
+					constant = "REQUIRES_RENOWN_18",
+					export = true,
+					text = {
+						en = "Requires Renown 18",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要名望 18",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 211962 },	-- Merlsysra
 				["groups"] = {
 					currency(CURRENCY_DREAM_INFUSION),

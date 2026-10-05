@@ -39,7 +39,24 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(58989, {	-- Runeforging 101
-					["description"] = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
+					["description"] = createLocalizationString({
+						readable = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
+						constant = "USE_YOUR_DEATH_GATE_AFTER_FINISHING_PREVIOUS",
+						export = true,
+						text = {
+							en = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成前一个任务后使用你的死亡之门，达里安会在阿彻鲁斯。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qgs"] = {
 						29246,	-- Highlord Darion Morgraine
 						93437,	-- Highlord Darion Morgraine

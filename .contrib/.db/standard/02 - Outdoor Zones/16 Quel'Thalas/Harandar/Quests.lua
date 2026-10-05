@@ -18,62 +18,266 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}, {
 				-- Ordered by the Unlock progression
 				q(96498, {	-- Grovewarden's Kris
-					["description"] = "Unlocks after you have captured 10 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 10 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_10_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 10 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 10 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 301686 },
 					["groups"] = { i(257155) },	-- Grovewarden's Kris (COSMETIC!)
 				}),
 				q(96499, {	-- Grovewarden's Dagger
-					["description"] = "Unlocks after you have captured 20 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 20 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_20_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 20 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 20 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 302663 },
 					["groups"] = { i(263283) },	-- Grovewarden's Dagger (COSMETIC!)
 				}),
 				q(96500, {	-- Firm Haranir Pillow
-					["description"] = "Unlocks after you have captured 30 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 30 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_30_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 30 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 30 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "decorID", 15478 },
 					["groups"] = { i(264243) },	-- Firm Haranir Pillow (DECOR!)
 				}),
 				q(96501, {	-- Grovewarden's Rapier
-					["description"] = "Unlocks after you have captured 40 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 40 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_40_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 40 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 40 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 301690 },
 					["groups"] = { i(257158) },	-- Grovewarden's Rapier (COSMETIC!)
 				}),
 				q(96502, {	-- Vivid Chloroceros
-					["description"] = "Unlocks after you have captured 50 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 50 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_50_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 50 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 50 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "spellID", 1270675 },
 					["groups"] = { i(263580) },	-- Vivid Chloroceros (MOUNT!)
 				}),
 				q(96504, {	-- Warm Haranir Blanket
-					["description"] = "Unlocks after you have captured 60 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 60 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_60_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 60 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 60 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "decorID", 15480 },
 					["groups"] = { i(264245) },	-- Warm Haranir Blanket (DECOR!)
 				}),
 				q(96505, {	-- Grovewarden's Buckler
-					["description"] = "Unlocks after you have captured 70 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 70 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_70_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 70 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 70 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 301688 },
 					["groups"] = { i(257159) },	-- Grovewarden's Buckler (COSMETIC!)
 				}),
 				q(96506, {	-- Grovewarden's Staff
-					["description"] = "Unlocks after you have captured 80 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 80 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_80_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 80 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 80 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 302664 },
 					["groups"] = { i(263284) },	-- Grovewarden's Staff (COSMETIC!)
 				}),
 				q(96507, {	-- Haranir Reclined Bed
-					["description"] = "Unlocks after you have captured 90 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 90 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_90_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 90 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 90 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "decorID", 14824 },
 					["groups"] = { i(263038) },	-- Haranir Reclined Bed (DECOR!)
 				}),
 				q(96508, {	-- Grovewarden's Halberd
-					["description"] = "Unlocks after you have captured 100 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 100 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_100_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 100 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 100 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 301687 },
 					["groups"] = { i(257161) },	-- Grovewarden's Halberd (COSMETIC!)
 				}),
 				q(96509, {	-- Grovewarden's Greatsword
-					["description"] = "Unlocks after you have captured 110 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 110 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_110_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 110 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 110 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "sourceID", 302665 },
 					["groups"] = { i(263285) },	-- Grovewarden's Greatsword (COSMETIC!)
 				}),
 				q(96510, {	-- Elder Glowmite
-					["description"] = "Unlocks after you have captured 120 Moths.",
+					["description"] = createLocalizationString({
+						readable = "Unlocks after you have captured 120 Moths.",
+						constant = "UNLOCKS_AFTER_YOU_HAVE_CAPTURED_120_MOTHS",
+						export = true,
+						text = {
+							en = "Unlocks after you have captured 120 Moths.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "捕捉 120 只飞蛾后解锁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["lockCriteria"] = { 1, "spellID", 447173 },
 					["groups"] = { i(222988) },	-- Elder Glowmite (MOUNT!)
 				}),
@@ -149,7 +353,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(90859, {	-- Stay awhile and listen: Hagar
 						["name"] = "Stay awhile and listen: Hagar",
-						["description"] = "Dialogue becomes available during 'Echoes and Memories' (86911).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available during 'Echoes and Memories' (86911).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_ECHOES_AND",
+							export = true,
+							text = {
+								en = "Dialogue becomes available during 'Echoes and Memories' (86911).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“回响与记忆”（86911）期间即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86907 },	-- The Den of Echoes
 						["provider"] = { "n", 237567 },	-- Hagar
 						["coord"] = { 38.8, 46.9, MAP.MIDNIGHT.HARANDAR },
@@ -275,7 +496,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(90884, {	-- Stay awhile and listen: Orweyna	// Exo 12.03.2026. I did not get this... Does not exist?
 						["name"] = "Stay awhile and listen: Orweyna",
-						["description"] = "Dialogue becomes available during 'Seeds of the Rift' (86944).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available during 'Seeds of the Rift' (86944).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_SEEDS_OF_THE",
+							export = true,
+							text = {
+								en = "Dialogue becomes available during 'Seeds of the Rift' (86944).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“裂隙之种”（86944）期间即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							89034,	-- Burning Bitterblooms
 							86942,	-- Culling the Spread
@@ -314,7 +552,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(94908, {	-- Stay awhile and listen: Orweyna
 						["name"] = "Stay awhile and listen: Orweyna",
-						["description"] = "Dialogue becomes available during 'The Hunter Awaits' (86836).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available during 'The Hunter Awaits' (86836).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_THE_HUNTER",
+							export = true,
+							text = {
+								en = "Dialogue becomes available during 'The Hunter Awaits' (86836).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“猎人在等待”（86836）期间即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86864 },	-- Watch The Den
 						["provider"] = { "n", 237786 },	-- Orweyna
 						["coord"] = { 54.3, 55.8, MAP.MIDNIGHT.HARANDAR },
@@ -427,7 +682,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(94991, {	-- Stay awhile and listen: Orweyna
 						["name"] = "Stay awhile and listen: Orweyna ",
-						["description"] = "Dialogue becomes available during 'In Search of the Problem' (86865).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available during 'In Search of the Problem' (86865).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_IN_SEARCH_OF",
+							export = true,
+							text = {
+								en = "Dialogue becomes available during 'In Search of the Problem' (86865).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“寻找问题所在”（86865）期间即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86865 },	-- In Search of the Problem
 						["provider"] = { "n", 237234 },	-- Orweyna
 						["coord"] = { 63.2, 56.8, MAP.MIDNIGHT.HARANDAR },
@@ -442,7 +714,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(94951, {	-- Stay awhile and listen: Hannan
 						["name"] = "Stay awhile and listen: Hannan",
-						["description"] = "Dialogue becomes available during 'Can we Heal This?' (86866).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available during 'Can we Heal This?' (86866).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_CAN_WE_HEAL",
+							export = true,
+							text = {
+								en = "Dialogue becomes available during 'Can we Heal This?' (86866).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“我们能治愈它吗？”（86866）期间即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86865 },	-- In Search of the Problem
 						["provider"] = { "n", 241629 },	-- Hannan
 						["coord"] = { 31.4, 64.9, MAP.MIDNIGHT.HARANDAR },
@@ -655,7 +944,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61739.02, {	-- The Legend of Aln'sharan
-					["description"] = "It is recommended to do this Sojourner quest chain as soon as possible as it unlocks the |cFF4A54E8Mysterious Skyshards|r to drop from any creature in the zone.",
+					["description"] = createLocalizationString({
+						readable = "It is recommended to do this Sojourner quest chain as soon as possible as it unlocks the |cFF4A54E8Mysterious Skyshards|r to drop from any creature in the zone.",
+						constant = "IT_IS_RECOMMENDED_TO_DO_THIS_SOJOURNER_QUEST",
+						export = true,
+						text = {
+							en = "It is recommended to do this Sojourner quest chain as soon as possible as it unlocks the |cFF4A54E8Mysterious Skyshards|r to drop from any creature in the zone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "建议尽快完成这条旅居者任务线，因为它会解锁|cFF4A54E8神秘天空碎片|r，使其可以从该区域的任何生物身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						q(90467, {	-- Tales of the Sky
 							["sourceQuests"] = { 86930 },	-- To Sow the Seed

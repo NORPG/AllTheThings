@@ -121,7 +121,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				o(617237, {	-- Sealed Twilight's Blade Bounty Cache
-					["description"] = "Unlock 4 Sealing Orbs in nearby towers.",
+					["description"] = createLocalizationString({
+						readable = "Unlock 4 Sealing Orbs in nearby towers.",
+						constant = "UNLOCK_4_SEALING_ORBS_IN_NEARBY_TOWERS",
+						export = true,
+						text = {
+							en = "Unlock 4 Sealing Orbs in nearby towers.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "解锁附近塔楼中的 4 颗封印宝珠。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 617659 },	-- Sealed Twilight's Blade Bounty
 					["coord"] = { 21.9, 77.4, MAP.MIDNIGHT.ZULAMAN },
 					["questID"] = 93871,
@@ -196,7 +213,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- Repeatable Treasures, contain currencies, grays, potions, etc.
 			o(555462, {	-- Forgotten Amani Cache
-				["description"] = "Spawns randomly around the coastal areas of the zone.",
+				["description"] = createLocalizationString({
+					readable = "Spawns randomly around the coastal areas of the zone.",
+					constant = "SPAWNS_RANDOMLY_AROUND_THE_COASTAL_AREAS_OF_THE",
+					export = true,
+					text = {
+						en = "Spawns randomly around the coastal areas of the zone.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在该区域的沿海地带随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(587912, {	-- Giant Grab Bag
 				["coords"] = {
@@ -229,16 +263,67 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(587913, {	-- Shabby Stockpile
-				["description"] = "Spawns randomly around the area of Atal'Abasi.",
+				["description"] = createLocalizationString({
+					readable = "Spawns randomly around the area of Atal'Abasi.",
+					constant = "SPAWNS_RANDOMLY_AROUND_THE_AREA_OF_ATAL_ABASI",
+					export = true,
+					text = {
+						en = "Spawns randomly around the area of Atal'Abasi.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在阿塔阿巴西区域周围随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(582157, {	-- Spiritpaw Satchel
-				["description"] = "Spawns randomly around the area of Spiritpaw Backwoods.",
+				["description"] = createLocalizationString({
+					readable = "Spawns randomly around the area of Spiritpaw Backwoods.",
+					constant = "SPAWNS_RANDOMLY_AROUND_THE_AREA_OF_SPIRITPAW",
+					export = true,
+					text = {
+						en = "Spawns randomly around the area of Spiritpaw Backwoods.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在幽爪密林区域周围随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			o(583971, {	-- Stonewash Supplies
-				["description"] = "Spawns randomly around the coastal areas of the zone.",
+				["description"] = "~L.SPAWNS_RANDOMLY_AROUND_THE_COASTAL_AREAS_OF_THE",
 			}),
 			o(582179, {	-- Twilight Ordnance
-				["description"] = "Spawns randomly (mostly) around the area of Broken Throne.",
+				["description"] = createLocalizationString({
+					readable = "Spawns randomly (mostly) around the area of Broken Throne.",
+					constant = "SPAWNS_RANDOMLY_MOSTLY_AROUND_THE_AREA_OF",
+					export = true,
+					text = {
+						en = "Spawns randomly (mostly) around the area of Broken Throne.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "（大多）在破碎王座区域周围随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 20.9, 62.5, MAP.MIDNIGHT.ZULAMAN },
 					{ 21.6, 69.1, MAP.MIDNIGHT.ZULAMAN },

@@ -27,7 +27,24 @@ root(ROOTS.Instances, {
 			}),
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
-					["description"] = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
+					["description"] = createLocalizationString({
+						readable = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
+						constant = "FOR_THIS_TO_DROP_YOU_NEED_TO_BE_ON_THE_ESSENCE",
+						export = true,
+						text = {
+							en = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要使其掉落，你需要正在进行“阿库麦尔的精华”任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
 					["provider"] = { "i", 16790 },	-- Damp Note
 					["races"] = HORDE_ONLY,
@@ -116,7 +133,24 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(1198, {	-- In Search of Thaelrid
-					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
+					["description"] = createLocalizationString({
+						readable = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
+						constant = "THIS_QUEST_IS_ALSO_AVAILABLE_TO_HORDE_THOUGH",
+						export = true,
+						text = {
+							en = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务对部落也可用，只是任务给予者的位置有点偏。（当然，它不会给予达纳苏斯声望。）",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
 					["coord"] = { 28.7, 52.1, MAP.DARNASSUS },
 					["isBreadcrumb"] = true,
@@ -134,7 +168,24 @@ root(ROOTS.Instances, {
 								{ "i", 5359 },	-- Lorgalis Manuscript
 								{ "o", 13949 },	-- Pitted Iron Chest
 							},
-							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
+							["description"] = createLocalizationString({
+								readable = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
+								constant = "GUARDED_BY_A_FEW_NAGA_IN_THE_UNDERWATER_ROOM",
+								export = true,
+								text = {
+									en = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "由加摩拉正右侧水下房间中的几只纳迦守卫。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(6743),	-- Sustaining Ring
 					},
@@ -248,13 +299,47 @@ root(ROOTS.Instances, {
 				i(3078),	-- Naga Heartpiercer
 			}),
 			o(177964, {	-- Fathom Stone
-				["description"] = "In the water below the Twilight bridge.\n\nWARNING: Spawns Baron Aquanis.",
+				["description"] = createLocalizationString({
+					readable = "In the water below the Twilight bridge.\n\nWARNING: Spawns Baron Aquanis.",
+					constant = "IN_THE_WATER_BELOW_THE_TWILIGHT_BRIDGE_WARNING",
+					export = true,
+					text = {
+						en = "In the water below the Twilight bridge.\n\nWARNING: Spawns Baron Aquanis.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在暮光桥下方的水中。\n\n警告：会刷新阿奎尼斯男爵。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 6921,	-- Amongst the Ruins
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(16762),	-- Fathom Core
 					n(12876, {	-- Baron Aquanis
-						["description"] = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
+						["description"] = createLocalizationString({
+							readable = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
+							constant = "THIS_BOSS_CAN_ONLY_BE_SUMMONED_BY_HORDE_PLAYERS",
+							export = true,
+							text = {
+								en = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该首领只能由正在进行“废墟之中”任务的部落玩家召唤。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(16782),	-- Strange Water Globe
 						},

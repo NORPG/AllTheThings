@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(28558, {	-- Spirit Shard
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+					["description"] = "~L.SPIRIT_SHARDS_ARE_CURRENCY_TOKENS_DROPPED_BY",
 					["timeline"] = { REMOVED_8_0_1 },
 				}),
 				currency(1704, {	-- Spirit Shard
@@ -277,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
 				["cost"] = {
 					{ "i", 30633, 1 },	-- Auchenai Key
 					-- #if CLASSIC_ANNIVERSARY

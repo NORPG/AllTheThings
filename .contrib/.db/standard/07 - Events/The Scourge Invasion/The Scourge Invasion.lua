@@ -298,7 +298,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			q(88748, {	-- Cracked Necrotic Crystal
-				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+				["description"] = createLocalizationString({
+					readable = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+					constant = "IF_YOU_HEAR_THE_YELL_ACROSS_THE_CITY_THAT_THEY",
+					export = true,
+					text = {
+						en = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果你听到城中有人喊话，说他们入侵了公园，就前往要塞与公园之间的运河，精英憎恶就在那里（从公园到要塞，沿运河北岸前进）。\n\n他死亡后，尸体会出现水晶，所有等级合适的玩家都可以点击它接到任务，无论谁先攻击了他。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 16431,	-- Cracked Necrotic Crystal
 				["qi"] = 22949,	-- Cracked Necrotic Crystal
 				["maps"] = { STORMWIND_CITY },
@@ -313,7 +330,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			-- #else
 			q(9292, {	-- Cracked Necrotic Crystal
-				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+				["description"] = "~L.IF_YOU_HEAR_THE_YELL_ACROSS_THE_CITY_THAT_THEY",
 				["qg"] = 16431,	-- Cracked Necrotic Crystal
 				["qi"] = 22949,	-- Cracked Necrotic Crystal
 				["maps"] = { STORMWIND_CITY },
@@ -376,7 +393,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			q(88749, {	-- Faint Necrotic Crystal
-				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+				["description"] = createLocalizationString({
+					readable = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+					constant = "IF_YOU_HEAR_THE_YELL_ACROSS_THE_CITY_THAT_THEY_2",
+					export = true,
+					text = {
+						en = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果你听到城中有人喊话，说他们入侵了下水道，就前往下水道与皇家区之间的运河，精英憎恶就在那里。\n\n他死亡后，尸体会出现水晶，所有等级合适的玩家都可以点击它接到任务，无论谁先攻击了他。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 16531,	-- Faint Necrotic Crystal
 				["qi"] = 22950,	-- Faint Necrotic Crystal
 				["maps"] = { TIRISFAL_GLADES, UNDERCITY },
@@ -391,7 +425,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			}),
 			-- #else
 			q(9310, {	-- Faint Necrotic Crystal
-				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+				["description"] = "~L.IF_YOU_HEAR_THE_YELL_ACROSS_THE_CITY_THAT_THEY_2",
 				["qg"] = 16531,	-- Faint Necrotic Crystal
 				["qi"] = 22950,	-- Faint Necrotic Crystal
 				["maps"] = { TIRISFAL_GLADES, UNDERCITY },
@@ -745,7 +779,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["lvl"] = 65,
 			}),
 			q(9247, {	-- The Keeper's Call
-				["description"] = "You should receive this in the mail at level 60.",
+				["description"] = createLocalizationString({
+					readable = "You should receive this in the mail at level 60.",
+					constant = "YOU_SHOULD_RECEIVE_THIS_IN_THE_MAIL_AT_LEVEL_60",
+					export = true,
+					text = {
+						en = "You should receive this in the mail at level 60.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你应该会在 60 级时通过邮件收到这个。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qs"] = 22723,	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
 				["coord"] = { 81.1, 60.5, EASTERN_PLAGUELANDS },
 				["cr"] = 16281,	-- Keeper of the Rolls <The Argent Dawn>
@@ -802,7 +853,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			-- #endif
 		}),
 		n(14684, {	-- Balzaphon
-			["description"] = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
+			["description"] = createLocalizationString({
+				readable = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
+				constant = "LOCATED_IN_STRATHOLME_CAN_BE_FOUND_WANDERING_IN",
+				export = true,
+				text = {
+					en = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于斯坦索姆。\n\n可以在庭院中绕着喷泉转圈游荡时找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { STRATHOLME },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
@@ -817,7 +885,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(14686, {	-- Lady Falther'ess
-			["description"] = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
+			["description"] = createLocalizationString({
+				readable = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
+				constant = "LOCATED_IN_RAZORFEN_DOWNS_CAN_BE_FOUND_INSIDE",
+				export = true,
+				text = {
+					en = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于剃刀高地。\n\n可以在骷髅堆之前的一间牢房内找到。在你与她交谈之前，她看起来像一名人类女性，随后她会变身为女妖。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { RAZORFEN_DOWNS },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
@@ -830,7 +915,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(14695, {	-- Lord Blackwood
-			["description"] = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
+			["description"] = createLocalizationString({
+				readable = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
+				constant = "LOCATED_IN_SCHOLOMANCE_CAN_BE_FOUND_IN_THE_ROOM",
+				export = true,
+				text = {
+					en = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于通灵学院。\n\n可以在染疫雏龙之前的那间房间里找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { SCHOLOMANCE },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
@@ -845,7 +947,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(14690, {	-- Revanchion
-			["description"] = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
+			["description"] = createLocalizationString({
+				readable = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
+				constant = "LOCATED_IN_DIRE_MAUL_WEST_CAN_BE_FOUND_IN_THE",
+				export = true,
+				text = {
+					en = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于厄运之槌西区。\n\n可以在特迪斯·扭木上方和身后的走廊里找到，就是卡伦德里斯法师所在的那条走廊。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { DIRE_MAUL },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
@@ -860,7 +979,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(14693, {	-- Scorn
-			["description"] = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
+			["description"] = createLocalizationString({
+				readable = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
+				constant = "LOCATED_IN_SCARLET_MONASTERY_GRAVEYARD_HE",
+				export = true,
+				text = {
+					en = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于血色修道院墓地。\n\n击杀最后一名首领后，他会在墓地中巡逻。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { SCARLET_MONASTERY },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
@@ -875,7 +1011,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(14682, {	-- Sever
-			["description"] = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
+			["description"] = createLocalizationString({
+				readable = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
+				constant = "LOCATED_IN_SHADOWFANG_KEEP_CAN_BE_FOUND_IN_THE",
+				export = true,
+				text = {
+					en = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于影牙城堡。\n\n可以在庭院中屠夫房间入口右侧，沿坡道上去的房间里找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { SHADOWFANG_KEEP },
 			["groups"] = {
 				-- #if SEASON_OF_DISCOVERY
@@ -888,7 +1041,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(16143, {	-- Shadow of Doom
-			["description"] = "To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",
+			["description"] = createLocalizationString({
+				readable = "To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",
+				constant = "TO_SUMMON_THIS_MOB_SPEAK_TO_THE_CULTIST_AND",
+				export = true,
+				text = {
+					en = "To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "要召唤此怪物，请与教徒交谈并给他们 8 个符文。这会自动为你的队伍标记该怪物。",
+					-- TODO: tw = "",
+				},
+			}),
 			["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 			["groups"] = {
 				i(22484),	-- Necrotic Rune
@@ -937,7 +1107,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(28194, {	-- Prince Tenris Mirkblood
-			["description"] = "Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",
+			["description"] = createLocalizationString({
+				readable = "Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",
+				constant = "LOCATED_IN_KARAZHAN_CAN_BE_FOUND_IN_THE",
+				export = true,
+				text = {
+					en = "Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "位于卡拉赞。\n\n可以在卫兵室找到，就在阿图门所在马厩上方的染血之门后；可以从阿图门之后的楼梯上去，或者穿过莫罗斯所在的舞厅到达。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 			["maps"] = { KARAZHAN },
 			["groups"] = {
@@ -951,13 +1138,47 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				}),
 				i(38658, {	-- Vampiric Batling (PET!)
 					-- #if ANYCLASSIC
-					["description"] = "Drops for everyone in the raid. Get one on all of your alts!",
+					["description"] = createLocalizationString({
+						readable = "Drops for everyone in the raid. Get one on all of your alts!",
+						constant = "DROPS_FOR_EVERYONE_IN_THE_RAID_GET_ONE_ON_ALL",
+						export = true,
+						text = {
+							en = "Drops for everyone in the raid. Get one on all of your alts!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "团队中所有人均可拾取。给你的所有小号都弄一个！",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
 				i(39769, {	-- Arcanite Ripper
 					-- #if ANYCLASSIC
-					["description"] = "Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",
+					["description"] = createLocalizationString({
+						readable = "Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",
+						constant = "ONLY_ONE_OF_THESE_DROPS_PER_RAID_HELP_YOUR",
+						export = true,
+						text = {
+							en = "Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "每次团队副本只会掉落一件此物品。带上你的小号，帮你的朋友也在他们的账号上拿到吧！强烈建议以 6-8 人小队击杀该首领，并在每个团队中只把该物品硬性预留给一个人。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
@@ -1057,7 +1278,24 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				i(22975),	-- A Smudged Document
 				i(22977),	-- A Torn Letter
 				i(40110, {	-- Haunted Memento
-					["description"] = "This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",
+					["description"] = createLocalizationString({
+						readable = "This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",
+						constant = "THIS_IS_PROBABLY_ONE_OF_THE_COOLEST_ITEMS_IN",
+						export = true,
+						text = {
+							en = "This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这大概是游戏里最酷的物品之一。千万不要把它处理掉。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
 			},
@@ -1115,24 +1353,92 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			},
 		}),
 		n(REWARDS, {
-			["description"] = "The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",
+			["description"] = createLocalizationString({
+				readable = "The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",
+				constant = "THE_REPORTS_ARE_MAILED_TO_YOU_ABOUT_48_HOURS",
+				export = true,
+				text = {
+					en = "The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些报告会在你上交随机掉落信件任务后约 48 小时邮寄给你，每封信都有一条独特的趣味讯息。我不确定与回复中提到的 NPC 交谈是否会引出更多趣味文本，但应该有人去查证一下。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(23196, {	-- Greater Mark of the Dawn
-					["description"] = "1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",
+					["description"] = createLocalizationString({
+						readable = "1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",
+						constant = "1_STAMINA_FOR_EVERY_2_LEVELS_FOR_1_HOUR",
+						export = true,
+						text = {
+							en = "1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "每 2 级提供 1 点耐力，持续 1 小时。\n\n赢得 150 场战斗后可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						16436,	-- Argent Dawn Priest <The Argent Dawn>
 						16434,	-- Argent Dawn Champion <The Argent Dawn>
 					},
 				}),
 				i(23194, {	-- Lesser Mark of the Dawn
-					["description"] = "1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",
+					["description"] = createLocalizationString({
+						readable = "1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",
+						constant = "1_STAMINA_FOR_EVERY_6_LEVELS_FOR_1_HOUR",
+						export = true,
+						text = {
+							en = "1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "每 6 级提供 1 点耐力，持续 1 小时。\n\n赢得 50 场战斗后可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						16384,	-- Argent Dawn Initiate <The Argent Dawn>
 						16395,	-- Argent Dawn Paladin <The Argent Dawn>
 					},
 				}),
 				i(23195, {	-- Mark of the Dawn
-					["description"] = "1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",
+					["description"] = createLocalizationString({
+						readable = "1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",
+						constant = "1_STAMINA_FOR_EVERY_3_LEVELS_FOR_1_HOUR",
+						export = true,
+						text = {
+							en = "1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "每 3 级提供 1 点耐力，持续 1 小时。\n\n赢得 100 场战斗后可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						16435,	-- Argent Dawn Cleric <The Argent Dawn>
 						16433,	-- Argent Dawn Crusader <The Argent Dawn>

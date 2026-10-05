@@ -111,7 +111,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["hordeQuestData"] = q(29228, {	-- Follow That Cat (H)
 						["sourceQuest"] = 29227,	-- The Hunter's Revenge (H)
 					}),
-					["description"] = "Automatically granted after turning in |cFFFFD700The Hunter's Revenge|r.",
+					["description"] = createLocalizationString({
+						readable = "Automatically granted after turning in |cFFFFD700The Hunter's Revenge|r.",
+						constant = "AUTOMATICALLY_GRANTED_AFTER_TURNING_IN",
+						export = true,
+						text = {
+							en = "Automatically granted after turning in |cFFFFD700The Hunter's Revenge|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "上交|cFFFFD700猎人的复仇|r后自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 64.1, 20.1, NORTHERN_STRANGLETHORN },
 					["groups"] = {
 						objective(1, {	-- Find Mauti's Lair
@@ -128,7 +145,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["hordeQuestData"] = q(29229, {	-- Follow That Cat (H)
 						["sourceQuest"] = 29227,	-- The Hunter's Revenge (H)
 					}),
-					["description"] = "This version is available if you abandon the quest that was granted automatically.",
+					["description"] = createLocalizationString({
+						readable = "This version is available if you abandon the quest that was granted automatically.",
+						constant = "THIS_VERSION_IS_AVAILABLE_IF_YOU_ABANDON_THE_2",
+						export = true,
+						text = {
+							en = "This version is available if you abandon the quest that was granted automatically.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃自动获得的任务，此版本就会开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 64.6, 22.0, NORTHERN_STRANGLETHORN },
 					["groups"] = {
 						objective(1, {	-- Find Mauti's Lair

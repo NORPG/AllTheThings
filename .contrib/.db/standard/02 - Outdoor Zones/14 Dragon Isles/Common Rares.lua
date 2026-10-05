@@ -233,7 +233,24 @@ local RARE_GROUP_TEMPEST = {
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
-			["description"] = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",
+			["description"] = createLocalizationString({
+				readable = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",
+				constant = "THESE_ITEMS_CAN_DROP_FROM_ANY_LV70_ELITE_RARE",
+				export = true,
+				text = {
+					en = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些物品可以由任何 70 级精英稀有，或任意狩猎阶段的具名精英掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {
 				193163,	-- Territorial Coastling
 				193201,	-- Mucka the Raker

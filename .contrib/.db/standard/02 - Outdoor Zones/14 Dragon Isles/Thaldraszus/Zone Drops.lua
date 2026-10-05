@@ -6,14 +6,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THALDRASZUS, {
 		n(ZONE_DROPS, {
 			i(201458, {	-- Aegis of Tyrhold
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = createLocalizationString({
+					readable = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+					constant = "DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
+					export = true,
+					text = {
+						en = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "从提尔要塞区域周围的怪物、泰坦宝箱或瓦德拉肯联军周常中掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(200586, {	-- Derelict Sunglasses
 				["cr"] = 197346,	-- Mudgatu
 				["coord"] = { 40.6, 45.6, THALDRASZUS },
 			}),
 			i(201460, {	-- Gavel of Tyrhold
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(194562),	-- Occasional Sand
 			i(194262),	-- Pattern: Temporal Spellthread (RECIPE!)
@@ -25,46 +42,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			i(201734),	-- Technique: Cliffside Wylderdrake: Silver and Blue Armor (RECIPE!)
 			i(198893),	-- Technique: Cliffside Wylderdrake: Triple Head Horns (RECIPE!)
 			i(201055, {	-- Tyrhold Bindings
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201455, {	-- Tyrhold Broadsword
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201456, {	-- Tyrhold Carbine
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201054, {	-- Tyrhold Drape
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201048, {	-- Tyrhold Epaulets
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201053, {	-- Tyrhold Gloves
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201050, {	-- Tyrhold Leggings
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201461, {	-- Tyrhold Pinnacle
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201457, {	-- Tyrhold Relic
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201049, {	-- Tyrhold Robe
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201056, {	-- Tyrhold Sash
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201459, {	-- Tyrhold Shortsword
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201051, {	-- Tyrhold Slippers
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(201052, {	-- Tyrhold Visage
-				["description"] = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
+				["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_TYRHOLD_AREA_TITAN",
 			}),
 			i(197708, {	-- Unstable Matrix Core
 				["crs"] = {

@@ -235,7 +235,24 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(COMMON_BOSS_DROPS, {
 						symselector=SymSelector.BFA_WARFRONT_ARATHI_CBD,
-						["description"] = "These items can drop off any rare.",
+						["description"] = createLocalizationString({
+							readable = "These items can drop off any rare.",
+							constant = "THESE_ITEMS_CAN_DROP_OFF_ANY_RARE",
+							export = true,
+							text = {
+								en = "These items can drop off any rare.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这些物品可以由任意稀有掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["modID"] = 5,	-- This will inherently apply to all items within.
 						["crs"] = {
 							142709,	-- Beastrider Kama
@@ -318,7 +335,24 @@ root(ROOTS.ExpansionFeatures,
 						n(142688, {	-- Darbel Montrose
 							["allianceQuestID"] = 53084,	-- Darbel Montrose [Alliance]
 							["hordeQuestID"] = 53507,	-- Darbel Montrose [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["description"] = createLocalizationString({
+								readable = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+								constant = "SPAWNS_AT_THE_NORTHERN_POINT_WHEN_ALLIANCE",
+								export = true,
+								text = {
+									en = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "当联盟控制时在北点刷新，当部落控制时在南点刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 50.4, 61.2, ARATHI_HIGHLANDS },	-- Horde-controlled
@@ -333,7 +367,24 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
 							["coord"] = { 53.8, 58.2, ARATHI_HIGHLANDS },
-							["description"] = "Only shows up when Alliance-controlled.",
+							["description"] = createLocalizationString({
+								readable = "Only shows up when Alliance-controlled.",
+								constant = "ONLY_SHOWS_UP_WHEN_ALLIANCE_CONTROLLED_2",
+								export = true,
+								text = {
+									en = "Only shows up when Alliance-controlled.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "仅在联盟控制时出现。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(163579),	-- Highland Mustang (MOUNT!)
 							},
@@ -350,7 +401,24 @@ root(ROOTS.ExpansionFeatures,
 						n(142686, {	-- Foulbelly
 							["allianceQuestID"] = 53086,	-- Foulbelly [Alliance]
 							["hordeQuestID"] = 53509,	-- Foulbelly [Horde]
-							["description"] = "Spawns at the back of the cave.",
+							["description"] = createLocalizationString({
+								readable = "Spawns at the back of the cave.",
+								constant = "SPAWNS_AT_THE_BACK_OF_THE_CAVE",
+								export = true,
+								text = {
+									en = "Spawns at the back of the cave.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在洞穴的后方刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["isWeekly"] = true,
 							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
 							["groups"] = {
@@ -372,7 +440,7 @@ root(ROOTS.ExpansionFeatures,
 						n(142662, {	-- Geomancer Flintdagger
 							["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [Alliance]
 							["hordeQuestID"] = 53511,	-- Geomancer Flintdagger [Horde]
-							["description"] = "Spawns at the back of the cave.",
+							["description"] = "~L.SPAWNS_AT_THE_BACK_OF_THE_CAVE",
 							["isWeekly"] = true,
 							["coord"] = { 78.1, 36.7, ARATHI_HIGHLANDS },
 							["groups"] = {
@@ -382,7 +450,7 @@ root(ROOTS.ExpansionFeatures,
 						n(142725, {	-- Horrific Apparition
 							["allianceQuestID"] = 53087,	-- Horrific Apparition [Alliance]
 							["hordeQuestID"] = 53512,	-- Horrific Apparition [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["description"] = "~L.SPAWNS_AT_THE_NORTHERN_POINT_WHEN_ALLIANCE",
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 19.5, 60.9, ARATHI_HIGHLANDS },	-- Horde-controlled
@@ -397,7 +465,24 @@ root(ROOTS.ExpansionFeatures,
 							["isWeekly"] = true,
 							["coord"] = { 49.0, 40.0, ARATHI_HIGHLANDS },
 							["races"] = HORDE_ONLY,
-							["description"] = "Only shows up when Horde-controlled.",
+							["description"] = createLocalizationString({
+								readable = "Only shows up when Horde-controlled.",
+								constant = "ONLY_SHOWS_UP_WHEN_HORDE_CONTROLLED_2",
+								export = true,
+								text = {
+									en = "Only shows up when Horde-controlled.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "仅在部落控制时出现。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(163578),	-- Broken Highland Mustang (MOUNT!)
 							},
@@ -405,7 +490,7 @@ root(ROOTS.ExpansionFeatures,
 						n(142112, {	-- Kor'gresh Coldrage
 							["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [Alliance]
 							["hordeQuestID"] = 53513,	-- Kor'gresh Coldrage [Horde]
-							["description"] = "Spawns at the back of the cave.",
+							["description"] = "~L.SPAWNS_AT_THE_BACK_OF_THE_CAVE",
 							["isWeekly"] = true,
 							["coord"] = { 48.2, 79.8, ARATHI_HIGHLANDS },
 							["groups"] = {
@@ -415,7 +500,24 @@ root(ROOTS.ExpansionFeatures,
 						n(142684, {	-- Kovork
 							["allianceQuestID"] = 53089,	-- Kovork [Alliance]
 							["hordeQuestID"] = 53514,	-- Kovork [Horde]
-							["description"] = "Spawns at the front of the cave.",
+							["description"] = createLocalizationString({
+								readable = "Spawns at the front of the cave.",
+								constant = "SPAWNS_AT_THE_FRONT_OF_THE_CAVE",
+								export = true,
+								text = {
+									en = "Spawns at the front of the cave.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在洞穴入口处刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["isWeekly"] = true,
 							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
 							["groups"] = {
@@ -453,7 +555,24 @@ root(ROOTS.ExpansionFeatures,
 						n(142423, {	-- Overseer Krix
 							["allianceQuestID"] = 53014,	-- Overseer Krix [Alliance]
 							["hordeQuestID"] = 53518,	-- Overseer Krix [Horde]
-							["description"] = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
+							["description"] = createLocalizationString({
+								readable = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
+								constant = "SPAWNS_AT_THE_BACK_OF_THE_NORTHERN_CAVE_FOR",
+								export = true,
+								text = {
+									en = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "对联盟而言刷新在北侧洞穴的深处，对部落而言则在南侧洞穴的深处。",
+									-- TODO: tw = "",
+								},
+							}),
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 33.7, 36.7, ARATHI_HIGHLANDS },	-- Horde-controlled
@@ -475,7 +594,7 @@ root(ROOTS.ExpansionFeatures,
 						n(142436, {	-- Ragebeak
 							["allianceQuestID"] = 53016,	-- Ragebeak [Alliance]
 							["hordeQuestID"] = 53522,	-- Ragebeak [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["description"] = "~L.SPAWNS_AT_THE_NORTHERN_POINT_WHEN_ALLIANCE",
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 11.9, 52.1, ARATHI_HIGHLANDS },	-- Horde-controlled
@@ -506,7 +625,7 @@ root(ROOTS.ExpansionFeatures,
 						n(142690, {	-- Singer
 							["allianceQuestID"] = 53093,	-- Singer [Alliance]
 							["hordeQuestID"] = 53525,	-- Singer [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["description"] = "~L.SPAWNS_AT_THE_NORTHERN_POINT_WHEN_ALLIANCE",
 							["isWeekly"] = true,
 							["coords"] = {
 								{ 50.4, 57.6, ARATHI_HIGHLANDS },	-- Horde-controlled
@@ -555,7 +674,24 @@ root(ROOTS.ExpansionFeatures,
 						n(142682, {	-- Zalas Witherbark <Warband Leader>
 							["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [Alliance]
 							["hordeQuestID"] = 53530,	-- Zalas Witherbark <Warband Leader> [Horde]
-							["description"] = "Spawns in the middle of the cave.",
+							["description"] = createLocalizationString({
+								readable = "Spawns in the middle of the cave.",
+								constant = "SPAWNS_IN_THE_MIDDLE_OF_THE_CAVE",
+								export = true,
+								text = {
+									en = "Spawns in the middle of the cave.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在洞穴中央刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["isWeekly"] = true,
 							["coord"] = { 63.2, 77.6, ARATHI_HIGHLANDS },
 							["groups"] = {
@@ -824,7 +960,24 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 								ach(12884, {	-- Leader of Troops (A)
-									["description"] = "You must personally create each troop. Siege Engines are limited to 3 active at a time.",
+									["description"] = createLocalizationString({
+										readable = "You must personally create each troop. Siege Engines are limited to 3 active at a time.",
+										constant = "YOU_MUST_PERSONALLY_CREATE_EACH_TROOP_SIEGE",
+										export = true,
+										text = {
+											en = "You must personally create each troop. Siege Engines are limited to 3 active at a time.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "你必须亲自制造每一支部队。攻城引擎同时最多只能有 3 个激活。",
+											-- TODO: tw = "",
+										},
+									}),
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
 										crit(41124),	-- Footmen
@@ -835,7 +988,24 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								ach(12878, {	-- Leader of Troops (H)
-									["description"] = "You must personally create each troop. Demolishers are limited to 3 active at a time.",
+									["description"] = createLocalizationString({
+										readable = "You must personally create each troop. Demolishers are limited to 3 active at a time.",
+										constant = "YOU_MUST_PERSONALLY_CREATE_EACH_TROOP",
+										export = true,
+										text = {
+											en = "You must personally create each troop. Demolishers are limited to 3 active at a time.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "你必须亲自制造每一支部队。攻城车同时最多只能有 3 个激活。",
+											-- TODO: tw = "",
+										},
+									}),
 									["races"] = HORDE_ONLY,
 									["groups"] = {
 										crit(41120),	-- Grunts
@@ -849,7 +1019,24 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = ALLIANCE_ONLY,
 								}),
 								ach(12889, {	-- Strike Fast (A)
-									["description"] = "You must personally capture each flag.",
+									["description"] = createLocalizationString({
+										readable = "You must personally capture each flag.",
+										constant = "YOU_MUST_PERSONALLY_CAPTURE_EACH_FLAG",
+										export = true,
+										text = {
+											en = "You must personally capture each flag.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "你必须亲自夺取每一面旗帜。",
+											-- TODO: tw = "",
+										},
+									}),
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
 										crit(41130),	-- Galson's Lode
@@ -865,7 +1052,7 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 								ach(12876, {	-- Strike Fast (H)
-									["description"] = "You must personally capture each flag.",
+									["description"] = "~L.YOU_MUST_PERSONALLY_CAPTURE_EACH_FLAG",
 									["races"] = HORDE_ONLY,
 									["groups"] = {
 										crit(41111),	-- Circle of Elements
@@ -878,7 +1065,24 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								ach(12886, {	-- Tour of War (A)
-									["description"] = "Only one commander is up per warfront cycle.",
+									["description"] = createLocalizationString({
+										readable = "Only one commander is up per warfront cycle.",
+										constant = "ONLY_ONE_COMMANDER_IS_UP_PER_WARFRONT_CYCLE",
+										export = true,
+										text = {
+											en = "Only one commander is up per warfront cycle.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "每个战争前线周期只会出现一名指挥官。",
+											-- TODO: tw = "",
+										},
+									}),
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
 										crit(43480),	-- Eitrigg
@@ -887,7 +1091,7 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								ach(12879, {	-- Tour of War (H)
-									["description"] = "Only one commander is up per warfront cycle.",
+									["description"] = "~L.ONLY_ONE_COMMANDER_IS_UP_PER_WARFRONT_CYCLE",
 									["races"] = HORDE_ONLY,
 									["groups"] = {
 										crit(43479),	-- Danath Trollbane
@@ -1394,7 +1598,24 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53207, {	-- The Warfront Looms
-									["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",
+									["description"] = createLocalizationString({
+										readable = "Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",
+										constant = "AUTOMATICALLY_GRANTED_UPON_COMPLETING_UNITING",
+										export = true,
+										text = {
+											en = "Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "完成“团结赞达拉”以解锁世界任务后自动获得。如果它没有弹出，请重新登录。我不得不重新登录两次才接到这个任务。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 52451 },	-- Uniting Zandalar
 									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.97, 94.35, DAZARALOR },
@@ -1436,11 +1657,45 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								-- INCURSIONS INFO STARTS HERE
 								i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
-									["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
+									["description"] = createLocalizationString({
+										readable = "This cache is awarded for completing any incursion on an Alliance character.",
+										constant = "THIS_CACHE_IS_AWARDED_FOR_COMPLETING_ANY",
+										export = true,
+										text = {
+											en = "This cache is awarded for completing any incursion on an Alliance character.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "以联盟角色完成任意入侵即可获得这个宝箱。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
 								}),
 								i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
-									["description"] = "This cache is awarded for completing any incursion on a Horde character.",
+									["description"] = createLocalizationString({
+										readable = "This cache is awarded for completing any incursion on a Horde character.",
+										constant = "THIS_CACHE_IS_AWARDED_FOR_COMPLETING_ANY_2",
+										export = true,
+										text = {
+											en = "This cache is awarded for completing any incursion on a Horde character.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "以部落角色完成任意入侵即可获得这个宝箱。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
 								}),
 
@@ -1629,7 +1884,7 @@ root(ROOTS.ExpansionFeatures,
 								-- [x] Normal Quest (6) [Weapons]
 								-- [x] Heroic Quest (23) [Cloaks/Armor/Weapons]
 
-								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
+								["description"] = "~L.THESE_ARE_OBTAINED_BY_WINNING_THE_WARFRONT_AND",
 								["groups"] = {
 									i(164578, {	-- Warfronts Equipment Cache [A]
 										["modID"] = 3,

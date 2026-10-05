@@ -78,7 +78,24 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					ach(9437),	-- A Demidos of Reality
 					ach(8845, {	-- As I Walk Through the Valley of the Shadow of Moon
-						["description"] = "Completing the Achievement will allow you to buy 'Shadowmoon Valley Treasure Map' from Grakis in Stormshield.",
+						["description"] = createLocalizationString({
+							readable = "Completing the Achievement will allow you to buy 'Shadowmoon Valley Treasure Map' from Grakis in Stormshield.",
+							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO_5",
+							export = true,
+							text = {
+								en = "Completing the Achievement will allow you to buy 'Shadowmoon Valley Treasure Map' from Grakis in Stormshield.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成该成就后，你可以在暴风之盾的格拉基斯处购买“影月谷藏宝图”。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -92,7 +109,24 @@ root(ROOTS.Zones, {
 					}),
 					ach(8938),	-- Explore Shadowmoon Valley
 					ach(9436, {	-- It's the Stones! (Socrethar's Rise)
-						["description"] = "Must be on the daily quest Assault on Socrethar's Rise.",
+						["description"] = createLocalizationString({
+							readable = "Must be on the daily quest Assault on Socrethar's Rise.",
+							constant = "MUST_BE_ON_THE_DAILY_QUEST_ASSAULT_ON_SOCRETHAR",
+							export = true,
+							text = {
+								en = "Must be on the daily quest Assault on Socrethar's Rise.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须正在进行日常任务“突袭索克雷萨高地”。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 46.4, 71.6, DRAENOR_SHADOWMOON_VALLEY },
 							{ 49.5, 71.6, DRAENOR_SHADOWMOON_VALLEY },
@@ -114,7 +148,24 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9435, {	-- Take From Them Everything (Socrethar's Rise)
-						["description"] = "Pickup the buff and then keep that same buff active for 10 minutes, make sure to only click Fruit Baskets.",
+						["description"] = createLocalizationString({
+							readable = "Pickup the buff and then keep that same buff active for 10 minutes, make sure to only click Fruit Baskets.",
+							constant = "PICKUP_THE_BUFF_AND_THEN_KEEP_THAT_SAME_BUFF",
+							export = true,
+							text = {
+								en = "Pickup the buff and then keep that same buff active for 10 minutes, make sure to only click Fruit Baskets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "拾取该增益后，让同一个增益持续 10 分钟，注意只点击水果篮。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "o" , 234457 },	-- Fruit Basket
 						["coords"] = {
 							{ 46.4, 81.4, DRAENOR_SHADOWMOON_VALLEY },
@@ -144,7 +195,24 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(1447, {	-- Moonshell Crab (PET!)
-							["description"] = "Found mostly on the northeast coast.",
+							["description"] = createLocalizationString({
+								readable = "Found mostly on the northeast coast.",
+								constant = "FOUND_MOSTLY_ON_THE_NORTHEAST_COAST",
+								export = true,
+								text = {
+									en = "Found mostly on the northeast coast.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "主要分布在东北海岸。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						pet(1455, {	-- Mossbite Skitterer (PET!)
 							["coord"] = { 46.6, 77.8, DRAENOR_SHADOWMOON_VALLEY },
@@ -152,7 +220,24 @@ root(ROOTS.Zones, {
 						pet(1587),	-- Royal Moth (PET!)
 						pet(1593),	-- Waterfly (PET!)
 						pet(1582, {	-- Zangar Crawler (PET!)
-							["description"] = "Can be found on the Darktide Roost shoreline and NW Elodor in Shadowmoon, as well as around 73, 34 in Spires of Arak.",
+							["description"] = createLocalizationString({
+								readable = "Can be found on the Darktide Roost shoreline and NW Elodor in Shadowmoon, as well as around 73, 34 in Spires of Arak.",
+								constant = "CAN_BE_FOUND_ON_THE_DARKTIDE_ROOST_SHORELINE",
+								export = true,
+								text = {
+									en = "Can be found on the Darktide Roost shoreline and NW Elodor in Shadowmoon, as well as around 73, 34 in Spires of Arak.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "可在影月谷的暗潮栖木海岸线和艾洛多尔西北部，以及阿兰卡峰林 73, 34 附近找到。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				})),
@@ -613,7 +698,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.8, 94.4, DRAENOR_SHADOWMOON_VALLEY },
 					}),
 					q(34788, {	-- Friend of the Exarchs
-						["description"] = "You can only pick one of these followers per character.",
+						["description"] = createLocalizationString({
+							readable = "You can only pick one of these followers per character.",
+							constant = "YOU_CAN_ONLY_PICK_ONE_OF_THESE_FOLLOWERS_PER",
+							export = true,
+							text = {
+								en = "You can only pick one of these followers per character.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "每个角色只能选择这些追随者中的一个。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 34792,	-- The Traitor's True Name
 						["qg"] = 80079,	-- Exarch Naielle
 						["coord"] = { 62.5, 26.2, DRAENOR_SHADOWMOON_VALLEY },
@@ -703,7 +805,24 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					heroscall(q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
-						["description"] = "After the 'Assault on the Dark Portal' scenario, turn in quest 'Step Three: Prophet!' without accepting the following quest, then visit a Hero's Call Board to pick this quest up.",
+						["description"] = createLocalizationString({
+							readable = "After the 'Assault on the Dark Portal' scenario, turn in quest 'Step Three: Prophet!' without accepting the following quest, then visit a Hero's Call Board to pick this quest up.",
+							constant = "AFTER_THE_ASSAULT_ON_THE_DARK_PORTAL_SCENARIO",
+							export = true,
+							text = {
+								en = "After the 'Assault on the Dark Portal' scenario, turn in quest 'Step Three: Prophet!' without accepting the following quest, then visit a Hero's Call Board to pick this quest up.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成“突袭黑暗之门”场景战役后，交掉任务“第三步：先知！”，但不要接受后续任务，然后前往英雄的召唤布告板接取这个任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_7_3_5 },
 						["isBreadcrumb"] = true,
 						["DisablePartySync"] = true,
@@ -841,7 +960,24 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34897, {	-- Rangari Roundup
-						["description"] = "You need to be close to Rangari Navra before quest shows up on mini-map.",
+						["description"] = createLocalizationString({
+							readable = "You need to be close to Rangari Navra before quest shows up on mini-map.",
+							constant = "YOU_NEED_TO_BE_CLOSE_TO_RANGARI_NAVRA_BEFORE",
+							export = true,
+							text = {
+								en = "You need to be close to Rangari Navra before quest shows up on mini-map.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你需要靠近游侠纳芙拉，任务才会显示在小地图上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 80378,	-- Rangari Navra
 						["coord"] = { 43.6, 51.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
@@ -963,7 +1099,24 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34575, {	-- Step Three: Prophet!
-						["description"] = "Automatically granted after completing the Assault on the Dark Portal scenario.",
+						["description"] = createLocalizationString({
+							readable = "Automatically granted after completing the Assault on the Dark Portal scenario.",
+							constant = "AUTOMATICALLY_GRANTED_AFTER_COMPLETING_THE_2",
+							export = true,
+							text = {
+								en = "Automatically granted after completing the Assault on the Dark Portal scenario.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成突袭黑暗之门场景战役后自动获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35905, {	-- Supply Drop
@@ -1013,7 +1166,24 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34054, {	-- The Dark Side of the Moon
-						["description"] = "Granted automatically upon completing |cFFFFD700Into Anguish|r.",
+						["description"] = createLocalizationString({
+							readable = "Granted automatically upon completing |cFFFFD700Into Anguish|r.",
+							constant = "GRANTED_AUTOMATICALLY_UPON_COMPLETING",
+							export = true,
+							text = {
+								en = "Granted automatically upon completing |cFFFFD700Into Anguish|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成|cFFFFD700陷入苦痛|r后自动获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 35032,	-- Into Anguish
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1024,7 +1194,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35093, {	-- The Dark Side of the Moon
-						["description"] = "This version is offered if you abandon the quest '|cFFFFD700The Dark Side of the Moon|r' (34054) and return to |cFFFFD700Prophet Velen|r.",
+						["description"] = createLocalizationString({
+							readable = "This version is offered if you abandon the quest '|cFFFFD700The Dark Side of the Moon|r' (34054) and return to |cFFFFD700Prophet Velen|r.",
+							constant = "THIS_VERSION_IS_OFFERED_IF_YOU_ABANDON_THE",
+							export = true,
+							text = {
+								en = "This version is offered if you abandon the quest '|cFFFFD700The Dark Side of the Moon|r' (34054) and return to |cFFFFD700Prophet Velen|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你放弃任务“|cFFFFD700月之暗面|r”（34054）并回到 |cFFFFD700先知维伦|r 处，就会提供此版本。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 35032,	-- Into Anguish
 						["qg"] = 77282,	-- Prophet Velen
 						["coord"] = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
@@ -1110,7 +1297,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(37322, {	-- The Prophet's Final Message
-						["description"] = "The item that starts this quest is mailed to you.",
+						["description"] = createLocalizationString({
+							readable = "The item that starts this quest is mailed to you.",
+							constant = "THE_ITEM_THAT_STARTS_THIS_QUEST_IS_MAILED_TO",
+							export = true,
+							text = {
+								en = "The item that starts this quest is mailed to you.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "开启此任务的物品会邮寄给你。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 33256,	-- The Defense of Karabor
 						["provider"] = { "i", 119208 },	-- The Prophet's Arcanum
 						["races"] = ALLIANCE_ONLY,
@@ -1154,7 +1358,24 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36309, {	-- The Strength of Iron
-						["description"] = "Item that starts the Quest can be looted from almost any creature in Shadowmoon Valley; however, Karnoth has a guaranteed drop chance.",
+						["description"] = createLocalizationString({
+							readable = "Item that starts the Quest can be looted from almost any creature in Shadowmoon Valley; however, Karnoth has a guaranteed drop chance.",
+							constant = "ITEM_THAT_STARTS_THE_QUEST_CAN_BE_LOOTED_FROM_2",
+							export = true,
+							text = {
+								en = "Item that starts the Quest can be looted from almost any creature in Shadowmoon Valley; however, Karnoth has a guaranteed drop chance.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "起始任务的物品可以从影月谷几乎任何生物身上拾取；不过卡诺斯必定掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 115343 },	-- Haephest's Satchel (QS!)
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = ALLIANCE_ONLY,
@@ -1311,7 +1532,24 @@ root(ROOTS.Zones, {
 				n(RARES, {
 					-- Coords have been confirmed on rares except for Edge of Reality, Pathrunner, and some noted rares on longer spawn timers.
 					n(77140, {	-- Amaukwa
-						["description"] = "Flies in a roughly oval pattern between the two coords.",
+						["description"] = createLocalizationString({
+							readable = "Flies in a roughly oval pattern between the two coords.",
+							constant = "FLIES_IN_A_ROUGHLY_OVAL_PATTERN_BETWEEN_THE_TWO",
+							export = true,
+							text = {
+								en = "Flies in a roughly oval pattern between the two coords.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在两个坐标之间沿大致呈椭圆形的路线飞行。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33061,
 						["coords"] = {
 							{ 29.4, 29.8, DRAENOR_SHADOWMOON_VALLEY },
@@ -1393,7 +1631,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(113082) },	-- Precious Bloodthorn Loop
 					}),
 					n(79524, {	-- Hypnocroak
-						["description"] = "In a cave behind the waterfall.",
+						["description"] = createLocalizationString({
+							readable = "In a cave behind the waterfall.",
+							constant = "IN_A_CAVE_BEHIND_THE_WATERFALL",
+							export = true,
+							text = {
+								en = "In a cave behind the waterfall.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在瀑布后面的洞穴中。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 35558,
 						["coord"] = { 37.6, 49.0, DRAENOR_SHADOWMOON_VALLEY },
 						["groups"] = { i(113631) },	-- Hypnosis Goggles (TOY!)
@@ -1461,7 +1716,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(119364) },	-- Hydraskin Shoulderguards
 					}),
 					n(50883, {	-- Pathrunner
-						["description"] = "Pathrunner has a respawn timer between 5-16 hours. Mount drop rate is 100% for all participants.",
+						["description"] = createLocalizationString({
+							readable = "Pathrunner has a respawn timer between 5-16 hours. Mount drop rate is 100% for all participants.",
+							constant = "PATHRUNNER_HAS_A_RESPAWN_TIMER_BETWEEN_5_16",
+							export = true,
+							text = {
+								en = "Pathrunner has a respawn timer between 5-16 hours. Mount drop rate is 100% for all participants.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "逐径者的刷新时间在 5-16 小时之间。所有参与者获得坐骑的掉落率均为 100%。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 							{ 45.8, 68.2, DRAENOR_SHADOWMOON_VALLEY },
 							{ 56.8, 52.2, DRAENOR_SHADOWMOON_VALLEY },
@@ -1495,7 +1767,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(119396) },	-- Shadowspeaker's Shard
 					}),
 					n(82415, {	-- Shinri
-						["description"] = "He cannot be attacked if he is running, so it's best to sneak up behind him.",
+						["description"] = createLocalizationString({
+							readable = "He cannot be attacked if he is running, so it's best to sneak up behind him.",
+							constant = "HE_CANNOT_BE_ATTACKED_IF_HE_IS_RUNNING_SO_IT_S",
+							export = true,
+							text = {
+								en = "He cannot be attacked if he is running, so it's best to sneak up behind him.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "他在奔跑时无法被攻击，所以最好从背后偷袭他。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 35732,
 						["coords"] = {
 							{ 62.8, 50.2, DRAENOR_SHADOWMOON_VALLEY },
@@ -1532,7 +1821,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(109074) },	-- Fine Void-Chain Cinch
 					}),
 					n(75434, {	-- Windfang Matriarch (Alliance)
-						["description"] = "Speak with Romuul to start the event that spawns Wildfang Matriarch.",
+						["description"] = createLocalizationString({
+							readable = "Speak with Romuul to start the event that spawns Wildfang Matriarch.",
+							constant = "SPEAK_WITH_ROMUUL_TO_START_THE_EVENT_THAT",
+							export = true,
+							text = {
+								en = "Speak with Romuul to start the event that spawns Wildfang Matriarch.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与罗姆尔交谈，开启会刷新野牙女族长的事件。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 33038,
 						["coord"] = { 42.8, 40.4, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
@@ -1578,7 +1884,24 @@ root(ROOTS.Zones, {
 					o(226831, {	-- Astrologer's Box
 						["questID"] = 33867,
 						["coord"] = { 49.4, 37.6, DRAENOR_SHADOWMOON_VALLEY },
-						["description"] = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
+						["description"] = createLocalizationString({
+							readable = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
+							constant = "IF_THIS_IS_NOT_SHOWING_UP_FOR_YOU_ON_ALLIANCE",
+							export = true,
+							text = {
+								en = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果这个东西没有在联盟角色上显示出来，你需要先完成该区域的任务，然后切换到新的地图区域再回来才能看到宝藏。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = { i(109739) },	-- Star Chart (TOY!)
 					}),
 					o(232591, {	-- Beloved's Offering
@@ -1606,7 +1929,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(108904) },	-- Fingers of the Void
 					}),
 					o(236755, {	-- Dusty Lockbox
-						["description"] = "Go up the path and jump on the standing stones. Follow them across to the second set of coords.",
+						["description"] = createLocalizationString({
+							readable = "Go up the path and jump on the standing stones. Follow them across to the second set of coords.",
+							constant = "GO_UP_THE_PATH_AND_JUMP_ON_THE_STANDING_STONES",
+							export = true,
+							text = {
+								en = "Go up the path and jump on the standing stones. Follow them across to the second set of coords.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "沿着小路向上走，跳到立石上。沿着它们前进，到达第二组坐标。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 36879,
 						["coords"] = {
 							{ 28.0, 38.5, DRAENOR_SHADOWMOON_VALLEY },	-- Path up starts
@@ -1811,7 +2151,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(113554, {	-- Zomstrok (PET!)
-						["description"] = "Can be found on the islands southwest of Socrethar's Rise.",
+						["description"] = createLocalizationString({
+							readable = "Can be found on the islands southwest of Socrethar's Rise.",
+							constant = "CAN_BE_FOUND_ON_THE_ISLANDS_SOUTHWEST_OF",
+							export = true,
+							text = {
+								en = "Can be found on the islands southwest of Socrethar's Rise.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在索克雷萨之座西南方的岛屿上找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["crs"] = {
 							82261,	-- Darktide Boneshell
 							82262,	-- Darktide Husk

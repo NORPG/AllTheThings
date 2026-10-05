@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			n(QUESTS, {
 				q(7785, {	-- Examine the Vessel
-					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_ONCE_YOU_HAVE",
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["coords"] = {
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = SWORD_CLASSES,
 				}),
 				q(85442, {	-- Examine the Vessel
-					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_ONCE_YOU_HAVE",
 					["qg"] = 232309,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["maps"] = { MOLTEN_CORE },
@@ -149,7 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(14435, bubbleDownSelf({ ["timeline"] = { REMOVED_1_15_4 } }, {	-- Prince Thunderaan <The Wind Seeker>
 				["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-				["description"] = "This is a 40-man raid boss.",
+				["description"] = "~L.THIS_IS_A_40_MAN_RAID_BOSS",
 				-- #if ANYCLASSIC
 				["modelScale"] = 20,
 				-- #endif

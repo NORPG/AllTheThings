@@ -18,7 +18,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			n(VENDORS, {
 				n(227607, {	-- Fliq'ri <Mistress of Minions>
-					["description"] = "Found by the right stairs near the second boss. You may need another player to be caught by the nearby guard to be able to buy from the vendor yourself.",
+					["description"] = createLocalizationString({
+						readable = "Found by the right stairs near the second boss. You may need another player to be caught by the nearby guard to be able to buy from the vendor yourself.",
+						constant = "FOUND_BY_THE_RIGHT_STAIRS_NEAR_THE_SECOND_BOSS",
+						export = true,
+						text = {
+							en = "Found by the right stairs near the second boss. You may need another player to be caught by the nearby guard to be able to buy from the vendor yourself.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于第二个首领附近的右侧楼梯旁。你可能需要另一名玩家被附近的卫兵抓住，这样你才能自己向商人购买。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 74.7, 48.8, 2343 },
 					["groups"] = {
 						i(226191),	-- Web Pet Leash (TOY!)

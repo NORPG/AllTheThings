@@ -463,7 +463,24 @@ WARCRAFT_FOREVER_COLLECTION = createHeader({
 
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_6 } }, {
-		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《魔兽世界》原版典藏版的人都可以获得这些奖励。\n\n网上可能仍有存货，但你要为此付出相当一大笔真金白银。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			n(QUESTS, {
 				-- #if NOT ANYCLASSIC
@@ -527,7 +544,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				-- #else
 				q(91888, {	-- A Special Delivery
 					["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
-					["description"] = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+					["description"] = createLocalizationString({
+						readable = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+						constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_2",
+						export = true,
+						text = {
+							en = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "购买 2024 年员工 30 周年纪念典藏版的人都可以获得这些奖励。\n\n网上可能仍有存货，但你要为此付出相当一大笔真金白银。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["coords"] = { 28.2, 75.8, STRANGLETHORN_VALE },
 					["maps"] = {
@@ -580,7 +614,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			}),
 			-- #if NOT ANYCLASSIC
 			n(REWARDS, {
-				["description"] = "Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",
+				["description"] = createLocalizationString({
+					readable = "Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",
+					constant = "EVERY_CHARACTER_YOU_CREATED_WAS_ABLE_TO_SELECT",
+					export = true,
+					text = {
+						en = "Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你创建的每个角色都能通过完成本种族的“欢迎！”任务，在三种宠物中选择一种。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					-- #if AFTER 2.0.1
 					8547,	-- Welcome! (Blood Elf)
@@ -622,21 +673,55 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #if NOT ANYCLASSIC
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_3",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "只要购买了《燃烧的远征》典藏版，任何人都可以获得这些奖励。\n\n网上可能仍有存货，但预计要花费相当一大笔现实货币。\n\n注意：非欧服账号即使兑换也无法获得鲁尔基的蛋。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(665, {	-- Collector's Edition: Netherwhelp
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
 			i(25535),	-- Netherwhelp (PET!)
 			euONLY(i(30360, {	-- Lurky (PET!)
-				["description"] = "This was only available in the EU.",
+				["description"] = createLocalizationString({
+					readable = "This was only available in the EU.",
+					constant = "THIS_WAS_ONLY_AVAILABLE_IN_THE_EU",
+					export = true,
+					text = {
+						en = "This was only available in the EU.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这只在欧洲服务器开放过。",
+						-- TODO: tw = "",
+					},
+				}),
 			})),
 		},
 	})),
 	-- #else
 	q(63865, {	-- A Special Thank
 		["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 },
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+		["description"] = "~L.THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_3",
 		["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 		["coords"] = {
 			-- #if AFTER CATA
@@ -672,14 +757,31 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
 			euONLY(i(30360, {	-- Lurky (PET!)
-				["description"] = "This was only available in the EU.",
+				["description"] = "~L.THIS_WAS_ONLY_AVAILABLE_IN_THE_EU",
 			})),
 		},
 	}),
 	-- #endif
 	-- #if ANYCLASSIC
 	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_2_5_5_PHASE_2 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_4",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "只要购买了《燃烧的远征》经典怀旧服豪华版，任何人都可以获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			q(63450, {	-- A Deluxe Delivery (Landro Longshot)
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -716,7 +818,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #else
 	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_7, ADDED_11_2_7, REMOVED_12_0_7  } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
+		["description"] = "~L.THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_4",
 		["groups"] = {
 			-- #if AFTER 11.2.5
 			i(248090),	-- Viridian Phase-Hunter (MOUNT!)
@@ -728,7 +830,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #endif
 	-- #if ANYCLASSIC
 	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2, ADDED_5_5_2 } }, {	-- For historical context, MOP Classic originally used the same IDs as Retail, but these were removed from Classic with the release of SoO.
-		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_5",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "只要购买了《燃烧的远征》经典怀旧服周年庆的外域英雄包，任何人都可以获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			-- #if BEFORE WRATH
 			q(93824, {	-- A Grand Delivery (Landro Longshot)
@@ -780,7 +899,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #else
 	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
-		["description"] = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
+		["description"] = "~L.THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_5",
 		["groups"] = {
 			i(253573),	-- Cobalt Phase-Hunter (MOUNT!)
 			i(254666),	-- Exodar Replica (TOY!)
@@ -791,7 +910,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #endif
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_6",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《巫妖王之怒》典藏版的人都可以获得这些奖励。\n\n网上可能仍有存货，但你要为此付出相当一大笔真金白银。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
 			i(39286),	-- Frosty (PET!)
@@ -800,7 +936,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #if ANYCLASSIC
 	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_0_1 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_7",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《巫妖王之怒》经典版英雄升级包的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["questID"] = 70449,	-- Elite Northrend Expedition Supplies [Heroic]
 			["groups"] = {
 				ach(16332, {	-- The Perfect Pebble
@@ -831,7 +984,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_8",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只要购买了《巫妖王之怒》经典怀旧服史诗升级版，任何人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["questID"] = 70448,	-- Elite Northrend Expedition Supplies [Epic]
 			["groups"] = {
 				i(192455),	-- Kalu'ak Whalebone Glider (MOUNT!)
@@ -841,7 +1011,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #else
 	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+			["description"] = "~L.THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_8",
 			["groups"] = {
 				mount(370770),	-- Tuskarr Shoreglider (MOUNT!)
 			},
@@ -849,7 +1019,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #endif
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_9",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《大地的裂变》典藏版的人都可以获得这些奖励。\n\n网上可能仍有存货，但你要为此付出相当一大笔真金白银。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(5377),	-- Collector's Edition: Lil' Deathwing
 			i(62540),	-- Lil' Deathwing (PET!)
@@ -858,7 +1045,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #if ANYCLASSIC
 	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_4_2 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_10",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只要购买了炽焰英雄版，任何人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(209945),	-- Lil' Wrathion (PET!)
 				mount(423869),	-- Avatar of Flame (MOUNT!)
@@ -920,7 +1124,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #else
 	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_2_0 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
+			["description"] = "~L.THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_10",
 			["groups"] = {
 				i(210964),	-- Lil' Wrathion (PET!)
 				i(210008),	-- Runebound Firelord (MOUNT!)
@@ -929,7 +1133,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #endif
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_11",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《熊猫人之谜》典藏版的人都可以获得这些奖励。\n\n这些奖励可以在游戏内商城购买。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
 			ach(6848),	-- Collector's Edition: Lucky Quilen Cub
@@ -940,7 +1161,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #if ANYCLASSIC
 	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_4_4_2, REMOVED_6_0_2 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_12",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "只要购买了煞能灌注英雄包，任何人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(235561),	-- Joyous (PET!)
 				i(235464),	-- Sha-Touched Tea Set (TOY!)
@@ -953,7 +1191,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	-- #else
 	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
+			["description"] = "~L.THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_12",
 			["groups"] = {
 				i(235358),	-- Merriment (PET!)
 				i(235286),	-- Sha-Warped Cloud Serpent (MOUNT!)
@@ -976,7 +1214,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			REMOVED_6_2_2,
 		},
 	}, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_13",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《德拉诺之王》典藏版的人都可以获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			-- #if BEFORE 10.1.0
 			ach(8917, {	-- Collector's Edition: Dread Hatchling
@@ -991,7 +1246,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_14",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《军团再临》典藏版的人都可以获得这些奖励。\n\n这些奖励可以在游戏内商城购买。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
 			ach(10321),	-- Collector's Edition: Nibbles
@@ -1000,7 +1272,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
+		["description"] = createLocalizationString({
+			readable = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
+			constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_15",
+			export = true,
+			text = {
+				en = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《争霸艾泽拉斯》典藏版的人都可以获得这些奖励。\n\n这些奖励可以在游戏内商城购买。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
 			a(ach(12229)),	-- Collector's Edition: Seabraid Stallion
@@ -1012,7 +1301,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_16",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《暗影国度》英雄版的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
 					-- ["provider"] = { "s", }	-- TODO maybe have a spell provider?
@@ -1020,7 +1326,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)
 				n(QUESTS, {
 					q(57686, {	-- The Eternal Traveler
-						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+						["description"] = createLocalizationString({
+							readable = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+							constant = "YOU_NEED_TO_PURCHASE_SHADOWLANDS_HEROIC_EDITION",
+							export = true,
+							text = {
+								en = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你需要购买《暗影国度》英雄版，才能从被蛊惑的永恒龙背上的引导宝珠处刷新任务给予者。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 158635,	-- Xolartios <Eternal Traveler>
 						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
 						["groups"] = {
@@ -1041,7 +1364,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Shadowlands Epic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased Shadowlands Epic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_17",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased Shadowlands Epic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《暗影国度》史诗版的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				-- #if AFTER 11.2.5
 				i(248091),	-- Anima Wyrmling (PET!)
@@ -1055,7 +1395,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_18",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《巨龙时代》英雄版的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
@@ -1067,14 +1424,48 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 				-- #endif
 				pet(3177, {	-- Drakks (PET!)
-					["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
+					["description"] = createLocalizationString({
+						readable = "This is a pre-order bonus only available before the launch of Dragonflight.",
+						constant = "THIS_IS_A_PRE_ORDER_BONUS_ONLY_AVAILABLE_BEFORE",
+						export = true,
+						text = {
+							en = "This is a pre-order bonus only available before the launch of Dragonflight.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这是预购奖励，仅在《巨龙时代》上线前可获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { REMOVED_10_0_2 },
 				}),
 				pet(3175),	-- Murkastrasza (PET!)
 			},
 		}),
 		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_19",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《巨龙时代》史诗版的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				i(193588),	-- Timewalker's Hearthstone (TOY!)
 				-- #if AFTER 11.2.5
@@ -1092,7 +1483,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_11_2_0 } }, {
 		n(HEROIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_20",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《地心之战》英雄版的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
 				iensemble(209336),	-- Ensemble: Stormrider's Attire (COSMETIC!)
@@ -1281,7 +1689,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 		n(EPIC_EDITION, {
-			["description"] = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
+			["description"] = createLocalizationString({
+				readable = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
+				constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_21",
+				export = true,
+				text = {
+					en = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "购买《地心之战》史诗版的人都可以获得这些奖励。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				ach(19030),	-- Squally
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
@@ -1302,7 +1727,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["forcetimeline"] = { ADDED_11_2_0 },
 		["groups"] = {
 			n(HEROIC_EDITION, {
-				["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+				["description"] = createLocalizationString({
+					readable = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+					constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_22",
+					export = true,
+					text = {
+						en = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "购买《午夜》英雄版的人都可以获得这些奖励。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
 					i(243020),	-- Lightwing Dragonhawk (MOUNT!)
@@ -1310,7 +1752,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				},
 			}),
 			n(EPIC_EDITION, {
-				["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+				["description"] = createLocalizationString({
+					readable = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+					constant = "THESE_REWARDS_WERE_MADE_AVAILABLE_TO_ANYONE_WHO_23",
+					export = true,
+					text = {
+						en = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "购买《午夜》史诗版的人都可以获得这些奖励。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					ach(61402),	-- Epic Edition: Voidlight Surger
 					i(252668, {["timeline"] = { ADDED_11_2_7 }}),	-- "The Harbinger" Painting (DECOR!)
@@ -1333,7 +1792,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
-		["description"] = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "任何购买《魔兽世界》15 周年典藏版的玩家都可以获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
@@ -1355,7 +1831,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			-- #endif
 		},
 	}, {
-		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Diablo 3 Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_2",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Diablo 3 Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《暗黑破坏神 3》合集后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
 			i(76062, {	-- Fetish Shaman (PET!)
@@ -1378,21 +1871,72 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			-- #endif
 		},
 	}, {
-		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_3",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《暗黑破坏神 3：夺魂之镰》合集后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
 			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
 	n(DIABLO_IV, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2, REMOVED_11_0_7 } }, {
-		["description"] = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_4",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《暗黑破坏神 4》标准版后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(15640),	-- Return to Darkness
 			i(191114),	-- Amalgam of Rage (MOUNT!)
 		},
 	})),
 	n(DIABLO_IV_LORD_OF_HATRED, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-		["description"] = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_5",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《暗黑破坏神 4：憎恨之主》标准版后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			i(265804, {	-- Sanctuary Chess Collection
 				i(259055),	-- Hatred's Wolfpelt Rug (DECOR!)
@@ -1415,11 +1959,45 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	n(DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
-		["description"] = "These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_6",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《暗黑破坏神 2：重制版》术士王朝后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = { i(256764) },	-- Sanctuary's Horadric Cube (DECOR!)
 	})),
 	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {
-		["description"] = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_7",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《守望先锋》起源版合集后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(11064),	-- Collector's Edition: Baby Winston
 			i(134047),	-- Baby Winston (PET!)
@@ -1434,7 +2012,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			-- #endif
 		},
 	}, {
-		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_8",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《星际争霸 2：自由之翼》合集后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
 			i(56806),	-- Mini Thor (PET!)
@@ -1449,28 +2044,96 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			-- #endif
 		},
 	}, {
-		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_9",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《星际争霸 2：虫群之心》合集后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling
 			i(90177),	-- Baneling (PET!)
 		},
 	})),
 	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
-		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_10",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《星际争霸 2：虚空之遗》合集后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(10309),	-- Collector's Edition: Zeradar
 			i(128423),	-- Zeradar (PET!)
 		},
 	})),
 	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
-		["description"] = "These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_11",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《魔兽争霸 3：重制版》战争之鼓版后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			ach(13196),	-- Meat Marauder
 			i(164571),	-- Meat Wagon (MOUNT!)
 		},
 	})),
 	n(WORLD_OF_WARCRAFT_FOREVER_COLLECTORS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
-		["description"] = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+		["description"] = createLocalizationString({
+			readable = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+			constant = "THESE_REWARDS_ARE_AVAILABLE_TO_ANYONE_WHO_12",
+			export = true,
+			text = {
+				en = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "购买《魔兽世界：Forever》典藏版或数字等价版本后即可获得这些奖励。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			n(HEROIC_EDITION, {
 				--- FOREVER ---

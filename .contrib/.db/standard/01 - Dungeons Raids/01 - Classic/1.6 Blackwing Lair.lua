@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			n(TREASURES, {
 				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
-					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+					["description"] = "~L.LOCATED_IN_BLACKWING_LAIR_ON_ONE_OF_THE_TABLES",
 					["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
 					["groups"] = {
 						i(21109),	-- Draconic for Dummies [Chapter VII]
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
 				-- #if BEFORE WRATH
-				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+				["description"] = "~L.WHEN_KRIXIX_IS_MIND_CONTROLLED_ONE_OF_THE",
 				["groups"] = { r(22967) },	-- Smelt Elementium
 				-- #else
 				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
@@ -406,7 +406,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					-- #if AFTER WOD
 					prof(SKINNING, {
 						i(12607, {	-- Brilliant Chromatic Scale
-							["description"] = "Can only be obtained from Chromaggus.",
+							["description"] = "~L.CAN_ONLY_BE_OBTAINED_FROM_CHROMAGGUS",
 						}),
 					}),
 					-- #endif
@@ -512,7 +512,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["cr"] = 232903,	-- Shadowmage <Cult of the Damned>
 								}),
 								i(231796, {	-- Depleted Scythe of Chaos (Devouring)
-									["description"] = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
+									["description"] = "~L.USE_DRAIL_SOUL_ON_THE_RAVENOUS_FELHOUND_ONCE",
 									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231799, 1 },	-- Soul of Devouring
@@ -533,7 +533,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["cr"] = 232900,	-- Cursed Mage
 								}),
 								i(231795, {	-- Depleted Scythe of Chaos (Enthralling)
-									["description"] = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
+									["description"] = "~L.USE_DRAIL_SOUL_ON_THE_FEL_INTERLOPER_ONCE_YOU",
 									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231798, 1 },	-- Soul of Enthralling
@@ -553,7 +553,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["provider"] = { "i", 231732 },	-- Suspicious Supplies
 								}),
 								i(231793, {	-- Depleted Scythe of Chaos (Mischief)
-									["description"] = "Use Drail Soul on Xirath once you've completed his task to receive this.",
+									["description"] = "~L.USE_DRAIL_SOUL_ON_XIRATH_ONCE_YOU_VE_COMPLETED",
 									["coord"] = { 69.6, 32.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231792, 1 },	-- Soul of Mischief
@@ -569,7 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 							["groups"] = {
 								i(231794, {	-- Depleted Scythe of Chaos (Void)
-									["description"] = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
+									["description"] = "~L.USE_DRAIL_SOUL_ON_THE_VOIDWALKER_ONCE_YOU_VE",
 									["coord"] = { 59.0, 67.0, EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231797, 1 },	-- Soul of the Void
@@ -597,7 +597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["coord"] = { 84.8, 70.6, ASHENVALE },
 								}),
 								n(232886, {	-- Des'Altek
-									["description"] = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
+									["description"] = "~L.SUMMON_AND_DEFEAT_DES_ALTEK_WITHIN_DEMON_FALL",
 									["cost"] = {
 										{ "i", 231800, 1 },	-- Soul of Des'Altek
 										{ "i", 231796, 1 },	-- Depleted Scythe of Chaos (Devouring)
@@ -662,7 +662,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					i(19183),	-- Hourglass Sand
 				}),
 				n(231711, {	-- Victor Nefriendius
-					["description"] = "Located inside BWL. You can speak to him at the start of the raid to activate a number of trials. Each trial up to 3 will award additional loot. You'll want to activate the weekly trial in addition to 2 others for the best loot opportunity after your raid defeats Nefarian.",
+					["description"] = "~L.LOCATED_INSIDE_BWL_YOU_CAN_SPEAK_TO_HIM_AT_THE",
 					["groups"] = {
 						cl(DRUID, {
 							-- DPS (Agility)
@@ -987,7 +987,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				n(14401, {	-- Master Elemental Shaper Krixix
-					["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+					["description"] = "~L.WHEN_KRIXIX_IS_MIND_CONTROLLED_ONE_OF_THE",
 					["groups"] = { r(22967) },	-- Smelt Elementium
 				}),
 				e(1533, {	-- Ebonroc
@@ -1094,20 +1094,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				o(495577, {	-- Chromatic Stash
-					["description"] = "Appears after defeating Nefarian with one trial active.\n\nContains one of the class trinkets plus two additional pieces of loot from bosses in Blackwing Lair.",
+					["description"] = "~L.APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_ONE_TRIAL",
 				}),
 				o(495578, {	-- Chromatic Supplies
-					["description"] = "Appears after defeating Nefarian with two trials active. It replaces the Chromatic Stash.\n\nContains one of the class trinkets plus four additional pieces of loot from bosses in Blackwing Lair.",
+					["description"] = "~L.APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_TWO",
 				}),
 				o(495503, {	-- Chromatic Hoard
-					["description"] = "Appears after defeating Nefarian with three trials active. It replaces the Chromatic Supplies.\n\nContains one of the class trinkets plus five additional pieces of loot from bosses in Blackwing Lair.\n\nWeapons found in this chest will have a unique \"Shadowflame\" visual effect.",
+					["description"] = "~L.APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_THREE",
 					["sym"] = {{ "select", "objectID", 495500 }, {"pop"}},
 				}),
 				o(495505, {	-- Favored Riches
-					["description"] = "Appears in Blackwing Lair after defeating Nefarian with the weekly trial active.\n\nContains two pieces of loot from bosses in Blackwing Lair.",
+					["description"] = "~L.APPEARS_IN_BLACKWING_LAIR_AFTER_DEFEATING",
 				}),
 				o(495500, {	-- Shadowflame Cache
-					["description"] = "Appears after defeating Nefarian with three trials active, including the weekly trial alongside the two chests.\n\nContains 3-5 Elementium Ore and four other items. Weapons found in this chest will have a unique \"Shadowflame\" visual effect.",
+					["description"] = "~L.APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_THREE_2",
 					["groups"] = {
 						i(232550),	-- Ashkandi, Greatsword of the Brotherhood [Shadowflame]
 						i(232606),	-- Ashjre'thul, Crossbow of Smiting [Shadowflame]

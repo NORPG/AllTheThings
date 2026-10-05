@@ -109,7 +109,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(89060, {	-- Stay awhile and listen: Alleria Windrunner
 						["name"] = "Stay awhile and listen: Alleria Windrunner",
-						["description"] = "Dialogue becomes available during 'No Prayer for the Wicked' (86565).",
+						["description"] = createLocalizationString({
+							readable = "Dialogue becomes available during 'No Prayer for the Wicked' (86565).",
+							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_NO_PRAYER_FOR",
+							export = true,
+							text = {
+								en = "Dialogue becomes available during 'No Prayer for the Wicked' (86565).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“恶人无祷”（86565）期间即可出现该对话。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							86562,	-- Dancing with Death
 							86561,	-- A Strange, Different World
@@ -697,7 +714,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qi"] = 253518,	-- Pathogen Antidote (QI!)
 					}),
 					q(93801, {	-- Calculated Culling
-						["description"] = "Available after you cured Ren'dorei Scout during 'Expunging Explorers' (91560)",
+						["description"] = createLocalizationString({
+							readable = "Available after you cured Ren'dorei Scout during 'Expunging Explorers' (91560)",
+							constant = "AVAILABLE_AFTER_YOU_CURED_REN_DOREI_SCOUT",
+							export = true,
+							text = {
+								en = "Available after you cured Ren'dorei Scout during 'Expunging Explorers' (91560)",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在“清除探险者”（91560）中治愈虚空精灵斥候后可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							91559,	-- Pestilent Petals
 							91559,	-- Virulent Vermin
@@ -1112,7 +1146,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 61864.12, {	-- Oaths to Family
 					q(90838, {	-- Oaths and Heirlooms
-						["description"] = "Vignette is shown on the map after completing 'Friend or Fiend' but, Quest Giver is not available until you complete 'The Lay of the Beast'.",
+						["description"] = createLocalizationString({
+							readable = "Vignette is shown on the map after completing 'Friend or Fiend' but, Quest Giver is not available until you complete 'The Lay of the Beast'.",
+							constant = "VIGNETTE_IS_SHOWN_ON_THE_MAP_AFTER_COMPLETING",
+							export = true,
+							text = {
+								en = "Vignette is shown on the map after completing 'Friend or Fiend' but, Quest Giver is not available until you complete 'The Lay of the Beast'.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成“朋友还是恶魔”后，地图上会显示一个标记，但任务给予者要等你完成“野兽的传说”后才会出现。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 90571 },	-- The Lay of the Beast
 						["provider"] = { "n", 244490 },	-- Kifaan
 						["coord"] = { 50.7, 73.2, MAP.MIDNIGHT.VOIDSTORM },
@@ -1456,7 +1507,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qi"] = 254671,	-- Talon of the Towering Ultradon (QI!)
 					}),
 					q(92510, {	-- Dark Infusion
-						["description"] = "If you get stuck on this quest where Magister Umbric is missing and you can't turn it in, you need to progress further into campaign up to the quest 'Domus Penumbra' (86510).",
+						["description"] = createLocalizationString({
+							readable = "If you get stuck on this quest where Magister Umbric is missing and you can't turn it in, you need to progress further into campaign up to the quest 'Domus Penumbra' (86510).",
+							constant = "IF_YOU_GET_STUCK_ON_THIS_QUEST_WHERE_MAGISTER",
+							export = true,
+							text = {
+								en = "If you get stuck on this quest where Magister Umbric is missing and you can't turn it in, you need to progress further into campaign up to the quest 'Domus Penumbra' (86510).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你在这个任务上卡住，导师乌布里克不见了并且无法交付，你需要继续推进战役直到任务“Domus Penumbra”（86510）。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							92508,	-- The Mark of Sacrifice
 							92509,	-- One Cruel Implement
@@ -1479,7 +1547,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(92641, {	-- Bloodying the Plain
-					["description"] = "Become available during 'Cut Her Strings' (91147).",
+					["description"] = createLocalizationString({
+						readable = "Become available during 'Cut Her Strings' (91147).",
+						constant = "BECOME_AVAILABLE_DURING_CUT_HER_STRINGS_91147",
+						export = true,
+						text = {
+							en = "Become available during 'Cut Her Strings' (91147).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在“切断她的提线”（91147）期间开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 91145 },	-- The Conquered Heroes
 					["coord"] = { 56.5, 86.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 				}),

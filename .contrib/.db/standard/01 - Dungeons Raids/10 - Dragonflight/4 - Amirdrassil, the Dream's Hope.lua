@@ -464,7 +464,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(77838, {	-- Tattered Dreamleaf
-						["description"] = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
+						["description"] = createLocalizationString({
+							readable = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
+							constant = "APPEARS_THAT_ANY_CLASS_CAN_BE_GIVEN_THIS_QUEST",
+							export = true,
+							text = {
+								en = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "看来任何职业都可以由拥有破烂梦叶的另一名玩家给予这个任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							77833,	-- Handling It: Concentrated Sophic Vellum
 							77835,	-- Handling It: Rune of Shadowbinding
@@ -835,7 +852,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				ach(19388),	-- Heroic: Amirdrassil, the Dream's Hope Guild Run
 			}),
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				["description"] = createLocalizationString({
+					readable = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					constant = "THE_REVIVAL_CATALYST_IS_A_SYSTEM_THAT_LETS_YOU_3",
+					export = true,
+					text = {
+						en = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "复生催化剂是一个系统，可让你把翡翠梦境的区域周常活动物品（超级绽放、梦境之种、值得的盟友：梦境）以及阿梅达希尔团队副本随机团队模式的非套装物品，转化为你职业的随机团队幻化套装。\n\n催化剂位于巨龙群岛索德拉苏斯的提尔要塞。\n\n转化之前请务必先装备好你的物品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
 				["modelScale"] = 4,
 				["catalystID"] = 7,	-- ItemBonus.Value_0 DF:S3
@@ -1326,13 +1360,64 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			}),
 			n(SPECIAL, {
 				i(210783, {	-- Awakening Sunfish
-					["description"] = "Fish in the lava pools of the Pit of Volcoross.",
+					["description"] = createLocalizationString({
+						readable = "Fish in the lava pools of the Pit of Volcoross.",
+						constant = "FISH_IN_THE_LAVA_POOLS_OF_THE_PIT_OF_VOLCOROSS",
+						export = true,
+						text = {
+							en = "Fish in the lava pools of the Pit of Volcoross.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在沃尔科罗斯之坑的岩浆池中钓鱼。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(210782, {	-- Slumbering Moonfish
-					["description"] = "Fish in the waters of the Wellspring Atrium.",
+					["description"] = createLocalizationString({
+						readable = "Fish in the waters of the Wellspring Atrium.",
+						constant = "FISH_IN_THE_WATERS_OF_THE_WELLSPRING_ATRIUM",
+						export = true,
+						text = {
+							en = "Fish in the waters of the Wellspring Atrium.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在涌泉中庭的水域中钓鱼。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(210784, {	-- Xena, the Whimsical Whiskerfish
-					["description"] = "First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
+					["description"] = createLocalizationString({
+						readable = "First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
+						constant = "FIRST_GET_THE_ATTUNED_ANGLER_BUFF_BY_RETURING",
+						export = true,
+						text = {
+							en = "First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "首先通过交回 10 条觉醒太阳鱼和 10 条沉睡月鱼来获得协调渔夫增益。然后回到团队副本，在涌泉中庭最大的水域中钓鱼。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = {
 						{ "i", 210783, 10 },	-- Awakening Sunfish
 						{ "i", 210782, 10 },	-- Slumbering Moonfish
@@ -1473,7 +1558,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(78473, {	-- The Power of Dreams, Lost
-						["description"] = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
+						["description"] = createLocalizationString({
+							readable = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
+							constant = "THIS_QUEST_ALLOWS_A_PLAYER_TO_RECOVER_THEIR",
+							export = true,
+							text = {
+								en = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务允许玩家找回被删除的炽热精华。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 78429,	-- The Power of Dreams, Awoken
 						["provider"] = { "n", 210039 },	-- Merithra
 						["repeatable"] = true,

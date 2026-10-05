@@ -20,7 +20,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(QUESTS, {
 				q(48230, {	-- Fragment of the Past
-					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
+					["description"] = createLocalizationString({
+						readable = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
+						constant = "YOU_MUST_COMPLETE_CFFFFFF00SEAT_OF_THE",
+						export = true,
+						text = {
+							en = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须完成|cffffff00执政团之座：知识徽记|r，此物品才会掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 47654,	-- Seat of the Triumvirate: The Crest of Knowledge
 					["qs"] = 152204,	-- Glowing Key Fragment (QS!)
 					["maps"] = { EREDATH },

@@ -776,7 +776,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				})),
 			}),
 			o(180691, {	-- Scarab Coffer
-				["description"] = "These can be found along the walls of the instance and require a coffer key to open.",
+				["description"] = "~L.THESE_CAN_BE_FOUND_ALONG_THE_WALLS_OF_THE",
 				["cost"] = {
 					-- #if BEFORE 4.3.0
 					{ "i", 21761, 1 },	-- Scarab Coffer Key [pre-4.3]
@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(20867),	-- Onyx Idol
 					i(20872),	-- Vermillion Idol
 					i(21156, {	-- Scarab Bag
-						["description"] = "Contains a couple of random scarabs.",
+						["description"] = "~L.CONTAINS_A_COUPLE_OF_RANDOM_SCARABS",
 					}),
 				},
 			}),
@@ -820,7 +820,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				},
 			}),
 			n(15471, {	-- Lieutenant General Andorov
-				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
+				["description"] = "~L.IN_ORDER_TO_INTERACT_WITH_THIS_VENDOR_YOU_MUST",
 				["groups"] = {
 					i(22219, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
@@ -834,7 +834,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			e(1538, {	-- General Rajaxx
 				-- #if BEFORE TBC
-				["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
+				["description"] = "~L.SPEAK_WITH_LIEUTENANT_GENERAL_ANDOROV_IN_ORDER",
 				-- #endif
 				["creatureID"] = 15341,
 				["groups"] = {
@@ -889,7 +889,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					i(21482, {	-- Boots of the Fiery Sands
 						-- #if BEFORE 10.1.
-						["description"] = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
+						["description"] = "~L.THIS_ITEM_WAS_ORIGINALLY_A_HORDE_EXCLUSIVE_DROP",
 						-- #if AFTER 2.0.1
 						["isBounty"] = true,
 						-- #else
@@ -1493,7 +1493,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15471, {	-- Lieutenant General Andorov
-					["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
+					["description"] = "~L.IN_ORDER_TO_INTERACT_WITH_THIS_VENDOR_YOU_MUST",
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_SIX, i(234458, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 							["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
@@ -1508,7 +1508,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				e(1538, {	-- General Rajaxx
-					["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
+					["description"] = "~L.SPEAK_WITH_LIEUTENANT_GENERAL_ANDOROV_IN_ORDER",
 					["creatureID"] = 15341,
 					["groups"] = {
 						n(CAPTAINS, {

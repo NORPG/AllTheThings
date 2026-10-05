@@ -81,7 +81,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(235523) },	-- Sturdy Wooden Chair (DECOR!)
 			}),
 			q(92966, {	-- Decor Treasure Hunt
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 64.6, 57.6, FOUNDERS_POINT },	-- Cave entrance
@@ -110,7 +110,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246104) },	-- Carved Wooden Crate (DECOR!)
 			}),
 			q(92972, {	-- Decor Treasure Hunt
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 45.8, 64.9, FOUNDERS_POINT },	-- Cave entrance
@@ -143,7 +143,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(243334) },	-- Reinforced Wooden Chest (DECOR!)
 			}),
 			q(92979, {	-- Decor Treasure Hunt
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 62.4, 79.5, FOUNDERS_POINT },	-- Cave entrance
@@ -232,7 +232,7 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(245662) },	-- Carved Wooden Bar Table (DECOR!)
 			}),
 			q(93000, {	-- Decor Treasure Hunt
-				["description"] = "Inside the cave.",
+				["description"] = "~L.INSIDE_THE_CAVE",
 				["coords"] = {
 					{ 52.7, 37.5, FOUNDERS_POINT },	-- qg
 					{ 59.0, 45.5, FOUNDERS_POINT },	-- Cave entrance

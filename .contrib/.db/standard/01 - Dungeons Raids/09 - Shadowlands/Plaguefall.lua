@@ -111,7 +111,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(SPECIAL, {
 					mount(346141, {	-- Slime Serpent (MOUNT!)
-						["description"] = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",
+						["description"] = createLocalizationString({
+							readable = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",
+							constant = "REQUIRES_SOLO_KILL_OF_ALL_BOSSES_IN_EITHER",
+							export = true,
+							text = {
+								en = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要在英雄或史诗难度的瘟疫之泉中单人击杀所有首领。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 				e(2404, {	-- Margrave Stradama

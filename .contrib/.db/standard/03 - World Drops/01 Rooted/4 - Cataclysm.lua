@@ -824,7 +824,24 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				51672,	-- Sweeping Winds
 			},
 			-- #if AFTER 6.0.3
-			["description"] = "The Vortex Pinnacle is the place to farm these on higher levels.\nProtip: Do not forget Potion of Treasure Finding.",
+			["description"] = createLocalizationString({
+				readable = "The Vortex Pinnacle is the place to farm these on higher levels.\nProtip: Do not forget Potion of Treasure Finding.",
+				constant = "THE_VORTEX_PINNACLE_IS_THE_PLACE_TO_FARM_THESE",
+				export = true,
+				text = {
+					en = "The Vortex Pinnacle is the place to farm these on higher levels.\nProtip: Do not forget Potion of Treasure Finding.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "旋云之巅是高层级刷这些的最佳地点。\n小贴士：别忘了寻宝药水。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["maps"] = { 325 },	-- The Vortex Pinnacle
 			["providers"] = {
@@ -858,7 +875,24 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46911,	-- Lava Surger
 				-- #endif
 			},
-			["description"] = "Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+			["description"] = createLocalizationString({
+				readable = "Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+				constant = "ACCESS_TO_SOME_OF_THE_LISTED_MOBS_AND_LOCATIONS",
+				export = true,
+				text = {
+					en = "Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "海加尔山中所列的部分怪物和地点需要推进该区域的任务才能进入。",
+					-- TODO: tw = "",
+				},
+			}),
 			["providers"] = {
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
@@ -900,7 +934,24 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				52300,	-- Seething Pyrelord
 				-- #endif
 			},
-			["description"] = "Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+			["description"] = createLocalizationString({
+				readable = "Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+				constant = "FISHING_IS_THE_MOST_EFFICIENT_WAY_TO_GET_THESE",
+				export = true,
+				text = {
+					en = "Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "钓鱼是获取这些东西最有效率的方式。要接触海加尔山列出的某些怪物和地点，需要在区域内推进任务进度。",
+					-- TODO: tw = "",
+				},
+			}),
 			["providers"] = {
 				{ "o", 207734 },	-- Pool of Fire (Fishing school)
 				{ "i", 67495 },	-- Strange Bloated Stomach
@@ -931,7 +982,24 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46329,	-- Enslaved Waterspout
 				44011,	-- Muddied Water Elemental
 			},
-			["description"] = "Protip: Do not forget Potion of Treasure Finding when farming the mobs.",
+			["description"] = createLocalizationString({
+				readable = "Protip: Do not forget Potion of Treasure Finding when farming the mobs.",
+				constant = "PROTIP_DO_NOT_FORGET_POTION_OF_TREASURE_FINDING",
+				export = true,
+				text = {
+					en = "Protip: Do not forget Potion of Treasure Finding when farming the mobs.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "小提示：在刷这些怪物时别忘了使用寻宝药水。",
+					-- TODO: tw = "",
+				},
+			}),
 			["providers"] = {
 				{ "o", 207724 },	-- Shipwreck Debris (Fishing school)
 				{ "i", 67495 },	-- Strange Bloated Stomach
@@ -942,7 +1010,24 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		-- 
 		-- 	Clams:
 		i(52340, {	-- Abyssal Clam
-			["description"] = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
+			["description"] = createLocalizationString({
+				readable = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
+				constant = "IS_A_RARE_DROP_FROM_HUMANOID_WATER_CREATURES",
+				export = true,
+				text = {
+					en = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "是吉尔哥布林、鱼人和纳迦等类人水生生物的稀有掉落物。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = {
 				-- THRONE_OF_THE_TIDES,
 				VASHJIR_ABYSSAL_DEPTHS,
@@ -1071,14 +1156,48 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46970,	-- Highland Elk
 				46153,	-- Highland Worg
 			},
-			["description"] = "Can drop from all Cataclysm red meat animals.",
+			["description"] = createLocalizationString({
+				readable = "Can drop from all Cataclysm red meat animals.",
+				constant = "CAN_DROP_FROM_ALL_CATACLYSM_RED_MEAT_ANIMALS",
+				export = true,
+				text = {
+					en = "Can drop from all Cataclysm red meat animals.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可从大地的裂变的所有红肉动物身上掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		-- __________________________________
 		-- 
 		-- Other reagents:
 		i(52078, {	-- Chaos Orb
-			["description"] = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",
+			["description"] = createLocalizationString({
+				readable = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",
+				constant = "GUARANTEED_DROP_FROM_THE_LAST_BOSS_IN_ANY_2",
+				export = true,
+				text = {
+					en = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "英雄难度《大地的裂变》地下城的最终首领必定掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 	}),
 }))));

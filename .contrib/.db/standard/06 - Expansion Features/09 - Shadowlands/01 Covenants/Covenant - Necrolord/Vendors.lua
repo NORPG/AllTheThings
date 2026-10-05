@@ -11,7 +11,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NECROLORD, {
 		n(REWARDS, {
 			i(183703, {	-- Bonesmith's Satchel
-				["description"] = "Only Obtainable from Heirmir Soulbind.",
+				["description"] = createLocalizationString({
+					readable = "Only Obtainable from Heirmir Soulbind.",
+					constant = "ONLY_OBTAINABLE_FROM_HEIRMIR_SOULBIND",
+					export = true,
+					text = {
+						en = "Only Obtainable from Heirmir Soulbind.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅可从赫尔米尔的灵魂羁绊获得。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		n(VENDORS, {

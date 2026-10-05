@@ -367,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61607),	-- Heroic: The Voidspire Guild Run
 			}),
 			o(532226, {	-- The Catalyst
-				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				["description"] = "~L.THIS_ALLOWS_CONVERTING_CERTAIN_PIECES_OF_GEAR",
 				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["modelScale"] = 4,
 				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1

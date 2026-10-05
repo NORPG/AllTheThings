@@ -32,29 +32,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				i(202091, {	-- Dragonscale Expedition Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 				i(202092, {	-- Iskaara Tuskarr Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 				i(202094, {	-- Maruuk Centaur Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 				i(202093, {	-- Valdrakken Accord Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 				i(210422, {	-- Loamm Niffen Insignia [Epic 2.5k]
 					["timeline"] = { ADDED_10_2_0 },
 					["minReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 				i(210423, {	-- Dream Wardens Insignia [Epic 2.5k]
 					["timeline"] = { ADDED_10_2_0 },
 					["minReputation"] = { FACTION_DREAM_WARDENS, 20 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 			}),
 			n(QUESTS, sharedData({

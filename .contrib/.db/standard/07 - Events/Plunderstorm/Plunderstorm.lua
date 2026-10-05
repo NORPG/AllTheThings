@@ -284,7 +284,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 		}),
 		filter(MISC, {
 			i(234422, {	-- Storm-Singed Plunder
-				["description"] = "Contains 1 Silver and 2 Bronze Spoils.",
+				["description"] = createLocalizationString({
+					readable = "Contains 1 Silver and 2 Bronze Spoils.",
+					constant = "CONTAINS_1_SILVER_AND_2_BRONZE_SPOILS",
+					export = true,
+					text = {
+						en = "Contains 1 Silver and 2 Bronze Spoils.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "内含 1 份白银战利品和 2 份青铜战利品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(234423),	-- Keg-Leg's Silver Spoils
 					i(234424),	-- Keg-Leg's Bronze Spoils

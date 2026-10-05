@@ -6,7 +6,24 @@ local GRATEFUL_CURRENCY = currency(GRATEFUL);
 local REGURGITATED_KYRIAN_WINGS = i(182749);	-- Regurgitated Kyrian Wings
 local AEGIS_OF_SALVATION = i(184365);	-- Aegis of Salvation
 local WINGFLAYTER_THE_CRUEL = n(167078, {	-- Wingflayer the Cruel
-	["description"] = " Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
+	["description"] = createLocalizationString({
+		readable = " Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
+		constant = "ONLY_A_MEMBER_OF_THE_CFF516BFEKYRIAN_COVENANT_R",
+		export = true,
+		text = {
+			en = " Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = " 仅限已向勇气神殿输送过心能的 |cFF516bfe基瑞安盟约|r 成员点击此钟。",
+			-- TODO: tw = "",
+		},
+	}),
 	["coord"] = { 41.8, 55.4, BASTION },
 	["questID"] = 60314,
 	["isDaily"] = true,
@@ -15,14 +32,48 @@ local WINGFLAYTER_THE_CRUEL = n(167078, {	-- Wingflayer the Cruel
 	},
 });
 local ORSTUS_AND_SOTIROS = n(156340, {	-- Larionrider Orstus
-	["description"] = "Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+	["description"] = createLocalizationString({
+		readable = "Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+		constant = "TAKE_THE_ANIMA_GATEWAY_AND_CLICK_THE_BLACK_BELL",
+		export = true,
+		text = {
+			en = "Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "使用心能传送门并点击黑色钟。只有向忠诚堡垒输送过心能的 |cFF516bfe格里恩盟约|r 成员才能点击这口钟。",
+			-- TODO: tw = "",
+		},
+	}),
 	["crs"] = { 156339 },	-- Eliminator Sotiros
 	["coord"] = { 24.5, 22.7, BASTION },
 	["questID"] = 61634,
 	["isDaily"] = true,
 	["groups"] = {
 		i(184401, {	-- Larion Pouncer (PET!)
-			["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+			["description"] = createLocalizationString({
+				readable = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+				constant = "TO_BE_ELIGIBLE_TO_RECEIVE_THE_PET_YOUR_ANIMA",
+				export = true,
+				text = {
+					en = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "要获得领取该宠物的资格，你的心能导流器必须升级到 3 级。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		AEGIS_OF_SALVATION,
 	},
@@ -40,7 +91,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["groups"] = {
 								currency(GRATEFUL, {
 									["customCollect"] = IGNORED_VALUE,
-									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+									["description"] = createLocalizationString({
+										readable = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+										constant = "GRATEFUL_OFFERINGS_CAN_BE_COLLECTED_ONCE_YOU",
+										export = true,
+										text = {
+											en = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "一旦你在盟约中解锁了心能导体，就可以收集感激之礼。\n 解锁后，你可以从盟约召唤（导体等级越高 => 感激之礼越多）、扎雷殁提斯的“模式中的模式”周常任务，以及根据心能导体引导的特殊稀有生物和宝藏中拾取它们。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							},
 						}),
@@ -61,7 +129,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(TREASURES, {
 								o(356818, {	-- Penitence of Purity
-									["description"] = "Requires channeling anima to the Temple of Purity.",
+									["description"] = createLocalizationString({
+										readable = "Requires channeling anima to the Temple of Purity.",
+										constant = "REQUIRES_CHANNELING_ANIMA_TO_THE_TEMPLE_OF",
+										export = true,
+										text = {
+											en = "Requires channeling anima to the Temple of Purity.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "需要向纯洁神殿引导心能。",
+											-- TODO: tw = "",
+										},
+									}),
 									["isDaily"] = true,
 									["questID"] = 61688,
 									["coord"] = { 60.2, 78.2, BASTION },

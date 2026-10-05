@@ -12,7 +12,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 					["crs"] = { 175123 },	-- Warden Arkoban
 				}),
 				q(62967, {	-- Prison of the Forgotten
-					["description"] = "Only available if you delete the quest item",
+					["description"] = createLocalizationString({
+						readable = "Only available if you delete the quest item",
+						constant = "ONLY_AVAILABLE_IF_YOU_DELETE_THE_QUEST_ITEM",
+						export = true,
+						text = {
+							en = "Only available if you delete the quest item",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅在你删除该任务物品后可用",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 61099 },	-- The Search For Baine
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
@@ -81,28 +98,96 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 				["coord"] = { 50.4, 53.8, 1912 },	-- The Runecarver's Oubliette
 			}),
 			q(62800, {	-- The Vessels of Jewels
-				["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Jewelcrafting",
+				["description"] = createLocalizationString({
+					readable = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Jewelcrafting",
+					constant = "UNLOCKS_THE_CAPABILITY_OF_LEARNING_THE_BASE",
+					export = true,
+					text = {
+						en = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Jewelcrafting",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁学习珠宝加工制作的暗影国度传说物品基础制造配方的能力。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 				["requireSkill"] = JEWELCRAFTING,
 			}),
 			q(62798, {	-- The Vessels of Leather and Bone
-				["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Leatherworking",
+				["description"] = createLocalizationString({
+					readable = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Leatherworking",
+					constant = "UNLOCKS_THE_CAPABILITY_OF_LEARNING_THE_BASE_2",
+					export = true,
+					text = {
+						en = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Leatherworking",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁学习制皮制作的暗影国度传说物品基础制造配方的能力。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 				["requireSkill"] = LEATHERWORKING,
 			}),
 			q(62797, {	-- The Vessels of Metal
-				["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Blacksmithing",
+				["description"] = createLocalizationString({
+					readable = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Blacksmithing",
+					constant = "UNLOCKS_THE_CAPABILITY_OF_LEARNING_THE_BASE_3",
+					export = true,
+					text = {
+						en = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Blacksmithing",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁学习锻造制作的暗影国度传说物品基础制造配方的能力。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 				["requireSkill"] = BLACKSMITHING,
 			}),
 			q(62799, {	-- The Vessels of the Thread
-				["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
+				["description"] = createLocalizationString({
+					readable = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
+					constant = "UNLOCKS_THE_CAPABILITY_OF_LEARNING_THE_BASE_4",
+					export = true,
+					text = {
+						en = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "解锁学习裁缝制作的暗影国度传说物品基础制造配方的能力。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },

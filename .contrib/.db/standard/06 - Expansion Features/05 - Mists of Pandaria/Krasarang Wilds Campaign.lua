@@ -624,7 +624,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						["isDaily"] = true,
 					}),
 					q(32460, {	-- Tracking the Thieves
-						["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+						["description"] = createLocalizationString({
+							readable = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+							constant = "IF_YOU_LEAVE_BEFORE_COMPLETING_THIS_QUEST_YOU",
+							export = true,
+							text = {
+								en = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你在完成这个任务前离开，你可能需要放弃它，并在达纳苏斯东门附近重新接取，而不是回到你最初接取的地方。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 32414 },	-- Darnassus Attacked?
 						["qg"] = 68651,	-- Lady Jaina Proudmoore
 						["coord"] = { 39.0, 32.8, DARNASSUS },
@@ -682,7 +699,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						["coord"] = { 68.3, 44.9, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					q(32413, {	-- A Return to Krasarang
-						["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
+						["description"] = createLocalizationString({
+							readable = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
+							constant = "TO_BE_ABLE_TO_PICK_UP_THIS_QUEST_HEAD_TO",
+							export = true,
+							text = {
+								en = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要接取此任务，请前往卡桑琅丛林的统御岗哨，然后乘坐飞行路线返回达拉然。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 32412,	-- One Last Grasp
 						["qg"] = 68586,	-- Grand Magister Rommath
 						["coords"] = {
@@ -1294,7 +1328,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(92527, {	-- Rodent Crate
-							["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+							["description"] = createLocalizationString({
+								readable = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+								constant = "USING_THE_RODENT_CRATE_WILL_SPAWN_5_7_SUMPRUSH",
+								export = true,
+								text = {
+									en = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "使用啮齿动物箱会在周围区域生成 5-7 只泥沼鼠。任何玩家都可以与这些野生宠物对战，而不仅仅是使用该物品的人。|r",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 91838, 2000 } },	-- 2,000x Lion's Landing Commission
 							["groups"] = {
 								pet(1128),	-- Sumprush Rodent (PET!)
@@ -1311,7 +1362,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(92532, {	-- Rodent Crate
-							["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+							["description"] = "~L.USING_THE_RODENT_CRATE_WILL_SPAWN_5_7_SUMPRUSH",
 							["cost"] = { { "i", 91877, 2000 } },	-- 2,000x Domination Point Commission
 							["groups"] = {
 								pet(1128),	-- Sumprush Rodent (PET!)

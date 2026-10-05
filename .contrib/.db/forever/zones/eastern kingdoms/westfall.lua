@@ -46,7 +46,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 		}),
 		pickpocketing({
 			i(7923,	{	-- Defias Tower Key (QI!)
-				["description"] = "Can also be killed for the key, though hits hard for lower level rogues.",
+				["description"] = createLocalizationString({
+					readable = "Can also be killed for the key, though hits hard for lower level rogues.",
+					constant = "CAN_ALSO_BE_KILLED_FOR_THE_KEY_THOUGH_HITS_HARD",
+					export = true,
+					text = {
+						en = "Can also be killed for the key, though hits hard for lower level rogues.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "也可以击杀它以获取钥匙，不过对低等级潜行者来说伤害很高。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 68.6, 72.2, MAP.WESTFALL },
 				["cr"] = 7051,	-- Malformed Defias Drone
 			}),
@@ -145,7 +162,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(3861, {	-- CLUCK!
-				["description"] = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
+				["description"] = createLocalizationString({
+					readable = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
+					constant = "SIMPLY_TARGET_ANY_CHICKEN_AND_SPAM_CFFFFD700",
+					export = true,
+					text = {
+						en = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "只需选中任意一只小鸡，反复对它使用|cFFFFD700/chicken|r，直到它对你做出表情。这大约需要 100 次表情。（做个宏！）\n\n一旦它这么做，就选中它输入 /cheer。\n\n对部落玩家来说，小鸡永远不会变为友好状态，即使他们成功触发了表情。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 620,	-- Chicken
 				["maps"] = {
 					MAP.DUSKWOOD,
@@ -162,7 +196,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				["repeatable"] = true,
 				["groups"] = {
 					i(11110, {	-- Westfall Chicken (PET!)
-						["description"] = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
+						["description"] = createLocalizationString({
+							readable = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
+							constant = "A_HORDE_PLAYER_CAN_GET_THIS_PET_IF_THEY_HAVE_AN",
+							export = true,
+							text = {
+								en = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果部落玩家有一个联盟角色完成了该任务，并允许部落玩家拾取蛋，部落玩家就能获得这只宠物。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -775,7 +826,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 		}),
 		n(RARES, {
 			n(520, {	-- Brack
-				["description"] = "Brack is running up and down the beach.",
+				["description"] = createLocalizationString({
+					readable = "Brack is running up and down the beach.",
+					constant = "BRACK_IS_RUNNING_UP_AND_DOWN_THE_BEACH",
+					export = true,
+					text = {
+						en = "Brack is running up and down the beach.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "布拉克在海滩上来回奔跑。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 26.2, 65.6, MAP.WESTFALL },
 					{ 26.6, 56.4, MAP.WESTFALL },
@@ -811,8 +879,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			n(572, {	-- Leprithus
-				["description"] =
-					"Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
+				["description"] = createLocalizationString({
+					readable = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
+					constant = "SPAWNS_AT_BOTH_THE_NORTHERN_AND_WEST_MOST",
+					export = true,
+					text = {
+						en = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "大约在服务器时间 20:00（晚上 8 点），北部刷新点和最西侧的南部刷新点会同时刷新。如果你动作够快，大概能两处都拿到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 42.4, 30.8, MAP.WESTFALL },
 					{ 65.2, 63.2, MAP.WESTFALL },
@@ -824,8 +908,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			n(1424, {	-- Master Digger
-				["description"] =
-					"Spawns inside Jangolode Mine.",
+				["description"] = createLocalizationString({
+					readable = "Spawns inside Jangolode Mine.",
+					constant = "SPAWNS_INSIDE_JANGOLODE_MINE",
+					export = true,
+					text = {
+						en = "Spawns inside Jangolode Mine.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在詹戈洛德矿洞内刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 46.2, 18.6, MAP.WESTFALL },
 				["groups"] = {
 					i(6205),	-- Burrowing Shovel
@@ -842,7 +942,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			n(519, {	-- Slark
-				["description"] = "Slark is running around the beach.",
+				["description"] = createLocalizationString({
+					readable = "Slark is running around the beach.",
+					constant = "SLARK_IS_RUNNING_AROUND_THE_BEACH",
+					export = true,
+					text = {
+						en = "Slark is running around the beach.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "斯拉克在海滩上四处跑动。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 26.2, 65.6, MAP.WESTFALL },
 					{ 26.6, 56.4, MAP.WESTFALL },
@@ -995,7 +1112,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			i(769),	-- Chunk of Boar Meat
 			i(2673, {	-- Coyote Meat
-				["description"] = "Only drops from coyotes in Westfall.",
+				["description"] = createLocalizationString({
+					readable = "Only drops from coyotes in Westfall.",
+					constant = "ONLY_DROPS_FROM_COYOTES_IN_WESTFALL",
+					export = true,
+					text = {
+						en = "Only drops from coyotes in Westfall.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "仅由西部荒野的土狼掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 49.4, 24.5, MAP.WESTFALL },	-- Furlbrow's Pumpkin Farm
 				["crs"] = {
 					834,	-- Coyote

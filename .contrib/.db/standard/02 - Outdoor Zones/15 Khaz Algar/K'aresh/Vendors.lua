@@ -101,7 +101,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(236409, {	-- Ta'rex <Rare Materials>
-				["description"] = "|cFFE50D12WARNING:|r Sells junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+				["description"] = createLocalizationString({
+					readable = "|cFFE50D12WARNING:|r Sells junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+					constant = "CFFE50D12WARNING_R_SELLS_JUNK_ITEMS_PURCHASES",
+					export = true,
+					text = {
+						en = "|cFFE50D12WARNING:|r Sells junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|cFFE50D12警告：|r 出售垃圾物品。购买后不予退款。把物品卖回去只能收回所花金币的 1/4。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 49.5, 39.2, KARESH_TAZAVESH },
 				["groups"] = {
 					i(247689),	-- K'areshi Copper Ingot (JUNK!)
@@ -110,7 +127,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(235314, {	-- Ta'sam <Fine Goods & Lost Treasures>
-				["description"] = "|cFFE50D12WARNING:|r Sells mostly junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+				["description"] = createLocalizationString({
+					readable = "|cFFE50D12WARNING:|r Sells mostly junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+					constant = "CFFE50D12WARNING_R_SELLS_MOSTLY_JUNK_ITEMS",
+					export = true,
+					text = {
+						en = "|cFFE50D12WARNING:|r Sells mostly junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "|cFFE50D12警告：|r 出售的基本都是垃圾物品。购买后不予退款。把物品卖回去只能收回所花金币的 1/4。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 43.3, 35.5, KARESH_TAZAVESH },
 				["groups"] = {
 					i(260582, {	-- Cartel Collector's Cage (DECOR!)

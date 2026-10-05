@@ -92,7 +92,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(58145),	-- Potion of the Tol'vir
 			i(58488, {	-- Potion of Treasure Finding
 				-- #if AFTER 6.0.3
-				["description"] = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
+				["description"] = createLocalizationString({
+					readable = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
+					constant = "TREASURES_FROM_CATACLYSM_DUNGEONS_HAVE_BEEN",
+					export = true,
+					text = {
+						en = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "大地的裂变副本中的宝藏已被削弱。在团队副本和开放世界中刷怪仍然可行。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["groups"] = { i(67539) },	-- Tiny Treasure Chest
 			}),
@@ -114,7 +131,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(51950),	-- Pyrium Bar
 			i(52303),	-- Shadowspirit Diamond
 			i(58480, {	-- Truegold
-				["description"] = "Crafted through Transmutation.",
+				["description"] = createLocalizationString({
+					readable = "Crafted through Transmutation.",
+					constant = "CRAFTED_THROUGH_TRANSMUTATION",
+					export = true,
+					text = {
+						en = "Crafted through Transmutation.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过转化制造。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		filter(REAGENTS, sharedData({
@@ -150,7 +184,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 					-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 					-- #if BEFORE 5.5.3
-					["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+					["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
 					-- #endif
 				})),
 				i(64656, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Engraved Scimitar Hilt
@@ -306,7 +340,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				{ 79.37, 78.53, TWILIGHT_HIGHLANDS },	-- Highbank
 				{ 50.21, 38.36, ULDUM },	-- Mar'at
 			},
-			["description"] = "Coordinates are for select vendors.",
+			["description"] = createLocalizationString({
+				readable = "Coordinates are for select vendors.",
+				constant = "COORDINATES_ARE_FOR_SELECT_VENDORS",
+				export = true,
+				text = {
+					en = "Coordinates are for select vendors.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "坐标指向若干特定商人。",
+					-- TODO: tw = "",
+				},
+			}),
 			["providers"] = {
 				{ "n", 49688 },	-- Innkeeper Francis <Innkeeper>
 				{ "n", 49519 },	-- Lizzy "Lemons"
@@ -321,7 +372,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62670),	-- Beer-Basted Crocolisk
 		i(62668),	-- Blackbelly Sushi
 		i(62676),	-- Blackened Surprise
-		i(62289, {["description"] = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'."}),	-- Broiled Dragon Feast
+		i(62289, {["description"] = createLocalizationString({
+			readable = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'.",
+			constant = "THIS_RECIPE_IS_REWARDED_FROM_THE_GUILD_COOKING",
+			export = true,
+			text = {
+				en = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "此配方是公会烹饪成就“把烤箱调到灾难级”的奖励。",
+				-- TODO: tw = "",
+			},
+		})}),	-- Broiled Dragon Feast
 		i(62655),	-- Broiled Mountain Trout
 		i(62680),	-- Chocolate Cookie
 		i(62664),	-- Crocolisk Au Gratin
@@ -341,7 +409,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62660),	-- Pickled Guppy
 		i(62653),	-- Salted Eye
 		i(68687, {["timeline"] = {ADDED_4_0_6}}),	-- Scalding Murglesnout
-		i(62290, {["description"] = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'."}),	-- Seafood Magnifique Feast
+		i(62290, {["description"] = createLocalizationString({
+			readable = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'.",
+			constant = "THIS_RECIPE_IS_REWARDED_FROM_THE_GUILD_FISHING",
+			export = true,
+			text = {
+				en = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "此配方是公会钓鱼成就“好多鱼饵”的奖励。",
+				-- TODO: tw = "",
+			},
+		})}),	-- Seafood Magnifique Feast
 		i(62652),	-- Seasoned Crab
 		i(62671),	-- Severed Sagefish Head
 		i(62669),	-- Skewered Eel
@@ -356,46 +441,199 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- Dust:
 			i(52555, {	-- Hypnotic Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_24",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的大灾变装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_25",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 272-312 范围内的优秀（绿色）品质的大地的裂变服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			-- Essences:
 			i(52719, {	-- Greater Celestial Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_24",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_26",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 306-318 范围内的优秀（绿色）品质的大地的裂变武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(52718, {	-- Lesser Celestial Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_24",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_27",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 272-305 范围内的优秀（绿色）品质的大地的裂变武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			-- Shards and crystals:
 			i(52721, {	-- Heavenly Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_RARE_BLUE_QUALITY",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解稀有（蓝色）品质的大灾变装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_13",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 318-346 范围内的所有稀有（蓝色）品质的大地的裂变装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(52722, {	-- Maelstrom Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all epic (purple) quality Cataclysm gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE_6",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all epic (purple) quality Cataclysm gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解所有史诗（紫色）品质的大地的裂变装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE_7",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 353-410 范围内的所有史诗（紫色）品质的大地的裂变装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(52720, {	-- Small Heavenly Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
+				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_RARE_BLUE_QUALITY",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_14",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 288-316 范围内的所有稀有（蓝色）品质的大地的裂变装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 		}),
@@ -482,7 +720,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		-- #endif
 		prof(GNOMISH_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS",
 			["groups"] = {
 				filter(BATTLE_PETS, {
 					i(60216),	-- De-Weaponized Mechanical Companion (PET!)
@@ -495,7 +733,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			},
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS_2",
 			["groups"] = {
 				filter(BATTLE_PETS, {
 					i(59597),	-- Personal World Destroyer (PET!)
@@ -589,13 +827,47 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				{ 76.8, 41.9, DEEPHOLM },	-- Crimson Expanse
 				{ 27.2, 34.8, DEEPHOLM },	-- Needlerock Chasm
 			},
-			["description"] = "Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+			["description"] = createLocalizationString({
+				readable = "Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+				constant = "SCHOOLS_CAN_ALSO_SPAWN_IN_THE_CAVERN_BENEATH",
+				export = true,
+				text = {
+					en = "Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "鱼群也可能在上银沼下方的洞穴中刷新，入口位于下银沼。",
+					-- TODO: tw = "",
+				},
+			}),
 			["_allowObjectProvider"] = true,
 			["provider"] = { "o", 202778 },	-- Albino Cavefish School
 		}),
 		i(53071, {	-- Algaefin Rockfish
 			-- Danny Donkey: Wowhead comments indicates that these possibly had dedicated schools before 4.3.0.
-			["description"] = "Can be caught on the seaside, though might be more uncommon than other saltwater fish.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught on the seaside, though might be more uncommon than other saltwater fish.",
+				constant = "CAN_BE_CAUGHT_ON_THE_SEASIDE_THOUGH_MIGHT_BE",
+				export = true,
+				text = {
+					en = "Can be caught on the seaside, though might be more uncommon than other saltwater fish.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在海边钓到，不过可能比其他咸水鱼更为少见。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				TOL_BARAD_PENINSULA,
 				TWILIGHT_HIGHLANDS,
@@ -607,15 +879,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- #endif
 		}),
 		i(53066, {	-- Blackbelly Mudfish
-			["description"] = "Schools can be found in inland waterways.",
+			["description"] = createLocalizationString({
+				readable = "Schools can be found in inland waterways.",
+				constant = "SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERWAYS",
+				export = true,
+				text = {
+					en = "Schools can be found in inland waterways.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "鱼群可以在内陆河道中找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = { ULDUM },
 			["provider"] = { "o", 202779 },	-- Blackbelly Mudfish School
 		}),
 		i(53072, {	-- Deepsea Sagefish
 			-- #if BEFORE 4.3.0
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			-- #else
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			-- #endif
 			["maps_disp"] = {
 				TOL_BARAD_PENINSULA,
@@ -633,7 +922,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- #endif
 		}),
 		i(53070, {	-- Fathom Eel
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				TOL_BARAD_PENINSULA,
 				ULDUM,
@@ -646,12 +935,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			},
 		}),
 		i(53064, {	-- Highland Guppy
-			["description"] = "Schools can be found in inland waterways.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERWAYS",
 			["maps_disp"] = { TWILIGHT_HIGHLANDS },
 			["provider"] = { "o", 202777 },	-- Highland Guppy School
 		}),
 		i(53068, {	-- Lavascale Catfish
-			["description"] = "Can be caught in inland waterways.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in inland waterways.",
+				constant = "CAN_BE_CAUGHT_IN_INLAND_WATERWAYS",
+				export = true,
+				text = {
+					en = "Can be caught in inland waterways.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水道中钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				DEEPHOLM,
 				ULDUM,
@@ -672,7 +978,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			["provider"] = { "o", 202776 },	-- Mountain Trout School
 		}),
 		i(53069, {	-- Murglesnout
-			["description"] = "Can be caught on the seaside.",
+			["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				TOL_BARAD_PENINSULA,
 				TWILIGHT_HIGHLANDS,
@@ -719,7 +1025,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- #endif
 		}),
 		i(53062, {	-- Sharptooth
-			["description"] = "Can be caught in inland waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERWAYS",
 			["maps_disp"] = {
 				DEEPHOLM,
 				MOUNT_HYJAL,
@@ -733,7 +1039,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				{ 52.4, 77.0, MOUNT_HYJAL },	-- The Throne of Flame
 				{ 41.0, 79.1, TWILIGHT_HIGHLANDS },	-- Cannon's Inferno
 			},
-			["description"] = "Can be caught by fishing in lava using a special lure.",
+			["description"] = "~L.CAN_BE_CAUGHT_BY_FISHING_IN_LAVA_USING_A",
 			["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
 			-- #if AFTER TWW
 			["collectible"] = false,	-- remove when Blizzard fix fish collection
@@ -741,7 +1047,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		-- #endif
 		i(53067, {	-- Striped Lurker
-			["description"] = "Can be caught in inland waterways.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERWAYS",
 			["maps_disp"] = {
 				MOUNT_HYJAL,
 				TWILIGHT_HIGHLANDS,
@@ -778,31 +1084,82 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				{ 76.8, 41.9, DEEPHOLM },	-- Crimson Expanse
 				{ 27.2, 34.8, DEEPHOLM },	-- Needlerock Chasm
 			},
-			["description"] = "Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+			["description"] = createLocalizationString({
+				readable = "Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+				constant = "CAN_ALSO_SPAWN_IN_THE_CAVERN_BENEATH_UPPER",
+				export = true,
+				text = {
+					en = "Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "也可在上银沼下方的洞穴中刷新，入口位于下银沼。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		o(202781, {	-- Algaefin Rockfish School
-			["description"] = "Please let us in the ATT-discord know if this school appears in any iterations of the game.",
+			["description"] = createLocalizationString({
+				readable = "Please let us in the ATT-discord know if this school appears in any iterations of the game.",
+				constant = "PLEASE_LET_US_IN_THE_ATT_DISCORD_KNOW_IF_THIS",
+				export = true,
+				text = {
+					en = "Please let us in the ATT-discord know if this school appears in any iterations of the game.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "如果这个学院出现在游戏的任何版本中，请到 ATT-discord 中告知我们。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { TWILIGHT_HIGHLANDS },
 			["timeline"] = { REMOVED_4_3_0 },
 		}),
 		o(202779, {	-- Blackbelly Mudfish School
-			["description"] = "Can be found in inland waterways.",
+			["description"] = createLocalizationString({
+				readable = "Can be found in inland waterways.",
+				constant = "CAN_BE_FOUND_IN_INLAND_WATERWAYS",
+				export = true,
+				text = {
+					en = "Can be found in inland waterways.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水道中找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { ULDUM },
 		}),
 		o(208311, {	-- Deepsea Sagefish School
-			["description"] = "Can be found on the seaside.",
+			["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps"] = { TWILIGHT_HIGHLANDS },
 			["timeline"] = { ADDED_4_3_0 },
 		}),
 		o(202780, {	-- Fathom Eel Swarm
-			["description"] = "Can be found on the seaside.",
+			["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps"] = {
 				TOL_BARAD_PENINSULA,
 				ULDUM,
 			},
 		}),
 		o(202777, {	-- Highland Guppy School
-			["description"] = "Can be found in inland waterways.",
+			["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERWAYS",
 			["maps"] = { TWILIGHT_HIGHLANDS },
 		}),
 		o(202776, {	-- Mountain Trout School
@@ -829,7 +1186,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- Recipe:
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
 			}),
 		}),
 	}),
@@ -837,7 +1194,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ ["requireSkill"] = HERBALISM, }, {	-- Herb Gathering
 			-- Nodes:
 			o(202749, {	-- Azshara's Veil
-				["description"] = "Can be found near and in waters.",
+				["description"] = createLocalizationString({
+					readable = "Can be found near and in waters.",
+					constant = "CAN_BE_FOUND_NEAR_AND_IN_WATERS",
+					export = true,
+					text = {
+						en = "Can be found near and in waters.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在水域附近及水中找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 425,
 				-- #endif
@@ -850,7 +1224,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			o(202747, {	-- Cinderbloom
-				["description"] = "Mount Hyjal is the better place to look for these.",
+				["description"] = createLocalizationString({
+					readable = "Mount Hyjal is the better place to look for these.",
+					constant = "MOUNT_HYJAL_IS_THE_BETTER_PLACE_TO_LOOK_FOR",
+					export = true,
+					text = {
+						en = "Mount Hyjal is the better place to look for these.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "海加尔山是寻找这些东西更好的地方。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 425,
 				-- #endif
@@ -876,7 +1267,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					{ 50.4, 35.4, VASHJIR_SHIMMERING_EXPANSE },	-- Silver Tide Trench, beneath
 					{ 38.3, 64.1, VASHJIR_SHIMMERING_EXPANSE },	-- Quel'Dormir Gardens
 				},
-				["description"] = "Can be found near the base of vegetation and structures.",
+				["description"] = createLocalizationString({
+					readable = "Can be found near the base of vegetation and structures.",
+					constant = "CAN_BE_FOUND_NEAR_THE_BASE_OF_VEGETATION_AND",
+					export = true,
+					text = {
+						en = "Can be found near the base of vegetation and structures.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在植被和建筑的底部附近找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 425,
 				-- #endif
@@ -906,7 +1314,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		{	-- Herbs:
 			i(52985, {	-- Azshara's Veil
-				["description"] = "Can be found near and in waters.",
+				["description"] = "~L.CAN_BE_FOUND_NEAR_AND_IN_WATERS",
 				["maps_disp"] = {
 					TOL_BARAD_PENINSULA,
 					VASHJIR_ABYSSAL_DEPTHS,
@@ -921,7 +1329,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["timeline"] = { ADDED_6_0_2 },
 			}),
 			i(52983, {	-- Cinderbloom
-				["description"] = "Mount Hyjal is the better place to look for these.",
+				["description"] = "~L.MOUNT_HYJAL_IS_THE_BETTER_PLACE_TO_LOOK_FOR",
 				["maps_disp"] = {
 					DEEPHOLM,
 					MOUNT_HYJAL,
@@ -963,7 +1371,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					{ 50.4, 35.4, VASHJIR_SHIMMERING_EXPANSE },	-- Silver Tide Trench, beneath
 					{ 38.3, 64.1, VASHJIR_SHIMMERING_EXPANSE },	-- Quel'Dormir Gardens
 				},
-				["description"] = "Can be found near the base of vegetation and structures.",
+				["description"] = "~L.CAN_BE_FOUND_NEAR_THE_BASE_OF_VEGETATION_AND",
 				["maps_disp"] = {
 					MOUNT_HYJAL,
 					VASHJIR_KELPTHAR_FOREST,
@@ -1062,7 +1470,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- Non-reagent crafts:
 		i(62237, {	-- Adventurer's Journal
 			-- #if CATA
-			["description"] = "Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.\n\nLearning by Example - Quest experience increased by 10%.\nThe Great Hunt - Damage against beasts increased by 15%\nTerrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.\nLiving Forever - Chance to heal yourself when dealing damage to an enemy.\nDeadly Drive - Damage against humanoids increased by 15%.\nDragonsbane - Damage against Dragonkin increased by 15%.\nMechanical Aptitude - Damage against Mechanicals increased by 15%.\nKneecapper - Damage against Giants increased by 15%.\nFire and Water - Damage against Elementals increased by 15%.\n28 Chapters Later - Damage against Undead increased by 15%.",
+			["description"] = createLocalizationString({
+				readable = "Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.\n\nLearning by Example - Quest experience increased by 10%.\nThe Great Hunt - Damage against beasts increased by 15%\nTerrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.\nLiving Forever - Chance to heal yourself when dealing damage to an enemy.\nDeadly Drive - Damage against humanoids increased by 15%.\nDragonsbane - Damage against Dragonkin increased by 15%.\nMechanical Aptitude - Damage against Mechanicals increased by 15%.\nKneecapper - Damage against Giants increased by 15%.\nFire and Water - Damage against Elementals increased by 15%.\n28 Chapters Later - Damage against Undead increased by 15%.",
+				constant = "USING_THIS_ITEM_WILL_PROVIDE_YOU_WITH_A",
+				export = true,
+				text = {
+					en = "Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.\n\nLearning by Example - Quest experience increased by 10%.\nThe Great Hunt - Damage against beasts increased by 15%\nTerrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.\nLiving Forever - Chance to heal yourself when dealing damage to an enemy.\nDeadly Drive - Damage against humanoids increased by 15%.\nDragonsbane - Damage against Dragonkin increased by 15%.\nMechanical Aptitude - Damage against Mechanicals increased by 15%.\nKneecapper - Damage against Giants increased by 15%.\nFire and Water - Damage against Elementals increased by 15%.\n28 Chapters Later - Damage against Undead increased by 15%.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "使用此物品会为你提供一个持续 1 小时的临时增益效果。该增益是随机的，且仅在你低于 85 级时生效。\n\n以身作则 - 任务经验提高 10%。\n大狩猎 - 对野兽造成的伤害提高 15%\n地形专家 - 移动速度提高 %15。此效果不与其他提高移动速度的效果叠加。\n永生 - 对敌人造成伤害时有几率治疗自己。\n致命驱策 - 对人型生物造成的伤害提高 15%。\n巨龙克星 - 对龙类造成的伤害提高 15%。\n机械天赋 - 对机械造成的伤害提高 15%。\n碎膝者 - 对巨人造成的伤害提高 15%。\n火与水 - 对元素生物造成的伤害提高 15%。\n28 章之后 - 对亡灵造成的伤害提高 15%。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 		}),
@@ -1305,7 +1730,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["timeline"] = { ADDED_4_3_0 },
 				-- #if BEFORE SL
 				["collectible"] = false,
-				["description"] = "Keep this somewhere until the appearance can be learned in Shadowlands."
+				["description"] = createLocalizationString({
+					readable = "Keep this somewhere until the appearance can be learned in Shadowlands.",
+					constant = "KEEP_THIS_SOMEWHERE_UNTIL_THE_APPEARANCE_CAN_BE",
+					export = true,
+					text = {
+						en = "Keep this somewhere until the appearance can be learned in Shadowlands.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "把这个保存在某个地方，直到可以在暗影界学习该外观。",
+						-- TODO: tw = "",
+					},
+				})
 				-- #endif
 			}),
 		}),
@@ -1855,7 +2297,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- #if NOT ANYCLASSIC
 		filter(BATTLE_PETS, {
 			i(67282, {	-- Elementium Geode (PET!)
-				["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
+				["description"] = "~L.ELEMENTIUM_VEINS_0_05_DROP_RATE_AND_RICH",
 				["maps_disp"] = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,

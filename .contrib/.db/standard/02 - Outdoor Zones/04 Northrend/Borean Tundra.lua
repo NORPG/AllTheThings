@@ -89,20 +89,88 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(641),	-- Arctic Hare (PET!)
 						pet(639, {	-- Borean Marmot (PET!)
-							["description"] = "Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",
+							["description"] = createLocalizationString({
+								readable = "Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",
+								constant = "FOUND_ALL_OVER_THE_YELLOW_BROWN_TUNDRA_BETWEEN",
+								export = true,
+								text = {
+									en = "Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在战歌要塞和索拉查盆地之间的黄褐色苔原各处都能找到。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 57.0, 35.0, BOREAN_TUNDRA },
 						}),
 						pet(1165, {	-- Nexus Whelpling (PET!)
-							["description"] = "Found in Coldarra.",
+							["description"] = createLocalizationString({
+								readable = "Found in Coldarra.",
+								constant = "FOUND_IN_COLDARRA",
+								export = true,
+								text = {
+									en = "Found in Coldarra.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "位于考达拉。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 30.0, 30.0, BOREAN_TUNDRA },
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(530, {	-- Oily Slimeling (PET!)
-							["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
+							["description"] = createLocalizationString({
+								readable = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
+								constant = "FOUND_IN_THE_OIL_POOLS_FROM_FIZZCRANK_AIRSTRIP",
+								export = true,
+								text = {
+									en = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "位于从菲兹兰克机场到间歇泉平原的油池中。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 61.0, 31.0, BOREAN_TUNDRA },
 						}),
 						pet(536, {	-- Tundra Penguin (PET!)
-							["description"] = "There is only a few spawns of this pet, which can be found by the shore in the westernmost part of Dragonblight. However, it is a common secondary pet in both Borean Tundra and Dragonblight!",
+							["description"] = createLocalizationString({
+								readable = "There is only a few spawns of this pet, which can be found by the shore in the westernmost part of Dragonblight. However, it is a common secondary pet in both Borean Tundra and Dragonblight!",
+								constant = "THERE_IS_ONLY_A_FEW_SPAWNS_OF_THIS_PET_WHICH",
+								export = true,
+								text = {
+									en = "There is only a few spawns of this pet, which can be found by the shore in the westernmost part of Dragonblight. However, it is a common secondary pet in both Borean Tundra and Dragonblight!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "该宠物只有少数几个刷新点，位于龙骨荒野最西侧的海岸边。不过，它在北风苔原和龙骨荒野都是常见的次级宠物！",
+									-- TODO: tw = "",
+								},
+							}),
 							["coords"] = {
 								{ 9.0, 60.0, DRAGONBLIGHT },	-- Coldwind Pass
 								{ 18.7, 63.3, DRAGONBLIGHT },	-- Moonrest Gardens
@@ -660,12 +728,46 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12471, {	-- Cruelty of the Kvaldir
-						["description"] = "Offered once you kill the |cFFFFD700Riplash Myrmidon|r attacking the prisoner.",
+						["description"] = createLocalizationString({
+							readable = "Offered once you kill the |cFFFFD700Riplash Myrmidon|r attacking the prisoner.",
+							constant = "OFFERED_ONCE_YOU_KILL_THE_CFFFFD700RIPLASH",
+							export = true,
+							text = {
+								en = "Offered once you kill the |cFFFFD700Riplash Myrmidon|r attacking the prisoner.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在你击杀攻击囚犯的 |cFFFFD700裂鞭海妖|r 后提供。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 25636,	-- Captured Tuskarr Prisoner
 						["coord"] = { 44.0, 77.8, BOREAN_TUNDRA },
 					}),
 					q(11920, {	-- Cultists Among Us
-						["description"] = "Must have or complete |cFFFFD700A Soldier in Need|r to see this quest.",
+						["description"] = createLocalizationString({
+							readable = "Must have or complete |cFFFFD700A Soldier in Need|r to see this quest.",
+							constant = "MUST_HAVE_OR_COMPLETE_CFFFFD700A_SOLDIER_IN",
+							export = true,
+							text = {
+								en = "Must have or complete |cFFFFD700A Soldier in Need|r to see this quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须拥有或完成|cFFFFD700急需帮助的士兵|r才能看到此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 11789,	-- A Soldier In Need
 						["provider"] = { "o", 187851 },	-- Cultist Shrine
 						["coord"] = { 57.5, 69.1, BOREAN_TUNDRA },
@@ -990,7 +1092,24 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(41888, {	-- Small Velvet Bag
-								["description"] = "Contains a 'perfect' gem.",
+								["description"] = createLocalizationString({
+									readable = "Contains a 'perfect' gem.",
+									constant = "CONTAINS_A_PERFECT_GEM",
+									export = true,
+									text = {
+										en = "Contains a 'perfect' gem.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "包含一颗“完美”宝石。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							r(55534, {	-- Gem Perfection
 								["requireSkill"] = JEWELCRAFTING,
@@ -1010,7 +1129,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(41888, {	-- Small Velvet Bag
-								["description"] = "Contains a 'perfect' gem.",
+								["description"] = "~L.CONTAINS_A_PERFECT_GEM",
 							}),
 							r(55534, {	-- Gem Perfection
 								["requireSkill"] = JEWELCRAFTING,
@@ -1136,7 +1255,24 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11586, {	-- Hellscream's Vigil
-						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+						["description"] = createLocalizationString({
+							readable = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+							constant = "THIS_VERSION_OF_THE_QUEST_IS_ONLY_AVAILABLE_IF",
+							export = true,
+							text = {
+								en = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此版本的任务仅在你*尚未*完成纳格兰（外域）祖母盖亚的“毫无希望”任务时可用。不过，目前似乎所有人都接到的是这个版本。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #if AFTER CATA
 						["sourceQuest"] = 28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
 						-- #endif
@@ -1330,7 +1466,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11946, {	-- Keristrasza
-						["description"] = "Use the |cFFFFFFFFAugmented Arcane Prison|r in your bags to summon |cFFFFD700Keristrasza|r. If you do not have the item in your bags, talk to |cFFFFD700Raelorasz|r to get one.",
+						["description"] = createLocalizationString({
+							readable = "Use the |cFFFFFFFFAugmented Arcane Prison|r in your bags to summon |cFFFFD700Keristrasza|r. If you do not have the item in your bags, talk to |cFFFFD700Raelorasz|r to get one.",
+							constant = "USE_THE_CFFFFFFFFAUGMENTED_ARCANE_PRISON_R_IN",
+							export = true,
+							text = {
+								en = "Use the |cFFFFFFFFAugmented Arcane Prison|r in your bags to summon |cFFFFD700Keristrasza|r. If you do not have the item in your bags, talk to |cFFFFD700Raelorasz|r to get one.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用背包中的 |cFFFFFFFF强化奥术牢笼|r 来召唤 |cFFFFD700克莉斯塔萨|r。如果你的背包里没有该物品，请与 |cFFFFD700莱洛拉斯|r 交谈以获取一个。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 11943,	-- The Cell
 						["qg"] = 26206,	-- Keristrasza
 						["coord"] = { 33.3, 34.1, BOREAN_TUNDRA },
@@ -2398,7 +2551,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11595, {	-- The Defense of Warsong Hold
-						["description"] = "This version of the quest is only available if you have completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
+						["description"] = createLocalizationString({
+							readable = "This version of the quest is only available if you have completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
+							constant = "THIS_VERSION_OF_THE_QUEST_IS_ONLY_AVAILABLE_IF_2",
+							export = true,
+							text = {
+								en = "This version of the quest is only available if you have completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此版本的任务仅在你已从奈法利安的头颅处完成“黑石之王”任务，且*没有*“甲虫之王”头衔时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							11585,	-- Hellscream's Vigil
 							11586,	-- Hellscream's Vigil
@@ -2408,7 +2578,24 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11596, {	-- The Defense of Warsong Hold
-						["description"] = "This version of the quest is only available if you have NOT completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
+						["description"] = createLocalizationString({
+							readable = "This version of the quest is only available if you have NOT completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
+							constant = "THIS_VERSION_OF_THE_QUEST_IS_ONLY_AVAILABLE_IF_3",
+							export = true,
+							text = {
+								en = "This version of the quest is only available if you have NOT completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此版本的任务仅在你*尚未*从奈法利安的头颅处完成“黑石之王”任务，且*没有*“甲虫之王”头衔时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							11585,	-- Hellscream's Vigil
 							11586,	-- Hellscream's Vigil
@@ -2418,7 +2605,24 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11597, {	-- The Defense of Warsong Hold
-						["description"] = "This version of the quest is only available if you have the Scarab Lord title.",
+						["description"] = createLocalizationString({
+							readable = "This version of the quest is only available if you have the Scarab Lord title.",
+							constant = "THIS_VERSION_OF_THE_QUEST_IS_ONLY_AVAILABLE_IF_4",
+							export = true,
+							text = {
+								en = "This version of the quest is only available if you have the Scarab Lord title.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此版本的任务仅在你拥有“甲虫之王”头衔时可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							11585,	-- Hellscream's Vigil
 							11586,	-- Hellscream's Vigil
@@ -2883,7 +3087,24 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11632, {	-- What the Cold Wind Brings...
-						["description"] = "Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",
+						["description"] = createLocalizationString({
+							readable = "Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",
+							constant = "MUST_KILL_CFFFFD700ITH_RIX_THE_HARVESTER_R",
+							export = true,
+							text = {
+								en = "Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须在战歌要塞进攻期间击杀|cFFFFD700收割者伊思里克斯|r，然后拾取甲壳。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 34777 },	-- Ith'rix's Hardened Carapace
 						["coord"] = { 43.1, 56.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
@@ -3009,7 +3230,24 @@ root(ROOTS.Zones, {
 				-- #if AFTER 6.2.2.20444
 				n(TREASURES, {
 					o(244447, {	-- White Murloc Egg
-						["description"] = "Found beneath Riplash Ruins. There is an obscured underwater cave outside the northeastern end of the ruins. Two white murloc eggs can be found in the end of the cave, but only the one on the ground can be looted.",
+						["description"] = createLocalizationString({
+							readable = "Found beneath Riplash Ruins. There is an obscured underwater cave outside the northeastern end of the ruins. Two white murloc eggs can be found in the end of the cave, but only the one on the ground can be looted.",
+							constant = "FOUND_BENEATH_RIPLASH_RUINS_THERE_IS_AN",
+							export = true,
+							text = {
+								en = "Found beneath Riplash Ruins. There is an obscured underwater cave outside the northeastern end of the ruins. Two white murloc eggs can be found in the end of the cave, but only the one on the ground can be looted.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于裂鞭废墟下方。废墟东北端外侧有一个隐蔽的水下洞穴。洞穴尽头可以找到两枚白色鱼人蛋，但只有地上的那枚可以拾取。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 55.8, 88.1, BOREAN_TUNDRA },	-- Cave Entrance
 							{ 54.6, 89.4, BOREAN_TUNDRA },	-- White Murloc Egg

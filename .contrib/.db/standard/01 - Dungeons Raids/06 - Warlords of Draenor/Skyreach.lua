@@ -267,7 +267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(10081),	-- Mythic: Skyreach
 					ig(127772, {	-- Gemcutter Module: Haste
 						["requireSkill"] = JEWELCRAFTING,
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = "~L.TAKE_THIS_RECIPE_TO_THE_APEXIS_GEMCUTTER_IN",
 					}),
 				}),
 			}),

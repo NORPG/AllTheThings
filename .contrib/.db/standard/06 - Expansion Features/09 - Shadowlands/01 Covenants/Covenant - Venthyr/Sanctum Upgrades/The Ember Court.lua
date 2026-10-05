@@ -553,7 +553,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							i(182211),	-- Stone Brick
 							i(182195),	-- Vanity Mirror before use
 							i(182210, {	-- Vanity Mirror after use
-								["description"] = "This is the already-used version of the mirror.",
+								["description"] = createLocalizationString({
+									readable = "This is the already-used version of the mirror.",
+									constant = "THIS_IS_THE_ALREADY_USED_VERSION_OF_THE_MIRROR",
+									export = true,
+									text = {
+										en = "This is the already-used version of the mirror.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这是镜子的已使用版本。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							-- Guests mood status
 							i(181341);	-- Alexandros Mograine
@@ -781,7 +798,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 						})),
 						n(SCENARIO_COMPLETION, {
-							["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
+							["description"] = createLocalizationString({
+								readable = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",
+								constant = "SOME_REWARDS_DROP_FROM_THE_NON_EXTRAVAGANT",
+								export = true,
+								text = {
+									en = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "部分奖励会从非奢华贡品箱中掉落，但针对兴高采烈客人的奢华贡品是获得稀有战利品的最佳方式。",
+									-- TODO: tw = "",
+								},
+							}),	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 							["groups"] = {
 								o(356697, {	-- Alexandros Mograine's Extravagant Tribute
 									["crs"] = { 171833 },	-- Alexandros Mograine <The Ashbringer>
@@ -794,7 +828,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									}),
 								}),
 								n(165686, {	-- Ashen Amalgamation
-									["description"] = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court. Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water. Put out enough fires, and the rare will spawn.",
+									["description"] = createLocalizationString({
+										readable = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court. Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water. Put out enough fires, and the rare will spawn.",
+										constant = "TO_SUMMON_THIS_MOB_YOU_NEED_TO_COLLECT",
+										export = true,
+										text = {
+											en = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court. Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water. Put out enough fires, and the rare will spawn.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "要召唤此怪物，你需要从西卡的贡品中收集 |cFF1eff00注能心能之水|r，这会让灰烬王庭周围出现水桶。使用 |cFFFFFFFF传统|r 装饰，当蜡烛引发火灾时，你可以用水浇灭它们。熄灭足够多的火焰后，稀有怪就会刷新。",
+											-- TODO: tw = "",
+										},
+									}),
 									["groups"] = {
 										i(183107),	-- Char (PET!)
 									},
@@ -1069,7 +1120,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61738, {	-- Ember Court: Lost Chalice Band
-									["description"] = "Available after purchasing Staff: Stage Crew.",
+									["description"] = createLocalizationString({
+										readable = "Available after purchasing Staff: Stage Crew.",
+										constant = "AVAILABLE_AFTER_PURCHASING_STAFF_STAGE_CREW",
+										export = true,
+										text = {
+											en = "Available after purchasing Staff: Stage Crew.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "购买员工：舞台工作人员后可用。",
+											-- TODO: tw = "",
+										},
+									}),
 									["provider"] = { "n", 173173 },	-- Caretaker Tedo
 									["coord"] = { 55.1, 43.7, REVENDRETH },
 									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
@@ -1103,7 +1171,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61406, {	-- Ember Court: Mushroom Surprise
-									["description"] = "Available after purchasing Staff: Waiters.",
+									["description"] = createLocalizationString({
+										readable = "Available after purchasing Staff: Waiters.",
+										constant = "AVAILABLE_AFTER_PURCHASING_STAFF_WAITERS",
+										export = true,
+										text = {
+											en = "Available after purchasing Staff: Waiters.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "购买员工：服务生后可用。",
+											-- TODO: tw = "",
+										},
+									}),
 									["provider"] = { "n", 168429 },	-- Melody Madcap
 									["coord"] = { 40.2, 41.2, MALDRAXXUS },
 									["groups"] = {
@@ -1147,7 +1232,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61402, {	-- Ember Court: Stoneborn Reserves
-									["description"] = "Available after purchasing Building: Guardhouse.",
+									["description"] = createLocalizationString({
+										readable = "Available after purchasing Building: Guardhouse.",
+										constant = "AVAILABLE_AFTER_PURCHASING_BUILDING_GUARDHOUSE",
+										export = true,
+										text = {
+											en = "Available after purchasing Building: Guardhouse.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "购买建筑：卫兵室后开放。",
+											-- TODO: tw = "",
+										},
+									}),
 									["provider"] = { "n", 172502 },	-- Chelra the Bladewall
 									["coord"] = { 26.5, 29.1, REVENDRETH },
 									["groups"] = {
@@ -1177,7 +1279,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61401, {	-- Ember Court: Venthyr Volunteers
-									["description"] = "Available after purchasing Building: Guardhouse.",
+									["description"] = "~L.AVAILABLE_AFTER_PURCHASING_BUILDING_GUARDHOUSE",
 									["provider"] = { "n", 172614 },	-- Nadija the Mistblade
 									["coord"] = { 60.9, 39.5, REVENDRETH },
 									["groups"] = {
@@ -1538,7 +1640,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61129, {	-- RSVP: Droman Aliothe
-									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r). The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
+									["description"] = createLocalizationString({
+										readable = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r). The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
+										constant = "1_PURCHASE_A_CFFFFFFFFNECKLACE_OF_DREDBAT_FANGS",
+										export = true,
+										text = {
+											en = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r). The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "1. 在雷文德斯从塔特鲁处购买一条 |cFFFFFFFF恐蝠牙项链|r（|cFFFFFFFF51.1, 78.8|r）。此物品的价格每周都会变化。\n\n2. 在奥利波斯掮客巢穴的古董商塔兰处用项链换取一张 |cFFFFFFFF海蓝宝石财团票据|r（|cFFFFFFFF51.6, 44.6|r）。\n\n3. 在奥利波斯命运之环的收购者塔戈什处用票据换取一颗 |cFFFFFFFF特雷吉尔水晶|r（|cFFFFFFFF61.7, 72.0|r）。\n\n4. 返回雷文德斯，在塔鲁卡处用水晶换取 |cFFFFFFFF保鲜浆果|r（|cFFFFFFFF51.1, 78.5|r）。",
+											-- TODO: tw = "",
+										},
+									}),
 									["provider"] = { "n", 160894 },	-- Droman Aliothe
 									["coord"] = { 60.1, 53.8, ARDENWEALD },
 									["cost"] = {
@@ -1553,7 +1672,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61092, {	-- RSVP: Grandmaster Vole
-									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+									["description"] = createLocalizationString({
+										readable = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+										constant = "CFF1EFF00INVITATION_GRANDMASTER_VOLE_R_CAN_BE",
+										export = true,
+										text = {
+											en = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "|cFF1eff00邀请函：沃尔大师|r可从堕罪堡上方的伊琳卡夫人处购买。",
+											-- TODO: tw = "",
+										},
+									}),
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
@@ -1702,42 +1838,59 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["icon"] = 3750313,
 							["groups"] = {
 								q(62177, {	-- A Memorable Look
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = createLocalizationString({
+										readable = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+										constant = "SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
+										export = true,
+										text = {
+											en = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "从宠物手册中召唤你的|cFF006211泥仆管家|r。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182970, 1 } },	-- 1x Burgleclipped Portrait
 								}),
 								q(62174, {	-- A Proper Cover
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
 								}),
 								q(62206, {	-- Ardenweald Etiquette
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "i", 183861 },	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 								}),
 								q(62207, {	-- Bastion Etiquette
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "i", 183863 },	-- The Proper Path and Etiquette for Aspirants
 								}),
 								q(64340, {	-- Bewitching
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 187133, 1 } },	-- 1x Bewitching Little Hat
 								}),
 								q(62178, {	-- Black Muck Dye
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
 									["repeatable"] = true,
 								}),
 								q(62179, {	-- Blue Muck Dye
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182705, 1 } },	-- 1x Vial of Blue Muck Dye
@@ -1750,12 +1903,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["repeatable"] = true,
 								}),
 								q(61764, {	-- Dredging up a Name
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 62361 },	-- Introductions are in Order
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 								}),
 								q(62985, {	-- Dredging up a New Look
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61764 },	-- Dredging up a Name
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 184446, 1 } },	-- 1x Vial of Blue Muck Dye
@@ -1771,7 +1924,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(62180, {	-- Green Muck Dye
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182704, 1 } },	-- 1x Green Muck Dye
@@ -1788,25 +1941,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(62173, {	-- Long Sleeved Doublet
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
 									-- ["repeatable"] = true,
 								}),
 								q(62175, {	-- Looking Fabulous
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182971, 1 } },	-- 1x Fabius's Portrait
 								}),
 								q(62208, {	-- Maldraxxi Protocols
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "i", 183860 },	-- The Death March: An Introduction to Maldraxxi Etiquette
 								}),
 								q(62221, {	-- My Own Death Pony!
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 183842, 1 } },	-- 1x Sinrunner Pony Reins
@@ -1821,7 +1974,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(62222, {	-- On Silver Wings
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 183843, 1 } },	-- 1x Juvenile Dredbat Harness
@@ -1832,13 +1985,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(62172, {	-- Shortsleeved Doublet
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182712, 1 } },	-- 1x Dredger's Short Sleeved Doublet
 								}),
 								q(64509, {	-- Stylish Cover
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 187256, 1 } },	-- 1x Hips' Spare Fedora
@@ -1850,13 +2003,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									-- ["repeatable"] = true,
 								}),
 								q(63765, {	-- Unseen Hero of the Party
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 185741, 1 } },	-- 1x Restock and Repair, Tips and Tricks for Keeping the Party Going
 								}),
 								q(62205, {	-- Venthyr Ettiquette
-									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["description"] = "~L.SUMMON_YOUR_CFF006211DREDGER_BUTLER_R_FROM_THE",
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "i", 183862 },	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 								}),
@@ -1952,7 +2105,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61059, {	-- RSVP: Rendle and Cudgelface
-									["description"] = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests. If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
+									["description"] = createLocalizationString({
+										readable = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests. If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
+										constant = "TO_GET_RENDLE_AND_CUDGELFACE_S_RSVP_YOU_NEED_TO",
+										export = true,
+										text = {
+											en = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests. If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "要获得伦德尔和棍脸的回执，你需要完成一个煤灰帽任务。如果你想更快地收集 |cffffff00伦德尔的大日子|r 条件，可以放弃回执任务再重新接取，以完成更多煤灰帽任务。",
+											-- TODO: tw = "",
+										},
+									}),
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171190 },	-- Cudgelface
 									["coord"] = { 61.9, 77.0, SINFALL_DEPTHS },
@@ -2350,7 +2520,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									i(181523),	-- Staff: Bouncers (EC!)
 									i(182296, {	-- Letter of Note, Premier Party Planner
 										["cost"] = { { "c", 1820, 85 } },	-- 85x Infused Ruby
-										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+										["description"] = createLocalizationString({
+											readable = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+											constant = "THIS_IS_INTENDED_TO_BE_PURCHASED_ON_A_MAIN",
+											export = true,
+											text = {
+												en = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "这是为了让“大号”温西尔角色购买后寄给“小号”温西尔角色，以便在灰烬王庭进度上抢占先机。",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 									i(182973, {	-- Leather Dredger Coif
 										["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby
@@ -2369,11 +2556,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									}),
 									i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
 										["cost"] = { { "c", 1820, 85 } },	-- 85x Infused Ruby
-										["description"] = "This is intended to be purchased on a 'Main' Venthyr character for personal use, or to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+										["description"] = createLocalizationString({
+											readable = "This is intended to be purchased on a 'Main' Venthyr character for personal use, or to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+											constant = "THIS_IS_INTENDED_TO_BE_PURCHASED_ON_A_MAIN_2",
+											export = true,
+											text = {
+												en = "This is intended to be purchased on a 'Main' Venthyr character for personal use, or to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "此物品适合用主号温西尔角色购买自用，或寄给温西尔小号，以便在燃烬宫廷进度上抢先一步。",
+												-- TODO: tw = "",
+											},
+										}),
 									}),
 									i(181443, {	-- The Party Herald's Party hat (EC!)
 										["cost"] = { { "c", 1820, 85 } },	-- 85x Infused Ruby
-										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
+										["description"] = "~L.THIS_IS_INTENDED_TO_BE_PURCHASED_ON_A_MAIN",
 									}),
 								},
 							}),

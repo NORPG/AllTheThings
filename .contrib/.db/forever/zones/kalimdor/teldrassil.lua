@@ -673,7 +673,24 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["lvl"] = 10,
 			}),
 			q(1581, {	-- Elixirs for the Bladeleafs
-				["description"] = "This quest becomes available at Alchemy skill level 20 when the character level requirement is met.\n\nTODO: Check that this is true in Forever.",
+				["description"] = createLocalizationString({
+					readable = "This quest becomes available at Alchemy skill level 20 when the character level requirement is met.\n\nTODO: Check that this is true in Forever.",
+					constant = "THIS_QUEST_BECOMES_AVAILABLE_AT_ALCHEMY_SKILL",
+					export = true,
+					text = {
+						en = "This quest becomes available at Alchemy skill level 20 when the character level requirement is met.\n\nTODO: Check that this is true in Forever.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "当角色等级要求满足后，此任务会在炼金术技能等级 20 时开放。\n\n待办：确认这在 Forever 中是否成立。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 2083,	-- Syral Bladeleaf
 				["coord"] = { 56.0, 57.8, MAP.TELDRASSIL },
 				["cost"] = {
@@ -707,7 +724,24 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							{ "i",  10819 },	-- Wildkin Feather
 							{ "o", 153239 },	-- Wildkin Feather
 						},
-						["description"] = "Scattered on the ground around the Hinterlands.",
+						["description"] = createLocalizationString({
+							readable = "Scattered on the ground around the Hinterlands.",
+							constant = "SCATTERED_ON_THE_GROUND_AROUND_THE_HINTERLANDS",
+							export = true,
+							text = {
+								en = "Scattered on the ground around the Hinterlands.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "散落在辛特兰各处的地面上。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -1277,7 +1311,24 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 				["groups"] = {
 					i(5179, {	-- Moss-twined Heart
-						["description"] = "This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",
+						["description"] = createLocalizationString({
+							readable = "This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",
+							constant = "THIS_IS_ONE_OF_THE_ONLY_DROPS_FROM_A_RARE_SPAWN",
+							export = true,
+							text = {
+								en = "This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是游戏中少数由稀有刷新掉落并能开启任务的物品之一。祝你好运！",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = ALLIANCE_ONLY,
 					}),
 				},

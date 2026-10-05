@@ -11,7 +11,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, {
 			ach(11298, {	-- A Classy Outfit
 				crit(5212, {	-- Class Hall Helm Earned
-					["description"] = "Rewarded by a quest in your class's Order Hall campaign.",
+					["description"] = createLocalizationString({
+						readable = "Rewarded by a quest in your class's Order Hall campaign.",
+						constant = "REWARDED_BY_A_QUEST_IN_YOUR_CLASS_S_ORDER_HALL",
+						export = true,
+						text = {
+							en = "Rewarded by a quest in your class's Order Hall campaign.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由你职业大厅战役中的一个任务奖励。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						44217,	-- Armor Fit For A Deathlord (Death Knight)
 						44213,	-- You Will Be Prepared! (Demon Hunter)
@@ -29,7 +46,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				-- #IF ANYCLASSIC
 				crit(2, {	-- Class Hall Bracers Earned
-					["description"] = "Recruit 6 Champions for your class's Order Hall.",
+					["description"] = createLocalizationString({
+						readable = "Recruit 6 Champions for your class's Order Hall.",
+						constant = "RECRUIT_6_CHAMPIONS_FOR_YOUR_CLASS_S_ORDER_HALL",
+						export = true,
+						text = {
+							en = "Recruit 6 Champions for your class's Order Hall.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "为你的职业大厅招募 6 名勇士。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						44246,	-- Champion: Rottgut (Death Knight)
 						42776,	-- Two Worthies (Demon Hunter)
@@ -46,14 +80,65 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					},
 				}),
 				crit(30499, {	-- Class Hall Gloves Earned
-					["description"] = "Reach Honored reputation with the Nightfallen.",
+					["description"] = createLocalizationString({
+						readable = "Reach Honored reputation with the Nightfallen.",
+						constant = "REACH_HONORED_REPUTATION_WITH_THE_NIGHTFALLEN",
+						export = true,
+						text = {
+							en = "Reach Honored reputation with the Nightfallen.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在堕夜精灵中达到尊敬声望。",
+							-- TODO: tw = "",
+						},
+					}),
 					["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
 				}),
 				crit(4, {	-- Class Hall Leggings Earned
-					["description"] = "Complete 8 Legion dungeons on any difficulty.",
+					["description"] = createLocalizationString({
+						readable = "Complete 8 Legion dungeons on any difficulty.",
+						constant = "COMPLETE_8_LEGION_DUNGEONS_ON_ANY_DIFFICULTY",
+						export = true,
+						text = {
+							en = "Complete 8 Legion dungeons on any difficulty.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "以任意难度完成 8 个军团再临地下城。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				crit(5, {	-- Class Hall Chestpiece Earned
-					["description"] = "Complete your class's Order Hall campaign.",
+					["description"] = createLocalizationString({
+						readable = "Complete your class's Order Hall campaign.",
+						constant = "COMPLETE_YOUR_CLASS_S_ORDER_HALL_CAMPAIGN",
+						export = true,
+						text = {
+							en = "Complete your class's Order Hall campaign.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成你所在职业的职业大厅战役。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						43686,	-- The Fourth Horseman (Death Knight)
 						43186,	-- I Am the Slayer! (Demon Hunter)
@@ -70,13 +155,64 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					},
 				}),
 				crit(6, {	-- Class Hall Boots Earned
-					["description"] = "Reach Revered reputation with any 2 Broken Isles factions.",
+					["description"] = createLocalizationString({
+						readable = "Reach Revered reputation with any 2 Broken Isles factions.",
+						constant = "REACH_REVERED_REPUTATION_WITH_ANY_2_BROKEN",
+						export = true,
+						text = {
+							en = "Reach Revered reputation with any 2 Broken Isles factions.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任意 2 个破碎群岛阵营中达到崇敬声望。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				crit(44848, {	-- Class Hall Belt Earned
-					["description"] = "Complete the Arsenal of Power achievement.",
+					["description"] = createLocalizationString({
+						readable = "Complete the Arsenal of Power achievement.",
+						constant = "COMPLETE_THE_ARSENAL_OF_POWER_ACHIEVEMENT",
+						export = true,
+						text = {
+							en = "Complete the Arsenal of Power achievement.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成“能量军械库”成就。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				crit(8, {	-- Class Hall Shoulders Earned
-					["description"] = "Reach Exalted reputation with the Nightfallen.",
+					["description"] = createLocalizationString({
+						readable = "Reach Exalted reputation with the Nightfallen.",
+						constant = "REACH_EXALTED_REPUTATION_WITH_THE_NIGHTFALLEN",
+						export = true,
+						text = {
+							en = "Reach Exalted reputation with the Nightfallen.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在堕夜精灵中达到崇拜声望。",
+							-- TODO: tw = "",
+						},
+					}),
 					["minReputation"] = { FACTION_THE_NIGHTFALLEN, EXALTED },
 				}),
 				-- #ENDIF
@@ -102,13 +238,64 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				["_noautomation"] = true,	-- nests criteria under the below HATs
 				["groups"] = {
 					ach(11152, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 2
-						["description"] = "Progress indicates number of Legion Dungeons completed",
+						["description"] = createLocalizationString({
+							readable = "Progress indicates number of Legion Dungeons completed",
+							constant = "PROGRESS_INDICATES_NUMBER_OF_LEGION_DUNGEONS",
+							export = true,
+							text = {
+								en = "Progress indicates number of Legion Dungeons completed",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "进度表示已完成军团再临地下城的数量",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					ach(11153, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 3
-						["description"] = "Progress indicates number of Legion World Quests completed",
+						["description"] = createLocalizationString({
+							readable = "Progress indicates number of Legion World Quests completed",
+							constant = "PROGRESS_INDICATES_NUMBER_OF_LEGION_WORLD",
+							export = true,
+							text = {
+								en = "Progress indicates number of Legion World Quests completed",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "进度表示已完成军团再临世界任务的数量",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pvp(ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
-						["description"] = "Progress indicates number of players defeated in PvP",
+						["description"] = createLocalizationString({
+							readable = "Progress indicates number of players defeated in PvP",
+							constant = "PROGRESS_INDICATES_NUMBER_OF_PLAYERS_DEFEATED",
+							export = true,
+							text = {
+								en = "Progress indicates number of players defeated in PvP",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "进度表示在 PvP 中击败的玩家数量",
+								-- TODO: tw = "",
+							},
+						}),
 					})),
 				},
 			}),
@@ -260,7 +447,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = createLocalizationString({
+									readable = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+									constant = "THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS",
+									export = true,
+									text = {
+										en = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "此宝箱每 2 周作为职业大厅任务奖励出现。宝箱的奖励会根据你在某个难度下击杀的首领数量而变化。击杀 13 个普通难度首领后，下次该任务出现时宝箱品质会提升为普通，英雄和史诗难度同理。",
+										-- TODO: tw = "",
+									},
+								}),
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -316,7 +520,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153504, {	-- Cache of Antoran Treasures (Normal)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = "~L.THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS",
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -372,7 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153501, {	-- Cache of Antoran Treasures (Heroic)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = "~L.THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS",
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -428,7 +632,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153503, {	-- Cache of Antoran Treasures (Mythic)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = "~L.THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS",
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -912,7 +1116,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147518, {	-- Cache of Fel Treasures (Raid Finder)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = "~L.THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
@@ -954,7 +1158,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147519, {	-- Cache of Fel Treasures (Normal)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = createLocalizationString({
+									readable = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+									constant = "THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS_2",
+									export = true,
+									text = {
+										en = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "该宝箱每 2 周作为职业大厅任务奖励出现一次。宝箱的奖励品质取决于你在某个难度下击杀的首领数量。击杀 13 个随机团队首领后，该任务下次出现时宝箱品质会提升至普通，英雄和史诗难度同理。",
+										-- TODO: tw = "",
+									},
+								}),
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
@@ -996,7 +1217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147520, {	-- Cache of Fel Treasures (Heroic)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = "~L.THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS_2",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
@@ -1038,7 +1259,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147521, {	-- Cache of Fel Treasures (Mythic)
-								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								["description"] = "~L.THIS_CACHE_APPEARS_EVERY_2_WEEKS_AS_A_CLASS_2",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),

@@ -98,7 +98,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(40017, {	-- A Slip of the Hand
-					["description"] = "Farm around 1000-4000 Aethrils to make this quest spawn.",
+					["description"] = createLocalizationString({
+						readable = "Farm around 1000-4000 Aethrils to make this quest spawn.",
+						constant = "FARM_AROUND_1000_4000_AETHRILS_TO_MAKE_THIS",
+						export = true,
+						text = {
+							en = "Farm around 1000-4000 Aethrils to make this quest spawn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "刷约 1000-4000 个安瑟瑞尔花，使此任务出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 40016 },	-- Desperation Breeds Ingenuity
 					["groups"] = {
 						r(193294),	-- Aethril [Rank 3]
@@ -176,7 +193,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["provider"] = { "i", 129141 },	-- Blight-Choked Herb
 				}),
 				q(40023, {	-- The Last Straw
-					["description"] = "Farm around 1000-4000 Dreamleaves to make this quest spawn.",
+					["description"] = createLocalizationString({
+						readable = "Farm around 1000-4000 Dreamleaves to make this quest spawn.",
+						constant = "FARM_AROUND_1000_4000_DREAMLEAVES_TO_MAKE_THIS",
+						export = true,
+						text = {
+							en = "Farm around 1000-4000 Dreamleaves to make this quest spawn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "刷约 1000-4000 个梦叶草，使此任务出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 40022 },	-- Choked by Nightmare
 					["provider"] = { "n", 98135 },	-- Wildcrafter Osme <Herbalism Trainer>
 					["coord"] = { 54.0, 73.9, VALSHARAH },
@@ -220,7 +254,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(40041, {	-- Felwort Analysis
-					["description"] = "Available after obtaining All other herbs at Rank 1.",
+					["description"] = createLocalizationString({
+						readable = "Available after obtaining All other herbs at Rank 1.",
+						constant = "AVAILABLE_AFTER_OBTAINING_ALL_OTHER_HERBS_AT",
+						export = true,
+						text = {
+							en = "Available after obtaining All other herbs at Rank 1.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "将所有其他草药提升到 1 级后可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						40040,	-- Felwort Sample
 						40014,	-- Spayed by the Spade (Aethril)
@@ -239,7 +290,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(40042, {	-- The Emerald Nightmare: Felwort Mastery
-					["description"] = "Available after obtaining All other herbs at Rank 2.",
+					["description"] = createLocalizationString({
+						readable = "Available after obtaining All other herbs at Rank 2.",
+						constant = "AVAILABLE_AFTER_OBTAINING_ALL_OTHER_HERBS_AT_2",
+						export = true,
+						text = {
+							en = "Available after obtaining All other herbs at Rank 2.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "将所有其他草药提升到 2 级后可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						40041,	-- Felwort Analysis
 						40016,	-- Desperation Breeds Ingenuity (Aethril)
@@ -285,7 +353,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(40032, {	-- The Missing Page
-					["description"] = "Farm around 1000-4000 Fjarnskaggls to make this quest spawn.",
+					["description"] = createLocalizationString({
+						readable = "Farm around 1000-4000 Fjarnskaggls to make this quest spawn.",
+						constant = "FARM_AROUND_1000_4000_FJARNSKAGGLS_TO_MAKE_THIS",
+						export = true,
+						text = {
+							en = "Farm around 1000-4000 Fjarnskaggls to make this quest spawn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "刷约 1000-4000 个菲亚恩鳞茎，使此任务出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 40031 },	-- Vrykul Herblore
 					["provider"] = { "i", 129142 },	-- Runed Journal Page
 				}),
@@ -325,7 +410,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(40028, {	-- The Pied Picker
-					["description"] = "Farm around 1000-4000 Foxflowers to make this quest spawn.",
+					["description"] = createLocalizationString({
+						readable = "Farm around 1000-4000 Foxflowers to make this quest spawn.",
+						constant = "FARM_AROUND_1000_4000_FOXFLOWERS_TO_MAKE_THIS",
+						export = true,
+						text = {
+							en = "Farm around 1000-4000 Foxflowers to make this quest spawn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "刷约 1000-4000 个狐尾花，使此任务出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 40026 },	-- Chase the Culprit
 					["provider"] = { "i", 129278 },	-- Foxflower Scent Gland
 					["groups"] = {
@@ -363,7 +465,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(40038, {	-- Insane Ramblings
-					["description"] = "Farm around 1000-4000 Starlight Roses to make this quest spawn.",
+					["description"] = createLocalizationString({
+						readable = "Farm around 1000-4000 Starlight Roses to make this quest spawn.",
+						constant = "FARM_AROUND_1000_4000_STARLIGHT_ROSES_TO_MAKE",
+						export = true,
+						text = {
+							en = "Farm around 1000-4000 Starlight Roses to make this quest spawn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "刷约 1000-4000 个星光玫瑰，使此任务出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 40037 },	-- The Spade's Blade
 					["provider"] = { "i", 129143 },	-- Scribbled Ramblings
 				}),
@@ -437,14 +556,48 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			["maps"] = { VOLDUN },
 			["groups"] = {
 				q(51398, {	-- An Unusual Mentor [A]
-					["description"] = "Requires 50 Kul Tiran Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "Requires 50 Kul Tiran Herbalism.",
+						constant = "REQUIRES_50_KUL_TIRAN_HERBALISM",
+						export = true,
+						text = {
+							en = "Requires 50 Kul Tiran Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 50 点库尔提拉斯草药学。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(51432, {	-- An Unusual Mentor [H]
-					["description"] = "Requires 50 Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "Requires 50 Zandalari Herbalism.",
+						constant = "REQUIRES_50_ZANDALARI_HERBALISM",
+						export = true,
+						text = {
+							en = "Requires 50 Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 50 点赞达拉草药学。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -472,7 +625,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51404, {	-- What Happens Next
-					["description"] = "This can drop from |cFFFFD700Akunda's Bite|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Akunda's Bite|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700AKUNDA_S_BITE_R_AT",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Akunda's Bite|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从|cFFFFD700阿昆达之噬|r掉落，任何草药学等级都可以。你只能在库尔提拉斯/赞达拉草药学达到 150 级时上交它。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51408 },	-- Giving Back to Nature
 					["provider"] = { "i", 160117 },	-- Fully Charged Lightning Pod
 					["groups"] = {
@@ -499,7 +669,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 			["groups"] = {
 				q(51016, {	-- Seeking More Knowledge
-					["description"] = "Requires 100 Kul Tiran Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "Requires 100 Kul Tiran Herbalism.",
+						constant = "REQUIRES_100_KUL_TIRAN_HERBALISM",
+						export = true,
+						text = {
+							en = "Requires 100 Kul Tiran Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 100 点库尔提拉斯草药学。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
 					["maps"] = { 1015, 1016, 1017, 1018, 1029 },	-- Waycrest Manor
@@ -510,7 +697,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51482, {	-- Seeking More Knowledge [H]
-					["description"] = "Requires 100 Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "Requires 100 Zandalari Herbalism.",
+						constant = "REQUIRES_100_ZANDALARI_HERBALISM",
+						export = true,
+						text = {
+							en = "Requires 100 Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 100 点赞达拉草药学。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["maps"] = { 1015, 1016, 1017, 1018, 1029 },	-- Waycrest Manor
@@ -521,13 +725,47 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51360, {	-- Enormous Anchor Pod [A]
-					["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700ANCHOR_WEED_R_AT",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从|cFFFFD700锚草|r掉落，任何草药学等级都可以。你只能在库尔提拉斯草药学达到 150 级时上交它。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51016 },	-- Seeking More Knowledge [A]
 					["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51480, {	-- Enormous Anchor Pod [H]
-					["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700ANCHOR_WEED_R_AT_2",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从|cFFFFD700锚草|r掉落，任何草药学等级都可以。你只能在赞达拉草药学达到 150 级时上交它。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51482 },	-- Seeking More Knowledge [H]
 					["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
 					["races"] = HORDE_ONLY,
@@ -536,7 +774,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51361, {	-- More Anchor Pods [A]
-					["description"] = "Requires 150 Kul Tiran Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "Requires 150 Kul Tiran Herbalism.",
+						constant = "REQUIRES_150_KUL_TIRAN_HERBALISM",
+						export = true,
+						text = {
+							en = "Requires 150 Kul Tiran Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 150 点库尔提拉斯草药学。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51360 },	-- Enormous Anchor Pod [A]
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
@@ -547,7 +802,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51481, {	-- More Anchor Pods [H]
-					["description"] = "Requires 150 Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "Requires 150 Zandalari Herbalism.",
+						constant = "REQUIRES_150_ZANDALARI_HERBALISM",
+						export = true,
+						text = {
+							en = "Requires 150 Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 150 点赞达拉草药学。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51480 },	-- Enormous Anchor Pod [H]
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -577,7 +849,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 			["groups"] = {
 				q(48753, {	-- Emergency Transplants [A]
-					["description"] = "Requires 50 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_50_KUL_TIRAN_HERBALISM",
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
 					["races"] = ALLIANCE_ONLY,
@@ -586,7 +858,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51230, {	-- Emergency Transplants [H]
-					["description"] = "Requires 50 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_50_ZANDALARI_HERBALISM",
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -595,7 +867,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(48754, {	-- Breaking the Food Chain [A]
-					["description"] = "Requires 150 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_150_KUL_TIRAN_HERBALISM",
 					["sourceQuests"] = { 48753 },	-- Emergency Transplants [A]
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
@@ -605,7 +877,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51243, {	-- Breaking the Food Chain [H]
-					["description"] = "Requires 150 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_150_ZANDALARI_HERBALISM",
 					["sourceQuests"] = { 51230 },	-- Emergency Transplants
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -634,7 +906,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 			["groups"] = {
 				q(51365, {	-- Cultural Signifcance [A]
-					["description"] = "Requires 50 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_50_KUL_TIRAN_HERBALISM",
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
 					["races"] = ALLIANCE_ONLY,
@@ -643,7 +915,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51498, {	-- Cultural Signifcance [H]
-					["description"] = "Requires 50 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_50_ZANDALARI_HERBALISM",
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -652,7 +924,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(48769, {	-- Gathering Mementos [A]
-					["description"] = "Requires 150 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_150_KUL_TIRAN_HERBALISM",
 					["sourceQuests"] = { 51365 },	-- Cultural Significance [A]
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
@@ -663,7 +935,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51503, {	-- Gathering Mementos [H]
-					["description"] = "Requires 150 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_150_ZANDALARI_HERBALISM",
 					["sourceQuests"] = { 51498 },	-- Cultural Significance [H]
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -693,17 +965,51 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 			["groups"] = {
 				q(51312, {	-- Aromatic Pollenator [A]
-					["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700SIREN_S_POLLEN_R_AT",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任何草药学等级下都能从|cFFFFD700海妖花粉|r中掉落。只能在库尔提拉斯草药学达到 50 点时才能上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 159877 },	-- Dead Pollen-Covered Bee
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51447, {	-- Aromatic Pollenator [H]
-					["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700SIREN_S_POLLEN_R_AT_2",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任何草药学等级下都能从|cFFFFD700海妖花粉|r中掉落。只能在赞达拉草药学达到 50 点时才能上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 160250 },	-- Dead Pollen-Covered Bee
 					["races"] = HORDE_ONLY,
 				}),
 				q(51313, {	-- Learn From the Best [A]
-					["description"] = "Requires 50 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_50_KUL_TIRAN_HERBALISM",
 					["sourceQuests"] = { 51312 },	-- Aromatic Pollenator [A]
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
@@ -714,7 +1020,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51448, {	-- Learn From the Best [H]
-					["description"] = "Requires 50 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_50_ZANDALARI_HERBALISM",
 					["sourceQuests"] = { 51447 },	-- Aromatic Pollenator [H]
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -725,19 +1031,36 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(48758, {	-- Disgustingly Damp Flower [A]
-					["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700SIREN_S_POLLEN_R_AT_3",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以在任何草药学等级下从|cFFFFD700海妖花粉|r中掉落。你只能在 150 级赞达拉草药学上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51313 },	-- Learn From the Best
 					["provider"] = { "i", 159956 },	-- Disgustingly Damp Flower
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51451, {	-- Disgustingly Damp Flower [H]
-					["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+					["description"] = "~L.THIS_CAN_DROP_FROM_CFFFFD700SIREN_S_POLLEN_R_AT_3",
 					["sourceQuests"] = { 51448 },	-- Learn From the Best
 					["provider"] = { "i", 160301 },	-- Disgustingly Damp Flower
 					["races"] = HORDE_ONLY,
 				}),
 				q(48755, {	-- Pollen Punching [A]
-					["description"] = "Requires 150 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_150_KUL_TIRAN_HERBALISM",
 					["sourceQuests"] = { 48758 },	-- Disgustingly Damp Flower [A]
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
@@ -748,7 +1071,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51452, {	-- Pollen Punching [H]
-					["description"] = "Requires 150 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_150_ZANDALARI_HERBALISM",
 					["sourceQuests"] = { 48758 },	-- Disgustingly Damp Flower [H]
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -777,7 +1100,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 			["groups"] = {
 				q(48756, {	-- Here in Spirit [A]
-					["description"] = "Requires 50 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_50_KUL_TIRAN_HERBALISM",
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
 					["races"] = ALLIANCE_ONLY,
@@ -787,7 +1110,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51464, {	-- Here in Spirit [H]
-					["description"] = "Requires 50 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_50_ZANDALARI_HERBALISM",
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -797,7 +1120,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(48757, {	-- Ghost Busting [A]
-					["description"] = "Requires 150 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_150_KUL_TIRAN_HERBALISM",
 					["sourceQuests"] = { 48756 },	-- Here in Spirit [A]
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
@@ -807,7 +1130,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(51478, {	-- Ghost Busting [H]
-					["description"] = "Requires 150 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_150_ZANDALARI_HERBALISM",
 					["sourceQuests"] = { 51464 },	-- Here in Spirit [H]
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
@@ -824,14 +1147,14 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			["maps"] = { DRUSTVAR },
 			["groups"] = {
 				q(48762, {	-- Meet Sweetflower [A]
-					["description"] = "Requires 50 Kul Tiran Herbalism.",
+					["description"] = "~L.REQUIRES_50_KUL_TIRAN_HERBALISM",
 					["provider"] = { "n", 136096 },	-- Declan Senal
 					["coord"] = { 70.45, 5.13, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(51446, {	-- Meet Sweetflower [H]
-					["description"] = "Requires 50 Zandalari Herbalism.",
+					["description"] = "~L.REQUIRES_50_ZANDALARI_HERBALISM",
 					["provider"] = { "n", 122704 },	-- Jahden Fla
 					["coord"] = { 42.2, 35.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -851,7 +1174,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 				}),
 				q(48763, {	-- The Frigid Boon
-					["description"] = "This can drop from |cFFFFD700Winter's Kiss|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Winter's Kiss|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700WINTER_S_KISS_R_AT",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Winter's Kiss|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任何草药学等级下都能从|cFFFFD700凛冬之吻|r中掉落。只能在库尔提拉斯/赞达拉草药学达到 150 点时才能上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51376 },	-- Can't Teach on an Empty Stomach
 					["provider"] = { "i", 160064 },	-- The Frigid Boon
 					["groups"] = {
@@ -1322,7 +1662,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		n(QUESTS, {
 			q(70364, {	-- Dragon Isles Herbalism
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
+				["description"] = createLocalizationString({
+					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
+					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_7",
+					export = true,
+					text = {
+						en = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务只能在学会巨龙群岛草药学之前接取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 192010 },	-- Szarostrasza <Herbalism Trainer>
 				["coord"] = { 57.4, 65.8, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -1331,7 +1688,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				},
 			}),
 			q(72243, {	-- Dragon Isles Herbalism
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
+				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_7",
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -1377,7 +1734,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			q(70615),	-- The Case of the Missing Herbs
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }} }, {
 				r(391088),	-- Refine Herbs++
 				r(391089),	-- Refine Herbs+++
@@ -1393,7 +1750,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			i(199115),	-- Herbalism Field Notes
 			q(74107, {	-- DF Inscription Order: Herbalism
 				["name"] = "DF Inscription Order: Herbalism",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
 			}),
 			q(71857, {	-- DF Weekly Herbalism Knowledgepoint #1
@@ -1456,7 +1813,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			q(82916),	-- When Fungi Bloom
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }} }, {
 				r(442990),	-- Empowered Mulch
 				r(442989),	-- Imbued Mulch
@@ -1479,7 +1836,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 		n(QUESTS, {
 			q(91451, {	-- Stalk Market
-				["description"] = "Obtained the first time you harvest Phantom Bloom.",
+				["description"] = createLocalizationString({
+					readable = "Obtained the first time you harvest Phantom Bloom.",
+					constant = "OBTAINED_THE_FIRST_TIME_YOU_HARVEST_PHANTOM",
+					export = true,
+					text = {
+						en = "Obtained the first time you harvest Phantom Bloom.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "首次采集幽魂花时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "o", 527489 },	-- Lush Phantom Bloom
 					{ "o", 527488 },	-- Phantom Bloom
@@ -1555,7 +1929,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			i(224817),	-- Algari Herbalism Notes
 			q(83729, {	-- TWW Inscription Order: Herbalism
 				["name"] = "TWW Inscription Order: Herbalism",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 222552 },	-- Algari Treatise on Herbalism
 			}),
 			q(81416, {	-- TWW Weekly Herbalism Knowledgepoint #1
@@ -1635,7 +2009,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			q(93704),	-- Traditional Harvests
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.HERBALISM, 1 }} }, {
 				r(1221181),	-- Empowered Mulch
 				r(1221172),	-- Green Thumb
@@ -1708,7 +2082,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		},{
 			q(95130, {	-- MID Inscription Order: Herbalism
 				["name"] = "MID Inscription Order: Herbalism",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 245761 },	-- Thalassian Treatise on Herbalism
 			}),
 			q(81425, {	-- Midnight Weekly Herbalism Knowledgepoint #1

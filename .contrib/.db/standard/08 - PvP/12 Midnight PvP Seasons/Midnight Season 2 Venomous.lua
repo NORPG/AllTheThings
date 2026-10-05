@@ -686,7 +686,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 		n(REWARDS, {
 			i(275634, {	-- Artisan's Consortium Flyer (QS!)
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
-				["description"] = "Rewarded from the first Arena win, including training grounds.",
+				["description"] = createLocalizationString({
+					readable = "Rewarded from the first Arena win, including training grounds.",
+					constant = "REWARDED_FROM_THE_FIRST_ARENA_WIN_INCLUDING",
+					export = true,
+					text = {
+						en = "Rewarded from the first Arena win, including training grounds.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "首次赢得竞技场胜利后奖励，包括训练场。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 	}),

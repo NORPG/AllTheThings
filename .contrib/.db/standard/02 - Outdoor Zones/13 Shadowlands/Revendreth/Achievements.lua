@@ -80,7 +80,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			ach(14769, {	-- Bat!
-				["description"] = "As of 9.2.5, this achievement is currently bugged and only awarding credit occasionally. To work around this, you may have to ride the bat more than once or try another one.",
+				["description"] = createLocalizationString({
+					readable = "As of 9.2.5, this achievement is currently bugged and only awarding credit occasionally. To work around this, you may have to ride the bat more than once or try another one.",
+					constant = "AS_OF_9_2_5_THIS_ACHIEVEMENT_IS_CURRENTLY",
+					export = true,
+					text = {
+						en = "As of 9.2.5, this achievement is currently bugged and only awarding credit occasionally. To work around this, you may have to ride the bat more than once or try another one.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "自 9.2.5 起，此成就目前存在 Bug，只是偶尔才会给予进度。作为变通方法，你可能需要多次骑乘蝙蝠，或者换另一只试试。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = { 161015 },	-- Dredbat Statue
 				["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
 					{ 21.7, 50.2, REVENDRETH },
@@ -130,7 +147,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			ach(14771, {	-- The Afterlife Express
-				["description"] = "Coordinates listed are a single point along the path driven by each carriage. Some have more circuitous routes than others and will require a longer wait.",
+				["description"] = createLocalizationString({
+					readable = "Coordinates listed are a single point along the path driven by each carriage. Some have more circuitous routes than others and will require a longer wait.",
+					constant = "COORDINATES_LISTED_ARE_A_SINGLE_POINT_ALONG_THE",
+					export = true,
+					text = {
+						en = "Coordinates listed are a single point along the path driven by each carriage. Some have more circuitous routes than others and will require a longer wait.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "所列坐标是每辆马车行驶路线上的一个点。有些马车的路线更为迂回，需要等待更久。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					crit(50168, {	-- Chalice Carriage
 						["coord"] = { 47.5, 47.7, REVENDRETH },
@@ -235,7 +269,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			ach(14770, {	-- What We Ride in the Shadows
-				["description"] = "Each ride costs 5 Infused Rubies. Stay on the Sinrunner until you get credit for the ride.",
+				["description"] = createLocalizationString({
+					readable = "Each ride costs 5 Infused Rubies. Stay on the Sinrunner until you get credit for the ride.",
+					constant = "EACH_RIDE_COSTS_5_INFUSED_RUBIES_STAY_ON_THE",
+					export = true,
+					text = {
+						en = "Each ride costs 5 Infused Rubies. Stay on the Sinrunner until you get credit for the ride.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "每次骑行花费 5 颗灌注红宝石。留在罪奔者身上，直到你获得骑行的进度。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = { 174032 },	-- Castle Sinrunner
 				["groups"] = {
 					crit(50174, {	-- Old Gate

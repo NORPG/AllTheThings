@@ -9,7 +9,24 @@ GEAR_UPDATE = createHeader({
 	},
 });
 root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_11_2_7 } }, {
-	["description"] = "These items are obtained by Characters with a level range of 10-60 who have not logged in for more than 60 days. This feature will appear on the login screen if the character is eligible.",
+	["description"] = createLocalizationString({
+		readable = "These items are obtained by Characters with a level range of 10-60 who have not logged in for more than 60 days. This feature will appear on the login screen if the character is eligible.",
+		constant = "THESE_ITEMS_ARE_OBTAINED_BY_CHARACTERS_WITH_A",
+		export = true,
+		text = {
+			en = "These items are obtained by Characters with a level range of 10-60 who have not logged in for more than 60 days. This feature will appear on the login screen if the character is eligible.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这些物品由等级在 10-60 之间、且超过 60 天未登录的角色获得。如果角色符合条件，登录界面会显示此功能。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		cl(DEATHKNIGHT, {
 			i(205877, {	-- Adventurer's Footlocker

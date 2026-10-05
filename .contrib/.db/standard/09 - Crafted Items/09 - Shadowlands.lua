@@ -350,7 +350,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	}),
 	prof(FISHING, {
 		i(187877, {	-- Frog Soul
-			["description"] = "Fish anywhere in the Shadowlands to receive this soul.",
+			["description"] = createLocalizationString({
+				readable = "Fish anywhere in the Shadowlands to receive this soul.",
+				constant = "FISH_ANYWHERE_IN_THE_SHADOWLANDS_TO_RECEIVE",
+				export = true,
+				text = {
+					en = "Fish anywhere in the Shadowlands to receive this soul.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在暗影界的任何地方钓鱼即可获得此灵魂。",
+					-- TODO: tw = "",
+				},
+			}),
 			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
 			["maps"] = {
 				ARDENWEALD,
@@ -369,7 +386,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		i(173036),	-- Spinefin Piranha
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
 			}),
 		}),
 	}),

@@ -560,7 +560,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 		}),
 		n(BREWFEST_BANQUET, {
-			["description"] = "Every hour at the top of the hour, the public scenario takes place.\n\nTo take part, first complete the three required tutorial quests:\n1. Gathering the Grub\n2. Brewmaster's Kitchen\n3. Serving with Style.\n\nOnce that's done, speak with the event organizer to choose a role (gather, cook, or serve), and repeatedly complete those tasks to fill a shared progress bar within six minutes.\n\nOnce the six minutes are up, Keggor the Fermented will crash the party. Defeat the boss to end the event.",
+			["description"] = createLocalizationString({
+				readable = "Every hour at the top of the hour, the public scenario takes place.\n\nTo take part, first complete the three required tutorial quests:\n1. Gathering the Grub\n2. Brewmaster's Kitchen\n3. Serving with Style.\n\nOnce that's done, speak with the event organizer to choose a role (gather, cook, or serve), and repeatedly complete those tasks to fill a shared progress bar within six minutes.\n\nOnce the six minutes are up, Keggor the Fermented will crash the party. Defeat the boss to end the event.",
+				constant = "EVERY_HOUR_AT_THE_TOP_OF_THE_HOUR_THE_PUBLIC",
+				export = true,
+				text = {
+					en = "Every hour at the top of the hour, the public scenario takes place.\n\nTo take part, first complete the three required tutorial quests:\n1. Gathering the Grub\n2. Brewmaster's Kitchen\n3. Serving with Style.\n\nOnce that's done, speak with the event organizer to choose a role (gather, cook, or serve), and repeatedly complete those tasks to fill a shared progress bar within six minutes.\n\nOnce the six minutes are up, Keggor the Fermented will crash the party. Defeat the boss to end the event.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "每小时整点都会举行一次公共场景战役。\n\n要参与其中，请先完成三个必需的教程任务：\n1. 收集幼虫\n2. 酿酒大师的厨房\n3. 优雅上菜。\n\n完成之后，与活动组织者交谈以选择角色（采集、烹饪或上菜），并反复完成这些任务，在六分钟内填满一个共享进度条。\n\n六分钟结束后，发酵者凯格会闯入派对。击败该首领以结束活动。",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_11_2_0 },
 			["groups"] = {
 				filter(QUEST_ITEMS, {	-- Items used during the 'cooking' section of the event
@@ -574,11 +591,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				n(EVENT_COMPLETION, {
 					i(243291, {	-- Bag of Brewfest Merchandise (Uncommon) Only Badges
-						["description"] = "Granted for achieving a minimum of 33% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+						["description"] = createLocalizationString({
+							readable = "Granted for achieving a minimum of 33% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+							constant = "GRANTED_FOR_ACHIEVING_A_MINIMUM_OF_33_SHARED",
+							export = true,
+							text = {
+								en = "Granted for achieving a minimum of 33% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在美酒节宴会事件中达到至少 33% 的共同进度，然后在事件结束时击杀凯格即可获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = BREWFEST_TOKEN,
 					}),
 					i(243292, {	-- Bag of Brewfest Merchandise (Rare) Only Cosmectics
-						["description"] = "Granted for achieving a minimum of 66% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+						["description"] = createLocalizationString({
+							readable = "Granted for achieving a minimum of 66% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+							constant = "GRANTED_FOR_ACHIEVING_A_MINIMUM_OF_66_SHARED",
+							export = true,
+							text = {
+								en = "Granted for achieving a minimum of 66% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在美酒节宴会事件中达到至少 66% 的共同进度，然后在事件结束时击杀凯格即可获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(279530, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Purple Belt
 							i(279531, {	["timeline"] = { ADDED_12_1_0 } }),	-- Brewer's Purple Beret
@@ -591,7 +642,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						},
 					}),
 					i(243293, {	-- Bag of Brewfest Merchandise (Epic) BoE's
-						["description"] = "Granted for achieving 100% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+						["description"] = createLocalizationString({
+							readable = "Granted for achieving 100% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+							constant = "GRANTED_FOR_ACHIEVING_100_SHARED_PROGRESS_THEN",
+							export = true,
+							text = {
+								en = "Granted for achieving 100% shared progress & then killing Keggor at the end of the Brewfest Banquet event.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在美酒节宴会事件中达成 100% 共享进度并击杀最后的凯格尔即可获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(245950),	-- Dark Iron Portable Forge
 							i(246784),	-- Dark Iron's Ancient Crusher
@@ -672,7 +740,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		n(23872, {	-- Coren Direbrew
 			-- #if AFTER 3.0.1
 			-- #if BEFORE 10.0.5
-			["description"] = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
+			["description"] = createLocalizationString({
+				readable = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
+				constant = "YOU_CAN_LOOT_THE_KEG_ONCE_A_DAY_PER_CHARACTER",
+				export = true,
+				text = {
+					en = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "你可以通过在地下城查找器中排队进入该战斗，每个角色每天拾取一次酒桶。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["maps"] = {
 				BLACKROCK_DEPTHS,
@@ -708,7 +793,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							-- #endif
 						{
 							["name"] = "Coren Special Loot Attempt (Daily Accountwide)",
-							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+							["description"] = createLocalizationString({
+								readable = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+								constant = "THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE",
+								export = true,
+								text = {
+									en = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此物品每天每个战团只有第一次尝试有资格掉落，但每次符合条件的失败尝试都会提高掉落几率。\n\n你可以通过在 Battle.net 账号上使用额外的（新手版）许可证来提高几率。这样你就可以同时登录多个游戏实例，最多让 5 个角色一起排队。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = {
 								-- #if AFTER 11.2.0
 								ADDED_11_2_0,
@@ -720,19 +822,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["groups"] = {
 								i(248761, {	-- Brewfest Bomber (MOUNT!)
 									["timeline"] = { ADDED_11_2_0 },
-									["description"] = "Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",
+									["description"] = createLocalizationString({
+										readable = "Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",
+										constant = "MOUSE_OVER_COREN_SPECIAL_LOOT_FOR_A_MINI_GUIDE",
+										export = true,
+										text = {
+											en = "Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "将鼠标悬停在“科林特殊战利品”上，可查看如何大幅提高获得此物品几率的迷你指南。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 								i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (MM!)
 									["timeline"] = { ADDED_10_1_7 },
-									["description"] = "Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",
+									["description"] = "~L.MOUSE_OVER_COREN_SPECIAL_LOOT_FOR_A_MINI_GUIDE",
 								}),
 								i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 									["timeline"] = { ADDED_2_2_2 },
-									["description"] = "Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",
+									["description"] = "~L.MOUSE_OVER_COREN_SPECIAL_LOOT_FOR_A_MINI_GUIDE",
 								}),
 								i(33977, {	-- Swift Brewfest Ram (MOUNT!)
 									["timeline"] = { ADDED_2_2_2 },
-									["description"] = "Mouse over 'Coren Special Loot' for a mini-guide on how to greatly increase your chances of receiving this item.",
+									["description"] = "~L.MOUSE_OVER_COREN_SPECIAL_LOOT_FOR_A_MINI_GUIDE",
 								}),
 							},
 						}),
@@ -1256,7 +1375,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(13932, {	-- Another Year, Another Souvenir (A)
 					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
+					["description"] = createLocalizationString({
+						readable = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
+						constant = "THIS_QUEST_WAS_ONLY_AVAILABLE_DURING_THE_2009",
+						export = true,
+						text = {
+							en = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务只在 2009 年和 2010 年的美酒节期间开放。我们不确定它是否会在 TBC 经典怀旧服中回归。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["qg"] = 24468,	-- Pol Amberstill
@@ -1278,7 +1414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(13931, {	-- Another Year, Another Souvenir (H)
 					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
+					["description"] = "~L.THIS_QUEST_WAS_ONLY_AVAILABLE_DURING_THE_2009",
 					-- #endif
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["qg"] = 24497,	-- Ram Master Ray
@@ -1564,7 +1700,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
 						i(169599, {	-- Chowdown Champion Token
 							["timeline"] = { ADDED_8_2_0 },
-							["description"] = "Awarded for winning, you can participate as much as you can stomach!",
+							["description"] = createLocalizationString({
+								readable = "Awarded for winning, you can participate as much as you can stomach!",
+								constant = "AWARDED_FOR_WINNING_YOU_CAN_PARTICIPATE_AS_MUCH",
+								export = true,
+								text = {
+									en = "Awarded for winning, you can participate as much as you can stomach!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "获胜后获得，你想参加多少次就参加多少次，只要你能受得了！",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					}),
 				}),
@@ -1577,7 +1730,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
 						i(169599, {	-- Chowdown Champion Token
 							["timeline"] = { ADDED_8_2_0 },
-							["description"] = "Awarded for winning, you can participate as much as you can stomach!",
+							["description"] = "~L.AWARDED_FOR_WINNING_YOU_CAN_PARTICIPATE_AS_MUCH",
 						}),
 					}),
 				}),
@@ -1670,7 +1823,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(12278, {	-- Brew of the Month Club (A)
 					-- #if BEFORE 3.0.0
-					["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+					["description"] = createLocalizationString({
+						readable = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+						constant = "WE_RE_NOT_SURE_IF_COMPLETING_THIS_AT_THE_MOMENT",
+						export = true,
+						text = {
+							en = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "我们不确定现在完成它是否能让你在《巫妖王之怒》期间获得该成就的进度，因为它在获得后并不会保留完成状态。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
 					["providers"] = {
@@ -1714,7 +1884,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #endif
 				q(12306, {	-- Brew of the Month Club (H)
 					-- #if BEFORE 3.0.0
-					["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+					["description"] = "~L.WE_RE_NOT_SURE_IF_COMPLETING_THIS_AT_THE_MOMENT",
 					-- #endif
 					["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
 					["providers"] = {
@@ -1952,7 +2122,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(11321, {	-- Did Someone Say "Souvenir?" (A)
 					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2007 Brewfest.",
+					["description"] = createLocalizationString({
+						readable = "This quest was only available during the 2007 Brewfest.",
+						constant = "THIS_QUEST_WAS_ONLY_AVAILABLE_DURING_THE_2007",
+						export = true,
+						text = {
+							en = "This quest was only available during the 2007 Brewfest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务只在 2007 年的美酒节期间开放。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["qg"] = 24468,	-- Pol Amberstill
 					["coords"] = {
@@ -1973,7 +2160,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(11413, {	-- Did Someone Say "Souvenir?" (H)
 					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2007 Brewfest.",
+					["description"] = "~L.THIS_QUEST_WAS_ONLY_AVAILABLE_DURING_THE_2007",
 					-- #endif
 					["qg"] = 24497,	-- Ram Master Ray
 					["coords"] = {
@@ -2458,7 +2645,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			})),
 			i(169448, {	-- Bottomless Brewfest Stein
 				-- #if AFTER TRANSMOG
-				["description"] = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
+				["description"] = createLocalizationString({
+					readable = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
+					constant = "FILL_UP_THE_STEIN_WITH_ONE_BREW_UNEQUIP_AND_RE",
+					export = true,
+					text = {
+						en = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "用一份酒把酒杯装满，卸下再重新装备装满的酒杯，然后手动刷新你的收藏。等它登记后，再换下一种酒并重复。\n\n大麦酒清酿和雷霆 45 只能在丹莫罗找到，而小步酒和丛林河水只能在杜隆塔尔找到。戈多克烈酒在两地都有。玩家可以使用敌对阵营的酒桶，只是需要跑点路！",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["timeline"] = { ADDED_8_0_1 },
 				["groups"] = {

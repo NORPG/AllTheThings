@@ -281,7 +281,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			}),
 			n(QUESTS, {
 				q(93519, {	-- Midnight Delves! (it pop on login but after cancel it	-- didn't re-pop)
-					["description"] = "Pops on login. Do not abandon!",
+					["description"] = createLocalizationString({
+						readable = "Pops on login. Do not abandon!",
+						constant = "POPS_ON_LOGIN_DO_NOT_ABANDON",
+						export = true,
+						text = {
+							en = "Pops on login. Do not abandon!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "登录时弹出。不要放弃！",
+							-- TODO: tw = "",
+						},
+					}),
 					["isBreadcrumb"] = true,
 				}),
 				q(93501, {	-- The Season Starts: Midnight

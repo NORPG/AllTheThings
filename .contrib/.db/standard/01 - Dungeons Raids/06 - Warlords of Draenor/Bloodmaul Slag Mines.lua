@@ -91,7 +91,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(CRUSHTO),
 				n(75242, {	-- Croman (The Barbarian)
-					["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss. Croman must still be alive at the end of the dungeon.",
+					["description"] = createLocalizationString({
+						readable = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss. Croman must still be alive at the end of the dungeon.",
+						constant = "CLICK_ON_THIS_MANLY_DUDE_AND_HAVE_HIM_FOLLOW",
+						export = true,
+						text = {
+							en = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss. Croman must still be alive at the end of the dungeon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "点击这个很有男子气概的家伙，让他跟随你到熔渣马格莫拉图斯处，并让他取回自己的武器。（他必须至少攻击该首领一次。）\n\n他取回武器后，带他去见最终首领，并让他在击杀首领前也攻击那个首领。克罗曼必须在地下城结束时仍然存活。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						ach(9005, {	-- Come With Me If You Want to Live
 							follower(177),	-- Croman

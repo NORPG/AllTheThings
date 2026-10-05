@@ -53,7 +53,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
 					["coord"] = { 46.0, 60.6, MOONGLADE },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_THOUGH_ALLIANCE_4",
+						export = true,
+						text = {
+							en = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限部落，不过联盟玩家可以在完成联盟版任务“宠物对战训练师：卡利姆多”时与他们对战一次。\n\nElena 的宠物为 17 级，三个宠物的类别依次为：\n1. 龙类 - 使用人型（强力）或亡灵（耐打）宠物。\n2. 魔法 - 使用龙类（强力）或机械（耐打）宠物。\n3. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 17,
 					["groups"] = {
@@ -341,7 +358,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
-					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
+					["description"] = createLocalizationString({
+						readable = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
+						constant = "THIS_QUEST_IS_ONLY_AVAILABLE_DURING_THE_MOONKIN",
+						export = true,
+						text = {
+							en = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务仅在每年 11 月 12 日的枭兽节活动期间可用。完成此任务获得的头衔是临时的。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 122134,	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, MOONGLADE },
 					["timeline"] = { ADDED_7_2_5 },
@@ -673,7 +707,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				applyclassicphase(SOD_PHASE_THREE, n(222188, {	-- Shadowy Figure
 					["sourceQuest"] = 81986,	-- Waking the Nightmare
-					["description"] = "She will only offer to teach you the recipes after you have collected an Inert Mantle of Nightmares once already by completing the Waking the Nightmare quest from ST.",
+					["description"] = createLocalizationString({
+						readable = "She will only offer to teach you the recipes after you have collected an Inert Mantle of Nightmares once already by completing the Waking the Nightmare quest from ST.",
+						constant = "SHE_WILL_ONLY_OFFER_TO_TEACH_YOU_THE_RECIPES",
+						export = true,
+						text = {
+							en = "She will only offer to teach you the recipes after you have collected an Inert Mantle of Nightmares once already by completing the Waking the Nightmare quest from ST.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有在你通过完成 ST 的任务“唤醒梦魇”获得过一次惰性梦魇披风后，她才会提出教你这些配方。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_1_15_2 },
 					["lvl"] = 50,
 					["groups"] = {

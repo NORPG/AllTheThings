@@ -28,7 +28,24 @@ local function RemovedWithSOO(t)
 end
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_GOLDEN_LOTUS, {
-		["description"] = "The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",
+		["description"] = createLocalizationString({
+			readable = "The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",
+			constant = "THE_GOLDEN_LOTUS_ARE_A_MYSTERIOUS_SOCIETY_OF",
+			export = true,
+			text = {
+				en = "The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "金莲教是一个神秘的熊猫人社团，是永恒之谷的守护者。金莲教成员由四天神亲自挑选，协助他们看护这片山谷，而熊猫人把被选为这个神圣教团的一员视为莫大的荣耀。",
+				-- TODO: tw = "",
+			},
+		}),
 		["maps"] = {
 			VALE_OF_ETERNAL_BLOSSOMS,
 			VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS,
@@ -45,7 +62,24 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 					["coord"] = { 24.4, 28.0, VALE_OF_ETERNAL_BLOSSOMS },
 					-- #if MOP
-					["description"] = "You need to be on or near someone on the quest That's Not a Rock! in order to activate the mogu statues so that they'll engage you and use their special ability.",
+					["description"] = createLocalizationString({
+						readable = "You need to be on or near someone on the quest That's Not a Rock! in order to activate the mogu statues so that they'll engage you and use their special ability.",
+						constant = "YOU_NEED_TO_BE_ON_OR_NEAR_SOMEONE_ON_THE_QUEST",
+						export = true,
+						text = {
+							en = "You need to be on or near someone on the quest That's Not a Rock! in order to activate the mogu statues so that they'll engage you and use their special ability.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你需要处于任务“那不是石头！”中或靠近正在进行该任务的人，才能激活魔古雕像，使它们与你交战并使用它们的特殊技能。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 				}),
 				ach(7320, {	-- Dog Pile
@@ -1643,7 +1677,24 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["lvl"] = lvlsquish(90, 90, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Passed Trial of the Constructs
-							["description"] = "Kill the constructs, the orb in the middle will give you a damage boost and the green orbs will heal you.",
+							["description"] = createLocalizationString({
+								readable = "Kill the constructs, the orb in the middle will give you a damage boost and the green orbs will heal you.",
+								constant = "KILL_THE_CONSTRUCTS_THE_ORB_IN_THE_MIDDLE_WILL",
+								export = true,
+								text = {
+									en = "Kill the constructs, the orb in the middle will give you a damage boost and the green orbs will heal you.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "击杀那些构造体，中央的球体会为你提供伤害加成，绿色的球体则会治疗你。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "n", 60403 },	-- Zhi the Harmonious <Caretaker>
 							["coord"] = { 44.79, 76.34, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
@@ -1797,7 +1848,24 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 			}),
 			n(RARES, {
-				["description"] = "These aren't really rares, they're elite quest mobs that are only available on certain days when their respective quest chain is active.",
+				["description"] = createLocalizationString({
+					readable = "These aren't really rares, they're elite quest mobs that are only available on certain days when their respective quest chain is active.",
+					constant = "THESE_AREN_T_REALLY_RARES_THEY_RE_ELITE_QUEST",
+					export = true,
+					text = {
+						en = "These aren't really rares, they're elite quest mobs that are only available on certain days when their respective quest chain is active.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这些其实并不是稀有，而是精英任务怪物，只在各自任务链激活的特定日子才会出现。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					n(58778, {	-- Aetha <Spirit of the Golden Winds>
 						["coord"] = { 35.0, 89.9, VALE_OF_ETERNAL_BLOSSOMS },
@@ -2037,7 +2105,24 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}),
 			n(ZONE_DROPS, {
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(103624, {	-- Treasures of the Vale
-					["description"] = "Contains a number of Pandarian crafting reagents, herbs, and ore.",
+					["description"] = createLocalizationString({
+						readable = "Contains a number of Pandarian crafting reagents, herbs, and ore.",
+						constant = "CONTAINS_A_NUMBER_OF_PANDARIAN_CRAFTING",
+						export = true,
+						text = {
+							en = "Contains a number of Pandarian crafting reagents, herbs, and ore.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "内含若干潘达利亚制造材料、草药和矿石。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_4_0 },
 					["crs"] = {
 						58778,	-- Aetha

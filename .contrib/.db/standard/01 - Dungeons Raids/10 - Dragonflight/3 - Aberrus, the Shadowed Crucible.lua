@@ -308,7 +308,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 		["groups"] = {
 			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
 				i(204274, {	-- Ancient Memories
-					["description"] = "You need to find an Evoker who is doing this quest.",
+					["description"] = createLocalizationString({
+						readable = "You need to find an Evoker who is doing this quest.",
+						constant = "YOU_NEED_TO_FIND_AN_EVOKER_WHO_IS_DOING_THIS",
+						export = true,
+						text = {
+							en = "You need to find an Evoker who is doing this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你需要找到一名正在进行此任务的唤魔师。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						r(407161, {	-- Immaculate Coalescing Dracothyst
 							["requireSkill"] = JEWELCRAFTING,
@@ -325,7 +342,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 				}),
 				i(205257, {	-- Temporal Vestigial
-					["description"] = "May drop from open world content. World Bosses drop 10 and rares drop 3.",
+					["description"] = createLocalizationString({
+						readable = "May drop from open world content. World Bosses drop 10 and rares drop 3.",
+						constant = "MAY_DROP_FROM_OPEN_WORLD_CONTENT_WORLD_BOSSES",
+						export = true,
+						text = {
+							en = "May drop from open world content. World Bosses drop 10 and rares drop 3.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可能从开放世界内容中掉落。世界首领掉落 10 个，稀有怪掉落 3 个。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				n(QUESTS, bubbleDownSelf({
 					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
@@ -704,7 +738,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			-- #endif
 			-- #endif
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				["description"] = createLocalizationString({
+					readable = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					constant = "THE_REVIVAL_CATALYST_IS_A_SYSTEM_THAT_LETS_YOU_2",
+					export = true,
+					text = {
+						en = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "复苏熔炉是一个系统，可以让你把来自“亚贝鲁斯”团队副本的非套装物品转换成你职业的套装幻化。\n\n熔炉位于巨龙群岛索德拉苏斯的提尔要塞。\n\n转换前请务必先装备好你的物品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
 				["modelScale"] = 4,
 				["catalystID"] = 6,	-- ItemBonus.Value_0 DF:S2

@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(5, {	-- 0/1 Standard Issue Flare Gun
 									["questID"] = 3449,	-- Arcane Runes
 									["provider"] = { "i", 10444 },	-- Standard Issue Flare Gun
-									["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
+									["description"] = "~L.DO_NOT_LEAVE_IRONFORGE_WITHOUT_THIS_CRIEVE",
 									["coord"] = { 77.0, 91.0, AZSHARA },
 								}),
 							},
@@ -681,7 +681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6735, {	-- Plans: Ironforge Breastplate (RECIPE!)
-							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+							["description"] = "~L.THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
 						}),
 					},
 				}),
@@ -770,7 +770,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(6609, {	-- I Got Nothin' Left!
-					["description"] = "Requires 225 Fishing to start this quest.",
+					["description"] = "~L.REQUIRES_225_FISHING_TO_START_THIS_QUEST",
 					["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
 					["coord"] = { 48.2, 6.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1215,7 +1215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER TBC
 						i(33792, {	-- Plans: Heavy Copper Longsword (RECIPE!)
 							-- #if BEOFRE MOP
-							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+							["description"] = "~L.THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
 							-- #endif
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -1496,7 +1496,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(51596, {	-- Wildhammer Fact Checker
 					["coord"] = { 38.6, 54.8, IRONFORGE },
-					["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.",
+					["description"] = createLocalizationString({
+						readable = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.",
+						constant = "AKA_RED_SHIRT_GUY_YOU_MUST_BE_A_MEMBER_OF_THE",
+						export = true,
+						text = {
+							en = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "又名红衬衫小子\n\n你必须是一名部落成员才能攻击这个 NPC。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1514,7 +1531,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.7, 10.5, IRONFORGE },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
-					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
+					["description"] = createLocalizationString({
+						readable = "Looting the chest will spawn 2 muggers. Beware!",
+						constant = "LOOTING_THE_CHEST_WILL_SPAWN_2_MUGGERS_BEWARE",
+						export = true,
+						text = {
+							en = "Looting the chest will spawn 2 muggers. Beware!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "拾取宝箱会刷出 2 名劫匪。小心！",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 405946 },	-- Dusty Chest
 					["coord"] = { 51.9, 12.8, IRONFORGE },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -1528,7 +1562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(7978, {	-- Bimble Longberry <Fruit Vendor>
 					["coord"] = { 32.4, 21.2, IRONFORGE },
-					["description"] = "Walks around The Mystic Ward.",
+					["description"] = "~L.WALKS_AROUND_THE_MYSTIC_WARD",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8953),	-- Deep Fried Plantains
@@ -2229,7 +2263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(5109, {	-- Myra Tyrngaarde <Bread Vendor>
 					["coord"] = { 29.8, 67.5, IRONFORGE },
-					["description"] = "Walks around The Commons.",
+					["description"] = "~L.WALKS_AROUND_THE_COMMONS",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4541),	-- Freshly Baked Bread
@@ -2337,7 +2371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(5124, {	-- Sognar Cliffbeard <Meat Vendor>
 					["coord"] = { 62.1, 72.0, IRONFORGE },
-					["description"] = "Walks around The Military Ward.",
+					["description"] = "~L.WALKS_AROUND_THE_MILITARY_WARD",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4599),	-- Cured Ham Steak
@@ -2362,7 +2396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(9099, {	-- Sraaz <Pie Vendor>
 					["coord"] = { 46.6, 47.2, IRONFORGE },
-					["description"] = "Walks around The Great Forge.",
+					["description"] = "~L.WALKS_AROUND_THE_GREAT_FORGE",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8950),	-- Homemade Cherry Pie

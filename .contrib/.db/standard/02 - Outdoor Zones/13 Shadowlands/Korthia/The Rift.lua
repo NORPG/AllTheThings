@@ -5,7 +5,24 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		header(HEADERS.Spell, 354778, {	-- The Rift
-			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.",
+			["description"] = createLocalizationString({
+				readable = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.",
+				constant = "THE_THINGS_IN_THIS_SECTION_ARE_ONLY_ACCESSIBLE",
+				export = true,
+				text = {
+					en = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "本节中的内容只有当你身处裂隙——一个由幽魂栖居的噬渊版本——中时才能获取。",
+					-- TODO: tw = "",
+				},
+			}),
 			["cost"] = {
 				{ "i", 186969, 1 },	-- Collapsing Riftstone
 				{ "i", 186731, 1 },	-- Repaired Riftkey
@@ -58,7 +75,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["isDaily"] = true,
 						}),
 						o(369438, {	-- Riftbound Cache
-							["description"] = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
+							["description"] = createLocalizationString({
+								readable = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
+								constant = "IF_THIS_CACHE_SPAWNS_IN_ZELNITHOP_S_CAVE_IT_IS",
+								export = true,
+								text = {
+									en = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果这个宝箱刷新在泽尔尼索普的洞穴中，它位于最底层，且在稀有怪刷新点的相反一侧。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coords"] = {
 								{ 24.8, 56.1, KORTHIA },
 								{ 26.0, 55.7, KORTHIA },
@@ -93,7 +127,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				n(ZONE_DROPS, {
 					i(187174, {	-- Shaded Judgment Stone (TOY!)
-						["description"] = "This has a chance to drop from creatures in The Rift, or from the specific Rares which are pulled out of The Rift.",
+						["description"] = createLocalizationString({
+							readable = "This has a chance to drop from creatures in The Rift, or from the specific Rares which are pulled out of The Rift.",
+							constant = "THIS_HAS_A_CHANCE_TO_DROP_FROM_CREATURES_IN_THE",
+							export = true,
+							text = {
+								en = "This has a chance to drop from creatures in The Rift, or from the specific Rares which are pulled out of The Rift.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "它有几率从裂隙中的生物身上掉落，也可能从被拉出裂隙的特定稀有生物身上掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						["crs"] = {
 							-- Korthia Rares
 							179913,	-- Deadsoul Hatcher

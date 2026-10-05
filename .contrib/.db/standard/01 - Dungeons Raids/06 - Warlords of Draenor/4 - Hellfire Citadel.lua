@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128146),	-- Ensnared Orb of the Sky
 						ig(127749),	-- Corrupted Nest Guardian (PET!)
 						TempForceMisc(ig(127771, {	-- Gemcutter Module: Critical Strike
-							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+							["description"] = "~L.TAKE_THIS_RECIPE_TO_THE_APEXIS_GEMCUTTER_IN",
 							["requireSkill"] = JEWELCRAFTING,
 						})),
 					})),
@@ -356,7 +356,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				})),
 				cr(90284, e(1425, {	-- Iron Reaver
 					ach(10057, {	-- Turning the Tide
-						["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",
+						["description"] = createLocalizationString({
+							readable = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",
+							constant = "WHEN_THE_BOSS_CASTS_BARRAGE_SIMPLY_STAND_AT_THE",
+							export = true,
+							text = {
+								en = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当首领施放弹幕时，只需站在北墙或南墙，设法让至少 2-3 个守卫处于正面锥形范围内并将它们击杀。每面墙有 5 个守卫，共 10 个，满级时单人完成非常轻松。",
+								-- TODO: tw = "",
+							},
+						}),
 						["crs"] = { 94808 },	-- Hellfire Guardian
 					}),
 				})),
@@ -391,11 +408,28 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					ach(9988, {	-- Pro Toss
-						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
+						["description"] = createLocalizationString({
+							readable = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
+							constant = "PULL_THE_BOSS_AND_BURN_HIM_BEFORE_HE",
+							export = true,
+							text = {
+								en = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "拉出首领并在它转换阶段前将其秒掉。只要没有人碰到安苏之眼，你就能获得该成就。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					TempForceMisc(ig(127771, {	-- Gemcutter Module: Critical Strike
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = "~L.TAKE_THIS_RECIPE_TO_THE_APEXIS_GEMCUTTER_IN",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 				})),
@@ -431,7 +465,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(39502, {	-- The Fel Spire (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在普通难度下立即进入毁灭者之巅。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 39499 },	-- Well of Souls (Normal)
 						["qg"] = 95659,	-- Archmage Khadgar
 						["lockCriteria"] = { 1,
@@ -442,7 +493,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["qi"] = 128419,	-- Fel Essence (QI!)
 					}),
 					q(39499, {	-- Well of Souls (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_2",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在普通难度下立即进入上层堡垒。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 95659,	-- Archmage Khadgar
 						["lockCriteria"] = { 1,
 							"questID", 39500,	-- Well of Souls (Heroic)
@@ -948,7 +1016,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["maps"] = { MOONGLADE },
 					}),
 					q(39504, {	-- The Fel Spire (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_3",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在英雄难度下立即进入毁灭者之巅。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 39500 },	-- Well of Souls (Heroic)
 						["qg"] = 95659,	-- Archmage Khadgar
 						["lockCriteria"] = { 1, "questID", 39505 },	-- The Fel Spire (Mythic)
@@ -956,7 +1041,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["qi"] = 128420,	-- Fel Essence (QI!)
 					}),
 					q(39500, {	-- Well of Souls (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_4",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在英雄难度下立即进入上层堡垒。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 95659,	-- Archmage Khadgar
 						["lockCriteria"] = { 1, "questID", 39501 },	-- Well of Souls (Mythic)
 						["DisablePartySync"] = true,
@@ -1446,13 +1548,47 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(39505, {	-- The Fel Spire (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_5",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在史诗难度下立即进入毁灭者之巅。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["qg"] = 95659,	-- Archmage Khadgar
 						["qi"] = 128421,	-- Fel Essence (QI!)
 					}),
 					q(39501, {	-- Well of Souls (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_6",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在史诗难度下立即进入上层堡垒。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 95659,	-- Archmage Khadgar
 						["qi"] = 128418,	-- Soul Remnant (QI!)
 					}),

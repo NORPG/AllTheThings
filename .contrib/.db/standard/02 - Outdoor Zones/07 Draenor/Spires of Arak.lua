@@ -86,13 +86,47 @@ root(ROOTS.Zones, {
 					ach(9433),	-- A-VOID-ance
 					ach(9469),	-- Arakkoa Outcasts
 					ach(8925, {	-- Between Arak and a Hard Place (Alliance)
-						["description"] = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Grakis in Stormshield.",
+						["description"] = createLocalizationString({
+							readable = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Grakis in Stormshield.",
+							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO_6",
+							export = true,
+							text = {
+								en = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Grakis in Stormshield.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成该成就后，你可以在暴风之盾的格拉基斯处购买“阿兰卡峰林藏宝图”。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 						["groups"] = { follower(218) },	-- Talonpriest Ishaal
 					}),
 					ach(8926, {	-- Between Arak and a Hard Place (Horde)
-						["description"] = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Srikka in Warspear.",
+						["description"] = createLocalizationString({
+							readable = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Srikka in Warspear.",
+							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO_7",
+							export = true,
+							text = {
+								en = "Completing the Achievement will allow you to buy 'Spires of Arak Treasure Map' from Srikka in Warspear.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成该成就后，你可以在战争之矛的斯里卡处购买“阿兰卡峰林藏宝图”。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 						["groups"] = { follower(218) },	-- Talonpriest Ishaal
@@ -132,7 +166,24 @@ root(ROOTS.Zones, {
 						pet(1462),	-- Bloodsting Wasp (PET!)
 						pet(1573),	-- Golden Dawnfeather (PET!)
 						pet(1592, {	-- Sapphire Firefly (PET!)
-							["description"] = "Only one is up at a time. Once captured or killed, it immediately respawns.",
+							["description"] = createLocalizationString({
+								readable = "Only one is up at a time. Once captured or killed, it immediately respawns.",
+								constant = "ONLY_ONE_IS_UP_AT_A_TIME_ONCE_CAPTURED_OR",
+								export = true,
+								text = {
+									en = "Only one is up at a time. Once captured or killed, it immediately respawns.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "同一时间只会出现一只。被捕获或杀死后会立刻重新刷新。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coords"] = {
 								{ 37.8, 41.8, SPIRES_OF_ARAK },
 								{ 45.0, 35.0, SPIRES_OF_ARAK },
@@ -679,7 +730,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.0, 49.9, SPIRES_OF_ARAK },
 					}),
 					q(37177, {	-- Call of the Talon King
-						["description"] = "Granted automatically. If you're in the zone when you hit exalted, leave the zone and return.",
+						["description"] = createLocalizationString({
+							readable = "Granted automatically. If you're in the zone when you hit exalted, leave the zone and return.",
+							constant = "GRANTED_AUTOMATICALLY_IF_YOU_RE_IN_THE_ZONE",
+							export = true,
+							text = {
+								en = "Granted automatically. If you're in the zone when you hit exalted, leave the zone and return.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "自动获得。如果你在达到崇拜时身处该区域，请离开该区域后再返回。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 84122,	-- Shade of Terokk
 						["coord"] = { 46.6, 46.7, SPIRES_OF_ARAK },
 						["minReputation"] = { FACTION_ARAKKOA_OUTCASTS, EXALTED },
@@ -865,7 +933,24 @@ root(ROOTS.Zones, {
 						["groups"] = { pet(1532) },	-- Ikky (PET!)
 					}),
 					q(34838, {	-- Ikky's Egg
-						["description"] = "Available once you pick up the gavel during |cFFFFD700The Kaliri Whisperer|r.",
+						["description"] = createLocalizationString({
+							readable = "Available once you pick up the gavel during |cFFFFD700The Kaliri Whisperer|r.",
+							constant = "AVAILABLE_ONCE_YOU_PICK_UP_THE_GAVEL_DURING",
+							export = true,
+							text = {
+								en = "Available once you pick up the gavel during |cFFFFD700The Kaliri Whisperer|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你在|cFFFFD700卡利鸟低语者|r中拿起木槌后开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 34884,	-- The Kaliri Whisperer (must pick up gavel)
 						["qg"] = 80470,	-- Kaliri Egg
 						["coord"] = { 45.4, 36.6, SPIRES_OF_ARAK },
@@ -937,7 +1022,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.1, 37.0, SPIRES_OF_ARAK },
 					}),
 					q(34885, {	-- Mother of Thorns
-						["description"] = "Available once you pick up the gavel during |cFFFFD700The Kaliri Whisperer|r.",
+						["description"] = "~L.AVAILABLE_ONCE_YOU_PICK_UP_THE_GAVEL_DURING",
 						["sourceQuest"] = 34884,	-- The Kaliri Whisperer (must pick up gavel)
 						["qg"] = 80233,	-- Skizzik
 						["coord"] = { 45.4, 36.3, SPIRES_OF_ARAK },
@@ -1543,14 +1628,48 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118200) },	-- Vile Branch of Festerbloom
 					}),
 					n(85036, {	-- Formless Nightmare
-						["description"] = "Located inside the void portal phase.",
+						["description"] = createLocalizationString({
+							readable = "Located inside the void portal phase.",
+							constant = "LOCATED_INSIDE_THE_VOID_PORTAL_PHASE",
+							export = true,
+							text = {
+								en = "Located inside the void portal phase.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于虚空传送门相位内。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 37360,
 						["isDaily"] = true,
 						["coord"] = { 72.2, 19.6, SPIRES_OF_ARAK },
 						["groups"] = { i(119373) },	-- Nightmare-Chain Bracers
 					}),
 					n(86978, {	-- Gaze
-						["description"] = "Click on the Fel Tome to summon.",
+						["description"] = createLocalizationString({
+							readable = "Click on the Fel Tome to summon.",
+							constant = "CLICK_ON_THE_FEL_TOME_TO_SUMMON",
+							export = true,
+							text = {
+								en = "Click on the Fel Tome to summon.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "点击邪能魔典以召唤。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 36943,
 						["coord"] = { 25.2, 24.2, SPIRES_OF_ARAK },
 						["groups"] = { i(118696) },	-- Eye of Gaze
@@ -1590,7 +1709,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118735) },	-- Bloodbathed Outcast Robes
 					}),
 					n(85037, {	-- Kenos the Unraveler
-						["description"] = "Located inside the void portal phase. Requires 3 people to click orb.",
+						["description"] = createLocalizationString({
+							readable = "Located inside the void portal phase. Requires 3 people to click orb.",
+							constant = "LOCATED_INSIDE_THE_VOID_PORTAL_PHASE_REQUIRES_3",
+							export = true,
+							text = {
+								en = "Located inside the void portal phase. Requires 3 people to click orb.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "位于虚空传送门相位内。需要 3 个人点击宝珠。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 37361,
 						["isDaily"] = true,
 						["coord"] = { 70.6, 24.2, SPIRES_OF_ARAK },
@@ -1677,7 +1813,24 @@ root(ROOTS.Zones, {
 					n(84912, {	-- Sunderthorn
 						["questID"] = 36298,
 						["coord"] = { 58.6, 45.0, SPIRES_OF_ARAK },
-						["description"] = "This rare can sometimes bug out. If you fly in fast enough, you can still kill enough wasps to get her to spawn. Melee classes may find this near impossible.",
+						["description"] = createLocalizationString({
+							readable = "This rare can sometimes bug out. If you fly in fast enough, you can still kill enough wasps to get her to spawn. Melee classes may find this near impossible.",
+							constant = "THIS_RARE_CAN_SOMETIMES_BUG_OUT_IF_YOU_FLY_IN",
+							export = true,
+							text = {
+								en = "This rare can sometimes bug out. If you fly in fast enough, you can still kill enough wasps to get her to spawn. Melee classes may find this near impossible.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此稀有怪有时会出现 bug。如果你飞得足够快，仍然可以击杀足够的黄蜂让她刷新。近战职业可能会觉得这几乎不可能。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = { i(116855) },	-- Stingtail's Toxic Stinger
 					}),
 					n(85520, {	-- Swarmleaf
@@ -1720,7 +1873,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116913) },	-- Peon's Mining Pick
 					}),
 					o(235365, {	-- Admiral Taylor's Coffer
-						["description"] = "The key is on a stone behind a skeleton in front of the closed mine, south of the garrison. (37.7, 56.3)",
+						["description"] = createLocalizationString({
+							readable = "The key is on a stone behind a skeleton in front of the closed mine, south of the garrison. (37.7, 56.3)",
+							constant = "THE_KEY_IS_ON_A_STONE_BEHIND_A_SKELETON_IN",
+							export = true,
+							text = {
+								en = "The key is on a stone behind a skeleton in front of the closed mine, south of the garrison. (37.7, 56.3)",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "钥匙在要塞以南那座封闭矿洞前的一具骷髅后面的石头上。(37.7, 56.3)",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 36462,
 						["coord"] = { 36.2, 54.4, SPIRES_OF_ARAK },
 						["groups"] = { i(119348) },	-- Admiral Taylor's Garrison Log
@@ -1731,7 +1901,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116835) },	-- Assassin's Spear
 					}),
 					o(232989, {	-- Basket of Arakkoa Goods
-						["description"] = "Must establish your outpost to get this treasure.",
+						["description"] = createLocalizationString({
+							readable = "Must establish your outpost to get this treasure.",
+							constant = "MUST_ESTABLISH_YOUR_OUTPOST_TO_GET_THIS",
+							export = true,
+							text = {
+								en = "Must establish your outpost to get this treasure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须建立你的哨岗才能获得此宝藏。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 35627,
 						["coords"] = {
 							{ 40.1, 60.3, SPIRES_OF_ARAK },	-- Alliance
@@ -1739,7 +1926,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(234473, {	-- Campaign Contributions
-						["description"] = "On a shelf above the doorway.",
+						["description"] = createLocalizationString({
+							readable = "On a shelf above the doorway.",
+							constant = "ON_A_SHELF_ABOVE_THE_DOORWAY",
+							export = true,
+							text = {
+								en = "On a shelf above the doorway.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在门道上方的一个架子上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 36367,
 						["coord"] = { 55.5, 90.8, SPIRES_OF_ARAK },
 					}),
@@ -1807,11 +2011,45 @@ root(ROOTS.Zones, {
 					o(235289, {	-- Garrison Workman's Hammer
 						["questID"] = 36451,
 						["coord"] = { 41.8, 50.5, SPIRES_OF_ARAK },
-						["description"] = "This treasure is bugged as of 8.0.1. The hammer can be seen in the cart from a distance but disappears when you approach it due to zone phasing. If you fly in fast enough, you can still loot it.",
+						["description"] = createLocalizationString({
+							readable = "This treasure is bugged as of 8.0.1. The hammer can be seen in the cart from a distance but disappears when you approach it due to zone phasing. If you fly in fast enough, you can still loot it.",
+							constant = "THIS_TREASURE_IS_BUGGED_AS_OF_8_0_1_THE_HAMMER",
+							export = true,
+							text = {
+								en = "This treasure is bugged as of 8.0.1. The hammer can be seen in the cart from a distance but disappears when you approach it due to zone phasing. If you fly in fast enough, you can still loot it.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "自 8.0.1 起此宝藏就存在 bug。远处可以看到推车中的锤子，但由于区域相位，靠近时它会消失。如果你飞得足够快，仍然可以拾取它。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = { i(116918) },	-- Garrison Workman's Hammer
 					}),
 					o(234618, {	-- Gift of Anzu
-						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["description"] = createLocalizationString({
+							readable = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+							constant = "DRINK_AN_ELIXIR_OF_SHADOW_SIGHT_NEAR_THE_SHRINE",
+							export = true,
+							text = {
+								en = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在神殿附近饮用暗影视觉药剂以获得安苏的赐福。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36381,
 						["coord"] = { 61.1, 55.3, SPIRES_OF_ARAK },
@@ -1819,7 +2057,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118240) },	-- Anzu's Scything Talon
 					}),
 					n(86961, {	-- Gift of Anzu
-						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["description"] = "~L.DRINK_AN_ELIXIR_OF_SHADOW_SIGHT_NEAR_THE_SHRINE",
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36386,
 						["coord"] = { 48.6, 44.4, SPIRES_OF_ARAK },
@@ -1827,7 +2065,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118237) },	-- Anzu's Malice
 					}),
 					n(86941, {	-- Gift of Anzu
-						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["description"] = "~L.DRINK_AN_ELIXIR_OF_SHADOW_SIGHT_NEAR_THE_SHRINE",
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36388,
 						["coord"] = { 42.42, 26.69, SPIRES_OF_ARAK },
@@ -1835,7 +2073,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118242) },	-- Anzu's Scorn
 					}),
 					n(86962, {	-- Gift of Anzu
-						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["description"] = "~L.DRINK_AN_ELIXIR_OF_SHADOW_SIGHT_NEAR_THE_SHRINE",
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36389,
 						["coord"] = { 46.9, 40.46, SPIRES_OF_ARAK },
@@ -1843,7 +2081,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118238) },	-- Anzu's Reach
 					}),
 					n(86953, {	-- Gift of Anzu
-						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["description"] = "~L.DRINK_AN_ELIXIR_OF_SHADOW_SIGHT_NEAR_THE_SHRINE",
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36390,
 						["coord"] = { 57.01, 78.93, SPIRES_OF_ARAK },
@@ -1851,7 +2089,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118241) },	-- Anzu's Piercing Talon
 					}),
 					n(86956, {	-- Gift of Anzu
-						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["description"] = "~L.DRINK_AN_ELIXIR_OF_SHADOW_SIGHT_NEAR_THE_SHRINE",
 						["cost"] = {{ "i", 115463, 1 }},	-- Elixir of Shadow Sight
 						["questID"] = 36392,
 						["coord"] = { 52.0, 19.7, SPIRES_OF_ARAK },
@@ -1949,40 +2187,91 @@ root(ROOTS.Zones, {
 						["questID"] = 36355,
 						["icon"] = 1002596,
 						["coord"] = { 43.2, 27.2, SPIRES_OF_ARAK },
-						["description"] = "Must have archaeology.",
+						["description"] = createLocalizationString({
+							readable = "Must have archaeology.",
+							constant = "MUST_HAVE_ARCHAEOLOGY",
+							export = true,
+							text = {
+								en = "Must have archaeology.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须拥有考古学。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					o(234454, {	-- Relics of the Outcasts
-						["description"] = "Requires archaeology.",
+						["description"] = createLocalizationString({
+							readable = "Requires archaeology.",
+							constant = "REQUIRES_ARCHAEOLOGY",
+							export = true,
+							text = {
+								en = "Requires archaeology.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "需要考古学。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 36359,
 						["icon"] = 1002596,
 						["coord"] = { 60.2, 53.8, SPIRES_OF_ARAK },
 					}),
 					o(234446, {	-- Relics of the Outcasts
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36354,
 						["icon"] = 1002596,
 						["coord"] = { 45.9, 44.2, SPIRES_OF_ARAK },
 					}),
 					o(234451, {	-- Relics of the Outcasts
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36356,
 						["icon"] = 1002596,
 						["coord"] = { 67.5, 39.9, SPIRES_OF_ARAK },
 					}),
 					o(234455, {	-- Relics of the Outcasts
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36360,
 						["icon"] = 1002596,
 						["coord"] = { 51.8, 48.9, SPIRES_OF_ARAK },
 					}),
 					o(234155, {	-- Relics of the Outcasts
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36245,
 						["icon"] = 1002596,
 						["coord"] = { 43.0, 16.5, SPIRES_OF_ARAK },
 					}),
 					o(233975, {	-- Rooby's Roo
-						["description"] = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn and feed them to Rooby on the main floor of the inn. Follow Rooby and feed him each time he stops until he leaves his treasure.",
+						["description"] = createLocalizationString({
+							readable = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn and feed them to Rooby on the main floor of the inn. Follow Rooby and feed him each time he stops until he leaves his treasure.",
+							constant = "BUY_3_ROOBY_TREATS_FROM_MIRIL_DUMONDE_IN_THE",
+							export = true,
+							text = {
+								en = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn and feed them to Rooby on the main floor of the inn. Follow Rooby and feed him each time he stops until he leaves his treasure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在旅店地下室从米瑞尔·杜蒙德处购买 3 份鲁比零食，喂给旅店一楼的鲁比。跟着鲁比，每次它停下来就喂它，直到它留下自己的宝藏。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 36657,
 						["coord"] = { 37.3, 50.7, SPIRES_OF_ARAK },
 						["groups"] = { i(116887) },	-- Rooby Roo's Ruby Rollar
@@ -2017,7 +2306,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.9, 84.6, SPIRES_OF_ARAK },
 					}),
 					o(380963, {	-- Small Pile of Ash
-						["description"] = "Some North locations are phased until completing 'Orders From On High' (34658)",
+						["description"] = createLocalizationString({
+							readable = "Some North locations are phased until completing 'Orders From On High' (34658)",
+							constant = "SOME_NORTH_LOCATIONS_ARE_PHASED_UNTIL",
+							export = true,
+							text = {
+								en = "Some North locations are phased until completing 'Orders From On High' (34658)",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在完成“来自高层的命令”（34658）之前，一些北部地点处于不同位面。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 34658,	-- Orders From On High
 						["timeline"] = { ADDED_10_0_7 },
 						["coords"] = {
@@ -2034,7 +2340,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(199097) },	-- Sacred Phoenix Ash
 					}),
 					o(235135, {	-- Smuggled Apexis Artifacts
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36433,
 						["icon"] = 1002596,
 						["coord"] = { 56.3, 45.3, SPIRES_OF_ARAK },
@@ -2048,13 +2354,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.8, 22.2, SPIRES_OF_ARAK },
 					}),
 					o(235104, {	-- Sun-Touched Cache
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36421,
 						["icon"] = 1002596,
 						["coord"] = { 34.1, 27.5, SPIRES_OF_ARAK },
 					}),
 					o(235105, {	-- Sun-Touched Cache
-						["description"] = "Requires archaeology.",
+						["description"] = "~L.REQUIRES_ARCHAEOLOGY",
 						["questID"] = 36422,
 						["icon"] = 1002596,
 						["coord"] = { 33.3, 27.3, SPIRES_OF_ARAK },
@@ -2073,7 +2379,24 @@ root(ROOTS.Zones, {
 				n(VENDORS, {
 					n(SMUGGLERS_DEN, {
 						n(82459, {	-- Honest Jim
-							["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
+							["description"] = createLocalizationString({
+								readable = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
+								constant = "USE_THE_CFFFFD700SMUGGLING_RUN_R_ABILITY_TO",
+								export = true,
+								text = {
+									en = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "使用|cFFFFD700走私行动！|r技能进行召唤。",
+									-- TODO: tw = "",
+								},
+							}),
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(113096, {	-- Bloodmane Charm (TOY!)
@@ -2114,7 +2437,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						n(84243, {	-- Linny "The Skinny" Leadpockets
-							["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
+							["description"] = "~L.USE_THE_CFFFFD700SMUGGLING_RUN_R_ABILITY_TO",
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(113096, {	-- Bloodmane Charm (TOY!)
@@ -2156,7 +2479,24 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(82432, {	-- Miril Dumonde
-						["description"] = "Vendor only sells Admiral Taylor's Greatsword to those who have completed the associated quest.",
+						["description"] = createLocalizationString({
+							readable = "Vendor only sells Admiral Taylor's Greatsword to those who have completed the associated quest.",
+							constant = "VENDOR_ONLY_SELLS_ADMIRAL_TAYLOR_S_GREATSWORD",
+							export = true,
+							text = {
+								en = "Vendor only sells Admiral Taylor's Greatsword to those who have completed the associated quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "商人只向已完成相关任务的玩家出售泰勒上将的巨剑。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 37.6, 50.8, SPIRES_OF_ARAK },
 						["groups"] = { i(118080) },	-- Admiral Taylor's Greatsword
 					}),
@@ -2182,7 +2522,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(87123, {	-- Vesharr
-						["description"] = "Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",
+						["description"] = createLocalizationString({
+							readable = "Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",
+							constant = "ITEMS_WILL_BE_UNAVAILABLE_UNTIL_YOU_COMPLETE",
+							export = true,
+							text = {
+								en = "Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在你完成宠物对战日常任务|cFFFFD700维沙尔|r之前，这些物品无法获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 						["groups"] = {
 							i(120051),	-- Kaliri Hatchling (PET!)

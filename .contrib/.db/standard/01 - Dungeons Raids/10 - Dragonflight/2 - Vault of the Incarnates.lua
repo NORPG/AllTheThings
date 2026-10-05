@@ -553,7 +553,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				ach(16357),	-- Heroic: Vault of the Incarnates Guild Run
 			}),
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				["description"] = createLocalizationString({
+					readable = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					constant = "THE_REVIVAL_CATALYST_IS_A_SYSTEM_THAT_LETS_YOU",
+					export = true,
+					text = {
+						en = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "复苏熔炉是一个系统，可以让你把来自“化身巨龙牢窟”团队副本的非套装物品转换成你职业的套装幻化。\n\n熔炉位于巨龙群岛索德拉苏斯的提尔要塞。\n\n转换前请务必先装备好你的物品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
 				["modelScale"] = 4,
 				["catalystID"] = 3,	-- ItemBonus.Value_0 DF:S1

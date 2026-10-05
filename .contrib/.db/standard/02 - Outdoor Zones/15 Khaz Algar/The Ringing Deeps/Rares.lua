@@ -40,7 +40,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(220286, {	-- Deepflayer Broodmother
-				["description"] = "Flying around entire Earthenworks location.",
+				["description"] = createLocalizationString({
+					readable = "Flying around entire Earthenworks location.",
+					constant = "FLYING_AROUND_ENTIRE_EARTHENWORKS_LOCATION",
+					export = true,
+					text = {
+						en = "Flying around entire Earthenworks location.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在整片土灵工坊区域飞行。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 53.1, 21.7, THE_RINGING_DEEPS },
 					{ 55.6, 12.6, THE_RINGING_DEEPS },
@@ -83,7 +100,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
-				["description"] = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
+				["description"] = createLocalizationString({
+					readable = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
+					constant = "INTERACT_WITH_5_LEVERS_LOCATED_ACROSS_THE_ZONE",
+					export = true,
+					text = {
+						en = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在 10 秒内与分布在该区域各处的 5 个拉杆互动，以召唤这个稀有怪。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 60.8, 76.6, THE_RINGING_DEEPS },	-- Lurker of the Deeps
 					{ 49.5, 8.8, THE_RINGING_DEEPS },	-- Lever 1
@@ -102,7 +136,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(221217, {	-- Spore-Infused Shalewing
-				["description"] = "Flying around",
+				["description"] = createLocalizationString({
+					readable = "Flying around",
+					constant = "FLYING_AROUND",
+					export = true,
+					text = {
+						en = "Flying around",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "四处飞行",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 67.5, 45.9, THE_RINGING_DEEPS },
 					{ 65.7, 46.6, THE_RINGING_DEEPS },
@@ -125,7 +176,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(220268, {	-- Trungal
-				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain.",
+				["description"] = createLocalizationString({
+					readable = "Kill roots of Trungal on way to him to make him jump out of terrain.",
+					constant = "KILL_ROOTS_OF_TRUNGAL_ON_WAY_TO_HIM_TO_MAKE_HIM",
+					export = true,
+					text = {
+						en = "Kill roots of Trungal on way to him to make him jump out of terrain.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在前往特伦加尔的路上击杀他的根须，使他从地形中跳出来。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
 				["groups"] = {
@@ -156,7 +224,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(220276, {	-- Candleflyer Captain
-				["description"] = "Flying around pretty high.",
+				["description"] = createLocalizationString({
+					readable = "Flying around pretty high.",
+					constant = "FLYING_AROUND_PRETTY_HIGH",
+					export = true,
+					text = {
+						en = "Flying around pretty high.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在相当高的空中飞行寻找。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
 				["questID"] = 80505,
 				["groups"] = {

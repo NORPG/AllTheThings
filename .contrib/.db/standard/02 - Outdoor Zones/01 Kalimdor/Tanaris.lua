@@ -950,13 +950,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					pet(430),	-- Gold Beetle (PET!)
 					pet(491, {	-- Sand Kitten (PET!)
-						["description"] = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
+						["description"] = createLocalizationString({
+							readable = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
+							constant = "THIS_PET_HAS_VERY_FEW_SPAWN_POINTS_AND_MAY_BE",
+							export = true,
+							text = {
+								en = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此宠物的刷新点非常少，作为次级宠物也许更容易找到，但有时会出现在加基森附近。稀有的小猫可不容易遇到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(560, {	-- Sea Gull (PET!)
-						["description"] = "Most commonly found on beaches or near the ocean.",
+						["description"] = createLocalizationString({
+							readable = "Most commonly found on beaches or near the ocean.",
+							constant = "MOST_COMMONLY_FOUND_ON_BEACHES_OR_NEAR_THE",
+							export = true,
+							text = {
+								en = "Most commonly found on beaches or near the ocean.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "最常见于海滩或海洋附近。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(494, {	-- Silithid Hatchling (PET!)
-						["description"] = "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms.",
+						["description"] = createLocalizationString({
+							readable = "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms.",
+							constant = "THIS_WILD_PET_CAN_BE_FOUND_IN_THE_GAPING_CHASM",
+							export = true,
+							text = {
+								en = "This wild pet can be found in The Gaping Chasm and The Noxious Lair in Tanaris. It only spawns during sandstorms.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此野生宠物可以在塔纳利斯的裂隙深渊和毒气巢穴中找到。它只在沙尘暴期间刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(492),	-- Stinkbug (PET!)
 					pet(432),	-- Stripe-Tailed Scorpid (PET!)
@@ -1739,7 +1790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(351, {	-- Find OOX-17/TN!
-					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
+					["description"] = "~L.THE_ITEM_THAT_STARTS_THIS_QUEST_CAN_BE_FOUND_AS",
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 					["lvl"] = lvlsquish(43, 43, 15),
 				}),
@@ -2977,7 +3028,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25566, {	-- The Secrets of Uldum (A)
-					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
+					["description"] = createLocalizationString({
+						readable = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
+						constant = "IF_CHEST_DISAPPEARS_FOR_YOU_GO_TO_ZIDORMI_IN",
+						export = true,
+						text = {
+							en = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果宝箱在你面前消失了，请前往奥丹姆找希多尔米，请她将你送回过去。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
 					["qg"] = 40109,	-- Prospector Gunstan
 					["coord"] = { 40.1, 77.0, TANARIS },
@@ -2985,7 +3053,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25069, {	-- The Secrets of Uldum (H)
-					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
+					["description"] = "~L.IF_CHEST_DISAPPEARS_FOR_YOU_GO_TO_ZIDORMI_IN",
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
@@ -3707,7 +3775,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
-					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
+					["description"] = createLocalizationString({
+						readable = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
+						constant = "SOME_ITEMS_MAY_REQUIRE_YOU_TO_BUY_SPECIFIC",
+						export = true,
+						text = {
+							en = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "某些物品可能需要你购买特定的职业套装，才能解锁该商人处的每件物品。按住 Shift 右键点击物品即可查看对应的套装。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = VICIOUS_GROUPS,
 				}),
 				-- #endif
@@ -3852,7 +3937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(14743, {	-- Jhordy Lapforge <Engineer>
 					["requireSkill"] = GNOMISH_ENGINEERING,
-					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
+					["description"] = "~L.GNOMISH_ENGINEERS_CAN_SPEAK_TO_JHORDY_TO_LEARN",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 52.2, 27.8, TANARIS },
@@ -3899,7 +3984,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 28.3, TANARIS },
 					["groups"] = {
 						n(SPECIAL, {
-							["description"] = "Available if a specific Quest (8977/8978) has been completed.",
+							["description"] = "~L.AVAILABLE_IF_A_SPECIFIC_QUEST_8977_8978_HAS",
 							["sourceQuests"] = {
 								8978,	-- Return to Mokvar
 								8977,	-- Return to Deliana
@@ -3931,7 +4016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(20278, {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
 					-- #if AFTER 7.3.5
-					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
+					["description"] = "~L.SOME_ITEMS_MAY_REQUIRE_YOU_TO_BUY_SPECIFIC",
 					-- #endif
 					["groups"] = BLOODTHIRSTY_GROUPS,
 				}),
@@ -3977,7 +4062,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(8623, {	-- OOX-17/TN Distress Beacon
-					["description"] = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
+					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_2",
 				}),
 				i(72028, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
 					["timeline"] = { ADDED_4_3_0 },
@@ -4052,7 +4137,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(9276, {	-- Pirate's Footlocker
 					-- #if AFTER 4.0.3
-					["description"] = "The Pirate's Footlocker is one of two sources for Southsea Lamp, and is commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+					["description"] = createLocalizationString({
+						readable = "The Pirate's Footlocker is one of two sources for Southsea Lamp, and is commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+						constant = "THE_PIRATE_S_FOOTLOCKER_IS_ONE_OF_TWO_SOURCES",
+						export = true,
+						text = {
+							en = "The Pirate's Footlocker is one of two sources for Southsea Lamp, and is commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "海盗储物箱是南海灯的两个来源之一，常见于被遗弃的索具湾围栏内的南海海盗和南海剑客身上。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["crs"] = {
 						-- #if BEFORE 4.0.3
@@ -4079,11 +4181,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 						i(9249, {	-- Captain's Key
-							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
+							["description"] = "~L.UNLOCKS_THE_CAPTAIN_S_CHEST_LOCATED_IN_ONE_OF",
 						}),
 						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
 							-- #if BEFORE 4.0.3
-							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
+							["description"] = "~L.THIS_ITEM_HAVE_THREE_SOURCES_PIRATE_S",
 							-- #endif
 						}),
 					},

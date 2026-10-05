@@ -890,7 +890,24 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54734, {	-- Summons from Dorian
-				["description"] = "The questgiver will appear close to where you turn in |cFFFFD700Balance in All Things|r OR |cFFFFD700Make it Wright|r, depending on which set of quests you do second.",
+				["description"] = createLocalizationString({
+					readable = "The questgiver will appear close to where you turn in |cFFFFD700Balance in All Things|r OR |cFFFFD700Make it Wright|r, depending on which set of quests you do second.",
+					constant = "THE_QUESTGIVER_WILL_APPEAR_CLOSE_TO_WHERE_YOU",
+					export = true,
+					text = {
+						en = "The questgiver will appear close to where you turn in |cFFFFD700Balance in All Things|r OR |cFFFFD700Make it Wright|r, depending on which set of quests you do second.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "任务给予者会出现在你上交|cFFFFD700万物平衡|r或|cFFFFD700交给莱特|r的附近，取决于你第二组完成的是哪一批任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					54731,	-- Balance in All Things
 					54733,	-- Make it Wright
@@ -1363,7 +1380,24 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 		["groups"] = {
 			q(53870, {	-- Guests at Grommash Hold
 				-- #if BEFORE 10.1.5
-				["description"] = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
+				["description"] = createLocalizationString({
+					readable = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
+					constant = "MUST_BE_EXALTED_WITH_CFFFFD700VOLDUNAI_R_AND",
+					export = true,
+					text = {
+						en = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须与|cFFFFD700沃顿奈|r达到崇拜，并完成|cFFFFD700沙中的秘密|r成就。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
 				["provider"] = { "n", 133523 },	-- Ji Firepaw

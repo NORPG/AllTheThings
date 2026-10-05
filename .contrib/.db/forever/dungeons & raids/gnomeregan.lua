@@ -3,7 +3,24 @@
 -----------------------------------------------------
 
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
-	["description"] = "This is located outside of the instance just to the north of both the elevator or the transporter.",
+	["description"] = createLocalizationString({
+		readable = "This is located outside of the instance just to the north of both the elevator or the transporter.",
+		constant = "THIS_IS_LOCATED_OUTSIDE_OF_THE_INSTANCE_JUST_TO",
+		export = true,
+		text = {
+			en = "This is located outside of the instance just to the north of both the elevator or the transporter.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这位于副本外，就在升降机或传送器正北方向。",
+			-- TODO: tw = "",
+		},
+	}),
 	["timeline"] = { REMOVED_5_0_4 },	-- guessed from WH comments
 	["cost"] = { { "i", 9279, 1 } },	-- White Punch Card
 	["groups"] = {
@@ -11,29 +28,114 @@ local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	},
 });
 local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
-	["description"] = "This is located in the bottom of the Dormitories.",
+	["description"] = createLocalizationString({
+		readable = "This is located in the bottom of the Dormitories.",
+		constant = "THIS_IS_LOCATED_IN_THE_BOTTOM_OF_THE",
+		export = true,
+		text = {
+			en = "This is located in the bottom of the Dormitories.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这位于宿舍区的底部。",
+			-- TODO: tw = "",
+		},
+	}),
 	["cost"] = { { "i", 9280, 1 } },	-- Yellow Punch Card
 	["groups"] = {
 		i(9282),	-- Blue Punch Card
 		i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
-			["description"] = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
+			["description"] = createLocalizationString({
+				readable = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
+				constant = "IF_YOU_ARE_AN_ENGINEER_YOU_WILL_ALSO_GET_THESE",
+				export = true,
+				text = {
+					en = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "如果你是工程师，交黄色打孔卡时也会获得这些图纸。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 	},
 });
 local MATRIX_PUNCHOGRAPH_C = o(142476, {	-- Matrix Punchograph 3005-C
-	["description"] = "This is located at the bottom of the platform in the Engineering Labs.",
+	["description"] = createLocalizationString({
+		readable = "This is located at the bottom of the platform in the Engineering Labs.",
+		constant = "THIS_IS_LOCATED_AT_THE_BOTTOM_OF_THE_PLATFORM",
+		export = true,
+		text = {
+			en = "This is located at the bottom of the platform in the Engineering Labs.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这位于工程实验室平台的底部。",
+			-- TODO: tw = "",
+		},
+	}),
 	["cost"] = { { "i", 9282, 1 } },	-- Blue Punch Card
 	["groups"] = {
 		i(9281),	-- Red Punch Card
 	},
 });
 local MATRIX_PUNCHOGRAPH_D = o(142696, {	-- Matrix Punchograph 3005-D
-	["description"] = "This is located in the Workshop below Crowd Pummeler.",
+	["description"] = createLocalizationString({
+		readable = "This is located in the Workshop below Crowd Pummeler.",
+		constant = "THIS_IS_LOCATED_IN_THE_WORKSHOP_BELOW_CROWD",
+		export = true,
+		text = {
+			en = "This is located in the Workshop below Crowd Pummeler.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这位于群体打击者下方的车间里。",
+			-- TODO: tw = "",
+		},
+	}),
 	["cost"] = { { "i", 9281, 1 } },	-- Red Punch Card
 	["groups"] = {
 		i(9316),	-- Prismatic Punch Card
 		i(4413, {	-- Schematic: Discombobulator Ray (RECIPE!)
-			["description"] = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
+			["description"] = createLocalizationString({
+				readable = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
+				constant = "IF_YOU_ARE_AN_ENGINEER_AND_HAVE_A_SECURITY",
+				export = true,
+				text = {
+					en = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "如果你是工程师，并且拥有“安保DELTA通行卡”，那么在交红色打孔卡时也会获得这些图纸。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 9327 },	-- Security DELTA Data Access Card
 		}),
 	},
@@ -181,7 +283,24 @@ root(ROOTS.Instances, {
 					},
 				}),
 				i(9309, {	-- Robo-mechanical Guts
-					["description"] = "These can drop from any mechanical unit in Gnomeregan.",
+					["description"] = createLocalizationString({
+						readable = "These can drop from any mechanical unit in Gnomeregan.",
+						constant = "THESE_CAN_DROP_FROM_ANY_MECHANICAL_UNIT_IN",
+						export = true,
+						text = {
+							en = "These can drop from any mechanical unit in Gnomeregan.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些可以从诺莫瑞根的任何机械单位身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if AFTER 3.1.0
@@ -235,7 +354,24 @@ root(ROOTS.Instances, {
 					},
 				}),
 				i(9279, {	-- White Punch Card
-					["description"] = "This can be looted from creatures outside of the instance.",
+					["description"] = createLocalizationString({
+						readable = "This can be looted from creatures outside of the instance.",
+						constant = "THIS_CAN_BE_LOOTED_FROM_CREATURES_OUTSIDE_OF",
+						export = true,
+						text = {
+							en = "This can be looted from creatures outside of the instance.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以从副本外的生物身上拾取。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { REMOVED_5_0_4 },	-- guessed from WH comments
 				}),
 				i(140781, {	-- X-87 Battle Circuit
@@ -340,7 +476,24 @@ root(ROOTS.Instances, {
 					["lvl"] = 25,
 				}),
 				q(2842, {	-- Chief Engineer Scooty
-					["description"] = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
+					["description"] = createLocalizationString({
+						readable = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
+						constant = "ALTHOUGH_THIS_QUEST_IS_AVAILABLE_FROM_LEVEL_20",
+						export = true,
+						text = {
+							en = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "虽然此任务从 20 级起就可以接取，但如果你接取或完成了它，就无法获得 25 级可接的“钻井之战”任务。不过，如果你先接取“钻井之战”，就可以毫无问题地同时拥有两个任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 3413,	-- Sovik <Engineering Supplies>
 					["coord"] = { 75.6, 25.2, MAP.ORGRIMMAR },
 					["maps"] = { MAP.STRANGLETHORN_VALE },
@@ -373,7 +526,24 @@ root(ROOTS.Instances, {
 								{ "i",   9278 },	-- Essential Artificial
 								{ "o", 142344 },	-- Artificial Extrapolator
 							},
-							["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
+							["description"] = createLocalizationString({
+								readable = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
+								constant = "THESE_ARE_SCATTERED_THROUGHOUT_THE_INSTANCE",
+								export = true,
+								text = {
+									en = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这些散落在整个副本中。它们是发出巨响的机械邮箱。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -415,12 +585,46 @@ root(ROOTS.Instances, {
 					["lvl"] = 20,
 					["groups"] = {
 						i(9173, {	-- Goblin Transponder
-							["description"] = "You do not need to keep this in your inventory. You can simply discard it after transporting. To get another one, simply speak to Scooty again and tell him that you lost the first one.",
+							["description"] = createLocalizationString({
+								readable = "You do not need to keep this in your inventory. You can simply discard it after transporting. To get another one, simply speak to Scooty again and tell him that you lost the first one.",
+								constant = "YOU_DO_NOT_NEED_TO_KEEP_THIS_IN_YOUR_INVENTORY",
+								export = true,
+								text = {
+									en = "You do not need to keep this in your inventory. You can simply discard it after transporting. To get another one, simply speak to Scooty again and tell him that you lost the first one.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "你不需要把它留在背包里。运送完之后直接丢弃即可。如果想要再拿一个，只需再次与斯库提交谈，告诉他你把第一个弄丢了。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
 				q(2945, {	-- Grime-Encrusted Ring
-					["description"] = "Take this to The Sparklematic 5200.",
+					["description"] = createLocalizationString({
+						readable = "Take this to The Sparklematic 5200.",
+						constant = "TAKE_THIS_TO_THE_SPARKLEMATIC_5200",
+						export = true,
+						text = {
+							en = "Take this to The Sparklematic 5200.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "将此物品带到超级清洁机 5200。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qs"] = 9326,	-- Grime-Encrusted Ring (QS!)
 					["lvl"] = 24,
 					["groups"] = {
@@ -566,7 +770,24 @@ root(ROOTS.Instances, {
 			}),
 			n(REWARDS, {
 				container(9363, {	-- Sparklematic-Wrapped Box
-					["description"] = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
+					["description"] = createLocalizationString({
+						readable = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
+						constant = "KILL_HOSTILE_CREATURES_FOR_GRIME_ENCRUSTED",
+						export = true,
+						text = {
+							en = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "杀死敌对生物以获得[沾满污垢的物品]，在超级清洁器5200型中清洗它们即可获得这个盒子。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(9280),	-- Yellow Punch Card
 						i(10299),	-- Gnomeregan Amulet
@@ -576,7 +797,24 @@ root(ROOTS.Instances, {
 			}),
 			MATRIX_PUNCHOGRAPH_A,
 			n(6231, {	-- Techbot
-				["description"] = "Located outside the instance near the teleporter.",
+				["description"] = createLocalizationString({
+					readable = "Located outside the instance near the teleporter.",
+					constant = "LOCATED_OUTSIDE_THE_INSTANCE_NEAR_THE",
+					export = true,
+					text = {
+						en = "Located outside the instance near the teleporter.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "位于副本外，传送器附近。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(9277),	-- Techbot's Memory Core
 					i(9444),	-- Techbot CPU Shell
@@ -602,7 +840,24 @@ root(ROOTS.Instances, {
 				["creatureID"] = 6235,
 				["groups"] = {
 					i(6893, {	-- Workshop Key
-						["description"] = "This key allows you to get into the back door of Gnomeregan.",
+						["description"] = createLocalizationString({
+							readable = "This key allows you to get into the back door of Gnomeregan.",
+							constant = "THIS_KEY_ALLOWS_YOU_TO_GET_INTO_THE_BACK_DOOR",
+							export = true,
+							text = {
+								en = "This key allows you to get into the back door of Gnomeregan.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这把钥匙可以让你从后门进入诺莫瑞根。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(9446),	-- Electrocutioner Leg
 					i(9448),	-- Spidertank Oilrag
@@ -618,7 +873,24 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(6228, {	-- Dark Iron Ambassador
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = createLocalizationString({
+					readable = "This is a Rare Creature and, as such, is not always present.",
+					constant = "THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+					export = true,
+					text = {
+						en = "This is a Rare Creature and, as such, is not always present.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这是一种稀有生物，因此并不总是出现。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(5108),	-- Dark Iron Leather
 					i(9456),	-- Glass Shooter

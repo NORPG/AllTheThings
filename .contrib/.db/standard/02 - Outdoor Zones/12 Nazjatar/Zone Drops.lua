@@ -35,11 +35,45 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170184, {	-- Ancient Reefwalker Bark
-			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
+			["description"] = createLocalizationString({
+				readable = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
+				constant = "TURN_IN_TO_CFFFFD700ARTISAN_ITANU_R_ALLIANCE_OR",
+				export = true,
+				text = {
+					en = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "交给 |cFFFFD700工匠伊塔努|r（联盟）或 |cFFFFD700发现者帕尔塔|r（部落），可获得 350 点声望，并为你阵营的每名保镖提供 100 点经验。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		i(169475),	-- Barnacled Lockbox
 		i(170188, {	-- Barnacled Bag of Goods
-			["description"] = "Drops very rarely from Kil'karrok Mobs.",
+			["description"] = createLocalizationString({
+				readable = "Drops very rarely from Kil'karrok Mobs.",
+				constant = "DROPS_VERY_RARELY_FROM_KIL_KARROK_MOBS",
+				export = true,
+				text = {
+					en = "Drops very rarely from Kil'karrok Mobs.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "由基尔卡洛克怪物极低概率掉落。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				145346,	-- Kil'karrok Commander
 				152413,	-- Kil'karrok Hammerclaw
@@ -56,7 +90,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(167012, {	-- Brinestone Pickaxe
-			["description"] = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
+			["description"] = createLocalizationString({
+				readable = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
+				constant = "DROPS_COMMONLY_FROM_CHITTERSPINE_ENCROACHERS_IN",
+				export = true,
+				text = {
+					en = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在纳沙塔尔西北偏北处，完成白色物品版本的盐水石矿锄（/att quest:55531）后，常见掉落于颤棘侵入者。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coord"] = { 36.8, 13.1, NAZJATAR },
 			["crs"] = {	--
 				153804,	-- Chitterspine Encroacher
@@ -77,7 +128,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["cr"] = 152297,	-- Deepcoral Bud
 		}),
 		i(170167, {	-- Eel Filet
-			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
+			["description"] = createLocalizationString({
+				readable = "Gives 250 reputation and 50 experience for your bodyguard.",
+				constant = "GIVES_250_REPUTATION_AND_50_EXPERIENCE_FOR_YOUR",
+				export = true,
+				text = {
+					en = "Gives 250 reputation and 50 experience for your bodyguard.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "为你的保镖提供 250 点声望和 50 点经验。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				145338,	-- Abyssal Eel
 				152554,	-- Abyssal Spawn
@@ -89,7 +157,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		i(170472, {	-- Encrusted Coin (possibly part of a secret?)
 			["questID"] = 57141,
-			["description"] = "This item can drop from mobs, chests, or Mardivas's Universally Lauded Tote. Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+			["description"] = createLocalizationString({
+				readable = "This item can drop from mobs, chests, or Mardivas's Universally Lauded Tote. Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+				constant = "THIS_ITEM_CAN_DROP_FROM_MOBS_CHESTS_OR_MARDIVAS",
+				export = true,
+				text = {
+					en = "This item can drop from mobs, chests, or Mardivas's Universally Lauded Tote. Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "此物品可以从生物、宝箱或马蒂瓦斯的举世赞誉提包中掉落。把它交给|cFFFFD700觅暗者亚尔加|r可换取一大笔金币。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coord"] = { 38.0, 59.2, NAZJATAR },
 			["repeatable"] = true,
 			["groups"] = {
@@ -121,7 +206,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170176, {	-- Fathom Ray Wing
-			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
+			["description"] = "~L.GIVES_250_REPUTATION_AND_50_EXPERIENCE_FOR_YOUR",
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				150373,	-- Bloated Sky Ray
 				150467,	-- Colossal Sky Ray
@@ -138,7 +223,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170171, {	-- Giant Crab Leg
-			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
+			["description"] = "~L.GIVES_250_REPUTATION_AND_50_EXPERIENCE_FOR_YOUR",
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153026,	-- Braxicus
 				152462,	-- Chitterspine Ambusher
@@ -213,7 +298,24 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170183, {	-- Reefwalker Bark
-			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
+			["description"] = createLocalizationString({
+				readable = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
+				constant = "TURN_IN_TO_CFFFFD700ARTISAN_ITANU_R_ALLIANCE_OR_2",
+				export = true,
+				text = {
+					en = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "交给 |cFFFFD700工匠伊塔努|r（联盟）或 |cFFFFD700发现者帕尔塔|r（部落），可获得 75 点声望，并为你阵营的每名保镖提供 20 点声望。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				-- there are lots of mobs that have "reefwalker" in their name	-- maybe those?  there are also elite ones, so possibly more common from them?
 				152558,	-- Barnacled Reefwalker
@@ -248,7 +350,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170191, {	-- Skeletal Hand
-			["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+			["description"] = "~L.TURN_IT_IN_TO_CFFFFD700GLOOMSEEKER_YARGA_R_FOR",
 			["coord"] = { 38.0, 59.2, NAZJATAR },
 			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				152710,	-- Necrofin Deep Oracle

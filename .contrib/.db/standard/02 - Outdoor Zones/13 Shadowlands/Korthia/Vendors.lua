@@ -39,7 +39,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}, {	-- Tier 3
 						ChronicleOfLostMemories({	-- Chronicle of Lost Memories
 							["cost"] = { { "c", CATALOGED_RESEARCH, 1500 } },
-							["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
+							["description"] = createLocalizationString({
+								readable = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
+								constant = "CFFFE040FYOU_WILL_NOT_RECEIVE_A_COVENANT",
+								export = true,
+								text = {
+									en = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "|cFFfe040f如果你不属于该盟约，将不会获得该盟约专属的传说物品。|r",
+									-- TODO: tw = "",
+								},
+							}),
 							["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 						}),
 						i(186718, {	-- Teleporter Repair Kit
@@ -160,7 +177,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							},
 						}),
 						i(187187, {	-- Korthian Armaments
-							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
+							["description"] = createLocalizationString({
+								readable = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
+								constant = "THESE_ITEMS_CAN_ALSO_DROP_FROM_WAR_CHESTS",
+								export = true,
+								text = {
+									en = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这些物品还可以从盟约突袭奖励的战争宝箱、死亡先锋军战争宝箱中掉落，偶尔也会来自刻希亚日常任务。\n\n刻希亚军备也有几率从刻希亚的稀有和宝藏中掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "c", STYGIA, 1000 } },
 							["groups"] = {
 								n(WEAPONS, {

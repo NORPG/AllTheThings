@@ -284,7 +284,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				e(168, {	-- Sinestra
 					["creatureID"] = 45213,
 					-- #if AFTER 6.0.3
-					["description"] = "This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",
+					["description"] = createLocalizationString({
+						readable = "This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",
+						constant = "THIS_ENCOUNTER_CAN_BE_BUGGY_TO_SOLO_STAND_IN",
+						export = true,
+						text = {
+							en = "This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这场首领战单人进行可能会出现 bug。站在希奈丝特拉的近战范围内，只有当希奈丝特拉移除伤害保护后，才离开去攻击搏动的暮光龙蛋。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["groups"] = {
 						un(REMOVED_FROM_GAME, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am

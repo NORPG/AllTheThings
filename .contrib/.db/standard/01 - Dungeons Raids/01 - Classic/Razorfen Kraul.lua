@@ -77,7 +77,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6522, {	-- An Unholy Alliance (1/2) (Before Wrathgate?)
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
-					["description"] = "This version of the quest is given to players that HAVE NOT completed The Wrath Gate yet.",
+					["description"] = createLocalizationString({
+						readable = "This version of the quest is given to players that HAVE NOT completed The Wrath Gate yet.",
+						constant = "THIS_VERSION_OF_THE_QUEST_IS_GIVEN_TO_PLAYERS",
+						export = true,
+						text = {
+							en = "This version of the quest is given to players that HAVE NOT completed The Wrath Gate yet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此版本的任务会给予尚未完成愤怒之门的玩家。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					-- #endif
 					["provider"] = { "i", 17008 },	-- Small Scroll
@@ -89,7 +106,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(14352, {	-- An Unholy Alliance (1/2) (After Wrathgate?)
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
-					["description"] = "This version of the quest is given to players that HAVE completed The Wrath Gate.",
+					["description"] = createLocalizationString({
+						readable = "This version of the quest is given to players that HAVE completed The Wrath Gate.",
+						constant = "THIS_VERSION_OF_THE_QUEST_IS_GIVEN_TO_PLAYERS_2",
+						export = true,
+						text = {
+							en = "This version of the quest is given to players that HAVE completed The Wrath Gate.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此版本的任务会给予*已*完成愤怒之门的玩家。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					-- #endif
 					["provider"] = { "i", 49205 },	-- Small Scroll
@@ -182,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Treshala's Pendant
 							["provider"] = { "i", 5825 },	-- Treshala's Pendant
-							["description"] = "Drops from any creature in the Dungeon.",
+							["description"] = "~L.DROPS_FROM_ANY_CREATURE_IN_THE_DUNGEON",
 						}),
 						i(6751, {	-- Mourning Shawl
 							["timeline"] = { REMOVED_4_0_3 },
@@ -342,7 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(6168, {	-- Roogug
 				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 4.0.3
-				["description"] = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
+				["description"] = "~L.WARRIORS_WILL_NEED_TO_KILL_THIS_BOSS_FOR_THEIR",
 				["groups"] = {
 					i(6841, {	-- Vial of Phlogiston
 						["timeline"] = { REMOVED_4_0_3 },
@@ -428,7 +462,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(4842, {	-- Earthcaller Halmgar
 				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 6.0.2
-				["description"] = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.AFTER_YOU_KILL_OVERLORD_RAMTUSK_GO_WEST_OVER_A",
 				-- #endif
 				["groups"] = {
 					i(6689),	-- Wind Spirit Staff
@@ -436,7 +470,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(4425, {	-- Blind Hunter
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(6696),	-- Nightstalker Bow

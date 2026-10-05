@@ -1101,7 +1101,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			header(HEADERS.Quest, 70377, {	-- Derelict Fashion
 				q(70377, {	-- Derelict Fashion
-					["description"] = "Drops from Mudgatu.",
+					["description"] = createLocalizationString({
+						readable = "Drops from Mudgatu.",
+						constant = "DROPS_FROM_MUDGATU",
+						export = true,
+						text = {
+							en = "Drops from Mudgatu.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由穆德加图掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 200586 },	-- Derelict Sunglasses
 					["coord"] = { 40.6, 45.4, THALDRASZUS },
 				}),

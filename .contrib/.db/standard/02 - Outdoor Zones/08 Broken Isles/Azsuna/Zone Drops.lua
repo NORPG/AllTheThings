@@ -17,7 +17,24 @@ root(ROOTS.Zones, {
 					},
 				}),
 				i(137924, {	-- Pattern: Gravenscale Armbands [Rank 3] (RECIPE!)
-					["description"] = "Drops from any giant in Azsuna.",
+					["description"] = createLocalizationString({
+						readable = "Drops from any giant in Azsuna.",
+						constant = "DROPS_FROM_ANY_GIANT_IN_AZSUNA",
+						export = true,
+						text = {
+							en = "Drops from any giant in Azsuna.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由阿苏纳的任意巨人掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						89097,	-- Cove Skrog
 						109584,	-- Fjordun

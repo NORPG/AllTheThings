@@ -64,7 +64,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 		}),
 	}),
 	n(REWARDS, {
-		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+		["description"] = createLocalizationString({
+			readable = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+			constant = "THIS_IS_SOME_OF_THE_BEST_FOOD_AND_WATER_YOU_CAN",
+			export = true,
+			text = {
+				en = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "这是升级过程中能获得的最好的食物和水之一！不过它会在你登出 15 分钟后消失，所以请在开始游戏时领取，一直用到用完为止。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			i(19995),	-- Harvest Boar
 			i(19696),	-- Harvest Bread

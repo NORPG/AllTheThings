@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(9497, {		-- Finding Your Waystones
-								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+								["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 								["groups"] = {
 									a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
 									h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]

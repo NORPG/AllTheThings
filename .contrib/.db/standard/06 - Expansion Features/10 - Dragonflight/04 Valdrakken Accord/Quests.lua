@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 5 --
 					q(71210, {	-- To Dragonbane Keep!
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
@@ -137,7 +137,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 7 --
 					q(71227, {	-- Aerial Challenges
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 12 --
 					q(68794, {	-- Ally of Dragons
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
@@ -663,7 +663,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 19 --
 					q(66620, {	-- Emerald Summons
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),

@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		-- #endif
-		["description"] = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
+		["description"] = "~L.THE_BEST_ROUTE_FOR_A_FULL_CLEAR_IS_TO_ENTER",
 		["mapID"] = BLACKROCK_DEPTHS,
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["maps"] = { BLACKROCK_DEPTHS_LEVEL2 },
@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4264, {	-- A Crumpled Up Note
 					-- #if BEFORE 3.0.2
-					["description"] = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
+					["description"] = "~L.AFTER_COMPLETING_THE_ABANDONED_HOPE_QUEST_KILL",
 					-- #endif
 					["sourceQuest"] = 4242,	-- Abandoned Hope
 					["provider"] = { "i", 11446 },	-- A Crumpled Up Note
@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4022, {	-- A Taste of Flame (1/2) (A)
 					-- #if BEFORE 4.0.3
-					["description"] = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
+					["description"] = "~L.IF_YOU_COMPLETED_THE_QUEST_TRINKETS_IN_SEARING",
 					-- #endif
 					["sourceQuest"] = 3481,	-- Trinkets...
 					["altQuests"] = { 4023 },	-- A Taste of Flame
@@ -196,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3801, {	-- Dark Iron Legacy (1/2)
 					-- #if BEFORE 4.0.3
-					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
+					["description"] = "~L.YOU_MUST_BE_A_GHOST_IN_ORDER_TO_INTERACT_WITH",
 					-- #endif
 					["qg"] = 8888,	-- Franclorn Forgewright
 					["timeline"] = { REMOVED_4_0_3 },
@@ -265,7 +265,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4182, {	-- Dragonkin Menace
 					-- #if BEFORE 3.0.2
-					["description"] = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
+					["description"] = "~L.YOU_SHOULD_FINISH_THIS_FULL_QUEST_CHAIN_UP_TO",
 					-- #endif
 					["qg"] = 9562,	-- Helendis Riverhorn
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
@@ -289,7 +289,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82062, {	-- Ever After
-					["description"] = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
+					["description"] = createLocalizationString({
+						readable = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
+						constant = "JUST_EAST_OF_THE_RING_IN_BLACKROCK_DEPTHS_IS_A",
+						export = true,
+						text = {
+							en = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在黑石深渊法律之环的东侧，有一座向北横跨岩浆的桥。\n\n上桥后向下并向左看，你会看到下方一根柱子的底座上有一位友好的黑铁矮人。清掉前方剩余的怪物（炽燃火卫和一群暗炉矮人）。\n\n移动到桥的左侧靠近一个小火盆处。踩上栏杆，贴着岩壁，向前跳到靠近墙壁的平台上。\n\n贴着墙壁走到平台的尽头，然后用力挤进岩石角落。\n\n将左肩转向墙壁，小心地沿墙奔跑，直到你正好掉进那个露出的角落。然后落到下方的岩石突出处。\n\n向左转进入一个小房间，你会遇到粗犷的旅行者。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 222530,	-- Rugged Traveler
 					["timeline"] = { REMOVED_2_0_1 },
 					["lvl"] = 48,
@@ -1252,7 +1269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6501, {	-- The Dragon's Eye
 					-- #if BEFORE 3.0.2
-					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
+					["description"] = "~L.GO_TO_HALEH_IN_WINTERSPRING_USE_THE_BLUE_RUNE",
 					-- #endif
 					["sourceQuest"] = 6403,	-- The Great Masquerade
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
@@ -1285,7 +1302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(6403, {	-- The Great Masquerade
 					-- #if BEFORE 3.0.2
-					["description"] = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
+					["description"] = "~L.THIS_QUEST_CAN_BE_SOLO_D_DO_NOT_TOUCH_ANYTHING",
 					-- #endif
 					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
 					["qg"] = 12580,	-- Reginald Windsor
@@ -1592,7 +1609,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4083, {	-- The Spectral Chalice
-					["description"] = "If you are a miner with 230 skill, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
+					["description"] = "~L.IF_YOU_ARE_A_MINER_WITH_230_SKILL_SPEAK_WITH",
 					["provider"] = { "o", 164869 },	-- Spectral Chalice
 					["cost"] = {
 						{ "i", 3577, 20 },	-- 20x Gold Bar
@@ -1726,15 +1743,32 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
-							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
+							["description"] = createLocalizationString({
+								readable = "May need to re-login to the game to properly trigger this collected from Blizzard.",
+								constant = "MAY_NEED_TO_RE_LOGIN_TO_THE_GAME_TO_PROPERLY",
+								export = true,
+								text = {
+									en = "May need to re-login to the game to properly trigger this collected from Blizzard.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "可能需要重新登录游戏，才能正确将此物品标记为已从暴雪处收集。",
+									-- TODO: tw = "",
+								},
+							}),
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(141977, {	-- Faceguard of the Order
-							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
+							["description"] = "~L.MAY_NEED_TO_RE_LOGIN_TO_THE_GAME_TO_PROPERLY",
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(141978, {	-- Helm of the Order
-							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
+							["description"] = "~L.MAY_NEED_TO_RE_LOGIN_TO_THE_GAME_TO_PROPERLY",
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
@@ -2304,7 +2338,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{	-- Neutral
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(227730, {	-- Thorium Brotherhood Contract
-							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+							["description"] = "~L.WITH_A_SULFURON_INGOT_IN_YOUR_BAGS_SPEAK_WITH",
 							["timeline"] = { ADDED_1_15_3 },
 							["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 							["lvl"] = 60,
@@ -2320,7 +2354,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(18628, {	-- Thorium Brotherhood Contract
-							["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+							["description"] = "~L.WITH_A_SULFURON_INGOT_IN_YOUR_BAGS_SPEAK_WITH",
 							-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { REMOVED_1_15_3 },
 							-- #endif
@@ -2674,11 +2708,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
-					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",
+					["description"] = "~L.CFFFFD700PLANS_DARK_IRON_MAIL_R_CAN_SPAWN_IN",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
 				i(11615, {	-- Plans: Dark Iron Shoulders (RECIPE!)
-					["description"] = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",
+					["description"] = "~L.CFFFFD700PLANS_DARK_IRON_SHOULDERS_R_SPAWN_IN",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
 				i(11611, {	-- Plans: Dark Iron Sunderer (RECIPE!)
@@ -2694,7 +2728,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cr"] = 8897,	-- Doomforge Craftsman
 				}),
 				i(18235, {	-- Schematic: Field Repair Bot 74A (RECIPE!)
-					["description"] = "On the floor next to Golem Lord Argelmach.",
+					["description"] = "~L.ON_THE_FLOOR_NEXT_TO_GOLEM_LORD_ARGELMACH",
 					["provider"] = { "o", 179552 },	-- Schematic: Field Repair Bot 74A
 				}),
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot (RECIPE!)
@@ -2702,7 +2736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(16053, {	-- Schematic: Master Engineer's Goggles
 					-- #if AFTER 2.0.1
-					["description"] = "This is now learned from the trainer.",
+					["description"] = "~L.THIS_IS_NOW_LEARNED_FROM_THE_TRAINER",
 					-- #endif
 					["timeline"] = { REMOVED_2_0_1 },
 					["cr"] = 8900,	-- Doomforge Arcanasmith
@@ -2797,7 +2831,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				e(372, {	-- Ring of Law
-					["description"] = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
+					["description"] = "~L.APPROACHING_THE_CENTER_OF_THE_RING_WILL_START",
 					["creatureID"] = 10096,	-- High Justice Grimstone
 					["groups"] = {
 						n(9031, {	-- Anub'shiah
@@ -2933,7 +2967,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						}),
 						applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16059, {	-- Theldren
-							["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",
+							["description"] = "~L.REQUIRES_BANNER_OF_PROVOCATION_DUNGEON_SET_2",
 							["timeline"] = { REMOVED_4_0_3 },
 							-- #if AFTER 4.0.3
 							["sourceQuest"] = 9015,	-- The Challenge
@@ -2964,7 +2998,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(223265, {	-- Delirious Ancient
-					["description"] = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
+					["description"] = "~L.SPAWNS_AFTER_DEFEATING_HIGH_INTERROGATOR",
 					["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 					["groups"] = {
 						i(221271),	-- Ace of Wilds
@@ -2996,7 +3030,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11768, {	-- Incendic Bracers
 							-- #if BEFORE 10.1.7
 							-- #if AFTER 2.0.1
-							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
@@ -3084,11 +3118,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(PHASE_FIVE, i(22242)),	-- Verek's Leash
 				}),
 				n(9476, {	-- Watchman Doomgrip
-					["description"] = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
+					["description"] = "~L.WATCHMAN_DOOMGRIP_SPAWNS_ONCE_ALL_TWELVE_RELIC",
 					["cost"] = { { "i", 11078, 12 } },	-- Relic Coffer Key
 					["groups"] = {
 						o(160836, {	-- Relic Coffer
-							["description"] = "Relic Coffer Keys can drop from any Dark Iron mob in the instance.",
+							["description"] = "~L.RELIC_COFFER_KEYS_CAN_DROP_FROM_ANY_DARK_IRON",
 							["groups"] = {
 								i(11946),	-- Fire Opal Necklace
 								i(11945),	-- Dark Iron Ring
@@ -3099,13 +3133,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						o(165554, {	-- Heart of the Mountain
-							["description"] = "This spawns after defeating Watchman Doomgrip.",
+							["description"] = "~L.THIS_SPAWNS_AFTER_DEFEATING_WATCHMAN_DOOMGRIP",
 							["groups"] = {
 								i(11309),	-- The Heart of the Mountain
 							},
 						}),
 						o(161495, {	-- Secret Safe
-							["description"] = "This spawns after defeating Watchman Doomgrip.",
+							["description"] = "~L.THIS_SPAWNS_AFTER_DEFEATING_WATCHMAN_DOOMGRIP",
 							["groups"] = {
 								-- #if BEFORE 1.13.5
 								i(11923),	-- The Hammer of Grace
@@ -3122,7 +3156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				o(164820, {	-- Dark Keeper Nameplate
-					["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",
+					["description"] = "~L.INSPECT_THE_PORTRAIT_IN_FRONT_OF_THE_COFFER",
 					["crs"] = {
 						9438,	-- Dark Keeper Bethek
 						9442,	-- Dark Keeper Ofgut
@@ -3233,7 +3267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(380, {	-- Hurley Blackbreath
 					["creatureID"] = 9537,
 					["provider"] = { "o", 164911 },	-- Thunderbrew Lager Keg
-					["description"] = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
+					["description"] = "~L.BREAK_THE_3_THUNDERBREW_LAGER_KEGS_TO_START_THE",
 					["groups"] = {
 						i(11312),	-- Lost Thunderbrew Recipe
 						-- #if AFTER 7.3.2
@@ -3253,7 +3287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				e(9543, {	-- Ribbly Screwspigot
 					["creatureID"] = 9543,
-					["description"] = "Speak to him to start the encounter.",
+					["description"] = "~L.SPEAK_TO_HIM_TO_START_THE_ENCOUNTER",
 					["groups"] = {
 						i(11313),	-- Ribbly's Head
 						-- #if SEASON_OF_DISCOVERY
@@ -3292,7 +3326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, n(28067, {	-- Dark Iron Brewer
-					["description"] = "Speak to him until he passes out, a Mug will appear on the ground",
+					["description"] = "~L.SPEAK_TO_HIM_UNTIL_HE_PASSES_OUT_A_MUG_WILL",
 					["timeline"] = { ADDED_2_4_3 },
 					["groups"] = {
 						o(190394, {	-- Mug of Dire Brew
@@ -3302,13 +3336,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				e(381, {	-- Phalanx
 					["creatureID"] = 9502,
-					["description"] = "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
+					["description"] = "~L.PRIVATE_ROCKNOT_MUST_BE_SENT_INTO_A_DRUNKEN",
 					["groups"] = {
 						i(11744),	-- Bloodfist
 						i(11743, {	-- Rockfist
 							-- #if BEFORE 10.1.7
 							-- #if AFTER 2.0.1
-							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+							["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
@@ -3373,7 +3407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(8923, {	-- Panzor the Invincible
-					["description"] = "This is a Rare Creature and, as such, is not always present.",
+					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 					["groups"] = {
 						i(11786),	-- Stone of the Earth
 						i(11785),	-- Rock Golem Bulwark
@@ -3490,7 +3524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if BEFORE 7.3.2
 				n(8929, {	-- Princess Moira Bronzebeard <Princess of Ironforge> / Thaurissan High Priest
-					["description"] = "In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",
+					["description"] = "~L.IN_ORDER_TO_BE_ELIGIBLE_FOR_THIS_LOOT_YOU_NEED",
 					["sourceQuests"] = {
 						4362,	-- The Fate of the Kingdom
 						4003,	-- The Royal Rescue

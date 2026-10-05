@@ -45,7 +45,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(ALCHEMY, {
 		n(COMMON_VENDOR_ITEMS, {
 			i(40411, {	-- Enchanted Vial for WotLK, turns into Shattered Vial with Cataclysm.
-				["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+				["description"] = "~L.CAN_BE_BOUGHT_FROM_ALCHEMY_SUPPLIERS_AS_WELL_AS",
 				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 				--[[["providers"] = {
 					{ "n", 24341},	-- Barnabas Frye <Trade Goods>
@@ -216,14 +216,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
 		prof(9788, {	-- Armorsmith
-			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS",
 			["groups"] = {
 				i(41189, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Chestplate of Conquest
 				i(41190, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Legplates of Conquest
 			},
 		}),
 		prof(9787, {	-- Weaponsmith
-			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS_2",
 			["groups"] = {
 				i(41186, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Corroded Saronite Edge
 				i(41187, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Corroded Saronite Woundbringer
@@ -464,46 +464,250 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- Dust:
 			i(34054, {	-- Infinite Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_18",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的巫妖王之怒服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_19",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 130-182 范围内的优秀（绿色）品质的巫妖王之怒服装、项链、戒指、盾牌和副手物品获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			-- Essences:
 			i(34055, {	-- Greater Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_20",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的巫妖王之怒武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_21",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 154-182 范围内的优秀（绿色）品质的巫妖王之怒武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(34056, {	-- Lesser Cosmic Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_22",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills. This gives you Greater Cosmic Essence which you then have to split into Lesser Cosmic Essence.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解优秀（绿色）品质的巫妖王之怒武器获得，盾牌和副手物品除外。这会给予你强效宇宙精华，随后你需要把它拆分成次级宇宙精华。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
+					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_23",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 130-150 范围内的优秀（绿色）品质的巫妖王之怒武器获得，盾牌和副手物品除外。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			-- Shards and crystals:
 			i(34057, {	-- Abyss Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all epic (purple) quality WotLK gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE_4",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all epic (purple) quality WotLK gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解所有史诗（紫色）品质的巫妖王之怒装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE_5",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 200-225 范围内的所有史诗（紫色）品质的巫妖王之怒装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(34052, {	-- Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality WotLK gear.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_10",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality WotLK gear.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解所有稀有（蓝色）品质的巫妖王之怒装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_11",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 167-200 范围内的所有稀有（蓝色）品质的巫妖王之怒装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(34053, {	-- Small Dream Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Seemingly no longer obtainable but from niche means, there never was any use for them but to convert into Dream Shards.",
+				["description"] = createLocalizationString({
+					readable = "Seemingly no longer obtainable but from niche means, there never was any use for them but to convert into Dream Shards.",
+					constant = "SEEMINGLY_NO_LONGER_OBTAINABLE_BUT_FROM_NICHE",
+					export = true,
+					text = {
+						en = "Seemingly no longer obtainable but from niche means, there never was any use for them but to convert into Dream Shards.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "似乎已无法获得，只能通过一些冷门方式取得；它们除了转换成梦境碎片外从来没有其他用途。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 130-166.",
+				["description"] = createLocalizationString({
+					readable = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 130-166.",
+					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_12",
+					export = true,
+					text = {
+						en = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 130-166.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "通过分解物品等级 130-166 范围内的所有稀有（蓝色）品质的巫妖王之怒装备获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 		}),
@@ -597,7 +801,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	}),
 	prof(ENGINEERING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+			["description"] = "~L.CAN_BE_BOUGHT_FROM_ENGINEERING_SUPPLIERS_AS",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 			["coords"] = {
@@ -619,7 +823,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40533),	-- Walnut Stock
 		})),
 		prof(GNOMISH_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS",
 			["groups"] = {
 				filter(TOYS, {
 					i(40895, {	-- Gnomish X-Ray Specs (TOY!)
@@ -630,7 +834,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			},
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS_2",
 			["groups"] = {
 				filter(MISC, {
 					i(42641),	-- Global Thermal Sapper Charge
@@ -673,7 +877,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		filter(MISC, {
 			i(40893, {	-- Bladed Pickaxe
 				-- #if AFTER 10.0
-				["description"] = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool. Thus its gathering skill bonus is no longer recognised and have no uses but leveling up Northrend Engineering.",
+				["description"] = createLocalizationString({
+					readable = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool. Thus its gathering skill bonus is no longer recognised and have no uses but leveling up Northrend Engineering.",
+					constant = "THIS_ITEM_WAS_MADE_REDUNDANT_WITH_DRAGONFLIGHT",
+					export = true,
+					text = {
+						en = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool. Thus its gathering skill bonus is no longer recognised and have no uses but leveling up Northrend Engineering.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "随着《巨龙时代》的推出，此物品变得多余，无法再作为专业工具装备。因此它的采集技能加成不再被认可，除了用来提升北裂境工程学之外毫无用处。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(44951, {	-- Box of Bombs
@@ -685,13 +906,47 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(47828, {["timeline"] = { ADDED_3_2_0 }}),	-- Goblin Beam Welder
 			i(40892, {	-- Hammer Pick
 				-- #if AFTER 10.0
-				["description"] = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool, despite being recognised as a blacksmith hammer. Its mining skill bonus is no longer recognised.",
+				["description"] = createLocalizationString({
+					readable = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool, despite being recognised as a blacksmith hammer. Its mining skill bonus is no longer recognised.",
+					constant = "THIS_ITEM_WAS_MADE_REDUNDANT_WITH_DRAGONFLIGHT_2",
+					export = true,
+					text = {
+						en = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool, despite being recognised as a blacksmith hammer. Its mining skill bonus is no longer recognised.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "随着《巨龙时代》的推出，此物品变得多余，尽管它被认定为铁匠锤，却无法再作为专业工具装备。它的采矿技能加成不再被认可。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 			}),
 			i(37567),	-- Healing Injector Kit
 			-- #if NOT ANYCLASSIC
 			i(49040, {	-- Jeeves
-				["description"] = "This still isn't a toy... BLIZZARD.",
+				["description"] = createLocalizationString({
+					readable = "This still isn't a toy... BLIZZARD.",
+					constant = "THIS_STILL_ISN_T_A_TOY_BLIZZARD",
+					export = true,
+					text = {
+						en = "This still isn't a toy... BLIZZARD.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这仍然不是玩具……暴雪。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			-- #endif
 			i(41164, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Mammoth Cutters
@@ -740,7 +995,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		i(23821, {	-- Zapthrottle Mote Extractor
 			n(24879, {	-- Arctic Cloud (Gas cloud)
-				["description"] = "Too few and far between to be reliably farmed on it's own.",
+				["description"] = createLocalizationString({
+					readable = "Too few and far between to be reliably farmed on it's own.",
+					constant = "TOO_FEW_AND_FAR_BETWEEN_TO_BE_RELIABLY_FARMED",
+					export = true,
+					text = {
+						en = "Too few and far between to be reliably farmed on it's own.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "数量太少且分布太散，无法单独稳定地刷取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps"] = { DRAGONBLIGHT, ICECROWN, THE_STORM_PEAKS, },
 				["requireSkill"] = ENGINEERING,
 			}),
@@ -750,12 +1022,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ 84.0, 71.5, WINTERGRASP },	-- The Cauldron of Flames
 					{ 45.65, 24.6, SHOLAZAR_BASIN },	-- The Savage Thicket
 				},
-				["description"] = "Too few and far between to be reliably farmed on it's own.",
+				["description"] = "~L.TOO_FEW_AND_FAR_BETWEEN_TO_BE_RELIABLY_FARMED",
 				["requireSkill"] = ENGINEERING,
 			}),
 			n(32544, {	-- Steam Cloud (Gas cloud)
 				["coord"] = { 66.0, 27.0, BOREAN_TUNDRA },	-- The Geyser Fields
-				["description"] = "Too few and far between to be reliably farmed on it's own.",
+				["description"] = "~L.TOO_FEW_AND_FAR_BETWEEN_TO_BE_RELIABLY_FARMED",
 				["maps"] = { SHOLAZAR_BASIN },
 				["requireSkill"] = ENGINEERING,
 			}),
@@ -773,7 +1045,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["maps_disp"] = { SHOLAZAR_BASIN },
 		}),
 		i(45905, {	-- Bloodtooth Frenzy (Dalaran Fishing daily quest objective)
-			["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
+			["description"] = createLocalizationString({
+				readable = "Kill an animal and then swim in a body of water to create a pool to fish from.",
+				constant = "KILL_AN_ANIMAL_AND_THEN_SWIM_IN_A_BODY_OF_WATER",
+				export = true,
+				text = {
+					en = "Kill an animal and then swim in a body of water to create a pool to fish from.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "杀死一只动物，然后在水中游泳，以形成可以钓鱼的水池。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "o", 194479 },	-- Pool of Blood
 		}),
 		i(41808, {	-- Bonescale Snapper
@@ -791,7 +1080,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			},
 		}),
 		i(41805, {	-- Borean Man O' War
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps_disp"] = { BOREAN_TUNDRA },
 			["provider"] = { "o", 192051 },	-- Borean Man O' War School
 		}),
@@ -802,7 +1091,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				{ 50.1, 69.7, DRAGONBLIGHT },	-- Path of the Titans on the Sea
 				{ 82.9, 90.3, HOWLING_FJORD },	-- Outside Baelgun's Excavation Site
 			},
-			["description"] = "The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",
+			["description"] = createLocalizationString({
+				readable = "The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",
+				constant = "THE_SCHOOLS_HAVE_SHARED_SPAWN_WITH_MOONGLOW",
+				export = true,
+				text = {
+					en = "The schools have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些鱼群与月光乌贼鱼群共享刷新。北风苔原的鱼群最多。",
+					-- TODO: tw = "",
+				},
+			}),
 			["_allowObjectProvider"] = true,
 			["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
 		}),
@@ -834,7 +1140,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				-- #endif
 		}),
 		i(44505, {	-- Dustbringer
-			["description"] = "Can be caught in schools or open water in Northrend.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in schools or open water in Northrend.",
+				constant = "CAN_BE_CAUGHT_IN_SCHOOLS_OR_OPEN_WATER_IN",
+				export = true,
+				text = {
+					en = "Can be caught in schools or open water in Northrend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在诺森德的鱼群或开阔水域中钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["providers"] = {
 				{ "o", 192051 },	-- Borean Man O' War School
 				{ "o", 192053 },	-- Deep Sea Monsterbelly School
@@ -849,12 +1172,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			},
 		}),
 		i(41810, {	-- Fangtooth Herring
-			["description"] = "Schools can be found in inland waters.",
+			["description"] = createLocalizationString({
+				readable = "Schools can be found in inland waters.",
+				constant = "SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERS",
+				export = true,
+				text = {
+					en = "Schools can be found in inland waters.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "鱼群可以在内陆水域找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = { HOWLING_FJORD },
 			["provider"] = { "o", 192049 },	-- Fangtooth Herring School
 		}),
 		i(43646, {	-- Fountain Goldfish
-			["description"] = "Can be caught in the fountain.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in the fountain.",
+				constant = "CAN_BE_CAUGHT_IN_THE_FOUNTAIN",
+				export = true,
+				text = {
+					en = "Can be caught in the fountain.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在喷泉中钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coord"] = { 52.9, 65.9, NORTHREND_DALARAN },	-- Dalaran fountain
 		}),
 		i(45909, {	-- Giant Darkwater Clam
@@ -866,7 +1223,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			},
 		}),
 		i(41809, {	-- Glacial Salmon
-			["description"] = "Schools can be found in inland waters.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERS",
 			["maps_disp"] = { GRIZZLY_HILLS },
 			["provider"] = { "o", 192050 },	-- Glacial Salmon School
 		}),
@@ -875,7 +1232,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["provider"] = { "o", 192059 },	-- Glassfin Minnow School
 		}),
 		i(41802, {	-- Imperial Manta Ray
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				DRAGONBLIGHT,
@@ -885,7 +1242,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
 		}),
 		i(43572, {	-- Magic Eater
-			["description"] = "Can be caught in any waters on both WotLK and Legion Dalaran.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught in any waters on both WotLK and Legion Dalaran.",
+				constant = "CAN_BE_CAUGHT_IN_ANY_WATERS_ON_BOTH_WOTLK_AND",
+				export = true,
+				text = {
+					en = "Can be caught in any waters on both WotLK and Legion Dalaran.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在巫妖王之怒和军团再临版本的达拉然任何水域中钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				NORTHREND_DALARAN,
 				NORTHREND_THE_UNDERBELLY,
@@ -898,7 +1272,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				{ 50.1, 69.7, DRAGONBLIGHT },	-- Path of the Titans on the Sea
 				{ 82.9, 90.3, HOWLING_FJORD },	-- Outside Baelgun's Excavation Site
 			},
-			["description"] = "The schools have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",
+			["description"] = createLocalizationString({
+				readable = "The schools have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",
+				constant = "THE_SCHOOLS_HAVE_SHARED_SPAWN_WITH_DEEP_SEA",
+				export = true,
+				text = {
+					en = "The schools have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些鱼群与深海怪兽腹鱼群共享刷新。北风苔原的鱼群最多。",
+					-- TODO: tw = "",
+				},
+			}),
 			["_allowObjectProvider"] = true,
 			["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
 		}),
@@ -912,7 +1303,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["provider"] = { "o", 192057 },	-- Nettlefish School
 		}),
 		i(45902, {	-- Phantom Ghostfish (Dalaran Fishing daily quest objective)
-			["description"] = "Eat this before it despawns!",
+			["description"] = createLocalizationString({
+				readable = "Eat this before it despawns!",
+				constant = "EAT_THIS_BEFORE_IT_DESPAWNS",
+				export = true,
+				text = {
+					en = "Eat this before it despawns!",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在它消失之前吃掉它！",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = { SHOLAZAR_BASIN },
 			["_noautomation"] = true,
 		}),
@@ -958,7 +1366,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			},
 		}),
 		i(41803, {	-- Rockfin Grouper
-			["description"] = "Can be caught on the seaside around Northrend.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught on the seaside around Northrend.",
+				constant = "CAN_BE_CAUGHT_ON_THE_SEASIDE_AROUND_NORTHREND",
+				export = true,
+				text = {
+					en = "Can be caught on the seaside around Northrend.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在诺森德周边的海边钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps_disp"] = {
 				BOREAN_TUNDRA,
 				DRAGONBLIGHT,
@@ -995,18 +1420,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- #endif
 		}),
 		i(43571, {	-- Sewer Carp
-			["description"] = "Can be caught in any waters on both WotLK and Legion Dalaran.",
+			["description"] = "~L.CAN_BE_CAUGHT_IN_ANY_WATERS_ON_BOTH_WOTLK_AND",
 			["maps_disp"] = {
 				NORTHREND_DALARAN,
 				NORTHREND_THE_UNDERBELLY,
 			},
 		}),
 		i(43647, {	-- Shimmering Minnow
-			["description"] = "Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",
+			["description"] = createLocalizationString({
+				readable = "Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",
+				constant = "CAN_BE_CAUGHT_OUTSIDE_VIOLET_HOLD_ON_BOTH_WOTLK",
+				export = true,
+				text = {
+					en = "Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在巫妖王之怒和军团再临版本的达拉然紫罗兰监狱外钓到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coord"] = { 63.8, 64.3, NORTHREND_DALARAN },	-- The Violet Hold
 		}),
 		i(43652, {	-- Slippery Eel
-			["description"] = "Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",
+			["description"] = "~L.CAN_BE_CAUGHT_OUTSIDE_VIOLET_HOLD_ON_BOTH_WOTLK",
 			["coord"] = { 63.8, 64.3, NORTHREND_DALARAN },	-- The Violet Hold
 		}),
 		i(45904, {	-- Terrorfish (Dalaran Fishing daily quest objective)
@@ -1014,7 +1456,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		-- Schools
 		o(192051, {	-- Borean Man O' War School
-			["description"] = "Can be found on the seaside.",
+			["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps"] = { BOREAN_TUNDRA },
 		}),
 		o(192053, {	-- Deep Sea Monsterbelly School
@@ -1024,7 +1466,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				{ 50.1, 69.7, DRAGONBLIGHT },	-- Path of the Titans on the Sea
 				{ 82.9, 90.3, HOWLING_FJORD },	-- Outside Baelgun's Excavation Site
 			},
-			["description"] = "Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",
+			["description"] = createLocalizationString({
+				readable = "Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",
+				constant = "HAVE_SHARED_SPAWN_WITH_MOONGLOW_CUTTLEFISH",
+				export = true,
+				text = {
+					en = "Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "与月光乌贼鱼群共享刷新点。北风苔原的鱼群最多。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		o(192048, {	-- Dragonfin Angelfish School
 			["coords"] = {
@@ -1037,18 +1496,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			},
 		}),
 		o(192049, {	-- Fangtooth Herring School
-			["description"] = "Can be found in inland waters.",
+			["description"] = createLocalizationString({
+				readable = "Can be found in inland waters.",
+				constant = "CAN_BE_FOUND_IN_INLAND_WATERS",
+				export = true,
+				text = {
+					en = "Can be found in inland waters.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "可在内陆水域中找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			["maps"] = { HOWLING_FJORD },
 		}),
 		o(192050, {	-- Glacial Salmon School
-			["description"] = "Can be found in inland waters.",
+			["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERS",
 			["maps"] = { GRIZZLY_HILLS },
 		}),
 		o(192059, {	-- Glassfin Minnow School
 			["maps"] = { CRYSTALSONG_FOREST },
 		}),
 		o(192052, {	-- Imperial Manta Ray School
-			["description"] = "Schools can be found on the seaside.",
+			["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
 			["maps"] = {
 				BOREAN_TUNDRA,
 				DRAGONBLIGHT,
@@ -1063,7 +1539,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				{ 50.1, 69.7, DRAGONBLIGHT },	-- Path of the Titans on the Sea
 				{ 82.9, 90.3, HOWLING_FJORD },	-- Outside Baelgun's Excavation Site
 			},
-			["description"] = "Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",
+			["description"] = createLocalizationString({
+				readable = "Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",
+				constant = "HAVE_SHARED_SPAWN_WITH_DEEP_SEA_MONSTERBELLY",
+				export = true,
+				text = {
+					en = "Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "与深海巨腹鱼鱼群共享刷新点。北风苔原的鱼群最多。",
+					-- TODO: tw = "",
+				},
+			}),
 		}),
 		o(192046, {	-- Musselback Sculpin School
 			["coord"] = { 51.6, 45.0, BOREAN_TUNDRA },	-- Lake Kum'uya
@@ -1077,7 +1570,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		-- Recipe
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
 			}),
 		}),
 	}),
@@ -1101,7 +1594,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ 48.8, 48.4, DRAGONBLIGHT },	-- Ruby Dragonshrine
 					{ 63.5, 72.5, DRAGONBLIGHT },	-- Emerald Dragonshrine
 				},
-				["description"] = "Found on grassy terrain.",
+				["description"] = createLocalizationString({
+					readable = "Found on grassy terrain.",
+					constant = "FOUND_ON_GRASSY_TERRAIN",
+					export = true,
+					text = {
+						en = "Found on grassy terrain.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在长草的地形上找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 350,
 				-- #endif
@@ -1131,14 +1641,48 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			o(190170, {	-- Talandra's Rose
-				["description"] = "Found around the lower tiers of Zul'Drak.",
+				["description"] = createLocalizationString({
+					readable = "Found around the lower tiers of Zul'Drak.",
+					constant = "FOUND_AROUND_THE_LOWER_TIERS_OF_ZUL_DRAK",
+					export = true,
+					text = {
+						en = "Found around the lower tiers of Zul'Drak.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在祖达克较低层区域周围找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 33.2, 66.7, ZULDRAK },	-- Lower Zul'Drak
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 385,
 				-- #endif
 			}),
 			o(190169, {	-- Tiger Lily
-				["description"] = "Found around inland waters and waterways.",
+				["description"] = createLocalizationString({
+					readable = "Found around inland waters and waterways.",
+					constant = "FOUND_AROUND_INLAND_WATERS_AND_WATERWAYS",
+					export = true,
+					text = {
+						en = "Found around inland waters and waterways.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在内陆水域和水道周围找到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 51.6, 45.0, BOREAN_TUNDRA },	-- Lake Kum'uya
 				-- #if BEFORE 6.0.0
 				["learnedAt"] = 375,
@@ -1163,7 +1707,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			i(37921, {	-- Deadnettle
-				["description"] = "Is obtained from gathering other herbs.",
+				["description"] = createLocalizationString({
+					readable = "Is obtained from gathering other herbs.",
+					constant = "IS_OBTAINED_FROM_GATHERING_OTHER_HERBS",
+					export = true,
+					text = {
+						en = "Is obtained from gathering other herbs.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "采集其他草药时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["maps_disp"] = {
 					BOREAN_TUNDRA,
 					DRAGONBLIGHT,
@@ -1197,7 +1758,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 			}),
 			i(36908, {	-- Frost Lotus
-				["description"] = "Can uncommonly be looted when gathering WotLK herbs.",
+				["description"] = createLocalizationString({
+					readable = "Can uncommonly be looted when gathering WotLK herbs.",
+					constant = "CAN_UNCOMMONLY_BE_LOOTED_WHEN_GATHERING_WOTLK",
+					export = true,
+					text = {
+						en = "Can uncommonly be looted when gathering WotLK herbs.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "采集巫妖王之怒草药时偶尔可以拾取到。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "o", 191019 },	-- Adder's Tongue
 					{ "o", 191303 },	-- Firethorn
@@ -1213,7 +1791,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ 48.8, 48.4, DRAGONBLIGHT },	-- Ruby Dragonshrine
 					{ 63.5, 72.5, DRAGONBLIGHT },	-- Emerald Dragonshrine
 				},
-				["description"] = "Found on grassy terrain.",
+				["description"] = "~L.FOUND_ON_GRASSY_TERRAIN",
 				["maps_disp"] = {
 					BOREAN_TUNDRA,
 					GRIZZLY_HILLS,
@@ -1260,7 +1838,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			}),
 			i(36907, {	-- Talandra's Rose
 				["coord"] = { 33.2, 66.7, ZULDRAK },	-- Lower Zul'Drak
-				["description"] = "Found around the lower tiers of Zul'Drak.",
+				["description"] = "~L.FOUND_AROUND_THE_LOWER_TIERS_OF_ZUL_DRAK",
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 190170 },	-- Talandra's Rose
 			}),
@@ -1273,7 +1851,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			}),
 			i(36904, {	-- Tiger Lily
 				["coord"] = { 51.6, 45.0, BOREAN_TUNDRA },	-- Lake Kum'uya
-				["description"] = "Found around inland waters and waterways.",
+				["description"] = "~L.FOUND_AROUND_INLAND_WATERS_AND_WATERWAYS",
 				["maps_disp"] = {
 					GRIZZLY_HILLS,
 					HOWLING_FJORD,
@@ -1367,7 +1945,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(44210),	-- Faces of Doom
 			i(38322),	-- Iron-Bound Tome
 			salvagerecipe(64051, 45854, {	-- Rituals of the New Moon
-				["description"] = "This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",
+				["description"] = createLocalizationString({
+					readable = "This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",
+					constant = "THIS_VERSION_OF_THE_OFF_HAND_IS_A_PLACEHOLDER",
+					export = true,
+					text = {
+						en = "This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此版本的副手物品是四种可用版本的占位符，制造它会随机获得四种之一。四种副手版本的属性相同，但提供不同颜色的巨型狼。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_3_1_0 },
 				["groups"] = {
 					i(45850),	-- Rituals of the New Moon (red wolf)
@@ -1440,7 +2035,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					["timeline"] = { ADDED_3_2_0 },
 				}))},
 				sharedData({	-- Uncommon quality (green) gems:
-					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting.",
+					["description"] = "~L.THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_2",
 					["providers"] = {
 						{ "i", 36909 },	-- Cobalt Ore
 						{ "i", 36912 },	-- Saronite Ore
@@ -1455,7 +2050,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					i(36920),	-- Sun Crystal
 				}),
 				sharedData({	-- Rare quality (blue) gems:
-					["description"] = "This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",
+					["description"] = createLocalizationString({
+						readable = "This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",
+						constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_ICY",
+						export = true,
+						text = {
+							en = "This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宝石最可靠的获取方式是用珠宝加工制作冰霜棱镜，勘探萨隆邪铁矿石和泰坦神铁矿石是第二高的掉率。",
+							-- TODO: tw = "",
+						},
+					}),
 					["providers"] = {
 						{ "i", 44943 },	-- Icy Prism
 						{ "i", 36912 },	-- Saronite Ore
@@ -1470,7 +2082,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					i(36927),	-- Twilight Opal
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, sharedData({	-- Epic quality (purple) gems:
-					["description"] = "This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",
+					["description"] = createLocalizationString({
+						readable = "This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",
+						constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_5",
+						export = true,
+						text = {
+							en = "This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宝石最可靠的获取方式是用炼金术转化获得，而用珠宝加工勘探泰坦神铁矿石是第二高的掉率（5%）。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 36910 },	-- Titanium Ore
 					["timeline"] = { ADDED_3_2_0 },
 				}, {
@@ -2576,13 +3205,64 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(SKINNING, {
-		["description"] = "The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+		["description"] = createLocalizationString({
+			readable = "The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+			constant = "THE_FOLLOWING_ITEMS_CAN_BE_GATHERED_BY_SKINNING_4",
+			export = true,
+			text = {
+				en = "The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "以下物品可以通过在诺森德对生物剥皮来收集。请注意，北风皮是最常见的剥皮材料。所有其他剥皮材料从相应怪物身上的掉落几率都低于 100%，因此你必须预期要剥多只生物才能获得该材料。\n\n即使在启用“调试模式”时，此标题也常常不会显示其中所有未收集的内容。追踪特定材料的最佳方式是使用 /att item:[物品ID] 或弹出此标题。",
+				-- TODO: tw = "",
+			},
+		}),
 		["groups"] = {
 			i(44128, {	-- Arctic Fur
-				["description"] = "Arctic Fur is a rare skinned drop from any skinnable creatures.",
+				["description"] = createLocalizationString({
+					readable = "Arctic Fur is a rare skinned drop from any skinnable creatures.",
+					constant = "ARCTIC_FUR_IS_A_RARE_SKINNED_DROP_FROM_ANY",
+					export = true,
+					text = {
+						en = "Arctic Fur is a rare skinned drop from any skinnable creatures.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "极地毛皮是从任何可剥皮生物身上剥取到的稀有掉落物。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(33568, {	-- Borean Leather
-				["description"] = "Can be skinned from any skinnable WotLK mobs.",
+				["description"] = createLocalizationString({
+					readable = "Can be skinned from any skinnable WotLK mobs.",
+					constant = "CAN_BE_SKINNED_FROM_ANY_SKINNABLE_WOTLK_MOBS",
+					export = true,
+					text = {
+						en = "Can be skinned from any skinnable WotLK mobs.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可从任何可剥皮的巫妖王之怒怪物身上剥取。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			i(33567, {	-- Borean Leather Scraps
 				["groups"] = {

@@ -399,7 +399,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				n(118930, {	-- Ixallon the Soulbreaker
 					i(212779, {	-- Grimoire of the Bloodrage Tyrant (CI!)
-						["description"] = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
+						["description"] = createLocalizationString({
+							readable = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
+							constant = "DROPS_FROM_THE_LAST_MOB_BEFORE_KIL_JAEDEN_QUEUE",
+							export = true,
+							text = {
+								en = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "由基尔加丹之前的最后一个怪物掉落。\n在达拉然排队进入“欺诈者之陨”即可快速到达他面前。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 			})),
@@ -494,7 +511,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
-						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_ACCESS_TO",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在普通难度下击杀格罗斯后进入戒卫侍女。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = {
 							47726,	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
 							47727,	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
@@ -524,7 +558,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(47726, {	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
-						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_ACCESS_TO_2",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在英雄难度下击杀格罗斯后进入戒卫侍女。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						["qg"] = 119723,	-- Image of Aegwynn
 						["qi"] = 151249,	-- Fragment of the Guardian's Seal (QI!)
@@ -544,7 +595,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_ACCESS_TO_3",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在史诗难度下击杀格罗斯后进入戒卫侍女。\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						["qg"] = 119723,	-- Image of Aegwynn
 						["qi"] = 151250,	-- Fragment of the Guardian's Seal (QI!)

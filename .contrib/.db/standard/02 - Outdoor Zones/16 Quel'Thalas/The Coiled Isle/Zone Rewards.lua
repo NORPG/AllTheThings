@@ -7,7 +7,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(ZONE_REWARDS, {
 			filter(REAGENTS, {
 				o(656135, {	-- Slumbering Starfish
-					["description"] = "Can be found in waters, and around coastal areas of The Coiled Isle.",
+					["description"] = createLocalizationString({
+						readable = "Can be found in waters, and around coastal areas of The Coiled Isle.",
+						constant = "CAN_BE_FOUND_IN_WATERS_AND_AROUND_COASTAL_AREAS",
+						export = true,
+						text = {
+							en = "Can be found in waters, and around coastal areas of The Coiled Isle.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在水域中以及盘蛇岛沿岸一带找到。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(274596),	-- Beached Asteroid
 						i(274597),	-- Bulbous Benthos

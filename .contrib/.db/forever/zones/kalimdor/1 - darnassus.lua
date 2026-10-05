@@ -143,7 +143,24 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				["groups"] = {
 					objective(1, {	-- 0/1 Sethir's Journal
 						["provider"] = { "i", 7737 },	-- Sethir's Journal
-						["description"] = "This item can only be pickpocketed.",
+						["description"] = createLocalizationString({
+							readable = "This item can only be pickpocketed.",
+							constant = "THIS_ITEM_CAN_ONLY_BE_PICKPOCKETED",
+							export = true,
+							text = {
+								en = "This item can only be pickpocketed.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该物品只能通过搜身获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 37.6, 22.2, MAP.TELDRASSIL },
 						["cr"] = 6909,	-- Sethir the Ancient
 					}),
@@ -615,7 +632,24 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(22250, {	-- Herb Pouch
-						["description"] = "Only select Herbalism Suppliers sells this pouch.",
+						["description"] = createLocalizationString({
+							readable = "Only select Herbalism Suppliers sells this pouch.",
+							constant = "ONLY_SELECT_HERBALISM_SUPPLIERS_SELLS_THIS",
+							export = true,
+							text = {
+								en = "Only select Herbalism Suppliers sells this pouch.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有部分草药学供应商出售此袋子。",
+								-- TODO: tw = "",
+							},
+						}),
 						["providers"] = {
 							{ "n", 4216},	-- Chardryn <Herbalism Supplies>
 							{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>

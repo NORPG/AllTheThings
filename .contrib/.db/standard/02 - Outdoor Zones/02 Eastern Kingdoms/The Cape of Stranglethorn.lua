@@ -49,11 +49,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(411, {	-- Baby Ape (PET!)
-						["description"] = "Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",
+						["description"] = createLocalizationString({
+							readable = "Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",
+							constant = "CAN_BE_FOUND_ON_JAGUERO_ISLE_IN_THE_CAPE_OF",
+							export = true,
+							text = {
+								en = "Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在荆棘谷海角的美洲豹岛上找到。它们只在该岛下雨时刷新，而这一区域有自己独特的天气模式。虽然荆棘谷可能在下雨，但岛上未必下雨。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(401),	-- Strand Crab (PET!)
 					pet(410, {	-- Wharf Rat (PET!)
-						["description"] = "Can be found reliably as secondary pets alongside Baby Apes, but also found in Booty Bay.",
+						["description"] = createLocalizationString({
+							readable = "Can be found reliably as secondary pets alongside Baby Apes, but also found in Booty Bay.",
+							constant = "CAN_BE_FOUND_RELIABLY_AS_SECONDARY_PETS",
+							export = true,
+							text = {
+								en = "Can be found reliably as secondary pets alongside Baby Apes, but also found in Booty Bay.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可稳定地作为次要宠物与幼年猿猴一同找到，也可在藏宝海湾找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -108,7 +142,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(65656, {	-- Bill Buckler <Master Pet Tamer>
 					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
-					["description"] = "This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",
+						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_BILL_S_PETS_ARE",
+						export = true,
+						text = {
+							en = "This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限联盟。\n\nBill 的宠物为 11 级，三个宠物的类别依次为：\n1. 人型 - 使用亡灵（强力）或野兽（耐打）宠物。\n2. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。\n3. 飞行 - 同上。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["petBattleLvl"] = 11,
@@ -311,7 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4621, {	-- Avast Ye, Admiral!
-					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
+					["description"] = "~L.THIS_QUEST_ALSO_REQUIRES_YOU_TO_BE_HATED_OR",
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
@@ -526,7 +577,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
-					["description"] = "This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
+					["description"] = createLocalizationString({
+						readable = "This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
+						constant = "THIS_QUEST_IS_ONLY_AVAILABLE_IF_YOU_DID_NOT",
+						export = true,
+						text = {
+							en = "This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有当你在北荆棘谷*未*完成 |cff4a54e8腐化之源|r 和 |cff4a54e8莫什奥格赏金|r 时，才能接取此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
 					["qg"] = 44082,	-- Bronwyn Hewstrike
 					["qi"] = 58490,	-- Opened Mosh'Ogg Bounty
@@ -535,7 +603,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26825, {	-- Dask "The Flask" Gobfizzle
-					["description"] = "This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
+					["description"] = createLocalizationString({
+						readable = "This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
+						constant = "THIS_QUEST_IS_ONLY_AVAILABLE_IF_YOU_DID",
+						export = true,
+						text = {
+							en = "This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有当你在北荆棘谷*已*完成 |cff4a54e8腐化之源|r 和 |cff4a54e8莫什奥格赏金|r 时，才能接取此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
 					["qg"] = 44082,	-- Bronwyn Hewstrike
 					["qi"] = 58490,	-- Opened Mosh'Ogg Bounty
@@ -782,7 +867,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = {
 						i(122677, {	-- Bag of Gold
-							["description"] = "Contains 200g.",
+							["description"] = createLocalizationString({
+								readable = "Contains 200g.",
+								constant = "CONTAINS_200G",
+								export = true,
+								text = {
+									en = "Contains 200g.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "内含 200 金币。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -930,7 +1032,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 43255 },	-- Zanzil the Outcast
 							},
 							["coord"] = { 78.0, 43.8, NORTHERN_STRANGLETHORN },
-							["description"] = "Attack Zanzil first to interupt the cast.",
+							["description"] = createLocalizationString({
+								readable = "Attack Zanzil first to interupt the cast.",
+								constant = "ATTACK_ZANZIL_FIRST_TO_INTERUPT_THE_CAST",
+								export = true,
+								text = {
+									en = "Attack Zanzil first to interupt the cast.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "先攻击赞吉尔以打断施法。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				},
@@ -1674,7 +1793,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(3, {	-- 0/1 Cow Head
 									["provider"] = { "i", 59147 },	-- Cow Head
 									["coord"] = { 43.2, 71.6, THE_CAPE_OF_STRANGLETHORN },
-									["description"] = "\"I've killed thousands of players. I've committed genocide on entire species. Yet this was the first time I've felt sad about killing anything in WoW. Good night, sweet queen.\"\n -rabiesarebad (WoWHead)",
+									["description"] = createLocalizationString({
+										readable = "\"I've killed thousands of players. I've committed genocide on entire species. Yet this was the first time I've felt sad about killing anything in WoW. Good night, sweet queen.\"\n -rabiesarebad (WoWHead)",
+										constant = "I_VE_KILLED_THOUSANDS_OF_PLAYERS_I_VE_COMMITTED",
+										export = true,
+										text = {
+											en = "\"I've killed thousands of players. I've committed genocide on entire species. Yet this was the first time I've felt sad about killing anything in WoW. Good night, sweet queen.\"\n -rabiesarebad (WoWHead)",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "\"我杀过数千名玩家。我对整个种族实施过灭绝。然而这是我在《魔兽世界》中第一次为杀死某个东西而感到难过。晚安，甜蜜的女王。\"\n -rabiesarebad (WoWHead)",
+											-- TODO: tw = "",
+										},
+									}),
 									["cr"] = 43505,	-- Bossy
 								}),
 								objective(1, {	-- 0/1 Head of Fleet Master Seahorn
@@ -1876,7 +2012,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n",  43511 },	-- Deck Stain
 								{ "o", 204422 },	-- Swabbie's Mop
 							},
-							["description"] = "You can pay \"Pretty Boy\" Duncan (just outside the door from the lower decks) 1g to swab the decks for you if you don't want to do the minigame.",
+							["description"] = createLocalizationString({
+								readable = "You can pay \"Pretty Boy\" Duncan (just outside the door from the lower decks) 1g to swab the decks for you if you don't want to do the minigame.",
+								constant = "YOU_CAN_PAY_PRETTY_BOY_DUNCAN_JUST_OUTSIDE_THE",
+								export = true,
+								text = {
+									en = "You can pay \"Pretty Boy\" Duncan (just outside the door from the lower decks) 1g to swab the decks for you if you don't want to do the minigame.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你不想玩这个小游戏，可以付给“小白脸”邓肯（就在下层甲板的门外）1 金币，让他替你擦洗甲板。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(61578, {	-- Cleaning Britches
 							["timeline"] = { ADDED_4_0_3 },
@@ -1996,7 +2149,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26609, {	-- The Bloodsail Buccaneers
-					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
+					["description"] = createLocalizationString({
+						readable = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
+						constant = "YOU_NEED_TO_COMPLETE_AT_LEAST_ONE_OF_KILL",
+						export = true,
+						text = {
+							en = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你需要完成[击杀-收集]、[劈砍者莫克拉什]或[穆克拉之死]中的至少一个，才能接取此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						26595,	-- Kill-Collect
 						26601,	-- Mok'rash the Cleaver
@@ -2036,7 +2206,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(26696, {	-- The Call of Kalimdor (H)
-					["description"] = "Swims in a circle near the dock.",
+					["description"] = createLocalizationString({
+						readable = "Swims in a circle near the dock.",
+						constant = "SWIMS_IN_A_CIRCLE_NEAR_THE_DOCK",
+						export = true,
+						text = {
+							en = "Swims in a circle near the dock.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在码头附近绕圈游动。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 48797,	-- Gim'hila
 					["coord"] = { 39.6, 68.5, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2183,7 +2370,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26590, {	-- The Holy Water of Clarity
-					["description"] = "This version of the quest is given to players that have completed '|cffe50d12Mok'thardin's Enchantment|r' quest chain prior to the Cataclysm.",
+					["description"] = createLocalizationString({
+						readable = "This version of the quest is given to players that have completed '|cffe50d12Mok'thardin's Enchantment|r' quest chain prior to the Cataclysm.",
+						constant = "THIS_VERSION_OF_THE_QUEST_IS_GIVEN_TO_PLAYERS_5",
+						export = true,
+						text = {
+							en = "This version of the quest is given to players that have completed '|cffe50d12Mok'thardin's Enchantment|r' quest chain prior to the Cataclysm.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此版本的任务会给予在大灾变之前完成“|cffe50d12莫克萨丁的魔法|r”任务链的玩家。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						573,	-- Mok'thardin's Enchantment (4/4)
 						26487,	-- Akiris by the Bundle
@@ -2279,7 +2483,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26811, {	-- Through the Troll Hole (A)
-					["description"] = "If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",
+					["description"] = createLocalizationString({
+						readable = "If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",
+						constant = "IF_YOU_ABANDON_THIS_QUEST_TALK_TO",
+						export = true,
+						text = {
+							en = "If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃这个任务，请与|cFFFFD700探险者协会挖掘场|r的|cFFFFD700梅维基|r交谈。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 26810,	-- Eliminate the Outcast
 					["providers"] = {
 						{ "i",  60374 },	-- Maywiki's Fetish
@@ -2291,7 +2512,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26552, {	-- Through the Troll Hole (H)
-					["description"] = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
+					["description"] = createLocalizationString({
+						readable = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
+						constant = "IF_YOU_ABANDON_THIS_QUEST_TALK_TO_2",
+						export = true,
+						text = {
+							en = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你放弃这个任务，请与|cFFFFD700硬钳避难所|r的|cFFFFD700查巴尔|r交谈。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 26551,	-- Eliminate the Outcast
 					["providers"] = {
 						{ "i",  58964 },	-- Chabal's Fetish
@@ -2619,7 +2857,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1552, {	-- Scale Belly
 					["coord"] = { 67.8, 25.4, THE_CAPE_OF_STRANGLETHORN },
-					["description"] = "Found inside Crystalvein Mine.",
+					["description"] = createLocalizationString({
+						readable = "Found inside Crystalvein Mine.",
+						constant = "FOUND_INSIDE_CRYSTALVEIN_MINE",
+						export = true,
+						text = {
+							en = "Found inside Crystalvein Mine.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于晶脉矿洞内。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
 							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
@@ -2635,7 +2890,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(TREASURES, {
 				pvp(o(179697, {	-- Arena Treasure Chest
-					["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
+					["description"] = createLocalizationString({
+						readable = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
+						constant = "WARNING_FREE_FOR_ALL_PVP_EVENT_CHEST_IS_DROPPED",
+						export = true,
+						text = {
+							en = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "警告：自由混战 PVP 事件\n\n宝箱每 3 小时在竞技场中掉落一次，从午夜开始。\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
 						ach(389),	-- Gurubashi Arena Master
@@ -2645,7 +2917,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18712),	-- Arena Vambraces
 						i(18709),	-- Arena Wristguards
 						i(126948, {	-- Defending Champion
-							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
+							["description"] = "~L.ONCE_YOU_HAVE_THE_ARENA_GRAND_MASTER",
 							["timeline"] = { ADDED_6_2_0 },
 							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
 						}),
@@ -2732,7 +3004,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(44179, {	-- Harry No-Hooks <Birds and Rum>
-					["description"] = "If you don't have the required reputation with Bloodsail Buccaneers, these pets are also sold in Booty Bay by Narkk.",
+					["description"] = createLocalizationString({
+						readable = "If you don't have the required reputation with Bloodsail Buccaneers, these pets are also sold in Booty Bay by Narkk.",
+						constant = "IF_YOU_DON_T_HAVE_THE_REQUIRED_REPUTATION_WITH",
+						export = true,
+						text = {
+							en = "If you don't have the required reputation with Bloodsail Buccaneers, these pets are also sold in Booty Bay by Narkk.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你没有血帆海盗所需的声望，这些宠物也可以在藏宝海湾由纳尔克出售。",
+							-- TODO: tw = "",
+						},
+					}),
 					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers
 					["coord"] = { 46.6, 93.6, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2950,7 +3239,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>
-					["description"] = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\n - Crieve",
+					["description"] = createLocalizationString({
+						readable = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\n - Crieve",
+						constant = "THESE_ARE_COMPLETELY_USELESS_AS_FAR_AS_WE_KNOW",
+						export = true,
+						text = {
+							en = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\n - Crieve",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "据我们所知，这些完全没用。我每种买了一个放在银行里，以防暴雪哪天把这个商人移除。\n - Crieve",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_7_1_0 },
 					["groups"] = {
 						i(140101, {	-- A Hypothetical Examination of the Legion's Weaknesses
@@ -3062,7 +3368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1564,	-- Bloodsail Warlock
 					},
 					-- #else
-					["description"] = "This item has a chance to drop from any killed creature in the zone.",
+					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_KILLED",
 					-- #endif
 				}),
 				i(8494, {	-- Hyacinth Macaw (PET!)
@@ -3076,7 +3382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2546,	-- Fleet Master Firallon
 					},
 					-- #else
-					["description"] = "This item has a chance to drop from any killed creature in the zone.",
+					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_KILLED",
 					-- #endif
 					["timeline"] = { ADDED_1_11_1 },
 				}),

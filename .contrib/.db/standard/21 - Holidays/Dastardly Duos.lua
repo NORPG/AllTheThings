@@ -40,7 +40,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41995, {	-- Boot Hill
-					["description"] = "Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will will with 15 gravestones to the left and right of the entrance to count your progress.",
+					["description"] = createLocalizationString({
+						readable = "Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will will with 15 gravestones to the left and right of the entrance to count your progress.",
+						constant = "DIE_30_TIMES_WITHIN_ONE_MATCH_SOLO_OR",
+						export = true,
+						text = {
+							en = "Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will will with 15 gravestones to the left and right of the entrance to count your progress.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在一场比赛中单人累计或团队合计死亡 30 次，然后完成战斗并拾取奖励宝箱。竞技场入口左右两侧会出现 15 块墓碑，用来记录你的进度。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				ach(42002, {	-- Bullhorn of Plenty
 					["cost"] = { { "i",  237774, 5 } },	-- 5x Bullhorn of Calling

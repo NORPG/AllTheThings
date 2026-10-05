@@ -5,11 +5,28 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_PIRATE, {
-			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
+			["description"] = "~L.EVERY_WEEK_A_FACTION_INVADES_THE_ISLAND_THE",
 			["groups"] = {
 				petbattle(filter(BATTLE_PETS, {
 					pet(4710, {	-- Pillaged Parrot
-						["description"] = "Only spawns during Pirate invasion week.",
+						["description"] = createLocalizationString({
+							readable = "Only spawns during Pirate invasion week.",
+							constant = "ONLY_SPAWNS_DURING_PIRATE_INVASION_WEEK",
+							export = true,
+							text = {
+								en = "Only spawns during Pirate invasion week.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅在海盗入侵周刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				})),
 				n(QUESTS, {
@@ -110,7 +127,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				pickpocketing({
 					i(234232, {	-- Technique: Glyph of the Ashvane Pistol Shot (RECIPE!)
-						["description"] = "Can be pickpocketed from Pirates.",
+						["description"] = createLocalizationString({
+							readable = "Can be pickpocketed from Pirates.",
+							constant = "CAN_BE_PICKPOCKETED_FROM_PIRATES",
+							export = true,
+							text = {
+								en = "Can be pickpocketed from Pirates.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可从海盗身上偷窃获得。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 				n(RARES, sharedData({
@@ -130,7 +164,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				n(TREASURES, {
 					o(464233, {	-- Bilge Rat Supply Chest
 						-- Pirates
-						["description"] = "Key drops from First Mate Shellshock\n/att n:228582",
+						["description"] = createLocalizationString({
+							readable = "Key drops from First Mate Shellshock\n/att n:228582",
+							constant = "KEY_DROPS_FROM_FIRST_MATE_SHELLSHOCK_ATT_N",
+							export = true,
+							text = {
+								en = "Key drops from First Mate Shellshock\n/att n:228582",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "钥匙由大副碎贝掉落\n/att n:228582",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 62.4, 90.8, SIREN_ISLE },
 						["questID"] = 84529,
 						["cost"] = { { "i", 228621, 1 } },	-- Bilge Rat Supply Key
@@ -146,7 +197,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						q(84851, {	-- Tides of Greed
 							["groups"] = {
 								i(228646, {	-- Legendary Skipper's Citrine
-									["description"] = "Only counts for the achievement when looted from the respective World Quest.",
+									["description"] = "~L.ONLY_COUNTS_FOR_THE_ACHIEVEMENT_WHEN_LOOTED",
 								}),
 							},
 						}),
@@ -154,10 +205,44 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(ZONE_DROPS, {
 					i(233500, {	-- Crimson Snapdragon Treat (CI!)
-						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Pirates.",
+						["description"] = createLocalizationString({
+							readable = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Pirates.",
+							constant = "YOU_MUST_HAVE_THE_PRISMATIC_SNAPDRAGON_MOUNT_2",
+							export = true,
+							text = {
+								en = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Pirates.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你必须先拥有棱彩龙蜥坐骑，此物品才会掉落。\n\n可以从海盗身上拾取。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(166358, {	-- Proper Parrot (PET!)
-						["description"] = "Can be looted from Pirates.",
+						["description"] = createLocalizationString({
+							readable = "Can be looted from Pirates.",
+							constant = "CAN_BE_LOOTED_FROM_PIRATES",
+							export = true,
+							text = {
+								en = "Can be looted from Pirates.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可从海盗身上拾取。",
+								-- TODO: tw = "",
+							},
+						}),
 						["crs"] = {
 							229190,	-- Bert and Benny
 							229171,	-- Bicephalic Bill

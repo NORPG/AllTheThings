@@ -223,7 +223,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						24800,	-- A Victory For The Sunreavers [Blood Elves]
 						24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
 					},
-					["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
+					["description"] = createLocalizationString({
+						readable = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
+						constant = "YOU_WILL_BE_ABLE_TO_CHOOSE_ONE_OF_THESE_WEAPONS",
+						export = true,
+						text = {
+							en = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你交付职业/种族专属的胜利任务时，你将能够选择其中一把武器。无论你选择哪一把，你都会学会它们所有的幻化。",
+							-- TODO: tw = "",
+						},
+					}),
 					["maps"] = { NORTHREND_DALARAN },
 					["groups"] = {
 						i(50050),	-- Cudgel of Furious Justice
@@ -1954,7 +1971,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				applyclassicphase(WRATH_PHASE_THREE, q(14095, {	-- Identifying the Remains
-					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
+					["description"] = createLocalizationString({
+						readable = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
+						constant = "DEFEATING_THE_KRAKEN_DURING_CFFFFD700GET_KRAKEN",
+						export = true,
+						text = {
+							en = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在|cFFFFD700抓住海怪|r期间击败海怪即可获得该物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
 					["provider"] = { "i", 46955 },	-- Kraken Tooth
 					["isDaily"] = true,
@@ -3679,7 +3713,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
 				["groups"] = {
 					a(q(14443, {	-- The Battered Hilt (A)
-						["description"] = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
+						["description"] = createLocalizationString({
+							readable = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
+							constant = "THE_BATTERED_HILT_IS_A_SOMEWHAT_RARE_DROP_FROM",
+							export = true,
+							text = {
+								en = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "破损的剑柄是冰冠冰川地下城“灵魂熔炉”、“萨隆矿坑”和“映像大厅”中较为稀有的掉落物。此外它也可以在拍卖行购买。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 50379 },	-- Battered Hilt (A)
 						["coord"] = { 74.2, 31.2, ICECROWN },
 					})),
@@ -3732,7 +3783,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24454, {	-- Return To Caladis Brightspear
-						["description"] = "Turning in this quest triggers a lore exposition.",
+						["description"] = createLocalizationString({
+							readable = "Turning in this quest triggers a lore exposition.",
+							constant = "TURNING_IN_THIS_QUEST_TRIGGERS_A_LORE",
+							export = true,
+							text = {
+								en = "Turning in this quest triggers a lore exposition.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "交还此任务会触发一段剧情讲述。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
 						["qg"] = 36669,	-- Arcanist Tybalin
 						["qi"] = 49698,	-- Ancient Dragonforged Blades
@@ -3771,7 +3839,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24480, {	-- The Halls Of Reflection (A)
-						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",
+						["description"] = createLocalizationString({
+							readable = "Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",
+							constant = "JUST_ENTER_THE_INSTANCE_AND_A_SPECIAL_EVENT",
+							export = true,
+							text = {
+								en = "Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只需进入副本，特殊事件就会展开。无需与吉安娜交谈。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 24476,	-- Tempering The Blade (A)
 						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["coord"] = { 74.2, 31.2, ICECROWN },
@@ -3787,7 +3872,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24522, {	-- Journey To The Sunwell (A)
-						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+						["description"] = createLocalizationString({
+							readable = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+							constant = "IF_YOU_ACCIDENTALLY_ENTER_THE_RAID_BEFORE",
+							export = true,
+							text = {
+								en = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你在交任务之前不小心进入了团队副本，就必须使用炉石离开，或者穿过整个空荡的副本走到尽头的传送门。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
 						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["qi"] = 49870,	-- Tempered Quel'Delar
@@ -3864,7 +3966,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
 				["groups"] = {
 					q(24554, {	-- The Battered Hilt (H)
-						["description"] = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
+						["description"] = createLocalizationString({
+							readable = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
+							constant = "THE_BATTERED_HILT_IS_A_SOMEWHAT_RARE_DROP_FROM_2",
+							export = true,
+							text = {
+								en = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "破损的剑柄是冰冠冰川地下城“灵魂熔炉”、“萨隆矿坑”和“映像大厅”中较为稀有的掉落物。此外它也可以在拍卖行购买。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 50380 },	-- Battered Hilt (H)
 						["coord"] = { 74.2, 31.2, ICECROWN },
 					}),
@@ -3918,7 +4037,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24558, {	-- Return To Myralion Sunblaze
-						["description"] = "Turning in this quest triggers a lore exposition.",
+						["description"] = "~L.TURNING_IN_THIS_QUEST_TRIGGERS_A_LORE",
 						["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
 						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["qi"] = 49698,	-- Ancient Dragonforged Blades
@@ -3957,7 +4076,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24561, {	-- The Halls Of Reflection (H)
-						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",
+						["description"] = createLocalizationString({
+							readable = "Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",
+							constant = "JUST_ENTER_THE_INSTANCE_AND_A_SPECIAL_EVENT_2",
+							export = true,
+							text = {
+								en = "Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只需进入副本，特殊事件就会展开。无需与希尔瓦娜斯交谈。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 24560,	-- Tempering The Blade (H)
 						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["coord"] = { 74.2, 31.2, ICECROWN },
@@ -3973,7 +4109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24562, {	-- Journey To The Sunwell (H)
-						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+						["description"] = "~L.IF_YOU_ACCIDENTALLY_ENTER_THE_RAID_BEFORE",
 						["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
 						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["qi"] = 49870,	-- Tempered Quel'Delar
@@ -4182,7 +4318,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 								["timeline"] = { ADDED_8_1_0 },
 								["groups"] = {
 									i(164933, {	-- Sen'jin Beakblade Longrifle
-										["description"] = "This Horde item will be automatically learned after buying the Alliance version.",
+										["description"] = createLocalizationString({
+											readable = "This Horde item will be automatically learned after buying the Alliance version.",
+											constant = "THIS_HORDE_ITEM_WILL_BE_AUTOMATICALLY_LEARNED",
+											export = true,
+											text = {
+												en = "This Horde item will be automatically learned after buying the Alliance version.",
+												-- TODO: de = "",
+												-- TODO: es = "",
+												-- TODO: mx = "",
+												-- TODO: fr = "",
+												-- TODO: it = "",
+												-- TODO: ko = "",
+												-- TODO: pt = "",
+												-- TODO: ru = "",
+												cn = "购买联盟版本后，此部落物品会被自动学会。",
+												-- TODO: tw = "",
+											},
+										}),
 										["timeline"] = { ADDED_8_1_0 },
 									}),
 								},

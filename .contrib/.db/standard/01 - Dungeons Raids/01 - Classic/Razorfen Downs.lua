@@ -215,7 +215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27024, {	-- Partners in Crime
 					-- #if AFTER 6.0.2
-					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700Blackthorn's Lieutenants|r' (33513).",
+					["description"] = "~L.THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU",
 					-- #endif
 					["qg"] = 44837,	-- Koristrasza
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
@@ -246,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27009, {	-- The Coldbringer
 					-- #if AFTER 6.0.2
-					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700The Ritual|r' (33514).",
+					["description"] = "~L.THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_2",
 					-- #endif
 					["sourceQuests"] = {
 						27063,	-- Looming Threat [Alliance]
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				["maps"] = { SOUTHERN_BARRENS },
 				-- #endif
-				["description"] = "This is a rare that is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_THAT_IS_NOT_ALWAYS_PRESENT",
 				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #if BEFORE 6.0.2
@@ -360,18 +360,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Henry's Handbag (object)
-				["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
+				["description"] = "~L.HEAD_TO_THE_MURDER_PENS_AREA_AND_LOOK_FOR",
 				["groups"] = {
 					i(202691),	-- Henry's Handbag (Reagent Bag)
 					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
 				},
 			})),
 			n(8696, bubbleDownSelf({ ["timeline"] = { REMOVED_6_0_2 } }, {	-- Henry Stern
-				["description"] = "The only source of acquiring Goldthorn Tea.",
+				["description"] = "~L.THE_ONLY_SOURCE_OF_ACQUIRING_GOLDTHORN_TEA",
 				["groups"] = {
 					recipe(13028, {	-- Goldthorn Tea
 						-- #if AFTER 6.0.2
-						["description"] = "Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
+						["description"] = "~L.GOLDTHORN_TEA_WILL_STILL_TEASE_US_ON_OUR",
 						-- #endif
 					}),
 				},
@@ -451,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7354, {	-- Ragglesnout
-				["description"] = "This is a rare spawn that is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_SPAWN_THAT_IS_NOT_ALWAYS_PRESENT",
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10758),	-- X'caliboar

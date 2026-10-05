@@ -65,7 +65,24 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
 					["groups"] = {
 						i(208691, {	-- Argunite Cluster
-							["description"] = "Rewarded from any Allies of Arzaal after the questline. Contains a few random items related to Argus.",
+							["description"] = createLocalizationString({
+								readable = "Rewarded from any Allies of Arzaal after the questline. Contains a few random items related to Argus.",
+								constant = "REWARDED_FROM_ANY_ALLIES_OF_ARZAAL_AFTER_THE",
+								export = true,
+								text = {
+									en = "Rewarded from any Allies of Arzaal after the questline. Contains a few random items related to Argus.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在完成该任务线后由任何阿尔扎尔的盟友奖励。内含几件与阿古斯相关的随机物品。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sym"] = {{"select","itemID",
 								151718,	-- Argulite
 								151565,	-- Astral Glory

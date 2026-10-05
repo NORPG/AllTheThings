@@ -23,7 +23,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(QUESTS, {
 								q(64465, {	-- Adventurer: Enceladus
-									["description"] = "Requires Renown 62.",
+									["description"] = "~L.REQUIRES_RENOWN_62",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64466, {	-- Adventurer: Deathfang
-									["description"] = "Requires Renown 71.",
+									["description"] = "~L.REQUIRES_RENOWN_71",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62312, {	-- Adventurer: Gunn Gorgebone
-									["description"] = "Requires Renown 12.",
+									["description"] = "~L.REQUIRES_RENOWN_12",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -47,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62314, {	-- Adventurer: Khaliiq
-									["description"] = "Requires Renown 27.",
+									["description"] = "~L.REQUIRES_RENOWN_27",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -55,7 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64464, {	-- Adventurer: Lyra Hailstorm
-									["description"] = "Requires Renown 44.",
+									["description"] = "~L.REQUIRES_RENOWN_44",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62315, {	-- Adventurer: Plaguey
-									["description"] = "Requires Renown 33.",
+									["description"] = "~L.REQUIRES_RENOWN_33",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62316, {	-- Adventurer: Rathan
-									["description"] = "Requires Renown 38.",
+									["description"] = "~L.REQUIRES_RENOWN_38",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62313, {	-- Adventurer: Rencissa the Dynamo
-									["description"] = "Requires Renown 17.",
+									["description"] = "~L.REQUIRES_RENOWN_17",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 									["groups"] = {
@@ -87,7 +87,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(62309, {	-- Adventurer: Secutor Mevix
-									["description"] = "Requires Renown 4.",
+									["description"] = "~L.REQUIRES_RENOWN_4",
 									["sourceQuests"] = { 59603 },	-- In Shadowlands Service
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },

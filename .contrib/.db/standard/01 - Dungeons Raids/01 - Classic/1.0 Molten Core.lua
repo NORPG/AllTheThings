@@ -111,7 +111,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+						["description"] = createLocalizationString({
+							readable = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+							constant = "THIS_QUEST_BECOMES_AVAILABLE_ONCE_YOU_HAVE",
+							export = true,
+							text = {
+								en = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "一旦你拾取了两个逐风者禁锢之颅中的任意一个，此任务就会开放。\n\n警告：拾取后你最好立刻前往希利苏斯，因为只有你处于此任务状态下时，拉格纳罗斯才会掉落火焰之王的精华！",
+								-- TODO: tw = "",
+							},
+						}),
 						["qs"] = 19016,	-- Vessel of Rebirth
 						["coords"] = {
 							-- #if AFTER LEGION
@@ -156,7 +173,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 17771 },	-- Elementium Bar
 								-- #if SEASON_OF_DISCOVERY
 								-- #if BEFORE 1.15.4
-								["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
+								["description"] = createLocalizationString({
+									readable = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
+									constant = "NEITHER_THE_ELEMENTIUM_ORE_NOR_THE_RECIPE_FOR",
+									export = true,
+									text = {
+										en = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "在开放黑翼之巢之前，源质矿石以及熔炼这些锭的配方都还未加入游戏……在此期间，趁需求较低时先收集好所需的材料。",
+										-- TODO: tw = "",
+									},
+								}),
 								["cost"] = {
 									{ "i", 18562,  10 },	-- Elementium Ore
 									{ "i", 12360, 100 },	-- Arcanite Bar
@@ -176,7 +210,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["provider"] = { "i", 18564 },	-- Bindings of the Windseeker [Right]
 							}),
 							n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-								["description"] = "This is a 40-man raid boss.",
+								["description"] = createLocalizationString({
+									readable = "This is a 40-man raid boss.",
+									constant = "THIS_IS_A_40_MAN_RAID_BOSS",
+									export = true,
+									text = {
+										en = "This is a 40-man raid boss.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这是一个 40 人团队副本首领。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #if BEFORE MOP
 								["modelScale"] = 20,
 								-- #endif
@@ -279,7 +330,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 60,
 				})),
 				q(7487, {	-- Attunement to the Core [Old]
-					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					["description"] = createLocalizationString({
+						readable = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+						constant = "COMPLETE_THIS_QUEST_TO_BE_ABLE_TO_QUICKLY",
+						export = true,
+						text = {
+							en = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成该任务后，只需与洛索斯对话即可快速传送到熔火之心。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
 					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
@@ -392,7 +460,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
-					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					["description"] = createLocalizationString({
+						readable = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+						constant = "TO_FIND_VARTRUS_GO_TO_THE_IRONTREE_WOODS_IN",
+						export = true,
+						text = {
+							en = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要找到瓦特鲁斯，请前往费伍德森林的铁木森林，绿色污泥中央有一座小岛，岛上有个小丘，走上小丘瓦特鲁斯就会出现在你面前。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["coord"] = { 47.0, 24.48, FELWOOD },
 					["cost"] = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
@@ -422,13 +507,47 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence
-					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+					["description"] = createLocalizationString({
+						readable = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+						constant = "RETURN_TO_THE_DUKE_AT_HONORED_REPUTATION_AFTER",
+						export = true,
+						text = {
+							en = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "完成“敌人之手”任务后，在尊敬声望时回到公爵处，即可通过对话选项获得该物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 				}),
 				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
-					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+					["description"] = createLocalizationString({
+						readable = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+						constant = "RETURN_TO_THE_DUKE_AT_REVERED_REPUTATION_TO_BE",
+						export = true,
+						text = {
+							en = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在崇敬声望时回到公爵处，即可获得一个可以多次使用的精华版本。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
 					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
@@ -437,7 +556,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles
 					-- #if BEFORE CATA
-					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+					["description"] = createLocalizationString({
+						readable = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+						constant = "FOR_THIS_TO_DROP_YOU_MUST_BE_ON_THE_SCRYING",
+						export = true,
+						text = {
+							en = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要使其掉落，你必须处于“占卜护目镜？没问题！”任务中。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 				})),
@@ -576,7 +712,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(16822),	-- Nightslayer Pants (Rogue)
 					i(16814, {	-- Pants of Prophecy (Priest)
 						-- #if AFTER 7.3.5
-						["description"] = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
+						["description"] = createLocalizationString({
+							readable = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
+							constant = "FOR_BLIZZARD_TO_CONSIDER_THE_TIER_1_PRIEST_SET",
+							export = true,
+							text = {
+								en = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "为了让暴雪在幻化预览中将 T1 牧师套装视为已收集，你需要拾取这条特定的裤子。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 					}),
 					i(18824),	-- Magma Tempered Boots
@@ -709,7 +862,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(17074),	-- Shadowstrike
 					i(17223, {	-- Thunderstrike
-						["description"] = "Use Shadowstrike to create this item.",
+						["description"] = createLocalizationString({
+							readable = "Use Shadowstrike to create this item.",
+							constant = "USE_SHADOWSTRIKE_TO_CREATE_THIS_ITEM",
+							export = true,
+							text = {
+								en = "Use Shadowstrike to create this item.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用暗影打击来制造此物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 17074 },	-- Shadowstrike
 					}),
 					i(18878),	-- Sorcerous Dagger
@@ -773,7 +943,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = 60,
 					}),
 					i(18646, {	-- The Eye of Divinity
-						["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+						["description"] = createLocalizationString({
+							readable = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+							constant = "REAGENT_FOR_THE_SPLINTER_OF_NORDRASSIL_USED_BY",
+							export = true,
+							text = {
+								en = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "诺达希尔碎片的材料。牧师用它来制作祈福和咒逐。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 						["classes"] = { PRIEST },
 					}),
@@ -808,7 +995,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					i(19017, {	-- Essence of the Firelord
-						["description"] = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
+						["description"] = createLocalizationString({
+							readable = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
+							constant = "FOR_THIS_TO_DROP_YOU_MUST_BE_ON_THE_THUNDERAAN",
+							export = true,
+							text = {
+								en = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要使其掉落，你必须处于“逐风者桑德兰”任务中。",
+								-- TODO: tw = "",
+							},
+						}),
 						["classes"] = SWORD_CLASSES,
 						["b"] = 1,
 					}),
@@ -867,7 +1071,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				n(227819, {	-- Duke Hydraxis
 					["provider"] = { "n", 231178 },	-- Duke Hydraxis
-					["description"] = "Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",
+					["description"] = createLocalizationString({
+						readable = "Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",
+						constant = "SPEAK_TO_THE_DUKE_TO_TURN_UP_THE_HEAT_OR_LET",
+						export = true,
+						text = {
+							en = "Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "与公爵交谈来加大火力！（或者让你的团队领袖代劳也行……）\n\n他还出售 T2 套装的熔火锻造版本。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						cl(DRUID, {
 							-- DPS (Agility)
@@ -1515,7 +1736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228128),	-- Hammer of The Black Anvil
 					i(228272),	-- Shadowstrike
 					i(228273, {	-- Thunderstrike
-						["description"] = "Use Shadowstrike to create this item.",
+						["description"] = "~L.USE_SHADOWSTRIKE_TO_CREATE_THIS_ITEM",
 						["provider"] = { "i", 228272 },	-- Shadowstrike
 					}),
 					i(228263),	-- Sorcerous Dagger
@@ -1582,7 +1803,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						i(18646, {	-- The Eye of Divinity
-							["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+							["description"] = "~L.REAGENT_FOR_THE_SPLINTER_OF_NORDRASSIL_USED_BY",
 							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 							["classes"] = { PRIEST },
 						}),
@@ -1669,10 +1890,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228297),	-- Shard of the Flame
 				}),
 				n(227939, {	-- The Molten Core
-					["description"] = "Only available on Molten Heat difficulty.\n\nCan drop loot from any other Molten Core boss. It has no unique drops of its own.",
+					["description"] = createLocalizationString({
+						readable = "Only available on Molten Heat difficulty.\n\nCan drop loot from any other Molten Core boss. It has no unique drops of its own.",
+						constant = "ONLY_AVAILABLE_ON_MOLTEN_HEAT_DIFFICULTY_CAN",
+						export = true,
+						text = {
+							en = "Only available on Molten Heat difficulty.\n\nCan drop loot from any other Molten Core boss. It has no unique drops of its own.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅在熔火之热难度下可用。\n\n可以掉落其他任何熔火之心首领的战利品。它本身没有专属掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				spell(458843, {	-- Molten Heat [Heat Level 3]
-					["description"] = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' varients of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
+					["description"] = createLocalizationString({
+						readable = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' varients of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
+						constant = "YOU_CAN_OPT_INTO_HEAT_LEVEL_3_BY_SPEAKING_TO",
+						export = true,
+						text = {
+							en = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' varients of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你可以与海达克西斯公爵对话来开启热度等级 3。这样做会使武器掉落“熔火”版本，它们拥有很酷的熔岩外观，但品质上没有任何差异。（仅外观！）",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(228462, {	-- Aurastone Hammer [Molten]
 							["cr"] = 228432,	-- Garr
@@ -1758,7 +2013,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 228430,	-- Magmadar
 						}),
 						i(229381, {	-- Thunderstrike [Molten]
-							["description"] = "Use Shadowstrike to create this item.",
+							["description"] = "~L.USE_SHADOWSTRIKE_TO_CREATE_THIS_ITEM",
 							["provider"] = { "i", 229380 },	-- Shadowstrike [Molten]
 						}),
 					},

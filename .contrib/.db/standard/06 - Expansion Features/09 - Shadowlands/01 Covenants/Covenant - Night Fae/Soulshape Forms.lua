@@ -22,7 +22,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(64982, {	-- Cat (Well-Fed) Soul
 				["name"] = "Cat (Well-Fed) Soul",
-				["description"] = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
+				["description"] = createLocalizationString({
+					readable = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
+					constant = "AFTER_OBTAINING_THE_CAT_SOUL_GRAB_A",
+					export = true,
+					text = {
+						en = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "获得猫魂后，在雷文德斯 |cFFFFFFFF63.75, 61.69|r 处拿取一份 |cFFFFFFFF幽灵饲料|r。然后带着它返回森林之心，前往楼下的女王温室传送门。\n在传送门旁找到 |cFFFFFFFF玛奥|r，并对他们使用 |cFFFFFFFF/meow|r。然后在选中他们的同时从背包中使用 |cFFFFFFFF幽灵饲料|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["icon"] = 656577,
 				["sourceQuests"] = { 64961 },	-- Cat Soul
 				["qg"] = 182093,	-- Ma'oh
@@ -34,19 +51,70 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(64939, {	-- Choofa/Squirrel Soul
 				["name"] = "Choofa/Squirrel Soul",
-				["description"] = "Talk to Choofa in the covenant sanctum.",
+				["description"] = createLocalizationString({
+					readable = "Talk to Choofa in the covenant sanctum.",
+					constant = "TALK_TO_CHOOFA_IN_THE_COVENANT_SANCTUM",
+					export = true,
+					text = {
+						en = "Talk to Choofa in the covenant sanctum.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在盟约圣所中与楚法交谈。",
+						-- TODO: tw = "",
+					},
+				}),
 				["icon"] = 645526,
 			}),
 			applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, q(65024, {	-- Cloud Serpent Soul
 				["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
 			})),
 			pvp(q(64651, {	-- Cobra Soul
-				["description"] = "Drops from rated PvP.",
+				["description"] = createLocalizationString({
+					readable = "Drops from rated PvP.",
+					constant = "DROPS_FROM_RATED_PVP",
+					export = true,
+					text = {
+						en = "Drops from rated PvP.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由评级 PvP 掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 182167 },	-- Cobra Soul
 			})),
 			q(64938, {	-- Corgi Soul
 				["name"] = "Corgi Soul",
-				["description"] = "Emote |cFFFFFFFF/pet|r on the little corgi named Sparkle running around the night fae covenant sanctum.",
+				["description"] = createLocalizationString({
+					readable = "Emote |cFFFFFFFF/pet|r on the little corgi named Sparkle running around the night fae covenant sanctum.",
+					constant = "EMOTE_CFFFFFFFF_PET_R_ON_THE_LITTLE_CORGI_NAMED",
+					export = true,
+					text = {
+						en = "Emote |cFFFFFFFF/pet|r on the little corgi named Sparkle running around the night fae covenant sanctum.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "对法夜盟约圣所里跑来跑去、名叫“闪闪”的小柯基使用|cFFFFFFFF/pet|r表情。",
+						-- TODO: tw = "",
+					},
+				}),
 				["icon"] = 1339013,
 				["crs"] = { 174608 },	-- Sparkle
 			}),
@@ -72,7 +140,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "i", 187880 },	-- Goat Soul
 			}),
 			pvp(q(62426, {	-- Gryphon Soul
-				["description"] = "Drops from rated PvP.",
+				["description"] = "~L.DROPS_FROM_RATED_PVP",
 				["provider"] = { "i", 182170 },	-- Gryphon Soul
 			})),
 			q(62421, {	-- Gulper Soul
@@ -85,7 +153,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "i", 182171 },	-- Hippogryph Soul
 			}),
 			q(64650, {	-- Hyena Soul
-				["description"] = "Drops from Mythic Dungeons.",
+				["description"] = createLocalizationString({
+					readable = "Drops from Mythic Dungeons.",
+					constant = "DROPS_FROM_MYTHIC_DUNGEONS",
+					export = true,
+					text = {
+						en = "Drops from Mythic Dungeons.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由史诗地下城掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 182173 },	-- Hyena Soul
 			}),
 			applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, q(65023, {	-- Jormungar Soul
@@ -150,7 +235,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- ["crs"] = { 168647 },	-- Valfir the Unrelenting
 			}),
 			pvp(q(63604, {	-- Shoveltusk Soul
-				["description"] = "Drops from PvP.",	-- Comp Stomp 2 Nov 2021
+				["description"] = createLocalizationString({
+					readable = "Drops from PvP.",
+					constant = "DROPS_FROM_PVP",
+					export = true,
+					text = {
+						en = "Drops from PvP.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由 PvP 掉落。",
+						-- TODO: tw = "",
+					},
+				}),	-- Comp Stomp 2 Nov 2021
 				["provider"] = { "i", 185048 },	-- Shoveltusk Soul
 			})),
 			q(62436, {	-- Shrieker Soul
@@ -189,7 +291,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- ["crs"] = { 164415 },	-- Skuld Vit
 			}),
 			pvp(q(62440, {	-- Wyvern Soul
-				["description"] = "Drops from random battlegrounds.",
+				["description"] = createLocalizationString({
+					readable = "Drops from random battlegrounds.",
+					constant = "DROPS_FROM_RANDOM_BATTLEGROUNDS",
+					export = true,
+					text = {
+						en = "Drops from random battlegrounds.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "由随机战场掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 182184 },	-- Wyvern Soul
 			})),
 			q(63603, {	-- Yak Soul

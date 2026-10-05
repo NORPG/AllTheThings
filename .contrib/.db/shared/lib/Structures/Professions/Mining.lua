@@ -143,7 +143,24 @@ MOP_MINING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = {
 	r(102167),	-- Smelt Trillium
 }));
 DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This can drop from any ore gathering node on Draenor.",
+	["description"] = createLocalizationString({
+		readable = "This can drop from any ore gathering node on Draenor.",
+		constant = "THIS_CAN_DROP_FROM_ANY_ORE_GATHERING_NODE_ON",
+		export = true,
+		text = {
+			en = "This can drop from any ore gathering node on Draenor.",
+			-- TODO: de = "",
+			-- TODO: es = "",
+			-- TODO: mx = "",
+			-- TODO: fr = "",
+			-- TODO: it = "",
+			-- TODO: ko = "",
+			-- TODO: pt = "",
+			-- TODO: ru = "",
+			cn = "这可以从德拉诺的任意矿石采集节点掉落。",
+			-- TODO: tw = "",
+		},
+	}),
 	["groups"] = {
 		r(158754, {	-- Mining (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

@@ -35,7 +35,24 @@ root(ROOTS.Holidays, {
 		},
 		["groups"] = {
 			i(13756, {	-- Raw Summer Bass
-				["description"] = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",
+				["description"] = createLocalizationString({
+					readable = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",
+					constant = "CAN_BE_CAUGHT_IN_OPEN_SEA_WATER_IN_AZSHARA",
+					export = true,
+					text = {
+						en = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "3 月 20 日至 9 月 22 日期间，可在艾萨拉、塔纳利斯、辛特兰、菲拉斯和荆棘谷的远海海水中钓到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		},
 	})),
@@ -71,7 +88,24 @@ root(ROOTS.Holidays, {
 		},
 		["groups"] = {
 			i(13755, {	-- Winter Squid
-				["description"] = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
+				["description"] = createLocalizationString({
+					readable = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
+					constant = "CAN_BE_CAUGHT_IN_OPEN_SEA_WATER_IN_AZSHARA_2",
+					export = true,
+					text = {
+						en = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "9 月 23 日至 3 月 20 日期间，可在艾萨拉、塔纳利斯、辛特兰、菲拉斯和荆棘谷的远海海水中钓到。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		},
 	})),

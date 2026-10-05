@@ -412,7 +412,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["cr"] = 3986,	-- Sarilus Foulborne
 						}),
 						i(5816, {	-- Light of Elune
-							["description"] = "Single use. Save this for AQ40 or Naxx.",
+							["description"] = createLocalizationString({
+								readable = "Single use. Save this for AQ40 or Naxx.",
+								constant = "SINGLE_USE_SAVE_THIS_FOR_AQ40_OR_NAXX",
+								export = true,
+								text = {
+									en = "Single use. Save this for AQ40 or Naxx.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "一次性使用。留到安其拉神殿或纳克萨玛斯再用。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -578,7 +595,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 								{ "i", 5519 },	-- Iron Pommel
 								{ "o", 19021 },	-- Rusty Chest
 							},
-							["description"] = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
+							["description"] = createLocalizationString({
+								readable = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
+								constant = "WHEN_YOU_KILL_A_SLIME_IT_CAN_DROP_A_RUSTY_CHEST",
+								export = true,
+								text = {
+									en = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "当你杀死一只软泥怪时，它可能会掉落一个生锈的箱子，里面可能装有此物品。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cr"] = 3928,	-- Rotting Slime
 						}),
 					},
@@ -655,7 +689,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						objective(2, {	-- 0/1 Dartol's Rod of Transformation
 							["provider"] = { "i", 5462 },	-- Dartol's Rod of Transformation
-							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
+							["description"] = createLocalizationString({
+								readable = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
+								constant = "THERE_S_A_TRICK_TO_KEEP_THIS_ITEM_FOREVER",
+								export = true,
+								text = {
+									en = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "有一个可以永久保留此物品的技巧：\n在向雷恩交任务之前，先摧毁该物品。向雷恩索要回它。然后交任务。该物品会从你的背包中被移除。但由于你已经摧毁了第一个，之后你就可以使用暴雪物品恢复工具找回被摧毁的法杖。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(5815),	-- Glacial Stone
 						i(17046),	-- Gutterblade
@@ -1442,7 +1493,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(1351, {	-- Fingerbone Bracers
-					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item.",
+					["description"] = createLocalizationString({
+						readable = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item.",
+						constant = "THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO",
+						export = true,
+						text = {
+							en = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "由于掉落此物品的生物的阵营归属，只有联盟玩家能自然获得此物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 75.8, 73.6, MAP.ASHENVALE },
 						{ 77.4, 75.4, MAP.ASHENVALE },

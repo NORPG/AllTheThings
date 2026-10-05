@@ -388,7 +388,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(77236, {	-- When Time Needs Mending
-						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
+						["description"] = createLocalizationString({
+							readable = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
+							constant = "CAN_BE_COMPLETED_ONCE_PER_ACCOUNT_PER_WEEK_NOTE",
+							export = true,
+							text = {
+								en = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "每个账号每周可完成一次。\n\n注意：此任务处于激活状态时，任何在此任务激活期间登录的角色都无法接取“援助索莉多米”(77679)。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coords"] = {

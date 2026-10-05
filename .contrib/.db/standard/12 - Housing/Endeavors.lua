@@ -486,7 +486,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
 					i(253802, {	-- Deed of Patronage
-						["description"] = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
+						["description"] = createLocalizationString({
+							readable = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
+							constant = "ONCE_YOU_VE_PURCHASED_THIS_ITEM_YOU_CAN_TALK_TO",
+							export = true,
+							text = {
+								en = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "购买此物品后，你可以与《午夜》银月城中的赫斯塔·福拉斯（/att n:252916）交谈以购买画作。\n\n你可以放心删除此物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "c", COMMUNITY_COUPONS, 30 } },
 					}),
 				},
@@ -508,12 +525,29 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		n(TORTOLLAN_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(ACHIEVEMENTS, {
 				ach(63605, {	-- Souvenir Seeker, Founder's Point (Automated)
-					["description"] = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+					["description"] = createLocalizationString({
+						readable = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+						constant = "THERE_ARE_60_HIDDEN_SOUVENIRS_THAT_YOU_MUST",
+						export = true,
+						text = {
+							en = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你的社区中有 60 个“隐藏”的纪念品需要寻找。你可以自己找，也可以请“塔吉”激活你邻居已找到的纪念品在小地图上的位置。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cr"] = 272031,	-- Taggi <Chief Hider>
 					["coord"] = { 52.0, 38.2, FOUNDERS_POINT },
 				}),
 				ach(63441, {	-- Souvenir Seeker, Razorwind Shores (Automated)
-					["description"] = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+					["description"] = "~L.THERE_ARE_60_HIDDEN_SOUVENIRS_THAT_YOU_MUST",
 					["cr"] = 272031,	-- Taggi <Chief Hider>
 					["coord"] = { 54.6, 57.7, RAZORWIND_SHORES },
 				}),
@@ -570,7 +604,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 64.4, 51.1, FOUNDERS_POINT },
 				}),
 				n(266687, {	-- Secret Souvenir (14)
-					["description"] = "In an underwater cave.",
+					["description"] = "~L.IN_AN_UNDERWATER_CAVE",
 					["coords"] = {
 						{ 64.6, 57.6, FOUNDERS_POINT },	-- Cave Entrance
 						{ 67.3, 57.7, FOUNDERS_POINT },	-- Secret Souvenir
@@ -595,7 +629,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 47.3, 61.8, FOUNDERS_POINT },
 				}),
 				n(266694, {	-- Secret Souvenir (21)
-					["description"] = "The only way to get this Souvenir is to be extremely precise in your 'landing' on the plank JUST above it or switching your Flight Style.",
+					["description"] = createLocalizationString({
+						readable = "The only way to get this Souvenir is to be extremely precise in your 'landing' on the plank JUST above it or switching your Flight Style.",
+						constant = "THE_ONLY_WAY_TO_GET_THIS_SOUVENIR_IS_TO_BE",
+						export = true,
+						text = {
+							en = "The only way to get this Souvenir is to be extremely precise in your 'landing' on the plank JUST above it or switching your Flight Style.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "获得这个纪念品的唯一方法，是极其精确地“降落”在它正上方的那块木板上，或者切换你的飞行风格。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 46.7, 59.0, FOUNDERS_POINT },
 				}),
 				n(266695, {	-- Secret Souvenir (22)
@@ -611,7 +662,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 37.7, 57.0, FOUNDERS_POINT },
 				}),
 				n(266699, {	-- Secret Souvenir (26)
-					["description"] = "Pop the Balloon inside the Toy Vendor's Shop.",
+					["description"] = createLocalizationString({
+						readable = "Pop the Balloon inside the Toy Vendor's Shop.",
+						constant = "POP_THE_BALLOON_INSIDE_THE_TOY_VENDOR_S_SHOP",
+						export = true,
+						text = {
+							en = "Pop the Balloon inside the Toy Vendor's Shop.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "戳破玩具商人商店里的气球。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 42.1, 43.0, FOUNDERS_POINT },
 					["cr"] = 270647,	-- Balloon
 				}),
@@ -688,7 +756,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 57.1, 38.8, FOUNDERS_POINT },
 				}),
 				n(266724, {	-- Secret Souvenir (51)
-					["description"] = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+					["description"] = createLocalizationString({
+						readable = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+						constant = "THIS_SOUVENIR_WILL_APPEAR_AT_THE_WATERFALL_AT",
+						export = true,
+						text = {
+							en = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这个纪念品会出现在石维利山脊的瀑布处，并随水流向下漂流。一旦它被冲上岸并被一只始祖龟幼崽拿走，它就会消失。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 61.9, 43.9, FOUNDERS_POINT },	-- Waterfall, Start point
 						{ 55.3, 50.3, FOUNDERS_POINT },	-- Bridge, Mid point
@@ -696,25 +781,110 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(266725, {	-- Secret Souvenir (52)
-					["description"] = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
+					["description"] = createLocalizationString({
+						readable = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",
+						constant = "THIS_SOUVENIR_REQUIRES_USAGE_OF_A_WATER_BASED",
+						export = true,
+						text = {
+							en = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这个纪念品需要你对“可疑的干燥土壤”使用水系范围法术，例如德鲁伊的繁茂、萨满的奔涌图腾或法师的暴风雪。",
+							-- TODO: tw = "",
+						},
+					}),	-- This is bull$#!+
 					["cr"] = 272966,	-- Suspiciously Dry Soil
 					["coord"] = { 39.1, 31.3, FOUNDERS_POINT },
 				}),
 				n(266726, {	-- Secret Souvenir (53)
-					["description"] = "This Souvenir can be found in the back of Kirt's Public Carriage.",
+					["description"] = createLocalizationString({
+						readable = "This Souvenir can be found in the back of Kirt's Public Carriage.",
+						constant = "THIS_SOUVENIR_CAN_BE_FOUND_IN_THE_BACK_OF_KIRT",
+						export = true,
+						text = {
+							en = "This Souvenir can be found in the back of Kirt's Public Carriage.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此纪念品可以在基尔特的公共马车后部找到。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cr"] = 242053,	-- Public Carriage
 					["maps"] = { FOUNDERS_POINT },
 				}),
 				n(266727, {	-- Secret Souvenir (54)
-					["description"] = "On a turtle who may waddle around a bit...",
+					["description"] = createLocalizationString({
+						readable = "On a turtle who may waddle around a bit...",
+						constant = "ON_A_TURTLE_WHO_MAY_WADDLE_AROUND_A_BIT",
+						export = true,
+						text = {
+							en = "On a turtle who may waddle around a bit...",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在一只可能会四处摇摆走动的海龟上……",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 60.3, 52.5, FOUNDERS_POINT },
 				}),
 				n(266728, {	-- Secret Souvenir (55)
-					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
+					["description"] = createLocalizationString({
+						readable = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
+						constant = "AREA_WIDE_SPAWN_IF_YOU_DON_T_SEE_THE_SOUVENIR",
+						export = true,
+						text = {
+							en = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "全区域刷新。如果你没有看到纪念品，就照该区域的提示做：“稍作停留，闪闪发光”。坐在中间的海滩椅上放松。附近的地热喷泉会喷出纪念品……最终会的……",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 36.8, 46.8, FOUNDERS_POINT },
 				}),
 				n(266729, {	-- Secret Souvenir (56)
-					["description"] = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+					["description"] = createLocalizationString({
+						readable = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+						constant = "THIS_SOUVENIR_CAN_BE_FOUND_FLYING_AROUND_THE",
+						export = true,
+						text = {
+							en = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这个纪念品会乘着风筝在社区上空飞行。用你的飞行坐骑撞向风筝，迫使它降落到地面。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cr"] = 270577,	-- Seeker's Kite
 					["maps"] = { FOUNDERS_POINT },
 				}),
@@ -722,17 +892,68 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 62.1, 82.2, FOUNDERS_POINT },
 				}),
 				n(266731, {	-- Secret Souvenir (58)
-					["description"] = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["description"] = createLocalizationString({
+						readable = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+						constant = "READ_SCROLL_OF_THE_SALTY_SOUVENIR_EAST_AT_THIS",
+						export = true,
+						text = {
+							en = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在此位置阅读“咸味纪念品卷轴：东”。你可以在社区中心的拉达处购买该卷轴。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
 					["coords"] = { 77.5, 54.0, FOUNDERS_POINT },
 				}),
 				n(266732, {	-- Secret Souvenir (59)
-					["description"] = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["description"] = createLocalizationString({
+						readable = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+						constant = "READ_SCROLL_OF_THE_SALTY_SOUVENIR_WEST_AT_THIS",
+						export = true,
+						text = {
+							en = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在此位置阅读“咸味纪念品卷轴：西”。你可以在社区中心的拉达处购买该卷轴。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
 					["coord"] = { 19.6, 42.6, FOUNDERS_POINT },
 				}),
 				n(266734, {	-- Secret Souvenir (60)
-					["description"] = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["description"] = createLocalizationString({
+						readable = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+						constant = "READ_SCROLL_OF_THE_SALTY_SOUVENIR_SOUTH_AT_THIS",
+						export = true,
+						text = {
+							en = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在此位置阅读“咸味纪念品卷轴：南”。你可以在社区中心的拉达处购买该卷轴。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
 					["coords"] = { 55.8, 85.1, FOUNDERS_POINT },
 				}),
@@ -774,7 +995,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 69.0, 76.0, RAZORWIND_SHORES },
 				}),
 				n(266624, {	-- Secret Souvenir (12)
-					["description"] = "Read the scroll to learn how operate the ladders. When you approach the ladders, you will get an 'Extra Action Button'. Use it.",
+					["description"] = createLocalizationString({
+						readable = "Read the scroll to learn how operate the ladders. When you approach the ladders, you will get an 'Extra Action Button'. Use it.",
+						constant = "READ_THE_SCROLL_TO_LEARN_HOW_OPERATE_THE",
+						export = true,
+						text = {
+							en = "Read the scroll to learn how operate the ladders. When you approach the ladders, you will get an 'Extra Action Button'. Use it.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "阅读卷轴以了解如何操作梯子。当你靠近梯子时，会获得一个“额外动作按钮”。使用它。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "o", 656134 },	-- No Wrong Rung: A Quick Start Guide to Laddering
 					["coord"] = { 62.2, 90.2, RAZORWIND_SHORES },
 				}),
@@ -782,7 +1020,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 61.5, 89.9, RAZORWIND_SHORES },
 				}),
 				n(266626, {	-- Secret Souvenir (14)
-					["description"] = "Souvenir is hidden inside Shark's mount.",
+					["description"] = createLocalizationString({
+						readable = "Souvenir is hidden inside Shark's mount.",
+						constant = "SOUVENIR_IS_HIDDEN_INSIDE_SHARK_S_MOUNT",
+						export = true,
+						text = {
+							en = "Souvenir is hidden inside Shark's mount.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "纪念品藏在鲨鱼的坐骑里。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 54.5, 81.6, RAZORWIND_SHORES },
 				}),
 				n(266627, {	-- Secret Souvenir (15)
@@ -801,7 +1056,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 43.7, 50.7, RAZORWIND_SHORES },
 				}),
 				n(266632, {	-- Secret Souvenir (20)
-					["description"] = "Inside the cave, behind the waterfall.",
+					["description"] = "~L.INSIDE_THE_CAVE_BEHIND_THE_WATERFALL",
 					["coords"] = {
 						{ 39.9, 57.9, RAZORWIND_SHORES },	-- Cave Entrance
 						{ 39.3, 57.8, RAZORWIND_SHORES },	-- Secret Souvenir
@@ -832,7 +1087,24 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 51.1, 89.9, RAZORWIND_SHORES },
 				}),
 				n(266641, {	-- Secret Souvenir (29)
-					["description"] = "Inside the house, op top of the shelf left of the entrance.",
+					["description"] = createLocalizationString({
+						readable = "Inside the house, op top of the shelf left of the entrance.",
+						constant = "INSIDE_THE_HOUSE_OP_TOP_OF_THE_SHELF_LEFT_OF",
+						export = true,
+						text = {
+							en = "Inside the house, op top of the shelf left of the entrance.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在屋内，入口左侧架子的最上层。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 64.1, 69.5, RAZORWIND_SHORES },
 				}),
 				n(266642, {	-- Secret Souvenir (30)
@@ -899,7 +1171,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 53.5, 54.5, RAZORWIND_SHORES },
 				}),
 				n(266663, {	-- Secret Souvenir (51)
-					["description"] = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+					["description"] = "~L.THIS_SOUVENIR_WILL_APPEAR_AT_THE_WATERFALL_AT",
 					["coords"] = {
 						{ 54.9, 42.8, RAZORWIND_SHORES },	-- Waterfall, Start point
 						{ 56.0, 51.1, RAZORWIND_SHORES },	-- Waterfall, 2/4 point
@@ -908,44 +1180,78 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(266664, {	-- Secret Souvenir (52)
-					["description"] = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
+					["description"] = "~L.THIS_SOUVENIR_REQUIRES_USAGE_OF_A_WATER_BASED",	-- This is bull$#!+
 					["cr"] = 272966,	-- Suspiciously Dry Soil
 					["coord"] = { 47.2, 59.7, RAZORWIND_SHORES },
 				}),
 				n(266665, {	-- Secret Souvenir (53)
-					["description"] = "This Souvenir can be found in the back of Communal Cart.",
+					["description"] = createLocalizationString({
+						readable = "This Souvenir can be found in the back of Communal Cart.",
+						constant = "THIS_SOUVENIR_CAN_BE_FOUND_IN_THE_BACK_OF",
+						export = true,
+						text = {
+							en = "This Souvenir can be found in the back of Communal Cart.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此纪念品可以在公共货车的后部找到。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cr"] = 256645,	-- Communal Cart
 					["maps"] = { RAZORWIND_SHORES },
 				}),
 				n(266666, {	-- Secret Souvenir (54)
-					["description"] = "On a turtle who may waddle around a bit...",
+					["description"] = "~L.ON_A_TURTLE_WHO_MAY_WADDLE_AROUND_A_BIT",
 					["coords"] = { 67.8, 55.5, RAZORWIND_SHORES },
 				}),
 				n(266667, {	-- Secret Souvenir (55)
-					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
+					["description"] = "~L.AREA_WIDE_SPAWN_IF_YOU_DON_T_SEE_THE_SOUVENIR",
 					["coord"] = { 52.6, 73.1, RAZORWIND_SHORES },
 				}),
 				n(266668, {	-- Secret Souvenir (56)
-					["description"] = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+					["description"] = "~L.THIS_SOUVENIR_CAN_BE_FOUND_FLYING_AROUND_THE",
 					["cr"] = 267939,	-- Seeker's Kite
 					["maps"] = { RAZORWIND_SHORES },
 				}),
 				n(266669, {	-- Secret Souvenir (57)
-					["description"] = "Under the bartender, in the body of the ship.",
+					["description"] = createLocalizationString({
+						readable = "Under the bartender, in the body of the ship.",
+						constant = "UNDER_THE_BARTENDER_IN_THE_BODY_OF_THE_SHIP",
+						export = true,
+						text = {
+							en = "Under the bartender, in the body of the ship.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在船体内的酒保下方。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 39.2, 73.8, RAZORWIND_SHORES },
 				}),
 				n(266670, {	-- Secret Souvenir (58)
-					["description"] = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["description"] = "~L.READ_SCROLL_OF_THE_SALTY_SOUVENIR_EAST_AT_THIS",
 					["cost"] = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
 					["coords"] = { 75.2, 48.4, RAZORWIND_SHORES },
 				}),
 				n(266671, {	-- Secret Souvenir (59)
-					["description"] = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["description"] = "~L.READ_SCROLL_OF_THE_SALTY_SOUVENIR_WEST_AT_THIS",
 					["cost"] = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
 					["coord"] = { 26.3, 33.3, RAZORWIND_SHORES },
 				}),
 				n(266672, {	-- Secret Souvenir (60)
-					["description"] = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					["description"] = "~L.READ_SCROLL_OF_THE_SALTY_SOUVENIR_SOUTH_AT_THIS",
 					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
 					["coords"] = { 56.1, 95.0, RAZORWIND_SHORES },
 				}),

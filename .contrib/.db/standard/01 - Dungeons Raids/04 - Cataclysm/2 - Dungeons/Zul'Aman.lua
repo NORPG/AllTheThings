@@ -65,13 +65,47 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 							["groups"] = {
 								i(33926, {	-- Sealed Scroll Case
-									["description"] = "Can contain profession recipes.",	-- Only applies for the TBC version of Zul'Aman.
+									["description"] = createLocalizationString({
+										readable = "Can contain profession recipes.",
+										constant = "CAN_CONTAIN_PROFESSION_RECIPES",
+										export = true,
+										text = {
+											en = "Can contain profession recipes.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "可能包含专业配方。",
+											-- TODO: tw = "",
+										},
+									}),	-- Only applies for the TBC version of Zul'Aman.
 								}),
 							},
 						}),
 						-- #endif
 						n(52924, {	-- Vol'jin (Not a Vendor, but a placeholder for information.)
-							["description"] = "To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates.",
+							["description"] = createLocalizationString({
+								readable = "To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates.",
+								constant = "TO_OPEN_THE_GATES_YOU_HAVE_TO_TELL_VOL_JIN_YOU",
+								export = true,
+								text = {
+									en = "To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "要打开大门，你必须告诉沃金你已准备好开启大门，然后在锣变为可互动时*只点一次*。你的角色会持续自动敲击它，沃金就会打开大门。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					}),
 					n(ZONE_DROPS, {
@@ -154,7 +188,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(69799),	-- Quickfinger Ring
 					}),
 					n(24396, {	-- Forest Frog
-						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to get vendors and bags of gold, as well as have Mojo spawn and hop into your bags.",
+						["description"] = createLocalizationString({
+							readable = "Use an Amani Hex Stick on a Forest Frog for a chance to get vendors and bags of gold, as well as have Mojo spawn and hop into your bags.",
+							constant = "USE_AN_AMANI_HEX_STICK_ON_A_FOREST_FROG_FOR_A_2",
+							export = true,
+							text = {
+								en = "Use an Amani Hex Stick on a Forest Frog for a chance to get vendors and bags of gold, as well as have Mojo spawn and hop into your bags.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "对一只森林蛙使用阿曼尼妖术棒，有机会获得商人和金币袋，还能让魔精刷出并跳进你的背包。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 						["groups"] = {
 							i(33993, {	-- Mojo (PET!)
@@ -205,7 +256,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 					}),
 					n(ZULAMAN_TIMED_EVENT, {
-						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\nKilling Nalorakk (bear) will add 5 minutes to your timer.\nKilling Akil'zon (eagle) will add 5 minutes to your timer.\nOther bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue, and spawns in containers near the hostage's cage upon release.",
+						["description"] = createLocalizationString({
+							readable = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\nKilling Nalorakk (bear) will add 5 minutes to your timer.\nKilling Akil'zon (eagle) will add 5 minutes to your timer.\nOther bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue, and spawns in containers near the hostage's cage upon release.",
+							constant = "ENTER_THE_INSTANCE_AND_TALK_TO_VOL_JIN_TO_START",
+							export = true,
+							text = {
+								en = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\nKilling Nalorakk (bear) will add 5 minutes to your timer.\nKilling Akil'zon (eagle) will add 5 minutes to your timer.\nOther bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue, and spawns in containers near the hostage's cage upon release.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "进入副本并与沃金交谈，以开始事件并打开大门。你现在有 15 分钟的时间击败任意一个你想先打的动物首领。任何神灵首领都可以，没有顺序要求，但其中两个会为计时器增加额外时间。\n\n击杀纳洛拉克（熊）会为你的计时器增加 5 分钟。\n击杀埃基尔松（鹰）会为你的计时器增加 5 分钟。\n其他首领不会提供额外时间。\n\n事件掉落的战利品取决于你救出的俘虏数量，并在俘虏获释时在其笼子附近的容器中生成。",
+								-- TODO: tw = "",
+							},
+						}),
 						["nomerge"] = true,
 						["groups"] = {
 							n(ZULAMAN_CHEST_1, {
@@ -226,7 +294,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 								i(69589),	-- Leggings of Dancing Blades
 							}),
 							n(ZULAMAN_CHEST_4, {
-								["description"] = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
+								["description"] = createLocalizationString({
+									readable = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
+									constant = "THIS_ITEM_IS_FOUND_IN_THE_PRISONER_S_LOOT_CHEST",
+									export = true,
+									text = {
+										en = "This item is found in the prisoner's loot chest associated with the fourth animal boss you defeat within the time limit of the event.\n\nOnly one player can receive this within a given instance lockout.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "此物品位于囚徒的战利品宝箱中，该宝箱与你在活动限时内击败的第四个动物首领相关。\n\n在一次副本锁定中，只有一名玩家能获得它。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									ach(5858),	-- Bear-ly Made It
 									i(69747),	-- Amani Battle Bear (MOUNT!)

@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures,
 							crit(26050, { ["races"] = HORDE_ONLY }),	-- Entangling an Elekk
 						}),
 						ach(9526, {	-- Master of Mounts
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
 							["groups"] = {
 								i(112003),	-- Stables, Level 3 [Blueprints]
 								crit(26064, { ["races"] = ALLIANCE_ONLY }),	-- Wolf Trained

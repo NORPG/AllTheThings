@@ -1320,7 +1320,24 @@ root(ROOTS.Zones, {
 		}))),
 		ach(5518, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire
 			-- #IF AFTER MOP
-			["description"] = "Achievement can be completed in Dragon Soul.",
+			["description"] = createLocalizationString({
+				readable = "Achievement can be completed in Dragon Soul.",
+				constant = "ACHIEVEMENT_CAN_BE_COMPLETED_IN_DRAGON_SOUL",
+				export = true,
+				text = {
+					en = "Achievement can be completed in Dragon Soul.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "该成就可以在巨龙之魂中完成。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #ENDIF
 			["maps"] = {
 				-- #IF BEFORE MOP
@@ -1532,7 +1549,24 @@ root(ROOTS.Zones, {
 			},
 		}),
 		ach(1206, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- To All The Squirrels I've Loved Before
-			["description"] = "|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",
+			["description"] = createLocalizationString({
+				readable = "|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",
+				constant = "CFFE50D12THE_PETS_IN_THIS_ACHIEVEMENT_CANNOT_BE",
+				export = true,
+				text = {
+					en = "|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "|cFFE50D12由于暴雪的原因，ATT 无法正确追踪该成就中的宠物。等所有宠物都收到 /love 后，该成就将重新被正确追踪。|r",
+					-- TODO: tw = "",
+				},
+			}),
 			-- TODO: really would prefer an actual coords for each criteria instead of maps
 			["groups"] = {
 				crit(3741, {	-- Borean Frog (Borean Tundra)
@@ -2183,7 +2217,24 @@ root(ROOTS.Zones, {
 		}),
 		o(175741, {	-- Kil'jaeden and the Shadow Pact
 			-- #if AFTER CATA
-			["description"] = "Stratholme: Found in the room with Commander Malor.",
+			["description"] = createLocalizationString({
+				readable = "Stratholme: Found in the room with Commander Malor.",
+				constant = "STRATHOLME_FOUND_IN_THE_ROOM_WITH_COMMANDER",
+				export = true,
+				text = {
+					en = "Stratholme: Found in the room with Commander Malor.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "斯坦索姆：可在指挥官马洛尔的房间内找到。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["coords"] = {
 				-- #if AFTER LEGION
@@ -2388,7 +2439,24 @@ root(ROOTS.Zones, {
 		}),
 		o(175747, {	-- The Invasion of Draenor
 			-- #if AFTER CATA
-			["description"] = "Scholomance: East side wall, near north-east corner of Lilian Voss encounter room.",
+			["description"] = createLocalizationString({
+				readable = "Scholomance: East side wall, near north-east corner of Lilian Voss encounter room.",
+				constant = "SCHOLOMANCE_EAST_SIDE_WALL_NEAR_NORTH_EAST",
+				export = true,
+				text = {
+					en = "Scholomance: East side wall, near north-east corner of Lilian Voss encounter room.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "通灵学院：东侧墙壁，莉莉安·沃斯战斗房间的东北角附近。",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["maps"] = { SCHOLOMANCE },
 		}),
@@ -2493,7 +2561,7 @@ root(ROOTS.Zones, {
 		}),
 		o(175737, {	-- The Seven Kingdoms
 			-- #if AFTER CATA
-			["description"] = "Stratholme: Found in the room with Commander Malor.",
+			["description"] = "~L.STRATHOLME_FOUND_IN_THE_ROOM_WITH_COMMANDER",
 			-- #endif
 			["maps"] = {
 				-- #if BEFORE MOP

@@ -7,7 +7,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(ACHIEVEMENTS, {
 				ach(62649, {	-- A Lone Wanderer
-					["description"] = "During the Earth and Sky event, go to the Sky Altar and fly around the raid entrance, looking for the moving large blue orb."
+					["description"] = createLocalizationString({
+						readable = "During the Earth and Sky event, go to the Sky Altar and fly around the raid entrance, looking for the moving large blue orb.",
+						constant = "DURING_THE_EARTH_AND_SKY_EVENT_GO_TO_THE_SKY",
+						export = true,
+						text = {
+							en = "During the Earth and Sky event, go to the Sky Altar and fly around the raid entrance, looking for the moving large blue orb.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在“大地与天空”事件期间，前往天空祭坛并围绕团队副本入口飞行，寻找那个移动的巨大蓝色球体。",
+							-- TODO: tw = "",
+						},
+					})
 				}),
 				ach(63630, {	-- Assault the Vault
 					i(276801),	-- Venomous Coiler (MOUNT!)
@@ -33,7 +50,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276553),	-- Emerald Skyfang (MOUNT!)
 				}),
 				ach(62600, {	-- Ritual Behavior
-					["description"] = "Petrified Egg spawns on the west wing, Spirit Urn spawns on the east wing, Venomous Ooze drops from the Venomous Giants in the middle.",
+					["description"] = createLocalizationString({
+						readable = "Petrified Egg spawns on the west wing, Spirit Urn spawns on the east wing, Venomous Ooze drops from the Venomous Giants in the middle.",
+						constant = "PETRIFIED_EGG_SPAWNS_ON_THE_WEST_WING_SPIRIT",
+						export = true,
+						text = {
+							en = "Petrified Egg spawns on the west wing, Spirit Urn spawns on the east wing, Venomous Ooze drops from the Venomous Giants in the middle.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "石化之卵在西翼刷新，灵魂之瓮在东翼刷新，剧毒软泥由中部的剧毒巨人掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						crit(113658, {	-- Petrified Egg
 							["providers"] = {
@@ -53,7 +87,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}
 				}),
 				ach(63598, {	-- Roll the Patrol (automated)
-					["description"] = "The Temple Patrols rotate every 10 minutes. Not all of them are available on any given week.",
+					["description"] = createLocalizationString({
+						readable = "The Temple Patrols rotate every 10 minutes. Not all of them are available on any given week.",
+						constant = "THE_TEMPLE_PATROLS_ROTATE_EVERY_10_MINUTES_NOT",
+						export = true,
+						text = {
+							en = "The Temple Patrols rotate every 10 minutes. Not all of them are available on any given week.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "神殿巡逻队每 10 分钟轮换一次。任何一周都并非所有巡逻队都会出现。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				ach(63596),	-- Snake Stompin'
 				ach(62601),	-- Soft Underbelly

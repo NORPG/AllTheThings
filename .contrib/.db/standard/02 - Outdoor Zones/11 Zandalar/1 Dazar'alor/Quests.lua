@@ -11,7 +11,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			-- figure out if "The Warchief's Order" and "The Warfront Looms" are breadcrumbs. they're both auto-popup quests after you hit 120, unlock WQs, and relog. they both direct you to go to dazar'alor and speak with an NPC to pursue nazjatar and the arathi warfront, respectively.
 
 			n(OUTPOSTS, {
-				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras. You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
+				["description"] = createLocalizationString({
+					readable = "Horde Outposts allow you to set up additional bases in Kul Tiras. You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
+					constant = "HORDE_OUTPOSTS_ALLOW_YOU_TO_SET_UP_ADDITIONAL",
+					export = true,
+					text = {
+						en = "Horde Outposts allow you to set up additional bases in Kul Tiras. You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "部落前哨站允许你在库尔提拉斯建立额外的基地。你可以在女妖之啸号旁边的商人兰莎处购买侦察报告。每份报告都会在你的任务指挥部桌面上开启一个任务。完成最初的任务线后，你会接到额外的任务来升级你的前哨站。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
 						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
@@ -529,7 +546,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isBreadcrumb"] = true,
 			}),
 			q(56249, {	-- I Am the Trashmaster
-				["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
+				["description"] = createLocalizationString({
+					readable = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
+					constant = "YOU_NEED_TO_GET_TRASHMASTER_S_MANTLE_FROM_K_U_J",
+					export = true,
+					text = {
+						en = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你需要从麦卡贡的 K.U.-J.0. 首领处获得垃圾大王的护肩才能完成这个任务。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 				["coord"] = { 35.3, 7.70, DAZARALOR },
@@ -684,7 +718,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(58582, {	-- Return of the Black Prince
-				["description"] = "Automatically granted.",
+				["description"] = "~L.AUTOMATICALLY_GRANTED",
 				["provider"] = { "o", 369894 },	-- Urgent Missive
 				["coord"] = { 58.5, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
@@ -855,7 +889,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(56030, {	-- The Warchief's Order
-				["description"] = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character has not yet started BFA. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
+				["description"] = createLocalizationString({
+					readable = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character has not yet started BFA. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
+					constant = "IF_NOT_ENCOUNTERED_THE_REGULAR_WAY_THIS_CAN_BE_2",
+					export = true,
+					text = {
+						en = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character has not yet started BFA. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果不是通过常规方式遇到，可以通过队伍同步获得。你需要与一个尚未开始《争霸艾泽拉斯》的角色同步。然后你需要接取任务“垂死的世界”并再次完成它。继续推进并完成任务“灌注之心”。之后这个任务就应该会为你弹出。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- ["sourceQuests"] = { 52451 },	-- Uniting Zandalar
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
@@ -1072,7 +1123,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(75874, {	-- Time to Fly
-				["description"] = "Reaching Level 30 will make this quest pop up.",
+				["description"] = "~L.REACHING_LEVEL_30_WILL_MAKE_THIS_QUEST_POP_UP",
 				["timeline"] = { ADDED_10_1_5 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {

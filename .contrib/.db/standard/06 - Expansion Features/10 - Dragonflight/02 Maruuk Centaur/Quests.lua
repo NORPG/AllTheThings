@@ -83,7 +83,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 4 --
 					q(71229, {	-- Call of the Plains
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 197627 },	-- Roki
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
@@ -99,7 +99,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 5 --
 					q(71231, {	-- Call of the Hunt
-						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
 						["provider"] = { "n", 197627 },	-- Roki
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),

@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(QUESTS, {
 									q(64459, {	-- Adventurer: Elwyn
-									["description"] = "Requires Renown 62.",
+									["description"] = "~L.REQUIRES_RENOWN_62",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61857, {	-- Adventurer: Groonoomcrooek
-									["description"] = "Requires Renown 38.",
+									["description"] = "~L.REQUIRES_RENOWN_38",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61854, {	-- Adventurer: Master Sha'lor
-									["description"] = "Requires Renown 17.",
+									["description"] = "~L.REQUIRES_RENOWN_17",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -51,7 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61852, {	-- Adventurer: Guardian Kota
-									["description"] = "Requires Renown 4.",
+									["description"] = "~L.REQUIRES_RENOWN_4",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61855, {	-- Adventurer: Qadarin
-									["description"] = "Requires Renown 27.",
+									["description"] = "~L.REQUIRES_RENOWN_27",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -69,7 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64458, {	-- Adventurer: Sulanoom
-									["description"] = "Requires Renown 44.",
+									["description"] = "~L.REQUIRES_RENOWN_44",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -78,7 +78,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61853, {	-- Adventurer: Te'zan
-									["description"] = "Requires Renown 12.",
+									["description"] = "~L.REQUIRES_RENOWN_12",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -87,7 +87,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61856, {	-- Adventurer: Watcher Vesperbloom
-									["description"] = "Requires Renown 33.",
+									["description"] = "~L.REQUIRES_RENOWN_33",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64460, {	-- Adventurer: Yanlar
-									["description"] = "Requires Renown 71.",
+									["description"] = "~L.REQUIRES_RENOWN_71",
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },

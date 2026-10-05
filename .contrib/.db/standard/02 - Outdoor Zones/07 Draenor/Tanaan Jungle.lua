@@ -176,7 +176,24 @@ root(ROOTS.Zones, {
 						pet(1468),	-- Bloodbeak (PET!)
 						pet(1586),	-- Cerulean Moth (PET!)
 						pet(1581, {	-- Fen Crab (PET!)
-							["description"] = "Found along the southern coast below Fang'rila.",
+							["description"] = createLocalizationString({
+								readable = "Found along the southern coast below Fang'rila.",
+								constant = "FOUND_ALONG_THE_SOUTHERN_COAST_BELOW_FANG_RILA",
+								export = true,
+								text = {
+									en = "Found along the southern coast below Fang'rila.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在方利拉下方的南部海岸线上可找到。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						pet(1591),	-- Violet Firefly (PET!)
 					},
@@ -260,7 +277,24 @@ root(ROOTS.Zones, {
 				}),
 				n(PROFESSIONS, {
 					n(94605, {	-- Apexis Gemcutter
-						["description"] = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
+						["description"] = createLocalizationString({
+							readable = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
+							constant = "IN_ORDER_TO_LEARN_THESE_RECIPES_YOU_HAVE_TO",
+							export = true,
+							text = {
+								en = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要学习这些配方，你必须将对应的宝石切割模块带给此 NPC，然后右键点击以学习如何制作。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 						["requireSkill"] = JEWELCRAFTING,
 						["groups"] = sharedData({
@@ -836,7 +870,24 @@ root(ROOTS.Zones, {
 				n(RARES, {
 					-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.
 					n(92766, {	-- Akrrilo <Shadowhunter of the Blackfang>
-						["description"] = "\nPurchase a Minor Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Akrrilo.\n\n",
+						["description"] = createLocalizationString({
+							readable = "\nPurchase a Minor Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Akrrilo.\n\n",
+							constant = "PURCHASE_A_MINOR_BLACKFANG_CHALLENGE_TOTEM_FROM",
+							export = true,
+							text = {
+								en = "\nPurchase a Minor Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Akrrilo.\n\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n从位于|cFFFFFFFF55.2, 74.8|r的行者兹坦加处购买一个小型黑牙挑战图腾。在竞技场|cFFFFFFFF54.2, 80.8|r处使用该图腾来召唤阿克里洛。\n\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 39399,
 						["isDaily"] = true,
 						["coord"] = { 54.2, 80.8, TANAAN_JUNGLE },
@@ -915,7 +966,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(90434, {	-- Ceraxas
-						["description"] = "Killing Ceraxas will summon the Abandoned Fel Pup, which offers the quest that rewards the pet.",
+						["description"] = createLocalizationString({
+							readable = "Killing Ceraxas will summon the Abandoned Fel Pup, which offers the quest that rewards the pet.",
+							constant = "KILLING_CERAXAS_WILL_SUMMON_THE_ABANDONED_FEL",
+							export = true,
+							text = {
+								en = "Killing Ceraxas will summon the Abandoned Fel Pup, which offers the quest that rewards the pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击杀塞拉克萨斯会召唤出被遗弃的邪能幼犬，它会提供奖励该宠物的任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 38031,
 						["isDaily"] = true,
 						["coord"] = { 31.6, 68.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
@@ -1014,7 +1082,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(127323) },	-- Bracers of Endless Suffering
 					}),
 					n(92819, {	-- Eyepiercer <Crazed Blackfang Warmonger>
-						["description"] = "\nPurchase a Prime Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Eyepiercer.\n\n",
+						["description"] = createLocalizationString({
+							readable = "\nPurchase a Prime Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Eyepiercer.\n\n",
+							constant = "PURCHASE_A_PRIME_BLACKFANG_CHALLENGE_TOTEM_FROM",
+							export = true,
+							text = {
+								en = "\nPurchase a Prime Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Eyepiercer.\n\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n从位于|cFFFFFFFF55.2, 74.8|r的行者兹坦加处购买一个至尊黑牙挑战图腾。在竞技场|cFFFFFFFF54.2, 80.8|r处使用该图腾来召唤刺眼者。\n\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 39379,
 						["isDaily"] = true,
 						["coord"] = { 54.2, 80.8, TANAAN_JUNGLE },
@@ -1028,7 +1113,24 @@ root(ROOTS.Zones, {
 					n(93168, {	-- Felbore
 						["questID"] = 38775,
 						["isDaily"] = true,
-						["description"] = "At the back of an underground cave.",
+						["description"] = createLocalizationString({
+							readable = "At the back of an underground cave.",
+							constant = "AT_THE_BACK_OF_AN_UNDERGROUND_CAVE",
+							export = true,
+							text = {
+								en = "At the back of an underground cave.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在地下洞穴的深处。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 31.1, 53.3, TANAAN_JUNGLE },	-- cave entrance
 							{ 28.6, 50.8, TANAAN_JUNGLE },	-- felbore
@@ -1212,18 +1314,69 @@ root(ROOTS.Zones, {
 					n(91227, {	-- Remnant of the Blood Moon
 						["questID"] = 39159,
 						["isDaily"] = true,
-						["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
+						["description"] = createLocalizationString({
+							readable = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
+							constant = "DRAIN_THE_BLOOD_MOON_TO_0_HEALTH_WITH_DRAINED",
+							export = true,
+							text = {
+								en = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用枯竭的血水晶将血月的生命值降到 0%，以刷新血月残骸。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 22.2, 50.6, TANAAN_JUNGLE },
 						["groups"] = { i(127666) },	-- Vial of Red Goo (TOY!)
 					}),
 					n(92817, {	-- Rendarr <Warshaman of the Blackfang>
-						["description"] = "\nPurchase a Major Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Rendarr.\n\n",
+						["description"] = createLocalizationString({
+							readable = "\nPurchase a Major Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Rendarr.\n\n",
+							constant = "PURCHASE_A_MAJOR_BLACKFANG_CHALLENGE_TOTEM_FROM",
+							export = true,
+							text = {
+								en = "\nPurchase a Major Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r. Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Rendarr.\n\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "\n从位于|cFFFFFFFF55.2, 74.8|r的行者兹坦加处购买一个大型黑牙挑战图腾。在竞技场|cFFFFFFFF54.2, 80.8|r处使用该图腾来召唤兰达尔。\n\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 39400,
 						["isDaily"] = true,
 						["coord"] = { 54.2, 80.8, TANAAN_JUNGLE },
 					}),
 					n(92627, {	-- Rendrak
-						["description"] = "Collect 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10, combine them to lure Rendrak. If you leave Zorammarsh, the Smelly Musk Glands will vanish from your bags.",
+						["description"] = createLocalizationString({
+							readable = "Collect 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10, combine them to lure Rendrak. If you leave Zorammarsh, the Smelly Musk Glands will vanish from your bags.",
+							constant = "COLLECT_10X_SMELLY_MUSK_GLAND_FROM_THE_DIREWING",
+							export = true,
+							text = {
+								en = "Collect 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10, combine them to lure Rendrak. If you leave Zorammarsh, the Smelly Musk Glands will vanish from your bags.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "从佐拉姆沼泽的恐翼掠食者（蝙蝠）身上收集 10 个恶臭麝香腺。集齐 10 个后，把它们合成以引诱伦德拉克。如果你离开佐拉姆沼泽，恶臭麝香腺将从你的背包中消失。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 38631,
 						["isDaily"] = true,
 						["coords"] = {
@@ -1288,7 +1441,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(127311) },	-- Serpentine Gloves
 					}),
 					n(93001, {	-- Szirek the Twisted
-						["description"] = "Capture Strongpoint (East) to make him spawn.",
+						["description"] = createLocalizationString({
+							readable = "Capture Strongpoint (East) to make him spawn.",
+							constant = "CAPTURE_STRONGPOINT_EAST_TO_MAKE_HIM_SPAWN",
+							export = true,
+							text = {
+								en = "Capture Strongpoint (East) to make him spawn.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "占领据点（东）即可让他刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 38752,
 						["isDaily"] = true,
 						["coord"] = { 16.2, 56.3, TANAAN_JUNGLE },
@@ -1323,7 +1493,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(127305) },	-- Frayed Hunting Cowl
 					}),
 					n(92977, {	-- The Iron Houndmaster
-						["description"] = "Capture Strongpoint (West) to make him spawn.",
+						["description"] = createLocalizationString({
+							readable = "Capture Strongpoint (West) to make him spawn.",
+							constant = "CAPTURE_STRONGPOINT_WEST_TO_MAKE_HIM_SPAWN",
+							export = true,
+							text = {
+								en = "Capture Strongpoint (West) to make him spawn.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "占领据点（西）即可让他刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["cr"] = 92969,	-- Strongpoint
 						["questID"] = 38751,
 						["isDaily"] = true,
@@ -1331,7 +1518,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(127321) },	-- Iron Houndmaster's Pauldrons
 					}),
 					n(92636, {	-- The Night Haunter
-						["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
+						["description"] = createLocalizationString({
+							readable = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
+							constant = "GAIN_10_STACKS_OF_MARKED_BY_THE_NIGHT_HAUNTER",
+							export = true,
+							text = {
+								en = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "通过找到暗夜追猎者或点击残缺的尸体，获得 10 层“被暗夜追猎者标记”。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 38632,
 						["isDaily"] = true,
 						["coords"] = {	-- **Some coords unconfirmed, probably more spawn points than listed as well**
@@ -1392,7 +1596,24 @@ root(ROOTS.Zones, {
 					}),
 					n(96235, {	-- Xemirkol
 						["achievementID"] = 10334,
-						["description"] = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
+						["description"] = createLocalizationString({
+							readable = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
+							constant = "ATTEMPT_TO_TELEPORT_TO_HIM_BY_USING_MASTER",
+							export = true,
+							text = {
+								en = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "尝试使用狩猎大师的追寻水晶传送到他身边。不要被击落他的平台。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 69.6, 38.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["groups"] = { title(59) },	-- Predator
 					}),
@@ -1505,7 +1726,24 @@ root(ROOTS.Zones, {
 						i(124623),	-- Spineshard Crest
 					}),
 					petbattle(container(127751, {	-- Fel-Touched Pet Supplies
-						["description"] = "Fel-Touched Pet Supplies is the reward for defeating any of the Tiny Terrors in Tanaan. You can defeat each Tiny Terror once per character per day.",
+						["description"] = createLocalizationString({
+							readable = "Fel-Touched Pet Supplies is the reward for defeating any of the Tiny Terrors in Tanaan. You can defeat each Tiny Terror once per character per day.",
+							constant = "FEL_TOUCHED_PET_SUPPLIES_IS_THE_REWARD_FOR",
+							export = true,
+							text = {
+								en = "Fel-Touched Pet Supplies is the reward for defeating any of the Tiny Terrors in Tanaan. You can defeat each Tiny Terror once per character per day.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "邪能腐化的宠物补给品是击败塔纳安任意微型恐魔的奖励。每个角色每天可以击败每只微型恐魔一次。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(127753),	-- Nightmare Bell (PET!)
 							i(127754),	-- Periwinkle Calf (PET!)
@@ -1548,7 +1786,24 @@ root(ROOTS.Zones, {
 					o(241664, {	-- "Borrowed" Enchanted Spyglass
 						["questID"] = 38735,
 						["coord"] = { 25.3, 50.3, TANAAN_JUNGLE },
-						["description"] = "At the top of the watchtower.",
+						["description"] = createLocalizationString({
+							readable = "At the top of the watchtower.",
+							constant = "AT_THE_TOP_OF_THE_WATCHTOWER",
+							export = true,
+							text = {
+								en = "At the top of the watchtower.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在瞭望塔顶部。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = { i(128222) },	-- Smokeglass Lens Spyglass
 					}),
 					o(241775, {	-- Brazier of Awakening
@@ -1754,11 +2009,45 @@ root(ROOTS.Zones, {
 					}),
 					o(241599, {	-- Strange Fruit
 						["questID"] = 38701,
-						["description"] = "Click on Loose Soil and throw it into the tree to grab the strange fruit.",
+						["description"] = createLocalizationString({
+							readable = "Click on Loose Soil and throw it into the tree to grab the strange fruit.",
+							constant = "CLICK_ON_LOOSE_SOIL_AND_THROW_IT_INTO_THE_TREE",
+							export = true,
+							text = {
+								en = "Click on Loose Soil and throw it into the tree to grab the strange fruit.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "点击松散的土壤并把它扔向那棵树，以取得奇异果实。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 64.7, 42.8, TANAAN_JUNGLE },
 						["groups"] = {
 							i(127396,{	-- Strange Green Fruit
-								["description"] = "After 14 days, the fruit will ripen into the toy.",
+								["description"] = createLocalizationString({
+									readable = "After 14 days, the fruit will ripen into the toy.",
+									constant = "AFTER_14_DAYS_THE_FRUIT_WILL_RIPEN_INTO_THE_TOY",
+									export = true,
+									text = {
+										en = "After 14 days, the fruit will ripen into the toy.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "14 天后，果实会成熟为玩具。",
+										-- TODO: tw = "",
+									},
+								}),
 								["groups"] = {
 									i(127395, {	-- Ripened Strange Fruit
 										i(127394),	-- Podling Camouflage (TOY!)
@@ -1788,7 +2077,24 @@ root(ROOTS.Zones, {
 						["groups"] = { i(128220) },	-- Grannok's Lidless Eye
 					}),
 					o(241522, {	-- The Perfect Blossom
-						["description"] = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
+						["description"] = createLocalizationString({
+							readable = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
+							constant = "EAT_CFFFFD700MYSTERIOUS_FRUIT_R_UNTIL_YOU_GET",
+							export = true,
+							text = {
+								en = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "吃|cFFFFD700神秘水果|r，直到获得|cFFFFD700花粉防护|r增益。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 38639,
 						["coord"] = { 40.8, 75.6, TANAAN_JUNGLE },
 						["groups"] = { i(127766) },	-- The Perfect Blossom (TOY!)
@@ -1955,7 +2261,24 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(95650, {	-- Skoller
-						["description"] = "Talk to him and you will receive the toy.",
+						["description"] = createLocalizationString({
+							readable = "Talk to him and you will receive the toy.",
+							constant = "TALK_TO_HIM_AND_YOU_WILL_RECEIVE_THE_TOY",
+							export = true,
+							text = {
+								en = "Talk to him and you will receive the toy.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与他交谈即可获得该玩具。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 55.2, 75.0, TANAAN_JUNGLE },
 						["groups"] = { i(128328) },	-- Skoller's Bag of Squirrel Treats (TOY!)
 					}),
@@ -2011,13 +2334,64 @@ root(ROOTS.Zones, {
 						["groups"] = bubbleDownClassicRep(FACTION_THE_SABERSTALKERS, {
 							{		-- Neutral
 								i(124094, {	-- Major Blackfang Challenge Totem
-									["description"] = "\nUsed to summon Rendarr.\n\n",
+									["description"] = createLocalizationString({
+										readable = "\nUsed to summon Rendarr.\n\n",
+										constant = "USED_TO_SUMMON_RENDARR",
+										export = true,
+										text = {
+											en = "\nUsed to summon Rendarr.\n\n",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "\n用于召唤雷达尔。\n\n",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 								i(124093, {	-- Minor Blackfang Challenge Totem
-									["description"] = "\nUsed to summon Akrrilo.\n\n",
+									["description"] = createLocalizationString({
+										readable = "\nUsed to summon Akrrilo.\n\n",
+										constant = "USED_TO_SUMMON_AKRRILO",
+										export = true,
+										text = {
+											en = "\nUsed to summon Akrrilo.\n\n",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "\n用于召唤阿克瑞洛。\n\n",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 								i(124095, {	-- Prime Blackfang Challenge Totem
-									["description"] = "\nUsed to summon Eyepiercer.\n\n",
+									["description"] = createLocalizationString({
+										readable = "\nUsed to summon Eyepiercer.\n\n",
+										constant = "USED_TO_SUMMON_EYEPIERCER",
+										export = true,
+										text = {
+											en = "\nUsed to summon Eyepiercer.\n\n",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "\n用于召唤刺眼者。\n\n",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 							}, {	-- Friendly
 								i(128453),	-- Saberstalkers Battle Standard
@@ -2062,7 +2436,24 @@ root(ROOTS.Zones, {
 						i(124559),	-- Baleful Choker
 						i(124556),	-- Baleful Spaulders (normal kill)
 						i(128348, {	-- Baleful Spaulders (CI!) (first kill)
-							["description"] = "|cfffd1818This token drops from your first Tanaan rare killed on any character. If you played during WoD and discarded the item before the introduction of the wardrobe, or if you recently sold the token itself without opening it, you will need to collect the appearance on a different character.\n\nYou CANNOT get these items from opening Baleful tokens purchased from the vendor.|r\n",
+							["description"] = createLocalizationString({
+								readable = "|cfffd1818This token drops from your first Tanaan rare killed on any character. If you played during WoD and discarded the item before the introduction of the wardrobe, or if you recently sold the token itself without opening it, you will need to collect the appearance on a different character.\n\nYou CANNOT get these items from opening Baleful tokens purchased from the vendor.|r\n",
+								constant = "CFFFD1818THIS_TOKEN_DROPS_FROM_YOUR_FIRST",
+								export = true,
+								text = {
+									en = "|cfffd1818This token drops from your first Tanaan rare killed on any character. If you played during WoD and discarded the item before the introduction of the wardrobe, or if you recently sold the token itself without opening it, you will need to collect the appearance on a different character.\n\nYou CANNOT get these items from opening Baleful tokens purchased from the vendor.|r\n",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "|cfffd1818该令牌由你在任意角色上击杀的第一个塔纳安稀有怪掉落。如果你在德拉诺之王期间玩过，并在衣柜系统推出前丢弃了该物品，或者你最近没有打开就卖掉了令牌本身，你将需要用另一个角色来收集该外观。\n\n你无法通过开启从商人处购买的邪恶令牌来获得这些物品。|r\n",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(128349),	-- Felcast Mantle (Warforged)
 								i(128350),	-- Bladefang Spaulders (Warforged)

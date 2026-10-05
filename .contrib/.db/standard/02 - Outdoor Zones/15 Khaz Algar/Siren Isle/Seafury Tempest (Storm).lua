@@ -67,12 +67,46 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 85404,
 				}),
 				n(231353, {	-- Tempest Talon
-					["description"] = "Flying around in area, assigned coords easiest spot to pull it.",
+					["description"] = createLocalizationString({
+						readable = "Flying around in area, assigned coords easiest spot to pull it.",
+						constant = "FLYING_AROUND_IN_AREA_ASSIGNED_COORDS_EASIEST",
+						export = true,
+						text = {
+							en = "Flying around in area, assigned coords easiest spot to pull it.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在该区域飞行寻找，标注的坐标是最容易引到它的位置。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 40.9, 62.0, SIREN_ISLE },
 					["questID"] = 85403,
 				}),
 				n(228547, {	-- Slaughtershell
-					["description"] = "Can spawn almost anywhere on the island.",
+					["description"] = createLocalizationString({
+						readable = "Can spawn almost anywhere on the island.",
+						constant = "CAN_SPAWN_ALMOST_ANYWHERE_ON_THE_ISLAND",
+						export = true,
+						text = {
+							en = "Can spawn almost anywhere on the island.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "几乎可以在岛上任何地方刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 39.4, 18.0, SIREN_ISLE },
 						{ 49.8, 44.4, SIREN_ISLE },
@@ -96,7 +130,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 85406,
 					["groups"] = {
 						i(235017, {	-- Glittering Vault Shard (TOY!)
-							["description"] = "The toy can drop on every kill and is unaffected by daily lockout.",
+							["description"] = createLocalizationString({
+								readable = "The toy can drop on every kill and is unaffected by daily lockout.",
+								constant = "THE_TOY_CAN_DROP_ON_EVERY_KILL_AND_IS",
+								export = true,
+								text = {
+									en = "The toy can drop on every kill and is unaffected by daily lockout.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个玩具每次击杀都可能掉落，且不受每日锁定影响。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						i(232571),	-- Whirling Runekey
 					},
@@ -104,19 +155,70 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			})),
 			n(TREASURES, {
 				o(507120, {	-- Ducky Friend
-					["description"] = "Can be found during the storm in a house on the 2nd floor, on a bed.",
+					["description"] = createLocalizationString({
+						readable = "Can be found during the storm in a house on the 2nd floor, on a bed.",
+						constant = "CAN_BE_FOUND_DURING_THE_STORM_IN_A_HOUSE_ON_THE",
+						export = true,
+						text = {
+							en = "Can be found during the storm in a house on the 2nd floor, on a bed.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在风暴期间于一座房子的二楼床上找到。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 39.2, 54.2, SIREN_ISLE },
 					["groups"] = {
 						i(233447),	-- Marmaduke's "Ducky Friend"
 					},
 				}),
 				o(499127, {	-- Runemarked Coffer
-					["description"] = "In the back of the left room of the Forgotten Vault during a storm.",
+					["description"] = createLocalizationString({
+						readable = "In the back of the left room of the Forgotten Vault during a storm.",
+						constant = "IN_THE_BACK_OF_THE_LEFT_ROOM_OF_THE_FORGOTTEN",
+						export = true,
+						text = {
+							en = "In the back of the left room of the Forgotten Vault during a storm.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在暴风雨期间，位于被遗忘的宝库左侧房间的后方。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 26.6, 23.9, 2375 },
 					["questID"] = 85859,
 				}),
 				i(234327, {	-- Turbulent Fragment
-					["description"] = "Western coordinates fragment is gathered from a dirtpile, next to a Kul Tiran Ghost.\nSouthern coordinates Fragment in front of a ghost inside a cave.\nNorthern coordinates Fragment is found in the hands of a ghost in another cave.",
+					["description"] = createLocalizationString({
+						readable = "Western coordinates fragment is gathered from a dirtpile, next to a Kul Tiran Ghost.\nSouthern coordinates Fragment in front of a ghost inside a cave.\nNorthern coordinates Fragment is found in the hands of a ghost in another cave.",
+						constant = "WESTERN_COORDINATES_FRAGMENT_IS_GATHERED_FROM_A",
+						export = true,
+						text = {
+							en = "Western coordinates fragment is gathered from a dirtpile, next to a Kul Tiran Ghost.\nSouthern coordinates Fragment in front of a ghost inside a cave.\nNorthern coordinates Fragment is found in the hands of a ghost in another cave.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "西部坐标碎片可从一堆泥土中拾取，旁边有一个库尔提拉斯幽灵。\n南部坐标碎片在一处洞穴内的幽灵前方。\n北部坐标碎片在另一处洞穴中一个幽灵的手中。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {
 						{ 38.19, 51.78, SIREN_ISLE },
 						{ 67.07, 78.44, SIREN_ISLE },
@@ -127,7 +229,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["cost"] = { { "i", 234327, 3 } },
 				}),
 				i(232605, {	-- Thunderous Fragment
-					["description"] = "Found in chests and treasures during a storm.",
+					["description"] = createLocalizationString({
+						readable = "Found in chests and treasures during a storm.",
+						constant = "FOUND_IN_CHESTS_AND_TREASURES_DURING_A_STORM",
+						export = true,
+						text = {
+							en = "Found in chests and treasures during a storm.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可在风暴期间的宝箱和宝藏中找到。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(232573, {	-- Thunderous Runekey
 					["cost"] = { { "i", 232605, 5 } },
@@ -160,7 +279,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["crs"] = { 230827 },	-- Stormtouched Pridetalon
 				}),
 				i(233498, {	-- Storminfused Snapdragon Treat (CI!)
-					["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from crab mobs during tempest.",
+					["description"] = createLocalizationString({
+						readable = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from crab mobs during tempest.",
+						constant = "YOU_MUST_HAVE_THE_PRISMATIC_SNAPDRAGON_MOUNT_4",
+						export = true,
+						text = {
+							en = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from crab mobs during tempest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须先拥有棱彩龙蜥坐骑，此物品才会掉落。\n\n可以在风暴期间从螃蟹怪物身上拾取。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						231986,	-- Deepwater Matriarch
 						232080,	-- Deepwater Eggtender
@@ -176,7 +312,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					-- n: 227625 (from debugger)
 				}),
 				i(234328, {
-					["description"] = "Drops rarely from any enemies on the island during a storm.",
+					["description"] = createLocalizationString({
+						readable = "Drops rarely from any enemies on the island during a storm.",
+						constant = "DROPS_RARELY_FROM_ANY_ENEMIES_ON_THE_ISLAND",
+						export = true,
+						text = {
+							en = "Drops rarely from any enemies on the island during a storm.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在风暴期间，由岛上的任何敌人小概率掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(232572, {	-- Torrential Runekey
 					["cost"] = { { "i", 234328, 7 } },

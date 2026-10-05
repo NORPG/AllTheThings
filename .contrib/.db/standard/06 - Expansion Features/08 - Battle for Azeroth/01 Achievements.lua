@@ -139,7 +139,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		}),
 		ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
 			crit(41575, {	-- Brutosaur of Nazmir Fed
-				["description"] = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",
+				["description"] = createLocalizationString({
+					readable = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",
+					constant = "BUY_PRIMITIVE_WATERMELON_FROM_BLIND_WUNJA",
+					export = true,
+					text = {
+						en = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在洞穴内 34.6, 54.9 处从盲眼温迦处购买原始西瓜，喂给戈拉莫尔。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 163563, 1 } },	-- Primitive Watermelon
 				["coord"] = { 32.3, 35.3, NAZMIR },	-- Goramor
 				["crs"] = {
@@ -147,7 +164,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			crit(41578, {	-- Brutosaur of Vol'dun Fed
-				["description"] = "Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",
+				["description"] = createLocalizationString({
+					readable = "Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",
+					constant = "BUY_SNAKE_ON_A_STICK_FROM_RIKATI_AT_40_4_55_4",
+					export = true,
+					text = {
+						en = "Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在 40.4, 55.4 处从里卡提处购买串烧蛇，喂给老跺脚。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 163567, 1 } },	-- Snake on a Stick
 				["coord"] = { 62.0, 9.20, VOLDUN },	-- Ol' Stompy
 				["crs"] = {
@@ -155,7 +189,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			crit(41580, {	-- Brutosaur of Zuldazar Fed
-				["description"] = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
+				["description"] = createLocalizationString({
+					readable = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
+					constant = "BUY_EXTRA_DRY_FRUITCAKE_FROM_GOLKADA_AT_71_2_29",
+					export = true,
+					text = {
+						en = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在 71.2, 29.6 处从戈尔卡达处购买超干水果蛋糕，喂给暴躁的玛卡冯。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 163564, 1 } },	-- Extra-dry Fruitcake
 				["coord"] = { 64.0, 39.2, ZULDAZAR },	-- Irritable Maka'fon
 				["crs"] = {
@@ -248,7 +299,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		ach(12482, {	-- Get Hek'd
-			["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+			["description"] = createLocalizationString({
+				readable = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+				constant = "MAKE_SURE_TO_LOOT_THE_CACHE_JANI_LEAVES_BEHIND",
+				export = true,
+				text = {
+					en = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在满足每项要求时，务必拾取加尼留下的藏匿物；这才是实际授予成就标准的东西。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				crit(40037, {	-- Golden Ravasaur Egg
 					["coord"] = { 71.6, 41.2, ZULDAZAR },	-- Trashpile turn-in

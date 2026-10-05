@@ -102,7 +102,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 35.8, 70.4, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						ach(62105, {	-- Lysikas Would Be Proud
-							["description"] = "This achievement has a lot of bugs. Keep reporting to blizzard if you dont get it.",
+							["description"] = createLocalizationString({
+								readable = "This achievement has a lot of bugs. Keep reporting to blizzard if you dont get it.",
+								constant = "THIS_ACHIEVEMENT_HAS_A_LOT_OF_BUGS_KEEP",
+								export = true,
+								text = {
+									en = "This achievement has a lot of bugs. Keep reporting to blizzard if you dont get it.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这个成就有很多 bug。如果你没拿到，请持续向暴雪反馈。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),

@@ -80,7 +80,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["lvl"] = 60,
 									["groups"] = {
 										i(239010, {	-- Hilt of the Ashbringer
-											["description"] = "Equip the Hilt to summon The Will of the Ashbringer!",
+											["description"] = createLocalizationString({
+												readable = "Equip the Hilt to summon The Will of the Ashbringer!",
+												constant = "EQUIP_THE_HILT_TO_SUMMON_THE_WILL_OF_THE",
+												export = true,
+												text = {
+													en = "Equip the Hilt to summon The Will of the Ashbringer!",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "装备剑柄以召唤灰烬使者的意志！",
+													-- TODO: tw = "",
+												},
+											}),
 										}),
 									},
 								}),
@@ -113,7 +130,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["groups"] = {
 										i(239219),	-- Emblem of the Ashbringer
 										i(240936, {	-- Inert Ashbringer
-											["description"] = "Be aware, when you equip it all Argent Dawn NPCs turn hostile. Make sure you are a good distance outside of Light's Hope Chapel before equipping it. Use it to summon the Will of the Ashbringer once again.",
+											["description"] = createLocalizationString({
+												readable = "Be aware, when you equip it all Argent Dawn NPCs turn hostile. Make sure you are a good distance outside of Light's Hope Chapel before equipping it. Use it to summon the Will of the Ashbringer once again.",
+												constant = "BE_AWARE_WHEN_YOU_EQUIP_IT_ALL_ARGENT_DAWN_NPCS",
+												export = true,
+												text = {
+													en = "Be aware, when you equip it all Argent Dawn NPCs turn hostile. Make sure you are a good distance outside of Light's Hope Chapel before equipping it. Use it to summon the Will of the Ashbringer once again.",
+													-- TODO: de = "",
+													-- TODO: es = "",
+													-- TODO: mx = "",
+													-- TODO: fr = "",
+													-- TODO: it = "",
+													-- TODO: ko = "",
+													-- TODO: pt = "",
+													-- TODO: ru = "",
+													cn = "注意，装备它后所有银色黎明 NPC 都会变为敌对。装备前请确保你已远离圣光之愿礼拜堂。用它再次召唤灰烬使者的意志。",
+													-- TODO: tw = "",
+												},
+											}),
 											["cost"] = {
 												{ "i", 239197, 1 },	-- Reforged Blade of the Ashbringer
 												{ "i", 239010, 1 },	-- Hilt of the Ashbringer
@@ -159,7 +193,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 242174,	-- Thisalee Crow
 									["classes"] = { HUNTER, PALADIN, WARRIOR },
 									["lvl"] = 60,
-									["description"] = "Use the Inert Ashbringer Inert Ashbringer to summon the Will of the Ashbringer again & to start the next quest.",
+									["description"] = createLocalizationString({
+										readable = "Use the Inert Ashbringer Inert Ashbringer to summon the Will of the Ashbringer again & to start the next quest.",
+										constant = "USE_THE_INERT_ASHBRINGER_INERT_ASHBRINGER_TO",
+										export = true,
+										text = {
+											en = "Use the Inert Ashbringer Inert Ashbringer to summon the Will of the Ashbringer again & to start the next quest.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "使用惰性灰烬使者来再次召唤灰烬使者的意志，并开始下一个任务。",
+											-- TODO: tw = "",
+										},
+									}),
 								}),
 								q(89473, {	-- The Well of Eternity
 									["sourceQuest"] = 90508,	-- As The Crow Flies
@@ -659,7 +710,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(240841),	-- High Commander's Guard
 							i(239696, {	-- Hilt of the Ashbringer (QUEST!)
 								["sourceQuest"] = 89304,	-- The Perfect Metal
-								["description"] = "Only drops once you have completed the 'Ruined Lightforged Blade' Questchain.",
+								["description"] = createLocalizationString({
+									readable = "Only drops once you have completed the 'Ruined Lightforged Blade' Questchain.",
+									constant = "ONLY_DROPS_ONCE_YOU_HAVE_COMPLETED_THE_RUINED",
+									export = true,
+									text = {
+										en = "Only drops once you have completed the 'Ruined Lightforged Blade' Questchain.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "仅在你完成“残破的光铸之刃”任务链后掉落。",
+										-- TODO: tw = "",
+									},
+								}),
 							}),
 							i(242366),	-- Inescapable Fate (QUEST!)
 							i(241039),	-- Infusion of Souls

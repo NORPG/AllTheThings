@@ -1092,7 +1092,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				o(181166, {	-- Bloodthistle
 					["timeline"] = { ADDED_2_0_5 },
 					-- #if ANYCLASSIC
-					["description"] = "This node can be gathered by any herbalist, but is expected to become restricted to Blood-Elf only in a future expansion. Please let us know in the ATT Discord if this already have happened in given iterations of Classic.",
+					["description"] = createLocalizationString({
+						readable = "This node can be gathered by any herbalist, but is expected to become restricted to Blood-Elf only in a future expansion. Please let us know in the ATT Discord if this already have happened in given iterations of Classic.",
+						constant = "THIS_NODE_CAN_BE_GATHERED_BY_ANY_HERBALIST_BUT",
+						export = true,
+						text = {
+							en = "This node can be gathered by any herbalist, but is expected to become restricted to Blood-Elf only in a future expansion. Please let us know in the ATT Discord if this already have happened in given iterations of Classic.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "任何草药师都可以采集此节点，但预计在未来的资料片中它会变为仅限血精灵采集。如果这在各个经典版版本中已经发生，请在 ATT 的 Discord 中告知我们。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #else
 					["races"] = { BLOODELF },
 					-- #endif
@@ -1450,7 +1467,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(32668, {	-- Learn To Ride
-					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
+					["description"] = createLocalizationString({
+						readable = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
+						constant = "THIS_QUEST_IS_AUTOMATICALLY_OFFERED_TO_BLOOD",
+						export = true,
+						text = {
+							en = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务会在血精灵达到指定等级时自动提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54.0, EVERSONG_WOODS },
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
@@ -1467,7 +1501,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14081, {	-- Learn to Ride in the Eversong Woods
-					["description"] = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
+					["description"] = createLocalizationString({
+						readable = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
+						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_9",
+						export = true,
+						text = {
+							en = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "开启此任务的小册子会在血精灵达到指定等级时寄送到他们的邮箱。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 46882 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["races"] = { BLOODELF },
@@ -2259,7 +2310,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, sharedData({
 				-- #if AFTER 9.0.3
-				["description"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+				["description"] = createLocalizationString({
+					readable = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+					constant = "THIS_ITEM_SEEM_TO_ONLY_DROP_EASILY_FOR",
+					export = true,
+					text = {
+						en = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此物品似乎只在逐日岛内对 14 级以下的角色容易掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				-- #endif
 				["maps"] = {
 					EVERSONG_WOODS,

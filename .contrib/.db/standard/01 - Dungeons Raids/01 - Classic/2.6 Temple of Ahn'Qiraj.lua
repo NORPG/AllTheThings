@@ -1305,7 +1305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				})),
 				i(21229, {	-- Qiraji Lord's Insignia
-					["description"] = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
+					["description"] = "~L.DROPS_FROM_ALL_BOSSES_CAN_BE_TURNED_IN_TO_THE",
 					["crs"] = {
 						15516,	-- Battleguard Sartura
 						15276,	-- Emperor Vek'lor
@@ -1339,7 +1339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(20874),	-- Idol of the Sun
 					i(20882),	-- Idol of War
 					i(21156, {	-- Scarab Bag
-						["description"] = "Contains a couple of random scarabs.",
+						["description"] = "~L.CONTAINS_A_COUPLE_OF_RANDOM_SCARABS",
 					}),
 				},
 			}),
@@ -1372,7 +1372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			-- #if AFTER LEGION
 			e(1547, {	-- Silithid Royalty
-				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
+				["description"] = "~L.THIS_CAN_BE_A_FAIRLY_BUGGY_ENCOUNTER_IF_YOU_DON",
 				["groups"] = {
 			-- #endif
 					n(SILITHID_ROYALTY_SHARED_DROPS, {
@@ -1405,7 +1405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					n(15511, {	-- Lord Kri
-						["description"] = "Killing this boss last can drop the following items.",
+						["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
 						["groups"] = {
 							i(21603),	-- Wand of Qiraji Nobility
 							i(21680),	-- Vest of Swift Execution
@@ -1414,7 +1414,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					n(15543, {	-- Princess Yauj
-						["description"] = "Killing this boss last can drop the following items.",
+						["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
 						["groups"] = {
 							i(21683),	-- Mantle of the Desert Crusade
 							i(21684),	-- Mantle of the Desert's Fury
@@ -1424,7 +1424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					n(15544, {	-- Vem
-						["description"] = "Killing this boss last can drop the following items.",
+						["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
 						["groups"] = {
 							i(21690),	-- Angelista's Charm
 							i(21689),	-- Gloves of Ebru
@@ -1625,7 +1625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					i(21229, {	-- Qiraji Lord's Insignia
-						["description"] = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
+						["description"] = "~L.DROPS_FROM_ALL_BOSSES_CAN_BE_TURNED_IN_TO_THE",
 						["crs"] = {
 							15516,	-- Battleguard Sartura
 							15276,	-- Emperor Vek'lor
@@ -1672,7 +1672,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				n(SPECIAL, {
 					n(234193, {		-- Gilded Scarab
-						["description"] = "Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",
+						["description"] = "~L.RANDOMLY_SPAWNS_IN_THE_TEMPLE_OF_AHN_QIRAJ_AND",
 						["groups"] = {
 							i(235526),	-- Formula: Enchant Bracer - Spell Power
 							i(235528),	-- Formula: Enchant Bracer - Agility
@@ -2179,7 +2179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(SILITHID_ROYALTY_SHARED_DROPS, {
-					["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
+					["description"] = "~L.THESE_ITEMS_CAN_DROP_FROM_KILLING_THE_SILITHID",
 					["providers"] = {
 						{ "n", 15511 },	-- Lord Kri
 						{ "n", 15543 },	-- Princess Yauj
@@ -2195,7 +2195,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15511, {	-- Lord Kri
-					["description"] = "Killing this boss last can drop the following items.",
+					["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
 					["groups"] = {
 						i(233568),	-- Vest of Swift Execution
 						i(233569),	-- Ring of the Devoured
@@ -2204,7 +2204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15543, {	-- Princess Yauj
-					["description"] = "Killing this boss last can drop the following items.",
+					["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
 					["groups"] = {
 						i(233563),	-- Mantle of Phrenic Power
 						i(233564),	-- Bile-Covered Gauntlets
@@ -2214,7 +2214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15544, {	-- Vem
-					["description"] = "Killing this boss last can drop the following items.",
+					["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
 					["groups"] = {
 						i(233559),	-- Gloves of Ebru
 						i(233560),	-- Ooze-Ridden Gauntlets
@@ -2268,7 +2268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				e(1548, {	-- Viscidus
-						["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
+						["description"] = "~L.THIS_BOSS_REQUIRES_200_FROST_HITS_TO_FREEZE",
 						["creatureID"] = 15299,
 						["groups"] = {
 							i(233369),	-- Qiraji Bindings of Dominance
@@ -2375,7 +2375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(AQ_TEMPLE_HARDMODE, {
-					["description"] = "Descent into Madness!\n\nWhen players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
+					["description"] = "~L.DESCENT_INTO_MADNESS_WHEN_PLAYERS_ENTER_AHN",
 					["groups"] = {
 						i(233351),	-- Light Green Qiraji Resonating Crystal
 						i(233352),	-- Dark Blue Qiraji Resonating Crystal

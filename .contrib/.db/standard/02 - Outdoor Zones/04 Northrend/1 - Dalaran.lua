@@ -876,7 +876,24 @@ root(ROOTS.Zones, {
 							}),
 							-- #endif
 							n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
-								["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
+								["description"] = createLocalizationString({
+									readable = "This vendor is not always present. It can appear in either version of Dalaran.",
+									constant = "THIS_VENDOR_IS_NOT_ALWAYS_PRESENT_IT_CAN_APPEAR",
+									export = true,
+									text = {
+										en = "This vendor is not always present. It can appear in either version of Dalaran.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "这个商人并不总是存在。它可能出现在任一版本的达拉然中。",
+										-- TODO: tw = "",
+									},
+								}),
 								["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
 								["timeline"] = { ADDED_7_0_3 },
 								["groups"] = {
@@ -1225,14 +1242,65 @@ root(ROOTS.Zones, {
 						["requireSkill"] = COOKING,
 					}),
 					ach(1956, {	-- Higher Learning
-						["description"] = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
+						["description"] = createLocalizationString({
+							readable = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
+							constant = "THE_SCHOOLS_OF_ARCANE_MAGIC_BOOKS_SHARE_A_SPAWN",
+							export = true,
+							text = {
+								en = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "《奥术魔法学派》系列书籍与普通书籍共享刷新位置。在每个位置阅读书籍以启动重生计时，看起来是 3-4 小时。\n\n寻找书籍的最佳时机是服务器重启之后立刻开始。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(44738, {	-- Kirin Tor Familiar (PET!)
-								["description"] = "This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly aqcuired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",
+								["description"] = createLocalizationString({
+									readable = "This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly aqcuired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",
+									constant = "THIS_PET_IS_OBTAINED_BY_DOING_THE_FOLLOWING_1",
+									export = true,
+									text = {
+										en = "This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly aqcuired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "按以下步骤可获得此宠物：\n1. 完成“高等学识”成就\n2. 使用新获得的玩具“奥术魔法学派 - 精通”，将自己传送到紫罗兰城堡顶部的尖塔。\n3. 与大法师瓦格斯互动。",
+										-- TODO: tw = "",
+									},
+								}),
 								["timeline"] = { ADDED_3_0_3 },
 							}),
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)
-								["description"] = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
+								["description"] = createLocalizationString({
+									readable = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
+									constant = "IF_YOU_LOST_THE_BOOK_RHONIN_WILL_PROVIDE_IT_TO",
+									export = true,
+									text = {
+										en = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "如果你丢失了这本书，只要你有该成就，罗宁就会免费提供给你。这仅在完成该成就的角色上有效。",
+										-- TODO: tw = "",
+									},
+								}),
 								["cr"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
 							}),
 						},
@@ -1389,7 +1457,24 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				filter(BATTLE_PETS, {
 					pet(1604, {	-- Nethaera's Light (PET!)
-						["description"] = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
+						["description"] = createLocalizationString({
+							readable = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
+							constant = "TO_OBTAIN_THIS_PET_DO_CHEER_AT_IT_NOTE_MAY_GO",
+							export = true,
+							text = {
+								en = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "要获得此宠物，对它使用 /cheer。\n注意：它可能会跑向最近的、尚未拥有该宠物的玩家。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 41.2, 41.6, NORTHREND_DALARAN },
 							{ 53.3, 35.3, NORTHREND_DALARAN },
@@ -1549,7 +1634,24 @@ root(ROOTS.Zones, {
 						}),
 						i(43659, {	-- Bloodied Prison Shank
 							["timeline"] = { ADDED_3_0_2 },
-							["description"] = "Can be fished up from the waters outside Violet Hold on WotLK Dalaran.",
+							["description"] = createLocalizationString({
+								readable = "Can be fished up from the waters outside Violet Hold on WotLK Dalaran.",
+								constant = "CAN_BE_FISHED_UP_FROM_THE_WATERS_OUTSIDE_VIOLET",
+								export = true,
+								text = {
+									en = "Can be fished up from the waters outside Violet Hold on WotLK Dalaran.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "可在巫妖王之怒的达拉然紫罗兰监狱外的水域中钓到。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						o(193402, {	-- Rusted Prisoner's Footlocker
 							["coord"] = { 64.5, 73.8, NORTHREND_DALARAN },
@@ -1600,7 +1702,24 @@ root(ROOTS.Zones, {
 							["groups"] = TIFFANY_JEWELCRAFTING_RECIPES,
 						}),
 						n(28701, {	-- Timothy Jones <Jewelcrafting Trainer>
-							["description"] = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",
+							["description"] = createLocalizationString({
+								readable = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",
+								constant = "DAILY_JEWELCRAFTING_QUESTS_SHIPMENT_BLOOD_JADE",
+								export = true,
+								text = {
+									en = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "珠宝加工日常任务：\n\n货件：血玉护符 - 维库人可在冰冠冰川中部的依米海姆找到。\n\n货件：明亮护甲遗物 - 亡魂/元素生物可在龙骨荒野找到，沿着水晶之钳通往愤怒之门的山腰一带。\n\n货件：发光象牙雕像 - 猛犸象可在风暴峭壁最南端、通往 K3 的道路旁找到。\n\n货件：精致骨雕 - 始祖龙可在风暴峭壁布伦希尔达村上方的山谷中找到。\n\n货件：流转烈日古玩 - 天灾军团/亡灵可在晶歌森林作为中立幽灵找到，位于达拉然下方的紫罗兰之台一带。\n\n货件：邪恶护甲遗物 - 铁矮人可在风暴峭壁霜堡与瓦基里安之间的洞穴中找到。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
 							["groups"] = appendGroups(WRATH_JEWELCRAFTING,TIMOTHY_JEWELCRAFTING_RECIPES),
 						}),
@@ -1626,7 +1745,24 @@ root(ROOTS.Zones, {
 					prof(TAILORING, {
 						n(28699, {	-- Charles Worth <Tailoring Trainer>
 							-- #if AFTER 6.2.2
-							["description"] = "You can now learn these recipes even if the achievements have been completed on a different character. If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+							["description"] = createLocalizationString({
+								readable = "You can now learn these recipes even if the achievements have been completed on a different character. If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+								constant = "YOU_CAN_NOW_LEARN_THESE_RECIPES_EVEN_IF_THE",
+								export = true,
+								text = {
+									en = "You can now learn these recipes even if the achievements have been completed on a different character. If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "现在即使成就是在其他角色上完成的，你也可以学习这些配方。如果你的裁缝不是你的主号，欢呼吧！只需与查尔斯·沃斯对话，告诉他你准备好学习图样了。",
+									-- TODO: tw = "",
+								},
+							}),
 							-- #endif
 							["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
 							["requireSkill"] = TAILORING,
@@ -1638,12 +1774,46 @@ root(ROOTS.Zones, {
 										1360,	-- Loremaster of Northrend (H)
 										-- #endif
 									},
-									["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+									["description"] = createLocalizationString({
+										readable = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+										constant = "IN_ORDER_TO_LEARN_THIS_RECIPE_YOU_MUST_HAVE_THE",
+										export = true,
+										text = {
+											en = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "要学习此配方，你必须完成“诺森德博学者”成就。",
+											-- TODO: tw = "",
+										},
+									}),
 									["requireSkill"] = TAILORING,
 								}),
 								r(56016, {	-- Wispcloak
 									["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
-									["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+									["description"] = createLocalizationString({
+										readable = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+										constant = "IN_ORDER_TO_LEARN_THIS_RECIPE_YOU_MUST_HAVE_THE_2",
+										export = true,
+										text = {
+											en = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "要学习此配方，你必须完成“诺森德地下城大师”成就。",
+											-- TODO: tw = "",
+										},
+									}),
 									["requireSkill"] = TAILORING,
 								}),
 							}),
@@ -1951,7 +2121,24 @@ root(ROOTS.Zones, {
 					})),
 					q(29073, {	-- Make Haste to Orgrimmar!
 						-- #if BEFORE 6.2.0
-						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						["description"] = createLocalizationString({
+							readable = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+							constant = "IF_YOU_HAVE_YOUR_HEARTHSTONE_SET_TO_DALARAN",
+							export = true,
+							text = {
+								en = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你的炉石绑定在达拉然，就可以接到这个任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						["providers"] = {
 							{ "o", 208317 },	-- Warchief's Command Board
@@ -1967,7 +2154,7 @@ root(ROOTS.Zones, {
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
 						-- #if BEFORE 6.2.0
-						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						["description"] = "~L.IF_YOU_HAVE_YOUR_HEARTHSTONE_SET_TO_DALARAN",
 						-- #endif
 						["providers"] = {
 							{ "o", 208316 },	-- Hero's Call Board
@@ -2279,7 +2466,24 @@ root(ROOTS.Zones, {
 					-- #if ANYCLASSIC
 					applyclassicphase(WRATH_PHASE_FOUR, q(78752, {	-- Proof of Demise: Titan Rune Protocol Gamma
 						-- #if BEFORE 4.0.1
-						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
+						["description"] = createLocalizationString({
+							readable = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
+							constant = "THE_QUEST_ITEM_CAN_ALSO_DROP_FROM_ANY_OF_THE",
+							export = true,
+							text = {
+								en = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该任务物品也可以从任意新的冰冠英雄地下城中掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
@@ -2573,7 +2777,24 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(39210, {	-- The Magical Kingdom of Dalaran (Adventure Guide)
-						["description"] = "Can be acquired through the Adventure Guide.",
+						["description"] = createLocalizationString({
+							readable = "Can be acquired through the Adventure Guide.",
+							constant = "CAN_BE_ACQUIRED_THROUGH_THE_ADVENTURE_GUIDE",
+							export = true,
+							text = {
+								en = "Can be acquired through the Adventure Guide.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可通过冒险指南获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_6_2_0 },
 						["isBreadcrumb"] = true,
 					}),
@@ -2743,7 +2964,24 @@ root(ROOTS.Zones, {
 				n(REWARDS, {
 					container(46007, {	-- Bag of Fishing Treasures
 						["provider"] = { "n", 28742 },	-- Marcia Chase
-						["description"] = "Fishing Daily Quest Reward",
+						["description"] = createLocalizationString({
+							readable = "Fishing Daily Quest Reward",
+							constant = "FISHING_DAILY_QUEST_REWARD",
+							export = true,
+							text = {
+								en = "Fishing Daily Quest Reward",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "钓鱼日常任务奖励",
+								-- TODO: tw = "",
+							},
+						}),
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_TWO, i(45862)),	-- Bold Stormjewel
@@ -2768,7 +3006,24 @@ root(ROOTS.Zones, {
 							i(40195),	-- Pygmy Oil
 							i(46004, {	-- Sealed Vial of Poison
 								-- #if ANYCLASSIC
-								["description"] = "Provides a nice source of XP. You can buy and sell this on the AH!",
+								["description"] = createLocalizationString({
+									readable = "Provides a nice source of XP. You can buy and sell this on the AH!",
+									constant = "PROVIDES_A_NICE_SOURCE_OF_XP_YOU_CAN_BUY_AND",
+									export = true,
+									text = {
+										en = "Provides a nice source of XP. You can buy and sell this on the AH!",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "提供不错的经验值来源。你可以在拍卖行买卖它！",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 							}),
 							i(36784),	-- Siren's Tear
@@ -2790,7 +3045,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					container(44113, {	-- Small Spice Bag
-						["description"] = "Cooking Daily Quest Reward",
+						["description"] = createLocalizationString({
+							readable = "Cooking Daily Quest Reward",
+							constant = "COOKING_DAILY_QUEST_REWARD",
+							export = true,
+							text = {
+								en = "Cooking Daily Quest Reward",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "烹饪日常任务奖励",
+								-- TODO: tw = "",
+							},
+						}),
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award
@@ -2798,7 +3070,24 @@ root(ROOTS.Zones, {
 							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
 							i(33871),	-- Recipe: Stormchops (RECIPE!)
 							i(43007, {	-- Northern Spices
-								["description"] = "Only available from given Cooking suppliers."
+								["description"] = createLocalizationString({
+									readable = "Only available from given Cooking suppliers.",
+									constant = "ONLY_AVAILABLE_FROM_GIVEN_COOKING_SUPPLIERS",
+									export = true,
+									text = {
+										en = "Only available from given Cooking suppliers.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "仅可从特定的烹饪供应商处获得。",
+										-- TODO: tw = "",
+									},
+								})
 							}),
 							i(44228),	-- Baby Spice
 							i(44114),	-- Old Spices
@@ -2807,35 +3096,171 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(192709, {	-- The Schools of Arcane Magic - Abjuration
-						["description"] = "The floor of the Dalaran Visitors Center next to a small book covered table.",
+						["description"] = createLocalizationString({
+							readable = "The floor of the Dalaran Visitors Center next to a small book covered table.",
+							constant = "THE_FLOOR_OF_THE_DALARAN_VISITORS_CENTER_NEXT",
+							export = true,
+							text = {
+								en = "The floor of the Dalaran Visitors Center next to a small book covered table.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "达拉然访客中心的地板上，在一张盖着书的小桌子旁边。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 52.2, 54.8, NORTHREND_DALARAN },
 					}),
 					o(192710, {	-- The Schools of Arcane Magic - Conjuration
-						["description"] = "First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.",
+						["description"] = createLocalizationString({
+							readable = "First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.",
+							constant = "FIRST_FLOOR_OF_THE_VIOLET_CITADEL_ON_THE_BOTTOM",
+							export = true,
+							text = {
+								en = "First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在紫罗兰城堡一楼，房间北侧左侧书架的最底层。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 31.0, 46.7, NORTHREND_DALARAN },
 					}),
 					o(192711, {	-- The Schools of Arcane Magic - Divination
-						["description"] = "Between the two bookcases on the south side of the second floor of the Violet Citadel.",
+						["description"] = createLocalizationString({
+							readable = "Between the two bookcases on the south side of the second floor of the Violet Citadel.",
+							constant = "BETWEEN_THE_TWO_BOOKCASES_ON_THE_SOUTH_SIDE_OF",
+							export = true,
+							text = {
+								en = "Between the two bookcases on the south side of the second floor of the Violet Citadel.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在紫罗兰城堡二楼南侧的两个书柜之间。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 26.5, 52.2, NORTHREND_DALARAN },
 					}),
 					o(192713, {	-- The Schools of Arcane Magic - Enchantment
-						["description"] = "On a box on the upper balcony of The Threads of Fate.",
+						["description"] = createLocalizationString({
+							readable = "On a box on the upper balcony of The Threads of Fate.",
+							constant = "ON_A_BOX_ON_THE_UPPER_BALCONY_OF_THE_THREADS_OF",
+							export = true,
+							text = {
+								en = "On a box on the upper balcony of The Threads of Fate.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在命运丝线上层阳台的箱子上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 43.6, 46.7, NORTHREND_DALARAN },
 					}),
 					o(192865, {	-- The Schools of Arcane Magic - Illusion
-						["description"] = "On a box in the corner of the Violet Hold near Archmage Timear.",
+						["description"] = createLocalizationString({
+							readable = "On a box in the corner of the Violet Hold near Archmage Timear.",
+							constant = "ON_A_BOX_IN_THE_CORNER_OF_THE_VIOLET_HOLD_NEAR",
+							export = true,
+							text = {
+								en = "On a box in the corner of the Violet Hold near Archmage Timear.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在紫罗兰监狱角落、大法师提迈尔附近的箱子上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 64.4, 52.3, NORTHREND_DALARAN },
 					}),
 					o(192708, {	-- The Schools of Arcane Magic - Introduction
-						["description"] = "First floor of the teleportation room of the Violet Gate near a bookcase.",
+						["description"] = createLocalizationString({
+							readable = "First floor of the teleportation room of the Violet Gate near a bookcase.",
+							constant = "FIRST_FLOOR_OF_THE_TELEPORTATION_ROOM_OF_THE",
+							export = true,
+							text = {
+								en = "First floor of the teleportation room of the Violet Gate near a bookcase.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在紫罗兰之门传送室的一楼，一个书架附近。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 56.7, 45.5, NORTHREND_DALARAN },
 					}),
 					o(192866, {	-- The Schools of Arcane Magic - Necromancy
-						["description"] = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
+						["description"] = createLocalizationString({
+							readable = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
+							constant = "SECOND_FLOOR_OF_THE_LEGERDEMAIN_LOUNGE_IN_A",
+							export = true,
+							text = {
+								en = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "戏法旅店二楼，西北卧室的书架上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 46.8, 39.1, NORTHREND_DALARAN },
 					}),
 					o(192867, {	-- The Schools of Arcane Magic - Transmutation
-						["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
+						["description"] = createLocalizationString({
+							readable = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
+							constant = "FIRST_FLOOR_OF_THE_LEGERDEMAIN_LOUNGE_IN_THE",
+							export = true,
+							text = {
+								en = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在诡术师酒廊一楼，最靠近炉灶的书架上。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 					}),
 				}),
@@ -2884,7 +3309,24 @@ root(ROOTS.Zones, {
 					}),
 					n(32631, {	-- Alfred Copperworth <Butler>
 						["coord"] = { 26.2, 39.2, NORTHREND_DALARAN },
-						["description"] = "Walks around the Purple Parlour.",
+						["description"] = createLocalizationString({
+							readable = "Walks around the Purple Parlour.",
+							constant = "WALKS_AROUND_THE_PURPLE_PARLOUR",
+							export = true,
+							text = {
+								en = "Walks around the Purple Parlour.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在紫色客厅周围走动。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(33451),	-- Fillet of Icefin
 							i(33452),	-- Honey-Spiced Lichen
@@ -2964,7 +3406,7 @@ root(ROOTS.Zones, {
 							}, {	-- Revered
 								i(50368, {	-- Arcanum of Burning Mysteries
 									-- #if BEFORE MOP
-									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+									["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
 									-- #endif
 									["timeline"] = { REMOVED_5_0_4 },
 									["filterID"] = CONSUMABLES,
@@ -3483,7 +3925,24 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 						},
-						["description"] = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
+						["description"] = createLocalizationString({
+							readable = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
+							constant = "THIS_VENDOR_CAN_BE_FOUND_ON_SOMEONE_S_TRAVELER",
+							export = true,
+							text = {
+								en = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此商人可以在某人的旅行者的苔原猛犸象上找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							i(44737),	-- Draenic Silk Robes
 						},
@@ -3647,7 +4106,24 @@ root(ROOTS.Zones, {
 					-- #endif
 					n(28682, {	-- Inzi Charmlight <Barmaid>
 						["coord"] = { 44.2, 62.3, NORTHREND_DALARAN },
-						["description"] = "Inzi is walking around in the Tavern.",
+						["description"] = createLocalizationString({
+							readable = "Inzi is walking around in the Tavern.",
+							constant = "INZI_IS_WALKING_AROUND_IN_THE_TAVERN",
+							export = true,
+							text = {
+								en = "Inzi is walking around in the Tavern.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "因齐在旅店里走来走去。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(35948),	-- Savoury Snowplum
@@ -3725,7 +4201,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(35826, {	-- Kaye Toogie
-						["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor. You must have Engineering to use the toy.",
+						["description"] = createLocalizationString({
+							readable = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor. You must have Engineering to use the toy.",
+							constant = "WHEN_USING_CFF0070DDWORMHOLE_GENERATOR",
+							export = true,
+							text = {
+								en = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor. You must have Engineering to use the toy.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用|cff0070dd虫洞发生器：诺森德|r时，你有几率获得“地下……”选项，它会将你传送至该商人处。使用此玩具需要工程学。",
+								-- TODO: tw = "",
+							},
+						}),
 						["requireSkill"] = ENGINEERING,
 						["groups"] = {
 							i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
@@ -3934,7 +4427,24 @@ root(ROOTS.Zones, {
 					}),
 					n(32420, {	-- Mimbihi <Barmaid>
 						["coord"] = { 67.4, 32.2, NORTHREND_DALARAN },
-						["description"] = "Mimbihi is walking around in the Tavern.",
+						["description"] = createLocalizationString({
+							readable = "Mimbihi is walking around in the Tavern.",
+							constant = "MIMBIHI_IS_WALKING_AROUND_IN_THE_TAVERN",
+							export = true,
+							text = {
+								en = "Mimbihi is walking around in the Tavern.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "米姆比希正在旅店里四处走动。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(35948),	-- Savoury Snowplum
@@ -3942,7 +4452,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29529, {	-- Ninsianna <Relics>
-						["description"] = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
+						["description"] = createLocalizationString({
+							readable = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
+							constant = "IF_YOU_DANCE_WITH_HER_SHE_WILL_SAY_NOT_BAD",
+							export = true,
+							text = {
+								en = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你与她 /dance，她会说“不错嘛，不过再练练也无妨！来，看我的屁股……这样！”然后开始跳舞。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #if BEFORE MOP
 						["groups"] = bubbleDown({ ["timeline"] = { REMOVED_5_0_4 } }, {
 							emof(30, i(50458)),	-- Bizuri's Totem of Shattered Ice
@@ -4092,7 +4619,24 @@ root(ROOTS.Zones, {
 					}),
 					-- #if AFTER CATA
 					n(32712, {	-- The Amazing Zanzo
-						["description"] = "This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",
+						["description"] = createLocalizationString({
+							readable = "This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",
+							constant = "THIS_NPC_HAVE_TWO_POSSIPLE_SPAWNS_AND_ROUTES",
+							export = true,
+							text = {
+								en = "This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此 NPC 有两个可能的刷新点和路线：要么从薄暮台的好战秘术师出发前往附近的银行，要么从巧手旅店出发，穿过法师贸易区再返回。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							{
 								["recipeID"] = 28272,	-- Polymorph (Pig)
@@ -4103,7 +4647,24 @@ root(ROOTS.Zones, {
 					-- #endif
 					n(32419, {	-- Umbiwa <Barmaid>
 						["coord"] = { 67.4, 32.2, NORTHREND_DALARAN },
-						["description"] = "Umbiwa is walking around in the Tavern.",
+						["description"] = createLocalizationString({
+							readable = "Umbiwa is walking around in the Tavern.",
+							constant = "UMBIWA_IS_WALKING_AROUND_IN_THE_TAVERN",
+							export = true,
+							text = {
+								en = "Umbiwa is walking around in the Tavern.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "乌姆比瓦在旅店里来回走动。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "sub", "common_vendor", 32420 }},	-- Mimbihi <Barmaid>
 					}),

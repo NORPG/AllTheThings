@@ -76,7 +76,24 @@ root(ROOTS.Zones, {
 				}),
 				battlepets({
 					pet(751, {	-- Dancing Water Skimmer (PET!)
-						["description"] = "also common as a secondary pet.",
+						["description"] = createLocalizationString({
+							readable = "also common as a secondary pet.",
+							constant = "ALSO_COMMON_AS_A_SECONDARY_PET",
+							export = true,
+							text = {
+								en = "also common as a secondary pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "作为次级宠物也很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 30.2, 77.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Mistfall Village
 							{ 71.2, 40.2, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
@@ -84,14 +101,48 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(747, {	-- Effervescent Glowfly (PET!)
-						["description"] = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",
+						["description"] = createLocalizationString({
+							readable = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",
+							constant = "COMMONLY_FOUND_AS_A_SECONDARY_PET_IN_VALE_OF",
+							export = true,
+							text = {
+								en = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常作为次级宠物出现于锦绣谷。也可在至尊天神之门外出没为首要宠物，并偶尔在锦绣谷各处刷新。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 56.0, 89.0, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
 							{ 53.7, 89.2, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
 						},
 					}),
 					pet(383, {	-- Eternal Strider (PET!)
-						["description"] = "In commonly found by the riverbed.",
+						["description"] = createLocalizationString({
+							readable = "In commonly found by the riverbed.",
+							constant = "IN_COMMONLY_FOUND_BY_THE_RIVERBED",
+							export = true,
+							text = {
+								en = "In commonly found by the riverbed.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于河床边。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 34.0, 78.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Mistfall Village
 							{ 72.6, 27.6, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
@@ -99,23 +150,57 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(748, {	-- Gilded Moth (PET!)
-						["description"] = "Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",
+							constant = "CAN_BE_FOUND_IN_GROUPS_OF_THREE_ACROSS_THE_ZONE",
+							export = true,
+							text = {
+								en = "Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在该区域成三只一群地找到。不过，任何时候只会刷新 1-2 群，而且镀金飞蛾只能作为主宠物找到。使用目标宏，并考虑使用战斗石来获得稀有品质的宠物。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(749, {	-- Golden Civet (PET!)
-						["description"] = "also common as a secondary pet.",
+						["description"] = "~L.ALSO_COMMON_AS_A_SECONDARY_PET",
 						["coords"] = {
 							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Gate of the Setting Sun
 						},
 					}),
 					pet(750, {	-- Golden Civet Kitten (PET!)
-						["description"] = "also common as a secondary pet.",
+						["description"] = "~L.ALSO_COMMON_AS_A_SECONDARY_PET",
 						["coords"] = {
 							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Gate of the Setting Sun
 							{ 38.6, 64.8, VALE_OF_ETERNAL_BLOSSOMS },	-- Jin Yang Road
 						},
 					}),
 					pet(752, {	-- Yellow-Bellied Bullfrog (PET!)
-						["description"] = "Can sometimes be found by the riverbed, also common as a secondary pet.",
+						["description"] = createLocalizationString({
+							readable = "Can sometimes be found by the riverbed, also common as a secondary pet.",
+							constant = "CAN_SOMETIMES_BE_FOUND_BY_THE_RIVERBED_ALSO",
+							export = true,
+							text = {
+								en = "Can sometimes be found by the riverbed, also common as a secondary pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "有时可在河床附近发现，作为次要宠物也很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 				explorationHeader({
@@ -288,7 +373,24 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { THE_JADE_FOREST, KUN_LAI_SUMMIT, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["description"] = createLocalizationString({
+							readable = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+							constant = "ACCOUNT_WIDE_DAILY_QUEST_MUST_HAVE_COMPLETED",
+							export = true,
+							text = {
+								en = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "账号通用的日常任务。必须已完成任务|cffffff00寓言中的野兽。|r",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["timeline"] = { ADDED_5_2_0 },
 						["isDaily"] = true,
@@ -323,7 +425,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["description"] = "~L.ACCOUNT_WIDE_DAILY_QUEST_MUST_HAVE_COMPLETED",
 						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["timeline"] = { ADDED_5_2_0 },
 						["isDaily"] = true,
@@ -354,7 +456,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { DREAD_WASTES, TOWNLONG_STEPPES, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["description"] = "~L.ACCOUNT_WIDE_DAILY_QUEST_MUST_HAVE_COMPLETED",
 						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["timeline"] = { ADDED_5_2_0 },
 						["isDaily"] = true,
@@ -385,7 +487,24 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
+						["description"] = createLocalizationString({
+							readable = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
+							constant = "THESE_PETS_CAN_BE_FOUND_IN_THE_PANDAREN_SPIRIT",
+							export = true,
+							text = {
+								en = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，可以从四位熊猫人之灵驯服师的各自日常任务所给予的熊猫人之灵宠物补给中找到这些宠物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceAchievement"] = 7499,	-- Taming the World
 						["timeline"] = { ADDED_5_0_4 },
 						["groups"] = {
@@ -434,7 +553,24 @@ root(ROOTS.Zones, {
 							},
 							["maps"] = { SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Weekly Quest.",
+						["description"] = createLocalizationString({
+							readable = "Account-Wide Weekly Quest.",
+							constant = "ACCOUNT_WIDE_WEEKLY_QUEST",
+							export = true,
+							text = {
+								en = "Account-Wide Weekly Quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "账号通用周常任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_3_0 },
 						["isWeekly"] = true,
 						["groups"] = {
@@ -497,7 +633,24 @@ root(ROOTS.Zones, {
 							["qg"] = 66998,	-- Jinho the Wind Breaker
 							["coord"] = { 46.6, 56.5, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 						}),
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
+						["description"] = createLocalizationString({
+							readable = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
+							constant = "QUEST_MAY_ONLY_BE_COMPLETED_ONCE_PER_CHARACTER",
+							export = true,
+							text = {
+								en = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该任务每个角色只能完成一次。你从宝物箱中获得的物品是职业和专精特定的。并非所有能装备它们的职业都能获得全部物品。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
 							i(98546),	-- Bulging Heroic Cache of Treasures
@@ -695,7 +848,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50843, {	-- Portent
-						["description"] = "This is a rare Tameable Hunter Pet of 4 varying colors.",
+						["description"] = createLocalizationString({
+							readable = "This is a rare Tameable Hunter Pet of 4 varying colors.",
+							constant = "THIS_IS_A_RARE_TAMEABLE_HUNTER_PET_OF_4_VARYING",
+							export = true,
+							text = {
+								en = "This is a rare Tameable Hunter Pet of 4 varying colors.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是一种稀有的可驯服猎人宠物，有 4 种不同的颜色。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					n(50780, {	-- Sahn Tidehunter
 						["coords"] = {
@@ -744,7 +914,24 @@ root(ROOTS.Zones, {
 				}),
 				n(SPECIAL, {
 					n(64403, {	-- Alani
-						["description"] = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
+						["description"] = createLocalizationString({
+							readable = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
+							constant = "ONLY_THE_PERSON_WHO_USES_THE_SKY_CRYSTAL_ON",
+							export = true,
+							text = {
+								en = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有对阿拉尼使用天空水晶的人才能获得该坐骑，并且可以将其出售或交易。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 56.2, 42.6, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 35.6, 26.0, VALE_OF_ETERNAL_BLOSSOMS },
@@ -796,7 +983,24 @@ root(ROOTS.Zones, {
 					}),
 					o(213456, {	-- The Emperor's Burden - Part 8
 						-- #if AFTER BFA
-						["description"] = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+						["description"] = createLocalizationString({
+							readable = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+							constant = "THIS_CAN_ONLY_BE_FOUND_IN_THE_NON_N_ZOTH_PHASE",
+							export = true,
+							text = {
+								en = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此物只能在非恩佐斯阶段找到。与知识之座顶部的希多尔米交谈即可回到过去。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						["coord"] = { 67.7, 44.2, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
@@ -1286,7 +1490,24 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 					n(64028, {	-- Challenger Soong <Challenge Dungeons>
-						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+						["description"] = createLocalizationString({
+							readable = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+							constant = "YOU_CAN_ONLY_BUY_ITEMS_FROM_THIS_VENDOR_IF_YOU",
+							export = true,
+							text = {
+								en = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只有当你的角色拥有“挑战征服者：黄金”光辉事迹时，你才能从这名商人处购买物品。你只能购买本职业的套装。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
@@ -1381,7 +1602,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(63994, {	-- Challenger Wuli <Challenge Dungeons>
-						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+						["description"] = "~L.YOU_CAN_ONLY_BUY_ITEMS_FROM_THIS_VENDOR_IF_YOU",
 						["coord"] = { 61.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
 						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
@@ -1634,7 +1855,24 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(87779, {	-- Ancient Guo-Lai Cache Key
-						["description"] = "Can randomly drop from any Mogu related mob in the zone.",
+						["description"] = createLocalizationString({
+							readable = "Can randomly drop from any Mogu related mob in the zone.",
+							constant = "CAN_RANDOMLY_DROP_FROM_ANY_MOGU_RELATED_MOB_IN",
+							export = true,
+							text = {
+								en = "Can randomly drop from any Mogu related mob in the zone.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在该区域中任何与魔古相关的怪物身上都有几率掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(85582, {	-- Shao-Tien Cage Key
 						["crs"] = {

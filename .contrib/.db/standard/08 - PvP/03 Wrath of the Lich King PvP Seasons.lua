@@ -82,7 +82,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						["filterID"] = MOUNTS,
 					}),
 					i(46708, {	-- Deadly Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_5",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予巫妖王之怒第 1 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(16316),	-- Challenger: Season 5
@@ -1024,7 +1041,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						["filterID"] = MOUNTS,
 					}),
 					i(46171, {	-- Furious Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_6",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予巫妖王之怒第 2 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(17418),	-- Challenger: Season 6
@@ -1396,7 +1430,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						["filterID"] = MOUNTS,
 					}),
 					i(47840, {	-- Relentless Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_7",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予巫妖王之怒第 3 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(18547),	-- Challenger: Season 7
@@ -1774,7 +1825,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						["filterID"] = MOUNTS,
 					}),
 					i(50435, {	-- Wrathful Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
+						["description"] = createLocalizationString({
+							readable = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
+							constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_8",
+							export = true,
+							text = {
+								en = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "授予巫妖王之怒第 4 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(18548),	-- Rival: Season 8
@@ -2091,7 +2159,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					i(51534, {	-- Wrathful Gladiator's Tabard
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
-						["description"] = "This was never removed from the vendor in Classic.",
+						["description"] = createLocalizationString({
+							readable = "This was never removed from the vendor in Classic.",
+							constant = "THIS_WAS_NEVER_REMOVED_FROM_THE_VENDOR_IN",
+							export = true,
+							text = {
+								en = "This was never removed from the vendor in Classic.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在经典旧世中，它从未从商人处移除。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						-- #endif
 					}),

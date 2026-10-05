@@ -11,7 +11,24 @@ end]];
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {
 	header(HEADERS.Faction, FACTION_NETHERWING, bubbleDownSelf({ ["timeline"] = { ADDED_2_1_0 } }, {
-		["description"] = "The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",
+		["description"] = createLocalizationString({
+			readable = "The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",
+			constant = "THE_NETHERWING_SOMETIMES_CALLED_THE_NETHERWING",
+			export = true,
+			text = {
+				en = "The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "灵翼，有时被称为灵翼龙族，是外域虚空龙的主要阵营。\n尽管由于影月谷龙喉兽人的对待方式，它们总体上对大多数类人生物怀有敌意，但如果完成帮助它们的任务，它们的态度是可以被改变的。",
+				-- TODO: tw = "",
+			},
+		}),
 		["icon"] = 132250,
 		["maps"] = { SHADOWMOON_VALLEY },
 		["lvl"] = lvlsquish(70, 70, 25),
@@ -431,7 +448,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["isDaily"] = true,
 				}),
 				q(11081, {	-- The Great Murkblood Revolt
-					["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",
+					["description"] = createLocalizationString({
+						readable = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",
+						constant = "THE_PLANS_CAN_BE_FOUND_INSIDE_SLUDGE_COVERED",
+						export = true,
+						text = {
+							en = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这些图纸可以在淤泥覆盖的物体中找到，从矿洞内的黑血生物身上拾取。你必须至少与灵翼龙族达到友好才能拾取它们。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 				}),
@@ -527,7 +561,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 					["coord"] = { 65.6, 85.9, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
-					["description"] = "To access this vendor, you must reach Exalted with the Netherwing and claim one of the netherwing drakes in Shattrath.",
+					["description"] = createLocalizationString({
+						readable = "To access this vendor, you must reach Exalted with the Netherwing and claim one of the netherwing drakes in Shattrath.",
+						constant = "TO_ACCESS_THIS_VENDOR_YOU_MUST_REACH_EXALTED",
+						export = true,
+						text = {
+							en = "To access this vendor, you must reach Exalted with the Netherwing and claim one of the netherwing drakes in Shattrath.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要接触此商人，你必须与灵翼达到崇拜，并在沙塔斯认领一只灵翼幼龙。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(32858),	-- Azure Netherwing Drake (MOUNT!)
 						i(32859),	-- Cobalt Netherwing Drake (MOUNT!)

@@ -43,7 +43,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLACKROCK_MOUNTAIN, {
 				["provider"] = { "i", 22115 },	-- Extra-Dimensional Ghost Revealer
 				["groups"] = {
 					n(SPECIAL, {
-						["description"] = "Available if a specific Quest (8996) has been completed.",
+						["description"] = createLocalizationString({
+							readable = "Available if a specific Quest (8996) has been completed.",
+							constant = "AVAILABLE_IF_A_SPECIFIC_QUEST_8996_HAS_BEEN",
+							export = true,
+							text = {
+								en = "Available if a specific Quest (8996) has been completed.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果已完成特定任务（8996），则可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 8996,	-- Return to Bodley
 						["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
 						["groups"] = {

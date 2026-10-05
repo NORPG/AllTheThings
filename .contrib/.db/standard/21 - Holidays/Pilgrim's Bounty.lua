@@ -236,7 +236,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 		}),
 		-- #endif
 		n(QUESTS, {
-			["description"] = "The daily quests requires the following reagents:\nAutumnal Herbs - 60 (12 stacks) \nHoney - 100 (20 stacks)\nWild Turkey - 20\nPumpkin - 20 (4 stacks)\nPotato - 20 (4 stacks)\nCranberry - 20 (4 stacks)\nMild Spices - 20 (4 stacks)\nSimple Flour - 20 (4 stacks)\n\nThe most effective route is to start at Stormwind/Undercity and farm the Wild Turkeys from Elwynn/Tirisfal, then get every reagent from vendor. Then move on to the two other cities for their dailies. Order does not matter, but remember to buy Cranberries and Potatoes from the respective vendors! Then return to Stormwind/Undercity for the rest.",
+			["description"] = createLocalizationString({
+				readable = "The daily quests requires the following reagents:\nAutumnal Herbs - 60 (12 stacks) \nHoney - 100 (20 stacks)\nWild Turkey - 20\nPumpkin - 20 (4 stacks)\nPotato - 20 (4 stacks)\nCranberry - 20 (4 stacks)\nMild Spices - 20 (4 stacks)\nSimple Flour - 20 (4 stacks)\n\nThe most effective route is to start at Stormwind/Undercity and farm the Wild Turkeys from Elwynn/Tirisfal, then get every reagent from vendor. Then move on to the two other cities for their dailies. Order does not matter, but remember to buy Cranberries and Potatoes from the respective vendors! Then return to Stormwind/Undercity for the rest.",
+				constant = "THE_DAILY_QUESTS_REQUIRES_THE_FOLLOWING",
+				export = true,
+				text = {
+					en = "The daily quests requires the following reagents:\nAutumnal Herbs - 60 (12 stacks) \nHoney - 100 (20 stacks)\nWild Turkey - 20\nPumpkin - 20 (4 stacks)\nPotato - 20 (4 stacks)\nCranberry - 20 (4 stacks)\nMild Spices - 20 (4 stacks)\nSimple Flour - 20 (4 stacks)\n\nThe most effective route is to start at Stormwind/Undercity and farm the Wild Turkeys from Elwynn/Tirisfal, then get every reagent from vendor. Then move on to the two other cities for their dailies. Order does not matter, but remember to buy Cranberries and Potatoes from the respective vendors! Then return to Stormwind/Undercity for the rest.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "这些日常任务需要以下材料：\n秋日草药 - 60（12 组）\n蜂蜜 - 100（20 组）\n野火鸡 - 20\n南瓜 - 20（4 组）\n土豆 - 20（4 组）\n越橘 - 20（4 组）\n温和的香料 - 20（4 组）\n简单面粉 - 20（4 组）\n\n最有效的路线是从暴风城/幽暗城开始，在艾尔文森林/提瑞斯法林地刷野火鸡，然后从商人处买齐每一种材料。接着前往另外两座城市做它们的日常任务。顺序无关紧要，但记得从各自的商人处购买越橘和土豆！之后再返回暴风城/幽暗城处理剩余的。",
+					-- TODO: tw = "",
+				},
+			}),
 			["groups"] = {
 				q(14033, {	-- Candied Sweet Potatoes (Alliance)
 					["sourceQuest"] = 14030,	-- They're Ravenous In Darnassus (Alliance)
@@ -669,7 +686,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 		}),
 		n(VENDORS, {
 			n(COMMON_VENDOR_ITEMS, {
-				["description"] = "These items can be found on any of the holiday vendors.",
+				["description"] = "~L.THESE_ITEMS_CAN_BE_FOUND_ON_ANY_OF_THE_HOLIDAY",
 				["maps"] = ALL_PILGIM_MAPS,
 				["crs"] = {
 					-- Alliance Vendors
@@ -779,7 +796,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 		}),
 		n(ZONE_DROPS, {
 			i(189705, {	-- Turkey Soul
-				["description"] = "Gain the buff 'The Spirit of Sharing' by eating 5 stacks of each type of Pilgrim's Bounty food at the tables, then continue eating various foods.\nThe item will be auto-looted randomly when leaving a chair.",
+				["description"] = createLocalizationString({
+					readable = "Gain the buff 'The Spirit of Sharing' by eating 5 stacks of each type of Pilgrim's Bounty food at the tables, then continue eating various foods.\nThe item will be auto-looted randomly when leaving a chair.",
+					constant = "GAIN_THE_BUFF_THE_SPIRIT_OF_SHARING_BY_EATING_5",
+					export = true,
+					text = {
+						en = "Gain the buff 'The Spirit of Sharing' by eating 5 stacks of each type of Pilgrim's Bounty food at the tables, then continue eating various foods.\nThe item will be auto-looted randomly when leaving a chair.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在餐桌上食用每种收获节食物各 5 层以获得“分享精神”增益，然后继续食用各种食物。\n离开椅子时，该物品会随机自动拾取。",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_9_1_5 },
 				["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
 				["maps"] = ALL_PILGIM_MAPS,

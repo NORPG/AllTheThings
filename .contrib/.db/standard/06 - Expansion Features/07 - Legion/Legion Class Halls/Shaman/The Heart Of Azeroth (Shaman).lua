@@ -281,7 +281,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Learn Mission Table & Research
 					q(44544, {	-- Call of the Earthen Ring
-						["description"] = "After completing |cffffff00Azeroth Needs You|r, return to Dalaran and this NPC will approach you within a few seconds.",
+						["description"] = createLocalizationString({
+							readable = "After completing |cffffff00Azeroth Needs You|r, return to Dalaran and this NPC will approach you within a few seconds.",
+							constant = "AFTER_COMPLETING_CFFFFFF00AZEROTH_NEEDS_YOU_R",
+							export = true,
+							text = {
+								en = "After completing |cffffff00Azeroth Needs You|r, return to Dalaran and this NPC will approach you within a few seconds.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成 |cffffff00艾泽拉斯需要你|r 后，返回达拉然，这个 NPC 会在几秒内走向你。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
 						["provider"] = { "n", 114274 },	-- Mackay Firebeard
 						["maps"] = { LEGION_DALARAN },
@@ -829,7 +846,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				n(SPECIAL, {
 					n(103004, {	-- Puzzlemaster Lo <The Earthen Ring>
-						["description"] = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
+						["description"] = createLocalizationString({
+							readable = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
+							constant = "COMPLETING_ALL_FIVE_LEVELS_OF_THE_PUZZLE_WILL",
+							export = true,
+							text = {
+								en = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成谜题的全部五个关卡后，你将获得一个内含该玩具的宝箱。\n\n棋盘布局（背对谜题大师站在他面前）：\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n 第 1 关：A, E, M, U, Y\n\n 第 2 关：C, K, M, O, W\n\n 第 3 关：B, K, L, O, V\n\n 第 4 关：A, E, F, G, H, I, J, K, O, Q, S, W\n\n 第 5 关：D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 25.2, 50.2, THE_HEART_OF_AZEROTH },
 						["groups"] = {
 							q(41071, {	-- Puzzle 01 Solved
@@ -864,7 +898,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 					n(114064, {	-- Snowfang
-						["description"] = "Defeating this NPC in a pet battle awards the pet.",
+						["description"] = createLocalizationString({
+							readable = "Defeating this NPC in a pet battle awards the pet.",
+							constant = "DEFEATING_THIS_NPC_IN_A_PET_BATTLE_AWARDS_THE",
+							export = true,
+							text = {
+								en = "Defeating this NPC in a pet battle awards the pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在宠物对战中击败该 NPC 即可获得该宠物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = { i(141530) },	-- Snowfang (PET!)
 					}),
 					gt(49, {	-- Spirit Walk

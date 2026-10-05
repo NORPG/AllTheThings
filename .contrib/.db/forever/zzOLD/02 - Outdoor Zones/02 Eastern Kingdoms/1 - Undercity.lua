@@ -55,7 +55,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["lvl"] = 48,
 							["groups"] = {
 								i(15102, {	-- Un'Goro Tested Sample
-									["description"] = "Might contain nothing. Bring way more slime samples than you need.",
+									["description"] = createLocalizationString({
+										readable = "Might contain nothing. Bring way more slime samples than you need.",
+										constant = "MIGHT_CONTAIN_NOTHING_BRING_WAY_MORE_SLIME",
+										export = true,
+										text = {
+											en = "Might contain nothing. Bring way more slime samples than you need.",
+											-- TODO: de = "",
+											-- TODO: es = "",
+											-- TODO: mx = "",
+											-- TODO: fr = "",
+											-- TODO: it = "",
+											-- TODO: ko = "",
+											-- TODO: pt = "",
+											-- TODO: ru = "",
+											cn = "可能什么也没有。请携带远超所需的软泥样本。",
+											-- TODO: tw = "",
+										},
+									}),
 									["groups"] = {
 										objective(1, {	-- 0/5 Pure Un'Goro Sample
 											["questID"] = 4294,	-- ... and a Batch of Ooze
@@ -66,7 +83,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 						}),
 						i(12235, {	-- Un'Goro Slime Sample
-							["description"] = "Bring at least 30 of these back with you to the Undercity for testing.",
+							["description"] = createLocalizationString({
+								readable = "Bring at least 30 of these back with you to the Undercity for testing.",
+								constant = "BRING_AT_LEAST_30_OF_THESE_BACK_WITH_YOU_TO_THE",
+								export = true,
+								text = {
+									en = "Bring at least 30 of these back with you to the Undercity for testing.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "至少带 30 个此物品返回幽暗城进行测试。",
+									-- TODO: tw = "",
+								},
+							}),
 							["crs"] = {
 								6559,	-- Glutinous Ooze
 								6556,	-- Muculent Ooze
@@ -119,7 +153,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["lvl"] = 48,
 							["groups"] = {
 								i(15103, {	-- Corrupt Tested Sample
-									["description"] = "Might contain nothing. Bring way more slime samples than you need.",
+									["description"] = "~L.MIGHT_CONTAIN_NOTHING_BRING_WAY_MORE_SLIME",
 									["groups"] = {
 										objective(1, {	-- 0/5 Corrupted Felwood Sample
 											["questID"] = 4293,	-- A Sample of Slime...
@@ -130,7 +164,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 						}),
 						i(12230, {	-- Felwood Slime Sample
-							["description"] = "Bring at least 30 of these back with you to the Undercity for testing.",
+							["description"] = "~L.BRING_AT_LEAST_30_OF_THESE_BACK_WITH_YOU_TO_THE",
 							["crs"] = {
 								7086,	-- Cursed Ooze
 								7092,	-- Tainted Ooze
@@ -1092,7 +1126,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22250, {	-- Herb Pouch
-							["description"] = "Only select Herbalism Suppliers sells this pouch.",
+							["description"] = "~L.ONLY_SELECT_HERBALISM_SUPPLIERS_SELLS_THIS",
 							["providers"] = {
 								{ "n", 4216},	-- Chardryn <Herbalism Supplies>
 								{ "n", 5503},	-- Eldraeith <Herbalism Supplier>
@@ -1372,7 +1406,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				n(4554, {	-- Tawny Grisette <Mushroom Vendor>
 					["coord"] = { 69.7, 44.8, MAP.UNDERCITY },
-					["description"] = "Walks around the Trade Quarter, upper level.",
+					["description"] = createLocalizationString({
+						readable = "Walks around the Trade Quarter, upper level.",
+						constant = "WALKS_AROUND_THE_TRADE_QUARTER_UPPER_LEVEL",
+						export = true,
+						text = {
+							en = "Walks around the Trade Quarter, upper level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在贸易区上层走动。",
+							-- TODO: tw = "",
+						},
+					}),
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4607),	-- Delicious Cave Mold

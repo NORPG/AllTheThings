@@ -164,7 +164,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(48522, {	-- A Revealing Missive
-				["description"] = "This quest appears to drop from whichever Sister you kill last.",
+				["description"] = createLocalizationString({
+					readable = "This quest appears to drop from whichever Sister you kill last.",
+					constant = "THIS_QUEST_APPEARS_TO_DROP_FROM_WHICHEVER",
+					export = true,
+					text = {
+						en = "This quest appears to drop from whichever Sister you kill last.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此任务似乎会从你最后杀死的那位姐妹身上掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 48520 },	-- The Three Sisters
 				["provider"] = { "i", 152587 },	-- Levae's Missive (QS!)
 				["races"] = ALLIANCE_ONLY,
@@ -1717,11 +1734,45 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["sourceQuest"] = 48519,	-- Hope They Can't Swim
 				}),
 				q(48474, {	-- Crypt Keepers
-					["description"] = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
+					["description"] = createLocalizationString({
+						readable = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
+						constant = "YOU_MUST_ACCEPT_THE_QUEST_CFFFFFF00SEEING",
+						export = true,
+						text = {
+							en = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须接受任务|cffffff00看见灵魂|r，此奖励目标才会激活。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 48475,	-- Seeing Spirits
 				}),
 				q(47969, {	-- Fallhaven's Curse
-					["description"] = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
+					["description"] = createLocalizationString({
+						readable = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
+						constant = "YOU_MUST_ACCEPT_THE_QUEST_CFFFFFF00SIGNS_AND",
+						export = true,
+						text = {
+							en = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须接受任务|cffffff00征兆与预兆|r，此奖励目标才会激活。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 47968,	-- Signs and Portents
 				}),
 				q(48181),	-- Nooooope

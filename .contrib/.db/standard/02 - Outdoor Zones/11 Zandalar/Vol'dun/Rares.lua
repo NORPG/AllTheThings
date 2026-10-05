@@ -81,7 +81,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(124722, {	-- Commodore Calhoun
-				["description"] = "This rare is at the very top of the Ashvane encampment, not down by the ship.",
+				["description"] = createLocalizationString({
+					readable = "This rare is at the very top of the Ashvane encampment, not down by the ship.",
+					constant = "THIS_RARE_IS_AT_THE_VERY_TOP_OF_THE_ASHVANE",
+					export = true,
+					text = {
+						en = "This rare is at the very top of the Ashvane encampment, not down by the ship.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "此稀有怪位于艾什凡营地的最顶端，而不是下面的船边。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 50905,
 				["coord"] = { 42.5, 92.1, VOLDUN },
 				["groups"] = {
@@ -92,7 +109,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(162681, {	-- Elusive Quickhoof
-				["description"] = "Feed it Seaside Leafy Greens Mix to get the mount.",
+				["description"] = createLocalizationString({
+					readable = "Feed it Seaside Leafy Greens Mix to get the mount.",
+					constant = "FEED_IT_SEASIDE_LEAFY_GREENS_MIX_TO_GET_THE",
+					export = true,
+					text = {
+						en = "Feed it Seaside Leafy Greens Mix to get the mount.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "喂它海滨绿叶蔬菜混合饲料以获得坐骑。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 161128, 1 } },	-- Seaside Leafy Greens
 				["coords"] = {
 					{ 54.2, 51.0, VOLDUN },

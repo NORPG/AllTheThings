@@ -65,7 +65,24 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				i(95041, {	-- Malevolent Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
+					["description"] = createLocalizationString({
+						readable = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
+						constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_12",
+						export = true,
+						text = {
+							en = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "授予熊猫人之谜第 1 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				-- #if ANYCLASSIC
 				ach(42762),	-- Challenger: Season 12
@@ -890,7 +907,24 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				i(104325, {	-- Tyrannical Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
+					["description"] = createLocalizationString({
+						readable = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
+						constant = "AWARDED_TO_MEMBERS_OF_THE_ARENA_TEAMS_DURING_13",
+						export = true,
+						text = {
+							en = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "授予熊猫人之谜第 2 赛季期间所在战场组排名前 0.5% 的竞技场战队成员。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				-- #if ANYCLASSIC
 				ach(61098),	-- Challenger: Season 13
@@ -914,7 +948,24 @@ root(ROOTS.PVP, {
 				-- #endif
 			})),
 			n(PVP_HONOR, {
-				["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
+				["description"] = createLocalizationString({
+					readable = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
+					constant = "THESE_ITEMS_ARE_AVAILABLE_FROM_MALEVOLENT",
+					export = true,
+					text = {
+						en = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这些物品可从恶毒角斗士：第 12 赛季商人处获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					n(WEAPONS, {
 						moh(2, i(91482)),	-- Malevolent Gladiator's Barrier
@@ -2408,17 +2459,68 @@ root(ROOTS.PVP, {
 							i(100375),	-- Grievous Gladiator's Clasp of Meditation
 							i(100207, {	-- Grievous Gladiator's Cord of Accuracy
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								["description"] = createLocalizationString({
+									readable = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+									constant = "THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS",
+									export = true,
+									text = {
+										en = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "该物品只能通过恶孽角斗士术士套装获得。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 							}),
 							i(100205, {	-- Grievous Gladiator's Cord of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								["description"] = createLocalizationString({
+									readable = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+									constant = "THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_2",
+									export = true,
+									text = {
+										en = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "该物品只能通过恶孽角斗士法师套装获得。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 							}),
 							i(100209, {	-- Grievous Gladiator's Cord of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								["description"] = createLocalizationString({
+									readable = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+									constant = "THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_3",
+									export = true,
+									text = {
+										en = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "该物品只能通过恶孽角斗士牧师套装获得。",
+										-- TODO: tw = "",
+									},
+								}),
 								-- #endif
 							}),
 							i(100393),	-- Grievous Gladiator's Girdle of Accuracy
@@ -2443,17 +2545,17 @@ root(ROOTS.PVP, {
 							i(100312),	-- Grievous Gladiator's Sabatons of Cruelty
 							i(100213, {	-- Grievous Gladiator's Treads of Alacrity
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS",
 								-- #endif
 							}),
 							i(100211, {	-- Grievous Gladiator's Treads of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_2",
 								-- #endif
 							}),
 							i(100215, {	-- Grievous Gladiator's Treads of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_3",
 								-- #endif
 							}),
 							i(100399),	-- Grievous Gladiator's Warboots of Alacrity
@@ -2936,17 +3038,17 @@ root(ROOTS.PVP, {
 							i(100694),	-- Grievous Gladiator's Clasp of Meditation
 							i(100606, {	-- Grievous Gladiator's Cord of Accuracy
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS",
 								-- #endif
 							}),
 							i(100630, {	-- Grievous Gladiator's Cord of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_2",
 								-- #endif
 							}),
 							i(100655, {	-- Grievous Gladiator's Cord of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_3",
 								-- #endif
 							}),
 							i(100583),	-- Grievous Gladiator's Girdle of Accuracy
@@ -2971,17 +3073,17 @@ root(ROOTS.PVP, {
 							i(100675),	-- Grievous Gladiator's Sabatons of Cruelty
 							i(100563, {	-- Grievous Gladiator's Treads of Alacrity
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS",
 								-- #endif
 							}),
 							i(100632, {	-- Grievous Gladiator's Treads of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_2",
 								-- #endif
 							}),
 							i(100698, {	-- Grievous Gladiator's Treads of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								["description"] = "~L.THIS_ITEM_IS_ONLY_OBTAINABLE_VIA_THE_GRIEVOUS_3",
 								-- #endif
 							}),
 							i(100691),	-- Grievous Gladiator's Warboots of Alacrity

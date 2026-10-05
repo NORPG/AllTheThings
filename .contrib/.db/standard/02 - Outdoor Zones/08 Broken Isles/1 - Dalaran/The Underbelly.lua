@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 							}},
 						}),
 						n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
-							["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
+							["description"] = "~L.THIS_VENDOR_IS_NOT_ALWAYS_PRESENT_IT_CAN_APPEAR",
 							["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
 							["timeline"] = { ADDED_7_0_3 },
 							["groups"] = {

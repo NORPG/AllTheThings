@@ -28,7 +28,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				q(26012, {	-- Trouble at Wyrmrest
-					["description"] = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
+					["description"] = createLocalizationString({
+						readable = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
+						constant = "YOU_NEED_TO_HAVE_CLEARED_THE_FIRST_FOUR_BOSSES",
+						export = true,
+						text = {
+							en = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你需要先击杀冰冠堡垒的前四个首领，此任务才会对你可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceAchievements"] = {
 						4531,	-- Storming the Citadel (10 Player)
 						4604,	-- Storming the Citadel (25 Player)
@@ -40,13 +57,64 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 			}),
 			n(39751, {	-- Baltharus the Warborn
-				["description"] = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",
+				["description"] = createLocalizationString({
+					readable = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",
+					constant = "MUST_BE_KILLED_BEFORE_YOU_CAN_FIGHT_GENERAL",
+					export = true,
+					text = {
+						en = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须先将其击杀，才能与扎里思瑞安将军交战或与任务给予者交谈。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			n(39747, {	-- Saviana Ragefire
-				["description"] = "Must be killed before you can fight General Zarithrian."
+				["description"] = createLocalizationString({
+					readable = "Must be killed before you can fight General Zarithrian.",
+					constant = "MUST_BE_KILLED_BEFORE_YOU_CAN_FIGHT_GENERAL_2",
+					export = true,
+					text = {
+						en = "Must be killed before you can fight General Zarithrian.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须先将其击杀，才能与扎里思瑞安将军交战。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 			n(39746, {	-- General Zarithrian
-				["description"] = "Must be killed before you can fight Halion."
+				["description"] = createLocalizationString({
+					readable = "Must be killed before you can fight Halion.",
+					constant = "MUST_BE_KILLED_BEFORE_YOU_CAN_FIGHT_HALION",
+					export = true,
+					text = {
+						en = "Must be killed before you can fight Halion.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须先将其击杀，才能与海莱恩交战。",
+						-- TODO: tw = "",
+					},
+				})
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				e(1652, {	-- Halion

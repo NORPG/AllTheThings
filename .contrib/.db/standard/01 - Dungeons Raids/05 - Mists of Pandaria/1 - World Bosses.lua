@@ -363,7 +363,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					-- Consolation Prize
 					i(95602, {	-- Stormtouched Cache
-						["description"] = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						["description"] = createLocalizationString({
+							readable = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+							constant = "THIS_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO",
+							export = true,
+							text = {
+								en = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是作为安慰奖发放给没有获得实际战利品的玩家。极少情况下会包含合剂、药水、药剂、战斗石、小伙伴以及随机团队等级的小怪掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
@@ -449,7 +466,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 
 					-- Consolation Prize
 					i(95601, {	-- Shiny Pile of Refuse
-						["description"] = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						["description"] = "~L.THIS_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO",
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
@@ -568,7 +585,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(105757),	-- Shipley's Shady Silks
 					-- Consolation Prize
 					i(104273, {	-- Flame-Scarred Cache of Offerings
-						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
+						["description"] = createLocalizationString({
+							readable = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
+							constant = "AWARDED_IF_YOU_FAIL_YOUR_LOOT_ROLL_USUALLY",
+							export = true,
+							text = {
+								en = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在拾取掷骰失败时获得。通常包含金币或制造材料。可能会跟随你的实际专精而不是拾取专精，请向 ATT Discord 提供更多信息。",
+								-- TODO: tw = "",
+							},
+						}),
 						["groups"] = {
 							-- NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
 							-- it's likely that the commented items drop also. if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
@@ -605,21 +639,38 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90410, {	-- Cap of Wandering Pride
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = createLocalizationString({
+							readable = "Before WoD, this item is only available to classes with a relevant specialization.",
+							constant = "BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
+							export = true,
+							text = {
+								en = "Before WoD, this item is only available to classes with a relevant specialization.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在《德拉诺之王》之前，此物品仅对拥有相关专精的职业开放。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 					}),
 					i(90413),	-- Crest of the Grand Warband
 					i(90416, {	-- Crown of Ranging Invasion
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90411),	-- Facemask of Unrepentant Banditry
 					i(90408, {	-- Free Spirit Hood
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90415),	-- Giantfoot Headguard
@@ -627,7 +678,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90412, {	-- Helm of Restoring Wind
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90409),	-- Sky-Sear Cowl
@@ -641,7 +692,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90422, {	-- Armor of the Single Cloud
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90425),	-- Carapace of Crushed Conviction
@@ -649,13 +700,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90423, {	-- Chestguard of the Unbowed Back
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90419, {	-- Fireproofed Chestguard
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90420),	-- Flameshot Wrap
@@ -663,7 +714,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90417, {	-- Robes of Blue Skies
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90418),	-- Robes of the Lightning Rider
@@ -673,20 +724,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90448, {	-- Cannonfire Cord
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90450, {	-- Carrot-Holder Belt
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90456),	-- Cord of Crazed Strength
 					i(90454, {	-- Girdle of the Galloping Giant
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90453),	-- Girdle of the Raging Rider
@@ -694,20 +745,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90452, {	-- Sparkmaker Girdle
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					-- Boots
 					i(90443, {	-- Burnmender Boots
 						-- #if BEFORE WOD
 						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90445, {	-- Firerider Treads
 						-- #if BEFORE WOD
 						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90442),	-- Flamefoot Tabi
@@ -716,13 +767,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90440, {	-- Slippers of Fiery Retribution
 						-- #if BEFORE WOD
 						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90441, {	-- Stompdodger Boots
 						-- #if BEFORE WOD
 						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						["description"] = "~L.BEFORE_WOD_THIS_ITEM_IS_ONLY_AVAILABLE_TO",
 						-- #endif
 					}),
 					i(90447),	-- Stompers of Vigorous Stomping
@@ -735,7 +786,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90434),	-- Steaming Seal of Flame
 					-- Consolation Prize
 					i(90840, {	-- Marauder's Gleaming Sack of Gold
-						["description"] = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						["description"] = createLocalizationString({
+							readable = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+							constant = "THIS_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO_2",
+							export = true,
+							text = {
+								en = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是作为安慰奖发放给未能获得实际战利品的玩家。极少情况下会包含合剂、药水、药剂、战斗石、小伙伴以及随机团队等级的小怪掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #if BEFORE 6.0.0
 						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
 						-- #endif
@@ -1010,7 +1078,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}, {
 					-- Consolation Prize
 					i(90839, {	-- Cache of Sha-Touched Gold
-						["description"] = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						["description"] = "~L.THIS_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO_2",
 						-- #if BEFORE 6.0.0
 						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
 						-- #endif

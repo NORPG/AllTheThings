@@ -124,7 +124,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(4881, {	-- Assassination Plot
-					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
+					["description"] = createLocalizationString({
+						readable = "The item that starts this quest is dropped by Galak Messengers.",
+						constant = "THE_ITEM_THAT_STARTS_THIS_QUEST_IS_DROPPED_BY",
+						export = true,
+						text = {
+							en = "The item that starts this quest is dropped by Galak Messengers.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "起始该任务的物品由加拉克信使掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 12564 },	-- Assassination Note
 					["coord"] = { 21.2, 32.0, MAP.THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
@@ -149,7 +166,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(5178, {	-- Air Totem
-							["description"] = "You must keep this in your bags forever.",
+							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 						}),
 					},
 				}),
@@ -161,7 +178,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(5178, {	-- Air Totem
-							["description"] = "You must keep this in your bags forever.",
+							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 						}),
 					},
 				}),
@@ -254,7 +271,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Secret phrase found
 							["provider"] = { "n", 6626 },	-- "Plucky" Johnson
-							["description"] = "Target Plucky and then use /beckon at him.",
+							["description"] = createLocalizationString({
+								readable = "Target Plucky and then use /beckon at him.",
+								constant = "TARGET_PLUCKY_AND_THEN_USE_BECKON_AT_HIM",
+								export = true,
+								text = {
+									en = "Target Plucky and then use /beckon at him.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "选中普拉基，然后对他使用 /招手。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 79.6, 75.6, MAP.THOUSAND_NEEDLES },
 						}),
 					},
@@ -687,7 +721,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- Answer Braug Dimspirit's question correctly
-							["description"] = "The answer is Neltharion.",
+							["description"] = createLocalizationString({
+								readable = "The answer is Neltharion.",
+								constant = "THE_ANSWER_IS_NELTHARION",
+								export = true,
+								text = {
+									en = "The answer is Neltharion.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "答案是耐萨里奥。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -707,7 +758,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- Answer Parqual Fintallas' question correctly
-							["description"] = "The answer is Nerzhul.",
+							["description"] = createLocalizationString({
+								readable = "The answer is Nerzhul.",
+								constant = "THE_ANSWER_IS_NERZHUL",
+								export = true,
+								text = {
+									en = "The answer is Nerzhul.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "答案是耐奥祖。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),
@@ -844,7 +912,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(1191, {	-- Zamek's Distraction
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",
+					["description"] = createLocalizationString({
+						readable = "This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",
+						constant = "THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE_3",
+						export = true,
+						text = {
+							en = "This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此任务可重复完成，但只有当你的任务日志中有“保持步调”任务时才能完成。",
+							-- TODO: tw = "",
+						},
+					}),
 					["altQuests"] = { 1190 },	-- Keeping Pace
 					["qg"] = 4709,	-- Zamek
 					["coord"] = { 79.8, 77.0, MAP.THOUSAND_NEEDLES },

@@ -241,7 +241,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["coord"] = { 64.2, 51.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 						n(157176, {	-- The Forgotten
-							["description"] = "Spawns on a platform high up in the air.",
+							["description"] = createLocalizationString({
+								readable = "Spawns on a platform high up in the air.",
+								constant = "SPAWNS_ON_A_PLATFORM_HIGH_UP_IN_THE_AIR",
+								export = true,
+								text = {
+									en = "Spawns on a platform high up in the air.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "刷新在高空的平台上。",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 57342,
 							["coord"] = { 52.0, 41.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["groups"] = {
@@ -325,7 +342,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							i(174041),	-- Eyeball Jelly
 						}),
 						i(170553, {	-- Void Focus Splinter
-							["description"] = "The fastest way is to farm them inside Lesser Vision. To unlock these and the related recipes, you need to complete the Descending Into Madness quest.",
+							["description"] = createLocalizationString({
+								readable = "The fastest way is to farm them inside Lesser Vision. To unlock these and the related recipes, you need to complete the Descending Into Madness quest.",
+								constant = "THE_FASTEST_WAY_IS_TO_FARM_THEM_INSIDE_LESSER_2",
+								export = true,
+								text = {
+									en = "The fastest way is to farm them inside Lesser Vision. To unlock these and the related recipes, you need to complete the Descending Into Madness quest.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "最快的方法是在次级幻象内刷它们。要解锁这些以及相关配方，你需要完成“堕入疯狂”任务。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 						-- #IF BEFORE TWW
 						i(174768, {	-- Cursed Relic
@@ -531,14 +565,48 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(163042, {	-- Ivory Cloud Serpent
 							["coord"] = { 29.0, 53.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-							["description"] = "Requires a Zan-Tien Lasso to wrangle!",
+							["description"] = createLocalizationString({
+								readable = "Requires a Zan-Tien Lasso to wrangle!",
+								constant = "REQUIRES_A_ZAN_TIEN_LASSO_TO_WRANGLE",
+								export = true,
+								text = {
+									en = "Requires a Zan-Tien Lasso to wrangle!",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "需要赞提恩套索才能套住！",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 174927, 1 } },	-- 1x Zan-Tien Lasso
 							["groups"] = {
 								i(174752),	-- Ivory Cloud Serpent (MOUNT!)
 							},
 						}),
 						n(157162, {	-- Rei Lun
-							["description"] = "Spawns inside Guo-Lai Halls, all the way to the back (not off to the left or right).\n\nThe scale drops from the rare and can be turned in to the Rajani provisioner for the mount.",
+							["description"] = createLocalizationString({
+								readable = "Spawns inside Guo-Lai Halls, all the way to the back (not off to the left or right).\n\nThe scale drops from the rare and can be turned in to the Rajani provisioner for the mount.",
+								constant = "SPAWNS_INSIDE_GUO_LAI_HALLS_ALL_THE_WAY_TO_THE",
+								export = true,
+								text = {
+									en = "Spawns inside Guo-Lai Halls, all the way to the back (not off to the left or right).\n\nThe scale drops from the rare and can be turned in to the Rajani provisioner for the mount.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "刷新在郭莱大厅内，一直走到最里面（不是左边或右边的岔路）。\n\n鳞片由该稀有掉落，可交给拉贾尼补给官换取坐骑。",
+									-- TODO: tw = "",
+								},
+							}),
 							["questID"] = 57346,
 							["coord"] = { 21.9, 12.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["groups"] = {
@@ -635,7 +703,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						i(174759),	-- Mogu Relic Fragment
 						i(170497),	-- Stoneshaper Rod
 						i(174927, {	-- Zan-Tien Lasso
-							["description"] = "The lasso is a zone drop from various Mogu mobs.",
+							["description"] = createLocalizationString({
+								readable = "The lasso is a zone drop from various Mogu mobs.",
+								constant = "THE_LASSO_IS_A_ZONE_DROP_FROM_VARIOUS_MOGU_MOBS",
+								export = true,
+								text = {
+									en = "The lasso is a zone drop from various Mogu mobs.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "这根套索是区域掉落，来自各种魔古怪物。",
+									-- TODO: tw = "",
+								},
+							}),
 							["crs"] = {
 								153095,	-- Zan-Tien Caller
 								153094,	-- Zan-Tien Raider
@@ -655,7 +740,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					n(QUESTS, {
 						-- Assault questline
 						q(56574, {	-- Reflections in Amber
-							["description"] = "Quest item drops from many rares during Mantid Assault.",
+							["description"] = createLocalizationString({
+								readable = "Quest item drops from many rares during Mantid Assault.",
+								constant = "QUEST_ITEM_DROPS_FROM_MANY_RARES_DURING_MANTID",
+								export = true,
+								text = {
+									en = "Quest item drops from many rares during Mantid Assault.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "任务物品由螳螂妖突袭期间的许多稀有掉落。",
+									-- TODO: tw = "",
+								},
+							}),
 							["provider"] = { "i", 169888 },	-- Ooze-covered Amber
 							["crs"] = {
 								160825,	-- Amber-Shaper Esh'ri
@@ -1037,7 +1139,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["questID"] = 57364,
 						["coord"] = { 9.5, 67.4, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["description"] = "Use the fishing pole.",
+						["description"] = createLocalizationString({
+							readable = "Use the fishing pole.",
+							constant = "USE_THE_FISHING_POLE",
+							export = true,
+							text = {
+								en = "Use the fishing pole.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用钓竿。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 				n(WORLD_QUESTS, sharedData({

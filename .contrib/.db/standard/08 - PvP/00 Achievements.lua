@@ -719,7 +719,24 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 		["groups"]= {
 			title(326, {	-- <Name>, Patron of War
-				["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
+				["description"] = createLocalizationString({
+					readable = "Connect Twitch and Battle.net accounts and watch tournament streams",
+					constant = "CONNECT_TWITCH_AND_BATTLE_NET_ACCOUNTS_AND",
+					export = true,
+					text = {
+						en = "Connect Twitch and Battle.net accounts and watch tournament streams",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "关联 Twitch 与战网账号并观看赛事直播",
+						-- TODO: tw = "",
+					},
+				}),
 				["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 			}),
 		},

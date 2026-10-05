@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(PROFESSIONS, {
 				prof(ENCHANTING, {
 					n(11073, {	-- Annora <Master Enchanter>
-						["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+						["description"] = "~L.TO_GET_THE_ANNORA_TO_SPAWN_YOU_LL_HAVE_TO_KILL",
 						-- #if BEFORE 2.1.0
 						["groups"] = EXPERT_ARTISAN_ENCHANTING,
 						-- #endif
@@ -426,7 +426,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2278, {	-- The Platinum Discs (1/3)
-					["description"] = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
+					["description"] = "~L.RIGHT_CLICK_ON_THE_DISCS_OF_NORGANNON_AFTER",
 					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["lvl"] = lvlsquish(40, 40, 15),
 				}),
@@ -614,7 +614,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(TREASURES, {
 				o(141979, {	-- Ancient Treasure
-					["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
+					["description"] = "~L.FOUND_IN_THE_HALL_OF_THE_CRAFTERS_AFTER_YOU",
 					["modelScale"] = 3,
 					["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
 						8029,	-- Plans: Wicked Mithril Blade
@@ -622,24 +622,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				o(123329, {	-- Baelog's Chest
 					i(7740, {	-- Gni'kiv Medallion
-						["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
+						["description"] = "~L.USE_THIS_ITEM_ALONG_WITH_THE_SHAFT_OF_TSOL_TO",
 						["timeline"] = { REMOVED_4_1_0 },
 					}),
 				}),
 				o(125477, {	-- Conspicuous Urn
-					["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",
+					["description"] = "~L.IN_THE_ROOM_WITH_THE_LOST_DWARVES_NEXT_TO_THE",
 					["groups"] = {
 						i(7671),	-- Shattered Necklace Topaz
 					},
 				}),
 				o(113757, {	-- Shadowforge Cache
-					["description"] = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
+					["description"] = "~L.WARNING_DEFEAT_THE_GALGANN_FIREHAMMER_FIRST_AS",
 					["groups"] = {
 						i(7669),	-- Shattered Necklace Ruby
 					},
 				}),
 				i(7733, {	-- Staff of Prehistoria
-					["description"] = "Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
+					["description"] = "~L.USE_THIS_ON_THE_KEYSTONE_IN_THE_DIGSITE_THAT",
 					["timeline"] = { REMOVED_4_1_0 },
 					["cost"] = {
 						{ "i", 7740, 1 },	-- Gni'kiv Medallion
@@ -647,13 +647,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				o(142088, {	-- Tablet of Will
-					["description"] = "Located in the same room as Galgann Firehammer.",
+					["description"] = "~L.LOCATED_IN_THE_SAME_ROOM_AS_GALGANN_FIREHAMMER",
 					["groups"] = {
 						i(5824),	-- Tablet of Will
 					},
 				}),
 				o(131474, {	-- The Discs of Norgannon
-					["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
+					["description"] = "~L.TALK_TO_THE_LORE_KEEPER_UNTIL_HE_HAS_FINISHED",
 					["modelScale"] = 3,
 					["groups"] = {
 						i(6064),	-- Miniature Platinum Discs
@@ -685,7 +685,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #else
 			n(6906, {	-- Baelog
-				["description"] = "This dwarf is named after the French Archiologist, René Belloq, from the Raiders of the Lost Ark.",
+				["description"] = "~L.THIS_DWARF_IS_NAMED_AFTER_THE_FRENCH",
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(9399),	-- Precision Arrow
@@ -718,7 +718,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(6912, {	-- Remains of a Paladin
 				-- #if AFTER 4.0.3
-				["description"] = "This dead Paladin was central in now removed dungeon quests, and remains abandoned on the ground without any purpose.",
+				["description"] = "~L.THIS_DEAD_PALADIN_WAS_CENTRAL_IN_NOW_REMOVED",
 				-- #endif
 				["groups"] = {
 					i(7886),	-- Untranslated Journal
@@ -728,7 +728,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 6910,
 				["groups"] = {
 					i(7741, {	-- The Shaft of Tsol
-						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
+						["description"] = "~L.USE_THIS_ITEM_ALONG_WITH_THE_GNI_KIV_MEDALLION",
 						["timeline"] = { REMOVED_4_1_0 },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons

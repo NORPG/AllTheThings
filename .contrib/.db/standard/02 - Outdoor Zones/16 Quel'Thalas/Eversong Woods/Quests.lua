@@ -13,7 +13,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 45.4, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
 					q(94871, {	-- Eversong
-						["description"] = "Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",
+						["description"] = createLocalizationString({
+							readable = "Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",
+							constant = "ADVENTURE_MODE_EXCLUSIVE_QUEST_FROM_THE",
+							export = true,
+							text = {
+								en = "Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "冒险模式专属任务，来自侦察地图，选择在永歌森林进行任务时获得。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 86735 },	-- Paved in Ash
 						["isBreadcrumb"] = true,
 					}),

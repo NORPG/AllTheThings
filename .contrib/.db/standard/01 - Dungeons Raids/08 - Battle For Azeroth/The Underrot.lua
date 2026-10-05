@@ -29,7 +29,24 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				n(ZONE_DROPS, {
 					i(168142, {	-- Coagulated Miasma
-						["description"] = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",
+						["description"] = createLocalizationString({
+							readable = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",
+							constant = "DROPS_FROM_TROLLS_BEFORE_THE_FIRST_BOSS_2_3",
+							export = true,
+							text = {
+								en = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "由第一个首领之前的巨魔掉落。\n刷 2-3 次即可获得 50 个瘴气。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 49882,	-- A Test of Quills (might require actually learning Recipe 256301)
 					}),
 				}),

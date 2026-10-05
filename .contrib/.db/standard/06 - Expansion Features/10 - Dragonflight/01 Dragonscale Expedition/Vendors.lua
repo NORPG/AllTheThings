@@ -453,7 +453,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}},
 			}),
 			n(187444, {	-- Kajithalan <Traveling Dragonbrew Vendor>
-				["description"] = "Travels to different inns each day.",
+				["description"] = createLocalizationString({
+					readable = "Travels to different inns each day.",
+					constant = "TRAVELS_TO_DIFFERENT_INNS_EACH_DAY",
+					export = true,
+					text = {
+						en = "Travels to different inns each day.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "每天前往不同的旅店。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 28.0, 60.6, OHNAHRAN_PLAINS },
 					{ 52.6, 69.8, THALDRASZUS },

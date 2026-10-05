@@ -4,7 +4,24 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(283, {	-- The Violet Hold (Wrath)
-		["description"] = "The bosses are random on all difficulties.",
+		["description"] = createLocalizationString({
+			readable = "The bosses are random on all difficulties.",
+			constant = "THE_BOSSES_ARE_RANDOM_ON_ALL_DIFFICULTIES",
+			export = true,
+			text = {
+				en = "The bosses are random on all difficulties.",
+				-- TODO: de = "",
+				-- TODO: es = "",
+				-- TODO: mx = "",
+				-- TODO: fr = "",
+				-- TODO: it = "",
+				-- TODO: ko = "",
+				-- TODO: pt = "",
+				-- TODO: ru = "",
+				cn = "所有难度下首领都是随机的。",
+				-- TODO: tw = "",
+			},
+		}),
 		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
 		["lvl"] = lvlsquish(75, 75, 15),

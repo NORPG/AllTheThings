@@ -164,7 +164,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8868, {	-- Elune's Blessing
-				["description"] = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
+				["description"] = createLocalizationString({
+					readable = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
+					constant = "IN_ORDER_TO_SUMMON_OMEN_YOU_NEED_TO_FIRE_30",
+					export = true,
+					text = {
+						en = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要召唤预兆，你需要从坐标 63.73, 62.41 处的发射器发射 30 枚集束火箭，用哪种都可以。刷出的“预兆的爪牙”可以无视。\n\n艾露恩的祝福来自预兆尸体上出现的一圈光环。尸体消失后光环并不会消失，所以你也许完全不需要与预兆战斗。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 8883,	-- Valadar Starsong
 				["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				["coord"] = { 53.6, 35.3, MAP.MOONGLADE },
@@ -357,7 +374,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				["isYearly"] = true,
 			}),
 			q(8883, {	-- Valadar Starsong
-				["description"] = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
+				["description"] = createLocalizationString({
+					readable = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
+					constant = "PICKING_UP_THIS_QUEST_FROM_A_QUEST_GIVER_MAKES",
+					export = true,
+					text = {
+						en = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "从某个任务给予者处接取此任务后，就无法再从另一个处接取。\n选哪个都一样。\n不需要（也没有意义）去访问所有任务给予者。你只需要其中一个。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuest"] = 8867,	-- Lunar Fireworks
 				["qg"] = 15895,	-- Lunar Festival Harbinger
 				["coords"] = {
@@ -557,36 +591,138 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 			}),
 			preWrathEldersHeader(ELDERS_OF_THE_DUNGEONS, {	-- Elders of the Dungeons
 				q(8727, {	-- Farwhisper the Elder
-					["description"] = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
+					["description"] = createLocalizationString({
+						readable = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
+						constant = "LOCATED_INSIDE_OF_STRATHOLME_IN_FESTIVAL_LANE",
+						export = true,
+						text = {
+							en = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于斯坦索姆的节日巷内。到达他那里最快的路线是从服务入口进入，然后朝活人区的“不可饶恕者”方向前进。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 48.1, 21.9, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					["qg"] = 15607,	-- Elder Farwhisper
 					["maps"] = { MAP.STRATHOLME },
 				}),
 				q(8619, {	-- Morndeep the Elder
-					["description"] = "Located inside Blackrock Depths at the Ring of Law, accessed through the Detention Block. From the entrance walk straight forward across the big central floor into the facing cave, and the Ring of Law can be accessed on the immediate left. \n\nWARNING: Approaching the Elder will also start the encounter, but you can escape the way you came before the gate closes.",
+					["description"] = createLocalizationString({
+						readable = "Located inside Blackrock Depths at the Ring of Law, accessed through the Detention Block. From the entrance walk straight forward across the big central floor into the facing cave, and the Ring of Law can be accessed on the immediate left. \n\nWARNING: Approaching the Elder will also start the encounter, but you can escape the way you came before the gate closes.",
+						constant = "LOCATED_INSIDE_BLACKROCK_DEPTHS_AT_THE_RING_OF",
+						export = true,
+						text = {
+							en = "Located inside Blackrock Depths at the Ring of Law, accessed through the Detention Block. From the entrance walk straight forward across the big central floor into the facing cave, and the Ring of Law can be accessed on the immediate left. \n\nWARNING: Approaching the Elder will also start the encounter, but you can escape the way you came before the gate closes.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于黑石深渊的法律之环，经拘留所进入。从入口径直向前穿过中央大平台，走进对面的洞穴，法律之环的入口就在紧挨着的左侧。\n\n警告：靠近长者也会触发战斗，但你可以在大门关闭前沿原路逃离。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 15549,	-- Elder Morndeep
 					["coord"] = { 39.06, 18.12, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
 					["maps"] = { MAP.BLACKROCK_DEPTHS },
 				}),
 				q(8635, {	-- Splitrock the Elder
-					["description"] = "Inside of Maraudon. Located in the passage way across the water where Rotgrip can be found as if you were headed to Tinkerer from the water near Princess.",
+					["description"] = createLocalizationString({
+						readable = "Inside of Maraudon. Located in the passage way across the water where Rotgrip can be found as if you were headed to Tinkerer from the water near Princess.",
+						constant = "INSIDE_OF_MARAUDON_LOCATED_IN_THE_PASSAGE_WAY",
+						export = true,
+						text = {
+							en = "Inside of Maraudon. Located in the passage way across the water where Rotgrip can be found as if you were headed to Tinkerer from the water near Princess.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在玛拉顿内。位于水对面的通道中，就在你能找到腐爪的地方，相当于从公主附近的水域前往修补匠的方向。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 15556,	-- Elder Splitrock
 					["coord"] = { 35.7, 55.5, MAP.DESOLACE },
 					["maps"] = { MAP.MARAUDON },
 				}),
 				q(8713, {	-- Starsong the Elder
-					["description"] = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
+					["description"] = createLocalizationString({
+						readable = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
+						constant = "INSIDE_OF_SUNKEN_TEMPLE_FROM_THE_ENTRANCE_TAKE",
+						export = true,
+						text = {
+							en = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在沉没的神庙内。从入口处左转，沿螺旋楼梯向上。你需要击杀第一波龙类。继续沿走廊前进，靠左进入满是龙人的房间，然后再进入凹室。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					["qg"] = 15593,	-- Elder Starsong
 					["maps"] = { MAP.TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(8644, {	-- Stonefort the Elder
-					["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
+					["description"] = createLocalizationString({
+						readable = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
+						constant = "LOCATED_IN_LOWER_BLACKROCK_SPIRE_IN_HORDEMAR",
+						export = true,
+						text = {
+							en = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "位于黑石塔下层的霍德玛尔城。当你走过第一座木桥时，可以在左侧找到他。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 15560,	-- Elder Stonefort
 					["maps"] = { MAP.BLACKROCK_SPIRE },
 				}),
 				q(8676, {	-- Wildmane the Elder
-					["description"] = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
+					["description"] = createLocalizationString({
+						readable = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
+						constant = "INSIDE_OF_ZUL_FARRAK_LOCATED_BY_THE_POOL_WHERE",
+						export = true,
+						text = {
+							en = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在祖尔法拉克内。位于召唤加兹瑞拉的水池旁。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 15578,	-- Elder Wildmane
 					["coord"] = { 39.0, 19.0, MAP.TANARIS },
 					["maps"] = { MAP.ZULFARRAK },

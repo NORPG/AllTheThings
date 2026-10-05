@@ -31,7 +31,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				ach(61585, {	-- You Conduit!
-					["description"] = "In Kasreth's wing of the dungeon are 5 Corespark Conduits. As a group, stand on all 5 at the same time for a few seconds to spawn a cage holding Gortham. The conduits hurt.",
+					["description"] = createLocalizationString({
+						readable = "In Kasreth's wing of the dungeon are 5 Corespark Conduits. As a group, stand on all 5 at the same time for a few seconds to spawn a cage holding Gortham. The conduits hurt.",
+						constant = "IN_KASRETH_S_WING_OF_THE_DUNGEON_ARE_5",
+						export = true,
+						text = {
+							en = "In Kasreth's wing of the dungeon are 5 Corespark Conduits. As a group, stand on all 5 at the same time for a few seconds to spawn a cage holding Gortham. The conduits hurt.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "副本中卡斯雷斯侧翼有 5 个核心火花导管。全队同时站在全部 5 个导管上几秒钟，即可生成一个困住戈瑟姆的牢笼。导管会造成伤害。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						o(619736, {	-- Netherstorm Structural Cage
 							i(262774),	-- Gortham (PET!)

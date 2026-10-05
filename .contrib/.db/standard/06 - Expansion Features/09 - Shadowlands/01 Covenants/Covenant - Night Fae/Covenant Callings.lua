@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["customCollect"] = "SL_COV_NFA",
 			}, {
 				q(62693, {	-- A Calling in Ardenweald
-					["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
+					["description"] = "~L.WILL_ONLY_BE_OFFERED_AS_THE_INITIAL_CALLING",
 					["sourceQuests"] = { 62697 },	-- A Call to Service
 					["provider"] = { "n", 165702 },	-- Blodwyn
 					["coord"] = { 53.8, 6.2, THE_TRUNK },

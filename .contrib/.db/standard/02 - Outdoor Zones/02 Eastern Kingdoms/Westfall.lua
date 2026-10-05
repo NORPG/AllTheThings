@@ -111,7 +111,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(65648, {	-- Old MacDonald <Master Pet Tamer>
 					["coord"] = { 60.8, 18.6, WESTFALL },
-					["description"] = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+					["description"] = createLocalizationString({
+						readable = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_MACDONALD_S",
+						export = true,
+						text = {
+							en = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此宠物训练师仅限联盟。\n\nMacDonald 的宠物为 3 级，三个宠物的类别依次为：\n1. 机械 - 使用元素（强力且耐打）宠物。\n2. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。\n3. 小动物 - 使用野兽（强力）或人型（耐打）宠物。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["petBattleLvl"] = 3,
@@ -142,7 +159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			pickpocketing({
 				i(7923,	{	-- Defias Tower Key (QI!)
-					["description"] = "Can also be killed for the key, though hits hard for lower level rogues.",
+					["description"] = "~L.CAN_ALSO_BE_KILLED_FOR_THE_KEY_THOUGH_HITS_HARD",
 					["coord"] = { 68.6, 72.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7051,	-- Malformed Defias Drone
@@ -218,7 +235,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(6181, {	-- A Swift Message
 					-- #if AFTER CATA
-					["description"] = "This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",
+					["description"] = createLocalizationString({
+						readable = "This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",
+						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_13",
+						export = true,
+						text = {
+							en = "This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你在艾尔文森林完成任务“|cFF4A54E8一封急信|r”（26393）时，此任务会被标记为已完成。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["qg"] = 491,	-- Quartermaster Lewis
 					["qi"] = 15998,	-- Lewis' Note (PQI!)
@@ -385,14 +419,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(11110, {	-- Westfall Chicken (PET!)
 							-- #if BEFORE 3.1.0
-							["description"] = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
+							["description"] = "~L.A_HORDE_PLAYER_CAN_GET_THIS_PET_IF_THEY_HAVE_AN",
 							-- #endif
 						}),
 					},
 				}),
 				q(6281, {	-- Continue to Stormwind
 					-- #if AFTER CATA
-					["description"] = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
+					["description"] = createLocalizationString({
+						readable = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
+						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_14",
+						export = true,
+						text = {
+							en = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "当你在暴风城完成任务“继续前往暴风城”（26394）时，此任务会被标记为已完成。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["qg"] = 523,	-- Thor
@@ -1640,7 +1691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(520, {	-- Brack
-					["description"] = "Brack is running up and down the beach.",
+					["description"] = "~L.BRACK_IS_RUNNING_UP_AND_DOWN_THE_BEACH",
 					["coords"] = {
 						{ 26.2, 65.6, WESTFALL },
 						{ 26.6, 56.4, WESTFALL },
@@ -1672,7 +1723,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.0, 47.0, WESTFALL },
 						{ 51.6, 55.6, WESTFALL },
 					},
-					["description"] = "Hunters need to use Hunter's Mark.",
+					["description"] = createLocalizationString({
+						readable = "Hunters need to use Hunter's Mark.",
+						constant = "HUNTERS_NEED_TO_USE_HUNTER_S_MARK",
+						export = true,
+						text = {
+							en = "Hunters need to use Hunter's Mark.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "猎手需要使用猎人印记。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -1839,7 +1907,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(519, {	-- Slark
-					["description"] = "Slark is running around the beach.",
+					["description"] = "~L.SLARK_IS_RUNNING_AROUND_THE_BEACH",
 					["coords"] = {
 						{ 26.2, 65.6, WESTFALL },
 						{ 26.6, 56.4, WESTFALL },
@@ -2107,7 +2175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(769),	-- Chunk of Boar Meat
 				-- #endif
 				i(2673, {	-- Coyote Meat
-					["description"] = "Only drops from coyotes in Westfall.",
+					["description"] = "~L.ONLY_DROPS_FROM_COYOTES_IN_WESTFALL",
 					["coord"] = { 49.4, 24.5, WESTFALL },	-- Furlbrow's Pumpkin Farm
 					["crs"] = {
 						834,	-- Coyote
@@ -2215,7 +2283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
-					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
+					["description"] = "~L.SUPPOSEDLY_THIS_WILL_NOT_DROP_IF_YOU_VE",
 					["coords"] = {
 						{ 48.6, 21.8, WESTFALL },
 						{ 47.6, 39.2, WESTFALL },
@@ -2272,7 +2340,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208851, {	-- Libram of Justice
-					["description"] = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
+					["description"] = createLocalizationString({
+						readable = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
+						constant = "WHILE_THIS_SUPPOSEDLY_CAN_DROP_FROM_THE_DRONES",
+						export = true,
+						text = {
+							en = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "虽然据说这东西会从工蜂身上掉落，但别费劲了。不如去洛克莫丹开箱子吧！",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 69.8, 72.4, WESTFALL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
@@ -2387,10 +2472,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER CATA
 				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
-					["description"] = "Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",
+					["description"] = createLocalizationString({
+						readable = "Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",
+						constant = "HAS_A_CHANCE_TO_DROP_FROM_ANY_CREATURE_IN",
+						export = true,
+						text = {
+							en = "Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "有几率从西部荒野的任何生物身上掉落。\n推荐刷取地点：北部区域的鱼人。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(728, {	-- Recipe: Westfall Stew (RECIPE!)
-					["description"] = "Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",
+					["description"] = createLocalizationString({
+						readable = "Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",
+						constant = "HAS_A_CHANCE_TO_DROP_FROM_ANY_CREATURE_IN_2",
+						export = true,
+						text = {
+							en = "Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "有几率从西部荒野的任何生物身上掉落。\n推荐：刷河爪豺狼人。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				-- #endif
 				i(821, {	-- Riverpaw Leather Vest
@@ -2401,7 +2520,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
-					["description"] = "This Rune can drop from any of the Rare creatures in the zone.",
+					["description"] = createLocalizationString({
+						readable = "This Rune can drop from any of the Rare creatures in the zone.",
+						constant = "THIS_RUNE_CAN_DROP_FROM_ANY_OF_THE_RARE",
+						export = true,
+						text = {
+							en = "This Rune can drop from any of the Rare creatures in the zone.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此符文可以从该区域的任何稀有生物身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 34.4, 84.6, WESTFALL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
@@ -2457,7 +2593,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
-					["description"] = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
+					["description"] = createLocalizationString({
+						readable = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
+						constant = "THIS_WILL_ONLY_DROP_IF_YOU_HAVE_GILLSBANE",
+						export = true,
+						text = {
+							en = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有在你装备了鳃伤且尚未完成快速打击符文时，它才会掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 209420 },	-- Gillsbane
 					["coords"] = {
 						-- various common map locations where 'crs' may be found

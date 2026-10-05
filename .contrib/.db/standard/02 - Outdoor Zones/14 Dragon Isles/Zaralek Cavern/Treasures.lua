@@ -7,7 +7,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 		n(TREASURES, {
 			i(205260),	-- Fleeting Glowspores
 			o(386104, {	-- Ancient Zaqali Chest
-				["description"] = "Interact with Bottled Magma at 36.5 48.2",
+				["description"] = createLocalizationString({
+					readable = "Interact with Bottled Magma at 36.5 48.2",
+					constant = "INTERACT_WITH_BOTTLED_MAGMA_AT_36_5_48_2",
+					export = true,
+					text = {
+						en = "Interact with Bottled Magma at 36.5 48.2",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与 36.5 48.2 处的瓶装岩浆互动",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 36.7, 48.8, ZARALEK_CAVERN },
 				["questID"] = 73697,
 			}),
@@ -15,7 +32,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 61.2, 71.8, ZARALEK_CAVERN },
 			}),
 			o(385565, {	-- Blazing Shadowflame Chest
-				["description"] = "You'll need to equip an Onyxia Scale Cloak in order to open this chest.",
+				["description"] = createLocalizationString({
+					readable = "You'll need to equip an Onyxia Scale Cloak in order to open this chest.",
+					constant = "YOU_LL_NEED_TO_EQUIP_AN_ONYXIA_SCALE_CLOAK_IN",
+					export = true,
+					text = {
+						en = "You'll need to equip an Onyxia Scale Cloak in order to open this chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你需要装备奥妮克希亚鳞片披风才能打开这个宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
 				["questID"] = 72986,
 				["cost"] = { { "i", 15138, 1 } },	-- 1x Onyxia Scale Cloak
@@ -28,13 +62,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 73706,
 			}),
 			o(392591, {	-- Chest of the Flights
-				["description"] = "Need to click in order Red - Black - Blue - Yellow - Green to open chest.",
+				["description"] = createLocalizationString({
+					readable = "Need to click in order Red - Black - Blue - Yellow - Green to open chest.",
+					constant = "NEED_TO_CLICK_IN_ORDER_RED_BLACK_BLUE_YELLOW",
+					export = true,
+					text = {
+						en = "Need to click in order Red - Black - Blue - Yellow - Green to open chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "需要按红 - 黑 - 蓝 - 黄 - 绿的顺序点击才能打开宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 55.9, 3.1, ZARALEK_CAVERN },
 				["questID"] = 75187,
 				["isDaily"] = true,
 			}),
 			o(388896, {	-- Crystal-encased Chest
-				["description"] = "Interact with the purple and yellow crystals to unlock the chest.",
+				["description"] = createLocalizationString({
+					readable = "Interact with the purple and yellow crystals to unlock the chest.",
+					constant = "INTERACT_WITH_THE_PURPLE_AND_YELLOW_CRYSTALS_TO",
+					export = true,
+					text = {
+						en = "Interact with the purple and yellow crystals to unlock the chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "与紫色和黄色的水晶互动以解锁宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 39.4, 73.2, ZARALEK_CAVERN },	-- Orange Crystal
 					{ 37.2, 68.8, ZARALEK_CAVERN },	-- Purple Crystal
@@ -49,14 +117,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
 			}),
 			o(401839, {	-- Dreamer's Bounty
-				["description"] = "Attack a nearby Preying Dustmoth and wait until it casts Drowsy Dust - don't interrupt! Once you have the debuff, kill the moth and open the chest.",
+				["description"] = createLocalizationString({
+					readable = "Attack a nearby Preying Dustmoth and wait until it casts Drowsy Dust - don't interrupt! Once you have the debuff, kill the moth and open the chest.",
+					constant = "ATTACK_A_NEARBY_PREYING_DUSTMOTH_AND_WAIT_UNTIL",
+					export = true,
+					text = {
+						en = "Attack a nearby Preying Dustmoth and wait until it casts Drowsy Dust - don't interrupt! Once you have the debuff, kill the moth and open the chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "攻击附近的一只掠食尘蛾，等它施放昏睡粉尘——不要打断！获得该减益后，杀死尘蛾并打开宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["questID"] = 75762,
 				["groups"] = {
 					i(205194),	-- Fractured Crystalspine Quill
 				},
 			}),
 			o(398810, {	-- Fealty's Reward
-				["description"] = "/kneel near dragon statue (should start fire breath animation) to unlock this chest.",
+				["description"] = createLocalizationString({
+					readable = "/kneel near dragon statue (should start fire breath animation) to unlock this chest.",
+					constant = "KNEEL_NEAR_DRAGON_STATUE_SHOULD_START_FIRE",
+					export = true,
+					text = {
+						en = "/kneel near dragon statue (should start fire breath animation) to unlock this chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在龙雕像附近使用 /kneel（应该会开始喷火动画）以解锁此宝箱。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coords"] = {
 					{ 43.5, 23.0, ZARALEK_CAVERN },	-- Statue to /kneel
 					{ 48.4, 10.9, ZARALEK_CAVERN },	-- Chest
@@ -71,7 +173,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75019,
 			}),
 			o(398814, {	-- Molten Hoard
-				["description"] = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
+				["description"] = createLocalizationString({
+					readable = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
+					constant = "UNDER_THE_WHOLE_STRUCTURE_AND_BEHIND_THE_METAL",
+					export = true,
+					text = {
+						en = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在整个建筑的下方、金属门后面。你可以从右侧蹬墙跳上去，或使用其他移动技能。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 48.4, 16.4, ZARALEK_CAVERN },
 				["questID"] = 75515,
 				["groups"] = {
@@ -79,7 +198,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			o(396339, {	-- Moth-Pilfered Pouch
-				["description"] = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
+				["description"] = createLocalizationString({
+					readable = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
+					constant = "GO_TO_HIS_POSITION_HE_WILL_FLY_UP_A_BIT_GO",
+					export = true,
+					text = {
+						en = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "前往它的位置，它会向上飞一点，走到地面上它的阴影下方并“帮助”它，直到它获得 5 层增益。之后它会飞一圈并露出袋子。",
+						-- TODO: tw = "",
+					},
+				}),
 				["crs"] = { 203225 },
 				["coord"] = { 56.7, 48.7, ZARALEK_CAVERN },
 				["questID"] = 75320,
@@ -88,13 +224,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			o(401828, {	-- Nal ks'kol Reliquary
-				["description"] = "Use the console nearby and solve the puzzle to unlock.",
+				["description"] = createLocalizationString({
+					readable = "Use the console nearby and solve the puzzle to unlock.",
+					constant = "USE_THE_CONSOLE_NEARBY_AND_SOLVE_THE_PUZZLE_TO",
+					export = true,
+					text = {
+						en = "Use the console nearby and solve the puzzle to unlock.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "使用附近的控制台并解开谜题以解锁。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 72964 },	-- Singed
 				["coord"] = { 64.2, 75.0, ZARALEK_CAVERN },
 				["questID"] = 75745,
 			}),
 			o(388911, {	-- Old Trunk
-				["description"] = "Must catch the Thieving Rock Mouse 5 times for the key to open the chest",
+				["description"] = createLocalizationString({
+					readable = "Must catch the Thieving Rock Mouse 5 times for the key to open the chest",
+					constant = "MUST_CATCH_THE_THIEVING_ROCK_MOUSE_5_TIMES_FOR",
+					export = true,
+					text = {
+						en = "Must catch the Thieving Rock Mouse 5 times for the key to open the chest",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "必须抓到 5 次偷东西的岩石鼠，才能获得打开宝箱的钥匙",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 43.1, 82.6, ZARALEK_CAVERN },
 				["questID"] = 74995,
 				["cost"] = { { "i", 204323, 1 } },	-- Old Trunk Key
@@ -141,7 +311,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
 			}),
 			o(386086, {	-- Seething Cache
-				["description"] = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera (Plot coords in Debug).\n\nWarning: While you may click each Seething Orb with multiple players, when the first player clicks the Seething Cache, the debuff will be removed from all nearby players and the cache itself will be gone!",
+				["description"] = createLocalizationString({
+					readable = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera (Plot coords in Debug).\n\nWarning: While you may click each Seething Orb with multiple players, when the first player clicks the Seething Cache, the debuff will be removed from all nearby players and the cache itself will be gone!",
+					constant = "YOU_LL_NEED_TO_PICK_UP_3X_STACKS_OF_A_INSIDIOUS",
+					export = true,
+					text = {
+						en = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera (Plot coords in Debug).\n\nWarning: While you may click each Seething Orb with multiple players, when the first player clicks the Seething Cache, the debuff will be removed from all nearby players and the cache itself will be gone!",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你需要从位于扎卡利火山口的沸腾法球处叠加 3 层阴险洞察减益（坐标可在调试中绘制）。\n\n警告：虽然多个玩家都可以点击每个沸腾法球，但当第一个玩家点击沸腾宝匣时，该减益会从附近所有玩家身上移除，宝匣本身也会消失！",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 32.3, 39.4, ZARALEK_CAVERN },
 				["questID"] = 73410,
 				["groups"] = {
@@ -182,7 +369,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			o(386079, {	-- Well-Chewed Chest
-				["description"] = "Loot the key under the massive corebeasts's head, then use it to open the chest",
+				["description"] = createLocalizationString({
+					readable = "Loot the key under the massive corebeasts's head, then use it to open the chest",
+					constant = "LOOT_THE_KEY_UNDER_THE_MASSIVE_COREBEASTS_S",
+					export = true,
+					text = {
+						en = "Loot the key under the massive corebeasts's head, then use it to open the chest",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在巨型核心兽的头下方拾取钥匙，然后用它打开宝箱",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 29.7, 40.6, ZARALEK_CAVERN },
 				["questID"] = 73395,
 				["cost"] = { { "i", 202869, 1 } },	-- 1x Scorching Key
@@ -306,7 +510,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			o(401844, {	-- Smelly Trash Pile
-				["description"] = "These spawn basically everywhere in the zone, 120+ coords not listed :)",
+				["description"] = createLocalizationString({
+					readable = "These spawn basically everywhere in the zone, 120+ coords not listed :)",
+					constant = "THESE_SPAWN_BASICALLY_EVERYWHERE_IN_THE_ZONE",
+					export = true,
+					text = {
+						en = "These spawn basically everywhere in the zone, 120+ coords not listed :)",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这些几乎在该区域的任何地方都会刷新，未列出 120 多个坐标 :)",
+						-- TODO: tw = "",
+					},
+				}),
 				["isRepeatable"] = true,
 				-- Dont link coords. Its 2 many
 				["sym"] = {

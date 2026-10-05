@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
-									["description"] = "You must keep this in your bags forever.",
+									["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
@@ -242,7 +242,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37444, {	-- Inoculation
-							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
+							["description"] = createLocalizationString({
+								readable = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
+								constant = "THIS_QUEST_IS_GIVEN_IF_YOU_PICK_IT_UP_BEFORE",
+								export = true,
+								text = {
+									en = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果你在接取或交付任务 |cFFFFD700守备官阿尔达|r 之前先接下此任务，就会获得它。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["qg"] = 16535,	-- Vindicator Aldar
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
@@ -794,7 +811,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9612, {	-- A Hearty Thanks!
-					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob.\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.\n\nThis quest is presumably unobtainable by Warlocks.",
+					["description"] = createLocalizationString({
+						readable = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob.\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.\n\nThis quest is presumably unobtainable by Warlocks.",
+						constant = "1_FIND_A_CFFFFD700DRAENEI_YOUNGLING_R_2_GET",
+						export = true,
+						text = {
+							en = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob.\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.\n\nThis quest is presumably unobtainable by Warlocks.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "1. 找到一个 |cFFFFD700德莱尼幼童|r。\n2. 让他们与一个具有攻击性的怪物交战。\n3. 一旦他们受到伤害，对他们使用 |cFFFFD700纳鲁的赐福。|r\n4. 杀死该生物即可接到任务。\n\n这个任务推测术士无法获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 17587,	-- Draenei Youngling
 					["coords"] = {
 						{ 37.6, 18.6, AZUREMYST_ISLE },
@@ -1054,7 +1088,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						recipe(3599),	-- Searing Totem
 						i(5176, {	-- Fire Totem
-							["description"] = "You must keep this in your bags forever.",
+							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 						}),
 					},
 				}),
@@ -1681,7 +1715,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cr"] = 17202,	-- Infected Nightstalker Runt)
 				}),
 				i(23850, {	-- Gurf's Dignity
-					["description"] = "It is not necessary to complete |cFFFFD700Murlocs...|r but you must at least be ON that quest to loot the item that starts Gurf's Dignity.",
+					["description"] = createLocalizationString({
+						readable = "It is not necessary to complete |cFFFFD700Murlocs...|r but you must at least be ON that quest to loot the item that starts Gurf's Dignity.",
+						constant = "IT_IS_NOT_NECESSARY_TO_COMPLETE",
+						export = true,
+						text = {
+							en = "It is not necessary to complete |cFFFFD700Murlocs...|r but you must at least be ON that quest to loot the item that starts Gurf's Dignity.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "不需要完成|cFFFFD700鱼人……|r，但你至少必须处于该任务进行中，才能拾取开启“古夫的尊严”的物品。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coords"] = {	-- Pats up and down
 						{ 34.6, 14.0, AZUREMYST_ISLE },
 						{ 35.2, 21.8, AZUREMYST_ISLE },
@@ -1691,7 +1742,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cr"] = 17475,	-- Murgurgula
 				}),
 				i(23676, {	-- Moongraze Stag Tenderloin
-					["description"] = "Only drops from stags on Azuremyst Isle.",
+					["description"] = createLocalizationString({
+						readable = "Only drops from stags on Azuremyst Isle.",
+						constant = "ONLY_DROPS_FROM_STAGS_ON_AZUREMYST_ISLE",
+						export = true,
+						text = {
+							en = "Only drops from stags on Azuremyst Isle.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅从秘蓝岛的雄鹿身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 					["crs"] = {
 						17201,	-- Moongraze Buck
 						17200,	-- Moongraze Stag

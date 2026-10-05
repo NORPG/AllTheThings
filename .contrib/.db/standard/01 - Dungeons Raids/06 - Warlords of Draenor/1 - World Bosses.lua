@@ -58,7 +58,24 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(9425),	-- So Grossly Incandescent
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					TempForceMisc(i(127775, {	-- Gemcutter Module: Stamina
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = createLocalizationString({
+							readable = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+							constant = "TAKE_THIS_RECIPE_TO_THE_APEXIS_GEMCUTTER_IN",
+							export = true,
+							text = {
+								en = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "将此配方带给塔纳安丛林的“埃匹希斯宝石切割师”学习。如果你已经拥有此配方，则需要再次拜访该商人以缓存该配方。",
+								-- TODO: tw = "",
+							},
+						}),
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					i(115434),	-- Down-Lined Leggings

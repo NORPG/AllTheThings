@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, {
 	n(TREASURES, sharedData({
-		["description"] = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
+		["description"] = "~L.DOES_NOT_SHOW_ON_MINIMAP_EACH_CLUSTER_OF_NEARBY",
 	},{
 		o(381041, {	-- Frostbound Chest
 			["coords"] = {

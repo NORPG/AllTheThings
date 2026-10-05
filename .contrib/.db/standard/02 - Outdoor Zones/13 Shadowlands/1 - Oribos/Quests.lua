@@ -9,7 +9,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["icon"] = 3847780,
 				["groups"] = {
 					q(62801, {	-- The Call of Fate
-						["description"] = "In order to guarantee this quest is offered, the safest way is this: Level a character to approximately 59.7 (meaning Level 59, about 70% experience gained). From there, start the Shadowlands intro (SKIPPING THE MAW), and complete quests in Oribos until you create portals back to Orgrimmar and Stormwind. You should have hit level 60- from there, return to your Capital City, log out and back in, and the quest should pop up.",
+						["description"] = createLocalizationString({
+							readable = "In order to guarantee this quest is offered, the safest way is this: Level a character to approximately 59.7 (meaning Level 59, about 70% experience gained). From there, start the Shadowlands intro (SKIPPING THE MAW), and complete quests in Oribos until you create portals back to Orgrimmar and Stormwind. You should have hit level 60- from there, return to your Capital City, log out and back in, and the quest should pop up.",
+							constant = "IN_ORDER_TO_GUARANTEE_THIS_QUEST_IS_OFFERED_THE",
+							export = true,
+							text = {
+								en = "In order to guarantee this quest is offered, the safest way is this: Level a character to approximately 59.7 (meaning Level 59, about 70% experience gained). From there, start the Shadowlands intro (SKIPPING THE MAW), and complete quests in Oribos until you create portals back to Orgrimmar and Stormwind. You should have hit level 60- from there, return to your Capital City, log out and back in, and the quest should pop up.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "为了确保能接到此任务，最稳妥的方法如下：将角色升到大约 59.7 级（即 59 级，约获得 70% 经验）。然后开始暗影界开场任务（跳过噬渊），并在奥利波斯完成任务，直到你开通返回奥格瑞玛和暴风城的传送门。此时你应已达到 60 级——然后返回你的主城，下线再上线，任务就会出现。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 59770 },	-- Stand as One
 						-- TODO: confirm whether you HAVE to hit 60 on that exact quest
 						-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
@@ -159,7 +176,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(61557, {	-- An Echo in the Darkness
-					["description"] = "Provided automatically when zoning or changing floors in Oribos.",
+					["description"] = createLocalizationString({
+						readable = "Provided automatically when zoning or changing floors in Oribos.",
+						constant = "PROVIDED_AUTOMATICALLY_WHEN_ZONING_OR_CHANGING",
+						export = true,
+						text = {
+							en = "Provided automatically when zoning or changing floors in Oribos.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在奥利波斯切换区域或楼层时自动获得。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						60501,	-- Redemption for the Redeemer
 						61730,	-- The Captive King
@@ -213,12 +247,46 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["timeline"] = { ADDED_9_2_5 },
 			}),
 			q(66661, {	-- It's Just a Coin, What Could it Cost?
-				["description"] = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
+				["description"] = createLocalizationString({
+					readable = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
+					constant = "AUTOMATICALLY_ACCEPTED_WHEN_ZONING_INTO_ORIBOS",
+					export = true,
+					text = {
+						en = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成“穿越命运”后进入奥利波斯时自动接受。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 66648 },	-- Crossing Fate
 				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			}),
 			q(51355, {	-- Secretest Fish
-				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+				["description"] = createLocalizationString({
+					readable = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+					constant = "CAN_BE_FOUND_IN_SECRET_FISH_BUBBLES_ANYWHERE_IN",
+					export = true,
+					text = {
+						en = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "可在暗影界各区域的秘密鱼气泡中找到。你必须佩戴秘密鱼护目镜才能看到/拾取这些气泡。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 158932 },	-- Secretest Fish
 				["maps"] = {
 					ARDENWEALD,
@@ -274,7 +342,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				-- character so it isn't actually a Threads quest
 			}),
 			q(63771, {	-- Fate's Reminder
-				["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
+				["description"] = createLocalizationString({
+					readable = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
+					constant = "TO_GET_THIS_QUEST_YOU_HAVE_TO_CHOOSE_REPLAY",
+					export = true,
+					text = {
+						en = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "要获得此任务，你必须选择“重玩剧情”，然后立即选择“跳过剧情”。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2, ADDED_11_1_0 },
@@ -302,7 +387,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Zone Choice Quests ------
 			q(62159, {	-- Aiding the Shadowlands
-				["description"] = "Offered prior to completing any Zone Meta-quest.",
+				["description"] = createLocalizationString({
+					readable = "Offered prior to completing any Zone Meta-quest.",
+					constant = "OFFERED_PRIOR_TO_COMPLETING_ANY_ZONE_META_QUEST",
+					export = true,
+					text = {
+						en = "Offered prior to completing any Zone Meta-quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在完成任何区域主线任务之前提供。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
@@ -316,7 +418,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["DisablePartySync"] = true,
 			}),
 			q(63208, {	-- The Next Step
-				["description"] = "Offered after completing 1 Zone Meta-quest.",
+				["description"] = createLocalizationString({
+					readable = "Offered after completing 1 Zone Meta-quest.",
+					constant = "OFFERED_AFTER_COMPLETING_1_ZONE_META_QUEST",
+					export = true,
+					text = {
+						en = "Offered after completing 1 Zone Meta-quest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成 1 个区域主线任务后提供。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
@@ -329,7 +448,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isBreadcrumb"] = true,
 			}),
 			q(63209, {	-- Furthering the Purpose
-				["description"] = "Offered after completing 2 Zone Meta-quests.",
+				["description"] = createLocalizationString({
+					readable = "Offered after completing 2 Zone Meta-quests.",
+					constant = "OFFERED_AFTER_COMPLETING_2_ZONE_META_QUESTS",
+					export = true,
+					text = {
+						en = "Offered after completing 2 Zone Meta-quests.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成 2 个区域主线任务后提供。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 63208 },	-- The Next Step
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
@@ -342,7 +478,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isBreadcrumb"] = true,
 			}),
 			q(63210, {	-- The Last Step
-				["description"] = "Offered after completing 3 Zone Meta-quests.",
+				["description"] = createLocalizationString({
+					readable = "Offered after completing 3 Zone Meta-quests.",
+					constant = "OFFERED_AFTER_COMPLETING_3_ZONE_META_QUESTS",
+					export = true,
+					text = {
+						en = "Offered after completing 3 Zone Meta-quests.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "完成 3 个区域主线任务后提供。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 63209 },	-- Furthering the Purpose
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
@@ -400,14 +553,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			------ Zone Travel Breadcrumbs ------
 			------ Ardenweald ------
 			q(62739, {	-- Restoring Balance [Non-Night Fae]
-				["description"] = "Provided to a character which is not aligned with the Night Fae Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is not aligned with the Night Fae Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_NOT_ALIGNED",
+					export = true,
+					text = {
+						en = "Provided to a character which is not aligned with the Night Fae Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给未与法夜盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62277 },	-- Ardenweald
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 			}),
 			q(63036, {	-- Restoring Balance [Night Fae]
-				["description"] = "Provided to a character which is aligned with the Night Fae Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is aligned with the Night Fae Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_ALIGNED_WITH",
+					export = true,
+					text = {
+						en = "Provided to a character which is aligned with the Night Fae Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给与法夜盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62277 },	-- Ardenweald
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
@@ -416,14 +603,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Bastion ------
 			q(62707, {	-- The Elysian Fields [Non-Kyrian]
-				["description"] = "Provided to a character which is not aligned with the Kyrian Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is not aligned with the Kyrian Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_NOT_ALIGNED_2",
+					export = true,
+					text = {
+						en = "Provided to a character which is not aligned with the Kyrian Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给未与格里恩盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62275 },	-- Bastion
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 			}),
 			q(63034, {	-- The Elysian Fields [Kyrian]
-				["description"] = "Provided to a character which is aligned with the Kyrian Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is aligned with the Kyrian Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_ALIGNED_WITH_2",
+					export = true,
+					text = {
+						en = "Provided to a character which is aligned with the Kyrian Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给与格里恩盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62275 },	-- Bastion
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
@@ -432,14 +653,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Maldraxxus ------
 			q(62738, {	-- A Fresh Blade [Non-Necrolord]
-				["description"] = "Provided to a character which is not aligned with the Necrolord Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is not aligned with the Necrolord Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_NOT_ALIGNED_3",
+					export = true,
+					text = {
+						en = "Provided to a character which is not aligned with the Necrolord Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给未与通灵领主盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62278 },	-- Maldraxxus
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 			}),
 			q(63035, {	-- A Fresh Blade [Necrolord]
-				["description"] = "Provided to a character which is aligned with the Necrolord Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is aligned with the Necrolord Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_ALIGNED_WITH_3",
+					export = true,
+					text = {
+						en = "Provided to a character which is aligned with the Necrolord Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给与通灵领主盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62278 },	-- Maldraxxus
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
@@ -448,14 +703,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Revendreth ------
 			q(62740, {	-- Dark Aspirations [Non-Venthyr]
-				["description"] = "Provided to a character which is not aligned with the Venthyr Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is not aligned with the Venthyr Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_NOT_ALIGNED_4",
+					export = true,
+					text = {
+						en = "Provided to a character which is not aligned with the Venthyr Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给未与温西尔盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62279 },	-- Revendreth
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 			}),
 			q(63037, {	-- Dark Aspirations [Venthyr]
-				["description"] = "Provided to a character which is aligned with the Venthyr Covenant",
+				["description"] = createLocalizationString({
+					readable = "Provided to a character which is aligned with the Venthyr Covenant",
+					constant = "PROVIDED_TO_A_CHARACTER_WHICH_IS_ALIGNED_WITH_4",
+					export = true,
+					text = {
+						en = "Provided to a character which is aligned with the Venthyr Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "提供给与温西尔盟约结盟的角色",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 62279 },	-- Revendreth
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
@@ -481,7 +770,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			------ Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose) ------
 			------ Ardenweald ------
 			q(62763, {	-- Support the Court
-				["description"] = "Auto-accepted if entering Ardenweald after choosing a different Zone",
+				["description"] = createLocalizationString({
+					readable = "Auto-accepted if entering Ardenweald after choosing a different Zone",
+					constant = "AUTO_ACCEPTED_IF_ENTERING_ARDENWEALD_AFTER",
+					export = true,
+					text = {
+						en = "Auto-accepted if entering Ardenweald after choosing a different Zone",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在选择其他区域后进入炽蓝仙野时自动接受",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					62159,	-- Aiding the Shadowlands
 					62704,	-- The Threads of Fate
@@ -506,7 +812,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Bastion ------
 			q(62723, {	-- Bolstering Bastion
-				["description"] = "Auto-accepted if entering Bastion after choosing a different Zone",
+				["description"] = createLocalizationString({
+					readable = "Auto-accepted if entering Bastion after choosing a different Zone",
+					constant = "AUTO_ACCEPTED_IF_ENTERING_BASTION_AFTER",
+					export = true,
+					text = {
+						en = "Auto-accepted if entering Bastion after choosing a different Zone",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在选择其他区域后进入晋升堡垒时自动接受",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					62159,	-- Aiding the Shadowlands
 					62704,	-- The Threads of Fate
@@ -535,7 +858,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Maldraxxus ------
 			q(62748, {	-- Rallying Maldraxxus
-				["description"] = "Auto-accepted if entering Maldraxxus after choosing a different Zone",
+				["description"] = createLocalizationString({
+					readable = "Auto-accepted if entering Maldraxxus after choosing a different Zone",
+					constant = "AUTO_ACCEPTED_IF_ENTERING_MALDRAXXUS_AFTER",
+					export = true,
+					text = {
+						en = "Auto-accepted if entering Maldraxxus after choosing a different Zone",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在选择其他区域后进入玛卓克萨斯时自动接受",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					62159,	-- Aiding the Shadowlands
 					62704,	-- The Threads of Fate
@@ -564,7 +904,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			------ Revendreth ------
 			q(62778, {	-- Reinforcing Revendreth
-				["description"] = "Auto-accepted if entering Revendreth after choosing a different Zone",
+				["description"] = createLocalizationString({
+					readable = "Auto-accepted if entering Revendreth after choosing a different Zone",
+					constant = "AUTO_ACCEPTED_IF_ENTERING_REVENDRETH_AFTER",
+					export = true,
+					text = {
+						en = "Auto-accepted if entering Revendreth after choosing a different Zone",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在选择其他区域后进入雷文德斯时自动接受",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					62159,	-- Aiding the Shadowlands
 					62704,	-- The Threads of Fate
@@ -708,45 +1065,113 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 			q(62043, {	-- Prove Your Worth
-				["description"] = "Available while switching back to Kyrian Covenant",
+				["description"] = createLocalizationString({
+					readable = "Available while switching back to Kyrian Covenant",
+					constant = "AVAILABLE_WHILE_SWITCHING_BACK_TO_KYRIAN",
+					export = true,
+					text = {
+						en = "Available while switching back to Kyrian Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在切回晋升者盟约时可用",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 				["coord"] = { 36.2, 64.2, ORIBOS },
 			}),
 			q(62061, {	-- Prove Your Worth
-				["description"] = "Available while switching back to Venthyr Covenant",
+				["description"] = createLocalizationString({
+					readable = "Available while switching back to Venthyr Covenant",
+					constant = "AVAILABLE_WHILE_SWITCHING_BACK_TO_VENTHYR",
+					export = true,
+					text = {
+						en = "Available while switching back to Venthyr Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在切回温西尔盟约时可用",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 171589 },	-- General Draven
 				["coord"] = { 44.9, 68.9, ORIBOS },
 			}),
 			q(62060, {	-- Prove Your Worth
-				["description"] = "Available while switching back to Night Fae Covenant",
+				["description"] = createLocalizationString({
+					readable = "Available while switching back to Night Fae Covenant",
+					constant = "AVAILABLE_WHILE_SWITCHING_BACK_TO_NIGHT_FAE",
+					export = true,
+					text = {
+						en = "Available while switching back to Night Fae Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在切回法夜盟约时可用",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 171795 },	-- Lady Moonberry
 				["coord"] = { 39.8, 60.9, ORIBOS },
 			}),
 			q(62059, {	-- Prove Your Worth
-				["description"] = "Available while switching back to Necrolords Covenant",
+				["description"] = createLocalizationString({
+					readable = "Available while switching back to Necrolords Covenant",
+					constant = "AVAILABLE_WHILE_SWITCHING_BACK_TO_NECROLORDS",
+					export = true,
+					text = {
+						en = "Available while switching back to Necrolords Covenant",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在切回通灵领主盟约时可用",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "n", 171821 },	-- Secutor Mevix
 				["coord"] = { 43.0, 74.3, ORIBOS },
 			}),
 			q(62368, {	-- Rebuild Our Trust
-				["description"] = "Available while switching back to Kyrian Covenant",
+				["description"] = "~L.AVAILABLE_WHILE_SWITCHING_BACK_TO_KYRIAN",
 				["sourceQuests"] = { 62043 },	-- Prove Your Worth
 				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 				["coord"] = { 36.2, 64.2, ORIBOS },
 			}),
 			q(62389, {	-- Rebuild Our Trust
-				["description"] = "Available while switching back to Venthyr Covenant",
+				["description"] = "~L.AVAILABLE_WHILE_SWITCHING_BACK_TO_VENTHYR",
 				["sourceQuests"] = { 62061 },	-- Prove Your Worth
 				["provider"] = { "n", 171589 },	-- General Draven
 				["coord"] = { 44.9, 68.9, ORIBOS },
 			}),
 			q(62392, {	-- Rebuild Our Trust
-				["description"] = "Available while switching back to Night Fae Covenant",
+				["description"] = "~L.AVAILABLE_WHILE_SWITCHING_BACK_TO_NIGHT_FAE",
 				["sourceQuests"] = { 62060 },	-- Prove Your Worth
 				["provider"] = { "n", 171795 },	-- Lady Moonberry
 				["coord"] = { 39.8, 60.9, ORIBOS },
 			}),
 			q(62393, {	-- Rebuild Our Trust
-				["description"] = "Available while switching back to Necrolords Covenant",
+				["description"] = "~L.AVAILABLE_WHILE_SWITCHING_BACK_TO_NECROLORDS",
 				["sourceQuests"] = { 62059 },	-- Prove Your Worth
 				["provider"] = { "n", 171821 },	-- Secutor Mevix
 				["coord"] = { 43.0, 74.3, ORIBOS },

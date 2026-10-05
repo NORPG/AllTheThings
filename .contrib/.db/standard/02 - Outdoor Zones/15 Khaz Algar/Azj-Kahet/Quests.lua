@@ -275,7 +275,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				------ Stay awhile and listen ------
 				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["description"] = "Dialogue becomes available after accepting both 'Like a Spider on the Wall' (78231) and 'Rewriting the Rewritten' (78232) but will be unavailable after completion.",
+					["description"] = createLocalizationString({
+						readable = "Dialogue becomes available after accepting both 'Like a Spider on the Wall' (78231) and 'Rewriting the Rewritten' (78232) but will be unavailable after completion.",
+						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_BOTH",
+						export = true,
+						text = {
+							en = "Dialogue becomes available after accepting both 'Like a Spider on the Wall' (78231) and 'Rewriting the Rewritten' (78232) but will be unavailable after completion.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "同时接受“如墙上之蛛”（78231）和“改写被改写者”（78232）后即可出现该对话，但完成后将不再可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						78231,	-- Like a Spider on the Wall
 						78232,	-- Rewriting the Rewritten
@@ -490,7 +507,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						i(222944),	-- Swollen Brain of Gluttony (QI!)
 						i(222980, {	-- Slim (PET!)
-							["description"] = "May requires an alt below Level 80 to show up as quest reward.",
+							["description"] = createLocalizationString({
+								readable = "May requires an alt below Level 80 to show up as quest reward.",
+								constant = "MAY_REQUIRES_AN_ALT_BELOW_LEVEL_80_TO_SHOW_UP",
+								export = true,
+								text = {
+									en = "May requires an alt below Level 80 to show up as quest reward.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "可能需要一个低于 80 级的小号才会作为任务奖励出现。",
+									-- TODO: tw = "",
+								},
+							}),
 						}),
 					},
 				}),

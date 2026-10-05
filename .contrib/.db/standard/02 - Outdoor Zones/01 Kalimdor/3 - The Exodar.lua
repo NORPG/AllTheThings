@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 					["groups"] = {
 						i(5178, {	-- Air Totem
-							["description"] = "You must keep this in your bags forever.",
+							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
 						}),
 					},
 				}),
@@ -218,7 +218,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(32661, {	-- Learn To Ride
-					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
+					["description"] = createLocalizationString({
+						readable = "This quest is automatically offered to Draenei upon reaching the specified level.",
+						constant = "THIS_QUEST_IS_AUTOMATICALLY_OFFERED_TO_DRAENEI",
+						export = true,
+						text = {
+							en = "This quest is automatically offered to Draenei upon reaching the specified level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "德莱尼角色达到指定等级后会自动获得此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
 					["coord"] = { 81.4, 52.6, THE_EXODAR },
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
@@ -236,7 +253,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14082, {	-- Learn to Ride at the Exodar
-					["description"] = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
+					["description"] = createLocalizationString({
+						readable = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
+						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_3",
+						export = true,
+						text = {
+							en = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "开启此任务的小册子会在德莱尼达到指定等级时寄送到他们的邮箱。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["races"] = { DRAENEI },

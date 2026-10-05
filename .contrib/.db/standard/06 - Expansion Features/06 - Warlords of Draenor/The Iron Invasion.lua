@@ -440,13 +440,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 				-- #if BEFORE 9.0.1
 				q(36881, {	-- The Dark Portal / Warlords of Draenor: The Dark Portal [9.0.1]
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+					["description"] = createLocalizationString({
+						readable = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+						constant = "IF_YOU_WANT_TO_DO_THE_BLASTED_LANDS_QUESTLINE",
+						export = true,
+						text = {
+							en = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你想在前往德拉诺之前完成诅咒之地的任务线，请在通过传送门抵达诅咒之地后放弃此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
 					["lvl"] = 90,
 				}),
 				q(34398, {	-- The Dark Portal / Warlords of Draenor: The Dark Portal [9.0.1]
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+					["description"] = "~L.IF_YOU_WANT_TO_DO_THE_BLASTED_LANDS_QUESTLINE",
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["lvl"] = 90,
@@ -500,13 +517,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 				-- #if AFTER 9.0.1
 				q(36881, {	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+					["description"] = "~L.IF_YOU_WANT_TO_DO_THE_BLASTED_LANDS_QUESTLINE",
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
 					["lvl"] = 90,
 				}),
 				q(34398, {	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
-					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+					["description"] = "~L.IF_YOU_WANT_TO_DO_THE_BLASTED_LANDS_QUESTLINE",
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["lvl"] = 90,
@@ -583,7 +600,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			}),
 			n(ZONE_DROPS, {
 				i(118675, {	-- Bronze Whelpling (PET!)
-					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
+					["description"] = createLocalizationString({
+						readable = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
+						constant = "MUST_BE_IN_THE_IRON_HORDE_INVASION_VERSION_OF",
+						export = true,
+						text = {
+							en = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须处于钢铁部落入侵版本的诅咒之地。由任意钢铁部落敌人掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 		},

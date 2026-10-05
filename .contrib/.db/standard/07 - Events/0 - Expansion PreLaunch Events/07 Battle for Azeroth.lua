@@ -153,7 +153,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53095, {	-- A Flicker of Hope
-					["description"] = "You do not have to save all 982 people. Once timer runs out this quest is removed and next one is auto-accepted.",
+					["description"] = createLocalizationString({
+						readable = "You do not have to save all 982 people. Once timer runs out this quest is removed and next one is auto-accepted.",
+						constant = "YOU_DO_NOT_HAVE_TO_SAVE_ALL_982_PEOPLE_ONCE",
+						export = true,
+						text = {
+							en = "You do not have to save all 982 people. Once timer runs out this quest is removed and next one is auto-accepted.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你不必救下全部 982 个人。计时结束后此任务会被移除，下一个任务会自动接受。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 52977,	-- The Guidance of Our Shan'do
 					["qg"] = 142978,	-- Mia Greymane <Queen of Gilneas>
 					["races"] = ALLIANCE_ONLY,
@@ -162,7 +179,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					},
 				}),
 				q(53310, {	-- From the Ashes… [Note: Final Quest for Part 2]
-					["description"] = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
+					["description"] = createLocalizationString({
+						readable = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
+						constant = "UPON_EITHER_FAILING_OR_COMPLETING_A_FLICKER_OF",
+						export = true,
+						text = {
+							en = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "无论“希望微光”失败还是完成，此任务都会自动接受",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 53095,	-- A Flicker of Hope
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

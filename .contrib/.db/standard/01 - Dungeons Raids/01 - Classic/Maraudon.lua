@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7066, {	-- Seed of Life
 					-- #if BEFORE 4.0.3
-					["description"] = "This quest becomes available after you defeat Princess Theradras.",
+					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_AFTER_YOU_DEFEAT",
 					-- #endif
 					["qg"] = 12238,	-- Zaetar's Spirit
 					["qi"] = 17760,	-- Seed of Life
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 13718,	-- The Nameless Prophet
 						}),
 						i(17761, {	-- Gem of the First Khan
-							["description"] = "Kolk is standing by the little room where you create the portal for Inner Maraudon, in the middle part.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
+							["description"] = "~L.KOLK_IS_STANDING_BY_THE_LITTLE_ROOM_WHERE_YOU",
 							["coord"] = { 29.7, 60.5, DESOLACE },
 							["crs"] = {
 								12240,	-- Spirit of Kolk <The First Kahn>
@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(17762, {	-- Gem of the Second Kahn
-							["description"] = "Gelk is located outside the portal of the purple path, hanging with snakes and rock elementals. He is almost just below the portal (use the stairs to get to him).\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
+							["description"] = "~L.GELK_IS_LOCATED_OUTSIDE_THE_PORTAL_OF_THE",
 							["coord"] = { 29.4, 56.9, DESOLACE },
 							["crs"] = {
 								12239,	-- Spirit of Gelk <The Second Kahn>
@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(17763, {	-- Gem of the Third Kahn
-							["description"] = "Magra is located outside the portal of the orange path. He is in the stairs area.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
+							["description"] = "~L.MAGRA_IS_LOCATED_OUTSIDE_THE_PORTAL_OF_THE",
 							["coord"] = { 35.8, 60.4, DESOLACE },
 							["crs"] = {
 								12241,	-- Spirit of Magra <The Third Kahn>
@@ -215,14 +215,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(17764, {	-- Gem of the Fourth Kahn
-							["description"] = "Maraudos is located inside the purple path of Maraudon, wandering not too far away from the entrance.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
+							["description"] = "~L.MARAUDOS_IS_LOCATED_INSIDE_THE_PURPLE_PATH_OF",
 							["crs"] = {
 								12242,	-- Spirit of Maraudos <The Fourth Kahn>
 								13739,	-- Maraudos <The Fourth Kahn>
 							},
 						}),
 						i(17765, {	-- Gem of the Fifth Kahn
-							["description"] = "Veng is located inside the orange path of Maraudon, wandering by the end of the path.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
+							["description"] = "~L.VENG_IS_LOCATED_INSIDE_THE_ORANGE_PATH_OF",
 							["crs"] = {
 								12243,	-- Spirit of Veng <The Fifth Kahn>
 								13738,	-- Veng <The Fifth Kahn>
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 41,
 					["groups"] = {
 						i(17191, {	-- Scepter of Celebras
-							["description"] = "This item is used to open the portal to the Inner Falls just after Celebras the Cursed in Maraudon.",
+							["description"] = "~L.THIS_ITEM_IS_USED_TO_OPEN_THE_PORTAL_TO_THE",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -285,10 +285,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/8 Vylestem Vines healed
 							["provider"] = { "n", 13696 },	-- Noxxious Scion
 							["cost"] = { { "i", 17696, 1 } },	-- Filled Cerulean Vial
-							["description"] = "Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",
+							["description"] = "~L.USE_THE_FILLED_CERULEAN_VIAL_ON_THE_VINES_AND",
 						}),
 						i(17696, {	-- Filled Cerulean Vial
-							["description"] = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
+							["description"] = "~L.STAND_IN_THE_ORANGE_POOL_OF_WATER_JUST_OUTSIDE",
 							["coord"] = { 38.0, 58.0, DESOLACE },
 							["cost"] = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
 						}),
@@ -388,7 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(12237, {	-- Meshlok the Harvester
-						["description"] = "This is a Rare Creature and, as such, is not always present.",
+						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 						["coord"] = { 24.0, 75.0, MARAUDON },
 						["groups"] = {
 							i(17741),	-- Nature's Embrace
@@ -547,7 +547,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, n(223264, {	-- Delirious Ancient
-						["description"] = "Spawns after killing Princess and the surrounding trash.",
+						["description"] = "~L.SPAWNS_AFTER_KILLING_PRINCESS_AND_THE",
 						["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 						["groups"] = {
 							i(221271),	-- Ace of Wilds

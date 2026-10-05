@@ -7,30 +7,98 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		i(201471),	-- Story of a Spectacular Victory
 		i(200686, {	-- Primal Focus
 			-- #if BEFORE 10.1
-			["description"] = "Drops in M+ 11-15",
+			["description"] = createLocalizationString({
+				readable = "Drops in M+ 11-15",
+				constant = "DROPS_IN_M_11_15",
+				export = true,
+				text = {
+					en = "Drops in M+ 11-15",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 11-15 层大秘境中掉落",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
 		i(190455, {	-- Concentrated Primal Focus
 			-- #if BEFORE 10.1
-			["description"] = "Drops in M+ 16+",
+			["description"] = createLocalizationString({
+				readable = "Drops in M+ 16+",
+				constant = "DROPS_IN_M_16",
+				export = true,
+				text = {
+					en = "Drops in M+ 16+",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在 16 层及以上大秘境中掉落",
+					-- TODO: tw = "",
+				},
+			}),
 			-- #endif
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
 		i(204075, {	-- Whelping's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 0-5",
+			["description"] = createLocalizationString({
+				readable = "Drops in M+ 0-5",
+				constant = "DROPS_IN_M_0_5",
+				export = true,
+				text = {
+					en = "Drops in M+ 0-5",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在史诗钥石 0-5 掉落",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204076, {	-- Drake's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 6-10",
+			["description"] = createLocalizationString({
+				readable = "Drops in M+ 6-10",
+				constant = "DROPS_IN_M_6_10",
+				export = true,
+				text = {
+					en = "Drops in M+ 6-10",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "在史诗钥石 6-10 掉落",
+					-- TODO: tw = "",
+				},
+			}),
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204077, {	-- Wyrm's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 11-15",
+			["description"] = "~L.DROPS_IN_M_11_15",
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204078, {	-- Aspect's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 16+",
+			["description"] = "~L.DROPS_IN_M_16",
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		currency(WHELPLINGS_DREAMING_CREST, {

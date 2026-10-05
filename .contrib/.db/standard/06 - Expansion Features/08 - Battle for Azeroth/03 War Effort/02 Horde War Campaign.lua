@@ -73,7 +73,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					})),
 				}),
 				n(REWARDS, {
-					["description"] = "You'll be offered these rewards at the end of your first foothold.",
+					["description"] = "~L.YOU_LL_BE_OFFERED_THESE_REWARDS_AT_THE_END_OF",
 					["groups"] = {
 						-- 163 = azerite; 175 = azewrong
 						-- Cloth
@@ -108,7 +108,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 				}),
 				n(QUESTS, {
 					q(53602, {	-- Adapting Our Tactics
-						["description"] = "Must unlock at least one foothold on Kul Tiras to get this quest.",
+						["description"] = createLocalizationString({
+							readable = "Must unlock at least one foothold on Kul Tiras to get this quest.",
+							constant = "MUST_UNLOCK_AT_LEAST_ONE_FOOTHOLD_ON_KUL_TIRAS",
+							export = true,
+							text = {
+								en = "Must unlock at least one foothold on Kul Tiras to get this quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须在库尔提拉斯解锁至少一个据点才能接到此任务。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "n", 143913 },	-- Eitrigg
 						["coord"] = { 58.5, 62.7, ZULDAZAR },
 						["races"] = HORDE_ONLY,
@@ -165,7 +182,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = HORDE_ONLY,
 					}),
 					q(53050, {	-- Deeper Into Kul Tiras
-						["description"] = "Automatically starts when you finish your first Foothold in Kul Tiras.",
+						["description"] = createLocalizationString({
+							readable = "Automatically starts when you finish your first Foothold in Kul Tiras.",
+							constant = "AUTOMATICALLY_STARTS_WHEN_YOU_FINISH_YOUR_FIRST",
+							export = true,
+							text = {
+								en = "Automatically starts when you finish your first Foothold in Kul Tiras.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你完成在库尔提拉斯的第一个据点后自动开始。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
@@ -176,7 +210,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = HORDE_ONLY,
 					}),
 					q(53056, {	-- Pushing Our Influence
-						["description"] = "Automatically starts when you finish your second Foothold in Kul Tiras.",
+						["description"] = createLocalizationString({
+							readable = "Automatically starts when you finish your second Foothold in Kul Tiras.",
+							constant = "AUTOMATICALLY_STARTS_WHEN_YOU_FINISH_YOUR_2",
+							export = true,
+							text = {
+								en = "Automatically starts when you finish your second Foothold in Kul Tiras.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当你完成在库尔提拉斯的第二个据点后自动开始。",
+								-- TODO: tw = "",
+							},
+						}),
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["DisablePartySync"] = true,
@@ -434,7 +485,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["lockCriteria"] = { 1, "questID", 52969 },
 					}),
 					q(51916, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
-						["description"] = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",
+						["description"] = createLocalizationString({
+							readable = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",
+							constant = "THIS_VERSION_OF_THE_QUEST_IS_OFFERED_TO_THE",
+							export = true,
+							text = {
+								en = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此版本的任务会提供给账号中首个与赞达拉帝国、塔兰吉远征队和沃顿奈达到友善的角色。你的小号在达到 120 级时会接到一个同名的不同任务，但所有角色都会同时获得两个任务的进度。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = {
 							51985,	-- Return to Zuldazar (Drustvar Foothold)
 							51986,	-- Return to Zuldazar (Stormsong Valley Foothold)
@@ -451,7 +519,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						},
 					}),
 					q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
-						["description"] = "This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar.' All characters get credit for both quests.",
+						["description"] = createLocalizationString({
+							readable = "This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar.' All characters get credit for both quests.",
+							constant = "THIS_VERSION_OF_THE_QUEST_IS_OFFERED_TO_ALTS",
+							export = true,
+							text = {
+								en = "This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar.' All characters get credit for both quests.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此版本的任务会提供给与已完成原版“联合赞达拉”的角色同账号的小号。所有角色都会同时获得两个任务的进度。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 52428 },	-- Infusing the Heart
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, ZULDAZAR },
@@ -570,7 +655,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					header(HEADERS.AchCriteria, 12509.05, {	-- The Marshal's Grave
 						q(53065, {	-- Operation: Grave Digger
-							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
+							["description"] = createLocalizationString({
+								readable = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
+								constant = "RELOG_OUTSIDE_OF_DAZAR_ALOR_IF_THIS_DOESN_T",
+								export = true,
+								text = {
+									en = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "如果在达到声望要求后此内容仍未出现，请在达萨罗城外重新登录",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuests"] = { 51601 },	-- The Bridgeport Ride
 							-- ["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["minReputation"] = { FACTION_THE_HONORBOUND, FRIENDLY+4500 },
@@ -638,7 +740,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					header(HEADERS.AchCriteria, 12509.06, {	-- Death of a Tidesage
 						q(53066, {	-- Operation: Water Wise
-							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "~L.RELOG_OUTSIDE_OF_DAZAR_ALOR_IF_THIS_DOESN_T",
 							["sourceQuests"] = { 51789 },	-- What Remains of Marshal M. Valentine
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["minReputation"] = { FACTION_THE_HONORBOUND, HONORED+3000 },
@@ -711,7 +813,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					header(HEADERS.AchCriteria, 12509.07, {	-- At the Bottom of the Sea
 						q(53067, {	-- Operation: Bottom Feeder
-							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "~L.RELOG_OUTSIDE_OF_DAZAR_ALOR_IF_THIS_DOESN_T",
 							["sourceQuests"] = { 52122 },	-- To Be Forsaken
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["minReputation"] = { FACTION_THE_HONORBOUND, HONORED+7500 },
@@ -787,7 +889,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							["races"] = HORDE_ONLY,
 						}),
 						q(53121, {	-- Siege of Boralus
-							["description"] = "This quest can only be completed by one character per account.",
+							["description"] = createLocalizationString({
+								readable = "This quest can only be completed by one character per account.",
+								constant = "THIS_QUEST_CAN_ONLY_BE_COMPLETED_BY_ONE",
+								export = true,
+								text = {
+									en = "This quest can only be completed by one character per account.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "此任务每个账号只能由一个角色完成一次。",
+									-- TODO: tw = "",
+								},
+							}),
 							["sourceQuests"] = { 52774 },	-- Grab and Go
 							["provider"] = { "n", 141654 },	-- Lilian Voss
 							["coord"] = { 41.4, 66.6, 1157 },
@@ -802,7 +921,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					header(HEADERS.AchCriteria, 12509.08, {	-- The Strike on Boralus
 						q(53068, {	-- Operation: Hook and Line
-							["description"] = "Relog (outside of Dazar'alor) if this doesn't appear upon hitting the reputation requirement",
+							["description"] = "~L.RELOG_OUTSIDE_OF_DAZAR_ALOR_IF_THIS_DOESN_T",
 							["sourceQuests"] = { 52978 },	-- With Prince in Tow
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 							["minReputation"] = { FACTION_THE_HONORBOUND, REVERED },
@@ -975,14 +1094,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["groups"] = { i(165638) },	-- Humanizing Potion (QI!)
 					}),
 					q(54754, {	-- For the Queen
-						["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang. |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
+						["description"] = createLocalizationString({
+							readable = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang. |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
+							constant = "YOUR_OPTIONS_ARE_REMAINING_LOYAL_TO_SYLVANAS_OR",
+							export = true,
+							text = {
+								en = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang. |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "你的选择是继续效忠希尔瓦娜斯，或是背叛她以帮助萨鲁法尔。|cfffd1818只有背叛希尔瓦娜斯，你才能获得“破旧斗篷”玩具。|r\n\n要帮助希尔瓦娜斯，在与泽坎交谈时选择“我不会背叛我的大酋长，巨魔。”\n\n要帮助萨鲁法尔，接取任务“噩耗”。\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 						["altQuests"] = { 54107 },	-- Grim Tidings
 						["coord"] = { 81.4, 52.4, REDRIDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(54107, {	-- Grim Tidings
-						["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang. |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
+						["description"] = "~L.YOUR_OPTIONS_ARE_REMAINING_LOYAL_TO_SYLVANAS_OR",
 						["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 						["altQuests"] = { 54754 },	-- For the Queen
 						["provider"] = { "n", 146012 },	-- Zekhan
@@ -1686,7 +1822,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = HORDE_ONLY,
 					}),
 					q(56833, {	-- Leaders of the Horde
-						["description"] = "Choosing to escape with Eitrigg continues with 'Not My Warchief' and sets you on the Saurfang supporter questline, otherwise you continue the Sylvanas Loyalist questline.",
+						["description"] = createLocalizationString({
+							readable = "Choosing to escape with Eitrigg continues with 'Not My Warchief' and sets you on the Saurfang supporter questline, otherwise you continue the Sylvanas Loyalist questline.",
+							constant = "CHOOSING_TO_ESCAPE_WITH_EITRIGG_CONTINUES_WITH",
+							export = true,
+							text = {
+								en = "Choosing to escape with Eitrigg continues with 'Not My Warchief' and sets you on the Saurfang supporter questline, otherwise you continue the Sylvanas Loyalist questline.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "选择与伊崔格一起逃走会继续“不是我的大酋长”任务线，并将你置于萨鲁法尔支持者的任务线上，否则你会继续希尔瓦娜斯效忠者的任务线。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 56495 },	-- They Move Against Us
 						["altQuests"] = { 54109 },	-- Queen's Favor
 						["provider"] = { "n", 156423 },	-- Lady Sylvanas Windrunner
@@ -1746,7 +1899,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						},
 					}),
 					q(57147, {	-- Not My Warchief
-						["description"] = "Have to be Sylvanas Loyalist that escapes with Eitrigg",
+						["description"] = createLocalizationString({
+							readable = "Have to be Sylvanas Loyalist that escapes with Eitrigg",
+							constant = "HAVE_TO_BE_SYLVANAS_LOYALIST_THAT_ESCAPES_WITH",
+							export = true,
+							text = {
+								en = "Have to be Sylvanas Loyalist that escapes with Eitrigg",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "必须是跟随伊崔格逃离的希尔瓦娜斯效忠者",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 57152 },	-- Most Loyal
 						["altQuests"] = { 54109 },	-- Queen's Favor
 						["provider"] = { "n", 156124 },	-- Eitrigg

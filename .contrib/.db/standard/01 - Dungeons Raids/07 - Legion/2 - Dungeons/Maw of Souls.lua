@@ -155,7 +155,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				Boss(HARBARON, {
 					ach(10411, {	-- Helheim Hath No Fury
-						["description"] = "This is a speed-run style achievement. You must get to and kill Harbaron in under 3 minutes and 30 seconds.",
+						["description"] = createLocalizationString({
+							readable = "This is a speed-run style achievement. You must get to and kill Harbaron in under 3 minutes and 30 seconds.",
+							constant = "THIS_IS_A_SPEED_RUN_STYLE_ACHIEVEMENT_YOU_MUST",
+							export = true,
+							text = {
+								en = "This is a speed-run style achievement. You must get to and kill Harbaron in under 3 minutes and 30 seconds.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这是一个竞速风格的成就。你必须在 3 分 30 秒内赶到并杀死哈巴隆。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 				Boss(HELYA, {

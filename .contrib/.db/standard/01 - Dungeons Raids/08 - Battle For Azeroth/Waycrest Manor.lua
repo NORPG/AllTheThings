@@ -31,7 +31,24 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			n(QUESTS, {
 				q(50990, {	-- Cutting Edge Poultry Science
-					["description"] = "This quest pops up when killing mobs in the kitchen. It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
+					["description"] = createLocalizationString({
+						readable = "This quest pops up when killing mobs in the kitchen. It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
+						constant = "THIS_QUEST_POPS_UP_WHEN_KILLING_MOBS_IN_THE",
+						export = true,
+						text = {
+							en = "This quest pops up when killing mobs in the kitchen. It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在厨房击杀怪物时此任务会弹出。目前无法确定是否必须完成世界任务“巫术厨房”。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(160940),	-- Vengeful Chicken (PET!)
 					},

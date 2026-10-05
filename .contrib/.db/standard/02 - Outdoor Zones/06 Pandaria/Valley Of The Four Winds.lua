@@ -25,27 +25,129 @@ root(ROOTS.Zones, {
 				}),
 				battlepets({
 					pet(706, {	-- Bandicoon (PET!)
-						["description"] = "Can be found all over the zone.",
+						["description"] = createLocalizationString({
+							readable = "Can be found all over the zone.",
+							constant = "CAN_BE_FOUND_ALL_OVER_THE_ZONE",
+							export = true,
+							text = {
+								en = "Can be found all over the zone.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在该区域各处找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(707, {	-- Bandicoon Kit (PET!)
-						["description"] = "Respawns after some minutes as long as their Bandicoon parent is still alive. Can be found all over the zone, and common as secondary pets.",
+						["description"] = createLocalizationString({
+							readable = "Respawns after some minutes as long as their Bandicoon parent is still alive. Can be found all over the zone, and common as secondary pets.",
+							constant = "RESPAWNS_AFTER_SOME_MINUTES_AS_LONG_AS_THEIR_3",
+							export = true,
+							text = {
+								en = "Respawns after some minutes as long as their Bandicoon parent is still alive. Can be found all over the zone, and common as secondary pets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只要其强盗浣熊父母仍然存活，几分钟后就会重新刷新。可在该区域各处找到，作为次级宠物很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(708, {	-- Malayan Quillrat (PET!)
-						["description"] = "Can be found almost everywhere in Valley of the Four Winds.",
+						["description"] = createLocalizationString({
+							readable = "Can be found almost everywhere in Valley of the Four Winds.",
+							constant = "CAN_BE_FOUND_ALMOST_EVERYWHERE_IN_VALLEY_OF_THE",
+							export = true,
+							text = {
+								en = "Can be found almost everywhere in Valley of the Four Winds.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "几乎可在四风谷的任何地方找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(709, {	-- Malayan Quillrat Pup (PET!)
-						["description"] = "Respawns after some minutes as long as their Malayan Quillrat parent is still alive. Can be found all over the zone, and common as secondary pets.",
+						["description"] = createLocalizationString({
+							readable = "Respawns after some minutes as long as their Malayan Quillrat parent is still alive. Can be found all over the zone, and common as secondary pets.",
+							constant = "RESPAWNS_AFTER_SOME_MINUTES_AS_LONG_AS_THEIR_4",
+							export = true,
+							text = {
+								en = "Respawns after some minutes as long as their Malayan Quillrat parent is still alive. Can be found all over the zone, and common as secondary pets.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "只要其马来箭猪父母仍然存活，几分钟后就会重新刷新。可在该区域各处找到，作为次级宠物很常见。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(710, {	-- Marsh Fiddler (PET!)
-						["description"] = "Can be found all over The Heartland.",
+						["description"] = createLocalizationString({
+							readable = "Can be found all over The Heartland.",
+							constant = "CAN_BE_FOUND_ALL_OVER_THE_HEARTLAND",
+							export = true,
+							text = {
+								en = "Can be found all over The Heartland.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在腹地各处找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 41.6, 45.2, VALLEY_OF_THE_FOUR_WINDS },	-- The Heartland
 					}),
 					pet(677, {	-- Shy Bandicoon (PET!)
-						["description"] = "Can be found through Paoquan Hollow and the foothills south of Singing Marshes, but will never appear as secondary pets!",
+						["description"] = createLocalizationString({
+							readable = "Can be found through Paoquan Hollow and the foothills south of Singing Marshes, but will never appear as secondary pets!",
+							constant = "CAN_BE_FOUND_THROUGH_PAOQUAN_HOLLOW_AND_THE",
+							export = true,
+							text = {
+								en = "Can be found through Paoquan Hollow and the foothills south of Singing Marshes, but will never appear as secondary pets!",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在抱泉谷以及歌唱沼泽以南的山麓中找到，但绝不会作为次要宠物出现！",
+								-- TODO: tw = "",
+							},
+						}),
 						["coord"] = { 17.8, 42.8, VALLEY_OF_THE_FOUR_WINDS },	-- Paoquan Hollow
 					}),
 					pet(713, {	-- Softshell Snapling (PET!)
-						["description"] = "Can be found by bodies of water.",
+						["description"] = "~L.CAN_BE_FOUND_BY_BODIES_OF_WATER",
 					}),
 				}),
 				explorationHeader({
@@ -168,7 +270,24 @@ root(ROOTS.Zones, {
 					}),
 					prof(FISHING, {
 						n(70398, {	-- Ben of the Booming Voice <Fishing Trainer>
-							["description"] = "Ben of the Booming Voice is a pandaren fishing trainer located on the bank of the Gilding Stream in the Valley of the Four Winds. When asked, he tells where fish are swarming in Pandaria that day. Wherever fish are swarming, there are a large number of fishing pools containing the type of fish Ben specifies.",
+							["description"] = createLocalizationString({
+								readable = "Ben of the Booming Voice is a pandaren fishing trainer located on the bank of the Gilding Stream in the Valley of the Four Winds. When asked, he tells where fish are swarming in Pandaria that day. Wherever fish are swarming, there are a large number of fishing pools containing the type of fish Ben specifies.",
+								constant = "BEN_OF_THE_BOOMING_VOICE_IS_A_PANDAREN_FISHING",
+								export = true,
+								text = {
+									en = "Ben of the Booming Voice is a pandaren fishing trainer located on the bank of the Gilding Stream in the Valley of the Four Winds. When asked, he tells where fish are swarming in Pandaria that day. Wherever fish are swarming, there are a large number of fishing pools containing the type of fish Ben specifies.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "洪亮之声的本是一名熊猫人钓鱼训练师，位于四风谷镀金溪的岸边。当你询问时，他会告诉你当天潘达利亚哪里鱼群聚集。鱼群聚集之处，都会有大量包含本所指定鱼种的鱼群。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 58.8, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 							["timeline"] = { ADDED_5_2_0 },
 						}),
@@ -283,7 +402,24 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(31521, {	-- To Be a Master
-								["description"] = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
+								["description"] = createLocalizationString({
+									readable = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
+									constant = "BECOMES_AVAILABLE_ON_REACHING_MAX_PANDARIA",
+									export = true,
+									text = {
+										en = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "达到熊猫人烹饪技能上限后开放，但你必须精通全部 6 种熊猫人烹饪之道才能完成此任务。",
+										-- TODO: tw = "",
+									},
+								}),
 								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
 								["qg"] = 64231,	-- Sungshin Ironpaw
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
@@ -291,7 +427,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30275, {	-- A Crocolisk Tale
-						["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+						["description"] = createLocalizationString({
+							readable = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+							constant = "KILL_MANGLEMAW_AT_THE_POOLS_OF_PURITY_TO_SPAWN",
+							export = true,
+							text = {
+								en = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在纯净之池击杀碎颚，即可刷出碎颚之母。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
 						["coord"] = { 57.7, 25.9, VALLEY_OF_THE_FOUR_WINDS },
 						["crs"] = {
@@ -487,7 +640,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30054, {	-- Enough is Ookin' Enough
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["description"] = createLocalizationString({
+							readable = "Only available as part of the \"Hop Hunting\" quest.",
+							constant = "ONLY_AVAILABLE_AS_PART_OF_THE_HOP_HUNTING_QUEST",
+							export = true,
+							text = {
+								en = "Only available as part of the \"Hop Hunting\" quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅作为“跳跃狩猎”任务的一部分可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 30046,	-- Chen's Resolution
 						["qg"] = 57401,	-- Mung-Mung
 						["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
@@ -533,7 +703,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30050, {	-- Gardener Fran and the Watering Can
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["description"] = "~L.ONLY_AVAILABLE_AS_PART_OF_THE_HOP_HUNTING_QUEST",
 						["sourceQuest"] = 30046,	-- Chen's Resolution
 						["qg"] = 62377,	-- Gardener Fran
 						["coord"] = { 48.3, 33.4, VALLEY_OF_THE_FOUR_WINDS },
@@ -589,7 +759,24 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
-						["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+						["description"] = createLocalizationString({
+							readable = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+							constant = "THIS_BREADCRUMB_CAN_ONLY_BE_PICKED_UP_FROM_THE",
+							export = true,
+							text = {
+								en = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "这个前置引导任务只能从冒险指南（Shift+J）中接取。",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_6_2_0 },
 						["isBreadcrumb"] = true,
 						["lvl"] = 15,
@@ -624,7 +811,24 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(29873, {	-- Ken-Ken
-						["description"] = "This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",
+						["description"] = createLocalizationString({
+							readable = "This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",
+							constant = "THIS_QUEST_IS_NOT_OBTAINABLE_WHILE_HAVING_HERO",
+							export = true,
+							text = {
+								en = "This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "当任务日志中存在“英雄的召唤：卡桑琅丛林！”或“酋长的命令：卡桑琅丛林！”时，无法获得此任务。不过，在完成上述任务后即可接取。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 56110,	-- Xiao
 						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 						["isBreadcrumb"] = true,
@@ -950,7 +1154,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30056, {	-- The Farmer's Daughter
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["description"] = "~L.ONLY_AVAILABLE_AS_PART_OF_THE_HOP_HUNTING_QUEST",
 						["sourceQuest"] = 30046,	-- Chen's Resolution
 						["qg"] = 62385,	-- Den Mudclaw
 						["coord"] = { 44.3, 34.2, VALLEY_OF_THE_FOUR_WINDS },
@@ -1086,7 +1290,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(32019, {	-- They Call Him... Stormstout
-						["description"] = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
+						["description"] = createLocalizationString({
+							readable = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
+							constant = "ONLY_AVAILABLE_BEFORE_COMPLETION_OF",
+							export = true,
+							text = {
+								en = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅在完成 |cFFFFD700青龙寺|r 之前可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 56782,	-- Elder Sage Rain-Zhu
 						["coord"] = { 58.1, 58.6, THE_JADE_FOREST },
 						["isBreadcrumb"] = true,
@@ -1122,7 +1343,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29990, {	-- Training and Discipline
-						["description"] = "This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",
+						["description"] = createLocalizationString({
+							readable = "This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",
+							constant = "THIS_QUEST_ENDS_YOUR_ADVENTURE_IN_THIS_ZONE_FOR",
+							export = true,
+							text = {
+								en = "This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "此任务目前会结束你在该区域的冒险，你需要完成卡桑琅丛林的故事线才能解锁故事的最后一部分。",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuest"] = 29989,	-- Unyielding Fists: Trial of Stone
 						["qg"] = 56111,	-- Lin Tenderpaw
 						["coord"] = { 18.1, 31.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -1184,7 +1422,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30052, {	-- Weed War
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["description"] = "~L.ONLY_AVAILABLE_AS_PART_OF_THE_HOP_HUNTING_QUEST",
 						["sourceQuest"] = 30046,	-- Chen's Resolution
 						["qg"] = 57385,	-- Gai Lan
 						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
@@ -1334,7 +1572,24 @@ root(ROOTS.Zones, {
 						["questID"] = 31869,
 						["coord"] = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
 						-- #if ANYCLASSIC
-						["description"] = "While it exists in the game, it currently cannot be looted as of the Landfall patch (5.5.1). Please fix! :(",
+						["description"] = createLocalizationString({
+							readable = "While it exists in the game, it currently cannot be looted as of the Landfall patch (5.5.1). Please fix! :(",
+							constant = "WHILE_IT_EXISTS_IN_THE_GAME_IT_CURRENTLY_CANNOT",
+							export = true,
+							text = {
+								en = "While it exists in the game, it currently cannot be looted as of the Landfall patch (5.5.1). Please fix! :(",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "虽然它存在于游戏中，但截至登陆日补丁（5.5.1）仍无法拾取。请修复！:(",
+								-- TODO: tw = "",
+							},
+						}),
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_5_1 },
 						["isBounty"] = true,
 						-- #endif
@@ -1365,7 +1620,24 @@ root(ROOTS.Zones, {
 					}),
 					n(64004, {	-- Ghostly Pandaren Fisherman
 						["coord"] = { 46.8, 24.6, VALLEY_OF_THE_FOUR_WINDS },
-						["description"] = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
+						["description"] = createLocalizationString({
+							readable = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
+							constant = "SPEAK_WITH_THE_GHOSTLY_PANDAREN_FISHERMAN_TO",
+							export = true,
+							text = {
+								en = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "与幽灵熊猫人渔夫交谈即可获得该玩具。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 31284,
 						["groups"] = {
 							i(85973),	-- Ancient Pandaren Fishing Charm (TOY!)
@@ -1404,7 +1676,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(213650, {	-- Virmen Treasure Cache
-						["description"] = "Has a respawn timer of approx 7 minutes.",
+						["description"] = createLocalizationString({
+							readable = "Has a respawn timer of approx 7 minutes.",
+							constant = "HAS_A_RESPAWN_TIMER_OF_APPROX_7_MINUTES",
+							export = true,
+							text = {
+								en = "Has a respawn timer of approx 7 minutes.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "刷新时间约为 7 分钟。",
+								-- TODO: tw = "",
+							},
+						}),
 						["questID"] = 31405,
 						["coords"] = {
 							{ 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -2868,7 +3157,24 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(74842, {	-- Mogu Pumpkin
-						["description"] = "Drops from Virmen.",
+						["description"] = createLocalizationString({
+							readable = "Drops from Virmen.",
+							constant = "DROPS_FROM_VIRMEN",
+							export = true,
+							text = {
+								en = "Drops from Virmen.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "由兔妖掉落。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				}),
 			},

@@ -554,7 +554,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(299, {	-- Uncovering the Past
-				["description"] = "The quest items spawn randomly in the dig site below.",
+				["description"] = createLocalizationString({
+					readable = "The quest items spawn randomly in the dig site below.",
+					constant = "THE_QUEST_ITEMS_SPAWN_RANDOMLY_IN_THE_DIG_SITE",
+					export = true,
+					text = {
+						en = "The quest items spawn randomly in the dig site below.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "任务物品会在下方的挖掘场中随机刷新。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qg"] = 1077,	-- Prospector Whelgar
 				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,

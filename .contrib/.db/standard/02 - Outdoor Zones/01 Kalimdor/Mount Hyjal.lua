@@ -10,7 +10,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5483, {	-- Bounce
-					["description"] = "Requires the regrowth phase of Mount Hyjal.",
+					["description"] = createLocalizationString({
+						readable = "Requires the regrowth phase of Mount Hyjal.",
+						constant = "REQUIRES_THE_REGROWTH_PHASE_OF_MOUNT_HYJAL",
+						export = true,
+						text = {
+							en = "Requires the regrowth phase of Mount Hyjal.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要海加尔山处于再生阶段。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				ach(4870, {	-- Coming Down the Mountain
 					-- #if AFTER 7.3.5
@@ -34,10 +51,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4863),	-- Explore Hyjal
 				ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN.
-					["description"] = "The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the intial quests as part of the questline in Shrine of Aviana.",
+					["description"] = createLocalizationString({
+						readable = "The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the intial quests as part of the questline in Shrine of Aviana.",
+						constant = "THE_DAILY_QUEST_VIGILANCE_ON_WINGS_IS_OFFERED",
+						export = true,
+						text = {
+							en = "The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the intial quests as part of the questline in Shrine of Aviana.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "日常任务“振翅警戒”会在完成艾维娜神殿任务线中最初的任务后，于火焰之地孵化场提供。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
-							["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
+							["description"] = createLocalizationString({
+								readable = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
+								constant = "CONTAINS_EITHER_THE_BLUE_OR_GOLD_MINI_JOUSTER",
+								export = true,
+								text = {
+									en = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "内含蓝色或金色迷你骑士之一，即你在任务“空中警戒”中未选择的那一个。",
+									-- TODO: tw = "",
+								},
+							}),
 							["groups"] = {
 								i(65661),	-- Blue Mini Jouster (PET!)
 								i(65662),	-- Gold Mini Jouster (PET!)
@@ -55,7 +106,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(540, {	-- Carrion Rat (PET!)
-						["description"] = "Only found at the given coords, and as secondary pet.",
+						["description"] = createLocalizationString({
+							readable = "Only found at the given coords, and as secondary pet.",
+							constant = "ONLY_FOUND_AT_THE_GIVEN_COORDS_AND_AS_SECONDARY",
+							export = true,
+							text = {
+								en = "Only found at the given coords, and as secondary pet.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "仅在所给坐标处出现，且作为副宠出现。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 79.1, 49.3, MOUNT_HYJAL },	-- Seat of the Chosen
 							{ 55.0, 86.0, MOUNT_HYJAL },	-- Ascendant's Rise, west of.
@@ -63,7 +131,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(755, {	-- Death's Head Cockroach (PET!)
-						["description"] = "Can be found in areas where the Twilight Hammer have set up camp in Mount Hyjal, as well as common secondary pet to other critters.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in areas where the Twilight Hammer have set up camp in Mount Hyjal, as well as common secondary pet to other critters.",
+							constant = "CAN_BE_FOUND_IN_AREAS_WHERE_THE_TWILIGHT_HAMMER",
+							export = true,
+							text = {
+								en = "Can be found in areas where the Twilight Hammer have set up camp in Mount Hyjal, as well as common secondary pet to other critters.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在海加尔山暮光之锤扎营的区域找到，也是其他小动物常见的次要宠物。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 57.0, 68.75, MOUNT_HYJAL },	-- Ascendant's Rise, north of
 							{ 58.4, 80.8, MOUNT_HYJAL },	-- Ascendant's Rise, south
@@ -73,7 +158,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(479, {	-- Elfin Rabbit (PET!)
-						["description"] = "Found mostly around Nordrassil in Mount Hyjal, as well as Teldrassil.",
+						["description"] = createLocalizationString({
+							readable = "Found mostly around Nordrassil in Mount Hyjal, as well as Teldrassil.",
+							constant = "FOUND_MOSTLY_AROUND_NORDRASSIL_IN_MOUNT_HYJAL",
+							export = true,
+							text = {
+								en = "Found mostly around Nordrassil in Mount Hyjal, as well as Teldrassil.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "主要分布在海加尔山诺达希尔周围，以及泰达希尔。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 40.7, 43.55, MOUNT_HYJAL },	-- Shrine of Aviana
 							{ 50.0, 20.0, MOUNT_HYJAL },	-- Ruins of Lar'donir
@@ -82,31 +184,116 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(415, {	-- Fire Beetle (PET!)
-						["description"] = "Common around fiery and dry areas of Mount Hyjal, as well as around Searing Gorge, Blasted Lands and Burning Steppes",
+						["description"] = createLocalizationString({
+							readable = "Common around fiery and dry areas of Mount Hyjal, as well as around Searing Gorge, Blasted Lands and Burning Steppes",
+							constant = "COMMON_AROUND_FIERY_AND_DRY_AREAS_OF_MOUNT",
+							export = true,
+							text = {
+								en = "Common around fiery and dry areas of Mount Hyjal, as well as around Searing Gorge, Blasted Lands and Burning Steppes",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于海加尔山的炎热干燥区域，以及灼热峡谷、诅咒之地和燃烧平原周边",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 60.0, 70.0, MOUNT_HYJAL },	-- Fiery Mount Hyjal
 						},
 					}),
 					pet(541, {	-- Fire-Proof Roach (PET!)
-						["description"] = "Common around fiery and dry areas of Mount Hyjal.",
+						["description"] = createLocalizationString({
+							readable = "Common around fiery and dry areas of Mount Hyjal.",
+							constant = "COMMON_AROUND_FIERY_AND_DRY_AREAS_OF_MOUNT_2",
+							export = true,
+							text = {
+								en = "Common around fiery and dry areas of Mount Hyjal.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于海加尔山的炎热干燥区域。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 60.0, 70.0, MOUNT_HYJAL },	-- Fiery Mount Hyjal
 						},
 					}),
 					pet(539, {	-- Grotto Vole (PET!)
-						["description"] = "Can be found in the Hyjal Barrow Dens.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in the Hyjal Barrow Dens.",
+							constant = "CAN_BE_FOUND_IN_THE_HYJAL_BARROW_DENS",
+							export = true,
+							text = {
+								en = "Can be found in the Hyjal Barrow Dens.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在海加尔古墓中找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 52.5, 17.3, MOUNT_HYJAL },	-- Hyjal Barrow Dens entrance.
 						},
 					}),
 					pet(547, {	-- Nordrassil Wisp (PET!)
-						["description"] = "Can be found around the Nordrassil pond.",
+						["description"] = createLocalizationString({
+							readable = "Can be found around the Nordrassil pond.",
+							constant = "CAN_BE_FOUND_AROUND_THE_NORDRASSIL_POND",
+							export = true,
+							text = {
+								en = "Can be found around the Nordrassil pond.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在诺达希尔池塘周围找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 60.55, 26.35, MOUNT_HYJAL },	-- Nordrassil
 						},
 					}),
 					pet(503, {	-- Silky Moth (PET!)
-						["description"] = "Can be found around the Nordrassil pond, as well as in Moonglade and Un'Goro Crater.",
+						["description"] = createLocalizationString({
+							readable = "Can be found around the Nordrassil pond, as well as in Moonglade and Un'Goro Crater.",
+							constant = "CAN_BE_FOUND_AROUND_THE_NORDRASSIL_POND_AS_WELL",
+							export = true,
+							text = {
+								en = "Can be found around the Nordrassil pond, as well as in Moonglade and Un'Goro Crater.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在诺达希尔池塘周围，以及月光林地和安戈洛环形山找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 62.7, 28.6, MOUNT_HYJAL },	-- Nordrassil south
 							{ 58.7, 21.25, MOUNT_HYJAL },	-- Nordrassil west
@@ -114,7 +301,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(469, {	-- Twilight Beetle (PET!)
-						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
+						["description"] = createLocalizationString({
+							readable = "Can be found in areas where the Twilight Hammer have set up camp.",
+							constant = "CAN_BE_FOUND_IN_AREAS_WHERE_THE_TWILIGHT_HAMMER_2",
+							export = true,
+							text = {
+								en = "Can be found in areas where the Twilight Hammer have set up camp.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "可在暮光之锤扎营的区域找到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 58.4, 80.8, MOUNT_HYJAL },	-- Ascendant's Rise
 							{ 57.0, 68.75, MOUNT_HYJAL },	-- Ascendant's Rise, north of
@@ -172,7 +376,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 					i(68050, {	-- Shatterscale Mightfish
-						["description"] = "Can be caught by fishing in lava using a special lure.",
+						["description"] = createLocalizationString({
+							readable = "Can be caught by fishing in lava using a special lure.",
+							constant = "CAN_BE_CAUGHT_BY_FISHING_IN_LAVA_USING_A",
+							export = true,
+							text = {
+								en = "Can be caught by fishing in lava using a special lure.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "使用特殊鱼饵在岩浆中钓鱼可以钓到。",
+								-- TODO: tw = "",
+							},
+						}),
 						["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
 						["coord"] = { 52.4, 77.0, MOUNT_HYJAL },	-- The Throne of Flame
 					}),
@@ -641,7 +862,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25303, {	-- Elementary!
-					["description"] = "Activate in order 1. Fire, 2. Earth, 3. Air and 4. Water.",
+					["description"] = createLocalizationString({
+						readable = "Activate in order 1. Fire, 2. Earth, 3. Air and 4. Water.",
+						constant = "ACTIVATE_IN_ORDER_1_FIRE_2_EARTH_3_AIR_AND_4",
+						export = true,
+						text = {
+							en = "Activate in order 1. Fire, 2. Earth, 3. Air and 4. Water.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "按顺序激活：1. 火，2. 土，3. 风，4. 水。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 25301,	-- Mastering Puppets
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
 					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
@@ -1109,7 +1347,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25355, {	-- Lightning in a Bottle
-					["description"] = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
+					["description"] = createLocalizationString({
+						readable = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
+						constant = "BEFORE_USING_TOTEM_OF_LO_GOSH_TO_TURN_IN_THE",
+						export = true,
+						text = {
+							en = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在使用洛戈什图腾交任务之前，回到营地并站在塔克里克·怒嚎旁边。召唤洛戈什之魂，交任务，然后不要移动，先从塔克里克·怒嚎处接取“进入噬渊！”，再从洛戈什之魂处接取“进入噬渊！”（按此顺序）。恭喜，你花一个任务的代价得到了两个任务！",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 25277,	-- Cleaning House
 					["qg"] = 39432,	-- Takrik Ragehowl
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
@@ -1125,7 +1380,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25353, {	-- Lightning in a Bottle
-					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
+					["description"] = createLocalizationString({
+						readable = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
+						constant = "BEFORE_USING_TOTEM_OF_GOLDRINN_TO_TURN_IN_THE",
+						export = true,
+						text = {
+							en = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在使用戈德林图腾交任务之前，回到营地并站在伊恩·杜兰旁边。召唤戈德林，交任务，然后不要移动，先从伊恩·杜兰处接取“进入噬渊！”，再从戈德林处接取“进入噬渊！”（按此顺序）。恭喜，你花一个任务的代价得到了两个任务！",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 25278,	-- Cleaning House
 					["qg"] = 39433,	-- Ian Duran
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
@@ -1287,7 +1559,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25317, {	-- Protect the World Tree
 					-- #if AFTER BFA
-					["description"] = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
+					["description"] = createLocalizationString({
+						readable = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
+						constant = "IF_THE_NPC_IS_NOT_VISIBLE_AND_MAGNI_IS_THERE",
+						export = true,
+						text = {
+							en = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果看不到该 NPC，而是麦格尼在那里，你需要完成任务“以艾泽里特的方式行事” [55521]，以恢复正确的位面阶段来拾取这个任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["sourceQuest"] = 25316,	-- As Hyjal Burns
 					["qg"] = 40289,	-- Ysera
@@ -1761,7 +2050,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25443, {	-- The Name Never Spoken
-					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
+					["description"] = createLocalizationString({
+						readable = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
+						constant = "TO_GET_THIS_QUEST_DO_NOT_ACCEPT_ANOTHER_VERSION",
+						export = true,
+						text = {
+							en = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要获得此任务，在“新主人”之后*不要*接受被奴役的炼狱领主提供的另一个版本，而是回到泰鲁斯·黑角处。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 25411,	-- A New Master
 					["altQuests"] = { 25412 },	-- The Name Never Spoken
 					["qg"] = 39933,	-- Tyrus Blackhorn
@@ -2056,7 +2362,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25985, {	-- Wings Over Mount Hyjal
-					["description"] = "If you also need the breadcrumb quest 'Aviana's Legacy', this quest must be completed without accepting any quests in Shrine of Aviana prior to turning in 'Return from the Firelands'.",
+					["description"] = createLocalizationString({
+						readable = "If you also need the breadcrumb quest 'Aviana's Legacy', this quest must be completed without accepting any quests in Shrine of Aviana prior to turning in 'Return from the Firelands'.",
+						constant = "IF_YOU_ALSO_NEED_THE_BREADCRUMB_QUEST_AVIANA_S",
+						export = true,
+						text = {
+							en = "If you also need the breadcrumb quest 'Aviana's Legacy', this quest must be completed without accepting any quests in Shrine of Aviana prior to turning in 'Return from the Firelands'.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "如果你还需要前置任务“艾维娜的遗产”，则必须在交付“从火焰之地归来”之前不接取艾维娜神殿的任何任务才能完成此任务。",
+							-- TODO: tw = "",
+						},
+					}),
 					["qg"] = 40833,	-- Tiala Whitemane
 					["coord"] = { 63.25, 21.50, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
@@ -2092,7 +2415,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.2, 54.8, MOUNT_HYJAL },
 						{ 41.2, 54.0, MOUNT_HYJAL },
 					},
-					["description"] = "This spirit beast is a rare tamable cat with a unique silver spectral skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+					["description"] = createLocalizationString({
+						readable = "This spirit beast is a rare tamable cat with a unique silver spectral skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+						constant = "THIS_SPIRIT_BEAST_IS_A_RARE_TAMABLE_CAT_WITH_A",
+						export = true,
+						text = {
+							en = "This spirit beast is a rare tamable cat with a unique silver spectral skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此灵魂兽是一只稀有的可驯服猫科动物，拥有独特的银色幽灵外观。它是 4.2 版本加入的“挑战”驯服目标之一：灵爪会秒杀穿着护甲的玩家。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_4_2_0 },
 				})),
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(54320, {	-- Ban'thalos
@@ -2103,7 +2443,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 25.8, 61.2, MOUNT_HYJAL },
 						{ 26.2, 62.8, MOUNT_HYJAL },
 					},
-					["description"] = "This spirit beast is a rare tamable spawn with a unique spectral owl model. It is one of the \"challenge\" tames added in 4.2: the challenge is that he flies very high, so you will need to creatively find ways to aggro and tame without taking lethal fall damage.",
+					["description"] = createLocalizationString({
+						readable = "This spirit beast is a rare tamable spawn with a unique spectral owl model. It is one of the \"challenge\" tames added in 4.2: the challenge is that he flies very high, so you will need to creatively find ways to aggro and tame without taking lethal fall damage.",
+						constant = "THIS_SPIRIT_BEAST_IS_A_RARE_TAMABLE_SPAWN_WITH",
+						export = true,
+						text = {
+							en = "This spirit beast is a rare tamable spawn with a unique spectral owl model. It is one of the \"challenge\" tames added in 4.2: the challenge is that he flies very high, so you will need to creatively find ways to aggro and tame without taking lethal fall damage.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此灵魂兽是一只稀有的可驯服生物，拥有独特的幽灵猫头鹰模型。它是 4.2 版本加入的“挑战”驯服目标之一：难点在于它飞得非常高，因此你需要创造性地想办法在不受到致命坠落伤害的情况下引到并驯服它。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_4_2_0 },
 				})),
 				n(50057, {	-- Blazewing
@@ -2126,7 +2483,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.2, 54.8, MOUNT_HYJAL },
 						{ 41.2, 54.0, MOUNT_HYJAL },
 					},
-					["description"] = "This spirit beast is a rare tamable cat with a unique blue/white striped skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+					["description"] = createLocalizationString({
+						readable = "This spirit beast is a rare tamable cat with a unique blue/white striped skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+						constant = "THIS_SPIRIT_BEAST_IS_A_RARE_TAMABLE_CAT_WITH_A_2",
+						export = true,
+						text = {
+							en = "This spirit beast is a rare tamable cat with a unique blue/white striped skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此灵魂兽是一只稀有的可驯服猫科动物，拥有独特的蓝白条纹外观。它是 4.2 版本加入的“挑战”驯服目标之一：灵爪会秒杀穿着护甲的玩家。",
+							-- TODO: tw = "",
+						},
+					}),
 					["timeline"] = { ADDED_4_2_0 },
 				})),
 				n(50053, {	-- Thartuk the Exile
@@ -2157,7 +2531,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.8, 82.0, MOUNT_HYJAL },
 						{ 52.2, 83.2, MOUNT_HYJAL },
 					},
-					["description"] = "This turtle is a rare tamable spawn with a unique fiery shell.",
+					["description"] = createLocalizationString({
+						readable = "This turtle is a rare tamable spawn with a unique fiery shell.",
+						constant = "THIS_TURTLE_IS_A_RARE_TAMABLE_SPAWN_WITH_A",
+						export = true,
+						text = {
+							en = "This turtle is a rare tamable spawn with a unique fiery shell.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此乌龟是一只稀有的可驯服生物，拥有独特的火焰龟壳。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			n(VENDORS, {
@@ -2181,7 +2572,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(62380),	-- Wilderness Legguards
 							i(62382),	-- Waywatcher's Boots
 							i(62367, {	-- Arcanum of Hyjal
-								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["description"] = createLocalizationString({
+									readable = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+									constant = "THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+									export = true,
+									text = {
+										en = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+										-- TODO: de = "",
+										-- TODO: es = "",
+										-- TODO: mx = "",
+										-- TODO: fr = "",
+										-- TODO: it = "",
+										-- TODO: ko = "",
+										-- TODO: pt = "",
+										-- TODO: ru = "",
+										cn = "仅当你当前角色尚未达到购买所需的声望时，此版本才会在商人处显示。",
+										-- TODO: tw = "",
+									},
+								}),
 								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),

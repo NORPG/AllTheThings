@@ -81,7 +81,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 33.4, 36.4, BASTION },
 				["groups"] = {
 					i(180972, {	-- Pristine Vuline Pelt
-						["description"] = "Take this to Ta'lan the Antiquary in Oribos (The Broker's Den) |cffffffff(51.3, 43.0)|r.",
+						["description"] = createLocalizationString({
+							readable = "Take this to Ta'lan the Antiquary in Oribos (The Broker's Den) |cffffffff(51.3, 43.0)|r.",
+							constant = "TAKE_THIS_TO_TA_LAN_THE_ANTIQUARY_IN_ORIBOS_THE",
+							export = true,
+							text = {
+								en = "Take this to Ta'lan the Antiquary in Oribos (The Broker's Den) |cffffffff(51.3, 43.0)|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "把它交给奥利波斯的古物学家塔兰（掮灵巢穴）|cffffffff(51.3, 43.0)|r。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(183786),	-- Happiness Bird
 				},

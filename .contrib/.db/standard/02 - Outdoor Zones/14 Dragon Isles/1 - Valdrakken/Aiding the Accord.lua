@@ -115,25 +115,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				i(201921, {	-- Dragonscale Expedition Insignia [Epic 500]
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = createLocalizationString({
+						readable = "This is only awarded if your character is currently max Renown with this reputation.",
+						constant = "THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
+						export = true,
+						text = {
+							en = "This is only awarded if your character is currently max Renown with this reputation.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "仅当你的角色当前与该声望的名望达到上限时才会获得。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
 					-- #if BEFORE 10.1
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 					-- Rewarded from the Fyrakk Assault in Azure Span with no reputation requirement
 					-- #endif
 				}),
 				i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 					-- #if BEFORE 10.1
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 					-- Rewarded from the Fyrakk Assault in OhnAhran Plains with no reputation requirement
 					-- #endif
 				}),
 				i(201924, {	-- Valdrakken Accord Insignia [Epic 500]
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
-					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
 				}),
 			})),
 		}),

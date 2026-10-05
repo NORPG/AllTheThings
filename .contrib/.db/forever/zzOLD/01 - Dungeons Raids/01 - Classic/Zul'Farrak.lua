@@ -274,14 +274,48 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(SPECIAL, {
 				-- #if BEFORE 3.0.8
 				i(9240, {	-- Mallet of Zul'Farrak
-					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
+					["description"] = createLocalizationString({
+						readable = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
+						constant = "THE_SACRED_MALLET_DROPS_FROM_QIAGA_THE_KEEPER",
+						export = true,
+						text = {
+							en = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "神圣之槌由辛特兰祖尔祭坛顶部的守护者奇亚加掉落。然后把它带到辛萨罗的顶端，在祭坛附近使用，使其变成祖尔法拉克之槌，这样你就能在祖尔法拉克召唤加兹瑞拉。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 59.0, 79.6, MAP.THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
 					["cr"] = 7995,	-- Vile Priestess Hexx
 				}),
 				i(9241, {	-- Sacred Mallet
-					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
+					["description"] = createLocalizationString({
+						readable = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
+						constant = "BRING_THIS_TO_THE_TOP_OF_JINTHA_ALOR_AND_USE_IT",
+						export = true,
+						text = {
+							en = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "将此物品带到辛萨罗的顶端，在祭坛附近使用，使其变成祖尔法拉克之槌，这样你就能在祖尔法拉克召唤加兹瑞拉。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 49.2, 68.6, MAP.THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7996,	-- Qiaga the Keeper
@@ -289,7 +323,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(223526, {	-- Sul'thraze the Lasher
-					["description"] = "You must take both of the swords and combine them to form this weapon.",
+					["description"] = createLocalizationString({
+						readable = "You must take both of the swords and combine them to form this weapon.",
+						constant = "YOU_MUST_TAKE_BOTH_OF_THE_SWORDS_AND_COMBINE",
+						export = true,
+						text = {
+							en = "You must take both of the swords and combine them to form this weapon.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须拿到两把剑并将它们合成为此武器。",
+							-- TODO: tw = "",
+						},
+					}),
 					["cost"] = {
 						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
@@ -304,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #else
 				i(9372, {	-- Sul'thraze the Lasher
-					["description"] = "You must take both of the swords and combine them to form this weapon.",
+					["description"] = "~L.YOU_MUST_TAKE_BOTH_OF_THE_SWORDS_AND_COMBINE",
 					["cost"] = {
 						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
@@ -325,7 +376,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, n(222573, {	-- Delirious Ancient
-				["description"] = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
+				["description"] = createLocalizationString({
+					readable = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
+					constant = "SPAWNS_AFTER_CLEARING_ANY_3_BOSSES_OTHER_THAN",
+					export = true,
+					text = {
+						en = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在清掉任意 3 个首领（加兹瑞拉除外）后刷新，并会在加兹瑞拉区域附近游荡。",
+						-- TODO: tw = "",
+					},
+				}),
 				["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 				["groups"] = {
 					i(221290),	-- Ace of Dunes
@@ -335,7 +403,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			n(10080, {	-- Sandarr Dunereaver
-				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
+				["description"] = createLocalizationString({
+					readable = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
+					constant = "THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_5",
+					export = true,
+					text = {
+						en = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这是一种稀有生物，因此并不总是存在。\n\n列在此NPC名下的物品“严格来说”也能从副本中的其他生物身上掉落，但相比之下极为罕见。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(9512),	-- Blackmetal Cape
 					i(9511),	-- Bloodletter Scalpel
@@ -351,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(10082, {	-- Zerillis
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, i(223962)),	-- Sandstalker Ankleguards
@@ -406,7 +491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(10081, {	-- Dustwraith
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
+				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, i(223533)),	-- Desertwalker Cane
@@ -416,7 +501,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #else
 					i(12471, {	-- Desertwalker Cane
 						-- #if AFTER LEGION
-						["description"] = "This item is available only in personal loot, and requires a class with an Intellect-using loot spec.",
+						["description"] = createLocalizationString({
+							readable = "This item is available only in personal loot, and requires a class with an Intellect-using loot spec.",
+							constant = "THIS_ITEM_IS_AVAILABLE_ONLY_IN_PERSONAL_LOOT",
+							export = true,
+							text = {
+								en = "This item is available only in personal loot, and requires a class with an Intellect-using loot spec.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "该物品仅在个人拾取模式下可用，并且需要选择使用智力的拾取专精的职业。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 					}),
 					-- #endif
@@ -424,7 +526,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE MOP
 			n(7796, {	-- Nekrum Gutchewer
-				["description"] = "He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",
+				["description"] = createLocalizationString({
+					readable = "He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",
+					constant = "HE_S_LINKED_TO_SHADOWPRIEST_SEZZ_ZIZ_BOTH_WILL",
+					export = true,
+					text = {
+						en = "He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "他与暗影祭司塞兹兹是链接的。一旦对金字塔的 100 名巨魔进攻完成，两者都会进入战斗。",
+						-- TODO: tw = "",
+					},
+				}),
 				["groups"] = {
 					i(9471, {	-- Nekrum's Medallion
 						["races"] = ALLIANCE_ONLY,
@@ -479,7 +598,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 			}),
 			n(7604, {	-- Sergeant Bly
-				["description"] = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
+				["description"] = createLocalizationString({
+					readable = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
+					constant = "THESE_ADVENTURERS_INITIALLY_HELP_YOU_CLEAR_THE",
+					export = true,
+					text = {
+						en = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "这些冒险者最初会帮助你清理通往上一个首领路上的重重阻碍，但之后他们会转而攻击你。如果队伍中没有人需要该任务物品，你就不必与他们战斗。",
+						-- TODO: tw = "",
+					},
+				}),
 				["qgs"] = {
 					7608,	-- Murta Grimgut
 					7606,	-- Oro Eyegouge
@@ -490,7 +626,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7797, {	-- Ruuzlu
-				["description"] = "He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",
+				["description"] = createLocalizationString({
+					readable = "He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",
+					constant = "HE_S_LINKED_TO_CHIEF_UKORZ_SANDSCALP_AND_BOTH",
+					export = true,
+					text = {
+						en = "He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "他与乌克兹·沙顶酋长是链接的，而且两者都免疫控制技能。不过通常更倾向于先击杀鲁兹鲁。",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
@@ -533,7 +686,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(483, {	-- Gahz'rilla
 				["creatureID"] = 7273,
 				-- #if BEFORE 3.0.8
-				["description"] = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
+				["description"] = createLocalizationString({
+					readable = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
+					constant = "SOMEONE_IN_YOUR_PARTY_MUST_HAVE_THE_MALLET_OF",
+					export = true,
+					text = {
+						en = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你的队伍中必须有人拥有祖尔法拉克之槌才能召唤这个首领！\n\n如果你有，只需敲响祖尔法拉克之锣即可。（事先跟队友确认一下……）",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "o", 141832 },	-- Gong of Zul'Farrak
 				["cost"] = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
 				-- #endif

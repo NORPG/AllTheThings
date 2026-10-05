@@ -364,7 +364,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(2416, {	-- Hard Boiled
-			["description"] = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
+			["description"] = createLocalizationString({
+				readable = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
+				constant = "USE_THE_BLOSSOMING_BRANCH_ON_SOMEONE_ELSE_AND",
+				export = true,
+				text = {
+					en = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "对别人使用绽放之枝，希望他们也能投桃报李。",
+					-- TODO: tw = "",
+				},
+			}),
 			["provider"] = { "i", 44792 },	-- Blossoming Branch
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { UNGORO_CRATER },
@@ -449,7 +466,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "n", 216836 },	-- Golden Egg
 				{ "n", 219936 },	-- [DNT] Vignette
 			},
-			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
+			["description"] = createLocalizationString({
+				readable = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
+				constant = "DRAG_THE_LARGE_GOLDEN_EGG_TO_THE_LARGE_DUCK",
+				export = true,
+				text = {
+					en = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "把巨大的金蛋拖到巨大的鸭巢处即可刷出首领。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coord"] = { 30.3, 91.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
@@ -463,7 +497,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "n", 218736 },	-- Golden Egg
 				{ "n", 219928 },	-- [DNT] Vignette
 			},
-			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
+			["description"] = "~L.DRAG_THE_LARGE_GOLDEN_EGG_TO_THE_LARGE_DUCK",
 			["coord"] = { 44.4, 35.1, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
@@ -473,7 +507,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		n(216836, {	-- Golden Egg
-			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+			["description"] = createLocalizationString({
+				readable = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+				constant = "A_LARGE_GOLDEN_EGG_WILL_SPAWN_SOMEWHERE_NEARBY",
+				export = true,
+				text = {
+					en = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "附近某处会刷新一枚巨大的金蛋，你必须把它拖到巢穴。它大约和玩家角色一样大，非常容易看到。多个人可以一起帮忙拖蛋（人越多拖得越快）。它的机制有点像海象人的鱼叉捕鱼。",
+					-- TODO: tw = "",
+				},
+			}),
 			["coords"] = {
 				{ 31.0, 85.0, ELWYNN_FOREST },
 				{ 34.91, 87.96, ELWYNN_FOREST },
@@ -483,7 +534,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		n(218736, {	-- Golden Egg
-			["description"] = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+			["description"] = "~L.A_LARGE_GOLDEN_EGG_WILL_SPAWN_SOMEWHERE_NEARBY",
 			["coords"] = {
 				{ 44.8, 32.0, DUROTAR },
 				{ 46.2, 33.4, DUROTAR },	-- confirmed starting point

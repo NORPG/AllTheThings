@@ -68,10 +68,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ 42.4, 76.8, AZSHARA },
 							{ 51.8, 74.8, AZSHARA },
 						},
-						["description"] = "Normally found close to these coords, as well as in Everlook.",
+						["description"] = createLocalizationString({
+							readable = "Normally found close to these coords, as well as in Everlook.",
+							constant = "NORMALLY_FOUND_CLOSE_TO_THESE_COORDS_AS_WELL_AS",
+							export = true,
+							text = {
+								en = "Normally found close to these coords, as well as in Everlook.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "通常在这些坐标附近以及永望镇可以找到。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					pet(473, {	-- Turquoise Turtle (PET!)
-						["description"] = "Can commonly be found on the beaches of Azshara.",
+						["description"] = createLocalizationString({
+							readable = "Can commonly be found on the beaches of Azshara.",
+							constant = "CAN_COMMONLY_BE_FOUND_ON_THE_BEACHES_OF_AZSHARA",
+							export = true,
+							text = {
+								en = "Can commonly be found on the beaches of Azshara.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "常见于艾萨拉的海滩上。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 				},
 			}),
@@ -1403,7 +1437,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(44920, {	-- Order of Incantations
-					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
+					["description"] = createLocalizationString({
+						readable = "Puzzle order is Arcane, Frost, Fire, Shadow.",
+						constant = "PUZZLE_ORDER_IS_ARCANE_FROST_FIRE_SHADOW",
+						export = true,
+						text = {
+							en = "Puzzle order is Arcane, Frost, Fire, Shadow.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "解谜顺序为奥术、冰霜、火焰、暗影。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 44915,	-- Professionally Good looking
 					["qg"] = 115791,	-- Joanna
 					["coord"] = { 25.0, 38.6, AZSHARA },
@@ -2438,7 +2489,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(6651, {	-- Gatekeeper Rageroar
 					-- #if BEFORE CATA
-					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
+					["description"] = "~L.KILLING_HIM_WILL_REDUCE_YOUR_TIMBERMAW",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2450,7 +2501,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(6650, {	-- General Fangferror
 					-- #if AFTER CATA
-					["description"] = "Spawns at the coordinates 62.7, 75.6. Usually respawns in 30 to 60 minutes after last killed.",
+					["description"] = createLocalizationString({
+						readable = "Spawns at the coordinates 62.7, 75.6. Usually respawns in 30 to 60 minutes after last killed.",
+						constant = "SPAWNS_AT_THE_COORDINATES_62_7_75_6_USUALLY",
+						export = true,
+						text = {
+							en = "Spawns at the coordinates 62.7, 75.6. Usually respawns in 30 to 60 minutes after last killed.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在坐标 62.7, 75.6 处刷新。通常在最后一次被击杀后 30 到 60 分钟重新刷新。",
+							-- TODO: tw = "",
+						},
+					}),
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA

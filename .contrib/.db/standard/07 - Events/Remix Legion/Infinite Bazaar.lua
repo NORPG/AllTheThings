@@ -64,7 +64,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				}),
 			}),
 			n(251042, {	-- Domelius <Home Improvements>
-				["description"] = "You can buy additional copies of Housing Decor after receiving the first one from the respective Achievement.",
+				["description"] = createLocalizationString({
+					readable = "You can buy additional copies of Housing Decor after receiving the first one from the respective Achievement.",
+					constant = "YOU_CAN_BUY_ADDITIONAL_COPIES_OF_HOUSING_DECOR",
+					export = true,
+					text = {
+						en = "You can buy additional copies of Housing Decor after receiving the first one from the respective Achievement.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "在从对应成就中获得第一个房屋装饰后，你可以购买更多份。",
+						-- TODO: tw = "",
+					},
+				}),
 				["coord"] = { 45.9, 67.8, BROKEN_ISLES },
 				["groups"] = sharedData({
 					["timeline"] = { ADDED_11_2_7 },
@@ -95,7 +112,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 					i(250404, {	-- Hanging Felsteel Chain (DECOR!)
 						-- #if BEFORE 12.0.0
-						["description"] = "Not awarded by the achievement but unlocked by it so you can buy the Decor from the vendor.",
+						["description"] = createLocalizationString({
+							readable = "Not awarded by the achievement but unlocked by it so you can buy the Decor from the vendor.",
+							constant = "NOT_AWARDED_BY_THE_ACHIEVEMENT_BUT_UNLOCKED_BY",
+							export = true,
+							text = {
+								en = "Not awarded by the achievement but unlocked by it so you can buy the Decor from the vendor.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "并非由该成就直接奖励，而是由它解锁，让你可以从商人处购买该装饰品。",
+								-- TODO: tw = "",
+							},
+						}),
 						-- #endif
 						["sourceAchievement"] = 42675,	-- Defending the Broken Isles III
 						["cost"] = { { "c", BRONZE, 5000 } },
@@ -126,7 +160,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 					i(256678, {	-- Small Legion Candle (DECOR!)
 						-- #if BEFORE 12.0.0
-						["description"] = "Not awarded by the achievement but unlocked by it so you can buy the Decor from the vendor.",
+						["description"] = "~L.NOT_AWARDED_BY_THE_ACHIEVEMENT_BUT_UNLOCKED_BY",
 						-- #endif
 						["sourceAchievement"] = 42628,	-- The Nightfallen
 						["cost"] = { { "c", BRONZE, 2500 } },
@@ -790,7 +824,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					["cost"] = { { "c", BRONZE, 5 } },
 				}, {
 					i(254320, {	-- Elixir of Remembered Sight
-						["description"] = "|cFFE50D12NOT CONSUMED ON USE:|r If you, by any chance, destroyed the one you received from the quest, buy only 1.",
+						["description"] = createLocalizationString({
+							readable = "|cFFE50D12NOT CONSUMED ON USE:|r If you, by any chance, destroyed the one you received from the quest, buy only 1.",
+							constant = "CFFE50D12NOT_CONSUMED_ON_USE_R_IF_YOU_BY_ANY",
+							export = true,
+							text = {
+								en = "|cFFE50D12NOT CONSUMED ON USE:|r If you, by any chance, destroyed the one you received from the quest, buy only 1.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "|cFFE50D12使用后不消耗：|r 如果你不巧摧毁了从任务中获得的那一个，只买 1 个。",
+								-- TODO: tw = "",
+							},
+						}),
 					}),
 					i(250316, {	-- Everlasting Nosh
 						["races"] = exclude({ EARTHEN_ALLIANCE, EARTHEN_HORDE }, ALL_RACES),
@@ -1175,19 +1226,87 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 					filter(CONSUMABLES, {
 						i(254847, {	-- Minor Bronze Cache
-							["description"] = "Becomes available after purchasing 'Taeshalach'.\n\nContains 2500 Bronze.",
+							["description"] = createLocalizationString({
+								readable = "Becomes available after purchasing 'Taeshalach'.\n\nContains 2500 Bronze.",
+								constant = "BECOMES_AVAILABLE_AFTER_PURCHASING_TAESHALACH",
+								export = true,
+								text = {
+									en = "Becomes available after purchasing 'Taeshalach'.\n\nContains 2500 Bronze.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "购买“泰沙拉克”后开放。\n\n包含 2500 青铜。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 253306, 5 } },	-- 5x Everflame of Hatred
 						}),
 						i(254848, {	-- Minor Bronze Cache
-							["description"] = "Becomes available after purchasing 'Scythe of the Unmaker'.\n\nContains 2500 Bronze.",
+							["description"] = createLocalizationString({
+								readable = "Becomes available after purchasing 'Scythe of the Unmaker'.\n\nContains 2500 Bronze.",
+								constant = "BECOMES_AVAILABLE_AFTER_PURCHASING_SCYTHE_OF",
+								export = true,
+								text = {
+									en = "Becomes available after purchasing 'Scythe of the Unmaker'.\n\nContains 2500 Bronze.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "购买“灭世者之镰”后开放。\n\n包含 2500 青铜。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 253304, 5 } },	-- 5x Cosmic Soulsilver
 						}),
 						i(254849, {	-- Minor Bronze Cache
-							["description"] = "Becomes available after purchasing 'Hammer of Vigilance'.\n\nContains 2500 Bronze.",
+							["description"] = createLocalizationString({
+								readable = "Becomes available after purchasing 'Hammer of Vigilance'.\n\nContains 2500 Bronze.",
+								constant = "BECOMES_AVAILABLE_AFTER_PURCHASING_HAMMER_OF",
+								export = true,
+								text = {
+									en = "Becomes available after purchasing 'Hammer of Vigilance'.\n\nContains 2500 Bronze.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "购买“警戒之锤”后开放。\n\n包含 2500 青铜。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 253305, 5 } },	-- 5x Felwarped Slab
 						}),
 						i(254850, {	-- Minor Bronze Cache
-							["description"] = "Becomes available after purchasing 'The First Satyr's Spaulders'.\n\nContains 2500 Bronze.",
+							["description"] = createLocalizationString({
+								readable = "Becomes available after purchasing 'The First Satyr's Spaulders'.\n\nContains 2500 Bronze.",
+								constant = "BECOMES_AVAILABLE_AFTER_PURCHASING_THE_FIRST",
+								export = true,
+								text = {
+									en = "Becomes available after purchasing 'The First Satyr's Spaulders'.\n\nContains 2500 Bronze.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "购买“初代萨特的护肩”后开放。\n\n包含 2500 青铜。",
+									-- TODO: tw = "",
+								},
+							}),
 							["cost"] = { { "i", 242370, 5 } },	-- 5x Horns of the First Satyr
 						}),
 					}),

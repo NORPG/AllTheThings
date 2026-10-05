@@ -8,7 +8,24 @@ root(ROOTS.Zones, {
 			n(ZONE_DROPS, {
 				i(144312),	-- Formula: Enchant Neck - Mark of the Versatile [Rank 2] (RECIPE!)
 				i(133820, {	-- Recipe: Drogbar-Style Salmon [Rank 1] (RECIPE!)
-					["description"] = "Can drop from any Drogbar.",
+					["description"] = createLocalizationString({
+						readable = "Can drop from any Drogbar.",
+						constant = "CAN_DROP_FROM_ANY_DROGBAR",
+						export = true,
+						text = {
+							en = "Can drop from any Drogbar.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "可从任意卓格巴尔身上掉落。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				i(121069, {	-- Brulwurm Scale
 					["bonusID"] = 1812,

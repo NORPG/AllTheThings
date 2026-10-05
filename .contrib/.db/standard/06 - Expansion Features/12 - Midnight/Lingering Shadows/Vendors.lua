@@ -20,7 +20,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		["groups"] = {
 			n(VENDORS, {
 				n(255473, {	-- Maren Silverwing <Quartermaster>
-					["description"] = "|cffFF0000Items purchased from this Vendor will block you|r from completing the neighboring Cosmetic Vendor in ATT Completionist Mode.\nThis is a |cff00CCFFBlizzard|r restriction.",
+					["description"] = createLocalizationString({
+						readable = "|cffFF0000Items purchased from this Vendor will block you|r from completing the neighboring Cosmetic Vendor in ATT Completionist Mode.\nThis is a |cff00CCFFBlizzard|r restriction.",
+						constant = "CFFFF0000ITEMS_PURCHASED_FROM_THIS_VENDOR_WILL",
+						export = true,
+						text = {
+							en = "|cffFF0000Items purchased from this Vendor will block you|r from completing the neighboring Cosmetic Vendor in ATT Completionist Mode.\nThis is a |cff00CCFFBlizzard|r restriction.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "|cffFF0000从此商人处购买的物品会阻碍你|r在 ATT 完美主义模式下完成邻近的装饰品商人。\n这是|cff00CCFF暴雪|r的限制。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 48.0, 49.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
 						i(281407, {	-- Cache of Void-Touched Armaments: Belts (Adventurer)

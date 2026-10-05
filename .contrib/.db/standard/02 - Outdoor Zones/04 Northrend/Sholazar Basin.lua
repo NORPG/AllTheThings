@@ -136,16 +136,67 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(649, {	-- Biletoad (PET!)
-							["description"] = "Found around the central basin.",
+							["description"] = createLocalizationString({
+								readable = "Found around the central basin.",
+								constant = "FOUND_AROUND_THE_CENTRAL_BASIN",
+								export = true,
+								text = {
+									en = "Found around the central basin.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在中央盆地周围可找到。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 48.0, 63.0, SHOLAZAR_BASIN },
 						}),
 						pet(1167, {	-- Emerald Proto-Whelp (PET!)
-							["description"] = "Found all around the Savage Thicket, but they seem to be on an undisclosed timer. This pet is a strong PvE Dragonkin.",
+							["description"] = createLocalizationString({
+								readable = "Found all around the Savage Thicket, but they seem to be on an undisclosed timer. This pet is a strong PvE Dragonkin.",
+								constant = "FOUND_ALL_AROUND_THE_SAVAGE_THICKET_BUT_THEY",
+								export = true,
+								text = {
+									en = "Found all around the Savage Thicket, but they seem to be on an undisclosed timer. This pet is a strong PvE Dragonkin.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在蛮荒丛林各处都能找到，但它们似乎有一个未公开的刷新计时。这只宠物是强力的 PvE 龙类。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 46.0, 27.0, SHOLAZAR_BASIN },
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(532, {	-- Stunted Shardhorn (PET!)
-							["description"] = "Found around The Suntouched Pillar.",
+							["description"] = createLocalizationString({
+								readable = "Found around The Suntouched Pillar.",
+								constant = "FOUND_AROUND_THE_SUNTOUCHED_PILLAR",
+								export = true,
+								text = {
+									en = "Found around The Suntouched Pillar.",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "在日触之柱周围可找到。",
+									-- TODO: tw = "",
+								},
+							}),
 							["coord"] = { 33.0, 53.0, SHOLAZAR_BASIN },
 						}),
 					},
@@ -194,7 +245,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(1117, {	-- Sholazar Basin
-						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+						["description"] = "~L.THIS_IS_A_HIDDEN_REPUTATION_IT_MIGHT_NOT_COUNT",
 						["collectible"] = false,
 					}),
 					faction(FACTION_FRENZYHEART_TRIBE, {	-- Frenzyheart Tribe
@@ -242,7 +293,24 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(12582, {	-- Frenzyheart Champion
-						["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+						["description"] = createLocalizationString({
+							readable = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+							constant = "IN_THE_BATTLE_WITH_ARTRUIS_DURING_THE_QUEST",
+							export = true,
+							text = {
+								en = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "在任务|cFFefc400英雄的负担|r中与阿图里斯战斗时，留下哪个 NPC 存活将决定你与哪个阵营结盟。\n\n泽皮克存活：与狂心氏族结盟\n\n亚鲁特存活：与神谕者结盟\n\n你可以随意重复此任务，在两个阵营之间来回切换。\n\n警告：切换阵营会使你现有的声望降至尊敬。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["coord"] = { 72.0, 57.0, SHOLAZAR_BASIN },
 						["isDaily"] = true,
@@ -356,7 +424,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12689, {	-- Hand of the Oracles
-						["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+						["description"] = "~L.IN_THE_BATTLE_WITH_ARTRUIS_DURING_THE_QUEST",
 						["qg"] = 28667,	-- Jaloot
 						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
 						["isDaily"] = true,
@@ -786,7 +854,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12528, {	-- Playing Along
-						["description"] = "Available after you kill |cFFFFD700Pitch|r.",
+						["description"] = createLocalizationString({
+							readable = "Available after you kill |cFFFFD700Pitch|r.",
+							constant = "AVAILABLE_AFTER_YOU_KILL_CFFFFD700PITCH_R",
+							export = true,
+							text = {
+								en = "Available after you kill |cFFFFD700Pitch|r.",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "击杀|cFFFFD700皮奇|r后可用。",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 28095,	-- Tracker Gekgek
 						["coord"] = { 50.5, 76.5, SHOLAZAR_BASIN },
 					}),
@@ -1180,7 +1265,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32517, {	-- Loque'nahak <Mate of Har'koa>
-						["description"] = "If you're trying to collect Loque'Nahak's Pelt, bring a skinner!",
+						["description"] = createLocalizationString({
+							readable = "If you're trying to collect Loque'Nahak's Pelt, bring a skinner!",
+							constant = "IF_YOU_RE_TRYING_TO_COLLECT_LOQUE_NAHAK_S_PELT",
+							export = true,
+							text = {
+								en = "If you're trying to collect Loque'Nahak's Pelt, bring a skinner!",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "如果你想收集洛卡纳哈的皮毛，带个剥皮师！",
+								-- TODO: tw = "",
+							},
+						}),
 						["coords"] = {
 							{ 36.0, 30.0, SHOLAZAR_BASIN },
 							{ 35.8, 31.0, SHOLAZAR_BASIN },

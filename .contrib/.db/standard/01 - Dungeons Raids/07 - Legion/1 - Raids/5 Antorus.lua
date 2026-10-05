@@ -446,7 +446,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(HASABEL, {
 					o(405307, {	-- Singed Grimoire
 						i(208050, {	-- Grimoire of the Xorothian Felhunter (CI!)
-							["description"] = "1. Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into Zhar'doom, Greatstaff of the Devourer.\n2. Enter the Orange portal of the boss encounter to be teleported to a different platform.\n3. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
+							["description"] = createLocalizationString({
+								readable = "1. Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into Zhar'doom, Greatstaff of the Devourer.\n2. Enter the Orange portal of the boss encounter to be teleported to a different platform.\n3. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
+								constant = "1_DEFEAT_PORTAL_KEEPER_HASABEL_IN_ANTORUS_THE",
+								export = true,
+								text = {
+									en = "1. Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into Zhar'doom, Greatstaff of the Devourer.\n2. Enter the Orange portal of the boss encounter to be teleported to a different platform.\n3. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
+									-- TODO: de = "",
+									-- TODO: es = "",
+									-- TODO: mx = "",
+									-- TODO: fr = "",
+									-- TODO: it = "",
+									-- TODO: ko = "",
+									-- TODO: pt = "",
+									-- TODO: ru = "",
+									cn = "1. 在安托鲁斯，燃烧王座中，装备幻化成扎尔杜姆，吞噬者的法杖的法杖，击败传送门守护者哈萨贝尔。\n2. 进入首领战场的橙色传送门，传送到另一个平台。\n3. 装备幻化法杖时，与平台中央附近已停用的传送门互动，并选择<将你武器的力量导入传送门。>\n",
+									-- TODO: tw = "",
+								},
+							}),
 							["providers"] = {
 								{ "i", 32374, },	-- Zhar'doom, Greatstaff of the Devourer
 								{ "i", 150517, },	-- Zhar'doom, Greatstaff of the Devourer (TW)
@@ -544,7 +561,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_13",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在普通难度下立即进入灵魂猎手伊莫纳尔。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = {
 							49075,	-- Antorus, the Burning Throne: Dark Passage (Heroic)
 							49076,	-- Antorus, the Burning Throne: Dark Passage (Mythic)
@@ -553,7 +587,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						["qi"] = 152902,	-- Rune of Passage (QI!)
 					}),
 					q(49133, {	-- Antorus, the Burning Throne: The Heart of Argus (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_14",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在普通难度下立即进入阿格拉玛。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 49032 },	-- Antorus, the Burning Throne: Dark Passage (Normal)
 						["altQuests"] = {
 							49134,	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
@@ -589,13 +640,47 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(49075, {	-- Antorus, the Burning Throne: Dark Passage (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_15",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在英雄难度下立即进入灵魂猎手伊莫纳尔。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["altQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
 						["qg"] = 125512,	-- High Exarch Turalyon
 						["qi"] = 152906,	-- Rune of Passage (QI!)
 					}),
 					q(49134, {	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_16",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在英雄难度下立即进入阿格拉玛。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 49075 },	-- Antorus, the Burning Throne: Dark Passage (Heroic)
 						["altQuests"] = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
 						["qg"] = 125682,	-- Prophet Velen
@@ -618,12 +703,46 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(49076, {	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_17",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在史诗难度下立即进入灵魂猎手伊莫纳尔。\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["qg"] = 125512,	-- High Exarch Turalyon
 						["qi"] = 152907,	-- Rune of Passage (QI!)
 					}),
 					q(49135, {	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
+						["description"] = createLocalizationString({
+							readable = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
+							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_18",
+							export = true,
+							text = {
+								en = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
+								-- TODO: de = "",
+								-- TODO: es = "",
+								-- TODO: mx = "",
+								-- TODO: fr = "",
+								-- TODO: it = "",
+								-- TODO: ko = "",
+								-- TODO: pt = "",
+								-- TODO: ru = "",
+								cn = "完成此任务后，你每周可以在史诗难度下立即进入阿格拉玛。\n",
+								-- TODO: tw = "",
+							},
+						}),
 						["sourceQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
 						["qg"] = 125682,	-- Prophet Velen
 						["qi"] = 152910,	-- Sigil of the Dark Titan (QI!)

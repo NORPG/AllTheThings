@@ -182,7 +182,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38807, {	-- Infernal Brimstone Analysis
-					["description"] = "Need Rank 2 in all other mining ranks.",
+					["description"] = createLocalizationString({
+						readable = "Need Rank 2 in all other mining ranks.",
+						constant = "NEED_RANK_2_IN_ALL_OTHER_MINING_RANKS",
+						export = true,
+						text = {
+							en = "Need Rank 2 in all other mining ranks.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要在其他所有采矿技能等级中都达到 2 级。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = {
 						38806,	-- Infernal Brimstone Sample
 						38800,	-- Rin'thissa's Eye
@@ -348,7 +365,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 		}),
 		header(HEADERS.Spell, 184490, {	-- Living Leystone [Rank 3]
-			["description"] = "Best spot is in Valsharah during the 'Leystone Basilisks' World Quest.",
+			["description"] = createLocalizationString({
+				readable = "Best spot is in Valsharah during the 'Leystone Basilisks' World Quest.",
+				constant = "BEST_SPOT_IS_IN_VALSHARAH_DURING_THE_LEYSTONE",
+				export = true,
+				text = {
+					en = "Best spot is in Valsharah during the 'Leystone Basilisks' World Quest.",
+					-- TODO: de = "",
+					-- TODO: es = "",
+					-- TODO: mx = "",
+					-- TODO: fr = "",
+					-- TODO: it = "",
+					-- TODO: ko = "",
+					-- TODO: pt = "",
+					-- TODO: ru = "",
+					cn = "最佳地点是瓦尔莎拉，在“雷岩蜥蜴”世界任务期间。",
+					-- TODO: tw = "",
+				},
+			}),
 			["crs"] = {
 				104877,	-- Leystone Basilisk (Mining Proc)
 				103514,	-- Leystone Basilisk (WQ Valsharah)
@@ -389,7 +423,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		}),
 		n(QUESTS, {
 			q(38901, {	-- The Felsmiths
-				["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
+				["description"] = createLocalizationString({
+					readable = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
+					constant = "YOU_MUST_COMPLETE_ALL_OF_THE_RANK_1_FELSLATE",
+					export = true,
+					text = {
+						en = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你必须完成所有 1 级邪能板岩采矿技术，此任务才会可用。\n\n警告：必须完成该任务链，2 级任务物品才会掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					38795,	-- Felslate Deposit Sample
 					38796,	-- Felslate Seam Sample
@@ -414,7 +465,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 			q(38888, {	-- The Highmountain Tauren
-				["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
+				["description"] = createLocalizationString({
+					readable = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
+					constant = "YOU_MUST_COMPLETE_ALL_OF_THE_RANK_1_LEYSTONE",
+					export = true,
+					text = {
+						en = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你必须完成所有 1 级魔石矿采矿技术，此任务才会可用。\n\n警告：必须完成该任务链，2 级任务物品才会掉落。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = {
 					38777,	-- Leystone Deposit Sample
 					38784,	-- Leystone Seam Sample
@@ -510,7 +578,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(48752, {	-- A Need For Coal
-					["description"] = "Requires 50 Kul'Tiran Mining.",
+					["description"] = createLocalizationString({
+						readable = "Requires 50 Kul'Tiran Mining.",
+						constant = "REQUIRES_50_KUL_TIRAN_MINING",
+						export = true,
+						text = {
+							en = "Requires 50 Kul'Tiran Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 50 点库尔提拉斯采矿。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
 					["races"] = ALLIANCE_ONLY,
@@ -537,7 +622,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51962, {	-- Lumbering Away
-					["description"] = "Requires 50 Zandalari Mining",
+					["description"] = createLocalizationString({
+						readable = "Requires 50 Zandalari Mining",
+						constant = "REQUIRES_50_ZANDALARI_MINING",
+						export = true,
+						text = {
+							en = "Requires 50 Zandalari Mining",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 50 点赞达拉采矿",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["requireSkill"] = MINING,
@@ -548,7 +650,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48761, {	-- Spiderphobia
-					["description"] = "Requires 130 Kul'Tiran Mining.",
+					["description"] = createLocalizationString({
+						readable = "Requires 130 Kul'Tiran Mining.",
+						constant = "REQUIRES_130_KUL_TIRAN_MINING",
+						export = true,
+						text = {
+							en = "Requires 130 Kul'Tiran Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 130 点库尔提拉斯采矿。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 48752 },	-- A Need For Coal
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
@@ -558,7 +677,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51964, {	-- Insufferable Bloodsuckers
-					["description"] = "Requires 130 Zandalari Mining",
+					["description"] = createLocalizationString({
+						readable = "Requires 130 Zandalari Mining",
+						constant = "REQUIRES_130_ZANDALARI_MINING",
+						export = true,
+						text = {
+							en = "Requires 130 Zandalari Mining",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 130 点赞达拉采矿",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51962 },	-- Lumbering Away
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
@@ -584,7 +720,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(48764, {	-- Don't Pick a Fight
-					["description"] = "Requires 50 Kul'Tiran Mining.",
+					["description"] = "~L.REQUIRES_50_KUL_TIRAN_MINING",
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
 					["races"] = ALLIANCE_ONLY,
@@ -594,7 +730,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51965, {	-- Lending a Hand
-					["description"] = "Requires 50 Zandalari Mining",
+					["description"] = "~L.REQUIRES_50_ZANDALARI_MINING",
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -604,7 +740,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48767, {	-- Seams Familiar
-					["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Monelite Seam|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700MONELITE_SEAM_R_AT",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Monelite Seam|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任何采矿等级下都能从|cFFFFD700镍铜矿层|r中掉落。只能在库尔提拉斯采矿达到 150 点时才能上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 48764 },	-- Don't Pick a Fight
 					["provider"] = { "i", 160905 },	-- Lost Anchor Necklace
 					["races"] = ALLIANCE_ONLY,
@@ -613,7 +766,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51971, {	-- An Exquisite Brooch
-					["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Monelite Seam|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700MONELITE_SEAM_R_AT_2",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Monelite Seam|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在任何采矿等级下都能从|cFFFFD700镍铜矿层|r中掉落。只能在赞达拉采矿达到 150 点时才能上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51965 },	-- Lending a Hand
 					["provider"] = { "i", 160944 },	-- An Exquisite Brooch
 					["coord"] = { 44.0, 39.0, DAZARALOR },
@@ -685,7 +855,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(52044, {	-- An Exceptional Platinum Shard [A]
-					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700PLATINUM_DEPOSITS_R",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以在任何采矿等级下从|cFFFFD700铂金矿脉|r和|cFFFFD700富铂金矿脉|r中掉落。你只能在 150 级库尔提拉斯采矿时上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 161078 },	-- Exceptional Platinum Shard [A]
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -693,7 +880,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52046, {	-- An Exceptional Platinum Shard [H]
-					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+					["description"] = createLocalizationString({
+						readable = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+						constant = "THIS_CAN_DROP_FROM_CFFFFD700PLATINUM_DEPOSITS_R_2",
+						export = true,
+						text = {
+							en = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "这可以在任何采矿等级下从|cFFFFD700铂金矿脉|r和|cFFFFD700富铂金矿脉|r中掉落。你只能在 150 级赞达拉采矿时上交。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "i", 161079 },	-- Exceptional Platinum Shard [H]
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -701,7 +905,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52049, {	-- X Marks the Plat!
-					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",
+					["description"] = "~L.THIS_CAN_DROP_FROM_CFFFFD700PLATINUM_DEPOSITS_R",
 					["sourceQuests"] = { 52044 },	-- An Exceptional Platinum Shard [A]
 					["provider"] = { "i", 161085 },	-- Tattered Map
 					["races"] = ALLIANCE_ONLY,
@@ -710,7 +914,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52053, {	-- The Platinum Map
-					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",
+					["description"] = "~L.THIS_CAN_DROP_FROM_CFFFFD700PLATINUM_DEPOSITS_R_2",
 					["sourceQuests"] = { 52046 },	-- An Exceptional Platinum Shard [H]
 					["provider"] = { "i", 161088 },	-- Platinum Map
 					["races"] = HORDE_ONLY,
@@ -755,7 +959,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(51568, {	-- Ritualistic Preparations [A]
-					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
+					["description"] = createLocalizationString({
+						readable = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
+						constant = "REQUIRES_50_KUL_TIRAN_MINING_73_4_8_4_IN",
+						export = true,
+						text = {
+							en = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 50 点库尔提拉斯采矿\n伯拉勒斯的 73.4, 8.4 是熔炉的位置\n提拉加德海峡的 41.8, 30.0 是获取祝福的位置",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coords"] = {
 						{ 75.0, 7.6, BORALUS },	-- Trainer Location
@@ -771,7 +992,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52014, {	-- Ritualistic Prepartions [H]
-					["description"] = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
+					["description"] = createLocalizationString({
+						readable = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
+						constant = "REQUIRES_50_ZANDALARI_MINING_44_0_38_3_IN_DAZA",
+						export = true,
+						text = {
+							en = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 50 点赞达拉采矿\n达萨罗的 44.0, 38.3 是熔炉的位置\n达萨罗港口的 52.8, 95.6 是获取祝福的位置",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coords"] = {
 						{ 44.0, 39.0, DAZARALOR },	-- Trainer Location
@@ -787,7 +1025,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48768, {	-- Brined Justice [A]
-					["description"] = "Requires 135 Kul'Tiran Mining.",
+					["description"] = createLocalizationString({
+						readable = "Requires 135 Kul'Tiran Mining.",
+						constant = "REQUIRES_135_KUL_TIRAN_MINING",
+						export = true,
+						text = {
+							en = "Requires 135 Kul'Tiran Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 135 点库尔提拉斯采矿。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 51568 },	-- Ritualistic Preparations [A]
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
@@ -799,7 +1054,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				}),
 
 				q(52015, {	-- Brined Justice [H]
-					["description"] = "Requires 135 Zandalari Mining",
+					["description"] = createLocalizationString({
+						readable = "Requires 135 Zandalari Mining",
+						constant = "REQUIRES_135_ZANDALARI_MINING",
+						export = true,
+						text = {
+							en = "Requires 135 Zandalari Mining",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 135 点赞达拉采矿",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 52014 },	-- Ritualistic Preparations [H]
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
@@ -826,7 +1098,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(48770, {	-- Three Sheets to the Wind [A]
-					["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
+					["description"] = createLocalizationString({
+						readable = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
+						constant = "REQUIRES_125_KUL_TIRAN_MINING_75_25_14_33_IN",
+						export = true,
+						text = {
+							en = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 125 点库尔提拉斯采矿\n伯拉勒斯的 75.25, 14.33 是哈罗德·阿特基的位置\n伯拉勒斯的 75.51, 23.21 是醉汉富兰克林的位置\n拜访哈罗德时，你要购买“布伦纳丹苹果白兰地”。",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coords"] = {
 						{ 75.0, 7.61, BORALUS },	-- Trainer Location
@@ -839,7 +1128,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52016, {	-- Three Sheets to the Wind [H]
-					["description"] = "Requires 125 Zandalari Mining",
+					["description"] = createLocalizationString({
+						readable = "Requires 125 Zandalari Mining",
+						constant = "REQUIRES_125_ZANDALARI_MINING",
+						export = true,
+						text = {
+							en = "Requires 125 Zandalari Mining",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 125 点赞达拉采矿",
+							-- TODO: tw = "",
+						},
+					}),
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -848,21 +1154,55 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51380, {	-- Back to Franklin
-					["description"] = "Requires 150 Kul'Tiran Mining.",
+					["description"] = createLocalizationString({
+						readable = "Requires 150 Kul'Tiran Mining.",
+						constant = "REQUIRES_150_KUL_TIRAN_MINING",
+						export = true,
+						text = {
+							en = "Requires 150 Kul'Tiran Mining.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 150 点库尔提拉斯采矿。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 48770 },	-- Three Sheets to the Wind [A]
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52017, {	-- Back to Biru
-					["description"] = "Requires 150 Zandalari Mining",
+					["description"] = createLocalizationString({
+						readable = "Requires 150 Zandalari Mining",
+						constant = "REQUIRES_150_ZANDALARI_MINING",
+						export = true,
+						text = {
+							en = "Requires 150 Zandalari Mining",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "需要 150 点赞达拉采矿",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 52016 },	-- Three Sheets to the Wind [H]
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51889, {	-- The Wrath of Grapes [A]
-					["description"] = "Requires 150 Kul'Tiran Mining.",
+					["description"] = "~L.REQUIRES_150_KUL_TIRAN_MINING",
 					["sourceQuests"] = { 51380 },	-- Back to Franklin
 					["provider"] = { "n", 139375 },	-- Franklin the Drunk
 					["coords"] = {
@@ -882,7 +1222,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52043, {	-- The Wrath of Grapes [H]
-					["description"] = "Requires 150 Zandalari Mining",
+					["description"] = "~L.REQUIRES_150_ZANDALARI_MINING",
 					["sourceQuests"] = { 52017 },	-- Back to Biru
 					["provider"] = { "n", 139634 },	-- Biru The Drunk
 					["coord"] = { 52.7, 84.3, DAZARALOR },
@@ -1253,7 +1593,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			q(72157),	-- The Weight of Earth
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.MINING, 1 }} }, {
 				r(388213, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Deposit
 				r(383793),	-- Refine Draconium++
@@ -1273,7 +1613,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			i(199122),	-- Mining Field Notes
 			q(74106, {	-- DF Inscription Order: Mining
 				["name"] = "DF Inscription Order: Mining",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 			}),
 			q(72160, {	-- DF Weekly Mining Knowledgepoint #1
@@ -1335,7 +1675,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			q(83105),	-- Rush-order Requisition
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.MINING, 1 }} }, {
 				r(442330),	-- Refine Aqirite++
 				r(442331),	-- Refine Aqirite+++
@@ -1359,7 +1699,24 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 		n(QUESTS, {
 			q(91420, {	-- Swap Meet
-				["description"] = "Obtained the first time you harvest Desolate Deposit.",
+				["description"] = createLocalizationString({
+					readable = "Obtained the first time you harvest Desolate Deposit.",
+					constant = "OBTAINED_THE_FIRST_TIME_YOU_HARVEST_DESOLATE",
+					export = true,
+					text = {
+						en = "Obtained the first time you harvest Desolate Deposit.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "首次采集荒芜矿藏时获得。",
+						-- TODO: tw = "",
+					},
+				}),
 				["providers"] = {
 					{ "i", 246504 },	-- Inscrutable Ore (QS!)
 					{ "o", 523491 },	-- Desolate Deposit
@@ -1434,7 +1791,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		},{
 			q(83733, {	-- TWW Inscription Order: Mining
 				["name"] = "TWW Inscription Order: Mining",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 222553 },	-- Algari Treatise on Mining
 			}),
 			q(83054, {	-- TWW Weekly Mining Knowledgepoint #1
@@ -1512,7 +1869,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			q(93709),	-- Stocking the Staples
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
+			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.MINING, 1 }} }, {
 				r(1225392),	-- Overload Infused Deposit
 			}),
@@ -1567,7 +1924,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		},{
 			q(95135, {	-- MID Inscription Order: Mining
 				["name"] = "MID Inscription Order: Mining",
-				["description"] = "Requires a crafting order from Inscription.",
+				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
 				["provider"] = { "i", 245762 },	-- Thalassian Treatise on Mining
 			}),
 			q(88673, {	-- Midnight Weekly Mining Knowledgepoint #1

@@ -899,7 +899,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52068, {	-- Helping Out, Somewhere Else
-				["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00More Fodder|r on the same character.",
+				["description"] = createLocalizationString({
+					readable = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00More Fodder|r on the same character.",
+					constant = "WITHOUT_USING_THE_PARTY_SYNC_FEATURE_YOU_CANNOT_3",
+					export = true,
+					text = {
+						en = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00More Fodder|r on the same character.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果不使用队伍同步功能，你无法在同一个角色上同时完成此任务和|cffffff00更多炮灰|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 50742 },	-- All Laid Out For Us
 				["altQuests"] = { 52069 },	-- More Fodder
 				["provider"] = { "n", 134720 },	-- Leo Shealds
@@ -1076,7 +1093,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
 			}),
 			q(52069, {	-- More Fodder
-				["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Helping Out, Somewhere Else|r on the same character.",
+				["description"] = createLocalizationString({
+					readable = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Helping Out, Somewhere Else|r on the same character.",
+					constant = "WITHOUT_USING_THE_PARTY_SYNC_FEATURE_YOU_CANNOT_4",
+					export = true,
+					text = {
+						en = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Helping Out, Somewhere Else|r on the same character.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "如果不使用队伍同步功能，你无法在同一个角色上同时完成此任务和|cffffff00去别处帮忙|r。",
+						-- TODO: tw = "",
+					},
+				}),
 				["sourceQuests"] = { 49831 },	-- From the Depths
 				["altQuests"] = { 52068 },	-- Helping Out, Somewhere Else
 				["provider"] = { "n", 131343 },	-- Williams
@@ -1561,7 +1595,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["qi"] = 160056,	-- Dead Ringer (QI!)
 			}),
 			q(53476, {	-- The Great Sea Scrolls
-				["description"] = "You receive the item that starts this quest from looting any treasure chest.",
+				["description"] = createLocalizationString({
+					readable = "You receive the item that starts this quest from looting any treasure chest.",
+					constant = "YOU_RECEIVE_THE_ITEM_THAT_STARTS_THIS_QUEST",
+					export = true,
+					text = {
+						en = "You receive the item that starts this quest from looting any treasure chest.",
+						-- TODO: de = "",
+						-- TODO: es = "",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						cn = "你可以通过拾取任何宝箱来获得开启此任务的任务物品。",
+						-- TODO: tw = "",
+					},
+				}),
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 				["maps"] = {
 					NAZMIR,
@@ -1881,7 +1932,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			},{
 				q(50779, {	-- A Clean Slate
-					["description"] = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
+					["description"] = createLocalizationString({
+						readable = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
+						constant = "YOU_MUST_ACCEPT_CFFFFFF00THE_STORM_AWAKENS_R_IN",
+						export = true,
+						text = {
+							en = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "你必须接受|cffffff00风暴苏醒|r，此奖励目标才会可用。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuest"] = 50777,	-- The Storm Awakens
 				}),
 				q(51534, {	-- The Battle for Brennadam

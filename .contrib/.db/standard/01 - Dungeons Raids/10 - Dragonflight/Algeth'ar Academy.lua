@@ -20,7 +20,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(384370, {	-- Deliberately Delinquent Notes
-					["description"] = "This Recipe is found near Overgrown Ancient in far left corner of the arena on a table with some strange flasks.",
+					["description"] = createLocalizationString({
+						readable = "This Recipe is found near Overgrown Ancient in far left corner of the arena on a table with some strange flasks.",
+						constant = "THIS_RECIPE_IS_FOUND_NEAR_OVERGROWN_ANCIENT_IN",
+						export = true,
+						text = {
+							en = "This Recipe is found near Overgrown Ancient in far left corner of the arena on a table with some strange flasks.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "此配方可在竞技场最左侧角落、蔓生古树附近的桌子上找到，旁边放着一些奇怪的药瓶。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(198908),	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
 					},

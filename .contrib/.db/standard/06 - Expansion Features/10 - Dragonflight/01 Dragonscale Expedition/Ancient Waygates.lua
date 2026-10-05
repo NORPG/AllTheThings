@@ -15,7 +15,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		n(ANCIENT_WAYGATES, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16292, {	-- Mastering the Waygates
-					["description"] = "In order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = createLocalizationString({
+						readable = "In order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+						constant = "IN_ORDER_TO_COMPLETE_ALL_OF_THE_DOC_NANNERS",
+						export = true,
+						text = {
+							en = "In order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "要完成 Doc Nanners 的所有|cffffff00继续探索传送门|r引导任务，你必须在同一个角色上完成传送门解锁。如果使用小号，引导任务会重复出现，从而使你无法完成序列中的最后几个，具体取决于小号开启了多少个传送门。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -69,7 +86,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 7 ------
 				i(198538, {	-- Magically Bound Message
-					["description"] = "Appears when reaching Renown 7.",
+					["description"] = createLocalizationString({
+						readable = "Appears when reaching Renown 7.",
+						constant = "APPEARS_WHEN_REACHING_RENOWN_7",
+						export = true,
+						text = {
+							en = "Appears when reaching Renown 7.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "达到名望 7 时出现。",
+							-- TODO: tw = "",
+						},
+					}),
 				}),
 				q(66595, {	-- Dormant Discovery
 					["provider"] = { "i", 198538 },	-- Magically Bound Message
@@ -139,7 +173,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ RENOWN 8 ------
 				q(70702, {	-- Continued Waygate Exploration
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = createLocalizationString({
+						readable = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+						constant = "SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
+						export = true,
+						text = {
+							en = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "在龙群岛任意地点刷新。 \n\n为了完成所有纳纳斯博士的|cffffff00继续界门探索|r引导任务，你必须在同一个角色上完成界门解锁。如果你使用小号，引导任务会重复，从而根据小号已开启的界门数量，使你无法完成序列中的最后几个。",
+							-- TODO: tw = "",
+						},
+					}),
 					["sourceQuests"] = { 70156 },	-- An Ancient Awakening
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
@@ -151,7 +202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71138, {	-- Waygate: Rusza'thar Reach
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
@@ -173,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71157, {	-- Waygate: Skytop Observatory
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
@@ -195,7 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71161, {	-- Waygate: Vakthros
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
@@ -217,7 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71162, {	-- Waygate: Algeth'era
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
@@ -239,7 +290,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71165, {	-- Waygate: Eon's Fringe
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
@@ -261,7 +312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71178, {	-- Waygate: Shady Sanctuary
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
@@ -284,7 +335,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ RENOWN 10 ------
 				q(71146, {	-- Continued Waygate Exploration
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuest"] = 70702,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 10 },	-- Dragonscale Expedition Renown 10
@@ -309,7 +360,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ RENOWN 15 ------
 				q(71148, {	-- Continued Waygate Exploration
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuests"] = {
 						-- #if BEFORE 10.0.7
 						71146,	-- Continued Waygate Exploration
@@ -328,7 +379,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ RENOWN 17 ------
 				q(71149, {	-- Continued Waygate Exploration
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuest"] = 71148,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 17 },	-- Dragonscale Expedition Renown 17
@@ -341,7 +392,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ RENOWN 20 ------
 				q(71150, {	-- Continued Waygate Exploration
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuest"] = 71149,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 20 },	-- Dragonscale Expedition Renown 20
@@ -354,7 +405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ RENOWN 23 ------
 				q(71151, {	-- Continued Waygate Exploration
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
+					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES_IN_ORDER_TO",
 					["sourceQuest"] = 71150,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 23 },	-- Dragonscale Expedition Renown 23

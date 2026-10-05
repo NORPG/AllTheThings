@@ -329,7 +329,24 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = FUR_TRADER,
 				})),
 				n(88633, {	-- Deluwin Whisperfield <Contracts>
-					["description"] = "Sells contracts for followers not chosen during zone quests.",
+					["description"] = createLocalizationString({
+						readable = "Sells contracts for followers not chosen during zone quests.",
+						constant = "SELLS_CONTRACTS_FOR_FOLLOWERS_NOT_CHOSEN_DURING",
+						export = true,
+						text = {
+							en = "Sells contracts for followers not chosen during zone quests.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "出售在区域任务中未选择的追随者的合约。",
+							-- TODO: tw = "",
+						},
+					}),
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(119291, {	-- Contract: Artificer Andren
@@ -390,7 +407,24 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = DUST_TRADER,
 				})),
 				n(80285, {	-- Guh <Bladespire Trader>
-					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
+					["description"] = createLocalizationString({
+						readable = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
+						constant = "MUST_SPEAK_TO_HIM_IN_CFFFFD700FROSTFIRE_RIDGE_R",
+						export = true,
+						text = {
+							en = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "必须在|cFFFFD700霜火岭|r与他交谈，才能邀请他加入你的要塞。",
+							-- TODO: tw = "",
+						},
+					}),
 					["groups"] = {
 						i(119430, {	-- Gas-Powered Stick
 							["cost"] = 10000000,	-- 1,000g
@@ -406,7 +440,7 @@ root(ROOTS.ExpansionFeatures,
 					["groups"] = COOK_TRADER,
 				}),
 				n(88635, {	-- Nalya Battlehorn <Contracts>
-					["description"] = "Sells contracts for followers not chosen during zone quests.",
+					["description"] = "~L.SELLS_CONTRACTS_FOR_FOLLOWERS_NOT_CHOSEN_DURING",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(119255, {	-- Contract: Bruto

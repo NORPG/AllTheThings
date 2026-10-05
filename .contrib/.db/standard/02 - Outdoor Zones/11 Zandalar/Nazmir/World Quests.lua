@@ -296,7 +296,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50468, {	-- Shul-Nagruth
 				n(128610, {	-- Maw of Shul-Nagruth
 					["questID"] = 50467,
-					["description"] = "This rare is only up when its associated world quest is active.",
+					["description"] = createLocalizationString({
+						readable = "This rare is only up when its associated world quest is active.",
+						constant = "THIS_RARE_IS_ONLY_UP_WHEN_ITS_ASSOCIATED_WORLD",
+						export = true,
+						text = {
+							en = "This rare is only up when its associated world quest is active.",
+							-- TODO: de = "",
+							-- TODO: es = "",
+							-- TODO: mx = "",
+							-- TODO: fr = "",
+							-- TODO: it = "",
+							-- TODO: ko = "",
+							-- TODO: pt = "",
+							-- TODO: ru = "",
+							cn = "只有当相关的世界任务激活时，此稀有生物才会出现。",
+							-- TODO: tw = "",
+						},
+					}),
 					["coord"] = { 49.8, 67.0, NAZMIR },
 					["groups"] = {
 						i(160973),	-- Accursed Tuskwand
