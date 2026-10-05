@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, {
 	n(LIBRARY_BOOKS_HEADER, {	-- Library Books
 		aqd = {
 			qg = 211033,	-- Garion Wendell <Librarian>
-			coord = { 37.8, 80.2, STORMWIND_CITY },
+			coord = { 49.0, 86.4, STORMWIND_CITY },
 		},
 		hqd = {
 			qg = 211022,	-- Owen Thadd <Librarian>
