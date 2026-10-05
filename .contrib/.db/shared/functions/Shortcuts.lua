@@ -2143,8 +2143,37 @@ end
 ---@return ATTQuestObject
 hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
 	t = q(id, t);
-	t.type = "hqt"
+	if not t.type then
+		t.type = "hqt"
+	end
 	return t
+end
+--- Creates a Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Exalted-based rep.
+---@param questID QuestID
+---@param factionID FactionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
+hqt_bonusRep = function(questID, factionID, t)
+	t = t or {}
+	-- TODO: adjust with 'givesReputation' when implemented
+	if not t.maxReputation then
+		t.maxReputation = { factionID, 8 }
+	end
+	t.type = "hqtbr"
+	return hqt(questID, t)
+end
+--- Creates a Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Renown-based rep (rank 20 max)
+---@param questID QuestID
+---@param factionRenownID FactionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
+hqt_bonusRenown = function(questID, factionRenownID, t)
+	t = t or {}
+	-- TODO: adjust with 'givesReputation' when implemented
+	if not t.maxReputation then
+		t.maxReputation = { factionRenownID, 20 }
+	end
+	return hqt_bonusRep(questID, factionRenownID, t)
 end
 --- Create an ILLUSION Object (only necessary for illusions without itemIDs).
 ---@param id IllusionID
@@ -3326,12 +3355,12 @@ createLocalizationString = function(data)
 	elseif not data.constant then
 		error("INVALID LOCALIZATION STRING (missing 'constant')", data.readable);
 	end
-	
+
 	-- Prevent invalid variable declarations
 	if string.match(data.constant, "^%d") then
 		data.constant = "_" .. data.constant;
 	end
-	
+
 	if localizationStringsByConstant[data.constant] then
 		error("ERROR: LOCALIZATION STRING CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. localizationStringsByConstant[data.constant].readable .. ". Please double check that the localization definitions are unique or reuse the same localization.");
 	else

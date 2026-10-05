@@ -1585,6 +1585,7 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 		return costCollectibles
 	end,
 });
+local QuestBonusReputationFormat = LFG_BONUS_REPUTATION.." %s [%s]"
 app.AddEventHandler("OnSettingsNeedsRefresh", function()
 	-- since the quest costCollectibles depends on Filtering, it needs to be reset when Settings are changed which can change filtering
 	wipe(QuestWithReputationCostCollectibles)
@@ -1670,8 +1671,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			end
 		end
 	end,
-
-	-- These are Retail fields that aren't used in Classic... yet?
 	missingSourceQuests = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestsLocked");
@@ -1737,7 +1736,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 },
 "WithReputation", {
 	description = QuestWithReputationDescription,
-	-- Retail: Quests which have a maxrepuation can be considered a Cost for the respective Faction
 	collectibleAsCost = app.CollectibleAsCost,
 	costCollectibles = function(t)
 		return QuestWithReputationCostCollectibles[t]
@@ -1748,6 +1746,30 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		app.GlobalVariants.WithAutoName,
 	}
 }, (function(t) return t.maxReputation; end),
+"WithBonusReputation", {
+	RootConstructor = "CreateHQTBonusRep",
+	CollectibleType = function() return "QuestsHidden" end,
+	isHQT = app.ReturnTrue,
+	name = function(t)
+		local parent = t.sourceParent or t.parent
+		local factionID = t.maxReputation[1]
+		local faction = app.SearchForObject("factionID", factionID, "key") or app.CreateFaction(factionID)
+		-- "Bonus Reputation: Faction [SourceName]"
+		local name = QuestBonusReputationFormat:format(faction.name, parent.name)
+		t.name = name
+		return name
+	end,
+	description = QuestWithReputationDescription,
+	collectibleAsCost = app.CollectibleAsCost,
+	costCollectibles = function(t)
+		return QuestWithReputationCostCollectibles[t]
+	end,
+	variants = {
+		app.GlobalVariants.AndLockCriteriaWithAutoName,
+		app.GlobalVariants.AndLockCriteria,
+		app.GlobalVariants.WithAutoName,
+	}
+}, (function(t) return t.type == "hqtbr"; end),
 "AsHQT", {
 	RootConstructor = "CreateHQT",
 	CollectibleType = function() return "QuestsHidden" end,
@@ -1766,20 +1788,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		AndBreadcrumbWithLockCriteria,
 	},
 }, (function(t) return t.isBreadcrumb; end)
--- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)
---[[
-,"AsWorldQuest", {
-	icon = function(t)
-		return app.GetIconFromProviders(t) or GetWorldQuestIcon(t);
-	end,
-	repeatable = function(t)
-		return true;
-	end,
-	timeRemaining = function(t)
-		return (GetQuestTimeLeftMinutes(t.questID) or 0) * 60
-	end,
-}, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end)
---]]
 );
 
 app.CreateQuest = createQuest;
