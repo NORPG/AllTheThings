@@ -1523,7 +1523,9 @@ end
 local function OnRefreshForInformationCheckBox(self)
 	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
 end
--- Apply a preset only to the information types with visible checkboxes.
+--- Applies an All, Default, or None preset to the visible Information options.
+--- Refreshes the active tooltip information and settings controls.
+---@param value boolean|nil true enables all; false disables all; nil clears overrides to restore ATT defaults.
 local function SetInformationTypes(value)
 	for _,informationType in ipairs(SortedInformationTypesByName) do
 		-- nil removes the override so the profile uses ATT's default value.
