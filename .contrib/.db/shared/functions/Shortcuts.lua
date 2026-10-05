@@ -2148,7 +2148,7 @@ hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
 	end
 	return t
 end
---- Creates a Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Exalted-based rep.
+--- Creates a Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Exalted-based rep unless overridden in MAX_FACTION_RANKS
 ---@param questID QuestID
 ---@param factionID FactionID
 ---@param t? ATTObject|ATTObjectArray
@@ -2157,12 +2157,12 @@ hqt_bonusRep = function(questID, factionID, t)
 	t = t or {}
 	-- TODO: adjust with 'givesReputation' when implemented
 	if not t.maxReputation then
-		t.maxReputation = { factionID, 8 }
+		t.maxReputation = { factionID, MAX_FACTION_RANKS[factionID] or 8 }
 	end
 	t.type = "hqtbr"
 	return hqt(questID, t)
 end
---- Creates a Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Renown-based rep (rank 20 max)
+--- Creates a Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Renown-based rep (rank 20 max) unless overridden in MAX_FACTION_RANKS
 ---@param questID QuestID
 ---@param factionRenownID FactionID
 ---@param t? ATTObject|ATTObjectArray
@@ -2171,9 +2171,19 @@ hqt_bonusRenown = function(questID, factionRenownID, t)
 	t = t or {}
 	-- TODO: adjust with 'givesReputation' when implemented
 	if not t.maxReputation then
-		t.maxReputation = { factionRenownID, 20 }
+		t.maxReputation = { factionRenownID, MAX_FACTION_RANKS[factionRenownID] or 20 }
 	end
 	return hqt_bonusRep(questID, factionRenownID, t)
+end
+--- Creates a weekly Hidden Quest Trigger object related to bonus Faction reputation from a given Source. Assumes typical Renown-based rep (rank 20 max) unless overridden in MAX_FACTION_RANKS
+---@param questID QuestID
+---@param factionRenownID FactionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
+hqt_bonusRenown_weekly = function(questID, factionRenownID, t)
+	local t = hqt_bonusRenown(questID, factionRenownID, t)
+	t.isWeekly = true
+	return t
 end
 --- Create an ILLUSION Object (only necessary for illusions without itemIDs).
 ---@param id IllusionID
