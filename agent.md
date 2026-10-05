@@ -15,7 +15,7 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 ## Commit Messages and Attribution
 
 - Use the commit subject format `[<Category>] <summary>.`, ending with a period. Capitalize the first letter of the bracketed category. For example: `[Docs] Add draft ATT agent guidelines.`
-- Keep the complete commit subject at 60 characters or fewer, including the bracketed category, spaces, and final period.
+- Keep the complete commit subject at 50 characters or fewer, including the bracketed category, spaces, and final period.
 - Describe the actual content or code changes and their resulting behavior in the subject and body. Omit references to user instructions or the agent's workflow.
 - Describe detailed changes in the commit body, separated from the subject by a blank line.
 
