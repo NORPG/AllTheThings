@@ -55,6 +55,20 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252155,	-- Peacekeeper Vaaniel
 				["coord"] = { 42.4, 62.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
+				["groups"] = {
+					o(617704, {	-- Bloody Note
+						["coord"] = { 42.4, 62.1, MAP.ZEPHRAS_ISLE },
+						["groups"] = { i(254871) },	-- Bloody Note (QI!)
+					}),
+					o(617674, {	-- Arvensus Shadowsong
+						["coord"] = { 41.0, 64.1, MAP.ZEPHRAS_ISLE },
+						["groups"] = { i(263418) },	-- Shadowsong Family Signet (QI!)
+					}),
+					o(617675, {	-- Raani Windgazer
+						["coord"] = { 41.0, 64.1, MAP.ZEPHRAS_ISLE },
+						["groups"] = { i(263415) },	-- Raani's Lucky Feather (QI!)
+					}),
+				},
 			}),
 			q(93951, {	-- A Little Beauty
 				["sourceQuests"] = {
@@ -65,6 +79,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251991,	-- Taleen Shimmerthread
 				["coord"] = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
+				["groups"] = {
+					o(617839, {	-- Hippogryph Down
+						i(263493),	-- Hippogryph Down (QI!)
+					}),
+				},
 			}),
 			q(94413, {	-- A Magical Affront
 				sourceQuest = 92596,	-- The High Order
@@ -267,7 +286,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 				["groups"] = {
 					objective(1, {	-- 0/8 Enchanted Skyhopper Exterminated
-						["provider"] = { "n", 251314 },	-- Skyhopper
+						["providers"] = {
+							--{ "n", 251314 },	-- Skyhopper (Currently gives no quest credit on Beta, uncomment if they fix it)
+							{ "n", 251727 },	-- Skyhopper
+						},
 						["coord"] = { 61.7, 75.8, MAP.ZEPHRAS_ISLE },
 					}),
 				},
@@ -431,7 +453,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97972, {	-- Camping 101: Tailoring
 				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
-				["altQuests"] = { 97973 },
+				["altQuests"] = { 97973 },	-- Camping 101: Tailoring
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["requireSkill"] = TAILORING,
@@ -443,7 +465,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97973, {	-- Camping 101: Tailoring
 				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
-				["altQuests"] = { 97972 },
+				["altQuests"] = { 97972 },	-- Camping 101: Tailoring
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["requireSkill"] = TAILORING,
@@ -456,11 +478,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92840, {	-- Catching Wind
 				["sourceQuest"] = 99260,	-- Fillion's Mission
 				["qg"] = 252475,	-- Elaadrin Evengale
-				["qi"] = 254584,	-- Index Esoteria
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 5,
+				["qi"] = 254584,	-- Index Esoteria (PQI!)
 				["groups"] = {
+					objective(1, {	-- 0/6 Gather Data on Elemental Currents
+						["provider"] = { "o", 697118 },	-- Windstone Formation
+						["coord"] = { 47.9, 68.9, MAP.ZEPHRAS_ISLE },
+					}),
 					i(263404),	-- Bow of Hours
 					i(3382),	-- Minor Troll's Blood Elixir
 				},
@@ -504,7 +530,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 				["groups"] = {
 					objective(1, {	-- 0/6 Windsong Crawler Meat
-						["provider"] = { "i", 257941 },	-- Windsong Crawler Meat
+						["provider"] = { "i", 257941 },	-- Windsong Crawler Meat (QI!)
 						["cr"] = 254588,	-- Windsong Crawler
 						["coord"] = { 64.1, 61.5, MAP.ZEPHRAS_ISLE },
 					}),
@@ -528,6 +554,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
+				["qi"] = 263491,	-- Shadowsong Family Signet (PQI!)
 				["groups"] = {
 					objective(1, {	-- Deliver the Shadowsong Family Signet to Talaanis Shadowsong in Valanaar.
 						["provider"] = { "n", 252476 },	-- Talaanis Shadowsong
@@ -605,12 +632,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
+				["qi"] = 253666,	-- Flutterfly Swatter (PQI!)
 				["groups"] = {
 					objective(1, {	-- 0/5 Flutterfly Dust
 						["providers"] = {
 							{ "i", 253595 },	-- Flutterfly Dust
-							{ "o", 578959 },	-- Object ID #578959
+							{ "o", 578959 },	-- Flutterfly Dust
 						},
+						["cr"] = 251622,	-- Flutterfly
 						["coord"] = { 51.9, 83.4, MAP.ZEPHRAS_ISLE },
 					}),
 					i(263329),	-- Flutterfly Swatter
@@ -688,6 +717,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
+				["qi"] = 252661,	-- Commander Cyclas's Head (QI!)
 				["groups"] = {
 					i(263424),	-- Wolfhide Belt
 					i(263425),	-- Elegant Cuffs
@@ -901,6 +931,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252172,	-- Danarii Bellowveil
 				["coord"] = { 45.2, 45.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
+				["groups"] = {
+					o(576179, {	-- Supply Cache
+						i(252760),	-- Stolen Shen'dar Supplies (QI!)
+					}),
+				},
 			}),
 			q(94638, {	-- Strength and Mercy
 				["qg"] = 255853,	-- Urs'endris
@@ -1120,7 +1155,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 				["groups"] = {
 					objective(1, {	-- 7/7 Blood-Stained Bandit Mask
-						["provider"] = { "i", 253596 },	-- Blood-Stained Bandit Mask
+						["provider"] = { "i", 253596 },	-- Blood-Stained Bandit Mask (QI!)
 						["cr"] = 252820,	-- Bandit Highwayman
 						["coord"] = { 47.6, 76.1, MAP.ZEPHRAS_ISLE },
 					}),
@@ -1140,10 +1175,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
+			q(92727, {	-- The Missing Scholar
+				["sourceQuest"] = 92699,	-- The Supreme Magister
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 253204,	-- Dondallion Whisperwind
+				["coord"] = { 66.2, 79.8, MAP.ZEPHRAS_ISLE },
+				["lvl"] = 4,
+			}),
 			q(92849, {	-- The Missing Scholar
 				["sourceQuest"] = 92727,	-- The Missing Scholar
-				["provider"] = { "o", 581822 },
-				["coord"] = { 50.6, 65.4, MAP.ZEPHRAS_ISLE },
+				["provider"] = { "o", 581822 },	-- Bloodstained Satchel
+				["coord"] = { 53.3, 72.1, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 				["groups"] = {
@@ -1156,13 +1198,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						["coord"] = { 52.0, 69.4, MAP.ZEPHRAS_ISLE },
 					}),
 				},
-			}),
-			q(92727, {	-- The Missing Scholar
-				["sourceQuest"] = 92699,	-- The Supreme Magister
-				["races"] = ALLIANCE_ONLY,
-				["qg"] = 253204,	-- Dondallion Whisperwind
-				["coord"] = { 66.2, 79.8, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 4,
 			}),
 			q(92850, {	-- The Missing Scholar
 				["sourceQuest"] = 92849,	-- The Missing Scholar
@@ -1268,6 +1303,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 6,
+				["qi"] = 253152,	-- Aonda's Written Report (PQI!)
 				["groups"] = {
 					i(263414),	-- Traveler's Wraps
 					i(263417),	-- Adventurer's Cloak
@@ -1280,6 +1316,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
+				["qi"] = 253152,	-- Aonda's Written Report (PQI!)
 				["groups"] = {
 					objective(1, {	-- Deliver Aonda's Written Report to Valennia Stormfist in Valanaar.
 						["provider"] = { "n", 252383 },	-- Valennia Stormfist
@@ -1735,6 +1772,19 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			i(251932, {	-- Sharpened Cirrusfly Stinger
 				coord = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
 				cr = 251402,	-- Cirrusfly Soldier
+			}),
+			i(273815, {	-- Airy Windseeker's Shirt
+				crs = {
+					252765,	-- Al'Aketh Blademaster
+					270201,	-- Al'Aketh Brawler
+					252665,	-- Al'Aketh Footsoldier
+					252762,	-- Al'Aketh Guardian
+					252767,	-- Al'Aketh Honor Guard
+					252764,	-- Al'Aketh Skypriest
+					252763,	-- Al'Aketh Spiritcaller
+					252664,	-- Al'Aketh Stormchaser
+					256966,	-- Skypriest Aanders
+				},
 			}),
 		}),
 	},
