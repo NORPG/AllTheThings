@@ -43,7 +43,8 @@ PRs changing ATT data must also include a `Data Sources` section as described be
 
 ## Sources for Data Changes
 
-- Every data addition, correction, or removal must be supported by an in-game screenshot or an ATT Contribute data export (`Contributor Report`).
+- Every data addition, correction, or removal must be supported by an in-game screenshot, an ATT Contribute data export (`Contributor Report`), or a Wowhead source.
+- When using Wowhead as a source, include a direct link to the relevant page in the PR or related issue.
 - Attach the evidence directly to the PR or related issue, or link to accessible evidence. If evidence is attached to an issue, link that issue from the PR and identify the relevant attachment or report.
 - Identify the affected records, such as item, quest, achievement, NPC, or object IDs, and explain which evidence supports each change or group of changes.
 - Include the relevant WoW flavour and client build, ATT version, and any region, event, location, or observation date needed to interpret the evidence.
@@ -61,7 +62,7 @@ PRs changing ATT data must also include a `Data Sources` section as described be
 [Omit this section when the PR adds no new feature.]
 
 ## Data Sources
-- [Affected IDs, screenshot or Contributor Report attachment/link, and relevant version/context]
+- [Affected IDs, screenshot/Contributor Report attachment or link, or direct Wowhead page link, and relevant version/context]
 [Omit this section when the PR changes no ATT data.]
 
 ## AI Assistance
@@ -76,4 +77,4 @@ AI assistance was used with [actual model name(s)] for [specific tasks].
 AI assistance was used with [actual model name(s)] for [implementation, analysis, or drafting this issue].
 ```
 
-For data-related issues, also attach or link the screenshot or Contributor Report and provide the affected IDs and relevant version/context.
+For data-related issues, attach or link the screenshot or Contributor Report, or include a direct link to the relevant Wowhead page. Provide the affected IDs and relevant version/context.
