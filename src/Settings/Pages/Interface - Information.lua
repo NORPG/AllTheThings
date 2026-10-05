@@ -1523,6 +1523,43 @@ end
 local function OnRefreshForInformationCheckBox(self)
 	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
 end
+-- Apply a preset only to the information types with visible checkboxes.
+local function SetInformationTypes(value)
+	for _,informationType in ipairs(SortedInformationTypesByName) do
+		-- nil removes the override so the profile uses ATT's default value.
+		settings:SetTooltipSetting(informationType.informationTypeID, value)
+	end
+	RefreshActiveInformationTypes()
+	settings:Refresh()
+end
+
+local buttonAll = child:CreateButton(
+{ text = ALL, },
+{
+	OnClick = function(self)
+		SetInformationTypes(true)
+	end,
+})
+
+local buttonDefault = child:CreateButton(
+{ text = DEFAULT, },
+{
+	OnClick = function(self)
+		SetInformationTypes(nil)
+	end,
+})
+
+local buttonNone = child:CreateButton(
+{ text = NONE, },
+{
+	OnClick = function(self)
+		SetInformationTypes(false)
+	end,
+})
+buttonNone:SetPoint("BOTTOMRIGHT", child, "BOTTOMRIGHT", -8, 10)
+buttonDefault:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)
+buttonAll:SetPoint("RIGHT", buttonDefault, "LEFT", -8, 0)
+
 settings.RefreshActiveInformationTypes = function()
 	SortInformationTypes()
 	RefreshActiveInformationTypes();
