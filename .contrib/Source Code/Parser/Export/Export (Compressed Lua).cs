@@ -401,12 +401,14 @@ namespace ATT
             builder.AppendLine().AppendLine("end)");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
-            builder.Insert(0, new StringBuilder()
+            var prefixBuilder = new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
-                .AppendLine("local appName, _ = ...")
-                .Append("_.AddEventHandler(\"")
+                .AppendLine("local appName, _ = ...");
+            if (builder.ToString().Contains("L.")) prefixBuilder.AppendLine("local L = _.L;");
+            prefixBuilder.Append("_.AddEventHandler(\"")
                 .Append(isPrimaryRootCategory ? "OnBuildDataCache" : "OnBuildHiddenDataCache")
-                .AppendLine("\", function(categories)"));
+                .AppendLine("\", function(categories)");
+            builder.Insert(0, prefixBuilder);
             AddTableNewLines = ConfigUseExportNewlines;
             return builder;
         }
