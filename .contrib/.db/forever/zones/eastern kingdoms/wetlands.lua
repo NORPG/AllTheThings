@@ -86,6 +86,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2917),	-- Tranquil Ring
 				},
 			}),
+			q(98282, {	-- Alchemical Hazards
+				["qg"] = 1480,	-- Caitlin Grassman
+				["coord"] = { 11.9, 58.8, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+				["groups"] = {
+					objective(1, {	-- 0/1 Unruptured Stalker Gland
+						["provider"] = { "i", 280319 },	-- Unruptured Stalker Gland
+						["crs"] = { 1111, 4040 },	-- Leech Stalker, Cave Stalker
+						["coords"] = {
+							{ 52.7, 63.0, MAP.WETLANDS },	-- Leech Stalker
+							{ 48.5, 60.3, MAP.WETLANDS },	-- Cave Stalker
+						},
+					}),
+					i(6453),	-- x5 Strong Anti-Venom
+				},
+			}),
 			q(471, {	-- Apprentice's Duties
 				["sourceQuest"] = 484,	-- Young Crocolisk Skins
 				["qg"] = 2094,	-- James Halloran
@@ -115,6 +133,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(3558),	-- Fen Keeper Robe
 					i(1273),	-- Forest Chain
 					i(2263),	-- Phytoblade
+				},
+			}),
+			q(98208, {	-- Bloom of the Heavens
+				["qg"] = 270844,	-- Sylessa Duskwhisper
+				["coord"] = { 8.0, 55.9, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 22,
+				["groups"] = {
+					objective(1, {	-- Nord'el
+						["provider"] = { "i", 279915 },	-- Nord'el
+					}),
+					i(281318),	-- Bouquet of Auberdine Flowers
 				},
 			}),
 			q(279, {	-- Claws from the Deep
@@ -208,6 +238,39 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 							1013,	-- Mosshide Mystic
 							1011,	-- Mosshide Trapper
 						},
+					}),
+				},
+			}),
+			q(98293, {	-- Forced Disarmament
+				["provider"] = { "o", 672330 },	-- Dragonmaw Armaments
+				["qg"] = 2104,	-- Captain Stoutfist
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 22,
+				["groups"] = {
+					objective(1, {	-- 0/30 Dragonmaw Armaments
+						["provider"] = { "i", 280369 },	-- Dragonmaw Armaments
+					}),
+				},
+			}),
+			q(98221, {	-- From the Ashes
+				["qg"] = 2104,	-- Captain Stoutfist
+				["coord"] = { 9.9, 57.4, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 23,
+				["groups"] = {
+					objective(1, {	-- Attack Plan: Menethil Harbor destroyed
+						["provider"] = { "o", 671481 },
+					}),
+					objective(2, {	-- Attack Plan: Thelsamar destroyed
+						["provider"] = { "o", 671486 },
+					}),
+					objective(3, {	-- Attack Plan: Southshore destroyed
+						["provider"] = { "o", 671483 },
+					}),
+					objective(4, {	-- Attack Plan: Ironforge destroyed
+						["provider"] = { "o", 671487 },
 					}),
 				},
 			}),
@@ -325,6 +388,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 28,
 			}),
+			q(98245, {	-- Razormaw Needling
+				["qg"] = 270637,	-- Howin Kindfeather
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 21,
+				["groups"] = {
+					objective(1, {	-- 0/10 Razormaw Incisor
+						["provider"] = { "i", 280103 },	-- Razormaw Incisor
+					}),
+				},
+			}),
 			q(281, {	-- Reclaiming Goods
 				["sourceQuest"] = 279,	-- Claws from the Deep
 				["qg"] = 1242,	-- Karl Boran
@@ -339,6 +414,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = 23,
+			}),
+			q(98197, {	-- Spoils of War
+				["qg"] = 2086,	-- Valstag Ironjaw
+				["coord"] = { 10.1, 56.8, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/6 Khaz Modan Timber
+						["provider"] = { "i", 279821 },	-- Khaz Modan Timber
+					}),
+					objective(2, {	-- 0/30 Khaz Modan Iron
+						["provider"] = { "i", 279822 },	-- Khaz Modan Iron
+					}),
+				},
 			}),
 			q(286, {	-- Return the Statuette
 				["sourceQuest"] = 285,	-- Search More Hovels
@@ -550,6 +640,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					objective(2, {	-- 0/15 Mosshide Mongrel
 						["provider"] = { "n", 1008 },	-- Mosshide Mongrel
+					}),
+				},
+			}),
+			q(98246, {	-- Trying Times
+				["qg"] = 270637,	-- Howin Kindfeather
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 21,
+				["groups"] = {
+					objective(1, {	-- 0/12 Perfect Razormaw Egg
+						["provider"] = { "i", 280132 },	-- Perfect Razormaw Egg
 					}),
 				},
 			}),
