@@ -2215,6 +2215,16 @@ iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (s
 	end
 	return i;
 end
+--- Creates an item-drop Hidden Quest Trigger object.
+---@param itemID ItemID
+---@param questID QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
+itemDropHQT = function(itemID, questID, t)
+	t = t or {}
+	t.provider = {"i",itemID}	-- Item
+	return hqt(questID, name(HEADERS.Item, itemID, t))	-- Item Drop
+end
 --- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
 ---@param id ItemID
 ---@param t? ATTObject|ATTObjectArray
@@ -2856,16 +2866,6 @@ h = function(t) -- Flag as Horde Only
 		t --[[@as ATTObject]].races = HORDE_ONLY;
 	end
 	return t;
-end
---- Creates an item-drop Hidden Quest Trigger object.
----@param itemID ItemID
----@param questID QuestID
----@param t? ATTObject|ATTObjectArray
----@return ATTQuestObject
-itemDropHQT = function(itemID, questID, t)
-	t = t or {}
-	t.provider = {"i",itemID}	-- Item
-	return hqt(questID, name(HEADERS.Item, itemID, t))	-- Item Drop
 end
 --- Assigns a display ID to an object.
 ---@generic T: ATTObject
