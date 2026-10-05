@@ -1,4 +1,4 @@
-﻿1.60.1.69876
+1.60.1.69876
 1@@@Northshire Abbey
 2@@@Stormwind, Elwynn
 3@@@Programmer Isle

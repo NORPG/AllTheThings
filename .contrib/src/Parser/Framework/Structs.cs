@@ -1,4 +1,4 @@
-﻿using ATT.FieldTypes;
+using ATT.FieldTypes;
 using System.Collections.Generic;
 using System.IO;
 

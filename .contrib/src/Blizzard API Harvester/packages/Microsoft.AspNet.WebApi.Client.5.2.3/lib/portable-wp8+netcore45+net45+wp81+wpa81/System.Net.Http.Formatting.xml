@@ -52,7 +52,7 @@
         </member>
         <member name="M:System.Web.Http.Error.ArgumentUriHasQueryOrFragment(System.String,System.Uri)">
             <summary>
-            Creates an <see cref="T:System.ArgumentException"/> with a message saying that the argument must be an absolute URI 
+            Creates an <see cref="T:System.ArgumentException"/> with a message saying that the argument must be an absolute URI
             without a query or fragment identifier and then logs it with <see cref="F:TraceLevel.Error"/>.
             </summary>
             <param name="parameterName">The name of the parameter that caused the current exception.</param>
@@ -188,7 +188,7 @@
         </member>
         <member name="T:System.Threading.Tasks.TaskHelpers">
             <summary>
-            Helpers for safely using Task libraries. 
+            Helpers for safely using Task libraries.
             </summary>
         </member>
         <member name="M:System.Threading.Tasks.TaskHelpers.Canceled">
@@ -203,8 +203,8 @@
         </member>
         <member name="M:System.Threading.Tasks.TaskHelpers.Completed">
             <summary>
-            Returns a completed task that has no result. 
-            </summary>        
+            Returns a completed task that has no result.
+            </summary>
         </member>
         <member name="M:System.Threading.Tasks.TaskHelpers.FromError(System.Exception)">
             <summary>
@@ -269,13 +269,13 @@
         </member>
         <member name="M:System.Collections.Generic.CollectionExtensions.AsArray``1(System.Collections.Generic.IEnumerable{``0})">
             <summary>
-            Return the enumerable as an Array, copying if required. Optimized for common case where it is an Array. 
+            Return the enumerable as an Array, copying if required. Optimized for common case where it is an Array.
             Avoid mutating the return value.
             </summary>
         </member>
         <member name="M:System.Collections.Generic.CollectionExtensions.AsCollection``1(System.Collections.Generic.IEnumerable{``0})">
             <summary>
-            Return the enumerable as a Collection of T, copying if required. Optimized for the common case where it is 
+            Return the enumerable as a Collection of T, copying if required. Optimized for the common case where it is
             a Collection of T and avoiding a copy if it implements IList of T. Avoid mutating the return value.
             </summary>
         </member>
@@ -286,7 +286,7 @@
         </member>
         <member name="M:System.Collections.Generic.CollectionExtensions.AsList``1(System.Collections.Generic.IEnumerable{``0})">
             <summary>
-            Return the enumerable as a List of T, copying if required. Optimized for common case where it is an List of T 
+            Return the enumerable as a List of T, copying if required. Optimized for common case where it is an List of T
             or a ListWrapperCollection of T. Avoid mutating the return value.
             </summary>
         </member>
@@ -422,7 +422,7 @@
         </member>
         <member name="M:System.Net.Http.FormattingUtilities.CreateEmptyContentHeaders">
             <summary>
-            Creates an empty <see cref="T:System.Net.Http.Headers.HttpContentHeaders"/> instance. The only way is to get it from a dummy 
+            Creates an empty <see cref="T:System.Net.Http.Headers.HttpContentHeaders"/> instance. The only way is to get it from a dummy
             <see cref="T:System.Net.Http.HttpContent"/> instance.
             </summary>
             <returns>The created instance.</returns>
@@ -634,7 +634,7 @@
         </member>
         <member name="P:System.Net.Http.Formatting.MediaTypeFormatter.MaxHttpCollectionKeys">
             <summary>
-            Gets or sets the maximum number of keys stored in a NameValueCollection. 
+            Gets or sets the maximum number of keys stored in a NameValueCollection.
             </summary>
         </member>
         <member name="P:System.Net.Http.Formatting.MediaTypeFormatter.SupportedMediaTypes">
@@ -647,7 +647,7 @@
             <summary>
             Gets the mutable collection of character encodings supported by
             this <see cref="T:System.Net.Http.Formatting.MediaTypeFormatter"/> instance. The encodings are
-            used when reading or writing data. 
+            used when reading or writing data.
             </summary>
         </member>
         <member name="T:System.Net.Http.Formatting.MediaTypeFormatter.MediaTypeHeaderValueCollection">
@@ -866,22 +866,22 @@
         <member name="T:System.Net.Http.Formatting.FormDataCollection">
             <summary>
             Represent the form data.
-            - This has 100% fidelity (including ordering, which is important for deserializing ordered array). 
-            - using interfaces allows us to optimize the implementation. E.g., we can avoid eagerly string-splitting a 10gb file. 
-            - This also provides a convenient place to put extension methods. 
+            - This has 100% fidelity (including ordering, which is important for deserializing ordered array).
+            - using interfaces allows us to optimize the implementation. E.g., we can avoid eagerly string-splitting a 10gb file.
+            - This also provides a convenient place to put extension methods.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.FormDataCollection.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
             <summary>
-            Initialize a form collection around incoming data. 
-            The key value enumeration should be immutable. 
+            Initialize a form collection around incoming data.
+            The key value enumeration should be immutable.
             </summary>
             <param name="pairs">incoming set of key value pairs. Ordering is preserved.</param>
         </member>
         <member name="M:System.Net.Http.Formatting.FormDataCollection.#ctor(System.Uri)">
             <summary>
-            Initialize a form collection from a query string. 
-            Uri and FormURl body have the same schema. 
+            Initialize a form collection from a query string.
+            Uri and FormURl body have the same schema.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.FormDataCollection.#ctor(System.String)">
@@ -899,12 +899,12 @@
         </member>
         <member name="M:System.Net.Http.Formatting.FormDataCollection.Get(System.String)">
             <summary>
-            Get values associated with a given key. If there are multiple values, they're concatenated. 
+            Get values associated with a given key. If there are multiple values, they're concatenated.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.FormDataCollection.GetValues(System.String)">
             <summary>
-            Get a value associated with a given key. 
+            Get a value associated with a given key.
             </summary>
         </member>
         <member name="P:System.Net.Http.Formatting.FormDataCollection.Item(System.String)">
@@ -916,9 +916,9 @@
         </member>
         <member name="T:System.Net.Http.Formatting.FormUrlEncodedJson">
             <summary>
-            This class provides a low-level API for parsing HTML form URL-encoded data, also known as <c>application/x-www-form-urlencoded</c> 
-            data. The output of the parser is a <see cref="T:Newtonsoft.Json.Linq.JObject"/> instance. 
-            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and 
+            This class provides a low-level API for parsing HTML form URL-encoded data, also known as <c>application/x-www-form-urlencoded</c>
+            data. The output of the parser is a <see cref="T:Newtonsoft.Json.Linq.JObject"/> instance.
+            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and
             is not intended to be called directly from user code.</remarks>
             </summary>
         </member>
@@ -926,7 +926,7 @@
             <summary>
             Parses a collection of query string values as a <see cref="T:Newtonsoft.Json.Linq.JObject"/>.
             </summary>
-            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and 
+            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and
             is not intended to be called directly from user code.</remarks>
             <param name="nameValuePairs">The collection of query string name-value pairs parsed in lexical order. Both names
             and values must be un-escaped so that they don't contain any <see cref="T:System.Uri"/> encoding.</param>
@@ -936,7 +936,7 @@
             <summary>
             Parses a collection of query string values as a <see cref="T:Newtonsoft.Json.Linq.JObject"/>.
             </summary>
-            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and 
+            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and
             is not intended to be called directly from user code.</remarks>
             <param name="nameValuePairs">The collection of query string name-value pairs parsed in lexical order. Both names
             and values must be un-escaped so that they don't contain any <see cref="T:System.Uri"/> encoding.</param>
@@ -947,7 +947,7 @@
             <summary>
             Parses a collection of query string values as a <see cref="T:Newtonsoft.Json.Linq.JObject"/>.
             </summary>
-            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and 
+            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and
             is not intended to be called directly from user code.</remarks>
             <param name="nameValuePairs">The collection of query string name-value pairs parsed in lexical order. Both names
             and values must be un-escaped so that they don't contain any <see cref="T:System.Uri"/> encoding.</param>
@@ -958,7 +958,7 @@
             <summary>
             Parses a collection of query string values as a <see cref="T:Newtonsoft.Json.Linq.JObject"/>.
             </summary>
-            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and 
+            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and
             is not intended to be called directly from user code.</remarks>
             <param name="nameValuePairs">The collection of query string name-value pairs parsed in lexical order. Both names
             and values must be un-escaped so that they don't contain any <see cref="T:System.Uri"/> encoding.</param>
@@ -970,7 +970,7 @@
             <summary>
             Parses a collection of query string values as a <see cref="T:Newtonsoft.Json.Linq.JObject"/>.
             </summary>
-            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and 
+            <remarks>This is a low-level API intended for use by other APIs. It has been optimized for performance and
             is not intended to be called directly from user code.</remarks>
             <param name="nameValuePairs">The collection of query string name-value pairs parsed in lexical order. Both names
             and values must be un-escaped so that they don't contain any <see cref="T:System.Uri"/> encoding.</param>
@@ -1066,7 +1066,7 @@
         </member>
         <member name="P:System.Net.Http.Formatting.JsonMediaTypeFormatter.Indent">
             <summary>
-            Gets or sets a value indicating whether to indent elements when writing data. 
+            Gets or sets a value indicating whether to indent elements when writing data.
             </summary>
         </member>
         <member name="T:System.Net.Http.Formatting.MediaTypeConstants">
@@ -1202,8 +1202,8 @@
             <summary>
             Determines whether two <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue"/> instances match. The instance
             <paramref name="mediaType1"/> is said to match <paramref name="mediaType2"/> if and only if
-            <paramref name="mediaType1"/> is a strict subset of the values and parameters of <paramref name="mediaType2"/>. 
-            That is, if the media type and media type parameters of <paramref name="mediaType1"/> are all present 
+            <paramref name="mediaType1"/> is a strict subset of the values and parameters of <paramref name="mediaType2"/>.
+            That is, if the media type and media type parameters of <paramref name="mediaType1"/> are all present
             and match those of <paramref name="mediaType2"/> then it is a match even though <paramref name="mediaType2"/> may have additional
             parameters.
             </summary>
@@ -1215,8 +1215,8 @@
             <summary>
             Determines whether two <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue"/> instances match. The instance
             <paramref name="mediaType1"/> is said to match <paramref name="mediaType2"/> if and only if
-            <paramref name="mediaType1"/> is a strict subset of the values and parameters of <paramref name="mediaType2"/>. 
-            That is, if the media type and media type parameters of <paramref name="mediaType1"/> are all present 
+            <paramref name="mediaType1"/> is a strict subset of the values and parameters of <paramref name="mediaType2"/>.
+            That is, if the media type and media type parameters of <paramref name="mediaType1"/> are all present
             and match those of <paramref name="mediaType2"/> then it is a match even though <paramref name="mediaType2"/> may have additional
             parameters.
             </summary>
@@ -1242,7 +1242,7 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.FormUrlEncodedParser">
             <summary>
-            Buffer-oriented parsing of HTML form URL-ended, also known as <c>application/x-www-form-urlencoded</c>, data. 
+            Buffer-oriented parsing of HTML form URL-ended, also known as <c>application/x-www-form-urlencoded</c>, data.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.FormUrlEncodedParser.#ctor(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.Int64)">
@@ -1255,7 +1255,7 @@
         <member name="M:System.Net.Http.Formatting.Parsers.FormUrlEncodedParser.ParseBuffer(System.Byte[],System.Int32,System.Int32@,System.Boolean)">
             <summary>
             Parse a buffer of URL form-encoded name-value pairs and add them to the collection.
-            Bytes are parsed in a consuming manner from the beginning of the buffer meaning that the same bytes can not be 
+            Bytes are parsed in a consuming manner from the beginning of the buffer meaning that the same bytes can not be
             present in the buffer.
             </summary>
             <param name="buffer">Buffer from where data is read</param>
@@ -1266,7 +1266,7 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.FormUrlEncodedParser.CurrentNameValuePair">
             <summary>
-            Maintains information about the current header field being parsed. 
+            Maintains information about the current header field being parsed.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.FormUrlEncodedParser.CurrentNameValuePair.CopyTo(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
@@ -1298,8 +1298,8 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.HttpRequestHeaderParser">
             <summary>
-            The <see cref="T:System.Net.Http.Formatting.Parsers.HttpRequestHeaderParser"/> combines <see cref="T:System.Net.Http.Formatting.Parsers.HttpRequestLineParser"/> for parsing the HTTP Request Line  
-            and <see cref="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser"/> for parsing each header field. 
+            The <see cref="T:System.Net.Http.Formatting.Parsers.HttpRequestHeaderParser"/> combines <see cref="T:System.Net.Http.Formatting.Parsers.HttpRequestLineParser"/> for parsing the HTTP Request Line
+            and <see cref="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser"/> for parsing each header field.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.HttpRequestHeaderParser.#ctor(System.Net.Http.HttpUnsortedRequest)">
@@ -1339,8 +1339,8 @@
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.HttpRequestLineParser.ParseBuffer(System.Byte[],System.Int32,System.Int32@)">
             <summary>
-            Parse an HTTP request line. 
-            Bytes are parsed in a consuming manner from the beginning of the request buffer meaning that the same bytes can not be 
+            Parse an HTTP request line.
+            Bytes are parsed in a consuming manner from the beginning of the request buffer meaning that the same bytes can not be
             present in the request buffer.
             </summary>
             <param name="buffer">Request buffer from where request is read</param>
@@ -1350,8 +1350,8 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.HttpResponseHeaderParser">
             <summary>
-            The <see cref="T:System.Net.Http.Formatting.Parsers.HttpResponseHeaderParser"/> combines <see cref="T:System.Net.Http.Formatting.Parsers.HttpStatusLineParser"/> for parsing the HTTP Status Line  
-            and <see cref="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser"/> for parsing each header field. 
+            The <see cref="T:System.Net.Http.Formatting.Parsers.HttpResponseHeaderParser"/> combines <see cref="T:System.Net.Http.Formatting.Parsers.HttpStatusLineParser"/> for parsing the HTTP Status Line
+            and <see cref="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser"/> for parsing each header field.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.HttpResponseHeaderParser.#ctor(System.Net.Http.HttpUnsortedResponse)">
@@ -1391,8 +1391,8 @@
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.HttpStatusLineParser.ParseBuffer(System.Byte[],System.Int32,System.Int32@)">
             <summary>
-            Parse an HTTP status line. 
-            Bytes are parsed in a consuming manner from the beginning of the response buffer meaning that the same bytes can not be 
+            Parse an HTTP status line.
+            Bytes are parsed in a consuming manner from the beginning of the response buffer meaning that the same bytes can not be
             present in the response buffer.
             </summary>
             <param name="buffer">Response buffer from where response is read</param>
@@ -1402,8 +1402,8 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser">
             <summary>
-            Buffer-oriented RFC 5322 style Internet Message Format parser which can be used to pass header 
-            fields used in HTTP and MIME message entities. 
+            Buffer-oriented RFC 5322 style Internet Message Format parser which can be used to pass header
+            fields used in HTTP and MIME message entities.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser.#ctor(System.Net.Http.Headers.HttpHeaders,System.Int32)">
@@ -1416,7 +1416,7 @@
         <member name="M:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser.ParseBuffer(System.Byte[],System.Int32,System.Int32@)">
             <summary>
             Parse a buffer of RFC 5322 style header fields and add them to the <see cref="T:System.Net.Http.Headers.HttpHeaders"/> collection.
-            Bytes are parsed in a consuming manner from the beginning of the buffer meaning that the same bytes can not be 
+            Bytes are parsed in a consuming manner from the beginning of the buffer meaning that the same bytes can not be
             present in the buffer.
             </summary>
             <param name="buffer">Request buffer from where request is read</param>
@@ -1426,7 +1426,7 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser.CurrentHeaderFieldStore">
             <summary>
-            Maintains information about the current header field being parsed. 
+            Maintains information about the current header field being parsed.
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser.CurrentHeaderFieldStore.CopyTo(System.Net.Http.Headers.HttpHeaders)">
@@ -1460,7 +1460,7 @@
         </member>
         <member name="T:System.Net.Http.Formatting.Parsers.MimeMultipartBodyPartParser">
             <summary>
-            Complete MIME multipart parser that combines <see cref="T:System.Net.Http.Formatting.Parsers.MimeMultipartParser"/> for parsing the MIME message into individual body parts 
+            Complete MIME multipart parser that combines <see cref="T:System.Net.Http.Formatting.Parsers.MimeMultipartParser"/> for parsing the MIME message into individual body parts
             and <see cref="T:System.Net.Http.Formatting.Parsers.InternetMessageFormatHeaderParser"/> for parsing each body part into a MIME header and a MIME body. The caller of the parser is returned
             the resulting MIME bodies which can then be written to some output.
             </summary>
@@ -1497,7 +1497,7 @@
         </member>
         <member name="M:System.Net.Http.Formatting.Parsers.MimeMultipartBodyPartParser.ParseBuffer(System.Byte[],System.Int32)">
             <summary>
-            Parses the data provided and generates parsed MIME body part bodies in the form of <see cref="T:System.ArraySegment`1"/> which are ready to 
+            Parses the data provided and generates parsed MIME body part bodies in the form of <see cref="T:System.ArraySegment`1"/> which are ready to
             write to the output stream.
             </summary>
             <param name="data">The data to parse</param>
@@ -1525,7 +1525,7 @@
         <member name="M:System.Net.Http.Formatting.Parsers.MimeMultipartParser.ParseBuffer(System.Byte[],System.Int32,System.Int32@,System.ArraySegment{System.Byte}@,System.ArraySegment{System.Byte}@,System.Boolean@)">
             <summary>
             Parse a MIME multipart message. Bytes are parsed in a consuming
-            manner from the beginning of the request buffer meaning that the same bytes can not be 
+            manner from the beginning of the request buffer meaning that the same bytes can not be
             present in the request buffer.
             </summary>
             <param name="buffer">Request buffer from where request is read</param>
@@ -1534,7 +1534,7 @@
             <param name="remainingBodyPart">Any body part that was considered as a potential MIME multipart boundary but which was in fact part of the body.</param>
             <param name="bodyPart">The bulk of the body part.</param>
             <param name="isFinalBodyPart">Indicates whether the final body part has been found.</param>
-            <remarks>In order to get the complete body part, the caller is responsible for concatenating the contents of the 
+            <remarks>In order to get the complete body part, the caller is responsible for concatenating the contents of the
             <paramref name="remainingBodyPart"/> and <paramref name="bodyPart"/> out parameters.</remarks>
             <returns>State of the parser.</returns>
         </member>
@@ -1860,8 +1860,8 @@
             </summary>
             <value>
             <remarks>
-            The default media type does not have any <c>charset</c> parameter as 
-            the <see cref="T:System.Text.Encoding"/> can be configured on a per <see cref="T:System.Net.Http.Formatting.XmlMediaTypeFormatter"/> 
+            The default media type does not have any <c>charset</c> parameter as
+            the <see cref="T:System.Text.Encoding"/> can be configured on a per <see cref="T:System.Net.Http.Formatting.XmlMediaTypeFormatter"/>
             instance basis.
             </remarks>
             Because <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue"/> is mutable, the value
@@ -1878,7 +1878,7 @@
         </member>
         <member name="P:System.Net.Http.Formatting.XmlMediaTypeFormatter.Indent">
             <summary>
-            Gets or sets a value indicating whether to indent elements when writing data. 
+            Gets or sets a value indicating whether to indent elements when writing data.
             </summary>
         </member>
         <member name="P:System.Net.Http.Formatting.XmlMediaTypeFormatter.WriterSettings">
@@ -1893,7 +1893,7 @@
         </member>
         <member name="M:System.Net.Http.Formatting.HttpValueCollection.#ctor">
             <summary>
-            Creates a new <see cref="T:System.Net.Http.Formatting.HttpValueCollection"/> instance 
+            Creates a new <see cref="T:System.Net.Http.Formatting.HttpValueCollection"/> instance
             </summary>
         </member>
         <member name="M:System.Net.Http.Formatting.HttpValueCollection.Add(System.String,System.String)">
@@ -2059,7 +2059,7 @@
         </member>
         <member name="T:System.Net.Http.Handlers.ProgressStream">
             <summary>
-            This implementation of <see cref="T:System.Net.Http.Internal.DelegatingStream"/> registers how much data has been 
+            This implementation of <see cref="T:System.Net.Http.Internal.DelegatingStream"/> registers how much data has been
             read (received) versus written (sent) for a particular HTTP operation. The implementation
             is client side in that the total bytes to send is taken from the request and the total
             bytes to read is taken from the response. In a server side scenario, it would be the
@@ -2068,7 +2068,7 @@
         </member>
         <member name="T:System.Net.Http.Internal.DelegatingStream">
             <summary>
-            Stream that delegates to inner stream. 
+            Stream that delegates to inner stream.
             This is taken from System.Net.Http
             </summary>
         </member>
@@ -2602,10 +2602,10 @@
             Creates a new <see cref="T:System.Net.Http.HttpClient"/> instance configured with the handlers provided and with an
             <see cref="T:System.Net.Http.HttpClientHandler"/> as the innermost handler.
             </summary>
-            <param name="handlers">An ordered list of <see cref="T:System.Net.Http.DelegatingHandler"/> instances to be invoked as an 
-            <see cref="T:System.Net.Http.HttpRequestMessage"/> travels from the <see cref="T:System.Net.Http.HttpClient"/> to the network and an 
+            <param name="handlers">An ordered list of <see cref="T:System.Net.Http.DelegatingHandler"/> instances to be invoked as an
+            <see cref="T:System.Net.Http.HttpRequestMessage"/> travels from the <see cref="T:System.Net.Http.HttpClient"/> to the network and an
             <see cref="T:System.Net.Http.HttpResponseMessage"/> travels from the network back to <see cref="T:System.Net.Http.HttpClient"/>.
-            The handlers are invoked in a top-down fashion. That is, the first entry is invoked first for 
+            The handlers are invoked in a top-down fashion. That is, the first entry is invoked first for
             an outbound request message but last for an inbound response message.</param>
             <returns>An <see cref="T:System.Net.Http.HttpClient"/> instance with the configured handlers.</returns>
         </member>
@@ -2615,10 +2615,10 @@
             provided <paramref name="innerHandler"/> as the innermost handler.
             </summary>
             <param name="innerHandler">The inner handler represents the destination of the HTTP message channel.</param>
-            <param name="handlers">An ordered list of <see cref="T:System.Net.Http.DelegatingHandler"/> instances to be invoked as an 
-            <see cref="T:System.Net.Http.HttpRequestMessage"/> travels from the <see cref="T:System.Net.Http.HttpClient"/> to the network and an 
+            <param name="handlers">An ordered list of <see cref="T:System.Net.Http.DelegatingHandler"/> instances to be invoked as an
+            <see cref="T:System.Net.Http.HttpRequestMessage"/> travels from the <see cref="T:System.Net.Http.HttpClient"/> to the network and an
             <see cref="T:System.Net.Http.HttpResponseMessage"/> travels from the network back to <see cref="T:System.Net.Http.HttpClient"/>.
-            The handlers are invoked in a top-down fashion. That is, the first entry is invoked first for 
+            The handlers are invoked in a top-down fashion. That is, the first entry is invoked first for
             an outbound request message but last for an inbound response message.</param>
             <returns>An <see cref="T:System.Net.Http.HttpClient"/> instance with the configured handlers.</returns>
         </member>
@@ -2629,9 +2629,9 @@
             or <see cref="T:System.Net.Http.HttpMessageInvoker"/> instances with customized message handlers.
             </summary>
             <param name="innerHandler">The inner handler represents the destination of the HTTP message channel.</param>
-            <param name="handlers">An ordered list of <see cref="T:System.Net.Http.DelegatingHandler"/> instances to be invoked as part 
+            <param name="handlers">An ordered list of <see cref="T:System.Net.Http.DelegatingHandler"/> instances to be invoked as part
             of sending an <see cref="T:System.Net.Http.HttpRequestMessage"/> and receiving an <see cref="T:System.Net.Http.HttpResponseMessage"/>.
-            The handlers are invoked in a top-down fashion. That is, the first entry is invoked first for 
+            The handlers are invoked in a top-down fashion. That is, the first entry is invoked first for
             an outbound request message but last for an inbound response message.</param>
             <returns>The HTTP message channel.</returns>
         </member>
@@ -2834,7 +2834,7 @@
             Read the <see cref="T:System.Net.Http.HttpContent"/> as an <see cref="T:System.Net.Http.HttpRequestMessage"/>.
             </summary>
             <param name="content">The content to read.</param>
-            <param name="uriScheme">The URI scheme to use for the request URI (the 
+            <param name="uriScheme">The URI scheme to use for the request URI (the
             URI scheme is not actually part of the HTTP Request URI and so must be provided externally).</param>
             <param name="bufferSize">Size of the buffer.</param>
             <returns>A task object representing reading the content as an <see cref="T:System.Net.Http.HttpRequestMessage"/>.</returns>
@@ -2844,7 +2844,7 @@
             Read the <see cref="T:System.Net.Http.HttpContent"/> as an <see cref="T:System.Net.Http.HttpRequestMessage"/>.
             </summary>
             <param name="content">The content to read.</param>
-            <param name="uriScheme">The URI scheme to use for the request URI (the 
+            <param name="uriScheme">The URI scheme to use for the request URI (the
             URI scheme is not actually part of the HTTP Request URI and so must be provided externally).</param>
             <param name="bufferSize">Size of the buffer.</param>
             <param name="cancellationToken">The token to monitor for cancellation requests.</param>
@@ -2855,7 +2855,7 @@
             Read the <see cref="T:System.Net.Http.HttpContent"/> as an <see cref="T:System.Net.Http.HttpRequestMessage"/>.
             </summary>
             <param name="content">The content to read.</param>
-            <param name="uriScheme">The URI scheme to use for the request URI (the 
+            <param name="uriScheme">The URI scheme to use for the request URI (the
             URI scheme is not actually part of the HTTP Request URI and so must be provided externally).</param>
             <param name="bufferSize">Size of the buffer.</param>
             <param name="maxHeaderSize">The max length of the HTTP header.</param>
@@ -2866,7 +2866,7 @@
             Read the <see cref="T:System.Net.Http.HttpContent"/> as an <see cref="T:System.Net.Http.HttpRequestMessage"/>.
             </summary>
             <param name="content">The content to read.</param>
-            <param name="uriScheme">The URI scheme to use for the request URI (the 
+            <param name="uriScheme">The URI scheme to use for the request URI (the
             URI scheme is not actually part of the HTTP Request URI and so must be provided externally).</param>
             <param name="bufferSize">Size of the buffer.</param>
             <param name="maxHeaderSize">The max length of the HTTP header.</param>
@@ -2978,9 +2978,9 @@
         </member>
         <member name="M:System.Net.Http.HttpContentMultipartExtensions.IsMimeMultipartContent(System.Net.Http.HttpContent,System.String)">
             <summary>
-            Determines whether the specified content is MIME multipart content with the 
+            Determines whether the specified content is MIME multipart content with the
             specified subtype. For example, the subtype <c>mixed</c> would match content
-            with a content type of <c>multipart/mixed</c>. 
+            with a content type of <c>multipart/mixed</c>.
             </summary>
             <param name="content">The content.</param>
             <param name="subtype">The MIME multipart subtype to match.</param>
@@ -3006,7 +3006,7 @@
         <member name="M:System.Net.Http.HttpContentMultipartExtensions.ReadAsMultipartAsync``1(System.Net.Http.HttpContent,``0)">
             <summary>
             Reads all body parts within a MIME multipart message using the provided <see cref="T:System.Net.Http.MultipartStreamProvider"/> instance
-            to determine where the contents of each body part is written. 
+            to determine where the contents of each body part is written.
             </summary>
             <typeparam name="T">The <see cref="T:System.Net.Http.MultipartStreamProvider"/> with which to process the data.</typeparam>
             <param name="content">An existing <see cref="T:System.Net.Http.HttpContent"/> instance to use for the object's content.</param>
@@ -3016,7 +3016,7 @@
         <member name="M:System.Net.Http.HttpContentMultipartExtensions.ReadAsMultipartAsync``1(System.Net.Http.HttpContent,``0,System.Threading.CancellationToken)">
             <summary>
             Reads all body parts within a MIME multipart message using the provided <see cref="T:System.Net.Http.MultipartStreamProvider"/> instance
-            to determine where the contents of each body part is written. 
+            to determine where the contents of each body part is written.
             </summary>
             <typeparam name="T">The <see cref="T:System.Net.Http.MultipartStreamProvider"/> with which to process the data.</typeparam>
             <param name="content">An existing <see cref="T:System.Net.Http.HttpContent"/> instance to use for the object's content.</param>
@@ -3344,7 +3344,7 @@
         <member name="T:System.Net.Http.MultipartStreamProvider">
             <summary>
             An <see cref="T:System.Net.Http.MultipartStreamProvider"/> implementation examines the headers provided by the MIME multipart parser
-            as part of the MIME multipart extension methods (see <see cref="T:System.Net.Http.HttpContentMultipartExtensions"/>) and decides 
+            as part of the MIME multipart extension methods (see <see cref="T:System.Net.Http.HttpContentMultipartExtensions"/>) and decides
             what kind of stream to return for the body part to be written to.
             </summary>
         </member>
@@ -3358,7 +3358,7 @@
             When a MIME multipart body part has been parsed this method is called to get a stream for where to write the body part to.
             </summary>
             <param name="parent">The parent <see cref="T:System.Net.Http.HttpContent"/> MIME multipart instance.</param>
-            <param name="headers">The header fields describing the body parts content. Looking for header fields such as 
+            <param name="headers">The header fields describing the body parts content. Looking for header fields such as
             Content-Type and Content-Disposition can help provide the appropriate stream. In addition to using the information
             in the provided header fields, it is also possible to add new header fields or modify existing header fields. This can
             be useful to get around situations where the Content-type may say <b>application/octet-stream</b> but based on
@@ -3367,7 +3367,7 @@
         </member>
         <member name="M:System.Net.Http.MultipartStreamProvider.ExecutePostProcessingAsync">
             <summary>
-            Immediately upon reading the last MIME body part but before completing the read task, this method is 
+            Immediately upon reading the last MIME body part but before completing the read task, this method is
             called to enable the <see cref="T:System.Net.Http.MultipartStreamProvider"/> to do any post processing on the <see cref="T:System.Net.Http.HttpContent"/>
             instances that have been read. For example, it can be used to copy the data to another location, or perform
             some other kind of post processing on the data before completing the read operation.
@@ -3376,7 +3376,7 @@
         </member>
         <member name="M:System.Net.Http.MultipartStreamProvider.ExecutePostProcessingAsync(System.Threading.CancellationToken)">
             <summary>
-            Immediately upon reading the last MIME body part but before completing the read task, this method is 
+            Immediately upon reading the last MIME body part but before completing the read task, this method is
             called to enable the <see cref="T:System.Net.Http.MultipartStreamProvider"/> to do any post processing on the <see cref="T:System.Net.Http.HttpContent"/>
             instances that have been read. For example, it can be used to copy the data to another location, or perform
             some other kind of post processing on the data before completing the read operation.
@@ -3392,7 +3392,7 @@
         <member name="M:System.Net.Http.MultipartMemoryStreamProvider.GetStream(System.Net.Http.HttpContent,System.Net.Http.Headers.HttpContentHeaders)">
             <summary>
             This <see cref="T:System.Net.Http.MultipartStreamProvider"/> implementation returns a <see cref="T:System.IO.MemoryStream"/> instance.
-            This facilitates deserialization or other manipulation of the contents in memory. 
+            This facilitates deserialization or other manipulation of the contents in memory.
             </summary>
         </member>
         <member name="T:System.Net.Http.MultipartRelatedStreamProvider">
@@ -3416,7 +3416,7 @@
         </member>
         <member name="P:System.Net.Http.MultipartRelatedStreamProvider.RootContent">
             <summary>
-            Gets the <see cref="T:System.Net.Http.HttpContent"/> instance that has been marked as the <c>root</c> content in the 
+            Gets the <see cref="T:System.Net.Http.HttpContent"/> instance that has been marked as the <c>root</c> content in the
             MIME multipart related message using the <c>start</c> parameter. If no <c>start</c> parameter is
             present then pick the first of the children.
             </summary>
@@ -3519,7 +3519,7 @@
         <member name="T:System.Net.Http.PushStreamContent">
             <summary>
             Provides an <see cref="T:System.Net.Http.HttpContent"/> implementation that exposes an output <see cref="T:System.IO.Stream"/>
-            which can be written to directly. The ability to push data to the output stream differs from the 
+            which can be written to directly. The ability to push data to the output stream differs from the
             <see cref="T:System.Net.Http.StreamContent"/> where data is pulled and not pushed.
             </summary>
         </member>
@@ -3527,15 +3527,15 @@
             <summary>
             Initializes a new instance of the <see cref="T:System.Net.Http.PushStreamContent"/> class. The
             <paramref name="onStreamAvailable"/> action is called when an output stream
-            has become available allowing the action to write to it directly. When the 
-            stream is closed, it will signal to the content that is has completed and the 
+            has become available allowing the action to write to it directly. When the
+            stream is closed, it will signal to the content that is has completed and the
             HTTP request or response will be completed.
             </summary>
             <param name="onStreamAvailable">The action to call when an output stream is available.</param>
         </member>
         <member name="M:System.Net.Http.PushStreamContent.#ctor(System.Func{System.IO.Stream,System.Net.Http.HttpContent,System.Net.TransportContext,System.Threading.Tasks.Task})">
             <summary>
-            Initializes a new instance of the <see cref="T:System.Net.Http.PushStreamContent"/> class. 
+            Initializes a new instance of the <see cref="T:System.Net.Http.PushStreamContent"/> class.
             </summary>
             <param name="onStreamAvailable">The action to call when an output stream is available. The stream is automatically
             closed when the return task is completed.</param>
@@ -3562,8 +3562,8 @@
         </member>
         <member name="M:System.Net.Http.PushStreamContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)">
             <summary>
-            When this method is called, it calls the action provided in the constructor with the output 
-            stream to write to. Once the action has completed its work it closes the stream which will 
+            When this method is called, it calls the action provided in the constructor with the output
+            stream to write to. Once the action has completed its work it closes the stream which will
             close this content instance and complete the HTTP request or response.
             </summary>
             <param name="stream">The <see cref="T:System.IO.Stream"/> to which to write.</param>

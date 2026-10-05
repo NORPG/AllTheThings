@@ -75,5 +75,3 @@ app.AddEventHandler("OnRefreshCollections", function()
 	app.SetBatchCached(CACHE, char, 1)
 	app.SetBatchCached(CACHE, none)
 end)
-
-

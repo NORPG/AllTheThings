@@ -1,4 +1,4 @@
-﻿using System.Collections.Concurrent;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using DataCondition = System.Func<System.Collections.Generic.IDictionary<string, object>, bool>;
 using DataAction = System.Action<System.Collections.Generic.IDictionary<string, object>>;

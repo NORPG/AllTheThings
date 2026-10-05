@@ -1,4 +1,4 @@
-﻿1.60.1.69876
+1.60.1.69876
 1@@@PLAYER, Human
 2@@@PLAYER, Orc
 3@@@PLAYER, Dwarf

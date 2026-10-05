@@ -171,4 +171,3 @@ do
 		app.AddRandomSearchCategory("Decor", "decorID", app.L.DECOR, app.L.DECOR_DESC, app.asset("Category_Housing"));
 	end);
 end
-

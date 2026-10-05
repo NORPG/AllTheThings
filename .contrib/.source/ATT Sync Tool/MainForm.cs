@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -91,7 +91,7 @@ namespace ATT
             {
                 Trace.WriteLine(e);
             }
-            
+
             Trace.WriteLine(startup ? "Start with Windows." : "Do NOT start with Windows.");
         }
 
@@ -171,7 +171,7 @@ namespace ATT
                 buttonSyncNow.Enabled = true;
             }
         }
-        
+
         private void FormMain_Shown(object sender, EventArgs e)
         {
             checkBoxStartUp.Checked = StartupAutomatically.Value;
@@ -211,7 +211,7 @@ namespace ATT
         {
             _ = Sync();
         }
-        
+
         protected override void OnVisibleChanged(EventArgs e)
         {
             base.OnVisibleChanged(e);

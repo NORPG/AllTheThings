@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,cl,faction,h,hqt,inst,m,prof,settings,x=_.CreateHeader,_.CreateCharacterClass,_.CreateFaction,_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.Settings,_.CreateExpansion;

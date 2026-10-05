@@ -21,7 +21,7 @@ try
 
     $prop = $props | ? { $_.Name -eq "ActiveHostInfo" } | select -first 1
     if ($prop -eq $null) { return }
-  
+
     $hostInfo = $prop.GetValue($consoleWindow)
     if ($hostInfo -eq $null) { return }
 

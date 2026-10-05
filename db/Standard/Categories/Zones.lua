@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 local L = _.L;
 _.AddEventHandler("OnBuildDataCache", function(categories)

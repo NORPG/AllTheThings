@@ -1,4 +1,4 @@
-﻿namespace ATT.FieldTypes
+namespace ATT.FieldTypes
 {
     public interface IExportableField
     {

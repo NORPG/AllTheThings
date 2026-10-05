@@ -13,18 +13,18 @@ root(ROOTS.Instances, {
 		groups = {
 			n(QUESTS, {
 				--[[
-				q(, {	-- 
-					qg = ,	-- 
+				q(, {	--
+					qg = ,	--
 					coord = {  },
 					races = HORDE_ONLY,
 					lvl = 24,
 					groups = {
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
+						i(),	--
+						i(),	--
+						i(),	--
 					},
 				}),
-				]]-- 
+				]]--
 				q(92456, {	-- A Green Sample
 					qg = 5502,	-- Shylamiir
 					coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
@@ -291,10 +291,10 @@ root(ROOTS.Instances, {
 				creatureID = 246931,	-- Mana Wraith
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]-- 
+					i(),	--
+					i(),	--
+					i(),	--
+					]]--
 				},
 			}),
 			e(3302, {	-- Unstable Sentinel

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -48,7 +48,7 @@ namespace ATT
                 }
             }
 
-            
+
         }
 
         static void Export(StringBuilder builder, object o)

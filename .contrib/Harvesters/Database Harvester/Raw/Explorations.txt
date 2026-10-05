@@ -1,4 +1,4 @@
-﻿1.13.0.28211
+1.13.0.28211
 1@@@Dun Morogh
 2@@@Longshore
 3@@@Badlands

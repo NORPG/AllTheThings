@@ -1,4 +1,4 @@
-﻿namespace ATT.DB.Types
+namespace ATT.DB.Types
 {
     /// <summary>
     /// https://wago.tools/db2/UiMapAssignment
