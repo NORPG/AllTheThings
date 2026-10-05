@@ -3324,8 +3324,15 @@ createLocalizationString = function(data)
 	if not data then
 		print("INVALID LOCALIZATION STRING: You must pass data into the createLocalizationString function.");
 	elseif not data.constant then
-		print("INVALID LOCALIZATION STRING (missing 'constant')", data.readable);
-	elseif localizationStringsByConstant[data.constant] then
+		error("INVALID LOCALIZATION STRING (missing 'constant')", data.readable);
+	end
+	
+	-- Prevent invalid variable declarations
+	if string.match(data.constant, "^%d") then
+		data.constant = "_" .. data.constant;
+	end
+	
+	if localizationStringsByConstant[data.constant] then
 		error("ERROR: LOCALIZATION STRING CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. localizationStringsByConstant[data.constant].readable .. ". Please double check that the localization definitions are unique or reuse the same localization.");
 	else
 		local textData = data.text;
@@ -3452,6 +3459,10 @@ createHeader = function(data)
 		print("INVALID HEADER", data.readable, data.text);
 	else
 		if data.constant then
+			-- Prevent invalid variable declarations
+			if string.match(data.constant, "^%d") then
+				data.constant = "_" .. data.constant;
+			end
 			if customHeadersByConstant[data.constant] then
 				error("ERROR: HEADER CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. customHeadersByConstant[data.constant].text.en .. ". Please double check that the header definitions are unique or reuse the same header.");
 			else
