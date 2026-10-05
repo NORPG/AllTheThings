@@ -639,6 +639,7 @@ L.MINIMAP_LABEL = "Minimap Button"
 L.MINIMAP_MOUSEOVER_TEXT = "Right Click to change settings.\nLeft Click to open the Main List.\n" .. CTRL_KEY_TEXT .. " Click to open the Mini List.\n" .. SHIFT_KEY_TEXT .. " Click to Refresh Collections."
 L.MINIMAP_SLIDER = "Minimap Button Size"
 L.MINIMAP_SLIDER_TOOLTIP = "Use this to customize the size of the Minimap Button.\n\nDefault: 36"
+L.MINING_PICK_DESCRIPTION = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world"
 L.MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s."
 L.MISSING_QUESTS = "Missing Quests"
 L.MISSING_QUESTS_ATT_DATA = "ATT Data:"
@@ -2633,6 +2634,7 @@ local ObjectNames = {
 	[578959] = "Flutterfly Dust",
 	[581822] = "Bloodstained Satchel",
 	[613286] = "Raw Windstone",
+	[616907] = "Windstone",
 	[623295] = "Abandonded Belongings",
 	[629596] = "Snowdrift",
 	[649051] = "Wanted: Incinerator Gar'im",
@@ -10431,6 +10433,7 @@ L.MINIMAP_LABEL = "Botón del minimapa"
 L.MINIMAP_MOUSEOVER_TEXT = "Clic derecho para cambiar ajustes.\nClic izquierdo para abrir la Lista Principal.\n" .. CTRL_KEY_TEXT .. " + clic para abrir la Mini Lista.\n" .. SHIFT_KEY_TEXT .. " + clic para Refrescar las Colecciones."
 L.MINIMAP_SLIDER = "Tamaño del botón del minimapa"
 L.MINIMAP_SLIDER_TOOLTIP = "Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36"
+L.MINING_PICK_DESCRIPTION = "Se puede comprar a proveedores de equipos de minería, así como a algunos comerciantes repartidos por todo el mundo."
 L.MINUMUM_STANDING_WITH_FACTION = "Requiere un nivel mínimo de %s con %s."
 L.MISSION_ID = "Misión ID"
 L.MODE = "Modo"
@@ -12489,6 +12492,8 @@ L.HIDDEN_CURRENCY_TRIGGERS = "隐藏货币触发器"
 L.HIDDEN_CURRENCY_TRIGGERS_DESC = "这些货币是根据特定条件手动判定触发的，主要由游戏内部用于追踪目的。"
 L.HIDDEN_QUEST_TRIGGERS = "隐藏任务触发"
 L.HIDDEN_QUEST_TRIGGERS_DESC = "这些任务是根据特定的标准手动确定触发的任务，主要用于游戏内部的追踪目的"
+L.HIDE_BORDERS = "隐藏边框"
+L.HIDE_BORDERS_TOOLTIP = "是否隐藏ATT窗口边框并调整内部边距/对齐作为补偿"
 L.HOLIDAY_DROP = "每个战网账号每天的首次尝试才有机会掉落独特奖励，如坐骑、宠物、玩具和手稿。每次未获得奖励后，掉落几率都会提高。\n暴雪尚未明确说明哪些物品适用此系统。"
 L.ICON_LEGEND_MISC_LABEL = "杂项图标图例"
 L.ICON_LEGEND_MISC_TEXT = "|c" .. _.DefaultColors.White .. "|T" .. _.asset("Currency") .. ":0|t 用作一种货币\n|T" .. _.asset("Interface_Reagent") .. ":0|t 用作制作材料\n|T" .. _.asset("Interface_Catalyst") .. ":0|t 可在化生台转换为新外观\n|T" .. _.asset("Interface_Upgrade") .. ":0|t 可升级以获得新外观|r"
@@ -13149,6 +13154,9 @@ localize(L.HEADER_NAMES, {
 	[-726] = "联盟的长者",
 	[-727] = "地下城中的长者",
 	[-728] = "部落的长者",
+	[-796] = "起始装备",
+	[-799] = "图书馆藏书",
+	[-800] = "联盟斥候",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
@@ -13168,8 +13176,11 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-365] = "斯坦索姆分为两侧。\n\n这一侧通常被称为“活人”侧或“血色”侧，现已被血色十字军占据。",
 	[-366] = "斯坦索姆分为两侧。\n\n这一侧通常被称为“亡灵”侧或“天灾”侧，现已被天灾军团占据。",
 	[-367] = "你必须击杀大厅周围的全部6名小首领，才能解锁通往预言者迦玛兰的道路。",
+	[-554] = "与普通拍卖行从其他玩家处购买物品不同，黑市中的物品由 NPC 生成并上架。物品仅上架一天。售卖物品涵盖难以获取的装备以及无其他获取途径的 TCG 卡牌物品。所有物品上架频率低，因此不应将其视作稳定刷取稀有物品的方式。",
 	[-721] = "包含当前区域可用但实际源自其他区域的内容。",
 	[-735] = "这个部分是为在一个扩展中引入的系统而设立的，这些系统涉及几个区域。\n如果一个扩展功能仅限于一个区域，那么它可以在 ATT 中的那个区域找到，否则为了减少数据库重复和膨胀，它可以在下面找到。",
+	[-796] = "以下装备可通过创建对应种族与职业的全新角色获取。",
+	[-800] = "这些斥候成群在贫瘠之地各处巡逻，会袭击过于靠近的部落玩家。",
 })
 localize(L.HEADER_LORE, {
 	[-318] = "地下城套装的第2套职业套装，通常称为 T0.5，是通过完成一条漫长的任务链来获得的，该任务链将作为终极地下城掉落的第一个套装升级为更强大的版本。在当前的魔兽世界中，这些套装受到收藏家的追捧，因为随着大灾变，这条任务链已被完全从游戏中移除。在魔兽世界经典版中，你应该在所有角色上完成这条任务链！",

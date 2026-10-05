@@ -393,6 +393,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						cr = 397,	-- Morganth
 					}),
 					i(5274),	-- Rose Mantle
+					i(270033, {	-- Demonhide Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270034, {	-- Shadow Gauntlets
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(150, {	-- Murloc Poachers
@@ -827,6 +833,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					236,	-- Cured Leather Armor
+					1849,	-- Cured Leather Belt
+					238,	-- Cured Leather Boots
+					1850,	-- Cured Leather Bracers
+					239,	-- Cured Leather Gloves
+					237,	-- Cured Leather Pants
+				}},
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,

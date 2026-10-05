@@ -1,5 +1,6 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
+local L = _.L;
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,flt,h,i,o,p,prof,r,s,sp,toy=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy;
 categories.Craftables=
@@ -579,10 +580,10 @@ i(159,{description="Can be bought from Cooking Suppliers, as well as some Trade 
 i(2678,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world."}),
 i(2692,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world."}),
 i(3713,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world."}),
-i(2594,{f=55,providers={{"n",1328}},spellID=11009}),
-i(2593,{f=55,providers={{"n",1328}},spellID=11008}),
-i(2595,{f=55,providers={{"n",1328}},spellID=11009}),
-i(2596,{f=55,providers={{"n",1328}},spellID=11008}),
+i(2594,{f=55,providers={{"n",1328},{"n",5611}},spellID=11009}),
+i(2593,{f=55,providers={{"n",1328},{"n",5611}},spellID=11008}),
+i(2595,{f=55,providers={{"n",1328},{"n",5611}},spellID=11009}),
+i(2596,{f=55,providers={{"n",1328},{"n",5611}},spellID=11008}),
 i(1179,{description="Can be bought from bartenders, innkeepers and general goods vendors.",f=55,lvl=5,spellID=431})}),
 i(13935,{f=55,lvl=45,spellID=1249516}),
 i(4457,{f=55,lvl=25,spellID=1248392}),
@@ -1480,11 +1481,12 @@ o(2047,{learnedAt=230,maps={1418,1423,1427,1428,1444,1446,1447,1449,1452},requir
 o(150081,{coords={
 [1419]={{50.4,10.3}}},learnedAt=230,r=1,requireSkill=186}),
 o(181108,{learnedAt=230,maps={1448},requireSkill=186}),
-i(2770,{maps_disp={1411,1412,1413,1420,1421,1426,1429,1432,1436,1439},providers={{"o",1731}}}),
+i(2770,{maps_disp={1411,1412,1413,1420,1421,1426,1429,1432,1436,1439,2521},providers={{"o",1731}}}),
 i(11370,{maps_disp={232,242,1427,1428},providers={{"o",165658}}}),
 i(2776,{maps_disp={1416,1417,1418,1427,1428,1434,1441,1443,1444,1446,1447,1448},providers={{"o",1734},{"o",73941}}}),
 i(2772,{maps_disp={1416,1417,1418,1434,1441,1443},providers={{"o",1735}}}),
 i(3858,{maps_disp={1418,1427,1428,1444,1446,1447,1448},providers={{"o",2040}}}),
+i(249391,{awp=16001,maps_disp={1411,1412,1413,1420,1421,1426,1429,1432,1436,1439,2521},providers={{"o",1731}}}),
 i(2775,{description="Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",maps_disp={1413,1417,1418,1422,1423,1424,1425,1431,1434,1437,1440,1442,1443,1444},providers={{"o",1733},{"o",73940}}}),
 i(10620,{maps_disp={337,1423,1428,1447,1448,1449,1452},providers={{"o",324},{"o",123848},{"o",175404},{"o",177388},{"o",180215}}}),
 i(2771,{maps_disp={1424,1433,1437,1440,1441,1442},providers={{"o",1732}}}),
@@ -1514,7 +1516,7 @@ i(818,{description="This gem is most reliably obtained from mining veins, althou
 i(22203,{maps_disp={247,320,1451},providers={{"o",181068},{"o",181069}}}),
 i(22202,{maps_disp={247,320,1451},providers={{"o",181068},{"o",181069}}})}),
 flt(57,{
-s(157024,2901,{description="Can be bought from Mining Suppliers, as well as some Trade vendors around the world",f=2})}),
+s(157024,2901,{description=L.MINING_PICK_DESCRIPTION,f=2})}),
 ah(2656,{type="s",g={
 i(2841,{cost={{"i",3576,1},{"i",2840,1}}}),
 i(2840,{cost={{"i",2770,1}}}),
