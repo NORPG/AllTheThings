@@ -29,7 +29,7 @@ local onUpdateForDynamicCategory = function(o)
 				window:ForceRebuild();
 				o.progress = data.progress or 0;
 				o.total = data.total or 0;
-				
+
 				-- Increment the parent group's totals if the group is not ignored for sources
 				if not o.sourceIgnored then
 					local parent = o.parent;

@@ -1,4 +1,4 @@
-﻿1.13.0.28211
+1.13.0.28211
 25@@@Worn Shortsword
 35@@@Bent Staff
 36@@@Worn Mace

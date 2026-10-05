@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local flt,h,i,q,s,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;

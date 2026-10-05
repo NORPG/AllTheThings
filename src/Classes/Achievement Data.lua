@@ -513,7 +513,7 @@ local function OnTooltipForAchievementData(t, tooltipInfo)
 				wrap = true
 			});
 		end
-		
+
 		if IsShiftKeyDown() then
 			local criteriaInfo = {};
 			for i,criteria in ipairs(criteriaData) do

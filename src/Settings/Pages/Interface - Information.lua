@@ -322,7 +322,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if not key then return; end
 	id = reference[key];
 	if not id then return; end
-	
+
 	if key == "achievementID" then
 		-- Prior to Cata, Achievements were not tracked account wide
 		for guid,character in pairs(ATTCharacterData) do

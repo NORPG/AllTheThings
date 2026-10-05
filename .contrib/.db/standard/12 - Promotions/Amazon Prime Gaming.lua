@@ -107,7 +107,7 @@ root(ROOTS.Promotions, {
 				-- #endif
 				["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },
 			}),
-			i(23709, {	-- Tabard of Frost 
+			i(23709, {	-- Tabard of Frost
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
 				["description"] = "Amazon Prime Gaming reward from February 27th 2024 till March 26th 2024.",

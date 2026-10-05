@@ -9,7 +9,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 		["displayID"] = 86805,
 		["groups"] = {
 			n(REWARDS, {
-				["maps"] = { 
+				["maps"] = {
 					DRUSTVAR,
 				},
 				["groups"] = {

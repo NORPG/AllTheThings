@@ -983,7 +983,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 			}),
 			q(92463, {	-- The Cirrusfly Queen
-				sourceQuest = 92462,	-- Infestation Investigation 
+				sourceQuest = 92462,	-- Infestation Investigation
 				qg = 251368,	-- Elatrell Featherlight
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
 				lvl = 2,

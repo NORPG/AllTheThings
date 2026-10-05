@@ -200,7 +200,7 @@ C_Spell and C_Spell.GetSpellCooldown and
 	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
 	return t and t.startTime or 0 end,
 	GetSpellCooldown);
-	
+
 AssignAPIWrapper("GetSpellName",
 	C_Spell and C_Spell.GetSpellName,
 	GetSpellInfo);

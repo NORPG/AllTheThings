@@ -1,4 +1,4 @@
-﻿1.60.1.69876
+1.60.1.69876
 1@@@Rockbiter 3
 2@@@Frostbrand 1
 3@@@Flametongue 3

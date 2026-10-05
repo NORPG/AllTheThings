@@ -803,7 +803,7 @@ app:CreateWindow("Debugger", {
 				self:AddObject(info);
 			end
 		end);
-		
+
 		local GetMerchantItemInfoX = C_MerchantFrame.GetItemInfo;
 		if not GetMerchantItemInfoX then
 			GetMerchantItemInfoX = function(i)
@@ -881,7 +881,7 @@ app:CreateWindow("Debugger", {
 				if IgnoredNPCs[npcID] then
 					return true;
 				end
-				
+
 				local rawGroups = {};
 				local total = GetNumTrainerServices() or 0;
 				for i=1,total,1 do
@@ -900,7 +900,7 @@ app:CreateWindow("Debugger", {
 						end
 					end
 				end
-				
+
 				local key = app.Modules.Search.GetKeyField(ty)
 				local info = { [key] = npcID, key = key };
 				local faction = UnitFactionGroup("npc");
@@ -912,7 +912,7 @@ app:CreateWindow("Debugger", {
 				self:AddObjectWithHeader(app.HeaderConstants.VENDORS, info);
 			end
 		end
-		
+
 		-- Capture Gossip, Merchant, & Flight Master interactions
 		handlers.GOSSIP_SHOW = function(self)
 			local guid = UnitGUID("npc");

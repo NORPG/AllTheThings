@@ -20,7 +20,7 @@ ALCHEMY_RECIPES = {
 		filter(MISC, {
 			r(1230564, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Mana Well
 		}),
-		filter(REAGENTS, {	
+		filter(REAGENTS, {
 			r(1249630, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Cerulean Dye
 			r(1249633, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Sulfuric Acid
 		}),

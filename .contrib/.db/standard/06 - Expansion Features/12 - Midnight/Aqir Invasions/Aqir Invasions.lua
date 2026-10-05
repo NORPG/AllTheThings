@@ -47,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["minReputation"] = { FACTION_AQIR_RESEARCH_ENCLAVE, 20 },	-- Aqir Research Enclave, Renown 20
 						}),
 					}),
-					--[[title(XXX, {	-- 
+					--[[title(XXX, {	--
 						["minReputation"] = { FACTION_AQIR_RESEARCH_ENCLAVE, 20 },	-- Aqir Research Enclave, Renown 20
 					}),
 					n(QUESTS, sharedData({

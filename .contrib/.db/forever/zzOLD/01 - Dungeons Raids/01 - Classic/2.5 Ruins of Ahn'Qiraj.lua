@@ -1355,7 +1355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 								{ "i", 20860, 5 },	-- Silver Scarab
 							},
 							["classes"] = { WARRIOR },
-							["groups"] = {								
+							["groups"] = {
 								i(233441),	-- Drape of Unyielding Strength
 							},
 						}),
@@ -1370,7 +1370,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 								{ "i", 20858, 5 },	-- Stone Scarab
 							},
 							["classes"] = { WARRIOR },
-							["groups"] = {								
+							["groups"] = {
 								i(233442),	-- Sickle of Unyielding Strength
 							},
 						}),
@@ -1386,7 +1386,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234814),	-- Pendant of the Shifting Sands
 						},
 					}),
-				}),				
+				}),
 				n(ZONE_DROPS, {
 					i(234119),	-- Antenna of Invigoration
 					i(234123),	-- Coif of Elemental Fury

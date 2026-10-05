@@ -10,12 +10,12 @@
     <!-- get the preferred architecture -->
     <PropertyGroup>
         <!-- handle x86/x64 specifically -->
-        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and ( '$(PlatformTarget)' == 'x64' or '$(PlatformTarget)' == 'x86' ) ">$(PlatformTarget)</PreferredNativeLua> 
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and ( '$(PlatformTarget)' == 'x64' or '$(PlatformTarget)' == 'x86' ) ">$(PlatformTarget)</PreferredNativeLua>
         <!-- handle Any CPU, considering Prefer32Bit -->
-        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeLua>  
-        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and '$(Prefer32Bit)' == 'True' ">x86</PreferredNativeLua> 
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeLua>
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and '$(Prefer32Bit)' == 'True' ">x86</PreferredNativeLua>
         <!-- fall back to x64 on 64-bit machines -->
-        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and $([System.Environment]::Is64BitOperatingSystem) ">x64</PreferredNativeLua> 
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and $([System.Environment]::Is64BitOperatingSystem) ">x64</PreferredNativeLua>
         <!-- fall back to x86 -->
         <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' ">x86</PreferredNativeLua>
     </PropertyGroup>

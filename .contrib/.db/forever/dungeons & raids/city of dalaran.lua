@@ -13,15 +13,15 @@ root(ROOTS.Instances, {
 		groups = {
 			n(QUESTS, {
 				--[[
-				q(, {	-- 
-					qg = ,	-- 
+				q(, {	--
+					qg = ,	--
 					coord = {  },
 					races = HORDE_ONLY,
 					lvl = 24,
 					groups = {
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
+						i(),	--
+						i(),	--
+						i(),	--
 					},
 				}),
 				]]--
@@ -31,9 +31,9 @@ root(ROOTS.Instances, {
 					creatureID = 247032,	-- Lyn the Ignored
 					groups = {
 						--[[
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
+						i(),	--
+						i(),	--
+						i(),	--
 						]]--
 					},
 				}),
@@ -42,9 +42,9 @@ root(ROOTS.Instances, {
 				creatureID = 247126,	-- Atrexis the Grave Knight
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -52,9 +52,9 @@ root(ROOTS.Instances, {
 				creatureID = 245999,	-- Arcane Anomaly
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -62,9 +62,9 @@ root(ROOTS.Instances, {
 				creatureID = 246003,	-- Fel Ancient
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -72,9 +72,9 @@ root(ROOTS.Instances, {
 				creatureID = 14689,	-- Mana Elemental
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -82,9 +82,9 @@ root(ROOTS.Instances, {
 				creatureID = 246008,	-- Mana Devourer
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -92,9 +92,9 @@ root(ROOTS.Instances, {
 				creatureID = 246931,	-- Mana Wraith
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -102,9 +102,9 @@ root(ROOTS.Instances, {
 				creatureID = 246017,	-- Unstable Sentinel
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),
@@ -112,9 +112,9 @@ root(ROOTS.Instances, {
 				creatureID = 246020,	-- Shade of the Archmage
 				groups = {
 					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 					]]--
 				},
 			}),

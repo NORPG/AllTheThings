@@ -804,10 +804,10 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		-- 	Cooking reagents
 		-- 	Other reagents
 		-- _________________________________
-		-- 
+		--
 		-- 	Cloth + Silk:
 		-- _________________________________
-		-- 
+		--
 		-- 	Elemental reagents:
 		i(52328, {	-- Volatile Air
 			["coords"] = {
@@ -939,7 +939,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			},
 		}),
 		-- _________________________________
-		-- 
+		--
 		-- 	Clams:
 		i(52340, {	-- Abyssal Clam
 			["description"] = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
@@ -958,7 +958,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			},
 		}),
 		-- _________________________________
-		-- 
+		--
 		-- 	Cooking reagents:
 		i(62783, {	-- Basilisk "Liver"
 			["coords"] = {
@@ -1075,7 +1075,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		-- __________________________________
-		-- 
+		--
 		-- Other reagents:
 		i(52078, {	-- Chaos Orb
 			["description"] = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",

@@ -48,8 +48,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						recipe(18540),	-- Ritual of Doom
 					},
-				}),	
-			}))), 
+				}),
+			}))),
 			n(227140, {	-- Pyranis
 				i(228090),	-- Cenarion Ritual Dagger
 				i(228092),	-- Druidic Mantle

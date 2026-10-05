@@ -1809,7 +1809,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 26.6, 50.6, MAP.DUN_MOROGH },
 					{ 27.2, 52.8, MAP.DUN_MOROGH },
 				},
-				
+
 			}),
 			i(2112, {	-- Lumberjack Jerkin
 				["cr"] = 1689,	-- Scarred Crag Boar

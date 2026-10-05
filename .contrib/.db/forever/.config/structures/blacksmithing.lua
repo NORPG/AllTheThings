@@ -112,7 +112,7 @@ BLACKSMITHING_RECIPES = {
 			r(9935),	-- Steel Plate Helm
 		}),
 		filter(MISC, {
-			r(19667),	-- Golden Skeleton 
+			r(19667),	-- Golden Skeleton
 			r(8768),	-- Iron Buckle
 			r(9918),	-- Solid Sharpening Stone
 			r(9921),	-- Solid Weightstone

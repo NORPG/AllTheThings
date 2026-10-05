@@ -8,7 +8,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 		["displayID"] = 112636,
 		["groups"] = {
 			n(REWARDS, {
-				["maps"] = { 
+				["maps"] = {
 					OHNAHRAN_PLAINS,
 					THALDRASZUS,
 					THE_AZURE_SPAN,

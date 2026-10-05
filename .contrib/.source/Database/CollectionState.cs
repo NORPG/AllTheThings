@@ -1,4 +1,4 @@
-﻿namespace ATT
+namespace ATT
 {
     /// <summary>
     /// The collection state enumeration.

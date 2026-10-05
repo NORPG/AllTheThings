@@ -1,4 +1,4 @@
-﻿using ATT.DB.Types;
+using ATT.DB.Types;
 using Csv;
 using System;
 using System.Collections;

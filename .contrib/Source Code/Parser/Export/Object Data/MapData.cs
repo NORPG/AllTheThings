@@ -1,4 +1,4 @@
-﻿using ATT.DB;
+using ATT.DB;
 using ATT.DB.Types;
 using System;
 using System.Collections.Generic;

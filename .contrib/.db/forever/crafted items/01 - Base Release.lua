@@ -477,7 +477,7 @@ root(ROOTS.Craftables, {
 			i(10938, {	-- Lesser Magic Essence
 				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
 			}),
-			i(11135, {	-- Greater Mystic Essence 
+			i(11135, {	-- Greater Mystic Essence
 				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
 			}),
 			i(11134, {	-- Lesser Mystic Essence
@@ -800,7 +800,7 @@ root(ROOTS.Craftables, {
 		i(858),	-- Lesser Healing Potion
 		i(13446),	-- Major Healing Potion
 		i(3928),	-- Superior Healing Potion
-		
+
 		i(6452),	-- Anti-Venom
 		i(2581),	-- Heavy Linen Bandage
 		i(8545),	-- Heavy Mageweave Bandage

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -117,7 +117,7 @@ namespace ATT
                 changed = true;
                 if (pair.Value == CollectionState.Yes) ++Total.Value;
             }
-            
+
             // Unpause the event handlers.
             Total.Paused = false;
             PartialTotal.Paused = false;

@@ -1,4 +1,4 @@
-﻿using ATT.DB;
+using ATT.DB;
 using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;

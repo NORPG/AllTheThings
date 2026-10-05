@@ -1,4 +1,4 @@
-﻿11.2.7.63642
+11.2.7.63642
 12@@@[DNT] Orgrimmar Interior Wall - DO NOT USE
 13@@@[DNT] Partition Pillar (WMO) - DO NOT USE
 60@@@[DNT] Partition Doorway (WMO) - DO NOT USE

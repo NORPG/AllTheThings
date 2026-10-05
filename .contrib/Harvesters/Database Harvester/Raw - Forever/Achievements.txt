@@ -1,4 +1,4 @@
-﻿1.60.1.69876
+1.60.1.69876
 627@@@Explore Dun Morogh
 684@@@Conqueror of the Lair
 728@@@Explore Durotar

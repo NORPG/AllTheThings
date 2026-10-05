@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,ah,campsite,cl,crit,cs,d,de,exp,faction,flt,follower,fp,gb,h,heir,i,ill,inst,m,mm,mnt,n,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateDifficulty,_.CreateDecor,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;

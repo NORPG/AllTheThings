@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,crit,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateExpansion;

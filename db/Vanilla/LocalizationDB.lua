@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 if not (not C_Seasons or C_Seasons.GetActiveSeason() ~= 2) then return end
 -----------------------------------------------------------------
 --   L O C A L I Z A T I O N   D A T A B A S E   M O D U L E   --

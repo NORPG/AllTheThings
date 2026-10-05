@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(96656, {	-- The Adventurer [Tirisfal Glades]
-							--["sourceQuest"] = ,	-- 
+							--["sourceQuest"] = ,	--
 							["qg"] = 1570,	-- Executor Arren
 							["coord"] = { 32.0, 66.0, MAP.TIRISFAL_GLADES },
 							["timeline"] = { TIMELINE.ADDED_1_60_1 },

@@ -3,19 +3,19 @@
 -----------------
 ENGINEERING_RECIPES = {
 	APPRENTICE = {
-		
+
 	};
 	JOURNEYMAN = {
-		
+
 	};
 	EXPERT = {
-		
+
 	};
 	ARTISAN = {
-		
+
 	};
 	GNOMISH_ENGINEERING = {
-		
+
 	};
 	GOBLIN_ENGINEERING = {
 		recipe(12755),	-- Goblin Bomb Dispenser
@@ -30,22 +30,22 @@ ENGINEERING_RECIPES = {
 	};
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
-			
+
 		}, {	-- Friendly
-			
+
 		}, {	-- Honored
-			
+
 		}, {	-- Revered
 		}, {	-- Exalted
 		},
 	});
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 		{	-- Neutral
-			
+
 		}, {	-- Friendly
-			
+
 		}, {	-- Honored
-			
+
 		}, {	-- Revered
 		}, {	-- Exalted
 		},

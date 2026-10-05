@@ -188,7 +188,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(96630, {	-- The Adventurer [Teldrassil]
-						--["sourceQuest"] = ,	-- 
+						--["sourceQuest"] = ,	--
 						["provider"] = { "o", 654846 },	-- Lost Journal
 						["coord"] = { 59.1, 39.49, MAP.TELDRASSIL },
 						["qi"] = 275022,	-- Lost Journal (PQI!)

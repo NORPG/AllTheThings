@@ -6,7 +6,7 @@ local L = app.L;
 if app.GameBuildVersion >= 20000 then
 	-- Private Variables
 	local Flat;
-	
+
 	app:CreateWindow("Titles", {
 		AllowCompleteSound = true,
 		IsDynamicCategory = true,

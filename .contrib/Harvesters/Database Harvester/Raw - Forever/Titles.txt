@@ -1,4 +1,4 @@
-﻿1.60.1.69876
+1.60.1.69876
 0@@@%s the Blacksmith
 1@@@%s of the Magram
 2@@@%s of the Gelkis

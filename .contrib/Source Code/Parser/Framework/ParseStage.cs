@@ -1,4 +1,4 @@
-﻿namespace ATT
+namespace ATT
 {
     /// <summary>
     /// Represents a Stage in the sequence of a Parse operation

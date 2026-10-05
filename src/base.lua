@@ -277,7 +277,7 @@ local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon
 app.GetIconFromProviders = function(group)
 	local qss = group.qss;
-	if qss then 
+	if qss then
 		local icon = GetItemIcon(qss[1]);
 		if icon then return icon; end
 	end

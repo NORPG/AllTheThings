@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -20,7 +20,7 @@ namespace ATT
         public string AccountName { get; private set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Dictionary<string, ATTCharacterData> Characters = new Dictionary<string, ATTCharacterData>();
 

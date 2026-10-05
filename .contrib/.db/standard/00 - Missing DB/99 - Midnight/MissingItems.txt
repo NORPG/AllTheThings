@@ -9872,41 +9872,41 @@ i(65732),	-- icious Badges \\ Suspicious Badges
 i(65733),	-- on's Prayer Book \\ Paxton's Prayer Book
 i(65734),	-- ight Documents \\ Twilight Documents
 i(65745),	-- ial Sandals \\ Martial Sandals
-i(65747),	-- 
-i(65748),	-- 
-i(65749),	-- 
-i(65750),	-- 
-i(65751),	-- 
-i(65752),	-- 
-i(65753),	-- 
-i(65754),	-- 
-i(65755),	-- 
-i(65756),	-- 
-i(65757),	-- 
-i(65758),	-- 
-i(65759),	-- 
-i(65760),	-- 
-i(65761),	-- 
-i(65762),	-- 
-i(65763),	-- 
-i(65764),	-- 
-i(65765),	-- 
-i(65766),	-- 
-i(65767),	-- 
-i(65768),	-- 
-i(65769),	-- 
-i(65770),	-- 
-i(65771),	-- 
-i(65772),	-- 
-i(65777),	-- 
-i(65778),	-- 
-i(65779),	-- 
-i(65780),	-- 
-i(65781),	-- 
-i(65782),	-- 
-i(65783),	-- 
-i(65784),	-- 
-i(65785),	-- 
+i(65747),	--
+i(65748),	--
+i(65749),	--
+i(65750),	--
+i(65751),	--
+i(65752),	--
+i(65753),	--
+i(65754),	--
+i(65755),	--
+i(65756),	--
+i(65757),	--
+i(65758),	--
+i(65759),	--
+i(65760),	--
+i(65761),	--
+i(65762),	--
+i(65763),	--
+i(65764),	--
+i(65765),	--
+i(65766),	--
+i(65767),	--
+i(65768),	--
+i(65769),	--
+i(65770),	--
+i(65771),	--
+i(65772),	--
+i(65777),	--
+i(65778),	--
+i(65779),	--
+i(65780),	--
+i(65781),	--
+i(65782),	--
+i(65783),	--
+i(65784),	--
+i(65785),	--
 i(65812),	-- hare's Cabochon Charm \\ Namkhare's Cabochon Charm
 i(65877),	-- lman's Choker \\ Wheelman's Choker
 i(65879),	-- on Stabilizer \\ Cannon Stabilizer
@@ -19703,11 +19703,11 @@ i(114238),	-- Spiced Barbed Trout \\ ed Barbed Trout
 i(114241),	-- Tattered Armor Scraps \\ ered Armor Scraps
 i(114244),	-- GG-117 Micro-Jetpack \\ 17 Micro-Jetpack
 i(114246),	-- "Skyterror" Personal Delivery System \\ terror" Personal Delivery System
-i(114279),	-- Ring \\ 
-i(114280),	-- Ring \\ 
-i(114281),	-- Ring \\ 
-i(114282),	-- Ring \\ 
-i(114283),	-- Ring \\ 
+i(114279),	-- Ring \\
+i(114280),	-- Ring \\
+i(114281),	-- Ring \\
+i(114282),	-- Ring \\
+i(114283),	-- Ring \\
 i(114285),	-- Fangtooth Ring \\ tooth Ring
 i(114286),	-- Melting Pureice Band \\ ing Pureice Band
 i(114287),	-- Ivy Bloodring \\ Bloodring
@@ -19723,11 +19723,11 @@ i(114304),	-- Spectral Ghost of Insight \\ tral Ghost of Insight
 i(114305),	-- Spectral Whisper of Healing \\ tral Whisper of Healing
 i(114306),	-- Spectral Claw of Might \\ tral Claw of Might
 i(114307),	-- Spectral Miasma of Fortitude \\ tral Miasma of Fortitude
-i(114342),	-- Ring \\ 
-i(114343),	-- Ring \\ 
-i(114344),	-- Ring \\ 
-i(114345),	-- Ring \\ 
-i(114346),	-- Ring \\ 
+i(114342),	-- Ring \\
+i(114343),	-- Ring \\
+i(114344),	-- Ring \\
+i(114345),	-- Ring \\
+i(114346),	-- Ring \\
 i(114348),	-- Arrow-Kissed Loop \\ w-Kissed Loop
 i(114349),	-- Shadowflame Seal \\ owflame Seal
 i(114350),	-- Transluminescent Band \\ sluminescent Band
@@ -19738,36 +19738,36 @@ i(114355),	-- Locket of Crackling Lightning \\ et of Crackling Lightning
 i(114356),	-- Sea Foam Pendant \\ Foam Pendant
 i(114357),	-- Scytheblade Choker \\ heblade Choker
 i(114358),	-- Choker of Binding Steel \\ er of Binding Steel
-i(114403),	-- Ring \\ 
-i(114404),	-- Ring \\ 
-i(114405),	-- Ring \\ 
-i(114406),	-- Ring \\ 
-i(114407),	-- Ring \\ 
+i(114403),	-- Ring \\
+i(114404),	-- Ring \\
+i(114405),	-- Ring \\
+i(114406),	-- Ring \\
+i(114407),	-- Ring \\
 i(114409),	-- Poisoner's Ring \\ oner's Ring
 i(114410),	-- Loop of Frozen Leaves \\ of Frozen Leaves
 i(114411),	-- Windfire Band \\ fire Band
 i(114412),	-- Valiant Soldier's Signet \\ ant Soldier's Signet
 i(114413),	-- Doomed Guardian's Band \\ ed Guardian's Band
-i(114464),	-- Ring \\ 
-i(114465),	-- Ring \\ 
-i(114466),	-- Ring \\ 
-i(114467),	-- Ring \\ 
-i(114468),	-- Ring \\ 
+i(114464),	-- Ring \\
+i(114465),	-- Ring \\
+i(114466),	-- Ring \\
+i(114467),	-- Ring \\
+i(114468),	-- Ring \\
 i(114470),	-- Stealthy Hunter's Band \\ lthy Hunter's Band
 i(114471),	-- Mindstalker Seal \\ stalker Seal
 i(114472),	-- Loop of Soothing Visions \\ of Soothing Visions
 i(114473),	-- Calcified Finger of Dread \\ ified Finger of Dread
 i(114474),	-- Unbowed Signet \\ wed Signet
-i(114525),	-- Ring \\ 
-i(114526),	-- Ring \\ 
-i(114527),	-- Ring \\ 
-i(114528),	-- Ring \\ 
-i(114529),	-- Ring \\ 
-i(114586),	-- RING \\ 
-i(114587),	-- Ring \\ 
-i(114588),	-- RING \\ 
-i(114589),	-- RING \\ 
-i(114590),	-- RING \\ 
+i(114525),	-- Ring \\
+i(114526),	-- Ring \\
+i(114527),	-- Ring \\
+i(114528),	-- Ring \\
+i(114529),	-- Ring \\
+i(114586),	-- RING \\
+i(114587),	-- Ring \\
+i(114588),	-- RING \\
+i(114589),	-- RING \\
+i(114590),	-- RING \\
 i(114610),	-- Formidable Jar of Doom \\ idable Jar of Doom
 i(114611),	-- Formidable Orb of Putrescence \\ idable Orb of Putrescence
 i(114612),	-- Formidable Censer of Faith \\ idable Censer of Faith
@@ -19907,7 +19907,7 @@ i(115978),	-- Enchant Weapon - Glory of the Frostwolf \\ ant Weapon - Glory of t
 i(116020),	-- An Old Key \\ ld Key
 i(116024),	-- Holy Tome \\ Tome
 i(116054),	-- Garden \\ en
-i(116055),	-- Mine \\ 
+i(116055),	-- Mine \\
 i(116063),	-- Prestige Card: The Turn \\ tige Card: The Turn
 i(116068),	-- Ring of Promises \\ of Promises
 i(116069),	-- Misappropriated Draenic Texts \\ ppropriated Draenic Texts
@@ -20352,7 +20352,7 @@ i(120170),	-- Partially-Digested Bag \\ ially-Digested Bag
 i(120180),	-- Ogre Cage Key \\ Cage Key
 i(120183),	-- Excess Potion of Accumulated Power \\ ss Potion of Accumulated Power
 i(120204),	-- Forged Weapons and Armor \\ ed Weapons and Armor
-i(120205),	-- XP \\ 
+i(120205),	-- XP \\
 i(120263),	-- Unstable Ensorcelled Tarot \\ able Ensorcelled Tarot
 i(120264),	-- Unstable Greater Ensorcelled Tarot \\ able Greater Ensorcelled Tarot
 i(120269),	-- Autographed Portrait of Jaina Proudmoore \\ graphed Portrait of Jaina Proudmoore
@@ -21050,7 +21050,7 @@ i(130204),	-- Gem Chip \\ Chip
 i(130205),	-- Aggravating Note \\ avating Note
 i(130206),	-- Informative Note \\ rmative Note
 i(130207),	-- Bragging Note \\ ging Note
-i(130252),	-- Hack \\ 
+i(130252),	-- Hack \\
 i(130253),	-- Slash \\ h
 i(130257),	-- Pocket Friend \\ et Friend
 i(130258),	-- Pocket Friend \\ et Friend
@@ -21857,7 +21857,7 @@ i(138813),	-- Adventurer's Resounding Renown \\ nturer's Resounding Renown
 i(138814),	-- Adventurer's Renown \\ nturer's Renown
 i(138815),	-- Old Grizzleback's Staff \\ Grizzleback's Staff
 i(138816),	-- Adventurer's Glory \\ nturer's Glory
-i(138826),	-- ???? \\ 
+i(138826),	-- ???? \\
 i(138830),	-- Demonic Logbook on Uthalesh \\ nic Logbook on Uthalesh
 i(138839),	-- Valiant's Glory \\ ant's Glory
 i(138849),	-- Demonic Logbook on Thal'kiel \\ nic Logbook on Thal'kiel
@@ -22302,7 +22302,7 @@ i(140628),	-- Lavacolada \\ colada
 i(140629),	-- Bottled Maelstrom \\ led Maelstrom
 i(140631),	-- Nightpear \\ tpear
 i(140654),	-- Pestilential Hide of Nythendra \\ ilential Hide of Nythendra
-i(140655),	-- Log \\ 
+i(140655),	-- Log \\
 i(140668),	-- Meaty Racks of Musken Ribs \\ y Racks of Musken Ribs
 i(140679),	-- NeverMelt Ice Cream \\ rMelt Ice Cream
 i(140685),	-- Enchanted Sunrunner Kidney \\ anted Sunrunner Kidney

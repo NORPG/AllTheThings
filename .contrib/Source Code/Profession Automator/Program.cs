@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -264,7 +264,7 @@ namespace Profession_Automator
             }
             return ConvertToObject(dict);
         }
-        
+
         /// <summary>
         /// Write the table to the string builder with the given indent.
         /// The first indent is ignored, per protocol.
@@ -393,7 +393,7 @@ namespace Profession_Automator
                 Sort(list);
             }
         }
-        
+
         /// <summary>
         /// Sort the two objects.
         /// This is super complicated. Sorry.

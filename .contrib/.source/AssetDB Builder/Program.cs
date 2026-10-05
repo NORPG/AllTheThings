@@ -1,4 +1,4 @@
-﻿// DBContext / AssetDB
+// DBContext / AssetDB
 using System.Text;
 
 var databaseFolder = "../.db/standard/00 - DB/AssetDB";

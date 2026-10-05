@@ -163,4 +163,3 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 		achpart(11138, 11139),	-- Is There a Medic in the Zone?
 	})),
 })));
-

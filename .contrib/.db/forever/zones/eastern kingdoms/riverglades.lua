@@ -61,7 +61,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(255897, { -- Friz Frazzlespark <Specialty Goods>
 				coord = { 77.1, 52.9, MAP.RIVERGLADES },
-				sym = {{ "select", "itemID", 
+				sym = {{ "select", "itemID",
 					-- Weapons
 					2520, -- Broadsword
 					2521, -- Flamberge
@@ -76,7 +76,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				}},
 				groups = bubbleDownClassicRep(2827, {	-- Powderfuse
 					{	-- Neutral
-						
+
 					}, {	-- Friendly
 						i(276200), -- Crawler's Clackers
 						i(276202), -- Disengagement Ring

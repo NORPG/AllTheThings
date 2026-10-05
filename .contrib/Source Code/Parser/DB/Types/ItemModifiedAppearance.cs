@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Runtime.Remoting.Channels;
 
 namespace ATT.DB.Types

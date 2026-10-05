@@ -192,7 +192,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						["classes"] = { WARRIOR },
 					}),
 					q(96659, {	-- The Adventurer [Mulgore]
-						--["sourceQuest"] = ,	-- 
+						--["sourceQuest"] = ,	--
 						["qg"] = 2981,	-- Chief Hawkwind
 						["qi"] = 275019,	-- Supply Bundle (PQI!)
 						["coord"] = { 44.2, 76.0, MAP.MULGORE },

@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cat,flt,h,i,prof,q,qo,r,x=_.CreateAchievement,_.CreateCategory,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateExpansion;

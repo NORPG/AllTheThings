@@ -5,7 +5,7 @@ currency(4),	-- Currency Token Test Token 5
 currency(42),	-- Badge of Justice
 currency(101),	-- Emblem of Heroism
 currency(102),	-- Emblem of Valor
-currency(103),	-- Arena Points \\ 
+currency(103),	-- Arena Points \\
 currency(104),	--  \\ Honor Points DEPRECATED
 currency(121),	-- Alterac Valley Mark of Honor
 currency(122),	-- Arathi Basin Mark of Honor

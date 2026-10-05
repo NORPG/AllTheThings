@@ -1,4 +1,4 @@
-﻿---@diagnostic disable: deprecated
+---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,campsite,cat,cd,cl,cq,crit,cs,cu,de,en,ens,exp,faction,flt,follower,fp,gb,gm,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateWarbandScene,_.CreateCategory,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy;

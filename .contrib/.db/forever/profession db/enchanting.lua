@@ -251,7 +251,7 @@ i(20732, 25081);	-- Enchant Cloak - Greater Fire Resistance
 i(20733, 25082);	-- Enchant Cloak - Greater Nature Resistance
 i(20734, 25083);	-- Enchant Cloak - Stealth
 i(20735, 25084);	-- Enchant Cloak - Subtlety
-i(20729, 25078);	-- Enchant Gloves - Fire Power	
+i(20729, 25078);	-- Enchant Gloves - Fire Power
 i(20728, 25074);	-- Enchant Gloves - Frost Power
 i(20730, 25079);	-- Enchant Gloves - Healing Power
 i(20727, 25073);	-- Enchant Gloves - Shadow Power

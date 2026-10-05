@@ -1,4 +1,4 @@
-﻿using ATT.FieldTypes;
+using ATT.FieldTypes;
 using KeraLua;
 using System;
 using System.Collections.Generic;

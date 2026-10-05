@@ -562,7 +562,7 @@
         </member>
         <member name="F:ATT.ATTAccountWideData.Characters">
             <summary>
-            
+
             </summary>
         </member>
         <member name="F:ATT.ATTAccountWideData.Artifacts">
@@ -637,7 +637,7 @@
              <summary>
              This class encodes and decodes JSON strings.
              Spec. details, see http://www.json.org/
-            
+
              JSON uses Arrays and Objects. These correspond here to the datatypes IList and IDictionary.
              All numbers are parsed to doubles.
              </summary>

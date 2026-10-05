@@ -1521,16 +1521,3 @@ MID_LEATHERWORKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		r(1237574),	-- Sin'dorei Armor Banding
 	}),
 });
-
-
-
-
-
-
-
-
-
-
-
-
-

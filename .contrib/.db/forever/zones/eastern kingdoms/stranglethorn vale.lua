@@ -2009,7 +2009,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = bubbleDownClassicRep(FACTION_BOOTY_BAY, {
 					{	-- Neutral
-						
+
 					}, {	-- Friendly
 						i(274745),	-- Deckswabber's Mitts
 						i(274746),	-- Sea Giant's Toe Ring

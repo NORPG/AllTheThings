@@ -1016,7 +1016,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #elseif AFTER 7.2.5
 					98,
 					-- #else
-					nil,	
+					nil,
 					-- #endif
 				["groups"] = {
 					-- #if BEFORE 10.1.7

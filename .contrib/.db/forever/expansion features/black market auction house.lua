@@ -53,10 +53,10 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			--[[
 			filter(MOUNTS, {
-				
+
 			}),
 			filter(SHIRTS, {
-				
+
 			}),
 			]]--
 			filter(TABARDS, {

@@ -119,13 +119,13 @@
             Gets a single column from the entire Enumeration of `ICsvLine`
             </summary>
             <param name="lines">The enumeration of `ICsvLine`</param>
-            <param name="columnNo">The index (starting from 0) of the the column 
+            <param name="columnNo">The index (starting from 0) of the the column
             to extract</param>
-            <param name="transform">The transformation function to parse 
+            <param name="transform">The transformation function to parse
             from the string values</param>
-            <typeparam name="T">The datatype to transform 
+            <typeparam name="T">The datatype to transform
             the string inputs into</typeparam>
-            <returns>An enumeration of the transformed 
+            <returns>An enumeration of the transformed
             values of the selected column</returns>
         </member>
         <member name="M:Csv.CsvReader.GetColumn(System.Collections.Generic.IEnumerable{Csv.ICsvLine},System.Int32)">
@@ -133,9 +133,9 @@
             Gets a single column from the entire Enumeration of `ICsvLine`
             </summary>
             <param name="lines">The enumeration of `ICsvLine`</param>
-            <param name="columnNo">The index (starting from 0) of the the 
+            <param name="columnNo">The index (starting from 0) of the the
             column to extract</param>
-            <returns>An enumerations of the string values of 
+            <returns>An enumerations of the string values of
             the selected column</returns>
         </member>
         <member name="M:Csv.CsvReader.GetBlock(System.Collections.Generic.IEnumerable{Csv.ICsvLine},System.Int32,System.Int32,System.Int32,System.Int32)">
@@ -143,12 +143,12 @@
             Gets a range/block of values from the given enumeration of `ICsvLine`
             </summary>
             <param name="lines">The enumeration of `ICsvLine`</param>
-            <param name="row_start">The index(starting from 0) of the rows to start the capture of. 
+            <param name="row_start">The index(starting from 0) of the rows to start the capture of.
             Default value is -1</param>
             <param name="row_length">The number of rows to capture from the start row. If the default value
              (or any negative number) is passed, selects all the rows till the end</param>
             <param name="col_start">The index(starting from 0) of all the columns to start the capture of.</param>
-            <param name="col_length">The number of rows to capture from the start column. 
+            <param name="col_length">The number of rows to capture from the start column.
             If the default value (or any negative number) is passed, selects all the rows till the end</param>
             <returns></returns>
         </member>

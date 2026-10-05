@@ -1,4 +1,4 @@
-﻿1.60.1.69876
+1.60.1.69876
 1@@@Dun Morogh
 2@@@Longshore
 3@@@Badlands
