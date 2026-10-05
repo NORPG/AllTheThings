@@ -17,85 +17,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			pvp(n(PVP, {
 				n(AZERITE_ESSENCES, {
 					i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
-						["description"] = createLocalizationString({
-							readable = "Requires earning 500 Conquest and opening your weekly chest.\n",
-							constant = "REQUIRES_EARNING_500_CONQUEST_AND_OPENING_YOUR",
-							export = true,
-							text = {
-								en = "Requires earning 500 Conquest and opening your weekly chest.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要获得 500 点征服点数并打开你的每周宝箱。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
 					}),
 					i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
-						["description"] = createLocalizationString({
-							readable = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
-							constant = "REQUIRES_REACHING_1_000_RATING_IN_PVP_AND",
-							export = true,
-							text = {
-								en = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要在 PVP 中达到 1,000 等级分并打开你的下一个每周宝箱。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
 					}),
 					i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
-						["description"] = createLocalizationString({
-							readable = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
-							constant = "THE_AMOUNT_OF_CFF9832DFBURGEONING_BATTLEFIELD",
-							export = true,
-							text = {
-								en = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你从每周宝箱中获得的|cff9832df涌动的战场狂怒|r数量会因你的评级而异。\n\n无评级 - 1\n竞争者 - 3\n挑战者 - 5\n劲敌 - 6\n决斗者 - 8\n精英 - 10\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 					}),
 					i(169899, {	-- Polished Skull Trophy (Rank 4)
-						["description"] = createLocalizationString({
-							readable = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
-							constant = "REQUIRES_REACHING_ELITE_RATING_IN_PVP_AND",
-							export = true,
-							text = {
-								en = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要在 PVP 中达到精英等级分并打开你的下一个每周宝箱。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 						["u"] = REMOVED_FROM_GAME,	-- Removed // Old PvP Elite/Gladiator
 					}),
@@ -257,24 +189,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 			})),
 			n(OUTPOSTS, {
-				["description"] = createLocalizationString({
-					readable = "Alliance Outposts allow you to set up additional bases in Zandalar. You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
-					constant = "ALLIANCE_OUTPOSTS_ALLOW_YOU_TO_SET_UP",
-					export = true,
-					text = {
-						en = "Alliance Outposts allow you to set up additional bases in Zandalar. You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "联盟前哨站允许你在赞达拉建立额外的基地。你可以从风之救赎号旁的商人守备官杰拉娜那里购买侦察报告。每一份都会在你的任务指挥台上开启一个任务。完成最初的任务线后，你会获得升级前哨站的额外任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar. You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["groups"] = {
 					i(165880, {	-- Outpost Upgrade: Arom's Stand (CI!)
 						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
@@ -906,24 +821,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56031, {	-- The Wolf's Offensive
-				["description"] = createLocalizationString({
-					readable = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character which has just started BFA and gotten the portals unlocked in Boralus, but hasn't proceeded further. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
-					constant = "IF_NOT_ENCOUNTERED_THE_REGULAR_WAY_THIS_CAN_BE",
-					export = true,
-					text = {
-						en = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character which has just started BFA and gotten the portals unlocked in Boralus, but hasn't proceeded further. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果不是通过常规方式遇到，可以通过队伍同步获得。你需要与一个刚刚开始《争霸艾泽拉斯》、已在伯拉勒斯解锁传送门但尚未继续推进的角色同步。然后你需要接取任务“垂死的世界”并再次完成它。继续推进并完成任务“灌注之心”。之后这个任务就应该会为你弹出。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character which has just started BFA and gotten the portals unlocked in Boralus, but hasn't proceeded further. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
@@ -970,24 +868,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 
 			-- Not sorted
 			q(75877, {	-- Time to Fly
-				["description"] = createLocalizationString({
-					readable = "Reaching Level 30 will make this quest pop up.",
-					constant = "REACHING_LEVEL_30_WILL_MAKE_THIS_QUEST_POP_UP",
-					export = true,
-					text = {
-						en = "Reaching Level 30 will make this quest pop up.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "达到 30 级时就会弹出此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Reaching Level 30 will make this quest pop up.",
 				["timeline"] = { ADDED_10_1_5 },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {

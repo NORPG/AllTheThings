@@ -28,46 +28,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				pet(3272),	-- Pricklefury Hare (PET!)
 				pet(3280, {	-- Shyfly (PET!)
-					["description"] = createLocalizationString({
-						readable = "You won't be able to see these pets until you've accepted the quest |cffffff00A Friend for Lubbins|r. For some reason, these are tradeable.",
-						constant = "YOU_WON_T_BE_ABLE_TO_SEE_THESE_PETS_UNTIL_YOU",
-						export = true,
-						text = {
-							en = "You won't be able to see these pets until you've accepted the quest |cffffff00A Friend for Lubbins|r. For some reason, these are tradeable.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在接受任务|cffffff00拉宾的朋友|r之前，你将无法看到这些宠物。出于某种原因，它们是可以交易的。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You won't be able to see these pets until you've accepted the quest |cffffff00A Friend for Lubbins|r. For some reason, these are tradeable.",
 					["coord"] = { 40.8, 81.2, THE_WAKING_SHORES },
 				}),
 				pet(3282),	-- Swoglet (PET!)
 				pet(3318, {	-- Thunderfoot Calf (PET!)
-					["description"] = createLocalizationString({
-						readable = "Not very common, often grouped with other NPCs.",
-						constant = "NOT_VERY_COMMON_OFTEN_GROUPED_WITH_OTHER_NPCS",
-						export = true,
-						text = {
-							en = "Not very common, often grouped with other NPCs.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "不太常见，常与其他 NPC 聚集在一起。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Not very common, often grouped with other NPCs.",
 					["coord"] = { 45.8, 35.2, THE_WAKING_SHORES },
 				}),
 				pet(3301),	-- Wild Duckling (PET!)

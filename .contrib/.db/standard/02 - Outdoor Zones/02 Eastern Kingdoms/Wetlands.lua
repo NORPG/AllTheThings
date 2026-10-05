@@ -874,24 +874,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79945, {	-- Orders from the Grand Crusader
-					["description"] = createLocalizationString({
-						readable = "Getting to this location is a real pain. From the Wetlands, swim along the coast around Dun Morogh until you reach the dock.",
-						constant = "GETTING_TO_THIS_LOCATION_IS_A_REAL_PAIN_FROM",
-						export = true,
-						text = {
-							en = "Getting to this location is a real pain. From the Wetlands, swim along the coast around Dun Morogh until you reach the dock.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "到达这个位置非常痛苦。从湿地出发，沿着丹莫罗周围的海岸游过去，直到抵达码头。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Getting to this location is a real pain. From the Wetlands, swim along the coast around Dun Morogh until you reach the dock.",
 					["sourceQuest"] = 79972,	-- Speak to Harold HQT
 					["providers"] = {
 						{ "i", 215468 },	-- Orders from the Grand Crusader
@@ -1002,24 +985,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(286, {	-- Return the Statuette
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Return the Statuette' (25805).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_15",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Return the Statuette' (25805).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“交还雕像”（25805）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Return the Statuette' (25805).",
 					-- #endif
 					["sourceQuest"] = 285,	-- Search More Hovels
 					["providers"] = {
@@ -1642,7 +1608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(299, {	-- Uncovering the Past
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.THE_QUEST_ITEMS_SPAWN_RANDOMLY_IN_THE_DIG_SITE",
+					["description"] = "The quest items spawn randomly in the dig site below.",
 					-- #endif
 					["qg"] = 1077,	-- Prospector Whelgar
 					["coord"] = { 38.8, 52.2, WETLANDS },
@@ -2650,24 +2616,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(8499, {	-- Tiny Crimson Whelpling (item) / Crimson Whelpling (PET!)
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is near the border with The Twilight Highlands. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
-						constant = "TEACHES_YOU_HOW_TO_SUMMON_THE_PET_CRIMSON",
-						export = true,
-						text = {
-							en = "Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is near the border with The Twilight Highlands. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "教你如何召唤宠物红龙雏龙。\n\n刷这只宠物最好的地点在与暮光高地交界处附近。那里有一场黑锋猎奴者与龙喉偷雏龙者之间的“战斗”。大约有四个会在这一点碰面互相厮杀。它们大约每 15 秒刷新一次并再次交战，所以你甚至不用移动。会剥皮会有所帮助，可以清掉黑锋猎奴者的大尸体，但并非必需。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is near the border with The Twilight Highlands. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",
 					["coord"] = { 67.3, 47.2, WETLANDS },
 					-- #endif
 					["crs"] = {

@@ -507,24 +507,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(5306, {	-- Snakestone of the Shadow Huntress
-					["description"] = createLocalizationString({
-						readable = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
-						constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A",
-						export = true,
-						text = {
-							en = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成此任务后，你将成为铸斧大师，并且无法再成为铸锤大师和铸剑大师。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
 					["altQuests"] = {
 						5307,	-- Corruption [Master Swordsmith]
 						5305,	-- Sweet Serenity [Master Hammersmith]
@@ -560,24 +543,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(5305, {	-- Sweet Serenity
-					["description"] = createLocalizationString({
-						readable = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
-						constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_2",
-						export = true,
-						text = {
-							en = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成此任务后，你将成为一名锤类锻造大师，并且无法再成为斧类锻造大师和剑类锻造大师。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
 					["altQuests"] = {
 						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
 						5307,	-- Corruption [Master Swordsmith]
@@ -950,24 +916,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(14742, {	-- Zap Farflinger <Unbalanced Engineer>
-					["description"] = createLocalizationString({
-						readable = "Goblin Engineers can speak to Zap to learn the recipe.",
-						constant = "GOBLIN_ENGINEERS_CAN_SPEAK_TO_ZAP_TO_LEARN_THE",
-						export = true,
-						text = {
-							en = "Goblin Engineers can speak to Zap to learn the recipe.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "地精工程师可以与扎普对话以学会该配方。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Goblin Engineers can speak to Zap to learn the recipe.",
 					["requireSkill"] = GOBLIN_ENGINEERING,
 					["coord"] = { 61.2, 37.6, MAP.WINTERSPRING },
 					["groups"] = {
@@ -1147,24 +1096,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(21383, {	-- Winterfall Spirit Beads
-					["description"] = createLocalizationString({
-						readable = "Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
-						constant = "DROPS_COMMMONLY_FROM_ALL_WINTERFALL_FURBOLGS",
-						export = true,
-						text = {
-							en = "Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "常见掉落于所有冬泉熊怪，可交给名为萨尔法的 NPC 以获取木喉要塞声望。每次上交需要 5 个冬泉灵魂珠串。萨尔法位于该区域最西端，木喉要塞入口附近。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
 					["crs"] = {
 						10738,	-- High Chief Winterfall
 						7440,	-- Winterfall Den Watcher

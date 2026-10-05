@@ -418,24 +418,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
 								},
-								["description"] = createLocalizationString({
-									readable = "Once you have both, simply equip them for this achievement.",
-									constant = "ONCE_YOU_HAVE_BOTH_SIMPLY_EQUIP_THEM_FOR_THIS",
-									export = true,
-									text = {
-										en = "Once you have both, simply equip them for this achievement.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "集齐两件后，只需将它们装备上即可获得此成就。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Once you have both, simply equip them for this achievement.",
 								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
 							})),
 							i(122196, {	-- Music Roll: The Burning Legion
@@ -443,30 +426,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							}),
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837, {	-- Warglaive of Azzinoth (LEGENDARY! MH)
 								-- #if AFTER 11.1.7
-								["description"] = createLocalizationString({
-									readable = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
-									constant = "FOLLOWING_PATCH_11_1_7_BLIZZARD_SEEMS_TO_HAVE",
-									export = true,
-									text = {
-										en = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在 11.1.7 补丁之后，暴雪似乎改动了某些东西，导致此物品无法再被收集，不过它对于相关成就仍然正常生效",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
 								["collectible"]=false,
 								-- #endif
 							})),
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838, {	-- Warglaive of Azzinoth (LEGENDARY! OH)
 								-- #if AFTER 11.1.7
-								["description"] = "~L.FOLLOWING_PATCH_11_1_7_BLIZZARD_SEEMS_TO_HAVE",
+								["description"] = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
 								["collectible"]=false,
 								-- #endif
 							})),

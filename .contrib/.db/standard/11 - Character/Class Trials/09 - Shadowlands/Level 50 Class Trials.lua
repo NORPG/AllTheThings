@@ -8,24 +8,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
 			-- Note: [As of October 13th, 2020 Level 110 trials became Level 48 trials]
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
-			["description"] = createLocalizationString({
-				readable = "These are gained by creating a Level 50 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
-				constant = "THESE_ARE_GAINED_BY_CREATING_A_LEVEL_50_TRIAL",
-				export = true,
-				text = {
-					en = "These are gained by creating a Level 50 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些是通过创建该职业的 50 级试玩角色获得的。除萨满、德鲁伊和猎人外，每个职业都有一个默认专精。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These are gained by creating a Level 50 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 50,
 			["timeline"] = { ADDED_9_0_1, REMOVED_10_0_0 },
 			["groups"] = {

@@ -144,49 +144,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["groups"] = {
 					i(89804, {	-- Cache of Mogu Riches (Original)
-						["description"] = createLocalizationString({
-							readable = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-							constant = "CONTAINS_28G_50S_THIS_ITEM_AND_OTHER",
-							export = true,
-							text = {
-								en = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "包含 28 金 50 银。\n\n此物品以及其他类似的安慰奖物品在 WoW 论坛上引发了大量骚动，直到 5.2.0 加入更新后的袋子才平息。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(89858, {	-- Cache of Mogu Riches (Original)
-						["description"] = "~L.CONTAINS_28G_50S_THIS_ITEM_AND_OTHER",
+						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(95618, {	-- Cache of Mogu Riches
-						["description"] = createLocalizationString({
-							readable = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Mogu'shan Vaults.",
-							constant = "THIS_ITEM_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO",
-							export = true,
-							text = {
-								en = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Mogu'shan Vaults.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在魔古山宝库的随机团队模式中，击败首领后未赢得战利品的玩家会获得此物品作为安慰奖。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Mogu'shan Vaults.",
 						["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },
 						["sym"] = {MOP_SYM_PETS},
 						["groups"] = {

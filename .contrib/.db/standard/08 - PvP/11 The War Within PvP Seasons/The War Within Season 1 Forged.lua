@@ -1063,24 +1063,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(REWARDS, {
 			i(225772, {	-- Artisan's Consortium Advertisement (QS!/QI!)
 				["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-				["description"] = createLocalizationString({
-					readable = "Rewarded within the first few wins in queued PvP Content.",
-					constant = "REWARDED_WITHIN_THE_FIRST_FEW_WINS_IN_QUEUED",
-					export = true,
-					text = {
-						en = "Rewarded within the first few wins in queued PvP Content.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在排队 PvP 内容中取得前几场胜利时获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rewarded within the first few wins in queued PvP Content.",
 			}),
 		}),
 	}),

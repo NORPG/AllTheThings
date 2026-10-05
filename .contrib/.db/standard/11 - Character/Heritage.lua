@@ -3,24 +3,7 @@
 -------------------------------------------
 root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {
 	race(BLOODELF, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }, ["races"] = { BLOODELF } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级血精灵|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED },
@@ -91,24 +74,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(DARKIRON, bubbleDown({ ["timeline"] = { ADDED_8_0_1 }, ["races"] = { DARKIRON } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_2",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要登录一个|cFFa335ee50 级角色|r，并已完成|cFFFFD700“备战”|r，8.0 战争战役。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		["groups"] = {
 			q(51483, {	-- Heritage o' the Dark Iron
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan
@@ -131,24 +97,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(DRAENEI, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { DRAENEI } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_3",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级德莱尼|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
 		["groups"] = {
 			q(78068, {	-- An Artificer's Appeal
 				["provider"] = { "o", 415303 },	-- Magically-Sealed Parcel
@@ -285,24 +234,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			------ Stay awhile and listen ------
 			hqt(82162, {	-- Stay awhile and Listen: Prophet Velen
 				["name"] = "Stay awhile and listen: Prophet Velen",
-				["description"] = createLocalizationString({
-					readable = "Dialogue becomes available after you collect a Memory Stone from Prophet Velen during 'A Burden Shared' (78082).",
-					constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_YOU_COLLECT_A",
-					export = true,
-					text = {
-						en = "Dialogue becomes available after you collect a Memory Stone from Prophet Velen during 'A Burden Shared' (78082).",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在“分担的重担”（78082）期间从先知维伦处收集一块记忆之石后，即可出现该对话。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Dialogue becomes available after you collect a Memory Stone from Prophet Velen during 'A Burden Shared' (78082).",
 				["sourceQuests"] = { 78082 },	-- A Burden Shared (Accepted)
 				["provider"] = { "n", 210670 },	-- Prophet Velen
 				["coord"] = { 53.8, 83.8, THE_EXODAR },
@@ -327,24 +259,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	}));
 	race(DWARF, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }, ["races"] = { DWARF } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_4",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级矮人|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_IRONFORGE, EXALTED },
@@ -370,24 +285,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 56.9, 47.9, 1361 },	-- OldIronforge
 			}),
 			q(53839, {	-- Aegrim's Study
-				["description"] = createLocalizationString({
-					readable = "The coords leads to the stair down",
-					constant = "THE_COORDS_LEADS_TO_THE_STAIR_DOWN",
-					export = true,
-					text = {
-						en = "The coords leads to the stair down",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该坐标指向向下的楼梯",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The coords leads to the stair down",
 				["sourceQuest"] = 53837,	-- Watch Yer Back
 				["provider"] = { "n", 145707 },	-- Advisor Belgrum
 				["coord"] = { 44.5, 49.4, IRONFORGE },
@@ -454,24 +352,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_5",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级土灵|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",
 		["groups"] = {
 			q(82771, {	-- Heritage of the Earthen
 				["provider"] = { "n", 224790 },	-- Dawn <The Awakened>
@@ -515,24 +396,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(GNOME, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { GNOME } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_6",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级侏儒|r 登录，且该角色已完成 |cFFFFD700缓期执行|r，即 8.2 战争战役。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },
@@ -617,24 +481,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(GOBLIN, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { GOBLIN } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_7",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级地精|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },
@@ -734,44 +581,10 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH }, ["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_8",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级哈拉尼尔|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
 		["groups"] = {
 			q(94464, {	-- Heritage of the Haranir
-				["description"] = createLocalizationString({
-					readable = "Pops up when you hit level 50.",
-					constant = "POPS_UP_WHEN_YOU_HIT_LEVEL_50",
-					export = true,
-					text = {
-						en = "Pops up when you hit level 50.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "达到 50 级时弹出。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Pops up when you hit level 50.",
 				["lockCriteria"] = { 1, "achID", 61942 },	-- Heritage of the Haranir
 				["groups"] = {
 					ach(61942),	-- Heritage of the Haranir
@@ -800,24 +613,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(HIGHMOUNTAIN_TAUREN, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { HIGHMOUNTAIN_TAUREN } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_9",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee45 级角色|r 登录，并完成 |cFFFFD700高山无阻|r，即至高岭故事线。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
 		["groups"] = {
 			q(49783, {	-- Heritage of Highmountain
 				["provider"] = { "n", 93826 },	-- Mayla Highmountain
@@ -840,24 +636,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(HUMAN, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["races"] = { HUMAN } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_10",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级人类|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_STORMWIND, EXALTED },
@@ -998,24 +777,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(KULTIRAN, bubbleDown({ ["timeline"] = { ADDED_8_1_5 }, ["races"] = { KULTIRAN } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_11",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级角色|r 登录，并已完成 |cFFFFD700团结一致|r（库尔提拉斯战役）和 |cFFFFD700复仇之潮|r（8.1.5 战争战役）。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		["groups"] = {
 			q(53722, {	-- Heritage of the Kul Tiran
 				["provider"] = { "n", 150941 },	-- Katherine Proudmoore
@@ -1042,24 +804,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(LIGHTFORGED, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { LIGHTFORGED } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_12",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要登录一个|cFFa335ee45 级角色|r，并已完成|cFFFFD700“你已准备就绪！”|r，阿古斯战役。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 		["groups"] = {
 			q(49782, {	-- Heritage of the Lightforged
 				["provider"] = { "n", 130993 },	-- Captain Fareeya
@@ -1082,7 +827,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(MAGHAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 }, ["races"] = { MAGHAR } }, {
-		["description"] = "~L.TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_2",
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		["groups"] = {
 			q(51484, {	-- Heritage of the Mag'har
 				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
@@ -1121,24 +866,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(MECHAGNOME, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { MECHAGNOME } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_13",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级角色|r 登录，并已完成 |cFFFFD700麦卡贡的威胁|r（麦卡贡故事线）。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
 		["groups"] = {
 			q(58436, {	-- Heritage of the Mechagnome
 				["provider"] = { "n", 158145 },	-- Prince Erazmin
@@ -1160,24 +888,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(NIGHTELF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { NIGHTELF } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Night Elf|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_14",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Night Elf|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级暗夜精灵|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Night Elf|r.",
 		["groups"] = {
 			q(75890, {	-- The Clarion Call
 				["provider"] = { "o", 405958 },	-- Sealed Kaldorei Scroll
@@ -1261,24 +972,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	}));
 	race(NIGHTBORNE, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { NIGHTBORNE } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_15",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee45 级角色|r 登录，并已完成 |cFFFFD700起义|r（7.2 苏拉玛战役）。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
 		["groups"] = {
 			q(49784, {	-- Heritage of the Nightborne
 				["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
@@ -1301,48 +995,14 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(ORC, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["races"] = { ORC } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_16",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级兽人|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },
 			-- #endif
 		}, {
 			q(73703, {	-- A Summon to Orgrimmar
-				["description"] = createLocalizationString({
-					readable = "Auto-accepted in Orgrimmar once criteria is met.",
-					constant = "AUTO_ACCEPTED_IN_ORGRIMMAR_ONCE_CRITERIA_IS_MET",
-					export = true,
-					text = {
-						en = "Auto-accepted in Orgrimmar once criteria is met.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "满足条件后在奥格瑞玛自动接受。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Auto-accepted in Orgrimmar once criteria is met.",
 				["maps"] = { ORGRIMMAR },
 				["isBreadcrumb"] = true,
 			}),
@@ -1493,51 +1153,17 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(PANDAREN_NEUTRAL, bubbleDown({ ["timeline"] = { ADDED_11_2_7 }, ["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Pandaren|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_17",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Pandaren|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级熊猫人|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Pandaren|r.",
 		["groups"] = {
 			n(QUESTS, {
 				q(84442, {	-- Invitation to the Spirit Festival [A]
-					["description"] = createLocalizationString({
-						readable = "Auto-accepted once criteria is met.",
-						constant = "AUTO_ACCEPTED_ONCE_CRITERIA_IS_MET",
-						export = true,
-						text = {
-							en = "Auto-accepted once criteria is met.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "满足条件后自动接受。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Auto-accepted once criteria is met.",
 					["qg"] = { 126332 },	-- Aysa Cloudsinger
 					["coord"] = { 52.2, 13.7, STORMWIND_CITY },
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(84444, {	-- Invitation to the Spirit Festival [H]
-					["description"] = "~L.AUTO_ACCEPTED_ONCE_CRITERIA_IS_MET",
+					["description"] = "Auto-accepted once criteria is met.",
 					["races"] = { PANDAREN_HORDE },
 				}),
 				q(84451, {	-- The Wanderers [A]
@@ -1583,24 +1209,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					},
 				}),
 				q(84455, {	-- Big Bertha
-					["description"] = createLocalizationString({
-						readable = "She is underground in the Virmen tunnels.",
-						constant = "SHE_IS_UNDERGROUND_IN_THE_VIRMEN_TUNNELS",
-						export = true,
-						text = {
-							en = "She is underground in the Virmen tunnels.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "她在地下兔妖隧道中。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "She is underground in the Virmen tunnels.",
 					["sourceQuest"] = 84453,	-- To Dai-Lo Farmstead
 					["qg"] = 229358,	-- Chon Po Stormstout
 					["coord"] = { 69.8, 67.5, THE_WANDERING_ISLE_HERITAGE },
@@ -1703,24 +1312,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				------ Stay awhile and listen ------
 				hqt(89227, {	-- Stay awhile and listen: Li Li Stormstout
 					["name"] = "Stay awhile and listen: Li Li Stormstout",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_8",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“数千年前……”（84466）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Thousands of Years Ago...' (84466).",
 					["sourceQuest"] = 84465,	-- Of Water and Blood
 					["qg"] = 229465,	-- Li Li Stormstout
 					["coord"] = { 21.9, 56.4, THE_WANDERING_ISLE_HERITAGE },
@@ -1743,24 +1335,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				------ Stay awhile and listen ------
 				hqt(89270, {	-- Stay awhile and listen: Aysa and Ji
 					["name"] = "Stay awhile and listen: Aysa and Ji",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'This Was Home' (84467).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_THIS",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'This Was Home' (84467).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“曾经的家园”（84467）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'This Was Home' (84467).",
 					["sourceQuest"] = 84466,	-- Thousands of Years Ago...
 					["qg"] = 231915,	-- Aysa Cloudsinger
 					["coord"] = { 48.4, 20.6, THE_WANDERING_ISLE_HERITAGE },
@@ -1787,72 +1362,21 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 							},
 						}),
 						i(258636, {	-- Honored Guest's Party Favor
-							["description"] = createLocalizationString({
-								readable = "Awarded to players completing the Heritage Questline more than once.",
-								constant = "AWARDED_TO_PLAYERS_COMPLETING_THE_HERITAGE",
-								export = true,
-								text = {
-									en = "Awarded to players completing the Heritage Questline more than once.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "授予多次完成传承任务线的玩家。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Awarded to players completing the Heritage Questline more than once.",
 						}),
 					},
 				}),
 			}),
 			n(SPECIAL, {
 				n(230150, {	-- Hot Air Balloon
-					["description"] = createLocalizationString({
-						readable = "You can return to the Capital City of your Faction by riding the Hot Air Balloon after you've had enough celebrating.",
-						constant = "YOU_CAN_RETURN_TO_THE_CAPITAL_CITY_OF_YOUR",
-						export = true,
-						text = {
-							en = "You can return to the Capital City of your Faction by riding the Hot Air Balloon after you've had enough celebrating.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "庆祝够了之后，你可以乘坐热气球返回你阵营的主城。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can return to the Capital City of your Faction by riding the Hot Air Balloon after you've had enough celebrating.",
 				}),
 			}),
 		},
 
 	})),
 	race(TAUREN, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { TAUREN } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_18",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级牛头人|r 登录，并已完成 |cFFFFD700暂缓处决|r（8.2 战争战役）。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },
@@ -1922,24 +1446,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(TROLL, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { TROLL } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_19",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级巨魔|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
 		["groups"] = {
 			q(77869),	-- Return to the Echo Isles
 			q(77871, {	-- De Old Loa
@@ -2065,24 +1572,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	}));
 	race(UNDEAD, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { UNDEAD } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_20",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "要解锁此任务线，你需要以 |cFFa335ee50 级亡灵|r 登录，且该角色亲自完成了 |cFFFFD700重返洛丹伦|r 任务线。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
 		["groups"] = {
 			q(76530, {	-- Unliving Summons (automatically pops up when you meet the requirements)
 				["sourceQuests"] = { 65788 },	-- A Walk with Ghosts
@@ -2210,7 +1700,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	}));
 	race(VOIDELF, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { VOIDELF } }, {
-		["description"] = "~L.TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_12",
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 		["maps"] = { TELOGRUS_RIFT },
 		["groups"] = {
 			q(49928, {	-- Heritage of the Void
@@ -2235,24 +1725,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(VULPERA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { VULPERA } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_21",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级角色|r 登录，并完成 |cFFFFD700沙中之秘|r，即沃顿故事线。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
 		["groups"] = {
 			q(58435, {	-- Heritage of the Vulpera
 				["provider"] = { "n", 124108 },	-- Hagashi <Innkeeper>
@@ -2276,24 +1749,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		},
 	})),
 	race(WORGEN, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { WORGEN } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_22",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级狼人|r 登录。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
 		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_GILNEAS, EXALTED },
@@ -2344,24 +1800,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 46.4, 36.9, DUSKWOOD },
 			}),
 			q(54984, {	-- Let Sleeping Wolves Lie
-				["description"] = createLocalizationString({
-					readable = "If you can't see Goldrinn, try relog",
-					constant = "IF_YOU_CAN_T_SEE_GOLDRINN_TRY_RELOG",
-					export = true,
-					text = {
-						en = "If you can't see Goldrinn, try relog",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你看不到戈德林，试试重新登录",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you can't see Goldrinn, try relog",
 				["sourceQuest"] = 54983,	-- Waking a Dreamer
 				["provider"] = { "n", 150106 },	-- Goldrinn
 				["coord"] = { 46.6, 36.6, DUSKWOOD },
@@ -2386,24 +1825,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(ZANDALARI, bubbleDown({ ["timeline"] = { ADDED_8_1_5 }, ["races"] = { ZANDALARI } }, {
-		["description"] = createLocalizationString({
-			readable = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-			constant = "TO_UNLOCK_THIS_QUESTLINE_YOU_NEED_TO_BE_LOGGED_23",
-			export = true,
-			text = {
-				en = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "解锁此任务线需要你以 |cFFa335ee50 级角色|r 登录，并同时完成 |cFFFFD700赞达拉万岁！|r，即赞达拉战役，以及 |cFFFFD700复仇之潮|r，即 8.1.5 战争战役。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		["groups"] = {
 			q(53721, {	-- Heritage of the Zandalari
 				["provider"] = { "n", 146335 },	-- Queen Talanji

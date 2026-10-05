@@ -211,24 +211,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 34,
 				}),
 				q(1385, {	-- Brutal Politics
-					["description"] = createLocalizationString({
-						readable = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
-						constant = "ONCE_YOU_COMPLETE_KHAN_HRATHA_FOR_THE_GELKIS",
-						export = true,
-						text = {
-							en = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你为吉尔吉斯部族完成“可汗赫拉萨”后，就可以接受并开始此任务。请记住，要把声望刷回友善相当耗时间。祝你好运！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 11.0, MAP.DESOLACE },
 					["races"] = ALLIANCE_ONLY,
@@ -366,24 +349,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 34,
 				}),
 				q(5421, {	-- Fish in a Bucket
-					["description"] = createLocalizationString({
-						readable = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
-						constant = "YOU_MUST_BE_ON_THE_QUEST_CATCH_OF_THE_DAY_TO",
-						export = true,
-						text = {
-							en = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须处于“今日渔获”任务中才能接受此任务。在你交付那个任务后，它也会变得无法获取。\n\n考虑：你每交付 5 个贝类可以赚到 55 银，并把鱼在拍卖行出售。你的时间是否更值钱由你自己决定。在人口密集的服务器上，这可能不是什么好主意。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
 					["cost"] = { { "i", 13545, 5 } },	-- Shellfish
 					["repeatable"] = true,
 					["qg"] = 11317,	-- Jinar'Zillen
@@ -831,24 +798,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(1382, {	-- Strange Alliance
-					["description"] = createLocalizationString({
-						readable = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
-						constant = "ONCE_YOU_COMPLETE_KHAN_HRATHA_FOR_THE_MAGRAM",
-						export = true,
-						text = {
-							en = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你为玛格拉姆部族完成“可汗赫拉萨”后，就可以接受并开始此任务。请记住，要把声望刷回友善相当耗时间。祝你好运！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 11.0, MAP.DESOLACE },
 					["races"] = ALLIANCE_ONLY,
@@ -1074,24 +1024,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(TREASURES, {
 				o(176582, {	-- Shellfish Trap
-					["description"] = createLocalizationString({
-						readable = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
-						constant = "YOU_CAN_INTERACT_WITH_SHELLFISH_TRAPS_ONLY",
-						export = true,
-						text = {
-							en = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有在进行任务 |cFFE50D12桶里的鱼|r（5421）期间，你才能与贝类陷阱互动。\n\n如果你想获得 |cFFFFFFFF大铁渔竿|r，|cFFFFFFFF不要|r 在拿到它之前交任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
 					["coords"] = {
 						{ 20.3, 71.3, MAP.DESOLACE },
 						{ 23.4, 77.1, MAP.DESOLACE },

@@ -105,24 +105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
 					["coord"] = { 25.6, 47.6, BURNING_STEPPES },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
-						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_THOUGH_HORDE",
-						export = true,
-						text = {
-							en = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限联盟，不过部落玩家可以在完成部落版任务“宠物对战训练师：东部王国”时与他们对战一次。\n\nDurin 的宠物为 17 级，三个宠物的类别依次为：\n1. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。\n2. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n3. 元素 - 使用水栖（强力）或小动物（耐打）宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 17,
 					["groups"] = {
@@ -305,24 +288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对人类、矮人、虚空精灵、库尔提拉斯人和黑铁矮人开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n人类、矮人和黑铁矮人的解法：\n2 张兽皮、4 捧泥巴和 2 个线轴。\n\n虚空精灵的解法：\n3 张兽皮、2 捧泥巴和 1 个线轴。\n\n库尔提拉斯人的解法：\n4 张兽皮、1 捧泥巴和 3 个线轴。\n\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -353,24 +319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_2",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对德莱尼、狼人、土水熊猫人、光铸德莱尼和联盟龙希尔开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n4 张兽皮\n1 捧泥巴\n3 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -394,24 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_3",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对侏儒和机械侏儒开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n1 张兽皮\n3 捧泥巴\n4 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -435,24 +367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_4",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对暗夜精灵开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n3 张兽皮\n2 捧泥巴\n1 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -476,24 +391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_5",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对兽人、亡灵和玛格汉兽人开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n2 张兽皮\n4 捧泥巴\n2 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -517,24 +415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_6",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对牛头人、火金熊猫人、至高岭牛头人和部落龙希尔开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n4 张兽皮\n1 捧泥巴\n3 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -558,24 +439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_7",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对地精和狐人开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n1 张兽皮\n3 捧泥巴\n4 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -599,24 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = createLocalizationString({
-						readable = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
-						constant = "THIS_IS_A_RACE_SPECIFIC_QUEST_WHERE_DIFFERENT_8",
-						export = true,
-						text = {
-							en = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个种族专属任务，不同种族会接到该任务的不同版本。此版本仅对巨魔、血精灵、夜之子精灵和赞达拉巨魔开放。完成此任务可能会为其他版本的任务提供完成进度，反之亦然。\n\n\n解法：\n\n3 张兽皮\n2 捧泥巴\n1 个线轴",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -814,24 +661,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28174, {	-- Burning Vengeance (A)
-					["description"] = createLocalizationString({
-						readable = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
-						constant = "PROVIDED_TO_PLAYERS_WHO_DID_NOT_COMPLETE_JOHN_J",
-						export = true,
-						text = {
-							en = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "提供给未完成赤脊山约翰·J·基沙恩任务线的玩家。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
@@ -847,24 +677,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28416, {	-- Burning Vengeance (A)
-					["description"] = createLocalizationString({
-						readable = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
-						constant = "PROVIDED_TO_PLAYERS_WHO_DID_COMPLETE_JOHN_J",
-						export = true,
-						text = {
-							en = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "提供给确实完成了赤脊山约翰·J·基沙恩任务线的玩家。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
@@ -1586,7 +1399,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7623, {	-- Lord Banehollow
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.DO_NOT_LEAVE_BURNING_STEPPES_WITHOUT_PURCHASING",
+					["description"] = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
 					-- #endif
 					-- #if BEFORE TBC
 					["sourceQuest"] = 7564,	-- Wildeyes
@@ -2483,24 +2296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(14437, {	-- Gorzeeki Wildeyes
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "The following items are only available to Warlocks that completed the original |cFFFFD700Dreadsteed of Xoroth|r quest chain.",
-						constant = "THE_FOLLOWING_ITEMS_ARE_ONLY_AVAILABLE_TO",
-						export = true,
-						text = {
-							en = "The following items are only available to Warlocks that completed the original |cFFFFD700Dreadsteed of Xoroth|r quest chain.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "以下物品只有完成了原版|cFFFFD700克索诺斯的恐惧战马|r任务链的术士才能获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The following items are only available to Warlocks that completed the original |cFFFFD700Dreadsteed of Xoroth|r quest chain.",
 					["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 					-- #endif
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
@@ -2567,24 +2363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
 					-- #if AFTER 10.0.5
-					["description"] = createLocalizationString({
-						readable = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
-						constant = "KILLING_THE_CREATURES_AT_ONE_OF_THE_COORDINATES",
-						export = true,
-						text = {
-							en = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击杀其中一个坐标处的生物会使其立即在另一个坐标处刷新，反之亦然。与另一个人一起刷，你可以在 2-3 分钟内获得所有配方。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
 						{ 34.8, 36.3, BURNING_STEPPES },
@@ -2600,7 +2379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
 					-- #if AFTER 10.0.5
-					["description"] = "~L.KILLING_THE_CREATURES_AT_ONE_OF_THE_COORDINATES",
+					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
 						{ 34.8, 36.3, BURNING_STEPPES },
@@ -2617,7 +2396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
 					-- #if AFTER 10.0.5
-					["description"] = "~L.KILLING_THE_CREATURES_AT_ONE_OF_THE_COORDINATES",
+					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
 						{ 34.8, 36.3, BURNING_STEPPES },
@@ -2634,7 +2413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					-- #if AFTER 10.0.5
-					["description"] = "~L.KILLING_THE_CREATURES_AT_ONE_OF_THE_COORDINATES",
+					["description"] = "Killing the creatures at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					-- #endif
 					["coords"] = {
 						{ 34.8, 36.3, BURNING_STEPPES },
@@ -2648,7 +2427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227908, {	-- Pattern: Masterwork Volcanic Leggings (RECIPE!)
-					["description"] = "~L.DROPS_FROM_FIREGUT_BRUTES_WHICH_ARE_FOUND",
+					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
 						{ 83.6, 40.0, BURNING_STEPPES },
 						{ 80.4, 45.8, BURNING_STEPPES },
@@ -2658,7 +2437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
-					["description"] = "~L.DROPS_FROM_FIREGUT_BRUTES_WHICH_ARE_FOUND",
+					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
 						{ 83.6, 40.0, BURNING_STEPPES },
 						{ 80.4, 45.8, BURNING_STEPPES },
@@ -2677,24 +2456,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 				o(206971, {	-- War Reaver Parts
-					["description"] = createLocalizationString({
-						readable = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
-						constant = "KILL_WAR_REAVERS_FOR_THESE_OBJECTS_TO_SPAWN",
-						export = true,
-						text = {
-							en = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击杀战争掠夺者以使这些物体刷新。从地上的物体中拾取你需要的部件。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
 					["coord"] = { 47.4, 37.8, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 7039,	-- War Reaver

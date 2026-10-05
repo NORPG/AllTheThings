@@ -111,24 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(10611, {	-- Dropping Some Eaves
-							["description"] = createLocalizationString({
-								readable = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",
-								constant = "DON_T_LET_ANY_OF_THE_5_SENTRIES_COMPLETE_THEIR",
-								export = true,
-								text = {
-									en = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "不要让 5 名哨兵中的任何一个完成声波警报的施法，在开打第一个首领前关闭 5 座信标，分别杀死全部 3 个恶魔后再拉塔丽克萨，然后第一次就猜中间谍。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",
 						}),
 					}),
 					cr(104215, e(1718, {	-- Patrol Captain Gerdo

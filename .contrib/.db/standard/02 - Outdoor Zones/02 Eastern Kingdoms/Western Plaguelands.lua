@@ -14,69 +14,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			-- #if AFTER 10.1.5
 			header(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
-				["description"] = createLocalizationString({
-					readable = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spetral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candylit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
-					constant = "WITH_10_1_5_BLIZZARD_READDED_THE_ORIGINAL_2",
-					export = true,
-					text = {
-						en = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spetral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candylit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "随着 10.1.5 版本，暴雪重新加入了原版通灵学院！\n\n谢谢你，暴雪！\n  -Crieve\n\n以下是入门方法：\n\n1. 在英雄难度的通灵学院中，从稀有刷新塞奥林·克拉斯蒂诺夫医生处获得“克拉斯蒂诺夫的恐怖之袋”。如果有人已经拥有该玩具并陪伴你，可以跳过这一步。\n\n2. 在院长密室击败黑暗院长加丁，并进入上层中央的房间。\n\n3. 在房间东南部的地面上找到一堆骨头，使用玩具“克拉斯蒂诺夫的恐怖之袋”。\n\n4. 此时伊娃·萨克霍夫应该已经刷新，但在你移除名为外科改造的玩具幻象/增益之前，无法与她互动。\n\n5. 接受伊娃·萨克霍夫的任务并拿到她的惰性灵魂精华。从骨堆中拾取伊娃的股骨。\n\n6. 走回楼上到观景室。房间西南角有两个书架。伊娃的日记可以在左侧书架背面的中层隔板上找到。\n\n7. 获取材料 3 个黑暗符文和 5 个亡灵精华，使用惰性灵魂精华。装备制作出的饰品“灵魂精华”。\n\n8. 通过在凯尔达隆（通灵学院外）完成目标来获取蜡烛：\n8.1 在安多哈尔市政厅内 43.35, 69.3 处拾取“安多哈尔地契”，并把它交给 70.5, 74.0 处的执法官马杜克。\n8.2 在 68.9, 78.8 处点着蜡烛的喷泉处拾取“喷泉水桶”，并把它交给 68.0, 74.8 处的约瑟夫·迪尔特。\n8.3 在达隆郡 35.7, 83.5 处的肉车拾取“被踩踏的玩偶”（东瘟疫之地！），返回凯尔达隆并把它交给 69.15, 78.7 处的萨米。\n8.4 在 55.0, 64.0 处旧科林十字路口酒馆内的一面墙上拾取“前方的路”（东瘟疫之地！），返回凯尔达隆并把它交给 65.8, 75.4 处的画家伦弗雷。\n8.5 在斯坦索姆国王广场喷泉后的一辆马车上拾取“未送达的烟草货物”，返回凯尔达隆并把它交给 63.4, 75.5 处的罗里。\n\n9. 在 69.7, 71.7 处使用伊娃的日记开始仪式，地点在凯尔达隆要塞内/开放世界的通灵学院。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spetral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candylit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
 				["groups"] = {
 					n(TREASURES, {
 						o(403532, {	-- Bucket of Fountain Water
-							["description"] = createLocalizationString({
-								readable = "Located by the water fountain in Caer Darrow.",
-								constant = "LOCATED_BY_THE_WATER_FOUNTAIN_IN_CAER_DARROW",
-								export = true,
-								text = {
-									en = "Located by the water fountain in Caer Darrow.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于凯尔达隆的喷泉旁。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Located by the water fountain in Caer Darrow.",
 							["sourceQuest"] = 76250,	-- Spectral Essence
 							["coord"] = { 68.8, 78.9, WESTERN_PLAGUELANDS },
 							["timeline"] = { ADDED_10_1_5 },
 							["groups"] = { i(206359) },	-- Caer Darrow Fountain Water
 						}),
 						o(403535, {	-- The Deed to Andorhal
-							["description"] = createLocalizationString({
-								readable = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
-								constant = "LOCATED_BY_THE_TOWN_HALL_IN_ANDORHAL_ON_A_WALL",
-								export = true,
-								text = {
-									en = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于安多哈尔的市政厅旁，响骨刷新点右侧的墙上。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
 							["sourceQuest"] = 76250,	-- Spectral Essence
 							["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
 							["timeline"] = { ADDED_10_1_5 },
@@ -87,7 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(11936, {	-- Artist Renfray
 							-- #IF AFTER 10.1.5
 							["provider"] = { "i", 13544 },	-- Spectral Essence
-							["description"] = "~L.ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
+							["description"] = "Only visible if you have the Spectral Essence equipped.",
 							-- #ENDIF
 							["coord"] = { 65.8, 75.4, WESTERN_PLAGUELANDS },
 							["groups"] = {
@@ -99,7 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						n(11316, {	-- Joseph Dirte
 							["provider"] = { "i" ,13544 },	-- Spectral Essence
-							["description"] = "~L.ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
+							["description"] = "Only visible if you have the Spectral Essence equipped.",
 							["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },
 							["groups"] = {
 								i(206354, {	-- Stinky Candle
@@ -111,7 +60,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(11286, {	-- Magistrate Marduke
 							-- #IF AFTER 10.1.5
 							["provider"] = { "i" ,13544 },	-- Spectral Essence
-							["description"] = "~L.ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
+							["description"] = "Only visible if you have the Spectral Essence equipped.",
 							-- #ENDIF
 							["coord"] = { 70.5, 74.0, WESTERN_PLAGUELANDS },
 							["groups"] = {
@@ -124,7 +73,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(11285, {	-- Rory
 							-- #IF AFTER 10.1.5
 							["provider"] = { "i" ,13544 },	-- Spectral Essence
-							["description"] = "~L.ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
+							["description"] = "Only visible if you have the Spectral Essence equipped.",
 							-- #ENDIF
 							["coord"] = { 63.4, 75.6, WESTERN_PLAGUELANDS },
 							["groups"] = {
@@ -137,7 +86,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(11283, {	-- Sammy
 							-- #IF AFTER 10.1.5
 							["provider"] = { "i" ,13544 },	-- Spectral Essence
-							["description"] = "~L.ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
+							["description"] = "Only visible if you have the Spectral Essence equipped.",
 							-- #ENDIF
 							["coord"] = { 69.1, 78.7, WESTERN_PLAGUELANDS },
 							["groups"] = {
@@ -175,24 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 7.0.3.21570
 			n(ARTIFACTS, {
 				n(111122, {	-- Large Vile Slime
-					["description"] = createLocalizationString({
-						readable = "Supposedly has a random spawn up to 30 hours, unpredictable due to phasing and server sharding, be prepared to wait.",
-						constant = "SUPPOSEDLY_HAS_A_RANDOM_SPAWN_UP_TO_30_HOURS",
-						export = true,
-						text = {
-							en = "Supposedly has a random spawn up to 30 hours, unpredictable due to phasing and server sharding, be prepared to wait.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "据说刷新时间随机，最长可达 30 小时；由于相位和服务器分线的影响而难以预测，请做好等待的准备。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Supposedly has a random spawn up to 30 hours, unpredictable due to phasing and server sharding, be prepared to wait.",
 					["sourceQuest"] = 43684,	-- Notes Read [Retribution Paladin Hidden Artifact Appearance]
 					["coord"] = { 69.0, 45.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_7_0_3 },
@@ -204,24 +136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(139624, {	-- Shard of Darkness
-					["description"] = createLocalizationString({
-						readable = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
-						constant = "IT_FIRST_TOOK_350_CASTS_IN_THE_RIVER_RNG_COULD",
-						export = true,
-						text = {
-							en = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "最初在河里钓了 350 次才钓到（随机因素，可能 10 次就出，也可能要 10,000 次）\n\n只要你的位置显示为“索多里尔河”，你可以在河边的任何地方钓鱼\n你的钓鱼技能无关紧要",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
 					["sourceQuests"] = { 43685 },	-- Phylactery Used
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { PALADIN },
@@ -1203,24 +1118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(83936, {	-- Dalton's Quest
-					["description"] = createLocalizationString({
-						readable = "Upon completing this quest, you will have a personal Squire.",
-						constant = "UPON_COMPLETING_THIS_QUEST_YOU_WILL_HAVE_A",
-						export = true,
-						text = {
-							en = "Upon completing this quest, you will have a personal Squire.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成此任务后，你将获得一名专属侍从。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Upon completing this quest, you will have a personal Squire.",
 					["sourceQuest"] = 83822,	-- The Fallen Knight
 					["qg"] = 227672,	-- Squire Cuthbert
 					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
@@ -2207,7 +2105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  12900 },	-- Annals of Darrowshire
 								{ "o", 176150 },	-- Musty Tome
 							},
-							["description"] = "~L.THE_MUSTY_TOME_YOU_ARE_LOOKING_FOR_HAS_A_FAINT",
+							["description"] = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
 							["coord"] = { 43.4, 69.7, WESTERN_PLAGUELANDS },
 						}),
 					},
@@ -2982,7 +2880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
-					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_RARE_MOB_OR_BOSS_IN",
+					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #endif
@@ -3162,7 +3060,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE 4.0.3
 			n(TREASURES, {
 				o(176213, {	-- Blood of Heroes
-					["description"] = "~L.THIS_ITEM_CAN_BE_FOUND_SPORATICALLY_ON_THE",
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
 					["coords"] = {
 						-- Hearthglen
 						{ 54.9, 27.1, WESTERN_PLAGUELANDS },
@@ -3309,7 +3207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(11278, {	-- Magnus Frostwake
 					-- #if BEFORE CATA
 					["cost"] = { { "i", 13544, 1 } },	-- Spectral Essence
-					["description"] = "~L.ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #endif
 					["coord"] = { 68.0, 77.6, WESTERN_PLAGUELANDS },
 					["groups"] = {
@@ -3345,7 +3243,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(13354, {	-- Ectoplasmic Resonator
-					["description"] = "~L.THESE_ONLY_DROP_FROM_GHOSTLY_MOBS_IN_WESTERN",
+					["description"] = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
@@ -3360,11 +3258,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
-					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_MOBS_IN_THE",
+					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
-					["description"] = "~L.CAN_DROP_FROM_WEAK_UNDEAD_MOBS_IN_THE",
+					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(20768, {	-- Oozing Bag
@@ -3376,7 +3274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(13357, {	-- Osseous Agitator
-					["description"] = "~L.THESE_ONLY_DROP_FROM_SKELETAL_MOBS_IN_WESTERN",
+					["description"] = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
@@ -3420,11 +3318,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(12811, {	-- Righteous Orb
-					["description"] = "~L.CAN_DROP_FROM_ANY_SCARLET_CRUSADE_MEMBER_IN",
+					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 					["cr"] = 12128,	-- Crimson Elite
 				}),
 				i(13356, {	-- Somatic Intensifier
-					["description"] = "~L.THESE_ONLY_DROP_FROM_ZOMBIES_IN_WESTERN",
+					["description"] = "These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),

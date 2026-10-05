@@ -861,24 +861,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			header(HEADERS.Achievement, 14788, {	-- Fractured Faerie Tales
 				q(62619, {	-- A Meandering Story
-					["description"] = createLocalizationString({
-						readable = "The NPC can be found patrolling between Tirna Vaal and the southern end of Glitterfall Basin or in the pass between Hibernal Hollow and the Heart of the Forest.",
-						constant = "THE_NPC_CAN_BE_FOUND_PATROLLING_BETWEEN_TIRNA",
-						export = true,
-						text = {
-							en = "The NPC can be found patrolling between Tirna Vaal and the southern end of Glitterfall Basin or in the pass between Hibernal Hollow and the Heart of the Forest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该 NPC 会在提尔纳瓦尔与闪光瀑布盆地南端之间巡逻，或出现在冬栖谷与森林之心之间的隘口。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The NPC can be found patrolling between Tirna Vaal and the southern end of Glitterfall Basin or in the pass between Hibernal Hollow and the Heart of the Forest.",
 					["provider"] = { "i", 183877 },	-- A Meandering Story
 					["coords"] = {
 						{ 51.0, 50.4, ARDENWEALD },

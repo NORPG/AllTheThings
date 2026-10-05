@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(MALDRAXXUS, {
 		n(TREASURES, {
 			o(353627, {		-- Battlefront Rations
-				["description"] = createLocalizationString({
-					readable = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-					constant = "TO_UNLOCK_IT_YOU_MUST_OBTAIN",
-					export = true,
-					text = {
-						en = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁它，你必须从切割者萨尔里克斯或附近区域的一名补给官怪物身上获得 |cFF0070dd前线口粮钥匙|r。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 				["crs"] = {
 					157037,	-- Grabber Ga'shock <Supply Officer>
 					157036,	-- Pilfer Bur'tok <Supply Officer>
@@ -35,24 +18,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Ration Key
 			}),
 			o(352086, {		-- Blackhound Cache
-				["description"] = createLocalizationString({
-					readable = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer work, as you get teleported out.\n\nIf the door is already open, a character from any covenant may walk in and loot the treasure.",
-					constant = "REQUIRES_CFF40BF40NECROLORD_COVENANT_R_USING",
-					export = true,
-					text = {
-						en = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer work, as you get teleported out.\n\nIf the door is already open, a character from any covenant may walk in and loot the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要|cFF40bf40通灵领主盟约|r成员使用维塞克图斯来开启。可交互的玩具、灵魂变形等不再有效，因为你会被传送出去。\n\n如果门已经打开，任何盟约的角色都可以走进去拾取宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer work, as you get teleported out.\n\nIf the door is already open, a character from any covenant may walk in and loot the treasure.",
 				["questID"] = 60368,
 				["isDaily"] = true,
 				["coord"] = { 44.0, 39.8, MALDRAXXUS },
@@ -69,24 +35,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(171337, {		-- Bloated Lootfly
-				["description"] = createLocalizationString({
-					readable = "This is a critter that flies around. Find it, kill it, and loot it to collect the treasure.",
-					constant = "THIS_IS_A_CRITTER_THAT_FLIES_AROUND_FIND_IT",
-					export = true,
-					text = {
-						en = "This is a critter that flies around. Find it, kill it, and loot it to collect the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一种到处飞的小动物。找到它、杀死它并拾取，即可收集该宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is a critter that flies around. Find it, kill it, and loot it to collect the treasure.",
 				["coords"] = {
 					{ 49.0, 24.6, MALDRAXXUS },
 					{ 49.8, 21.8, MALDRAXXUS },
@@ -117,48 +66,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = { { "i", 181558, 1 } },	-- Missing Ritual Pages
 			}),
 			o(352433, {		-- Cache of Eyes
-				["description"] = createLocalizationString({
-					readable = "Coordinates are to the entrance of Sightless Hold. The cache spawns in numerous locations within the cave. The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
-					constant = "COORDINATES_ARE_TO_THE_ENTRANCE_OF_SIGHTLESS",
-					export = true,
-					text = {
-						en = "Coordinates are to the entrance of Sightless Hold. The cache spawns in numerous locations within the cave. The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "坐标指向无眼堡垒的入口。宝藏在洞穴内的多个位置刷新。该宠物并非 100% 掉落，宝箱也不是始终存在，但开启宝箱没有冷却或锁定。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Coordinates are to the entrance of Sightless Hold. The cache spawns in numerous locations within the cave. The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
 				["coord"] = { 54.0, 12.3, MALDRAXXUS },
 				["groups"] = {
 					i(181171),	-- Luminous Webspinner (PET!)
 				},
 			}),
 			o(345456, {		-- Chest of Eyes
-				["description"] = createLocalizationString({
-					readable = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r. Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
-					constant = "THE_PATH_TO_THE_TREASURE_STARTS_AT_CFFFFFFFF51",
-					export = true,
-					text = {
-						en = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r. Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通往宝藏的路径起点在|cFFFFFFFF51.6, 13.7|r。沿着那座坍塌建筑的侧面向上攀爬，直到接近宝藏，然后右转并沿悬崖走上去。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r. Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
 				["questID"] = 59244,
 				["coord"] = { 48.3, 16.3, MALDRAXXUS },
 				["groups"] = {
@@ -166,24 +81,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(345455, {		-- Construct Supply Chest
-				["description"] = createLocalizationString({
-					readable = "To unlock it, you must obtain |cFF0070ddConstruct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-					constant = "TO_UNLOCK_IT_YOU_MUST_OBTAIN_CFF0070DDCONSTRUCT",
-					export = true,
-					text = {
-						en = "To unlock it, you must obtain |cFF0070ddConstruct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁它，你必须从切割者萨尔里克斯或附近区域的一名补给官怪物身上获得 |cFF0070dd构造体补给钥匙|r。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To unlock it, you must obtain |cFF0070ddConstruct Supply Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 				["crs"] = {
 					157037,	-- Grabber Ga'shock <Supply Officer>
 					157036,	-- Pilfer Bur'tok <Supply Officer>
@@ -201,24 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(364483, {		-- Empty Nightcap Cask
-				["description"] = createLocalizationString({
-					readable = "Requires |cFF40bf40Necrolord Covenant|r with Abomination Factory Rank 3. Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
-					constant = "REQUIRES_CFF40BF40NECROLORD_COVENANT_R_WITH",
-					export = true,
-					text = {
-						en = "Requires |cFF40bf40Necrolord Covenant|r with Abomination Factory Rank 3. Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要|cFF40bf40通灵领主盟约|r且憎恶工厂达到 3 级。坐标指向熔火之炉的入口。进入熔火之炉后，木桶位于 50.3, 17.4。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires |cFF40bf40Necrolord Covenant|r with Abomination Factory Rank 3. Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
 				["coords"] = {
 					{ 37.9, 76.3, MALDRAXXUS },
 					{ 50.3, 17.4, 1651 },	-- Molten Forge
@@ -228,24 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(341424, {		-- Forgotten Mementos
-				["description"] = createLocalizationString({
-					readable = "Unlock the gate to the treasure by clicking the chain at |cFFFFFFFF25.8, 53.9|r.\n\nThe treasure will respawn about 5 minutes after being looted by another player.",
-					constant = "UNLOCK_THE_GATE_TO_THE_TREASURE_BY_CLICKING_THE",
-					export = true,
-					text = {
-						en = "Unlock the gate to the treasure by clicking the chain at |cFFFFFFFF25.8, 53.9|r.\n\nThe treasure will respawn about 5 minutes after being looted by another player.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "点击 |cFFFFFFFF25.8, 53.9|r 处的锁链，即可打开通往宝藏的大门。\n\n宝藏被其他玩家拾取后约 5 分钟会重新刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Unlock the gate to the treasure by clicking the chain at |cFFFFFFFF25.8, 53.9|r.\n\nThe treasure will respawn about 5 minutes after being looted by another player.",
 				["provider"] = { "o", 341416 },	-- Vault Portcullis Chain
 				["coords"] = {
 					{ 22.5, 30.5, MALDRAXXUS },
@@ -261,24 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(355947, {		-- Glutharn's Stash
-				["description"] = createLocalizationString({
-					readable = "In a cave behind the slime waterfall.",
-					constant = "IN_A_CAVE_BEHIND_THE_SLIME_WATERFALL",
-					export = true,
-					text = {
-						en = "In a cave behind the slime waterfall.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在软泥瀑布后面的洞穴中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "In a cave behind the slime waterfall.",
 				["coord"] = { 72.1, 52.7, MALDRAXXUS },
 				["questID"] = 61484,
 			}),
@@ -297,24 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353626, {		-- Locked Toolbox
-				["description"] = createLocalizationString({
-					readable = "To unlock it, you must obtain |cFF0070ddLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-					constant = "TO_UNLOCK_IT_YOU_MUST_OBTAIN_CFF0070DDLOCKED",
-					export = true,
-					text = {
-						en = "To unlock it, you must obtain |cFF0070ddLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁它，你必须从切割者萨尔里克斯或附近区域的一名补给官怪物身上获得 |cFF0070dd上锁的工具箱钥匙|r。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To unlock it, you must obtain |cFF0070ddLocked Toolbox Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 				["crs"] = {
 					157037,	-- Grabber Ga'shock <Supply Officer>
 					157036,	-- Pilfer Bur'tok <Supply Officer>
@@ -326,46 +156,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = { { "i", 180276, 1 } },	-- Locked Toolbox Key
 			}),
 			o(351980, {		-- Misplaced Supplies
-				["description"] = createLocalizationString({
-					readable = "On top of the mushroom.",
-					constant = "ON_TOP_OF_THE_MUSHROOM",
-					export = true,
-					text = {
-						en = "On top of the mushroom.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在蘑菇顶部。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "On top of the mushroom.",
 				["questID"] = 60311,
 				["coord"] = { 62.4, 59.9, MALDRAXXUS },
 			}),
 			o(335655, {		-- Oonar's Arm
-				["description"] = createLocalizationString({
-					readable = "Requires 1xStrength of Blood, 1xPotion of Unusual Strength, 2xBattle Hardened(WQ:A Few Bumps Along the Way), 4xEdible Redcap",
-					constant = "REQUIRES_1XSTRENGTH_OF_BLOOD_1XPOTION_OF",
-					export = true,
-					text = {
-						en = "Requires 1xStrength of Blood, 1xPotion of Unusual Strength, 2xBattle Hardened(WQ:A Few Bumps Along the Way), 4xEdible Redcap",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 1x血之力量、1x异常力量药水、2x身经百战（世界任务：一路颠簸）、4x可食用红菇",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 1xStrength of Blood, 1xPotion of Unusual Strength, 2xBattle Hardened(WQ:A Few Bumps Along the Way), 4xEdible Redcap",
 				["coord"] = { 51.9, 48.2, MALDRAXXUS },
 				["cost"] = {
 					{ "i", 182163, 1 },	-- 1x Strength of Blood
@@ -385,47 +181,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(355886, {		-- Plaguefallen Chest
-				["description"] = createLocalizationString({
-					readable = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff. You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
-					constant = "TO_ACCESS_THIS_CHEST_YOU_NEED_THE",
-					export = true,
-					text = {
-						en = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff. You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要打开此宝箱，你需要 |cFFFFFFFF瘟疫降临|r 减益效果。你可以在瘟疫哨站 |cFFFFFFFF58.4, 73.3|r 处拾取一瓶瘟疫降临药水，或者站在绿色软泥中直到叠加 10 层 |cFFFFFFFF浓缩瘟疫|r（在叠层过程中存活需要大量自我治疗，而在远离洞穴处拾取药水会让你几乎没有时间赶到那里）。\n\n有了该减益效果后，你有 2 分钟时间赶到 |cFFFFFFFF62.3, 76.6|r 处的洞穴（斯坎纳的平台后面），并使用洞穴深处的管道传送到宝箱处。\n\n你必须仍然保留该减益效果才能拾取宝箱，所以被传送后不要切换窗口！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff. You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
 				["coord"] = { 57.7, 75.9, MALDRAXXUS },
 				["questID"] = 61474,
 				["groups"] = { i(183515) },	-- Iridescent Ooze (PET!)
 			}),
 			o(345458, {		-- Prize Bag
-				["description"] = createLocalizationString({
-					readable = "Spawns periodically around the arena.",
-					constant = "SPAWNS_PERIODICALLY_AROUND_THE_ARENA",
-					export = true,
-					text = {
-						en = "Spawns periodically around the arena.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在竞技场周围周期性刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns periodically around the arena.",
 				["coord"] = { 50.3, 47.1, MALDRAXXUS },
 				["groups"] = {
 					i(180854),	-- Competitor's Medallion
@@ -437,48 +199,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = { i(181558) },	-- Missing Ritual Pages
 			}),
 			o(355980, {		-- Ritualist's Cache
-				["description"] = createLocalizationString({
-					readable = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room. Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
-					constant = "LOOT_THE_CFFFFFFFFRITUAL_PAGES_R_FROM_THE_FRONT",
-					export = true,
-					text = {
-						en = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room. Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "从房间右前角拾取|cFFFFFFFF仪式书页|r。把它们带到右后角并使用|cFFFFFFFF缚仪式典|r，然后你就可以拾取宝箱了。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room. Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
 				["provider"] = { "o", 356366 },	-- Book of Binding Rituals
 				["coord"] = { 64.7, 24.7, MALDRAXXUS },
 				["questID"] = 61514,
 				["groups"] = { i(183517) },	-- Page 76 of the Necronom-i-nom (CI!)
 			}),
 			o(355037, {		-- Runebound Coffer
-				["description"] = createLocalizationString({
-					readable = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
-					constant = "TO_UNLOCK_IT_YOU_MUST_FIND_3_NEARBY",
-					export = true,
-					text = {
-						en = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁它，你必须找到附近 3 个 |cFFFFFFFF构造体符文|r 并点击它们，以停用宝箱上对应的符文。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
 				["coords"] = {
 					{ 32.2, 37.1, MALDRAXXUS },
 					{ 34.9, 30.9, MALDRAXXUS },
@@ -523,24 +251,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(355038, {		-- Runebound Coffer
-				["description"] = createLocalizationString({
-					readable = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
-					constant = "TO_UNLOCK_IT_YOU_MUST_FIND_3_NEARBY_2",
-					export = true,
-					text = {
-						en = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁它，你必须找到附近 3 个 |cFFFFFFFF仪式符文|r 并点击它们，以停用宝箱上对应的符文。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Rituals|r and click them to deactivate the corresponding runes on the chest.",
 				["coords"] = {
 					{ 69.0, 27.6, MALDRAXXUS },
 					{ 69.6, 33.5, MALDRAXXUS },
@@ -578,24 +289,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(356535, {		-- Runespeaker's Trove
-				["description"] = createLocalizationString({
-					readable = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
-					constant = "YOU_NEED_CFFFFFFFFPHAETON_S_KEY_R_FROM",
-					export = true,
-					text = {
-						en = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你需要从|cFFFFFFFF37.8, 70.1|r处的符文使者法厄同那里获得|cFFFFFFFF法厄同的钥匙|r才能打开这个宝箱。 ",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
 				["crs"] = { 170563 },	-- Runespeaker Phaeton
 				["coord"] = { 31.7, 70.0, MALDRAXXUS },	-- Treasure
 				["questID"] = 61491,
@@ -682,24 +376,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			o(355872, {		-- Stolen Jar
-				["description"] = createLocalizationString({
-					readable = "There are two caves - the treasure is in the lower one.",
-					constant = "THERE_ARE_TWO_CAVES_THE_TREASURE_IS_IN_THE",
-					export = true,
-					text = {
-						en = "There are two caves - the treasure is in the lower one.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "有两个洞穴——宝藏在下方的那个里。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There are two caves - the treasure is in the lower one.",
 				["coord"] = { 65.6, 50.8, MALDRAXXUS },
 				["questID"] = 61451,
 				["groups"] = {
@@ -729,24 +406,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(355865, {		-- Vat of Conspicuous Slime
-				["description"] = createLocalizationString({
-					readable = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
-					constant = "PICK_UP_THE_CFFFFFFFFEMPTY_PLAGUE_BOTTLE_R_FROM",
-					export = true,
-					text = {
-						en = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "从大桶旁的桌子上拾取|cFFFFFFFF空瘟疫瓶|r。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
 				["coord"] = { 59.8, 79.0, MALDRAXXUS },
 				["questID"] = 61444,
 				["groups"] = {

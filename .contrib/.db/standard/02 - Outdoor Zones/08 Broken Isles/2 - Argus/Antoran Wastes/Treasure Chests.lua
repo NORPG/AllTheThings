@@ -8,24 +8,7 @@ root(ROOTS.Zones, {
 			m(ANTORAN_WASTES, {
 				n(TREASURES, {
 					o(277205, {	-- Ancient Legion War Cache
-						["description"] = createLocalizationString({
-							readable = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
-							constant = "YOU_WILL_NEED_CFFFFD700LIGHT_S_JUDGMENT_R_TO",
-							export = true,
-							text = {
-								en = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要|cFFFFD700圣光的审判|r才能进入洞穴。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 						["coord"] = { 65.9, 39.9, ANTORAN_WASTES },
 						["questID"] = 49018,
 						["groups"] = {
@@ -34,74 +17,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(277206, {	-- Fel-Bound Chest
-						["description"] = "~L.YOU_WILL_NEED_CFFFFD700LIGHT_S_JUDGMENT_R_TO",
+						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 						["coord"] = { 52.2, 27.2, ANTORAN_WASTES },
 						["questID"] = 49019,
 					}),
 					o(277204, {	-- Forgotten Legion Supplies
-						["description"] = createLocalizationString({
-							readable = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
-							constant = "YOU_WILL_NEED_CFFFFD700LIGHTFORGED_WARFRAME_R",
-							export = true,
-							text = {
-								en = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要 |cFFFFD700光铸战争机甲|r 才能进入洞穴。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
 						["coord"] = { 58.8, 59.2, ANTORAN_WASTES },
 						["questID"] = 49017,
 					}),
 					o(276425, {	-- Intact Fiend Bone
-						["description"] = createLocalizationString({
-							readable = "Near Vrax'thul, on the east side of a black pillar.",
-							constant = "NEAR_VRAX_THUL_ON_THE_EAST_SIDE_OF_A_BLACK",
-							export = true,
-							text = {
-								en = "Near Vrax'thul, on the east side of a black pillar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在弗拉克斯图尔附近，一根黑色柱子的东侧。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Near Vrax'thul, on the east side of a black pillar.",
 						["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
 						["coord"] = { 52.4, 35.3, ANTORAN_WASTES },
 						["groups"] = { i(152991) },	-- Fiend Bone
 					}),
 					o(276424, {	-- Intact Imp Bones
-						["description"] = createLocalizationString({
-							readable = "Can be found inside the imp cave.",
-							constant = "CAN_BE_FOUND_INSIDE_THE_IMP_CAVE",
-							export = true,
-							text = {
-								en = "Can be found inside the imp cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在小鬼洞穴内找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found inside the imp cave.",
 						["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
 						["coords"] = {
 							{ 65.6, 26.3, ANTORAN_WASTES },	-- Entrance
@@ -110,47 +42,13 @@ root(ROOTS.Zones, {
 						["groups"] = { i(152992) },	-- Imp Bone
 					}),
 					o(276426, {	-- Intact Ur'zul Bone
-						["description"] = createLocalizationString({
-							readable = "Next to the altar.",
-							constant = "NEXT_TO_THE_ALTAR",
-							export = true,
-							text = {
-								en = "Next to the altar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在祭坛旁边。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Next to the altar.",
 						["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
 						["coord"] = { 50.4, 56.1, ANTORAN_WASTES },
 						["groups"] = { i(152993) },	-- Ur'zul Bone
 					}),
 					o(277207, {	-- Legion Treasure Hoard
-						["description"] = createLocalizationString({
-							readable = "Located behind the fel waterfall.",
-							constant = "LOCATED_BEHIND_THE_FEL_WATERFALL",
-							export = true,
-							text = {
-								en = "Located behind the fel waterfall.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于邪能瀑布后面。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located behind the fel waterfall.",
 						["coord"] = { 49.2, 59.5, ANTORAN_WASTES },
 						["questID"] = 49020,
 						["groups"] = {
@@ -159,24 +57,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(277346, {	-- Missing Augari Chest
-						["description"] = createLocalizationString({
-							readable = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-							constant = "USE_CFFFFD700SHROUD_OF_ARCANE_ECHOES_R_TO_OPEN",
-							export = true,
-							text = {
-								en = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用|cFFFFD700奥术回响裹布|r打开宝箱。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 57.5, 63.5, ANTORAN_WASTES },
 						["questID"] = 49159,
 						["groups"] = { i(153285) },	-- Augari Wakener's Mantle

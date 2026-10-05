@@ -467,24 +467,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
-					["description"] = createLocalizationString({
-						readable = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
-						constant = "BUY_THE_STORMWIND_SEASONING_HERBS_FROM_FELICIA",
-						export = true,
-						text = {
-							en = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在暴风城 64.3, 60.5 处的费利西亚·冈普那里购买暴风城调味香草。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.8, 43.5, MAP.DUSKWOOD },
 					["cost"] = {
@@ -946,24 +929,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(771, {	-- Commander Felstrom
-					["description"] = createLocalizationString({
-						readable = "Spawns in the Dawning Wood Catacombs.",
-						constant = "SPAWNS_IN_THE_DAWNING_WOOD_CATACOMBS",
-						export = true,
-						text = {
-							en = "Spawns in the Dawning Wood Catacombs.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在曙光林墓穴中刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Spawns in the Dawning Wood Catacombs.",
 					["coord"] = { 18.0, 38.0, MAP.DUSKWOOD },
 					["groups"] = {
 						i(4465),	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
@@ -971,24 +938,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(507, {	-- Fenros
-					["description"] = createLocalizationString({
-						readable = "Patrols between the coordinates.",
-						constant = "PATROLS_BETWEEN_THE_COORDINATES",
-						export = true,
-						text = {
-							en = "Patrols between the coordinates.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在坐标之间巡逻。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Patrols between the coordinates.",
 					["coords"] = {
 						{ 59.8, 26.8, MAP.DUSKWOOD },
 						{ 63.8, 51.6, MAP.DUSKWOOD },
@@ -999,7 +950,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(503, {	-- Lord Malathrom
-					["description"] = "~L.SPAWNS_IN_THE_DAWNING_WOOD_CATACOMBS",
+					["description"] =
+						"Spawns in the Dawning Wood Catacombs.",
 					["coord"] = { 25.6, 30.2, MAP.DUSKWOOD },
 					["groups"] = {
 						i(4462),	-- Cloak of Rot
@@ -1007,24 +959,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(521, {	-- Lupos
-					["description"] = createLocalizationString({
-						readable = "Spawns randomly in the north-east area of the zone.",
-						constant = "SPAWNS_RANDOMLY_IN_THE_NORTH_EAST_AREA_OF_THE",
-						export = true,
-						text = {
-							en = "Spawns randomly in the north-east area of the zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在该区域的东北部随机刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Spawns randomly in the north-east area of the zone.",
 					["coords"] = {
 						{ 20.0, 25.4, MAP.DUSKWOOD },
 						{ 38.4, 26.2, MAP.DUSKWOOD },
@@ -1044,24 +980,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(534, {	-- Nefaru
-					["description"] = createLocalizationString({
-						readable = "Spawns randomly in the south and south-eastern part of the zone.",
-						constant = "SPAWNS_RANDOMLY_IN_THE_SOUTH_AND_SOUTH_EASTERN",
-						export = true,
-						text = {
-							en = "Spawns randomly in the south and south-eastern part of the zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在该区域南部和东南部随机刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns randomly in the south and south-eastern part of the zone.",
 					["coord"] = { 63.6, 82.4, MAP.DUSKWOOD },
 					["groups"] = {
 						i(4476),	-- Beastwalker Robe

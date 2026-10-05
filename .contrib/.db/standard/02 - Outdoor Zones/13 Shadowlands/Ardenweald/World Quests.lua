@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(WORLD_QUESTS, {
 			n(REWARDS, {
 				i(187858, {	-- Bunny Soul
-					["description"] = createLocalizationString({
-						readable = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
-						constant = "HAS_A_CHANCE_TO_BE_LISTED_AS_A_REWARD_FOR",
-						export = true,
-						text = {
-							en = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "有几率作为宠物对战世界任务的奖励，列给“法夜”盟约的玩家。\n\n切换到法夜盟约，并使用“/attwq”查看它是否已刷新！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 			}),
@@ -288,48 +271,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["crs"] = { 170080 },	-- Audience Member / Exposed Boggart
 				}),
 				n(170080, {	-- Exposed Boggart
-					["description"] = createLocalizationString({
-						readable = "THIS IS A BOGGART.",
-						constant = "THIS_IS_A_BOGGART",
-						export = true,
-						text = {
-							en = "THIS IS A BOGGART.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这就是博格特。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "THIS IS A BOGGART.",
 				}),
 			}),
 			q(60597),	-- Trouble at the Gormling Corral
 			q(60475, {	-- We'll Workshop It
 				["groups"] = {
 					ach(14672, {	-- A Bit of This, A Bit of That
-						["description"] = createLocalizationString({
-							readable = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
-							constant = "CAN_CURRENTLY_BE_COMPLETED_IN_ONE_APPEARANCE_OF",
-							export = true,
-							text = {
-								en = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "目前可以在世界任务的一次出现期间内完成：收集 10 份补给后，将小队转换为团队，然后与全部 6 名 NPC 对话。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
 						["groups"] = {
 							crit(49570, {	-- Faerie Pomander
 								["crs"] = { 158345 },	-- Lady of the Falls

@@ -29,24 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["lvl"] = 110,
 					["groups"] = {
 						i(141053, {	-- Technique: Glyph of Polymorphic Proportions (RECIPE!)
-							["description"] = createLocalizationString({
-								readable = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
-								constant = "THE_RARE_THAT_DROPS_THIS_GLYPH_IS_ONLY",
-								export = true,
-								text = {
-									en = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "掉落此雕文的稀有生物只在世界任务“魔法回廊：游荡瘟疫”期间出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
 							["cr"] = 111057,	-- The Rat King
 						}),
 					},

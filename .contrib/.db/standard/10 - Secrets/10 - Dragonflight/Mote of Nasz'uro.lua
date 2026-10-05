@@ -4,24 +4,7 @@
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 	header(HEADERS.Item, 206040, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Mote of Nasz'uro
-		["description"] = createLocalizationString({
-			readable = "You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",
-			constant = "YOU_NEED_TO_COLLECT_ALL_15_MOTES_TO_RECEIVE",
-			export = true,
-			text = {
-				en = "You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "你需要收集全部 15 个微粒才能获得这只宠物。需要开启任务追踪才能看到微粒的位置。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",
 		["displayID"] = 112636,
 		["groups"] = {
 			n(REWARDS, {

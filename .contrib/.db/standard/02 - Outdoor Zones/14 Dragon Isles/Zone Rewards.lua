@@ -50,24 +50,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),
 		i(215362, {	-- Cache of Storms
-			["description"] = createLocalizationString({
-				readable = "Rewarded from any 'Awakened' Zone Activity",
-				constant = "REWARDED_FROM_ANY_AWAKENED_ZONE_ACTIVITY",
-				export = true,
-				text = {
-					en = "Rewarded from any 'Awakened' Zone Activity",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由任意“觉醒”区域活动奖励",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Rewarded from any 'Awakened' Zone Activity",
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 			["sym"] = {
 				-- DF > Zone Rewards (Armors)

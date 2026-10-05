@@ -9,24 +9,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of October 13th, 2020 Level 110 trials became Level 48 trials]
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
 			-- Note: BETA 10.0.2 50 Trials became 60 Trials
-			["description"] = createLocalizationString({
-				readable = "These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
-				constant = "THESE_ARE_GAINED_BY_USING_A_LEVEL_70_BOOST_OF",
-				export = true,
-				text = {
-					en = "These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些可通过使用该职业的 70 级直升来获得。每个职业都有一个默认专精。萨满和德鲁伊有两个可选专精，两个都需要才能将每个类别补满至 100%。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
 			["lvl"] = 70,
 			["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 },
 			["groups"] = {

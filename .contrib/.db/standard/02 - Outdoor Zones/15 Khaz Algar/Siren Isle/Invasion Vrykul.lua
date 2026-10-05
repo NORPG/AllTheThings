@@ -5,28 +5,11 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_VRYKUL, {
-			["description"] = "~L.EVERY_WEEK_A_FACTION_INVADES_THE_ISLAND_THE",
+			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
 			["groups"] = {
 				petbattle(filter(BATTLE_PETS, {
 					pet(4724, {	-- Battleboar Piglet
-						["description"] = createLocalizationString({
-							readable = "Only spawns during Vrykul invasion week.",
-							constant = "ONLY_SPAWNS_DURING_VRYKUL_INVASION_WEEK",
-							export = true,
-							text = {
-								en = "Only spawns during Vrykul invasion week.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在维库人入侵周刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only spawns during Vrykul invasion week.",
 					}),
 				})),
 				n(QUESTS, {
@@ -118,24 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(ZONE_DROPS, {
 					i(233494, {	-- Muddy Snapdragon Treat (CI!)
-						["description"] = createLocalizationString({
-							readable = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Vrykul.",
-							constant = "YOU_MUST_HAVE_THE_PRISMATIC_SNAPDRAGON_MOUNT_3",
-							export = true,
-							text = {
-								en = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Vrykul.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你必须先拥有棱彩龙蜥坐骑，此物品才会掉落。\n\n可以从维库人身上拾取。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Vrykul.",
 						-- n: 232324 / n: 232323
 					}),
 				}),

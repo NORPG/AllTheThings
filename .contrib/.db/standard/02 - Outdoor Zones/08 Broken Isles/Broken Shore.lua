@@ -266,24 +266,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(46804, {	-- Fashion History and a Philosophy of Style
-							["description"] = createLocalizationString({
-								readable = "Available for Blacksmithing, Leatherworking, and Tailoring Professions.\n\nYou must turn in the Commendation before this quest becomes available.",
-								constant = "AVAILABLE_FOR_BLACKSMITHING_LEATHERWORKING_AND",
-								export = true,
-								text = {
-									en = "Available for Blacksmithing, Leatherworking, and Tailoring Professions.\n\nYou must turn in the Commendation before this quest becomes available.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "锻造、制皮和裁缝专业可用。\n\n你必须先上交嘉奖令，此任务才会可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Available for Blacksmithing, Leatherworking, and Tailoring Professions.\n\nYou must turn in the Commendation before this quest becomes available.",
 							["sourceQuest"] = 46774,	-- The Nether Disruptor
 							["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 							["coord"] = { 41.1, 59.3, BROKEN_SHORE },
@@ -293,24 +276,7 @@ root(ROOTS.Zones, {
 					}),
 					n(120751, {	-- Unstable Nether Portal
 						["questID"] = 47700,	-- triggers after killing your 50 elites for the day
-						["description"] = createLocalizationString({
-							readable = "Use a Nether Portal Disruptor to spawn a rare elite mob while the Nether Disruptor is up. You can summon and kill up to 50 rares this way per day.",
-							constant = "USE_A_NETHER_PORTAL_DISRUPTOR_TO_SPAWN_A_RARE",
-							export = true,
-							text = {
-								en = "Use a Nether Portal Disruptor to spawn a rare elite mob while the Nether Disruptor is up. You can summon and kill up to 50 rares this way per day.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在虚空干扰器激活期间使用虚空传送门干扰器来刷出一只稀有精英怪物。每天可通过这种方式召唤并击杀最多 50 只稀有生物。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use a Nether Portal Disruptor to spawn a rare elite mob while the Nether Disruptor is up. You can summon and kill up to 50 rares this way per day.",
 						["coords"] = {
 							{ 68.5, 26.0, BROKEN_SHORE },
 							{ 36.0, 23.5, BROKEN_SHORE },
@@ -404,24 +370,7 @@ root(ROOTS.Zones, {
 					["sourceQuest"] = 46935,	-- The Shadow of the Sentinax
 					["groups"] = {
 						n(RARES, {
-							["description"] = createLocalizationString({
-								readable = "Use an uncommon beacon and then empower the portal using a rare beacon to occasionally spawn a rare mob specific to the type of beacon you used.",
-								constant = "USE_AN_UNCOMMON_BEACON_AND_THEN_EMPOWER_THE",
-								export = true,
-								text = {
-									en = "Use an uncommon beacon and then empower the portal using a rare beacon to occasionally spawn a rare mob specific to the type of beacon you used.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "使用一个优秀品质的信标，然后用一个稀有品质的信标强化传送门，偶尔会刷出与你所用信标类型对应的稀有怪物。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use an uncommon beacon and then empower the portal using a rare beacon to occasionally spawn a rare mob specific to the type of beacon you used.",
 							["groups"] = {
 								n(COMMON_BOSS_DROPS, {
 									["crs"] = {
@@ -533,24 +482,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						n(ZONE_DROPS, {
-							["description"] = createLocalizationString({
-								readable = "While under the Sentinax, kill mobs to have them sometimes drop uncommon beacons. Once a portal is open, the mobs summoned can additionally very rarely drop rare quality beacons used to empower the portal.",
-								constant = "WHILE_UNDER_THE_SENTINAX_KILL_MOBS_TO_HAVE_THEM",
-								export = true,
-								text = {
-									en = "While under the Sentinax, kill mobs to have them sometimes drop uncommon beacons. Once a portal is open, the mobs summoned can additionally very rarely drop rare quality beacons used to empower the portal.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在森提纳克斯号之下时，击杀怪物有几率让它们掉落优秀品质的信标。一旦传送门打开，被召唤出的怪物还有极低几率掉落用于强化传送门的稀有品质信标。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "While under the Sentinax, kill mobs to have them sometimes drop uncommon beacons. Once a portal is open, the mobs summoned can additionally very rarely drop rare quality beacons used to empower the portal.",
 							["groups"] = {
 								i(146906, { ["_drop"] = { "spellID" }, }),	-- Sentinax Beacon of Carnage
 								i(146903, { ["_drop"] = { "spellID" }, }),	-- Sentinax Beacon of Domination
@@ -655,24 +587,7 @@ root(ROOTS.Zones, {
 						faction(FACTION_IMPUS, {	-- Impus
 							["creatureID"] = 120460,
 							["coord"] = { 33.9, 49.8, BROKEN_SHORE },
-							["description"] = createLocalizationString({
-								readable = "This Fisherfriend NPC is located at: |cFFFFFFFF33.9, 49.8|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-								constant = "THIS_FISHERFRIEND_NPC_IS_LOCATED_AT_CFFFFFFFF33",
-								export = true,
-								text = {
-									en = "This Fisherfriend NPC is located at: |cFFFFFFFF33.9, 49.8|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此渔友 NPC 位于：|cFFFFFFFF33.9, 49.8|r，死木码头。\n\n这些渔友 NPC 并不总会出现，同一时间只会有一个出现。你需要前往该区域、询问朋友或查看队伍查找器来确认他们是否出现。\n\n在为此渔友钓取物品时，务必靠得足够近以获得|cFFFFD700有蹊跷|r增益，否则你将无法获得可上交的物品，也无法召唤出首领。\n\n建议组队进行，以便最快达到挚友。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF33.9, 49.8|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 							["requireSkill"] = FISHING,
 							["groups"] = {
 								i(146963, {	-- Desecrated Seaweed
@@ -823,24 +738,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 					}),
 					q(47137, {	-- Champions of Legionfall
-						["description"] = createLocalizationString({
-							readable = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
-							constant = "IN_ADDITION_TO_THE_PREREQUISITE_QUESTS_LISTED",
-							export = true,
-							text = {
-								en = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "除了列出的前置任务外，你还必须完成本职业的职业大厅战役才能接到此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 						["sourceQuests"] = {
 							-- #IF AFTER 9.1.5
 							46734,	-- Assault on Broken Shore
@@ -1300,24 +1198,7 @@ root(ROOTS.Zones, {
 				}),
 				n(RARES, {
 					header(HEADERS.Achievement, 11841, {	-- Naxt Victim
-						["description"] = createLocalizationString({
-							readable = "Use the associated Portal-Stone to summon each of these rare elites.",
-							constant = "USE_THE_ASSOCIATED_PORTAL_STONE_TO_SUMMON_EACH",
-							export = true,
-							text = {
-								en = "Use the associated Portal-Stone to summon each of these rare elites.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用对应的传送门石来召唤这些稀有精英中的每一个。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use the associated Portal-Stone to summon each of these rare elites.",
 						["groups"] = {
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
@@ -1455,24 +1336,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.0, 51.3, BROKEN_SHORE },
 						["groups"] = {
 							i(142233, {	-- Netherlord's Accursed Wrathsteed (MOUNT!)
-								["description"] = createLocalizationString({
-									readable = "This mount is only available to warlocks who have completed |cFFFFD700The Wrathsteed of Xoroth|r quest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.",
-									constant = "THIS_MOUNT_IS_ONLY_AVAILABLE_TO_WARLOCKS_WHO",
-									export = true,
-									text = {
-										en = "This mount is only available to warlocks who have completed |cFFFFD700The Wrathsteed of Xoroth|r quest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "此坐骑只对完成了职业坐骑战役中|cFFFFD700索罗特的愤怒战马|r任务的术士开放。\n完成后，你可以击杀赫尔努拉斯领主，有 100% 的几率获得该坐骑外观。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "This mount is only available to warlocks who have completed |cFFFFD700The Wrathsteed of Xoroth|r quest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.",
 								["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
 								["classes"] = { WARLOCK },
 							}),
@@ -1520,24 +1384,7 @@ root(ROOTS.Zones, {
 				}),
 				n(VENDORS, {
 					n(118403, {	-- Syaith <Loaner Demon>
-						["description"] = createLocalizationString({
-							readable = "/kiss her during the Where There is a Whip... WQ.",
-							constant = "KISS_HER_DURING_THE_WHERE_THERE_IS_A_WHIP_WQ",
-							export = true,
-							text = {
-								en = "/kiss her during the Where There is a Whip... WQ.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在“哪里有鞭子……”世界任务期间对她使用 /kiss。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "/kiss her during the Where There is a Whip... WQ.",
 						["coord"] = { 49.0, 55.8, BROKEN_SHORE },
 						["groups"] = {
 							i(147120, {	-- Technique: Grimoire of the Shadow Succubus (RECIPE!)
@@ -1734,24 +1581,7 @@ root(ROOTS.Zones, {
 									["cost"] = { { "c", 1226, 2500 } },	-- 2,500x Nethershard
 								}),
 								i(147775, {	-- Nether Portal Disruptor
-									["description"] = createLocalizationString({
-										readable = "Can be used to summon rare elite mobs from Unstable Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
-										constant = "CAN_BE_USED_TO_SUMMON_RARE_ELITE_MOBS_FROM",
-										export = true,
-										text = {
-											en = "Can be used to summon rare elite mobs from Unstable Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "当虚空干扰器激活时，可用它从不稳定的虚空传送门中召唤稀有精英怪物。每天只能击杀 50 个精英。使用后消耗。\n\n可在拍卖行买卖。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Can be used to summon rare elite mobs from Unstable Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
 									["cost"] = { { "c", 1226, 250 } },	-- 250x Nethershard
 								}),
 								i(146659, {	-- Nethershard Essence

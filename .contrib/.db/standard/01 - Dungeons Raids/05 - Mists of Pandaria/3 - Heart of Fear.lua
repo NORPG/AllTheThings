@@ -563,24 +563,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			-- #if NOT ANYCLASSIC
 			d(DIFFICULTY.LEGACY_RAID.FINDER, {
-				["description"] = createLocalizationString({
-					readable = "Loot from this LFR is NOT tradeable to others in group.",
-					constant = "LOOT_FROM_THIS_LFR_IS_NOT_TRADEABLE_TO_OTHERS",
-					export = true,
-					text = {
-						en = "Loot from this LFR is NOT tradeable to others in group.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该随机团队副本的战利品无法交易给队伍中的其他玩家。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				-- #if AFTER 6.0.1
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
@@ -588,32 +571,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["groups"] = {
 					i(89807, {	-- Amber Encased Treasure Pouch (Original)
-						["description"] = "~L.CONTAINS_28G_50S_THIS_ITEM_AND_OTHER",
+						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(89856, {	-- Amber Encased Treasure Pouch (Original)
-						["description"] = "~L.CONTAINS_28G_50S_THIS_ITEM_AND_OTHER",
+						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(95619, {	-- Amber Encased Treasure Pouch
-						["description"] = createLocalizationString({
-							readable = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Heart of Fear.",
-							constant = "THIS_ITEM_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO_2",
-							export = true,
-							text = {
-								en = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Heart of Fear.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在恐惧之心的随机团队模式中击败首领战后，未能获得战利品的玩家会获得该物品作为安慰奖。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Heart of Fear.",
 						["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },
 						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
 					}),
@@ -685,24 +651,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["groups"] = {
 								i(89271, {	-- Gauntlets of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
-									["description"] = createLocalizationString({
-										readable = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-										constant = "PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
-										export = true,
-										text = {
-											en = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "圣骑士全收集玩家会想把它交给商人，因为其中一件可以在任意专精下获得。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 									-- #endif
 								}),
 								i(89272),	-- Gauntlets of the Shadowy Protector
@@ -721,7 +670,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["groups"] = {
 								i(89268, {	-- Leggings of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
-									["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 									-- #endif
 								}),
 								i(89269),	-- Leggings of the Shadowy Protector
@@ -740,7 +689,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["groups"] = {
 								i(89265, {	-- Chest of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
-									["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 									-- #endif
 								}),
 								i(89266),	-- Chest of the Shadowy Protector
@@ -888,7 +837,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["groups"] = {
 							i(89240, {	-- Gauntlets of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89241),	-- Gauntlets of the Shadowy Protector
@@ -907,7 +856,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["groups"] = {
 							i(89243, {	-- Leggings of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89244),	-- Leggings of the Shadowy Protector
@@ -926,7 +875,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["groups"] = {
 							i(89237, {	-- Chest of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89238),	-- Chest of the Shadowy Protector
@@ -1011,7 +960,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							ach(6728),	-- Heroic: Wind Lord Mel'jarak
 							i(89256, {	-- Gauntlets of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89257),	-- Gauntlets of the Shadowy Protector
@@ -1031,7 +980,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							ach(6729),	-- Heroic: Amber-Shaper Un'sok
 							i(89253, {	-- Leggings of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89254),	-- Leggings of the Shadowy Protector
@@ -1064,7 +1013,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							ach(6677),	-- Heroic: Grand Empress Shek'zeer Guild Run
 							i(89250, {	-- Chest of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89251),	-- Chest of the Shadowy Protector

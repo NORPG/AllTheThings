@@ -7,24 +7,7 @@ local MARK_OF_THE_WORLD_TREE = 416;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_MOLTEN_FRONT, m(THE_MOLTEN_FRONT, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
 		["provider"] = { "o", 208900 },	-- Portal to the Firelands
-		["description"] = createLocalizationString({
-			readable = "The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",
-			constant = "THE_MOLTEN_FRONT_IS_A_VOLCANIC_DAILY_QUEST_HUB",
-			export = true,
-			text = {
-				en = "The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "熔火前线是 4.2 补丁中在火焰之地开放前加入的火山主题日常任务枢纽。可以通过海加尔山的火焰之地传送门进入。随着玩家完成更多日常任务，会出现相位变化，展示海加尔复仇者对抗火元素和炎魔之王的爪牙所取得的进展。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",
 		["coord"] = { 27.5, 56.3, MOUNT_HYJAL },
 		["icon"] = 514278,	-- Achievement_zone_firelands
 		["lvl"] = lvlsquish(85, 85, 32),
@@ -55,24 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
 						crit(17824, {	-- Angry Little Squirrel
-							["description"] = createLocalizationString({
-								readable = "Bring a fire elemental to the green patches with squirrels in the trees. Once they start throwing acorns, you should get credit.",
-								constant = "BRING_A_FIRE_ELEMENTAL_TO_THE_GREEN_PATCHES",
-								export = true,
-								text = {
-									en = "Bring a fire elemental to the green patches with squirrels in the trees. Once they start throwing acorns, you should get credit.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "把一只火元素带到树上有松鼠的绿色草地上。等它们开始扔橡子，你就会获得进度。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bring a fire elemental to the green patches with squirrels in the trees. Once they start throwing acorns, you should get credit.",
 							["coord"] = { 36.1, 58.8, MOUNT_HYJAL },
 							["crs"] = {
 								52195,	-- Angry Little Squirrel
@@ -80,24 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 						}),
 						crit(17825, {	-- Hyjal Bear Cub
-							["description"] = createLocalizationString({
-								readable = "Instead of throwing the cub to the trampoline, throw it at a sleeping corehound.",
-								constant = "INSTEAD_OF_THROWING_THE_CUB_TO_THE_TRAMPOLINE",
-								export = true,
-								text = {
-									en = "Instead of throwing the cub to the trampoline, throw it at a sleeping corehound.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "不要把幼崽扔向蹦床，而是把它扔向一只沉睡的熔火犬。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Instead of throwing the cub to the trampoline, throw it at a sleeping corehound.",
 							["coord"] = { 12.8, 34.0, MOUNT_HYJAL },
 							["crs"] = {
 								52688,	-- Hyjal Bear Cub
@@ -105,24 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 						}),
 						crit(17826, {	-- Alpine Songbird
-							["description"] = createLocalizationString({
-								readable = "Summon Millagazor and when she starts to fly away, allow the songbirds to kill her.",
-								constant = "SUMMON_MILLAGAZOR_AND_WHEN_SHE_STARTS_TO_FLY",
-								export = true,
-								text = {
-									en = "Summon Millagazor and when she starts to fly away, allow the songbirds to kill her.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "召唤米拉加佐尔，当她开始飞走时，让鸣鸟杀死她。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Summon Millagazor and when she starts to fly away, allow the songbirds to kill her.",
 							["coord"] = { 13.6, 44.4, MOUNT_HYJAL },
 							["crs"] = {
 								52595,	-- Alpine Songbird
@@ -130,24 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 							},
 						}),
 						crit(17827, {	-- Child of Tortolla
-							["description"] = createLocalizationString({
-								readable = "Instead of punting into the water, punt it at a fire elemental. (target its feet)",
-								constant = "INSTEAD_OF_PUNTING_INTO_THE_WATER_PUNT_IT_AT_A",
-								export = true,
-								text = {
-									en = "Instead of punting into the water, punt it at a fire elemental. (target its feet)",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "不要把它踢进水里，而是把它踢向一个火元素。（瞄准它的脚）",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Instead of punting into the water, punt it at a fire elemental. (target its feet)",
 							["coord"] = { 21.6, 58.8, MOUNT_HYJAL },
 							["crs"] = {
 								52177,	-- Child of Tortolla
@@ -157,24 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
-					["description"] = createLocalizationString({
-						readable = "You must choose 'Into the Fire' as the second stage of assault on Molten Front, and progress to the quests for Fireplume Ridge. Sometimes you will get the quest 'Fire in the Skies', which allows for progression on this achievement. Each time three random firelords will be up.",
-						constant = "YOU_MUST_CHOOSE_INTO_THE_FIRE_AS_THE_SECOND",
-						export = true,
-						text = {
-							en = "You must choose 'Into the Fire' as the second stage of assault on Molten Front, and progress to the quests for Fireplume Ridge. Sometimes you will get the quest 'Fire in the Skies', which allows for progression on this achievement. Each time three random firelords will be up.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须选择“深入火海”作为熔火前线的第二阶段突袭，并推进到火羽山的系列任务。有时你会接到“天空之火”任务，它可以推进此成就。每次都会有三个随机的火焰领主出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must choose 'Into the Fire' as the second stage of assault on Molten Front, and progress to the quests for Fireplume Ridge. Sometimes you will get the quest 'Fire in the Skies', which allows for progression on this achievement. Each time three random firelords will be up.",
 					["groups"] = {
 						crit(17857, {	-- Ragepyre
 							["cr"] = 54252,	-- Ragepyre <Firelord>
@@ -243,24 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["maps"] = { MOUNT_HYJAL },
 				}),
 				ach(5865, {	-- Have... Have We Met?
-					["description"] = createLocalizationString({
-						readable = "Progress is made during the quest 'The Protectors of Hyjal', where 4 druid NPCs are assigned as your protectors in Sethria's Roost for the day. One of the generic druids are often replaced by a named NPC. Only Alliance players can get Tharassian as a guard, and Mankrik will only spawn for Horde players.",
-						constant = "PROGRESS_IS_MADE_DURING_THE_QUEST_THE",
-						export = true,
-						text = {
-							en = "Progress is made during the quest 'The Protectors of Hyjal', where 4 druid NPCs are assigned as your protectors in Sethria's Roost for the day. One of the generic druids are often replaced by a named NPC. Only Alliance players can get Tharassian as a guard, and Mankrik will only spawn for Horde players.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "进度在任务“海加尔的保护者”期间推进，当天会有 4 名德鲁伊 NPC 被指派为你在塞西娅栖息地的守护者。其中一名普通德鲁伊经常会被一个有名有姓的 NPC 替换。只有联盟玩家能获得萨拉西安作为守卫，而曼克里克只会为部落玩家刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Progress is made during the quest 'The Protectors of Hyjal', where 4 druid NPCs are assigned as your protectors in Sethria's Roost for the day. One of the generic druids are often replaced by a named NPC. Only Alliance players can get Tharassian as a guard, and Mankrik will only spawn for Horde players.",
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
 						crit(17806, {	-- Linken
@@ -309,24 +190,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				ach(5872, {	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
-					["description"] = createLocalizationString({
-						readable = "Tip: The spiders on the hill will pull you up to them.",
-						constant = "TIP_THE_SPIDERS_ON_THE_HILL_WILL_PULL_YOU_UP_TO",
-						export = true,
-						text = {
-							en = "Tip: The spiders on the hill will pull you up to them.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "提示：山丘上的蜘蛛会把你拉到它们身边。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Tip: The spiders on the hill will pull you up to them.",
 				}),
 				ach(5859, {	-- Legacy of Leyara (Mount Hyjal)
 					i(69854),	-- Smoke-Stained Locket (quest item reward)
@@ -363,24 +227,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						29305,	-- Strike at the Heart (Stage 2: Into the Fire)
 					},
 					["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
-					["description"] = createLocalizationString({
-						readable = "Requires unlocking the presence of the Ancients on the Molten Front.\n\nProtip: You can skip the entire daily questline by keeping the quest 'Strike at the Heart' in your quest log. The next day you can simply speak to the ancient on Ragnaros' Reach again to engage the Lieutenant of Flame.",
-						constant = "REQUIRES_UNLOCKING_THE_PRESENCE_OF_THE_ANCIENTS",
-						export = true,
-						text = {
-							en = "Requires unlocking the presence of the Ancients on the Molten Front.\n\nProtip: You can skip the entire daily questline by keeping the quest 'Strike at the Heart' in your quest log. The next day you can simply speak to the ancient on Ragnaros' Reach again to engage the Lieutenant of Flame.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要解锁熔火前线的上古守护者。\n\n小提示：你可以把任务“直击要害”留在任务日志中，从而跳过整条日常任务线。第二天你只需再次与拉格纳罗斯之臂的上古守护者交谈，即可挑战烈焰中尉。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires unlocking the presence of the Ancients on the Molten Front.\n\nProtip: You can skip the entire daily questline by keeping the quest 'Strike at the Heart' in your quest log. The next day you can simply speak to the ancient on Ragnaros' Reach again to engage the Lieutenant of Flame.",
 					["groups"] = {
 						crit(17840, {	-- Ancient Charscale slain
 							["cr"] = 53055,	-- Ancient Charscale <Lieutenant of Flame>
@@ -507,24 +354,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["maps"] = { MOONGLADE },
 					["groups"] = {
 						i(69854, {	-- Smoke-Stained Locket
-							["description"] = createLocalizationString({
-								readable = "This item will be mailed to you after completing the achievement Legacy of Leyara.",
-								constant = "THIS_ITEM_WILL_BE_MAILED_TO_YOU_AFTER",
-								export = true,
-								text = {
-									en = "This item will be mailed to you after completing the achievement Legacy of Leyara.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成成就蕾亚拉的遗产后，此物品会邮寄给你。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item will be mailed to you after completing the achievement Legacy of Leyara.",
 						}),
 					},
 				}),
@@ -872,29 +702,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
-					["description"] = createLocalizationString({
-						readable = "Only available to players who have not quested through Mount Hyjal.",
-						constant = "ONLY_AVAILABLE_TO_PLAYERS_WHO_HAVE_NOT_QUESTED",
-						export = true,
-						text = {
-							en = "Only available to players who have not quested through Mount Hyjal.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅对尚未在海加尔山做过任务的玩家开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["isBreadcrumb"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				})),
 				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
-					["description"] = "~L.ONLY_AVAILABLE_TO_PLAYERS_WHO_HAVE_NOT_QUESTED",
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["isBreadcrumb"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				})),
@@ -1055,24 +868,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29272, {	-- Need... Water... Badly...
-					["description"] = createLocalizationString({
-						readable = "Anren Shadowseeker is found inside The Molten Flow, which requires you to pick 'Into the Fire' as the second stage of assault on the Molten Front.",
-						constant = "ANREN_SHADOWSEEKER_IS_FOUND_INSIDE_THE_MOLTEN",
-						export = true,
-						text = {
-							en = "Anren Shadowseeker is found inside The Molten Flow, which requires you to pick 'Into the Fire' as the second stage of assault on the Molten Front.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "安伦·觅影者位于熔火之流内，这需要你在进攻熔火前线时选择“深入火海”作为第二阶段。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Anren Shadowseeker is found inside The Molten Flow, which requires you to pick 'Into the Fire' as the second stage of assault on the Molten Front.",
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["qg"] = 53233,	-- Anren Shadowseeker
 					["coord"] = { 51.8, 31.0, THE_MOLTEN_FRONT },
@@ -1785,24 +1581,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29148, {	-- Wings Aflame
-					["description"] = createLocalizationString({
-						readable = "You have to quit your bird vehicle before you can use the Quill of the Bird-Queen to summon Millagazor.",
-						constant = "YOU_HAVE_TO_QUIT_YOUR_BIRD_VEHICLE_BEFORE_YOU",
-						export = true,
-						text = {
-							en = "You have to quit your bird vehicle before you can use the Quill of the Bird-Queen to summon Millagazor.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须先离开你的飞鸟载具，才能使用鸟后的羽毛笔召唤米拉加佐。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You have to quit your bird vehicle before you can use the Quill of the Bird-Queen to summon Millagazor.",
 					["sourceQuest"] = 29147,	-- Call the Flock
 					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -2017,24 +1796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					i(71631, {	-- Zen'Vorka's Cache
 						["cost"] = { { "c", MARK_OF_THE_WORLD_TREE, 30 } },
 						-- Danny Donkey: Rumours about greenies from this cache being of different ilvl and/or sourceID than ordinary world drops seems to be pre-release speculations only. No reports confirms this ever being the case from back when 4.2 released on retail, and likewise with Cata Classic.
-						["description"] = createLocalizationString({
-							readable = "Contains a random uncommon quality Cataclysm world drop. Also have a chance of containing the pet Searing Scorchling.",
-							constant = "CONTAINS_A_RANDOM_UNCOMMON_QUALITY_CATACLYSM",
-							export = true,
-							text = {
-								en = "Contains a random uncommon quality Cataclysm world drop. Also have a chance of containing the pet Searing Scorchling.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "内含一件随机的优秀品质大灾变世界掉落物品。还有几率内含灼热小鬼宠物。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains a random uncommon quality Cataclysm world drop. Also have a chance of containing the pet Searing Scorchling.",
 						["groups"] = {
 							i(34955),	-- Searing Scorchling (PET!)
 						},

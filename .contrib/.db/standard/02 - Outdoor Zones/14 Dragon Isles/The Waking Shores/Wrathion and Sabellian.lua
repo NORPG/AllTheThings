@@ -488,24 +488,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["isDaily"] = true,
 				}),
 				n(190985, {	-- Death's Shadow
-					["description"] = createLocalizationString({
-						readable = "Restore 20 Obsidian Keys to Sabellian.",
-						constant = "RESTORE_20_OBSIDIAN_KEYS_TO_SABELLIAN",
-						export = true,
-						text = {
-							en = "Restore 20 Obsidian Keys to Sabellian.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "向萨贝里安上交 20 把黑曜钥匙。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Restore 20 Obsidian Keys to Sabellian.",
 					["coord"] = { 31.8, 54.4, THE_WAKING_SHORES },
 					["questID"] = 73074,
 					["isDaily"] = true,
@@ -515,24 +498,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				n(187306, {	-- Morchok <Harbinger of Twilight>
-					["description"] = createLocalizationString({
-						readable = "Restore 10 Obsidian Keys to Igys the Believer.",
-						constant = "RESTORE_10_OBSIDIAN_KEYS_TO_IGYS_THE_BELIEVER",
-						export = true,
-						text = {
-							en = "Restore 10 Obsidian Keys to Igys the Believer.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "向信徒伊吉斯上交 10 把黑曜钥匙。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Restore 10 Obsidian Keys to Igys the Believer.",
 					["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
 					["questID"] = 74067,
 					["isDaily"] = true,
@@ -557,24 +523,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				n(189822, {	-- Shas'ith
-					["description"] = createLocalizationString({
-						readable = "Restore 20 Obsidian Keys to Wrathion. Underground",
-						constant = "RESTORE_20_OBSIDIAN_KEYS_TO_WRATHION",
-						export = true,
-						text = {
-							en = "Restore 20 Obsidian Keys to Wrathion. Underground",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "向拉希奥上交 20 把黑曜钥匙。地下",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Restore 20 Obsidian Keys to Wrathion. Underground",
 					["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
 					["questID"] = 74077,
 					["isDaily"] = true,
@@ -620,24 +569,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = { { "i", 202173, 1000 } },	-- 1000x Magmote
 						}),
 						i(199215, {	-- Worldbreaker Membership
-							["description"] = createLocalizationString({
-								readable = "Can only be bought if you looted the Worldbreaker Membership once from the Twilight Cache before.",
-								constant = "CAN_ONLY_BE_BOUGHT_IF_YOU_LOOTED_THE",
-								export = true,
-								text = {
-									en = "Can only be bought if you looted the Worldbreaker Membership once from the Twilight Cache before.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只有此前从暮光宝箱中拾取过一次灭世者会员卡才能购买。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twilight Cache before.",
 							["cost"] = { { "i", 202173, 20 } },	-- 20x Magmote
 							["groups"] = {
 								title(469, {	-- <Name> the Worldbreaker
@@ -659,24 +591,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							iensemble(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
-								["description"] = createLocalizationString({
-									readable = "To see this select All in filter",
-									constant = "TO_SEE_THIS_SELECT_ALL_IN_FILTER",
-									export = true,
-									text = {
-										en = "To see this select All in filter",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "要查看此项，请在筛选器中选择“全部”。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "To see this select All in filter",
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", AWAKENED_FIRE, 4 },
@@ -816,7 +731,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{		-- Acquaintance --
 						}, {	-- Cohort --
 							iensemble(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
-								["description"] = "~L.TO_SEE_THIS_SELECT_ALL_IN_FILTER",
+								["description"] = "To see this select All in filter",
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", AWAKENED_FIRE, 4 },
@@ -950,80 +865,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(ZONE_DROPS, {
 				i(193611, {	-- Ancient Horn Ring
-					["description"] = createLocalizationString({
-						readable = "Drops from mobs around the Obsidian Citadel.",
-						constant = "DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL",
-						export = true,
-						text = {
-							en = "Drops from mobs around the Obsidian Citadel.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由黑曜堡垒周围的怪物掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(199915, {	-- Ancient Obsidian Charm
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL",
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(201430, {	-- Burning Mallet
-					["description"] = createLocalizationString({
-						readable = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
-						constant = "DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
-						export = true,
-						text = {
-							en = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "从黑曜堡垒周围的怪物或贾拉丁宝箱中掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201043, {	-- Citadel Crusher's Belt
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201042, {	-- Citadel Crusher's Bracers
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201036, {	-- Citadel Crusher's Chestplate
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201041, {	-- Citadel Crusher's Cloak
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201038, {	-- Citadel Crusher's Footwraps
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201040, {	-- Citadel Crusher's Gauntlets
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201039, {	-- Citadel Crusher's Helm
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201037, {	-- Citadel Crusher's Legguards
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201035, {	-- Citadel Crusher's Pauldrons
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201433, {	-- Citadel Warden's Mace
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(200944, {	-- Djaradin's Trophy Mask
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL",
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(198071, {	-- Flamecarved Bone
 					["cr"] = 196336,	-- Qalashi Flameslinger
@@ -1035,77 +916,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["cr"] = 187813,	-- Qalashi Wallcrasher
 				}),
 				i(191251, {	-- Key Fragments
-					["description"] = createLocalizationString({
-						readable = "Drops from mobs around the Obsidian Citadel.\nYou must first pick a side (Wrathion or Sabellian) for the week in order for this item to drop.",
-						constant = "DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_YOU",
-						export = true,
-						text = {
-							en = "Drops from mobs around the Obsidian Citadel.\nYou must first pick a side (Wrathion or Sabellian) for the week in order for this item to drop.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由黑曜堡垒周围的怪物掉落。\n你必须先为本周选择一方（拉希奥或萨贝里安），此物品才会掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from mobs around the Obsidian Citadel.\nYou must first pick a side (Wrathion or Sabellian) for the week in order for this item to drop.",
 				}),
 				i(193201, {	-- Key Framing
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_YOU",
+					["description"] = "Drops from mobs around the Obsidian Citadel.\nYou must first pick a side (Wrathion or Sabellian) for the week in order for this item to drop.",
 				}),
 				i(193600, {	-- Lost Battlepack
 					-- ["cr"] = creature,	-- name
 				}),
 				i(200224, {	-- Mark of Sargha
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(202173, {	-- Magmote
-					["description"] = createLocalizationString({
-						readable = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
-						constant = "DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_2",
-						export = true,
-						text = {
-							en = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "获得“世界破坏者”头衔后，由黑曜堡垒周围的怪物掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
 				}),
 				i(201434, {	-- Obsidian Barrier
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201432, {	-- Obsidian Dragontooth
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201429, {	-- Obsidian Fist
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201431, {	-- Obsidian Tyrant's Mace
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(194481, {	-- Plans: Obsidian Seared Crusher (RECIPE!)
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(194476, {	-- Plans: Obsidian Seared Hexsword (RECIPE!)
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(201991, {	-- Sargh's Signet
-					["description"] = "~L.DROPS_FROM_MOBS_AROUND_THE_OBSIDIAN_CITADEL_OR",
+					["description"] = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(200857),	-- Talisman of Sargha (TOY!)
 				i(191211, {	-- Wurmling Bones
@@ -1117,48 +964,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				i(191255, {	-- Greater Obsidian Key
-					["description"] = createLocalizationString({
-						readable = "Leaving the area will delete this Item!",
-						constant = "LEAVING_THE_AREA_WILL_DELETE_THIS_ITEM",
-						export = true,
-						text = {
-							en = "Leaving the area will delete this Item!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "离开该区域将删除此物品！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Leaving the area will delete this Item!",
 					["cost"] = {
 						{ "i", 191251, 30 },	-- 30x Key Fragment
 						{ "i", 193201, 3 },	-- 3x Key Framing
 					},
 				}),
 				i(191264, {	-- Restored Obsidian Key
-					["description"] = createLocalizationString({
-						readable = "NOTE: Ensure you have the correct amount for the specific event you're looking to trigger, and hand them in all at once. Otherwise, sharding can cause your progress to disappear!",
-						constant = "NOTE_ENSURE_YOU_HAVE_THE_CORRECT_AMOUNT_FOR_THE",
-						export = true,
-						text = {
-							en = "NOTE: Ensure you have the correct amount for the specific event you're looking to trigger, and hand them in all at once. Otherwise, sharding can cause your progress to disappear!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "注意：请确保你持有触发特定事件所需的正确数量，并一次性全部上交。否则，分线可能导致你的进度消失！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "NOTE: Ensure you have the correct amount for the specific event you're looking to trigger, and hand them in all at once. Otherwise, sharding can cause your progress to disappear!",
 					["cost"] = {
 						{ "i", 191251, 30 },	-- 30x Key Fragment
 						{ "i", 193201, 3 },	-- 3x Key Framing

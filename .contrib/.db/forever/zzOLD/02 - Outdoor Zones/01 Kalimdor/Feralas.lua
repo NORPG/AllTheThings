@@ -68,24 +68,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				prof(FISHING, {
 					i(16967, {	-- Feralas Ahi
-						["description"] = createLocalizationString({
-							readable = "Best fished at the given coords.",
-							constant = "BEST_FISHED_AT_THE_GIVEN_COORDS",
-							export = true,
-							text = {
-								en = "Best fished at the given coords.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在给定坐标处钓鱼效果最佳。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Best fished at the given coords.",
 						["coords"] = {
 							{ 62.0, 52.0, MAP.FERALAS },	-- Verdantis River
 						},
@@ -468,24 +451,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Rage Scar Yeti Hide
 							["provider"] = { "i", 18947 },	-- Rage Scar Yeti Hide
-							["description"] = createLocalizationString({
-								readable = "Can also be looted via Skinning to speed up your progress.",
-								constant = "CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
-								export = true,
-								text = {
-									en = "Can also be looted via Skinning to speed up your progress.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "也可以通过剥皮拾取，以加快你的进度。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5297,	-- Elder Rage Scar
 								5299,	-- Ferocious Rage Scar
@@ -504,7 +470,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Rage Scar Yeti Hide
 							["provider"] = { "i", 18947 },	-- Rage Scar Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5297,	-- Elder Rage Scar
 								5299,	-- Ferocious Rage Scar
@@ -851,7 +817,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Thick Yeti Hide
 							["provider"] = { "i", 8973 },	-- Thick Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5346,	-- Bloodroar the Stalker
 								5295,	-- Enraged Feral Scar
@@ -872,7 +838,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Thick Yeti Hide
 							["provider"] = { "i", 8973 },	-- Thick Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5346,	-- Bloodroar the Stalker
 								5295,	-- Enraged Feral Scar
@@ -1375,24 +1341,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(11447, {	-- Mushgog
-					["description"] = createLocalizationString({
-						readable = "Spawns in the Dire Maul Arena.",
-						constant = "SPAWNS_IN_THE_DIRE_MAUL_ARENA",
-						export = true,
-						text = {
-							en = "Spawns in the Dire Maul Arena.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在厄运之槌竞技场刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns in the Dire Maul Arena.",
 				}),
 				n(5352, {	-- Old Grizzlegut
 					["coords"] = {
@@ -1415,7 +1364,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(11498, {	-- Skarr the Broken [CATA+] / Skarr the Unbreakable
-					["description"] = "~L.SPAWNS_IN_THE_DIRE_MAUL_ARENA",
+					["description"] = "Spawns in the Dire Maul Arena.",
 				}),
 				n(5356, {	-- Snarler
 					["coords"] = {
@@ -1428,7 +1377,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(11497, {	-- The Razza
-					["description"] = "~L.SPAWNS_IN_THE_DIRE_MAUL_ARENA",
+					["description"] = "Spawns in the Dire Maul Arena.",
 				}),
 			}),
 			n(TREASURES, {
@@ -1553,24 +1502,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(14637, {	-- Zorbin Fandazzle
-					["description"] = createLocalizationString({
-						readable = "Must complete quests |cFFFFD700Zapped Giants|r and |cFFFFD700Fuel For The Zapping|r before he will sell to you.",
-						constant = "MUST_COMPLETE_QUESTS_CFFFFD700ZAPPED_GIANTS_R",
-						export = true,
-						text = {
-							en = "Must complete quests |cFFFFD700Zapped Giants|r and |cFFFFD700Fuel For The Zapping|r before he will sell to you.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须完成|cFFFFD700电击巨人|r和|cFFFFD700为电击提供燃料|r任务，他才会向你出售物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Must complete quests |cFFFFD700Zapped Giants|r and |cFFFFD700Fuel For The Zapping|r before he will sell to you.",
 					["sourceQuests"] = {
 						7721,	-- Fuel for the Zapping
 						7003,	-- Zapped Giants
@@ -1593,24 +1526,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(8705, {	-- OOX-22/FE Distress Beacon
-					["description"] = createLocalizationString({
-						readable = "This item has a chance to drop from any creature in Feralas.",
-						constant = "THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY",
-						export = true,
-						text = {
-							en = "This item has a chance to drop from any creature in Feralas.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该物品有几率从菲拉斯的任何生物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item has a chance to drop from any creature in Feralas.",
 				}),
 			}),
 		},

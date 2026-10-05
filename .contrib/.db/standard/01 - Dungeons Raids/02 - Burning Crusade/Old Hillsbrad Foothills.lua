@@ -10,24 +10,7 @@ local THOMAS_YANCE_GROUPS = {
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
-		["description"] = createLocalizationString({
-			readable = "This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",
-			constant = "THIS_IS_AN_EVENT_TRIGGERED_DUNGEON_WITH_THE",
-			export = true,
-			text = {
-				en = "This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "这是一个由事件触发的地下城，步骤如下：\n\n1. 在地下城入口处与埃罗齐恩交谈，获得一包燃烧弹。\n\n2. 前往敦霍尔德城堡的拘留营，与每栋建筑中的木桶互动以纵火，并召唤出第一个首领德拉克中尉。\n\n3. 在城堡地下室找到萨尔，并在剩余的地下城流程中跟随他。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2367,	-- Old Hillsbrad Foothills
 		-- #endif
@@ -143,24 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(22539),	-- Formula: Enchant Shield - Intellect (RECIPE!)
 				}),
 				n(20377, {	-- Barkeep Kelly <Bartender>
-					["description"] = createLocalizationString({
-						readable = "Can be found inside Southshore tavern.",
-						constant = "CAN_BE_FOUND_INSIDE_SOUTHSHORE_TAVERN",
-						export = true,
-						text = {
-							en = "Can be found inside Southshore tavern.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可在南海镇酒馆内找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be found inside Southshore tavern.",
 					["groups"] = {
 						i(19222),	-- Cheap Beer
 						i(4600),	-- Cherry Grog
@@ -171,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				n(20378, {	-- Chef Jessen <Speciality Meat & Slop>
-					["description"] = "~L.CAN_BE_FOUND_INSIDE_SOUTHSHORE_TAVERN",
+					["description"] = "Can be found inside Southshore tavern.",
 					["groups"] = {
 						i(29412),	-- Jessen's Special Slop
 					},
@@ -191,24 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(28132, {	-- Don Carlos
-					["description"] = createLocalizationString({
-						readable = "This is a neutral Elite Creature that wanders the road.",
-						constant = "THIS_IS_A_NEUTRAL_ELITE_CREATURE_THAT_WANDERS",
-						export = true,
-						text = {
-							en = "This is a neutral Elite Creature that wanders the road.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个在路上游荡的中立精英生物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a neutral Elite Creature that wanders the road.",
 					["groups"] = {
 						i(38329),	-- Don Carlos' Hat
 					},
@@ -301,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
+				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = { { "i", 30635, 1 } },	-- Key of Time
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
@@ -322,7 +271,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(28132, {	-- Don Carlos
-						["description"] = "~L.THIS_IS_A_NEUTRAL_ELITE_CREATURE_THAT_WANDERS",
+						["description"] = "This is a neutral Elite Creature that wanders the road.",
 						["groups"] = {
 							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
 								["timeline"] = { ADDED_7_0_3 },

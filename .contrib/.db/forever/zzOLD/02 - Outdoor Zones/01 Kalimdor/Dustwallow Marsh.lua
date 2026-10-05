@@ -100,24 +100,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							},
 						}),
 						i(6801, {	-- Baroque Apron
-							["description"] = createLocalizationString({
-								readable = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
-								constant = "THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP",
-								export = true,
-								text = {
-									en = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品会被完全移除。为保险起见，请永远把它保存在小号的银行里。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 						}),
 					},
 				}),
@@ -194,24 +177,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(1271, {	-- Feast at the Blue Recluse
-					["description"] = createLocalizationString({
-						readable = "Don't forget to loot all the food and drinks off the tables.",
-						constant = "DON_T_FORGET_TO_LOOT_ALL_THE_FOOD_AND_DRINKS",
-						export = true,
-						text = {
-							en = "Don't forget to loot all the food and drinks off the tables.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "别忘了拾取桌子上所有的食物和饮料。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Don't forget to loot all the food and drinks off the tables.",
 					["sourceQuests"] = {
 						1258,	-- ... and Bugs
 						1222,	-- Stinky's Escape
@@ -911,7 +877,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(6624, {	-- Triage [A]
-					["description"] = "~L.NEEDS_A_MINIMUM_OF_225_SKILL_IN_FIRST_AID",
+					["description"] =
+						"Needs a minimum of 225 skill in First Aid.",
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 					["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 					["coord"] = { 67.7, 48.9, MAP.DUSTWALLOW_MARSH },
@@ -1100,24 +1067,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(12919, {	-- Nat Pagle
 					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
 					["coord"] = { 58.6, 60.1, MAP.DUSTWALLOW_MARSH },
-					["description"] = createLocalizationString({
-						readable = "He will only sell you the Mudskunk Lures once you have turned in Nat's Measuring Tape.",
-						constant = "HE_WILL_ONLY_SELL_YOU_THE_MUDSKUNK_LURES_ONCE",
-						export = true,
-						text = {
-							en = "He will only sell you the Mudskunk Lures once you have turned in Nat's Measuring Tape.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有在你上交了纳特的卷尺之后，他才会卖给你泥臭鱼饵。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "He will only sell you the Mudskunk Lures once you have turned in Nat's Measuring Tape.",
 					["groups"] = {
 						i(19974),	-- Mudskunk Lure
 					},

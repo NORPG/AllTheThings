@@ -302,24 +302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3512, {	-- In Eranikus' Own Words
-					["description"] = createLocalizationString({
-						readable = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
-						constant = "THIS_QUEST_CHAIN_SEEMS_TO_BE_AN_INCOMPLETE_ONE",
-						export = true,
-						text = {
-							en = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这个任务链似乎并不完整，因为没有后续任务。不过它仍然是一个有趣的任务链，因为大多数人都不知道它的存在。它实际上讲述了伊兰尼库斯并未真正死去，很可能是在为涉及伊兰尼库斯再次登场的安其拉开门任务链做铺垫。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
 					["qg"] = 5353,	-- Itharius
 					["coord"] = { 13.7, 71.7, MAP.SWAMP_OF_SORROWS },
@@ -354,24 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 6288 },	-- Atal'ai Tablet
 								{ "o", 37099 },	-- Atal'ai Tablet
 							},
-							["description"] = createLocalizationString({
-								readable = "Scattered around the inside and outside of the instance.",
-								constant = "SCATTERED_AROUND_THE_INSIDE_AND_OUTSIDE_OF_THE",
-								export = true,
-								text = {
-									en = "Scattered around the inside and outside of the instance.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "散布在副本内外。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Scattered around the inside and outside of the instance.",
 						}),
 						i(1490, {	-- Guardian Talisman
 							["timeline"] = { REMOVED_4_0_3 },
@@ -444,24 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3373, {	-- The Essence of Eranikus
-					["description"] = createLocalizationString({
-						readable = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
-						constant = "INTERACT_WITH_THE_ESSENCE_FONT_LOCATED_IN_THE",
-						export = true,
-						text = {
-							en = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击败伊兰尼库斯后，与房间后方角落的精华之泉互动，以交还此任务并拾取伊兰尼库斯的精华。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 					["providers"] = {
 						{ "i",  10454 },	-- Essence of Eranikus
 						{ "o", 148512 },	-- Essence Font
@@ -475,24 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3374, {	-- The Essence of Eranikus [Part 2]
-					["description"] = createLocalizationString({
-						readable = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
-						constant = "YOU_GET_THE_OATHSTONE_BY_TALKING_TO_ITHARIUS_AT",
-						export = true,
-						text = {
-							en = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以通过在悲伤沼泽西南部洞穴处与伊萨里奥斯交谈来获得誓约之石。你必须先拥有束缚精华。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
 					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["qg"] = 5353,	-- Itharius
 					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
@@ -682,24 +614,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(148832, {	-- Atal'ai Statue
-				["description"] = createLocalizationString({
-					readable = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
-					constant = "GO_TO_THE_PIT_OF_REFUSE_CLEAR_ALL_OF_THE_TRASH",
-					export = true,
-					text = {
-						en = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "前往废物之坑。\n\n在绕着圆形平台移动时清掉所有小怪。你会注意到有些向外凸出、俯瞰坑中央的阳台。基本上，全部清完后，队伍中的每个成员都应分散开来，各自负责一个带有阿塔莱神龛的阳台。神龛必须按特定顺序点击：\n\n    南（下）\n    北（上）\n    西南（左下）\n    东南（右下）\n    西北（左上）\n    东北（右上）\n\n一旦雕像按正确顺序被点击，它就会变绿。如果没有，尝试激活的人将会获得一个诅咒。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					q(3447, {	-- Secret of the Circle
@@ -729,24 +644,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(8580, {	-- Atal'alarion
-						["description"] = createLocalizationString({
-							readable = "Summoned by activating the Atal'ai Statues in the proper order.",
-							constant = "SUMMONED_BY_ACTIVATING_THE_ATAL_AI_STATUES_IN",
-							export = true,
-							text = {
-								en = "Summoned by activating the Atal'ai Statues in the proper order.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "按正确顺序激活阿塔莱雕像即可召唤。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Summoned by activating the Atal'ai Statues in the proper order.",
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							i(22444, {	-- Putrid Vine
@@ -861,24 +759,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(459, {	-- Wardens of the Dream
 				-- #if BEFORE WRATH
-				["description"] = createLocalizationString({
-					readable = "These four dragons come in pairs. You can tank them away from each other if you pull the one that's behind the other one and get really lucky.",
-					constant = "THESE_FOUR_DRAGONS_COME_IN_PAIRS_YOU_CAN_TANK",
-					export = true,
-					text = {
-						en = "These four dragons come in pairs. You can tank them away from each other if you pull the one that's behind the other one and get really lucky.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这四条龙成对出现。如果你先拉走位于另一条身后的那条，而且运气足够好，就能把它们分离开来。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These four dragons come in pairs. You can tank them away from each other if you pull the one that's behind the other one and get really lucky.",
 				-- #endif
 				["crs"] = {
 					5721,	-- Dreamscythe
@@ -919,24 +800,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			})),
 			applyclassicphase(SOD_PHASE_THREE, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_2, REMOVED_2_0_1 }, }, {
-				["description"] = createLocalizationString({
-					readable = "This instance was converted from a normal difficulty dungeon into a 20-player raid instance.",
-					constant = "THIS_INSTANCE_WAS_CONVERTED_FROM_A_NORMAL",
-					export = true,
-					text = {
-						en = "This instance was converted from a normal difficulty dungeon into a 20-player raid instance.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该副本已从普通难度地下城转换为 20 人团队副本。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This instance was converted from a normal difficulty dungeon into a 20-player raid instance.",
 				["lvl"] = 50,
 				["groups"] = {
 					n(QUESTS, {
@@ -1188,7 +1052,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										{ "i", 6288 },	-- Atal'ai Tablet
 										{ "o", 37099 },	-- Atal'ai Tablet
 									},
-									["description"] = "~L.SCATTERED_AROUND_THE_INSIDE_AND_OUTSIDE_OF_THE",
+									["description"] = "Scattered around the inside and outside of the instance.",
 								}),
 								i(1490, {	-- Guardian Talisman
 									["timeline"] = { REMOVED_4_0_3 },
@@ -1339,7 +1203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82102, {	-- The Essence of Eranikus
-							["description"] = "~L.INTERACT_WITH_THE_ESSENCE_FONT_LOCATED_IN_THE",
+							["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 							["providers"] = {
 								{ "i", 221475 },	-- Essence of Eranikus
 								{ "o", 148512 },	-- Essence Font
@@ -1515,44 +1379,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(222290, {	-- Unfortunate Adventurer
-						["description"] = createLocalizationString({
-							readable = "RIP Guzu <Demon>.\n\nGo watch 'The Fall of Guzu' by Hurricane on YouTube for context!",
-							constant = "RIP_GUZU_DEMON_GO_WATCH_THE_FALL_OF_GUZU_BY",
-							export = true,
-							text = {
-								en = "RIP Guzu <Demon>.\n\nGo watch 'The Fall of Guzu' by Hurricane on YouTube for context!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "安息吧 Guzu <Demon>。\n\n想了解背景的话，去 YouTube 看 Hurricane 制作的《The Fall of Guzu》吧！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "RIP Guzu <Demon>.\n\nGo watch 'The Fall of Guzu' by Hurricane on YouTube for context!",
 					}),
 					n(218624, {	-- Atal'alarion <Guardian of the Idol>
-						["description"] = createLocalizationString({
-							readable = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.",
-							constant = "ATAL_ALARION_HAS_THREE_MAIN_ABILITIES_THE",
-							export = true,
-							text = {
-								en = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "阿塔拉利恩有三个主要技能。\n\n这个首领身上的主要危险来自力量之柱可叠加的 5% 伤害增益。要移除它，可以利用他的毁灭猛击被击退到力量之柱上。玩家的身体随后会摧毁这些柱子并降低可叠加的伤害增益。分散站在首领周围有助于减少摧毁每根柱子所需的总移动距离。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.",
 						["groups"] = {
 							i(220567),	-- Bloodied Headspike
 							i(220580),	-- Madness of the Avatar
@@ -1570,24 +1400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(218819, {	-- Festering Rotslime
-						["description"] = createLocalizationString({
-							readable = "Kite the boss through the corridor.\n\nPlayers should focus on continuously moving between Gunk casts to avoid the poison pools. Gunk must be cleansed ASAP.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
-							constant = "KITE_THE_BOSS_THROUGH_THE_CORRIDOR_PLAYERS",
-							export = true,
-							text = {
-								en = "Kite the boss through the corridor.\n\nPlayers should focus on continuously moving between Gunk casts to avoid the poison pools. Gunk must be cleansed ASAP.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "把首领风筝到走廊里。\n\n玩家应专注于在“粘液”施放间隙持续移动，以避开毒池。“粘液”必须尽快驱散。\n\n整场战斗中，首领的移动速度会因“粘液时间”不断提升，要阻止这一点：摧毁沿走廊放置的阿塔莱石板、阿塔莱面具、阿塔莱蜡烛和阿塔莱鼓。最好让近战负责这些，以免他们自己被吞噬。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kite the boss through the corridor.\n\nPlayers should focus on continuously moving between Gunk casts to avoid the poison pools. Gunk must be cleansed ASAP.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
 						["groups"] = {
 							i(220569),	-- Blistering Ragehammer
 							i(220571),	-- Stinging Longbow
@@ -1606,44 +1419,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(ATALAI_DEFENDERS, {
-						["description"] = createLocalizationString({
-							readable = "The Atal'ai Defenders are the third boss encounter in The Temple of Atal'Hakkar.\n\nGasher & Mijan's abilities are the most threatening.\n\nOnce killed, each boss will respawn as an undead. Do not attack them, instead use Shackle Undead and Freezing Trap to CC them.",
-							constant = "THE_ATAL_AI_DEFENDERS_ARE_THE_THIRD_BOSS",
-							export = true,
-							text = {
-								en = "The Atal'ai Defenders are the third boss encounter in The Temple of Atal'Hakkar.\n\nGasher & Mijan's abilities are the most threatening.\n\nOnce killed, each boss will respawn as an undead. Do not attack them, instead use Shackle Undead and Freezing Trap to CC them.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "阿塔莱防御者是阿塔哈卡神庙的第三个首领战。\n\n加舍尔和米扬的技能威胁最大。\n\n每个首领被击杀后都会以亡灵形态复活。不要攻击它们，而是使用束缚亡灵和冰冻陷阱来控制它们。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The Atal'ai Defenders are the third boss encounter in The Temple of Atal'Hakkar.\n\nGasher & Mijan's abilities are the most threatening.\n\nOnce killed, each boss will respawn as an undead. Do not attack them, instead use Shackle Undead and Freezing Trap to CC them.",
 						["groups"] = {
 							n(221637, {	-- Gasher
-								["description"] = createLocalizationString({
-									readable = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
-									constant = "CFFFF0000FERVOR_R_CAN_CAUSE_HIM_TO_DEAL_A_LOT",
-									export = true,
-									text = {
-										en = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "|cffff0000狂热|r 会使他造成大量伤害，要尽快集火击杀；如有必要，当加舍尔叠高层数时，坦克可以拉开与加舍尔的距离，同时保持在施法者的射程内，以尽量减少受到的伤害。\n\n旋转斧 - 在他周围生成旋转的斧头，造成轻微的顺劈伤害。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
 								["groups"] = {
 									i(220674),	-- Debased Stealthblade
 									i(220591),	-- Mijan's Restorative Rod
@@ -1662,127 +1441,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								},
 							}),
 							n(218922, {	-- Hukku
-								["description"] = createLocalizationString({
-									readable = "Curse of Blood - Dispellable curse which increases a player's damage taken. This can be interrupted.",
-									constant = "CURSE_OF_BLOOD_DISPELLABLE_CURSE_WHICH",
-									export = true,
-									text = {
-										en = "Curse of Blood - Dispellable curse which increases a player's damage taken. This can be interrupted.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "鲜血诅咒 - 可驱散的诅咒，会提高玩家受到的伤害。此技能可以被打断。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Curse of Blood - Dispellable curse which increases a player's damage taken. This can be interrupted.",
 							}),
 							n(221638, {	-- Loro
-								["description"] = createLocalizationString({
-									readable = "Demoralizing Shout - Interruptable AoE debuff which reduces player's attack power by 40.",
-									constant = "DEMORALIZING_SHOUT_INTERRUPTABLE_AOE_DEBUFF",
-									export = true,
-									text = {
-										en = "Demoralizing Shout - Interruptable AoE debuff which reduces player's attack power by 40.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "挫志怒吼 - 可打断的范围减益，会使玩家的攻击强度降低 40。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Demoralizing Shout - Interruptable AoE debuff which reduces player's attack power by 40.",
 							}),
 							n(218868, {	-- Mijan
-								["description"] = createLocalizationString({
-									readable = "|cffff0000Mijan's Atal'ai Serpent Totems|r should be interrupted and killed asap in order to minimize damage taken. These can deal a fair bit of damage if they happen to focus the same player.\n\nRenew - Interruptable self heal ability, make sure to have someone focused on kicking this to increase kill time.\n\nThorns - Dispellable self thorns buff, should be removed to minimize melee players' damage taken.",
-									constant = "CFFFF0000MIJAN_S_ATAL_AI_SERPENT_TOTEMS_R",
-									export = true,
-									text = {
-										en = "|cffff0000Mijan's Atal'ai Serpent Totems|r should be interrupted and killed asap in order to minimize damage taken. These can deal a fair bit of damage if they happen to focus the same player.\n\nRenew - Interruptable self heal ability, make sure to have someone focused on kicking this to increase kill time.\n\nThorns - Dispellable self thorns buff, should be removed to minimize melee players' damage taken.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "|cffff0000米詹的阿塔莱蛇图腾|r 应尽快打断并击杀，以尽量减少受到的伤害。如果它们恰好集中攻击同一名玩家，会造成相当可观的伤害。\n\n恢复 - 可打断的自我治疗技能，务必安排人专门负责打断，以加快击杀速度。\n\n荆棘 - 可驱散的自身荆棘增益，应将其驱散，以尽量减少近战玩家受到的伤害。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "|cffff0000Mijan's Atal'ai Serpent Totems|r should be interrupted and killed asap in order to minimize damage taken. These can deal a fair bit of damage if they happen to focus the same player.\n\nRenew - Interruptable self heal ability, make sure to have someone focused on kicking this to increase kill time.\n\nThorns - Dispellable self thorns buff, should be removed to minimize melee players' damage taken.",
 							}),
 							n(221639, {	-- Zolo
-								["description"] = createLocalizationString({
-									readable = "Chain lightning increases damage which each subsequent hit, this can be interrupted.",
-									constant = "CHAIN_LIGHTNING_INCREASES_DAMAGE_WHICH_EACH",
-									export = true,
-									text = {
-										en = "Chain lightning increases damage which each subsequent hit, this can be interrupted.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "闪电链每次后续命中的伤害都会提高，这可以被打断。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Chain lightning increases damage which each subsequent hit, this can be interrupted.",
 							}),
 							n(221640, {	-- Zul'Lor
-								["description"] = createLocalizationString({
-									readable = "Frailty - Reduces all attributes of nearby enemies by 10 for 1 min. Can be dispelled.",
-									constant = "FRAILTY_REDUCES_ALL_ATTRIBUTES_OF_NEARBY",
-									export = true,
-									text = {
-										en = "Frailty - Reduces all attributes of nearby enemies by 10 for 1 min. Can be dispelled.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "虚弱 - 使附近敌人的所有属性降低 10，持续 1 分钟。可被驱散。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Frailty - Reduces all attributes of nearby enemies by 10 for 1 min. Can be dispelled.",
 							}),
 						},
 					}),
 					n(220833, {	-- Dreamscythe
 						["provider"] = { "n", 220864 },	-- Weaver
-						["description"] = createLocalizationString({
-							readable = "The bosses cast Acid Breath, so you should two tank this fight. DPS Dreamscythe to 80% and Weaver to 60%. Avoid facing either boss into the raid.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
-							constant = "THE_BOSSES_CAST_ACID_BREATH_SO_YOU_SHOULD_TWO",
-							export = true,
-							text = {
-								en = "The bosses cast Acid Breath, so you should two tank this fight. DPS Dreamscythe to 80% and Weaver to 60%. Avoid facing either boss into the raid.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "首领们会施放酸液喷吐，所以这场战斗应该用两个坦克。把梦境之镰打到 80%，把编织者打到 60%。不要让任何首领面向团队。\n\n在站位方面，你真正要避免的是被击退进两处地方：环绕首领场地的外围毒水池，以及中间的深坑——被两种振翅技能中的任何一种击退进坑里，都会让你因坠落伤害而死亡。要避开深坑，你可以站在它旁边，这样你会被平行击退；或者紧贴着它站，这样你会被击退到它的另一侧。根据当时哪种更容易来二选一，都能为你争取到施法时间。\n\n理想情况下，让所有输出职业集火同一个首领，因为首领们共享生命值。这样你集火的就是一个叠满减益的目标。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The bosses cast Acid Breath, so you should two tank this fight. DPS Dreamscythe to 80% and Weaver to 60%. Avoid facing either boss into the raid.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
 						["groups"] = {
 							i(220584),	-- Flamebreath Blade
 							i(220587),	-- Sacrificial Dream Dagger
@@ -1801,24 +1478,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(218721, {	-- Jammal'an the Prophet
 						["provider"] = { "n", 218718 },	-- Ogom the Wretched
-						["description"] = createLocalizationString({
-							readable = "This fight has two different versions which rotate every week.\n\nOne where Ogom the Wretched dies first, making Jammal'an the Prophet the main boss.\n Mass Penance is a spoopy mechanic.\n\nThe other where Jammal'an the Prophet dies first, making Ogom the Wretched the main boss.\n Avoid Consecration.",
-							constant = "THIS_FIGHT_HAS_TWO_DIFFERENT_VERSIONS_WHICH",
-							export = true,
-							text = {
-								en = "This fight has two different versions which rotate every week.\n\nOne where Ogom the Wretched dies first, making Jammal'an the Prophet the main boss.\n Mass Penance is a spoopy mechanic.\n\nThe other where Jammal'an the Prophet dies first, making Ogom the Wretched the main boss.\n Avoid Consecration.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这场战斗有两种不同的版本，每周轮换。\n\n一种是悲惨的奥戈姆先死，使预言者迦玛兰成为主首领。\n 群体苦修是个很吓人的机制。\n\n另一种是预言者迦玛兰先死，使悲惨的奥戈姆成为主首领。\n 躲避奉献。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This fight has two different versions which rotate every week.\n\nOne where Ogom the Wretched dies first, making Jammal'an the Prophet the main boss.\n Mass Penance is a spoopy mechanic.\n\nThe other where Jammal'an the Prophet dies first, making Ogom the Wretched the main boss.\n Avoid Consecration.",
 						["groups"] = {
 							i(220576),	-- Axe of the Atal'ai Executioner
 							i(220575),	-- Eater of the Damned
@@ -1838,24 +1498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(221943, {	-- Hazzas
 						["provider"] = { "n", 221942 },	-- Morphaz
-						["description"] = createLocalizationString({
-							readable = "Keep the boss stationary to avoid the frontal Corrupted Breath and Backfire from the tail. Tanks swap every 2-3 stacks. Big heals for Dreamer's Lament ability!\n\nAt 80%, Hazzas will cast Animate Flame which will summon elementals. Stack & nuke them. They also drop fire on the floor. You can use the fire to avoid being sent downstairs to Morphaz during Lucid Dreaming.\n\nAt 30%, Hazzas will cast Lucid Dreaming again and then begin casting Eternal Slumber. You must bear the damage check and the cast will be canceled.\n\nDodge Falling Rocks.",
-							constant = "KEEP_THE_BOSS_STATIONARY_TO_AVOID_THE_FRONTAL",
-							export = true,
-							text = {
-								en = "Keep the boss stationary to avoid the frontal Corrupted Breath and Backfire from the tail. Tanks swap every 2-3 stacks. Big heals for Dreamer's Lament ability!\n\nAt 80%, Hazzas will cast Animate Flame which will summon elementals. Stack & nuke them. They also drop fire on the floor. You can use the fire to avoid being sent downstairs to Morphaz during Lucid Dreaming.\n\nAt 30%, Hazzas will cast Lucid Dreaming again and then begin casting Eternal Slumber. You must bear the damage check and the cast will be canceled.\n\nDodge Falling Rocks.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "保持首领静止不动，以避免正面的腐蚀吐息和来自尾部的反冲。坦克每叠加 2-3 层就换坦。应对“梦者的悲叹”技能时要有大量治疗！\n\n在 80% 时，哈扎斯会施放活化烈焰，召唤元素生物。把它们聚起来集火击杀。它们还会在地面留下火焰。你可以利用这些火焰避免在清醒梦境期间被传送到下层去见莫尔法兹。\n\n在 30% 时，哈扎斯会再次施放清醒梦境，随后开始施放永恒沉睡。你们必须承受住这次伤害检测，施法就会被取消。\n\n躲开落石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Keep the boss stationary to avoid the frontal Corrupted Breath and Backfire from the tail. Tanks swap every 2-3 stacks. Big heals for Dreamer's Lament ability!\n\nAt 80%, Hazzas will cast Animate Flame which will summon elementals. Stack & nuke them. They also drop fire on the floor. You can use the fire to avoid being sent downstairs to Morphaz during Lucid Dreaming.\n\nAt 30%, Hazzas will cast Lucid Dreaming again and then begin casting Eternal Slumber. You must bear the damage check and the cast will be canceled.\n\nDodge Falling Rocks.",
 						["groups"] = {
 							i(220596),	-- Ancient Divining Rod
 							i(220965),	-- Scalebane Greataxe
@@ -1875,24 +1518,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(218571, {	-- Shade of Eranikus
-						["description"] = createLocalizationString({
-							readable = "The boss casts Corrosive Breath and has a tail sweep. Tanks should swap after each breath.\n\nDispell Lethargic Poison. Interupt Bellowing Roar!\n\nWhen the boss casts Deep Slumber, you'll want everyone to stack close to the boss so that when the boss casts Waking Nightmare, everyone can jump into the pool and to get afflicted and then move out asap to avoid getting CC'd again.\n\nAt 70%, the boss will summon two Lumbering Dreamwalkers. Kill them and interupt their Deep Slumber casts. Kill any whelplings that spawn.\n\nAt 40%, he'll repeat this and then summon two Nightmare Scalebanes. These cast Acid Rain that can be interupted, so the raid should spread out to avoid this.",
-							constant = "THE_BOSS_CASTS_CORROSIVE_BREATH_AND_HAS_A_TAIL",
-							export = true,
-							text = {
-								en = "The boss casts Corrosive Breath and has a tail sweep. Tanks should swap after each breath.\n\nDispell Lethargic Poison. Interupt Bellowing Roar!\n\nWhen the boss casts Deep Slumber, you'll want everyone to stack close to the boss so that when the boss casts Waking Nightmare, everyone can jump into the pool and to get afflicted and then move out asap to avoid getting CC'd again.\n\nAt 70%, the boss will summon two Lumbering Dreamwalkers. Kill them and interupt their Deep Slumber casts. Kill any whelplings that spawn.\n\nAt 40%, he'll repeat this and then summon two Nightmare Scalebanes. These cast Acid Rain that can be interupted, so the raid should spread out to avoid this.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "首领会对玩家施放腐蚀喷吐，并有一个扫尾技能。坦克应在每次喷吐后换嘲。\n\n驱散昏睡毒液。打断震耳咆哮！\n\n当首领施放深度沉睡时，所有人都应紧贴首领集合，这样当首领施放唤醒梦魇时，大家可以跳进水池中被感染，然后尽快离开，以免再次被控制。\n\n在 70% 时，首领将召唤两个笨重的梦行者。击杀它们并打断它们的深度沉睡施法。击杀所有刷新的雏龙。\n\n在 40% 时，它会重复这一过程，然后召唤两个梦魇鳞卫。它们会施放可以被打断的酸雨，因此团队应分散站位以躲避。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The boss casts Corrosive Breath and has a tail sweep. Tanks should swap after each breath.\n\nDispell Lethargic Poison. Interupt Bellowing Roar!\n\nWhen the boss casts Deep Slumber, you'll want everyone to stack close to the boss so that when the boss casts Waking Nightmare, everyone can jump into the pool and to get afflicted and then move out asap to avoid getting CC'd again.\n\nAt 70%, the boss will summon two Lumbering Dreamwalkers. Kill them and interupt their Deep Slumber casts. Kill any whelplings that spawn.\n\nAt 40%, he'll repeat this and then summon two Nightmare Scalebanes. These cast Acid Rain that can be interupted, so the raid should spread out to avoid this.",
 						["groups"] = {
 							i(221475),	-- Essence of Eranikus
 							i(220585),	-- Degraded Dire Nail
@@ -1911,24 +1537,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(221394, {	-- Avatar of Hakkar
-						["description"] = createLocalizationString({
-							readable = "Have all the ranged stacked and then kill the four Atal'ai Ritualists.\n\nOnce Hakkari Bloodkeeper casts Bubbling Blood, move out of it. He'll ocasionally cast Spirit Chains, move out of the group before getting dispelled. (it will spread otherwise) Frightsome Howl should be dispelled immediately.\n\nAfter 33 seconds the Bloodkeeper will resurrect Hakkar and pass on some of the damage dealt to him during that time.\n\nDecurse Curse of Tongues, and dispel the Insanity mind control that'll happen once in a while.\n\nThe boss will occasionally cast Corrupted Blood, afflicted players should move out of the raid as fast as they can, and move to the front of the boss (away from the tank) to then get hit by Drain Blood. This will dispel the debuff. Move back afterwards and then kill the boss.",
-							constant = "HAVE_ALL_THE_RANGED_STACKED_AND_THEN_KILL_THE",
-							export = true,
-							text = {
-								en = "Have all the ranged stacked and then kill the four Atal'ai Ritualists.\n\nOnce Hakkari Bloodkeeper casts Bubbling Blood, move out of it. He'll ocasionally cast Spirit Chains, move out of the group before getting dispelled. (it will spread otherwise) Frightsome Howl should be dispelled immediately.\n\nAfter 33 seconds the Bloodkeeper will resurrect Hakkar and pass on some of the damage dealt to him during that time.\n\nDecurse Curse of Tongues, and dispel the Insanity mind control that'll happen once in a while.\n\nThe boss will occasionally cast Corrupted Blood, afflicted players should move out of the raid as fast as they can, and move to the front of the boss (away from the tank) to then get hit by Drain Blood. This will dispel the debuff. Move back afterwards and then kill the boss.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "让所有远程职业集中站好，然后击杀四名阿塔莱仪祭者。\n\n当哈卡莱护血者施放沸腾之血时，离开该区域。他偶尔会施放灵魂锁链，在被驱散前离开人群。（否则它会扩散）骇人嚎叫应立即被驱散。\n\n33 秒后，护血者会复活哈卡，并转移在此期间对他造成的一部分伤害。\n\n解除语言诅咒，并驱散偶尔会出现的疯狂精神控制。\n\n首领偶尔会施放腐化之血，受影响的玩家应尽快离开团队，并移动到首领前方（远离坦克），以便被吸取鲜血击中。这会驱散该减益。之后再回到原位，然后击杀首领。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Have all the ranged stacked and then kill the four Atal'ai Ritualists.\n\nOnce Hakkari Bloodkeeper casts Bubbling Blood, move out of it. He'll ocasionally cast Spirit Chains, move out of the group before getting dispelled. (it will spread otherwise) Frightsome Howl should be dispelled immediately.\n\nAfter 33 seconds the Bloodkeeper will resurrect Hakkar and pass on some of the damage dealt to him during that time.\n\nDecurse Curse of Tongues, and dispel the Insanity mind control that'll happen once in a while.\n\nThe boss will occasionally cast Corrupted Blood, afflicted players should move out of the raid as fast as they can, and move to the front of the boss (away from the tank) to then get hit by Drain Blood. This will dispel the debuff. Move back afterwards and then kill the boss.",
 						["groups"] = {
 							i(221346),	-- Scapula of the Fallen Avatar (A)
 							i(221363),	-- Scapula of the Fallen Avatar (H)

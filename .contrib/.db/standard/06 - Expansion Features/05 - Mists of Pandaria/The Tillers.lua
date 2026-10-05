@@ -26,24 +26,7 @@ local HARVESTING = createHeader({
 
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_TILLERS, {
-		["description"] = createLocalizationString({
-			readable = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
-			constant = "THE_TILLERS_ARE_A_GROUP_OF_PANDAREN_FARMERS_WHO",
-			export = true,
-			text = {
-				en = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "农夫君团是一群熊猫人农夫，他们种植并生产作物来养活自己的人民。他们似乎是由一个只被称作“农夫”的人创建的。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
 		["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 		["icon"] = 645198,
 		["lvl"] = lvlsquish(85, 85, 10),
@@ -197,46 +180,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						ach(7293),	-- Till the Break of Dawn (Halfhill)
 					}),
 					n(66175, {	-- Autumn Blossom Tree
-						["description"] = createLocalizationString({
-							readable = "Each tree is a one-time use vanity item that lasts three minutes.",
-							constant = "EACH_TREE_IS_A_ONE_TIME_USE_VANITY_ITEM_THAT",
-							export = true,
-							text = {
-								en = "Each tree is a one-time use vanity item that lasts three minutes.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "每棵树都是一次性使用的趣味物品，持续 3 分钟。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Each tree is a one-time use vanity item that lasts three minutes.",
 						["cost"] = { { "i", 85267, 1 } },	-- 1x Autumn Blossom Sapling
 						["cr"] = 66172,	-- Autumn Blossom Sapling
 					}),
 					n(65916, {	-- Growing Enigma Seed
-						["description"] = createLocalizationString({
-							readable = "Enigma Seeds will result in a Fool's Cap, Green Tea Leaf, Rain Poppy, Silkweed, Snow Lily or a Golden Lotus being grown in the plot. As with herbing, Golden Lotus will result in only 1 received, while the rest 2-4 will be received. Unlike gathering them in the wild, however, Golden Lotuses harvested from an Enigma Seed will not give the [Luck of the Lotus] buff.",
-							constant = "ENIGMA_SEEDS_WILL_RESULT_IN_A_FOOL_S_CAP_GREEN",
-							export = true,
-							text = {
-								en = "Enigma Seeds will result in a Fool's Cap, Green Tea Leaf, Rain Poppy, Silkweed, Snow Lily or a Golden Lotus being grown in the plot. As with herbing, Golden Lotus will result in only 1 received, while the rest 2-4 will be received. Unlike gathering them in the wild, however, Golden Lotuses harvested from an Enigma Seed will not give the [Luck of the Lotus] buff.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "谜语种子会在田地里种出愚人帽、绿茶叶、雨粟花、丝草、雪百合或黄金莲中的一种。与采药一样，黄金莲只会收到 1 个，其余则收到 2-4 个。不过，与在野外采集不同，从谜语种子中收获的黄金莲不会给予[莲花之运]增益。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Enigma Seeds will result in a Fool's Cap, Green Tea Leaf, Rain Poppy, Silkweed, Snow Lily or a Golden Lotus being grown in the plot. As with herbing, Golden Lotus will result in only 1 received, while the rest 2-4 will be received. Unlike gathering them in the wild, however, Golden Lotuses harvested from an Enigma Seed will not give the [Luck of the Lotus] buff.",
 						["cost"] = { { "i", 85216, 1 } },	-- 1x Enigma Seed
 						["groups"] = {
 							i(79011, {	-- Fool's Cap
@@ -268,24 +217,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					}),
 					i(85219, {	-- Ominous Seed
-						["description"] = createLocalizationString({
-							readable = "This seed is acquired by harvesting crops at Sunsong Ranch, albeit very rarely.",
-							constant = "THIS_SEED_IS_ACQUIRED_BY_HARVESTING_CROPS_AT",
-							export = true,
-							text = {
-								en = "This seed is acquired by harvesting crops at Sunsong Ranch, albeit very rarely.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此种子通过在日歌农场收获作物获得，但几率非常低。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This seed is acquired by harvesting crops at Sunsong Ranch, albeit very rarely.",
 						["crs"] = {
 							66152,	-- Ominous Seedling
 							66161,	-- Terrible Turnip
@@ -298,26 +230,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 						-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 						-- #if BEFORE 5.5.3
-						["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
+						["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 						-- #elseif BEFORE LEGION
-						["description"] = createLocalizationString({
-							readable = "Can only be harvested along with normal crops or Portal Shard crops.",
-							constant = "CAN_ONLY_BE_HARVESTED_ALONG_WITH_NORMAL_CROPS",
-							export = true,
-							text = {
-								en = "Can only be harvested along with normal crops or Portal Shard crops.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只能与普通作物或传送门碎片作物一同收获。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can only be harvested along with normal crops or Portal Shard crops.",
 						-- #endif
 					})),
 					applyclassicphase(MOP_PHASE_LANDFALL, n(67482, {	-- Portal Shard
@@ -368,24 +283,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					}),
 					n(66043, {	-- Songbell
-						["description"] = createLocalizationString({
-							readable = "This is the without a doubt the most efficient way to farm motes as a solo player every day. The rest of the seeds are trash in comparison.",
-							constant = "THIS_IS_THE_WITHOUT_A_DOUBT_THE_MOST_EFFICIENT",
-							export = true,
-							text = {
-								en = "This is the without a doubt the most efficient way to farm motes as a solo player every day. The rest of the seeds are trash in comparison.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这毫无疑问是单人玩家每天刷微粒最高效的方式。相比之下，其他种子都不值一提。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is the without a doubt the most efficient way to farm motes as a solo player every day. The rest of the seeds are trash in comparison.",
 						["cost"] = { { "i", 89233, 1 } },	-- 1x Songbell Seed
 						["cr"] = 66040,	-- Growing Songbell
 						["groups"] = {
@@ -393,7 +291,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					}),
 					n(66192, {	-- Spring Blossom Tree
-						["description"] = "~L.EACH_TREE_IS_A_ONE_TIME_USE_VANITY_ITEM_THAT",
+						["description"] = "Each tree is a one-time use vanity item that lasts three minutes.",
 						["cost"] = { { "i", 85268, 1 } },	-- 1x Spring Blossom Sapling
 						["cr"] = 66189,	-- Spring Blossom Sapling
 					}),
@@ -405,7 +303,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 					}),
 					n(66173, {	-- Winter Blossom Tree
-						["description"] = "~L.EACH_TREE_IS_A_ONE_TIME_USE_VANITY_ITEM_THAT",
+						["description"] = "Each tree is a one-time use vanity item that lasts three minutes.",
 						["cost"] = { { "i", 85269, 1 } },	-- 1x Winter Blossom Sapling
 						["cr"] = 66171,	-- Winter Blossom Sapling
 					}),
@@ -523,71 +421,20 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}),
 			n(MAILBOX, {
 				i(85497, {	-- Chirping Package
-					["description"] = createLocalizationString({
-						readable = "Once you hit Best Friend with Sho you receive this in the mail.",
-						constant = "ONCE_YOU_HIT_BEST_FRIEND_WITH_SHO_YOU_RECEIVE",
-						export = true,
-						text = {
-							en = "Once you hit Best Friend with Sho you receive this in the mail.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与肖达到挚友后，你会通过邮件收到此物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Once you hit Best Friend with Sho you receive this in the mail.",
 					["minReputation"] = { FACTION_SHO, 6 },	-- Sho, Best Friend.
 					["groups"] = {
 						i(85222),	-- Red Cricket (PET!)
 					},
 				}),
 				i(90042, {	-- Straw Hat
-					["description"] = createLocalizationString({
-						readable = "Once you hit Best Friend with Old Hillpaw you receive this in the mail.",
-						constant = "ONCE_YOU_HIT_BEST_FRIEND_WITH_OLD_HILLPAW_YOU",
-						export = true,
-						text = {
-							en = "Once you hit Best Friend with Old Hillpaw you receive this in the mail.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与老丘爪达到挚友后，你会通过邮件收到此物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Once you hit Best Friend with Old Hillpaw you receive this in the mail.",
 					["minReputation"] = { FACTION_OLD_HILLPAW, 6 },	-- Old Hillpaw, Best Friend.
 				}),
 			}),
 			n(QUESTS, {
 				q(31937, {	-- "Thunder King" Pest Repellers
-					["description"] = createLocalizationString({
-						readable = "You never have to loot a Vintage Bug Sprayer ever again!",
-						constant = "YOU_NEVER_HAVE_TO_LOOT_A_VINTAGE_BUG_SPRAYER",
-						export = true,
-						text = {
-							en = "You never have to loot a Vintage Bug Sprayer ever again!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你再也不用拾取陈旧的杀虫喷雾器了！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You never have to loot a Vintage Bug Sprayer ever again!",
 					["sourceQuest"] = 30523,	-- Growing the Farm II: The Broken Wagon
 					["providers"] = {
 						{ "i",  89813 },	-- "Thunder King" Pest Repellers
@@ -629,24 +476,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30534, {	-- A Second Hand
-					["description"] = createLocalizationString({
-						readable = "Also requires reputation level of \"Best Friends\" with whomever you want assisting you on the farm.",
-						constant = "ALSO_REQUIRES_REPUTATION_LEVEL_OF_BEST_FRIENDS",
-						export = true,
-						text = {
-							en = "Also requires reputation level of \"Best Friends\" with whomever you want assisting you on the farm.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "还要求与你想让其在农场协助你的人达到“挚友”声望等级。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Also requires reputation level of \"Best Friends\" with whomever you want assisting you on the farm.",
 					["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
 					["provider"] = { "o", 215705 },	-- Tillers Shrine
 					["coord"] = { 52.1, 49.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -669,24 +499,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				applyclassicphase(MOP_PHASE_LANDFALL, q(32189, {	-- A Shabby New Face
-					["description"] = createLocalizationString({
-						readable = "Only available on days that Barnaby Fletcher is visiting the Market.",
-						constant = "ONLY_AVAILABLE_ON_DAYS_THAT_BARNABY_FLETCHER_IS",
-						export = true,
-						text = {
-							en = "Only available on days that Barnaby Fletcher is visiting the Market.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在巴纳比·弗莱彻造访市集的日子可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available on days that Barnaby Fletcher is visiting the Market.",
 					["qg"] = 58718,	-- Merchant Greenfield
 					["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["timeline"] = { ADDED_5_1_0 },
@@ -935,24 +748,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["minReputation"] = { FACTION_THE_TILLERS, REVERED },
 				}),
 				q(30529, {	-- Growing the Farm III: The Mossy Boulder
-					["description"] = createLocalizationString({
-						readable = "Must have all Tillers votes collected to start this quest.",
-						constant = "MUST_HAVE_ALL_TILLERS_VOTES_COLLECTED_TO_START",
-						export = true,
-						text = {
-							en = "Must have all Tillers votes collected to start this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须集齐所有阡陌客的选票才能开始此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Must have all Tillers votes collected to start this quest.",
 					["sourceQuest"] = 30528,	-- Haohan's Vote V: Chief Yip-Yip
 					["qg"] = 58646,	-- Farmer Yoon
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -1046,24 +842,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(32682, {	-- Inherit the Earth
-					["description"] = createLocalizationString({
-						readable = "Must also have a fully unlocked farm.",
-						constant = "MUST_ALSO_HAVE_A_FULLY_UNLOCKED_FARM",
-						export = true,
-						text = {
-							en = "Must also have a fully unlocked farm.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "还必须拥有一个完全解锁的农场。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Must also have a fully unlocked farm.",
 					["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
 					["qg"] = 64597,	-- Nana Mudclaw
 					["coord"] = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -1384,46 +1163,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 					["groups"] = {
 						i(86428, {	-- Old Man Thistle's Treasure
-							["description"] = createLocalizationString({
-								readable = "Contains a number of Pandarian rare quality Gems.",
-								constant = "CONTAINS_A_NUMBER_OF_PANDARIAN_RARE_QUALITY",
-								export = true,
-								text = {
-									en = "Contains a number of Pandarian rare quality Gems.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "内含若干潘达利亚稀有品质宝石。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Contains a number of Pandarian rare quality Gems.",
 						}),
 					},
 				}),
 				applyclassicphase(MOP_PHASE_LANDFALL, q(32198, {	-- One Magical, Flying Kingdom's Trash...
-					["description"] = createLocalizationString({
-						readable = "Available only on days where Barnaby Fletcher is in Halfhill.",
-						constant = "AVAILABLE_ONLY_ON_DAYS_WHERE_BARNABY_FLETCHER",
-						export = true,
-						text = {
-							en = "Available only on days where Barnaby Fletcher is in Halfhill.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在巴纳比·弗莱彻位于半山的日子可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
 					["sourceQuest"] = 32189,	-- A Shabby New Face
 					["qg"] = 67565,	-- Barnaby Fletcher
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
@@ -1438,24 +1183,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				q(31936, {	-- The "Jinyu Princess" Irrigation System
-					["description"] = createLocalizationString({
-						readable = "You never have to loot a Rusty Watering Can ever again!",
-						constant = "YOU_NEVER_HAVE_TO_LOOT_A_RUSTY_WATERING_CAN",
-						export = true,
-						text = {
-							en = "You never have to loot a Rusty Watering Can ever again!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你再也不用拾取生锈的洒水壶了！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You never have to loot a Rusty Watering Can ever again!",
 					["sourceQuest"] = 30516,	-- Growing the Farm I: A Little Problem
 					["providers"] = {
 						{ "i",  89812 },	-- "Jinyu Princess" Irrigation System
@@ -1511,24 +1239,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31312, {	-- The Old Map
-					["description"] = createLocalizationString({
-						readable = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
-						constant = "REQUIRES_A_REPUTATION_LEVEL_OF_EXALTED_WITH_THE",
-						export = true,
-						text = {
-							en = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要与阡陌客达到崇拜声望，并与所有半山农夫达到挚友关系才会掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
 					["provider"] = { "i", 86404 },	-- Old Map
 					["coord"] = { 43.4, 29.1, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
@@ -1756,24 +1467,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30402, {	-- A Dish for Chee Chee
-					["description"] = createLocalizationString({
-						readable = "This quest becomes available when you have the food in your inventory.",
-						constant = "THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
-						export = true,
-						text = {
-							en = "This quest becomes available when you have the food in your inventory.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你的背包中拥有该食物时，此任务就会开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 						{ 34.4, 46.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -1814,7 +1508,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30386, {	-- A Dish for Ella
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 						{ 31.6, 58.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -1855,7 +1549,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30421, {	-- A Dish for Farmer Fung
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
 						{ 48.2, 33.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -1893,7 +1587,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30427, {	-- A Dish for Fish
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 						{ 41.6, 30.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -1933,7 +1627,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30390, {	-- A Dish for Gina
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["cost"] = { { "i", 74644, 5 } },	-- 5x Swirling Mist Soup
 				}),
 				q(30479, {	-- A Gift For Gina
@@ -1984,7 +1678,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30414, {	-- A Dish for Haohan
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 						{ 44.6, 34.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -2017,7 +1711,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30439, {	-- A Dish for Jogu
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["cost"] = { { "i", 74643, 5 } },	-- 5x Sauteed Carrots
 				}),
 				q(30478, {	-- A Gift For Jogu
@@ -2061,7 +1755,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30396, {	-- A Dish for Old Hillpaw
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
 						{ 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -2097,7 +1791,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30408, {	-- A Dish for Sho
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 						{ 29.6, 30.6, VALLEY_OF_THE_FOUR_WINDS },
@@ -2140,7 +1834,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30433, {	-- A Dish for Tina
-					["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_WHEN_YOU_HAVE_THE",
+					["description"] = "This quest becomes available when you have the food in your inventory.",
 					["coords"] = {
 						{ 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 						{ 45.0, 33.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -2785,24 +2479,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			})),
 			n(TREASURES, {
 				o(210565, {	-- Dark Soil
-					["description"] = createLocalizationString({
-						readable = "Can be found all around Pandaria.",
-						constant = "CAN_BE_FOUND_ALL_AROUND_PANDARIA",
-						export = true,
-						text = {
-							en = "Can be found all around Pandaria.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可在潘达利亚各处找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be found all around Pandaria.",
 					["coords"] = {
 						{ 66.3, 70.9, DREAD_WASTES },
 						{ 68.9, 48.6, KUN_LAI_SUMMIT },
@@ -2829,45 +2506,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				o(215719, {	-- Dented Shovel
-					["description"] = createLocalizationString({
-						readable = "You can use this to uproot planted crops that you don't want, such as for the daily that Yoon gives you to plant more Songbells instead!",
-						constant = "YOU_CAN_USE_THIS_TO_UPROOT_PLANTED_CROPS_THAT",
-						export = true,
-						text = {
-							en = "You can use this to uproot planted crops that you don't want, such as for the daily that Yoon gives you to plant more Songbells instead!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以用它拔掉你不想要的已种植作物，比如农夫尹给你的日常任务要求你改种更多鸣铃花时！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can use this to uproot planted crops that you don't want, such as for the daily that Yoon gives you to plant more Songbells instead!",
 					["coord"] = { 52.0, 48.3, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						i(89880, {	-- Dented Shovel
-							["description"] = createLocalizationString({
-								readable = "You don't need to keep this in your bags.",
-								constant = "YOU_DON_T_NEED_TO_KEEP_THIS_IN_YOUR_BAGS",
-								export = true,
-								text = {
-									en = "You don't need to keep this in your bags.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你不需要把它留在背包里。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You don't need to keep this in your bags.",
 						}),
 					},
 				}),
@@ -2875,7 +2518,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 52.1, 48.5, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						i(79104, {	-- Rusty Watering Can
-							["description"] = "~L.YOU_DON_T_NEED_TO_KEEP_THIS_IN_YOUR_BAGS",
+							["description"] = "You don't need to keep this in your bags.",
 						}),
 					},
 				}),
@@ -2883,7 +2526,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 52.0, 48.5, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						i(80513, {	-- Vintage Bug Sprayer
-							["description"] = "~L.YOU_DON_T_NEED_TO_KEEP_THIS_IN_YOUR_BAGS",
+							["description"] = "You don't need to keep this in your bags.",
 						}),
 					},
 				}),

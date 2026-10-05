@@ -303,24 +303,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(60284, {	-- Rule 5: Be Audacious
-					["description"] = createLocalizationString({
-						readable = "Requires Tentative reputation with Ve'nari.",
-						constant = "REQUIRES_TENTATIVE_REPUTATION_WITH_VE_NARI",
-						export = true,
-						text = {
-							en = "Requires Tentative reputation with Ve'nari.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要与维娜莉达到试探声望。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Tentative reputation with Ve'nari.",
 					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
@@ -330,24 +313,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(60285, {	-- Rule 6: Concealment is Everything
-					["description"] = createLocalizationString({
-						readable = "Requires Ambivalent reputation with Ve'nari.",
-						constant = "REQUIRES_AMBIVALENT_REPUTATION_WITH_VE_NARI",
-						export = true,
-						text = {
-							en = "Requires Ambivalent reputation with Ve'nari.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要与维娜莉达到暧昧声望。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
@@ -363,7 +329,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 46.8, 41.6, THE_MAW },
 				}),
 				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
-					["description"] = "~L.REQUIRES_AMBIVALENT_REPUTATION_WITH_VE_NARI",
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
@@ -373,7 +339,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
-					["description"] = "~L.REQUIRES_AMBIVALENT_REPUTATION_WITH_VE_NARI",
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["sourceQuests"] = {
 						60284,	-- Rule 5: Be Audacious
 						63060,	-- Rule 6 Footnote: Don't Forget Anything
@@ -385,24 +351,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(60158, {	-- Rule 7: Betrayal is Inevitable
-					["description"] = createLocalizationString({
-						readable = "Requires Appreciative reputation with Ve'nari.",
-						constant = "REQUIRES_APPRECIATIVE_REPUTATION_WITH_VE_NARI",
-						export = true,
-						text = {
-							en = "Requires Appreciative reputation with Ve'nari.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要与维娜莉达到感激声望。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Appreciative reputation with Ve'nari.",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },

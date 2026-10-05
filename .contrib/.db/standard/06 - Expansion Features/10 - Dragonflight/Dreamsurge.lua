@@ -141,24 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(206825, {	-- Waking Dream
-				["description"] = createLocalizationString({
-					readable = "Can be found in Dreamsurge zone, interact with it to start event, kill all npcs that came out and portal is closed.",
-					constant = "CAN_BE_FOUND_IN_DREAMSURGE_ZONE_INTERACT_WITH",
-					export = true,
-					text = {
-						en = "Can be found in Dreamsurge zone, interact with it to start event, kill all npcs that came out and portal is closed.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可在梦境涌动区域找到，与其互动以启动事件，击杀所有出现的 NPC，传送门便会关闭。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be found in Dreamsurge zone, interact with it to start event, kill all npcs that came out and portal is closed.",
 				["maps"] = { THALDRASZUS, THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN },	-- otherwise too many coords
 				["questID"] = 78273,
 				["isDaily"] = true,
@@ -173,24 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			},
 			["groups"] = {
 				i(DREAMSURGE_COALESCENCE, {
-					["description"] = createLocalizationString({
-						readable = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
-						constant = "10_PER_WQ_25_PER_RARE_KILL_IN_ZONE_WHERE",
-						export = true,
-						text = {
-							en = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "每个世界任务 10 个，在梦境涌动激活的区域中每次稀有击杀 25 个",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
 				}),
 				i(192807, {	-- Renewed Magmammoth (MOUNT!)
 					["cost"] = { { "i", 209419, 20 } },	-- 20x Charred Elemental Remains

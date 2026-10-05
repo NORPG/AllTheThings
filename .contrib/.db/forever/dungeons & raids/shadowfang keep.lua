@@ -44,24 +44,7 @@ root(ROOTS.Instances, {
 								{ "i", 6283 },	-- The Book of Ur
 								{ "o", 36738 },	-- The Book of Ur
 							},
-							["description"] = createLocalizationString({
-								readable = "Can be found on a bookshelf in the circular room with Fenrus.",
-								constant = "CAN_BE_FOUND_ON_A_BOOKSHELF_IN_THE_CIRCULAR",
-								export = true,
-								text = {
-									en = "Can be found on a bookshelf in the circular room with Fenrus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在芬鲁斯所在的圆形房间的书架上找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found on a bookshelf in the circular room with Fenrus.",
 						}),
 						i(4534),	-- Steel-Clasped Bracers
 						i(6335),	-- Grizzled Boots
@@ -166,24 +149,7 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(3872, {	-- Deathsworn Captain
-				["description"] = createLocalizationString({
-					readable = "This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",
-					constant = "THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_2",
-					export = true,
-					text = {
-						en = "This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一种稀有生物，因此并不总是存在。\n它可能取代一名受折磨的军官，在指挥官斯普林瓦尔之后的户外城墙区域巡逻。\n可以通过 /tar 命令在副本入口处看到该稀有生物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",
 				["groups"] = {
 					i(6641),	-- Haunting Blade
 					i(6642),	-- Phantom Armor

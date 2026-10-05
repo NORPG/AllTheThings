@@ -3,23 +3,23 @@
 -------------------------------------------------------------------
 
 local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
-	["description"] = "~L.REWARDED_AT_52_67_AND_76_RENOWN",
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(RENOWN, {
-			["description"] = "~L.THESE_ARE_REWARDS_AUTOMATICALLY_GRANTED_BY",
+			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["groups"] = {
 				i(186580, {	-- A Tiny Sinstone (Pepe!)
-					["description"] = "~L.REQUIRES_RENOWN_56",
+					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
 				}),
 				i(182332, {	-- Gravestone Battle Gargon (MOUNT!)
-					["description"] = "~L.REQUIRES_RENOWN_39",
+					["description"] = "Requires Renown 39.",
 				}),
 				i(186476, {	-- Sinfall Gravewing (MOUNT!)
-					["description"] = "~L.REQUIRES_RENOWN_45",
+					["description"] = "Requires Renown 45.",
 				}),
 				--[[
 				title_gendered(429, 430, {	-- Count / Countess
@@ -27,23 +27,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 				]]--
 				title_male(429, {	-- Count <Name>
-					["description"] = "~L.REQUIRES_RENOWN_40",
+					["description"] = "Requires Renown 40.",
 				}),
 				title_female(430, {	-- Countess <Name>
-					["description"] = "~L.REQUIRES_RENOWN_40",
+					["description"] = "Requires Renown 40.",
 				}),
 				title(444, {	-- Sin Eater
-					["description"] = "~L.REQUIRES_RENOWN_80",
+					["description"] = "Requires Renown 80.",
 				}),
 				iensemble(186507, {	-- Harvester's Court Attire
-					["description"] = "~L.REQUIRES_RENOWN_60",
+					["description"] = "Requires Renown 60.",
 				}),
 				i(188003, {	-- Crate of Revendreth Reserve
-					["description"] = "~L.REWARDED_AT_15_AND_24_RENOWN",
+					["description"] = "Rewarded at 15 and 24 Renown.",
 				}),
 				WISPS_OF_MEMORY,
 				SL_Legendaries({
-					["description"] = "~L.REQUIRES_RENOWN_48",
+					["description"] = "Requires Renown 48.",
 					["groups"] = {
 						i(186567),	-- Memory of Insatiable Hunger
 						i(187105),	-- Memory of the Agonizing Gaze

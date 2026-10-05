@@ -22,43 +22,9 @@ end
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(TOL_BARAD_PENINSULA, {
 		-- #if BEFORE 8.0.3
-		["description"] = createLocalizationString({
-			readable = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
-			constant = "TOL_BARAD_PENINSULA_IS_THE_NORTHERNMOST_REGION",
-			export = true,
-			text = {
-				en = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "托尔巴拉德半岛是托尔巴拉德岛的最北端区域，也是《魔兽世界：大灾变》中主要的日常任务枢纽。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
 		-- #else
-		["description"] = createLocalizationString({
-			readable = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.\n\nDue to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
-			constant = "TOL_BARAD_PENINSULA_IS_THE_NORTHERNMOST_REGION_2",
-			export = true,
-			text = {
-				en = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.\n\nDue to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "托尔巴拉德半岛是托尔巴拉德岛的最北端区域，也是《魔兽世界：大灾变》中主要的日常任务枢纽。\n\n由于分线机制，你通常只能从托尔巴拉德半岛的营地接到同样的八个日常任务。想要有机会接到轮换中的其他任务，技巧是在日常重置前几分钟进入托尔巴拉德半岛。然后你可以等待日常重置，或离开该区域最多 15 分钟后再回来。小提示：开启战争模式做同样的事，它会把你分到不同的分线。在战争模式下接取的任务可以在战争模式之外完成和交付。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.\n\nDue to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
 		-- #endif
 		["icon"] = 409548,	-- achievement_zone_tolbarad
 		["groups"] = {

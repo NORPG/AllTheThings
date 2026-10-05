@@ -94,46 +94,12 @@ root(ROOTS.Zones, {
 						crit(26580),	-- Xothear, the Destroyer
 					}),
 					ach(8920, {	-- Don't Let the Tala-door Hit You on the Way Out (A)
-						["description"] = createLocalizationString({
-							readable = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Grakis in Stormshield.",
-							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO_8",
-							export = true,
-							text = {
-								en = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Grakis in Stormshield.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成该成就后，你可以在暴风之盾的格拉基斯处购买“塔拉多藏宝图”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Grakis in Stormshield.",
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8919, {	-- Don't Let the Tala-door Hit You on the Way Out (H)
-						["description"] = createLocalizationString({
-							readable = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Srikka in Warspear.",
-							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO_9",
-							export = true,
-							text = {
-								en = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Srikka in Warspear.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成该成就后，你可以在战争之矛的斯里卡处购买“塔拉多藏宝图”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Completing the Achievement will allow you to buy 'Talador Treasure Map' from Srikka in Warspear.",
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -160,7 +126,7 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(1572),	-- Brilliant Bloodfeather (PET!)
 						pet(1589, {	-- Crimsonwing Moth (PET!)
-							["description"] = "~L.ONLY_ONE_IS_UP_AT_A_TIME_ONCE_CAPTURED_OR",
+							["description"] = "Only one is up at a time. Once captured or killed, it immediately respawns.",
 							["coords"] = {
 								{ 32.4, 63.6, TALADOR },
 								{ 37.0, 63.8, TALADOR },
@@ -200,45 +166,11 @@ root(ROOTS.Zones, {
 						}),
 						pet(1595),	-- Flat-Tooth Calf (PET!)
 						pet(1583, {	-- Kelp Scuttler (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found on the Orunai Coast, Talador; Tideskorn Harbor, Stormheim; and around Nar'Thalas Academy, Azsuna.",
-								constant = "FOUND_ON_THE_ORUNAI_COAST_TALADOR_TIDESKORN",
-								export = true,
-								text = {
-									en = "Found on the Orunai Coast, Talador; Tideskorn Harbor, Stormheim; and around Nar'Thalas Academy, Azsuna.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在塔拉多的奥鲁奈海岸、风暴峡湾的潮鳞港，以及阿苏纳的纳萨拉斯学院周围找到。",
-									-- TODO: tw = "",
-								},
-							})
+							["description"] = "Found on the Orunai Coast, Talador; Tideskorn Harbor, Stormheim; and around Nar'Thalas Academy, Azsuna."
 						}),
 						pet(1441),	-- Mud Jumper (PET!)
 						pet(1599, {	-- Shadow Sporebat (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found only in Zangarra.",
-								constant = "FOUND_ONLY_IN_ZANGARRA",
-								export = true,
-								text = {
-									en = "Found only in Zangarra.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只在赞加拉出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found only in Zangarra.",
 						}),
 						pet(568, {	-- Silkbead Snail (PET!)
 							["coord"] = { 83.7, 29.2, TALADOR },
@@ -1196,7 +1128,7 @@ root(ROOTS.Zones, {
 					}),
 					q(34400, {	-- Frenzied Manafeeders
 						-- #if AFTER 7.0.3
-						["description"] = "~L.HIGH_LEVEL_PLAYERS_MAY_REQUIRE_CFF0070DDSOFT",
+						["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 						-- #endif
 						["qg"] = 78534,	-- Ageilaa
 						["coord"] = { 49.8, 56.1, TALADOR },
@@ -1618,24 +1550,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(34721, {	-- Seek Out the Seer
-						["description"] = createLocalizationString({
-							readable = "Travels back and forth on the road.",
-							constant = "TRAVELS_BACK_AND_FORTH_ON_THE_ROAD",
-							export = true,
-							text = {
-								en = "Travels back and forth on the road.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在道路上往返行走。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Travels back and forth on the road.",
 						["qg"] = 79724,	-- Elumm
 						["coords"] = {
 							{ 69.5, 46.9, TALADOR },
@@ -1645,7 +1560,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(33871, {	-- Seek Out the Seer
-						["description"] = "~L.TRAVELS_BACK_AND_FORTH_ON_THE_ROAD",
+						["description"] = "Travels back and forth on the road.",
 						["qg"] = 79724,	-- Elumm
 						["coords"] = {
 							{ 69.5, 46.9, TALADOR },
@@ -2180,24 +2095,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(78713, {	-- Galzomar
-						["description"] = createLocalizationString({
-							readable = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-							constant = "SIKTHIS_MAIDEN_OF_SLAUGHTER_KHARAZOS_THE",
-							export = true,
-							text = {
-								en = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "西基斯、杀戮少女、凯旋的卡拉佐斯和加尔佐玛尔共享同一个刷新点，且都会掉落该玩具。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 						["questID"] = 35219,
 						["coords"] = {
 							{ 56.6, 62.6, TALADOR },
@@ -2220,24 +2118,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116113) },	-- Breath of Talador (TOY!)
 					}),
 					n(85572, {	-- Grrbrrgle
-						["description"] = createLocalizationString({
-							readable = "Click on the Restless Crate.",
-							constant = "CLICK_ON_THE_RESTLESS_CRATE",
-							export = true,
-							text = {
-								en = "Click on the Restless Crate.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "点击不安的箱子。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Click on the Restless Crate.",
 						["provider"] = { "o", 235673 },	-- A Restless Crate
 						["questID"] = 36919,
 						["coord"] = { 22.2, 74.2, TALADOR },
@@ -2258,24 +2139,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(119403) },	-- Sargerei Soulbiter
 					}),
 					n(77715, {	-- Hammertooth
-						["description"] = createLocalizationString({
-							readable = "Swims all around the area.",
-							constant = "SWIMS_ALL_AROUND_THE_AREA",
-							export = true,
-							text = {
-								en = "Swims all around the area.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在该区域四处游动。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Swims all around the area.",
 						["questID"] = 34185,
 						["coords"] = {
 							{ 65.2, 43.0, TALADOR },
@@ -2293,7 +2157,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(112369) },	-- Hami-Down Cloak
 					}),
 					n(78710, {	-- Kharazos the Triumphant
-						["description"] = "~L.SIKTHIS_MAIDEN_OF_SLAUGHTER_KHARAZOS_THE",
+						["description"] = "Sikthis, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 						["questID"] = 35219,
 						["coords"] = {
 							{ 56.6, 62.6, TALADOR },
@@ -2324,24 +2188,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(119352) },	-- Demlash's Dashing Robe
 					}),
 					n(88494, {	-- Legion Vanguard
-						["description"] = createLocalizationString({
-							readable = "Kill about 10 Council Soulspeakers, then kill 3 waves of 3 mobs, and then Legion Vanguard will spawn. Kill him.",
-							constant = "KILL_ABOUT_10_COUNCIL_SOULSPEAKERS_THEN_KILL_3",
-							export = true,
-							text = {
-								en = "Kill about 10 Council Soulspeakers, then kill 3 waves of 3 mobs, and then Legion Vanguard will spawn. Kill him.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "击杀约 10 名议会灵魂语者，然后击杀 3 波每波 3 只的怪物，军团先锋就会刷新。击杀他。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kill about 10 Council Soulspeakers, then kill 3 waves of 3 mobs, and then Legion Vanguard will spawn. Kill him.",
 						["questID"] = 37342,
 						["isDaily"] = true,
 						["coord"] = { 37.96, 20.8, TALADOR },
@@ -2376,24 +2223,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116077) },	-- Pulsating Brain of No'losh
 					}),
 					n(87668, {	-- Orumo the Observer
-						["description"] = createLocalizationString({
-							readable = "Requires 5 players standing on the runes in front of Orumo to release him from the Demonic Field and make him attackable.\nUltimately, you can summon him with 5 of your own characters.\nBy placing them in front of the runes and then logging onto each of your 5 characters, you will have just enough time from the first to the last to release him.",
-							constant = "REQUIRES_5_PLAYERS_STANDING_ON_THE_RUNES_IN",
-							export = true,
-							text = {
-								en = "Requires 5 players standing on the runes in front of Orumo to release him from the Demonic Field and make him attackable.\nUltimately, you can summon him with 5 of your own characters.\nBy placing them in front of the runes and then logging onto each of your 5 characters, you will have just enough time from the first to the last to release him.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要 5 名玩家站在奥鲁莫前方的符文上，将他从恶魔力场中释放出来，并使其可被攻击。\n最终，你可以用你自己的 5 个角色召唤他。\n把它们放在符文前方，然后依次登录你的 5 个角色，从第一个到最后一个的时间刚好够释放他。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires 5 players standing on the runes in front of Orumo to release him from the Demonic Field and make him attackable.\nUltimately, you can summon him with 5 of your own characters.\nBy placing them in front of the runes and then logging onto each of your 5 characters, you will have just enough time from the first to the last to release him.",
 						["questID"] = 37344,
 						["isDaily"] = true,
 						["coord"] = { 31.4, 47.6, TALADOR },
@@ -2469,24 +2299,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(112370) },	-- Shirzir's Sticky Slippers
 					}),
 					n(78715, {	-- Sikthiss, Maiden of Slaughter
-						["description"] = createLocalizationString({
-							readable = "Sikthiss, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-							constant = "SIKTHISS_MAIDEN_OF_SLAUGHTER_KHARAZOS_THE",
-							export = true,
-							text = {
-								en = "Sikthiss, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "希克希斯·屠戮少女、凯旋者卡拉佐斯和加尔佐玛共享刷新点，并掉落该玩具。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Sikthiss, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 						["questID"] = 35219,
 						["coords"] = {
 							{ 56.2, 65.4, TALADOR },
@@ -2496,24 +2309,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116122) },	-- Burning Legion Missive (TOY!)
 					}),
 					n(51015, {	-- Silthide
-						["description"] = createLocalizationString({
-							readable = "Silthide has a respawn timer between 12-28 hours. Mount drop rate is 100% for all participants.",
-							constant = "SILTHIDE_HAS_A_RESPAWN_TIMER_BETWEEN_12_28",
-							export = true,
-							text = {
-								en = "Silthide has a respawn timer between 12-28 hours. Mount drop rate is 100% for all participants.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "希尔塞德的重新刷新计时在 12-28 小时之间。坐骑对所有参与者的掉落率均为 100%。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Silthide has a respawn timer between 12-28 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 							{ 62.0, 33.2, TALADOR },
 							{ 62.6, 46.0, TALADOR },
@@ -2529,24 +2325,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(117562) },	-- Steeltusk's Steel Tusk
 					}),
 					n(77634, {	-- Taladorantula
-						["description"] = createLocalizationString({
-							readable = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the Taladorantula.",
-							constant = "KILL_SMALL_SPIDERS_AROUND_THE_EGG_SACS_UNTIL",
-							export = true,
-							text = {
-								en = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the Taladorantula.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "击杀卵囊周围的小蜘蛛，直到你看到警告提示。第三次警告应该会刷出塔拉多巨蛛。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the Taladorantula.",
 						["questID"] = 34171,
 						["coord"] = { 59.0, 87.4, TALADOR },
 						["groups"] = { i(116126) },	-- Taladorantula Terrofang
@@ -2573,24 +2352,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(119383) },	-- Shoulderplates of the Vigilant
 					}),
 					n(77564, {	-- Viperlash
-						["description"] = createLocalizationString({
-							readable = "The spear spawns from the corpse of Viperlash.",
-							constant = "THE_SPEAR_SPAWNS_FROM_THE_CORPSE_OF_VIPERLASH",
-							export = true,
-							text = {
-								en = "The spear spawns from the corpse of Viperlash.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "长矛从毒鞭的尸体内出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The spear spawns from the corpse of Viperlash.",
 						["questID"] = 34148,
 						["coord"] = { 37.6, 74.7, TALADOR },
 						["groups"] = {
@@ -2600,24 +2362,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(77776, {	-- Wandering Vindicator
-						["description"] = createLocalizationString({
-							readable = "After you defeat him, he turns friendly and tells you to loot his sword.",
-							constant = "AFTER_YOU_DEFEAT_HIM_HE_TURNS_FRIENDLY_AND",
-							export = true,
-							text = {
-								en = "After you defeat him, he turns friendly and tells you to loot his sword.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "击败他之后，他会变得友善，并让你拾取他的剑。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "After you defeat him, he turns friendly and tells you to loot his sword.",
 						["questID"] = 34204,
 						["coord"] = { 69.6, 33.6, TALADOR },
 						["groups"] = {
@@ -2646,24 +2391,7 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(227793, {	-- Aarko's Family Treasure
-						["description"] = createLocalizationString({
-							readable = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",
-							constant = "SPEAK_TO_AARKO_ASSIST_HIM_IN_KILLING_2_WAVES_OF",
-							export = true,
-							text = {
-								en = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与阿尔科交谈。\n协助他击杀 2 波敌人，然后是苏洛克·暗风。\n拾取宝藏。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",
 						["questID"] = 34182,
 						["coord"] = { 36.6, 96.0, TALADOR },
 						["cr"] = 77664,	-- Aarko
@@ -2675,24 +2403,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116131) },	-- Amethyl Crystal
 					}),
 					o(228024, {	-- Aruuna Mining Cart
-						["description"] = createLocalizationString({
-							readable = "Inside Aruuna Crystal Mine.",
-							constant = "INSIDE_ARUUNA_CRYSTAL_MINE",
-							export = true,
-							text = {
-								en = "Inside Aruuna Crystal Mine.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在阿鲁纳水晶矿内。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside Aruuna Crystal Mine.",
 						["questID"] = 34260,
 						["coords"] = {
 							{ 78.1, 35.6, TALADOR },	-- Aruuna Crystal Mine Entrance
@@ -2708,24 +2419,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.3, 76.8, TALADOR },
 					}),
 					o(229354, {	-- Bright Coin
-						["description"] = createLocalizationString({
-							readable = "Below the bridge.",
-							constant = "BELOW_THE_BRIDGE",
-							export = true,
-							text = {
-								en = "Below the bridge.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在桥下。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Below the bridge.",
 						["questID"] = 34471,
 						["coord"] = { 73.5, 51.4, TALADOR },
 						["groups"] = { i(116127) },	-- Bright Coin
@@ -2768,24 +2462,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116120) },	-- Tasty Talador Lunch (TOY!)
 					}),
 					o(236483, {	-- Gift of the Ancients
-						["description"] = createLocalizationString({
-							readable = "Turn each statue to face the center.",
-							constant = "TURN_EACH_STATUE_TO_FACE_THE_CENTER",
-							export = true,
-							text = {
-								en = "Turn each statue to face the center.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "将每座雕像转向中心。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Turn each statue to face the center.",
 						["questID"] = 36829,
 						["coords"] = {
 							{ 27.8, 75.6, TALADOR },	-- Cave Entrance
@@ -2803,48 +2480,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.1, 36.1, TALADOR },
 					}),
 					o(239198, {	-- Isaari's Cache
-						["description"] = createLocalizationString({
-							readable = "Rescue 4 citizens from cocoons in Deathweb Hollow.",
-							constant = "RESCUE_4_CITIZENS_FROM_COCOONS_IN_DEATHWEB",
-							export = true,
-							text = {
-								en = "Rescue 4 citizens from cocoons in Deathweb Hollow.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "从死网山谷的茧中救出 4 名居民。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Rescue 4 citizens from cocoons in Deathweb Hollow.",
 						["questID"] = 34134,
 						["coord"] = { 57.2, 75.3, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = { i(117563) },	-- Deathweb Toxin Vial
 					}),
 					o(227953, {	-- Jug of Aged Ironwine
-						["description"] = createLocalizationString({
-							readable = "Inside the cave at the base of Orunai Delta. Guarded by Murdor the Drunk.",
-							constant = "INSIDE_THE_CAVE_AT_THE_BASE_OF_ORUNAI_DELTA",
-							export = true,
-							text = {
-								en = "Inside the cave at the base of Orunai Delta. Guarded by Murdor the Drunk.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在奥鲁奈三角洲底部的洞穴内。由醉汉穆尔多看守。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside the cave at the base of Orunai Delta. Guarded by Murdor the Drunk.",
 						["questID"] = 34233,
 						["coords"] = {
 							{ 64.8, 9.2,  TALADOR },	-- Cave Entrance
@@ -2853,7 +2496,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(117568) },	-- Jug of Ironwine
 					}),
 					o(228025, {	-- Keluu's Belongings
-						["description"] = "~L.BELOW_THE_BRIDGE",
+						["description"] = "Below the bridge.",
 						["questID"] = 34261,
 						["coord"] = { 75.7, 41.4, TALADOR },
 					}),
@@ -2889,7 +2532,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116132) },	-- Snail Shell Necklace
 					}),
 					o(239194, {	-- Norana's Cache
-						["description"] = "~L.RESCUE_4_CITIZENS_FROM_COCOONS_IN_DEATHWEB",
+						["description"] = "Rescue 4 citizens from cocoons in Deathweb Hollow.",
 						["questID"] = 34128,
 						["coord"] = { 61.0, 71.7, TALADOR },
 						["races"] = HORDE_ONLY,
@@ -2919,24 +2562,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(116117) },	-- Rook's Lucky Fishin' Line
 					}),
 					o(228483, {	-- Rusted Lockbox
-						["description"] = createLocalizationString({
-							readable = "Inside Deathweb Hollow. Swim down to the bottom of the cavern.",
-							constant = "INSIDE_DEATHWEB_HOLLOW_SWIM_DOWN_TO_THE_BOTTOM",
-							export = true,
-							text = {
-								en = "Inside Deathweb Hollow. Swim down to the bottom of the cavern.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在死网洞穴内。游到洞穴底部。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside Deathweb Hollow. Swim down to the bottom of the cavern.",
 						["questID"] = 34276,	-- triggers together with questID 34760 (another treasure)
 						["coords"] = {
 							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
@@ -2953,24 +2579,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(117570) },	-- Auchenai Soulbinder's Signet
 					}),
 					o(227868, {	-- Sparkling Pool
-						["description"] = createLocalizationString({
-							readable = "Requires Fishing.",
-							constant = "REQUIRES_FISHING",
-							export = true,
-							text = {
-								en = "Requires Fishing.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要钓鱼。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires Fishing.",
 						["questID"] = 34207,
 						["modelScale"] = 2,
 						["coord"] = { 39.2, 41.7, TALADOR },
@@ -2981,24 +2590,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(230643, {	-- Teroclaw Nest
-						["description"] = createLocalizationString({
-							readable = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride guarded by Teroclaw Chicks.\nCan be looted 1 time per character.",
-							constant = "CAN_BE_FOUND_AT_THE_BASE_OF_TREES_NEAR_ARUUNA",
-							export = true,
-							text = {
-								en = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride guarded by Teroclaw Chicks.\nCan be looted 1 time per character.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在阿鲁纳、光明之墓和沃金的荣耀附近由恐爪雏鸟守护的树底找到。\n每个角色可拾取 1 次。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride guarded by Teroclaw Chicks.\nCan be looted 1 time per character.",
 						["questID"] = 35162,
 						["modelScale"] = 2,
 						["coords"] = {
@@ -3040,24 +2632,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					n(84212, {	-- Kazbala
-						["description"] = createLocalizationString({
-							readable = "This vendor is only available until you reach 50 (Can be lower).\nItems are also available from vendors in Stormwind, Orgrimmar, and Dalaran.",
-							constant = "THIS_VENDOR_IS_ONLY_AVAILABLE_UNTIL_YOU_REACH",
-							export = true,
-							text = {
-								en = "This vendor is only available until you reach 50 (Can be lower).\nItems are also available from vendors in Stormwind, Orgrimmar, and Dalaran.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此商人只在你达到 50 级之前可用（可能更低）。\n这些物品也可以从暴风城、奥格瑞玛和达拉然的商人处购买。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This vendor is only available until you reach 50 (Can be lower).\nItems are also available from vendors in Stormwind, Orgrimmar, and Dalaran.",
 						["coord"] = { 45.2, 38.8, TALADOR },
 						["groups"] = {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
@@ -3093,24 +2668,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(84216, {	-- Talgaiir the Ironrender
-						["description"] = createLocalizationString({
-							readable = "This vendor is only available at lower levels before he becomes phased out.\nItems are also available from Big Zokk Torquewrench in Area 52.\nItems require Legionnaire/Knight-Captain or higher for purchase.",
-							constant = "THIS_VENDOR_IS_ONLY_AVAILABLE_AT_LOWER_LEVELS",
-							export = true,
-							text = {
-								en = "This vendor is only available at lower levels before he becomes phased out.\nItems are also available from Big Zokk Torquewrench in Area 52.\nItems require Legionnaire/Knight-Captain or higher for purchase.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此商人只在较低等级、尚未被相位移除前可用。\n这些物品也可以从 52 区的大个子佐克·扭矩扳手处购买。\n购买物品需要军团士兵/骑士队长或更高军衔。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This vendor is only available at lower levels before he becomes phased out.\nItems are also available from Big Zokk Torquewrench in Area 52.\nItems require Legionnaire/Knight-Captain or higher for purchase.",
 						["coord"] = { 45.6, 38.6, TALADOR },
 						["groups"] = pvp({
 							-- Note: don't mark these as unobtainable here because they are obtainable from Big Zokk in Netherstorm.

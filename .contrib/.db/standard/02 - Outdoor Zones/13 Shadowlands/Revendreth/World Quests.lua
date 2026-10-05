@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(WORLD_QUESTS, {
 			n(REWARDS, {
 				i(187858, {	-- Bunny Soul
-					["description"] = "~L.HAS_A_CHANCE_TO_BE_LISTED_AS_A_REWARD_FOR",
+					["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
 					["timeline"] = { ADDED_9_1_5 },
 				}),
 			}),
@@ -19,24 +19,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59904),	-- A Curious Cache
 			q(59905),	-- A Curious Cache
 			q(60655, {	-- A Stolen Stone Fiend
-				["description"] = createLocalizationString({
-					readable = "After you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is used to open the cage next to Penkle, which gives the pet.",
-					constant = "AFTER_YOU_INITIALLY_DEFEAT_EDGAR_THE_COLLECTOR",
-					export = true,
-					text = {
-						en = "After you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is used to open the cage next to Penkle, which gives the pet.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在任务结尾初次击败收藏家埃德加后，走到建筑后面，与一个名叫彭克尔的泥仆交谈以获得一把 |cFFFFFFFF笼子钥匙|r。\n\n这把钥匙用于打开彭克尔旁边的笼子，里面就是那只宠物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "After you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is used to open the cage next to Penkle, which gives the pet.",
 				["crs"] = { 170189 },	-- Penkle
 				["groups"] = {
 					i(180249),	-- Stone Fiend Tracker (QI!)
@@ -226,24 +209,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59808, {	-- Muck it Up
 				n(166292, {	-- Bog Beast
 					["questID"] = 59823,
-					["description"] = createLocalizationString({
-						readable = "Only available when the |cFFFFD700Muck It Up|r world quest is active. Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
-						constant = "ONLY_AVAILABLE_WHEN_THE_CFFFFD700MUCK_IT_UP_R",
-						export = true,
-						text = {
-							en = "Only available when the |cFFFFD700Muck It Up|r world quest is active. Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在 |cFFFFD700搅浑水|r 世界任务激活时可用。从任务怪物身上拾取原始淤泥，并将其投入泥沼中有几率召唤出该稀有。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available when the |cFFFFD700Muck It Up|r world quest is active. Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
 					["coord"] = { 35.8, 32.6, REVENDRETH },
 					["isDaily"] = true,
 					["groups"] = {
@@ -276,24 +242,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60656, {	-- Summon Your Sins
 				n(170434, {	-- Amalgamation of Sin
 					["questID"] = 60836,
-					["description"] = createLocalizationString({
-						readable = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r. The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
-						constant = "AT_THE_END_OF_THE_WORLD_QUEST_YOU_WILL_RECEIVE",
-						export = true,
-						text = {
-							en = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r. The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在世界任务结束时，你会获得一个|cFFFFFFFF罪孽聚合体|r或一个|cFF0070dd罪孽聚合体|r。白色版本会召唤一个守卫元素，蓝色版本会召唤稀有。\n\n到目前为止，似乎没有可靠的方法获得召唤稀有的物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r. The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
 					["coord"] = { 66.0, 33.2, REVENDRETH },
 					["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
 					["isDaily"] = true,
@@ -341,24 +290,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60654, {	-- Swarming Souls
 				n(170048, {	-- Manifestation of Wrath
 					["questID"] = 60729,
-					["description"] = createLocalizationString({
-						readable = "Only available when the |cFFFFD700Swarming Souls|r world quest is active. When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
-						constant = "ONLY_AVAILABLE_WHEN_THE_CFFFFD700SWARMING_SOULS",
-						export = true,
-						text = {
-							en = "Only available when the |cFFFFD700Swarming Souls|r world quest is active. When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在 |cFFFFD700蜂拥的灵魂|r 世界任务激活时可用。将迷失的灵魂交给宣誓仪式师时有几率刷新该稀有。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available when the |cFFFFD700Swarming Souls|r world quest is active. When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
 					["coord"] = { 49.8, 35.0, REVENDRETH },
 					["isDaily"] = true,
 					["crs"] = { 169917 },	-- Avowed Ritualist

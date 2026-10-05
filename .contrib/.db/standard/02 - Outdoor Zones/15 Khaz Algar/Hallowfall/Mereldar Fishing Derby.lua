@@ -7,24 +7,7 @@ local DERBY_MARK = 3055;
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
-			["description"] = createLocalizationString({
-				readable = "This event is available every Saturday.",
-				constant = "THIS_EVENT_IS_AVAILABLE_EVERY_SATURDAY",
-				export = true,
-				text = {
-					en = "This event is available every Saturday.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "此事件每周六开放。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This event is available every Saturday.",
 			["icon"] = 6012052,
 			["requireSkill"] = FISHING,
 			["groups"] = {
@@ -37,24 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["isWeekly"] = true,
 				}, {
 					q(82778, {	-- Hallowfall Fishing Derby
-						["description"] = createLocalizationString({
-							readable = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
-							constant = "NIBBLING_MINNOW_ARATHOR_HAMMERFISH_QUEEN_S",
-							export = true,
-							text = {
-								en = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "啃食米诺鱼、阿拉索锤头鱼、女王的诱背鱼",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
 						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
@@ -62,24 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(83529, {	-- Hallowfall Fishing Derby
-						["description"] = createLocalizationString({
-							readable = "Bismuth Bitterling, Whispering Stargazer, Regal Dottyback",
-							constant = "BISMUTH_BITTERLING_WHISPERING_STARGAZER_REGAL",
-							export = true,
-							text = {
-								en = "Bismuth Bitterling, Whispering Stargazer, Regal Dottyback",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "铋苦鱼、低语瞻星鱼、华丽准雀鲷",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Bismuth Bitterling, Whispering Stargazer, Regal Dottyback",
 						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
@@ -87,24 +36,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(83530, {	-- Hallowfall Fishing Derby
-						["description"] = createLocalizationString({
-							readable = "Bloody Perch, Roaring Anglerseeker, Spiked Sea Raven",
-							constant = "BLOODY_PERCH_ROARING_ANGLERSEEKER_SPIKED_SEA",
-							export = true,
-							text = {
-								en = "Bloody Perch, Roaring Anglerseeker, Spiked Sea Raven",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "血斑鲈、咆哮觅鮟鱇、尖刺海鸦",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Bloody Perch, Roaring Anglerseeker, Spiked Sea Raven",
 						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
@@ -112,24 +44,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(83531, {	-- Hallowfall Fishing Derby
-						["description"] = createLocalizationString({
-							readable = "Dilly-Dally Dace, Dornish Pike, Azj-Kahet Slum Shark",
-							constant = "DILLY_DALLY_DACE_DORNISH_PIKE_AZJ_KAHET_SLUM",
-							export = true,
-							text = {
-								en = "Dilly-Dally Dace, Dornish Pike, Azj-Kahet Slum Shark",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "磨蹭鲦鱼、多恩狗鱼、艾基-卡赫特贫民鲨",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dilly-Dally Dace, Dornish Pike, Azj-Kahet Slum Shark",
 						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {
@@ -137,24 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(83532, {	-- Hallowfall Fishing Derby
-						["description"] = createLocalizationString({
-							readable = "Crystalline Sturgeon, Specular Rainbowfish, Sanguine Dogfish",
-							constant = "CRYSTALLINE_STURGEON_SPECULAR_RAINBOWFISH",
-							export = true,
-							text = {
-								en = "Crystalline Sturgeon, Specular Rainbowfish, Sanguine Dogfish",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "水晶鲟鱼、镜面虹鱼、血色狗鲨",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Crystalline Sturgeon, Specular Rainbowfish, Sanguine Dogfish",
 						["provider"] = { "n", 226846 },	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["groups"] = {

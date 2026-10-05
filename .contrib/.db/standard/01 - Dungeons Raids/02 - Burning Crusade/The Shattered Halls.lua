@@ -199,31 +199,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, q(9524, {	-- Imprisoned in the Citadel [Alliance]
-					["description"] = createLocalizationString({
-						readable = "This quest can only be completed on Heroic Difficulty.",
-						constant = "THIS_QUEST_CAN_ONLY_BE_COMPLETED_ON_HEROIC",
-						export = true,
-						text = {
-							en = "This quest can only be completed on Heroic Difficulty.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务只能在英雄难度下完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest can only be completed on Heroic Difficulty.",
 					["qg"] = 17288,	-- Randy Whizzlesprocket
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 70,
 				})),
 				applyclassicphase(TBC_PHASE_FOUR, q(9525, {	-- Imprisoned in the Citadel [Horde]
-					["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_COMPLETED_ON_HEROIC",
+					["description"] = "This quest can only be completed on Heroic Difficulty.",
 					["qg"] = 17294,	-- Drisella
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
@@ -416,24 +399,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27517),	-- Bands of Nethekurse
 						i(27519),	-- Cloak of Malice
 						i(23726, {	-- Fel Ember
-							["description"] = createLocalizationString({
-								readable = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
-								constant = "USE_THE_AMULET_THAT_HE_DROPS_ON_THE_BRAZIER",
-								export = true,
-								text = {
-									en = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "将他掉落的护符用在他王座附近的火盆上，以收集余烬。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
 							["cost"] = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
 						}),
 						i(23735),	-- Grand Warlock's Amulet
@@ -501,7 +467,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
+				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30622, 1 },	-- Flamewrought Key [A]
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
@@ -535,7 +501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27517),	-- Bands of Nethekurse
 							i(27519),	-- Cloak of Malice
 							i(23726, {	-- Fel Ember
-								["description"] = "~L.USE_THE_AMULET_THAT_HE_DROPS_ON_THE_BRAZIER",
+								["description"] = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
 								["cost"] = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
 							}),
 							i(23735),	-- Grand Warlock's Amulet

@@ -1048,24 +1048,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47925, {	-- Shoak's on the Menu
-				["description"] = createLocalizationString({
-					readable = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
-					constant = "YOU_MUST_COMPLETE_THIS_STORYLINE_FOR_SHOAK_TO",
-					export = true,
-					text = {
-						en = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须完成此故事线，肖克才会出现在幽暗谷。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
 				["sourceQuests"] = { 47924 },	-- Profanity Filter
 				["qgs"] = {
 					125024,	-- Kajosh
@@ -1074,24 +1057,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.7, 33.2, NAZMIR },
 				["groups"] = {
 					n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{
-						["description"] = createLocalizationString({
-							readable = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
-							constant = "ALLIANCE_REWARDS_ARE_ONLY_EARNED_WHEN",
-							export = true,
-							text = {
-								en = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只有在部落角色上完成此内容才能获得联盟奖励，作为联盟则不会。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
 						["groups"] = {
 							i(155473),	-- Banisher Cinch
 							i(155481),	-- Crone-Seeker's Chain
@@ -1630,24 +1596,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(48093, {	-- Nagating the Threat
-					["description"] = createLocalizationString({
-						readable = "This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",
-						constant = "THIS_BONUS_OBJECTIVE_POPS_UP_AFTER_ACCEPTING",
-						export = true,
-						text = {
-							en = "This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该奖励目标会在接取|cffffff00克瓦格的选民|r后弹出。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",
 				}),
 				q(48588, {	-- Purge the Infection
 					["sourceQuests"] = {
@@ -1656,24 +1605,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(50080, {	-- Raiding the Raiders
-					["description"] = createLocalizationString({
-						readable = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
-						constant = "THIS_BONUS_OBJECTIVE_POPS_UP_AFTER_ACCEPTING_2",
-						export = true,
-						text = {
-							en = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该奖励目标会在接取|cffffff00血与火的消息|r后弹出。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
 					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
 					["groups"] = {
 						i(157029),	-- Bag of Zandalari Supplies (QI!)

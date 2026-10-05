@@ -197,24 +197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				pvp(applyclassicphase(SOD_PHASE_TWO, faction(2634, {	-- Blood Moon
-					["description"] = createLocalizationString({
-						readable = "This faction is probably not one that you can gain reputation with.",
-						constant = "THIS_FACTION_IS_PROBABLY_NOT_ONE_THAT_YOU_CAN",
-						export = true,
-						text = {
-							en = "This faction is probably not one that you can gain reputation with.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这很可能不是你能提升声望的一个阵营。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This faction is probably not one that you can gain reputation with.",
 					["timeline"] = { CREATED_1_15_1 },
 				}))),
 				-- #endif
@@ -439,7 +422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(4621, {	-- Avast Ye, Admiral!
-					["description"] = "~L.THIS_QUEST_ALSO_REQUIRES_YOU_TO_BE_HATED_OR",
+					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["coords"] = {
@@ -930,7 +913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 					["groups"] = {
 						q(619, {	-- Enticing Negolash
-							["description"] = "~L.THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE_2",
+							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
@@ -1083,7 +1066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(215, {	-- Jungle Secrets
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.EVERY_SO_OFTEN_THORSEN_WILL_GO_ON_PATROL_IF_YOU",
+					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
 					["qg"] = 738,	-- Private Thorsen
 					["coord"] = { 40.0, 8.0, STRANGLETHORN_VALE },
@@ -2645,76 +2628,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}), {
 				i(213168, {	-- Copper Blood Coin
-					["description"] = createLocalizationString({
-						readable = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",
-						constant = "BRING_BLOOD_FOR_THE_LOA_STACKS_TO_A_BLOOD_ALTAR",
-						export = true,
-						text = {
-							en = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "把血祭洛阿的层数带到地图上的血祭坛，即可兑换此硬币。\n\n兑换比率为每 1 层血祭洛阿换取 1 枚铜质血币。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",
 					["timeline"] = { REMOVED_1_15_2 },
 				}),
 				bloodcoin_c(100, i(213169)),	-- Silver Blood Coin
 				bloodcoin_s(100, i(213170)),	-- Gold Blood Coin
 				applyclassicphase(SOD_PHASE_THREE, i(221364, {	-- Copper Massacre Coin
-					["description"] = createLocalizationString({
-						readable = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Massacre Coin per 1 blood stack.",
-						constant = "BRING_BLOOD_FOR_THE_LOA_STACKS_TO_A_BLOOD_ALTAR_2",
-						export = true,
-						text = {
-							en = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Massacre Coin per 1 blood stack.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "把血祭洛阿的层数带到地图上的血祭坛，即可兑换此硬币。\n\n兑换比率为每 1 层血祭洛阿换取 1 枚铜质屠戮币。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Massacre Coin per 1 blood stack.",
 				})),
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_c(100, i(221365))),	-- Silver Massacre Coin
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
 				i(216884, {	-- Bloodthirst Blade
-					["description"] = createLocalizationString({
-						readable = "This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",
-						constant = "THIS_DROPS_FROM_THE_TROLL_BOSS_DURING_THE_BLOOD",
-						export = true,
-						text = {
-							en = "This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品由血月事件期间的巨魔首领掉落。可惜它无法被装备。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",
 					["cr"] = 218690,	-- Kha'damu <Chosen of the Blood Loa>
 				}),
 			}))),
 			-- #endif
 			n(TREASURES, {
 				pvp(o(179697, {	-- Arena Treasure Chest
-					["description"] = "~L.CHEST_IS_DROPPED_IN_ARENA_EVERY_3_HOURS_WARNING",
+					["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
@@ -2734,24 +2666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18712),	-- Arena Vambraces
 						i(18709),	-- Arena Wristguards
 						i(126948, {	-- Defending Champion
-							["description"] = createLocalizationString({
-								readable = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-								constant = "ONCE_YOU_HAVE_THE_ARENA_GRAND_MASTER",
-								export = true,
-								text = {
-									en = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当你获得竞技场大师成就后，下次用该角色打开宝箱时，除了其他战利品外还能获得卫冕冠军。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
 							["timeline"] = { ADDED_6_2_0 },
 							["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
 						}),
@@ -3348,24 +3263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 						-- Reagents
 						real(5, i(226405, {	-- Damaged Undermine Supply Crate
-							["description"] = createLocalizationString({
-								readable = "Contains random max level crafting materials.",
-								constant = "CONTAINS_RANDOM_MAX_LEVEL_CRAFTING_MATERIALS",
-								export = true,
-								text = {
-									en = "Contains random max level crafting materials.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "内含随机的满级制造材料。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Contains random max level crafting materials.",
 						})),
 						real(10, i(17012)),	-- Core Leather
 						real(15, i(17010)),	-- Fiery Core
@@ -3456,24 +3354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 100000,	-- 10g
 						})),
 						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
-							["description"] = createLocalizationString({
-								readable = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-								constant = "YOU_NEED_TO_COMPLETE_THE_FRIX_XIZZIX_QUEST",
-								export = true,
-								text = {
-									en = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你需要先完成弗利克斯·希兹克斯的任务。（Crieve 待办：记录该任务链！）",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
 							-- ["sourceQuest"] = ,	--
 							["cost"] = 10000,	-- 1g
 							["classes"] = { PALADIN },
@@ -3714,7 +3595,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1564,	-- Bloodsail Warlock
 					},
 					-- #else
-					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_KILLED",
+					["description"] = "This item has a chance to drop from any killed creature in the zone.",
 					-- #endif
 				}),
 				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining (RECIPE!)
@@ -3777,7 +3658,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2546,	-- Fleet Master Firallon
 					},
 					-- #else
-					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_KILLED",
+					["description"] = "This item has a chance to drop from any killed creature in the zone.",
 					-- #endif
 					["timeline"] = { ADDED_1_11_1 },
 				}),
@@ -3795,7 +3676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 				-- #endif
 				i(1624, {	-- Skullsplitter Helm
@@ -3831,7 +3712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
 				}),
 				i(8153, {	-- Wildvine
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 			}),
 		},

@@ -18,24 +18,7 @@ root(ROOTS.Zones, {
 					o(241216, {	-- Treasure Chest
 						["questID"] = 38503,
 						["coord"] = { 83.3, 24.6, HELHEIM },
-						["description"] = createLocalizationString({
-							readable = "Inside a sunken ship.",
-							constant = "INSIDE_A_SUNKEN_SHIP",
-							export = true,
-							text = {
-								en = "Inside a sunken ship.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在一艘沉船内。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside a sunken ship.",
 					}),
 					o(241272, {	-- Treasure Chest
 						["questID"] = 38516,

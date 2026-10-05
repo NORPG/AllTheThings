@@ -100,24 +100,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(537, {	-- Dragonbone Hatchling (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found around The Dragon Wastes.",
-								constant = "FOUND_AROUND_THE_DRAGON_WASTES",
-								export = true,
-								text = {
-									en = "Found around The Dragon Wastes.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在巨龙废土周围可找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found around The Dragon Wastes.",
 							["coords"] = {
 								{ 52.5, 26.0, DRAGONBLIGHT },
 								{ 62.5, 29.5, DRAGONBLIGHT },
@@ -239,24 +222,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
 						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-						["description"] = createLocalizationString({
-							readable = "Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Crush/Deflection) and Alpine Hare (Flurry/Dodge/Burrow).",
-							constant = "OKRUT_S_PETS_ARE_LEVEL_25_OF_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Crush/Deflection) and Alpine Hare (Flurry/Dodge/Burrow).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "奥克鲁特的宠物为 25 级，宠物类型依次如下：\n1. 龙类 - 使用人型（高伤害）或亡灵（高血量）宠物。\n2. 亡灵 - 使用小动物（高伤害）或水生（高血量）宠物。\n3. 亡灵 - 同上。\n\n若要计入“惊人的大冒险”的进度，请使用雷象玩偶和两只强力宠物（例如阿努比萨斯人偶（重击/偏斜）和高山野兔（乱舞/躲闪/钻地））的阵容进行对战。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Crush/Deflection) and Alpine Hare (Flurry/Dodge/Burrow).",
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
@@ -336,24 +302,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12055, {	-- A Strange Device (A)
-						["description"] = createLocalizationString({
-							readable = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
-							constant = "MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700PREVENT",
-							export = true,
-							text = {
-								en = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行或已完成|cFFFFD700阻止协定|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
 						["sourceQuest"] = 12000,	-- Rifle the Bodies (A)
 						["provider"] = { "i", 36742 },	-- Goramosh's Strange Device
 						["coord"] = { 19.5, 58.1, DRAGONBLIGHT },
@@ -361,7 +310,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 26349 },	-- Goramosh
 					}),
 					q(12059, {	-- A Strange Device (H)
-						["description"] = "~L.MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700PREVENT",
+						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
 						["sourceQuest"] = 11999,	-- Rifle the Bodies (H)
 						["provider"] = { "i", 36746 },	-- Goramosh's Strange Device
 						["coord"] = { 19.5, 58.1, DRAGONBLIGHT },
@@ -1157,24 +1106,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11958, {	-- Let Nothing Go To Waste
-						["description"] = createLocalizationString({
-							readable = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
-							constant = "THE_BREADCRUMB_QUESTS_HAVE_COLLECTIBLE_REWARDS",
-							export = true,
-							text = {
-								en = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "前置引导任务有可收藏的奖励。接取这个任务前一定要先完成其中一个！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
 						["sourceQuests"] = {
 							12117,	-- Travel to Mo'aki Harbor (Borean Tundra)
 							12118,	-- Travel to Mo'aki Harbor (Howling Fjord)
@@ -2344,24 +2276,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 27680 },	-- Dahlia Suntouch
 					}),
 					q(12168, {	-- The Favor of Zangus
-						["description"] = createLocalizationString({
-							readable = "Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",
-							constant = "MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700KILL_THE",
-							export = true,
-							text = {
-								en = "Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行或已完成|cFFFFD700杀死教徒|r，该物品才会掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",
 						["sourceQuest"] = 12167,	-- Kill the Cultists
 						["provider"] = { "i", 36958 },	-- The Favor of Zangus
 						["races"] = ALLIANCE_ONLY,
@@ -2620,24 +2535,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12271, {	-- The Rod of Compulsion
-						["description"] = createLocalizationString({
-							readable = "Must be on or have completed |cFFFFD700Torture the Torturer|r.",
-							constant = "MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700TORTURE",
-							export = true,
-							text = {
-								en = "Must be on or have completed |cFFFFD700Torture the Torturer|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行或已完成|cFFFFD700折磨折磨者|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on or have completed |cFFFFD700Torture the Torturer|r.",
 						["sourceQuest"] = 12245,	-- No Mercy for the Captured
 						["provider"] = { "i", 37432 },	-- Torturer's Rod
 						["coord"] = { 69.7, 71.9, DRAGONBLIGHT },
@@ -3095,7 +2993,7 @@ root(ROOTS.Zones, {
 							}, {	-- Revered
 								i(44200),	-- Ancestral Sinew Wristguards
 								i(50370, {	-- Arcanum of Blissful Mending
-									["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 									["timeline"] = { REMOVED_5_0_4 },
 									["filterID"] = CONSUMABLES,
 								}),
@@ -3186,46 +3084,12 @@ root(ROOTS.Zones, {
 						["crs"] = { 27333 },	-- Onslaught Mason
 					}),
 					i(120137, {	-- Tome of Polymorph: Polar Bear Cub (CI!)
-						["description"] = createLocalizationString({
-							readable = "Expect to kill hundreds of Actic Grizzly bears before seeing this tome drop.",
-							constant = "EXPECT_TO_KILL_HUNDREDS_OF_ACTIC_GRIZZLY_BEARS",
-							export = true,
-							text = {
-								en = "Expect to kill hundreds of Actic Grizzly bears before seeing this tome drop.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "预计要击杀数百只北极灰熊才能看到这本典籍掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Expect to kill hundreds of Actic Grizzly bears before seeing this tome drop.",
 						["timeline"] = { ADDED_6_0_2 },
 						["crs"] = { 26482 },	-- Arctic Grizzly
 					}),
 					i(38262, {	-- Well-Worn Bat
-						["description"] = createLocalizationString({
-							readable = "Only drops from Foreman Kaleiki, who spawns during the Horde quest 'A Means to an End'. The questline starts at Venomspite, and Foreman Kaleiki can be spawned as many times as needed.",
-							constant = "ONLY_DROPS_FROM_FOREMAN_KALEIKI_WHO_SPAWNS",
-							export = true,
-							text = {
-								en = "Only drops from Foreman Kaleiki, who spawns during the Horde quest 'A Means to an End'. The questline starts at Venomspite, and Foreman Kaleiki can be spawned as many times as needed.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅从工头卡列基身上掉落，他会在部落任务“终结的手段”期间刷新。任务线起始于怨毒镇，工头卡列基可以根据需要反复刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only drops from Foreman Kaleiki, who spawns during the Horde quest 'A Means to an End'. The questline starts at Venomspite, and Foreman Kaleiki can be spawned as many times as needed.",
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },
 						["crs"] = {
 							27238,	-- Foreman Kaleiki

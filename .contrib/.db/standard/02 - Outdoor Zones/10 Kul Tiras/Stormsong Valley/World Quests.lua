@@ -577,24 +577,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					n(129803, {	-- Whiplash
 						["questID"] = 52296,
-						["description"] = createLocalizationString({
-							readable = "This rare only spawns during its associated world quest.",
-							constant = "THIS_RARE_ONLY_SPAWNS_DURING_ITS_ASSOCIATED",
-							export = true,
-							text = {
-								en = "This rare only spawns during its associated world quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此稀有怪仅在其关联的世界任务期间刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This rare only spawns during its associated world quest.",
 						["coord"] = { 47.32, 65.81, STORMSONG_VALLEY },
 						["groups"] = {
 							crit(41841, {	-- Whiplash

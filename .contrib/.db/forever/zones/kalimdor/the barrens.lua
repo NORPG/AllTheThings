@@ -72,24 +72,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 		}),
 		prof(FISHING, {
 			i(6651, {	-- Broken Wine Bottle
-				["description"] = createLocalizationString({
-					readable = "Drops from fishing in the Sludge Fen.",
-					constant = "DROPS_FROM_FISHING_IN_THE_SLUDGE_FEN",
-					export = true,
-					text = {
-						en = "Drops from fishing in the Sludge Fen.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在淤泥沼泽钓鱼时掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from fishing in the Sludge Fen.",
 			}),
 		}),
 		lockpicking({
@@ -119,24 +102,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["learnedAt"] = 25,
 				["groups"] = {
 					i(7968, {	-- Southsea Treasure
-						["description"] = createLocalizationString({
-							readable = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
-							constant = "WHEN_YOU_OPEN_THE_CHEST_POLLY_WILL_SPAWN_AND",
-							export = true,
-							text = {
-								en = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "当你打开箱子时，波莉会生成并攻击你。使用 E.C.A.C. 杀死它并拾取宝藏。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
 						["cost"] = {{ "i", 7970, 1 }},	-- E.C.A.C.
 						["cr"] = 7168,	-- Polly
 					}),
@@ -420,7 +386,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["groups"] = {
 					recipe(3599),	-- Searing Totem
 					i(5176, {	-- Fire Totem
-						["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+						["description"] = "You must keep this in your bags forever.",
 					}),
 					i(6654),	-- Torch of the Eternal Flame
 				},
@@ -573,7 +539,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["groups"] = {
 					recipe(5394),	-- Healing Stream Totem
 					i(5177, {	-- Water Totem
-						["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+						["description"] = "You must keep this in your bags forever.",
 					}),
 				},
 			}),
@@ -1563,24 +1529,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["lvl"] = 25,
 			}),
 			q(1498, {	-- Path of Defense
-				["description"] = createLocalizationString({
-					readable = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
-					constant = "COMPLETING_THIS_QUEST_PREVENTS_YOU_FROM",
-					export = true,
-					text = {
-						en = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成此任务会使你无法在银松森林接受“与迪林格交谈”和“劈砍者乌拉克”。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
 				["sourceQuest"] = 1505,	-- Veteran Uzzek
 				["qg"] = 5810,	-- Uzzek
 				["coord"] = { 61.38, 21.11, MAP.THE_BARRENS },
@@ -1791,24 +1740,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["lvl"] = 14,
 			}),
 			q(866,	{	-- Root Samples
-				["description"] = createLocalizationString({
-					readable = "To access this quest, you must have at least 40 skill in Herbalism.",
-					constant = "TO_ACCESS_THIS_QUEST_YOU_MUST_HAVE_AT_LEAST_40",
-					export = true,
-					text = {
-						en = "To access this quest, you must have at least 40 skill in Herbalism.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要接到此任务，你必须至少有 40 点草药学技能。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To access this quest, you must have at least 40 skill in Herbalism.",
 				["qg"] = 3446,	-- Mebok Mizzyrix
 				["coord"] = { 62.4, 37.6, MAP.THE_BARRENS },
 				["requireSkill"] = HERBALISM,
@@ -2758,24 +2690,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3672, {	-- Boahn <Druid of the Fang>
 				["coord"] = { 49.1, 33.9, MAP.THE_BARRENS },
-				["description"] = createLocalizationString({
-					readable = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
-					constant = "ROAMS_AROUND_THE_WATERFALL_JUST_OUTSIDE_THE",
-					export = true,
-					text = {
-						en = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在哀嚎洞穴副本传送门外的瀑布附近游荡。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 				["groups"] = {
 					i(5423),	-- Boahn's Fang
 					i(5422),	-- Brambleweed Leggings
@@ -2816,24 +2731,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(4785, {	-- Brimstone Belt
-						["description"] = createLocalizationString({
-							readable = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-							constant = "THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
-							export = true,
-							text = {
-								en = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "由于掉落此物品的怪物所属阵营，此物品只有部落玩家才能自然获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					}),
 				},
 			}),
@@ -2894,7 +2792,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(2035, {	-- Sword of the Night Sky
-						["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
+						["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					}),
 				},
 			}),
@@ -2994,24 +2892,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			n(3652, {	-- Trigore the Lasher
-				["description"] = createLocalizationString({
-					readable = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
-					constant = "INSIDE_THE_POOL_OF_WATER_OUTSIDE_THE_WAILING",
-					export = true,
-					text = {
-						en = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在哀嚎洞穴副本传送门外的水池中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 				["coord"] = { 52.0, 54.0, MAP.THE_BARRENS },
 				["groups"] = {
 					i(5425),	-- RuneChain Girdle [7.0.3+] / Runescale Girdle
@@ -3021,24 +2902,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 		}),
 		n(TREASURES, {
 			o(3642, {	-- Kolkars' Booty
-				["description"] = createLocalizationString({
-					readable = "Contains random low level greens.",
-					constant = "CONTAINS_RANDOM_LOW_LEVEL_GREENS",
-					export = true,
-					text = {
-						en = "Contains random low level greens.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "包含随机低等级绿色物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Contains random low level greens.",
 				["coords"] = {
 					{ 43.0, 23.5, MAP.THE_BARRENS },
 					{ 52.8, 41.8, MAP.THE_BARRENS },
@@ -3174,24 +3038,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 52.4, 30.6, MAP.THE_BARRENS },
 					{ 61.8, 38.2, MAP.THE_BARRENS },
 				},
-				["description"] = createLocalizationString({
-					readable = "Travels on the road between Ratchet and The Crossroads.",
-					constant = "TRAVELS_ON_THE_ROAD_BETWEEN_RATCHET_AND_THE",
-					export = true,
-					text = {
-						en = "Travels on the road between Ratchet and The Crossroads.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在棘齿城和十字路口之间的道路上巡逻。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Travels on the road between Ratchet and The Crossroads.",
 				["groups"] = {
 					i(4765, {	-- Enamelled Broadsword
 						["isLimited"] = true,
@@ -3379,24 +3226,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			i(5051, {	-- Dig Rat
-				["description"] = createLocalizationString({
-					readable = "Only drops from Dig Rats in The Barrens.",
-					constant = "ONLY_DROPS_FROM_DIG_RATS_IN_THE_BARRENS",
-					export = true,
-					text = {
-						en = "Only drops from Dig Rats in The Barrens.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅由贫瘠之地的掘地鼠掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Only drops from Dig Rats in The Barrens.",
 				["coord"] = { 48.8, 84.8, MAP.THE_BARRENS },	-- Bael Modan Excavation
 				["cr"] = 3444,	-- Dig Rat
 			}),
@@ -3430,27 +3260,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
-				["description"] = createLocalizationString({
-					readable = "Can drop from any mob in the Barrens.",
-					constant = "CAN_DROP_FROM_ANY_MOB_IN_THE_BARRENS",
-					export = true,
-					text = {
-						en = "Can drop from any mob in the Barrens.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可由贫瘠之地的任意怪物掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from any mob in the Barrens.",
 			}),
 			i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
-				["description"] = "~L.CAN_DROP_FROM_ANY_MOB_IN_THE_BARRENS",
+				["description"] = "Can drop from any mob in the Barrens.",
 			}),
 			i(5165, {	-- Sunscale Feather
 				["crs"] = {

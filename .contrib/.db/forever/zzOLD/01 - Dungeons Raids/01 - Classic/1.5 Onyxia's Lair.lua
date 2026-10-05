@@ -234,24 +234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84555, {	-- Nostro's Compendium
-					["description"] = createLocalizationString({
-						readable = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-						constant = "YOU_GET_THIS_QUEST_BY_LOOTING_NOSTRO_S",
-						export = true,
-						text = {
-							en = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以通过在厄运之槌的首领身上拾取诺斯特罗的纲要来获得此任务。\n\n你也可以在拍卖行以高昂的价格购买它！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["provider"] = { "i", 228680 },	-- Nostro's Compendium of Dragon Slaying
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { MAP.DIRE_MAUL },
@@ -261,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7507, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
-					["description"] = "~L.YOU_GET_THIS_QUEST_BY_LOOTING_NOSTRO_S",
+					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
@@ -273,24 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				q(84546, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
-					["description"] = createLocalizationString({
-						readable = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
-						constant = "YOU_MUST_DEFEAT_THE_4_DEMONS_LISTED_BELOW_BY",
-						export = true,
-						text = {
-							en = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须独自一人、不带宠物击败下列 4 个恶魔才能完成此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					-- ["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
@@ -304,24 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
-							["description"] = createLocalizationString({
-								readable = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
-								constant = "THERE_ARE_TWO_THINGS_THAT_CAN_MAKE_THIS_FIGHT",
-								export = true,
-								text = {
-									en = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "有两件事会让这场战斗变得困难：她的宠物，一只名叫“宝贝”的地狱犬，以及较低的自然抗性。大多数猎人倾向于用冰冻陷阱控制“宝贝”。使用远程攻击毫无用处，因为她会施放一个大幅降低远程攻击强度的减益效果。你最好的选择是使用野性守护 + 一瓶强效自然防护药水（来削弱并吸收她的闪电箭），并近战攻击她直到她倒下。\n\n位于安戈洛环形山。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
 							["coord"] = { 34.5, 41.1, MAP.UNGORO_CRATER },
 							["crs"] = {
 								14527,	-- Simone the Inconspicuous
@@ -330,24 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(2, {	-- 0/1 Klinfran's Head
 							["provider"] = { "i", 18953 },	-- Klinfran's Head
-							["description"] = createLocalizationString({
-								readable = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
-								constant = "USE_CONCUSSIVE_SHOT_SERPENT_STING_TO_KITE_HIM",
-								export = true,
-								text = {
-									en = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "使用震荡射击/毒蛇钉刺把他风筝到路上。你应该清楚毒蛇钉刺的持续时间，每趟路上只用一个，如果你觉得能冒险就多用几个。一旦效果结束，就放下一个冰冻陷阱让他站在里面，然后跑到另一侧的最大射程处重新开始。如果因为任何原因他挣脱了陷阱，你可以使用驱散射击，或者用震荡射击一直绕圈风筝他，直到冷却结束。\n\n不用担心他的狂暴，只要你操作正确，他根本碰不到你。\n\n位于燃烧平原。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
 							["coord"] = { 25.3, 65.9, MAP.BURNING_STEPPES },
 							["crs"] = {
 								14529,	-- Franklin the Friendly
@@ -356,24 +288,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(3, {	-- 0/1 Solenor's Head
 							["provider"] = { "i", 18954 },	-- Solenor's Head
-							["description"] = createLocalizationString({
-								readable = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
-								constant = "THIS_IS_THE_HARDEST_DEMON_STRENGTHS_HE_DOES_NOT",
-								export = true,
-								text = {
-									en = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这是最难对付的恶魔：\n\n优势：\n* 他不会可预测地追击你。他经常停下来施放恐惧（使你迷失方向，并造成约 800 点伤害），或者停下来向你发射追踪甲虫。\n* 追踪甲虫基本上让你无法使用绷带。它们移动极慢，但攻击力极高\n* 如果你离开近战范围（大约超过 2-3 码），他会使用一个瞬发的恐惧法术，也会立即造成 700-800 点伤害，而且他可以快速施放，几乎像是连续施法。暗影防护药水确实能吸收这些伤害，但即使使用强效药水，他也能很快耗光它们。恐惧还可能把你送进追踪甲虫群中\n* 法力条似乎无限，所以蝰蛇钉刺毫无用处\n* 毒蝎钉刺对他几乎没有效果\n* 在普通形态下，他的近战攻击极其猛烈且迅速（200+）\n\n弱点：\n* 如果你对他使用 3 级摔绊，它会以“致残摔绊”将他完全定身 30 秒。\n* 当你保持在近战范围内时，追踪导弹（爬行者）不会被发射\n* 当你保持在近战范围内时，他不会施放恐惧\n* 必须在完全开战前通过冰霜陷阱使他被减速\n\n位于希利苏斯。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
 							["coord"] = { 24.7, 76.0, MAP.SILITHUS },
 							["crs"] = {
 								14536,	-- Nelson the Nice
@@ -382,24 +297,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(4, {	-- 0/1 Artorius's Head
 							["provider"] = { "i", 18955 },	-- Artorius's Head
-							["description"] = createLocalizationString({
-								readable = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
-								constant = "KITE_HIM_USING_ASPECT_OF_THE_CHEETAH_KEEP",
-								export = true,
-								text = {
-									en = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "使用猎豹守护风筝他。全程保持蝰蛇钉刺，并在他靠近时使用震荡射击。重要的是保持在恶魔末日 30 码之外，同时又要处于奥术射击的射程内，这样他才会继续追击你。如果你完全依赖蝰蛇钉刺造成伤害，他会脱离仇恨并回到起始位置。施加蝰蛇钉刺后数到 4，在它消失前再次施加（伤害会叠加）。你可以通过第二条伤害记录“钉刺创伤”看到这一点，每次施加钉刺它都会持续提高。\n\n务必清理你打算战斗的区域，以免被路过的其他 NPC 打晕。\n\n位于冬泉谷。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
 							["coord"] = { 60.3, 13.2, MAP.WINTERSPRING },
 							["crs"] = {
 								14531,	-- Artorius the Amiable
@@ -411,24 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["groups"] = { i(228334) },	-- Rhok'delar, Longbow of the Ancient Keepers
 						}),
 						i(228332, {	-- Lok'delar, Stave of the Ancient Keepers
-							["description"] = createLocalizationString({
-								readable = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
-								constant = "GO_BACK_TO_FELWOOD_AFTER_HAVING_COMPLETED_ALL",
-								export = true,
-								text = {
-									en = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成所有任务后回到费伍德森林，会出现一个对话图标，让你可以与其中一位上古守护者互动。与他交谈，他就会把法杖给你。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
 							["sourceQuests"] = {
 								7634,	-- Ancient Sinew Wrapped Lamina
 								7635,	-- A Proper String
@@ -440,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
-					["description"] = "~L.YOU_MUST_DEFEAT_THE_4_DEMONS_LISTED_BELOW_BY",
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					-- ["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
@@ -454,7 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if NOT SEASON_OF_DISCOVERY
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
-							["description"] = "~L.THERE_ARE_TWO_THINGS_THAT_CAN_MAKE_THIS_FIGHT",
+							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
 							["coord"] = { 34.5, 41.1, MAP.UNGORO_CRATER },
 							["crs"] = {
 								14527,	-- Simone the Inconspicuous
@@ -463,7 +344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(2, {	-- 0/1 Klinfran's Head
 							["provider"] = { "i", 18953 },	-- Klinfran's Head
-							["description"] = "~L.USE_CONCUSSIVE_SHOT_SERPENT_STING_TO_KITE_HIM",
+							["description"] = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
 							["coord"] = { 25.3, 65.9, MAP.BURNING_STEPPES },
 							["crs"] = {
 								14529,	-- Franklin the Friendly
@@ -472,7 +353,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(3, {	-- 0/1 Solenor's Head
 							["provider"] = { "i", 18954 },	-- Solenor's Head
-							["description"] = "~L.THIS_IS_THE_HARDEST_DEMON_STRENGTHS_HE_DOES_NOT",
+							["description"] = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
 							["coord"] = { 24.7, 76.0, MAP.SILITHUS },
 							["crs"] = {
 								14536,	-- Nelson the Nice
@@ -481,7 +362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						objective(4, {	-- 0/1 Artorius's Head
 							["provider"] = { "i", 18955 },	-- Artorius's Head
-							["description"] = "~L.KITE_HIM_USING_ASPECT_OF_THE_CHEETAH_KEEP",
+							["description"] = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
 							["coord"] = { 60.3, 13.2, MAP.WINTERSPRING },
 							["crs"] = {
 								14531,	-- Artorius the Amiable
@@ -500,7 +381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(18715, {	-- Lok'delar, Stave of the Ancient Keepers
-							["description"] = "~L.GO_BACK_TO_FELWOOD_AFTER_HAVING_COMPLETED_ALL",
+							["description"] = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
 							["sourceQuests"] = {
 								7634,	-- Ancient Sinew Wrapped Lamina
 								7635,	-- A Proper String
@@ -547,70 +428,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Treated Ancient Blade
 							["provider"] = { "i", 18492 },	-- Treated Ancient Blade
-							["description"] = createLocalizationString({
-								readable = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
-								constant = "DROPS_FROM_ONYXIA_WHEN_YOU_USE_THE_HEATED",
-								export = true,
-								text = {
-									en = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当你对奥妮克希亚的尸体使用加热的上古之刃时，它会掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
 							["cr"] = 10184,	-- Onyxia
 							["cost"] = { { "i", 18488, 1 } },	-- Heated Ancient Blade
 						}),
 						{
 							["itemID"] = 18488,	-- Heated Ancient Blade
 							["provider"] = { "o", 179562 },	-- Ancient Heated Blade
-							["description"] = createLocalizationString({
-								readable = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
-								constant = "ONCE_THE_BOSS_USES_HER_BREATH_ATTACK_ON_YOUR",
-								export = true,
-								text = {
-									en = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当首领对你的未烧制上古之刃使用吐息攻击后，从地上拾取此物品，然后在击败奥妮克希亚后刺入她的尸体。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
 							["cost"] = { { "i", 18489, 1 } },	-- Unfired Ancient Blade
 						},
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = createLocalizationString({
-								readable = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
-								constant = "PLACE_THIS_IN_FRONT_OF_ONYXIA_S_BREATH_ATTACK",
-								export = true,
-								text = {
-									en = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在“奎尔塞拉的铸造”任务期间，将此物品放在奥妮克希亚的吐息攻击前方。\n\n你可能需要推迟将此物品放在地上，直到第 3 阶段吐息进入冷却。\n\n注意，你可以在第 1 或第 3 阶段加热这把剑。加热的上古之刃有 20 分钟的劣化时间。这不是冷却时间。时间一到，它不会变回未烧制上古之刃，而是会从你的背包中消失，你必须返回厄运之槌、放弃任务并重新接取才能获得替代品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
 						i(228679),	-- Quel'Serrar
 					},
@@ -629,19 +459,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if NOT SEASON_OF_DISCOVERY
 						objective(1, {	-- 0/1 Treated Ancient Blade
 							["provider"] = { "i", 18492 },	-- Treated Ancient Blade
-							["description"] = "~L.DROPS_FROM_ONYXIA_WHEN_YOU_USE_THE_HEATED",
+							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
 							["cr"] = 10184,	-- Onyxia
 							["cost"] = { { "i", 18488, 1 } },	-- Heated Ancient Blade
 						}),
 						{
 							["itemID"] = 18488,	-- Heated Ancient Blade
 							["provider"] = { "o", 179562 },	-- Ancient Heated Blade
-							["description"] = "~L.ONCE_THE_BOSS_USES_HER_BREATH_ATTACK_ON_YOUR",
+							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
 							["cost"] = { { "i", 18489, 1 } },	-- Unfired Ancient Blade
 						},
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = "~L.PLACE_THIS_IN_FRONT_OF_ONYXIA_S_BREATH_ATTACK",
+							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
 						-- #endif
 						i(18348),	-- Quel'Serrar

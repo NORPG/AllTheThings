@@ -6,24 +6,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 		header(HEADERS.Achievement, 14782, {
 			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]
 			-- Note: [As of November 11th, 2021 SL Character boost increased from 50 to 60. Some of the old 50 items went to the new class trial level 50]
-			["description"] = createLocalizationString({
-				readable = "These are gained by using a Level 50 Boost of that particular class. Each class has one default spec. Shamans and Druids have two specs available and both are needed to 100% each category.",
-				constant = "THESE_ARE_GAINED_BY_USING_A_LEVEL_50_BOOST_OF",
-				export = true,
-				text = {
-					en = "These are gained by using a Level 50 Boost of that particular class. Each class has one default spec. Shamans and Druids have two specs available and both are needed to 100% each category.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些是通过对特定职业使用 50 级直升获得的。每个职业都有一个默认专精。萨满和德鲁伊有两个可用专精，要将每个类别达到 100% 两者都需要。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These are gained by using a Level 50 Boost of that particular class. Each class has one default spec. Shamans and Druids have two specs available and both are needed to 100% each category.",
 			["lvl"] = 50,
 			["groups"] = {
 				cl(DEATHKNIGHT, {

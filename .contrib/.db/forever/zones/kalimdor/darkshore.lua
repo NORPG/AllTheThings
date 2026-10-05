@@ -396,24 +396,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(994, {	-- Escape Through Force
 				["altQuests"] = { 995 },	-- Escape Through Stealth
-				["description"] = createLocalizationString({
-					readable = "This quest becomes unavailable if you complete Escape Through Stealth",
-					constant = "THIS_QUEST_BECOMES_UNAVAILABLE_IF_YOU_COMPLETE",
-					export = true,
-					text = {
-						en = "This quest becomes unavailable if you complete Escape Through Stealth",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你完成“潜行逃离”，此任务就会变得无法接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
 				["sourceQuest"] = 993,	-- A Lost Master (2/2)
 				["qg"] = 3692,	-- Volcor
 				["coord"] = { 45.0, 85.4, MAP.DARKSHORE },
@@ -425,24 +408,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(995, {	-- Escape Through Stealth
 				["altQuests"] = { 994 },	-- Escape Through Force
-				["description"] = createLocalizationString({
-					readable = "This quest becomes unavailable if you complete Escape Through Force",
-					constant = "THIS_QUEST_BECOMES_UNAVAILABLE_IF_YOU_COMPLETE_2",
-					export = true,
-					text = {
-						en = "This quest becomes unavailable if you complete Escape Through Force",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你完成“武力逃脱”，此任务就会变得无法接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest becomes unavailable if you complete Escape Through Force",
 				["sourceQuest"] = 993,	-- A Lost Master (2/2)
 				["qg"] = 3692,	-- Volcor
 				["coord"] = { 45.0, 85.4, MAP.DARKSHORE },
@@ -617,24 +583,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				["lvl"] = 12,
 			}),
 			q(960, {	-- Onu is meditating
-				["description"] = createLocalizationString({
-					readable = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
-					constant = "TO_COMPLETE_THIS_QUEST_YOU_MUST_RETURN_TO_ONU",
-					export = true,
-					text = {
-						en = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要完成此任务，你必须在完成主宰之剑之后、交还暮光营地之前返回奥努处。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 				["sourceQuest"] = 944,	-- The Master's Glaive
 				["qg"] = 3616,	-- Onu
 				["coord"] = { 43.5, 76.3, MAP.DARKSHORE },
@@ -645,24 +594,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(961, {	-- Onu is meditating
-				["description"] = createLocalizationString({
-					readable = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
-					constant = "TO_COMPLETE_THIS_QUEST_YOU_MUST_RETURN_TO_ONU_2",
-					export = true,
-					text = {
-						en = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要完成此任务，你必须在完成暮光营地之后、交还返回奥努处之前返回奥努处。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 				["sourceQuest"] = 949,	-- The Twilight Camp
 				["qg"] = 3616,	-- Onu
 				["coord"] = { 43.5, 76.3, MAP.DARKSHORE },
@@ -827,24 +759,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(1141, {	-- The Family and the Fishing Pole
-				["description"] = createLocalizationString({
-					readable = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
-					constant = "TALK_TO_GUBBER_BLUMP_AFTER_ACCEPTING_THE_QUEST",
-					export = true,
-					text = {
-						en = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "接受任务后与古博·布拉姆交谈以学习钓鱼。从古博·布拉姆处以 23c 购买一根钓鱼竿，以 50c 购买一个闪光的鱼饵。在古博·布拉姆旁边开始钓鱼，以钓到任务所需的鱼。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 				["qg"] = 10216,	-- Gubber Blump
 				["coord"] = { 36.1, 44.9, MAP.DARKSHORE },
 				["cost"] = { { "i", 12238, 6 } },	-- Darkshore Grouper
@@ -1006,24 +921,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(990, {	-- Trek to Ashenvale
-				["description"] = createLocalizationString({
-					readable = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
-					constant = "THE_QUEST_GIVER_APPEARS_AFTER_TURNING_IN_ESCAPE",
-					export = true,
-					text = {
-						en = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该任务给予者会在交还“潜行逃离”后出现。她需要过一段时间才会提供此任务，大约 30 到 60 秒。再过一会儿她会再次跑开，如果你错过了接受此任务，就必须等其他人来触发这个事件。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
 				["sourceQuests"] = {
 					994,	-- Escape Through Force
 					995,	-- Escape Through Stealth
@@ -1042,24 +940,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				["groups"] = {
 					objective(1, {	-- 0/1 Murkdeep slain
 						["provider"] = { "n", 10323 },	-- Murkdeep
-						["description"] = createLocalizationString({
-							readable = "Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
-							constant = "KILL_THE_MURLOCS_AT_THE_CAMP_AND_THEN_A_FEW",
-							export = true,
-							text = {
-								en = "Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "杀死营地里的鱼人，然后再杀几波鱼人，暗血和他的一个同伴就会出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
 						["coord"] = { 35.4, 76.4, MAP.DARKSHORE },
 					}),
 					i(15404),	-- Breakwater Girdle
@@ -1165,24 +1046,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 		}),
 		n(TREASURES, {
 			o(13359, {	-- Cat Figurine
-				["description"] = createLocalizationString({
-					readable = "Can be found scattered around the Ruins of Mathystra. Rarely spawns a Ghost Saber which can be tamed by a Hunter and can also drop a Glowing Cat Figurine.",
-					constant = "CAN_BE_FOUND_SCATTERED_AROUND_THE_RUINS_OF",
-					export = true,
-					text = {
-						en = "Can be found scattered around the Ruins of Mathystra. Rarely spawns a Ghost Saber which can be tamed by a Hunter and can also drop a Glowing Cat Figurine.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "散落在玛塞斯特拉废墟周围。有小概率刷新出幽灵豹，猎人可将其驯服，它还会掉落发光的猫雕像。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be found scattered around the Ruins of Mathystra. Rarely spawns a Ghost Saber which can be tamed by a Hunter and can also drop a Glowing Cat Figurine.",
 				["coord"] = { 58.9, 21.2, MAP.DARKSHORE },
 				["groups"] = {
 					i(5332, {	-- Glowing Cat Figurine

@@ -25,24 +25,7 @@ FREE_T_SHIRT_DAY_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 	n(SPECIAL, {
 		n(145826, {	-- Orgrimmar Entertainer
-			["description"] = createLocalizationString({
-				readable = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",
-				constant = "THIS_NPC_WANDERS_AROUND_IN_OGRIMMAR_AND_SHOOTS",
-				export = true,
-				text = {
-					en = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "此 NPC 在奥格瑞玛四处走动，并把 T 恤射到地上供你拾取。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",
 			["races"] = HORDE_ONLY,
 			["coords"] = {
 				{ 69.1, 33.9, ORGRIMMAR },
@@ -50,24 +33,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 			},
 		}),
 		n(150942, {	-- Stormwind Entertainer
-			["description"] = createLocalizationString({
-				readable = "This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",
-				constant = "THIS_NPC_WANDERS_AROUND_IN_STORMWIND_AND_SHOOTS",
-				export = true,
-				text = {
-					en = "This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "此 NPC 在暴风城四处走动，并把 T 恤射到地上供你拾取。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",
 			["races"] = ALLIANCE_ONLY,
 			["coords"] = {
 				{ 62.6, 30.7, STORMWIND_CITY },

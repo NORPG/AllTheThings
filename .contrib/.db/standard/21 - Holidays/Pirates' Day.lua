@@ -34,24 +34,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 	["groups"] = {
 		-- #if BEFORE 6.0.2.18816
 		n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>
-			["description"] = createLocalizationString({
-				readable = "When you speak with her, she gives you a Pirate Costume buff that lasts for 12 hours.",
-				constant = "WHEN_YOU_SPEAK_WITH_HER_SHE_GIVES_YOU_A_PIRATE",
-				export = true,
-				text = {
-					en = "When you speak with her, she gives you a Pirate Costume buff that lasts for 12 hours.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "当你与她交谈时，她会给你一个持续 12 小时的海盗装束增益。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "When you speak with her, she gives you a Pirate Costume buff that lasts for 12 hours.",
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 40.0, 72.6, THE_CAPE_OF_STRANGLETHORN },
@@ -97,7 +80,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 		-- #if AFTER 6.0.2.18816
 		n(VENDORS, {
 			n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>
-				["description"] = "~L.WHEN_YOU_SPEAK_WITH_HER_SHE_GIVES_YOU_A_PIRATE",
+				["description"] = "When you speak with her, she gives you a Pirate Costume buff that lasts for 12 hours.",
 				["coord"] = { 40.0, 72.6, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
 					ach(3457, {	-- The Captain's Booty
@@ -117,24 +100,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 					}),
 					i(138400, {	-- Petey
 						-- #if AFTER TWW
-						["description"] = createLocalizationString({
-							readable = "Harlan Sweete can be found in Freehold on Tiragarde Sound, Kul Tiras.",
-							constant = "HARLAN_SWEETE_CAN_BE_FOUND_IN_FREEHOLD_ON",
-							export = true,
-							text = {
-								en = "Harlan Sweete can be found in Freehold on Tiragarde Sound, Kul Tiras.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "哈兰·斯威特可在库尔提拉斯提拉加德海峡的自由镇找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Harlan Sweete can be found in Freehold on Tiragarde Sound, Kul Tiras.",
 						-- #endif
 						["timeline"] = { ADDED_7_0_3 },
 						["filterID"] = CONSUMABLES,	-- Changed from nothing
@@ -150,24 +116,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["timeline"] = { ADDED_7_2_5 },
 				["groups"] = {
 					i(150547, {	-- Jolly Roger (TOY!)
-						["description"] = createLocalizationString({
-							readable = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
-							constant = "TO_PURCHASE_THIS_TOY_YOU_MUST_HAVE_EARNED_THE",
-							export = true,
-							text = {
-								en = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要购买此玩具，你必须获得成就 |cFFFFD700嗨，上将！|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
 						["timeline"] = { ADDED_7_2_5 },
 					}),
 				},

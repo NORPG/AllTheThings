@@ -475,48 +475,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			-- Tools of Trade Questline
 			q(49570, {	-- A Rocky Start [A]
-				["description"] = createLocalizationString({
-					readable = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
-					constant = "THIS_QUEST_CHAIN_REQUIRES_150_IN_KUL_TIRAN_3",
-					export = true,
-					text = {
-						en = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务线需要 150 点库尔提拉斯珠宝加工。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 75.0, 10.2, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49585, {	-- A Rocky Start [H]
-				["description"] = createLocalizationString({
-					readable = "This quest chain requires 150 in Zandalari Jewelcrafting.",
-					constant = "THIS_QUEST_CHAIN_REQUIRES_150_IN_ZANDALARI_3",
-					export = true,
-					text = {
-						en = "This quest chain requires 150 in Zandalari Jewelcrafting.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务线需要 150 点赞达拉珠宝加工。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 46.9, 38.0, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
@@ -784,24 +750,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		n(QUESTS, {
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
-				["description"] = createLocalizationString({
-					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
-					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_9",
-					export = true,
-					text = {
-						en = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务只能在学会巨龙群岛珠宝加工之前接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -810,7 +759,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(72247, {	-- To the Dragon Isles: Jewelcrafting
-				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_9",
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
 				["provider"] = { "n", 198398 },	-- Misty Catseye
 				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -855,7 +804,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		},{
 			-- Requires 25 Skill
 			q(66950, {	-- Heart of a Giant
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -863,7 +812,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(72428, {	-- Hornswog Hoarders
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["groups"] = {
@@ -871,12 +820,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66516, {	-- Mundane Gems, I Think not!
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["groups"] = {
@@ -884,7 +833,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(66949, {	-- Trinket Bandits
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["groups"] = {
@@ -894,22 +843,22 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 
 			-- Requires 45 Skill
 			q(70565, {	-- Separation by Saturation
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70564, {	-- Spectacular
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70563, {	-- The Exhibition
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70562, {	-- The Plumbers, Mason
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 			}),
@@ -947,7 +896,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }} }, {
 				r(374483),	-- Blotting Sand
 				r(374442),	-- Crafty Alexstraszite
@@ -1032,24 +981,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			})),
 			o(380556, {	-- Harmonic Chest
-				["description"] = createLocalizationString({
-					readable = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
-					constant = "CLICK_THE_KEY_NEXT_TO_THE_CHEST_THEN_CLICK_THE",
-					export = true,
-					text = {
-						en = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "点击宝箱旁的钥匙，然后点击同一湖泊中的三块水晶。返回宝箱处收集宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
 				["questID"] = 70271,
 				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
 				["groups"] = {
@@ -1057,24 +989,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(380822, {	-- Igneous Gem
-				["description"] = createLocalizationString({
-					readable = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
-					constant = "CLICK_THE_THREE_CRYSTALS_ON_THE_NEARBY_SMALL",
-					export = true,
-					text = {
-						en = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "点击附近小岛上的三块水晶（要快），然后返回收集宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
 				["questID"] = 70273,
 				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
 				["groups"] = {
@@ -1133,7 +1048,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			i(198612),	-- Jeweler's Cuts
 			q(74112, {	-- DF Inscription Order: Jewelcrafting
 				["name"] = "DF Inscription Order: Jewelcrafting",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 			}),
 			q(66388, {	-- DF Weekly Jewelcrafting Knowledgepoint #1
@@ -1146,24 +1061,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			q(70521, {	-- DF Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",
-				["description"] = createLocalizationString({
-					readable = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_WELL_DRESSED_HUMANOIDS",
-					export = true,
-					text = {
-						en = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任意衣着考究的人型生物与龙类掉落。\n坐标指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
 				["coords"] = {
 					{ 46.8, 59.6, THALDRASZUS },
@@ -1178,7 +1076,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			q(70520, {	-- DF Weekly Jewelcrafting Knowledgepoint #4
 				["name"] = "DF Jewelcrafting Drop #2: Earth Elemental",
-				["description"] = "~L.DROPS_FROM_ANY_EARTH_ELEMENTAL_COORDINATES_LINK",
+				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198973 },	-- Incandescent Curio
 				["coords"] = {
 					{ 50.6, 57.6, THALDRASZUS },
@@ -1240,7 +1138,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{"c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1}} }, {
 				r(435338),	-- Algari Emerald Prism
 				r(435369),	-- Algari Onyx Prism
@@ -1331,7 +1229,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			i(228777),	-- Algari Jewelcrafter's Notebook
 			q(83731, {	-- TWW Inscription Order: Jewelcrafting
 				["name"] = "TWW Inscription Order: Jewelcrafting",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
 			}),
 			q(83265, {	-- TWW Weekly Jewelcrafting Knowledgepoint #1
@@ -1418,7 +1316,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{"c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1}} }, {
 				r(1230482),	-- Amani Lapis Prism
 				r(1230459),	-- Flawless Deadly Amethyst
@@ -1507,7 +1405,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			i(263458),	-- Thalassian Jewelcrafter's Notebook
 			q(95133, {	-- MID Inscription Order: Jewelcrafting
 				["name"] = "MID Inscription Order: Jewelcrafting",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 245760 },	-- Thalassian Treatise on Jewelcrafting
 			}),
 			q(93539, {	-- MID Weekly Jewelcrafting Knowledgepoint #1

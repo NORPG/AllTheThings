@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				i(123869),	-- Relic of Elune
 			}),
 			o_repeated({	-- Elven Treasure Chest
-				["description"] = "~L.THESE_REPEATABLE_CHESTS_SPAWN_ALL_OVER_THE_MAP",
+				["description"] = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah.",
 				["groups"] = {
 					o(256789),	-- Elven Treasure Chest
 					o(256790),	-- Elven Treasure Chest
@@ -37,24 +37,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			o(240519, {	-- Small Treasure Chest
 				["questID"] = 38893,
 				["coord"] = { 46.6, 86.3, VALSHARAH },
-				["description"] = createLocalizationString({
-					readable = "In |cFFFFD700The Undergorge|r cave.",
-					constant = "IN_CFFFFD700THE_UNDERGORGE_R_CAVE",
-					export = true,
-					text = {
-						en = "In |cFFFFD700The Undergorge|r cave.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在|cFFFFD700地渊峡谷|r洞穴中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "In |cFFFFD700The Undergorge|r cave.",
 			}),
 			o(254127, {	-- Small Treasure Chest
 				["questID"] = 44136,

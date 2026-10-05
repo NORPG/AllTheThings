@@ -91,24 +91,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(194890),	-- GG-117 Micro-Jetpack
 					i(201837, {	-- Magmammoth Harness
-						["description"] = createLocalizationString({
-							readable = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
-							constant = "USE_IT_WHILE_RIDING_THE_TAME_MAGMAMMOTH_33_3_72",
-							export = true,
-							text = {
-								en = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在骑乘驯服的熔岩猛犸时使用 @ 33.3, 72.2",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
 						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
 						["cr"] = 198150,	-- Tame Magmammoth
 						["cost"] = {

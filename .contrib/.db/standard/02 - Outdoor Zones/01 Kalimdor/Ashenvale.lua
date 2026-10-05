@@ -68,24 +68,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(495),	-- Frog (PET!)
 					pet(450),	-- Maggot (PET!)
 					pet(496, {	-- Rusty Snail (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
-							constant = "CAN_BE_FOUND_ON_THE_BLACKFATHOM_DEEPS_BEACH_IN",
-							export = true,
-							text = {
-								en = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在灰谷的黑暗深渊海滩上找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
 					}),
 				},
 			}),
@@ -221,24 +204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66136, {	-- Analynn <Master Pet Tamer>
 					["coord"] = { 20.2, 29.6, ASHENVALE },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_ANALYNN_S_PETS_ARE",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落。\n\nAnalynn 的宠物为 5 级，三个宠物的类别依次为：\n1. 水栖 - 使用飞行（强力）或魔法（耐打）宠物。\n2. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n3. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["petBattleLvl"] = 5,
@@ -1474,48 +1440,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13921, {	-- He Who Would Be Forgiven
-					["description"] = createLocalizationString({
-						readable = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
-						constant = "THIS_QUEST_IS_AUTO_GIVEN_TO_YOU_ONCE_COMPLETING",
-						export = true,
-						text = {
-							en = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成 |cFFFFD700月井之旅|r 后会自动给予你此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
 					["coord"] = { 71.3, 60.5, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14018, {	-- He Who Would Be Forgiven
-					["description"] = createLocalizationString({
-						readable = "You can pick this quest up if you abandon the quest by the same name.",
-						constant = "YOU_CAN_PICK_THIS_QUEST_UP_IF_YOU_ABANDON_THE",
-						export = true,
-						text = {
-							en = "You can pick this quest up if you abandon the quest by the same name.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃了同名任务，就可以重新接取此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can pick this quest up if you abandon the quest by the same name.",
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["coord"] = { 37.4, 51.8, ASHENVALE },
@@ -1819,7 +1751,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3986,	-- Sarilus Foulborne
 						}),
 						i(5816, {	-- Light of Elune
-							["description"] = "~L.SINGLE_USE_SAVE_THIS_FOR_AQ40_OR_NAXX",
+							["description"] = "Single use. Save this for AQ40 or Naxx.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -2271,7 +2203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5519 },	-- Iron Pommel
 								{ "o", 19021 },	-- Rusty Chest
 							},
-							["description"] = "~L.WHEN_YOU_KILL_A_SLIME_IT_CAN_DROP_A_RUSTY_CHEST",
+							["description"] = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
 							["cr"] = 3928,	-- Rotting Slime
 						}),
 						i(56664, {	-- Shael'dryn's Bracers
@@ -2363,7 +2295,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						objective(2, {	-- 0/1 Dartol's Rod of Transformation
 							["provider"] = { "i", 5462 },	-- Dartol's Rod of Transformation
-							["description"] = "~L.THERE_S_A_TRICK_TO_KEEP_THIS_ITEM_FOREVER",
+							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
 						}),
 						-- #endif
 						i(5815, {	-- Glacial Stone
@@ -3994,24 +3926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				o(240617, {	-- Lost Sentinel's Pouch
-					["description"] = createLocalizationString({
-						readable = "Found inside a large hollow tree trunk.",
-						constant = "FOUND_INSIDE_A_LARGE_HOLLOW_TREE_TRUNK",
-						export = true,
-						text = {
-							en = "Found inside a large hollow tree trunk.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于一根巨大的中空树干内。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found inside a large hollow tree trunk.",
 					["coord"] = { 56.5, 49.3, ASHENVALE },
 					["timeline"] = { ADDED_6_1_0 },
 					["modelScale"] = 0.2,
@@ -4187,24 +4102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(6731, {	-- Harlown Darkweave <Leatherworking Supplies>
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
-						constant = "VENDOR_WILL_ONLY_SELL_TO_THOSE_WHO_HAVE_RESCUED",
-						export = true,
-						text = {
-							en = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "商人只会卖给那些救过他的人。前往本贾里·埃杜恩处接取 |cFFFFD700森林三友|r 任务即可开始任务链。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
 					-- #endif
 					["coord"] = { 18.2, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
@@ -4285,24 +4183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(211691, {	-- Spell Notes: Arcane Blast
-					["description"] = createLocalizationString({
-						readable = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
-						constant = "CAST_ARCANE_EXPLOSION_IN_THE_CORRECT_ORDER_NEXT",
-						export = true,
-						text = {
-							en = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在奥术碎片旁按正确顺序施放奥术爆炸。由南向北。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
 					--[[
 					-- TODO: Find the objectIDs and if there are any questIDs.
 					["providers"] = {
@@ -4323,24 +4204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210044, {	-- Symbol of the First Owl
-					["description"] = createLocalizationString({
-						readable = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
-						constant = "CHANNEL_ON_THE_STATUE_TO_SUMMON_A_WISP_WISP",
-						export = true,
-						text = {
-							en = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对雕像引导以召唤一个小精灵。小精灵会移动几秒钟，然后一波接一波地刷新 3 波、每波 2 个增援（等级 23/25）。用熊形态保护小精灵，你就会在背包中收到该符号。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
 					["providers"] = {
 						{ "o", 410020 },	-- Owl Statue
 						{ "n", 211269 },	-- Summoned Wisp
@@ -4372,24 +4236,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(1351, {	-- Fingerbone Bracers
 					-- #if BEFORE 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-						constant = "THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_2",
-						export = true,
-						text = {
-							en = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由于掉落此物品的生物的阵营归属，只有联盟玩家能自然获得此物品。如果你把此物品放到中立拍卖行出售，也许能从收藏家那里卖个好价钱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
@@ -4446,24 +4293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(211531, {	-- Prophecy of Seven Visitors
-							["description"] = createLocalizationString({
-								readable = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
-								constant = "GO_NORTH_TO_THE_ENTRANCE_OF_THE_CAVE_DON_T_GO",
-								export = true,
-								text = {
-									en = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "向北走到洞穴入口。不要进洞，而是爬上左边的大树，你会看到树枝上挂着的捕梦网。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
 							["coords"] = {
 								{ 38.0, 29.0, ASHENVALE },
 								{ 38.0, 26.0, ASHENVALE },

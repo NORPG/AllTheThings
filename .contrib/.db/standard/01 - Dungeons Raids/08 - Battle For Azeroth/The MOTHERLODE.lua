@@ -193,24 +193,7 @@ appendAllGroups(SeasonDifficultyGroups, {
 local INSTANCE_GROUPS = {
 	n(VENDORS, {
 		n(140319, {	-- Hobart Grapplehammer
-			["description"] = createLocalizationString({
-				readable = "In the building directly at the end of the first road after entering the dungeon.",
-				constant = "IN_THE_BUILDING_DIRECTLY_AT_THE_END_OF_THE",
-				export = true,
-				text = {
-					en = "In the building directly at the end of the first road after entering the dungeon.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "进入副本后，沿着第一条路走到尽头，就在正前方的建筑里。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "In the building directly at the end of the first road after entering the dungeon.",
 			["groups"] = {
 				i(161131, {	-- Barely Stable Azerite Reactor
 					["cost"] = { { "g", 300000000 } },	-- 30k gold
@@ -240,84 +223,16 @@ local INSTANCE_GROUPS = {
 			ach(12844),	-- The MOTHERLODE!!
 			ig(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
 			ig(161136, {	-- Azerite Forged Protection Plating
-				["description"] = createLocalizationString({
-					readable = "Seems to require at least 175 BFA Engineering Skill to drop.",
-					constant = "SEEMS_TO_REQUIRE_AT_LEAST_175_BFA_ENGINEERING",
-					export = true,
-					text = {
-						en = "Seems to require at least 175 BFA Engineering Skill to drop.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "似乎需要至少 175 点争霸艾泽拉斯工程学技能才会掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
 			}),
 			ig(161137, {	-- Blast-Fired Electric Servomotor
-				["description"] = createLocalizationString({
-					readable = "Seems to require at least 225 BFA Engineering Skill to drop.",
-					constant = "SEEMS_TO_REQUIRE_AT_LEAST_225_BFA_ENGINEERING",
-					export = true,
-					text = {
-						en = "Seems to require at least 225 BFA Engineering Skill to drop.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "似乎需要至少 225 点争霸艾泽拉斯工程学技能才会掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
 			}),
 			ig(161132, {	-- Crush Resistant Stabilizer
-				["description"] = createLocalizationString({
-					readable = "Seems to require at least 200 BFA Engineering Skill to drop.",
-					constant = "SEEMS_TO_REQUIRE_AT_LEAST_200_BFA_ENGINEERING",
-					export = true,
-					text = {
-						en = "Seems to require at least 200 BFA Engineering Skill to drop.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "似乎需要至少 200 点争霸艾泽拉斯工程学技能才会掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
 			}),
 			ig(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
-				["description"] = createLocalizationString({
-					readable = "Seems to require at least 250 BFA Engineering Skill to drop.",
-					constant = "SEEMS_TO_REQUIRE_AT_LEAST_250_BFA_ENGINEERING",
-					export = true,
-					text = {
-						en = "Seems to require at least 250 BFA Engineering Skill to drop.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "似乎至少需要 250 点争霸艾泽拉斯工程学技能才会掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
 				["requireSkill"] = ENGINEERING,
 				["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
 			}),
@@ -341,7 +256,7 @@ local INSTANCE_GROUPS = {
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 		n(ZONE_DROPS, {
 			ig(161138, {	-- Azerite Inspir-A-Geneering Elixir
-				["description"] = "~L.SEEMS_TO_REQUIRE_AT_LEAST_225_BFA_ENGINEERING",
+				["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
 				["requireSkill"] = ENGINEERING,
 				["crs"] = {
 					133430,	-- Venture Co. Mastermind
@@ -360,13 +275,13 @@ local INSTANCE_GROUPS = {
 			["requireSkill"] = ENGINEERING,
 		},{
 			ig(161136, {	-- Azerite Forged Protection Plating
-				["description"] = "~L.SEEMS_TO_REQUIRE_AT_LEAST_175_BFA_ENGINEERING",
+				["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
 			}),
 			ig(161137, {	-- Blast-Fired Electric Servomotor
-				["description"] = "~L.SEEMS_TO_REQUIRE_AT_LEAST_225_BFA_ENGINEERING",
+				["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
 			}),
 			ig(161132, {	-- Crush Resistant Stabilizer
-				["description"] = "~L.SEEMS_TO_REQUIRE_AT_LEAST_200_BFA_ENGINEERING",
+				["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
 			}),
 		})),
 		BossOnly(PUMMELER, {

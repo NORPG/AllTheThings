@@ -198,24 +198,7 @@ end
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
 		n(ARTIFACTS, {
-			["description"] = createLocalizationString({
-				readable = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
-				constant = "PRESSING_CFFFFD700CTRL_LEFT_CLICK_R_WILL_ALLOW",
-				export = true,
-				text = {
-					en = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "\n按下|cFFFFD700CTRL + 左键点击|r即可预览对应的皮肤和配色。\n\n",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 			["ItemAppearanceModifierID"] = 9,
 			["timeline"] = { ADDED_7_0_3 },
 			["groups"] = {

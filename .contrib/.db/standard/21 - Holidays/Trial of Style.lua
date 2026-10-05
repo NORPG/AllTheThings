@@ -437,24 +437,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 			["isMonthly"] = true,
 		}, {
 			q(76308, {	-- The Trial of Style
-				["description"] = createLocalizationString({
-					readable = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
-					constant = "BLIZZARD_MESSED_UP_HERE_THIS_SHOULD_VE_BEEN_THE",
-					export = true,
-					text = {
-						en = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "暴雪在这里搞错了，这本该是第二个任务，而不是引路任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
 				["qgs"] = {
 					206252,	-- Primo
 					206383,	-- Don'a
@@ -478,24 +461,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				["isBreadcrumb"] = true,
 			}),
 			q(76361, {	-- Fashion Week
-				["description"] = createLocalizationString({
-					readable = "Blizzard messed up here, this should've been the first quest and breadcrumb.",
-					constant = "BLIZZARD_MESSED_UP_HERE_THIS_SHOULD_VE_BEEN_THE_2",
-					export = true,
-					text = {
-						en = "Blizzard messed up here, this should've been the first quest and breadcrumb.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "暴雪在这里搞错了，这本该是第一个任务，引路任务应该是另一个。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Blizzard messed up here, this should've been the first quest and breadcrumb.",
 				["sourceQuest"] = 76308,	-- The Trial of Style
 				["qgs"] = {
 					199261,	-- Holiday Enthusiast

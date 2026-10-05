@@ -32,24 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(ROGUE, OUTLAW, {
 							q(43558, {	-- Bindings of the Windlord
-								["description"] = createLocalizationString({
-									readable = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
-									constant = "YOU_NEED_TO_FIRST_COLLECT_THE_TWO_BINDINGS_AND",
-									export = true,
-									text = {
-										en = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你需要先收集两个束缚，然后切换到狂徒专精才能获得这个任务。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
 								["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 								["coord"] = { 40.8, 80.8, STORMHEIM },
@@ -60,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								},
 							}),
 							q(94932, {	-- Bindings of the Windlord (REMIX)
-								["description"] = "~L.YOU_NEED_TO_FIRST_COLLECT_THE_TWO_BINDINGS_AND",
+								["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
 								["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 								["coord"] = { 40.8, 80.8, STORMHEIM },
@@ -675,24 +658,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43485, {	-- A Burning Distraction
-						["description"] = createLocalizationString({
-							readable = "If the User Interface fails to show you where the detonator is, go to 29.7 79.5.",
-							constant = "IF_THE_USER_INTERFACE_FAILS_TO_SHOW_YOU_WHERE",
-							export = true,
-							text = {
-								en = "If the User Interface fails to show you where the detonator is, go to 29.7 79.5.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果用户界面没有显示引爆器的位置，请前往 29.7 79.5。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If the User Interface fails to show you where the detonator is, go to 29.7 79.5.",
 						["sourceQuests"] = {
 							43469,	-- Where In the World is Mathias?
 							43479,	-- The World is Not Enough
@@ -1069,24 +1035,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					gt(441, {	-- The Vault
 						i(139781, {	-- Marin Noggenfogger's Lucky Coin
-							["description"] = createLocalizationString({
-								readable = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
-								constant = "C808080FAYOU_GET_THESE_COINS_FROM_COMPLETING",
-								export = true,
-								text = {
-									en = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "|c808080FA你可以通过与马林·诺格弗格一起完成任务来获得这些硬币，或通过对怪物偷窃（唯一物品！）获得，后者出自盗贼在第 2 层获得的|r |cFFFFD700宝库|r |c808080FA职业大厅技能。|r",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
 						}),
 						q(44159, {	-- A Ticket for Marin
 							["sourceQuest"] = 44180,	-- Champion: Marin Noggenfogger
@@ -1095,24 +1044,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["isWeekly"] = true,
 						}),
 						n(REWARDS, {
-							["description"] = createLocalizationString({
-								readable = "These are common rewards",
-								constant = "THESE_ARE_COMMON_REWARDS",
-								export = true,
-								text = {
-									en = "These are common rewards",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这些是常见的奖励",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "These are common rewards",
 							["groups"] = {
 								i(130322),	-- Mask of Artful Dodging
 								i(130324),	-- Boots of Artful Dodging

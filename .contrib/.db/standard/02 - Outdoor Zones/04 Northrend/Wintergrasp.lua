@@ -645,46 +645,12 @@ root(ROOTS.Zones, {
 				}),
 				n(REWARDS, {
 					currency(161, {	-- Stone Keeper's Shard
-						["description"] = createLocalizationString({
-							readable = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in Wrath dungeons and RDF.",
-							constant = "WHILE_YOUR_FACTION_CONTROLS_WINTERGRASP_ON_YOUR",
-							export = true,
-							text = {
-								en = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in Wrath dungeons and RDF.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "当你的阵营控制你所在位面的冬拥湖时，此物品会从巫妖王之怒地下城的首领以及随机地下城查找器中掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in Wrath dungeons and RDF.",
 						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
 					});
 				}),
 				n(VENDORS, {
-					["description"] = createLocalizationString({
-						readable = "These vendors will only show if your faction controls Wintergrasp.",
-						constant = "THESE_VENDORS_WILL_ONLY_SHOW_IF_YOUR_FACTION",
-						export = true,
-						text = {
-							en = "These vendors will only show if your faction controls Wintergrasp.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有你的阵营控制冬拥湖时，这些商人才会出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These vendors will only show if your faction controls Wintergrasp.",
 					["groups"] = {
 						n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 							["coords"] = {

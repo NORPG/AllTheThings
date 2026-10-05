@@ -1255,24 +1255,7 @@ root(ROOTS.Instances, {
 						MAP.BLACKROCK_MOUNTAIN,
 						MAP.BLACKROCK_SPIRE,
 					},
-					["description"] = createLocalizationString({
-						readable = "Bodley is standing right outside the entrance to Blackrock Spire.",
-						constant = "BODLEY_IS_STANDING_RIGHT_OUTSIDE_THE_ENTRANCE",
-						export = true,
-						text = {
-							en = "Bodley is standing right outside the entrance to Blackrock Spire.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "博德利就站在黑石塔入口外。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
 				},
@@ -1637,24 +1620,7 @@ root(ROOTS.Instances, {
 					["groups"] = {
 						i(22057, {	-- Brazier of Invocation
 							-- #if AFTER CATA
-							["description"] = createLocalizationString({
-								readable = "If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",
-								constant = "IF_YOU_DID_COMPLETE_THE_QUEST_BEFORE_THE",
-								export = true,
-								text = {
-									en = "If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你在大灾变之前完成了该任务，可以找博德利再要一个火盆。\n你必须拥有异次元幽灵显形器，才能在黑石山的黑石塔上层入口外看到他。\n塔纳利斯加基森的穆克斯·曼纳斯克兰伯可以帮你获得幽灵显形器。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",
 							-- #endif
 						}),
 						i(22344),	-- Brazier of Invocation: User's Manual
@@ -1696,24 +1662,7 @@ root(ROOTS.Instances, {
 						}),
 						{
 							["itemID"] = 21986,	-- Banner of Provocation
-							["description"] = createLocalizationString({
-								readable = "Long after Classic is over, you can use this item to summon Unobtainable bosses and earn quite a bit of gold doing so for Transmog and other purposes. Save this item forever.",
-								constant = "LONG_AFTER_CLASSIC_IS_OVER_YOU_CAN_USE_THIS",
-								export = true,
-								text = {
-									en = "Long after Classic is over, you can use this item to summon Unobtainable bosses and earn quite a bit of gold doing so for Transmog and other purposes. Save this item forever.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在经典旧世结束很久之后，你可以用这件物品召唤已无法获得的 Boss，并借此为幻化等目的赚取相当多的金币。请永久保留这件物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Long after Classic is over, you can use this item to summon Unobtainable bosses and earn quite a bit of gold doing so for Transmog and other purposes. Save this item forever.",
 						},
 					},
 				}),

@@ -8,24 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["isDaily"] = true,
 		}, {
 			n(207802, {	-- Beledar's Spawn
-				["description"] = createLocalizationString({
-					readable = "Spawns immediately somewhere in the zone the moment Beledar shifts into its Void state.",
-					constant = "SPAWNS_IMMEDIATELY_SOMEWHERE_IN_THE_ZONE_THE",
-					export = true,
-					text = {
-						en = "Spawns immediately somewhere in the zone the moment Beledar shifts into its Void state.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "贝雷达尔转入虚空状态的那一刻，会立刻在该区域的某处刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns immediately somewhere in the zone the moment Beledar shifts into its Void state.",
 				["questID"] = 81763,
 				["crs"] = {
 					225404,	-- Beledar's Spawn [Vignette]
@@ -52,24 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(221668, {	-- Horror of the Shallows
-				["description"] = createLocalizationString({
-					readable = "Swimming along the western coast of Hallowfall between the coordinates.",
-					constant = "SWIMMING_ALONG_THE_WESTERN_COAST_OF_HALLOWFALL",
-					export = true,
-					text = {
-						en = "Swimming along the western coast of Hallowfall between the coordinates.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在陨圣峪西海岸沿以下坐标之间游动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Swimming along the western coast of Hallowfall between the coordinates.",
 				["coords"] = {
 					{ 20.6, 51.6, HALLOWFALL },
 					{ 31.2, 41.4, HALLOWFALL },
@@ -174,24 +140,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(221551, {	-- Grimslice
-				["description"] = createLocalizationString({
-					readable = "Walking around the park. Can be killed by random Arathi NPCs in area.",
-					constant = "WALKING_AROUND_THE_PARK_CAN_BE_KILLED_BY_RANDOM",
-					export = true,
-					text = {
-						en = "Walking around the park. Can be killed by random Arathi NPCs in area.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在公园里走动。可能被区域内随机出现的阿拉希 NPC 杀死。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Walking around the park. Can be killed by random Arathi NPCs in area.",
 				["coords"] = {
 					{ 35.0, 58.7, HALLOWFALL },
 					{ 35.0, 50.4, HALLOWFALL },

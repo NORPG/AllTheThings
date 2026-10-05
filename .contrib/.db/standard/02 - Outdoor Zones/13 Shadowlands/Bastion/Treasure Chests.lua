@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(TREASURES, {
 			i(180866),	-- Gilded Wader (PET!)
 			o(354202, {	-- Abandoned Stockpile
-				["description"] = createLocalizationString({
-					readable = "Coordinates are for a cave entrance hidden by plants.",
-					constant = "COORDINATES_ARE_FOR_A_CAVE_ENTRANCE_HIDDEN_BY",
-					export = true,
-					text = {
-						en = "Coordinates are for a cave entrance hidden by plants.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "坐标指向一处被植物遮挡的洞穴入口。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Coordinates are for a cave entrance hidden by plants.",
 				["coord"] = { 46.4, 46.5, BASTION },
 				["questID"] = 61006,
 			}),
@@ -58,24 +41,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(354275, {	-- Experimental Construct Part
-				["description"] = createLocalizationString({
-					readable = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area. It looks similar to the other jars of anima, but is smaller and glows purple.",
-					constant = "REQUIRES_AN_CFFFFFFFFUNSTABLE_CONSTRUCT_ANIMA_R",
-					export = true,
-					text = {
-						en = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area. It looks similar to the other jars of anima, but is smaller and glows purple.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要一个|cFFFFFFFF不稳定的构造体心能|r，可以在周围区域找到。它看起来与其他心能罐相似，但更小并发出紫色光芒。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area. It looks similar to the other jars of anima, but is smaller and glows purple.",
 				["coord"] = { 51.5, 18.0, BASTION },
 				["questID"] = 61052,
 				["cost"] = { { "i", 180534, 1 } },	-- Unstable Construct Anima
@@ -84,24 +50,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353942, {	-- Gift of Agthia
-				["description"] = createLocalizationString({
-					readable = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it. An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock. Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
-					constant = "THE_COORDINATES_ARE_TO_THE_FIRST_OBJECT_YOU",
-					export = true,
-					text = {
-						en = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it. An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock. Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些坐标指向你需要点击以解锁宝箱的第一个物体，|cFFFFFFFF阿格提亚之焰|r。\n\n向南走，直到到达位于|cFFFFFFFF38.4, 57.0|r的第二支火炬并点击它。一条隐形走道会出现在西侧，两侧排列着发光的法球。\n\n在法球之间行走，直到抵达那块漂浮的岩石。继续点击所有火炬并穿过隐形桥，直到抵达宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it. An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock. Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
 				["coord"] = { 39.1, 54.4, BASTION },
 				["questID"] = 60893,	-- 62847 also completed when opening
 				["groups"] = {
@@ -109,24 +58,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353941, {	-- Gift of Chyrus
-				["description"] = createLocalizationString({
-					readable = "Kneel in front of the chest.",
-					constant = "KNEEL_IN_FRONT_OF_THE_CHEST",
-					export = true,
-					text = {
-						en = "Kneel in front of the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在宝箱前跪下。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Kneel in front of the chest.",
 				["coord"] = { 70.4, 36.4, BASTION },
 				["questID"] = 60892,
 				["groups"] = {
@@ -141,24 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353943, {	-- Gift of Thenios
-				["description"] = createLocalizationString({
-					readable = "Requires taking multiple transport pads on the |cFFFFFFFFPath of Wisdom|r and clicking on objects in the correct order.\n\n1. Incense of Patience\n2. Incense of Knowledge\n3. Incense of Insight\n4. Blue orb behind the first Incense of Judgment\n5. The orb will transport you to the real Incense of Judgment\n\nTake the transport pad after using the real Incense of Judgment and you will get the |cFFFFFFFFProof of Wisdom|r buff for a short time, allowing you to open the chest.",
-					constant = "REQUIRES_TAKING_MULTIPLE_TRANSPORT_PADS_ON_THE",
-					export = true,
-					text = {
-						en = "Requires taking multiple transport pads on the |cFFFFFFFFPath of Wisdom|r and clicking on objects in the correct order.\n\n1. Incense of Patience\n2. Incense of Knowledge\n3. Incense of Insight\n4. Blue orb behind the first Incense of Judgment\n5. The orb will transport you to the real Incense of Judgment\n\nTake the transport pad after using the real Incense of Judgment and you will get the |cFFFFFFFFProof of Wisdom|r buff for a short time, allowing you to open the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要在|cFFFFFFFF智慧之路|r上乘坐多个传送台，并按正确顺序点击物体。\n\n1. 耐心熏香\n2. 知识熏香\n3. 洞察熏香\n4. 第一座审判熏香后面的蓝色宝珠\n5. 宝珠会把你传送到真正的审判熏香处\n\n使用真正的审判熏香后乘坐传送台，你会获得持续一小段时间的|cFFFFFFFF智慧证明|r增益，从而可以打开宝箱。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires taking multiple transport pads on the |cFFFFFFFFPath of Wisdom|r and clicking on objects in the correct order.\n\n1. Incense of Patience\n2. Incense of Knowledge\n3. Incense of Insight\n4. Blue orb behind the first Incense of Judgment\n5. The orb will transport you to the real Incense of Judgment\n\nTake the transport pad after using the real Incense of Judgment and you will get the |cFFFFFFFFProof of Wisdom|r buff for a short time, allowing you to open the chest.",
 				["coords"] = {
 					{ 42.3, 23.3, BASTION },	-- Transport Pad
 					{ 40.6, 18.9, BASTION },	-- Treasure
@@ -169,24 +84,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353940, {	-- Gift of Vesiphone
-				["description"] = createLocalizationString({
-					readable = "Ring one of the Bells of Purification on either side of the treasure. Then turn around and stand in the waterfall next to the Purity Steward. You will get a buff called Proof of Purity, allowing you to open the chest.",
-					constant = "RING_ONE_OF_THE_BELLS_OF_PURIFICATION_ON_EITHER",
-					export = true,
-					text = {
-						en = "Ring one of the Bells of Purification on either side of the treasure. Then turn around and stand in the waterfall next to the Purity Steward. You will get a buff called Proof of Purity, allowing you to open the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "敲响宝藏两侧任意一口净化之钟。然后转身站到纯洁管理者旁边的瀑布里。你会获得一个名为“纯洁证明”的增益，从而可以打开宝箱。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Ring one of the Bells of Purification on either side of the treasure. Then turn around and stand in the waterfall next to the Purity Steward. You will get a buff called Proof of Purity, allowing you to open the chest.",
 				["coord"] = { 64.8, 71.1, BASTION },
 				["questID"] = 60890,
 				["groups"] = {
@@ -211,24 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			-- Rewards
 			-- Objects
 				o(353868, {	-- Hidden Hoard
-					["description"] = createLocalizationString({
-						readable = "The coordinates are for a cliffside cave entrance.",
-						constant = "THE_COORDINATES_ARE_FOR_A_CLIFFSIDE_CAVE",
-						export = true,
-						text = {
-							en = "The coordinates are for a cliffside cave entrance.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这些坐标指向一个悬崖边的洞穴入口。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The coordinates are for a cliffside cave entrance.",
 					["coord"] = { 59.5, 13.3, BASTION },
 					["questID"] = 60875,	-- only questID that triggers for this one, no specific secondary quest to link
 					["isDaily"] = true,
@@ -239,47 +120,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isDaily"] = true,
 				}),
 				o(353870, {	-- Hidden Hoard
-					["description"] = createLocalizationString({
-						readable = "The coordinates are for a cave entrance hidden behind some vines in the side of a cliff.",
-						constant = "THE_COORDINATES_ARE_FOR_A_CAVE_ENTRANCE_HIDDEN",
-						export = true,
-						text = {
-							en = "The coordinates are for a cave entrance hidden behind some vines in the side of a cliff.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这些坐标指向一个藏在悬崖侧面藤蔓后的洞穴入口。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The coordinates are for a cave entrance hidden behind some vines in the side of a cliff.",
 					["coord"] = { 48.5, 45.4, BASTION },
 					["questID"] = 60879,
 					["isDaily"] = true,
 				}),
 				o(353871, {	-- Hidden Hoard
-					["description"] = createLocalizationString({
-						readable = "The coordinates are for a cave entrance hidden in the side of a cliff. You'll have to walk along a ledge halfway up the cliffside to access it.",
-						constant = "THE_COORDINATES_ARE_FOR_A_CAVE_ENTRANCE_HIDDEN_2",
-						export = true,
-						text = {
-							en = "The coordinates are for a cave entrance hidden in the side of a cliff. You'll have to walk along a ledge halfway up the cliffside to access it.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这些坐标指向一个藏在悬崖侧面的洞穴入口。你必须沿着悬崖半腰的岩架走过去才能进入。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff. You'll have to walk along a ledge halfway up the cliffside to access it.",
 					["coord"] = { 47.7, 35.1, BASTION },
 					["questID"] = 60878,	-- also 60875
 					["isDaily"] = true,
@@ -290,31 +137,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isDaily"] = true,
 				}),
 				o(353873, {	-- Hidden Hoard
-					["description"] = "~L.INSIDE_THE_CAVE",
+					["description"] = "Inside the cave.",
 					["coord"] = { 49.3, 52.1, BASTION },
 					["questID"] = 60876,
 					["isDaily"] = true,
 				}),
 			}),
 			o(354214, {	-- Larion Tamer's Harness
-				["description"] = createLocalizationString({
-					readable = "At the back of the cave.",
-					constant = "AT_THE_BACK_OF_THE_CAVE",
-					export = true,
-					text = {
-						en = "At the back of the cave.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在洞穴深处。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "At the back of the cave.",
 				["coord"] = { 55.7, 42.8, BASTION },	-- cave entrance
 				["questID"] = 61049,
 				["groups"] = {
@@ -330,7 +160,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(355286, {	-- Memorial Offerings
-				["description"] = "~L.PURCHASE_CFFFFFFFFMEMORIAL_WINE_R_FROM_KOBRI_A",
+				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest. Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key from Honor Steward to the Memorial Offerings chest.",
 				["coord"] = { 56.5, 17.2, BASTION },
 				["questID"] = 61150,
 				["cost"] = {
@@ -346,24 +176,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = { i(173973) },	-- Purian
 			}),
 			o(339601, {	-- Scroll of Aeons
-				["description"] = createLocalizationString({
-					readable = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
-					constant = "TAKE_THE_CFFFFFFFFPURIAN_R_FROM_THE_BENCH_AT",
-					export = true,
-					text = {
-						en = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "把 |cFFFFFFFF普里安|r 从 |cFFFFFFFF54.3, 81.8|r 的长凳上取下，放入 |cFFFFFFFF54.4, 83.8|r 和 |cFFFFFFFF56.1, 83.0|r 处的贡品碗中，然后跟随光芒前往 |cFFFFFFFF53.5, 80.4|r 处的宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
 				["coords"] = {
 					{ 54.4, 83.8, BASTION },	-- Tribute
 					{ 56.1, 83.0, BASTION },	-- Tribute
@@ -443,24 +256,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o(353650, {	-- Steward's Golden Chest
 				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-				["description"] = createLocalizationString({
-					readable = "Ask Elios about the Steward of the Day, and he will pin their location on your map. Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
-					constant = "ASK_ELIOS_ABOUT_THE_STEWARD_OF_THE_DAY_AND_HE",
-					export = true,
-					text = {
-						en = "Ask Elios about the Steward of the Day, and he will pin their location on your map. Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "向埃利奥斯询问每日管家的事，他就会把他们的位置标记在你的地图上。把一颗熟透的莲榴带给管家，然后你就可以回来拾取宝箱了。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map. Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
 				["coord"] = { 53.2, 46.4, BASTION },
 				["questID"] = 60779,
 				["isDaily"] = true,
@@ -507,24 +303,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isDaily"] = true,
 			}),
 			o(354289, {	-- Windsmith's Tools
-				["description"] = createLocalizationString({
-					readable = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure. After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
-					constant = "THE_CFF0070DDBROKEN_KYRIAN_FLUTE_R_DROPS_FROM",
-					export = true,
-					text = {
-						en = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure. After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "|cff0070dd破损的格里恩长笛|r由宝藏附近的|cFFFFFFFF游荡的以太浮龙|r掉落。找到长笛后，在熔炉处使用|cFFFFFFFF风铸者工具|r来修复它。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure. After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
 				["coord"] = { 35.8, 48.1, BASTION },
 				["questID"] = 61053,
 				["crs"] = { 170009 },	-- Unsettled Etherwyrm

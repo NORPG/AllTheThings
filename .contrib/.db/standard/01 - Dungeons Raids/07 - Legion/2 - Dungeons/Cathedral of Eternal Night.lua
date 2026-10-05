@@ -47,24 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(147517),	-- Inquisitor's Battle Cowl
 					i(147516),	-- Legion Stalker's Hood
 					i(147117, {	-- Orb of the Fel Temptress (CI!)
-						["description"] = createLocalizationString({
-							readable = "This is a rare drop from the Hellblaze Temptress mobs in the Cathedral of Eternal Night, on Heroic or Mythic difficulty.\n\nThere are 7 Temptress' available before the first boss. Kill all 7 and then reset the dungeon.",
-							constant = "THIS_IS_A_RARE_DROP_FROM_THE_HELLBLAZE",
-							export = true,
-							text = {
-								en = "This is a rare drop from the Hellblaze Temptress mobs in the Cathedral of Eternal Night, on Heroic or Mythic difficulty.\n\nThere are 7 Temptress' available before the first boss. Kill all 7 and then reset the dungeon.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这是永夜大教堂中地狱烈焰魅魔的稀有掉落，难度为英雄或史诗。\n\n第一个首领之前共有 7 只魅魔。杀死全部 7 只后重置地下城。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is a rare drop from the Hellblaze Temptress mobs in the Cathedral of Eternal Night, on Heroic or Mythic difficulty.\n\nThere are 7 Temptress' available before the first boss. Kill all 7 and then reset the dungeon.",
 						["crs"] = {
 							120366,	-- Hellblaze Temptress
 							118714,	-- Hellblaze Temptress
@@ -152,24 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					})),
 					cr(117194, e(1906, {	-- Thrashbite the Scornful
 						ach(11769, {	-- A Steamy Romance Saga
-							["description"] = createLocalizationString({
-								readable = "Need to be in a full 5 man party for this achievement.",
-								constant = "NEED_TO_BE_IN_A_FULL_5_MAN_PARTY_FOR_THIS",
-								export = true,
-								text = {
-									en = "Need to be in a full 5 man party for this achievement.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "需要组成完整的 5 人小队才能完成此成就。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Need to be in a full 5 man party for this achievement.",
 						}),
 						i(144492),	-- Chain-Draped Gauntlets
 						i(144482),	-- Fel-Oiled Infernal Machine

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 62191, {	-- Call of the Light
 				q(91281, {	-- Midnight
-					["description"] = "~L.REQUIRES_RE_LOGGING_TO_BE_ACCEPTED",	-- If abandoned, it can be accepted from Image of Lady Liadrin
+					["description"] = "Requires re-logging to be accepted.",	-- If abandoned, it can be accepted from Image of Lady Liadrin
 					["provider"] = { "n", 241677 },	-- Image of Lady Liadrin
 					["coords"] = {
 						{ 53.0, 77.5, ORGRIMMAR },
@@ -67,24 +67,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				q(89012, {	-- A Safe Path
-					["description"] = createLocalizationString({
-						readable = "Becomes available after accepting 'The Hour of Need' (86805).",
-						constant = "BECOMES_AVAILABLE_AFTER_ACCEPTING_THE_HOUR_OF",
-						export = true,
-						text = {
-							en = "Becomes available after accepting 'The Hour of Need' (86805).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“危急时刻”（86805）后开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"]	= "Becomes available after accepting 'The Hour of Need' (86805).",
 					["sourceQuests"] = {
 						86770,	-- Champions of Quel'Danas
 						89271,	-- My Son
@@ -233,7 +216,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- due to hqt after this quest, I currently treat this as end of all intro part for Midnight
 			n(BONUS_OBJECTIVES, {
 				q(89441, {	-- Clear the Decks
-					["description"] = "~L.BECOMES_AVAILABLE_AFTER_ACCEPTING_THE_HOUR_OF",
+					["description"]	= "Becomes available after accepting 'The Hour of Need' (86805).",
 					["sourceQuests"] = {
 						86770,	-- Champions of Quel'Danas
 						89271,	-- My Son

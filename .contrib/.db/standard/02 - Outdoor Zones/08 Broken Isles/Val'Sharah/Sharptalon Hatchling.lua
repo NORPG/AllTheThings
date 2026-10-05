@@ -5,24 +5,7 @@
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		header(HEADERS.NPC, 115786, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Sharptalon Hatchling
-			["description"] = createLocalizationString({
-				readable = "1. Buy Dried Bilberries from Nalysse Dawnsorrow in Azsuna.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
-				constant = "1_BUY_DRIED_BILBERRIES_FROM_NALYSSE_DAWNSORROW",
-				export = true,
-				text = {
-					en = "1. Buy Dried Bilberries from Nalysse Dawnsorrow in Azsuna.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "1. 在阿苏纳向娜莉丝·晨悲购买干制越橘。\n2. 杀死利爪母鹰。\n3. /target 孤雏利爪鹰\n4. 用干制越橘喂食孤雏利爪鹰。\n5. 享受新的利爪雏鹰！每天完成一个任务即可获得坐骑！|r",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "1. Buy Dried Bilberries from Nalysse Dawnsorrow in Azsuna.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling! Do one quest each day for a mount!|r",
 			["crs"] = { 115740 },	-- Orphaned Sharptalon
 			["groups"] = {
 				pet(1976),	-- Sharptalon Hatchling (PET!)

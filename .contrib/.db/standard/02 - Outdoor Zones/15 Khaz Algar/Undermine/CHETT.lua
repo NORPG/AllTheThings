@@ -23,70 +23,19 @@ CHETT = createHeader({
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(CHETT, bubbleDownSelf({ ["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 13 } }, {
-			["description"] = createLocalizationString({
-				readable = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
-				constant = "ONCE_PER_WEEK_YOU_CAN_INTERACT_WITH_THE_C_H_E_T",
-				export = true,
-				text = {
-					en = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "每周你可以与 C.H.E.T.T. 机器互动一次，领取一组每周任务，每完成一项都有奖励。你可以将完成的清单交给 C.H.E.T.T. 换取一些神勇石，或交给你所属财阀的军需官换取 500 点声望。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(41626),	-- C.H.E.T.T. a Look
 					ach(41627),	-- C.H.E.T.T.ing it Twice
 					ach(41629, {	-- C.H.E.T.T.mate
-						["description"] = createLocalizationString({
-							readable = "Turning in a completed list for a Finders Fee will |cffff0000NOT|r give achievement credit.",
-							constant = "TURNING_IN_A_COMPLETED_LIST_FOR_A_FINDERS_FEE",
-							export = true,
-							text = {
-								en = "Turning in a completed list for a Finders Fee will |cffff0000NOT|r give achievement credit.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "提交已完成的清单以换取寻宝者报酬将|cffff0000不会|r获得成就进度。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Turning in a completed list for a Finders Fee will |cffff0000NOT|r give achievement credit.",
 						["groups"] = {
 							title(616),	-- Part-Timer <Name>
 						},
 					}),
 					ach(41630, {	-- "Employee" of the Month
-						["description"] = createLocalizationString({
-							readable = "Rumored to be obtainable by turning in the most Chett Cards on a single Character in a month.\nOnly 1 Person per Region can get it.\nExpect minimum 150+ Card Turn-in's.",
-							constant = "RUMORED_TO_BE_OBTAINABLE_BY_TURNING_IN_THE_MOST",
-							export = true,
-							text = {
-								en = "Rumored to be obtainable by turning in the most Chett Cards on a single Character in a month.\nOnly 1 Person per Region can get it.\nExpect minimum 150+ Card Turn-in's.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "据传，单个月内在单个角色上上交最多的 C.H.E.T.T. 卡片即可获得。\n每个地区只有 1 人能够获得。\n预计至少需要上交 150 张以上卡片。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Rumored to be obtainable by turning in the most Chett Cards on a single Character in a month.\nOnly 1 Person per Region can get it.\nExpect minimum 150+ Card Turn-in's.",
 						["groups"] = {
 							title(617, {	-- <Name>, "Employee" of the Month
 								["collectible"] = false,	-- You only keep it for a few days
@@ -119,24 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 43.4, 50.5, UNDERMINE },
 						["groups"] = {
 							i(236682, {	-- C.H.E.T.T. List
-								["description"] = createLocalizationString({
-									readable = "Talk to C.H.E.T.T. to be granted one for free, or turn in 40 C.H.E.T.T. cards to earn more after your first.",
-									constant = "TALK_TO_C_H_E_T_T_TO_BE_GRANTED_ONE_FOR_FREE_OR",
-									export = true,
-									text = {
-										en = "Talk to C.H.E.T.T. to be granted one for free, or turn in 40 C.H.E.T.T. cards to earn more after your first.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "与 C.H.E.T.T. 交谈可免费获得一个，或者在获得第一个之后上交 40 张 C.H.E.T.T. 卡片以换取更多。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Talk to C.H.E.T.T. to be granted one for free, or turn in 40 C.H.E.T.T. cards to earn more after your first.",
 								["cost"] = { { "i", 236668, 40 } },	-- C.H.E.T.T. Card
 							}),
 							i(237900, {	-- C.H.E.T.T. Pack (COSMETIC!)

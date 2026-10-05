@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(ACHIEVEMENTS, {
 			ach(13790, {	-- Armed for Action
-				["description"] = createLocalizationString({
-					readable = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
-					constant = "EACH_CRITERIA_CAN_BE_EARNED_BY_CREATING_WEAPONS",
-					export = true,
-					text = {
-						en = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在|cFFffd200毁灭玩具|r日常任务期间，与火箭长官机身架一起制造武器，即可获得每项条件。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
 			}),
 			ach(13513, {	-- Available in Eight Colors (unlocks paint: Battletorn Blue)
 				["sym"] = {{ "achievement_criteria" }},
@@ -513,24 +496,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				}),
 			}),
 			ach(13696, {	-- Scrappy's Best Friend
-				["description"] = createLocalizationString({
-					readable = "When you find Scrappy, use an |cff0070ddEnergy Cell|r to revive him and then feed him a |CffffffffMechano-Treat|r. He runs around after being revived by any player, so if you can't find him try using a /tar macro in the general Rustbolt area.",
-					constant = "WHEN_YOU_FIND_SCRAPPY_USE_AN_CFF0070DDENERGY",
-					export = true,
-					text = {
-						en = "When you find Scrappy, use an |cff0070ddEnergy Cell|r to revive him and then feed him a |CffffffffMechano-Treat|r. He runs around after being revived by any player, so if you can't find him try using a /tar macro in the general Rustbolt area.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当你找到好斗的小家伙时，使用一个|cff0070dd能量电池|r复活它，然后喂它一个|Cffffffff机械零食|r。被任何玩家复活后它都会四处乱跑，所以如果找不到它，可以在锈栓镇一带试试使用 /tar 宏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "When you find Scrappy, use an |cff0070ddEnergy Cell|r to revive him and then feed him a |CffffffffMechano-Treat|r. He runs around after being revived by any player, so if you can't find him try using a /tar macro in the general Rustbolt area.",
 				["coords"] = {
 					{ 70.4, 30.8, MECHAGON },
 					{ 71.8, 34.2, MECHAGON },
@@ -552,24 +518,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["groups"] = {
 					i(167698, {	-- Secret Fish Goggles
 						-- #if BEFORE 11.1.5
-						["description"] = createLocalizationString({
-							readable = "This becomes a toy in 11.1.5.",
-							constant = "THIS_BECOMES_A_TOY_IN_11_1_5",
-							export = true,
-							text = {
-								en = "This becomes a toy in 11.1.5.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这在 11.1.5 中变成一个玩具。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This becomes a toy in 11.1.5.",
 						-- #endif
 					}),
 					crit(44737, {	-- Bottom Feeding Stinkfish

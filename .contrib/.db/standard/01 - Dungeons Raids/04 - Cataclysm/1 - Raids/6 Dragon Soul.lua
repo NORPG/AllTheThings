@@ -27,48 +27,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["lvl"] = 85,
 				["groups"] = {
 					q(29802, {	-- A Hidden Message
-						["description"] = createLocalizationString({
-							readable = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
-							constant = "YES_YOU_ACTUALLY_HAVE_TO_PAY_THE_10_000_GOLD_TO",
-							export = true,
-							text = {
-								en = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "是的，你确实需要支付 10 000 金币才能在这条任务线上继续推进。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
 						["sourceQuest"] = 29801,	-- Proving Your Worth
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
 						["cost"] = { { "i", 74752, 1 } },	-- Solved Cipher
 						["groups"] = {
 							i(74749, {	-- Charging Decoder Ring
-								["description"] = createLocalizationString({
-									readable = "Just log out for 12 hours. Read a book or something!",
-									constant = "JUST_LOG_OUT_FOR_12_HOURS_READ_A_BOOK_OR",
-									export = true,
-									text = {
-										en = "Just log out for 12 hours. Read a book or something!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "只需离线 12 小时。读本书什么的吧！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Just log out for 12 hours. Read a book or something!",
 								["qgs"] = {
 									57801,	-- Thaumaturge Altha
 									57800,	-- Thaumaturge Rafir
@@ -144,24 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
 					}),
 					q(30116, {	-- Sharpening Your Fangs
-						["description"] = createLocalizationString({
-							readable = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
-							constant = "THIS_QUEST_REQUIRES_YOU_TO_TURN_IN_60_UNOPENED",
-							export = true,
-							text = {
-								en = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此任务需要你交付 60 个未开启的源质宝石簇。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["sourceQuest"] = 30113,	-- Victory in the Depths
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
@@ -260,48 +209,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 				["groups"] = {
 					currency(614, {	-- Mote of Darkness
-						["description"] = createLocalizationString({
-							readable = "Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",
-							constant = "USED_TO_BUY_UNCUT_GEMS_CONTAINED_IN_CRYSTALLINE",
-							export = true,
-							text = {
-								en = "Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "用于从龙眠神殿的商人达斯努里米处购买水晶晶簇中的未切割宝石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",
 					}),
 				},
 			}),
 			n(VENDORS, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>
 					i(78890, {	-- Crystalline Geode
-						["description"] = createLocalizationString({
-							readable = "Contains random uncut Cataclysm gems.",
-							constant = "CONTAINS_RANDOM_UNCUT_CATACLYSM_GEMS",
-							export = true,
-							text = {
-								en = "Contains random uncut Cataclysm gems.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "内含随机的大灾变未切割宝石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains random uncut Cataclysm gems.",
 						["cost"] = { { "c", 614, 1 } },	-- Mote of Darkness
 						["groups"] = {
 							i(71807),	-- Deepholm Iolite
@@ -355,24 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					-- }),
 					-- #if AFTER 9.1.5
 					currency(615, {	-- Essence of Corrupted Deathwing
-						["description"] = createLocalizationString({
-							readable = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
-							constant = "USED_TO_BUY_RANDOM_EPIC_UNCUT_GEMS_CONTAINED_IN",
-							export = true,
-							text = {
-								en = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "用于从龙眠神殿的商人达斯努里米处购买元素外壳晶簇中包含的随机史诗未切割宝石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
 					}),
 					-- #endif
 				})),
@@ -404,24 +302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78874),	-- Shoulders of the Corrupted Vanquisher
 							i(78863, {	-- Chest of the Corrupted Conqueror
 								-- #if AFTER LEGION
-								["description"] = createLocalizationString({
-									readable = "Paladin Completionists will want to take this item to the vendor to get the specific item they want. Right-clicking can award the Holy piece regardless of your spec.",
-									constant = "PALADIN_COMPLETIONISTS_WILL_WANT_TO_TAKE_THIS",
-									export = true,
-									text = {
-										en = "Paladin Completionists will want to take this item to the vendor to get the specific item they want. Right-clicking can award the Holy piece regardless of your spec.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "圣骑士全收集玩家会想把这件物品交给商人，以换取自己想要的那件装备。右键点击时，无论你是什么专精，都可能获得神圣专精的那件。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Paladin Completionists will want to take this item to the vendor to get the specific item they want. Right-clicking can award the Holy piece regardless of your spec.",
 								-- #endif
 							}),
 							i(78864),	-- Chest of the Corrupted Protector
@@ -578,24 +459,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 						["groups"] = {
 							i(71998, {	-- Essence of Destruction
-								["description"] = createLocalizationString({
-									readable = "Drops commonly from Dragon Soul bosses.",
-									constant = "DROPS_COMMONLY_FROM_DRAGON_SOUL_BOSSES",
-									export = true,
-									text = {
-										en = "Drops commonly from Dragon Soul bosses.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "常见掉落于巨龙之魂首领。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Drops commonly from Dragon Soul bosses.",
 							}),
 							i(77952, {	-- Elementium Gem Cluster
 								i(77951),	-- Shadowy Gem
@@ -628,47 +492,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6128, {	-- Ping Pong Champion
 							-- #if AFTER 6.0.3
-							["description"] = createLocalizationString({
-								readable = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
-								constant = "CAN_BE_SOLOED_WITHOUT_A_PET_TO_HOLD_THE_BOSS",
-								export = true,
-								text = {
-									en = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "无需用宠物拉住首领即可单独完成；球偶尔会进入免疫阶段，此时它能穿过首领而不丢失击打次数。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
 							-- #endif
 						}),
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 						ach(6129, {	-- Taste the Rainbow!
-							["description"] = createLocalizationString({
-								readable = "The oozes you need for the achievement spawns through the boss fight. Four colours will spawn each time, and the remaining oozes becomes immune when the first is killed. This is fine, just make sure two of the remaining oozes matches a criteria.",
-								constant = "THE_OOZES_YOU_NEED_FOR_THE_ACHIEVEMENT_SPAWNS",
-								export = true,
-								text = {
-									en = "The oozes you need for the achievement spawns through the boss fight. Four colours will spawn each time, and the remaining oozes becomes immune when the first is killed. This is fine, just make sure two of the remaining oozes matches a criteria.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "成就所需的软泥怪会在首领战过程中刷新。每次会刷新四种颜色，且当第一种被击杀后，剩余的软泥怪会变为免疫。这没关系，只要确保剩余软泥怪中有两种符合条件即可。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The oozes you need for the achievement spawns through the boss fight. Four colours will spawn each time, and the remaining oozes becomes immune when the first is killed. This is fine, just make sure two of the remaining oozes matches a criteria.",
 							["groups"] = {
 								crit(18495, {	-- Black and Yellow
 									["crs"] = {
@@ -703,45 +533,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(55689, e(317, {	-- Hagara the Stormbinder
 						ach(6175, {	-- Holding Hands
 							-- #if AFTER 6.0.3
-							["description"] = createLocalizationString({
-								readable = "Can be soloed with a pet or with help from another player. Requires 10 player mode. Get Hagara down to past 85% health, and kill the elemental spawn near a totem to charge it.\n\n|CFFFF0000Do not try to this in 25 player mode, you will get stuck unless you have a handful of other players with you!|r",
-								constant = "CAN_BE_SOLOED_WITH_A_PET_OR_WITH_HELP_FROM",
-								export = true,
-								text = {
-									en = "Can be soloed with a pet or with help from another player. Requires 10 player mode. Get Hagara down to past 85% health, and kill the elemental spawn near a totem to charge it.\n\n|CFFFF0000Do not try to this in 25 player mode, you will get stuck unless you have a handful of other players with you!|r",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可带宠物或在另一名玩家帮助下单独完成。需要 10 人模式。将哈加拉的血量打到 85% 以下，然后击杀图腾附近刷新的元素为其充能。\n\n|CFFFF0000不要在 25 人模式下尝试，除非你身边有几位其他玩家，否则你会卡住！|r",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be soloed with a pet or with help from another player. Requires 10 player mode. Get Hagara down to past 85% health, and kill the elemental spawn near a totem to charge it.\n\n|CFFFF0000Do not try to this in 25 player mode, you will get stuck unless you have a handful of other players with you!|r",
 							-- #endif
 						}),
 						i(74246, {	-- Cryptomancer's Decoder Ring
-							["description"] = createLocalizationString({
-								readable = "You need to pickpocket this from the boss.",
-								constant = "YOU_NEED_TO_PICKPOCKET_THIS_FROM_THE_BOSS",
-								export = true,
-								text = {
-									en = "You need to pickpocket this from the boss.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你需要从首领身上偷取此物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You need to pickpocket this from the boss.",
 							["b"] = 1,	-- BoP
 						}),
 					})),
@@ -752,24 +548,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(56427, e(332, {	-- Warmaster Blackthorn
 						ach(6105, {	-- Deck Defender
 						-- #if AFTER 6.0.3
-						["description"] = createLocalizationString({
-							readable = "Kill the Twilight Assault Drakes fast and soak any Twilight Barrage.\nUse a macro like:\n/tar Twilight Assault Drake\n/cast (whatever instant ranged ability you have)",
-							constant = "KILL_THE_TWILIGHT_ASSAULT_DRAKES_FAST_AND_SOAK",
-							export = true,
-							text = {
-								en = "Kill the Twilight Assault Drakes fast and soak any Twilight Barrage.\nUse a macro like:\n/tar Twilight Assault Drake\n/cast (whatever instant ranged ability you have)",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "快速击杀暮光突袭龙，并吃下所有暮光弹幕。\n使用类似这样的宏：\n/tar 暮光突袭龙\n/cast （你拥有的任意瞬发远程技能）",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kill the Twilight Assault Drakes fast and soak any Twilight Barrage.\nUse a macro like:\n/tar Twilight Assault Drake\n/cast (whatever instant ranged ability you have)",
 						-- #endif
 						}),
 					})),
@@ -784,24 +563,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
-							["description"] = createLocalizationString({
-								readable = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
-								constant = "FACING_INWARDS_TOWARDS_THE_MAELSTROM_THE",
-								export = true,
-								text = {
-									en = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "面向大漩涡内侧，事件开始时，守护巨龙将位于以下平台：\n伊瑟拉在起始平台。\n卡雷苟斯在右侧。\n诺兹多姆在左侧。\n阿莱克丝塔萨在最左侧。\n你可以在事件开始前通过在平台之间移动来获得移动速度增益，这有助于及时赶到阿莱克丝塔萨身边。确保守护巨龙被正确攻击以获得进度。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
 							["groups"] = {
 								crit(18658, {	-- Alexstrasza Assaulted First
 									["provider"] = { "n", 56099 },	-- Alexstrasza
@@ -830,7 +592,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 						-- #if BEFORE 9.1.5
 						currency(615, {	-- Essence of Corrupted Deathwing
-							["description"] = "~L.USED_TO_BUY_RANDOM_EPIC_UNCUT_GEMS_CONTAINED_IN",
+							["description"] = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
 						}),
 						-- #endif
 					})),

@@ -30,45 +30,11 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = {
 							i(94158, {	-- Big Bag of Zandalari Supplies
-								["description"] = createLocalizationString({
-									readable = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-									constant = "CAN_CONTAIN_ALL_SORTS_OF_CRAFTING_REAGENTS_GEMS",
-									export = true,
-									text = {
-										en = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "可能包含各种制造材料、宝石，以及在潘达利亚稀有生物身上通常能获得的装备绑定史诗物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
 								["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 							}),
 							i(94159, {	-- Small Bag of Zandalari Supplies
-								["description"] = createLocalizationString({
-									readable = "Can contain all sorts of herbs, ore, and cloth.",
-									constant = "CAN_CONTAIN_ALL_SORTS_OF_HERBS_ORE_AND_CLOTH",
-									export = true,
-									text = {
-										en = "Can contain all sorts of herbs, ore, and cloth.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "可能包含各种草药、矿石和布料。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
 							}),
 							i(94225),	-- Stolen Celestial Insignia
 							i(94227),	-- Stolen Golden Lotus Insignia
@@ -119,24 +85,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 69983 },	-- Primal Direhorn
 					}),
 					i(94288, {	-- Giant Dinosaur Bone
-						["description"] = createLocalizationString({
-							readable = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.",
-							constant = "THESE_BONES_CAN_BE_GATHERED_AND_TURNED_INTO_KU",
-							export = true,
-							text = {
-								en = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这些骨头可以收集起来，交给巨兽岛的库玛。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.",
 						["coords"] = {
 							{ 27.32, 58.07, ISLE_OF_GIANTS },	-- Cave Entrance
 							{ 32.72, 54.26, ISLE_OF_GIANTS },	-- Ku'ma

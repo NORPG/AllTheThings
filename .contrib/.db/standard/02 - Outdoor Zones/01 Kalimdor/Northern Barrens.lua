@@ -56,44 +56,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(474, {	-- Cheetah Cub (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found under large trees alongside Plainsland Cheetahs.",
-							constant = "CAN_BE_FOUND_UNDER_LARGE_TREES_ALONGSIDE",
-							export = true,
-							text = {
-								en = "Can be found under large trees alongside Plainsland Cheetahs.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在大树下与平原猎豹一同找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found under large trees alongside Plainsland Cheetahs.",
 					}),
 					pet(1157, {	-- Harpy Youngling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
-							constant = "CAN_BE_FOUND_AT_THE_DRY_HILLS_ALONGSIDE",
-							export = true,
-							text = {
-								en = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在干燥丘陵找到，与巫翼鹰身女妖在一起。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(386),	-- Prairie Dog (PET!)
@@ -189,24 +155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(66135, {	-- Dagra the Fierce <Master Pet Tamer>
 					["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only.\n\nDagra's pets are level 3 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_DAGRA_S_PETS_ARE",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only.\n\nDagra's pets are level 3 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落。\n\nDagra 的宠物为 3 级，三个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n3. 野兽 - 同上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only.\n\nDagra's pets are level 3 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["petBattleLvl"] = 3,
@@ -238,7 +187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(6651, {	-- Broken Wine Bottle
-						["description"] = "~L.DROPS_FROM_FISHING_IN_THE_SLUDGE_FEN",
+						["description"] = "Drops from fishing in the Sludge Fen.",
 						["coord"] = { 57.0, 17.0, NORTHERN_BARRENS },
 					}),
 				}),
@@ -618,7 +567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						recipe(3599),	-- Searing Totem
 						i(5176, {	-- Fire Totem
-							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+							["description"] = "You must keep this in your bags forever.",
 						}),
 						-- #if NOT ANYCLASSIC
 						i(6654, {	-- Torch of the Eternal Flame
@@ -789,7 +738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						recipe(5394),	-- Healing Stream Totem
 						i(5177, {	-- Water Totem
-							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+							["description"] = "You must keep this in your bags forever.",
 						}),
 					},
 				}),
@@ -1351,24 +1300,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(26701, {	-- Flight to Brackenwall
-					["description"] = createLocalizationString({
-						readable = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from an ogre swimming in a circle near the pier at Booty Bay in The Cape of Stranglethorn.",
-						constant = "THIS_QUEST_IS_ONLY_AVAILABLE_FOR_CHARACTERS_WHO",
-						export = true,
-						text = {
-							en = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from an ogre swimming in a circle near the pier at Booty Bay in The Cape of Stranglethorn.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务仅对尚未在尘泥沼泽开始任务的角色开放，并且需要完成引导任务“卡利姆多的召唤”。该任务可以从荆棘谷海角藏宝海湾码头附近一只绕圈游泳的食人魔处获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from an ogre swimming in a circle near the pier at Booty Bay in The Cape of Stranglethorn.",
 					["sourceQuest"] = 26696,	-- The Call of Kalimdor
 					["qg"] = 3391,	-- Gazlowe
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
@@ -1378,24 +1310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 				}),
 				q(26702, {	-- Flight to Theramore
-					["description"] = createLocalizationString({
-						readable = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from Corporal Jeyne on the pier at Booty Bay in The Cape of Stranglethorn.",
-						constant = "THIS_QUEST_IS_ONLY_AVAILABLE_FOR_CHARACTERS_WHO_2",
-						export = true,
-						text = {
-							en = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from Corporal Jeyne on the pier at Booty Bay in The Cape of Stranglethorn.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务仅对尚未在尘泥沼泽开始任务的角色开放，并且需要完成引导任务“卡利姆多的召唤”。该任务可以从荆棘谷海角藏宝海湾码头上的杰恩下士处获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from Corporal Jeyne on the pier at Booty Bay in The Cape of Stranglethorn.",
 					["sourceQuest"] = 26596,	-- The Call of Kalimdor
 					["qg"] = 3391,	-- Gazlowe
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
@@ -2610,7 +2525,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 				}),
 				q(1498, {	-- Path of Defense
-					["description"] = "~L.COMPLETING_THIS_QUEST_PREVENTS_YOU_FROM",
+					["description"] = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
 					["sourceQuest"] = 1505,	-- Veteran Uzzek
 					["qg"] = 5810,	-- Uzzek
 					["coord"] = { 61.38, 21.11, THE_BARRENS },
@@ -2803,7 +2718,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(866,	{	-- Root Samples
-					["description"] = "~L.TO_ACCESS_THIS_QUEST_YOU_MUST_HAVE_AT_LEAST_40",
+					["description"] = "To access this quest, you must have at least 40 skill in Herbalism.",
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coords"] = {
 						-- #if AFTER CATA
@@ -4148,24 +4063,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14068, {	-- Waptor Twapping
 					-- #if AFTER 9.0.1
-					["description"] = createLocalizationString({
-						readable = "This quest is a stand-alone quest involving level 30 raptors and have nothing to do with the level 35 Kor'kron soldiers around the zone. The level 35 soldiers got added with patch 5.3.0 as part of the late MoP storyline.",
-						constant = "THIS_QUEST_IS_A_STAND_ALONE_QUEST_INVOLVING",
-						export = true,
-						text = {
-							en = "This quest is a stand-alone quest involving level 30 raptors and have nothing to do with the level 35 Kor'kron soldiers around the zone. The level 35 soldiers got added with patch 5.3.0 as part of the late MoP storyline.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务是一个独立任务，涉及 30 级的迅猛龙，与该区域周围的 35 级库卡隆士兵无关。这些 35 级士兵是在 5.3.0 补丁中作为熊猫人之谜后期剧情的一部分加入的。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is a stand-alone quest involving level 30 raptors and have nothing to do with the level 35 Kor'kron soldiers around the zone. The level 35 soldiers got added with patch 5.3.0 as part of the late MoP storyline.",
 					-- #endif
 					["qg"] = 34828,	-- Kala'ma
 					["coord"] = { 62.0, 63.2, NORTHERN_BARRENS },
@@ -4269,7 +4167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.1, 33.9, THE_BARRENS },
 						-- #endif
 					},
-					["description"] = "~L.ROAMS_AROUND_THE_WATERFALL_JUST_OUTSIDE_THE",
+					["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					["groups"] = {
 						i(5423),	-- Boahn's Fang
 						i(5422),	-- Brambleweed Leggings
@@ -4469,7 +4367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3652, {	-- Trigore the Lasher
-					["description"] = "~L.INSIDE_THE_POOL_OF_WATER_OUTSIDE_THE_WAILING",
+					["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 64.0, NORTHERN_BARRENS },
@@ -4698,7 +4596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 61.8, 38.2, THE_BARRENS },
 						-- #endif
 					},
-					["description"] = "~L.TRAVELS_ON_THE_ROAD_BETWEEN_RATCHET_AND_THE",
+					["description"] = "Travels on the road between Ratchet and The Crossroads.",
 					["groups"] = {
 						i(4765, {	-- Enamelled Broadsword
 							["isLimited"] = true,
@@ -4949,24 +4847,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				i(5020, {	-- Kolkar Booty Key
-					["description"] = createLocalizationString({
-						readable = "Used to open Kolkar's Booty.",
-						constant = "USED_TO_OPEN_KOLKAR_S_BOOTY",
-						export = true,
-						text = {
-							en = "Used to open Kolkar's Booty.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "用于打开科尔卡的战利品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Used to open Kolkar's Booty.",
 					["timeline"] = { ADDED_1_11_1 },
 					["crs"] = {
 						3394,	-- Barak Kodobane
@@ -4992,27 +4873,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
-					["description"] = createLocalizationString({
-						readable = "Can drop from any creature in the Barrens.",
-						constant = "CAN_DROP_FROM_ANY_CREATURE_IN_THE_BARRENS",
-						export = true,
-						text = {
-							en = "Can drop from any creature in the Barrens.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可由贫瘠之地的任意生物掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from any creature in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
-					["description"] = "~L.CAN_DROP_FROM_ANY_CREATURE_IN_THE_BARRENS",
+					["description"] = "Can drop from any creature in the Barrens.",
 				}),
 			}),
 		},

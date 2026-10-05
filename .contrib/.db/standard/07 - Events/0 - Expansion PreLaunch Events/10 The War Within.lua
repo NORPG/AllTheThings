@@ -13,24 +13,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			ach(40796),	-- This Takes Me Back
 		}),
 		n(BONUS_OBJECTIVES, {
-			["description"] = createLocalizationString({
-				readable = "Can drop randomly from boss and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
-				constant = "CAN_DROP_RANDOMLY_FROM_BOSS_AND_MEMORY_EVENTS",
-				export = true,
-				text = {
-					en = "Can drop randomly from boss and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从首领和回忆事件中随机掉落，“新兵”掉落会遵循可用性，但“达拉然防御者”掉落不会。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can drop randomly from boss and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
 			["maps"] = { DUSTWALLOW_MARSH, DRAGONBLIGHT, SEARING_GORGE },
 			["sym"] = {	-- Symlink all armor and weapons from the Vendor
 				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
@@ -199,24 +182,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		n(BOSSES, {
 			m(EASTERN_KINGDOMS, {
 				i(226256, {	-- Token of the Remembrancers
-					["description"] = createLocalizationString({
-						readable = "Drops once per week per character.",
-						constant = "DROPS_ONCE_PER_WEEK_PER_CHARACTER",
-						export = true,
-						text = {
-							en = "Drops once per week per character.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "每个角色每周掉落一次。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
@@ -228,7 +194,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			m(KALIMDOR, {
 				i(226256, {	-- Token of the Remembrancers
-					["description"] = "~L.DROPS_ONCE_PER_WEEK_PER_CHARACTER",
+					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
@@ -240,7 +206,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			m(NORTHREND, {
 				i(226256, {	-- Token of the Remembrancers
-					["description"] = "~L.DROPS_ONCE_PER_WEEK_PER_CHARACTER",
+					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},

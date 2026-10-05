@@ -48,44 +48,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				}),
 			}),
 			pet(2662, {	-- Duskytooth Snooter (PET!)
-				["description"] = createLocalizationString({
-					readable = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r.",
-					constant = "RARE_PET_SHARES_SPAWNS_WITH_CFFFFD700RUSTYROOT",
-					export = true,
-					text = {
-						en = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "稀有宠物。与|cFFFFD700锈根鼻猪|r共享刷新。",
-						-- TODO: tw = "",
-					},
-				})
+				["description"] = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r."
 			}),
 			pet(2664, {	-- Experimental Roach (PET!)
-				["description"] = createLocalizationString({
-					readable = "Rare pet. Shares spawns with |cFFFFD700Junkheap Roach|r.",
-					constant = "RARE_PET_SHARES_SPAWNS_WITH_CFFFFD700JUNKHEAP",
-					export = true,
-					text = {
-						en = "Rare pet. Shares spawns with |cFFFFD700Junkheap Roach|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "稀有宠物。与|cFFFFD700垃圾堆蟑螂|r共享刷新。",
-						-- TODO: tw = "",
-					},
-				})
+				["description"] = "Rare pet. Shares spawns with |cFFFFD700Junkheap Roach|r."
 			}),
 			pet(2665),	-- Fleeting Frog (PET!)
 			pet(2663),	-- Junkheap Roach (PET!)
@@ -97,24 +63,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			pet(2673),	-- Scrapyard Tunneler (PET!)
 			pet(2671),	-- Specimen 97 (PET!)
 			pet(2666, {	-- Yellow Junkhopper (PET!)
-				["description"] = createLocalizationString({
-					readable = "Rare pet. Shares spawns with |cFFFFD700Fleeting Frog|r.",
-					constant = "RARE_PET_SHARES_SPAWNS_WITH_CFFFFD700FLEETING",
-					export = true,
-					text = {
-						en = "Rare pet. Shares spawns with |cFFFFD700Fleeting Frog|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "稀有宠物。与|cFFFFD700飞逝青蛙|r共享刷新。",
-						-- TODO: tw = "",
-					},
-				})
+				["description"] = "Rare pet. Shares spawns with |cFFFFD700Fleeting Frog|r."
 			}),
 		})),
 	}),

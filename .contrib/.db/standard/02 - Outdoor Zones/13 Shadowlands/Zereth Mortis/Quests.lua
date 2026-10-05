@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		n(QUESTS, {
 			n(REWARDS, {
 				i(190754, {	-- Firim's Specimen Container (TOY!)
-					["description"] = createLocalizationString({
-						readable = "Chance from Firim Dailies.",
-						constant = "CHANCE_FROM_FIRIM_DAILIES",
-						export = true,
-						text = {
-							en = "Chance from Firim Dailies.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "有几率从菲尔姆日常任务中获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Chance from Firim Dailies.",
 				}),
 			}),
 			header(HEADERS.Achievement, 15259, {	-- Secrets of the First Ones
@@ -663,24 +646,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
 				}),
 				q(64889, {	-- Match Made in Zereth Mortis
-					["description"] = createLocalizationString({
-						readable = "to unlock cosmic transport",
-						constant = "TO_UNLOCK_COSMIC_TRANSPORT",
-						export = true,
-						text = {
-							en = "to unlock cosmic transport",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "解锁宇宙传送",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "to unlock cosmic transport",
 					["sourceQuests"] = {
 						65245,	-- Pop Goes the Devourer!
 						64888,	-- Borrowed Power
@@ -1182,24 +1148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(65326, {	-- Circle of Strife
-				["description"] = createLocalizationString({
-					readable = "This Daily is available after researching Altonian Understanding",
-					constant = "THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
-					export = true,
-					text = {
-						en = "This Daily is available after researching Altonian Understanding",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研究阿尔托尼安理解后开放此日常任务",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
@@ -1214,7 +1163,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(65363, {	-- Dangerous State
-				["description"] = "~L.THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
@@ -1241,24 +1190,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(64579, {	-- Hallow Efforts
-				["description"] = createLocalizationString({
-					readable = "Has Forge-tap for the achievement",
-					constant = "HAS_FORGE_TAP_FOR_THE_ACHIEVEMENT",
-					export = true,
-					text = {
-						en = "Has Forge-tap for the achievement",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "拥有用于该成就的熔炉取样",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Has Forge-tap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -1268,13 +1200,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(64592, {	-- Historic Protection
-				["description"] = "~L.THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
 			}),
 			q(64717, {	-- Materials of Creation
-				["description"] = "~L.HAS_FORGE_TAP_FOR_THE_ACHIEVEMENT",
+				["description"] = "Has Forge-tap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -1285,7 +1217,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(65325, {	-- Motes of Knowledge
-				["description"] = "~L.THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
@@ -1297,7 +1229,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(65445, {	-- Necessary Resourcing
-				["description"] = "~L.THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
@@ -1307,7 +1239,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(65362, {	-- Not of the Body
-				["description"] = "~L.THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50.0, ZERETH_MORTIS },
@@ -1337,24 +1269,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(64785, {	-- Overgrown Story
-				["description"] = createLocalizationString({
-					readable = "Has Containment Trap for the achievement",
-					constant = "HAS_CONTAINMENT_TRAP_FOR_THE_ACHIEVEMENT",
-					export = true,
-					text = {
-						en = "Has Containment Trap for the achievement",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "拥有用于该成就的禁锢陷阱",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Has Containment Trap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
@@ -1376,7 +1291,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65364, {	-- Super Jiro
-				["description"] = "~L.THIS_DAILY_IS_AVAILABLE_AFTER_RESEARCHING",
+				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
@@ -1385,7 +1300,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			q(64854, {	-- Trappings of Success
-				["description"] = "~L.HAS_CONTAINMENT_TRAP_FOR_THE_ACHIEVEMENT",
+				["description"] = "Has Containment Trap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },

@@ -296,7 +296,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 						-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 						-- #if BEFORE 5.5.3
-						["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
+						["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 						-- #endif
 					})),
 				}),
@@ -1706,24 +1706,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 							i(131717, {	-- Starlight Beacon
 								-- #if AFTER 11.2.0
 								-- #if BEFORE 11.2.5
-								["description"] = createLocalizationString({
-									readable = "In patch 11.2.5, Starlight Beacon is becoming a toy.\n\nIf you don't have it, the next time the quest will be up is from 2nd September through 15th September. Then it won't be up again until March 2026.",
-									constant = "IN_PATCH_11_2_5_STARLIGHT_BEACON_IS_BECOMING_A",
-									export = true,
-									text = {
-										en = "In patch 11.2.5, Starlight Beacon is becoming a toy.\n\nIf you don't have it, the next time the quest will be up is from 2nd September through 15th September. Then it won't be up again until March 2026.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在 11.2.5 补丁中，星光信标将变为玩具。\n\n如果你还没有它，该任务下次出现的时间是 9 月 2 日至 9 月 15 日。之后要到 2026 年 3 月才会再次出现。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In patch 11.2.5, Starlight Beacon is becoming a toy.\n\nIf you don't have it, the next time the quest will be up is from 2nd September through 15th September. Then it won't be up again until March 2026.",
 								-- #endif
 								-- #endif
 							}),

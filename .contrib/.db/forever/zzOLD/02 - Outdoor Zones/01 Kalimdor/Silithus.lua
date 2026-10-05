@@ -100,24 +100,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(20645, {	-- Nature's Whisper
-							["description"] = createLocalizationString({
-								readable = "This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
-								constant = "THIS_IS_A_REWARD_THAT_IS_MAILED_TO_YOU_IN_ABOUT",
-								export = true,
-								text = {
-									en = "This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这是完成“可怕的目的”任务后大约一天内邮寄给你的奖励。请把它留作你的自然抗性套装。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] =
+								"This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
 						}),
 					},
 				}),
@@ -1622,24 +1606,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(RARES, {
 				o(180456, {	-- Lesser Wind Stone
-					["description"] = createLocalizationString({
-						readable = "Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
-						constant = "SUMMONS_ONE_OF_4_ABYSSAL_TEMPLARS_THE_RITUAL",
-						export = true,
-						text = {
-							en = "Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "召唤 4 位深渊圣殿骑士之一。仪式需要一套暮光套装。若要确保召唤出指定的圣殿骑士，可以使用召唤徽记。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
 					["cost"] = {
 						{ "i", 20408, 1 },	-- Twilight Cultist Cowl
 						{ "i", 20406, 1 },	-- Twilight Cultist Mantle
@@ -1697,24 +1665,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				o(180461, {	-- Wind Stone
-					["description"] = createLocalizationString({
-						readable = "Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
-						constant = "SUMMONS_ONE_OF_4_ABYSSAL_DUKES_THE_RITUAL",
-						export = true,
-						text = {
-							en = "Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "召唤 4 位深渊公爵之一。仪式需要一套暮光套装和一枚身份勋章。若要确保召唤出指定的公爵，可以使用召唤印记。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
 					["cost"] = {
 						{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
 						{ "i", 20408, 1 },	-- Twilight Cultist Cowl
@@ -1771,24 +1723,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				o(180466, {	-- Greater Wind Stone
-					["description"] = createLocalizationString({
-						readable = "Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
-						constant = "SUMMONS_ONE_OF_4_ABYSSAL_HIGH_COUNCIL_BOSSES",
-						export = true,
-						text = {
-							en = "Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "召唤 4 位深渊高级议会首领之一。仪式需要一套暮光套装、一枚身份勋章和一枚领主之戒。若要确保召唤出指定的高级议会成员，可以使用召唤权杖。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
 					["cost"] = {
 						{ "i", 20451, 1 },	-- Twilight Cultist Ring of Lordship
 						{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
@@ -1928,24 +1864,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			n(REWARDS, {
-				["description"] = createLocalizationString({
-					readable = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
-					constant = "THESE_ARE_REWARDED_FROM_MULTIPLE_QUESTS_IN_THE",
-					export = true,
-					text = {
-						en = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些可通过该区域的多个任务获得。更多信息请参阅各个物品的提示。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
 					i(20808, {	-- Combat Assignment
 						i(22648, {	-- Hive'Ashi Dossier
@@ -2052,24 +1971,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						},
 					}),
 					i(20469, {	-- Decoded True Believer Clippings
-						["description"] = createLocalizationString({
-							readable = "This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",
-							constant = "THIS_WILL_ARRIVE_IN_YOUR_MAILBOX_APPROXIMATELY",
-							export = true,
-							text = {
-								en = "This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果交还其中任意一个任务，这大约会在 12-24 小时后寄到你的邮箱。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",
 						["sourceQuests"] = {
 							8324,	-- Still Believing
 							8323,	-- True Believers

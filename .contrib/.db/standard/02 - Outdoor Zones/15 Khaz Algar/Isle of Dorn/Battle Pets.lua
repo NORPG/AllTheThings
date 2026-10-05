@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				pet(3361, {	-- Diamond Crab (PET!)
-					["description"] = "~L.BACKLINE_PET_ONLY",
+					["description"] = "Backline pet only.",
 				}),
 				pet(4538, {	-- Cobalt Ramolith (PET!)
 					["coord"] = { 25.5, 62.0, ISLE_OF_DORN },

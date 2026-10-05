@@ -5,24 +5,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(THE_MAW, {
 		header(HEADERS.Spell, 354778, {	-- The Rift
-			["description"] = createLocalizationString({
-				readable = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
-				constant = "THE_THINGS_IN_THIS_SECTION_ARE_ONLY_ACCESSIBLE_3",
-				export = true,
-				text = {
-					en = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "本节中的内容只有当你身处裂隙——一个由幽魂栖居的噬渊版本——中时才能获取。\n\n该相位可以通过对刻希亚的|cFFFFFFFF噬渊裂隙|r使用|cFF1eff00修复的裂隙钥匙|r，或使用|cFF0070dd崩塌的裂隙石|r进入。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
 			["cost"] = {
 				{ "i", 186969, 1 },	-- Collapsing Riftstone
 				{ "i", 186731, 1 },	-- Repaired Riftkey
@@ -45,24 +28,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						},
 					}),
 					n(179851, {	-- Guard Orguluus
-						["description"] = createLocalizationString({
-							readable = "Patrols in a circle around a large rock formation in the Beastwarrens.",
-							constant = "PATROLS_IN_A_CIRCLE_AROUND_A_LARGE_ROCK",
-							export = true,
-							text = {
-								en = "Patrols in a circle around a large rock formation in the Beastwarrens.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在野兽战场中围绕一块巨大的岩石构造绕圈巡逻。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Patrols in a circle around a large rock formation in the Beastwarrens.",
 						["coord"] = { 51.1, 71.1, THE_MAW },
 						["questID"] = 64272,
 						["groups"] = {
@@ -83,24 +49,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				})),
 				n(SPECIAL, {
 					n(179572, {	-- Hand of Nilganihmaht
-						["description"] = createLocalizationString({
-							readable = "At the back of the cave. Collect 5 rings from throughout the Maw and place them on the Hand to receive the mount.\n\nThe 4 pieces that make up the Stone Ring require the Necrolord Assault; 2 pieces additionally require the quest |cFF349cffPutting a Plan Together|r. The Hand of Nilganihmaht and the Runed Band are both in the Rift, which requires either the Night Fae Covenant Assault quest |cFF349cffA Shady Place|r or the use of a |cFF1eff00Repaired Riftkey|r in Korthia.\n\nThe other 3 rings can be collected at any time in the normal phase of the Maw.",
-							constant = "AT_THE_BACK_OF_THE_CAVE_COLLECT_5_RINGS_FROM",
-							export = true,
-							text = {
-								en = "At the back of the cave. Collect 5 rings from throughout the Maw and place them on the Hand to receive the mount.\n\nThe 4 pieces that make up the Stone Ring require the Necrolord Assault; 2 pieces additionally require the quest |cFF349cffPutting a Plan Together|r. The Hand of Nilganihmaht and the Runed Band are both in the Rift, which requires either the Night Fae Covenant Assault quest |cFF349cffA Shady Place|r or the use of a |cFF1eff00Repaired Riftkey|r in Korthia.\n\nThe other 3 rings can be collected at any time in the normal phase of the Maw.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在洞穴深处。从噬渊各处收集 5 枚戒指，并把它们放到手上以获得该坐骑。\n\n组成石环的 4 个部件需要通灵领主突袭；其中 2 个部件还需要任务|cFF349cff拼凑计划|r。尼尔加尼马特之手和符文指环都在裂隙中，进入裂隙需要法夜盟约突袭任务|cFF349cff阴暗之地|r，或者在刻希亚使用|cFF1eff00修复的裂隙钥匙|r。\n\n另外 3 枚戒指可以在噬渊的正常位面中随时收集。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "At the back of the cave. Collect 5 rings from throughout the Maw and place them on the Hand to receive the mount.\n\nThe 4 pieces that make up the Stone Ring require the Necrolord Assault; 2 pieces additionally require the quest |cFF349cffPutting a Plan Together|r. The Hand of Nilganihmaht and the Runed Band are both in the Rift, which requires either the Night Fae Covenant Assault quest |cFF349cffA Shady Place|r or the use of a |cFF1eff00Repaired Riftkey|r in Korthia.\n\nThe other 3 rings can be collected at any time in the normal phase of the Maw.",
 						["coord"] = { 25.6, 32.0, THE_MAW },
 						["groups"] = {
 							q(64197, {	-- Placing Stone Ring
@@ -143,24 +92,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						},
 					}),
 					n(179883, {	-- Zovaal's Vault
-						["description"] = createLocalizationString({
-							readable = "Part of the Ve'nari daily quest |cFF349cffFull of Surprises|r. The chest shows up on the main map and minimap when you are close to it. Turn it in to Ve'nari at |cFFFFFFFF44.7, 51.4.|r\n\nIf you return the chest to Ve'nari before picking up the daily quest, you cannot turn the quest in.",
-							constant = "PART_OF_THE_VE_NARI_DAILY_QUEST_CFF349CFFFULL",
-							export = true,
-							text = {
-								en = "Part of the Ve'nari daily quest |cFF349cffFull of Surprises|r. The chest shows up on the main map and minimap when you are close to it. Turn it in to Ve'nari at |cFFFFFFFF44.7, 51.4.|r\n\nIf you return the chest to Ve'nari before picking up the daily quest, you cannot turn the quest in.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "威·娜莉日常任务|cFF349cff惊喜连连|r的一部分。当你靠近宝箱时，它会显示在主地图和小地图上。在|cFFFFFFFF44.7, 51.4.|r处把它交给威·娜莉。\n\n如果你在接取该日常任务之前就把宝箱交还给威·娜莉，就无法完成该任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Part of the Ve'nari daily quest |cFF349cffFull of Surprises|r. The chest shows up on the main map and minimap when you are close to it. Turn it in to Ve'nari at |cFFFFFFFF44.7, 51.4.|r\n\nIf you return the chest to Ve'nari before picking up the daily quest, you cannot turn the quest in.",
 						["coords"] = {
 							{ 33.0, 66.3, THE_MAW },
 							{ 47.2, 79.6, THE_MAW },

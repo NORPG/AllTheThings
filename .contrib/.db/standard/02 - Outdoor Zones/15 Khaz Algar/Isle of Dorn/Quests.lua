@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				q(81966, {	-- Slept like a Rock
-					["description"] = createLocalizationString({
-						readable = "Requires re-logging to be accepted.",
-						constant = "REQUIRES_RE_LOGGING_TO_BE_ACCEPTED",
-						export = true,
-						text = {
-							en = "Requires re-logging to be accepted.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要重新登录才能接受。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires re-logging to be accepted.",
 					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
 					["maps"] = { LEGION_DALARAN },
 					["isBreadcrumb"] = true,
@@ -172,48 +155,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				------ Stay awhile and listen ------
 				hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
 					["name"] = "Stay awhile and listen: Dagran Thaurissan II",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after completing 'The Archive' (78468).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_THE",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after completing 'The Archive' (78468).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成“档案馆”（78468）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after completing 'The Archive' (78468).",
 					["sourceQuests"] = { 78468 },	-- The Archive (Completed)
 					["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 					["coord"] = { 29.8, 60.0, DORNOGAL },
 				}),
 				---
 				q(78457, {	-- Stones of Dornogal
-					["description"] = createLocalizationString({
-						readable = "After speaking with Innkeeper Ronesh, enter The Inn and talk to Anduin Wrynn and Magni Bronzebeard.",
-						constant = "AFTER_SPEAKING_WITH_INNKEEPER_RONESH_ENTER_THE",
-						export = true,
-						text = {
-							en = "After speaking with Innkeeper Ronesh, enter The Inn and talk to Anduin Wrynn and Magni Bronzebeard.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与旅店老板罗内什交谈后，进入旅店并与安度因·乌瑞恩和麦格尼·铜须交谈。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "After speaking with Innkeeper Ronesh, enter The Inn and talk to Anduin Wrynn and Magni Bronzebeard.",
 					["sourceQuests"] = { 78460 },	-- Hypocenter
 					["provider"] = { "n", 217854 },	-- Merrix
 					["coord"] = { 29.4, 59.4, DORNOGAL },
@@ -224,24 +173,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				------ Stay awhile and listen ------
 				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Hypocenter' (78460).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Hypocenter' (78460).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“震源”（78460）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Hypocenter' (78460).",
 					["sourceQuests"] = { 78460 },	-- Hypocenter (Accepted)
 					["provider"] = { "n", 222558 },	-- Anduin Wrynn
 					["coord"] = { 44.8, 44.7, DORNOGAL },
@@ -249,24 +181,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				hqt(82460, {	-- Stay awhile and Listen: Magni Bronzebeard
 					["name"] = "Stay awhile and listen: Magni Bronzebeard",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Stones of Dornogal' (78457).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_2",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Stones of Dornogal' (78457).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“多恩诺嘉尔之石”（78457）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Stones of Dornogal' (78457).",
 					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (Accepted)
 					["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 					["coord"] = { 44.5, 44.5, DORNOGAL },
@@ -296,24 +211,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				--
 				q(78464, {	-- Delve into the Earth
-					["description"] = createLocalizationString({
-						readable = "For some reason, Blizzard decided that this quest would have Spec-specific loot attached. You will NOT collect all available appearances for your class automatically - make sure you are in the correct spec.",
-						constant = "FOR_SOME_REASON_BLIZZARD_DECIDED_THAT_THIS",
-						export = true,
-						text = {
-							en = "For some reason, Blizzard decided that this quest would have Spec-specific loot attached. You will NOT collect all available appearances for your class automatically - make sure you are in the correct spec.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "出于某种原因，暴雪决定让此任务附带专精专属的战利品。你不会自动收集到本职业所有可用的外观——请务必切换到正确的专精。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "For some reason, Blizzard decided that this quest would have Spec-specific loot attached. You will NOT collect all available appearances for your class automatically - make sure you are in the correct spec.",
 					["sourceQuests"] = { 78461 },	-- The Fourth Seat
 					["provider"] = { "n", 217879 },	-- Adelgonn
 					["coord"] = { 41.8, 72.6, ISLE_OF_DORN },
@@ -351,7 +249,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(78462, {	-- Echoes of Compassion
-					["description"] = "~L.FOR_SOME_REASON_BLIZZARD_DECIDED_THAT_THIS",
+					["description"] = "For some reason, Blizzard decided that this quest would have Spec-specific loot attached. You will NOT collect all available appearances for your class automatically - make sure you are in the correct spec.",
 					["sourceQuests"] = {
 						79553,	-- A Natural Remedy
 						78463,	-- Building Blocks
@@ -494,24 +392,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				hqt(85681, {	-- Stay awhile and listen: Moira Thaurissan
 					["name"] = "Stay awhile and listen: Moira Thaurissan",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Into The Deeps' (80434) but vanishes once you hand in 'Into The Deeps' (80434).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_INTO",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Into The Deeps' (80434) but vanishes once you hand in 'Into The Deeps' (80434).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“深入深渊”（80434）后即可出现该对话，但一旦你交付“深入深渊”（80434）后就会消失。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Into The Deeps' (80434) but vanishes once you hand in 'Into The Deeps' (80434).",
 					["sourceQuests"] = { 80434 },	-- Into The Deeps (After accepting but unavailable after completion)
 					["provider"] = { "n", 217887 },	-- Moira Thaurissan
 					["coord"] = { 32.4, 59.6, DORNOGAL },

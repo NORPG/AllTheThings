@@ -14,24 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	n(PEAK_OF_SERENITY, {
 		["lore"] = "The Peak of Serenity is a hidden monastery and sanctuary located high in the north-central reaches of Pandaria's Kun-Lai Summit. It served primarily as a training ground and place of refuge for monks, and was easily accessible to them through Zen Pilgrimage. In this way, it served a very similar function for monks as Moonglade did for druids and Acherus: The Ebon Hold did for death knights.",
 		-- #if AFTER LEGION
-		["description"] = createLocalizationString({
-			readable = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",
-			constant = "THIS_AREA_PHASES_ONCE_YOU_HAVE_BEGUN_THE_MONK",
-			export = true,
-			text = {
-				en = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "一旦你开始武僧职业大厅战役，该区域就会进入相位变化，并且在你完成战役之前可能无法再次进入。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",
 		-- #endif
 		["timeline"] = { ADDED_5_0_4 },
 		["maps"] = { KUN_LAI_SUMMIT },
@@ -348,24 +331,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 			}),
 			n(VENDORS, {
 				n(66354, {	-- Master Cannon <Tanner>
-					["description"] = createLocalizationString({
-						readable = "All items on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
-						constant = "ALL_ITEMS_ON_THIS_VENDOR_ARE_QUEST_REWARDS_YOU",
-						export = true,
-						text = {
-							en = "All items on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这名商人出售的所有物品都是任务奖励。你必须完成相应的任务才能购买这些奖励。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "All items on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
 					["sym"] = {	-- Select the quests directly to view on the vendor that way they filter properly based on visibility of the quest
 						{"select","questID",
 							31837,	-- Continue Your Training: Master Cheng
@@ -377,24 +343,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(66356, {	-- Master Hwang <Staff Vendor>
-					["description"] = createLocalizationString({
-						readable = "The blue-quality staves on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
-						constant = "THE_BLUE_QUALITY_STAVES_ON_THIS_VENDOR_ARE",
-						export = true,
-						text = {
-							en = "The blue-quality staves on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该商人出售的蓝色品质法杖是任务奖励。你必须完成相应任务才能购买这些奖励。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The blue-quality staves on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
 					["coord"] = { 50.44, 42.61, KUN_LAI_SUMMIT },
 					["sym"] = {	-- Select the quests directly to view on the vendor that way they filter properly based on visibility of the quest
 						{"select","questID",
@@ -417,24 +366,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(66359, {	-- Master Tan <Fist Weapon Vendor>
-					["description"] = createLocalizationString({
-						readable = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu' (31839)",
-						constant = "THE_BLUE_QUALITY_FIST_WEAPONS_ON_THIS_VENDOR",
-						export = true,
-						text = {
-							en = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu' (31839)",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该商人出售的蓝色品质拳套武器需要你完成 30 级武僧任务“继续你的训练：胡大师”（31839）。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu' (31839)",
 					["coord"] = { 50.02, 38.53, KUN_LAI_SUMMIT },
 					["groups"] = {
 						i(89579),	-- Tiger Lord's Bladed Claws

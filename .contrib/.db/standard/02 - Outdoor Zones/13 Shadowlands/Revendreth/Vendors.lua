@@ -241,48 +241,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 					}),
 					i(180973, {	-- Necklace of Dredbat Fangs
-						["description"] = createLocalizationString({
-							readable = "Take this to Ta'lan the Antiquary in Oribos (downstairs in The Broker's Den) |cffffffff(51.4, 42.9)|r.",
-							constant = "TAKE_THIS_TO_TA_LAN_THE_ANTIQUARY_IN_ORIBOS",
-							export = true,
-							text = {
-								en = "Take this to Ta'lan the Antiquary in Oribos (downstairs in The Broker's Den) |cffffffff(51.4, 42.9)|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "把它交给奥利波斯的古物学家塔兰（掮灵巢穴下层）|cffffffff(51.4, 42.9)|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Take this to Ta'lan the Antiquary in Oribos (downstairs in The Broker's Den) |cffffffff(51.4, 42.9)|r.",
 					}),
 					i(181799),	-- Extra Large Hat
 					i(182298),	-- Kaja'Extreme
 					i(182702),	-- Phial of Black Muck Dye
 					i(182163),	-- Strength of Blood
 					i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat (RECIPE!)
-						["description"] = createLocalizationString({
-							readable = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
-							constant = "SOLD_FOR_20_30_OF_A_TRADE_GOOD_WHICH_CHANGES",
-							export = true,
-							text = {
-								en = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "售价为 20-30 个贸易品，所需的贸易品每天都会变化。而且有时它甚至不在商人那里！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
 						["timeline"] = { ADDED_9_1_5 },
 					}),
 				},

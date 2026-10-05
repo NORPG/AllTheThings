@@ -22,24 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(241956, {	-- Arcana-Monger So'zer
-				["description"] = createLocalizationString({
-					readable = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
-					constant = "RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_WHEN",
-					export = true,
-					text = {
-						en = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有在有人进行通缉任务时，才能召唤并击杀该稀有生物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 33.6, 36.9, KARESH_TAZAVESH },
 				["questID"] = 90696,
 				["groups"] = {
@@ -49,7 +32,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(238540, {	-- Grubber
-				["description"] = "~L.RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_WHEN",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 71.2, 57.2, KARESH_TAZAVESH },
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
@@ -65,24 +48,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(245998, {	-- Heka'tamos <the Elemental Disjunction>
-				["description"] = createLocalizationString({
-					readable = "You need to interract with Spectral Lantern, Dewminder, Earthy Succulent, and Windcatcher inside The Oasis. Their positions are marked on the minimap.\nOnce you have obtained the buffs, you can summon Heka'tamos at the Brazier of Elemental Union near his spawn point.",
-					constant = "YOU_NEED_TO_INTERRACT_WITH_SPECTRAL_LANTERN",
-					export = true,
-					text = {
-						en = "You need to interract with Spectral Lantern, Dewminder, Earthy Succulent, and Windcatcher inside The Oasis. Their positions are marked on the minimap.\nOnce you have obtained the buffs, you can summon Heka'tamos at the Brazier of Elemental Union near his spawn point.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你需要与绿洲内的幽灵灯笼、露水看守者、土质多肉植物和捕风者互动。它们的位置会标记在小地图上。\n获得这些增益后，你可以在赫卡塔莫斯刷新点附近的元素联合火盆处召唤他。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You need to interract with Spectral Lantern, Dewminder, Earthy Succulent, and Windcatcher inside The Oasis. Their positions are marked on the minimap.\nOnce you have obtained the buffs, you can summon Heka'tamos at the Brazier of Elemental Union near his spawn point.",
 				["coords"] = {
 					{ 75.2, 31.0, KARESH },
 				},
@@ -97,7 +63,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(238536, {	-- Hollowbane
-				["description"] = "~L.RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_WHEN",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 48.4, 16.9, KARESH },
 				["questID"] = 90689,
 				["groups"] = {
@@ -108,24 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(231229, {	-- Korgoth the Hungerer
-				["description"] = createLocalizationString({
-					readable = "Rare can be summoned and killed only during the 'Devourer Attack: The Oasis'.",
-					constant = "RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_DURING_THE",
-					export = true,
-					text = {
-						en = "Rare can be summoned and killed only during the 'Devourer Attack: The Oasis'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该稀有只能在“吞噬者袭击：绿洲”期间被召唤和击杀。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Oasis'.",
 				["coord"] = { 71.5, 27.4, KARESH },
 				["crs"] = { 231232 },	-- Devourer Attack (Vignette)
 				["questID"] = 91286,
@@ -133,24 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["isWeekly"] = true,
 				["groups"] = {
 					i(232467, {	-- Crystallized Anima (QS!)
-						["description"] = createLocalizationString({
-							readable = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
-							constant = "CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_QUEST",
-							export = true,
-							text = {
-								en = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|cFFE50D12建议：|r 除非“生态演替”世界任务处于激活状态，否则不要交还从此物品获得的任务。它对世界任务完成度贡献 20%。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
 					q(91309, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
 						["name"] = "Devoured Energy-Pod Devourer Attack: The Oasis",
@@ -170,24 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(245997, {	-- Malek'ta <The Jaws of Oblivion>
-				["description"] = createLocalizationString({
-					readable = "Malek'ta is burrowed under the ground. Jump around to lure it out.",
-					constant = "MALEK_TA_IS_BURROWED_UNDER_THE_GROUND_JUMP",
-					export = true,
-					text = {
-						en = "Malek'ta is burrowed under the ground. Jump around to lure it out.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "玛勒克塔潜伏在地下。四处跳跃把它引出来。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Malek'ta is burrowed under the ground. Jump around to lure it out.",
 				["coord"] = { 54.1, 58.8, KARESH },
 				["questID"] = 91275,
 				["groups"] = {
@@ -197,24 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(234970, {	-- Miasmawrath
-				["description"] = createLocalizationString({
-					readable = "Rare can be summoned and killed only during the 'Devourer Attack: Eco-dome: Primus'.",
-					constant = "RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_DURING_THE_2",
-					export = true,
-					text = {
-						en = "Rare can be summoned and killed only during the 'Devourer Attack: Eco-dome: Primus'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该稀有只能在“吞噬者袭击：生态圆顶：普里穆斯”期间被召唤和击杀。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: Eco-dome: Primus'.",
 				["coord"] = { 50.6, 54.1, KARESH },
 				["crs"] = { 234967 },	-- Soroth Miasmawrath (Vignette)
 				["questID"] = 91287,
@@ -222,7 +120,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["isWeekly"] = true,
 				["groups"] = {
 					i(238663, {	-- Crystallized Anima (QS!)
-						["description"] = "~L.CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_QUEST",
+						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
 					q(91310, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
 						["name"] = "Devoured Energy-Pod Devourer Attack: Eco-dome Primus",
@@ -247,7 +145,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				-- ["questID"] = ,
 			}),
 			n(241920, {	-- Purple Peat
-				["description"] = "~L.RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_WHEN",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 42.5, 57.5, KARESH },
 				["questID"] = 90692,
 				["isDaily"] = IGNORED_VALUE,
@@ -262,7 +160,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(238135, {	-- Shatterpulse
-				["description"] = "~L.RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_WHEN",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 49.2, 28.2, KARESH },
 				["questID"] = 90687,
 				["groups"] = {
@@ -270,24 +168,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(235087, {	-- The Harvester
-				["description"] = createLocalizationString({
-					readable = "Rare can be summoned and killed only during the 'Devourer Attack: The Atrium'.",
-					constant = "RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_DURING_THE_3",
-					export = true,
-					text = {
-						en = "Rare can be summoned and killed only during the 'Devourer Attack: The Atrium'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该稀有只能在“吞噬者袭击：中庭”期间被召唤和击杀。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Atrium'.",
 				["coord"] = { 49.5, 64.2, KARESH },
 				["crs"] = { 235085 },	-- Devourer Attack 3 [DNT] (Vignette)
 				["questID"] = 91289,
@@ -295,7 +176,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["isWeekly"] = true,
 				["groups"] = {
 					i(238664, {	-- Crystallized Anima (QS!)
-						["description"] = "~L.CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_QUEST",
+						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
 					q(91311, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
 						["name"] = "Devoured Energy-Pod Devourer Attack: The Atrium",
@@ -317,24 +198,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(235104, {	-- The Wallbreaker
-				["description"] = createLocalizationString({
-					readable = "Rare can be summoned and killed only during the 'Devourer Attack: Tazavesh'.",
-					constant = "RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_DURING_THE_4",
-					export = true,
-					text = {
-						en = "Rare can be summoned and killed only during the 'Devourer Attack: Tazavesh'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该稀有只能在“吞噬者袭击：塔扎维什”期间被召唤和击杀。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: Tazavesh'.",
 				["coord"] = { 27.5, 72.3, KARESH_TAZAVESH },
 				["crs"] = { 235102 },	-- Devourer Attack 4 (Vignette)
 				["questID"] = 91290,
@@ -342,7 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["isWeekly"] = true,
 				["groups"] = {
 					i(238665, {	-- Crystallized Anima (QS!)
-						["description"] = "~L.CFFE50D12SUGGESTION_R_DO_NOT_TURN_IN_QUEST",
+						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
 					q(91312, {	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
 						["name"] = "Devoured Energy-Pod Devourer Attack: Tazavesh",
@@ -364,7 +228,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(238384, {	-- Xy'vox the Twisted
-				["description"] = "~L.RARE_CAN_BE_SUMMONED_AND_KILLED_ONLY_WHEN",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 31.2, 57.8, KARESH },
 				["questID"] = 90694,
 				["isWeekly"] = true,
@@ -379,24 +243,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		})),
 		n(REWARDS, {
 			i(246159, {	-- Translocated Gorger (MOUNT!)
-				["description"] = createLocalizationString({
-					readable = "|cff1eff00Devoured Energy-Pods|r can be obtained by killing Rare Elite Bosses of the 'Devourer Attacks'\n1 Energy-Pod can be obtained per Rare, Warband, and Week.",
-					constant = "CFF1EFF00DEVOURED_ENERGY_PODS_R_CAN_BE_OBTAINED",
-					export = true,
-					text = {
-						en = "|cff1eff00Devoured Energy-Pods|r can be obtained by killing Rare Elite Bosses of the 'Devourer Attacks'\n1 Energy-Pod can be obtained per Rare, Warband, and Week.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "|cff1eff00被吞噬的能量荚|r可通过击杀“吞噬者来袭”的稀有精英首领获得。\n每个稀有怪、每个战团、每周可获得 1 个能量荚。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "|cff1eff00Devoured Energy-Pods|r can be obtained by killing Rare Elite Bosses of the 'Devourer Attacks'\n1 Energy-Pod can be obtained per Rare, Warband, and Week.",
 				["cost"] = { { "i", 246240, 20 } },	-- Devoured Energy-Pod
 			}),
 		}),

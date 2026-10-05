@@ -44,24 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				ach(62341),	-- Abundance: Ain't Dun Till It's Dun
 				ach(62266),	-- Abundance: An Acolyte no Longer
 				ach(62338, {	-- Abundance: Artisan
-					["description"] = createLocalizationString({
-						readable = "Requires you to click 4 profession items during an Abundance.\nRequires 25 or more Skill to click.\nEach zone has specific professions:\n\nEversong Woods: Enchanting, Jewelcrafting, Tailoring\n\nZul’Aman: Cooking, Leatherworking, Skinning\n\nHarandar: Alchemy, Herbalism, Inscription\n\nVoidstorm: Blacksmithing, Engineering, Mining",
-						constant = "REQUIRES_YOU_TO_CLICK_4_PROFESSION_ITEMS_DURING",
-						export = true,
-						text = {
-							en = "Requires you to click 4 profession items during an Abundance.\nRequires 25 or more Skill to click.\nEach zone has specific professions:\n\nEversong Woods: Enchanting, Jewelcrafting, Tailoring\n\nZul’Aman: Cooking, Leatherworking, Skinning\n\nHarandar: Alchemy, Herbalism, Inscription\n\nVoidstorm: Blacksmithing, Engineering, Mining",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要在丰饶期间点击 4 个专业物品。\n需要 25 点或以上技能才能点击。\n每个区域都有特定的专业：\n\n永歌森林：附魔、珠宝加工、裁缝\n\n祖阿曼：烹饪、制皮、剥皮\n\n哈兰达尔：炼金术、草药学、铭文\n\n虚空风暴：锻造、工程学、采矿",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires you to click 4 profession items during an Abundance.\nRequires 25 or more Skill to click.\nEach zone has specific professions:\n\nEversong Woods: Enchanting, Jewelcrafting, Tailoring\n\nZul’Aman: Cooking, Leatherworking, Skinning\n\nHarandar: Alchemy, Herbalism, Inscription\n\nVoidstorm: Blacksmithing, Engineering, Mining",
 				}),
 				ach(61939),	-- Abundance: Artisan of Floaret
 				ach(61938),	-- Abundance: Artisan of Loaknit
@@ -86,24 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			n(MAILBOX, {
 				i(274578, {	-- Offering of Unalloyed Abundance
-					["description"] = createLocalizationString({
-						readable = "Granted at the start of 12.0.5 to players who did not receive appropriate amounts of Unalloyed Abundance for their efforts prior to that point.",
-						constant = "GRANTED_AT_THE_START_OF_12_0_5_TO_PLAYERS_WHO",
-						export = true,
-						text = {
-							en = "Granted at the start of 12.0.5 to players who did not receive appropriate amounts of Unalloyed Abundance for their efforts prior to that point.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在 12.0.5 开始时授予那些在此之前未因其努力获得适量“纯质丰饶”的玩家。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Granted at the start of 12.0.5 to players who did not receive appropriate amounts of Unalloyed Abundance for their efforts prior to that point.",
 					["timeline"] = { ADDED_12_0_5 },
 				}),
 			}),

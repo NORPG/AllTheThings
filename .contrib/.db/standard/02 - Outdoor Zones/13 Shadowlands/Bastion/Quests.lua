@@ -802,24 +802,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				-- Nemea
 				q(58184, {	-- Antiquated Methodology
-					["description"] = createLocalizationString({
-						readable = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
-						constant = "ONLY_AVAILABLE_IF_YOU_COMPLETE_ALL_OF_PELODIS_S",
-						export = true,
-						text = {
-							en = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在你先完成佩洛迪斯的全部任务、且未完成任何涅墨亚的任务时可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
 					["sourceQuests"] = { 57937 },	-- Tactical Formation
 					["altQuests"] = { 58185 },	-- Success Without Soul
 					["provider"] = { "n", 158765 },	-- Pelodis
@@ -886,24 +869,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				-- Pelodis
 				q(58185, {	-- Success Without Soul
-					["description"] = createLocalizationString({
-						readable = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
-						constant = "ONLY_AVAILABLE_IF_YOU_COMPLETE_ALL_OF_NEMEA_S",
-						export = true,
-						text = {
-							en = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在你先完成涅墨亚的全部任务、且未完成任何佩洛迪斯的任务时可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
 					["sourceQuests"] = { 58042 },	-- On Larion Wings
 					["altQuests"] = { 58184 },	-- Antiquated Methodology
 					["provider"] = { "n", 157696 },	-- Nemea

@@ -35,24 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					394437, 412470, 424201,	-- Shadow Rune Buffs
 					394441, 413078, 424205	-- Titan Rune Buffs
 				),
-				["description"] = createLocalizationString({
-					readable = "Defeating the final boss encounter on Defense Protocol Alpha will reward 1 Emblem of Conquest and can also drop T7 tokens for helm, spaulders, and leggings.",
-					constant = "DEFEATING_THE_FINAL_BOSS_ENCOUNTER_ON_DEFENSE",
-					export = true,
-					text = {
-						en = "Defeating the final boss encounter on Defense Protocol Alpha will reward 1 Emblem of Conquest and can also drop T7 tokens for helm, spaulders, and leggings.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在防御协议阿尔法中击败最终首领战会奖励 1 枚征服纹章，还可能掉落头部、护肩和腿部的 T7 套装兑换物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Defeating the final boss encounter on Defense Protocol Alpha will reward 1 Emblem of Conquest and can also drop T7 tokens for helm, spaulders, and leggings.",
 				["maps"] = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,

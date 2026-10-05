@@ -61,24 +61,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				},
 			}),
 			n(253387, {	-- Selfira Ambergrove <Decor Specialist>
-				["description"] = createLocalizationString({
-					readable = "Reputation-based Decor from this Vendor is currently NOT discounted!",
-					constant = "REPUTATION_BASED_DECOR_FROM_THIS_VENDOR_IS",
-					export = true,
-					text = {
-						en = "Reputation-based Decor from this Vendor is currently NOT discounted!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该商人的声望折扣装饰目前没有折扣！",
-						-- TODO: tw = "",
-					},
-				}),	-- possibly a bug Blizz might fix
+				["description"] = "Reputation-based Decor from this Vendor is currently NOT discounted!",	-- possibly a bug Blizz might fix
 				["coord"] = { 54.2, 72.4, VALSHARAH },
 				["timeline"] = { ADDED_11_2_7 },
 				["sym"] = {{"select","itemID",

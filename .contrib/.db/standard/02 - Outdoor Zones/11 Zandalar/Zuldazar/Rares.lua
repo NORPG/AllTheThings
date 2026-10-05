@@ -173,24 +173,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(149147, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- N'chala the Egg Thief
-				["description"] = createLocalizationString({
-					readable = "N'chala pats between the coordinates.",
-					constant = "N_CHALA_PATS_BETWEEN_THE_COORDINATES",
-					export = true,
-					text = {
-						en = "N'chala pats between the coordinates.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "恩查拉在这些坐标之间巡逻。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "N'chala pats between the coordinates.",
 				["questID"] = 54770,	-- needs confirmation, but this was the last questID printed after I killed it
 				["coords"] = {
 					{ 69.2, 35.2, ZULDAZAR },

@@ -9,24 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = 3066348,
 				-- Possible to use HQT's to track unlock
-				["description"] = createLocalizationString({
-					readable = "How to unlock the faction:\n\nStep1: Own either a Seabreeze Bumblebee or Bumbles.\nStep2: Go to Barry in Stormsong Valley at 69.64 with your Bee summoned.\nStep3: Follow the green clouds to 62.26 & watch the interaction between Barry and the Honeyback Hivemother.\nStep4: Loot the Thin Jelly just outside the Cave at 63.28, try to give it to the Hivemother & then talk to Barry again.\nStep5: Follow Barry inside, talk to him for the million'th time & then feed your first Jelly to the Nascent Harvester, which is in the honey pool in front of him. This gives you your first 20 reputation, allowing you to now see Jelly Deposits and earn reputation.\n\nAll Coordinates can be placed via rightclicking the Honeyback Hive Header.",
-					constant = "HOW_TO_UNLOCK_THE_FACTION_STEP1_OWN_EITHER_A",
-					export = true,
-					text = {
-						en = "How to unlock the faction:\n\nStep1: Own either a Seabreeze Bumblebee or Bumbles.\nStep2: Go to Barry in Stormsong Valley at 69.64 with your Bee summoned.\nStep3: Follow the green clouds to 62.26 & watch the interaction between Barry and the Honeyback Hivemother.\nStep4: Loot the Thin Jelly just outside the Cave at 63.28, try to give it to the Hivemother & then talk to Barry again.\nStep5: Follow Barry inside, talk to him for the million'th time & then feed your first Jelly to the Nascent Harvester, which is in the honey pool in front of him. This gives you your first 20 reputation, allowing you to now see Jelly Deposits and earn reputation.\n\nAll Coordinates can be placed via rightclicking the Honeyback Hive Header.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如何解锁该阵营：\n\n第1步：拥有海风熊蜂或邦博斯。\n第2步：召唤出你的蜜蜂，前往斯托颂谷地 69.64 处的巴里那里。\n第3步：跟随绿色云雾前往 62.26，观看巴里与蜜背蜂后之间的互动。\n第4步：拾取洞穴外 63.28 处的稀薄蜂蜜，试着把它交给蜂后，然后再次与巴里交谈。\n第5步：跟随巴里进入内部，与他进行第无数次交谈，然后把你的第一份蜂蜜喂给他面前蜂蜜池中的初生收割者。这会给你最初的 20 点声望，让你此后能够看到蜂蜜沉积物并获取声望。\n\n所有坐标都可以通过右键点击蜜背蜂巢标题来设置。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "How to unlock the faction:\n\nStep1: Own either a Seabreeze Bumblebee or Bumbles.\nStep2: Go to Barry in Stormsong Valley at 69.64 with your Bee summoned.\nStep3: Follow the green clouds to 62.26 & watch the interaction between Barry and the Honeyback Hivemother.\nStep4: Loot the Thin Jelly just outside the Cave at 63.28, try to give it to the Hivemother & then talk to Barry again.\nStep5: Follow Barry inside, talk to him for the million'th time & then feed your first Jelly to the Nascent Harvester, which is in the honey pool in front of him. This gives you your first 20 reputation, allowing you to now see Jelly Deposits and earn reputation.\n\nAll Coordinates can be placed via rightclicking the Honeyback Hive Header.",
 				["coords"] = {
 					{ 69.2, 64.2, STORMSONG_VALLEY },	-- Barry
 					{ 62.93, 26.58, STORMSONG_VALLEY },	-- The Hive
@@ -237,24 +220,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						},
 					}),
 					o(327516, {	-- Jelly Deposit
-						["description"] = createLocalizationString({
-							readable = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
-							constant = "THIS_IS_THE_INITIAL_JELLY_DEPOSIT_YOU_ENCOUNTER",
-							export = true,
-							text = {
-								en = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这是你在解锁该声望时遇到的最初的蜜胶块。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
 						["coord"] = { 63.2, 28.5, STORMSONG_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {

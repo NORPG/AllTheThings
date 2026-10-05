@@ -52,24 +52,7 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(535, {	-- Water Waveling (PET!)
 							["coord"] = { 43.0, 77.6,ZULDRAK },
-							["description"] = createLocalizationString({
-								readable = "Spawns in the farms south of The Argent Stand.",
-								constant = "SPAWNS_IN_THE_FARMS_SOUTH_OF_THE_ARGENT_STAND",
-								export = true,
-								text = {
-									en = "Spawns in the farms south of The Argent Stand.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在银色前线基地以南的农场刷新。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Spawns in the farms south of The Argent Stand.",
 						}),
 					},
 				}),
@@ -138,24 +121,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66639, {	-- Gutretch <Master Pet Tamer>
 						["coord"] = { 13.2, 66.8, ZULDRAK },
-						["description"] = createLocalizationString({
-							readable = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anodized Robo Cub (Demolish/Maul) and Anubisath Idol (Demolish/Sandstorm/Deflection).",
-							constant = "GUTRETCH_S_PETS_ARE_LEVEL_25_OF_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anodized Robo Cub (Demolish/Maul) and Anubisath Idol (Demolish/Sandstorm/Deflection).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "古特雷奇的宠物为 25 级，且依次属于以下连续的宠物类型：\n1. 野兽——使用机械（强力）或飞行（耐打）宠物应对。\n2. 野兽——同上。\n3. 小动物——使用野兽（强力）或人形（耐打）宠物应对。\n\n若要计入“一场惊险大冒险”的进度，请使用雷象毛绒玩具加两只强力宠物的组合进行对战，例如阳极机械幼熊（摧毁/撕咬）和阿努比萨斯雕像（摧毁/沙尘暴/偏斜）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anodized Robo Cub (Demolish/Maul) and Anubisath Idol (Demolish/Sandstorm/Deflection).",
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
@@ -220,24 +186,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.4, 39.0, ZULDRAK },
 					}),
 					q(12713, {	-- Betrayal
-						["description"] = createLocalizationString({
-							readable = "WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",
-							constant = "WARNING_ONCE_YOU_COMPLETE_THIS_QUEST_THE_QUEST",
-							export = true,
-							text = {
-								en = "WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "警告：一旦你完成此任务，任务|cFFFFD700喂食食尸鬼|r将永久无法再获取！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",
 						["sourceQuests"] = {
 							12652,	-- Feedin' Da Goolz
 							12676,	-- Sabotage
@@ -340,24 +289,7 @@ root(ROOTS.Zones, {
 						-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
 						["groups"] = {
 							i(43556, {	-- Patroller's Pack
-								["description"] = createLocalizationString({
-									readable = "Small chance to contain listed items.",
-									constant = "SMALL_CHANCE_TO_CONTAIN_LISTED_ITEMS",
-									export = true,
-									text = {
-										en = "Small chance to contain listed items.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "有小几率内含所列物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Small chance to contain listed items.",
 								["groups"] = {
 									i(36335),	-- Grizzlemaw Helm
 									i(36003),	-- Icemist Sash
@@ -392,24 +324,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12599, {	-- Creature Comforts
-						["description"] = createLocalizationString({
-							readable = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
-							constant = "MUST_BE_ON_CFFFFD700PA_TROLL_R_TO_SEE_THIS",
-							export = true,
-							text = {
-								en = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须使用|cFFFFD700帕特罗|r才能看到此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 						["qg"] = 28043,	-- Captain Grondel
 						["coord"] = { 48.1, 63.8, ZULDRAK },
@@ -430,24 +345,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.1, 75.1, ZULDRAK },
 					}),
 					q(12664, {	-- Dark Horizon
-						["description"] = createLocalizationString({
-							readable = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
-							constant = "MUST_BE_ON_CFFFFD700INFILTRATING_VOLTARUS_R_TO",
-							export = true,
-							text = {
-								en = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行|cFFFFD700潜入沃尔塔鲁斯|r才能看到此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 						["sourceQuest"] = 12648,	-- Dressing Down
 						["altQuests"] = { 12663 },	-- Reunited
 						["qg"] = 28503,	-- Overlord Drakuru
@@ -490,24 +388,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.3, 56.4, ZULDRAK },
 					}),
 					q(12652, {	-- Feedin' Da Goolz
-						["description"] = createLocalizationString({
-							readable = "Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
-							constant = "MUST_BE_ON_CFFFFD700SUIT_UP_R_OR",
-							export = true,
-							text = {
-								en = "Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行|cFFFFD700穿戴整齐！|r或|cFFFFD700严厉斥责|r才能看到此任务。\n\n警告：一旦你完成|cFFFFD700背叛|r，此任务将永远无法再获得！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
 						["sourceQuest"] = 12649,	-- Suit Up!
 						["altQuests"] = { 12713 },	-- Betrayal
 						["qg"] = 28589,	-- Gristlegut
@@ -531,24 +412,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.3, 58.6, ZULDRAK },
 					}),
 					q(12690, {	-- Fuel for the Fire
-						["description"] = createLocalizationString({
-							readable = "Must be on |cFFFFD700Sabotage|r to see this quest.",
-							constant = "MUST_BE_ON_CFFFFD700SABOTAGE_R_TO_SEE_THIS",
-							export = true,
-							text = {
-								en = "Must be on |cFFFFD700Sabotage|r to see this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行|cFFFFD700蓄意破坏|r才能看到此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 						["sourceQuest"] = 12677,	-- Hazardous Materials
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
@@ -629,24 +493,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12673, {	-- It Rolls Downhill
-						["description"] = createLocalizationString({
-							readable = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
-							constant = "MUST_BE_ON_CFFFFD700SO_FAR_SO_BAD_R_TO_SEE_THIS",
-							export = true,
-							text = {
-								en = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行|cFFFFD700至今如此糟糕|r才能看到此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
@@ -668,7 +515,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 14.1, 73.8, ZULDRAK },
 					}),
 					q(12557, {	-- Lab Work
-						["description"] = "~L.MUST_BE_ON_CFFFFD700PA_TROLL_R_TO_SEE_THIS",
+						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 						["qg"] = 28205,	-- Alchemist Finklestein
 						["coord"] = { 35.0, 52.1, ZULDRAK },
@@ -845,7 +692,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.9, 57.9, ZULDRAK },
 					}),
 					q(12663, {	-- Reunited
-						["description"] = "~L.MUST_BE_ON_CFFFFD700INFILTRATING_VOLTARUS_R_TO",
+						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 						["sourceQuest"] = 12649,	-- Suit Up!
 						["altQuests"] = { 12664 },	-- Dark Horizon
 						["qg"] = 28503,	-- Overlord Drakuru
@@ -916,7 +763,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12597, {	-- Something for the Pain
-						["description"] = "~L.MUST_BE_ON_CFFFFD700PA_TROLL_R_TO_SEE_THIS",
+						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 						["qg"] = 28042,	-- Captain Brandon
 						["coord"] = { 48.7, 78.8, ZULDRAK },
@@ -1030,24 +877,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
 					q(12954, {	-- The Amphitheater of Anguish: Yggdras!
-						["description"] = createLocalizationString({
-							readable = "You will get this version if you did |cFFFFD700The Ring of Blood|r questline in Nagrand before.",
-							constant = "YOU_WILL_GET_THIS_VERSION_IF_YOU_DID",
-							export = true,
-							text = {
-								en = "You will get this version if you did |cFFFFD700The Ring of Blood|r questline in Nagrand before.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你之前完成过纳格兰的|cFFFFD700鲜血之环|r任务线，你就会获得这个版本。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You will get this version if you did |cFFFFD700The Ring of Blood|r questline in Nagrand before.",
 						["sourceQuest"] = 12974,	-- The Champion's Call
 						["qg"] = 30007,	-- Gurgthock
 						["coord"] = { 48.4, 56.3, ZULDRAK },
@@ -1152,7 +982,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12598, {	-- Throwing Down
-						["description"] = "~L.MUST_BE_ON_CFFFFD700PA_TROLL_R_TO_SEE_THIS",
+						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 						["qg"] = 28044,	-- Captain Rupert
 						["coord"] = { 58.0, 72.4, ZULDRAK },
@@ -1369,24 +1199,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12686, {	-- Zero Tolerance
-						["description"] = createLocalizationString({
-							readable = "Must be on |cFFFFD700Hazardous Materials|r to see this quest.",
-							constant = "MUST_BE_ON_CFFFFD700HAZARDOUS_MATERIALS_R_TO",
-							export = true,
-							text = {
-								en = "Must be on |cFFFFD700Hazardous Materials|r to see this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行|cFFFFD700危险物品|r才能看到此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on |cFFFFD700Hazardous Materials|r to see this quest.",
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
@@ -1399,24 +1212,7 @@ root(ROOTS.Zones, {
 				}),
 				n(RARES, {
 					n(33776, {	-- Gondria
-						["description"] = createLocalizationString({
-							readable = "This is a very sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
-							constant = "THIS_IS_A_VERY_SOUGHT_AFTER_HUNTER_PET_IF_YOU",
-							export = true,
-							text = {
-								en = "This is a very sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这是一种非常抢手的猎人宠物。如果你看到这只生物，请做个好心人，在综合频道里通知大家，而不是直接杀掉它。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is a very sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
 						["coords"] = {
 							{ 63.0, 43.0, ZULDRAK },
 							{ 69.6, 48.2, ZULDRAK },
@@ -1512,24 +1308,7 @@ root(ROOTS.Zones, {
 						["cr"] = 29235,	-- Gundrak Savage
 					}),
 					i(38660, {	-- Unliving Choker
-						["description"] = createLocalizationString({
-							readable = "This Item will drop instead of |cffffffffWrithing Choker|r until |cffffd700Cleansing Drak'Tharon|r has been completed.",
-							constant = "THIS_ITEM_WILL_DROP_INSTEAD_OF",
-							export = true,
-							text = {
-								en = "This Item will drop instead of |cffffffffWrithing Choker|r until |cffffd700Cleansing Drak'Tharon|r has been completed.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品会替代|cffffffff蠕动的项圈|r掉落，直到|cffffd700净化达克萨隆|r完成为止。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This Item will drop instead of |cffffffffWrithing Choker|r until |cffffd700Cleansing Drak'Tharon|r has been completed.",
 						["coords"] = {
 							{ 14.0, 69.0, ZULDRAK },
 							{ 16.2, 75.6, ZULDRAK },
@@ -1539,24 +1318,7 @@ root(ROOTS.Zones, {
 						["cr"] = 28519,	-- Withered Troll
 					}),
 					i(38673, {	-- Writhing Choker
-						["description"] = createLocalizationString({
-							readable = "This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",
-							constant = "THIS_ITEM_WILL_DROP_INSTEAD_OF_2",
-							export = true,
-							text = {
-								en = "This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品会替代|cffffffff不死项圈|r掉落，只要|cffffd700净化达克萨隆|r已经完成。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",
 						["sourceQuests"] = {
 							-- #if AFTER 4.3.0.14890
 							30120,	-- Cleansing Drak'Tharon

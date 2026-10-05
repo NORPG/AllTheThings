@@ -70,24 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				n(QUESTS, {
 					q(40384, {	-- Needs of the Hunters
-						["description"] = createLocalizationString({
-							readable = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
-							constant = "THIS_NPC_WILL_APPROACH_YOU_WITHIN_A_FEW_SECONDS",
-							export = true,
-							text = {
-								en = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你第一次进入《军团再临》的达拉然时，此 NPC 会在几秒内主动接近你。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
 						["provider"] = { "n", 100786 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
 					}),
@@ -160,24 +143,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							},
 						}),
 						q(41009, {	-- Hunter to Hunter
-							["description"] = createLocalizationString({
-								readable = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
-								constant = "TO_OBTAIN_THIS_QUEST_YOU_MUST_CHOOSE_TO_SEARCH",
-								export = true,
-								text = {
-									en = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "要获得此任务，你必须首先选择搜寻 |cffffff9a兽王|r 神器。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
 							["sourceQuests"] = { 42185 },	-- Never Hunt Alone
 							["altQuests"] = { 40952 },	-- Hunter to Hunter
 							["provider"] = { "n", 106879 },	-- Grif Wildheart
@@ -257,24 +223,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							},
 						}),
 						q(40952, {	-- Hunter to Hunter
-							["description"] = createLocalizationString({
-								readable = "To obtain this quest you must choose to search for the |cffffff9aMarksmanship|r artifact FIRST.",
-								constant = "TO_OBTAIN_THIS_QUEST_YOU_MUST_CHOOSE_TO_SEARCH_2",
-								export = true,
-								text = {
-									en = "To obtain this quest you must choose to search for the |cffffff9aMarksmanship|r artifact FIRST.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "要获得此任务，你必须首先选择搜寻 |cffffff9a射击|r 神器。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "To obtain this quest you must choose to search for the |cffffff9aMarksmanship|r artifact FIRST.",
 							["sourceQuests"] = { 40419 },	-- Rescue Mission
 							["altQuests"] = { 41009 },	-- Hunter to Hunter
 							["provider"] = { "n", 102570 },	-- Vereesa Windrunner
@@ -779,24 +728,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = { follower(748) },	-- Halduron Brightwing
 					}),
 					q(44090, {	-- Pledge of Loyalty
-						["description"] = createLocalizationString({
-							readable = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
-							constant = "AFTER_COMPLETING_CFFFFFF00THE_CAMPAIGN_BEGINS_R",
-							export = true,
-							text = {
-								en = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成 |cffffff00战役开始|r 后，返回达拉然，这个 NPC 会在几秒内走向你。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
 						["sourceQuests"] = { 40959 },	-- The Campaign Begins
 						["provider"] = { "n", 113327 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
@@ -1055,24 +987,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
 						["crs"] = { 105099 },	-- Dark Ranger Velonara
 						["coord"] = { 52.6, 50.3, TRUESHOT_LODGE },
-						["description"] = createLocalizationString({
-							readable = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her. Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two. Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
-							constant = "C808080FAHUNTERS_WILL_NEED_TO_HAVE_COMPLETED",
-							export = true,
-							text = {
-								en = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her. Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two. Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|c808080FA猎人需要完成隐藏任务|r |cFFFFD700黑暗纪念品|r |c808080FA才能看到此商人出售的物品。|r\n\n|cffff0000如何激活该任务：|r\n|c0070DEFF第 1 步：|r\n|c808080FA与|r |cABD473FF死亡猎手莫尔戈斯|r |c808080FA交谈并完成与他的对话。\n|c0070DEFF第 2 步：|r\n|c808080FA从他那里购买 13 个|r |cFFFFFFFF黑玫瑰|r|c808080FA。\n|c0070DEFF第 3 步：|r\n|c808080FA与|r |cABD473FF黑暗游侠维罗娜拉|r |c808080FA交谈并完成与她的对话。之后她会从你身上拿走那 13 个|r|cFFFFFFFF黑玫瑰|r|c808080FA。\n|c0070DEFF第 4 步：|r\n|c808080FA回去与|r |cABD473FF死亡猎手莫尔戈斯|r |c808080FA交谈，他会为两人之间的故事画上句号。这样做之后他将不再向你出售任何东西。\n|c0070DEFF第 5 步：|r\n|c808080FF找到|r |cABD473FF黑暗游侠维罗娜拉|r |c808080FA，她会提供任务|r|cFFFFD700黑暗纪念品|r。\n|c0070DEFF第 6 步：|r\n|c808080FA接受任务，然后把兜帽交给|r |cABD473FF死亡猎手莫尔戈斯|r |c808080FA。\n|c0070DEFF第 7 步：|r\n|c808080FA完成该任务后，他就会向你提供这两件物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her. Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two. Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["groups"] = {
 							i(143663, {	-- Dark Ranger's Hood
 								["timeline"] = { ADDED_7_1_0 },

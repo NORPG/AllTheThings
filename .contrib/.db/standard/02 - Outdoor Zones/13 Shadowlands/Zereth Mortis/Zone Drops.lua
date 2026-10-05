@@ -312,24 +312,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				-- Mount Protoform
 				i(189173, {	-- Eternal Ragepearl
-					["description"] = createLocalizationString({
-						readable = "Most mobs in the desert drop those, top right of Zereth Mortis.",
-						constant = "MOST_MOBS_IN_THE_DESERT_DROP_THOSE_TOP_RIGHT_OF",
-						export = true,
-						text = {
-							en = "Most mobs in the desert drop those, top right of Zereth Mortis.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "沙漠中的大多数怪物都会掉落这些，位于扎雷殁提斯的右上方。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Most mobs in the desert drop those, top right of Zereth Mortis.",
 					["crs"] = {
 						183225,	-- Cliff Reclaimer
 						184268,	-- Discordant Sentry
@@ -342,24 +325,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189176, {	-- Protoform Sentience Crown
-					["description"] = createLocalizationString({
-						readable = "Drops from Automas, best farmed during the Dangerous State Daily.",
-						constant = "DROPS_FROM_AUTOMAS_BEST_FARMED_DURING_THE",
-						export = true,
-						text = {
-							en = "Drops from Automas, best farmed during the Dangerous State Daily.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由自动体掉落，在“危险状态”日常任务期间刷取最佳。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from Automas, best farmed during the Dangerous State Daily.",
 				}),
 				i(189180, {	-- Wind's Infinite Call
 					["crs"] = {

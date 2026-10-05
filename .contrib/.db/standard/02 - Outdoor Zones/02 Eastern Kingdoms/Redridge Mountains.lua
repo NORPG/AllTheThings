@@ -117,24 +117,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(65651, {	-- Lindsay <Master Pet Tamer>
 					["coord"] = { 33.3, 52.6, REDRIDGE_MOUNTAINS },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
-						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_LINDSAY_S_PETS",
-						export = true,
-						text = {
-							en = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限联盟。\n\nLindsay 的宠物为 5 级，三个宠物的类别依次为：\n1. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n2. 小动物 - 同上。\n3. 小动物 - 同上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["petBattleLvl"] = 5,
@@ -255,24 +238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 7871 },	-- Token of Thievery (QI!)
 						}),
 						i(7907, {	-- Certificate of Thievery
-							["description"] = createLocalizationString({
-								readable = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
-								constant = "THIS_ITEM_HAS_NO_FUNCTION_BUT_IF_YOU_GET_CAUGHT",
-								export = true,
-								text = {
-									en = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品没有任何功能，但如果你被抓住，就像罗恩·斯旺森那样把它递过去。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -445,24 +411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26514, {	-- Canyon Romp
-					["description"] = createLocalizationString({
-						readable = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
-						constant = "IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN",
-						export = true,
-						text = {
-							en = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你不慎放弃了此任务，可以在湖畔镇市政厅从治安官所罗门处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
@@ -482,24 +431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26714, {	-- Darkblaze, Brood of the Worldbreaker
-					["description"] = createLocalizationString({
-						readable = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Keeshan's Post.",
-						constant = "IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN_2",
-						export = true,
-						text = {
-							en = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Keeshan's Post.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你万一放弃了这个任务，可以在基沙恩岗哨的特罗特曼上校处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Keeshan's Post.",
 					["sourceQuest"] = 26713,	-- Showdown at Stonewatch
 					["qg"] = 43733,	-- Colonel Troteman
 					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
@@ -609,24 +541,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26519, {	-- He Who Controls the Ettins
-					["description"] = createLocalizationString({
-						readable = "Once obtained, the Quest has to be completed. It can't be abandoned.",
-						constant = "ONCE_OBTAINED_THE_QUEST_HAS_TO_BE_COMPLETED_IT",
-						export = true,
-						text = {
-							en = "Once obtained, the Quest has to be completed. It can't be abandoned.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "一旦获得，该任务就必须完成，无法放弃。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Once obtained, the Quest has to be completed. It can't be abandoned.",
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
 					["provider"] = { "i", 58898 },	-- Dirt-Stained Scroll (QS!)
 					["timeline"] = { ADDED_4_0_3 },
@@ -647,24 +562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26365, {	-- Hero's Call: Redridge Mountains! (From NPCs)
 					-- #IF BEFORE 11.0.5
 					-- [Unsure prior to this]
-					["description"] = createLocalizationString({
-						readable = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
-						constant = "THIS_QUEST_SEEMS_TO_BE_UNOBTAINABLE_AT_HIGHER",
-						export = true,
-						text = {
-							en = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务在高等级时似乎无法获得，所以如果你想收集此任务的外观，需要尽早完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 					-- #ENDIF
 					["qgs"] = {
 						-- #if AFTER LEGION
@@ -752,24 +650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26573, {	-- His Heart Must Be In It
-					["description"] = createLocalizationString({
-						readable = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Lakeshire Town Hall.",
-						constant = "IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN_3",
-						export = true,
-						text = {
-							en = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Lakeshire Town Hall.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你万一放弃了这个任务，可以在湖畔镇市政厅的特罗特曼上校处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26571,	-- Weapons of War
 					["qg"] = 43221,	-- Colonel Troteman
 					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
@@ -1521,24 +1402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26694, {	-- The Grand Magus Doane
-					["description"] = createLocalizationString({
-						readable = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
-						constant = "IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN_4",
-						export = true,
-						text = {
-							en = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你万一放弃了这个任务，可以在页岩风峡谷的约翰·J·基沙恩处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
 					["sourceQuest"] = 26693,	-- The Dark Tower
 					["qg"] = 43611,	-- John J. Keeshan
 					["qi"] = 59522,	-- Key of Ilgalar (PQI!)
@@ -1642,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26544, {	-- They've Wised Up...
-					["description"] = "~L.IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN",
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26514,	-- Canyon Romp
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
@@ -1664,24 +1528,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26651, {	-- To Win a War, You Gotta Become War
-					["description"] = createLocalizationString({
-						readable = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
-						constant = "IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN_5",
-						export = true,
-						text = {
-							en = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你万一放弃了这个任务，可以在止水营地的约翰·J·基沙恩处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
 					["sourceQuest"] = 26646,	-- Prisoners of War
 					["qg"] = 43458,	-- John J. Keeshan
 					["qi"] = 60385,	-- Bravo Company Field Kit (PQI!)
@@ -1885,7 +1732,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26545, {	-- Yowler Must Die!
-					["description"] = "~L.IF_YOU_BY_ANY_CHANCE_ABANDON_THIS_QUEST_YOU_CAN",
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26544,	-- They've Wised Up...
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
@@ -2037,24 +1884,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(947, {	-- Rohh the Silent
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "This is a stealthed creature. You can target it with the macro '/tar Rohh'.",
-						constant = "THIS_IS_A_STEALTHED_CREATURE_YOU_CAN_TARGET_IT",
-						export = true,
-						text = {
-							en = "This is a stealthed creature. You can target it with the macro '/tar Rohh'.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一种潜行的生物。你可以用宏“/tar Rohh”选中它。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a stealthed creature. You can target it with the macro '/tar Rohh'.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2344,24 +2174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1455, {	-- Blackrock Champion's Axe
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate, but are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-						constant = "THIS_ITEM_DROPS_FROM_BOTH_BLACKROCK_RENEGADES",
-						export = true,
-						text = {
-							en = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate, but are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品由黑石叛徒和黑石猎人掉落。叛徒的掉率可能更高，但由于位面机制，完成了“第一滴血”故事线的联盟角色无法遇到它们。\n位面机制可以通过小队同步绕过，方法是使用尚未达到该位面触发任务进度点的联盟小号，或者使用部落小号。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate, but are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2395,24 +2208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1448, {	-- Blackrock Gauntlets
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "This item only drops from Blackrock Scouts, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-						constant = "THIS_ITEM_ONLY_DROPS_FROM_BLACKROCK_SCOUTS",
-						export = true,
-						text = {
-							en = "This item only drops from Blackrock Scouts, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品只从黑石斥候身上掉落，但由于位面机制，完成了“第一滴血”故事线的联盟角色无法遇到它们。\n位面机制可以通过小队同步绕过，方法是使用尚未达到该位面触发任务进度点的联盟小号，或者使用部落小号。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item only drops from Blackrock Scouts, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2434,24 +2230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1296, {	-- Blackrock Mace
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "This item only drops from Blackrock Renegades, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-						constant = "THIS_ITEM_ONLY_DROPS_FROM_BLACKROCK_RENEGADES",
-						export = true,
-						text = {
-							en = "This item only drops from Blackrock Renegades, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品只从黑石叛徒身上掉落，但由于位面机制，完成了“第一滴血”故事线的联盟角色无法遇到它们。\n位面机制可以通过小队同步绕过，方法是使用尚未达到该位面触发任务进度点的联盟小号，或者使用部落小号。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item only drops from Blackrock Renegades, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2594,24 +2373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completed the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-						constant = "THIS_ITEM_ONLY_DROPS_FROM_BLACKROCK_WARDEN",
-						export = true,
-						text = {
-							en = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completed the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该物品只由黑石守望者掉落，由于相位原因，已完成“引爆”任务的联盟角色无法看到它们。\n可以通过小队同步来绕过相位限制，方法是使用尚未达到该相位任务进度触发条件的联盟小号，或使用部落小号。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completed the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2630,7 +2392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1300, {	-- Lesser Staff of the Spire
 					-- #if AFTER 10.1.7
-					["description"] = "~L.THIS_ITEM_ONLY_DROPS_FROM_BLACKROCK_WARDEN",
+					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completed the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
@@ -2695,24 +2457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2798, {	-- Rethban Ore
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "Rethban Ore's only purpose was to be an objective to a quest that got removed with Cataclysm. Thus it is useless and safe to discard.",
-						constant = "RETHBAN_ORE_S_ONLY_PURPOSE_WAS_TO_BE_AN",
-						export = true,
-						text = {
-							en = "Rethban Ore's only purpose was to be an objective to a quest that got removed with Cataclysm. Thus it is useless and safe to discard.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "瑞斯班矿石的唯一用途是作为任务目标，而该任务已随大地的裂变移除。因此它毫无用处，可以放心丢弃。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Rethban Ore's only purpose was to be an objective to a quest that got removed with Cataclysm. Thus it is useless and safe to discard.",
 					-- #endif
 					["providers"] = {
 						{ "n", 580 },	-- Redridge Drudger
@@ -2890,24 +2635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = {
 						428,	-- Dire Condor
 					},
-					["description"] = createLocalizationString({
-						readable = "Only drops from Dire Condors in Redridge Mountains.",
-						constant = "ONLY_DROPS_FROM_DIRE_CONDORS_IN_REDRIDGE",
-						export = true,
-						text = {
-							en = "Only drops from Dire Condors in Redridge Mountains.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅从赤脊山的恐鹫身上掉落。",
-							-- TODO: tw = "",
-						},
-					})
+					["description"] = "Only drops from Dire Condors in Redridge Mountains."
 				}),
 			}),
 		},

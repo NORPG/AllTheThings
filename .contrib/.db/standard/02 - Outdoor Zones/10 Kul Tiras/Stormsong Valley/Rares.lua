@@ -159,24 +159,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 66.3, 69.9, STORMSONG_VALLEY },
 					{ 72.3, 52.2, STORMSONG_VALLEY },
 				},
-				["description"] = createLocalizationString({
-					readable = "This Rare starts the Honeyback Harvester Event.\n\nYou can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill). If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
-					constant = "THIS_RARE_STARTS_THE_HONEYBACK_HARVESTER_EVENT",
-					export = true,
-					text = {
-						en = "This Rare starts the Honeyback Harvester Event.\n\nYou can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill). If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此稀有怪会开启蜜背收割者事件。\n\n你一天中可以任意次数参与蜜背收割者事件，但每小时只能拾取一次最终的果冻（拾取资格按整点重置，而不是根据你上次击杀的时间）。如果你能看到收割者的场景星标，或被尖刺星形包围的宝藏图标，就说明你具备每小时拾取的资格。\n\n稀有怪掉落的任务是周常，但即使在冷却期间，甚至在你已经完成该稀有怪的周常任务之后，稀有怪仍可能掉落果冻。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This Rare starts the Honeyback Harvester Event.\n\nYou can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill). If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
 				["groups"] = {
 					n(EVENT_COMPLETION, {
 						i(172491),	-- Papi (PET!)
@@ -210,24 +193,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			})),
 			n(141043, {	-- Jakala the Cruel
-				["description"] = createLocalizationString({
-					readable = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5. This will trigger a cutscene and place you in the phase with the rare.",
-					constant = "DUE_TO_PHASING_ISSUES_IN_ORDER_TO_SEE_THIS_RARE",
-					export = true,
-					text = {
-						en = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5. This will trigger a cutscene and place you in the phase with the rare.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由于相位问题，要看到这个稀有生物，你需要从 57.6, 66.5 的南侧桥梁进入布伦纳丹。这会触发一段过场动画，并将你置入该稀有生物所在的相位。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5. This will trigger a cutscene and place you in the phase with the rare.",
 				-- doc marrtens and jakala both complete one another's quests. it's unclear which quest specifically belongs to which rare.
 				-- on wowhead both quests are attached to the criteria as "doc marrtens or jakala the cruel," so it probably doesn't matter.
 				["questID"] = 52324,	-- also completes 52323
@@ -253,24 +219,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(138963, {	-- Nestmother Acada
-				["description"] = createLocalizationString({
-					readable = "The path to this rare starts at 41.2, 44.1.",
-					constant = "THE_PATH_TO_THIS_RARE_STARTS_AT_41_2_44_1",
-					export = true,
-					text = {
-						en = "The path to this rare starts at 41.2, 44.1.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通往这只稀有生物的路径起点在 41.2, 44.1。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The path to this rare starts at 41.2, 44.1.",
 				["questID"] = 51762,
 				["coords"] = {
 					{ 43.4, 44.9, STORMSONG_VALLEY },	-- Nestmother
@@ -338,24 +287,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 51956,
 				["coord"] = { 34.6, 32.4, STORMSONG_VALLEY },
 				["crs"] = { 144420 },	-- Vignette
-				["description"] = createLocalizationString({
-					readable = "Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
-					constant = "RED_IS_THE_DEFAULT_COLOR_WHEN_A_WQ_ISN_T_ACTIVE",
-					export = true,
-					text = {
-						en = "Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当一个世界任务未激活时，红色是默认颜色。要获得击杀所有不同颜色的进度，请等待“剑齿机”世界任务出现！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
 				["groups"] = {
 					i(154664),	-- Lionsight Omensword
 				},

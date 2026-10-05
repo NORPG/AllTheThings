@@ -495,24 +495,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Murloc Head
 							["provider"] = { "i", 3716 },	-- Murloc Head
-							["description"] = createLocalizationString({
-								readable = "Running joke is that since all adventurers take from the Murlocs is their heads, that's why the drop rate is so low - there's a bunch of headless murlocs running around!",
-								constant = "RUNNING_JOKE_IS_THAT_SINCE_ALL_ADVENTURERS_TAKE",
-								export = true,
-								text = {
-									en = "Running joke is that since all adventurers take from the Murlocs is their heads, that's why the drop rate is so low - there's a bunch of headless murlocs running around!",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "流传的笑话是：由于冒险者从鱼人身上只拿走它们的头，所以掉率才这么低——到处都有一群没头的鱼人在乱跑！",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Running joke is that since all adventurers take from the Murlocs is their heads, that's why the drop rate is so low - there's a bunch of headless murlocs running around!",
 							["crs"] = {
 								14276,	-- Scargil
 								2375,	-- Torn Fin Coastrunner
@@ -1156,24 +1139,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(3668, {	-- Assassin's Contract
-					["description"] = createLocalizationString({
-						readable = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
-						constant = "THE_ASSASSINS_SPAWN_AS_PART_OF_A_RANDOM_WORLD",
-						export = true,
-						text = {
-							en = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "刺客会作为随机世界事件的一部分刷新。在南海镇挂机，最终他们会在附近刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
 					["coord"] = { 50.8, 58.8, MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 2434,	-- Shadowy Assassin

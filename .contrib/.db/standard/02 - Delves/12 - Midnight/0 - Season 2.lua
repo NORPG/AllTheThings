@@ -84,37 +84,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 								i(276163),	-- Apophic Patagia (COSMETIC!)
 							}),
 							i(264971, {	-- Annihilation Rod (COSMETIC!)
-								["description"] = createLocalizationString({
-									readable = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-									constant = "THE_FIRST_KILL_PER_WEEK_PER_CHARACTER_HAS_A",
-									export = true,
-									text = {
-										en = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "每个角色每周的首次击杀有稍高的几率给予你此物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(264970, {	-- Oblivion's Edge (COSMETIC!)
-								["description"] = "~L.THE_FIRST_KILL_PER_WEEK_PER_CHARACTER_HAS_A",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(262391),	-- Ominous Dominus (PET)
 							i(265368, {	-- Twilight Destroyer (COSMETIC!)
-								["description"] = "~L.THE_FIRST_KILL_PER_WEEK_PER_CHARACTER_HAS_A",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(265366, {	-- Twilight Executioner (COSMETIC!)
-								["description"] = "~L.THE_FIRST_KILL_PER_WEEK_PER_CHARACTER_HAS_A",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 							i(265367, {	-- Twilight Fang (COSMETIC!)
-								["description"] = "~L.THE_FIRST_KILL_PER_WEEK_PER_CHARACTER_HAS_A",
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
 							}),
 						},
 					}),
@@ -123,29 +106,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["isWeekly"] = true,
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
-								["description"] = createLocalizationString({
-									readable = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
-									constant = "RANDOM_TIPS_CLICKING_VALEERA_S_BONEFIRE_GIVES",
-									export = true,
-									text = {
-										en = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "随机提示：\n点击瓦莉拉的篝火可在 10 分钟内获得 5% 的主属性加成，可与普通食物增益叠加。\n\n在地下堡结束时获得的通关增益会保留下来，并在特殊的首领战斗中生效。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
 								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },	-- 1 Week Later unobtainable
 								["groups"] = { title(776) },	-- <Name>, Fabled Vanquisher of Azta'rec
 							}),
 							ach(63333, {	-- Let Me Solo Him: Azta'rec
-								["description"] = "~L.RANDOM_TIPS_CLICKING_VALEERA_S_BONEFIRE_GIVES",
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
 								["groups"] = { i(275657) },	-- Apophic Soul Crusher (MOUNT!)
 							}),
 							ach(63332, {	-- Purging the Poison
@@ -282,24 +248,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				filter(MISC, {
 					i(276547, {	-- Afflicted Soul
-						["description"] = createLocalizationString({
-							readable = "Use before starting your Prey quest to work properly.",
-							constant = "USE_BEFORE_STARTING_YOUR_PREY_QUEST_TO_WORK",
-							export = true,
-							text = {
-								en = "Use before starting your Prey quest to work properly.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "请在开始你的猎物任务之前使用才能正常生效。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use before starting your Prey quest to work properly.",
 					}),
 					i(279290, {	-- Fang Lover's (CI!)
 						["providers"] = {
@@ -307,7 +256,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					i(276548, {	-- Tormented Soul
-						["description"] = "~L.USE_BEFORE_STARTING_YOUR_PREY_QUEST_TO_WORK",
+						["description"] = "Use before starting your Prey quest to work properly.",
 					}),
 					i(274374, {	-- Trovehunter's Bounty
 						["providers"] = {

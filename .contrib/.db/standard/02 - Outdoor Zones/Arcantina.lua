@@ -13,24 +13,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			ach(61082),	-- Old Soldiers
 			ach(61081, {	-- Share a Drink
-				["description"] = createLocalizationString({
-					readable = "NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",
-					constant = "NOTE_YOU_CURRENTLY_ALSO_GET_CREDIT_FOR_YOUR",
-					export = true,
-					text = {
-						en = "NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "注意：目前分享饮品时，你还会获得自己角色种族的进度！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "NOTE: You currently also get credit for YOUR character's Race when sharing a drink!",
 				["cost"] = { { "i", 251039, 26 } },	-- 26x Toasting Brew
 			}),
 			ach(63620, {	-- Well Decorated
@@ -208,24 +191,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			o(572030, {	-- Ebon Banner
 				["sourceQuest"] = 92321,	-- A Frostbitten Tally
-				["description"] = createLocalizationString({
-					readable = "On the left side of Lady Deathwhisper's room.",
-					constant = "ON_THE_LEFT_SIDE_OF_LADY_DEATHWHISPER_S_ROOM",
-					export = true,
-					text = {
-						en = "On the left side of Lady Deathwhisper's room.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在死亡低语女士房间的左侧。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "On the left side of Lady Deathwhisper's room.",
 				["maps"] = { 186 },	-- Icecrown Citadel
 				["groups"] = { i(250873) },	-- Ebon Banner
 			}),
@@ -241,24 +207,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			o(572034, {	-- Pylon Fragment
 				["sourceQuest"] = 92324,	-- Uncrowned's Cold Case
-				["description"] = createLocalizationString({
-					readable = "On the left side of Tendris Warpwood's room.",
-					constant = "ON_THE_LEFT_SIDE_OF_TENDRIS_WARPWOOD_S_ROOM",
-					export = true,
-					text = {
-						en = "On the left side of Tendris Warpwood's room.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在滕德里斯·曲木房间的左侧。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "On the left side of Tendris Warpwood's room.",
 				["maps"] = { DIRE_MAUL_CAPITAL_GARDENS },
 				["groups"] = { i(250877) },	-- Pylon Fragment
 			}),
@@ -269,24 +218,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 			o(572029, {	-- Scarred Spear
 				["sourceQuest"] = 92319,	-- A Favor to Axe
-				["description"] = createLocalizationString({
-					readable = "Located to the left of the path towards Omar the Unscarred.",
-					constant = "LOCATED_TO_THE_LEFT_OF_THE_PATH_TOWARDS_OMAR",
-					export = true,
-					text = {
-						en = "Located to the left of the path towards Omar the Unscarred.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "位于通往无疤的奥马尔的道路左侧。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Located to the left of the path towards Omar the Unscarred.",
 				["maps"] = { HELLFIRE_CITADEL_RAMPARTS },
 				["groups"] = { i(250872) },	-- Scarred Spear
 			}),

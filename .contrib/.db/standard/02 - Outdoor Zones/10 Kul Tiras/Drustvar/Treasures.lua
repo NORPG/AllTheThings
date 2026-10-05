@@ -11,24 +11,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 			}),
 			o(297069, {	-- Dresser
-				["description"] = createLocalizationString({
-					readable = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and interact with this object.",
-					constant = "AFTER_COMPLETING_THE_QUEST_ONE_LAST_REQUEST_YOU",
-					export = true,
-					text = {
-						en = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and interact with this object.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成任务“最后一个请求”后，你可以回到那栋房子，上楼并与这个物体互动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and interact with this object.",
 				["sourceQuest"] = 50763,	-- One Last Request
 				["coord"] = { 24.3, 14.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
@@ -69,24 +52,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(297828, {	-- Merchant's Chest
 				["questID"] = 53357,
 				["coord"] = { 25.69, 20.03, DRUSTVAR },
-				["description"] = createLocalizationString({
-					readable = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
-					constant = "LOOK_FOR_THE_GORGING_RAVEN_FLYING_ABOVE_WITH",
-					export = true,
-					text = {
-						en = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "寻找在上方飞行、带有“持有钥匙”增益的暴食渡鸦，击杀它以获得打开此宝箱的钥匙。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
 				["cost"] = {{"i",163710,1}},	-- Merchant's Key
 				["groups"] = {
 					i(POLISHED_PET_CHARM),
@@ -119,24 +85,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(297891, {	-- Runebound Cache
 				["questID"] = 53385,
 				["coord"] = { 63.3, 65.8, DRUSTVAR },
-				["description"] = createLocalizationString({
-					readable = "Left. Down. Up. Right.",
-					constant = "LEFT_DOWN_UP_RIGHT",
-					export = true,
-					text = {
-						en = "Left. Down. Up. Right.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "左。下。上。右。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Left. Down. Up. Right.",
 				["groups"] = {
 					i(163743),	-- Drust Soulcatcher
 				},
@@ -144,24 +93,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(297892, {	-- Runebound Chest
 				["questID"] = 53386,
 				["coord"] = { 44.2, 27.8, DRUSTVAR },
-				["description"] = createLocalizationString({
-					readable = "Left. Right. Down. Up.",
-					constant = "LEFT_RIGHT_DOWN_UP",
-					export = true,
-					text = {
-						en = "Left. Right. Down. Up.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "左。右。下。上。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Left. Right. Down. Up.",
 				["groups"] = {
 					i(163742),	-- Heartsbane Grimoire (TOY!)
 				},
@@ -169,24 +101,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(297893, {	-- Runebound Coffer
 				["questID"] = 53387,
 				["coord"] = { 33.68, 71.74, DRUSTVAR },
-				["description"] = createLocalizationString({
-					readable = "Right. Up. Left. Down.",
-					constant = "RIGHT_UP_LEFT_DOWN",
-					export = true,
-					text = {
-						en = "Right. Up. Left. Down.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "右。上。左。下。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Right. Up. Left. Down.",
 				["groups"] = {
 					i(163740),	-- Drust Ritual Knife (TOY!)
 				},
@@ -194,24 +109,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(298920, {	-- Stolen Thornspeaker Cache
 				["questID"] = 53475,
 				["coord"] = { 24.3, 48.5, DRUSTVAR },
-				["description"] = createLocalizationString({
-					readable = "Enter the cave at 24.70, 48.95.",
-					constant = "ENTER_THE_CAVE_AT_24_70_48_95",
-					export = true,
-					text = {
-						en = "Enter the cave at 24.70, 48.95.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 24.70, 48.95 进入洞穴。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Enter the cave at 24.70, 48.95.",
 				["sym"] = {{"select","itemID",
 					POLISHED_PET_CHARM,
 				}},

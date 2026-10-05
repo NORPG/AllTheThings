@@ -10,24 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, sharedData({
 				-- #if AFTER 6.0.3
-				["description"] = createLocalizationString({
-					readable = "Be careful not to oneshot the boss, otherwise you might not be able to turn in the quest.",
-					constant = "BE_CAREFUL_NOT_TO_ONESHOT_THE_BOSS_OTHERWISE",
-					export = true,
-					text = {
-						en = "Be careful not to oneshot the boss, otherwise you might not be able to turn in the quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "小心不要秒杀首领，否则你可能无法交任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Be careful not to oneshot the boss, otherwise you might not be able to turn in the quest.",
 				-- #endif
 				["groups"] = {
 					i(65654),	-- Belt of a Thousand Deaths

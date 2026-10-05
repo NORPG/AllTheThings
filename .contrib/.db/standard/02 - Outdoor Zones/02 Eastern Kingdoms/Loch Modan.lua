@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 4610 },	-- Carved Stone Urn
 								{ "o", 2743 },	-- Carved Stone Urn
 							},
-							["description"] = "~L.CAN_BE_FOUND_IN_THE_OUTDOOR_SECTION_OF_ULDAMAN",
+							["description"] = "Can be found in the outdoor section of Uldaman.",
 						}),
 						i(4980, {	-- Prospector Gloves
 							["timeline"] = { REMOVED_4_0_3 },
@@ -762,24 +762,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(297, {	-- Gathering Idols
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Gathering Idols' (26961).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_11",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Gathering Idols' (26961).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“收集神像”（26961）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Gathering Idols' (26961).",
 					-- #endif
 					["sourceQuest"] = 436,	-- Ironband's Excavation
 					["qg"] = 1345,	-- Magmar Fellhew
@@ -1520,24 +1503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(271, {	-- Vyrin's Revenge (1/2)
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Vyrin's Revenge (1/2)' (27036).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_12",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Vyrin's Revenge (1/2)' (27036).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“维林的复仇（1/2）”（27036）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Vyrin's Revenge (1/2)' (27036).",
 					-- #endif
 					["sourceQuest"] = 258,	-- A Hunter's Challenge
 					["qg"] = 1156,	-- Vyrin Swiftwind
@@ -1968,24 +1934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
-					["description"] = createLocalizationString({
-						readable = "/kneel at the statue for the rune.",
-						constant = "KNEEL_AT_THE_STATUE_FOR_THE_RUNE",
-						export = true,
-						text = {
-							en = "/kneel at the statue for the rune.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在雕像处使用 /kneel 以获取符文。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "/kneel at the statue for the rune.",
 					["provider"] = { "n", 209908 },	-- Heretic Idol
 					["coord"] = { 71.8, 27.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -2007,24 +1956,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
-					["description"] = createLocalizationString({
-						readable = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
-						constant = "USE_RAINBOW_FIN_ALBACORE_CHUM_ON_A_YOUNG",
-						export = true,
-						text = {
-							en = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对一只年幼的鞭尾鱼使用彩虹鳍长鳍金枪鱼鱼饵即可获得这枚符文。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
 					["qg"] = 1224,	-- Young Threshadon
 					["qi"] = 208855,	-- Rainbow Fin Albacore Chum
 					["coord"] = { 44.8, 39.2, LOCH_MODAN },
@@ -2474,7 +2406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1177,	-- Tunnel Rat Surveyor
 				}),
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
-					["description"] = "~L.HAS_A_CHANCE_TO_DROP_FROM_ANY_CREATURE_IN_THE",
+					["description"] = "Has a chance to drop from any creature in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe
 					["coords"] = {
@@ -2512,24 +2444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
-					["description"] = createLocalizationString({
-						readable = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
-						constant = "YOU_CAN_CHALLENGE_HIM_TO_A_DUEL_AS_TO_NOT_FIGHT",
-						export = true,
-						text = {
-							en = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以使用战斗图腾向他发起决斗（这样就不会和他的小怪战斗）。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
 					["provider"] = { "i", 208843 },	-- Battle Totem
 					["coords"] = {
 						{ 55.2, 68.2, LOCH_MODAN },
@@ -2564,24 +2479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(208778, {	-- Rune of Quick Strike
-							["description"] = createLocalizationString({
-								readable = "Use the Skull-Shaped Geode on a Skullthumper to crack it and find this rune within.",
-								constant = "USE_THE_SKULL_SHAPED_GEODE_ON_A_SKULLTHUMPER_TO",
-								export = true,
-								text = {
-									en = "Use the Skull-Shaped Geode on a Skullthumper to crack it and find this rune within.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "对一只撞头兽使用骷髅形晶簇将其击碎，在其中找到这枚符文。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use the Skull-Shaped Geode on a Skullthumper to crack it and find this rune within.",
 							["provider"] = { "i", 208848 },	-- Cracked Skull-Shaped Geode
 							["classes"] = { WARRIOR },
 							["cr"] = 1163,	-- Stonesplinter Skullthumper

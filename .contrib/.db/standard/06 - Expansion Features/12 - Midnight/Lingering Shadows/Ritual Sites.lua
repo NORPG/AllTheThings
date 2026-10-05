@@ -12,24 +12,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			n(RITUAL_SITES, {
 				faction(FACTION_RITUAL_SITES),
 				n(BROKEN_THRONE_RS, {
-					["description"] = createLocalizationString({
-						readable = "The Broken Throne, also known as Atal'Kaldan, is an Amani ruin that has been taken over by the Twilight's Blade as their base of operations in the region.",
-						constant = "THE_BROKEN_THRONE_ALSO_KNOWN_AS_ATAL_KALDAN_IS",
-						export = true,
-						text = {
-							en = "The Broken Throne, also known as Atal'Kaldan, is an Amani ruin that has been taken over by the Twilight's Blade as their base of operations in the region.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "破碎王座又名阿塔卡丹，是一处阿曼尼废墟，已被暮光之刃占据作为其在该地区的行动基地。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The Broken Throne, also known as Atal'Kaldan, is an Amani ruin that has been taken over by the Twilight's Blade as their base of operations in the region.",
 					["cr"] = 260104,	-- Curious Obelisk
 					["coord"] = { 29.6, 77.9, MAP.MIDNIGHT.ZULAMAN },
 					["maps"] = { BROKEN_THRONE },
@@ -52,24 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						n(TREASURES, {
 							o(649115, {	-- Chewed Meat
-								["description"] = createLocalizationString({
-									readable = "Summon Pet 'Chubs' at the Meat Piles. Defeat Angry Amani Warbear. Once it turns friendly, feed it.",
-									constant = "SUMMON_PET_CHUBS_AT_THE_MEAT_PILES_DEFEAT_ANGRY",
-									export = true,
-									text = {
-										en = "Summon Pet 'Chubs' at the Meat Piles. Defeat Angry Amani Warbear. Once it turns friendly, feed it.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在肉堆处召唤宠物小胖。击败愤怒的阿曼尼战熊。等它变为友好后，喂食它。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Summon Pet 'Chubs' at the Meat Piles. Defeat Angry Amani Warbear. Once it turns friendly, feed it.",
 								["coord"] = { 55.8, 38.8, BROKEN_THRONE },
 								["cost"] = { { "i", 242639, 5 } },	-- 5x Practically Pork
 								["groups"] = { i(257225) },	-- Witherbark Warbear Harness (MOUNT!)
@@ -79,48 +45,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								["groups"] = { i(271999) },	-- Misplaced Ritual Candle
 							}),
 							o(649189, {	-- Ritual Circle
-								["description"] = createLocalizationString({
-									readable = "Find the Misplaced Ritual Candle nearby and place it on the appropriate place. After that, begin the ritual.",
-									constant = "FIND_THE_MISPLACED_RITUAL_CANDLE_NEARBY_AND",
-									export = true,
-									text = {
-										en = "Find the Misplaced Ritual Candle nearby and place it on the appropriate place. After that, begin the ritual.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在附近找到错放的仪式蜡烛，并将其放在正确的位置。之后，开始仪式。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Find the Misplaced Ritual Candle nearby and place it on the appropriate place. After that, begin the ritual.",
 								["coord"] = { 50.6, 47.3, BROKEN_THRONE },
 								["cr"] = 263527,	-- Void-Corrupted Hex Eagle
 								["cost"] = { { "i", 271999, 1 } },	-- 1x Misplaced Ritual Candle
 								["groups"] = { i(269828) },	-- Void-Corrupted Eagle Talon (MOUNT!)
 							}),
 							o(649412, {	-- Void-Tainted Nest
-								["description"] = createLocalizationString({
-									readable = "You need to be mounted on the 'Void-Corrupted Hex Eagle' in order to see the Updraft at the corner of the pillar in the southern part of the Ritual Site.\nStep into the Updraft to be flown to the nest.",
-									constant = "YOU_NEED_TO_BE_MOUNTED_ON_THE_VOID_CORRUPTED",
-									export = true,
-									text = {
-										en = "You need to be mounted on the 'Void-Corrupted Hex Eagle' in order to see the Updraft at the corner of the pillar in the southern part of the Ritual Site.\nStep into the Updraft to be flown to the nest.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你需要骑乘“虚空腐化的妖术之鹰”，才能看到仪式场南部柱子角落处的上升气流。\n走进上升气流即可飞向巢穴。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You need to be mounted on the 'Void-Corrupted Hex Eagle' in order to see the Updraft at the corner of the pillar in the southern part of the Ritual Site.\nStep into the Updraft to be flown to the nest.",
 								["coords"] = {
 									{ 49.5, 78.3, BROKEN_THRONE },	-- Updraft that carries you to the nest
 									{ 45.8, 64.8, BROKEN_THRONE },	-- Nest
@@ -131,24 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					},
 				}),
 				n(DAGGERSPINE_POINT_RS, {
-					["description"] = createLocalizationString({
-						readable = "Daggerspine Point is an island that has been claimed by the Daggerspine naga and serves as their base of operations. It was formerly named Shalandis Isle. ",
-						constant = "DAGGERSPINE_POINT_IS_AN_ISLAND_THAT_HAS_BEEN",
-						export = true,
-						text = {
-							en = "Daggerspine Point is an island that has been claimed by the Daggerspine naga and serves as their base of operations. It was formerly named Shalandis Isle. ",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "匕脊角是一座被匕脊纳迦占据的岛屿，也是他们的行动基地。它原名沙兰蒂斯岛。 ",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Daggerspine Point is an island that has been claimed by the Daggerspine naga and serves as their base of operations. It was formerly named Shalandis Isle. ",
 					["cr"] = 260103,	-- Curious Obelisk
 					["coord"] = { 37.6, 65.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["maps"] = { DAGGERSPINE_POINT },
@@ -173,24 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						n(TREASURES, {
 							n(263805, {	-- Egg
-								["description"] = createLocalizationString({
-									readable = "A small, inconspicuous, egg is floating down the river. Catch it.",
-									constant = "A_SMALL_INCONSPICUOUS_EGG_IS_FLOATING_DOWN_THE",
-									export = true,
-									text = {
-										en = "A small, inconspicuous, egg is floating down the river. Catch it.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "一个不起眼的小蛋正顺流漂下。抓住它。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "A small, inconspicuous, egg is floating down the river. Catch it.",
 								["coords"] = {
 									{ 55.8, 45.6, DAGGERSPINE_POINT },
 									{ 68.7, 47.7, DAGGERSPINE_POINT },
@@ -225,24 +123,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							o(649380, {	-- Washed Up Kelp
-								["description"] = createLocalizationString({
-									readable = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
-									constant = "SEARCH_THROUGH_THE_KELP_FOR_A_CHANCE_TO_ATTRACT",
-									export = true,
-									text = {
-										en = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在海藻中搜寻，有几率吸引虚空触碰的龙鱼。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Search through the Kelp for a chance to attract the Void-Touched Snapdragon.",
 								["modelScale"] = 3,
 								["cr"] = 263617,	-- Void-Touched Snapdragon
 								["coords"] = {
@@ -261,24 +142,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						n(ZONE_DROPS, {
 							i(271644),	-- Ember of Power (QS!/QI!)
 							i(272128, {	-- Soggy Lynx Toy
-								["description"] = createLocalizationString({
-									readable = "Has a chance to drop from any Naga-type creature within the Ritual Site.",
-									constant = "HAS_A_CHANCE_TO_DROP_FROM_ANY_NAGA_TYPE",
-									export = true,
-									text = {
-										en = "Has a chance to drop from any Naga-type creature within the Ritual Site.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "有几率从仪式场地内任何娜迦类生物身上掉落。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Has a chance to drop from any Naga-type creature within the Ritual Site.",
 								["crs"] = {
 									257828,	-- Daggerspine Infuser
 									257829,	-- Daggerspine Myrmidon
@@ -357,24 +221,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					["groups"] = {
 						i(272391),	-- Pattern: Rope Lynx Harness (RECIPE!)
 						i(272392, {	-- Broken Lynx Leash
-							["description"] = createLocalizationString({
-								readable = "Can only drop if you are Renown 8.\n\nCan drop on any difficulty level, regardless of active affixes.\n\nUnconfirmed: Higher difficulties, additional affixes, and higher performance scores increase your chances of obtaining it.",
-								constant = "CAN_ONLY_DROP_IF_YOU_ARE_RENOWN_8_CAN_DROP_ON",
-								export = true,
-								text = {
-									en = "Can only drop if you are Renown 8.\n\nCan drop on any difficulty level, regardless of active affixes.\n\nUnconfirmed: Higher difficulties, additional affixes, and higher performance scores increase your chances of obtaining it.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只有在名望 8 时才会掉落。\n\n任意难度下均可掉落，与激活的词缀无关。\n\n未经证实：更高的难度、额外的词缀以及更高的评分会提高获得它的几率。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only drop if you are Renown 8.\n\nCan drop on any difficulty level, regardless of active affixes.\n\nUnconfirmed: Higher difficulties, additional affixes, and higher performance scores increase your chances of obtaining it.",
 						}),
 						i(271787),	-- Field Accolades
 						i(271786),	-- Ritual Site Reports
@@ -548,24 +395,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						["groups"] = { i(271427) },	-- Exquisite Treasure (QS!/QI!)
 					}),
 					header(HEADERS.Item, 270063, {	-- Void-Touched Lynx Kitten
-						["description"] = createLocalizationString({
-							readable = "Found in Tier 3 or higher.\nClick the Rustling Bushes inside the Ritual Site.\n- You will have to click 8-13 rustling bushes before being able to click on the pet.\nOnly 1-2 are available per run.\nThe cat spawns from the bush and needs to be clicked to obtain the pet. It can only be interacted with by ONE player.\n- Once you have the Pet learned or Pet Item in inventory you CANNOT see/click the bushes anymore.",
-							constant = "FOUND_IN_TIER_3_OR_HIGHER_CLICK_THE_RUSTLING",
-							export = true,
-							text = {
-								en = "Found in Tier 3 or higher.\nClick the Rustling Bushes inside the Ritual Site.\n- You will have to click 8-13 rustling bushes before being able to click on the pet.\nOnly 1-2 are available per run.\nThe cat spawns from the bush and needs to be clicked to obtain the pet. It can only be interacted with by ONE player.\n- Once you have the Pet learned or Pet Item in inventory you CANNOT see/click the bushes anymore.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在第 3 层或更高层可找到。\n点击仪式场地内沙沙作响的灌木丛。\n- 你需要点击 8-13 处沙沙作响的灌木丛，才能点击这只宠物。\n每次挑战只有 1-2 处可用。\n这只猫会从灌木丛中钻出，需要点击它才能获得宠物。它只能被一名玩家互动。\n- 一旦你学会了该宠物或背包中拥有宠物物品，就再也看不到/点击不了这些灌木丛了。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found in Tier 3 or higher.\nClick the Rustling Bushes inside the Ritual Site.\n- You will have to click 8-13 rustling bushes before being able to click on the pet.\nOnly 1-2 are available per run.\nThe cat spawns from the bush and needs to be clicked to obtain the pet. It can only be interacted with by ONE player.\n- Once you have the Pet learned or Pet Item in inventory you CANNOT see/click the bushes anymore.",
 						["providers"] = {
 							{ "o", 649420 },	-- Rustling Bush [Daggerspine Point]
 							{ "o", 649437 },	-- Rustling Fern [Broken Throne]

@@ -80,14 +80,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 4 ------
 				q(70941, {	-- Fishing Holes
-					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["coord"] = { 45.8, 55.2, VALDRAKKEN },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				------ RENOWN 5 ------
 				q(71230, {	-- Tuskarr Fishing Gear
-					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["coord"] = { 45.8, 55.2, VALDRAKKEN },
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
@@ -443,24 +443,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 				["groups"] = {
 					i(200082, {	-- Battered Imbu-made Net
-						["description"] = createLocalizationString({
-							readable = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
-							constant = "OBTAINED_FROM_FISHING_IN_PRISMATIC_LEAPER",
-							export = true,
-							text = {
-								en = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "通过在棱光跃鱼鱼群、过热岩浆长尾鲨池或深冰钓鱼洞中钓鱼获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -468,7 +451,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200080, {	-- Draconium Nugget
-						["description"] = "~L.OBTAINED_FROM_FISHING_IN_PRISMATIC_LEAPER",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -476,7 +459,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200081, {	-- Hardened Seavine
-						["description"] = "~L.OBTAINED_FROM_FISHING_IN_PRISMATIC_LEAPER",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -484,7 +467,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200083, {	-- Irontree Branch
-						["description"] = "~L.OBTAINED_FROM_FISHING_IN_PRISMATIC_LEAPER",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -492,24 +475,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200086, {	-- Khaz'gorite-Infused Resin
-						["description"] = createLocalizationString({
-							readable = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
-							constant = "OBTAINED_FROM_RARES_SUMMONED_BY_USING_OMINOUS",
-							export = true,
-							text = {
-								en = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "通过在大型鱼群目击点使用不祥的海螺召唤出的稀有怪获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
 						["providers"] = {
 							{ "n", 193706 },	-- Snufflegust
 							{ "n", 197411 },	-- Astray Splasher
@@ -521,24 +487,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200085, {	-- Khaz'gorite Wire
-						["description"] = createLocalizationString({
-							readable = "Obtained from Full Tuskarr Fishing Nets.",
-							constant = "OBTAINED_FROM_FULL_TUSKARR_FISHING_NETS",
-							export = true,
-							text = {
-								en = "Obtained from Full Tuskarr Fishing Nets.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "通过装满的海象人渔网获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from Full Tuskarr Fishing Nets.",
 						["providers"] = {
 							{ "o", 382071 },	-- Full Fishing Net
 							{ "o", 379314 },	-- Full Fishing Net
@@ -546,7 +495,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					i(200084, {	-- Salinated Serevite
-						["description"] = "~L.OBTAINED_FROM_FISHING_IN_PRISMATIC_LEAPER",
+						["description"] = "Obtained from fishing in Prismatic Leaper Schools, Overheated Magma Thresher Pools or Deep Ice Fishing Holes.",
 						["providers"] = {
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
@@ -560,24 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					o(381514, {	-- Sea-Polished Basalt
 						-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
-						["description"] = createLocalizationString({
-							readable = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
-							constant = "NEAR_LANDING_POINTS_FOR_ALLIANCE_HORDE_IN_THE",
-							export = true,
-							text = {
-								en = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在觉醒海岸的联盟/部落登陆点附近。坐标较为粗略。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
 						["coords"] = {
 							{ 80.0, 27.0, THE_WAKING_SHORES },
 						},
@@ -586,24 +518,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					o(381512, {	-- Wooden Pole
-						["description"] = createLocalizationString({
-							readable = "Used to craft Iskaaran Harpoon.",
-							constant = "USED_TO_CRAFT_ISKAARAN_HARPOON",
-							export = true,
-							text = {
-								en = "Used to craft Iskaaran Harpoon.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "用于制作伊斯卡拉鱼叉。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Used to craft Iskaaran Harpoon.",
 						["coords"] = {
 							{ 12.1, 41.2, THE_AZURE_SPAN },
 							{ 15.6, 44.6, THE_AZURE_SPAN },

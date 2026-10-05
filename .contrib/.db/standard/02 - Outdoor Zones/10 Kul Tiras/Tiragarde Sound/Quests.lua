@@ -820,24 +820,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(161083, {	-- Satchel of Plundered Jewels
-						["description"] = createLocalizationString({
-							readable = "Contains some gems as well.",
-							constant = "CONTAINS_SOME_GEMS_AS_WELL",
-							export = true,
-							text = {
-								en = "Contains some gems as well.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "也内含一些宝石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains some gems as well.",
 						["groups"] = {
 							i(160261),	-- Soul of the Sea [Ring]
 						},
@@ -1719,48 +1702,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["sourceQuest"] = 48366,	-- Paddle to Safety
 				}),
 				q(49739, {	-- Enemies at the Gate
-					["description"] = createLocalizationString({
-						readable = "You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",
-						constant = "YOU_MUST_ACCEPT_CFFFFFF9AFOR_KUL_TIRAS_R_IN",
-						export = true,
-						text = {
-							en = "You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须接受|cffffff9a为了库尔提拉斯！|r，此奖励目标才会激活。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",
 					["sourceQuest"] = 49736,	-- For Kul Tiras!
 				}),
 				q(50009, {	-- Shipwreck Recovery Crew
 					["sourceQuest"] = 50026,	-- Save our Shipmates
 				}),
 				q(49529, {	-- Spring Cleaning
-					["description"] = createLocalizationString({
-						readable = "You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",
-						constant = "YOU_MUST_ACCEPT_CFFFFFF00MAKING_MYSTERIES_R_IN",
-						export = true,
-						text = {
-							en = "You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须接受|cffffff00制造谜团|r，此奖励目标才会可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",
 					["sourceQuest"] = 49897,	-- Making Mysteries
 				}),
 			})),

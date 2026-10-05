@@ -233,24 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26121, {	-- Claim Korthun's End
-							["description"] = createLocalizationString({
-								readable = "This version is provided if you abandon the quest granted by killing a |cFFFFD700Hellscream Seadog|r.",
-								constant = "THIS_VERSION_IS_PROVIDED_IF_YOU_ABANDON_THE",
-								export = true,
-								text = {
-									en = "This version is provided if you abandon the quest granted by killing a |cFFFFD700Hellscream Seadog|r.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你放弃通过击杀 |cFFFFD700地狱咆哮海员|r 获得的任务，就会提供此版本。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This version is provided if you abandon the quest granted by killing a |cFFFFD700Hellscream Seadog|r.",
 							["qg"] = 41665,	-- Jorlan Trueblade
 							["coord"] = { 54.4, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
@@ -416,24 +399,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26106, {	-- Fuel-ology 101
-							["description"] = createLocalizationString({
-								readable = "2 Remora, 3 Hammerhead",
-								constant = "2_REMORA_3_HAMMERHEAD",
-								export = true,
-								text = {
-									en = "2 Remora, 3 Hammerhead",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "2 条吸盘鱼，3 条锤头鲨",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "2 Remora, 3 Hammerhead",
 							["sourceQuest"] = 26103,	-- Bio-Fuel
 							["qg"] = 41666,	-- Engineer Hexascrub
 							["coord"] = { 55.5, 72.9, VASHJIR_ABYSSAL_DEPTHS },
@@ -569,24 +535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26144, {	-- Prisoners (A)
-							["description"] = createLocalizationString({
-								readable = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
-								constant = "ONLY_DROPS_WHEN_THE_CFFFFD700ASCEND_NO_MORE_R",
-								export = true,
-								text = {
-									en = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅当已接受或完成|cFFFFD700不再飞升！|r任务时掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
 							["sourceQuest"] = 26140,	-- Communing with the Ancient
 							["provider"] = { "i", 57102 },	-- Twilight Cage Key
 							["races"] = ALLIANCE_ONLY,
@@ -601,7 +550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26149, {	-- Prisoners (H)
-							["description"] = "~L.ONLY_DROPS_WHEN_THE_CFFFFD700ASCEND_NO_MORE_R",
+							["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
 							["sourceQuest"] = 26140,	-- Communing with the Ancient
 							["provider"] = { "i", 57118 },	-- Twilight Cage Key
 							["races"] = HORDE_ONLY,
@@ -692,24 +641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26125, {	-- Secure Seabrush (Pickup)
-							["description"] = createLocalizationString({
-								readable = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
-								constant = "THIS_VERSION_IS_PROVIDED_IF_YOU_ABANDON_THE_2",
-								export = true,
-								text = {
-									en = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你放弃通过击杀 |cFFFFD700联盟海上斥候|r 获得的任务，就会提供此版本。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
 							["qg"] = 41663,	-- Captain "Jewels" Verne
 							["coord"] = { 51.4, 61.5, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
@@ -770,7 +702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26126, {	-- The Perfect Fuel
-							["description"] = "~L.2_REMORA_3_HAMMERHEAD",
+							["description"] = "2 Remora, 3 Hammerhead",
 							["sourceQuest"] = 26122,	-- Environmental Awareness
 							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
@@ -897,24 +829,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						n(50051, {	-- Ghostcrawler: Hunter Pet Tamable
-							["description"] = createLocalizationString({
-								readable = "Tameable Spirit Beast for hunters.",
-								constant = "TAMEABLE_SPIRIT_BEAST_FOR_HUNTERS",
-								export = true,
-								text = {
-									en = "Tameable Spirit Beast for hunters.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "猎人可驯服的灵魂兽。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Tameable Spirit Beast for hunters.",
 							["coords"] = {
 								{ 20.0, 58.0, VASHJIR_ABYSSAL_DEPTHS },
 								{ 22.0, 65.0, VASHJIR_ABYSSAL_DEPTHS },
@@ -947,30 +862,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(FLIGHT_PATHS, {
 						fp(607, {	-- Sandy Beach, Vashj'ir
 							["cr"] = 43287,	-- Swift Seahorse <Flight Master>
-							["description"] = createLocalizationString({
-								readable = "Underwater.",
-								constant = "UNDERWATER",
-								export = true,
-								text = {
-									en = "Underwater.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "水下。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Underwater.",
 							["coord"] = { 42.4, 66.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(609, {	-- Sandy Beach, Vashj'ir
 							["cr"] = 43216,	-- Swift Seahorse <Flight Master>
-							["description"] = "~L.UNDERWATER",
+							["description"] = "Underwater.",
 							["coord"] = { 49.2, 87.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 						}),
@@ -1153,24 +1051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER 9.0.3
 							["groups"] = {
 								n(36799, {	-- Recruiter Burns
-									["description"] = createLocalizationString({
-										readable = "Accepting the quest 'Call of Duty' will instantly teleport you to Vashj'ir. Although the old event and cutscene is skipped, the questline is still intact.\n\nIf Burns do not offer you the quest, you might be phased due to Legion intro questline (even by being within the eligible level range!).",
-										constant = "ACCEPTING_THE_QUEST_CALL_OF_DUTY_WILL_INSTANTLY",
-										export = true,
-										text = {
-											en = "Accepting the quest 'Call of Duty' will instantly teleport you to Vashj'ir. Although the old event and cutscene is skipped, the questline is still intact.\n\nIf Burns do not offer you the quest, you might be phased due to Legion intro questline (even by being within the eligible level range!).",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "接受任务“使命的召唤”会立即将你传送到瓦丝琪尔。虽然旧的事件和过场动画被跳过，但任务线仍然完整。\n\n如果伯恩斯没有向你提供这个任务，你可能因为军团再临的开场任务线而处于不同位面（即使你在符合要求的等级范围内也会如此！）。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Accepting the quest 'Call of Duty' will instantly teleport you to Vashj'ir. Although the old event and cutscene is skipped, the questline is still intact.\n\nIf Burns do not offer you the quest, you might be phased due to Legion intro questline (even by being within the eligible level range!).",
 								}),
 							},
 							-- #endif
@@ -1413,24 +1294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25419, {	-- Lady La-La's Medallion
-							["description"] = createLocalizationString({
-								readable = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
-								constant = "TAKE_THE_QUEST_OH_THE_INSANITY_FROM_BUDD_TURN",
-								export = true,
-								text = {
-									en = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "从巴德处接取任务“哦，疯狂！”，在走私者之痕的洞穴中交还所有任务，然后开始击杀吉尔哥布林收集者以获取任务“拉拉女士的奖章”。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 							["sourceQuest"] = 25459,	-- Ophidophobia
 							["qs"] = 55186,	-- Lady La-La's Necklace (QS!)
 							["cr"] = 41017,	-- Gilblin Collector
@@ -1458,7 +1322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25651, {	-- Oh, the Insanity!
-							["description"] = "~L.TAKE_THE_QUEST_OH_THE_INSANITY_FROM_BUDD_TURN",
+							["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
 							["qg"] = 46338,	-- Budd
 							["coord"] = { 55.2, 38.8, VASHJIR_KELPTHAR_FOREST },
@@ -1483,24 +1347,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(27729, {	-- Once More, With Eeling
-							["description"] = createLocalizationString({
-								readable = "Granted automatically from killing any eel.",
-								constant = "GRANTED_AUTOMATICALLY_FROM_KILLING_ANY_EEL",
-								export = true,
-								text = {
-									en = "Granted automatically from killing any eel.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "击杀任何鳗鱼都会自动获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Granted automatically from killing any eel.",
 							["qgs"] = {
 								4085,	-- Slitherfin Eel
 								4100,	-- Slickskin Eel
@@ -1608,24 +1455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27699, {	-- Shark Weak
-							["description"] = createLocalizationString({
-								readable = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
-								constant = "IF_YOU_ABANDON_THIS_QUEST_LEAVE_THE_AREA_AND",
-								export = true,
-								text = {
-									en = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你放弃这个任务，离开该区域并游回船上。你绝对不能使用坐骑。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
 							["sourceQuest"] = 25657,	-- Dah, Nunt.. Dah, Nunt...
 							["coord"] = { 58.3, 48.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
@@ -2139,24 +1969,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25858, {	-- By Her Lady's Word
-							["description"] = createLocalizationString({
-								readable = "Must be on |cFFFFD700Visions of the Past: The Slaughter of Biel'aran Ridge|r to accept this quest.",
-								constant = "MUST_BE_ON_CFFFFD700VISIONS_OF_THE_PAST_THE",
-								export = true,
-								text = {
-									en = "Must be on |cFFFFD700Visions of the Past: The Slaughter of Biel'aran Ridge|r to accept this quest.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "必须正在进行|cFFFFD700往日的幻象：比耶拉兰山脊的屠杀|r才能接受此任务。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Must be on |cFFFFD700Visions of the Past: The Slaughter of Biel'aran Ridge|r to accept this quest.",
 							["sourceQuests"] = {
 								25753,	-- Fallen But Not Forgotten (A)
 								25964,	-- Fallen But Not Forgotten (H)
@@ -2410,24 +2223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(25896, {	-- Devout Assembly
-							["description"] = createLocalizationString({
-								readable = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
-								constant = "MUST_BE_ON_CFFFFD700VISIONS_OF_THE_PAST_RISE",
-								export = true,
-								text = {
-									en = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "必须正在进行|cFFFFD700过去的幻象：自深渊崛起|r才能接受此任务。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
 							["sourceQuest"] = 25973,	-- Welcome News
 							["qg"] = 41456,	-- Lady Sira'kess
 							["coord"] = { 33.1, 77.9, VASHJIR_SHIMMERING_EXPANSE },
@@ -2505,7 +2301,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(25629, {	-- Her Lady's Hand
-							["description"] = "~L.MUST_BE_ON_CFFFFD700VISIONS_OF_THE_PAST_RISE",
+							["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
 							["sourceQuest"] = 25973,	-- Welcome News
 							["qg"] = 42077,	-- Lady Naz'jar
 							["coord"] = { 33.1, 75.9, VASHJIR_SHIMMERING_EXPANSE },
@@ -2777,24 +2573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25619, {	-- Reoccupation (this shows up on the map after "Back in One Piece" but isn't actually available yet)
-							["description"] = createLocalizationString({
-								readable = "Must be on |cFFFFD700Visions of the Past: The Invasion of Vashj'ir|r to get this quest.",
-								constant = "MUST_BE_ON_CFFFFD700VISIONS_OF_THE_PAST_THE_2",
-								export = true,
-								text = {
-									en = "Must be on |cFFFFD700Visions of the Past: The Invasion of Vashj'ir|r to get this quest.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "必须正在进行|cFFFFD700往日的幻象：瓦丝琪尔入侵|r才能接到此任务。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Must be on |cFFFFD700Visions of the Past: The Invasion of Vashj'ir|r to get this quest.",
 							["sourceQuests"] = {
 								27393,	-- The Call of the Blade (A)
 								27394,	-- The Call of the Blade (H)
@@ -3342,7 +3121,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(62359),	-- Peacemaker's Breastplate
 									i(62358),	-- Leggings of Clutching Roots
 									i(62366, {	-- Arcanum of the Earthen Ring
-										["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+										["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),

@@ -215,24 +215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27024, {	-- Partners in Crime
 					-- #if AFTER 6.0.2
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest '|cFFFFD700Blackthorn's Lieutenants|r' (33513).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest '|cFFFFD700Blackthorn's Lieutenants|r' (33513).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成“|cFFFFD700黑棘的副官|r”（33513）任务时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700Blackthorn's Lieutenants|r' (33513).",
 					-- #endif
 					["qg"] = 44837,	-- Koristrasza
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
@@ -267,24 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27009, {	-- The Coldbringer
 					-- #if AFTER 6.0.2
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest '|cFFFFD700The Ritual|r' (33514).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_2",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest '|cFFFFD700The Ritual|r' (33514).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成“|cFFFFD700仪式|r”（33514）任务时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700The Ritual|r' (33514).",
 					-- #endif
 					["sourceQuests"] = {
 						27063,	-- Looming Threat [Alliance]
@@ -351,24 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{ 48.0, 90.4, MAP.THE_BARRENS },
 					{ 48.6, 95.6, MAP.THE_BARRENS },
 				},
-				["description"] = createLocalizationString({
-					readable = "This is a rare that is not always present.",
-					constant = "THIS_IS_A_RARE_THAT_IS_NOT_ALWAYS_PRESENT",
-					export = true,
-					text = {
-						en = "This is a rare that is not always present.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一种并不总是存在的稀有生物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is a rare that is not always present.",
 				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			-- #if BEFORE 6.0.2
@@ -401,69 +350,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Henry's Handbag (object)
-				["description"] = createLocalizationString({
-					readable = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
-					constant = "HEAD_TO_THE_MURDER_PENS_AREA_AND_LOOK_FOR",
-					export = true,
-					text = {
-						en = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "前往屠杀围栏区域，寻找悬挂的袋子，配方就在里面。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
 				["groups"] = {
 					i(202691),	-- Henry's Handbag (Reagent Bag)
 					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
 				},
 			})),
 			n(8696, bubbleDownSelf({ ["timeline"] = { REMOVED_6_0_2 } }, {	-- Henry Stern
-				["description"] = createLocalizationString({
-					readable = "The only source of acquiring Goldthorn Tea.",
-					constant = "THE_ONLY_SOURCE_OF_ACQUIRING_GOLDTHORN_TEA",
-					export = true,
-					text = {
-						en = "The only source of acquiring Goldthorn Tea.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "获得金棘茶的唯一途径。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The only source of acquiring Goldthorn Tea.",
 				["groups"] = {
 					recipe(13028, {	-- Goldthorn Tea
 						-- #if AFTER 6.0.2
-						["description"] = createLocalizationString({
-							readable = "Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
-							constant = "GOLDTHORN_TEA_WILL_STILL_TEASE_US_ON_OUR",
-							export = true,
-							text = {
-								en = "Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在暴雪让亨利回归、把该配方从列表中移除，或给我们另一种获取方式之前，金棘茶仍会在我们的“未学习”标签页中撩拨我们。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
 						-- #endif
 					}),
 				},
@@ -543,24 +441,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7354, {	-- Ragglesnout
-				["description"] = createLocalizationString({
-					readable = "This is a rare spawn that is not always present.",
-					constant = "THIS_IS_A_RARE_SPAWN_THAT_IS_NOT_ALWAYS_PRESENT",
-					export = true,
-					text = {
-						en = "This is a rare spawn that is not always present.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一种并不总是存在的稀有刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is a rare spawn that is not always present.",
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10758),	-- X'caliboar

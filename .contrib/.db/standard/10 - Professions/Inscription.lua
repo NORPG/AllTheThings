@@ -1009,24 +1009,7 @@ GLYPH_OF_FLASH_OF_LIGHT_AND_WORD_OF_GLORY = r(57026, {	-- Glyph of Flash of Ligh
 });
 GLYPH_OF_FLICKERING = r(225551, {	-- Glyph of Flickering
 	["name"] = "Glyph of Flickering",
-	["description"] = createLocalizationString({
-		readable = "Currently this Technique can only be learned by Shaman's. We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
-		constant = "CURRENTLY_THIS_TECHNIQUE_CAN_ONLY_BE_LEARNED_BY",
-		export = true,
-		text = {
-			en = "Currently this Technique can only be learned by Shaman's. We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "目前该技法只能由萨满学习。我们建议向暴雪提交错误报告，使其像其他技法一样可供所有铭文师使用。",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "Currently this Technique can only be learned by Shaman's. We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
 	["classes"] = { SHAMAN },
 	["timeline"] = { ADDED_7_0_3 },
 });
@@ -3867,24 +3850,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		-- #if BEFORE WOD
 		header(HEADERS.Item, 45912, {	-- Book of Glyph Mastery
 			["provider"] = { "i", 45912 },	-- Book of Glyph Mastery
-			["description"] = createLocalizationString({
-				readable = "Recipes listed below are learned by using a Book of Glyph Mastery.",
-				constant = "RECIPES_LISTED_BELOW_ARE_LEARNED_BY_USING_A",
-				export = true,
-				text = {
-					en = "Recipes listed below are learned by using a Book of Glyph Mastery.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "下列配方通过使用一本雕文精通之书学习。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Recipes listed below are learned by using a Book of Glyph Mastery.",
 			["groups"] = insertionSort({
 				-- #if ANYCLASSIC
 				-- This list was pulled from WoWHead for Wrath Classic. (56 listed, as of 4/15/2023)
@@ -5106,168 +5072,49 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			q(39942, {	-- Aethrem Crystal
-				["description"] = createLocalizationString({
-					readable = "There is a chance of getting this quest when milling Aethril.",
-					constant = "THERE_IS_A_CHANCE_OF_GETTING_THIS_QUEST_WHEN",
-					export = true,
-					text = {
-						en = "There is a chance of getting this quest when milling Aethril.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研磨艾瑟瑞尔时有几率获得此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a chance of getting this quest when milling Aethril.",
 				["provider"] = { "i", 136909 },	-- Aethrem Crystal
 				["groups"] = {
 					r(209658),	-- Mass Mill Aethril (RECIPE!)
 				},
 			}),
 			q(40062, {	-- Bulging Nightmare Pod
-				["description"] = createLocalizationString({
-					readable = "There is a chance of getting this quest when milling Dreamleaf.",
-					constant = "THERE_IS_A_CHANCE_OF_GETTING_THIS_QUEST_WHEN_2",
-					export = true,
-					text = {
-						en = "There is a chance of getting this quest when milling Dreamleaf.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研磨梦叶草时有几率获得此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
 				["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
 				["groups"] = {
 					r(209659),	-- Mass Mill Dreamleaf (RECIPE!)
 				},
 			}),
 			q(40065, {	-- Fjarnsk
-				["description"] = createLocalizationString({
-					readable = "There is a chance of getting this quest when milling Fjarnskaggl.",
-					constant = "THERE_IS_A_CHANCE_OF_GETTING_THIS_QUEST_WHEN_3",
-					export = true,
-					text = {
-						en = "There is a chance of getting this quest when milling Fjarnskaggl.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研磨弗加尔斯卡格尔时有几率获得此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
 				["provider"] = { "i", 136916 },	-- Fjarnsk
 				["groups"] = {
 					r(209661),	-- Mass Mill Fjarnskaggl (RECIPE!)
 				},
 			}),
 			q(39951, {	-- Roseate Essence
-				["description"] = createLocalizationString({
-					readable = "There is a chance of getting this quest when milling Starlight Rose.",
-					constant = "THERE_IS_A_CHANCE_OF_GETTING_THIS_QUEST_WHEN_4",
-					export = true,
-					text = {
-						en = "There is a chance of getting this quest when milling Starlight Rose.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研磨星光玫瑰时有几率获得此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
 				["provider"] = { "i", 136917 },	-- Roseate Essence
 				["groups"] = {
 					r(209662),	-- Mass Mill Starlight Rose (RECIPE!)
 				},
 			}),
 			q(39952, {	-- Sallow Essence
-				["description"] = createLocalizationString({
-					readable = "There is a chance of getting this quest when milling Felwort.",
-					constant = "THERE_IS_A_CHANCE_OF_GETTING_THIS_QUEST_WHEN_5",
-					export = true,
-					text = {
-						en = "There is a chance of getting this quest when milling Felwort.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研磨邪能草时有几率获得此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a chance of getting this quest when milling Felwort.",
 				["provider"] = { "i", 136918 },	-- Sallow Essence
 				["groups"] = {
 					r(209664),	-- Mass Mill Felwort (RECIPE!)
 				},
 			}),
 			q(40064, {	-- Woody Seed Cluster
-				["description"] = createLocalizationString({
-					readable = "There is a chance of getting this quest when milling Foxflower.",
-					constant = "THERE_IS_A_CHANCE_OF_GETTING_THIS_QUEST_WHEN_6",
-					export = true,
-					text = {
-						en = "There is a chance of getting this quest when milling Foxflower.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "研磨狐尾花时有几率获得此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a chance of getting this quest when milling Foxflower.",
 				["provider"] = { "i", 136915 },	-- Woody Seed Cluster
 				["groups"] = {
 					r(209660),	-- Mass Mill Foxflower (RECIPE!)
 				},
 			}),
 			q(43929, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Vantus Mastery
-				["description"] = createLocalizationString({
-					readable = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
-					constant = "AVAILABLE_TO_PICK_AFTER_ACQUIRED_ALL_RANK_3",
-					export = true,
-					text = {
-						en = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "从翡翠梦魇、勇气试炼和暗夜要塞获得全部 3 级万图斯技法后可选择。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
 				["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				["groups"] = {
 					i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
@@ -5296,48 +5143,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			------ Tools of Trade Questline ------
 			q(40537, {	-- Drawing Blood [A]
-				["description"] = createLocalizationString({
-					readable = "This quest chain requires 150 skill in Kul Tiran Inscription.",
-					constant = "THIS_QUEST_CHAIN_REQUIRES_150_SKILL_IN_KUL",
-					export = true,
-					text = {
-						en = "This quest chain requires 150 skill in Kul Tiran Inscription.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务线需要 150 点库尔提拉斯铭文技能。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49943, {	-- Drawing Blood [H]
-				["description"] = createLocalizationString({
-					readable = "This quest chain requires 150 skill in Zandalari Inscription.",
-					constant = "THIS_QUEST_CHAIN_REQUIRES_150_SKILL_IN",
-					export = true,
-					text = {
-						en = "This quest chain requires 150 skill in Zandalari Inscription.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务线需要 150 点赞达拉铭文技能。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
@@ -5446,24 +5259,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}),
 		n(SPECIAL, {
 			i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)
-				["description"] = createLocalizationString({
-					readable = "A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
-					constant = "A_MAGE_SCRIBE_WITH_175_SKILL_BFA_HAS_A_CHANCE",
-					export = true,
-					text = {
-						en = "A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "一名 175 点技能（争霸艾泽拉斯）的法师铭文师在召唤餐桌时有几率制作出这个配方。其他职业必须从法师或拍卖行获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
 				["timeline"] = { ADDED_8_2_5 },
 			}),
 		}),
@@ -5503,24 +5299,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 		n(QUESTS, {
 			q(70361, {	-- Dragon Isles Inscription
-				["description"] = createLocalizationString({
-					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
-					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_8",
-					export = true,
-					text = {
-						en = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务只能在学会巨龙群岛铭文之前接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume <Inscription Trainer>
 				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -5529,7 +5308,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			q(72244, {	-- Dragon Isles Inscription
-				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_8",
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -5568,7 +5347,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		}, {
 			------ Requires 25 Skill ------
 			q(66945, {	-- Icy Ink
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -5576,7 +5355,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			q(66944, {	-- Peacock Pigments
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["groups"] = {
@@ -5584,7 +5363,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			q(72438, {	-- Tarasek Intentions
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -5592,7 +5371,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			q(66943, {	-- Wood for Writing
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -5602,27 +5381,27 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 
 			------ Requires 45 Skill ------
 			q(70561, {	-- A Scribe's Tragedy
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 			}),
 			q(70558, {	-- Disillusioned Illusions
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 			}),
 			q(70592, {	-- Inscription Services Requested
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(70560, {	-- The Most Powerful Tool: Good Documentation
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 			}),
 			q(70559, {	-- Quill You Help?
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 			}),
@@ -5678,7 +5457,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 } } }, {
 				r(383533),	-- Azurescale Sigil
 				r(383536),	-- Bronzescale Sigil
@@ -5711,24 +5490,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			})),
 			o(380570, {	-- Curious Glyph
-				["description"] = createLocalizationString({
-					readable = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
-					constant = "INTERACT_WITH_THE_GLYPH_CROSS_THE_BRIDGE_AND",
-					export = true,
-					text = {
-						en = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与符文互动，过桥并击杀尽头的中立 NPC，然后返回拾取宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
 				["questID"] = 70248,
 				["coord"] = { 47.1, 40.1, THALDRASZUS },
 				["groups"] = {
@@ -5745,24 +5507,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			o(380567, {	-- Eight of Storms
 				-- Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
-				["description"] = createLocalizationString({
-					readable = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
-					constant = "SPEAK_TO_SIENNAGOSA_AND_OFFER_TO_HELP_PUTTING",
-					export = true,
-					text = {
-						en = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与西恩娜戈萨交谈，提出帮她把牌组重新拼好，然后按正确顺序（从 A 到 8）收集卡牌以取得宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
 				["questID"] = 70287,
 				["coord"] = { 56.1, 40.9, THALDRASZUS },
 				["groups"] = {
@@ -5798,24 +5543,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			})),
 			o(380578, {	-- How to Train Your Whelpling
-				["description"] = createLocalizationString({
-					readable = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
-					constant = "COLLECT_THE_PULSING_EARTH_RUNE_FIRST_OTHERWISE",
-					export = true,
-					text = {
-						en = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "请先收集脉动大地符文！否则该宝藏可能会错误地包含这枚符文，导致你无法获得正确的宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
 				["questID"] = 70281,
 				["coord"] = { 13.2, 63.7, VALDRAKKEN },
 				["groups"] = {
@@ -5879,24 +5607,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			q(70518, {	-- DF Weekly Inscription Knowledgepoint #3
 				["name"] = "DF Inscription Drop #1: Qalashi Djaradin",
-				["description"] = createLocalizationString({
-					readable = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_QALASHI_DJARADIN_COORDINATES",
-					export = true,
-					text = {
-						en = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任意卡拉希贾拉丁掉落。\n坐标指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198971 },	-- Curious Djaradin Rune
 				["coords"] = {
 					{ 39.6, 51.4, THE_WAKING_SHORES },
@@ -5910,24 +5621,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			q(70519, {	-- DF Weekly Inscription Knowledgepoint #4
 				["name"] = "DF Inscription Drop #2: Dragon-kin/Proto Drakes",
-				["description"] = createLocalizationString({
-					readable = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_DRAGON_KIN_PROTO_DRAKE",
-					export = true,
-					text = {
-						en = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任意龙类/始祖龙掉落。\n坐标指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198972 },	-- Draconic Glamour
 				["coord"] = { 44.0, 81.8, THALDRASZUS },
 				["crs"] = {
@@ -5980,7 +5674,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 } } }, {
 				r(447868),	-- Algari Treatise on Inscription
 				r(444192),	-- Darkmoon Sigil: Evolve
@@ -6150,7 +5844,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.INSCRIPTION, 1 } } }, {
 				r(1230060),	-- Aln'hara Cane
 				r(1230061),	-- Aln'hara Lantern

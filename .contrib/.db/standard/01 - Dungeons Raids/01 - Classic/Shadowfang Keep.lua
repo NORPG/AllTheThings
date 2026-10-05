@@ -28,67 +28,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			-- #if SEASON_OF_DISCOVERY
 			pickpocketing({
-				["description"] = createLocalizationString({
-					readable = "The Rare Creatures only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
-					constant = "THE_RARE_CREATURES_ONLY_SPAWN_IF_A_ROGUE_ENTERS",
-					export = true,
-					text = {
-						en = "The Rare Creatures only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有在进行“塞尔索斯之角”任务的潜行者独自进入副本时，这些稀有生物才会刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The Rare Creatures only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210212, {	-- Brother's Half-Key
-						["description"] = createLocalizationString({
-							readable = "Found shortly after Baron Silverlaine.\nHead up the stairs behind the boss, and take a right, Gefell should be in a room up the stairs around the corner.",
-							constant = "FOUND_SHORTLY_AFTER_BARON_SILVERLAINE_HEAD_UP",
-							export = true,
-							text = {
-								en = "Found shortly after Baron Silverlaine.\nHead up the stairs behind the boss, and take a right, Gefell should be in a room up the stairs around the corner.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在希瓦莱恩男爵之后不久即可找到。\n上到首领身后的楼梯，向右转，格菲尔应该就在拐角处楼梯上方的一个房间里。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found shortly after Baron Silverlaine.\nHead up the stairs behind the boss, and take a right, Gefell should be in a room up the stairs around the corner.",
 						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 211764,	-- Gefell
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(210213, {	-- Sister's Half-Key
-						["description"] = createLocalizationString({
-							readable = "Just after the Kitchen in Baron Silverlaine's room.",
-							constant = "JUST_AFTER_THE_KITCHEN_IN_BARON_SILVERLAINE_S",
-							export = true,
-							text = {
-								en = "Just after the Kitchen in Baron Silverlaine's room.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "就在厨房之后的席瓦莱恩男爵房间内。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Just after the Kitchen in Baron Silverlaine's room.",
 						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 211765,	-- Gemela
@@ -887,24 +836,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "o", 410528 },	-- Ornamented Chest
 								{ "i", 210209 },	-- Twin Key
 							},
-							["description"] = createLocalizationString({
-								readable = "Once you've gotten both of the half keys from pick pocketing the npcs, combine them and bring the twin key to the ornamented chest in the stables.",
-								constant = "ONCE_YOU_VE_GOTTEN_BOTH_OF_THE_HALF_KEYS_FROM",
-								export = true,
-								text = {
-									en = "Once you've gotten both of the half keys from pick pocketing the npcs, combine them and bring the twin key to the ornamented chest in the stables.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "从这些 NPC 身上偷取到两半钥匙后，将它们合成，并把双子钥匙带到马厩里那口华丽的箱子处。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Once you've gotten both of the half keys from pick pocketing the npcs, combine them and bring the twin key to the ornamented chest in the stables.",
 							["cost"] = {
 								{ "i", 210212, 1 },	-- Brother's Half-Key
 								{ "i", 210213, 1 },	-- Sister's Half-Key
@@ -913,24 +845,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78307, {	-- The Horn of Xelthos (2/2)
-					["description"] = createLocalizationString({
-						readable = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
-						constant = "15_MINUTES_OR_SO_AFTER_YOU_TURN_IN_THE_FIRST",
-						export = true,
-						text = {
-							en = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你交掉塞尔索斯之角的第一部分后大约 15 分钟，你会收到来自 C 的另一封邮件，并能够从影牙城堡外的死信箱中拾取符文。\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
 					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
 					["provider"] = { "o", 410369 },	-- Dead Drop
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
@@ -1612,7 +1527,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 6283 },	-- The Book of Ur
 								{ "o", 36738 },	-- The Book of Ur
 							},
-							["description"] = "~L.CAN_BE_FOUND_ON_A_BOOKSHELF_IN_THE_CIRCULAR",
+							["description"] = "Can be found on a bookshelf in the circular room with Fenrus.",
 						}),
 						i(4534, {	-- Steel-Clasped Bracers
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2170,7 +2085,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				n(3872, {	-- Deathsworn Captain
-					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_2",
+					["description"] = "This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",
 					["groups"] = {
 						i(6641),	-- Haunting Blade
 						i(6642),	-- Phantom Armor
@@ -2211,24 +2126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(60873, {	-- Book of Lost Souls
-					["description"] = createLocalizationString({
-						readable = "This item in located on a chair in Lord Walden's room.",
-						constant = "THIS_ITEM_IN_LOCATED_ON_A_CHAIR_IN_LORD_WALDEN",
-						export = true,
-						text = {
-							en = "This item in located on a chair in Lord Walden's room.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品位于沃登领主房间的一把椅子上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item in located on a chair in Lord Walden's room.",
 					["provider"] = { "o", 205476 },	-- Book of Lost Souls
 					["timeline"] = { ADDED_4_0_3 },
 				}),

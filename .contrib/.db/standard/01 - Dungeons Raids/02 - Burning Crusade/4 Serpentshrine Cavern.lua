@@ -24,24 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10944, {	-- The Secret Compromised
-					["description"] = createLocalizationString({
-						readable = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
-						constant = "AFTER_YOU_DEFEAT_FATHOM_LORD_KARATHRESS_SEER",
-						export = true,
-						text = {
-							en = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击败深水领主卡拉瑟雷斯后，先知奥鲁姆会从牢笼中获救，并向你提供任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
 					["sourceQuest"] = 10708,	-- Akama's Promise
 					["qg"] = 22820,	-- Seer Olum
 					["coord"] = { 48.0, 18.2, SERPENTSHRINE_CAVERN },
@@ -77,24 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				i(30021),	-- Wildfury Greatstaff
 				i(30183),	-- Nether Vortex
 				i(32897, {	-- Mark of the Illidari
-					["description"] = createLocalizationString({
-						readable = "Only used to buy flasks usable for later TBC raids. Access to the apothecary vendor requires being Exalted with Cenarion Expedition, the Sha'tar, and the Aldor/Scryers.",
-						constant = "ONLY_USED_TO_BUY_FLASKS_USABLE_FOR_LATER_TBC",
-						export = true,
-						text = {
-							en = "Only used to buy flasks usable for later TBC raids. Access to the apothecary vendor requires being Exalted with Cenarion Expedition, the Sha'tar, and the Aldor/Scryers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅用于购买可供后续 TBC 团队副本使用的合剂。要进入药剂师商人处，需要与塞纳里奥远征队、沙塔尔以及奥尔多/占星者达到崇拜。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only used to buy flasks usable for later TBC raids. Access to the apothecary vendor requires being Exalted with Cenarion Expedition, the Sha'tar, and the Aldor/Scryers.",
 				}),
 				-- #if BEFORE MOP
 				i(30023, {	-- Totem of the Maelstrom

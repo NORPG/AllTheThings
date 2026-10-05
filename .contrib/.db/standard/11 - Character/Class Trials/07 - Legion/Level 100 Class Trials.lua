@@ -5,24 +5,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.LEGION, bubbleDown({["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 }}, {
 		header(HEADERS.Achievement, 9060, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
-			["description"] = createLocalizationString({
-				readable = "These were obtained by creating a Level 100 Class Trial for each class and specialization.",
-				constant = "THESE_WERE_OBTAINED_BY_CREATING_A_LEVEL_100",
-				export = true,
-				text = {
-					en = "These were obtained by creating a Level 100 Class Trial for each class and specialization.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些是通过为每个职业和专精创建 100 级职业试玩角色获得的。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These were obtained by creating a Level 100 Class Trial for each class and specialization.",
 			["lvl"] = 100,
 			["groups"] = {
 				cl(DEATHKNIGHT, {

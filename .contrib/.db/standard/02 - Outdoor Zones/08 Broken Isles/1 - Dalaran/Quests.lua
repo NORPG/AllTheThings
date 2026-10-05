@@ -370,31 +370,14 @@ root(ROOTS.Zones, {
 					["classes"] = { MONK },
 				}),
 				q(40717, {	-- Calling of the Council [A]
-					["description"] = createLocalizationString({
-						readable = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
-						constant = "YOU_CAN_START_THIS_QUEST_BY_GOING_TO_DALARAN",
-						export = true,
-						text = {
-							en = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以前往达拉然（军团）并与紫罗兰城堡中的档案员艾丽西娜交谈来开始这个任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
 					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 					-- ["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(40718, {	-- Calling of the Council [H]
-					["description"] = "~L.YOU_CAN_START_THIS_QUEST_BY_GOING_TO_DALARAN",
+					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
 					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 					-- ["coord"] = { },
@@ -431,24 +414,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 41.0, 26.2, LEGION_DALARAN },
 				}),
 				q(45125, {	-- Dabbling in the Demonic
-					["description"] = createLocalizationString({
-						readable = "To stabilize the portal, activate following runes: Dregla, Taam, and Talar.",
-						constant = "TO_STABILIZE_THE_PORTAL_ACTIVATE_FOLLOWING",
-						export = true,
-						text = {
-							en = "To stabilize the portal, activate following runes: Dregla, Taam, and Talar.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "要稳定传送门，请激活以下符文：德雷格拉、塔姆和塔拉尔。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "To stabilize the portal, activate following runes: Dregla, Taam, and Talar.",
 					["sourceQuests"] = { 45916 },	-- The Acolyte Imperiled
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 					["coord"] = { 57.9, 72.6, 629 },
@@ -790,24 +756,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(44547, {	-- Isle Hopping
-					["description"] = createLocalizationString({
-						readable = "This quest is offered after placing your 2nd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-						constant = "THIS_QUEST_IS_OFFERED_AFTER_PLACING_YOUR_2ND",
-						export = true,
-						text = {
-							en = "This quest is offered after placing your 2nd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在达拉然放置第 2 根创世之柱且 NPC 对话结束后会提供此任务，前提是你没有在你先前选择的那些军团再临区域之外做过任务。\n\n如果你的侦察地图已消失，或你无法完成此任务，可以通过小队同步，在风暴峡湾 30,40 处从大法师兰顿那里接取任务“风暴峡湾”，以满足任务要求。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is offered after placing your 2nd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -906,24 +855,7 @@ root(ROOTS.Zones, {
 					["lvl"] = 45,
 				}),
 				q(44549, {	-- Master of the Isles
-					["description"] = createLocalizationString({
-						readable = "This quest is offered after placing your 4th Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-						constant = "THIS_QUEST_IS_OFFERED_AFTER_PLACING_YOUR_4TH",
-						export = true,
-						text = {
-							en = "This quest is offered after placing your 4th Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在达拉然放置第 4 根创世之柱且 NPC 对话结束后会提供此任务，前提是你没有在你先前选择的那些军团再临区域之外做过任务。\n\n如果你的侦察地图已消失，或你无法完成此任务，可以通过小队同步，在风暴峡湾 30,40 处从大法师兰顿那里接取任务“风暴峡湾”，以满足任务要求。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is offered after placing your 4th Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -1002,24 +934,7 @@ root(ROOTS.Zones, {
 					["classes"] = { ROGUE },
 				}),
 				q(44545, {	-- Pressing the Assault
-					["description"] = createLocalizationString({
-						readable = "This quest is offered after placing your 1st Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the one you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-						constant = "THIS_QUEST_IS_OFFERED_AFTER_PLACING_YOUR_1ST",
-						export = true,
-						text = {
-							en = "This quest is offered after placing your 1st Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the one you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在达拉然放置第 1 根创世之柱且 NPC 对话结束后会提供此任务，前提是你没有在你先前选择的军团再临区域之外做过任务。\n\n如果你的侦察地图已消失，或你无法完成此任务，可以通过小队同步，在风暴峡湾 30,40 处从大法师兰顿那里接取任务“风暴峡湾”，以满足任务要求。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is offered after placing your 1st Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the one you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -1127,24 +1042,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
 				}),
 				q(44548, {	-- Scouring What Remains
-					["description"] = createLocalizationString({
-						readable = "This quest is offered after placing your 3rd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-						constant = "THIS_QUEST_IS_OFFERED_AFTER_PLACING_YOUR_3RD",
-						export = true,
-						text = {
-							en = "This quest is offered after placing your 3rd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在达拉然放置第 3 根创世之柱且 NPC 对话结束后会提供此任务，前提是你没有在你先前选择的那些军团再临区域之外做过任务。\n\n如果你的侦察地图已消失，或你无法完成此任务，可以通过小队同步，在风暴峡湾 30,40 处从大法师兰顿那里接取任务“风暴峡湾”，以满足任务要求。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is offered after placing your 3rd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -1331,24 +1229,7 @@ root(ROOTS.Zones, {
 					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 				}),
 				q(39733, {	-- The Lone Mountain
-					["description"] = createLocalizationString({
-						readable = "The quest is automatically acquired when players choose Highmountain from their Command Map in their order hall.",
-						constant = "THE_QUEST_IS_AUTOMATICALLY_ACQUIRED_WHEN",
-						export = true,
-						text = {
-							en = "The quest is automatically acquired when players choose Highmountain from their Command Map in their order hall.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当玩家在职业大厅的指挥地图上选择至高岭时，此任务会自动获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The quest is automatically acquired when players choose Highmountain from their Command Map in their order hall.",
 					["isBreadcrumb"] = true,
 				}),
 				q(47793, {	-- The Spoiled Sample

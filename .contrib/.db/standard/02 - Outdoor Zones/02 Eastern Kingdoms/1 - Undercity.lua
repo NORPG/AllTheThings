@@ -82,24 +82,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 4551,	-- Michael Garrett <Bat Handler>
 					["coord"] = { 63.6, 48.6, UNDERCITY },
 					-- #if AFTER BFA
-					["description"] = createLocalizationString({
-						readable = "Can be picked up only during Chromie time.",
-						constant = "CAN_BE_PICKED_UP_ONLY_DURING_CHROMIE_TIME",
-						export = true,
-						text = {
-							en = "Can be picked up only during Chromie time.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只能在克罗米时间期间接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be picked up only during Chromie time.",
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
@@ -131,7 +114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 48,
 							["groups"] = {
 								i(15102, {	-- Un'Goro Tested Sample
-									["description"] = "~L.MIGHT_CONTAIN_NOTHING_BRING_WAY_MORE_SLIME",
+									["description"] = "Might contain nothing. Bring way more slime samples than you need.",
 									["groups"] = {
 										objective(1, {	-- 0/5 Pure Un'Goro Sample
 											["questID"] = 4294,	-- ... and a Batch of Ooze
@@ -142,7 +125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(12235, {	-- Un'Goro Slime Sample
-							["description"] = "~L.BRING_AT_LEAST_30_OF_THESE_BACK_WITH_YOU_TO_THE",
+							["description"] = "Bring at least 30 of these back with you to the Undercity for testing.",
 							["crs"] = {
 								6559,	-- Glutinous Ooze
 								6556,	-- Muculent Ooze
@@ -218,7 +201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 48,
 							["groups"] = {
 								i(15103, {	-- Corrupt Tested Sample
-									["description"] = "~L.MIGHT_CONTAIN_NOTHING_BRING_WAY_MORE_SLIME",
+									["description"] = "Might contain nothing. Bring way more slime samples than you need.",
 									["groups"] = {
 										objective(1, {	-- 0/5 Corrupted Felwood Sample
 											["questID"] = 4293,	-- A Sample of Slime...
@@ -916,24 +899,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78199, {	-- Secrets of the Loa (2/2)
-					["description"] = createLocalizationString({
-						readable = "Completing this quest will allow you to meditate in the same manner as the trolls.",
-						constant = "COMPLETING_THIS_QUEST_WILL_ALLOW_YOU_TO_4",
-						export = true,
-						text = {
-							en = "Completing this quest will allow you to meditate in the same manner as the trolls.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成该任务后，你可以像巨魔一样冥想。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the trolls.",
 					["sourceQuest"] = 78198,	-- Secrets of the Loa (1/2)
 					["qg"] = 211225,	-- Baj'ura
 					["qi"] = 210080,	-- Voodoo Offering
@@ -1037,7 +1003,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Pray over the Supplicant
 							["provider"] = { "n", 215098 },	-- Supplicant
-							["description"] = "~L.YOU_MUST_FIRST_HAVE_YOUR_MEDITATION_BUFF_AND",
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
 						}),
 					},
 				})),
@@ -1482,24 +1448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				o(240623, {	-- Sylvanas' Strongbox
-					["description"] = createLocalizationString({
-						readable = "Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",
-						constant = "USE_ZIDORMI_TO_ACCESS_TIRISFAL_GLADES_OF_THE",
-						export = true,
-						text = {
-							en = "Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用希多尔米进入过去的提瑞斯法林地。在西尔瓦娜斯·风行者左侧一根柱子的底部拾取保险箱。联盟角色*可以*拾取这个。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",
 					["coord"] = { 58.1, 93.8, UNDERCITY },
 					["timeline"] = { ADDED_6_1_0 },
 					["modelRotation"] = 270,
@@ -1958,7 +1907,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22250, {	-- Herb Pouch
-							["description"] = "~L.ONLY_SELECT_HERBALISM_SUPPLIERS_SELLS_THIS",
+							["description"] = "Only select Herbalism Suppliers sells this pouch.",
 							["providers"] = {
 								{ "n", 4216},	-- Chardryn <Herbalism Supplies>
 								{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
@@ -2276,7 +2225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(4554, {	-- Tawny Grisette <Mushroom Vendor>
 					["coord"] = { 69.7, 44.8, UNDERCITY },
-					["description"] = "~L.WALKS_AROUND_THE_TRADE_QUARTER_UPPER_LEVEL",
+					["description"] = "Walks around the Trade Quarter, upper level.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4607),	-- Delicious Cave Mold

@@ -28,24 +28,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(471, {	-- Wildhammer Clan
-					["description"] = createLocalizationString({
-						readable = "This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
-						constant = "THIS_FACTION_GETS_REMOVED_COMPLETELY_WITH_THE",
-						export = true,
-						text = {
-							en = "This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该声望会在《燃烧的远征》前夕版本中被完全移除，所以把它刷到崇拜毫无意义。\n\n你可以只靠击杀巨魔刷到 11999/12000，然后理论上还能通过上交巨魔项链继续冲崇拜，每 5 条项链换 2 点声望；但与其鼓励你把生命完全浪费在一个赛季结束后就会从游戏中移除的声望上，我在 ATT 中人为地把目标上限设为崇敬。\n\n祝你好运。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					["OnTooltip"] = [[function(t, tooltipInfo)
 						local reputation = t.reputation;
@@ -189,24 +173,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "i",  19071 },	-- Vessel of Tainted Blood
 								{ "o", 179922 },	-- Vessel of Tainted Blood
 							},
-							["description"] = createLocalizationString({
-								readable = "Can be found all over Jintha'alor.",
-								constant = "CAN_BE_FOUND_ALL_OVER_JINTHA_ALOR",
-								export = true,
-								text = {
-									en = "Can be found all over Jintha'alor.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在辛萨罗各处找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found all over Jintha'alor.",
 							["coord"] = { 65.2, 71.9, MAP.THE_HINTERLANDS },
 						}),
 						i(19118),	-- Nature's Breath
@@ -219,24 +186,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 42,
 				}),
 				q(485, {	-- Find OOX-09/HL!
-					["description"] = createLocalizationString({
-						readable = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
-						constant = "THE_ITEM_THAT_STARTS_THIS_QUEST_HAS_A_CHANCE_TO",
-						export = true,
-						text = {
-							en = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "起始该任务的物品有几率从辛特兰的任何被击杀生物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
 					["provider"] = { "i", 8704 },	-- OOX-09/HL Distress Beacon
 					["lvl"] = 43,
 				}),
@@ -336,24 +286,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["cr"] = 14748,	-- Vilebranch Kidnapper
 						}),
 						i(19035, {	-- Lard's Special Picnic Basket
-							["description"] = createLocalizationString({
-								readable = "Contains a random world drop and some consumables.",
-								constant = "CONTAINS_A_RANDOM_WORLD_DROP_AND_SOME",
-								export = true,
-								text = {
-									en = "Contains a random world drop and some consumables.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "包含一件随机世界掉落物品和一些消耗品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Contains a random world drop and some consumables.",
 						}),
 					},
 				}),
@@ -940,24 +873,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				i(4589),	-- Long Elegant Feather
 				i(8704, {	-- OOX-09/HL Distress Beacon
-					["description"] = createLocalizationString({
-						readable = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",
-						constant = "THIS_ITEM_CAN_DROP_OFF_OF_ANY_HOSTILE_CREATURE",
-						export = true,
-						text = {
-							en = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该物品可以从该区域的任何敌对生物身上掉落。稀有和精英生物的掉率更高。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["cr"] = 2644,	-- Vilebranch Hideskinner
@@ -968,30 +884,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 				i(9259, {	-- Troll Tribal Necklace
-					["description"] = createLocalizationString({
-						readable = "Can drop from any troll in The Hinterlands.",
-						constant = "CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS",
-						export = true,
-						text = {
-							en = "Can drop from any troll in The Hinterlands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从辛特兰的任何巨魔身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from any troll in The Hinterlands.",
 				}),
 				i(8153, {	-- Wildvine
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 			}),
 		},

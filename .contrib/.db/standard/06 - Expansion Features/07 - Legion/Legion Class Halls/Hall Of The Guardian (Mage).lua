@@ -47,144 +47,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					cl(MAGE, ARCANE, {
 						q(43787, {	-- Zone Targets Polymorphed: Azsuna
 							["name"] = "Polymorph: Cliffwing Hippogryph",
-							["description"] = createLocalizationString({
-								readable = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
-								constant = "IF_THIS_QUEST_HAS_A_CHECKMARK_NEXT_TO_IT_THEN",
-								export = true,
-								text = {
-									en = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果这个任务旁边有对勾，那就意味着你已经变形过这个 NPC，可以继续下一个了！\n\n使用阿苏纳传送枢纽。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
 							["sourceQuest"] = 42011,	-- The Nexus Vault
 							["maps"] = { AZSUNA },
 							["crs"] = { 89386 },	-- Cliffwing Hippogryph [Azsuna]
 						}),
 						q(43791, {	-- Zone Targets Polymorphed: Suramar
 							["name"] = "Polymorph: Heartwood Doe",
-							["description"] = createLocalizationString({
-								readable = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
-								constant = "IF_THIS_QUEST_HAS_A_CHECKMARK_NEXT_TO_IT_THEN_2",
-								export = true,
-								text = {
-									en = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果这个任务旁边有对勾，那就意味着你已经变形过这个 NPC，可以继续下一个了！\n\n使用苏拉玛传送枢纽。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
 							["sourceQuest"] = 42011,	-- The Nexus Vault
 							["maps"] = { SURAMAR },
 							["crs"] = { 110043 },	-- Heartwood Doe [Suramar]
 						}),
 						q(43788, {	-- Zone Targets Polymorphed: Highmountain
 							["name"] = "Polymorph: Highpeak Goat",
-							["description"] = createLocalizationString({
-								readable = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
-								constant = "IF_THIS_QUEST_HAS_A_CHECKMARK_NEXT_TO_IT_THEN_3",
-								export = true,
-								text = {
-									en = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果这个任务旁边有对勾，那就意味着你已经变形过这个 NPC，可以继续下一个了！\n\n使用至高岭传送枢纽。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
 							["sourceQuest"] = 42011,	-- The Nexus Vault
 							["maps"] = { HIGHMOUNTAIN },
 							["crs"] = { 99636 },	-- Highpeak Goat [Highmountain]
 						}),
 						q(43789, {	-- Zone Targets Polymorphed: Stormheim
 							["name"] = "Polymorph: Plains Runehorn Calf",
-							["description"] = createLocalizationString({
-								readable = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
-								constant = "IF_THIS_QUEST_HAS_A_CHECKMARK_NEXT_TO_IT_THEN_4",
-								export = true,
-								text = {
-									en = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果这个任务旁边有对勾，那就意味着你已经变形过这个 NPC，可以继续下一个了！\n\n使用风暴峡湾传送枢纽。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
 							["sourceQuest"] = 42011,	-- The Nexus Vault
 							["maps"] = { STORMHEIM },
 							["crs"] = { 107808 },	-- Plains Runehorn Calf [Stormheim]
 						}),
 						q(43790, {	-- Zone Targets Polymorphed: Val'sharah
 							["name"] = "Polymorph: Wild Dreamrunner",
-							["description"] = createLocalizationString({
-								readable = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
-								constant = "IF_THIS_QUEST_HAS_A_CHECKMARK_NEXT_TO_IT_THEN_5",
-								export = true,
-								text = {
-									en = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果这个任务旁边有对勾，那就意味着你已经变形过这个 NPC，可以继续下一个了！\n\n使用瓦尔莎拉传送枢纽。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
 							["sourceQuest"] = 42011,	-- The Nexus Vault
 							["maps"] = { VALSHARAH },
 							["crs"] = { 109819 },	-- Wild Dreamrunner [Val'Sharah]
 						}),
 						q(43828, {	-- Sheep Summon Daily Roll
 							["name"] = "Sheep Summon Daily Roll",
-							["description"] = createLocalizationString({
-								readable = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
-								constant = "IF_THE_EVENT_ROLL_WAS_SUCCESSFUL_YOU_LL_SEE_AN",
-								export = true,
-								text = {
-									en = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果事件判定成功，你会看到科特“牧羊人”麦特卡夫的表情文字说“成功！”。\n\n你可以在职业大厅入口的楼梯上找到一只不稳定的绵羊。不停点击它。\n\n如果这个任务旁边有对勾，而你没有看到科特的表情文字，那就意味着你应该明天再来。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
 							["icon"] = 1384069,
 							["sourceQuests"] = {
 								43787,	-- Cliffwing Hippogryph [Azsuna]
@@ -198,24 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["groups"] = {
 								q(43799, {	-- Summoned Sheep Exploded
 									["name"] = "Summoned Sheep Exploded",
-									["description"] = createLocalizationString({
-										readable = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
-										constant = "THE_NEXT_STEP_IS_PURE_RNG_WHEN_YOU_TELEPORT_TO",
-										export = true,
-										text = {
-											en = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "下一步纯看运气——当你传送到你的职业大厅时，你有（每天一次的）机会触发易爆绵羊刷新。如果它真的为你刷新了，你会看到科特的对话框显示“成功！”——绵羊就站在达拉然传送门旁边，你只需要右键点击它几次让它爆炸。做完之后你会看到另一个对话气泡，这次是极度易爆的风暴海姆绵羊发出“……”的叫声——不知为何你能看到别人的绵羊对话框，所以如果你在守护者大厅看到那一个、而之前并没有做过对怪物绵羊的操作，就说明有人刚在他们的职业大厅里让绵羊爆炸了 :) 如我所说，这一步纯靠运气，所以可能要过一段时间你的绵羊才会刷新（对我来说大约用了三周）。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
 									["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
 									["crs"] = { 111107 },	-- Volatile Sheep
 								}),
@@ -223,24 +104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 						q(43800, {	-- Stormheim Sheep Exploded
 							["name"] = "Stormheim Sheep Exploded",
-							["description"] = createLocalizationString({
-								readable = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
-								constant = "AFTER_THAT_YOU_JUST_NEED_TO_GO_TO_STORMHEIM_IN",
-								export = true,
-								text = {
-									en = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "之后你只需要前往风暴峡湾寻找极度不稳定的风暴峡湾绵羊。它通常刷新在符文林地一带——找到它的最好办法是做一个 /target 宏，前往瓦迪斯达尔，在符文林地周围一边跑一边狂按宏——我甚至不到 2 分钟就拿到了我的绵羊。和前一只一样，点击它几次让它爆炸，这应该会让你从暴怒的不稳定艾尔文绵羊那里得到一声愤怒的咩叫“...”。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
 							["sourceQuests"] = { 43799 },	-- Volatile Sheep
 							["coords"] = {
 								{ 60.0, 55.0, STORMHEIM },
@@ -256,24 +120,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 						q(43658, {	-- Hidden Appearance Unlocked
 							["name"] = "Hidden Appearance Unlocked",
-							["description"] = createLocalizationString({
-								readable = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
-								constant = "NOW_YOU_NEED_TO_GO_TO_THE_TOWER_OF_AZORA_IN",
-								export = true,
-								text = {
-									en = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "现在你需要前往艾尔文森林的阿祖拉之塔。到达那里后，你会看到科特正在与泰奥克里图斯交谈。经过一小段角色扮演后，他会变为敌对，击杀他即可掉落该物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
 							["sourceQuests"] = { 43800 },	-- Extremely Volatile Stormheim Sheep
 							["maps"] = { ELWYNN_FOREST },
 							["crs"] = { 111704 },	-- Cote "Shepherd" Metcalf
@@ -292,48 +139,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(MAGE, FROST, {
 						gt(386, {		-- Teleportation Nexus
-							["description"] = createLocalizationString({
-								readable = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
-								constant = "A_SET_OF_5_PORTALS_IS_GENERATED_IN_THE_CLASS",
-								export = true,
-								text = {
-									en = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "职业大厅中会生成一组 5 个传送门；每天还有很小几率你会被位面转移到霜火岭，在那里可以拾取永燃水晶。当你在职业大厅的楼梯上走动时，一个表情会提示你这一机会。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
 							["groups"] = {
 								n(DAILY_EVENT_ROLL, {
 									["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
 									["isDaily"] = true,
 								}),
 								n(113513, {	-- Asher <Fury of Frostfire>
-									["description"] = createLocalizationString({
-										readable = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
-										constant = "IF_THIS_QUEST_HAS_A_CHECKMARK_NEXT_TO_IT_THEN_6",
-										export = true,
-										text = {
-											en = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "如果这个任务旁边有对勾，那就意味着场景战役传送门已激活。只有通过传送门后，他才会出现在霜火岭的一个特殊阶段中。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
 									["sourceQuest"] = 44384,	-- Daily Portal Event Roll
 									["groups"] = {
 										o(255953, {	-- Everburning Crystal
@@ -581,24 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(42429, {	-- Memories of Ebonchill
-							["description"] = createLocalizationString({
-								readable = "You need to have Ebonchill equipped.",
-								constant = "YOU_NEED_TO_HAVE_EBONCHILL_EQUIPPED",
-								export = true,
-								text = {
-									en = "You need to have Ebonchill equipped.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你需要装备黑檀之寒。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You need to have Ebonchill equipped.",
 							["sourceQuest"] = 42479,	-- The Mage Hunter
 							["provider"] = { "n", 107452 },	-- Old Fillmaff
 							["coord"] = { 53.2, 41.5, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -946,24 +742,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- 7.2.0
 					q(45437, {	-- An Urgent Situation
-						["description"] = createLocalizationString({
-							readable = "Granted immediately upon return to the order hall.",
-							constant = "GRANTED_IMMEDIATELY_UPON_RETURN_TO_THE_ORDER",
-							export = true,
-							text = {
-								en = "Granted immediately upon return to the order hall.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "返回职业大厅后立即获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Granted immediately upon return to the order hall.",
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
 							-- #IF AFTER 7.2.0
@@ -1204,24 +983,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Side Quest: The Great Akazamzarak
 					q(45615, {	-- Finders Keepers
-						["description"] = createLocalizationString({
-							readable = "Must wait for a weekly reset after completing the class mount.",
-							constant = "MUST_WAIT_FOR_A_WEEKLY_RESET_AFTER_COMPLETING",
-							export = true,
-							text = {
-								en = "Must wait for a weekly reset after completing the class mount.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成职业坐骑后必须等待一次每周重置。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must wait for a weekly reset after completing the class mount.",
 						["sourceQuest"] = 45354,	-- Dispersion of the Discs
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["coord"] = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },

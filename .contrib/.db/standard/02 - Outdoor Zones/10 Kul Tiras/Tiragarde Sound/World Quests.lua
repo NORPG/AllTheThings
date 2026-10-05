@@ -244,24 +244,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52145, {	-- Heave-Ho!
-				["description"] = createLocalizationString({
-					readable = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
-					constant = "THIS_WQ_DOESN_T_SHOW_UP_ON_THE_MAP_WHEN_ACTIVE",
-					export = true,
-					text = {
-						en = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此世界任务激活时不会显示在地图上，请标出路径点来找到位置！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
 				["coord"] = { 77.10, 76.25, TIRAGARDE_SOUND },
 				["groups"] = {
 					i(152667),	-- "Sea Dog" Grog (QI!)

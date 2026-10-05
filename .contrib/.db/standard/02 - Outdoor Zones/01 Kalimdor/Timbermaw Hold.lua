@@ -448,24 +448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(28768, {	-- Winterspring!
-					["description"] = createLocalizationString({
-						readable = "Only available above level 40.",
-						constant = "ONLY_AVAILABLE_ABOVE_LEVEL_40",
-						export = true,
-						text = {
-							en = "Only available above level 40.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅限 40 级以上可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available above level 40.",
 					-- ["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
 					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.4, FELWOOD },

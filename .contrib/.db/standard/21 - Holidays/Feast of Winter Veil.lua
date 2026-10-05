@@ -543,24 +543,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				crit(6231, {	-- Brother Karman in Theramore
 					["provider"] = { "n", 8140 },	-- Brother Karman
 					-- #if AFTER MOP
-					["description"] = createLocalizationString({
-						readable = "If Theramore is phased, talk to Zidormi to the west of the city.",
-						constant = "IF_THERAMORE_IS_PHASED_TALK_TO_ZIDORMI_TO_THE",
-						export = true,
-						text = {
-							en = "If Theramore is phased, talk to Zidormi to the west of the city.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果塞拉摩处于位面中，与城市西边的吉多咪交谈。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -644,24 +627,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				crit(6662, {	-- Brother Keltan in Icecrown
 					["provider"] = { "n", 31261 },	-- Brother Keltan
-					["description"] = createLocalizationString({
-						readable = "Located on the horde gunship in the air.",
-						constant = "LOCATED_ON_THE_HORDE_GUNSHIP_IN_THE_AIR",
-						export = true,
-						text = {
-							en = "Located on the horde gunship in the air.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于空中的部落炮舰上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Located on the horde gunship in the air.",
 					["coord"] = { 69.4, 42.4, ICECROWN },
 				}),
 			},
@@ -916,24 +882,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	-- #if AFTER 7.3.0.24727
 	filter(BATTLE_PETS, {
 		petbattle(pet(2114, {	-- Globe Yeti (PET!)
-			["description"] = createLocalizationString({
-				readable = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
-				constant = "THIS_PET_SPAWNS_INSIDE_THE_GLOBE_LOCATED_IN",
-				export = true,
-				text = {
-					en = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "此宠物刷新在奥格瑞玛或铁炉堡的那个球体内部，自 2019 年起其刷新率已大幅提高。同一时间只有一只雪人在。它刷新时会是一只 1-3 级的雪人，而且孤身一只，所以要做好准备。如果你在和别人抢这只宠物时很吃力，可以做一个如下内容的宏：\n\n|cFFFFFFFF/tar globe yeti|r\n\n反复按这个宏，并配合一个|cFFFFFFFF与目标互动|r的按键绑定。\n\n你也可以在战争模式下尝试，因为那时人通常会少一些。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
 			["timeline"] = { ADDED_7_3_0 },
 			["maps"] = {
 				ORGRIMMAR,
@@ -1213,7 +1162,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 			-- #endif
 			i(17712, {	-- Winter Veil Disguise Kit (TOY!)
-				["description"] = "~L.GREATFATHER_WINTER_WILL_MAIL_THIS_TO_YOU_24",
+				["description"] = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 				["sourceQuests"] = {
 					7045,	-- A Smokywood Pastures Thank You! (Alliance)
 					6984,	-- A Smokywood Pastures Thank You! (Horde)
@@ -1294,7 +1243,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8767, {	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
-			["description"] = "~L.GIVEN_PRIOR_TO_2015_EXCLUSIVELY_TO_NON_SPELL",
+			["description"] = "Given prior to 2015 exclusively to non-spell casters.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 21270 },	-- Gently Shaken Gift
@@ -1325,7 +1274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8788, {	-- A Gently Shaken Gift [Spell Casters Only] (Before 2015)
-			["description"] = "~L.GIVEN_PRIOR_TO_2015_EXCLUSIVELY_TO_SPELL",
+			["description"] = "Given prior to 2015 exclusively to spell casters.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 21271 },	-- Gently Shaken Gift
@@ -1356,24 +1305,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(39658, {	-- A Gently Shaken Gift (2015)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2015.",
-				constant = "GIFT_FROM_2015",
-				export = true,
-				text = {
-					en = "Gift from 2015.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2015 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2015.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 128652 },	-- Gently Shaken Gift
@@ -1391,24 +1323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(43364, {	-- A Gently Shaken Gift (2016)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2016.",
-				constant = "GIFT_FROM_2016",
-				export = true,
-				text = {
-					en = "Gift from 2016.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2016 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2016.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 139343 },	-- Gently Shaken Gift
@@ -1426,24 +1341,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(50420, {	-- A Gently Shaken Gift (2017)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2017. You will receive only one faction's Hearthstation. In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
-				constant = "GIFT_FROM_2017_YOU_WILL_RECEIVE_ONLY_ONE",
-				export = true,
-				text = {
-					en = "Gift from 2017. You will receive only one faction's Hearthstation. In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2017 年的礼物。你只会收到一个阵营的炉石站。要获得对立阵营的那个，你需要让该阵营的角色打开这份礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2017. You will receive only one faction's Hearthstation. In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 151345 },	-- Gently Shaken Gift
@@ -1466,24 +1364,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(53011, {	-- A Gently Shaken Gift (2018)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2018.",
-				constant = "GIFT_FROM_2018",
-				export = true,
-				text = {
-					en = "Gift from 2018.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2018 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2018.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 162974 },	-- Gently Shaken Gift
@@ -1501,24 +1382,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(57643, {	-- A Gently Shaken Gift (2019)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2019.",
-				constant = "GIFT_FROM_2019",
-				export = true,
-				text = {
-					en = "Gift from 2019.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2019 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2019.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 172225 },	-- Gently Shaken Gift
@@ -1536,24 +1400,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Gently Shaken Gift (2020)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2020.",
-				constant = "GIFT_FROM_2020",
-				export = true,
-				text = {
-					en = "Gift from 2020.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2020 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2020.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 178529 },	-- Gently Shaken Gift
@@ -1568,24 +1415,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Gently Shaken Gift (2021)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2021.",
-				constant = "GIFT_FROM_2021",
-				export = true,
-				text = {
-					en = "Gift from 2021.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2021 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2021.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 187520 },	-- Gently Shaken Gift
@@ -1600,24 +1430,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(66508, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Gently Shaken Gift (2022)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2022.",
-				constant = "GIFT_FROM_2022",
-				export = true,
-				text = {
-					en = "Gift from 2022.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2022 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2022.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 192093 },	-- Gently Shaken Gift
@@ -1629,24 +1442,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(78504, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Gently Shaken Gift (2023)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2023.",
-				constant = "GIFT_FROM_2023",
-				export = true,
-				text = {
-					en = "Gift from 2023.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2023 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2023.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 210657 },	-- Gently Shaken Gift
@@ -1658,24 +1454,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(80684, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Gently Shaken Gift (2024)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2024.",
-				constant = "GIFT_FROM_2024",
-				export = true,
-				text = {
-					en = "Gift from 2024.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2024 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2024.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 218309 },	-- Gently Shaken Gift
@@ -1693,24 +1472,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(91041, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, "removed 11.2.7.64978" } }, {	-- A Gently Shaken Gift (2025)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2025.",
-				constant = "GIFT_FROM_2025",
-				export = true,
-				text = {
-					en = "Gift from 2025.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2025 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2025.",
 			["providers"] = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 244906 },	-- Gently Shaken Gift
@@ -1796,24 +1558,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		},
 		q(11528, {	-- A Winter Veil Gift (2007)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2007.",
-				constant = "GIFT_FROM_2007",
-				export = true,
-				text = {
-					en = "Gift from 2007.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2007 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2007.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 34426 },	-- Winter Veil Gift
@@ -1835,24 +1580,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(13203, {	-- A Winter Veil Gift (2008)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2008.",
-				constant = "GIFT_FROM_2008",
-				export = true,
-				text = {
-					en = "Gift from 2008.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2008 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2008.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 43504 },	-- Winter Veil Gift
@@ -1874,24 +1602,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(13966, {	-- A Winter Veil Gift (2009)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2009.",
-				constant = "GIFT_FROM_2009",
-				export = true,
-				text = {
-					en = "Gift from 2009.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2009 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2009.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 46740 },	-- Winter Veil Gift
@@ -1906,24 +1617,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(28878, {	-- A Winter Veil Gift (2010)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2010.",
-				constant = "GIFT_FROM_2010",
-				export = true,
-				text = {
-					en = "Gift from 2010.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2010 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2010.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 67443 },	-- Winter Veil Gift
@@ -1939,24 +1633,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(29385, {	-- A Winter Veil Gift (2011)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2011.",
-				constant = "GIFT_FROM_2011",
-				export = true,
-				text = {
-					en = "Gift from 2011.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2011 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2011.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 70938 },	-- Winter Veil Gift
@@ -1972,24 +1649,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(32106, {	-- A Winter Veil Gift (2012)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2012.",
-				constant = "GIFT_FROM_2012",
-				export = true,
-				text = {
-					en = "Gift from 2012.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2012 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2012.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 90892 },	-- Winter Veil Gift
@@ -2008,24 +1668,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(33252, {	-- A Winter Veil Gift (2013)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2013.",
-				constant = "GIFT_FROM_2013",
-				export = true,
-				text = {
-					en = "Gift from 2013.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2013 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2013.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 104319 },	-- Winter Veil Gift
@@ -2041,24 +1684,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(36617, {	-- A Winter Veil Gift (2014)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2014.",
-				constant = "GIFT_FROM_2014",
-				export = true,
-				text = {
-					en = "Gift from 2014.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2014 年的礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2014.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 116761 },	-- Winter Veil Gift
@@ -2074,7 +1700,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(39659, {	-- A Winter Veil Gift (2015)
-			["description"] = "~L.GIFT_FROM_2015",
+			["description"] = "Gift from 2015.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 128653 },	-- Winter Veil Gift
@@ -2090,7 +1716,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(43363, {	-- A Winter Veil Gift (2016)
-			["description"] = "~L.GIFT_FROM_2016",
+			["description"] = "Gift from 2016.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 139341 },	-- Winter Veil Gift
@@ -2106,24 +1732,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(47751, {	-- A Winter Veil Gift (2017)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2017. You will receive only one factions Toy Weapon Set. In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-				constant = "GIFT_FROM_2017_YOU_WILL_RECEIVE_ONLY_ONE_2",
-				export = true,
-				text = {
-					en = "Gift from 2017. You will receive only one factions Toy Weapon Set. In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2017 年的礼物。你只会收到一个阵营的玩具武器套装。要获得对立阵营的那个，你需要让该阵营的角色打开这份礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set. In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 151350 },	-- Winter Veil Gift
@@ -2144,24 +1753,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(52965, {	-- A Winter Veil Gift (2018)
-			["description"] = createLocalizationString({
-				readable = "Gift from 2018. You will receive only one factions Toy Armor Set  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-				constant = "GIFT_FROM_2018_YOU_WILL_RECEIVE_ONLY_ONE",
-				export = true,
-				text = {
-					en = "Gift from 2018. You will receive only one factions Toy Armor Set  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "2018 年的礼物。你只会收到一个阵营的玩具护甲套装。要获得对立阵营的那个，你需要让该阵营的角色打开这份礼物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 162644 },	-- Winter Veil Gift
@@ -2182,7 +1774,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(57642, {	-- A Winter Veil Gift (2019)
-			["description"] = "~L.GIFT_FROM_2019",
+			["description"] = "Gift from 2019.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 172224 },	-- Winter Veil Gift
@@ -2203,7 +1795,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Winter Veil Gift (2020)
-			["description"] = "~L.GIFT_FROM_2020",
+			["description"] = "Gift from 2020.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 178528 },	-- Winter Veil Gift
@@ -2216,7 +1808,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Winter Veil Gift (2021)
-			["description"] = "~L.GIFT_FROM_2021",
+			["description"] = "Gift from 2021.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 187561 },	-- Winter Veil Gift
@@ -2229,7 +1821,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(66507, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Winter Veil Gift (2022)
-			["description"] = "~L.GIFT_FROM_2022",
+			["description"] = "Gift from 2022.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 192094 },	-- Winter Veil Gift
@@ -2242,7 +1834,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(78131, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
-			["description"] = "~L.GIFT_FROM_2023",
+			["description"] = "Gift from 2023.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 209871 },	-- Winter Veil Gift
@@ -2255,7 +1847,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(80685, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Winter Veil Gift (2024)
-			["description"] = "~L.GIFT_FROM_2024",
+			["description"] = "Gift from 2024.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 218311 },	-- Winter Veil Gift
@@ -2269,7 +1861,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		})),
 		q(91042, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" } }, {	-- A Winter Veil Gift (2025)
-			["description"] = "~L.GIFT_FROM_2025",
+			["description"] = "Gift from 2025.",
 			["providers"] = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 244908 },	-- Winter Veil Gift
@@ -2480,7 +2072,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8860, {	-- New Year Celebrations! (Alliance)
-			["description"] = "~L.THIS_QUEST_IS_ONLY_AVAILABLE_ON_DECEMBER_31",
+			["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
 			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			["maps"] = {
 				-- #if AFTER WRATH
@@ -2511,7 +2103,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8861, {	-- New Year Celebrations! (Horde)
-			["description"] = "~L.THIS_QUEST_IS_ONLY_AVAILABLE_ON_DECEMBER_31",
+			["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
 			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			["maps"] = {
 				-- #if AFTER WRATH
@@ -2745,7 +2337,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8827,{	-- Winter's Presents [A]
-			["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_AFTER_THE_25TH",
+			["description"] = "This quest becomes available after the 25th.",
 			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			["maps"] = {
 				-- #if AFTER WRATH
@@ -2769,7 +2361,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["isYearly"] = true,
 		}),
 		q(8828, {	-- Winter's Presents [H]
-			["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_AFTER_THE_25TH",
+			["description"] = "This quest becomes available after the 25th.",
 			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			["maps"] = {
 				-- #if AFTER WRATH
@@ -2881,24 +2473,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				i(149503, {	-- Stolen Gift
-					["description"] = createLocalizationString({
-						readable = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items thus it is not worth farming.",
-						constant = "THIS_GIFT_IS_GRANTED_TO_ANY_PLAYER_BELOW_MAX",
-						export = true,
-						text = {
-							en = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items thus it is not worth farming.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "任何未满级的玩家都会获得此礼物。此礼物不会掉落任何稀有的季节性物品，因此不值得去刷。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items thus it is not worth farming.",
 					["timeline"] = { ADDED_7_2_5, REMOVED_11_0_5 },	-- Danny Donkey: Stolen Present (116762) is rewarded in it's place with TWW, making it unobtainable.
 					["lvl"] = {
 						-- #if AFTER SL
@@ -2928,24 +2503,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(116762, {	-- Stolen Present
 					["timeline"] = { ADDED_6_0_2 },
 					-- #if AFTER TWW
-					["description"] = createLocalizationString({
-						readable = "This gift is granted to any characters completing the daily quest, which requires lvl 30.",
-						constant = "THIS_GIFT_IS_GRANTED_TO_ANY_CHARACTERS",
-						export = true,
-						text = {
-							en = "This gift is granted to any characters completing the daily quest, which requires lvl 30.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "任何完成该日常任务的角色都会获得此礼物，该任务需要 30 级。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This gift is granted to any characters completing the daily quest, which requires lvl 30.",
 					-- #endif
 					["lvl"] = {
 						-- #if AFTER TWW
@@ -3025,7 +2583,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	-- #endif
 	n(VENDORS, {
 		n(COMMON_VENDOR_ITEMS, {
-			["description"] = "~L.THESE_ITEMS_CAN_BE_FOUND_ON_ANY_OF_THE_HOLIDAY",
+			["description"] = "These items can be found on any of the holiday vendors.",
 			["crs"] = {
 				13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				13420,	-- Penney Copperpinch <Smokywood Pastures>
@@ -3164,24 +2722,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["timeline"] = { ADDED_6_2_2 },
 				}),
 				i(128668, {	-- Festive Outfits
-					["description"] = createLocalizationString({
-						readable = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
-						constant = "THIS_BECOMES_UN_SAVED_IF_YOU_REMOVE_THE",
-						export = true,
-						text = {
-							en = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "即使装饰仍保持解锁状态，只要你移除装饰，这就会变为未保存。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
 					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
@@ -3276,7 +2817,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 	}),
 	n(15760, {	-- Winter Reveler
-		["description"] = "~L.TYPE_KISS_WHILE_TARGETING_ANY_WINTER_REVELER_TO",
+		["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
 		["crs"] = {
 			-- #if AFTER TBC
 			22998,	-- Blood Elf Female Winter Reveler

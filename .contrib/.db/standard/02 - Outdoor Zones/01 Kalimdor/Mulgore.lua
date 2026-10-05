@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
-									["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+									["description"] = "You must keep this in your bags forever.",
 									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
@@ -1082,24 +1082,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(14087, {	-- Learn to Ride in Mulgore
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_5",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在牛头人达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["races"] = { TAUREN },
@@ -1187,7 +1170,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(7663, {	-- New Kodo - Green
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3685,	-- Harb Clawhoof
 					["coords"] = {
 						-- #if AFTER CATA
@@ -1204,7 +1187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 				}),
 				q(7662, {	-- New Kodo - Teal
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3685,	-- Harb Clawhoof
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2032,7 +2015,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
-					["description"] = "~L.YOU_CAN_TAME_HIM_AND_YOU_STILL_GET_THE_RUNE",
+					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 36.0, 57.0, MULGORE },
 					["cost"] = { { "i", 205961, 1 } },	-- Mulgore Bird Meat
 					["groups"] = {
@@ -2090,7 +2073,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205700, {	-- Venture Co. Poacher
 					["provider"] = { "n", 205692 },	-- Rustling Bush
-					["description"] = "~L.CAST_HUNTER_S_MARK_ON_THE_BUSH_TO_SPAWN_THE",
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
 					["coord"] = { 59.0, 54.6, MULGORE },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -2205,7 +2188,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
-					["description"] = "~L.THESE_ARE_RANDOM_SPAWN_TOTEMS_ON_THE_GROUND",
+					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
 					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
 					["coords"] = {
 						{ 54.07, 55.82, MULGORE },
@@ -2220,24 +2203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
-					["description"] = createLocalizationString({
-						readable = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
-						constant = "CAST_MOONFIRE_ON_EACH_OF_THE_LUNAR_STONES_TO",
-						export = true,
-						text = {
-							en = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对每块月石施放月火术，即可在附近刷新出月光宝箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
 					["providers"] = {
 						{ "n", 207577 },	-- Lunar Stone
 						{ "o", 404433 },	-- Lunar Chest
@@ -2301,24 +2267,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>
-					["description"] = createLocalizationString({
-						readable = "Use the musk and tame a prairie dog and then bring it to Takoda.",
-						constant = "USE_THE_MUSK_AND_TAME_A_PRAIRIE_DOG_AND_THEN",
-						export = true,
-						text = {
-							en = "Use the musk and tame a prairie dog and then bring it to Takoda.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用麝香并驯服一只草原土拨鼠，然后把它带给塔科达。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the musk and tame a prairie dog and then bring it to Takoda.",
 					["coord"] = { 46.2, 60.6, MULGORE },
 					["cost"] = { { "i", 205995, 1 } },	-- Prairie Dog Musk
 					["crs"] = { 2620 },	-- Prairie Dog
@@ -2400,45 +2349,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206469, {	-- Prairie Flower
-					["description"] = createLocalizationString({
-						readable = "These are scattered throughout the zone.",
-						constant = "THESE_ARE_SCATTERED_THROUGHOUT_THE_ZONE",
-						export = true,
-						text = {
-							en = "These are scattered throughout the zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这些散布在该区域各处。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These are scattered throughout the zone.",
 					["provider"] = { "o", 403718 },	-- Prairie Flower
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-					["description"] = createLocalizationString({
-						readable = "This can drop from any of the Rare Creatures in the zone.",
-						constant = "THIS_CAN_DROP_FROM_ANY_OF_THE_RARE_CREATURES_IN",
-						export = true,
-						text = {
-							en = "This can drop from any of the Rare Creatures in the zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品可由该区域的任意稀有生物掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coord"] = { 51.8, 20.0, MULGORE },
 					["classes"] = { HUNTER },
 					["cr"] = 3058,	-- Arra'chea
@@ -2447,7 +2362,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-					["description"] = "~L.THIS_CAN_DROP_FROM_ANY_OF_THE_RARE_CREATURES_IN",
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coord"] = { 30.8, 61.6, MULGORE },
 					["classes"] = { WARRIOR },
 					["cr"] = 207515,	-- Lurkmane

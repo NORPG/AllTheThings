@@ -42,24 +42,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3 } }, {
 			q(10831, {	-- Becoming a Mooncloth Tailor
-				["description"] = createLocalizationString({
-					readable = "Upon finishing this quest, you will become a Mooncloth Tailor.",
-					constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_8",
-					export = true,
-					text = {
-						en = "Upon finishing this quest, you will become a Mooncloth Tailor.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成此任务后，你将成为一名月布裁缝。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
 				["altQuests"] = {
 					-- 10831,	-- Becoming a Mooncloth Tailor
 					10833,	-- Becoming a Shadoweave Tailor
@@ -86,24 +69,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			q(10833, {	-- Becoming a Shadoweave Tailor
-				["description"] = createLocalizationString({
-					readable = "Upon finishing this quest, you will become a Shadoweave Tailor.",
-					constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_9",
-					export = true,
-					text = {
-						en = "Upon finishing this quest, you will become a Shadoweave Tailor.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成此任务后，你将成为一名暗影裁缝。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
 				["altQuests"] = {
 					10831,	-- Becoming a Mooncloth Tailor
 					-- 10833,	-- Becoming a Shadoweave Tailor
@@ -123,24 +89,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			q(10832, {	-- Becoming a Spellfire Tailor
-				["description"] = createLocalizationString({
-					readable = "Upon finishing this quest, you will become a Spellfire Tailor.",
-					constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_10",
-					export = true,
-					text = {
-						en = "Upon finishing this quest, you will become a Spellfire Tailor.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成此任务后，你将成为一名魔焰裁缝。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
 				["altQuests"] = {
 					10831,	-- Becoming a Mooncloth Tailor
 					10833,	-- Becoming a Shadoweave Tailor
@@ -198,7 +147,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		n(QUESTS, {
 			q(36236, {	-- The Cryptic Tome of Tailoring
-				["description"] = "~L.THIS_ITEM_CAN_DROP_FROM_ANY_DRAENOR_MOB",
+				["description"] = "This item can drop from any Draenor mob.",
 				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
 				["timeline"] = { ADDED_6_0_2 },
 				["maps"] = {
@@ -213,7 +162,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36301, {	-- Trega's Tailoring Kit
-				["description"] = "~L.THIS_ITEM_CAN_DROP_FROM_ANY_DRAENOR_MOB",
+				["description"] = "This item can drop from any Draenor mob.",
 				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
 				["timeline"] = { ADDED_6_0_2 },
 				["maps"] = {
@@ -808,24 +757,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 		header(HEADERS.Item, 164733, {	-- Synchronous Thread
-			["description"] = createLocalizationString({
-				readable = "This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",
-				constant = "THIS_TRADER_HAS_A_20_CHANCE_TO_SPAWN_FROM",
-				export = true,
-				text = {
-					en = "This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "此商人有约 20% 的几率在通过同步之线（争霸艾泽拉斯裁缝专属物品）关闭时光裂隙时刷新。\n刷时光裂隙的最佳区域是纳沙塔尔。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",
 			["providers"] = {
 				{ "i", 164733 },	-- Synchronous Thread
 				{ "n", 151903 },	-- Time-Lost Trader
@@ -963,24 +895,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 		n(QUESTS, {
 			q(72249, {	-- Dragon Isles Tailoring
-				["description"] = createLocalizationString({
-					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
-					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_11",
-					export = true,
-					text = {
-						en = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务只能在学会巨龙群岛裁缝之前接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
 				["provider"] = { "n", 192565 },	-- Zayn Starmaker <Tailoring Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -989,7 +904,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			q(70366, {	-- Dragon Isles Tailoring
-				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_11",
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
 				["provider"] = { "n", 191894 },	-- Krillonn
 				["coord"] = { 61.3, 70.1, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -1005,24 +920,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 			q(70260, {	-- Hidden Profession Master Tailoring
 				["name"] = "Hidden Profession Master: Tailoring",
-				["description"] = createLocalizationString({
-					readable = "Above the Rostrum of Transformation, on a ledge.",
-					constant = "ABOVE_THE_ROSTRUM_OF_TRANSFORMATION_ON_A_LEDGE",
-					export = true,
-					text = {
-						en = "Above the Rostrum of Transformation, on a ledge.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在转化讲坛上方的一处岩台上。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Above the Rostrum of Transformation, on a ledge.",
 				["provider"] = { "n", 194845 },	-- Elysa Raywinder
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
 			}),
@@ -1045,7 +943,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			},
 		},{
 			q(66953, {	-- All Things Fluffy
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -1053,7 +951,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			q(66899, {	-- Fuzzy Legs
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil <Requisitions Officer>
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -1061,7 +959,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			q(72410, {	-- Pincers and Needles
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["groups"] = {
@@ -1069,12 +967,12 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			q(70595, {	-- Tailoring Services Requested
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66952, {	-- The Gnoll's Clothes
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["groups"] = {
@@ -1084,22 +982,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 
 			-- Requires 45 Skill
 			q(70587, {	-- A Knapsack Problem
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 			}),
 			q(70586, {	-- Sew Many Cooks
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 			}),
 			q(70572, {	-- The Cold Does Bother Them, Actually
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 			}),
 			q(70582, {	-- Weave Well Enough Alone
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 			}),
@@ -1139,7 +1037,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.TAILORING, 1 }}, }, {
 				r(376556),	-- Azureweave Bolt
 				r(376502),	-- Azureweave Mantle
@@ -1169,24 +1067,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			})),
 			o(380763, {	-- Ancient Dragonweave Loom
-				["description"] = createLocalizationString({
-					readable = "Interact with the loom and complete the minigame to be awared this treasure.",
-					constant = "INTERACT_WITH_THE_LOOM_AND_COMPLETE_THE",
-					export = true,
-					text = {
-						en = "Interact with the loom and complete the minigame to be awared this treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与织布机互动并完成小游戏以获得这个宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Interact with the loom and complete the minigame to be awared this treasure.",
 				["questID"] = 70372,
 				["coord"] = { 58.6, 45.8, THALDRASZUS },
 				["groups"] = {
@@ -1266,24 +1147,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["groups"] = { i(198688) },	-- Catnip Leaf
 			}),
 			o(380608, {	-- Silky Surprise
-				["description"] = createLocalizationString({
-					readable = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
-					constant = "INTERACT_WITH_THE_CATNIP_FROND_GATHER_5_CATNIP",
-					export = true,
-					text = {
-						en = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与猫薄荷叶互动，采集 5 片猫薄荷叶并扔向顽皮的徘徊者。然后宝藏就会出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
 				["questID"] = 70303,
 				["coord"] = { 66.1, 52.9, OHNAHRAN_PLAINS },
 				["crs"] = { 194873 },	-- Playful Prowler
@@ -1314,7 +1178,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			i(198609),	-- Tailoring Examples
 			q(74115, {	-- DF Inscription Order: Tailoring
 				["name"] = "DF Inscription Order: Tailoring",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
 			}),
 			q(66386, {	-- DF Weekly Tailoring Knowledgepoint #1
@@ -1327,24 +1191,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 			q(70525, {	-- DF Weekly Tailoring Knowledgepoint #3
 				["name"] = "DF Tailoring Drop #1: Beast Humanoid",
-				["description"] = createLocalizationString({
-					readable = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_BEASTLIKE_HUMANOID_COORDINATES",
-					export = true,
-					text = {
-						en = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任意类野兽的人型生物掉落。\n坐标指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198978 },	-- Stupidly Effective Stitchery
 				["coords"] = {
 					{ 56.6, 29.2, THALDRASZUS },
@@ -1357,24 +1204,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 			q(70524, {	-- DF Weekly Tailoring Knowledgepoint #4
 				["name"] = "DF Tailoring Drop #2: Ohn'ahran Humanoid",
-				["description"] = createLocalizationString({
-					readable = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_OHN_AHRAN_HUMANOID_COORDINATES",
-					export = true,
-					text = {
-						en = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任意欧恩哈拉人型生物掉落。\n坐标指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
 				["coords"] = {
 					{ 87.0, 51.4, OHNAHRAN_PLAINS },
@@ -1429,7 +1259,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }} }, {
 				r(446940),	-- Consecrated Cloak
 				r(446939),	-- Consecrated Cord
@@ -1525,7 +1355,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			i(228779),	-- Algari Tailor's Notebook
 			q(83735, {	-- TWW Inscription Order: Tailoring
 				["name"] = "TWW Inscription Order: Tailoring",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
 			}),
 			q(83270, {	-- TWW Weekly Tailoring Knowledgepoint #1
@@ -1603,7 +1433,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.TAILORING, 1 }} }, {
 				r(1228950),	-- Adherent's Silken Shroud
 				r(1227926),	-- Arcanoweave Bolt
@@ -1691,7 +1521,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			i(263460),	-- Thalassian Tailor's Notebook
 			q(95137, {	-- MID Inscription Order: Tailoring
 				["name"] = "MID Inscription Order: Tailoring",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 245756 },	-- Thalassian Treatise on Tailoring
 			}),
 			q(93543, {	-- MID Weekly Tailoring Knowledgepoint #1

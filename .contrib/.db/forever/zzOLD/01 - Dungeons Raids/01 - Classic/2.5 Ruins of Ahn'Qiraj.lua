@@ -776,24 +776,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				})),
 			}),
 			o(180691, {	-- Scarab Coffer
-				["description"] = createLocalizationString({
-					readable = "These can be found along the walls of the instance and require a coffer key to open.",
-					constant = "THESE_CAN_BE_FOUND_ALONG_THE_WALLS_OF_THE",
-					export = true,
-					text = {
-						en = "These can be found along the walls of the instance and require a coffer key to open.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些可以在副本的墙边找到，需要一把宝箱钥匙才能打开。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These can be found along the walls of the instance and require a coffer key to open.",
 				["cost"] = {
 					-- #if BEFORE 4.3.0
 					{ "i", 21761, 1 },	-- Scarab Coffer Key [pre-4.3]
@@ -811,24 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(20867),	-- Onyx Idol
 					i(20872),	-- Vermillion Idol
 					i(21156, {	-- Scarab Bag
-						["description"] = createLocalizationString({
-							readable = "Contains a couple of random scarabs.",
-							constant = "CONTAINS_A_COUPLE_OF_RANDOM_SCARABS",
-							export = true,
-							text = {
-								en = "Contains a couple of random scarabs.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "包含几个随机的圣甲虫。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains a couple of random scarabs.",
 					}),
 				},
 			}),
@@ -854,24 +820,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				},
 			}),
 			n(15471, {	-- Lieutenant General Andorov
-				["description"] = createLocalizationString({
-					readable = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
-					constant = "IN_ORDER_TO_INTERACT_WITH_THIS_VENDOR_YOU_MUST",
-					export = true,
-					text = {
-						en = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要与此商人互动，你必须先与他交谈以开始与拉贾克斯将军的战斗，并让他在各波敌人结束后至少对首领命中一次。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
 				["groups"] = {
 					i(22219, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
@@ -885,24 +834,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			e(1538, {	-- General Rajaxx
 				-- #if BEFORE TBC
-				["description"] = createLocalizationString({
-					readable = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
-					constant = "SPEAK_WITH_LIEUTENANT_GENERAL_ANDOROV_IN_ORDER",
-					export = true,
-					text = {
-						en = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与安德罗夫中将交谈以开始战斗。必须让安德罗夫在战斗中存活，才能通过这场战斗。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
 				-- #endif
 				["creatureID"] = 15341,
 				["groups"] = {
@@ -957,24 +889,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					i(21482, {	-- Boots of the Fiery Sands
 						-- #if BEFORE 10.1.
-						["description"] = createLocalizationString({
-							readable = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
-							constant = "THIS_ITEM_WAS_ORIGINALLY_A_HORDE_EXCLUSIVE_DROP",
-							export = true,
-							text = {
-								en = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该物品最初是经典旧世时期部落萨满专有的掉落。在 TBC 前夕补丁之后的某个时间，该物品从掉落列表中消失了。如果你打出了它，请 @Crieve。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
 						-- #if AFTER 2.0.1
 						["isBounty"] = true,
 						-- #else
@@ -1578,7 +1493,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15471, {	-- Lieutenant General Andorov
-					["description"] = "~L.IN_ORDER_TO_INTERACT_WITH_THIS_VENDOR_YOU_MUST",
+					["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
 					["groups"] = {
 						applyclassicphase(SOD_PHASE_SIX, i(234458, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 							["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
@@ -1593,7 +1508,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				e(1538, {	-- General Rajaxx
-					["description"] = "~L.SPEAK_WITH_LIEUTENANT_GENERAL_ANDOROV_IN_ORDER",
+					["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
 					["creatureID"] = 15341,
 					["groups"] = {
 						n(CAPTAINS, {

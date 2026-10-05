@@ -214,24 +214,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 		}),
 		n(REWARDS, {
 			i(20393, {	-- Treat Bag
-				["description"] = createLocalizationString({
-					readable = "Get this by Trick or Treating at any Innkeeper.",
-					constant = "GET_THIS_BY_TRICK_OR_TREATING_AT_ANY_INNKEEPER",
-					export = true,
-					text = {
-						en = "Get this by Trick or Treating at any Innkeeper.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在任何旅店老板处进行“不给糖就捣蛋”即可获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Get this by Trick or Treating at any Innkeeper.",
 				["sym"] = {
 					{ "selectparent" },	-- Select the "Rewards" header.
 					{ "pop" },	-- Get the Rewards.

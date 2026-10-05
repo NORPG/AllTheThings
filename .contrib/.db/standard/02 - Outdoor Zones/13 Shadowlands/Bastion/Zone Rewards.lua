@@ -5,24 +5,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(ZONE_REWARDS, {
-			["description"] = createLocalizationString({
-				readable = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
-				constant = "THESE_ITEMS_CAN_DROP_FROM_REPEATABLE_TREASURE",
-				export = true,
-				text = {
-					en = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些物品可以从可重复的宝箱中掉落，有时也会由世界任务或任务桌任务奖励。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 			["groups"] = {
 				i(181721),	-- Ascendant Valor Signet
 				i(181603),	-- Forgehand's Chain

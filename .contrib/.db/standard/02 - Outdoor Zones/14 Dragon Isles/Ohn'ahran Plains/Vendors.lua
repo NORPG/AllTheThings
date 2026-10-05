@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(OHNAHRAN_PLAINS, {
 		n(VENDORS, {
 			n(192818, {	-- Elder Yusa
-				["description"] = createLocalizationString({
-					readable = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
-					constant = "TARGET_THIS_NPC_AND_HUNGRY_EMOTE_MAY_HAVE_TO_DO",
-					export = true,
-					text = {
-						en = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "选中该 NPC 并使用 /饥饿 表情。可能需要做两次——第一次她可能只是回个表情，不会给你任何东西。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
 				["coord"] = { 41.6, 62.2, OHNAHRAN_PLAINS },
 				["groups"] = {
 					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
@@ -49,24 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(192997, {	-- Ludo
-				["description"] = createLocalizationString({
-					readable = "Pet!",
-					constant = "PET_2",
-					export = true,
-					text = {
-						en = "Pet!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "宠物！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Pet!",
 				["coord"] = { 61.7, 41.0, OHNAHRAN_PLAINS },
 				["groups"] = {
 					i(195453),	-- Ludo's Stash Map (CI!)

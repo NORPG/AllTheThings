@@ -4,24 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_LOREWALKERS, {
-		["description"] = createLocalizationString({
-			readable = "The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",
-			constant = "THE_LOREWALKERS_ARE_A_PANDAREN_FACTION_BENT_ON",
-			export = true,
-			text = {
-				en = "The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "博学者是一个致力于探索世界、寻找故事、器物和遗物来充实其藏书的熊猫人阵营。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",
 		["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		["icon"] = 645218,
 		["lvl"] = lvlsquish(85, 85, 10),
@@ -59,24 +42,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 			}),
 			n(MAILBOX, {
-				["description"] = createLocalizationString({
-					readable = "The following will be mailed to you upon completion of respective achievements.",
-					constant = "THE_FOLLOWING_WILL_BE_MAILED_TO_YOU_UPON",
-					export = true,
-					text = {
-						en = "The following will be mailed to you upon completion of respective achievements.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "以下内容会在你完成相应成就后邮寄给你。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The following will be mailed to you upon completion of respective achievements.",
 				["groups"] = {
 					i(83076, {	-- Between a Saurok and a Hard Place (A)
 						["sourceAchievement"] = 6716,	-- Between a Saurok and a Hard Place

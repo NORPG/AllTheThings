@@ -653,7 +653,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(936, {	-- Shattrath City
-						["description"] = "~L.THIS_IS_A_HIDDEN_REPUTATION_IT_MIGHT_NOT_COUNT",
+						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 						["collectible"] = false,
 					}),
 					faction(FACTION_LOWER_CITY, {	-- Lower City
@@ -684,24 +684,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
 						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-						["description"] = createLocalizationString({
-							readable = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-							constant = "MORULU_S_PETS_ARE_LEVEL_23_OF_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "莫鲁鲁的宠物是 23 级，按以下连续宠物类别：\n1. 水生 - 使用飞行（强力）或魔法（耐打）宠物。\n2. 水生 - 见上。\n3. 水生 - 见上。\n\n若要计入“一次糟糕的大冒险”，请使用雷象毛绒玩具和两只强力宠物组队作战。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 23,
 						["groups"] = {
@@ -838,24 +821,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 29426, 10 } },	-- Firewing Signet
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11875, {	-- Gaining the Advantage
-						["description"] = createLocalizationString({
-							readable = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-							constant = "THIS_DAILY_QUEST_IS_ONLY_AVAILABLE_TO",
-							export = true,
-							text = {
-								en = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此日常任务只对有草药学、采矿或剥皮的角色开放。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 						["qg"] = 19202,	-- Emissary Mordin
 						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["maps"] = { BLADES_EDGE_MOUNTAINS, HELLFIRE_PENINSULA, ISLE_OF_QUELDANAS, NAGRAND, NETHERSTORM, SHADOWMOON_VALLEY, TEROKKAR_FOREST, ZANGARMARSH },
@@ -965,24 +931,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					}),
 					q(10025, {	-- More Basilisk Eyes
-						["description"] = createLocalizationString({
-							readable = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
-							constant = "IF_YOU_WANT_TO_SWITCH_FROM_ALDOR_TO_SCRYERS_USE",
-							export = true,
-							text = {
-								en = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你想从奥尔多转投占星者，可以使用此任务找回失去的占星者声望。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["sourceQuest"] = 10024,	-- Voren'thal's Visions
 						["qg"] = 18596,	-- Arcanist Adyria
 						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
@@ -1041,24 +990,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 					}),
 					q(10019, {	-- More Venom Sacs
-						["description"] = createLocalizationString({
-							readable = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
-							constant = "IF_YOU_WANT_TO_SWITCH_FROM_SCRYERS_TO_ALDOR_USE",
-							export = true,
-							text = {
-								en = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你想从占星者转投奥尔多，可以使用此任务找回失去的奥尔多声望。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["sourceQuest"] = 10017,	-- Strained Supplies
 						["qg"] = 18597,	-- Sha'nir
 						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
@@ -1199,7 +1131,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10017, {	-- Strained Supplies
-						["description"] = "~L.IF_YOU_WANT_TO_SWITCH_FROM_SCRYERS_TO_ALDOR_USE",
+						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["qg"] = 18597,	-- Sha'nir
 						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
@@ -1313,7 +1245,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10024, {	-- Voren'thal's Visions
-						["description"] = "~L.IF_YOU_WANT_TO_SWITCH_FROM_ALDOR_TO_SCRYERS_USE",
+						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["qg"] = 18596,	-- Arcanist Adyria
 						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
@@ -1616,24 +1548,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10231, {	-- What Book? I Don't See Any Book.
-						["description"] = createLocalizationString({
-							readable = "Walks around the |cFFFFD700Terrace of Light|r.",
-							constant = "WALKS_AROUND_THE_CFFFFD700TERRACE_OF_LIGHT_R",
-							export = true,
-							text = {
-								en = "Walks around the |cFFFFD700Terrace of Light|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在|cFFFFD700圣光露台|r周围走动。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Walks around the |cFFFFD700Terrace of Light|r.",
 						["sourceQuest"] = 10228,	-- Ezekiel
 						["qg"] = 19715,	-- Ezekiel
 						["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
@@ -2295,24 +2210,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(19186, {	-- Kylene <Barmaid>
-						["description"] = createLocalizationString({
-							readable = "Speak to her and tell her she's quite the cook to learn these recipes.",
-							constant = "SPEAK_TO_HER_AND_TELL_HER_SHE_S_QUITE_THE_COOK",
-							export = true,
-							text = {
-								en = "Speak to her and tell her she's quite the cook to learn these recipes.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与她交谈，夸赞她厨艺了得，即可学会这些配方。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Speak to her and tell her she's quite the cook to learn these recipes.",
 						["coord"] = { 75.6, 32.6, SHATTRATH_CITY },
 						["groups"] = applyclassicphase(TBC_PHASE_TWO, sharedData({ ["requireSkill"] = COOKING, ["timeline"] = { ADDED_2_1_2, REMOVED_4_0_1} }, {
 							recipe(42302),	-- Fisherman's Feast (RECIPE!)
@@ -2354,24 +2252,7 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
-						["description"] = createLocalizationString({
-							readable = "She will only sell these recipes to those who have completed the quests that reward them.",
-							constant = "SHE_WILL_ONLY_SELL_THESE_RECIPES_TO_THOSE_WHO",
-							export = true,
-							text = {
-								en = "She will only sell these recipes to those who have completed the quests that reward them.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "她只会把配方卖给已完成相应奖励任务的玩家。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.",
 						["coord"] = { 64.2, 71.4, SHATTRATH_CITY },
 						["timeline"] = { ADDED_7_1_0 },
 						["groups"] = sharedData({ ["timeline"] = { ADDED_7_1_5} }, {

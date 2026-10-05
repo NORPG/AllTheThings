@@ -64,45 +64,11 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				}),
 			}),
 			n(TREASURES, {
-				["description"] = createLocalizationString({
-					readable = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
-					constant = "CONTAINS_DREAD_ASPIRANT_GEAR_IF_YOU_ARE_LEVEL",
-					export = true,
-					text = {
-						en = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "内含恐惧志士装备（等级 10-49）或邪恶志士装备（等级 50）。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 			}),
 			n(QUESTS, {
 				q(58274, {	-- Servant of N'Zoth
-					["description"] = createLocalizationString({
-						readable = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
-						constant = "GRANTED_UPON_KILLING_10_HORDE_PLAYERS_WITHOUT",
-						export = true,
-						text = {
-							en = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你成为刺客后，不死亡并击杀 10 名部落玩家即可获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_12_1_0 },
 					["groups"] = {
@@ -112,24 +78,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					},
 				}),
 				q(58273, {	-- Servant of N'Zoth
-					["description"] = createLocalizationString({
-						readable = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
-						constant = "GRANTED_UPON_KILLING_10_ALLIANCE_PLAYERS",
-						export = true,
-						text = {
-							en = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你成为刺客后，不死亡并击杀 10 名联盟玩家即可获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_12_1_0 },
 					["groups"] = {
@@ -302,31 +251,14 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			}),
 			n(QUESTS, {
 				q(71143, {	-- The Horde Slayer
-					["description"] = createLocalizationString({
-						readable = "If you die while on the quest, and are resurrected you will continue gaining credit.",
-						constant = "IF_YOU_DIE_WHILE_ON_THE_QUEST_AND_ARE",
-						export = true,
-						text = {
-							en = "If you die while on the quest, and are resurrected you will continue gaining credit.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你在任务期间死亡，复活后仍会继续获得进度。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you die while on the quest, and are resurrected you will continue gaining credit.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						title(375),	-- <Name> the Horde Slayer
 					},
 				}),
 				q(71144, {	-- The Alliance Slayer
-					["description"] = "~L.IF_YOU_DIE_WHILE_ON_THE_QUEST_AND_ARE",
+					["description"] = "If you die while on the quest, and are resurrected you will continue gaining credit.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						title(376),	-- <Name> the Alliance Slayer
@@ -423,24 +355,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					["groups"] = { currency(HONOR) },
 				}),
 				o(441108, {	-- Unbound Spoils
-					["description"] = createLocalizationString({
-						readable = "Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",
-						constant = "SPAWNS_ONCE_PER_ROTATION_IN_THE_MATCHING_ZONE",
-						export = true,
-						text = {
-							en = "Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "每次轮换中，会在与暗影界 PvP 世界任务所在区域相对应的区域里刷新一次。该任务激活期间，刷新随时都可能发生。\n炽蓝仙野 -> 多恩岛\n玛卓克萨斯 -> 陨圣峪\n雷文德斯 -> 艾基-卡赫特\n晋升堡垒 -> 喧鸣深窟。\n箱子被打开后的几分钟内，双方阵营的许多玩家都能拾取。实在没必要为此争斗。:)",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",
 					["coords"] = {
 						{ 44.6, 85.3, 2213 },	-- Azj-Kahet (City of Threads)
 						{ 38.5, 35.0, HALLOWFALL },

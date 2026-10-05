@@ -6,24 +6,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 		header(HEADERS.Achievement, 10671, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
-			["description"] = createLocalizationString({
-				readable = "These are gained by boosting a character to Level 110. Each class has one default spec except Shamans, Druids and Hunters.",
-				constant = "THESE_ARE_GAINED_BY_BOOSTING_A_CHARACTER_TO",
-				export = true,
-				text = {
-					en = "These are gained by boosting a character to Level 110. Each class has one default spec except Shamans, Druids and Hunters.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些是通过将角色直升到 110 级获得的。除萨满、德鲁伊和猎人外，每个职业都有一个默认专精。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These are gained by boosting a character to Level 110. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 110,
 			["groups"] = {
 				n(RELICS, {

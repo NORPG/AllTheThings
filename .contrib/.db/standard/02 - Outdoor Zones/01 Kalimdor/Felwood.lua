@@ -48,24 +48,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(500, {	-- Minfernal (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found around Shatter Scar Vale near Infernal Sentries.",
-							constant = "CAN_BE_FOUND_AROUND_SHATTER_SCAR_VALE_NEAR",
-							export = true,
-							text = {
-								en = "Can be found around Shatter Scar Vale near Infernal Sentries.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在碎痕谷周围、地狱火哨兵附近找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",
 					}),
 					pet(497),	-- Tainted Cockroach (PET!)
 					pet(498),	-- Tainted Moth (PET!)
@@ -139,14 +122,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE 4.0.3
 			prof(HERBALISM, {
 				i(11514, {	-- Fel Creep
-					["description"] = "~L.IN_ORDER_FOR_THIS_TO_DROP_WHILE_HERBING_YOU",
+					["description"] = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			}),
 			prof(MINING, {
 				i(11513, {	-- Tainted Vitriol
-					["description"] = "~L.IN_ORDER_FOR_THIS_TO_DROP_WHILE_MINING_YOU_MUST",
+					["description"] = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
@@ -155,24 +138,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66442, {	-- Zoltan <Master Pet Tamer>
 					["coord"] = { 40.0, 56.6, FELWOOD },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_THOUGH_ALLIANCE_2",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落，不过联盟玩家可以在完成联盟版任务“宠物对战训练师：卡利姆多”时与他们对战一次。\n\nZoltan 的宠物为 16 级，三个宠物的类别依次为：\n1. 机械 - 使用元素（强力且耐打）宠物。\n2. 魔法 - 使用龙类（强力）或机械（耐打）宠物。\n3. 魔法 - 同上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 16,
 					["groups"] = {
@@ -535,7 +501,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(11511, {	-- Cenarion Beacon
-							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOR_THE_FEL",
+							["description"] = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
 						}),
 					},
 				},
@@ -627,7 +593,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12565 },	-- Winna's Kitten Carrier
 							},
 							["coord"] = { 32.0, 66.0, FELWOOD },
-							["description"] = "~L.WHEN_YOU_GET_BACK_TO_WINNA_THE_CAT_STOPS_AND",
+							["description"] = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
 						}),
 					},
 				}),
@@ -1461,45 +1427,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 220167 },	-- Shimmering Grave Dust
 								{ "o", 441222 },	-- Grave Mound
 							},
-							["description"] = createLocalizationString({
-								readable = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
-								constant = "YOU_CAN_FIND_THIS_AFTER_KILLING_PRINCESS_IN",
-								export = true,
-								text = {
-									en = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你可以在玛拉顿击杀公主后找到它，就在扎尔塔的灵魂前方、他的脚边。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
 						}),
 						objective(3, {	-- 0/1 Triple-Brewed Molten Lager
 							["provider"] = { "i", 220168 },	-- Triple-Brewed Molten Lager
-							["description"] = createLocalizationString({
-								readable = "Sold by Plugger Spazzring in Blackrock Depths.",
-								constant = "SOLD_BY_PLUGGER_SPAZZRING_IN_BLACKROCK_DEPTHS",
-								export = true,
-								text = {
-									en = "Sold by Plugger Spazzring in Blackrock Depths.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "由黑石深渊的普拉格·斯帕兹林出售。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Sold by Plugger Spazzring in Blackrock Depths.",
 						}),
 						q(81944, {	-- A Newly Discovered Purpose...
 							["qg"] = 214529,	-- Brave Stonetorch
@@ -1613,7 +1545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						{
 							["itemID"] = 11445,	-- Flute of the Ancients
-							["description"] = "~L.YOU_NEED_TO_SAVE_THIS_FLUTE_FOR_THE_ANCIENT",
+							["description"] = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
 							["timeline"] = { REMOVED_4_0_3 },
 						},
 					},
@@ -2463,24 +2395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Wild Offering
 							["provider"] = { "i", 221262 },	-- Wild Offering
-							["description"] = createLocalizationString({
-								readable = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
-								constant = "ZUL_FARRAK_CLEAR_ANY_3_BOSSES_TO_SPAWN",
-								export = true,
-								text = {
-									en = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "祖尔法拉克 - 击杀任意 3 个首领即可刷新狂乱古树\n玛拉顿 - 击杀瑟莱德丝公主即可刷新狂乱古树\n黑石深渊 - 击杀全部三个首领——高级审讯官格斯坦、驯犬者格雷布玛尔和高级法官格利姆斯通——即可刷新狂乱古树\n\n对任意幽灵刷新点使用阿迦玛甘的咆哮 阿迦玛甘的咆哮即可召唤对应副本的狂乱古树。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
 						}),
 						i(222962, {	-- Hyjal's Wisdom
 							recipe(429247, {	-- Engrave Helm - Improved Sanctuary
@@ -2884,46 +2799,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(107595, {	-- Grimrot
-					["description"] = createLocalizationString({
-						readable = "This is the daytime light grey bear model.",
-						constant = "THIS_IS_THE_DAYTIME_LIGHT_GREY_BEAR_MODEL",
-						export = true,
-						text = {
-							en = "This is the daytime light grey bear model.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是白天的浅灰色熊模型。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is the daytime light grey bear model.",
 					["coord"] = { 38.2, 45.4, FELWOOD },
 					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(107596, {	-- Grimrot
-					["description"] = createLocalizationString({
-						readable = "This is the nightime black diseased bear model.",
-						constant = "THIS_IS_THE_NIGHTIME_BLACK_DISEASED_BEAR_MODEL",
-						export = true,
-						text = {
-							en = "This is the nightime black diseased bear model.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是夜晚的黑色患病熊模型。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is the nightime black diseased bear model.",
 					["coord"] = { 38.2, 45.4, FELWOOD },
 					["timeline"] = { ADDED_7_0_3 },
 				}),
@@ -3007,7 +2888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE 4.0.3
 			prof(SKINNING, {
 				i(11512, {	-- Patch of Tainted Skin
-					["description"] = "~L.IN_ORDER_FOR_THIS_TO_DROP_WHILE_SKINNING_YOU",
+					["description"] = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
@@ -3097,24 +2978,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(221491, {	-- Shadowtooth Bag
-							["description"] = createLocalizationString({
-								readable = "Random non-Ace card from the new DMF decks.",
-								constant = "RANDOM_NON_ACE_CARD_FROM_THE_NEW_DMF_DECKS",
-								export = true,
-								text = {
-									en = "Random non-Ace card from the new DMF decks.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "来自新的暗月马戏团牌组的随机非 Ace 卡。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Random non-Ace card from the new DMF decks.",
 							["cost"] = { { "i", 221262, 10 } },	-- 10x Wild Offering
 							["sym"] = {{ "select", "itemID",
 								221291,	-- Two of Dunes
@@ -3203,13 +3067,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(11515, {	-- Corrupted Soul Shard
-					["description"] = "~L.IN_ORDER_FOR_THIS_TO_DROP_BY_KILLING_MOBS_YOU",
+					["description"] = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 				i(21377, {	-- Deadwood Headdress Feather
-					["description"] = "~L.DROPS_COMMMONLY_FROM_ALL_DEADWOOD_FURBOLGS_AND",
+					["description"] = "Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
 					["crs"] = {
 						9462,	-- Chieftain Bloodmaw
 						7157,	-- Deadwood Avenger

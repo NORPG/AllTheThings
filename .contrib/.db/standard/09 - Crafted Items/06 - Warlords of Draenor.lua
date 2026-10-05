@@ -383,24 +383,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	}),
 	prof(COOKING, {
 		n(DISCOVERY, {
-			["description"] = createLocalizationString({
-				readable = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
-				constant = "THESE_ITEMS_HAVE_A_CHANCE_TO_APPEAR_IN_YOUR_BAG",
-				export = true,
-				text = {
-					en = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "烹饪任意德拉诺之王配方后，这些物品有几率出现在你的背包中。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 			["groups"] = {
 				i(110684),	-- Lil' Leftovers (PET!)
 				i(118323),	-- Recipe Idea: Blackrock Barbecue (RECIPE!)
@@ -669,7 +652,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(118391),	-- Worm Supreme
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
+				["description"] = "Can be fished from schools.",
 			}),
 		}),
 	}),

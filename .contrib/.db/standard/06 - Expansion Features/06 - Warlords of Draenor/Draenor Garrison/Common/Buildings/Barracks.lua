@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(FACTIONS, {
 						faction(1735, {	-- Barracks Bodyguards
-							["description"] = "~L.THIS_IS_A_HIDDEN_REPUTATION_IT_MIGHT_NOT_COUNT",
+							["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 							["collectible"] = false,
 						}),
 						faction(FACTION_AEDA_BRIGHTDAWN, {["races"] = HORDE_ONLY}),	-- Aeda Brightdawn

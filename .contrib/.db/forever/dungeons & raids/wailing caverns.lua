@@ -19,24 +19,7 @@ root(ROOTS.Instances, {
 		["lvl"] = 10,
 		["groups"] = {
 			n(QUESTS, {
-				["description"] = createLocalizationString({
-					readable = "To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",
-					constant = "TO_GET_TO_THE_QUEST_GIVER_HUB_OUTSIDE_THE",
-					export = true,
-					text = {
-						en = "To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要到达副本外的任务给予者聚集处：\n\n当你面向洞口时，你会看到入口看起来像一个头骨。任务给予者位于左眼中。要到达那里，先爬上山顶，落到头顶上，再落到眉骨上，再落到鼻子上，面向副本，然后进入左侧的眼睛。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",
 				["groups"] = {
 					q(1487, {	-- Deviate Eradication
 						["qg"] = 5768,	-- Ebru <Disciple of Naralex>
@@ -83,24 +66,7 @@ root(ROOTS.Instances, {
 						["lvl"] = 10,
 					}),
 					q(3370, {	-- In Nightmares [A]
-						["description"] = createLocalizationString({
-							readable = "She lives in a house on top of the mountain.",
-							constant = "SHE_LIVES_IN_A_HOUSE_ON_TOP_OF_THE_MOUNTAIN",
-							export = true,
-							text = {
-								en = "She lives in a house on top of the mountain.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "她住在山顶的一所房子里。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "She lives in a house on top of the mountain.",
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
 						["coord"] = { 48.2, 32.8, MAP.THE_BARRENS },
@@ -115,7 +81,7 @@ root(ROOTS.Instances, {
 						},
 					}),
 					q(3369, {	-- In Nightmares [H]
-						["description"] = "~L.SHE_LIVES_IN_A_HOUSE_ON_TOP_OF_THE_MOUNTAIN",
+						["description"] = "She lives in a house on top of the mountain.",
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
 						["coord"] = { 48.2, 32.8, MAP.THE_BARRENS },
@@ -226,24 +192,7 @@ root(ROOTS.Instances, {
 			}),
 			n(ZONE_DROPS, {
 				i(6443, {	-- Deviate Hide
-					["description"] = createLocalizationString({
-						readable = "Drops from Deviate creatures in the Wailing Caverns.",
-						constant = "DROPS_FROM_DEVIATE_CREATURES_IN_THE_WAILING",
-						export = true,
-						text = {
-							en = "Drops from Deviate creatures in the Wailing Caverns.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由哀嚎洞穴中的异变生物掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from Deviate creatures in the Wailing Caverns.",
 				}),
 				i(10413, {	-- Gloves of the Fang
 					cr = 3840,	-- Druid of the Fang
@@ -251,44 +200,10 @@ root(ROOTS.Instances, {
 			}),
 			prof(SKINNING, {
 				i(6470, {	-- Deviate Scale
-					["description"] = createLocalizationString({
-						readable = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",
-						constant = "CAN_DROP_AS_WELL_AS_BE_SKINNED_FROM_ALL",
-						export = true,
-						text = {
-							en = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "哀嚎洞穴内所有异变生物都会掉落，也可以从它们身上剥皮获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",
 				}),
 				i(6471, {	-- Perfect Deviate Scale
-					["description"] = createLocalizationString({
-						readable = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",
-						constant = "CAN_DROP_AS_WELL_AS_BE_SKINNED_FROM_ALL_2",
-						export = true,
-						text = {
-							en = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "哀嚎洞穴内所有异变生物都会掉落，也可以从它们身上剥皮获得，不过掉落率很低。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",
 				}),
 			}),
 			e(474, {	-- Lady Anacondra <Fanglord>
@@ -344,7 +259,7 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(5912, {	-- Deviate Faerie Dragon
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					i(5243),	-- Firebelcher
 					i(6632),	-- Feyscale Cloak

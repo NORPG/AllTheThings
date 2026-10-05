@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(ZONE_DROPS, {
 			i(199216),	-- A Box of Rocks
 			i(202062, {	-- Ash Feather
-				["description"] = createLocalizationString({
-					readable = "Can be collected in <10 minutes inside the Neltharus dungeon, by staying near the entrance. They spawn very quickly here for some reason.",
-					constant = "CAN_BE_COLLECTED_IN_10_MINUTES_INSIDE_THE",
-					export = true,
-					text = {
-						en = "Can be collected in <10 minutes inside the Neltharus dungeon, by staying near the entrance. They spawn very quickly here for some reason.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "待在入口附近，可在奈萨鲁斯地下城内 10 分钟内收集完毕。不知为何它们在这里刷新得非常快。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be collected in <10 minutes inside the Neltharus dungeon, by staying near the entrance. They spawn very quickly here for some reason.",
 				["cost"] = { { "i", 199177, 1 } },	-- Ash Feather Amulet
 				["crs"] = {
 					195759,	-- Ash Feather

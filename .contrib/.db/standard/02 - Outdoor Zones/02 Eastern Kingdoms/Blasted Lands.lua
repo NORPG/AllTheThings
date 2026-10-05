@@ -892,24 +892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25681, {	-- Some People Just Need Killing
-					["description"] = createLocalizationString({
-						readable = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
-						constant = "CFFFF0000DO_NOT_GET_IN_THE_BOX_R_THE_BOX_WILL",
-						export = true,
-						text = {
-							en = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "|cffFF0000不要进入箱子。|r\n箱子会改变你的角色所处的阶段，并浪费大量时间。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
 					["sourceQuest"] = 25680,	-- That's Not Us
 					["qg"] = 41134,	-- Tak'arili
 					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
@@ -1788,41 +1771,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.6, 53.2, BLASTED_LANDS },
 					},
 					-- #else
-					["description"] = "~L.PATROLS_ALL_OVER_THE_ZONE_YOU_MAY_EVEN_FIND_HIM",
+					["description"] = "Patrols all over the zone. You may even find him in Stormwind thanks to clever kiting by a Hunter.",
 					-- #endif
 				}),
 			}),
 			n(REWARDS, {
 				i(10752, {	-- Emerald Encrusted Chest
-					["description"] = "~L.REWARD_FOR_TURNING_IN_FLAWLESS_DRAENETHYST",
+					["description"] = "Reward for turning in Flawless Draenethyst Sphere to Kum'isha the Collector.\n\nContains a random green, blue, or epic world drop item.",
 					["groups"] = {
 						-- #if AFTER 7.0.3
 						i(17050, {	-- Chan's Imperial Robes
-							["description"] = createLocalizationString({
-								readable = "Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
-								constant = "ADDED_TO_EMERALD_ENCRUSTED_CHEST_IN_7_0_MITH",
-								export = true,
-								text = {
-									en = "Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在 7.0 中加入翡翠镶饰宝箱。并在 9.0 中加入辛特兰的稀有米斯雷西斯。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
 							["timeline"] = { REMOVED_4_0_3, ADDED_7_0_3 },
 						}),
 						-- #endif
 					},
 				}),
 				i(12122, {	-- Kum'isha's Junk
-					["description"] = "~L.REWARD_FOR_TURNING_IN_AN_IMPERFECT_DRAENETHYST",
+					["description"] = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
 				}),
 			}),
 			-- #if AFTER 10.2.5
@@ -1864,24 +1830,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23848, {	-- Nethergarde Bitter
-							["description"] = createLocalizationString({
-								readable = "Buy at least one of these before you enter the Dark Portal!",
-								constant = "BUY_AT_LEAST_ONE_OF_THESE_BEFORE_YOU_ENTER_THE",
-								export = true,
-								text = {
-									en = "Buy at least one of these before you enter the Dark Portal!",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在进入黑暗之门之前，至少购买一个此物品！",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Buy at least one of these before you enter the Dark Portal!",
 							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
@@ -1964,7 +1913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				i(8244, {	-- Flawless Draenethyst Sphere
-					["description"] = "~L.A_VERY_RARE_ZONE_DROP_IT_HAS_A_HIGHER_CHANCE_TO",
+					["description"] = "A very rare zone drop. It has a higher chance to drop from Rare Creatures.",
 					["crs"] = {
 						7846,	-- Teremus the Devourer
 						7664,	-- Razelikh the Defiler
@@ -1983,7 +1932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(10593, {	-- Imperfect Draenethyst Fragment (drops from pretty much the whole zone)
-					["description"] = "~L.A_RARE_ZONE_DROP_FROM_ANY_CREATURE_IN_THE_ZONE",
+					["description"] = "A rare zone drop from any creature in the zone.",
 				}),
 				i(57178, {	-- Nightstalker Leg
 					["timeline"] = { ADDED_4_0_3 },

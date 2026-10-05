@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(635, {	-- Crystal in the Mountains
-					["description"] = "~L.IF_YOU_MISS_OUT_ON_PICKING_UP_THE_NECKLACE",
+					["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
 					["provider"] = { "i", 4614 },	-- Pendant of Myzrael
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -852,24 +852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6623, {	-- Horde Trauma
 					-- #if AFTER BFA
-					["description"] = createLocalizationString({
-						readable = "This quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
-						constant = "THIS_QUEST_INADVERTENTLY_BECOMES_UNAVAILABLE",
-						export = true,
-						text = {
-							en = "This quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务会因为账号解锁同盟种族至高岭牛头人后产生的位面机制而意外变为不可用。如果你在这种情况下仍完成了此任务，请在 Discord 上告知我们！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] ="This quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
 					-- #endif
 					["qgs"] = {
 						-- #if AFTER CATA
@@ -2374,24 +2357,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_TWO, i(213447, {	-- Rosary of the Light
-					["description"] = createLocalizationString({
-						readable = "Combine the 3 divine prayer beads and then bring it to Brother Atticus.",
-						constant = "COMBINE_THE_3_DIVINE_PRAYER_BEADS_AND_THEN",
-						export = true,
-						text = {
-							en = "Combine the 3 divine prayer beads and then bring it to Brother Atticus.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "组合 3 颗神圣祈祷珠，然后把它带给阿提库斯修士。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Combine the 3 divine prayer beads and then bring it to Brother Atticus.",
 					["timeline"] = { ADDED_1_15_1 },
 					["cost"] = {
 						{ "i", 213448, 1 },	-- Divine Prayer Bead I
@@ -2429,7 +2395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(13288, {	-- Pattern: Raptor Hide Belt (RECIPE!)
 							-- #if BEFORE 10.0.5
-							["description"] = "~L.HORDE_PLAYERS_BEWARE_EVEN_IF_YOU_BUY_THIS_ITEM",
+							["description"] = "Horde Players Beware: even if you buy this item off the Auction House, it is currently unlearnable. Only Alliance players are able to properly learn this pattern. Fire up your bug reports.",
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["isLimited"] = true,
@@ -2749,24 +2715,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(213444, {	-- Tarnished Prayer Bead I
-					["description"] = createLocalizationString({
-						readable = "With this in your inventory and while in combat, cast Blessing of Might and then kill an enemy that grants XP.",
-						constant = "WITH_THIS_IN_YOUR_INVENTORY_AND_WHILE_IN_COMBAT",
-						export = true,
-						text = {
-							en = "With this in your inventory and while in combat, cast Blessing of Might and then kill an enemy that grants XP.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将此物品放在背包中，并在战斗中施放力量祝福，然后击杀一个能提供经验的敌人。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "With this in your inventory and while in combat, cast Blessing of Might and then kill an enemy that grants XP.",
 					["timeline"] = { ADDED_1_15_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -2775,24 +2724,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(213445, {	-- Tarnished Prayer Bead II
-					["description"] = createLocalizationString({
-						readable = "With this in your inventory and while in combat with less than 10% health, cast Divine Shield.",
-						constant = "WITH_THIS_IN_YOUR_INVENTORY_AND_WHILE_IN_COMBAT_2",
-						export = true,
-						text = {
-							en = "With this in your inventory and while in combat with less than 10% health, cast Divine Shield.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将此物品放在背包中，并在生命值低于 10% 的战斗中施放圣盾术。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "With this in your inventory and while in combat with less than 10% health, cast Divine Shield.",
 					["timeline"] = { ADDED_1_15_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
@@ -2801,24 +2733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(213446, {	-- Tarnished Prayer Bead III
-					["description"] = createLocalizationString({
-						readable = "With this in your inventory and while in combat, cast Seal of Justice and then cast Judgement AS THE CREATURE IS RUNNING AWAY. Judging the enemy before they run will not work.",
-						constant = "WITH_THIS_IN_YOUR_INVENTORY_AND_WHILE_IN_COMBAT_3",
-						export = true,
-						text = {
-							en = "With this in your inventory and while in combat, cast Seal of Justice and then cast Judgement AS THE CREATURE IS RUNNING AWAY. Judging the enemy before they run will not work.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将此物品放在背包中，并在战斗中施放公正之印，然后在怪物逃跑时施放审判。在敌人逃跑前审判是无效的。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "With this in your inventory and while in combat, cast Seal of Justice and then cast Judgement AS THE CREATURE IS RUNNING AWAY. Judging the enemy before they run will not work.",
 					["timeline"] = { ADDED_1_15_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,

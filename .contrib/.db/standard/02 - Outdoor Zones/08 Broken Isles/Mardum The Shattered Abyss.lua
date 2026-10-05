@@ -180,24 +180,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(38729, {	-- Return to the Black Temple
-						["description"] = createLocalizationString({
-							readable = "Maiev upgrades your uncommon Illidari Glaives to Fel-Etched Glaives after this quest is completed.",
-							constant = "MAIEV_UPGRADES_YOUR_UNCOMMON_ILLIDARI_GLAIVES",
-							export = true,
-							text = {
-								en = "Maiev upgrades your uncommon Illidari Glaives to Fel-Etched Glaives after this quest is completed.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，玛维会将你的优秀品质伊利达雷战刃升级为邪能蚀刻战刃。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Maiev upgrades your uncommon Illidari Glaives to Fel-Etched Glaives after this quest is completed.",
 						["sourceQuests"] = { 38728 },	-- The Keystone
 						["qg"] = 97303,	-- Kayn Sunfury
 						["coord"] = { 69.8, 37.9, 672 },

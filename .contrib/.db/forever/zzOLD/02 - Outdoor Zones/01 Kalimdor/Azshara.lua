@@ -624,24 +624,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(6651, {	-- Gatekeeper Rageroar
-					["description"] = createLocalizationString({
-						readable = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
-						constant = "KILLING_HIM_WILL_REDUCE_YOUR_TIMBERMAW",
-						export = true,
-						text = {
-							en = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "杀死他会降低你的木喉声望。（不要这么做！）",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
 					["coords"] = {
 						{ 38.4, 32.6, MAP.AZSHARA },
 					},

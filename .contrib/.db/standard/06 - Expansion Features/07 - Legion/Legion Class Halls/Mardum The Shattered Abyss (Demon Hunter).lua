@@ -368,46 +368,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["lvl"] = 101,
 					}),
 					q(44223, {	-- Champion Armaments
-						["description"] = createLocalizationString({
-							readable = "Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",
-							constant = "REQUIRES_THE_CFFFFD700FEL_ARMAMENTS_R_ORDER",
-							export = true,
-							text = {
-								en = "Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要|cFFFFD700邪能武装|r职业大厅升级。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",
 						["provider"] = { "n", 110433 },	-- Slitesh
 						["coord"] = { 60.0, 43.8, 720 },
 					}),
 					q(42653, {	-- Champion: Akama
-						["description"] = createLocalizationString({
-							readable = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
-							constant = "THIS_FOLLOWER_IS_ONLY_AVAILABLE_IF_YOU_SIDED",
-							export = true,
-							text = {
-								en = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只有在你选择了|cFFFFD700受难者奥图里斯|r阵营时，此追随者才会开放。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
@@ -506,24 +472,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(42664, {	-- Champion: Shade of Akama
-						["description"] = createLocalizationString({
-							readable = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
-							constant = "THIS_FOLLOWER_IS_ONLY_AVAILABLE_IF_YOU_SIDED_2",
-							export = true,
-							text = {
-								en = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只有在你选择了|cFFFFD700凯恩·日怒|r阵营时，此追随者才会开放。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
@@ -589,24 +538,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 59.5, 58.0, 720 },
 					}),
 					q(44226, {	-- Fate Favors Us
-						["description"] = createLocalizationString({
-							readable = "Requires the |cFFFFD700Focused War Effort|r order hall upgrade.",
-							constant = "REQUIRES_THE_CFFFFD700FOCUSED_WAR_EFFORT_R",
-							export = true,
-							text = {
-								en = "Requires the |cFFFFD700Focused War Effort|r order hall upgrade.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要|cFFFFD700专注战备|r职业大厅升级。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires the |cFFFFD700Focused War Effort|r order hall upgrade.",
 						["provider"] = { "n", 112992 },	-- Seer Aleis
 						["coord"] = { 54.6, 59.4, 721 },
 					}),
@@ -866,24 +798,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 64.9, 58.9, STORMHEIM },
 					}),
 					q(42737, {	-- Rune Ruination: Runeskeld Rollo
-						["description"] = createLocalizationString({
-							readable = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
-							constant = "IF_THE_GAME_DOESN_T_PROPERLY_DISPLAY_THE_MOB_S",
-							export = true,
-							text = {
-								en = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果游戏没有正确显示该生物的位置，罗洛可以在 71.4, 39.0 的悬崖边房间找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
 						["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 						["provider"] = { "o", 251218 },	-- Rollo's Runestone
 						["coord"] = { 64.9, 58.9, STORMHEIM },
@@ -1055,67 +970,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(SPECIAL, {
 					cl(DEMONHUNTER, HAVOC, {
 						i(141409, {	-- Candrael's Charm (CI!)
-							["description"] = createLocalizationString({
-								readable = "Has a chance to drop from any creature in Suramar.",
-								constant = "HAS_A_CHANCE_TO_DROP_FROM_ANY_CREATURE_IN_3",
-								export = true,
-								text = {
-									en = "Has a chance to drop from any creature in Suramar.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "有几率从苏拉玛的任何生物身上掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Has a chance to drop from any creature in Suramar.",
 							["maps"] = { SURAMAR },
 						}),
 						n(113935, {	-- Candrael Twinshadow
-							["description"] = createLocalizationString({
-								readable = "You must have |cFF4A54E8Candrael's Charm|r in your bags before talking to Candrael. After asking her about the initials on the Charm, she will kick you off the cliff towards Downfall.\n|cFFE50D12NOTE:|rIf, by any chance, Charm is not consumed in the process, or you are not getting any loot, you will need to destroy it before re-trying to kill Downfall. DO NOT try to keep the Charm as a memento in your bank.",
-								constant = "YOU_MUST_HAVE_CFF4A54E8CANDRAEL_S_CHARM_R_IN",
-								export = true,
-								text = {
-									en = "You must have |cFF4A54E8Candrael's Charm|r in your bags before talking to Candrael. After asking her about the initials on the Charm, she will kick you off the cliff towards Downfall.\n|cFFE50D12NOTE:|rIf, by any chance, Charm is not consumed in the process, or you are not getting any loot, you will need to destroy it before re-trying to kill Downfall. DO NOT try to keep the Charm as a memento in your bank.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在与坎德拉尔对话之前，你的背包中必须有|cFF4A54E8坎德拉尔的护符|r。在向她询问护符上的首字母缩写后，她会把你从悬崖上踢向陨落者。\n|cFFE50D12注意：|r如果在过程中护符没有消耗掉，或者你没有获得任何战利品，你需要在重新尝试击杀陨落者之前销毁它。千万不要试图把护符留作纪念存放在银行里。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You must have |cFF4A54E8Candrael's Charm|r in your bags before talking to Candrael. After asking her about the initials on the Charm, she will kick you off the cliff towards Downfall.\n|cFFE50D12NOTE:|rIf, by any chance, Charm is not consumed in the process, or you are not getting any loot, you will need to destroy it before re-trying to kill Downfall. DO NOT try to keep the Charm as a memento in your bank.",
 							["coord"] = { 28.2, 70.2, SURAMAR },
 							["cost"] = { { "i", 141409, 1 } },	-- 1x Candrael's Charm
 							["groups"] = {
 								n(111110, {	-- Downfall
-									["description"] = createLocalizationString({
-										readable = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
-										constant = "WHILE_NEAR_DOWNFALL_HIS_WINDS_WILL_KEEP_YOU",
-										export = true,
-										text = {
-											en = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在陨落者附近时，与他战斗期间他的风会托住你。\n他偶尔会把你击退。利用你的滑翔能力，确保自己飘回（穿过）他身边；一旦靠近你就会开始漂浮。\n\n他死亡后，尸体会坠落到地面。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
 									["groups"] = {
 										i(139549, {	-- Guise of the Deathwalker
 											artifact(982),	-- Twinblades of the Deceiver [Main Hand]
@@ -1220,24 +1084,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["groups"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
-								["description"] = createLocalizationString({
-									readable = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
-									constant = "C808080FAIN_ORDER_TO_PURCHASE_THE_TOY_R",
-									export = true,
-									text = {
-										en = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "|c808080FA要购买该玩具|r |c00FF96AF迷你战刃套装|r|c808080FA，你必须完成职业坐骑任务|r |cFFFFD700邪能往返|r|c808080FA。\n|c808080FA完成后，你还必须在任一专精上解锁全部 52 个特质才能购买它。|r",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 								["cost"] = { { "c", ORDER_RESOURCES, 1000 } },
 							}),
 							i(139721, {	-- Belt of the Shattered Abyss

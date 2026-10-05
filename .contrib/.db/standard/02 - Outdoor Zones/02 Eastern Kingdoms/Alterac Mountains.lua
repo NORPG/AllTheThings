@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
 				}),
 				faction(FACTION_SYNDICATE, {	-- Syndicate
-					["description"] = "~L.NEUTRAL_IS_THE_HIGHEST_YOU_CAN_CURRENTLY_REACH",
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
 					["minReputation"] = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
 					["maxReputation"] = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
 				}),
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Syndicate Missive
 							["provider"] = { "i", 3601 },	-- Syndicate Missive
-							["description"] = "~L.YOU_CAN_CHOOSE_TO_BRING_VALIK_A_DRINK_OR_KILL",
+							["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
 							["crs"] = {
 								2240,	-- Syndicate Footpad
 								2241,	-- Syndicate Thief
@@ -723,7 +723,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(6681, {	-- The Manor, Ravenholdt
-					["description"] = "~L.SPEAK_WITH_A_ROGUE_TRAINER_AND_USE_SELECT_THE",
+					["description"] = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 					["providers"] = {
 						{ "i", 17125 },	-- Seal of Ravenholdt
 						{ "i", 17126 },	-- Seal of Ravenholdt
@@ -749,24 +749,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80411, {	-- The Talisman of Kazdor
-					["description"] = createLocalizationString({
-						readable = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
-						constant = "YOU_LL_NEED_TO_FIND_2_VILE_CONCOCTIONS_AND_THE",
-						export = true,
-						text = {
-							en = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要找到 2 瓶邪恶药剂和中空徽记。\n\n- 如果你面朝金字塔，中空徽记就在右墙上从左数第二座高处的棚屋里。你可以爬上金字塔右侧的山丘到达那里。\n\n- 1 瓶邪恶药剂在离金字塔最近的棚屋内，另一瓶在副本第一个岔路后左路拐角处的一座棚屋里（就是那支从来没人走的左路）。\n\n- 对巫医祖姆拉的坩埚使用一瓶邪恶药剂（这不会打破潜行）来杀死他，并拾取他旁边的背包以取得一个饰品。装备该饰品即可看到哪个坟墓里有血之献祭。\n\n- 对安图苏尔的坩埚使用另一瓶邪恶药剂，并拾取他旁边的骨之献祭。\n\n- 将两种献祭组合，然后使用中空徽记制作出血魔法徽记血魔法徽记。这就是打开金字塔顶端宝箱、最终获得任务所需护符的钥匙。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
 					["sourceQuest"] = 80526,	-- Fool Me Twice
 					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
 					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
@@ -870,7 +853,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2447, {	-- Narillasanz
-					["description"] = "~L.PATROLS_AROUND_THE_ENTIRE_ZONE_BUT_CAN_USUALLY",
+					["description"] = "Patrols around the entire zone, but can usually be found along the river to the east.\n\nThis particular rare was used in the original World of Warcraft game packaging facing off against heroes wielding Teebu's Blazing Longsword.",
 					["coord"] = { 79.2, 47.0, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
@@ -899,24 +882,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_TWO, i(213452, {	-- Dormant Holy Rune
-					["description"] = createLocalizationString({
-						readable = "Once you have this rune in your inventory, use Divine Intervention on a healer friend. Have them resurrect you to receive the rune upon resurrection.",
-						constant = "ONCE_YOU_HAVE_THIS_RUNE_IN_YOUR_INVENTORY_USE",
-						export = true,
-						text = {
-							en = "Once you have this rune in your inventory, use Divine Intervention on a healer friend. Have them resurrect you to receive the rune upon resurrection.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "背包中拥有这枚符文后，对一名治疗朋友使用神圣干涉。让他复活你，你就能在复活时获得这枚符文。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Once you have this rune in your inventory, use Divine Intervention on a healer friend. Have them resurrect you to receive the rune upon resurrection.",
 					["provider"] = { "o", 423841 },	-- Frozen Remains
 					["coord"] = { 39.7, 60.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_1 },

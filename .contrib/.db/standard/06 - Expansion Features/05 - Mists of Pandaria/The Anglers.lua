@@ -4,24 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_ANGLERS, {
-		["description"] = createLocalizationString({
-			readable = "The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",
-			constant = "THE_ANGLERS_ARE_A_GROUP_OF_PANDAREN_FISHERMEN",
-			export = true,
-			text = {
-				en = "The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "钓叟是一群熊猫人渔夫，他们希望能养活自己的人民并增进钓鱼方面的知识。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",
 		["maps"] = { KRASARANG_WILDS },
 		["icon"] = 643874,
 		["lvl"] = lvlsquish(85, 85, 10),
@@ -177,70 +160,19 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["repeatable"] = true,
 				}),
 				q(31443, {	-- Flying Tiger Gourami
-					["description"] = createLocalizationString({
-						readable = "Found while fishing in any inland body of water on Pandaria.\n\n",
-						constant = "FOUND_WHILE_FISHING_IN_ANY_INLAND_BODY_OF_WATER",
-						export = true,
-						text = {
-							en = "Found while fishing in any inland body of water on Pandaria.\n\n",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在潘达利亚任意内陆水域钓鱼时均可获得。\n\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found while fishing in any inland body of water on Pandaria.\n\n",
 					["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 				}),
 				q(31446, {	-- Mimic Octopus
-					["description"] = createLocalizationString({
-						readable = "Found while fishing in any inland body of water on Pandaria.",
-						constant = "FOUND_WHILE_FISHING_IN_ANY_INLAND_BODY_OF_WATER_2",
-						export = true,
-						text = {
-							en = "Found while fishing in any inland body of water on Pandaria.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在潘达利亚任意内陆水域钓鱼时均可获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found while fishing in any inland body of water on Pandaria.",
 					["provider"] = { "i", 86545 },	-- Mimic Octopus
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 				}),
 				q(31444, {	-- Spinefish Alpha
-					["description"] = createLocalizationString({
-						readable = "Found while fishing in inland water near Sha-touched land.",
-						constant = "FOUND_WHILE_FISHING_IN_INLAND_WATER_NEAR_SHA",
-						export = true,
-						text = {
-							en = "Found while fishing in inland water near Sha-touched land.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在受煞污染之地附近的内陆水域钓鱼时获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found while fishing in inland water near Sha-touched land.",
 					["provider"] = { "i", 86544 },	-- Spinefish Alpha
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
@@ -248,24 +180,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}),
 			n(RARES, {
 				n(70323, {	-- Krakkanon
-					["description"] = createLocalizationString({
-						readable = "Fished out of the daily Pandaria fishing holes.",
-						constant = "FISHED_OUT_OF_THE_DAILY_PANDARIA_FISHING_HOLES",
-						export = true,
-						text = {
-							en = "Fished out of the daily Pandaria fishing holes.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在潘达利亚每日钓鱼点中钓到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Fished out of the daily Pandaria fishing holes.",
 					["coords"] = {
 						{ 26.4, 16.0, DREAD_WASTES },
 						{ 33.2, 33.2, KRASARANG_WILDS },

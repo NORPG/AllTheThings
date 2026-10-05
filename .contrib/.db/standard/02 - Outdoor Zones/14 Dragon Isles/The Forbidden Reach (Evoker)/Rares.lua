@@ -50,24 +50,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 				},
 			}),
 			n(186355, {	-- Tripletath the Lost
-				["description"] = createLocalizationString({
-					readable = "Cave entrance is at 59.9, 59.0.",
-					constant = "CAVE_ENTRANCE_IS_AT_59_9_59_0",
-					export = true,
-					text = {
-						en = "Cave entrance is at 59.9, 59.0.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "洞穴入口位于 59.9, 59.0。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Cave entrance is at 59.9, 59.0.",
 				["coord"] = { 57.4, 60.2, THE_FORBIDDEN_REACH_DRACTHYR },
 				["questID"] = 65910,
 				["groups"] = {

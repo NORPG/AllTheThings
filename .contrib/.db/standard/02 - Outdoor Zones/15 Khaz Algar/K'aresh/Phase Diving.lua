@@ -38,24 +38,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		header(HEADERS.Spell, 1214374, {	-- Phase Diving
 			n(ACHIEVEMENTS, {
 				ach(61017, {	-- Phase-Lost-and-Found
-					["description"] = createLocalizationString({
-						readable = "|cff00ccffRank 3|r |cffe6cc80Reshii Wraps|r required in order to collect the Orbs. Reward is based on a % chance. Large amount of Orbs have Fixed Coordinates.\n|cff00ccffRank 4|r |cffe6cc80Reshii Wraps|r unlock the ability for Orbs to appear after you kill an enemy.\nIt is possible to obtain more than 1 item from the same Orb, after it respawns.",
-						constant = "CFF00CCFFRANK_3_R_CFFE6CC80RESHII_WRAPS_R",
-						export = true,
-						text = {
-							en = "|cff00ccffRank 3|r |cffe6cc80Reshii Wraps|r required in order to collect the Orbs. Reward is based on a % chance. Large amount of Orbs have Fixed Coordinates.\n|cff00ccffRank 4|r |cffe6cc80Reshii Wraps|r unlock the ability for Orbs to appear after you kill an enemy.\nIt is possible to obtain more than 1 item from the same Orb, after it respawns.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要 |cff00ccff等级 3|r |cffe6cc80雷什裹布|r 才能收集宝珠。奖励基于一定几率。大量宝珠拥有固定坐标。\n|cff00ccff等级 4|r |cffe6cc80雷什裹布|r 解锁击杀敌人后出现宝珠的能力。\n同一个宝珠重新刷新后，可能从中获得不止 1 件物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "|cff00ccffRank 3|r |cffe6cc80Reshii Wraps|r required in order to collect the Orbs. Reward is based on a % chance. Large amount of Orbs have Fixed Coordinates.\n|cff00ccffRank 4|r |cffe6cc80Reshii Wraps|r unlock the ability for Orbs to appear after you kill an enemy.\nIt is possible to obtain more than 1 item from the same Orb, after it respawns.",
 					["coords"] = {
 						{ 43.1, 21.6, KARESH },
 						{ 44.2, 16.9, KARESH },
@@ -346,48 +329,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					header(HEADERS.Achievement, 42741, {	-- Treasures of K'aresh
 						o(548597, {	-- Bladed Rifle Of Unfettered Momentum
-							["description"] = createLocalizationString({
-								readable = "It is recommended to buy some Gliders if you can't glide/slow fall yourself.",
-								constant = "IT_IS_RECOMMENDED_TO_BUY_SOME_GLIDERS_IF_YOU",
-								export = true,
-								text = {
-									en = "It is recommended to buy some Gliders if you can't glide/slow fall yourself.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你自己无法滑翔/缓落，建议购买一些滑翔器。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "It is recommended to buy some Gliders if you can't glide/slow fall yourself.",
 							["coord"] = { 69.9, 70.8, KARESH },
 							["questID"] = 91058,
 							["groups"] = { i(245673) },	-- Bladed Rifle of Unfettered Momentum (COSMETIC!)
 						}),
 						o(527414, {	-- Ethereal Voidforged Container
 							["questID"] = 89378,
-							["description"] = createLocalizationString({
-								readable = "Requires some serious jumping precision in order to get to it.",
-								constant = "REQUIRES_SOME_SERIOUS_JUMPING_PRECISION_IN",
-								export = true,
-								text = {
-									en = "Requires some serious jumping precision in order to get to it.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "需要相当精准的跳跃技巧才能到达。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Requires some serious jumping precision in order to get to it.",
 							["coord"] = { 52.1, 68.3, KARESH },
 							["groups"] = {
 								ach(42730),	-- Jump, Jump, and Away!
@@ -415,7 +364,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							["groups"] = { i(245669) },	-- P.O.S.T. Master's Prototype Parcel and Postage Presser (COSMETIC!)
 						}),
 						o(529539, {	-- Petrified Branch Of Janaa
-							["description"] = "~L.IT_IS_RECOMMENDED_TO_BUY_SOME_GLIDERS_IF_YOU",
+							["description"] = "It is recommended to buy some Gliders if you can't glide/slow fall yourself.",
 							["coord"] = { 78.3, 61.6, KARESH },
 							["questID"] = 90515,
 							["groups"] = { i(243006) },	-- Petrified Branch of Janaa (COSMETIC!)
@@ -478,24 +427,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					-- Phased
 					o(549326, {	-- Phase-Lost Exchequer
-						["description"] = createLocalizationString({
-							readable = "Can be found at random locations through Untethered space.",
-							constant = "CAN_BE_FOUND_AT_RANDOM_LOCATIONS_THROUGH",
-							export = true,
-							text = {
-								en = "Can be found at random locations through Untethered space.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在无束空间的随机位置找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found at random locations through Untethered space.",
 						["minReputation"] = { FACTION_THE_KARESH_TRUST, 11 },	-- The K'aresh Trust Renown 11
 						["maps"] = { KARESH_TAZAVESH, KARESH },
 						-- No quest attached to them.
@@ -511,7 +443,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					o(516626, {	-- Phase-Lost Pocket-Storage
-						["description"] = "~L.CAN_BE_FOUND_AT_RANDOM_LOCATIONS_THROUGH",
+						["description"] = "Can be found at random locations through Untethered space.",
 						["minReputation"] = { FACTION_THE_KARESH_TRUST, 4 },	-- The K'aresh Trust Renown 4
 						["lockCriteria"] = { 1, "renownID", FACTION_THE_KARESH_TRUST + 0.11 },	-- The K'aresh Trust Renown 11
 						["maps"] = { KARESH_TAZAVESH, KARESH },

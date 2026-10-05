@@ -17,24 +17,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 177132 },	-- Helsworn Soulseeker
 			}),
 			i(186559, {	-- Grappling Gauntlet (PET!)
-				["description"] = createLocalizationString({
-					readable = "Available in The Maw, Korthia, Zereth Mortis.",
-					constant = "AVAILABLE_IN_THE_MAW_KORTHIA_ZERETH_MORTIS",
-					export = true,
-					text = {
-						en = "Available in The Maw, Korthia, Zereth Mortis.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可在噬渊、刻希亚、扎雷殁提斯获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Available in The Maw, Korthia, Zereth Mortis.",
 				["timeline"] = { ADDED_9_1_0 },
 				["maps"] = {
 					KORTHIA,

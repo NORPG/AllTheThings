@@ -12,24 +12,7 @@ SILITHUS_THE_WOUND = createHeader({
 
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(SILITHUS_THE_WOUND, {
-		["description"] = createLocalizationString({
-			readable = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
-			constant = "THE_WOUND_WAS_A_MINI_PRE_EXPANSION_EVENT",
-			export = true,
-			text = {
-				en = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "创伤是一个小型的前夕事件，围绕安托鲁斯团队副本结束、艾泽拉斯受到创伤后的余波展开。如果你被困在旧的希利苏斯，请与齐多尔米对话。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
 		-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
 		["zone-artIDs"] = { 962 },
 		["timeline"] = { ADDED_7_3_5 },
@@ -106,24 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(PROFESSIONS, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 						-- Void Focus quests
 						q(57275, {	-- Something in Your Mind
-							["description"] = createLocalizationString({
-								readable = "Can be made with any crafting profession.",
-								constant = "CAN_BE_MADE_WITH_ANY_CRAFTING_PROFESSION",
-								export = true,
-								text = {
-									en = "Can be made with any crafting profession.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可用任何制造专业制作。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be made with any crafting profession.",
 							["provider"] = { "i", 171320 },	-- Void Focus
 						}),
 						q(57464, {	-- Maintaining Focus (A)
@@ -162,24 +128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(54938, {	-- A Brother's Help
-							["description"] = createLocalizationString({
-								readable = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
-								constant = "ONCE_YOU_COMPLETE_THE_CHAMBER_OF_HEART_IN",
-								export = true,
-								text = {
-									en = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在希利苏斯完成“心之密室”后，你可以从麦格尼处接到此任务，或者在你返回主城时自动接到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
 							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["qgs"] = {
 								130216,	-- Magni Bronzebeard
@@ -225,24 +174,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore. Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
 						}),
 						q(55519, {	-- A Fresh Trauma
-							["description"] = createLocalizationString({
-								readable = "Your Heart of Azeroth needs to be 55 to start the questline.",
-								constant = "YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_55_TO_START",
-								export = true,
-								text = {
-									en = "Your Heart of Azeroth needs to be 55 to start the questline.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的艾泽拉斯之心需要达到 55 级才能开始此任务线。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["sourceQuests"] = {
 								56261,	-- Return to the Heart (A)
 								55522,	-- Return to the Heart (H)
@@ -270,24 +202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(55732, {	-- An Old Scar
-							["description"] = createLocalizationString({
-								readable = "Your Heart of Azeroth needs to be 65 to start the questline.",
-								constant = "YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_65_TO_START",
-								export = true,
-								text = {
-									en = "Your Heart of Azeroth needs to be 65 to start the questline.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的艾泽拉斯之心需要达到 65 级才能开始此任务线。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["sourceQuests"] = {
 								56262,	-- Back to the Chamber (A)
 								55739,	-- Back to the Chamber (H)
@@ -319,7 +234,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(56262, {	-- Back to the Chamber (A)
-							["description"] = "~L.YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_65_TO_START",
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["qgs"] = {
 								154464,	-- Earthen Guardian
 								154465,	-- Earthen Guardian
@@ -331,7 +246,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["DisablePartySync"] = true,
 						}),
 						q(55739, {	-- Back to the Chamber (H)
-							["description"] = "~L.YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_65_TO_START",
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["qg"] = 154465,	-- Earthen Guardian
 							["coords"] = {
 								-- #if BEFORE SL
@@ -388,24 +303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_2_0 },
 						}),
 						q(58991, {	-- Curious Corruption
-							["description"] = createLocalizationString({
-								readable = "Automatically granted when you get your first corrupted item.",
-								constant = "AUTOMATICALLY_GRANTED_WHEN_YOU_GET_YOUR_FIRST",
-								export = true,
-								text = {
-									en = "Automatically granted when you get your first corrupted item.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当你获得第一件腐化物品时自动获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Automatically granted when you get your first corrupted item.",
 							["altQuests"] = { 59000 },	-- Elements of Corruption
 							["timeline"] = { REMOVED_9_1_0 },
 						}),
@@ -448,24 +346,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_2_0 },
 							["groups"] = {
 								n(152095, {	-- Magni Bronzebeard
-									["description"] = createLocalizationString({
-										readable = "This is a terrible experience if you are working through content chronologically, as you cannot circumvent this phased version of Nordrassil.\n\nYou have to get started with Battle for Azeroth, get access to Chamber of Heart in Silithus: The Wound, and reach Heart of Azeroth power level 55. Then you can pick up 'A Fresh Trauma' from Magni in Chamber of Heart and return to Nordrassil for the short questline.",
-										constant = "THIS_IS_A_TERRIBLE_EXPERIENCE_IF_YOU_ARE",
-										export = true,
-										text = {
-											en = "This is a terrible experience if you are working through content chronologically, as you cannot circumvent this phased version of Nordrassil.\n\nYou have to get started with Battle for Azeroth, get access to Chamber of Heart in Silithus: The Wound, and reach Heart of Azeroth power level 55. Then you can pick up 'A Fresh Trauma' from Magni in Chamber of Heart and return to Nordrassil for the short questline.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "如果你按时间顺序推进内容，这段体验会非常糟糕，因为你无法绕过诺达希尔的这个位面版本。\n\n你必须先开始《争霸艾泽拉斯》的内容，进入希利苏斯：伤痕的心之密室，并把艾泽拉斯之心的能量等级提升到 55。然后你就能在心之密室从麦格尼处接到“新的创伤”，并返回诺达希尔进行这段短任务线。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "This is a terrible experience if you are working through content chronologically, as you cannot circumvent this phased version of Nordrassil.\n\nYou have to get started with Battle for Azeroth, get access to Chamber of Heart in Silithus: The Wound, and reach Heart of Azeroth power level 55. Then you can pick up 'A Fresh Trauma' from Magni in Chamber of Heart and return to Nordrassil for the short questline.",
 								}),
 							},
 						}),
@@ -515,24 +396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_2_0 },
 						}),
 						q(55390, {	-- In Darkness, I Dream
-							["description"] = createLocalizationString({
-								readable = "Your Heart of Azeroth needs to be 54 to start the questline.",
-								constant = "YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_54_TO_START",
-								export = true,
-								text = {
-									en = "Your Heart of Azeroth needs to be 54 to start the questline.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的艾泽拉斯之心等级需要达到 54 才能开始这条任务线。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Your Heart of Azeroth needs to be 54 to start the questline.",
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 52.5, 69.9, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },
@@ -602,24 +466,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = { currency(1719) },	-- Corrupted Memento
 						}),
 						q(56167, {	-- Investigating the Highlands
-							["description"] = createLocalizationString({
-								readable = "Your Heart of Azeroth needs to be 60 to start the questline.",
-								constant = "YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_60_TO_START",
-								export = true,
-								text = {
-									en = "Your Heart of Azeroth needs to be 60 to start the questline.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的艾泽拉斯之心等级需要达到 60 才能开始这条任务线。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Your Heart of Azeroth needs to be 60 to start the questline.",
 							["sourceQuest"] = 55398,	-- The Long Awake
 							["qg"] = 152365,	-- Kalecgos
 							["coord"] = { 53.1, 70.9, REPAIRED_CHAMBER_OF_HEART },
@@ -841,7 +688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(56261, {	-- Return to the Heart (A)
-							["description"] = "~L.YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_55_TO_START",
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["sourceQuest"] = 57010,	-- Harnessing the Power
 							["qg"] = 154464,	-- Earthen Guardian <Messenger of the Speaker>
 							["coord"] = { 74.8, 15.2, BORALUS },
@@ -851,7 +698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["DisablePartySync"] = true,
 						}),
 						q(55522, {	-- Return to the Heart (H)
-							["description"] = "~L.YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_55_TO_START",
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["sourceQuest"] = 57010,	-- Harnessing the Power
 							["qg"] = 154465,	-- Earthen Guardian <Messenger of the Speaker>
 							["coords"] = {
@@ -918,24 +765,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_2_0 },
 						}),
 						q(53406, {	-- The Chamber of Heart (third HoA upgrade)
-							["description"] = createLocalizationString({
-								readable = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
-								constant = "THIS_QUEST_AWARDS_15_ITEM_LEVELS_FOR_YOUR_HEART",
-								export = true,
-								text = {
-									en = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此任务会为你的艾泽拉斯之心提升 +15 物品等级。当你的某个角色与艾泽拉斯勇士达到崇敬后即可接取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
 							["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.1, 44.3, SILITHUS },
@@ -968,24 +798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(50973, {	-- The Heart's Power (first HoA upgrade)
-							["description"] = createLocalizationString({
-								readable = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
-								constant = "THIS_QUEST_AWARDS_15_ITEM_LEVELS_FOR_YOUR_HEART_2",
-								export = true,
-								text = {
-									en = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此任务会为你的艾泽拉斯之心提升 +15 物品等级。当你的某个角色与艾泽拉斯勇士达到友善后即可接取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.1, 44.3, SILITHUS },
 							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
@@ -1032,24 +845,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(61872, {	-- To Current Matters (A)
-							["description"] = createLocalizationString({
-								readable = "This quest becomes available after completing 'A One-Way Ticket to the Heart' and unlocking the three outposts through the War Campaign, and becomes unavailable after setting foot in Nazjatar.",
-								constant = "THIS_QUEST_BECOMES_AVAILABLE_AFTER_COMPLETING_A",
-								export = true,
-								text = {
-									en = "This quest becomes available after completing 'A One-Way Ticket to the Heart' and unlocking the three outposts through the War Campaign, and becomes unavailable after setting foot in Nazjatar.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成“通往心脏的单程票”并通过战争战役解锁三个前哨站后，此任务就会开放；而一旦踏足纳沙塔尔，它就会变得无法接取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest becomes available after completing 'A One-Way Ticket to the Heart' and unlocking the three outposts through the War Campaign, and becomes unavailable after setting foot in Nazjatar.",
 							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
 							["qg"] = 136907,	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
@@ -1059,7 +855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["DisablePartySync"] = true,
 						}),
 						q(61871, {	-- To Current Matters (H)
-							["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_AFTER_COMPLETING_A",
+							["description"] = "This quest becomes available after completing 'A One-Way Ticket to the Heart' and unlocking the three outposts through the War Campaign, and becomes unavailable after setting foot in Nazjatar.",
 							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
 							["qg"] = 136907,	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
@@ -1080,24 +876,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = { i(170486) },	-- Torn Journal Page #25 (QI!)
 						}),
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
-							["description"] = createLocalizationString({
-								readable = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
-								constant = "THIS_QUEST_AWARDS_15_ITEM_LEVELS_FOR_YOUR_HEART_3",
-								export = true,
-								text = {
-									en = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此任务会为你的艾泽拉斯之心提升 +15 物品等级。当你的某个角色与艾泽拉斯勇士达到尊敬后即可接取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
 							["sourceQuest"] = 50973,	-- The Heart's Power
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.1, 44.3, SILITHUS },
@@ -1105,24 +884,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 120,
 						}),
 						q(56263, {	-- Unlocking the Power (A)
-							["description"] = createLocalizationString({
-								readable = "Your Heart of Azeroth needs to be 70 to start the questline.",
-								constant = "YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_70_TO_START",
-								export = true,
-								text = {
-									en = "Your Heart of Azeroth needs to be 70 to start the questline.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的艾泽拉斯之心需要达到 70 级才能开始这条任务线。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["qg"] = 154464,	-- Earthen Guardian
 							["coord"] = { 74.8, 15.2, BORALUS },
 							["timeline"] = { ADDED_8_2_0 },
@@ -1131,7 +893,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["DisablePartySync"] = true,
 						}),
 						q(56260, {	-- Unlocking the Power (H)
-							["description"] = "~L.YOUR_HEART_OF_AZEROTH_NEEDS_TO_BE_70_TO_START",
+							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["qg"] = 154465,	-- Earthen Guardian
 							["coords"] = {
 								-- #if BEFORE SL
@@ -1197,24 +959,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(56185, {	-- Whispers of N'zoth (A)
 							-- #if BEFORE 9.2
 							["sourceQuest"] = 57002,	-- Old Soldier
-							["description"] = createLocalizationString({
-								readable = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
-								constant = "THIS_QUEST_REQUIRES_FINISHING_THE_WAR_CAMPAIGN",
-								export = true,
-								text = {
-									en = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此任务需要完成战争战役，并在任意难度下击败艾萨拉。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							-- #ENDIF
 							["qgs"] = {
 								-- #IF AFTER 9.2
@@ -1240,7 +985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
 							-- #IF BEFORE 9.2
-							["description"] = "~L.THIS_QUEST_REQUIRES_FINISHING_THE_WAR_CAMPAIGN",
+							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							-- #ENDIF
 							-- #if BEFORE 9.2
 							["sourceQuests"] = {
@@ -1331,24 +1076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}),
 						n(152194, {	-- MOTHER
-							["description"] = createLocalizationString({
-								readable = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
-								constant = "MOTHER_SELLS_RANK_3_ESSENCES_FOR_ECHOES_OF_NY",
-								export = true,
-								text = {
-									en = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只要你的账号上至少有一个角色通过其他途径获得过这些精华，母亲就会用尼奥罗萨的回响出售 3 级精华。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
 							["coord"] = { 48.2, 72.5, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_2_0 },
 							["groups"] = sharedData({
@@ -1490,35 +1218,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["cost"] = { { "c", 1755, 10000 } },	-- 10,000 Coalescing Visions
 								}),
 								i(173291, {	-- Luminous Azerite Geode (Rank 4)
-									["description"] = createLocalizationString({
-										readable = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
-										constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT",
-										export = true,
-										text = {
-											en = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "需要完成成就|cffffff00穿越幻象深渊|r。\n",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 									["timeline"] = { REMOVED_9_0_1 },
 									["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
 								}),
 								i(173311, {	-- Resplendent Warden's Badge (Rank 4)
-									["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT",
+									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 									["timeline"] = { REMOVED_9_0_1 },
 									["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
 									["classes"] = TANKS,
 								}),
 								i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
-									["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT",
+									["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 									["timeline"] = {REMOVED_9_0_1 },
 									["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
 									["classes"] = HEALERS,

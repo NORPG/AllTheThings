@@ -22,24 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 		["groups"] = {
 			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO,
 			header(HEADERS.Item, 46017, {	-- Val'anyr, Hammer of Ancient Kings
-				["description"] = createLocalizationString({
-					readable = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
-					constant = "COLLECT_30_X_CFFFF8000FRAGMENT_OF_VAL_ANYR_R",
-					export = true,
-					text = {
-						en = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "从奥杜尔的首领身上收集 30 个|cFFFF8000瓦兰奈尔碎片|r。困难模式的掉落几率更高。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 				["isRaid"] = true,
 				["groups"] = {
@@ -180,24 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				ach(12360, {	-- Lumberjacked
-					["description"] = createLocalizationString({
-						readable = "Must be killed before killing Freya or they will despawn.",
-						constant = "MUST_BE_KILLED_BEFORE_KILLING_FREYA_OR_THEY",
-						export = true,
-						text = {
-							en = "Must be killed before killing Freya or they will despawn.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须在击杀弗蕾亚之前击杀它们，否则它们会消失。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Must be killed before killing Freya or they will despawn.",
 					["timeline"] = { ADDED_7_3_5 },
 					["providers"] = {
 						{ "n", 32915 },	-- Elder Brightleaf
@@ -457,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								{ "n", 32913 },	-- Elder Ironbranch
 								{ "n", 32914 },	-- Elder Stonebark
 							},
-							["description"] = "~L.MUST_BE_KILLED_BEFORE_KILLING_FREYA_OR_THEY",
+							["description"] = "Must be killed before killing Freya or they will despawn.",
 							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 						}),
 					}),
@@ -701,24 +667,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10781),	-- Defeat Algalon the Observer
 							}),
 							ach(3316, {	-- Herald of the Titans
-								["description"] = createLocalizationString({
-									readable = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
-									constant = "WHILE_YOUR_CURRENT_CHARACTER_MAY_NOW_BE_TOO",
-									export = true,
-									text = {
-										en = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "虽然你当前的角色现在可能等级过高而无法获得它，但让玩家知道它的存在是件好事。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
 								["lockCriteria"] =
 									-- #if AFTER SL
@@ -755,24 +704,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["groups"] = {
 							revampAch(2945, {	-- But I'm On Your Side (10 player)
 								["provider"] = { "i", 43499 },	-- Iron Boot Flask
-								["description"] = createLocalizationString({
-									readable = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
-									constant = "USE_THE_IRON_BOOT_FLASK_TOY_BEFORE_ENGAGING_THE",
-									export = true,
-									text = {
-										en = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在与首领交战前使用“铁靴烈酒”玩具。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							}),
 							revampAch(2947),	-- Can't Do That While Stunned (10 player)
 							revampAch(2939),	-- I Choose You, Runemaster Molgeim (10 player)
@@ -1045,24 +977,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10326),	-- The Tortured Champion
 							}),
 							revampAch(3009, {	-- Kiss and Make Up (10 player)
-								["description"] = createLocalizationString({
-									readable = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-									constant = "DURING_PHASE_2_WHEN_SARA_IS_FLYING_ABOVE_YOGG",
-									export = true,
-									text = {
-										en = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在第 2 阶段，当萨拉飞在尤格-萨隆上方时，在她愤怒的状态下对她使用 /kiss。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 								["crs"] = { 33134 },	-- Sara
 							}),
 							revampAch(3014),	-- They're Coming Out of the Walls (10 player)
@@ -1327,7 +1242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								{ "n", 32913 },	-- Elder Ironbranch
 								{ "n", 32914 },	-- Elder Stonebark
 							},
-							["description"] = "~L.MUST_BE_KILLED_BEFORE_KILLING_FREYA_OR_THEY",
+							["description"] = "Must be killed before killing Freya or they will despawn.",
 							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 						}),
 						ach(3259, {	-- Realm First! Celestial Defender
@@ -1348,24 +1263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 					}),
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
-						["description"] = createLocalizationString({
-							readable = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
-							constant = "COLLECT_30_X_CFFFF8000FRAGMENT_OF_VAL_ANYR_R_2",
-							export = true,
-							text = {
-								en = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "从 25 人奥杜尔的首领身上收集 30 个|cFFFF8000瓦兰奈尔碎片|r。困难模式的掉落几率更高。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
 						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 						["title"] = "Val'anyr, Hammer of Ancient Kings",
 						["icon"] = 253399,
@@ -1515,24 +1413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 							i(45087, {	-- Runed Orb
-								["description"] = createLocalizationString({
-									readable = "Can also drop from defeating 10-Man Hard Mode bosses.",
-									constant = "CAN_ALSO_DROP_FROM_DEFEATING_10_MAN_HARD_MODE",
-									export = true,
-									text = {
-										en = "Can also drop from defeating 10-Man Hard Mode bosses.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "也可通过击败 10 人困难模式首领掉落。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Can also drop from defeating 10-Man Hard Mode bosses.",
 							}),
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
@@ -1755,7 +1636,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["groups"] = {
 							revampAch(2946, {	-- But I'm On Your Side (25 player)
 								["provider"] = { "i", 43499 },	-- Iron Boot Flask
-								["description"] = "~L.USE_THE_IRON_BOOT_FLASK_TOY_BEFORE_ENGAGING_THE",
+								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							}),
 							revampAch(2948),	-- Can't Do That While Stunned (25 player)
 							revampAch(2942),	-- I Choose You, Runemaster Molgeim (25 player)
@@ -2064,7 +1945,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10323),	-- The Tortured Champion
 							}),
 							revampAch(3011, {	-- Kiss and Make Up (25 player)
-								["description"] = "~L.DURING_PHASE_2_WHEN_SARA_IS_FLYING_ABOVE_YOGG",
+								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 								["cr"] = 33134,	-- Sara
 							}),
 							revampAch(3017),	-- They're Coming Out of the Walls (25 player)
@@ -2604,7 +2485,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 					["groups"] = {
 						ach(12335, {	-- But I'm On Your Side!
-							["description"] = "~L.USE_THE_IRON_BOOT_FLASK_TOY_BEFORE_ENGAGING_THE",
+							["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							["provider"] = { "i", 43499 },	-- Iron Boot Flask
 						}),
 						ach(12336),	-- Can't Do That While Stunned
@@ -3022,7 +2903,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							crit(39514),	-- The Tortured Champion
 						}),
 						ach(12384, {	-- Kiss and Make Up
-							["description"] = "~L.DURING_PHASE_2_WHEN_SARA_IS_FLYING_ABOVE_YOGG",
+							["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 							["crs"] = { 33134 },	-- Sara
 						}),
 						ach(12397),	-- They're Coming Out of the Walls

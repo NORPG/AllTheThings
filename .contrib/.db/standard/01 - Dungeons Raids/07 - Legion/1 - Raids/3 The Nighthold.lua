@@ -294,24 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(QUESTS, {
 				q(45417, {	-- The Nighthold: Lord of the Shadow Council
-					["description"] = createLocalizationString({
-						readable = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
-						constant = "CLICK_ON_THE_EYE_OF_AMAN_THUL_AFTER_GUL_DAN",
-						export = true,
-						text = {
-							en = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "古尔丹死亡后点击阿曼苏尔之眼以完成任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
 					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
 					["provider"] = { "n", 115367 },	-- Archmage Khadgar
 					["coord"] = { 44.1, 60.1, SURAMAR },
@@ -537,24 +520,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(45381, {	-- The Nighthold: Talisman of the Shal'dorei (Normal)
-						["description"] = createLocalizationString({
-							readable = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_10",
-							export = true,
-							text = {
-								en = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你每周可以在普通难度下立即进入法术之刃阿鲁瑞尔、克洛苏斯和/或艾利桑德。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
 						["altQuests"] = {
 							45382,	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
 							45383,	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
@@ -700,24 +666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(45382, {	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
-						["description"] = createLocalizationString({
-							readable = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_11",
-							export = true,
-							text = {
-								en = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你每周可以在英雄难度下立即进入法术之刃阿鲁瑞尔、克洛苏斯和/或艾利桑德。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 						["qg"] = 110791,	-- First Arcanist Thalyssra
 						["qi"] = 143657,	-- Echo of Time (QI!)
@@ -853,24 +802,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(45383, {	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
-						["description"] = createLocalizationString({
-							readable = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
-							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_12",
-							export = true,
-							text = {
-								en = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你每周可以在史诗难度下立即进入法术之刃阿鲁瑞尔、克洛苏斯和/或艾利桑德。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
 						["qg"] = 110791,	-- First Arcanist Thalyssra
 						["qi"] = 143658,	-- Echo of Time (QI!)
 						["groups"] = { ig(141326) },	-- Talisman of the Shal'dorei (Mythic)

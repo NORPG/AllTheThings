@@ -3,39 +3,39 @@
 -------------------------------------------------------------------
 
 local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
-	["description"] = "~L.REWARDED_AT_52_67_AND_76_RENOWN",
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(RENOWN, {
-			["description"] = "~L.THESE_ARE_REWARDS_AUTOMATICALLY_GRANTED_BY",
+			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["groups"] = {
 				i(186473, {	-- A Tiny Winter Staff (Pepe!)
-					["description"] = "~L.REQUIRES_RENOWN_56",
+					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
 				}),
 				i(186493, {	-- Ardenweald Wilderling (MOUNT!)
-					["description"] = "~L.REQUIRES_RENOWN_45",
+					["description"] = "Requires Renown 45.",
 				}),
 				i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
-					["description"] = "~L.REQUIRES_RENOWN_39",
+					["description"] = "Requires Renown 39.",
 				}),
 				title(442, {	-- Protector of the Weald
-					["description"] = "~L.REQUIRES_RENOWN_80",
+					["description"] = "Requires Renown 80.",
 				}),
 				title(428, {	-- Winter's Envoy
-					["description"] = "~L.REQUIRES_RENOWN_40",
+					["description"] = "Requires Renown 40.",
 				}),
 				iensemble(186497, {	-- Ensemble: Garb of Pure Spirit
-					["description"] = "~L.REQUIRES_RENOWN_60",
+					["description"] = "Requires Renown 60.",
 				}),
 				i(188000, {	-- Grovetender's Pack
-					["description"] = "~L.REWARDED_AT_15_AND_24_RENOWN",
+					["description"] = "Rewarded at 15 and 24 Renown.",
 				}),
 				WISPS_OF_MEMORY,
 				SL_Legendaries({
-					["description"] = "~L.REQUIRES_RENOWN_48",
+					["description"] = "Requires Renown 48.",
 					["groups"] = {
 						i(186565),	-- Memory of Rampant Transference
 						i(187109),	-- Memory of a Blazing Slaughter

@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 6 ------
 				q(69855, {	-- A Climber's Calling
-					["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
@@ -54,24 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
 					["groups"] = {
 						n(187077, {	-- Cymre Brightblade
-							["description"] = createLocalizationString({
-								readable = "Only available when world quest is active.",
-								constant = "ONLY_AVAILABLE_WHEN_WORLD_QUEST_IS_ACTIVE",
-								export = true,
-								text = {
-									en = "Only available when world quest is active.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅在世界任务激活时可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available when world quest is active.",
 							["coord"] = { 22.8, 95.0, THE_WAKING_SHORES },
 							["groups"] = {
 								i(202085, {	-- Bugbiter Tortoise (PET!)

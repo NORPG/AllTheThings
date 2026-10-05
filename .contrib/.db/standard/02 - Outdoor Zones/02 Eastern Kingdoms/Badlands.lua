@@ -507,24 +507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27930, {	-- Devastation
-					["description"] = createLocalizationString({
-						readable = "If you abandon this quest, leave the area then return to the cave.",
-						constant = "IF_YOU_ABANDON_THIS_QUEST_LEAVE_THE_AREA_THEN",
-						export = true,
-						text = {
-							en = "If you abandon this quest, leave the area then return to the cave.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃这个任务，离开该区域然后回到洞穴。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
 					["provider"] = { "o", 206504 },	-- Rhea's Final Note
 					["coord"] = { 18.9, 30.3, BADLANDS },
@@ -595,24 +578,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(5421, {	-- Fiery Blaze Enchantment
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "Save this for an heirloom weapon in Wrath!",
-								constant = "SAVE_THIS_FOR_AN_HEIRLOOM_WEAPON_IN_WRATH",
-								export = true,
-								text = {
-									en = "Save this for an heirloom weapon in Wrath!",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "留到巫妖王之怒时用于传家宝武器！",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Save this for an heirloom weapon in Wrath!",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -1219,7 +1185,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.THIS_QUEST_IS_REPEATABLE_BUT_CAN_ONLY_BE",
+					["description"] = "This quest is repeatable but can only be completed while |cffe50d12Broken Alliances|r or |cff4a54e8Tremors of the Earth|r is in your quest log.",
 					-- #endif
 					["providers"] = {
 						{ "o", 2933 },	-- Seal of the Earth

@@ -181,24 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(KYRAK, {
 				}),
 				n(77081, {	-- The Lanticore
-					["description"] = createLocalizationString({
-						readable = "This rare spawns to the right of Kyrak, the second boss.",
-						constant = "THIS_RARE_SPAWNS_TO_THE_RIGHT_OF_KYRAK_THE",
-						export = true,
-						text = {
-							en = "This rare spawns to the right of Kyrak, the second boss.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此稀有怪刷新在第二个首领凯拉克的右侧。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This rare spawns to the right of Kyrak, the second boss.",
 					["groups"] = {
 						i(117528),	-- Lanticore Spawnling (PET!)
 					},

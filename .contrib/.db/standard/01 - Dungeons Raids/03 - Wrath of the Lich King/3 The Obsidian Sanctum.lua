@@ -136,24 +136,7 @@ local SARTH_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(40430),	-- Majestic Dragon Figurine
 			i(43345),	-- Dragon Hide Bag
 			i(43347, {	-- Satchel of Spoils
-				["description"] = createLocalizationString({
-					readable = "Contains gold.",
-					constant = "CONTAINS_GOLD",
-					export = true,
-					text = {
-						en = "Contains gold.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "包含金币。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Contains gold.",
 			}),
 		},
 	}),
@@ -247,7 +230,7 @@ local SARTH_25MAN_LOOT = d(SARTH_25MAN_DIFFICULTY_ID, {
 			i(40432),	-- Illustration of the Dragon Soul
 			i(43345),	-- Dragon Hide Bag
 			i(43346, {	-- Large Satchel of Spoils
-				["description"] = "~L.CONTAINS_GOLD",
+				["description"] = "Contains gold.",
 			}),
 		},
 	}),

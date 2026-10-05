@@ -72,24 +72,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(8354, {		-- Puddle Jumper
 					-- #if AFTER 8.3.0
-					["description"] = createLocalizationString({
-						readable = "Post-rework, this is only obtainable in the Deepwind Dunk brawl.",
-						constant = "POST_REWORK_THIS_IS_ONLY_OBTAINABLE_IN_THE",
-						export = true,
-						text = {
-							en = "Post-rework, this is only obtainable in the Deepwind Dunk brawl.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "重做之后，此物品只能在深风峡谷乱斗中获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Post-rework, this is only obtainable in the Deepwind Dunk brawl.",
 					-- #endif
 					["timeline"] = { ADDED_5_3_0 },
 				}),

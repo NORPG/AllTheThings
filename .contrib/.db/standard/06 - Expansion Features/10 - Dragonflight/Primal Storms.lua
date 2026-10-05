@@ -209,24 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				ach(16502),	-- Storming the Runway
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["description"] = createLocalizationString({
-					readable = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
-					constant = "THESE_DROPS_APPEAR_TO_BE_AVAILABLE_FROM_ANY",
-					export = true,
-					text = {
-						en = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些掉落似乎来自任何在受原始风暴影响区域内刷新的稀有（无论是否为原始生物）。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
 				["crs"] = {
 					193644,	-- Bouldron
 					193645,	-- Crystalus

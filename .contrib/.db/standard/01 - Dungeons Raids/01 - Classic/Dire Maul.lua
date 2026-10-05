@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						WINTERSPRING,
 					}),
 					-- #if AFTER 4.0.3
-					["description"] = "~L.THIS_IS_A_HIDDEN_REPUTATION_IT_MIGHT_NOT_COUNT",
+					["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 					["collectible"] = false,
 					-- #endif
 				}),
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.USE_THE_ITEMS_ON_THE_BROKEN_TRAP_TO_TRAP_GUARD",
+					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["cost"] = {
 						{ "i", 15994, 1 },	-- Thorium Widget
 						{ "i", 3829, 1 },	-- Frost Oil
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = lvlsquish(56, 56, 15),
 				}),
 				q(27118, {	-- A Broken Trap
-					["description"] = "~L.YOU_MUST_TRAP_GUARD_SLIP_KIK_IN_ORDER_TO",
+					["description"] = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
 					["provider"] = { "o", 179485 },	-- Broken Trap
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -292,7 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(5527, {	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["description"] = "~L.THE_CHARACTER_MUST_FIRST_VISIT_DIRE_MAUL_SO",
+					["description"] = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILITHUS },
 					["lvl"] = 56,
@@ -525,7 +525,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(5525, {	-- Free Knot!
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.FREEING_HIM_GETS_YOU_ACCESS_TO_HIS_CACHE_NOTE",
+					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
 					["qg"] = 14338,	-- Knot Thimblejack
@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7429, {	-- Free Knot! (repeatable)
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.FREEING_HIM_GETS_YOU_ACCESS_TO_HIS_CACHE_NOTE",
+					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
 					["sourceQuest"] = 5525,	-- Free Knot!
@@ -936,7 +936,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["requireSkill"] = LEATHERWORKING,
 						}),
 						i(18258, {	-- Gordok Ogre Suit
-							["description"] = "~L.BEFORE_USING_THIS_CLEAR_THE_TRASH_BEFORE",
+							["description"] = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
 						}),
 					},
 				}),
@@ -981,7 +981,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(5528, {	-- The Gordok Taste Test
-					["description"] = "~L.WITH_STOMPER_KREEG_LEFT_ALIVE_KILL",
+					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -992,7 +992,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27114, {	-- The Gordok Taste Test
-					["description"] = "~L.WITH_STOMPER_KREEG_LEFT_ALIVE_KILL",
+					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -1141,7 +1141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7703, {	-- Unfinished Gordok Business
-					["description"] = "~L.KILL_CFFFFD700KING_GORDOK_R_AND_THEN_RETURN_TO",
+					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
@@ -1159,7 +1159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 				}),
 				q(27124, {	-- Unfinished Gordok Business
-					["description"] = "~L.KILL_CFFFFD700KING_GORDOK_R_AND_THEN_RETURN_TO",
+					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -1185,17 +1185,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					i(18640),	-- Happy Fun Rock
 					i(18333, {	-- Libram of Focus
 						-- #if AFTER 4.0.3
-						["description"] = "~L.THIS_STILL_DROPS_DESPITE_BEING_COMPLETELY",
+						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
 					i(18334, {	-- Libram of Protection
 						-- #if AFTER 4.0.3
-						["description"] = "~L.THIS_STILL_DROPS_DESPITE_BEING_COMPLETELY",
+						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
 					i(18332, {	-- Libram of Rapidity
 						-- #if AFTER 4.0.3
-						["description"] = "~L.THIS_STILL_DROPS_DESPITE_BEING_COMPLETELY",
+						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
 					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21982, {	-- Ogre Warbeads
@@ -1219,7 +1219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(COMMON_BOSS_DROPS, {
 				["provider"] = { "o", 179547 },	-- A Dusty Tome
 				-- #if BEFORE 4.0.3
-				["description"] = "~L.THE_FOLLOWING_ITEMS_CAN_DROP_FROM_ANY_BOSS_IN",
+				["description"] = "The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",
 				-- #endif
 				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
@@ -1380,7 +1380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					}),
 					n(14354, {	-- Pusillin
-						["description"] = "~L.TALK_TO_HIM_AND_THEN_CHASE_HIM_EVENTUALLY_HE",
+						["description"] = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
 						["groups"] = {
 							i(18249, {	-- Crescent Key
 								["description"] =
@@ -1487,10 +1487,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					n(11491, {	-- Old Ironbark
-						["description"] = "~L.TALK_TO_HIM_FOR_HIM_TO_BREAK_DOWN_THE_DOOR",
+						["description"] = "Talk to him for him to break down the door.",
 					}),
 					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {	-- Isalien
-						["description"] = "~L.THIS_BOSS_CAN_BE_SUMMONED_USING_ITEMS_FROM_THE",
+						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
 						-- #if BEFORE 6.0.2
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
@@ -1536,7 +1536,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["creatureID"] = 11492,
 						["groups"] = {
 							i(18501, {	-- Felvine Shard
-								["description"] = "~L.SPAWNS_UNDER_THE_VINES_NEAR_THE_LAST_BOSS_IN",
+								["description"] = "Spawns under the vines near the last boss in Dire Maul East.",
 								["provider"] = { "o", 179559 },	-- Felvine Shard
 							}),
 							i(18321),	-- Energetic Rod
@@ -1602,7 +1602,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							-- #if BEFORE 4.0.3
-							["description"] = "~L.NOTE_DO_NOT_FREE_KNOT_IF_YOU_ARE_DOING_A",
+							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							-- #endif
 							["crs"] = {
 								14325,	-- Captain Kromcrush
@@ -1620,7 +1620,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					})),
 					n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 						q(77194, {	-- Free Knot!
-							["description"] = "~L.THIS_QUEST_BECOMES_OBTAINABLE_ONCE_A_GORDOK",
+							["description"] = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",
 							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 							["repeatable"] = true,
@@ -1638,7 +1638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					})),
 					n(COMMON_BOSS_DROPS, {
-						["description"] = "~L.THE_FOLLOWING_ITEMS_CAN_DROP_FROM_ANY_OF_THE",
+						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
 							14326,	-- Guard Mol'dar
 							14321,	-- Guard Fengus
@@ -1698,7 +1698,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					e(411, {	-- Guard Mol'dar
 						["creatureID"] = 14326,
 						-- #if BEFORE 4.0.3
-						["description"] = "~L.IF_YOU_DO_NOT_HAVE_A_WAY_TO_OPEN_THE_INNER_DOOR",
+						["description"] = "If you do not have a way to open the inner door, you can kill him for the Inner Door Key.\n\nDoing so will invalidate your Tribute Run.",
 						-- #endif
 						["groups"] = {
 							-- #if BEFORE 7.3.5
@@ -1748,7 +1748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18464),	-- Gordok Nose Ring
 							-- #endif
 							n(VENDORS, {
-								["description"] = "~L.AFTER_BECOMING_THE_KING_YOU_CAN_COME_BACK_TO",
+								["description"] = "After becoming the king, you can come back to Kreeg to buy some drinks.",
 								["groups"] = {
 									i(18269),	-- Gordok Green Grog
 									i(18284),	-- Kreeg's Stout Beatdown
@@ -1892,7 +1892,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					o(179499, {	-- Ogre Tannin Basket
-						["description"] = "~L.BEWARE_LOOTING_THE_OGRE_TANNIN_WILL_CAUSE_A",
+						["description"] = "Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",
 						["groups"] = {
 							i(18240),	-- Ogre Tannin
 						},
@@ -1937,7 +1937,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18483),	-- Mana Channeling Wand
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228064, {	-- Observer's Shield
-								["description"] = "~L.THIS_DOESN_T_APPEAR_TO_HAVE_BEEN_ADDED_YET",
+								["description"] = "This doesn't appear to have been added yet.",
 								["timeline"] = { CREATED_1_15_3 },
 							})),
 							-- #endif
@@ -1949,7 +1949,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228062, {	-- Insightful Hood
-								["description"] = "~L.THIS_DOESN_T_APPEAR_TO_HAVE_BEEN_ADDED_YET",
+								["description"] = "This doesn't appear to have been added yet.",
 								["timeline"] = { CREATED_1_15_3 },
 							})),
 							-- #endif
@@ -2012,7 +2012,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					o(179564, {	-- Gordok Tribute Chest
-						["description"] = "~L.SPEAK_WITH_MIZZLE_AFTER_KILLING_CFFFFD700KING",
+						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
 						["provider"] = { "n", 14353 },	-- Mizzle the Crafty
 						["modelScale"] = 3,
 						["groups"] = {
@@ -2082,7 +2082,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228486, {	-- Treant's Bane
-								["description"] = "~L.THERE_S_NO_EVIDENCE_THAT_THIS_VERSION_HAS",
+								["description"] = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
 								["timeline"] = { CREATED_1_15_3 },
 							})),
 							-- #endif
@@ -2206,7 +2206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					n(11467, {	-- Tsu'zee
-						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+						["description"] = "This is a Rare Creature and, as such, is not always present.",
 						["groups"] = {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228061, {	-- Brightspark Gloves
@@ -2320,10 +2320,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					n(16032, {	-- Falrin Treeshaper <House of Shen'dralar>
-						["description"] = "~L.FOUND_IN_THE_DIRE_MAUL_LIBRARY",
+						["description"] = "Found in the Dire Maul Library.",
 						["groups"] = {
 							n(SPECIAL, {
-								["description"] = "~L.AVAILABLE_IF_A_SPECIFIC_QUEST_9015_HAS_BEEN",
+								["description"] = "Available if a specific Quest (9015) has been completed.",
 								["sourceQuest"] = 9015,	-- The Challenge
 								["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 								["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
@@ -2337,7 +2337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["creatureID"] = 11486,
 						["groups"] = {
 							i(18336, {	-- Gauntlet of Gordok Might
-								["description"] = "~L.IN_THE_CORNER_OF_THE_ROOM_THAT_THE_PRINCE_IS_IN",
+								["description"] = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
 								["provider"] = { "o", 179545 },	-- The Prince's Chest
 							}),
 							-- #if SEASON_OF_DISCOVERY

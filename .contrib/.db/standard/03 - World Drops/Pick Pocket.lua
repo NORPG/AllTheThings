@@ -3,36 +3,19 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, {
 	pickpocketing(true, {
-		["description"] = "~L.A_ROGUE_CAN_USE_THEIR_PICK_POCKET_SKILL_TO",
+		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
 		["groups"] = {
 			expansion(EXPANSION.CLASSIC, {
 				i(6150, {	-- A Frayed Knot
-					["description"] = "~L.CAN_BE_PICKPOCKETED_FROM_CLASSIC_HUMANOIDS",
+					["description"] = "Can be pickpocketed from Classic humanoids.",
 				}),
 				i(5373, {	-- Lucky Charm
-					["description"] = "~L.WHILE_THERE_S_NO_EVIDENCE_TO_SUGGEST_THAT",
+					["description"] = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
 				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				i(37674, {	-- An Unopened Tome of Advice
-					["description"] = createLocalizationString({
-						readable = "If only they would have read this.",
-						constant = "IF_ONLY_THEY_WOULD_HAVE_READ_THIS",
-						export = true,
-						text = {
-							en = "If only they would have read this.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "要是他们读过这个就好了。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If only they would have read this.",
 					["coord"] = { 47.8, 49.4, DRAGONBLIGHT },
 					["cr"] = 27539,	-- Frigid Necromancer <Cult of the Damned>
 				}),
@@ -41,29 +24,12 @@ root(ROOTS.WorldDrops, {
 				}),
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
-						["description"] = createLocalizationString({
-							readable = "Can be pickpocketed from Northrend humanoids.",
-							constant = "CAN_BE_PICKPOCKETED_FROM_NORTHREND_HUMANOIDS",
-							export = true,
-							text = {
-								en = "Can be pickpocketed from Northrend humanoids.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可从诺森德的人型生物身上偷窃获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be pickpocketed from Northrend humanoids.",
 						["timeline"] = { ADDED_3_0_2 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),
 					i(36862, {	-- Worn Troll Dice (TOY!)
-						["description"] = "~L.CAN_BE_PICKPOCKETED_FROM_NORTHREND_HUMANOIDS",
+						["description"] = "Can be pickpocketed from Northrend humanoids.",
 						["timeline"] = { ADDED_3_0_2 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),
@@ -72,24 +38,7 @@ root(ROOTS.WorldDrops, {
 			expansion(EXPANSION.CATA, {
 				filter(TOYS, {
 					i(63269, {	-- Loaded Gnomish Dice (TOY!)
-						["description"] = createLocalizationString({
-							readable = "Can be pickpocketed from Cataclysm humanoids.",
-							constant = "CAN_BE_PICKPOCKETED_FROM_CATACLYSM_HUMANOIDS",
-							export = true,
-							text = {
-								en = "Can be pickpocketed from Cataclysm humanoids.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可从大地的裂变人形生物身上偷窃获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be pickpocketed from Cataclysm humanoids.",
 						["timeline"] = { ADDED_4_0_1 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),

@@ -41,24 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["lvl"] = 110,
 				}),
 				q(45296, {	-- No Bones About It
-					["description"] = createLocalizationString({
-						readable = "You must complete the full quest chain before the quest item will drop from the boss.",
-						constant = "YOU_MUST_COMPLETE_THE_FULL_QUEST_CHAIN_BEFORE",
-						export = true,
-						text = {
-							en = "You must complete the full quest chain before the quest item will drop from the boss.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须完成整条任务链，任务物品才会从首领身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must complete the full quest chain before the quest item will drop from the boss.",
 					["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
 					["provider"] = { "i", 143556 },	-- Charred Bone Fragments
 					["groups"] = { i(142469) },	-- Violet Seal of the Grand Magus
@@ -169,48 +152,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(TREASURES, {
 				i(208048, {	-- Ritual of the Voidmaw Felhunter (CI!)
-					["description"] = createLocalizationString({
-						readable = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
-						constant = "LOCATED_BY_A_BOOKSHELF_ON_THE_SECOND_FLOOR_OF",
-						export = true,
-						text = {
-							en = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于军团再临版本卡拉赞图书馆二楼的书架旁，需在击杀法力吞噬者之后。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
 					["provider"] = { "o", 405286 },	-- Torn Page
 					["timeline"] = { ADDED_10_1_5 },
 				}),
 			}),
 			n(VENDORS, {
 				n(114815, {	-- Koren
-					["description"] = createLocalizationString({
-						readable = "This vendor is located in the Livery Stables.",
-						constant = "THIS_VENDOR_IS_LOCATED_IN_THE_LIVERY_STABLES_2",
-						export = true,
-						text = {
-							en = "This vendor is located in the Livery Stables.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此商人位于马厩内。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This vendor is located in the Livery Stables.",
 					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
 						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
@@ -244,24 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["groups"] = {
 						i(138797),	-- Illusion: Mongoose (ILLUSION!)
 						i(142246, {	-- Broken Pocket Watch
-							["description"] = createLocalizationString({
-								readable = "This is a rare drop that eventually leads to adding Moroes as a follower.",
-								constant = "THIS_IS_A_RARE_DROP_THAT_EVENTUALLY_LEADS_TO",
-								export = true,
-								text = {
-									en = "This is a rare drop that eventually leads to adding Moroes as a follower.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这是稀有掉落，最终可以让你把莫罗斯招募为追随者。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 						}),
 					},
 				}),
@@ -466,24 +398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						},
 					}),
 					ach(11430, {	-- One Night in Karazhan
-						["description"] = createLocalizationString({
-							readable = "1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
-							constant = "1_GO_TO_OPERA_AND_COMPLETE_THE_ENCOUNTER_CLICK",
-							export = true,
-							text = {
-								en = "1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "1. 前往歌剧院并完成战斗。点击观众席中的碎片。\n\n2. 前往贞洁圣女处。点击首领前那个房间里的碎片。\n\n3. 前往莫罗斯并完成战斗。点击桌子后面的碎片。拾取莫罗斯死后出现在地上的钥匙。\n\n4. 前往蜘蛛房间（仆从区最右上角）并点击碎片。\n\n5. 前往馆长，完成战斗，然后点击碎片。\n\n跑到燃烧的远征时期夜之魇被召唤的地方。麦迪文会在那里。\n\n与麦迪文交谈。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
 						["crs"] = {
 							115038,	-- Image of Medivh
 							115013,	-- Soul Fragment
@@ -605,46 +520,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				n(114895, {	-- Nightbane
-					["description"] = createLocalizationString({
-						readable = "In order to summon Nightbane, you must find Soul Fragments scattered throughout Karazhan.\n\n1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
-						constant = "IN_ORDER_TO_SUMMON_NIGHTBANE_YOU_MUST_FIND_SOUL",
-						export = true,
-						text = {
-							en = "In order to summon Nightbane, you must find Soul Fragments scattered throughout Karazhan.\n\n1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "要召唤夜之魇，你必须找到散落在卡拉赞各处的灵魂碎片。\n\n1. 前往歌剧院并完成该场战斗。点击观众席中的碎片。\n\n2. 前往贞洁圣女处。在首领房间前的房间里点击碎片。\n\n3. 前往莫罗斯并完成该场战斗。点击桌子后面的碎片。拾取莫罗斯死亡后出现在地上的钥匙。\n\n4. 前往蜘蛛房间（仆役区最右上角）并点击碎片。\n\n5. 前往馆长，完成该场战斗，然后点击碎片。\n\n跑向当年燃烧的远征时期召唤夜之魇的位置。麦迪文会在那里。\n\n与麦迪文交谈。\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "In order to summon Nightbane, you must find Soul Fragments scattered throughout Karazhan.\n\n1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
 					["cr"] = 115038,	-- Image of Medivh
 					["groups"] = {
 						i(142552),	-- Smoldering Ember Wyrm (MOUNT!)
 						i(143556, {	-- Charred Bone Fragments
-							["description"] = createLocalizationString({
-								readable = "You must complete the full quest chain before this will drop from the boss.",
-								constant = "YOU_MUST_COMPLETE_THE_FULL_QUEST_CHAIN_BEFORE_2",
-								export = true,
-								text = {
-									en = "You must complete the full quest chain before this will drop from the boss.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你必须完成整条任务链，此物品才会从首领身上掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You must complete the full quest chain before this will drop from the boss.",
 						}),
 						i(142303),	-- Chestplate of Impenetrable Darkness
 						i(142203),	-- Harness of Smoldering Betrayal

@@ -320,24 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 						-- Cosmetic
 						i(205421, {	-- Ponzo's Scheming Topper
-							["description"] = createLocalizationString({
-								readable = "Hat appears when you click dialog options (for the best price - click it a few times)",
-								constant = "HAT_APPEARS_WHEN_YOU_CLICK_DIALOG_OPTIONS_FOR",
-								export = true,
-								text = {
-									en = "Hat appears when you click dialog options (for the best price - click it a few times)",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "点击对话选项时会出现帽子（想要最好的价格就多点几次）",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Hat appears when you click dialog options (for the best price - click it a few times)",
 							["cost"] = { { "i", BARTER_BOULDER, 249 } },
 						}),
 					},

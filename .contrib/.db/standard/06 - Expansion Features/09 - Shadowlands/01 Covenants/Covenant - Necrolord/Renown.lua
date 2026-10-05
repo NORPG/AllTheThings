@@ -3,23 +3,23 @@
 -------------------------------------------------------------------
 
 local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
-	["description"] = "~L.REWARDED_AT_52_67_AND_76_RENOWN",
+	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(RENOWN, {
-			["description"] = "~L.THESE_ARE_REWARDS_AUTOMATICALLY_GRANTED_BY",
+			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 			["groups"] = {
 				i(186524, {	-- A Tiny Vial of Slime (Pepe!)
-					["description"] = "~L.REQUIRES_RENOWN_56",
+					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
 				}),
 				i(181821, {	-- Armored Plaguerot Tauralus (MOUNT!)
-					["description"] = "~L.REQUIRES_RENOWN_39",
+					["description"] = "Requires Renown 39.",
 				}),
 				i(186487, {	-- Maldraxxian Corpsefly (MOUNT!)
-					["description"] = "~L.REQUIRES_RENOWN_45",
+					["description"] = "Requires Renown 45.",
 				}),
 				--[[
 				title_gendered(426, 427, {	-- Baron / Baroness
@@ -27,23 +27,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 				]]--
 				title_male(426, {	-- Baron <Name>
-					["description"] = "~L.REQUIRES_RENOWN_40",
+					["description"] = "Requires Renown 40.",
 				}),
 				title_female(427, {	-- Baroness <Name>
-					["description"] = "~L.REQUIRES_RENOWN_40",
+					["description"] = "Requires Renown 40.",
 				}),
 				title(443, {	-- Sword of the Primus
-					["description"] = "~L.REQUIRES_RENOWN_80",
+					["description"] = "Requires Renown 80.",
 				}),
 				iensemble(186503, {	-- Ensemble: Initiate's Necromantle Vestments
-					["description"] = "~L.REQUIRES_RENOWN_60",
+					["description"] = "Requires Renown 60.",
 				}),
 				i(188004, {	-- Crate of Anima-Infused Parts
-					["description"] = "~L.REWARDED_AT_15_AND_24_RENOWN",
+					["description"] = "Rewarded at 15 and 24 Renown.",
 				}),
 				WISPS_OF_MEMORY,
 				SL_Legendaries({
-					["description"] = "~L.REQUIRES_RENOWN_48",
+					["description"] = "Requires Renown 48.",
 					["groups"] = {
 						i(186568),	-- Memory of an Abomination's Frenzy
 						i(187118),	-- Memory of the Demonic Oath

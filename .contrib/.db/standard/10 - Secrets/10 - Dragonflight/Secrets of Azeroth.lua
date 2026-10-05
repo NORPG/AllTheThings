@@ -42,24 +42,7 @@ end
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 	n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-		["description"] = createLocalizationString({
-			readable = "***Using Debug Mode is recommended.***\n",
-			constant = "USING_DEBUG_MODE_IS_RECOMMENDED",
-			export = true,
-			text = {
-				en = "***Using Debug Mode is recommended.***\n",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "***建议使用调试模式。***\n",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "***Using Debug Mode is recommended.***\n",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(18644, {	-- Community Rumor Mill
@@ -197,24 +180,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 						{ 43.9, 37.4, THOUSAND_NEEDLES },	-- Cave Entrance
 						{ 42.7, 30.6, THOUSAND_NEEDLES },	-- Loose Dirt Mound
 					},
-					["description"] = createLocalizationString({
-						readable = "In underwater cave.",
-						constant = "IN_UNDERWATER_CAVE",
-						export = true,
-						text = {
-							en = "In underwater cave.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在水下洞穴中。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "In underwater cave.",
 				}),
 				o(405531, {	-- Loose Dirt Mound
 					["questID"] = 77292,
@@ -224,24 +190,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					["questID"] = 77290,
 					["coord"] = { 26.2, 68.6, NETHERSTORM },
 					["provider"] = { "i", 208092 },	-- Torch of Pyrreth
-					["description"] = createLocalizationString({
-						readable = "You need three people to each channel their 'Torch of Pyrreth' on each small crystal.",
-						constant = "YOU_NEED_THREE_PEOPLE_TO_EACH_CHANNEL_THEIR",
-						export = true,
-						text = {
-							en = "You need three people to each channel their 'Torch of Pyrreth' on each small crystal.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要三个人各自对每块小水晶引导他们的“派瑞斯火炬”。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You need three people to each channel their 'Torch of Pyrreth' on each small crystal.",
 				}),
 				o(405532, {	-- Loose Dirt Mound
 					["questID"] = 77293,
@@ -251,24 +200,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					["questID"] = 77296,
 					["coord"] = { 25.2, 71.5, THE_AZURE_SPAN },
 					["provider"] = { "i", 208092 },	-- Torch of Pyrreth
-					["description"] = createLocalizationString({
-						readable = "Use your 'Torch of Pyrreth' near the snowmen.",
-						constant = "USE_YOUR_TORCH_OF_PYRRETH_NEAR_THE_SNOWMEN",
-						export = true,
-						text = {
-							en = "Use your 'Torch of Pyrreth' near the snowmen.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在雪人附近使用你的“皮雷斯火把”。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use your 'Torch of Pyrreth' near the snowmen.",
 				}),
 				o(405533, {	-- Loose Dirt Mound
 					["questID"] = 77294,
@@ -282,46 +214,12 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					["questID"] = 77298,
 					["coord"] = { 64.7, 55.4, BLASTED_LANDS },
 					["provider"] = { "i", 208092 },	-- Torch of Pyrreth
-					["description"] = createLocalizationString({
-						readable = "Use your 'Torch of Pyrreth' on the ritual crystal.",
-						constant = "USE_YOUR_TORCH_OF_PYRRETH_ON_THE_RITUAL_CRYSTAL",
-						export = true,
-						text = {
-							en = "Use your 'Torch of Pyrreth' on the ritual crystal.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在仪式水晶上使用你的“皮雷斯火把”。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use your 'Torch of Pyrreth' on the ritual crystal.",
 				}),
 				o(405538, {	-- Loose Dirt Mound
 					["questID"] = 77299,
 					["coord"] = { 57.8, 26.3, NAGRAND },
-					["description"] = createLocalizationString({
-						readable = "On the island floating in the air.",
-						constant = "ON_THE_ISLAND_FLOATING_IN_THE_AIR",
-						export = true,
-						text = {
-							en = "On the island floating in the air.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在漂浮于空中的岛屿上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "On the island floating in the air.",
 				}),
 				o(410181, {	-- Loose Dirt Mound
 					["questID"] = 78208,
@@ -339,24 +237,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 							{ 36.8, 35.6, GRIZZLY_HILLS },	-- Start of Log Ride
 							{ 20.2, 81.3, GRIZZLY_HILLS },	-- Loose Dirt Mound
 						},
-						["description"] = createLocalizationString({
-							readable = "Talk to the NPC at the northern waypoint to take a ride on the log. At the end, you will receive the WHEE! buff which is required to see the Loose Dirt Mound.",
-							constant = "TALK_TO_THE_NPC_AT_THE_NORTHERN_WAYPOINT_TO",
-							export = true,
-							text = {
-								en = "Talk to the NPC at the northern waypoint to take a ride on the log. At the end, you will receive the WHEE! buff which is required to see the Loose Dirt Mound.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与北部路径点的 NPC 交谈即可乘坐原木漂流。结束后你会获得呜呼！增益，这是看到松散土堆所必需的。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Talk to the NPC at the northern waypoint to take a ride on the log. At the end, you will receive the WHEE! buff which is required to see the Loose Dirt Mound.",
 					},
 					["hordeQuestData"] = {
 						["objectID"] = 409835,
@@ -364,24 +245,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 							{ 35.1, 34.7, GRIZZLY_HILLS },	-- Start of Log Ride
 							{ 10.9, 74.9, GRIZZLY_HILLS },	-- Loose Dirt Mound
 						},
-						["description"] = createLocalizationString({
-							readable = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
-							constant = "TAKE_THE_LOG_RIDE_MUST_HAVE_WHEE_BUFF_FOR_LOOSE",
-							export = true,
-							text = {
-								en = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "乘坐原木漂流，必须拥有呜呼！增益才能看到松散的土堆。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
 					},
 				}),
 				o(405541, {	-- Loose Dirt Mound
@@ -413,24 +277,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					-- If someone figures this out, please adjust the quest
 				}),
 				q(77203, {	-- Preserving Rarities
-					["description"] = createLocalizationString({
-						readable = "Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",
-						constant = "TALK_TO_KATHOS_AGAIN_TO_GET_A_MYSTERY_BOX_OPEN",
-						export = true,
-						text = {
-							en = "Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "再次与卡索斯交谈，获得一个神秘盒子并打开它，即可得到一只黄金圣杯。\n将圣杯送到瓦德拉肯银行（58.88 54.09）。\n你可以右键点击该任务来放置所有坐标。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",
 					["sourceQuests"] = { 77202 },	-- The Preservationists
 					["qg"] = 206864,	-- Preservationist Kathos
 					["coords"] = {
@@ -445,24 +292,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					},
 				}),
 				q(76735, {	-- Rise in Relic Theft
-					["description"] = createLocalizationString({
-						readable = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
-						constant = "DELIVER_THE_TUSKARR_SPEAR_TO_ELDOR_POA_IN_AZURE",
-						export = true,
-						text = {
-							en = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将海象人长矛交给碧蓝林海的埃尔多·波阿（12.4 49.2）。\n将新获得的绍姆科长矛交给龙骨荒野的长者科纳尼（48.0 74.8）。\n最后将长矛交给北风苔原的雕像（33.63 58.45）。\n你可以右键点击任务来放置所有坐标。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
 					["sourceQuests"] = { 77203 },	-- Preserving Rarities
 					["qg"] = 206864,	-- Preservationist Kathos
 					["coords"] = {
@@ -485,24 +315,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 							["cost"] = { { "i", 207580, 1 } },	-- Shomko's Unyielding Spear
 						}),
 						n(208182, {	-- Crazed Looter
-							["description"] = createLocalizationString({
-								readable = "Spawns after using spear at statue",
-								constant = "SPAWNS_AFTER_USING_SPEAR_AT_STATUE",
-								export = true,
-								text = {
-									en = "Spawns after using spear at statue",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在雕像处使用长矛后刷新。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Spawns after using spear at statue",
 							["coord"] = { 33.63, 58.45, BOREAN_TUNDRA },
 							["groups"] = { i(207594) },	-- Looter's Purse
 						}),
@@ -576,24 +389,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				})),
 				OneTimeAccountLocked(77513,	-- The Tricked-Out Thinking Cap (Account-Wide Lock)
 				q(76504, {	-- The Tricked-Out Thinking Cap
-					["description"] = createLocalizationString({
-						readable = "Use Toy to accept quest. Follow arrows.",
-						constant = "USE_TOY_TO_ACCEPT_QUEST_FOLLOW_ARROWS",
-						export = true,
-						text = {
-							en = "Use Toy to accept quest. Follow arrows.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用玩具接取任务。跟随箭头。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Toy to accept quest. Follow arrows.",
 					["sourceQuest"] = 77237,	-- Unfinished Thinking Cap
 					["provider"] = { "n", 207697 },	-- Fangli Hoot
 					["coords"] = {
@@ -676,24 +472,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				})),
 				OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 				q(77263, {	-- The Torch of Pyrreth
-					["description"] = createLocalizationString({
-						readable = "Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",
-						constant = "USE_TORCH_OF_PYRRETH_58_5_23_6_VALDRAKKEN",
-						export = true,
-						text = {
-							en = "Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在瓦德拉肯 58.5, 23.6 处使用皮雷斯火把。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",
 					["sourceQuest"] = 77282,	-- Artifact Secured
 					["qg"] = 206864,	-- Preservationist Kathos
 					["coord"] = { 47.4, 48.1, VALDRAKKEN },
@@ -774,24 +553,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				})),
 				OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 				q(76456, {	-- Using the Idol
-					["description"] = createLocalizationString({
-						readable = "Use the Idol. It points towards objectives.",
-						constant = "USE_THE_IDOL_IT_POINTS_TOWARDS_OBJECTIVES",
-						export = true,
-						text = {
-							en = "Use the Idol. It points towards objectives.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用神像。它会指向目标。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the Idol. It points towards objectives.",
 					["sourceQuest"] = 77304,	-- An Idol in Hand
 					["qg"] = 206864,	-- Preservationist Kathos
 					["coord"] = { 47.4, 48.1, VALDRAKKEN },
@@ -807,24 +569,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 						i(206948),	-- A Clue: The Shifting Sands (QI!)
 						-- These Time Lost Fragments spawn all over the Shifting Sands
 						o(404319, {	-- Time-Lost Fragment
-							["description"] = createLocalizationString({
-								readable = "Many locations, each location respawns after ~60 seconds.",
-								constant = "MANY_LOCATIONS_EACH_LOCATION_RESPAWNS_AFTER_60",
-								export = true,
-								text = {
-									en = "Many locations, each location respawns after ~60 seconds.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "多个位置，每个位置约 60 秒后重新刷新。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Many locations, each location respawns after ~60 seconds.",
 							["coords"] = {
 								{ 57.3, 82.1, THALDRASZUS },
 								{ 58.5, 78.4, THALDRASZUS },
@@ -875,24 +620,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					["groups"] = {
 						i(208829),	-- Titan Key Materials List (QI!)
 						o(407691, {	-- Dusty Red Pellets
-							["description"] = createLocalizationString({
-								readable = "Very tiny rocks. Many locations. Use Idol of Ohn'ahra to find them.",
-								constant = "VERY_TINY_ROCKS_MANY_LOCATIONS_USE_IDOL_OF_OHN",
-								export = true,
-								text = {
-									en = "Very tiny rocks. Many locations. Use Idol of Ohn'ahra to find them.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "非常小的岩石。位置很多。使用欧恩哈拉神像来寻找它们。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Very tiny rocks. Many locations. Use Idol of Ohn'ahra to find them.",
 							["coords"] = {
 								{ 47.6, 46.2, THE_WAKING_SHORES },
 								{ 47.9, 46.3, THE_WAKING_SHORES },
@@ -977,7 +705,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 							["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
 						})),
 						o(408939, {	-- Banner Stand
-							["description"] = "~L.IN_CAVE",
+							["description"] = "In cave.",
 							["questID"] = 77578,
 							["coord"] = { 42.6, 50.9, OHNAHRAN_PLAINS },
 							["cost"] = { { "i", 209061, 1 } },	-- Ishtaar Rethon's Burial Banner
@@ -1010,24 +738,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 							["coord"] = { 47.2, 64.4, KARAZHAN },
 						}))),
 						o(408980, {	-- Tyr's Legacy
-							["description"] = createLocalizationString({
-								readable = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
-								constant = "THERE_ARE_THREE_CLUES_INSIDE_THE_GUARDIAN_S",
-								export = true,
-								text = {
-									en = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "守护者图书馆里有三条线索。动动脑筋找出全部三条线索以及最终的物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
 							["coord"] = { 33.1, 50.9, KARAZHAN },
 							["groups"] = { i(208889) },	-- Tyr's Legacy (QS!)
 						}),
@@ -1035,24 +746,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				}),
 				OneTimeAccountLocked(77579,	-- A Legacy of Secrets (Account-Wide Lock)
 				q(77908, {	-- A Legacy of Secrets
-					["description"] = createLocalizationString({
-						readable = "Quest takes place in Old Karazhan Raid",
-						constant = "QUEST_TAKES_PLACE_IN_OLD_KARAZHAN_RAID",
-						export = true,
-						text = {
-							en = "Quest takes place in Old Karazhan Raid",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "任务发生在旧版卡拉赞团队副本中",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Quest takes place in Old Karazhan Raid",
 					["provider"] = { "i", 208889 },	-- Tyr's Legacy (QS!)
 				})),
 
@@ -1098,24 +792,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				}),
 				OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 				q(77934, {	-- A Complete Inventory
-					["description"] = createLocalizationString({
-						readable = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
-						constant = "USE_YOUR_IDOL_OF_OHN_AHRA_TO_HELP_FIND_THE",
-						export = true,
-						text = {
-							en = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用你的欧恩哈拉神像来帮助寻找书页。\n\n全部找到后任务会自动开始。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
 					["sourceQuests"] = {
 						78053,	-- Auction House Bill of Sale
 						78054,	-- Void Storage Receipt
@@ -1195,24 +872,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 						OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 						hqt(77974, {
 							["name"] = "First Lock",	-- not sure how else to name this trigger
-							["description"] = createLocalizationString({
-								readable = "Unlock the first lock by using your torch at all 8 Tyrhold staute.",
-								constant = "UNLOCK_THE_FIRST_LOCK_BY_USING_YOUR_TORCH_AT",
-								export = true,
-								text = {
-									en = "Unlock the first lock by using your torch at all 8 Tyrhold staute.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在全部 8 座提尔要塞雕像处使用你的火把，以解开第一道锁。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Unlock the first lock by using your torch at all 8 Tyrhold staute.",
 							["groups"] = {
 								OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 								hqt(77964, name(HEADERS.Item, 208092, {	-- Orb #1
@@ -1263,110 +923,42 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 						OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 						hqt(77973, {
 							["name"] = "Third Lock",	-- not sure how else to name this trigger
-							["description"] = createLocalizationString({
-								readable = "Use your idol at each Ring/Room location to find Broken Urn's",
-								constant = "USE_YOUR_IDOL_AT_EACH_RING_ROOM_LOCATION_TO",
-								export = true,
-								text = {
-									en = "Use your idol at each Ring/Room location to find Broken Urn's",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在每个环形/房间位置使用你的神像来寻找破碎的骨灰瓮",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use your idol at each Ring/Room location to find Broken Urn's",
 							["groups"] = {
 								o(409212, {	-- Broken Urn #1
 									["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 									["coord"] = { 59.8, 62.3, THALDRASZUS },
-									["description"] = createLocalizationString({
-										readable = "Room on Ring #1",
-										constant = "ROOM_ON_RING_1",
-										export = true,
-										text = {
-											en = "Room on Ring #1",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "1 号环形通道上的房间",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Room on Ring #1",
 									["groups"] = { i(208971) },	-- Titan Cube Housing
 								}),
 								o(409211, {	-- Broken Urn #2
 									["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 									["coord"] = { 59.9, 54.7, THALDRASZUS },
-									["description"] = "~L.ROOM_ON_RING_1",
+									["description"] = "Room on Ring #1",
 									["groups"] = { i(208970) },	-- Titan Energy Core
 								}),
 								o(409200, {	-- Broken Urn #3
 									["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 									["coord"] = { 59.7, 54.9, THALDRASZUS },
-									["description"] = createLocalizationString({
-										readable = "Room on Ring #3",
-										constant = "ROOM_ON_RING_3",
-										export = true,
-										text = {
-											en = "Room on Ring #3",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "3 号环形通道上的房间",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Room on Ring #3",
 									["groups"] = { i(208960) },	-- Titan Focusing Crystal
 								}),
 								o(409214, {	-- Broken Urn #4
 									["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 									["coord"] = { 59.7, 62.6, THALDRASZUS },
-									["description"] = "~L.ROOM_ON_RING_3",
+									["description"] = "Room on Ring #3",
 									["groups"] = { i(208973) },	-- Large Titan Capacitor
 								}),
 								o(409209, {	-- Broken Urn #5
 									["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 									["coord"] = { 62.0, 61.9, THALDRASZUS },
-									["description"] = createLocalizationString({
-										readable = "Room on Ring #5",
-										constant = "ROOM_ON_RING_5",
-										export = true,
-										text = {
-											en = "Room on Ring #5",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "5 号环形通道上的房间",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Room on Ring #5",
 									["groups"] = { i(208967) },	-- Titan Block Key Fragment
 								}),
 								o(409208, {	-- Broken Urn #6
 									["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 									["coord"] = { 61.6, 55.1, THALDRASZUS },
-									["description"] = "~L.ROOM_ON_RING_5",
+									["description"] = "Room on Ring #5",
 									["groups"] = { i(208966) },	-- Titan Block Key Fragment
 								}),
 								i(208969, {	-- Titan Energy Cube
@@ -1470,24 +1062,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					}),
 					-- leading clues https://www.wowhead.com/item=209781/second-booster-part#comments:id=5680742:reply=1637897
 					n(210398, {	-- Enigma Ward
-						["description"] = createLocalizationString({
-							readable = "Requries 3 people with Torch of Pyrreth to summon.",
-							constant = "REQURIES_3_PEOPLE_WITH_TORCH_OF_PYRRETH_TO",
-							export = true,
-							text = {
-								en = "Requries 3 people with Torch of Pyrreth to summon.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要 3 名持有皮雷斯火炬的玩家才能召唤。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requries 3 people with Torch of Pyrreth to summon.",
 						["questID"] = 78098,
 						["coord"] = { 58.9, 78.1, THE_CAPE_OF_STRANGLETHORN },
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
@@ -1495,69 +1070,18 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					}),
 					o(409914, {	-- Mimiron's Booster Part
 						["questID"] = 78099,
-						["description"] = createLocalizationString({
-							readable = "Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",
-							constant = "TAKES_4_PEOPLE_SOMEONE_TO_CONTROL_THE_WATER",
-							export = true,
-							text = {
-								en = "Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要 4 个人。一人控制水元素，3 人进行包裹。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",
 						["coord"] = { 50.2, 25.7, FELWOOD },
 						["groups"] = { i(209781) },	-- Second Booster Part
 					}),
 					o(408860, {	-- Mimiron's Booster Part
 						["questID"] = 78100,
-						["description"] = createLocalizationString({
-							readable = "Take out the cannons so you can loot.",
-							constant = "TAKE_OUT_THE_CANNONS_SO_YOU_CAN_LOOT",
-							export = true,
-							text = {
-								en = "Take out the cannons so you can loot.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "先摧毁火炮，才能拾取。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Take out the cannons so you can loot.",
 						["coord"] = { 54.8, 52.1, BLASTED_LANDS },
 						["groups"] = { i(209055) },	-- Third Booster Part
 					}),
 					i(210022, {	-- Mimiron's Jumpjets (MOUNT!)
-						["description"] = createLocalizationString({
-							readable = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
-							constant = "COMBINE_THE_FIRST_SECOND_AND_THIRD_BOOSTERS",
-							export = true,
-							text = {
-								en = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在强化的\n奥术熔炉附近组合第一、第二和第三个助推器，以重铸并为米米尔隆的跳跃喷气背包充能。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
 						["cost"] = {
 							{ "i", 208984, 1 },	-- First Booster Part
 							{ "i", 209781, 1 },	-- Second Booster Part

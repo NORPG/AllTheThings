@@ -151,24 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66478, {	-- David Kosse <Master Pet Tamer>
 					["coord"] = { 62.8, 54.6, THE_HINTERLANDS },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
-						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_THOUGH_HORDE_5",
-						export = true,
-						text = {
-							en = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限联盟，不过部落玩家可以在完成部落版任务“宠物对战训练师：东部王国”时与他们对战一次。\n\nDavid 的宠物为 13 级，三个宠物的类别依次为：\n1. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n2. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n3. 魔法 - 使用龙类（强力）或机械（耐打）宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 13,
 					["groups"] = {
@@ -419,7 +402,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  19071 },	-- Vessel of Tainted Blood
 								{ "o", 179922 },	-- Vessel of Tainted Blood
 							},
-							["description"] = "~L.CAN_BE_FOUND_ALL_OVER_JINTHA_ALOR",
+							["description"] = "Can be found all over Jintha'alor.",
 							["coord"] = { 65.2, 71.9, THE_HINTERLANDS },
 						}),
 						i(19118, {	-- Nature's Breath
@@ -444,24 +427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
-							["description"] = createLocalizationString({
-								readable = "You will not be able to transmog this item.",
-								constant = "YOU_WILL_NOT_BE_ABLE_TO_TRANSMOG_THIS_ITEM",
-								export = true,
-								text = {
-									en = "You will not be able to transmog this item.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你将无法对此物品进行幻化。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_4_0_3 },
 							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
@@ -472,7 +438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131544, {	-- Sandrene's Invisible Hauberk
-							["description"] = "~L.YOU_WILL_NOT_BE_ABLE_TO_TRANSMOG_THIS_ITEM",
+							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_7_0_3 },
 							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
@@ -498,7 +464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59295, {	-- Sandrene's Invisible Vest
-							["description"] = "~L.YOU_WILL_NOT_BE_ABLE_TO_TRANSMOG_THIS_ITEM",
+							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_4_0_3 },
 							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
@@ -509,7 +475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131510, {	-- Sandrene's Invisible Hauberk
-							["description"] = "~L.YOU_WILL_NOT_BE_ABLE_TO_TRANSMOG_THIS_ITEM",
+							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_7_0_3 },
 							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
@@ -608,7 +574,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 42,
 				}),
 				q(485, {	-- Find OOX-09/HL!
-					["description"] = "~L.THE_ITEM_THAT_STARTS_THIS_QUEST_HAS_A_CHANCE_TO",
+					["description"] = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
 					["provider"] = { "i", 8704 },	-- OOX-09/HL Distress Beacon
 					["lvl"] = lvlsquish(43, 43, 10),
 				}),
@@ -945,7 +911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE 4.0.3
 						i(19035, {	-- Lard's Special Picnic Basket
-							["description"] = "~L.CONTAINS_A_RANDOM_WORLD_DROP_AND_SOME",
+							["description"] = "Contains a random world drop and some consumables.",
 						}),
 						-- #endif
 					},
@@ -961,7 +927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 14748,	-- Vilebranch Kidnapper
 						}),
 						i(19035, {	-- Lard's Special Picnic Basket
-							["description"] = "~L.CONTAINS_A_RANDOM_WORLD_DROP_AND_SOME",
+							["description"] = "Contains a random world drop and some consumables.",
 						}),
 					},
 				}),
@@ -2181,24 +2147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(107617, {	-- Ol' Muddle
-					["description"] = createLocalizationString({
-						readable = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
-						constant = "THIS_RARE_WANDERS_THE_EASTERN_PORTION_OF_THE",
-						export = true,
-						text = {
-							en = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此稀有怪在该区域东部游荡，坐标仅提供大致的寻找范围。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
 					["coords"] = {
 						{ 44.4, 64.6, THE_HINTERLANDS },
 						{ 44.0, 59.6, THE_HINTERLANDS },
@@ -2268,24 +2217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, n(221828, {	-- Vengeful Spirit
-					["description"] = createLocalizationString({
-						readable = "Use your Sense Undead after 9PM Server near the Quel'Danil Lodge to spawn this rare.",
-						constant = "USE_YOUR_SENSE_UNDEAD_AFTER_9PM_SERVER_NEAR_THE",
-						export = true,
-						text = {
-							en = "Use your Sense Undead after 9PM Server near the Quel'Danil Lodge to spawn this rare.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在服务器时间晚上 9 点后，在奎尔丹尼小屋附近使用你的感知亡灵来刷出这只稀有生物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use your Sense Undead after 9PM Server near the Quel'Danil Lodge to spawn this rare.",
 					["timeline"] = { ADDED_1_15_1 },
 					["classes"] = { PALADIN },
 					["groups"] = {
@@ -2405,13 +2337,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 3.0.8
 			n(SPECIAL, {
 				i(9240, {	-- Mallet of Zul'Farrak
-					["description"] = "~L.THE_SACRED_MALLET_DROPS_FROM_QIAGA_THE_KEEPER",
+					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 59.0, 79.6, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
 				}),
 				i(9241, {	-- Sacred Mallet
-					["description"] = "~L.BRING_THIS_TO_THE_TOP_OF_JINTHA_ALOR_AND_USE_IT",
+					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 49.2, 68.6, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7996,	-- Qiaga the Keeper
@@ -2426,24 +2358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(220912, {	-- Geode Hammer
 					["provider"] = { "i", 220914 },	-- Broken Geode Hammer
-					["description"] = createLocalizationString({
-						readable = "Wield this hammer until it breaks, revealing the rune inside!",
-						constant = "WIELD_THIS_HAMMER_UNTIL_IT_BREAKS_REVEALING_THE",
-						export = true,
-						text = {
-							en = "Wield this hammer until it breaks, revealing the rune inside!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "挥动这把锤子直到它破碎，露出里面的符文！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Wield this hammer until it breaks, revealing the rune inside!",
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
@@ -2468,7 +2383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(4589),	-- Long Elegant Feather
 				-- #endif
 				i(8704, {	-- OOX-09/HL Distress Beacon
-					["description"] = "~L.THIS_ITEM_CAN_DROP_OFF_OF_ANY_HOSTILE_CREATURE",
+					["description"] = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["cr"] = 2644,	-- Vilebranch Hideskinner
@@ -2487,39 +2402,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				-- #endif
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS",
+					["description"] = "Can drop from any troll in The Hinterlands.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(8153, {	-- Wildvine
-					["description"] = "~L.CAN_DROP_FROM_ANY_TROLL_IN_THE_HINTERLANDS_OR",
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(221261, {	-- Wildwhisper Draught
-					["description"] = createLocalizationString({
-						readable = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
-						constant = "DROPPED_BY_ANY_ELITE_TROLL_AT_JINTHA_ALOR",
-						export = true,
-						text = {
-							en = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由辛萨罗的任意精英巨魔掉落。\n\n“荒野诸神”任务所需。将其带到剃刀高地，并在击败寒冰使者（最终首领）后使用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
 					["timeline"] = { ADDED_1_15_2 },
 				})),
 				-- #endif

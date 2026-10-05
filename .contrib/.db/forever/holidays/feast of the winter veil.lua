@@ -61,45 +61,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 			}),
 		}),
 		n(MAILBOX, {
-			["description"] = createLocalizationString({
-				readable = "These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",
-				constant = "THESE_RECIPES_ARE_MAILED_TO_CHARACTERS_WITH_THE",
-				export = true,
-				text = {
-					en = "These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "活动开始时，这些配方会通过邮件发送给拥有相应专业的角色。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",
 			["groups"] = {
 				i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 				i(17712, {	-- Winter Veil Disguise Kit (TOY!)
-					["description"] = createLocalizationString({
-						readable = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
-						constant = "GREATFATHER_WINTER_WILL_MAIL_THIS_TO_YOU_24",
-						export = true,
-						text = {
-							en = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你完成“烟林牧场的感谢！”任务 24 小时后，冬天爷爷会将它邮寄给你。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 					["sourceQuests"] = {
 						7045,	-- A Smokywood Pastures Thank You! (Alliance)
 						6984,	-- A Smokywood Pastures Thank You! (Horde)
@@ -157,24 +123,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 			}),
 			q(8767, {	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
-				["description"] = createLocalizationString({
-					readable = "Given prior to 2015 exclusively to non-spell casters.",
-					constant = "GIVEN_PRIOR_TO_2015_EXCLUSIVELY_TO_NON_SPELL",
-					export = true,
-					text = {
-						en = "Given prior to 2015 exclusively to non-spell casters.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2015 年之前仅发放给非法系职业。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Given prior to 2015 exclusively to non-spell casters.",
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 21270 },	-- Gently Shaken Gift
@@ -188,24 +137,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 			}),
 			q(8788, {	-- A Gently Shaken Gift [Spell Casters Only] (Before 2015)
-				["description"] = createLocalizationString({
-					readable = "Given prior to 2015 exclusively to spell casters.",
-					constant = "GIVEN_PRIOR_TO_2015_EXCLUSIVELY_TO_SPELL",
-					export = true,
-					text = {
-						en = "Given prior to 2015 exclusively to spell casters.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2015 年之前仅发放给法系职业。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Given prior to 2015 exclusively to spell casters.",
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 21271 },	-- Gently Shaken Gift
@@ -354,24 +286,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 			}),
 			q(8860, {	-- New Year Celebrations! (Alliance)
-				["description"] = createLocalizationString({
-					readable = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-					constant = "THIS_QUEST_IS_ONLY_AVAILABLE_ON_DECEMBER_31",
-					export = true,
-					text = {
-						en = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该任务仅在 12 月 31 日开放。可在任意主城中从奇妙形态操作员处获得该任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					MAP.DUN_MOROGH,
@@ -392,7 +307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 			}),
 			q(8861, {	-- New Year Celebrations! (Horde)
-				["description"] = "~L.THIS_QUEST_IS_ONLY_AVAILABLE_ON_DECEMBER_31",
+				["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					MAP.DUN_MOROGH,
@@ -530,24 +445,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 			},
 			q(8827,{	-- Winter's Presents [A]
-				["description"] = createLocalizationString({
-					readable = "This quest becomes available after the 25th.",
-					constant = "THIS_QUEST_BECOMES_AVAILABLE_AFTER_THE_25TH",
-					export = true,
-					text = {
-						en = "This quest becomes available after the 25th.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该任务在 25 日之后开放。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest becomes available after the 25th.",
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					MAP.DUN_MOROGH,
@@ -563,7 +461,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				["isYearly"] = true,
 			}),
 			q(8828, {	-- Winter's Presents [H]
-				["description"] = "~L.THIS_QUEST_BECOMES_AVAILABLE_AFTER_THE_25TH",
+				["description"] = "This quest becomes available after the 25th.",
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					MAP.DUN_MOROGH,
@@ -601,24 +499,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 		}),
 		n(VENDORS, {
 			n(COMMON_VENDOR_ITEMS, {
-				["description"] = createLocalizationString({
-					readable = "These items can be found on any of the holiday vendors.",
-					constant = "THESE_ITEMS_CAN_BE_FOUND_ON_ANY_OF_THE_HOLIDAY",
-					export = true,
-					text = {
-						en = "These items can be found on any of the holiday vendors.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些物品可以在任意节日商人处找到。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These items can be found on any of the holiday vendors.",
 				["crs"] = {
 					13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 					13420,	-- Penney Copperpinch <Smokywood Pastures>
@@ -664,24 +545,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 			}),
 		}),
 		n(15760, {	-- Winter Reveler
-			["description"] = createLocalizationString({
-				readable = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
-				constant = "TYPE_KISS_WHILE_TARGETING_ANY_WINTER_REVELER_TO",
-				export = true,
-				text = {
-					en = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "选中任意冬日狂欢者并输入 /亲吻，即可获得以下物品之一。\n\n注意：在该减益效果持续期间，你将无法亲吻另一个。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
 			["crs"] = {
 				15783,	-- Dwarf Female Winter Reveler
 				15782,	-- Dwarf Male Winter Reveler

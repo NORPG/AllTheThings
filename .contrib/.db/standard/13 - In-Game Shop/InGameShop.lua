@@ -206,24 +206,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 		i(262982, {	-- Roofus (PET!)
-			["description"] = createLocalizationString({
-				readable = "Part of the charity Roofus Pack.",
-				constant = "PART_OF_THE_CHARITY_ROOFUS_PACK",
-				export = true,
-				text = {
-					en = "Part of the charity Roofus Pack.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "慈善“鲁弗斯礼包”的一部分。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(239082, {	-- Sa'bak's Blessed (PET!)
@@ -307,24 +290,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_4_2_0, REMOVED_5_4_7 },
 		}),
 		i(49662, {	-- Gryphon Hatchling (PET!)
-			["description"] = createLocalizationString({
-				readable = "This item is available only if you purchase the Plush Toy and redeem the code.",
-				constant = "THIS_ITEM_IS_AVAILABLE_ONLY_IF_YOU_PURCHASE_THE",
-				export = true,
-				text = {
-					en = "This item is available only if you purchase the Plush Toy and redeem the code.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "只有购买毛绒玩具并兑换代码后才能获得该物品。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 			["timeline"] = { ADDED_3_3_2, REMOVED_8_3_0 },
 		}),
 		i(213556, {	-- Hoplet (PET!)
@@ -370,30 +336,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(49663, {	-- Wind Rider Cub (PET!)
 			["timeline"] = { ADDED_3_3_2, REMOVED_8_3_0 },
-			["description"] = "~L.THIS_ITEM_IS_AVAILABLE_ONLY_IF_YOU_PURCHASE_THE",
+			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		}),
 	})),
 	-- #if AFTER 5.4.0.17153
 	filter(CONSUMABLES, {
 		-- #if BEFORE 6.0.2
-		["description"] = createLocalizationString({
-			readable = "Only available in the Asian In-Game Shop.",
-			constant = "ONLY_AVAILABLE_IN_THE_ASIAN_IN_GAME_SHOP",
-			export = true,
-			text = {
-				en = "Only available in the Asian In-Game Shop.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "仅在亚洲地区的游戏内商城可用。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Only available in the Asian In-Game Shop.",
 		-- #endif
 		["groups"] = {
 			i(103557, {	-- Enduring Elixir of Wisdom
@@ -875,35 +824,35 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(250793),	-- Lush Garden Trellis (DECOR!)
 		i(264692, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Window (DECOR!)
 		i(259046, {	-- Paw Pal Bed (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259045, {	-- Paw Pal Bed and Blanket (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(264275, {	-- Paw Pal House Durotar Roof (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259094, {	-- Paw Pal House Elwynn Roof (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(264276, {	-- Paw Pal House Eversong Roof (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259093, {	-- Paw Pal House Frame (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(259044, {	-- Paw Pal Water Dish (DECOR!)
-			["description"] = "~L.PART_OF_THE_CHARITY_ROOFUS_PACK",
+			["description"] = "Part of the charity Roofus Pack.",
 			["timeline"] = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
 		}),
 		i(250797),	-- Spring Blossom Ceiling Light (DECOR!)
@@ -998,24 +947,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_12_1_0 },
 		}),
 		i(239076, {	-- Herald of Sa'bak (MOUNT!)
-			["description"] = createLocalizationString({
-				readable = "Also obtained if you set up a 6-Month WoW Subscription.",
-				constant = "ALSO_OBTAINED_IF_YOU_SET_UP_A_6_MONTH_WOW",
-				export = true,
-				text = {
-					en = "Also obtained if you set up a 6-Month WoW Subscription.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "如果你开通 6 个月的《魔兽世界》订阅，也可以获得。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_1_7 },
 		}),
 		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
@@ -1177,7 +1109,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 		i(231297, {	-- Timbered Sky Snake (MOUNT!)
-			["description"] = "~L.ALSO_OBTAINED_IF_YOU_SET_UP_A_6_MONTH_WOW",
+			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_0_7 },
 		}),
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)

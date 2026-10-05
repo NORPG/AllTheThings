@@ -728,24 +728,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					})),
 					n(ZONE_DROPS, {
 						i(98136, {	-- Gastropod Shell (TOY!)
-							["description"] = createLocalizationString({
-								readable = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-								constant = "GO_UP_AND_GIVE_THIS_MOB_A_BIG_HUG_JUST_KIDDING",
-								export = true,
-								text = {
-									en = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "走上去并给这个怪物一个大大的拥抱……开个玩笑；待在它的近战范围之外。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 							["crs"] = { 68220 },	-- Gastropod
 						}),
 						i(94125, {	-- Living Sandling (PET!)
@@ -773,24 +756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 67977 },	-- Tortos
 						["groups"] = {
 							i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
-								["description"] = createLocalizationString({
-									readable = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
-									constant = "MUST_OBTAIN_250_STACKS_OF_SPRAY_WATER_FROM_THE",
-									export = true,
-									text = {
-										en = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "必须在托尔托斯之前从喷泉处获得 250 层喷水。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 								["timeline"] = { ADDED_5_3_0 },
 							}),
 						},
@@ -814,24 +780,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 68036 },	-- Durumu the Forgotten
 						["groups"] = {
 							header(HEADERS.Item, 212750, {	-- Grimoire of the Ancient Observer
-								["description"] = createLocalizationString({
-									readable = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumu's Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
-									constant = "1_QUEUE_FOR_HALLS_OF_FLESH_SHAPING_LFR_AT_MOGU",
-									export = true,
-									text = {
-										en = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumu's Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "1. 在锦绣谷的魔古山宫殿排队进入血肉塑造之厅随机团队。如果你看不到随机团队排队 NPC，与外面的希多尔米交谈以切换相位。\n2. 杀死杜鲁姆并拾取杜鲁姆的玻璃瞳孔，然后使用该物品，把它扔向哪里都无所谓。\n3. 等待平台边缘的蜡烛生成，然后前往有坩埚和那本书的紫色圆圈。\n4. 点击那本书开始。:)\n\n你会看到一个谜题，它用彩色光束连接一些蜡烛。你必须数出每种颜色各有多少条光束，并点击对应颜色的坩埚同样次数。\n例如 2 支蜡烛被 1 条绿色光束连接。点击绿色坩埚一次。\n你可以在增益栏中追踪你的点击次数。数字正确后，点击那本书继续。如果你弄错了，书会把你击倒并重置你的增益，但不会重置整条谜题链。如果你点多了，也可以右键点击取消该增益，以免全部重置。\n随着谜题推进变得更复杂，紫色坩埚在你点击时会开始给予超过 1 层的紫色增益。这是为了帮你更快达到更高的数字。开始疯狂点击时可要小心！\n\n要计算更高的紫色数字：\n有几种不同的数法，但最简单的方法是使用 Wowhead 评论中为此物品链接的自动计算器。\n\n感谢 Wowhead 的 Fiamma 提供的评论。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumu's Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
 								["cost"] = {{"i",211949,1}},	-- Durumu's Glass Pupil
 								["timeline"] = { ADDED_10_2_5 },
 								["groups"] = {
@@ -898,24 +847,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				-- #endif
 				["groups"] = {
 					i(95343, {	-- Treasures of the Thunder
-						["description"] = createLocalizationString({
-							readable = "This item is awarded as a consolation prize to players who did not win loot after defeating a boss encounter in the Raid Finder mode of Throne of Thunder.",
-							constant = "THIS_ITEM_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO_3",
-							export = true,
-							text = {
-								en = "This item is awarded as a consolation prize to players who did not win loot after defeating a boss encounter in the Raid Finder mode of Throne of Thunder.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在雷电王座的随机团队模式中，击败首领后未赢得战利品的玩家会获得此物品作为安慰奖。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item is awarded as a consolation prize to players who did not win loot after defeating a boss encounter in the Raid Finder mode of Throne of Thunder.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
 						["sym"] = {MOP_SYM_PETS},
 						["groups"] = {
@@ -945,24 +877,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["description"] = createLocalizationString({
-							readable = "These can drop from any of the bosses.",
-							constant = "THESE_CAN_DROP_FROM_ANY_OF_THE_BOSSES",
-							export = true,
-							text = {
-								en = "These can drop from any of the bosses.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这些可以从任意首领身上掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "These can drop from any of the bosses.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
 							68476,	-- Horridon
@@ -1196,24 +1111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["crs"] = { 69017 },	-- Primordius
 							["groups"] = {
 								i(97959, {	-- Living Fluid (PET!)
-									["description"] = createLocalizationString({
-										readable = "This only drops in LFR.",
-										constant = "THIS_ONLY_DROPS_IN_LFR",
-										export = true,
-										text = {
-											en = "This only drops in LFR.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "此物品只在随机团队中掉落。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "This only drops in LFR.",
 									["timeline"] = { ADDED_5_3_0 },
 								}),
 								i(95758),	-- Acid-Spine Bonemace
@@ -1340,24 +1238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				i(97153, {	-- Spoils of the Thunder King
-					["description"] = createLocalizationString({
-						readable = "Awarded from completing the Weekly Raid Quest.\n\nThis bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
-						constant = "AWARDED_FROM_COMPLETING_THE_WEEKLY_RAID_QUEST",
-						export = true,
-						text = {
-							en = "Awarded from completing the Weekly Raid Quest.\n\nThis bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成每周团队副本任务获得。\n\n这个袋子包含金币、合剂、材料、史诗项链，还有几率掉落原始之卵。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Awarded from completing the Weekly Raid Quest.\n\nThis bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
 					["groups"] = {
 						i(95215),	-- Abandoned Zandalari Bucklebreaker
 						i(95202),	-- Necklace of the Terra-Cotta Archer
@@ -1656,7 +1537,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
-						["description"] = "~L.THESE_CAN_DROP_FROM_ANY_OF_THE_BOSSES",
+						["description"] = "These can drop from any of the bosses.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
 							68476,	-- Horridon
@@ -2254,24 +2135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
-						["description"] = createLocalizationString({
-							readable = "These can drop from any of the bosses other than Ra-den.",
-							constant = "THESE_CAN_DROP_FROM_ANY_OF_THE_BOSSES_OTHER",
-							export = true,
-							text = {
-								en = "These can drop from any of the bosses other than Ra-den.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "除莱登外，这些可以由任意首领掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
 							68476,	-- Horridon

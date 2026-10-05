@@ -239,24 +239,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(2751, {	-- Barbaric Battlements
-					["description"] = createLocalizationString({
-						readable = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
-						constant = "BECOMES_AVAILABLE_AT_BLACKSMITHING_SKILL_LEVEL",
-						export = true,
-						text = {
-							en = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在满足角色等级要求后，锻造技能等级达到 140 时开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
 					["qg"] = 7790,	-- Orokk Omosh
 					["coord"] = { 79.4, 22.4, MAP.ORGRIMMAR },
 					["cost"] = {
@@ -270,24 +254,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
-							["description"] = createLocalizationString({
-								readable = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-								constant = "THIS_RECIPE_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
-								export = true,
-								text = {
-									en = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此配方可以在中立拍卖行卖给联盟锻造师，换取……一点象征性的费用。\n\n只有部落锻造师才能自然获得；此配方不绑定，可以邮寄给部落小号。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -471,24 +438,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(2754, {	-- Horns of Frenzy
-					["description"] = createLocalizationString({
-						readable = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
-						constant = "THIS_QUESTLINE_BEGINS_WITH_THE_QUEST_BARBARIC",
-						export = true,
-						text = {
-							en = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务线始于任务“蛮荒城垛”，需要 140 点锻造技能。\n\n设计图：坚固的铁锤是一份每次只上架 1 份的配方，可以从凄凉之地幽灵岗哨的穆兰处购买，也可以从阿拉希高地避难谷地的联盟专属商人詹诺斯·铁意处购买。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
 					["sourceQuest"] = 2753,	-- Trampled Under Foot
 					["qg"] = 7790,	-- Orokk Omosh
 					["coord"] = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -503,29 +454,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7980, {	-- Plans: Barbaric Iron Helm (RECIPE!)
-							["description"] = "~L.THIS_RECIPE_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
 				q(2755, {	-- Joys of Omosh
-					["description"] = createLocalizationString({
-						readable = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-						constant = "THIS_QUESTLINE_BEGINS_WITH_THE_QUEST_BARBARIC_2",
-						export = true,
-						text = {
-							en = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务线始于任务“野蛮的城垛”，该任务需要 140 点锻造技能。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["sourceQuest"] = 2754,	-- Horns of Frenzy
 					["qg"] = 7790,	-- Orokk Omosh
 					["coord"] = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -535,7 +470,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
-							["description"] = "~L.THIS_RECIPE_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -579,7 +514,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(2752, {	-- On Iron Pauldrons
-					["description"] = "~L.THIS_QUESTLINE_BEGINS_WITH_THE_QUEST_BARBARIC_2",
+					["description"] =
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["sourceQuest"] = 2751,	-- Barbaric Battlements
 					["qg"] = 7790,	-- Orokk Omosh
 					["coord"] = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -593,7 +529,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
-							["description"] = "~L.THIS_RECIPE_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -758,7 +694,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(2753, {	-- Trampled Under Foot
-					["description"] = "~L.THIS_QUESTLINE_BEGINS_WITH_THE_QUEST_BARBARIC_2",
+					["description"] =
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["sourceQuest"] = 2752,	-- On Iron Pauldrons
 					["qg"] = 7790,	-- Orokk Omosh
 					["coord"] = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -773,7 +710,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
-							["description"] = "~L.THIS_RECIPE_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+							["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),
@@ -816,24 +753,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(7660, {	-- Wolf Swapping - Arctic Wolf
-					["description"] = createLocalizationString({
-						readable = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-						constant = "IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
-						export = true,
-						text = {
-							en = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你也是那些把自己独一无二的坐骑上交换成了普通坐骑的可怜人之一，我深表同情。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coord"] = { 69.4, 12.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_1_4_0 },
@@ -844,7 +764,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				}),
 				q(7661, {	-- Wolf Swapping - Red Wolf
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coord"] = { 69.4, 12.4, MAP.ORGRIMMAR },
 					["timeline"] = { REMOVED_1_4_0 },
@@ -941,24 +861,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
-					["description"] = createLocalizationString({
-						readable = "Found within the Hall of Legends.",
-						constant = "FOUND_WITHIN_THE_HALL_OF_LEGENDS",
-						export = true,
-						text = {
-							en = "Found within the Hall of Legends.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于传说大厅内。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found within the Hall of Legends.",
 					["coord"] = { 40.6, 69.5, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -969,24 +872,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(3367, {	-- Felika <Trade Supplies>
-					["description"] = createLocalizationString({
-						readable = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
-						constant = "THIS_NPC_WALKS_BETWEEN_THE_VALLEY_OF_WISDOM_AND",
-						export = true,
-						text = {
-							en = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该NPC沿着右侧道路在智慧谷和力量谷之间行走。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 					["coords"] = {
 						{ 46.5, 36.6, MAP.ORGRIMMAR },
 						{ 50.8, 58.7, MAP.ORGRIMMAR },
@@ -1174,24 +1060,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["description"] = createLocalizationString({
-						readable = "This NPC is only available on July 4th (US) or September 30th (EU).",
-						constant = "THIS_NPC_IS_ONLY_AVAILABLE_ON_JULY_4TH_US_OR",
-						export = true,
-						text = {
-							en = "This NPC is only available on July 4th (US) or September 30th (EU).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此 NPC 只在 7 月 4 日（美服）或 9 月 30 日（欧服）开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"This NPC is only available on July 4th (US) or September 30th (EU).",
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler
@@ -1228,7 +1098,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(12792, {	-- Lady Palanseer <Armor Quartermaster>
-					["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
+					["description"] = "Found within the Hall of Legends.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22860, {	-- Blood Guard's Silk Walkers (60)
@@ -1751,7 +1621,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
-					["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
+					["description"] = "Found within the Hall of Legends.",
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
 						i(18247),	-- Black War Kodo (MOUNT!)
@@ -1833,7 +1703,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
-					["description"] = "~L.FOUND_WITHIN_THE_HALL_OF_LEGENDS",
+					["description"] = "Found within the Hall of Legends.",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18831),	-- High Warlord's Battle Axe
@@ -2076,24 +1946,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				n(8404, {	-- Xan'tish <Snake Vendor>
-					["description"] = createLocalizationString({
-						readable = "This NPC walks around in a circle in the Valley of Spirits.",
-						constant = "THIS_NPC_WALKS_AROUND_IN_A_CIRCLE_IN_THE_VALLEY",
-						export = true,
-						text = {
-							en = "This NPC walks around in a circle in the Valley of Spirits.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该NPC在精神谷中绕圈行走。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This NPC walks around in a circle in the Valley of Spirits.",
 					["coord"] = { 37.6, 75.8, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

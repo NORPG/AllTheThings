@@ -29,24 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 	-- #endif
 }, {
 	n(BATTLEFIELD_BARRENS, {
-		["description"] = createLocalizationString({
-			readable = "During 5.3 a big battle occured in Barrens.",
-			constant = "DURING_5_3_A_BIG_BATTLE_OCCURED_IN_BARRENS",
-			export = true,
-			text = {
-				en = "During 5.3 a big battle occured in Barrens.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "5.3 版本期间，贫瘠之地发生了一场大规模战斗。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "During 5.3 a big battle occured in Barrens.",
 		["maps"] = {
 			DUROTAR,
 			NORTHERN_BARRENS,
@@ -364,24 +347,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 			}),
 			n(VENDORS, {
 				n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
-					["description"] = createLocalizationString({
-						readable = "Rebellion Quartermaster during Barrens Battlefield.",
-						constant = "REBELLION_QUARTERMASTER_DURING_BARRENS",
-						export = true,
-						text = {
-							en = "Rebellion Quartermaster during Barrens Battlefield.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "贫瘠之地战场期间的叛乱军需官。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Rebellion Quartermaster during Barrens Battlefield.",
 					["groups"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' (TOY!)

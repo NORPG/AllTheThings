@@ -29,24 +29,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["groups"] = {
 					i(167698, {	-- Secret Fish Goggles
 						-- #if AFTER 11.1.5
-						["description"] = createLocalizationString({
-							readable = "This is a toy since 11.1.5.\nIf you buy the goggles from the vendor, the toy is automatically added to your Toy Box. You do not have to click it on to add it (as you do with most toys).\n\nBut, the vendor won't sell you the goggles if you already have one on your bag or your bank, so make sure to delete it first.",
-							constant = "THIS_IS_A_TOY_SINCE_11_1_5_IF_YOU_BUY_THE",
-							export = true,
-							text = {
-								en = "This is a toy since 11.1.5.\nIf you buy the goggles from the vendor, the toy is automatically added to your Toy Box. You do not have to click it on to add it (as you do with most toys).\n\nBut, the vendor won't sell you the goggles if you already have one on your bag or your bank, so make sure to delete it first.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "自 11.1.5 起这是一件玩具。\n如果你从商人处购买护目镜，该玩具会自动加入你的玩具箱。你无需点击它来添加（大多数玩具需要这样做）。\n\n但是，如果你的背包或银行中已经有了一个，商人就不会再卖给你护目镜，所以请务必先删除它。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is a toy since 11.1.5.\nIf you buy the goggles from the vendor, the toy is automatically added to your Toy Box. You do not have to click it on to add it (as you do with most toys).\n\nBut, the vendor won't sell you the goggles if you already have one on your bag or your bank, so make sure to delete it first.",
 						-- #endif
 						["sourceAchievement"] = 13489,	-- Secret Fish of Mechagon
 					}),
@@ -211,32 +194,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							["cost"] = 5120000,	-- 512g
 						}),
 						i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O. (RECIPE!)
-							["description"] = createLocalizationString({
-								readable = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
-								constant = "MUST_BE_AN_ENGINEER_HAVE_COMPLETED_THE",
-								export = true,
-								text = {
-									en = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "必须是工程师，已完成|cFFFFD700迭代是关键|r任务，并拥有一把制造的 Ub3r-扳手，此物品才会出现在商人处。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon (RECIPE!)
-							["description"] = "~L.MUST_BE_AN_ENGINEER_HAVE_COMPLETED_THE",
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil (RECIPE!)
-							["description"] = "~L.MUST_BE_AN_ENGINEER_HAVE_COMPLETED_THE",
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(169547, {	-- Technique: Contract: Rustbolt Resistance (RECIPE!)

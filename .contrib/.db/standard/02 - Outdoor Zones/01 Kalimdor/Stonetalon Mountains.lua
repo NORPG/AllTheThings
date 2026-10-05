@@ -56,44 +56,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					pet(488),	-- Coral Snake (PET!)
 					pet(412, {	-- Spider (PET!)
-						["description"] = createLocalizationString({
-							readable = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",
-							constant = "THE_BEST_PLACE_TO_CATCH_THESE_SEEMS_TO_BE_SOUTH",
-							export = true,
-							text = {
-								en = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "捕捉这些的最佳地点似乎是风剪要塞以南，但在其他列出的地点肯定也能找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The best place to catch these seems to be south of Windshear Hold, but it can definitely be found in other listed places.",
 					}),
 					pet(506, {	-- Venomspitter Hatchling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
-							constant = "CAN_BE_FOUND_SOUTH_OF_WINDSHEAR_HOLD_IN",
-							export = true,
-							text = {
-								en = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在风剪要塞以南的织网者谷中与较大的蜘蛛一同找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 					}),
 				},
 			}),
@@ -218,24 +184,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66137, {	-- Zonya the Sadist <Master Pet Tamer>
 					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_ZONYA_S_PETS_ARE",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落。\n\nZonya 的宠物为 7 级，三个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 小动物 - 使用野兽（强力）或人型（耐打）宠物。\n3. 野兽 - 同上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["petBattleLvl"] = 7,
@@ -737,24 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25931, {	-- Brood of Seldarria
-					["description"] = createLocalizationString({
-						readable = "If you abandon this quest, you can pick it up again from Hierophant Malyk at Farwatcher's Glen.",
-						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_3",
-						export = true,
-						text = {
-							en = "If you abandon this quest, you can pick it up again from Hierophant Malyk at Farwatcher's Glen.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃这个任务，你可以在远望者峡谷的祭司马利克处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you abandon this quest, you can pick it up again from Hierophant Malyk at Farwatcher's Glen.",
 					["sourceQuest"] = 25930,	-- Ascending the Vale
 					["qg"] = 41487,	-- Hierophant Malyk
 					["coord"] = { 33.1, 59.6, STONETALON_MOUNTAINS },
@@ -1309,24 +1241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 210187 },	-- Venture Co. Work Order
 						}),
 						i(210186, {	-- Breaching Charge
-							["description"] = createLocalizationString({
-								readable = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
-								constant = "USE_THIS_ON_THE_DOOR_THAT_S_NORMALLY_OPENED_BY",
-								export = true,
-								text = {
-									en = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "对那扇通常由 NPC 在击败第一个首领后打开的门使用此物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
 						}),
 					},
 				})),
@@ -1388,24 +1303,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				})),
 				q(25935, {	-- Hungry Pups
-					["description"] = createLocalizationString({
-						readable = "Houndmaster Jonathan walks his restless, hungry pups, around the tree.",
-						constant = "HOUNDMASTER_JONATHAN_WALKS_HIS_RESTLESS_HUNGRY",
-						export = true,
-						text = {
-							en = "Houndmaster Jonathan walks his restless, hungry pups, around the tree.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "驯犬者乔纳森在树周围遛他那些躁动不安、饥肠辘辘的幼犬。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Houndmaster Jonathan walks his restless, hungry pups, around the tree.",
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 					["qg"] = 41638,	-- Houndmaster Jonathan (mobileNPC)
 					["coords"] = {
@@ -1492,24 +1390,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25808, {	-- Is This Thing On?
-					["description"] = createLocalizationString({
-						readable = "If you abandon this quest, you can pick it up again from Lieutenant Paulson at the barricade near the entrance of The Deep Reaches.",
-						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_4",
-						export = true,
-						text = {
-							en = "If you abandon this quest, you can pick it up again from Lieutenant Paulson at the barricade near the entrance of The Deep Reaches.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃这个任务，你可以在深海之域入口附近路障处的保尔森中尉那里重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you abandon this quest, you can pick it up again from Lieutenant Paulson at the barricade near the entrance of The Deep Reaches.",
 					["sourceQuest"] = 25806,	-- They Put the Assass in... Never Mind
 					["qg"] = 41277,	-- Lieutenant Paulson
 					["coord"] = { 72.1, 76.0, STONETALON_MOUNTAINS },
@@ -1778,24 +1659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26028, {	-- Mr. D's Wild Ride
-					["description"] = createLocalizationString({
-						readable = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
-						constant = "WARNING_IF_YOU_COMPLETE_CFFFFD700TO_BE_HORDE_R",
-						export = true,
-						text = {
-							en = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "警告：如果你完成了|cFFFFD700成为部落…|r，此任务将无法完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
 					["sourceQuest"] = 26026,	-- Dream of a Better Tomorrow
 					["qg"] = 40907,	-- Clarissa
 					["coord"] = { 66.1, 64.2, STONETALON_MOUNTAINS },
@@ -2210,7 +2074,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 					["groups"] = {
 						i(216619, {	-- Student Fodder
-							["description"] = "~L.THIS_ITEM_GIVES_YOU_4_BARS_OF_RESTED_EXPERIENCE",
+							["description"] = "This item gives you 4 bars of Rested Experience when consumed.",
 						}),
 						i(217314),	-- Moonsight Rifle
 						i(217315),	-- Precision Bow
@@ -2220,24 +2084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(26009, {	-- Seek and Destroy
 					-- #if BEFORE 9.0.1
-					["description"] = createLocalizationString({
-						readable = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
-						constant = "THIS_QUEST_CANNOT_BE_COMPLETED_AFTER_LEVEL_30",
-						export = true,
-						text = {
-							en = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "达到 30 级后、与奥格瑞玛达到崇拜后，或完成石爪山脉任务线后，此任务将无法完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
 					-- #endif
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					["altQuests"] = { 26115 },	-- To Be Horde...
@@ -2647,24 +2494,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25671, {	-- Thinning the Horde
 					-- #if BEFORE 9.0.1
-					["description"] = createLocalizationString({
-						readable = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
-						constant = "THIS_QUEST_CANNOT_BE_COMPLETED_AFTER_LEVEL_30_2",
-						export = true,
-						text = {
-							en = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "达到 30 级后、与达纳苏斯达到崇拜后，或完成石爪山脉任务线后，此任务将无法完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
 					-- #endif
 					["sourceQuest"] = 25652,	-- Commandeer That Ballon!
 					["qg"] = 40896,	-- Lord Fallowmere

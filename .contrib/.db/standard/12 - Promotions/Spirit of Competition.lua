@@ -43,47 +43,13 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 		["provider"] = { "i", 37297 },	-- Spirit of Competition
 	}),
 	i(37297, {	-- Spirit of Competition (PET!)
-		["description"] = createLocalizationString({
-			readable = "Win a battleground during the Spirit of Competition event to get this.",
-			constant = "WIN_A_BATTLEGROUND_DURING_THE_SPIRIT_OF",
-			export = true,
-			text = {
-				en = "Win a battleground during the Spirit of Competition event to get this.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "在竞争之魂活动期间赢得一场战场即可获得此物品。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Win a battleground during the Spirit of Competition event to get this.",
 	}),
 	ach(1636, {	-- Competitor's Tabard
 		["provider"] = { "i", 36941 },	-- Competitor's Tabard
 	}),
 	i(36941, {	-- Competitor's Tabard
-		["description"] = createLocalizationString({
-			readable = "Participate in a battleground during the Spirit of Competition event to get this.",
-			constant = "PARTICIPATE_IN_A_BATTLEGROUND_DURING_THE_SPIRIT",
-			export = true,
-			text = {
-				en = "Participate in a battleground during the Spirit of Competition event to get this.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "在竞争之魂活动期间参加一场战场即可获得。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Participate in a battleground during the Spirit of Competition event to get this.",
 		["OnUpdate"] = [[function(t)
 			if _.IsQuestFlaggedCompleted(12187) then
 				if not _.Settings.AccountWide.Quests then
@@ -95,24 +61,7 @@ root(ROOTS.Promotions, n(SPIRIT_OF_COMPETITION, bubbleDownSelf({ ["timeline"] = 
 		end]],
 	}),
 	cnONLY(i(37298, {	-- Essence of Competition (PET!) (China Only)
-		["description"] = createLocalizationString({
-			readable = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
-			constant = "ONLY_AVAILABLE_ON_CHINESE_REALMS_THROUGHOUT",
-			export = true,
-			text = {
-				en = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "仅在国服可用。\n\n在国服活动期间的每一天，兑换码都会通过邮件发送给 500 名随机玩家。只有在活动期间达成各种游戏内里程碑的玩家才有机会获得兑换码。部分里程碑包括：竞技场评分达到 1650 以上、将某些外域阵营的声望从低于崇敬提升至崇拜，或将一项制造专业的技能从 350 或以下提升到 375。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",
 	})),
 })));
 -- #endif

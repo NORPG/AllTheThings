@@ -280,24 +280,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
 						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-						["description"] = createLocalizationString({
-							readable = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-							constant = "NICKI_S_PETS_ARE_LEVEL_20_OF_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "妮基的宠物是 20 级，按以下连续宠物类别：\n1. 机械 - 使用元素（强力且耐打）宠物。\n2. 机械 - 见上。\n3. 机械 - 见上。\n\n若要计入“一次糟糕的大冒险”，请使用雷象毛绒玩具和两只强力宠物组队作战。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 20,
 						["groups"] = {
@@ -1032,24 +1015,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10916, {	-- Digging for Prayer Beads
-						["description"] = createLocalizationString({
-							readable = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
-							constant = "YOU_CAN_FOREGO_INTERACTING_WITH_WARRANT_OFFICER",
-							export = true,
-							text = {
-								en = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以跳过与准尉特蕾西·普罗德威尔互动，直接前往给出的坐标。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						["qg"] = 22430,	-- Assistant Klatu
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
@@ -1821,24 +1787,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9483, {	-- Life's Finer Pleasures
-						["description"] = createLocalizationString({
-							readable = "Only available during |cFFFFD700Arelion's Mistress|r.",
-							constant = "ONLY_AVAILABLE_DURING_CFFFFD700ARELION_S",
-							export = true,
-							text = {
-								en = "Only available during |cFFFFD700Arelion's Mistress|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在 |cFFFFD700埃雷利恩的“恋人”|r 期间可用。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 						["qg"] = 17226,	-- Viera Sunwhisper
 						["coord"] = { 27.2, 62.0, HELLFIRE_PENINSULA },
 						["cost"] = { { "i", 29112, 1 } },	-- Cenarion Spirits
@@ -2834,31 +2783,14 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(49862, {	-- To Outland! [Alliance]
-						["description"] = createLocalizationString({
-							readable = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-							constant = "BREADCRUMB_QUEST_WHEN_YOU_FIRST_STEP_IN_OUTLAND",
-							export = true,
-							text = {
-								en = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "首次踏入外域时的引导任务。如果你在此任务加入游戏之前就已到过外域，将无法接到它。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
 						["timeline"] = { ADDED_7_3_5, REMOVED_9_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(49816, {	-- To Outland! [Horde]
-						["description"] = "~L.BREADCRUMB_QUEST_WHEN_YOU_FIRST_STEP_IN_OUTLAND",
+						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
 						["timeline"] = { ADDED_7_3_5, REMOVED_9_0_1 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -3100,24 +3032,7 @@ root(ROOTS.Zones, {
 				}),
 				n(RARES, {
 					n(18678, {	-- Fulgorge
-						["description"] = createLocalizationString({
-							readable = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high. Search along its three possible paths and be on the lookout for red rumbling rocks.",
-							constant = "THIS_RARE_CANNOT_BE_MANUALLY_TARGETED_AND_YOU",
-							export = true,
-							text = {
-								en = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high. Search along its three possible paths and be on the lookout for red rumbling rocks.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此稀有怪无法被手动选中，而且如果你飞得太高可能看不到它。请沿着它三条可能的路线寻找，并留意红色震动的岩石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high. Search along its three possible paths and be on the lookout for red rumbling rocks.",
 						["coords"] = {
 							{ 23.8, 63.0, HELLFIRE_PENINSULA },	-- west path, bottom
 							{ 24.8, 48.0, HELLFIRE_PENINSULA },	-- west path, mid
@@ -3674,24 +3589,7 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(28552, {	-- A Mysterious Tome
-						["description"] = createLocalizationString({
-							readable = "Must have started or completed |cFFFFD700Make Them Listen|r for this item to become available.",
-							constant = "MUST_HAVE_STARTED_OR_COMPLETED_CFFFFD700MAKE",
-							export = true,
-							text = {
-								en = "Must have started or completed |cFFFFD700Make Them Listen|r for this item to become available.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须已开始或完成|cFFFFD700让他们听命|r，此物品才会出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must have started or completed |cFFFFD700Make Them Listen|r for this item to become available.",
 						["races"] = HORDE_ONLY,
 						["cr"] = 16906,	-- Unyielding Knight
 					}),

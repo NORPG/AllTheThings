@@ -334,24 +334,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				n(SNUFFLING, {
 					n(QUESTS, {
 						q(80378, {	-- A Light of the Dark
-							["description"] = createLocalizationString({
-								readable = "Quest Item drops from Nerubian enemies in the area.\nYou may need to get a few stacks of Unseeming Shift by standing in Blood Pools.",
-								constant = "QUEST_ITEM_DROPS_FROM_NERUBIAN_ENEMIES_IN_THE",
-								export = true,
-								text = {
-									en = "Quest Item drops from Nerubian enemies in the area.\nYou may need to get a few stacks of Unseeming Shift by standing in Blood Pools.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "任务物品由该区域的蛛魔敌人掉落。\n你可能需要站在血池中获得几层失相转移。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Quest Item drops from Nerubian enemies in the area.\nYou may need to get a few stacks of Unseeming Shift by standing in Blood Pools.",
 							["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
 							["coord"] = { 64.8, 80.8, AZJ_KAHET },
 							["groups"] = {
@@ -360,24 +343,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							},
 						}),
 						q(79555, {	-- Deep Wax Galactic
-							["description"] = createLocalizationString({
-								readable = "Quest Item drops from Nerubian enemies in the area.",
-								constant = "QUEST_ITEM_DROPS_FROM_NERUBIAN_ENEMIES_IN_THE_2",
-								export = true,
-								text = {
-									en = "Quest Item drops from Nerubian enemies in the area.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "任务物品由该区域的蛛魔敌人掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Quest Item drops from Nerubian enemies in the area.",
 							["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
 							["coord"] = { 79.4, 76.5, AZJ_KAHET },
 							["groups"] = {

@@ -19,24 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 				["cost"] = { { "i", 170540, 1 } },	-- Ravenous Anima Cell
 			}, {
 				crit(49974, {	-- Dark Armaments
-					["description"] = createLocalizationString({
-						readable = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
-						constant = "CAN_BE_SPAWNED_FROM_CREATURES_WITHIN_THE",
-						export = true,
-						text = {
-							en = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从“冷心间隙”塔内的生物身上刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be spawned from creatures within the 'Coldheart Interstitia' tower.",
 					["crs"] = {
 						156212,	-- Coldheart Agent
 						165594,	-- Coldheart Ambusher
@@ -126,24 +109,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 					["crs"] = { 155793 },	-- Skeletal Remains
 				}),
 				crit(49989, {	-- Prisoner's Concord
-					["description"] = createLocalizationString({
-						readable = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
-						constant = "CAN_BE_SPAWNED_FROM_CREATURES_WITHIN_THE_THE",
-						export = true,
-						text = {
-							en = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从“上层区域”塔内的生物身上刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be spawned from creatures within the 'The Upper Reaches' tower.",
 					["crs"] = {
 						154011,	-- Armed Prisoner
 						154015,	-- Escaped Ritualist
@@ -178,232 +144,79 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 			ach(14498, {	-- Gatekeepers of Torghast
 				crit(49158, {		-- Dark Aspirant Corrus
 					["crs"] = { 156239 },	-- Dark Aspirant Corrus
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in Coldheart Interstitia.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_COLDHEART_INTERSTITIA",
-						export = true,
-						text = {
-							en = "This boss can be found in Coldheart Interstitia.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该首领可以在寒心间隙找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 				crit(49159, {		-- Arch-Suppressor Laguas
 					["crs"] = { 171422 },	-- Arch-Suppressor Laguas
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in The Soulforges and The Upper Reaches.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_THE_SOULFORGES_AND",
-						export = true,
-						text = {
-							en = "This boss can be found in The Soulforges and The Upper Reaches.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这个首领可以在灵魂熔炉和上层区域中找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in The Soulforges and The Upper Reaches.",
 				}),
 				crit(49160, {		-- Goxul the Devourer
 					["crs"] = { 170418 },	-- Goxul the Devourer
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in The Upper Reaches.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_THE_UPPER_REACHES",
-						export = true,
-						text = {
-							en = "This boss can be found in The Upper Reaches.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该首领可以在上层区域找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
 				crit(49161, {		-- Observer Zelgar
 					["crs"] = { 169859 },	-- Observer Zelgar <The Third Eye>
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in The Soulforges.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_THE_SOULFORGES",
-						export = true,
-						text = {
-							en = "This boss can be found in The Soulforges.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该首领可以在灵魂熔炉中找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in The Soulforges.",
 				}),
 				crit(49162, {		-- Custodian Thonar
 					["crs"] = { 153165 },	-- Custodian Thonar
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in Skoldus Hall.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_SKOLDUS_HALL",
-						export = true,
-						text = {
-							en = "This boss can be found in Skoldus Hall.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该首领可以在斯科杜斯大厅找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(49163, {		-- Warden Skoldus
 					["crs"] = { 151329 },	-- Warden Skoldus
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_SKOLDUS_HALL",
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(49164, {		-- Writhing Soulmass
 					["crs"] = { 156015 },	-- Writhing Soulmass
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_SKOLDUS_HALL",
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(49165, {		-- Kosarus the Fallen
 					["crs"] = { 153451 },	-- Kosarus the Fallen
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in Fracture Chambers.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_FRACTURE_CHAMBERS",
-						export = true,
-						text = {
-							en = "This boss can be found in Fracture Chambers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这个首领可以在断裂密室中找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in Fracture Chambers.",
 				}),
 				crit(49166, {		-- The Grand Malleare
 					["crs"] = { 159755 },	-- The Grand Malleare
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_THE_SOULFORGES",
+					["description"] = "This boss can be found in The Soulforges.",
 				}),
 				crit(49167, {		-- Gherus the Chained
 					["crs"] = { 155945 },	-- Gherus the Chained
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in Skoldus Hall, The Upper Reaches, and Fracture Chambers.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_SKOLDUS_HALL_THE",
-						export = true,
-						text = {
-							en = "This boss can be found in Skoldus Hall, The Upper Reaches, and Fracture Chambers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这个首领可以在斯科杜斯之厅、上层区域和断裂密室中找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in Skoldus Hall, The Upper Reaches, and Fracture Chambers.",
 				}),
 				crit(49168, {		-- Cellblock Sentinel
 					["crs"] = { 151331 },	-- Cellblock Sentinel
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in Skoldus Hall and The Soulforges.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_SKOLDUS_HALL_AND_THE",
-						export = true,
-						text = {
-							en = "This boss can be found in Skoldus Hall and The Soulforges.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这个首领可以在斯科杜斯之厅和灵魂熔炉中找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in Skoldus Hall and The Soulforges.",
 				}),
 				crit(49169, {		-- Warden of Souls
 					["crs"] = { 152995 },	-- Warden of Souls
-					["description"] = createLocalizationString({
-						readable = "This boss can be found in Mort'regar.",
-						constant = "THIS_BOSS_CAN_BE_FOUND_IN_MORT_REGAR",
-						export = true,
-						text = {
-							en = "This boss can be found in Mort'regar.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此首领可在莫尔特雷加找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(49170, {		-- Binder Baritas
 					["crs"] = { 153011 },	-- Binder Baritas
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_MORT_REGAR",
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(49171, {		-- Maw of the Maw
 					["crs"] = { 153382 },	-- Maw of the Maw
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_MORT_REGAR",
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(49172, {		-- Synod
 					["crs"] = { 159190 },	-- Synod
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_THE_UPPER_REACHES",
+					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
 				crit(49173, {		-- Patrician Cromwell
 					["crs"] = { 157122 },	-- Patrician Cromwell
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_THE_UPPER_REACHES",
+					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
 				crit(49515, {		-- Watchers of Death
 					["crs"] = { 153174 },	-- Watchers of Death
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_MORT_REGAR",
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(49516, {		-- Elder Longbranch
 					["crs"] = { 155251 },	-- Elder Longbranch
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_COLDHEART_INTERSTITIA",
+					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 				crit(49517, {		-- Decayspeaker
 					["crs"] = { 155250 },	-- Decayspeaker
-					["description"] = "~L.THIS_BOSS_CAN_BE_FOUND_IN_COLDHEART_INTERSTITIA",
+					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 			}),
 			ach(15075, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Infiltrators

@@ -150,24 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			n(TREASURES, {
 				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
 					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
-					["description"] = createLocalizationString({
-						readable = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-						constant = "LOCATED_IN_BLACKWING_LAIR_ON_ONE_OF_THE_TABLES",
-						export = true,
-						text = {
-							en = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于黑翼之巢，在拉完第一波龙人守卫监工之后坡道上的其中一张桌子上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
 					["coord"] = { 32.0, 42.9, MAP.BLACKWING_LAIR },
 					["groups"] = {
 						i(21109),	-- Draconic for Dummies [Chapter VII]
@@ -333,24 +316,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
 				-- #if BEFORE WRATH
-				["description"] = createLocalizationString({
-					readable = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-					constant = "WHEN_KRIXIX_IS_MIND_CONTROLLED_ONE_OF_THE",
-					export = true,
-					text = {
-						en = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当克里克斯被精神控制时，牧师可用的技能之一就是教会一个友方目标熔炼源质。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
 				["groups"] = { r(22967) },	-- Smelt Elementium
 				-- #else
 				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
@@ -439,24 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					-- #if AFTER WOD
 					prof(SKINNING, {
 						i(12607, {	-- Brilliant Chromatic Scale
-							["description"] = createLocalizationString({
-								readable = "Can only be obtained from Chromaggus.",
-								constant = "CAN_ONLY_BE_OBTAINED_FROM_CHROMAGGUS",
-								export = true,
-								text = {
-									en = "Can only be obtained from Chromaggus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只能从克洛玛古斯处获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only be obtained from Chromaggus.",
 						}),
 					}),
 					-- #endif
@@ -562,24 +511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["cr"] = 232903,	-- Shadowmage <Cult of the Damned>
 								}),
 								i(231796, {	-- Depleted Scythe of Chaos (Devouring)
-									["description"] = createLocalizationString({
-										readable = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
-										constant = "USE_DRAIL_SOUL_ON_THE_RAVENOUS_FELHOUND_ONCE",
-										export = true,
-										text = {
-											en = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "使用暗影雕刻召唤出贪婪的地狱犬后，对它使用吸取灵魂。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
 									["coord"] = { 53.8, 51.6, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231799, 1 },	-- Soul of Devouring
@@ -600,24 +532,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["cr"] = 232900,	-- Cursed Mage
 								}),
 								i(231795, {	-- Depleted Scythe of Chaos (Enthralling)
-									["description"] = createLocalizationString({
-										readable = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
-										constant = "USE_DRAIL_SOUL_ON_THE_FEL_INTERLOPER_ONCE_YOU",
-										export = true,
-										text = {
-											en = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "使用空间修补卷轴召唤出邪能入侵者后，对它使用吸取灵魂。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
 									["coord"] = { 32.6, 30.9, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231798, 1 },	-- Soul of Enthralling
@@ -637,24 +552,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["provider"] = { "i", 231732 },	-- Suspicious Supplies
 								}),
 								i(231793, {	-- Depleted Scythe of Chaos (Mischief)
-									["description"] = createLocalizationString({
-										readable = "Use Drail Soul on Xirath once you've completed his task to receive this.",
-										constant = "USE_DRAIL_SOUL_ON_XIRATH_ONCE_YOU_VE_COMPLETED",
-										export = true,
-										text = {
-											en = "Use Drail Soul on Xirath once you've completed his task to receive this.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "完成希拉斯的任务后，对他使用吸取灵魂以获得此物品。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Use Drail Soul on Xirath once you've completed his task to receive this.",
 									["coord"] = { 69.6, 32.0, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231792, 1 },	-- Soul of Mischief
@@ -670,24 +568,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 							["coord"] = { 81.2, 59.0, MAP.EASTERN_PLAGUELANDS },
 							["groups"] = {
 								i(231794, {	-- Depleted Scythe of Chaos (Void)
-									["description"] = createLocalizationString({
-										readable = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
-										constant = "USE_DRAIL_SOUL_ON_THE_VOIDWALKER_ONCE_YOU_VE",
-										export = true,
-										text = {
-											en = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在使用强效法术石、暗影结界，然后用牺牲将其召唤出来后，对虚空行者使用吸取灵魂。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
 									["coord"] = { 59.0, 67.0, MAP.EASTERN_PLAGUELANDS },
 									["cost"] = {
 										{ "i", 231797, 1 },	-- Soul of the Void
@@ -715,24 +596,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 									["coord"] = { 84.8, 70.6, MAP.ASHENVALE },
 								}),
 								n(232886, {	-- Des'Altek
-									["description"] = createLocalizationString({
-										readable = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
-										constant = "SUMMON_AND_DEFEAT_DES_ALTEK_WITHIN_DEMON_FALL",
-										export = true,
-										text = {
-											en = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在屠魔峡谷中召唤并击败德斯阿特克以获取灵魂。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
 									["cost"] = {
 										{ "i", 231800, 1 },	-- Soul of Des'Altek
 										{ "i", 231796, 1 },	-- Depleted Scythe of Chaos (Devouring)
@@ -797,24 +661,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					i(19183),	-- Hourglass Sand
 				}),
 				n(231711, {	-- Victor Nefriendius
-					["description"] = createLocalizationString({
-						readable = "Located inside BWL. You can speak to him at the start of the raid to activate a number of trials. Each trial up to 3 will award additional loot. You'll want to activate the weekly trial in addition to 2 others for the best loot opportunity after your raid defeats Nefarian.",
-						constant = "LOCATED_INSIDE_BWL_YOU_CAN_SPEAK_TO_HIM_AT_THE",
-						export = true,
-						text = {
-							en = "Located inside BWL. You can speak to him at the start of the raid to activate a number of trials. Each trial up to 3 will award additional loot. You'll want to activate the weekly trial in addition to 2 others for the best loot opportunity after your raid defeats Nefarian.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于黑翼之巢内。你可以在团队副本开始时与他交谈来激活若干试炼。最多 3 个试炼，每个都会提供额外战利品。为了让团队击败奈法利安后获得最佳的战利品机会，你最好激活每周试炼外加另外 2 个试炼。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Located inside BWL. You can speak to him at the start of the raid to activate a number of trials. Each trial up to 3 will award additional loot. You'll want to activate the weekly trial in addition to 2 others for the best loot opportunity after your raid defeats Nefarian.",
 					["groups"] = {
 						cl(DRUID, {
 							-- DPS (Agility)
@@ -1139,7 +986,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				n(14401, {	-- Master Elemental Shaper Krixix
-					["description"] = "~L.WHEN_KRIXIX_IS_MIND_CONTROLLED_ONE_OF_THE",
+					["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
 					["groups"] = { r(22967) },	-- Smelt Elementium
 				}),
 				e(1533, {	-- Ebonroc
@@ -1246,105 +1093,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				o(495577, {	-- Chromatic Stash
-					["description"] = createLocalizationString({
-						readable = "Appears after defeating Nefarian with one trial active.\n\nContains one of the class trinkets plus two additional pieces of loot from bosses in Blackwing Lair.",
-						constant = "APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_ONE_TRIAL",
-						export = true,
-						text = {
-							en = "Appears after defeating Nefarian with one trial active.\n\nContains one of the class trinkets plus two additional pieces of loot from bosses in Blackwing Lair.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在激活一个试炼的情况下击败奈法利安后出现。\n\n包含一件职业饰品以及黑翼之巢首领掉落的另外两件战利品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Appears after defeating Nefarian with one trial active.\n\nContains one of the class trinkets plus two additional pieces of loot from bosses in Blackwing Lair.",
 				}),
 				o(495578, {	-- Chromatic Supplies
-					["description"] = createLocalizationString({
-						readable = "Appears after defeating Nefarian with two trials active. It replaces the Chromatic Stash.\n\nContains one of the class trinkets plus four additional pieces of loot from bosses in Blackwing Lair.",
-						constant = "APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_TWO",
-						export = true,
-						text = {
-							en = "Appears after defeating Nefarian with two trials active. It replaces the Chromatic Stash.\n\nContains one of the class trinkets plus four additional pieces of loot from bosses in Blackwing Lair.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在激活两个试炼的情况下击败奈法利安后出现。它会取代多彩藏匿物。\n\n包含一件职业饰品以及黑翼之巢首领掉落的另外四件战利品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Appears after defeating Nefarian with two trials active. It replaces the Chromatic Stash.\n\nContains one of the class trinkets plus four additional pieces of loot from bosses in Blackwing Lair.",
 				}),
 				o(495503, {	-- Chromatic Hoard
-					["description"] = createLocalizationString({
-						readable = "Appears after defeating Nefarian with three trials active. It replaces the Chromatic Supplies.\n\nContains one of the class trinkets plus five additional pieces of loot from bosses in Blackwing Lair.\n\nWeapons found in this chest will have a unique \"Shadowflame\" visual effect.",
-						constant = "APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_THREE",
-						export = true,
-						text = {
-							en = "Appears after defeating Nefarian with three trials active. It replaces the Chromatic Supplies.\n\nContains one of the class trinkets plus five additional pieces of loot from bosses in Blackwing Lair.\n\nWeapons found in this chest will have a unique \"Shadowflame\" visual effect.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在激活三个试炼的情况下击败奈法利安后出现。它会取代多彩补给。\n\n包含一件职业饰品以及黑翼之巢首领掉落的另外五件战利品。\n\n此宝箱中的武器会具有独特的“暗影烈焰”视觉效果。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Appears after defeating Nefarian with three trials active. It replaces the Chromatic Supplies.\n\nContains one of the class trinkets plus five additional pieces of loot from bosses in Blackwing Lair.\n\nWeapons found in this chest will have a unique \"Shadowflame\" visual effect.",
 					["sym"] = {{ "select", "objectID", 495500 }, {"pop"}},
 				}),
 				o(495505, {	-- Favored Riches
-					["description"] = createLocalizationString({
-						readable = "Appears in Blackwing Lair after defeating Nefarian with the weekly trial active.\n\nContains two pieces of loot from bosses in Blackwing Lair.",
-						constant = "APPEARS_IN_BLACKWING_LAIR_AFTER_DEFEATING",
-						export = true,
-						text = {
-							en = "Appears in Blackwing Lair after defeating Nefarian with the weekly trial active.\n\nContains two pieces of loot from bosses in Blackwing Lair.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在激活每周试炼的情况下击败奈法利安后，出现在黑翼之巢中。\n\n包含黑翼之巢首领掉落的两件战利品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Appears in Blackwing Lair after defeating Nefarian with the weekly trial active.\n\nContains two pieces of loot from bosses in Blackwing Lair.",
 				}),
 				o(495500, {	-- Shadowflame Cache
-					["description"] = createLocalizationString({
-						readable = "Appears after defeating Nefarian with three trials active, including the weekly trial alongside the two chests.\n\nContains 3-5 Elementium Ore and four other items. Weapons found in this chest will have a unique \"Shadowflame\" visual effect.",
-						constant = "APPEARS_AFTER_DEFEATING_NEFARIAN_WITH_THREE_2",
-						export = true,
-						text = {
-							en = "Appears after defeating Nefarian with three trials active, including the weekly trial alongside the two chests.\n\nContains 3-5 Elementium Ore and four other items. Weapons found in this chest will have a unique \"Shadowflame\" visual effect.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在激活三个试炼（包括每周试炼和两个宝箱）的情况下击败奈法利安后出现。\n\n包含 3-5 个源质矿石和另外四件物品。此宝箱中的武器会具有独特的“暗影烈焰”视觉效果。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Appears after defeating Nefarian with three trials active, including the weekly trial alongside the two chests.\n\nContains 3-5 Elementium Ore and four other items. Weapons found in this chest will have a unique \"Shadowflame\" visual effect.",
 					["groups"] = {
 						i(232550),	-- Ashkandi, Greatsword of the Brotherhood [Shadowflame]
 						i(232606),	-- Ashjre'thul, Crossbow of Smiting [Shadowflame]

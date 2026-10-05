@@ -413,24 +413,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 6.0.2
 			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 				q(33957, {	-- A Gift for Raa'la
-					["description"] = createLocalizationString({
-						readable = "Area: |cFFf09f26Frostfire Ridge|r",
-						constant = "AREA_CFFF09F26FROSTFIRE_RIDGE_R",
-						export = true,
-						text = {
-							en = "Area: |cFFf09f26Frostfire Ridge|r",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "区域：|cFFf09f26霜火岭|r",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Area: |cFFf09f26Frostfire Ridge|r",
 					["lvl"] = 10,
 				}),
 				q(36903),	-- Ogre Waygate
@@ -488,24 +471,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 8.0.1
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(50668, {
-					["description"] = createLocalizationString({
-						readable = "Area: |cFFf09f26Orgrimmar|r",
-						constant = "AREA_CFFF09F26ORGRIMMAR_R",
-						export = true,
-						text = {
-							en = "Area: |cFFf09f26Orgrimmar|r",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "区域：|cFFf09f26奥格瑞玛|r",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Area: |cFFf09f26Orgrimmar|r",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -533,7 +499,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 8.1.5
 			expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 				q(55023, {	-- Bizmo's Brawlpub Awaits!
-					["description"] = "~L.CATEGORY_CFFF09F26BRAWLER_S_GUILD_R",
+					["description"] = "Category: |cFFf09f26Brawler's Guild|r",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -569,7 +535,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
 				q(57550),	--
 				q(57640, {	-- Master Ryson's All Seeing Eye
-					["description"] = "~L.TYPE_CFFF09F26PVP_R_CATEGORY_CFFF09F26KORRAK_S",
+					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
 					["qg"] = 13151,	-- Syndicate Master Ryson
 					["maps"] = 1537,	-- Alterac Valley
 					["lvl"] = 10,

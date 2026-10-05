@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["coord"] = { 55.4, 27.0, SINFALL_REACHES },
 								}),
 								q(61792, {	-- Adventurer: Bogdan
-									["description"] = "~L.REQUIRES_RENOWN_38",
+									["description"] = "Requires Renown 38.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {
@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64467, {	-- Adventurer: Chachi the Artiste
-									["description"] = "~L.REQUIRES_RENOWN_44",
+									["description"] = "Requires Renown 44.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {
@@ -48,7 +48,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61789, {	-- Adventurer: Lost Sybille
-									["description"] = "~L.REQUIRES_RENOWN_27",
+									["description"] = "Requires Renown 27.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {
@@ -56,7 +56,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64469, {	-- Adventurer: Lucia
-									["description"] = "~L.REQUIRES_RENOWN_71",
+									["description"] = "Requires Renown 71.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {
@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(64468, {	-- Adventurer: Madame Iza
-									["description"] = "~L.REQUIRES_RENOWN_62",
+									["description"] = "Requires Renown 62.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {
@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61729, {	-- Adventurer: Rahel
-									["description"] = "~L.REQUIRES_RENOWN_4",
+									["description"] = "Requires Renown 4.",
 									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
@@ -81,7 +81,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61786, {	-- Adventurer: Stonehead
-									["description"] = "~L.REQUIRES_RENOWN_12",
+									["description"] = "Requires Renown 12.",
 									["sourceQuests"] = { 58444 },	-- Return to Sinfall
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61788, {	-- Adventurer: Simone
-									["description"] = "~L.REQUIRES_RENOWN_17",
+									["description"] = "Requires Renown 17.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {
@@ -99,7 +99,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61790, {	-- Adventurer: Vulca
-									["description"] = "~L.REQUIRES_RENOWN_33",
+									["description"] = "Requires Renown 33.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 									["groups"] = {

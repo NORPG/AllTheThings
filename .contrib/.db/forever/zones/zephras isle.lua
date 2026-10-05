@@ -1407,24 +1407,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 		}),
 		n(TREASURES, {
 			o(616907, {	-- Windstone
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly throughout Zephras Isle.",
-					constant = "SPAWNS_RANDOMLY_THROUGHOUT_ZEPHRAS_ISLE",
-					export = true,
-					text = {
-						en = "Spawns randomly throughout Zephras Isle.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在泽弗拉斯岛各处随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly throughout Zephras Isle.",
 				["sourceQuest"] = 93552,	-- Harvesting Windstones
 				["groups"] = { i(255663) },	-- Windstone
 			}),

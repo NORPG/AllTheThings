@@ -148,24 +148,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["coord"] = { 66.8, 74.3, NZOTH_ASSAULT_ULDUM },
 						}),
 						n(157593, {	-- Amalgamation of Flesh
-							["description"] = createLocalizationString({
-								readable = "This rare will only spawn when the event is up",
-								constant = "THIS_RARE_WILL_ONLY_SPAWN_WHEN_THE_EVENT_IS_UP",
-								export = true,
-								text = {
-									en = "This rare will only spawn when the event is up",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此稀有怪仅在事件开启时刷新",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This rare will only spawn when the event is up",
 							["questID"] = 57429,
 							["coord"] = { 59.8, 72.4, NZOTH_ASSAULT_ULDUM },
 							["groups"] = {
@@ -178,24 +161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(158491, {	-- Falconer Amenophis
 							["questID"] = 57662,
-							["description"] = createLocalizationString({
-								readable = "Patrols the desert around |cFFFFD700Neferset|r.",
-								constant = "PATROLS_THE_DESERT_AROUND_CFFFFD700NEFERSET_R",
-								export = true,
-								text = {
-									en = "Patrols the desert around |cFFFFD700Neferset|r.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在|cFFFFD700奈斐塞特|r周边的沙漠中巡逻。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Patrols the desert around |cFFFFD700Neferset|r.",
 							["coords"] = {
 								{ 53.2, 70.8, NZOTH_ASSAULT_ULDUM },
 								{ 54.2, 69.2, NZOTH_ASSAULT_ULDUM },
@@ -211,24 +177,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 						n(158633, {	-- Gaze of N'Zoth
-							["description"] = createLocalizationString({
-								readable = "Can spawn anywhere in the Akhenet Fields. Shares a spawn with Foul Observer.",
-								constant = "CAN_SPAWN_ANYWHERE_IN_THE_AKHENET_FIELDS_SHARES",
-								export = true,
-								text = {
-									en = "Can spawn anywhere in the Akhenet Fields. Shares a spawn with Foul Observer.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可以在阿赫奈特平原的任何地方刷新。与邪恶监视者共享刷新点。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can spawn anywhere in the Akhenet Fields. Shares a spawn with Foul Observer.",
 							["questID"] = 57680,
 							["coord"] = { 55.0, 53.0, NZOTH_ASSAULT_ULDUM },
 							["groups"] = {
@@ -253,24 +202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(160623, {	-- Hungering Miasma (might be 160631 or maybe it's different one)
 							["questID"] = 58206,
 							["coord"] = { 60.0, 39.0, NZOTH_ASSAULT_ULDUM },
-							["description"] = createLocalizationString({
-								readable = "To activate, you must feed it the surrounding oozelings by dragging them on top of it.",
-								constant = "TO_ACTIVATE_YOU_MUST_FEED_IT_THE_SURROUNDING",
-								export = true,
-								text = {
-									en = "To activate, you must feed it the surrounding oozelings by dragging them on top of it.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "要激活它，你必须把周围的软泥怪拖到它上面来喂它。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "To activate, you must feed it the surrounding oozelings by dragging them on top of it.",
 						}),
 						n(156655, {	-- Korzaran the Slaughterer
 							["questID"] = 57433,
@@ -278,44 +210,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(156299, {	-- R'khuzj the Unfathomable
 							["questID"] = 57430,
-							["description"] = createLocalizationString({
-								readable = "Roams around the southern half of Uldum.",
-								constant = "ROAMS_AROUND_THE_SOUTHERN_HALF_OF_ULDUM",
-								export = true,
-								text = {
-									en = "Roams around the southern half of Uldum.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在奥丹姆南半部游荡。",
-									-- TODO: tw = "",
-								},
-							}),	-- TODO:  his path is HUGE. do we want to add coords?
+							["description"] = "Roams around the southern half of Uldum.",	-- TODO:  his path is HUGE. do we want to add coords?
 						}),
 						n(161033, {	-- Shadowmaw
-							["description"] = createLocalizationString({
-								readable = "In the waters surrounding the main hub.",
-								constant = "IN_THE_WATERS_SURROUNDING_THE_MAIN_HUB",
-								export = true,
-								text = {
-									en = "In the waters surrounding the main hub.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在主要枢纽周围的水域中。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "In the waters surrounding the main hub.",
 							["questID"] = 58333,
 							["coord"] = { 56.4, 40.6, NZOTH_ASSAULT_ULDUM },
 						}),
@@ -328,24 +226,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["coord"] = { 61.3, 74.9, NZOTH_ASSAULT_ULDUM },
 						}),
 						n(158636, {	-- The Grand Executor
-							["description"] = createLocalizationString({
-								readable = "Up in the air on the platform.",
-								constant = "UP_IN_THE_AIR_ON_THE_PLATFORM",
-								export = true,
-								text = {
-									en = "Up in the air on the platform.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在平台上的半空中。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Up in the air on the platform.",
 							["questID"] = 57688,
 							["coord"] = { 49.3, 82.3, NZOTH_ASSAULT_ULDUM },
 							["groups"] = {
@@ -353,46 +234,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 						n(158595, {	-- Thoughtstealer Vos
-							["description"] = createLocalizationString({
-								readable = "He is in stealth.",
-								constant = "HE_IS_IN_STEALTH",
-								export = true,
-								text = {
-									en = "He is in stealth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "他处于潜行状态。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "He is in stealth.",
 							["questID"] = 57673,
 							["coord"] = { 59.4, 49.8, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(57359, {	-- Summoning Ritual
-							["description"] = createLocalizationString({
-								readable = "The portal needs to be clicked multiple times in order for the rares to spawn. You can only click the portal once per day, so work together with others to get the spawn. Three rares will spawn at a time and any of the rares can spawn in any of the locations.",
-								constant = "THE_PORTAL_NEEDS_TO_BE_CLICKED_MULTIPLE_TIMES",
-								export = true,
-								text = {
-									en = "The portal needs to be clicked multiple times in order for the rares to spawn. You can only click the portal once per day, so work together with others to get the spawn. Three rares will spawn at a time and any of the rares can spawn in any of the locations.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "传送门需要被点击多次才能使稀有生物刷新。你每天只能点击传送门一次，所以请与他人合作来完成刷新。每次会刷新三只稀有生物，任何一只稀有生物都可能出现在任何位置。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The portal needs to be clicked multiple times in order for the rares to spawn. You can only click the portal once per day, so work together with others to get the spawn. Three rares will spawn at a time and any of the rares can spawn in any of the locations.",
 							["altQuests"] = { 57620, 57621 },	-- Summoning Ritual
 							["coords"] = {
 								{ 55.2, 79.4, NZOTH_ASSAULT_ULDUM },
@@ -513,24 +360,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					})),
 					n(ZONE_DROPS, {
 						i(170553, {	-- Void Focus Splinter
-							["description"] = createLocalizationString({
-								readable = "The fastest way is to farm them inside Lesser Vision.",
-								constant = "THE_FASTEST_WAY_IS_TO_FARM_THEM_INSIDE_LESSER",
-								export = true,
-								text = {
-									en = "The fastest way is to farm them inside Lesser Vision.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "最快的方法是在次级幻象内刷它们。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The fastest way is to farm them inside Lesser Vision.",
 						}),
 						-- #IF BEFORE TWW
 						i(174768, {	-- Cursed Relic
@@ -744,24 +574,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(151883, {	-- Anaua
 							["questID"] = 55468,
-							["description"] = createLocalizationString({
-								readable = "Flies around the top of the |cFFFFD700Halls of Origination|r.",
-								constant = "FLIES_AROUND_THE_TOP_OF_THE_CFFFFD700HALLS_OF",
-								export = true,
-								text = {
-									en = "Flies around the top of the |cFFFFD700Halls of Origination|r.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在|cFFFFD700起源大厅|r的顶部周围飞行。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Flies around the top of the |cFFFFD700Halls of Origination|r.",
 							["coords"] = {
 								{ 71.2, 54.0, NZOTH_ASSAULT_ULDUM },
 								{ 68.7, 54.0, NZOTH_ASSAULT_ULDUM },
@@ -772,24 +585,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(152757, {	-- Atekhramun
 							["questID"] = 55710,
 							["coord"] = { 64.0, 51.0, NZOTH_ASSAULT_ULDUM },
-							["description"] = createLocalizationString({
-								readable = "Crush all the little scorpions by walking over them to spawn this mob.",
-								constant = "CRUSH_ALL_THE_LITTLE_SCORPIONS_BY_WALKING_OVER",
-								export = true,
-								text = {
-									en = "Crush all the little scorpions by walking over them to spawn this mob.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "踩死所有小蝎子以刷新该怪物。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Crush all the little scorpions by walking over them to spawn this mob.",
 						}),
 						n(157167, {	-- Champion Sen-mat
 							["questID"] = 57280,
@@ -841,24 +637,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(162352, {	-- Spirit of Dark Ritualist Zakahn
 							["questID"] = 58716,
 							["coord"] = { 49.98, 40.11, NZOTH_ASSAULT_ULDUM },
-							["description"] = createLocalizationString({
-								readable = "In the underwater cave.",
-								constant = "IN_THE_UNDERWATER_CAVE",
-								export = true,
-								text = {
-									en = "In the underwater cave.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在水下洞穴中。",
-									-- TODO: tw = "",
-								},
-							})
+							["description"] = "In the underwater cave."
 						}),
 						n(151878, {	-- Sun King Nahkotep
 							["questID"] = 58613,
@@ -890,24 +669,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(152788, {	-- Uat-ka the Sun's Wrath
 							["questID"] = 55716,
 							["coord"] = { 67.5, 63.8, NZOTH_ASSAULT_ULDUM },
-							["description"] = createLocalizationString({
-								readable = "Requires 3 players with |cFFFFD700Suntouched Amulet|r to channel the pillars at the same time to summon.",
-								constant = "REQUIRES_3_PLAYERS_WITH_CFFFFD700SUNTOUCHED",
-								export = true,
-								text = {
-									en = "Requires 3 players with |cFFFFD700Suntouched Amulet|r to channel the pillars at the same time to summon.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "需要 3 名佩戴|cFFFFD700日触护符|r的玩家同时引导柱子来召唤。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Requires 3 players with |cFFFFD700Suntouched Amulet|r to channel the pillars at the same time to summon.",
 							["groups"] = {
 								i(174875),	-- Obelisk of the Sun
 							},
@@ -1191,24 +953,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						n(162171, {	-- Captain Dunewalker
 							["questID"] = 58699,
 							["coord"] = { 45.61, 57.79, NZOTH_ASSAULT_ULDUM },
-							["description"] = createLocalizationString({
-								readable = "He is inside the Chamber of the Sun.",
-								constant = "HE_IS_INSIDE_THE_CHAMBER_OF_THE_SUN",
-								export = true,
-								text = {
-									en = "He is inside the Chamber of the Sun.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "他在太阳之室内。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "He is inside the Chamber of the Sun.",
 						}),
 						n(162147, {	-- Corpse Eater
 							["questID"] = 58696,
@@ -1227,24 +972,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 						n(155531, {	-- Infested Wastewander Captain
-							["description"] = createLocalizationString({
-								readable = "Shares a spawn with Wastewander Host. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-								constant = "SHARES_A_SPAWN_WITH_WASTEWANDER_HOST",
-								export = true,
-								text = {
-									en = "Shares a spawn with Wastewander Host. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "与废土游荡者部队共享刷新点。坐标是该稀有怪可能出现的大致区域，但蹲守刷新点不如反复刷怪可靠。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Shares a spawn with Wastewander Host. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 							["questID"] = 56823,
 							["coords"] = {
 								{ 17.6, 60.2, NZOTH_ASSAULT_ULDUM },
@@ -1252,24 +980,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 						n(154604, {	-- Lord Aj'qirai
-							["description"] = createLocalizationString({
-								readable = "He is underground.",
-								constant = "HE_IS_UNDERGROUND",
-								export = true,
-								text = {
-									en = "He is underground.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "他在地下。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "He is underground.",
 							["questID"] = 56340,
 							["coord"] = { 34.67, 18.90, NZOTH_ASSAULT_ULDUM },
 							["groups"] = {
@@ -1278,24 +989,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(156078, {	-- Magus Rehleth
 							["questID"] = 56952,
-							["description"] = createLocalizationString({
-								readable = "Spawns in Ruins of Ammon.",
-								constant = "SPAWNS_IN_RUINS_OF_AMMON",
-								export = true,
-								text = {
-									en = "Spawns in Ruins of Ammon.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在安蒙废墟刷新。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Spawns in Ruins of Ammon.",
 							["coord"] = { 31.31, 66.01, NZOTH_ASSAULT_ULDUM },
 						}),
 						n(162142, {	-- Qho
@@ -1440,24 +1134,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			n(VENDORS, {
 				n(163252, {	-- Yasmin <Innkeeper>
 					["coord"] = { 26.6, 7.2, ULDUM },
-					["description"] = createLocalizationString({
-						readable = "Since this version of Yasmin is part of a faction, you can buy the sands of time item from her with a discount at higher reputation levels!",
-						constant = "SINCE_THIS_VERSION_OF_YASMIN_IS_PART_OF_A",
-						export = true,
-						text = {
-							en = "Since this version of Yasmin is part of a faction, you can buy the sands of time item from her with a discount at higher reputation levels!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由于这个版本的亚丝敏属于某个阵营，你可以在声望更高时从她那里以折扣价购买时光之沙物品！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Since this version of Yasmin is part of a faction, you can buy the sands of time item from her with a discount at higher reputation levels!",
 					["groups"] = {
 						i(65893, {	-- Sands of Time
 							["cost"] = 30000000,	-- 3000g
@@ -1503,24 +1180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58809, {	-- A Shocking Technique
-						["description"] = createLocalizationString({
-							readable = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
-							constant = "CAN_APPEAR_DURING_MOGU_INVASIONS_IN_THE_VALE_OF",
-							export = true,
-							text = {
-								en = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可能在锦绣谷的魔古入侵期间出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["altQuests"] = {
 							58808,	-- Encased in Amber
@@ -1535,24 +1195,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58808, {	-- Encased in Amber (Mantid assault)
-						["description"] = createLocalizationString({
-							readable = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
-							constant = "CAN_APPEAR_DURING_MANTID_INVASIONS_IN_THE_VALE",
-							export = true,
-							text = {
-								en = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可能在锦绣谷的螳螂妖入侵期间出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["altQuests"] = {
 							58809,	-- A Shocking Technique
@@ -1567,24 +1210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58806, {	-- Warmth of the Sun (Amathet assault)
-						["description"] = createLocalizationString({
-							readable = "Can appear during Amathet invasions in Uldum.",
-							constant = "CAN_APPEAR_DURING_AMATHET_INVASIONS_IN_ULDUM",
-							export = true,
-							text = {
-								en = "Can appear during Amathet invasions in Uldum.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可能在奥丹姆的阿玛塞特入侵期间出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can appear during Amathet invasions in Uldum.",
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["altQuests"] = {
 							58809,	-- A Shocking Technique
@@ -1599,24 +1225,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58807, {	-- Wrapping Up (Aqir assault)
-						["description"] = createLocalizationString({
-							readable = "Can appear during Aqir invasions in Uldum.",
-							constant = "CAN_APPEAR_DURING_AQIR_INVASIONS_IN_ULDUM",
-							export = true,
-							text = {
-								en = "Can appear during Aqir invasions in Uldum.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可能在奥丹姆的亚基入侵期间出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can appear during Aqir invasions in Uldum.",
 						["sourceQuest"] = 58804,	-- Void Incubation
 						["altQuests"] = {
 							58809,	-- A Shocking Technique
@@ -1640,24 +1249,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58810, {	-- Coming Out of His Shell
-						["description"] = createLocalizationString({
-							readable = "Must reach 5000/5000 with the egg's progress bar.",
-							constant = "MUST_REACH_5000_5000_WITH_THE_EGG_S_PROGRESS",
-							export = true,
-							text = {
-								en = "Must reach 5000/5000 with the egg's progress bar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须让蛋的进度条达到 5000/5000。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must reach 5000/5000 with the egg's progress bar.",
 						["sourceQuest"] = 58805,	-- Continued Incubation
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1690,7 +1282,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58826, {	-- A Bloody Treat
-						["description"] = "~L.CAN_APPEAR_DURING_MOGU_INVASIONS_IN_THE_VALE_OF",
+						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["altQuests"] = {
 							58817,	-- Action Figures
@@ -1705,7 +1297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58817, {	-- Action Figures
-						["description"] = "~L.CAN_APPEAR_DURING_AMATHET_INVASIONS_IN_ULDUM",
+						["description"] = "Can appear during Amathet invasions in Uldum.",
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["altQuests"] = {
 							58826,	-- A Bloody Treat
@@ -1720,7 +1312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58818, {	-- Bug Buddies
-						["description"] = "~L.CAN_APPEAR_DURING_AQIR_INVASIONS_IN_ULDUM",
+						["description"] = "Can appear during Aqir invasions in Uldum.",
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["altQuests"] = {
 							58826,	-- A Bloody Treat
@@ -1732,7 +1324,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["DisablePartySync"] = true,
 					}),
 					q(58825, {	-- Super Jelly
-						["description"] = "~L.CAN_APPEAR_DURING_MANTID_INVASIONS_IN_THE_VALE",
+						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["altQuests"] = {
 							58826,	-- A Bloody Treat
@@ -1758,24 +1350,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58829, {	-- They Grow So Fast
-						["description"] = createLocalizationString({
-							readable = "Must reach 5000/5000 with the larva's progress bar.",
-							constant = "MUST_REACH_5000_5000_WITH_THE_LARVA_S_PROGRESS",
-							export = true,
-							text = {
-								en = "Must reach 5000/5000 with the larva's progress bar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须让幼虫的进度条达到 5000/5000。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must reach 5000/5000 with the larva's progress bar.",
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1792,7 +1367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58860, {	-- Big Bad Beetle
-						["description"] = "~L.CAN_APPEAR_DURING_AQIR_INVASIONS_IN_ULDUM",
+						["description"] = "Can appear during Aqir invasions in Uldum.",
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["altQuests"] = {
 							58861,	-- The Mantids' Mettle
@@ -1804,7 +1379,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["DisablePartySync"] = true,
 					}),
 					q(58862, {	-- The Littlest Defender
-						["description"] = "~L.CAN_APPEAR_DURING_MOGU_INVASIONS_IN_THE_VALE_OF",
+						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["altQuests"] = {
 							58860,	-- Big Bad Beetle
@@ -1816,7 +1391,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["DisablePartySync"] = true,
 					}),
 					q(58861, {	-- The Mantids' Mettle
-						["description"] = "~L.CAN_APPEAR_DURING_MANTID_INVASIONS_IN_THE_VALE",
+						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["altQuests"] = {
 							58860,	-- Big Bad Beetle
@@ -1828,7 +1403,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["DisablePartySync"] = true,
 					}),
 					q(58859, {	-- Someone His Own Size
-						["description"] = "~L.CAN_APPEAR_DURING_AMATHET_INVASIONS_IN_ULDUM",
+						["description"] = "Can appear during Amathet invasions in Uldum.",
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["altQuests"] = {
 							58860,	-- Big Bad Beetle
@@ -1849,24 +1424,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(58863, {	-- A Custom Order
-						["description"] = createLocalizationString({
-							readable = "Must reach 5000/5000 with the hatchling's progress bar.",
-							constant = "MUST_REACH_5000_5000_WITH_THE_HATCHLING_S",
-							export = true,
-							text = {
-								en = "Must reach 5000/5000 with the hatchling's progress bar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须让幼崽的进度条达到 5000/5000。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must reach 5000/5000 with the hatchling's progress bar.",
 						["sourceQuest"] = 58830,	-- Aqir Instincts
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1889,24 +1447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(56377, {	-- Forging Onward
-						["description"] = createLocalizationString({
-							readable = "Granted upon entering the Seat of Ramkahen.",
-							constant = "GRANTED_UPON_ENTERING_THE_SEAT_OF_RAMKAHEN",
-							export = true,
-							text = {
-								en = "Granted upon entering the Seat of Ramkahen.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "进入拉姆卡恒之座时获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Granted upon entering the Seat of Ramkahen.",
 						["sourceQuest"] = 56376,	-- Surfacing Threats
 						["coord"] = { 54.9, 33.1, NZOTH_ASSAULT_ULDUM },
 						["lvl"] = 120,
@@ -1970,24 +1511,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 32.4, 64.6, NZOTH_ASSAULT_ULDUM },
 					}),
 					n(154578, {	-- Aqir Flayer
-						["description"] = createLocalizationString({
-							readable = "Shares a spawn with Aqir Hive Worker and Aqir Reaper. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-							constant = "SHARES_A_SPAWN_WITH_AQIR_HIVE_WORKER_AND_AQIR",
-							export = true,
-							text = {
-								en = "Shares a spawn with Aqir Hive Worker and Aqir Reaper. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与亚基巢穴工蜂和亚基收割者共享刷新点。坐标是该稀有怪可能出现的大致区域，但蹲守刷新点不如反复刷怪可靠。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Shares a spawn with Aqir Hive Worker and Aqir Reaper. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58612,
 						["coords"] = {
 							{ 30.6, 14.8, NZOTH_ASSAULT_ULDUM },
@@ -2004,24 +1528,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					n(154576, {	-- Aqir Titanus
-						["description"] = createLocalizationString({
-							readable = "Shares a spawn with Aqir Goliath. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-							constant = "SHARES_A_SPAWN_WITH_AQIR_GOLIATH_COORDINATES",
-							export = true,
-							text = {
-								en = "Shares a spawn with Aqir Goliath. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与亚基巨人共享刷新点。坐标是该稀有怪可能出现的大致区域，但蹲守刷新点不如反复刷怪可靠。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Shares a spawn with Aqir Goliath. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58614,
 						["coords"] = {
 							{ 34.6, 18.4, NZOTH_ASSAULT_ULDUM },
@@ -2041,24 +1548,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					n(162172, {	-- Aqir Warcaster
-						["description"] = createLocalizationString({
-							readable = "Shares a spawn with Aqir Voidcaster. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-							constant = "SHARES_A_SPAWN_WITH_AQIR_VOIDCASTER_COORDINATES",
-							export = true,
-							text = {
-								en = "Shares a spawn with Aqir Voidcaster. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与亚基虚空法师共享刷新点。坐标是该稀有怪可能出现的大致区域，但蹲守刷新点不如反复刷怪可靠。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Shares a spawn with Aqir Voidcaster. Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58694,
 						["coords"] = {
 							{ 37.2, 14.8, NZOTH_ASSAULT_ULDUM },
@@ -2143,24 +1633,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}),
 				}),
 				n(VISIONS_OF_NZOTH,	{
-					["description"] = createLocalizationString({
-						readable = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
-						constant = "USE_THE_OBELISK_TO_SEE_ULDUM_SUCCUMB_TO_N_ZOTH",
-						export = true,
-						text = {
-							en = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用方尖碑观看奥丹姆屈服于恩佐斯的腐蚀。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
 					["groups"] = {
 						n(ZONE_DROPS, {
 							i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
@@ -2185,24 +1658,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								}),
 							}),
 							TempForceMisc(i(174491, {	-- Tome of Unspeakable Delicacies
-								["description"] = createLocalizationString({
-									readable = "This item will not drop until you finish the intro quests up to 'Descending Into Madness'.",
-									constant = "THIS_ITEM_WILL_NOT_DROP_UNTIL_YOU_FINISH_THE",
-									export = true,
-									text = {
-										en = "This item will not drop until you finish the intro quests up to 'Descending Into Madness'.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在你完成至“陷入疯狂”为止的引导任务之前，此物品不会掉落。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "This item will not drop until you finish the intro quests up to 'Descending Into Madness'.",
 								["groups"] = sharedData({
 									["requireSkill"] = COOKING,
 								}, {
@@ -2237,24 +1693,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			n(SPECIAL, {
 				header(HEADERS.Item, 174859, {	-- Springfur Alpaca (MOUNT!)
 					q(58879, {	-- Alpaca It Up
-						["description"] = createLocalizationString({
-							readable = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
-							constant = "FIND_THE_CFFFFD700GERSAHL_GREENS_R_AT_THE_EDGE",
-							export = true,
-							text = {
-								en = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在奥丹姆主河道的边缘找到|cFFFFD700格萨尔的蔬菜|r，然后完成此任务 7 次以获得坐骑。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
 						["provider"] = { "n", 162765 },	-- Friendly Alpaca
 						["coords"] = {
 							{ 15.0, 62.0, NZOTH_ASSAULT_ULDUM },
@@ -2282,24 +1721,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					o(341808, {	-- Gersahl Shrub
-						["description"] = createLocalizationString({
-							readable = "Can be located along the river banks in present / N'Zoth assault timeline.",
-							constant = "CAN_BE_LOCATED_ALONG_THE_RIVER_BANKS_IN_PRESENT",
-							export = true,
-							text = {
-								en = "Can be located along the river banks in present / N'Zoth assault timeline.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在现有 / 恩佐斯突袭时间线中沿河岸找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be located along the river banks in present / N'Zoth assault timeline.",
 						["groups"] = { i(174858) },	-- Gersahl Greens
 					}),
 				}),

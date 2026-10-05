@@ -89,37 +89,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 					r(370533),	-- Residual Neural Channeling Agent (RECIPE!)
 					-- Decay
 					r(370521, {	-- Bottled Putrescence (RECIPE!)
-						["description"] = createLocalizationString({
-							readable = "Requires Decayology.",
-							constant = "REQUIRES_DECAYOLOGY",
-							export = true,
-							text = {
-								en = "Requires Decayology.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要腐朽学。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires Decayology.",
 					}),
 					r(370536, {	-- Delicate Suspension of Spores (RECIPE!)
-						["description"] = "~L.REQUIRES_DECAYOLOGY",
+						["description"] = "Requires Decayology.",
 					}),
 					r(370525, {	-- Potion of Chilled Clarity (RECIPE!)
-						["description"] = "~L.REQUIRES_DECAYOLOGY",
+						["description"] = "Requires Decayology.",
 					}),
 					r(415810, {	-- Potion of Withering Dreams (RECIPE!)
-						["description"] = "~L.REQUIRES_DECAYOLOGY",
+						["description"] = "Requires Decayology.",
 						["timeline"] = { ADDED_10_2_0 },
 					}),
 					r(370528, {	-- Potion of Withering Vitality (RECIPE!)
-						["description"] = "~L.REQUIRES_DECAYOLOGY",
+						["description"] = "Requires Decayology.",
 					}),
 				}),
 			},
@@ -133,10 +116,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 				r(370504),	-- Phial of Elemental Chaos (RECIPE!)
 				-- Decay
 				r(370457, {	-- Iced Phial of Corrupting Rage (RECIPE!)
-					["description"] = "~L.REQUIRES_DECAYOLOGY"
+					["description"] = "Requires Decayology."
 				}),
 				r(370456, {	-- Phial of Icy Preservation (RECIPE!)
-					["description"] = "~L.REQUIRES_DECAYOLOGY"
+					["description"] = "Requires Decayology."
 				}),
 			}),
 		}),
@@ -895,24 +878,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			["requireSkill"] = ENCHANTING,
 		},{
 			r(391185, {	-- Primal Invocation Extract
-				["description"] = createLocalizationString({
-					readable = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
-					constant = "DISCOVERED_ONLY_AFTER_OBTAINING_ALL_5_GLIMMERS",
-					export = true,
-					text = {
-						en = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有在获得全部 5 个微光并分解一个睿智融合体后才会发现。开启 +HQT 追踪即可查看你已经分解过哪些微光",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
 				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
 				["provider"] = { "s", 13262 },	-- Disenchant
 				["sourceQuests"] = {
@@ -1144,24 +1110,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 		filter(TOYS, {
 			i(200469),	-- Khadgar's Disenchanting Rod (TOY!)
 			i(200636, {	-- Primal Invocation Quintessence (TOY!)
-				["description"] = createLocalizationString({
-					readable = "You need to accumulate 2600 points. Each Primal Invocation Extract gives you a set amount of points based on its quality:\n\nRank 1: 51 points - (51 extracts)\nRank 2: 100 points - (26 extracts)\nRank 3: 150 points - (18 extracts)\n\nAs Extracts can only be used once every hour, it's recommended to buy 17x Rank 3 extracts, which will give you a total of 2550 points.\nProceed to buy the cheapest one available, no matter what quality it is, it will give you the toy.\nThey all must be used on the same character.\nYou don't need to accumulate the buff for 360 minutes.",
-					constant = "YOU_NEED_TO_ACCUMULATE_2600_POINTS_EACH_PRIMAL",
-					export = true,
-					text = {
-						en = "You need to accumulate 2600 points. Each Primal Invocation Extract gives you a set amount of points based on its quality:\n\nRank 1: 51 points - (51 extracts)\nRank 2: 100 points - (26 extracts)\nRank 3: 150 points - (18 extracts)\n\nAs Extracts can only be used once every hour, it's recommended to buy 17x Rank 3 extracts, which will give you a total of 2550 points.\nProceed to buy the cheapest one available, no matter what quality it is, it will give you the toy.\nThey all must be used on the same character.\nYou don't need to accumulate the buff for 360 minutes.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你需要累计 2600 点。每个原始祈唤萃取物会根据其品质给予固定数量的点数：\n\n1 级：51 点 -（51 个萃取物）\n2 级：100 点 -（26 个萃取物）\n3 级：150 点 -（18 个萃取物）\n\n由于萃取物每小时只能使用一次，建议购买 17 个 3 级萃取物，总共可获得 2550 点。\n之后购买最便宜的那个，无论品质如何，它都会给你这个玩具。\n它们都必须在同一个角色上使用。\n你不需要把增益累积 360 分钟。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You need to accumulate 2600 points. Each Primal Invocation Extract gives you a set amount of points based on its quality:\n\nRank 1: 51 points - (51 extracts)\nRank 2: 100 points - (26 extracts)\nRank 3: 150 points - (18 extracts)\n\nAs Extracts can only be used once every hour, it's recommended to buy 17x Rank 3 extracts, which will give you a total of 2550 points.\nProceed to buy the cheapest one available, no matter what quality it is, it will give you the toy.\nThey all must be used on the same character.\nYou don't need to accumulate the buff for 360 minutes.",
 				["cost"] = {
 					{ "i", 200618, 51 },	-- 51x Primal Invocation Extract+
 					{ "i", 200633, 26 },	-- 26x Primal Invocation Extract++
@@ -1304,24 +1253,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			i(258253),	-- Titanic Tyrhold Fountain (DECOR!)
 		})),
 		n(DISCOVERY, {
-			["description"] = createLocalizationString({
-				readable = "Multiple Ways of Discovering.",
-				constant = "MULTIPLE_WAYS_OF_DISCOVERING",
-				export = true,
-				text = {
-					en = "Multiple Ways of Discovering.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "多种发现方式。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Multiple Ways of Discovering.",
 			["groups"] = {
 				r(382350),	-- Calibrated Safety Switch
 				r(382319),	-- Complicated Cuffs
@@ -1717,7 +1649,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
+				["description"] = "Can be fished from schools.",
 			}),
 		}),
 		i(194967),	-- Aileron Seamoth

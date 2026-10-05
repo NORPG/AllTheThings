@@ -27,24 +27,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 45479,	-- Bat Handler Doomair <Flight Master>
 					["altQuests"] = { 27438 },	-- The Great Escape
 					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
-					["description"] = createLocalizationString({
-						readable = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
-						constant = "BECOMES_AVAILABLE_DURING_CFFFFD700TO_FORSAKEN",
-						export = true,
-						text = {
-							en = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在|cFFFFD700前往被遗忘者前线指挥所|r期间开放，在|cFFFFD700大逃亡|r之后不再可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
 					["coord"] = { 57.2, 17.8, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 				}),
@@ -111,24 +94,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27322, {	-- Korok's Second Head
-					["description"] = createLocalizationString({
-						readable = "If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",
-						constant = "IF_FORWARD_COMMANDER_ONSLAUGHT_IS_DEAD_YOU_CAN",
-						export = true,
-						text = {
-							en = "If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果前锋指挥官昂斯劳特已死亡，你可以在|cFFFFD700瑟伯切尔|r的|cFFFFD700亡灵卫兵波德里格|r处交这个任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",
 					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
 					["provider"] = { "i", 60956 },	-- Korok's Second Head
 					["races"] = HORDE_ONLY,
@@ -431,24 +397,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(67108),	-- Lord Godfrey's Old Spectacles
 			})),
 			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-				["description"] = createLocalizationString({
-					readable = "Upon completing the quest chain, non-Worgen players can relog and the toy will appear in your Toy Box automatically. As a worgan you can loot the bouquet.",
-					constant = "UPON_COMPLETING_THE_QUEST_CHAIN_NON_WORGEN",
-					export = true,
-					text = {
-						en = "Upon completing the quest chain, non-Worgen players can relog and the toy will appear in your Toy Box automatically. As a worgan you can loot the bouquet.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成该任务链后，非狼人玩家可以重新登录，玩具会自动出现在你的玩具箱中。而狼人玩家则可以拾取这束花。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Upon completing the quest chain, non-Worgen players can relog and the toy will appear in your Toy Box automatically. As a worgan you can loot the bouquet.",
 				["sourceQuests"] = {
 					79137,	-- The Wall between Us
 					78190,	-- What We Left Behind

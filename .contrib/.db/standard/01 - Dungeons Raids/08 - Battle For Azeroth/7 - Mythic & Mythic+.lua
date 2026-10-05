@@ -48,84 +48,33 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)
-				["description"] = createLocalizationString({
-					readable = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
-					constant = "REQUIRES_COMPLETING_A_4_MYTHIC_AND_LOOTING_THE",
-					export = true,
-					text = {
-						en = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要完成一次史诗钥石 +4 并拾取地下城尽头的宝箱。\n",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
 			}),
 			i(168558, {	-- Fetish of the Deep Dungeons (Rank 2)
-				["description"] = createLocalizationString({
-					readable = "Requires completing a +7 Mythic and looting the chest at the end of the dungeon.\n",
-					constant = "REQUIRES_COMPLETING_A_7_MYTHIC_AND_LOOTING_THE",
-					export = true,
-					text = {
-						en = "Requires completing a +7 Mythic and looting the chest at the end of the dungeon.\n",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要完成一次史诗钥石 +7 并拾取地下城尽头的宝箱。\n",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires completing a +7 Mythic and looting the chest at the end of the dungeon.\n",
 			}),
 			i(168559, {	-- Fetish of the Hidden Labyrinths (Rank 3)
-				["description"] = createLocalizationString({
-					readable = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
-					constant = "THE_AMOUNT_OF_CFF9832DFFOCUSED_LIFE_ANIMA_R_YOU",
-					export = true,
-					text = {
-						en = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你从每周宝箱中获得的|cff9832df专注生命心能|r数量取决于你上一周完成的最高史诗钥石等级。\n\n+2 至 +3 - 1\n+4 至 +6 - 2\n+7 至 +9 - 3\n+10 至 +14 - 5\n+15 或更高 - 8\n\n如果你已经获得过 3 级史诗钥石精华，你的每周宝箱中会获得更多心能。\n",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
 				["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
 			}),
 			i(168620, {	-- Converging Lens of the Focusing Iris (Rank 1)
-				["description"] = "~L.REQUIRES_COMPLETING_A_4_MYTHIC_AND_LOOTING_THE",
+				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
 			}),
 			i(168621, {	-- Magnifying Lens of the Focusing Iris (Rank 2)
-				["description"] = "~L.REQUIRES_COMPLETING_A_7_MYTHIC_AND_LOOTING_THE",
+				["description"] = "Requires completing a +7 Mythic and looting the chest at the end of the dungeon.\n",
 			}),
 			i(168622, {	-- Stabilizing Lens of the Focusing Iris (Rank 3)
-				["description"] = "~L.THE_AMOUNT_OF_CFF9832DFFOCUSED_LIFE_ANIMA_R_YOU",
+				["description"] = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
 				["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
 			}),
 			i(168924, {	-- Bursting Seed of Life (Rank 1)
-				["description"] = "~L.REQUIRES_COMPLETING_A_4_MYTHIC_AND_LOOTING_THE",
+				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
 			}),
 			i(168925, {	-- Replicating Seed of Abundance (Rank 2)
-				["description"] = "~L.REQUIRES_COMPLETING_A_7_MYTHIC_AND_LOOTING_THE",
+				["description"] = "Requires completing a +7 Mythic and looting the chest at the end of the dungeon.\n",
 			}),
 			i(168926, {	-- Lingering Seed of Renewal (Rank 3)
-				["description"] = "~L.THE_AMOUNT_OF_CFF9832DFFOCUSED_LIFE_ANIMA_R_YOU",
+				["description"] = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
 				["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
 			}),
 		})),

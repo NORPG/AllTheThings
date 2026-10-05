@@ -83,24 +83,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					crit(62397, {	-- Whisperbloom Sapling (n: 211059)
 						["coord"] = { 51.2, 58.7, EMERALD_DREAM },
-						["description"] = createLocalizationString({
-							readable = "Spawns every hour at the 50 minute mark.",
-							constant = "SPAWNS_EVERY_HOUR_AT_THE_50_MINUTE_MARK",
-							export = true,
-							text = {
-								en = "Spawns every hour at the 50 minute mark.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "每小时的第 50 分钟刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Spawns every hour at the 50 minute mark.",
 					}),
 					crit(62028, {	-- Ysera's Clover (n: 208443)
 						["coord"] = { 59.2, 58.8, EMERALD_DREAM },
@@ -165,24 +148,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["isWeekly"] = true,
 					["groups"] = {
 						i(SEEDBLOOM, {
-							["description"] = createLocalizationString({
-								readable = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
-								constant = "ANY_ITEM_BOUGHT_VIA_SEEDBLOOM_S_CAN_ALSO_BE",
-								export = true,
-								text = {
-									en = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "任何用种子之华购买的物品也可以通过在翡翠恩赐活动中种植或贡献小型梦种、饱满梦种或巨型梦种随机获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
 						}),
 						i(211394, {	-- Harvested Dreamseed Cache
 							["sym"] = {
@@ -202,24 +168,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["providers"] = {
 						{ "n", 210063 },	-- Coagulating Dreams (vignette)
 					},
-					["description"] = createLocalizationString({
-						readable = "Can randomly spawn near any planting spot.",
-						constant = "CAN_RANDOMLY_SPAWN_NEAR_ANY_PLANTING_SPOT",
-						export = true,
-						text = {
-							en = "Can randomly spawn near any planting spot.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在任何种植点附近随机刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can randomly spawn near any planting spot.",
 					["questID"] = 77856,
 					["isWeekly"] = true,
 				}),

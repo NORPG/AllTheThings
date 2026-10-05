@@ -172,24 +172,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(91060, {	-- Stay awhile and listen: Loa Speaker Kinduru
 						["name"] = "Stay awhile and listen: Loa Speaker Kinduru",
-						["description"] = createLocalizationString({
-							readable = "Dialogue becomes available after accepting 'The Path of the Amani' (86653).",
-							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_THE_3",
-							export = true,
-							text = {
-								en = "Dialogue becomes available after accepting 'The Path of the Amani' (86653).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "接受“阿曼尼之路”（86653）后即可出现该对话。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dialogue becomes available after accepting 'The Path of the Amani' (86653).",
 						["sourceQuests"] = { 86652 },	-- Left in the Shadows
 						["provider"] = { "n", 244479 },	-- Loa Speaker Kinduru
 						["coord"] = { 43.8, 68.4, MAP.MIDNIGHT.ZULAMAN },
@@ -262,24 +245,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(92125, {	-- Stay awhile and listen: Zul'jarra
 						["name"] = "Stay awhile and listen: Zul'jarra",
-						["description"] = createLocalizationString({
-							readable = "Dialogue becomes available after accepting 'Shadebasin Watch' (86657).",
-							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_6",
-							export = true,
-							text = {
-								en = "Dialogue becomes available after accepting 'Shadebasin Watch' (86657).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "接受“影盆哨岗”（86657）后即可出现该对话。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dialogue becomes available after accepting 'Shadebasin Watch' (86657).",
 						["sourceQuests"] = { 86809 },	-- Test of Conviction
 						["provider"] = { "n", 236141 },	-- Zul'jarra
 						["coord"] = { 52.4, 81.0, MAP.MIDNIGHT.ZULAMAN },
@@ -467,24 +433,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(92108, {	-- Stay awhile and listen: Zul'jan
 						["name"] = "Stay awhile and listen: Zul'jan",
-						["description"] = createLocalizationString({
-							readable = "Dialogue becomes available during 'Broken Bridges' (91062).",
-							constant = "DIALOGUE_BECOMES_AVAILABLE_DURING_BROKEN",
-							export = true,
-							text = {
-								en = "Dialogue becomes available during 'Broken Bridges' (91062).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在“断桥”（91062）期间即可出现该对话。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dialogue becomes available during 'Broken Bridges' (91062).",
 						["sourceQuests"] = { 86693 },	-- De Legend of Hash'ey
 						["provider"] = { "n", 245646 },	-- Zul'jan
 						["coord"] = { 51.3, 54.4, MAP.MIDNIGHT.ZULAMAN },
@@ -1517,24 +1466,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.AchCriteria, 62413.01, {	-- Legacy of the Amani
 				-- #endif
 					q(92897, {	-- The Preparations Are Complete
-						["description"] = createLocalizationString({
-							readable = "You can get this Breadcrumb Quest from your Adventure Journal.",
-							constant = "YOU_CAN_GET_THIS_BREADCRUMB_QUEST_FROM_YOUR",
-							export = true,
-							text = {
-								en = "You can get this Breadcrumb Quest from your Adventure Journal.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以从冒险手册中获得这条引导任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can get this Breadcrumb Quest from your Adventure Journal.",
 						--["sourceQuest"] = 90867,	-- From Darkness, Light (Exo Note: This should be correct as the story picks up after the main campaign)
 						["isBreadcrumb"] = true,
 					}),
@@ -1697,24 +1629,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					------ Stay awhile and listen ------
 					hqt(92898, {	-- Stay awhile and listen: Zul'jara
 						["name"] = "Stay awhile and listen: Zul'jara",
-						["description"] = createLocalizationString({
-							readable = "Dialogue becomes available after completing 'Dead End' (93012).",
-							constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_5",
-							export = true,
-							text = {
-								en = "Dialogue becomes available after completing 'Dead End' (93012).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成“死路”（93012）后即可出现该对话。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dialogue becomes available after completing 'Dead End' (93012).",
 						["sourceQuest"] = 93012,	-- Dead End
 						["qg"] = 253848,	-- Zul'jara
 						["coord"] = { 43.8, 68.4, MAP.MIDNIGHT.ZULAMAN },
@@ -1749,24 +1664,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- tw = "",
 				},
 			}), {
-				["description"] = createLocalizationString({
-					readable = "With the return of Jan’alai, Loa of Fire comes a return to past traditions. She’s ready to bring a new clutch of eggs into the world but Loa Speaker Brek requires assistance with the ceremony and with ensuring all the Loa’s young are released safely from their eggs. Be a part of welcoming the first of her offspring and protecting them as they take their first steps.",
-					constant = "WITH_THE_RETURN_OF_JAN_ALAI_LOA_OF_FIRE_COMES_A",
-					export = true,
-					text = {
-						en = "With the return of Jan’alai, Loa of Fire comes a return to past traditions. She’s ready to bring a new clutch of eggs into the world but Loa Speaker Brek requires assistance with the ceremony and with ensuring all the Loa’s young are released safely from their eggs. Be a part of welcoming the first of her offspring and protecting them as they take their first steps.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "随着火焰洛阿加亚莱的回归，往昔的传统也一并归来。她已准备好孕育新一窝蛋，但洛阿代言人布雷克需要协助完成仪式，并确保所有洛阿的幼崽都能安全地从蛋中破壳而出。来一起迎接她的第一批后代，并在它们迈出第一步时保护它们吧。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "With the return of Jan’alai, Loa of Fire comes a return to past traditions. She’s ready to bring a new clutch of eggs into the world but Loa Speaker Brek requires assistance with the ceremony and with ensuring all the Loa’s young are released safely from their eggs. Be a part of welcoming the first of her offspring and protecting them as they take their first steps.",
 				["timeline"] = { ADDED_12_0_7 },
 				["groups"] = {
 					q(94868, {	-- It Takes Two

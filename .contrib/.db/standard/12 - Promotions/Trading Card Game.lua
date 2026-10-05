@@ -88,24 +88,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_4_2 },
 				["groups"] = {
 					i(38186, {	-- Ethereal Credit
-						["description"] = createLocalizationString({
-							readable = "To obtain this, summon your Soul-Trader pet and kill players or NPCs which are no less than 8 levels below you.",
-							constant = "TO_OBTAIN_THIS_SUMMON_YOUR_SOUL_TRADER_PET_AND",
-							export = true,
-							text = {
-								en = "To obtain this, summon your Soul-Trader pet and kill players or NPCs which are no less than 8 levels below you.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要获得此物品，请召唤你的灵魂商人宠物，并击杀等级最多比你低 8 级的玩家或 NPC。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "To obtain this, summon your Soul-Trader pet and kill players or NPCs which are no less than 8 levels below you.",
 					}),
 					i(38291, {	-- Ethereal Mutagen
 						["cost"] = { { "i", 38186, 100 } },	-- 100x Ethereal Credit

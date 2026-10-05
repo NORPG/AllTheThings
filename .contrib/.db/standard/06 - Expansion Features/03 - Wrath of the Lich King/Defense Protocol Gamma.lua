@@ -63,24 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					424201,	-- Shadow Rune Buff
 					424205	-- Titan Rune Buff
 				),
-				["description"] = createLocalizationString({
-					readable = "Defeating any boss on Defense Protocol Gamma will reward 1 Defiler's Scourgestone.",
-					constant = "DEFEATING_ANY_BOSS_ON_DEFENSE_PROTOCOL_GAMMA",
-					export = true,
-					text = {
-						en = "Defeating any boss on Defense Protocol Gamma will reward 1 Defiler's Scourgestone.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在防御协议伽玛中击败任意首领都会奖励 1 枚污染者的天灾石。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Defeating any boss on Defense Protocol Gamma will reward 1 Defiler's Scourgestone.",
 				["maps"] = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,

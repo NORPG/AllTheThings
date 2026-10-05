@@ -6,24 +6,7 @@ root(ROOTS.ExpansionFeatures, {
 	expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
 		header(HEADERS.Object, 311218, {	-- Xal'atath, Blade of the Black Empire
 			q(54141, {	-- The Azsharan Medallion [A]
-				["description"] = createLocalizationString({
-					readable = "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball toy.",
-					constant = "TO_GET_THE_QUEST_ITEM_YOU_NEED_TO_KILL_NAGA",
-					export = true,
-					text = {
-						en = "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball toy.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要获得任务物品，你需要在世界任务“纳迦来袭！”开启期间击杀纳迦。完成任务线即可获得玩具“抽动的眼球”。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball toy.",
 				["provider"] = { "i", 165605 },	-- The Azsharan Medallion [A]
 				["races"] = ALLIANCE_ONLY,
 				["crs"] = {
@@ -36,24 +19,7 @@ root(ROOTS.ExpansionFeatures, {
 				},
 			}),
 			q(54172, {	-- The Azsharan Medallion [H]
-				["description"] = createLocalizationString({
-					readable = "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball Toy",
-					constant = "TO_GET_THE_QUEST_ITEM_YOU_NEED_TO_KILL_NAGA_2",
-					export = true,
-					text = {
-						en = "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball Toy",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要获得任务物品，你需要在世界任务“纳迦来袭！”开启期间击杀纳迦。完成任务线即可获得玩具“抽动的眼球”",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball Toy",
 				["provider"] = { "i", 165668 },	-- The Azsharan Medallion [H]
 				["races"] = HORDE_ONLY,
 				["crs"] = {
@@ -216,24 +182,7 @@ root(ROOTS.ExpansionFeatures, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(53765, {	-- His Eye Upon You [A]
-				["description"] = createLocalizationString({
-					readable = "You only get the toy if you choose to cleanse the gift.",
-					constant = "YOU_ONLY_GET_THE_TOY_IF_YOU_CHOOSE_TO_CLEANSE",
-					export = true,
-					text = {
-						en = "You only get the toy if you choose to cleanse the gift.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有当你选择净化这份礼物时，你才会获得这个玩具。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You only get the toy if you choose to cleanse the gift.",
 				["sourceQuests"] = { 54126 },	-- Twist the Knife [A]
 				["provider"] = { "n", 146902 },	-- Brother Pike
 				["coord"] = { 67.4, 21.0, BORALUS },
@@ -243,7 +192,7 @@ root(ROOTS.ExpansionFeatures, {
 				},
 			}),
 			q(53766, {	-- His Eye Upon You [H]
-				["description"] = "~L.YOU_ONLY_GET_THE_TOY_IF_YOU_CHOOSE_TO_CLEANSE",
+				["description"] = "You only get the toy if you choose to cleanse the gift.",
 				["sourceQuests"] = { 53763 },	-- Twist the Knife [H]
 				["qgs"] = {
 					133050,	-- Princess Talanji

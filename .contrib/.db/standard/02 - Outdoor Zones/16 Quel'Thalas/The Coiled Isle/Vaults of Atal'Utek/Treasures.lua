@@ -74,24 +74,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 				}),
 				o(671498, {	-- Venom-Worn Coffer
-					["description"] = createLocalizationString({
-						readable = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
-						constant = "WILL_ONLY_SHOW_UP_ONCE_YOU_HAVE_LOOTED_THE",
-						export = true,
-						text = {
-							en = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有在你拾取到腐蚀钥匙后才会出现，位置为 5 个随机地点之一。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
 					["coords"] = {
 						{ 41.7, 53.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						{ 52.5, 53.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
@@ -104,30 +87,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				-- Repeatables
 				o(649640, {	-- Soulcoiler's Cache
-					["description"] = createLocalizationString({
-						readable = "Can be found randomly throughout the Vaults.",
-						constant = "CAN_BE_FOUND_RANDOMLY_THROUGHOUT_THE_VAULTS",
-						export = true,
-						text = {
-							en = "Can be found randomly throughout the Vaults.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可在宝库各处随机找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be found randomly throughout the Vaults.",
 					["groups"] = {
 						i(279550),	-- Potion of Venomous Return
 					},
 				}),
 				o(649687, {	-- Soulcoiler's Trove
-					["description"] = "~L.CAN_BE_FOUND_RANDOMLY_THROUGHOUT_THE_VAULTS",
+					["description"] = "Can be found randomly throughout the Vaults.",
 				}),
 				o(653456, {	-- Venom Ward
 					i(274437),	-- Venom Ward

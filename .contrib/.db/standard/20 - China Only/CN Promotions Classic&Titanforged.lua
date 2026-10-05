@@ -46,46 +46,12 @@ root(ROOTS.Promotions, {
 	-- #if ANYCLASSIC
 	cnONLY(n(CN_PROMOTIONS_CLASSIC, {
 		cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger (MOUNT!)
-			["description"] = createLocalizationString({
-				readable = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
-				constant = "OBTAINED_IF_YOU_PAID_267_TO_SET_UP_A_6_MONTH",
-				export = true,
-				text = {
-					en = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "如果你在 2022 年 1 月 25 日至 2022 年 7 月 25 日期间支付 267 美元开通 6 个月《魔兽世界》订阅即可获得。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
 			["u"] = REMOVED_FROM_GAME,
 		})),
 		cnONLY(mount(471440, {	-- Skybound Spectral Tiger (MOUNT!)
 			["timeline"] = { ADDED_3_4_3, "removed 3.4.5", "added 5.5.2", "removed 5.5.10" },
-			["description"] = createLocalizationString({
-				readable = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",
-				constant = "CAN_BE_BOUGHT_FOR_1888_265_USD_OR_A_DISCOUNTED",
-				export = true,
-				text = {
-					en = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可在游戏内商城以 ¥1888（265 美元）购买；2024 年 10 月至 2025 年 1 月 7 日期间，拥有原版的玩家可享受 ¥588（82 美元）的优惠价。该捆绑包于 2026 年回归。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",
 		})),
 		n(TREASURE_OF_AZEROTH, sharedDataSelf({
 			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
@@ -159,24 +125,7 @@ root(ROOTS.Promotions, {
 				i(45037),	-- Epic Purple Shirt
 				mount(457485),	-- Grizzly Hills Packmaster (MOUNT!)
 				i(273849, {	-- Landro's Sha-Touched Loot Box
-					["description"] = createLocalizationString({
-						readable = "1.25% chance for any of the following:",
-						constant = "1_25_CHANCE_FOR_ANY_OF_THE_FOLLOWING",
-						export = true,
-						text = {
-							en = "1.25% chance for any of the following:",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "以下任意物品的掉落几率为 1.25%：",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "1.25% chance for any of the following:",
 					["groups"] = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 						i(269640),	-- Sha-Warped Owl (MOUNT!)
@@ -249,7 +198,7 @@ root(ROOTS.Promotions, {
 				i(98550),	-- Blossoming Ancient (PET!)
 				i(170206),	-- Crown of Infinite Prosperity (COSMETIC!)
 				i(273849, {	-- Landro's Sha-Touched Loot Box
-					["description"] = "~L.1_25_CHANCE_FOR_ANY_OF_THE_FOLLOWING",
+					["description"] = "1.25% chance for any of the following:",
 					["groups"] = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 						i(269640),	-- Sha-Warped Owl (MOUNT!)
@@ -300,7 +249,7 @@ root(ROOTS.Promotions, {
 				i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
 				i(274730),	-- Tuskarr Ice Fishing Tent (TOY!)
 				i(273849, {	-- Landro's Sha-Touched Loot Box
-					["description"] = "~L.1_25_CHANCE_FOR_ANY_OF_THE_FOLLOWING",
+					["description"] = "1.25% chance for any of the following:",
 					["groups"] = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 						i(269640),	-- Sha-Warped Owl (MOUNT!)
@@ -376,24 +325,7 @@ root(ROOTS.Promotions, {
 		["timeline"] = { "added 3.80.0", "removed 3.80.10" },
 		["groups"] = {
 			mount(1280400, {	-- Reforged Invincible (MOUNT!)
-				["description"] = createLocalizationString({
-					readable = "This red version of the iconic Invincible mount has so far only been available in China. We don't know if or when it'll become available in the rest of the world. It was obtainable only through a special event on China's Titan Reforged servers in September-November 2025, awarded to players who defeated the Lich King in Icecrown Citadel on any difficulty.",
-					constant = "THIS_RED_VERSION_OF_THE_ICONIC_INVINCIBLE_MOUNT",
-					export = true,
-					text = {
-						en = "This red version of the iconic Invincible mount has so far only been available in China. We don't know if or when it'll become available in the rest of the world. It was obtainable only through a special event on China's Titan Reforged servers in September-November 2025, awarded to players who defeated the Lich King in Icecrown Citadel on any difficulty.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这款标志性坐骑“无敌”的红色版本迄今为止仅在中国开放。我们不知道它是否或何时会在世界其他地区开放。它只能通过 2025 年 9 月至 11 月中国泰坦重铸服务器上的特别活动获得，奖励给在冰冠堡垒以任意难度击败巫妖王的玩家。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This red version of the iconic Invincible mount has so far only been available in China. We don't know if or when it'll become available in the rest of the world. It was obtainable only through a special event on China's Titan Reforged servers in September-November 2025, awarded to players who defeated the Lich King in Icecrown Citadel on any difficulty.",
 			}),
 		},
 	})),

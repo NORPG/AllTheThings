@@ -68,24 +68,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(BOSSES, {
 					n(90802, {	-- Annihilon
-						["description"] = createLocalizationString({
-							readable = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
-							constant = "VOID_PRISON_SUMMONS_THIS_BOSS_IT_HAS_A_CHANCE",
-							export = true,
-							text = {
-								en = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "虚空牢笼会召唤这个首领。它有机会在影月入侵期间获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
 						["cost"] = { { "i", 122475, 1 } },	-- 1x Void Prison
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
@@ -93,24 +76,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					n(90841, {	-- Commander Dro'gan
-						["description"] = createLocalizationString({
-							readable = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
-							constant = "BLOODIED_IRON_HORDE_BANNER_SUMMONS_THIS_BOSS_IT",
-							export = true,
-							text = {
-								en = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "染血的钢铁部落旗帜可以召唤这个首领。它有机会在钢铁部落入侵期间获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
 						["cost"] = { { "i", 122472, 1 } },	-- 1x Bloodied Iron Horde Banner
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
@@ -118,24 +84,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					n(90943, {	-- Gaur
-						["description"] = createLocalizationString({
-							readable = "Runed Greatstone summons this boss. It has a chance to be obtained during a Goren Invasion.",
-							constant = "RUNED_GREATSTONE_SUMMONS_THIS_BOSS_IT_HAS_A",
-							export = true,
-							text = {
-								en = "Runed Greatstone summons this boss. It has a chance to be obtained during a Goren Invasion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "符文巨石会召唤该首领。在戈伦入侵期间有几率获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Runed Greatstone summons this boss. It has a chance to be obtained during a Goren Invasion.",
 						["cost"] = { { "i", 122468, 1 } },	-- 1x Runed Greatstone
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
@@ -143,24 +92,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					n(91012, {	-- Lady Fleshear
-						["description"] = createLocalizationString({
-							readable = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
-							constant = "LEGION_BEACON_SUMMONS_THIS_BOSS_IT_HAS_A_CHANCE",
-							export = true,
-							text = {
-								en = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "燃烧军团信标可召唤此首领。有几率在暗影议会入侵期间获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
 						["cost"] = { { "i", 122473, 1 } },	-- 1x Legion Beacon
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
@@ -168,24 +100,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					n(90995, {	-- Mage Lord Gogg'nathog
-						["description"] = createLocalizationString({
-							readable = "Arcane Highmaul Relic summons this boss. It has a chance to be obtained during an Ogre Invasion.",
-							constant = "ARCANE_HIGHMAUL_RELIC_SUMMONS_THIS_BOSS_IT_HAS",
-							export = true,
-							text = {
-								en = "Arcane Highmaul Relic summons this boss. It has a chance to be obtained during an Ogre Invasion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "奥术悬槌遗物可以召唤这个首领。它有机会在食人魔入侵期间获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Arcane Highmaul Relic summons this boss. It has a chance to be obtained during an Ogre Invasion.",
 						["cost"] = { { "i", 122474, 1 } },	-- 1x Arcane Highmaul Relic
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
@@ -193,24 +108,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					n(90946, {	-- Teluur
-						["description"] = createLocalizationString({
-							readable = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",
-							constant = "HEART_OF_OAK_SUMMONS_THIS_BOSS_IT_HAS_A_CHANCE",
-							export = true,
-							text = {
-								en = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "橡木之心会召唤这个首领。在植物人大入侵期间有几率获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Heart of Oak summons this boss. It has a chance to be obtained during a Botani Invasion.",
 						["cost"] = { { "i", 122466, 1 } },	-- 1x Heart of Oak
 						["sym"] = {
 							{ "select", "itemID", 122163, },	-- Select 'Routed Invader's Crate of Spoils'  (Platinum Rewards)
@@ -306,24 +204,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(EVENT_COMPLETION, {
 					i(120320, {	-- Invader's Abandoned Sack
-						["description"] = createLocalizationString({
-							readable = "Bronze Challenge",
-							constant = "BRONZE_CHALLENGE",
-							export = true,
-							text = {
-								en = "Bronze Challenge",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "青铜挑战",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Bronze Challenge",
 						["questID"] = 37638,
 						["isWeekly"] = true,
 						["groups"] = {
@@ -350,24 +231,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					i(120319, {	-- Invader's Damaged Cache
-						["description"] = createLocalizationString({
-							readable = "Silver Challenge",
-							constant = "SILVER_CHALLENGE",
-							export = true,
-							text = {
-								en = "Silver Challenge",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "白银挑战",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Silver Challenge",
 						["questID"] = 37639,
 						["isWeekly"] = true,
 						["sym"] = {
@@ -376,24 +240,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					i(116980, {	-- Invader's Forgotten Treasure
-						["description"] = createLocalizationString({
-							readable = "Gold Challenge",
-							constant = "GOLD_CHALLENGE",
-							export = true,
-							text = {
-								en = "Gold Challenge",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "黄金挑战",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Gold Challenge",
 						["questID"] = 37640,
 						["isWeekly"] = true,
 						["sym"] = {
@@ -408,24 +255,7 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					i(122163, {	-- Routed Invader's Crate of Spoils
-						["description"] = createLocalizationString({
-							readable = "Platinum Challenge",
-							constant = "PLATINUM_CHALLENGE",
-							export = true,
-							text = {
-								en = "Platinum Challenge",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "白金挑战",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Platinum Challenge",
 						["questID"] = 38482,
 						["isWeekly"] = true,
 						["sym"] = {

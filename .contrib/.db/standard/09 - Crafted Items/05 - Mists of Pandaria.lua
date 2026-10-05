@@ -646,45 +646,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(80433, {	-- Blood Spirit
-				["description"] = createLocalizationString({
-					readable = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
-					constant = "CAN_BE_OBTAINED_BY_DISENCHANTING_EPICS_FROM",
-					export = true,
-					text = {
-						en = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可通过分解魔古山宝库、恐惧之心或永春台的史诗品质物品获得",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
 			}),
 			i(74247),	-- Ethereal Shard
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94289, {	-- Haunting Spirit
-				["description"] = createLocalizationString({
-					readable = "Can be obtained by disenchanting epics from Throne of Thunder",
-					constant = "CAN_BE_OBTAINED_BY_DISENCHANTING_EPICS_FROM_2",
-					export = true,
-					text = {
-						en = "Can be obtained by disenchanting epics from Throne of Thunder",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可通过分解雷电王座的史诗品质物品获得",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be obtained by disenchanting epics from Throne of Thunder",
 				["timeline"] = { ADDED_5_2_0 },
 			})),
 			i(74250),	-- Mysterious Essence
@@ -747,7 +713,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	}),
 	prof(ENGINEERING, {
 		prof(GNOMISH_ENGINEERING, {
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS",
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
 				filter(MOUNTS, {
 					i(87251),	-- Geosynchronous World Spinner (MOUNT!)
@@ -755,7 +721,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			},
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS_2",
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
 			["groups"] = {
 				filter(MOUNTS, {
 					i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
@@ -869,24 +835,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(74861),	-- Tiger Gourami
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94933, {	-- Tiny Blue Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
-			["description"] = createLocalizationString({
-				readable = "Can be fished from:\n\n|cFFFfffff— Schools:|r Jewel Danio & Redbelly Mandarin\n\n|cFFFfffff— Fish of the Day:|r Townlong Steppes & Vale of Eternal Blossoms\n\n|cFFFfffff— Inland open water:|r Townlong Steppes & Vale of Eternal Blossoms\n",
-				constant = "CAN_BE_FISHED_FROM_CFFFFFFFF_SCHOOLS_R_JEWEL",
-				export = true,
-				text = {
-					en = "Can be fished from:\n\n|cFFFfffff— Schools:|r Jewel Danio & Redbelly Mandarin\n\n|cFFFfffff— Fish of the Day:|r Townlong Steppes & Vale of Eternal Blossoms\n\n|cFFFfffff— Inland open water:|r Townlong Steppes & Vale of Eternal Blossoms\n",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从以下位置钓到：\n\n|cFFFfffff— 鱼群：|r 珠宝鲐和红腹鳜鱼\n\n|cFFFfffff— 每日鱼类：|r 螳螂高原和锦绣谷\n\n|cFFFfffff— 内陆开阔水域：|r 螳螂高原和锦绣谷\n",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Jewel Danio & Redbelly Mandarin\n\n|cFFFfffff— Fish of the Day:|r Townlong Steppes & Vale of Eternal Blossoms\n\n|cFFFfffff— Inland open water:|r Townlong Steppes & Vale of Eternal Blossoms\n",
 			["maps_disp"] = {
 				TIMELESS_ISLE,
 				TOWNLONG_STEPPES,
@@ -895,24 +844,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		})),
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94934, {	-- Tiny Green Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
-			["description"] = createLocalizationString({
-				readable = "Can be fished from:\n\n|cFFFfffff— Schools:|r Emperor Salmon, Jade Lungfish, & Krasarang Paddlefish\n\n|cFFFfffff— Fish of the Day:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n\n|cFFFfffff— Inland open water:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n",
-				constant = "CAN_BE_FISHED_FROM_CFFFFFFFF_SCHOOLS_R_EMPEROR",
-				export = true,
-				text = {
-					en = "Can be fished from:\n\n|cFFFfffff— Schools:|r Emperor Salmon, Jade Lungfish, & Krasarang Paddlefish\n\n|cFFFfffff— Fish of the Day:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n\n|cFFFfffff— Inland open water:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从以下位置钓到：\n\n|cFFFfffff— 鱼群：|r 帝王鲑鱼、翡翠肺鱼和喀撒朗匙吻鲟\n\n|cFFFfffff— 每日鱼类：|r 翡翠林、喀撒朗蛮荒和四风谷\n\n|cFFFfffff— 内陆开阔水域：|r 翡翠林、喀撒朗蛮荒和四风谷\n",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Emperor Salmon, Jade Lungfish, & Krasarang Paddlefish\n\n|cFFFfffff— Fish of the Day:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n\n|cFFFfffff— Inland open water:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n",
 			["maps_disp"] = {
 				KRASARANG_WILDS,
 				THE_JADE_FOREST,
@@ -922,24 +854,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		})),
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94932, {	-- Tiny Red Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
-			["description"] = createLocalizationString({
-				readable = "Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",
-				constant = "CAN_BE_FISHED_FROM_CFFFFFFFF_SCHOOLS_R",
-				export = true,
-				text = {
-					en = "Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从以下位置钓到：\n\n|cFFFfffff— 鱼群：|r 刺鳍鱼\n\n|cFFFfffff— 每日鱼类：|r 昆莱山\n\n|cFFFfffff— 煞染水域：|r 恐惧废土、昆莱山和螳螂高原\n",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",
 			["maps_disp"] = {
 				DREAD_WASTES,
 				KUN_LAI_SUMMIT,
@@ -948,24 +863,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		})),
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94935, {	-- Tiny White Carp (PET!)
 			["timeline"] = { ADDED_5_2_0 },
-			["description"] = createLocalizationString({
-				readable = "Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",
-				constant = "CAN_BE_FISHED_FROM_CFFFFFFFF_SCHOOLS_R_GIANT",
-				export = true,
-				text = {
-					en = "Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从以下位置钓到：\n\n|cFFFfffff— 鱼群：|r 巨型螳螂虾、珊瑚章鱼和虎纹攀鲈\n\n|cFFFfffff— 每日鱼类：|r 恐惧废土、翡翠林和昆莱山\n\n|cFFFfffff— 内陆开阔水域：|r 昆莱山和迷雾栈道\n\n它也能在大多数沿海开阔水域中钓到。\n",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",
 			["maps_disp"] = {
 				DREAD_WASTES,
 				ISLE_OF_GIANTS,
@@ -980,7 +878,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		})),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
+				["description"] = "Can be fished from schools.",
 			}),
 		}),
 	}),

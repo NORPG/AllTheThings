@@ -68,24 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			header(HEADERS.Achievement, 40632, {	-- No Harm Ever Came From Reading A Book
 				q(83741, {	-- Step 1: Interact with the Fleshy Grimoire
 					["name"] = "|cFFFFFFFFStep 1|r: Interact with the Fleshy Grimoire",
-					["description"] = createLocalizationString({
-						readable = "Enter the cave then walk around to the back where you will find a climbable wall marked by three tiny non-targetable spiders on the ledges. Climb up and near the top will be a small hole, fall through then interact with the book on your left.",
-						constant = "ENTER_THE_CAVE_THEN_WALK_AROUND_TO_THE_BACK",
-						export = true,
-						text = {
-							en = "Enter the cave then walk around to the back where you will find a climbable wall marked by three tiny non-targetable spiders on the ledges. Climb up and near the top will be a small hole, fall through then interact with the book on your left.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "进入洞穴后绕到最里面，你会找到一面可攀爬的墙壁，壁架上标有三只无法选中的小蜘蛛。爬上去，靠近顶部会有一个小洞，掉下去后与左侧的书互动。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Enter the cave then walk around to the back where you will find a climbable wall marked by three tiny non-targetable spiders on the ledges. Climb up and near the top will be a small hole, fall through then interact with the book on your left.",
 					["provider"] = { "o", 455288 },	-- Fleshy Grimoire
 					["coords"] = {
 						{ 56.7, 85.1, AZJ_KAHET },	-- Cave Entrance
@@ -94,72 +77,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(83746, {	-- Step 2A: Find Another You in Mmarl
 					["name"] = "|cFFFFFFFFStep 2A|r: Find Another You in Mmarl",
-					["description"] = createLocalizationString({
-						readable = "One of your shades escaped to Mmarl, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-						constant = "ONE_OF_YOUR_SHADES_ESCAPED_TO_MMARL_USE_TARGET",
-						export = true,
-						text = {
-							en = "One of your shades escaped to Mmarl, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你的一个影子逃到了姆玛尔，使用 /target Another 找到他们，然后与其交谈将其送回。影子必须按顺序互动，但顺序是随机的。如果你看不到它们，可以先去找另一个影子，或者换个方向靠近。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "One of your shades escaped to Mmarl, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
 					["sourceQuests"] = { 83741 },
 					["provider"] = { "n", 227452 },	-- Another You
 					["coord"] = { 78.7, 62.1, AZJ_KAHET },
 				}),
 				q(83747, {	-- Step 2B: Find Another You in The Weaver's Lair
 					["name"] = "|cFFFFFFFFStep 2B|r: Find Another You in The Weaver's Lair",
-					["description"] = createLocalizationString({
-						readable = "One of your shades escaped to The Weaver's Lair, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-						constant = "ONE_OF_YOUR_SHADES_ESCAPED_TO_THE_WEAVER_S_LAIR",
-						export = true,
-						text = {
-							en = "One of your shades escaped to The Weaver's Lair, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你的一个影子逃到了纺丝者之巢，使用 /target Another 找到他们，然后与其交谈将其送回。影子必须按顺序互动，但顺序是随机的。如果你看不到它们，可以先去找另一个影子，或者换个方向靠近。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "One of your shades escaped to The Weaver's Lair, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
 					["sourceQuests"] = { 83741 },
 					["provider"] = { "n", 227452 },	-- Another You
 					["coord"] = { 57.1, 44.2, AZJ_KAHET },
 				}),
 				q(83745, {	-- Step 2C: Fin Another You in Faerin's Advance
 					["name"] = "|cFFFFFFFFStep 2C|r: Find Another You in Faerin's Advance",
-					["description"] = createLocalizationString({
-						readable = "One of your shades escaped to The Faerin's Advance, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-						constant = "ONE_OF_YOUR_SHADES_ESCAPED_TO_THE_FAERIN_S",
-						export = true,
-						text = {
-							en = "One of your shades escaped to The Faerin's Advance, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你的一个影子逃到了菲琳营地，使用 /target Another 找到他们，然后与其交谈将其送回。影子必须按顺序互动，但顺序是随机的。如果你看不到它们，可以先去找另一个影子，或者换个方向靠近。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "One of your shades escaped to The Faerin's Advance, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
 					["sourceQuests"] = { 83741 },
 					["provider"] = { "n", 227452 },	-- Another You
 					["coords"] = {
@@ -169,24 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(83744, {	-- Step 2D: Find Another You in Wildcamp Or'lay
 					["name"] = "|cFFFFFFFFStep 2D|r: Find Another You in Wildcamp Or'lay",
-					["description"] = createLocalizationString({
-						readable = "One of your shades escaped to Wildcamp Or'lay, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-						constant = "ONE_OF_YOUR_SHADES_ESCAPED_TO_WILDCAMP_OR_LAY",
-						export = true,
-						text = {
-							en = "One of your shades escaped to Wildcamp Or'lay, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你的一个影子逃到了欧雷营地，使用 /target Another 找到他们，然后与其交谈将其送回。影子必须按顺序互动，但顺序是随机的。如果你看不到它们，可以先去找另一个影子，或者换个方向靠近。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "One of your shades escaped to Wildcamp Or'lay, use /target Another to find them then speak with them to send them back. The shades must be interacted with in order, but that order is random. If you cannot see them, try finding another shade first or approach from a different direction.",
 					["sourceQuests"] = { 83741 },
 					["provider"] = { "n", 227452 },	-- Another You
 					["coords"] = {
@@ -196,24 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(83724, {	-- Step 3: Return to the Grimoire
 					["name"] = "|cFFFFFFFFStep 3|r: Return to the Grimoire",
-					["description"] = createLocalizationString({
-						readable = "Return to the grimoire in the void cave and speak to one of your shades to earn the achievement.",
-						constant = "RETURN_TO_THE_GRIMOIRE_IN_THE_VOID_CAVE_AND",
-						export = true,
-						text = {
-							en = "Return to the grimoire in the void cave and speak to one of your shades to earn the achievement.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "回到虚空洞穴中的魔典处，与你的一个暗影交谈，即可获得该成就。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Return to the grimoire in the void cave and speak to one of your shades to earn the achievement.",
 					["sourceQuests"] = {
 						83746,	-- Step 2A
 						83747,	-- Step 2B
@@ -280,24 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			ach(40636),	-- Sojourner of Azj-Kahet (automated)
 			ach(40633, {	-- The Unseeming
-				["description"] = createLocalizationString({
-					readable = "Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",
-					constant = "STAND_IN_THE_POOL_AND_ACQUIRE_100_STACKS_OF",
-					export = true,
-					text = {
-						en = "Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "站在水池中，叠加 100 层不谐转变减益效果。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",
 				["coord"] = { 67.2, 28.4, AZJ_KAHET },
 			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet

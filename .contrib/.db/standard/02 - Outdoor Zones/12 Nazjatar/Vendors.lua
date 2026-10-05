@@ -69,45 +69,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = bubbleDownClassicRep(FACTION_THE_UNSHACKLED, {
 				{		-- Neutral
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
-						["description"] = createLocalizationString({
-							readable = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
-							constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_6",
-							export = true,
-							text = {
-								en = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要完成成就|cffffff00海上战场训练|r。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
-						["description"] = createLocalizationString({
-							readable = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
-							constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_7",
-							export = true,
-							text = {
-								en = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要完成成就|cffffff00水行小队杀戮部队|r。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
 						["cost"] = { { "c", 1721, 75 } },	-- 75x Prismatic Manapearl
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -195,24 +161,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
 				i(168851, {	-- Enduring Battlefield Memento (Rank 2)
-					["description"] = createLocalizationString({
-						readable = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
-						constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_8",
-						export = true,
-						text = {
-							en = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要完成成就|cffffff00两线作战|r。\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
 					["cost"] = { { "i", 168802, 20 } },	-- 20x Nazjatar Battle Commendation
 				}),
 				i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
@@ -222,24 +171,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					},
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
-					["description"] = createLocalizationString({
-						readable = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
-						constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_9",
-						export = true,
-						text = {
-							en = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要完成成就|cffffff00为刺客提供补给|r。\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
 					["cost"] = { { "i", 168802, 5 } },	-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -262,7 +194,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["groups"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
 				i(168851, {	-- Enduring Battlefield Memento [Rank 2] (RECIPE!)
-					["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_8",
+					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
 					["cost"] = { { "i", 168802, 20 } },	-- 20x Nazjatar Battle Commendation
 				}),
 				i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
@@ -443,236 +375,66 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = {	-- not sure it's worth adding 'cost' to these items since the purchasing process is so convoluted.
 				i(169202),	-- Crimson Tidestallion (MOUNT!)
 				i(168092, {	-- Curiously Warm Kelp Bundle
-					["description"] = createLocalizationString({
-						readable = "Contains Mardivas reagents.",
-						constant = "CONTAINS_MARDIVAS_REAGENTS",
-						export = true,
-						text = {
-							en = "Contains Mardivas reagents.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "包含马尔迪瓦斯材料。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains Mardivas reagents.",
 				}),
 				i(168094, {	-- Faintly Humming Sea Stones
-					["description"] = createLocalizationString({
-						readable = "Contains Scrying Stones.",
-						constant = "CONTAINS_SCRYING_STONES",
-						export = true,
-						text = {
-							en = "Contains Scrying Stones.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含占卜石。",
-							-- TODO: tw = "",
-						},
-					}),	-- Description added so you dont need debug mode to see contained item.
+					["description"] = "Contains Scrying Stones.",	-- Description added so you dont need debug mode to see contained item.
 					["groups"] = {
 						i(167077),	-- Scrying Stone
 					},
 				}),
 				i(168093, {	-- Grimy Manapearl Bracelet
-					["description"] = createLocalizationString({
-						readable = "Contains 3 Prismatic Manapearls.",
-						constant = "CONTAINS_3_PRISMATIC_MANAPEARLS",
-						export = true,
-						text = {
-							en = "Contains 3 Prismatic Manapearls.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "包含 3 颗棱彩魔力珍珠。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains 3 Prismatic Manapearls.",
 				}),
 				i(170159, {	-- Grimy Manapearl Bracelet
-					["description"] = "~L.CONTAINS_3_PRISMATIC_MANAPEARLS",
+					["description"] = "Contains 3 Prismatic Manapearls.",
 				}),
 				i(170153, {	-- Ominous Looking Tome
-					["description"] = createLocalizationString({
-						readable = "Grants 150 reputation with each of your bodyguards.",
-						constant = "GRANTS_150_REPUTATION_WITH_EACH_OF_YOUR",
-						export = true,
-						text = {
-							en = "Grants 150 reputation with each of your bodyguards.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "为你的每位保镖奖励 150 点声望。",
-							-- TODO: tw = "",
-						},
-					}),	-- Description added so you dont need debug mode to see contained items.
+					["description"] = "Grants 150 reputation with each of your bodyguards.",	-- Description added so you dont need debug mode to see contained items.
 					["groups"] = {
 						i(169945),	-- Naga Deployment Orders(A)
 						i(170085),	-- Naga Deployment Orders(H)
 					},
 				}),
 				i(168097, {	-- Pilfered Armor Crate
-					["description"] = createLocalizationString({
-						readable = "Contains a piece of Benthic gear.",
-						constant = "CONTAINS_A_PIECE_OF_BENTHIC_GEAR",
-						export = true,
-						text = {
-							en = "Contains a piece of Benthic gear.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "包含一件深水装备。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains a piece of Benthic gear.",
 					["groups"] = {
 						-- probably contains other benthic items too, but this is only one confirmed so far
 						i(169477),	-- Benthic Girdle
 					},
 				}),
 				i(170101, {	-- Pilfered Armor Crate
-					["description"] = "~L.CONTAINS_A_PIECE_OF_BENTHIC_GEAR",
+					["description"] = "Contains a piece of Benthic gear.",
 				}),
 				i(168091, {	-- Severly Rusted Lockbox
-					["description"] = createLocalizationString({
-						readable = "Contains a Barnacled Lockbox.",
-						constant = "CONTAINS_A_BARNACLED_LOCKBOX",
-						export = true,
-						text = {
-							en = "Contains a Barnacled Lockbox.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含一个藤壶锁箱。",
-							-- TODO: tw = "",
-						},
-					}),	-- Description added so you dont need debug mode to see contained items.
+					["description"] = "Contains a Barnacled Lockbox.",	-- Description added so you dont need debug mode to see contained items.
 					["sym"] = { { "select", "itemID",
 						169475,	-- Barnacled Lockbox
 					}},
 				}),
 				i(170152, {	-- Shadow-Cloaked Shell
-					["description"] = createLocalizationString({
-						readable = "Grants 150 reputation with your Nazjatar faction.",
-						constant = "GRANTS_150_REPUTATION_WITH_YOUR_NAZJATAR",
-						export = true,
-						text = {
-							en = "Grants 150 reputation with your Nazjatar faction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "为你的纳沙塔尔声望阵营奖励 150 点声望。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Grants 150 reputation with your Nazjatar faction.",
 				}),
 				i(170157, {	-- Sinister Pile of Sand
-					["description"] = "~L.CONTAINS_MARDIVAS_REAGENTS",
+					["description"] = "Contains Mardivas reagents.",
 				}),
 				i(168095, {	-- Strange Coral Cluster
-					["description"] = createLocalizationString({
-						readable = "Contains 300-400 Azerite.",
-						constant = "CONTAINS_300_400_AZERITE",
-						export = true,
-						text = {
-							en = "Contains 300-400 Azerite.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含 300-400 点艾泽里特。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains 300-400 Azerite.",
 				}),
 				i(170158, {	-- Unspeakable Pearl Idol
-					["description"] = createLocalizationString({
-						readable = "Contains 7 Prismatic Manapearls.",
-						constant = "CONTAINS_7_PRISMATIC_MANAPEARLS",
-						export = true,
-						text = {
-							en = "Contains 7 Prismatic Manapearls.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含 7 枚棱彩法力珍珠。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains 7 Prismatic Manapearls.",
 				}),
 				i(168053),	-- Unusually Wise Hermit Crab
 				i(170161),	-- Unusually Wise Hermit Crab
 				i(168096, {	-- Waterlogged Toolbox
-					["description"] = createLocalizationString({
-						readable = "Contains items to summon Nazjatar rares.",
-						constant = "CONTAINS_ITEMS_TO_SUMMON_NAZJATAR_RARES",
-						export = true,
-						text = {
-							en = "Contains items to summon Nazjatar rares.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "包含用于召唤纳沙塔尔稀有生物的物品。",
-							-- TODO: tw = "",
-						},
-					}),	-- Description added so you dont need debug mode to see contained items.
+					["description"] = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
 					["groups"] = {
 						i(166888),	-- Germinating Seed
 						i(167059),	-- Chum
 					},
 				}),
 				i(170162, {	-- Waterlogged Toolbox
-					["description"] = "~L.CONTAINS_ITEMS_TO_SUMMON_NAZJATAR_RARES",	-- Description added so you dont need debug mode to see contained items.
+					["description"] = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
 					["groups"] = {
 						i(166888),	-- Germinating Seed
 						i(167012),	-- Brinestone Pickaxe
@@ -687,11 +449,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["groups"] = bubbleDownClassicRep(FACTION_WAVEBLADE_ANKOAN, {
 				{		-- Neutral
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_6",
+						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_7",
+						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
 						["cost"] = { { "c", 1721, 75 } },	-- 75x Prismatic Manapearl
 						["u"] = REMOVED_FROM_GAME,
 					}),

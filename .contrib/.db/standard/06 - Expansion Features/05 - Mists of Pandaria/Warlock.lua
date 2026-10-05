@@ -4,24 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } },{
 	cl(WARLOCK, {
-		["description"] = createLocalizationString({
-			readable = "The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",
-			constant = "THE_WARLOCK_GREEN_FIRE_IS_A_SPECIAL_VISUAL",
-			export = true,
-			text = {
-				en = "The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "术士的绿色火焰是毁灭术士的一种特殊视觉效果。要解锁它，你必须完成一系列与黑 harvest 议会相关的术士专属任务。\n\n要开始任务，你必须先在雷神岛上从稀有生物处找到一本失落军团的密封魔典。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",
 		["groups"] = bubbleDown({ ["classes"] = { WARLOCK }, ["lvl"] = lvlsquish(90, 35, 35) },{
 			n(QUESTS, {
 				i(92426, {	-- Sealed Tome of the Lost Legion

@@ -482,15 +482,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["groups"] = {
 					i(89808, {	-- Dividends of the Everlasting Spring (Original)
-						["description"] = "~L.CONTAINS_28G_50S_THIS_ITEM_AND_OTHER",
+						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(89857, {	-- Dividends of the Everlasting Spring (Original)
-						["description"] = "~L.CONTAINS_28G_50S_THIS_ITEM_AND_OTHER",
+						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(95617, {	-- Dividends of the Everlasting Spring
-						["description"] = "~L.THIS_ITEM_IS_AWARDED_AS_A_CONSOLATION_PRIZE_TO_2",
+						["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Heart of Fear.",
 						["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },
 						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
 					}),
@@ -552,7 +552,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["groups"] = {
 								i(89277, {	-- Shoulders of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
-									["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 									-- #endif
 								}),
 								i(89278),	-- Shoulders of the Shadowy Protector
@@ -581,7 +581,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["groups"] = {
 								i(89274, {	-- Helm of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
-									["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 									-- #endif
 								}),
 								i(89275),	-- Helm of the Shadowy Protector
@@ -630,24 +630,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 62983 },	-- Lei Shi
 					["groups"] = {
 						ach(6824, {	-- Face Clutchers
-							["description"] = createLocalizationString({
-								readable = "You get afflicted by a creature found in the water around the circular platform. Be aware that the affliction only lasts a short time, so be prepared to kill Lei Shi.",
-								constant = "YOU_GET_AFFLICTED_BY_A_CREATURE_FOUND_IN_THE",
-								export = true,
-								text = {
-									en = "You get afflicted by a creature found in the water around the circular platform. Be aware that the affliction only lasts a short time, so be prepared to kill Lei Shi.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你会被圆形平台周围水中的一种生物施加负面效果。请注意该效果只持续很短时间，所以要做好击杀雷施的准备。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You get afflicted by a creature found in the water around the circular platform. Be aware that the affliction only lasts a short time, so be prepared to kill Lei Shi.",
 						}),
 					},
 				}),
@@ -675,24 +658,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						},
 						["groups"] = {
 							n(QUALITY_ELITE, {
-								["description"] = createLocalizationString({
-									readable = "You must kill Protector Kaolan last!",
-									constant = "YOU_MUST_KILL_PROTECTOR_KAOLAN_LAST",
-									export = true,
-									text = {
-										en = "You must kill Protector Kaolan last!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你必须最后击杀保护者迦奥兰！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You must kill Protector Kaolan last!",
 								["groups"] = {
 									i(90528),	-- Asani's Uncleansed Sandals (Elite)
 									i(90520),	-- Bracers of Defiled Earth (Elite)
@@ -760,7 +726,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["groups"] = {
 							i(89246, {	-- Shoulders of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89247),	-- Shoulders of the Shadowy Protector
@@ -789,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["groups"] = {
 							i(89235, {	-- Helm of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89236),	-- Helm of the Shadowy Protector
@@ -817,7 +783,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["groups"] = {
 							ach(6731),	-- Heroic: Protectors of the Endless
 							n(QUALITY_ELITE, {
-								["description"] = "~L.YOU_MUST_KILL_PROTECTOR_KAOLAN_LAST",
+								["description"] = "You must kill Protector Kaolan last!",
 								["groups"] = {
 									i(90514),	-- Asani's Uncleansed Sandals (Elite)
 									i(90506),	-- Bracers of Defiled Earth (Elite)
@@ -887,7 +853,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							ach(6733),	-- Heroic: Lei Shi
 							i(89262, {	-- Shoulders of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89263),	-- Shoulders of the Shadowy Protector
@@ -932,7 +898,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							}),
 							i(89259, {	-- Helm of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
-								["description"] = "~L.PALADIN_COMPLETIONISTS_WILL_WANT_TO_TURN_THIS",
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 								-- #endif
 							}),
 							i(89260),	-- Helm of the Shadowy Protector

@@ -20,24 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			-- i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
 			--
 			header(HEADERS.Item, 210961, bubbleDownSelf({ ["classes"] = { DEMONHUNTER }}, {	-- Alara'shinu
-				["description"] = createLocalizationString({
-					readable = "Follow coords attached to steps to obtain warglaive.",
-					constant = "FOLLOW_COORDS_ATTACHED_TO_STEPS_TO_OBTAIN",
-					export = true,
-					text = {
-						en = "Follow coords attached to steps to obtain warglaive.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "按照各步骤附带的坐标前进，即可获得战刃。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Follow coords attached to steps to obtain warglaive.",
 				["groups"] = {
 					n(213029, {	-- Landeron Felfury
 						["name"] = "Step 1. Talk to this npc.",
@@ -74,24 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			})),
 			header(HEADERS.Item, 210535, {	-- Mark of the Slumbering Somnowl
-				["description"] = createLocalizationString({
-					readable = "This is crafted using Somnowl Feather Strand and a Quality 3 Runed Writhebark.\n\nTo create the Somnowl Feather Strand, you will need to collect 5 x Soft Somnowl Feathers and bind them together using a Silken Thread (Auction House Vendor Item).\n\nTo collect the Soft Somnowl Feathers you will need to find Somnowls in the Emerald Dream sub-zone and cast Hibernate on them.\nOnce they are sleeping you can click on them to channel a short cast of Carefully Pilfering Feathers to pluck a feather.\nAfter you gather a feather, the Somnowl will get the debuff Recently Plucked, which prevents you from plucking the same Somnowl again within the next 5 minutes.",
-					constant = "THIS_IS_CRAFTED_USING_SOMNOWL_FEATHER_STRAND",
-					export = true,
-					text = {
-						en = "This is crafted using Somnowl Feather Strand and a Quality 3 Runed Writhebark.\n\nTo create the Somnowl Feather Strand, you will need to collect 5 x Soft Somnowl Feathers and bind them together using a Silken Thread (Auction House Vendor Item).\n\nTo collect the Soft Somnowl Feathers you will need to find Somnowls in the Emerald Dream sub-zone and cast Hibernate on them.\nOnce they are sleeping you can click on them to channel a short cast of Carefully Pilfering Feathers to pluck a feather.\nAfter you gather a feather, the Somnowl will get the debuff Recently Plucked, which prevents you from plucking the same Somnowl again within the next 5 minutes.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此物品使用眠枭羽束和品质 3 的符文扭木皮制作。\n\n要制作眠枭羽束，你需要收集 5 根柔软的眠枭羽毛，并用丝线（拍卖行商人出售的物品）将它们绑在一起。\n\n要收集柔软的眠枭羽毛，你需要在翡翠梦境子区域找到眠枭并对其施放休眠。\n它们睡着后，你可以点击它们，引导一个简短的“小心窃取羽毛”施法来拔取一根羽毛。\n拔到羽毛后，眠枭会获得“刚被拔过毛”的减益，使你在接下来的 5 分钟内无法再次从同一只眠枭身上拔毛。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is crafted using Somnowl Feather Strand and a Quality 3 Runed Writhebark.\n\nTo create the Somnowl Feather Strand, you will need to collect 5 x Soft Somnowl Feathers and bind them together using a Silken Thread (Auction House Vendor Item).\n\nTo collect the Soft Somnowl Feathers you will need to find Somnowls in the Emerald Dream sub-zone and cast Hibernate on them.\nOnce they are sleeping you can click on them to channel a short cast of Carefully Pilfering Feathers to pluck a feather.\nAfter you gather a feather, the Somnowl will get the debuff Recently Plucked, which prevents you from plucking the same Somnowl again within the next 5 minutes.",
 				["groups"] = {
 					i(210565, {	-- Soft Somnowl Feather
 					}),
@@ -124,49 +90,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				i(210880, {	-- Filled Vial "B"
-					["description"] = createLocalizationString({
-						readable = "Go to following coordinate to fill the vial.",
-						constant = "GO_TO_FOLLOWING_COORDINATE_TO_FILL_THE_VIAL",
-						export = true,
-						text = {
-							en = "Go to following coordinate to fill the vial.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "前往以下坐标以装满小瓶。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210840 },	-- Empty Vial "B"
 					["coord"] = { 45.0, 68.3, VALSHARAH },
 				}),
 				i(210879, {	-- Filled Vial "D"
-					["description"] = "~L.GO_TO_FOLLOWING_COORDINATE_TO_FILL_THE_VIAL",
+					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210839 },	-- Empty Vial "D"
 					["coord"] = { 29.5, 24.4, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				i(210875, {	-- Filled Vial "E"
-					["description"] = "~L.GO_TO_FOLLOWING_COORDINATE_TO_FILL_THE_VIAL",
+					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210836 },	-- Empty Vial "E"
 					["coord"] = { 49.2, 33.3, DUSKWOOD },
 				}),
 				i(210874, {	-- Filled Vial "K"
-					["description"] = "~L.GO_TO_FOLLOWING_COORDINATE_TO_FILL_THE_VIAL",
+					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210835 },	-- Empty Vial "K"
 					["coord"] = { 67.4, 61.1, MOONGLADE },
 				}),
 				i(210877, {	-- Filled Vial "N"
-					["description"] = "~L.GO_TO_FOLLOWING_COORDINATE_TO_FILL_THE_VIAL",
+					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210838 },	-- Empty Vial "N"
 					["coord"] = { 29.4, 55.7, DRAGONBLIGHT },
 				}),
 				i(210876, {	-- Filled Vial "O"
-					["description"] = "~L.GO_TO_FOLLOWING_COORDINATE_TO_FILL_THE_VIAL",
+					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210837 },	-- Empty Vial "O"
 					["coord"] = { 80.3, 65.1, ZANGARMARSH },
 				}),

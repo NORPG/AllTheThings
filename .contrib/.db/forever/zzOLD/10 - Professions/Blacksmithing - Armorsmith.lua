@@ -1,24 +1,7 @@
 -- #if ANYCLASSIC
 profession(BLACKSMITHING, {
 	prof(9788, {	-- Armorsmith
-		["description"] = createLocalizationString({
-			readable = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
-			constant = "THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS_3",
-			export = true,
-			text = {
-				en = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "这些物品只能由完成了“护甲锻造的艺术”任务链的锻造师制造。\n\n注意：每个角色只能激活其中一种专精。如果你想完成收藏，就必须练多个锻造师并完成对立的专精。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
 		["sourceQuests"] = {
 			5283,	-- The Art of the Armorsmith [Alliance]
 			5301,	-- The Art of the Armorsmith [Horde]

@@ -590,24 +590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { WORGEN },
 				}),
 				q(14405, {	-- Escape By Sea
-					["description"] = createLocalizationString({
-						readable = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
-						constant = "GIVEN_IF_CFFFFD700THE_HAYWARD_BROTHERS_R",
-						export = true,
-						text = {
-							en = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果|cFFFFD700海沃德兄弟|r任务线最后完成，则会获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
 					["sourceQuests"] = {
 						14404,	-- Not Quite Shipshape
 						14412,	-- Washed Up
@@ -709,24 +692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { WORGEN },
 				}),
 				q(14463, {	-- Horses for Duskhaven
-					["description"] = createLocalizationString({
-						readable = "Given if |cFFFFD700The Crowley Orchard|r questline is completed last.",
-						constant = "GIVEN_IF_CFFFFD700THE_CROWLEY_ORCHARD_R",
-						export = true,
-						text = {
-							en = "Given if |cFFFFD700The Crowley Orchard|r questline is completed last.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果|cFFFFD700克劳利果园|r任务线最后完成，则会获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Given if |cFFFFD700The Crowley Orchard|r questline is completed last.",
 					["sourceQuest"] = 14416,	-- The Hungry Ettin
 					["qg"] = 36457,	-- Lorna Crowley
 					["coord"] = { 37.68, 72.75, GILNEAS },
@@ -1046,24 +1012,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14402, {	-- Ready to Go
-					["description"] = createLocalizationString({
-						readable = "Given if the |cFFFFD700Grandma Wahl|r questline is completed last.",
-						constant = "GIVEN_IF_THE_CFFFFD700GRANDMA_WAHL_R_QUESTLINE",
-						export = true,
-						text = {
-							en = "Given if the |cFFFFD700Grandma Wahl|r questline is completed last.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果|cFFFFD700瓦尔奶奶|r任务线最后完成，则会获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Given if the |cFFFFD700Grandma Wahl|r questline is completed last.",
 					["sourceQuest"] = 14401,	-- Grandma's Cat
 					["qg"] = 36458,	-- Grandma Wahl
 					["coord"] = { 32.52, 75.48, GILNEAS },
@@ -1265,24 +1214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14465, {	-- To Greymane Manor
-					["description"] = createLocalizationString({
-						readable = "Only one of the source quests can be turned in, but all become marked completed.",
-						constant = "ONLY_ONE_OF_THE_SOURCE_QUESTS_CAN_BE_TURNED_IN",
-						export = true,
-						text = {
-							en = "Only one of the source quests can be turned in, but all become marked completed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只能交还其中一个来源任务，但它们都会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only one of the source quests can be turned in, but all become marked completed.",
 					["sourceQuests"] = {
 						14405,	-- Escape By Sea
 						14463,	-- Horses for Duskhaven

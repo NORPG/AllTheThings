@@ -136,24 +136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(550, {	-- Highlands Mouse (PET!)
-						["description"] = createLocalizationString({
-							readable = "Most common as secondary pet in Twilight Highlands. The given coordinates only indicates the wider areas where they can be found as primary pets.",
-							constant = "MOST_COMMON_AS_SECONDARY_PET_IN_TWILIGHT",
-							export = true,
-							text = {
-								en = "Most common as secondary pet in Twilight Highlands. The given coordinates only indicates the wider areas where they can be found as primary pets.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在暮光高地最常作为次级宠物出现。所示坐标仅标示它们可能作为主宠物出现的较大区域。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Most common as secondary pet in Twilight Highlands. The given coordinates only indicates the wider areas where they can be found as primary pets.",
 						["coords"] = {
 							{ 45.6, 41.3, TWILIGHT_HIGHLANDS },	-- Southwestern Ruins of Thundermar
 							{ 50.6, 32.2, TWILIGHT_HIGHLANDS },	-- Northeastern Ruins of Thundermar
@@ -163,24 +146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					pet(823, {	-- Highlands Skunk (PET!)
-						["description"] = createLocalizationString({
-							readable = "Commonly found in the forests of Twilight Highlands.",
-							constant = "COMMONLY_FOUND_IN_THE_FORESTS_OF_TWILIGHT",
-							export = true,
-							text = {
-								en = "Commonly found in the forests of Twilight Highlands.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "常见于暮光高地的森林中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Commonly found in the forests of Twilight Highlands.",
 						["coords"] = {
 							{ 45.6, 41.3, TWILIGHT_HIGHLANDS },	-- Southwestern Ruins of Thundermar
 							{ 50.6, 32.2, TWILIGHT_HIGHLANDS },	-- Northeastern Ruins of Thundermar
@@ -191,24 +157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					pet(645, {	-- Highlands Turkey (PET!)
-						["description"] = createLocalizationString({
-							readable = "Commonly found around Vermillion Redoubt in Twilight Highlands.",
-							constant = "COMMONLY_FOUND_AROUND_VERMILLION_REDOUBT_IN",
-							export = true,
-							text = {
-								en = "Commonly found around Vermillion Redoubt in Twilight Highlands.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "常见于暮光高地的朱红哨所附近。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Commonly found around Vermillion Redoubt in Twilight Highlands.",
 						["coords"] = {
 							{ 46.5, 25.1, TWILIGHT_HIGHLANDS },	-- North of Thundermaw
 							{ 29.8, 25.13, TWILIGHT_HIGHLANDS },	-- Vermillion Redoubt
@@ -217,24 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					pet(431, {	-- Rattlesnake (PET!)
-						["description"] = createLocalizationString({
-							readable = "Most commonly found thorough the Verall River valley in Twilight Highlands. Can also be found scattered around north of the river valley, as well as around Badlands and Tanaris.",
-							constant = "MOST_COMMONLY_FOUND_THOROUGH_THE_VERALL_RIVER",
-							export = true,
-							text = {
-								en = "Most commonly found thorough the Verall River valley in Twilight Highlands. Can also be found scattered around north of the river valley, as well as around Badlands and Tanaris.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "最常见于暮光高地的维拉尔河谷中。也可散布在河谷以北，以及荒芜之地和塔纳利斯一带。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Most commonly found thorough the Verall River valley in Twilight Highlands. Can also be found scattered around north of the river valley, as well as around Badlands and Tanaris.",
 						["coords"] = {
 							{ 48.9, 36.55, TANARIS },	-- South of Gadgetzan
 							{ 65.75, 41.0, TWILIGHT_HIGHLANDS },	-- Verall Delta
@@ -243,24 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					pet(552, {	-- Twilight Fiendling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found within the breaches caused by Twilight cultists.",
-							constant = "FOUND_WITHIN_THE_BREACHES_CAUSED_BY_TWILIGHT",
-							export = true,
-							text = {
-								en = "Found within the breaches caused by Twilight cultists.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于暮光教徒造成的裂隙内。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found within the breaches caused by Twilight cultists.",
 						["coords"] = {
 							{ 59.6, 51.0, TWILIGHT_HIGHLANDS },	-- The Devouring Breach
 							{ 40.2, 47.6, TWILIGHT_HIGHLANDS },	-- The Twilight Breach
@@ -268,24 +183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					pet(470, {	-- Twilight Spider (PET!)
-						["description"] = createLocalizationString({
-							readable = "Commonly found in areas defiled by Twilight cultists or their allies in Twilight Highlands and Deepholm.",
-							constant = "COMMONLY_FOUND_IN_AREAS_DEFILED_BY_TWILIGHT",
-							export = true,
-							text = {
-								en = "Commonly found in areas defiled by Twilight cultists or their allies in Twilight Highlands and Deepholm.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "常见于暮光高地与地深之源中被暮光教徒或其盟友玷污的区域。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Commonly found in areas defiled by Twilight cultists or their allies in Twilight Highlands and Deepholm.",
 						["coords"] = {
 							{ 68.5, 16.0, AZSHARA },	-- Sable Ridge
 							{ 40.1, 71.0, DEEPHOLM },	-- Master's Gate
@@ -299,70 +197,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					pet(2677, {	-- Twilight Whelpling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found outside Grim Batol, phasing might require questing through Twilight Highlands. Only spawns as Uncommon pets, if you want a Rare quality pet you have to upgrade with a battlestone.",
-							constant = "FOUND_OUTSIDE_GRIM_BATOL_PHASING_MIGHT_REQUIRE",
-							export = true,
-							text = {
-								en = "Found outside Grim Batol, phasing might require questing through Twilight Highlands. Only spawns as Uncommon pets, if you want a Rare quality pet you have to upgrade with a battlestone.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于格瑞姆巴托外，位面状态可能需要完成暮光高地的任务线。只以优秀品质刷新，如果你想要稀有品质的宠物，必须用战斗石升级。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found outside Grim Batol, phasing might require questing through Twilight Highlands. Only spawns as Uncommon pets, if you want a Rare quality pet you have to upgrade with a battlestone.",
 						["coord"] = { 19.5, 58.6, TWILIGHT_HIGHLANDS },	-- Outside Grim Batol
 						["timeline"] = { ADDED_8_2_0 },
 					}),
 					pet(548, {	-- Wildhammer Gryphon Hatchling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to intitiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",
-							constant = "FOUND_IN_THE_ALLIANCE_VILLAGES_KIRTHAVEN_AND",
-							export = true,
-							text = {
-								en = "Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to intitiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于联盟村庄基尔萨文和雷锤村。由于阵营限制，部落玩家无法与幼龙互动来发起宠物对战，任何尝试都只会攻击它们。如果你非常想用部落角色获得这只宠物，它们可能会作为副宠物出现在村庄附近。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to intitiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",
 						["coords"] = {
 							{ 56.4, 15.8, TWILIGHT_HIGHLANDS },	-- Kirthaven
 							{ 48.4, 28.6, TWILIGHT_HIGHLANDS },	-- Thundermar
 						},
 					}),
 					pet(549, {	-- Yellow-Bellied Marmot (PET!)
-						["description"] = createLocalizationString({
-							readable = "Very common pet in the forests of Twilight Highlands.",
-							constant = "VERY_COMMON_PET_IN_THE_FORESTS_OF_TWILIGHT",
-							export = true,
-							text = {
-								en = "Very common pet in the forests of Twilight Highlands.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在暮光高地的森林中非常常见的宠物。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Very common pet in the forests of Twilight Highlands.",
 						["coords"] = {
 							{ 45.6, 41.3, TWILIGHT_HIGHLANDS },	-- Southwestern Ruins of Thundermar
 							{ 50.6, 32.2, TWILIGHT_HIGHLANDS },	-- Northeastern Ruins of Thundermar
@@ -497,13 +344,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 					i(68050, {	-- Shatterscale Mightfish
-						["description"] = "~L.CAN_BE_CAUGHT_BY_FISHING_IN_LAVA_USING_A",
+						["description"] = "Can be caught by fishing in lava using a special lure.",
 						["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
 						["coord"] = { 41.0, 79.1, TWILIGHT_HIGHLANDS },	-- Cannon's Inferno
 					}),
 				}),
 				prof(MINING, {
-					["description"] = "~L.ELEMENTIUM_VEINS_0_05_DROP_RATE_AND_RICH",
+					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
 					["groups"] = {
 						i(67282),	-- Elementium Geode (PET!)
 					},
@@ -1071,24 +918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27377, {	-- Devoured
-					["description"] = createLocalizationString({
-						readable = "You must die for this quest to continue.",
-						constant = "YOU_MUST_DIE_FOR_THIS_QUEST_TO_CONTINUE",
-						export = true,
-						text = {
-							en = "You must die for this quest to continue.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须死亡，此任务才能继续。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must die for this quest to continue.",
 					["sourceQuest"] = 27376,	-- The Maw of Iso'rath
 					["qg"] = 47991,	-- Earthcaller Yevaa
 					["coord"] = { 48.3, 14.5, TWILIGHT_HIGHLANDS },
@@ -1465,24 +1295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 59.0, 69.8, TWILIGHT_HIGHLANDS },
 				}),
 				q(27500, {	-- Four Heads are Better Than None (A)
-					["description"] = createLocalizationString({
-						readable = "Automatically granted.",
-						constant = "AUTOMATICALLY_GRANTED",
-						export = true,
-						text = {
-							en = "Automatically granted.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "自动获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Automatically granted.",
 					["sourceQuests"] = {
 						27498,	-- Signal the Attack (Automatically granted)
 						27588,	-- Signal the Attack (Kurdran Wildhammer)
@@ -1541,7 +1354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27501, {	-- Four Heads are Better than None (H)
-					["description"] = "~L.AUTOMATICALLY_GRANTED",
+					["description"] = "Automatically granted.",
 					["sourceQuests"] = {
 						27499,	-- Signal the Attack (Automatically granted)
 						27590,	-- Signal the Attack (Warlord Zaela)
@@ -1763,7 +1576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27638, {	-- Just You and Garona
-					["description"] = "~L.AUTOMATICALLY_GRANTED",
+					["description"] = "Automatically granted.",
 					["sourceQuest"] = 27503,	-- Up to the Citadel
 					["races"] = HORDE_ONLY,
 				}),
@@ -1774,7 +1587,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27636, {	-- Just You and Mathias
-					["description"] = "~L.AUTOMATICALLY_GRANTED",
+					["description"] = "Automatically granted.",
 					["sourceQuest"] = 27502,	-- Up to the Citadel
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2251,24 +2064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(28107, {	-- Paving the Way (A)
-					["description"] = createLocalizationString({
-						readable = "Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",
-						constant = "MUST_BE_ON_CFFFFD700IF_THE_KEY_FITS_R_TO",
-						export = true,
-						text = {
-							en = "Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须正在进行|cFFFFD700如果钥匙合适|r才能接到此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",
 					["sourceQuest"] = 28108,	-- If the Key Fits
 					["qg"] = 47611,	-- Highbank Lieutenant
 					["coord"] = { 26.0, 38.9, TWILIGHT_HIGHLANDS },
@@ -2323,24 +2119,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27659, {	-- Portal Overlord
-					["description"] = createLocalizationString({
-						readable = "Aetharon can be found on a floating island above the ground.",
-						constant = "AETHARON_CAN_BE_FOUND_ON_A_FLOATING_ISLAND",
-						export = true,
-						text = {
-							en = "Aetharon can be found on a floating island above the ground.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "埃萨隆可以在半空中的一座浮空岛上找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Aetharon can be found on a floating island above the ground.",
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
 					["qg"] = 46242,	-- Earthcaller Yevaa
 					["coord"] = { 37.5, 88.6, TWILIGHT_HIGHLANDS },
@@ -2641,12 +2420,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27498, {	-- Signal the Attack (A)
-					["description"] = "~L.AUTOMATICALLY_GRANTED",
+					["description"] = "Automatically granted.",
 					["sourceQuest"] = 27494,	-- Move the Mountain
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27499, {	-- Signal the Attack (H)
-					["description"] = "~L.AUTOMATICALLY_GRANTED",
+					["description"] = "Automatically granted.",
 					["sourceQuest"] = 27495,	-- Move the Mountain
 					["races"] = HORDE_ONLY,
 				}),
@@ -3538,7 +3317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(62430),	-- Gryphon Talon Gauntlets
 							i(62427),	-- Band of Singing Grass
 							i(62422, {	-- Arcanum of the Wildhammer
-								["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
@@ -3576,7 +3355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(62420),	-- Withered Dream Belt
 							i(62418),	-- Boots of Sullen Rock
 							i(62368, {	-- Arcanum of the Dragonmaw
-								["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),

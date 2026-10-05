@@ -24,44 +24,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ARTIFACTS, {
 					cl(WARLOCK, AFFLICTION, {
 						i(140764, {	-- Grimoire of the First Necrolyte (QS!)
-							["description"] = createLocalizationString({
-								readable = "Can be looted from any killed demon.",
-								constant = "CAN_BE_LOOTED_FROM_ANY_KILLED_DEMON",
-								export = true,
-								text = {
-									en = "Can be looted from any killed demon.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可从任何被击杀的恶魔身上拾取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be looted from any killed demon.",
 						}),
 						q(44083, {	-- The Grimoire of the First Necrolyte
-							["description"] = createLocalizationString({
-								readable = "Only available from Rare Elite (DANGER) World Quests.",
-								constant = "ONLY_AVAILABLE_FROM_RARE_ELITE_DANGER_WORLD",
-								export = true,
-								text = {
-									en = "Only available from Rare Elite (DANGER) World Quests.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅可从稀有精英（危险）世界任务获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available from Rare Elite (DANGER) World Quests.",
 							["provider"] = { "i", 140764 },	-- Grimoire of the First Necrolyte
 							["groups"] = { i(140762) },	-- Skull of the Executed (QI!)
 						}),
@@ -76,24 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 					cl(WARLOCK, DEMONOLOGY, {
-						["description"] = createLocalizationString({
-							readable = "The heads can drop from any Eredar. Keep killing them until you unlock the hidden appearance.",
-							constant = "THE_HEADS_CAN_DROP_FROM_ANY_EREDAR_KEEP_KILLING",
-							export = true,
-							text = {
-								en = "The heads can drop from any Eredar. Keep killing them until you unlock the hidden appearance.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这些头颅可以从任何艾瑞达身上掉落。不断击杀它们，直到你解锁隐藏外观。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The heads can drop from any Eredar. Keep killing them until you unlock the hidden appearance.",
 						["groups"] = {
 							i(140661),	-- Damaged Eredar Head
 							i(140662),	-- Deformed Eredar Head
@@ -170,24 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Artifact
 					q(40684, {	-- The Tome of Blighted Implements
-						["description"] = createLocalizationString({
-							readable = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain certain breadcrumb quests.",
-							constant = "YOU_MUST_COMPLETE_THE_AFFLICTION_QUEST_LINE",
-							export = true,
-							text = {
-								en = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain certain breadcrumb quests.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你必须在完成恶魔学识任务线之前先完成痛苦任务线，才能获得某些引导任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain certain breadcrumb quests.",
 						["sourceQuests"] = {
 							40729,	-- The New Blood
 						},
@@ -251,7 +183,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 52.3, 34.4, DEADWIND_PASS },
 						}),
 						q(40623, {	-- The Dark Riders (Good)
-							["description"] = "~L.OBTAINABLE_IF_YOU_ARE_GOOD_TO_REVIL_KOST",
+							["description"] = "Obtainable if you are good to Revil Kost",
 							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
@@ -268,7 +200,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(41155, {	-- The Dark Riders (Bad)
-							["description"] = "~L.OBTAINABLE_IF_YOU_ATTACK_REVIL_KOST",
+							["description"] = "Obtainable if you attack Revil Kost",
 							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
@@ -285,48 +217,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(40712, {	-- The Power Possessed (Good)
-							["description"] = createLocalizationString({
-								readable = "Obtainable if you are good to Revil Kost. This quest cross completes with 41156, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
-								constant = "OBTAINABLE_IF_YOU_ARE_GOOD_TO_REVIL_KOST_THIS",
-								export = true,
-								text = {
-									en = "Obtainable if you are good to Revil Kost. This quest cross completes with 41156, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你对雷维尔·科斯特友好即可获得。此任务与 41156 交叉完成，如果你在痛苦之前完成了恶魔学识神器武器，则无法获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Obtainable if you are good to Revil Kost. This quest cross completes with 41156, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
 							["sourceQuests"] = { 40623 },	-- The Dark Riders (Good)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 						q(41156, {	-- The Power Possessed (Bad)
-							["description"] = createLocalizationString({
-								readable = "Obtainable if you attack Revil Kost. This quest cross completes with 40712, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
-								constant = "OBTAINABLE_IF_YOU_ATTACK_REVIL_KOST_THIS_QUEST",
-								export = true,
-								text = {
-									en = "Obtainable if you attack Revil Kost. This quest cross completes with 40712, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你攻击雷维尔·科斯特即可获得。此任务与 40712 交叉完成，如果你在痛苦之前完成了恶魔学识神器武器，则无法获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Obtainable if you attack Revil Kost. This quest cross completes with 40712, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
 							["sourceQuests"] = { 41155 },	-- The Dark Riders (Bad)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
@@ -886,24 +784,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["groups"] = { follower(997) },	-- Kanrethad Ebonlocke
 					})),
 					q(46316, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
-						["description"] = createLocalizationString({
-							readable = "This quest is only available if you completed the Green Fire Questline.",
-							constant = "THIS_QUEST_IS_ONLY_AVAILABLE_IF_YOU_COMPLETED",
-							export = true,
-							text = {
-								en = "This quest is only available if you completed the Green Fire Questline.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只有完成绿火任务线后才能接取此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest is only available if you completed the Green Fire Questline.",
 						["sourceQuests"] = {
 							46020,	-- Crystal Containment
 							32340,	-- Plunder the Black Temple
@@ -1004,24 +885,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				n(SPECIAL, {
 					gt(366, {	-- Demonic Offering
-						["description"] = createLocalizationString({
-							readable = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items.",
-							constant = "THIS_CLASS_HALL_ABILITY_ALLOWS_YOU_AND_TWO",
-							export = true,
-							text = {
-								en = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这个职业大厅技能允许你和另外两名成员召唤一个必须击杀的恶魔。作为仪式的一部分，你的一名队友（或你自己）会被献祭，所以请务必在召唤前给自己绑上灵魂石。击杀它后有机会掉落这些物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items.",
 						["questID"] = 42481,	-- Daily Quest
 						["isDaily"] = true,
 						["crs"] = {

@@ -27,24 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = { i(233799) },	-- Submerged Bottle
 				}),
 				o(503375, {	-- Ancient Coffer
-					["description"] = createLocalizationString({
-						readable = "Find 'Battered Book' and 'Submerged Bottle' in order to reveal the Coffer and obtain it's Treasure.",
-						constant = "FIND_BATTERED_BOOK_AND_SUBMERGED_BOTTLE_IN",
-						export = true,
-						text = {
-							en = "Find 'Battered Book' and 'Submerged Bottle' in order to reveal the Coffer and obtain it's Treasure.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "找到“破损的书”和“沉没的瓶子”，以显现宝匣并获取其中的宝藏。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Find 'Battered Book' and 'Submerged Bottle' in order to reveal the Coffer and obtain it's Treasure.",
 					["coord"] = { 60.9, 38.4, KARESH },
 					["questID"] = 86416,
 					["cost"] = {
@@ -64,24 +47,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 85837,
 				}),
 				o(500046, {	-- Gift of the Brothers
-					["description"] = createLocalizationString({
-						readable = "Talk to 3 NPCs after clicking on the treasure.\n\nEnable Quest tracking for detailed infos.",
-						constant = "TALK_TO_3_NPCS_AFTER_CLICKING_ON_THE_TREASURE",
-						export = true,
-						text = {
-							en = "Talk to 3 NPCs after clicking on the treasure.\n\nEnable Quest tracking for detailed infos.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击宝藏后与 3 个 NPC 交谈。\n\n开启任务追踪以查看详细信息。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Talk to 3 NPCs after clicking on the treasure.\n\nEnable Quest tracking for detailed infos.",
 					["coords"] = {
 						{ 76.1, 45.3, KARESH },	-- Treasure
 						{ 75.5, 39.8, KARESH },	-- Sahra
@@ -128,24 +94,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 91352,
 				}),
 				o(503823, {	-- Mailroom Distribution
-					["description"] = createLocalizationString({
-						readable = "Grab the Mail Overflow from the Mailbox in front of the Mailroom.",
-						constant = "GRAB_THE_MAIL_OVERFLOW_FROM_THE_MAILBOX_IN",
-						export = true,
-						text = {
-							en = "Grab the Mail Overflow from the Mailbox in front of the Mailroom.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "从邮件收发室前的邮箱中取出溢出的邮件。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Grab the Mail Overflow from the Mailbox in front of the Mailroom.",
 					["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
 					["provider"] = { "o", 503837 },	-- Mailroom Distribution [Vignette]
 					["coord"] = { 48.1, 64.1, KARESH_TAZAVESH },
@@ -208,24 +157,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			-- Repeatable
 			-- None phase
 			o(516571, {	-- Broker Exchequer
-				["description"] = createLocalizationString({
-					readable = "Can be found at random locations throughout K'aresh.",
-					constant = "CAN_BE_FOUND_AT_RANDOM_LOCATIONS_THROUGHOUT_K",
-					export = true,
-					text = {
-						en = "Can be found at random locations throughout K'aresh.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可在卡雷什各处的随机位置找到。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be found at random locations throughout K'aresh.",
 				["minReputation"] = { FACTION_THE_KARESH_TRUST, 11 },	-- The K'aresh Trust Renown 11
 				["maps"] = { KARESH_TAZAVESH, KARESH },
 				-- No quest attached to them.
@@ -245,7 +177,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(516444, {	-- Ethereal Pocket-Storage
-				["description"] = "~L.CAN_BE_FOUND_AT_RANDOM_LOCATIONS_THROUGHOUT_K",
+				["description"] = "Can be found at random locations throughout K'aresh.",
 				["minReputation"] = { FACTION_THE_KARESH_TRUST, 4 },	-- The K'aresh Trust Renown 4
 				["lockCriteria"] = { 1, "renownID", FACTION_THE_KARESH_TRUST + 0.11 },	-- The K'aresh Trust Renown 11
 				["maps"] = { KARESH_TAZAVESH, KARESH },

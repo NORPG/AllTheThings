@@ -5,24 +5,7 @@
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(SPECIAL, {
 		i(169201, {	-- Fabious (MOUNT!)
-			["description"] = createLocalizationString({
-				readable = "|c00CC2222!!DO NOT KILL!!|r\n|cFFFFD700Fabious|r spawns every couple hours, walks around for a couple minutes, then disappears. Use the |cFFFFD700S.E.L.F.I.E. Camera MkII|r to take a picture with him for the mount.",
-				constant = "C00CC2222_DO_NOT_KILL_R_CFFFFD700FABIOUS_R",
-				export = true,
-				text = {
-					en = "|c00CC2222!!DO NOT KILL!!|r\n|cFFFFD700Fabious|r spawns every couple hours, walks around for a couple minutes, then disappears. Use the |cFFFFD700S.E.L.F.I.E. Camera MkII|r to take a picture with him for the mount.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "|c00CC2222！！不要击杀！！|r\n|cFFFFD700法比乌斯|r每隔几小时刷新一次，四处走动几分钟后便消失。使用|cFFFFD700自拍相机 MKII|r与他合影即可获得坐骑。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "|c00CC2222!!DO NOT KILL!!|r\n|cFFFFD700Fabious|r spawns every couple hours, walks around for a couple minutes, then disappears. Use the |cFFFFD700S.E.L.F.I.E. Camera MkII|r to take a picture with him for the mount.",
 			["coords"] = {
 				{ 38.2, 9.60, NAZJATAR },
 				{ 26.1, 29.7, NAZJATAR },
@@ -43,24 +26,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		header(HEADERS.Achievement, 13715, {	-- From the Belly of the Jelly
-			["description"] = createLocalizationString({
-				readable = "Feed the same |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon. You can do this for each |cFFFFD700Ravenous Slime|r once per week.",
-				constant = "FEED_THE_SAME_CFFFFD700RAVENOUS_SLIME_R_A",
-				export = true,
-				text = {
-					en = "Feed the same |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon. You can do this for each |cFFFFD700Ravenous Slime|r once per week.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "用|cFFFFD700棱彩水晶|r魅惑小动物，喂给同一只|cFFFFD700贪食软泥怪|r。这样做 5 天，即可从茧中获得一只随机宠物。每只|cFFFFD700贪食软泥怪|r每周可以喂养一次。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Feed the same |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon. You can do this for each |cFFFFD700Ravenous Slime|r once per week.",
 			["groups"] = {
 				ach(13715),	-- From the Belly of the Jelly
 				n(151218, {	-- Ravenous Slime (South)
@@ -122,24 +88,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			i(167893),	-- Prismatic Crystal
 		}),
 		pvp(o(327652, {	-- War Supply Chest (A)
-			["description"] = createLocalizationString({
-				readable = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
-				constant = "SPAWNS_RANDOMLY_SOMEWHERE_IN_THE_SKY_AND",
-				export = true,
-				text = {
-					en = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "随机在天空中的某处刷新，然后缓缓降落到地面。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
 			["races"] = ALLIANCE_ONLY,
 			["coords"] = {
 				{ 33.4, 38.8, NAZJATAR, },
@@ -155,7 +104,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		})),
 		pvp(o(327650, {	-- War Supply Chest (H)
-			["description"] = "~L.SPAWNS_RANDOMLY_SOMEWHERE_IN_THE_SKY_AND",
+			["description"] = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
 			["races"] = HORDE_ONLY,
 			["coords"] = {
 				{ 33.4, 38.8, NAZJATAR, },

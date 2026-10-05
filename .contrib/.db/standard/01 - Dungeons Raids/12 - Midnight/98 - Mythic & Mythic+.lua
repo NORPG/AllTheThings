@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 		i(258839, {	-- Concealed Catalogue
-			["description"] = "~L.DROPS_FROM_THE_LAST_BOSS_OF_MYTHIC_DUNGEONS_IT",
+			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
 			--["sym"] = {{"select","itemID",
 
 			--}},

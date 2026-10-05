@@ -153,24 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16400),	-- Explore the Waking Shores
 			ach(16736),	-- Grand Theft Mammoth
 			ach(16493, {	-- Petty Theft Mammoth
-				["description"] = createLocalizationString({
-					readable = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
-					constant = "FIND_MAMMOTHS_TO_RIDE_FROM_THE_INDIVIDUAL",
-					export = true,
-					text = {
-						en = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "找到可以骑乘的猛犸象，把它们从各自的位置骑到本成就指定的位置。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
 				["cr"] = 198163,	-- Mammoth-Tamer Tavok
 				["coord"] = { 39.6, 55.0, THE_WAKING_SHORES },	-- Turn in
 				["groups"] = {

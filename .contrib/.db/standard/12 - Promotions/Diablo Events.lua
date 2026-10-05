@@ -80,66 +80,15 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				}),
 			}),
 			n(116041, {		-- Treasure Goblin (Outdoor)
-				["description"] = createLocalizationString({
-					readable = "Can be found randomly in Legion zones, especially often in the Dalaran Underbelly.",
-					constant = "CAN_BE_FOUND_RANDOMLY_IN_LEGION_ZONES",
-					export = true,
-					text = {
-						en = "Can be found randomly in Legion zones, especially often in the Dalaran Underbelly.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可在军团再临区域中随机找到，尤其是在达拉然下水道中更为常见。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be found randomly in Legion zones, especially often in the Dalaran Underbelly.",
 				["groups"] = { i(142544) },	-- Horadric Satchel
 			}),
 			n(116652, {		-- Treasure Goblin (Dungeons)
-				["description"] = createLocalizationString({
-					readable = "Can be found after killing the last boss in a dungeon. Kill it and enter the portal to fight The Cow King.",
-					constant = "CAN_BE_FOUND_AFTER_KILLING_THE_LAST_BOSS_IN_A",
-					export = true,
-					text = {
-						en = "Can be found after killing the last boss in a dungeon. Kill it and enter the portal to fight The Cow King.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可在地下城中击杀最后一个首领后找到。击杀它并进入传送门，与奶牛王战斗。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be found after killing the last boss in a dungeon. Kill it and enter the portal to fight The Cow King.",
 				["groups"] = { i(142544) },	-- Horadric Satchel
 			}),
 			n(116034, {	-- The Cow King
-				["description"] = createLocalizationString({
-					readable = "Access is granted by taking a portal that spawns after a Treasure Goblin is killed. Can only be looted once per character. Right click the 'The Secret Cow Level' buff to leave the zone.",
-					constant = "ACCESS_IS_GRANTED_BY_TAKING_A_PORTAL_THAT",
-					export = true,
-					text = {
-						en = "Access is granted by taking a portal that spawns after a Treasure Goblin is killed. Can only be looted once per character. Right click the 'The Secret Cow Level' buff to leave the zone.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "击杀宝藏地精后会出现一个传送门，通过它即可进入。每个角色只能拾取一次。右键点击“秘密奶牛关”增益即可离开该区域。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Access is granted by taking a portal that spawns after a Treasure Goblin is killed. Can only be looted once per character. Right click the 'The Secret Cow Level' buff to leave the zone.",
 				["groups"] = {
 					ach(11395),	-- Diablo's 20th Anniversary
 					i(143327),	-- Livestock Lochaber Axe
@@ -171,24 +120,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				{ 54.3, 78.6, VALDRAKKEN },
 				{ 57.5, 20.1, VALDRAKKEN },
 			},
-			["description"] = createLocalizationString({
-				readable = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone and/or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
-				constant = "EVERY_30_MINUTES_A_PORTAL_SPAWNS_IN_EITHER_A",
-				export = true,
-				text = {
-					en = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone and/or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "每隔 30 分钟，一个传送门会在一个巨龙时代区域和/或一座主城中刷新，5 分钟后会出现一个宝藏地精。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone and/or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
 			-- #endif
 			["groups"] = {
 				n(205490, {	-- Treasure Goblin
@@ -232,24 +164,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				{ 54.6, 54.8, ISLE_OF_DORN },
 			},
 			["maps"] = { UNDERMINE },	-- Depends on the coordinate of a killed rare
-			["description"] = createLocalizationString({
-				readable = "Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare.",
-				constant = "EVERY_60_MINUTES_A_PORTAL_SPAWNS_IN_DORNOGAL",
-				export = true,
-				text = {
-					en = "Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "每隔 60 分钟，一个传送门会在多恩诺嘉尔、暴风城和奥格瑞玛刷新，5 分钟后会出现一个宝藏地精。\n\n在安德麦击败稀有生物后也可能刷新。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare.",
 			-- #endif
 			["groups"] = {
 				n(205490, {	-- Treasure Goblin
@@ -372,24 +287,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	}))),
 	i(206007, {	-- Treasure Nabbin' Bag
 		-- #if BEFORE 11.1.7
-		["description"] = createLocalizationString({
-			readable = "Can be earned by logging into Diablo Immortal on a level 10+ character during the 'Eternal War' crossover event between 13 November 2024, 3:00 a.m. & 11 December 2024, 2:59 a.m. local server time.",
-			constant = "CAN_BE_EARNED_BY_LOGGING_INTO_DIABLO_IMMORTAL",
-			export = true,
-			text = {
-				en = "Can be earned by logging into Diablo Immortal on a level 10+ character during the 'Eternal War' crossover event between 13 November 2024, 3:00 a.m. & 11 December 2024, 2:59 a.m. local server time.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "在 2024 年 11 月 13 日凌晨 3:00 至 2024 年 12 月 11 日凌晨 2:59（服务器本地时间）的“永恒之战”联动活动期间，使用 10 级以上的角色登录《暗黑破坏神：不朽》即可获得。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Can be earned by logging into Diablo Immortal on a level 10+ character during the 'Eternal War' crossover event between 13 November 2024, 3:00 a.m. & 11 December 2024, 2:59 a.m. local server time.",
 		-- #endif
 		["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.57689" },
 	}),
@@ -397,24 +295,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	-- 	["description"] = "+5% Drop Rate for all Pre-Dragonflight Mounts.",
 	-- }),
 	n(DIABLO_IV, {
-		["description"] = createLocalizationString({
-			readable = "Granted to players who owned WoW: The War Within and Diablo IV: Vessel of Hatred before January 7th, 2025.",
-			constant = "GRANTED_TO_PLAYERS_WHO_OWNED_WOW_THE_WAR_WITHIN",
-			export = true,
-			text = {
-				en = "Granted to players who owned WoW: The War Within and Diablo IV: Vessel of Hatred before January 7th, 2025.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "在 2025 年 1 月 7 日之前拥有《魔兽世界：地心之战》和《暗黑破坏神IV：憎恨之躯》的玩家可获得。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Granted to players who owned WoW: The War Within and Diablo IV: Vessel of Hatred before January 7th, 2025.",
 		["timeline"] = { ADDED_11_0_7, "removed 11.0.7.58608" },
 		["groups"] = {
 			i(191114),	-- Amalgam of Rage (MOUNT!)

@@ -97,24 +97,7 @@ end
 
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
-		["description"] = createLocalizationString({
-			readable = "The following items can be obtained in the mentioned dungeons.",
-			constant = "THE_FOLLOWING_ITEMS_CAN_BE_OBTAINED_IN_THE",
-			export = true,
-			text = {
-				en = "The following items can be obtained in the mentioned dungeons.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "以下物品可以在提到的这些地下城中获得。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The following items can be obtained in the mentioned dungeons.",
 		["groups"] = {
 			i(141643, {	-- Technique: Codex of the Clear Mind (RECIPE!)
 				["maps"] = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },

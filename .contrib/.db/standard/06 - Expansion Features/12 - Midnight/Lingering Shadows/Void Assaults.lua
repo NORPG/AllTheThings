@@ -115,44 +115,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					n(EVENT_COMPLETION, {
 						filter(BATTLE_PETS, {
 							i(270990, {	-- Curious Lynx Kitten (PET!)
-								["description"] = createLocalizationString({
-									readable = "This pet can drop only during Void Assault in Eversong Woods.",
-									constant = "THIS_PET_CAN_DROP_ONLY_DURING_VOID_ASSAULT_IN",
-									export = true,
-									text = {
-										en = "This pet can drop only during Void Assault in Eversong Woods.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "此宠物只在永歌森林的虚空突袭期间掉落。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "This pet can drop only during Void Assault in Eversong Woods.",
 							}),
 							i(270988, {	-- Wriggling Capybara (PET!)
-								["description"] = createLocalizationString({
-									readable = "This pet can drop only during Void Assault in Zul'Aman.",
-									constant = "THIS_PET_CAN_DROP_ONLY_DURING_VOID_ASSAULT_IN_2",
-									export = true,
-									text = {
-										en = "This pet can drop only during Void Assault in Zul'Aman.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "此宠物只在祖阿曼的虚空突袭期间掉落。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "This pet can drop only during Void Assault in Zul'Aman.",
 							}),
 						}),
 						-- Nearly all cosmetics are added to vendor with 12.0.7.
@@ -323,36 +289,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						-- Boxes given to Leveling Characters
 						i(271222, {	-- Bulging Recruit's Field Pouch
-							["description"] = createLocalizationString({
-								readable = "Earned with characters under level 90.",
-								constant = "EARNED_WITH_CHARACTERS_UNDER_LEVEL_90",
-								export = true,
-								text = {
-									en = "Earned with characters under level 90.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "使用 90 级以下的角色获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Earned with characters under level 90.",
 							["sym"] = COSMETIC_AND_LEVELING_BOX_SYM,
 						}),
 						i(270934, {	-- Recruit's Field Pouch
-							["description"] = "~L.EARNED_WITH_CHARACTERS_UNDER_LEVEL_90",
+							["description"] = "Earned with characters under level 90.",
 							["sym"] = LEVELING_BOX_SYM,
 						}),
 						i(270987, {	-- Recruit's Field Satchel
-							["description"] = "~L.EARNED_WITH_CHARACTERS_UNDER_LEVEL_90",
+							["description"] = "Earned with characters under level 90.",
 							["sym"] = LEVELING_BOX_SYM,
 						}),
 						i(271221, {	-- Wriggling Recruit's Field Pouch
-							["description"] = "~L.EARNED_WITH_CHARACTERS_UNDER_LEVEL_90",
+							["description"] = "Earned with characters under level 90.",
 							["sym"] = {
 								{ "select", "itemID", 270990 },{ "finalize" },	-- Curious Lynx Kitten (PET!)
 								{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
@@ -385,24 +334,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 						}),
 						q(94383, {	-- Ritual Interest
-							["description"] = createLocalizationString({
-								readable = "Becomes available after accepting 'Outfitting and Allies' (94381).",
-								constant = "BECOMES_AVAILABLE_AFTER_ACCEPTING_OUTFITTING",
-								export = true,
-								text = {
-									en = "Becomes available after accepting 'Outfitting and Allies' (94381).",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在接受“装备与盟友”（94381）后开放。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Becomes available after accepting 'Outfitting and Allies' (94381).",
 							["sourceQuest"] = 96080,	-- Void Strike
 							["qg"] = 257415,	-- Kul'amara the Fierce
 							["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -559,24 +491,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							}),
 							q(96831, {	-- Magister's Summons
 								["sourceQuest"] = 96410,	-- Seeking Knowledge: The Omnium Folio
-								["description"] = createLocalizationString({
-									readable = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",
-									constant = "YOU_CAN_ACCEPT_THIS_QUEST_FROM_YOUR_ADVENTURE",
-									export = true,
-									text = {
-										en = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在完成前置任务“探寻知识”后，你可以在首次每周重置后从冒险手册中接受此任务。",
-										-- TODO: tw = "",
-									},
-								}),	-- Or will it pop-up on first log-in when eligible?
+								["description"] = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
 								["qg"] = 265903,	-- Magister's Missive
 								["coords"] = {
 									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -599,24 +514,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							------ Stay awhile and listen ------
 							hqt(97139, {	-- Stay awhile and listen: Grand Magister Rommath
 								["name"] = "Stay awhile and listen: Grand Magister Rommath",
-								["description"] = createLocalizationString({
-									readable = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
-									constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_6",
-									export = true,
-									text = {
-										en = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "完成“寻求知识 第 2/5 周：仪式奥术”（96441）后即可出现该对话。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
 								["sourceQuest"] = 96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
 								["qg"] = 264070,	-- Grand Magister Rommath
 								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace

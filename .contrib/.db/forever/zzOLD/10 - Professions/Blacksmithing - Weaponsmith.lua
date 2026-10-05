@@ -1,24 +1,7 @@
 -- #if ANYCLASSIC
 profession(BLACKSMITHING, {
 	prof(9787, {	-- Weaponsmith
-		["description"] = createLocalizationString({
-			readable = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
-			constant = "THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS_4",
-			export = true,
-			text = {
-				en = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "这些物品只能由完成了“武器锻造之道”任务链的锻造师制造。\n\n注意：每个角色只能激活其中一种专精。如果你想完成收藏，就必须练多个锻造师并完成对立的专精。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
 		["sourceQuests"] = {
 			-- #if SEASON_OF_DISCOVERY
 			82662,	-- The Way of the Weaponsmith [Alliance]
@@ -32,7 +15,7 @@ profession(BLACKSMITHING, {
 		["groups"] = {
 			prof(17041, {	-- Master Axesmith
 				["sourceQuest"] = 5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
-				["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER",
+				["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
 					{
@@ -40,24 +23,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16991,
 						["requireSkill"] = 17041,
 						-- #if SEASON_OF_DISCOVERY
-						["description"] = createLocalizationString({
-							readable = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
-							constant = "BLIZZARD_STATED_THAT_ANNIHILATOR_WAS_AN_ITEM",
-							export = true,
-							text = {
-								en = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "暴雪表示“歼灭者”是一件会迫使团队中的 1 名成员担任不符合其设计定位的物品，因此他们决定不加入“歼灭者”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
 						["timeline"] = { REMOVED_1_15_0 },
 						-- #endif
 					},
@@ -172,7 +138,7 @@ profession(BLACKSMITHING, {
 					5305,	-- Sweet Serenity [Master Hammersmith]
 					-- #endif
 				},
-				["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_2",
+				["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
 					applyclassicphase(PHASE_THREE_RECIPES, {
@@ -323,7 +289,7 @@ profession(BLACKSMITHING, {
 			}),
 			prof(17039, {	-- Master Swordsmith
 				["sourceQuest"] = 5307,	-- Corruption [Master Swordsmith]
-				["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_3",
+				["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
 					{
@@ -461,7 +427,7 @@ profession(BLACKSMITHING, {
 			}),
 			{
 				["name"] = "Weapons",
-				["description"] = "~L.THESE_CAN_BE_CRAFTED_BY_ANY_WEAPONSMITH",
+				["description"] = "These can be crafted by any Weaponsmith.",
 				["categoryID"] = 227,
 				["groups"] = {
 					-- #if BEFORE TBC

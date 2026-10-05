@@ -166,24 +166,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 							{ "i", 4610 },	-- Carved Stone Urn
 							{ "o", 2743 },	-- Carved Stone Urn
 						},
-						["description"] = createLocalizationString({
-							readable = "Can be found in the outdoor section of Uldaman.",
-							constant = "CAN_BE_FOUND_IN_THE_OUTDOOR_SECTION_OF_ULDAMAN",
-							export = true,
-							text = {
-								en = "Can be found in the outdoor section of Uldaman.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在奥达曼的室外区域找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found in the outdoor section of Uldaman.",
 					}),
 					i(4980),	-- Prospector Gloves
 				},
@@ -1035,24 +1018,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
-				["description"] = createLocalizationString({
-					readable = "Has a chance to drop from any creature in the zone.",
-					constant = "HAS_A_CHANCE_TO_DROP_FROM_ANY_CREATURE_IN_THE",
-					export = true,
-					text = {
-						en = "Has a chance to drop from any creature in the zone.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "有几率由该区域的任何生物掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Has a chance to drop from any creature in the zone.",
 			}),
 			i(2281, {	-- Rodentia Flint Axe
 				["coords"] = {

@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ZULAMAN, {
 		n(ACHIEVEMENTS, {
 			ach(62267, {	-- A Most Violent Loa
-				["description"] = createLocalizationString({
-					readable = "Kill 100 Kapara or Kapara pups around Zul'Aman to draw the wrath of Filo, Loa of Childhood.",
-					constant = "KILL_100_KAPARA_OR_KAPARA_PUPS_AROUND_ZUL_AMAN",
-					export = true,
-					text = {
-						en = "Kill 100 Kapara or Kapara pups around Zul'Aman to draw the wrath of Filo, Loa of Childhood.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在祖阿曼周围击杀 100 只卡帕拉或卡帕拉幼崽，以引来孩童洛阿菲洛的怒火。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Kill 100 Kapara or Kapara pups around Zul'Aman to draw the wrath of Filo, Loa of Childhood.",
 				["crs"] = {
 					250101,	-- Kapara
 					250100,	-- Kapara Pup
@@ -73,24 +56,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 59.2, 71.1, MAP.MIDNIGHT.ZULAMAN },
 				}),
 				o(627489, {	-- Forgotten Button
-					["description"] = createLocalizationString({
-						readable = "Talk to Kalika and take the Forgotten Button.",
-						constant = "TALK_TO_KALIKA_AND_TAKE_THE_FORGOTTEN_BUTTON",
-						export = true,
-						text = {
-							en = "Talk to Kalika and take the Forgotten Button.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与卡莉卡交谈并拿走被遗忘的纽扣。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Talk to Kalika and take the Forgotten Button.",
 					["sourceQuest"] = 95005,	-- Talk to Chu'ke on a ridge by the coast
 					["coord"] = { 38.7, 23.9, MAP.MIDNIGHT.ZULAMAN },
 					["questID"] = 95045,
@@ -106,24 +72,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["_noautomation"] = true,
 				["groups"] = {
 					crit(109749, {	-- Songseeker Baz'wa
-						["description"] = createLocalizationString({
-							readable = "Becomes available after completing Zul'Aman campaign.",
-							constant = "BECOMES_AVAILABLE_AFTER_COMPLETING_ZUL_AMAN",
-							export = true,
-							text = {
-								en = "Becomes available after completing Zul'Aman campaign.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成祖阿曼战役后开放。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Becomes available after completing Zul'Aman campaign.",
 						["provider"] = { "n", 254808 },	-- Songseeker Baz'wa
 						["coord"] = { 52.7, 79.3, MAP.MIDNIGHT.ZULAMAN },
 					}),
@@ -136,46 +85,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 47.3, 81.9, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					crit(109753, {	-- Songseeker Ikaja
-						["description"] = createLocalizationString({
-							readable = "On top of the temple.",
-							constant = "ON_TOP_OF_THE_TEMPLE",
-							export = true,
-							text = {
-								en = "On top of the temple.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在神殿顶部。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "On top of the temple.",
 						["provider"] = { "n", 254841 },	-- Songseeker Ikaja
 						["coord"] = { 55.2, 18.1, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					crit(109751, {	-- Songseeker Jebanda
-						["description"] = createLocalizationString({
-							readable = "Walks around with a group of Shadowpine Travelers along the given path.",
-							constant = "WALKS_AROUND_WITH_A_GROUP_OF_SHADOWPINE",
-							export = true,
-							text = {
-								en = "Walks around with a group of Shadowpine Travelers along the given path.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与一群影松旅行者一起沿指定路径走动。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Walks around with a group of Shadowpine Travelers along the given path.",
 						["provider"] = { "n", 254840 },	-- Songseeker Jebanda
 						["coords"] = {
 							{ 31.6, 38.1, MAP.MIDNIGHT.ZULAMAN },
@@ -226,24 +141,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(264335),	-- Colossal Amani Stone Visage (DECOR!)
 			}),
 			ach(62413, {	-- The Curse of Ula'tek
-				["description"] = createLocalizationString({
-					readable = "This achievement will be replaced with Achievement '62297' at the release of Patch 12.1.0.",
-					constant = "THIS_ACHIEVEMENT_WILL_BE_REPLACED_WITH",
-					export = true,
-					text = {
-						en = "This achievement will be replaced with Achievement '62297' at the release of Patch 12.1.0.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 12.1.0 补丁发布时，该成就将被成就“62297”取代。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This achievement will be replaced with Achievement '62297' at the release of Patch 12.1.0.",
 				["timeline"] = { ADDED_12_0_7, DELETED_12_1_0 },	-- Blizzard created a new achievement rather than updating the existing one for 12.1.0
 			}),
 			ach(62297, { ["timeline"] = { ADDED_12_1_0 } }),	-- The Curse of Ula'tek

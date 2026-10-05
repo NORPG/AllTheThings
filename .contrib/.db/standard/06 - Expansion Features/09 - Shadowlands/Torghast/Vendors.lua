@@ -8,24 +8,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	m(TORGHAST, {
 		n(VENDORS, {
 			n(BROKER_VEKEN_BROKER_VENOTT, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
-				["description"] = createLocalizationString({
-					readable = "These items are not guaranteed, but have a chance to appear among the vendors' goods.",
-					constant = "THESE_ITEMS_ARE_NOT_GUARANTEED_BUT_HAVE_A",
-					export = true,
-					text = {
-						en = "These items are not guaranteed, but have a chance to appear among the vendors' goods.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些物品并非必定出现，但有几率出现在商人的货物中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These items are not guaranteed, but have a chance to appear among the vendors' goods.",
 				["crs"] = {
 					152594,	-- Broker Ve'ken
 					170257,	-- Broker Ve'nott

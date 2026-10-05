@@ -29,24 +29,7 @@ end
 
 root(ROOTS.Housing, {
 	n(COMMON_VENDOR_ITEMS, {
-		["description"] = createLocalizationString({
-			readable = "It is advised to use the |cffffffffNPC Filler for the Mini List|r to allow these Items to fill properly under NPCs within your current Housing Neighborhood.",
-			constant = "IT_IS_ADVISED_TO_USE_THE_CFFFFFFFFNPC_FILLER",
-			export = true,
-			text = {
-				en = "It is advised to use the |cffffffffNPC Filler for the Mini List|r to allow these Items to fill properly under NPCs within your current Housing Neighborhood.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "建议使用|cffffffff迷你列表的 NPC 填充项|r，以便这些物品能正确归入你当前住宅区内的 NPC 之下。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "It is advised to use the |cffffffffNPC Filler for the Mini List|r to allow these Items to fill properly under NPCs within your current Housing Neighborhood.",
 		["timeline"] = { ADDED_11_2_7 },
 	}),
 	n_CommonVendorItems({

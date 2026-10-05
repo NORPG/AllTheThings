@@ -56,9 +56,9 @@ ExportDB.OnTooltipDB.ForLockpicking = [[~function(t, tooltipInfo)
 end]];
 root(ROOTS.Professions, lockpicking({
 	-- #if AFTER CATA
-	["description"] = "~L.LOCKPICKING_NOW_SKILLS_UP_AS_YOU_LEVEL_YOU_NO",
+	["description"] = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
 	-- #else
-	["description"] = "~L.LOCKPICKING_NEEDS_TO_BE_LEVELED_UP_BY",
+	["description"] = "Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",
 	-- TODO: Maybe add a thing in the tooltip for suggestions on where to level next?
 	-- #endif
 	-- This makes it ignore the profession requirement.

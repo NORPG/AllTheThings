@@ -135,24 +135,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		ach(13048, {	-- Life Finds a Way... To Die!
 			crit(41676, {		-- Azuresail the Diemetrodon slain
 				["coord"] = { 67.10, 26.57, ZULDAZAR },
-				["description"] = createLocalizationString({
-					readable = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
-					constant = "THIS_RARE_SHARES_RESPAWN_WITH_THUDERFOOT_67_73",
-					export = true,
-					text = {
-						en = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此稀有怪与雷霆之足（67.73 29.03）和基尔塔万（69.2 30.4）共享刷新，所以如果需要就杀掉它们。更糟的是，它们并非每天都会刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 			}),
 			crit(41677, {		-- King K'tal the Devilsaur slain
 				["coord"] = { 71.24, 21.84, ZULDAZAR },
@@ -171,24 +154,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			crit(41675, {		-- Thuderfoot the Brutosaur slain
 				["coord"] = { 67.73, 29.03, ZULDAZAR },
-				["description"] = createLocalizationString({
-					readable = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
-					constant = "THIS_RARE_SHARES_RESPAWN_WITH_AZURESAIL_67_10",
-					export = true,
-					text = {
-						en = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此稀有怪与碧蓝之帆（67.10 26.57）和基尔塔万（69.2 30.4）共享刷新，所以如果需要就杀掉它们。更糟的是，它们并非每天都会刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 			}),
 			crit(41672, {		-- Queenfeather the Ravasaur slain
 				["coord"] = { 71.13, 40.34, ZULDAZAR },

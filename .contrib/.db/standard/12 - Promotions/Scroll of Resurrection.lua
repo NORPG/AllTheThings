@@ -441,24 +441,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			-- #endif
 		}),
 		bubbleDown({ ["u"] = REAL_MONEY }, i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
-			["description"] = createLocalizationString({
-				readable = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
-				constant = "THIS_CRATE_WAS_GIVEN_TO_PLAYERS_WHOSE_FRIENDS",
-				export = true,
-				text = {
-					en = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "此箱子会发放给那些因好友使用复活卷轴重返游戏的玩家。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
 			["groups"] = {
 				a(i(76889)),	-- Spectral Gryphon (MOUNT!)
 				h(i(76902)),	-- Spectral Wind Rider (MOUNT!)

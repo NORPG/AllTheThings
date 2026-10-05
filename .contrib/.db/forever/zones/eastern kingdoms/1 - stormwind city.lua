@@ -1432,24 +1432,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["lvl"] = 28,
 			}),
 			q(1447, {	-- The Missing Diplomat (8/17)
-				["description"] = createLocalizationString({
-					readable = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
-					constant = "DASHEL_STONEFIST_WILL_SPAWN_2_LEVEL_26_ADDS_TO",
-					export = true,
-					text = {
-						en = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "达舍尔·石拳会召唤 2 名 26 级的爪牙与他并肩作战。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
 				["sourceQuest"] = 1246,	-- The Missing Diplomat (7/17)
 				["qg"] = 4961,	-- Dashel Stonefist
 				["coord"] = { 74.3, 59.2, MAP.STORMWIND_CITY },
@@ -1480,7 +1463,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["lvl"] = 40,
 				["groups"] = {
 					i(9367, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
-						["description"] = "~L.THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+						["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 					}),
 				},
 			}),
@@ -1724,24 +1707,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["lvl"] = 20,
 				["groups"] = {
 					objective(1, {	-- Diagnosis Complete
-						["description"] = createLocalizationString({
-							readable = "Type /lay to lie down to be examined.",
-							constant = "TYPE_LAY_TO_LIE_DOWN_TO_BE_EXAMINED",
-							export = true,
-							text = {
-								en = "Type /lay to lie down to be examined.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "输入 /躺下 躺下以接受检查。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Type /lay to lie down to be examined.",
 					}),
 				},
 			}),
@@ -1853,24 +1819,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
 					}),
 					i(190308, {	-- 0/1 Burning Torch
-						["description"] = createLocalizationString({
-							readable = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
-							constant = "YOU_CAN_LIGHT_THE_TORCH_USING_A_CAMPFIRE_IF_YOU",
-							export = true,
-							text = {
-								en = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以用营火点燃火把。如果你没有烹饪技能（或材料），可以去 15,31 处塔伦附近的营火。点燃后，把火把扔到考古学家的推车上。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
 						["providers"] = {
 							{ "i", 190307 },	-- Unlit Torch
 							{ "o", createCustomObject({	-- Unlit Torch [Couldn't find the proper objectID, so I faked it.]
@@ -2084,24 +2033,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
-				["description"] = createLocalizationString({
-					readable = "Found within the Champion's Hall.",
-					constant = "FOUND_WITHIN_THE_CHAMPION_S_HALL",
-					export = true,
-					text = {
-						en = "Found within the Champion's Hall.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "位于勇士大厅内。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Found within the Champion's Hall.",
 				["sym"] = {	-- Grand Marshal Armor
 					SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 					{ "pop" },
@@ -2201,7 +2133,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
-				["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+				["description"] = "Found within the Champion's Hall.",
 				["sym"] = {
 					SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 					{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons
@@ -2660,7 +2592,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(12783, {	-- Lieutenant Karter <Mount Vendor>
-				["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+				["description"] = "Found within the Champion's Hall.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = pvp({
 					i(18243),	-- Black Battlestrider (MOUNT!)
@@ -2680,7 +2612,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			n(8118, {	-- Lillian Singh <Holiday Fireworks Vendor>
 				["coord"] = { 62.6, 70.0, MAP.STORMWIND_CITY },
-				["description"] = "~L.THIS_NPC_IS_ONLY_AVAILABLE_ON_JULY_4TH",
+				["description"] = "This NPC is only available on July 4th.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(8626),	-- Blue Sparkler
@@ -2756,7 +2688,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(12781, {	-- Master Sergeant Biggins <Officer Accessories Quartermaster>
-				["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+				["description"] = "Found within the Champion's Hall.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = pvp({
 					i(18606),	-- Alliance Battle Standard

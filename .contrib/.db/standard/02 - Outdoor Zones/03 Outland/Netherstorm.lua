@@ -42,24 +42,7 @@ root(ROOTS.Zones, {
 				}),
 				battlepets({
 					pet(521, {	-- Fledgling Nether Ray (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found only around Manaforges.",
-							constant = "FOUND_ONLY_AROUND_MANAFORGES",
-							export = true,
-							text = {
-								en = "Found only around Manaforges.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只在法力熔炉周围出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found only around Manaforges.",
 					}),
 					pet(638),	-- Nether Roach (PET!)
 				}),
@@ -430,24 +413,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },
 					}),
 					q(10308, {	-- Another Heap of Ethereals
-						["description"] = createLocalizationString({
-							readable = "Gives reputation through Exalted.",
-							constant = "GIVES_REPUTATION_THROUGH_EXALTED",
-							export = true,
-							text = {
-								en = "Gives reputation through Exalted.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "声望可提升至崇拜。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Gives reputation through Exalted.",
 						["sourceQuest"] = 10262,	-- A Heap of Ethereals
 						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
@@ -1121,24 +1087,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10425, {	-- Escape from the Staging Grounds
-						["description"] = createLocalizationString({
-							readable = "An Ethereum Gladiator and a Captured Protectorate Vanguard spawns in the middle of the staging grounds every 7 minutes. Kill the Gladiator to obtain the escort quest.",
-							constant = "AN_ETHEREUM_GLADIATOR_AND_A_CAPTURED",
-							export = true,
-							text = {
-								en = "An Ethereum Gladiator and a Captured Protectorate Vanguard spawns in the middle of the staging grounds every 7 minutes. Kill the Gladiator to obtain the escort quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "一名以太角斗士和一名被俘的护卫者先锋每 7 分钟会在集结场中央生成。杀死角斗士即可获得护送任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "An Ethereum Gladiator and a Captured Protectorate Vanguard spawns in the middle of the staging grounds every 7 minutes. Kill the Gladiator to obtain the escort quest.",
 						["qg"] = 20763,	-- Captured Protectorate Vanguard
 						["coord"] = { 57.0, 37.6, NETHERSTORM },
 						["groups"] = {
@@ -2050,24 +1999,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["timeline"] = { ADDED_4_3_0 },
 						-- #if NOT ANYCLASSIC
-						["description"] = createLocalizationString({
-							readable = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-							constant = "ITEMS_ON_THIS_VENDOR_REQUIRE_LEGIONNAIRE_KNIGHT",
-							export = true,
-							text = {
-								en = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该商人处的物品需要军团士兵/骑士队长或更高军衔才能购买。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["groups"] = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher
 							a(i(77550)),	-- Replica Grand Marshal's Swiftblade
@@ -2211,7 +2143,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["timeline"] = { ADDED_4_0_3 },
 						-- #if NOT ANYCLASSIC
-						["description"] = "~L.ITEMS_ON_THIS_VENDOR_REQUIRE_LEGIONNAIRE_KNIGHT",
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["groups"] = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 							i(77692),	-- Replica Field Marshal's Satin Mantle
@@ -2365,24 +2297,7 @@ root(ROOTS.Zones, {
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
 						["requireSkill"] = GOBLIN_ENGINEERING,
-						["description"] = createLocalizationString({
-							readable = "Goblin Engineers can speak to Kablamm to learn the recipe.",
-							constant = "GOBLIN_ENGINEERS_CAN_SPEAK_TO_KABLAMM_TO_LEARN",
-							export = true,
-							text = {
-								en = "Goblin Engineers can speak to Kablamm to learn the recipe.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "地精工程师可以与卡布拉姆交谈来学习该配方。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
 						["coord"] = { 32.9, 63.7, NETHERSTORM },
 						["groups"] = {
 							r(36954),	-- Dimensional Ripper - Area 52
@@ -2491,7 +2406,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { REMOVED_3_0_2, ADDED_4_3_0 },
 						-- #if AFTER 4.3.0.15005
 						-- #if NOT ANYCLASSIC
-						["description"] = "~L.ITEMS_ON_THIS_VENDOR_REQUIRE_LEGIONNAIRE_KNIGHT",
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, pvp({
 							i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 							i(77673),	-- Replica Field Marshal's Chain Spaulders
@@ -2570,24 +2485,7 @@ root(ROOTS.Zones, {
 							i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
 							i(77612),	-- Replica Sergeant Major's Chain Armguards
 							i(77613, {	-- Replica Sergeant Major's Chain Armguards
-								["description"] = createLocalizationString({
-									readable = "Horde appearance is learned when buying the Alliance version.",
-									constant = "HORDE_APPEARANCE_IS_LEARNED_WHEN_BUYING_THE",
-									export = true,
-									text = {
-										en = "Horde appearance is learned when buying the Alliance version.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "购买联盟版本时会学会部落外观。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Horde appearance is learned when buying the Alliance version.",
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = { h(i(77836)) },	-- Replica First Sergeant's Mail Wristguards
 							}),
@@ -2596,7 +2494,7 @@ root(ROOTS.Zones, {
 							i(77609),	-- Replica Lieutenant Commander's Chain Helmet
 							i(77606),	-- Replica Knight-Lieutenant's Chain Boots
 							i(77660, {	-- Replica Sergeant Major's Plate Wristguards
-								["description"] = "~L.HORDE_APPEARANCE_IS_LEARNED_WHEN_BUYING_THE",
+								["description"] = "Horde appearance is learned when buying the Alliance version.",
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = { h(i(77870)) },	-- Replica First Sergeant's Plate Bracers
 							}),
@@ -2608,7 +2506,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["timeline"] = { ADDED_4_3_0 },
 						-- #if NOT ANYCLASSIC
-						["description"] = "~L.ITEMS_ON_THIS_VENDOR_REQUIRE_LEGIONNAIRE_KNIGHT",
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["groups"] = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77897),	-- Replica Warlord's Lamellar Pauldrons
 							i(77880),	-- Replica Warlord's Chain Shoulders
@@ -2725,7 +2623,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["timeline"] = { ADDED_4_3_0 },
 						-- #if NOT ANYCLASSIC
-						["description"] = "~L.ITEMS_ON_THIS_VENDOR_REQUIRE_LEGIONNAIRE_KNIGHT",
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["groups"] = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77900),	-- Replica Warlord's Satin Cowl
 							i(77874),	-- Replica Warlord's Dragonhide Helmet
@@ -2869,24 +2767,7 @@ root(ROOTS.Zones, {
 					n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
 						["provider"] = { "o", 184418 },	-- Ethereum Prison
 						["sourceQuest"] = 10970,	-- A Mission of Mercy (required to be able to find the prison keys)
-						["description"] = createLocalizationString({
-							readable = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm. There is a chance that one of these mobs will be released when you open a prison. To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
-							constant = "ETHEREUM_PRISON_KEY_A_FAIRLY_COMMON_DROP_IN",
-							export = true,
-							text = {
-								en = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm. There is a chance that one of these mobs will be released when you open a prison. To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "以太监狱钥匙是英雄法力陵墓中相当常见的掉落物，可用于打开虚空风暴法力熔炉乌提斯以西的监狱。打开监狱时，有一定几率会释放出其中一名怪物。要拾取以太监狱钥匙，你必须先完成虚空风暴的任务“慈悲为怀”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm. There is a chance that one of these mobs will be released when you open a prison. To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
 						["coords"] = {
 							{ 54.6, 46.6, NETHERSTORM },
 							{ 54.5, 40.2, NETHERSTORM },

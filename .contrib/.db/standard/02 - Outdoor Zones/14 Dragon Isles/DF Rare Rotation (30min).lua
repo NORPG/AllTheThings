@@ -250,24 +250,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				n(189289, {	-- Penumbrus
-					["description"] = createLocalizationString({
-						readable = "Spawns underground.",
-						constant = "SPAWNS_UNDERGROUND",
-						export = true,
-						text = {
-							en = "Spawns underground.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在地下刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns underground.",
 					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
 					["questID"] = 74019,
 					["groups"] = {

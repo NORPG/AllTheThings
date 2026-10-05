@@ -93,87 +93,19 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(523, {	-- Devouring Maggot (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",
-								constant = "CAN_BE_FOUND_IN_THE_UTGARDE_CATACOMBS_AT_THE",
-								export = true,
-								text = {
-									en = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在乌特加德墓穴僵尸坑的最底部找到，偶尔也作为次要宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occasionally as a secondary pet.",
 							["coord"] = { 56.5, 51.0, HOWLING_FJORD },
 						}),
 						pet(644, {	-- Fjord Rat (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",
-								constant = "FOUND_IN_WYRMSKULL_VILLAGE_OUTSIDE_UTGARDE_KEEP",
-								export = true,
-								text = {
-									en = "Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于乌特加德城堡外的龙颅村，偶尔也会作为副宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",
 							["coord"] = { 58.0, 52.0, HOWLING_FJORD },
 						}),
 						pet(529, {	-- Fjord Worg Pup (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found around Kamagua, on The Isle of Spears.",
-								constant = "FOUND_AROUND_KAMAGUA_ON_THE_ISLE_OF_SPEARS",
-								export = true,
-								text = {
-									en = "Found around Kamagua, on The Isle of Spears.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在长矛岛的卡玛古周围可找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found around Kamagua, on The Isle of Spears.",
 							["coord"] = { 30.0, 62.0, HOWLING_FJORD },
 						}),
 						pet(525, {	-- Turkey (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found inside the Alliance settlements Valgarde and Westguard Keep, as well as occasionally as secondary pet.",
-								constant = "FOUND_INSIDE_THE_ALLIANCE_SETTLEMENTS_VALGARDE",
-								export = true,
-								text = {
-									en = "Found inside the Alliance settlements Valgarde and Westguard Keep, as well as occasionally as secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于联盟据点瓦加德和西部卫戍要塞内，偶尔也会作为副宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found inside the Alliance settlements Valgarde and Westguard Keep, as well as occasionally as secondary pet.",
 							["coords"] = {
 								{ 32.2, 42.4, HOWLING_FJORD },
 								{ 60.6, 62.8, HOWLING_FJORD },
@@ -288,24 +220,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
 						["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-						["description"] = createLocalizationString({
-							readable = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",
-							constant = "BEEGLE_S_PETS_ARE_LEVEL_25_OF_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "比格尔的宠物是 25 级，按以下连续宠物类别：\n1. 飞行 - 使用魔法（强力）或龙类（耐打）宠物。\n2. 飞行 - 见上。\n3. 水生 - 使用飞行（强力）或魔法（耐打）宠物。\n\n若要计入“一次糟糕的大冒险”，请使用雷象毛绒玩具和两只强力宠物组队作战，例如不朽的青铜幼龙（扫尾/远古祝福/时光倒流）和阿比修斯（碾压/火焰喷射/陨石打击）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
@@ -991,7 +906,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(41888, {	-- Small Velvet Bag
-								["description"] = "~L.CONTAINS_A_PERFECT_GEM",
+								["description"] = "Contains a 'perfect' gem.",
 							}),
 							r(55534, {	-- Gem Perfection
 								["requireSkill"] = JEWELCRAFTING,
@@ -1011,7 +926,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(41888, {	-- Small Velvet Bag
-								["description"] = "~L.CONTAINS_A_PERFECT_GEM",
+								["description"] = "Contains a 'perfect' gem.",
 							}),
 							r(55534, {	-- Gem Perfection
 								["requireSkill"] = JEWELCRAFTING,
@@ -1082,24 +997,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11289, {	-- Guided by Honor
-						["description"] = createLocalizationString({
-							readable = "Inside the |cFFFFD700Utgarde Catacombs|r.",
-							constant = "INSIDE_THE_CFFFFD700UTGARDE_CATACOMBS_R",
-							export = true,
-							text = {
-								en = "Inside the |cFFFFD700Utgarde Catacombs|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在|cFFFFD700乌特加德墓穴|r内。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
 						["sourceQuest"] = 11288,	-- The Shining Light
 						["qg"] = 24189,	-- Ares the Oathbound
 						["coords"] = {
@@ -1628,24 +1526,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13087, {	-- Northern Cooking (A)
-						["description"] = createLocalizationString({
-							readable = "Requires |cFFFFD700Northrend Cooking|r.",
-							constant = "REQUIRES_CFFFFD700NORTHREND_COOKING_R",
-							export = true,
-							text = {
-								en = "Requires |cFFFFD700Northrend Cooking|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要|cFFFFD700诺森德烹饪|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
 						["qg"] = 26905,	-- Brom Brewbaster
 						["coord"] = { 58.2, 62.0, HOWLING_FJORD },
 						["requireSkill"] = COOKING,
@@ -1655,7 +1536,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13089, {	-- Northern Cooking (H)
-						["description"] = "~L.REQUIRES_CFFFFD700NORTHREND_COOKING_R",
+						["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
 						["qg"] = 26953,	-- Thomas Kolichio
 						["coord"] = { 78.6, 29.4, HOWLING_FJORD },
 						["requireSkill"] = COOKING,
@@ -2338,7 +2219,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11277, {	-- The Depths of Depravity
-						["description"] = "~L.INSIDE_THE_CFFFFD700UTGARDE_CATACOMBS_R",
+						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
 						["sourceQuest"] = 11276,	-- And Then There Were Two...
 						["qg"] = 24150,	-- Glorenfeld
 						["coords"] = {
@@ -2588,7 +2469,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11299, {	-- The Ring of Judgment
-						["description"] = "~L.INSIDE_THE_CFFFFD700UTGARDE_CATACOMBS_R",
+						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
 						["sourceQuest"] = 11277,	-- The Depths of Depravity
 						["qg"] = 24150,	-- Glorenfeld
 						["coords"] = {
@@ -2631,24 +2512,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11288, {	-- The Shining Light
-						["description"] = createLocalizationString({
-							readable = "Inside the |cFFFFD700Utgarde Catacombs|r. You need to pick up |cFFFFD700The Path to Payback|r first to see this quest.",
-							constant = "INSIDE_THE_CFFFFD700UTGARDE_CATACOMBS_R_YOU",
-							export = true,
-							text = {
-								en = "Inside the |cFFFFD700Utgarde Catacombs|r. You need to pick up |cFFFFD700The Path to Payback|r first to see this quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在|cFFFFD700乌特加德墓穴|r内。你需要先接取|cFFFFD700复仇之路|r才能看到这个任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r. You need to pick up |cFFFFD700The Path to Payback|r first to see this quest.",
 						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 						["qg"] = 24189,	-- Ares the Oathbound
 						["coords"] = {
@@ -3138,24 +3002,7 @@ root(ROOTS.Zones, {
 					}),
 					n(23802, {	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
 						["coord"] = { 58.4, 62.75, HOWLING_FJORD },
-						["description"] = createLocalizationString({
-							readable = "Walks in a circle inside Valgarde Inn.",
-							constant = "WALKS_IN_A_CIRCLE_INSIDE_VALGARDE_INN",
-							export = true,
-							text = {
-								en = "Walks in a circle inside Valgarde Inn.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在瓦加德旅店内绕圈走动。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Walks in a circle inside Valgarde Inn.",
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {
 							{ "select","itemID",

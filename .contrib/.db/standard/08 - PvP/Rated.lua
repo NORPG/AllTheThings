@@ -181,24 +181,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 		n(REWARDS, {
 			filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 }, }, {
 				-- #if BEFORE 8.0.1
-				["description"] = createLocalizationString({
-					readable = "This has a chance to drop from any rated battleground win during Legion.",
-					constant = "THIS_HAS_A_CHANCE_TO_DROP_FROM_ANY_RATED",
-					export = true,
-					text = {
-						en = "This has a chance to drop from any rated battleground win during Legion.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在《军团再临》期间，任何评级战场的胜利都有几率掉落它。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This has a chance to drop from any rated battleground win during Legion.",
 				-- #endif
 				["groups"] = {
 					-- Added to Vendor in 10.0.7
@@ -218,62 +201,11 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			}),
 			i(103533, {	-- Vicious Saddle
 				-- #if BEFORE 10.0.2
-				["description"] = createLocalizationString({
-					readable = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n60 points in RBG (2.5%)",
-					constant = "OFFERED_AS_SEASON_REWARD_CAP_AFTER_YOU_RECEIVED",
-					export = true,
-					text = {
-						en = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n60 points in RBG (2.5%)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在你获得赛季坐骑后作为赛季奖励上限提供，每赛季最多 10 次。\n评分高于 1000 的任何胜利都会奖励：\n2v2 10 点（0.42%）\n3v3 30 点（1.25%）\n评级战场 60 点（2.5%）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n60 points in RBG (2.5%)",
 				-- #elseif AFTER 11.0.0
-				["description"] = createLocalizationString({
-					readable = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n50 points in BGBlitz (2.08%)\n60 points in RBG (2.5%)",
-					constant = "OFFERED_AS_SEASON_REWARD_CAP_AFTER_YOU_RECEIVED_2",
-					export = true,
-					text = {
-						en = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n50 points in BGBlitz (2.08%)\n60 points in RBG (2.5%)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在你获得赛季坐骑后作为赛季奖励上限提供，每赛季最多 10 次。\n评分高于 1000 的任何胜利（单排轮斗需赢得 3 回合或以上）都会奖励：\n2v2 10 点（0.42%）\n3v3 30 点（1.25%）\n单排轮斗 50 点（2.08%）\n闪电战 50 点（2.08%）\n评级战场 60 点（2.5%）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n50 points in BGBlitz (2.08%)\n60 points in RBG (2.5%)",
 				-- #else
-				["description"] = createLocalizationString({
-					readable = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n60 points in RBG (2.5%)",
-					constant = "OFFERED_AS_SEASON_REWARD_CAP_AFTER_YOU_RECEIVED_3",
-					export = true,
-					text = {
-						en = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n60 points in RBG (2.5%)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在你获得赛季坐骑后作为赛季奖励上限提供，每赛季最多 10 次。\n评分高于 1000 的任何胜利（单排轮斗需赢得 3 回合或以上）都会奖励：\n2v2 10 点（0.42%）\n3v3 30 点（1.25%）\n单排轮斗 50 点（2.08%）\n评级战场 60 点（2.5%）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season.\nAny win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n60 points in RBG (2.5%)",
 				-- #endif
 				["timeline"] = { ADDED_5_4_0 },
 			}),

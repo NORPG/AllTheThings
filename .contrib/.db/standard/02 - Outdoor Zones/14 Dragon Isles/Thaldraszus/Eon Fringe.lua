@@ -278,24 +278,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(201664, {	-- Temporal Investi-gator
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
-					["description"] = createLocalizationString({
-						readable = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
-						constant = "GO_IN_EVERYWHERE_INN_AT_2ND_FLOOR_BORROW_MELLY",
-						export = true,
-						text = {
-							en = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "进入无处不在旅店的二楼，借走梅莉的节拍器，在酒保鲍勃附近使用它，从酒保布洛布处购买无限茶，飞到坐标处，使用它并与物体互动以召唤稀有怪",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
 					["cost"] = { { "i", 208448, 1 } },	-- 1x Infinitea
 					["coords"] = {
 						{ 52.3, 81.4, THALDRASZUS },	-- Everywhere Inn
@@ -315,24 +298,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["qi"] = 208449,	-- Melly's Metronographer+++ (QI!)
 					["groups"] = {
 						i(208448, {	-- Infinitea
-							["description"] = createLocalizationString({
-								readable = "Timer starts right after you buy it.",
-								constant = "TIMER_STARTS_RIGHT_AFTER_YOU_BUY_IT",
-								export = true,
-								text = {
-									en = "Timer starts right after you buy it.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "购买后计时立即开始。",
-									-- TODO: tw = "",
-								},
-							})
+							["description"] = "Timer starts right after you buy it."
 						}),
 					},
 				}),
@@ -384,24 +350,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 52.2, 81.4, THALDRASZUS },
 					["groups"] = {
 						i(208449, {	-- Melly's Metronographer+++ (QI!)
-							["description"] = createLocalizationString({
-								readable = "Use next to 'Bartender Bob'.",
-								constant = "USE_NEXT_TO_BARTENDER_BOB",
-								export = true,
-								text = {
-									en = "Use next to 'Bartender Bob'.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在“酒保鲍勃”旁边使用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use next to 'Bartender Bob'.",
 						}),
 					},
 				}),

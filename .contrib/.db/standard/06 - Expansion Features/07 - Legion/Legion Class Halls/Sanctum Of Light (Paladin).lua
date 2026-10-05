@@ -24,24 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ARTIFACTS, {
 					cl(PALADIN, HOLY, {
 						i(139564, {	-- Lost Edicts of the Watcher
-							["description"] = createLocalizationString({
-								readable = "Drops from any demon.",
-								constant = "DROPS_FROM_ANY_DEMON",
-								export = true,
-								text = {
-									en = "Drops from any demon.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "由任意恶魔掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Drops from any demon.",
 							["groups"] = {
 								artifact(977),	-- Holy Paladin Hidden Artifact Appearance
 							},
@@ -55,24 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					cl(PALADIN, RETRIBUTION, {
 						q(43682, {	-- Book Presented
 							["name"] = "Book Presented",
-							["description"] = createLocalizationString({
-								readable = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
-								constant = "YOU_NEED_TO_BRING_THE_COMPLETE_COPY_OF_NAT",
-								export = true,
-								text = {
-									en = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你需要带来完整的纳特·帕格钓鱼指南副本和奈法利安的头颅，他才会给予你此互动。\n\n联盟：前往西瘟疫之地，与阿莱克西亚·铁刀对话。\n\n部落：前往提瑞斯法林地，与巴杜·锐眼对话。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
 							-- TODO: does this have an actual sourceQuest or no
 							-- ["sourceQuest"] = -91190,	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
 							["qg"] = 11486,	-- Prince Tortheldrin
@@ -89,24 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 						q(43683, {	-- Traveler Found
 							["name"] = "Traveler Found",
-							["description"] = createLocalizationString({
-								readable = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
-								constant = "AFTER_TALKING_TO_PRINCE_TORTHELDRIN_YOU_CAN",
-								export = true,
-								text = {
-									en = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "与托塞德林王子交谈后，你可以与她/他交谈以继续任务链的下一部分。完成之后，在西瘟疫之地壁炉谷阅读大审判官伊森利恩的日志。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 							["sourceQuest"] = 43682,	-- Book Presented
 							["qgs"] = {
 								11609,	-- Alexia Ironknife
@@ -120,24 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 						q(43684, {	-- Notes Read
 							["name"] = "Notes Read",
-							["description"] = createLocalizationString({
-								readable = "After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",
-								constant = "AFTER_READING_THIS_YOU_CAN_GO_KILL_LARGE_VILE",
-								export = true,
-								text = {
-									en = "After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "阅读此内容后，你可以去西瘟疫之地索多里尔河旁杀死大型邪恶软泥怪。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",
 							["sourceQuest"] = 43683,	-- Traveler Found
 							["qg"] = 111121,	-- Grand Inquisitor Isillien's Journal
 							["coord"] = { 42.4, 18.7, WESTERN_PLAGUELANDS },
@@ -150,24 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["cost"] = { { "i", 139623, 1 } },	-- 1x Timolain's Phylactery
 						}),
 						hqt(43688, name(HEADERS.Item, 139624, {	-- Shard of Darkness
-							["description"] = createLocalizationString({
-								readable = "You must have the Shard of Darkness in your inventory in order to trigger this dialog.",
-								constant = "YOU_MUST_HAVE_THE_SHARD_OF_DARKNESS_IN_YOUR",
-								export = true,
-								text = {
-									en = "You must have the Shard of Darkness in your inventory in order to trigger this dialog.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的背包中必须有黑暗碎片才能触发此对话。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You must have the Shard of Darkness in your inventory in order to trigger this dialog.",
 							["qg"] = 90259,	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.2, SANCTUM_OF_LIGHT },
 							["provider"] = { "i", 139624 },	-- 1x Shard of Darkness
@@ -582,24 +497,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(49812, {	-- Delas in Dalaran
-						["description"] = createLocalizationString({
-							readable = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
-							constant = "COMPLETE_CRACKING_THE_CODEX_43486_AND_DON_T",
-							export = true,
-							text = {
-								en = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成“破解法典”（43486），但不要接受后续任务。改为回到阿波尼那里。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["provider"] = { "n", 90251 },	-- Aponi Brightmane
 						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
@@ -977,24 +875,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 					}),
 					q(45561, {	-- Seek Me Out
-						["description"] = createLocalizationString({
-							readable = "This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",
-							constant = "THIS_QUEST_WILL_ONLY_TRIGGER_IF_YOU_VE_ALREADY",
-							export = true,
-							text = {
-								en = "This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只有当你已招募追随者 |cffffff00尼鲁斯·月牙|r，并完成安戈洛环形山中由 |cffffff00重要的一课|r 开始的自称北郡骑士麦斯米兰任务链后，此任务才会触发。满足这两个条件后，下次进入职业大厅时你会收到邮件，其中包含开启此任务链的物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",
 						["sourceQuests"] = {
 							24707,	-- The Ballad of Maximillian
 							46045,	-- Champion: Nerus Moonfang
@@ -1048,48 +929,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(SPECIAL, {
 					gt(398, {	-- Holy Purpose
 						q(44219, {	-- Fate's Blessing
-							["description"] = createLocalizationString({
-								readable = "Only available if you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
-								constant = "ONLY_AVAILABLE_IF_YOU_HAVE_THE_CFFFFD700HOLY",
-								export = true,
-								text = {
-									en = "Only available if you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅在你拥有 |cFFFFD700神圣使命|r 职业大厅升级时可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available if you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 							["provider"] = { "n", 112986 },	-- Librarian Lightmorne
 							["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
 						}),
 					}),
 					gt(400, {	-- Plowshares to Swords
 						q(44218, {	-- Champion Armaments
-							["description"] = createLocalizationString({
-								readable = "Only available if you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
-								constant = "ONLY_AVAILABLE_IF_YOU_HAVE_THE_2",
-								export = true,
-								text = {
-									en = "Only available if you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅在你拥有 |cFFFFD700铸剑为犁|r 职业大厅升级时可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available if you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
 							["provider"] = { "n", 110434 },	-- Kristoff
 							["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
 						}),
@@ -1109,24 +956,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				n(VENDORS, {
 					n(99976, {	-- Crusader Lord Dalfors
-						["description"] = createLocalizationString({
-							readable = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
-							constant = "C808080FATHESE_MOUNTS_ARE_ONLY_AVAILABLE_TO",
-							export = true,
-							text = {
-								en = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|c808080FA这些坐骑仅对完成了职业坐骑战役任务|r |cFFFFD700暗影中的骚动|r |c808080FA的圣骑士开放。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 						["sourceQuest"] = 45770,	-- Stirring in the Shadows
 						["groups"] = {
 							i(153177, {	-- Golden Charger's Birdle
@@ -1224,24 +1054,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
-						["description"] = createLocalizationString({
-							readable = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
-							constant = "YOUR_SPEC_MUST_BE_RETRIBUTION_FOR_HER_TO",
-							export = true,
-							text = {
-								en = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你的专精必须是惩戒，她才会对你的书作出回应。把两本书都带给她，她会给你完成的书，用于下一部分。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
 						["groups"] = {
 							i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
 								["cost"] = {

@@ -500,24 +500,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(143748, {["timeline"] = {ADDED_7_1_0}}),	-- Leyscale Koi
 		i(133725),	-- Leyshimmer Blenny
 		i(133887, {	-- Luminous Pearl
-			["description"] = createLocalizationString({
-				readable = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
-				constant = "PRE_REQUISITES_BE_LEVEL_45_HAVE_LEVEL_100",
-				export = true,
-				text = {
-					en = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "前置条件：\n\n  达到 45 级。\n  军团再临钓鱼达到 100 级。\n  完成成就“还有更大的鱼要钓”。\n\n当你满足以上所有条件后，就可以在破碎群岛的任何渔点钓到这件物品。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
 			["lvl"] = { 45 },
 		}),
 		i(133737),	-- Magic-Eater Frog
@@ -538,7 +521,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133736),	-- Thundering Stormray
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
+				["description"] = "Can be fished from schools.",
 			}),
 		}),
 	}),
@@ -564,24 +547,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(129118),	-- Dreamleaf Sample
 			i(129285),	-- Dreamleaf Seed
 			i(153045, {	-- Fel Lasher (PET!)
-				["description"] = createLocalizationString({
-					readable = "This can be looted from any herb on Argus.",
-					constant = "THIS_CAN_BE_LOOTED_FROM_ANY_HERB_ON_ARGUS",
-					export = true,
-					text = {
-						en = "This can be looted from any herb on Argus.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这可以从阿古斯的任意草药上拾取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This can be looted from any herb on Argus.",
 				["timeline"] = { ADDED_7_3_0 }
 			}),
 			i(124106),	-- Felwort
@@ -893,24 +859,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	prof(SKINNING, {
 		filter(BATTLE_PETS, {
 			i(153057, {	-- Fossorial Bile Larva (PET!)
-				["description"] = createLocalizationString({
-					readable = "This can be obtained from any skinnable Argus mob.",
-					constant = "THIS_CAN_BE_OBTAINED_FROM_ANY_SKINNABLE_ARGUS",
-					export = true,
-					text = {
-						en = "This can be obtained from any skinnable Argus mob.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这可以从阿古斯任意可剥皮的怪物身上获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This can be obtained from any skinnable Argus mob.",
 				["timeline"] = { ADDED_7_3_0 },
 			}),
 		}),

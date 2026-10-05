@@ -16,24 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 64.0, 26.0, OHNAHRAN_PLAINS },
 				}),
 				pet(3327, {	-- Dusky Timbertooth (PET!)
-					["description"] = createLocalizationString({
-						readable = "You have to click on the |cFFefc400Beaver Dam|r before you can battle this pet.",
-						constant = "YOU_HAVE_TO_CLICK_ON_THE_CFFEFC400BEAVER_DAM_R",
-						export = true,
-						text = {
-							en = "You have to click on the |cFFefc400Beaver Dam|r before you can battle this pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须先点击|cFFefc400河狸水坝|r才能与这只宠物对战。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You have to click on the |cFFefc400Beaver Dam|r before you can battle this pet.",
 					["coord"] = { 71.6, 74.0, OHNAHRAN_PLAINS },
 				}),
 				pet(3313, {	-- Grassland Stomper (PET!)
@@ -46,24 +29,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				pet(3353),	-- Stoneshell (PET!)
 				pet(3389, {	-- The Quackcestor (PET!)
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 7 },
-					["description"] = createLocalizationString({
-						readable = "Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
-						constant = "BUY_THE_CFFEFC400ESSENCE_OF_AWAKENING_R_FROM",
-						export = true,
-						text = {
-							en = "Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "从|cFFefc400军需官胡森|r处购买|cFFefc400觉醒精华|r并使用，即可看到此宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
 					["provider"] = { "i", 201323 },	-- 1xEssence of Awakening
 					["coords"] = {
 						{ 41.6, 45.2, OHNAHRAN_PLAINS },

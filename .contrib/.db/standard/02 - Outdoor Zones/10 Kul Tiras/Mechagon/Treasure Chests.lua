@@ -20,24 +20,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 				["groups"] = {
 					i(169872, {	-- Irontide Lockbox Key / 10.0.7: Key of Bound Earth
-						["description"] = createLocalizationString({
-							readable = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
-							constant = "KEY_DROPS_FROM_SEASPIT_AND_SEASPRAY_MOBS_IN_THE",
-							export = true,
-							text = {
-								en = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "钥匙由区域内的海唾和海沫怪物掉落，宝箱有几率在附近岛屿周围刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
 						["crs"] = {
 							154491,	-- Chief Curglrrmrgur
 							150937,	-- Seaspit
@@ -111,24 +94,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				o(325663, {	-- Mechanized Chest
 					["questID"] = 55551,
 					["isDaily"] = true,
-					["description"] = createLocalizationString({
-						readable = "Spawns in the future version of Mechagon.",
-						constant = "SPAWNS_IN_THE_FUTURE_VERSION_OF_MECHAGON",
-						export = true,
-						text = {
-							en = "Spawns in the future version of Mechagon.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在未来版本的麦卡贡中刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns in the future version of Mechagon.",
 					["coords"] = {
 						{ 61.6, 32.5, MECHAGON },
 						{ 58.8, 41.7, MECHAGON },
@@ -208,24 +174,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				}),
 			}),
 			o(330634, {	-- P3-P3
-				["description"] = createLocalizationString({
-					readable = "Located in the alternate Timeline.",
-					constant = "LOCATED_IN_THE_ALTERNATE_TIMELINE",
-					export = true,
-					text = {
-						en = "Located in the alternate Timeline.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "位于另一个时间线。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Located in the alternate Timeline.",
 				["coord"] = { 68.5, 47.9, MECHAGON },
 				["groups"] = { i(170151) },	-- A Tiny Clockwork Key (Pepe!)
 			}),

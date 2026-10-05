@@ -58,24 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
-								constant = "THIS_MOUNT_WAS_ORIGINALLY_A_DROP_FROM_10_MAN",
-								export = true,
-								text = {
-									en = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "该坐骑最初是 10 人玛里苟斯的掉落，后来被移到魔环中魔网守护者的宝箱里，以鼓励玩家在地下城查找器随机到该副本时不要跳过。在巫妖王之怒经典怀旧服中，他们决定不实装随机地下城查找器功能，实际上使该坐骑在大地的裂变之前都无法获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
 							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
@@ -133,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
-							["description"] = "~L.THIS_MOUNT_WAS_ORIGINALLY_A_DROP_FROM_10_MAN",
+							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
 							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),

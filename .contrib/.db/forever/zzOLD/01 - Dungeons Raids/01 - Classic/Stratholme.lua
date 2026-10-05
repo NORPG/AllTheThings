@@ -166,24 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5243, {	-- Houses of the Holy
 					-- #if BEFORE 4.0.3
-					["description"] = createLocalizationString({
-						readable = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
-						constant = "WHEN_MOUSING_OVER_THE_CRATES_LOOK_FOR_REQUIRES",
-						export = true,
-						text = {
-							en = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将鼠标悬停在箱子上时，留意“需要：解除陷阱”。如果你看到这个提示，说明这是个陷阱，不要去碰它。\n\n如果你是矮人，使用寻找宝藏，小地图上会显示箱子里圣水的光点。小地图只会显示装有物品的箱子，而不会显示坏的箱子。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
 					-- #endif
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 					["coord"] = { 81.6, 57.8, MAP.EASTERN_PLAGUELANDS },
@@ -562,19 +545,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
+					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
+					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.CAN_DROP_FROM_WEAK_UNDEAD_CREATURE_IN_THE",
+					["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
@@ -842,47 +825,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(ZONE_DROPS, {
 						i(12811, {	-- Righteous Orb
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
-								constant = "CAN_DROP_FROM_ANY_SCARLET_CRUSADE_MEMBER_IN",
-								export = true,
-								text = {
-									en = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "除瘟疫之地的血色先知和赤红精英外，还可从斯坦索姆的任意血色十字军成员身上掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 							-- #endif
 						}),
 						i(12734, {	-- Enchanted Scarlet Thread
 							["provider"] = { "o", 175966 },	-- Enchanted Scarlet Thread
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
-								constant = "THESE_CAN_BE_FOUND_IN_4_PLACES_IN_THE_SCARLET",
-								export = true,
-								text = {
-									en = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这些可以在血色领地的 4 个位置找到。\n\n1&2：马洛尔房间的桌子上\n3：在分头前往炮手或档案管理员之前的那个房间里。\n4：档案管理员房间后面的一个箱子上。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
 							-- #endif
 						}),
 						i(16249, {	-- Formula: Enchant 2H Weapon - Major Intellect (RECIPE!)
@@ -904,7 +853,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(10393, {	-- Skul
-						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+						["description"] = "This is a Rare Creature and, as such, is not always present.",
 						["groups"] = {
 							i(13396),	-- Skul's Ghastly Touch
 							i(13394),	-- Skul's Cold Embrace
@@ -913,24 +862,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(11058, {	-- Fras Siabi / Ezra Grimm
 						-- #if BEFORE 4.0.3
-						["description"] = createLocalizationString({
-							readable = "In order to summon this boss, one of your party members must be on the quest.",
-							constant = "IN_ORDER_TO_SUMMON_THIS_BOSS_ONE_OF_YOUR_PARTY",
-							export = true,
-							text = {
-								en = "In order to summon this boss, one of your party members must be on the quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要召唤这个首领，你的队伍中必须有一名成员正在进行该任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "In order to summon this boss, one of your party members must be on the quest.",
 						-- #endif
 						["groups"] = {
 							i(13172),	-- Siabi's Premium Tobacco / Grimm's Premium Tobacco
@@ -939,24 +871,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					n(11082, {	-- Stratholme Courier
 						["timeline"] = { REMOVED_4_0_3 },
-						["description"] = createLocalizationString({
-							readable = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
-							constant = "DROPS_3_RANDOM_KEYS_USED_TO_OPEN_POSTBOXES",
-							export = true,
-							text = {
-								en = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "掉落 3 把随机钥匙，用于打开斯坦索姆各处的邮箱。必须打开全部 3 个邮箱才能刷出邮政长。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
 						["groups"] = {
 							i(13303, {	-- Crusaders' Square Postbox Key
 								["timeline"] = { DELETED_4_0_3 },
@@ -1209,24 +1124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12845, {	-- Medallion of Faith
 							["provider"] = { "o", 176112 },	-- Malor's Strongbox
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
-								constant = "LOCATED_IN_MALOR_S_STRONGBOX_CAN_BE_TURNED_IN",
-								export = true,
-								text = {
-									en = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于玛洛尔的保险箱中。可以在斯坦索姆的亡灵区交给奥里乌斯，让他在瑞文戴尔男爵的战斗中协助你。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -1236,24 +1134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(11120, {	-- Crimson Hammersmith [Classic] / Risen Hammersmith [CATA+]
 						["provider"] = { "o", 176325 },	-- Blacksmithing Plans
-						["description"] = createLocalizationString({
-							readable = "Found in the Hoard on the way to Cannon Master Willey.",
-							constant = "FOUND_IN_THE_HOARD_ON_THE_WAY_TO_CANNON_MASTER",
-							export = true,
-							text = {
-								en = "Found in the Hoard on the way to Cannon Master Willey.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在前往炮手威尔利的路上，可在宝藏堆中找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found in the Hoard on the way to Cannon Master Willey.",
 						["groups"] = {
 							i(18781, {	-- Bottom Half of Advanced Armorsmithing: Volume II
 								["timeline"] = { REMOVED_4_0_3 },
@@ -1262,28 +1143,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
-								["description"] = createLocalizationString({
-									readable = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-									constant = "YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS",
-									export = true,
-									text = {
-										en = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你必须是一名锻造师才能从地上的图纸中拾取此物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228308, {	-- Plans: Tranquility (RECIPE!)
-								["description"] = "~L.YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS",
+								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
@@ -1356,24 +1220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(14679, {	-- Of Love and Family
 								-- #if BEFORE 4.0.3
-								["description"] = createLocalizationString({
-									readable = "Found on the wall near Archivist Galford.",
-									constant = "FOUND_ON_THE_WALL_NEAR_ARCHIVIST_GALFORD",
-									export = true,
-									text = {
-										en = "Found on the wall near Archivist Galford.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "可在档案员加尔福德附近的墙上找到。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Found on the wall near Archivist Galford.",
 								-- #endif
 							}),
 							applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
@@ -1565,46 +1412,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(PHASE_SIX, n(16387, {	-- Atiesh <Hand of Sargeras>
-						["description"] = createLocalizationString({
-							readable = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
-							constant = "SUMMONED_AND_DEFEATED_AS_PART_OF_THE_ATIESH",
-							export = true,
-							text = {
-								en = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "作为埃提耶什任务链的一部分被召唤并击败，以获得守护者的传说之杖。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
 						["timeline"] = { REMOVED_3_0_2 },
 						["groups"] = {
 							i(22736, {	-- Andonisus, Reaper of Souls
 								-- #if BEFORE 3.0.2
-								["description"] = createLocalizationString({
-									readable = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
-									constant = "HE_DROPS_THIS_MIDWAY_THROUGH_THE_ENCOUNTER_AND",
-									export = true,
-									text = {
-										en = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "他会在战斗中途掉落此物品，一名幸运的 DPS 可以使用它。不过它是召唤出来的物品，几分钟后就会消失。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
 								-- #endif
 								["timeline"] = { REMOVED_3_0_2 },
 								["collectible"] = false,
@@ -1659,7 +1472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(10809, {	-- Stonespine
-						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+						["description"] = "This is a Rare Creature and, as such, is not always present.",
 						["groups"] = {
 							i(13399),	-- Gargoyle Shredder Talons
 							i(13397),	-- Stoneskin Gargoyle Cape
@@ -1672,24 +1485,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13176, {	-- Scourge Data
 								["provider"] = { "o", 176249 },	-- Scourge Data
 								-- #if BEFORE 4.0.3
-								["description"] = createLocalizationString({
-									readable = "Located in the Ziggurat behind the boss.",
-									constant = "LOCATED_IN_THE_ZIGGURAT_BEHIND_THE_BOSS",
-									export = true,
-									text = {
-										en = "Located in the Ziggurat behind the boss.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "位于首领身后的通灵塔内。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Located in the Ziggurat behind the boss.",
 								-- #endif
 							}),
 							i(18738),	-- Carapace Spine Crossbow
@@ -1730,24 +1526,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- This is what it should be, but since tooltips for objects with EXACTLY THE SAME NAME are wonky in the same instance (due to a lack of coordinates....), this is necessary to make the tooltips make more sense.
 							-- { "o", 176327 },	-- Blacksmithing Plans
 						},
-						["description"] = createLocalizationString({
-							readable = "Found outside of Baroness Anastari's ziggurat.",
-							constant = "FOUND_OUTSIDE_OF_BARONESS_ANASTARI_S_ZIGGURAT",
-							export = true,
-							text = {
-								en = "Found outside of Baroness Anastari's ziggurat.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在安娜丝塔丽男爵夫人的通灵塔外找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {
 							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III
 								["timeline"] = { REMOVED_4_0_1 },
@@ -1756,24 +1535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
-								["description"] = createLocalizationString({
-									readable = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-									constant = "YOU_MUST_BE_A_BLACKSMITH_IN_ORDER_TO_LOOT_THIS_2",
-									export = true,
-									text = {
-										en = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你必须是一名锻造师才能从地上的图纸中拾取此物品。一旦有玩家与之互动，它就会消失。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
 							}),
 						},
 					}),
@@ -1802,24 +1564,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(13514, {	-- Wail of the Banshee
 								-- #if BEFORE 4.0.3
-								["description"] = createLocalizationString({
-									readable = "This can be used on raid bosses and in PVP... Probably not a bad idea to keep on you.",
-									constant = "THIS_CAN_BE_USED_ON_RAID_BOSSES_AND_IN_PVP",
-									export = true,
-									text = {
-										en = "This can be used on raid bosses and in PVP... Probably not a bad idea to keep on you.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "这可以在团队副本首领身上以及 PvP 中使用……随身带着它大概不是个坏主意。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "This can be used on raid bosses and in PVP... Probably not a bad idea to keep on you.",
 								-- #endif
 							}),
 						},
@@ -1853,24 +1598,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					e(454, {	-- Magistrate Barthilas
 						["creatureID"] = 10435,	-- Magistrate Barthilas
-						["description"] = createLocalizationString({
-							readable = "If you enter from the Main Gate side, you can fight this boss first, otherwise he runs to the Slaughter House.",
-							constant = "IF_YOU_ENTER_FROM_THE_MAIN_GATE_SIDE_YOU_CAN",
-							export = true,
-							text = {
-								en = "If you enter from the Main Gate side, you can fight this boss first, otherwise he runs to the Slaughter House.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你从正门一侧进入，就可以先与这个首领战斗，否则他会跑向屠宰场。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If you enter from the Main Gate side, you can fight this boss first, otherwise he runs to the Slaughter House.",
 						["groups"] = {
 							i(12382),	-- Key to the City
 							-- #if SEASON_OF_DISCOVERY

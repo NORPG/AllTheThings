@@ -13,24 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		["lvl"] = 80,
 		["groups"] = {
 			n(COMMON_BOSS_DROPS, {
-				["description"] = createLocalizationString({
-					readable = "These can drop from any of the bosses on any difficulty.",
-					constant = "THESE_CAN_DROP_FROM_ANY_OF_THE_BOSSES_ON_ANY",
-					export = true,
-					text = {
-						en = "These can drop from any of the bosses on any difficulty.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些可以由任意难度下的任意首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These can drop from any of the bosses on any difficulty.",
 				["crs"] = {
 					35013,	-- Koralon the Flame Watcher
 					33993,	-- Emalon the Storm Watcher

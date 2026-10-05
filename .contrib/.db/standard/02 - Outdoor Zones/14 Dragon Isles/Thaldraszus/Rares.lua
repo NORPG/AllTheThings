@@ -53,24 +53,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193126, {	-- Innumerable Ruination
-				["description"] = createLocalizationString({
-					readable = "Patrols in a circle around the coordinates.",
-					constant = "PATROLS_IN_A_CIRCLE_AROUND_THE_COORDINATES",
-					export = true,
-					text = {
-						en = "Patrols in a circle around the coordinates.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "围绕该坐标绕圈巡逻。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Patrols in a circle around the coordinates.",
 				["coords"] = {
 					{ 58.0, 83.8, THALDRASZUS },
 					{ 58.4, 80.4, THALDRASZUS },
@@ -96,24 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>
-				["description"] = createLocalizationString({
-					readable = "Requires completion of the questhub in the area. Only spawns if the portal is available.",
-					constant = "REQUIRES_COMPLETION_OF_THE_QUESTHUB_IN_THE_AREA",
-					export = true,
-					text = {
-						en = "Requires completion of the questhub in the area. Only spawns if the portal is available.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要完成该区域的任务枢纽。只有传送门可用时才会刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires completion of the questhub in the area. Only spawns if the portal is available.",
 				["coord"] = { 62.2, 81.7, THALDRASZUS },
 				["questID"] = 74066,
 				["groups"] = {
@@ -165,7 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 72844,
 			}),
 			n(193143, {	-- Razk'vex the Untamed
-				["description"] = "~L.PATROLS_BETWEEN_THE_COORDINATES",
+				["description"] = "Patrols between the coordinates.",
 				["coords"] = {
 					{ 49.8, 50.2, THALDRASZUS },
 					{ 53.6, 42.8, THALDRASZUS },
@@ -175,24 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
 			-- n(193666),	-- Rokmur // under DF/Timed Based Rare
 			n(191305, {	-- The Great Shellkhan
-				["description"] = createLocalizationString({
-					readable = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
-					constant = "NEEDS_A_CASE_OF_FRESH_GLEAMFISH_FISH_FROM_AZURE",
-					export = true,
-					text = {
-						en = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要一箱来自碧蓝林海的新鲜闪光鱼。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
 				["coords"] = {
 					{ 38.5, 68.2, THALDRASZUS },	-- Rare
 					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
@@ -204,24 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(183984, {	-- The Weeping Vilomah
-				["description"] = createLocalizationString({
-					readable = "Inside cave, speak to 'Boomhooch the Lost'.",
-					constant = "INSIDE_CAVE_SPEAK_TO_BOOMHOOCH_THE_LOST",
-					export = true,
-					text = {
-						en = "Inside cave, speak to 'Boomhooch the Lost'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在洞穴内，与“迷路的布姆胡奇”交谈。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Inside cave, speak to 'Boomhooch the Lost'.",
 				["crs"] = { 193206 },	-- Boomhooch the Lost
 				["coords"] = {
 					{ 49.6, 72.8, THALDRASZUS },
@@ -235,24 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-- n(193258),	-- Tempestrian // under DF/Timed Based Rare
 			-- n(193146),	-- Treasure-Mad // under DF/Timed Based Rare
 			n(193161, {	-- Woolfang
-				["description"] = createLocalizationString({
-					readable = "Pet a Wooly Lamb to spawn.",
-					constant = "PET_A_WOOLY_LAMB_TO_SPAWN",
-					export = true,
-					text = {
-						en = "Pet a Wooly Lamb to spawn.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "抚摸一只毛茸茸的小羊即可刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Pet a Wooly Lamb to spawn.",
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
 				["crs"] = { 193156 },	-- Wooly Lamb
 				["questID"] = 74089,

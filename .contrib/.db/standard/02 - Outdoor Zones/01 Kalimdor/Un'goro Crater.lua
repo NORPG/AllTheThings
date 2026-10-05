@@ -37,70 +37,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(632, {	-- Ash Lizard (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found around Fire Plum Ridge in Un'goro Crater and around fiery and dry areas in lower Mount Hyjal.",
-							constant = "FOUND_AROUND_FIRE_PLUM_RIDGE_IN_UN_GORO_CRATER",
-							export = true,
-							text = {
-								en = "Found around Fire Plum Ridge in Un'goro Crater and around fiery and dry areas in lower Mount Hyjal.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在安戈洛环形山的火羽山周围，以及海加尔山下部炽热干燥的区域可找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found around Fire Plum Ridge in Un'goro Crater and around fiery and dry areas in lower Mount Hyjal.",
 						["coords"] = {
 							{ 50.0, 49.0, UNGORO_CRATER },	-- Fire Plum Ridge
 							{ 60.0, 70.0, MOUNT_HYJAL },	-- Fiery Mount Hyjal
 						},
 					}),
 					pet(504, {	-- Diemetradon Hatchling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",
-							constant = "CAN_BE_FOUND_AROUND_GOLAKKA_HOT_SPRINGS_NEAR",
-							export = true,
-							text = {
-								en = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在戈拉卡热泉周围、年长的双帆龙附近找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",
 					}),
 					pet(631),	-- Emerald Boa (PET!)
 					pet(403),	-- Parrot (PET!)
 					pet(502, {	-- Spotted Bell Frog (PET!)
-						["description"] = createLocalizationString({
-							readable = "Only found around water in Un'goro.",
-							constant = "ONLY_FOUND_AROUND_WATER_IN_UN_GORO",
-							export = true,
-							text = {
-								en = "Only found around water in Un'goro.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在安戈洛环形山的水边出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only found around water in Un'goro.",
 					}),
 				},
 			}),
@@ -874,24 +823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(24699, {	-- Gormashh the Glutinous
-					["description"] = createLocalizationString({
-						readable = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
-						constant = "IF_YOU_HAVE_A_HERBALISM_AS_A_PROFESSION_YOU",
-						export = true,
-						text = {
-							en = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你以草药学为职业，就必须从目标追踪器或背包中手动使用“焦油刮刀”。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["sourceQuest"] = 24737,	-- Super Sticky
 					["qg"] = 38276,	-- Tara (mobileNPC)
 					["qi"] = 50746,	-- Tara's Tar Scraper
@@ -1084,7 +1016,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 11522 },	-- Silver Totem of Aquementas
 							},
 							["coord"] = { 49.6, 49.6, UNGORO_CRATER },
-							["description"] = "~L.USE_THE_SILTER_TOTEM_OF_AQUEMENTAS_ON",
+							["description"] = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
 						}),
 						objective(2, {	-- 0/1 Golden Flame
 							["providers"] = {
@@ -1221,24 +1153,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(24693, {	-- Mossy Pile
-					["description"] = createLocalizationString({
-						readable = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
-						constant = "AFTER_COMPLETING_THIS_QUEST_YOU_WON_T_BE_ABLE",
-						export = true,
-						text = {
-							en = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成此任务后，你将无法再接取 |cFFFFD700与斯普拉格交谈|r 这条指引任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
 					["sourceQuest"] = 24691,	-- Peculiar Delicacies
 					["qg"] = 10977,	-- Quixxil
 					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
@@ -1473,24 +1388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24736, {	-- Shizzle's Flyer
-					["description"] = createLocalizationString({
-						readable = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
-						constant = "PICKING_UP_OR_COMPLETING_THIS_QUEST_WILL_MAKE",
-						export = true,
-						text = {
-							en = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接取或完成此任务会使|cFFFFD700与斯普拉格交谈|r变得不可用，从而导致其任务链和奖励无法获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
 					["qg"] = 9998,	-- Shizzle
 					["coord"] = { 43.4, 41.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1548,24 +1446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24794, {	-- Speak With Spraggle
-					["description"] = createLocalizationString({
-						readable = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
-						constant = "THIS_QUEST_WON_T_BE_AVAILABLE_IF_YOU_COMPLETE",
-						export = true,
-						text = {
-							en = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你先完成 |cFFFFD700希兹尔的飞行器|r，此任务将不可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
 					["sourceQuest"] = 24742,	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
 					["coord"] = { 55.4, 62.5, UNGORO_CRATER },
@@ -1573,7 +1454,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(24737, {	-- Super Sticky
-					["description"] = "~L.IF_YOU_HAVE_A_HERBALISM_AS_A_PROFESSION_YOU",
+					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["qg"] = 38276,	-- Tara (mobileNPC)
 					["qi"] = 50742,	-- Tara's Tar Scraper
@@ -1828,24 +1709,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24718, {	-- The Mighty U'cha
-					["description"] = createLocalizationString({
-						readable = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
-						constant = "THIS_QUEST_POPS_UP_WHEN_YOU_ENTER_THE_FUNGAL",
-						export = true,
-						text = {
-							en = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在进行任务 |cFFFFD700安戈洛的猿猴|r 期间进入真菌岩洞时，此任务会弹出。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
@@ -1950,24 +1814,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24706, {	-- The Spirits of Golakka Hot Springs
-					["description"] = createLocalizationString({
-						readable = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
-						constant = "ENGAGE_BUT_DO_NOT_KILL_STEAMING_FURY_UNTIL",
-						export = true,
-						text = {
-							en = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开怪，但在马克西米利安完成祈祷之前不要击杀蒸汽之怒。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
 					["sourceQuests"] = {
 						24705,	-- Town Dwellers Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
@@ -2344,24 +2191,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(115923, {	-- Ko'Zan <Courier>
 					["sourceQuest"] = 45057,	-- Saving My Head
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
-					["description"] = createLocalizationString({
-						readable = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
-						constant = "VENDOR_ONLY_SELLS_PLANS_TO_THOSE_WHO_HAVE",
-						export = true,
-						text = {
-							en = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "商人只向已完成“保住我的脑袋”任务的玩家出售图纸。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
 					["timeline"] = { ADDED_7_2_0 },
 					["groups"] = {
 						i(142383, {	-- Plans: Darkspear (RECIPE!)

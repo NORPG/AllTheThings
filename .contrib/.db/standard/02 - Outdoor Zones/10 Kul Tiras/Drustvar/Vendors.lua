@@ -22,45 +22,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(142197, {	-- Nigel Rifthold <Adventurer's Society>
-				["description"] = createLocalizationString({
-					readable = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
-					constant = "IN_ORDER_TO_UNLOCK_THIS_VENDOR_YOU_WILL_NEED_TO",
-					export = true,
-					text = {
-						en = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁此商人，你需要购买 10 个“提拉斯雷利精品巧克力”，然后在他所在坐标处找到树屋，并点击箱子两次。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
 				["coord"] = { 52.2, 31.6, DRUSTVAR },
 				["groups"] = {
 					i(163493, {	-- Frenzied Cottontail (PET!)
-						["description"] = createLocalizationString({
-							readable = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
-							constant = "DEFEAT_COTTONTAIL_MATRON_LOCATED_AT_52_2_46_8",
-							export = true,
-							text = {
-								en = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "击败棉尾母兔（位于 52.2, 46.8）后，该物品才会出现在商人处。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
 						["cost"] = { { "i", POLISHED_PET_CHARM, 300 } },
 					}),
 					i(163510, {	-- Crimson Frog (PET!)
@@ -87,24 +53,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}, {	-- Friendly
 					}, {	-- Honored
 						i(163205, {	-- Ghostly Pet Biscuit
-							["description"] = createLocalizationString({
-								readable = "This gives your hunter's pet a ghostly appearance for 30 minutes.",
-								constant = "THIS_GIVES_YOUR_HUNTER_S_PET_A_GHOSTLY",
-								export = true,
-								text = {
-									en = "This gives your hunter's pet a ghostly appearance for 30 minutes.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这会让你的猎人宠物获得幽灵般的外观，持续 30 分钟。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This gives your hunter's pet a ghostly appearance for 30 minutes.",
 							["filterID"] = CONSUMABLES,
 						}),
 						i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2] (RECIPE!)

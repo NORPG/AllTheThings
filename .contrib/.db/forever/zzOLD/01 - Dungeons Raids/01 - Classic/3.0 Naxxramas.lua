@@ -199,24 +199,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 							-- #endif
 							q(9250, {	-- Frame of Atiesh
-								["description"] = createLocalizationString({
-									readable = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
-									constant = "COLLECT_40_OF_THE_SPLINTERS_TO_CRAFT_THE_FRAME",
-									export = true,
-									text = {
-										en = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "收集 40 个碎片以制作埃提耶什的框架。这会开启埃提耶什的任务链。你需要与公会协调，以获得碎片的优先分配权。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
 								["provider"] = { "i", 22727 },	-- Frame of Atiesh
 								["cost"] = { { "i", 22726, 40 } },	-- Splinter of Atiesh
 								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
@@ -235,24 +218,7 @@ applyclassicphase(PHASE_SIX,
 							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 						})),
 						applyclassicphase(SOM_PHASE_ONE, i(191481, {	-- Tabard of Mastery
-							["description"] = createLocalizationString({
-								readable = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
-								constant = "THIS_WAS_OBTAINED_FROM_KILLING_KEL_THUZAD_IN",
-								export = true,
-								text = {
-									en = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这是在“精通赛季”服务器中，于纳克萨玛斯40人副本击杀克尔苏加德时获得的，当时整个团队都拥有“不朽征服者”增益，意味着在该副本进度中击杀克尔苏加德之前无人死亡。（你也可以获取传送符文：霜翼大厅来绕过副本的大部分内容，这样只需击杀萨菲隆和克尔苏加德即可获得它。）\n\n由于“精通赛季”服务器已不再提供，这件战袍在经典怀旧服中已无法获得，也许它会在“探索赛季”中回归？谁知道呢。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
 							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Not be available in SOD.
 						})),
 					}),
@@ -1658,24 +1624,7 @@ applyclassicphase(PHASE_SIX,
 							},
 						}),
 						q(9233, {	-- Omarion's Handbook
-							["description"] = createLocalizationString({
-								readable = "You must not have a profession above 270 skill for you to get this item from Omarion.",
-								constant = "YOU_MUST_NOT_HAVE_A_PROFESSION_ABOVE_270_SKILL",
-								export = true,
-								text = {
-									en = "You must not have a profession above 270 skill for you to get this item from Omarion.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你的专业技能不能超过 270 点，才能从奥马里昂处获得此物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 							["provider"] = { "i", 22719 },	-- Omarion's Handbook
 							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 							["lvl"] = 60,
@@ -1850,24 +1799,7 @@ applyclassicphase(PHASE_SIX,
 						i(22375),	-- Wartorn Plate Scrap
 						-- #endif
 						i(23055, {	-- Word of Thawing
-							["description"] = createLocalizationString({
-								readable = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
-								constant = "THESE_CAN_BE_USED_TO_LOOT_THE_FROZEN_RUNES",
-								export = true,
-								text = {
-									en = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这些可用于拾取散布在纳克萨玛斯内部的冰冻符文。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
 						}),
 						i(23221),	-- Misplaced Servo Arm
 						i(23044),	-- Harbinger of Doom
@@ -1887,24 +1819,7 @@ applyclassicphase(PHASE_SIX,
 						i(22682),	-- Frozen Rune
 						-- #else
 						o(181287, {	-- Frozen Rune
-							["description"] = createLocalizationString({
-								readable = "Use a Word of Thawing on this to collect 3-6 Frozen Runes.",
-								constant = "USE_A_WORD_OF_THAWING_ON_THIS_TO_COLLECT_3_6",
-								export = true,
-								text = {
-									en = "Use a Word of Thawing on this to collect 3-6 Frozen Runes.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "对此使用解冻之语，即可收集 3-6 个冰冻符文。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use a Word of Thawing on this to collect 3-6 Frozen Runes.",
 							["cost"] = { { "i", 23055, 1 } },	-- Word of Thawing
 							["groups"] = {
 								i(22682),	-- Frozen Rune
@@ -2104,24 +2019,7 @@ applyclassicphase(PHASE_SIX,
 								["timeline"] = { ADDED_1_11_1 },
 								["groups"] = {
 									i(22719, {	-- Omarion's Handbook
-										["description"] = createLocalizationString({
-											readable = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
-											constant = "NON_CRAFTERS_CAN_TAKE_HIS_HANDBOOK_TO_CRAFTSMAN",
-											export = true,
-											text = {
-												en = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "非制造专业的玩家可以把他的手册带给圣光之愿礼拜堂的工匠威廉，只要提供材料并支付高昂的费用，他也能制作所有物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 									}),
 									r(28208, {	-- Glacial Cloak (RECIPE!)
@@ -2279,24 +2177,7 @@ applyclassicphase(PHASE_SIX,
 									i(23045),	-- Shroud of Dominion
 									i(23072, {	-- Fists of the Unrelenting
 										-- #if BEFORE TBC
-										["description"] = createLocalizationString({
-											readable = "These were made available after the TBC Prepatch.",
-											constant = "THESE_WERE_MADE_AVAILABLE_AFTER_THE_TBC",
-											export = true,
-											text = {
-												en = "These were made available after the TBC Prepatch.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "这些是在 TBC 前夕补丁之后开放的。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "These were made available after the TBC Prepatch.",
 										-- #endif
 										["timeline"] = { CREATED_1_11_1, ADDED_2_0_1, REMOVED_3_0_2 },
 									}),
@@ -3880,7 +3761,7 @@ applyclassicphase(PHASE_SIX,
 								},
 							}),
 							q(9233, {	-- Omarion's Handbook
-								["description"] = "~L.YOU_MUST_NOT_HAVE_A_PROFESSION_ABOVE_270_SKILL",
+								["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 								["provider"] = { "i", 22719 },	-- Omarion's Handbook
 								["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 								["lvl"] = 60,
@@ -4250,12 +4131,12 @@ applyclassicphase(PHASE_SIX,
 							i(22373),	-- Wartorn Leather Scrap
 							i(22375),	-- Wartorn Plate Scrap
 							i(237773, {	-- Word of Thawing
-								["description"] = "~L.THESE_CAN_BE_USED_TO_LOOT_THE_FROZEN_RUNES",
+								["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
 							}),
 						}),
 						n(TREASURES, {
 							o(181287, {	-- Frozen Rune
-								["description"] = "~L.USE_A_WORD_OF_THAWING_ON_THIS_TO_COLLECT_3_6",
+								["description"] = "Use a Word of Thawing on this to collect 3-6 Frozen Runes.",
 								["cost"] = { { "i", 237773, 1 } },	-- Word of Thawing
 								["groups"] = {
 									i(236656),	-- Frozen Rune
@@ -4476,7 +4357,7 @@ applyclassicphase(PHASE_SIX,
 									["timeline"] = { ADDED_1_11_1 },
 									["groups"] = {
 										i(22719, {	-- Omarion's Handbook
-											["description"] = "~L.NON_CRAFTERS_CAN_TAKE_HIS_HANDBOOK_TO_CRAFTSMAN",
+											["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 											["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										}),
 										r(28208, {	-- Glacial Cloak (RECIPE!)

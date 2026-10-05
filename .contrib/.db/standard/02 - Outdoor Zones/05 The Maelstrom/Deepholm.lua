@@ -89,24 +89,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(838, {	-- Amethyst Shale Hatchling (PET!)
-							["description"] = createLocalizationString({
-								readable = "The biggest concentration can be found in Desolace, the purple section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, in Silvermarsh, as well as scattered around Temple of Earth.",
-								constant = "THE_BIGGEST_CONCENTRATION_CAN_BE_FOUND_IN_2",
-								export = true,
-								text = {
-									en = "The biggest concentration can be found in Desolace, the purple section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, in Silvermarsh, as well as scattered around Temple of Earth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "最集中的地方在凄凉之地，即野外玛拉顿的紫色区域。也可以在深岩之洲石母王座一带、银沼以及大地神殿周围找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The biggest concentration can be found in Desolace, the purple section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, in Silvermarsh, as well as scattered around Temple of Earth.",
 							["coords"] = {
 								{ 26.8, 43.5, DESOLACE },	-- Maraudon entrance
 								{ 57.0, 13.2, DEEPHOLM },	-- Therazane's Throne
@@ -114,74 +97,23 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(559, {	-- Crimson Geode (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found around Crimson Expanse.",
-								constant = "FOUND_AROUND_CRIMSON_EXPANSE",
-								export = true,
-								text = {
-									en = "Found around Crimson Expanse.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在赤红旷野周围找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found around Crimson Expanse.",
 							["coord"] = { 73.0, 42.0, DEEPHOLM },	-- Crimson Expanse
 						}),
 						pet(554, {	-- Crimson Shale Hatchling (PET!)
-							["description"] = "~L.FOUND_AROUND_CRIMSON_EXPANSE",
+							["description"] = "Found around Crimson Expanse.",
 							["coord"] = { 73.0, 42.0, DEEPHOLM },	-- Crimson Expanse
 						}),
 						pet(556, {	-- Crystal Beetle (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found scattered around Temple of Earth.",
-								constant = "FOUND_SCATTERED_AROUND_TEMPLE_OF_EARTH",
-								export = true,
-								text = {
-									en = "Found scattered around Temple of Earth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "散落在大地神殿周围。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found scattered around Temple of Earth.",
 							["coord"] = { 53.0, 42.0, DEEPHOLM },	-- Northeast of Temple of Earth
 						}),
 						pet(555, {	-- Deepholm Cockroach (PET!)
-							["description"] = "~L.FOUND_SCATTERED_AROUND_TEMPLE_OF_EARTH",
+							["description"] = "Found scattered around Temple of Earth.",
 							["coord"] = { 53.0, 42.0, DEEPHOLM },	-- Northeast of Temple of Earth
 						}),
 						pet(837, {	-- Emerald Shale Hatchling (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found around The Quaking Fields, as well as in smaller concentrations elsewhere in Deepholm.",
-								constant = "FOUND_AROUND_THE_QUAKING_FIELDS_AS_WELL_AS_IN",
-								export = true,
-								text = {
-									en = "Found around The Quaking Fields, as well as in smaller concentrations elsewhere in Deepholm.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在震颤旷野周围，以及深岩之洲其他区域较小的聚集地中可找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found around The Quaking Fields, as well as in smaller concentrations elsewhere in Deepholm.",
 							["coords"] = {
 								{ 38.5, 84.0, DEEPHOLM },	-- The Quaking Fields
 								{ 29.9, 47.9, DEEPHOLM },	-- East of Needlerock Slag
@@ -190,24 +122,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(756, {	-- Fungal Moth (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found scattered around Silvermarsh, Needlerock Slag and Chasm, as well as Verlok Stand.",
-								constant = "FOUND_SCATTERED_AROUND_SILVERMARSH_NEEDLEROCK",
-								export = true,
-								text = {
-									en = "Found scattered around Silvermarsh, Needlerock Slag and Chasm, as well as Verlok Stand.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "分散分布在银沼、针岩矿渣与裂谷，以及维尔洛克哨站周围。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found scattered around Silvermarsh, Needlerock Slag and Chasm, as well as Verlok Stand.",
 							["coords"] = {
 								{ 23.7, 44.7, DEEPHOLM },	-- Needlerock
 								{ 70.9, 25.4, DEEPHOLM },	-- Verlok Stand
@@ -215,24 +130,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(553, {	-- Stowaway Rat (PET!)
-							["description"] = createLocalizationString({
-								readable = "Is most commonly found as secondary pet in Deepholm.",
-								constant = "IS_MOST_COMMONLY_FOUND_AS_SECONDARY_PET_IN",
-								export = true,
-								text = {
-									en = "Is most commonly found as secondary pet in Deepholm.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "最常作为副宠物出现在地深之源。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Is most commonly found as secondary pet in Deepholm.",
 							["coord"] = { 56.45, 74.5, DEEPHOLM },	-- Storm's Fury Wreckage
 						}),
 					},
@@ -283,24 +181,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					prof(MINING, {
-						["description"] = createLocalizationString({
-							readable = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.",
-							constant = "ELEMENTIUM_VEINS_0_05_DROP_RATE_AND_RICH_2",
-							export = true,
-							text = {
-								en = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "源质矿脉（0.05% 掉落率）和富源质矿脉（0.08% 掉落率）需要大地的裂变采矿技能。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.",
 						["groups"] = {
 							i(67282),	-- Elementium Geode (PET!)
 						},
@@ -510,24 +391,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(26259, {	-- Blood of the Earthwarder
-						["description"] = createLocalizationString({
-							readable = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
-							constant = "THIS_QUEST_MUST_BE_COMPLETED_BEFORE_UNLOCKING",
-							export = true,
-							text = {
-								en = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须先完成此任务才能解锁塞拉赞恩的日常任务（束缚）。战斗结束后，先知科尔莫将不会出现在大地神殿中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 						["sourceQuest"] = 26255,	-- Return to the Temple of Earth
 						["qg"] = 43397,	-- Seer Kormo
 						["coord"] = { 49.7, 53.0, DEEPHOLM },
@@ -750,7 +614,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(27136, {	-- Elemental Energy
-						["description"] = "~L.THIS_QUEST_MUST_BE_COMPLETED_BEFORE_UNLOCKING",
+						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 						["sourceQuest"] = 27123,	-- Deepholm, Realm of Earth
 						["qg"] = 43397,	-- Seer Kormo
 						["coord"] = { 49.7, 53.0, DEEPHOLM },
@@ -1110,24 +974,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(28295, {	-- Meetup with the Caravan
-						["description"] = createLocalizationString({
-							readable = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Hero's Call: Uldum!', or any following quests in Uldum.",
-							constant = "THIS_QUEST_IS_PART_OF_A_BREADCRUMB_QUESTLINE",
-							export = true,
-							text = {
-								en = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Hero's Call: Uldum!', or any following quests in Uldum.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此任务是深岩之洲引导任务线的一部分，如果你已接受或完成“英雄的召唤：奥丹姆！”或奥丹姆的任何后续任务，则无法接受。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Hero's Call: Uldum!', or any following quests in Uldum.",
 						["sourceQuest"] = 28292,	-- That's No Pyramid!
 						["qg"] = 44238,	-- Harrison Jones
 						["coord"] = { 85.6, 25.8, STORMWIND_CITY },
@@ -1135,24 +982,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(28296, {	-- Meetup with the Caravan
-						["description"] = createLocalizationString({
-							readable = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Warchief's Command: Uldum!' or any following quests in Uldum.",
-							constant = "THIS_QUEST_IS_PART_OF_A_BREADCRUMB_QUESTLINE_2",
-							export = true,
-							text = {
-								en = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Warchief's Command: Uldum!' or any following quests in Uldum.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此任务是深岩之洲引导任务线的一部分，如果你已接受或完成“酋长的命令：奥丹姆！”或奥丹姆的任何后续任务，则无法接受。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Warchief's Command: Uldum!' or any following quests in Uldum.",
 						["sourceQuest"] = 28293,	-- That's No Pyramid!
 						["qg"] = 47571,	-- Belloc Brightblade
 						["coord"] = { 49.1, 70.5, ORGRIMMAR },
@@ -1294,24 +1124,7 @@ root(ROOTS.Zones, {
 									{ "o", 205197 },	-- Trogg Crate
 								},
 								["coord"] = { 71.8, 64.2, DEEPHOLM },
-								["description"] = createLocalizationString({
-									readable = "You can trigger this by jumping into the water next to the camp and swimming to the bottom.",
-									constant = "YOU_CAN_TRIGGER_THIS_BY_JUMPING_INTO_THE_WATER",
-									export = true,
-									text = {
-										en = "You can trigger this by jumping into the water next to the camp and swimming to the bottom.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你可以跳进营地旁的水中并游到水底来触发它。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You can trigger this by jumping into the water next to the camp and swimming to the bottom.",
 							}),
 							i(61479),	-- Ballast-Laden Footpads
 							i(61485),	-- Box-Frame Spaulders
@@ -1646,24 +1459,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27952, {	-- The Explorers [Alliance]
-						["description"] = createLocalizationString({
-							readable = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
-							constant = "THIS_QUEST_MUST_BE_COMPLETED_BEFORE_UNLOCKING_2",
-							export = true,
-							text = {
-								en = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须先完成此任务才能解锁塞拉赞恩的日常任务（束缚）。战斗结束后，唤地者耶娃将不会出现在大地神殿中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
 						["qg"] = 42573,	-- Earthcaller Yevaa
 						["coord"] = { 49.5, 53.3, DEEPHOLM },
 						["races"] = ALLIANCE_ONLY,
@@ -1730,7 +1526,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(27953, {	-- The Reliquary [Horde]
-						["description"] = "~L.THIS_QUEST_MUST_BE_COMPLETED_BEFORE_UNLOCKING_2",
+						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
 						["qg"] = 42573,	-- Earthcaller Yevaa
 						["coord"] = { 49.5, 53.3, DEEPHOLM },
 						["races"] = HORDE_ONLY,
@@ -2172,24 +1968,7 @@ root(ROOTS.Zones, {
 							{ 50.50, 63.50, DEEPHOLM },
 							{ 42.00, 43.60, DEEPHOLM },
 						},
-						["description"] = createLocalizationString({
-							readable = "Aeonaxx has six possible spawn points. It shares these spawn points and its spawn timer with a bat called Blood Seeker. This means that only one of the NPCs (Aeonaxx or Blood Seeker) can be up on a realm at any given time. Once Aeonaxx spawns, he will fly in a small circle near his spawn point, and will continue to do so until killed or until a server reset. In contrast, when Blood Seeker spawns, it only stays up for about 15 seconds before despawning.\n\nBlood Seeker does not drop a mount, and spawns much more frequently than Aeonaxx. Blood Seeker quickly becomes a nuisance to any lucky enough to see him in his 15-second spawn window, but finding him can be helpful. Tracking Blood Seeker's spawns will help you keep track of when it is possible for Aeonaxx to spawn. Whenever you are able to spot this bat, it means that you can safely take a break from your camping for 2 hours, as there will not be a spawn until the minimum timer has passed (2 hours). Aeonaxx is often thought of as \"the rare spawn of Blood Seeker.\" Simply put, this means that there is a small chance for Aeonaxx to spawn instead of Blood Seeker whenever a spawn is due.",
-							constant = "AEONAXX_HAS_SIX_POSSIBLE_SPAWN_POINTS_IT_SHARES",
-							export = true,
-							text = {
-								en = "Aeonaxx has six possible spawn points. It shares these spawn points and its spawn timer with a bat called Blood Seeker. This means that only one of the NPCs (Aeonaxx or Blood Seeker) can be up on a realm at any given time. Once Aeonaxx spawns, he will fly in a small circle near his spawn point, and will continue to do so until killed or until a server reset. In contrast, when Blood Seeker spawns, it only stays up for about 15 seconds before despawning.\n\nBlood Seeker does not drop a mount, and spawns much more frequently than Aeonaxx. Blood Seeker quickly becomes a nuisance to any lucky enough to see him in his 15-second spawn window, but finding him can be helpful. Tracking Blood Seeker's spawns will help you keep track of when it is possible for Aeonaxx to spawn. Whenever you are able to spot this bat, it means that you can safely take a break from your camping for 2 hours, as there will not be a spawn until the minimum timer has passed (2 hours). Aeonaxx is often thought of as \"the rare spawn of Blood Seeker.\" Simply put, this means that there is a small chance for Aeonaxx to spawn instead of Blood Seeker whenever a spawn is due.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "奥伊纳克斯有六个可能的刷新点。它与一只名叫寻血者的蝙蝠共享这些刷新点和刷新计时。这意味着在任意时刻，一个服务器上只能有其中一个 NPC（奥伊纳克斯或寻血者）存在。奥伊纳克斯刷新后，会在其刷新点附近绕一个小圈飞行，并会一直这样飞下去，直到被杀死或服务器重置。相比之下，寻血者刷新后只会存在大约 15 秒便消失。\n\n寻血者不掉落坐骑，而且刷新的频率远高于奥伊纳克斯。寻血者很快就会成为任何有幸在其 15 秒存在窗口内看到它的人的麻烦，但找到它却很有帮助。追踪寻血者的刷新有助于你掌握奥伊纳克斯可能出现的时间。每当你能够看到这只蝙蝠，就意味着你可以放心地暂停蹲守 2 小时，因为在最短计时结束（2 小时）之前不会有刷新。奥伊纳克斯常被认为是“寻血者的稀有刷新”。简单来说，这意味着每当到了刷新时间，都有很小的几率由奥伊纳克斯代替寻血者出现。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Aeonaxx has six possible spawn points. It shares these spawn points and its spawn timer with a bat called Blood Seeker. This means that only one of the NPCs (Aeonaxx or Blood Seeker) can be up on a realm at any given time. Once Aeonaxx spawns, he will fly in a small circle near his spawn point, and will continue to do so until killed or until a server reset. In contrast, when Blood Seeker spawns, it only stays up for about 15 seconds before despawning.\n\nBlood Seeker does not drop a mount, and spawns much more frequently than Aeonaxx. Blood Seeker quickly becomes a nuisance to any lucky enough to see him in his 15-second spawn window, but finding him can be helpful. Tracking Blood Seeker's spawns will help you keep track of when it is possible for Aeonaxx to spawn. Whenever you are able to spot this bat, it means that you can safely take a break from your camping for 2 hours, as there will not be a spawn until the minimum timer has passed (2 hours). Aeonaxx is often thought of as \"the rare spawn of Blood Seeker.\" Simply put, this means that there is a small chance for Aeonaxx to spawn instead of Blood Seeker whenever a spawn is due.",
 						["groups"] = {
 							i(63042),	-- Phosphorescent Stone Drake (MOUNT!)
 						},
@@ -2207,24 +1986,7 @@ root(ROOTS.Zones, {
 					}),
 					n(49822, {	-- Jadefang
 						["coord"] = { 61.2, 22.6, DEEPHOLM },
-						["description"] = createLocalizationString({
-							readable = "Found inside Crumbling Depths, requires the daily quest Underground Economy. Use the bomb \"Ricket's Tickers\" in the central cavern to reach the cave where Jadefang spawns.",
-							constant = "FOUND_INSIDE_CRUMBLING_DEPTHS_REQUIRES_THE",
-							export = true,
-							text = {
-								en = "Found inside Crumbling Depths, requires the daily quest Underground Economy. Use the bomb \"Ricket's Tickers\" in the central cavern to reach the cave where Jadefang spawns.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于崩塌的深渊内，需要日常任务“地下经济”。在中央洞穴使用“里基特的嘀嗒炸弹”，即可到达翡翠牙刷新的洞穴。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found inside Crumbling Depths, requires the daily quest Underground Economy. Use the bomb \"Ricket's Tickers\" in the central cavern to reach the cave where Jadefang spawns.",
 						["groups"] = {
 							i(64494),	-- Tiny Shale Spider (PET!)
 						},
@@ -2268,19 +2030,19 @@ root(ROOTS.Zones, {
 							{	-- Exalted
 								-- #if ANYCLASSIC
 								i(226463, {	-- Greater Inscription of Charged Lodestone
-									["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 									["filterID"] = CONSUMABLES,
 								}),
 								i(226462, {	-- Greater Inscription of Jagged Stone
-									["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 									["filterID"] = CONSUMABLES,
 								}),
 								i(226460, {	-- Greater Inscription of Shattered Crystal
-									["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 									["filterID"] = CONSUMABLES,
 								}),
 								i(226459, {	-- Greater Inscription of Unbreakable Quartz
-									["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 									["filterID"] = CONSUMABLES,
 								}),
 								-- #endif

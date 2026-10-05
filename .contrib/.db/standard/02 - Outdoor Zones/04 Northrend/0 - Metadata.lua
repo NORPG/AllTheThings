@@ -153,24 +153,7 @@ root(ROOTS.Zones, {
 			-- #if AFTER 5.3.0
 			battlepets({
 				pet(1238, {	-- Unborn Val'kyr (PET!)
-					["description"] = createLocalizationString({
-						readable = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",
-						constant = "THIS_PET_SPAWNS_IN_ALL_ORDINARY_QUESTING_ZONES",
-						export = true,
-						text = {
-							en = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物会在北裂境所有普通任务区域刷新，但只在少数特定地点出现。其他宠物可能会替代它们刷新，它们可能对位面机制敏感，而且每个区域可能只有一个刷新点。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",
 					["coords"] = {
 						{ 47.7, 7.65, BOREAN_TUNDRA },	-- Northwest of Bor'Gorok Outpost
 						{ 32.85, 60.25, BOREAN_TUNDRA },	-- South of Garrosh's Landing

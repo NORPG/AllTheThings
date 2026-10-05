@@ -67,24 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ "n", 210132 },	-- The Envoy Tribute (vignette)
 					{ "n", 214131 },	-- Envoy of Winter (vignette)
 				},
-				["description"] = createLocalizationString({
-					readable = "Finish bonus objective in marked area to make him spawn.",
-					constant = "FINISH_BONUS_OBJECTIVE_IN_MARKED_AREA_TO_MAKE",
-					export = true,
-					text = {
-						en = "Finish bonus objective in marked area to make him spawn.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成标记区域内的奖励目标即可使其刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["groups"] = {
 					i(208332),	-- Horns of the Envoy
@@ -103,7 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["providers"] = {
 					{ "n", 210516 },	-- Primalist Punishment [DNT] (vignette)
 				},
-				["description"] = "~L.FINISH_BONUS_OBJECTIVE_IN_MARKED_AREA_TO_MAKE",
+				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 30.0, 20.7, EMERALD_DREAM },
 				["groups"] = {
 					i(208371),	-- Fire Assassin's Boots
@@ -114,24 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209913, {	-- Fruitface
-				["description"] = createLocalizationString({
-					readable = "Help Mylune by picking up Missing Fruit from floor until npc yell 'I see the podling who took the fruit!', attack enemy once and follow him.",
-					constant = "HELP_MYLUNE_BY_PICKING_UP_MISSING_FRUIT_FROM",
-					export = true,
-					text = {
-						en = "Help Mylune by picking up Missing Fruit from floor until npc yell 'I see the podling who took the fruit!', attack enemy once and follow him.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "帮助米露妮，从地上拾取缺失的果实，直到 NPC 喊出“我看到拿走果实的幼苗了！”，攻击一次敌人并跟随他。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Help Mylune by picking up Missing Fruit from floor until npc yell 'I see the podling who took the fruit!', attack enemy once and follow him.",
 				["crs"] = {
 					209950,	-- Mylune
 					209980,	-- Thieving Podling
@@ -153,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["providers"] = {
 					{ "n", 210300 },	-- Controller Bunny (vignette)
 				},
-				["description"] = "~L.FINISH_BONUS_OBJECTIVE_IN_MARKED_AREA_TO_MAKE",
+				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
 				["groups"] = {
 					i(208355),	-- String of Delicacies
@@ -248,7 +214,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["providers"] = {
 					{ "n", 209264 },	-- Nuo Bunny (vignette)
 				},
-				["description"] = "~L.FINISH_BONUS_OBJECTIVE_IN_MARKED_AREA_TO_MAKE",
+				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 61.0, 70.3, EMERALD_DREAM },
 				["groups"] = {
 					i(209880),	-- Curve of Starry Dusks
@@ -259,24 +225,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["providers"] = {
 					{ "n", 210083 },	-- Primalist Portal (vignette)
 				},
-				["description"] = createLocalizationString({
-					readable = "Can randomly spawn in zone.",
-					constant = "CAN_RANDOMLY_SPAWN_IN_ZONE",
-					export = true,
-					text = {
-						en = "Can randomly spawn in zone.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在该区域中随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can randomly spawn in zone.",
 				["coords"] = {
 					{ 26.3, 28.5, EMERALD_DREAM },
 					-- { 65.4, 43.5, EMERALD_DREAM },
@@ -292,7 +241,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["providers"] = {
 					{ "n", 210155 },	-- Generic - Empty Bunny (vignette)
 				},
-				["description"] = "~L.FINISH_BONUS_OBJECTIVE_IN_MARKED_AREA_TO_MAKE",
+				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 65.0, 84.2, EMERALD_DREAM },
 				["groups"] = {
 					i(208327),	-- Maruud's Piercing Hands
@@ -312,24 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(210047, {	-- Somnambulant Ori
-				["description"] = createLocalizationString({
-					readable = "Fly around assigned coords",
-					constant = "FLY_AROUND_ASSIGNED_COORDS",
-					export = true,
-					text = {
-						en = "Fly around assigned coords",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在标注的坐标附近飞行寻找",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Fly around assigned coords",
 				["questID"] = 78212,
 				["coord"] = { 43.5, 47.0, EMERALD_DREAM },
 				["groups"] = {
@@ -338,24 +270,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209358, {	-- Splinterlimb
-				["description"] = createLocalizationString({
-					readable = "Gain one stack of 'Corrupting Sparks' per cycle of his route, at 8th stack become enemy (rare)",
-					constant = "GAIN_ONE_STACK_OF_CORRUPTING_SPARKS_PER_CYCLE",
-					export = true,
-					text = {
-						en = "Gain one stack of 'Corrupting Sparks' per cycle of his route, at 8th stack become enemy (rare)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在他巡逻路线的每一轮获得一层“腐蚀火花”，达到第 8 层时会变成敌人（稀有）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Gain one stack of 'Corrupting Sparks' per cycle of his route, at 8th stack become enemy (rare)",
 				["crs"] = {
 					209365,	-- Splinterlimb
 				},
@@ -371,24 +286,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["providers"] = {
 					{ "n", 210663 },	-- Surge Widget (vignette)
 				},
-				["description"] = createLocalizationString({
-					readable = "Can spawn during Emerald Frenzy event.",
-					constant = "CAN_SPAWN_DURING_EMERALD_FRENZY_EVENT",
-					export = true,
-					text = {
-						en = "Can spawn during Emerald Frenzy event.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可在翡翠狂乱事件期间刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can spawn during Emerald Frenzy event.",
 				["questID"] = 78263,
 				["coords"] = {
 					{ 60.0, 63.3, EMERALD_DREAM },
@@ -402,24 +300,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209902, {	-- Talthonei Ashwhisper
-				["description"] = createLocalizationString({
-					readable = "Killing Druids of the Flame can make her spawn in areas where they are present.",
-					constant = "KILLING_DRUIDS_OF_THE_FLAME_CAN_MAKE_HER_SPAWN",
-					export = true,
-					text = {
-						en = "Killing Druids of the Flame can make her spawn in areas where they are present.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "击杀火焰德鲁伊可能使她在其出现的区域刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Killing Druids of the Flame can make her spawn in areas where they are present.",
 				["questID"] = 77994,
 				["coords"] = {
 					{ 61.5, 67.5, EMERALD_DREAM },

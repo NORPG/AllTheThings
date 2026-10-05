@@ -59,24 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					}),
 					q(11195, {	-- Playin' With Dolls
 						-- #if BEFORE CATA
-						["description"] = createLocalizationString({
-							readable = "Located in the big hut just southeast of Halazzi's room.",
-							constant = "LOCATED_IN_THE_BIG_HUT_JUST_SOUTHEAST_OF",
-							export = true,
-							text = {
-								en = "Located in the big hut just southeast of Halazzi's room.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于哈尔拉兹房间东南方向的大屋里。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located in the big hut just southeast of Halazzi's room.",
 						["lvl"] = 70,
 						-- #endif
 						["sourceQuest"] = 11165,	-- A Troll Among Trolls
@@ -100,24 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 									{ "i",  33013 },	-- Budd's Map of Zul'Aman
 									{ "o", 186733 },	-- The Map of Zul'Aman
 								},
-								["description"] = createLocalizationString({
-									readable = "Right side before bear boss.",
-									constant = "RIGHT_SIDE_BEFORE_BEAR_BOSS",
-									export = true,
-									text = {
-										en = "Right side before bear boss.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "熊首领之前的右侧。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Right side before bear boss.",
 							}),
 							i(34067),	-- Tattered Hexcloth Sack
 						},
@@ -183,24 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 				n(ZONE_DROPS, {
 					i(33865, {	-- Amani Hex Stick
 						-- #if BEFORE CATA
-						["description"] = createLocalizationString({
-							readable = "WARNING: This will despawn if you leave the instance!",
-							constant = "WARNING_THIS_WILL_DESPAWN_IF_YOU_LEAVE_THE",
-							export = true,
-							text = {
-								en = "WARNING: This will despawn if you leave the instance!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "警告：如果你离开副本，它就会消失！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "WARNING: This will despawn if you leave the instance!",
 						-- #endif
 					}),
 				}),
@@ -208,24 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					i(33307),	-- Formula: Enchant Weapon - Executioner (RECIPE!)
 				}),
 				n(24396, {	-- Forest Frog
-					["description"] = createLocalizationString({
-						readable = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
-						constant = "USE_AN_AMANI_HEX_STICK_ON_A_FOREST_FROG_FOR_A",
-						export = true,
-						text = {
-							en = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对一只森林蛙使用阿曼尼妖术棒，有机会让魔精刷出并跳进你的背包。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
 					["cost"] = { { "i", 33865, 1 } },	-- Amani Hex Stick
 					["groups"] = {
 						i(33993),	-- Mojo (PET!)
@@ -236,24 +168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					},
 				}),
 				n(ZULAMAN_TIMED_EVENT, {
-					["description"] = createLocalizationString({
-						readable = "The event starts as soon as you open the gate. You now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, however killing Nalorakk will add 15 minutes and killing Akil'zon will add an additional 10 minutes to your timer. This is generally why players kill these two bosses first.\n\nThe loot from the event is dependent on the number of hostages you rescue, not which chest you loot first.",
-						constant = "THE_EVENT_STARTS_AS_SOON_AS_YOU_OPEN_THE_GATE",
-						export = true,
-						text = {
-							en = "The event starts as soon as you open the gate. You now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, however killing Nalorakk will add 15 minutes and killing Akil'zon will add an additional 10 minutes to your timer. This is generally why players kill these two bosses first.\n\nThe loot from the event is dependent on the number of hostages you rescue, not which chest you loot first.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你一打开大门，事件就会开始。你现在有 20 分钟时间击败你选择的第一只动物首领。任何洛阿神灵首领都可以，没有规定的顺序，但击杀纳洛拉克会为你增加 15 分钟，击杀阿基尔宗会再增加 10 分钟。这通常就是玩家先击杀这两个首领的原因。\n\n事件的掉落取决于你救出的俘虏数量，而不是你先拾取哪个宝箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The event starts as soon as you open the gate. You now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, however killing Nalorakk will add 15 minutes and killing Akil'zon will add an additional 10 minutes to your timer. This is generally why players kill these two bosses first.\n\nThe loot from the event is dependent on the number of hostages you rescue, not which chest you loot first.",
 					["groups"] = {
 						n(ZULAMAN_CHEST_1, {
 							i(33489),	-- Mantle of Ill Intent
@@ -281,24 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 							i(33498),	-- Signet of the Quiet Forest
 						}),
 						n(ZULAMAN_CHEST_4, {
-							["description"] = createLocalizationString({
-								readable = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
-								constant = "THIS_ITEM_COULD_ONLY_BE_FOUND_AFTER_THE_FOURTH",
-								export = true,
-								text = {
-									en = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只有在限定的活动时间内击败第四个动物首领后，才能找到此物品。\n\n在一次团队副本锁定中，只有一名玩家能获得它。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
 							["groups"] = {
 								ach(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
@@ -317,24 +215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						["coord"] = { 71.0, 67.2, GHOSTLANDS },
 						["groups"] = {
 							i(33105, {	-- Budd's Guise of Zul'aman
-								["description"] = createLocalizationString({
-									readable = "To obtain this, talk to Budd Nedreck after completing 'Promises, Promises...', click the dialog \"You gave the crew disguises?\", and look in your inventory.\n\n|Cffff0000WARNING: If you complete 'X Marks... Your Doom!' this option is NOT available to you!|r",
-									constant = "TO_OBTAIN_THIS_TALK_TO_BUDD_NEDRECK_AFTER",
-									export = true,
-									text = {
-										en = "To obtain this, talk to Budd Nedreck after completing 'Promises, Promises...', click the dialog \"You gave the crew disguises?\", and look in your inventory.\n\n|Cffff0000WARNING: If you complete 'X Marks... Your Doom!' this option is NOT available to you!|r",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "要获得此物品，在完成“承诺，承诺……”后与巴德·内德雷克交谈，点击对话选项“你给船员们伪装了？”，然后查看你的背包。\n\n|Cffff0000警告：如果你完成了“X 标记……你的末日！”，此选项对你不可用！|r",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "To obtain this, talk to Budd Nedreck after completing 'Promises, Promises...', click the dialog \"You gave the crew disguises?\", and look in your inventory.\n\n|Cffff0000WARNING: If you complete 'X Marks... Your Doom!' this option is NOT available to you!|r",
 								["sourceQuest"] = 11132,	-- Promises, Promises...
 								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },	-- Conditionally removed based on quest progress.
 							}),

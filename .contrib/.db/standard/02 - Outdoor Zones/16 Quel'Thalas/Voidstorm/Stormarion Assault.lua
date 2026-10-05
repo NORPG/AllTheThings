@@ -173,24 +173,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(TREASURES, {
 				o(566083, {	-- Stormarion Supplies
-					["description"] = createLocalizationString({
-						readable = "Spawns randomly around Stormarion Citadel.",
-						constant = "SPAWNS_RANDOMLY_AROUND_STORMARION_CITADEL",
-						export = true,
-						text = {
-							en = "Spawns randomly around Stormarion Citadel.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在斯托玛里安城堡周围随机刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns randomly around Stormarion Citadel.",
 				}),
 				o(618828, {	-- Stormarion Fragment
 					["coord"] = { 27.1, 68.3, MAP.MIDNIGHT.VOIDSTORM },

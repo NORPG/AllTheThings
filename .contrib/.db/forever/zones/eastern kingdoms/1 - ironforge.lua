@@ -292,24 +292,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 							objective(5, {	-- 0/1 Standard Issue Flare Gun
 								["questID"] = 3449,	-- Arcane Runes
 								["provider"] = { "i", 10444 },	-- Standard Issue Flare Gun
-								["description"] = createLocalizationString({
-									readable = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
-									constant = "DO_NOT_LEAVE_IRONFORGE_WITHOUT_THIS_CRIEVE",
-									export = true,
-									text = {
-										en = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "没有这个东西就不要离开铁炉堡。\n - Crieve",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
 								["coord"] = { 77.0, 91.0, MAP.AZSHARA },
 							}),
 						},
@@ -408,24 +391,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(6735, {	-- Plans: Ironforge Breastplate (RECIPE!)
-						["description"] = createLocalizationString({
-							readable = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
-							constant = "THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
-							export = true,
-							text = {
-								en = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品可以在中立拍卖行卖给部落锻造师，换取……一点象征性的费用。\n\n只有联盟锻造师才能自然获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 					}),
 				},
 			}),
@@ -492,24 +458,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				["lvl"] = 10,
 			}),
 			q(6609, {	-- I Got Nothin' Left!
-				["description"] = createLocalizationString({
-					readable = "Requires 225 Fishing to start this quest.",
-					constant = "REQUIRES_225_FISHING_TO_START_THIS_QUEST",
-					export = true,
-					text = {
-						en = "Requires 225 Fishing to start this quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 225 点钓鱼技能才能开始此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 225 Fishing to start this quest.",
 				["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
 				["coord"] = { 48.2, 6.6, MAP.IRONFORGE },
 				["requireSkill"] = FISHING,
@@ -964,24 +913,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 		n(VENDORS, {
 			n(7978, {	-- Bimble Longberry <Fruit Vendor>
 				["coord"] = { 32.4, 21.2, MAP.IRONFORGE },
-				["description"] = createLocalizationString({
-					readable = "Walks around The Mystic Ward.",
-					constant = "WALKS_AROUND_THE_MYSTIC_WARD",
-					export = true,
-					text = {
-						en = "Walks around The Mystic Ward.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在秘法区周围走动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Walks around The Mystic Ward.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(8953),	-- Deep Fried Plantains
@@ -1364,24 +1296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			n(5109, {	-- Myra Tyrngaarde <Bread Vendor>
 				["coord"] = { 29.8, 67.5, MAP.IRONFORGE },
-				["description"] = createLocalizationString({
-					readable = "Walks around The Commons.",
-					constant = "WALKS_AROUND_THE_COMMONS",
-					export = true,
-					text = {
-						en = "Walks around The Commons.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在平民区周围走动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Walks around The Commons.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(4541),	-- Freshly Baked Bread
@@ -1482,24 +1397,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			n(5124, {	-- Sognar Cliffbeard <Meat Vendor>
 				["coord"] = { 62.1, 72.0, MAP.IRONFORGE },
-				["description"] = createLocalizationString({
-					readable = "Walks around The Military Ward.",
-					constant = "WALKS_AROUND_THE_MILITARY_WARD",
-					export = true,
-					text = {
-						en = "Walks around The Military Ward.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在军事区周围走动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Walks around The Military Ward.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(4599),	-- Cured Ham Steak
@@ -1524,24 +1422,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			n(9099, {	-- Sraaz <Pie Vendor>
 				["coord"] = { 46.6, 47.2, MAP.IRONFORGE },
-				["description"] = createLocalizationString({
-					readable = "Walks around The Great Forge.",
-					constant = "WALKS_AROUND_THE_GREAT_FORGE",
-					export = true,
-					text = {
-						en = "Walks around The Great Forge.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在大锻炉周围走动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Walks around The Great Forge.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(8950),	-- Homemade Cherry Pie
@@ -1596,24 +1477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(8117, {	-- Wizbang Booms
 				["coord"] = { 31.8, 63.4, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["description"] = createLocalizationString({
-					readable = "This NPC is only available on July 4th.",
-					constant = "THIS_NPC_IS_ONLY_AVAILABLE_ON_JULY_4TH",
-					export = true,
-					text = {
-						en = "This NPC is only available on July 4th.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该NPC只在 7 月 4 日出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This NPC is only available on July 4th.",
 				["sym"] = {{"select","itemID",
 					8626,	-- Blue Sparkler
 					8625,	-- White Sparkler

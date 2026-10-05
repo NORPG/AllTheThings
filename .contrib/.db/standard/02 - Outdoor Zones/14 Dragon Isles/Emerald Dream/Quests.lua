@@ -1086,24 +1086,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			-- Sprout weekly?
 			q(77677, {	-- Some Water...
-				["description"] = createLocalizationString({
-					readable = "Dismount, and click through dialogue to obtain quest.",
-					constant = "DISMOUNT_AND_CLICK_THROUGH_DIALOGUE_TO_OBTAIN",
-					export = true,
-					text = {
-						en = "Dismount, and click through dialogue to obtain quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "下坐骑，并点击对话以获取任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Dismount, and click through dialogue to obtain quest.",
 				-- ["sourceQuests"] = {
 				-- 	77283,	-- A Multi-Front Battle
 				-- 	77887,	-- 'World Quest Unlock' (spellID 421687)
@@ -1157,24 +1140,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(208647, {	-- Primed Emerald Dream Fertilizer (QI!)
-						["description"] = createLocalizationString({
-							readable = "Takes 3 days to turn into this.",
-							constant = "TAKES_3_DAYS_TO_TURN_INTO_THIS",
-							export = true,
-							text = {
-								en = "Takes 3 days to turn into this.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要 3 天才能变成这个。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Takes 3 days to turn into this.",
 						["cost"] = { { "i", 208646, 1 } },	-- Combined Fertilizer Ingredients (QI!)
 					}),
 				},

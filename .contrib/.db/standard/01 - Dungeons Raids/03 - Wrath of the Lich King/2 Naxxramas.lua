@@ -93,24 +93,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 		}),
 		n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			n(206712, {	-- Valiance
-				["description"] = createLocalizationString({
-					readable = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
-					constant = "YOU_MUST_DO_THIS_IN_THE_10_MAN_VERSION_OF",
-					export = true,
-					text = {
-						en = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须在 10 人版本的纳克萨玛斯中进行此操作，并让教官拉苏维奥斯保持存活。\n\n拿到腐烂的美味苹果后，你需要回到瓦兰斯身边，缓慢靠近它，同时尝试把物品交给它。一旦成功，这匹战马会吃掉腐烂的苹果，但这还不够，它仍然会拒绝你成为它的骑手。\n\n点击首领附近的顺从水晶之一，以精神控制一名见习助手小怪，并把被精神控制的小怪带到瓦兰斯处，此时它会上马骑乘瓦兰斯。把骑着坐骑的小怪带回拉苏维奥斯处，然后通过点击被精神控制的宠物头像并选择解散来打破精神控制。\n\n现在击杀首领并拾取你的新坐骑。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
 				["questID"] = 76378,
 				["cost"] = { { "i", 208068, 1 } },	-- 1x Rotten Delicious
 				["groups"] = {
@@ -383,24 +366,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 					ach(2184, {	-- Just Can't Get Enough (10 player)
 						["cr"] = 16428,	-- Unstoppable Abomination
 						-- #if AFTER MOP
-						["description"] = createLocalizationString({
-							readable = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
-							constant = "PULL_1_ABOMINATION_FROM_EACH_SECTION_AND_THEN",
-							export = true,
-							text = {
-								en = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "从每个区域拉 1 只憎恶，等它们聚到你身边后一起群杀掉。非常简单的成就。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 						-- #endif
 					}),
 					ach(5016, {	-- Just Can't Get Enough - Guild Edition
@@ -546,24 +512,7 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(39275),	-- Contagion Gloves
 			i(39262, {	-- Gauntlets of Combined Strength
 				-- #if ANYCLASSIC
-				["description"] = createLocalizationString({
-					readable = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-					constant = "THIS_ITEM_WAS_ORIGINALLY_AVAILABLE_IN_NAXXRAMAS",
-					export = true,
-					text = {
-						en = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此物品最初可以在纳克萨玛斯 10 人版本中获得，但在《巫妖王之怒》经典版引入 H+ 后就被移除了。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
 				-- #endif
 			}),
@@ -573,24 +522,7 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				["OnUpdate"] = [[function(t) if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
 				-- #endif
 				-- #if BEFORE 8.0.1
-				["description"] = createLocalizationString({
-					readable = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.\n\nInterestingly enough, its absence triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
-					constant = "THIS_ITEM_WAS_ORIGINALLY_UNAVAILABLE_UNTIL",
-					export = true,
-					text = {
-						en = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.\n\nInterestingly enough, its absence triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此物品最初在 8.0.1 补丁之前无法获得，但在《巫妖王之怒》经典版引入 H+ 后，它作为古代王国的首领掉落被加入。\n\n有趣的是，正是因为 Crieve 历经数月屡屡刷不到这个幻化，它的缺失促成了这个插件的诞生。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.\n\nInterestingly enough, its absence triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 				-- #endif
 				["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
 			}),
@@ -938,7 +870,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 					ach(2185, {	-- Just Can't Get Enough (25 player)
 						["cr"] = 16428,	-- Unstoppable Abomination
 						-- #if AFTER MOP
-						["description"] = "~L.PULL_1_ABOMINATION_FROM_EACH_SECTION_AND_THEN",
+						["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 						-- #endif
 					}),
 					ach(5016, {	-- Just Can't Get Enough - Guild Edition
@@ -1424,24 +1356,7 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 -- Shared 10/25 Man Content
 -- #if AFTER 5.1.0
 local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
-	["description"] = createLocalizationString({
-		readable = "With the release of Defense Protocol Alpha, loot that originally dropped in 10 man Naxx was moved to the DPA level difficulty dungeons and 10 man Naxx itself was upgraded to drop its 25 man loot instead.",
-		constant = "WITH_THE_RELEASE_OF_DEFENSE_PROTOCOL_ALPHA_LOOT",
-		export = true,
-		text = {
-			en = "With the release of Defense Protocol Alpha, loot that originally dropped in 10 man Naxx was moved to the DPA level difficulty dungeons and 10 man Naxx itself was upgraded to drop its 25 man loot instead.",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "随着防御协议阿尔法上线，原本掉落于 10 人纳克萨玛斯的战利品被移至 DPA 等级难度的地下城，而 10 人纳克萨玛斯本身则升级为掉落其 25 人模式的战利品。",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "With the release of Defense Protocol Alpha, loot that originally dropped in 10 man Naxx was moved to the DPA level difficulty dungeons and 10 man Naxx itself was upgraded to drop its 25 man loot instead.",
 	["lvl"] = lvlsquish(80, 80, 30),
 	["groups"] = {
 		-- #if NAXX_10MAN_DROPS_25MAN_LOOT
@@ -1523,24 +1438,7 @@ local DEATHS_BARGAINING_CHIP = 206576;
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 inst(754, {	-- Naxxramas
 	-- #if AFTER 10.1.5
-	["description"] = createLocalizationString({
-		readable = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
-		constant = "MAKE_SURE_YOU_GO_THROUGH_WARDS_OF_THE_DREAD",
-		export = true,
-		text = {
-			en = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "在刷这个团队副本之前，务必先完成“恐怖堡垒的结界”，这样你在刷取过程中就能获得天灾石和特殊材料。更多信息请参见相应的标题。",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
 	-- #endif
 	["mapID"] = NAXXRAMAS,
 	["coords"] = {
@@ -1559,65 +1457,14 @@ inst(754, {	-- Naxxramas
 		{
 			-- #if AFTER 10.1.5
 			header(HEADERS.Achievement, 18372, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Wards of the Dread Citadel
-				["description"] = createLocalizationString({
-					readable = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",
-					constant = "WITH_10_1_5_BLIZZARD_READDED_VANILLA_NAXXRAMAS",
-					export = true,
-					text = {
-						en = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "随着 10.1.5 版本，暴雪重新加入了原版纳克萨玛斯和 T3 制造。解锁此内容需要完成以下阶段：\n\n第 1-3 阶段发生在通灵学院和瘟疫之地，请参阅各区域中“恐惧堡垒的结界”标题下的说明。\n\n以下阶段发生在纳克萨玛斯，你可以从东瘟疫之地使用 35.7, 23.1 处的传送门到达。由于需要在狭窄空间内进行跳跃攀爬，建议使用侏儒或地精角色进行。\n所需物品：\n至少 1 个斯坦索姆圣水\n3 个黑暗符文\n20 个入侵者的天灾石\n1 个黑咖啡，在沙塔斯（70.6, 51.8）/ 暴风城（69.4, 65.4）购买\n2 瓶速度药水，如果你没有类似燃烧狂奔的技能。\n\n第 4 阶段：临时抓钩，请参阅下方子标题中的说明。\n\n第 5 阶段：互惠互利的交易，请参阅下方子标题中的说明。\n\n第 6 阶段：被遗忘的知识，请参阅下方子标题中的说明。\n\n恭喜，全部已解锁，欢迎来到刷取之旅！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",
 				["groups"] = {
 					header(HEADERS.Item, 206473, {	-- Makeshift Grappling Hook
-						["description"] = createLocalizationString({
-							readable = "1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",
-							constant = "1_FIRST_YOU_NEED_TO_CREATE_A_MAKESHIFT",
-							export = true,
-							text = {
-								en = "1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "1. 首先，你需要用以下物品制作一个简易抓钩：\n\n1.1 憎恶的锁链可以从任何软泥怪（绿色液体）中钓出，例如蜘蛛区入口内的小水池。\n\n1.2 法琳娜的缝纫包掉落自蜘蛛区的大寡妇法琳娜。\n\n1.3 构造体的钩子位于构造区第二个房间右侧一桶软泥怪下方的一个把手上。\n\n2. 使用你的简易抓钩，即可在账号通用的基础上使用纳克萨玛斯内的抓钩点。\n\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",
 						["groups"] = {
 							prof(FISHING, {
 								i(206471, {	-- Abomination's Chain
-									["description"] = createLocalizationString({
-										readable = "Chance to be fished from any slime in Naxxramas.",
-										constant = "CHANCE_TO_BE_FISHED_FROM_ANY_SLIME_IN_NAXXRAMAS",
-										export = true,
-										text = {
-											en = "Chance to be fished from any slime in Naxxramas.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "有几率从纳克萨玛斯的任何软泥怪身上钓到。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Chance to be fished from any slime in Naxxramas.",
 									["sourceQuests"] = {
 										76263,	-- The Dread Citadel - Naxxramas [Honored]
 										76264,	-- The Dread Citadel - Naxxramas [Revered]
@@ -1643,24 +1490,7 @@ inst(754, {	-- Naxxramas
 							})),
 							n(TREASURES, {
 								o(403722, {	-- Conveniently Misplaced Hook
-									["description"] = createLocalizationString({
-										readable = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
-										constant = "LOCATED_IN_THE_SECOND_ROOM_OF_THE_CONSTRUCT",
-										export = true,
-										text = {
-											en = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "位于构造区的第二个房间，右侧的一口软泥缸旁。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
 									["sourceQuests"] = {
 										76263,	-- The Dread Citadel - Naxxramas [Honored]
 										76264,	-- The Dread Citadel - Naxxramas [Revered]
@@ -1690,72 +1520,21 @@ inst(754, {	-- Naxxramas
 						},
 					}),
 					header(HEADERS.Spell, 413989, {	-- Mutually Beneficial Transactions
-						["description"] = createLocalizationString({
-							readable = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northern ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmash on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
-							constant = "1_KILL_ALL_BOSSES_IN_CONSTRUCT_QUARTER_AND_WALK",
-							export = true,
-							text = {
-								en = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northern ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmash on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "1. 杀死构造区的所有首领，然后走回复生大厅的入口。\n\n2. 沿斜坡走上左侧的平台，你应该能看到左侧两处岩脊上有两个抓钩点。用抓钩前往南侧的岩脊。\n\n3. 加速跳跃（燃烧狂奔/加速药水）到岩脊东北方的平台，并调整位置，使你面向通往北侧岩脊的对应平台。该平台与一个顶部有两扇窗户的墙体结构相连。左边窗户的窗台就是下一个抓钩点的位置。用抓钩上去。\n\n4. 沿着墙面向东北方向跳到棕色岩脊上，绕过拐角，越过墙上的骷髅，再向东南方向折返。下一个抓钩点在缺口对面左侧的一处窗台上，用抓钩过去。\n\n5. 沿岩脊向西南方向前进并绕过拐角。你应该能看到前方墙上有两个管道口，下一个抓钩点在左边的管道上。用抓钩过去。\n\n6. 面向你抓钩过来的位置，你应该能看到扎克特·碎颅在一个窗台上。跳下去到那个 NPC 处。\n\n7. 对扎克特·碎颅使用斯坦索姆圣水，接受任务“不便之费”。你身上应该已经带齐了所有必需的物品，可以立即交任务。这会在账号通用的基础上解锁扎克特·碎颅，这个地精会移动到中央圆环。\n\n8. 你可以安全地跳到你进入该房间入口上方的那处岩脊下来，然后通过位于你杀死塔迪乌斯处的纳克萨玛斯传送门离开。\n\n\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northern ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmash on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
 						["groups"] = {
 							n(206572, {	-- Zackett Skullsmash
 								["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 								["groups"] = {
 									i(206573, {	-- Dented Raider's Belt
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的腰带，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206609),	-- Lamented Crusader's Belt
 										},
 									}),
 									i(206575, {	-- Dented Raider's Boots
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_2",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的靴子，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(10402),	-- Blackened Defias Boots
 											i(206611),	-- Lamented Crusader's Boots
@@ -1765,48 +1544,14 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206571, {	-- Dented Raider's Bracers
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_3",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的护腕，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206607),	-- Lamented Crusader's Bracers
 										},
 									}),
 									i(206570, {	-- Dented Raider's Chestpiece
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_4",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的胸甲，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206606),	-- Lamented Crusader's Chestpiece
 											i(3019),	-- Noble's Robe
@@ -1814,24 +1559,7 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206572, {	-- Dented Raider's Gauntlets
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_5",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的护手，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206608),	-- Lamented Crusader's Gauntlets
 											-- i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
@@ -1840,48 +1568,14 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206568, {	-- Dented Raider's Helmet
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_6",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的头盔，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206604),	-- Lamented Crusader's Helmet
 										},
 									}),
 									i(206574, {	-- Dented Raider's Leggings
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_7",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的护腿，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											-- i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
 											-- i(2978),	-- Veteran Leggings					-- Likely added back. Add when confirmed
@@ -1890,24 +1584,7 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206569, {	-- Dented Raider's Spaulders
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = createLocalizationString({
-											readable = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-											constant = "INCLUDES_A_WIDE_RANGE_OF_BIND_ON_EQUIP_BOE_8",
-											export = true,
-											text = {
-												en = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "包含《经典旧世》中大量装备后绑定（BoE）的护肩，包括地下城中掉落的。我们特别收录了以凹陷令牌作为唯一或最佳来源的物品。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 										["groups"] = {
 											i(206605),	-- Lamented Crusader's Spaulders
 										},
@@ -1930,24 +1607,7 @@ inst(754, {	-- Naxxramas
 									}),
 									i(206579, {	-- Phylacterweave
 										-- Dont symlink it Dented tokens, makes it too spammy
-										["description"] = createLocalizationString({
-											readable = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
-											constant = "CAN_ALSO_DROP_FROM_ANY_DENTED_RAIDER_S_TOKEN",
-											export = true,
-											text = {
-												en = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "也可从任意凹陷的袭击者徽记中掉落。\n在 10.1.7 中改为账号绑定。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
 									}),
 									i(206565, {	-- Plagued Grain (TOY!)
 										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 15 } },
@@ -2053,116 +1713,31 @@ inst(754, {	-- Naxxramas
 						},
 					}),
 					header(HEADERS.Spell, 413594, {	-- Forgotten Knowledge
-						["description"] = createLocalizationString({
-							readable = "1. Enter the Military Quarter and walk straight into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy them from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",
-							constant = "1_ENTER_THE_MILITARY_QUARTER_AND_WALK_STRAIGHT",
-							export = true,
-							text = {
-								en = "1. Enter the Military Quarter and walk straight into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy them from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "1. 进入军事区，径直走向第二个房间的尽头墙壁。在你的右侧有一个笼子，里面装着奥玛里恩的第二本手册。拾取它并接受任务。\n\n2. 回到中央圆环，使用通往东瘟疫之地的传送门，在圣光之愿礼拜堂交任务。这会奖励你在账号通用基础上收集缺失的配方并向工匠大师奥玛里恩购买它们的能力。\n\n3. 现在，你仍然需要收集失落的书页并把它们还给奥玛里恩。共有 16 张双页需要收集，相应的书页上都有描述，说明在哪里可以找到它们。这些书页大致是有顺序的：\n\n蜘蛛区：\n第 3 和 4 页 -> 第 5 和 6 页 ->\n第 1 和 2 页 -> 第 7 和 8 页。\n\n构造区：\n第 9 和 10 页 = 第 11 和 12 页 =\n第 13 和 14 页 -> 第 15 和 16 页。\n\n瘟疫区：\n第 17 和 18 页 -> 第 19 和 20 页 ->\n第 21 和 22 页 -> 第 23 和 24 页\n\n军事区：\n第 29 和 30 页 -> 第 31 和 32 页 ->\n第 25 和 26 页 -> 第 27 和 28 页\n\n4. 带着失落的书页返回工匠大师奥玛里恩处，他的所有配方都会在账号通用基础上开放。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "1. Enter the Military Quarter and walk straight into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy them from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",
 						["groups"] = {
 							o(403702, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
-									constant = "PAGES_1_AND_2_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 1 页和第 2 页位于纳克萨玛斯的外环，在分隔构造区与蜘蛛区的软泥池内，位于副本的北侧。它就在池底。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206450),	-- Omarion's Notes - Pages 1 & 2 (CI!)
 								},
 							}),
 							o(403703, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
-									constant = "PAGES_3_AND_4_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 3 页和第 4 页位于蜘蛛区的第一个房间，藏在软泥池旁的废墟结构内。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206451),	-- Omarion's Notes - Pages 3 & 4 (CI!)
 								},
 							}),
 							o(403704, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
-									constant = "PAGES_5_AND_6_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 5 页和第 6 页就在进入法琳娜房间之前——不要左转进入首领房间，而是右转。书页藏在一堆蜘蛛卵下面。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206452),	-- Omarion's Notes - Pages 5 & 6 (CI!)
 								},
 							}),
 							o(403705, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 7 and 8 of Omarion's Notes can be found in Maexxna's Room. Once you enter the room, turn back to face the entrance and look up, there will be a grapple point just above the entrance. Grapple and walk around the outer ring to the eastern end of the room, where the notes will be waiting for you.",
-									constant = "PAGES_7_AND_8_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 7 and 8 of Omarion's Notes can be found in Maexxna's Room. Once you enter the room, turn back to face the entrance and look up, there will be a grapple point just above the entrance. Grapple and walk around the outer ring to the eastern end of the room, where the notes will be waiting for you.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 7 页和第 8 页位于迈克斯纳的房间。进入房间后回头面向入口并抬头看，入口正上方会有一个抓钩点。钩上去后沿外环走到房间的东端，笔记就在那里等着你。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 7 and 8 of Omarion's Notes can be found in Maexxna's Room. Once you enter the room, turn back to face the entrance and look up, there will be a grapple point just above the entrance. Grapple and walk around the outer ring to the eastern end of the room, where the notes will be waiting for you.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2172,24 +1747,7 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403706, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 9 and 10 of Omarion's Notes can be found just before the tunnel that leads to Gluth. Before you enter the tunnel, by the pipe after Grobbulus, there will be a grapple point. Simply grapple to it to reach the note.",
-									constant = "PAGES_9_AND_10_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 9 and 10 of Omarion's Notes can be found just before the tunnel that leads to Gluth. Before you enter the tunnel, by the pipe after Grobbulus, there will be a grapple point. Simply grapple to it to reach the note.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 9 页和第 10 页就在通往格拉斯的隧道之前。进入隧道前，在格罗布鲁斯之后的管道旁会有一个抓钩点。直接钩上去即可拿到笔记。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 9 and 10 of Omarion's Notes can be found just before the tunnel that leads to Gluth. Before you enter the tunnel, by the pipe after Grobbulus, there will be a grapple point. Simply grapple to it to reach the note.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2199,24 +1757,7 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403707, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 11 and 12 of Omarion's Notes can be found in Grobbulus's room. Climb the ramp behind the boss and turn back, you will see a grappling point to a small alcove near the ceiling of the room. Grapple there and walk to the end of the alcove to reach the note.",
-									constant = "PAGES_11_AND_12_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 11 and 12 of Omarion's Notes can be found in Grobbulus's room. Climb the ramp behind the boss and turn back, you will see a grappling point to a small alcove near the ceiling of the room. Grapple there and walk to the end of the alcove to reach the note.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 11 和 12 页可以在格罗布鲁斯的房间里找到。爬上首领身后的斜坡再转身，你会看到一个通向房间天花板附近小壁龛的钩爪点。钩到那里，走到壁龛尽头即可拿到笔记。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 11 and 12 of Omarion's Notes can be found in Grobbulus's room. Climb the ramp behind the boss and turn back, you will see a grappling point to a small alcove near the ceiling of the room. Grapple there and walk to the end of the alcove to reach the note.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2226,24 +1767,7 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403708, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 13 and 14 of Omarion's Notes can be found high on the ceiling on the corridor after Patchwerk. To reach the page, start by grabbing a grapple point by the tunnel leading to Gluth, at the broken portion to the left just before dropping to the boss, then follow a small grappling puzzle to get to the page.",
-									constant = "PAGES_13_AND_14_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 13 and 14 of Omarion's Notes can be found high on the ceiling on the corridor after Patchwerk. To reach the page, start by grabbing a grapple point by the tunnel leading to Gluth, at the broken portion to the left just before dropping to the boss, then follow a small grappling puzzle to get to the page.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 13 和 14 页可以在帕奇维克之后走廊的天花板高处找到。要拿到这页，先从通往格拉斯的隧道旁、在即将跳向首领前左侧的破损处抓住一个钩爪点，然后完成一段小小的钩爪谜题即可拿到笔记。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 13 and 14 of Omarion's Notes can be found high on the ceiling on the corridor after Patchwerk. To reach the page, start by grabbing a grapple point by the tunnel leading to Gluth, at the broken portion to the left just before dropping to the boss, then follow a small grappling puzzle to get to the page.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2253,24 +1777,7 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403709, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 15 and 16 of Omarion's Notes can be found in Thaddius's room, by grappling on your way towards Zackett Skullsmash as described in the header 'Mutually Beneficial Transactions'. The note is by the second grapple point.",
-									constant = "PAGES_15_AND_16_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 15 and 16 of Omarion's Notes can be found in Thaddius's room, by grappling on your way towards Zackett Skullsmash as described in the header 'Mutually Beneficial Transactions'. The note is by the second grapple point.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 15 和 16 页可以在塔迪乌斯的房间里找到，沿着标题“互利的交易”中所述的方式朝扎克特·碎颅方向钩爪前进即可。笔记就在第二个钩爪点旁。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 15 and 16 of Omarion's Notes can be found in Thaddius's room, by grappling on your way towards Zackett Skullsmash as described in the header 'Mutually Beneficial Transactions'. The note is by the second grapple point.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2280,120 +1787,35 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403710, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
-									constant = "PAGES_17_AND_18_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 17 和 18 页可以在瘟疫区第一个房间里找到，就在入口左侧一辆运肉车旁。这页和运肉车很容易混在一起，所以可能会被忽略。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206458),	-- Omarion's Notes - Pages 17 & 18 (CI!)
 								},
 							}),
 							o(403711, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
-									constant = "PAGES_19_AND_20_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 19 页和第 20 页可在瘟疫区诺斯与希尔盖之间的走廊找到。在左侧的怪物走廊上会有一个被下水道井盖盖住的软泥池，附近还有一些蘑菇。笔记就在其中一朵蘑菇上面。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206459),	-- Omarion's Notes - Pages 19 & 20 (CI!)
 								},
 							}),
 							o(403712, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
-									constant = "PAGES_21_AND_22_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 21 页和第 22 页位于洛欧塞布的房间，在首领所站位置左侧的一道门旁（从首领房间入口向内看时）。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206460),	-- Omarion's Notes - Pages 21 & 22 (CI!)
 								},
 							}),
 							o(403713, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
-									constant = "PAGES_23_AND_24_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 23 页和第 24 页位于俯瞰诺斯房间的平台上。该平台可经由外环抵达。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206461),	-- Omarion's Notes - Pages 23 & 24 (CI!)
 								},
 							}),
 							o(403714, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 25 and 26 of Omarion's Notes can be found above the entrance to Gothik's room. Grapple to an upper alcove right at the entrance of the weapon mobs room after Razuvious, then carefully run along the small alcove all the way to Gothik's room to reach the page.",
-									constant = "PAGES_25_AND_26_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 25 and 26 of Omarion's Notes can be found above the entrance to Gothik's room. Grapple to an upper alcove right at the entrance of the weapon mobs room after Razuvious, then carefully run along the small alcove all the way to Gothik's room to reach the page.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 25 页和第 26 页位于戈提克房间入口的上方。在拉苏维奥斯之后的武器怪物房间入口处用抓钩上到上层的壁龛，然后沿着这个小壁龛小心地一路跑到戈提克房间即可拿到书页。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 25 and 26 of Omarion's Notes can be found above the entrance to Gothik's room. Grapple to an upper alcove right at the entrance of the weapon mobs room after Razuvious, then carefully run along the small alcove all the way to Gothik's room to reach the page.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2403,48 +1825,14 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403715, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
-									constant = "PAGES_27_AND_28_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 27 页和第 28 页位于天启四骑士的房间，进入房间后左侧的一根下水道管道旁。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206463),	-- Omarion's Notes - Pages 27 & 28 (CI!)
 								},
 							}),
 							o(403716, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 29 and 30 of Omarion's Notes can be found by the stables in Instructor Razuvious's room. Use the grapple point to an upper alcove by the nest just in front of the entrance of Razuvious's battle arena, then run along the alcove eastwards to reach the note.",
-									constant = "PAGES_29_AND_30_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 29 and 30 of Omarion's Notes can be found by the stables in Instructor Razuvious's room. Use the grapple point to an upper alcove by the nest just in front of the entrance of Razuvious's battle arena, then run along the alcove eastwards to reach the note.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 29 页和第 30 页位于教官拉苏维奥斯房间的马厩旁。使用拉苏维奥斯战斗区域入口正前方鸟巢旁的上层壁龛抓钩点，然后沿壁龛向东跑即可拿到笔记。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 29 and 30 of Omarion's Notes can be found by the stables in Instructor Razuvious's room. Use the grapple point to an upper alcove by the nest just in front of the entrance of Razuvious's battle arena, then run along the alcove eastwards to reach the note.",
 								["sourceQuests"] = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
@@ -2454,48 +1842,14 @@ inst(754, {	-- Naxxramas
 								},
 							}),
 							o(403717, {	-- Lost Page
-								["description"] = createLocalizationString({
-									readable = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
-									constant = "PAGES_31_AND_32_OF_OMARION_S_NOTES_CAN_BE_FOUND",
-									export = true,
-									text = {
-										en = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "奥马里昂的笔记第 31 页和第 32 页位于拉苏维奥斯之后那个布满附魔武器的房间。在右侧靠近角落处，其中一个窗框旁。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
 								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 								["groups"] = {
 									i(206465),	-- Omarion's Notes - Pages 31 & 32 (CI!)
 								},
 							}),
 							o(403962, {	-- Omarion's Second Handbook
-								["description"] = createLocalizationString({
-									readable = "Located inside a cage in the first major room of the Military Quarter.",
-									constant = "LOCATED_INSIDE_A_CAGE_IN_THE_FIRST_MAJOR_ROOM",
-									export = true,
-									text = {
-										en = "Located inside a cage in the first major room of the Military Quarter.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "位于军事区第一个主要房间里的一个牢笼中。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Located inside a cage in the first major room of the Military Quarter.",
 								["groups"] = {
 									i(206449),	-- Omarion's Second Handbook
 								},
@@ -3253,24 +2607,7 @@ inst(754, {	-- Naxxramas
 							["sourceQuestNumRequired"] = 1,
 							["groups"] = {
 								i(22682, {	-- Frozen Rune
-									["description"] = createLocalizationString({
-										readable = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
-										constant = "31_FROZEN_RUNES_CAN_BE_FOUND_THROUGH_LOWER",
-										export = true,
-										text = {
-											en = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在（下层）纳克萨玛斯中可以找到 31 个冰冻符文：\n\n蜘蛛区有 6 个，其中 4 个位于首领附近或首领之间。最后 2 个可以在外环的西北部找到。\n\n瘟疫区有 8 个，其中 5 个位于首领附近。最后 3 个可以在外环中找到。\n\n军事区有 8 个，其中 5 个位于首领附近或首领之间。最后 3 个可以在外环的西北部找到。\n\n构造区有 9 个，其中 5 个位于首领附近。最后 4 个可以在外环中找到。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
 									-- Arachnid Quarter: (6)
 										-- 1: Behind Anub'Rekhan
 										-- 2: To the left of Grand Widow Faerlina

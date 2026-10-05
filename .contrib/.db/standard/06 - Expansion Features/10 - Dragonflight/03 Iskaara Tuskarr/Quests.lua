@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 3 --
 					q(70938, {	-- Community Feasts
-						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
+						["description"] = "Spawns Anywhere on Dragon Isles.",
 						["provider"] = { "n", 197631 },	-- Rowie
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
@@ -165,24 +165,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 9 --
 					q(70959, {	-- Cute and Cuddly
-						["description"] = createLocalizationString({
-							readable = "Runs around Iskaara.",
-							constant = "RUNS_AROUND_ISKAARA",
-							export = true,
-							text = {
-								en = "Runs around Iskaara.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在伊斯卡拉四处跑动。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Runs around Iskaara.",
 						["provider"] = { "n", 186564 },	-- Jiq
 						["coord"] = { 13.5, 49.2, THE_AZURE_SPAN },
 						["groups"] = {
@@ -209,7 +192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 11 --
 					q(68863, {	-- A Lost Tribe
-						["description"] = "~L.SPAWNS_ANYWHERE_ON_DRAGON_ISLES",
+						["description"] = "Spawns Anywhere on Dragon Isles.",
 						["provider"] = { "n", 197631 },	-- Rowie
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 						["isBreadcrumb"] = true,
@@ -299,24 +282,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(66443, {	-- Calling the Hunting Party
-						["description"] = createLocalizationString({
-							readable = "Automatically given after the previous quest.",
-							constant = "AUTOMATICALLY_GIVEN_AFTER_THE_PREVIOUS_QUEST",
-							export = true,
-							text = {
-								en = "Automatically given after the previous quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在完成上一个任务后自动给予。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Automatically given after the previous quest.",
 						["sourceQuests"] = { 66415 },	-- The Only Way Past Is Through
 						["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
 					}),

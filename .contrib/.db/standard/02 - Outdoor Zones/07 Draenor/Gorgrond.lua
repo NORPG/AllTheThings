@@ -163,46 +163,12 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8923, {	-- Putting the Gore in Gorgrond (A)
-						["description"] = createLocalizationString({
-							readable = "Completing the Achievement will allow you to buy 'Gorgrond Treasure Map' from Grakis in Stormshield.",
-							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO",
-							export = true,
-							text = {
-								en = "Completing the Achievement will allow you to buy 'Gorgrond Treasure Map' from Grakis in Stormshield.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成该成就后，你可以在暴风之盾的格拉基斯处购买“戈尔隆德藏宝图”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Completing the Achievement will allow you to buy 'Gorgrond Treasure Map' from Grakis in Stormshield.",
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8924, {	-- Putting the Gore in Gorgrond (H)
-						["description"] = createLocalizationString({
-							readable = "Completing the Achievement will allow you to buy 'Gorgrond Treasure Map' from Srikka in Warspear.",
-							constant = "COMPLETING_THE_ACHIEVEMENT_WILL_ALLOW_YOU_TO_2",
-							export = true,
-							text = {
-								en = "Completing the Achievement will allow you to buy 'Gorgrond Treasure Map' from Srikka in Warspear.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成该成就后，你可以在战争之矛的斯里卡处购买“戈尔隆德藏宝图”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Completing the Achievement will allow you to buy 'Gorgrond Treasure Map' from Srikka in Warspear.",
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -222,48 +188,14 @@ root(ROOTS.Zones, {
 						pet(1469),	-- Junglebeak (PET!)
 						pet(702),	-- Leopard Tree Frog (PET!)
 						pet(1594, {	-- Mudback Calf (PET!)
-							["description"] = createLocalizationString({
-								readable = "Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",
-								constant = "BEST_GENERAL_LOCATIONS_TO_FIND_THESE_ARE_AROUND",
-								export = true,
-								text = {
-									en = "Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "寻找它们的最佳大致位置在这些坐标附近。击杀附近的其他小动物有助于它们刷新。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Best general locations to find these are around the coords. Killing other nearby critters helps spawn them.",
 							["coords"] = {
 								{ 46.0, 90.8, GORGROND },
 								{ 40.8, 77.4, GORGROND },
 							},
 						}),
 						pet(1615, {	-- Parched Lizard (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found mostly in and around Gronn Canyon.",
-								constant = "FOUND_MOSTLY_IN_AND_AROUND_GRONN_CANYON",
-								export = true,
-								text = {
-									en = "Found mostly in and around Gronn Canyon.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "主要分布在格隆峡谷及其周围。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found mostly in and around Gronn Canyon.",
 						}),
 						pet(568, {	-- Silkbead Snail (PET!)
 							["coords"] = {
@@ -272,24 +204,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(1463, {	-- Wood Wasp (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found in a small area around this coordinate.",
-								constant = "FOUND_IN_A_SMALL_AREA_AROUND_THIS_COORDINATE",
-								export = true,
-								text = {
-									en = "Found in a small area around this coordinate.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于该坐标周围的一小片区域内。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found in a small area around this coordinate.",
 							["coord"] = { 50.8, 80.2, GORGROND },
 						}),
 					},
@@ -1077,24 +992,7 @@ root(ROOTS.Zones, {
 					}),
 					header(HEADERS.Spell, 171866, {	-- Sparring Arena
 						q(35210, {	-- A Great Escape
-							["description"] = createLocalizationString({
-								readable = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
-								constant = "AVAILABLE_ONCE_YOU_COMPLETE_THE_OBJECTIVES_FOR",
-								export = true,
-								text = {
-									en = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成|cFFFFD700严正警告|r和|cFFFFD700不抛下任何士兵|r的目标后可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
 							["sourceQuests"] = {
 								35128,	-- Fair Warning
 								35129,	-- Leave Every Soldier Behind
@@ -1816,24 +1714,7 @@ root(ROOTS.Zones, {
 						}),
 					})),
 					q(36037, {	-- A Centurion Without a Cause
-						["description"] = createLocalizationString({
-							readable = "You must defend Tormmok against a few waves of enemies before he will become your follower.",
-							constant = "YOU_MUST_DEFEND_TORMMOK_AGAINST_A_FEW_WAVES_OF",
-							export = true,
-							text = {
-								en = "You must defend Tormmok against a few waves of enemies before he will become your follower.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你必须抵御几波敌人以保护托尔莫克，他才会成为你的追随者。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You must defend Tormmok against a few waves of enemies before he will become your follower.",
 						["qg"] = 83820,	-- High Centurion Tormmok
 						["coord"] = { 44.9, 86.9, GORGROND },
 						["groups"] = { follower(193) },	-- Tormmok
@@ -1989,24 +1870,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 92,
 					})),
 					q(34279, {	-- I Am Blook
-						["description"] = createLocalizationString({
-							readable = "Talk to Blook to start a fight, then defeat him.",
-							constant = "TALK_TO_BLOOK_TO_START_A_FIGHT_THEN_DEFEAT_HIM",
-							export = true,
-							text = {
-								en = "Talk to Blook to start a fight, then defeat him.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与布鲁克交谈以开始战斗，然后击败他。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Talk to Blook to start a fight, then defeat him.",
 						["qg"] = 78030,	-- Blook
 						["coord"] = { 41.3, 91.5, GORGROND },
 						["groups"] = { follower(189) },	-- Blook
@@ -2077,48 +1941,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35642, {	-- Mysterious Pod (A)
-						["description"] = createLocalizationString({
-							readable = "Must have accepted or completed |cFF4A54E8Scout Forensics|r in order to obtain the item that starts the Quest.",
-							constant = "MUST_HAVE_ACCEPTED_OR_COMPLETED_CFF4A54E8SCOUT",
-							export = true,
-							text = {
-								en = "Must have accepted or completed |cFF4A54E8Scout Forensics|r in order to obtain the item that starts the Quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须已接受或完成|cFF4A54E8斥候鉴定|r，才能获得开启该任务的物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must have accepted or completed |cFF4A54E8Scout Forensics|r in order to obtain the item that starts the Quest.",
 						["sourceQuest"] = 35633,	-- Scout Forensics
 						["provider"] = { "i", 113260 },	-- Glowing Red Pod (QS!)
 						["races"] = ALLIANCE_ONLY,
 						["cr"] = 80714,	-- Fungal Lurcher
 					}),
 					q(35021, {	-- Mysterious Pod (H)
-						["description"] = createLocalizationString({
-							readable = "Must have accepted or completed |cFFE50D12Basic Skulltaking|r in order to obtain the item that starts the Quest.",
-							constant = "MUST_HAVE_ACCEPTED_OR_COMPLETED_CFFE50D12BASIC",
-							export = true,
-							text = {
-								en = "Must have accepted or completed |cFFE50D12Basic Skulltaking|r in order to obtain the item that starts the Quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须已接受或完成|cFFE50D12基础骷髅采集|r，才能获得开启该任务的物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must have accepted or completed |cFFE50D12Basic Skulltaking|r in order to obtain the item that starts the Quest.",
 						["sourceQuest"] = 35016,	-- Basic Skulltaking
 						["provider"] = { "i", 112378 },	-- Glowing Red Pod (QS!)
 						["races"] = HORDE_ONLY,
@@ -2168,24 +1998,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33689, {	-- Plant Pruning (H)
-						["description"] = createLocalizationString({
-							readable = "Available after building Beastwatch and selecting the Lumber Mill or the Sparring Arena.",
-							constant = "AVAILABLE_AFTER_BUILDING_BEASTWATCH_AND",
-							export = true,
-							text = {
-								en = "Available after building Beastwatch and selecting the Lumber Mill or the Sparring Arena.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "建造兽栏并选择伐木场或格斗竞技场后可用。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Available after building Beastwatch and selecting the Lumber Mill or the Sparring Arena.",
 						["sourceQuest"] = 35151,	-- Your Base, Your Choice
 						["qg"] = 81731,	-- Rakthoth
 						["coord"] = { 49.3, 49.7, GORGROND },
@@ -2718,24 +2531,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118222) },	-- Spirit of Bashiok (TOY!)
 					}),
 					n(86257, {	-- Basten (Protectors of the Grove)
-						["description"] = createLocalizationString({
-							readable = "Kill Basten LAST or you will not be able to loot him.",
-							constant = "KILL_BASTEN_LAST_OR_YOU_WILL_NOT_BE_ABLE_TO",
-							export = true,
-							text = {
-								en = "Kill Basten LAST or you will not be able to loot him.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "最后再击杀巴斯滕，否则你将无法拾取他。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kill Basten LAST or you will not be able to loot him.",
 						["questID"] = 37369,
 						["isDaily"] = true,
 						["coord"] = { 69.2, 44.6, GORGROND },
@@ -2789,24 +2585,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(119225) },	-- Studded Gronn-Stitched Girdle
 					}),
 					n(88580, {	-- Firestarter Grash
-						["description"] = createLocalizationString({
-							readable = "Will spawn in the area that is on fire.",
-							constant = "WILL_SPAWN_IN_THE_AREA_THAT_IS_ON_FIRE",
-							export = true,
-							text = {
-								en = "Will spawn in the area that is on fire.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "会在着火的区域刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Will spawn in the area that is on fire.",
 						["questID"] = 37373,
 						["isDaily"] = true,
 						["coords"] = {
@@ -2821,24 +2600,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118221) },	-- Petrification Stone (TOY!)
 					}),
 					n(81038, {	-- Gelgor of the Blue Flame
-						["description"] = createLocalizationString({
-							readable = "Located in the cave.",
-							constant = "LOCATED_IN_THE_CAVE",
-							export = true,
-							text = {
-								en = "Located in the cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于洞穴中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located in the cave.",
 						["questID"] = 36391,
 						["coords"] = {
 							{ 43.5, 48.1, GORGROND },	-- Cave Entrance
@@ -2855,24 +2617,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118229) },	-- Resonant Hidecrystal of the Gorger
 					}),
 					n(78269, {	-- Gnarljaw
-						["description"] = createLocalizationString({
-							readable = "At the bottom of the cave.",
-							constant = "AT_THE_BOTTOM_OF_THE_CAVE",
-							export = true,
-							text = {
-								en = "At the bottom of the cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在洞穴的底部。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "At the bottom of the cave.",
 						["questID"] = 37413,
 						["isDaily"] = true,
 						["coords"] = {
@@ -2927,7 +2672,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(78260, {	-- King Slime
-						["description"] = "~L.AT_THE_BOTTOM_OF_THE_CAVE",
+						["description"] = "At the bottom of the cave.",
 						["questID"] = 37412,
 						["isDaily"] = true,
 						["coords"] = {
@@ -2973,24 +2718,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118208) },	-- Broodmother's Kiss
 					}),
 					n(50985, {	-- Poundfist
-						["description"] = createLocalizationString({
-							readable = "Poundfist has a respawn timer between 48-142 hours. Mount drop rate is 100% for all participants.",
-							constant = "POUNDFIST_HAS_A_RESPAWN_TIMER_BETWEEN_48_142",
-							export = true,
-							text = {
-								en = "Poundfist has a respawn timer between 48-142 hours. Mount drop rate is 100% for all participants.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "重拳的刷新时间在 48-142 小时之间。所有参与者获得坐骑的掉落率均为 100%。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Poundfist has a respawn timer between 48-142 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {
 							{ 42.0, 25.0, GORGROND },
 							{ 51.4, 43.1, GORGROND },
@@ -3075,24 +2803,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 42.4, 54.8, GORGROND },
 						}),
 						o(236265, {	-- Aged Stone Container
-							["description"] = createLocalizationString({
-								readable = "When you're inside the Fissure of Fury cave, follow the spiral path to the bottom. The treasure is in little corner nubbin in the upper-right section of the map (across from the part of the map with water on it).",
-								constant = "WHEN_YOU_RE_INSIDE_THE_FISSURE_OF_FURY_CAVE",
-								export = true,
-								text = {
-									en = "When you're inside the Fissure of Fury cave, follow the spiral path to the bottom. The treasure is in little corner nubbin in the upper-right section of the map (across from the part of the map with water on it).",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当你在愤怒裂隙洞穴内时，沿着螺旋路径走到最底部。宝藏位于地图右上方区域的一个小角落凸起处（与地图上有水的那部分相对）。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "When you're inside the Fissure of Fury cave, follow the spiral path to the bottom. The treasure is in little corner nubbin in the upper-right section of the map (across from the part of the map with water on it).",
 							["questID"] = 36723,
 							["coord"] = { 47.5, 43.7, GORGROND },
 						}),
@@ -3300,24 +3011,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 47.2, 51.8, GORGROND },
 						}),
 						o(233505, {	-- Unknown Petrified Egg
-							["description"] = createLocalizationString({
-								readable = "Inside The Forgotten Caves with Pale and Spiders.",
-								constant = "INSIDE_THE_FORGOTTEN_CAVES_WITH_PALE_AND",
-								export = true,
-								text = {
-									en = "Inside The Forgotten Caves with Pale and Spiders.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在被遗忘的洞穴内，那里有苍白生物和蜘蛛。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Inside The Forgotten Caves with Pale and Spiders.",
 							["questID"] = 36713,
 							["coords"] = {
 								{ 51.4, 77.6, GORGROND },	-- Cave Entrance
@@ -3355,24 +3049,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118715) },	-- Cracked Femur
 					}),
 					o(236169, {	-- Harvestable Precious Crystal
-						["description"] = createLocalizationString({
-							readable = "Inside Glut's burrow.",
-							constant = "INSIDE_GLUT_S_BURROW",
-							export = true,
-							text = {
-								en = "Inside Glut's burrow.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在格鲁特的洞穴内。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside Glut's burrow.",
 						["questID"] = 36651,
 						["coords"] = {
 							{ 46.1, 50.0, GORGROND },	-- Crystal
@@ -3388,24 +3065,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.7, 42.5, GORGROND },
 					}),
 					o(233149, {	-- Laughing Skull Cache
-						["description"] = createLocalizationString({
-							readable = "On a tree branch above these coordinates.",
-							constant = "ON_A_TREE_BRANCH_ABOVE_THESE_COORDINATES",
-							export = true,
-							text = {
-								en = "On a tree branch above these coordinates.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在这些坐标上方的一根树枝上。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "On a tree branch above these coordinates.",
 						["questID"] = 35709,
 						["coord"] = { 44.2, 74.3, GORGROND },
 					}),
@@ -3438,24 +3098,7 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118703) },	-- Diary of Balldir Deeprock
 					}),
 					o(236149, {	-- Sasha's Secret Stash
-						["description"] = createLocalizationString({
-							readable = "Hanging at the ledge of a beam. Can be accessed from the top of the tower or by precise flying.",
-							constant = "HANGING_AT_THE_LEDGE_OF_A_BEAM_CAN_BE_ACCESSED",
-							export = true,
-							text = {
-								en = "Hanging at the ledge of a beam. Can be accessed from the top of the tower or by precise flying.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "悬挂在横梁边缘。可从塔顶或通过精准飞行抵达。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Hanging at the ledge of a beam. Can be accessed from the top of the tower or by precise flying.",
 						["questID"] = 36631,
 						["coord"] = { 39.0, 68.1, GORGROND },
 						["sym"] = COMMON_TREASURE_SYM,
@@ -3466,30 +3109,13 @@ root(ROOTS.Zones, {
 						["groups"] = { i(118713) },	-- Iron Lookout's Arbalest
 					}),
 					o(236092, {	-- Stashed Emergency Rucksack
-						["description"] = createLocalizationString({
-							readable = "Tied to a rope. Jumping around required to access the platform.",
-							constant = "TIED_TO_A_ROPE_JUMPING_AROUND_REQUIRED_TO",
-							export = true,
-							text = {
-								en = "Tied to a rope. Jumping around required to access the platform.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "用绳子拴住。需要来回跳跃才能到达平台。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Tied to a rope. Jumping around required to access the platform.",
 						["questID"] = 36604,
 						["coord"] = { 48.1, 93.4, GORGROND },
 						["sym"] = COMMON_TREASURE_SYM,
 					}),
 					o(231069, {	-- Strange Looking Dagger
-						["description"] = "~L.INSIDE_THE_FORGOTTEN_CAVES_WITH_PALE_AND",
+						["description"] = "Inside The Forgotten Caves with Pale and Spiders.",
 						["questID"] = 34940,
 						["coords"] = {
 							{ 53.0, 80.0, GORGROND },	-- Dagger Location
@@ -3517,24 +3143,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.9, 47.3, GORGROND },
 						["groups"] = {
 							i(118705, {	-- Warm Goren Egg
-								["description"] = createLocalizationString({
-									readable = "The egg hatches into a toy after 7 days.",
-									constant = "THE_EGG_HATCHES_INTO_A_TOY_AFTER_7_DAYS",
-									export = true,
-									text = {
-										en = "The egg hatches into a toy after 7 days.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "这枚蛋会在 7 天后孵化成一个玩具。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "The egg hatches into a toy after 7 days.",
 								["groups"] = { i(118716) },	-- Goren Garb (TOY!)
 							}),
 						},

@@ -783,24 +783,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "i",  12900 },	-- Annals of Darrowshire
 								{ "o", 176150 },	-- Musty Tome
 							},
-							["description"] = createLocalizationString({
-								readable = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
-								constant = "THE_MUSTY_TOME_YOU_ARE_LOOKING_FOR_HAS_A_FAINT",
-								export = true,
-								text = {
-									en = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你要找的发霉的书卷书脊上有一个淡淡的 X。如果所有书都没有这个标记，你可能需要与其中几本互动使它们消失。\n\n警告：刷新出的幽灵可能会很麻烦。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
 							["coord"] = { 43.4, 69.7, MAP.WESTERN_PLAGUELANDS },
 						}),
 					},
@@ -997,24 +980,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
-					["description"] = createLocalizationString({
-						readable = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-						constant = "CAN_DROP_FROM_ANY_UNDEAD_RARE_MOB_OR_BOSS_IN",
-						export = true,
-						text = {
-							en = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只要装备了银色黎明的饰品之一，就可从瘟疫之地及相关地下城中的任何亡灵稀有怪物或首领身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				n(1843, {	-- Foreman Jerris
 					["coords"] = {
@@ -1107,7 +1073,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(TREASURES, {
 				o(176213, {	-- Blood of Heroes
-					["description"] = "~L.THIS_ITEM_CAN_BE_FOUND_SPORATICALLY_ON_THE",
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
 					["coords"] = {
 						-- Hearthglen
 						{ 54.9, 27.1, MAP.WESTERN_PLAGUELANDS },
@@ -1219,24 +1185,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				n(11278, {	-- Magnus Frostwake
 					["cost"] = { { "i", 13544, 1 } },	-- Spectral Essence
-					["description"] = createLocalizationString({
-						readable = "Only visible if you have the Spectral Essence equipped.",
-						constant = "ONLY_VISIBLE_IF_YOU_HAVE_THE_SPECTRAL_ESSENCE",
-						export = true,
-						text = {
-							en = "Only visible if you have the Spectral Essence equipped.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅当你装备了幽灵精华时可见。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					["coord"] = { 68.0, 77.6, MAP.WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(8030),	-- Plans: Ebon Shiv (RECIPE!)
@@ -1256,24 +1205,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["cr"] = 10816,	-- Wandering Skeleton
 				}),
 				i(13354, {	-- Ectoplasmic Resonator
-					["description"] = createLocalizationString({
-						readable = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-						constant = "THESE_ONLY_DROP_FROM_GHOSTLY_MOBS_IN_WESTERN",
-						export = true,
-						text = {
-							en = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有在你的背包中带有玻璃聚焦器时，这些才会从西瘟疫之地的幽灵怪物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
 				i(12722, {	-- Good Luck Other-Half-Charm
@@ -1284,44 +1216,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
-					["description"] = createLocalizationString({
-						readable = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-						constant = "CAN_DROP_FROM_ANY_UNDEAD_MOBS_IN_THE",
-						export = true,
-						text = {
-							en = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只要装备了银色黎明的饰品之一，就可从瘟疫之地及相关地下城中的任何亡灵怪物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
-					["description"] = createLocalizationString({
-						readable = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-						constant = "CAN_DROP_FROM_WEAK_UNDEAD_MOBS_IN_THE",
-						export = true,
-						text = {
-							en = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只要装备了银色黎明的饰品之一，就可从瘟疫之地及相关地下城中的弱小亡灵怪物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
@@ -1332,24 +1230,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(13357, {	-- Osseous Agitator
-					["description"] = createLocalizationString({
-						readable = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-						constant = "THESE_ONLY_DROP_FROM_SKELETAL_MOBS_IN_WESTERN",
-						export = true,
-						text = {
-							en = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有在你的背包中带有玻璃聚焦器时，这些才会从西瘟疫之地的骷髅怪物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
 				i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
@@ -1377,28 +1258,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(12811, {	-- Righteous Orb
-					["description"] = "~L.CAN_DROP_FROM_ANY_SCARLET_CRUSADE_MEMBER_IN",
+					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 					["cr"] = 12128,	-- Crimson Elite
 				}),
 				i(13356, {	-- Somatic Intensifier
-					["description"] = createLocalizationString({
-						readable = "These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-						constant = "THESE_ONLY_DROP_FROM_ZOMBIES_IN_WESTERN",
-						export = true,
-						text = {
-							en = "These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有在你的背包中带有玻璃聚焦器时，这些才会从西瘟疫之地的僵尸身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 					["cost"] = { { "i", 13370, 1 } },	-- Vitreous Focuser
 				}),
 			}),

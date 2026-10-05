@@ -28,24 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				pet(3352, {	-- Razortooth Bear Cub (PET!)
-					["description"] = createLocalizationString({
-						readable = "Rare spawn in place of 'Grizzlefur Cub'.",
-						constant = "RARE_SPAWN_IN_PLACE_OF_GRIZZLEFUR_CUB",
-						export = true,
-						text = {
-							en = "Rare spawn in place of 'Grizzlefur Cub'.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "稀有刷新，代替“灰毛幼崽”出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Rare spawn in place of 'Grizzlefur Cub'.",
 					["coords"] = {
 						{ 48.4, 56.0, THALDRASZUS },
 						{ 68.6, 52.0, THALDRASZUS },

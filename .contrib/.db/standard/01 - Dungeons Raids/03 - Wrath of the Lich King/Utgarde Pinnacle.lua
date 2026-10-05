@@ -155,24 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				i(37587),	-- Ymirjar Physician's Robe
 				-- #endif
 				i(37372, {	-- Harpoon
-					["description"] = createLocalizationString({
-						readable = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
-						constant = "GATHER_3_OF_THESE_HARPOONS_AND_THEN_BRING_HIM",
-						export = true,
-						text = {
-							en = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "收集 3 个这种鱼叉，然后通过点击各个发射器一次将他击落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
 					["cr"] = 26692,	-- Ymirjar Harpooner
 				}),
 			}),

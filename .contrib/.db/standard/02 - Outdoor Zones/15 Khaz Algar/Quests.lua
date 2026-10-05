@@ -215,24 +215,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				}),
 				------ Stay awhile and listen ------
 				hqt(84813, {	-- Stay awhile and listen: Rooktender Lufsela
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Ground Pounders' (79146).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_3",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Ground Pounders' (79146).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“地面重击者”（79146）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Ground Pounders' (79146).",
 					["name"] = "Stay awhile and listen: Rooktender Lufsela",
 					["sourceQuests"] = { 79129 },	-- Rook Rally
 					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
@@ -313,24 +296,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
 					["name"] = "Stay awhile and listen: Merrix <Councilward>",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after completing 'Titanic Failsafe' (79157).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after completing 'Titanic Failsafe' (79157).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成“泰坦保险装置”（79157）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after completing 'Titanic Failsafe' (79157).",
 					["sourceQuests"] = { 79157 },	-- Titanic Failsafe
 					["provider"] = { "n", 214916 },	-- Merrix <Councilward>
 					["coord"] = { 31.8, 61.0, DORNOGAL },
@@ -552,31 +518,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(84139, {	-- Stay awhile and listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after completing 'Return to Dornogal' (83503).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_2",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after completing 'Return to Dornogal' (83503).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成“返回多恩诺嘉尔”(83503) 后，对话变为可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after completing 'Return to Dornogal' (83503).",
 					["sourceQuests"] = { 83503 },	-- Return to Dornogal
 					["provider"] = { "n", 225897 },	-- Anduin Wrynn
 					["coord"] = { 25.4, 66.2, DORNOGAL },
 				}),
 				hqt(84754, {	-- Stay awhile and listen: Alleria Windrunner
 					["name"] = "Stay awhile and listen: Alleria Windrunner",
-					["description"] = "~L.DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_2",
+					["description"] = "Dialogue becomes available after completing 'Return to Dornogal' (83503).",
 					["sourceQuests"] = { 83503 },	-- Return to Dornogal
 					["provider"] = { "n", 227758 },	-- Alleria Windrunner
 					["coord"] = { 42.4, 26.9, DORNOGAL },
@@ -716,24 +665,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(86818, {	-- Stay awhile and listen: Archamge Aethas Sunreaver
 					["name"] = "Stay awhile and listen: Archmage Aethas Sunreaver",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Magic-stealing Kobolds' (83553). Wait for Kalecgos to cast his Mirror Images and fly away.",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_4",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Magic-stealing Kobolds' (83553). Wait for Kalecgos to cast his Mirror Images and fly away.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“偷取魔法的狗头人”（83553）后即可出现该对话。等待卡雷苟斯施放镜像并飞走。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Magic-stealing Kobolds' (83553). Wait for Kalecgos to cast his Mirror Images and fly away.",
 					["sourceQuests"] = { 83539 },	-- Feeling Blue
 					["provider"] = { "n", 226895 },	-- Archmage Aethas Sunreaver
 					["coord"] = { 29.7, 57.9, ISLE_OF_DORN },
@@ -840,24 +772,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(86819, {	-- Stay awhile and listen: Archmage Khadgar
 					["name"] = "Stay awhile and listen: Archmage Khadgar",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after completing 'Farewell, City of Magic' (83773). Go back to Khadgar in Foundation Hall, Dornogal.",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_COMPLETING_3",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after completing 'Farewell, City of Magic' (83773). Go back to Khadgar in Foundation Hall, Dornogal.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成“再见，魔法之城”（83773）后即可出现该对话。回到多恩诺嘉尔基石大厅的卡德加处。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after completing 'Farewell, City of Magic' (83773). Go back to Khadgar in Foundation Hall, Dornogal.",
 					["sourceQuests"] = { 83773 },	-- Farewell, City of Magic
 					["provider"] = { "n", 227436 },	-- Archmage Khadgar
 					["coord"] = { 42.6, 27.2, DORNOGAL },
@@ -906,24 +821,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(87322, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Off to Tazavesh' (85002).\nDon't click on the portal immediately.",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_OFF",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Off to Tazavesh' (85002).\nDon't click on the portal immediately.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“前往塔扎维什”（85002）后即可出现该对话。\n不要立即点击传送门。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Off to Tazavesh' (85002).\nDon't click on the portal immediately.",
 					["sourceQuests"] = {
 						84998,	-- Bringer of the Void
 						85001,	-- Blessings Be Upon You
@@ -994,24 +892,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(87378, {	-- Stay awhile and listen: Alleria Windrunner
 					["name"] = "Stay awhile and listen: Alleria Windrunner",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'Off to Tazavesh, Again' (85196), right after talking to Ve'nari.",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_OFF_2",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'Off to Tazavesh, Again' (85196), right after talking to Ve'nari.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与威·娜莉对话后，接受“再次前往塔扎维什”（85196）即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'Off to Tazavesh, Again' (85196), right after talking to Ve'nari.",
 					["sourceQuest"] = 85212,	-- A Void Test of Wills
 					["qg"] = 233885,	-- Alleria Windrunner
 					["coord"] = { 60.8, 28.0, KARESH },
@@ -1089,24 +970,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(91850, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'The Long Vigil' (84943) and 'Preludes and Preparations' (84944).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_THE",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'The Long Vigil' (84943) and 'Preludes and Preparations' (84944).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“漫长守望”（84943）和“前奏与准备”（84944）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'The Long Vigil' (84943) and 'Preludes and Preparations' (84944).",
 					["sourceQuests"] = {
 						84943,	-- The Long Vigil
 						84944,	-- Preludes and Preparations
@@ -1155,24 +1019,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 }
 				------ Stay awhile and listen ------
 				hqt(87418, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after accepting 'The Eleventh Hour' (84949).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_THE_2",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after accepting 'The Eleventh Hour' (84949).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“第十一个小时”（84949）后即可出现该对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after accepting 'The Eleventh Hour' (84949).",
 					["sourceQuest"] = 84949,	-- The Eleventh Hour
 					["qg"] = 233567,	-- Arator
 					["coord"] = { 60.7, 92.5, KARESH_TAZAVESH },

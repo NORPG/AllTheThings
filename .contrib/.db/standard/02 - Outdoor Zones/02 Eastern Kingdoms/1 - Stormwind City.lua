@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32008, {	-- Audrey Burnhep
-					["description"] = "~L.CFFFF0000DO_NOT_UNDER_ANY_CIRCUMSTANCES_ABANDON",
+					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 					["qg"] = 63596,	-- Audrey Burnhep
 					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
@@ -856,7 +856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 				}),
 				q(62250, {	-- A New Adventure Awaits
-					["description"] = "~L.THIS_QUEST_IS_AUTOMATICALLY_OFFERED_UPON",
+					["description"] = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
 					["timeline"] = { CREATED_9_0_2, ADDED_10_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
@@ -1020,24 +1020,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(58496, {	-- An Unwelcome Advisor
-					["description"] = createLocalizationString({
-						readable = "This quest is automatically offered.",
-						constant = "THIS_QUEST_IS_AUTOMATICALLY_OFFERED",
-						export = true,
-						text = {
-							en = "This quest is automatically offered.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务会自动提供。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is automatically offered.",
 					["provider"] = { "o", 369893 },	-- Urgent Missive
 					["coord"] = { 68.1, 22.4, BORALUS },	-- Urgent Missive
 					["timeline"] = { ADDED_8_3_0 },
@@ -1210,24 +1193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(53370, {	-- Battle for Azeroth: Hour of Reckoning [SL+] / Hour of Reckoning
-					["description"] = createLocalizationString({
-						readable = "If this quest is not automatically offered, you can try picking it up from a War Board, or taking the boat from Stormwind to Boralus.",
-						constant = "IF_THIS_QUEST_IS_NOT_AUTOMATICALLY_OFFERED_YOU",
-						export = true,
-						text = {
-							en = "If this quest is not automatically offered, you can try picking it up from a War Board, or taking the boat from Stormwind to Boralus.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果这个任务没有自动提供给你，你可以试着从战争桌面上接取，或者从暴风城乘船前往伯拉勒斯。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If this quest is not automatically offered, you can try picking it up from a War Board, or taking the boat from Stormwind to Boralus.",
 					["qg"] = 144095,	-- Master Mathias Shaw
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1613,24 +1579,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6261, {	-- Dungar Longdrink
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_8",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“邓加尔·长饮”（26395）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",
 					-- #endif
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["qg"] = 1323,	-- Osric Strang
@@ -1859,7 +1808,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 56,
 				}),
 				q(27675, {	-- Forged Documents
-					["description"] = "~L.AFTER_CREATING_FORGED_DOCUMENTS_WITH",
+					["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
 					["provider"] = { "i", 62056 },	-- Forged Documents
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = INSCRIPTION,
@@ -2192,24 +2141,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(32675, {	-- I Believe You Can Fly
-					["description"] = createLocalizationString({
-						readable = "This quest is automatically offered to Alliance players upon reaching the specified level.",
-						constant = "THIS_QUEST_IS_AUTOMATICALLY_OFFERED_TO_ALLIANCE",
-						export = true,
-						text = {
-							en = "This quest is automatically offered to Alliance players upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务会在联盟玩家达到指定等级时自动提供。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is automatically offered to Alliance players upon reaching the specified level.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1,
@@ -2420,24 +2352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(32665, {	-- Learn To Ride
-					["description"] = createLocalizationString({
-						readable = "This quest is automatically granted to Pandaren upon reaching the specified level.",
-						constant = "THIS_QUEST_IS_AUTOMATICALLY_GRANTED_TO_PANDAREN",
-						export = true,
-						text = {
-							en = "This quest is automatically granted to Pandaren upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务会在熊猫人达到指定等级时自动授予。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is automatically granted to Pandaren upon reaching the specified level.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { PANDAREN_ALLIANCE },
 					["lockCriteria"] = { 1,
@@ -2549,24 +2464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(7509, {	-- Manaweave Robe
 							-- #if AFTER 4.0.3
-							["description"] = createLocalizationString({
-								readable = "This item is still available in the Ghostlands for Blood Elf Mages, originally only available to the Alliance in Stormwind.",
-								constant = "THIS_ITEM_IS_STILL_AVAILABLE_IN_THE_GHOSTLANDS",
-								export = true,
-								text = {
-									en = "This item is still available in the Ghostlands for Blood Elf Mages, originally only available to the Alliance in Stormwind.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品在幽魂之地对血精灵法师仍然可用，最初只有暴风城的联盟玩家可以获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item is still available in the Ghostlands for Blood Elf Mages, originally only available to the Alliance in Stormwind.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },	-- Item is still available in the Ghostlands for Horde, but removed from this source.
 						}),
@@ -2698,30 +2596,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(7508, {	-- Ley Orb
 							-- #if AFTER 4.0.3
-							["description"] = createLocalizationString({
-								readable = "This item is still available in Eversong Woods for Horde Mages.",
-								constant = "THIS_ITEM_IS_STILL_AVAILABLE_IN_EVERSONG_WOODS",
-								export = true,
-								text = {
-									en = "This item is still available in Eversong Woods for Horde Mages.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "该物品在永歌森林中仍可供部落法师获取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item is still available in Eversong Woods for Horde Mages.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },	-- Item is still available in the Eversong Woods for Horde, but removed from this source.
 						}),
 						i(9513, {	-- Ley Staff
 							-- #if AFTER 4.0.3
-							["description"] = "~L.THIS_ITEM_IS_STILL_AVAILABLE_IN_EVERSONG_WOODS",
+							["description"] = "This item is still available in Eversong Woods for Horde Mages.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },	-- Item is still available in the Eversong Woods for Horde, but removed from this source.
 						}),
@@ -2987,24 +2868,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6285, {	-- Return to Lewis
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_9",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你在艾尔文森林完成任务“返回阿古斯”（26396）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",
 					-- #endif
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
 					["qg"] = 352,	-- Dungar Longdrink <Gryphon Master>
@@ -3121,24 +2985,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78195, {	-- Secrets of Elune (2/2)
-					["description"] = createLocalizationString({
-						readable = "Completing this quest will allow you to meditate in the same manner as the night elves.",
-						constant = "COMPLETING_THIS_QUEST_WILL_ALLOW_YOU_TO_3",
-						export = true,
-						text = {
-							en = "Completing this quest will allow you to meditate in the same manner as the night elves.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成该任务后，你可以像暗夜精灵一样冥想。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the night elves.",
 					["sourceQuest"] = 78194,	-- Secrets of Elune (1/2)
 					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
 					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
@@ -3181,7 +3028,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Pray over the Supplicant
 							["provider"] = { "n", 215062 },	-- Supplicant
-							["description"] = "~L.YOU_MUST_FIRST_HAVE_YOUR_MEDITATION_BUFF_AND",
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
 						}),
 					},
 				})),
@@ -3379,24 +3226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42.0, 42.0, BROKEN_ISLES},
 							["groups"] = {
 								i(139389, {	-- Charred Locket
-									["description"] = createLocalizationString({
-										readable = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item. You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp. From there you will go to the bedroom on the second floor to talk to Alaina. After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
-										constant = "IN_ORDER_TO_GET_THIS_YOU_MUST_DO_THE_SCENARIO",
-										export = true,
-										text = {
-											en = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item. You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp. From there you will go to the bedroom on the second floor to talk to Alaina. After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "要获得此物品，你必须完成“破碎海滩之战”场景战役，并在第 6 阶段寻找一个名为“阵亡十字军的灰烬”的灰烬堆来取得该物品。随后前往艾尔文森林东谷伐木场的坐标 85, 69。从那里上二楼卧室与阿莱娜交谈。与她交谈后离开（下线或切换区域），然后再回来找她领取该物品。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item. You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp. From there you will go to the bedroom on the second floor to talk to Alaina. After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
 									["groups"] = {
 										o(252069, {	-- Alaina's Belongings
 											["coord"] = { 85.6, 69.7, ELWYNN_FOREST },
@@ -3735,7 +3565,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 28,
 				}),
 				q(1447, {	-- The Missing Diplomat (8/17)
-					["description"] = "~L.DASHEL_STONEFIST_WILL_SPAWN_2_LEVEL_26_ADDS_TO",
+					["description"] = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
 					["sourceQuest"] = 1246,	-- The Missing Diplomat (7/17)
 					["qg"] = 4961,	-- Dashel Stonefist
 					["coords"] = {
@@ -3835,7 +3665,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(9367, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
 							-- #if BEFORE 4.0.3
-							["description"] = "~L.THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -3853,7 +3683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(217274, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
-							["description"] = "~L.THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION",
+							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 							["timeline"] = { ADDED_1_15_1 },
 						}),
 					},
@@ -4262,7 +4092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- Diagnosis Complete
-							["description"] = "~L.TYPE_LAY_TO_LIE_DOWN_TO_BE_EXAMINED",
+							["description"] = "Type /lay to lie down to be examined.",
 						}),
 					},
 				}),
@@ -4446,24 +4276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 103628 },	-- Ur's Treatise on Shadow Magic
 							},
 							["coord"] = { 79.0, 37.6, REDRIDGE_MOUNTAINS },
-							["description"] = createLocalizationString({
-								readable = "Located in one of the bookshelves at the top of the tower.",
-								constant = "LOCATED_IN_ONE_OF_THE_BOOKSHELVES_AT_THE_TOP_OF",
-								export = true,
-								text = {
-									en = "Located in one of the bookshelves at the top of the tower.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于塔顶的一个书架中。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Located in one of the bookshelves at the top of the tower.",
 						}),
 					},
 				}),
@@ -4516,7 +4329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = { { "i", 190308, 1 } },	-- Burning Torch
 						}),
 						i(190308, {	-- 0/1 Burning Torch
-							["description"] = "~L.YOU_CAN_LIGHT_THE_TORCH_USING_A_CAMPFIRE_IF_YOU",
+							["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
 							["providers"] = {
 								{ "i", 190307 },	-- Unlit Torch
 								{ "o", createCustomObject({	-- Unlit Torch [Couldn't find the proper objectID, so I faked it.]
@@ -4687,24 +4500,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(112958, {	-- Soulare of Andorhal
-					["description"] = createLocalizationString({
-						readable = "Emote |cFFFFFFFF/tired|r at him to get the toy. Horde players can do this, too!",
-						constant = "EMOTE_CFFFFFFFF_TIRED_R_AT_HIM_TO_GET_THE_TOY",
-						export = true,
-						text = {
-							en = "Emote |cFFFFFFFF/tired|r at him to get the toy. Horde players can do this, too!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对他使用|cFFFFFFFF/tired|r表情即可获得该玩具。部落玩家也可以这样做！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Emote |cFFFFFFFF/tired|r at him to get the toy. Horde players can do this, too!",
 					["coord"] = { 38.1, 64.4, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
@@ -4752,7 +4548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
-					["description"] = "~L.LOOTING_THE_CHEST_WILL_SPAWN_2_MUGGERS_BEWARE",
+					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
 					["provider"] = { "o", 386777 },	-- Dusty Chest
 					["coord"] = { 61.9, 29.3, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -5131,7 +4927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
 					-- #if BEFORE TBC
-					["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+					["description"] = "Found within the Champion's Hall.",
 					-- #else
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					-- #endif
@@ -5288,7 +5084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- 34079: Captain O'Neal <Jewelcrafting Quartermaster> (Wrath season 2?)
 				n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
 					-- #if BEFORE WRATH
-					["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+					["description"] = "Found within the Champion's Hall.",
 					-- #endif
 					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE 3.0.2.8970
@@ -5739,24 +5535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
 						-- #endif
 					},
-					["description"] = createLocalizationString({
-						readable = "Elly is walking around in the Tavern.",
-						constant = "ELLY_IS_WALKING_AROUND_IN_THE_TAVERN",
-						export = true,
-						text = {
-							en = "Elly is walking around in the Tavern.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "艾莉正在旅店里四处走动。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Elly is walking around in the Tavern.",
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
@@ -5791,7 +5570,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_THIRTEEN_GROUPS,
 					-- #if AFTER 4.3.0
-					["description"] = "~L.SELLS_GEAR_RELATED_TO_CATACLYSM_RAID_TIER_13",
+					["description"] = "Sells gear related to Cataclysm raid tier 13 (Dragon Soul).",
 					-- #endif
 				}),
 				n(1303, {	-- Felicia Gump <Herbalism Supplier>
@@ -6329,24 +6108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(12784, {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster> [WRATH+] / Lieutenant Jackspring <Weapons Quartermaster>
 					-- #if NOT ANYCLASSIC
-					["description"] = createLocalizationString({
-						readable = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
-						constant = "BLIZZARD_STRIKES_AGAIN_IN_ORDER_TO_TRANSMOG",
-						export = true,
-						text = {
-							en = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "暴雪又来了。为了幻化这些装备，你需要拥有与它们关联的原始头衔。不过，即使你从未获得过该头衔，也仍然可以收集它们。\n\n这些物品需要刷新/重载才会被记录为已收集，强烈建议你把它们留在银行/虚空仓库中备用。你很可能会随机失去它们的收集记录，需要重新装备它们来提醒游戏它们的存在。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -6376,7 +6138,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER WRATH
 					["coord"] = { 76.2, 65.6, STORMWIND_CITY },
 					-- #else
-					["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+					["description"] = "Found within the Champion's Hall.",
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = pvp({
@@ -6513,24 +6275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(8666, {	-- Lil Timmy <Boy with kittens>
 					-- #if AFTER WRATH
-					["description"] = createLocalizationString({
-						readable = "The vendor wanders around Stormwind at random times. He is not always available.",
-						constant = "THE_VENDOR_WANDERS_AROUND_STORMWIND_AT_RANDOM",
-						export = true,
-						text = {
-							en = "The vendor wanders around Stormwind at random times. He is not always available.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这名商人会在随机时间于暴风城四处游荡。他并非总会出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The vendor wanders around Stormwind at random times. He is not always available.",
 					-- #else
 					["coord"] = { 64.0, 38.0, STORMWIND_CITY },
 					-- #endif
@@ -6759,24 +6504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE TWW
 				-- #if AFTER 8.0.1
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>
-					["description"] = createLocalizationString({
-						readable = "Appears in Stormwind after War of Thorns.",
-						constant = "APPEARS_IN_STORMWIND_AFTER_WAR_OF_THORNS",
-						export = true,
-						text = {
-							en = "Appears in Stormwind after War of Thorns.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在荆棘之战后出现在暴风城。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 56.1, 13.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownClassicRep(FACTION_GILNEAS, {
@@ -6817,7 +6545,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_TWELVE_GROUPS,
 					-- #if AFTER 4.2.0
-					["description"] = "~L.SELLS_GEAR_RELATED_TO_CATACLYSM_RAID_TIER_12",
+					["description"] = "Sells gear related to Cataclysm raid tier 12 (Firelands) as well as Baradin Hold.",
 					-- #endif
 				}),
 				n(1287, {	-- Marda Weller <Weapons Merchant>
@@ -6886,7 +6614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
-					["description"] = "~L.FOUND_WITHIN_THE_CHAMPION_S_HALL",
+					["description"] = "Found within the Champion's Hall.",
 					-- #else
 					["coord"] = { 75.2, 66.8, STORMWIND_CITY },
 					-- #endif
@@ -7225,7 +6953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				n(167429, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Quartermaster Richter
-					["description"] = "~L.ONLY_SELLS_ITEMS_ONCE_THE_ACHIEVEMENT",
+					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -7501,7 +7229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(256071, {	-- Solelo <Traveling Book Shop>
-					["description"] = "~L.NOT_ALL_ITEMS_ARE_SOLD_EACH_DAY",
+					["description"] = "Not all items are sold each day.",
 					["coord"] = { 49.4, 80.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_11_2_7 },
 					["races"] = ALLIANCE_ONLY,
@@ -7623,7 +7351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
-					["description"] = "~L.SELLS_GEAR_RELATED_TO_CATACLYSM_RAID_TIER_11",
+					["description"] = "Sells gear related to Cataclysm raid tier 11 (Throne of the Four Winds, Blackwing Descent, and Bastion of Twilight) as well as Baradin Hold.",
 				}),
 				n(50524, {	-- Travis Nichols <Hot Coffee Vendor>
 					["coord"] = { 69.4, 65.4, STORMWIND_CITY },

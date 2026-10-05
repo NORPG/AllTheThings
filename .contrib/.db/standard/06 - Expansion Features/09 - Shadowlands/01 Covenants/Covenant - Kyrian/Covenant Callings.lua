@@ -13,24 +13,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["customCollect"] = "SL_COV_KYR",
 			},{
 				q(62692, {	-- A Calling in Bastion
-					["description"] = createLocalizationString({
-						readable = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
-						constant = "WILL_ONLY_BE_OFFERED_AS_THE_INITIAL_CALLING",
-						export = true,
-						text = {
-							en = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只会在盟约引导期间作为初始“使命”提供。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 					["sourceQuests"] = { 62698 },	-- A Call to Service
 					["provider"] = { "n", 160470 },	-- Adjutant Nikos
 					["coord"] = { 52.2, 47.0, BASTION },

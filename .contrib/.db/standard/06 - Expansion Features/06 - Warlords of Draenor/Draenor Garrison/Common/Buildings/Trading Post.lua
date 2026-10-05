@@ -30,24 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				}),
 				n(QUESTS, {
 					q(36948, {	-- Auctioning for Parts
-						["description"] = createLocalizationString({
-							readable = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
-							constant = "COMPLETING_THIS_QUEST_GRANTS_YOU_THE_ABILITY_TO",
-							export = true,
-							text = {
-								en = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你可以在要塞中访问拍卖行。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 						["qg"] = 87206,	-- Ancient Trading Mechanism
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
@@ -58,7 +41,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37014, {	-- Auctioning for Parts
-						["description"] = "~L.COMPLETING_THIS_QUEST_GRANTS_YOU_THE_ABILITY_TO",
+						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 						["qg"] = 86806,	-- Ancient Trading Mechanism
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module

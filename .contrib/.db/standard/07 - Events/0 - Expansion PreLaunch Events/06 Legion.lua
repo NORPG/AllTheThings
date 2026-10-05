@@ -19,169 +19,67 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				}),
 			}),
 			n(MAILBOX, {
-				["description"] = createLocalizationString({
-					readable = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
-					constant = "THESE_ITEMS_CAME_AUTOMATICALLY_IN_THE_MAIL_BOX",
-					export = true,
-					text = {
-						en = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些物品在资料片前夕补丁上线时因职业和技能改动而自动通过邮箱发放（有时甚至已经装备好）。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
 				["groups"] = {
 					i(140694, {	-- Brewmasher's Staff
-						["description"] = createLocalizationString({
-							readable = "Given to Monks.",
-							constant = "GIVEN_TO_MONKS",
-							export = true,
-							text = {
-								en = "Given to Monks.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "发放给武僧。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Given to Monks.",
 					}),
 					i(140715, {	-- Frost-Etched Runeblade
-						["description"] = createLocalizationString({
-							readable = "Given to Death Knights.",
-							constant = "GIVEN_TO_DEATH_KNIGHTS",
-							export = true,
-							text = {
-								en = "Given to Death Knights.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "给予死亡骑士。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Given to Death Knights.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 1,
-						["description"] = createLocalizationString({
-							readable = "Given to Druids.",
-							constant = "GIVEN_TO_DRUIDS",
-							export = true,
-							text = {
-								en = "Given to Druids.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "给予德鲁伊。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 3,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 5,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 6,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140712, {	-- Greataxe of Fury
-						["description"] = createLocalizationString({
-							readable = "Given to Warriors.",
-							constant = "GIVEN_TO_WARRIORS",
-							export = true,
-							text = {
-								en = "Given to Warriors.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "给予战士。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Given to Warriors.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 1,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 3,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 5,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 6,
-						["description"] = "~L.GIVEN_TO_DRUIDS",
+						["description"] = "Given to Druids.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 1,
-						["description"] = createLocalizationString({
-							readable = "Given to Hunters.",
-							constant = "GIVEN_TO_HUNTERS",
-							export = true,
-							text = {
-								en = "Given to Hunters.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "给予猎人。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 3,
-						["description"] = "~L.GIVEN_TO_HUNTERS",
+						["description"] = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 5,
-						["description"] = "~L.GIVEN_TO_HUNTERS",
+						["description"] = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 6,
-						["description"] = "~L.GIVEN_TO_HUNTERS",
+						["description"] = "Given to Hunters.",
 					}),
 					i(140696, {	-- Sword of the Singing Wind
-						["description"] = "~L.GIVEN_TO_MONKS",
+						["description"] = "Given to Monks.",
 					}),
 				},
 			}),
@@ -267,24 +165,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye
 					-- #if AFTER SL
-					["description"] = createLocalizationString({
-						readable = "This is available to players choosing the Legion Timeline during Chromie Time.",
-						constant = "THIS_IS_AVAILABLE_TO_PLAYERS_CHOOSING_THE",
-						export = true,
-						text = {
-							en = "This is available to players choosing the Legion Timeline during Chromie Time.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此内容对在克罗米时间线中选择《军团再临》时间线的玩家开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is available to players choosing the Legion Timeline during Chromie Time.",
 					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3, ADDED_9_0_1 },
 					-- TODO: confirm if this can somehow be picked up via Party Sync
 					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
@@ -331,47 +212,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			n(RARES, {
 				n(112527, {	-- Doomsayer
-					["description"] = createLocalizationString({
-						readable = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
-						constant = "THIS_TOY_POCKET_FEL_SPREADER_IS_AVAILABLE",
-						export = true,
-						text = {
-							en = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此玩具“口袋邪能喷洒器”仅在军团再临前夕事件期间开放。使用任何可以侦测恶魔的技能或物品，然后与末日预言者交谈即可获得。 \n使用此类技能或物品时，末日预言者有时会出现对话选项“你身上有点不对劲……”。在可见时选择此选项，会将末日预言者变成恐惧渗透者，击杀并拾取它即可获得此玩具。请注意，此玩具并非必掉，掉率约为 25%。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
 					["groups"] = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 				n(112198, {	-- Doomsayer
-					["description"] = createLocalizationString({
-						readable = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
-						constant = "THIS_TOY_POCKET_FEL_SPREADER_IS_AVAILABLE_2",
-						export = true,
-						text = {
-							en = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此玩具“口袋邪能喷洒器”仅在军团再临前夕事件期间开放。使用任何可以侦测恶魔的技能或物品，然后与末日预言者交谈即可获得。 \n使用此类技能或物品时，末日预言者有时会出现对话选项“你身上有点不对劲……”。在可见时选择此选项，会将末日预言者变成恐惧渗透者，击杀并拾取它即可获得此玩具。请注意，此玩具并非必掉，掉率约为 25%。\n",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
 					["groups"] = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
@@ -405,24 +252,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			n(ZONE_DROPS, {
 				n(112315, {	-- Dread Infiltrator
-					["description"] = createLocalizationString({
-						readable = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
-						constant = "PLAYERS_WITH_SOME_SORT_OF_SENSE_DEMONS_ABILITY",
-						export = true,
-						text = {
-							en = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "拥有某种感知恶魔能力的玩家可以让这个怪物从末日预言者身上刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 					["groups"] = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},

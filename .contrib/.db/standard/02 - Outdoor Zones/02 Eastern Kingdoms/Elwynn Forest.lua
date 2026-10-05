@@ -1269,24 +1269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
 									["coord"] = { 48.2, 30.2, ELWYNN_FOREST },
-									["description"] = createLocalizationString({
-										readable = "Kneel (/kneel) inside Northshire Abbey to gain a Meditation buff, then use the Rune to complete the quest.",
-										constant = "KNEEL_KNEEL_INSIDE_NORTHSHIRE_ABBEY_TO_GAIN_A",
-										export = true,
-										text = {
-											en = "Kneel (/kneel) inside Northshire Abbey to gain a Meditation buff, then use the Rune to complete the quest.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在北郡修道院内跪下（/kneel）以获得冥想增益，然后使用符文完成任务。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Kneel (/kneel) inside Northshire Abbey to gain a Meditation buff, then use the Rune to complete the quest.",
 									["cr"] = 80,	-- Kobold Laborer
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
@@ -1390,24 +1373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(2158, {	-- Rest and Relaxation
 							-- #if AFTER 6.0.2
-							["description"] = createLocalizationString({
-								readable = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
-								constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_10",
-								export = true,
-								text = {
-									en = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当你完成任务“休息与放松”（37112）时，此任务会被标记为已完成。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
 							-- #endif
 							["qg"] = 6774,	-- Falkhaan Isenstrider
 							["coords"] = {
@@ -2147,24 +2113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					pet(374),	-- Black Lamb (PET!)
 					pet(459, {	-- Cat (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",
-							constant = "FOUND_COMMONLY_AROUND_THE_SMALL_FARMHOUSE_SW_OF",
-							export = true,
-							text = {
-								en = "Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "常见于北郡西南的小农舍周围以及逐日岛上。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",
 					}),
 					pet(447),	-- Fawn (PET!)
 					pet(378),	-- Rabbit (PET!)
@@ -2219,24 +2168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(64330, {	-- Julia Stevens <Aspiring Pet Tamer>
 					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Alliance only.\n\nJulia's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.",
-						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_JULIA_S_PETS",
-						export = true,
-						text = {
-							en = "This pet tamer is Alliance only.\n\nJulia's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限联盟。\n\nJulia 的宠物为 2 级，两个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 野兽 - 同上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Alliance only.\n\nJulia's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["petBattleLvl"] = 2,
@@ -2682,7 +2614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(1191, {	-- Bag of Marbles
 							-- #if BEFORE CATA
-							["description"] = "~L.ONE_OF_THE_SINGLE_BEST_PVE_DEFENSIVE_COOLDOWNS",
+							["description"] = "One of the single best PvE defensive cooldowns. Choose your targets wisely... Save for Patchwerk!",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -2773,24 +2705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_8",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在人类达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["races"] = { HUMAN },
@@ -2855,7 +2770,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(7678, {	-- Palomino Exchange
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS_2",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_1_4_0 },
@@ -3190,7 +3105,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(6, 6, 1),
 				}),
 				q(7677, {	-- White Stallion Exchange
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS_2",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_1_4_0 },
@@ -3234,24 +3149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(205183, {	-- Fel-Powered Artifact
-							["description"] = createLocalizationString({
-								readable = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
-								constant = "BRING_THE_UNIDENTIFIED_ARTIFACT_BACK_TO_THE",
-								export = true,
-								text = {
-									en = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "把未鉴定的神器带回该区域的术士训练师处，以获得无力的神器，然后再回来获取此物品。\n\n把它带给暴风城的加金即可获得符文。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
 							["cost"] = { { "i", 205182, 1 } },	-- Powerless Artifact
 							["classes"] = { WARLOCK },
 						}),
@@ -3567,24 +3465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
-					["description"] = createLocalizationString({
-						readable = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",
-						constant = "THIS_VENDOR_TRAVELS_IN_A_BIG_CIRCUIT_FROM",
-						export = true,
-						text = {
-							en = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此商人沿一条大环线旅行：从艾尔文森林（在闪金镇停留）到西部荒野（在哨兵岭停留），再到暮色森林（在夜色镇停留），再到赤脊山（在湖畔镇停留），然后返回艾尔文森林。如果你在这个区域找不到他，请去另外三个区域之一看看。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 74.4, 41.2, DUSKWOOD },
@@ -3872,7 +3753,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-					["description"] = "~L.THIS_CAN_DROP_FROM_ANY_OF_THE_RARE_CREATURES_IN",
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coords"] = {
 						{ 41.6, 79.2, ELWYNN_FOREST },
 						{ 63.6, 55.4, ELWYNN_FOREST },

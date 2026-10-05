@@ -264,24 +264,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7623, {	-- Lord Banehollow
-					["description"] = createLocalizationString({
-						readable = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
-						constant = "DO_NOT_LEAVE_BURNING_STEPPES_WITHOUT_PURCHASING",
-						export = true,
-						text = {
-							en = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "离开燃烧平原前务必买上一两瓶暗影药水。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["coord"] = { 12.4, 31.6, MAP.BURNING_STEPPES },
@@ -560,24 +543,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
-					["description"] = createLocalizationString({
-						readable = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
-						constant = "DROPS_FROM_FIREGUT_BRUTES_WHICH_ARE_FOUND",
-						export = true,
-						text = {
-							en = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由火腹蛮兵掉落，它们分布在恐槌岩周围以及火腹熔炉洞穴内。火腹熔炉的入口位于恐槌岩的西南侧。火腹食人魔法师经常会替代火腹蛮兵刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
 						{ 83.6, 40.0, MAP.BURNING_STEPPES },
 						{ 80.4, 45.8, MAP.BURNING_STEPPES },

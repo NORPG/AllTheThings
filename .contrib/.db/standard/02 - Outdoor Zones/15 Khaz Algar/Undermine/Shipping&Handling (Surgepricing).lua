@@ -24,24 +24,7 @@ SHIPPING_AND_HANDLING = createHeader({
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SHIPPING_AND_HANDLING, {
-			["description"] = createLocalizationString({
-				readable = "Complete 10 jobs in a row without canceling your streak to earn a reward. Additionally, every hour at the half-hour mark (or xx:30), a Surge Pricing event will start.\nFor 10 minutes, completing Shipping and Handling tasks will count towards an objective bar that will show up on top of your screen.\nThis will count Shipping and Handling tasks completed by everyone in Undermine.\nDuring Surge Pricing, Shipping and Handling completions give you double rewards.",
-				constant = "COMPLETE_10_JOBS_IN_A_ROW_WITHOUT_CANCELING",
-				export = true,
-				text = {
-					en = "Complete 10 jobs in a row without canceling your streak to earn a reward. Additionally, every hour at the half-hour mark (or xx:30), a Surge Pricing event will start.\nFor 10 minutes, completing Shipping and Handling tasks will count towards an objective bar that will show up on top of your screen.\nThis will count Shipping and Handling tasks completed by everyone in Undermine.\nDuring Surge Pricing, Shipping and Handling completions give you double rewards.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "连续完成 10 个工作且不中断连击，即可获得奖励。此外，每小时的第 30 分钟（即 xx:30），都会开启一次价格飙升事件。\n在 10 分钟内，完成运输与装卸任务会为屏幕顶部出现的进度条累积进度。\n安德麦所有人完成的运输与装卸任务都会被计入。\n在价格飙升期间，完成运输与装卸可获得双倍奖励。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Complete 10 jobs in a row without canceling your streak to earn a reward. Additionally, every hour at the half-hour mark (or xx:30), a Surge Pricing event will start.\nFor 10 minutes, completing Shipping and Handling tasks will count towards an objective bar that will show up on top of your screen.\nThis will count Shipping and Handling tasks completed by everyone in Undermine.\nDuring Surge Pricing, Shipping and Handling completions give you double rewards.",
 			["groups"] = {
 				filter(MISC, {
 					i(225415, {	-- Caddy Caller

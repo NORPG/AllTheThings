@@ -6,24 +6,7 @@ root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {
 		n(ZONE_REWARDS, {
 			i(163856, {	-- Ancient Pilgrimage Scrollcasing
-				["description"] = createLocalizationString({
-					readable = "Can drop from any of the repeatable Treasures in the various BFA zones.",
-					constant = "CAN_DROP_FROM_ANY_OF_THE_REPEATABLE_TREASURES",
-					export = true,
-					text = {
-						en = "Can drop from any of the repeatable Treasures in the various BFA zones.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可从争霸艾泽拉斯各区域中任意可重复获取的宝藏中掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from any of the repeatable Treasures in the various BFA zones.",
 			}),
 			i(163857, {	-- Azerite Armor Cache
 				["sym"] = {

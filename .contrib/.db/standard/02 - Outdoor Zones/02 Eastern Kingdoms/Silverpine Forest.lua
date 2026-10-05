@@ -604,24 +604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27575, {	-- From the Belly of the Beast
-					["description"] = createLocalizationString({
-						readable = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
-						constant = "AVAILABLE_WHILE_LORD_GODFREY_IS_AT_YOUR_SIDE",
-						export = true,
-						text = {
-							en = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当戈弗雷领主在你身边时可用。一旦你完成|cFFFFD700女王密使|r，该任务将无法获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
 					["sourceQuest"] = 27574,	-- I Never Forget a Face
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["qg"] = 45878,	-- Lord Godfrey
@@ -718,24 +701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = { i(60862) },	-- Forsaken Insignia (QI!)
 				}),
 				q(27574, {	-- I Never Forget a Face
-					["description"] = createLocalizationString({
-						readable = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
-						constant = "AVAILABLE_WHILE_LORD_GODFREY_IS_AT_YOUR_SIDE_2",
-						export = true,
-						text = {
-							en = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当戈弗雷领主在你身边时可用。一旦你完成|cFFFFD700女王密使|r，该任务将无法获得。|r",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["provider"] = { "i", 61505 },	-- Partially Digested Head
 					["timeline"] = { ADDED_4_0_3 },
@@ -1605,24 +1571,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
-							["description"] = createLocalizationString({
-								readable = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
-								constant = "THIS_ITEM_CAN_BE_SOLD_ON_THE_NEUTRAL_AUCTION_2",
-								export = true,
-								text = {
-									en = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品可以在中立拍卖行卖给联盟炼金师，换取一笔……象征性的费用。\n\n只有部落炼金师才能自然获得它。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4596, {	-- Discolored Healing Potion
@@ -1645,24 +1594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				n(1920, {	-- Ambermill Spellscribe [CATA+] / Dalaran Spellscribe
 					["coord"] = { 63.5, 58.3, SILVERPINE_FOREST },
-					["description"] = createLocalizationString({
-						readable = "Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",
-						constant = "FOUND_UPSTAIRS_AT_THE_GIVEN_COORDINATES_HORDE",
-						export = true,
-						text = {
-							en = "Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于指定坐标的楼上。\n\n已经在该区域开始任务的部落玩家应完成主线剧情，以避免位面问题。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1704,16 +1636,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(8491, {	-- Black Tabby Cat (PET!)
-							["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_3",
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							["timeline"] = { ADDED_1_11_1 },
 						}),
 						-- #endif
 						i(4437, {	-- Channeler's Staff
-							["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_3",
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
-							["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_3",
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -1767,24 +1699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211736, {	-- Grizzled Protector
-					["description"] = createLocalizationString({
-						readable = "Kill Ferocious Grizzled Bears until the protector appears.",
-						constant = "KILL_FEROCIOUS_GRIZZLED_BEARS_UNTIL_THE",
-						export = true,
-						text = {
-							en = "Kill Ferocious Grizzled Bears until the protector appears.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击杀凶猛的灰白熊，直到守护者出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Kill Ferocious Grizzled Bears until the protector appears.",
 					["classes"] = { HUNTER },
 					["crs"] = { 1778 },	-- Ferocious Grizzled Bear
 					["groups"] = {
@@ -1895,24 +1810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(212763, {	-- Sadistic Fiend
-					["description"] = createLocalizationString({
-						readable = "Cast Curse of Recklessness on him.",
-						constant = "CAST_CURSE_OF_RECKLESSNESS_ON_HIM",
-						export = true,
-						text = {
-							en = "Cast Curse of Recklessness on him.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对他施放鲁莽诅咒。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Curse of Recklessness on him.",
 					["coord"] = { 58.2, 45.2, SILVERPINE_FOREST },
 					["groups"] = {
 						i(208750, {	-- Rune of Channeling
@@ -1928,24 +1826,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "Found in the basement of Fenris Keep.",
-						constant = "FOUND_IN_THE_BASEMENT_OF_FENRIS_KEEP",
-						export = true,
-						text = {
-							en = "Found in the basement of Fenris Keep.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于芬里斯城堡的地下室。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found in the basement of Fenris Keep.",
 					-- #endif
 					["groups"] = {
 						i(4445, {	-- Flesh Carver
@@ -2003,24 +1884,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
-					["description"] = createLocalizationString({
-						readable = "You will need to use Sprint to make the jump to the platform.",
-						constant = "YOU_WILL_NEED_TO_USE_SPRINT_TO_MAKE_THE_JUMP_TO",
-						export = true,
-						text = {
-							en = "You will need to use Sprint to make the jump to the platform.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要使用疾跑才能跳到平台上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You will need to use Sprint to make the jump to the platform.",
 					["provider"] = { "o", 409131 },	-- Rusty Chest
 					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -2233,14 +2097,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- This was moved to Hillsbrad Foothills!
 				i(4767, {	-- Coppercloth Gloves
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_3",
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 09.09.2023
 					["cr"] = 3578,	-- Dalaran Miner
 				}),
 				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
-					["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["crs"] = {
 						-- #if BEFORE 4.0.3
 						2120,	-- Archmage Ataeric
@@ -2282,24 +2146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
-					["description"] = createLocalizationString({
-						readable = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
-						constant = "SUPPOSEDLY_THIS_WILL_NOT_DROP_IF_YOU_VE",
-						export = true,
-						text = {
-							en = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "据说如果你已经完成了迅捷打击符文，此物品就不会掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
@@ -2343,24 +2190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
-					["description"] = createLocalizationString({
-						readable = "Use Life Tap in a safe area to summon the Tortured Soul.",
-						constant = "USE_LIFE_TAP_IN_A_SAFE_AREA_TO_SUMMON_THE",
-						export = true,
-						text = {
-							en = "Use Life Tap in a safe area to summon the Tortured Soul.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在安全区域使用生命分流来召唤受折磨的灵魂。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
@@ -2370,24 +2200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
-					["description"] = createLocalizationString({
-						readable = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-						constant = "MOON_CAST_MOONFIRE_A_LOT_EMERALD_DREAM_CAST",
-						export = true,
-						text = {
-							en = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "月之：频繁施放月火术。\n翡翠梦境：频繁施放治疗之触（等级 1）。\n狂野：频繁变形。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
 					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },

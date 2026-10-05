@@ -3,24 +3,7 @@
 --------------------------------------------------
 
 root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
-	["description"] = createLocalizationString({
-		readable = "Rewarded from Quest while in Party Sync",
-		constant = "REWARDED_FROM_QUEST_WHILE_IN_PARTY_SYNC",
-		export = true,
-		text = {
-			en = "Rewarded from Quest while in Party Sync",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "在小队同步状态下完成任务后奖励",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "Rewarded from Quest while in Party Sync",
 	["groups"] = {
 		i(171305, {	-- Salvaged Cache of Goods
 			cl(DEATHKNIGHT, {

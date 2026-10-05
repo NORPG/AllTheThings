@@ -25,24 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 200063, 1 } },	-- 1x Observant Riddle "Treat"
 			}),
 			i(192777, {	-- Magmashell (MOUNT!)
-				["description"] = createLocalizationString({
-					readable = "Farm Lavaslurpers and Basalt Shells for Empty Magma Shell in the area around the first waypoint. Go to the second waypoint and click on the Empowered Snail to get the Magmashell mount. You will need to survive the lava.",
-					constant = "FARM_LAVASLURPERS_AND_BASALT_SHELLS_FOR_EMPTY",
-					export = true,
-					text = {
-						en = "Farm Lavaslurpers and Basalt Shells for Empty Magma Shell in the area around the first waypoint. Go to the second waypoint and click on the Empowered Snail to get the Magmashell mount. You will need to survive the lava.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在第一个路径点周围的区域刷熔岩吸食者和玄武岩壳，以获取空的岩浆壳。前往第二个路径点并点击被强化的蜗牛，以获得岩浆壳坐骑。你需要能在岩浆中存活。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Farm Lavaslurpers and Basalt Shells for Empty Magma Shell in the area around the first waypoint. Go to the second waypoint and click on the Empowered Snail to get the Magmashell mount. You will need to survive the lava.",
 				["cost"] = { { "i", 201883, 1 } },	-- 1x Empty Magma Shell
 				["crs"] = {
 					193138,	-- Lavaslurper
@@ -67,24 +50,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 198047, 1 } },	-- 1x Kul Tiran Red
 			}),
 			i(200638, {	-- Bubblefilled Flounder
-				["description"] = createLocalizationString({
-					readable = "Can only be looted while dead. Found within bubbles of air underwater at the Hissing Grotto north of the Obsidian Citadel in the Waking Shores.",
-					constant = "CAN_ONLY_BE_LOOTED_WHILE_DEAD_FOUND_WITHIN",
-					export = true,
-					text = {
-						en = "Can only be looted while dead. Found within bubbles of air underwater at the Hissing Grotto north of the Obsidian Citadel in the Waking Shores.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只能在死亡状态下拾取。位于觉醒海岸黑曜堡垒以北嘶鸣石窟水下的气泡中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can only be looted while dead. Found within bubbles of air underwater at the Hissing Grotto north of the Obsidian Citadel in the Waking Shores.",
 				["coord"] = { 19.4, 36.3, THE_WAKING_SHORES },
 			}),
 		}),

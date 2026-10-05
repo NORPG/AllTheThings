@@ -454,24 +454,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = createLocalizationString({
-					readable = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-					constant = "THIS_ALLOWS_CONVERTING_CERTAIN_PIECES_OF_GEAR",
-					export = true,
-					text = {
-						en = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "它可以将某些装备转换为你的职业的套装物品。\n\n转换之前请务必先装备该物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1

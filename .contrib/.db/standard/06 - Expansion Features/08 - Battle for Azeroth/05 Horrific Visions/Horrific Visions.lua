@@ -100,144 +100,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				i(168938),	-- Ward of Mutual Aid [Rank 3]
 			})),
 			n(QUESTS, {
-				["description"] = createLocalizationString({
-					readable = "Mogs are looted at the end from a full clear with that specific mask on.",
-					constant = "MOGS_ARE_LOOTED_AT_THE_END_FROM_A_FULL_CLEAR",
-					export = true,
-					text = {
-						en = "Mogs are looted at the end from a full clear with that specific mask on.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "幻化装备需要在戴着特定面具的情况下通关全部内容，在最后拾取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Mogs are looted at the end from a full clear with that specific mask on.",
 				["maps"] = {
 					HORRIFIC_ORGRIMMAR,
 					HORRIFIC_STORMWIND,
 				},
 				["groups"] = {
 					q(58314, {	-- Mask of the Burned Bridge
-						["description"] = createLocalizationString({
-							readable = "Obtained from completing the Valley of Wisdom objective with one mask active.",
-							constant = "OBTAINED_FROM_COMPLETING_THE_VALLEY_OF_WISDOM",
-							export = true,
-							text = {
-								en = "Obtained from completing the Valley of Wisdom objective with one mask active.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在激活一个面具的情况下完成智慧谷目标获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from completing the Valley of Wisdom objective with one mask active.",
 						["provider"] = { "i", 174083 },	-- Faceless Mask of the Burned Bridge
 						["groups"] = {
 							i(174342),	-- Mask of the Burned Bridge
 						},
 					}),
 					q(58297, {	-- Mask of the Daredevil
-						["description"] = createLocalizationString({
-							readable = "Obtained from completing the Valley of Honor objective with one mask active.",
-							constant = "OBTAINED_FROM_COMPLETING_THE_VALLEY_OF_HONOR",
-							export = true,
-							text = {
-								en = "Obtained from completing the Valley of Honor objective with one mask active.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在激活一个面具的情况下完成荣誉谷目标获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from completing the Valley of Honor objective with one mask active.",
 						["provider"] = { "i", 174082 },	-- Faceless Mask of the Daredevil
 						["groups"] = {
 							i(173955),	-- Mask of the Daredevil
 						},
 					}),
 					q(58316, {	-- Mask of the Dark Imagination
-						["description"] = createLocalizationString({
-							readable = "Obtained from completing the Mage Quarter objective with one mask active.",
-							constant = "OBTAINED_FROM_COMPLETING_THE_MAGE_QUARTER",
-							export = true,
-							text = {
-								en = "Obtained from completing the Mage Quarter objective with one mask active.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在激活一个面具的情况下完成法师区目标获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from completing the Mage Quarter objective with one mask active.",
 						["provider"] = { "i", 174081 },	-- Faceless Mask of the Dark Imagination
 						["groups"] = {
 							i(173953),	-- Mask of the Dark Imagination
 						},
 					}),
 					q(58318, {	-- Mask of the Long Night
-						["description"] = createLocalizationString({
-							readable = "Obtained from a full clear of either vision.",
-							constant = "OBTAINED_FROM_A_FULL_CLEAR_OF_EITHER_VISION",
-							export = true,
-							text = {
-								en = "Obtained from a full clear of either vision.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "通过完整通关任意一个幻象获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from a full clear of either vision.",
 						["provider"] = { "i", 174080 },	-- Faceless Mask of the Long Night
 						["groups"] = {
 							i(172952),	-- Mask of the Long Night
 						},
 					}),
 					q(58317, {	-- Mask of the Pained
-						["description"] = createLocalizationString({
-							readable = "Obtained from completing the Old Town objective with one mask active.",
-							constant = "OBTAINED_FROM_COMPLETING_THE_OLD_TOWN_OBJECTIVE",
-							export = true,
-							text = {
-								en = "Obtained from completing the Old Town objective with one mask active.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在激活一个面具的情况下完成旧城区目标获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtained from completing the Old Town objective with one mask active.",
 						["provider"] = { "i", 174079 },	-- Faceless Mask of the Pained
 						["groups"] = {
 							i(173524),	-- Mask of the Pained
@@ -282,24 +180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				},
 			}),
 			n(SCENARIO_COMPLETION, {
-				["description"] = createLocalizationString({
-					readable = "You can only receive each tier of gear rewards once per week. Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time. After all tier rewards are looted for the week no more gear is given.",
-					constant = "YOU_CAN_ONLY_RECEIVE_EACH_TIER_OF_GEAR_REWARDS",
-					export = true,
-					text = {
-						en = "You can only receive each tier of gear rewards once per week. Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time. After all tier rewards are looted for the week no more gear is given.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你每周只能获得每个档次的装备奖励一次。例如，多次完成 5 面具通关，每次都会给予下一档较低的奖励。当本周所有档次的奖励都已拾取后，就不会再给予装备了。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You can only receive each tier of gear rewards once per week. Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time. After all tier rewards are looted for the week no more gear is given.",
 				["crs"] = {
 					152718,	-- Alleria Windrunner
 					152089,	-- Thrall
@@ -332,24 +213,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				},
 				["groups"] = {
 					n(160708, {	-- Mail Muncher
-						["description"] = createLocalizationString({
-							readable = "Has a chance to spawn from Mailboxes in either vision.",
-							constant = "HAS_A_CHANCE_TO_SPAWN_FROM_MAILBOXES_IN_EITHER",
-							export = true,
-							text = {
-								en = "Has a chance to spawn from Mailboxes in either vision.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "有几率从两种幻象的邮箱中刷新出来。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Has a chance to spawn from Mailboxes in either vision.",
 						["coords"] = {
 							{ 40.0, 78.4, HORRIFIC_ORGRIMMAR },
 							{ 52.8, 76.2, HORRIFIC_ORGRIMMAR },
@@ -386,24 +250,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(342098, {	-- Coifcurl's Close Shave Kit
-							["description"] = createLocalizationString({
-								readable = "Requires entering the Valley of Spirits. The chest is inside the barber shop on the right.",
-								constant = "REQUIRES_ENTERING_THE_VALLEY_OF_SPIRITS_THE",
-								export = true,
-								text = {
-									en = "Requires entering the Valley of Spirits. The chest is inside the barber shop on the right.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "需要进入灵魂谷。宝箱在右侧的理发店里。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Requires entering the Valley of Spirits. The chest is inside the barber shop on the right.",
 							["coord"] = { 40.5, 60.3, HORRIFIC_ORGRIMMAR },
 							["groups"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
 						}),
@@ -415,24 +262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								i(174457),	-- C'Thuffer (PET!)
 								i(174082),	-- Faceless Mask of the Daredevil (QI!)
 								i(174855, {	-- Bow of Calamity
-									["description"] = createLocalizationString({
-										readable = "Has only been received on a Hunter character (so far).\nCan be traded to party members within the same Vision.",
-										constant = "HAS_ONLY_BEEN_RECEIVED_ON_A_HUNTER_CHARACTER_SO",
-										export = true,
-										text = {
-											en = "Has only been received on a Hunter character (so far).\nCan be traded to party members within the same Vision.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "（目前为止）只在猎手角色上获得过。\n可在同一幻象内交易给队友。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Has only been received on a Hunter character (so far).\nCan be traded to party members within the same Vision.",
 								}),
 							},
 						}),
@@ -463,24 +293,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 					}),
 					n(158284, {	-- Craggle Wobbletop <Toys and Novelties>
-						["description"] = createLocalizationString({
-							readable = "Craggle pats around outside of the Trade District, so selecting a Corrupted or Lost Area is not required. You need to kill the shielding robot to damage him, which requires using player CC or dropping a Toy Train Set in Craggle's path and pulling the bot while he's distracted.",
-							constant = "CRAGGLE_PATS_AROUND_OUTSIDE_OF_THE_TRADE",
-							export = true,
-							text = {
-								en = "Craggle pats around outside of the Trade District, so selecting a Corrupted or Lost Area is not required. You need to kill the shielding robot to damage him, which requires using player CC or dropping a Toy Train Set in Craggle's path and pulling the bot while he's distracted.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "克拉格尔在贸易区外巡逻，因此无需选择腐化区域或失落区域。你需要先杀掉提供护盾的机器人才能对他造成伤害，这需要使用玩家控制技能，或在克拉格尔的行进路线上丢下玩具火车套装，并趁他被吸引时分拉机器人。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Craggle pats around outside of the Trade District, so selecting a Corrupted or Lost Area is not required. You need to kill the shielding robot to damage him, which requires using player CC or dropping a Toy Train Set in Craggle's path and pulling the bot while he's distracted.",
 						["coords"] = {
 							{ 58.4, 77.2, HORRIFIC_STORMWIND },
 							{ 56.6, 67.6, HORRIFIC_STORMWIND },
@@ -490,24 +303,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["groups"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
 					}),
 					i(174928, {	-- Rotten Apple (TOY!)
-						["description"] = createLocalizationString({
-							readable = "Repeatedly click the bouncing apples at the coordinates provided. Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
-							constant = "REPEATEDLY_CLICK_THE_BOUNCING_APPLES_AT_THE",
-							export = true,
-							text = {
-								en = "Repeatedly click the bouncing apples at the coordinates provided. Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在提供的坐标处反复点击弹跳的苹果。据说点击 100 次就能保证玩具出现在你的最终宝箱中，但如果你时间不够，任何一次点击都应能提供机会。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Repeatedly click the bouncing apples at the coordinates provided. Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
 						["coords"] = {
 							{ 57.0, 55.0, HORRIFIC_STORMWIND },
 							{ 60.0, 58.0, HORRIFIC_STORMWIND },
@@ -517,24 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					o(343698, {	-- Void-Touched Skull
-						["description"] = createLocalizationString({
-							readable = "Behind the orphanage in Cathedral Square. It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
-							constant = "BEHIND_THE_ORPHANAGE_IN_CATHEDRAL_SQUARE_IT_S",
-							export = true,
-							text = {
-								en = "Behind the orphanage in Cathedral Square. It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在大教堂广场的孤儿院后面。它在地上，紧挨着一些箱子，非常小，而且没有常见的可互动闪光。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Behind the orphanage in Cathedral Square. It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
 						["coord"] = { 58.9, 52.9, HORRIFIC_STORMWIND },
 						["groups"] = {
 							i(174921, {	-- Void-Touched Skull (TOY!)

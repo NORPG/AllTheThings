@@ -5,24 +5,7 @@
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
 		n(LEGION_INVASIONS, {
-			["description"] = createLocalizationString({
-				readable = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
-				constant = "COMPLETE_4_LEGION_INVASION_WORLD_QUESTS_THEN",
-				export = true,
-				text = {
-					en = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "完成 4 个军团入侵世界任务，然后完成对应区域的场景战役",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
 			["maps"] = {
 				VALSHARAH,
 				HIGHMOUNTAIN,

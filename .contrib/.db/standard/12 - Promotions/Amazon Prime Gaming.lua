@@ -22,24 +22,7 @@ root(ROOTS.Promotions, {
 			i(49282, {	-- Big Battle Bear (MOUNT!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_MARCH_30TH_2023",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 3 月 30 日至 2023 年 4 月 27 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
@@ -47,24 +30,7 @@ root(ROOTS.Promotions, {
 			i(54847, {	-- Lil' XT (PET!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_APRIL_27TH_2023",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 4 月 27 日至 2023 年 5 月 25 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 },
@@ -72,24 +38,7 @@ root(ROOTS.Promotions, {
 			i(45037, {	-- Epic Purple Shirt
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_MAY_25TH_2023",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 5 月 25 日至 2023 年 6 月 29 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
@@ -97,24 +46,7 @@ root(ROOTS.Promotions, {
 			i(71718, {	-- Swift Shorestrider (MOUNT!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_JUNE_29TH_2023",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 6 月 29 日至 2023 年 7 月 27 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 },
@@ -122,24 +54,7 @@ root(ROOTS.Promotions, {
 			i(34519, {	-- Silver Pig (PET!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_JULY_25TH_2023",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 7 月 25 日至 2023 年 8 月 24 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 },
@@ -147,24 +62,7 @@ root(ROOTS.Promotions, {
 			i(38312, {	-- Tabard of Brilliance
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_AUGUST_24TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 8 月 24 日至 2023 年 9 月 28 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },
@@ -172,24 +70,7 @@ root(ROOTS.Promotions, {
 			i(49664, {	-- Zipao Tiger (PET!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from September 26th 2023 till October 24th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_SEPTEMBER_26TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from September 26th 2023 till October 24th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 9 月 26 日至 2023 年 10 月 24 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from September 26th 2023 till October 24th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 },
@@ -197,24 +78,7 @@ root(ROOTS.Promotions, {
 			i(95341, {	-- Armored Bloodwing (MOUNT!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from October 24th 2023 till November 28th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_OCTOBER_24TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from October 24th 2023 till November 28th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 10 月 24 日至 2023 年 11 月 28 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from October 24th 2023 till November 28th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
@@ -222,24 +86,7 @@ root(ROOTS.Promotions, {
 			i(38313, {	-- Tabard of Fury
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_NOVEMBER_28TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 11 月 28 日至 2023 年 12 月 26 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
@@ -247,24 +94,7 @@ root(ROOTS.Promotions, {
 			i(92724, {	-- Swift Windsteed (MOUNT!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from December 26th 2023 till January 30th 2024.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_DECEMBER_26TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from December 26th 2023 till January 30th 2024.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2023 年 12 月 26 日至 2024 年 1 月 30 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from December 26th 2023 till January 30th 2024.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5 },
@@ -272,24 +102,7 @@ root(ROOTS.Promotions, {
 			i(160588, {	-- Cap'n Crackers (PET!)
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from January 30th 2024 till February 27th 2024.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_JANUARY_30TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from January 30th 2024 till February 27th 2024.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2024 年 1 月 30 日至 2024 年 2 月 27 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from January 30th 2024 till February 27th 2024.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },
@@ -297,24 +110,7 @@ root(ROOTS.Promotions, {
 			i(23709, {	-- Tabard of Frost 
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
-				["description"] = createLocalizationString({
-					readable = "Amazon Prime Gaming reward from February 27th 2024 till March 26th 2024.",
-					constant = "AMAZON_PRIME_GAMING_REWARD_FROM_FEBRUARY_27TH",
-					export = true,
-					text = {
-						en = "Amazon Prime Gaming reward from February 27th 2024 till March 26th 2024.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "2024 年 2 月 27 日至 2024 年 3 月 26 日的 Amazon Prime Gaming 奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Amazon Prime Gaming reward from February 27th 2024 till March 26th 2024.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 },

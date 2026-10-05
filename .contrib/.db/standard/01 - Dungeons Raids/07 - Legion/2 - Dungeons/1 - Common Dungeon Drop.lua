@@ -31,24 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			},
 		}),
 		i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3) (RECIPE!)
-			["description"] = createLocalizationString({
-				readable = "Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",
-				constant = "SUPPOSEDLY_ABLE_TO_DROP_FROM_ANY_LEGION_DUNGEON",
-				export = true,
-				text = {
-					en = "Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "据说在英雄/史诗难度下，军团再临任意地下城的最终首领都可能掉落，但近期只有部分首领得到确认，具体见本物品上标记的生物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",
 		-- [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 			["crs"] = {
 				102387,	-- Sael'orn confirmed 2022-04-18

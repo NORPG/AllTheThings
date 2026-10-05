@@ -17,7 +17,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FOLLOWERS, {
 					follower(467, {	-- Fen Tao
-						["description"] = "~L.IN_ORDER_TO_OBTAIN_THIS_FOLLOWER_YOU_NEED_TO",
+						["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 						["creatureID"] = 91483,	-- Fen Tao
 						["coord"] = { 46.9, 45.2, WARSPEAR },
 					}),
@@ -596,24 +596,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						n(88161, {	-- Challenger Sunforge
-							["description"] = createLocalizationString({
-								readable = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
-								constant = "CAN_ONLY_BUY_ITEMS_FROM_THIS_VENDOR_IF_YOU_HAVE",
-								export = true,
-								text = {
-									en = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只有你的角色拥有“挑战军阀：黄金”光辉事迹时，才能从该商人处购买物品。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 							["coord"] = { 65.3, 59.3, WARSPEAR },
 							["groups"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 								i(118401, {	-- Arcana Shard Spire
@@ -674,7 +657,7 @@ root(ROOTS.Zones, {
 									["cost"] = 10000000,	-- 1,000g
 								}),
 								un(REMOVED_FROM_GAME, i(119032, {	-- Rusted Challenger's Strongbox
-									["description"] = "~L.THIS_BOX_WAS_FROM_THE_WOD_CHALLENGE_MODE",
+									["description"] = "This box was from the WoD Challenge Mode Dailies.",
 									["groups"] = {
 										un(REMOVED_FROM_GAME, i(118996)),	-- Blackfire Amulet
 										un(REMOVED_FROM_GAME, i(118997)),	-- Blackfire Cape
@@ -750,7 +733,7 @@ root(ROOTS.Zones, {
 									},
 								})),
 								un(REMOVED_FROM_GAME, i(127831, {	-- Challenger's Strongbox
-									["description"] = "~L.THIS_BOX_WAS_FROM_THE_WOD_CHALLENGE_MODE",
+									["description"] = "This box was from the WoD Challenge Mode Dailies.",
 									["groups"] = {
 										un(REMOVED_FROM_GAME, i(118997)),	-- Blackfire Cape
 										un(REMOVED_FROM_GAME, i(118998)),	-- Blackfire Crystal
@@ -1931,7 +1914,7 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 								}),
 								i(120265, {	-- Technique: Ensorcelled Tarot (RECIPE!)
-									["description"] = "~L.THE_ITEM_IS_STILL_IN_GAME_BUT_YOU_CAN_T_LEARN",
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 									["collectible"] = false,
 								}),
@@ -1972,7 +1955,7 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 119297, 1 } },	-- 1x Secret of Draenor Inscription
 								}),
 								i(118610, {	-- Technique: Weapon Crystal (RECIPE!)
-									["description"] = "~L.THE_ITEM_IS_STILL_IN_GAME_BUT_YOU_CAN_T_LEARN",
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["timeline"] = { ADDED_6_0_2, REMOVED_10_0_5 },
 									["cost"] = { { "i", 119297, 5 } },	-- 5x Secret of Draenor Inscription
 									["collectible"] = false,

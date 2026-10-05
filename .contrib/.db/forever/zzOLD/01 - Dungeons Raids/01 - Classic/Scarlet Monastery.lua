@@ -90,24 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			-- #if AFTER 10.1.7
 			header(HEADERS.Spell, 419654, {	-- Scarlet Monastery of Old
-				["description"] = createLocalizationString({
-					readable = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastery, Armory, Library.",
-					constant = "UNLOCKED_VIA_THE_SCARLET_KEY_FROM_THE_LOOT",
-					export = true,
-					text = {
-						en = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastery, Armory, Library.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可通过万圣节期间装满战利品的南瓜中的“血色钥匙”解锁，或从拍卖行购买。\n\n与楼梯顶部的钥匙链互动以获得血色钥匙增益，它会开启全部四个旧区域。此解锁为账号通用。\n\n从左到右：墓地、修道院、军械库、图书馆。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastery, Armory, Library.",
 				["groups"] = {
 				-- #endif
 					n(SCARLET_MONASTERY_GRAVEYARD_HEADER, {
@@ -315,24 +298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 												{ "i", 5535 },	-- Compendium of the Fallen
 												{ "o", 19283 },	-- Compendium of the Fallen
 											},
-											["description"] = createLocalizationString({
-												readable = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
-												constant = "ON_ONE_OF_THE_SHELVES_ON_THE_LEFT_AS_YOU_ENTER",
-												export = true,
-												text = {
-													en = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
-													-- TODO: de = "",
-													-- TODO: es = "",
-													-- TODO: mx = "",
-													-- TODO: fr = "",
-													-- TODO: it = "",
-													-- TODO: ko = "",
-													-- TODO: pt = "",
-													-- TODO: ru = "",
-													cn = "在你进入通往杜安的最终走廊时，位于左侧的其中一个架子上。",
-													-- TODO: tw = "",
-												},
-											}),
+											["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 										}),
 									},
 								}),
@@ -348,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 												{ "i", 5535 },	-- Compendium of the Fallen
 												{ "o", 19283 },	-- Compendium of the Fallen
 											},
-											["description"] = "~L.ON_ONE_OF_THE_SHELVES_ON_THE_LEFT_AS_YOU_ENTER",
+											["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 										}),
 										i(17508, {	-- Forcestone Buckler
 											["timeline"] = { REMOVED_4_0_3 },
@@ -373,24 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 												{ "i", 5536 },	-- Mythology of the Titans
 												{ "o", 19284 },	-- Mythology of the Titans
 											},
-											["description"] = createLocalizationString({
-												readable = "In the hallway with the benches immediately to your left upon entering it.",
-												constant = "IN_THE_HALLWAY_WITH_THE_BENCHES_IMMEDIATELY_TO",
-												export = true,
-												text = {
-													en = "In the hallway with the benches immediately to your left upon entering it.",
-													-- TODO: de = "",
-													-- TODO: es = "",
-													-- TODO: mx = "",
-													-- TODO: fr = "",
-													-- TODO: it = "",
-													-- TODO: ko = "",
-													-- TODO: pt = "",
-													-- TODO: ru = "",
-													cn = "在放有长椅的走廊中，进入走廊后就在你的左手边。",
-													-- TODO: tw = "",
-												},
-											}),
+											["description"] = "In the hallway with the benches immediately to your left upon entering it.",
 										}),
 										i(7746, {	-- Explorers' League Commendation
 											["timeline"] = { REMOVED_4_0_3 },
@@ -448,24 +397,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 												{ "i", 5861 },	-- Beginnings of the Undead Threat
 												{ "o", 20726 },	-- Beginnings of the Undead Threat
 											},
-											["description"] = createLocalizationString({
-												readable = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
-												constant = "IN_THE_FIRST_COORIDOR_WITH_BOOKS_THERE_ARE_2",
-												export = true,
-												text = {
-													en = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
-													-- TODO: de = "",
-													-- TODO: es = "",
-													-- TODO: mx = "",
-													-- TODO: fr = "",
-													-- TODO: it = "",
-													-- TODO: ko = "",
-													-- TODO: pt = "",
-													-- TODO: ru = "",
-													cn = "在第一个有书的走廊里有两个小房间，第一个小房间里有一张桌子，上面放着两本可点击的书。\n\n其中一本是容器。",
-													-- TODO: tw = "",
-												},
-											}),
+											["description"] = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
 										}),
 									},
 								}),
@@ -552,45 +484,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									o(103821, {	-- Doan's Strongbox
 										["groups"] = {
 											i(7146, {	-- The Scarlet Key
-												["description"] = createLocalizationString({
-													readable = "Found in the chest after killing Arcanist Doan.",
-													constant = "FOUND_IN_THE_CHEST_AFTER_KILLING_ARCANIST_DOAN",
-													export = true,
-													text = {
-														en = "Found in the chest after killing Arcanist Doan.",
-														-- TODO: de = "",
-														-- TODO: es = "",
-														-- TODO: mx = "",
-														-- TODO: fr = "",
-														-- TODO: it = "",
-														-- TODO: ko = "",
-														-- TODO: pt = "",
-														-- TODO: ru = "",
-														cn = "击杀奥法师杜安后可在宝箱中找到。",
-														-- TODO: tw = "",
-													},
-												}),
+												["description"] = "Found in the chest after killing Arcanist Doan.",
 												["timeline"] = { REMOVED_4_0_3 },
 											}),
 											i(208485, {	-- The Scarlet Key
-												["description"] = createLocalizationString({
-													readable = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
-													constant = "FOUND_IN_THE_CHEST_AFTER_KILLING_ARCANIST_DOAN_2",
-													export = true,
-													text = {
-														en = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
-														-- TODO: de = "",
-														-- TODO: es = "",
-														-- TODO: mx = "",
-														-- TODO: fr = "",
-														-- TODO: it = "",
-														-- TODO: ko = "",
-														-- TODO: pt = "",
-														-- TODO: ru = "",
-														cn = "击杀奥法师杜安后可在宝箱中找到。每个账号每周可拾取一次。",
-														-- TODO: tw = "",
-													},
-												}),
+												["description"] = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
 												["timeline"] = { ADDED_10_1_7 },
 											}),
 										},

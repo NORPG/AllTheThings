@@ -46,24 +46,7 @@ OPERA_OF_MALEDICTION = createHeader({
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_SEVEN, inst(2875, bubbleDownSelf({["timeline"] = { ADDED_1_15_6 }}, {	-- Karazhan Crypts
-		["description"] = createLocalizationString({
-			readable = "[TBC] \nThis is a new dungeon added in SoD Phase 7.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.\n\nNOTE: Kharon drop all rewards, please do not report any that are known to be dropped by other bosses but not by Kharon.",
-			constant = "TBC_THIS_IS_A_NEW_DUNGEON_ADDED_IN_SOD_PHASE_7",
-			export = true,
-			text = {
-				en = "[TBC] \nThis is a new dungeon added in SoD Phase 7.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.\n\nNOTE: Kharon drop all rewards, please do not report any that are known to be dropped by other bosses but not by Kharon.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "[TBC] \n这是探索赛季第 7 阶段新增的地下城。\n当前的掉落表并不准确。如果你获得了不在首领掉落列表中的物品，请在 Discord 的 #classic-errors 频道反馈。\n\n注意：卡隆会掉落所有奖励，请不要反馈那些已知由其他首领掉落、但并非由卡隆掉落的物品。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "[TBC] \nThis is a new dungeon added in SoD Phase 7.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.\n\nNOTE: Kharon drop all rewards, please do not report any that are known to be dropped by other bosses but not by Kharon.",
 		["zone-text-areaID"] = 16074,	-- Karazhan Crypts
 		["sourceQuest"] = 86970,
 		["coord"] = { 39.8, 73.6, DEADWIND_PASS },
@@ -143,24 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						i(236002),	-- List of Components
 						objective(1, {	-- 0/1 Flame of Life
-							["description"] = createLocalizationString({
-								readable = "loot from lvl 60 Elite Red Dragon, in the right side of Wetland.",
-								constant = "LOOT_FROM_LVL_60_ELITE_RED_DRAGON_IN_THE_RIGHT",
-								export = true,
-								text = {
-									en = "loot from lvl 60 Elite Red Dragon, in the right side of Wetland.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "从湿地右侧的 60 级精英红龙身上拾取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "loot from lvl 60 Elite Red Dragon, in the right side of Wetland.",
 							["provider"] = { "i", 235789 },	-- Flame of Life (QI!)
 							["crs"] = {
 								1045,	-- Red Dragonspawn
@@ -202,24 +168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(PROFESSIONS, {
 						prof(ENCHANTING, {
 							n(238270, {	-- Encrypted Text
-								["description"] = createLocalizationString({
-									readable = "These enchants are learned from an Enchanted Text inside Karazhan Crypts. Encrypted Texts are found throughout the dungeon and can be decyphered by enchanters and mages using enchanting materials or Comprehension Charms respectively. Once the text is decyphered, it becomes a scroll; click on it to learn the recipe. Although the enchanting recipes are in randomized locations, the materials needed to decypher them are fixed by enchant according to the list below. This is helpful to know so you don't waste materials trying to learn enchants you already have.\n\n1x Nexus Crystal\nEnchant 2H Weapon - Spellblasting\nEnchant Off-Hand - Excellent Spirit\nEnchant Off-Hand - Superior Intellect\n\n1x Large Brilliant Shard\nEnchant Off-Hand - Wisdom\nEnchant Shield - Critical Strike\nEnchant Shield - Excellent Stamina\n\n1x Greater Eternal Essence\nEnchant Cloak - Agility\nEnchant Bracer - Greater Spellpower\nEnchant Gloves - Superior Strength",
-									constant = "THESE_ENCHANTS_ARE_LEARNED_FROM_AN_ENCHANTED",
-									export = true,
-									text = {
-										en = "These enchants are learned from an Enchanted Text inside Karazhan Crypts. Encrypted Texts are found throughout the dungeon and can be decyphered by enchanters and mages using enchanting materials or Comprehension Charms respectively. Once the text is decyphered, it becomes a scroll; click on it to learn the recipe. Although the enchanting recipes are in randomized locations, the materials needed to decypher them are fixed by enchant according to the list below. This is helpful to know so you don't waste materials trying to learn enchants you already have.\n\n1x Nexus Crystal\nEnchant 2H Weapon - Spellblasting\nEnchant Off-Hand - Excellent Spirit\nEnchant Off-Hand - Superior Intellect\n\n1x Large Brilliant Shard\nEnchant Off-Hand - Wisdom\nEnchant Shield - Critical Strike\nEnchant Shield - Excellent Stamina\n\n1x Greater Eternal Essence\nEnchant Cloak - Agility\nEnchant Bracer - Greater Spellpower\nEnchant Gloves - Superior Strength",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "这些附魔可以从卡拉赞墓穴内的附魔文本处学习。加密文本遍布整个地下城，附魔师可以使用附魔材料、法师可以使用理解魔符来解密它们。文本解密后会变成卷轴；点击它即可学会配方。虽然附魔配方的位置是随机的，但解密它们所需的材料按附魔固定，如下表所示。了解这一点很有帮助，可以避免浪费材料去学你已经拥有的附魔。\n\n1x 联结水晶\n附魔双手武器 - 法术轰击\n附魔副手 - 优秀精神\n附魔副手 - 超级智力\n\n1x 大块魔光碎片\n附魔副手 - 智慧\n附魔盾牌 - 爆击\n附魔盾牌 - 优秀耐力\n\n1x 强效不灭精华\n附魔披风 - 敏捷\n附魔护腕 - 强效法术强度\n附魔手套 - 超级力量",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "These enchants are learned from an Enchanted Text inside Karazhan Crypts. Encrypted Texts are found throughout the dungeon and can be decyphered by enchanters and mages using enchanting materials or Comprehension Charms respectively. Once the text is decyphered, it becomes a scroll; click on it to learn the recipe. Although the enchanting recipes are in randomized locations, the materials needed to decypher them are fixed by enchant according to the list below. This is helpful to know so you don't waste materials trying to learn enchants you already have.\n\n1x Nexus Crystal\nEnchant 2H Weapon - Spellblasting\nEnchant Off-Hand - Excellent Spirit\nEnchant Off-Hand - Superior Intellect\n\n1x Large Brilliant Shard\nEnchant Off-Hand - Wisdom\nEnchant Shield - Critical Strike\nEnchant Shield - Excellent Stamina\n\n1x Greater Eternal Essence\nEnchant Cloak - Agility\nEnchant Bracer - Greater Spellpower\nEnchant Gloves - Superior Strength",
 								["groups"] = {
 									r(1219577),	-- Enchant Off-Hand - Superior Intellect
 									r(1219578),	-- Enchant Off-Hand - Excellent Spirit
@@ -276,24 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(236712),	-- Bracers of Undead Slaying
 					}),
 					n(APPRENTICE , {	-- Apprentice
-						["description"] = createLocalizationString({
-							readable = "There are 3 Failed Apprentices locked in cells. The Warden can be found patrolling the Prison, if you kill him, he drops Portcullis Key. You can use this key to free one of the Failed Apprentices",
-							constant = "THERE_ARE_3_FAILED_APPRENTICES_LOCKED_IN_CELLS",
-							export = true,
-							text = {
-								en = "There are 3 Failed Apprentices locked in cells. The Warden can be found patrolling the Prison, if you kill him, he drops Portcullis Key. You can use this key to free one of the Failed Apprentices",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "有 3 名失败的学生被锁在牢房里。典狱官会在监狱中巡逻，击杀他会掉落闸门钥匙。你可以用这把钥匙释放其中一名失败的学生",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "There are 3 Failed Apprentices locked in cells. The Warden can be found patrolling the Prison, if you kill him, he drops Portcullis Key. You can use this key to free one of the Failed Apprentices",
 						["groups"] = {
 							n(238560, {		-- The Warden
 								i(237011),	-- Portcullis Key
@@ -352,45 +284,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(235882),	-- Clattering Steps
 					}),
 					n(238678, {	--Unk'omon <The Winged Sorrow>
-						["description"] = createLocalizationString({
-							readable = "In the Library, use the torch to open the secret room behind the bookshelf. Mage, or Warlock should speak to Alfwhit Grigdert. He will spawn a portal and teleport back up to the Dark Rider room. Speak with Alfwhit Grigdert again and the boss will spawn. He will give Mark of the Master, a 25% attackspeed & 25% castspeed for 15minutes, when killed",
-							constant = "IN_THE_LIBRARY_USE_THE_TORCH_TO_OPEN_THE_SECRET",
-							export = true,
-							text = {
-								en = "In the Library, use the torch to open the secret room behind the bookshelf. Mage, or Warlock should speak to Alfwhit Grigdert. He will spawn a portal and teleport back up to the Dark Rider room. Speak with Alfwhit Grigdert again and the boss will spawn. He will give Mark of the Master, a 25% attackspeed & 25% castspeed for 15minutes, when killed",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在图书馆中，使用火把打开书架后面的密室。法师或术士应与 Alfwhit Grigdert 交谈。他会打开一个传送门并将你传送回黑暗骑士的房间。再次与 Alfwhit Grigdert 交谈，首领就会出现。他被击杀时会给予大师印记，提供 25% 攻击速度和 25% 施法速度，持续 15 分钟。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "In the Library, use the torch to open the secret room behind the bookshelf. Mage, or Warlock should speak to Alfwhit Grigdert. He will spawn a portal and teleport back up to the Dark Rider room. Speak with Alfwhit Grigdert again and the boss will spawn. He will give Mark of the Master, a 25% attackspeed & 25% castspeed for 15minutes, when killed",
 						-- Nothing worth listining. Drops Felcloth, Demonic Rune, a sack of gems, random BoE greens/blues, and has a chance of dropping Sanctified armor
 					}),
 					n(237439, {	-- Kharon			(2)
-						["description"] = createLocalizationString({
-							readable = "Players can summon Kharon by interacting with Dialogues of the Dead at his Altar.\n\nKharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
-							constant = "PLAYERS_CAN_SUMMON_KHARON_BY_INTERACTING_WITH",
-							export = true,
-							text = {
-								en = "Players can summon Kharon by interacting with Dialogues of the Dead at his Altar.\n\nKharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "玩家可以通过与他的祭坛处的亡者对话来召唤卡戎。\n\n卡戎的战利品很特殊，它会从所有地下城首领的战利品表中抽取一件物品，包括歌剧院，外加卡戎自己的战利品。\n卡戎的专属战利品物品等级为 86，并额外附带 6 种附魔中随机 1 种。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Players can summon Kharon by interacting with Dialogues of the Dead at his Altar.\n\nKharon's loots are special, as it will loot an item from the loot table of all dungeon bosses, including the Opera, plus Kharon's own loots.\nKharon's exclusive loot is ilv86, which has an additional random 1 of 6 Enchantments",
 						["groups"] = {
 							i(235874),	-- Cultist's Handwraps
 							i(236642),	-- Mender's Handwraps
@@ -403,24 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(238365, {	-- Dark Rider		(4)
-						["description"] = createLocalizationString({
-							readable = "To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",
-							constant = "TO_SUMMON_THE_DARK_RIDER_BOSS_YOU_WILL_NEED_TO",
-							export = true,
-							text = {
-								en = "To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要召唤黑暗骑士首领，你需要收集 3 件神秘遗物——法杖、剑和镰刀。集齐后，你就可以用它们在监狱中召唤黑暗骑士。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "To summon the Dark Rider Boss, you will need to collect 3 Mysterious Relics - a Staff, Sword, and Scythe. Once you have these you can use them to summon Dark Rider in the Prison",
 						["cost"] = {
 							{ "i", 236878, 1 },	-- Mysterious Relic (Sword)
 							{ "i", 236879, 1 },	-- Mysterious Relic (Staff)

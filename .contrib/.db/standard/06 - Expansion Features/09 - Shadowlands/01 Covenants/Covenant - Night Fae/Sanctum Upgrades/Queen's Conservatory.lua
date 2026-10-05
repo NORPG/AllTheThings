@@ -324,32 +324,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178881, {	-- Dutiful Spirit
-										["description"] = createLocalizationString({
-											readable = "Spirit quality affects loot chance.",
-											constant = "SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
-											export = true,
-											text = {
-												en = "Spirit quality affects loot chance.",
-												-- TODO: de = "",
-												-- TODO: es = "",
-												-- TODO: mx = "",
-												-- TODO: fr = "",
-												-- TODO: it = "",
-												-- TODO: ko = "",
-												-- TODO: pt = "",
-												-- TODO: ru = "",
-												cn = "灵魂品质影响掉落几率。",
-												-- TODO: tw = "",
-											},
-										}),
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUTIFUL_GROUP),
 									}),
 									header(HEADERS.Item, 178874, {	-- Martial Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[4] },T2_MARTIAL_GROUP),
 									}),
 									header(HEADERS.Item, 177698, {	-- Untamed Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[7] },appendGroups(T2_UNTAMED_GROUP, {
 											i(181313),	-- Snapper Soul
 											i(181314),	-- Gulper Soul
@@ -357,49 +340,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										})),
 									}),
 									header(HEADERS.Item, 178882, {	-- Prideful Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[10] },T2_PRIDEFUL_GROUP),
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178880, {	-- Greater Dutiful Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUTIFUL_GROUP),
 									}),
 									header(HEADERS.Item, 178877, {	-- Greater Martial Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[5] },T3_MARTIAL_GROUP),
 									}),
 									header(HEADERS.Item, 177699, {	-- Greater Untamed Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[8] },appendGroups(T3_UNTAMED_GROUP, {
 											i(181306),	-- Spirit Tender's Bulb
 											i(180414),	-- Wakener's Runestag (MOUNT!)
 											i(187705, {	-- Choofa's Call (TOY!)
-												["description"] = createLocalizationString({
-													readable = "Please report if you get this toy from another Spirit.",
-													constant = "PLEASE_REPORT_IF_YOU_GET_THIS_TOY_FROM_ANOTHER",
-													export = true,
-													text = {
-														en = "Please report if you get this toy from another Spirit.",
-														-- TODO: de = "",
-														-- TODO: es = "",
-														-- TODO: mx = "",
-														-- TODO: fr = "",
-														-- TODO: it = "",
-														-- TODO: ko = "",
-														-- TODO: pt = "",
-														-- TODO: ru = "",
-														cn = "如果你从其他幽灵处获得这个玩具，请向我们反馈。",
-														-- TODO: tw = "",
-													},
-												}),
+												["description"] = "Please report if you get this toy from another Spirit.",
 												["timeline"] = { ADDED_9_1_5 },
 											}),
 										})),
 									}),
 									header(HEADERS.Item, 178883, {	-- Greater Prideful Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[11] },T3_PRIDEFUL_GROUP),
 									}),
 								}),
@@ -532,22 +498,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							["groups"] = {
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178879, {	-- Divine Dutiful Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUTIFUL_GROUP),
 									}),
 									header(HEADERS.Item, 178878, {	-- Divine Martial Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[6] },T5_MARTIAL_GROUP),
 									}),
 									header(HEADERS.Item, 177700, {	-- Divine Untamed Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[9] },appendGroups(T5_UNTAMED_GROUP, {
 											i(180723),	-- Enchanted Wakener's Runestag (MOUNT!)
 											i(181310),	-- Spirit Tender's Pack
 										})),
 									}),
 									header(HEADERS.Item, 178884, {	-- Divine Prideful Spirit
-										["description"] = "~L.SPIRIT_QUALITY_AFFECTS_LOOT_CHANCE",
+										["description"] = "Spirit quality affects loot chance.",
 										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[12] },T5_PRIDEFUL_GROUP),
 									}),
 									i(180977),	-- Spirit-Tender's Satchel

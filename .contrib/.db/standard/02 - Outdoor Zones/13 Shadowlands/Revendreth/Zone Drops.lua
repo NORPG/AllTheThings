@@ -15,48 +15,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(172957, {	-- Atonement Crypt Key
-				["description"] = createLocalizationString({
-					readable = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
-					constant = "USED_TO_OPEN_THE_CRYPTS_AROUND_CFFFFFFFF70_1_55",
-					export = true,
-					text = {
-						en = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "用于打开 |cFFFFFFFF70.1, 55.2|r 周围的墓穴。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 			}),
 			i(173735, {	-- Atonement Crypt Key (QI!)
 				["sourceQuest"] = 57925,	-- Archivist Fane
 			}),
 			i(182703, {	-- Bubbling Red Muck Dye
-				["description"] = createLocalizationString({
-					readable = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
-					constant = "DROPS_FROM_MOBS_OR_CFFFFFFFFDISCARDED_VIALS_R",
-					export = true,
-					text = {
-						en = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由炽热沼泽区域（|cFFFFFFFF35.7, 32.7|r）的怪物或|cFFFFFFFF废弃的药瓶|r掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
 				["crs"] = {
 					166292,	-- Bog Beast
 					166320,	-- Bog Dredger
@@ -78,24 +44,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(182972, {	-- Critter Two-Thumbs Portrait
-				["description"] = createLocalizationString({
-					readable = "Drops from mobs in the Endmire area (|cFFFFFFFF62.5, 44.3|r).",
-					constant = "DROPS_FROM_MOBS_IN_THE_ENDMIRE_AREA_CFFFFFFFF62",
-					export = true,
-					text = {
-						en = "Drops from mobs in the Endmire area (|cFFFFFFFF62.5, 44.3|r).",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由终末泥沼区域（|cFFFFFFFF62.5, 44.3|r）的怪物掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from mobs in the Endmire area (|cFFFFFFFF62.5, 44.3|r).",
 				["crs"] = {
 					159676,	-- Animus Mite
 					160421,	-- Devourer Mite
@@ -191,48 +140,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177806),	-- Banewood Dirk
 			i(174655, {	-- Bell of Remembrance
 				["questID"] = 61194,	-- after the first day, when you can do the original quest item > second looted bell (this one), i haven't been able to loot more than one bell per day. they also generally drop very quickly, like in < 10 mob kills, and this quest triggers on loot each time
-				["description"] = createLocalizationString({
-					readable = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
-					constant = "USE_IN_FRONT_OF_THE_SEAL_OF_THE_FORGOTTEN_AT",
-					export = true,
-					text = {
-						en = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 |cFFFFFFFF73.2, 33.8|r 处的被遗忘者印记前方使用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
 				["sourceQuests"] = { 58725 },	-- Sinkeeper
 				["isDaily"] = true,
 				["crs"] = { 160716 },	-- Sinstone Rampager
 				-- no questID appears to be attached to this, you can just judge souls as often as you loot bells. this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either. it gave me a buff item + some greys the first time, the second one gave me a Crumbling Sinstone that gave 8 Sinstone Fragments
 				["groups"] = {
 					i(174652, {	-- Satchel of Forgotten Heirlooms
-						["description"] = createLocalizationString({
-							readable = "Awarded regardless of your judgment.",
-							constant = "AWARDED_REGARDLESS_OF_YOUR_JUDGMENT",
-							export = true,
-							text = {
-								en = "Awarded regardless of your judgment.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "无论你如何裁决都会获得。",
-								-- TODO: tw = "",
-							},
-						}),	-- as of December 14th 2021 she gives the satchel regardless of player's decision.
+						["description"] = "Awarded regardless of your judgment.",	-- as of December 14th 2021 she gives the satchel regardless of player's decision.
 						["groups"] = {
 							i(180387),	-- Crumbling Sinstone
 							i(180403),	-- Vessel of Distilled Regret
@@ -264,24 +179,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177816),	-- Dredhollow Cape
 			i(179323),	-- Dredhollow Cudgel
 			i(173939, {	-- Enticing Anima
-				["description"] = createLocalizationString({
-					readable = "Used to summon the Worldedge Gorger.",
-					constant = "USED_TO_SUMMON_THE_WORLDEDGE_GORGER",
-					export = true,
-					text = {
-						en = "Used to summon the Worldedge Gorger.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "用于召唤世界边缘吞食者。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Used to summon the Worldedge Gorger.",
 				["crs"] = {
 					159676,	-- Animus Mite
 					156061,	-- Devourer Mite
@@ -336,24 +234,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177810),	-- Stonebreaker Mace
 			i(180487),	-- Stonefist's Knuckle Cover
 			i(187930, {	-- Technique: Mark of the Regal Dredbat (RECIPE!)
-				["description"] = createLocalizationString({
-					readable = "Drops from Evedweller bats in Dominance Keep.",
-					constant = "DROPS_FROM_EVEDWELLER_BATS_IN_DOMINANCE_KEEP",
-					export = true,
-					text = {
-						en = "Drops from Evedweller bats in Dominance Keep.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由统御要塞的夜居蝙蝠掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from Evedweller bats in Dominance Keep.",
 				["timeline"] = { ADDED_9_1_5 },
 				["crs"] = {
 					158976,	-- Shrieking Evedweller
@@ -362,24 +243,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(182705, {	-- Vial of Blue Muck Dye
 				-- may also come from the |cFFFFFFFFDiscarded Vial object that can be found around the muck lakes - only the other itemID version shows up for that now, though|r
-				["description"] = createLocalizationString({
-					readable = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
-					constant = "DROPS_FROM_MOBS_OR_CFFFFFFFFDISCARDED_VIALS_R_2",
-					export = true,
-					text = {
-						en = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由泥木林地区域（|cFFFFFFFF72.9, 73.5|r）的怪物或|cFFFFFFFF废弃的药瓶|r掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
 			--[[ commenting until we know whether it's based on the mobs being in the specific area, or the mobs themselves, most of which are in multiple areas
 				["crs"] = {
 					157332,	-- Bonemauler Alpha
@@ -390,24 +254,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			--]]
 			}),
 			i(184446, {	-- Vial of Blue Muck Dye
-				["description"] = createLocalizationString({
-					readable = "This version of the dye appears to only be used during the initial questline to obtain your Dredger.",
-					constant = "THIS_VERSION_OF_THE_DYE_APPEARS_TO_ONLY_BE_USED",
-					export = true,
-					text = {
-						en = "This version of the dye appears to only be used during the initial questline to obtain your Dredger.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此版本的染料似乎只在获取泥仆的初始任务线中使用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This version of the dye appears to only be used during the initial questline to obtain your Dredger.",
 			}),
 			i(179334),	-- Wingblade Staff
 		}),

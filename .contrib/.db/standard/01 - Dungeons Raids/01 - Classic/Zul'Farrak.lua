@@ -274,14 +274,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(SPECIAL, {
 				-- #if BEFORE 3.0.8
 				i(9240, {	-- Mallet of Zul'Farrak
-					["description"] = "~L.THE_SACRED_MALLET_DROPS_FROM_QIAGA_THE_KEEPER",
+					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 59.0, 79.6, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
 					["cr"] = 7995,	-- Vile Priestess Hexx
 				}),
 				i(9241, {	-- Sacred Mallet
-					["description"] = "~L.BRING_THIS_TO_THE_TOP_OF_JINTHA_ALOR_AND_USE_IT",
+					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
 					["coord"] = { 49.2, 68.6, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7996,	-- Qiaga the Keeper
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(223526, {	-- Sul'thraze the Lasher
-					["description"] = "~L.YOU_MUST_TAKE_BOTH_OF_THE_SWORDS_AND_COMBINE",
+					["description"] = "You must take both of the swords and combine them to form this weapon.",
 					["cost"] = {
 						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
@@ -304,7 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #else
 				i(9372, {	-- Sul'thraze the Lasher
-					["description"] = "~L.YOU_MUST_TAKE_BOTH_OF_THE_SWORDS_AND_COMBINE",
+					["description"] = "You must take both of the swords and combine them to form this weapon.",
 					["cost"] = {
 						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
@@ -325,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, n(222573, {	-- Delirious Ancient
-				["description"] = "~L.SPAWNS_AFTER_CLEARING_ANY_3_BOSSES_OTHER_THAN",
+				["description"] = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
 				["cost"] = { { "i", 221418, 1 } },	-- Agamaggan's Roar
 				["groups"] = {
 					i(221290),	-- Ace of Dunes
@@ -335,7 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			n(10080, {	-- Sandarr Dunereaver
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_5",
+				["description"] = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
 				["groups"] = {
 					i(9512),	-- Blackmetal Cape
 					i(9511),	-- Bloodletter Scalpel
@@ -351,7 +351,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(10082, {	-- Zerillis
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, i(223962)),	-- Sandstalker Ankleguards
@@ -406,7 +406,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(10081, {	-- Dustwraith
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, i(223533)),	-- Desertwalker Cane
@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #else
 					i(12471, {	-- Desertwalker Cane
 						-- #if AFTER LEGION
-						["description"] = "~L.THIS_ITEM_IS_AVAILABLE_ONLY_IN_PERSONAL_LOOT",
+						["description"] = "This item is available only in personal loot, and requires a class with an Intellect-using loot spec.",
 						-- #endif
 					}),
 					-- #endif
@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE MOP
 			n(7796, {	-- Nekrum Gutchewer
-				["description"] = "~L.HE_S_LINKED_TO_SHADOWPRIEST_SEZZ_ZIZ_BOTH_WILL",
+				["description"] = "He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",
 				["groups"] = {
 					i(9471, {	-- Nekrum's Medallion
 						["races"] = ALLIANCE_ONLY,
@@ -479,7 +479,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 			}),
 			n(7604, {	-- Sergeant Bly
-				["description"] = "~L.THESE_ADVENTURERS_INITIALLY_HELP_YOU_CLEAR_THE",
+				["description"] = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
 				["qgs"] = {
 					7608,	-- Murta Grimgut
 					7606,	-- Oro Eyegouge
@@ -490,7 +490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7797, {	-- Ruuzlu
-				["description"] = "~L.HE_S_LINKED_TO_CHIEF_UKORZ_SANDSCALP_AND_BOTH",
+				["description"] = "He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",
 			}),
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
@@ -533,7 +533,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(483, {	-- Gahz'rilla
 				["creatureID"] = 7273,
 				-- #if BEFORE 3.0.8
-				["description"] = "~L.SOMEONE_IN_YOUR_PARTY_MUST_HAVE_THE_MALLET_OF",
+				["description"] = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
 				["provider"] = { "o", 141832 },	-- Gong of Zul'Farrak
 				["cost"] = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
 				-- #endif

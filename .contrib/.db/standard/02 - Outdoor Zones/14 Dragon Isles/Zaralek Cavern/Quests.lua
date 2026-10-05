@@ -888,24 +888,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			q(74495, {	-- The Tale of Hraxian
-				["description"] = createLocalizationString({
-					readable = "Available on next day after Dragonscale Camp quest chain finished.",
-					constant = "AVAILABLE_ON_NEXT_DAY_AFTER_DRAGONSCALE_CAMP",
-					export = true,
-					text = {
-						en = "Available on next day after Dragonscale Camp quest chain finished.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在龙鳞营地任务链完成后的第二天可用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Available on next day after Dragonscale Camp quest chain finished.",
 				["sourceQuests"] = {
 					73045,	-- Stain Removal
 					74996,	-- A Difficult Legacy

@@ -584,24 +584,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1063, {	-- Jade <Victim of the Nightmare>
-					["description"] = createLocalizationString({
-						readable = "Spawns outside of the entrance to the Sunken Temple.",
-						constant = "SPAWNS_OUTSIDE_OF_THE_ENTRANCE_TO_THE_SUNKEN",
-						export = true,
-						text = {
-							en = "Spawns outside of the entrance to the Sunken Temple.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在沉没的神庙入口外刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns outside of the entrance to the Sunken Temple.",
 				}),
 				n(14445, {	-- Lord Captain Wyrmak / Captain Wyrmak <Victim of the Nightmare> [CATA+]
 					["coords"] = {

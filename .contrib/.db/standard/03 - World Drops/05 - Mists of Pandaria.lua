@@ -657,24 +657,7 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 			}),
 			i(104238, {	-- Technique: Glyph of the Compy
 				-- #if BEFORE LEGION
-				["description"] = createLocalizationString({
-					readable = "Drops off high level mobs in Pandaria instances and Timeless Isle.",
-					constant = "DROPS_OFF_HIGH_LEVEL_MOBS_IN_PANDARIA_INSTANCES",
-					export = true,
-					text = {
-						en = "Drops off high level mobs in Pandaria instances and Timeless Isle.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由潘达利亚副本和永恒岛中的高等级怪物掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops off high level mobs in Pandaria instances and Timeless Isle.",
 				-- #endif
 				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
@@ -707,28 +690,11 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 		}),
 		prof(LEATHERWORKING, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
-				["description"] = createLocalizationString({
-					readable = "Requires maxed Pandaria leatherworking skill to drop.",
-					constant = "REQUIRES_MAXED_PANDARIA_LEATHERWORKING_SKILL_TO",
-					export = true,
-					text = {
-						en = "Requires maxed Pandaria leatherworking skill to drop.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要满级潘达利亚制皮技能才会掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 				["timeline"] = { ADDED_5_4_0 },
 			})),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
-				["description"] = "~L.REQUIRES_MAXED_PANDARIA_LEATHERWORKING_SKILL_TO",
+				["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 				["groups"] = {
 					r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 					r(142976),	-- Hardened Magnificent Hide (RECIPE!)
@@ -752,45 +718,11 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 		currency(738),	-- Lesser Charm of Good Fortune
 		i(89112),	-- Mote of Harmony
 		i(74849, {	-- Pink Turnip
-			["description"] = createLocalizationString({
-				readable = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
-				constant = "PINK_TURNIP_DROPS_OFF_ANY_YAUNGOL_IN_PANDARIA",
-				export = true,
-				text = {
-					en = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "粉红芜菁由潘达利亚的任何野牛人掉落。主要分布在昆莱山和螳螂高原。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
 		}),
 		i(76061),	-- Spirit of Harmony
 		i(74844, {	-- Red Blossom Leek
-			["description"] = createLocalizationString({
-				readable = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
-				constant = "DROPS_FROM_JINYU_SPRITES_OR_ZANDALARI_LOCATED",
-				export = true,
-				text = {
-					en = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由锦鱼人、小精灵或赞达拉巨魔掉落。几乎每个区域都能找到它们。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
 		}),
 		currency(395, {	-- Justice Points
 			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },

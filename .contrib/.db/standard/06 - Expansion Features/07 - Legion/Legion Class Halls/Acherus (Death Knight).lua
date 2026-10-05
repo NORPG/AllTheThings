@@ -37,24 +37,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						n(111093, {	-- Stitchwork
 							["questID"] = 44188,	-- Hidden Tracking
 							["maps"] = { ICECROWN_CITADEL, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
-							["description"] = createLocalizationString({
-								readable = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
-								constant = "PROFESSOR_PUTRICIDE_S_LOST_JOURNAL_DROPS_FROM",
-								export = true,
-								text = {
-									en = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "“普崔塞德教授遗失的日记”会从你的天启或亡者大军法术在世界任何地方召唤出的食尸鬼身上掉落。如果这一项被勾选为已完成，你就有资格进入普崔塞德房间中绿色软泥管道下方的活板门。你不必与那本书互动即可获得资格。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
 							["groups"] = {
 								i(139548, {	-- The Bonereaper's Hook
 									artifact(404),	-- Apocalypse
@@ -239,24 +222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 						}),
 						q(40934, {	-- The Dark Riders (Good)
-							["description"] = createLocalizationString({
-								readable = "Obtainable if you are good to Revil Kost",
-								constant = "OBTAINABLE_IF_YOU_ARE_GOOD_TO_REVIL_KOST",
-								export = true,
-								text = {
-									en = "Obtainable if you are good to Revil Kost",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你对雷维尔·科斯特友好，则可以获得",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Obtainable if you are good to Revil Kost",
 							["sourceQuest"] = 40933,	-- A Grisly Task
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
@@ -272,24 +238,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(40986, {	-- The Dark Riders (Bad)
-							["description"] = createLocalizationString({
-								readable = "Obtainable if you attack Revil Kost",
-								constant = "OBTAINABLE_IF_YOU_ATTACK_REVIL_KOST",
-								export = true,
-								text = {
-									en = "Obtainable if you attack Revil Kost",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你攻击雷维尔·科斯特，则可以获得",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Obtainable if you attack Revil Kost",
 							["sourceQuest"] = 40933,	-- A Grisly Task
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
@@ -305,14 +254,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(40935, {	-- The Call of Vengeance (Good)
-							["description"] = "~L.OBTAINABLE_IF_YOU_ARE_GOOD_TO_REVIL_KOST",
+							["description"] = "Obtainable if you are good to Revil Kost",
 							["sourceQuest"] = 40934,	-- The Dark Riders (Good)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.4, 27.0, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 						q(40987, {	-- The Call of Vengeance (Bad)
-							["description"] = "~L.OBTAINABLE_IF_YOU_ATTACK_REVIL_KOST",
+							["description"] = "Obtainable if you attack Revil Kost",
 							["sourceQuest"] = 40986,	-- The Dark Riders (Bad)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.4, 27.0, 46 },	-- Karazhan Catacombs

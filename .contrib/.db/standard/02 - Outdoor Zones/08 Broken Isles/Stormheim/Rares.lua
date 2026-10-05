@@ -25,24 +25,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(92685, {	-- Captain Brvet
-					["description"] = createLocalizationString({
-						readable = "Click on the Horn of the Helmouth to spawn Captain Brvet.",
-						constant = "CLICK_ON_THE_HORN_OF_THE_HELMOUTH_TO_SPAWN",
-						export = true,
-						text = {
-							en = "Click on the Horn of the Helmouth to spawn Captain Brvet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击冥口之角以刷新布维特船长。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click on the Horn of the Helmouth to spawn Captain Brvet.",
 					["questID"] = 38642,
 					["coord"] = { 58.0, 45.2, STORMHEIM },
 					["groups"] = {
@@ -249,24 +232,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(92763, {	-- The Nameless King
-					["description"] = createLocalizationString({
-						readable = "Click on the offering shrine that spawns in front of the sign to summon The Nameless King.",
-						constant = "CLICK_ON_THE_OFFERING_SHRINE_THAT_SPAWNS_IN",
-						export = true,
-						text = {
-							en = "Click on the offering shrine that spawns in front of the sign to summon The Nameless King.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击刷新在指示牌前方的供奉神龛以召唤无名之王。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click on the offering shrine that spawns in front of the sign to summon The Nameless King.",
 					["questID"] = 38685,
 					["coord"] = { 67.2, 39.8, STORMHEIM },
 					["groups"] = {

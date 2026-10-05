@@ -6,24 +6,7 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
 		header(HEADERS.Map, 897, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- The Deaths of Chromie
 			["lvl"] = 110,
-			["description"] = createLocalizationString({
-				readable = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be speed up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
-				constant = "THE_CHROMIE_SCENARIO_SENDS_YOU_THROUGH_MULTIPLE",
-				export = true,
-				text = {
-					en = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be speed up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "克罗米场景战役会带你穿越多条时间线，击败克罗米的袭击者。随着你在场景中击杀怪物提升与克罗米的声望，你将解锁克罗米更强大的技能来帮助你加快进度。与过去像枯法者训练这样的单人场景不同，你无需担心装备——你的装备会被提升至 1000，玩家等级也会提升至 112。你还可以在这个场景中飞行——这在副本内容中并不常见。\n\n每次场景尝试持续 15 分钟，最终目标是在一次尝试中击败 8 条时间线。可以通过获取能提供额外时间的物品、来自克罗米的增益，以及能自动完成一条时间线威胁的物品来加快进度。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be speed up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
 			["icon"] = 236699,
 			["cr"] = 27856,	-- Chromie
 			["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
@@ -157,24 +140,7 @@ root(ROOTS.ExpansionFeatures,
 				n(124765, {	-- Emerald Dragonshrine
 					n(QUESTS, {
 						q(47643, {	-- The Ancients' Wisdom
-							["description"] = createLocalizationString({
-								readable = "Use 'Nightmare-Catcher' to enter The Emerald Nightmare and kill the |cFFFFD700Dream Tormentors|r around each ancient.",
-								constant = "USE_NIGHTMARE_CATCHER_TO_ENTER_THE_EMERALD",
-								export = true,
-								text = {
-									en = "Use 'Nightmare-Catcher' to enter The Emerald Nightmare and kill the |cFFFFD700Dream Tormentors|r around each ancient.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "使用“梦魇捕手”进入翡翠梦魇，并击杀每棵上古古树周围的 |cFFFFD700梦境折磨者|r。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use 'Nightmare-Catcher' to enter The Emerald Nightmare and kill the |cFFFFD700Dream Tormentors|r around each ancient.",
 							["cost"] = { { "i", 151166, 3 } },	-- 3x Nightmare-Catcher
 						}),
 						q(47559, {	-- Gleaming Chronoshard

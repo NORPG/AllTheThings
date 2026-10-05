@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sethir's Journal
 							["provider"] = { "i", 7737 },	-- Sethir's Journal
-							["description"] = "~L.THIS_ITEM_CAN_ONLY_BE_PICKPOCKETED",
+							["description"] = "This item can only be pickpocketed.",
 							["coord"] = { 37.6, 22.2, TELDRASSIL },
 							["cr"] = 6909,	-- Sethir the Ancient
 						}),
@@ -408,7 +408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(7671, {	-- Frostsaber Replacement
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 4730,	-- Lelanai
 					["coords"] = {
 						-- #if AFTER CATA
@@ -479,24 +479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(10, 10, 10),
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在暗夜精灵达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["races"] = { NIGHTELF },
@@ -601,7 +584,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(7672, {	-- Nightsaber Replacement
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 4730,	-- Lelanai
 					["coords"] = {
 						-- #if AFTER CATA
@@ -715,24 +698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
-					["description"] = createLocalizationString({
-						readable = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
-						constant = "COMPLETING_THIS_QUEST_WILL_ALLOW_YOU_TO",
-						export = true,
-						text = {
-							en = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成该任务后，你可以像人类和矮人一样冥想。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
 					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
 					["qg"] = 211188,	-- Maethra Slagheart
 					["coord"] = { 38.2, 89.2, DARNASSUS },
@@ -757,24 +723,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- Pray over the Supplicant
 							["provider"] = { "n", 215095 },	-- Supplicant
-							["description"] = createLocalizationString({
-								readable = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
-								constant = "YOU_MUST_FIRST_HAVE_YOUR_MEDITATION_BUFF_AND",
-								export = true,
-								text = {
-									en = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你必须先获得冥想增益，然后对跪着的祈求者使用 /pray。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
 						}),
 					},
 				})),
@@ -1155,24 +1104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER 6.1.0.19508
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary
-					["description"] = createLocalizationString({
-						readable = "Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",
-						constant = "LOOT_THE_CHEST_ON_THE_TOP_FLOOR_OF_THE_TEMPLE",
-						export = true,
-						text = {
-							en = "Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在月神殿顶层的宝箱，位于泰兰德·语风对面的墙边。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",
 					["coord"] = { 43.0, 75.8, DARNASSUS },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
@@ -1295,7 +1227,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(22250, {	-- Herb Pouch
-							["description"] = "~L.ONLY_SELECT_HERBALISM_SUPPLIERS_SELLS_THIS",
+							["description"] = "Only select Herbalism Suppliers sells this pouch.",
 							["providers"] = {
 								{ "n", 4216},	-- Chardryn <Herbalism Supplies>
 								{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
@@ -1817,24 +1749,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
-					["description"] = createLocalizationString({
-						readable = "Use the musk and tame a Deer and then bring it to Relaeron.",
-						constant = "USE_THE_MUSK_AND_TAME_A_DEER_AND_THEN_BRING_IT",
-						export = true,
-						text = {
-							en = "Use the musk and tame a Deer and then bring it to Relaeron.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用麝香并驯服一头鹿，然后把它带给雷拉隆。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
 					["coord"] = { 39.8, 9.2, DARNASSUS },
 					["cost"] = { { "i", 208607, 1 } },	-- 1x Deer Musk
 					["maps"] = { TELDRASSIL },

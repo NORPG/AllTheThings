@@ -30,24 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				ach(19787, {	-- Clued In
-					["description"] = createLocalizationString({
-						readable = "Look for glowing objects on the floor during Research World Quests, or find them at The Big Dig when someone has the relevant task.",
-						constant = "LOOK_FOR_GLOWING_OBJECTS_ON_THE_FLOOR_DURING",
-						export = true,
-						text = {
-							en = "Look for glowing objects on the floor during Research World Quests, or find them at The Big Dig when someone has the relevant task.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在研究世界任务期间寻找地面上的发光物体，或者当有人持有相关任务时，到大挖掘场找到它们。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Look for glowing objects on the floor during Research World Quests, or find them at The Big Dig when someone has the relevant task.",
 					["providers"] = {
 						{ "n", 210079 },	-- Information-Stuffed Clue
 						{ "n", 206816 },	-- Information-Stuffed Clue
@@ -83,24 +66,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 				ach(19792, {	-- Just One More Thing
-					["description"] = createLocalizationString({
-						readable = "Each related Research World Quest needs to be completed 3 times to get credit for one criteria.",
-						constant = "EACH_RELATED_RESEARCH_WORLD_QUEST_NEEDS_TO_BE",
-						export = true,
-						text = {
-							en = "Each related Research World Quest needs to be completed 3 times to get credit for one criteria.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "每个相关的研究世界任务都需要完成 3 次，才能获得一项条件的进度。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Each related Research World Quest needs to be completed 3 times to get credit for one criteria.",
 					["groups"] = {
 						i(213133),	-- Reese (PET!)
 						crit(65408, {	-- Lost Atheneum
@@ -129,24 +95,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				ach(19788),	-- Tome Comber
 				ach(19786, {	-- When a Rock is Just a Rock
-					["description"] = createLocalizationString({
-						readable = "Can be found during Excavation World Quests, look for a rock near dirt piles or geysers.",
-						constant = "CAN_BE_FOUND_DURING_EXCAVATION_WORLD_QUESTS",
-						export = true,
-						text = {
-							en = "Can be found during Excavation World Quests, look for a rock near dirt piles or geysers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可在挖掘世界任务期间找到，寻找土堆或间歇泉附近的岩石。",
-							-- TODO: tw = "",
-						},
-					})
+					["description"] = "Can be found during Excavation World Quests, look for a rock near dirt piles or geysers."
 				}),
 			}),
 			n(DROPS, {

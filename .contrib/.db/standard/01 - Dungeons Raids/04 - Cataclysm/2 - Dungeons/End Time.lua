@@ -4,24 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(184, {	-- End Time
-		["description"] = createLocalizationString({
-			readable = "Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",
-			constant = "CONSISTS_OF_THREE_BOSSES_THE_FIRST_BOSS_CAN",
-			export = true,
-			text = {
-				en = "Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "由三名首领组成。第一个首领可能是黑曜巨龙圣殿的贝恩的回响，或红玉巨龙圣殿的希尔瓦娜斯的回响。第二个首领可能是碧蓝巨龙圣殿的吉安娜的回响，或翡翠巨龙圣殿的泰兰德的回响。姆诺兹多始终是最后的首领。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",
 		["mapID"] = 401,
 		["coords"] = {
 			{ 57.7, 30.4, CAVERNS_OF_TIME },	-- dungeon entrance

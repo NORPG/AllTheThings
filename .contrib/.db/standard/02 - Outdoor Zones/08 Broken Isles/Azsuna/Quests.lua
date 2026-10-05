@@ -265,47 +265,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			}),
 			q(40815, {	-- From Within (DH version, must choose Altruis)
-				["description"] = createLocalizationString({
-					readable = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests.",
-					constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_CHOSE_TO_FOLLOW",
-					export = true,
-					text = {
-						en = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你在恶魔猎手新手任务中选择了追随受难者奥图里斯，则可以接取此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests.",
 				["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 				["provider"] = { "n", 101927 },	-- Altruis the Sufferer
 				["classes"] = { DEMONHUNTER },
 			}),
 			q(44140, {	-- From Within (DH version, must choose Kayn)
-				["description"] = createLocalizationString({
-					readable = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests.",
-					constant = "THIS_QUEST_IS_AVAILABLE_IF_YOU_CHOSE_TO_FOLLOW_2",
-					export = true,
-					text = {
-						en = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你在恶魔猎手新手任务中选择了追随凯恩·日怒，则可以接取此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests.",
 				["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 				["provider"] = { "n", 89362 },	-- Kayn Sunfury
 				["coord"] = { 43.5, 43.4, AZSUNA },

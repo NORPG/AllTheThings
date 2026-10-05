@@ -2038,55 +2038,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 							iensemble(205958),	-- Ensemble: Azure Renewal Finery
 							i(205908, {	-- Inherited Wisdom of Senegos (TOY!)
-								["description"] = createLocalizationString({
-									readable = "You will find this in your mailbox upon completing this quest",
-									constant = "YOU_WILL_FIND_THIS_IN_YOUR_MAILBOX_UPON",
-									export = true,
-									text = {
-										en = "You will find this in your mailbox upon completing this quest",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "完成此任务后，你会在邮箱中找到这个",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You will find this in your mailbox upon completing this quest",
 							}),
 							i(205959),	-- Letter from Kirygosa
 							i(205970),	-- Azure Flightstone
 						},
 					}),
 					q(91467, {	-- Incarnates on the Move
-						["description"] = createLocalizationString({
-							readable = "This can be completed in party-sync with a character who has not completed 'A Peaceful Farewell' (ID 72951).",
-							constant = "THIS_CAN_BE_COMPLETED_IN_PARTY_SYNC_WITH_A",
-							export = true,
-							text = {
-								en = "This can be completed in party-sync with a character who has not completed 'A Peaceful Farewell' (ID 72951).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此任务可以在小队同步状态下，与尚未完成“和平的告别”（ID 72951）的角色一起完成。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This can be completed in party-sync with a character who has not completed 'A Peaceful Farewell' (ID 72951).",
 						["sourceQuests"] = { 72951 },	-- A Peaceful Farewell
 						["provider"] = { "n", 247407 },	-- Scalecommander Emberthal
 						["coord"] = { 39.4, 63.0, THE_AZURE_SPAN },
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 					q(91466, {	-- Aiding the Green Dragons
-						["description"] = "~L.THIS_CAN_BE_COMPLETED_IN_PARTY_SYNC_WITH_A",
+						["description"] = "This can be completed in party-sync with a character who has not completed 'A Peaceful Farewell' (ID 72951).",
 						["sourceQuests"] = { 91467 },	-- Incarnates on the Move
 						["provider"] = { "n", 247407 },	-- Scalecommander Emberthal
 						["coord"] = { 39.4, 63.0, THE_AZURE_SPAN },
@@ -2252,24 +2218,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.Item, 200205, {	-- Tome of Polymorph: Duck
 				q(71002, {	-- Best Spell Ever
-					["description"] = createLocalizationString({
-						readable = "Use Blink ability to enter the cave.",
-						constant = "USE_BLINK_ABILITY_TO_ENTER_THE_CAVE",
-						export = true,
-						text = {
-							en = "Use Blink ability to enter the cave.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用闪现技能进入洞穴。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Blink ability to enter the cave.",
 					["provider"] = { "o", 381663 },	-- Manastorming For Beginners
 					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
 					["classes"] = { MAGE },
@@ -2297,24 +2246,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			------ Hemet Nesingwary ------
 			-- TODO: perhaps verify these further...? either has no quest pre-req, or requires DF_ACCOUNT_CAMPAIGN_QUEST | 65686
 			q(66972, {	-- Old Stonetusk
-				["description"] = createLocalizationString({
-					readable = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
-					constant = "HEMET_NESINGWARY_DOES_A_CIRCLE_AROUND_THE_WHOLE",
-					export = true,
-					text = {
-						en = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "赫米特·奈辛瓦里会绕整个区域一圈，并依次在各个任务地点停留。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },
@@ -2323,7 +2255,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(66958, {	-- Protect And Herd
-				["description"] = "~L.HEMET_NESINGWARY_DOES_A_CIRCLE_AROUND_THE_WHOLE",
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 18.8, 49.2, THE_AZURE_SPAN },
@@ -2332,7 +2264,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(66968, {	-- Pruning The Pack
-				["description"] = "~L.HEMET_NESINGWARY_DOES_A_CIRCLE_AROUND_THE_WHOLE",
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 65.5, 25.9, THE_AZURE_SPAN },
@@ -2341,7 +2273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(66957, {	-- A Shadow In The Ice
-				["description"] = "~L.HEMET_NESINGWARY_DOES_A_CIRCLE_AROUND_THE_WHOLE",
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 46.7, 38.7, THE_AZURE_SPAN },
@@ -2350,7 +2282,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(66939, {	-- Hunting the Huntmaster
-				["description"] = "~L.HEMET_NESINGWARY_DOES_A_CIRCLE_AROUND_THE_WHOLE",
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 62.7, 60.1, THE_AZURE_SPAN },
@@ -2359,7 +2291,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(66971, {	-- The Face of Death
-				["description"] = "~L.HEMET_NESINGWARY_DOES_A_CIRCLE_AROUND_THE_WHOLE",
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 63.5, 15.6, THE_AZURE_SPAN },
@@ -2390,24 +2322,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(71139, {	-- Glowing Arcane Jewel
-				["description"] = createLocalizationString({
-					readable = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
-					constant = "REQUIRES_2_PLAYERS_OR_SOLO_IF_YOU_TIME_IT",
-					export = true,
-					text = {
-						en = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 2 名玩家（如果时机完美也可单人完成）。杀死迷失的元素，然后每名玩家需要点击一个不同的熔岩之球以打开附近的洞穴。击杀洞穴内的搁浅灵魂并拾取任务物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
 				["provider"] = { "i", 200528 },	-- Glowing Arcane Jewel
 				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
 				["groups"] = {

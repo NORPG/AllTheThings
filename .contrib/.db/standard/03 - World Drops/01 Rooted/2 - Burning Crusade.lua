@@ -706,7 +706,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(25142),	-- Telaari Longblade
 			i(25145, {	-- Wisdom Blade
 				-- #if AFTER 6.0.1
-				["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
+				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
 				["timeline"] = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
@@ -728,7 +728,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(25400),	-- Tarnished Claymore
 			i(25159, {	-- Thunderstrike Falchion
 				-- #if AFTER 6.0.1
-				["description"] = "~L.DROPPED_FROM_BIG_CRATE_OF_SALVAGE_DURING",
+				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
 				["timeline"] = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
@@ -1063,24 +1063,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				{ 70.8, 79.9, NAGRAND },	-- Kil'sorrow Fortress
 			},
 			-- #if AFTER 9.0.3
-			["description"] = createLocalizationString({
-				readable = "The Shadowlands level squish made this mark wonky to obtain, requiring low level character and specific conditions. Otherwise Mark of Sargeras drops in it's place.",
-				constant = "THE_SHADOWLANDS_LEVEL_SQUISH_MADE_THIS_MARK",
-				export = true,
-				text = {
-					en = "The Shadowlands level squish made this mark wonky to obtain, requiring low level character and specific conditions. Otherwise Mark of Sargeras drops in it's place.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "暗影国度的等级压缩使这个印记的获取方式变得很别扭，需要低等级角色和特定条件。否则会改为掉落萨格拉斯的印记。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "The Shadowlands level squish made this mark wonky to obtain, requiring low level character and specific conditions. Otherwise Mark of Sargeras drops in it's place.",
 			-- #endif
 		}),
 		i(30809, {	-- Mark of Sargeras [The Aldor]
@@ -1166,24 +1149,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			-- 	Cloth + Silk:
 			{
 				i(21877, {	-- Netherweave Cloth
-					["description"] = createLocalizationString({
-						readable = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
-						constant = "NETHERWEAVE_CLOTH_IS_A_VERY_COMMON_DROP_FROM",
-						export = true,
-						text = {
-							en = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "灵纹布是《燃烧的远征》类人生物和亡灵生物非常常见的掉落物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
 				}),
 				i(21881, {	-- Netherweb Spider Silk
 					["description"] =
@@ -1230,24 +1196,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					22310,	-- Storming Wind-Ripper
 					24222,	-- Windy Cload (Gas cloud)
 				},
-				["description"] = createLocalizationString({
-					readable = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-					constant = "THE_GIVEN_MAPS_COORDINATES_AND_SOURCES_APPLIES",
-					export = true,
-					text = {
-						en = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "所提供的地图、坐标和来源适用于如何获得此元素的微粒。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 			}, {
 				i(22572),	-- Mote of Air
 				i(22451),	-- Primal Air
@@ -1268,7 +1217,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17157,	-- Shattered Rumbler
 					17156,	-- Tortured Earth Spirit
 				},
-				["description"] = "~L.THE_GIVEN_MAPS_COORDINATES_AND_SOURCES_APPLIES",
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 				["_allowObjectProvider"] = true,
 				["providers"] = {
 					{ "o", 181556 },	-- Adamantite Deposit
@@ -1295,7 +1244,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					20514,	-- Searing Elemental
 					22298,	-- Vile Fire-Soul
 				},
-				["description"] = "~L.THE_GIVEN_MAPS_COORDINATES_AND_SOURCES_APPLIES",
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 				["_allowObjectProvider"] = true,
 				["providers"] = {
 					{ "o", 181555 },	-- Fel Iron Deposit
@@ -1316,24 +1265,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17725,	-- Underbog Lurker
 					17871,	-- Underbog Shambler
 				},
-				["description"] = createLocalizationString({
-					readable = "The given maps and sources applies for how to obtain this element's motes.",
-					constant = "THE_GIVEN_MAPS_AND_SOURCES_APPLIES_FOR_HOW_TO",
-					export = true,
-					text = {
-						en = "The given maps and sources applies for how to obtain this element's motes.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "给出的地图和来源适用于如何获取该元素的微粒。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The given maps and sources applies for how to obtain this element's motes.",
 				["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 				["_allowObjectProvider"] = true,
 				["providers"] = {
@@ -1381,7 +1313,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					18865,	-- Warp Aberration
 					20516,	-- Warp Monstrosity
 				},
-				["description"] = "~L.THE_GIVEN_MAPS_COORDINATES_AND_SOURCES_APPLIES",
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 181279 },	-- Netherbloom
 			}, {
@@ -1405,7 +1337,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17981,	-- Voidspawn
 					18870,	-- Voidshrieker
 				},
-				["description"] = "~L.THE_GIVEN_MAPS_COORDINATES_AND_SOURCES_APPLIES",
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 			}, {
 				i(22577),	-- Mote of Shadow
 				i(22456),	-- Primal Shadow
@@ -1436,7 +1368,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17378,	-- Swamp Gas (Gas cloud)
 					-- #endif
 				},
-				["description"] = "~L.THE_GIVEN_MAPS_COORDINATES_AND_SOURCES_APPLIES",
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 				["_allowObjectProvider"] = true,
 				["provider"] = { "o", 182951 },	-- Pure Water (fishing school)
 			}, {
@@ -1453,24 +1385,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 						{ 53.1, 25.5, SHADOWMOON_VALLEY },	-- Coilskar Cistern
 					},
 					["maps"] = { ZANGARMARSH },
-					["description"] = createLocalizationString({
-						readable = "Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",
-						constant = "DROPS_COMMONLY_FROM_HUMANOID_AND_BEAST_WATER",
-						export = true,
-						text = {
-							en = "Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "常见掉落于类人型与野兽型水生生物，如纳迦、泥仆和鞭笞者。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",
 					["groups"] = {
 						i(24477),	-- Jaggal Clam Meat
 						i(24478),	-- Jaggal Pearl
@@ -1530,24 +1445,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 				i(27678, {	-- Clefthoof Meat
-					["description"] = createLocalizationString({
-						readable = "Clefthoofs can be found all over Nagrand.",
-						constant = "CLEFTHOOFS_CAN_BE_FOUND_ALL_OVER_NAGRAND",
-						export = true,
-						text = {
-							en = "Clefthoofs can be found all over Nagrand.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "裂蹄牛遍布纳格兰。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Clefthoofs can be found all over Nagrand.",
 					["crs"] = {
 						17133,	-- Aged Clefthoof
 						17132,	-- Clefthoof Bull
@@ -1605,24 +1503,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 				i(27682, {	-- Talbuk Venison
-					["description"] = createLocalizationString({
-						readable = "Talbuks can be found all over Nagrand.",
-						constant = "TALBUKS_CAN_BE_FOUND_ALL_OVER_NAGRAND",
-						export = true,
-						text = {
-							en = "Talbuks can be found all over Nagrand.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "塔布羊遍布纳格兰各地。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Talbuks can be found all over Nagrand.",
 					["coord"] = { 41.8, 35.8, NETHERSTORM },	-- Eco-Dome Skyperch
 					["crs"] = {
 						18964,	-- Injured Talbuk
@@ -1652,24 +1533,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			--
 			-- 	Other reagents:
 				i(32428, {	-- Heart of Darkness
-					["description"] = createLocalizationString({
-						readable = "Can drop from most creatures within the given raids.",
-						constant = "CAN_DROP_FROM_MOST_CREATURES_WITHIN_THE_GIVEN",
-						export = true,
-						text = {
-							en = "Can drop from most creatures within the given raids.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从指定团队副本中的大多数生物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from most creatures within the given raids.",
 					["maps"] = {
 						THE_BATTLE_FOR_MOUNT_HYJAL,
 						THE_BLACK_TEMPLE,
@@ -1677,31 +1541,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					["timeline"] = { ADDED_2_1_0 },
 				}),
 				i(30183, {	-- Nether Vortex
-					["description"] = "~L.CAN_DROP_FROM_MOST_CREATURES_WITHIN_THE_GIVEN",
+					["description"] = "Can drop from most creatures within the given raids.",
 					["maps"] = {
 						SERPENTSHRINE_CAVERN,
 						TEMPEST_KEEP_THE_EYE,
 					},
 				}),
 				i(23572, {	-- Primal Nether
-					["description"] = createLocalizationString({
-						readable = "Guaranteed drop from the last boss in any Heroic TBC dungeon.",
-						constant = "GUARANTEED_DROP_FROM_THE_LAST_BOSS_IN_ANY",
-						export = true,
-						text = {
-							en = "Guaranteed drop from the last boss in any Heroic TBC dungeon.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "英雄难度《燃烧的远征》地下城的最终首领必定掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Guaranteed drop from the last boss in any Heroic TBC dungeon.",
 					-- Danny Donkey: Uncommenting this will create a Reagents header with Primal Nether in the given minilists on retail despite Primal Nether already being sourced on the bosses themselves.
 					--[[["maps"] = {
 						AUCHINDOUN_AUCHENAI_CRYPTS,
@@ -1789,30 +1636,13 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			{
 				["itemID"] = 31501,	-- Tome of Conjure Food VIII
 				["spellID"] = 33717,	-- Conjure Food VIII
-				["description"] = createLocalizationString({
-					readable = "Learn both of these tomes and then visit your trainer for the table.",
-					constant = "LEARN_BOTH_OF_THESE_TOMES_AND_THEN_VISIT_YOUR",
-					export = true,
-					text = {
-						en = "Learn both of these tomes and then visit your trainer for the table.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "学会这两本典籍，然后去找你的训练师学习该表格。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Learn both of these tomes and then visit your trainer for the table.",
 				["rank"] = 8,
 			},
 			{
 				["itemID"] = 29550,	-- Tome of Conjure Water IX
 				["spellID"] = 27090,	-- Conjure Water IX
-				["description"] = "~L.LEARN_BOTH_OF_THESE_TOMES_AND_THEN_VISIT_YOUR",
+				["description"] = "Learn both of these tomes and then visit your trainer for the table.",
 				["rank"] = 9,
 			},
 		}),

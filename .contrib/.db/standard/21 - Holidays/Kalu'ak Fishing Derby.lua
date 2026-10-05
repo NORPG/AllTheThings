@@ -22,24 +22,7 @@ KALUAK_FISHING_DERBY_HEADER = createHeader({
 });
 
 root(ROOTS.Holidays, applyclassicphase(WRATH_PHASE_ONE, applyevent(EVENTS.KALUAK_FISHING_DERBY, n(KALUAK_FISHING_DERBY_HEADER, {
-	["description"] = createLocalizationString({
-		readable = "The Kalu'ak Fishing Derby was a fishing event held every Saturday between 14:00 and 15:00 server time by the Kalu'ak. The objective was to be the first player to catch a Blacktip Shark and bring it to Elder Clearwater in Dalaran. It was introduced with Patch 3.3.0.\n\nDue to problems that occurred with the introduction of cross-realm zones, all fishing tournaments were disabled. When they were reenabled in Patch 5.1.0 however, the Stranglethorn Fishing Extravaganza had been redesigned to allow three winners, and included the rewards from winning the fishing derby. Thus, the Kalu'ak Fishing Derby became redundant, and was removed altogether.",
-		constant = "THE_KALU_AK_FISHING_DERBY_WAS_A_FISHING_EVENT",
-		export = true,
-		text = {
-			en = "The Kalu'ak Fishing Derby was a fishing event held every Saturday between 14:00 and 15:00 server time by the Kalu'ak. The objective was to be the first player to catch a Blacktip Shark and bring it to Elder Clearwater in Dalaran. It was introduced with Patch 3.3.0.\n\nDue to problems that occurred with the introduction of cross-realm zones, all fishing tournaments were disabled. When they were reenabled in Patch 5.1.0 however, the Stranglethorn Fishing Extravaganza had been redesigned to allow three winners, and included the rewards from winning the fishing derby. Thus, the Kalu'ak Fishing Derby became redundant, and was removed altogether.",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "卡鲁亚克钓鱼大赛是卡鲁亚克每周六服务器时间 14:00 至 15:00 举办的钓鱼活动。目标是成为第一个钓到黑鳍鲨并将其带给达拉然的清水长者的人。它随 3.3.0 补丁加入。\n\n由于跨服区域引入时出现的问题，所有钓鱼比赛都被禁用了。不过在 5.1.0 补丁中重新启用时，荆棘谷钓鱼大赛被重新设计为允许三名获胜者，并包含了赢得钓鱼大赛的奖励。因此卡鲁亚克钓鱼大赛变得多余，被彻底移除。",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "The Kalu'ak Fishing Derby was a fishing event held every Saturday between 14:00 and 15:00 server time by the Kalu'ak. The objective was to be the first player to catch a Blacktip Shark and bring it to Elder Clearwater in Dalaran. It was introduced with Patch 3.3.0.\n\nDue to problems that occurred with the introduction of cross-realm zones, all fishing tournaments were disabled. When they were reenabled in Patch 5.1.0 however, the Stranglethorn Fishing Extravaganza had been redesigned to allow three winners, and included the rewards from winning the fishing derby. Thus, the Kalu'ak Fishing Derby became redundant, and was removed altogether.",
 	["timeline"] = { ADDED_3_3_0, REMOVED_5_0_4 },
 	-- #if BEFORE 5.1.0
 	["maps"] = {
@@ -90,24 +73,7 @@ root(ROOTS.Holidays, applyclassicphase(WRATH_PHASE_ONE, applyevent(EVENTS.KALUAK
 		}),
 		prof(FISHING, {
 			i(50289, {	-- Blacktip Shark
-				["description"] = createLocalizationString({
-					readable = "Can be fished from any school of fish in Northrend.",
-					constant = "CAN_BE_FISHED_FROM_ANY_SCHOOL_OF_FISH_IN",
-					export = true,
-					text = {
-						en = "Can be fished from any school of fish in Northrend.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可从诺森德的任意鱼群中钓到。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be fished from any school of fish in Northrend.",
 			}),
 		}),
 	},

@@ -46,24 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = { i(221550) },	-- Boskroot Cap
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
-				["description"] = createLocalizationString({
-					readable = "5 min wait after turnin of the Dornish Pike until the Goldengill Trout is available. You will be able to loot the battle pet in Dornogal.",
-					constant = "5_MIN_WAIT_AFTER_TURNIN_OF_THE_DORNISH_PIKE",
-					export = true,
-					text = {
-						en = "5 min wait after turnin of the Dornish Pike until the Goldengill Trout is available. You will be able to loot the battle pet in Dornogal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "交付多恩狗鱼后需等待 5 分钟，金鳃鳟鱼才会出现。你可以在多恩诺嘉尔拾取这只战斗宠物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "5 min wait after turnin of the Dornish Pike until the Goldengill Trout is available. You will be able to loot the battle pet in Dornogal.",
 				["coord"] = { 40.9, 73.8, ISLE_OF_DORN },
 				["questID"] = 79586,
 				["cost"] = {
@@ -84,24 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(222940, {	-- Freysworn Letitia
-				["description"] = createLocalizationString({
-					readable = "Find 6 Pearlescent Shellcrab around Isle of Dorn.",
-					constant = "FIND_6_PEARLESCENT_SHELLCRAB_AROUND_ISLE_OF",
-					export = true,
-					text = {
-						en = "Find 6 Pearlescent Shellcrab around Isle of Dorn.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在多恩岛周围找到 6 只珠光贝壳蟹。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Find 6 Pearlescent Shellcrab around Isle of Dorn.",
 				["coord"] = { 48.6, 30.0, ISLE_OF_DORN },
 				["groups"] = {
 					i(224185),	-- Crab-Guiding Branch
@@ -147,24 +113,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					hqt(82756, {	-- Sixth Crab
 						["name"] = "Sixth Crab",
-						["description"] = createLocalizationString({
-							readable = "On tree branch.",
-							constant = "ON_TREE_BRANCH",
-							export = true,
-							text = {
-								en = "On tree branch.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在树枝上。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "On tree branch.",
 						["providers"] = {
 							{ "n", 224548 },	-- Pearlescent Shellcrab
 							{ "i", 224185 },	-- Crab-Guiding Branch
@@ -183,7 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82038,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -210,24 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(223104, {	-- Lionel
-				["description"] = createLocalizationString({
-					readable = "After you kick Lionel back into water, find 5 |cff888888Plump Snapcrabs|r on the shore and feed him.",
-					constant = "AFTER_YOU_KICK_LIONEL_BACK_INTO_WATER_FIND_5",
-					export = true,
-					text = {
-						en = "After you kick Lionel back into water, find 5 |cff888888Plump Snapcrabs|r on the shore and feed him.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "把莱昂内尔踢回水里后，在岸边找到 5 只 |cff888888肥硕的响壳蟹|r 喂给他。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "After you kick Lionel back into water, find 5 |cff888888Plump Snapcrabs|r on the shore and feed him.",
 				["crs"] = { 223159 },	-- Plump Snapcrab
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 				["questID"] = 82212,	-- Weak Lionfish
@@ -243,107 +175,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			header(HEADERS.Object, 443638, {	-- Mosswool Flower
-				["description"] = createLocalizationString({
-					readable = "Interact with Lost Mosswool 3 times to spawn this treasure.",
-					constant = "INTERACT_WITH_LOST_MOSSWOOL_3_TIMES_TO_SPAWN",
-					export = true,
-					text = {
-						en = "Interact with Lost Mosswool 3 times to spawn this treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与失落的苔茸互动 3 次以刷新这个宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure.",
 				["groups"] = {
 					hqt(82145, {	-- Lost Mosswool
-						["description"] = createLocalizationString({
-							readable = "Hidden tracking quest which is active while finding the 3 sheep. They will show as Vignettes on the minimap.\n\nCheck Debug Mode to see the 3 sheep coordinates since they are unable to be 'tracked' by ATT.",
-							constant = "HIDDEN_TRACKING_QUEST_WHICH_IS_ACTIVE_WHILE",
-							export = true,
-							text = {
-								en = "Hidden tracking quest which is active while finding the 3 sheep. They will show as Vignettes on the minimap.\n\nCheck Debug Mode to see the 3 sheep coordinates since they are unable to be 'tracked' by ATT.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "隐藏的追踪任务，在寻找 3 只绵羊时激活。它们会在小地图上显示为小标记。\n\n由于 ATT 无法“追踪”这 3 只绵羊，请查看调试模式以获取它们的坐标。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Hidden tracking quest which is active while finding the 3 sheep. They will show as Vignettes on the minimap.\n\nCheck Debug Mode to see the 3 sheep coordinates since they are unable to be 'tracked' by ATT.",
 						["coord"] = { 59.6, 24.6, ISLE_OF_DORN },
 						["groups"] = {
 							n(222956, {	-- Lost Mosswool
-								["description"] = createLocalizationString({
-									readable = "1st Mosswool spot",
-									constant = "1ST_MOSSWOOL_SPOT",
-									export = true,
-									text = {
-										en = "1st Mosswool spot",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "第 1 个苔羊毛点",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "1st Mosswool spot",
 								["coord"] = { 59.6, 24.6, ISLE_OF_DORN },
 							}),
 							n(222963, {	-- Lost Mosswool
-								["description"] = createLocalizationString({
-									readable = "2nd Mosswool spot",
-									constant = "2ND_MOSSWOOL_SPOT",
-									export = true,
-									text = {
-										en = "2nd Mosswool spot",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "第 2 个苔羊毛点",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "2nd Mosswool spot",
 								["coord"] = { 59.1, 27.1, ISLE_OF_DORN },
 							}),
 							n(222965, {	-- Lost Mosswool
-								["description"] = createLocalizationString({
-									readable = "3rd Mosswool spot",
-									constant = "3RD_MOSSWOOL_SPOT",
-									export = true,
-									text = {
-										en = "3rd Mosswool spot",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "第 3 个苔羊毛点",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "3rd Mosswool spot",
 								["coord"] = { 59.7, 28.7, ISLE_OF_DORN },
 							}),
 						},
@@ -359,46 +206,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(444894, {	-- Shimmering Opal Lily
-				["description"] = createLocalizationString({
-					readable = "At the bottom of the cave.\nDespawns after being looted by someone. You may need to wait for it to respawn.",
-					constant = "AT_THE_BOTTOM_OF_THE_CAVE_DESPAWNS_AFTER_BEING",
-					export = true,
-					text = {
-						en = "At the bottom of the cave.\nDespawns after being looted by someone. You may need to wait for it to respawn.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在洞穴底部。\n被他人拾取后会消失。你可能需要等它重新刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "At the bottom of the cave.\nDespawns after being looted by someone. You may need to wait for it to respawn.",
 				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
 				["questID"] = 82326,
 			}),
 			o(423854, {	-- Soulwell
-				["description"] = createLocalizationString({
-					readable = "Can be obtained only during the Introductory quest chain.",
-					constant = "CAN_BE_OBTAINED_ONLY_DURING_THE_INTRODUCTORY",
-					export = true,
-					text = {
-						en = "Can be obtained only during the Introductory quest chain.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只能在初始任务链期间获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be obtained only during the Introductory quest chain.",
 				["coord"] = { 31.5, 54.2, ISLE_OF_DORN },
 				["questID"] = 84494,
 				["groups"] = {
@@ -410,7 +223,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82046,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -434,30 +247,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82045,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
 			}),
 			n(222894, {	-- U'llort the Self-Exiled
-				["description"] = createLocalizationString({
-					readable = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
-					constant = "TALK_TO_U_LLORT_THEN_BRING_IT_CFF888888BOSKROOT",
-					export = true,
-					text = {
-						en = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与乌洛特交谈，然后从附近的树林里给它带来 |cff888888林根菌盖|r。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
 				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
 				["questID"] = 82142,
 				["cost"] = { { "i", 221550, 1 } },	-- 1x Boskroot Cap
@@ -478,7 +274,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82047,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -488,7 +284,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82048,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },

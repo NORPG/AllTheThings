@@ -277,24 +277,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					o(175382, {	-- Doomrigger's Coffer
 						-- #if BEFORE 4.0.3
-						["description"] = createLocalizationString({
-							readable = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
-							constant = "CAN_BE_FOUND_IN_A_COFFER_IN_THE_WHELP_ROOM",
-							export = true,
-							text = {
-								en = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在雏龙房间的一个宝箱中找到，位于通往下一个房间的斜坡左侧、一根倒塌的石柱后面。\n注意：大多数队伍会跳过这个房间，因此请让队伍清到那根石柱处。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
 						-- #endif
 						["groups"] = {
 							i(12352),	-- Doomrigger's Clasp
@@ -352,24 +335,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(12144, {	-- Eggscilloscope
 						-- #if BEFORE 4.0.3
-						["description"] = createLocalizationString({
-							readable = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
-							constant = "YOU_DON_T_NEED_TO_KEEP_THIS_BUT_IT_MIGHT_BE",
-							export = true,
-							text = {
-								en = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你不需要保留它，但以防有人不太明白“别碰那些蛋”的规矩，留着它也许不错。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
@@ -418,24 +384,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12530 },	-- Spire Spider Egg
 							{ "o", 175606 },	-- Spire Spider Egg
 						},
-						["description"] = createLocalizationString({
-							readable = "Interacting with a spider egg may spawn baby spiders, beware!",
-							constant = "INTERACTING_WITH_A_SPIDER_EGG_MAY_SPAWN_BABY",
-							export = true,
-							text = {
-								en = "Interacting with a spider egg may spawn baby spiders, beware!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与蜘蛛卵互动可能会孵化出小蜘蛛，小心！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
 					}),
 					i(12529, {	-- Smolderweb Hatchling (PET!)
 						["timeline"] = { REMOVED_4_0_3 },
@@ -556,24 +505,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5103, {	-- Hot Fiery Death
-				["description"] = createLocalizationString({
-					readable = "At the bottom floor of Lower Blackrock Spire near the lava.",
-					constant = "AT_THE_BOTTOM_FLOOR_OF_LOWER_BLACKROCK_SPIRE",
-					export = true,
-					text = {
-						en = "At the bottom floor of Lower Blackrock Spire near the lava.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在黑石塔下层的底层，靠近岩浆处。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
 				["provider"] = { "o", 176090 },	-- Human Remains
 				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] =
@@ -598,24 +530,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					objective(1, {	-- 0/1 Caged Worg Pup
 						["provider"] = { "i", 12263 },	-- Caged Worg Pup
-						["description"] = createLocalizationString({
-							readable = "Can be pulled outside of the room without engaging the boss.",
-							constant = "CAN_BE_PULLED_OUTSIDE_OF_THE_ROOM_WITHOUT",
-							export = true,
-							text = {
-								en = "Can be pulled outside of the room without engaging the boss.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在不惊动首领的情况下拉到房间外。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be pulled outside of the room without engaging the boss.",
 						["cost"] = { { "i", 12262, 1 } },	-- Empty Worg Pup Cage
 						["cr"] = 10221,	-- Bloodaxe Worg Pup
 					}),
@@ -666,24 +581,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5126, {	-- Lorax's Tale
-				["description"] = createLocalizationString({
-					readable = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
-					constant = "HAVE_AN_UNFORGED_RUNE_COVERED_BREASTPLATE_IN",
-					export = true,
-					text = {
-						en = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "背包中需持有一件未锻造的符文覆盖胸甲，才能触发他的对话。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["providers"] = {
 					{ "n", 10918 },	-- Lorax
 					{ "i", 12806 },	-- Unforged Rune Covered Breastplate
@@ -751,24 +649,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4866, {	-- Mother's Milk
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
-					constant = "YOU_NEED_TO_SETUP_A_COORDINATED_GROUP_ONLY_FOR",
-					export = true,
-					text = {
-						en = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须为此专门组织一个配合默契的队伍。如果治疗者或任何人驱散了毒药，你就必须重置并重试。\n\n在队伍开始前，把你的炉石设在暴风城，或者准备一名法师，在队伍都被咬过之后快速传送回暴风城。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
 				-- #endif
 				["qg"] = 9563,	-- Ragged John
 				["coord"] = { 65.0, 23.6, MAP.BURNING_STEPPES },
@@ -805,24 +686,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5047, {	-- Pip Quickwit, At Your Service!
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
-					constant = "KILL_THE_BEAST_IN_UBRS_USING_PIP_S_SKINNER_AND",
-					export = true,
-					text = {
-						en = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在黑石塔上层杀死比斯巨兽。使用匹普的剥皮刀和一名技能 300 的剥皮师剥取首领的皮，匹普·急智就会出现。此时团队中的所有成员都可以接到这个任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
 				-- #endif
 				["providers"] = {
 					{ "n", 10776 },	-- Pip Quickwit
@@ -856,24 +720,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4742, {	-- Seal of Ascension (1/2)
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
-					constant = "PICKUP_THIS_QUEST_BY_GOING_UP_TO_THE_HIDDEN",
-					export = true,
-					text = {
-						en = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "前往黑石塔下层的隐藏平台并与潜入者交谈来获取此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
 				-- #endif
 				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
 				["timeline"] = { REMOVED_4_0_3 },
@@ -887,24 +734,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4743, {	-- Seal of Ascension (2/2)
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
-					constant = "ASK_YOUR_PARTY_TO_COME_WITH_YOU_TO_DUSTWALLOW",
-					export = true,
-					text = {
-						en = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "让你的队伍和你一起前往尘泥沼泽。你无法单独完成此任务。\n\n每次埃博斯塔夫的冷却期间只能有一个人完成此任务。你的队伍需要击杀埃博斯塔夫来重置冷却。（刷新时间约为 5 分钟。）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
 				-- #endif
 				["sourceQuest"] = 4742,	-- Seal of Ascension (1/2)
 				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
@@ -922,66 +752,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(12339, {	-- Vaelan's Gift
 						i(12323, {	-- Unforged Seal of Ascension
-							["description"] = createLocalizationString({
-								readable = "Use this once the dragon reaches 10-20% health.",
-								constant = "USE_THIS_ONCE_THE_DRAGON_REACHES_10_20_HEALTH",
-								export = true,
-								text = {
-									en = "Use this once the dragon reaches 10-20% health.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当这条龙的生命值降到 10-20% 时使用此物。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use this once the dragon reaches 10-20% health.",
 						}),
 						i(12300, {	-- Orb of Draconic Energy
-							["description"] = createLocalizationString({
-								readable = "Use this once the dragon reaches 10% health. Instruct your party NOT to kill Emberstrife.",
-								constant = "USE_THIS_ONCE_THE_DRAGON_REACHES_10_HEALTH",
-								export = true,
-								text = {
-									en = "Use this once the dragon reaches 10% health. Instruct your party NOT to kill Emberstrife.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "当这条龙的生命值降到 10% 时使用此物。告知你的队伍不要杀死余烬之焰。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use this once the dragon reaches 10% health. Instruct your party NOT to kill Emberstrife.",
 						}),
 					}),
 					i(12344, {	-- Seal of Ascension
 						-- #if BEFORE 3.0.8
-						["description"] = createLocalizationString({
-							readable = "This item must be in your bags to open the door to UBRS.",
-							constant = "THIS_ITEM_MUST_BE_IN_YOUR_BAGS_TO_OPEN_THE_DOOR",
-							export = true,
-							text = {
-								en = "This item must be in your bags to open the door to UBRS.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该物品必须放在你的背包中才能打开通往黑石塔上层的大门。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item must be in your bags to open the door to UBRS.",
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
@@ -1017,24 +796,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					o(175385, {	-- Darkstone Tablet
 						-- #if BEFORE 4.0.3
-						["description"] = createLocalizationString({
-							readable = "This is the white tablet leaning up against the wall in the Whelp Room.",
-							constant = "THIS_IS_THE_WHITE_TABLET_LEANING_UP_AGAINST_THE",
-							export = true,
-							text = {
-								en = "This is the white tablet leaning up against the wall in the Whelp Room.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这就是雏龙房间中靠在墙上的那块白色石板。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
 						-- #endif
 						["groups"] = {
 							i(12358),	-- Darkstone Tablet
@@ -1158,24 +920,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5160, {	-- The Matron Protectorate
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
-					constant = "SPEAK_WITH_AWBEE_IN_UBRS_TO_ACCEPT_THIS_QUEST",
-					export = true,
-					text = {
-						en = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与黑石塔上层的奥比交谈以接受此任务。大多数坦克会跳过奥比附近的两只怪物，所以你应该提醒他们一下。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
 				-- #endif
 				["providers"] = {
 					{ "n", 10740 },	-- Awbee
@@ -1384,24 +1129,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(4903, {	-- Warlord's Command
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
-					constant = "TALK_TO_WARLORD_GORETOOTH_AND_READ_THROUGH_HIS",
-					export = true,
-					text = {
-						en = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与督军戈尔特斯交谈，并读完他的全部对话，以获取交给你的起始任务物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
 				-- #endif
 				["providers"] = {
 					{ "n", 9077 },	-- Warlord Goretooth <Kargath Expeditionary Force>
@@ -1426,24 +1154,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12562 },	-- Important Blackrock Documents
 							{ "o", 175785 },	-- Inconspicuous Documents
 						},
-						["description"] = createLocalizationString({
-							readable = "On the ground next to Overlord Wyrmthalak.",
-							constant = "ON_THE_GROUND_NEXT_TO_OVERLORD_WYRMTHALAK",
-							export = true,
-							text = {
-								en = "On the ground next to Overlord Wyrmthalak.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在维姆萨拉克督军旁边的地上。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "On the ground next to Overlord Wyrmthalak.",
 					}),
 					i(13961, {	-- Halycon's Muzzle
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1747,24 +1458,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 			}),
 			n(9257, {	-- Scarshield Warlock
-				["description"] = createLocalizationString({
-					readable = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
-					constant = "DO_NOT_KILL_THIS_MOB_IF_YOU_ARE_TRYING_TO_GET",
-					export = true,
-					text = {
-						en = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你想刷出燃烧的恶魔卫士，就千万不要击杀这个怪物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
 						["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
@@ -1774,24 +1468,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 					}),
 					n(10263, {	-- Burning Felguard
-						["description"] = createLocalizationString({
-							readable = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
-							constant = "THIS_MOB_IS_INFINITELY_FARMABLE_IF_YOU_DON_T",
-							export = true,
-							text = {
-								en = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你不把所有裂盾术士都杀掉，这个怪物就可以无限刷。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
 						["groups"] = {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228554, {	-- Demonskin Gloves
@@ -1818,24 +1495,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			i(12533, {	-- Roughshod Pike
-				["description"] = createLocalizationString({
-					readable = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
-					constant = "THIS_ITEM_CAN_BE_FOUND_ALONG_THE_BACK_WALL_AS",
-					export = true,
-					text = {
-						en = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当你穿过第二座桥、经过瓦罗什前往熟睡的兽人营地时，可以沿着后墙找到此物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
 				["provider"] = { "o", 175886 },	-- Roughshod Pike
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
@@ -1881,7 +1541,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			n(9217, {	-- Spirestone Lord Magus (Rare)
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, i(228563, {	-- Globe of D'sak
@@ -1967,24 +1627,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12740, {	-- Fifth Mosh'aru Tablet
 						-- #if BEFORE 4.0.3
-						["description"] = createLocalizationString({
-							readable = "Located directly behind the boss.",
-							constant = "LOCATED_DIRECTLY_BEHIND_THE_BOSS",
-							export = true,
-							text = {
-								en = "Located directly behind the boss.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于首领正后方。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located directly behind the boss.",
 						-- #endif
 						["provider"] = { "o", 175949 },	-- Fifth Mosh'aru Tablet
 						["timeline"] = { REMOVED_4_0_3 },
@@ -2062,7 +1705,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12741, {	-- Sixth Mosh'aru Tablet
 						-- #if BEFORE 4.0.3
-						["description"] = "~L.LOCATED_DIRECTLY_BEHIND_THE_BOSS",
+						["description"] = "Located directly behind the boss.",
 						-- #endif
 						["provider"] = { "o", 175950 },	-- Sixth Mosh'aru Tablet
 						["timeline"] = { REMOVED_4_0_3 },
@@ -2072,7 +1715,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13175, {	-- Voone's Twitchbow [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
 						-- #if BEFORE 10.1.7
 						-- #if AFTER 2.0.1
-						["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
+						["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
@@ -2139,24 +1782,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16080, {	-- Mor Grayhoof
-				["description"] = createLocalizationString({
-					readable = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
-					constant = "THIS_BOSS_CAN_BE_SUMMONED_USING_THE_BRAZIER_OF",
-					export = true,
-					text = {
-						en = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该首领可以使用召唤火盆或祈唤火盆来召唤，它们可以召唤出任何一个灵魂。\n召唤地点：比斯巨兽的房间。（需要在黑石塔下层内跑酷，爬到入口传送门上方的岩架，才能进入旧的黑石塔上层区域）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
 				-- #if BEFORE 6.0.2
 				["cost"] = {
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
@@ -2207,7 +1833,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
 					i(12621),	-- Demonfork
@@ -2322,24 +1948,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(392, {	-- Urok Doomhowl
 				["creatureID"] = 10584,	-- Urok Doomhowl
 				["provider"] = { "o", 175621 },	-- Urok's Tribute Pile
-				["description"] = createLocalizationString({
-					readable = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
-					constant = "SUMMONABLE_BOSS_LOOT_A_ROUGHSHOD_PIKE_FOUND_ON",
-					export = true,
-					text = {
-						en = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可召唤的首领。拾取一根粗糙的尖矛，它位于穿过第二座桥后、前往大领主奥莫克之前的左侧墙壁上。击杀大领主奥莫克并拾取他的头颅。击杀烟网蛛后后，向上走，在方形平台角落处的头骨堆上使用尖矛。这会召唤一波波敌人，最后召唤出首领。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
 				["cost"] = {
 					{ "i", 12533, 1 },	-- Roughshod Pike
 					{ "i", 12534, 1 },	-- Omokk's Head
@@ -2385,24 +1994,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(13247, {	-- Quartermaster Zigris' Footlocker
-						["description"] = createLocalizationString({
-							readable = "Contains a random green item.",
-							constant = "CONTAINS_A_RANDOM_GREEN_ITEM",
-							export = true,
-							text = {
-								en = "Contains a random green item.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "包含一件随机绿色物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains a random green item.",
 						["timeline"] = { REMOVED_6_0_2 },	-- NOTE: Exact patch not known
 					}),
 				},
@@ -2436,24 +2028,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			e(395, {	-- Gizrul the Slavener
 				["creatureID"] = 10268,	-- Gizrul the Slavener
-				["description"] = createLocalizationString({
-					readable = "Summoned immediately after Halycon is defeated.",
-					constant = "SUMMONED_IMMEDIATELY_AFTER_HALYCON_IS_DEFEATED",
-					export = true,
-					text = {
-						en = "Summoned immediately after Halycon is defeated.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在哈尔康被击败后立即召唤。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Summoned immediately after Halycon is defeated.",
 				["groups"] = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, i(228591, {	-- Rhombeard Protector
@@ -2520,24 +2095,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					i(13148, {	-- Chillpike
 						-- #if BEFORE 10.1.7
-						["description"] = createLocalizationString({
-							readable = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
-							constant = "THIS_ITEM_SEEMS_TO_HAVE_DISAPPEARED_IN_CLASSIC",
-							export = true,
-							text = {
-								en = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该物品似乎在经典怀旧服中消失了。如果你在经典旧世或巫妖王之怒经典怀旧服中获得该物品，请截图并直接发送到 Discord 上的 @crieve！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
 						-- #if AFTER 2.0.1
 						["isBounty"] = true,
 						-- #endif
@@ -2765,48 +2323,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 				i(13371, {	-- Father Flame
 					-- #if BEFORE 6.0.2
-					["description"] = createLocalizationString({
-						readable = "Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",
-						constant = "OPENING_THIS_WILL_SPAWN_8_WAVES_OF_DRAKE_ADDS",
-						export = true,
-						text = {
-							en = "Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "打开它会触发 8 波龙类小怪以及索拉卡·火冠，出现在利若·杰克因斯房间。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",
 					-- #endif
 					["provider"] = { "o", 175245 },	-- Father Flame
 					["timeline"] = { REMOVED_6_0_2 },
 				}),
 				n(10264, {	-- Solakar Flamewreath
 					-- #if BEFORE 6.0.2
-					["description"] = createLocalizationString({
-						readable = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
-						constant = "THIS_IS_SPAWNED_BY_CLICKING_ON_THE_FATHER_FLAME",
-						export = true,
-						text = {
-							en = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击烈焰之父并击杀利罗伊·詹金斯房间中的 8 波幼龙小怪即可刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
@@ -2867,7 +2391,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #if SEASON_OF_DISCOVERY
 					-- Its always up in SoD
 					-- #else
-					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+					["description"] = "This is a Rare Creature and, as such, is not always present.",
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
@@ -2901,24 +2425,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 						i(12848, {	-- Unforged Rune Covered Breastplate
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
-								constant = "FOUND_ON_THE_RACK_BEHIND_ANVILCRACK_IN_UPPER",
-								export = true,
-								text = {
-									en = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在黑石塔上层安维尔拉克身后的架子上找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
 							-- #endif
 							["provider"] = { "o", 175970 },	-- Unforged Runic Breastplate
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3096,7 +2603,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						i(12588, {	-- Bonespike Shoulder
 							-- #if AFTER 2.0.1
-							["description"] = "~L.THIS_ITEM_APPEARS_TO_HAVE_BEEN_REMOVED_WITH_TBC",
+							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							["isBounty"] = true,
 							-- #endif
 							["timeline"] = {
@@ -3319,24 +2826,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						prof(SKINNING, {
 							-- #if BEFORE TBC
-							["description"] = createLocalizationString({
-								readable = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",
-								constant = "YOU_MUST_HAVE_315_SKINNING_SKILL_THIS_CAN_ONLY",
-								export = true,
-								text = {
-									en = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你必须拥有 315 点剥皮技能。这只能通过祖利安切割者或皮普的剥皮刀来实现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",
 							["cost"] = {
 								{ "i", 12709, 1 },	-- Pip's Skinner
 								{ "i", 19901, 1 },	-- Zulian Slicer
@@ -3351,24 +2841,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					},
 				}),
 				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16042, {	-- Lord Valthalak
-					["description"] = createLocalizationString({
-						readable = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
-						constant = "THIS_BOSS_CAN_BE_SUMMONED_USING_THE_BRAZIER_OF_2",
-						export = true,
-						text = {
-							en = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该首领可以使用召唤火盆或祈唤火盆来召唤，它们可以召唤出任何一个灵魂。\n召唤地点：战争大师沃恩的房间。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
 					-- #if BEFORE 6.0.2
 					["cost"] = {
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
@@ -3390,24 +2863,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(22336),	-- Draconian Aegis of the Legion
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228682, {	-- Lord Valthalak's Staff of Command
-							["description"] = createLocalizationString({
-								readable = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
-								constant = "THIS_VERSION_OF_THE_STAFF_WAS_CREATED_AND_ADDED",
-								export = true,
-								text = {
-									en = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这个版本的法杖已被创建并加入数据库，但似乎不会掉落。如果你打出了它，请 @Crieve。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
 							["timeline"] = { CREATED_1_15_3 },
 						})),
 						-- #endif

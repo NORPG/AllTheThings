@@ -37,24 +37,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
 			}),
 			faction(FACTION_SYNDICATE, {	-- Syndicate
-				["description"] = createLocalizationString({
-					readable = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
-					constant = "NEUTRAL_IS_THE_HIGHEST_YOU_CAN_CURRENTLY_REACH",
-					export = true,
-					text = {
-						en = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "中立是目前你在辛迪加能达到的最高声望。\n\n继续提升会让你的拉文霍德声望暴跌，两者互斥。如果你想这么做，就用小号来完成。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
 				["minReputation"] = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
 				["maxReputation"] = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
 			}),
@@ -331,24 +314,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				["groups"] = {
 					objective(1, {	-- 0/1 Syndicate Missive
 						["provider"] = { "i", 3601 },	-- Syndicate Missive
-						["description"] = createLocalizationString({
-							readable = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
-							constant = "YOU_CAN_CHOOSE_TO_BRING_VALIK_A_DRINK_OR_KILL",
-							export = true,
-							text = {
-								en = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以选择给瓦利克带一杯酒，或者一直击杀辛迪加成员直到掉落一封密信。随你选择。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
 						["crs"] = {
 							2240,	-- Syndicate Footpad
 							2241,	-- Syndicate Thief
@@ -583,24 +549,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				["lvl"] = 30,
 			}),
 			q(6681, {	-- The Manor, Ravenholdt
-				["description"] = createLocalizationString({
-					readable = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
-					constant = "SPEAK_WITH_A_ROGUE_TRAINER_AND_USE_SELECT_THE",
-					export = true,
-					text = {
-						en = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与盗贼训练师交谈并选择对话选项，即可获得给予你此任务的物品。\n\n不要打开箱子",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 				["providers"] = {
 					{ "i", 17125 },	-- Seal of Ravenholdt
 					{ "i", 17126 },	-- Seal of Ravenholdt
@@ -730,24 +679,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			n(2447, {	-- Narillasanz
-				["description"] = createLocalizationString({
-					readable = "Patrols around the entire zone, but can usually be found along the river to the east.\n\nThis particular rare was used in the original World of Warcraft game packaging facing off against heroes wielding Teebu's Blazing Longsword.",
-					constant = "PATROLS_AROUND_THE_ENTIRE_ZONE_BUT_CAN_USUALLY",
-					export = true,
-					text = {
-						en = "Patrols around the entire zone, but can usually be found along the river to the east.\n\nThis particular rare was used in the original World of Warcraft game packaging facing off against heroes wielding Teebu's Blazing Longsword.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在整个区域四处巡逻，但通常可以在东部的河流沿岸找到。\n\n这个特殊的稀有刷新曾出现在原版《魔兽世界》的游戏包装上，与手持提布的炽炎长剑的英雄们对峙。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Patrols around the entire zone, but can usually be found along the river to the east.\n\nThis particular rare was used in the original World of Warcraft game packaging facing off against heroes wielding Teebu's Blazing Longsword.",
 				["coord"] = { 79.2, 47.0, MAP.ALTERAC_MOUNTAINS },
 			}),
 			n(2452, {	-- Skhowl

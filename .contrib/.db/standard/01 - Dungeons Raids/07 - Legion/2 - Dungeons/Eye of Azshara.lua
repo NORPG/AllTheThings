@@ -12,24 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				i(137726),	-- Schematic: Leystone Buoy (RECIPE!)
 				prof(INSCRIPTION, {
 					i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
-						["description"] = createLocalizationString({
-							readable = "Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",
-							constant = "DROPS_FROM_NAGA_IN_ANY_BROKEN_ISLES_ZONE",
-							export = true,
-							text = {
-								en = "Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "由破碎群岛任意区域中的纳迦掉落。推荐刷取艾萨拉之眼地下城第一个首领前的纳迦。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",
 					}),
 				}),
 			}),

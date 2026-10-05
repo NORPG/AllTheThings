@@ -235,24 +235,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(558, {	-- Arctic Fox Kit (PET!)
-							["description"] = createLocalizationString({
-								readable = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
-								constant = "ONLY_SPAWNS_WHILE_IT_IS_SNOWING_WEATHER_IN_THIS",
-								export = true,
-								text = {
-									en = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅在降雪天气时刷新。该区域的天气似乎因角色而异。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
 						}),
 					},
 				}),
@@ -361,24 +344,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(115307, {	-- Algalon the Observer <Celestial Pet Tamer>
 						["coord"] = { 41.5, 24.4, THE_STORM_PEAKS },
-						["description"] = createLocalizationString({
-							readable = "Algalon's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
-							constant = "ALGALON_S_PETS_ARE_LEVEL_25_OF_LEGENDARY",
-							export = true,
-							text = {
-								en = "Algalon's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "奥尔加隆的宠物是 25 级传说品质，并且按以下连续宠物类别异常强大：\n1. 龙类 - 使用人形（强力）或亡灵（耐打）宠物。\n2. 魔法 - 使用龙类（强力）或机械（耐打）宠物。\n3. 魔法 - 参见上文。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Algalon's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
 						["timeline"] = { ADDED_7_1_0 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
@@ -477,24 +443,7 @@ root(ROOTS.Zones, {
 					}),
 
 					i(44751, {	-- Hyldnir Spoils
-						["description"] = createLocalizationString({
-							readable = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
-							constant = "REWARD_FROM_THE_FOLLOWING_DAILY_QUESTS_BACK_TO",
-							export = true,
-							text = {
-								en = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "由以下日常任务奖励：重回斗场、捍卫你的头衔、保持纪律和必须消灭这些异类。\n\n每天会随机提供其中一个任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["groups"] = {
 							i(43962),	-- White Polar Bear (MOUNT!)
@@ -557,24 +506,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.4, 72.1, THE_STORM_PEAKS },
 					}),
 					q(12871, {	-- Aid from the Explorers' League
-						["description"] = createLocalizationString({
-							readable = "Use Brann's Communicator to pick this quest up.",
-							constant = "USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
-							export = true,
-							text = {
-								en = "Use Brann's Communicator to pick this quest up.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用布莱恩的通讯器接取此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12872,	-- Norgannon's Shell
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
@@ -706,35 +638,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 					}),
 					q(12860, {	-- Data Mining (A)
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12858,	-- Pieces to the Puzzle
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(41179, {	-- The Inventor's Disk
-								["description"] = createLocalizationString({
-									readable = "Despite what the item text says, this can only be used on Databanks on Terrace of the Makers, downstairs from The Inventor's Library.",
-									constant = "DESPITE_WHAT_THE_ITEM_TEXT_SAYS_THIS_CAN_ONLY",
-									export = true,
-									text = {
-										en = "Despite what the item text says, this can only be used on Databanks on Terrace of the Makers, downstairs from The Inventor's Library.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "尽管物品说明如此，它只能用于造物者平台上的数据库，位于发明家图书馆的楼下。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Despite what the item text says, this can only be used on Databanks on Terrace of the Makers, downstairs from The Inventor's Library.",
 							}),
 						},
 					}),
 					q(12927, {	-- Data Mining (H)
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12926,	-- Pieces of the Puzzle
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
@@ -870,24 +785,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12924, {	-- Forging an Alliance
-						["description"] = createLocalizationString({
-							readable = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
-							constant = "TO_PROGRESS_THROUGH_THIS_QUEST_PICK_UP_THE",
-							export = true,
-							text = {
-								en = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要推进此任务，请从约库姆国王处接取任务“你不会错过他的”。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
 						["sourceQuests"] = {
 							12956,	-- A Spark of Hope
 							12915,	-- Mending Fences
@@ -926,7 +824,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13285, {	-- Forging the Keystone
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 13274,	-- The Core's Keeper
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
@@ -944,7 +842,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13273, {	-- Going After the Core
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12928,	-- Norgannon's Shell
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
@@ -1164,24 +1062,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12831, {	-- Only Partly Forgotten
-						["description"] = createLocalizationString({
-							readable = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
-							constant = "YOU_CAN_PICK_UP_THIS_QUEST_FROM_ANY_OF_THE",
-							export = true,
-							text = {
-								en = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以在矿洞内从任何一名受伤的地精矿工处接取此任务。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
 						["qg"] = 29434,	-- Injured Goblin Miner
 						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
 							{ 41.4, 74.8, THE_STORM_PEAKS },
@@ -1213,7 +1094,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(12858, {	-- Pieces to the Puzzle (A)
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12855,	-- Sniffing Out the Perpetrator
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
@@ -1374,7 +1255,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13274, {	-- The Core's Keeper
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 13273,	-- Going After the Core
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
@@ -1422,7 +1303,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12929, {	-- The Earthen of Ulduar
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuests"] = {
 							12926,	-- Pieces of the Puzzle
 							12872,	-- Norgannon's Shell (A)
@@ -1433,7 +1314,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12885, {	-- The Exiles of Ulduar
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12872,	-- Norgannon's Shell
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
@@ -1501,13 +1382,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 					}),
 					q(13415, {	-- The Library Console (A)
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12860,	-- Data Mining
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13416, {	-- The Library Console (H)
-						["description"] = "~L.USE_BRANN_S_COMMUNICATOR_TO_PICK_THIS_QUEST_UP",
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 12927,	-- Data Mining
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
@@ -1713,24 +1594,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12966, {	-- You Can't Miss Him
-						["description"] = createLocalizationString({
-							readable = "This questline is required to progress on the 'Forging the Alliance' quest.",
-							constant = "THIS_QUESTLINE_IS_REQUIRED_TO_PROGRESS_ON_THE",
-							export = true,
-							text = {
-								en = "This questline is required to progress on the 'Forging the Alliance' quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "推进“铸就联盟”任务需要完成此任务线。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This questline is required to progress on the 'Forging the Alliance' quest.",
 						["sourceQuest"] = 12924,	-- Forging an Alliance
 						["qg"] = 30105,	-- King Jokkum
 						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
@@ -1760,24 +1624,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(35189, {	-- Skoll
-						["description"] = createLocalizationString({
-							readable = "In Norse mythology, the aspects of the sun and moon are pursued through the sky by two wolves. Skoll is the wolf that pursues the sun and, at the onset of Ragnarok, will finally catch and devour it.\n\nSkoll's brother, Hati, will do the same to the moon.\n\nThis is a very much sought after Hunter Pet, so instead of killing this rare for the BoE, buy the BoE off the AH.",
-							constant = "IN_NORSE_MYTHOLOGY_THE_ASPECTS_OF_THE_SUN_AND",
-							export = true,
-							text = {
-								en = "In Norse mythology, the aspects of the sun and moon are pursued through the sky by two wolves. Skoll is the wolf that pursues the sun and, at the onset of Ragnarok, will finally catch and devour it.\n\nSkoll's brother, Hati, will do the same to the moon.\n\nThis is a very much sought after Hunter Pet, so instead of killing this rare for the BoE, buy the BoE off the AH.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在挪威神话中，太阳与月亮的化身被两只狼在天空中追逐。斯库尔是追逐太阳的那只狼，在诸神黄昏降临时，它终将追上并吞下太阳。\n\n斯库尔的兄弟哈提也会对月亮做同样的事。\n\n这是非常抢手的猎人宠物，所以不要为了装绑物品而击杀这只稀有，直接去拍卖行购买装绑物品吧。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "In Norse mythology, the aspects of the sun and moon are pursued through the sky by two wolves. Skoll is the wolf that pursues the sun and, at the onset of Ragnarok, will finally catch and devour it.\n\nSkoll's brother, Hati, will do the same to the moon.\n\nThis is a very much sought after Hunter Pet, so instead of killing this rare for the BoE, buy the BoE off the AH.",
 						["coords"] = {
 							{ 27.8, 50.8, THE_STORM_PEAKS },
 							{ 30.2, 64.6, THE_STORM_PEAKS },
@@ -1788,24 +1635,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32491, {	-- Time-Lost Proto-Drake
-						["description"] = createLocalizationString({
-							readable = "They call it a time-lost proto drake because you've lost so much time looking for it. Shares respawn with |cFFFFD700Vyragosa|r.",
-							constant = "THEY_CALL_IT_A_TIME_LOST_PROTO_DRAKE_BECAUSE",
-							export = true,
-							text = {
-								en = "They call it a time-lost proto drake because you've lost so much time looking for it. Shares respawn with |cFFFFD700Vyragosa|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "人们叫它迷失始祖幼龙，因为你为了找它浪费了太多时间。与|cFFFFD700维拉苟萨|r共享刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "They call it a time-lost proto drake because you've lost so much time looking for it. Shares respawn with |cFFFFD700Vyragosa|r.",
 						["coords"] = {
 							{ 31.0, 69.0, THE_STORM_PEAKS },	-- Frozen Lake
 							{ 51.0, 70.0, THE_STORM_PEAKS },	-- Brunn Village
@@ -1818,24 +1648,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32630, {	-- Vyragosa
-						["description"] = createLocalizationString({
-							readable = "Flies all around the zone in large circular patterns based on the spawn point. Shares respawn with |cFFFFD700Time-Lost Proto-Drake|r.",
-							constant = "FLIES_ALL_AROUND_THE_ZONE_IN_LARGE_CIRCULAR",
-							export = true,
-							text = {
-								en = "Flies all around the zone in large circular patterns based on the spawn point. Shares respawn with |cFFFFD700Time-Lost Proto-Drake|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "以刷新点为中心，在整个区域沿大型环形路线飞行。与|cFFFFD700迷失始祖幼龙|r共享刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Flies all around the zone in large circular patterns based on the spawn point. Shares respawn with |cFFFFD700Time-Lost Proto-Drake|r.",
 						["coords"] = {
 							{ 31.0, 69.0, THE_STORM_PEAKS },	-- Frozen Lake
 							{ 51.0, 70.0, THE_STORM_PEAKS },	-- Brunn Village
@@ -1853,24 +1666,7 @@ root(ROOTS.Zones, {
 							{ 58.2, 62.0, THE_STORM_PEAKS },	-- Valley of Ancient Kings
 							{ 70.4, 59.8, THE_STORM_PEAKS },	-- Frostfield Lake
 						},
-						["description"] = createLocalizationString({
-							readable = "Everfrost Chip spawns can be hard to find due to their scarcity. They can spawn anywhere between Brunnhildar Village and Thunderfall.\n\nAlthough you can open these while being hated with The Sons of Hodir, you will NOT get any Everfrost Chips!",
-							constant = "EVERFROST_CHIP_SPAWNS_CAN_BE_HARD_TO_FIND_DUE",
-							export = true,
-							text = {
-								en = "Everfrost Chip spawns can be hard to find due to their scarcity. They can spawn anywhere between Brunnhildar Village and Thunderfall.\n\nAlthough you can open these while being hated with The Sons of Hodir, you will NOT get any Everfrost Chips!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "由于数量稀少，永霜碎片的刷新点可能很难找到。它们可以在布伦希尔达村和雷霆陨落之间的任何地方刷新。\n\n虽然你可以在与霍迪尔之子处于仇恨状态时打开这些碎片，但你将无法获得任何永霜碎片！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Everfrost Chip spawns can be hard to find due to their scarcity. They can spawn anywhere between Brunnhildar Village and Thunderfall.\n\nAlthough you can open these while being hated with The Sons of Hodir, you will NOT get any Everfrost Chips!",
 						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly. Propably? Does only provide grey powder when hated.
 						["groups"] = {
 							i(44724),	-- Everfrost Chip (for repeating quests)
@@ -2055,24 +1851,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 29724 },	-- Library Guardian
 					}),
 					i(41556, {	-- Slag Covered Metal
-						["description"] = createLocalizationString({
-							readable = "The giants that drop this spawn on and around the ice patch east of Dun Niffelem.",
-							constant = "THE_GIANTS_THAT_DROP_THIS_SPAWN_ON_AND_AROUND",
-							export = true,
-							text = {
-								en = "The giants that drop this spawn on and around the ice patch east of Dun Niffelem.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "掉落此物的巨人在尼费尔姆以东的冰原上及其周围刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The giants that drop this spawn on and around the ice patch east of Dun Niffelem.",
 						["crs"] = { 29375 },	-- Stormforged Iron Giant
 					}),
 					i(43573, {	-- Tears of Bitter Anguish

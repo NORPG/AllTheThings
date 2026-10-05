@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
-									["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+									["description"] = "You must keep this in your bags forever.",
 									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
@@ -1984,24 +1984,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
-									["description"] = createLocalizationString({
-										readable = "Kneel (/kneel) at the Loa Altar to gain a Meditation buff, then use the Rune to complete the quest.",
-										constant = "KNEEL_KNEEL_AT_THE_LOA_ALTAR_TO_GAIN_A",
-										export = true,
-										text = {
-											en = "Kneel (/kneel) at the Loa Altar to gain a Meditation buff, then use the Rune to complete the quest.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在洛阿祭坛跪下（/kneel）以获得冥想增益，然后使用符文完成任务。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Kneel (/kneel) at the Loa Altar to gain a Meditation buff, then use the Rune to complete the quest.",
 									["coord"] = { 55.4, 72.6, DUROTAR },
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
@@ -2054,24 +2037,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 3124,	-- Scorpid Worker
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-							["description"] = createLocalizationString({
-								readable = "This can also drop from any of the rare mobs in the zone.",
-								constant = "THIS_CAN_ALSO_DROP_FROM_ANY_OF_THE_RARE_MOBS_IN",
-								export = true,
-								text = {
-									en = "This can also drop from any of the rare mobs in the zone.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品也可由该区域的任意稀有怪物掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This can also drop from any of the rare mobs in the zone.",
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { HUNTER },
 							["cr"] = 3281,	-- Sarkoth
@@ -2080,7 +2046,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-							["description"] = "~L.THIS_CAN_ALSO_DROP_FROM_ANY_OF_THE_RARE_MOBS_IN",
+							["description"] = "This can also drop from any of the rare mobs in the zone.",
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { WARRIOR },
 							["cr"] = 3281,	-- Sarkoth
@@ -2169,24 +2135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66126, {	-- Zunta <Aspiring Pet Tamer>
 					["coord"] = { 43.9, 28.9, DUROTAR },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_ZUNTA_S_PETS_ARE",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落。\n\nZunta 的宠物为 2 级，两个宠物的类别依次为：\n1. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n2. 小动物 - 使用野兽（强力）或人型（耐打）宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["petBattleLvl"] = 2,
@@ -2858,7 +2807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(80, 80, 10),
 				}),
 				q(7664, {	-- Ivory Raptor Replacement
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 7952,	-- Zjolnir
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["timeline"] = { REMOVED_1_4_0 },
@@ -2921,24 +2870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_4",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在巨魔达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["races"] = { TROLL },
@@ -2952,24 +2884,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(25179, {	-- Loss Reduction
-					["description"] = createLocalizationString({
-						readable = "Talk to an Injured Razor Hill Grunt on the beach.",
-						constant = "TALK_TO_AN_INJURED_RAZOR_HILL_GRUNT_ON_THE",
-						export = true,
-						text = {
-							en = "Talk to an Injured Razor Hill Grunt on the beach.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与海滩上一名受伤的剃刀岭步兵交谈。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 					["qg"] = 39270,	-- Injured Razor Hill Grunt
 					["timeline"] = { ADDED_4_0_3 },
@@ -3266,7 +3181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7665, {	-- Red Raptor Replacement
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 7952,	-- Zjolnir
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["timeline"] = { REMOVED_1_4_0 },
@@ -3604,24 +3519,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(40518, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Battle for Broken Shore
-					["description"] = createLocalizationString({
-						readable = "Legion expansion introduction quest.|r",
-						constant = "LEGION_EXPANSION_INTRODUCTION_QUEST_R",
-						export = true,
-						text = {
-							en = "Legion expansion introduction quest.|r",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "军团再临资料片引导任务。|r",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Legion expansion introduction quest.|r",
 					["sourceQuest"] = 44281,	-- To Be Prepared
 					-- ["altQuest"] = 44543,	-- Scenario Skip (H)
 					["qg"] = 113547,	-- Stone Guard Mukar
@@ -4047,24 +3945,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208124, {	-- Raluk
-					["description"] = createLocalizationString({
-						readable = "You can tame him and you still get the rune!",
-						constant = "YOU_CAN_TAME_HIM_AND_YOU_STILL_GET_THE_RUNE",
-						export = true,
-						text = {
-							en = "You can tame him and you still get the rune!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以驯服他，而且仍然能获得符文！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 69.1, 71.5, DUROTAR },
 					["cost"] = { { "i", 207590, 1 } },	-- Durotar Pig Meat
 					["groups"] = {
@@ -4078,24 +3959,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
 					["provider"] = { "n", 208179 },	-- Rustling Bush
-					["description"] = createLocalizationString({
-						readable = "Cast Hunter's Mark on the bush to spawn the rare.",
-						constant = "CAST_HUNTER_S_MARK_ON_THE_BUSH_TO_SPAWN_THE",
-						export = true,
-						text = {
-							en = "Cast Hunter's Mark on the bush to spawn the rare.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对灌木施放猎人印记即可刷新该稀有生物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
 					["coord"] = { 40.6, 52.0, DUROTAR },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -4234,24 +4098,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
 					-- ["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
-					["description"] = createLocalizationString({
-						readable = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
-						constant = "THESE_ARE_RANDOM_SPAWN_TOTEMS_ON_THE_GROUND",
-						export = true,
-						text = {
-							en = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这些是随机刷新在地上的图腾；注意聆听闪电施法的音效，以帮助你确定位置。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
 					["coords"] = {
 						{ 38.01, 35.53, DUROTAR },
 						{ 53.36, 50.48, DUROTAR },
@@ -4321,24 +4168,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
-					["description"] = createLocalizationString({
-						readable = "Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",
-						constant = "ONLY_AVAILABLE_WITH_THE_QUESTS_CFFFFD700THE",
-						export = true,
-						text = {
-							en = "Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅在拥有任务 |cFFFFD700军团归来|r 或 |cFFFFD700做好准备|r 时可用。在回音群岛上永久可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",
 					["coords"] = {
 						{ 55.4, 11.2, DUROTAR },
 						{ 57.4, 62.2, ECHO_ISLES },
@@ -4362,24 +4192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
-					["description"] = createLocalizationString({
-						readable = "Use the pheromone and tame an adder and then bring it to Razzil.",
-						constant = "USE_THE_PHEROMONE_AND_TAME_AN_ADDER_AND_THEN",
-						export = true,
-						text = {
-							en = "Use the pheromone and tame an adder and then bring it to Razzil.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用信息素并驯服一条蝰蛇，然后把它带给拉兹尔。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the pheromone and tame an adder and then bring it to Razzil.",
 					["coord"] = { 52.2, 44.0, DUROTAR },
 					["cost"] = { { "i", 207631, 1 } },	-- Adder Pheromone
 					["crs"] = { 3300 },	-- Adder
@@ -4509,7 +4322,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-					["description"] = "~L.THIS_CAN_ALSO_DROP_FROM_ANY_OF_THE_RARE_MOBS_IN",
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 67.6, 87.8, DUROTAR },
 					["classes"] = { PRIEST },
 					["cr"] = 3205,	-- Zalazane
@@ -4586,7 +4399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5823,	-- Death Flayer
 						3127,	-- Venomtail Scorpid
 					},
-					["description"] = "~L.ONLY_DROPS_FROM_SCORPIDS_IN_DUROTAR_EXCLUDING"
+					["description"] = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials."
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
@@ -4605,7 +4418,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
-					["description"] = "~L.THIS_CAN_ALSO_DROP_FROM_ANY_OF_THE_RARE_MOBS_IN",
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 67.6, 87.8, DUROTAR },
 					["classes"] = { MAGE },
 					["cr"] = 3205,	-- Zalazane

@@ -23,24 +23,7 @@ root(ROOTS.Zones, {
 					["isDaily"] = IGNORED_VALUE,
 				}),
 				n(90244, {	-- Arcavellus
-					["description"] = createLocalizationString({
-						readable = "Click on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.",
-						constant = "CLICK_ON_THE_UNBOUND_RIFT_IN_LEY_RUINS_OF",
-						export = true,
-						text = {
-							en = "Click on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击扎克纳尔魔网废墟中的无束裂隙以开始事件。几波敌人之后，阿卡维鲁斯将会刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.",
 					["questID"] = 37932,
 					["coord"] = { 59.8, 11.9, AZSUNA },
 					["groups"] = {
@@ -48,24 +31,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(91187, {	-- Beacher
-					["description"] = createLocalizationString({
-						readable = "Due to phasing issues, you will be unable to kill Beacher if a Kvaldir WQ is up in the area it patrols.",
-						constant = "DUE_TO_PHASING_ISSUES_YOU_WILL_BE_UNABLE_TO",
-						export = true,
-						text = {
-							en = "Due to phasing issues, you will be unable to kill Beacher if a Kvaldir WQ is up in the area it patrols.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由于相位问题，如果比奇巡逻的区域内有克瓦迪尔世界任务激活，你将无法击杀比奇。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Due to phasing issues, you will be unable to kill Beacher if a Kvaldir WQ is up in the area it patrols.",
 					["questID"] = 38238,
 					["coord"] = { 32.4, 29.6, AZSUNA },
 					["groups"] = {
@@ -87,24 +53,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(91100, {	-- Brogozog
-					["description"] = createLocalizationString({
-						readable = "Speak to Tehd to start the encounter.",
-						constant = "SPEAK_TO_TEHD_TO_START_THE_ENCOUNTER",
-						export = true,
-						text = {
-							en = "Speak to Tehd to start the encounter.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与泰德交谈以开始战斗。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 38212,
 					["coord"] = { 59.2, 46.3, AZSUNA },
 					["groups"] = {
@@ -171,7 +120,7 @@ root(ROOTS.Zones, {
 					["crs"] = { 112636 },	-- Sinister Leyrunner
 				}),
 				n(91579, {	-- Doomlord Kazrok
-					["description"] = "~L.SPEAK_TO_TEHD_TO_START_THE_ENCOUNTER",
+					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 38352,	-- Kazrok
 					["coord"] = { 43.4, 28.2, AZSUNA },
 					["groups"] = {
@@ -179,7 +128,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(105938, {	-- Felwing (Felbats)
-					["description"] = "~L.SPEAK_TO_TEHD_TO_START_THE_ENCOUNTER",
+					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 42069,
 					["coord"] = { 43.5, 24.6, AZSUNA },
 					["groups"] = {
@@ -208,24 +157,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(90803, {	-- Infernal Lord
-					["description"] = createLocalizationString({
-						readable = "Click Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.",
-						constant = "CLICK_CACHE_OF_INFERNALS_IN_FARONAAR_TO_START",
-						export = true,
-						text = {
-							en = "Click Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击法罗纳尔的地狱火贮藏以开始事件。几波小型地狱火之后，地狱火领主将会刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.",
 					["provider"] = { "o", 240222 },	-- Cache of Infernals
 					["questID"] = 38037,
 					["coord"] = { 35.2, 50.4, AZSUNA },

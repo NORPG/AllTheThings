@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			prof(FISHING, {
 				i(6651, {	-- Broken Wine Bottle
-					["description"] = "~L.DROPS_FROM_FISHING_IN_THE_SLUDGE_FEN",
+					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),
 			}),
 			-- #if BEFORE CATA
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 25,
 					["groups"] = {
 						i(7968, {	-- Southsea Treasure
-							["description"] = "~L.WHEN_YOU_OPEN_THE_CHEST_POLLY_WILL_SPAWN_AND",
+							["description"] = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
 							["cost"] = {{ "i", 7970, 1 }},	-- E.C.A.C.
 							["cr"] = 7168,	-- Polly
 						}),
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						recipe(3599),	-- Searing Totem
 						i(5176, {	-- Fire Totem
-							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+							["description"] = "You must keep this in your bags forever.",
 						}),
 						-- #if NOT ANYCLASSIC
 						i(6654, {	-- Torch of the Eternal Flame
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						recipe(5394),	-- Healing Stream Totem
 						i(5177, {	-- Water Totem
-							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+							["description"] = "You must keep this in your bags forever.",
 						}),
 					},
 				}),
@@ -2081,7 +2081,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 				}),
 				q(1498, {	-- Path of Defense
-					["description"] = "~L.COMPLETING_THIS_QUEST_PREVENTS_YOU_FROM",
+					["description"] = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
 					["sourceQuest"] = 1505,	-- Veteran Uzzek
 					["qg"] = 5810,	-- Uzzek
 					["coord"] = { 61.38, 21.11, THE_BARRENS },
@@ -2385,7 +2385,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(866,	{	-- Root Samples
-					["description"] = "~L.TO_ACCESS_THIS_QUEST_YOU_MUST_HAVE_AT_LEAST_40",
+					["description"] = "To access this quest, you must have at least 40 skill in Herbalism.",
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2405,24 +2405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78680, {	-- Rumors Abound
-					["description"] = createLocalizationString({
-						readable = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
-						constant = "CLIMB_EACH_OF_THE_TOWERS_YOU_LL_LIKELY_NEED_A",
-						export = true,
-						text = {
-							en = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "攀爬每一座塔，你很可能需要一支队伍或一位朋友，能够存活足够长的时间，为你争取大约 3 秒不被打断的拾取时间。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
 					["sourceQuest"] = 1740,	-- The Orb of Soran'ruk
 					["qg"] = 6247,	-- Doan Karhan
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
@@ -2710,24 +2693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 210146 },	-- Shredder Turbocharger
 							["coord"] = { 62.6, 52.8, STONETALON_MOUNTAINS },
 							["cost"] = { { "i", 210147, 25 } },	-- Shredder Autosalvage Unit
-							["description"] = createLocalizationString({
-								readable = "This may take a more than 25 salvage units. It's ~50% chance to salvage the right item.",
-								constant = "THIS_MAY_TAKE_A_MORE_THAN_25_SALVAGE_UNITS_IT_S",
-								export = true,
-								text = {
-									en = "This may take a more than 25 salvage units. It's ~50% chance to salvage the right item.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这可能需要超过 25 个回收单位。回收到正确物品的几率约为 50%。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This may take a more than 25 salvage units. It's ~50% chance to salvage the right item.",
 							["cr"] = 214129,	-- Venture Co. Light Shredder
 						}),
 					},
@@ -2817,24 +2783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["questID"] = 78908,	-- N'ora HQT
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
-					["description"] = createLocalizationString({
-						readable = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
-						constant = "YOU_NEED_TO_LOOT_THE_HANDFUL_OF_SHIFTING_SCALES",
-						export = true,
-						text = {
-							en = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要先拾取一把变化鳞片，此任务才会显示给你。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
 					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
 					["lvl"] = 20,
@@ -3211,24 +3160,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78681, {	-- The Conjuring
-					["description"] = createLocalizationString({
-						readable = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
-						constant = "AFTER_OBTAINING_THE_BLOOD_INTERACT_WITH_THE",
-						export = true,
-						text = {
-							en = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "获得血液后，与格罗玛什·地狱咆哮方尖碑附近的祭坛互动以开始仪式，仪式会召唤几波恶魔，你必须站在地上的紫色符文内使用吸取灵魂来击败它们。用这种方式击败最后的灼热地狱火，神秘的旅行者就会出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
 					["sourceQuest"] = 78680,	-- Rumors Abound
 					["providers"] = {
 						{ "n",   6247 },	-- Doan Karhan
@@ -3970,7 +3902,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.1, 33.9, THE_BARRENS },
 						-- #endif
 					},
-					["description"] = "~L.ROAMS_AROUND_THE_WATERFALL_JUST_OUTSIDE_THE",
+					["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					["groups"] = {
 						i(5423),	-- Boahn's Fang
 						i(5422),	-- Brambleweed Leggings
@@ -4056,24 +3988,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(209742, {	-- Desert Mirage
-					["description"] = createLocalizationString({
-						readable = "Cast Dispel or Purge on it.",
-						constant = "CAST_DISPEL_OR_PURGE_ON_IT",
-						export = true,
-						text = {
-							en = "Cast Dispel or Purge on it.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对它施放驱散或净化。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Dispel or Purge on it.",
 					["coord"] = { 55.0, 35.4, THE_BARRENS },
 					["classes"] = { PRIEST, SHAMAN },
 					["groups"] = {
@@ -4106,24 +4021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(4785, {	-- Brimstone Belt
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-								constant = "THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_3",
-								export = true,
-								text = {
-									en = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "由于掉落此物品的怪物所属阵营，此物品只有部落玩家才能自然获得。如果你将这件物品放在中立拍卖行出售，或许能从收藏家那里卖个好价钱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
@@ -4294,24 +4192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209524, {	-- Patrolling Cheetah
-					["description"] = createLocalizationString({
-						readable = "Drop a trap in its path to remove its speed buff.",
-						constant = "DROP_A_TRAP_IN_ITS_PATH_TO_REMOVE_ITS_SPEED",
-						export = true,
-						text = {
-							en = "Drop a trap in its path to remove its speed buff.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在它的行进路线上放置陷阱，以移除其加速增益。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drop a trap in its path to remove its speed buff.",
 					["coord"] = { 44.4, 55.4, THE_BARRENS },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -4494,7 +4375,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3652, {	-- Trigore the Lasher
-					["description"] = "~L.INSIDE_THE_POOL_OF_WATER_OUTSIDE_THE_WAILING",
+					["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 64.0, NORTHERN_BARRENS },
@@ -4525,24 +4406,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407510, {	-- Etched Carving
 					["provider"] = { "o", 407505 },	-- Etched Carving
-					["description"] = createLocalizationString({
-						readable = "Stand on the green dot and read the inscription to activate the hidden path. Blink from green dot to green dot without taking any steps or losing the Path of no Steps debuff.\n\nOnce you've reached the last green dot, you'll see another large carving. Blink to it and quickly read the inscription before the buff falls off to earn the Rune.",
-						constant = "STAND_ON_THE_GREEN_DOT_AND_READ_THE_INSCRIPTION",
-						export = true,
-						text = {
-							en = "Stand on the green dot and read the inscription to activate the hidden path. Blink from green dot to green dot without taking any steps or losing the Path of no Steps debuff.\n\nOnce you've reached the last green dot, you'll see another large carving. Blink to it and quickly read the inscription before the buff falls off to earn the Rune.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "站在绿点上阅读铭文以激活隐藏路径。在绿点之间使用闪现移动，不要走出任何一步，也不要让无步之径减益消失。\n\n到达最后一个绿点后，你会看到另一处大型雕刻。闪现过去，在增益消失前迅速阅读铭文，即可获得该符文。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Stand on the green dot and read the inscription to activate the hidden path. Blink from green dot to green dot without taking any steps or losing the Path of no Steps debuff.\n\nOnce you've reached the last green dot, you'll see another large carving. Blink to it and quickly read the inscription before the buff falls off to earn the Rune.",
 					["coord"] = { 45.5, 80.0, THE_BARRENS },
 					["classes"] = { MAGE },
 					["groups"] = {
@@ -4574,24 +4438,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
 					["provider"] = { "o", 407347 },	-- Altar of Thorns
-					["description"] = createLocalizationString({
-						readable = "Channel Health Funnel to 0 health while standing on the Altar of Thorns. You will be healed to full and granted the Rune.",
-						constant = "CHANNEL_HEALTH_FUNNEL_TO_0_HEALTH_WHILE",
-						export = true,
-						text = {
-							en = "Channel Health Funnel to 0 health while standing on the Altar of Thorns. You will be healed to full and granted the Rune.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "站在荆棘祭坛上引导生命通道直至生命值降到 0。你将被治疗至满血并获得该符文。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Channel Health Funnel to 0 health while standing on the Altar of Thorns. You will be healed to full and granted the Rune.",
 					["coord"] = { 58.2, 26.7, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["groups"] = {
@@ -4604,24 +4451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 407120 },	-- Empty Snapjaw Nest
 						{ "n", 209511 },	-- Oasis Snapjaw Hatchling
 					},
-					["description"] = createLocalizationString({
-						readable = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
-						constant = "BRING_THE_ABANDONED_SNAPJAW_EGG_TO_AN_EMPTY",
-						export = true,
-						text = {
-							en = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "把被遗弃的钳嘴龟蛋带到空巢中，然后与幼龟互动。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
 					["coord"] = { 48.0, 40.0, THE_BARRENS },
 					["classes"] = { DRUID },
 					["groups"] = {
@@ -4630,24 +4460,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 407457 },	-- Stable Hand's Trunk
-					["description"] = createLocalizationString({
-						readable = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
-						constant = "HEAD_TO_NORTHWATCH_HOLD_AS_YOU_PASS_THE_MAIN",
-						export = true,
-						text = {
-							en = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "前往北卫军要塞。穿过大门时向左看，你会看到一个马厩，屋顶上有个箱子。绕到右侧上方，跳到马厩后面的墙上。到了那里你就可以跳到屋顶，打开箱子拿到符文。打开这个箱子需要 80 点开锁技能。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
 					-- ["coord"] = { , THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
@@ -4677,7 +4490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 152608 },	-- Kolkars' Booty
 					},
 					-- #endif
-					["description"] = "~L.CONTAINS_RANDOM_LOW_LEVEL_GREENS",
+					["description"] = "Contains random low level greens.",
 					["coords"] = {
 						{ 43.0, 23.5, THE_BARRENS },
 						{ 52.8, 41.8, THE_BARRENS },
@@ -4958,7 +4771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 61.8, 38.2, THE_BARRENS },
 						-- #endif
 					},
-					["description"] = "~L.TRAVELS_ON_THE_ROAD_BETWEEN_RATCHET_AND_THE",
+					["description"] = "Travels on the road between Ratchet and The Crossroads.",
 					["groups"] = {
 						i(4765, {	-- Enamelled Broadsword
 							["isLimited"] = true,
@@ -5246,7 +5059,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(5051, {	-- Dig Rat
 					["coord"] = { 48.8, 84.8, THE_BARRENS },	-- Bael Modan Excavation
 					["cr"] = 3444,	-- Dig Rat
-					["description"] = "~L.ONLY_DROPS_FROM_DIG_RATS_IN_THE_BARRENS"
+					["description"] = "Only drops from Dig Rats in The Barrens."
 				}),
 				i(5020, {	-- Kolkar Booty Key
 					["coords"] = {
@@ -5263,24 +5076,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208765, {	-- Helping Hand (Closed)
 					["provider"] = { "i", 208766 },	-- Helping Hand (Open)
-					["description"] = createLocalizationString({
-						readable = "The hand will open when you ressurect another player.",
-						constant = "THE_HAND_WILL_OPEN_WHEN_YOU_RESSURECT_ANOTHER",
-						export = true,
-						text = {
-							en = "The hand will open when you ressurect another player.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你复活另一名玩家时，这只手会张开。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The hand will open when you ressurect another player.",
 					["coord"] = { 55.6, 27.2, THE_BARRENS },
 					["classes"] = { PRIEST },
 					["crs"] = {
@@ -5352,31 +5148,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
-					["description"] = "~L.CAN_DROP_FROM_ANY_MOB_IN_THE_BARRENS",
+					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
-					["description"] = "~L.CAN_DROP_FROM_ANY_MOB_IN_THE_BARRENS",
+					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208743, {	-- Soul of Greed
-					["description"] = createLocalizationString({
-						readable = "Use Drain Soul on him.",
-						constant = "USE_DRAIN_SOUL_ON_HIM",
-						export = true,
-						text = {
-							en = "Use Drain Soul on him.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对他使用吸取灵魂。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Drain Soul on him.",
 					["coord"] = { 56.2, 8.6, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },

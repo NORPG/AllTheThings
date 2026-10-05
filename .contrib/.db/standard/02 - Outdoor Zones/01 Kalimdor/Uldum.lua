@@ -54,24 +54,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(851, {	-- Horned Lizard (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
-							constant = "CAN_BE_FOUND_IN_MOST_PLACES_AROUND_ULDUM_THE",
-							export = true,
-							text = {
-								en = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可以在奥丹姆的大部分地方找到，所列坐标表示该宠物最常出现的较大范围。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
 						["coords"] = {
 							{ 30.6, 15.0, ULDUM },	-- Oasis of Vir'sar
 							{ 50.4, 21.8, ULDUM },	-- Sahket Wastes
@@ -81,7 +64,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(545, {	-- Leopard Scorpid (PET!)
-						["description"] = "~L.CAN_BE_FOUND_IN_MOST_PLACES_AROUND_ULDUM_THE",
+						["description"] = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
 						["coords"] = {
 							{ 30.6, 15.0, ULDUM },	-- Oasis of Vir'sar
 							{ 50.4, 21.8, ULDUM },	-- Sahket Wastes
@@ -91,24 +74,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(543, {	-- Locust (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found around Vir'naal river.",
-							constant = "FOUND_AROUND_VIR_NAAL_RIVER",
-							export = true,
-							text = {
-								en = "Found around Vir'naal river.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在维尔纳尔河周围可找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found around Vir'naal river.",
 						["coords"] = {
 							{ 58.0, 76.8, ULDUM },	-- Western Vir'naal River Delta
 							{ 57.3, 50.8, ULDUM },	-- Vir'naal River
@@ -117,24 +83,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(542, {	-- Mac Frog (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found around Vir'nal river.",
-							constant = "FOUND_AROUND_VIR_NAL_RIVER",
-							export = true,
-							text = {
-								en = "Found around Vir'nal river.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在维尔纳尔河周围找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found around Vir'nal river.",
 						["coords"] = {
 							{ 66.0, 72.4, ULDUM },	-- Eastern Vir'naal River Delta
 							{ 58.0, 76.8, ULDUM },	-- Western Vir'naal River Delta
@@ -144,7 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(544, {	-- Oasis Moth (PET!)
-						["description"] = "~L.FOUND_AROUND_VIR_NAL_RIVER",
+						["description"] = "Found around Vir'nal river.",
 						["coords"] = {
 							{ 58.0, 76.8, ULDUM },	-- Western Vir'naal River Delta
 							{ 57.3, 50.8, ULDUM },	-- Vir'naal River
@@ -153,24 +102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(511, {	-- Sidewinder (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found in most places around Uldum and Silithus, the listed coordinates indicates the wider areas where the pet is most common.",
-							constant = "CAN_BE_FOUND_IN_MOST_PLACES_AROUND_ULDUM_AND",
-							export = true,
-							text = {
-								en = "Can be found in most places around Uldum and Silithus, the listed coordinates indicates the wider areas where the pet is most common.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在奥丹姆和希利苏斯周边的大多数地方找到，所列坐标表示该宠物最常出现的较大范围。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found in most places around Uldum and Silithus, the listed coordinates indicates the wider areas where the pet is most common.",
 						["coords"] = {
 							{ 48.0, 37.0, SILITHUS },	-- West of Cenarion Hold
 							{ 36.7, 77.7, SILITHUS },	-- The Scarab Wall
@@ -182,7 +114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 					pet(546, {	-- Tol'vir Scarab (PET!)
-						["description"] = "~L.CAN_BE_FOUND_IN_MOST_PLACES_AROUND_ULDUM_THE",
+						["description"] = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
 						["coords"] = {
 							{ 32.0, 62.7, ULDUM },	-- Ruins of Ammon
 							{ 39.45, 41.45, ULDUM },	-- Orsis
@@ -317,24 +249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(MINING, {
-					["description"] = createLocalizationString({
-						readable = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
-						constant = "ELEMENTIUM_VEINS_0_05_DROP_RATE_AND_RICH",
-						export = true,
-						text = {
-							en = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "源质矿脉（0.05% 掉率）和富源质矿脉（0.08% 掉率）需要 475-500 点采矿技能。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
 					["groups"] = {
 						i(67282),	-- Elementium Geode (PET!)
 					},
@@ -473,24 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27517, {	-- Be Prepared
-					["description"] = createLocalizationString({
-						readable = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
-						constant = "THIS_QUEST_CAN_BE_ACCEPTED_FROM_A_DECREPIT",
-						export = true,
-						text = {
-							en = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务可以从破损的骨骼或从受折磨的盗墓贼身上拾取的一截绳索处接取。此版本的任务在你一进入群星之厅时就可以接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
 					["sourceQuest"] = 27196,	-- On to Something
 					["provider"] = { "o", 205540 },	-- Decrepit Skeleton
 					["coord"] = { 65.1, 33.8, ULDUM },
@@ -501,24 +399,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28602, {	-- Be Prepared
-					["description"] = createLocalizationString({
-						readable = "This version of the quest will be offered if you have completed Lessons From the Past.",
-						constant = "THIS_VERSION_OF_THE_QUEST_WILL_BE_OFFERED_IF",
-						export = true,
-						text = {
-							en = "This version of the quest will be offered if you have completed Lessons From the Past.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你已完成往昔的教训，就会提供此版本的任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
 					["sourceQuests"] = {
 						27196,	-- On to Something
 						27541,	-- Lessons From the Past
@@ -644,24 +525,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27940, {	-- Dirty Birds
-					["description"] = createLocalizationString({
-						readable = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier.",
-						constant = "THIS_QUEST_IS_AUTO_ACCEPTED_WHEN_YOU_KILL_A",
-						export = true,
-						text = {
-							en = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在接受了“沙漠之狐”或“为毛皮商帮忙”后，击杀染病的秃鹫即可自动接受此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier.",
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 					["qg"] = 47202,	-- Diseased Vulture
 					["coord"] = { 43.5, 70.5, ULDUM },	-- Cradle of the Ancients
@@ -686,24 +550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27187, {	-- Do the World a Favor
-					["description"] = createLocalizationString({
-						readable = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work.",
-						constant = "THIS_QUEST_IS_AUTO_ACCEPTED_WHEN_YOU_KILL_A_2",
-						export = true,
-						text = {
-							en = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在接受“奇怪的圆盘”或“实地考察”后，击杀疥癣土狼即可自动接受此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work.",
 					["sourceQuest"] = 27141,	-- Harrison Jones
 					["qg"] = 45202,	-- Mangy Hyena
 					["coord"] = { 64.0, 30.0, ULDUM },	-- Obelisk of the Stars
@@ -812,24 +659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28267, {	-- Firing Squad
 					-- #if AFTER 9.2.0
-					["description"] = createLocalizationString({
-						readable = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly northwest to Ahn'Qiraj and back.",
-						constant = "IF_HARRISON_JONES_DOES_NOT_SPAWN_AFTER_THE",
-						export = true,
-						text = {
-							en = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly northwest to Ahn'Qiraj and back.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果过场动画后哈里森·琼斯没有刷新，你必须离开区域再重新进入。可以登出再登录，或者向西北飞到安其拉再飞回来。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly northwest to Ahn'Qiraj and back.",
 					-- #endif
 					["sourceQuests"] = {
 						28195,	-- Sending a Message
@@ -977,24 +807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(27627, {	-- Just a Fancy Cockroach
-					["description"] = createLocalizationString({
-						readable = "This quest is auto-accepted when you kill any color Scarab after completing Tipping the Balance.",
-						constant = "THIS_QUEST_IS_AUTO_ACCEPTED_WHEN_YOU_KILL_ANY",
-						export = true,
-						text = {
-							en = "This quest is auto-accepted when you kill any color Scarab after completing Tipping the Balance.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成“打破平衡”后，击杀任意颜色的甲虫即可自动接受此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is auto-accepted when you kill any color Scarab after completing Tipping the Balance.",
 					["sourceQuest"] = 27431,	-- Tipping the Balance
 					["coord"] = { 64.4, 29.6, ULDUM },
 					["groups"] = {
@@ -1157,24 +970,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 46136,	-- Vizier Tanotep
 				}),
 				q(27196, {	-- On to Something
-					["description"] = createLocalizationString({
-						readable = "Warning: Jumping after Harrison Jones DOES NOT give you any slow fall effects. Mount up and fly down after him.",
-						constant = "WARNING_JUMPING_AFTER_HARRISON_JONES_DOES_NOT",
-						export = true,
-						text = {
-							en = "Warning: Jumping after Harrison Jones DOES NOT give you any slow fall effects. Mount up and fly down after him.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "警告：跟随哈里森·琼斯跳下并不会给你任何缓落效果。请召唤坐骑并跟着他飞下去。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Warning: Jumping after Harrison Jones DOES NOT give you any slow fall effects. Mount up and fly down after him.",
 					["sourceQuests"] = {
 						27176,	-- A Strange Disc
 						27179,	-- Field Work	-- first pass: did this first. Do "A Strange Disc" first next time
@@ -1290,24 +1086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28402, {	-- Schnottz So Fast
 					-- #if AFTER 9.2.0
-					["description"] = createLocalizationString({
-						readable = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly out of Chamber of the Moon and back.",
-						constant = "IF_HARRISON_JONES_DOES_NOT_SPAWN_AFTER_THE_2",
-						export = true,
-						text = {
-							en = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly out of Chamber of the Moon and back.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果过场动画后哈里森·琼斯没有刷新，你必须离开区域再重新进入。可以登出再登录，或者飞出月亮之室再飞回来。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly out of Chamber of the Moon and back.",
 					-- #endif
 					["sourceQuest"] = 28367,	-- Shroud of the Makers
 					["qg"] = 48186,	-- Harrison Jones
@@ -1710,24 +1489,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.5, 28.0, ULDUM },
 				}),
 				q(27922, {	-- Traitors!
-					["description"] = createLocalizationString({
-						readable = "You are meant to get up on the roof by using your own flyng mount.",
-						constant = "YOU_ARE_MEANT_TO_GET_UP_ON_THE_ROOF_BY_USING",
-						export = true,
-						text = {
-							en = "You are meant to get up on the roof by using your own flyng mount.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要使用自己的飞行坐骑上到屋顶。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You are meant to get up on the roof by using your own flyng mount.",
 					["sourceQuest"] = 27003,	-- Easy Money (tanaris)
 					["qg"] = 46872,	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, ULDUM },
@@ -1845,24 +1607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50409, {	-- Mysterious Camel Figurine
-					["description"] = createLocalizationString({
-						readable = "If you're lucky enough to find this Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
-						constant = "IF_YOU_RE_LUCKY_ENOUGH_TO_FIND_THIS_MYSTERIOUS",
-						export = true,
-						text = {
-							en = "If you're lucky enough to find this Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你足够幸运找到这个神秘骆驼雕像，点击它就会把你传送到菲拉斯的蒸汽温泉，在那里你可以击败多姆斯以获得稀有坐骑灰色骑乘骆驼。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you're lucky enough to find this Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
 					["coords"] = {
 						{ 25.59, 65.89, ULDUM },
 						{ 29.85, 20.45, ULDUM },
@@ -1892,24 +1637,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50410, {	-- Mysterious Camel Figurine
-					["description"] = createLocalizationString({
-						readable = "Fake Camel!",
-						constant = "FAKE_CAMEL",
-						export = true,
-						text = {
-							en = "Fake Camel!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "假骆驼！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Fake Camel!",
 				}),
 			}),
 			n(VENDORS, {
@@ -1933,7 +1661,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(62445),	-- Sash of Prophecy
 							i(62440),	-- Red Rock Band
 							i(62369, {	-- Arcanum of the Ramkahen
-								["description"] = "~L.THIS_VERSION_IS_ONLY_VISIBLE_ON_THE_VENDOR_WHEN",
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),

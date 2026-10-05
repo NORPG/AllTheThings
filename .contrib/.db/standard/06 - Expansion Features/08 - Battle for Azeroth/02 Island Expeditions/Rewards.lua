@@ -5,24 +5,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ISLAND_EXPEDITIONS, {
 		n(SCENARIO_COMPLETION, {
-			["description"] = createLocalizationString({
-				readable = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
-				constant = "THESE_ARE_THE_RANDOM_REWARDS_YOU_CAN_RECEIVE_BY",
-				export = true,
-				text = {
-					en = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些是你完成海岛探险或从商人处购买打捞箱时可以获得的随机奖励。据估计，获胜会提高你获得奖励的几率。\n\n如果你获得了这里没有列出的物品，请截图并提交到我们的 Discord。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
 			["groups"] = bubbleDown({["modID"] = 0}, {
 				i(173950, {	-- Crestfall Salvage
 					["modID"] = 14,
@@ -660,99 +643,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 				filter(MISC, {
 					i(163611, {	-- Seafarer's Coin Pouch
-						["description"] = createLocalizationString({
-							readable = "Contains roughly 1-4 dubloons, more if you have the research.",
-							constant = "CONTAINS_ROUGHLY_1_4_DUBLOONS_MORE_IF_YOU_HAVE",
-							export = true,
-							text = {
-								en = "Contains roughly 1-4 dubloons, more if you have the research.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "内含大约 1-4 枚达布隆币，如果你已完成研究则更多。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains roughly 1-4 dubloons, more if you have the research.",
 						["groups"] = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163612, {	-- Wayfinder's Satchel
-						["description"] = createLocalizationString({
-							readable = "Contains roughly 5-8 dubloons, more if you have the research.",
-							constant = "CONTAINS_ROUGHLY_5_8_DUBLOONS_MORE_IF_YOU_HAVE",
-							export = true,
-							text = {
-								en = "Contains roughly 5-8 dubloons, more if you have the research.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "内含大约 5-8 枚达布隆币，如果你已完成研究则更多。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains roughly 5-8 dubloons, more if you have the research.",
 						["groups"] = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163613, {	-- Sack of Plunder
-						["description"] = createLocalizationString({
-							readable = "Contains roughly 9-12 dubloons, more if you have the research.",
-							constant = "CONTAINS_ROUGHLY_9_12_DUBLOONS_MORE_IF_YOU_HAVE",
-							export = true,
-							text = {
-								en = "Contains roughly 9-12 dubloons, more if you have the research.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "内含大约 9-12 枚达布隆币，如果你已完成研究则更多。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Contains roughly 9-12 dubloons, more if you have the research.",
 						["groups"] = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163217, {	-- Azeroth's Tear [Both]
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_MAGNI_BRONZEBEARD_IN",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在希利苏斯交给麦格尼·铜须以获得艾泽拉斯勇士声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
 					}),
 					i(163616, {	-- Dented Coin (A)
-						["description"] = "~L.CFFFF0000TURN_IN_TO_CYRUS_CRESTFALL_IN_BORALUS",
+						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
 					}),
 					i(163614, {	-- Exotic Spices (A)
-						["description"] = "~L.CFFFF0000TURN_IN_TO_XUN_XUN_SWEETFLOWER_IN",
+						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
 					}),
 					i(173947, {	-- Glittering Abyssal Conch (A)
 						["timeline"] = { ADDED_8_3_0 },
@@ -761,110 +676,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(163619, {	-- Golden Beetle (H)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_KRAG_WA_THE_HUGE_IN_NAZMIR",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在纳兹米尔交给巨型克拉格瓦以获得塔兰吉远征军声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
 					}),
 					i(163620, {	-- Island Flotsam (H)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_JANI_IN_DAZAR_ALOR_FOR",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在达萨罗交给贾尼以获得赞达拉帝国声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
 					}),
 					i(163615, {	-- Lost Sea Scroll (A)
-						["description"] = "~L.CFFFF0000TURN_IN_TO_BROTHER_PIKE_IN_STORMSONG",
+						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 					}),
 					i(163617, {	-- Rusted Alliance Insignia (A)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_VINDICATOR_JAELAANA_IN",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在伯拉勒斯交给守备官迦拉娜以获得第七军团声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
 					}),
 					i(163621, {	-- Rusted Horde Insignia (H)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_RANSA_GREYFEATHER_IN",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在祖达萨交给兰莎·灰羽以获得荣耀战团声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
 					}),
 					i(163618, {	-- Shimmering Shell (H)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_HOARDER_JENA_IN_VOL_DUN_FOR",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在沃顿交给囤积者耶娜以获得沃顿奈声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
 					}),
 					i(166501, {	-- Soggy Page
-						["description"] = "~L.CFFFF0000TURN_IN_TO_COLLECTOR_KOJO_IN_STORMSONG",
+						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
 					}),
 					i(173736),	-- Layered Information Kernel of E-steam
 					i(174521),	-- Transferable Kernel of E-steam
@@ -890,24 +720,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 					i(163488),	-- Weathered Pamphlet
 					i(163487, {	-- Wriggling Mass
-						["description"] = createLocalizationString({
-							readable = "Can be turned in at old or new Silithus.",
-							constant = "CAN_BE_TURNED_IN_AT_OLD_OR_NEW_SILITHUS",
-							export = true,
-							text = {
-								en = "Can be turned in at old or new Silithus.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在旧希利苏斯或新希利苏斯上交。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be turned in at old or new Silithus.",
 					}),
 				}),
 				filter(MOUNTS, {

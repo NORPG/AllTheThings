@@ -15,24 +15,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 61.7, 72.3, ORIBOS },
 				["groups"] = {
 					i(180970, {	-- Teregeer Crystal
-						["description"] = createLocalizationString({
-							readable = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
-							constant = "TAKE_THIS_TO_TA_RUCA_IN_REVENDRETH_CFFFFFFFF_51",
-							export = true,
-							text = {
-								en = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "把它交给雷文德斯的塔鲁卡 |cffffffff(51.1, 78.5)|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
 					}),
 					i(186684, {	-- Memories of Brigther Times
 						["collectible"] = false,
@@ -53,24 +36,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{"pop"}},
 			}),
 			n(182864, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Au'Dara
-				["description"] = createLocalizationString({
-					readable = "Next to the flightmaster.",
-					constant = "NEXT_TO_THE_FLIGHTMASTER",
-					export = true,
-					text = {
-						en = "Next to the flightmaster.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在飞行管理员旁边。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Next to the flightmaster.",
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["groups"] = {
 					i(188174, {	-- Unchained Equipment Cache [PvP S2]
@@ -175,24 +141,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						-- #ENDIF
 					}),
 					i(188198, {	-- Travlers Anima Cache
-						["description"] = createLocalizationString({
-							readable = "This item allows you to transfer anima between characters in a one-to-one ratio.",
-							constant = "THIS_ITEM_ALLOWS_YOU_TO_TRANSFER_ANIMA_BETWEEN",
-							export = true,
-							text = {
-								en = "This item allows you to transfer anima between characters in a one-to-one ratio.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品可以让你在角色之间以 1:1 的比例转移心能。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
 						["cost"] = { { "c", ANIMA, 1000 } },
 						["groups"] = {
 							currency(ANIMA),	-- 1000x Anima
@@ -445,24 +394,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 51.3, 43.0, 1672 },	-- Broker's Den
 				["groups"] = {
 					i(180971, {	-- Aquamarine Cartel Chit
-						["description"] = createLocalizationString({
-							readable = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
-							constant = "TAKE_THIS_TO_ACQUIRER_TA_GOSH_IN_ORIBOS",
-							export = true,
-							text = {
-								en = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "把它交给奥利波斯的收购者塔戈什 |cffffffff(61.7, 72.3)|r。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
 					}),
 				},
 			}),

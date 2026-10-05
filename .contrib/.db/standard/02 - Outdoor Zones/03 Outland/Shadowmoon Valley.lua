@@ -59,24 +59,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(519, {	-- Fel Flame (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
-								constant = "FOUND_AROUND_THE_HAND_OF_GUL_DAN_IN_OLD",
-								export = true,
-								text = {
-									en = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在旧影月谷的古尔丹之手周围，以及塔纳安的邪能区域可找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
 						}),
 					},
 				}),
@@ -145,24 +128,7 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
 						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-						["description"] = createLocalizationString({
-							readable = "Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Crystal Spider (Strike/Brittle Webbing/Leech Life) and Sporeling Sprout (Jab/Leech Seed/Crouch).",
-							constant = "ANTARI_S_PETS_ARE_LEVEL_24_OF_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Crystal Spider (Strike/Brittle Webbing/Leech Life) and Sporeling Sprout (Jab/Leech Seed/Crouch).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "安塔里的宠物是 24 级，按以下连续宠物类别：\n1. 魔法 - 使用龙类（强力）或机械（耐打）宠物。\n2. 元素 - 使用水生（强力）或小动物（耐打）宠物。\n3. 龙类 - 使用人形（强力）或亡灵（耐打）宠物。\n\n若要计入“一次糟糕的大冒险”，请使用雷象毛绒玩具和两只强力宠物组队作战，例如水晶蜘蛛（打击/脆弱蛛网/吸血）和孢子幼芽（刺击/吸血种子/蹲伏）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Crystal Spider (Strike/Brittle Webbing/Leech Life) and Sporeling Sprout (Jab/Leech Seed/Crouch).",
 						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 24,
 						["groups"] = {
@@ -559,24 +525,7 @@ root(ROOTS.Zones, {
 						},
 					},
 					q(10774, {	-- Blood Elf + Giant = ???
-						["description"] = createLocalizationString({
-							readable = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
-							constant = "USE_YOUR_WILDHAMMER_FLARE_GUN_TO_SUMMON_THE",
-							export = true,
-							text = {
-								en = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用你的蛮锤信号枪，即可在征服之路上的任意位置召唤任务发布者。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10773,	-- Breaching the Path
 						["qg"] = 22059,	-- Wildhammer Gryphon Rider
 						["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
@@ -605,7 +554,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(68, 68, 25),
 					}),
 					q(10773, {	-- Breaching the Path (A)
-						["description"] = "~L.USE_YOUR_WILDHAMMER_FLARE_GUN_TO_SUMMON_THE",
+						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10772,	-- The Path of Conquest (A)
 						["qg"] = 22059,	-- Wildhammer Gryphon Rider
 						["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
@@ -624,24 +573,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10751, {	-- Breaching the Path (H)
-						["description"] = createLocalizationString({
-							readable = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
-							constant = "USE_YOUR_KOR_KRON_FLARE_GUN_TO_SUMMON_THE",
-							export = true,
-							text = {
-								en = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用你的库卡隆信号枪，即可在征服之路上的任意位置召唤任务发布者。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10750,	-- The Path of Conquest (H)
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
@@ -744,14 +676,14 @@ root(ROOTS.Zones, {
 					}),
 					{	-- Dissension Amongst the Ranks...
 						["allianceQuestData"] = q(10776, {	-- Dissension Amongst the Ranks... (A)
-							["description"] = "~L.USE_YOUR_WILDHAMMER_FLARE_GUN_TO_SUMMON_THE",
+							["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10775,	-- Tabards of the Illidari (A)
 							["qg"] = 22059,	-- Wildhammer Gryphon Rider
 							["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
 							["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						}),
 						["hordeQuestData"] = q(10769, {	-- Dissension Amongst the Ranks... (H)
-							["description"] = "~L.USE_YOUR_KOR_KRON_FLARE_GUN_TO_SUMMON_THE",
+							["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10768,	-- Tabards of the Illidari (H)
 							["qg"] = 21998,	-- Kor'kron Wind Rider
 							["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
@@ -822,24 +754,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Gorefiend's Truncheon
 								["provider"] = { "i", 30800 },	-- Gorefiend's Truncheon
-								["description"] = createLocalizationString({
-									readable = "The riders travel along the road counter clockwise, so travel clockwise to encounter them more quickly.",
-									constant = "THE_RIDERS_TRAVEL_ALONG_THE_ROAD_COUNTER",
-									export = true,
-									text = {
-										en = "The riders travel along the road counter clockwise, so travel clockwise to encounter them more quickly.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "骑手们沿道路逆时针行进，所以顺时针前进能更快遇到他们。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "The riders travel along the road counter clockwise, so travel clockwise to encounter them more quickly.",
 								["coord"] = { 55.4, 57.2, SHADOWMOON_VALLEY },
 								["cr"] = 21784,	-- Ghostrider of Karabor
 							}),
@@ -897,24 +812,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10451, {	-- Escape from Coilskar Cistern
-						["description"] = createLocalizationString({
-							readable = "Questgiver only becomes interactable after you kill Keeper of the Cistern at the back of the cave.",
-							constant = "QUESTGIVER_ONLY_BECOMES_INTERACTABLE_AFTER_YOU",
-							export = true,
-							text = {
-								en = "Questgiver only becomes interactable after you kill Keeper of the Cistern at the back of the cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "只有在杀死洞穴深处的蓄水池守护者之后，任务给予者才会变为可交互。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Questgiver only becomes interactable after you kill Keeper of the Cistern at the back of the cave.",
 						["qg"] = 21027,	-- Earthmender Wilda
 						["coord"] = { 52.1, 18.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -1497,14 +1395,14 @@ root(ROOTS.Zones, {
 					}),
 					{	-- Tabards of the Illidari
 						["allianceQuestData"] = q(10775, {	-- Tabards of the Illidari (A)
-							["description"] = "~L.USE_YOUR_WILDHAMMER_FLARE_GUN_TO_SUMMON_THE",
+							["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10774,	-- Blood Elf + Giant = ???
 							["qg"] = 22059,	-- Wildhammer Gryphon Rider
 							["qi"] = 31310,	-- Wildhammer Flare Gun (Provided)
 							["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						}),
 						["hordeQuestData"] = q(10768, {	-- Tabards of the Illidari (H)
-							["description"] = "~L.USE_YOUR_KOR_KRON_FLARE_GUN_TO_SUMMON_THE",
+							["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 							["sourceQuest"] = 10765,	-- When Worlds Collide
 							["qg"] = 21998,	-- Kor'kron Wind Rider
 							["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
@@ -2375,7 +2273,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10765, {	-- When Worlds Collide...
-						["description"] = "~L.USE_YOUR_KOR_KRON_FLARE_GUN_TO_SUMMON_THE",
+						["description"] = "Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["sourceQuest"] = 10751,	-- Breaching the Path (H)
 						["qg"] = 21998,	-- Kor'kron Wind Rider
 						["qi"] = 31108,	-- Kor'kron Flare Gun (Provided)
@@ -2771,24 +2669,7 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(240622, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Warden's Scroll Case
-						["description"] = createLocalizationString({
-							readable = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
-							constant = "LOOT_THE_WARDEN_S_SCROLL_CASE_INSIDE_THE_WARDEN",
-							export = true,
-							text = {
-								en = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "拾取守望者牢笼（地下）内的守望者卷轴匣。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
 						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
 						["modelScale"] = .5,
 						["groups"] = {

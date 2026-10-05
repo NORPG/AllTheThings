@@ -11,24 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(REWARDS, {
 			i(183699, {	-- Exquisite Ingredients
-				["description"] = createLocalizationString({
-					readable = "Only Obtainable from Theotar Soulbind.",
-					constant = "ONLY_OBTAINABLE_FROM_THEOTAR_SOULBIND",
-					export = true,
-					text = {
-						en = "Only Obtainable from Theotar Soulbind.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅可从西奥塔尔的灵魂羁绊获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Only Obtainable from Theotar Soulbind.",
 			}),
 		}),
 		n(VENDORS, {
@@ -997,24 +980,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					}),
 					i(245501, {	-- Venthyr Tome of Unforgiven Sins
 						-- ["minReputation"] = { },	-- renown 65
-						["description"] = createLocalizationString({
-							readable = "Requires Renown 65",
-							constant = "REQUIRES_RENOWN_65",
-							export = true,
-							text = {
-								en = "Requires Renown 65",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要名望 65",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires Renown 65",
 						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", ANIMA, 1500 } },
 					}),

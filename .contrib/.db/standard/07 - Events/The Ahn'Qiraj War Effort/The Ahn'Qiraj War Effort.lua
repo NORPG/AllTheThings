@@ -41,24 +41,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 				["groups"] = {
 					q(8811, {	-- One Commendation Signet (1/2) [Stormwind]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Stormwind",
-							constant = "GRANTS_5_REPUTATION_WITH_STORMWIND",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Stormwind",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使暴风城的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Stormwind",
 						-- #endif
 						["qgs"] = {
 							15766,	-- Officer Maloof <Stormwind Commendations> [SW]
@@ -74,7 +57,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8830, {	-- One Commendation Signet (2/2) [Stormwind]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_STORMWIND",
+						["description"] = "Grants 5 reputation with Stormwind",
 						-- #endif
 						["sourceQuest"] = 8811,	-- One Commendation Signet (1/2) [Stormwind]
 						["qgs"] = {
@@ -91,24 +74,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8812, {	-- One Commendation Signet (1/2) [Ironforge]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Ironforge",
-							constant = "GRANTS_5_REPUTATION_WITH_IRONFORGE",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Ironforge",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使铁炉堡的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Ironforge",
 						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Ironbeard <Ironforge Commendations> [IF]
@@ -124,7 +90,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8834, {	-- One Commendation Signet (2/2) [Ironforge]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_IRONFORGE",
+						["description"] = "Grants 5 reputation with Ironforge",
 						-- #endif
 						["sourceQuest"] = 8812,	-- One Commendation Signet (1/2) [Ironforge]
 						["qgs"] = {
@@ -141,24 +107,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8813, {	-- One Commendation Signet (1/2) [Darnassus]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Darnassus",
-							constant = "GRANTS_5_REPUTATION_WITH_DARNASSUS",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Darnassus",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使达纳苏斯的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Darnassus",
 						-- #endif
 						["qgs"] = {
 							15762,	-- Officer Lunalight <Darnassus Commendations> [Darn]
@@ -174,7 +123,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8836, {	-- One Commendation Signet (2/2) [Darnassus]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_DARNASSUS",
+						["description"] = "Grants 5 reputation with Darnassus",
 						-- #endif
 						["sourceQuest"] = 8813,	-- One Commendation Signet (1/2) [Darnassus]
 						["qgs"] = {
@@ -191,24 +140,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8814, {	-- One Commendation Signet (1/2) [Gnomeregan]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Gnomeregan",
-							constant = "GRANTS_5_REPUTATION_WITH_GNOMEREGAN",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Gnomeregan",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使诺莫瑞根的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Gnomeregan",
 						-- #endif
 						["qgs"] = {
 							15733,	-- Gnomeregan Commendation Officer [IF]
@@ -224,7 +156,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8838, {	-- One Commendation Signet (2/2) [Gnomeregan]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_GNOMEREGAN",
+						["description"] = "Grants 5 reputation with Gnomeregan",
 						-- #endif
 						["sourceQuest"] = 8814,	-- One Commendation Signet (1/2) [Gnomeregan]
 						["qgs"] = {
@@ -241,24 +173,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8819, {	-- Ten Commendation Signets (1/2) [Stormwind]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Stormwind",
-							constant = "GRANTS_150_REPUTATION_WITH_STORMWIND",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Stormwind",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使暴风城的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Stormwind",
 						-- #endif
 						["qgs"] = {
 							15766,	-- Officer Maloof <Stormwind Commendations> [SW]
@@ -274,7 +189,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8831, {	-- Ten Commendation Signets (2/2) [Stormwind]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_STORMWIND",
+						["description"] = "Grants 150 reputation with Stormwind",
 						-- #endif
 						["sourceQuest"] = 8819,	-- Ten Commendation Signets (1/2) [Stormwind]
 						["qgs"] = {
@@ -291,24 +206,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8820, {	-- Ten Commendation Signets (1/2) [Ironforge]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Ironforge",
-							constant = "GRANTS_150_REPUTATION_WITH_IRONFORGE",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Ironforge",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使铁炉堡的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Ironforge",
 						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Ironbeard <Ironforge Commendations> [IF]
@@ -324,7 +222,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8835, {	-- Ten Commendation Signets (2/2) [Ironforge]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_IRONFORGE",
+						["description"] = "Grants 150 reputation with Ironforge",
 						-- #endif
 						["sourceQuest"] = 8820,	-- Ten Commendation Signets (1/2) [Ironforge]
 						["qgs"] = {
@@ -341,24 +239,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8821, {	-- Ten Commendation Signets (1/2) [Darnassus]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Darnassus",
-							constant = "GRANTS_150_REPUTATION_WITH_DARNASSUS",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Darnassus",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使达纳苏斯的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Darnassus",
 						-- #endif
 						["qgs"] = {
 							15762,	-- Officer Lunalight <Darnassus Commendations> [Darn]
@@ -374,7 +255,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8837, {	-- Ten Commendation Signets (2/2) [Darnassus]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_DARNASSUS",
+						["description"] = "Grants 150 reputation with Darnassus",
 						-- #endif
 						["sourceQuest"] = 8821,	-- Ten Commendation Signets (1/2) [Darnassus]
 						["qgs"] = {
@@ -391,24 +272,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8822, {	-- Ten Commendation Signets (1/2) [Gnomeregan]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Gnomeregan",
-							constant = "GRANTS_150_REPUTATION_WITH_GNOMEREGAN",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Gnomeregan",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使诺莫瑞根的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Gnomeregan",
 						-- #endif
 						["qgs"] = {
 							15733,	-- Gnomeregan Commendation Officer [IF]
@@ -424,7 +288,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8839, {	-- Ten Commendation Signets (2/2) [Gnomeregan]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_GNOMEREGAN",
+						["description"] = "Grants 150 reputation with Gnomeregan",
 						-- #endif
 						["sourceQuest"] = 8822,	-- Ten Commendation Signets (1/2) [Gnomeregan]
 						["qgs"] = {
@@ -859,24 +723,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 				["groups"] = {
 					q(8815, {	-- One Commendation Signet (1/2) [Orgrimmar]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Orgrimmar",
-							constant = "GRANTS_5_REPUTATION_WITH_ORGRIMMAR",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Orgrimmar",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使奥格瑞玛的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Orgrimmar",
 						-- #endif
 						["qgs"] = {
 							15765,	-- Officer Redblade <Orgrimmar Commendations> [ORG]
@@ -892,7 +739,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8840, {	-- One Commendation Signet (2/2) [Orgrimmar]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_ORGRIMMAR",
+						["description"] = "Grants 5 reputation with Orgrimmar",
 						-- #endif
 						["sourceQuest"] = 8815,	-- One Commendation Signet (1/2) [Orgrimmar]
 						["qgs"] = {
@@ -909,24 +756,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8816, {	-- One Commendation Signet (1/2) [Undercity]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Undercity",
-							constant = "GRANTS_5_REPUTATION_WITH_UNDERCITY",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Undercity",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使幽暗城的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Undercity",
 						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Gothena <Undercity Commendations> [UC]
@@ -942,7 +772,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8832, {	-- One Commendation Signet (2/2) [Undercity]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_UNDERCITY",
+						["description"] = "Grants 5 reputation with Undercity",
 						-- #endif
 						["sourceQuest"] = 8816,	-- One Commendation Signet (1/2) [Undercity]
 						["qgs"] = {
@@ -959,24 +789,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8817, {	-- One Commendation Signet (1/2) [Thunder Bluff]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Thunder Bluff",
-							constant = "GRANTS_5_REPUTATION_WITH_THUNDER_BLUFF",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Thunder Bluff",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使雷霆崖的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Thunder Bluff",
 						-- #endif
 						["qgs"] = {
 							15767,	-- Officer Thunderstrider <Thunder Bluff Commendations> [TB]
@@ -992,7 +805,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8842, {	-- One Commendation Signet (2/2) [Thunder Bluff]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_THUNDER_BLUFF",
+						["description"] = "Grants 5 reputation with Thunder Bluff",
 						-- #endif
 						["sourceQuest"] = 8817,	-- One Commendation Signet (1/2) [Thunder Bluff]
 						["qgs"] = {
@@ -1009,24 +822,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8818, {	-- One Commendation Signet (1/2) [Darkspear]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 5 reputation with Darkspear",
-							constant = "GRANTS_5_REPUTATION_WITH_DARKSPEAR",
-							export = true,
-							text = {
-								en = "Grants 5 reputation with Darkspear",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使暗矛的声望提高 5 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 5 reputation with Darkspear",
 						-- #endif
 						["qgs"] = {
 							15733,	-- Darkspear Commendation Officer [ORG]
@@ -1042,7 +838,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8844, {	-- One Commendation Signet (2/2) [Darkspear]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_5_REPUTATION_WITH_DARKSPEAR",
+						["description"] = "Grants 5 reputation with Darkspear",
 						-- #endif
 						["sourceQuest"] = 8818,	-- One Commendation Signet (1/2) [Darkspear]
 						["qgs"] = {
@@ -1059,24 +855,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8823, {	-- Ten Commendation Signets (1/2) [Orgrimmar]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Orgrimmar",
-							constant = "GRANTS_150_REPUTATION_WITH_ORGRIMMAR",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Orgrimmar",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使奥格瑞玛的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Orgrimmar",
 						-- #endif
 						["qgs"] = {
 							15765,	-- Officer Redblade <Orgrimmar Commendations> [ORG]
@@ -1092,7 +871,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8841, {	-- Ten Commendation Signets (2/2) [Orgrimmar]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_ORGRIMMAR",
+						["description"] = "Grants 150 reputation with Orgrimmar",
 						-- #endif
 						["sourceQuest"] = 8823,	-- Ten Commendation Signets (1/2) [Orgrimmar]
 						["qgs"] = {
@@ -1109,24 +888,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8824, {	-- Ten Commendation Signets (1/2) [Undercity]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Undercity",
-							constant = "GRANTS_150_REPUTATION_WITH_UNDERCITY",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Undercity",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使幽暗城的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Undercity",
 						-- #endif
 						["qgs"] = {
 							15764,	-- Officer Gothena <Undercity Commendations> [UC]
@@ -1142,7 +904,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8833, {	-- Ten Commendation Signets (2/2) [Undercity]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_UNDERCITY",
+						["description"] = "Grants 150 reputation with Undercity",
 						-- #endif
 						["sourceQuest"] = 8824,	-- Ten Commendation Signets (1/2) [Undercity]
 						["qgs"] = {
@@ -1159,24 +921,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8825, {	-- Ten Commendation Signets (1/2) [Thunder Bluff]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Thunder Bluff",
-							constant = "GRANTS_150_REPUTATION_WITH_THUNDER_BLUFF",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Thunder Bluff",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使雷霆崖的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Thunder Bluff",
 						-- #endif
 						["qgs"] = {
 							15767,	-- Officer Thunderstrider <Thunder Bluff Commendations> [TB]
@@ -1192,7 +937,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8843, {	-- Ten Commendation Signets (2/2) [Thunder Bluff]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_THUNDER_BLUFF",
+						["description"] = "Grants 150 reputation with Thunder Bluff",
 						-- #endif
 						["sourceQuest"] = 8825,	-- Ten Commendation Signets (1/2) [Thunder Bluff]
 						["qgs"] = {
@@ -1209,24 +954,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8826, {	-- Ten Commendation Signets (1/2) [Darkspear]
 						-- #if BEFORE TBC
-						["description"] = createLocalizationString({
-							readable = "Grants 150 reputation with Darkspear",
-							constant = "GRANTS_150_REPUTATION_WITH_DARKSPEAR",
-							export = true,
-							text = {
-								en = "Grants 150 reputation with Darkspear",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使暗矛的声望提高 150 点",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Grants 150 reputation with Darkspear",
 						-- #endif
 						["qgs"] = {
 							15733,	-- Darkspear Commendation Officer [ORG]
@@ -1242,7 +970,7 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					}),
 					q(8845, {	-- Ten Commendation Signets (2/2) [Darkspear]
 						-- #if BEFORE TBC
-						["description"] = "~L.GRANTS_150_REPUTATION_WITH_DARKSPEAR",
+						["description"] = "Grants 150 reputation with Darkspear",
 						-- #endif
 						["sourceQuest"] = 8826,	-- Ten Commendation Signets (1/2) [Darkspear]
 						["qgs"] = {
@@ -1705,104 +1433,19 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 					["races"] = HORDE_ONLY,
 				}),
 				i(21509, {	-- Ahn'Qiraj War Effort Supplies [Level 10]
-					["description"] = createLocalizationString({
-						readable = "Contains a random assortment of common and uncommon quality items between levels 10-12.",
-						constant = "CONTAINS_A_RANDOM_ASSORTMENT_OF_COMMON_AND",
-						export = true,
-						text = {
-							en = "Contains a random assortment of common and uncommon quality items between levels 10-12.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含等级 10-12 之间的随机普通和优秀品质物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains a random assortment of common and uncommon quality items between levels 10-12.",
 				}),
 				i(21510, {	-- Ahn'Qiraj War Effort Supplies [Level 20]
-					["description"] = createLocalizationString({
-						readable = "Contains a random assortment of common, uncommon, and rare quality items between levels 20-22.",
-						constant = "CONTAINS_A_RANDOM_ASSORTMENT_OF_COMMON_UNCOMMON",
-						export = true,
-						text = {
-							en = "Contains a random assortment of common, uncommon, and rare quality items between levels 20-22.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含等级 20-22 之间的随机普通、优秀和稀有品质物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains a random assortment of common, uncommon, and rare quality items between levels 20-22.",
 				}),
 				i(21511, {	-- Ahn'Qiraj War Effort Supplies [Level 30]
-					["description"] = createLocalizationString({
-						readable = "Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",
-						constant = "CONTAINS_A_RANDOM_ASSORTMENT_OF_COMMON_UNCOMMON_2",
-						export = true,
-						text = {
-							en = "Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含等级 30-32 之间的随机普通、优秀和稀有品质物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",
 				}),
 				i(21512, {	-- Ahn'Qiraj War Effort Supplies [Level 40]
-					["description"] = createLocalizationString({
-						readable = "Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",
-						constant = "CONTAINS_A_RANDOM_ASSORTMENT_OF_COMMON_UNCOMMON_3",
-						export = true,
-						text = {
-							en = "Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含等级 40-42 之间的随机普通、优秀和稀有品质物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",
 				}),
 				i(21513, {	-- Ahn'Qiraj War Effort Supplies [Level 50]
-					["description"] = createLocalizationString({
-						readable = "Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",
-						constant = "CONTAINS_A_RANDOM_ASSORTMENT_OF_COMMON_UNCOMMON_4",
-						export = true,
-						text = {
-							en = "Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "内含等级 50-52 之间的随机普通、优秀和稀有品质物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",
 				}),
 			}),
 		},

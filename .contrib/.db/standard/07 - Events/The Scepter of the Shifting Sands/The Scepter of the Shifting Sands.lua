@@ -141,24 +141,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["qg"] = 15526,	-- Meridith the Mermaiden
 					["qi"] = 21032,	-- Meridith's Love Letter
 					-- #if BEFORE CATA
-					["description"] = createLocalizationString({
-						readable = "You must be on the quest 'Draconic for Dummies' for this quest to be available.",
-						constant = "YOU_MUST_BE_ON_THE_QUEST_DRACONIC_FOR_DUMMIES",
-						export = true,
-						text = {
-							en = "You must be on the quest 'Draconic for Dummies' for this quest to be available.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须处于“龙语傻瓜教程”任务中，此任务才会可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must be on the quest 'Draconic for Dummies' for this quest to be available.",
 					-- #endif
 					["coord"] = { 59.4, 96.0, TANARIS },
 					["lvl"] = 60,
@@ -174,24 +157,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["cr"] = 11583,	-- Nefarian
 						}),
 						i(21142, {	-- From the Desk of Lord Victor Nefarius
-							["description"] = createLocalizationString({
-								readable = "You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",
-								constant = "YOU_GET_THIS_IF_YOU_DON_T_MANAGE_TO_KILL",
-								export = true,
-								text = {
-									en = "You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果你在从瓦拉斯塔兹处接取任务后没能及时击杀奈法利安，就会获得这个。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",
 							["cr"] = 11583,	-- Nefarian
 						}),
 						i(21529),	-- Amulet of Shadow Shielding
@@ -218,24 +184,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8598, {	-- rAnS0m
-					["description"] = createLocalizationString({
-						readable = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
-						constant = "THE_DIRT_IS_ON_AN_ISLAND_WAAAAAAY_SOUTH_OF",
-						export = true,
-						text = {
-							en = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "泥土在塔纳利斯以南很远很远的一座岛上。你需要与梅里迪斯对话获得增益，才能游得足够快抵达该岛而不至于因疲劳而死。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
 					["sourceQuest"] = 8599,	-- Love Song for Narain
 					["providers"] = {
 						{ "o", 180652 },	-- Freshly Dug Dirt
@@ -343,24 +292,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8736, {	-- The Nightmare Manifests
-					["description"] = createLocalizationString({
-						readable = "You do NOT want to kill Eranikus or allow Remulos to die.",
-						constant = "YOU_DO_NOT_WANT_TO_KILL_ERANIKUS_OR_ALLOW",
-						export = true,
-						text = {
-							en = "You do NOT want to kill Eranikus or allow Remulos to die.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你千万不要击杀伊兰尼库斯，也不要让雷姆洛斯死亡。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You do NOT want to kill Eranikus or allow Remulos to die.",
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.18, 41.79, MOONGLADE },
@@ -390,24 +322,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						}),
 						objective(2, {	-- 0/1 Fragment of the Nightmare's Corruption (Duskwood)
 							["provider"] = { "i", 21149 },	-- Fragment of the Nightmare's Corruption
-							["description"] = createLocalizationString({
-								readable = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
-								constant = "IT_IS_RECOMMENDED_THAT_YOU_BRING_AT_LEAST_30",
-								export = true,
-								text = {
-									en = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "建议至少带上 30 名玩家，而且他们应该是有经验的团队副本玩家。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
 							["coord"] = { 48.0, 33.0, DUSKWOOD },
 							["cr"] = 15625,	-- Twilight Corrupter
 						}),
@@ -491,24 +406,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 								{ "i",  21137 },	-- Blue Scepter Shard
 								{ "o", 180669 },	-- Swirling Maelstrom
 							},
-							["description"] = createLocalizationString({
-								readable = "This summons a 40 man raid boss.",
-								constant = "THIS_SUMMONS_A_40_MAN_RAID_BOSS",
-								export = true,
-								text = {
-									en = "This summons a 40 man raid boss.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "这会召唤一个 40 人团队首领。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This summons a 40 man raid boss.",
 							["cost"] = { { "i", 21136, 1 } },	-- Arcanite Buoy
 							["coord"] = { 65.0, 55.0, AZSHARA },
 							["cr"] = 15571,	-- Maws
@@ -547,24 +445,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 				}),
 				q(8286, {	-- What Tomorrow Brings
-					["description"] = createLocalizationString({
-						readable = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
-						constant = "THIS_QUEST_LINE_IS_A_PREREQUISITE_FOR_THE_AHN",
-						export = true,
-						text = {
-							en = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务线是用于打开安其拉之门的安其拉权杖任务线的前置条件。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["lvl"] = 60,
@@ -572,24 +453,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 			}),
 			n(REWARDS, {
 				i(20402, {	-- Agent of Nozdormu
-					["description"] = createLocalizationString({
-						readable = "A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",
-						constant = "A_FRIENDLY_PLAYER_CAN_USE_THEIR_PROXY_OF",
-						export = true,
-						text = {
-							en = "A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "一名友好的玩家可以使用自己的诺兹多姆的代理，为尚未获得授权的玩家授予代理资格，以便收集碎片。哦，真好。享受这份煎熬吧。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",
 					["cost"] = {{ "i", 20403, 1 }},	-- Proxy of Nozdormu
 				}),
 			}),

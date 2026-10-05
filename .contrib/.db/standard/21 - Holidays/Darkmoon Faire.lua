@@ -307,24 +307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		battlepets({
 			pet(1068, {	-- Crow (PET!)
 				["timeline"] = { ADDED_5_1_0 },
-				["description"] = createLocalizationString({
-					readable = "Only found as a secondary pet when battling Darkmoon Glowfly (/att npc:67329)\nDue to its rarity, you should capture any quality pet and use a Flawless Battle-Stone on it.",
-					constant = "ONLY_FOUND_AS_A_SECONDARY_PET_WHEN_BATTLING",
-					export = true,
-					text = {
-						en = "Only found as a secondary pet when battling Darkmoon Glowfly (/att npc:67329)\nDue to its rarity, you should capture any quality pet and use a Flawless Battle-Stone on it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅在与暗月萤光虫（/att npc:67329）对战时作为副宠出现。\n由于它十分稀有，建议你捕获任意品质的它，然后对其使用无瑕战斗石。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Only found as a secondary pet when battling Darkmoon Glowfly (/att npc:67329)\nDue to its rarity, you should capture any quality pet and use a Flawless Battle-Stone on it.",
 			}),
 			pet(1062, {	-- Darkmoon Glowfly (PET!)
 				["timeline"] = { ADDED_5_1_0 },
@@ -348,90 +331,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 		-- #endif
 		n(DROPS, {
-			["description"] = createLocalizationString({
-				readable = "The following can drop from instanced content when a Darkmoon Adventurer's Guide is in your bags or purchased from the auction house.",
-				constant = "THE_FOLLOWING_CAN_DROP_FROM_INSTANCED_CONTENT",
-				export = true,
-				text = {
-					en = "The following can drop from instanced content when a Darkmoon Adventurer's Guide is in your bags or purchased from the auction house.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "当你的背包中有暗月冒险者指南，或从拍卖行购买后，以下物品可以从副本内容中掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "The following can drop from instanced content when a Darkmoon Adventurer's Guide is in your bags or purchased from the auction house.",
 			["provider"] = { "i", 71634 },	-- Darkmoon Adventurer's Guide
 			["timeline"] = { ADDED_4_3_0 },
 			["groups"] = {
 				-- PvE
 				i(71715, {	-- A Treatise on Strategy
-					["description"] = createLocalizationString({
-						readable = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
-						constant = "CAN_DROP_FROM_INSTANCED_PVE_CONTENT_WHEN_A",
-						export = true,
-						text = {
-							en = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你的背包中携带暗月冒险者指南时，可由副本 PvE 内容掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71635, {	-- Imbued Crystal
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVE_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71636, {	-- Monstrous Egg
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVE_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71637, {	-- Mysterious Grimoire
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVE_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71638, {	-- Ornate Weapon
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVE_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71716, {	-- Soothsayer's Runes
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVE_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvE content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 
 				-- PvP
 				i(71951, {	-- Banner of the Fallen
-					["description"] = createLocalizationString({
-						readable = "Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",
-						constant = "CAN_DROP_FROM_INSTANCED_PVP_CONTENT_WHEN_A",
-						export = true,
-						text = {
-							en = "Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你的背包中有暗月冒险者指南时，可能从副本 PvP 内容中掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71952, {	-- Captured Insignia
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVP_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 				i(71953, {	-- Fallen Adventurer's Journal
-					["description"] = "~L.CAN_DROP_FROM_INSTANCED_PVP_CONTENT_WHEN_A",
+					["description"] = "Can drop from instanced PvP content when a Darkmoon Adventurer's Guide is in your bags.",
 				}),
 			},
 		}),
@@ -733,47 +665,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		petbattles({
 			n(67370, {	-- Jeremy Feasel <Master Pet Tamer>
 				["coord"] = { 47.0, 62.75, DARKMOON_ISLAND },
-				["description"] = createLocalizationString({
-					readable = "Jeremy's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-					constant = "JEREMY_S_PETS_ARE_LEVEL_25_OF_EPIC_QUALITY_AND",
-					export = true,
-					text = {
-						en = "Jeremy's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "Jeremy 的宠物都是 25 级、史诗品质，且异常强大，属于以下连续的宠物类型：\n1. 魔法 - 使用龙类（高伤害）或机械（耐打）宠物。\n2. 机械 - 使用元素（高伤害且耐打）宠物。\n3. 野兽 - 使用机械（高伤害）或飞行（耐打）宠物。\n\n要获得“一次了不起的大冒险”的进度，请使用雷象毛绒玩具和两只强力宠物组队作战。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Jeremy's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 				["timeline"] = { ADDED_5_0_4 },
 				["petBattleLvl"] = 25,
 			}),
 			n(85519, {	-- Cristoph VonFeasel <Grand Master Pet Tamer>
 				["coord"] = { 47.3, 62.0, DARKMOON_ISLAND },
-				["description"] = createLocalizationString({
-					readable = "Cristoph's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Beast - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-					constant = "CRISTOPH_S_PETS_ARE_LEVEL_25_OF_LEGENDARY",
-					export = true,
-					text = {
-						en = "Cristoph's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Beast - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "克里斯托夫的宠物为 25 级传说品质，并按以下顺序拥有极强的宠物类型：\n1. 魔法 - 使用龙类（强攻）或机械（耐打）宠物。\n2. 野兽 - 使用机械（强攻）或飞行（耐打）宠物。\n3. 野兽 - 同上。\n\n若要计入“超级大冒险”，请使用雷象毛绒玩偶和两只强力宠物组成的队伍进行战斗。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Cristoph's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Beast - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 				["timeline"] = { ADDED_5_0_4 },
 				["petBattleLvl"] = 25,
 			}),
@@ -863,7 +761,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 15,
 				["groups"] = {
 					i(19298, {	-- Minor Darkmoon Prize
-						["description"] = "~L.CONTAINS_A_LEVEL_15_25_USUALLY_UNCOMMON_QUALITY",
+						["description"] = "Contains a level 15-25 (usually uncommon quality) item.",
 						["timeline"] = { REMOVED_4_3_0 },
 					}),
 				},
@@ -908,7 +806,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["repeatable"] = true,
 				["groups"] = {
 					i(19297, {	-- Lesser Darkmoon Prize
-						["description"] = "~L.CONTAINS_A_LEVEL_25_40_USUALLY_UNCOMMON_QUALITY",
+						["description"] = "Contains a level 25-40 (usually uncommon quality) item.",
 						["timeline"] = { REMOVED_4_3_0 },
 					}),
 				},
@@ -931,7 +829,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["repeatable"] = true,
 				["groups"] = {
 					i(19296, {	-- Greater Darkmoon Prize
-						["description"] = "~L.CONTAINS_A_LEVEL_40_55_USUALLY_UNCOMMON_QUALITY",
+						["description"] = "Contains a level 40-55 (usually uncommon quality) item.",
 						["timeline"] = { REMOVED_4_3_0 },
 					}),
 				},
@@ -2541,24 +2439,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["timeline"] = { ADDED_6_2_0 },
 				["groups"] = {
 					i(127148, {	-- Sila's Secret Stash
-						["description"] = createLocalizationString({
-							readable = "This item contains 100 Darkmoon Faire Tickets.",
-							constant = "THIS_ITEM_CONTAINS_100_DARKMOON_FAIRE_TICKETS",
-							export = true,
-							text = {
-								en = "This item contains 100 Darkmoon Faire Tickets.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品包含 100 张暗月奖券。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item contains 100 Darkmoon Faire Tickets.",
 						["timeline"] = { ADDED_6_2_0 },
 						["groups"] = {
 							DARKMOON_PRIZE_TICKET,
@@ -2633,7 +2514,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(7946, {	-- Spawn of Jubjub
                 ["timeline"] = { ADDED_1_11_1 },
-				["description"] = "~L.YOU_NEED_TO_THROW_DOWN_A_DARK_IRON_ALE_MUG_NEAR",
+				["description"] = "You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",
 				["qg"] = 14871,	-- Morja
 				-- #if AFTER 4.3.0
 				["coord"] = { 55.9, 70.7, DARKMOON_ISLAND },
@@ -3177,48 +3058,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 44.6, 78.9, DARKMOON_ISLAND },	-- Chest
 				-- Danny Donkey: The earliest report of the trinket being shareable is from 9.1.5.
 				-- #if AFTER 9.1.5
-				["description"] = createLocalizationString({
-					readable = "Protip: Disable autoloot before looting this chest, and do not empty it. Everyone can loot their trinket this way.",
-					constant = "PROTIP_DISABLE_AUTOLOOT_BEFORE_LOOTING_THIS",
-					export = true,
-					text = {
-						en = "Protip: Disable autoloot before looting this chest, and do not empty it. Everyone can loot their trinket this way.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "小提示：在拾取这个宝箱前关闭自动拾取，并且不要把它拾空。这样每个人都能拾取自己的饰品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Protip: Disable autoloot before looting this chest, and do not empty it. Everyone can loot their trinket this way.",
 				-- #endif
 				["groups"] = {
 					i(74034, {	-- Pit Fighter
 						["timeline"] = { ADDED_4_3_0 },
 					}),
 					i(126949, {	-- Returning Champion
-						["description"] = createLocalizationString({
-							readable = "You need to have completed the Master Pit Fighter quest to loot this from the chest.",
-							constant = "YOU_NEED_TO_HAVE_COMPLETED_THE_MASTER_PIT",
-							export = true,
-							text = {
-								en = "You need to have completed the Master Pit Fighter quest to loot this from the chest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要完成深坑斗士大师任务，才能从宝箱中拾取此物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You need to have completed the Master Pit Fighter quest to loot this from the chest.",
 						["sourceQuest"] = 29761,	-- Master Pit Fighter
 						["timeline"] = { ADDED_6_2_0 },
 					}),
@@ -3241,24 +3088,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			})),
 			n(122899, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, }, {	-- Death Metal Knight
 				["questID"] = 47767,
-				["description"] = createLocalizationString({
-					readable = "Death Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.",
-					constant = "DEATH_METAL_KNIGHT_CAN_BE_KILLED_EVERY_HOUR_ON",
-					export = true,
-					text = {
-						en = "Death Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "死亡金属骑士每小时的第 30 分钟可以击杀一次，但他的稀有掉落每个角色每月只能获得一次。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Death Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.",
 				["coords"] = {
 					{ 65.54, 68.29, DARKMOON_ISLAND },	-- Cave Entrance [Allows it to be shown on meta DMF map]
 					{ 41.43, 42.19, 408 },	-- Fight becomes active
@@ -3268,105 +3098,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					ach(11918),	-- Hey, You're a Rockstar!
 					ach(11921),	-- Mosh Pit
 					ach(11920, {	-- Perfect Performance
-						["description"] = createLocalizationString({
-							readable = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road. This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
-							constant = "FOUR_PEOPLE_FIGHTING_THE_DEATH_METAL_KNIGHT",
-							export = true,
-							text = {
-								en = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road. This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "四名与死亡金属骑士战斗的玩家需要成功执行“巡回演出”中的角色职责。这个成就严格来说不需要组队，但组队协调角色会更容易！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road. This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
 					}),
 					ach(11919, {	-- Taking this Show on the Road
 						crit(37025, {	-- Guitarist
-							["description"] = createLocalizationString({
-								readable = "Get hit by one banshee wave; miss one bolt of light.",
-								constant = "GET_HIT_BY_ONE_BANSHEE_WAVE_MISS_ONE_BOLT_OF",
-								export = true,
-								text = {
-									en = "Get hit by one banshee wave; miss one bolt of light.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "被一波女妖之波击中；漏掉一道光芒。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Get hit by one banshee wave; miss one bolt of light.",
 						}),
 						crit(37026, {	-- Bassist
-							["description"] = createLocalizationString({
-								readable = "Do not get hit by any banshee waves; miss one bolt of light.",
-								constant = "DO_NOT_GET_HIT_BY_ANY_BANSHEE_WAVES_MISS_ONE",
-								export = true,
-								text = {
-									en = "Do not get hit by any banshee waves; miss one bolt of light.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "不要被任何女妖波击中；漏掉一道光明箭矢。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Do not get hit by any banshee waves; miss one bolt of light.",
 						}),
 						crit(37027, {	-- Drummer
-							["description"] = createLocalizationString({
-								readable = "Do not get hit by any banshee waves; catch every bolt of light.",
-								constant = "DO_NOT_GET_HIT_BY_ANY_BANSHEE_WAVES_CATCH_EVERY",
-								export = true,
-								text = {
-									en = "Do not get hit by any banshee waves; catch every bolt of light.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "不要被任何女妖波击中；接住每一道光明箭矢。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Do not get hit by any banshee waves; catch every bolt of light.",
 						}),
 						crit(37028, {	-- Vocals
-							["description"] = createLocalizationString({
-								readable = "Get hit by one banshee wave; catch every bolt of light.",
-								constant = "GET_HIT_BY_ONE_BANSHEE_WAVE_CATCH_EVERY_BOLT_OF",
-								export = true,
-								text = {
-									en = "Get hit by one banshee wave; catch every bolt of light.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "被一波女妖之波击中；接住每一道光芒。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Get hit by one banshee wave; catch every bolt of light.",
 						}),
 					}),
 					i(151265),	-- Blight Boar Microphone (TOY!)
@@ -3392,24 +3137,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["questID"] = 77158,
 				["isDaily"] = true,	-- maybe weekly/monthly?
 				["sourceQuest"] = 76430,	-- Beginning Impositions
-				["description"] = createLocalizationString({
-					readable = "Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",
-					constant = "QUESTION_MADAM_SHADOW_UNTIL_YOU_GET_PUNISHED_1",
-					export = true,
-					text = {
-						en = "Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "不断质问暗影夫人直到你受到惩罚。\n 1) 施放腐蚀术。\n 2) 施放疲劳诅咒\n 3) 施放痛苦\n 4) 哦对了，别忘了跑！\n\n注意：在学习魔典（如果在别处获得）之后，此 NPC 上的任务 ID 将变为不可获得，不过小队同步仍可让你再次与该 NPC 战斗。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",
 				["classes"] = { WARLOCK },
 				["lockCriteria"] = {1,"questID",76747},	-- Grimoire of the Felfrost Imp
 				["DisablePartySync"] = true,
@@ -3422,7 +3150,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		-- #endif
 		n(REWARDS, {
 			i(19422, {	-- Darkmoon Faire Fortune
-				["description"] = "~L.THIS_IS_A_REWARD_FROM_COMPLETING_THE_SAYGE_S",
+				["description"] = "This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.\n\nSayge offers a buff if you answer his questions correctly.\n\n1:1 +10% Damage\n1:2  +25 Magical Resistance\n1:3 +10% Armor\n2:1 +10% Spirit\n2:2 +10% Int\n2:3  +25 Magical Resistance\n3:1 +10% Stamina\n3:2 +10% Strength\n3:3 +10% Agility\n4:1 +10% Int\n4:2 +10% Spirit\n4:3 +10% Armor",
 				["cr"] = 14822,	-- Sayge
 				-- #if AFTER 4.3.0
 				["coord"] = { 53.6, 75.6, DARKMOON_ISLAND },
@@ -3469,24 +3197,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			i(93724, {	-- Darkmoon Game Prize
-				["description"] = createLocalizationString({
-					readable = "Awarded by completing a mini game quest.",
-					constant = "AWARDED_BY_COMPLETING_A_MINI_GAME_QUEST",
-					export = true,
-					text = {
-						en = "Awarded by completing a mini game quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成一个小游戏任务获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded by completing a mini game quest.",
 				["timeline"] = { ADDED_5_2_0 },
 				["groups"] = {
 					i(78340, {	-- Cloak of the Darkmoon Faire
@@ -3542,24 +3253,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(171364, {	-- Darkmoon Top Hat
 						["timeline"] = { ADDED_8_2_5 },
-						["description"] = createLocalizationString({
-							readable = "Does not stack with the 'WHEE'-buff from Darkmoon Faire, and will replace it!",
-							constant = "DOES_NOT_STACK_WITH_THE_WHEE_BUFF_FROM_DARKMOON",
-							export = true,
-							text = {
-								en = "Does not stack with the 'WHEE'-buff from Darkmoon Faire, and will replace it!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "不会与暗月马戏团的“WHEE”增益叠加，并且会替换它！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Does not stack with the 'WHEE'-buff from Darkmoon Faire, and will replace it!",
 					}),
 					i(73765, {	-- Darkmoon Turtle  (PET!)
 						["timeline"] = { ADDED_4_3_0 },
@@ -3574,7 +3268,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 						-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 						-- #if BEFORE 5.5.3
-						["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
+						["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 						-- #endif
 					})),
 				},
@@ -3583,24 +3277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		n(TREASURES, {
 			o(405068, {	-- Forgotten Grimoire
 				["sourceQuest"] = 75539,	-- Some Wicked Things This Way Come
-				["description"] = createLocalizationString({
-					readable = "Should you complete 'Fel Suspicions' (75639) without killing 'Twinkle', this will be available in the Darkmoon Faire Deathmatch.",
-					constant = "SHOULD_YOU_COMPLETE_FEL_SUSPICIONS_75639",
-					export = true,
-					text = {
-						en = "Should you complete 'Fel Suspicions' (75639) without killing 'Twinkle', this will be available in the Darkmoon Faire Deathmatch.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你在未击杀“闪闪”的情况下完成“邪能疑云”（75639），该物品将在暗月马戏团死亡竞赛中开放。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Should you complete 'Fel Suspicions' (75639) without killing 'Twinkle', this will be available in the Darkmoon Faire Deathmatch.",
 				["timeline"] = { ADDED_10_1_5 },
 				["classes"] = { WARLOCK },
 				["coord"] = { 44.8, 78.8, DARKMOON_ISLAND },
@@ -3612,24 +3289,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		n(VENDORS, {
 			n(55072, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Barum <Replica Armor Prizes>
 				["coord"] = { 47.5, 66.3, DARKMOON_ISLAND },
-				["description"] = createLocalizationString({
-					readable = "This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",
-					constant = "THIS_VENDOR_SELLS_ADDITIONAL_ENSEMBLES_WHICH",
-					export = true,
-					text = {
-						en = "This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此商人出售额外的套装，只有完成了原版 T0.5 任务线的玩家才能看到它们。如果你看不到，说明你不满足条件，而且由于该任务线已从游戏中移除，它们再也无法解锁。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",
 				["groups"] = {
 					clWithoutLock(WARRIOR, {	-- Battlegear of Valor
 						darkmoonprizeticket(55, i(78319)),	-- Replica Belt of Valor
@@ -3722,56 +3382,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78242)),	-- Replica Wildheart Vest
 					}),
 					darkmoonprizeticket(75, iensemble(171984, {	-- Ensemble: Battlegear of Valor
-						["description"] = createLocalizationString({
-							readable = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
-							constant = "ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
-							export = true,
-							text = {
-								en = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在已完成原本 T0.5 任务线的玩家处出现，该任务线在加入这些套装时已从游戏中移除",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171977, {	-- Ensemble: Beaststalker Armor
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171983, {	-- Ensemble: Dreadmist Raiment
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171979, {	-- Ensemble: Lightforge Armor
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171978, {	-- Ensemble: Magister's Regalia
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171981, {	-- Ensemble: Shadowcraft Armor
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171982, {	-- Ensemble: The Elements
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171980, {	-- Ensemble: Vestments of the Devout
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 					darkmoonprizeticket(75, iensemble(171976, {	-- Ensemble: Wildheart Raiment
-						["description"] = "~L.ONLY_APPEARS_FOR_THOSE_WHO_HAVE_DONE_THE",
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
 						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 				},
@@ -4331,24 +3974,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
 				["groups"] = {
 					i(113135, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- Iron Joker
-						["description"] = createLocalizationString({
-							readable = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
-							constant = "YOU_CAN_TRADE_IN_A_JOKER_FOR_ANY_ONE_OF_THE",
-							export = true,
-							text = {
-								en = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以在暗月马戏团用一张万能牌向萨迪斯·帕雷奥交换你缺失的任意一张卡牌。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
 						["groups"] = {
 							i(112278),	-- Ace of Iron
 							i(112277),	-- Two of Iron
@@ -4361,7 +3987,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						},
 					})),
 					i(113142, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- Moon Joker
-						["description"] = "~L.YOU_CAN_TRADE_IN_A_JOKER_FOR_ANY_ONE_OF_THE",
+						["description"] = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
 						["groups"] = {
 							i(112302),	-- Ace of the Moon
 							i(112301),	-- Two of the Moon
@@ -4386,7 +4012,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_7_0_3 },
 					})),
 					i(113139, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- Visions Joker
-						["description"] = "~L.YOU_CAN_TRADE_IN_A_JOKER_FOR_ANY_ONE_OF_THE",
+						["description"] = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
 						["groups"] = {
 							i(112286),	-- Ace of Visions
 							i(112285),	-- Two of Visions
@@ -4399,7 +4025,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						},
 					})),
 					i(113140, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- War Joker
-						["description"] = "~L.YOU_CAN_TRADE_IN_A_JOKER_FOR_ANY_ONE_OF_THE",
+						["description"] = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
 						["groups"] = {
 							i(112294),	-- Ace of War
 							i(112293),	-- Two of War
@@ -4415,24 +4041,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			-- #endif
 			n(56041, {	-- Rona Greenteeth
-				["description"] = createLocalizationString({
-					readable = "Rona serves food that she caught and prepared herself, though it's questionable what the food is made of. Sadly the vast majority of it has been removed from the game since 7.2.0.",
-					constant = "RONA_SERVES_FOOD_THAT_SHE_CAUGHT_AND_PREPARED",
-					export = true,
-					text = {
-						en = "Rona serves food that she caught and prepared herself, though it's questionable what the food is made of. Sadly the vast majority of it has been removed from the game since 7.2.0.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "罗娜供应她自己捕获并烹制的食物，不过食物的原料令人怀疑。遗憾的是，自 7.2.0 起，其中绝大多数已从游戏中移除。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rona serves food that she caught and prepared herself, though it's questionable what the food is made of. Sadly the vast majority of it has been removed from the game since 7.2.0.",
 				["coord"] = { 36.6, 58.6, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_4_3_0 },
 				["groups"] = {
@@ -4458,24 +4067,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_4_3_0 },
 					}),
 					i(124640, {	-- Inky Black Potion
-						["description"] = createLocalizationString({
-							readable = "This item enables Dark Mode and helps make the racing circles easier to see.",
-							constant = "THIS_ITEM_ENABLES_DARK_MODE_AND_HELPS_MAKE_THE",
-							export = true,
-							text = {
-								en = "This item enables Dark Mode and helps make the racing circles easier to see.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品会启用暗色模式，并让赛道圆环更容易看清。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item enables Dark Mode and helps make the racing circles easier to see.",
 						["timeline"] = { ADDED_7_2_5 },
 					}),
 					darkmoonprizeticket(1, i(19292, {	-- Last Month's Mutton
@@ -4507,24 +4099,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			n(108785, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 }, }, {	-- Scarlet Quartermaster
-				["description"] = createLocalizationString({
-					readable = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster. A tabard that has been transmogged will NOT work.",
-					constant = "YOU_MUST_BE_WEARING_TABARD_OF_THE_SCARLET",
-					export = true,
-					text = {
-						en = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster. A tabard that has been transmogged will NOT work.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须穿着血色十字军战袍才能从血色军需官处购买物品。已进行幻化的战袍将无效。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster. A tabard that has been transmogged will NOT work.",
 				["provider"] = { "i", 23192 },	-- Tabard of the Scarlet Crusade
 				["coord"] = { 58.2, 80.6, DARKMOON_ISLAND },
 				["groups"] = {

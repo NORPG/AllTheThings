@@ -91,24 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(QUESTS, {
 				-- Intro --
 				q(86706, {	-- Seeking Knowledge of the Past
-					["description"] = createLocalizationString({
-						readable = "May need to be acquired from the Adventure Journal if not automatically given on login",
-						constant = "MAY_NEED_TO_BE_ACQUIRED_FROM_THE_ADVENTURE",
-						export = true,
-						text = {
-							en = "May need to be acquired from the Adventure Journal if not automatically given on login",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果登录时没有自动获得，可能需要从冒险指南中获取",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "May need to be acquired from the Adventure Journal if not automatically given on login",
 					["provider"] = { "n", 238129 },	-- Researcher Onermu
 					["coord"] = { 42.4, 28.3, DORNOGAL },
 					["isBreadcrumb"] = true,
@@ -211,24 +194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			n(RARES, {
 				n(239581, {	-- Nesting Swarmite
-					["description"] = createLocalizationString({
-						readable = "Has a chance to spawn from piles of Trash in either vision.",
-						constant = "HAS_A_CHANCE_TO_SPAWN_FROM_PILES_OF_TRASH_IN",
-						export = true,
-						text = {
-							en = "Has a chance to spawn from piles of Trash in either vision.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "有几率从两种幻象中的垃圾堆里刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Has a chance to spawn from piles of Trash in either vision.",
 					["coords"] = {
 						{ 47.6, 74.5, RE_HORRIFIC_ORGRIMMAR },
 						{ 57.4, 60.8, RE_HORRIFIC_ORGRIMMAR },
@@ -245,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["groups"] = { i(223265) },	-- Nesting Swarmite (MOUNT!)
 				}),
 				n(160708, {	-- Mail Muncher
-					["description"] = "~L.HAS_A_CHANCE_TO_SPAWN_FROM_MAILBOXES_IN_EITHER",
+					["description"] = "Has a chance to spawn from Mailboxes in either vision.",
 					["coords"] = {
 						{ 40.0, 78.4, RE_HORRIFIC_ORGRIMMAR },
 						{ 52.8, 76.2, RE_HORRIFIC_ORGRIMMAR },
@@ -267,24 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["groups"] = {
 					currency(3149),	-- Displaced Corrupted Mementos
 					i(239106, {	-- Shadow Infused Onyx
-						["description"] = createLocalizationString({
-							readable = "Chance to drop from any Horrific Vision reward chest with an active Mask.",
-							constant = "CHANCE_TO_DROP_FROM_ANY_HORRIFIC_VISION_REWARD",
-							export = true,
-							text = {
-								en = "Chance to drop from any Horrific Vision reward chest with an active Mask.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "有几率从任何恐怖幻象奖励宝箱中掉落，需激活面具。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Chance to drop from any Horrific Vision reward chest with an active Mask.",
 					}),
 					n(ARMOR, {
 						filter(BACK_F, {
@@ -390,48 +339,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			n(TREASURES, {
 				o(495367, {	-- Corrupted Chest (Participation)
-					["description"] = createLocalizationString({
-						readable = "Default Chest if you don't clear the central district.",
-						constant = "DEFAULT_CHEST_IF_YOU_DON_T_CLEAR_THE_CENTRAL",
-						export = true,
-						text = {
-							en = "Default Chest if you don't clear the central district.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你没有清空中央区域，则为默认宝箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Default Chest if you don't clear the central district.",
 					["coords"] = {
 						{ 41.6, 34.3, RE_HORRIFIC_STORMWIND },
 						{ 48.4, 58.6, RE_HORRIFIC_ORGRIMMAR },
 					},
 				}),
 				o(527842, {	-- Black Blood Infused Bar
-					["description"] = createLocalizationString({
-						readable = "Can be looted once per run",
-						constant = "CAN_BE_LOOTED_ONCE_PER_RUN",
-						export = true,
-						text = {
-							en = "Can be looted once per run",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "每次通关可拾取一次",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be looted once per run",
 					["coords"] = {
 						{ 45.0, 52.7, RE_HORRIFIC_ORGRIMMAR },	-- Alex: can confirm this coord, questID & object for it
 						{ 63.7, 37.1, RE_HORRIFIC_STORMWIND },
@@ -449,24 +364,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				header(HEADERS.Item, 211089, {	-- Voidfire Deathcycle
-					["description"] = createLocalizationString({
-						readable = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with an active Mask.",
-						constant = "COLLECT_EACH_REAGENT_AND_CRAFT_THEM_TOGETHER",
-						export = true,
-						text = {
-							en = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with an active Mask.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "收集每种材料并将它们合成为摩托零件，把零件交还给多恩诺嘉尔的摩托车，即可获得属于你的那一辆。\n\n每种特殊材料都可以在启用面具的惊魂幻象中获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with an active Mask.",
 					["sourceQuest"] = 90129,	-- Voidfire Deathcycle Frame Tagged For Extraction
 					["coord"] = { 34.0, 68.2, DORNOGAL },
 					["groups"] = {
@@ -849,24 +747,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					n(SCENARIO_COMPLETION, {
 						o(499956, {	-- Corrupted Chest (The Drag/Garona)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing The Drag Objective/Garona.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_DRAG_OBJECTIVE",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing The Drag Objective/Garona.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成暗巷区目标/迦罗娜的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing The Drag Objective/Garona.",
 							["coord"] = { 48.5, 58.3, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = {
 								i(235795),	-- Void-Scarred Scorpid (PET!)
@@ -874,24 +755,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(499957, {	-- Corrupted Chest (Valley of Wisdom/Geya'rah)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Valley of Wisdom/Geya'rah.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_VALLEY_OF_WISDOM",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Valley of Wisdom/Geya'rah.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成智慧谷目标/盖亚拉的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Valley of Wisdom/Geya'rah.",
 							["coord"] = { 48.9, 58.1, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
@@ -902,24 +766,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(499958, {	-- Corrupted Chest (Valley of Honor/Rexxar)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Valley of Honor Objective/Rexxar.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_VALLEY_OF_HONOR",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Valley of Honor Objective/Rexxar.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成荣誉谷目标/雷克萨的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Valley of Honor Objective/Rexxar.",
 							["coord"] = { 48.1, 58.1, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
@@ -929,24 +776,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(499960, {	-- Corrupted Chest (Vale of Spirits/Zekhan)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Vale of Spirits Objective/Zekhan.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_VALE_OF_SPIRITS",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Vale of Spirits Objective/Zekhan.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成精神谷目标/泽坎的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Vale of Spirits Objective/Zekhan.",
 							["coord"] = { 48.8, 58.3, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = {
 								i(173726),	-- Void-Scarred Toad (PET!)
@@ -955,24 +785,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(499954, {	-- Corrupted Chest (Valley of Strength/Thrall chest)
-							["description"] = createLocalizationString({
-								readable = "Chest for completing Valley of Strength Objective/Thrall.",
-								constant = "CHEST_FOR_COMPLETING_VALLEY_OF_STRENGTH",
-								export = true,
-								text = {
-									en = "Chest for completing Valley of Strength Objective/Thrall.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成力量谷目标/萨尔的宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Chest for completing Valley of Strength Objective/Thrall.",
 							["coord"] = { 48.5, 58.7, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = {
 								i(174461),	-- Anomalus (PET!)
@@ -989,46 +802,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						n(241702, {	-- Gamon <Hero of Orgrimmar>
-							["description"] = createLocalizationString({
-								readable = "Interact with his axe on the table on the right portion of the first floor of the Broken Tusk inn at the Valley of Strength",
-								constant = "INTERACT_WITH_HIS_AXE_ON_THE_TABLE_ON_THE_RIGHT",
-								export = true,
-								text = {
-									en = "Interact with his axe on the table on the right portion of the first floor of the Broken Tusk inn at the Valley of Strength",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在力量谷破碎獠牙旅店一楼右侧，与桌上的他的斧头互动",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Interact with his axe on the table on the right portion of the first floor of the Broken Tusk inn at the Valley of Strength",
 							["coord"] = { 54.7, 79.0, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = { i(239158) },	-- Nemesis Shard (GAMON)
 						}),
 						n(238836, {	-- Void-Scarred Wolf
-							["description"] = createLocalizationString({
-								readable = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with an active Mask.",
-								constant = "INTERACT_WITH_WOLF_RIDER_GEAR_IN_THE_VALLEYS_OF",
-								export = true,
-								text = {
-									en = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with an active Mask.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "与荣耀谷和智慧谷中的狼骑兵装备互动以获得可叠加的增益，然后与拖沓区制皮店的狼皮地毯互动以召唤稀有怪。\n\n只有在激活面具时才能看到狼骑兵队伍。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with an active Mask.",
 							["providers"] = {
 								{ "o", 519487 },	-- Wolf Saddle (Honor)
 								{ "o", 519559 },	-- Wolf Tack (Wisdom)
@@ -1042,24 +821,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["groups"] = { i(235706) },	-- Void-Scarred Pack Mother's Harness (MOUNT!)
 						}),
 						n(238145, {	-- Void-Scarred Wyvern Matriarch
-							["description"] = createLocalizationString({
-								readable = "Clear the Valley of Wisdom to access the elevator up to the Skyway. Defeat waves of Void-Scarred Wyverns until the matriarch spawns.\n\nThe path up to the Skyway will remain blocked without at least 3 masks active.",
-								constant = "CLEAR_THE_VALLEY_OF_WISDOM_TO_ACCESS_THE",
-								export = true,
-								text = {
-									en = "Clear the Valley of Wisdom to access the elevator up to the Skyway. Defeat waves of Void-Scarred Wyverns until the matriarch spawns.\n\nThe path up to the Skyway will remain blocked without at least 3 masks active.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "清空智慧谷以进入通往天路的升降机。击败一波波虚空之痕双足飞龙，直到女族长刷新。\n\n如果没有至少 3 个激活的面具，通往天路的道路将一直被封堵。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Clear the Valley of Wisdom to access the elevator up to the Skyway. Defeat waves of Void-Scarred Wyverns until the matriarch spawns.\n\nThe path up to the Skyway will remain blocked without at least 3 masks active.",
 							["coords"] = {
 								{ 48.9, 51.6, RE_HORRIFIC_ORGRIMMAR },	-- Elevator
 								{ 49.8, 57.8, RE_HORRIFIC_ORGRIMMAR },	-- Rare
@@ -1073,7 +835,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					n(TREASURES, {
 						o(342098, {	-- Coifcurl's Close Shave Kit
-							["description"] = "~L.REQUIRES_ENTERING_THE_VALLEY_OF_SPIRITS_THE",
+							["description"] = "Requires entering the Valley of Spirits. The chest is inside the barber shop on the right.",
 							["coord"] = { 40.5, 60.3, RE_HORRIFIC_ORGRIMMAR },
 							["groups"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
 						}),
@@ -1096,24 +858,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					n(SCENARIO_COMPLETION, {
 						o(499031, {	-- Corrupted Chest (Trade District/Wyrmbane)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Trade District Objective/Wyrmbane.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_TRADE_DISTRICT",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Trade District Objective/Wyrmbane.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成贸易区目标/维姆班恩的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Trade District Objective/Wyrmbane.",
 							["coord"] = { 41.3, 34.1, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(240193),	-- Tentacle Spokes
@@ -1121,24 +866,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(499026, {	-- Corrupted Chest (Dwarven District/Kelsey)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Dwarven District Objective/Kelsey.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_DWARVEN_DISTRICT",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Dwarven District Objective/Kelsey.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成矮人区目标/凯尔希的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Dwarven District Objective/Kelsey.",
 							["coord"] = { 41.9, 34.2, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(240178),	-- Voidflame-Resistant Hide
@@ -1146,179 +874,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(499028, {	-- Corrupted Chest (Mage Quarter/Umbric)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Mage Quarter Objective/Umbric.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_MAGE_QUARTER",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Mage Quarter Objective/Umbric.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成法师区目标/乌布里克的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Mage Quarter Objective/Umbric.",
 							["coord"] = { 41.0, 33.9, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(240186),	-- Depleted Void Crystal
 								i(232919, {	-- Faceless Mask of Dark Imagination (QI!/QS!)
-									["description"] = createLocalizationString({
-										readable = "Granted by completing Mage Quarter, with an active Mask.",
-										constant = "GRANTED_BY_COMPLETING_MAGE_QUARTER_WITH_AN",
-										export = true,
-										text = {
-											en = "Granted by completing Mage Quarter, with an active Mask.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在激活面具的情况下完成法师区即可获得。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Granted by completing Mage Quarter, with an active Mask.",
 								}),
 								i(174458),	-- Void-Scarred Hare (PET!)
 							},
 						}),
 						o(499029, {	-- Corrupted Chest (Old Town/Valeera)
-							["description"] = createLocalizationString({
-								readable = "Bonus Chest for completing the Old Town Objective/Valeera.",
-								constant = "BONUS_CHEST_FOR_COMPLETING_THE_OLD_TOWN",
-								export = true,
-								text = {
-									en = "Bonus Chest for completing the Old Town Objective/Valeera.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成旧城区目标/瓦莉拉的额外宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bonus Chest for completing the Old Town Objective/Valeera.",
 							["coord"] = { 42.1, 33.9, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(235794),	-- Eye of Chaos (PET!)
 								i(232920, {	-- Faceless Mask of the Pained (QI!/QS!)
-									["description"] = createLocalizationString({
-										readable = "Granted by completing Old Town, with an active Mask.",
-										constant = "GRANTED_BY_COMPLETING_OLD_TOWN_WITH_AN_ACTIVE",
-										export = true,
-										text = {
-											en = "Granted by completing Old Town, with an active Mask.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在激活面具的情况下完成旧城区即可获得。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Granted by completing Old Town, with an active Mask.",
 								}),
 								i(174932),	-- Illusion: Void Edge (ILLUSION!)
 								i(240183),	-- Twisted Skull-Scythe Handlebars
 								i(239105, {	-- Unusual Gems
-									["description"] = createLocalizationString({
-										readable = "Can only drop if you have an active Mask and Void-Bound Orb of Mystery in your inventory!",
-										constant = "CAN_ONLY_DROP_IF_YOU_HAVE_AN_ACTIVE_MASK_AND",
-										export = true,
-										text = {
-											en = "Can only drop if you have an active Mask and Void-Bound Orb of Mystery in your inventory!",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "只有当你激活了面具且背包中拥有缚虚奥秘之球时才会掉落！",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Can only drop if you have an active Mask and Void-Bound Orb of Mystery in your inventory!",
 									["provider"] = { "i", 238924 },	-- Void-Bound Orb of Mystery
 								}),
 							},
 						}),
 						o(499022, {	-- Corrupted Chest (Cathedral/Alleria)
-							["description"] = createLocalizationString({
-								readable = "Chest for completing the Cathedral Objective/Alleria.",
-								constant = "CHEST_FOR_COMPLETING_THE_CATHEDRAL_OBJECTIVE",
-								export = true,
-								text = {
-									en = "Chest for completing the Cathedral Objective/Alleria.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "完成大教堂目标/奥蕾莉亚的宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Chest for completing the Cathedral Objective/Alleria.",
 							["coord"] = { 41.6, 34.4, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(232921, {	-- Faceless Mask of the Long Night (QI!/QS!)
-									["description"] = createLocalizationString({
-										readable = "Granted by completing all five districts within a single visit.",
-										constant = "GRANTED_BY_COMPLETING_ALL_FIVE_DISTRICTS_WITHIN",
-										export = true,
-										text = {
-											en = "Granted by completing all five districts within a single visit.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在单次进入中完成全部五个区域即可获得。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Granted by completing all five districts within a single visit.",
 								}),
 								i(235414, {	-- Faceless Mask of Multitudes (QS!/QI!)
-									["description"] = createLocalizationString({
-										readable = "Granted by completing all five districts and killing every last NPC, with an active Mask.",
-										constant = "GRANTED_BY_COMPLETING_ALL_FIVE_DISTRICTS_AND",
-										export = true,
-										text = {
-											en = "Granted by completing all five districts and killing every last NPC, with an active Mask.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在激活面具的情况下完成全部五个区域并击杀每一个 NPC 后获得。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Granted by completing all five districts and killing every last NPC, with an active Mask.",
 								}),
 								i(174459),	-- Void-Scarred Cat (PET!)
 							},
@@ -1326,7 +918,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					n(RARES, {
 						n(158284, {	-- Craggle Wobbletop <Toys and Novelties>
-							["description"] = "~L.CRAGGLE_PATS_AROUND_OUTSIDE_OF_THE_TRADE",
+							["description"] = "Craggle pats around outside of the Trade District, so selecting a Corrupted or Lost Area is not required. You need to kill the shielding robot to damage him, which requires using player CC or dropping a Toy Train Set in Craggle's path and pulling the bot while he's distracted.",
 							["coords"] = {
 								{ 58.4, 77.2, RE_HORRIFIC_STORMWIND },
 								{ 56.6, 67.6, RE_HORRIFIC_STORMWIND },
@@ -1336,24 +928,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["groups"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
 						}),
 						n(241698, {	-- Hogger
-							["description"] = createLocalizationString({
-								readable = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area\n\nRequires an active Mask",
-								constant = "INTERACT_WITH_HIS_WANTED_POSTER_JUST_TO_THE",
-								export = true,
-								text = {
-									en = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area\n\nRequires an active Mask",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "与位于法师区区域入口右侧他的通缉海报互动\n\n需要一个激活的面具",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area\n\nRequires an active Mask",
 							["coord"] = { 55.8, 75.2, RE_HORRIFIC_STORMWIND },
 							["groups"] = { i(239157) },	-- Nemesis Shard (HOGGER)
 						}),
@@ -1361,69 +936,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["coord"] = { 71.0, 70.0, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(238260, {	-- Faceless Mask of Vengeance (QI!/QS!)
-									["description"] = createLocalizationString({
-										readable = "Requires an active Mask",
-										constant = "REQUIRES_AN_ACTIVE_MASK",
-										export = true,
-										text = {
-											en = "Requires an active Mask",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "需要一个激活的面具",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Requires an active Mask",
 								}),
 							},
 						}),
 						n(242639, {	-- Voidfire Deathcycle Frame
-							["description"] = createLocalizationString({
-								readable = "Must be tagged to start progress towards unlocking the mount\n\nRequires an active Mask",
-								constant = "MUST_BE_TAGGED_TO_START_PROGRESS_TOWARDS",
-								export = true,
-								text = {
-									en = "Must be tagged to start progress towards unlocking the mount\n\nRequires an active Mask",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "必须摸到它才能开始解锁坐骑的进度\n\n需要一个已激活的面具",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Must be tagged to start progress towards unlocking the mount\n\nRequires an active Mask",
 							["coord"] = { 62.5, 32.0, RE_HORRIFIC_STORMWIND },
 							["cr"] = 242570,	-- Haymar the Devout
 							["questID"] = 90129,
 						}),
 						n(238079, {	-- Void-Forged Stallion
-							["description"] = createLocalizationString({
-								readable = "Interact with Cursed Horseshoes around Stormwind's districts to gain a stacking buff, visit the blacksmithing area in the Dwarven District to summon the rare when you have 4 stacks.\n\nRequires an active Mask",
-								constant = "INTERACT_WITH_CURSED_HORSESHOES_AROUND",
-								export = true,
-								text = {
-									en = "Interact with Cursed Horseshoes around Stormwind's districts to gain a stacking buff, visit the blacksmithing area in the Dwarven District to summon the rare when you have 4 stacks.\n\nRequires an active Mask",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "与暴风城各区的被诅咒的马蹄铁互动以获得可叠加的增益，当你拥有 4 层增益时，前往矮人区的锻造区域召唤稀有怪。\n\n需要一个激活的面具",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Interact with Cursed Horseshoes around Stormwind's districts to gain a stacking buff, visit the blacksmithing area in the Dwarven District to summon the rare when you have 4 stacks.\n\nRequires an active Mask",
 							["providers"] = {
 								{ "o", 517344 },	-- Cursed Horseshoe (Cathedral)
 								{ "o", 517350 },	-- Cursed Horseshoe (Old Town)
@@ -1442,24 +966,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 						header(HEADERS.Item, 235700, {	-- Reins of the Void-Scarred Gryphon
 							n(237918, {	-- Claw Marked Bowl
-								["description"] = createLocalizationString({
-									readable = "Interact with the nearby Ripped Notes (top of ramp, right of inquisitor) to read the clues then place the desired item into the bowl and rattle it to spawn the rare.\n...fish: Fresh Fillet (Raw) / Skewered Fillet (Cooked)\n...fungus: Chopped Mycobloom (Raw) / Roasted Mycobloom (Cooked)\n...meat that has been spiced: Spiced Meat Stock (Raw) / Simple Stew (Cooked)\n...steak: Portioned Steak (Raw) / Unseasoned Field Steak (Cooked)\n\nThe notes and bowl are only visible with at least two masks active.",
-									constant = "INTERACT_WITH_THE_NEARBY_RIPPED_NOTES_TOP_OF",
-									export = true,
-									text = {
-										en = "Interact with the nearby Ripped Notes (top of ramp, right of inquisitor) to read the clues then place the desired item into the bowl and rattle it to spawn the rare.\n...fish: Fresh Fillet (Raw) / Skewered Fillet (Cooked)\n...fungus: Chopped Mycobloom (Raw) / Roasted Mycobloom (Cooked)\n...meat that has been spiced: Spiced Meat Stock (Raw) / Simple Stew (Cooked)\n...steak: Portioned Steak (Raw) / Unseasoned Field Steak (Cooked)\n\nThe notes and bowl are only visible with at least two masks active.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "与附近的撕碎的笔记互动（坡道顶部，审判官右侧）阅读线索，然后把所需的物品放入碗中并摇晃它以召唤稀有怪。\n……鱼：新鲜鱼片（生）/ 烤鱼串（熟）\n……真菌：切碎的菌菇（生）/ 烤菌菇（熟）\n……加过香料的肉：香料肉汤（生）/ 简易炖肉（熟）\n……牛排：分切牛排（生）/ 未调味的野战牛排（熟）\n\n只有在至少激活两个面具时，笔记和碗才会可见。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Interact with the nearby Ripped Notes (top of ramp, right of inquisitor) to read the clues then place the desired item into the bowl and rattle it to spawn the rare.\n...fish: Fresh Fillet (Raw) / Skewered Fillet (Cooked)\n...fungus: Chopped Mycobloom (Raw) / Roasted Mycobloom (Cooked)\n...meat that has been spiced: Spiced Meat Stock (Raw) / Simple Stew (Cooked)\n...steak: Portioned Steak (Raw) / Unseasoned Field Steak (Cooked)\n\nThe notes and bowl are only visible with at least two masks active.",
 								["coord"] = { 66.0, 70.8, RE_HORRIFIC_STORMWIND },
 								["cost"] = {
 									{ "i",  222737, 1 },	-- 1x Chopped Mycobloom
@@ -1487,7 +994,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						i(174928, {	-- Rotten Apple (TOY!)
-							["description"] = "~L.REPEATEDLY_CLICK_THE_BOUNCING_APPLES_AT_THE",
+							["description"] = "Repeatedly click the bouncing apples at the coordinates provided. Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
 							["coords"] = {
 								{ 57.0, 55.0, RE_HORRIFIC_STORMWIND },
 								{ 60.0, 58.0, RE_HORRIFIC_STORMWIND },
@@ -1497,7 +1004,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							},
 						}),
 						o(343698, {	-- Void-Touched Skull
-							["description"] = "~L.BEHIND_THE_ORPHANAGE_IN_CATHEDRAL_SQUARE_IT_S",
+							["description"] = "Behind the orphanage in Cathedral Square. It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
 							["coord"] = { 58.9, 52.9, RE_HORRIFIC_STORMWIND },
 							["groups"] = {
 								i(174921, {	-- Void-Touched Skull (TOY!)

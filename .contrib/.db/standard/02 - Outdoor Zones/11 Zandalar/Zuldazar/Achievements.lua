@@ -38,66 +38,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					crit(41773, {	-- Nature Versus Nurture
 						["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
-						["description"] = createLocalizationString({
-							readable = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
-							constant = "MUST_COMPLETE_7_DAILY_QUESTS_TO_FILL_KUA_FON_S",
-							export = true,
-							text = {
-								en = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须完成约 7 个日常任务才能填满库阿冯的经验条。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
 					}),
 					crit(41771, {	-- Room to Grow
 						["sourceQuests"] = { 52447 },	-- Room to Grow
-						["description"] = createLocalizationString({
-							readable = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
-							constant = "MUST_COMPLETE_14_DAILY_QUESTS_TO_FILL_KUA_FON_S",
-							export = true,
-							text = {
-								en = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须完成约 14 个日常任务才能填满库阿冯的经验条。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
 					}),
 					crit(41770, {	-- Eyes on the Skies
 						["sourceQuests"] = { 52748 },	-- Eyes on the Skies
-						["description"] = createLocalizationString({
-							readable = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
-							constant = "MUST_COMPLETE_4_TO_7_DAILY_QUESTS_TO_FILL_KUA",
-							export = true,
-							text = {
-								en = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须完成 4 到 7 个日常任务才能填满库阿冯的经验条。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
 					}),
 					crit(41767, {	-- Down, But Not Out
 						["sourceQuests"] = { 50944 },	-- Down, But Not Out

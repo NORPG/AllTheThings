@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
-					["description"] = "~L.FOR_THIS_TO_DROP_YOU_NEED_TO_BE_ON_THE_ESSENCE",
+					["description"] = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
 					["sourceQuest"] = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
 					["provider"] = { "i", 16790 },	-- Damp Note
 					["timeline"] = { REMOVED_4_0_3 },
@@ -93,24 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["timeline"] = { REMOVED_1_2_4 },
 					-- #if AFTER 1.2.4
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_3",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“废墟之中”（6921）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Amongst the Ruins' (6921).",
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
@@ -250,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if AFTER TBC
 					["races"] = ALLIANCE_ONLY,
 					-- #else
-					["description"] = "~L.THIS_QUEST_IS_ALSO_AVAILABLE_TO_HORDE_THOUGH",
+					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 					-- #endif
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
 					["coord"] = { 28.7, 52.1, DARNASSUS },
@@ -278,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 5359 },	-- Lorgalis Manuscript
 								{ "o", 13949 },	-- Pitted Iron Chest
 							},
-							["description"] = "~L.GUARDED_BY_A_FEW_NAGA_IN_THE_UNDERWATER_ROOM",
+							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 						}),
 						-- #if BEFORE 4.0.3
 						i(6743, {	-- Sustaining Ring
@@ -298,7 +281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 5359 },	-- Lorgalis Manuscript
 								{ "o", 13949 },	-- Pitted Iron Chest
 							},
-							["description"] = "~L.GUARDED_BY_A_FEW_NAGA_IN_THE_UNDERWATER_ROOM",
+							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 						}),
 						i(56660, {	-- Dusk-Stained Cloak
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
@@ -557,7 +540,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			o(177964, {	-- Fathom Stone
-				["description"] = "~L.IN_THE_WATER_BELOW_THE_TWILIGHT_BRIDGE_WARNING",
+				["description"] = "In the water below the Twilight bridge.\n\nWARNING: Spawns Baron Aquanis.",
 				["sourceQuests"] = {
 					-- #if AFTER 4.0.3
 					26891,	-- Amongst the Ruins
@@ -572,7 +555,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { REMOVED_6_0_2 },
 					}),
 					n(12876, {	-- Baron Aquanis
-						["description"] = "~L.THIS_BOSS_CAN_ONLY_BE_SUMMONED_BY_HORDE_PLAYERS",
+						["description"] = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
 						["timeline"] = { REMOVED_6_0_2 },
 						["groups"] = {
 							i(16782, {	-- Strange Water Globe
@@ -753,24 +736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			})),
 			applyclassicphase(SOD_PHASE_ONE, d(DIFFICULTY.SOD.PLAYER10, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_0, REMOVED_2_0_1 }, }, {
-				["description"] = createLocalizationString({
-					readable = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
-					constant = "THIS_INSTANCE_WAS_CONVERTED_FROM_A_NORMAL_2",
-					export = true,
-					text = {
-						en = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该副本已从普通难度地下城转换为 10 人团队副本。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["lvl"] = 25,
 				["groups"] = {
 					n(QUESTS, {
@@ -788,24 +754,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(79099, {	-- Baron Aquanis (A)
-							["description"] = createLocalizationString({
-								readable = "PROTIP: Completing this quest gives you a portal to BFD!",
-								constant = "PROTIP_COMPLETING_THIS_QUEST_GIVES_YOU_A_PORTAL",
-								export = true,
-								text = {
-									en = "PROTIP: Completing this quest gives you a portal to BFD!",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "小提示：完成此任务会给你一个通往黑暗深渊的传送门！",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "PROTIP: Completing this quest gives you a portal to BFD!",
 							["qg"] = 214876,	-- Davius Voidstar
 							["coord"] = { 36.8, 43.6, DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
@@ -873,7 +822,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 										{ "i", 5359 },	-- Lorgalis Manuscript
 										{ "o", 13949 },	-- Pitted Iron Chest
 									},
-									["description"] = "~L.GUARDED_BY_A_FEW_NAGA_IN_THE_UNDERWATER_ROOM",
+									["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 								}),
 								i(211462),	-- Ever-Sustaining Ring
 							},
@@ -992,24 +941,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					}),
 					n(TREASURES, {
-						["description"] = createLocalizationString({
-							readable = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.",
-							constant = "AFTER_DEALING_WITH_AKU_MAI_YOU_CAN_HEAD_BACK_TO",
-							export = true,
-							text = {
-								en = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "解决阿库麦尔之后，你可以回到萨利维丝女士的洞穴并继续深入，此时瀑布已经消失。在洞穴的最深处，你可以从一张桌子上拾取配方。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.",
 						["groups"] = {
 							i(211849, {	-- Formula: Blackfathom Mana Oil
 								["provider"] = { "o", 415614 },	-- Mysterious Formulae
@@ -1020,24 +952,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["description"] = createLocalizationString({
-							readable = "The Twilight armor sets can drop from any of the last 4 bosses.",
-							constant = "THE_TWILIGHT_ARMOR_SETS_CAN_DROP_FROM_ANY_OF",
-							export = true,
-							text = {
-								en = "The Twilight armor sets can drop from any of the last 4 bosses.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "暮光护甲套装可以从最后 4 个首领中的任意一个掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The Twilight armor sets can drop from any of the last 4 bosses.",
 						["crs"] = {
 							204921,	-- Gelihast
 							207356,	-- Lorgus Jett
@@ -1060,24 +975,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(202699, {	-- Baron Aquanis
-						["description"] = createLocalizationString({
-							readable = "Baron Aquanis sits stationary atop three broken platforms, and raid members must dodge his mechanics to avoid being thrown into the water and possibly aggroing extra enemies - Bubble Beam knocks enemies in front of him, and Depth Charge knocks back anyone close to the target! In addition to this, players must jump through platforms to avoid Torrential Downpour damage.",
-							constant = "BARON_AQUANIS_SITS_STATIONARY_ATOP_THREE_BROKEN",
-							export = true,
-							text = {
-								en = "Baron Aquanis sits stationary atop three broken platforms, and raid members must dodge his mechanics to avoid being thrown into the water and possibly aggroing extra enemies - Bubble Beam knocks enemies in front of him, and Depth Charge knocks back anyone close to the target! In addition to this, players must jump through platforms to avoid Torrential Downpour damage.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "阿奎尼斯男爵静止不动地坐在三个破碎的平台上方，团队成员必须躲避他的机制，以免被抛入水中并可能引到额外的敌人——气泡射线会击退他前方的敌人，深水炸弹会击退目标附近的所有人！除此之外，玩家还必须跳过平台以躲避倾盆暴雨的伤害。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Baron Aquanis sits stationary atop three broken platforms, and raid members must dodge his mechanics to avoid being thrown into the water and possibly aggroing extra enemies - Bubble Beam knocks enemies in front of him, and Depth Charge knocks back anyone close to the target! In addition to this, players must jump through platforms to avoid Torrential Downpour damage.",
 						["groups"] = {
 							i(211454, {	-- Strange Water Globe
 								["races"] = HORDE_ONLY,
@@ -1096,24 +994,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(201722, {	-- Ghamoo-ra
-						["description"] = createLocalizationString({
-							readable = "Ghamoo-ra patrols around an island and requires clearing around the area before being engageed. In the fight itself, tanks must taunt swap to avoid massive stacks of Crunch Armor, while other members of the raid must deal with Ghamoo-ra's shield, Aqua Shell - Deal damage to break it. Once Aqua Shell is broken, DPS the turtle down while dealing with massive raid-wide damage!",
-							constant = "GHAMOO_RA_PATROLS_AROUND_AN_ISLAND_AND_REQUIRES",
-							export = true,
-							text = {
-								en = "Ghamoo-ra patrols around an island and requires clearing around the area before being engageed. In the fight itself, tanks must taunt swap to avoid massive stacks of Crunch Armor, while other members of the raid must deal with Ghamoo-ra's shield, Aqua Shell - Deal damage to break it. Once Aqua Shell is broken, DPS the turtle down while dealing with massive raid-wide damage!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "加穆拉绕着岛屿巡逻，需要先清理周围区域才能开战。战斗本身，坦克必须嘲讽换位，以避免碾压护甲叠加过高；团队其他成员则要应对加穆拉的护盾——水甲壳，通过造成伤害将其打破。一旦水甲壳被打破，就在应对大量全团伤害的同时集火击杀这只乌龟！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Ghamoo-ra patrols around an island and requires clearing around the area before being engageed. In the fight itself, tanks must taunt swap to avoid massive stacks of Crunch Armor, while other members of the raid must deal with Ghamoo-ra's shield, Aqua Shell - Deal damage to break it. Once Aqua Shell is broken, DPS the turtle down while dealing with massive raid-wide damage!",
 						["groups"] = {
 							i(209436),	-- Chipped Bite of Serra'kis
 							i(209830),	-- Ironhide Arbalest
@@ -1128,24 +1009,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(204068, {	-- Lady Sarevess
-						["description"] = createLocalizationString({
-							readable = "Lady Sarevess is accompanied by a tanky Blackfathom Elite that needs to be off-tanked. The main mechanic players must deal with is Freezing Arrow, in which a player is randomly targetted by an arrow that leaves a frost patch that the off-tank can move the Blackfathom Elite to stun it for a short duration. In addition to this, spread out to not chain Forked Lightning damage!",
-							constant = "LADY_SAREVESS_IS_ACCOMPANIED_BY_A_TANKY",
-							export = true,
-							text = {
-								en = "Lady Sarevess is accompanied by a tanky Blackfathom Elite that needs to be off-tanked. The main mechanic players must deal with is Freezing Arrow, in which a player is randomly targetted by an arrow that leaves a frost patch that the off-tank can move the Blackfathom Elite to stun it for a short duration. In addition to this, spread out to not chain Forked Lightning damage!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "萨莉维丝女士身边有一只耐打的黑暗深渊精英，需要由副坦克拉住。玩家必须应对的主要机制是冰冻之箭：一名玩家会被随机选中并被箭矢标记，留下一片冰霜区域，副坦克可以把黑暗深渊精英拉过去，将其短暂昏迷。除此之外，请分散站位，以免叉状闪电的伤害连锁！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Lady Sarevess is accompanied by a tanky Blackfathom Elite that needs to be off-tanked. The main mechanic players must deal with is Freezing Arrow, in which a player is randomly targetted by an arrow that leaves a frost patch that the off-tank can move the Blackfathom Elite to stun it for a short duration. In addition to this, spread out to not chain Forked Lightning damage!",
 						["groups"] = {
 							i(209564),	-- Guardian's Trident
 							i(209525),	-- Honed Darkwater Talwar
@@ -1163,24 +1027,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(204921, {	-- Gelihast
-						["description"] = createLocalizationString({
-							readable = "Gelihast has a quite dangerous curse with Curse of Blackfathom, so you must have ways to decurse it off. The raid must avoid getting hit by Shadow Crash while the tanks taunt swap to prevent reaching high stacks of Shadow Strike. Healers can also dispel the random Fear he throws at people.\n\nThe big mechanic happens once the boss reaches 10% - March of the Murlocs will begin, spawning dozens of murlocs that players must dodge while the boss heals himself and throws more Shadow Crashes. Once fully healed, the fight starts again, with Gelihast summoning low-health Blackfathom Tendril that must be killed. Gelihast will heal himself to full twice with March of the Murlocs before finally dying.",
-							constant = "GELIHAST_HAS_A_QUITE_DANGEROUS_CURSE_WITH_CURSE",
-							export = true,
-							text = {
-								en = "Gelihast has a quite dangerous curse with Curse of Blackfathom, so you must have ways to decurse it off. The raid must avoid getting hit by Shadow Crash while the tanks taunt swap to prevent reaching high stacks of Shadow Strike. Healers can also dispel the random Fear he throws at people.\n\nThe big mechanic happens once the boss reaches 10% - March of the Murlocs will begin, spawning dozens of murlocs that players must dodge while the boss heals himself and throws more Shadow Crashes. Once fully healed, the fight starts again, with Gelihast summoning low-health Blackfathom Tendril that must be killed. Gelihast will heal himself to full twice with March of the Murlocs before finally dying.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "格里哈斯特拥有一个相当危险的诅咒——黑暗深渊的诅咒，所以你必须具备解除诅咒的手段。团队必须避免被暗影冲撞击中，同时坦克要嘲讽换位，以防止暗影打击叠加过高。治疗者也可以驱散他随机向玩家投掷的恐惧效果。\n\n当首领的生命值降至 10% 时，关键机制便会触发——鱼人大军开始，生成数十只鱼人，玩家必须一边躲避它们，一边应对首领自我治疗并投掷更多暗影冲撞。完全治愈后，战斗会重新开始，格里哈斯特会召唤生命值很低的黑暗深渊触须，必须将其击杀。格里哈斯特会借助鱼人大军将自身治疗至满血两次，之后才会最终死亡。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Gelihast has a quite dangerous curse with Curse of Blackfathom, so you must have ways to decurse it off. The raid must avoid getting hit by Shadow Crash while the tanks taunt swap to prevent reaching high stacks of Shadow Strike. Healers can also dispel the random Fear he throws at people.\n\nThe big mechanic happens once the boss reaches 10% - March of the Murlocs will begin, spawning dozens of murlocs that players must dodge while the boss heals himself and throws more Shadow Crashes. Once fully healed, the fight starts again, with Gelihast summoning low-health Blackfathom Tendril that must be killed. Gelihast will heal himself to full twice with March of the Murlocs before finally dying.",
 						["groups"] = {
 							i(209567),	-- Coral Reef Axe
 							i(209571),	-- Deadlight
@@ -1198,24 +1045,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(207356, {	-- Lorgus Jett
-						["description"] = createLocalizationString({
-							readable = "Lorgus Jett can be found behind a gauntlet of Naga and Murlocs that must be dealt with before engaging the boss itself. Lorgus Jett himself has 3 totems he will use - One totem is spawned every 10 seconds in a set order. You can simply ignore two out of the three totems and DPS Lorgus Jett:\n\n    Corrupted Windfury Totem - Ignore and tank through his enhanced attacks;\n    Corrupted Lightning Shield Totem - Kill this totem immediately once it spawns;\n    Corrupted Molten Fury Totem - Ignore this totem and dodge the molten boulders it spawns.",
-							constant = "LORGUS_JETT_CAN_BE_FOUND_BEHIND_A_GAUNTLET_OF",
-							export = true,
-							text = {
-								en = "Lorgus Jett can be found behind a gauntlet of Naga and Murlocs that must be dealt with before engaging the boss itself. Lorgus Jett himself has 3 totems he will use - One totem is spawned every 10 seconds in a set order. You can simply ignore two out of the three totems and DPS Lorgus Jett:\n\n    Corrupted Windfury Totem - Ignore and tank through his enhanced attacks;\n    Corrupted Lightning Shield Totem - Kill this totem immediately once it spawns;\n    Corrupted Molten Fury Totem - Ignore this totem and dodge the molten boulders it spawns.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "洛古斯·杰特位于一群纳迦和鱼人之后，必须先清理掉他们才能与首领本身交战。洛古斯·杰特自身会使用 3 个图腾——每 10 秒按固定顺序刷新一个图腾。你可以直接无视三个图腾中的两个，专心输出洛古斯·杰特：\n\n    腐化的风怒图腾 - 无视它，硬扛他增强后的攻击；\n    腐化的闪电之盾图腾 - 它一刷新就立刻击杀；\n    腐化的熔岩之怒图腾 - 无视这个图腾，并躲开它刷出的熔岩巨石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Lorgus Jett can be found behind a gauntlet of Naga and Murlocs that must be dealt with before engaging the boss itself. Lorgus Jett himself has 3 totems he will use - One totem is spawned every 10 seconds in a set order. You can simply ignore two out of the three totems and DPS Lorgus Jett:\n\n    Corrupted Windfury Totem - Ignore and tank through his enhanced attacks;\n    Corrupted Lightning Shield Totem - Kill this totem immediately once it spawns;\n    Corrupted Molten Fury Totem - Ignore this totem and dodge the molten boulders it spawns.",
 						["groups"] = {
 							i(209579),	-- Crashing Thunder
 							i(209577),	-- Fist of the Wild
@@ -1230,24 +1060,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(209678, {	-- Twilight Lord Kelris
-						["description"] = createLocalizationString({
-							readable = "Kelris is a two-phase fight with Phase 1 starting on pull and Phase 2 starting at 35%, so DPS must hold their big cooldowns until Kelris enters Phase 2. Through the fight, players must dodge Shadow Crashes and interrupt Shadowy Chains (priority) and Mind Blast.\n\nThe main difficult in the fight is the Dream Realm mechanic - Every so often, the two closest players to Kelris will be put to Sleep, being sent to a Dream Realm in which they need to kill neutral Phantasmal Priestesses for a chance to spawn a portal to be sent back to reality. After 30 seconds in the Dream Phase, the Priestesses will become aggressive and attack the two players on the Dream Realm. If possible, avoid using casters to go to the Dream Realm, as the Priestesses have high magical resistance.\n\nOnce Kelris reaches 35%, Phase 2 will start - Kelris will no longer send players to the Dream Realm, but will deal increased damage, in addition to his previous interruptible spells now being immune to interrupts. Save your resources and spread around the room to burn the boss down!",
-							constant = "KELRIS_IS_A_TWO_PHASE_FIGHT_WITH_PHASE_1",
-							export = true,
-							text = {
-								en = "Kelris is a two-phase fight with Phase 1 starting on pull and Phase 2 starting at 35%, so DPS must hold their big cooldowns until Kelris enters Phase 2. Through the fight, players must dodge Shadow Crashes and interrupt Shadowy Chains (priority) and Mind Blast.\n\nThe main difficult in the fight is the Dream Realm mechanic - Every so often, the two closest players to Kelris will be put to Sleep, being sent to a Dream Realm in which they need to kill neutral Phantasmal Priestesses for a chance to spawn a portal to be sent back to reality. After 30 seconds in the Dream Phase, the Priestesses will become aggressive and attack the two players on the Dream Realm. If possible, avoid using casters to go to the Dream Realm, as the Priestesses have high magical resistance.\n\nOnce Kelris reaches 35%, Phase 2 will start - Kelris will no longer send players to the Dream Realm, but will deal increased damage, in addition to his previous interruptible spells now being immune to interrupts. Save your resources and spread around the room to burn the boss down!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "凯尔里斯是一场分为两个阶段的战斗，第一阶段从开怪时开始，第二阶段在 35% 时开始，因此输出职业必须把大招留到凯尔里斯进入第二阶段。整场战斗中，玩家必须躲避暗影冲撞，并打断暗影锁链（优先）和心灵震爆。\n\n这场战斗的主要难点在于梦境领域机制——每隔一段时间，离凯尔里斯最近的两名玩家会被催眠，送入梦境领域，他们需要在其中击杀中立状态的幻影女祭司，以有机会生成一个传送门被送回现实。在梦境阶段持续 30 秒后，女祭司们会变得具有攻击性，攻击身处梦境领域的两名玩家。如果可能的话，避免让施法者进入梦境领域，因为女祭司具有很高的魔法抗性。\n\n当凯尔里斯达到 35% 时，第二阶段开始——凯尔里斯不再把玩家送入梦境领域，但会造成更高的伤害，此外他之前可被中断的法术现在免疫打断。留好你的资源，分散在房间各处，全力输出首领！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Kelris is a two-phase fight with Phase 1 starting on pull and Phase 2 starting at 35%, so DPS must hold their big cooldowns until Kelris enters Phase 2. Through the fight, players must dodge Shadow Crashes and interrupt Shadowy Chains (priority) and Mind Blast.\n\nThe main difficult in the fight is the Dream Realm mechanic - Every so often, the two closest players to Kelris will be put to Sleep, being sent to a Dream Realm in which they need to kill neutral Phantasmal Priestesses for a chance to spawn a portal to be sent back to reality. After 30 seconds in the Dream Phase, the Priestesses will become aggressive and attack the two players on the Dream Realm. If possible, avoid using casters to go to the Dream Realm, as the Priestesses have high magical resistance.\n\nOnce Kelris reaches 35%, Phase 2 will start - Kelris will no longer send players to the Dream Realm, but will deal increased damage, in addition to his previous interruptible spells now being immune to interrupts. Save your resources and spread around the room to burn the boss down!",
 						["groups"] = {
 							i(209561),	-- Rod of the Ancient Sleepwalker
 							i(209694),	-- Blackfathom Ritual Dagger
@@ -1266,24 +1079,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(213334, {	-- Aku'mai
-						["description"] = createLocalizationString({
-							readable = "Once engaged, all raid members should stay close to Aku'mai at all times, to easily dodge the Corrosive Blast cones. Getting hit by this gives a stack of Corrosion. Tanks will naturally be affected with Corrosion over time, and once they reach 3-4 stacks of Corrosion, they must drag themselves and the boss to one of the four Cleansing Pool scattered across the room - Cleansing themselves and generating adds that must be killed.\n\nOnce Aku'mai hits 50%, he will enter Phase 2 by casting Dark Protection becoming big and voidlike. His abilities remain mostly the same, but now deal Shadow damage instead of Nature. The main difference is that Corrosion becomes Shadow Seep, and tanks must taunt swap to avoid getting high stacks of the debuff. It is possible to cleanse these the same way as you did Corrosion in Phase 1, but it is largely unnecessary if your DPS is good.",
-							constant = "ONCE_ENGAGED_ALL_RAID_MEMBERS_SHOULD_STAY_CLOSE",
-							export = true,
-							text = {
-								en = "Once engaged, all raid members should stay close to Aku'mai at all times, to easily dodge the Corrosive Blast cones. Getting hit by this gives a stack of Corrosion. Tanks will naturally be affected with Corrosion over time, and once they reach 3-4 stacks of Corrosion, they must drag themselves and the boss to one of the four Cleansing Pool scattered across the room - Cleansing themselves and generating adds that must be killed.\n\nOnce Aku'mai hits 50%, he will enter Phase 2 by casting Dark Protection becoming big and voidlike. His abilities remain mostly the same, but now deal Shadow damage instead of Nature. The main difference is that Corrosion becomes Shadow Seep, and tanks must taunt swap to avoid getting high stacks of the debuff. It is possible to cleanse these the same way as you did Corrosion in Phase 1, but it is largely unnecessary if your DPS is good.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "开战后，所有团队成员都应始终紧贴阿库麦尔，以便轻松躲开腐蚀冲击的锥形范围。被其命中会叠加一层腐蚀。坦克会随着时间自然积累腐蚀，一旦叠加到 3-4 层，就必须把自己和首领拉到散布在房间四周的四个净化水池之一——净化自身并产生需要击杀的小怪。\n\n当阿库麦尔的生命值降至 50% 时，他会施放黑暗庇护进入第二阶段，变得巨大而带有虚空形态。他的技能基本不变，但造成的伤害由自然改为暗影。最主要的区别是腐蚀变为暗影渗透，坦克必须通过嘲讽交接来避免叠加过多层数。也可以用第一阶段净化腐蚀的同样方式净化它，但如果你们的输出足够，则基本没有必要。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Once engaged, all raid members should stay close to Aku'mai at all times, to easily dodge the Corrosive Blast cones. Getting hit by this gives a stack of Corrosion. Tanks will naturally be affected with Corrosion over time, and once they reach 3-4 stacks of Corrosion, they must drag themselves and the boss to one of the four Cleansing Pool scattered across the room - Cleansing themselves and generating adds that must be killed.\n\nOnce Aku'mai hits 50%, he will enter Phase 2 by casting Dark Protection becoming big and voidlike. His abilities remain mostly the same, but now deal Shadow damage instead of Nature. The main difference is that Corrosion becomes Shadow Seep, and tanks must taunt swap to avoid getting high stacks of the debuff. It is possible to cleanse these the same way as you did Corrosion in Phase 1, but it is largely unnecessary if your DPS is good.",
 						["groups"] = {
 							i(209693),	-- Perfect Blackfathom Pearl
 							i(211452),	-- Perfect Blackfathom Pearl

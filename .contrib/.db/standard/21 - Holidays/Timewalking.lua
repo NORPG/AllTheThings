@@ -91,40 +91,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(19079, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 } },{	-- Master of the Turbulent Timeways (automated!)
-				["description"] = createLocalizationString({
-					readable = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
-					constant = "EACH_WEEK_FINISH_4_DUNGEONS_WITH_DISTILLED",
-					export = true,
-					text = {
-						en = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "每周在“时光之道的浓缩知识”增益激活时完成 4 个地下城，达到 4 层后该增益会变为“时光之道的精通”，即可完成该周的条件。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(205208) },	-- Sandy Shalewing (MOUNT!)
 			})),
 			ach(41056, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {	-- Master of the Turbulent Timeways II (automated!)
-				["description"] = "~L.EACH_WEEK_FINISH_4_DUNGEONS_WITH_DISTILLED",
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(232624) },	-- Timely Buzzbee (MOUNT!)
 			})),
 			ach(41779, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 } }, {	-- Master of the Turbulent Timeways III (automated!)
-				["description"] = "~L.EACH_WEEK_FINISH_4_DUNGEONS_WITH_DISTILLED",
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(238739) },	-- Chrono Corsair (MOUNT!)
 			})),
 			ach(61394, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_0_1_LAUNCH } }, {	-- Master of the Turbulent Timeways IV (automated!)
-				["description"] = "~L.EACH_WEEK_FINISH_4_DUNGEONS_WITH_DISTILLED",
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(254694) },	-- Ta'readon's Mount Voucher
 			})),
 			ach(61463, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {	-- Master of the Turbulent Timeways V (automated!)
-				["description"] = "~L.EACH_WEEK_FINISH_4_DUNGEONS_WITH_DISTILLED",
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(258884) },	-- Spawn of Vyranoth (MOUNT!)
 			})),
 		}),
@@ -294,24 +277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 		n(REWARDS, {
 			TimelyGoodieBag({	-- Timely Goodie Bag
 				-- TODO: probably nice to organize by armor/type & weapon since the drops are likely loot-spec-based
-				["description"] = createLocalizationString({
-					readable = "Available from the weekly Timewalking quest for characters below max level.",
-					constant = "AVAILABLE_FROM_THE_WEEKLY_TIMEWALKING_QUEST_FOR",
-					export = true,
-					text = {
-						en = "Available from the weekly Timewalking quest for characters below max level.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可从每周时空漫游任务获得，仅限未满级的角色。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Available from the weekly Timewalking quest for characters below max level.",
 				["groups"] = {
 					i(226046),	-- Timely Tourist's Band
 					i(226064),	-- Timely Tourist's Beacon Staff
@@ -386,24 +352,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		}),
 		n(GROUP_FINDER, {
 			i(225348, {	-- Ancient Timewarped Scroll
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Classic Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_CLASSIC",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Classic Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“经典旧世时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Classic Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -1060,44 +1009,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = createLocalizationString({
-					readable = "Can drop from the last boss of any 'The Burning Crusade Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-					constant = "CAN_DROP_FROM_THE_LAST_BOSS_OF_ANY_THE_BURNING",
-					export = true,
-					text = {
-						en = "Can drop from the last boss of any 'The Burning Crusade Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你隶属于法夜盟约，可从任意“燃烧的远征时光漫游”地下城的最后一个首领身上掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from the last boss of any 'The Burning Crusade Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
 			i(129747, {	-- Swirling Timewarped Vial
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'The Burning Crusade Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_THE_BURNING",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'The Burning Crusade Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“燃烧的远征时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'The Burning Crusade Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -1117,24 +1032,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				["isWeekly"] = true,
 				["groups"] = {
 					i(208091, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (BC)
-						["description"] = createLocalizationString({
-							readable = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
-							constant = "THIS_BAG_CONTAINS_AN_ITEM_FROM_BLACK_TEMPLE_OR",
-							export = true,
-							text = {
-								en = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这个袋子包含一件来自黑暗神殿的物品，或一件来自《魔兽世界》15 周年活动首领阿克蒙德、凯尔萨斯或瓦丝琪的物品。\n坐骑的掉率似乎相当高（5-10%）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
 						["sym"] = {{"select","itemID",
 							97554,	-- Dripping Strider Egg
 							122112,	-- Hyjal Whisp
@@ -2316,45 +2214,11 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 	expansion(EXPANSION.WRATH, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Wrath of the Lich King Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_WRATH_OF_THE",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Wrath of the Lich King Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“巫妖王之怒时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Wrath of the Lich King Timewalking' dungeon.",
 			}),
 			i(187903, {	-- Jormungar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = createLocalizationString({
-					readable = "Can drop from the last boss of any 'Wrath of the Lich King Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-					constant = "CAN_DROP_FROM_THE_LAST_BOSS_OF_ANY_WRATH_OF_THE",
-					export = true,
-					text = {
-						en = "Can drop from the last boss of any 'Wrath of the Lich King Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你隶属于法夜盟约，可从任意“巫妖王之怒时光漫游”地下城的最后一个首领身上掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from the last boss of any 'Wrath of the Lich King Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
 		}),
 		n(QUESTS, {
@@ -2375,24 +2239,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["groups"] = {
 					i(157030),	-- Titan Prison Fragment (QI!)
 					i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
-						["description"] = createLocalizationString({
-							readable = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",
-							constant = "THIS_BAG_CONTAINS_AN_ITEM_FROM_ULDUAR_OR_AN",
-							export = true,
-							text = {
-								en = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这个袋子包含一件来自奥杜尔的物品，或一件来自《魔兽世界》15 周年活动首领阿努布雷坎、巫妖王或海根的物品。\n坐骑的掉率似乎相当高（5-10%）。",
-								-- TODO: tw = "",
-							},
-						}),	-- Might have been removed in 10.2.7 as a pouch dropped instead for me
+						["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",	-- Might have been removed in 10.2.7 as a pouch dropped instead for me
 						["sym"] = {{"select","itemID",
 							-- Seems to be always 1 of those 3 pets	-- Gold 15.09.2023
 							142098,	-- Drudge Ghoul (PET!)
@@ -3915,47 +3762,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = createLocalizationString({
-					readable = "Can drop from the last boss of any 'Cataclysm Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-					constant = "CAN_DROP_FROM_THE_LAST_BOSS_OF_ANY_CATACLYSM",
-					export = true,
-					text = {
-						en = "Can drop from the last boss of any 'Cataclysm Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你隶属于法夜盟约，可从任意“大地的裂变时光漫游”地下城的最后一个首领身上掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from the last boss of any 'Cataclysm Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
 			a(i(133378, {	-- Smoldering Timewarped Ember [A] (QS!)
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_CATACLYSM",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“大地的裂变时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
 			})),
 			h(i(133377, {	-- Smoldering Timewarped Ember [H] (QS!)
-				["description"] = "~L.DROPS_FROM_THE_LAST_BOSS_OF_ANY_CATACLYSM",
+				["description"] = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
 			})),
 		}),
 		n(QUESTS, {
@@ -3982,24 +3795,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				["groups"] = {
 					i(172506),	-- Time-Locked Cinder (QI!)
 					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
-						["description"] = createLocalizationString({
-							readable = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Cho'gall or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
-							constant = "THIS_BAG_CONTAINS_AN_ITEM_FROM_FIRELANDS_OR_AN",
-							export = true,
-							text = {
-								en = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Cho'gall or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这个袋子包含一件来自火焰之地的物品，或一件来自《魔兽世界》15 周年活动首领古加尔或奈法利安的物品。\n坐骑的掉率似乎相当高（5-10%）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Cho'gall or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
 						["sym"] = {{"select","itemID",
 							152978,	-- Infernal Pyreclaw (PET!)
 							152966,	-- Tinytron (PET!)
@@ -4462,24 +4258,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(171654),	-- Alysrazor's Band
 						i(171645),	-- Eye of Blazing Power
 						i(199099, {	-- Glittering Phoenix Ember
-							["description"] = createLocalizationString({
-								readable = "Guaranteed drop.",
-								constant = "GUARANTEED_DROP",
-								export = true,
-								text = {
-									en = "Guaranteed drop.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "必定掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Guaranteed drop.",
 							["timeline"] = { ADDED_10_0_7 },
 						}),
 					},
@@ -5008,44 +4787,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = createLocalizationString({
-					readable = "Can drop from the last boss of any 'Mists of Pandaria Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-					constant = "CAN_DROP_FROM_THE_LAST_BOSS_OF_ANY_MISTS_OF",
-					export = true,
-					text = {
-						en = "Can drop from the last boss of any 'Mists of Pandaria Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你隶属于法夜盟约，可从任意“熊猫人之谜时光漫游”地下城的最后一个首领身上掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from the last boss of any 'Mists of Pandaria Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
 			i(143776, {	-- Shrouded Timewarped Coin
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Mists of Pandaria Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_MISTS_OF",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Mists of Pandaria Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“熊猫人之谜时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Mists of Pandaria Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -5457,24 +5202,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				}},
 			}),
 			n(59369, {	-- Doctor Theolen Krastinov
-				["description"] = createLocalizationString({
-					readable = "This is a Rare Creature and is not always present.",
-					constant = "THIS_IS_A_RARE_CREATURE_AND_IS_NOT_ALWAYS",
-					export = true,
-					text = {
-						en = "This is a Rare Creature and is not always present.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一个稀有生物，并不总是出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is a Rare Creature and is not always present.",
 				["sym"] = {{"select", "itemID",
 					88566,	-- Krastinov's Bag of Horrors (TOY!)
 				}},
@@ -5717,70 +5445,19 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 	expansion(EXPANSION.WOD, {
 		n(GROUP_FINDER, {
 			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
-				["description"] = createLocalizationString({
-					readable = "Rewarded for completing any 'Warlords of Draenor Timewalking' dungeon.\nAvailable once per day.",
-					constant = "REWARDED_FOR_COMPLETING_ANY_WARLORDS_OF_DRAENOR",
-					export = true,
-					text = {
-						en = "Rewarded for completing any 'Warlords of Draenor Timewalking' dungeon.\nAvailable once per day.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成任意“德拉诺之王时空漫游”地下城后奖励。\n每天可完成一次。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rewarded for completing any 'Warlords of Draenor Timewalking' dungeon.\nAvailable once per day.",
 				["timeline"] = { ADDED_10_1_7 },
 				["sym"] = { { "select", "itemID", 156698 }, {"pop"} },	-- Tranquil Satchel of Helpful Goods
 			}),
 			i(187905, {	-- Boar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = createLocalizationString({
-					readable = "Can drop from the last boss of any 'Warlords of Draenor Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-					constant = "CAN_DROP_FROM_THE_LAST_BOSS_OF_ANY_WARLORDS_OF",
-					export = true,
-					text = {
-						en = "Can drop from the last boss of any 'Warlords of Draenor Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你隶属于法夜盟约，可从任意“德拉诺之王时光漫游”地下城的最后一个首领身上掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from the last boss of any 'Warlords of Draenor Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
 			i(167921, {	-- Shimmering Timewarped Crystal (A)
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Warlords of Draenor Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_WARLORDS_OF",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Warlords of Draenor Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“德拉诺之王时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Warlords of Draenor Timewalking' dungeon.",
 			}),
 			i(167922, {	-- Shimmering Timewarped Crystal (H)
-				["description"] = "~L.DROPS_FROM_THE_LAST_BOSS_OF_ANY_WARLORDS_OF",
+				["description"] = "Drops from the last boss of any 'Warlords of Draenor Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -6408,24 +6085,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 	expansion(EXPANSION.LEGION, {
 		n(GROUP_FINDER, {
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
-				["description"] = createLocalizationString({
-					readable = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
-					constant = "REWARDED_FOR_COMPLETING_ANY_LEGION_TIMEWALKING",
-					export = true,
-					text = {
-						en = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成任意“军团再临时空漫游”地下城后奖励。\n每天可完成一次。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
 				["timeline"] = { ADDED_10_1_7 },
 				["groups"] = {
 					i(113788),	-- Blossoming Belt*
@@ -6468,44 +6128,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				},
 			}),
 			i(187906, {	-- Owl Serpent Soul (SS!)
-				["description"] = createLocalizationString({
-					readable = "Can drop from the last boss of any 'Legion Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-					constant = "CAN_DROP_FROM_THE_LAST_BOSS_OF_ANY_LEGION",
-					export = true,
-					text = {
-						en = "Can drop from the last boss of any 'Legion Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你隶属于法夜盟约，可从任意“军团再临时光漫游”地下城的最后一个首领身上掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can drop from the last boss of any 'Legion Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
 			}),
 			i(187611, {	-- Whispering Felflame Crystal
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Legion Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_LEGION",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Legion Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“军团再临时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Legion Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -7209,27 +6835,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 	expansion(EXPANSION.BFA, {
 		n(GROUP_FINDER, {
 			i(238790, {	-- Remnant of Azeroth (A)
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_BATTLE_FOR",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“争霸艾泽拉斯时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
 			}),
 			i(238791, {	-- Remnant of Azeroth (H)
-				["description"] = "~L.DROPS_FROM_THE_LAST_BOSS_OF_ANY_BATTLE_FOR",
+				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -7910,24 +7519,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 	expansion(EXPANSION.SL, {
 		n(GROUP_FINDER, {
 			i(253517, {	-- The Flickering Anima (QS!)
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_SHADOWLANDS",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“暗影国度时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {
@@ -8477,24 +8069,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 	expansion(EXPANSION.DF, {
 		n(GROUP_FINDER, {
 			i(262918, {	-- Lost Iridescent Flightstone (QS!)
-				["description"] = createLocalizationString({
-					readable = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
-					constant = "DROPS_FROM_THE_LAST_BOSS_OF_ANY_DRAGONFLIGHT",
-					export = true,
-					text = {
-						en = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任何“巨龙时代时光漫游”地下城的最终首领掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
 			}),
 		}),
 		n(QUESTS, {

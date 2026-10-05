@@ -227,24 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(1722, {	-- Dream Whelpling (PET!)
-					["description"] = createLocalizationString({
-						readable = "Once you defeat Xavius these will spawn in the area after him.",
-						constant = "ONCE_YOU_DEFEAT_XAVIUS_THESE_WILL_SPAWN_IN_THE",
-						export = true,
-						text = {
-							en = "Once you defeat Xavius these will spawn in the area after him.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击败萨维斯后，这些会在其身后的区域刷新。",
-							-- TODO: tw = "",
-						},
-					})
+					["description"] = "Once you defeat Xavius these will spawn in the area after him."
 				}),
 			})),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
@@ -364,24 +347,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
-						["description"] = createLocalizationString({
-							readable = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_7",
-							export = true,
-							text = {
-								en = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你每周可以在普通难度下立即进入塞纳留斯。\n\n|cfffd1818如果你先完成了英雄或史诗版本，此任务将无法获得。|r\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
 						["altQuests"] = {
 							44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
 							44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
@@ -409,24 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
-						["description"] = createLocalizationString({
-							readable = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_8",
-							export = true,
-							text = {
-								en = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你每周可以在英雄难度下立即进入塞纳留斯。\n\n|cfffd1818如果你先完成了史诗版本，此任务将无法获得。|r\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 						["qg"] = 106482,	-- Malfurion Stormrage
 						["qi"] = 141304,	-- Essence of Clarity (QI!)
@@ -446,24 +395,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
-						["description"] = createLocalizationString({
-							readable = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
-							constant = "FINISHING_THIS_QUEST_WILL_GRANT_YOU_IMMEDIATE_9",
-							export = true,
-							text = {
-								en = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "完成此任务后，你每周可以在史诗难度下立即进入塞纳留斯。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
 						["qg"] = 106482,	-- Malfurion Stormrage
 						["qi"] = 141305,	-- Essence of Clarity (QI!)
 					}),

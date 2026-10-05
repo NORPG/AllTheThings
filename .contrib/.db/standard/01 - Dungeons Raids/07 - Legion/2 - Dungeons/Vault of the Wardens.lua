@@ -193,24 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(10707, {	-- A Specter, Illuminated
-							["description"] = createLocalizationString({
-								readable = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",
-								constant = "AFTER_KILLING_CFFFFD700CORDANA_FELSONG_R_TAKE",
-								export = true,
-								text = {
-									en = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "杀死 |cFFFFD700科达娜·邪歌|r 后，把艾露恩之光带到连接 |cFFFFD700格莱泽|r 和 |cFFFFD700阿什高姆|r 的走廊，跟随灵魂直到它到达走廊尽头。杀死生成的幽灵，然后再重复这个过程 2 次。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",
 							["crs"] = { 108996 },	-- Specter of Vengeance
 						}),
 					}),

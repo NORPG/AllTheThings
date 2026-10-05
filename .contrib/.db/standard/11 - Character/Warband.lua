@@ -70,47 +70,13 @@ root(ROOTS.Character, n(WARBAND, timelineSelf({ ["timeline"] = { ADDED_11_0_0 } 
 	})),
 	n(CAMPSITES, timelineSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 		campsite(1, {	-- Adventurer's Rest (CS!)
-			["description"] = createLocalizationString({
-				readable = "Granted to all warbands as default.",
-				constant = "GRANTED_TO_ALL_WARBANDS_AS_DEFAULT",
-				export = true,
-				text = {
-					en = "Granted to all warbands as default.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "默认授予所有战团。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Granted to all warbands as default.",
 		}),
 		campsite(4, {	-- Ohn'ahran Overlook (CS!)
-			["description"] = createLocalizationString({
-				readable = "Granted to all warbands.",
-				constant = "GRANTED_TO_ALL_WARBANDS",
-				export = true,
-				text = {
-					en = "Granted to all warbands.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "授予所有战团。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Granted to all warbands.",
 		}),
 		campsite(29, {	-- Randomize From Favorites (CS!)
-			["description"] = "~L.GRANTED_TO_ALL_WARBANDS",
+			["description"] = "Granted to all warbands.",
 		}),
 	})),
 })))

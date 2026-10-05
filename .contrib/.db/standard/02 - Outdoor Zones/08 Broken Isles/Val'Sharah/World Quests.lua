@@ -229,24 +229,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			petbattle(q(40279, {	-- Training with Durian
 				-- #IF BEFORE 10.2.5
 				-- Not sure when they fixed this but you can repeat the battle now :D
-				["description"] = createLocalizationString({
-					readable = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
-					constant = "THIS_WORLD_QUEST_ONLY_ALLOWS_ONE_COMPLETED_PET",
-					export = true,
-					text = {
-						en = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与其他所有军团再临宠物对战世界任务不同，此世界任务每角色每天只允许完成一次宠物对战。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 				-- #ENDIF
 				["coord"] = { 46.4, 36.9, VALSHARAH },
 			})),

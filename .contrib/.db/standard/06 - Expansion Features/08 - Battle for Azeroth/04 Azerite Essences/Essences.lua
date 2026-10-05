@@ -4,24 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
-		["description"] = createLocalizationString({
-			readable = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
-			constant = "THE_HEART_OF_AZEROTH_REWARDED_BY_MAGNI_IN_THE",
-			export = true,
-			text = {
-				en = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "由麦格尼在心之密室（希利苏斯）奖励的艾泽拉斯之心，是学习精华、甚至让精华掉落的必备条件。精华带有两种效果，一种主能力、一种次能力。\n\n玩家可以在艾泽拉斯之心每一个已解锁的主槽或次槽中放置一枚精华。\n\n只有把精华放入中央主槽时，主能力才会激活。\n\n把精华放入任意次槽或中央主槽时，次能力都会激活。\n\n同一枚精华不能放入多个槽位。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13779, {		-- Phenomenal Cosmic Power

@@ -36,24 +36,7 @@ WARCRAFT_RUMBLE = createHeader({
 root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 	n(ACHIEVEMENTS, {
 		ach(15344, {	-- "S.A.F.E" Pilot
-			["description"] = createLocalizationString({
-				readable = "Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",
-				constant = "PLAY_WARCRAFT_RUMBLE_ON_YOUR_PHONE_UNTIL_YOU",
-				export = true,
-				text = {
-					en = "Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "在你的手机上玩魔兽兵团，直到击败霍格。重启应用后你就会收到该宠物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",
 			-- ToDO: Use provider?
 			["groups"] = {
 				-- #if AFTER 11.2.5

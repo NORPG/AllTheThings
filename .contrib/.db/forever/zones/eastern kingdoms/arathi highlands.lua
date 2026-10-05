@@ -181,24 +181,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(635, {	-- Crystal in the Mountains
-				["description"] = createLocalizationString({
-					readable = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
-					constant = "IF_YOU_MISS_OUT_ON_PICKING_UP_THE_NECKLACE",
-					export = true,
-					text = {
-						en = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你错过了先拾取项链，即使完成了任务链的其余部分，仍然可以完成此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
 				["provider"] = { "i", 4614 },	-- Pendant of Myzrael
 				["lvl"] = 30,
 			}),
@@ -761,24 +744,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(6622, {	-- Triage (H)
-				["description"] = createLocalizationString({
-					readable = "Needs a minimum of 225 skill in First Aid.",
-					constant = "NEEDS_A_MINIMUM_OF_225_SKILL_IN_FIRST_AID",
-					export = true,
-					text = {
-						en = "Needs a minimum of 225 skill in First Aid.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要至少 225 点急救技能。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] ="Needs a minimum of 225 skill in First Aid.",
 				["sourceQuest"] = 6623,	-- Horde Trauma
 				["qg"] = 12920,	-- Doctor Gregory Victor
 				["coord"] = { 68.5, 37.8, MAP.ARATHI_HIGHLANDS },
@@ -992,24 +958,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(13288, {	-- Pattern: Raptor Hide Belt (RECIPE!)
-						["description"] = createLocalizationString({
-							readable = "Horde Players Beware: even if you buy this item off the Auction House, it is currently unlearnable. Only Alliance players are able to properly learn this pattern. Fire up your bug reports.",
-							constant = "HORDE_PLAYERS_BEWARE_EVEN_IF_YOU_BUY_THIS_ITEM",
-							export = true,
-							text = {
-								en = "Horde Players Beware: even if you buy this item off the Auction House, it is currently unlearnable. Only Alliance players are able to properly learn this pattern. Fire up your bug reports.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "部落玩家注意：即使你从拍卖行购买了这件物品，目前也无法学习。只有联盟玩家才能正常学习该图样。请提交 bug 反馈。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Horde Players Beware: even if you buy this item off the Auction House, it is currently unlearnable. Only Alliance players are able to properly learn this pattern. Fire up your bug reports.",
 						["races"] = ALLIANCE_ONLY,
 						["isLimited"] = true,
 					}),
@@ -1125,24 +1074,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			i(5624, {	-- Circlet of the Order
 				["cr"] = 2584,	-- Stromgarde Defender
-				["description"] = createLocalizationString({
-					readable = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
-					constant = "THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE",
-					export = true,
-					text = {
-						en = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由于掉落该物品的生物的阵营归属，该物品只有部落玩家才能正常获取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				["coords"] = {
 					{ 26.0, 58.0, MAP.ARATHI_HIGHLANDS },
 					{ 22.0, 62.2, MAP.ARATHI_HIGHLANDS },
@@ -1177,7 +1109,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					2780,	-- Caretaker Nevlin
 					2781,	-- Caretaker Weston
 				},
-				["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE",
+				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				["coord"] = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(1993, {	-- Ogremind Ring

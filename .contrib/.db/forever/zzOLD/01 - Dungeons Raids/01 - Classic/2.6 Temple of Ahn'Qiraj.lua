@@ -1301,24 +1301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				})),
 				i(21229, {	-- Qiraji Lord's Insignia
-					["description"] = createLocalizationString({
-						readable = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
-						constant = "DROPS_FROM_ALL_BOSSES_CAN_BE_TURNED_IN_TO_THE",
-						export = true,
-						text = {
-							en = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由所有首领掉落，可交给名为坎德罗斯塔兹的 NPC，以换取诺兹多姆的子嗣和塞纳里奥议会的声望。击杀预言者斯克拉姆后，可在神殿内左侧的房间里与安多葛斯和维斯瑟拉一起找到坎德罗斯塔兹。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
 					["crs"] = {
 						15516,	-- Battleguard Sartura
 						15276,	-- Emperor Vek'lor
@@ -1352,7 +1335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(20874),	-- Idol of the Sun
 					i(20882),	-- Idol of War
 					i(21156, {	-- Scarab Bag
-						["description"] = "~L.CONTAINS_A_COUPLE_OF_RANDOM_SCARABS",
+						["description"] = "Contains a couple of random scarabs.",
 					}),
 				},
 			}),
@@ -1385,24 +1368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			-- #if AFTER LEGION
 			e(1547, {	-- Silithid Royalty
-				["description"] = createLocalizationString({
-					readable = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
-					constant = "THIS_CAN_BE_A_FAIRLY_BUGGY_ENCOUNTER_IF_YOU_DON",
-					export = true,
-					text = {
-						en = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你不按正确方式打，这可能是一场相当“虫”的战斗。一次只击杀一个首领，并让它被吞噬。然后再击杀下一个，也让它被吞噬。你留到最后的那个首领决定可能掉落的战利品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
 			-- #endif
 					n(SILITHID_ROYALTY_SHARED_DROPS, {
@@ -1435,24 +1401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					n(15511, {	-- Lord Kri
-						["description"] = createLocalizationString({
-							readable = "Killing this boss last can drop the following items.",
-							constant = "KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
-							export = true,
-							text = {
-								en = "Killing this boss last can drop the following items.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "最后击杀此首领可以掉落以下物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
 							i(21603),	-- Wand of Qiraji Nobility
 							i(21680),	-- Vest of Swift Execution
@@ -1461,7 +1410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					n(15543, {	-- Princess Yauj
-						["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
+						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
 							i(21683),	-- Mantle of the Desert Crusade
 							i(21684),	-- Mantle of the Desert's Fury
@@ -1471,7 +1420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					n(15544, {	-- Vem
-						["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
+						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
 							i(21690),	-- Angelista's Charm
 							i(21689),	-- Gloves of Ebru
@@ -1672,7 +1621,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 					i(21229, {	-- Qiraji Lord's Insignia
-						["description"] = "~L.DROPS_FROM_ALL_BOSSES_CAN_BE_TURNED_IN_TO_THE",
+						["description"] = "Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",
 						["crs"] = {
 							15516,	-- Battleguard Sartura
 							15276,	-- Emperor Vek'lor
@@ -1719,24 +1668,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				n(SPECIAL, {
 					n(234193, {		-- Gilded Scarab
-						["description"] = createLocalizationString({
-							readable = "Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",
-							constant = "RANDOMLY_SPAWNS_IN_THE_TEMPLE_OF_AHN_QIRAJ_AND",
-							export = true,
-							text = {
-								en = "Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在安其拉神殿中随机刷新，被攻击后会在 10 秒内消失",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Randomly spawns in the Temple of Ahn'Qiraj and will despawn within 10seconds after being attacked",
 						["groups"] = {
 							i(235526),	-- Formula: Enchant Bracer - Spell Power
 							i(235528),	-- Formula: Enchant Bracer - Agility
@@ -2243,24 +2175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(SILITHID_ROYALTY_SHARED_DROPS, {
-					["description"] = createLocalizationString({
-						readable = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
-						constant = "THESE_ITEMS_CAN_DROP_FROM_KILLING_THE_SILITHID",
-						export = true,
-						text = {
-							en = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "无论击杀顺序如何，这些物品都可以从异种虫皇室首领身上掉落。其他物品请参阅各自的条目。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
 					["providers"] = {
 						{ "n", 15511 },	-- Lord Kri
 						{ "n", 15543 },	-- Princess Yauj
@@ -2276,7 +2191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15511, {	-- Lord Kri
-					["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
+					["description"] = "Killing this boss last can drop the following items.",
 					["groups"] = {
 						i(233568),	-- Vest of Swift Execution
 						i(233569),	-- Ring of the Devoured
@@ -2285,7 +2200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15543, {	-- Princess Yauj
-					["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
+					["description"] = "Killing this boss last can drop the following items.",
 					["groups"] = {
 						i(233563),	-- Mantle of Phrenic Power
 						i(233564),	-- Bile-Covered Gauntlets
@@ -2295,7 +2210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(15544, {	-- Vem
-					["description"] = "~L.KILLING_THIS_BOSS_LAST_CAN_DROP_THE_FOLLOWING",
+					["description"] = "Killing this boss last can drop the following items.",
 					["groups"] = {
 						i(233559),	-- Gloves of Ebru
 						i(233560),	-- Ooze-Ridden Gauntlets
@@ -2349,24 +2264,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				e(1548, {	-- Viscidus
-						["description"] = createLocalizationString({
-							readable = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
-							constant = "THIS_BOSS_REQUIRES_200_FROST_HITS_TO_FREEZE",
-							export = true,
-							text = {
-								en = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该首领需要 200 次冰霜命中才能被冻结。冻结之后，你需要 75 次近战命中才能击碎他。装备巴罗夫仆人召唤者饰品，并在首领被冻结后使用它，会有助于做到这一点。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
 						["creatureID"] = 15299,
 						["groups"] = {
 							i(233369),	-- Qiraji Bindings of Dominance
@@ -2473,24 +2371,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(AQ_TEMPLE_HARDMODE, {
-					["description"] = createLocalizationString({
-						readable = "Descent into Madness!\n\nWhen players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
-						constant = "DESCENT_INTO_MADNESS_WHEN_PLAYERS_ENTER_AHN",
-						export = true,
-						text = {
-							en = "Descent into Madness!\n\nWhen players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "疯狂降临！\n\n当玩家进入安其拉（废墟和神殿）并抵达第一个首领时，会看到一座方尖碑。与之互动（将其关闭）会为团队副本增加额外机制，团队将在有限次数内尝试击败接下来的 3 个首领。每个首领都有一座单独的方尖碑，必须将其关闭才能继续。这样做会给予你额外的战利品宝箱，你还会获得一枚虚空触碰徽记，它能把安其拉神殿的武器变为“虚空触碰”版本的武器。它们拥有漂亮的虚空外观，尽管品质没有任何差别。（仅外观！）",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Descent into Madness!\n\nWhen players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
 					["groups"] = {
 						i(233351),	-- Light Green Qiraji Resonating Crystal
 						i(233352),	-- Dark Blue Qiraji Resonating Crystal

@@ -71,7 +71,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						["groups"] = {
 							recipe(8071),	-- Stoneskin Totem
 							i(5175, {	-- Earth Totem
-								["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+								["description"] = "You must keep this in your bags forever.",
 							}),
 						},
 					}),
@@ -1324,24 +1324,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					5823,	-- Death Flayer
 					3127,	-- Venomtail Scorpid
 				},
-				["description"] = createLocalizationString({
-					readable = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",
-					constant = "ONLY_DROPS_FROM_SCORPIDS_IN_DUROTAR_EXCLUDING",
-					export = true,
-					text = {
-						en = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅由杜隆塔尔的蝎子掉落，回音群岛和试炼谷除外。",
-						-- TODO: tw = "",
-					},
-				})
+				["description"] = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials."
 			}),
 		}),
 	},

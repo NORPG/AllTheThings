@@ -288,24 +288,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["isRepeatable"] = true,
 						["groups"] = {
 							i(254323, {	-- Worldsoul Satchel
-								["description"] = createLocalizationString({
-									readable = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
-									constant = "CONTAINS_EQUIPMENT_REWARDED_FROM_VARIOUS_QUESTS",
-									export = true,
-									text = {
-										en = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "包含在卡兹阿加各处各种任务中奖励的装备。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
 							}),
 						},
 					}),
@@ -320,7 +303,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["isRepeatable"] = true,
 						["groups"] = {
 							i(254324, {	-- Worldsoul Satchel
-								["description"] = "~L.CONTAINS_EQUIPMENT_REWARDED_FROM_VARIOUS_QUESTS",
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
 							}),
 						},
 					}),
@@ -334,29 +317,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["isRepeatable"] = true,
 						["groups"] = {
 							i(254325, {	-- Worldsoul Satchel
-								["description"] = "~L.CONTAINS_EQUIPMENT_REWARDED_FROM_VARIOUS_QUESTS",
+								["description"] = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
 							}),
 						},
 					}),
 					q(93979, {	-- Lingering Memories
-						["description"] = createLocalizationString({
-							readable = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
-							constant = "LINGERING_MEMORIES_IS_AVAILABLE_ONLY_THROUGH",
-							export = true,
-							text = {
-								en = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "“挥之不去的记忆”只能通过回顾经验获得。它取代了任务“家还剩下什么”(85032)。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
 						["sourceQuest"] = 84967,	-- The Shadowguard Shattered
 						["qg"] = 231128,	-- Locus-Walker
 						["coord"] = { 37.7, 74.8, KARESH_TAZAVESH },

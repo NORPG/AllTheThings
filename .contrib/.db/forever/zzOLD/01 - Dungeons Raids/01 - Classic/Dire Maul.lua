@@ -189,24 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						MAP.WINTERSPRING,
 					}),
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This is a hidden reputation. It might not count towards reputation achievements.",
-						constant = "THIS_IS_A_HIDDEN_REPUTATION_IT_MIGHT_NOT_COUNT",
-						export = true,
-						text = {
-							en = "This is a hidden reputation. It might not count towards reputation achievements.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个隐藏声望。它可能不计入声望成就。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 					["collectible"] = false,
 					-- #endif
 				}),
@@ -214,24 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					-- #if BEFORE 4.0.3
-					["description"] = createLocalizationString({
-						readable = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
-						constant = "USE_THE_ITEMS_ON_THE_BROKEN_TRAP_TO_TRAP_GUARD",
-						export = true,
-						text = {
-							en = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对破损的陷阱使用这些物品，即可困住卫兵斯里基克。修复陷阱需要几秒钟才能完成。\n\n你必须激活这个陷阱才能进行贡品之旅。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["cost"] = {
 						{ "i", 15994, 1 },	-- Thorium Widget
 						{ "i", 3829, 1 },	-- Frost Oil
@@ -244,24 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = lvlsquish(56, 56, 15),
 				}),
 				q(27118, {	-- A Broken Trap
-					["description"] = createLocalizationString({
-						readable = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
-						constant = "YOU_MUST_TRAP_GUARD_SLIP_KIK_IN_ORDER_TO",
-						export = true,
-						text = {
-							en = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须困住卫兵斯里基克，才能获得完整的贡品战利品表。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
 					["provider"] = { "o", 179485 },	-- Broken Trap
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -332,24 +281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(5527, {	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MAP.MOONGLADE },
-					["description"] = createLocalizationString({
-						readable = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
-						constant = "THE_CHARACTER_MUST_FIRST_VISIT_DIRE_MAUL_SO",
-						export = true,
-						text = {
-							en = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "角色必须先造访厄运之槌，这样月光林地的NPC才会提供一段解锁该任务的对话。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.SILITHUS },
 					["lvl"] = 56,
@@ -574,24 +506,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(5525, {	-- Free Knot!
 					-- #if BEFORE 4.0.3
-					["description"] = createLocalizationString({
-						readable = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
-						constant = "FREEING_HIM_GETS_YOU_ACCESS_TO_HIS_CACHE_NOTE",
-						export = true,
-						text = {
-							en = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "释放他即可获得他的宝箱。\n\n注意：在完成贡品之旅之前不要释放他！",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
 					["qg"] = 14338,	-- Knot Thimblejack
@@ -601,7 +516,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7429, {	-- Free Knot! (repeatable)
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.FREEING_HIM_GETS_YOU_ACCESS_TO_HIS_CACHE_NOTE",
+					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
 					["sourceQuest"] = 5525,	-- Free Knot!
@@ -1002,24 +917,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["requireSkill"] = LEATHERWORKING,
 						}),
 						i(18258, {	-- Gordok Ogre Suit
-							["description"] = createLocalizationString({
-								readable = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
-								constant = "BEFORE_USING_THIS_CLEAR_THE_TRASH_BEFORE",
-								export = true,
-								text = {
-									en = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在使用此物品之前，先清掉克罗卡斯队长前面的小怪。在你带着这个伪装与克罗卡斯交谈时，让你的队伍待在后面。如果他们引到了他，你们的贡品之旅就会失败。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
 						}),
 					},
 				}),
@@ -1064,24 +962,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(5528, {	-- The Gordok Taste Test
-					["description"] = createLocalizationString({
-						readable = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
-						constant = "WITH_STOMPER_KREEG_LEFT_ALIVE_KILL",
-						export = true,
-						text = {
-							en = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "让践踏者克里格活着，击杀|cFFFFD700戈多克大王|r成为新的国王，然后返回庭院。\n\n在你完成任务且与他处于友好声望后，他会出售这些物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -1092,7 +973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27114, {	-- The Gordok Taste Test
-					["description"] = "~L.WITH_STOMPER_KREEG_LEFT_ALIVE_KILL",
+					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -1241,24 +1122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7703, {	-- Unfinished Gordok Business
-					["description"] = createLocalizationString({
-						readable = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-						constant = "KILL_CFFFFD700KING_GORDOK_R_AND_THEN_RETURN_TO",
-						export = true,
-						text = {
-							en = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击杀|cFFFFD700戈多克大王|r，然后返回庭院。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
@@ -1276,7 +1140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 				}),
 				q(27124, {	-- Unfinished Gordok Business
-					["description"] = "~L.KILL_CFFFFD700KING_GORDOK_R_AND_THEN_RETURN_TO",
+					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -1302,34 +1166,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					i(18640),	-- Happy Fun Rock
 					i(18333, {	-- Libram of Focus
 						-- #if AFTER 4.0.3
-						["description"] = createLocalizationString({
-							readable = "This still drops despite being completely worthless.",
-							constant = "THIS_STILL_DROPS_DESPITE_BEING_COMPLETELY",
-							export = true,
-							text = {
-								en = "This still drops despite being completely worthless.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "尽管已完全无用，此物品仍然会掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
 					i(18334, {	-- Libram of Protection
 						-- #if AFTER 4.0.3
-						["description"] = "~L.THIS_STILL_DROPS_DESPITE_BEING_COMPLETELY",
+						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
 					i(18332, {	-- Libram of Rapidity
 						-- #if AFTER 4.0.3
-						["description"] = "~L.THIS_STILL_DROPS_DESPITE_BEING_COMPLETELY",
+						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
 					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21982, {	-- Ogre Warbeads
@@ -1353,24 +1200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(COMMON_BOSS_DROPS, {
 				["provider"] = { "o", 179547 },	-- A Dusty Tome
 				-- #if BEFORE 4.0.3
-				["description"] = createLocalizationString({
-					readable = "The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",
-					constant = "THE_FOLLOWING_ITEMS_CAN_DROP_FROM_ANY_BOSS_IN",
-					export = true,
-					text = {
-						en = "The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "以下物品可以从厄运之槌的任何首领身上掉落，也可以从地上的积灰的书卷中获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",
 				-- #endif
 				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
@@ -1531,24 +1361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					}),
 					n(14354, {	-- Pusillin
-						["description"] = createLocalizationString({
-							readable = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
-							constant = "TALK_TO_HIM_AND_THEN_CHASE_HIM_EVENTUALLY_HE",
-							export = true,
-							text = {
-								en = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与他交谈，然后追赶他。最终他会跑上一段斜坡，届时即可击杀。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
 						["groups"] = {
 							i(18249, {	-- Crescent Key
 								["description"] =
@@ -1655,44 +1468,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					n(11491, {	-- Old Ironbark
-						["description"] = createLocalizationString({
-							readable = "Talk to him for him to break down the door.",
-							constant = "TALK_TO_HIM_FOR_HIM_TO_BREAK_DOWN_THE_DOOR",
-							export = true,
-							text = {
-								en = "Talk to him for him to break down the door.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与他交谈，让他砸开大门。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Talk to him for him to break down the door.",
 					}),
 					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {	-- Isalien
-						["description"] = createLocalizationString({
-							readable = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
-							constant = "THIS_BOSS_CAN_BE_SUMMONED_USING_ITEMS_FROM_THE",
-							export = true,
-							text = {
-								en = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该首领可以使用|cff3399ff（地下城套装 2 任务链）|r中的物品来召唤。\n召唤地点：荒野变形者奥兹恩的房间。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
 						-- #if BEFORE 6.0.2
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
@@ -1738,24 +1517,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["creatureID"] = 11492,
 						["groups"] = {
 							i(18501, {	-- Felvine Shard
-								["description"] = createLocalizationString({
-									readable = "Spawns under the vines near the last boss in Dire Maul East.",
-									constant = "SPAWNS_UNDER_THE_VINES_NEAR_THE_LAST_BOSS_IN",
-									export = true,
-									text = {
-										en = "Spawns under the vines near the last boss in Dire Maul East.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在厄运之槌东最后一个首领附近的藤蔓下刷新。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Spawns under the vines near the last boss in Dire Maul East.",
 								["provider"] = { "o", 179559 },	-- Felvine Shard
 							}),
 							i(18321),	-- Energetic Rod
@@ -1821,24 +1583,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							-- #if BEFORE 4.0.3
-							["description"] = createLocalizationString({
-								readable = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
-								constant = "NOTE_DO_NOT_FREE_KNOT_IF_YOU_ARE_DOING_A",
-								export = true,
-								text = {
-									en = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "注意：如果你在进行贡品路线，不要释放诺特。他会逃跑。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							-- #endif
 							["crs"] = {
 								14325,	-- Captain Kromcrush
@@ -1856,24 +1601,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					})),
 					n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 						q(77194, {	-- Free Knot!
-							["description"] = createLocalizationString({
-								readable = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",
-								constant = "THIS_QUEST_BECOMES_OBTAINABLE_ONCE_A_GORDOK",
-								export = true,
-								text = {
-									en = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "拾取戈多克镣铐钥匙后即可获得此任务。完成它会提高你在热砂港财团的声望，且不会降低你在血帆海盗中的声望。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",
 							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 							["repeatable"] = true,
@@ -1891,24 +1619,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					})),
 					n(COMMON_BOSS_DROPS, {
-						["description"] = createLocalizationString({
-							readable = "The following items can drop from any of the guards.",
-							constant = "THE_FOLLOWING_ITEMS_CAN_DROP_FROM_ANY_OF_THE",
-							export = true,
-							text = {
-								en = "The following items can drop from any of the guards.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "以下物品可以从任何卫兵身上掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
 							14326,	-- Guard Mol'dar
 							14321,	-- Guard Fengus
@@ -1968,24 +1679,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					e(411, {	-- Guard Mol'dar
 						["creatureID"] = 14326,
 						-- #if BEFORE 4.0.3
-						["description"] = createLocalizationString({
-							readable = "If you do not have a way to open the inner door, you can kill him for the Inner Door Key.\n\nDoing so will invalidate your Tribute Run.",
-							constant = "IF_YOU_DO_NOT_HAVE_A_WAY_TO_OPEN_THE_INNER_DOOR",
-							export = true,
-							text = {
-								en = "If you do not have a way to open the inner door, you can kill him for the Inner Door Key.\n\nDoing so will invalidate your Tribute Run.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你没有办法打开内门，可以杀掉他来获得内门钥匙。\n\n这样做会使你的贡品路线失效。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If you do not have a way to open the inner door, you can kill him for the Inner Door Key.\n\nDoing so will invalidate your Tribute Run.",
 						-- #endif
 						["groups"] = {
 							-- #if BEFORE 7.3.5
@@ -2035,24 +1729,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18464),	-- Gordok Nose Ring
 							-- #endif
 							n(VENDORS, {
-								["description"] = createLocalizationString({
-									readable = "After becoming the king, you can come back to Kreeg to buy some drinks.",
-									constant = "AFTER_BECOMING_THE_KING_YOU_CAN_COME_BACK_TO",
-									export = true,
-									text = {
-										en = "After becoming the king, you can come back to Kreeg to buy some drinks.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "成为国王后，你可以回到克里格处买些饮料。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "After becoming the king, you can come back to Kreeg to buy some drinks.",
 								["groups"] = {
 									i(18269),	-- Gordok Green Grog
 									i(18284),	-- Kreeg's Stout Beatdown
@@ -2196,24 +1873,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					o(179499, {	-- Ogre Tannin Basket
-						["description"] = createLocalizationString({
-							readable = "Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",
-							constant = "BEWARE_LOOTING_THE_OGRE_TANNIN_WILL_CAUSE_A",
-							export = true,
-							text = {
-								en = "Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "小心！拾取食人魔鞣酸会召唤出一名戈多克伏击者。这句话是在致敬电影《沉默的羔羊》。\n\n“不！它得把鞣酸放进篮子里，否则又要挨锤子了！”",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",
 						["groups"] = {
 							i(18240),	-- Ogre Tannin
 						},
@@ -2258,24 +1918,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18483),	-- Mana Channeling Wand
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228064, {	-- Observer's Shield
-								["description"] = createLocalizationString({
-									readable = "This doesn't appear to have been added yet.",
-									constant = "THIS_DOESN_T_APPEAR_TO_HAVE_BEEN_ADDED_YET",
-									export = true,
-									text = {
-										en = "This doesn't appear to have been added yet.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "此内容似乎尚未加入游戏。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "This doesn't appear to have been added yet.",
 								["timeline"] = { CREATED_1_15_3 },
 							})),
 							-- #endif
@@ -2287,7 +1930,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228062, {	-- Insightful Hood
-								["description"] = "~L.THIS_DOESN_T_APPEAR_TO_HAVE_BEEN_ADDED_YET",
+								["description"] = "This doesn't appear to have been added yet.",
 								["timeline"] = { CREATED_1_15_3 },
 							})),
 							-- #endif
@@ -2350,24 +1993,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					o(179564, {	-- Gordok Tribute Chest
-						["description"] = createLocalizationString({
-							readable = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
-							constant = "SPEAK_WITH_MIZZLE_AFTER_KILLING_CFFFFD700KING",
-							export = true,
-							text = {
-								en = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "击杀|cFFFFD700戈多克大王|r后与米兹勒交谈即可刷新贡品箱。\n\n完整的贡品流程（5 件物品）需要让除戈多克大王之外的所有首领都存活，还需要激活冰霜陷阱，并用陷阱附近地精给予的食人魔套装骗过克罗卡斯。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
 						["provider"] = { "n", 14353 },	-- Mizzle the Crafty
 						["modelScale"] = 3,
 						["groups"] = {
@@ -2437,24 +2063,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228486, {	-- Treant's Bane
-								["description"] = createLocalizationString({
-									readable = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
-									constant = "THERE_S_NO_EVIDENCE_THAT_THIS_VERSION_HAS",
-									export = true,
-									text = {
-										en = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "目前没有证据表明这个版本已经掉落过。如果你打出了它，请 @Crieve。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
 								["timeline"] = { CREATED_1_15_3 },
 							})),
 							-- #endif
@@ -2578,7 +2187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					n(11467, {	-- Tsu'zee
-						["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+						["description"] = "This is a Rare Creature and, as such, is not always present.",
 						["groups"] = {
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(228061, {	-- Brightspark Gloves
@@ -2692,44 +2301,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						},
 					}),
 					n(16032, {	-- Falrin Treeshaper <House of Shen'dralar>
-						["description"] = createLocalizationString({
-							readable = "Found in the Dire Maul Library.",
-							constant = "FOUND_IN_THE_DIRE_MAUL_LIBRARY",
-							export = true,
-							text = {
-								en = "Found in the Dire Maul Library.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在厄运之槌的图书馆中找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found in the Dire Maul Library.",
 						["groups"] = {
 							n(SPECIAL, {
-								["description"] = createLocalizationString({
-									readable = "Available if a specific Quest (9015) has been completed.",
-									constant = "AVAILABLE_IF_A_SPECIFIC_QUEST_9015_HAS_BEEN",
-									export = true,
-									text = {
-										en = "Available if a specific Quest (9015) has been completed.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "如果已完成特定任务（9015），则可用。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Available if a specific Quest (9015) has been completed.",
 								["sourceQuest"] = 9015,	-- The Challenge
 								["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 								["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
@@ -2743,24 +2318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["creatureID"] = 11486,
 						["groups"] = {
 							i(18336, {	-- Gauntlet of Gordok Might
-								["description"] = createLocalizationString({
-									readable = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
-									constant = "IN_THE_CORNER_OF_THE_ROOM_THAT_THE_PRINCE_IS_IN",
-									export = true,
-									text = {
-										en = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在王子所在房间的角落里，书架旁边地上的一个小箱子中装有护手。你必须杀死王子才能与该箱子互动。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
 								["provider"] = { "o", 179545 },	-- The Prince's Chest
 							}),
 							-- #if SEASON_OF_DISCOVERY

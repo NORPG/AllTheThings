@@ -64,24 +64,7 @@ root(ROOTS.Zones, {
 				}),
 				n(97215, {	-- Beastmaster Pao'lek
 					["questID"] = 39784,	-- Beastmaster Pao'lek
-					["description"] = createLocalizationString({
-						readable = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
-						constant = "SPEAK_WITH_BEASTMASTR_PAO_LEK_THEN_HELP_HIM",
-						export = true,
-						text = {
-							en = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与驯兽师帕奥莱克交谈，然后帮他驯服阿鲁。之后拾取雷霆图腾失窃货物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
 					["coord"] = { 48.6, 50.0, HIGHMOUNTAIN },
 					["crs"] = { 97220 },	-- Arru <The Terror>
 					["groups"] = {
@@ -130,24 +113,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(100495, {	-- Devouring Darkness
-					["description"] = createLocalizationString({
-						readable = "Click all candles to summon the mob.",
-						constant = "CLICK_ALL_CANDLES_TO_SUMMON_THE_MOB",
-						export = true,
-						text = {
-							en = "Click all candles to summon the mob.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击所有蜡烛以召唤该怪物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click all candles to summon the mob.",
 					["coords"] = {
 						{ 54.5, 41.4, HIGHMOUNTAIN },	-- actual rare
 						{ 55.1, 44.3, HIGHMOUNTAIN },	-- cave entrance
@@ -159,24 +125,7 @@ root(ROOTS.Zones, {
 				}),
 				n(96072, {	-- Durguth
 					["isDaily"] = true,
-					["description"] = createLocalizationString({
-						readable = "This rare is only available when its associated world quest is active.",
-						constant = "THIS_RARE_IS_ONLY_AVAILABLE_WHEN_ITS_ASSOCIATED",
-						export = true,
-						text = {
-							en = "This rare is only available when its associated world quest is active.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此稀有怪仅在其关联的世界任务激活时可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This rare is only available when its associated world quest is active.",
 					["questID"] = 41093,
 					["coord"] = { 43.8, 75.6, HIGHMOUNTAIN },
 					["groups"] = {
@@ -184,24 +133,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(97793, {	-- Flamescale
-					["description"] = createLocalizationString({
-						readable = "Click on the Abandoned Fishing Pole to summon Flamescale.",
-						constant = "CLICK_ON_THE_ABANDONED_FISHING_POLE_TO_SUMMON",
-						export = true,
-						text = {
-							en = "Click on the Abandoned Fishing Pole to summon Flamescale.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击废弃的钓鱼竿以召唤烈焰鳞。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click on the Abandoned Fishing Pole to summon Flamescale.",
 					["provider"] = { "o", 244667 },	-- Abandoned Fishing Pole
 					["questID"] = 39963,
 					["coord"] = { 40.9, 57.7, HIGHMOUNTAIN },
@@ -274,24 +206,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(97579, {	-- Scout Harefoot (Mynta Talonscreech)
-					["description"] = createLocalizationString({
-						readable = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
-						constant = "SPEAK_TO_SCOUT_HAREFOOT_AND_MYNTA_TALONSCREECH",
-						export = true,
-						text = {
-							en = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与斥候兔足交谈，明塔·爪啸就会出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
 					["questID"] = 39866,
 					["coord"] = { 54.5, 40.5, HIGHMOUNTAIN },
 					["groups"] = {
@@ -300,24 +215,7 @@ root(ROOTS.Zones, {
 				}),
 				o(240353, {	-- Seemingly Unguarded Treasure
 					["questID"] = 40423,
-					["description"] = createLocalizationString({
-						readable = "Loot the treasure inside the cave and a party of enemies will appear. Kill them and loot the treasure.",
-						constant = "LOOT_THE_TREASURE_INSIDE_THE_CAVE_AND_A_PARTY",
-						export = true,
-						text = {
-							en = "Loot the treasure inside the cave and a party of enemies will appear. Kill them and loot the treasure.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "拾取洞穴里的宝藏，一队敌人就会出现。击杀他们并拾取宝藏。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Loot the treasure inside the cave and a party of enemies will appear. Kill them and loot the treasure.",
 					["coord"] = { 52.3, 58.5, HIGHMOUNTAIN },
 					["crs"] = {
 						100302,	-- Puck <Unethical Adventurers>

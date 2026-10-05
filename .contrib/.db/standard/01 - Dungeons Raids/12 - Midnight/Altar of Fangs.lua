@@ -83,24 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(63679, {	-- In Case Of Emergency
-						["description"] = createLocalizationString({
-							readable = "Requires 5 Players.\n\nThe Reversal Charms and Ritual Reagent spawn in the 4 poison waterfalls in the 1st boss arena.\nThey are very hard to see, and a Reversal Charm can stack right next to the Ritual Reagent.\nIf you grab the wrong item, click off your buff and pick up the correct one.\nYou need 4 players with Reversal Charms and 1 player with the Ritual Reagent.\n\nClear the room with the Ascendant Serpent mob after the 2nd boss, but do not touch the totems.\nThe 4 Charm holders stand at the totems, and the Reagent holder stands on the mob.\nEveryone targets the serpent and waits for their Extra Action Button.\nThe Reagent holder casts first.\nAfter the Reagent cast completes, all 4 Charm holders cast theirs to finish the transformation.\nThere is no timer after the Reagent finishes, but once the first Charm holder starts their 13-second cast, the other 3 must start before it finishes.\n\nInteract with the new NPC to get your pet and Feat of Strength.",
-							constant = "REQUIRES_5_PLAYERS_THE_REVERSAL_CHARMS_AND",
-							export = true,
-							text = {
-								en = "Requires 5 Players.\n\nThe Reversal Charms and Ritual Reagent spawn in the 4 poison waterfalls in the 1st boss arena.\nThey are very hard to see, and a Reversal Charm can stack right next to the Ritual Reagent.\nIf you grab the wrong item, click off your buff and pick up the correct one.\nYou need 4 players with Reversal Charms and 1 player with the Ritual Reagent.\n\nClear the room with the Ascendant Serpent mob after the 2nd boss, but do not touch the totems.\nThe 4 Charm holders stand at the totems, and the Reagent holder stands on the mob.\nEveryone targets the serpent and waits for their Extra Action Button.\nThe Reagent holder casts first.\nAfter the Reagent cast completes, all 4 Charm holders cast theirs to finish the transformation.\nThere is no timer after the Reagent finishes, but once the first Charm holder starts their 13-second cast, the other 3 must start before it finishes.\n\nInteract with the new NPC to get your pet and Feat of Strength.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要 5 名玩家。\n\n逆转符咒和仪式试剂会在第一个首领竞技场的 4 条毒液瀑布中刷新。\n它们非常难以看清，而且逆转符咒可能就叠在仪式试剂旁边。\n如果你拿错了物品，点掉你的增益并拾取正确的那个。\n你需要 4 名持有逆转符咒的玩家和 1 名持有仪式试剂的玩家。\n\n在第二个首领之后清理有升腾巨蛇怪物的房间，但不要碰图腾。\n4 名符咒持有者站在图腾处，试剂持有者站在怪物身上。\n所有人选中巨蛇并等待自己的额外动作按钮。\n试剂持有者先施放。\n试剂施放完成后，所有 4 名符咒持有者施放自己的符咒以完成变形。\n试剂完成后没有计时，但一旦第一个符咒持有者开始其 13 秒的施放，其他 3 人必须在它完成前开始。\n\n与新 NPC 互动即可获得你的宠物和伟业。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires 5 Players.\n\nThe Reversal Charms and Ritual Reagent spawn in the 4 poison waterfalls in the 1st boss arena.\nThey are very hard to see, and a Reversal Charm can stack right next to the Ritual Reagent.\nIf you grab the wrong item, click off your buff and pick up the correct one.\nYou need 4 players with Reversal Charms and 1 player with the Ritual Reagent.\n\nClear the room with the Ascendant Serpent mob after the 2nd boss, but do not touch the totems.\nThe 4 Charm holders stand at the totems, and the Reagent holder stands on the mob.\nEveryone targets the serpent and waits for their Extra Action Button.\nThe Reagent holder casts first.\nAfter the Reagent cast completes, all 4 Charm holders cast theirs to finish the transformation.\nThere is no timer after the Reagent finishes, but once the first Charm holder starts their 13-second cast, the other 3 must start before it finishes.\n\nInteract with the new NPC to get your pet and Feat of Strength.",
 						["groups"] = { i(279197) },	-- Slitherfang (PET!)
 					}),
 				}),

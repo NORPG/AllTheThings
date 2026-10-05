@@ -8,25 +8,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			i(200452, {	-- Dragonscale Expedition Insignia [Rare]
 				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 				-- #if BEFORE 10.0.7
-				["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
 			i(200453, {	-- Iskaara Tuskarr Insignia [Rare]
 				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 				-- #if BEFORE 10.0.7
-				["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
 			i(200454, {	-- Maruuk Centaur Insignia [Rare]
 				["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 				-- #if BEFORE 10.0.7
-				["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
 			i(200455, {	-- Valdrakken Accord Insignia [Rare]
 				["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				-- #if BEFORE 10.0.7
-				["description"] = "~L.THIS_IS_ONLY_AWARDED_IF_YOUR_CHARACTER_IS",
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
 			-- Note: confirm whether this is raid gear or not, copied over the symlink from weekly vault boxes as template for future
@@ -46,24 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16556, {	-- Great Gourmand of The Ruby Feast
-				["description"] = createLocalizationString({
-					readable = "Every Day a new sequence of Quests will appear.",
-					constant = "EVERY_DAY_A_NEW_SEQUENCE_OF_QUESTS_WILL_APPEAR",
-					export = true,
-					text = {
-						en = "Every Day a new sequence of Quests will appear.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "每天都会出现一系列新的任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Every Day a new sequence of Quests will appear.",
 				["groups"] = {
 					------ Day 1 ------
 					q(71238, {	-- The Ruby Feast!

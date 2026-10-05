@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(TREASURES, {
 			i(180866),	-- Gilded Wader (PET!)
 			o(349797, {	-- Abandoned Curios
-				["description"] = createLocalizationString({
-					readable = "You can reach it with Door of Shadows or by jumping down from the road above.",
-					constant = "YOU_CAN_REACH_IT_WITH_DOOR_OF_SHADOWS_OR_BY",
-					export = true,
-					text = {
-						en = "You can reach it with Door of Shadows or by jumping down from the road above.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你可以使用暗影之门到达，或从上方道路跳下。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You can reach it with Door of Shadows or by jumping down from the road above.",
 				["sourceQuests"] = { 57159 },	-- A Reflection of Truth
 				["coord"] = { 51.8, 59.5, REVENDRETH },
 				["questID"] = 59888,
@@ -65,24 +48,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353791, {	-- Castle Strongbox
-				["description"] = createLocalizationString({
-					readable = "A repeatable treasure chest that does not show up on the minimap.",
-					constant = "A_REPEATABLE_TREASURE_CHEST_THAT_DOES_NOT_SHOW",
-					export = true,
-					text = {
-						en = "A repeatable treasure chest that does not show up on the minimap.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "一个可重复开启的宝箱，不会显示在小地图上。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 				["coords"] = {
 					{ 37.7, 36.5, REVENDRETH },
 					{ 38.3, 39.3, REVENDRETH },
@@ -183,46 +149,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 59883,
 			}),
 			o(349795, {	-- Fleeing Soul's Bundle
-				["description"] = createLocalizationString({
-					readable = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
-					constant = "USE_THE_BOUNDING_SHROOM_AT_47_0_58_3_TO_REACH",
-					export = true,
-					text = {
-						en = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 47.0, 58.3 处使用弹跳蘑菇来够到宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
 				["coord"] = { 46.4, 58.1, REVENDRETH },
 				["questID"] = 59886,
 			}),
 			o(358298, {	-- Forbidden Chamber Lockbox
-				["description"] = createLocalizationString({
-					readable = "Use the Anima Canister to drain anima from Silent Observers, and then use the Extra Action Button next to the Chamber Guardian.",
-					constant = "USE_THE_ANIMA_CANISTER_TO_DRAIN_ANIMA_FROM",
-					export = true,
-					text = {
-						en = "Use the Anima Canister to drain anima from Silent Observers, and then use the Extra Action Button next to the Chamber Guardian.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "使用心能容器从寂静观察者身上抽取心能，然后使用密室守卫旁边的额外动作按钮。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Use the Anima Canister to drain anima from Silent Observers, and then use the Extra Action Button next to the Chamber Guardian.",
 				["crs"] = {
 					173786,	-- Chamber Guardian
 					173838,	-- Silent Observer
@@ -234,24 +166,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(357467, {	-- Forbidden Ink
-				["description"] = createLocalizationString({
-					readable = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
-					constant = "TAKE_THE_CFFFFFFFF_FORBIDDEN_INK_R_FROM_THE",
-					export = true,
-					text = {
-						en = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "把 |cFFFFFFFF[禁忌墨水]|r 从 |cFFFFFFFF37.6, 68.7|r 的图书馆中取出，并把它交给迷失的羽毛笔。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
 				["crs"] = { 173449 },	-- Lost Quill
 				["coord"] = { 37.7, 69.2, REVENDRETH },
 				["questID"] = 61990,
@@ -261,24 +176,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(357565, {	-- Forgotten Angler's Rod
-				["description"] = createLocalizationString({
-					readable = "Click the fishing rod to spawn Muckribbon.",
-					constant = "CLICK_THE_FISHING_ROD_TO_SPAWN_MUCKRIBBON",
-					export = true,
-					text = {
-						en = "Click the fishing rod to spawn Muckribbon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "点击钓鱼竿以刷新污泥丝带。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Click the fishing rod to spawn Muckribbon.",
 				["crs"] = { 173634 },	-- Muckribbon
 				["coord"] = { 73.7, 75.4, REVENDRETH },
 				["questID"] = 62196,
@@ -287,24 +185,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(339283, {	-- Forgotten Noble's Chest
-				["description"] = createLocalizationString({
-					readable = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror that leads to this chest.",
-					constant = "OPENING_A_CRYPT_DOOR_WITH_THE_ATONEMENT_CRYPT",
-					export = true,
-					text = {
-						en = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror that leads to this chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "用赎罪墓穴钥匙打开墓穴之门时，有几率显现一面通往此宝箱的镜子。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal a Mirror that leads to this chest.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 				["coord"] = { 45.8, 47.8, REVENDRETH },
 				["questID"] = 60949,
@@ -318,24 +199,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(349796, {	-- Gilded Plum Chest
-				["description"] = createLocalizationString({
-					readable = "There is a Greedy Soul that wanders up and down the road. Kill it, and it will drop the treasure.",
-					constant = "THERE_IS_A_GREEDY_SOUL_THAT_WANDERS_UP_AND_DOWN",
-					export = true,
-					text = {
-						en = "There is a Greedy Soul that wanders up and down the road. Kill it, and it will drop the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "有一个贪婪的灵魂在路上来回游荡。击杀它就会掉落宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "There is a Greedy Soul that wanders up and down the road. Kill it, and it will drop the treasure.",
 				["crs"] = { 166680 },	-- Greedy Soul
 				["coord"] = { 75.2, 56.1, REVENDRETH },
 				["questID"] = 59887,
@@ -344,7 +208,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353799, {	-- Hopebreaker Pack
-				["description"] = "~L.A_REPEATABLE_TREASURE_CHEST_THAT_DOES_NOT_SHOW",
+				["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 				["coords"] = {
 					{ 37.7, 68.6, REVENDRETH },
 					{ 38.0, 71.0, REVENDRETH },
@@ -425,24 +289,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(337237, {	-- Lost Vault
-				["description"] = createLocalizationString({
-					readable = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
-					constant = "OPENING_A_CRYPT_DOOR_WITH_THE_ATONEMENT_CRYPT_2",
-					export = true,
-					text = {
-						en = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "用赎罪墓穴钥匙打开墓穴之门时，有几率揭示这个宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 				["coords"] = {{70.3, 54.6,REVENDRETH}},	-- one possible spawn, but all doors are in similar area
 				["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
@@ -464,24 +311,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353793, {	-- Parish Chest
-				["description"] = createLocalizationString({
-					readable = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
-					constant = "A_REPEATABLE_TREASURE_CHEST_THAT_DOES_NOT_SHOW_2",
-					export = true,
-					text = {
-						en = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "一个可重复获取的宝箱，不会显示在小地图上。\n\n教区宝箱中的物品也可以从雷文德斯的其他宝藏中拾取，但教区宝箱每天都会刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "A repeatable treasure chest that does not show up on the minimap.\n\nThe items in Parish Chests can be looted from other Revendreth treasures, but Parish Chests are up every day.",
 				["coords"] = {
 					{ 64.9, 43.4, REVENDRETH },
 					{ 65.0, 47.2, REVENDRETH },
@@ -537,72 +367,38 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			-- Objects
 				o(354115, {	-- Pugilist's Prize
-					["description"] = createLocalizationString({
-						readable = "Defeat the mobs to make the treasure lootable.",
-						constant = "DEFEAT_THE_MOBS_TO_MAKE_THE_TREASURE_LOOTABLE",
-						export = true,
-						text = {
-							en = "Defeat the mobs to make the treasure lootable.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击败怪物以使宝藏可被拾取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["coord"] = { 38.4, 29.8, REVENDRETH },
 					["questID"] = 60956,
 					["isDaily"] = true,
 				}),
 				o(354116, {	-- Pugilist's Prize
-					["description"] = "~L.DEFEAT_THE_MOBS_TO_MAKE_THE_TREASURE_LOOTABLE",
+					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["coord"] = { 35.8, 67.5, REVENDRETH },
 					["questID"] = 60705,
 					["isDaily"] = true,	-- repeatable?
 				}),
 				o(354121, {	-- Pugilist's Prize
-					["description"] = "~L.DEFEAT_THE_MOBS_TO_MAKE_THE_TREASURE_LOOTABLE",
+					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["coord"] = { 71.3, 80.2, REVENDRETH },
 					["questID"] = 60951,
 					["isDaily"] = true,	-- repeatable?
 				}),
 				o(354122, {	-- Pugilist's Prize
-					["description"] = "~L.DEFEAT_THE_MOBS_TO_MAKE_THE_TREASURE_LOOTABLE",
+					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["coord"] = { 66.6, 36.3, REVENDRETH },
 					["questID"] = 60952,
 					["isDaily"] = true,
 				}),
 				o(354123, {	-- Pugilist's Prize
-					["description"] = "~L.DEFEAT_THE_MOBS_TO_MAKE_THE_TREASURE_LOOTABLE",
+					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["coord"] = { 48.7, 63.8, REVENDRETH },
 					["questID"] = 60953,
 					["isDaily"] = true,	-- repeatable?
 				}),
 			}),
 			o(358318, {	-- R. Suavel Dredger Portrait
-				["description"] = createLocalizationString({
-					readable = "Take the mirror portal in Thornhill Manor at |cFFFFFFFF58.8, 30.3|r. Once inside Redelav Tower, head all the way to the top floor. The portrait is on a small table at |cFFFFFFFF58.0, 27.8|r.",
-					constant = "TAKE_THE_MIRROR_PORTAL_IN_THORNHILL_MANOR_AT",
-					export = true,
-					text = {
-						en = "Take the mirror portal in Thornhill Manor at |cFFFFFFFF58.8, 30.3|r. Once inside Redelav Tower, head all the way to the top floor. The portrait is on a small table at |cFFFFFFFF58.0, 27.8|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 |cFFFFFFFF58.8, 30.3|r 处使用桑希尔庄园里的镜中传送门。进入雷德拉夫塔后，一路走到顶层。画像就在 |cFFFFFFFF58.0, 27.8|r 的一张小桌子上。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Take the mirror portal in Thornhill Manor at |cFFFFFFFF58.8, 30.3|r. Once inside Redelav Tower, head all the way to the top floor. The portrait is on a small table at |cFFFFFFFF58.0, 27.8|r.",
 				["coords"] = {
 					{ 58.8, 30.3, REVENDRETH },	-- Mirror entrance
 					{ 58.0, 27.8, REVENDRETH },	-- Actual object
@@ -619,7 +415,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353796, {	-- Reliquary of Remembrance
-				["description"] = "~L.A_REPEATABLE_TREASURE_CHEST_THAT_DOES_NOT_SHOW",
+				["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 				["coords"] = {
 					{ 62.5, 29.0, REVENDRETH },
 					{ 63.4, 34.2, REVENDRETH },
@@ -661,46 +457,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(349794, {	-- Remlate's Hidden Cache
-				["description"] = createLocalizationString({
-					readable = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
-					constant = "HUG_THE_CLIFF_FROM_THE_NEARBY_FLIGHT_PATH",
-					export = true,
-					text = {
-						en = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "从附近飞行点沿建筑贴着悬崖飞。\n掉落 2 件随机的绿色区域掉落物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
 				["coord"] = { 61.5, 58.6, REVENDRETH },
 				["questID"] = 59885,
 			}),
 			o(351487, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r. On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r. Click it to open up a secret passage beneath the rug. To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
-					constant = "FIND_THE_SMALL_ALCOVE_AT_CFFFFFFFF65_7_42_9_R",
-					export = true,
-					text = {
-						en = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r. On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r. Click it to open up a secret passage beneath the rug. To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在|cFFFFFFFF65.7, 42.9|r找到小壁龛。在深红色椭圆形地毯后面的墙上有一根|cFFFFFFFF闪烁的蜡烛|r。点击它可以打开地毯下方的密道。收集宝藏后要离开的话，点击你进入时楼梯右侧的蜡烛。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r. On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r. Click it to open up a secret passage beneath the rug. To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
 				["coord"] = { 66.5, 42.8, REVENDRETH },
 				["questID"] = 60197,
 				["isDaily"] = true,	-- repeatable??
@@ -712,24 +474,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351540, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\nRequires |cFFFFD700It Used to Be Quiet Here|r completed in order to see hammers.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
-					constant = "FIND_A_CFFFFFFFFDREDGER_S_HAMMER_R_IN_THE",
-					export = true,
-					text = {
-						en = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\nRequires |cFFFFD700It Used to Be Quiet Here|r completed in order to see hammers.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在周围区域找到一把|cFFFFFFFF泥仆之锤|r（它们会闪光），用它打开宝藏前方的|cFFFFFFFF卡住的门|r。\n需要完成|cFFFFD700这里曾经很安静|r才能看到锤子。\n\n如果门在你身后关上，请对墙壁使用|cFFFFFFFF逃生铲|r。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Find a |cFFFFFFFFDredger's Hammer|r in the surrounding area (they sparkle), and use it to open the |cFFFFFFFFJammed Door|r in front of the treasure.\nRequires |cFFFFD700It Used to Be Quiet Here|r completed in order to see hammers.\n\nIf the door closes behind you, use the |cFFFFFFFFEscape Shovel|r on the wall.",
 				["sourceQuests"] = { 60487 },	-- It Used to Be Quiet Here
 				["coord"] = { 73.8, 46.3, REVENDRETH },
 				["questID"] = 60196,
@@ -741,24 +486,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351541, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r. Downstairs, go through the right-hand door. On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r. Click the book, and the treasure will appear.",
-					constant = "ENTER_THE_CRYPT_AT_CFFFFFFFF41_9_50_0_R",
-					export = true,
-					text = {
-						en = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r. Downstairs, go through the right-hand door. On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r. Click the book, and the treasure will appear.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在|cFFFFFFFF41.9, 50.0|r进入墓穴。下楼后穿过右侧的门。房间左侧有一个书架，上面放着一本|cFFFFFFFF毫无特色的书|r。点击这本书，宝藏就会出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r. Downstairs, go through the right-hand door. On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r. Click the book, and the treasure will appear.",
 				["coord"] = { 42.5, 50.3, REVENDRETH },
 				["questID"] = 60198,
 				["isDaily"] = true,
@@ -770,24 +498,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351542, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r. Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
-					constant = "DESTROY_THE_CFFFFFFFFCRACKED_CRATE_R_IN_THE",
-					export = true,
-					text = {
-						en = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r. Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "摧毁|cFFFFFFFF74.6, 62.6|r处小凹室中的|cFFFFFFFF破裂的箱子|r。转动里面的|cFFFFFFFF隐藏阀门|r，然后在地面打开的密室中找到宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r. Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 				["coord"] = { 74.0, 61.9, REVENDRETH },
 				["questID"] = 60199,
 				["isDaily"] = true,
@@ -805,24 +516,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = { i(180173) },	-- House Grinchin Ring
 			}),
 			o(351543, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
-					constant = "DO_NOT_TAKE_THE_MIRROR_PORTAL_TO_THE_RIGHT_OF",
-					export = true,
-					text = {
-						en = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "不要走镜子传送门！镜子右侧有一条|cFFFFFFFF悬挂的锁链|r。点击锁链会把你拉到宝藏上方的小凹室。点击桌上的|cFFFFFFFF格林钦书法套装|r，拾取|cFFFFFFFF格林钦家族戒指|r，即可拾取宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
 				["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
 				["coord"] = { 50.2, 49.0, REVENDRETH },
 				["isDaily"] = true,
@@ -835,24 +529,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351544, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r. Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door. The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure. There are two more Venthyr guarding the chest.",
-					constant = "ENTER_THE_CRYPT_AT_CFFFFFFFF55_2_34_7_R",
-					export = true,
-					text = {
-						en = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r. Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door. The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure. There are two more Venthyr guarding the chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在|cFFFFFFFF55.2, 34.7|r进入墓穴。下楼后穿过右侧的门并击败达里安领主。\n\n当你转身离开房间时，会看到门两侧各有一幅画。右侧的那幅是|cFFFFFFFF闪烁的画像|r，它后面藏着一个暗藏的拉杆，可以打开通往宝藏的门。还有两个温西尔看守着宝箱。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r. Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door. The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure. There are two more Venthyr guarding the chest.",
 				["coord"] = { 55.3, 35.9, REVENDRETH },
 				["questID"] = 60201,
 				["isDaily"] = true,
@@ -869,24 +546,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351545, {	-- Secret Treasure
-				["description"] = createLocalizationString({
-					readable = "Lord Scowl is imprisoned in a cage next to the treasure. Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
-					constant = "LORD_SCOWL_IS_IMPRISONED_IN_A_CAGE_NEXT_TO_THE",
-					export = true,
-					text = {
-						en = "Lord Scowl is imprisoned in a cage next to the treasure. Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "怒目领主被囚禁在宝藏旁边的笼子里。从附近倒下的笼子里捡起一本书，爬上树，把书交给怒目领主，他就会把宝藏踢到地面上给你。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Lord Scowl is imprisoned in a cage next to the treasure. Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
 				["crs"] = { 169993 },	-- Lord Scowl
 				["provider"] = { "i", 180220 },	-- Historical Treatise
 				["coord"] = { 27.7, 48.7, REVENDRETH },
@@ -911,7 +571,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(337241, {	-- Stashed Equipment
-				["description"] = "~L.OPENING_A_CRYPT_DOOR_WITH_THE_ATONEMENT_CRYPT_2",
+				["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 				["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
 				["groups"] = {
@@ -928,7 +588,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(353797, {	-- Stone Legion Supplies
-				["description"] = "~L.A_REPEATABLE_TREASURE_CHEST_THAT_DOES_NOT_SHOW",
+				["description"] = "A repeatable treasure chest that does not show up on the minimap.",
 				["coords"] = {
 					{ 26.3, 13.3, REVENDRETH },
 					{ 26.4, 17.2, REVENDRETH },
@@ -1057,24 +717,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isDaily"] = true,
 				}),
 				o(354190, {	-- Stoneborn Satchel
-					["description"] = createLocalizationString({
-						readable = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
-						constant = "YOU_CAN_JUMP_DOWN_FROM_THE_LEDGE_ABOVE_OR_USE",
-						export = true,
-						text = {
-							en = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以从上方平台跳下，或使用|cFFFFFFFF52.5, 59.2|r处的弹跳蘑菇来抵达宝藏。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
 					["coord"] = { 53.6, 57.3, REVENDRETH },
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
@@ -1099,24 +742,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			o(357487, {	-- Stylish Parasol
-				["description"] = createLocalizationString({
-					readable = "Go up the stairs that start at 41.3, 44.9.",
-					constant = "GO_UP_THE_STAIRS_THAT_START_AT_41_3_44_9",
-					export = true,
-					text = {
-						en = "Go up the stairs that start at 41.3, 44.9.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "沿着从 41.3, 44.9 开始的楼梯向上走。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Go up the stairs that start at 41.3, 44.9.",
 				["coord"] = { 38.4, 44.2, REVENDRETH },
 				["questID"] = 61999,
 				["groups"] = {
@@ -1125,24 +751,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(357697, {	-- Taskmaster's Trove
-				["description"] = createLocalizationString({
-					readable = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r to see the Chest.",
-					constant = "USE_THE_INGRESS_AND_EGRESS_RITES_AT_CFFFFFFFF63",
-					export = true,
-					text = {
-						en = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r to see the Chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 |cFFFFFFFF63.0, 72.1|r 处使用进出仪式即可看到宝箱。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r to see the Chest.",
 				["coords"] = {
 					{ 63.0, 72.1, REVENDRETH },
 					{ 62.8, 75.3, REVENDRETH },
@@ -1161,24 +770,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(352703, {	-- The Harvest
-				["description"] = createLocalizationString({
-					readable = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n- 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r / |cFFFFFFFF41.6, 41.2|r\n- 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
-					constant = "READ_THE_CFFFFFFFFNOTE_WHAT_SAYS_WHERE_YOU_PUT",
-					export = true,
-					text = {
-						en = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n- 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r / |cFFFFFFFF41.6, 41.2|r\n- 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "阅读宝藏附近的|cFFFFFFFF写着钥匙存放位置的纸条|r，以弄清钥匙在哪里。\n\n- “在那些大灯之一旁边” = |cFFFFFFFF43.8, 41.4|r / |cFFFFFFFF41.6, 41.2|r\n- “在另一个仓库里” = |cFFFFFFFF38.2, 43.7|r",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n- 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r / |cFFFFFFFF41.6, 41.2|r\n- 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
 				["coord"] = { 38.5, 39.9, REVENDRETH },
 				["cost"] = { { "i", 179823, 1 } },	-- The Harvest Key
 				["questID"] = 60579,
@@ -1240,24 +832,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(349793, {	-- Wayfarer's Abandoned Spoils
-				["description"] = createLocalizationString({
-					readable = "Use the nearby Bounding Shroom to get up to the treasure.",
-					constant = "USE_THE_NEARBY_BOUNDING_SHROOM_TO_GET_UP_TO_THE",
-					export = true,
-					text = {
-						en = "Use the nearby Bounding Shroom to get up to the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "使用附近的弹跳蘑菇登上宝藏处。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Use the nearby Bounding Shroom to get up to the treasure.",
 				["coord"] = { 68.4, 64.4, REVENDRETH },
 				["questID"] = 59884,
 			}),

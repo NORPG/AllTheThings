@@ -16,65 +16,14 @@ root(ROOTS.Zones, {
 				["groups"] = {
 					pet(706),	-- Bandicoon (PET!)
 					pet(1809, {	-- Crystalline Broodling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found around Falanaar.",
-							constant = "FOUND_AROUND_FALANAAR",
-							export = true,
-							text = {
-								en = "Found around Falanaar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在法拉纳尔周围可找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found around Falanaar.",
 						["coord"] = { 21.0, 41.0, SURAMAR },
 					}),
 					pet(1810, {	-- Thornclaw Broodling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found in Felsoul Hold.",
-							constant = "FOUND_IN_FELSOUL_HOLD",
-							export = true,
-							text = {
-								en = "Found in Felsoul Hold.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于邪魂堡垒。",
-								-- TODO: tw = "",
-							},
-						})
+						["description"] = "Found in Felsoul Hold."
 					}),
 					pet(1807, {	-- Vicious Broodling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found in Felsoul Hold. May be elusive, shares spawn with Thornclaw Broodling.",
-							constant = "FOUND_IN_FELSOUL_HOLD_MAY_BE_ELUSIVE_SHARES",
-							export = true,
-							text = {
-								en = "Found in Felsoul Hold. May be elusive, shares spawn with Thornclaw Broodling.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于邪魂堡垒。可能较难遇到，与刺爪幼蛛共享刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found in Felsoul Hold. May be elusive, shares spawn with Thornclaw Broodling.",
 					}),
 				},
 			})),

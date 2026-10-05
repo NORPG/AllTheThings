@@ -21,24 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			ach(40628),	-- Notable Machines (automated)
 			ach(40473),	-- Not So Quick Fix (automated)
 			ach(40731, {	-- Panhandled
-				["description"] = createLocalizationString({
-					readable = "Kill Overworked Cooks, click Frying Pans, quickly hit other nearby creatures.",
-					constant = "KILL_OVERWORKED_COOKS_CLICK_FRYING_PANS_QUICKLY",
-					export = true,
-					text = {
-						en = "Kill Overworked Cooks, click Frying Pans, quickly hit other nearby creatures.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "击杀过度劳累的厨师，点击煎锅，快速攻击附近的其他生物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Kill Overworked Cooks, click Frying Pans, quickly hit other nearby creatures.",
 				["_nocoordshift"] = true,
 				["coords"] = {
 					{ 54.2, 76.8, THE_RINGING_DEEPS },

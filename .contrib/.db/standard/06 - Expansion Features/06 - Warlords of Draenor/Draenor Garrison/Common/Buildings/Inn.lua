@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(36, {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
 					n(ACHIEVEMENTS, {
 						ach(9703, {		-- Stay Awhile and Listen
-							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["sym"] = {{ "achievement_criteria" }},
 							["groups"] = {
 								a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
@@ -235,24 +235,7 @@ root(ROOTS.ExpansionFeatures,
 							follower(172, {	-- Soulare of Andorhal
 								i(117573, {	-- Wayfarer's Bonfire (TOY!)
 									["cr"] = 82717,	-- Soulare of Andorhal
-									["description"] = createLocalizationString({
-										readable = "|cff3399ffStep 1:|r Recruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.\n|cff3399ffStep 2:|r Do a |cFFFFFFFF/tired|r emote and he will award the toy.\n|cff3399ffNote:|r Can get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.",
-										constant = "CFF3399FFSTEP_1_R_RECRUIT_CFFFFD700SOULARE_OF",
-										export = true,
-										text = {
-											en = "|cff3399ffStep 1:|r Recruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.\n|cff3399ffStep 2:|r Do a |cFFFFFFFF/tired|r emote and he will award the toy.\n|cff3399ffNote:|r Can get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "|cff3399ff第 1 步：|r 使用魔法减益或狂野侵略在旅店招募 |cFFFFD700安多哈尔的索拉雷|r。\n|cff3399ff第 2 步：|r 做出 |cFFFFFFFF/tired|r 表情，他就会给予该玩具。\n|cff3399ff注意：|r 可通过拜访他人的要塞获得，现在双方阵营的玩家都可以在暴风城的 |cFFFFFFFF38.2, 64.6|r 处拜访索拉雷并对他做表情来获得该玩具。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "|cff3399ffStep 1:|r Recruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.\n|cff3399ffStep 2:|r Do a |cFFFFFFFF/tired|r emote and he will award the toy.\n|cff3399ffNote:|r Can get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.",
 								}),
 							}),
 							follower(452),	-- Sprynt Starkflange
@@ -485,7 +468,7 @@ root(ROOTS.ExpansionFeatures,
 							follower(172, {	-- Soulare of Andorhal
 								i(117573, {	-- Wayfarer's Bonfire (TOY!)
 									["cr"] = 82717,	-- Soulare of Andorhal
-									["description"] = "~L.CFF3399FFSTEP_1_R_RECRUIT_CFFFFD700SOULARE_OF",
+									["description"] = "|cff3399ffStep 1:|r Recruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.\n|cff3399ffStep 2:|r Do a |cFFFFFFFF/tired|r emote and he will award the toy.\n|cff3399ffNote:|r Can get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.",
 								}),
 							}),
 							follower(120),	-- Su-Lai Snowpetal
@@ -545,29 +528,12 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(QUESTS, {
 						i(119036, {	-- Box of Storied Treasures [4]
-							["description"] = createLocalizationString({
-								readable = "Commonly rewarded from quests provided from the Inn.",
-								constant = "COMMONLY_REWARDED_FROM_QUESTS_PROVIDED_FROM_THE",
-								export = true,
-								text = {
-									en = "Commonly rewarded from quests provided from the Inn.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "通常由旅店提供的任务奖励获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Commonly rewarded from quests provided from the Inn.",
 							["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC,
 								HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 						}),
 						i(119037, {	-- Supply of Storied Rarities [16]
-							["description"] = "~L.COMMONLY_REWARDED_FROM_QUESTS_PROVIDED_FROM_THE",
+							["description"] = "Commonly rewarded from quests provided from the Inn.",
 							["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC,
 								HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 						}),

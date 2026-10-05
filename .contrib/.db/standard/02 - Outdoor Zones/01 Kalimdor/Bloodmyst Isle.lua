@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						recipe(5394),	-- Healing Stream Totem
 						i(5177, {	-- Water Totem
-							["description"] = "~L.YOU_MUST_KEEP_THIS_IN_YOUR_BAGS_FOREVER",
+							["description"] = "You must keep this in your bags forever.",
 						}),
 					},
 				}),
@@ -1013,24 +1013,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9672, {	-- The Bloodcurse Legacy [Mailbox]
-					["description"] = createLocalizationString({
-						readable = "The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",
-						constant = "THE_LETTER_IS_MAILED_TO_YOU_WHEN_YOU_COMPLETE",
-						export = true,
-						text = {
-							en = "The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成|cFFFFD700紧急送货|r任务时，这封信会邮寄给你。如果你放弃了它，可以在|cFFFFD700秘蓝岛|r的|cFFFFD700奥德修斯登陆点|r重新获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",
 					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["altQuests"] = { 9751 },	-- The Bloodcurse Legacy [Abandoned Other Quest]
 					["provider"] = { "i", 24132 },	-- A Letter from the Admiral
@@ -1039,24 +1022,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9751, {	-- The Bloodcurse Legacy [Abandoned Other Quest]
-					["description"] = createLocalizationString({
-						readable = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
-						constant = "THIS_QUEST_IS_OFFERED_TO_YOU_IF_YOU_DON_T",
-						export = true,
-						text = {
-							en = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你没有在邮箱中收到“海军上将的来信”，或将其摧毁并放弃了该任务，则会向你提供此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
 					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["altQuests"] = { 9672 },	-- The Bloodcurse Legacy [Mailbox]
 					["qg"] = 17240,	-- Admiral Odesyus
@@ -1399,24 +1365,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cr"] = 17496,	-- Cruelfin
 				}),
 				i(23900, {	-- Tzerak's Armor Plate
-					["description"] = createLocalizationString({
-						readable = "Tzerak spawns at 38.5, 82.3, on the demon seal, then walks through Nazzivian to get to the monument at 36.6, 72.5.",
-						constant = "TZERAK_SPAWNS_AT_38_5_82_3_ON_THE_DEMON_SEAL",
-						export = true,
-						text = {
-							en = "Tzerak spawns at 38.5, 82.3, on the demon seal, then walks through Nazzivian to get to the monument at 36.6, 72.5.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "提泽拉克在 38.5, 82.3 的恶魔封印处刷新，然后穿过纳兹维安走到 36.6, 72.5 的纪念碑处。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Tzerak spawns at 38.5, 82.3, on the demon seal, then walks through Nazzivian to get to the monument at 36.6, 72.5.",
 					["coords"] = {
 						{ 38.5, 82.3, BLOODMYST_ISLE },
 						{ 36.6, 72.5, BLOODMYST_ISLE },

@@ -271,24 +271,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			}),
 		}),
 		n(103675, {	-- Felhide Gargantuan
-			["description"] = createLocalizationString({
-				readable = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
-				constant = "THESE_MOBS_ARE_ONLY_AVAILABLE_DURING_A_WORLD",
-				export = true,
-				text = {
-					en = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这些怪物只在世界任务期间出现。它们只能被剥皮一次，与培根片烹饪任务类似。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
 			["groups"] = {
 				i(124116),	-- Felhide
 				header(HEADERS.Spell, 194167, {	-- Felhide [Rank 1]
@@ -360,24 +343,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		header(HEADERS.Spell, 257153, {	-- Bone Gathering [Rank 2]
 			q(52227, {	-- Bone Needle
-				["description"] = createLocalizationString({
-					readable = "Requires 50 Kul Tiran Skinning.",
-					constant = "REQUIRES_50_KUL_TIRAN_SKINNING",
-					export = true,
-					text = {
-						en = "Requires 50 Kul Tiran Skinning.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 50 点库尔提拉斯剥皮技能。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 50 Kul Tiran Skinning.",
 				["provider"] = { "n", 136061 },	-- Camilla Darksky
 				["coord"] = { 75.8, 13.1, BORALUS },
 				["requireSkill"] = SKINNING,
@@ -388,24 +354,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 			q(52216, {	-- Hexoskeleton
-				["description"] = createLocalizationString({
-					readable = "Requires 50 Zandalari Skinning",
-					constant = "REQUIRES_50_ZANDALARI_SKINNING",
-					export = true,
-					text = {
-						en = "Requires 50 Zandalari Skinning",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 50 点赞达拉剥皮技能",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 50 Zandalari Skinning",
 				["provider"] = { "n", 122699 },	-- Rana the Cutta
 				["coord"] = { 43.8, 34.7, DAZARALOR },
 				["requireSkill"] = SKINNING,
@@ -418,24 +367,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		}),
 		header(HEADERS.Spell, 257154, {	-- Bone Gathering [Rank 3]
 			q(52228, {	-- Atal'Dazar: An Unbreakable Bone Needle
-				["description"] = createLocalizationString({
-					readable = "Requires 150 Kul Tiran Skinning.",
-					constant = "REQUIRES_150_KUL_TIRAN_SKINNING",
-					export = true,
-					text = {
-						en = "Requires 150 Kul Tiran Skinning.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 150 点库尔提拉斯剥皮。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 150 Kul Tiran Skinning.",
 				["provider"] = { "n", 136061 },	-- Camilla Darksky
 				["coord"] = { 75.8, 13.1, BORALUS },
 				["requireSkill"] = SKINNING,
@@ -446,24 +378,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 			q(52217, {	-- Loa Fit For A King
-				["description"] = createLocalizationString({
-					readable = "Requires 150 Zandalari Skinning",
-					constant = "REQUIRES_150_ZANDALARI_SKINNING",
-					export = true,
-					text = {
-						en = "Requires 150 Zandalari Skinning",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 150 点赞达拉剥皮",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 150 Zandalari Skinning",
 				["sourceQuest"] = 52216,	-- Hexoskeleton
 				["provider"] = { "n", 122699 },	-- Rana the Cutta
 				["coord"] = { 43.8, 34.7, DAZARALOR },
@@ -508,7 +423,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		header(HEADERS.Spell, 257147, {	-- Leather Gathering [Rank 2]
 			q(52223, {	-- Brinepinch
-				["description"] = "~L.REQUIRES_50_KUL_TIRAN_SKINNING",
+				["description"] = "Requires 50 Kul Tiran Skinning.",
 				["provider"] = { "n", 136061 },	-- Camilla Darksky
 				["coord"] = { 75.8, 13.1, BORALUS },
 				["requireSkill"] = SKINNING,
@@ -519,7 +434,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 			q(51575, {	-- Lost But Not Forgotten
-				["description"] = "~L.REQUIRES_50_ZANDALARI_SKINNING",
+				["description"] = "Requires 50 Zandalari Skinning",
 				["provider"] = { "n", 122699 },	-- Rana the Cutta
 				["coord"] = { 43.8, 34.7, DAZARALOR },
 				["requireSkill"] = SKINNING,
@@ -532,24 +447,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		}),
 		header(HEADERS.Spell, 257148, {	-- Leather Gathering [Rank 3]
 			q(52213, {	-- Ancient Skinning Knife
-				["description"] = createLocalizationString({
-					readable = "Requires 150 Zandalari Skinning to get the item.",
-					constant = "REQUIRES_150_ZANDALARI_SKINNING_TO_GET_THE_ITEM",
-					export = true,
-					text = {
-						en = "Requires 150 Zandalari Skinning to get the item.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 150 点赞达拉剥皮才能获得该物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 150 Zandalari Skinning to get the item.",
 				["sourceQuest"] = 51575,	-- Lost But Not Forgotten
 				["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
 				["races"] = HORDE_ONLY,
@@ -558,24 +456,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 			q(52224, {	-- Ivory Handled Dagger
-				["description"] = createLocalizationString({
-					readable = "Requires 150 Kul Tiran Skinning to get the item.",
-					constant = "REQUIRES_150_KUL_TIRAN_SKINNING_TO_GET_THE_ITEM",
-					export = true,
-					text = {
-						en = "Requires 150 Kul Tiran Skinning to get the item.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 150 点库尔提拉斯剥皮才能获得该物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 150 Kul Tiran Skinning to get the item.",
 				["sourceQuest"] = 52223,	-- Brinepinch
 				["provider"] = { "i", 161424 },	-- Ivory Handled Dagger
 				["races"] = ALLIANCE_ONLY,
@@ -586,7 +467,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		}),
 		header(HEADERS.Spell, 257150, {	-- Scale Gathering [Rank 2]
 			q(52225, {	-- In Pursuit of Fashion
-				["description"] = "~L.REQUIRES_50_KUL_TIRAN_SKINNING",
+				["description"] = "Requires 50 Kul Tiran Skinning.",
 				["provider"] = { "n", 136061 },	-- Camilla Darksky
 				["coord"] = { 75.8, 13.1, BORALUS },
 				["requireSkill"] = SKINNING,
@@ -597,7 +478,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 			q(52214, {	-- Ceremonial Vestments
-				["description"] = "~L.REQUIRES_50_ZANDALARI_SKINNING",
+				["description"] = "Requires 50 Zandalari Skinning",
 				["provider"] = { "n", 122699 },	-- Rana the Cutta
 				["coord"] = { 43.8, 34.7, DAZARALOR },
 				["requireSkill"] = SKINNING,
@@ -610,7 +491,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		}),
 		header(HEADERS.Spell, 257151, {	-- Scale Gathering [Rank 3]
 			q(52226, {	-- Turtle Soup
-				["description"] = "~L.REQUIRES_150_KUL_TIRAN_SKINNING",
+				["description"] = "Requires 150 Kul Tiran Skinning.",
 				["provider"] = { "n", 136061 },	-- Camilla Darksky
 				["coord"] = { 75.8, 13.1, BORALUS },
 				["requireSkill"] = SKINNING,
@@ -621,7 +502,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 			q(52215, {	-- A Thicker Thread
-				["description"] = "~L.REQUIRES_150_ZANDALARI_SKINNING",
+				["description"] = "Requires 150 Zandalari Skinning",
 				["sourceQuest"] = 52214,	-- Ceremonial Vestments
 				["provider"] = { "n", 122699 },	-- Rana the Cutta
 				["coord"] = { 43.8, 34.7, DAZARALOR },
@@ -818,24 +699,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		})),
 		n(QUESTS, {
 			q(70363, {	-- Dragon Isles Skinning
-				["description"] = createLocalizationString({
-					readable = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
-					constant = "DO_NOT_SKIN_ANY_DRAGON_ISLES_CREATURES_THIS",
-					export = true,
-					text = {
-						en = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "不要剥取任何巨龙群岛生物的材料。该任务只能在学习巨龙群岛剥皮之前接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
 				["provider"] = { "n", 192558 },	-- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
@@ -878,7 +742,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			q(70620),	-- Scaling Up
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 } }, }, {
 				r(383090),	-- Aileron Seamoth Lure
 				r(383128),	-- Bottled Pheromones
@@ -909,7 +773,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			i(199128),	-- Skinning Field Notes
 			q(74114, {	-- DF Inscription Order: Skinning
 				["name"] = "DF Inscription Order: Skinning",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
 			}),
 			q(70381, {	-- DF Weekly Skinning Knowledgepoint #1
@@ -969,7 +833,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			q(82992),	-- Stormcharged Goods
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }} }, {
 				r(442647),	-- Arathor Hammerfish Lure
 				r(442654),	-- Beast Lure Scent
@@ -1058,7 +922,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		},{
 			q(83734, {	-- TWW Inscription Order: Skinning
 				["name"] = "TWW Inscription Order: Skinning",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222649 },	-- Algari Treatise on Skinning
 			}),
 			q(81459, {	-- TWW Weekly Skinning Knowledgepoint #1
@@ -1134,7 +998,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			q(93711),	-- The Chill of the Void
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.SKINNING, 1 }} }, {
 				r(1226037),	-- Carve Meat
 				r(1225948),	-- Grand Beast Lure
@@ -1199,7 +1063,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		},{
 			q(95136, {	-- MID Inscription Order: Skinning
 				["name"] = "MID Inscription Order: Skinning",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 245828 },	-- Thalassian Treatise on Skinning
 			}),
 			q(88534, {	-- MID Weekly Skinning Knowledgepoint #1

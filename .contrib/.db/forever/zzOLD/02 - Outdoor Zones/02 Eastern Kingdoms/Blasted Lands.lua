@@ -371,66 +371,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(7846, {	-- Teremus the Devourer
-					["description"] = createLocalizationString({
-						readable = "Patrols all over the zone. You may even find him in Stormwind thanks to clever kiting by a Hunter.",
-						constant = "PATROLS_ALL_OVER_THE_ZONE_YOU_MAY_EVEN_FIND_HIM",
-						export = true,
-						text = {
-							en = "Patrols all over the zone. You may even find him in Stormwind thanks to clever kiting by a Hunter.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在整个区域四处巡逻。由于猎人巧妙的风筝，你甚至可能在暴风城找到他。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Patrols all over the zone. You may even find him in Stormwind thanks to clever kiting by a Hunter.",
 				}),
 			}),
 			n(REWARDS, {
 				i(10752, {	-- Emerald Encrusted Chest
-					["description"] = createLocalizationString({
-						readable = "Reward for turning in Flawless Draenethyst Sphere to Kum'isha the Collector.\n\nContains a random green, blue, or epic world drop item.",
-						constant = "REWARD_FOR_TURNING_IN_FLAWLESS_DRAENETHYST",
-						export = true,
-						text = {
-							en = "Reward for turning in Flawless Draenethyst Sphere to Kum'isha the Collector.\n\nContains a random green, blue, or epic world drop item.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将“完美的德拉诺什宝珠”交给收藏者库米沙的奖励。\n\n内含一件随机的绿色、蓝色或史诗品质的世界掉落物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Reward for turning in Flawless Draenethyst Sphere to Kum'isha the Collector.\n\nContains a random green, blue, or epic world drop item.",
 				}),
 				i(12122, {	-- Kum'isha's Junk
-					["description"] = createLocalizationString({
-						readable = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
-						constant = "REWARD_FOR_TURNING_IN_AN_IMPERFECT_DRAENETHYST",
-						export = true,
-						text = {
-							en = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将“不完美的德拉诺什碎片”交给收藏者库米沙的奖励。\n\n内含一件随机的绿色世界掉落物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
 				}),
 			}),
 			n(VENDORS, {
@@ -469,24 +418,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(8244, {	-- Flawless Draenethyst Sphere
-					["description"] = createLocalizationString({
-						readable = "A very rare zone drop. It has a higher chance to drop from Rare Creatures.",
-						constant = "A_VERY_RARE_ZONE_DROP_IT_HAS_A_HIGHER_CHANCE_TO",
-						export = true,
-						text = {
-							en = "A very rare zone drop. It has a higher chance to drop from Rare Creatures.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "非常稀有的区域掉落物。从稀有生物身上掉落的几率更高。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "A very rare zone drop. It has a higher chance to drop from Rare Creatures.",
 					["crs"] = {
 						7846,	-- Teremus the Devourer
 						7664,	-- Razelikh the Defiler
@@ -502,24 +434,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["recipeID"] = 18540,	-- Ritual of Doom
 				}),
 				i(10593, {	-- Imperfect Draenethyst Fragment (drops from pretty much the whole zone)
-					["description"] = createLocalizationString({
-						readable = "A rare zone drop from any creature in the zone.",
-						constant = "A_RARE_ZONE_DROP_FROM_ANY_CREATURE_IN_THE_ZONE",
-						export = true,
-						text = {
-							en = "A rare zone drop from any creature in the zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该区域任何生物掉落的稀有区域掉落物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "A rare zone drop from any creature in the zone.",
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					["timeline"] = { ADDED_1_11_1 },

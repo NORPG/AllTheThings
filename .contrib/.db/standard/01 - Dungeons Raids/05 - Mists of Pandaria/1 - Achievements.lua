@@ -275,24 +275,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- #endif
 			-- #if ANYCLASSIC
 			ach(62055, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_2, REMOVED_5_5_3 } }, {	-- The Mistwalker (Season 1)
-				["description"] = createLocalizationString({
-					readable = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 1 to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-					constant = "PLAYERS_MUST_COMPLETE_CFFE50D12EACH_R_DUNGEON",
-					export = true,
-					text = {
-						en = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 1 to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "玩家必须在第 1 赛季期间，在时限内完成下列|cFFE50D12每一个：|r地下城，才能成为迷雾行者。\n\n青龙寺：8 分 30 秒\n\n风暴烈酒酿造厂：6 分 30 秒\n\n残阳关：5 分 30 秒\n\n影踪禅院：10 分 30 秒\n\n围攻砮皂寺：10 分 15 秒\n\n魔古山宫殿：6 分 45 秒\n\n通灵学院：7 分 15 秒\n\n血色大厅：4 分 15 秒\n\n血色修道院：5 分 30 秒",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 1 to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
 					title(255),	-- Mistwalker <Name>
 					i(248742),	-- Reins of the Celestial Riding Tiger (MOUNT!)

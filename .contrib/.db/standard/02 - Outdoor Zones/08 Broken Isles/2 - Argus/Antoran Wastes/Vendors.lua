@@ -10,24 +10,7 @@ root(ROOTS.Zones, {
 			m(ANTORAN_WASTES, {
 				n(VENDORS, {
 					i(INTACT_DEMON_EYE, {
-						["description"] = createLocalizationString({
-							readable = "These eyes drop off of any demon on Argus while you have the Agent of the All-Seer buff, which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Guards will be unfriendly to you while you have the buff.",
-							constant = "THESE_EYES_DROP_OFF_OF_ANY_DEMON_ON_ARGUS_WHILE",
-							export = true,
-							text = {
-								en = "These eyes drop off of any demon on Argus while you have the Agent of the All-Seer buff, which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Guards will be unfriendly to you while you have the buff.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在拥有全知者的代理人增益时，这些眼睛会从阿古斯上的任意恶魔身上掉落；该增益可以通过点击全知者聚焦器获得。警告：你会损失 90% 的生命值，所以如果你生命值不满，可能会死！拥有该增益时，卫兵会对你变为不友好。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "These eyes drop off of any demon on Argus while you have the Agent of the All-Seer buff, which can be obtained by clicking on the All-Seer Focus. WARNING: You will lose 90% health, so if you are missing any health, you might die! Guards will be unfriendly to you while you have the buff.",
 						["coords"] = {
 							{ 67.34, 48.11, ANTORAN_WASTES },	-- Ven'orn's Lair
 							{ 64.41, 21.03, ANTORAN_WASTES },	-- Defiled Path

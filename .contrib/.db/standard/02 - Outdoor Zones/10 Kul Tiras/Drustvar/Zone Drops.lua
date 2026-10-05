@@ -17,24 +17,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["cr"] = 135541,	-- Bilgewater Incinerator
 			}),
 			n(137468, {	-- Gorging Raven
-				["description"] = createLocalizationString({
-					readable = "Coords represent relative bounds of the area.",
-					constant = "COORDS_REPRESENT_RELATIVE_BOUNDS_OF_THE_AREA",
-					export = true,
-					text = {
-						en = "Coords represent relative bounds of the area.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "坐标代表该区域的相对范围。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Coords represent relative bounds of the area.",
 				["coords"] = {
 					{ 25.8, 19.8, DRUSTVAR },
 					{ 24.2, 30.4, DRUSTVAR },

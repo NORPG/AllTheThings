@@ -45,24 +45,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.MOP, { appl
 			}),
 			-- #endif
 			i(90041, {	-- Spoils of Theramore
-				["description"] = createLocalizationString({
-					readable = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
-					constant = "THIS_WAS_A_REWARD_FOR_COMPLETING_THE_THERAMORE",
-					export = true,
-					text = {
-						en = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是在熊猫人之谜前夕补丁期间完成塞拉摩的陷落场景战役的奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
 				["groups"] = {
 					-- #if BEFORE 6.0.2
 					-- This was added to the Lunar Festival with 6.0.2
@@ -104,24 +87,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.MOP, { appl
 		-- #if AFTER 6.0.2
 		n(VENDORS, {
 			n(63546, {	-- Zidormi
-				["description"] = createLocalizationString({
-					readable = "Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",
-					constant = "SELLS_THE_FOLLOWING_ITEMS_IF_YOU_COMPLETED_THE",
-					export = true,
-					text = {
-						en = "Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你在熊猫人之谜前夕期间用当前角色完成了 85 级版本的塞拉摩的沦陷场景战役，即可购买以下物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",
 				["coord"] = { 55.8, 49.6, DUSTWALLOW_MARSH },
 				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {

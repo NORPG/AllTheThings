@@ -110,24 +110,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["groups"] = appendAllGroups(
 				{
 					i(3371, {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm and becomes the one vial to use in crafting recipes, deprecating all other vials.
-						["description"] = createLocalizationString({
-							readable = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
-							constant = "CAN_BE_BOUGHT_FROM_ALCHEMY_SUPPLIERS_AS_WELL_AS",
-							export = true,
-							text = {
-								en = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可从炼金供应商以及世界各地的一些贸易商人处购买。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 						--[[["coords"] = {
 							{ 66.6, 54.6, IRONFORGE },
@@ -161,7 +144,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 				sharedData({	-- Leaded-/Crystal Vials for Vanilla
-					["description"] = "~L.CAN_BE_BOUGHT_FROM_ALCHEMY_SUPPLIERS_AS_WELL_AS",
+					["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 					["coords"] = {
 						{ 55.8, 24.5, DARNASSUS },
 						{ 66.6, 54.6, IRONFORGE },
@@ -185,7 +168,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				{
 					i(18256, {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial with Cataclysm.
-						["description"] = "~L.CAN_BE_BOUGHT_FROM_ALCHEMY_SUPPLIERS_AS_WELL_AS",
+						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 						["coords"] = {
 							{ 55.8, 24.5, DARNASSUS },
 							{ 66.6, 54.6, IRONFORGE },
@@ -370,24 +353,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
 				["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 				-- #if AFTER 10.0.7
-				["description"] = createLocalizationString({
-					readable = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
-					constant = "HAS_TO_BE_USED_NEAR_THE_BRAZIER_OF_MADNESS_TOY",
-					export = true,
-					text = {
-						en = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "必须在“疯狂火盆”玩具附近使用才能获得“屈服于疯狂”增益。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
 				-- #endif
 			})),
 			i(3577),	-- Gold Bar
@@ -584,45 +550,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				{
 					i(5956, {	-- Blacksmithing Hammer
 						["collectible"] = false,
-						["description"] = createLocalizationString({
-							readable = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",
-							constant = "CAN_BE_BOUGHT_FROM_BLACKSMITHING_AND",
-							export = true,
-							text = {
-								en = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可从锻造和工程学供应商以及世界各地的一些贸易商人处购买。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",
 					}),
 				},
 				sharedData({
-					["description"] = createLocalizationString({
-						readable = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
-						constant = "CAN_BE_BOUGHT_FROM_BLACKSMITHING_SUPPLIERS_AS",
-						export = true,
-						text = {
-							en = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从锻造供应商以及世界各地的一些贸易商人处购买。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 					["coords"] = {
@@ -671,7 +603,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #if BEFORE TBC
 		prof(9788, {	-- Armorsmith
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS",
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
 			["groups"] = {
 				applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, i(20039)),	-- Dark Iron Boots
 				i(17014),	-- Dark Iron Bracers
@@ -742,14 +674,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		prof(9787, {	-- Weaponsmith
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_BLACKSMITHS_2",
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
 			["groups"] = {
 				prof(17041, {	-- Master Axesmith
-					["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER",
+					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 					["groups"] = {
 						i(12798, {	-- Annihilator
 							-- #if SEASON_OF_DISCOVERY
-							["description"] = "~L.BLIZZARD_STATED_THAT_ANNIHILATOR_WAS_AN_ITEM",
+							["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
 							["timeline"] = { REMOVED_1_15_0 },
 							-- #endif
 						}),
@@ -765,31 +697,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(SOD_PHASE_SIX, i(233801, {["timeline"] = { ADDED_1_15_5 }})),	-- Obsidian Defender
 						applyclassicphase(SOD_PHASE_SIX, i(233491, {["timeline"] = { ADDED_1_15_5 }})),	-- Obsidian Reaver
 						applyclassicphase(SOD_PHASE_FOUR, i(227843, {	-- Reaving Nightfall
-							["description"] = createLocalizationString({
-								readable = "Blizzard stated that Nightfall was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Nightfall or this updated version of it.",
-								constant = "BLIZZARD_STATED_THAT_NIGHTFALL_WAS_AN_ITEM_THAT",
-								export = true,
-								text = {
-									en = "Blizzard stated that Nightfall was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Nightfall or this updated version of it.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "暴雪表示夜幕是一件迫使团队中 1 名成员承担不符合其设计定位的角色的物品，因此他们决定不再加入夜幕或其更新版本。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Blizzard stated that Nightfall was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Nightfall or this updated version of it.",
 							["timeline"] = { CREATED_1_15_3 },
 						})),
 						-- #endif
 					},
 				}),
 				prof(17040, {	-- Master Hammersmith
-					["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_2",
+					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 					["groups"] = {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19170)),	-- Ebon Hand
 						i(12776, {	-- Enchanted Battlehammer
@@ -823,7 +738,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				prof(17039, {	-- Master Swordsmith
-					["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_MASTER_3",
+					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 					["groups"] = {
 						i(12790, {["timeline"] = { REMOVED_6_0_2, ADDED_7_1_5 }}),	-- Arcanite Champion
 						applyclassicphase(PHASE_THREE_RECIPES, i(19168)),	-- Blackguard
@@ -846,7 +761,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(WEAPONS, {
-					["description"] = "~L.THESE_CAN_BE_CRAFTED_BY_ANY_WEAPONSMITH",
+					["description"] = "These can be crafted by any Weaponsmith.",
 					["groups"] = {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19166)),	-- Black Amnesty
 						applyclassicphase(PHASE_THREE_RECIPES, i(19167)),	-- Blackfury
@@ -1001,24 +916,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 				sharedData({
 					-- #if AFTER 10.1.5
-					["description"] = createLocalizationString({
-						readable = "Icebellow Anvil can be found on the right side of the second room of the Military Quarter in Naxxramas.",
-						constant = "ICEBELLOW_ANVIL_CAN_BE_FOUND_ON_THE_RIGHT_SIDE",
-						export = true,
-						text = {
-							en = "Icebellow Anvil can be found on the right side of the second room of the Military Quarter in Naxxramas.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "冰鸣铁砧可以在纳克萨玛斯军事区第二个房间的右侧找到。",
-							-- TODO: tw = "",
-						},
-					})
+					["description"] = "Icebellow Anvil can be found on the right side of the second room of the Military Quarter in Naxxramas."
 					-- #endif
 				}, {
 					applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = { ADDED_1_11_1, REMOVED_3_0_2, ADDED_10_1_5 }})),	-- Icebane Bracers
@@ -1384,7 +1282,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		n(COMMON_VENDOR_ITEMS, {
 			["groups"] = appendAllGroups(
 				sharedData({	-- Vanilla cooking reagents
-					["description"] = "~L.CAN_BE_BOUGHT_FROM_COOKING_SUPPLIERS_AS_WELL_AS",
+					["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
 				}, {
 					i(159),	-- Refreshing Spring Water
 					i(30817, {["timeline"] = { ADDED_2_0_1 }}),	-- Simple Flour
@@ -1394,24 +1292,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				sharedData({
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "This item is only common among Alliance bartenders. Horde players only have a few sources.",
-						constant = "THIS_ITEM_IS_ONLY_COMMON_AMONG_ALLIANCE",
-						export = true,
-						text = {
-							en = "This item is only common among Alliance bartenders. Horde players only have a few sources.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品只在联盟酒保中常见。部落玩家只有少数几个来源。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item is only common among Alliance bartenders. Horde players only have a few sources.",
 					-- #endif
 					["providers"] = {
 						{ "n", 1328 },	-- Elly Langston <Barmaid>
@@ -1427,7 +1308,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				{
 					i(1179, {	-- Ice Cold Milk
-						["description"] = "~L.CAN_BE_BOUGHT_FROM_BARTENDERS_INNKEEPERS_AND",
+						["description"] = "Can be bought from bartenders, innkeepers and general goods vendors.",
 					}),
 				}
 			),
@@ -1440,24 +1321,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(3220),	-- Blood Sausage
 		i(5525),	-- Boiled Clams
 		applyclassicphase(WRATH_PHASE_ONE, i(46691, {	-- Bread of the Dead [Day of the Dead]
-			["description"] = createLocalizationString({
-				readable = "Ghostly Cooking Fire can be found near any graveyards with Day of the Dead-festivities.",
-				constant = "GHOSTLY_COOKING_FIRE_CAN_BE_FOUND_NEAR_ANY",
-				export = true,
-				text = {
-					en = "Ghostly Cooking Fire can be found near any graveyards with Day of the Dead-festivities.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "幽灵烹饪火堆可以在任何举办亡者节活动的墓地附近找到。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Ghostly Cooking Fire can be found near any graveyards with Day of the Dead-festivities.",
 			["timeline"] = { ADDED_3_2_2 },
 		})),
 		i(6290),	-- Brilliant Smallfish
@@ -1567,24 +1431,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		n(COMMON_VENDOR_ITEMS, {
 			["groups"] = appendAllGroups(
 				sharedData({	-- Enchanting supplies
-					["description"] = createLocalizationString({
-						readable = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-						constant = "CAN_BE_BOUGHT_FROM_ENCHANTING_SUPPLIERS_AS_WELL",
-						export = true,
-						text = {
-							en = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从附魔供应商以及世界各地的一些贸易商人处购买。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["coords"] = {
 						{ 60.8, 44.2, IRONFORGE },
@@ -1693,7 +1540,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},]]
 				},{
 					i(6217, {	-- Copper Rod
-						["description"] = "~L.CAN_BE_BOUGHT_FROM_ENCHANTING_SUPPLIERS_AS_WELL",
+						["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					}),
 					i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
 					i(10940, { ["isLimited"] = true, }),	-- Strange Dust
@@ -1706,297 +1553,161 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(11176, {	-- Dream Dust (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
 				-- #endif
 			}),
 			i(16204, {	-- Legion+: Light Illusion Dust / CLASSIC: Illusion Dust
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting uncommon (green) quality gear below max unscaled ilvl.",
-					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_11",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting uncommon (green) quality gear below max unscaled ilvl.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解低于最高未缩放物品等级的优秀（绿色）品质装备获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting uncommon (green) quality gear below max unscaled ilvl.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_2",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
 				-- #endif
 			}),
 			i(156930, {	-- Rich Illusion Dust
 				["timeline"] = { ADDED_7_3_5 },
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear.",
-					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_AND",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解经典旧世装备中优秀（绿色）和稀有（蓝色）品质的物品获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear.",
 				-- #endif
 			}),
 			i(11083, {	-- Soul Dust (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_3",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
 				-- #endif
 			}),
 			i(10940, {	-- Strange Dust
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting very low ilvl vanilla gear, or bought from enchanting suppliers.",
-					constant = "OBTAINED_FROM_DISENCHANTING_VERY_LOW_ILVL",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting very low ilvl vanilla gear, or bought from enchanting suppliers.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解物品等级极低的经典旧世装备获得，或从附魔供应商处购买。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting very low ilvl vanilla gear, or bought from enchanting suppliers.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_4",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
 				-- #endif
 			}),
 			i(11137, {	-- Vision Dust (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_5",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
 				-- #endif
 			}),
 			-- Essences:
 			i(11082, {	-- Greater Astral Essence (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_6",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
 				-- #endif
 			}),
 			i(10998, {	-- Lesser Astral Essence (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_7",
+				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
 				-- #endif
 			}),
 			i(16203, {	-- Greater Eternal Essence
 				-- #if AFTER 9.0.1
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_AND",
+				["description"] = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_8",
+				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(16202, {	-- Lesser Eternal Essence
 				-- #if AFTER 9.0.1
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_AND",
+				["description"] = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN",
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
 				-- #endif
 			}),
 			i(10939, {	-- Greater Magic Essence
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear below max unscaled ilvl. You can also buy Lesser Magic Essences from enchanting suppliers and use them to create Greater Magic Essence.",
-					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_AND_2",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear below max unscaled ilvl. You can also buy Lesser Magic Essences from enchanting suppliers and use them to create Greater Magic Essence.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解低于最高未缩放物品等级的经典旧世装备中优秀（绿色）和稀有（蓝色）品质的物品获得。你也可以从附魔供应商处购买次级魔法精华，并用它们制作强效魔法精华。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear below max unscaled ilvl. You can also buy Lesser Magic Essences from enchanting suppliers and use them to create Greater Magic Essence.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_9",
+				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(10938, {	-- Lesser Magic Essence
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear below max unscaled ilvl. You can also buy these from enchanting suppliers.",
-					constant = "OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_AND_3",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear below max unscaled ilvl. You can also buy these from enchanting suppliers.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解低于最高未缩放物品等级的经典旧世装备中优秀（绿色）和稀有（蓝色）品质的物品获得。你也可以从附魔供应商处购买这些物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting uncommon (green) and rare (blue) qualities of vanilla gear below max unscaled ilvl. You can also buy these from enchanting suppliers.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_UNCOMMON_GREEN_10",
+				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(11135, {	-- Greater Mystic Essence (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_2",
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
 				-- #endif
 			}),
 			i(11134, {	-- Lesser Mystic Essence (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_3",
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
 				-- #endif
 			}),
 			i(11175, {	-- Greater Nether Essence (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_4",
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
 				-- #endif
 			}),
 			i(11174, {	-- Lesser Nether Essence (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_UNCOMMON_GREEN_5",
+				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
 				-- #endif
 			}),
 			-- Shards and crystals:
 			i(14344, {	-- Large Brilliant Shard
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting all rare (blue) and epic (purple) quality vanilla gear.",
-					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND_4",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting all rare (blue) and epic (purple) quality vanilla gear.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解所有稀有（蓝色）和史诗（紫色）品质的经典旧世装备获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality vanilla gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE",
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
 				-- #endif
 			}),
 			i(14343, {	-- Small Brilliant Shard
 				-- #if AFTER 9.0.1
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting all rare (blue) and epic (purple) quality vanilla gear below max unscaled ilvl.",
-					constant = "OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND_5",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting all rare (blue) and epic (purple) quality vanilla gear below max unscaled ilvl.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解低于最高未缩放物品等级的所有稀有（蓝色）和史诗（紫色）品质的经典旧世装备获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality vanilla gear below max unscaled ilvl.",
 				-- #elseif BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND",
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
 				-- #endif
 			}),
 			i(11084, {	-- Large Glimmering Shard (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_2",
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
 				-- #endif
 			}),
 			i(10978, {	-- Small Glimmering Shard (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_3",
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
 				-- #endif
 			}),
 			i(11139, {	-- Large Glowing Shard (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_4",
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
 				-- #endif
 			}),
 			i(11138, {	-- Small Glowing Shard (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_5",
+				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
 				-- #endif
 			}),
 			applyclassicphase(PHASE_FIVE, i(20725, {	-- Nexus Crystal (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = createLocalizationString({
-					readable = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
-					constant = "OBTAINED_FROM_DISENCHANTING_ALL_EPIC_PURPLE",
-					export = true,
-					text = {
-						en = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "通过分解物品等级 60-83 范围内的所有史诗（紫色）品质装备获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
 				-- #endif
 			})),
 			i(11178, {	-- Large Radiant Shard (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND_2",
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
 				-- #endif
 			}),
 			i(11177, {	-- Small Radiant Shard (removed in retail)
 				["timeline"] = { REMOVED_7_3_5 },
 				-- #if BEFORE WOD
-				["description"] = "~L.OBTAINED_FROM_DISENCHANTING_ALL_RARE_BLUE_AND_3",
+				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
 				-- #endif
 			}),
 		}),
@@ -2236,7 +1947,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	prof(ENGINEERING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "~L.CAN_BE_BOUGHT_FROM_ENGINEERING_SUPPLIERS_AS",
+			["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 			["coords"] = {
@@ -2286,7 +1997,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4399),	-- Wooden Stock
 		})),
 		prof(GNOMISH_ENGINEERING, {
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS",
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
 				n(ARMOR, {
 					i(10545, {	-- Gnomish Goggles
@@ -2318,7 +2029,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				filter(RECIPES, {
 					i(10713, {	-- Plans: Inlaid Mithril Cylinder (RECIPE!)
-						["description"] = "~L.THIS_RECIPE_IS_CRAFTED_BY_GNOMISH_ENGINEERS_AND",
+						["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
 					}),
 				}),
 				filter(TOYS, {
@@ -2332,7 +2043,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY_ENGINEERS_2",
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
 			["groups"] = {
 				-- #if BEFORE WRATH
 				filter(BATTLE_PETS, {
@@ -2363,7 +2074,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				filter(RECIPES, {
 					i(10644, {	-- Recipe: Goblin Rocket Fuel (RECIPE!)
-						["description"] = "~L.THIS_RECIPE_IS_CRAFTED_BY_GOBLIN_ENGINEERS_AND",
+						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 					}),
 				}),
 				filter(TOYS, {
@@ -2639,10 +2350,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	-- #endif
 	prof(FISHING, {
-		["description"] = "~L.IF_YOU_STRUGGLE_TO_CATCH_AN_OPEN_WATER_FISH_IN",
+		["description"] = "If you struggle to catch an open water fish in a given zone, try a different spot or a different body of water. There might be local variations of which fish you can reliably catch from a given spot.",
 		["groups"] = {
 			n(COMMON_VENDOR_ITEMS, sharedData({
-				["description"] = "~L.CAN_BE_BOUGHT_FROM_FISHING_SUPPLIERS_AS_WELL_AS",
+				["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
 				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 				--[[["coords"] = {
 					{ 47.8, 6.6, IRONFORGE },
@@ -2699,7 +2410,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			filter(ONE_HANDED_MACES, {
 				i(6360, {	-- Steelscale Crushfish
-					["description"] = "~L.CAN_BE_CAUGHT_IN_OPEN_WATER_IN_THE_GIVEN_ZONES",
+					["description"] = "Can be caught in open water in the given zones.",
 					["maps_disp"] = {
 						ASHENVALE,
 						HILLSBRAD_FOOTHILLS,
@@ -2713,7 +2424,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			filter(FINGER_F, {
 				i(8350, {	-- The 1 Ring
-					["description"] = "~L.INTERESTINGLY_ENOUGH_YOU_CAN_FISH_THIS_OUT_OF",
+					["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
 				}),
 			}),
 			filter(HELD_IN_OFF_HAND, sharedData({ ["collectible"] = false, }, {
@@ -2953,24 +2664,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			filter(PROFESSION_EQUIPMENT, {
 				i(6366, {	-- Darkwood Fishing Pole
-					["description"] = createLocalizationString({
-						readable = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
-						constant = "CAN_BE_CAUGHT_IN_ASHENVALE_ARATHI_HIGHLANDS_2",
-						export = true,
-						text = {
-							en = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可在灰谷、阿拉希高地、希尔斯布莱德丘陵、北荆棘谷、赤脊山和湿地钓到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
 					["maps_disp"] = {
 						ASHENVALE,
 						ARATHI_HIGHLANDS,
@@ -2986,31 +2680,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			filter(RECIPES, {
 				i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-					["description"] = createLocalizationString({
-						readable = "Can be fished from schools.",
-						constant = "CAN_BE_FISHED_FROM_SCHOOLS",
-						export = true,
-						text = {
-							en = "Can be fished from schools.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从鱼群中钓到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be fished from schools.",
 					["timeline"] = { ADDED_2_3_0 },
 				}),
 			}),
 			-- Danny Donkey: The post Cata data for fish and school locations is accurate for viability in retail and might deviate from Cata+ classic. Pre Cata data is also not validated in-game.
 			-- Fish:
 			i(13888, {	-- Darkclaw Lobster
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if AFTER 4.0.3
 					BLASTED_LANDS,
@@ -3036,7 +2713,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["provider"] = { "o", 180658 },	-- School of Deviate Fish
 			}),
 			i(6359, {	-- Firefin Snapper
-				["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
+				["description"] = "Schools can be found on the seaside.",
 				["maps_disp"] = {
 					ARATHI_HIGHLANDS,
 					ASHENVALE,
@@ -3072,7 +2749,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(13893, {	-- Large Raw Mightfish
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if AFTER 4.0.3
 					BLASTED_LANDS,
@@ -3084,7 +2761,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			i(13757, {	-- Lightening Eel
 				["coord"] = { 60.6, 71.7, SILITHUS },
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS",
+				["description"] = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
 					BURNING_STEPPES,
@@ -3095,7 +2772,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(6358, {	-- Oily Blackmouth
-				["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
+				["description"] = "Schools can be found on the seaside.",
 				["maps_disp"] = {
 					ARATHI_HIGHLANDS,
 					ASHENVALE,
@@ -3131,7 +2808,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(6291, {	-- Raw Brilliant Smallfish
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					DUN_MOROGH,
 					ELWYNN_FOREST,
@@ -3140,7 +2817,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(6308, {	-- Raw Bristle Whisker Catfish
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					ASHENVALE,
 					DUSKWOOD,
@@ -3149,7 +2826,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(13754, {	-- Raw Glossy Mightfish
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					TANARIS,
 					-- #if BEFORE 4.0.3
@@ -3160,7 +2837,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(21153, {	-- Raw Greater Sagefish
-				["description"] = "~L.SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERS_AND",
+				["description"] = "Schools can be found in inland waters and waterways.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
 					ALTERAC_MOUNTAINS,
@@ -3182,11 +2859,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["provider"] = { "o", 180684 },	-- Greater Sagefish School
 			}),
 			i(6317, {	-- Raw Loch Frenzy
-				["description"] = "~L.CAN_BE_CAUGHT_IN_THE_LOCH",
+				["description"] = "Can be caught in The Loch.",
 				["maps_disp"] = { LOCH_MODAN },
 			}),
 			i(6289, {	-- Raw Longjaw Mud Snapper
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					DARNASSUS,
 					-- #if AFTER 4.0.3
@@ -3199,7 +2876,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(8365, {	-- Raw Mithril Head Trout
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
 					ARATHI_HIGHLANDS,
@@ -3215,7 +2892,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(13759, {	-- Raw Nightfin Snapper
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_3",
+				["description"] = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
 					DEADWIND_PASS,
@@ -3232,7 +2909,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(6361, {	-- Raw Rainbow Fin Albacore
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
 					ASHENVALE,
@@ -3252,7 +2929,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(13758, {	-- Raw Redgill
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					FELWOOD,
 					MOONGLADE,
@@ -3263,7 +2940,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(6362, {	-- Raw Rockscale Cod
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					-- #if BEFORE 4.0.3
 					DUSTWALLOW_MARSH,
@@ -3279,7 +2956,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					{ 50.0, 40.0, STONETALON_MOUNTAINS },	-- Mirkfallon Lake
 					-- #endif
 				},
-				["description"] = "~L.SCHOOLS_CAN_BE_FOUND_IN_INLAND_WATERS_AND",
+				["description"] = "Schools can be found in inland waters and waterways.",
 				["maps_disp"] = {
 					ASHENVALE,
 					HILLSBRAD_FOOTHILLS,
@@ -3301,7 +2978,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(6303, {	-- Raw Slitherskin Mackerel
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					DUROTAR,
 					TELDRASSIL,
@@ -3311,7 +2988,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(4603, {	-- Raw Spotted Yellowtail
-				["description"] = "~L.CAN_BE_CAUGHT_ON_THE_SEASIDE",
+				["description"] = "Can be caught on the seaside.",
 				["maps_disp"] = {
 					TANARIS,
 					-- #if BEFORE 4.0.3
@@ -3324,11 +3001,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 			i(13760, {	-- Raw Sunscale Salmon
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_4",
+				["description"] = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
 				["coord"] = { 60.6, 71.7, SILITHUS },
 			}),
 			i(13889, {	-- Raw Whitescale Salmon
-				["description"] = "~L.CAN_BE_CAUGHT_IN_INLAND_WATERS_AND_WATERWAYS_2",
+				["description"] = "Can be caught in inland waters and waterways.",
 				["maps_disp"] = {
 					-- #if BEFORE TBC
 					DEADWIND_PASS,
@@ -3344,7 +3021,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			i(13422, {	-- Stonescale Eel
-				["description"] = "~L.SCHOOLS_CAN_BE_FOUND_ON_THE_SEASIDE",
+				["description"] = "Schools can be found on the seaside.",
 				["maps_disp"] = {
 					TANARIS,
 					-- #if BEFORE 4.0.3
@@ -3362,7 +3039,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 			-- Fish schools:
 			o(180683, {	-- Firefin Snapper School
-				["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
+				["description"] = "Can be found on the seaside.",
 				["maps"] = {
 					ARATHI_HIGHLANDS,
 					ASHENVALE,
@@ -3394,7 +3071,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			o(180752),	-- Firefin Snapper School 4
 			o(180902),	-- Firefin Snapper School 5
 			o(180684, {	-- Greater Sagefish School
-				["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERS_AND_WATERWAYS",
+				["description"] = "Can be found in inland waters and waterways.",
 				["maps"] = {
 					-- #if BEFORE 4.0.3
 					ALTERAC_MOUNTAINS,
@@ -3422,7 +3099,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { ADDED_5_1_0 },
 			}),
 			o(180682, {	-- Oily Blackmouth School
-				["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
+				["description"] = "Can be found on the seaside.",
 				["maps_disp"] = {
 					ARATHI_HIGHLANDS,
 					ASHENVALE,
@@ -3456,7 +3133,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_5_1_0 },
 			}),
 			o(216764, {	-- Sagefish School
-				["description"] = "~L.CAN_BE_FOUND_IN_INLAND_WATERS_AND_WATERWAYS",
+				["description"] = "Can be found in inland waters and waterways.",
 				["maps"] = {
 					ASHENVALE,
 					HILLSBRAD_FOOTHILLS,
@@ -3482,7 +3159,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(180712, {	-- Stonescale Eel Swarm
-				["description"] = "~L.CAN_BE_FOUND_ON_THE_SEASIDE",
+				["description"] = "Can be found on the seaside.",
 				["maps"] = {
 					TANARIS,
 					-- #if BEFORE 4.0.3
@@ -3498,7 +3175,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- Wreckages:
 			o(180901, {	-- Bloodsail Wreckage
-				["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
 					-- #if AFTER 4.0.3
 					NORTHERN_STRANGLETHORN,
@@ -3509,7 +3186,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(180655, {	-- Floating Debris
-				["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
 					DARKSHORE,
 					DUSKWOOD,
@@ -3525,7 +3202,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(180751, {	-- Floating Wreckage
-				["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
 					BLASTED_LANDS,
 					EASTERN_PLAGUELANDS,
@@ -3537,7 +3214,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(180662, {	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
-				["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
 					ASHENVALE,
 					HILLSBRAD_FOOTHILLS,
@@ -3546,7 +3223,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			o(180685, {	-- Waterlogged Wreckage / Pre WotLK: Floating Wreckage
-				["description"] = "~L.WRECKAGES_CAN_BE_FOUND_ON_THE_SEASIDE_AS_WELL",
+				["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 				["maps"] = {
 					TANARIS,
 					-- #if BEFORE 4.0.3
@@ -3562,7 +3239,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 	prof(HERBALISM, {
-		["description"] = "~L.IT_IS_BENEFICIAL_TO_GATHER_ALL_HERBS_IN_THE",
+		["description"] = "It is beneficial to gather all herbs in the area even if you only need specific herbs because the node spawns are often connected.",
 		["groups"] = {
 			header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ ["requireSkill"] = HERBALISM, }, {	-- Herb Gathering
 				-- Nodes:
@@ -3587,26 +3264,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				o(176589, {	-- Black Lotus
 					-- #if NOT ANYCLASSIC
-					["description"] = "~L.BLACK_LOTUS_IS_A_RARE_SPAWN_AND_CAN_SPAWN_IN",
+					["description"] = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
 					-- #else
-					["description"] = createLocalizationString({
-						readable = "Black Lotus is a rare spawn, and can spawn in place of other herbs. Please let us know in the ATT discord if the listed zones does not reflect the current spawn locations.",
-						constant = "BLACK_LOTUS_IS_A_RARE_SPAWN_AND_CAN_SPAWN_IN_2",
-						export = true,
-						text = {
-							en = "Black Lotus is a rare spawn, and can spawn in place of other herbs. Please let us know in the ATT discord if the listed zones does not reflect the current spawn locations.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "黑莲花是稀有刷新，可以代替其他草药刷新。如果列出的区域与当前的刷新位置不符，请在 ATT Discord 中告知我们。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Black Lotus is a rare spawn, and can spawn in place of other herbs. Please let us know in the ATT discord if the listed zones does not reflect the current spawn locations.",
 					-- #endif
 					-- #if BEFORE 8.0.0
 					["learnedAt"] = 300,
@@ -3631,24 +3291,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				o(253069, {	-- Blacker Lotus
-					["description"] = createLocalizationString({
-						readable = "Blacker Lotus is a special node at the given coords which can take days to respawn. This location also has a group of un-gatherable Black Lotuses.",
-						constant = "BLACKER_LOTUS_IS_A_SPECIAL_NODE_AT_THE_GIVEN",
-						export = true,
-						text = {
-							en = "Blacker Lotus is a special node at the given coords which can take days to respawn. This location also has a group of un-gatherable Black Lotuses.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "更黑的黑莲花是给定坐标处的一个特殊节点，可能需要数天才会重新刷新。该位置还有一丛无法采集的黑莲花。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Blacker Lotus is a special node at the given coords which can take days to respawn. This location also has a group of un-gatherable Black Lotuses.",
 					["coord"] = { 74.8, 54.5, EASTERN_PLAGUELANDS },	-- Light's Hope Chapel
 					-- #if BEFORE 8.0.0
 					["learnedAt"] = 300,
@@ -3675,7 +3318,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 235,
 					-- #endif
-					["description"] = "~L.CAN_BE_FOUND_NEAR_WET_TERRAIN_AND_OR_WATERWAYS",
+					["description"] = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
 				}),
 				o(1621, {	-- Briarthorn
 					-- #if BEFORE 6.0.0
@@ -3696,7 +3339,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						SILVERPINE_FOREST,
 						-- #endif
 					},
-					["description"] = "~L.USUALLY_FOUND_NEAR_TREES",
+					["description"] = "Usually found near trees.",
 				}),
 				-- #if ANYCLASSIC
 				o(3729, {	-- Briarthorn (The Barrens)
@@ -3730,7 +3373,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						WETLANDS,
 						-- #endif
 					},
-					["description"] = "~L.USUALLY_FOUND_NEAR_HILLSIDES_BUILDINGS_AND",
+					["description"] = "Usually found near hillsides, buildings and structures.",
 				}),
 				-- #if ANYCLASSIC
 				o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
@@ -3775,7 +3418,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						WESTERN_PLAGUELANDS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_USUALLY_BE_FOUND_ON_FLAT_OPEN_SPACES",
+					["description"] = "Can usually be found on flat open spaces.",
 				}),
 				o(176693, {	-- Dreamfoil (Felwood)
 					-- #if BEFORE 6.0.0
@@ -3802,7 +3445,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						REDRIDGE_MOUNTAINS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
+					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
 				-- #if ANYCLASSIC
 				o(3726, {	-- Earthroot (The Barrens)
@@ -3837,7 +3480,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						STRANGLETHORN_VALE,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_IN_FERTILE_TERRAIN_AND_FIELDS",
+					["description"] = "Can be found in fertile terrain and fields.",
 				}),
 				o(2866, {	-- Firebloom
 					-- #if BEFORE 6.0.0
@@ -3853,28 +3496,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						BLASTED_LANDS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_ON_HOT_DESERTS",
+					["description"] = "Can be found on hot deserts.",
 				}),
 				o(206085, {	-- Frozen Herb (Hillsbrad Foothills)
 					["coord"] = { 47.0, 26.0, HILLSBRAD_FOOTHILLS },	-- Alterac Mountains
-					["description"] = createLocalizationString({
-						readable = "Found all over Alterac Mountains",
-						constant = "FOUND_ALL_OVER_ALTERAC_MOUNTAINS",
-						export = true,
-						text = {
-							en = "Found all over Alterac Mountains",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在奥特兰克山脉各处都能找到",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found all over Alterac Mountains",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 125,
 					-- #endif
@@ -3894,7 +3520,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						{ 17.25, 9.2, ZANGARMARSH },	-- Ango'rosh Stronghold cave
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_INSIDE_CAVES",
+					["description"] = "Can be found inside caves.",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 245,
 					-- #endif
@@ -3918,7 +3544,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						THE_HINTERLANDS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_BY_TREES_AND_OTHER_NATURAL",
+					["description"] = "Can be found by trees and other natural structures.",
 				}),
 				o(176638, {	-- Golden Sansam (Felwood)
 					-- #if BEFORE 6.0.0
@@ -3945,7 +3571,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						SWAMP_OF_SORROWS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
+					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
 				o(1628, {	-- Grave Moss
 					["coords"] = {
@@ -3955,7 +3581,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						{ 80.0, 71.0, DUSKWOOD },
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_ON_GRAVES",
+					["description"] = "Can be found on graves.",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 120,
 					-- #endif
@@ -3969,7 +3595,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #if AFTER CATA
 					["maps"] = { FELWOOD },
 					-- #endif
-					["description"] = "~L.FOUND_IN_LOCATIONS_CORRUPTED_BY_THE_BURNING",
+					["description"] = "Found in locations corrupted by the Burning Legion.",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 250,
 					-- #endif
@@ -4009,7 +3635,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						SWAMP_OF_SORROWS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_NEAR_TREES",
+					["description"] = "Can be found near trees.",
 				}),
 				o(1624, {	-- Kingsblood
 					-- #if BEFORE 6.0.0
@@ -4038,7 +3664,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						THOUSAND_NEEDLES,
 						-- #endif
 					},
-					["description"] = "~L.CAN_BE_FOUND_IN_THE_WOODS",
+					["description"] = "Can be found in the woods.",
 				}),
 				o(2041, {	-- Liferoot
 					-- #if BEFORE 6.0.0
@@ -4063,7 +3689,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						WESTERN_PLAGUELANDS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_USUALLY_BE_FOUND_ON_FERTILE_GROUNDS_BY",
+					["description"] = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 				}),
 				o(1620, {	-- Mageroyal
 					-- #if BEFORE 6.0.0
@@ -4117,7 +3743,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						UNGORO_CRATER,
 						WINTERSPRING,
 					},
-					["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
+					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
 				o(176640, {	-- Mountain Silversage (Felwood)
 					-- #if BEFORE 6.0.0
@@ -4172,7 +3798,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						THE_HINTERLANDS,
 					},
 					-- #endif
-					["description"] = "~L.CAN_BE_FOUND_IN_ELVEN_OR_TROLL_RUINS",
+					["description"] = "Can be found in elven or troll ruins.",
 					-- #if BEFORE 6.0.0
 					["learnedAt"] = 210,
 					-- #endif
@@ -4248,7 +3874,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						THE_BARRENS,
 						-- #endif
 					},
-					["description"] = "~L.CAN_USUALLY_BE_FOUND_IN_THE_SEA_BUT_ALSO",
+					["description"] = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 				}),
 				o(142142, {	-- Sungrass
 					-- #if BEFORE 6.0.0
@@ -4297,7 +3923,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						STONETALON_MOUNTAINS,
 						WETLANDS,
 					},
-					["description"] = "~L.CAN_BE_FOUND_ON_UNEVEN_TERRAIN_AND_MOUNTAIN",
+					["description"] = "Can be found on uneven terrain and mountain sides.",
 				}),
 			}),
 			{	-- Herbs:
@@ -5099,24 +4725,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(85663, {	-- Herbalist's Spade
 					-- Danny Donkey: For some Blizzard reason Herbalism Suppliers does not sell this equipment.
 					["collectible"] = false,
-					["description"] = createLocalizationString({
-						readable = "Can only be bought from Trade suppliers.",
-						constant = "CAN_ONLY_BE_BOUGHT_FROM_TRADE_SUPPLIERS",
-						export = true,
-						text = {
-							en = "Can only be bought from Trade suppliers.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只能从贸易供应商处购买。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can only be bought from Trade suppliers.",
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 			}),
@@ -5127,24 +4736,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = createLocalizationString({
-				readable = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",
-				constant = "CAN_BE_BOUGHT_FROM_INSCRIPTION_SUPPLIERS_AS",
-				export = true,
-				text = {
-					en = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从铭文供应商以及世界各地的一些贸易商人处购买。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 			--[[["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 			["coords"] = {
@@ -5788,24 +5380,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = createLocalizationString({
-				readable = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
-				constant = "CAN_BE_BOUGHT_FROM_JEWELCRAFTING_SUPPLIERS_AS",
-				export = true,
-				text = {
-					en = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从珠宝加工供应商以及世界各地的一些贸易商人处购买。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 			--[[["providers"] = {
 				{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
@@ -5988,7 +5563,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["groups"] = appendAllGroups(
 				{
 					i(4289, {	-- Salt
-						["description"] = "~L.CAN_BE_BOUGHT_FROM_LEATHERWORKING_SUPPLIERS_AS",
+						["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 						--[[["providers"] = {
 							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
@@ -6009,7 +5584,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 				sharedData({
-					["description"] = "~L.CAN_BE_BOUGHT_FROM_LEATHERWORKING_AND_TAILORING",
+					["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[["providers"] = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -6060,7 +5635,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #if BEFORE TBC
 		prof(10656, {	-- Dragonscale Leatherworking
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY",
+			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(16984),	-- Black Dragonscale Boots
 				i(15050, {	-- Black Dragonscale Breastplate
@@ -6154,7 +5729,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		prof(10658, {	-- Elemental Leatherworking
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY",
+			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(8346),	-- Gauntlets of the Sea
 				-- #if SEASON_OF_DISCOVERY
@@ -6241,7 +5816,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		prof(10660, {	-- Tribal Leatherworking
-			["description"] = "~L.THESE_ITEMS_CAN_ONLY_BE_CRAFTED_BY",
+			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(15073),	-- Chimeric Boots
 				i(15074, {["timeline"] = { REMOVED_4_0_3, ADDED_11_1_5 }}),	-- Chimeric Gloves
@@ -6742,24 +6317,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
 					-- #if AFTER 4.0.3
 					-- #if BEFORE 10.1.5
-					["description"] = createLocalizationString({
-						readable = "While this recipe is still available, the mats required to craft it are not.",
-						constant = "WHILE_THIS_RECIPE_IS_STILL_AVAILABLE_THE_MATS",
-						export = true,
-						text = {
-							en = "While this recipe is still available, the mats required to craft it are not.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "虽然此配方仍然可以获取，但制作它所需的材料已无法获取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "While this recipe is still available, the mats required to craft it are not.",
 					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
@@ -6836,7 +6394,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 	}),
 	prof(MINING, {
-		["description"] = "~L.MINING_VEINS_ARE_USUALLY_FOUND_ON_UNEVEN",
+		["description"] = "Mining veins are usually found on uneven terrain and mountainsides as well as inside caves. It is beneficial to mine all veins in the area even if you only need specific ore because the node spawns are often connected.",
 		["groups"] = {
 			spell(2575, {	-- Mining
 				["groups"] = appendAllGroups(
@@ -6910,7 +6468,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- ____________________________________________
 						-- Gold
 						o(1734, {	-- Gold Vein
-							["description"] = "~L.GOLD_VEIN_IS_A_RARE_SPAWN_IN_PLACE_OF_IRON",
+							["description"] = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
 							-- #if BEFORE 6.0.0
 							["learnedAt"] = 155,
 							-- #endif
@@ -7455,7 +7013,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(2775, {	-- Silver Ore
-							["description"] = "~L.SILVER_VEINS_IS_A_RARE_SPAWN_IN_PLACE_OF_TIN",
+							["description"] = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
 							["maps_disp"] = {
 								ARATHI_HIGHLANDS,
 								ASHENVALE,
@@ -7572,7 +7130,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(7911, {	-- Truesilver Ore
-							["description"] = "~L.TRUESILVER_DEPOSITS_IS_A_RARE_SPAWN_IN_PLACE_OF",
+							["description"] = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
 							["maps_disp"] = {
 								BADLANDS,
 								BURNING_STEPPES,
@@ -7725,43 +7283,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- Misc:
 						i(12363, {	-- Arcane Crystal
 							-- #if AFTER TBC
-							["description"] = createLocalizationString({
-								readable = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",
-								constant = "ARCANE_CRYSTAL_IS_MOST_RELIABLY_OBTAINABLE_FROM_2",
-								export = true,
-								text = {
-									en = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "奥术水晶最可靠的获取方式是从矿脉中采矿，尽管掉率很低。|CFFFF0000你不能通过勘探获得它。|r",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low. |CFFFF0000You cannot get it from prospecting.|r",
 							-- #else
-							["description"] = createLocalizationString({
-								readable = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low.",
-								constant = "ARCANE_CRYSTAL_IS_MOST_RELIABLY_OBTAINABLE_FROM_3",
-								export = true,
-								text = {
-									en = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "奥术水晶最可靠的获取方式是从矿脉中采矿，尽管掉率很低。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Arcane Crystal is most reliably obtainable from mining veins, although the droprate is low.",
 							-- #endif
 							["maps_disp"] = {
 								UNGORO_CRATER,
@@ -7790,7 +7314,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(9262, {	-- Black Vitriol
-							["description"] = "~L.THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_MINING",
+							["description"] = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
 							["providers"] = {
 								{ "o", 2040 },	-- Mithril Deposit
 								{ "o", 324 },	-- Small Thorium Vein
@@ -7808,7 +7332,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "o", 165658 },	-- Dark Iron Deposit
 						}),
 						i(8150, {	-- Deeprock Salt
-							["description"] = "~L.CAN_DROP_FROM_ANY_HIGHLEVEL_EARTH_ELEMENTAL_AND",
+							["description"] = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
 							["maps_disp"] = {
 								BLACKROCK_DEPTHS,
 								MARAUDON,
@@ -7825,26 +7349,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- Note: The gems are linked to respective ores with provider for prospecting in JEWELCRAFTING > Prospecting.
 					sharedData({
 						-- #if AFTER TBC
-						["description"] = createLocalizationString({
-							readable = "This gem is most reliably obtained from prospecting ores with Jewelcrafting. You can also obtain it from mining veins, although the droprate is low.",
-							constant = "THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM",
-							export = true,
-							text = {
-								en = "This gem is most reliably obtained from prospecting ores with Jewelcrafting. You can also obtain it from mining veins, although the droprate is low.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此宝石最可靠的获取方式是用珠宝加工勘探矿石。你也可以从矿脉中采到，但掉率很低。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This gem is most reliably obtained from prospecting ores with Jewelcrafting. You can also obtain it from mining veins, although the droprate is low.",
 						-- #else
-						["description"] = "~L.THIS_GEM_IS_MOST_RELIABLY_OBTAINED_FROM_MINING_2",
+						["description"] = "This gem is most reliably obtained from mining veins, although the droprate is low.",
 						-- #endif
 					}, {
 						i(7909, {	-- Aquamarine
@@ -8192,24 +7699,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			filter(PROFESSION_EQUIPMENT, {
 				i(2901, {	-- Mining Pick
 					["collectible"] = false,
-					["description"] = createLocalizationString({
-						readable = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
-						constant = "CAN_BE_BOUGHT_FROM_MINING_SUPPLIERS_AS_WELL_AS",
-						export = true,
-						text = {
-							en = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从采矿供应商以及世界各地的一些贸易商人处购买",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
 				}),
 			}),
 			header(HEADERS.Spell, 2656, {	-- Smelting
@@ -8224,7 +7714,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(11371, {	-- Dark Iron Bar
 					["cost"] = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
-					["description"] = "~L.LEARNING_HOW_TO_MELT_DARK_IRON_ORE_FROM_GLOOM",
+					["description"] = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
 				}),
 				applyclassicphase(PHASE_THREE, i(17771, {	-- Enchanted / Elementium Bar
 					["cost"] = ClassicCost({
@@ -8320,32 +7810,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	})),
 	prof(SKINNING, {
 		-- #if NOT ANYCLASSIC
-		["description"] = createLocalizationString({
-			readable = "The following items can be gathered by skinning creatures out in the world.\n\nNote that although Light-/Medium-/Heavy-/Thick-/Rugged Leather is most common to get from skinning, which one you get is depending on two factors:\n\n* Your skill level in Skinning\n\n*The historic level bracket of the creature.\n\nYou will never be able to obtain Heavy Leather from skinning in Dun Morogh, and if you get Light Leather from skinning in Uldaman your skill level is way too low.",
-			constant = "THE_FOLLOWING_ITEMS_CAN_BE_GATHERED_BY_SKINNING_2",
-			export = true,
-			text = {
-				en = "The following items can be gathered by skinning creatures out in the world.\n\nNote that although Light-/Medium-/Heavy-/Thick-/Rugged Leather is most common to get from skinning, which one you get is depending on two factors:\n\n* Your skill level in Skinning\n\n*The historic level bracket of the creature.\n\nYou will never be able to obtain Heavy Leather from skinning in Dun Morogh, and if you get Light Leather from skinning in Uldaman your skill level is way too low.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "以下物品可以通过在野外对生物剥皮来收集。\n\n请注意，虽然轻/中/重/厚/硬甲皮是最常见的剥皮产物，但你获得哪一种取决于两个因素：\n\n* 你的剥皮技能等级\n\n* 该生物历史上的等级区间。\n\n你永远无法在丹莫罗通过剥皮获得厚皮，而如果你在奥达曼剥皮得到轻皮，说明你的技能等级太低了。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "The following items can be gathered by skinning creatures out in the world.\n\nNote that although Light-/Medium-/Heavy-/Thick-/Rugged Leather is most common to get from skinning, which one you get is depending on two factors:\n\n* Your skill level in Skinning\n\n*The historic level bracket of the creature.\n\nYou will never be able to obtain Heavy Leather from skinning in Dun Morogh, and if you get Light Leather from skinning in Uldaman your skill level is way too low.",
 		-- #else
-		["description"] = "~L.THE_FOLLOWING_ITEMS_CAN_BE_GATHERED_BY_SKINNING",
+		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		-- #endif
 		["groups"] = {
 			n(COMMON_VENDOR_ITEMS, {
 				i(7005, {	-- Skinning Knife
 					["collectible"] = false,
-					["description"] = "~L.CAN_BE_BOUGHT_FROM_LEATHERWORKING_SUPPLIERS_AS",
+					["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 				}),
 			}),
 			spell(8613, {	-- Skinning
@@ -8404,7 +7877,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- Base hides:
 				i(4235, {	-- Heavy Hide
-					["description"] = "~L.IS_A_RARE_DROP_IN_PLACE_OF_HEAVY_LEATHER",
+					["description"] = "Is a rare drop in place of Heavy Leather.",
 					["maps_disp"] = {
 						DUSTWALLOW_MARSH,
 						TANARIS,
@@ -8415,7 +7888,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 					}),
 				i(783, {	-- Light Hide
-					["description"] = "~L.IS_A_RARE_DROP_IN_PLACE_OF_LIGHT_LEATHER",
+					["description"] = "Is a rare drop in place of Light Leather.",
 					["maps_disp"] = {
 						DARKSHORE,
 						LOCH_MODAN,
@@ -8428,20 +7901,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(4232, {	-- Medium Hide
-					["description"] = "~L.IS_A_RARE_DROP_IN_PLACE_OF_MEDIUM_LEATHER",
+					["description"] = "Is a rare drop in place of Medium Leather.",
 					["maps_disp"] = {
 						ARATHI_HIGHLANDS,
 						STONETALON_MOUNTAINS,
 					},
 				}),
 				i(8171, {	-- Rugged Hide
-					["description"] = "~L.IS_A_RARE_DROP_IN_PLACE_OF_RUGGED_LEATHER",
+					["description"] = "Is a rare drop in place of Rugged Leather.",
 					["maps_disp"] = {
 						BLASTED_LANDS,
 					},
 				}),
 				i(8169, {	-- Thick Hide
-					["description"] = "~L.IS_A_RARE_DROP_IN_PLACE_OF_THICK_LEATHER",
+					["description"] = "Is a rare drop in place of Thick Leather.",
 					["maps_disp"] = {
 						BADLANDS,
 						FELWOOD,
@@ -8496,26 +7969,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					-- #if AFTER BFA
-					["description"] = createLocalizationString({
-						readable = "Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring.",
-						constant = "CAN_BE_SKINNED_FROM_BEARS_IN_PREVIOUSLY",
-						export = true,
-						text = {
-							en = "Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从原先属于经典旧世高等级区域的熊身上剥取，例如冬泉谷的碎齿熊。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring.",
 					-- #else
-					["description"] = "~L.CAN_BE_SKINNED_FROM_BEARS_IN_THE_LEVEL_BRACKET",
+					["description"] = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
 					-- #endif
 					["coords"] = {
 						{ 55.1, 37.8, WINTERSPRING },
@@ -8529,7 +7985,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						768,	-- Shadow Panther
 						684,	-- Shadowmaw Panther
 					},
-					["description"] = "~L.PANTHERS_CAN_BE_FOUND_IN_CENTRAL_STRANGLETHORN",
+					["description"] = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
 					["maps_disp"] = {
 						STRANGLETHORN_VALE,
 						SWAMP_OF_SORROWS,
@@ -8537,13 +7993,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_3_1_0 },
 				}),
 				i(8368, {	-- Thick Wolfhide
-					["description"] = "~L.CAN_BE_SKINNED_FROM_ALL_WOLFS_IN_THE_LEVEL",
+					["description"] = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
 					["maps_disp"] = { BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_1_0 },
 				}),
 				-- Scales
 				i(15416, {	-- Black Dragonscale
-					["description"] = "~L.CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE",
+					["description"] = "Can be skinned from elite creatures of the Black Dragonflight.",
 					["maps_disp"] = {
 						BLACKWING_LAIR,
 						-- #if BEFORE WOD
@@ -8558,24 +8014,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15415, {	-- Blue Dragonscale
 					-- #if AFTER WOD
 					["cr"] = 14020,	-- Chromaggus
-					["description"] = createLocalizationString({
-						readable = "Blizzard being Blizzard, Blue Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
-						constant = "BLIZZARD_BEING_BLIZZARD_BLUE_DRAGONSCALE_IS",
-						export = true,
-						text = {
-							en = "Blizzard being Blizzard, Blue Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "暴雪就是暴雪，蓝色龙鳞只能从黑翼之巢的克洛玛古斯处获得。其他所有来源都已被移除。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Blizzard being Blizzard, Blue Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
 					["maps_disp"] = { BLACKWING_LAIR },
 					-- #elseif AFTER CATA
 					["crs"] = {
@@ -8584,27 +8023,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						10814,	-- Chromatic Elite Guard
 						10442,	-- Chromatic Whelp
 					},
-					["description"] = createLocalizationString({
-						readable = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
-						constant = "CAN_BE_SKINNED_FROM_CREATURES_OF_THE_CHROMATIC",
-						export = true,
-						text = {
-							en = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从多彩龙军团的生物身上剥皮获得，不过就掉落率而言很难刷。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
 					["maps_disp"] = { BLACKROCK_SPIRE },
 					-- #else
-					["description"] = "~L.CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE_BLUE",
+					["description"] = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
 					["coords"] = {
 						{ 57.2, 65.9, WINTERSPRING },	-- Mazthoril
 						{ 38.0, 75.0, AZSHARA },	-- Lake Mennar
@@ -8613,32 +8035,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
 				i(15412, {	-- Green Dragonscale
-					["description"] = "~L.CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE_2",
+					["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
 					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
 				i(15408, {	-- Heavy Scorpid Scale
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "Can be skinned from scorpids in Silithus.",
-						constant = "CAN_BE_SKINNED_FROM_SCORPIDS_IN_SILITHUS",
-						export = true,
-						text = {
-							en = "Can be skinned from scorpids in Silithus.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从希利苏斯的蝎子身上剥取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be skinned from scorpids in Silithus.",
 					["maps_disp"] = { SILITHUS },
 					-- #else
-					["description"] = "~L.CAN_BE_SKINNED_FROM_SCORPIDS_IN_THE_LEVEL",
+					["description"] = "Can be skinned from scorpids in the level bracket 50-60.",
 					["maps_disp"] = {
 						BURNING_STEPPES,
 						SILITHUS
@@ -8648,24 +8053,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15414, {	-- Red Dragonscale
 					-- #if AFTER WOD
 					["cr"] = 14020,	-- Chromaggus
-					["description"] = createLocalizationString({
-						readable = "Blizzard being Blizzard, Red Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
-						constant = "BLIZZARD_BEING_BLIZZARD_RED_DRAGONSCALE_IS_ONLY",
-						export = true,
-						text = {
-							en = "Blizzard being Blizzard, Red Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "暴雪就是暴雪，红色龙鳞只能从黑翼之巢的克洛玛古斯处获得。其他所有来源都已被移除。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Blizzard being Blizzard, Red Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",
 					["maps_disp"] = { BLACKWING_LAIR },
 					-- #elseif AFTER CATA
 					["crs"] = {
@@ -8674,98 +8062,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						10814,	-- Chromatic Elite Guard
 						10442,	-- Chromatic Whelp
 					},
-					["description"] = "~L.CAN_BE_SKINNED_FROM_CREATURES_OF_THE_CHROMATIC",
+					["description"] = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
 					["maps_disp"] = { BLACKROCK_SPIRE },
 					-- #else
-					["description"] = "~L.CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_THE_RED",
+					["description"] = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
 					["coord"] = { 80.0, 48.0, WETLANDS },
 					-- #endif
 				}),
 				i(8154, {	-- Scorpid Scale
 					["maps_disp"] = { TANARIS },
 					-- #if AFTER BFA
-					["description"] = createLocalizationString({
-						readable = "Drops from scorpids in previously higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
-						constant = "DROPS_FROM_SCORPIDS_IN_PREVIOUSLY_HIGHER",
-						export = true,
-						text = {
-							en = "Drops from scorpids in previously higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由等级区间调整前曾属中高等级及以上的经典旧世区域中的蝎子掉落，例如塔纳利斯的蝎子。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from scorpids in previously higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
 					-- #elseif AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "Drops from scorpids in higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
-						constant = "DROPS_FROM_SCORPIDS_IN_HIGHER_INTERMEDIATE_TO",
-						export = true,
-						text = {
-							en = "Drops from scorpids in higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由中高等级至高等经典旧世区域的蝎子掉落，例如塔纳利斯的蝎子。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from scorpids in higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
 					-- #else
-					["description"] = "~L.DROPS_FROM_SCORPIDS_IN_THE_LEVEL_BRACKET_40_60",
+					["description"] = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
 					-- #endif
 				}),
 				i(8167, {	-- Turtle Scale
 					-- #if AFTER BFA
-					["description"] = createLocalizationString({
-						readable = "Can be skinned from turtles in previously higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
-						constant = "CAN_BE_SKINNED_FROM_TURTLES_IN_PREVIOUSLY",
-						export = true,
-						text = {
-							en = "Can be skinned from turtles in previously higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从原先属于中高等级至高等的经典旧世区域的乌龟身上剥取，例如塔纳利斯和千针石林。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be skinned from turtles in previously higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
 					-- #elseif AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "Can be skinned from turtles in higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
-						constant = "CAN_BE_SKINNED_FROM_TURTLES_IN_HIGHER",
-						export = true,
-						text = {
-							en = "Can be skinned from turtles in higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从塔纳利斯和千针石林等中高等级至高等的经典旧世区域的乌龟身上剥取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be skinned from turtles in higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
 					-- #else
-					["description"] = "~L.CAN_BE_SKINNED_FROM_TURTLES_IN_THE_LEVEL",
+					["description"] = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
 					-- #endif
 					["maps_disp"] = {
 						-- #if AFTER CATA
@@ -8777,7 +8097,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(8165, {	-- Worn Dragonscale
-					["description"] = "~L.CAN_BE_SKINNED_FROM_ELITE_CREATURES_OF_ANY",
+					["description"] = "Can be skinned from elite creatures of any Dragonflights around the world.",
 					["maps_disp"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
 			}),
@@ -9106,24 +8426,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10023),	-- Shadoweave Gloves
 			i(10025, {	-- Shadoweave Mask
 				-- #if AFTER 7.3.0
-				["description"] = createLocalizationString({
-					readable = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
-					constant = "REQUIRED_FOR_THE_CFF3399FFLUCID_NIGHTMARE_R_2",
-					export = true,
-					text = {
-						en = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "为|cff3399ff清醒的梦魇|r解谜坐骑所需。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
 				-- #endif
 				["timeline"] = { REMOVED_4_0_3, ADDED_7_3_0 },
 			}),
@@ -9238,7 +8541,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					i(14341),	-- Rune Thread
 				},
 				sharedData({
-					["description"] = "~L.CAN_BE_BOUGHT_FROM_TAILORING_SUPPLIERS_AS_WELL",
+					["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[["providers"] = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -9300,7 +8603,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(SOD_PHASE_TWO, i(213379, {["timeline"] = { ADDED_1_15_1 }})),	-- Hyperconductive Arcano-Filament
 			-- #endif
 			i(14342, {	-- Mooncloth
-				["description"] = "~L.COORDINATES_ARE_FOR_SELECT_MOONWELLS_AROUND_THE",
+				["description"] = "Coordinates are for select Moonwells around the world.",
 				["coords"] = {
 					{ 43.10, 80.27, DARNASSUS },	-- Temple of the Moon
 					-- #if BEFORE 4.0.3

@@ -399,24 +399,7 @@ local WANDS_WITH_COST = {
 	i(20410, {	-- Hallowed Wand - Bat
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = createLocalizationString({
-			readable = "Can only be used on party members of your faction.",
-			constant = "CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
-			export = true,
-			text = {
-				en = "Can only be used on party members of your faction.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "只能对你的阵营的小队成员使用。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(128645, {	-- Hallowed Wand - Gargoyle
@@ -430,7 +413,7 @@ local WANDS_WITH_COST = {
 	i(20409, {	-- Hallowed Wand - Ghost
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = "~L.CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(116850, {	-- Hallowed Wand - Ghoul
@@ -440,7 +423,7 @@ local WANDS_WITH_COST = {
 	i(20399, {	-- Hallowed Wand - Leper Gnome
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = "~L.CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(128646, {	-- Hallowed Wand - Nerubian
@@ -450,13 +433,13 @@ local WANDS_WITH_COST = {
 	i(20398, {	-- Hallowed Wand - Ninja
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = "~L.CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(20397, {	-- Hallowed Wand - Pirate
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = "~L.CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(20413, {	-- Hallowed Wand - Random
@@ -465,7 +448,7 @@ local WANDS_WITH_COST = {
 	i(20411, {	-- Hallowed Wand - Skeleton
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = "~L.CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 	i(116848, {	-- Hallowed Wand - Slime
@@ -483,7 +466,7 @@ local WANDS_WITH_COST = {
 	i(20414, {	-- Hallowed Wand - Wisp
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
 		-- #if AFTER TWW
-		["description"] = "~L.CAN_ONLY_BE_USED_ON_PARTY_MEMBERS_OF_YOUR",
+		["description"] = "Can only be used on party members of your faction.",
 		-- #endif
 	}),
 };
@@ -602,24 +585,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		ach(10365, {	-- A Frightening Friend
-			["description"] = createLocalizationString({
-				readable = "You need Tier 3 garrison for this.",
-				constant = "YOU_NEED_TIER_3_GARRISON_FOR_THIS",
-				export = true,
-				text = {
-					en = "You need Tier 3 garrison for this.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这需要 3 级要塞。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "You need Tier 3 garrison for this.",
 			["coords"] = {
 				{ 40.1, 70.0, LUNARFALL },	-- Pepe Location (Alliance)
 				{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
@@ -757,24 +723,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_12_1_5 },
 		}),
 		ach(288, {	-- Out With It
-			["description"] = createLocalizationString({
-				readable = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
-				constant = "EAT_2_10_TRICKY_TREATS_QUICKLY_TO_TRIGGER_THE",
-				export = true,
-				text = {
-					en = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "快速吃下 2-10 个诡计糖果以触发该减益效果。效果因人而异。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
 			["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
 			["timeline"] = { ADDED_3_0_2 },
 		}),
@@ -859,24 +808,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(283, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- The Masquerade
 			-- #if AFTER TWW
-			["description"] = createLocalizationString({
-				readable = "You can only get transformed by party members of your faction.",
-				constant = "YOU_CAN_ONLY_GET_TRANSFORMED_BY_PARTY_MEMBERS",
-				export = true,
-				text = {
-					en = "You can only get transformed by party members of your faction.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "只有你所在阵营的队伍成员才能对你进行变形。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "You can only get transformed by party members of your faction.",
 			-- #endif
 			["groups"] = {
 				crit(3209, {	-- Transformed by Hallowed Wand - Bat
@@ -1002,24 +934,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	n(23682, {	-- Headless Horseman
 		-- #if AFTER WRATH
 		-- #if BEFORE 10.1.7
-		["description"] = createLocalizationString({
-			readable = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
-			constant = "YOU_CAN_LOOT_THE_LOOT_STUFFED_FILLED_PUMPKIN",
-			export = true,
-			text = {
-				en = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "你可以通过在地下城查找器中排队进入该战斗，每个角色每天拾取一次塞满战利品的南瓜。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
 		-- #endif
 		-- #else
 		["questID"] = 11392,	-- Call the Headless Horseman
@@ -1143,24 +1058,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 				},
 				-- #if BEFORE 11.2.5
-				["description"] = createLocalizationString({
-					readable = "Your first attempt of the day has an increased chance at the mount, pet, and manuscript. Enabling the curses increases the chances for the mount, at least. Subsequent attempts scan still drop these items, but at a significantly lower rate (as far as we know).",
-					constant = "YOUR_FIRST_ATTEMPT_OF_THE_DAY_HAS_AN_INCREASED",
-					export = true,
-					text = {
-						en = "Your first attempt of the day has an increased chance at the mount, pet, and manuscript. Enabling the curses increases the chances for the mount, at least. Subsequent attempts scan still drop these items, but at a significantly lower rate (as far as we know).",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你当天的第一次尝试获得坐骑、宠物和手稿的几率更高。启用诅咒至少会提高坐骑的掉落几率。后续尝试仍有可能掉落这些物品，但几率会显著降低（据我们所知）。",
-						-- TODO: tw = "",
-					},
-				}),	-- Manual override for src\Settings\Pages\Interface - Information.lua
+				["description"] = "Your first attempt of the day has an increased chance at the mount, pet, and manuscript. Enabling the curses increases the chances for the mount, at least. Subsequent attempts scan still drop these items, but at a significantly lower rate (as far as we know).",	-- Manual override for src\Settings\Pages\Interface - Information.lua
 				-- #endif
 				["groups"] = {
 					ach(980, {	-- The Horseman's Reins
@@ -1175,24 +1073,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(211271, {	-- Arfus (PET)
 						["timeline"] = { ADDED_10_1_7 },
 						-- #if AFTER 11.2.5
-						["description"] = createLocalizationString({
-							readable = "While the first attempt each day has a greatly increased drop chance, this item can be farmed using multiple characters.",
-							constant = "WHILE_THE_FIRST_ATTEMPT_EACH_DAY_HAS_A_GREATLY",
-							export = true,
-							text = {
-								en = "While the first attempt each day has a greatly increased drop chance, this item can be farmed using multiple characters.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "虽然每天的第一次尝试有大幅提升的掉落几率，但这件物品可以通过多个角色来刷取。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "While the first attempt each day has a greatly increased drop chance, this item can be farmed using multiple characters.",
 						-- #endif
 					}),
 					i(33292, {	-- Hallowed Helm
@@ -1201,24 +1082,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 						["timeline"] = { ADDED_2_2_2 },
 						-- #if AFTER 10.1.7
-						["description"] = createLocalizationString({
-							readable = "Enabling the curses increases the chances for the mount. Subsequent attempts scan still drop the mount, according to Blizzard, but at a significantly lower rate (as far as we know).",
-							constant = "ENABLING_THE_CURSES_INCREASES_THE_CHANCES_FOR",
-							export = true,
-							text = {
-								en = "Enabling the curses increases the chances for the mount. Subsequent attempts scan still drop the mount, according to Blizzard, but at a significantly lower rate (as far as we know).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "启用诅咒会提高获得该坐骑的几率。据暴雪称，后续尝试仍然可以掉落该坐骑，但几率会大幅降低（就我们目前所知）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Enabling the curses increases the chances for the mount. Subsequent attempts scan still drop the mount, according to Blizzard, but at a significantly lower rate (as far as we know).",
 						-- #endif
 					}),
 					i(37011, {	-- Magic Broom (MOUNT!)
@@ -1252,78 +1116,61 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(247721, {	-- The Headless Horseman's Ghoulish Charger (MOUNT!)
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if AFTER 11.2.5
-						["description"] = "~L.WHILE_THE_FIRST_ATTEMPT_EACH_DAY_HAS_A_GREATLY",
+						["description"] = "While the first attempt each day has a greatly increased drop chance, this item can be farmed using multiple characters.",
 						-- #endif
 					}),
 					i(247966, {	-- The Horseman's Ghoulish Breastplate
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = createLocalizationString({
-							readable = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
-							constant = "THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
-							export = true,
-							text = {
-								en = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "每天第一次尝试保证每个角色获得 1 件“食尸鬼”套装物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247967, {	-- The Horseman's Ghoulish Cinch
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247972, {	-- The Horseman's Ghoulish Cloak
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(250708, {	-- The Horseman's Ghoulish Cowl
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247968, {	-- The Horseman's Ghoulish Greaves
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247971, {	-- The Horseman's Ghoulish Grips
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247964, {	-- The Horseman's Ghoulish Helm
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247965, {	-- The Horseman's Ghoulish Mantle
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(247969, {	-- The Horseman's Ghoulish Treads
 						["timeline"] = { ADDED_11_2_5 },
 						-- #if BEFORE 12.0.0
-						["description"] = "~L.THE_FIRST_ATTEMPT_EACH_DAY_GUARANTEES_1",
+						["description"] = "The first attempt each day guarantees 1 'Ghoulish' Set Item per character.",
 						-- #endif
 					}),
 					i(117356, {	-- The Horseman's Sinister Slicer
@@ -1337,24 +1184,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					}),
 					i(208680, {	-- Windborne Velocidrake: Hallow's End Armor (MM!)
 						["timeline"] = { ADDED_10_1_7 },
-						["description"] = createLocalizationString({
-							readable = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.",
-							constant = "THIS_ITEM_IS_ONLY_ELIGIBLE_TO_DROP_FOR_THE_2",
-							export = true,
-							text = {
-								en = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此物品每个战团每天只有第一次尝试才有资格掉落，但每次符合条件的失败尝试都会提高掉落几率。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.",
 					}),
 				},
 			}),
@@ -1666,24 +1496,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		},
 	}),
 	petbattle(filter(BATTLE_PETS, {
-		["description"] = createLocalizationString({
-			readable = "|cFFFFD700Ghastly Rats|r, |cFFFFD700Ghost Maggots|r, and |cFFFFD700Spectral Spinners|r are only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison.",
-			constant = "CFFFFD700GHASTLY_RATS_R_CFFFFD700GHOST_MAGGOTS",
-			export = true,
-			text = {
-				en = "|cFFFFD700Ghastly Rats|r, |cFFFFD700Ghost Maggots|r, and |cFFFFD700Spectral Spinners|r are only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "|cFFFFD700恐怖老鼠|r、|cFFFFD700幽灵蛆虫|r和|cFFFFD700幽灵纺纱蛛|r只有在你要塞中应用了|cFFFFD700毛骨悚然的爬虫|r装饰后才会出现。可以用|cFFFFD7005 个阴森补给|r从要塞中的|cFFFFD700伊兹·霍利菲兹|r处购买。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "|cFFFFD700Ghastly Rats|r, |cFFFFD700Ghost Maggots|r, and |cFFFFD700Spectral Spinners|r are only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison.",
 		["timeline"] = { ADDED_6_2_2 },
 		["maps"] = {
 			FROSTWALL,
@@ -2735,24 +2548,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(12340, {	-- Candy Bucket — Westfall, Sentinel Hill, Alliance
 					-- #if BEFORE CATA
-					["description"] = createLocalizationString({
-						readable = "The candy bucket will relocate to Sentinel Tower if the area is phased post Defias attack.",
-						constant = "THE_CANDY_BUCKET_WILL_RELOCATE_TO_SENTINEL",
-						export = true,
-						text = {
-							en = "The candy bucket will relocate to Sentinel Tower if the area is phased post Defias attack.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果该区域在迪菲亚袭击后进入相位变化，糖果桶会转移到哨兵塔。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The candy bucket will relocate to Sentinel Tower if the area is phased post Defias attack.",
 					-- #endif
 					["provider"] = { "o", 190047 },	-- Candy Bucket, Westfall
 					["coords"] = {
@@ -4406,24 +4202,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29411, {	-- What Now? (Alliance)
-			["description"] = createLocalizationString({
-				readable = "Does not matter who you give it to, you still get the pet!",
-				constant = "DOES_NOT_MATTER_WHO_YOU_GIVE_IT_TO_YOU_STILL",
-				export = true,
-				text = {
-					en = "Does not matter who you give it to, you still get the pet!",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "无论交给谁都不影响，你依然能获得该宠物！",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["sourceQuest"] = 29403,	-- The Collector's Agent (Alliance)
 			["providers"] = {
 				{ "o", 209072 },	-- Stolen Crate
@@ -4435,7 +4214,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(29428, {	-- What Now? (Horde)
-			["description"] = "~L.DOES_NOT_MATTER_WHO_YOU_GIVE_IT_TO_YOU_STILL",
+			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["sourceQuest"] = 29427,	-- The Collector's Agent (Horde)
 			["providers"] = {
 				{ "o", 209094 },	-- Stolen Crate
@@ -4452,24 +4231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_9_1_0 },
 			["customCollect"] = "SL_COV_VEN",
 		},{
-			["description"] = createLocalizationString({
-				readable = "Speak with Theotar within The Ember Court scenario to spawn the 'Vision of Sire Denathrius'. During the final Tribute stage, accept the quest to receive the permanent unlock for your Ember Court.",
-				constant = "SPEAK_WITH_THEOTAR_WITHIN_THE_EMBER_COURT",
-				export = true,
-				text = {
-					en = "Speak with Theotar within The Ember Court scenario to spawn the 'Vision of Sire Denathrius'. During the final Tribute stage, accept the quest to receive the permanent unlock for your Ember Court.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "在余烬宫廷场景战役中与提奥塔交谈，以刷出德纳修斯大帝的幻象。在最后的进贡阶段接受任务，即可为你的余烬宫廷获得永久解锁。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Speak with Theotar within The Ember Court scenario to spawn the 'Vision of Sire Denathrius'. During the final Tribute stage, accept the quest to receive the permanent unlock for your Ember Court.",
 			["crs"] = {
 				165196,	-- Theotar (Inside Ember Court)
 				164966,	-- Temel <The Party Herald> (with a hat)
@@ -4539,24 +4301,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		["timeline"] = { ADDED_6_2_2 },
 		["groups"] = {
 			n(96323, {	-- Arachnis
-				["description"] = createLocalizationString({
-					readable = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your garrison. (This rare is available all year.)",
-					constant = "CFFFFD700ARACHNIS_R_IS_ONLY_PRESENT_IN_YOUR",
-					export = true,
-					text = {
-						en = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your garrison. (This rare is available all year.)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "|cFFFFD700阿拉克尼斯|r只有在你要塞中应用了|cFFFFD700毛骨悚然的爬虫|r装饰后才会出现。可以用|cFFFFD7005 个阴森补给|r从要塞中的|cFFFFD700伊兹·霍利菲兹|r处购买。（该稀有怪全年可用。）",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your garrison. (This rare is available all year.)",
 				["timeline"] = { ADDED_6_2_2 },
 				["questID"] = 39617,
 				["isDaily"] = true,
@@ -4633,7 +4378,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		i(20393, {	-- Treat Bag
 			-- #if BEFORE 4.2.0
-			["description"] = "~L.GET_THIS_BY_TRICK_OR_TREATING_AT_ANY_INNKEEPER",
+			["description"] = "Get this by Trick or Treating at any Innkeeper.",
 			["sym"] = {
 				{ "selectparent" },	-- Select the "Rewards" header.
 				{ "pop" },	-- Get the Rewards.
@@ -4676,24 +4421,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	}))),
 	n(TREASURES, {
 		o(244568, {	-- Spooky Pepe
-			["description"] = createLocalizationString({
-				readable = "You need a Tier 3 garrison for this.",
-				constant = "YOU_NEED_A_TIER_3_GARRISON_FOR_THIS",
-				export = true,
-				text = {
-					en = "You need a Tier 3 garrison for this.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这需要 3 级要塞。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "You need a Tier 3 garrison for this.",
 			["coords"] = {
 				{ 70.7, 90.2, FROSTWALL },	-- Pepe Location [Horde]
 				{ 40.1, 70.1, LUNARFALL },	-- Pepe Location [Alliance]

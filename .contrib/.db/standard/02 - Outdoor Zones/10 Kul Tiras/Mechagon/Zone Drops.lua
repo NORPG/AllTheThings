@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(ZONE_DROPS, {
 			i(168491, {	-- Blueprint: Personal Time Displacer
-				["description"] = createLocalizationString({
-					readable = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
-					constant = "DROPS_FROM_NORMAL_MOBS_DURING_THE_CFFFFD700THE",
-					export = true,
-					text = {
-						en = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在|cFFFFD700另一个地方|r任务期间由普通怪物掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
 				["crs"] = {
 					153991,	-- Clockwork Giant
 				},

@@ -4,24 +4,7 @@
 
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	q(55121, {	-- The Laboratory of Mardivas
-		["description"] = createLocalizationString({
-			readable = "For this weekly quest, combine reagents scavenged from Nazjatar (|cFF0070ddStrange Mineralized Water|r, |cFF0070ddStrange Oceanic Sediment|r, and |cFF0070ddStrange Volcanic Rock|r) to create various elemental amalgamations.\n\nKill each one to fulfill the requirements for |cFFFFFF00Periodic Destruction|r, part of the |cFFFFFF00Undersea Usurper|r achievement, or target specific ones to collect their unique drops!\n\nHover over the name of the mob you want to summon for a description that outlines which Arcanocrystals to activate.",
-			constant = "FOR_THIS_WEEKLY_QUEST_COMBINE_REAGENTS",
-			export = true,
-			text = {
-				en = "For this weekly quest, combine reagents scavenged from Nazjatar (|cFF0070ddStrange Mineralized Water|r, |cFF0070ddStrange Oceanic Sediment|r, and |cFF0070ddStrange Volcanic Rock|r) to create various elemental amalgamations.\n\nKill each one to fulfill the requirements for |cFFFFFF00Periodic Destruction|r, part of the |cFFFFFF00Undersea Usurper|r achievement, or target specific ones to collect their unique drops!\n\nHover over the name of the mob you want to summon for a description that outlines which Arcanocrystals to activate.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "在这个周常任务中，将取自纳沙塔尔的材料（|cFF0070dd奇异的矿化水|r、|cFF0070dd奇异的海洋沉积物|r和|cFF0070dd奇异的火山岩|r）组合起来，制造出各种元素融合体。\n\n击杀每一个融合体即可满足|cFFFFFF00周期性毁灭|r的要求，这是|cFFFFFF00海底篡位者|r成就的一部分；也可以专门针对特定的融合体，收集它们的独特掉落！\n\n将鼠标悬停在你想召唤的怪物名称上，即可看到说明，了解需要激活哪些奥术水晶。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "For this weekly quest, combine reagents scavenged from Nazjatar (|cFF0070ddStrange Mineralized Water|r, |cFF0070ddStrange Oceanic Sediment|r, and |cFF0070ddStrange Volcanic Rock|r) to create various elemental amalgamations.\n\nKill each one to fulfill the requirements for |cFFFFFF00Periodic Destruction|r, part of the |cFFFFFF00Undersea Usurper|r achievement, or target specific ones to collect their unique drops!\n\nHover over the name of the mob you want to summon for a description that outlines which Arcanocrystals to activate.",
 		["icon"] = 132774,	-- Strange Mineralized Water
 		["sourceQuests"] = { 57086 },	-- Legacy of the Mad Mage
 		["provider"] = { "o", 322533 },	-- Mardivas's Tome of the Elements
@@ -30,91 +13,23 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		["groups"] = {
 			currency(1721),	-- Prismatic Manapearl x5
 			n(155139, {	-- Arcane Amalgamation
-				["description"] = createLocalizationString({
-					readable = "Activate no crystals.",
-					constant = "ACTIVATE_NO_CRYSTALS",
-					export = true,
-					text = {
-						en = "Activate no crystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "不激活任何水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate no crystals.",
 				["groups"] = { i(170477) },	-- Mardivas's Universally Lauded Tote
 			}),
 			n(150926, {	-- Burning Amalgamation
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Pyroclasmic (Red) Arcanocrystal.",
-					constant = "ACTIVATE_LESSER_PYROCLASMIC_RED_ARCANOCRYSTAL",
-					export = true,
-					text = {
-						en = "Activate Lesser Pyroclasmic (Red) Arcanocrystal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级烈焰（红色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Pyroclasmic (Red) Arcanocrystal.",
 				["cr"] = 154991,	-- Lesser Pyroclasmic Arcanocrystal
 				["cost"] = { { "i", 169333, 1 } },	-- Strange Volcanic Rock
 				["groups"] = { i(170126) },	-- Igneous Longbow
 			}),
 			n(150862, {	-- Dusty Amalgamation
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Lithic (Yellow) Arcanocrystal.",
-					constant = "ACTIVATE_LESSER_LITHIC_YELLOW_ARCANOCRYSTAL",
-					export = true,
-					text = {
-						en = "Activate Lesser Lithic (Yellow) Arcanocrystal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级岩石（黄色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Lithic (Yellow) Arcanocrystal.",
 				["cr"] = 155009,	-- Lesser Lithic Arcanocrystal
 				["cost"] = { { "i", 169334, 1 } },	-- Strange Oceanic Sediment
 				["groups"] = { i(170383) },	-- Coralspine Bulwark
 			}),
 			n(150864, {	-- Herald of Salgos
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Lithic (Yellow) and Greater Lithic (Yellow) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_LITHIC_YELLOW_AND_GREATER",
-					export = true,
-					text = {
-						en = "Activate Lesser Lithic (Yellow) and Greater Lithic (Yellow) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级岩石（黄色）和强效岩石（黄色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Lithic (Yellow) and Greater Lithic (Yellow) Arcanocrystals.",
 				["crs"] = {
 					155009,	-- Lesser Lithic Arcanocrystal
 					155031,	-- Greater Lithic Arcanocrystal
@@ -123,24 +38,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["groups"] = { i(170125) },	-- Behemoth Claw of the Abyss
 			}),
 			n(150928, {	-- Moghiea
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Pyroclasmic (Red) and Greater Lithic (Yellow) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_PYROCLASMIC_RED_AND_GREATER",
-					export = true,
-					text = {
-						en = "Activate Lesser Pyroclasmic (Red) and Greater Lithic (Yellow) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级烈焰（红色）和强效岩石（黄色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Pyroclasmic (Red) and Greater Lithic (Yellow) Arcanocrystals.",
 				["crs"] = {
 					154991,	-- Lesser Pyroclasmic Arcanocrystal
 					155031,	-- Greater Lithic Arcanocrystal
@@ -152,24 +50,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["groups"] = { i(170128) },	-- Majestic Shirakess Greatstaff
 			}),
 			n(151157, {	-- Omus
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Benthic (Blue) and Greater Pyroclasmic (Red) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_BENTHIC_BLUE_AND_GREATER",
-					export = true,
-					text = {
-						en = "Activate Lesser Benthic (Blue) and Greater Pyroclasmic (Red) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级底栖（蓝色）和强效烈焰（红色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Benthic (Blue) and Greater Pyroclasmic (Red) Arcanocrystals.",
 				["crs"] = {
 					154970,	-- Lesser Benthic Arcanocrystal
 					155025,	-- Greater Pyroclasmic Arcanocrystal
@@ -184,24 +65,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				},
 			}),
 			n(150856, {	-- Osgen <Shifter of Tides>
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Benthic (Blue) and Greater Benthic (Blue) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_BENTHIC_BLUE_AND_GREATER_2",
-					export = true,
-					text = {
-						en = "Activate Lesser Benthic (Blue) and Greater Benthic (Blue) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级底栖（蓝色）和强效底栖（蓝色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Benthic (Blue) and Greater Benthic (Blue) Arcanocrystals.",
 				["crs"] = {
 					154970,	-- Lesser Benthic Arcanocrystal
 					154979,	-- Greater Benthic Arcanocrystal
@@ -210,24 +74,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["groups"] = { i(170130) },	-- Glaive of Swells
 			}),
 			n(151154, {	-- Salgos the Eternal
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Lithic (Yellow) and Greater Pyroclasmic (Red) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_LITHIC_YELLOW_AND_GREATER_2",
-					export = true,
-					text = {
-						en = "Activate Lesser Lithic (Yellow) and Greater Pyroclasmic (Red) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级岩石（黄色）和强效烈焰（红色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Lithic (Yellow) and Greater Pyroclasmic (Red) Arcanocrystals.",
 				["crs"] = {
 					155009,	-- Lesser Lithic Arcanocrystal
 					155025,	-- Greater Pyroclasmic Arcanocrystal
@@ -239,24 +86,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["groups"] = { i(170129) },	-- Salgos' Volatile Basher
 			}),
 			n(150863, {	-- Spawn of Salgos
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Lithic (Yellow) and Greater Benthic (Blue) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_LITHIC_YELLOW_AND_GREATER_3",
-					export = true,
-					text = {
-						en = "Activate Lesser Lithic (Yellow) and Greater Benthic (Blue) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级岩石（黄色）和强效底栖（蓝色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Lithic (Yellow) and Greater Benthic (Blue) Arcanocrystals.",
 				["crs"] = {
 					155009,	-- Lesser Lithic Arcanocrystal
 					154979,	-- Greater Benthic Arcanocrystal
@@ -268,24 +98,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["groups"] = { i(170124) },	-- Coral-Sharpened Greatsword
 			}),
 			n(151155, {	-- Ungormath <The Malevolent>
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Pyroclasmic (Red) and Greater Pyroclasmic (Red) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_PYROCLASMIC_RED_AND_GREATER_2",
-					export = true,
-					text = {
-						en = "Activate Lesser Pyroclasmic (Red) and Greater Pyroclasmic (Red) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级烈焰（红色）和强效烈焰（红色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Pyroclasmic (Red) and Greater Pyroclasmic (Red) Arcanocrystals.",
 				["crs"] = {
 					154991,	-- Lesser Pyroclasmic Arcanocrystal
 					155025,	-- Greater Pyroclasmic Arcanocrystal
@@ -294,47 +107,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["groups"] = { i(170131) },	-- Tidal Wand of Malevolence
 			}),
 			n(150846, {	-- Watery Amalgamation
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Benthic (Blue) Arcanocrystal.",
-					constant = "ACTIVATE_LESSER_BENTHIC_BLUE_ARCANOCRYSTAL",
-					export = true,
-					text = {
-						en = "Activate Lesser Benthic (Blue) Arcanocrystal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级底栖（蓝色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Benthic (Blue) Arcanocrystal.",
 				["cr"] = 154970,	-- Lesser Benthic Arcanocrystal
 				["cost"] = { { "i", 169332, 1 } },	-- Strange Mineralized Water
 				["groups"] = { i(170138) },	-- Scroll of Violent Tides
 			}),
 			n(150927, {	-- Xue <The Cinder>
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Pyroclasmic (Red) and Greater Benthic (Blue) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_PYROCLASMIC_RED_AND_GREATER_3",
-					export = true,
-					text = {
-						en = "Activate Lesser Pyroclasmic (Red) and Greater Benthic (Blue) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级烈焰（红色）和强效底栖（蓝色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Pyroclasmic (Red) and Greater Benthic (Blue) Arcanocrystals.",
 				["crs"] = {
 					154991,	-- Lesser Pyroclasmic Arcanocrystal
 					154979,	-- Greater Benthic Arcanocrystal
@@ -349,24 +128,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				},
 			}),
 			n(150848, {	-- Zomera
-				["description"] = createLocalizationString({
-					readable = "Activate Lesser Benthic (Blue) and Greater Lithic (Yellow) Arcanocrystals.",
-					constant = "ACTIVATE_LESSER_BENTHIC_BLUE_AND_GREATER_LITHIC",
-					export = true,
-					text = {
-						en = "Activate Lesser Benthic (Blue) and Greater Lithic (Yellow) Arcanocrystals.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "激活次级底栖（蓝色）和强效岩石（黄色）奥术水晶。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Activate Lesser Benthic (Blue) and Greater Lithic (Yellow) Arcanocrystals.",
 				["crs"] = {
 					154970,	-- Lesser Benthic Arcanocrystal
 					155031,	-- Greater Lithic Arcanocrystal

@@ -74,24 +74,7 @@ root(ROOTS.Instances, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Red Silk Bandana
 							["provider"] = { "i", 915 },	-- Red Silk Bandana
-							["description"] = createLocalizationString({
-								readable = "Can also drop from any Defias mob in the Deadmines.",
-								constant = "CAN_ALSO_DROP_FROM_ANY_DEFIAS_MOB_IN_THE",
-								export = true,
-								text = {
-									en = "Can also drop from any Defias mob in the Deadmines.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "也可以从死亡矿井中的任何迪菲亚怪物身上掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can also drop from any Defias mob in the Deadmines.",
 							["crs"] = {
 								619,	-- Defias Conjurer
 								824,	-- Defias Digger
@@ -122,24 +105,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(373, {	-- The Unsent Letter
-					["description"] = createLocalizationString({
-						readable = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
-						constant = "DROPS_FROM_VANCLEEF_DELIVER_IT_TO_BAROS",
-						export = true,
-						text = {
-							en = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "由范克里夫掉落。将其交给暴风城的巴罗斯·亚历克斯顿。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
 					["qs"] = 2874,	-- An Unsent Letter (QS!)
 					["cr"] = 1646,	-- Baros Alexston <City Architect>
 					["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
@@ -169,24 +135,7 @@ root(ROOTS.Instances, {
 			}),
 			n(RARES, {
 				n(596, {	-- Brainwashed Noble
-					["description"] = createLocalizationString({
-						readable = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-						constant = "THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_3",
-						export = true,
-						text = {
-							en = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个稀有生物，因此并不总是存在。\n\n位于副本前的洞穴中。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 					["coord"] = { 44.0, 78.3, MAP.WESTFALL },
 					["groups"] = {
 						i(3902),	-- Staff of Nobles
@@ -194,7 +143,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				n(626, {	-- Foreman Thistlenettle
-					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_3",
+					["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 					["coord"] = { 42.2, 82.6, MAP.WESTFALL },
 					["groups"] = {
 						i(1875),	-- Thistlenettle's Badge
@@ -204,7 +153,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				n(599, {	-- Marisa du'Paige
-					["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT_3",
+					["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 					["coord"] = { 42.2, 79.9, MAP.WESTFALL },
 					["groups"] = {
 						i(3019),	-- Noble's Robe
@@ -272,24 +221,7 @@ root(ROOTS.Instances, {
 					["cr"] = 625,	-- Undead Dynamiter
 				}),
 				i(7997, {	-- Red Defias Mask
-					["description"] = createLocalizationString({
-						readable = "Can drop in Westfall and The Deadmines.",
-						constant = "CAN_DROP_IN_WESTFALL_AND_THE_DEADMINES",
-						export = true,
-						text = {
-							en = "Can drop in Westfall and The Deadmines.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可在西部荒野和死亡矿井掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can drop in Westfall and The Deadmines.",
 				}),
 				i(915),	-- Red Silk Bandana
 				i(1929, {	-- Silk-threaded Trousers
@@ -315,7 +247,7 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(3586, {	-- Miner Johnson
-				["description"] = "~L.THIS_IS_A_RARE_CREATURE_AND_AS_SUCH_IS_NOT",
+				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
 					i(5443),	-- Gold-plated Buckler
 					i(5444),	-- Miner's Cape

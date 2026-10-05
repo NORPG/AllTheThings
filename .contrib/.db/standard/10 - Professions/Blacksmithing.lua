@@ -40,7 +40,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["timeline"] = { REMOVED_4_0_3 },
 		}, {
 			q(5283, {	-- The Art of the Armorsmith [A]
-				["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_3",
+				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				["altQuests"] = {
 					5301,	-- The Art of the Armorsmith [H]
 					-- #if SEASON_OF_DISCOVERY
@@ -61,7 +61,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5301, {	-- The Art of the Armorsmith [H]
-				["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_3",
+				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
 					-- #if SEASON_OF_DISCOVERY
@@ -82,7 +82,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = HORDE_ONLY,
 			}),
 			q(5284, {	-- The Way of the Weaponsmith [A]
-				["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_4",
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
 					5301,	-- The Art of the Armorsmith [H]
@@ -102,7 +102,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5302, {	-- The Way of the Weaponsmith [H]
-				["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_4",
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
 					5301,	-- The Art of the Armorsmith [H]
@@ -123,7 +123,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, q(82662, {	-- The Way of the Weaponsmith [A]
-				["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_4",
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
 					5301,	-- The Art of the Armorsmith [H]
@@ -141,7 +141,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = ALLIANCE_ONLY,
 			})),
 			applyclassicphase(SOD_PHASE_THREE, q(82665, {	-- The Way of the Weaponsmith [H]
-				["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_4",
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
 					5301,	-- The Art of the Armorsmith [H]
@@ -479,24 +479,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38532, {	-- Maw of Souls: Hammered By The Storm
-			["description"] = createLocalizationString({
-				readable = "Remember to loot Heyla to obtain Terrorspike.",
-				constant = "REMEMBER_TO_LOOT_HEYLA_TO_OBTAIN_TERRORSPIKE",
-				export = true,
-				text = {
-					en = "Remember to loot Heyla to obtain Terrorspike.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "记得拾取海拉以获取恐惧尖刺。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Remember to loot Heyla to obtain Terrorspike.",
 			["sourceQuests"] = { 38530 },	-- The Firmament Stone
 			["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 			["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
@@ -533,24 +516,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38534, {	-- Demonsteel Armguards
-			["description"] = createLocalizationString({
-				readable = "Create one Rank 1 of this item.",
-				constant = "CREATE_ONE_RANK_1_OF_THIS_ITEM",
-				export = true,
-				text = {
-					en = "Create one Rank 1 of this item.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "制作一件该物品的 1 级版本。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -560,7 +526,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38538, {	-- Demonsteel Boots
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -570,7 +536,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38542, {	-- Demonsteel Breastplate
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -580,7 +546,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38539, {	-- Demonsteel Gauntlets
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -590,7 +556,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38541, {	-- Demonsteel Greaves
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -600,7 +566,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38540, {	-- Demonsteel Helm
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -610,7 +576,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38537, {	-- Demonsteel Pauldrons
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -620,7 +586,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(38536, {	-- Demonsteel Waistguard
-			["description"] = "~L.CREATE_ONE_RANK_1_OF_THIS_ITEM",
+			["description"] = "Create one Rank 1 of this item.",
 			["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 			["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 			["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
@@ -760,24 +726,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			------ Tools of Trade Questline ------
 			q(50123, {	-- A Recipe For the Ages [A]
-				["description"] = createLocalizationString({
-					readable = "Requires 150 Kul Tiran Blacksmithing.",
-					constant = "REQUIRES_150_KUL_TIRAN_BLACKSMITHING",
-					export = true,
-					text = {
-						en = "Requires 150 Kul Tiran Blacksmithing.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 150 点库尔提拉斯锻造。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 150 Kul Tiran Blacksmithing.",
 				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 				["coord"] = { 73.6, 8.6, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
@@ -787,24 +736,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(50276, {	-- A Recipe For the Ages [H]
-				["description"] = createLocalizationString({
-					readable = "Requires 150 Zandalari Blacksmithing.",
-					constant = "REQUIRES_150_ZANDALARI_BLACKSMITHING",
-					export = true,
-					text = {
-						en = "Requires 150 Zandalari Blacksmithing.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 150 点赞达拉锻造。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires 150 Zandalari Blacksmithing.",
 				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 				["coord"] = { 43.6, 38.3, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
@@ -940,24 +872,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		n(QUESTS, {
 			q(70358, {	-- Dragon Isles Blacksmithing
-				["description"] = createLocalizationString({
-					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
-					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_2",
-					export = true,
-					text = {
-						en = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务只能在学会巨龙群岛锻造之前接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -966,7 +881,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(70357, {	-- Dragon Isles Blacksmithing
-				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_2",
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -1005,12 +920,12 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}, {
 			------ Requires 25 Skill ------
 			q(70589, {	-- Blacksmithing Services Requested
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66897, {	-- Fuel for the Forge
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -1018,7 +933,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(72398, {	-- Rock and Stone
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -1026,7 +941,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(66941, {	-- Tremendous Tools
-				["description"] = "~L.REQUIRES_25_SKILL",
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -1036,7 +951,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 
 			------ Requires 45 Skill ------
 			q(66517, {	-- A New Source of Weapons
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["groups"] = {
@@ -1044,22 +959,22 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(70234, {	-- All this Hammering
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 			}),
 			q(70233, {	-- Axe Shortage
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 			}),
 			q(70235, {	-- Repair Bill
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 			}),
 			q(70211, {	-- Stomping Explorers
-				["description"] = "~L.REQUIRES_45_SKILL",
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 			}),
@@ -1100,7 +1015,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 } } }, {
 				r(376700),	-- Illustrious Insight
 				r(371412),	-- Khaz'gorite Blacksmith's Hammer
@@ -1134,24 +1049,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			})),
 			o(376657, {	-- Ancient Monument
-				["description"] = createLocalizationString({
-					readable = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
-					constant = "KILL_NPCS_AND_LOOT_THE_SWORD_IF_YOU_RECEIVE_NO",
-					export = true,
-					text = {
-						en = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "击杀 NPC 并拾取那把剑。如果没有获得掉落，请检查你的邮箱！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
 				["crs"] = { 188648 },	-- Enchanted Bulwark
 				["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
 				["questID"] = 70246,
@@ -1212,24 +1110,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			})),
 			o(380516, {	-- Glimmer of Wisdom
-				["description"] = createLocalizationString({
-					readable = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
-					constant = "CRAFT_A_PRIMAL_MOLTEN_ALLOY_OR_A_FROSTFIRE",
-					export = true,
-					text = {
-						en = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在昏暗熔炉旁制造原始熔火合金或霜火合金。存放箱中会出现闪光，点击即可取得宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
 				["sourceQuests"] = { 70232 },	-- This triggers when crafting the Alloy, which makes the treasure appear.
 				["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
 				["questID"] = 70230,
@@ -1252,24 +1133,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(380623, {	-- Spelltouched Tongs
-				["description"] = createLocalizationString({
-					readable = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
-					constant = "IF_YOU_DO_NOT_HAVE_MINING_TO_CLEAR_THE_ROCK",
-					export = true,
-					text = {
-						en = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你没有采矿技能来清除岩墙，试着死一次。幽灵可以穿过它。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
 				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
 				["questID"] = 70314,
 				["groups"] = {
@@ -1302,7 +1166,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			i(198606),	-- Blacksmith's Writ
 			q(74109, {	-- DF Inscription Order: Blacksmith
 				["name"] = "DF Inscription Order: Blacksmith",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
 			}),
 			q(66381, {	-- DF Weekly Blacksmithing Knowledgepoint #1
@@ -1315,24 +1179,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			q(70513, {	-- DF Weekly Blacksmithing Knowledgepoint #3
 				["name"] = "DF Blacksmithing Drop #1: Fire Elemental",
-				["description"] = createLocalizationString({
-					readable = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_FIRE_ELEMENTAL_COORDINATES_LINK",
-					export = true,
-					text = {
-						en = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "由任意火元素掉落。\n坐标指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198966 },	-- Molten Globule
 				["coord"] = { 39.0, 48.8, THALDRASZUS },
 				["crs"] = {
@@ -1342,24 +1189,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			q(70512, {	-- DF Weekly Blacksmithing Knowledgepoint #4
 				["name"] = "DF Blacksmithing Drop #2: Earth Elemental",
-				["description"] = createLocalizationString({
-					readable = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-					constant = "DROPS_FROM_ANY_EARTH_ELEMENTAL_COORDINATES_LINK",
-					export = true,
-					text = {
-						en = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "任何土元素都会掉落。\n坐标链接指向我们找到的最佳地点。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198965 },	-- Primeval Earth Fragment
 				["coords"] = {
 					{ 50.6, 57.6, THALDRASZUS },
@@ -1426,7 +1256,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 } } }, {
 				r(450281),	-- Artisan Blacksmith's Hammer
 				r(450282),	-- Artisan Blacksmith's Toolbox
@@ -1521,7 +1351,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		}, {
 			q(83726, {	-- TWW Inscription Order: Blacksmith
 				["name"] = "TWW Inscription Order: Blacksmith",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
 			}),
 			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1
@@ -1603,7 +1433,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "~L.THESE_ARE_LEARNED_BY_SPECIALIZATION",
+			["description"] = "These are learned by specialization.",
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.MID.BLACKSMITHING, 1 } } }, {
 				r(1229646),	-- Farstrider's Chopper
 				r(1229659),	-- Farstrider's Mercy
@@ -1698,7 +1528,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			i(263455),	-- Thalassian Blacksmith's Journal
 			q(95128, {	-- MID Inscription Order: Blacksmith
 				["name"] = "MID Inscription Order: Blacksmith",
-				["description"] = "~L.REQUIRES_A_CRAFTING_ORDER_FROM_INSCRIPTION",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 245763 },	-- Thalassian Treatise on Blacksmithing
 			}),
 			q(93531, {	-- MID Weekly Blacksmithing Knowledgepoint #1

@@ -114,24 +114,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(130350, {	-- Guardian of the Spring
-				["description"] = createLocalizationString({
-					readable = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
-					constant = "MOUNT_THE_HORSE_LOCATED_AT_62_1_51_8_AND_RIDE",
-					export = true,
-					text = {
-						en = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "骑上位于 62.1, 51.8 的马，把它骑到 67.3, 51.6 处的罗恩·贝特霍尔德那里。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
 				["questID"] = 49983,	-- Ride Horse Back
 				["coord"] = { 62.1, 51.8, TIRAGARDE_SOUND },	-- Guardian of the Spring
 			}),
@@ -360,24 +343,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(132052, {	-- Vol'Jim
-				["description"] = createLocalizationString({
-					readable = "It looks like this NPC didn't make it to live from beta.",
-					constant = "IT_LOOKS_LIKE_THIS_NPC_DIDN_T_MAKE_IT_TO_LIVE",
-					export = true,
-					text = {
-						en = "It looks like this NPC didn't make it to live from beta.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这个 NPC 似乎没能从测试服进入正式服。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "It looks like this NPC didn't make it to live from beta.",
 				["timeline"] = { CREATED_8_0_1 },
 			}),
 		}),

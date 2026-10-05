@@ -407,9 +407,9 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 ETERNIUM_THREAD = applyclassicphase(WRATH_PHASE_ONE, {
 	i(38426, {	-- Eternium Thread
 		-- #if AFTER CATA
-		["description"] = "~L.CAN_BE_BOUGHT_FROM_LEATHERWORKING_AND_TAILORING",
+		["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
 		-- #else
-		["description"] = "~L.CAN_BE_BOUGHT_FROM_TAILORING_SUPPLIERS_AS_WELL",
+		["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
 		-- #endif
 		["providers"] = {
 			{ "n", 24341},	-- Barnabas Frye <Trade Goods>
@@ -732,24 +732,7 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 	}),
 }));
 DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = createLocalizationString({
-		readable = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at Tailoring Emporium for 100 gold.",
-		constant = "THIS_IS_A_REWARD_FOR_COMPLETING_THE_7",
-		export = true,
-		text = {
-			en = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at Tailoring Emporium for 100 gold.",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "这是完成裁缝入门任务线的奖励，可从任何德拉诺生物身上掉落。也可在裁缝店以 100 金币购买。",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at Tailoring Emporium for 100 gold.",
 	["groups"] = {
 		r(158758, {	-- Tailoring (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -846,7 +829,7 @@ COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({
 	}),
 	i(114871, {	-- Pattern: Hexweave Essence (RECIPE!)
 		["collectible"] = false,
-		["description"] = "~L.THE_ITEM_IS_STILL_IN_GAME_BUT_YOU_CAN_T_LEARN",
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),

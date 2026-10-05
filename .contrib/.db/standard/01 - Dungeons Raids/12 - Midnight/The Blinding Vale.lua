@@ -45,24 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				n(SPECIAL, {
 					n(251885, {	-- Gravid Potatoad
-						["description"] = createLocalizationString({
-							readable = "Left of the path towards the last boss, target and use Hexed Potatoad Mucus to receive a toy.",
-							constant = "LEFT_OF_THE_PATH_TOWARDS_THE_LAST_BOSS_TARGET",
-							export = true,
-							text = {
-								en = "Left of the path towards the last boss, target and use Hexed Potatoad Mucus to receive a toy.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在通往最终首领的道路左侧，选中并使用被诅咒的土豆蟾蜍黏液即可获得一个玩具。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Left of the path towards the last boss, target and use Hexed Potatoad Mucus to receive a toy.",
 						["questID"] = 92518,
 						["groups"] = {
 							i(251903, {	-- Potatoad Egg (TOY!)

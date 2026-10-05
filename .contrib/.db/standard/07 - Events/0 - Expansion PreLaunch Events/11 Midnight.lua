@@ -28,28 +28,11 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(QUESTS, {
 			q(90759, {	-- The Cult Within [A]
-				["description"] = createLocalizationString({
-					readable = "Pops-up upon login",
-					constant = "POPS_UP_UPON_LOGIN",
-					export = true,
-					text = {
-						en = "Pops-up upon login",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "登录时弹出",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Pops-up upon login",
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(90764, {	-- The Cult Within [H]
-				["description"] = "~L.POPS_UP_UPON_LOGIN",
+				["description"] = "Pops-up upon login",
 				["races"] = HORDE_ONLY,
 			}),
 			q(90760, {	-- Avoiding Blame [A]
@@ -100,24 +83,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			------ Stay awhile and listen ------
 			hqt(92103, {	-- Stay awhile and listen: Squabble Amongst Ministers
 				["name"] = "Stay awhile and listen: Squabble Amongst Ministers",
-				["description"] = createLocalizationString({
-					readable = "Dialogue becomes available after accepting 'Midnight Dress' (90765).",
-					constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_ACCEPTING_7",
-					export = true,
-					text = {
-						en = "Dialogue becomes available after accepting 'Midnight Dress' (90765).",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "接受“午夜礼服”（90765）后即可出现该对话。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Dialogue becomes available after accepting 'Midnight Dress' (90765).",
 				["sourceQuest"] = 90765,	-- Midnight Dress
 				["qg"] = 237506,	-- Magister Umbric
 				["coord"] = { 49.9, 80.8, TWILIGHT_HIGHLANDS },
@@ -213,24 +179,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				["coord"] = { 57.5, 75.4, TWILIGHT_HIGHLANDS },
 			}),
 			n(253378, {	-- Voice of the Eclipse
-				["description"] = createLocalizationString({
-					readable = "This Rare has a chance to be summoned anywhere in Twilight Highlands.\n\nDestroy Disparate Ephemera to force the Ephemeral Void to coalesce and bring forth the Voice of the Eclipse.",
-					constant = "THIS_RARE_HAS_A_CHANCE_TO_BE_SUMMONED_ANYWHERE",
-					export = true,
-					text = {
-						en = "This Rare has a chance to be summoned anywhere in Twilight Highlands.\n\nDestroy Disparate Ephemera to force the Ephemeral Void to coalesce and bring forth the Voice of the Eclipse.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此稀有怪有几率在暮光高地的任何地方被召唤。\n\n摧毁零散的蜉蝣，迫使瞬息虚空凝聚，从而引出日蚀之声。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This Rare has a chance to be summoned anywhere in Twilight Highlands.\n\nDestroy Disparate Ephemera to force the Ephemeral Void to coalesce and bring forth the Voice of the Eclipse.",
 				["crs"] = {
 					253329,	-- Disparate Ephemera
 					253605,	-- Ephemeral Void

@@ -71,24 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			ach(14774, {	-- Ardenweald Gourmand
-				["description"] = createLocalizationString({
-					readable = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
-					constant = "ALL_FOOD_IS_SOLD_BY_TANOR_IN_ARDENWEALD_AT",
-					export = true,
-					text = {
-						en = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "所有食物都由炽蓝仙野的塔诺在 |cFFFFFFFF65.0, 19.6|r 处出售。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 				["coord"] = { 65.0, 19.6, ARDENWEALD },
 				["crs"] = { 164725 },	-- Tanor <Food & Drink>
 				["groups"] = {
@@ -111,24 +94,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14353, {	-- Ardenweald's a Stage
-				["description"] = createLocalizationString({
-					readable = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
-					constant = "YOU_HAVE_TO_BE_IN_THE_NIGHT_FAE_COVENANT_TO",
-					export = true,
-					text = {
-						en = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须加入法夜盟约才能亲自召唤怪物，但如果是由其他人召唤的，任何人都可以击杀并拾取。每天只能召唤一只怪物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
 				["coord"] = { 41.5, 44.8, ARDENWEALD },
 				["crs"] = { 171743 },	-- Dapperdew
 				["groups"] = {
@@ -167,24 +133,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(14791, {	-- Toss a Seed to Your Hunter...
-				["description"] = createLocalizationString({
-					readable = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove. Look around the bases of trees for sparkling bluish-purple plants.",
-					constant = "THE_FAINTLY_GLOWING_SEEDS_CAN_BE_FOUND",
-					export = true,
-					text = {
-						en = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove. Look around the bases of trees for sparkling bluish-purple plants.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "微光种子散布在该区域各处，但距离该遭遇最近的一些在 Heartwood Grove 的山坡上。在树根周围寻找闪烁的蓝紫色植物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove. Look around the bases of trees for sparkling bluish-purple plants.",
 				["crs"] = { 171690 },	-- Gwyncierw
 				["coord"] = { 65.6, 24.6, ARDENWEALD },
 				["provider"] = { "i", 183902 },	-- 1x A Faintly Glowing Seed

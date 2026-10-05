@@ -833,24 +833,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152545),	-- Frenzied Fangtooth
 		i(152547),	-- Great Sea Catfish
 		i(163131, {	-- Great Sea Ray (MOUNT!)
-			["description"] = createLocalizationString({
-				readable = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
-				constant = "CAUGHT_IN_ANY_WATERS_IN_KUL_TIRAS_OR_ZANDALAR",
-				export = true,
-				text = {
-					en = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可在库尔提拉斯或赞达拉的任何水域中钓到，包括麦卡贡（但不包括纳沙塔尔）。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
 		}),
 		i(167562, { ["timeline"] = { ADDED_8_2_0 } }),	-- Ionized Minnow
 		i(152546),	-- Lane Snapper
@@ -858,48 +841,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(168646, { ["timeline"] = { ADDED_8_2_0 } }),	-- Mauve Stinger
 		i(162515),	-- Midnight Salmon
 		i(162516, {	-- Rasboralus
-			["description"] = createLocalizationString({
-				readable = "Caught around Boralus's Proudmoore Keep.",
-				constant = "CAUGHT_AROUND_BORALUS_S_PROUDMOORE_KEEP",
-				export = true,
-				text = {
-					en = "Caught around Boralus's Proudmoore Keep.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可在伯拉勒斯的普罗德摩尔要塞附近钓到。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Caught around Boralus's Proudmoore Keep.",
 		}),
 		i(152549),	-- Redtail Loach
 		i(152543),	-- Sand Shifter
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
 		i(162517, {	-- U'taka
-			["description"] = createLocalizationString({
-				readable = "Caught in Dazar'alor.",
-				constant = "CAUGHT_IN_DAZAR_ALOR",
-				export = true,
-				text = {
-					en = "Caught in Dazar'alor.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可在达萨罗钓到。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Caught in Dazar'alor.",
 		}),
 		i(168302, { ["timeline"] = { ADDED_8_2_0 } }),	-- Viper Fish
 		header(HEADERS.Spell, 273293, {	-- Aromatic Fish Oil
@@ -907,7 +856,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "~L.CAN_BE_FISHED_FROM_SCHOOLS",
+				["description"] = "Can be fished from schools.",
 			}),
 		}),
 	}),

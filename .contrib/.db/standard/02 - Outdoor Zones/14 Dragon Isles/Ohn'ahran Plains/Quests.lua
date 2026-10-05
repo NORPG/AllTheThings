@@ -945,24 +945,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.Item, 198821, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 } }, {	-- Divine Kiss of Ohn'ahra
 				q(72512, {	-- A Whispering Breeze
-					["description"] = createLocalizationString({
-						readable = "Speak to Godoloto to get the clues then gather the cost objects.",
-						constant = "SPEAK_TO_GODOLOTO_TO_GET_THE_CLUES_THEN_GATHER",
-						export = true,
-						text = {
-							en = "Speak to Godoloto to get the clues then gather the cost objects.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与戈多洛托交谈获取线索，然后收集所需物品。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
 					["sourceQuests"] = { 66676 },	-- Sneaking In
 					["provider"] = { "n", 190022 },	-- Godoloto
 					["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
@@ -1406,46 +1389,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(70368, {	-- Occupation Examination
-				["description"] = createLocalizationString({
-					readable = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-					constant = "THIS_QUEST_REQUIRES_THAT_YOU_HAVE_NO_PRIMARY",
-					export = true,
-					text = {
-						en = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务要求你未学习任何主专业技能。两个版本会同时完成。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
 			}),
 			q(70370, {	-- Occupation Examination
-				["description"] = createLocalizationString({
-					readable = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
-					constant = "THIS_QUEST_REQUIRES_THAT_YOU_HAVE_AT_LEAST_ONE",
-					export = true,
-					text = {
-						en = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务要求你至少有一个空余的主专业技能栏位。两个版本会同时完成。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
 			}),
@@ -1471,24 +1420,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				}),
 				q(65892, {	-- The Sundered Asunder
-					["description"] = createLocalizationString({
-						readable = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
-						constant = "YOU_MUST_BE_AT_LEAST_LEVEL_62_FOR_THIS_TO_POP",
-						export = true,
-						text = {
-							en = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你必须至少达到 62 级，它才会弹出。\n似乎没有任何前置任务。\n它在《地心之战》前夕补丁期间于 70 级时变为可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
 					["lockCriteria"] = { 1, "lvl", 71 },

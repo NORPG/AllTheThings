@@ -5,44 +5,10 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		SL_Legendaries({
-			["description"] = createLocalizationString({
-				readable = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
-				constant = "THESE_MEMORIES_ONLY_DROP_FROM_LAYER_3_OR_ABOVE",
-				export = true,
-				text = {
-					en = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "除幻魄诱饵外，这些回忆只在第 3 层及以上掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
 			["groups"] = {
 				i(183247, {	-- Memory of a Stable Phantasma Lure
-					["description"] = createLocalizationString({
-						readable = "This memory is the only exception and will only drop from Layer 6 or above.",
-						constant = "THIS_MEMORY_IS_THE_ONLY_EXCEPTION_AND_WILL_ONLY",
-						export = true,
-						text = {
-							en = "This memory is the only exception and will only drop from Layer 6 or above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这个记忆是唯一的例外，只会从第 6 层及以上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This memory is the only exception and will only drop from Layer 6 or above.",
 				}),
 				header(HEADERS.Achievement, 14463, {	-- Skoldus Hall
 					["icon"] = 2178518,

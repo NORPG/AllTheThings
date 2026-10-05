@@ -343,24 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
-				["description"] = createLocalizationString({
-					readable = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
-					constant = "YOU_MUST_COMPLETED_THE_HARD_TO_KILL_QUEST_CHAIN",
-					export = true,
-					text = {
-						en = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须在普通模式下完成“难以击杀”任务链，英雄模式才会可用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
 				["sourceQuest"] = 11492,	-- Hard to Kill
 				["lvl"] = lvlsquish(70, 70, 30),
 			}).AddGroups({

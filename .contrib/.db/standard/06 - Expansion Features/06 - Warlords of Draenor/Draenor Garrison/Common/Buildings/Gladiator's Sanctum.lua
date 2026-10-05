@@ -8,7 +8,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 				n(ACHIEVEMENTS, {
 					ach(9495, {		-- The Bone Collector
-						["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						["groups"] = { i(111981) },	-- Gladiator's Sanctum, Level 3 [Blueprints]
 					}),
 					ach(9725, {	-- The Last of Us
@@ -60,24 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								i(119218),	-- Horde Flag of Victory (TOY!)
 							}),
 							i(119219, {	-- Warlord's Flag of Victory (TOY!)
-								["description"] = createLocalizationString({
-									readable = "Requires being the last player alive in the coliseum.",
-									constant = "REQUIRES_BEING_THE_LAST_PLAYER_ALIVE_IN_THE",
-									export = true,
-									text = {
-										en = "Requires being the last player alive in the coliseum.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "需要成为角斗场中最后一名存活的玩家。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Requires being the last player alive in the coliseum.",
 							}),
 						},
 					}),

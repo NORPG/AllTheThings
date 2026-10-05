@@ -123,24 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 								{ "i",  32069 },	-- Mana-Tombs Stasis Chamber Key
 								{ "o", 185519 },	-- Mana-Tombs Stasis Chamber
 							},
-							["description"] = createLocalizationString({
-								readable = "Stasis Chamber is in the room to the left after the first boss.\n\nThis can only be completed on Heroic difficulty.",
-								constant = "STASIS_CHAMBER_IS_IN_THE_ROOM_TO_THE_LEFT_AFTER",
-								export = true,
-								text = {
-									en = "Stasis Chamber is in the room to the left after the first boss.\n\nThis can only be completed on Heroic difficulty.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "停滞舱室位于第一个首领之后左手边的房间里。\n\n此内容只能在英雄难度下完成。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Stasis Chamber is in the room to the left after the first boss.\n\nThis can only be completed on Heroic difficulty.",
 						}),
 					},
 				}),
@@ -181,7 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(28558, {	-- Spirit Shard
-					["description"] = "~L.SPIRIT_SHARDS_ARE_CURRENCY_TOKENS_DROPPED_BY",
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
 					["timeline"] = { REMOVED_8_0_1 },
 				}),
 				currency(1704, {	-- Spirit Shard
@@ -304,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
+				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30633, 1 },	-- Auchenai Key
 					-- #if CLASSIC_ANNIVERSARY
@@ -392,24 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							{ "o", 185522 },	-- Shaffar's Stasis Chamber
 							{ "i", 32092 },	-- The Eye of Haramad
 						},
-						["description"] = createLocalizationString({
-							readable = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
-							constant = "REQUIRES_ONE_OF_TWO_KEYS_UNLOCKED_VIA_A_QUEST",
-							export = true,
-							text = {
-								en = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要通过在刀锋山的一条任务线解锁的两把钥匙之一才能打开。\n\n你的队伍中只需要一名成员拥有钥匙。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
 						["cost"] = { { "i", 32079, 1 } },	-- Shaffar's Stasis Chamber Key
 						["creatureID"] = 22927,
 						["groups"] = {

@@ -569,7 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 				})),
 				q(8240, {	-- A Bijou for Zanza
-					["description"] = "~L.COSTS_1_BIJOU_OF_ANY_COLOR_PER_TURN_IN_THERE",
+					["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
 					["qg"] = 15070,	-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
 					["cost"] = {
@@ -607,7 +607,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				q(8196, {	-- Essence Mangoes
-					["description"] = "~L.NO_STOP_WHAT_ARE_YOU_DOING_DO_NOT_WASTE_YOUR",
+					["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 					["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
@@ -661,7 +661,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				q(8183, {	-- The Heart of Hakkar
-					["description"] = "~L.TURNING_THIS_QUEST_IN_WILL_CAUSE_A_WORLD_BUFF",
+					["description"] = "Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
 					["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 58,
@@ -1069,7 +1069,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			d(DIFFICULTY.LEGACY_RAID.PLAYER20, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
 			-- #endif
 			o(180229, {	-- Jinxed Hoodoo Pile
-				["description"] = "~L.THESE_CAN_RANDOMLY_MIND_CONTROL_A_NEARBY_PLAYER",
+				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
 				["groups"] = {
 					i(19727, {	-- Blood Scythe
 						["requireSkill"] = HERBALISM,
@@ -1136,16 +1136,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			o(180368, {	-- Tablet of Madness
-				["description"] = "~L.ALCHEMISTS_WITH_300_SKILL_CAN_INTERACT_WITH_THE",
+				["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
 				["requireSkill"] = ALCHEMY,
 				["groups"] = { recipe(24266) },	-- Gurubashi Mojo Madness
 			}),
 			o(180327, {	-- Brazier of Madness
-				["description"] = "~L.THERE_ARE_TABLETS_ON_THE_WALLS_DESCRIBING_EACH",
+				["description"] = "There are tablets on the walls describing each boss; one of these tablets will indicate which boss will spawn by commenting that he is \"close to the edge of madness.\" The boss that spawns is chosen according to a spawn calendar, going by the day the instance ID was created.",
 				["cost"] = { { "i", 19931, 1 } },	-- Gurubashi Mojo Madness
 				["groups"] = {
 					filter(TRINKET_F, {
-						["description"] = "~L.THE_FOLLOWING_TRINKETS_CAN_BE_CRAFTED_BY_USING",
+						["description"] = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
 						["groups"] = {
 							i(19951, {	-- Gri'lek's Charm of Might [Warrior]
 								["cost"] = {
@@ -1271,7 +1271,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			}),
 			n(15114, {	-- Gahz'ranka
 				["sourceQuest"] = 8227,	-- Nat's Measuring Tape
-				["description"] = "~L.YOU_CAN_FISH_UP_ZULIAN_MUDSKUNK_FROM_THE_MUDDY",
+				["description"] = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
 				["cost"] = {
 					{ "i", 19974, 1 },	-- Mudskunk Lure
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
@@ -1894,7 +1894,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						}),
 					})),
 					q(8240, {	-- A Bijou for Zanza
-						["description"] = "~L.COSTS_1_BIJOU_OF_ANY_COLOR_PER_TURN_IN_THERE",
+						["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
 						["qg"] = 15070,	-- Vinchaxa <Servitor of Zanza>
 						["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
 						["cost"] = {
@@ -1932,7 +1932,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						},
 					}),
 					q(8196, {	-- Essence Mangoes
-						["description"] = "~L.NO_STOP_WHAT_ARE_YOU_DOING_DO_NOT_WASTE_YOUR",
+						["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
 						["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 						["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
@@ -1999,24 +1999,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						},
 					}),
 					q(8183, {	-- The Heart of Hakkar
-						["description"] = createLocalizationString({
-							readable = "Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
-							constant = "TURNING_THIS_HEAD_IN_WILL_CAUSE_A_WORLD_BUFF_TO",
-							export = true,
-							text = {
-								en = "Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "上交这颗头颅会为岛上或藏宝海湾的玩家掉落一个世界增益。在你准备上交时请提前告知，方便那些想为团队副本获取世界增益的玩家！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
 						["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 						["maps"] = { STRANGLETHORN_VALE },
 						["lvl"] = 58,
@@ -2286,7 +2269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 				}),
 				o(180229, {	-- Jinxed Hoodoo Pile
-					["description"] = "~L.THESE_CAN_RANDOMLY_MIND_CONTROL_A_NEARBY_PLAYER",
+					["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
 					["groups"] = {
 						i(19727, {	-- Blood Scythe
 							["requireSkill"] = HERBALISM,
@@ -2353,16 +2336,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					i(231512),	-- Primal Hakkari Idol
 				}),
 				o(180368, {	-- Tablet of Madness
-					["description"] = "~L.ALCHEMISTS_WITH_300_SKILL_CAN_INTERACT_WITH_THE",
+					["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
 					["requireSkill"] = ALCHEMY,
 					["groups"] = { recipe(24266) },	-- Gurubashi Mojo Madness
 				}),
 				o(180327, {	-- Brazier of Madness
-					["description"] = "~L.THERE_ARE_TABLETS_ON_THE_WALLS_DESCRIBING_EACH",
+					["description"] = "There are tablets on the walls describing each boss; one of these tablets will indicate which boss will spawn by commenting that he is \"close to the edge of madness.\" The boss that spawns is chosen according to a spawn calendar, going by the day the instance ID was created.",
 					["cost"] = { { "i", 19931, 1 } },	-- Gurubashi Mojo Madness
 					["groups"] = {
 						filter(TRINKET_F, {
-							["description"] = "~L.THE_FOLLOWING_TRINKETS_CAN_BE_CRAFTED_BY_USING",
+							["description"] = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
 							["groups"] = {
 								i(231286, {	-- Gri'lek's Charm of Might [Warrior]
 									["cost"] = {
@@ -2488,7 +2471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				}),
 				n(15114, {	-- Gahz'ranka
 					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
-					["description"] = "~L.YOU_CAN_FISH_UP_ZULIAN_MUDSKUNK_FROM_THE_MUDDY",
+					["description"] = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
 					["cost"] = {
 						{ "i", 19974, 1 },	-- Mudskunk Lure
 						{ "i", 19975, 5 },	-- Zulian Mudskunk
@@ -2532,24 +2515,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				}),
 				n(14834, {	-- Hakkar the Soulflayer
 					n(ZG_HAKKAR_HARDMODE, {
-						["description"] = createLocalizationString({
-							readable = "When you leave a specific Priest or Priestess alive and defeat Hakkar, then there is a guaranteed chance that a piece of rare or epic loot from that boss will drop from Hakkar, including an Item from Hakkar himself.",
-							constant = "WHEN_YOU_LEAVE_A_SPECIFIC_PRIEST_OR_PRIESTESS",
-							export = true,
-							text = {
-								en = "When you leave a specific Priest or Priestess alive and defeat Hakkar, then there is a guaranteed chance that a piece of rare or epic loot from that boss will drop from Hakkar, including an Item from Hakkar himself.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "当你让某个特定的祭司或女祭司存活并击败哈卡后，必定会从哈卡身上掉落到该首领的一件稀有或史诗战利品，包括哈卡本人的一件物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "When you leave a specific Priest or Priestess alive and defeat Hakkar, then there is a guaranteed chance that a piece of rare or epic loot from that boss will drop from Hakkar, including an Item from Hakkar himself.",
 						["groups"] = {
 							i(231512),	-- Primal Hakkari Idol (Bonus)
 							i(231856),	-- Ancient Hakkari Manslayer (Hakkar)

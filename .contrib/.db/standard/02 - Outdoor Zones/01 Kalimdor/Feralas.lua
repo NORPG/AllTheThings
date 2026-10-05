@@ -48,45 +48,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(557, {	-- Nether Faerie Dragon (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
-							constant = "CAN_BE_FOUND_IN_THE_SURROUNDING_AREAS_OUTSIDE",
-							export = true,
-							text = {
-								en = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在菲拉斯厄运之槌副本传送门外的周边区域找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
 					}),
 					pet(387),	-- Snake (PET!)
 					pet(1158, {	-- Stunted Yeti (PET!)
-						["description"] = createLocalizationString({
-							readable = "Can be found near Feral Scar Yetis south of Dire Maul.",
-							constant = "CAN_BE_FOUND_NEAR_FERAL_SCAR_YETIS_SOUTH_OF",
-							export = true,
-							text = {
-								en = "Can be found near Feral Scar Yetis south of Dire Maul.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可在厄运之槌以南的怒痕雪人附近找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 				},
@@ -194,24 +160,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66352, {	-- Traitor Gluk <Master Pet Tamer>
 					["coord"] = { 59.6, 49.6, FERALAS },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_THOUGH_ALLIANCE_3",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落，不过联盟玩家可以在完成联盟版任务“宠物对战训练师：卡利姆多”时与他们对战一次。\n\nGluk 的宠物为 13 级，三个宠物的类别依次为：\n1. 龙类 - 使用人型（强力）或亡灵（耐打）宠物。\n2. 野兽 - 使用机械（强力）或飞行（耐打）宠物。\n3. 小动物 - 使用野兽（强力）或人型（耐打）宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 13,
 					["groups"] = {
@@ -236,7 +185,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				prof(FISHING, {
 					i(16967, {	-- Feralas Ahi
-						["description"] = "~L.BEST_FISHED_AT_THE_GIVEN_COORDS",
+						["description"] = "Best fished at the given coords.",
 						["coords"] = {
 							-- #if BEFORE 4.0.3
 							{ 62.0, 52.0, FERALAS },	-- Verdantis River
@@ -841,24 +790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26402, {	-- General Shandris Feathermoon
-					["description"] = createLocalizationString({
-						readable = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
-						constant = "IF_YOU_COMPLETED_OR_CURRENTLY_HAVE_ACTIVE_ANY",
-						export = true,
-						text = {
-							en = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你已完成或当前仍有羽月要塞的任何任务处于激活状态，这个任务就不再可用",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
 					["sourceQuest"] = 25398,	-- Sealing the Dream
 					["qg"] = 40032,	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },
@@ -1011,7 +943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Rage Scar Yeti Hide
 							["provider"] = { "i", 18947 },	-- Rage Scar Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5297,	-- Elder Rage Scar
 								5299,	-- Ferocious Rage Scar
@@ -1057,7 +989,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Rage Scar Yeti Hide
 							["provider"] = { "i", 18947 },	-- Rage Scar Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5297,	-- Elder Rage Scar
 								5299,	-- Ferocious Rage Scar
@@ -1340,24 +1272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25403, {	-- Ogre Abduction [A]
 					-- #if AFTER 7.0.3
-					["description"] = createLocalizationString({
-						readable = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
-						constant = "HIGH_LEVEL_PLAYERS_MAY_REQUIRE_CFF0070DDSOFT",
-						export = true,
-						text = {
-							en = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "高等级玩家可能需要|cff0070dd软泡沫剑|r才能将生物生命值降至 10%。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 					-- #endif
 					["sourceQuest"] = 25402,	-- Estulan's Examination
 					["qg"] = 40052,	-- Estulan
@@ -1386,7 +1301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25344, {	-- Ogre Abduction [H]
 					-- #if AFTER 7.0.3
-					["description"] = "~L.HIGH_LEVEL_PLAYERS_MAY_REQUIRE_CFF0070DDSOFT",
+					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 					-- #endif
 					["sourceQuest"] = 25342,	-- Talk to Swar'jan
 					["qg"] = 39840,	-- Swar'jan
@@ -2167,7 +2082,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Thick Yeti Hide
 							["provider"] = { "i", 8973 },	-- Thick Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5346,	-- Bloodroar the Stalker
 								5295,	-- Enraged Feral Scar
@@ -2216,7 +2131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Thick Yeti Hide
 							["provider"] = { "i", 8973 },	-- Thick Yeti Hide
-							["description"] = "~L.CAN_ALSO_BE_LOOTED_VIA_SKINNING_TO_SPEED_UP",
+							["description"] = "Can also be looted via Skinning to speed up your progress.",
 							["crs"] = {
 								5346,	-- Bloodroar the Stalker
 								5295,	-- Enraged Feral Scar
@@ -2847,24 +2762,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 222705 },	-- Blightbark <Guardian of Feralas>
 							},
 							["coord"] = { 58.6, 52.2, FERALAS },
-							["description"] = createLocalizationString({
-								readable = "Click the shrine to receive a buff called Duty of the Warden.\n\nFight a Gordunni Warlock until it casts Shrink on you. Cast Remove Curse to receive a buff that says 'You have cast out what corrupts the spirit.\n\nFight a Zukk'ash Wasp until it Poisons you. Cast Abolish Poison to receive a buff that says 'Your duty is fulfilled.'\n\nReturn to the Shrine and then defeat the Treant Avatar that spawns once you approach it.",
-								constant = "CLICK_THE_SHRINE_TO_RECEIVE_A_BUFF_CALLED_DUTY",
-								export = true,
-								text = {
-									en = "Click the shrine to receive a buff called Duty of the Warden.\n\nFight a Gordunni Warlock until it casts Shrink on you. Cast Remove Curse to receive a buff that says 'You have cast out what corrupts the spirit.\n\nFight a Zukk'ash Wasp until it Poisons you. Cast Abolish Poison to receive a buff that says 'Your duty is fulfilled.'\n\nReturn to the Shrine and then defeat the Treant Avatar that spawns once you approach it.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "点击神龛以获得一个名为守望者的职责的增益。\n\n与一名戈杜尼术士战斗，直到它对你施放缩小。施放解除诅咒以获得一个增益，提示“你已驱除了腐化灵魂之物。”\n\n与一只祖卡什黄蜂战斗，直到它使你中毒。施放废除毒素以获得一个增益，提示“你的职责已完成。”\n\n返回神龛，然后击败你一靠近就会刷新的树人化身。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Click the shrine to receive a buff called Duty of the Warden.\n\nFight a Gordunni Warlock until it casts Shrink on you. Cast Remove Curse to receive a buff that says 'You have cast out what corrupts the spirit.\n\nFight a Zukk'ash Wasp until it Poisons you. Cast Abolish Poison to receive a buff that says 'Your duty is fulfilled.'\n\nReturn to the Shrine and then defeat the Treant Avatar that spawns once you approach it.",
 						}),
 						objective(2, {	-- Guardian of the Hinterlands
 							["providers"] = {
@@ -2873,24 +2771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 222704 },	-- Sagefeather <Guardian of the Hinterlands>
 							},
 							["coord"] = { 66.2, 53.1, THE_HINTERLANDS },
-							["description"] = createLocalizationString({
-								readable = "Click on the shrine to see the message 'The calm comes before the storm.'\n\nCast Tranquility followed by Hurricane.\n\nDefeat the avatar and receive its blessing.",
-								constant = "CLICK_ON_THE_SHRINE_TO_SEE_THE_MESSAGE_THE_CALM",
-								export = true,
-								text = {
-									en = "Click on the shrine to see the message 'The calm comes before the storm.'\n\nCast Tranquility followed by Hurricane.\n\nDefeat the avatar and receive its blessing.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "点击神龛以看到信息“平静先于风暴到来。”\n\n施放宁静，随后施放飓风。\n\n击败化身并获得它的祝福。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Click on the shrine to see the message 'The calm comes before the storm.'\n\nCast Tranquility followed by Hurricane.\n\nDefeat the avatar and receive its blessing.",
 						}),
 						objective(3, {	-- Guardian of Azshara
 							["providers"] = {
@@ -2899,24 +2780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 222703 },	-- Whisperwing <Guardian of Azshara>
 							},
 							["coord"] = { 34.6, 49.0, AZSHARA },
-							["description"] = createLocalizationString({
-								readable = "Click on the shrine to see the message 'Hunt the white stag with tooth and claw.'\n\nFight a White Stag with only physical attacks while in feral form and then loo the Sacred Stag Heart.\n\nReturn to the shrine and use the heart. Defeat the avatar and receive its blessing.",
-								constant = "CLICK_ON_THE_SHRINE_TO_SEE_THE_MESSAGE_HUNT_THE",
-								export = true,
-								text = {
-									en = "Click on the shrine to see the message 'Hunt the white stag with tooth and claw.'\n\nFight a White Stag with only physical attacks while in feral form and then loo the Sacred Stag Heart.\n\nReturn to the shrine and use the heart. Defeat the avatar and receive its blessing.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "点击神龛以看到信息“用牙齿和利爪猎杀白鹿。”\n\n在猎豹形态下只用物理攻击与一只白鹿战斗，然后拾取神圣雄鹿之心。\n\n返回神龛并使用心脏。击败化身并获得它的祝福。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Click on the shrine to see the message 'Hunt the white stag with tooth and claw.'\n\nFight a White Stag with only physical attacks while in feral form and then loo the Sacred Stag Heart.\n\nReturn to the shrine and use the heart. Defeat the avatar and receive its blessing.",
 						}),
 						i(220360, {	-- Rune of Efflorescence
 							["classes"] = { DRUID },
@@ -3055,24 +2919,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7730, {	-- Zukk'ash Infestation
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest 'Verinias the Twisted' (25368).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_4",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest 'Verinias the Twisted' (25368).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“扭曲的维里尼亚斯”（25368）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest 'Verinias the Twisted' (25368).",
 					-- #endif
 					["sourceQuest"] = 2903,	-- The Battle Plans
 					["qg"] = 7875,	-- Hadoken Swiftstrider
@@ -3212,7 +3059,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 69.6, 58.8, FERALAS },
 					},
 					-- #else
-					["description"] = "~L.SPAWNS_IN_THE_DIRE_MAUL_ARENA",
+					["description"] = "Spawns in the Dire Maul Arena.",
 					-- #endif
 				}),
 				n(5352, {	-- Old Grizzlegut
@@ -3237,24 +3084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(54533, {	-- Prince Lakma
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criteria for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",
-						constant = "PRINCE_LAKMA_DROPS_CHIMAEROK_TENDERLOIN_WHICH",
-						export = true,
-						text = {
-							en = "Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criteria for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "拉玛王子掉落奇美拉肉排，这是迪尔格的超美味奇美拉肉片的烹饪材料。食用这个消耗品是制皮成就“永远都在露营”的一项条件。不过，如果你还没有学会所需的烹饪配方，就不要去麻烦拉玛王子了，因为它只在经典旧世的一小段时间内可用，如今售价高达金币上限。迪尔格的超美味奇美拉肉片可以在拍卖行找到，或者你也可以向人打听制造商。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criteria for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",
 					-- #endif
 					["coords"] = {
 						{ 47.6, 74.6, FERALAS },
@@ -3285,7 +3115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER CATA
 					["coord"] = { 84.2, 37.0, FERALAS },
 					-- #else
-					["description"] = "~L.SPAWNS_IN_THE_DIRE_MAUL_ARENA",
+					["description"] = "Spawns in the Dire Maul Arena.",
 					-- #endif
 				}),
 				n(5356, {	-- Snarler
@@ -3311,31 +3141,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER CATA
 					["coord"] = { 84.5, 49.7, FERALAS },
 					-- #else
-					["description"] = "~L.SPAWNS_IN_THE_DIRE_MAUL_ARENA",
+					["description"] = "Spawns in the Dire Maul Arena.",
 					-- #endif
 				}),
 			}),
 			n(TREASURES, {
 				o(420954, {	-- Carved Eye
 					["coord"] = { 61.5, 30.7, FERALAS },
-					["description"] = createLocalizationString({
-						readable = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
-						constant = "CLICK_ON_THE_CARVED_EYE_IN_THE_ROOM_UNDER_THE",
-						export = true,
-						text = {
-							en = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "点击厄运之槌中厄运竞技场下方房间里的雕刻之眼",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
 					["timeline"] = { ADDED_10_2_5 },
 					["groups"] = {
 						i(212991),	-- Grimoire of the Dire Observer (CI!)
@@ -3561,28 +3374,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(8705, {	-- OOX-22/FE Distress Beacon
-					["description"] = "~L.THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY",
+					["description"] = "This item has a chance to drop from any creature in Feralas.",
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(216645, {	-- Mote of Darkness
-					["description"] = createLocalizationString({
-						readable = "After acquiring the Spent Voidcore, killing any mob in the zone can cause the Shadowy Figure to appear.",
-						constant = "AFTER_ACQUIRING_THE_SPENT_VOIDCORE_KILLING_ANY",
-						export = true,
-						text = {
-							en = "After acquiring the Spent Voidcore, killing any mob in the zone can cause the Shadowy Figure to appear.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "获得耗尽的虚空核心后，在该区域杀死任何怪物都可能使暗影人物出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "After acquiring the Spent Voidcore, killing any mob in the zone can cause the Shadowy Figure to appear.",
 					["provider"] = { "n", 218241 },	-- Shadowy Figure
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(216635, {	-- Spent Voidcore
@@ -3596,24 +3392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
 					-- #if BEFORE 4.0.3
-					["description"] = createLocalizationString({
-						readable = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
-						constant = "THIS_PET_ONLY_DROPS_FROM_THE_DARTERS_FOR_HORDE",
-						export = true,
-						text = {
-							en = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物只对部落玩家从金镖鱼身上掉落。联盟玩家需要完成在辛特兰完成的“为人父母”任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
 					["sourceQuest"] = 4298,	-- Becoming a Parent
 					-- #endif
 					["timeline"] = { ADDED_1_11_1 },

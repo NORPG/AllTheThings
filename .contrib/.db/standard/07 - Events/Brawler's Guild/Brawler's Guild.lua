@@ -472,24 +472,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 				-- #if BEFORE 5.5.3
-				["description"] = createLocalizationString({
-					readable = "Before Phase 4, you can only reach Rank 8.",
-					constant = "BEFORE_PHASE_4_YOU_CAN_ONLY_REACH_RANK_8",
-					export = true,
-					text = {
-						en = "Before Phase 4, you can only reach Rank 8.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在第 4 阶段之前，你最多只能达到 8 级。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Before Phase 4, you can only reach Rank 8.",
 				["minReputation"] = { FACTION_BRAWLPUB_SEASON_1, 8 },	-- Rank 8
 				-- #endif
 			}),
@@ -513,7 +496,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 				-- #if BEFORE 5.5.3
-				["description"] = "~L.BEFORE_PHASE_4_YOU_CAN_ONLY_REACH_RANK_8",
+				["description"] = "Before Phase 4, you can only reach Rank 8.",
 				["minReputation"] = { FACTION_BRAWLGAR_SEASON_1, 8 },	-- Rank 8
 				-- #endif
 			}),
@@ -798,24 +781,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			-- WOD
 			sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 }, }, {
 				q(36702, {	-- Meatball
-					["description"] = createLocalizationString({
-						readable = "Reach Rank 5 in the arena.",
-						constant = "REACH_RANK_5_IN_THE_ARENA",
-						export = true,
-						text = {
-							en = "Reach Rank 5 in the arena.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在竞技场中达到 5 级。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Reach Rank 5 in the arena.",
 					["qg"] = 86272,	-- Meatball
 					["coords"] = {
 						{ 56.7, 77.3, BRAWLGAR_ARENA },
@@ -827,24 +793,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			-- BFA
 			sharedData({ ["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				q(55002, {	-- Murder at the Brawlpub
-					["description"] = createLocalizationString({
-						readable = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
-						constant = "THIS_QUEST_CAN_BE_ACCEPTED_AFTER_YOU",
-						export = true,
-						text = {
-							en = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你成功完成任意一场（或你的第一场）乱斗后，即可接受此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 					["qg"] = 68363,	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 					["coord"] = { 54.3, 25.2, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				}),
@@ -892,48 +841,14 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["coord"] = { 72.7, 68.4, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				}),
 				q(55010, {	-- Soul Splinters
-					["description"] = createLocalizationString({
-						readable = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
-						constant = "YOU_CAN_SAVE_PREVIOUSLY_EARNED_BRAWLER_S_PURSES",
-						export = true,
-						text = {
-							en = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以保存之前获得的搏击者钱袋，并在进行此任务时打开它们——每个搏击者钱袋提供 10 - 12 个灵魂裂片，因此你需要 9 - 10 个搏击者钱袋才能完成此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
 					["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
 					["qg"] = 150317,	-- Shadowmaster O'Flannerty
 					["coord"] = { 68.0, 24.8, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 					["groups"] = { i(164928) },	-- Soul Splinter (QI!)
 				}),
 				q(55011, {	-- Super Soul Splinters
-					["description"] = createLocalizationString({
-						readable = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
-						constant = "YOU_CAN_SAVE_PREVIOUSLY_EARNED_RUMBLER_S_PURSES",
-						export = true,
-						text = {
-							en = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以保留之前获得的轰鸣者的钱袋，并在进行此任务时打开它们——每个轰鸣者的钱袋会给予 1 个超级灵魂碎片，所以你需要 3 个才能完成此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
 					["sourceQuest"] = 55010,	-- Soul Splinters
 					["qg"] = 150317,	-- Shadowmaster O'Flannerty
 					["coord"] = { 68.0, 24.8, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
@@ -1009,7 +924,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			}),
 			sharedData({ ["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				q(53914, {	-- Murder at the Brawl'gar Arena
-					["description"] = "~L.THIS_QUEST_CAN_BE_ACCEPTED_AFTER_YOU",
+					["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 					["qg"] = 68364,	-- Paul North
 					["coord"] = { 50.8, 29.4, BRAWLGAR_ARENA },
 				}),
@@ -1052,7 +967,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					["coord"] = { 43.4, 97.0, BRAWLGAR_ARENA },
 				}),
 				q(53924, {	-- Soul Splinters
-					["description"] = "~L.YOU_CAN_SAVE_PREVIOUSLY_EARNED_BRAWLER_S_PURSES",
+					["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
 					["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
 					["qg"] = 145691,	-- Shadowmaster Skrizzik
 					["coord"] = { 37.4, 33.0, BRAWLGAR_ARENA },
@@ -1189,151 +1104,32 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 		n(REWARDS, {
 			i(92718, {	-- Brawler's Purse
 				-- #if BFA
-				["description"] = createLocalizationString({
-					readable = "Awarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.",
-					constant = "AWARDED_FOR_WINNING_A_BRAWL_IF_YOU_HAVEN_T",
-					export = true,
-					text = {
-						en = "Awarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "赢得一场乱斗后获得。如果你还没有完成布鲁斯的任务链，就把这些留到“灵魂碎片”任务使用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.",
 				-- #else
-				["description"] = createLocalizationString({
-					readable = "Awarded for winning a Brawl.",
-					constant = "AWARDED_FOR_WINNING_A_BRAWL",
-					export = true,
-					text = {
-						en = "Awarded for winning a Brawl.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "赢得一场乱斗获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for winning a Brawl.",
 				-- #endif
 			}),
 			i(92719, {	-- Bulging Brawler's Purse
 				-- #if BFA
-				["description"] = "~L.AWARDED_FOR_WINNING_A_BRAWL_IF_YOU_HAVEN_T",
+				["description"] = "Awarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.",
 				-- #else
-				["description"] = createLocalizationString({
-					readable = "Awarded for winning a Random Brawl.",
-					constant = "AWARDED_FOR_WINNING_A_RANDOM_BRAWL",
-					export = true,
-					text = {
-						en = "Awarded for winning a Random Brawl.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "赢得一场随机乱斗获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for winning a Random Brawl.",
 				-- #endif
 			}),
 			i(164938, {	-- G.G. Gearbox
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 				-- #if BFA
-				["description"] = createLocalizationString({
-					readable = "Awarded for beating the G.G. Engineering Challenge Card encounter. You need this to complete the 'The Precious 13-Tooth Gogglegear' quest.",
-					constant = "AWARDED_FOR_BEATING_THE_G_G_ENGINEERING",
-					export = true,
-					text = {
-						en = "Awarded for beating the G.G. Engineering Challenge Card encounter. You need this to complete the 'The Precious 13-Tooth Gogglegear' quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "击败 G.G. 工程学挑战卡战斗获得。你需要它来完成“珍贵的十三齿护目镜”任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for beating the G.G. Engineering Challenge Card encounter. You need this to complete the 'The Precious 13-Tooth Gogglegear' quest.",
 				-- #else
-				["description"] = createLocalizationString({
-					readable = "Awarded for beating the G.G. Engineering Challenge Card encounter.",
-					constant = "AWARDED_FOR_BEATING_THE_G_G_ENGINEERING_2",
-					export = true,
-					text = {
-						en = "Awarded for beating the G.G. Engineering Challenge Card encounter.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "击败 G.G. 工程学挑战卡战斗获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for beating the G.G. Engineering Challenge Card encounter.",
 				-- #endif
 			}),
 			i(164931, {	-- Rumbler's Purse
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 				-- #if BFA
-				["description"] = createLocalizationString({
-					readable = "Awarded for winning a Rumble. If you haven't already finished the quest chain for Bruce, save these for the 'Super Soul Splinters' quest.",
-					constant = "AWARDED_FOR_WINNING_A_RUMBLE_IF_YOU_HAVEN_T",
-					export = true,
-					text = {
-						en = "Awarded for winning a Rumble. If you haven't already finished the quest chain for Bruce, save these for the 'Super Soul Splinters' quest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "赢得一场 Rumble 获得。如果你还没有完成布鲁斯的任务链，请把这些留到“超级灵魂裂片”任务使用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for winning a Rumble. If you haven't already finished the quest chain for Bruce, save these for the 'Super Soul Splinters' quest.",
 				-- #else
-				["description"] = createLocalizationString({
-					readable = "Awarded for winning a Rumble.",
-					constant = "AWARDED_FOR_WINNING_A_RUMBLE",
-					export = true,
-					text = {
-						en = "Awarded for winning a Rumble.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "赢得一场 Rumble 获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Awarded for winning a Rumble.",
 				-- #endif
 			}),
 		}),
@@ -1518,24 +1314,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
-						["description"] = createLocalizationString({
-							readable = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
-							constant = "IF_YOU_FAIL_TO_KILL_XAN_SALLISH_FOR_THE_SOLVING",
-							export = true,
-							text = {
-								en = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你在执行任务“解开谜团”时没能杀死克桑-萨利斯，可以再次从该商人处购买这张卡片。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
 						["groups"] = {
 							n(145782, {	-- Xan-Sallish <Blade of the Watcher>
 								i(164940, {	-- Mysterious Satchel
@@ -1719,7 +1498,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(164936, {	-- Mysterious Challenge Card
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
-						["description"] = "~L.IF_YOU_FAIL_TO_KILL_XAN_SALLISH_FOR_THE_SOLVING",
+						["description"] = "If you fail to kill Xan-Sallish for the 'Solving the Mystery' quest, you can buy this card again from this vendor.",
 						["groups"] = {
 							n(145782, {	-- Xan-Sallish <Blade of the Watcher>
 								i(164940, {	-- Mysterious Satchel
@@ -1737,24 +1516,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #if BFA
 				["groups"] = {
 					i(98121, {	-- Amberseed Bun
-						["description"] = createLocalizationString({
-							readable = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
-							constant = "THROW_THIS_AT_BRAWLERS_WHILE_ON_THE_FLAUNT_IT",
-							export = true,
-							text = {
-								en = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在进行“有本事就炫耀”任务时，把这个扔向搏击者。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
 					}),
 				},
 				-- #endif
@@ -1767,61 +1529,27 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["sym"] = { {"sub", "common_vendor", 68363} },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 			}),
 			n(70714, {	-- Harr Grayhide <Luxury Food Vendor>
-				["description"] = createLocalizationString({
-					readable = "On a Zeppelin, flying above and around the Arena.",
-					constant = "ON_A_ZEPPELIN_FLYING_ABOVE_AND_AROUND_THE_ARENA",
-					export = true,
-					text = {
-						en = "On a Zeppelin, flying above and around the Arena.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在飞艇上，它会在竞技场上空及周围飞行。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "On a Zeppelin, flying above and around the Arena.",
 				["coord"] = { 41.5, 76.8, BRAWLGAR_ARENA },	-- Kergil Sparkwrench's Teleporter
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
 				["groups"] = {
 					i(98121, {	-- Amberseed Bun
-						["description"] = "~L.THROW_THIS_AT_BRAWLERS_WHILE_ON_THE_FLAUNT_IT",
+						["description"] = "Throw this at Brawlers while on the 'Flaunt It If You Got It' quest.",
 					}),
 				},
 				-- #endif
 			}),
 			n(70713, {	-- Haxxil Drinkmeister <Rare and Luxury Drink Vendor>
-				["description"] = "~L.ON_A_ZEPPELIN_FLYING_ABOVE_AND_AROUND_THE_ARENA",
+				["description"] = "On a Zeppelin, flying above and around the Arena.",
 				["coord"] = { 41.5, 76.8, BRAWLGAR_ARENA },	-- Kergil Sparkwrench's Teleporter
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 				-- #if BFA
 				["groups"] = {
 					i(98117, {	-- Moneybrau
-						["description"] = createLocalizationString({
-							readable = "Drink this while on the 'Flaunt It If You Got It' quest.",
-							constant = "DRINK_THIS_WHILE_ON_THE_FLAUNT_IT_IF_YOU_GOT_IT",
-							export = true,
-							text = {
-								en = "Drink this while on the 'Flaunt It If You Got It' quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在“有本事就炫出来”任务期间饮用此物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Drink this while on the 'Flaunt It If You Got It' quest.",
 					}),
 				},
 				-- #endif
@@ -1833,7 +1561,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				-- #if BFA
 				["groups"] = {
 					i(98117, {	-- Moneybrau
-						["description"] = "~L.DRINK_THIS_WHILE_ON_THE_FLAUNT_IT_IF_YOU_GOT_IT",
+						["description"] = "Drink this while on the 'Flaunt It If You Got It' quest.",
 					}),
 				},
 				-- #endif
@@ -1844,43 +1572,9 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_5_1_0 },
 				-- #if AFTER SL
 				-- #if BEFORE 11.2.7
-				["description"] = createLocalizationString({
-					readable = "Even though the Brawler's Guild has closed, this vendor remains available to players.\nShirts are only available to those who have already earned them.",
-					constant = "EVEN_THOUGH_THE_BRAWLER_S_GUILD_HAS_CLOSED_THIS",
-					export = true,
-					text = {
-						en = "Even though the Brawler's Guild has closed, this vendor remains available to players.\nShirts are only available to those who have already earned them.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "尽管搏击俱乐部已经关闭，这名商人仍然对玩家开放。\n衬衣仅对已经获得过它们的玩家开放。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Even though the Brawler's Guild has closed, this vendor remains available to players.\nShirts are only available to those who have already earned them.",
 				-- #else
-				["description"] = createLocalizationString({
-					readable = "Shirts are available to those who have already earned them through the quests.",
-					constant = "SHIRTS_ARE_AVAILABLE_TO_THOSE_WHO_HAVE_ALREADY",
-					export = true,
-					text = {
-						en = "Shirts are available to those who have already earned them through the quests.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "衬衫只对已通过任务获得过它们的玩家开放。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Shirts are available to those who have already earned them through the quests.",
 				-- #endif
 				-- #endif
 				["groups"] = {
@@ -1897,63 +1591,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
 							-- #if MOP
 								-- #if BEFORE 5.5.3
-								["description"] = createLocalizationString({
-									readable = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
-									constant = "WHILE_THIS_IS_ALREADY_IN_THE_SHOP_YOU_CANNOT",
-									export = true,
-									text = {
-										en = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "虽然这件物品已经在商店里，但在第 4 阶段之前你无法获得等级 10。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
 								-- #else
-								["description"] = createLocalizationString({
-									readable = "Available after reaching Rank 10.",
-									constant = "AVAILABLE_AFTER_REACHING_RANK_10",
-									export = true,
-									text = {
-										en = "Available after reaching Rank 10.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "达到 10 级后开放。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Available after reaching Rank 10.",
 								-- #endif
 							-- #elseif AFTER 7.1.5
-							["description"] = createLocalizationString({
-								readable = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
-								constant = "ONLY_AVAILABLE_TO_THOSE_WHO_HAD_REACHED_RANK_8",
-								export = true,
-								text = {
-									en = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅对在第 1 赛季或第 2 赛季达到 8 级的玩家开放。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
 							-- #endif
 						})),
 						i(259227, {	-- Brawlin' Bruno (MOUNT!)
@@ -1966,24 +1609,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(93025, {	-- Clock'em (PET!)
 							["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 							-- #if MOP
-							["description"] = createLocalizationString({
-								readable = "Available after reaching Rank 4.",
-								constant = "AVAILABLE_AFTER_REACHING_RANK_4",
-								export = true,
-								text = {
-									en = "Available after reaching Rank 4.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "达到 4 级后可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Available after reaching Rank 4.",
 							-- #endif
 						}),
 						i(144394, {	-- Tylarr Gronnden (PET!)
@@ -2010,24 +1636,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(93858, {	-- Brawler's Bladed Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
-						["description"] = createLocalizationString({
-							readable = "Available after reaching Rank 8.",
-							constant = "AVAILABLE_AFTER_REACHING_RANK_8",
-							export = true,
-							text = {
-								en = "Available after reaching Rank 8.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "达到等级 8 后可用。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
 					i(167812, {	-- Brawlers Guild Tabard
@@ -2036,7 +1645,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
-						["description"] = "~L.AVAILABLE_AFTER_REACHING_RANK_8",
+						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
 					i(122396, {	-- Brawler's Razor Claws
@@ -2069,7 +1678,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					})),
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7  },
-						["description"] = "~L.TAKE_THIS_RECIPE_TO_THE_APEXIS_GEMCUTTER_IN",
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98080, {	-- Gorgeous Blouse
@@ -2122,9 +1731,9 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["timeline"] = { ADDED_5_1_0 },
 				-- #if AFTER SL
 				-- #if BEFORE 11.2.7
-				["description"] = "~L.EVEN_THOUGH_THE_BRAWLER_S_GUILD_HAS_CLOSED_THIS",
+				["description"] = "Even though the Brawler's Guild has closed, this vendor remains available to players.\nShirts are only available to those who have already earned them.",
 				-- #else
-				["description"] = "~L.SHIRTS_ARE_AVAILABLE_TO_THOSE_WHO_HAVE_ALREADY",
+				["description"] = "Shirts are available to those who have already earned them through the quests.",
 				-- #endif
 				-- #endif
 				["groups"] = {
@@ -2141,12 +1750,12 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 							["timeline"] = { ADDED_5_3_0, REMOVED_7_1_5 },
 							-- #if MOP
 								-- #if BEFORE 5.5.3
-								["description"] = "~L.WHILE_THIS_IS_ALREADY_IN_THE_SHOP_YOU_CANNOT",
+								["description"] = "While this is already in the shop, you cannot get Rank 10 until Phase 4.",
 								-- #else
-								["description"] = "~L.AVAILABLE_AFTER_REACHING_RANK_10",
+								["description"] = "Available after reaching Rank 10.",
 								-- #endif
 							-- #elseif AFTER 7.1.5
-							["description"] = "~L.ONLY_AVAILABLE_TO_THOSE_WHO_HAD_REACHED_RANK_8",
+							["description"] = "Only available to those who had reached Rank 8 in Season 1 or Season 2.",
 							-- #endif
 						})),
 						i(259227, {	-- Brawlin' Bruno (MOUNT!)
@@ -2159,24 +1768,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						i(93025, {	-- Clock'em (PET!)
 							["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 							-- #if MOP
-							["description"] = createLocalizationString({
-								readable = "Only available after reaching Rank 4.",
-								constant = "ONLY_AVAILABLE_AFTER_REACHING_RANK_4",
-								export = true,
-								text = {
-									en = "Only available after reaching Rank 4.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅在达到 4 级后可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available after reaching Rank 4.",
 							-- #endif
 						}),
 						i(144394, {	-- Tylarr Gronnden (PET!)
@@ -2203,7 +1795,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(93858, {	-- Brawler's Bladed Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
-						["description"] = "~L.AVAILABLE_AFTER_REACHING_RANK_8",
+						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
 					i(167811, {	-- Brawlers Guild Tabard
@@ -2212,7 +1804,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 						-- #if MOP
-						["description"] = "~L.AVAILABLE_AFTER_REACHING_RANK_8",
+						["description"] = "Available after reaching Rank 8.",
 						-- #endif
 					}),
 					i(122396, {	-- Brawler's Razor Claws
@@ -2245,7 +1837,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					})),
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
-						["description"] = "~L.TAKE_THIS_RECIPE_TO_THE_APEXIS_GEMCUTTER_IN",
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98080, {	-- Gorgeous Blouse
@@ -2424,47 +2016,13 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142311, {	-- Free Drinks Voucher
 						-- #if BEFORE SL
-						["description"] = createLocalizationString({
-							readable = "Use this while on the 'Flaunt It If You Got It' quest.",
-							constant = "USE_THIS_WHILE_ON_THE_FLAUNT_IT_IF_YOU_GOT_IT",
-							export = true,
-							text = {
-								en = "Use this while on the 'Flaunt It If You Got It' quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在进行“有就炫出来”任务时使用此物。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 						-- #end
 						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 					i(142318, {	-- High Roller's Contract
 						-- #if BEFORE SL
-						["description"] = createLocalizationString({
-							readable = "Use this while on the 'The Financial Participation Incentive' quest.",
-							constant = "USE_THIS_WHILE_ON_THE_THE_FINANCIAL",
-							export = true,
-							text = {
-								en = "Use this while on the 'The Financial Participation Incentive' quest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在进行“财务参与激励”任务时使用此物。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
@@ -2499,24 +2057,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(142313, {	-- Zeppelin Rental Form
 						-- #if BEFORE SL
-						["description"] = createLocalizationString({
-							readable = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
-							constant = "USE_THIS_WHILE_ON_THE_UNDERCOVER_AGENT_NUGG",
-							export = true,
-							text = {
-								en = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果在此时还没有达到 6 级，那么在“卧底特工：努格·伦博”任务期间使用此物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use this while on the 'Undercover Agent: Nugg Lumbo' quest if you do not have Rank 6 by this point.",
 						-- #endif
 						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
@@ -2654,13 +2195,13 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(143758, {	-- Free Drinks Voucher
 						-- #if BEFORE SL
-						["description"] = "~L.USE_THIS_WHILE_ON_THE_FLAUNT_IT_IF_YOU_GOT_IT",
+						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
 						-- #endif
 						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),
 					i(143762, {	-- High Roller's Contract
 						-- #if BEFORE SL
-						["description"] = "~L.USE_THIS_WHILE_ON_THE_THE_FINANCIAL",
+						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
 						-- #endif
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
@@ -2695,24 +2236,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(143759, {	-- VIP Room Rental Form
 						-- #if BEFORE SL
-						["description"] = createLocalizationString({
-							readable = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
-							constant = "USE_THIS_WHILE_ON_THE_UNDERCOVER_AGENT_SILENT",
-							export = true,
-							text = {
-								en = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果在此时还没有达到 6 级，那么在“卧底特工：沉默的朱修”任务期间使用此物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
 						-- #endif
 						["cost"] = { { "c", BRAWLERS_GOLD, 1000 } },
 					}),

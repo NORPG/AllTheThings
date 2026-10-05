@@ -4,24 +4,7 @@
 root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	filter(MISC, {
 		i(158932, {	-- Secretest Fish
-			["description"] = createLocalizationString({
-				readable = "Can be found in any Shadowlands zone when wearing the googles.",
-				constant = "CAN_BE_FOUND_IN_ANY_SHADOWLANDS_ZONE_WHEN",
-				export = true,
-				text = {
-					en = "Can be found in any Shadowlands zone when wearing the googles.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "佩戴护目镜时，可在暗影界的任何区域找到。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can be found in any Shadowlands zone when wearing the googles.",
 			["provider"] = { "i", 167698 },	-- Secret Fish Goggles
 			["maps"] = {
 				ARDENWEALD,

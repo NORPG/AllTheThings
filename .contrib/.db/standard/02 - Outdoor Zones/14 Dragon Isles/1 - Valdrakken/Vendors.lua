@@ -68,44 +68,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(219760, {	-- Da'kash Grimledger <Quartermaster>
 				["coord"] = { 46.5, 45.1, VALDRAKKEN },
 				["timeline"] = { REMOVED_PLUNDERSTORM_END },	-- Was added at the end of Plunderstorm. Previously was only avaiable if you had Renown 5 or higher of the Keg Leg Faction.
-				["description"] = createLocalizationString({
-					readable = "Beware: Talking to this NPC will also unlock the Keg's Leg Faction, but there is no method to get reputation for it.",
-					constant = "BEWARE_TALKING_TO_THIS_NPC_WILL_ALSO_UNLOCK_THE",
-					export = true,
-					text = {
-						en = "Beware: Talking to this NPC will also unlock the Keg's Leg Faction, but there is no method to get reputation for it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "注意：与这个 NPC 交谈还会解锁桶腿氏族，但没有任何办法为其获取声望。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Beware: Talking to this NPC will also unlock the Keg's Leg Faction, but there is no method to get reputation for it.",
 				["groups"] = {
 					i(216775, {	-- Deadly Dagger
-						["description"] = createLocalizationString({
-							readable = "Unlocked by talking to Da'kash.",
-							constant = "UNLOCKED_BY_TALKING_TO_DA_KASH",
-							export = true,
-							text = {
-								en = "Unlocked by talking to Da'kash.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与达卡什交谈后解锁。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Unlocked by talking to Da'kash.",
 					}),
 				},
 			}),
@@ -775,24 +741,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(196637, {	-- Tethalash
-				["description"] = createLocalizationString({
-					readable = "To speak to you, you must be a Dracthyr or Exalted with either Dark Talons (Horde) or Obsidian Warders (Alliance)",
-					constant = "TO_SPEAK_TO_YOU_YOU_MUST_BE_A_DRACTHYR_OR",
-					export = true,
-					text = {
-						en = "To speak to you, you must be a Dracthyr or Exalted with either Dark Talons (Horde) or Obsidian Warders (Alliance)",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要让它与你交谈，你必须是一名龙希尔，或者与暗爪（部落）或黑曜守望者（联盟）达到崇拜。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To speak to you, you must be a Dracthyr or Exalted with either Dark Talons (Horde) or Obsidian Warders (Alliance)",
 				["coord"] = { 25.6, 35.6, VALDRAKKEN },
 				["sym"] = {{"select","itemID",
 					198809,	-- Armored Vorquin Leystrider (MOUNT!)

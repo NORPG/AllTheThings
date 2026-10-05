@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 		n(QUESTS, {
 			n(REWARDS, {
 				i(246697, {	-- Self-Assembling Homeware Kit
-					["description"] = createLocalizationString({
-						readable = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.\nUse /attwq to quickly check all daily quests visible on the map.",
-						constant = "RANDOMLY_CAN_REPLACE_THE_ONE_OF_THE_REWARDS_OF",
-						export = true,
-						text = {
-							en = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.\nUse /attwq to quickly check all daily quests visible on the map.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "随机可以替换该岛屿 3-4 个日常任务中的一个奖励，但有少数例外。\n使用 /attwq 快速查看地图上所有可见的日常任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.\nUse /attwq to quickly check all daily quests visible on the map.",
 					["timeline"] = { ADDED_11_2_7 },
 					["groups"] = {
 						i(246481),	-- Retired Industrial Gnomegrabber (DECOR!)
@@ -50,24 +33,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			q(55688, {	-- A Growing Mystery
-				["description"] = createLocalizationString({
-					readable = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
-					constant = "THIS_QUEST_IS_ONLY_AVAILABLE_IF_YOU_PICK_UP_THE",
-					export = true,
-					text = {
-						en = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有从 |cFFFfffff土堆|r 拾取线索且正在做 |cFFefc400线索遍地|r 时，才能接取此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
 				["isDaily"] = true,
 				["groups"] = { i(168243) },	-- Runestone Fragments (QI!)
 			}),
@@ -78,24 +44,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["groups"] = { i(169391) },	-- Bubble-eyed Rolly (QI!)
 			}),
 			q(55672, {	-- A Historical Mess
-				["description"] = createLocalizationString({
-					readable = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
-					constant = "THIS_QUEST_IS_ONLY_AVAILABLE_IF_YOU_PICK_UP_THE_2",
-					export = true,
-					text = {
-						en = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有从 |cFFffffff浸水的卷轴匣|r 拾取线索且正在做 |cFFefc400线索遍地|r 时，才能接取此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
 				["provider"] = { "n", 152633 },	-- Sir Finley Mrrgglton
 				["isDaily"] = true,
 				["groups"] = { i(168224) },	-- Tortollan Relics (QI!)
@@ -130,24 +79,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			q(56142, {	-- Adapt, Improve, Overcome!
-				["description"] = createLocalizationString({
-					readable = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
-					constant = "ONLY_AVAILABLE_IN_THE_ALTERNATE_TIMELINE_SPEAK",
-					export = true,
-					text = {
-						en = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅可在平行时间线中使用。当 |cFFFFD700克罗米|r 在城中时与她交谈。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
 				["provider"] = { "n", 154214 },	-- Christy Punchcog
 				["coord"] = { 71.8, 35.8, MECHAGON },
 				["isDaily"] = true,
@@ -242,24 +174,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 			}),
 			q(55658, {	-- Clues Abound
-				["description"] = createLocalizationString({
-					readable = "Depending on which clue you pick up, the follow-ups to this quest fulfill different achievement criteria for |cFFf0ef00Outside Influences|r.\n\n|cFFffffffDirt Pile|r > |cFFefc400A Growing Mystery|r\n|cFFffffffHearthstone Card|r > |cFFefc400Time for Heroics|r > |cFFefc400Deck 'Em|r\n|cFFffffffWaterlogged Scroll Case|r > |cFFefc400A Historical Mess|r\n\nWhile on any of the follow-up quests, |cFFcc4d38Congealed Oil|r has a chance to drop an item that will start |cFFefc400Pirates? I Hate Those Guys!|r and |cFFcc4d38Toxic Lurkers|r have a chance to drop an item that will start |cFFefc400Strange Discovery|r.\n",
-					constant = "DEPENDING_ON_WHICH_CLUE_YOU_PICK_UP_THE_FOLLOW",
-					export = true,
-					text = {
-						en = "Depending on which clue you pick up, the follow-ups to this quest fulfill different achievement criteria for |cFFf0ef00Outside Influences|r.\n\n|cFFffffffDirt Pile|r > |cFFefc400A Growing Mystery|r\n|cFFffffffHearthstone Card|r > |cFFefc400Time for Heroics|r > |cFFefc400Deck 'Em|r\n|cFFffffffWaterlogged Scroll Case|r > |cFFefc400A Historical Mess|r\n\nWhile on any of the follow-up quests, |cFFcc4d38Congealed Oil|r has a chance to drop an item that will start |cFFefc400Pirates? I Hate Those Guys!|r and |cFFcc4d38Toxic Lurkers|r have a chance to drop an item that will start |cFFefc400Strange Discovery|r.\n",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "根据你拾取的线索不同，该任务的后续任务会完成|cFFf0ef00外部影响|r的不同成就条件。\n\n|cFFffffff土堆|r > |cFFefc400谜团渐长|r\n|cFFffffff炉石卡牌|r > |cFFefc400英雄时刻|r > |cFFefc400打倒他们|r\n|cFFffffff浸水的卷轴筒|r > |cFFefc400一团历史乱麻|r\n\n在进行任意后续任务时，|cFFcc4d38凝结之油|r有几率掉落可开启|cFFefc400海盗？我讨厌那些家伙！|r的物品，|cFFcc4d38剧毒潜伏者|r则有几率掉落可开启|cFFefc400奇怪发现|r的物品。\n",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Depending on which clue you pick up, the follow-ups to this quest fulfill different achievement criteria for |cFFf0ef00Outside Influences|r.\n\n|cFFffffffDirt Pile|r > |cFFefc400A Growing Mystery|r\n|cFFffffffHearthstone Card|r > |cFFefc400Time for Heroics|r > |cFFefc400Deck 'Em|r\n|cFFffffffWaterlogged Scroll Case|r > |cFFefc400A Historical Mess|r\n\nWhile on any of the follow-up quests, |cFFcc4d38Congealed Oil|r has a chance to drop an item that will start |cFFefc400Pirates? I Hate Those Guys!|r and |cFFcc4d38Toxic Lurkers|r have a chance to drop an item that will start |cFFefc400Strange Discovery|r.\n",
 				["provider"] = { "n", 152501 },	-- Elise Starseeker
 				["coord"] = { 70.4, 31.0, MECHAGON },
 				["isDaily"] = true,
@@ -269,28 +184,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(168223),	-- Old Parchment (QI!)
 					i(168235),	-- Rusty Knife (QI!)
 					i(168256, {	-- Night Elf Ring
-						["description"] = createLocalizationString({
-							readable = "You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item.",
-							constant = "YOU_NEED_TO_BE_ON_EITHER_CFFFFD700A_GROWING",
-							export = true,
-							text = {
-								en = "You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要处于 |cFFFFD700渐生的谜团|r、|cFFFFD700英雄时刻|r、|cFFFFD700击倒他们|r 或 |cFFFFD700历史的烂摊子|r 任务中才能获得此物品。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item.",
 						["crs"] = { 152653 },	-- Toxic Lurker
 					}),
 					i(169864, {	-- Old Pirate Hat
-						["description"] = "~L.YOU_NEED_TO_BE_ON_EITHER_CFFFFD700A_GROWING",
+						["description"] = "You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item.",
 						["crs"] = { 150698 },	-- Congealed Oil
 					}),
 				},
@@ -330,24 +228,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			q(56410, {	-- Discs of Norgannon
-				["description"] = createLocalizationString({
-					readable = "The |cFF0070ddCorrupted Data Disc|r is the quest item for Discs of Norgannon, but on the day the quest is up you can loot the other four items. They each have a daily cooldown, so you can use them to summon 4 Data Anomalies, abandon the quests, and use the items again the next day.\n\nIf the disc can summon more than one Data Anomaly, they share a daily lockout and you can only loot one of the two each day.\n",
-					constant = "THE_CFF0070DDCORRUPTED_DATA_DISC_R_IS_THE_QUEST",
-					export = true,
-					text = {
-						en = "The |cFF0070ddCorrupted Data Disc|r is the quest item for Discs of Norgannon, but on the day the quest is up you can loot the other four items. They each have a daily cooldown, so you can use them to summon 4 Data Anomalies, abandon the quests, and use the items again the next day.\n\nIf the disc can summon more than one Data Anomaly, they share a daily lockout and you can only loot one of the two each day.\n",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "|cFF0070dd腐化的数据圆盘|r是“诺甘农的圆盘”的任务物品，但在该任务可用的当天你可以拾取另外四件物品。它们各自都有每日冷却时间，因此你可以用它们召唤 4 个数据异常体，放弃任务，并在第二天再次使用这些物品。\n\n如果该圆盘能召唤多个数据异常体，它们共享每日锁定，你每天只能拾取其中两个之一。\n",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The |cFF0070ddCorrupted Data Disc|r is the quest item for Discs of Norgannon, but on the day the quest is up you can loot the other four items. They each have a daily cooldown, so you can use them to summon 4 Data Anomalies, abandon the quests, and use the items again the next day.\n\nIf the disc can summon more than one Data Anomaly, they share a daily lockout and you can only loot one of the two each day.\n",
 				["provider"] = { "n", 154982 },	-- Archivist Bitbyte
 				["coord"] = { 72.0, 36.5, MECHAGON },
 				["isDaily"] = true,
@@ -450,44 +331,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["sym"] = {{"select","itemID",151451}},	-- Strip-Thorn Gauntlets
 					}),
 					i(169591, {	-- Cracked Numeric Cylinder
-						["description"] = createLocalizationString({
-							readable = "Dropped by trogg mobs once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-							constant = "DROPPED_BY_TROGG_MOBS_ONCE_CFFFFFFFFDISCS_OF",
-							export = true,
-							text = {
-								en = "Dropped by trogg mobs once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在当天完成“|cffffffff诺甘农圆盘|r”后，由穴居人怪物掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dropped by trogg mobs once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 					}),
 					i(169593, {	-- Large Storage Fragment
-						["description"] = createLocalizationString({
-							readable = "Dropped by mobs in Junkwatt Depot once '|cffffffffDiscs of Norgannon|r' has been completed the same day.\n\nThis appears to have a lower droprate than the other three discs.",
-							constant = "DROPPED_BY_MOBS_IN_JUNKWATT_DEPOT_ONCE",
-							export = true,
-							text = {
-								en = "Dropped by mobs in Junkwatt Depot once '|cffffffffDiscs of Norgannon|r' has been completed the same day.\n\nThis appears to have a lower droprate than the other three discs.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在当天完成“|cffffffff诺甘农圆盘|r”后，由废瓦特仓库的怪物掉落。\n\n它的掉落率似乎低于其他三个圆盘。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Dropped by mobs in Junkwatt Depot once '|cffffffffDiscs of Norgannon|r' has been completed the same day.\n\nThis appears to have a lower droprate than the other three discs.",
 					}),
 					i(169474),	-- Corrupted Data Disc
 				},
@@ -676,45 +523,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							i(167795),	-- Paint Vial: Copper Trim
 							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							i(169594, {	-- Rust Covered Disc
-								["description"] = createLocalizationString({
-									readable = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-									constant = "CONTAINED_IN_RECYCLING_REQUISITIONS_USUALLY",
-									export = true,
-									text = {
-										en = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "包含在回收征用中（通常在“雨天”天气时），且需在当天完成“|cffffffff诺甘农圆盘|r”之后。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 								["sourceQuest"] = 56410,	-- Discs of Norgannon
 							}),
 							i(169595, {	-- Scorched Data Disc
-								["description"] = createLocalizationString({
-									readable = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-									constant = "CONTAINED_IN_RECYCLING_REQUISITIONS_USUALLY_2",
-									export = true,
-									text = {
-										en = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "包含在回收征用中（通常在“晴天”天气时），且需在当天完成“|cffffffff诺甘农圆盘|r”之后。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 								["sourceQuest"] = 56410,	-- Discs of Norgannon
 							}),
 						},
@@ -732,11 +545,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							}),
 							i(167795),	-- Paint Vial: Copper Trim
 							i(169594, {	-- Rust Covered Disc
-								["description"] = "~L.CONTAINED_IN_RECYCLING_REQUISITIONS_USUALLY",
+								["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 								["sourceQuest"] = 56410,	-- Discs of Norgannon
 							}),
 							i(169595, {	-- Scorched Data Disc
-								["description"] = "~L.CONTAINED_IN_RECYCLING_REQUISITIONS_USUALLY_2",
+								["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
 								["sourceQuest"] = 56410,	-- Discs of Norgannon
 							}),
 							i(169689),	-- Vinyl: Mimiron's Brainstorm
@@ -750,24 +563,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 				["groups"] = {
 					i(169381, {	-- OOX-35/MG (PET!)
-						["description"] = createLocalizationString({
-							readable = "When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
-							constant = "WHEN_THE_QUEST_CFFFFD700MY_CHICKENS_ARE_NOT_FOR",
-							export = true,
-							text = {
-								en = "When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "当|cFFFFD700我的鸡不是用来吃的！|r任务激活时，区域内会出现被拆解的 OOX-35，可用 25 个备用零件修复，并给予该宠物作为奖励。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
 					}),
 					i(169695),	-- Mechanical Giblets (QI!)
 				},
@@ -778,24 +574,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 59.1, 55.1, MECHAGON },
 			}),
 			q(56756, {	-- My Punkin, the Action Figure
-				["description"] = createLocalizationString({
-					readable = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
-					constant = "ONCE_YOU_ARE_EXALTED_WITH_RUSTBOLT_RESISTANCE",
-					export = true,
-					text = {
-						en = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当你与锈栓抵抗军达到崇拜后，此任务会在完成“像我们这样的玩具”日常任务后给予。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
 				["provider"] = { "n", 149815 },	-- Grizzek Fizzwrench
 				["coord"] = { 72.0, 34.2, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, EXALTED },
@@ -829,24 +608,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(168184),	-- Rare Metal (QI!)
 					i(168183),	-- Rare Metal Collector (QI!)
 					i(168204, {	-- Small Metal Box
-						["description"] = createLocalizationString({
-							readable = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
-							constant = "SMALL_METAL_BOXES_CAN_BE_COLLECTED_WHEN_USING",
-							export = true,
-							text = {
-								en = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用稀有金属收集器时可以收集小金属盒。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
 						["groups"] = {
 							i(170148),	-- Paint Bottle: Electric Blue (QS!)
 						},
@@ -881,24 +643,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 			}),
 			q(56746, {	-- Our Direct Line
-				["description"] = createLocalizationString({
-					readable = "Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",
-					constant = "QUEST_IS_OFFERED_ONCE_YOU_HAVE_COMPLETED",
-					export = true,
-					text = {
-						en = "Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在完成|cFFFFD700其他兴趣|r日常任务三次后，该任务就会出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",
 				["provider"] = { "n", 152575 },	-- Steelsage Gao
 				["coord"] = { 73.6, 34.3, MECHAGON },
 				["isDaily"] = true,	-- collection status for the quest resets over time
@@ -1203,24 +948,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 			}),
 			q(56131, {	-- Security First
-				["description"] = createLocalizationString({
-					readable = "One-time completion per character.",
-					constant = "ONE_TIME_COMPLETION_PER_CHARACTER",
-					export = true,
-					text = {
-						en = "One-time completion per character.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "每个角色仅限完成一次。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "One-time completion per character.",
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
 				["lvl"] = { 50 },
 				["groups"] = {
@@ -1247,24 +975,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 			}),
 			q(56740, {	-- S.P.A.R.E. Crates
-				["description"] = createLocalizationString({
-					readable = "Quest is available if you have 250 Spare Parts in your bag",
-					constant = "QUEST_IS_AVAILABLE_IF_YOU_HAVE_250_SPARE_PARTS",
-					export = true,
-					text = {
-						en = "Quest is available if you have 250 Spare Parts in your bag",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你的背包中有 250 个备用零件，该任务就可用",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Quest is available if you have 250 Spare Parts in your bag",
 				["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.3, MECHAGON },
@@ -1274,24 +985,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 			}),
 			q(56501, {	-- Taking the Air Out
-				["description"] = createLocalizationString({
-					readable = "Only available during Unprofitable Ventures.",
-					constant = "ONLY_AVAILABLE_DURING_UNPROFITABLE_VENTURES",
-					export = true,
-					text = {
-						en = "Only available during Unprofitable Ventures.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅在无利可图的投资期间可用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Only available during Unprofitable Ventures.",
 				["provider"] = { "i", 169682 },	-- Venture Co. Rocket Box
 				["coords"] = {
 					{ 47.6, 36.8, MECHAGON },	-- Alliance
@@ -1417,24 +1111,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["requireSkill"] = FISHING,
 			}),
 			q(55717, {	-- Time for Heroics
-				["description"] = createLocalizationString({
-					readable = "This quest is only available if you pick up the clue from the |cFFffffffHearthstone Card|r while on |cFFefc400Clues Abound|r.",
-					constant = "THIS_QUEST_IS_ONLY_AVAILABLE_IF_YOU_PICK_UP_THE_3",
-					export = true,
-					text = {
-						en = "This quest is only available if you pick up the clue from the |cFFffffffHearthstone Card|r while on |cFFefc400Clues Abound|r.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "只有从 |cFFffffff炉石卡牌|r 拾取线索且正在做 |cFFefc400线索遍地|r 时，才能接取此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest is only available if you pick up the clue from the |cFFffffffHearthstone Card|r while on |cFFefc400Clues Abound|r.",
 				["provider"] = { "n", 152633 },	-- Sir Finley Mrrgglton
 				["isDaily"] = true,
 			}),
@@ -1526,24 +1203,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells
 			}),
 			q(55979, {	-- Iteration is Key
-				["description"] = createLocalizationString({
-					readable = "You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",
-					constant = "YOU_DO_NOT_LOSE_YOUR_UB3R_SPANNER_WHILE",
-					export = true,
-					text = {
-						en = "You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "完成此任务时你不会失去你的 Ub3r 扳手，只需将它放在背包中即可。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
 				["coord"] = { 69.7, 32.3, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },

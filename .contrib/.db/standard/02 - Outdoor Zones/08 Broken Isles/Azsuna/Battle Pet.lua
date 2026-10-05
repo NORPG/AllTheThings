@@ -21,44 +21,10 @@ root(ROOTS.Zones, {
 					pet(706),	-- Bandicoon (PET!)
 					pet(1914),	-- Coastal Sandpiper (PET!)
 					pet(1774, {	-- Eldritch Manafiend (PET!)
-						["description"] = createLocalizationString({
-							readable = "This pet can only spawn during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
-							constant = "THIS_PET_CAN_ONLY_SPAWN_DURING_THE_NIGHT",
-							export = true,
-							text = {
-								en = "This pet can only spawn during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此宠物只能在夜间刷新，时间为太平洋时间（美服）/中欧夏令时（欧服）/澳大利亚东部时间（大洋洲服）下午 6:30 至次日上午 6:30。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This pet can only spawn during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
 					}),
 					pet(1773, {	-- Erudite Manafiend (PET!)
-						["description"] = createLocalizationString({
-							readable = "This pet can only spawn during the day between 6:30am to 6:30pm PST(US)/CEST(EU)/AEST(OCE).",
-							constant = "THIS_PET_CAN_ONLY_SPAWN_DURING_THE_DAY_BETWEEN",
-							export = true,
-							text = {
-								en = "This pet can only spawn during the day between 6:30am to 6:30pm PST(US)/CEST(EU)/AEST(OCE).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此宠物只能在白天刷新，时间为太平洋时间（美服）/中欧夏令时（欧服）/澳大利亚东部时间（大洋洲服）上午 6:30 至下午 6:30。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This pet can only spawn during the day between 6:30am to 6:30pm PST(US)/CEST(EU)/AEST(OCE).",
 					}),
 					pet(1709, {	-- Fledgling Kingfeather (PET!)
 						["coord"] = { 44.4, 23.6, AZSUNA },
@@ -85,46 +51,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(1935, {	-- Squirky (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found at the given coord on Seabreak Isle.",
-							constant = "FOUND_AT_THE_GIVEN_COORD_ON_SEABREAK_ISLE",
-							export = true,
-							text = {
-								en = "Found at the given coord on Seabreak Isle.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于破海岛的指定坐标处。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found at the given coord on Seabreak Isle.",
 						["coord"] = { 20.0, 21.8, AZSUNA },
 						["timeline"] = { ADDED_7_1_0 },
 					}),
 					header(HEADERS.NPC, 115787, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Bloodgazer Hatchling
-						["description"] = createLocalizationString({
-							readable = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
-							constant = "1_BUY_AZSUNIAN_GRAPES_FROM_NALYSSE_DAWNSORROW",
-							export = true,
-							text = {
-								en = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "1. 在阿苏纳向娜莉丝·晨悲购买阿苏纳葡萄。\n2. 杀死血眼母鹰。\n3. /target 孤雏血眼鹰\n4. 用阿苏纳葡萄喂食孤雏血眼鹰。\n5. 享受新的血眼雏鹰！每天完成一个任务即可获得坐骑！|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
 						["crs"] = { 115741 },	-- Orphaned Bloodgazer
 						["groups"] = {
 							pet(1977),	-- Bloodgazer Hatchling (PET!)

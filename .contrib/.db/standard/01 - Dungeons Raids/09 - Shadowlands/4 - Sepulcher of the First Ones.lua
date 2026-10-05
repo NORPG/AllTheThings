@@ -649,44 +649,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			})),
 			n(SPECIAL, {
 				i(189167, {	-- Glimmer of Satisfaction
-					["description"] = createLocalizationString({
-						readable = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
-						constant = "EATING_A_EMPTY_KETTLE_OF_STONE_SOUP_ATT_I",
-						export = true,
-						text = {
-							en = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "食用空的石头汤锅 (/att i:187648) 或饕餮享乐盛宴 (/att i:172043) 有几率在你的背包中生成此物品。\n获得“满意之光”的几率会在你获得“吃饱喝足”增益或刷新该增益时触发，因此你可以每隔约 12 秒再次点击盛宴。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
 				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
-					["description"] = createLocalizationString({
-						readable = "Killed when having 3 stacks of Synergy",
-						constant = "KILLED_WHEN_HAVING_3_STACKS_OF_SYNERGY",
-						export = true,
-						text = {
-							en = "Killed when having 3 stacks of Synergy",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在拥有 3 层协同效果时被击杀",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Killed when having 3 stacks of Synergy",
 					["coord"] = { 22.0, 38.0, 2061 },
 					["groups"] = {
 						i(190727),	-- Security Override Orb
@@ -695,24 +661,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(375893, {	-- High Value Cache
-					["description"] = createLocalizationString({
-						readable = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
-						constant = "WHEN_TASKMASTER_XY_PRO_HAS_3_STACKS_OF_SYNERGY",
-						export = true,
-						text = {
-							en = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当监工赛普罗获得 3 层协同增益（靠近其他怪物时获得）后，他会获得另一个名为安全覆盖的增益，该增益表明他将掉落安全覆盖宝珠。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "When Taskmaster Xy'pro has 3 stacks of Synergy, which he gets from being nearby other mobs, he gets another buff called Security Override which says he will drop the Security Override Orb.",
 					["coord"] = { 22.0, 38.0, 2061 },
 					["questID"] = 66285,
 					["cost"] = { { "i", 190727, 1 } },	-- 1x Security Override Orb
@@ -723,48 +672,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				o(375905, {	-- Protoform Schematic
-					["description"] = createLocalizationString({
-						readable = "Prior to the Vigilant Guardian encounter, under the north-eastern 'island' in a chain.",
-						constant = "PRIOR_TO_THE_VIGILANT_GUARDIAN_ENCOUNTER_UNDER",
-						export = true,
-						text = {
-							en = "Prior to the Vigilant Guardian encounter, under the north-eastern 'island' in a chain.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在警戒守护者遭遇战之前，位于东北方“岛屿”下方的一条锁链中。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Prior to the Vigilant Guardian encounter, under the north-eastern 'island' in a chain.",
 					["coord"] = { 45.4, 32.6, 2047 },
 					["groups"] = {
 						i(189461),	-- Schematic: Serenade (PS!)
 					},
 				}),
 				o(375907, {	-- Protoform Schematic
-					["description"] = createLocalizationString({
-						readable = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
-						constant = "LOCATED_ON_THE_NORTH_SIDE_OF_THE_2ND_ENCOUNTER",
-						export = true,
-						text = {
-							en = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "位于击败哈隆德鲁斯后第二个首领战区域的北侧。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
 					["coord"] = { 63.2, 51.9, 2061 },
 					["groups"] = {
 						i(189476),	-- Schematic: Curious Crystalsniffer (PS!)
@@ -772,24 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			o(375368, {	-- Creation Catalyst Console
-				["description"] = createLocalizationString({
-					readable = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					constant = "THE_CREATION_CATALYST_IS_A_SYSTEM_THAT_LETS_YOU",
-					export = true,
-					text = {
-						en = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "创世熔炉是一个系统，可以让你把在泽雷斯的莫尔提斯用沙蚀遗物购买的物品，以及来自“初诞者圣墓”团队副本的非套装物品，转换成你职业的幻化套装物品。\n\n熔炉位于团队副本外，在莫尔提斯南部。转换前请务必先装备好你的物品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 				["sourceQuests"] = { 64842 },	-- Flora Frenzy
 				["modelScale"] = 4,

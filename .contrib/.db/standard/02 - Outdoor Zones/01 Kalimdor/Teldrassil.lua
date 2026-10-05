@@ -521,24 +521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
 									-- ["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
-									["description"] = createLocalizationString({
-										readable = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
-										constant = "KNEEL_KNEEL_IN_THE_MOONWELL_TO_GAIN_A",
-										export = true,
-										text = {
-											en = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在月亮井中跪下（/kneel）以获得冥想增益，然后使用符文完成任务。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
 								i(711),	-- Tattered Cloth Gloves
@@ -743,24 +726,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(28731, {	-- Teldrassil: Passing Awareness
-							["description"] = createLocalizationString({
-								readable = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
-								constant = "THE_QUEST_COMPLETION_MARKER_IS_PLACED_WRONG_GO",
-								export = true,
-								text = {
-									en = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "任务完成标记的位置有误，请前往达纳苏斯外的十字路口。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 							["sourceQuest"] = 28730,	-- Precious Waters
 							["qg"] = 3514,	-- Tenaron Stormgrip
 							["qi"] = 5186,	-- Partially Filled Vessel
@@ -1253,24 +1219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.2, 61.7, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 1.7.0
-					["description"] = createLocalizationString({
-						readable = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
-						constant = "THIS_QUEST_GETS_MARKED_AS_COMPLETED_WHEN_YOU_5",
-						export = true,
-						text = {
-							en = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当你完成任务“大地之冠（5/6）”（7383）时，此任务会被标记为已完成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
 					-- #endif
 					["timeline"] = { REMOVED_1_7_0 },
 					["groups"] = {
@@ -1452,7 +1401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i",  10819 },	-- Wildkin Feather
 								{ "o", 153239 },	-- Wildkin Feather
 							},
-							["description"] = "~L.SCATTERED_ON_THE_GROUND_AROUND_THE_HINTERLANDS",
+							["description"] = "Scattered on the ground around the Hinterlands.",
 						}),
 					},
 				}),
@@ -1566,7 +1515,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5618, {	-- Scout's Cloak
 							-- #if ANYCLASSIC
-							["description"] = "~L.THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP",
+							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -1855,24 +1804,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(929, {	-- Teldrassil: The Refusal of the Aspects [CATA+] / Crown of the Earth (3/6)
-					["description"] = createLocalizationString({
-						readable = "The quest completion marker and position of the quest giver depends on the quests you have accepted.\n\nIf you DO NOT have |cff4a54e8Teldrassil: The Burden of the Kaldorei|r in your Quest Log, Corithras Moonrage will be at Dolanaar.\nIf you DO HAVE it accepted, along with this quest, he will be at the Crossroads in front of the entrance to Darnassus.",
-						constant = "THE_QUEST_COMPLETION_MARKER_AND_POSITION_OF_THE",
-						export = true,
-						text = {
-							en = "The quest completion marker and position of the quest giver depends on the quests you have accepted.\n\nIf you DO NOT have |cff4a54e8Teldrassil: The Burden of the Kaldorei|r in your Quest Log, Corithras Moonrage will be at Dolanaar.\nIf you DO HAVE it accepted, along with this quest, he will be at the Crossroads in front of the entrance to Darnassus.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "任务完成标记和任务给予者的位置取决于你已接取的任务。\n\n如果你的任务日志中**没有**|cff4a54e8泰达希尔：卡多雷的重担|r，科里瑟拉斯·月怒会在多拉纳尔。\n如果你已接取它以及这个任务，他会出现在达纳苏斯入口前方的十字路口。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The quest completion marker and position of the quest giver depends on the quests you have accepted.\n\nIf you DO NOT have |cff4a54e8Teldrassil: The Burden of the Kaldorei|r in your Quest Log, Corithras Moonrage will be at Dolanaar.\nIf you DO HAVE it accepted, along with this quest, he will be at the Crossroads in front of the entrance to Darnassus.",
 					["sourceQuest"] = 28731,	-- Teldrassil: Passing Awareness
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coords"] = {
@@ -1922,24 +1854,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2438, {	-- The Emerald Dreamcatcher
 					-- #if AFTER CATA
 					-- #if BEFORE LEGION
-					["description"] = createLocalizationString({
-						readable = "This quest is incorrectly marked as a weekly by Blizzard up until Legion. Complete it on a Night Elf character to prevent it from reappearing in ATT.",
-						constant = "THIS_QUEST_IS_INCORRECTLY_MARKED_AS_A_WEEKLY_BY",
-						export = true,
-						text = {
-							en = "This quest is incorrectly marked as a weekly by Blizzard up until Legion. Complete it on a Night Elf character to prevent it from reappearing in ATT.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在军团再临之前，暴雪一直将此任务错误地标记为周常。请用暗夜精灵角色完成它，以免它在 ATT 中重复出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is incorrectly marked as a weekly by Blizzard up until Legion. Complete it on a Night Elf character to prevent it from reappearing in ATT.",
 					-- #endif
 					-- #endif
 					["qg"] = 3567,	-- Tallonkai Swiftroot
@@ -1997,24 +1912,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5592, {	-- Shackled Girdle
 							-- #if ANYCLASSIC
-							["description"] = createLocalizationString({
-								readable = "This gets completely removed. To be safe, keep this in your bank forever on a mail user.",
-								constant = "THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP_2",
-								export = true,
-								text = {
-									en = "This gets completely removed. To be safe, keep this in your bank forever on a mail user.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品会被完全移除。为保险起见，请把它永久保存在一个专门用来收发邮件的小号的银行里。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This gets completely removed. To be safe, keep this in your bank forever on a mail user.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -2171,7 +2069,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9599),	-- Barkmail Leggings
 						i(9603, {	-- Gritroot Staff
 							-- #if ANYCLASSIC
-							["description"] = "~L.THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP",
+							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -2199,24 +2097,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(931, {	-- The Shimmering Frond
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",
-						constant = "GIVE_THE_SHIMMERING_FROND_TO_DENALAN_AT_THE",
-						export = true,
-						text = {
-							en = "Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "将微光蕨叶交给阿尔阿梅斯湖东端（59.9, 59.8）的德纳兰，以确保你能接到下一个任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",
 					-- #endif
 					["providers"] = {
 						{ "o", 6752 },	-- Strange Fronded Plant
@@ -2255,24 +2136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2399, {	-- The Sprouted Fronds
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "A bug prevents the spawn of Sprouted Frond if completed at a wrong NPC.\nAfter picking up the quest, |cff4a54e8The Shimmering Frond|r, DO NOT turn in the quest to Denalan at the Wellspring Hovel, but to the Denalan at the east end of Lake Al'Ameth (59.9, 59.8). Denalan at the Wellsping Hovel will not spawn the Sprouted Frond after completing the quest and you will be unable to get the next quest.\nThe Denalan at the east end of Lake Al'Ameth WILL spawn the Sprouted Frond and you can pick up the next quest |cff4a54e8The Shimmering Frond|r.\n\nIf, like me, you turned it in to Denalan at the Wellspring Hovel, just travel to the one at the lake and log out. Go onto another character who has not done the quest yet, turn it in there and log out. The plants should spawn and give you enough time to re-log back to your previous character and do the quest.\n\n- Crieve",
-						constant = "A_BUG_PREVENTS_THE_SPAWN_OF_SPROUTED_FROND_IF",
-						export = true,
-						text = {
-							en = "A bug prevents the spawn of Sprouted Frond if completed at a wrong NPC.\nAfter picking up the quest, |cff4a54e8The Shimmering Frond|r, DO NOT turn in the quest to Denalan at the Wellspring Hovel, but to the Denalan at the east end of Lake Al'Ameth (59.9, 59.8). Denalan at the Wellsping Hovel will not spawn the Sprouted Frond after completing the quest and you will be unable to get the next quest.\nThe Denalan at the east end of Lake Al'Ameth WILL spawn the Sprouted Frond and you can pick up the next quest |cff4a54e8The Shimmering Frond|r.\n\nIf, like me, you turned it in to Denalan at the Wellspring Hovel, just travel to the one at the lake and log out. Go onto another character who has not done the quest yet, turn it in there and log out. The plants should spawn and give you enough time to re-log back to your previous character and do the quest.\n\n- Crieve",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果交错了 NPC，一个 Bug 会导致发芽的树叶无法刷新。\n接到任务|cff4a54e8微光树叶|r后，不要把它交给涌泉小屋的德纳兰，而要交给奥拉密斯湖东端（59.9, 59.8）的德纳兰。涌泉小屋的德纳兰在完成任务后不会刷新发芽的树叶，你将无法接到下一个任务。\n奥拉密斯湖东端的德纳兰则会让发芽的树叶刷新，你就可以接到下一个任务|cff4a54e8微光树叶|r。\n\n如果你像我一样把它交给了涌泉小屋的德纳兰，只需前往湖边的那个德纳兰处并下线。换一个还没做过该任务的角色，在那里交任务然后下线。植物应该会刷新，给你足够的时间重新登录回之前的角色并完成任务。\n\n- Crieve",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "A bug prevents the spawn of Sprouted Frond if completed at a wrong NPC.\nAfter picking up the quest, |cff4a54e8The Shimmering Frond|r, DO NOT turn in the quest to Denalan at the Wellspring Hovel, but to the Denalan at the east end of Lake Al'Ameth (59.9, 59.8). Denalan at the Wellsping Hovel will not spawn the Sprouted Frond after completing the quest and you will be unable to get the next quest.\nThe Denalan at the east end of Lake Al'Ameth WILL spawn the Sprouted Frond and you can pick up the next quest |cff4a54e8The Shimmering Frond|r.\n\nIf, like me, you turned it in to Denalan at the Wellspring Hovel, just travel to the one at the lake and log out. Go onto another character who has not done the quest yet, turn it in there and log out. The plants should spawn and give you enough time to re-log back to your previous character and do the quest.\n\n- Crieve",
 					-- #endif
 					["sourceQuest"] = 931,	-- The Shimmering Frond
 					["provider"] = { "o", 7510 },	-- Sprouted Frond
@@ -2499,13 +2363,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5459, {	-- Defender Axe
 							-- #if ANYCLASSIC
-							["description"] = "~L.THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP",
+							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(5587, {	-- Thornroot Club
 							-- #if ANYCLASSIC
-							["description"] = "~L.THIS_GETS_COMPLETELY_REMOVED_TO_BE_SAFE_KEEP",
+							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -2595,7 +2459,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(5179, {	-- Moss-twined Heart
-							["description"] = "~L.THIS_IS_ONE_OF_THE_ONLY_DROPS_FROM_A_RARE_SPAWN",
+							["description"] = "This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},
@@ -2622,24 +2486,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209812, {	-- Fallenroot Poacher
 					["provider"] = { "n", 209811 },	-- Rustling Bush
-					["description"] = createLocalizationString({
-						readable = "Cast Hunter's Mark on the bush to spawn the Rare Creature.",
-						constant = "CAST_HUNTER_S_MARK_ON_THE_BUSH_TO_SPAWN_THE_2",
-						export = true,
-						text = {
-							en = "Cast Hunter's Mark on the bush to spawn the Rare Creature.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对灌木施放猎人印记以刷新稀有生物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Hunter's Mark on the bush to spawn the Rare Creature.",
 					["coord"] = { 46.6, 46.4, TELDRASSIL },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -2688,7 +2535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209928, {	-- Mowgh
-					["description"] = "~L.YOU_CAN_TAME_HIM_AND_YOU_STILL_GET_THE_RUNE",
+					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 48.3, 31.4, TELDRASSIL },
 					["cost"] = { { "i", 208608, 1 } },	-- Teldrassil Bird Meat
 					["groups"] = {
@@ -2851,7 +2698,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
-					["description"] = "~L.CAST_MOONFIRE_ON_EACH_OF_THE_LUNAR_STONES_TO",
+					["description"] = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
 					["providers"] = {
 						{ "n", 207577 },	-- Lunar Stone
 						{ "o", 404433 },	-- Lunar Chest
@@ -2953,7 +2800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208609, {	-- Glade Flower
-					["description"] = "~L.THESE_ARE_SCATTERED_THROUGHOUT_THE_ZONE",
+					["description"] = "These are scattered throughout the zone.",
 					["provider"] = { "o", 407247 },	-- Glade Flower
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage

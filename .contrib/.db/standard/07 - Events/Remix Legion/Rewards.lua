@@ -51,24 +51,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 
 		------ Reputation Insignias ------
 		i(253621, {	-- Champion's Insignia
-			["description"] = createLocalizationString({
-				readable = "Turns into a Reputation Insignia for a Faction of the zone you are in.",
-				constant = "TURNS_INTO_A_REPUTATION_INSIGNIA_FOR_A_FACTION",
-				export = true,
-				text = {
-					en = "Turns into a Reputation Insignia for a Faction of the zone you are in.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "会变成你所处区域某个阵营的声望徽章。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Turns into a Reputation Insignia for a Faction of the zone you are in.",
 		}),
 		i(249788),	-- Argussian Reach Champion's Insignia
 		i(249780),	-- Army of the Light Champion's Insignia

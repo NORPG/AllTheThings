@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				pet(3547, {	-- Jade Cragviper (PET!)
-					["description"] = "~L.BACKLINE_PET_ONLY",
+					["description"] = "Backline pet only.",
 				}),
 				pet(4571, {	-- Pinkskin Burrower (PET!)
 					["coord"] = { 47.8, 31.6, THE_RINGING_DEEPS },
@@ -22,24 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["coord"] = { 56.8, 43.8, THE_RINGING_DEEPS },
 				}),
 				pet(4574, {	-- Snuffling (PET!)
-					["description"] = createLocalizationString({
-						readable = "Found around the area of Taelloch/Obsidian Hollow.",
-						constant = "FOUND_AROUND_THE_AREA_OF_TAELLOCH_OBSIDIAN",
-						export = true,
-						text = {
-							en = "Found around the area of Taelloch/Obsidian Hollow.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在泰尔洛克/黑曜石谷区域周围可找到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Found around the area of Taelloch/Obsidian Hollow.",
 					["coords"] = {
 						{ 64.7, 48.5, THE_RINGING_DEEPS },
 						{ 68.0, 47.0, THE_RINGING_DEEPS },

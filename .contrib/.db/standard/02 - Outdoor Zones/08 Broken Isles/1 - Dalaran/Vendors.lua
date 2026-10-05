@@ -72,24 +72,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 45.2, 29.1, LEGION_DALARAN },
 					["groups"] = {
 						i(154879, {	-- Awoken Titan Essence
-							["description"] = createLocalizationString({
-								readable = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
-								constant = "UNLESS_YOU_PLAYED_DURING_LEGION_AND_HAVE",
-								export = true,
-								text = {
-									en = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "除非你在军团再临期间玩过，并且还有未达到最高物品等级的传说装备，否则这件物品完全没用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 						}),
 						i(157796, {	-- Purified Titan Essence
 							["u"] = REMOVED_FROM_GAME,
@@ -1252,24 +1235,7 @@ root(ROOTS.Zones, {
 							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(141850, {	-- Pattern: Elderhorn Riding Harness (RECIPE!)
-							["description"] = createLocalizationString({
-								readable = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
-								constant = "THE_VENDOR_WILL_ONLY_SELL_THIS_RECIPE_TO_THOSE",
-								export = true,
-								text = {
-									en = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "该商人只会把这张配方卖给已经完成过奖励该配方任务的人。这是为了应对你未学习就删除了配方，或在完成任务后放弃了制皮、之后又决定重新学习的情况。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 						}),
 						i(137916),	-- Pattern: Gravenscale Armbands [Rank 2] (RECIPE!)
 						i(137921),	-- Pattern: Gravenscale Grips [Rank 2] (RECIPE!)
@@ -1310,24 +1276,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(97529, {	-- The Amazing Zanzo
-					["description"] = createLocalizationString({
-						readable = "Wanders around the city.",
-						constant = "WANDERS_AROUND_THE_CITY",
-						export = true,
-						text = {
-							en = "Wanders around the city.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在城市中四处游荡。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Wanders around the city.",
 					["groups"] = {
 						{
 							["recipeID"] = 28272,	-- Polymorph (Pig)
@@ -1336,24 +1285,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(108468, {	-- The Mad Merchant
-					["description"] = createLocalizationString({
-						readable = "This vendor is not always present.",
-						constant = "THIS_VENDOR_IS_NOT_ALWAYS_PRESENT",
-						export = true,
-						text = {
-							en = "This vendor is not always present.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此商人并非始终出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This vendor is not always present.",
 					["coord"] = { 43.2, 46.6, LEGION_DALARAN },
 					["groups"] = {
 						i(137570, {	-- Bloodfang Widow (MOUNT!)

@@ -60,24 +60,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 					}),
 					pet(480, {	-- Topaz Shale Hatchling (PET!)
-						["description"] = createLocalizationString({
-							readable = "The biggest concentration can be found in Desolace, the orange section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, beneath Silvermarsh, as well as inside Fungal Deep.",
-							constant = "THE_BIGGEST_CONCENTRATION_CAN_BE_FOUND_IN",
-							export = true,
-							text = {
-								en = "The biggest concentration can be found in Desolace, the orange section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, beneath Silvermarsh, as well as inside Fungal Deep.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "最集中的地方在凄凉之地，即野外玛拉顿的橙色区域。也可以在深岩之洲石母王座一带、银沼之下以及真菌之渊内找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "The biggest concentration can be found in Desolace, the orange section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, beneath Silvermarsh, as well as inside Fungal Deep.",
 						["coords"] = {
 							{ 26.8, 43.5, DESOLACE },	-- Maraudon entrance
 							{ 69.4, 68.2, DEEPHOLM },	-- Cavern beneath Silvermarsh
@@ -217,24 +200,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
 					["coord"] = { 57.2, 45.8, DESOLACE },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-						constant = "THIS_PET_TAMER_IS_HORDE_ONLY_MERDA_S_PETS_ARE",
-						export = true,
-						text = {
-							en = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限部落。\n\nMerda 的宠物为 9 级，三个宠物的类别依次为：\n1. 水栖 - 使用飞行（强力）或魔法（耐打）宠物。\n2. 元素 - 使用水栖（强力）或小动物（耐打）宠物。\n3. 小动物 - 使用野兽（强力）或人型（耐打）宠物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["petBattleLvl"] = 9,
@@ -430,24 +396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14334, {	-- Blubbergut
-					["description"] = createLocalizationString({
-						readable = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
-						constant = "BLUBBERGUT_WILL_ONLY_SPAWN_IF_YOU_WALK_TO_THE",
-						export = true,
-						text = {
-							en = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "只有当你走到码头尽头触发刷新事件时，肥肚才会刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
 					["sourceQuest"] = 14337,	-- Shadowprey Village
 					["qg"] = 12031,	-- Mai'Lahii
 					["coord"] = { 22.6, 71.9, DESOLACE },
@@ -562,7 +511,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1385, {	-- Brutal Politics
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.ONCE_YOU_COMPLETE_KHAN_HRATHA_FOR_THE_GELKIS",
+					["description"] = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 11.0, DESOLACE },
@@ -814,24 +763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14394, {	-- Death to Agogridon
-					["description"] = createLocalizationString({
-						readable = "If you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
-						constant = "IF_YOU_COMPLETED_THIS_QUEST_PRIOR_TO_8_0_1_GO",
-						export = true,
-						text = {
-							en = "If you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你在 8.0.1 之前完成了这个任务，请前往卡努姆的林间空地，与卡努姆·织沼（57.4, 47.6）交谈，他会给你声望。\n\n - Crieve",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
 					["sourceQuest"] = 14393,	-- Into the Fray!
 					["qg"] = 36398,	-- Khan Leh'Prah
 					["coord"] = { 72.3, 67.4, DESOLACE },
@@ -1237,24 +1169,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Brendol's Satchel
 							["provider"] = { "i", 49221 },	-- Brendol's Satchel
-							["description"] = createLocalizationString({
-								readable = "Brendol is stealthed. Be vigilant!",
-								constant = "BRENDOL_IS_STEALTHED_BE_VIGILANT",
-								export = true,
-								text = {
-									en = "Brendol is stealthed. Be vigilant!",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "布伦多尔处于潜行状态。请保持警惕！",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Brendol is stealthed. Be vigilant!",
 							["cr"] = 36353,	-- Brendol
 						}),
 					},
@@ -1508,24 +1423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14282, {	-- Mystery Solved
-					["description"] = createLocalizationString({
-						readable = "If you abandon this quest, you can pick it up again from Cenarion Researcher Korrah at Ethel Rethor.",
-						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP",
-						export = true,
-						text = {
-							en = "If you abandon this quest, you can pick it up again from Cenarion Researcher Korrah at Ethel Rethor.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃这个任务，你可以在埃塞尔·雷瑟的塞纳里奥研究员科拉处重新接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you abandon this quest, you can pick it up again from Cenarion Researcher Korrah at Ethel Rethor.",
 					["sourceQuest"] = 14268,	-- Deep Impact
 					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["coord"] = { 38.8, 27.0, DESOLACE },
@@ -1765,24 +1663,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14364, {	-- Putting Their Heads Together (A)
-					["description"] = createLocalizationString({
-						readable = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
-						constant = "IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_2",
-						export = true,
-						text = {
-							en = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃此任务，可以再次从尼耶尔前哨站的潘提加斯特队长处接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
 					["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 10.9, DESOLACE },
@@ -2193,7 +2074,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1382, {	-- Strange Alliance
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.ONCE_YOU_COMPLETE_KHAN_HRATHA_FOR_THE_MAGRAM",
+					["description"] = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 11.0, DESOLACE },
@@ -2645,7 +2526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14363, {	-- You'll Know It When You See It (A)
-					["description"] = "~L.IF_YOU_ABANDON_THIS_QUEST_YOU_CAN_PICK_IT_UP_2",
+					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
 					["sourceQuest"] = 14361,	-- Peace of Mind
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 10.9, DESOLACE },
@@ -2825,7 +2706,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER CATA
 					["sourceQuest"] = 14334,	-- Blubbergut
 					-- #endif
-					["description"] = "~L.YOU_CAN_INTERACT_WITH_SHELLFISH_TRAPS_ONLY",
+					["description"] = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
 					["coords"] = {
 						{ 20.3, 71.3, DESOLACE },
 						{ 23.4, 77.1, DESOLACE },

@@ -7,24 +7,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		["timeline"] = { REMOVED_4_0_3 },
 	}, {
 		q(5283, {	-- The Art of the Armorsmith [A]
-			["description"] = createLocalizationString({
-				readable = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
-				constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_3",
-				export = true,
-				text = {
-					en = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "完成此任务后，你将成为一名护甲锻造师，并且无法再成为武器锻造师。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 			["altQuests"] = {
 				5301,	-- The Art of the Armorsmith [H]
 				-- #if SEASON_OF_DISCOVERY
@@ -45,7 +28,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(5301, {	-- The Art of the Armorsmith [H]
-			["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_3",
+			["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 			["altQuests"] = {
 				5283,	-- The Art of the Armorsmith [A]
 				-- #if SEASON_OF_DISCOVERY
@@ -66,24 +49,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["races"] = HORDE_ONLY,
 		}),
 		q(5284, {	-- The Way of the Weaponsmith [A]
-			["description"] = createLocalizationString({
-				readable = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
-				constant = "UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_4",
-				export = true,
-				text = {
-					en = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "完成此任务后，你将成为一名武器锻造师，并且无法再成为护甲锻造师。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 			["altQuests"] = {
 				5283,	-- The Art of the Armorsmith [A]
 				5301,	-- The Art of the Armorsmith [H]
@@ -100,7 +66,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(5302, {	-- The Way of the Weaponsmith [H]
-			["description"] = "~L.UPON_FINISHING_THIS_QUEST_YOU_WILL_BECOME_A_4",
+			["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 			["altQuests"] = {
 				5283,	-- The Art of the Armorsmith [A]
 				5301,	-- The Art of the Armorsmith [H]

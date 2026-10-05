@@ -6,24 +6,7 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		n(RARES, {
 			o(239828, {	-- Edge of Reality
-				["description"] = createLocalizationString({
-					readable = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
-					constant = "WHEN_YOU_CLICK_ON_THE_EDGE_OF_REALITY_IT_WILL",
-					export = true,
-					text = {
-						en = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当你点击现实边缘时，它会将你传送。点击那颗蛋即可获得坐骑。\n\n如果你点击传送门时不在自己的服务器上，你将不会被传送，坐骑会通过邮件发送给你。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
 				["coords"] = {
 					{ 51.1, 19.9, FROSTFIRE_RIDGE },
 					{ 52.4, 18.9, FROSTFIRE_RIDGE },

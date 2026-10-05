@@ -74,44 +74,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 					i(163616, {	-- Dented Coin (A)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_CYRUS_CRESTFALL_IN_BORALUS",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在伯拉勒斯向赛勒斯·克雷斯特法尔上交，以获得普罗德摩尔海军部声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
 					}),
 					i(163614, {	-- Exotic Spices (A)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_XUN_XUN_SWEETFLOWER_IN",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在德鲁斯瓦向馨馨·甜花上交，以获得灰烬骑士团声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
 					}),
 					i(166461, {	-- Gnarlwood Waveboard (TOY!)
 						["cost"] = { { "c", 1710, 300 } },	-- 300x Seaferer's Dubloon
@@ -149,24 +115,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 						["cost"] = { { "c", 1710, 35 } },	-- 35x Seaferer's Dubloon
 					}),
 					i(163615, {	-- Lost Sea Scroll (A)
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_BROTHER_PIKE_IN_STORMSONG",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在斯托颂谷地向派克修士上交，以获得风暴之末声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 					}),
 					i(166749, {	-- Lyrics: Song of the Sea (CI!)
 						["cost"] = { { "c", 1710, 25 } },	-- 25x Seaferer's Dubloon
@@ -181,24 +130,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 						["cost"] = { { "c", 1710, 1000 } },	-- 1,000x Seaferer's Dubloon
 					}),
 					i(166501, {	-- Soggy Page
-						["description"] = createLocalizationString({
-							readable = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
-							constant = "CFFFF0000TURN_IN_TO_COLLECTOR_KOJO_IN_STORMSONG",
-							export = true,
-							text = {
-								en = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "|CFFFF0000在斯托颂谷地（联盟）或祖达萨（部落）向收藏家科乔上交，以获得始祖龟求知者声望。|r",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
 						["cost"] = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 				},
@@ -301,24 +233,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 				["groups"] = {
 					i(159959),	-- Nylon Thread
 					i(168029, {	-- Pattern: Synchronous Thread
-						["description"] = createLocalizationString({
-							readable = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
-							constant = "THIS_RECIPE_IS_FOR_RELEARNING_THE_SYNCHRONOUS",
-							export = true,
-							text = {
-								en = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "该配方用于在你完成“行业工具”任务线后重新学习同步丝线。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
 						["sourceQuests"] = {
 							53881,	-- Cut from the Same Cloth (Alliance)
 							53962,	-- Cut from the Same Cloth (Horde)
@@ -328,24 +243,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 				},
 			}),
 			n(148024, {	-- Dodger <Pet Smuggler>
-				["description"] = createLocalizationString({
-					readable = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns. Complete the mission, and you'll be able to purchase items from the vendor. It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
-					constant = "TO_UNLOCK_THIS_VENDOR_WIN_PVP_PET_BATTLES_UNTIL",
-					export = true,
-					text = {
-						en = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns. Complete the mission, and you'll be able to purchase items from the vendor. It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "要解锁这个商人，需要赢得 PvP 宠物对战，直到“可疑的消息”任务出现。完成任务后，你就可以从该商人处购买物品。它可能需要 1 场、10 场、100 场甚至 1000 场 PvP 宠物对战才会出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns. Complete the mission, and you'll be able to purchase items from the vendor. It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
 				["coord"] = { 68.9, 17.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -486,90 +384,39 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 					})),
 					moh(10, i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
-						["description"] = createLocalizationString({
-							readable = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-							constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_2",
-							export = true,
-							text = {
-								en = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要完成成就|cffffff00战场斗殴者|r。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 					})),
 					moh(10, i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
-						["description"] = createLocalizationString({
-							readable = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-							constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_3",
-							export = true,
-							text = {
-								en = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要完成成就|cffffff00战场战术家|r。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 					})),
 					moh(25, i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
-						["description"] = createLocalizationString({
-							readable = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-							constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_4",
-							export = true,
-							text = {
-								en = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要完成成就|cffffff00战场大师|r。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["u"] = REMOVED_FROM_GAME,
 					})),
 					moh(5, i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 					})),
 					moh(25, i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_2",
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 					})),
 					moh(25, i(168444, {	-- Churning Blood of the Conquered [Rank 3]
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_3",
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 					})),
 					moh(25, i(168814, {	-- Animated Blood of the Decimated (Rank 4)
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_4",
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["u"] = REMOVED_FROM_GAME,
 					})),
 					moh(5, i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 					})),
 					moh(10, i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_2",
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 					})),
 					moh(25, i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_3",
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 					})),
 					moh(25, i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_4",
+						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["classes"] = TANKS,
 						["u"] = REMOVED_FROM_GAME,
 					})),
@@ -825,35 +672,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 				["coord"] = { 71.7, 13.7, BORALUS },
 				["groups"] = {
 					i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
-						["description"] = createLocalizationString({
-							readable = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
-							constant = "REQUIRES_COMPLETING_THE_ACHIEVEMENT_5",
-							export = true,
-							text = {
-								en = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "需要完成成就|cffffff00争霸艾泽拉斯钥石大师|r。\n",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 } },	-- 800x Titan Residuum
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_5",
+						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 } },	-- 800x Titan Residuum
 						["classes"] = TANKS,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
-						["description"] = "~L.REQUIRES_COMPLETING_THE_ACHIEVEMENT_5",
+						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 } },	-- 800x Titan Residuum
 						["classes"] = HEALERS,
 						["u"] = REMOVED_FROM_GAME,

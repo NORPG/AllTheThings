@@ -186,24 +186,7 @@ root(ROOTS.Promotions, {
 				},
 			}),
 			i(163186, {	-- Fiery Hearthsteed (MOUNT!)
-				["description"] = createLocalizationString({
-					readable = "Granted to Players who logged in to Hearthstone between March 11th 2024 and May 14th 2024.",
-					constant = "GRANTED_TO_PLAYERS_WHO_LOGGED_IN_TO_HEARTHSTONE",
-					export = true,
-					text = {
-						en = "Granted to Players who logged in to Hearthstone between March 11th 2024 and May 14th 2024.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在 2024 年 3 月 11 日至 2024 年 5 月 14 日期间登录过《炉石传说》的玩家可获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Granted to Players who logged in to Hearthstone between March 11th 2024 and May 14th 2024.",
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			n(VENDORS, {

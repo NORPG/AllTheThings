@@ -9,24 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			currency(2009),	-- Cosmic Flux
 			i(190189),	-- Sandworn Relic
 			i(190336, {	-- Thrumming Powerstone
-				["description"] = createLocalizationString({
-					readable = "Disenchant might give lattices.",
-					constant = "DISENCHANT_MIGHT_GIVE_LATTICES",
-					export = true,
-					text = {
-						en = "Disenchant might give lattices.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "分解可能产出晶格。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Disenchant might give lattices.",
 				["requireSkill"] = ENCHANTING,
 				["groups"] = {
 					i(189153),	-- Unformed Lattice	-- no comments on Wowhead about any other Type dropped specifically?

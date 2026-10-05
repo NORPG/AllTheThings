@@ -96,47 +96,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				filter(MISC, {
 					currency(3250, {	-- Faceted Crystaline Fel
-						["description"] = createLocalizationString({
-							readable = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
-							constant = "CAN_BE_FOUND_SCATTERED_THROUGHOUT_THE_MURDER",
-							export = true,
-							text = {
-								en = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "可散布在谋杀小径地下城中找到。\n用于从高亮显示的商人处购买增益。\n每名玩家每次通关只能获得 1 个。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
 					}),
 				}),
 				n(VENDORS, {
 					n(236861, {	-- Cravitz Lorent <Shady Art Dealer>
 						i(246857, {	-- "Shu'halo Perspective" Painting (DECOR!)
-							["description"] = createLocalizationString({
-								readable = "|cFFE50D12WARNING! DO NOT BUY RIGHT AWAY!|r\nGet 13 different Sargle's Fortunes to drastically cut down the price.",
-								constant = "CFFE50D12WARNING_DO_NOT_BUY_RIGHT_AWAY_R_GET_13",
-								export = true,
-								text = {
-									en = "|cFFE50D12WARNING! DO NOT BUY RIGHT AWAY!|r\nGet 13 different Sargle's Fortunes to drastically cut down the price.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "|cFFE50D12警告！不要立刻购买！|r\n集齐 13 个不同的萨格尔运势，即可大幅降低价格。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "|cFFE50D12WARNING! DO NOT BUY RIGHT AWAY!|r\nGet 13 different Sargle's Fortunes to drastically cut down the price.",
 							["cost"] = 9999999,	-- 999g 99s 99c
 						}),
 						i(237764, {	-- Exquisite Painting

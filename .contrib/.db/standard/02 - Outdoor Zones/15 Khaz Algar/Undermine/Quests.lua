@@ -725,24 +725,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["coord"] = { 43.5, 51.1, UNDERMINE },
 					}),
 					o(508377, {	-- Renzik's Lockbox
-						["description"] = createLocalizationString({
-							readable = "You do not need to have done the Undermine campaign on that character to see this chest.",
-							constant = "YOU_DO_NOT_NEED_TO_HAVE_DONE_THE_UNDERMINE",
-							export = true,
-							text = {
-								en = "You do not need to have done the Undermine campaign on that character to see this chest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你不需要在该角色上完成安德麦战役就能看到这个宝箱。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You do not need to have done the Undermine campaign on that character to see this chest.",
 						["sourceQuest"] = 85190,	-- Settled Dust
 						["coord"] = { 30.7, 86.1, WESTFALL },
 						["questID"] = 86904,

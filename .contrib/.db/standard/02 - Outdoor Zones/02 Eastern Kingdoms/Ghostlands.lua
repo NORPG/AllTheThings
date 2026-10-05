@@ -74,24 +74,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				["groups"] = {
 					pet(461),	-- Larva (PET!)
 					pet(463, {	-- Spirit Crab (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found along the western coastline and on the little island.",
-							constant = "FOUND_ALONG_THE_WESTERN_COASTLINE_AND_ON_THE",
-							export = true,
-							text = {
-								en = "Found along the western coastline and on the little island.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在西部海岸线上以及那座小岛上可找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found along the western coastline and on the little island.",
 					}),
 				},
 			}),
@@ -724,24 +707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								{ "i", 23717 },	-- Pitted Gold Band
 								{ "o", 181665 }	-- Burial Chest
 							},
-							["description"] = createLocalizationString({
-								readable = "Use your lockpicking skill to open the Burial Chests.",
-								constant = "USE_YOUR_LOCKPICKING_SKILL_TO_OPEN_THE_BURIAL",
-								export = true,
-								text = {
-									en = "Use your lockpicking skill to open the Burial Chests.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "使用你的开锁技能打开埋葬宝箱。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use your lockpicking skill to open the Burial Chests.",
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -1545,24 +1511,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, {
 				i(27669, {	-- Bat Flesh
-					["description"] = createLocalizationString({
-						readable = "Only drops from given bats in Ghostlands.",
-						constant = "ONLY_DROPS_FROM_GIVEN_BATS_IN_GHOSTLANDS",
-						export = true,
-						text = {
-							en = "Only drops from given bats in Ghostlands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅从幽魂之地的特定蝙蝠身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only drops from given bats in Ghostlands.",
 					["coords"] = {
 						{ 68.1, 42.5, GHOSTLANDS },	-- Farstrider Enclave, south of.
 						{ 33.8, 64.6, GHOSTLANDS },	-- Deatholme Gate, east of

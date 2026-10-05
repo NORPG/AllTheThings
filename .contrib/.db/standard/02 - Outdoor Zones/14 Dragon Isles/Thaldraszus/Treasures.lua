@@ -9,24 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 60.1, 85.0, THALDRASZUS },
 			}),
 			n(196172, {	-- Acorn Harvester
-				["description"] = createLocalizationString({
-					readable = "Bring nearby Acorn to Tree.",
-					constant = "BRING_NEARBY_ACORN_TO_TREE",
-					export = true,
-					text = {
-						en = "Bring nearby Acorn to Tree.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "把附近的橡子带给大树。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Bring nearby Acorn to Tree.",
 				["coord"] = { 49.4, 63.1, THALDRASZUS },
 				["questID"] = 70611,
 				["groups"] = {
@@ -46,24 +29,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 62.4, 15.9, THALDRASZUS },
 			}),
 			o(381223, {	-- Cracked Hourglass
-				["description"] = createLocalizationString({
-					readable = "In a Cave.",
-					constant = "IN_A_CAVE",
-					export = true,
-					text = {
-						en = "In a Cave.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在洞穴中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "In a Cave.",
 				["coord"] = { 33.9, 76.9, THALDRASZUS },
 				["questID"] = 70607,
 				["cost"] = { { "i", 199068, 1 } },	-- 1x Time-Lost Memo
@@ -77,24 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(380429, {	-- Golden Claw
 				["coord"] = { 38.8, 45.01, THALDRASZUS },
-				["description"] = createLocalizationString({
-					readable = "Underneath the dragon statue.",
-					constant = "UNDERNEATH_THE_DRAGON_STATUE",
-					export = true,
-					text = {
-						en = "Underneath the dragon statue.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在龙雕像下方。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Underneath the dragon statue.",
 				["groups"] = {
 					i(198540),	-- Golden Claw
 				},
@@ -110,24 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381361, {	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },
-				["description"] = createLocalizationString({
-					readable = "Underneath the right foot of the titan statue.",
-					constant = "UNDERNEATH_THE_RIGHT_FOOT_OF_THE_TITAN_STATUE",
-					export = true,
-					text = {
-						en = "Underneath the right foot of the titan statue.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在泰坦雕像右脚的下方。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Underneath the right foot of the titan statue.",
 				["groups"] = {
 					i(199893),	-- Precious Stone Fragment
 				},

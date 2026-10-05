@@ -41,23 +41,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- Repeatable
 			o(452710, {	-- Brimming Deep-Lost Satchel
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(452706, {	-- Deep-Lost Satchel
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(452696, {	-- Machine Speaker's Reliquary
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(452697, {	-- Etched Machine Speaker's Reliquary
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(446495, {	-- Pile of Refuse
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			--
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82049,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82051,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -115,24 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(433733, {	-- Forgotten Treasure
-				["description"] = createLocalizationString({
-					readable = "Key to this chest can be found in nearest Buried Treasure.",
-					constant = "KEY_TO_THIS_CHEST_CAN_BE_FOUND_IN_NEAREST",
-					export = true,
-					text = {
-						en = "Key to this chest can be found in nearest Buried Treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "开启此宝箱的钥匙可以在最近的埋藏宝藏中找到。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Key to this chest can be found in nearest Buried Treasure.",
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
 				["cost"] = { { "i", 217960, 1 } },	-- Forgotten Key
@@ -141,120 +124,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(444261, {	-- Purchase Bluesberry Blast 5 Silver
-				["description"] = createLocalizationString({
-					readable = "Purchase First, then Orange!.",
-					constant = "PURCHASE_FIRST_THEN_ORANGE",
-					export = true,
-					text = {
-						en = "Purchase First, then Orange!.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "先购买第一个，然后是橙色！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Purchase First, then Orange!.",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
 				["groups"] = {
 					i(223741),	-- Bluesberry Blast
 				},
 			}),
 			o(444275, {	-- Purchase Mangoro Madness 5 Silver
-				["description"] = createLocalizationString({
-					readable = "Purchase Fourth.",
-					constant = "PURCHASE_FOURTH",
-					export = true,
-					text = {
-						en = "Purchase Fourth.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "购买第四个。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Purchase Fourth.",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
 				["groups"] = {
 					i(223742),	-- Mangoro Madness
 				},
 			}),
 			o(444276, {	-- Purchase Orange O Pocalypse 5 Silver
-				["description"] = createLocalizationString({
-					readable = "Purchase Second, next is Oyster.",
-					constant = "PURCHASE_SECOND_NEXT_IS_OYSTER",
-					export = true,
-					text = {
-						en = "Purchase Second, next is Oyster.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "购买第二个，下一个是牡蛎。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Purchase Second, next is Oyster.",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
 				["groups"] = {
 					i(223743),	-- Orange O-pocalypse
 				},
 			}),
 			o(444277, {	-- Purchase Oyster Outbreak 5 Silver
-				["description"] = createLocalizationString({
-					readable = "Purchase Third, now lets get some Mangoro Madness.",
-					constant = "PURCHASE_THIRD_NOW_LETS_GET_SOME_MANGORO",
-					export = true,
-					text = {
-						en = "Purchase Third, now lets get some Mangoro Madness.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "购买第三个，现在让我们来点曼戈罗疯狂。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Purchase Third, now lets get some Mangoro Madness.",
 				["groups"] = {
 					i(223744),	-- Oyster Outbreak
 				},
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
 			}),
 			o(444256, {	-- Kaja'Cola Machine
-				["description"] = createLocalizationString({
-					readable = "Bluesberry Blast > Orange O-pocalypse > Oyster Outburst > Mangoro Mania",
-					constant = "BLUESBERRY_BLAST_ORANGE_O_POCALYPSE_OYSTER",
-					export = true,
-					text = {
-						en = "Bluesberry Blast > Orange O-pocalypse > Oyster Outburst > Mangoro Mania",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "蓝莓爆弹 > 橙味大灾难 > 牡蛎爆发 > 芒果狂热",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Bluesberry Blast > Orange O-pocalypse > Oyster Outburst > Mangoro Mania",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
 				["questID"] = 82819,
 				["cost"] = {
@@ -272,7 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82054,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -315,24 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82235,
 			}),
 			o(445403, {	-- Scary Dark Chest
-				["description"] = createLocalizationString({
-					readable = "Lit up all candles.",
-					constant = "LIT_UP_ALL_CANDLES",
-					export = true,
-					text = {
-						en = "Lit up all candles.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "点亮所有蜡烛。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Lit up all candles.",
 				["coord"] = { 58.9, 30.3, THE_RINGING_DEEPS },
 				["questID"] = 82818,
 				["groups"] = {
@@ -344,7 +225,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82052,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -358,7 +239,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82053,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },

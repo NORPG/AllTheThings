@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(164, {	-- Goblin Workshop (rank 1: 162, rank 2: 163, rank 3: 164)
 					n(ACHIEVEMENTS, {
 						ach(9527, {		-- Terrific Technology
-							["description"] = "~L.UNLOCKS_THE_ABILITY_TO_PURCHASE_THE_BLUEPRINT",
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["groups"] = {
 								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
@@ -27,46 +27,12 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(QUESTS, {
 						q(37420, {	-- Fully Armed and Operational
-							["description"] = createLocalizationString({
-								readable = "Requires Gnomish Gearworks Rank 3.",
-								constant = "REQUIRES_GNOMISH_GEARWORKS_RANK_3",
-								export = true,
-								text = {
-									en = "Requires Gnomish Gearworks Rank 3.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "需要 3 级侏儒车间。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Requires Gnomish Gearworks Rank 3.",
 							["qg"] = 84286,	-- Zee
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37418, {	-- Fully Armed and Operational
-							["description"] = createLocalizationString({
-								readable = "Requires Goblin Workshop Rank 3.",
-								constant = "REQUIRES_GOBLIN_WORKSHOP_RANK_3",
-								export = true,
-								text = {
-									en = "Requires Goblin Workshop Rank 3.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "需要 3 级地精车间。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Requires Goblin Workshop Rank 3.",
 							["qg"] = 85369,	-- Vee
 							["races"] = HORDE_ONLY,
 						}),

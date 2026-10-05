@@ -114,24 +114,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(231310, {	-- Darkfuse Precipitant
-				["description"] = createLocalizationString({
-					readable = "Requires someone with Renown 6 with the Cartels of Undermine and in possession of a 'Canister of Darkfuse Solution' to interact with the De-Pollution Station X1119 to start an event to spawn it.",
-					constant = "REQUIRES_SOMEONE_WITH_RENOWN_6_WITH_THE_CARTELS",
-					export = true,
-					text = {
-						en = "Requires someone with Renown 6 with the Cartels of Undermine and in possession of a 'Canister of Darkfuse Solution' to interact with the De-Pollution Station X1119 to start an event to spawn it.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要一名与安德麦财阀达到名望 6 且持有一罐暗熔溶液的玩家，与去污站 X1119 互动以启动事件来使其刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires someone with Renown 6 with the Cartels of Undermine and in possession of a 'Canister of Darkfuse Solution' to interact with the De-Pollution Station X1119 to start an event to spawn it.",
 				["crs"] = {
 					231329,	-- De-Pollution Station X1119
 					231336,	-- Vignette Bunny [DNT]
@@ -171,24 +154,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(234499, {	-- Giovante
-				["description"] = createLocalizationString({
-					readable = "Can be summoned by anyone who has a contract with the Steamwheedle Cartel.",
-					constant = "CAN_BE_SUMMONED_BY_ANYONE_WHO_HAS_A_CONTRACT",
-					export = true,
-					text = {
-						en = "Can be summoned by anyone who has a contract with the Steamwheedle Cartel.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "任何与热砂财阀签有契约的人都可以召唤。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be summoned by anyone who has a contract with the Steamwheedle Cartel.",
 				["coord"] = { 32.0, 76.5, UNDERMINE },
 				["crs"] = { 234751 },	-- Noggenfogger Recall Technician
 				["questID"] = 90489,
@@ -212,24 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(234480, {	-- M.A.G.N.O. (Aurumensis)
-				["description"] = createLocalizationString({
-					readable = "Can be summoned by anyone who has a contract with the Bilgewater Cartel.",
-					constant = "CAN_BE_SUMMONED_BY_ANYONE_WHO_HAS_A_CONTRACT_2",
-					export = true,
-					text = {
-						en = "Can be summoned by anyone who has a contract with the Bilgewater Cartel.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "任何与锈水财阀签有契约的人都可以召唤。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be summoned by anyone who has a contract with the Bilgewater Cartel.",
 				["coord"] = { 36.7, 26.3, UNDERMINE },
 				["crs"] = {
 					234819,	-- Magno-Scrapper 9000
@@ -291,24 +240,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(233471, {	-- Scrapchewer
-				["description"] = createLocalizationString({
-					readable = "Can be summoned by anyone who has a contract with the Venture Co.",
-					constant = "CAN_BE_SUMMONED_BY_ANYONE_WHO_HAS_A_CONTRACT_3",
-					export = true,
-					text = {
-						en = "Can be summoned by anyone who has a contract with the Venture Co.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "任何与风险投资公司签有契约的人都可以召唤。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be summoned by anyone who has a contract with the Venture Co.",
 				["coord"] = { 56.8, 79.0, UNDERMINE },
 				["crs"] = {
 					234911,	-- Vignette Bunny [DNT]
@@ -403,24 +335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(233472, {	-- Voltstrike the Charged
-				["description"] = createLocalizationString({
-					readable = "Can be summoned by anyome who has a contract with the Blackwater Cartel.",
-					constant = "CAN_BE_SUMMONED_BY_ANYOME_WHO_HAS_A_CONTRACT",
-					export = true,
-					text = {
-						en = "Can be summoned by anyome who has a contract with the Blackwater Cartel.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "任何与黑水财阀签有契约的人都可以召唤。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be summoned by anyome who has a contract with the Blackwater Cartel.",
 				["crs"] = { 234889 },	-- Vignette Bunny
 				["coord"] = { 62.7, 26.1, UNDERMINE },
 				["questID"] = 90490,

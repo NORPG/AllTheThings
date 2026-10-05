@@ -24,72 +24,21 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				battlepets({
-					["description"] = createLocalizationString({
-						readable = "Protip: Begin with the Wild Hatchlings found under the header for 'Order of the Cloud Serpent' as they only appears as primary pets. Battling them requires being Exalted with said faction.",
-						constant = "PROTIP_BEGIN_WITH_THE_WILD_HATCHLINGS_FOUND",
-						export = true,
-						text = {
-							en = "Protip: Begin with the Wild Hatchlings found under the header for 'Order of the Cloud Serpent' as they only appears as primary pets. Battling them requires being Exalted with said faction.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "小提示：先从“云端翔龙骑士团”标题下的野生幼龙开始，因为它们只作为主宠物出现。与它们对战需要在该阵营达到崇拜。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Protip: Begin with the Wild Hatchlings found under the header for 'Order of the Cloud Serpent' as they only appears as primary pets. Battling them requires being Exalted with said faction.",
 					["groups"] = {
 						pet(380, {	-- Bucktooth Flapper (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found on the riverside.",
-								constant = "CAN_BE_FOUND_ON_THE_RIVERSIDE",
-								export = true,
-								text = {
-									en = "Can be found on the riverside.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可以在河边找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found on the riverside.",
 							["coords"] = {
 								{ 34.4, 47.6, THE_JADE_FOREST },
 								{ 56.8, 84.6, THE_JADE_FOREST },
 							},
 						}),
 						pet(562, {	-- Coral Adder (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can only be found as primary pets at the given location. Otherwise found as secondary pet on Timeless Isle.",
-								constant = "CAN_ONLY_BE_FOUND_AS_PRIMARY_PETS_AT_THE_GIVEN",
-								export = true,
-								text = {
-									en = "Can only be found as primary pets at the given location. Otherwise found as secondary pet on Timeless Isle.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只能在指定位置作为主宠物找到。否则会在永恒岛作为次要宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only be found as primary pets at the given location. Otherwise found as secondary pet on Timeless Isle.",
 							["coord"] = { 66.2, 86.4, THE_JADE_FOREST },	-- Moonwater Retreat
 						}),
 						pet(564, {	-- Emerald Turtle (PET!)
-							["description"] = "~L.CAN_BE_FOUND_ON_THE_RIVERSIDE",
+							["description"] = "Can be found on the riverside.",
 							["coord"] = { 45.7, 64.8, THE_JADE_FOREST },
 						}),
 						pet(569, {	-- Garden Frog (PET!)
@@ -99,47 +48,13 @@ root(ROOTS.Zones, {
 							["coord"] = { 53.6, 45.2, THE_JADE_FOREST },
 						}),
 						pet(571, {	-- Grove Viper (PET!)
-							["description"] = createLocalizationString({
-								readable = "Commonly found throughout the zone.",
-								constant = "COMMONLY_FOUND_THROUGHOUT_THE_ZONE",
-								export = true,
-								text = {
-									en = "Commonly found throughout the zone.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在该区域中随处可见。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Commonly found throughout the zone.",
 						}),
 						pet(699, {	-- Jumping Spider (PET!)
-							["description"] = "~L.COMMONLY_FOUND_THROUGHOUT_THE_ZONE",
+							["description"] = "Commonly found throughout the zone.",
 						}),
 						pet(565, {	-- Jungle Darter (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found on multiple locations in southern half of Jade Forest, but only a few spawns at each. Use a macro to find them. Otherwise found as secondary pet.",
-								constant = "CAN_BE_FOUND_ON_MULTIPLE_LOCATIONS_IN_SOUTHERN",
-								export = true,
-								text = {
-									en = "Can be found on multiple locations in southern half of Jade Forest, but only a few spawns at each. Use a macro to find them. Otherwise found as secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在翡翠林南半部的多个位置找到，但每处只有少量刷新。使用宏来寻找它们。否则会作为次要宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found on multiple locations in southern half of Jade Forest, but only a few spawns at each. Use a macro to find them. Otherwise found as secondary pet.",
 							["coords"] = {
 								{ 44.8, 93.9, THE_JADE_FOREST },	-- Garrosh'ar Point
 								{ 50.9, 84.3, THE_JADE_FOREST },	-- Paw'don Village, east of
@@ -151,33 +66,16 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(702, {	-- Leopard Tree Frog (PET!)
-							["description"] = "~L.COMMONLY_FOUND_THROUGHOUT_THE_ZONE",
+							["description"] = "Commonly found throughout the zone.",
 						}),
 						pet(570, {	-- Masked Tanuki (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found throughout the zone, but they are few and far between. Otherwise found as secondary pet.",
-								constant = "CAN_BE_FOUND_THROUGHOUT_THE_ZONE_BUT_THEY_ARE",
-								export = true,
-								text = {
-									en = "Can be found throughout the zone, but they are few and far between. Otherwise found as secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在该区域各处找到，但十分稀少。此外也可作为次级宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found throughout the zone, but they are few and far between. Otherwise found as secondary pet.",
 						}),
 						pet(703, {	-- Masked Tanuki Pup (PET!)
-							["description"] = "~L.CAN_BE_FOUND_THROUGHOUT_THE_ZONE_BUT_THEY_ARE",
+							["description"] = "Can be found throughout the zone, but they are few and far between. Otherwise found as secondary pet.",
 						}),
 						pet(566, {	-- Mirror Strider (PET!)
-							["description"] = "~L.CAN_BE_FOUND_ON_THE_RIVERSIDE",
+							["description"] = "Can be found on the riverside.",
 							["coords"] = {
 								{ 32.6, 45.4, THE_JADE_FOREST },
 								{ 40.6, 53.4, THE_JADE_FOREST },
@@ -185,90 +83,22 @@ root(ROOTS.Zones, {
 							},
 						}),
 						pet(573, {	-- Sandy Petrel (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can only be found as primary pet at the given location. Otherwise found as secondary pet.",
-								constant = "CAN_ONLY_BE_FOUND_AS_PRIMARY_PET_AT_THE_GIVEN",
-								export = true,
-								text = {
-									en = "Can only be found as primary pet at the given location. Otherwise found as secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只能在指定位置作为主宠物找到。否则会作为次要宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only be found as primary pet at the given location. Otherwise found as secondary pet.",
 							["coord"] = { 66.8, 28.0, THE_JADE_FOREST },	-- Windward Isle
 						}),
 						pet(754, {	-- Shrine Fly (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can only be found as primary pet at the given locations. Otherwise found as secondary pet.",
-								constant = "CAN_ONLY_BE_FOUND_AS_PRIMARY_PET_AT_THE_GIVEN_2",
-								export = true,
-								text = {
-									en = "Can only be found as primary pet at the given locations. Otherwise found as secondary pet.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只能在指定的多个位置作为主宠物找到。否则会作为次要宠物出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can only be found as primary pet at the given locations. Otherwise found as secondary pet.",
 							["coords"] = {
 								{ 33.4, 50.6, THE_JADE_FOREST },
 								{ 36.6, 58.6, THE_JADE_FOREST },
 							},
 						}),
 						pet(711, {	-- Sifang Otter (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found around the body of water between Paw'don Village and Krasarang Wilds.",
-								constant = "CAN_BE_FOUND_AROUND_THE_BODY_OF_WATER_BETWEEN",
-								export = true,
-								text = {
-									en = "Can be found around the body of water between Paw'don Village and Krasarang Wilds.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在坡东村与喀撒朗蛮荒之间的水域周围找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found around the body of water between Paw'don Village and Krasarang Wilds.",
 							["coord"] = { 38.8, 90.0, THE_JADE_FOREST },
 						}),
 						pet(712, {	-- Sifang Otter Pup (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found around the body of water between Paw'don Village and Krasarang Wilds. Respawns after some minutes as long as their Silfang Otter parent is still alive. Only a few spawns as primary pets, but common as secondary pets.",
-								constant = "CAN_BE_FOUND_AROUND_THE_BODY_OF_WATER_BETWEEN_2",
-								export = true,
-								text = {
-									en = "Can be found around the body of water between Paw'don Village and Krasarang Wilds. Respawns after some minutes as long as their Silfang Otter parent is still alive. Only a few spawns as primary pets, but common as secondary pets.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在坡东村与喀撒朗蛮荒之间的水域周围找到。只要它们的母体银牙水獭还活着，几分钟后就会重新刷新。作为主宠物只有少量刷新，但作为次要宠物很常见。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found around the body of water between Paw'don Village and Krasarang Wilds. Respawns after some minutes as long as their Silfang Otter parent is still alive. Only a few spawns as primary pets, but common as secondary pets.",
 							["coord"] = { 38.8, 90.0, THE_JADE_FOREST },
 						}),
 						pet(568, {	-- Silkbead Snail (PET!)
@@ -278,24 +108,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 69.2, 30.0, THE_JADE_FOREST },	-- Windward Isle
 						}),
 						pet(567, {	-- Temple Snake (PET!)
-							["description"] = createLocalizationString({
-								readable = "Can be found around the Temple of the Jade Serpent.",
-								constant = "CAN_BE_FOUND_AROUND_THE_TEMPLE_OF_THE_JADE",
-								export = true,
-								text = {
-									en = "Can be found around the Temple of the Jade Serpent.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可在青龙寺周围找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be found around the Temple of the Jade Serpent.",
 							["coord"] = { 55.0, 56.6, THE_JADE_FOREST },	-- Temple of the Jade Serpent
 						}),
 					},
@@ -474,24 +287,7 @@ root(ROOTS.Zones, {
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						o(211424, {	-- Alchemy Scroll
-							["description"] = createLocalizationString({
-								readable = "It will only appear to alchemists who don't yet know the recipe. May require Pandaria Alchemy 50.",
-								constant = "IT_WILL_ONLY_APPEAR_TO_ALCHEMISTS_WHO_DON_T_YET",
-								export = true,
-								text = {
-									en = "It will only appear to alchemists who don't yet know the recipe. May require Pandaria Alchemy 50.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "它只会对尚未学会该配方的炼金师出现。可能需要潘达利亚炼金 50 点。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "It will only appear to alchemists who don't yet know the recipe. May require Pandaria Alchemy 50.",
 							["coord"] = { 49.7, 54.4, THE_JADE_FOREST },
 							["groups"] = {
 								recipe(114769),	-- Flask of Spring Blossoms
@@ -737,84 +533,16 @@ root(ROOTS.Zones, {
 								["coord"] = { 59.2, 83.4, THE_JADE_FOREST },
 							}),
 							n(56591, {	-- Pearlfin Aqualyte (Staff)
-								["description"] = createLocalizationString({
-									readable = "CASTER: Give this one a staff.",
-									constant = "CASTER_GIVE_THIS_ONE_A_STAFF",
-									export = true,
-									text = {
-										en = "CASTER: Give this one a staff.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "施法者：给这个配一把法杖。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "CASTER: Give this one a staff.",
 							}),
 							n(54959, {	-- Pearlfin Aqualyte (Shield)
-								["description"] = createLocalizationString({
-									readable = "TANK: Give this one a shield.",
-									constant = "TANK_GIVE_THIS_ONE_A_SHIELD",
-									export = true,
-									text = {
-										en = "TANK: Give this one a shield.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "坦克：给这个套上护盾。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "TANK: Give this one a shield.",
 							}),
 							n(56592, {	-- Pearlfin Aqualyte (Daggers)
-								["description"] = createLocalizationString({
-									readable = "DPS: Give this one a dagger.",
-									constant = "DPS_GIVE_THIS_ONE_A_DAGGER",
-									export = true,
-									text = {
-										en = "DPS: Give this one a dagger.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "输出：给这个一把匕首。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "DPS: Give this one a dagger.",
 							}),
 							n(56585, {	-- Pearlfin Aqualyte (Book)
-								["description"] = createLocalizationString({
-									readable = "HEALER: Give this one a book.",
-									constant = "HEALER_GIVE_THIS_ONE_A_BOOK",
-									export = true,
-									text = {
-										en = "HEALER: Give this one a book.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "治疗者：给这个家伙一本书。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "HEALER: Give this one a book.",
 							}),
 						},
 					}),
@@ -1089,24 +817,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29901, {	-- Anduin's Decision
-						["description"] = createLocalizationString({
-							readable = "Automatically given when prerequisites have been fulfilled.",
-							constant = "AUTOMATICALLY_GIVEN_WHEN_PREREQUISITES_HAVE",
-							export = true,
-							text = {
-								en = "Automatically given when prerequisites have been fulfilled.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "满足前提条件后自动给予。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Automatically given when prerequisites have been fulfilled.",
 						["sourceQuests"] = {
 							29900,	-- An Ancient Legend
 							29899,	-- Rest in Peace
@@ -1481,24 +1192,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29717, {	-- Down Kitty!
-						["description"] = createLocalizationString({
-							readable = "Must be on or have completed |cFFFFD700The Double Hozen Dare|r to see this quest. If you completed it without picking up this quest, you can find An Windfur running around Dawn's Blossom, rather than in the forest near the Lair of the Jade Witch.",
-							constant = "MUST_BE_ON_OR_HAVE_COMPLETED_CFFFFD700THE_2",
-							export = true,
-							text = {
-								en = "Must be on or have completed |cFFFFD700The Double Hozen Dare|r to see this quest. If you completed it without picking up this quest, you can find An Windfur running around Dawn's Blossom, rather than in the forest near the Lair of the Jade Witch.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "必须正在进行或已完成|cFFFFD700双重猢狲挑战|r才能看到此任务。如果你在完成它时没有接取此任务，可以在晨芳园找到四处奔走的安·风毛，而不是在玉巫婆巢穴附近的森林里。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Must be on or have completed |cFFFFD700The Double Hozen Dare|r to see this quest. If you completed it without picking up this quest, you can find An Windfur running around Dawn's Blossom, rather than in the forest near the Lair of the Jade Witch.",
 						["sourceQuest"] = 31230,	-- Welcome to Dawn's Blossom
 						["qg"] = 55274,	-- An Windfur
 						["coord"] = { 38.4, 46.2, THE_JADE_FOREST },	-- coordinates for the middle of the area where the quest is picked up. not adding secondary Dawn's Blossom coordinates because i don't want it to look like you pick up both quests in town initially (description should suffice, since you only pick it up in town under specific circumstances)
@@ -2506,24 +2200,7 @@ root(ROOTS.Zones, {
 					}),
 					q(29755, {	-- Pei-Back
 						-- #if AFTER WOD
-						["description"] = createLocalizationString({
-							readable = "If you greatly overlevel MoP content, you might need to use the toy Soft Foam Sword or Whole-Body Shrinka.",
-							constant = "IF_YOU_GREATLY_OVERLEVEL_MOP_CONTENT_YOU_MIGHT",
-							export = true,
-							text = {
-								en = "If you greatly overlevel MoP content, you might need to use the toy Soft Foam Sword or Whole-Body Shrinka.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你远远超过了《熊猫人之谜》内容的等级，你可能需要使用玩具软泡沫剑或全身缩小器。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "If you greatly overlevel MoP content, you might need to use the toy Soft Foam Sword or Whole-Body Shrinka.",
 						-- #endif
 						["sourceQuest"] = 29754,	-- To Bridge Earth and Sky
 						["provider"] = { "o", 214903 },	-- The Tan-Chao
@@ -2550,24 +2227,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.6, 28.3, THE_JADE_FOREST },
 						["groups"] = {
 							objective(1, {	-- 0/12 Practice Strikes completed
-								["description"] = createLocalizationString({
-									readable = "Do NOT react immediately to the visual cue. Wait for the pupils to react and then do the move. If you go too quickly, you won't get credit.",
-									constant = "DO_NOT_REACT_IMMEDIATELY_TO_THE_VISUAL_CUE_WAIT",
-									export = true,
-									text = {
-										en = "Do NOT react immediately to the visual cue. Wait for the pupils to react and then do the move. If you go too quickly, you won't get credit.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "不要一看到视觉提示就立刻反应。等瞳孔有反应后再做动作。如果动作太快，你将无法获得进度。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Do NOT react immediately to the visual cue. Wait for the pupils to react and then do the move. If you go too quickly, you won't get credit.",
 								["provider"] = { "n", 55199 },	-- Tian Instructor
 								["coord"] = { 41.4, 27.8, THE_JADE_FOREST },
 							}),
@@ -2634,24 +2294,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 10.2.7
 						["races"] = HORDE_ONLY,
 						-- #else
-						["description"] = createLocalizationString({
-							readable = "This Horde quest is now completable as Alliance, be ware it requires visiting the hostile Honeydew Village.",
-							constant = "THIS_HORDE_QUEST_IS_NOW_COMPLETABLE_AS_ALLIANCE",
-							export = true,
-							text = {
-								en = "This Horde quest is now completable as Alliance, be ware it requires visiting the hostile Honeydew Village.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "现在联盟也可以完成这个部落任务了，但请注意这需要前往敌对的蜜露村。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This Horde quest is now completable as Alliance, be ware it requires visiting the hostile Honeydew Village.",
 						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/6 Barrel of Honeybrew
@@ -3181,46 +2824,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					warchiefscommand(q(29611, {	-- The Art of War (Nobody)
-						["description"] = createLocalizationString({
-							readable = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
-							constant = "PLAYERS_WHO_HAVE_NOT_COMPLETED_VASHJ_IR_WILL",
-							export = true,
-							text = {
-								en = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "未完成瓦斯琪尔的玩家将获得这个版本的战争的艺术。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
 						["timeline"] = { ADDED_5_0_4 },
 						["races"] = HORDE_ONLY,
 					})),
 					warchiefscommand(q(29612, {	-- The Art of War (Veteran)
-						["description"] = createLocalizationString({
-							readable = "Players who have completed Vashj'ir will receive this version of The Art of War.",
-							constant = "PLAYERS_WHO_HAVE_COMPLETED_VASHJ_IR_WILL",
-							export = true,
-							text = {
-								en = "Players who have completed Vashj'ir will receive this version of The Art of War.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "已完成瓦斯琪尔的玩家将获得这个版本的战争的艺术。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 						["timeline"] = { ADDED_5_0_4 },
 						["races"] = HORDE_ONLY,
 					})),
@@ -3881,24 +3490,7 @@ root(ROOTS.Zones, {
 							i(90376),	-- Barricade-Breaker Cidgel
 							i(90382),	-- Captain Roger's Polite Knocking Stick
 							i(90331, {	-- Face Smaher Warhammer
-								["description"] = createLocalizationString({
-									readable = "Unlocks for Horde after completing this alliance quest.",
-									constant = "UNLOCKS_FOR_HORDE_AFTER_COMPLETING_THIS",
-									export = true,
-									text = {
-										en = "Unlocks for Horde after completing this alliance quest.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "完成这个联盟任务后对部落解锁。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Unlocks for Horde after completing this alliance quest.",
 							}),
 							i(90377),	-- Fogcutter Staff
 							i(90379),	-- Mystic Perpetual Motion Mace
@@ -4215,24 +3807,7 @@ root(ROOTS.Zones, {
 					}),
 					o(213364, {	-- Ancient Pandaren Mining Pick
 						["questID"] = 31399,
-						["description"] = createLocalizationString({
-							readable = "Inside Greenstone Quarry at the lower level. Entrance at (46.1, 29.1).",
-							constant = "INSIDE_GREENSTONE_QUARRY_AT_THE_LOWER_LEVEL",
-							export = true,
-							text = {
-								en = "Inside Greenstone Quarry at the lower level. Entrance at (46.1, 29.1).",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在绿石采石场的下层。入口位于（46.1, 29.1）。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Inside Greenstone Quarry at the lower level. Entrance at (46.1, 29.1).",
 						["coords"] = {
 							{ 33.52, 78.04, THE_JADE_FOREST_GREENSTONE_QUARRY_2 },
 							{ 37.95, 13.75, THE_JADE_FOREST_GREENSTONE_QUARRY_2 },
@@ -4261,24 +3836,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 24.6, 53.2, THE_JADE_FOREST },
 					}),
 					o(587264, {	-- Golden Cloud Serpent Treasure Chest
-						["description"] = createLocalizationString({
-							readable = "Found underwater in a ship, click the chest floating inside the slime.",
-							constant = "FOUND_UNDERWATER_IN_A_SHIP_CLICK_THE_CHEST",
-							export = true,
-							text = {
-								en = "Found underwater in a ship, click the chest floating inside the slime.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于水下的一艘船里，点击漂浮在黏液中的箱子。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found underwater in a ship, click the chest floating inside the slime.",
 						["sourceQuest"] = 92581,	-- Last Light
 						["questID"] = 93042,
 						["coord"] = { 57.6, 15.7, THE_JADE_FOREST },
@@ -4294,24 +3852,7 @@ root(ROOTS.Zones, {
 							{ 42.01, 17.56, THE_JADE_FOREST },
 							{ 42.97, 11.63, THE_JADE_FOREST },
 						},
-						["description"] = createLocalizationString({
-							readable = "Leaning upright against the wall.",
-							constant = "LEANING_UPRIGHT_AGAINST_THE_WALL",
-							export = true,
-							text = {
-								en = "Leaning upright against the wall.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "竖直靠在墙上。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Leaning upright against the wall.",
 						["groups"] = {
 							i(86198),	-- Hammer of Ten Thunders
 						},
@@ -4322,48 +3863,14 @@ root(ROOTS.Zones, {
 					n(64272, {	-- Jade Warrior Statue
 						["questID"] = 31307,
 						["coord"] = { 39.26, 46.65, THE_JADE_FOREST },
-						["description"] = createLocalizationString({
-							readable = "Up against the wooden fence post on the rocky terrain with its back to the wall.",
-							constant = "UP_AGAINST_THE_WOODEN_FENCE_POST_ON_THE_ROCKY",
-							export = true,
-							text = {
-								en = "Up against the wooden fence post on the rocky terrain with its back to the wall.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "靠在岩石地形上的木栅栏柱旁，背对着墙。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Up against the wooden fence post on the rocky terrain with its back to the wall.",
 						["groups"] = {
 							i(86199),	-- Jade-Infused Blade
 						},
 					}),
 					o(213368, {	-- Lucky Pandaren Coin
 						["questID"] = 31401,
-						["description"] = createLocalizationString({
-							readable = "Located in the wishing fountain.",
-							constant = "LOCATED_IN_THE_WISHING_FOUNTAIN",
-							export = true,
-							text = {
-								en = "Located in the wishing fountain.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于许愿喷泉中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located in the wishing fountain.",
 						["coord"] = { 31.96, 27.76, THE_JADE_FOREST },
 						["groups"] = {
 							i(85781),	-- Lucky Pandaren Coin
@@ -4372,24 +3879,7 @@ root(ROOTS.Zones, {
 					o(213363, {	-- Wodin's Mantid Shanker
 						["questID"] = 31397,
 						["coord"] = { 39.41, 7.23, THE_JADE_FOREST },
-						["description"] = createLocalizationString({
-							readable = "Glimmering in the east side of the pond underwater between the lantern and the stone wall.",
-							constant = "GLIMMERING_IN_THE_EAST_SIDE_OF_THE_POND",
-							export = true,
-							text = {
-								en = "Glimmering in the east side of the pond underwater between the lantern and the stone wall.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在水下池塘东侧的灯笼与石墙之间闪烁。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Glimmering in the east side of the pond underwater between the lantern and the stone wall.",
 						["groups"] = {
 							i(85776),	-- Wodin's Mantid Shanker
 						},
@@ -4407,24 +3897,7 @@ root(ROOTS.Zones, {
 					}),
 					o(213362, {	-- Ship's Locker
 						["questID"] = 31396,	-- Ship's Locker
-						["description"] = createLocalizationString({
-							readable = "Located underwater in a boat.",
-							constant = "LOCATED_UNDERWATER_IN_A_BOAT",
-							export = true,
-							text = {
-								en = "Located underwater in a boat.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于水下一艘船中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located underwater in a boat.",
 						["coord"] = { 50.88, 99.74, THE_JADE_FOREST },	-- Can't use Uncharted Sea MapID, plots the point incorrectly.
 					}),
 					o(213333, {	-- Spirit Binders
@@ -4433,24 +3906,7 @@ root(ROOTS.Zones, {
 					o(214337, {	-- Stash of Gems
 						["questID"] = 31866,
 						["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
-						["description"] = createLocalizationString({
-							readable = "Located in a cave.",
-							constant = "LOCATED_IN_A_CAVE",
-							export = true,
-							text = {
-								en = "Located in a cave.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "位于一个洞穴中。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Located in a cave.",
 					}),
 					o(215799, {	-- The Emperor's Burden - Part 1
 						["coord"] = { 47.0, 45.1, THE_JADE_FOREST },

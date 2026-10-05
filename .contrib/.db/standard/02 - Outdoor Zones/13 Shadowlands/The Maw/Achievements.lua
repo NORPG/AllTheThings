@@ -136,24 +136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			ach(14761, {	-- Deciphering Death's Intentions
-				["description"] = createLocalizationString({
-					readable = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs. The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
-					constant = "MOST_OF_THE_MAW_LORE_ITEMS_CAN_BE_FOUND_BY",
-					export = true,
-					text = {
-						en = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs. The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "大多数噬渊剧情物品可以通过击杀刺客、稀有怪或普通怪物找到。其余的则从噬渊各处特定的怪物、稀有怪或宝藏中掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs. The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
 				["groups"] = {
 					crit(49894, {	-- Constellan Writ
 						["_quests"] = { 63132 },
@@ -442,24 +425,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			ach(14742, {	-- Who Sent You?
-				["description"] = createLocalizationString({
-					readable = "If you have completed |cFFFFD700Focusing the Eye|r, you can still obtain this achievement by killing |cFF883325Mawsworn Blackguard|r in The Maw.",
-					constant = "IF_YOU_HAVE_COMPLETED_CFFFFD700FOCUSING_THE_EYE",
-					export = true,
-					text = {
-						en = "If you have completed |cFFFFD700Focusing the Eye|r, you can still obtain this achievement by killing |cFF883325Mawsworn Blackguard|r in The Maw.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你已完成|cFFFFD700聚焦之眼|r，你仍然可以通过在噬渊击杀|cFF883325渊誓黑卫|r来获得这个成就。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you have completed |cFFFFD700Focusing the Eye|r, you can still obtain this achievement by killing |cFF883325Mawsworn Blackguard|r in The Maw.",
 				["crs"] = {
 					161856,	-- Assassin <Mawsworn Blackguard>
 					161846,	-- Assassin <Mawsworn Inquisitor>

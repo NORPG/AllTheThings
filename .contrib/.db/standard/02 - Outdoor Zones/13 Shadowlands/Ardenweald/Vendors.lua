@@ -15,24 +15,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.0, 36.8, ARDENWEALD },
 				["groups"] = {
 					r(360545, {	-- Mark of the Shimmering Ardenmoth (RECIPE!)
-						["description"] = createLocalizationString({
-							readable = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
-							constant = "TALK_TO_DROMAN_DAWNBLOSSOM_THEN_PICK_UP_THE_FAE",
-							export = true,
-							text = {
-								en = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与德鲁曼·晨花交谈。然后拾取靠在德鲁曼右侧桌子上的妖精网。\n之后前往瓦尔莎拉，或者召唤一只谷地飞舞者宠物，并对该战斗宠物使用妖精网，直到你获得一个名为发光的蛾的增益。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
 						["cost"] = { { "i", 187943, 1 } },	-- 1x Fae Net
 						["timeline"] = { ADDED_9_1_5 },
 					}),

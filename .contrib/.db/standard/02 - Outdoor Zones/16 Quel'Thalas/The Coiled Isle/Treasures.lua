@@ -7,24 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(TREASURES, {
 			header(HEADERS.Achievement, 63359, {	-- Treasures of the Coiled Isle
 				header(HEADERS.Object, 619906, {	-- Abandoned Amani Privateer's Cache
-					["description"] = createLocalizationString({
-						readable = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
-						constant = "1_FISH_OUT_A_GRISLY_MORSEL_FROM_GRISLY_COD_POOL",
-						export = true,
-						text = {
-							en = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "1. 从“可怕的鳕鱼群”中钓出一个“可怕的肉块”。\n2. 喂食“饥饿的海豚”，让它成为你的伙伴。\n3. 潜下去，在海湾区域游动，直到海豚帮你找到钥匙的两半。千万不要浮出水面！\n4. 把钥匙的两半合在一起。\n5. 拾取宝藏。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
 					["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- General area where everything related to the treasure happens
 					["cr"] = 258255,	-- Helpful Dolphin
 					["groups"] = {
@@ -67,24 +50,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				header(HEADERS.Object, 649085, {	-- Brine-Crusted Chest
-					["description"] = createLocalizationString({
-						readable = "1. Find a 'Bubbling Clam' under water to the south of the Cave and obtain a 'Luminescent Pearl'.\n2. Go to the cave and present the Pearl to 'Nacretta'. It will give you the Key in exchange.\n3. Loot the 'Dropped Key' and open the treasure.",
-						constant = "1_FIND_A_BUBBLING_CLAM_UNDER_WATER_TO_THE_SOUTH",
-						export = true,
-						text = {
-							en = "1. Find a 'Bubbling Clam' under water to the south of the Cave and obtain a 'Luminescent Pearl'.\n2. Go to the cave and present the Pearl to 'Nacretta'. It will give you the Key in exchange.\n3. Loot the 'Dropped Key' and open the treasure.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "1. 在洞穴南方的水下找到一个“冒泡的蛤蜊”，获得一颗“夜光珍珠”。\n2. 前往洞穴，把珍珠交给“纳克雷塔”。作为交换，它会给你钥匙。\n3. 拾取“掉落的钥匙”并打开宝藏。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "1. Find a 'Bubbling Clam' under water to the south of the Cave and obtain a 'Luminescent Pearl'.\n2. Go to the cave and present the Pearl to 'Nacretta'. It will give you the Key in exchange.\n3. Loot the 'Dropped Key' and open the treasure.",
 					["coord"] = { 70.2, 77.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Cave Entrance
 					["cr"] = 263347,	-- Nacretta <the Pearl Hoarder>
 					["groups"] = {	-- Progress order
@@ -155,24 +121,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(278003) },	-- Forgotten Mask
 				}),
 				header(HEADERS.Object, 645549, {	-- Grave of Someone Forgotten
-					["description"] = createLocalizationString({
-						readable = "***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go back to the Nameless Grave.",
-						constant = "ENABLE_DEBUG_MODE_TO_SEE_ALL_THE_STEPS_1_TALK",
-						export = true,
-						text = {
-							en = "***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go back to the Nameless Grave.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "***启用调试模式即可查看所有步骤***\n1. 与遗忘的士兵交谈，并阅读无名墓碑上的文字。\n2. 找到坐在荣耀之环商人对面的祖赞。\n3. 找到蹲伏在抗争之环其中一根柱子顶上的赞贾。与他交谈。\n4. 找到在荣耀之环其中一座拱顶上方冥想的鲁科。与她交谈。\n5. 返回无名墓碑。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "***Enable Debug Mode to see all the steps***\n1. Talk to Forgotten Soldier and read the text on the Nameless Grave.\n2. Find Zuzan sitting across The Ring of Glory Vendors\n3. Find Zan'ja croaching atop one of the Defiant Ring pillars. Talk to him.\n4. Find Ru'ko meditating atop one of the Arches of The Ring of Glory. Talk to her.\n5. Go back to the Nameless Grave.",
 					["providers"] = {
 						{ "n", 263244 },	-- Forgotten Soldier
 						{ "o", 645553 },	-- Nameless Grave
@@ -208,24 +157,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.NPC, 261867, {	-- Lost Spirit
 					["lore"] = "Translated from Zandali language:\n'Can you help me? I have lost something. A family heirloom. It must be somewhere nearby. Please bring it to me if you find it.'",
-					["description"] = createLocalizationString({
-						readable = "You can find a 'Forgotten Trinket' on the left side of the base of |cFFFFD700The Altar of Wrath|r.",
-						constant = "YOU_CAN_FIND_A_FORGOTTEN_TRINKET_ON_THE_LEFT",
-						export = true,
-						text = {
-							en = "You can find a 'Forgotten Trinket' on the left side of the base of |cFFFFD700The Altar of Wrath|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你可以在|cFFFFD700愤怒祭坛|r基座的左侧找到一个“被遗忘的饰品”。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You can find a 'Forgotten Trinket' on the left side of the base of |cFFFFD700The Altar of Wrath|r.",
 					["coord"] = { 68.1, 65.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["cr"] = 261867,	-- Lost Spirit
 					["groups"] = {
@@ -265,84 +197,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 95941,
 					["groups"] = {
 						n(263202, {	-- Mysterious Trinket
-							["description"] = createLocalizationString({
-								readable = "Activate First.",
-								constant = "ACTIVATE_FIRST",
-								export = true,
-								text = {
-									en = "Activate First.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "第一个激活。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Activate First.",
 						}),
 						n(263187, {	-- Mysterious Trinket
-							["description"] = createLocalizationString({
-								readable = "Activate Second.",
-								constant = "ACTIVATE_SECOND",
-								export = true,
-								text = {
-									en = "Activate Second.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "第二个激活。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Activate Second.",
 						}),
 						n(263185, {	-- Mysterious Trinket
-							["description"] = createLocalizationString({
-								readable = "Activate Third.",
-								constant = "ACTIVATE_THIRD",
-								export = true,
-								text = {
-									en = "Activate Third.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "第三个激活。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Activate Third.",
 						}),
 						n(268062, {	-- Mysterious Trinket
-							["description"] = createLocalizationString({
-								readable = "Activate Fourth.",
-								constant = "ACTIVATE_FOURTH",
-								export = true,
-								text = {
-									en = "Activate Fourth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "第四个激活。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Activate Fourth.",
 						}),
 						--
 						i(281567),	-- Profane Ritual Staff (COSMETIC!)
@@ -359,24 +223,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(281580) },	-- Pungent Atal'Utek Shroom (DECOR!)
 				}),
 				header(HEADERS.Object, 645208, {	-- Sunken Diver's Chest
-					["description"] = createLocalizationString({
-						readable = "You need to kill |cFFFFD700Glittering Grouper Brinetail|r and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
-						constant = "YOU_NEED_TO_KILL_CFFFFD700GLITTERING_GROUPER",
-						export = true,
-						text = {
-							en = "You need to kill |cFFFFD700Glittering Grouper Brinetail|r and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要击杀|cFFFFD700闪光石斑鱼盐水尾|r并获得 3 个|cFFFFFFFF潜水者的钥匙碎片|r。将它们组合即可获得|cFFFFFFFF潜水者的钥匙|r。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You need to kill |cFFFFD700Glittering Grouper Brinetail|r and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
 					["groups"] = {
 						i(271423, {	-- Diver's Key
 							["cost"] = { { "i", 271424, 3 } },	-- 3x Diver's Key Fragment
@@ -406,24 +253,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				header(HEADERS.Object, 648564, {	-- Vul'zahn's Smuggled Treasure
-					["description"] = createLocalizationString({
-						readable = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\n3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
-						constant = "STEPS_MUST_BE_FOLLOWED_IN_ORDER_TO_UNLOCK",
-						export = true,
-						text = {
-							en = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\n3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须按顺序完成这些步骤才能解锁对话选项。\n\n1. 与武尔赞交谈，问他能否把宝藏交给你。\n2. 与枯木厨师交谈，向他要一碗炖肉。\n3. 与药剂师德兹交谈，让他给你一瓶药水。\n4. 与枯木厨师交谈，让他给你一碗炖肉。\n5. 与武尔赞交谈，把炖肉交给他。他会把钥匙给你。\n6. 打开宝藏。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Steps must be followed in order to unlock gossip options.\n\n1. Talk to Vul'zahn and ask him if you can have the treasure.\n2. Talk to Witherbark Cook and ask him for the Bowl of Stew.\n3. Talk to Apothecary Dezi and ask him to give you a Potion.\n4. Talk to Witherbark Cook and ask him to give you a Bowl of Stew.\n5. Talk to Vul'zahn, give him the Stew. He will give you the key.\n6. Open the treasure.",
 					["groups"] = {
 						n(253837, {	-- Apothecary Dezi
 							["coord"] = { 57.2, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -533,44 +363,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- Repeatables
 			o(654991, {	-- Cracked Canopic Jar
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly around the temples.",
-					constant = "SPAWNS_RANDOMLY_AROUND_THE_TEMPLES",
-					export = true,
-					text = {
-						en = "Spawns randomly around the temples.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在神庙周围随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly around the temples.",
 			}),
 			o_repeated({	-- Ossified Relic
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly around the whole area once opted in to the Curse of the Isle or on a Prey.",
-					constant = "SPAWNS_RANDOMLY_AROUND_THE_WHOLE_AREA_ONCE",
-					export = true,
-					text = {
-						en = "Spawns randomly around the whole area once opted in to the Curse of the Isle or on a Prey.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在接受了岛屿诅咒或正在追猎猎物时，会在整个区域随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly around the whole area once opted in to the Curse of the Isle or on a Prey.",
 				["sourceQuests"] = { 96474 },	-- Prey: Something for Astalor
 				["groups"] = {
 					-- Drops
@@ -582,44 +378,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			o(656044, {	-- Singing Shell
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly around coastal regions.",
-					constant = "SPAWNS_RANDOMLY_AROUND_COASTAL_REGIONS",
-					export = true,
-					text = {
-						en = "Spawns randomly around coastal regions.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在沿海地区随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly around coastal regions.",
 			}),
 			o(656039, {	-- Venom-Clotted Bauble
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly around the poisoned areas.",
-					constant = "SPAWNS_RANDOMLY_AROUND_THE_POISONED_AREAS",
-					export = true,
-					text = {
-						en = "Spawns randomly around the poisoned areas.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在中毒区域周围随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly around the poisoned areas.",
 			}),
 			o(656046, {	-- Unfortunate Scout's Satchel
 				["minReputation"] = { FACTION_ZULJARRAS_FORCES, 9 },
@@ -654,24 +416,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
                     { 69.7, 57.5, MAP.MIDNIGHT.THE_COILED_ISLE },
                     { 70.1, 77.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly edges and ledges around the area after reaching Renown 9.",
-					constant = "SPAWNS_RANDOMLY_EDGES_AND_LEDGES_AROUND_THE",
-					export = true,
-					text = {
-						en = "Spawns randomly edges and ledges around the area after reaching Renown 9.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "名望达到 9 后，会在该区域各处的边缘和岩架上随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly edges and ledges around the area after reaching Renown 9.",
 				["groups"] = {
 					i(280178),	-- Poison Dart Frog (PET!)
 				},

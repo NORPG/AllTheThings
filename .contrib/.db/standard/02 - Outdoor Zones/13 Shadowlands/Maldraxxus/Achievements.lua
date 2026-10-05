@@ -147,24 +147,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			ach(14634, {	-- Nine Afterlives
 				i(184449),	-- Jiggles's Favorite Toy (TOY!)
 				crit(49425, {	-- Hairball
-					["description"] = createLocalizationString({
-						readable = "Close to the top-left corner of the final boss's map. On the left side of the slime pool, kill a green ooze and then turn left. Hairball is in a tiny alcove filled with fish skeletons and candles.",
-						constant = "CLOSE_TO_THE_TOP_LEFT_CORNER_OF_THE_FINAL_BOSS",
-						export = true,
-						text = {
-							en = "Close to the top-left corner of the final boss's map. On the left side of the slime pool, kill a green ooze and then turn left. Hairball is in a tiny alcove filled with fish skeletons and candles.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在最终首领地图左上角附近。在软泥池左侧，击杀一只绿色软泥怪，然后向左转。毛球在一个满是鱼骨和蜡烛的小凹室里。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Close to the top-left corner of the final boss's map. On the left side of the slime pool, kill a green ooze and then turn left. Hairball is in a tiny alcove filled with fish skeletons and candles.",
 					["crs"] = { 174195 },	-- Hairball
 					["maps"] = {
 						1674,	-- Plaguefall
@@ -176,24 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["crs"] = { 174221 },	-- Snots
 				}),
 				crit(49427, {	-- Pus-In-Boots
-					["description"] = createLocalizationString({
-						readable = "Under the bridge.",
-						constant = "UNDER_THE_BRIDGE",
-						export = true,
-						text = {
-							en = "Under the bridge.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在桥下。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Under the bridge.",
 					["coord"] = { 50.2, 60.2, MALDRAXXUS },
 					["crs"] = { 174223 },	-- Pus-In-Boots
 				}),
@@ -206,24 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["crs"] = { 174226 },	-- Mr. Jigglesworth
 				}),
 				crit(49430, {	-- Lime
-					["description"] = createLocalizationString({
-						readable = "Lime is on the bone arch that runs over the road.",
-						constant = "LIME_IS_ON_THE_BONE_ARCH_THAT_RUNS_OVER_THE",
-						export = true,
-						text = {
-							en = "Lime is on the bone arch that runs over the road.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "莱姆在横跨道路的骨拱上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Lime is on the bone arch that runs over the road.",
 					["coord"] = { 51.0, 27.5, MALDRAXXUS },
 					["crs"] = { 174230 },	-- Lime
 				}),
@@ -232,46 +181,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["crs"] = { 174234 },	-- Mayhem
 				}),
 				crit(49432, {	-- Moldstopheles
-					["description"] = createLocalizationString({
-						readable = "Moldstopheles is on an offshoot on the side of the big mushroom.",
-						constant = "MOLDSTOPHELES_IS_ON_AN_OFFSHOOT_ON_THE_SIDE_OF",
-						export = true,
-						text = {
-							en = "Moldstopheles is on an offshoot on the side of the big mushroom.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "霉斯托菲勒斯在大蘑菇侧面的一个分支上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Moldstopheles is on an offshoot on the side of the big mushroom.",
 					["coord"] = { 47.5, 33.7, MALDRAXXUS },
 					["crs"] = { 174236 },	-- Moldstopheles
 				}),
 				crit(49433, {	-- Meowmalade
-					["description"] = createLocalizationString({
-						readable = "Napping inside a small crate.",
-						constant = "NAPPING_INSIDE_A_SMALL_CRATE",
-						export = true,
-						text = {
-							en = "Napping inside a small crate.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "正在一个小木箱里打盹。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Napping inside a small crate.",
 					["coord"] = { 34.3, 53.1, MALDRAXXUS },
 					["crs"] = { 174237 },	-- Meowmalade
 				}),

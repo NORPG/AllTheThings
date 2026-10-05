@@ -58,24 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						}),
 						--
 						i(245611, {	-- Wriggling Pinnacle Cache
-							["description"] = createLocalizationString({
-								readable = "|cFFE50D12Only the first Bag of the Week on your entire B.Net Account can contain a Pet or a Mount!|r",
-								constant = "CFFE50D12ONLY_THE_FIRST_BAG_OF_THE_WEEK_ON_YOUR",
-								export = true,
-								text = {
-									en = "|cFFE50D12Only the first Bag of the Week on your entire B.Net Account can contain a Pet or a Mount!|r",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "|cFFE50D12你整个战网账号每周只有第一个每周礼包才可能开出宠物或坐骑！|r",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "|cFFE50D12Only the first Bag of the Week on your entire B.Net Account can contain a Pet or a Mount!|r",
 							["sym"] = {	-- K'aresh Zone Reward
 								{"select","mapID",KHAZ_ALGAR},{"pop"},
 								{"where","mapID",KARESH},{"pop"},

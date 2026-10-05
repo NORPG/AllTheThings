@@ -76,24 +76,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					})),
 				}),
 				n(REWARDS, {
-					["description"] = createLocalizationString({
-						readable = "You'll be offered these rewards at the end of your first foothold.",
-						constant = "YOU_LL_BE_OFFERED_THESE_REWARDS_AT_THE_END_OF",
-						export = true,
-						text = {
-							en = "You'll be offered these rewards at the end of your first foothold.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你完成第一个据点后，你会获得这些奖励供选择。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You'll be offered these rewards at the end of your first foothold.",
 					["modID"] = 25,
 					["groups"] = {
 						-- 163 = azerite; 175 = azewrong
@@ -129,24 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 				}),
 				n(QUESTS, {
 					q(53052, {	-- Deeper Into Zandalar
-						["description"] = createLocalizationString({
-							readable = "Conquer one foothold, then relog while in Zandalar.",
-							constant = "CONQUER_ONE_FOOTHOLD_THEN_RELOG_WHILE_IN",
-							export = true,
-							text = {
-								en = "Conquer one foothold, then relog while in Zandalar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "攻占一处据点，然后在赞达拉境内重新登录。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Conquer one foothold, then relog while in Zandalar.",
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
@@ -272,31 +238,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
 					}),
 					q(53583, {	-- Adapting Our Tactics
-						["description"] = createLocalizationString({
-							readable = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
-							constant = "TO_GET_THIS_QUEST_AND_CONTINUE_THE_CAMPAIGN_YOU",
-							export = true,
-							text = {
-								en = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要获得此任务并继续战役，你必须完成一个你选择的立足点。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
 						["provider"] = { "n", 143846 },	-- Alleria Windrunner
 						["coord"] = { 70.5, 27.3, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						-- Turning in this quest also grants credit for the Horde equivalent, 53602
 					}),
 					q(51961, {	-- The Ongoing Campaign
-						["description"] = "~L.TO_GET_THIS_QUEST_AND_CONTINUE_THE_CAMPAIGN_YOU",
+						["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
 						["sourceQuests"] = {
 							53052,	-- Deeper Into Zandalar
 							51967,	-- Return to Boralus
@@ -309,47 +258,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53055, {	-- Pushing Our Influence
-						["description"] = createLocalizationString({
-							readable = "Automatically starts when you finish your second Foothold in Zandalar.",
-							constant = "AUTOMATICALLY_STARTS_WHEN_YOU_FINISH_YOUR",
-							export = true,
-							text = {
-								en = "Automatically starts when you finish your second Foothold in Zandalar.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "当你完成在赞达拉的第二个据点后自动开始。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Automatically starts when you finish your second Foothold in Zandalar.",
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["DisablePartySync"] = true,
 					}),
 					q(52443, {	-- The Final Foothold
-						["description"] = createLocalizationString({
-							readable = "To get this quest and continue the campaign, you must complete two footholds of your choice.",
-							constant = "TO_GET_THIS_QUEST_AND_CONTINUE_THE_CAMPAIGN_YOU_2",
-							export = true,
-							text = {
-								en = "To get this quest and continue the campaign, you must complete two footholds of your choice.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "要获得此任务并继续战役，你必须完成任意两个据点。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "To get this quest and continue the campaign, you must complete two footholds of your choice.",
 						["sourceQuests"] = { 51961 },	-- The Ongoing Campaign
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, BORALUS },
@@ -815,24 +730,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					-- BETWEEN BLOOD ON THE SAND / CHASING DARKNESS
 					q(53069, {	-- Operation: Blood Arrow
-						["description"] = createLocalizationString({
-							readable = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
-							constant = "RELOG_OUTSIDE_OF_BORALUS_IF_THIS_DOESN_T_APPEAR",
-							export = true,
-							text = {
-								en = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果在达到声望要求后此内容仍未出现，请在伯拉勒斯城外重新登录",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52146 },	-- Blood on the Sand
 						["minReputation"] = { FACTION_7TH_LEGION, FRIENDLY+4500 },
 						["races"] = ALLIANCE_ONLY,
@@ -918,7 +816,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					-- BETWEEN CHASING DARKNESS AND A GOLDEN OPPORTUNITY
 					q(53070, {	-- Operation: Cutpurse
-						["description"] = "~L.RELOG_OUTSIDE_OF_BORALUS_IF_THIS_DOESN_T_APPEAR",
+						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
 						["minReputation"] = { FACTION_7TH_LEGION, HONORED+3000 },
 						["races"] = ALLIANCE_ONLY,
@@ -999,7 +897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					-- BETWEEN A GOLDEN OPPORTUNITY AND BLOOD IN THE WATER
 					q(53071, {	-- Operation: Gryphon's Claw
-						["description"] = "~L.RELOG_OUTSIDE_OF_BORALUS_IF_THIS_DOESN_T_APPEAR",
+						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 						["minReputation"] = { FACTION_7TH_LEGION, HONORED+7500 },
 						["races"] = ALLIANCE_ONLY,
@@ -1092,7 +990,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					-- BETWEEN BLOOD IN THE WATER AND THE STRIKE ON ZULDAZAR
 					q(53072, {	-- Operation: Heartstrike
-						["description"] = "~L.RELOG_OUTSIDE_OF_BORALUS_IF_THIS_DOESN_T_APPEAR",
+						["description"] = "Relog (outside of Boralus) if this doesn't appear upon hitting the reputation requirement",
 						["sourceQuests"] = { 52496 },	-- A Clean Escape
 						["minReputation"] = { FACTION_7TH_LEGION, REVERED },
 						["races"] = ALLIANCE_ONLY,

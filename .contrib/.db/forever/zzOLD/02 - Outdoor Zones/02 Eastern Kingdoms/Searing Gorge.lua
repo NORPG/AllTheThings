@@ -419,24 +419,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(3368, {	-- Suntara Stones (2/2)
-					["description"] = createLocalizationString({
-						readable = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
-						constant = "THE_SINGED_LETTER_WILL_BE_ON_THE_GROUND_AFTER",
-						export = true,
-						text = {
-							en = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "完成护送多里乌斯·石匠后，烧焦的信件会出现在地上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 					["sourceQuest"] = 3367,	-- Suntara Stones (1/2)
 					["providers"] = {
 						{ "i",  10443 },	-- Singed Letter

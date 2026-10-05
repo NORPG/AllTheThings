@@ -248,24 +248,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		achpart(7326, 7327),	-- The Pandaren Gourmet (15)
 		ach(7327),	-- The Pandaren Gourmet (30)
 		header(HEADERS.Faction, 1357, {	-- Nomi
-			["description"] = createLocalizationString({
-				readable = "Summon Nomi once per day using your Cooking School Bell, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-				constant = "SUMMON_NOMI_ONCE_PER_DAY_USING_YOUR_COOKING",
-				export = true,
-				text = {
-					en = "Summon Nomi once per day using your Cooking School Bell, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "每天使用烹饪学校铃铛召唤诺米一次，完成他给出的日常任务，很快（42 天以上）你就能获得围裙。\n\n然后这个小混蛋什么也学不会，还会在达拉然烧掉你所有的食物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Summon Nomi once per day using your Cooking School Bell, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
 			["provider"] = { "i", 86425 },	-- Cooking School Bell
 			["sourceQuest"] = 31521,	-- To Be a Master
 			["groups"] = {
@@ -576,48 +559,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(40989, {	-- The Prodigal Sous Chef
-				["description"] = createLocalizationString({
-					readable = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
-					constant = "IF_YOU_COOKED_WITH_NOMI_WHILE_QUESTING_IN",
-					export = true,
-					text = {
-						en = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你在潘达利亚做任务时和诺米一起烹饪过，你会获得这个任务而不是“太多厨师”。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
 				["provider"] = { "n", 102546 },	-- Nomi
 				["groups"] = {
 					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40988, {	-- Too Many Chefs
-				["description"] = createLocalizationString({
-					readable = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
-					constant = "IF_YOU_DID_NOT_COOK_WITH_NOMI_WHILE_QUESTING_IN",
-					export = true,
-					text = {
-						en = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你在潘达利亚做任务时没有和诺米一起烹饪过，你会获得这个任务而不是“回头的副厨”。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
 				["provider"] = { "n", 102546 },	-- Nomi
 				["groups"] = {
 					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
@@ -682,24 +631,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["cost"] = {{ "i", 204848, 50 }},	-- 50x Charitable Cheddar
 				["groups"] = {
 					i(204894, {	-- Roland (PET!)
-						["description"] = createLocalizationString({
-							readable = "Roland will also teach your alts the recipes for Deviously Deviled Eggs and Charitable Cheddar, if you learned the recipes via the original source.",
-							constant = "ROLAND_WILL_ALSO_TEACH_YOUR_ALTS_THE_RECIPES",
-							export = true,
-							text = {
-								en = "Roland will also teach your alts the recipes for Deviously Deviled Eggs and Charitable Cheddar, if you learned the recipes via the original source.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "如果你是通过原始来源学会这些配方的，罗兰也会把这些配方教给你的小号：狡诈魔鬼蛋和慈善切达奶酪。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Roland will also teach your alts the recipes for Deviously Deviled Eggs and Charitable Cheddar, if you learned the recipes via the original source.",
 						["groups"] = {
 							r(407100),	-- Charitable Cheddar
 							r(403018),	-- Deviously Deviled Eggs
@@ -710,30 +642,13 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 		n(QUESTS, {
 			q(72251, {	-- Dragon Isles Cooking
-				["description"] = createLocalizationString({
-					readable = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
-					constant = "THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_3",
-					export = true,
-					text = {
-						en = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此任务只能在学会巨龙群岛烹饪之前接取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 				["provider"] = { "n", 193121 },	-- Head Chef Stacks
 				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
 			}),
 			q(72250, {	-- Dragon Isles Cooking
-				["description"] = "~L.THIS_QUEST_CAN_ONLY_BE_PICKED_UP_PRIOR_TO_3",
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking

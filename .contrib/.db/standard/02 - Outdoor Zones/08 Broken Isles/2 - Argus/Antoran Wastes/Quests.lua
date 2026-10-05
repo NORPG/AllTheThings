@@ -8,24 +8,7 @@ root(ROOTS.Zones, {
 			m(ANTORAN_WASTES, {
 				n(QUESTS, {
 					q(49007, {	-- Commander on Deck!
-						["description"] = createLocalizationString({
-							readable = "Collect |cFFFFFFFFSmashed Portal Generator|r, |cFFFFFFFFConductive Sheath|r, |cFFFFFFFFArc Circuit|r and |cFFFFFFFFPower Cell|r from the elite Demons on the Terminus docks and ship, and combine them to create |cFFFFFFFFVishax's Portal Generator|r.\n\nOnce you create the item you will get a follow-up Quest to power up the portal to the rare.",
-							constant = "COLLECT_CFFFFFFFFSMASHED_PORTAL_GENERATOR_R",
-							export = true,
-							text = {
-								en = "Collect |cFFFFFFFFSmashed Portal Generator|r, |cFFFFFFFFConductive Sheath|r, |cFFFFFFFFArc Circuit|r and |cFFFFFFFFPower Cell|r from the elite Demons on the Terminus docks and ship, and combine them to create |cFFFFFFFFVishax's Portal Generator|r.\n\nOnce you create the item you will get a follow-up Quest to power up the portal to the rare.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "从终点码头和飞船上的精英恶魔身上收集|cFFFFFFFF破碎的传送门发生器|r、|cFFFFFFFF导电护套|r、|cFFFFFFFF奥术电路|r和|cFFFFFFFF能量电池|r，并将它们合成为|cFFFFFFFF维沙克斯的传送门发生器|r。\n\n制造出该物品后，你会接到一个后续任务，为通往稀有生物的传送门充能。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Collect |cFFFFFFFFSmashed Portal Generator|r, |cFFFFFFFFConductive Sheath|r, |cFFFFFFFFArc Circuit|r and |cFFFFFFFFPower Cell|r from the elite Demons on the Terminus docks and ship, and combine them to create |cFFFFFFFFVishax's Portal Generator|r.\n\nOnce you create the item you will get a follow-up Quest to power up the portal to the rare.",
 						["provider"] = { "i", 152965 },	-- Vishax's Portal Generator (QS!)
 					}),
 					q(48605, {	-- Commander's Downfall
@@ -73,24 +56,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(48870, {	-- The Many-Faced Devourer
-						["description"] = createLocalizationString({
-							readable = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",
-							constant = "YOU_NEED_TO_COLLECT_THREE_BONES_FROM_VARIOUS",
-							export = true,
-							text = {
-								en = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要从区域各处收集三块骨头。在完成最初的收集和召唤流程后，你就可以随时召唤这只稀有了。\n\n你的背包中必须有|cFFFFFFFF吞噬者之唤|r才能看到这些骨头。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",
 						["cost"] = {
 							{ "i", 152993, 1 },	-- Ur'zul Bone
 							{ "i", 152992, 1 },	-- Imp Bone

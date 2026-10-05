@@ -112,24 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(236849, {	-- Greexit Coarsebub
-				["description"] = createLocalizationString({
-					readable = "Sells different cosmetics depending on which cartel you have a contract with.",
-					constant = "SELLS_DIFFERENT_COSMETICS_DEPENDING_ON_WHICH",
-					export = true,
-					text = {
-						en = "Sells different cosmetics depending on which cartel you have a contract with.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "根据你与哪个财阀签订契约，出售不同的装饰品。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Sells different cosmetics depending on which cartel you have a contract with.",
 				["coord"] = { 24.5, 63.3, UNDERMINE },
 				["groups"] = {
 					-- Bilgewater Cartel

@@ -235,24 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(1872, {	-- Zombiefest!
-						["description"] = createLocalizationString({
-							readable = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
-							constant = "GATHER_ZOMBIES_LEADING_UP_TO_MEATHOOK_BUT_DO",
-							export = true,
-							text = {
-								en = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "把通往肉钩的僵尸都聚集起来，但不要杀死它们。\n\n杀死肉钩并等待僵尸刷新；然后再聚集并杀死更多僵尸。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
 						["cr"] = 27737,	-- Risen Zombie
 					}),
 				}),
@@ -311,7 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(1872, {	-- Zombiefest!
-						["description"] = "~L.GATHER_ZOMBIES_LEADING_UP_TO_MEATHOOK_BUT_DO",
+						["description"] = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
 						["cr"] = 27737,	-- Risen Zombie
 					}),
 				}),

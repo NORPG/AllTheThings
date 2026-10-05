@@ -8,24 +8,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(133505, {	-- Aiji the Accursed
 				["questID"] = 50339,
 				["coord"] = { 53.0, 72.1, NAZMIR },
-				["description"] = createLocalizationString({
-					readable = "Light all 5 braziers in the area to summon.",
-					constant = "LIGHT_ALL_5_BRAZIERS_IN_THE_AREA_TO_SUMMON",
-					export = true,
-					text = {
-						en = "Light all 5 braziers in the area to summon.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "点亮区域内的全部 5 个火盆即可召唤。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Light all 5 braziers in the area to summon.",
 			}),
 			n(125250, {	-- Ancient Jawbreaker
 				["questID"] = 48063,
@@ -117,24 +100,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			n(127001, {	-- Gwugnug the Cursed
-				["description"] = createLocalizationString({
-					readable = "This rare is not on top of the mountain, but on the middle level in a cave. The cave entrance is on the southern side of the mountain.",
-					constant = "THIS_RARE_IS_NOT_ON_TOP_OF_THE_MOUNTAIN_BUT_ON",
-					export = true,
-					text = {
-						en = "This rare is not on top of the mountain, but on the middle level in a cave. The cave entrance is on the southern side of the mountain.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "此稀有怪不在山顶，而是在洞穴的中层。洞穴入口位于山的南侧。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This rare is not on top of the mountain, but on the middle level in a cave. The cave entrance is on the southern side of the mountain.",
 				["questID"] = 48638,
 				["coord"] = { 33.4, 87.1, NAZMIR },
 				["groups"] = {
@@ -229,24 +195,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(134296, {	-- Lucille (Chag's Challenge)
 				["questID"] = 50567,
 				["coord"] = { 68.0, 19.8, NAZMIR },
-				["description"] = createLocalizationString({
-					readable = "This rare is sometimes bugged when the world quest is active. If you cannot talk to Chag to summon Lucille, try Warmode On/Off to enter another shard that he might be working in, or come back later.",
-					constant = "THIS_RARE_IS_SOMETIMES_BUGGED_WHEN_THE_WORLD",
-					export = true,
-					text = {
-						en = "This rare is sometimes bugged when the world quest is active. If you cannot talk to Chag to summon Lucille, try Warmode On/Off to enter another shard that he might be working in, or come back later.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当世界任务激活时，此稀有怪有时会出现 bug。如果你无法与查格交谈来召唤露西尔，请尝试开启/关闭战争模式以进入他可能正常工作的另一条分线，或者稍后再来。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This rare is sometimes bugged when the world quest is active. If you cannot talk to Chag to summon Lucille, try Warmode On/Off to enter another shard that he might be working in, or come back later.",
 				["groups"] = {
 					crit(41452, {	-- Chag's Challenge
 						["achievementID"] = 12942,	-- Adventurer of Nazmir

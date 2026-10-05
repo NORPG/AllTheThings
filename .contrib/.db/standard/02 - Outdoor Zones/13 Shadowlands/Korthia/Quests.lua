@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	m(KORTHIA, {
 		n(QUESTS, {
 			n(REWARDS, {
-				["description"] = createLocalizationString({
-					readable = "These pieces can be rewarded from covenant dailies in Korthia.",
-					constant = "THESE_PIECES_CAN_BE_REWARDED_FROM_COVENANT",
-					export = true,
-					text = {
-						en = "These pieces can be rewarded from covenant dailies in Korthia.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这些部件可以从刻希亚的盟约日常任务中获得奖励。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These pieces can be rewarded from covenant dailies in Korthia.",
 				["groups"] = {
 					n(NIGHT_FAE, {
 						["customCollect"] = "SL_COV_NFA",	-- Night Fae
@@ -102,24 +85,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			header(HEADERS.Achievement, 14961, {	-- Chains of Domination
 				q(63944, {	-- Korthia Awaits
-					["description"] = createLocalizationString({
-						readable = "Only available to characters who choose to skip ahead to Korthia.",
-						constant = "ONLY_AVAILABLE_TO_CHARACTERS_WHO_CHOOSE_TO_SKIP",
-						export = true,
-						text = {
-							en = "Only available to characters who choose to skip ahead to Korthia.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "仅对选择跳过剧情直接前往刻希亚的角色可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Only available to characters who choose to skip ahead to Korthia.",
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
 					["isBreadcrumb"] = true,
@@ -358,24 +324,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				------ Chapter 4 ------
 				q(63703, {	-- Vault of Secrets
-					["description"] = createLocalizationString({
-						readable = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
-						constant = "REQUIRES_RENOWN_44_AND_COMPLETION_OF_THE",
-						export = true,
-						text = {
-							en = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要名望 44，并完成你盟约战役最初的 9 个章节。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 63.0, 24.8, KORTHIA },
@@ -503,24 +452,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				------ Chapter 5 ------
 				q(63612, {	-- The Chains of Command
-					["description"] = createLocalizationString({
-						readable = "Requires Renown 47.",
-						constant = "REQUIRES_RENOWN_47",
-						export = true,
-						text = {
-							en = "Requires Renown 47.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要名望 47。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Renown 47.",
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 63.1, 25.3, KORTHIA },
@@ -584,24 +516,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				------ Chapter 6 ------
 				q(63659, {	-- Dreadlords!
-					["description"] = createLocalizationString({
-						readable = "Requires Renown 50.",
-						constant = "REQUIRES_RENOWN_50",
-						export = true,
-						text = {
-							en = "Requires Renown 50.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要名望 50。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Renown 50.",
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
 					["provider"] = { "n", 177167 },	-- Baroness Vashj
 					["coord"] = { 60.6, 27.5, KORTHIA },
@@ -686,47 +601,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				------ Chapter 7 ------
 				q(63672, {	-- A Cry From the Heart
-					["description"] = createLocalizationString({
-						readable = "Requires Renown 52.",
-						constant = "REQUIRES_RENOWN_52",
-						export = true,
-						text = {
-							en = "Requires Renown 52.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要名望 52。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Renown 52.",
 					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
 				q(63728, {	-- Hunting Amid Houses [Kyrian, Necrolord, Venthyr]
-					["description"] = createLocalizationString({
-						readable = "Non-Night Fae version.",
-						constant = "NON_NIGHT_FAE_VERSION",
-						export = true,
-						text = {
-							en = "Non-Night Fae version.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "非法夜版本。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Non-Night Fae version.",
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 47.8, 53.5, ARDENWEALD },
@@ -851,24 +732,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				------ Chapter 8 ------
 				q(63579, {	-- A Paladin's Soul
-					["description"] = createLocalizationString({
-						readable = "Requires Renown 56.",
-						constant = "REQUIRES_RENOWN_56",
-						export = true,
-						text = {
-							en = "Requires Renown 56.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要名望 56。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Renown 56.",
 					["sourceQuests"] = { 64437 },	-- Inform the Primus
 					["provider"] = { "n", 179356 },	-- Thenios
 					["coord"] = { 62.9, 25.3, KORTHIA },
@@ -1035,24 +899,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 
 				-- Archivists of Korthia --
 			q(63731, {	-- Researching Korthian Relics
-				["description"] = createLocalizationString({
-					readable = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
-					constant = "THE_ITEM_THAT_STARTS_THIS_QUEST_CAN_BE_LOOTED",
-					export = true,
-					text = {
-						en = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "开启此任务的物品可以从刻希亚的任意宝箱或稀有生物处拾取。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 				["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
 				["altQuests"] = { 64567 },	-- The Missing Scholar
 				["provider"] = { "i", 187177 },	-- Researching Korthian Relics
@@ -1209,24 +1056,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 62.6, 22.5, KORTHIA },
 			}),
 			q(63899, {	-- Book of Binding: The Mad Witch
-				["description"] = createLocalizationString({
-					readable = "At the end of the top level of the cave.",
-					constant = "AT_THE_END_OF_THE_TOP_LEVEL_OF_THE_CAVE",
-					export = true,
-					text = {
-						en = "At the end of the top level of the cave.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在洞穴顶层的尽头。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "At the end of the top level of the cave.",
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "o", 368432 },	-- Whispering Book Binding
 				["coords"] = {
@@ -1248,24 +1078,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 			}),
 			q(63892, {	-- Diviner's Rune Chits
-				["description"] = createLocalizationString({
-					readable = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
-					constant = "THE_ITEM_THAT_STARTS_THIS_QUEST_AND_THE_RUNE",
-					export = true,
-					text = {
-						en = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "开启此任务的物品以及符文契约本身都可以从刻希亚的宝藏中掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
 				["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
@@ -1292,24 +1105,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 			}),
 			q(64511, {	-- Missing Relics
-				["description"] = createLocalizationString({
-					readable = "Requires Tier 2 Research.",
-					constant = "REQUIRES_TIER_2_RESEARCH",
-					export = true,
-					text = {
-						en = "Requires Tier 2 Research.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要 2 级研究。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires Tier 2 Research.",
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
@@ -1425,24 +1221,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 5 },	-- Tier 5
 			}),
 			q(63908, {	-- Bulwark of Divine Intent
-				["description"] = createLocalizationString({
-					readable = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-					constant = "REQUIRES_HAVING_PURCHASED_CFF0070DDRESEARCH",
-					export = true,
-					text = {
-						en = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "需要已购买|cFF0070dd研究报告：古代神殿|r，才能与相位之剑互动。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "o", 368438 },	-- Glowing Shield
 				["coord"] = { 18.5, 38.0, KORTHIA },
@@ -1451,7 +1230,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 			}),
 			q(63923, {	-- Lang Family Wood-Carving
-				["description"] = "~L.REQUIRES_HAVING_PURCHASED_CFF0070DDRESEARCH",
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "o", 369342 },	-- Pandaren Wood Carving
 				["coord"] = { 24.3, 56.6, KORTHIA },
@@ -1460,7 +1239,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 			}),
 			q(63922, {	-- Shadow Slicing Shortsword
-				["description"] = "~L.REQUIRES_HAVING_PURCHASED_CFF0070DDRESEARCH",
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "o", 369319 },	-- Shadow Slicing Shortsword
 				["coord"] = { 39.4, 42.6, KORTHIA },

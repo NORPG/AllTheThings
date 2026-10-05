@@ -64,45 +64,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(134446, {	-- Francois
 				["coord"] = { 52.8, 31.1, TIRAGARDE_SOUND },
-				["description"] = createLocalizationString({
-					readable = "Must have 1 million gold in your inventory before he will talk to you. You do NOT lose any gold in this transaction.",
-					constant = "MUST_HAVE_1_MILLION_GOLD_IN_YOUR_INVENTORY",
-					export = true,
-					text = {
-						en = "Must have 1 million gold in your inventory before he will talk to you. You do NOT lose any gold in this transaction.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你的背包中必须拥有 100 万金币，他才会与你交谈。此交易不会消耗你任何金币。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Must have 1 million gold in your inventory before he will talk to you. You do NOT lose any gold in this transaction.",
 				["groups"] = { i(158077) },	-- Francois (PET!)
 			}),
 			n(142838, {	-- Grumpy Grimble
-				["description"] = createLocalizationString({
-					readable = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
-					constant = "WHEN_YOU_HAVE_150_BFA_INSCRIPTION_SPEAK_TO_THE",
-					export = true,
-					text = {
-						en = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "当你拥有 150 点争霸艾泽拉斯铭文时，与这个 NPC 交谈，他会教你这项技法。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
 				["coord"] = { 49.8, 36.8, TIRAGARDE_SOUND },
 				["groups"] = { i(162030) },	-- Technique: Glyph of the Humble Flyer (RECIPE!)
 			}),

@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			m(EREDATH, {
 				n(TREASURES, {
 					o(277342, {	-- Augari Goods
-						["description"] = "~L.USE_CFFFFD700SHROUD_OF_ARCANE_ECHOES_R_TO_OPEN",
+						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 40.9, 69.9, EREDATH },
 						["questID"] = 49153,
 						["groups"] = {
@@ -16,7 +16,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(277327, {	-- Augari-Runed Chest
-						["description"] = "~L.USE_CFFFFD700SHROUD_OF_ARCANE_ECHOES_R_TO_OPEN",
+						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 70.6, 27.6, EREDATH },
 						["questID"] = 49129,
 						["groups"] = {
@@ -24,24 +24,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(276227, {	-- Augari Secret Stash
-						["description"] = createLocalizationString({
-							readable = "Use a |cFFFFD700Goblin Glider Kit|r to reach the floating island.",
-							constant = "USE_A_CFFFFD700GOBLIN_GLIDER_KIT_R_TO_REACH_THE",
-							export = true,
-							text = {
-								en = "Use a |cFFFFD700Goblin Glider Kit|r to reach the floating island.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "使用 |cFFFFD700地精滑翔器工具包|r 到达漂浮的岛屿。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Use a |cFFFFD700Goblin Glider Kit|r to reach the floating island.",
 						["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 						["coord"] = { 70.2, 59.8, EREDATH },
 						["questID"] = 48748,
@@ -50,7 +33,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(276224, {	-- Chest of Ill-Gotten Gains
-						["description"] = "~L.YOU_WILL_NEED_CFFFFD700LIGHT_S_JUDGMENT_R_TO",
+						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 						["coord"] = { 50.6, 38.5, EREDATH },
 						["questID"] = 48744,
 						["groups"] = {
@@ -66,24 +49,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(276230, {	-- Doomseeker's Treasure
-						["description"] = createLocalizationString({
-							readable = "Drop down into the hole by the waterfall and land on the ledge. You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
-							constant = "DROP_DOWN_INTO_THE_HOLE_BY_THE_WATERFALL_AND",
-							export = true,
-							text = {
-								en = "Drop down into the hole by the waterfall and land on the ledge. You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "从瀑布旁的洞口跳下，落在台沿上。你需要一个|cFFFFD700地精滑翔器工具包|r才能到达这个宝箱。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Drop down into the hole by the waterfall and land on the ledge. You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
 						["coord"] = { 43.5, 54.4, EREDATH },
 						["questID"] = 48751,
 						["groups"] = {
@@ -91,29 +57,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(276223, {	-- Eredar Treasure Cache
-						["description"] = createLocalizationString({
-							readable = "You can use the |cFFFFD700Lightforged Warframe|r to get across, although it shouldn't be necessary.",
-							constant = "YOU_CAN_USE_THE_CFFFFD700LIGHTFORGED_WARFRAME_R",
-							export = true,
-							text = {
-								en = "You can use the |cFFFFD700Lightforged Warframe|r to get across, although it shouldn't be necessary.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可以使用|cFFFFD700光铸机甲|r越过去，尽管这并非必要。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You can use the |cFFFFD700Lightforged Warframe|r to get across, although it shouldn't be necessary.",
 						["coord"] = { 42.9, 5.30, EREDATH },
 						["questID"] = 48743,
 					}),
 					o(277340, {	-- Secret Augari Chest
-						["description"] = "~L.USE_CFFFFD700SHROUD_OF_ARCANE_ECHOES_R_TO_OPEN",
+						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 62.2, 22.3, EREDATH },
 						["questID"] = 49151,
 						["groups"] = {
@@ -121,29 +70,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(276229, {	-- Shattered House Chest
-						["description"] = createLocalizationString({
-							readable = "You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
-							constant = "YOU_WILL_NEED_A_CFFFFD700GOBLIN_GLIDER_KIT_R_TO",
-							export = true,
-							text = {
-								en = "You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要一个|cFFFFD700地精滑翔器工具包|r才能到达这个宝箱。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
 						["coord"] = { 27.5, 40.2, EREDATH },
 						["questID"] = 48750,
 					}),
 					o(276225, {	-- Student's Surprising Surplus
-						["description"] = "~L.YOU_WILL_NEED_CFFFFD700LIGHT_S_JUDGMENT_R_TO",
+						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 						["coord"] = { 61.2, 72.5, EREDATH },
 						["questID"] = 48745,
 						["groups"] = {
@@ -151,7 +83,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(276226, {	-- Void-Tinged Chest
-						["description"] = "~L.YOU_WILL_NEED_CFFFFD700LIGHTFORGED_WARFRAME_R",
+						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
 						["coord"] = { 40.2, 51.5, EREDATH },
 						["questID"] = 48747,
 						["groups"] = {

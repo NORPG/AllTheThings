@@ -3,86 +3,18 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, {
 	pickpocketing(true, {
-		["description"] = createLocalizationString({
-			readable = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
-			constant = "A_ROGUE_CAN_USE_THEIR_PICK_POCKET_SKILL_TO",
-			export = true,
-			text = {
-				en = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "盗贼可以使用他们的搜索技能从特定区域的怪物身上偷取以下物品。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
 		["groups"] = {
 			i(6150, {	-- A Frayed Knot
-				["description"] = createLocalizationString({
-					readable = "Can be pickpocketed from Classic humanoids.",
-					constant = "CAN_BE_PICKPOCKETED_FROM_CLASSIC_HUMANOIDS",
-					export = true,
-					text = {
-						en = "Can be pickpocketed from Classic humanoids.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可从经典旧世的人型生物身上偷窃获得。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can be pickpocketed from Classic humanoids.",
 			}),
 			i(5373, {	-- Lucky Charm
-				["description"] = createLocalizationString({
-					readable = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
-					constant = "WHILE_THERE_S_NO_EVIDENCE_TO_SUGGEST_THAT",
-					export = true,
-					text = {
-						en = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "虽然没有证据表明拥有这件物品能让你想要的东西掉落，但 Crieve 带着这个宝贝在背包里刷了仅仅 97 周的迦顿男爵后就拿到了他的第二个束缚。要是没有它，恐怕还得更久！",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
 			}),
 		},
 	}),
 	header(HEADERS.Spell, 1810, {	-- Lockpicking
-		["description"] = createLocalizationString({
-			readable = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
-			constant = "THESE_CONTAINERS_CAN_BE_OPENED_BY_A_ROGUE_WITH",
-			export = true,
-			text = {
-				en = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "这些容器可以由潜行者使用开锁技能打开，或使用相应等级的钥匙打开。仅在这些箱子中出现的物品列在下方。",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 		["groups"] = {
 			i(16882, {	-- Battered Junkbox
 				["groups"] = {
@@ -3415,178 +3347,42 @@ root(ROOTS.WorldDrops, {
 	}),
 	filter(MISC, {
 		i(211786, {	-- Scroll: CHAP BALK WELLES
-			["description"] = createLocalizationString({
-				readable = "'Black Sheep Wall'",
-				constant = "BLACK_SHEEP_WALL",
-				export = true,
-				text = {
-					en = "'Black Sheep Wall'",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "'黑羊墙'",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "'Black Sheep Wall'",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211785, {	-- Scroll: CWAL
-			["description"] = createLocalizationString({
-				readable = "'Claw'",
-				constant = "CLAW",
-				export = true,
-				text = {
-					en = "'Claw'",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "'爪击'",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "'Claw'",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211780, {	-- Scroll: KWYJIBO
-			["description"] = createLocalizationString({
-				readable = "This might just be a Simpsons quote.",
-				constant = "THIS_MIGHT_JUST_BE_A_SIMPSONS_QUOTE",
-				export = true,
-				text = {
-					en = "This might just be a Simpsons quote.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这可能只是《辛普森一家》里的一句台词。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This might just be a Simpsons quote.",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211787, {	-- Scroll: LOWER PING WHOMEVER
-			["description"] = createLocalizationString({
-				readable = "'Overwhelming Power'",
-				constant = "OVERWHELMING_POWER",
-				export = true,
-				text = {
-					en = "'Overwhelming Power'",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "“压倒性的力量”",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "'Overwhelming Power'",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211854, {	-- Scroll: OMIT KESA
-			["description"] = createLocalizationString({
-				readable = "'Time Soak'",
-				constant = "TIME_SOAK",
-				export = true,
-				text = {
-					en = "'Time Soak'",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "“时间浸泡”",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "'Time Soak'",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211855, {	-- Scroll: STHENIC LUNATE
-			["description"] = createLocalizationString({
-				readable = "'Ancient Hustle'",
-				constant = "ANCIENT_HUSTLE",
-				export = true,
-				text = {
-					en = "'Ancient Hustle'",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "“上古骗局”",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "'Ancient Hustle'",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211853, {	-- Scroll: VOCE WELL
-			["description"] = createLocalizationString({
-				readable = "'Cow Level'",
-				constant = "COW_LEVEL",
-				export = true,
-				text = {
-					en = "'Cow Level'",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "'奶牛关'",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "'Cow Level'",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
 		i(211784, {	-- Scroll: WUBBA WUBBA
-			["description"] = createLocalizationString({
-				readable = "This might just be a Pee Wee Herman quote.",
-				constant = "THIS_MIGHT_JUST_BE_A_PEE_WEE_HERMAN_QUOTE",
-				export = true,
-				text = {
-					en = "This might just be a Pee Wee Herman quote.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "这可能只是皮威·赫尔曼的一句台词。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "This might just be a Pee Wee Herman quote.",
 			["classes"] = { MAGE },
 			["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		}),
@@ -4079,48 +3875,14 @@ root(ROOTS.WorldDrops, {
 		--
 		-- Cloth:
 		i(14256, {	-- Felcloth
-			["description"] = createLocalizationString({
-				readable = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
-				constant = "FELCLOTH_DROPS_UNCOMMONLY_FROM_GIVEN_SATYRS_AND",
-				export = true,
-				text = {
-					en = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "恶魔布由指定区域内的特定萨特和燃烧军团生物以较低几率掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
 			["maps"] = {
 				MAP.DIRE_MAUL_WARPWOOD_QUARTER,
 				MAP.FELWOOD,
 			},
 		}),
 		i(2589, {	-- Linen Cloth
-			["description"] = createLocalizationString({
-				readable = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-				constant = "LINEN_CLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID",
-				export = true,
-				text = {
-					en = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "亚麻布常见掉落于指定区域内的任何人型生物和亡灵生物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				MAP.DUN_MOROGH,
 				MAP.DUROTAR,
@@ -4134,24 +3896,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
-			["description"] = createLocalizationString({
-				readable = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-				constant = "MAGEWEAVE_CLOTH_DROPS_COMMONLY_FROM_ANY",
-				export = true,
-				text = {
-					en = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "魔纹布常见掉落于指定区域内的任何人型生物和亡灵生物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				MAP.BADLANDS,
 				MAP.BURNING_STEPPES,
@@ -4163,24 +3908,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(14047, {	-- Runecloth
-			["description"] = createLocalizationString({
-				readable = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
-				constant = "RUNECLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID_AND",
-				export = true,
-				text = {
-					en = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "符文布常见掉落于指定区域内的任何人型生物和亡灵生物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				MAP.BLACKROCK_DEPTHS,
 				MAP.BLASTED_LANDS,
@@ -4192,24 +3920,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(4306, {	-- Silk Cloth
-			["description"] = createLocalizationString({
-				readable = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-				constant = "SILK_CLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID_AND",
-				export = true,
-				text = {
-					en = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "丝绸常见掉落于指定区域内的任何人型生物和亡灵生物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DESOLACE,
@@ -4222,24 +3933,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(2592, {	-- Wool Cloth
-			["description"] = createLocalizationString({
-				readable = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-				constant = "WOOL_CLOTH_DROPS_COMMONLY_FROM_ANY_HUMANOID_AND",
-				export = true,
-				text = {
-					en = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "毛料在指定区域内的任何人形生物和亡灵生物身上都很常见。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			["maps"] = {
 				MAP.ASHENVALE,
 				MAP.BLACKFATHOM_DEEPS,
@@ -4250,24 +3944,7 @@ root(ROOTS.WorldDrops, {
 		}),
 		-- Silk:
 		i(14227, {	-- Ironweb Spider Silk
-			["description"] = createLocalizationString({
-				readable = "Drops from spiders in the level bracket 45-60.",
-				constant = "DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_45_60",
-				export = true,
-				text = {
-					en = "Drops from spiders in the level bracket 45-60.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 45-60 的蜘蛛掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from spiders in the level bracket 45-60.",
 			["crs"] = {
 				1821,	-- Carrion Lurker
 				5858,	-- Greater Lava Spider
@@ -4288,27 +3965,10 @@ root(ROOTS.WorldDrops, {
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			["description"] = "~L.DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_45_60",
+			["description"] = "Drops from spiders in the level bracket 45-60.",
 		}),
 		i(3182, {	-- Spider's Silk
-			["description"] = createLocalizationString({
-				readable = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-				constant = "DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_16_36",
-				export = true,
-				text = {
-					en = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 16-36 的蜘蛛掉落，在灰谷数量最多。蜘蛛通常与其他野兽共用刷新点，所以如果找不到蜘蛛，就把熊之类的杀掉。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = { MAP.ASHENVALE, },
 			["crs"] = {
 				3821,	-- Wildthorn Lurker
@@ -4334,24 +3994,7 @@ root(ROOTS.WorldDrops, {
 				1824,	-- Plague Lurker
 				1822,	-- Venom Mist Lurker
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from spiders in the level bracket 32-60.",
-				constant = "DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_32_60",
-				export = true,
-				text = {
-					en = "Drops from spiders in the level bracket 32-60.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 32-60 级范围内的蜘蛛掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from spiders in the level bracket 32-60.",
 			["maps"] = {
 				MAP.DUSTWALLOW_MARSH,
 				MAP.SEARING_GORGE,
@@ -4637,24 +4280,7 @@ root(ROOTS.WorldDrops, {
 				12380,	-- Unliving Resident
 				12377,	-- Wailing Spectre
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from Undead creatures in the given zones.",
-				constant = "DROPS_FROM_UNDEAD_CREATURES_IN_THE_GIVEN_ZONES",
-				export = true,
-				text = {
-					en = "Drops from Undead creatures in the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由指定区域中的亡灵生物掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from Undead creatures in the given zones.",
 			["maps"] = {
 				MAP.EASTERN_PLAGUELANDS,
 				MAP.WESTERN_PLAGUELANDS,
@@ -4664,24 +4290,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(12808, {	-- Essence of Undeath
-			["description"] = createLocalizationString({
-				readable = "Drops from Undead creatures in the given instances.",
-				constant = "DROPS_FROM_UNDEAD_CREATURES_IN_THE_GIVEN",
-				export = true,
-				text = {
-					en = "Drops from Undead creatures in the given instances.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由指定副本中的亡灵生物掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from Undead creatures in the given instances.",
 			["maps"] = {
 				MAP.NAXXRAMAS,
 				MAP.SCHOLOMANCE,
@@ -4766,24 +4375,7 @@ root(ROOTS.WorldDrops, {
 				MAP.TANARIS,
 				MAP.THE_HINTERLANDS,
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
-				constant = "DROPS_COMMONLY_FROM_HUMANOID_AND_BEAST_SEA",
-				export = true,
-				text = {
-					en = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "常见掉落于等级 40-60 的类人型与野兽型海洋生物，如纳迦、巨人和海龟。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
 			["groups"] = {
 				i(7974),	-- Zesty Clam Meat
 				i(7971),	-- Black Pearl
@@ -4802,24 +4394,7 @@ root(ROOTS.WorldDrops, {
 				MAP.SILVERPINE_FOREST,
 				MAP.WESTFALL,
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
-				constant = "DROPS_COMMONLY_FROM_HUMANOID_AND_BEAST_SEA_2",
-				export = true,
-				text = {
-					en = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "常见掉落于等级 10-20 的类人型与野兽型海洋生物，如纳迦、巨人和海龟。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
 			["groups"] = {
 				i(5503),	-- Clam Meat
 				i(5498),	-- Small Lustrous Pearl
@@ -4831,24 +4406,7 @@ root(ROOTS.WorldDrops, {
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.WETLANDS,
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",
-				constant = "DROPS_COMMONLY_FROM_HUMANOID_AND_BEAST_SEA_3",
-				export = true,
-				text = {
-					en = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "常见掉落于等级 20-30 的类人型与野兽型海洋生物，如纳迦、巨人和海龟。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",
 			["groups"] = {
 				i(5500),	-- Iridescent Pearl
 				i(5504),	-- Tangy Clam Meat
@@ -4872,24 +4430,7 @@ root(ROOTS.WorldDrops, {
 				2164,	-- Rabid Thistle Bear
 				2163,	-- Thistle Bear
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
-				constant = "DROPS_FROM_BEARS_IN_THE_LEVEL_BRACKET_10_20",
-				export = true,
-				text = {
-					en = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级 10-20 的熊掉落，例如洛克莫丹的黑熊。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
 		}),
 		i(3730, {	-- Big Bear Meat
 			["coords"] = {
@@ -4900,24 +4441,7 @@ root(ROOTS.WorldDrops, {
 				3809,	-- Ashenvale Bear
 				3810,	-- Elder Ashenvale Bear
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
-				constant = "DROPS_FROM_BEARS_IN_THE_LEVEL_BRACKET_20_30",
-				export = true,
-				text = {
-					en = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级 20-30 的熊掉落，例如灰谷的熊。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
 		}),
 		i(2677, {	-- Boar Ribs
 			["coords"] = {
@@ -4927,24 +4451,7 @@ root(ROOTS.WorldDrops, {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
-				constant = "DROPS_FROM_BOARS_IN_THE_LEVEL_BRACKET_10_20",
-				export = true,
-				text = {
-					en = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 10-20 级范围内的野猪掉落，例如西部荒野的獠牙野猪。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
 		}),
 		i(3404, {	-- Buzzard Wing
 			["coords"] = {
@@ -4956,24 +4463,7 @@ root(ROOTS.WorldDrops, {
 				5428,	-- Roc
 				5430,	-- Searing Roc
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
-				constant = "DROPS_FROM_CARRION_BIRDS_IN_THE_LEVEL_BRACKET",
-				export = true,
-				text = {
-					en = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 30-60 的食腐鸟掉落，例如塔纳利斯的大鹏。大鹏可在巨大的骸骨肋骨附近找到。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 		}),
 		i(769, {	-- Chunk of Boar Meat
 			["coords"] = {
@@ -5005,24 +4495,7 @@ root(ROOTS.WorldDrops, {
 				1190,	-- Mountain Boar
 				390,	-- Porcine Entourage
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
-				constant = "DROPS_FROM_BOARS_IN_THE_LEVEL_BRACKET_5_20_LIKE",
-				export = true,
-				text = {
-					en = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 5-20 的野猪掉落，例如西部荒野的血牙野猪。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
 		}),
 		i(2675, {	-- Crawler Claw
 			["maps"] = {
@@ -5030,24 +4503,7 @@ root(ROOTS.WorldDrops, {
 				MAP.DARKSHORE,
 				MAP.WESTFALL,
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
-				constant = "DROPS_FROM_CRAWLERS_IN_THE_LEVEL_BRACKET_10_20",
-				export = true,
-				text = {
-					en = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 10-20 级范围内的爬行者掉落，例如灰谷、黑海岸和西部荒野沿海岸线各处的爬行者。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 		}),
 		i(2674, {	-- Crawler Meat
 			["maps"] = {
@@ -5055,7 +4511,7 @@ root(ROOTS.WorldDrops, {
 				MAP.DARKSHORE,
 				MAP.WESTFALL,
 			},
-			["description"] = "~L.DROPS_FROM_CRAWLERS_IN_THE_LEVEL_BRACKET_10_20",
+			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 		}),
 		i(1081, {	-- Crisp Spider Meat
 			["maps"] = {
@@ -5102,24 +4558,7 @@ root(ROOTS.WorldDrops, {
 		i(2924, {	-- Crocolisk Meat
 			["coord"] = { 54.3, 57.8, MAP.LOCH_MODAN },	-- The Loch (southern isle)
 			["cr"] = 1693,	-- Loch Crocolisk
-			["description"] = createLocalizationString({
-				readable = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
-				constant = "DROPS_FROM_CROCOLISKS_IN_THE_LEVEL_BRACKET_10",
-				export = true,
-				text = {
-					en = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 10-20 的鳄鱼掉落，例如洛克莫丹的鳄鱼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
 		}),
 		i(12207, {	-- Giant Egg
 			["coords"] = {
@@ -5131,24 +4570,7 @@ root(ROOTS.WorldDrops, {
 				5428,	-- Roc
 				5430,	-- Searing Roc
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
-				constant = "DROPS_FROM_BIRDS_AND_OWLBEASTS_IN_THE_LEVEL",
-				export = true,
-				text = {
-					en = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级 40-60 的鸟类和枭兽掉落，例如塔纳利斯的大鹏。大鹏可在巨大的骸骨肋骨周围找到。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 		}),
 		i(2251, {	-- Gooey Spider Leg
 			["coords"] = {
@@ -5160,24 +4582,7 @@ root(ROOTS.WorldDrops, {
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
-				constant = "DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_15_40",
-				export = true,
-				text = {
-					en = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 15-40 的蜘蛛掉落，例如暮色森林的蜘蛛。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
 		}),
 		i(723, {	-- Goretusk Liver
 			["coords"] = {
@@ -5190,7 +4595,7 @@ root(ROOTS.WorldDrops, {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			["description"] = "~L.DROPS_FROM_BOARS_IN_THE_LEVEL_BRACKET_10_20",
+			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
 		}),
 		i(12204, {	-- Heavy Kodo Meat
 			["coords"] = {
@@ -5201,24 +4606,7 @@ root(ROOTS.WorldDrops, {
 				4702,	-- Ancient Kodo
 				4701,	-- Dying Kodo
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from kodos in Desolace.",
-				constant = "DROPS_FROM_KODOS_IN_DESOLACE",
-				export = true,
-				text = {
-					en = "Drops from kodos in Desolace.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由凄凉之地的科多兽掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from kodos in Desolace.",
 		}),
 		i(5467, {	-- Kodo Meat
 			["maps"] = {
@@ -5235,24 +4623,7 @@ root(ROOTS.WorldDrops, {
 				3474,	-- Lakota'mani
 				3237,	-- Wooly Kodo
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from kodos in Mulgore and southern Barrens.",
-				constant = "DROPS_FROM_KODOS_IN_MULGORE_AND_SOUTHERN",
-				export = true,
-				text = {
-					en = "Drops from kodos in Mulgore and southern Barrens.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由莫高雷和贫瘠之地南部的科多兽掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from kodos in Mulgore and southern Barrens.",
 		}),
 		i(1015, {	-- Lean Wolf Flank
 			["coords"] = {
@@ -5262,24 +4633,7 @@ root(ROOTS.WorldDrops, {
 				565,	-- Rapid Dire Wolf
 				213,	-- Starving Dire Wolf
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
-				constant = "DROPS_FROM_WOLVES_IN_THE_LEVEL_BRACKET_15_30",
-				export = true,
-				text = {
-					en = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 15-30 的狼掉落，例如暮色森林的恐狼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
 		}),
 		i(3731, {	-- Lion Meat
 			["coords"] = {
@@ -5290,24 +4644,7 @@ root(ROOTS.WorldDrops, {
 				2385,	-- Foothill Stalker
 				2384,	-- Starving Mountain Lion
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
-				constant = "DROPS_FROM_LIONS_IN_THE_LEVEL_BRACKET_15_35",
-				export = true,
-				text = {
-					en = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 15-35 的狮子掉落，例如希尔斯布莱德丘陵和奥特兰克山脉的狮子。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
 		}),
 		i(12223, {	-- Meaty Bat Wing
 			["maps"] = {
@@ -5317,24 +4654,7 @@ root(ROOTS.WorldDrops, {
 				1553,	-- Greater Duskbat
 				1554,	-- Vampiric Duskbat
 			},
-			["description"] = createLocalizationString({
-				readable = "Only drops from bats in Tirisfal Glades.",
-				constant = "ONLY_DROPS_FROM_BATS_IN_TIRISFAL_GLADES",
-				export = true,
-				text = {
-					en = "Only drops from bats in Tirisfal Glades.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "仅从提瑞斯法林地的蝙蝠身上掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Only drops from bats in Tirisfal Glades.",
 		}),
 		i(1468, {	-- Murloc Fin
 			["coords"] = {
@@ -5349,24 +4669,7 @@ root(ROOTS.WorldDrops, {
 				1418,	-- Bluegill Raider
 				1027,	-- Bluegill Warrior
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
-				constant = "DROPS_FROM_MURLOCS_IN_THE_LEVEL_BRACKET_15_30",
-				export = true,
-				text = {
-					en = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 15-30 的鱼人掉落，例如湿地的蓝鳃鱼人。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
 		}),
 		i(12037, {	-- Mystery Meat
 			["coords"] = {
@@ -5379,24 +4682,7 @@ root(ROOTS.WorldDrops, {
 				1151,	-- Saltwater Crocolisk
 				1152,	-- Snapjaw Crocolisk
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
-				constant = "DROPS_FROM_A_DIVERSE_SELECTION_OF_CREATURES",
-				export = true,
-				text = {
-					en = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级 30-60 的各种生物掉落，从鬣狗到蝎子，例如荆棘谷的鳄鱼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
 		}),
 		i(3685, {	-- Raptor Egg
 			["coords"] = {
@@ -5407,24 +4693,7 @@ root(ROOTS.WorldDrops, {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
-				constant = "DROPS_FROM_RAPTORS_IN_THE_LEVEL_BRACKET_20_40",
-				export = true,
-				text = {
-					en = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 20-40 的迅猛龙掉落，例如荆棘谷的迅猛龙。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
 		}),
 		i(12184, {	-- Raptor Flesh
 			["coords"] = {
@@ -5435,24 +4704,7 @@ root(ROOTS.WorldDrops, {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
-				constant = "DROPS_FROM_RAPTORS_IN_THE_LEVEL_BRACKET_30_60",
-				export = true,
-				text = {
-					en = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 30-60 的迅猛龙掉落，例如荆棘谷的迅猛龙。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
 		}),
 		i(12203, {	-- Red Wolf Meat
 			["coords"] = {
@@ -5463,24 +4715,7 @@ root(ROOTS.WorldDrops, {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
-				constant = "DROPS_FROM_WOLVES_IN_THE_LEVEL_BRACKET_30_60",
-				export = true,
-				text = {
-					en = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 30-60 的狼掉落，例如费伍德森林的魔爪狼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
 		}),
 		i(6889, {	-- Small Egg
 			["coords"] = {
@@ -5508,24 +4743,7 @@ root(ROOTS.WorldDrops, {
 				10160,	-- Raging Moonkin
 				10159,	-- Young Moonkin
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones",
-				constant = "DROPS_FROM_BIRDS_OWLKIN_AND_STRIDERS_IN_ENTRY",
-				export = true,
-				text = {
-					en = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由初级及更低等级的经典旧世区域中的鸟类、枭兽和陆行鸟掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones",
 		}),
 		i(5465, {	-- Small Spider Leg
 			["coord"] = { 35.7, 13.7, MAP.SILVERPINE_FOREST },	-- The Skittering Dark
@@ -5540,24 +4758,7 @@ root(ROOTS.WorldDrops, {
 				2000,	-- Webwood Silkspinner
 				1999,	-- Webwood Venomfang
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",
-				constant = "DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_5_20",
-				export = true,
-				text = {
-					en = "Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 5-20 的蜘蛛掉落，例如银松森林和泰达希尔的蜘蛛。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",
 		}),
 		i(5468, {	-- Soft Frenzy Flesh
 			["coords"] = {
@@ -5569,24 +4770,7 @@ root(ROOTS.WorldDrops, {
 				6033,	-- Lake Frenzy
 				2173,	-- Reef Frenzy
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from frenzies found in bodies of water.",
-				constant = "DROPS_FROM_FRENZIES_FOUND_IN_BODIES_OF_WATER",
-				export = true,
-				text = {
-					en = "Drops from frenzies found in bodies of water.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由水域中的狂鱼掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from frenzies found in bodies of water.",
 			["maps"] = { MAP.SILVERPINE_FOREST },
 		}),
 		i(5471, {	-- Stag Meat
@@ -5600,24 +4784,7 @@ root(ROOTS.WorldDrops, {
 				3817,	-- Shadowhorn Stag
 				3816,	-- Wild Buck
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from stags in Ashenvale as well as some other vanilla zones.",
-				constant = "DROPS_FROM_STAGS_IN_ASHENVALE_AS_WELL_AS_SOME",
-				export = true,
-				text = {
-					en = "Drops from stags in Ashenvale as well as some other vanilla zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由灰谷以及其他一些经典旧世区域的雄鹿掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
 		i(5469, {	-- Strider Meat
 			["maps"] = { MAP.DARKSHORE },
@@ -5630,24 +4797,7 @@ root(ROOTS.WorldDrops, {
 				3245,	-- Ornery Plainstrider
 				2172,	-- Strider Clutchmother
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",
-				constant = "DROPS_FROM_STRIDERS_IN_THE_LEVEL_BRACKET_10_20",
-				export = true,
-				text = {
-					en = "Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 10-20 的陆行鸟掉落，例如黑海岸各处的森林陆行鸟。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",
 		}),
 		i(2672, {	-- Stringy Wolf Meat
 			["maps"] = {
@@ -5663,24 +4813,7 @@ root(ROOTS.WorldDrops, {
 				2960,	-- Prairie Wolf Alpha
 				118,	-- Prowler
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
-				constant = "DROPS_FROM_WOLVES_IN_THE_LEVEL_BRACKET_5_17",
-				export = true,
-				text = {
-					en = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 5-17 的狼掉落，例如艾尔文森林和莫高雷的狼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
 		}),
 		i(12206, {	-- Tender Crab Meat
 			["coords"] = {
@@ -5691,24 +4824,7 @@ root(ROOTS.WorldDrops, {
 				1088,	-- Monstrous Crawler
 				922,	-- Silt Crawler
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
-				constant = "DROPS_FROM_CRAWLERS_IN_THE_LEVEL_BRACKET_40_45",
-				export = true,
-				text = {
-					en = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 40-45 的爬行者掉落，例如悲伤沼泽的爬行者。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
 		}),
 		i(3667, {	-- Tender Crocolisk Meat
 			["coords"] = {
@@ -5721,24 +4837,7 @@ root(ROOTS.WorldDrops, {
 				1151,	-- Saltwater Crocolisk
 				1152,	-- Snapjaw Crocolisk
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
-				constant = "DROPS_FROM_CROCOLISKS_IN_THE_LEVEL_BRACKET_20",
-				export = true,
-				text = {
-					en = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 20-40 的鳄鱼掉落，例如荆棘谷的鳄鱼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
 		}),
 		i(12208, {	-- Tender Wolf Meat
 			["coords"] = {
@@ -5749,46 +4848,12 @@ root(ROOTS.WorldDrops, {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
-				constant = "DROPS_FROM_WOLVES_IN_THE_LEVEL_BRACKET_40_60",
-				export = true,
-				text = {
-					en = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 40-60 的狼掉落，例如费伍德森林的魔爪狼。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
 		}),
 		i(5470, {	-- Thunder Lizard Tail
 			["coord"] = { 47.0, 48.0, MAP.THE_BARRENS },	-- Taurajo, north of.
 			["cr"] = 3240,	-- Stormsnout
-			["description"] = createLocalizationString({
-				readable = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
-				constant = "DROPS_FROM_LIZARDS_IN_THE_LEVEL_BRACKET_15_30",
-				export = true,
-				text = {
-					en = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 15-30 的蜥蜴掉落，例如贫瘠之地的雷鼻蜥蜴。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
 		}),
 		i(12202, {	-- Tiger Meat
 			["coords"] = {
@@ -5799,24 +4864,7 @@ root(ROOTS.WorldDrops, {
 				1085,	-- Elder Stranglethorn Tiger
 				682,	-- Stranglethorn Tiger
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
-				constant = "DROPS_FROM_TIGERS_IN_THE_LEVEL_BRACKET_30_60",
-				export = true,
-				text = {
-					en = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 30-60 的老虎掉落，例如荆棘谷的老虎。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
 		}),
 		i(3712, {	-- Turtle Meat
 			["coords"] = {
@@ -5824,24 +4872,7 @@ root(ROOTS.WorldDrops, {
 				{ 61.5, 8.3, MAP.DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
 			},
 			["cr"] = 4397,	-- Mudrock Spikeshell
-			["description"] = createLocalizationString({
-				readable = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
-				constant = "DROPS_FROM_TURTLES_IN_THE_LEVEL_BRACKET_30_60",
-				export = true,
-				text = {
-					en = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 30-60 的海龟掉落，例如尘泥沼泽的泥岩海龟。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
 		}),
 		i(12205, {	-- White Spider Meat
 			["coords"] = {
@@ -5855,24 +4886,7 @@ root(ROOTS.WorldDrops, {
 				4376,	-- Darkmist Spider
 				4415,	-- Giant Darkfang Spiders
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
-				constant = "DROPS_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_35_60",
-				export = true,
-				text = {
-					en = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级范围 35-60 的蜘蛛掉落，例如尘泥沼泽的蜘蛛。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
 		}),
 		-- Sacks of Gems
 		i(17962),	-- Blue Sack of Gems
@@ -5882,24 +4896,7 @@ root(ROOTS.WorldDrops, {
 		i(11754, {["maps"] = { MAP.BLACKROCK_DEPTHS }, }),	-- Black Diamond
 		i(7191),	-- Fused Wiring
 		i(19441, {	-- Huge Venom Sac
-			["description"] = createLocalizationString({
-				readable = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",
-				constant = "CAN_DROP_FROM_SCORPIDS_AND_SPIDERS_IN_THE_LEVEL",
-				export = true,
-				text = {
-					en = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从 50-60 等级区间的蝎子和蜘蛛身上掉落，在燃烧平原和希利苏斯最为丰富。蜘蛛和蝎子常与其他野兽共享刷新点，所以如果找不到蝎子和蜘蛛，就杀掉猎犬或其他怪物。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",
 			["maps"] = {
 				MAP.BURNING_STEPPES,
 				MAP.SILITHUS,
@@ -5919,24 +4916,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5637, {	-- Large Fang
-			["description"] = createLocalizationString({
-				readable = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
-				constant = "DROPS_FROM_SOME_BEAST_AND_DEMON_CREATURES_LIKE",
-				export = true,
-				text = {
-					en = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由等级 25 至 40 的某些野兽和恶魔生物掉落，例如猎犬、猫科动物、蜘蛛、迅猛龙和蝙蝠。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
 			["maps"] = {
 				MAP.ASHENVALE,
 				MAP.BADLANDS,
@@ -5955,24 +4935,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(1288, {	-- Large Venom Sac
-			["description"] = createLocalizationString({
-				readable = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-				constant = "CAN_DROP_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_20",
-				export = true,
-				text = {
-					en = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从 20-35 级范围内的蜘蛛身上掉落，在灰谷和暮色森林数量最多。蜘蛛通常与其他野兽共用刷新点，所以如果找不到蜘蛛，就把熊之类的杀掉。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
 				MAP.ASHENVALE,
 				MAP.DUSKWOOD,
@@ -5986,24 +4949,7 @@ root(ROOTS.WorldDrops, {
 				10160,	-- Raging Moonkin
 				10159,	-- Young Moonkin
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
-				constant = "DROPS_FROM_BIRDS_HARPIES_OWLKIN_AND_STRIDERS_IN",
-				export = true,
-				text = {
-					en = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 10-30 级范围内的鸟类、鹰身女妖、枭兽和陆行鸟掉落，例如黑海岸的枭兽。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
 		}),
 		i(4589, {	-- Long Elegant Feather
 			["coords"] = {
@@ -6022,24 +4968,7 @@ root(ROOTS.WorldDrops, {
 				2658,	-- Razorbeak Gryphon
 				2651,	-- Witherbark Hideskinner
 			},
-			["description"] = createLocalizationString({
-				readable = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
-				constant = "ALLIANCE_PLAYERS_CAN_DISREGARD_THE_HINTERLANDS",
-				export = true,
-				text = {
-					en = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由于大多数怪物来源都是友好的，联盟玩家可以忽略辛特兰。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
 			["maps"] = { MAP.THE_HINTERLANDS },
 		}),
 		i(5116, {	-- Long Tail Feather
@@ -6047,24 +4976,7 @@ root(ROOTS.WorldDrops, {
 				{ 32.4, 66.0, MAP.STONETALON_MOUNTAINS },
 				{ 79.0, 77.0, MAP.THOUSAND_NEEDLES },
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from birds and harpies in the given zones.",
-				constant = "DROPS_FROM_BIRDS_AND_HARPIES_IN_THE_GIVEN_ZONES",
-				export = true,
-				text = {
-					en = "Drops from birds and harpies in the given zones.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由指定区域的鸟类和鹰身女妖掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from birds and harpies in the given zones.",
 			["maps"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.BADLANDS,
@@ -6072,24 +4984,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(7072, {	-- Naga Scale
-			["description"] = createLocalizationString({
-				readable = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
-				constant = "DROPS_FROM_NAGAS_RANGING_FROM_LEVEL_28_TO_40",
-				export = true,
-				text = {
-					en = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 28 到 40 级的纳迦掉落，不过掉落率很低。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
 			["maps"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DESOLACE,
@@ -6098,68 +4993,17 @@ root(ROOTS.WorldDrops, {
 		}),
 		i(12804, {	-- Powerful Mojo
 			["coord"] = { 72.0, 15.0, MAP.EASTERN_PLAGUELANDS },	-- Zul'mashar
-			["description"] = createLocalizationString({
-				readable = "Can drop from trolls.",
-				constant = "CAN_DROP_FROM_TROLLS",
-				export = true,
-				text = {
-					en = "Can drop from trolls.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从巨魔身上掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can drop from trolls.",
 			["maps"] = {
 				MAP.BLACKROCK_SPIRE,
 				MAP.ZULGURUB,
 			},
 		}),
 		i(18335, {	-- Pristine Black Diamond
-			["description"] = createLocalizationString({
-				readable = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
-				constant = "CAN_DROP_FROM_ANY_CONTENT_INTENDED_FOR_LEVEL",
-				export = true,
-				text = {
-					en = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从任何面向满级经典旧世玩家的内容中掉落，无论是厄运之槌、斯坦索姆、通灵学院还是团队副本。这是一件稀有物品，刷它需要运气。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
 		}),
 		i(4461, {	-- Raptor Hide
-			["description"] = createLocalizationString({
-				readable = "Drops from raptors ranging from level 30 to 40.",
-				constant = "DROPS_FROM_RAPTORS_RANGING_FROM_LEVEL_30_TO_40",
-				export = true,
-				text = {
-					en = "Drops from raptors ranging from level 30 to 40.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 30 到 40 级的迅猛龙掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from raptors ranging from level 30 to 40.",
 			["maps"] = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DUSTWALLOW_MARSH,
@@ -6167,24 +5011,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5635, {	-- Sharp Claw
-			["description"] = createLocalizationString({
-				readable = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
-				constant = "DROPS_FROM_SOME_BEAST_AND_DEMON_CREATURES_LIKE_2",
-				export = true,
-				text = {
-					en = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 10 到 30 级的一些野兽和恶魔生物掉落，例如猎犬、猫科动物、蜘蛛、迅猛龙和蝙蝠。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
 			["maps"] = {
 				MAP.ASHENVALE,
 				MAP.DARKSHORE,
@@ -6204,24 +5031,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5784, {	-- Slimy Murloc Scale
-			["description"] = createLocalizationString({
-				readable = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
-				constant = "DROPS_FROM_MURLOCS_IN_THE_LEVEL_BRACKET_15_25",
-				export = true,
-				text = {
-					en = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 15-25 级范围内的鱼人掉落，例如湿地的蓝腮鱼人。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
 			["coord"] = { 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
 			["crs"] = {
 				1026,	-- Bluegill Forager
@@ -6242,44 +5052,10 @@ root(ROOTS.WorldDrops, {
 				{ 15.0, 61.0, MAP.SWAMP_OF_SORROWS },
 				{ 62.0, 42.0, MAP.WETLANDS },
 			},
-			["description"] = createLocalizationString({
-				readable = "Drops from small dragonkin like darters and whelps.",
-				constant = "DROPS_FROM_SMALL_DRAGONKIN_LIKE_DARTERS_AND",
-				export = true,
-				text = {
-					en = "Drops from small dragonkin like darters and whelps.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由小型龙类掉落，例如飞掠者和雏龙。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from small dragonkin like darters and whelps.",
 		}),
 		i(1475, {	-- Small Venom Sac
-			["description"] = createLocalizationString({
-				readable = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-				constant = "CAN_DROP_FROM_SPIDERS_IN_THE_LEVEL_BRACKET_5_20",
-				export = true,
-				text = {
-					en = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "可从 5-20 级范围内的蜘蛛身上掉落，在洛克莫丹和石爪山脉数量最多。蜘蛛通常与其他野兽共用刷新点，所以如果找不到蜘蛛，就把熊之类的杀掉。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
 				MAP.LOCH_MODAN,
 				MAP.STONETALON_MOUNTAINS,
@@ -6357,24 +5133,7 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(8153, {	-- Wildvine
-			["description"] = createLocalizationString({
-				readable = "Drops from trolls ranging from level 40 to 50.",
-				constant = "DROPS_FROM_TROLLS_RANGING_FROM_LEVEL_40_TO_50",
-				export = true,
-				text = {
-					en = "Drops from trolls ranging from level 40 to 50.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "由 40 到 50 级的巨魔掉落。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Drops from trolls ranging from level 40 to 50.",
 			["maps"] = {
 				MAP.STRANGLETHORN_VALE,
 				MAP.THE_HINTERLANDS,

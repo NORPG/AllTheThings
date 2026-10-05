@@ -85,24 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(122214, {	-- Music Roll: Mulgore Plains
-						["description"] = createLocalizationString({
-							readable = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
-							constant = "GO_FISHING_FOR_A_BIT_IN_THE_POOLS_OF_VISION",
-							export = true,
-							text = {
-								en = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在灵魂高地下的预见之池钓一会儿鱼。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
 						["coord"] = { 28.61, 24.61, THUNDER_BLUFF },
 						["timeline"] = { ADDED_6_1_0 },
 						["races"] = HORDE_ONLY,

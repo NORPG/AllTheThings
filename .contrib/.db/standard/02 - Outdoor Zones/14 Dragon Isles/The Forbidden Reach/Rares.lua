@@ -72,24 +72,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200610, {	-- Duzalgor <Guardian of the Noxious Brood>
-				["description"] = createLocalizationString({
-					readable = "Inside The Support Creche.",
-					constant = "INSIDE_THE_SUPPORT_CRECHE",
-					export = true,
-					text = {
-						en = "Inside The Support Creche.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在援助保育所内。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Inside The Support Creche.",
 				["coord"] = { 41.1, 43.9, 2101 },
 				["questID"] = 73118,
 				["groups"] = {
@@ -115,24 +98,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200537, {	-- Gahz'raxes
-				["description"] = createLocalizationString({
-					readable = "In an underwater Cave. Western waypoint is the entrance.",
-					constant = "IN_AN_UNDERWATER_CAVE_WESTERN_WAYPOINT_IS_THE",
-					export = true,
-					text = {
-						en = "In an underwater Cave. Western waypoint is the entrance.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在水下洞穴中。西侧的航点即为入口。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "In an underwater Cave. Western waypoint is the entrance.",
 				["coords"] = {
 					{ 25.5, 38.0, THE_FORBIDDEN_REACH },	-- Gahz
 					{ 26.8, 41.3, THE_FORBIDDEN_REACH },	-- Cave Entrance
@@ -190,24 +156,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(203353, {	-- Loot Specialist <Venture Co. Acquisitions>
-				["description"] = createLocalizationString({
-					readable = "Can spawn anywhere on the isle.",
-					constant = "CAN_SPAWN_ANYWHERE_ON_THE_ISLE",
-					export = true,
-					text = {
-						en = "Can spawn anywhere on the isle.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "可以在岛上任何地方刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Can spawn anywhere on the isle.",
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["groups"] = {
@@ -252,24 +201,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200978, {	-- Pyrachniss
-				["description"] = createLocalizationString({
-					readable = "Inside the War Creche.",
-					constant = "INSIDE_THE_WAR_CRECHE",
-					export = true,
-					text = {
-						en = "Inside the War Creche.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在战争保育所内。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Inside the War Creche.",
 				["coord"] = { 67.3, 56.3, 2102 },
 				["questID"] = 73385,
 				["groups"] = {
@@ -278,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200600, {	-- Reisa the Drowned
-				["description"] = "~L.IN_A_CAVE_2",
+				["description"] = "In a cave.",
 				["coord"] = { 46.9, 9.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73117,
 				["groups"] = {
@@ -337,24 +269,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200911, {	-- Volcanakk
-				["description"] = createLocalizationString({
-					readable = "The left coordinates is the entrance point to the cave, the mob is in the middle of the cave.",
-					constant = "THE_LEFT_COORDINATES_IS_THE_ENTRANCE_POINT_TO",
-					export = true,
-					text = {
-						en = "The left coordinates is the entrance point to the cave, the mob is in the middle of the cave.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "左侧坐标是洞穴的入口位置，怪物在洞穴中央。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The left coordinates is the entrance point to the cave, the mob is in the middle of the cave.",
 				["coords"] = {
 					{ 74.51, 54.61, THE_FORBIDDEN_REACH },	-- Entrance
 					{ 78.51, 49.61, THE_FORBIDDEN_REACH },	-- Mob itself
@@ -366,7 +281,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200960, {	-- Warden Entrix
-				["description"] = "~L.INSIDE_THE_WAR_CRECHE",
+				["description"] = "Inside the War Creche.",
 				["coord"] = { 42.0, 83.8, 2102 },
 				["questID"] = 73367,
 				["groups"] = {

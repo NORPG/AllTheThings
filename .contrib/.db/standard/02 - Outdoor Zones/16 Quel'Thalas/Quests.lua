@@ -5,24 +5,7 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	n(QUESTS, {
 		q(94993, {	-- Adventuring in Midnight (Horde only?)
-			["description"] = createLocalizationString({
-				readable = "Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
-				constant = "POPS_UP_ON_ALTS_THE_FIRST_TIME_YOU_ENTER",
-				export = true,
-				text = {
-					en = "Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "小号首次进入圣光秘殿时会弹出，并引导你前往侦察地图，以便你选择从何处开始你的战役。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
 			["coord"] = { 45.7, 67.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["lockCriteria"] = { 1, "lvl", 80 },	-- Added because this quest pops up only on Alts and can't be completed on a Main Character.	-- Exo
 		}),
@@ -367,24 +350,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 			["coord"] = { 55.7, 70.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 		}),
 		q(91854, {	-- Deepening Shadows
-			["description"] = createLocalizationString({
-				readable = "Available after completing one of the optional zones after Eversong's campaign.",
-				constant = "AVAILABLE_AFTER_COMPLETING_ONE_OF_THE_OPTIONAL",
-				export = true,
-				text = {
-					en = "Available after completing one of the optional zones after Eversong's campaign.",
-					-- TODO: de = "",
-					-- TODO: es = "",
-					-- TODO: mx = "",
-					-- TODO: fr = "",
-					-- TODO: it = "",
-					-- TODO: ko = "",
-					-- TODO: pt = "",
-					-- TODO: ru = "",
-					cn = "完成永歌战役后的其中一个可选区域后可用。",
-					-- TODO: tw = "",
-				},
-			}),
+			["description"] = "Available after completing one of the optional zones after Eversong's campaign.",
 			["qg"] = 248631,	-- Commander Koruth Mountainfist
 			["coord"] = { 45.4, 70.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 		}),
@@ -887,30 +853,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(90876, {	-- Reluctant Hand
-					["description"] = createLocalizationString({
-						readable = "Becomes available after accepting 'A Path Forward' (92689).",
-						constant = "BECOMES_AVAILABLE_AFTER_ACCEPTING_A_PATH",
-						export = true,
-						text = {
-							en = "Becomes available after accepting 'A Path Forward' (92689).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "接受“前进之路”（92689）后开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Becomes available after accepting 'A Path Forward' (92689).",
 					["sourceQuest"] = 92689,	-- A Path Forward
 					["qg"] = 244701,	-- Grand Magister Rommath
 					["coord"] = { 53.4, 60.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(90871, {	-- The Silversun Compact
-					["description"] = "~L.BECOMES_AVAILABLE_AFTER_ACCEPTING_A_PATH",
+					["description"] = "Becomes available after accepting 'A Path Forward' (92689).",
 					["sourceQuest"] = 92689,	-- A Path Forward
 					["qg"] = 244699,	-- Vereesa Windrunner
 					["coord"] = { 40.1, 89.5, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -947,38 +896,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				------ Stay awhile and listen ------
 				hqt(92802, {	-- Stay awhile and listen: Arator
 					["name"] = "Stay awhile and listen: Arator",
-					["description"] = createLocalizationString({
-						readable = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
-						constant = "DIALOGUE_BECOMES_AVAILABLE_AFTER_THE_CUTSCENE",
-						export = true,
-						text = {
-							en = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在“从黑暗到光明”（90867）中的过场动画之后，对话将变为可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
 					["sourceQuest"] = 90862,	-- In Times of Need
 					["qg"] = 246789,	-- Arator
 					["coord"] = { 52.6, 45.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				}),
 				hqt(92810, {	-- Stay awhile and listen: Faerin Lothar
 					["name"] = "Stay awhile and listen: Faerin Lothar",
-					["description"] = "~L.DIALOGUE_BECOMES_AVAILABLE_AFTER_THE_CUTSCENE",
+					["description"] = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
 					["sourceQuest"] = 90862,	-- In Times of Need
 					["qg"] = 253144,	-- Faerin Lothar
 					["coord"] = { 53.2, 47.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				}),
 				hqt(92757, {	-- Stay awhile and listen: Grand Magister Rommath
 					["name"] = "Stay awhile and listen: Grand Magister Rommath",
-					["description"] = "~L.DIALOGUE_BECOMES_AVAILABLE_AFTER_THE_CUTSCENE",
+					["description"] = "Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",
 					["sourceQuest"] = 90862,	-- In Times of Need
 					["qg"] = 244578,	-- Grand Magister Rommath
 					["coord"] = { 51.2, 44.5, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },

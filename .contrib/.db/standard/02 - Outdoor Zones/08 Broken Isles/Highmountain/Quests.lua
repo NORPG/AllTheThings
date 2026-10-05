@@ -659,24 +659,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 43.6, 59.8, HIGHMOUNTAIN },
 				}),
 				q(39386, {	-- Procuring a Prototype
-					["description"] = createLocalizationString({
-						readable = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Rating Razik|r on the same character.",
-						constant = "WITHOUT_USING_THE_PARTY_SYNC_FEATURE_YOU_CANNOT",
-						export = true,
-						text = {
-							en = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Rating Razik|r on the same character.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果不使用队伍同步功能，你无法在同一个角色上同时完成此任务和|cffffff00给拉齐克评分|r。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Rating Razik|r on the same character.",
 					["sourceQuests"] = {
 						39178,	-- Moose on the Loose
 						40228,	-- Scout it Out
@@ -687,24 +670,7 @@ root(ROOTS.Zones, {
 					["isBreadcrumb"] = true,
 				}),
 				q(39417, {	-- Rating Razik
-					["description"] = createLocalizationString({
-						readable = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Procuring a Prototype|r on the same character.",
-						constant = "WITHOUT_USING_THE_PARTY_SYNC_FEATURE_YOU_CANNOT_2",
-						export = true,
-						text = {
-							en = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Procuring a Prototype|r on the same character.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果不使用队伍同步功能，你无法在同一个角色上同时完成此任务和|cffffff00获取原型机|r。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Procuring a Prototype|r on the same character.",
 					["sourceQuests"] = { 39656 },	-- Wolf Pack Attack
 					["altQuests"] = { 39386 },	-- Procuring a Prototype
 					["provider"] = { "n", 96513 },	-- Razik Gazbolt

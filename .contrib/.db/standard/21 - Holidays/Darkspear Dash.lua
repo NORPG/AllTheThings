@@ -23,24 +23,7 @@ local DARKSPEAR_DASH = createHeader({
 });
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
-	["description"] = createLocalizationString({
-		readable = "The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",
-		constant = "THE_DARKSPEAR_DASH_IS_A_WEEKEND_HORDE_ONLY",
-		export = true,
-		text = {
-			en = "The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",
-			-- TODO: de = "",
-			-- TODO: es = "",
-			-- TODO: mx = "",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
-			cn = "暗矛冲刺是一个仅限部落的周末微型节日，在六月底举行。玩家将参加从回音群岛到银月城的“冲刺”。\n\n该活动灵感来自“巨魔长跑”社区慈善活动。",
-			-- TODO: tw = "",
-		},
-	}),
+	["description"] = "The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",
 	["timeline"] = { ADDED_12_0_7 },
 	["groups"] = {
 		n(QUESTS, {

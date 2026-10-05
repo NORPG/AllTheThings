@@ -6,24 +6,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(TREASURES, {
 			o(288596, {	-- Cache of Secrets
-				["description"] = createLocalizationString({
-					readable = "Located in a cave behind a waterfall.",
-					constant = "LOCATED_IN_A_CAVE_BEHIND_A_WATERFALL",
-					export = true,
-					text = {
-						en = "Located in a cave behind a waterfall.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "位于瀑布后面的洞穴中。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Located in a cave behind a waterfall.",
 				["questID"] = 51338,
 				["coord"] = { 46.3, 26.6, DAZARALOR },
 			}),

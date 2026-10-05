@@ -59,46 +59,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 35.4, 69.6, HILLSBRAD_FOOTHILLS },
 					}),
 					pet(1159, {	-- Lofty Libram (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found around the Dalaran Crater.",
-							constant = "FOUND_AROUND_THE_DALARAN_CRATER",
-							export = true,
-							text = {
-								en = "Found around the Dalaran Crater.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在达拉然巨坑周围可找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found around the Dalaran Crater.",
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 					pet(452),	-- Red-Tailed Chipmunk (PET!)
 					pet(640, {	-- Snowshoe Hare (PET!)
-						["description"] = createLocalizationString({
-							readable = "Found around the Ruins of Alterac.",
-							constant = "FOUND_AROUND_THE_RUINS_OF_ALTERAC",
-							export = true,
-							text = {
-								en = "Found around the Ruins of Alterac.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在奥特兰克废墟周围可找到。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Found around the Ruins of Alterac.",
 					}),
 				},
 			}),
@@ -107,24 +73,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(278, {	-- Brazie Farmstead
 					-- #if AFTER DF
-					["description"] = createLocalizationString({
-						readable = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
-						constant = "THIS_EXPLORATION_NODE_MIGHT_FAIL_TO_COLLECT_AT",
-						export = true,
-						text = {
-							en = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在正式服中，此探索节点可能无法在其坐标或地图位置上被收集。这是由于暴雪方面的数据错误造成的。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
 					-- #endif
 				}),
 				exploration(1684),	-- Chillwind Point
@@ -166,7 +115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(283),	-- Slaughter Hollow
 				exploration(5604, {	-- Sludgeguard Tower
 					-- #if AFTER DF
-					["description"] = "~L.THIS_EXPLORATION_NODE_MIGHT_FAIL_TO_COLLECT_AT",
+					["description"] = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
 					-- #endif
 				}),
 				exploration(1678),	-- Sofera's Naze
@@ -184,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1680),	-- The Headland
 				exploration(286, {	-- The Sludge Fields
 					-- #if AFTER DF
-					["description"] = "~L.THIS_EXPLORATION_NODE_MIGHT_FAIL_TO_COLLECT_AT",
+					["description"] = "This exploration node might fail to collect at its coordinates, or its location on the map, in the retail version of the game. This is due to erroneous data on Blizzard's end.",
 					-- #endif
 				}),
 				exploration(284),	-- The Uplands
@@ -200,7 +149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
 				}),
 				faction(FACTION_SYNDICATE, {	-- Syndicate
-					["description"] = "~L.NEUTRAL_IS_THE_HIGHEST_YOU_CAN_CURRENTLY_REACH",
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
 					["minReputation"] = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
 					["maxReputation"] = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
 				}),
@@ -593,24 +542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(550, {	-- Battle of Hillsbrad (7/7)
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
-					["description"] = createLocalizationString({
-						readable = "This version of the quest is given to players that have not completed the wrath gate yet.",
-						constant = "THIS_VERSION_OF_THE_QUEST_IS_GIVEN_TO_PLAYERS_3",
-						export = true,
-						text = {
-							en = "This version of the quest is given to players that have not completed the wrath gate yet.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此版本的任务会给予尚未完成愤怒之门的玩家。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This version of the quest is given to players that have not completed the wrath gate yet.",
 					-- #endif
 					-- #endif
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
@@ -639,24 +571,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14351, {	-- Battle of Hillsbrad (7/7)
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
-					["description"] = createLocalizationString({
-						readable = "This version of the quest is given to players that have completed the wrath gate.",
-						constant = "THIS_VERSION_OF_THE_QUEST_IS_GIVEN_TO_PLAYERS_4",
-						export = true,
-						text = {
-							en = "This version of the quest is given to players that have completed the wrath gate.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此版本的任务会给予已完成愤怒之门的玩家。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This version of the quest is given to players that have completed the wrath gate.",
 					-- #endif
 					-- #endif
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
@@ -1449,7 +1364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Murloc Head
 							["provider"] = { "i", 3716 },	-- Murloc Head
-							["description"] = "~L.RUNNING_JOKE_IS_THAT_SINCE_ALL_ADVENTURERS_TAKE",
+							["description"] = "Running joke is that since all adventurers take from the Murlocs is their heads, that's why the drop rate is so low - there's a bunch of headless murlocs running around!",
 							["crs"] = {
 								14276,	-- Scargil
 								2375,	-- Torn Fin Coastrunner
@@ -1843,7 +1758,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Syndicate Missive
 							["provider"] = { "i", 3601 },	-- Syndicate Missive
-							["description"] = "~L.YOU_CAN_CHOOSE_TO_BRING_VALIK_A_DRINK_OR_KILL",
+							["description"] = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
 							["crs"] = {
 								2240,	-- Syndicate Footpad
 								2241,	-- Syndicate Thief
@@ -2001,24 +1916,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #endif
 				q(27480, {	-- Ley Energies
-					["description"] = createLocalizationString({
-						readable = "Must complete part of the Silverpine Forest questline for the quest item to drop.",
-						constant = "MUST_COMPLETE_PART_OF_THE_SILVERPINE_FOREST",
-						export = true,
-						text = {
-							en = "Must complete part of the Silverpine Forest questline for the quest item to drop.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须完成银松森林任务线的一部分，任务物品才会掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Must complete part of the Silverpine Forest questline for the quest item to drop.",
 					["sourceQuest"] = 27483,	-- Practical Vengeance
 					["provider"] = { "i", 61310 },	-- Arcane Remnant
 					["timeline"] = { ADDED_4_0_3 },
@@ -2847,7 +2745,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				}),
 				-- #if AFTER CATA
 				q(6681, {	-- The Manor, Ravenholdt (Alterac Mountains)
-					["description"] = "~L.SPEAK_WITH_A_ROGUE_TRAINER_AND_USE_SELECT_THE",
+					["description"] = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 					["providers"] = {
 						{ "i", 17125 },	-- Seal of Ravenholdt
 						{ "i", 17126 },	-- Seal of Ravenholdt
@@ -3771,24 +3669,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210026, {	-- Symbol of the Third Owl
-					["description"] = createLocalizationString({
-						readable = "Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",
-						constant = "USE_AQUATIC_FORM_OR_A_SWIM_SPEED_POTION_TO",
-						export = true,
-						text = {
-							en = "Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用水栖形态（或游泳加速药水）依次点击这些雕像。从东侧雕像开始，游向西侧雕像，因为西侧雕像所在的岛屿可以从东侧爬上去，从东到西是一条直线。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",
 					["providers"] = {
 						{ "o", 409942 },	-- Twin Owl Statue (West)
 						{ "o", 409949 },	-- Twin Owl Statue (East)
@@ -3817,7 +3698,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 			-- #endif
 			n(ZONE_DROPS, {
 				i(3668, {	-- Assassin's Contract
-					["description"] = "~L.THE_ASSASSINS_SPAWN_AS_PART_OF_A_RANDOM_WORLD",
+					["description"] = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3860,7 +3741,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				-- #if AFTER 10.1.7
 				i(4767, {	-- Coppercloth Gloves
-					["description"] = "~L.THIS_ITEM_IS_ONLY_NATURALLY_ACCESSIBLE_TO_HORDE_2",
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["coords"] = {
 						{ 27.8, 42.6, HILLSBRAD_FOOTHILLS },
 						{ 31.0, 43.6, HILLSBRAD_FOOTHILLS },
@@ -3976,24 +3857,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #if AFTER CATA
 				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "This pattern is very rare. Expect 1000+ of kills before looting it.",
-						constant = "THIS_PATTERN_IS_VERY_RARE_EXPECT_1000_OF_KILLS",
-						export = true,
-						text = {
-							en = "This pattern is very rare. Expect 1000+ of kills before looting it.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此图样非常稀有。预计要击杀 1000 次以上才能拾取到。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
 					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
 					["coords"] = {
 						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
@@ -4016,24 +3880,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				-- #endif
 				i(1485, {	-- Pitchfork
 					-- #if AFTER 10.1.7
-					["description"] = createLocalizationString({
-						readable = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
-						constant = "THIS_ITEMS_ONLY_DROPS_FROM_RISEN_HILLSBRAD",
-						export = true,
-						text = {
-							en = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此物品只从复生的希尔斯布莱德农夫身上掉落，而部落玩家在完成淤泥农场任务线后，由于位面机制将无法再遇到它们。\n位面机制可以通过小队同步绕过，方法是使用尚未达到该位面触发任务进度点的部落小号，或者使用联盟小号。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7

@@ -27,30 +27,13 @@ root(ROOTS.Craftables, {
 								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 								-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 								-- #if BEFORE 5.5.3
-								["description"] = "~L.THIS_IS_NOT_SUPPOSED_TO_BE_IN_THE_GAME_UNTIL",
+								["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 								-- #endif
 							})),
 							i(103670),	-- Lil' Bling (PET!)
 							i(90561, {	-- Eternium Rose
 								-- #if AFTER 6.2.0
-								["description"] = createLocalizationString({
-									readable = "Can be turned in in Booty Bay for a bag of gold!",
-									constant = "CAN_BE_TURNED_IN_IN_BOOTY_BAY_FOR_A_BAG_OF_GOLD",
-									export = true,
-									text = {
-										en = "Can be turned in in Booty Bay for a bag of gold!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "可在藏宝海湾上交换取一袋金币！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Can be turned in in Booty Bay for a bag of gold!",
 								-- #endif
 							}),
 						},

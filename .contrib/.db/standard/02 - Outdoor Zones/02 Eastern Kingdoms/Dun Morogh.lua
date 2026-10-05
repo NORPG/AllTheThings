@@ -36,24 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER 10.1.7
 					pickpocketing({
 						i(2109, {	-- Frostmane Chain Vest
-							["description"] = createLocalizationString({
-								readable = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-								constant = "CAN_BE_PICKPOCKETED_FROM_FROSTMANE_TROLLS_IN",
-								export = true,
-								text = {
-									en = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "可从丹莫罗的霜鬃巨魔以及艾泽拉斯其他低等级生物身上偷窃获得。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
 							["coord"] = { 32.4, 75.8, DUN_MOROGH },
 							["timeline"] = { ADDED_10_1_7 },
 							["cr"] = 706,	-- Frostmane Troll Whelp
@@ -305,24 +288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 						}),
 						q(24493, {	-- Don't Forget About Us
-							["description"] = createLocalizationString({
-								readable = "Only available during |cFFFFD700Pack Your Bags|r.",
-								constant = "ONLY_AVAILABLE_DURING_CFFFFD700PACK_YOUR_BAGS_R",
-								export = true,
-								text = {
-									en = "Only available during |cFFFFD700Pack Your Bags|r.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "仅在 |cFFFFD700收拾行囊|r 期间可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["altQuests"] = { 24492 },	-- Pack Your Bags
 							["qg"] = 37087,	-- Jona Ironstock
@@ -823,24 +789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 208565 },	-- Altar of the Light
 									},
 									["coord"] = { 28.8, 66.6, DUN_MOROGH },
-									["description"] = createLocalizationString({
-										readable = "Kneel (/kneel) at the Altar of the Light to gain a Meditation buff, then use the Rune to complete the quest.",
-										constant = "KNEEL_KNEEL_AT_THE_ALTAR_OF_THE_LIGHT_TO_GAIN_A",
-										export = true,
-										text = {
-											en = "Kneel (/kneel) at the Altar of the Light to gain a Meditation buff, then use the Rune to complete the quest.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在圣光祭坛跪下（/kneel）以获得冥想增益，然后使用符文完成任务。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Kneel (/kneel) at the Altar of the Light to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
 								i(711),	-- Tattered Cloth Gloves
@@ -1605,69 +1554,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					battlepets({
 						pet(1162, {	-- Fluxfire Feline (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found all around the Toxic Airfield and Lower Gnomeregan.",
-								constant = "FOUND_ALL_AROUND_THE_TOXIC_AIRFIELD_AND_LOWER",
-								export = true,
-								text = {
-									en = "Found all around the Toxic Airfield and Lower Gnomeregan.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在剧毒机场和诺莫瑞根下层各处都能找到。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found all around the Toxic Airfield and Lower Gnomeregan.",
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(442, {	-- Irradiated Roach (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found only in the Toxic Airfield near Gnomeregan.",
-								constant = "FOUND_ONLY_IN_THE_TOXIC_AIRFIELD_NEAR",
-								export = true,
-								text = {
-									en = "Found only in the Toxic Airfield near Gnomeregan.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只在诺莫瑞根附近的剧毒机场出现。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found only in the Toxic Airfield near Gnomeregan.",
 							["coord"] = { 43.0, 59.0, NEW_TINKERTOWN },
 						}),
 					}),
 					petbattles({
 						n(124617, {	-- Environeer Bert <Leprous Pet Tamer>
 							["coord"] = { 42.9, 74.3, NEW_TINKERTOWN_LOWER },
-							["description"] = createLocalizationString({
-								readable = "This tamer's pets scale with the level of your pets. (They will be the same level as your highest pet in your party!) Meaning the easiest strategy is actually to bring 3 level 1 Elemental pets with an Elemental attack, spam, and win.",
-								constant = "THIS_TAMER_S_PETS_SCALE_WITH_THE_LEVEL_OF_YOUR",
-								export = true,
-								text = {
-									en = "This tamer's pets scale with the level of your pets. (They will be the same level as your highest pet in your party!) Meaning the easiest strategy is actually to bring 3 level 1 Elemental pets with an Elemental attack, spam, and win.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此训练师的宠物会随你的宠物等级而变化。（它们会与队伍中你等级最高的宠物同级！）也就是说，最简单的策略其实是带上 3 只拥有元素攻击的 1 级元素宠物，一路狂按技能就能赢。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "This tamer's pets scale with the level of your pets. (They will be the same level as your highest pet in your party!) Meaning the easiest strategy is actually to bring 3 level 1 Elemental pets with an Elemental attack, spam, and win.",
 							["timeline"] = { ADDED_7_3_0 },
 							["groups"] = {
 								q(47895, {	-- Bert's Bots
@@ -2701,24 +2599,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 10.1.7
 			pickpocketing({
 				i(2109, {	-- Frostmane Chain Vest
-					["description"] = createLocalizationString({
-						readable = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
-						constant = "CAN_BE_PICKPOCKETED_FROM_FROSTMANE_TROLLS_IN_2",
-						export = true,
-						text = {
-							en = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从丹莫罗的霜鬃巨魔以及艾泽拉斯其他低等级生物身上偷窃获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
 					["coord"] = { 49.0, 35.4, DUN_MOROGH },
 					["timeline"] = { ADDED_10_1_7 },
 					["cr"] = 41122,	-- Frostmane Snowstrider
@@ -2978,24 +2859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7674, {	-- Black Ram Exchange
-					["description"] = createLocalizationString({
-						readable = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
-						constant = "IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS_2",
-						export = true,
-						text = {
-							en = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你也是那些把自己独一无二的坐骑上交换成了普通坐骑的可怜人之一，我深表同情。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 1261,	-- Veron Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3209,7 +3073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(7673, {	-- Frost Ram Exchange
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS_2",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 1261,	-- Veron Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3351,7 +3215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(7675, {	-- Icy Blue Mechanostrider Replacement
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS_2",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 7955,	-- Milli Featherwhistle
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3447,24 +3311,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_6",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在侏儒达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet (QS!)
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { GNOME },
@@ -3478,24 +3325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_7",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在矮人达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet (QS!)
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -3735,7 +3565,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(415, {	-- Rejold's New Brew
 					-- #if BEFORE 4.0.3
-					["description"] = "~L.IF_YOU_WANT_TO_FINISH_THIS_COMPLETE_THE_PERFECT",
+					["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
 					-- #endif
 					["qgs"] = {
 						1378,	-- Pilot Bellowfiz
@@ -4119,7 +3949,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(433, {	-- The Public Servant
 					-- #if ANYCLASSIC
-					["description"] = "~L.THE_QUEST_THE_PUBLIC_SERVANT_GETS_FLAGGED_AS",
+					["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
 					-- #endif
 					["providers"] = {
 						{ "n", 1977 },	-- Senator Mehr Stonehallow
@@ -4169,7 +3999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(1977, {	-- Senator Mehr Stonehallow
 						-- #if AFTER 9.1.5
 						-- Danny Donkey: This have probably applied for all iterations of WoW, but oldest reports are from 9.1.5 and first iterations of Classic.
-						["description"] = "~L.THE_QUEST_THE_PUBLIC_SERVANT_GETS_FLAGGED_AS",
+						["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
 						-- #endif
 						}),
 					},
@@ -4406,7 +4236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7676, {	-- White Mechanostrider Replacement
-					["description"] = "~L.IF_YOU_ARE_ONE_OF_THE_POOR_UNFORTUNATE_SOULS_2",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 7955,	-- Milli Featherwhistle
 					["coords"] = {
 						-- #if AFTER CATA
@@ -4456,7 +4286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.2, 46.4, DUN_MOROGH },
 						-- #endif
 					},
-					["description"] = "~L.LOCATED_IN_THE_GRIZZLED_DEN",
+					["description"] = "Located in The Grizzled Den.",
 					["groups"] = {
 						i(3225, {	-- Bloodstained Knife
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -4486,24 +4316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208638, {	-- Fyodi
-					["description"] = createLocalizationString({
-						readable = "The runes he drops can also drop from any of the rare creatures in the zone.",
-						constant = "THE_RUNES_HE_DROPS_CAN_ALSO_DROP_FROM_ANY_OF",
-						export = true,
-						text = {
-							en = "The runes he drops can also drop from any of the rare creatures in the zone.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "他掉落的符文也可以从该区域的任意稀有生物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The runes he drops can also drop from any of the rare creatures in the zone.",
 					["coord"] = { 31.6, 40.0, DUN_MOROGH },
 					["classes"] = { HUNTER, MAGE, WARRIOR },
 					["groups"] = {
@@ -4564,24 +4377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1119, {	-- Hammerspine
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "Spawns at the very end of the cave.",
-						constant = "SPAWNS_AT_THE_VERY_END_OF_THE_CAVE",
-						export = true,
-						text = {
-							en = "Spawns at the very end of the cave.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在洞穴最深处刷新。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Spawns at the very end of the cave.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -4603,7 +4399,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208812, {	-- Jorul
-					["description"] = "~L.YOU_CAN_TAME_HIM_AND_YOU_STILL_GET_THE_RUNE",
+					["description"] = "You can tame him and you still get the rune!",
 					["coord"] = { 37.78, 42.55, DUN_MOROGH },
 					["cost"] = { { "i", 208192, 1 } },	-- Dun Morogh Pig Meat
 					["groups"] = {
@@ -4618,7 +4414,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(1271, {	-- Old Icebeard
 					-- #if AFTER 10.1.7
-					["description"] = "~L.LOCATED_IN_THE_GRIZZLED_DEN",
+					["description"] = "Located in The Grizzled Den.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
@@ -4637,24 +4433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
 					["provider"] = { "n", 208975 },	-- Rustling Bush
-					["description"] = createLocalizationString({
-						readable = "Cast Hunter's Mark on the bush to spawn the rare creature.",
-						constant = "CAST_HUNTER_S_MARK_ON_THE_BUSH_TO_SPAWN_THE_3",
-						export = true,
-						text = {
-							en = "Cast Hunter's Mark on the bush to spawn the rare creature.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "对灌木施放猎人印记以刷新稀有生物。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare creature.",
 					["coord"] = { 28.8, 49.6, DUN_MOROGH },
 					["classes"] = { HUNTER },
 					["groups"] = {
@@ -4952,24 +4731,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208711, {	-- Toby
-					["description"] = createLocalizationString({
-						readable = "Use the musk and tame a Rabbit and then bring it to Toby.",
-						constant = "USE_THE_MUSK_AND_TAME_A_RABBIT_AND_THEN_BRING",
-						export = true,
-						text = {
-							en = "Use the musk and tame a Rabbit and then bring it to Toby.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "使用麝香并驯服一只兔子，然后把它带给托比。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Use the musk and tame a Rabbit and then bring it to Toby.",
 					["coord"] = { 63.6, 50.2, DUN_MOROGH },
 					["cost"] = { { "i", 208180, 1 } },	-- Rabbit Musk
 					["crs"] = { 721 },	-- Rabbit
@@ -5048,7 +4810,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1126,	-- Large Crag Boar
 						-- #endif
 					},
-					["description"] = "~L.ONLY_DROPS_FROM_CRAG_BOARS_IN_DUN_MOROGH"
+					["description"] = "Only drops from Crag Boars in Dun Morogh."
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208192, {	-- Dun Morogh Pig Meat
@@ -5154,7 +4916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-					["description"] = "~L.THIS_CAN_DROP_FROM_ANY_OF_THE_RARE_CREATURES_IN",
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coord"] = { 78.6, 62.0, DUN_MOROGH },
 					["classes"] = { PRIEST },
 					["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>

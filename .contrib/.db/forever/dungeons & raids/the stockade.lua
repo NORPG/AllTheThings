@@ -112,24 +112,7 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
-				["description"] = createLocalizationString({
-					readable = "This is a rare that was not always present.",
-					constant = "THIS_IS_A_RARE_THAT_WAS_NOT_ALWAYS_PRESENT",
-					export = true,
-					text = {
-						en = "This is a rare that was not always present.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一种过去并不总是存在的稀有生物。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is a rare that was not always present.",
 				["groups"] = {
 					i(2942),	-- Iron Knuckles
 					i(3228),	-- Jimmied Handcuffs

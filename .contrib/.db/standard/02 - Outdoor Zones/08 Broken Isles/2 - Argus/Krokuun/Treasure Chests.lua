@@ -9,24 +9,7 @@ root(ROOTS.Zones, {
 				n(TREASURES, {
 					o(276490, {	-- Krokul Emergency Cache
 						["questID"] = 48884,
-						["description"] = createLocalizationString({
-							readable = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
-							constant = "YOU_WILL_NEED_CFFFFD700LIGHTFORGED_WARFRAME_R_2",
-							export = true,
-							text = {
-								en = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要|cFFFFD700光铸机甲|r才能清除这些岩石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
 						["coord"] = { 50.7, 75.3, KROKUUN },
 						["groups"] = {
 							i(153304),	-- Oronaar Miner's Dredger
@@ -34,29 +17,12 @@ root(ROOTS.Zones, {
 					}),
 					o(276489, {	-- Legion Tower Chest
 						["questID"] = 48885,
-						["description"] = createLocalizationString({
-							readable = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
-							constant = "YOU_WILL_NEED_CFFFFD700LIGHT_S_JUDGEMENT_R_TO",
-							export = true,
-							text = {
-								en = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你需要 |cFFFFD700圣光裁决|r 才能清除这些岩石。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
 						["coord"] = { 62.8, 37.6, KROKUUN },
 					}),
 					o(277343, {	-- Long-Lost Augari Treasure
 						["questID"] = 49154,
-						["description"] = "~L.USE_CFFFFD700SHROUD_OF_ARCANE_ECHOES_R_TO_OPEN",
+						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 75.1, 69.8, KROKUUN },
 						["groups"] = {
 							i(153284),	-- Augari Wakener's Treads
@@ -64,12 +30,12 @@ root(ROOTS.Zones, {
 					}),
 					o(276491, {	-- Lost Krokul Chest
 						["questID"] = 48886,
-						["description"] = "~L.YOU_WILL_NEED_CFFFFD700LIGHT_S_JUDGEMENT_R_TO",
+						["description"] = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
 						["coord"] = { 48.5, 58.9, KROKUUN },
 					}),
 					o(277344, {	-- Precious Augari Keepsakes
 						["questID"] = 49156,
-						["description"] = "~L.USE_CFFFFD700SHROUD_OF_ARCANE_ECHOES_R_TO_OPEN",
+						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 						["coord"] = { 55.9, 74.2, KROKUUN },
 						["groups"] = {
 							i(153283),	-- Augari Wakener's Vestments

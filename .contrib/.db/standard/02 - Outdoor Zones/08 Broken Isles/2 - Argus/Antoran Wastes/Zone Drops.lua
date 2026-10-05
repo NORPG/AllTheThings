@@ -9,24 +9,7 @@ root(ROOTS.Zones, {
 				n(ZONE_DROPS, {
 					header(HEADERS.NPC, 127943, {	-- Vishax's Portal
 						i(152940, {	-- Arc Circuit
-							["description"] = createLocalizationString({
-								readable = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
-								constant = "ONLY_DROPS_AFTER_CFFFFFFFFSMASHED_PORTAL",
-								export = true,
-								text = {
-									en = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "只有在收集到|cFFFFFFFF破碎的传送门发生器|r后才会掉落。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
 							["crs"] = {
 								127597,	-- Eredar War-Mind
 								126233,	-- Eredar War-Mind
@@ -35,7 +18,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(152941, {	-- Conductive Sheath
-							["description"] = "~L.ONLY_DROPS_AFTER_CFFFFFFFFSMASHED_PORTAL",
+							["description"] = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
 							["crs"] = {
 								127597,	-- Eredar War-Mind
 								126233,	-- Eredar War-Mind
@@ -44,7 +27,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(152891, {	-- Power Cell
-							["description"] = "~L.ONLY_DROPS_AFTER_CFFFFFFFFSMASHED_PORTAL",
+							["description"] = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
 							["crs"] = {
 								127597,	-- Eredar War-Mind
 								126233,	-- Eredar War-Mind
@@ -59,7 +42,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(152965, {	-- Vishax's Portal Generator (QS!)
-							["description"] = "~L.COLLECT_CFFFFFFFFSMASHED_PORTAL_GENERATOR_R",
+							["description"] = "Collect |cFFFFFFFFSmashed Portal Generator|r, |cFFFFFFFFConductive Sheath|r, |cFFFFFFFFArc Circuit|r and |cFFFFFFFFPower Cell|r from the elite Demons on the Terminus docks and ship, and combine them to create |cFFFFFFFFVishax's Portal Generator|r.\n\nOnce you create the item you will get a follow-up Quest to power up the portal to the rare.",
 							["cost"] = {
 								{ "i", 152890, 1 },	-- Smashed Portal Generator
 								{ "i", 152940, 1 },	-- Arc Circuit

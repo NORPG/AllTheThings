@@ -41,24 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			-- #if AFTER 5.2.0.16634
 			m(AHNQIRAJ_THE_FALLEN_KINGDOM, {
-				["description"] = createLocalizationString({
-					readable = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
-					constant = "THIS_IS_AN_OUTDOOR_ZONE_A_NON_INSTANCED_VERSION",
-					export = true,
-					text = {
-						en = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是一个户外区域，即安其拉神殿和安其拉废墟的非副本版本。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
 				["icon"] = 236829,
 				["groups"] = {
 					battlepets({
@@ -68,24 +51,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}},
 						["groups"] = {
 							pet(512, {	-- Scarab Hatchling (PET!)
-								["description"] = createLocalizationString({
-									readable = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
-									constant = "CAN_BE_FOUND_NEAR_THE_GATES_OF_AHN_QIRAJ_OR_IN",
-									export = true,
-									text = {
-										en = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "可在安其拉大门附近，或希利苏斯以南的非副本区域找到。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
 							}),
 						},
 					}),
@@ -138,24 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 				["groups"] = {
 					pet(513, {	-- Qiraji Guardling (PET!)
-						["description"] = createLocalizationString({
-							readable = "Starts spawning June 21st. Stops spawning September 23rd.",
-							constant = "STARTS_SPAWNING_JUNE_21ST_STOPS_SPAWNING",
-							export = true,
-							text = {
-								en = "Starts spawning June 21st. Stops spawning September 23rd.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "6 月 21 日开始刷新。9 月 23 日停止刷新。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Starts spawning June 21st. Stops spawning September 23rd.",
 					}),
 					pet(433),	-- Spiky Lizard (PET!)
 				},
@@ -194,24 +143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)
 					["cr"] = 15177,	-- Cloud Skydancer <Hippogryph Master>
 					-- #if AFTER CATA
-					["description"] = createLocalizationString({
-						readable = "Speak to Zidormi to visit the past and access this point.",
-						constant = "SPEAK_TO_ZIDORMI_TO_VISIT_THE_PAST_AND_ACCESS",
-						export = true,
-						text = {
-							en = "Speak to Zidormi to visit the past and access this point.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与希多尔米交谈以回到过去，从而进入此地点。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Speak to Zidormi to visit the past and access this point.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -225,7 +157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(72, {	-- Cenarion Hold, Silithus (H)
 					["cr"] = 15178,	-- Runk Windtamer <Wind Rider Master>
 					-- #if AFTER CATA
-					["description"] = "~L.SPEAK_TO_ZIDORMI_TO_VISIT_THE_PAST_AND_ACCESS",
+					["description"] = "Speak to Zidormi to visit the past and access this point.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2772,7 +2704,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(REWARDS, {
-				["description"] = "~L.THESE_ARE_REWARDED_FROM_MULTIPLE_QUESTS_IN_THE",
+				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
 					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
 						i(22648, {	-- Hive'Ashi Dossier
@@ -2796,24 +2728,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}))),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20419, {	-- Crest of Beckoning: Earth
 						-- #if AFTER CATA
-						["description"] = createLocalizationString({
-							readable = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-							constant = "THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
-							export = true,
-							text = {
-								en = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "在《大地的裂变》发布后，此物品变得毫无用处，因为其余物品已无法获得。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20527, 1 },	-- Scroll: Create Crest of Beckoning (Earth)
@@ -2823,7 +2738,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20416, {	-- Crest of Beckoning: Fire
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20518, 1 },	-- Scroll: Create Crest of Beckoning (Fire)
@@ -2833,7 +2748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20418, {	-- Crest of Beckoning: Thunder
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20526, 1 },	-- Scroll: Create Crest of Beckoning (Thunder)
@@ -2843,7 +2758,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20420, {	-- Crest of Beckoning: Water
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20528, 1 },	-- Scroll: Create Crest of Beckoning (Water)
@@ -2853,7 +2768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20449, {	-- Scepter of Beckoning: Stone
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20543, 1 },	-- Scroll: Create Scepter of Beckoning (Earth)
@@ -2863,7 +2778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20447, {	-- Scepter of Beckoning: Fire
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20540, 1 },	-- Scroll: Create Scepter of Beckoning (Fire)
@@ -2873,7 +2788,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20448, {	-- Scepter of Beckoning: Thunder
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20542, 1 },	-- Scroll: Create Scepter of Beckoning (Thunder)
@@ -2883,7 +2798,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20450, {	-- Scepter of Beckoning: Water
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20544, 1 },	-- Scroll: Create Scepter of Beckoning (Water)
@@ -2893,7 +2808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20435, {	-- Signet of Beckoning: Stone
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20533, 1 },	-- Scroll: Create Signet of Beckoning (Earth)
@@ -2903,7 +2818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20432, {	-- Signet of Beckoning: Fire
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20531, 1 },	-- Scroll: Create Signet of Beckoning (Fire)
@@ -2913,7 +2828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20433, {	-- Signet of Beckoning: Thunder
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20532, 1 },	-- Scroll: Create Signet of Beckoning (Thunder)
@@ -2923,7 +2838,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20436, {	-- Signet of Beckoning: Water
 						-- #if AFTER CATA
-						["description"] = "~L.THIS_ITEM_BECAME_USELESS_AFTER_THE_RELEASE_OF",
+						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
 						-- #endif
 						["cost"] = {
 							{ "i", 20535, 1 },	-- Scroll: Create Signet of Beckoning (Water)
@@ -2932,7 +2847,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20469, {	-- Decoded True Believer Clippings
-						["description"] = "~L.THIS_WILL_ARRIVE_IN_YOUR_MAILBOX_APPROXIMATELY",
+						["description"] = "This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",
 						["sourceQuests"] = {
 							8324,	-- Still Believing
 							8323,	-- True Believers
@@ -2947,79 +2862,62 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_FOUR, i(20555)),	-- Plans: Darkrune Helm (RECIPE!)
 							i(20527, {	-- Scroll: Create Crest of Beckoning (Earth)
 								-- #if AFTER CATA
-								["description"] = createLocalizationString({
-									readable = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-									constant = "EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
-									export = true,
-									text = {
-										en = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "尽管此卷轴仍可获得，但在《大地的裂变》发布后它就变得毫无用处，因为其余物品已无法获得。\n|cFFE50D12花费提示中列出的材料会被视为浪费。|r",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20518, {	-- Scroll: Create Crest of Beckoning (Fire)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20526, {	-- Scroll: Create Crest of Beckoning (Thunder)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20528, {	-- Scroll: Create Crest of Beckoning (Water)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20543, {	-- Scroll: Create Scepter of Beckoning (Earth)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20540, {	-- Scroll: Create Scepter of Beckoning (Fire)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20542, {	-- Scroll: Create Scepter of Beckoning (Thunder)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20544, {	-- Scroll: Create Scepter of Beckoning (Water)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20533, {	-- Scroll: Create Signet of Beckoning (Earth)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20531, {	-- Scroll: Create Signet of Beckoning (Fire)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20532, {	-- Scroll: Create Signet of Beckoning (Thunder)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 							i(20535, {	-- Scroll: Create Signet of Beckoning (Water)
 								-- #if AFTER CATA
-								["description"] = "~L.EVEN_THOUGH_THIS_SCROLL_CAN_STILL_BE_OBTAINED",
+								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
 								-- #endif
 							}),
 						},
@@ -3401,24 +3299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(20408, {	-- Twilight Cultist Cowl
 					-- #if BEFORE 10.0.5
 					-- #if AFTER 4.0.3
-					["description"] = createLocalizationString({
-						readable = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
-						constant = "IN_ORDER_TO_COLLECT_THIS_YOU_LL_NEED_TO_BIND_IT",
-						export = true,
-						text = {
-							en = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "要收集此物品，你需要将它绑定到你身上，例如对布甲角色使用附魔/护甲片，然后重新登录。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
 					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_7_1_5 },
@@ -3437,7 +3318,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(20406, {	-- Twilight Cultist Mantle
 					-- #if BEFORE 10.0.5
 					-- #if AFTER 4.0.3
-					["description"] = "~L.IN_ORDER_TO_COLLECT_THIS_YOU_LL_NEED_TO_BIND_IT",
+					["description"] = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
 					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_7_1_5 },
@@ -3456,7 +3337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(20407, {	-- Twilight Cultist Robe
 					-- #if BEFORE 10.0.5
 					-- #if AFTER 4.0.3
-					["description"] = "~L.IN_ORDER_TO_COLLECT_THIS_YOU_LL_NEED_TO_BIND_IT",
+					["description"] = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
 					-- #endif
 					-- #endif
 					["timeline"] = { REMOVED_7_1_5 },

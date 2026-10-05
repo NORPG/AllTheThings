@@ -396,24 +396,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- Marmaduke (move to special?)
 			q(86261, {	-- Homeward Bound to Safer Shores
-				["description"] = createLocalizationString({
-					readable = "You need to give Marmaduke the well loved squeky toy before to trigger this quest",
-					constant = "YOU_NEED_TO_GIVE_MARMADUKE_THE_WELL_LOVED",
-					export = true,
-					text = {
-						en = "You need to give Marmaduke the well loved squeky toy before to trigger this quest",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你需要先把深受喜爱的吱吱玩具交给马默杜克，才能触发此任务。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You need to give Marmaduke the well loved squeky toy before to trigger this quest",
 				["sourceQuests"] = { 86240 },	-- HQT: give toy to Marmaduke
 				["provider"] = { "n", 234357 },	-- Marmaduke
 				["coord"] = { 68.3, 44.9, SIREN_ISLE },

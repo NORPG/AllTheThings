@@ -175,24 +175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(RARES, {
 					n(228970, {	-- Galenges
-						["description"] = createLocalizationString({
-							readable = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
-							constant = "THIS_IS_A_RARE_THAT_MAY_NOT_ALWAYS_BE_PRESENT",
-							export = true,
-							text = {
-								en = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "这是一个并非总是存在的稀有生物。它似乎有很高的世界掉落史诗物品和配方掉率。入侵期间见到就杀！",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
 						["coord"] = { 22.6, 77.6, SEARING_GORGE },
 						["groups"] = {
 							i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
@@ -202,7 +185,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					n(228721, {	-- Lieutenant Skarresh
-						["description"] = "~L.THIS_IS_A_RARE_THAT_MAY_NOT_ALWAYS_BE_PRESENT",
+						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
 						["coord"] = { 43.8, 27.8, SEARING_GORGE },
 						["groups"] = {
 							i(228993),	-- Pattern: Bottomless Bag (RECIPE!)
@@ -217,7 +200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 					n(228969, {	-- Lord Gazzran
-						["description"] = "~L.THIS_IS_A_RARE_THAT_MAY_NOT_ALWAYS_BE_PRESENT",
+						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
 						["coord"] = { 38.4, 68.2, SEARING_GORGE },
 						["groups"] = {
 							i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
@@ -327,24 +310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
 					["coord"] = { 35.4, 27.8, SEARING_GORGE },
-					["description"] = createLocalizationString({
-						readable = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
-						constant = "THIS_PET_TAMER_IS_ALLIANCE_ONLY_THOUGH_HORDE_3",
-						export = true,
-						text = {
-							en = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此宠物训练师仅限联盟，不过部落玩家可以在完成部落版任务“宠物对战训练师：东部王国”时与他们对战一次。\n\nKortas 的宠物为 15 级，三个宠物的类别依次为：\n1. 龙类 - 使用人型（强力）或亡灵（耐打）宠物。\n2. 龙类 - 同上。\n3. 龙类 - 同上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
 					["timeline"] = { ADDED_5_0_4 },
 					["petBattleLvl"] = 15,
 					["groups"] = {
@@ -851,24 +817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28058, {	-- Look at the Size of It!
-					["description"] = createLocalizationString({
-						readable = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",
-						constant = "AFTER_LOOTING_THE_FIRST_PILLOW_DURING",
-						export = true,
-						text = {
-							en = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在 |cFFFFD700用睡眠剥夺消灭他们|r 期间拾取第一个枕头后，计时器会开始。大约 10 分钟后，|cFFFFD700女仆皮拉伦彻|r 会生成并掉落她的枕头。如果皮拉大师已经在你的分片上生成，你就不需要先完成前置任务来让他们生成。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",
 					["sourceQuests"] = {
 						28054,	-- Slavery Is Bad
 						28055,	-- Sweet, Horrible Freedom
@@ -905,24 +854,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27983, {	-- Lunk's Adventure: Cranky Little Dwarfs
-					["description"] = createLocalizationString({
-						readable = "Must be on |cFFFFD700Recon Essentials|r to get this quest. Lunk will appear when you kill a Dark Iron Dwarf.\n\nHigh-level players must unequip their weapons, hit the Dwarf once with auto-attack and stop after 1 hit.",
-						constant = "MUST_BE_ON_CFFFFD700RECON_ESSENTIALS_R_TO_GET",
-						export = true,
-						text = {
-							en = "Must be on |cFFFFD700Recon Essentials|r to get this quest. Lunk will appear when you kill a Dark Iron Dwarf.\n\nHigh-level players must unequip their weapons, hit the Dwarf once with auto-attack and stop after 1 hit.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "必须正在进行|cFFFFD700侦察基础|r才能接到此任务。当你击杀一个黑铁矮人时，伦克就会出现。\n\n高等级玩家必须卸下武器，用自动攻击打矮人一次，并在命中 1 次后停手。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Must be on |cFFFFD700Recon Essentials|r to get this quest. Lunk will appear when you kill a Dark Iron Dwarf.\n\nHigh-level players must unequip their weapons, hit the Dwarf once with auto-attack and stop after 1 hit.",
 					["sourceQuest"] = 27965,	-- Thorium Point: The Seat of the Brotherhood
 					["qg"] = 47332,	-- Lunk
 					["timeline"] = { ADDED_4_0_3 },
@@ -1435,7 +1367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3368, {	-- Suntara Stones (2/2)
 					-- #if BEFORE 4.0.3.13277
-					["description"] = "~L.THE_SINGED_LETTER_WILL_BE_ON_THE_GROUND_AFTER",
+					["description"] = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 					-- #endif
 					["sourceQuest"] = 3367,	-- Suntara Stones (1/2)
 					["providers"] = {
@@ -1995,24 +1927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 7.1.5.23360
 			n(TREASURES, {
 				o(266289, {	-- Time Lost Chest
-					["description"] = createLocalizationString({
-						readable = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
-						constant = "KILL_SEARING_FLAMEWRAITHS_UNTIL_YOU_GET_LAVA",
-						export = true,
-						text = {
-							en = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击杀灼热的烈焰幽灵，直到你获得熔岩之油。暂时不要使用它。前往采石场大门前的金属桥。时光迷失的宝箱就在下方凹壁处的岩浆里。使用火焰之油，跳下去，打开宝箱，然后使用炉石。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					["coord"] = { 37.0, 48.9, SEARING_GORGE },
 					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
@@ -2056,24 +1971,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(62916, {	-- Dark Iron Bullet
-					["description"] = createLocalizationString({
-						readable = "In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",
-						constant = "IN_ADDITION_TO_BEING_LOOTED_THIS_ITEM_CAN_ALSO",
-						export = true,
-						text = {
-							en = "In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "除了通过拾取获得外，这个物品还可以在被上述生物攻击时被动获得。任务“他们造出了更好的子弹”需要它，否则可以安全丢弃。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "In addition to being looted, this item can also be passively obtained by being attacked by said creatures. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",
 					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = {
 						8338,	-- Dark Iron Marksman
@@ -2118,24 +2016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- Started dropping again in 8.2. The new version (167886) is also available from Time-Lost Trader
 				}),
 				i(10463, {	-- Pattern: Shadoweave Mask (RECIPE!)
-					["description"] = createLocalizationString({
-						readable = "Required for the |cff3399ffLucid Nightmare|r mount.",
-						constant = "REQUIRED_FOR_THE_CFF3399FFLUCID_NIGHTMARE_R",
-						export = true,
-						text = {
-							en = "Required for the |cff3399ffLucid Nightmare|r mount.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "为|cff3399ff清醒的梦魇|r坐骑所需。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Required for the |cff3399ffLucid Nightmare|r mount.",
 					["timeline"] = { ADDED_7_3_0 },
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),

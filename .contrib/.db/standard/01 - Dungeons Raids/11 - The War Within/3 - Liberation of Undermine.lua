@@ -463,24 +463,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}))),
 				n(TREASURES, {
 					o(505248, {	-- Rune Dispenser
-						["description"] = createLocalizationString({
-							readable = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
-							constant = "INTERACT_WITH_FOR_A_10_CHANCE_FOR_A_FREE",
-							export = true,
-							text = {
-								en = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "与之互动有 10% 的几率获得一个免费的晶化强化符文。\n\n在名望 14 时，你至少保证获得一个。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
 						["questID"]	= 89350,
 						["minReputation"] = { FACTION_GALLAGIO, 2 },
 						["isWeekly"] = true,
@@ -652,7 +635,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "~L.THIS_ALLOWS_CONVERTING_CERTAIN_PIECES_OF_GEAR",
+				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2
@@ -689,24 +672,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(232526,{ ["provider"] = { "i", 232805 } }),	-- Best-in-Slots
 					i(232805,{ ["provider"] = { "i", 232526 } }),	-- Best-in-Slots
 					i(237578, {	-- Counterfeit Dealer's Chip
-						["description"] = createLocalizationString({
-							readable = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
-							constant = "HAS_A_SMALL_CHANCE_DROPPING_AS_PERSONAL_LOOT",
-							export = true,
-							text = {
-								en = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "当你在加拉吉奥忠诚奖励俱乐部的名望达到 15 后，有很小的几率作为个人拾取从独臂强盗身上掉落。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
 						["minReputation"] = { FACTION_GALLAGIO, 15 },
 					}),
 				}),

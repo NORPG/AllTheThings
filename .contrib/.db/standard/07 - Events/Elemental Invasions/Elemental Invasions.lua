@@ -44,24 +44,7 @@ root(ROOTS.WorldEvents, {
 			})),
 			-- #endif
 			n(14464, {	-- Avalanchion
-				["description"] = createLocalizationString({
-					readable = "This is only available during an Elemental Invasion.",
-					constant = "THIS_IS_ONLY_AVAILABLE_DURING_AN_ELEMENTAL",
-					export = true,
-					text = {
-						en = "This is only available during an Elemental Invasion.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅在元素入侵期间可用。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This is only available during an Elemental Invasion.",
 				["coords"] = {
 					{ 72.6, 20.0, AZSHARA },
 					{ 77.2, 16.6, AZSHARA },
@@ -75,7 +58,7 @@ root(ROOTS.WorldEvents, {
 				},
 			}),
 			n(14461, {	-- Baron Charr
-				["description"] = "~L.THIS_IS_ONLY_AVAILABLE_DURING_AN_ELEMENTAL",
+				["description"] = "This is only available during an Elemental Invasion.",
 				["coords"] = {
 					{ 44.6, 46.0, UNGORO_CRATER },
 					{ 48.2, 41.2, UNGORO_CRATER },
@@ -92,7 +75,7 @@ root(ROOTS.WorldEvents, {
 				},
 			}),
 			n(14457, {	-- Princess Tempestria
-				["description"] = "~L.THIS_IS_ONLY_AVAILABLE_DURING_AN_ELEMENTAL",
+				["description"] = "This is only available during an Elemental Invasion.",
 				["coord"] = { 54.6, 42.6, WINTERSPRING },
 				["groups"] = {
 					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
@@ -104,7 +87,7 @@ root(ROOTS.WorldEvents, {
 				},
 			}),
 			n(14454, {	-- The Windreaver
-				["description"] = "~L.THIS_IS_ONLY_AVAILABLE_DURING_AN_ELEMENTAL",
+				["description"] = "This is only available during an Elemental Invasion.",
 				["coords"] = {
 					{ 17.6, 27.0, SILITHUS },
 					{ 26.6, 29.6, SILITHUS },

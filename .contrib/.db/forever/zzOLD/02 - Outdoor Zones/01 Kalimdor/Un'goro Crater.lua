@@ -368,24 +368,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 								{ "i", 11522 },	-- Silver Totem of Aquementas
 							},
 							["coord"] = { 49.6, 49.6, MAP.UNGORO_CRATER },
-							["description"] = createLocalizationString({
-								readable = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
-								constant = "USE_THE_SILTER_TOTEM_OF_AQUEMENTAS_ON",
-								export = true,
-								text = {
-									en = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "对烈焰行者使用阿奎门塔斯的银图腾，以移除他的保护屏障。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
 						}),
 						objective(2, {	-- 0/1 Golden Flame
 							["providers"] = {

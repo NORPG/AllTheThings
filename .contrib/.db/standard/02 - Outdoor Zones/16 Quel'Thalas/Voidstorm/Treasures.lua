@@ -91,24 +91,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(266101) },	-- Unused Initiate's Bulwark (COSMETIC!)
 				}),
 				o(618016, {	-- Stellar Stash
-					["description"] = createLocalizationString({
-						readable = "Enter through the Portcullis on the left side.",
-						constant = "ENTER_THROUGH_THE_PORTCULLIS_ON_THE_LEFT_SIDE",
-						export = true,
-						text = {
-							en = "Enter through the Portcullis on the left side.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "从左侧的铁闸门进入。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Enter through the Portcullis on the left side.",
 					["provider"] = { "n", 257141 },	-- Stellar Stash
 					["coords"] = {
 						{ 52.2, 31.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },	-- Portcullis
@@ -118,24 +101,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(262467) },	-- Void Elf Round Table (DECOR!)
 				}),
 				o(572819, {	-- Void-Shielded Tomb
-					["description"] = createLocalizationString({
-						readable = "Drink the Potion of Dissociation from the nearby table in order to be able to see the Key.",
-						constant = "DRINK_THE_POTION_OF_DISSOCIATION_FROM_THE",
-						export = true,
-						text = {
-							en = "Drink the Potion of Dissociation from the nearby table in order to be able to see the Key.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "喝下附近桌上的分离药水，才能看到钥匙。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Drink the Potion of Dissociation from the nearby table in order to be able to see the Key.",
 					["coord"] = { 25.8, 67.3, MAP.MIDNIGHT.VOIDSTORM },
 					["questID"] = 92414,
 					["cost"] = { { "i", 251519, 1 } },	-- 1x Key of Fused Darkness
@@ -209,22 +175,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			--Repeatable
 			o(587195, {	-- Mysterious Domanaar Vessel
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { MAP.MIDNIGHT.VOIDSTORM },
 			}),
 			o(587240, {	-- Mysterious Domanaar Vessel
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { MAP.MIDNIGHT.VOIDSTORM },
 			}),
 			o(587194, {	-- Stashed Singularity Supplies
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { MAP.MIDNIGHT.VOIDSTORM },
 				["groups"] = {
 					i(259126),	-- Housing Dye: Void Violet (DECOR!)
 				},
 			}),
 			o(587238, {	-- Stashed Singularity Supplies
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { MAP.MIDNIGHT.VOIDSTORM },
 			}),
 		}),

@@ -170,24 +170,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(768, {	-- Gathering Leather
-					["description"] = createLocalizationString({
-						readable = "This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
-						constant = "THIS_QUEST_BECOMES_AVAILABLE_AT_SKINNING_SKILL",
-						export = true,
-						text = {
-							en = "This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当角色等级要求满足后，此任务会在剥皮技能等级 1 时开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, MAP.THUNDER_BLUFF },
 					["cost"] = { { "i", 2318, 12 } },	-- 12x Light Leather
@@ -200,24 +184,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(769, {	-- Kodo Hide Bag
-					["description"] = createLocalizationString({
-						readable = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
-						constant = "THIS_QUEST_BECOMES_AVAILABLE_AT_LEATHERWORKING",
-						export = true,
-						text = {
-							en = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "当角色等级要求满足后，此任务会在制皮技能等级 10 时开放。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] =
+						"This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, MAP.THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
@@ -225,24 +193,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["lvl"] = 5,
 					["groups"] = {
 						i(5083, {	-- Pattern: Kodo Hide Bag (RECIPE!)
-							["description"] = createLocalizationString({
-								readable = "This recipe is not soulbound and can be mailed to Horde alts.",
-								constant = "THIS_RECIPE_IS_NOT_SOULBOUND_AND_CAN_BE_MAILED",
-								export = true,
-								text = {
-									en = "This recipe is not soulbound and can be mailed to Horde alts.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此配方不是灵魂绑定的，可以邮寄给部落小号。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] =
+								"This recipe is not soulbound and can be mailed to Horde alts.",
 						}),
 					},
 				}),

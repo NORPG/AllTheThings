@@ -4,24 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
-		["description"] = createLocalizationString({
-			readable = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
-			constant = "GAIN_REPUTATION_WITH_THIS_FACTION_BY_TRAINING_A",
-			export = true,
-			text = {
-				en = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
-				-- TODO: de = "",
-				-- TODO: es = "",
-				-- TODO: mx = "",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "通过训练一只云端翔龙幼崽来提升该阵营的声望，最终你将获得天蓝、金色或翠玉云端翔龙坐骑中的一种。达到崇敬和崇拜还能解锁更多奖励，包括一个玩具、更多坐骑以及珠宝加工图纸。\n\n任务链从|cFFefc400野性之物|r开始。\n\n",
-				-- TODO: tw = "",
-			},
-		}),
+		["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
 		["maps"] = { THE_JADE_FOREST },
 		["icon"] = 646324,
 		["lvl"] = lvlsquish(90, 90, 10),
@@ -30,24 +13,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				ach(6550),	-- Order of the Cloud Serpent
 			}),
 			battlepets({
-				["description"] = createLocalizationString({
-					readable = "The following pets require Exalted with Order of the Cloud Serpent and can be found around The Arboretum.",
-					constant = "THE_FOLLOWING_PETS_REQUIRE_EXALTED_WITH_ORDER",
-					export = true,
-					text = {
-						en = "The following pets require Exalted with Order of the Cloud Serpent and can be found around The Arboretum.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "以下宠物需要云 serpents 教团崇敬，可以在植物园周围找到。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "The following pets require Exalted with Order of the Cloud Serpent and can be found around The Arboretum.",
 				["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },	-- Order of the Cloud Serpent, Exalted.
 				["groups"] = {
 					pet(819),	-- Wild Crimson Hatchling (PET!)
@@ -187,24 +153,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30148, {	-- Just a Flesh Wound
-					["description"] = createLocalizationString({
-						readable = "Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",
-						constant = "REQUIRES_WINDWOOL_OR_HEAVY_WINDWOOL_BANDAGES",
-						export = true,
-						text = {
-							en = "Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "需要风绒绷带或厚重风绒绷带。其他任何绷带都不会提供进度，无论治疗效果多好。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Requires Windwool- or Heavy Windwool Bandages. Any other bandages will not provide progression regardless of how well they heal.",
 					["sourceQuest"] = 30142,	-- It's A...
 					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
@@ -542,24 +491,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30152, {	-- The Sky Race
-					["description"] = createLocalizationString({
-						readable = "This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",
-						constant = "THIS_QUEST_IS_ON_A_ROTATION_THUS_ONLY",
-						export = true,
-						text = {
-							en = "This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "此任务处于轮换之中，因此只是偶尔可用。任务给予者不会提供其他任务来替代它。\n在完成前置任务的前提下，与该阵营崇拜的玩家也可以接取。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This quest is on a rotation thus only occasionally available. There are no other quests in it's place from the quest giver.\nIs also available for players who are Exalted with the faction given prerequisite quests are completed.",
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
 					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
@@ -573,43 +505,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 						i(90537, {	-- Winner's Reward
 							-- #if AFTER LEGION
-							["description"] = createLocalizationString({
-								readable = "Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",
-								constant = "CONTAINS_A_USELESS_GREY_ITEM_BASED_ON_HOW_WELL",
-								export = true,
-								text = {
-									en = "Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "内含一件无用的灰色物品，品质取决于你在竞赛中的名次。请在持续时间结束前卖给商人。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Contains a useless grey item based on how well you place in the race. Sell to vendor before it's duration runs out.",
 							-- #else
-							["description"] = createLocalizationString({
-								readable = "Contains a reward of Valor Points based on how well you place in the race.",
-								constant = "CONTAINS_A_REWARD_OF_VALOR_POINTS_BASED_ON_HOW",
-								export = true,
-								text = {
-									en = "Contains a reward of Valor Points based on how well you place in the race.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "内含奖励的勇气点数，数量取决于你在竞赛中的名次。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Contains a reward of Valor Points based on how well you place in the race.",
 							-- #endif
 							["groups"] = {
 								i(90543),	-- Fifth Place Valorous Commendation
@@ -621,24 +519,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 						}),
 						ach(7290, {	-- How To Strain Your Dragon
-							["description"] = createLocalizationString({
-								readable = "You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver.",
-								constant = "YOU_CAN_DO_AS_MANY_ATTEMPTS_AS_YOU_NEED_SIMPLY",
-								export = true,
-								text = {
-									en = "You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你可以进行任意多次尝试，只需下坐骑或放弃任务即可。\n\n骑上你自己的快速飞行坐骑参赛就能轻松拿到第一名。只需在与任务给予者互动时保持骑乘状态并开启自动奔跑。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You can do as many attempts as you need, simply dismount the serpent or abandon the quest.\n\nYou can easily get the first place by doing the run on your own fast flying mount. Simply be mounted and activate autorun while interacting with the quest giver.",
 						}),
 						ach(7291),	-- In a Trail of Smoke
 					},
@@ -825,24 +706,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
-					["description"] = createLocalizationString({
-						readable = "This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",
-						constant = "THIS_IS_A_TERRIBLY_DESIGNED_ESCORT_QUEST",
-						export = true,
-						text = {
-							en = "This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这是一个伪装成教学、设计得极其糟糕的护送任务，其中教学部分只会让不熟悉的玩家分心。你的主要目标是跟上教官，这意味着要抄近路、穿过云环来获取加速。之后请阅读聊天框中的独白，以获取信息。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is a terribly designed escort quest wrapped as a tutorial, where the tutorial part only will be a distraction for unfamiliar players. Your main objective is to keep up with the Instructor, which means cutting corners and going through cloud rings for speed boosts. Read through the monologue in the chat afterwards for the information dump.",
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
 					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
@@ -894,24 +758,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["isBreadcrumb"] = true,
 				}),
 				q(31810, {	-- Riding the Skies (Azure)
-					["description"] = createLocalizationString({
-						readable = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
-						constant = "YOU_WILL_RECEIVE_THE_MOUNT_THAT_CORRESPONDS_TO",
-						export = true,
-						text = {
-							en = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你将获得与你所选蛋的颜色相对应的坐骑。要获得另外两个坐骑，你可以从商人处购买，或用另一个角色再次完成此任务线。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
@@ -920,7 +767,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31811, {	-- Riding the Skies (Golden)
-					["description"] = "~L.YOU_WILL_RECEIVE_THE_MOUNT_THAT_CORRESPONDS_TO",
+					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
@@ -929,7 +776,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30188, {	-- Riding the Skies (Jade)
-					["description"] = "~L.YOU_WILL_RECEIVE_THE_MOUNT_THAT_CORRESPONDS_TO",
+					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
@@ -938,24 +785,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(32461, {	-- The Order of the Cloud Serpent
-					["description"] = createLocalizationString({
-						readable = "You are offered this quest after looting a Cloud Serpent mount without having completed the introductory quest for the Order of the Cloud Serpent.",
-						constant = "YOU_ARE_OFFERED_THIS_QUEST_AFTER_LOOTING_A",
-						export = true,
-						text = {
-							en = "You are offered this quest after looting a Cloud Serpent mount without having completed the introductory quest for the Order of the Cloud Serpent.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在未完成云端翔龙骑士团入门任务的情况下拾取到一只云端翔龙坐骑后，你会被提供此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You are offered this quest after looting a Cloud Serpent mount without having completed the introductory quest for the Order of the Cloud Serpent.",
 					["timeline"] = { ADDED_5_1_0 },
 					["isBreadcrumb"] = true,
 				}),
@@ -1025,24 +855,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						31811,	-- Riding the Skies (Golden)
 						30188,	-- Riding the Skies (Jade)
 					},
-					["description"] = createLocalizationString({
-						readable = "This is learned by completing the Riding the Skies quest chain upon reaching Exalted with the Order of the Cloud Serpents.",
-						constant = "THIS_IS_LEARNED_BY_COMPLETING_THE_RIDING_THE",
-						export = true,
-						text = {
-							en = "This is learned by completing the Riding the Skies quest chain upon reaching Exalted with the Order of the Cloud Serpents.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "这需要在云端翔龙骑士团达到崇拜后，完成“翱翔天际”任务线才能学会。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This is learned by completing the Riding the Skies quest chain upon reaching Exalted with the Order of the Cloud Serpents.",
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 				}),
@@ -1050,24 +863,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			-- #endif
 			n(TREASURES, {
 				o(214945, {	-- Onyx Egg
-					["description"] = createLocalizationString({
-						readable = "Collect these until exalted for turn-in reputation with the Order of the Cloud Serpents.",
-						constant = "COLLECT_THESE_UNTIL_EXALTED_FOR_TURN_IN",
-						export = true,
-						text = {
-							en = "Collect these until exalted for turn-in reputation with the Order of the Cloud Serpents.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "收集这些物品直至崇拜，用于向云端翔龙骑士团上交以获取声望。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Collect these until exalted for turn-in reputation with the Order of the Cloud Serpents.",
 					["coords"] = {
 						{ 62.0, 29.6, THE_JADE_FOREST },
 						{ 62.2, 29.3, THE_JADE_FOREST },
@@ -1131,24 +927,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}, {	-- Exalted
 							i(83877),	-- Design: Jeweled Onyx Panther (RECIPE!)
 							i(183123, {	-- How to School Your Serpent (CI!)
-								["description"] = createLocalizationString({
-									readable = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
-									constant = "PURCHASABLE_LEARNABLE_BY_ANY_CHARACTER_EXALTED",
-									export = true,
-									text = {
-										en = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "任何在云端翔龙骑士团达到崇拜的角色都可以购买/学习。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
 								["timeline"] = { ADDED_9_0_1 },
 							}),
 							-- #if ANYCLASSIC

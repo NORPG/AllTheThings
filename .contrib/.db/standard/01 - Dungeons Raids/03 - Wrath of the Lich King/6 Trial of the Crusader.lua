@@ -139,24 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
 					["coord"] = { 75.4, 21.6, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = createLocalizationString({
-						readable = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
-						constant = "CFFFF0000PURCHASING_THIS_EXACT_PIECE_SHARED",
-						export = true,
-						text = {
-							en = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "|CFFFF0000购买这件确切的物品（共享外观无效），并让 2 小时的计时结束，即可解锁部落版本。|r",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -323,24 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
 					["coord"] = { 75.4, 22.0, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = createLocalizationString({
-						readable = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
-						constant = "CFFFF0000PURCHASING_THIS_EXACT_PIECE_SHARED_2",
-						export = true,
-						text = {
-							en = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "|CFFFF0000购买这件确切的物品（共享外观无效），并让 2 小时的计时结束，即可解锁联盟版本。|r",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -506,7 +472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
 					["coord"] = { 75.2, 22.0, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "~L.CFFFF0000PURCHASING_THIS_EXACT_PIECE_SHARED_2",
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {
@@ -700,7 +666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
 					["coord"] = { 75.2, 21.6, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "~L.CFFFF0000PURCHASING_THIS_EXACT_PIECE_SHARED",
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {
@@ -894,7 +860,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
 					["coord"] = { 75.4, 22.0, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "~L.CFFFF0000PURCHASING_THIS_EXACT_PIECE_SHARED_2",
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDownFiltered(
@@ -1063,7 +1029,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
 					["coord"] = { 75.4, 21.6, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "~L.CFFFF0000PURCHASING_THIS_EXACT_PIECE_SHARED",
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = bubbleDownFiltered(
@@ -1269,24 +1235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					34496,	-- Eydis Darkbane
 					34564,	-- Anub'arak
 				},
-				["description"] = createLocalizationString({
-					readable = "These drop on all difficulties other than 10 Man Normal.",
-					constant = "THESE_DROP_ON_ALL_DIFFICULTIES_OTHER_THAN_10",
-					export = true,
-					text = {
-						en = "These drop on all difficulties other than 10 Man Normal.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "除 10 人普通难度外，这些在所有难度下都会掉落。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "These drop on all difficulties other than 10 Man Normal.",
 				["groups"] = {
 					-- #if BEFORE 4.0.1
 					currency(301),	-- Emblem of Triumph
@@ -1845,24 +1794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				o(195665, bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
-					["description"] = createLocalizationString({
-						readable = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
-						constant = "THIS_CHEST_APPEARS_AFTER_THE_DEFEAT_OF_ANUB",
-						export = true,
-						text = {
-							en = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在十字军的试炼中成功完成献礼模式并击败阿努巴拉克后，这个箱子会出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
 					--[[
 						Alliance	Description	Horde
 					1-24 Attempts
@@ -2433,7 +2365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				o(195665, bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
-					["description"] = "~L.THIS_CHEST_APPEARS_AFTER_THE_DEFEAT_OF_ANUB",
+					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
 					--[[
 						Alliance	Description	Horde
 					1-24 Attempts

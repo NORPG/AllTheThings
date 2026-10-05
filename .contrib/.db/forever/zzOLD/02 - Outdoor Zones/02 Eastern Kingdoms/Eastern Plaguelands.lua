@@ -60,28 +60,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
-					["description"] = createLocalizationString({
-						readable = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
-						constant = "IF_PLAGUEWOOD_TOWER_IS_CONTROLLED_BY_YOUR",
-						export = true,
-						text = {
-							en = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果病木林塔被你的阵营控制，你就能飞往这座塔。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
 					["collectible"] = false,
 				}),
 				fp(86, {	-- Eastwall Tower, Eastern Plaguelands
-					["description"] = "~L.IF_PLAGUEWOOD_TOWER_IS_CONTROLLED_BY_YOUR",
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
 					["collectible"] = false,
 				}),
 				fp(67, {	-- Light's Hope Chapel, Eastern Plaguelands
@@ -95,7 +78,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				fp(85, {	-- Northpass Tower, Eastern Plaguelands
-					["description"] = "~L.IF_PLAGUEWOOD_TOWER_IS_CONTROLLED_BY_YOUR",
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
 					["collectible"] = false,
 				}),
 				fp(84, {	-- Plaguewood Tower, Eastern Plaguelands
@@ -103,24 +86,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						17209,	-- William Kielar <Spectral Gryphon Master>
 					},
 					["coord"] = { 22.2, 31.4, MAP.EASTERN_PLAGUELANDS },
-					["description"] = createLocalizationString({
-						readable = "If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls.",
-						constant = "IF_THIS_TOWER_IS_CONTROLLED_BY_YOUR_FACTION_YOU",
-						export = true,
-						text = {
-							en = "If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果这座塔由你的阵营控制，你可以从这座塔飞往你方阵营控制的其他塔。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls.",
 					["collectible"] = false,
 				}),
 			}),
@@ -974,24 +940,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 						i(15454),	-- Mortar and Pestle
 						i(15447, {	-- Living Rot
-							["description"] = createLocalizationString({
-								readable = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
-								constant = "PROTIP_DO_NOT_LOOT_THESE_UNTIL_YOU_HAVE_A",
-								export = true,
-								text = {
-									en = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "小提示：在你于附近击杀几只生物之前，不要拾取这些物品。计时器会在你拾取的那一刻立即开始。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 						}),
 					},
 				}),
@@ -1066,24 +1015,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				q(9165, {	-- Writ of Safe Passage
-					["description"] = createLocalizationString({
-						readable = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
-						constant = "TWICE_PER_DAY_GUARD_DIDIER_STARTS_A_CARAVAN",
-						export = true,
-						text = {
-							en = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "每天两次，卫兵迪迪埃会开始一支向西行进的商队。只需保护他和骡子，但如果其中任何一个死亡，就失败了。商队抵达目的地后，他会提供此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
 					["coord"] = { 80.0, 58.0, MAP.EASTERN_PLAGUELANDS },
 					["repeatable"] = true,
@@ -1193,7 +1125,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(REWARDS, {
-				["description"] = "~L.THESE_ARE_REWARDED_FROM_MULTIPLE_QUESTS_IN_THE",
+				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
 					CRAFTSMANS_WRIT_QUEST(9188, 22609, { "i", 14104, 6 }),	-- Craftsman's Writ - Brightcloth Pants
 					CRAFTSMANS_WRIT_QUEST(9178, 22600, { "i", 12643, 120 }),	-- Craftsman's Writ - Dense Weightstone
@@ -1249,24 +1181,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(TREASURES, {
 				o(176213, {	-- Blood of Heroes
-					["description"] = createLocalizationString({
-						readable = "This item can be found sporatically on the ground in the Plaguelands.",
-						constant = "THIS_ITEM_CAN_BE_FOUND_SPORATICALLY_ON_THE",
-						export = true,
-						text = {
-							en = "This item can be found sporatically on the ground in the Plaguelands.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该物品会零星地出现在瘟疫之地的地面上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
 					["coords"] = {
 						-- Plaguewood
 						{ 34.5, 25.8, MAP.EASTERN_PLAGUELANDS },
@@ -1416,48 +1331,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
-					["description"] = createLocalizationString({
-						readable = "Vendor will not sell anything until you complete his quest.",
-						constant = "VENDOR_WILL_NOT_SELL_ANYTHING_UNTIL_YOU",
-						export = true,
-						text = {
-							en = "Vendor will not sell anything until you complete his quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在你完成他的任务之前，这名商人不会出售任何东西。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Vendor will not sell anything until you complete his quest.",
 					["sourceQuests"] = {
 						6164,	-- Augustus' Receipt Book
 					},
 					["coord"] = { 14.4, 33.6, MAP.EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(15902, {	-- A Crazy Grab Bag
-							["description"] = createLocalizationString({
-								readable = "Contains a random green item. In later expansions due to gold inflation, this might not be a bad purchase, but if you're trying to buy it before say Legion, don't bother.",
-								constant = "CONTAINS_A_RANDOM_GREEN_ITEM_IN_LATER",
-								export = true,
-								text = {
-									en = "Contains a random green item. In later expansions due to gold inflation, this might not be a bad purchase, but if you're trying to buy it before say Legion, don't bother.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "包含一件随机绿色物品。在后续资料片中，由于金币膨胀，这也许不算一笔糟糕的购买，但如果你是想在军团再临之前买它，那就不必了。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Contains a random green item. In later expansions due to gold inflation, this might not be a bad purchase, but if you're trying to buy it before say Legion, don't bother.",
 							["cost"] = { { "g", 80000 } },	-- 8g
 							["isLimited"] = true,
 						}),
@@ -1497,24 +1378,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						},
 						{	-- Revered
 							i(18171, {	-- Arcane Mantle of the Dawn
-								["description"] = createLocalizationString({
-									readable = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-									constant = "YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
-									export = true,
-									text = {
-										en = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你必须先完成“黎明披风”才能购买此物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -1522,7 +1386,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18169, {	-- Flame Mantle of the Dawn
-								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -1530,7 +1394,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18170, {	-- Frost Mantle of the Dawn
-								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -1538,7 +1402,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18172, {	-- Nature Mantle of the Dawn
-								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -1546,7 +1410,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								},
 							}),
 							i(18173, {	-- Shadow Mantle of the Dawn
-								["description"] = "~L.YOU_MUST_HAVE_FIRST_COMPLETED_MANTLES_OF_THE",
+								["description"] = "You must have first completed 'Mantles of the Dawn' in order to purchase this.",
 								["sourceQuests"] = {
 									5504,	-- Mantles of the Dawn
 									5507,	-- Mantles of the Dawn
@@ -1566,24 +1430,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						},
 						{	-- Exalted
 							i(18182, {	-- Chromatic Mantle of the Dawn
-								["description"] = createLocalizationString({
-									readable = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
-									constant = "YOU_MUST_HAVE_FIRST_COMPLETED_CHROMATIC_MANTLE",
-									export = true,
-									text = {
-										en = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你必须先完成“黎明彩色斗篷”才能购买此物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
 								["sourceQuests"] = {
 									5517,	-- Chromatic Mantle of the Dawn
 									5521,	-- Chromatic Mantle of the Dawn
@@ -1597,13 +1444,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			n(ZONE_DROPS, {
 				i(22526),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
-					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
+					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
-					["description"] = "~L.CAN_DROP_FROM_ANY_UNDEAD_CREATURE_IN_THE",
+					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
-					["description"] = "~L.CAN_DROP_FROM_WEAK_UNDEAD_CREATURE_IN_THE",
+					["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(16242, {	-- Formula: Enchant Chest - Major Intellect (RECIPE!)
 					["cr"] = 9452,	-- Scarlet Enchanter
@@ -1661,28 +1508,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(12811, {	-- Righteous Orb
-					["description"] = "~L.CAN_DROP_FROM_ANY_SCARLET_CRUSADE_MEMBER_IN",
+					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 					["cr"] = 12339,	-- Demetria <The Scarlet Oracle>
 				}),
 				i(16056, {	-- Schematic: Flawless Arcanite Rifle (RECIPE!)
-					["description"] = createLocalizationString({
-						readable = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",
-						constant = "CAN_KILL_MOSSFLAYER_SCOUT_AND_MOSSFLAYER",
-						export = true,
-						text = {
-							en = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可以击杀苔藓皮斥候和苔藓皮食人者来获取暗影猎手。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",
 					["coords"] = {
 						{ 72.8, 15.2, MAP.EASTERN_PLAGUELANDS },
 						{ 68.8, 20.6, MAP.EASTERN_PLAGUELANDS },

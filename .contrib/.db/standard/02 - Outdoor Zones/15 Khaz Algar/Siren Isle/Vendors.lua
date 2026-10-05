@@ -41,30 +41,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 71.2, 44.0, SIREN_ISLE },
 				["groups"] = {
 					fbiron(50, i(228638, {	-- Stormbringer's Runed Citrine
-						["description"] = createLocalizationString({
-							readable = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
-							constant = "YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
-							export = true,
-							text = {
-								en = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可能需要先以奖励目标奖励的形式获得一次该宝石，它才会出现在商人处。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228639, {	-- Fathomdweller's Runed Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228640, {	-- Windsinger's Runed Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 				},
 			}),
@@ -75,13 +58,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 				["groups"] = {
 					fbiron(50, i(228642, {	-- Storm Sewer's Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228643, {	-- Old Salt's Bardic Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228644, {	-- Mariner's Hallowed Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 				},
 			}),
@@ -180,24 +163,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(228099, {	-- Blinky Greasefingers
-				["description"] = createLocalizationString({
-					readable = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
-					constant = "YOU_MUST_HAVE_THE_PRISMATIC_SNAPDRAGON_MOUNT_6",
-					export = true,
-					text = {
-						en = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "你必须先拥有棱彩龙蜥坐骑，此对话选项才会出现。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
 				-- ["lockCriteria"] = { 1, "questID", 86485 },	-- TODO: probably a spellID will be better?
 				["coord"] = { 69.2, 45.8, SIREN_ISLE },
 				["groups"] = {
@@ -209,13 +175,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 71.2, 45.6, SIREN_ISLE },
 				["groups"] = {
 					fbiron(50, i(228634, {	-- Thunderlord's Crackling Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228635, {	-- Squall Sailor's Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228636, {	-- Undersea Overseer's Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_AS_BONUS",
+						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 
 				},
@@ -312,30 +278,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					fbiron(350, i(233805)),	-- Vrykul Pyromancer's Wand
 					-- Gems
 					fbiron(50, i(228646, {	-- Legendary Skipper's Citrine
-						["description"] = createLocalizationString({
-							readable = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
-							constant = "YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_FROM_THE_WORLD",
-							export = true,
-							text = {
-								en = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "你可能需要先从世界任务中获得一次该宝石，它才会出现在商人处。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228647, {	-- Seabed Leviathan's Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_FROM_THE_WORLD",
+						["description"] = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228648, {	-- Roaring War-Queen's Citrine
-						["description"] = "~L.YOU_MAY_HAVE_TO_ACQUIRE_THE_GEM_FROM_THE_WORLD",
+						["description"] = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
 					})),
 				},
 			}),

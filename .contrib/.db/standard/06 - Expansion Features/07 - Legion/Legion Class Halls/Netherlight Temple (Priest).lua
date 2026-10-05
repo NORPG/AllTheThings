@@ -23,93 +23,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				})),
 				n(ARTIFACTS, {
 					header(HEADERS.Item, 141332, {	-- The Annals of Light and Shadow
-						["description"] = createLocalizationString({
-							readable = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\n|cFFE50D12IMPORTANT:|r Start with Volume IV and Archivist Inkforge in your Order Hall.",
-							constant = "OBTAIN_12_OF_THESE_BOOKS_TO_COMPLETE_THE_SET",
-							export = true,
-							text = {
-								en = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\n|cFFE50D12IMPORTANT:|r Start with Volume IV and Archivist Inkforge in your Order Hall.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "收集 12 本此类书籍即可凑齐整套，并获得戒律牧师隐藏神器外观。\n\n|cFFE50D12重要：|r 请从第四卷以及职业大厅中的档案员墨铸开始。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\n|cFFE50D12IMPORTANT:|r Start with Volume IV and Archivist Inkforge in your Order Hall.",
 						["groups"] = sharedData({
 							["groups"] = { i(141332) },	-- The Annals of Light and Shadow
 						},{
 							q(44339, {	-- Volume I
 								["name"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
-								["description"] = createLocalizationString({
-									readable = "After entering The Violet Citadel in new Dalaran, on the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-									constant = "AFTER_ENTERING_THE_VIOLET_CITADEL_IN_NEW",
-									export = true,
-									text = {
-										en = "After entering The Violet Citadel in new Dalaran, on the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "进入新达拉然的紫罗兰城堡后，在左侧有一位名叫档案员艾丽西娜的 NPC。第一卷就在她身后右侧的书架上。\n\n|cFFE50D12注意：|r 这是一个世界刷新物。如果别人已经拾取过，可能需要一段时间才会重新刷新！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "After entering The Violet Citadel in new Dalaran, on the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
 								["provider"] = { "o", 252294 },	-- The Annals of Light and Shadow - Volume I
 								["coord"] = { 30.0, 51.4, LEGION_DALARAN },
 							}),
 							q(44340, {	-- Volume II
 								["name"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
-								["description"] = createLocalizationString({
-									readable = "In the top right point of the Temple alcove, Volume II is on a table in front of a Draenei Anchorite.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-									constant = "IN_THE_TOP_RIGHT_POINT_OF_THE_TEMPLE_ALCOVE",
-									export = true,
-									text = {
-										en = "In the top right point of the Temple alcove, Volume II is on a table in front of a Draenei Anchorite.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在神殿凹室右上角，第二卷位于一名德莱尼隐士面前的桌子上。\n\n|cFFE50D12注意：|r 这是一个世界刷新点。如果已被他人拾取，可能需要等一段时间才会重新刷新！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In the top right point of the Temple alcove, Volume II is on a table in front of a Draenei Anchorite.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
 								["provider"] = { "o", 252295 },	-- The Annals of Light and Shadow - Volume II
 								["coord"] = { 58.4, 24.8, NETHERLIGHT_TEMPLE },
 							}),
 							q(44341, {	-- Volume III
 								["name"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
-								["description"] = createLocalizationString({
-									readable = "Volume III is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-									constant = "VOLUME_III_IS_ON_TOP_OF_A_BOOKSHELF_ON_THE_LEFT",
-									export = true,
-									text = {
-										en = "Volume III is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "第三卷在回廊左侧底层书架的最上层。\n\n|cFFE50D12注意：|r 这是一个世界刷新点。如果已被其他玩家拾取，可能需要等一段时间才会重新刷新！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Volume III is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
 								["provider"] = { "o", 252296 },	-- The Annals of Light and Shadow - Volume III
 								["coords"] = {
 									{ 72.2, 73.4, DRAGONBLIGHT },	-- Entrance to cloister
@@ -118,47 +50,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							q(44342, {	-- Volume IV
 								["name"] = "|cFFFFFFFFVolume IV|r | Archivist Inkforge in the class order hall.",
-								["description"] = createLocalizationString({
-									readable = "You must get Volume IV first in order to collect the others. Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you Volume IV.",
-									constant = "YOU_MUST_GET_VOLUME_IV_FIRST_IN_ORDER_TO",
-									export = true,
-									text = {
-										en = "You must get Volume IV first in order to collect the others. Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you Volume IV.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "你必须先获得第四卷才能收集其他的。与档案员墨铸对话。始终选择中间的答案（被动好奇，不做评判），他就会给你第四卷。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "You must get Volume IV first in order to collect the others. Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you Volume IV.",
 								["provider"] = { "n", 111119 },	-- Archivist Inkforge
 								["coord"] = { 62.8, 36.0, NETHERLIGHT_TEMPLE },
 							}),
 							q(44343, {	-- Volume V
 								["name"] = "|cFFFFFFFFVolume V|r | Chillheart's room in Scholomance.",
-								["description"] = createLocalizationString({
-									readable = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trash-pack on the right side. Volume V is on top of the 6th bookshelf from the right.",
-									constant = "ENTER_CHILLHEART_S_ROOM_YOU_DON_T_NEED_TO_KILL",
-									export = true,
-									text = {
-										en = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trash-pack on the right side. Volume V is on top of the 6th bookshelf from the right.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "进入寒心的房间——你不需要击杀首领。杀掉右侧的第一波小怪。第五卷在从右边数第 6 个书架的顶上。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trash-pack on the right side. Volume V is on top of the 6th bookshelf from the right.",
 								["providers"] = {
 									{ "o", 252297 },	-- The Annals of Light and Shadow - Volume V
 									-- #if AFTER 11.2.5
@@ -179,47 +77,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							q(44344, {	-- Volume VI
 								["name"] = "|cFFFFFFFFVolume VI|r | Bookshelf to the left of Meridelle Lightspark in the Class Order Hall. ",
-								["description"] = createLocalizationString({
-									readable = "In the top left point of the Temple alcove, Volume VI is on a shelf to the left of Meridelle Lightspark.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-									constant = "IN_THE_TOP_LEFT_POINT_OF_THE_TEMPLE_ALCOVE",
-									export = true,
-									text = {
-										en = "In the top left point of the Temple alcove, Volume VI is on a shelf to the left of Meridelle Lightspark.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "在神殿凹室左上角，第六卷位于梅丽黛尔·光星左侧的架子上。\n\n|cFFE50D12注意：|r 这是一个世界刷新点。如果已被他人拾取，可能需要等一段时间才会重新刷新！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In the top left point of the Temple alcove, Volume VI is on a shelf to the left of Meridelle Lightspark.\n\n|cFFE50D12NOTE:|r This is a World Spawn. If someone else has looted it, it might take a while for it to respawn!",
 								["provider"] = { "o", 252298 },	-- The Annals of Light and Shadow - Volume VI
 								["coord"] = { 37.2, 25.1, NETHERLIGHT_TEMPLE },
 							}),
 							q(44345, {	-- Volume VII
 								["name"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
-								["description"] = createLocalizationString({
-									readable = "Run through the instance to Flameweaver Koegler's room. On the left-hand side of the room there's a table with a candelabra. Volume VII is on the bench between the table and the bookshelf.",
-									constant = "RUN_THROUGH_THE_INSTANCE_TO_FLAMEWEAVER_KOEGLER",
-									export = true,
-									text = {
-										en = "Run through the instance to Flameweaver Koegler's room. On the left-hand side of the room there's a table with a candelabra. Volume VII is on the bench between the table and the bookshelf.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "穿过副本来到织焰者孔格勒的房间。房间左侧有一张带烛台的桌子。第七卷就在桌子和书架之间的长凳上。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Run through the instance to Flameweaver Koegler's room. On the left-hand side of the room there's a table with a candelabra. Volume VII is on the bench between the table and the bookshelf.",
 								["providers"] = {
 									{ "o", 252299 },	-- The Annals of Light and Shadow - Volume VII
 									-- #if AFTER 11.2.5
@@ -240,70 +104,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							q(44350, {	-- Volume VIII
 								["name"] = "|cFFFFFFFFVolume VIII|r | Inquisitor Ernstenbok, a Rare in the cave southwest of Halls of Valor, Stormheim.",
-								["description"] = createLocalizationString({
-									readable = "In order to be able to loot Volume VIII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
-									constant = "IN_ORDER_TO_BE_ABLE_TO_LOOT_VOLUME_VIII_YOU",
-									export = true,
-									text = {
-										en = "In order to be able to loot Volume VIII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "想要拾取第八卷，你必须在从职业大厅的档案员墨铸处获得第四卷之后再击杀该稀有。\n\n|cFFE50D12警告：|r 如果有多个牧师击杀了该稀有，只有一人能够拾取！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In order to be able to loot Volume VIII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
 								["provider"] = { "n", 90139 },	-- Inquisitor Ernstenbok
 								["coord"] = { 63.6, 74.4, STORMHEIM },
 							}),
 							q(44347, {	-- Volume IX
 								["name"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
-								["description"] = createLocalizationString({
-									readable = "In order to be able to loot Volume IX, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
-									constant = "IN_ORDER_TO_BE_ABLE_TO_LOOT_VOLUME_IX_YOU_MUST",
-									export = true,
-									text = {
-										en = "In order to be able to loot Volume IX, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "想要拾取第九卷，你必须在从职业大厅的档案员墨铸处获得第四卷之后再击杀该稀有。\n\n|cFFE50D12警告：|r 如果有多个牧师击杀了该稀有，只有一人能够拾取！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In order to be able to loot Volume IX, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
 								["provider"] = { "n", 106351 },	-- Artificer Lothaire
 								["coord"] = { 33.8, 15.0, SURAMAR },
 							}),
 							q(44348, {	-- Volume X
 								["name"] = "|cFFFFFFFFVolume X|r | Black Rook Hold Library.",
-								["description"] = createLocalizationString({
-									readable = "After defeating The Amalgam of Souls, you will enter the Library with a large setup in the middle.\nHead along the left side, Volume X is on one of the tables.",
-									constant = "AFTER_DEFEATING_THE_AMALGAM_OF_SOULS_YOU_WILL",
-									export = true,
-									text = {
-										en = "After defeating The Amalgam of Souls, you will enter the Library with a large setup in the middle.\nHead along the left side, Volume X is on one of the tables.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "击败灵魂聚合体后，你会进入图书馆，中央有一处大型布置。\n沿左侧前行，第十卷就在其中一张桌子上。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "After defeating The Amalgam of Souls, you will enter the Library with a large setup in the middle.\nHead along the left side, Volume X is on one of the tables.",
 								["provider"] = { "o", 252300 },	-- The Annals of Light and Shadow - Volume X
 								["coords"] = {
 									{ 38.4, 50.8, VALSHARAH },	-- Black Rook Hold entrance
@@ -312,24 +125,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							q(44349, {	-- Volume XI
 								["name"] = "|cFFFFFFFFVolume XI|r | Guardian's Library in old Karazhan.",
-								["description"] = createLocalizationString({
-									readable = "After defeating The Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and three bookshelves below. Volume XI is on the bottom of the left-hand bookshelf.",
-									constant = "AFTER_DEFEATING_THE_CURATOR_JUMP_DOWN_TO_THE",
-									export = true,
-									text = {
-										en = "After defeating The Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and three bookshelves below. Volume XI is on the bottom of the left-hand bookshelf.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "击败馆长后，向右跳下去，径直走进第一个凹室。墙上挂着一幅挂毯，下方有三个书架。第十一卷在左侧书架的最下层。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "After defeating The Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and three bookshelves below. Volume XI is on the bottom of the left-hand bookshelf.",
 								["providers"] = {
 									{ "o", 252301 },	-- The Annals of Light and Shadow - Volume XI
 									-- #if AFTER 11.2.5
@@ -350,46 +146,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							q(44346, {	-- Volume XII
 								["name"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine in The Queen's Reprisal, Azsuna.",
-								["description"] = createLocalizationString({
-									readable = "In order to be able to loot Volume XII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
-									constant = "IN_ORDER_TO_BE_ABLE_TO_LOOT_VOLUME_XII_YOU_MUST",
-									export = true,
-									text = {
-										en = "In order to be able to loot Volume XII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "想要拾取第十二卷，你必须在从职业大厅的档案员墨铸处获得第四卷之后再击杀该稀有。\n\n|cFFE50D12警告：|r 如果有多个牧师击杀了该稀有，只有一人能够拾取！",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "In order to be able to loot Volume XII, you must kill the Rare AFTER getting Volume IV from Archivist Inkforge in your Order Hall.\n\n|cFFE50D12WARNING:|r If several Priests kill the Rare, only one will be able to loot it!",
 								["provider"] = { "n", 106990 },	-- Chief Bitterbrine
 								["coord"] = { 65.6, 56.8, AZSUNA },
 							}),
 							i(139567, {	-- Writings of the End
-								["description"] = createLocalizationString({
-									readable = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item.",
-									constant = "ONCE_YOU_HAVE_OBTAINED_ALL_12_VOLUMES_RETURN_TO",
-									export = true,
-									text = {
-										en = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item.",
-										-- TODO: de = "",
-										-- TODO: es = "",
-										-- TODO: mx = "",
-										-- TODO: fr = "",
-										-- TODO: it = "",
-										-- TODO: ko = "",
-										-- TODO: pt = "",
-										-- TODO: ru = "",
-										cn = "集齐全部 12 卷后，返回职业大厅中的档案员墨铸处，将它们交给他，他就会给你这件物品。",
-										-- TODO: tw = "",
-									},
-								}),
+								["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item.",
 								["coord"] = { 62.5, 36.3, NETHERLIGHT_TEMPLE },
 								["cost"] = { { "i", 141332, 12 } },	-- The Annals of Light and Shadow
 								["groups"] = { artifact(738) },	-- Tomekeeper's Spire, Discipline Priest Hidden Artifact appearance
@@ -1087,68 +849,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				n(SPECIAL, {
 					q(44306, {	-- Blessings of the Order
-						["description"] = createLocalizationString({
-							readable = "Only available if you have the |cFFFFD700Tithe|r order hall upgrade.",
-							constant = "ONLY_AVAILABLE_IF_YOU_HAVE_THE_CFFFFD700TITHE_R",
-							export = true,
-							text = {
-								en = "Only available if you have the |cFFFFD700Tithe|r order hall upgrade.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在你拥有 |cFFFFD700什一税|r 职业大厅升级时可用。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only available if you have the |cFFFFD700Tithe|r order hall upgrade.",
 						["provider"] = { "n", 111773 },	-- Sister Oriel
 						["coord"] = { 61.6, 45.6, NETHERLIGHT_TEMPLE },
 					}),
 					q(44229, {	-- Champion Armaments
-						["description"] = createLocalizationString({
-							readable = "Only available if you have the |cFFFFD700Armaments of Light|r order hall upgrade.",
-							constant = "ONLY_AVAILABLE_IF_YOU_HAVE_THE",
-							export = true,
-							text = {
-								en = "Only available if you have the |cFFFFD700Armaments of Light|r order hall upgrade.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在你拥有 |cFFFFD700圣光武装|r 职业大厅升级时可用。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only available if you have the |cFFFFD700Armaments of Light|r order hall upgrade.",
 						["provider"] = { "n", 110595 },	-- Lilith
 						["coord"] = { 45.8, 27.2, NETHERLIGHT_TEMPLE },
 					}),
 					q(44230, {	-- The Fates Bless Us
-						["description"] = createLocalizationString({
-							readable = "Only available if you have the |cFFFFD700Blessed Seals|r order hall upgrade.",
-							constant = "ONLY_AVAILABLE_IF_YOU_HAVE_THE_CFFFFD700BLESSED",
-							export = true,
-							text = {
-								en = "Only available if you have the |cFFFFD700Blessed Seals|r order hall upgrade.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "仅在你拥有 |cFFFFD700祝福印记|r 职业大厅升级时可用。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Only available if you have the |cFFFFD700Blessed Seals|r order hall upgrade.",
 						["provider"] = { "n", 110819 },	-- Truth
 						["coord"] = { 58.6, 29.9, NETHERLIGHT_TEMPLE },
 					}),

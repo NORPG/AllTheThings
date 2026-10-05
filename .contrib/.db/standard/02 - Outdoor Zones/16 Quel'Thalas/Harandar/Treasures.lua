@@ -664,24 +664,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					o(613392, {	-- Impenetrably Sealed Gourd
-						["description"] = createLocalizationString({
-							readable = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
-							constant = "OBTAIN_MYSTERIOUS_FLUIDS_FROM_OTHER_OBJECTS_IN",
-							export = true,
-							text = {
-								en = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "从同一洞穴中的其他物品上获取神秘液体，然后将红色和紫色混合成嘶嘶作响的液体。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
 						["coord"] = { 26.7, 67.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 93508,
 						["cost"] = { { "i", 260266, 1 } },	-- 1x Fizzing Fluid
@@ -713,24 +696,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(263289) },	-- Sporelord's Authority (COSMETIC!)
 				}),
 				o(615963, {	-- Sporespawned Cache
-					["description"] = createLocalizationString({
-						readable = "Interact with Fungal Mallet in Fungara Village then hit the gong",
-						constant = "INTERACT_WITH_FUNGAL_MALLET_IN_FUNGARA_VILLAGE",
-						export = true,
-						text = {
-							en = "Interact with Fungal Mallet in Fungara Village then hit the gong",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "与芬加拉村的真菌木槌互动，然后敲响锣",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Interact with Fungal Mallet in Fungara Village then hit the gong",
 					["coords"] = {
 						{ 41.3, 67.9, MAP.MIDNIGHT.HARANDAR },
 						{ 46.7, 67.8, MAP.MIDNIGHT.HARANDAR },
@@ -739,24 +705,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			o(616052, {	-- Flame-Hardened Sap of Teldrassil
-				["description"] = createLocalizationString({
-					readable = "Scattered underwater across the river, up from the charred roots of Teldrassil, down to The Den.",
-					constant = "SCATTERED_UNDERWATER_ACROSS_THE_RIVER_UP_FROM",
-					export = true,
-					text = {
-						en = "Scattered underwater across the river, up from the charred roots of Teldrassil, down to The Den.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "分散在水下，横跨河流，从泰达希尔焦黑的树根向上，一直延伸到兽穴。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Scattered underwater across the river, up from the charred roots of Teldrassil, down to The Den.",
 				["coords"] = {
 					{ 40.1, 23.8, MAP.MIDNIGHT.HARANDAR },
 					{ 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
@@ -776,13 +725,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			--}),
 			-- Random Repeatables, Unlock at Renown 3
 			o(573991, {	-- Budding Barrel
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 			}),
 			o(573841, {	-- Fungalcap Crock
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 			}),
 			o(574126, {	-- Leaf-wrapped Package
-				["description"] = "~L.SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
+				["description"] = "Spawns randomly throughout the zone.",
 			}),
 		}),
 	}),

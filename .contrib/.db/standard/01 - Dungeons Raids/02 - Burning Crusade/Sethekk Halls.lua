@@ -69,24 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				})),
 				q(29607, {	-- Eyes of Desire
-					["description"] = createLocalizationString({
-						readable = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
-						constant = "DEALER_VIJAAD_APPEARS_UPON_DEFEATING_DARKWEAVER",
-						export = true,
-						text = {
-							en = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "击败暗织者塞斯后，商人维贾德会出现。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
 					["qg"] = 54847,	-- Dealer Vijaad
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
@@ -106,24 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["groups"] = {
 						objective(1, {	-- 0/1 The Saga of Terokk
 							["provider"] = { "i", 27634 },	-- The Saga of Terokk
-							["description"] = createLocalizationString({
-								readable = "Found on the floor in the center of the room before Talon King Ikiss.",
-								constant = "FOUND_ON_THE_FLOOR_IN_THE_CENTER_OF_THE_ROOM",
-								export = true,
-								text = {
-									en = "Found on the floor in the center of the room before Talon King Ikiss.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "位于鸦王伊奇斯之前房间中央的地板上。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found on the floor in the center of the room before Talon King Ikiss.",
 							["timeline"] = { REMOVED_4_3_0 },
 						}),
 						objective(2, {	-- 0/1 Terokk's Mask
@@ -188,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(28558, {	-- Spirit Shard
-					["description"] = "~L.SPIRIT_SHARDS_ARE_CURRENCY_TOKENS_DROPPED_BY",
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
 					["timeline"] = { REMOVED_8_0_1 },
 				}),
 				currency(1704, {	-- Spirit Shard
@@ -257,24 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27936),	-- Greaves of Desolation (7.3.5 - Added to Anzu on Heroic Mode)
 						i(27632),	-- Terokk's Quill
 						i(27991, {	-- Shadow Labyrinth Key
-							["description"] = createLocalizationString({
-								readable = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
-								constant = "YOU_CAN_LOOT_THIS_FROM_THE_TALON_KING_S_COFFER",
-								export = true,
-								text = {
-									en = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "你可以在 2.3.0 补丁之后从鹰王的大箱子中拾取此物，在那之前（也许在燃烧的远征经典版中），你需要从他的尸体上拾取。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -282,7 +231,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "~L.YOU_NEED_TO_HAVE_A_KEY_TO_THE_INSTANCE_IN_ORDER",
+				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30633, 1 },	-- Auchenai Key
 					-- #if CLASSIC_ANNIVERSARY
@@ -331,24 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, e(542, {	-- Anzu
 						-- #if BEFORE 4.0.1
-						["description"] = createLocalizationString({
-							readable = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
-							constant = "THIS_SPECIAL_ENCOUNTER_CAN_BE_STARTED_BY_A",
-							export = true,
-							text = {
-								en = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
-								-- TODO: de = "",
-								-- TODO: es = "",
-								-- TODO: mx = "",
-								-- TODO: fr = "",
-								-- TODO: it = "",
-								-- TODO: ko = "",
-								-- TODO: pt = "",
-								-- TODO: ru = "",
-								cn = "此特殊遭遇可以由完成了“击败乌鸦之神”任务链的德鲁伊开启。这与授予他们迅捷飞行形态的是同一个任务链，所以如果你在世界中看到一只飞速飞行的家伙并加入了你的地下城队伍，你几乎肯定有机会尝试……除非他们忘记带召唤他所用的任务物品（在钥匙链中）。:)\n\n德鲁伊：你可以右键点击此首领来查看需要完成的任务链。",
-								-- TODO: tw = "",
-							},
-						}),
+						["description"] = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
 						["sourceQuest"] = 11001,	-- Vanquish the Raven God
 						["cost"] = { { "i", 32449, 1 } },	-- Essence-Infused Moonstone
 						-- #endif
@@ -395,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27632),	-- Terokk's Quill
 							i(33834),	-- The Headfeathers of Ikiss
 							i(27991, {	-- Shadow Labyrinth Key
-								["description"] = "~L.YOU_CAN_LOOT_THIS_FROM_THE_TALON_KING_S_COFFER",
+								["description"] = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
 								["timeline"] = { REMOVED_4_0_3 },
 							}),
 						},

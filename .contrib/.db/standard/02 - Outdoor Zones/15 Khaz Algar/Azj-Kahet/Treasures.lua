@@ -25,24 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(446404, {	-- Memory Cache
-				["description"] = createLocalizationString({
-					readable = "Interact with Black Blood Extractors in area or stand in Black Blood pools until you reach at least 50 Unseeming Shift debuff to see Corrupted Memory near the cache. Kill it to obtain key for cache.",
-					constant = "INTERACT_WITH_BLACK_BLOOD_EXTRACTORS_IN_AREA_OR",
-					export = true,
-					text = {
-						en = "Interact with Black Blood Extractors in area or stand in Black Blood pools until you reach at least 50 Unseeming Shift debuff to see Corrupted Memory near the cache. Kill it to obtain key for cache.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "与区域内的黑血提取器互动，或站在黑血池中，直到你获得至少 50 层失相变换减益，就能看到宝箱附近的腐化记忆。击杀它以获得宝箱的钥匙。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Interact with Black Blood Extractors in area or stand in Black Blood pools until you reach at least 50 Unseeming Shift debuff to see Corrupted Memory near the cache. Kill it to obtain key for cache.",
 				["coord"] = { 62.7, 87.9, AZJ_KAHET_LOWER },
 				["questID"] = 82520,
 				["crs"] = { 223908 },	-- Corrupted Memory
@@ -56,46 +39,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82722,
 			}),
 			o(446101, {	-- Nerubian Offerings
-				["description"] = createLocalizationString({
-					readable = "Below the terrace, hanging from the ceiling.",
-					constant = "BELOW_THE_TERRACE_HANGING_FROM_THE_CEILING",
-					export = true,
-					text = {
-						en = "Below the terrace, hanging from the ceiling.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在露台下方，悬挂在天花板上。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Below the terrace, hanging from the ceiling.",
 				["coord"] = { 31.6, 20.7, NERUBAR },
 				["questID"] = 82720,
 			}),
 			o(446423, {	-- Nest Egg
-				["description"] = createLocalizationString({
-					readable = "Above on a web, near the ceiling.",
-					constant = "ABOVE_ON_A_WEB_NEAR_THE_CEILING",
-					export = true,
-					text = {
-						en = "Above on a web, near the ceiling.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在上方的一张蛛网上，靠近天花板。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Above on a web, near the ceiling.",
 				["coord"] = { 49.5, 43.73, AZJ_KAHET },
 				["questID"] = 82529,
 				["groups"] = {
@@ -103,70 +52,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(446135, {	-- Niffen Stash
-				["description"] = createLocalizationString({
-					readable = "Below, hanging from a bridge.",
-					constant = "BELOW_HANGING_FROM_A_BRIDGE",
-					export = true,
-					text = {
-						en = "Below, hanging from a bridge.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在下方，悬挂在一座桥下。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Below, hanging from a bridge.",
 				["coord"] = { 54.5, 50.81, AZJ_KAHET },
 				["questID"] = 82721,
 			}),
 			o(445360, {	-- Pilfered Loot
-				["description"] = createLocalizationString({
-					readable = "Respawn timer around 5 minutes.",
-					constant = "RESPAWN_TIMER_AROUND_5_MINUTES",
-					export = true,
-					text = {
-						en = "Respawn timer around 5 minutes.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "刷新时间约为 5 分钟。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Respawn timer around 5 minutes.",
 				["coords"] = {	-- Spawn points shared with Stashed Loot
 					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
 			}),
 			o(445275, {	-- Royal Sureki Strongbox
-				["description"] = createLocalizationString({
-					readable = "Has a chance to spawn instead of Sureki Strongbox randomly throughout the zone.",
-					constant = "HAS_A_CHANCE_TO_SPAWN_INSTEAD_OF_SUREKI",
-					export = true,
-					text = {
-						en = "Has a chance to spawn instead of Sureki Strongbox randomly throughout the zone.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "有几率在该区域各处随机代替苏雷基保险箱刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Has a chance to spawn instead of Sureki Strongbox randomly throughout the zone.",
 				["maps"] = { AZJ_KAHET },
 			}),
 			o(446299, {	-- Silk-spun Supplies
@@ -175,52 +73,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82719,
 			}),
 			o(444844, {	-- Stashed Loot
-				["description"] = "~L.RESPAWN_TIMER_AROUND_5_MINUTES",
+				["description"] = "Respawn timer around 5 minutes.",
 				["coords"] = {	-- Spawn points shared with Pilfered Loot
 					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
 			}),
 			o(444800, {	-- Sureki Strongbox
-				["description"] = createLocalizationString({
-					readable = "Spawns randomly throughout the zone.",
-					constant = "SPAWNS_RANDOMLY_THROUGHOUT_THE_ZONE",
-					export = true,
-					text = {
-						en = "Spawns randomly throughout the zone.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "在该区域各处随机刷新。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { AZJ_KAHET },
 			}),
 			o(446421, {	-- Trapped Trove
-				["description"] = createLocalizationString({
-					readable = "IT'S A TRAP! Navigate through the web traps to get to the treasure.",
-					constant = "IT_S_A_TRAP_NAVIGATE_THROUGH_THE_WEB_TRAPS_TO",
-					export = true,
-					text = {
-						en = "IT'S A TRAP! Navigate through the web traps to get to the treasure.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "这是个陷阱！穿过蛛网陷阱即可到达宝藏。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "IT'S A TRAP! Navigate through the web traps to get to the treasure.",
 				["coord"] = { 67.4, 74.4, NERUBAR },
 				-- INFO: This is the HQT that triggers ingame when you loot it (Confirmed by Braghe, 2024-08-10)
 				["questID"] = 82727,
@@ -248,62 +112,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- I know these three are out of order here but they are related to the "Weaving Supplies". -Exodius
 			o(446437, {	-- Crimson Thread
-				["description"] = createLocalizationString({
-					readable = "One of three Silk Scraps required to open 'Weaving Supplies'.",
-					constant = "ONE_OF_THREE_SILK_SCRAPS_REQUIRED_TO_OPEN",
-					export = true,
-					text = {
-						en = "One of three Silk Scraps required to open 'Weaving Supplies'.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "开启“编织补给”所需的三块丝绸碎片的其中一块。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
 				["coord"] = { 72.7, 39.7, AZJ_KAHET },
 				["groups"] = {
 					i(223902),	-- Crimson Silk Scrap
 				},
 			}),
 			o(446438, {	-- Gold Thread
-				["description"] = "~L.ONE_OF_THREE_SILK_SCRAPS_REQUIRED_TO_OPEN",
+				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
 				["coord"] = { 74.2, 37.7, AZJ_KAHET },
 				["groups"] = {
 					i(223903),	-- Gold Silk Scrap
 				},
 			}),
 			o(446435, {	-- Violet Thread
-				["description"] = "~L.ONE_OF_THREE_SILK_SCRAPS_REQUIRED_TO_OPEN",
+				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
 				["coord"] = { 74.8, 42.9, AZJ_KAHET },
 				["groups"] = {
 					i(223901),	-- Violet Silk Scrap
 				},
 			}),
 			o(446420, {	-- "Weaving Supplies"
-				["description"] = createLocalizationString({
-					readable = "Collect colored Silk Scrap from the nearby platform in order to open the treasure chest.",
-					constant = "COLLECT_COLORED_SILK_SCRAP_FROM_THE_NEARBY",
-					export = true,
-					text = {
-						en = "Collect colored Silk Scrap from the nearby platform in order to open the treasure chest.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "从附近的平台上收集彩色丝绸碎料，以打开宝箱。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Collect colored Silk Scrap from the nearby platform in order to open the treasure chest.",
 				["questID"] = 82527,
 				["coord"] = { 78.6, 33.2, AZJ_KAHET },
 				["cost"] = {
@@ -366,24 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82079,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = createLocalizationString({
-					readable = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
-					constant = "THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
-					export = true,
-					text = {
-						en = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "该成就对应的物体目前被暴雪禁用，将在未来的补丁中重新加入。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -393,7 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82069,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -403,7 +216,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82067,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -413,7 +226,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82085,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },
@@ -423,7 +236,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 82082,
 				-- #if AFTER 11.0.2.56313
 				-- #if BEFORE 11.0.7
-				["description"] = "~L.THIS_OBJECT_FOR_ITS_ACHIEVEMENT_IS_CURRENTLY",
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
 				-- #endif
 				-- #endif
 				["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313", ADDED_11_0_7 },

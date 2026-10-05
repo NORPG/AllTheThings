@@ -36,44 +36,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					battlepets({
 						pet(417, {	-- Rat (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them.",
-								constant = "FOUND_IN_MANY_ZONES_ON_AZEROTH_AND_DRAENOR_THIS",
-								export = true,
-								text = {
-									en = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "在艾泽拉斯和德拉诺的许多区域都能找到，而这里似乎密度最高。",
-									-- TODO: tw = "",
-								},
-							})
+							["description"] = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them."
 						}),
 						pet(458, {	-- Lost of Lordaeron (PET!)
-							["description"] = createLocalizationString({
-								readable = "Found mostly around the Ruins of Lordaeron.",
-								constant = "FOUND_MOSTLY_AROUND_THE_RUINS_OF_LORDAERON",
-								export = true,
-								text = {
-									en = "Found mostly around the Ruins of Lordaeron.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "主要分布在洛丹伦废墟周围。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Found mostly around the Ruins of Lordaeron.",
 						}),
 					}),
 					n(QUESTS, {
@@ -280,24 +246,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
 									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
-									["description"] = createLocalizationString({
-										readable = "Kneel (/kneel) at a Graveyard to gain a Meditation buff, then use the Rune to complete the quest.",
-										constant = "KNEEL_KNEEL_AT_A_GRAVEYARD_TO_GAIN_A_MEDITATION",
-										export = true,
-										text = {
-											en = "Kneel (/kneel) at a Graveyard to gain a Meditation buff, then use the Rune to complete the quest.",
-											-- TODO: de = "",
-											-- TODO: es = "",
-											-- TODO: mx = "",
-											-- TODO: fr = "",
-											-- TODO: it = "",
-											-- TODO: ko = "",
-											-- TODO: pt = "",
-											-- TODO: ru = "",
-											cn = "在墓地跪下（/kneel）以获得冥想增益，然后使用符文完成任务。",
-											-- TODO: tw = "",
-										},
-									}),
+									["description"] = "Kneel (/kneel) at a Graveyard to gain a Meditation buff, then use the Rune to complete the quest.",
 								}),
 								recipe(402862),	-- Engrave Gloves - Penance
 								i(711),	-- Tattered Cloth Gloves
@@ -1175,24 +1124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 10.1.7
 			pickpocketing({
 				i(3330, {	-- Dargol's Hauberk
-					["description"] = createLocalizationString({
-						readable = "Can be pickpocketed from Captain Dargol.",
-						constant = "CAN_BE_PICKPOCKETED_FROM_CAPTAIN_DARGOL",
-						export = true,
-						text = {
-							en = "Can be pickpocketed from Captain Dargol.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "可从达戈尔队长身上偷窃获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Can be pickpocketed from Captain Dargol.",
 					["coords"] = {
 						{ 52.6, 26.2, TIRISFAL_GLADES },
 						{ 52.4, 26.6, TIRISFAL_GLADES },
@@ -1780,24 +1712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(24992, {	-- Escaped From Gilneas
-					["description"] = createLocalizationString({
-						readable = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
-						constant = "QUEST_IS_GRANTED_BY_GETTING_IN_COMBAT_WITH_NOT",
-						export = true,
-						text = {
-							en = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在完成|cFFFFD700暗影犬猛击|r时或之后，与一只被诅咒的暗影犬进入战斗（而非将其杀死）即可获得该任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["timeline"] = {
 						-- #if ANYCLASSIC
@@ -1989,24 +1904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25039, {	-- Have You Seen Anything Weird Out There?
-					["description"] = createLocalizationString({
-						readable = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
-						constant = "AVAILABLE_IF_YOU_ABANDON_CFFFFD700ESCAPED_FROM",
-						export = true,
-						text = {
-							en = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "如果你放弃|cFFFFD700逃离吉尔尼斯|r则可用。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
 					["sourceQuest"] = 24980,	-- The Scarlet Palisade
 					["qg"] = 6785,	-- Ratslin Maime
 					["coord"] = { 61.9, 52.0, TIRISFAL_GLADES },
@@ -2101,24 +1999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
-					["description"] = createLocalizationString({
-						readable = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
-						constant = "THE_PAMPHLET_THAT_STARTS_THIS_QUEST_IS_SENT_TO_10",
-						export = true,
-						text = {
-							en = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "开启此任务的小册子会在被遗忘者达到指定等级时寄送到他们的邮箱。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
 					["provider"] = { "i", 46881 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["races"] = { UNDEAD },
@@ -2530,24 +2411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25030, {	-- The Haunted Mills
-					["description"] = createLocalizationString({
-						readable = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
-						constant = "AT_THE_BOTTOM_OF_THE_CFFFFD700AGAMAND_FAMILY",
-						export = true,
-						text = {
-							en = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "在|cFFFFD700阿加曼德家族墓穴|r底部。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
 					["provider"] = { "i", 3082 },	-- Dargol's Skull
 					["coord"] = { 52.8, 26.3, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2764,24 +2628,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(205183, {	-- Fel-Powered Artifact
-							["description"] = createLocalizationString({
-								readable = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
-								constant = "BRING_THE_UNIDENTIFIED_ARTIFACT_BACK_TO_THE_2",
-								export = true,
-								text = {
-									en = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "把未鉴定的神器带回该区域的术士训练师处，以获得无力的神器，然后再回来获取此物品。\n\n把它带给幽暗城的卡伦丁·哈加尔即可获得符文。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
 							["cost"] = { { "i", 205182, 1 } },	-- Powerless Artifact
 							["classes"] = { WARLOCK },
 						}),
@@ -2804,24 +2651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				o(240624, {	-- Faerie Dragon Nest
-					["description"] = createLocalizationString({
-						readable = "Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",
-						constant = "ROUGLY_EVERY_15_MINUTES_7_FEY_DRUNK_DARTERS",
-						export = true,
-						text = {
-							en = "Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "大约每 15 分钟，会有 7 只醉醺醺的仙灵蜻蜓逐一到巨型蘑菇圈周围聚集。它们会引导金色光束并开始歌唱。\n事件开始后，请尽快拾取巢穴，因为事件持续时间不长。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",
 					["sourceQuests"] = {
 						38356,	-- Bringing the Bass [A]
 						37961,	-- Bringing the Bass [H]
@@ -3222,24 +3052,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			})),
 			-- #endif
 			n(141488, {	-- Zidormi
-				["description"] = createLocalizationString({
-					readable = "If you get loaded into Tirisfal Glades by Zidormi and want to phase back into pre-BfA version of the zone, you can talk to this npc. However, if she does not give any options, try to traverse eastwards towards Western Plaguelands. At some point you should hopefully phase back into pre-BfA Tirisfal Glades.",
-					constant = "IF_YOU_GET_LOADED_INTO_TIRISFAL_GLADES_BY",
-					export = true,
-					text = {
-						en = "If you get loaded into Tirisfal Glades by Zidormi and want to phase back into pre-BfA version of the zone, you can talk to this npc. However, if she does not give any options, try to traverse eastwards towards Western Plaguelands. At some point you should hopefully phase back into pre-BfA Tirisfal Glades.",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "如果你被吉多咪载入到提瑞斯法林地，而你想切回《争霸艾泽拉斯》之前的区域版本，你可以与这个 NPC 交谈。不过，如果她不提供任何选项，试着向东前往西瘟疫之地。到某个时候你应该就能切回《争霸艾泽拉斯》之前的提瑞斯法林地了。",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "If you get loaded into Tirisfal Glades by Zidormi and want to phase back into pre-BfA version of the zone, you can talk to this npc. However, if she does not give any options, try to traverse eastwards towards Western Plaguelands. At some point you should hopefully phase back into pre-BfA Tirisfal Glades.",
 				["timeline"] = { ADDED_8_0_1 },
 			}),
 			n(ZONE_DROPS, {

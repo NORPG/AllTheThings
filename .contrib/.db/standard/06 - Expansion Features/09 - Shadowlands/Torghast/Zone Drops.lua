@@ -47,24 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
-				["description"] = createLocalizationString({
-					readable = "Only from Layer 13 or higher",
-					constant = "ONLY_FROM_LAYER_13_OR_HIGHER",
-					export = true,
-					text = {
-						en = "Only from Layer 13 or higher",
-						-- TODO: de = "",
-						-- TODO: es = "",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						cn = "仅来自第 13 层或更高层",
-						-- TODO: tw = "",
-					},
-				}),
+				["description"] = "Only from Layer 13 or higher",
 				["crs"] = {
 					171422,	-- Arch-Suppressor Laguas
 				},

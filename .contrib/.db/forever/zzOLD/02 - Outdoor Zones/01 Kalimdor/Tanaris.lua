@@ -295,24 +295,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(351, {	-- Find OOX-17/TN!
-					["description"] = createLocalizationString({
-						readable = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
-						constant = "THE_ITEM_THAT_STARTS_THIS_QUEST_CAN_BE_FOUND_AS",
-						export = true,
-						text = {
-							en = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "起始该任务的物品可以在塔纳利斯作为区域掉落获得，也可以在祖尔法拉克获得。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 					["lvl"] = 43,
 				}),
@@ -1176,46 +1159,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(TREASURES, {
 				o(142184, {	-- Captain's Chest
-					["description"] = createLocalizationString({
-						readable = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
-						constant = "THE_CAPTAIN_S_CHEST_IS_FOUND_IN_THE_CAPTAINS",
-						export = true,
-						text = {
-							en = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "船长的宝箱位于被遗弃的索具湾停泊的两艘船之一的船长室内，是南海灯的三个来源之一。它只能由船长钥匙打开，这是一种稀有物品，存放在海盗储物箱中，而海盗储物箱常见于被遗弃的索具湾周围的南海海盗身上。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
 					["coord"] = { 76.5, 45.8, MAP.TANARIS },
 					["cost"] = { { "i", 9249, 1 } },	-- 1x Captain's Key
 					["groups"] = {
 						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
-							["description"] = createLocalizationString({
-								readable = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
-								constant = "THIS_ITEM_HAVE_THREE_SOURCES_PIRATE_S",
-								export = true,
-								text = {
-									en = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "此物品有三个来源：海盗的储物箱、船长的宝箱和库尔戈的隐藏宝藏。\n海盗的储物箱是失落的海盗湾怪物掉落的普通物品。\n船长的宝箱位于失落的海盗湾停泊的两艘船之一的船长室中，只能用船长钥匙打开，这是一种包含在海盗的储物箱中的优秀物品。\n库尔戈的隐藏宝藏是任务“库尔戈的黄金”的奖励。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] =
+								"This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
 						}),
 					},
 				}),
@@ -1274,24 +1224,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				n(14743, {	-- Jhordy Lapforge <Engineer>
 					["requireSkill"] = GNOMISH_ENGINEERING,
-					["description"] = createLocalizationString({
-						readable = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
-						constant = "GNOMISH_ENGINEERS_CAN_SPEAK_TO_JHORDY_TO_LEARN",
-						export = true,
-						text = {
-							en = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "侏儒工程师可以与乔迪对话以学会该配方。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
 					["coord"] = { 52.17, 27.88, MAP.TANARIS },
 					["groups"] = {
 						r(23489),	-- Ultrasafe Transporter - Gadgetzan
@@ -1315,24 +1248,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 52.4, 28.3, MAP.TANARIS },
 					["groups"] = {
 						n(SPECIAL, {
-							["description"] = createLocalizationString({
-								readable = "Available if a specific Quest (8977/8978) has been completed.",
-								constant = "AVAILABLE_IF_A_SPECIFIC_QUEST_8977_8978_HAS",
-								export = true,
-								text = {
-									en = "Available if a specific Quest (8977/8978) has been completed.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "如果已完成特定任务（8977/8978），则可用。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Available if a specific Quest (8977/8978) has been completed.",
 							["sourceQuests"] = {
 								8978,	-- Return to Mokvar
 								8977,	-- Return to Deliana
@@ -1364,24 +1280,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(8623, {	-- OOX-17/TN Distress Beacon
-					["description"] = createLocalizationString({
-						readable = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
-						constant = "THIS_ITEM_HAS_A_CHANCE_TO_DROP_FROM_ANY_2",
-						export = true,
-						text = {
-							en = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "该物品有几率从塔纳利斯和祖尔法拉克的任何生物身上掉落。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
 				}),
 				i(8399, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
 					["cr"] = 5615,	-- Wastewander Rogue
@@ -1426,27 +1325,10 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(9253),	-- Middle Map Fragment
 						i(9252),	-- Lower Map Fragment
 						i(9249, {	-- Captain's Key
-							["description"] = createLocalizationString({
-								readable = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
-								constant = "UNLOCKS_THE_CAPTAIN_S_CHEST_LOCATED_IN_ONE_OF",
-								export = true,
-								text = {
-									en = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "解锁停泊在失落的索具湾的其中一艘船上的船长的箱子。",
-									-- TODO: tw = "",
-								},
-							}),
+							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
 						}),
 						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
-							["description"] = "~L.THIS_ITEM_HAVE_THREE_SOURCES_PIRATE_S",
+							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
 						}),
 					},
 				}),

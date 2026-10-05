@@ -27,17 +27,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			pvp(n(PVP, {
 				n(AZERITE_ESSENCES, {
 					i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
-						["description"] = "~L.REQUIRES_EARNING_500_CONQUEST_AND_OPENING_YOUR",
+						["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
 					}),
 					i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
-						["description"] = "~L.REQUIRES_REACHING_1_000_RATING_IN_PVP_AND",
+						["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
 					}),
 					i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
-						["description"] = "~L.THE_AMOUNT_OF_CFF9832DFBURGEONING_BATTLEFIELD",
+						["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 					}),
 					i(169899, {	-- Polished Skull Trophy (Rank 4)
-						["description"] = "~L.REQUIRES_REACHING_ELITE_RATING_IN_PVP_AND",
+						["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 						["u"] = REMOVED_FROM_GAME,	-- PvP Elite/Gladiator
 					}),
@@ -164,24 +164,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53053, {	-- To The Mugambala!
-					["description"] = createLocalizationString({
-						readable = "You have to enable War Mode to get this quest.",
-						constant = "YOU_HAVE_TO_ENABLE_WAR_MODE_TO_GET_THIS_QUEST",
-						export = true,
-						text = {
-							en = "You have to enable War Mode to get this quest.",
-							-- TODO: de = "",
-							-- TODO: es = "",
-							-- TODO: mx = "",
-							-- TODO: fr = "",
-							-- TODO: it = "",
-							-- TODO: ko = "",
-							-- TODO: pt = "",
-							-- TODO: ru = "",
-							cn = "你需要开启战争模式才能获得此任务。",
-							-- TODO: tw = "",
-						},
-					}),
+					["description"] = "You have to enable War Mode to get this quest.",
 					["provider"] = { "n", 138708 },	-- Garona Halforcen
 					["coord"] = { 58.4, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
@@ -1483,7 +1466,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 61.9, 46.9, ZULDAZAR },
 			}),
 			q(53476, {	-- The Great Sea Scrolls
-				["description"] = "~L.YOU_RECEIVE_THE_ITEM_THAT_STARTS_THIS_QUEST",
+				["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 				["maps"] = {
 					NAZMIR,
