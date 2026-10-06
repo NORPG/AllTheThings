@@ -399,11 +399,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	})
 end)
 local CacheQuestsByScope, CacheQuestByScope
+local FirstRefresh = true
 if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 	local AccountWide = app.AccountWideQuestsDB
 	local acctQuests = {}
 	local charQuests = {}
-	CacheQuestsByScope = function(quests, flag)
+	CacheQuestsByScope = function(quests, flag, manyQuests)
 		wipe(acctQuests)
 		wipe(charQuests)
 		flag = flag and 1 or nil
@@ -416,7 +417,17 @@ if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 				charQuests[questID] = true
 			end
 		end
-		-- app.PrintDebug("ACCT")
+		if not FirstRefresh and not manyQuests then
+			-- app.PrintDebug("CacheQuestsByScope:Repeat")
+			---@type function
+			local SetThingCollected = app.SetThingCollected
+			for questID in pairs(acctQuests) do
+				SetThingCollected("questID", questID, true, flag)
+			end
+			for questID in pairs(charQuests) do
+				SetThingCollected("questID", questID, false, flag)
+			end
+		end
 		-- app.PrintTable(acctQuests)
 		-- app.PrintDebug("CHAR")
 		-- app.PrintTable(charQuests)
@@ -438,8 +449,17 @@ if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 		end
 	end
 else
-	CacheQuestsByScope = function(quests, flag)
+	CacheQuestsByScope = function(quests, flag, manyQuests)
 		flag = flag and 1 or nil
+		-- first refresh or many Quests is simply caching
+		if not FirstRefresh and not manyQuests then
+			---@type function
+			local SetThingCollected = app.SetThingCollected
+			-- repeat refresh assumes direct collection
+			for questID in pairs(quests) do
+				SetThingCollected("questID", questID, false, flag)
+			end
+		end
 		app.SetBatchCached(CACHE, quests, flag)
 	end
 	CacheQuestByScope = function(questID, flag)
@@ -964,7 +984,6 @@ local RefreshQuestInfo = function(questID)
 		RefreshAllQuestInfo();
 	end
 end
-local FirstRefresh = true
 if C_QuestLog_GetAllCompletedQuestIDs then
 	local MAX = 999999;
 	local UnflaggedQuests = {}
@@ -1036,10 +1055,10 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 			app.wipearray(DirtyQuests)
 		end
 		if next(FlaggedQuests) then
-			CacheQuestsByScope(FlaggedQuests,1)
+			CacheQuestsByScope(FlaggedQuests,1,manyQuests)
 		end
 		if next(UnflaggedQuests) then
-			CacheQuestsByScope(UnflaggedQuests)
+			CacheQuestsByScope(UnflaggedQuests,false,manyQuests)
 		end
 
 		if manyQuests then
@@ -1107,7 +1126,7 @@ else	-- no C_QuestLog_GetAllCompletedQuestIDs
 			for i=1,#DirtyQuests do
 				UpdateQuestIDs[DirtyQuests[i]] = true
 			end
-			CacheQuestsByScope(UpdateQuestIDs, 1);
+			CacheQuestsByScope(UpdateQuestIDs, 1, #DirtyQuests < 50);
 		end
 		BatchRefresh = nil
 		if FirstRefresh then
