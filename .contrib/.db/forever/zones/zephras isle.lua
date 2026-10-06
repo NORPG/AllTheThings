@@ -163,7 +163,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					objective(1, {	-- 0/8 Abandoned Belongings
 						["providers"] = {
 							{ "i", 266433 },	-- Abandoned Belongings
-							{ "o", 623295 },	-- Abandonded Belongings
+							{ "o", 623295 },	-- Abandoned Belongings
 						},
 						["coord"] = { 58.0, 31.9, MAP.ZEPHRAS_ISLE },
 					}),
@@ -515,7 +515,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93835, {	-- Confront Lorthuna
 				["sourceQuest"] = 93958,	-- The Inner Sanctum
-				["qg"] = 252383,	-- Valennia Stormfist
+				["qgs"] = {
+					252383,	-- Valennia Stormfist
+					253590,	-- Valennia Stormfist
+				},
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
@@ -606,6 +609,48 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 2,
 			}),
+			q(93963, {	-- Exploring the Alliance
+				["sourceQuest"] = 94947,	-- Welcome to Azeroth
+				["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				["coord"] = { 80.1, 38.4, MAP.STORMWIND_CITY },
+				["maps"] = { MAP.IRONFORGE, MAP.DARNASSUS },
+				["races"] = SKYBORNE_ALLIANCE,
+				["lvl"] = 7,
+				["groups"] = {
+					objective(1, {	-- Receive Instructions from Randal Emerson
+						["provider"] = { "i", 285356 },	-- Advison Emerson's Instructions (QI!)
+						["cr"] = 275491,	-- Randal Emerson
+						["coords"] = {
+							{ 79.0, 44.8, MAP.STORMWIND_CITY },
+							{ 79.2, 44.2, MAP.STORMWIND_CITY },
+						},
+					}),
+					objective(2, {	-- Speak with High Tinker Mekkatorque
+						["provider"] = { "n", 7937 },
+						["coord"] = { 69.2, 49.2, MAP.IRONFORGE },
+					}),
+					objective(3, {	-- Speak with King Magni Bronzebeard
+						["provider"] = { "n", 2784 },
+						["coord"] = { 39.4, 55.8, MAP.IRONFORGE },
+					}),
+					objective(4, {	-- Speak with Tyrande Whisperwind
+						["provider"] = { "n", 7999 },
+						["coord"] = { 43.0, 77.8, MAP.DARNASSUS },
+					}),
+					i(286427),	-- Cloak of the Honored Guest
+				},
+			}),
+			q(93739, {	-- Exploring the Horde
+				["sourceQuest"] = 95350,	-- Welcome to Azeroth
+				["qg"] = 4949,	-- Thrall <Warchief>
+				["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
+				["races"] = { SKYBORNE_HORDE },
+				["lvl"] = 7,
+				["qi"] = 285357,	-- Advisor Nazgrel's Instructions (QI!)
+				["groups"] = {
+					i(286426),	-- Honorbound Cloak
+				},
+			}),
 			q(92529, {	-- Falaath Village
 				["sourceQuest"] = 93036,	-- Infiltrating the Cult
 				["qg"] = 251904,	-- Sania Silverstream
@@ -623,6 +668,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["qi"] = 265140,	-- Pristine Shriekling Feather (QI!)
 			}),
 			q(99260, {	-- Fillion's Mission
 				["sourceQuest"] = 92850,	-- The Missing Scholar
@@ -790,7 +836,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92947, {	-- Making Our Move
 				["sourceQuest"] = 93065,	-- Prepare for Battle
-				["qg"] = 252383,	-- Valennia Stormfist
+				["qgs"] = {
+					252383,	-- Valennia Stormfist
+					253844,	-- Valennia Stormfist
+				},
 				["coord"] = { 61.2, 71.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 7,
 			}),
@@ -810,6 +859,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 254151,	-- Vayn Moongaze
 				["coord"] = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["qi"] = 258771,	-- Al'Alketh Cultist's Ear (QI!)
 				["groups"] = {
 					i(263306),	-- Nightclaw Gloves
 					i(263307),	-- Shadowgale Pants
@@ -818,9 +868,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93459, {	-- More Al'Aketh Ears
 				["sourceQuest"] = 93165,	-- Mercy Falls on Deaf Ears
-				["qg"] = 254151,
+				["qg"] = 254151,	-- Vayn Moongaze
+				["coord"] = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				repeatable = true,
 				["lvl"] = 8,
+				["qi"] = 258771,	-- Al'Alketh Cultist's Ear (QI!)
 			}),
 			q(92684, {	-- Ornery Ornery Galestriders
 				["sourceQuest"] = 92679,	-- Blood Tithe
@@ -988,6 +1040,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["groups"] = {
+					o(619450, {	-- Lady's Tear Moss
+						i(265105),	-- Lady's Tear Moss (QI!)
+					}),
+				},
 			}),
 			q(96638, {	-- The Adventurer [Zephras Isle]
 				sourceQuest = 92470,	-- Foul Matriarch
@@ -1088,6 +1145,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["qi"] = 265782,	-- Mysterious Orders (PQI!)
 			}),
 			q(93836, {	-- The Fate of Zephras
 				["sourceQuest"] = 92646,	-- Confront Lorthuna
@@ -1108,6 +1166,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251684,	-- Strange Hermit
 				["coord"] = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["groups"] = {
+					o(613238, {	-- Zephyrseed Cone
+						i(257128),	-- Zephyrseed (QI!)
+					}),
+				},
 			}),
 			q(92598, {	-- The Gift of Skysight
 				["qg"] = 251487,	-- Ventaari Brightwish
@@ -1175,7 +1238,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94946, {	-- The Magical City of Dalaran
 				["sourceQuest"] = 93089,	-- What Comes Next
 				["qg"] = 252475,	-- Elaadrin Evengale
-				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 66.6, 79.9, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
@@ -1243,6 +1306,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["classes"] = { WARRIOR },
 				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
+				["qi"] = 263993,	-- Skybreaker Bulwark (QI!)
 				["groups"] = {
 					i(275290),	-- Stormforged Protector
 				},
@@ -1263,6 +1327,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["qi"] = 265475,	-- Commander Haalien's Severed Head (QI!)
 			}),
 			q(92643, {	-- The Turncoat
 				["sourceQuest"] = 92881,	-- The High Elder's Request
@@ -1355,6 +1420,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 253372,	-- Dead Cultist
 				["coord"] = { 56.0, 58.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
+				["qi"] = 273852,	-- Glowing Crystal (PQI!)
 				["groups"] = {
 					i(263330),	-- Tracker's Pants
 					i(263332),	-- Elder's Tunic
@@ -1371,6 +1437,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
+				["qi"] = 265141,	-- Bloody Heirloom (QI!)
 			}),
 			q(93736, {	-- Unwelcome Spirits
 				["sourceQuest"] = 92700,	-- The Grand Skyseer
@@ -1413,6 +1480,20 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(257255),	-- Highlands Defender's Shield
 				},
 			}),
+			q(94947, {	-- Welcome to Azeroth
+				--["sourceQuest"] = 94946,	-- The Magical City of Dalaran
+				["qg"] = 259084,	-- Denaaris Stargale
+				["coord"] = { 12.3, 56.4, MAP.ALTERAC_MOUNTAINS },
+				["races"] = SKYBORNE_ALLIANCE,
+				["lvl"] = 7,
+			}),
+			q(95350, {	-- Welcome to Azeroth
+				sourceQuest = 95349,	-- The Earthen Ring
+				qg = 259119,	-- Alaana Stormwalker
+				coord = { 33.4, 22.4, MAP.MULGORE },
+				races = { SKYBORNE_HORDE },
+				lvl = 7,
+			}),
 			q(93461, {	-- Welcome to Shen'dar Village (A)
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
@@ -1446,6 +1527,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 			}),
 		}),
+		n(RARES, {
+			n(259398, {	-- Galemender Delanea
+				coord = { 63.2, 61.9 , MAP.ZEPHRAS_ISLE },	-- Walks around the area
+				groups = {
+					i(285254),	-- Scout Ranger's Gloves
+					i(285255),	-- Thendal Watcher's Gloves
+				},
+			}),
+		}),
 		n(TREASURES, {
 			o(616907, {	-- Windstone
 				["description"] = "Spawns randomly throughout Zephras Isle.",
@@ -1454,9 +1544,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			o(626718, { -- Dented Chest
 				coord = { 37.8, 24.6 , MAP.ZEPHRAS_ISLE },
-				groups = {
-					i(2651),	-- Flimsy Chain Bracers
-					i(252022),	-- Galestrider Jerky
+			}),
+			o(626752, { -- Dented Chest
+				coords = {
+					{ 56.0, 58.7 , MAP.ZEPHRAS_ISLE },
+					{ 66.1, 65.3 , MAP.ZEPHRAS_ISLE },
 				},
 			}),
 		}),
@@ -1773,17 +1865,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(2057, {	-- Pitted Defias Shortsword
-				coords = {
-					{ 45.7, 18.7, MAP.ZEPHRAS_ISLE },
-					{ 47.0, 20.0, MAP.ZEPHRAS_ISLE },
-				},
-				cr = 251160,	-- Al'Aketh Convert
-			}),
-			i(251932, {	-- Sharpened Cirrusfly Stinger
-				coord = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
-				cr = 251402,	-- Cirrusfly Soldier
-			}),
+			-- Notable Drops
 			i(273815, {	-- Airy Windseeker's Shirt
 				crs = {
 					252765,	-- Al'Aketh Blademaster
@@ -1797,6 +1879,24 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					256966,	-- Skypriest Aanders
 				},
 			}),
+			i(2057, {	-- Pitted Defias Shortsword
+				coords = {
+					{ 45.7, 18.7, MAP.ZEPHRAS_ISLE },
+					{ 47.0, 20.0, MAP.ZEPHRAS_ISLE },
+				},
+				cr = 251160,	-- Al'Aketh Convert
+			}),
+			i(251932, {	-- Sharpened Cirrusfly Stinger
+				coord = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
+				cr = 251402,	-- Cirrusfly Soldier
+			}),
+			-- General Drops
+			i(252031),	-- Crisp Spring Water
+			i(252028),	-- Fresh Gustberry Bread
+			i(252022),	-- Galestrider Jerky
+			i(267474),	-- Galeswept Forestshroom
+			i(252030),	-- Pungent Skycheddar
+			i(252032),	-- Red Delicious Stormapple
 		}),
 	},
 });

@@ -335305,6 +335305,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "凹陷的箱子",
 		},
 	},
+	[626752] = {
+		readable = "Dented Chest",
+		model = 219372,
+		text = {
+			en = "Dented Chest",
+			tw = "凹陷的箱子",
+		},
+	},
 	[626980] = {
 		readable = "Belanise Cluster",
 		ignorewowhead = true,

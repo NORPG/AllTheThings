@@ -634,35 +634,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(5095),	-- Rainbow Fin Albacore
 				},
 			}),
-			q(93963, {	-- Exploring the Alliance
-				["qg"] = 1748,	-- Highlord Bolvar Fordragon
-				["coord"] = { 80.1, 38.4, MAP.STORMWIND_CITY },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["maps"] = { MAP.IRONFORGE, MAP.DARNASSUS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					objective(1, {	-- Randal Emerson
-						["provider"] = { "n", 275491 },
-						["coords"] = {
-							{ 79.0, 44.8, MAP.STORMWIND_CITY },
-							{ 79.2, 44.2, MAP.STORMWIND_CITY },
-						},
-					}),
-					objective(2, {	-- High Tinker Mekkatorque
-						["provider"] = { "n", 7937 },
-						["coord"] = { 69.2, 49.2, MAP.IRONFORGE },
-					}),
-					objective(3, {	-- King Magni Bronzebeard
-						["provider"] = { "n", 2784 },
-						["coord"] = { 39.4, 55.8, MAP.IRONFORGE },
-					}),
-					objective(4, {	-- Tyrande Whisperwind
-						["provider"] = { "n", 7999 },
-						["coord"] = { 43.0, 77.8, MAP.DARNASSUS },
-					}),
-					i(286427),	-- Cloak of the Honored Guest
-				},
-			}),
 			q(98021, {	-- Journey to Sentinel Hill
 				["qg"] = 1748,	-- Highlord Bolvar Fordragon
 				["coord"] = { 80.1, 38.4, MAP.STORMWIND_CITY },
@@ -1064,9 +1035,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(334, {	-- Package for Thurman
 				["qg"] = 1428,	-- Rema Schneider
-				["qi"] = 2760,	-- Thurman's Sewing Kit
 				["coord"] = { 58.1, 67.5, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
+				["qi"] = 2760,	-- Thurman's Sewing Kit
 			}),
 			q(97220, {	-- Philmor's Favor
 				qg = 268511,	-- Manifest Clerk Philmor
@@ -1854,14 +1825,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(332, {	-- Wine Shop Advert
-				["sourceQuest"] = 61,	-- Shipment to Stormwind
+				--["sourceQuest"] = 61,	-- Shipment to Stormwind
 				["qg"] = 1432,	-- Renato Gallina
-				["qi"] = 2722,	-- Wine Ticket (PQI!)
 				["coord"] = { 63.8, 73.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(2723),	-- Bottle of Dalaran Noir
-				},
+				["qi"] = 2722,	-- Wine Ticket (PQI!)
+				["groups"] = { i(2723) },	-- Bottle of Dalaran Noir
 			}),
 			q(397, {	-- You Have Served Us Well
 				["sourceQuest"] = 336,	-- A Noble Brew (2/2)
