@@ -21,13 +21,28 @@ The report uses tab-separated columns, so copied timing and counter rows can als
 | --- | --- |
 | `/att profile` or `/att profile help` | Prints command usage. |
 | `/att profile start [seconds]` | Clears the previous capture and starts recording. The default is 30 seconds; accepted durations are 1 through 300 seconds, including fractional values. |
+| `/att profile nextlogin [seconds]` | Saves a one-shot request to start at the next login or UI reload. Uses the same default and duration limits as `start`; leaves the current capture and report intact. |
+| `/att profile nextlogin cancel` | Removes the pending login request without changing the current capture. |
 | `/att profile stop` | Stops recording and keeps the captured results available. Reports that no capture is running if already stopped. |
 | `/att profile report` | Opens a copyable report. During a capture, it shows a snapshot and recording continues. Run it again to see later results. |
 | `/att profile reset` | Stops recording and clears all captured results. |
 
 An invalid duration is rejected without replacing an active capture. A timer stops a valid capture automatically. Because WoW runs the callback when Lua execution permits it, a long synchronous operation can make the actual elapsed time exceed the requested duration.
 
-Results exist only in memory for the current UI session. Starting another capture, resetting, reloading the UI, or logging out discards them. There is no SavedVariables history or automatic file export. A capture started from a chat command cannot measure startup work that finished before the command became available.
+Results exist only in memory for the current UI session. Starting another capture, resetting, reloading the UI, or logging out discards them. There is no SavedVariables history or automatic file export. A manual capture started with `/att profile start` cannot measure startup work that finished before the command became available.
+
+## Capture the next login
+
+1. Run `/att profile nextlogin 60` before logging out, or before reloading the UI. Omit the duration to use 30 seconds.
+2. Log back in with ATT enabled, or run `/reload`. ATT starts the capture at the beginning of its `PLAYER_LOGIN` handler, before settings initialization and the initial collection refresh.
+3. Wait for the automatic stop message, or use `/att profile stop` after the work you want to measure finishes.
+4. Run `/att profile report` and copy the results before logging out, reloading, or starting another capture.
+
+The request is stored in ATT's existing account-wide SavedVariables. The next character login that loads ATT consumes it; it is not tied to an ATT settings profile or to the character that scheduled it. Each request runs once, and must be scheduled again for another login capture. A new valid request replaces the pending duration. Invalid durations leave both the pending request and the current capture unchanged.
+
+Use `/att profile nextlogin cancel` to cancel a request. Manual `start`, `stop`, and `reset` commands affect the current capture only; they leave the pending login request in place. Only the requested duration is saved. Timing samples and reports are still discarded on logout or UI reload.
+
+Login captures measure the same instrumented scopes as manual captures. They begin at `PLAYER_LOGIN`, so earlier addon-file execution and database-file loading are outside the capture. Slow synchronous startup work can delay the automatic stop callback and extend elapsed time; use a longer duration if progressive loading or collection refresh continues after the capture stops. Login and UI-reload behavior still require validation in the intended clients.
 
 ## Read the report
 
@@ -130,6 +145,7 @@ Before this Draft is considered ready, validate the following in the intended Wo
 
 - Load ATT with profiling disabled and confirm normal operation and no Lua errors.
 - Start a capture, trigger a collection refresh, stop, and copy a readable report from the popup.
+- Schedule a next-login capture, test normal logout/login and `/reload`, and confirm it starts before initial collection work, runs once, and can be canceled.
 - Confirm automatic stopping, reset, invalid-duration handling, and repeated captures.
 - Capture Completionist and Unique behavior and verify that the expected timing scopes and event counters appear when their paths execute.
 - Check the optional Blizzard section where the API is available and enabled, and confirm ATT captures still work when that section is absent.
