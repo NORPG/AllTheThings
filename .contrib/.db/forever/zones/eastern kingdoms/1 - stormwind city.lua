@@ -85,7 +85,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				n(2327, {	-- Shaina Fuller <First Aid Trainer>
 					["coord"] = { 52.8, 44.8, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_FIRST_AID,
+					["groups"] = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
 				}),
 			}),
 			prof(FISHING, {

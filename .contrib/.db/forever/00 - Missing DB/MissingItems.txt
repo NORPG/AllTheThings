@@ -8125,22 +8125,18 @@ i(255657),	-- Pylon Shard
 i(255658),	-- Al'Aketh Windstone Charm
 i(255662),	-- Mana Sieve
 i(255667),	-- Coalesced Mana Crystal
-i(255715),	-- Potent Anti-Venom
-i(255716),	-- Simple Poultice
-i(255717),	-- Clever Poultice
-i(255718),	-- Superior Poultice
-i(255719),	-- Powerful Poultice
-i(255720),	-- Woolen Tourniquet
-i(255721),	-- Leather Tourniquet
-i(255722),	-- Surgical Tourniquet
-i(255723),	-- Manual: Greater Healing Potion
-i(255724),	-- Manual: Clever Poultice
-i(255725),	-- Manual: Superior Healing Potion
-i(255726),	-- Manual: Leather Tourniquet
-i(255727),	-- Manual: Superior Poultice
-i(255728),	-- Manual: Potent Anti-Venom
-i(255730),	-- Manual: Surgical Tourniquet
-i(255731),	-- Manual: Powerful Poultice
+
+
+
+
+
+
+
+
+
+
+
+
 i(255875),	-- Necromantic Garb
 i(255878),	-- Tear of Theradras
 i(255941),	-- Gelkis Necromantic Garb
@@ -9367,14 +9363,14 @@ i(273098),	-- Blueprint: Field Guide
 i(273099),	-- Blueprint: Spinning Wheel
 i(273101),	-- Blueprint: Expert Campfire
 i(273102),	-- Blueprint: Cookie's Feast
-i(273105),	-- Blueprint: Toxin Study
+
 i(273109),	-- Blueprint: Trapper's Workbench
 i(273112),	-- Blueprint: Alchemy Laboratory
 i(273113),	-- Blueprint: Master Forge
 i(273115),	-- Blueprint: Iron Oven \\ Blueprint: Baker's Oven
 i(273116),	-- Blueprint: Arcane Forge
 i(273117),	-- Blueprint: Anarchist's Workbench
-i(273118),	-- Blueprint: Plague Doctor's Laboratory
+
 i(273119),	-- Blueprint: Fishing Hut
 i(273120),	-- Blueprint: Seed Hybridizer
 i(273121),	-- Blueprint: Sewing Machine
@@ -10609,13 +10605,13 @@ i(279601),	-- Intact Raptor Hide
 i(279913),	-- Ti'ik's Head
 i(279934),	-- Shed Dark Dragonscale
 i(279938),	-- Trapper's Workbench
-i(279940),	-- Toxin Study
+
 i(279941),	-- Tanning Rack
 i(279943),	-- Spinning Wheel
 i(279945),	-- Sewing Machine
 i(279947),	-- Seed Hybridizer
 i(279948),	-- Rock Garden
-i(279951),	-- Plague Doctor's Laboratory
+
 i(279952),	-- Molten Foundry
 i(279957),	-- Cookie's Feast
 i(279959),	-- Loom
@@ -10626,7 +10622,7 @@ i(279964),	-- Greenhouse
 i(279965),	-- Fishing Rack
 i(279966),	-- Fishing Hut
 i(279967),	-- Fish Bowl
-i(279968),	-- First Aid Kit
+
 i(279969),	-- Field Guide
 i(279972),	-- Faction Banner
 i(279973),	-- Faction Banner

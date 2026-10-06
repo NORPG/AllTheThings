@@ -436,4 +436,18 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(279272),	-- SAF-T Ultra Precision Scope
 		}),
 	}),
+	prof(FIRST_AID, {
+		i(255717),	-- Clever Poultice
+		i(279968),	-- First Aid Kit
+		i(279951),	-- Plague Doctor's Laboratory
+		i(255715),	-- Potent Anti-Venom
+		i(255716),	-- Simple Poultice
+		i(279940),	-- Toxin Study
+		i(255720),	-- Woolen Tourniquet
+		-- Unknown
+		i(255721),	-- Leather Tourniquet
+		i(255719),	-- Powerful Poultice
+		i(255718),	-- Superior Poultice
+		i(255722),	-- Surgical Tourniquet
+	}),
 }));

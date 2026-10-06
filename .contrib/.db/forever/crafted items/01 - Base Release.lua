@@ -784,24 +784,23 @@ root(ROOTS.Craftables, {
 		}),	
 	}),
 	prof(FIRST_AID, {
-		i(118),	-- Minor Healing Potion
-		i(1710),	-- Greater Healing Potion
-		i(929),	-- Healing Potion
-		i(858),	-- Lesser Healing Potion
-		i(13446),	-- Major Healing Potion
-		i(3928),	-- Superior Healing Potion
-		
 		i(6452),	-- Anti-Venom
+		i(1710),	-- Greater Healing Potion
+		i(929),		-- Healing Potion
 		i(2581),	-- Heavy Linen Bandage
 		i(8545),	-- Heavy Mageweave Bandage
 		i(14530),	-- Heavy Runecloth Bandage
 		i(6451),	-- Heavy Silk Bandage
 		i(3531),	-- Heavy Wool Bandage
+		i(858),		-- Lesser Healing Potion
 		i(1251),	-- Linen Bandage
 		i(8544),	-- Mageweave Bandage
+		i(13446),	-- Major Healing Potion
+		i(118),		-- Minor Healing Potion
 		i(14529),	-- Runecloth Bandage
 		i(6450),	-- Silk Bandage
 		i(6453),	-- Strong Anti-Venom
+		i(3928),	-- Superior Healing Potion
 		i(3530),	-- Wool Bandage
 	}),
 	prof(FISHING, {

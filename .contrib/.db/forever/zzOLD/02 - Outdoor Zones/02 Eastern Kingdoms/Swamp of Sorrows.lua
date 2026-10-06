@@ -698,6 +698,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(6172),	-- Lost Supplies
+				i(255728, {	-- Manual: Potent Anti-Venom (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					cr = 760,
+					coord = { 64.2, 20.6, MAP.SWAMP_OF_SORROWS },
+				}),
 				i(6196, {	-- Noboru's Cudgel
 					["cr"] = 5477,	-- Noboru the Cudgel
 				}),

@@ -3620,12 +3620,10 @@ root(ROOTS.WorldDrops, {
 			i(16043),	-- Schematic: Thorium Rifle (RECIPE!)
 			i(16051),	-- Schematic: Thorium Shells (RECIPE!)
 		}),
-		--[[ Until profession complete
 		prof(FIRST_AID, {
-			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
-				["timeline"] = { REMOVED_8_0_1 },
-			}),
+			i(6454),	-- Manual: Strong Anti-Venom (RECIPE!)
 		}),
+		--[[ Until profession complete
 		prof(LEATHERWORKING, {
 			-- Moved to Leatherworking
 			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)

@@ -1271,6 +1271,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 					["cr"] = 206,	-- Nightbane Vile Fang
 				}),
+				i(255724, {	-- Manual: Clever Poultice (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					cr = 910,	-- Defias Enchanter
+					coords = {
+						{ 21.8, 71.8, MAP.DUSKWOOD },
+						{ 50.2, 77.2, MAP.DUSKWOOD },
+					},
+				}),
 				i(2234, {	-- Nightwalker Armor
 					["coords"] = {
 						{ 74.0, 74.2, MAP.DUSKWOOD },

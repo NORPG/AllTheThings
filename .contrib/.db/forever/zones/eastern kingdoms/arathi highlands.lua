@@ -56,7 +56,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				n(12920, {	-- Doctor Gregory Victor <Trauma Surgeon>
 					["coord"] = { 73.4, 36.8, MAP.ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["groups"] = ARTISAN_FIRST_AID,
+					["groups"] = FIRST_AID_RECIPES.ARTISAN,
 				}),
 			}),
 			prof(FISHING, {
@@ -1111,6 +1111,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				["coord"] = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
+			}),
+			i(255723, {	-- Manual: Greater Healing Potion (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 2589,	-- Syndicate Mercenary
+				coord = { 32.4, 30.8, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(1993, {	-- Ogremind Ring
 				["crs"] = {

@@ -1368,8 +1368,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							i(19328),	-- Pattern: Dawn Treaders (RECIPE!)
 							--[[Commented out until confirmed
 							i(19203),	-- Plans: Girdle of the Dawn (RECIPE!)
-							--]]
 							i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)
+							--]]
 							i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 							i(22014, {	-- Hallowed Brazier
 								["cost"] = { { "g", 1500000 } },	-- 150g

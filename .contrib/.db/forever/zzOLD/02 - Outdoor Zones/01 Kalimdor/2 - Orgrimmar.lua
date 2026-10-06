@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					n(3373, {	-- Arnok <First Aid Trainer>
 						["coord"] = { 34.0, 84.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_FIRST_AID,
+						["groups"] = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
 					}),
 				}),
 				prof(FISHING, {
