@@ -301,7 +301,6 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end
 		-- make sure the correct ID for the cache is being updated, it may technically differ from the key/id provided
 		-- i.e. firstcraftswithquest
-		-- TODO: fix this for FC/Quest trigger
 		local cacheKeyID = t.keyval
 		local oldstate = (accountWide and IsAccountCached or IsCached)(cacheKey, cacheKeyID)
 		local accountCache = accountWideData[cacheKey]
