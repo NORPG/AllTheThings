@@ -70,10 +70,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			prof(ENGINEERING, {
-				n(5518, {	-- Lilliam Sparkspindle <Engineering Trainer>
+				n(5518, {	-- Lilliam Sparkspindle <Expert Engineer>
 					["coord"] = { 62.2, 30.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_ENGINEERING,
+					["groups"] = ENGINEERING_RECIPES.JOURNEYMAN,
+				}),
+				n(11026, {	-- Sprite Jumpsprocket <Journeyman Engineer>
+					["coord"] = { 62.0, 30.6, MAP.STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = ENGINEERING_RECIPES.APPRENTICE,
 				}),
 			}),
 			prof(FIRST_AID, {

@@ -165,7 +165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			prof(ENGINEERING, {
 				n(7406, {	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["coord"] = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
-					["groups"] = ALL_GNOMISH_ENGINEERING,
+					["groups"] = ENGINEERING_RECIPES.GNOMISH_ENGINEERING,
 				}),
 			}),
 			prof(LEATHERWORKING, {

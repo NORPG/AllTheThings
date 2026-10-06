@@ -1518,7 +1518,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ 68.8, 20.6, MAP.EASTERN_PLAGUELANDS },
 						{ 65.4, 22.6, MAP.EASTERN_PLAGUELANDS },
 					},
-					["timeline"] = { ADDED_1_11_1 },
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 				}),
 			}),

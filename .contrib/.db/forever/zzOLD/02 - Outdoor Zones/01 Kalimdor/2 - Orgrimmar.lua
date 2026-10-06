@@ -87,10 +87,20 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					}),
 				}),
 				prof(ENGINEERING, {
-					n(11017, {	-- Roxxik <Engineering Trainer>
-						["coord"] = { 56.8, 56.4, MAP.ORGRIMMAR },
+					n(3412, {	-- Nogg <Expert Engineer>
+						["coord"] = { 75.8, 25.2, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_CATA_ENGINEERING,
+						["groups"] = ENGINEERING_RECIPES.JOURNEYMAN,
+					}),
+					n(11017, {	-- Roxxik <Artisan Engineer>
+						["coord"] = { 76.0, 25.0, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = ENGINEERING_RECIPES.EXPERT,
+					}),
+					n(2857, {	-- Thund <Journeyman Engineer>
+						["coord"] = { 75.8, 24.6, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = ENGINEERING_RECIPES.APPRENTICE,
 					}),
 				}),
 				prof(FIRST_AID, {
