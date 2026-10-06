@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -123,6 +124,29 @@ namespace ATT
         /// </summary>
         private static readonly IDictionary<long, IDictionary<string, object>> DIRTY_OBJECT_FIELDS = new Dictionary<long, IDictionary<string, object>>();
 
+        private static readonly HttpClient client = new HttpClient(new HttpClientHandler
+        {
+            AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate,
+            UseCookies = true
+        });
+
+        static ObjectHarvester()
+        {
+            var h = client.DefaultRequestHeaders;
+            h.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36");
+            h.Accept.ParseAdd("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+            h.AcceptLanguage.ParseAdd("en-US,en;q=0.9");
+            h.Referrer = new Uri("https://www.wowhead.com/");
+            h.AcceptCharset.ParseAdd("utf-8");
+            h.TryAddWithoutValidation("sec-ch-ua", "\"Chromium\";v=\"129\", \"Not=A?Brand\";v=\"8\"");
+            h.TryAddWithoutValidation("sec-ch-ua-mobile", "?0");
+            h.TryAddWithoutValidation("sec-ch-ua-platform", "\"Windows\"");
+            h.TryAddWithoutValidation("sec-fetch-dest", "document");
+            h.TryAddWithoutValidation("sec-fetch-mode", "navigate");
+            h.TryAddWithoutValidation("sec-fetch-site", "same-origin");
+            h.TryAddWithoutValidation("upgrade-insecure-requests", "1");
+        }
+
         /// <summary>
         /// Get the document from WoWHead.
         /// </summary>
@@ -138,12 +162,15 @@ namespace ATT
             try
             {
                 // https://www.wowhead.com/classic/de/object=14845
-                using (WebClient webClient = new WebClient())
-                {
-                    string url = $"https://{(locale == "en" ? "www" : locale)}.wowhead.com/{(string.IsNullOrEmpty(flavor) ? "" : $"{flavor}/")}object={objectID}";
-                    Framework.Log("Downloading: ", url);
-                    return Encoding.UTF8.GetString(webClient.DownloadData(url));
-                }
+                string url = $"https://{(locale == "en" ? "www" : locale)}.wowhead.com/{(string.IsNullOrEmpty(flavor) ? "" : $"{flavor}/")}object={objectID}";
+                Framework.Log("Downloading: ", url);
+
+                // Use if needing to Debug
+                //var resp = client.GetAsync(url).GetAwaiter().GetResult();
+                //byte[] data = resp.Content.ReadAsByteArrayAsync().GetAwaiter().GetResult();
+                //return Encoding.UTF8.GetString(data);
+
+                return Encoding.UTF8.GetString(client.GetByteArrayAsync(url).GetAwaiter().GetResult());
             }
             catch (Exception e)
             {

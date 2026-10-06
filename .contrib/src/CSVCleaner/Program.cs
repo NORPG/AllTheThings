@@ -34,7 +34,7 @@ using StreamReader sr = new(filepath);
 // header columns
 sb.AppendLine(sr.ReadLine());
 
-string? line;
+string line;
 while ((line = sr.ReadLine()) != null)
 {
     foreach (string regex in regexPatterns)
