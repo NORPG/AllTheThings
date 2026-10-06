@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,cat,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
+local cat,h,i,prof,q,r=_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe;
 categories.Professions=
 h(-44,{SortPriority=25,g={
 prof(171),
@@ -80,13 +80,13 @@ r(10003,{learnedAt=235,requireSkill=9787,skillID=2938}),
 r(10015,{learnedAt=260,requireSkill=9787,skillID=2938})}})}}),
 h(-45,{requireSkill=164,g={
 q(5283,{altQuests={5284,5301,5302},coords={
-[1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
+[1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164}),
 q(5301,{altQuests={5283,5284,5302},coords={
-[1454]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003}),
+[1454]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164}),
 q(5284,{altQuests={5283,5301,5302},coords={
-[1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003}),
+[1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164}),
 q(5302,{altQuests={5283,5284,5301},coords={
-[1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}),
+[1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164})}})}),
 prof(185),
 prof(333),
 prof(202,{
@@ -99,21 +99,10 @@ i(11422,{description="If you destroy your Goblin Engineer Membership Card, you c
 r(3968,{itemID=4416,requireSkill=202}),
 r(3972,{itemID=4417,requireSkill=202}),
 r(15628,{b=1,itemID=11828,requireSkill=202})}})}})}),
-prof(129,{rwp=80001,g={
-x(1,{requireSkill=129,g={
-ach(131,{requireSkill=129}),
-ach(132,{requireSkill=129}),
-ach(133,{requireSkill=129})}}),
-x(2,{requireSkill=129,u=17}),
-x(3,{requireSkill=129,u=30}),
-x(4,{requireSkill=129}),
-x(5,{requireSkill=129}),
-x(6,{requireSkill=129}),
-x(7,{requireSkill=129})}}),
+prof(129),
 prof(356),
 prof(182),
 prof(165,{
-x(1,{awp=10100,requireSkill=165,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
 cat(252,{requireSkill=165,g={
 r(19094,{learnedAt=310,requireSkill=10656,skillID=2945}),
@@ -187,8 +176,8 @@ r(19063,{learnedAt=270,requireSkill=10660,skillID=2945}),
 r(20853,{learnedAt=315,requireSkill=10660,skillID=2945}),
 r(19066,{learnedAt=270,requireSkill=10660,skillID=2945})}}),
 cat(259,{requireSkill=165,g={
-r(22927,{learnedAt=320,requireSkill=10660,rwp=40003,skillID=2945,u=1101})}})}})}}),
-h(-45,{lvl=40,requireSkill=165,rwp=40003,g={
+r(22927,{learnedAt=320,requireSkill=10660,rwp=40003,skillID=2945,u=1101})}})}}),
+h(-45,{requireSkill=165,g={
 q(5141,{altQuests={5143,5144},coords={
 [1447]={{37.4,65.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165}),
 q(5145,{altQuests={5146,5148},coords={

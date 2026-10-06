@@ -3309,7 +3309,10 @@ end
 ---@return ATTProfessionObject
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
+	-- CRIEVE NOTE: I need to look back at this and see if it's necessary.
 	-- #if NOT ANYCLASSIC
+	bubbleDown({ ["requireSkill"] = skillID }, p);
+	-- #elseif FOREVER
 	bubbleDown({ ["requireSkill"] = skillID }, p);
 	-- #endif
 	root(ROOTS.Professions, p);
