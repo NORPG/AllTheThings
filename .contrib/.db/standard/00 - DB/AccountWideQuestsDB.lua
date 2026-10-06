@@ -1907,6 +1907,7 @@ local AccountWideQuestsDB = {
 	85161,	-- Rotfist weekly reputation
 	85162,	-- Deepflayer Broodmother weekly reputation
 	85163,	-- Lurker of the Deeps weekly reputation
+	85164,	-- Beledar's Spawn Bonus Reputation
 	85165,	-- Deathtide weekly reputation
 	85166,	-- Tka'ktath weekly reputation
 	85167,	-- The One Left weekly reputation
