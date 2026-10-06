@@ -13,6 +13,21 @@ local MAX_METRICS = 64;
 local MAX_ID_BYTES = 96;
 local BUCKET_LIMITS = { 0.25, 0.5, 1, 2, 4, 8, 16, 33, 66, 100, 250, 500, 1000 };
 
+---Validate a capture duration without changing active or scheduled capture state.
+---@param durationSeconds number|string? Seconds from 1 to 300, including numeric strings; nil selects the 30-second default.
+---@return number? seconds Accepted duration; nil for an invalid type, non-finite value, or out-of-range duration.
+---@return string? errorMessage Validation message on failure; nil when the duration is accepted.
+local function ValidateDuration(durationSeconds)
+	if durationSeconds ~= nil and type(durationSeconds) ~= "number" and type(durationSeconds) ~= "string" then
+		return nil, "Duration must be between 1 and 300 seconds.";
+	end
+	local seconds = tonumber(durationSeconds) or (durationSeconds == nil and DEFAULT_DURATION);
+	if not seconds or seconds ~= seconds or seconds < 1 or seconds > MAX_DURATION then
+		return nil, "Duration must be between 1 and 300 seconds.";
+	end
+	return seconds;
+end
+
 ---@alias ATTProfilerMetricKind 'time'|'counter'
 
 ---Aggregated execution or wall-clock durations for a single stable metric ID.
@@ -189,9 +204,10 @@ end
 ---@return boolean started True if a fresh capture replaced the previous one; false leaves the current capture unchanged.
 ---@return number|string result Accepted seconds when started is true; otherwise an error message.
 function Profiler.Start(durationSeconds)
-	local seconds = tonumber(durationSeconds) or (durationSeconds == nil and DEFAULT_DURATION);
-	if not seconds or seconds ~= seconds or seconds < 1 or seconds > MAX_DURATION then
-		return false, "Duration must be between 1 and 300 seconds.";
+	local seconds, errorMessage = ValidateDuration(durationSeconds);
+	if not seconds then
+		---@cast errorMessage string
+		return false, errorMessage;
 	end
 	Profiler.Reset();
 	Profiler.Enabled = true;
@@ -206,6 +222,49 @@ function Profiler.Start(durationSeconds)
 		end
 	end);
 	return true, seconds;
+end
+
+---Save a one-shot request for the next character login or UI reload that loads ATT.
+---Read SavedVariables at call time because they are not restored when this library loads.
+---Scheduling replaces only the pending request; the current capture and report are kept.
+---@param durationSeconds number|string? Seconds from 1 to 300, including numeric strings; nil defaults to 30.
+---@return boolean scheduled True when the request was saved; false leaves existing capture and request state unchanged.
+---@return number|string result Saved duration on success; a validation or SavedVariables availability message on failure.
+function Profiler.ScheduleNextLogin(durationSeconds)
+	local seconds, errorMessage = ValidateDuration(durationSeconds);
+	if not seconds then
+		---@cast errorMessage string
+		return false, errorMessage;
+	end
+	local savedVariables = AllTheThingsSavedVariables;
+	if type(savedVariables) ~= "table" then
+		return false, "ATT has not finished loading yet.";
+	end
+	savedVariables.ProfilerNextLoginSeconds = seconds;
+	return true, seconds;
+end
+
+---Remove a pending next-login request without stopping or resetting the active capture.
+---@return boolean canceled True when a saved request was removed; false when none was queued or SavedVariables are unavailable.
+function Profiler.CancelNextLogin()
+	local savedVariables = AllTheThingsSavedVariables;
+	if type(savedVariables) ~= "table" or savedVariables.ProfilerNextLoginSeconds == nil then return false; end
+	savedVariables.ProfilerNextLoginSeconds = nil;
+	return true;
+end
+
+---Consume a one-shot request at the beginning of ATT's existing PLAYER_LOGIN handler.
+---Clear the request before starting, including invalid saved values, to prevent repeat captures.
+---With no request this performs no clock reads, timer scheduling, or Blizzard profiler calls.
+---@return boolean started True when a scheduled capture began; false when no request exists or its duration is invalid.
+---@return number|string? result Accepted seconds on success, a validation message for an invalid request, or nil when nothing was queued.
+function Profiler.StartNextLogin()
+	local savedVariables = AllTheThingsSavedVariables;
+	if type(savedVariables) ~= "table" then return false; end
+	local seconds = savedVariables.ProfilerNextLoginSeconds;
+	if seconds == nil then return false; end
+	savedVariables.ProfilerNextLoginSeconds = nil;
+	return Profiler.Start(seconds);
 end
 
 ---Format the histogram bucket containing the approximate 95th percentile duration.
