@@ -1,6 +1,6 @@
 name: Feature Request
 description: See something useful that could be added?
-labels: ["type:suggestion"]
+labels: ["type:feature"]
 
 body:
   - type: markdown
