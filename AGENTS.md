@@ -29,6 +29,8 @@ Replace `<model name>` with the actual model used. If multiple models contribute
 
 ## PR Descriptions
 
+Keep the complete PR subject (title) at 45 characters or fewer, including spaces and punctuation.
+
 Every PR must include:
 
 - `Summary`: Explain the purpose of the contribution and summarize the changes.
