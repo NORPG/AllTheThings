@@ -194,7 +194,7 @@ end, {
 })
 -- Capture a short-lived performance profile using explicit ATT instrumentation.
 app.ChatCommands.Add("profile",
----Starts, stops, reports, or clears a capture; prints usage for invalid arguments.
+---Starts, stops, reports, clears, or schedules a capture; prints usage for invalid arguments.
 ---Reporting opens a copyable snapshot and leaves an active capture running.
 ---@param args string[] Parsed arguments following /att profile.
 ---@return boolean handled Always true after handling the action or printing usage for invalid arguments.
@@ -209,6 +209,22 @@ function(args)
 			app.print("ATT profile started for", result, "seconds. Use /att profile report to view it.")
 		else
 			app.print(result)
+		end
+	elseif action == "nextlogin" then
+		if args[3] then return app.ChatCommands.PrintHelp("profile") end
+		if args[2] and args[2]:lower() == "cancel" then
+			if profiler.CancelNextLogin() then
+				app.print("ATT next-login profile canceled.")
+			else
+				app.print("No ATT next-login profile is scheduled.")
+			end
+		else
+			local ok, result = profiler.ScheduleNextLogin(args[2])
+			if ok then
+				app.print("ATT profile scheduled for", result, "seconds at the next login or /reload.")
+			else
+				app.print(result)
+			end
 		end
 	elseif action == "stop" and not args[2] then
 		if profiler.Stop() then
@@ -227,6 +243,8 @@ function(args)
 	return true
 end, {
 	"Usage : /att profile start [seconds] (default 30, maximum 300)",
+	"Usage : /att profile nextlogin [seconds] | cancel (one-shot, includes /reload)",
+	"The next character login or /reload consumes the request; cancel removes it.",
 	"Usage : /att profile stop | report | reset",
 	"Captures ATT's instrumented timings and counters in memory for a short session."
 })
