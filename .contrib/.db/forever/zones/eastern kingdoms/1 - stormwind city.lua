@@ -2426,9 +2426,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					3419,	-- Red Rose
 					3421,	-- Simple Wildflowers
 				}},
-				["groups"] = {
-					i(2665),	-- Stormwind Seasoning Herbs
-				},
 			}),
 			n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 				["coord"] = { 58.6, 69.0, MAP.STORMWIND_CITY },

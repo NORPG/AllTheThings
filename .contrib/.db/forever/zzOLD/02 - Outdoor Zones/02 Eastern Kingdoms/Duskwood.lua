@@ -467,12 +467,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
-					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.8, 43.5, MAP.DUSKWOOD },
 					["cost"] = {
 						{ "i", 1015, 10 },	-- Lean Wolf Flank
-						{ "i", 2665, 1 },	-- Stormwind Seasoning Herbs
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -564,6 +562,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 66,	-- The Legend of Stalvan (1/13)
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
+					["maps"] = { MAP.WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
