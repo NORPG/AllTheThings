@@ -1168,7 +1168,6 @@ L.ZONE = ZONE
 L.ZONE_DESC = "Click this button to select a random zone based on what you're missing."
 -- Category Database Module
 _.CategoryNames = {
-	[2] = "Consumable",
 	[3] = "Tarot Decks",
 	[106] = "Card",
 	[218] = HEADSLOT,
@@ -1190,7 +1189,6 @@ _.CategoryNames = {
 	[259] = "Cloaks",
 }
 _.CategoryIcons = {
-	[2] = 132108,
 	[3] = 134492,
 	[106] = 134492,
 	[218] = 133127,
@@ -4241,7 +4239,6 @@ L.WORLD_QUESTS_DESC = "Dies sind Weltquests und andere zeitlich begrenzte Dinge,
 L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um dies anschauen zu können."
 L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch noch fehlt."
 localize(_.CategoryNames, {
-	[2] = "Verbrauchsgegenstand",
 	[3] = "Tarotkarten",
 })
 localize(L.HEADER_NAMES, {
@@ -5428,7 +5425,6 @@ L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour
 L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(_.CategoryNames, {
-	[2] = "consommable",
 	[3] = "Jeu de tarot",
 	[106] = "Carte",
 })
@@ -6339,7 +6335,6 @@ L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Abili
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Condotti"
 L.TITLES_CHECKBOX = "Titoli"
 localize(_.CategoryNames, {
-	[2] = "Consumabile",
 	[3] = "Mazzo di Tarocchi",
 	[106] = "Carta",
 })
@@ -6870,7 +6865,6 @@ L.TRACKING_PROGRESS = "Rastreando Progresso"
 L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar."
 L.WRONG_FACTION = "Você precisa ser de outra facção para visualizar isso."
 localize(_.CategoryNames, {
-	[2] = "Consumível",
 	[3] = "Baralho de Tarô",
 	[106] = "Carta",
 })
@@ -9236,7 +9230,6 @@ L.RUNEFORGELEGENDARIES_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 룬�
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 도관"
 L.TITLES_CHECKBOX = "칭호"
 localize(_.CategoryNames, {
-	[2] = "소모품",
 	[3] = "카드 묶음",
 	[221] = "손",
 	[224] = "다리",
@@ -10812,7 +10805,6 @@ L.WRONG_FACTION = "Quizás necesites estar en la otra facción para ver esto."
 L.YOU_DID_IT = "¡LO LOGRASTE! "
 L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(_.CategoryNames, {
-	[2] = "Consumible",
 	[3] = "Baraja de Tarot",
 	[106] = "Carta",
 	[221] = "Guanteletes",
@@ -11989,7 +11981,6 @@ L.WAGO_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace del addo
 L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso"
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(_.CategoryNames, {
-	[2] = "Objeto Consumible",
 	[3] = "Naipe de Tarot",
 })
 localize(L.HEADER_NAMES, {
@@ -13098,7 +13089,6 @@ L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。"
 L.YOU_DID_IT = "你做到了！"
 L.ZONE_DESC = "点击此按钮可根据缺少的内容选择随机地区。"
 localize(_.CategoryNames, {
-	[2] = "消耗品",
 	[3] = "塔罗牌",
 	[106] = "卡牌",
 	[221] = "护手",
