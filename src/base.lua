@@ -254,6 +254,20 @@ local function GetRelativeByFunc(group, func)
 		return func(group) or GetRelativeByFunc(group.sourceParent or group.parent, func)
 	end
 end
+-- Iterates down a whole tree, filtering matching groups into the results table
+local function GetAllNestedGroupsByFunc(results, groups, func)
+	local g,o
+	for i=1,#groups do
+		o = groups[i]
+		if func(o) then results[#results + 1] = o end
+		g = o.g
+		if g then
+			for i=1,#g do
+				GetAllNestedGroupsByFunc(results, g[i], func)
+			end
+		end
+	end
+end
 app.GetRelativeByFunc = GetRelativeByFunc;
 app.AssignChildren = AssignChildren;
 app.AssignFieldValue = AssignFieldValue;
@@ -264,6 +278,7 @@ app.GetDeepestRelativeFunc = GetDeepestRelativeFunc;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 app.GetRelativeField = GetRelativeField;
 app.GetRawRelativeField = GetRawRelativeField
+app.GetAllNestedGroupsByFunc = GetAllNestedGroupsByFunc
 app.GetRelativeValue = GetRelativeValue;
 app.IsComplete = function(o)
 	local total = o.total
@@ -277,7 +292,7 @@ local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon
 app.GetIconFromProviders = function(group)
 	local qss = group.qss;
-	if qss then 
+	if qss then
 		local icon = GetItemIcon(qss[1]);
 		if icon then return icon; end
 	end
