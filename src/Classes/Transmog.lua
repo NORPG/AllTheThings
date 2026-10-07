@@ -23,6 +23,16 @@ if not C_TransmogCollection then
 	return
 end
 
+local ScopeUniqueCollect = Profiler.RegisterScope("transmog.unique.collect", "transmog", 1, "time", "Rebuild Unique collection credit from known source IDs.", "source-ID scan bound");
+local ScopeSourcesScan = Profiler.RegisterScope("transmog.sources.scan", "transmog", 1, "time", "Scan direct ownership of transmog sources.", "source-ID indices visited");
+local ScopeUniqueKnown = Profiler.RegisterScope("transmog.unique.known", "transmog", 2, "time", "Expand directly known sources into Unique collection credit.", "source-ID scan bound");
+local ScopeUniqueBroken = Profiler.RegisterScope("transmog.unique.broken", "transmog", 2, "time", "Check reverse collection credit for broken Unique source entries.", "broken entries visited");
+local ScopeKnownSources = Profiler.RegisterScope("transmog.sources.known", "transmog", 3, "counter", "Directly owned sources found during ownership scans.");
+local ScopeExpandedSources = Profiler.RegisterScope("transmog.unique.expanded", "transmog", 3, "counter", "Known sources expanded during Unique collection rebuilds.");
+local ScopeSourceInfo = Profiler.RegisterScope("transmog.api.sourceinfo", "transmog", 6, "time", "Sampled source information query in broken Unique processing.", "API calls");
+local ScopeSourceKnown = Profiler.RegisterScope("transmog.api.known", "transmog", 6, "time", "Sampled source ownership query during source scans.", "API calls");
+
+
 local RETRIEVING_DATA
 	= RETRIEVING_DATA
 
@@ -777,12 +787,31 @@ local function DetermineMaxATTSourceID()
 	app.MaxSourceID = maxSourceID;
 	-- app.PrintDebug("MaxSourceID",maxSourceID)
 end
+---Query one source's ownership with optional sampled Level 6 timing.
+---@param sourceID number Modified appearance source ID passed to the Blizzard ownership query.
+---@return boolean known True when the normalized source ownership query reports collection.
+local function GetProfiledSourceOwnership(sourceID)
+	local profileStart, profileSession = Profiler.Begin(ScopeSourceKnown);
+	local known = C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID);
+	Profiler.Finish(ScopeSourceKnown, profileStart, profileSession, 1);
+	return known;
+end
+
+---Query one broken source's metadata with optional sampled Level 6 timing.
+---@param sourceID number Appearance source ID whose metadata is required by the Unique filter.
+---@return AppearanceSourceInfo? sourceInfo Source metadata returned by Blizzard, or nil for an unavailable source.
+local function GetProfiledSourceInfo(sourceID)
+	local profileStart, profileSession = Profiler.Begin(ScopeSourceInfo);
+	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+	Profiler.Finish(ScopeSourceInfo, profileStart, profileSession, 1);
+	return sourceInfo;
+end
+
 ---Rebuilds Unique collection credit from known sources using the current filters.
 ---Records the synchronous sweep in the capture active at entry; Units is the
 ---source-ID scan bound, not the number of appearances collected.
 local function CollectUniqueAppearances()
-	local profileStart = Profiler and Profiler.Enabled and GetTimePreciseSec();
-	local profileSession = profileStart and Profiler.SessionID;
+	local profileStart, profileSession = Profiler.Begin(ScopeUniqueCollect);
 	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
 	-- app.PrintDebug("Unique Refresh",app.MaxSourceID)
 	wipe(AccountUniqueSources);
@@ -791,39 +820,47 @@ local function CollectUniqueAppearances()
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then DetermineMaxATTSourceID() end
 	CurrentCharacterFilterIDSet = app.Presets[app.Class]
+	local knownStart, knownSession = Profiler.Begin(ScopeUniqueKnown);
+	local trackWork = ScopeExpandedSources.enabled;
+	local expanded = 0;
 	for sourceID=1,app.MaxSourceID do
 		-- for each known source
 		if AccountSources[sourceID] == 1 then
 			-- collect shared visual sources
 			MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly)
+			if trackWork then expanded = expanded + 1; end
 		end
 	end
+	Profiler.Finish(ScopeUniqueKnown, knownStart, knownSession, app.MaxSourceID);
+	if trackWork then Profiler.CountScope(ScopeExpandedSources, expanded, profileSession); end
 	local brokenUniqueSources = ATTAccountWideData.BrokenUniqueSources;
 	if brokenUniqueSources then
+		local brokenStart, brokenSession = Profiler.Begin(ScopeUniqueBroken);
+		local brokenEntries = 0;
+		local GetSourceInfo = ScopeSourceInfo.enabled and GetProfiledSourceInfo or C_TransmogCollection_GetSourceInfo;
 		for sourceID,_ in pairs(brokenUniqueSources) do
+			if brokenStart then brokenEntries = brokenEntries + 1; end
 			-- special reverse-check-logic for unknown SourceID's whose VisualID does not return
 			-- the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
 			-- and haven't already been marked as unique-collected
 			if not AccountSources[sourceID] then
-				local sInfo = C_TransmogCollection_GetSourceInfo(sourceID)
+				local sInfo = GetSourceInfo(sourceID);
 				if ItemSourceFilter(sInfo) then
 					-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
 					AccountUniqueSources_ADD(sourceID)
 				end
 			end
 		end
+		Profiler.Finish(ScopeUniqueBroken, brokenStart, brokenSession, brokenEntries);
 	end
 	-- app.PrintDebug("Unique Refresh done")
-	if profileStart and Profiler.Enabled and Profiler.SessionID == profileSession then
-		Profiler.Record("transmog.unique.collect", (GetTimePreciseSec() - profileStart) * 1000, app.MaxSourceID);
-	end
+	Profiler.Finish(ScopeUniqueCollect, profileStart, profileSession, app.MaxSourceID);
 end
 ---Rebuilds directly collected source states by scanning through MaxSourceID.
 ---Records the synchronous scan only when its original capture is still active;
 ---Units counts source-ID indices visited.
 local function RefreshAppearanceSources()
-	local profileStart = Profiler and Profiler.Enabled and GetTimePreciseSec();
-	local profileSession = profileStart and Profiler.SessionID;
+	local profileStart, profileSession = Profiler.Begin(ScopeSourcesScan);
 	-- app.PrintDebug("RefreshAppearanceSources")
 	wipe(AccountSources);
 	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
@@ -831,16 +868,19 @@ local function RefreshAppearanceSources()
 	if not app.MaxSourceID then DetermineMaxATTSourceID() end
 	-- Then evaluate all SourceIDs under the maximum which are known explicitly
 	-- app.PrintDebug("Completionist Refresh")
+	local trackWork = ScopeKnownSources.enabled;
+	local known = 0;
+	local HasSource = ScopeSourceKnown.enabled and GetProfiledSourceOwnership or C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance;
 	for sourceID=1,app.MaxSourceID do
 		-- don't need to check for existing value... everything is cleared beforehand
-		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+		if HasSource(sourceID) then
 			AccountSources[sourceID] = 1;
+			if trackWork then known = known + 1; end
 		end
 	end
 	-- app.PrintDebugPrior("Completionist Refresh done")
-	if profileStart and Profiler.Enabled and Profiler.SessionID == profileSession then
-		Profiler.Record("transmog.sources.scan", (GetTimePreciseSec() - profileStart) * 1000, app.MaxSourceID);
-	end
+	if trackWork then Profiler.CountScope(ScopeKnownSources, known, profileSession); end
+	Profiler.Finish(ScopeSourcesScan, profileStart, profileSession, app.MaxSourceID);
 end
 -- These events are technically 'refresh' of collections, but they also cause different results on
 -- 'new settings' since they literally change the cached collection state of SourceIDs based on current
