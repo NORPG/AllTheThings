@@ -540,6 +540,23 @@ local function PartialSyncCharacterData(data, key)
 		end
 	end
 end
+---AccountWideData.Quests: quest IDs mapped to their recorded account collection states.
+---A missing quest ID means no completion is cached for that quest.
+---@class ATTAccountQuestCompletionCache
+---@field [QuestID] ATTAccountCollectionState Cached completion by quest ID.
+
+---Rebuild account quest collection from characters and once-per-account completion.
+---@param questCompletionCache ATTAccountQuestCompletionCache Account quest completion records to rebuild in place.
+---@param characterCacheField "Quests" Character quest cache field to merge into the account cache.
+local function SyncQuestData(questCompletionCache, characterCacheField)
+	PartialSyncCharacterData(questCompletionCache, characterCacheField)
+	-- Preserve recorded completing GUIDs even when their character cache is unavailable
+	for questID,completingCharacterGUID in pairs(AccountWideData.OneTimeQuests or app.EmptyTable) do
+		if completingCharacterGUID and not questCompletionCache[questID] then
+			questCompletionCache[questID] = AccountCollectionState.CollectedByAnyCharacter
+		end
+	end
+end
 -- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
 local function RankSyncCharacterData(data, key)
 	local characterData
@@ -570,15 +587,7 @@ local AccountWideDataHandlers = setmetatable({
 	end,
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
 	AzeriteEssenceRanks = RankSyncCharacterData,
-	Quests = function(data, key)
-		PartialSyncCharacterData(data, key)
-		-- Preserve recorded completing GUIDs even when their character cache is unavailable
-		for questID,completingCharacterGUID in pairs(AccountWideData.OneTimeQuests or app.EmptyTable) do
-			if completingCharacterGUID and not data[questID] then
-				data[questID] = AccountCollectionState.CollectedByAnyCharacter
-			end
-		end
-	end,
+	Quests = SyncQuestData,
 	Toys = PartialSyncCharacterData,	-- CRIEVE NOTE: Prior to Legion, many items are stored as "ToyEventually".
 }, {
 	__index = function(t, key)
