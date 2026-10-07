@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local ah,cl,crit,cu,faction,gb,h,hqt,i,inst,m,n,o,prof,x=_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateExpansion;
+local ah,cl,cu,faction,gb,h,hqt,i,inst,m,n,o,prof,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{awp=10100,g={
 m(13,{awp=11101,g={
@@ -7294,38 +7294,36 @@ hqt(95405)}}),
 inst(1317,{awp=120100,isRaid=1,g={
 hqt(97771)}}),
 inst(1320,{awp=120100,isRaid=1,g={
-hqt(98084,{an="n:261491"}),
-hqt(98080,{an="n:261492"}),
-hqt(98092,{an="n:266538"}),
-hqt(98076,{an="n:261503"}),
-hqt(98088,{an="en:2883"}),
-hqt(98083,{an="n:261491"}),
-hqt(98079,{an="n:261492"}),
-hqt(98091,{an="n:266538"}),
-hqt(98075,{an="n:261503"}),
-hqt(98087,{an="n:263594"}),
+hqt(98084,{an="n:261491",isWeekly=1}),
+hqt(98080,{an="n:261492",isWeekly=1}),
+hqt(98092,{an="n:266538",isWeekly=1}),
+hqt(98076,{an="n:261503",isWeekly=1}),
+hqt(98088,{an="en:2883",isWeekly=1}),
+hqt(98083,{an="n:261491",isWeekly=1}),
+hqt(98079,{an="n:261492",isWeekly=1}),
+hqt(98091,{an="n:266538",isWeekly=1}),
+hqt(98075,{an="n:261503",isWeekly=1}),
+hqt(98087,{an="n:263594",isWeekly=1}),
 hqt(98097,{an="en:2883"}),
 hqt(97980,{an="en:2895"}),
-hqt(96496,{an="en:2888",sourceQuests={96053},g={
-crit(115419,{achID=63384,id=1})}}),
-hqt(98082,{an="n:261491"}),
-hqt(98078,{an="n:261492"}),
-hqt(98090,{an="n:266538"}),
-hqt(98074,{an="n:261503"}),
-hqt(98086,{an="n:263594"}),
+hqt(98082,{an="n:261491",isWeekly=1}),
+hqt(98078,{an="n:261492",isWeekly=1}),
+hqt(98090,{an="n:266538",isWeekly=1}),
+hqt(98074,{an="n:261503",isWeekly=1}),
+hqt(98086,{an="n:263594",isWeekly=1}),
 hqt(97983,{an="en:2895"}),
-hqt(98081,{an="n:261491"}),
-hqt(98077,{an="n:261492"}),
-hqt(98089,{an="n:266538"}),
-hqt(98073,{an="n:261503"}),
-hqt(98085,{an="n:263594"})}}),
+hqt(98081,{an="n:261491",isWeekly=1}),
+hqt(98077,{an="n:261492",isWeekly=1}),
+hqt(98089,{an="n:266538",isWeekly=1}),
+hqt(98073,{an="n:261503",isWeekly=1}),
+hqt(98085,{an="n:263594",isWeekly=1})}}),
 h(-68,{
 ah(61259,{rwp=120100,type="a",u=2,g={
 hqt(92491,{isWeekly=1,u=2}),
 hqt(95375,{repeatable=1,u=2})}})}),
 h(-204,{
 h(-674,{
-hqt(92888,{an="n:252892"})}),
+hqt(92888,{an="n:252892",isWeekly=1})}),
 h(-675,{awp=120100,g={
 hqt(95039),
 hqt(98787)}}),
@@ -7346,14 +7344,9 @@ hqt(97064,{an="o:658087",awp=120100,isDaily=1,isWeekly=1}),
 hqt(97628,{awp=120100,isDaily=1}),
 hqt(97637,{awp=120100,isDaily=1}),
 hqt(98501,{an="o:584514",awp=120100,isDaily=1,isWeekly=1})}),
-hqt(93819,{an="fa:2696",isWeekly=1}),
-hqt(93820,{an="fa:2699",isWeekly=1}),
-hqt(93821,{an="fa:2710",isWeekly=1}),
-hqt(93822,{an="fa:2704",isWeekly=1}),
 hqt(93935,{isWeekly=1}),
 hqt(93936,{isWeekly=1}),
 hqt(93937,{isWeekly=1}),
-hqt(99222,{an="fa:2772",awp=120100,isWeekly=1}),
 m(2647,{awp=120105,g={
 hqt(98044)}})}),
 m(2537,{lvl=80,g={

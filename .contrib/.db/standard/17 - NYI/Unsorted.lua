@@ -14,7 +14,6 @@ root(ROOTS.Unsorted, {
 			i(270282),	-- Kazok's Rune-Key
 			i(271051),	-- Sugar Beet
 			i(271052),	-- Blighted Bloom
-			i(271156),	-- Stolen Artifact
 			i(275731),	-- A Rat-Sized Portion of Cheese
 			i(275732),	-- A Rat-Sized Portion of Onion
 			i(275733),	-- A Rat-Sized Portion of Mushroom
@@ -36,7 +35,6 @@ root(ROOTS.Unsorted, {
 			i(277898),	-- Duskhallow Vanguard Greaves
 			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
-			i(280562),	-- Ascendant Venomstone
 			i(280563),	-- Ancient Hash'ey Battle Art: Falco Strikes
 			i(280678),	-- Primordial Venom Mote
 			i(280820),	-- Loa-Blessed Victory
@@ -143,7 +141,6 @@ root(ROOTS.Unsorted, {
 			i(282277),	-- Wood Haunter's Frost Fetish
 			i(282289),	-- Horrific Head of the Horseman
 			i(282327),	-- Fae Animashroom
-			i(282424),	-- Akil'zon's Swiftness
 			i(282427),	-- Nalorakk's Ferocity
 			i(282563),	-- Ice Walker's Bell-Scythe
 			i(282564),	-- Embered Bell-Scythe
@@ -321,7 +318,6 @@ root(ROOTS.Unsorted, {
 			i(284132),	-- Skysong Sentinel Tree
 			i(284134),	-- Incineratus Grass Patch
 			i(284180),	-- Loa-Touched Deltoid
-			i(284181),	-- Loa-Touched Spine
 			i(284182),	-- Loa-Touched Visage
 			i(284189),	-- Unlock Mail Carrier
 			i(284190),	-- Unlock Repair Services
@@ -351,7 +347,6 @@ root(ROOTS.Unsorted, {
 			i(284263),	-- Pattern: Beloved Murloc Plushie
 			i(284264),	-- "Gnoma Lisa" Painting
 			i(284357),	-- Ancient Amani Mural
-			i(284359),	-- Corroded Amani Sconce
 			i(284384),	-- Boralus Swill Bottle
 			i(284402),	-- Valdrakken Resupply Coin
 			i(284460),	-- Kyrian Waymarker Plaque
@@ -426,7 +421,6 @@ root(ROOTS.Unsorted, {
 			i(285334),	-- Embered Reversed Pauldrons
 			i(285335),	-- Ice-Walker's Reversed Pauldrons
 			i(285336),	-- Wood Haunter's Reversed Pauldrons
-			i(285876),	-- Zah'ran
 			i(285877),	-- Zah'ran
 			i(285942),	-- Spirited Tidesage Manse
 			i(285956),	-- Ice Walker's Bell-Crook
