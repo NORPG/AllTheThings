@@ -44,7 +44,8 @@ assert(not p.StartNextLogin() and not p.CancelNextLogin())
 assert(not p.Enabled and p.SessionID == 0 and #timers == 0 and metricCalls == 0 and clockReads == 0)
 AllTheThingsSavedVariables = { Keep = 123 }
 local ok, duration = p.ScheduleNextLogin()
-assert(ok and duration == 30 and AllTheThingsSavedVariables.ProfilerNextLoginSeconds == 30)
+assert(ok and duration == 30 and AllTheThingsSavedVariables.ProfilerNextLogin.seconds == 30)
+assert(AllTheThingsSavedVariables.ProfilerNextLogin.version == 1 and AllTheThingsSavedVariables.ProfilerNextLogin.level == 1)
 assert(not p.Enabled and #timers == 0 and metricCalls == 0 and clockReads == 0)
 
 -- Scheduling and invalid requests preserve the active capture and its report.
@@ -60,12 +61,12 @@ for _, invalid in ipairs({ 0, 301, "bad", math.huge, 0 / 0, {}, true, false }) d
   local accepted, reason = p.ScheduleNextLogin(invalid)
   assert(not accepted and type(reason) == "string")
   assert(not p.Start(invalid))
-  assert(AllTheThingsSavedVariables.ProfilerNextLoginSeconds == 60)
+  assert(AllTheThingsSavedVariables.ProfilerNextLogin.seconds == 60)
   assert(p.Enabled and p.Report() == before)
 end
 assert(#timers == timerCount and metricCalls == apiCount)
 assert(p.CancelNextLogin() and not p.CancelNextLogin())
-assert(AllTheThingsSavedVariables.ProfilerNextLoginSeconds == nil and p.Report() == before)
+assert(AllTheThingsSavedVariables.ProfilerNextLogin == nil and p.Report() == before)
 assert(AllTheThingsSavedVariables.Keep == 123)
 
 -- Manual capture controls do not cancel an independently scheduled login.
@@ -73,7 +74,7 @@ assert(p.ScheduleNextLogin(45))
 p.Stop()
 p.Start(2)
 p.Reset()
-assert(AllTheThingsSavedVariables.ProfilerNextLoginSeconds == 45)
+assert(AllTheThingsSavedVariables.ProfilerNextLogin.seconds == 45)
 
 -- Simulate reloading the library before the saved table is restored.
 local persisted = AllTheThingsSavedVariables
@@ -95,14 +96,14 @@ loginApp.RegisterFuncEvent = function(self, event, handler)
 end
 loginApp.LocalizeGlobalIfAllowed = function(name)
   assert(loginProfiler.Enabled, "login capture started after saved-variable initialization")
-  assert(persisted.ProfilerNextLoginSeconds == nil, "login request was not consumed first")
-  if name == "AllTheThingsAD" then loginProfiler.Record("startup.savedvariables", 1) end
+  assert(persisted.ProfilerNextLogin == nil and persisted.ProfilerNextLoginSeconds == nil, "login request was not consumed first")
+  if name == "AllTheThingsAD" then loginProfiler.Record("test.startup.savedvariables", 1) end
   return assert(stores[name])
 end
 loginApp.Settings = {
   Initialize = function()
     assert(loginProfiler.Enabled, "login capture missed settings initialization")
-    loginProfiler.Record("startup.settings", 2)
+    loginProfiler.Record("test.startup.settings", 2)
   end,
 }
 loginApp.HandleEvent = function() end
@@ -114,13 +115,16 @@ local sourceFile = assert(io.open("AllTheThings.lua", "r"))
 local source = sourceFile:read("*a")
 sourceFile:close()
 local startupAt = assert(source:find('app:RegisterFuncEvent("PLAYER_LOGIN",', 1, true))
-assert((loadstring or load)("local app = ...\n" .. source:sub(startupAt), "@AllTheThings.lua:PLAYER_LOGIN"))(loginApp)
+local startupScopes = source:match("(local ScopeStartupSavedVariables =.-)\r?\n\r?\n") or ""
+local startupPrelude = "local app = ...\nlocal Profiler = app.Profiler\n" .. startupScopes .. "\n"
+assert((loadstring or load)(startupPrelude .. source:sub(startupAt), "@AllTheThings.lua:PLAYER_LOGIN"))(loginApp)
 loginApp.LoginHandler()
 assert(loginProfiler.Enabled and loginProfiler.SessionID == 1)
 assert(#timers == timerCount + 1 and timers[#timers].seconds == 45)
 assert(metricCalls == apiCount + 1 and persisted.Keep == 123)
-Contains(loginProfiler.Report(), "startup.savedvariables\t1")
-Contains(loginProfiler.Report(), "startup.settings\t1")
+Contains(loginProfiler.Report(), "test.startup.savedvariables\t1")
+Contains(loginProfiler.Report(), "test.startup.settings\t1")
+if startupScopes ~= "" then Contains(loginProfiler.Report(), "\nstartup.settings\t1") end
 
 -- The consumed request cannot start a second capture; its original timeout still works.
 before = loginProfiler.Report()
@@ -130,7 +134,7 @@ now = 145
 timers[#timers].callback()
 assert(not loginProfiler.Enabled)
 Contains(loginProfiler.Report(), "Elapsed: 45.00 s / 45.00 s limit; stopped: time limit")
-Contains(loginProfiler.Report(), "startup.settings\t1")
+Contains(loginProfiler.Report(), "test.startup.settings\t1")
 
 -- Corrupt persisted durations are consumed without replacing a retained report.
 before = loginProfiler.Report()
@@ -150,13 +154,13 @@ SlashCmdList = {}
 local commandApp = NewApp()
 assert(loadfile("src/Commands.lua"))("AllTheThings", commandApp)
 local command = commandApp.ChatCommands.profile
-assert(command({ "nextlogin" }) and persisted.ProfilerNextLoginSeconds == 30)
-assert(command({ "nextlogin", "60" }) and persisted.ProfilerNextLoginSeconds == 60)
-assert(command({ "nextlogin", "bad" }) and persisted.ProfilerNextLoginSeconds == 60)
-assert(command({ "nextlogin", "25", "extra" }) and persisted.ProfilerNextLoginSeconds == 60)
+assert(command({ "nextlogin" }) and persisted.ProfilerNextLogin.seconds == 30)
+assert(command({ "nextlogin", "60" }) and persisted.ProfilerNextLogin.seconds == 60)
+assert(command({ "nextlogin", "bad" }) and persisted.ProfilerNextLogin.seconds == 60)
+assert(command({ "nextlogin", "25", "extra" }) and persisted.ProfilerNextLogin.seconds == 60)
 assert(not commandApp.Profiler.Enabled and #timers == timerCount and metricCalls == apiCount)
-assert(command({ "nextlogin", "CANCEL" }) and persisted.ProfilerNextLoginSeconds == nil)
-assert(command({ "nextlogin", "cancel" }) and persisted.ProfilerNextLoginSeconds == nil)
+assert(command({ "nextlogin", "CANCEL" }) and persisted.ProfilerNextLogin == nil)
+assert(command({ "nextlogin", "cancel" }) and persisted.ProfilerNextLogin == nil)
 assert(persisted.Keep == 123)
 
 print("PASS: next-login persistence, validation, cancellation, one-shot startup ordering, timeout, and commands")
