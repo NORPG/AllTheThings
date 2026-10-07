@@ -328,55 +328,49 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							}),
 						},
 					}),
-					i(162530, {	-- Scouting Report: Wolf's Den
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							-- initial outpost setup
-							mi(1880, {	-- Wolf's Den
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52005, {	-- Mission Report: Wolf's Den
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(161121),	-- The Wolf's Den (CI!)
-											i(161152),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52127, {	-- Wolf's Den
-								["sourceQuests"] = { 52005 },	-- Mission Report: Wolf's Den
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-							mi(1957, {	-- Wolves For The Den
-								["sourceQuests"] = { 52127 },	-- Wolf's Den
-								["races"] = HORDE_ONLY,
-								["cr"] = 138706,	-- Mission Command Table
-								["groups"] = {
-									q(53151, {	-- Mission Report: Wolves For The Den
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(163507),	-- Outpost Upgrade
-											i(163519),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(53152, {	-- Wolves For The Den
-								["sourceQuests"] = { 53151 },	-- Mission Report: Wolves For The Den
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 161121, {	-- The Wolf's Den
+						mi(1880, {	-- Wolf's Den
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162530,1}},	-- Scouting Report: Wolf's Den
+							["groups"] = {
+								i(161121),	-- The Wolf's Den (QS!)
+							},
+						}),
+						q(52005, {	-- Mission Report: Wolf's Den
+							["qs"] = 161121,	-- The Wolf's Den (QS!)
+							["qi"] = 161152,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53739 },	-- The Wolf's Den (mission completed)
+						}),
+						q(52127, {	-- Wolf's Den
+							["sourceQuests"] = { 52005 },	-- Mission Report: Wolf's Den
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
+						mi(1957, {	-- Wolves For The Den
+							["sourceQuests"] = { 52127 },	-- Wolf's Den
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["groups"] = {
+								i(163507),	-- Outpost Upgrade (QS!)
+							},
+						}),
+						q(53151, {	-- Mission Report: Wolves For The Den
+							["qs"] = 163507,	-- Outpost Upgrade (QS!)
+							["qi"] = 163519,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53152 },	-- Wolves For The Den
+						}),
+						q(53152, {	-- Wolves For The Den
+							["sourceQuests"] = { 53151 },	-- Mission Report: Wolves For The Den
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				},
 			}),

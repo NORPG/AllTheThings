@@ -687,6 +687,10 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(162745, {	-- Schematic: Precision Attitude Adjuster [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
+					i(162530, {	-- Scouting Report: Wolf's Den
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["races"] = HORDE_ONLY,
+					}),
 					i(161512, {	-- Silent Stalker Belt
 						["cost"] = 14000000,	-- 1,400g
 					}),
