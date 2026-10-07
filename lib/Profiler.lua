@@ -81,7 +81,7 @@ local registry = {};
 local scopeCount, rejectedScopes = 0, 0;
 ---@type ATTProfilerScope
 local disabledScope = { id = "profiler.registry.full", module = "profiler", minLevel = 6,
-	kind = "time", enabled = false, sampleSeen = 0 };
+	kind = "time", enabled = false, jobsEnabled = false, timelineEnabled = false, sampleSeen = 0 };
 local sessionListeners, reportProviders = {}, {};
 local timeline, timelineNext, timelineCount, timelineOverwritten = {}, 1, 0, 0;
 local stackRecords, stackBytes, stackDropped, sampledCalls, skippedCalls, extensionErrors = {}, 0, 0, 0, 0, 0;
@@ -195,6 +195,9 @@ end
 ---@field units string? Meaning of work-unit totals for timing scopes.
 ---@field enabled boolean Precomputed capture gate; false while recording is disabled or the scope is filtered out.
 ---@field sampleSeen integer Number of eligible diagnostic calls in the current capture.
+---@field metric ATTProfilerMetric? Reused aggregate for the current capture; cleared by Reset and owned by the profiler.
+---@field jobsEnabled boolean Precomputed Level 4 detail gate, including module filters even for overview scopes.
+---@field timelineEnabled boolean Precomputed Level 5 detail gate, including module filters even for overview scopes.
 
 ---Parse a module selection without retaining caller-owned data or accepting unknown IDs.
 ---@param value string? Comma-separated module selection; nil uses the supplied default.
@@ -290,6 +293,16 @@ local function IncludesModule(module)
 		and (config.includeModules == nil or config.includeModules[module] == true);
 end
 
+---Refresh fixed level and module gates only at capture or registration boundaries.
+---@param scope ATTProfilerScope Registered scope whose gates are updated for the current policy.
+local function UpdateScopeGates(scope)
+	local config = Profiler.Config;
+	scope.enabled = Profiler.Enabled and config.level >= scope.minLevel
+		and (scope.minLevel == 1 or IncludesModule(scope.module));
+	scope.jobsEnabled = scope.enabled and config.level >= 4 and IncludesModule(scope.module);
+	scope.timelineEnabled = scope.jobsEnabled and config.level >= 5;
+end
+
 ---Notify extensions without allowing a broken extension to interrupt ATT or capture state changes.
 ---@param event string Lifecycle phase: reset, start, stopping, or stop.
 local function NotifySession(event)
@@ -323,8 +336,8 @@ function Profiler.RegisterScope(id, module, minLevel, kind, description, units)
 	scopeCount = scopeCount + 1;
 	KNOWN_MODULES[module] = true;
 	local scope = { id = id, module = module, minLevel = minLevel, kind = kind,
-		description = description, units = units, enabled = false, sampleSeen = 0 };
-	scope.enabled = Profiler.Enabled and Profiler.Config.level >= minLevel and (minLevel == 1 or IncludesModule(module));
+		description = description, units = units, enabled = false, jobsEnabled = false, timelineEnabled = false, sampleSeen = 0 };
+	UpdateScopeGates(scope);
 	registry[id] = scope;
 	return scope;
 end
@@ -358,10 +371,9 @@ function Profiler.IsLevelEnabled(level, module)
 end
 
 ---Decide periodic Level 6 sampling before any clock read, stack capture, or allocation.
----@param scope ATTProfilerScope Eligible registered diagnostic scope.
+---@param scope ATTProfilerScope Enabled Level 6 diagnostic scope whose sampling sequence is advanced.
 ---@return boolean accepted True for every first and subsequent sampleEvery-th call.
 local function AcceptDiagnostic(scope)
-	if scope.minLevel < 6 then return true; end
 	scope.sampleSeen = scope.sampleSeen + 1;
 	if (scope.sampleSeen - 1) % Profiler.Config.sampleEvery == 0 then sampledCalls = sampledCalls + 1; return true; end
 	skippedCalls = skippedCalls + 1;
@@ -400,7 +412,8 @@ end
 ---@return number? startedAt Absolute clock time in seconds for an accepted sample; nil when disabled or skipped.
 ---@return integer? sessionID Capture generation required by Finish; nil when no sample was started.
 function Profiler.Begin(scope)
-	if not Profiler.Enabled or not scope.enabled or scope.kind ~= "time" or not AcceptDiagnostic(scope) then return; end
+	if not Profiler.Enabled or not scope.enabled or scope.kind ~= "time"
+		or (scope.minLevel == 6 and not AcceptDiagnostic(scope)) then return; end
 	local start = GetTimePreciseSec();
 	if scope.minLevel == 6 and Profiler.Config.stacks then
 		local available = Profiler.Config.stackByteBudget - stackBytes;
@@ -413,9 +426,10 @@ function Profiler.Begin(scope)
 				stackRecords[#stackRecords + 1] = { at = (start - startedAt) * 1000, id = scope.id, text = stack, context = CurrentContext() };
 				stackBytes = stackBytes + #stack;
 			else stackDropped = stackDropped + 1; end
+			-- Exclude attempted stack acquisition and storage from this scope's timing.
+			-- Budget and availability rejections perform no stack work or extra clock read.
+			start = GetTimePreciseSec();
 		end
-		-- Diagnostic setup is observer work; exclude stack acquisition and storage from this scope's execution timing.
-		start = GetTimePreciseSec();
 	end
 	return start, Profiler.SessionID;
 end
@@ -425,8 +439,13 @@ end
 ---@param durationMs number Finite nonnegative observed duration in milliseconds.
 ---@param units number? Optional finite nonnegative work count for this execution.
 local function RecordScope(scope, durationMs, units)
-	local metric = NewMetric(scope.id, "time", scope.minLevel > 1, scope.minLevel == 6);
-	if not metric then return; end
+	local metric = scope.metric;
+	if not metric then
+		metric = NewMetric(scope.id, "time", scope.minLevel > 1, scope.minLevel == 6);
+		if not metric then return; end
+		scope.metric = metric;
+	end
+	---@cast metric ATTProfilerTimingMetric
 	metric.count = metric.count + 1;
 	metric.total = metric.total + durationMs;
 	if durationMs > metric.max then metric.max = durationMs; end
@@ -447,7 +466,7 @@ function Profiler.Finish(scope, start, sessionID, units)
 	local durationMs = (GetTimePreciseSec() - start) * 1000;
 	if durationMs < 0 or durationMs ~= durationMs or durationMs == math_huge then return; end
 	RecordScope(scope, durationMs, units);
-	if Profiler.IsLevelEnabled(5, scope.module) and durationMs >= Profiler.Config.slowThresholdMs then
+	if scope.timelineEnabled and durationMs >= Profiler.Config.slowThresholdMs then
 		Profiler.AddTimeline(scope.id, "slow", durationMs);
 	end
 end
@@ -459,9 +478,16 @@ end
 function Profiler.CountScope(scope, delta, sessionID)
 	if not Profiler.Enabled or not scope.enabled or scope.kind ~= "counter" or (sessionID and sessionID ~= Profiler.SessionID) then return; end
 	delta = delta or 1;
-	if type(delta) ~= "number" or delta < 0 or delta ~= delta or delta == math_huge or not AcceptDiagnostic(scope) then return; end
-	local metric = NewMetric(scope.id, "counter", scope.minLevel > 1, scope.minLevel == 6);
-	if metric then metric.count = metric.count + delta; end
+	if type(delta) ~= "number" or delta < 0 or delta ~= delta or delta == math_huge
+		or (scope.minLevel == 6 and not AcceptDiagnostic(scope)) then return; end
+	local metric = scope.metric;
+	if not metric then
+		metric = NewMetric(scope.id, "counter", scope.minLevel > 1, scope.minLevel == 6);
+		if not metric then return; end
+		scope.metric = metric;
+	end
+	---@cast metric ATTProfilerCounterMetric
+	metric.count = metric.count + delta;
 end
 
 ---Add one finite, nonnegative duration sample in milliseconds to the active capture.
@@ -514,7 +540,7 @@ function Profiler.Stop(reason)
 	if not Profiler.Enabled then return false; end
 	NotifySession("stopping");
 	Profiler.Enabled = false;
-	for _, scope in pairs(registry) do scope.enabled = false; end
+	for _, scope in pairs(registry) do UpdateScopeGates(scope); end
 	endedAt = GetTimePreciseSec();
 	stoppedReason = reason or "manual";
 	addonMetricAtStop = GetAddonSnapshot();
@@ -535,7 +561,10 @@ function Profiler.Reset()
 	detailMetricCount, detailDroppedSamples = 0, 0;
 	timeline, timelineNext, timelineCount, timelineOverwritten = {}, 1, 0, 0;
 	stackRecords, stackBytes, stackDropped, sampledCalls, skippedCalls, extensionErrors = {}, 0, 0, 0, 0, 0;
-	for _, scope in pairs(registry) do scope.enabled = false; scope.sampleSeen = 0; end
+	for _, scope in pairs(registry) do
+		UpdateScopeGates(scope);
+		scope.sampleSeen, scope.metric = 0, nil;
+	end
 	NotifySession("reset");
 end
 
@@ -557,9 +586,7 @@ function Profiler.Start(durationSeconds, level, options)
 	Profiler.Enabled = true;
 	durationLimit = config.seconds;
 	startedAt = GetTimePreciseSec();
-	for _, scope in pairs(registry) do
-		scope.enabled = config.level >= scope.minLevel and (scope.minLevel == 1 or IncludesModule(scope.module));
-	end
+	for _, scope in pairs(registry) do UpdateScopeGates(scope); end
 	NotifySession("start");
 	addonMetricAtStart = GetAddonSnapshot();
 	local sessionID = Profiler.SessionID;

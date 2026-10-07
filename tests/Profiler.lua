@@ -105,6 +105,33 @@ for i = 1, 65 do p.Count("count." .. i) end
 contains(p.Report(), "Dropped samples after 64 distinct metric IDs: 1")
 p.Stop()
 
+-- Every histogram boundary stays inclusive; values just above it enter the next bucket.
+p.Start(5)
+local bounds = { .25, .5, 1, 2, 4, 8, 16, 33, 66, 100, 250, 500, 1000 }
+for i, bound in ipairs(bounds) do
+  p.Record("bucket.exact." .. i, bound)
+  p.Record("bucket.below." .. i, bound - .000001)
+  p.Record("bucket.above." .. i, bound + .000001)
+end
+p.Record("bucket.zero", 0)
+p.Record("bucket.overflow", 1001)
+report = p.Report()
+---Verify one timing row's aggregate values and expected percentile bucket.
+---@param id string Stable ID of the single-sample metric.
+---@param value number Submitted duration in milliseconds.
+---@param bucket string Expected inclusive histogram bucket label.
+local function checkBucket(id, value, bucket)
+  contains(report, string.format("%s\t1\t%.3f\t%.3f\t%.3f\t%s\t-", id, value, value, value, bucket))
+end
+for i, bound in ipairs(bounds) do
+  local bucket = string.format("<=%.2f", bound)
+  checkBucket("bucket.exact." .. i, bound, bucket)
+  checkBucket("bucket.below." .. i, bound - .000001, bucket)
+  checkBucket("bucket.above." .. i, bound + .000001, bounds[i + 1] and string.format("<=%.2f", bounds[i + 1]) or ">1000")
+end
+checkBucket("bucket.zero", 0, "<=0.25")
+checkBucket("bucket.overflow", 1001, ">1000")
+
 -- Blizzard API is optional and must not break the capture.
 C_AddOnProfiler = nil
 p.Start(5)
