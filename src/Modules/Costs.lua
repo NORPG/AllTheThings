@@ -32,16 +32,31 @@ local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, 
 local GetItemCount = app.WOWAPI.GetItemCount
 local IsSpellKnownHelper, CreateObject, FillGroups
 
----Read item ownership for cost/provider calculations, with optional sampled diagnostics.
----@param itemID number Item whose carried, banked, and warband ownership is queried.
+local OriginalGetItemCount = GetItemCount;
+---Query item ownership through the sampled diagnostic path selected at capture boundaries.
+---@param itemID number Item whose owned quantity is queried.
+---@param includeBank boolean? Whether bank ownership is included.
+---@param includeUses boolean? Whether charges are counted instead of item copies.
+---@param includeReagentBank boolean? Whether reagent-bank ownership is included.
+---@param includeAccountBank boolean? Whether account-bank ownership is included.
 ---@return number count Owned quantity returned by ATT's normalized GetItemCount API.
-local function GetOwnedItemCount(itemID)
-	if not ScopeCostsItemCount.enabled then return GetItemCount(itemID, true, nil, true, true); end
+local function GetProfiledItemCount(itemID, includeBank, includeUses, includeReagentBank, includeAccountBank)
 	local profileStart, profileSession = Profiler.Begin(ScopeCostsItemCount);
-	local count = GetItemCount(itemID, true, nil, true, true);
+	local count = OriginalGetItemCount(itemID, includeBank, includeUses, includeReagentBank, includeAccountBank);
 	Profiler.Finish(ScopeCostsItemCount, profileStart, profileSession, 1);
 	return count;
 end
+---Keep the original API in the hot path outside eligible diagnostic captures.
+---@param event string Capture lifecycle event; start selects policy, while stop/reset restores the API.
+local function UpdateItemCountCapture(event)
+	if event == "start" then
+		GetItemCount = ScopeCostsItemCount.enabled and GetProfiledItemCount or OriginalGetItemCount;
+	elseif event == "stop" or event == "reset" then
+		GetItemCount = OriginalGetItemCount;
+	end
+end
+Profiler.AddSessionListener(UpdateItemCountCapture);
+UpdateItemCountCapture("start"); -- Honor a capture already active when this module loads.
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunner, ExtraFilters
@@ -376,7 +391,7 @@ local function PlayerIsMissingProviderSpell(spellID)
 	return not IsSpellKnownHelper(spellID)
 end
 local function PlayerIsMissingProviderItem(itemID)
-	return not PlayerHasToy(itemID) and GetOwnedItemCount(itemID) == 0
+	return not PlayerHasToy(itemID) and GetItemCount(itemID, true, nil, true, true) == 0
 end
 local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 	local profileStart, profileSession = Profiler.Begin(ScopeCostsItem);
@@ -386,7 +401,7 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 	local isCost
 	if total > 0 or not isProv then
 		isCost = total > 0
-		owned = isCost and GetOwnedItemCount(itemID) or 0
+		owned = isCost and GetItemCount(itemID, true, nil, true, true) or 0
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	else
 		owned = PlayerIsMissingProviderItem(itemID) and 0 or 1
@@ -542,22 +557,30 @@ local function UpdateCosts()
 	-- TODO: Quests can be costs but they're never updated properly since they aren't cached as 'costable-quests' somewhere
 	-- like other objects are below
 
-	-- Get all itemIDAsCost entries
-	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
-		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
-		if trackWork then jobs = jobs + 1; end
-	end
-
-	-- Get all currencyIDAsCost entries
-	for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
-		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
-		if trackWork then jobs = jobs + 1; end
-	end
-
-	-- Get all spellIDAsCost entries
-	for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
-		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
-		if trackWork then jobs = jobs + 1; end
+	if trackWork then
+		for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
+			UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
+			jobs = jobs + 1;
+		end
+		for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
+			UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
+			jobs = jobs + 1;
+		end
+		for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
+			UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
+			jobs = jobs + 1;
+		end
+	else
+		-- Schedule each cost type in its original order without workload counting.
+		for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
+			UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
+		end
+		for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
+			UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
+		end
+		for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
+			UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
+		end
 	end
 	if trackWork then Profiler.CountScope(ScopeCostsJobs, jobs, profileSession); end
 	Profiler.Finish(ScopeCostsQueue, profileStart, profileSession, trackWork and jobs or nil);

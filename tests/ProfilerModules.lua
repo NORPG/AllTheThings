@@ -63,9 +63,10 @@ assert(collection.SetBatchCached("Sources", { [1] = true, [2] = true }, 1) == ni
 assert(character.Sources[1] == 1 and character.Sources[2] == 1 and clockReads == before)
 ---Run a fixed collection fixture at one cumulative level.
 ---@param level integer Profiler level selected for the fixture.
+---@param options table? Optional module filter policy for the capture.
 ---@return string report Capture report after the collection-state operations.
-local function RunCollectionBatch(level)
-  assert(collection.Profiler.Start(30, level))
+local function RunCollectionBatch(level, options)
+  assert(collection.Profiler.Start(30, level, options))
   character.Sources = { [1] = 1 }
   local changes = {}
   assert(collection.SetBatchCachedAndTrackChanges("Sources", { [1] = true, [2] = true }, changes, 1))
@@ -83,6 +84,28 @@ report = RunCollectionBatch(3)
 Contains(report, "collection.batch.changed\t2")
 Contains(report, "collection.batch.ids\t4")
 Contains(report, "collection.batch.changes\t1")
+report = RunCollectionBatch(6, { include = "search" })
+Contains(report, "collection.batch\t3")
+Absent(report, "collection.batch.ids\t")
+Absent(report, "collection.batch.changes\t")
+assert(collection.Profiler.Stop())
+local collectionReport = collection.Profiler.Report()
+local collectionTime = 2000
+time = function() return collectionTime end
+character.Sources = { [1] = 1 }
+local stoppedChanges = {}
+before = clockReads
+assert(collection.SetBatchCachedAndTrackChanges("Sources", { [1] = true, [2] = true }, stoppedChanges, 1))
+assert(#stoppedChanges == 1 and stoppedChanges[1] == 2 and character.TimeStamps.Sources == 2000)
+assert(character.lastPlayed == 2000 and clockReads == before)
+collectionTime = 3000
+assert(collection.SetBatchCachedAndTrackChanges("Sources", { [1] = true, [2] = true }, stoppedChanges, 1) == nil)
+assert(#stoppedChanges == 1 and character.TimeStamps.Sources == 2000 and character.lastPlayed == 2000)
+assert(collection.Profiler.Report() == collectionReport)
+report = RunCollectionBatch(3)
+Contains(report, "collection.batch.ids\t4")
+Contains(report, "collection.batch.changes\t1")
+assert(character.TimeStamps.Sources == 3000 and character.lastPlayed == 3000)
 
 -- Actual cache search functions retain source object identity and return all cache matches.
 local cache = NewApp()
@@ -104,6 +127,21 @@ Contains(report, "cache.search\t1")
 Contains(report, "cache.lookups\t4")
 Contains(report, "cache.hits\t2")
 Contains(report, "cache.misses\t2")
+assert(cache.Profiler.Start(30, 6, { include = "search" }))
+results = cache.SearchForManyInAllCaches("itemID", { 1, 2 })
+assert(#results == 2 and ((results[1] == one and results[2] == two) or (results[1] == two and results[2] == one)))
+report = cache.Profiler.Report()
+Contains(report, "cache.search\t1")
+Absent(report, "cache.lookups\t")
+assert(cache.Profiler.Stop())
+local cacheReport = cache.Profiler.Report()
+before = clockReads
+results = cache.SearchForFieldInAllCaches("itemID", 1)
+assert(#results == 1 and results[1] == one and clockReads == before)
+assert(cache.Profiler.Report() == cacheReport)
+assert(cache.Profiler.Start(30, 3))
+cache.SearchForManyInAllCaches("itemID", { 1, 2 })
+Contains(cache.Profiler.Report(), "cache.lookups\t4")
 
 -- Actual transmog ownership/Unique sweeps: diagnostic gating must not change API counts.
 local transmog = NewApp()
@@ -157,26 +195,84 @@ report = transmog.Profiler.Report()
 Contains(report, "transmog.sources.scan\t1")
 Absent(report, "transmog.api.known\t")
 Absent(report, "transmog.sources.known\t")
+assert(transmog.Profiler.Stop())
+local transmogReport = transmog.Profiler.Report()
+local oldOwnership, oldInfo, oldExpanded = ownershipCalls, infoCalls, expanded
+before = clockReads
+refresh(); unique()
+assert(ownershipCalls - oldOwnership == 6 and infoCalls - oldInfo == 1 and expanded - oldExpanded == 3)
+assert(clockReads == before and transmog.Profiler.Report() == transmogReport)
+assert(transmog.Profiler.Start(30, 3))
+refresh(); unique()
+report = transmog.Profiler.Report()
+Contains(report, "transmog.sources.known\t3")
+Contains(report, "transmog.unique.expanded\t3")
+local brokenRow = assert(report:match("transmog%.unique%.broken[^\n]+"))
+assert(brokenRow:match("\t2$") ~= nil, "broken Units must include both visited entries")
 
--- Actual cost API helper preserves fixed argument positions and skips clocks when gated.
+-- Actual cost API alias preserves arguments and changes only at capture boundaries.
 local costs = NewApp()
-local itemQueries = 0
+local itemQueries, queryError = 0, nil
 costs.GetItemCount = function(id, bank, uses, reagent, warband)
   assert(id == 123 and bank == true and uses == nil and reagent == true and warband == true)
   itemQueries = itemQueries + 1
+  if queryError then error(queryError) end
   return 7
 end
 local costsCode = "local app = ...\n"
   .. SourceSpan("src/Modules/Costs.lua", "---@type ATTProfiler", "-- Concepts:")
   .. "local GetItemCount = app.GetItemCount\n"
-  .. SourceSpan("src/Modules/Costs.lua", "local function GetOwnedItemCount", "-- Module locals")
-  .. "return GetOwnedItemCount\n"
-local ownedCount = assert(Compile(costsCode, "@src/Modules/Costs.lua ownership callsite"))(costs)
+  .. SourceSpan("src/Modules/Costs.lua", "local OriginalGetItemCount = GetItemCount;", "-- Module locals")
+  .. "return function(id) return GetItemCount(id, true, nil, true, true) end, function() return GetItemCount end\n"
+local ownedCount, itemCountAlias = assert(Compile(costsCode, "@src/Modules/Costs.lua ownership callsite"))(costs)
+assert(itemCountAlias() == costs.GetItemCount)
 before = clockReads
 assert(ownedCount(123) == 7 and clockReads == before)
 assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 }))
 assert(ownedCount(123) == 7 and itemQueries == 2)
 Contains(costs.Profiler.Report(), "costs.api.itemcount\t1")
+assert(itemCountAlias() ~= costs.GetItemCount)
+assert(costs.Profiler.Stop())
+assert(itemCountAlias() == costs.GetItemCount)
+local costsReport = costs.Profiler.Report()
+before = clockReads
+assert(ownedCount(123) == 7 and clockReads == before and costs.Profiler.Report() == costsReport)
+assert(costs.Profiler.Start(30, 6, { include = "search" }))
+assert(itemCountAlias() == costs.GetItemCount)
+before = clockReads
+assert(ownedCount(123) == 7 and clockReads == before)
+Absent(costs.Profiler.Report(), "costs.api.itemcount\t")
+assert(costs.Profiler.Start(30, 3))
+assert(itemCountAlias() == costs.GetItemCount)
+assert(ownedCount(123) == 7)
+assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 2 }))
+assert(itemCountAlias() ~= costs.GetItemCount)
+local queriesBefore = itemQueries
+assert(ownedCount(123) == 7 and ownedCount(123) == 7)
+assert(itemQueries - queriesBefore == 2)
+Contains(costs.Profiler.Report(), "costs.api.itemcount\t1")
+costs.Profiler.Reset()
+assert(itemCountAlias() == costs.GetItemCount)
+local queryFailure = {}
+queryError = queryFailure
+local ok, failure = pcall(ownedCount, 123)
+assert(not ok and failure == queryFailure)
+assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 }))
+ok, failure = pcall(ownedCount, 123)
+assert(not ok and failure == queryFailure)
+queryError = nil
+assert(ownedCount(123) == 7)
+Contains(costs.Profiler.Report(), "costs.api.itemcount\t1")
+
+-- A module loaded after capture starts must adopt its already-selected diagnostic policy.
+local lateCosts = NewApp()
+lateCosts.GetItemCount = costs.GetItemCount
+assert(lateCosts.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 }))
+local lateOwnedCount, lateItemCountAlias = assert(Compile(costsCode, "@src/Modules/Costs.lua late capture load"))(lateCosts)
+assert(lateItemCountAlias() ~= lateCosts.GetItemCount)
+assert(lateOwnedCount(123) == 7)
+Contains(lateCosts.Profiler.Report(), "costs.api.itemcount\t1")
+assert(lateCosts.Profiler.Stop() and lateItemCountAlias() == lateCosts.GetItemCount)
 
 -- Actual cost refresh orchestration queues identical work without executing it inline.
 local costWork = NewApp()
@@ -213,7 +309,7 @@ local UpdateCostsByItemID, UpdateCostsByCurrencyID, UpdateCostsBySpellID = app.i
 local CostCalcStart, CostCalcComplete, CacheFilters = app.start, app.complete, app.filters
 local function PlayerIsMissingProviderSpell() return true end
 ]]
-  .. SourceSpan("src/Modules/Costs.lua", "local function GetOwnedItemCount", "-- Module locals")
+  .. SourceSpan("src/Modules/Costs.lua", "local OriginalGetItemCount = GetItemCount;", "-- Module locals")
   .. SourceSpan("src/Modules/Costs.lua", "local function FinishCostAssignmentsForItem", "local UpdateCostGroup")
   .. SourceSpan("src/Modules/Costs.lua", "local function UpdateCosts()", "local UpdateCostTypeFunc")
   .. "return UpdateCosts, FinishCostAssignmentsForItem, FinishCostAssignmentsForCurr, FinishCostAssignmentsForSpell\n"
@@ -221,9 +317,12 @@ local queueCosts, assignItem, assignCurrency, assignSpell = assert(Compile(costW
 before = clockReads
 queueCosts()
 assert(clockReads == before and #queued == 5 and queued[1].callback == costWork.start and onEnd == costWork.complete)
+local originalCostOrder = {}
+for index, job in ipairs(queued) do originalCostOrder[index] = job.callback; originalCostOrder[-index] = job.id end
 assert(costWork.Profiler.Start(30, 3))
 queueCosts()
 assert(resets == 2 and filters == 2 and #queued == 5)
+for index, job in ipairs(queued) do assert(job.callback == originalCostOrder[index] and job.id == originalCostOrder[-index]) end
 local found = {}
 for index = 2, #queued do
   local job = queued[index]
@@ -253,6 +352,22 @@ Contains(report, "costs.assign.currency\t1")
 Contains(report, "costs.assign.spell\t1")
 Contains(report, "costs.groups\t4")
 Absent(report, "costs.api.itemcount\t")
+assert(costWork.Profiler.Stop())
+local costWorkReport = costWork.Profiler.Report()
+before = clockReads
+queueCosts()
+assert(clockReads == before and #queued == 5 and onEnd == costWork.complete)
+for index, job in ipairs(queued) do assert(job.callback == originalCostOrder[index] and job.id == originalCostOrder[-index]) end
+assert(costWork.Profiler.Report() == costWorkReport)
+assert(costWork.Profiler.Start(30, 6, { include = "search" }))
+queueCosts()
+for index, job in ipairs(queued) do assert(job.callback == originalCostOrder[index] and job.id == originalCostOrder[-index]) end
+report = costWork.Profiler.Report()
+Contains(report, "costs.queue\t1")
+Absent(report, "costs.queue.jobs\t")
+assert(costWork.Profiler.Start(30, 3))
+queueCosts()
+Contains(costWork.Profiler.Report(), "costs.queue.jobs\t4")
 
 -- Actual search builder orchestration retains route selection, results, and post-filtering.
 local search = NewApp()

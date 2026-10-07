@@ -226,9 +226,15 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		local trackWork = ScopeCollectionIDs.enabled;
 		local visited = 0;
 		local container = accountWideData[field]
-		for id,_ in pairs(ids) do
-			container[id] = state
-			if trackWork then visited = visited + 1; end
+		if trackWork then
+			for id,_ in pairs(ids) do
+				container[id] = state
+				visited = visited + 1;
+			end
+		else
+			for id,_ in pairs(ids) do
+				container[id] = state
+			end
 		end
 		if trackWork then Profiler.CountScope(ScopeCollectionIDs, visited, profileSession); end
 		Profiler.Finish(ScopeCollectionBatch, profileStart, profileSession, trackWork and visited or nil);
@@ -242,13 +248,22 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		local visited, changed = 0, 0;
 		local container = currentCharacter[field]
 		local anyNew = false;
-		for id,_ in pairs(ids) do
-			if container[id] ~= state then
-				container[id] = state;
-				anyNew = true;
-				if trackWork then changed = changed + 1; end
+		if trackWork then
+			for id,_ in pairs(ids) do
+				if container[id] ~= state then
+					container[id] = state;
+					anyNew = true;
+					changed = changed + 1;
+				end
+				visited = visited + 1;
 			end
-			if trackWork then visited = visited + 1; end
+		else
+			for id,_ in pairs(ids) do
+				if container[id] ~= state then
+					container[id] = state;
+					anyNew = true;
+				end
+			end
 		end
 		if anyNew then UpdateTimestampForField(field); end
 		if trackWork then
@@ -265,14 +280,24 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		local visited, changed = 0, 0;
 		local container = currentCharacter[field]
 		local anyChanges = false;
-		for id,_ in pairs(ids) do
-			if container[id] ~= state then
-				container[id] = state;
-				changes[#changes + 1] = id;
-				anyChanges = true;
-				if trackWork then changed = changed + 1; end
+		if trackWork then
+			for id,_ in pairs(ids) do
+				if container[id] ~= state then
+					container[id] = state;
+					changes[#changes + 1] = id;
+					anyChanges = true;
+					changed = changed + 1;
+				end
+				visited = visited + 1;
 			end
-			if trackWork then visited = visited + 1; end
+		else
+			for id,_ in pairs(ids) do
+				if container[id] ~= state then
+					container[id] = state;
+					changes[#changes + 1] = id;
+					anyChanges = true;
+				end
+			end
 		end
 		if anyChanges then UpdateTimestampForField(field); end
 		if trackWork then
