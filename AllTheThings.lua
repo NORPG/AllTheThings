@@ -1504,3 +1504,8 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	AllHiddenCategories = nil
 	AllCategories = nil
 end)
+
+-- Label the original developer tracker wrapper to consume the next-login request.
+if app.__perf then
+	app.events.PLAYER_LOGIN = app.__perf.CaptureFunction(app.events.PLAYER_LOGIN, "PLAYER_LOGIN", "startup", { module = "startup", minLevel = 1, login = true });
+end
