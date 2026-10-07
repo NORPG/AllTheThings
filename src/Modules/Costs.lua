@@ -14,11 +14,18 @@ local PlayerHasToy
 
 -- WoW API Cache
 local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
+if app.__perf then
+	GetCurrencyInfo = app.__perf.CaptureFunction(GetCurrencyInfo, "currencyinfo", "costs.api", { module = "costs", minLevel = 6 });
+end
+
 
 -- App locals
 local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, IsComplete
 	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
 local GetItemCount = app.WOWAPI.GetItemCount
+if app.__perf then
+	GetItemCount = app.__perf.CaptureFunction(GetItemCount, "itemcount", "costs.api", { module = "costs", minLevel = 6 });
+end
 local IsSpellKnownHelper, CreateObject, FillGroups
 
 -- Module locals
