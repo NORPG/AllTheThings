@@ -47,6 +47,8 @@ for level = 1, 6 do
   assert(ok and p.GetLevel() == level)
   for _, scope in ipairs({ overview, component, workload, jobs, timeline, diagnostic }) do
     assert(scope.enabled == (scope.minLevel <= level))
+    assert(scope.jobsEnabled == (scope.enabled and level >= 4))
+    assert(scope.timelineEnabled == (scope.enabled and level >= 5))
   end
 end
 assert(p.Start(30, "components"))
@@ -72,6 +74,7 @@ local options = { include = "costs,runner", exclude = "runner", metricBudget = 1
 assert(p.Start(30, 4, options))
 options.include, options.exclude, options.metricBudget = "search", "costs", 0
 assert(overview.enabled and component.enabled and workload.enabled and not foreign.enabled and not jobs.enabled)
+assert(overview.jobsEnabled and component.jobsEnabled and not overview.timelineEnabled and not jobs.jobsEnabled)
 assert(p.Config.include == "costs,runner" and p.Config.metricBudget == 1)
 assert(p.IsLevelEnabled(1, "search") and not p.IsLevelEnabled(2, "search"))
 reads = clockReads
@@ -101,16 +104,91 @@ p.Stop()
 reads = clockReads
 p.Finish(component, start, generation)
 assert(clockReads == reads and not component.enabled and p.GetLevel() == 0)
+assert(not component.jobsEnabled and not component.timelineEnabled)
 assert(p.Config.level == 2, "stopped reports must retain their policy")
 
 -- Late scopes honor both current selection and exclude=all, including newly registered modules.
-assert(p.Start(30, 3, { exclude = "all" }))
+assert(p.Start(30, 6, { include = "all", exclude = "all" }))
 local late = p.RegisterScope("test.late", "newmodule", 2, "counter")
-assert(not late.enabled)
+assert(not late.enabled and not late.jobsEnabled and not late.timelineEnabled)
 local lateOverview = p.RegisterScope("test.late.overview", "newmodule", 1, "counter")
-assert(lateOverview.enabled)
-assert(p.Start(30, 3, { include = "newmodule" }))
-assert(late.enabled and not component.enabled)
+assert(lateOverview.enabled and not lateOverview.jobsEnabled and not lateOverview.timelineEnabled)
+assert(p.Start(30, 6, { include = "newmodule" }))
+assert(late.enabled and late.jobsEnabled and late.timelineEnabled and not component.enabled)
+assert(overview.enabled and not overview.jobsEnabled and not overview.timelineEnabled)
+p.Stop()
+assert(not late.jobsEnabled and not late.timelineEnabled and not lateOverview.jobsEnabled)
+p.Reset()
+assert(not late.enabled and not late.jobsEnabled and not late.timelineEnabled)
+
+-- Successful scope metrics share raw-ID aggregates and are reused only within one capture.
+assert(p.Start(30, 3))
+start, generation = p.Begin(component)
+now = now + .001
+p.Finish(component, start, generation)
+local oldTiming = component.metric
+assert(oldTiming and oldTiming.count == 1)
+p.Record(component.id, 2, 5)
+start, generation = p.Begin(component)
+now = now + .001
+p.Finish(component, start, generation)
+assert(component.metric == oldTiming and oldTiming.count == 3)
+p.CountScope(workload, 2)
+local oldCounter = workload.metric
+p.CountScope(workload, 3)
+p.Count(workload.id, 4)
+assert(workload.metric == oldCounter and oldCounter.count == 9)
+Contains(p.Report(), "test.component\t3\t4.000")
+Contains(p.Report(), "test.workload\t9")
+start, generation = p.Begin(component)
+assert(p.Start(30, 3))
+assert(component.metric == nil and workload.metric == nil)
+reads = clockReads
+p.Finish(component, start, generation)
+assert(clockReads == reads and component.metric == nil)
+start, generation = p.Begin(component)
+now = now + .001
+p.Finish(component, start, generation)
+assert(component.metric ~= oldTiming and component.metric.count == 1 and oldTiming.count == 3)
+p.Reset()
+assert(component.metric == nil and workload.metric == nil)
+
+-- Kind collisions remain rejected, including raw IDs allocated before a scope first records.
+assert(p.Start(30, 3))
+p.Count(component.id)
+start, generation = p.Begin(component)
+now = now + .001
+p.Finish(component, start, generation)
+assert(component.metric == nil)
+Contains(p.Report(), "Counter ID\tCount\n" .. component.id .. "\t1")
+p.Record(workload.id, 2)
+p.CountScope(workload, 4)
+assert(workload.metric == nil)
+Contains(p.Report(), "test.workload\t1\t2.000")
+Absent(p.Report(), "Dropped detail samples")
+
+-- Rejected allocations count each attempt; a later compatible raw aggregate can still be adopted.
+assert(p.Start(30, 3, { metricBudget = 0 }))
+for i = 1, 3 do
+  start, generation = p.Begin(component)
+  now = now + .001
+  p.Finish(component, start, generation)
+end
+p.CountScope(workload)
+p.CountScope(workload)
+assert(component.metric == nil and workload.metric == nil)
+Contains(p.Report(), "Dropped detail samples after 0 distinct detail metric IDs: 5")
+p.Count(workload.id, 9)
+p.CountScope(workload, 2)
+assert(workload.metric and workload.metric.count == 11)
+p.Record(component.id, 3)
+start, generation = p.Begin(component)
+now = now + .001
+p.Finish(component, start, generation)
+assert(component.metric and component.metric.count == 2)
+Contains(p.Report(), "test.workload\t11")
+Contains(p.Report(), "test.component\t2\t4.000")
+Contains(p.Report(), "Dropped detail samples after 0 distinct detail metric IDs: 5")
 
 -- Periodic diagnostics skip before clock reads; ordinary component metrics remain complete.
 assert(p.Start(30, 6, { include = "costs", sampleEvery = 3, timelineBudget = 2, slowThresholdMs = 5 }))
@@ -146,7 +224,9 @@ debugstack = function()
 end
 assert(p.Start(30, 6, { include = "costs", sampleEvery = 1, stacks = true, stackByteBudget = 12 }))
 for i = 1, 2 do
+  reads = clockReads
   start, generation = p.Begin(diagnostic)
+  assert(clockReads == reads + (i == 1 and 2 or 1), "rejected stack reads an extra clock")
   now = now + .001
   p.Finish(diagnostic, start, generation)
 end
@@ -157,12 +237,53 @@ Contains(report, "Diagnostic caller stacks: 1 retained; 12 bytes; 1 unavailable 
 Contains(report, "caller frame")
 Absent(report, "caller frame repeated")
 assert(p.Start(30, 6, { include = "costs", timelineBudget = 0, stackByteBudget = 0, stacks = true, metricBudget = 0 }))
+reads = clockReads
 start, generation = p.Begin(diagnostic)
+assert(clockReads == reads + 1, "zero stack budget reads an extra clock")
 now = now + .020
 p.Finish(diagnostic, start, generation)
 Contains(p.Report(), "Timeline: 0 retained; 0 overwritten")
 Contains(p.Report(), "Dropped detail samples after 0 distinct detail metric IDs: 1")
 assert(stackCalls == 1)
+
+-- Missing stack APIs need one clock; attempted APIs need a refreshed boundary even on failure.
+debugstack = nil
+assert(p.Start(30, 6, { include = "costs", sampleEvery = 1, stacks = true }))
+reads = clockReads
+start, generation = p.Begin(diagnostic)
+assert(clockReads == reads + 1)
+now = now + .001
+p.Finish(diagnostic, start, generation)
+Contains(p.Report(), "Diagnostic caller stacks: 0 retained; 0 bytes; 1 unavailable or budget-rejected")
+for _, failed in ipairs({ true, false }) do
+  debugstack = function()
+    now = now + .100
+    if failed then error("unavailable stack API") end
+    return 42
+  end
+  assert(p.Start(30, 6, { include = "costs", sampleEvery = 1, stacks = true }))
+  reads = clockReads
+  start, generation = p.Begin(diagnostic)
+  assert(clockReads == reads + 2)
+  now = now + .001
+  p.Finish(diagnostic, start, generation)
+  Contains(p.Report(), "test.diagnostic\t1\t1.000")
+  Contains(p.Report(), "Diagnostic caller stacks: 0 retained; 0 bytes; 1 unavailable or budget-rejected")
+end
+
+-- Exhausting the independent record cap avoids stack acquisition and a second clock.
+local retainedStacks = 0
+debugstack = function() retainedStacks = retainedStacks + 1; return "stack" end
+assert(p.Start(30, 6, { include = "costs", sampleEvery = 1, stacks = true }))
+for i = 1, 129 do
+  reads = clockReads
+  start, generation = p.Begin(diagnostic)
+  assert(clockReads == reads + (i <= 128 and 2 or 1))
+  now = now + .001
+  p.Finish(diagnostic, start, generation)
+end
+assert(retainedStacks == 128)
+Contains(p.Report(), "Diagnostic caller stacks: 128 retained; 640 bytes; 1 unavailable or budget-rejected")
 
 -- Lifecycle extensions see deterministic state, and retained reports can append a bounded section.
 local phases = {}
