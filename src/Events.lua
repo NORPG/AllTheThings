@@ -6,6 +6,35 @@ local Profiler = app.Profiler
 --- @type function,function,function,function,function,function
 local pairs, setmetatable, print, type, pcall, tinsert
 	= pairs, setmetatable, print, type, pcall, tinsert
+---@type table<string, ATTProfilerScope[]>
+local EventHandlerScopes = {};
+---@type table<string, ATTProfilerScope>
+local HandlerScopes = {};
+---@type table<ATTProfilerScope, ATTProfilerScope>
+local HandlerCallScopes = {};
+local ProfileEventRunner;
+
+---Register one stable event/handler label during registration, outside event hot paths.
+---@param eventName string ATT event with registered handlers.
+---@param profileLabel string? Explicit stable handler name; nil aggregates handlers for the event.
+---@return ATTProfilerScope scope Execution-segment timing label for the handler.
+local function HandlerScope(eventName, profileLabel)
+	local id = "event.handler." .. eventName;
+	if type(profileLabel) == "string" and #profileLabel > 0 then
+		id = id .. "." .. profileLabel:gsub("[^%w_.%-]", "_"):sub(1, 32);
+	end
+	-- Long external event names share a stable fallback rather than failing registration.
+	if #id > 90 then id = "event.handler.other"; end
+	local scope = HandlerScopes[id];
+	if not scope then
+		scope = Profiler.RegisterScope(id, "events", 2, "time", "ATT event handler execution segments; Runner waits excluded.");
+		local calls = Profiler.RegisterScope(id .. ".calls", "events", 3, "counter", "Actual handler invocations; resumes are not additional calls.");
+		if scope.id == id then HandlerScopes[id] = scope; end
+		HandlerCallScopes[scope] = calls;
+		if ProfileEventRunner then ProfileEventRunner.RegisterProfiledScope(scope, calls); end
+	end
+	return scope;
+end
 
 -- Declare Custom Event Handlers
 local EventHandlers = setmetatable({
@@ -17,30 +46,46 @@ local EventHandlers = setmetatable({
 if app.__perf then
 	app.__perf.AutoCaptureTable(EventHandlers, "Events.EventHandlers");
 end
-app.AddEventHandler = function(eventName, handler, forceStart)
+---Register an unchanged handler with an optional stable profiler label.
+---@param eventName string ATT custom event to handle.
+---@param handler function Original handler; arguments and errors retain existing event semantics.
+---@param forceStart boolean? True inserts at the front of the handler sequence.
+---@param profileLabel string? Stable component name for Level 2 timing; nil aggregates by event.
+app.AddEventHandler = function(eventName, handler, forceStart, profileLabel)
 	if type(handler) ~= "function" then
 		app.print("AddEventHandler was provided a non-function",handler)
 		return
 	end
 	local handlers = EventHandlers[eventName]
+	local scopes = EventHandlerScopes[eventName];
+	if not scopes then scopes = {}; EventHandlerScopes[eventName] = scopes; end
+	local scope = HandlerScope(eventName, profileLabel);
 	if forceStart then
 		tinsert(handlers, 1, handler)
+		tinsert(scopes, 1, scope)
 	else
 		handlers[#handlers + 1] = handler;
+		scopes[#handlers] = scope;
 	end
 	-- app.PrintDebug("Added Handler",handler,"@",#handlers,"in Event",eventName)
 end
 -- Wraps the provided raw handler in wrapper which then removes said handler from the event once it runs
-app.AddEventHandlerOnce = function(eventName, handler, forceStart)
+---Register a handler that removes itself after its first successful invocation.
+---@param eventName string ATT custom event to handle once.
+---@param handler function Original handler; a thrown error preserves existing removal behavior.
+---@param forceStart boolean? True inserts the one-shot wrapper first.
+---@param profileLabel string? Stable component label forwarded to AddEventHandler.
+app.AddEventHandlerOnce = function(eventName, handler, forceStart, profileLabel)
 	local function wrapper(...)
 		handler(...)
 		app.RemoveEventHandler(wrapper)
 	end
-	app.AddEventHandler(eventName, wrapper, forceStart)
+	app.AddEventHandler(eventName, wrapper, forceStart, profileLabel)
 end
 -- Runs immediately and wipes the set of Handlers assigned for a specific Event
 app.RemoveAllEventHandlers = function(eventName)
 	EventHandlers[eventName] = nil
+	EventHandlerScopes[eventName] = nil;
 end
 local RemoveHandlers = {}
 local function RemoveHandler(handler)
@@ -59,13 +104,16 @@ local function RemoveHandler(handler)
 			shift = shift - 1
 		end
 		if shift > 0 then
+			local scopes = EventHandlerScopes[eventName];
 			local next = shift + 1
 			while shift < count do
 				handlers[shift] = handlers[next]
+				if scopes then scopes[shift] = scopes[next]; end
 				shift = shift + 1
 				next = next + 1
 			end
 			handlers[#handlers] = nil;
+			if scopes then scopes[#scopes] = nil; end
 			-- app.PrintDebug("Handlers",#handlers,"in Event",eventName)
 		-- else app.PrintDebug("Handler",handler,"not in Event",eventName)
 		end
@@ -286,7 +334,10 @@ app.LinkEventSequence = function(event, followupEvent)
 end
 
 local Runner = app.CreateRunner("events")
+ProfileEventRunner = Runner;
+for scope, calls in pairs(HandlerCallScopes) do Runner.RegisterProfiledScope(scope, calls); end
 local Run = Runner.Run
+local RunProfiled = Runner.RunProfiled;
 local IsRunning = Runner.IsRunning
 -- Runner.ToggleDebugFrameTime()
 local Callback = app.CallbackHandlers.Callback
@@ -434,6 +485,12 @@ local ProfiledEventIDs = {
 	OnRefreshCollections = "event.trigger.OnRefreshCollections",
 	OnSourcesCollected = "event.trigger.OnSourcesCollected",
 }
+---@type table<string, ATTProfilerScope>, table<string, ATTProfilerScope>
+local ProfiledAcceptedScopes, ProfiledCoalescedScopes = {}, {};
+for event in pairs(ProfiledEventIDs) do
+	ProfiledAcceptedScopes[event] = Profiler.RegisterScope("event.accepted." .. event, "events", 3, "counter", "Accepted event dispatches, excluding coalesced requests.");
+	ProfiledCoalescedScopes[event] = Profiler.RegisterScope("event.coalesced." .. event, "events", 3, "counter", "Dispatch requests suppressed while the event is queued.");
+end
 ---Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
 ---are processed in the proper sequence and timing in conjunction with other events
 ---Profile counters count dispatch requests before queued requests are coalesced;
@@ -450,26 +507,43 @@ local function HandleEvent(eventName, ...)
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence
 	local handlers = EventHandlers[eventName]
+	local scopes = EventHandlerScopes[eventName];
 	local handlerCount = #handlers
 	local useRunner = not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or RunnerEvents[eventName] or IsRunning())
 	if useRunner then
-		if QueuedEvents[eventName] then return end
+		if QueuedEvents[eventName] then
+			local coalesced = ProfiledCoalescedScopes[eventName];
+			if coalesced then Profiler.CountScope(coalesced); end
+			return;
+		end
 		QueuedEvents[eventName] = true
+		local accepted = ProfiledAcceptedScopes[eventName];
+		if accepted then Profiler.CountScope(accepted); end
 		-- DebugStartRunnerEvent(eventName,...)
 		-- Run(DebugRunnerEventStart, eventName, handlerCount, ...)
 		for i=1,handlerCount do
 			-- Debug ONLY
 			-- Run(function(...) DebugStartHandler(eventName,"Handler",i) handlers[i](...) DebugEndHandler(eventName,"Handler",i,"Done") end, ...)
 			-- Live
-			Run(handlers[i], ...)
+			if scopes and scopes[i] then RunProfiled(scopes[i], handlers[i], ...);
+			else Run(handlers[i], ...); end
 		end
 		Run(RunnerEventCompleted, eventName)
 	else
+		local accepted = ProfiledAcceptedScopes[eventName];
+		if accepted then Profiler.CountScope(accepted); end
 		-- DebugEventTriggered(eventName, ...)
 		-- DebugEventStart(eventName, handlerCount, ...)
 		for i=1,handlerCount do
 			-- DebugStartHandler("Handler",i)
+			local scope = scopes and scopes[i];
+			local profileStart, profileSession;
+			if scope then
+				Profiler.CountScope(HandlerCallScopes[scope]);
+				profileStart, profileSession = Profiler.Begin(scope);
+			end
 			handlers[i](...)
+			if scope then Profiler.Finish(scope, profileStart, profileSession); end
 			-- DebugEndHandler("Handler",i,"Done")
 		end
 		-- DebugEventDone(eventName)

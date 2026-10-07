@@ -150,6 +150,7 @@ contains(report, "Ticks over 10 ms during capture: 1")
 -- Runner must attribute work only to the session active before its slice.
 unpack = table.unpack or unpack
 tremove = table.remove
+assert(loadfile("lib/ProfilerJobs.lua"))("AllTheThings", app)
 assert(loadfile("lib/Runner.lua"))("AllTheThings", app)
 p.Start(30)
 app.FunctionRunner.Run(function()
