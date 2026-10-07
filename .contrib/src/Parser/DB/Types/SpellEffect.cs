@@ -14,12 +14,13 @@ namespace ATT.DB.Types
         public long EffectTriggerSpell { get; set; }
         public long EffectMiscValue_0 { get; set; }
         public long SpellID { get; set; }
-        public long QuestID => IsQuestComplete() || IsClearQuest() ? EffectMiscValue_0 : 0;
+        public long QuestID => IsQuestComplete() || IsClearQuest() || IsQuestStart() ? EffectMiscValue_0 : 0;
 
         public bool IsApplyAura() => Effect == 6;
         public bool IsTriggerSpell() => Effect == 64;
         public bool IsQuestComplete() => Effect == 16;
         public bool IsLearnedTransmogSet() => Effect == 255;
         public bool IsClearQuest() => Effect == 139;
+        public bool IsQuestStart() => Effect == 150;
     }
 }

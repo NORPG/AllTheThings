@@ -3757,6 +3757,7 @@ namespace ATT
 
         private static void Incorporate_SpellEffect(IDictionary<string, object> data, SpellEffect spellEffect)
         {
+            data.TryGetValue("itemID", out long itemID);
             // TODO: sometimes 1 Item can trigger 1 ItemEffect leading to multiple IsQuest SpellEffects...
             // ref. /att i:181538 -> SpellID 336988
             if (spellEffect.IsQuestComplete())
@@ -3793,7 +3794,7 @@ namespace ATT
                         }
                         else
                         {
-                            if (quests.Count == 1 && data.TryGetValue("itemID", out long itemID))
+                            if (quests.Count == 1 && itemID > 0)
                             {
                                 var possibleHqt = quests.First();
                                 if (possibleHqt.TryGetValue("type", out string hqtType) && hqtType == "hqt")
@@ -3822,7 +3823,7 @@ namespace ATT
                         }
                         else
                         {
-                            if (quests.Count == 1 && data.TryGetValue("itemID", out long itemID))
+                            if (quests.Count == 1 && itemID > 0)
                             {
                                 var possibleHqt = quests.First();
                                 if (possibleHqt.TryGetValue("type", out string hqtType) && hqtType == "hqt")
@@ -3890,6 +3891,29 @@ namespace ATT
                     {
                         LogDebug($"INFO: Incorporate SpellEffect Spell {triggerSpellID} from Spell {spellEffect.SpellID}", data);
                         Incorporate_SpellEffect(data, triggeredEffect);
+                    }
+                }
+            }
+
+            if (spellEffect.IsQuestStart())
+            {
+                if (!TryGetSOURCED("itemID", itemID, out var sources) || sources.All(s => s.ContainsAnyKey("_unsorted", "_nyi")))
+                {
+                    LogDebugWarn($"Item {itemID} starts a Quest {spellEffect.EffectMiscValue_0} via Spell {spellEffect.SpellID} but is not properly Sourced.", data);
+                }
+                else
+                {
+                    long questID = spellEffect.QuestID;
+                    if (TryGetSOURCED("questID", questID, out var questSources))
+                    {
+                        foreach (var questSource in questSources)
+                        {
+                            if (!questSource.TryGetValue("qss", out object qssObj) || !qssObj.AsTypedEnumerable<long>().Contains(itemID))
+                            {
+                                LogDebugWarn($"Quest {questID} is Sourced in ATT but does not have Item {itemID} listed as a Quest Starter (qs).", data);
+                            }
+                        }
+
                     }
                 }
             }
