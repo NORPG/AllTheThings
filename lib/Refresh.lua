@@ -8,22 +8,39 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 -- where I know they don't exist. For now I'll just block them
 local select, ipairs, pairs =
 	  select, ipairs, pairs;
-local ATTAccountWideData
+local ATTAccountWideData, CachedCharacterData
 
+---Find a recorded quest completion in the saved character caches.
+---@param questID QuestID Quest whose completing character is being recovered.
+---@return string? characterGUID Completing character GUID, or nil when no character has a completion record.
+local function FindCachedQuestCompletingCharacter(questID)
+	for characterGUID,characterData in pairs(CachedCharacterData) do
+		local characterQuestCompletions = characterData.Quests
+		if characterQuestCompletions and characterQuestCompletions[questID] then
+			return characterGUID
+		end
+	end
+end
 local function CacheAccountWideMiscQuests()
+	---@type ATTAccountCollectionStateEnum
+	local AccountCollectionState = app.AccountCollectionState
 	local oneTimeQuests = ATTAccountWideData.OneTimeQuests
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 
-	-- Cache some collection states for misc. once-per-account quests
+	-- Cache once-per-account completion only when a completing character is known
 	for _,questID in ipairs(app.OPAQDB or app.EmptyTable) do
-		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
-		if not oneTimeQuests[questID] and IsQuestFlaggedCompleted(questID) then
-			-- Mark the character which completed the Quest
-			oneTimeQuests[questID] = app.GUID
+		local completingCharacterGUID = oneTimeQuests[questID]
+		if not completingCharacterGUID then
+			if IsQuestFlaggedCompleted(questID) then
+				completingCharacterGUID = app.GUID
+			else
+				completingCharacterGUID = FindCachedQuestCompletingCharacter(questID)
+			end
+			oneTimeQuests[questID] = completingCharacterGUID or false
 		end
-		-- otherwise indicate the one-time-nature of the quest
-		if oneTimeQuests[questID] == nil then
-			oneTimeQuests[questID] = false
+
+		if completingCharacterGUID and not app.IsAccountCached("Quests", questID) then
+			app.SetAccountCached("Quests", questID, AccountCollectionState.CollectedByAnyCharacter)
 		end
 	end
 end
@@ -93,8 +110,9 @@ end
 
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
 app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 	ATTAccountWideData = accountWideData
+	CachedCharacterData = characterData
 end)
 app.AddEventHandler("OnAfterSavedVariablesAvailable", function()
 	FixNonOneTimeQuests()

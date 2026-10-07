@@ -570,7 +570,15 @@ local AccountWideDataHandlers = setmetatable({
 	end,
 	IGNORE_QUEST_PRINT = app.EmptyFunction,
 	AzeriteEssenceRanks = RankSyncCharacterData,
-	Quests = PartialSyncCharacterData,
+	Quests = function(data, key)
+		PartialSyncCharacterData(data, key)
+		-- Preserve recorded completing GUIDs even when their character cache is unavailable
+		for questID,completingCharacterGUID in pairs(AccountWideData.OneTimeQuests or app.EmptyTable) do
+			if completingCharacterGUID and not data[questID] then
+				data[questID] = AccountCollectionState.CollectedByAnyCharacter
+			end
+		end
+	end,
 	Toys = PartialSyncCharacterData,	-- CRIEVE NOTE: Prior to Legion, many items are stored as "ToyEventually".
 }, {
 	__index = function(t, key)
