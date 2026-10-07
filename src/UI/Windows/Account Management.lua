@@ -1,6 +1,8 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
+---@type ATTAccountCollectionStateEnum
+local AccountCollectionState = app.AccountCollectionState;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
@@ -493,7 +495,7 @@ local function DefaultAccountWideDataHandler(data, key)
 			local characterData = character[key];
 			if characterData then
 				for index,_ in pairs(characterData) do
-					data[index] = 2;
+					data[index] = AccountCollectionState.CollectedByAnyCharacter;
 				end
 			end
 		end
@@ -522,7 +524,7 @@ local function PartialSyncCharacterData(data, key)
 	local characterData
 	-- wipe account data saved based on character data
 	for id,completion in pairs(data) do
-		if completion == 2 then
+		if completion == AccountCollectionState.CollectedByAnyCharacter then
 			data[id] = nil
 		end
 	end
@@ -530,9 +532,9 @@ local function PartialSyncCharacterData(data, key)
 		characterData = character[key];
 		if characterData then
 			for id,_ in pairs(characterData) do
-				-- character-based completion in account data saved as 2 for these types, if not already saved
+				-- Restore character collection without replacing existing account-wide collection
 				if not data[id] then
-					data[id] = 2
+					data[id] = AccountCollectionState.CollectedByAnyCharacter
 				end
 			end
 		end
@@ -555,10 +557,7 @@ local function RankSyncCharacterData(data, key)
 		end
 	end
 end
--- Account-Wide data storage:
--- 1 = This Thing is Account-Wide collected by Blizzard directly
--- 2 = This Thing is Account-Wide collected since 1+ Character has directly collected it
--- 3 = This Thing is Account-Wide collected since it is part of a situation where there's Faction-based differences (2 IDs) but completion of 1 ID is enough for Blizzard to "claim" Account-Wide collection (i.e. dual-Faction Achievements)
+-- Account collection cache values are defined by app.AccountCollectionState.
 local AccountWideDataHandlers = setmetatable({
 	Deaths = function(data)
 		local deaths = 0;

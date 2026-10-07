@@ -1,6 +1,22 @@
 local _, app = ...
 local L = app.L
 
+---Values stored in account collection caches; nil means no collection is recorded.
+---@enum ATTAccountCollectionState
+local AccountCollectionState = {
+	---Blizzard records collection for the account directly.
+	BlizzardAccountWide = 1,
+	---At least one character collected it; the collecting character may be unknown.
+	CollectedByAnyCharacter = 2,
+	---Collection is shared across faction-specific versions, such as achievements.
+	FactionShared = 3,
+}
+---@class ATTAccountCollectionStateEnum
+---@field BlizzardAccountWide ATTAccountCollectionState Blizzard records collection for the account directly.
+---@field CollectedByAnyCharacter ATTAccountCollectionState At least one character collected it; that character may be unknown.
+---@field FactionShared ATTAccountCollectionState Collection is shared across faction-specific versions.
+app.AccountCollectionState = AccountCollectionState
+
 -- Dependencies: Locales, Modules.RetrievingData
 
 local pairs,type
@@ -187,7 +203,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 
 	local accountWide = app.Settings.AccountWide
-	-- Returns the cached status for this Account for a given field ID
+	---Returns the cached status for this account for a given field ID.
+	---@param field string Account cache field, such as "Quests" or "SourceItemsOnCharacter".
+	---@param id integer Record ID within the cache field.
+	---@return any state Field-specific value, or nil; completion caches use ATTAccountCollectionState.
 	local function IsAccountCached(field, id)
 		return accountWideData[field][id] or nil
 	end
@@ -202,7 +221,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			UpdateTimestampForField(field);
 		end
 	end
-	-- Assigns the cached status for this Account for a given field ID without causing any related events
+	---Assigns account cache state without causing collection events.
+	---@param field string Account cache field, such as "Quests" or "SourceItemsOnCharacter".
+	---@param id integer Record ID within the cache field.
+	---@param state? any Field-specific value; completion caches use ATTAccountCollectionState, while other fields may store GUIDs or ranks.
 	local function SetAccountCached(field, id, state)
 		accountWideData[field][id] = state
 	end
@@ -315,10 +337,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			end
 			if not accountWide then
 				SetCached(cacheKey, cacheKeyID, 1)
-				accountCache[cacheKeyID] = 2
+				accountCache[cacheKeyID] = AccountCollectionState.CollectedByAnyCharacter
 			else
 				-- Achievements need to sometimes cache as 3 due to inconsistent Blizz API responses
-				accountCache[cacheKeyID] = tonumber(accountWide) or 1
+				accountCache[cacheKeyID] = tonumber(accountWide) or AccountCollectionState.BlizzardAccountWide
 			end
 			return 1
 		end
@@ -350,7 +372,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		-- character collected
 		if IsCached(CACHE, id) then return 1; end
 		-- account-wide direct
-		if IsAccountCached(CACHE, id) == 1 then return 1; end
+		if IsAccountCached(CACHE, id) == AccountCollectionState.BlizzardAccountWide then return 1; end
 		-- account-wide collected
 		if IsAccountTracked(CACHE, id, SETTING) then return 2; end
 	end
