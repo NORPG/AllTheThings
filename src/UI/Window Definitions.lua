@@ -2309,16 +2309,6 @@ local ReservedFields = {
 	GetShouldAutomaticallyOpen = true,
 	SetShouldAutomaticallyOpen = true,
 };
-local PreCallShowSuffixes = {}
-local PrecallShow = true
-local function ShowPrecallShowWindows()
-	PrecallShow = nil
-	for k in pairs(PreCallShowSuffixes) do
-		-- app.PrintDebug("Precall Show",k)
-		app.Windows[k]:Show()
-	end
-end
-app.AddEventHandlerOnce("OnLoad", ShowPrecallShowWindows)
 local function SetupCommandsForDefinition(definition)
 	if not definition or definition.BuiltCommands then return end
 	definition.BuiltCommands = true
@@ -2439,12 +2429,6 @@ local function BuildWindow(suffix)
 		self:RecordSettings();
 	end);
 	window:SetScript("OnShow", function(self)
-		if PrecallShow then
-			-- app.PrintDebug("Window:OnShow:Early",self.Suffix)
-			PreCallShowSuffixes[self.Suffix] = true
-			self:Hide()
-			return
-		end
 		-- app.PrintDebug(self.Suffix,":OnShow",self.data)
 		if not self.data then
 			self:Rebuild();
