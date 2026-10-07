@@ -275,6 +275,69 @@ p.Reset();
 assert(p.Start(30, 4, { include = "windows" }));
 Contains(p.Report(), "No measurements captured.");
 
+-- Fixed capture policy avoids per-job filter calls; labels are formatted only on demand.
+local nativeFormat, formatCalls = string.format, 0;
+string.format = function(...) formatCalls = formatCalls + 1; return nativeFormat(...); end;
+app = NewApp(); p = app.Profiler;
+string.format = nativeFormat;
+assert(p.Start(30, 4, { include = "events" }));
+local excludedOverview = p.RegisterScope("overview.filtered", "runner", 1, "time");
+local eventScope = p.RegisterScope("event.work", "events", 2, "time");
+local jobs = app.ProfilerJobs;
+before = clockReads;
+assert(excludedOverview.enabled and jobs.Enqueue(excludedOverview) == nil and clockReads == before,
+	"global overview bypassed the detail job filter");
+p.IsLevelEnabled = function() error("job operations repeated the fixed-policy filter"); end;
+local formatsBefore = formatCalls;
+local parent = assert(jobs.Enqueue(eventScope, "test-origin", 1));
+assert(jobs.Begin(parent, eventScope) == parent);
+assert(formatCalls == formatsBefore, "Level 4 eagerly formatted unused context text");
+local parentText = p.GetCurrentContext();
+assert(parentText == "job=1 origin=test-origin" and formatCalls == formatsBefore + 1);
+assert(p.GetCurrentContext() == parentText and formatCalls == formatsBefore + 1,
+	"unchanged current context was reformatted");
+local child = assert(jobs.Enqueue(eventScope));
+assert(jobs.Begin(child, eventScope) == child);
+local childText = p.GetCurrentContext();
+assert(childText == "job=2 origin=event.work parent=1");
+formatsBefore = formatCalls;
+assert(p.GetCurrentContext() == childText and formatCalls == formatsBefore);
+jobs.Pause(child, "completed");
+assert(p.GetCurrentContext() == parentText and formatCalls == formatsBefore,
+	"restoring parent context changed or reformatted its label");
+jobs.Pause(parent);
+assert(p.GetCurrentContext() == nil and p.Stop());
+assert(jobs.Enqueue(eventScope) == nil and p.GetCurrentContext() == nil);
+
+-- Timeline resume/yield entries reuse the immutable lifecycle label within one job.
+formatCalls = 0;
+string.format = function(...) formatCalls = formatCalls + 1; return nativeFormat(...); end;
+app = NewApp(); p = app.Profiler;
+string.format = nativeFormat;
+assert(p.Start(30, 5, { include = "events" }));
+eventScope = p.RegisterScope("event.timeline", "events", 2, "time");
+jobs = app.ProfilerJobs;
+formatsBefore = formatCalls;
+parent = assert(jobs.Enqueue(eventScope, "alpha"));
+assert(formatCalls == formatsBefore + 1, "first timeline label was not created lazily");
+for resume = 1, 20 do
+	assert(jobs.Begin(parent, eventScope) == parent);
+	now = now + 0.001;
+	jobs.Pause(parent);
+end
+assert(parent.resumes == 20 and math.abs(parent.execution - 20) < 0.000001);
+assert(formatCalls == formatsBefore + 1, "resume/yield reformatted an immutable timeline label");
+assert(p.Stop());
+assert(formatCalls == formatsBefore + 1, "stop reformatted an immutable timeline label");
+report = p.Report();
+Contains(report, "job=1 origin=alpha");
+assert(p.Start(30, 5, { include = "events" }));
+child = assert(jobs.Enqueue(eventScope, "beta"));
+assert(jobs.Begin(child, eventScope) == child);
+assert(p.GetCurrentContext() == "job=1 origin=beta", "new session inherited an old job label");
+jobs.Pause(child, "completed");
+assert(p.Stop());
+
 if not canYieldProtected then
 	print("SKIP: stock Lua 5.1 cannot yield across xpcall; Runner protected-call yield/resume cases require a yieldable runtime.");
 end

@@ -25,6 +25,8 @@ local GetTimePreciseSec, running, string_format, table_sort, type
 ---@field sliceStart number? Clock boundary for an active execution segment.
 ---@field contextKey thread|table? Coroutine key whose current context refers to this job.
 ---@field previousContext ATTProfilerJob? Context restored after this execution segment.
+---@field contextText string? Lazily cached current-job label, including its immutable parent ID.
+---@field timelineContext string? Lazily cached lifecycle label containing the immutable job ID and origin.
 
 ---Optional Level 4 job observations; disabled calls never read the clock or allocate records.
 ---@class ATTProfilerJobs
@@ -57,15 +59,18 @@ end
 function Profiler.GetCurrentContext()
 	local job = Current();
 	if not job then return; end
-	return string_format("job=%d origin=%s%s", job.id, job.origin,
-		job.parentID and (" parent=" .. job.parentID) or "");
+	if not job.contextText then
+		job.contextText = string_format("job=%d origin=%s%s", job.id, job.origin,
+			job.parentID and (" parent=" .. job.parentID) or "");
+	end
+	return job.contextText;
 end
 
 ---Check Level 4 and the selected module before any job allocation or clock read.
 ---@param scope ATTProfilerScope? Registered work scope.
 ---@return boolean enabled Whether scheduling observations for this scope are active.
 local function Enabled(scope)
-	return scope ~= nil and scope.enabled and Profiler.IsLevelEnabled(4, scope.module);
+	return scope ~= nil and scope.jobsEnabled == true;
 end
 
 ---Save a bounded lifecycle event when Level 5 timeline collection is available.
@@ -73,9 +78,11 @@ end
 ---@param kind string Stable lifecycle event name.
 ---@param durationMs number? Optional observed execution duration in milliseconds.
 local function Timeline(job, kind, durationMs)
-	if Profiler.IsLevelEnabled(5, job.scope.module) then
-		Profiler.AddTimeline(job.scope.id, kind, durationMs,
-			string_format("job=%d origin=%s", job.id, job.origin));
+	if job.scope.timelineEnabled then
+		if not job.timelineContext then
+			job.timelineContext = string_format("job=%d origin=%s", job.id, job.origin);
+		end
+		Profiler.AddTimeline(job.scope.id, kind, durationMs, job.timelineContext);
 	end
 end
 
