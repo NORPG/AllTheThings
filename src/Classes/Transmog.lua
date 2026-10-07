@@ -823,12 +823,19 @@ local function CollectUniqueAppearances()
 	local knownStart, knownSession = Profiler.Begin(ScopeUniqueKnown);
 	local trackWork = ScopeExpandedSources.enabled;
 	local expanded = 0;
-	for sourceID=1,app.MaxSourceID do
-		-- for each known source
-		if AccountSources[sourceID] == 1 then
-			-- collect shared visual sources
-			MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly)
-			if trackWork then expanded = expanded + 1; end
+	if trackWork then
+		for sourceID=1,app.MaxSourceID do
+			if AccountSources[sourceID] == 1 then
+				MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly)
+				expanded = expanded + 1;
+			end
+		end
+	else
+		for sourceID=1,app.MaxSourceID do
+			-- collect shared visual sources for each known source
+			if AccountSources[sourceID] == 1 then
+				MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly)
+			end
 		end
 	end
 	Profiler.Finish(ScopeUniqueKnown, knownStart, knownSession, app.MaxSourceID);
@@ -838,16 +845,20 @@ local function CollectUniqueAppearances()
 		local brokenStart, brokenSession = Profiler.Begin(ScopeUniqueBroken);
 		local brokenEntries = 0;
 		local GetSourceInfo = ScopeSourceInfo.enabled and GetProfiledSourceInfo or C_TransmogCollection_GetSourceInfo;
-		for sourceID,_ in pairs(brokenUniqueSources) do
-			if brokenStart then brokenEntries = brokenEntries + 1; end
-			-- special reverse-check-logic for unknown SourceID's whose VisualID does not return
-			-- the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
-			-- and haven't already been marked as unique-collected
-			if not AccountSources[sourceID] then
-				local sInfo = GetSourceInfo(sourceID);
-				if ItemSourceFilter(sInfo) then
-					-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
-					AccountUniqueSources_ADD(sourceID)
+		if brokenStart then
+			for sourceID,_ in pairs(brokenUniqueSources) do
+				brokenEntries = brokenEntries + 1;
+				if not AccountSources[sourceID] then
+					local sInfo = GetSourceInfo(sourceID);
+					if ItemSourceFilter(sInfo) then AccountUniqueSources_ADD(sourceID) end
+				end
+			end
+		else
+			for sourceID,_ in pairs(brokenUniqueSources) do
+				-- reverse-check unknown source IDs missing from their visual's source list
+				if not AccountSources[sourceID] then
+					local sInfo = GetSourceInfo(sourceID);
+					if ItemSourceFilter(sInfo) then AccountUniqueSources_ADD(sourceID) end
 				end
 			end
 		end
@@ -871,11 +882,17 @@ local function RefreshAppearanceSources()
 	local trackWork = ScopeKnownSources.enabled;
 	local known = 0;
 	local HasSource = ScopeSourceKnown.enabled and GetProfiledSourceOwnership or C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance;
-	for sourceID=1,app.MaxSourceID do
-		-- don't need to check for existing value... everything is cleared beforehand
-		if HasSource(sourceID) then
-			AccountSources[sourceID] = 1;
-			if trackWork then known = known + 1; end
+	if trackWork then
+		for sourceID=1,app.MaxSourceID do
+			if HasSource(sourceID) then
+				AccountSources[sourceID] = 1;
+				known = known + 1;
+			end
+		end
+	else
+		for sourceID=1,app.MaxSourceID do
+			-- existing values were cleared before this scan
+			if HasSource(sourceID) then AccountSources[sourceID] = 1; end
 		end
 	end
 	-- app.PrintDebugPrior("Completionist Refresh done")

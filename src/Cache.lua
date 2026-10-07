@@ -49,12 +49,16 @@ app.SearchForFieldInAllCaches = function(field, id)
 	local trackWork = ScopeCacheLookups.enabled;
 	local lookups, hits = 0, 0;
 	local groups = {};
-	for _,cache in next,AllCaches do
-		local cached = cache[field][id];
-		ArrayAppend(groups, cached);
-		if trackWork then
+	if trackWork then
+		for _,cache in next,AllCaches do
+			local cached = cache[field][id];
+			ArrayAppend(groups, cached);
 			lookups = lookups + 1;
 			if #cached > 0 then hits = hits + 1; end
+		end
+	else
+		for _,cache in next,AllCaches do
+			ArrayAppend(groups, cache[field][id]);
 		end
 	end
 	if trackWork then
@@ -72,14 +76,21 @@ app.SearchForManyInAllCaches = function(field, ids)
 	local lookups, hits = 0, 0;
 	local groups = {};
 	local fieldCache;
-	for _,cache in next,AllCaches do
-		fieldCache = cache[field];
-		for i=1,#ids do
-			local cached = fieldCache[ids[i]];
-			ArrayAppend(groups, cached);
-			if trackWork then
+	if trackWork then
+		for _,cache in next,AllCaches do
+			fieldCache = cache[field];
+			for i=1,#ids do
+				local cached = fieldCache[ids[i]];
+				ArrayAppend(groups, cached);
 				lookups = lookups + 1;
 				if #cached > 0 then hits = hits + 1; end
+			end
+		end
+	else
+		for _,cache in next,AllCaches do
+			fieldCache = cache[field];
+			for i=1,#ids do
+				ArrayAppend(groups, fieldCache[ids[i]]);
 			end
 		end
 	end
