@@ -6,33 +6,45 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for filling out this feature request form. Please note that all feature requests will be reviewed and discussed among contributors before any implementation decision is made.
+        Please [search existing issues](https://github.com/ATTWoWAddon/AllTheThings/issues) before proposing a feature.
+        Contributors will review and discuss requests before deciding on implementation.
 
   - type: dropdown
     id: flavour
     attributes:
-      label: "What flavo(u)r(s) of WoW are you using?"
-      description: "Select all applicable versions of World of Warcraft."
+      label: "Which WoW Flavors Does This Proposal Apply To?"
+      description: "Select the WoW Flavors the proposed feature would support, including cross-flavor or unsure when appropriate."
       multiple: true
       options:
-        - "Beta"
-        - "PTR"
         - "Retail"
-        - "MoP Classic"
+        - "Classic Progression (MoP)"
         - "Classic Era"
-        - "Hardcore"
+        - "Classic Hardcore"
+        - "Classic Anniversary (TBC)"
         - "Season of Discovery"
-        - "Anniversary Realms"
-        - "Forever beta"
+        - "Forever"
+        - "All Flavors / Cross-Flavor"
+        - "Other / Unsure"
     validations:
       required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "WoW Environment"
+      description: "Optional: select any environments specifically relevant to the proposal."
+      multiple: true
+      options:
+        - "Live"
+        - "PTR"
+        - "Beta"
 
   - type: textarea
     id: problem_description
     attributes:
       label: "What problem are you experiencing that led to this feature request?"
-      description: "Describe the problem or challenge you are facing that this feature could address."
-      placeholder: "Explain the problem or challenge here..."
+      description: "Describe the use case: what are you trying to do, and what makes it difficult today?"
+      placeholder: "Your goal, current workflow, and the problem"
     validations:
       required: true
 
@@ -40,8 +52,8 @@ body:
     id: proposed_solution
     attributes:
       label: "What solution would you like?"
-      description: "Provide details about the feature or solution you are suggesting."
-      placeholder: "Describe the desired solution here..."
+      description: "Describe the proposed behavior and how you would use it. What result would make the feature useful?"
+      placeholder: "Proposed solution and the result you expect"
     validations:
       required: true
 
@@ -49,12 +61,14 @@ body:
     id: alternatives
     attributes:
       label: "Any alternatives you can think of?"
-      description: "List any alternative solutions or approaches you have considered."
+      description: "Optional: describe alternatives or workarounds you considered and any limitations."
       placeholder: "Describe alternatives here..."
 
   - type: textarea
     id: additional_context
     attributes:
-      label: "Anything else?"
-      description: "Add any additional information or context related to this feature request."
+      label: "Additional Context"
+      description: |
+        Optional: add examples, screenshots, relevant ATT settings, or special events/modes that help explain the proposal.
+        If AI helped with related work or this report, add an `AI Assistance` section with the actual model name(s), what it helped with, and what you verified, per [AGENTS.md](https://github.com/ATTWoWAddon/AllTheThings/blob/master/AGENTS.md).
       placeholder: "Provide additional details here..."

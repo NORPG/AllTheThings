@@ -3,64 +3,72 @@ description: Report an issue or something not working correctly.
 labels: ["type:bug"]
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please [search existing issues](https://github.com/ATTWoWAddon/AllTheThings/issues) before reporting a bug.
+        If you just updated ATT, fully close and reopen WoW before checking again, as noted in the [README](https://github.com/ATTWoWAddon/AllTheThings#problem-suggestion).
+
   - type: dropdown
     id: flavour
     attributes:
-      label: "Which flavo(u)r of WoW are you using?"
-      description: "Select the versions of World of Warcraft."
+      label: "WoW Flavor"
+      description: "Select the WoW Flavor where the issue occurs. Use the environment field for PTR or Beta."
       options:
-        - "Beta"
-        - "PTR"
         - "Retail"
-        - "MoP Classic"
+        - "Classic Progression (MoP)"
         - "Classic Era"
-        - "Hardcore"
+        - "Classic Hardcore"
+        - "Classic Anniversary (TBC)"
         - "Season of Discovery"
-        - "Anniversary Realms"
-        - "Forever beta"
+        - "Forever"
+        - "Other / Unsure"
     validations:
       required: true
 
   - type: dropdown
-    id: realm
+    id: environment
     attributes:
-      label: "Which server realm are you in?"
-      description: "Select the region where you encountered the issue."
+      label: "WoW Environment"
+      description: "Optional: specify whether this occurs on Live, PTR, or Beta."
+      options:
+        - "Live"
+        - "PTR"
+        - "Beta"
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: "Region"
+      description: "Optional: include your region if server availability or regional behavior matters."
       options:
         - "US"
         - "EU"
         - "KR"
         - "CN"
         - "TW"
-    validations:
-      required: true
 
   - type: input
     id: wow_build
     attributes:
       label: "WoW Client Build"
-      description: "Provide the specific WoW build (e.g., from `/dump GetBuildInfo()` or found on the login screen)."
-      placeholder: "e.g., 10.1.7.51000"
+      description: "Provide the client version and build number from `/dump GetBuildInfo()` or the login screen."
+      placeholder: "Client version and build number"
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: wow_event
     attributes:
-      label: "WoW Event"
-      description: "Are you participating in special events like the Legion remix?"
-      options:
-        - "Mainline"
-        - "Legion remix"
-        - "Other"
-    validations:
-      required: true
+      label: "Special Event or Game Mode"
+      description: "Optional: name any relevant event, season, or special realm mode."
+      placeholder: "Event or mode name, if relevant"
 
   - type: dropdown
     id: wow_language
     attributes:
       label: "WoW Client Language"
-      description: "Select the language of your WoW client."
+      description: "Optional: include your client language for text, localization, or search issues."
       options:
         - "enUS"
         - "deDE"
@@ -73,27 +81,26 @@ body:
         - "ruRU"
         - "zhCN"
         - "zhTW"
-    validations:
-      required: true
 
   - type: dropdown
     id: att_version
     attributes:
-      label: "ATT Version"
-      description: "Select the version of ATT you are using."
+      label: "ATT Release Channel"
+      description: "Select how ATT was installed; provide the exact version below."
       options:
-        - "Latest release"
-        - "Latest alpha"
-        - "git"
+        - "Release"
+        - "Alpha"
+        - "Git"
+        - "Unknown"
     validations:
       required: true
 
   - type: input
     id: att_build
     attributes:
-      label: "ATT Build Number"
-      description: "Provide the specific ATT build (e.g., from `/dump ATTC.Version` or addon info)."
-      placeholder: "e.g., 4.1.11(release) / 4.1.11-34-g9b96b53(alpha)"
+      label: "Exact ATT Version"
+      description: "Copy `/dump ATTC.Version` or the version in addon info. Git installs may report `[Git]`; include your branch and commit SHA (`git branch --show-current` and `git rev-parse HEAD`)."
+      placeholder: "Exact release/alpha version, or [Git] with branch and commit SHA"
     validations:
       required: true
 
@@ -101,7 +108,7 @@ body:
     id: bug_description
     attributes:
       label: "Describe the Bug"
-      description: "What isn't working? What did you expect to happen?"
+      description: "Describe the issue, what you expected to happen, and what actually happened."
       placeholder: "Describe the issue here..."
     validations:
       required: true
@@ -116,9 +123,9 @@ body:
   - type: textarea
     id: reproduce_steps
     attributes:
-      label: "Steps to Reproduce"
-      description: "Provide detailed steps so we can reproduce the issue:\n1. Go to '...'\n2. Click '...'\n3. Observe the bug."
-      placeholder: "List steps here..."
+      label: "Reproduction Context"
+      description: "List steps and relevant character, location, or activity details. If intermittent or not reproducible, say so and describe when it happened."
+      placeholder: "Steps, frequency, and conditions; or why you cannot reproduce it"
     validations:
       required: true
 
@@ -126,12 +133,15 @@ body:
     id: lua_errors
     attributes:
       label: "Lua Errors"
-      description: "Include any Lua error messages (from BugSack or `/console scriptErrors 1`)."
-      placeholder: "Paste error logs here..."
+      description: "Optional: paste the complete error and stack trace from BugSack or `/console scriptErrors 1`."
+      placeholder: "Paste the full error and stack trace here..."
+      render: text
 
   - type: textarea
     id: additional_context
     attributes:
       label: "Additional Context"
-      description: "Add any other information that might help us diagnose the issue."
-      placeholder: "Anything else to add?"
+      description: |
+        Optional: ATT mode/filters, other addons and their versions, and whether it occurs with only ATT enabled ("Not tested" is fine).
+        If AI helped with related work or this report, add an `AI Assistance` section with the actual model name(s), what it helped with, and what you verified, per [AGENTS.md](https://github.com/ATTWoWAddon/AllTheThings/blob/master/AGENTS.md).
+      placeholder: "Settings, addon isolation results, or other relevant context"
