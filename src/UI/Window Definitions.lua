@@ -2430,10 +2430,12 @@ local function BuildWindow(suffix)
 	end);
 	window:SetScript("OnShow", function(self)
 		-- app.PrintDebug(self.Suffix,":OnShow",self.data)
-		if not self.data then
-			self:Rebuild();
-		else
-			self:Update();
+		if not app.__FirstRefresh then
+			if not self.data then
+				self:Rebuild();
+			else
+				self:Update();
+			end
 		end
 		if onShow then onShow(self); end
 		self:RecordSettings();
