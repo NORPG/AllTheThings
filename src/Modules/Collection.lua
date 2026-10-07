@@ -123,6 +123,10 @@ app.AddRemovalTypeHandler = function(type, func)
 end
 
 local function HandleCollectionChange(t, isadd)
+	if app.GetRelativeField(t, "_hqt", true) then
+		app.PrintDebug("Ignored Collection on HQT group",app:SearchLink(t))
+		return
+	end
 	-- Report new things to your collection!
 	-- app.PrintDebug("HCC",app:SearchLink(t),isadd and "Collected" or "Removed")
 	-- to test: comment out text/name/link from BattlePet class, then cage & relearn a battle pet

@@ -2955,6 +2955,7 @@ local AccountWideQuestsDB = {
 	98743,	-- Unlock Transmogrifier [Sporebearer Fungal Strider]
 	98787,	-- Quest #98787*
 	98848,	-- Delver's Cosmetic Surprise Bag
+	99222,	-- Bonus Reputation: Zul'jarra's Forces [Delve Completion]
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)

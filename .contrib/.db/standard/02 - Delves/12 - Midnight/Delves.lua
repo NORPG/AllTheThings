@@ -804,6 +804,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				-- contains a user-chosen option based on Dundun dialog (Decor/Marl/Undercoin/XP) so no reason to list specifically
 			}),
 		}),
+		-- Weekly Bonus Reputation Triggers
+		hqt_bonusRenown_weekly(93819, FACTION_AMANI_TRIBE),	-- Amani Rep
+		hqt_bonusRenown_weekly(93820, FACTION_THE_SINGULARITY),	-- The Singularity Rep
+		hqt_bonusRenown_weekly(93821, FACTION_SILVERMOON_COURT),	-- Silvermoon Court Rep
+		hqt_bonusRenown_weekly(93822, FACTION_HARATI),	-- Hara'ti Rep
+		hqt_bonusRenown_weekly(99222, FACTION_ZULJARRAS_FORCES, {timeline = { ADDED_12_1_0 }}),	-- Zul'Jarra's Forces Rep
 	})),
 	n(FACTIONS, {
 		faction(2744),	-- Valeera Sanguinar
@@ -1820,10 +1826,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
 			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
-		q(93819, name(HEADERS.Faction, FACTION_AMANI_TRIBE, {isWeekly=true})),	-- Amani Rep
-		q(93820, name(HEADERS.Faction, FACTION_THE_SINGULARITY, {isWeekly=true})),	-- The Singularity Rep
-		q(93821, name(HEADERS.Faction, FACTION_SILVERMOON_COURT, {isWeekly=true})),	-- Silvermoon Court Rep
-		q(93822, name(HEADERS.Faction, FACTION_HARATI, {isWeekly=true})),	-- Hara'ti Rep
 		q(93935, {isWeekly=true}),	-- 1st weekly bonus Hero item from Bountiful chest
 		q(93936, {isWeekly=true}),	-- 2nd weekly bonus Hero item from Bountiful chest
 		q(93937, {isWeekly=true}),	-- 3rd weekly bonus Hero item from Bountiful chest
@@ -1842,6 +1844,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97637),	-- Looted Tormented Soul
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),
-		q(99222, name(HEADERS.Faction, FACTION_ZULJARRAS_FORCES, {isWeekly=true})),	-- Zul'Jarra's Forces Rep
 	})),
 }));
