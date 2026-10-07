@@ -2748,7 +2748,7 @@ namespace ATT
                     keys.Sort();
                     int localeCount = SUPPORTED_LOCALES.Count();
                     int retryLocaleThreshold = Config["DoRetryObjectDBMissingThreshold"];
-                    if (retryLocaleThreshold == 0)
+                    if (retryLocaleThreshold <= 0)
                     {
                         retryLocaleThreshold = 999;
                     }

@@ -619,6 +619,9 @@ namespace ATT
                     return ErrorCode;
                 }
 
+                // Early testing
+                //ObjectHarvester.UpdateInformationFromWoWHead(33, new Dictionary<string, object>());
+
                 // Merge Wago data prior to merging contributor data
                 Framework.CurrentParseStage = ParseStage.WagoDBMerge;
                 string[] wagoMergeModules = Framework.Config["WAGO_DATA_MERGE"];

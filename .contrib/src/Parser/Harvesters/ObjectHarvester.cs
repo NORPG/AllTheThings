@@ -119,6 +119,29 @@ namespace ATT
         /// </summary>
         private static readonly string[] SupportedLocales = Framework.SUPPORTED_LOCALES.Except(l => l == "en").ToArray();
 
+        private static readonly IDictionary<string, int> WowheadSimpleLocaleMapping = new Dictionary<string, int>() {
+            { "en", 0  },
+            { "ko", 1  },
+            { "fr", 2  },
+            { "de", 3  },
+            { "cn", 4  },
+            { "es", 6  },
+            { "ru", 7  },
+            { "pt", 8  },
+            { "it", 9  },
+            { "tw", 10 },
+            { "mx", 11 },
+        };
+
+        private static readonly IDictionary<string, int> WowheadSimpleEnvironmentMapping = new Dictionary<string, int>() {
+            { "", 1 }, // retail
+            { "retail", 1 },
+            { "classic", 4 },
+            { "tbc", 5 },
+            { "mop-classic", 15 },
+            { "forever", 16 },
+        };
+
         /// <summary>
         /// All of the objects and their fields that have been dirtied.
         /// </summary>
@@ -190,6 +213,54 @@ namespace ATT
                     }
                 }
                 return EMPTY_DOCUMENT;
+            }
+        }
+
+        /// <summary>
+        /// Get the JSON document from WoWHead.
+        /// </summary>
+        /// <param name="objectID">The object ID.</param>
+        /// <param name="locale">The locale.</param>
+        /// <param name="flavor">The game flavor.</param>
+        /// <returns></returns>
+        private static IDictionary<string, object> GetJSONDocumentFromWoWHead(long objectID, string locale = "en", string flavor = "retail")
+        {
+            // Wowhead Cloudfront CDN shadowbans your IP after about 30 requests within a minute or so
+            if (WowheadShadowban) return null;
+
+            try
+            {
+                WowheadSimpleLocaleMapping.TryGetValue(locale, out int localeID);
+                WowheadSimpleEnvironmentMapping.TryGetValue(flavor, out int dataEnv);
+                // https://nether.wowhead.com/tooltip/object/123214?dataEnv=16&locale=3
+                string url = $"https://nether.wowhead.com/tooltip/object/{objectID}?dataEnv={dataEnv}&locale={localeID}";
+                Framework.Log("Downloading: ", url);
+
+                // Use if needing to Debug
+                //var resp = client.GetAsync(url).GetAwaiter().GetResult();
+                //byte[] data = resp.Content.ReadAsByteArrayAsync().GetAwaiter().GetResult();
+                //return Encoding.UTF8.GetString(data);
+
+                return MiniJSON.Json.Deserialize(Encoding.UTF8.GetString(client.GetByteArrayAsync(url).GetAwaiter().GetResult())) as IDictionary<string, object>;
+            }
+            catch (Exception e)
+            {
+                Trace.WriteLine(e);
+                if (e.Message.Contains("(403)"))
+                {
+                    WowheadShadowban = true;
+                    return null;
+                }
+                else
+                {
+                    FailureCount++;
+                    // after a lot of failures, just give up for this session
+                    if (FailureCount > 20)
+                    {
+                        WowheadShadowban = true;
+                    }
+                }
+                return null;
             }
         }
 
@@ -453,7 +524,16 @@ namespace ATT
                 string name = string.Empty;
                 foreach (string flavor in GameFlavors)
                 {
+                    // need the full HTML for this since it's used for the model lookup currently
                     englishDocument = GetDocumentFromWoWHead(objectID, "en", flavor);
+                    //var objectInfo = GetJSONDocumentFromWoWHead(objectID, "en", flavor);
+                    //if (objectInfo != null && objectInfo.TryGetValue("name", out string nameStr))
+                    //{
+                    //    name = nameStr;
+                    //    gameFlavor = flavor;
+                    //    break;
+                    //}
+
                     switch (englishDocument)
                     {
                         case EMPTY_DOCUMENT:
@@ -470,6 +550,12 @@ namespace ATT
                             }
                             break;
                     }
+                }
+
+                // No flavor determined
+                if (gameFlavor == null)
+                {
+                    Framework.Log($"Failed to determine a game flavor for object #{objectID}");
                 }
 
                 // If we didn't find a document, let's print an error message and return.
@@ -519,6 +605,9 @@ namespace ATT
                 }
             }
 
+            // Ensure a valid flavor is used
+            gameFlavor = gameFlavor ?? GameFlavors.FirstOrDefault();
+
             // Only update the object data if we have obtained the en locale (Wowhead likes to shadow ban repeated url requests)
             objectData["text"] = textLocalizations;
             // The english text, which acts as the default.
@@ -530,33 +619,49 @@ namespace ATT
                 if (!textLocalizations.TryGetValue(locale, out string oldValue) || oldValue.Contains(englishText))
                 {
                     string name = oldValue;
-                    string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
-                    switch (document)
+                    //string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
+                    var objectInfo = GetJSONDocumentFromWoWHead(objectID, locale, gameFlavor);
+                    if (objectInfo != null && objectInfo.TryGetValue("name", out string nameStr))
                     {
-                        case EMPTY_DOCUMENT:
-                            objectData["ignorewowhead"] = true;
-                            break;
-                        case null:
-                        case "":
-                            break;
-                        default:
-                            // Attempt to parse the non-english document.
-                            name = ParseNameFromDocument(document);
-                            if (!string.IsNullOrEmpty(name))
-                            {
-                                // don't store the English default for other locales
-                                if (name.StartsWith("[") && name.EndsWith("]"))
-                                {
-                                    name = oldValue;
-                                }
+                        name = nameStr;
+                        // don't store the English default for other locales
+                        if (name.StartsWith("[") && name.EndsWith("]"))
+                        {
+                            name = oldValue;
+                        }
 
-                                Trace.Write(" text.");
-                                Trace.Write(locale);
-                                Trace.Write(" = ");
-                                Trace.WriteLine(name);
-                            }
-                            break;
+                        Trace.Write(" text.");
+                        Trace.Write(locale);
+                        Trace.Write(" = ");
+                        Trace.WriteLine(name);
                     }
+
+                    //switch (document)
+                    //{
+                    //    case EMPTY_DOCUMENT:
+                    //        objectData["ignorewowhead"] = true;
+                    //        break;
+                    //    case null:
+                    //    case "":
+                    //        break;
+                    //    default:
+                    //        // Attempt to parse the non-english document.
+                    //        name = ParseNameFromDocument(document);
+                    //        if (!string.IsNullOrEmpty(name))
+                    //        {
+                    //            // don't store the English default for other locales
+                    //            if (name.StartsWith("[") && name.EndsWith("]"))
+                    //            {
+                    //                name = oldValue;
+                    //            }
+
+                    //            Trace.Write(" text.");
+                    //            Trace.Write(locale);
+                    //            Trace.Write(" = ");
+                    //            Trace.WriteLine(name);
+                    //        }
+                    //        break;
+                    //}
 
                     if (name != oldValue)
                     {
