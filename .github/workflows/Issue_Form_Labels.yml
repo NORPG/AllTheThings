@@ -1,0 +1,34 @@
+name: Issue Form Labels
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions: {}
+
+concurrency:
+  group: issue-form-labels-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  label:
+    if: github.repository == 'ATTWoWAddon/AllTheThings' && !github.event.issue.pull_request
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read # Read the reviewed labeling module, never issue-supplied code.
+      issues: write
+    steps:
+      - name: Check out trusted issue-event commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }} # For issues, GitHub supplies the default-branch commit.
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+
+      - name: Add existing labels for exact form selections
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const { labelIssue } = require('./.github/scripts/issue-form-labels.cjs');
+            await labelIssue({ github, context, core });
