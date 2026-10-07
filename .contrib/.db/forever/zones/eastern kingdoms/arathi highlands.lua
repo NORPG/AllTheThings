@@ -595,8 +595,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["coord"] = { 33.8, 80.6, MAP.ARATHI_HIGHLANDS },
 				["lvl"] = 35,
 				["groups"] = {
-						objective(1, {	-- 0/1 Defend Professor Phizzlethorpe
-							["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
+					objective(1, {	-- 0/1 Defend Professor Phizzlethorpe
+						["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
 					}),
 				},
 			}),

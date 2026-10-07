@@ -5,14 +5,9 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
-			i(244346),	-- Broken Amani Ritual Urn
-			i(244348),	-- Cracked Amani Funerary Urn
 			i(244349),	-- Ruined Amani Ritual Urn
 			i(244350),	-- Shattered Amani Ritual Urn
-			i(252043),	-- Amani Horn Beaker
-			i(264485),	-- Green Amani Tapestry
 			i(264486),	-- Brown Amani Tapestry
-			i(264719),	-- Worn Amani Oar
 			i(265331),	-- Draenei Holo-Junction
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
@@ -309,8 +304,6 @@ root(ROOTS.Unsorted, {
 			i(284051),	-- Hexbearer's Pauldrons
 			i(284052),	-- Amani Effigy
 			i(284054),	-- Hexdrinker's Shoulders
-			i(284055),	-- Hexbinder's Spaulders
-			i(284056),	-- Spirit Effigy
 			i(284057),	-- Effigy of Corrosion
 			i(284106),	-- Nagrand Clover Cluster
 			i(284108),	-- Nagrand Wild Wheat
@@ -357,11 +350,8 @@ root(ROOTS.Unsorted, {
 			i(284260),	-- Overflowing Voidspire
 			i(284263),	-- Pattern: Beloved Murloc Plushie
 			i(284264),	-- "Gnoma Lisa" Painting
-			i(284353),	-- Amani Open Fire Grill
-			i(284355),	-- Amani Hex Candle
 			i(284357),	-- Ancient Amani Mural
 			i(284359),	-- Corroded Amani Sconce
-			i(284362),	-- Tusked Amani Canoe
 			i(284384),	-- Boralus Swill Bottle
 			i(284402),	-- Valdrakken Resupply Coin
 			i(284460),	-- Kyrian Waymarker Plaque

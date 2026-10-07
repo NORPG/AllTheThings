@@ -1050,6 +1050,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
+					i(284055, {	-- Hexbinder's Spaulders (COSMETIC!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
 					i(276165, {	-- Ophidian Patagia (COSMETIC!)
 						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
@@ -1065,6 +1069,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					-- #endif
+					i(284056, {	-- Spirit Effigy (COSMETIC!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
 					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
@@ -1073,11 +1081,43 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 				}),
 				n(DECOR, {
+					i(284355, {	-- Amani Hex Candle (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(252043, {	-- Amani Horn Beaker (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(284353, {	-- Amani Open Fire Grill (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(244346, {	-- Broken Amani Ritual Urn (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(244348, {	-- Cracked Amani Funerary Urn (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(264485, {	-- Green Amani Tapestry (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
 					i(246779, {	-- Hanging Mana Brazier (DECOR!)
 						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
 						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(284362, {	-- Tusked Amani Canoe (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
+					}),
+					i(264719, {	-- Worn Amani Oar (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(275853, {	-- Zul'Aman Burning Pinecone (DECOR!)
 						["timeline"] = { ADDED_12_1_0 },
@@ -1263,6 +1303,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 					i(275936, {	-- Delve-O-Bot 7001: Midnight Software Update Chip (CI!)
 						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+					i(286558, {	-- Delve-O-Bot 7001: The Labyrinth of Kindo'jan Software Update Chip (CI!)
+						["timeline"] = { ADDED_12_1_5 },
 						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 					i(275986, {	-- Delver's Cosmetic Surprise Bag (CI!)
