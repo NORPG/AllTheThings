@@ -2302,8 +2302,6 @@ local ReservedFields = {
 	OnRebuild = true,
 	OnRefresh = true,
 	OnUpdate = true,
-	OnShow = true,
-	OnHide = true,
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 	GetShouldAutomaticallyOpen = true,
@@ -2420,12 +2418,11 @@ local function BuildWindow(suffix)
 	end
 
 	-- Register events to allow settings to be recorded.
-	local onHide, onShow = definition.OnHide, definition.OnShow;
 	window:SetScript("OnMouseDown", StartMovingOrSizing);
 	window:SetScript("OnMouseUp", StopMovingOrSizing);
 	window:SetScript("OnHide", function(self)
 		StopMovingOrSizing(self);
-		if onHide then onHide(self); end
+		if self.OnHide then self:OnHide() end
 		self:RecordSettings();
 	end);
 	window:SetScript("OnShow", function(self)
@@ -2437,7 +2434,7 @@ local function BuildWindow(suffix)
 				self:Update();
 			end
 		end
-		if onShow then onShow(self); end
+		if self.OnShow then self:OnShow() end
 		self:RecordSettings();
 	end);
 
