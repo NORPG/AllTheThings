@@ -4,6 +4,10 @@ Status: Draft; these guidelines are already in effect and must be followed while
 
 These guidelines apply to contributions to AllTheThings (ATT), including code, data, documentation, pull requests, and issues. AI-specific requirements apply whenever AI assistance is used.
 
+## Lua Testing
+
+- Use Lua 5.1 exclusively when adding or running Lua tests. Do not use other Lua versions, because WoW's embedded interpreter uses Lua 5.1.
+
 ## AI Assistance Disclosure
 
 - PRs and issues must disclose AI assistance whenever AI was used to implement the related work or to prepare their content.
