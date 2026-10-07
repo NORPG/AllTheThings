@@ -227,7 +227,11 @@ An absent or partial Blizzard section does not invalidate ATT's own capture. API
 
 ## Limits and measurement overhead
 
-Recording is disabled by default. While disabled, instrumentation checks the enabled flag without taking timing samples, calling Blizzard's profiler API, or allocating sample data. An enabled capture adds clock reads and aggregation work, so use consistent profiling settings when comparing runs.
+Recording is disabled by default, but the profiler libraries, registered scopes, and Runner instrumentation still load. Disabled boundary calls return without timing samples, Blizzard profiler calls, or sample records; they still incur Lua calls and checks. Stopping a capture does not unload this instrumentation.
+
+Cache, collection batches, cost scheduling, and Transmog sweeps select their counting or ordinary loop once, rather than checking profiling on every iteration. The Costs module selects its original item-count API outside eligible diagnostic captures and restores it on stop/reset. Accepted aggregates are reused on registered scopes within one session, and fixed jobs/timeline gates are computed at capture or scope-registration boundaries. Jobs format their immutable context labels only when needed and reuse them during later resumes.
+
+An enabled capture still adds clock reads, aggregation, and any selected job/timeline/stack work. Storage budgets limit retained observations, not execution time or temporary allocations: overwriting a timeline entry still creates a new entry. Filters and diagnostic sampling reduce selected observations, but boundary calls remain. Use consistent profiling settings when comparing runs.
 
 A capture stores at most 64 Overview metric IDs plus its configured detail-ID allowance. Metric IDs are limited to 96 bytes. After an allowance is reached, samples for additional IDs in that category are dropped; existing IDs continue accumulating. Detail IDs cannot consume the Overview allowance. Each timing scope keeps aggregates and a fixed histogram rather than retaining every sample. The load-time scope registry also has a fixed 512-handle limit; rejected registrations use a permanently disabled handle and are reported without aborting ATT.
 
@@ -255,6 +259,19 @@ Standalone tests exercise the capture core, level policy, login requests, comman
 
 The Lua 5.1 Runner/event fixtures include a test-only adapter for WoW-style `xpcall` argument forwarding. They explicitly skip cases that yield through protected Runner or deferred-handler calls, which stock Lua 5.1 cannot execute with WoW's runtime behavior. The Lua 5.5 fixtures exercise those protected-call yield cases; standalone pooled-coroutine yield cases run in both runtimes. Passing either fixture does not establish that the same paths work in a particular WoW client.
 
+### Repeat local observer benchmarks
+
+Run from this branch's repository root:
+
+```text
+lua tests/ProfilerBenchmark.lua
+lua tests/ProfilerBenchmark.lua /path/to/baseline-worktree
+```
+
+The optional source root selects the production engine and module bodies; use the same benchmark script and Lua runtime for both revisions. The fixture uses mocked APIs and a fixed clock to isolate observer work, warms each workload, and reports repeated-run medians. It checks function results, API invocations, workload counters, and report coverage outside the timed batches. It includes stopped/active boundaries, histogram ranges, large module loops, diagnostic API selection, and repeated job resumes.
+
+These measurements compare local Lua bookkeeping under the supplied workloads. They do not establish WoW clock/API costs, frame scheduling, GC behavior in the client, or an FPS improvement. Some workloads may be unchanged or fluctuate within measurement noise; retain the runtime, inputs, and both outputs when reporting a comparison.
+
 ## In-game validation pending
 
 Before this Draft is considered ready, validate the following in the intended WoW clients:
@@ -271,4 +288,4 @@ Before this Draft is considered ready, validate the following in the intended Wo
 
 ## AI assistance
 
-AI assistance was used with **gpt-6-sol** for the initial Profiler implementation and tests, and **gpt-6.1-sol** for the standalone branch, reviews, LuaLS/function documentation, login scheduling, capture levels, instrumentation, tests, and this guide. The pull request lists the checks actually performed. Full in-game verification is pending; illustrative values do not substitute for client measurements.
+AI assistance was used with **gpt-6-sol** for the initial Profiler implementation and tests, and **gpt-6.1-sol** for the standalone branch, reviews, LuaLS/function documentation, login scheduling, capture levels, instrumentation, observer-cost optimization, benchmarks, tests, and this guide. The pull request lists the checks actually performed. Full in-game verification is pending; illustrative values do not substitute for client measurements.
