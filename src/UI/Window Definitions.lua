@@ -2,6 +2,13 @@
 local _, app = ...;
 local L = app.L
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeWindowUpdate = Profiler.RegisterScope("window.update", "windows", 1, "time", "Update visible or forced window data and row lists.", "flattened rows");
+local ScopeWindowRedraw = Profiler.RegisterScope("window.redraw", "windows", 1, "time", "Render visible window rows.", "visible rows rendered");
+local ScopeWindowGroups = Profiler.RegisterScope("window.update.groups", "windows", 2, "time", "Filter and update window collection progress.");
+local ScopeWindowRows = Profiler.RegisterScope("window.rows", "windows", 3, "counter", "Visible rows rendered across window redraws.");
+
 -- Global locals
 local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
 	= coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
@@ -1993,7 +2000,7 @@ local FieldDefaults = {
 		-- returns a Runner specific to the 'self' window
 		local Runner = self.__Runner
 		if Runner then return Runner end
-		Runner = app.CreateRunner(self.Suffix)
+		Runner = app.CreateRunner(self.Suffix, "windows")
 		self.__Runner = Runner
 		return Runner
 	end,
@@ -2020,6 +2027,7 @@ local FieldDefaults = {
 		-- 	visible and "VISIBLE" or "HIDDEN",
 		-- 	self.HasPendingUpdate and "PENDING" or "")
 		if force or visible then
+			local profileStart, profileSession = Profiler.Begin(ScopeWindowUpdate);
 			local rowData = self.rowData
 			if not rowData then
 				rowData = {};
@@ -2033,7 +2041,9 @@ local FieldDefaults = {
 			if not self.doesOwnUpdate and force then
 				self:ToggleExtraFilters(true)
 				-- app.PrintDebug(app.Modules.Color.Colorize("TLUG", app.Colors.Time),self.Suffix)
+				local phaseStart, phaseSession = Profiler.Begin(ScopeWindowGroups);
 				app.TopLevelUpdateGroup(data);
+				Profiler.Finish(ScopeWindowGroups, phaseStart, phaseSession);
 				self.HasPendingUpdate = nil;
 				-- app.PrintDebugPrior("Done")
 				self:ToggleExtraFilters()
@@ -2076,6 +2086,7 @@ local FieldDefaults = {
 
 			-- app.PrintDebugPrior("Update:Done")
 			app.HandleEvent("OnWindowUpdated", self, self.Suffix, didUpdate)
+			Profiler.Finish(ScopeWindowUpdate, profileStart, profileSession, #rowData);
 			return true;
 		end
 		-- app.PrintDebugPrior("Update:None")
@@ -2181,6 +2192,7 @@ local FieldDefaults = {
 		local rowData = self.rowData;
 		if not rowData then return; end
 		if not self:IsShown() then return end
+		local profileStart, profileSession = Profiler.Begin(ScopeWindowRedraw);
 
 		local totalRowCount = #rowData
 		local container = self.Container;
@@ -2201,6 +2213,8 @@ local FieldDefaults = {
 			SetRowData(self, rows[i], rowData[current]);
 			current = current + 1;
 		end
+		Profiler.CountScope(ScopeWindowRows, rowCount, profileSession);
+		Profiler.Finish(ScopeWindowRedraw, profileStart, profileSession, rowCount);
 		-- app.PrintDebugPrior(app.Modules.Color.Colorize("Redraw:", app.DefaultColors.TooltipLore),self.Suffix)
 	end,
 	OnInactiveAlphaChanged = function(self, value)

@@ -7,6 +7,11 @@
 local appName, app = ...;
 local L = app.L;
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeStartupSavedVariables = Profiler.RegisterScope("startup.savedvariables", "startup", 1, "time", "Initialize character/account state and dispatch saved-variable setup.");
+local ScopeStartupSettings = Profiler.RegisterScope("startup.settings", "startup", 1, "time", "Initialize ATT settings during PLAYER_LOGIN.");
+
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
 
@@ -1335,6 +1340,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 		app.print("ATT login profile skipped:", profileResult);
 	end
 
+	local savedStart, savedSession = Profiler.Begin(ScopeStartupSavedVariables);
 	-- Old Saved Variables
 	local AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 
@@ -1382,6 +1388,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 
 	-- Notify Event Handlers that Saved Variable Data is available.
 	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
+	Profiler.Finish(ScopeStartupSavedVariables, savedStart, savedSession);
 
 	-- Clean up unused saved variables if they become deprecated after being pushed to Git
 	accountWideData.Campsite = nil
@@ -1474,7 +1481,9 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	end)
 
 	-- Initialize Settings
+	local settingsStart, settingsSession = Profiler.Begin(ScopeStartupSettings);
 	app.Settings:Initialize();
+	Profiler.Finish(ScopeStartupSettings, settingsStart, settingsSession);
 
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
 	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);

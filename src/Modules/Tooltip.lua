@@ -3,6 +3,14 @@
 local _, app = ...;
 local L = app.L;
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeTooltipAttach = Profiler.RegisterScope("tooltip.attach", "tooltip", 1, "time", "Attach ATT search results and information to a game tooltip.");
+local ScopeTooltipSearch = Profiler.RegisterScope("tooltip.search", "tooltip", 2, "time", "Retrieve cached or freshly built tooltip search results.");
+local ScopeTooltipInfo = Profiler.RegisterScope("tooltip.info", "tooltip", 2, "time", "Prepare and render ATT tooltip information.");
+local ScopeTooltipHits = Profiler.RegisterScope("tooltip.cache.hits", "tooltip", 3, "counter", "Tooltip information lookups already cached for the group.");
+local ScopeTooltipMisses = Profiler.RegisterScope("tooltip.cache.misses", "tooltip", 3, "counter", "Tooltip information lookups requiring cache generation.");
+
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
@@ -814,10 +822,13 @@ app.WipeTooltipInfoCache = WipeTooltipInfoCache
 -- app.AddEventHandler("OnThingRemoved", WipeTooltipInfoCache);
 -- app.AddEventHandler("OnSettingsRefreshed", WipeTooltipInfoCache);
 local function AttachTooltipSearchResults(tooltip, method, ...)
+	local profileStart, profileSession = Profiler.Begin(ScopeTooltipAttach);
+	local searchStart, searchSession = Profiler.Begin(ScopeTooltipSearch);
 	-- app.PrintDebug("AttachTooltipSearchResults",SafeGetName(tooltip),...)
 	app.SetSkipLevel(1);
 	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
 	app.SetSkipLevel(0);
+	Profiler.Finish(ScopeTooltipSearch, searchStart, searchSession);
 	if status then
 		if group then
 			-- If nothing was put into the tooltip initially, mark the text of the source.
@@ -825,16 +836,22 @@ local function AttachTooltipSearchResults(tooltip, method, ...)
 				tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 			end
 
+			local infoStart, infoSession = Profiler.Begin(ScopeTooltipInfo);
+			if ScopeTooltipHits.enabled then
+				Profiler.CountScope(rawget(TooltipInfoCache, group) and ScopeTooltipHits or ScopeTooltipMisses, 1, profileSession);
+			end
 			local tooltipInfo = TooltipInfoCache[group]
 
 			-- If there was info text generated for this search result, then display that first.
 			AttachTooltipInformation(tooltip, tooltipInfo);
+			Profiler.Finish(ScopeTooltipInfo, infoStart, infoSession);
 		end
 	else
 		app.print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
 	end
 	tooltip.ATT_AttachComplete = not (working or (group and group.working));
+	Profiler.Finish(ScopeTooltipAttach, profileStart, profileSession);
 	-- app.PrintDebug("AttachTooltipSearchResults.Complete",app:SearchLink(group),tooltip.ATT_AttachComplete,working,group.working)
 end
 

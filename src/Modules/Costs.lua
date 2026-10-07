@@ -3,6 +3,17 @@
 local _, app = ...;
 local L = app.L
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeCostsQueue = Profiler.RegisterScope("costs.queue", "costs", 1, "time", "Construct cost refresh jobs; excludes later Runner execution.", "jobs scheduled");
+local ScopeCostsItem = Profiler.RegisterScope("costs.assign.item", "costs", 2, "time", "Assign computed item costs and ownership to sourced groups.", "groups");
+local ScopeCostsCurrency = Profiler.RegisterScope("costs.assign.currency", "costs", 2, "time", "Assign computed currency costs to sourced groups.", "groups");
+local ScopeCostsSpell = Profiler.RegisterScope("costs.assign.spell", "costs", 2, "time", "Assign computed spell-provider costs to sourced groups.", "groups");
+local ScopeCostsJobs = Profiler.RegisterScope("costs.queue.jobs", "costs", 3, "counter", "Top-level cost jobs scheduled by a refresh.");
+local ScopeCostsRefs = Profiler.RegisterScope("costs.refs", "costs", 3, "counter", "Cost references scheduled for collectible checks.");
+local ScopeCostsGroups = Profiler.RegisterScope("costs.groups", "costs", 3, "counter", "Sourced cost groups assigned computed totals.");
+local ScopeCostsItemCount = Profiler.RegisterScope("costs.api.itemcount", "costs", 6, "time", "Sampled ownership query at ATT cost GetItemCount callsites.", "API calls");
+
 -- Concepts:
 -- Encapsulates the functionality for handling and checking Cost information
 
@@ -20,6 +31,17 @@ local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, 
 	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
 local GetItemCount = app.WOWAPI.GetItemCount
 local IsSpellKnownHelper, CreateObject, FillGroups
+
+---Read item ownership for cost/provider calculations, with optional sampled diagnostics.
+---@param itemID number Item whose carried, banked, and warband ownership is queried.
+---@return number count Owned quantity returned by ATT's normalized GetItemCount API.
+local function GetOwnedItemCount(itemID)
+	if not ScopeCostsItemCount.enabled then return GetItemCount(itemID, true, nil, true, true); end
+	local profileStart, profileSession = Profiler.Begin(ScopeCostsItemCount);
+	local count = GetItemCount(itemID, true, nil, true, true);
+	Profiler.Finish(ScopeCostsItemCount, profileStart, profileSession, 1);
+	return count;
+end
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunner, ExtraFilters
@@ -354,16 +376,17 @@ local function PlayerIsMissingProviderSpell(spellID)
 	return not IsSpellKnownHelper(spellID)
 end
 local function PlayerIsMissingProviderItem(itemID)
-	return not PlayerHasToy(itemID) and GetItemCount(itemID, true, nil, true, true) == 0
+	return not PlayerHasToy(itemID) and GetOwnedItemCount(itemID) == 0
 end
 local function FinishCostAssignmentsForItem(itemID, costs, refresh)
+	local profileStart, profileSession = Profiler.Begin(ScopeCostsItem);
 	local isProv = CostTotals.ip[itemID]
 	local total = CostTotals.i[itemID] or 0
 	local owned = 0
 	local isCost
 	if total > 0 or not isProv then
 		isCost = total > 0
-		owned = isCost and GetItemCount(itemID, true, nil, true, true) or 0
+		owned = isCost and GetOwnedItemCount(itemID) or 0
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	else
 		owned = PlayerIsMissingProviderItem(itemID) and 0 or 1
@@ -387,16 +410,22 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 	isCost = isCost or isProv
 	local isOwnedCost = (isCost and owned >= total) or nil
 	SetCostTotals(costs, isCost, refresh, itemID, isOwnedCost)
+	Profiler.CountScope(ScopeCostsGroups, #costs, profileSession);
+	Profiler.Finish(ScopeCostsItem, profileStart, profileSession, #costs);
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
+	local profileStart, profileSession = Profiler.Begin(ScopeCostsCurrency);
 	local total = CostTotals.c[currencyID] or 0
 	local owned = CurrencyAmounts[currencyID]
 	local isCost = total > 0
 	local isOwnedCost = (isCost and owned >= total) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
+	Profiler.CountScope(ScopeCostsGroups, #costs, profileSession);
+	Profiler.Finish(ScopeCostsCurrency, profileStart, profileSession, #costs);
 end
 local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
+	local profileStart, profileSession = Profiler.Begin(ScopeCostsSpell);
 	local isProv = CostTotals.sp[spellID]
 	if isProv then
 		isProv = PlayerIsMissingProviderSpell(spellID)
@@ -407,6 +436,8 @@ local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
 		-- end
 	end
 	SetCostTotals(costs, isProv, refresh, spellID)
+	Profiler.CountScope(ScopeCostsGroups, #costs, profileSession);
+	Profiler.Finish(ScopeCostsSpell, profileStart, profileSession, #costs);
 end
 
 local UpdateCostGroup
@@ -418,6 +449,7 @@ local function UpdateCostsByItemID(itemID, refresh, includeUpdate, refs)
 		local itemUnbound = Filters_ItemUnbound(costs[1])
 		refs = refs or GetRawField("itemIDAsCost", itemID)
 		if refs then
+			Profiler.CountScope(ScopeCostsRefs, #refs, Profiler.SessionID);
 			-- if #refs > 100 then PrintDebug(itemID, #refs,"item ref groups for",app:SearchLink(costs[1])) end
 			-- PrintDebug(itemID, #refs,"item cost ref groups @",app:SearchLink(costs[1]))
 			-- local ref
@@ -441,6 +473,7 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, includeUpdate, refs)
 		-- local isCost
 		refs = refs or GetRawField("currencyIDAsCost", currencyID)
 		if refs then
+			Profiler.CountScope(ScopeCostsRefs, #refs, Profiler.SessionID);
 			-- if #refs > 100 then PrintDebug(currencyID, #refs,"curr ref groups for",app:SearchLink(costs[1])) end
 			-- local ref
 			for i=1,#refs do
@@ -462,6 +495,7 @@ local function UpdateCostsBySpellID(spellID, refresh, includeUpdate, refs)
 		local itemUnbound = Filters_ItemUnbound(costs[1])
 		refs = refs or GetRawField("spellIDAsCost", spellID)
 		if refs then
+			Profiler.CountScope(ScopeCostsRefs, #refs, Profiler.SessionID);
 			for i=1,#refs do
 				UpdateRunner.Run(DoCollectibleCheckForSpellRef, refs[i], spellID, itemUnbound)
 			end
@@ -493,6 +527,9 @@ local function CostCalcComplete()
 end
 
 local function UpdateCosts()
+	local profileStart, profileSession = Profiler.Begin(ScopeCostsQueue);
+	local trackWork = ScopeCostsJobs.enabled;
+	local jobs = 0;
 	CacheFilters();
 	ExtraFilters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 	local refresh = app._SettingsRefresh;
@@ -508,17 +545,22 @@ local function UpdateCosts()
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
+		if trackWork then jobs = jobs + 1; end
 	end
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
+		if trackWork then jobs = jobs + 1; end
 	end
 
 	-- Get all spellIDAsCost entries
 	for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
+		if trackWork then jobs = jobs + 1; end
 	end
+	if trackWork then Profiler.CountScope(ScopeCostsJobs, jobs, profileSession); end
+	Profiler.Finish(ScopeCostsQueue, profileStart, profileSession, trackWork and jobs or nil);
 end
 
 local UpdateCostTypeFunc = setmetatable({
