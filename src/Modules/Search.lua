@@ -225,6 +225,9 @@ local function SearchForLink(link)
 	-- otherwise use our custom search by kind
 	return SearchByKindLink(cleanlink)
 end
+if app.__perf then
+	SearchForLink = app.__perf.CaptureFunction(SearchForLink, "link", "search", { module = "search", minLevel = 1 });
+end
 app.SearchForLink = SearchForLink;
 
 local SourceSearcher
@@ -565,6 +568,9 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	return ClonedHierarchyGroups;
 end
 
+if app.__perf then
+	app.BuildTargettedSearchResponse = app.__perf.CaptureFunction(app.BuildTargettedSearchResponse, "build", "search", { module = "search", minLevel = 1 });
+end
 -- Performs the internal logic of searching ATT for a given command/link and then navigating ATT's UI to show the results
 app.SearchAndOpen = function(search)
 	local results = SearchForLink(search)

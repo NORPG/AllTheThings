@@ -521,6 +521,9 @@ local function UpdateCosts()
 	end
 end
 
+if app.__perf then
+	UpdateCosts = app.__perf.CaptureFunction(UpdateCosts, "refresh", "costs.queue", { module = "costs", minLevel = 1 });
+end
 local UpdateCostTypeFunc = setmetatable({
 	i = UpdateCostsByItemID,
 	c = UpdateCostsByCurrencyID,
@@ -585,6 +588,9 @@ UpdateCostGroup = function(c)
 		end
 	end
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
+end
+if app.__perf then
+	UpdateCostGroup = app.__perf.CaptureFunction(UpdateCostGroup, "group", "costs.update", { module = "costs", minLevel = 1 });
 end
 app.AddEventHandler("OnSearchResultUpdate", UpdateCostGroup)
 
