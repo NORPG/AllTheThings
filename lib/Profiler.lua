@@ -394,11 +394,15 @@ end
 ---@param kind string Short event type such as slow, queued, complete, failed, or canceled.
 ---@param durationMs number? Finite nonnegative execution or lifecycle duration in milliseconds.
 ---@param context string? Optional job-origin text, truncated to 192 bytes; nil uses the active job context.
-function Profiler.AddTimeline(id, kind, durationMs, context)
+---@param at number? Finite absolute clock boundary in seconds; nil reads the current clock.
+function Profiler.AddTimeline(id, kind, durationMs, context, at)
 	if not Profiler.IsLevelEnabled(5) or Profiler.Config.timelineBudget == 0 then return; end
 	if type(id) ~= "string" or #id == 0 or #id > MAX_ID_BYTES or type(kind) ~= "string" then return; end
 	if durationMs ~= nil and (type(durationMs) ~= "number" or durationMs < 0 or durationMs ~= durationMs or durationMs == math_huge) then return; end
-	local entry = { at = (GetTimePreciseSec() - startedAt) * 1000, id = id, kind = kind:sub(1, 32),
+	-- Finite values subtract to zero; NaN and either infinity do not.
+	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
+	local boundary = at or GetTimePreciseSec();
+	local entry = { at = (boundary - startedAt) * 1000, id = id, kind = kind:sub(1, 32),
 		duration = durationMs, context = type(context) == "string" and context:gsub("[\r\n\t]", " "):sub(1, 192) or CurrentContext() };
 	if timelineCount < Profiler.Config.timelineBudget then timelineCount = timelineCount + 1;
 	else timelineOverwritten = timelineOverwritten + 1; end
@@ -409,12 +413,14 @@ end
 ---Begin an eligible timing scope, preserving its session generation across asynchronous work.
 ---Levels 1 through 5 allocate no timing token. Level 6 optionally stores a sampled caller stack.
 ---@param scope ATTProfilerScope Registered timing handle; disabled or filtered handles return immediately.
+---@param at number? Finite absolute start boundary in seconds; nil reads the clock; an attempted diagnostic stack still reads its own post-stack start.
 ---@return number? startedAt Absolute clock time in seconds for an accepted sample; nil when disabled or skipped.
 ---@return integer? sessionID Capture generation required by Finish; nil when no sample was started.
-function Profiler.Begin(scope)
-	if not Profiler.Enabled or not scope.enabled or scope.kind ~= "time"
-		or (scope.minLevel == 6 and not AcceptDiagnostic(scope)) then return; end
-	local start = GetTimePreciseSec();
+function Profiler.Begin(scope, at)
+	if not Profiler.Enabled or not scope.enabled or scope.kind ~= "time" then return; end
+	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
+	if scope.minLevel == 6 and not AcceptDiagnostic(scope) then return; end
+	local start = at or GetTimePreciseSec();
 	if scope.minLevel == 6 and Profiler.Config.stacks then
 		local available = Profiler.Config.stackByteBudget - stackBytes;
 		if available <= 0 or #stackRecords >= MAX_STACK_RECORDS or type(debugstack) ~= "function" then
@@ -461,13 +467,16 @@ end
 ---@param start number? Accepted absolute start time; nil is a cheap no-op.
 ---@param sessionID integer? Generation returned by Begin; stale or missing generations are rejected.
 ---@param units number? Optional finite nonnegative work units completed by this sample.
-function Profiler.Finish(scope, start, sessionID, units)
+---@param at number? Finite absolute finish boundary in seconds; nil reads the clock; slow timeline entries reuse this same boundary.
+function Profiler.Finish(scope, start, sessionID, units, at)
 	if not start or not Profiler.Enabled or not scope.enabled or scope.kind ~= "time" or sessionID ~= Profiler.SessionID then return; end
-	local durationMs = (GetTimePreciseSec() - start) * 1000;
+	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
+	local boundary = at or GetTimePreciseSec();
+	local durationMs = (boundary - start) * 1000;
 	if durationMs < 0 or durationMs ~= durationMs or durationMs == math_huge then return; end
 	RecordScope(scope, durationMs, units);
 	if scope.timelineEnabled and durationMs >= Profiler.Config.slowThresholdMs then
-		Profiler.AddTimeline(scope.id, "slow", durationMs);
+		Profiler.AddTimeline(scope.id, "slow", durationMs, nil, boundary);
 	end
 end
 

@@ -187,5 +187,28 @@ p.Reset(); assert(p.Start(30, 4, { include = "runner" })); assert(p.Stop());
 assert(runner.Run == identities[1] and runner.Queue == identities[2] and runner.Reset == identities[3]
 	and app.StartCoroutine == identities[4], "capture selection replaced public function identities");
 
+-- Scheduler scopes and job/timeline records share only coincident boundaries.
+-- A Runner's outer slice still owns separate entry/exit clocks from its function.
+for _, level in ipairs({ 1, 2, 4, 5 }) do
+	app, calls = NewApp(); p, runner = app.Profiler, app.FunctionRunner;
+	runner.SetPerFrameDefault(20);
+	assert(p.Start(30, level, level >= 4 and { include = "runner", slowThresholdMs = 0 } or nil));
+	local before = reads;
+	runner.Run(function() now = now + 0.007; end); Frame();
+	local expected = level == 1 and 2 or (level == 2 and 4 or 5);
+	assert(reads - before == expected, "Runner repeated a shared boundary clock at level " .. level);
+	Contains(p.Report(), "runner.default.slice\t1\t7.000");
+	if level >= 2 then Contains(p.Report(), "runner.default.work\t1\t7.000"); end
+
+	app, calls = NewApp(); p = app.Profiler;
+	assert(p.Start(30, level, level >= 4 and { include = "runner", slowThresholdMs = 0 } or nil));
+	before = reads;
+	app.StartCoroutine("shared-boundary", function() now = now + 0.007; end); Frame();
+	expected = level >= 4 and 3 or 2;
+	assert(reads - before == expected, "Pooled coroutine repeated a shared boundary clock at level " .. level);
+	Contains(p.Report(), "coroutine.slice\t1\t7.000");
+	if level >= 2 then Contains(p.Report(), "coroutine.work\t1\t7.000"); end
+end
+
 print("PASS: capture-boundary Runner/coroutine paths, zero stopped observers, no low-level Jobs calls, retained labels, and in-function session transitions");
 print("SKIP: stock Lua 5.1 cannot yield across xpcall; protected Runner invocation adoption requires WoW's yieldable runtime.");

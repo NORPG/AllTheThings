@@ -77,12 +77,13 @@ end
 ---@param job ATTProfilerJob Job whose scope already passed the module filter.
 ---@param kind string Stable lifecycle event name.
 ---@param durationMs number? Optional observed execution duration in milliseconds.
-local function Timeline(job, kind, durationMs)
+---@param at number? Shared lifecycle boundary in absolute seconds; nil reads the clock only when a timeline event is retained.
+local function Timeline(job, kind, durationMs, at)
 	if job.scope.timelineEnabled then
 		if not job.timelineContext then
 			job.timelineContext = string_format("job=%d origin=%s", job.id, job.origin);
 		end
-		Profiler.AddTimeline(job.scope.id, kind, durationMs, job.timelineContext);
+		Profiler.AddTimeline(job.scope.id, kind, durationMs, job.timelineContext, at);
 	end
 end
 
@@ -91,44 +92,56 @@ end
 ---@param origin string? Explicit stable source label; nil inherits an observed parent scope.
 ---@param queueDepth integer? Runner queue length observed at enqueue time.
 ---@param partial boolean Whether enqueue was not observed in this capture.
+---@param at number? Valid supplied lifecycle boundary; nil reads once if enqueue or its timeline needs a time.
 ---@return ATTProfilerJob? job Retained record; nil after the fixed job budget is exhausted.
-local function New(scope, origin, queueDepth, partial)
+---@return number? boundary Shared enqueue/partial boundary, when this operation needed a clock.
+local function New(scope, origin, queueDepth, partial, at)
 	if #records >= Profiler.Config.jobBudget then dropped = dropped + 1; return; end
+	local boundary = at;
+	if not boundary and (not partial or (scope.timelineEnabled and Profiler.Config.timelineBudget > 0)) then boundary = GetTimePreciseSec(); end
 	local parent = not partial and Current() or nil;
 	local label = not partial and ((type(origin) == "string" and origin) or (parent and parent.scope.id)) or "unknown";
 	label = label or "unknown";
 	local job = {
 		id = #records + 1, sessionID = Profiler.SessionID, scope = scope,
 		origin = label:gsub("[%c]", " "):sub(1, 96), parentID = parent and parent.id,
-		queuedAt = not partial and GetTimePreciseSec() or nil,
+		queuedAt = not partial and boundary or nil,
 		execution = 0, resumes = 0, queueDepth = queueDepth, partial = partial, status = "queued",
 	};
 	---@cast job ATTProfilerJob
 	records[#records + 1] = job;
-	Timeline(job, partial and "partial" or "queued");
-	return job;
+	Timeline(job, partial and "partial" or "queued", nil, boundary);
+	return job, boundary;
 end
 
 ---Observe enqueue without affecting Runner arguments, return values, or execution.
 ---@param scope ATTProfilerScope Registered stable work scope.
 ---@param origin string? Stable caller label; nil inherits the current observed parent.
 ---@param queueDepth integer? Number of queued functions at this boundary.
+---@param at number? Finite absolute enqueue boundary in seconds; nil reads once and shares it with the queued timeline event.
 ---@return ATTProfilerJob? job New record; nil while disabled, filtered, or out of capacity.
-function Jobs.Enqueue(scope, origin, queueDepth)
+function Jobs.Enqueue(scope, origin, queueDepth, at)
 	if not Enabled(scope) then return; end
-	return New(scope, origin, queueDepth, false);
+	-- Finite values subtract to zero; NaN and either infinity do not.
+	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
+	local job = New(scope, origin, queueDepth, false, at);
+	if job then return job; end
 end
 
 ---Open one execution segment, adopting pre-capture work as a partial job when needed.
 ---@param job ATTProfilerJob? Prior enqueue or suspended record; stale-session records are replaced.
 ---@param scope ATTProfilerScope Stable fallback scope when enqueue was not observed.
 ---@param thread thread? Resumed coroutine whose nested scheduling should inherit this context.
----@return ATTProfilerJob? active Current-session record; nil without enabled scope or capacity.
-function Jobs.Begin(job, scope, thread)
+---@param at number? Finite absolute resume boundary in seconds; nil reads once; boundaries before observed enqueue/start are ignored.
+---@return ATTProfilerJob? active Current-session record; nil without enabled scope, capacity, or an ordered valid boundary.
+function Jobs.Begin(job, scope, thread, at)
 	if not Enabled(scope) then return; end
-	if not job or job.sessionID ~= Profiler.SessionID then job = New(scope, nil, nil, true); end
+	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
+	local boundary;
+	if not job or job.sessionID ~= Profiler.SessionID then job, boundary = New(scope, nil, nil, true, at); end
 	if not job or job.status == "completed" or job.status == "failed" or job.status == "canceled" then return; end
-	local now = GetTimePreciseSec();
+	local now = at or boundary or GetTimePreciseSec();
+	if (job.queuedAt and now < job.queuedAt) or (job.startedAt and now < job.startedAt) then return; end
 	if not job.startedAt then
 		job.startedAt = now;
 		if job.queuedAt then job.queueWait = (now - job.queuedAt) * 1000; end
@@ -139,19 +152,26 @@ function Jobs.Begin(job, scope, thread)
 	local key = ContextKey(thread);
 	job.contextKey, job.previousContext = key, contexts[key];
 	contexts[key] = job;
-	Timeline(job, "resume");
+	Timeline(job, "resume", nil, now);
 	return job;
 end
 
 ---Close a segment at yield or function completion; cross-frame waits are excluded.
 ---@param job ATTProfilerJob? Active record; nil or invalidated records are ignored.
 ---@param status ATTProfilerJobStatus? Terminal status; nil records a suspension for another resume.
-function Jobs.Pause(job, status)
+---@param at number? Finite absolute pause boundary in seconds; nil reads once when needed; earlier lifecycle boundaries are ignored.
+function Jobs.Pause(job, status, at)
 	if not job or job.sessionID ~= Profiler.SessionID or not Profiler.Enabled then return; end
 	if job.status == "completed" or job.status == "failed" or job.status == "canceled" or job.status == "incomplete" then return; end
+	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
+	local now = at;
+	if not now and (job.sliceStart or (status and not job.endedAt) or (job.scope.timelineEnabled and Profiler.Config.timelineBudget > 0)) then
+		now = GetTimePreciseSec();
+	end
+	if now and ((job.sliceStart and now < job.sliceStart) or (job.startedAt and now < job.startedAt)
+		or (job.queuedAt and now < job.queuedAt)) then return; end
 	local duration;
 	if job.sliceStart then
-		local now = GetTimePreciseSec();
 		duration = (now - job.sliceStart) * 1000;
 		job.execution = job.execution + duration;
 		job.sliceStart = nil;
@@ -163,9 +183,9 @@ function Jobs.Pause(job, status)
 	end
 	if status then
 		job.status = status;
-		if not job.endedAt and Profiler.Enabled then job.endedAt = GetTimePreciseSec(); end
+		if not job.endedAt then job.endedAt = now; end
 	elseif job.status == "running" then job.status = "suspended"; end
-	if Profiler.Enabled then Timeline(job, status or "yield", duration); end
+	if Profiler.Enabled then Timeline(job, status or "yield", duration, now); end
 end
 
 ---Mark a queued or suspended job canceled without changing its underlying work.

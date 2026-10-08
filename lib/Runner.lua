@@ -179,26 +179,28 @@ end
 ---@return any result First yielded/returned value, or the existing coroutine error.
 local function ResumeProfiledCoroutine(co)
 	local scope = CoroutineScopes[co] or CoroutineScope;
+	if not scope.enabled and not scope.jobsEnabled and not CoroutineSliceScope.enabled then return c_resume(co); end
+	local boundaryStart = GetTimePreciseSec();
 	local job;
 	if scope.jobsEnabled then
-		job = ProfileJobs.Begin(CoroutineJobs and CoroutineJobs[co], scope, co);
+		job = ProfileJobs.Begin(CoroutineJobs and CoroutineJobs[co], scope, co, boundaryStart);
 		if job then
 			if not CoroutineJobs then CoroutineJobs = {}; end
 			CoroutineJobs[co] = job;
 		end
 	end
 	local profileStart, profileSession, sliceStart, sliceSession;
-	if scope.enabled then profileStart, profileSession = Profiler.Begin(scope); end
-	if CoroutineSliceScope.enabled then sliceStart, sliceSession = Profiler.Begin(CoroutineSliceScope); end
+	if scope.enabled then profileStart, profileSession = Profiler.Begin(scope, boundaryStart); end
+	if CoroutineSliceScope.enabled then sliceStart, sliceSession = Profiler.Begin(CoroutineSliceScope, boundaryStart); end
 	local ok, result = c_resume(co);
-	if profileStart and profileSession == Profiler.SessionID and Profiler.Enabled then
-		Profiler.Finish(scope, profileStart, profileSession);
-	end
-	if sliceStart and sliceSession == Profiler.SessionID and Profiler.Enabled then
-		Profiler.Finish(CoroutineSliceScope, sliceStart, sliceSession);
-	end
-	if job and job.sessionID == Profiler.SessionID and Profiler.Enabled then
-		ProfileJobs.Pause(job, not ok and "failed" or (result == false and "completed" or nil));
+	local validWork = profileStart and profileSession == Profiler.SessionID and Profiler.Enabled;
+	local validSlice = sliceStart and sliceSession == Profiler.SessionID and Profiler.Enabled;
+	local validJob = job and job.sessionID == Profiler.SessionID and Profiler.Enabled;
+	if validWork or validSlice or validJob then
+		local boundaryEnd = GetTimePreciseSec();
+		if validWork then Profiler.Finish(scope, profileStart, profileSession, nil, boundaryEnd); end
+		if validSlice then Profiler.Finish(CoroutineSliceScope, sliceStart, sliceSession, nil, boundaryEnd); end
+		if validJob then ProfileJobs.Pause(job, not ok and "failed" or (result == false and "completed" or nil), boundaryEnd); end
 	end
 	return ok, result;
 end
@@ -304,23 +306,30 @@ local function CreateRunner(name, profileModule)
 	local ActiveScope, ActiveStart, ActiveSession;
 	local RunnerCoroutine;
 	local QueueIndex, RunIndex = 1, 1;
-	---Resume timing for the active function after a between-frame wait.
-	local function BeginActive()
+	---Resume timing and job execution at the same work-segment boundary.
+	---@param at number? Existing resume boundary in seconds; nil reads this function's own entry boundary.
+	local function BeginActive(at)
 		---@cast ActiveScope ATTProfilerScope
+		if not ActiveScope.enabled and not ActiveScope.jobsEnabled then return; end
+		at = at or GetTimePreciseSec();
 		if ActiveScope.jobsEnabled then
-			ProfileState.activeJob = ProfileJobs.Begin(ProfileState.activeJob, ActiveScope, RunnerCoroutine);
+			ProfileState.activeJob = ProfileJobs.Begin(ProfileState.activeJob, ActiveScope, RunnerCoroutine, at);
 		end
-		if ActiveScope.enabled then ActiveStart, ActiveSession = Profiler.Begin(ActiveScope); end
+		if ActiveScope.enabled then ActiveStart, ActiveSession = Profiler.Begin(ActiveScope, at); end
 	end
 	---Close the current execution segment without including later scheduling waits.
 	---@param status ATTProfilerJobStatus? Completion/error state; nil indicates a yielded segment.
-	local function PauseActive(status)
+	---@param at number? Existing resume boundary in seconds; nil reads this function's own exit boundary.
+	local function PauseActive(status, at)
 		---@cast ActiveScope ATTProfilerScope
-		if ActiveStart and ActiveSession == Profiler.SessionID and Profiler.Enabled then
-			Profiler.Finish(ActiveScope, ActiveStart, ActiveSession);
-		end
+		local validWork = ActiveStart and ActiveSession == Profiler.SessionID and Profiler.Enabled;
 		local job = ProfileState.activeJob;
-		if job and job.sessionID == Profiler.SessionID and Profiler.Enabled then ProfileJobs.Pause(job, status); end
+		local validJob = job and job.sessionID == Profiler.SessionID and Profiler.Enabled;
+		if validWork or validJob then
+			at = at or GetTimePreciseSec();
+			if validWork then Profiler.Finish(ActiveScope, ActiveStart, ActiveSession, nil, at); end
+			if validJob then ProfileJobs.Pause(job, status, at); end
+		end
 		ActiveStart, ActiveSession = nil, nil;
 	end
 	ProfileState.reset = function()
@@ -384,7 +393,11 @@ local function CreateRunner(name, profileModule)
 		local counter = ProfileCallScopes[ActiveScope] or ProfileCallsScope;
 		if counter.enabled then Profiler.CountScope(counter); end
 		BeginActive();
-		InvokePlain(func, params, single);
+		-- Keep the measured path direct rather than adding a second invocation wrapper.
+		local succeeded;
+		if params then succeeded = xpcall(func, err, unpack(params));
+		else succeeded = xpcall(func, err, single); end
+		if ActiveStart or ProfileState.activeJob then PauseActive(succeeded and "completed" or "failed"); end
 	end
 	---Measure one native resume, excluding time spent waiting for its next frame.
 	---@param co thread Existing Runner coroutine; no new protected call is introduced.
@@ -392,13 +405,15 @@ local function CreateRunner(name, profileModule)
 	---@return any result First yielded/returned value or the existing coroutine error.
 	local function ResumeProfiled(co)
 		local profileStart, profileSession;
-		if ProfileSliceScope.enabled then profileStart, profileSession = Profiler.Begin(ProfileSliceScope); end
-		if ActiveScope then BeginActive(); end
+		local boundaryStart = ProfileSliceScope.enabled and GetTimePreciseSec() or nil;
+		if boundaryStart then profileStart, profileSession = Profiler.Begin(ProfileSliceScope, boundaryStart); end
+		if ActiveScope then BeginActive(boundaryStart); end
 		local ok, result = c_resume(co);
-		if ActiveStart or ProfileState.activeJob then PauseActive(not ok and "failed" or nil); end
-		if profileStart and profileSession == Profiler.SessionID and Profiler.Enabled then
-			Profiler.Finish(ProfileSliceScope, profileStart, profileSession);
-		end
+		local validSlice = profileStart and profileSession == Profiler.SessionID and Profiler.Enabled;
+		local job = ProfileState.activeJob;
+		local boundaryEnd = Profiler.Enabled and (validSlice or ActiveStart or (job and job.sliceStart)) and GetTimePreciseSec() or nil;
+		if ActiveStart or job then PauseActive(not ok and "failed" or nil, boundaryEnd); end
+		if validSlice then Profiler.Finish(ProfileSliceScope, profileStart, profileSession, nil, boundaryEnd); end
 		return ok, result;
 	end
 	local InvokeFunction, ResumeRunner = InvokePlain, c_resume;
