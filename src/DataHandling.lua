@@ -42,6 +42,20 @@ end
 -- nil - the check doesn't result in a visible outcome
 -- true - the check resulted in a visible outcome
 -- 2 - the check resulted in a visible outcome and should force the parent to also persist visibility
+---Visibility results which can keep an otherwise zero-total record in the list.
+---@enum ATTVisibilityResult
+local VisibilityResult = {
+	---Show this record and preserve the visibility of its containing groups.
+	ShowWithParents = 2,
+}
+---Show a tracked quest's unavailable status without adding it to collection progress.
+---@param group {unavailableReason: ATTQuestUnavailableReason?} Quest-backed record being filtered for display.
+---@return ATTVisibilityResult? visibility Nil when no unavailable status needs to be displayed.
+local function Visibility_QuestUnavailable(group)
+	if group.unavailableReason == app.QuestUnavailableReason.CompletedByOtherCharacter then
+		return VisibilityResult.ShowWithParents
+	end
+end
 local function Visibility_ForceShow(group)
 	if group.forceShow then
 		group.forceShow = nil
@@ -96,6 +110,7 @@ local function Visibility_LootMode(group)
 	end
 end
 if app.__perf then
+	Visibility_QuestUnavailable = app.__perf.CaptureFunction(Visibility_QuestUnavailable, "Visibility_QuestUnavailable", "app.Modules.DataHandling")
 	Visibility_ForceShow = app.__perf.CaptureFunction(Visibility_ForceShow, "Visibility_ForceShow", "app.Modules.DataHandling")
 	Visibility_Total_Group = app.__perf.CaptureFunction(Visibility_Total_Group, "Visibility_Total_Group", "app.Modules.DataHandling")
 	Visibility_Total_Thing = app.__perf.CaptureFunction(Visibility_Total_Thing, "Visibility_Total_Thing", "app.Modules.DataHandling")
@@ -108,6 +123,7 @@ if app.__perf then
 end
 local GroupVisibilityChecks = {
 	Visibility_ForceShow,
+	Visibility_QuestUnavailable,
 	Visibility_Total_Group,
 	Visibility_Cost,
 	Visibility_Upgrade,
@@ -116,6 +132,7 @@ local GroupVisibilityChecks = {
 }
 local ThingVisibilityChecks = {
 	Visibility_ForceShow,
+	Visibility_QuestUnavailable,
 	Visibility_Total_Thing,
 	Visibility_Cost,
 	Visibility_Upgrade,
