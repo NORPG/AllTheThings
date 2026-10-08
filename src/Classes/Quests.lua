@@ -2021,26 +2021,30 @@ app.AddEventHandler("OnLoad", function()
 		end
 	end
 
+	---Add the recorded once-per-account completion to a quest tooltip.
+	---@param tooltipData any Information-type context supplied by the tooltip builder.
+	---@param reference {questID: QuestID?} Quest record being described.
+	---@param tooltipInfo {left: string, right: string?, color: string?, wrap: boolean?}[] Tooltip lines to append.
+	local function AddOncePerAccountQuestInfo(tooltipData, reference, tooltipInfo)
+		if not reference.questID then return end
+		local completingCharacterGUID = OneTimeQuests[reference.questID]
+		if completingCharacterGUID then
+			local completingCharacter = ATTCharacterData[completingCharacterGUID]
+			tooltipInfo[#tooltipInfo + 1] = {
+				left = L.QUEST_ONCE_PER_ACCOUNT,
+				right = L.COMPLETED_BY:format(completingCharacter and completingCharacter.text or UNKNOWN),
+			}
+		elseif completingCharacterGUID == false then
+			tooltipInfo[#tooltipInfo + 1] = {
+				left = L.QUEST_ONCE_PER_ACCOUNT,
+				color = "ffcf271b",
+			}
+		end
+	end
 	app.Settings.CreateInformationType("OneTimeQuest", {
 		text = "OneTimeQuest",
 		priority = 11001, HideCheckBox = true, ForceActive = true,
-		Process = function(t, reference, tooltipInfo)
-			if reference.questID then
-				local oneTimeQuestCharGuid = OneTimeQuests[reference.questID];
-				if oneTimeQuestCharGuid then
-					local charData = ATTCharacterData[oneTimeQuestCharGuid];
-					tooltipInfo[#tooltipInfo + 1] = {
-						left = L.QUEST_ONCE_PER_ACCOUNT,
-						right = L.COMPLETED_BY:format(charData and charData.text or UNKNOWN),
-					}
-				elseif oneTimeQuestCharGuid == false then
-					tooltipInfo[#tooltipInfo + 1] = {
-						left = L.QUEST_ONCE_PER_ACCOUNT,
-						color = "ffcf271b",
-					}
-				end
-			end
-		end,
+		Process = AddOncePerAccountQuestInfo,
 	})
 	app.Settings.CreateInformationType("QuestPreReqs", {
 		text = "QuestPreReqs",
