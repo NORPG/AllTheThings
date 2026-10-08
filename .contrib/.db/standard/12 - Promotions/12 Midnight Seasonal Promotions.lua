@@ -204,7 +204,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },	-- Removed 12th October 2026
 				["u"] = REAL_MONEY,
 			}),
-			iensemble(263294, {	-- Cuddly Gold-Colored Grrgle (DECOR!)
+			i(263294, {	-- Cuddly Gold-Colored Grrgle (DECOR!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 13th, 10:00 a.m. & November 3rd, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_1_5, "removed 12.1.5.99999" },
 			}),
