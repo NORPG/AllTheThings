@@ -34,8 +34,11 @@ namespace ATT.DB.Types
             (_flags & TypeFlags.ProgressBar) == TypeFlags.ProgressBar || Amount > 1;
 
         /// <summary>
-        /// Represents if this CriteriaTree is useful to process by way of indicating the sub-CriteriaTree are ALL (4) or ANY (8)
+        /// Represents if this CriteriaTree is useful to process by way of indicating the sub-CriteriaTree are
+        /// ALL (4)
+        /// ANY (8)
+        /// COUNT_DIRECT_CHILDREN (7) & Amount > 0
         /// </summary>
-        public bool IsUseful() => Operator == 4 || Operator == 8;
+        public bool IsUseful() => Operator == 4 || Operator == 8 || (Operator == 7 & Amount > 0);
     }
 }

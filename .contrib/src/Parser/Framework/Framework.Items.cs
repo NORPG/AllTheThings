@@ -944,7 +944,13 @@ namespace ATT
                 // Any filter types which should specifically not have a SourceID attached even if Blizzard wants them to
                 if (data.TryGetValue("f", out long f))
                 {
-                    if (!((f > 0 && f < 36) || f == 57) || f == 51 || f == 52)
+                    var filter = (Objects.Filters)f;
+                    if (
+                        !((filter > Objects.Filters.Invalid && filter < Objects.Filters.Thrown)
+                            || filter == Objects.Filters.ProfessionEquipment
+                            || filter == Objects.Filters.Quest)
+                        || filter == Objects.Filters.Ring
+                        || filter == Objects.Filters.Neck)
                     {
 #pragma warning disable CS0162 // Unreachable code detected
                         if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
@@ -1083,6 +1089,19 @@ namespace ATT
 #pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID} ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID})");
 #pragma warning restore CS0162 // Unreachable code detected
+
+                    // special cases:
+                    switch ((Objects.Filters)f)
+                    {
+                        case Objects.Filters.Quest:
+                            if (!data.ContainsKey("collectible"))
+                            {
+                                data["collectible"] = false;
+                                LogWarn($"Assuming collectible=false for Quest Item {sourceIDKey} which determined SourceID={sourceID}. Please specify explicitly in the data based on in-game testing.", data);
+                            }
+                            break;
+                    }
+
                     data["sourceID"] = sourceID;
                     CaptureForSOURCED(data, "sourceID", sourceID);
                     return;
