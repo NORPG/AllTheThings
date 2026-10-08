@@ -26,7 +26,6 @@ local GetTimePreciseSec, running, string_format, table_sort, type
 ---@field contextKey thread|table? Coroutine key whose current context refers to this job.
 ---@field previousContext ATTProfilerJob? Context restored after this execution segment.
 ---@field contextText string? Lazily cached current-job label, including its immutable parent ID.
----@field timelineContext string? Lazily cached lifecycle label containing the immutable job ID and origin.
 
 ---Optional Level 4 job observations; disabled calls never read the clock or allocate records.
 ---@class ATTProfilerJobs
@@ -54,7 +53,13 @@ local function Current(thread)
 	if job and job.sessionID == Profiler.SessionID and Profiler.Enabled then return job; end
 end
 
----Expose bounded contextual text for timeline samples captured by the core profiler.
+---Expose the current record only to internal observers that copy its bounded label fields.
+---@return ATTProfilerJob? job Read-only current-session record, or nil outside observed execution.
+function Profiler.GetCurrentContextJob()
+	return Current();
+end
+
+---Expose bounded contextual text on demand without formatting unused timeline labels.
 ---@return string? context Current job ID, origin, and optional parent ID; nil outside observed work.
 function Profiler.GetCurrentContext()
 	local job = Current();
@@ -80,10 +85,7 @@ end
 ---@param at number? Shared lifecycle boundary in absolute seconds; nil reads the clock only when a timeline event is retained.
 local function Timeline(job, kind, durationMs, at)
 	if job.scope.timelineEnabled then
-		if not job.timelineContext then
-			job.timelineContext = string_format("job=%d origin=%s", job.id, job.origin);
-		end
-		Profiler.AddTimeline(job.scope.id, kind, durationMs, job.timelineContext, at);
+		Profiler.AddTimeline(job.scope.id, kind, durationMs, nil, at, job);
 	end
 end
 

@@ -346,7 +346,7 @@ jobs.Pause(parent);
 assert(p.GetCurrentContext() == nil and p.Stop());
 assert(jobs.Enqueue(eventScope) == nil and p.GetCurrentContext() == nil);
 
--- Timeline resume/yield entries reuse the immutable lifecycle label within one job.
+-- Timeline lifecycle labels are formatted by Report instead of during capture.
 formatCalls = 0;
 string.format = function(...) formatCalls = formatCalls + 1; return nativeFormat(...); end;
 app = NewApp(); p = app.Profiler;
@@ -356,16 +356,16 @@ eventScope = p.RegisterScope("event.timeline", "events", 2, "time");
 jobs = app.ProfilerJobs;
 formatsBefore = formatCalls;
 parent = assert(jobs.Enqueue(eventScope, "alpha"));
-assert(formatCalls == formatsBefore + 1, "first timeline label was not created lazily");
+assert(formatCalls == formatsBefore, "enqueue formatted a timeline label during capture");
 for resume = 1, 20 do
 	assert(jobs.Begin(parent, eventScope) == parent);
 	now = now + 0.001;
 	jobs.Pause(parent);
 end
 assert(parent.resumes == 20 and math.abs(parent.execution - 20) < 0.000001);
-assert(formatCalls == formatsBefore + 1, "resume/yield reformatted an immutable timeline label");
+assert(formatCalls == formatsBefore, "resume/yield formatted a timeline label during capture");
 assert(p.Stop());
-assert(formatCalls == formatsBefore + 1, "stop reformatted an immutable timeline label");
+assert(formatCalls == formatsBefore, "stop formatted a timeline label before Report");
 report = p.Report();
 Contains(report, "job=1 origin=alpha");
 assert(p.Start(30, 5, { include = "events" }));

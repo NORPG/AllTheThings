@@ -69,6 +69,7 @@ end
 ---@field Enabled boolean Whether Record and Count currently accept samples.
 ---@field Config ATTProfilerConfig? Copied session configuration; callers must treat this table and its filters as read-only.
 ---@field GetCurrentContext fun(): string? Optional coroutine-local job context provider installed by Runner instrumentation.
+---@field GetCurrentContextJob fun(): ATTProfilerJob? Optional internal provider of the current read-only job; timeline insertion copies only its bounded label fields.
 ---@field SessionID integer Generation incremented by Reset and every successful Start.
 local Profiler = { Enabled = false, SessionID = 0 };
 app.Profiler = Profiler;
@@ -83,6 +84,17 @@ local scopeCount, rejectedScopes = 0, 0;
 local disabledScope = { id = "profiler.registry.full", module = "profiler", minLevel = 6,
 	kind = "time", enabled = false, jobsEnabled = false, timelineEnabled = false, sampleSeen = 0 };
 local sessionListeners, reportProviders = {}, {};
+---One reusable timeline slot contains values only; it never owns a job or coroutine.
+---@class ATTProfilerTimelineEntry
+---@field at number Milliseconds from capture start to the shared event boundary.
+---@field id string Stable operation ID, limited to 96 bytes.
+---@field kind string Event name, limited to 32 bytes.
+---@field duration number? Optional execution/lifecycle duration in milliseconds.
+---@field context string? Explicit or legacy-provider text, limited to 192 bytes.
+---@field jobID integer? Copied session-local job ID for report-time label formatting.
+---@field origin string? Copied sanitized job origin, limited to 96 bytes by job creation.
+---@field parentID integer? Copied parent ID for current-context samples; lifecycle labels omit it.
+---@type ATTProfilerTimelineEntry[], integer, integer, integer
 local timeline, timelineNext, timelineCount, timelineOverwritten = {}, 1, 0, 0;
 local stackRecords, stackBytes, stackDropped, sampledCalls, skippedCalls, extensionErrors = {}, 0, 0, 0, 0, 0;
 ---@type number?, number?, number?, string?
@@ -389,24 +401,40 @@ local function CurrentContext()
 	end
 end
 
----Append an ordered Level 5 diagnostic event to the bounded circular timeline.
+---Append a Level 5 event, allocating at most one table per ring slot in this capture.
+---Job label scalars are copied at insertion and formatted only when a report is requested.
 ---@param id string Stable operation ID or registered scope ID, at most 96 bytes.
 ---@param kind string Short event type such as slow, queued, complete, failed, or canceled.
 ---@param durationMs number? Finite nonnegative execution or lifecycle duration in milliseconds.
----@param context string? Optional job-origin text, truncated to 192 bytes; nil uses the active job context.
+---@param context string? Explicit bounded text; nil copies current job metadata, falling back to the legacy string provider when no job provider exists.
 ---@param at number? Finite absolute clock boundary in seconds; nil reads the current clock.
-function Profiler.AddTimeline(id, kind, durationMs, context, at)
+---@param contextJob ATTProfilerJob? Internal current-session lifecycle record whose bounded ID/origin are copied; its thread, payload, and mutable status are never retained.
+function Profiler.AddTimeline(id, kind, durationMs, context, at, contextJob)
 	if not Profiler.IsLevelEnabled(5) or Profiler.Config.timelineBudget == 0 then return; end
 	if type(id) ~= "string" or #id == 0 or #id > MAX_ID_BYTES or type(kind) ~= "string" then return; end
 	if durationMs ~= nil and (type(durationMs) ~= "number" or durationMs < 0 or durationMs ~= durationMs or durationMs == math_huge) then return; end
 	-- Finite values subtract to zero; NaN and either infinity do not.
 	if at ~= nil and (type(at) ~= "number" or at - at ~= 0) then return; end
 	local boundary = at or GetTimePreciseSec();
-	local entry = { at = (boundary - startedAt) * 1000, id = id, kind = kind:sub(1, 32),
-		duration = durationMs, context = type(context) == "string" and context:gsub("[\r\n\t]", " "):sub(1, 192) or CurrentContext() };
+	local text, jobID, origin, parentID;
+	if type(context) == "string" then
+		text = context:gsub("[\r\n\t]", " "):sub(1, 192);
+	else
+		local job, includeParent = contextJob, false;
+		if not job and Profiler.GetCurrentContextJob then job, includeParent = Profiler.GetCurrentContextJob(), true; end
+		if type(job) == "table" and job.sessionID == Profiler.SessionID then
+			jobID, origin, parentID = job.id, job.origin, includeParent and job.parentID or nil;
+		elseif not contextJob and not Profiler.GetCurrentContextJob then text = CurrentContext(); end
+	end
+	-- Resolve optional providers before overwriting a retained slot, preserving the
+	-- previous entry if a legacy provider throws an error during insertion.
+	local entry = timeline[timelineNext];
+	if not entry then entry = {}; timeline[timelineNext] = entry; end
+	entry.at, entry.id, entry.kind = (boundary - startedAt) * 1000, id, kind:sub(1, 32);
+	entry.duration, entry.context = durationMs, text;
+	entry.jobID, entry.origin, entry.parentID = jobID, origin, parentID;
 	if timelineCount < Profiler.Config.timelineBudget then timelineCount = timelineCount + 1;
 	else timelineOverwritten = timelineOverwritten + 1; end
-	timeline[timelineNext] = entry;
 	timelineNext = timelineNext % Profiler.Config.timelineBudget + 1;
 end
 
@@ -773,8 +801,13 @@ function Profiler.Report()
 			local first = timelineCount == config.timelineBudget and timelineNext or 1;
 			for offset = 0, timelineCount - 1 do
 				local entry = timeline[(first + offset - 1) % config.timelineBudget + 1];
+				local context = entry.context;
+				if entry.jobID then
+					context = string_format("job=%d origin=%s%s", entry.jobID, entry.origin,
+						entry.parentID and (" parent=" .. entry.parentID) or "");
+				end
 				lines[#lines + 1] = string_format("%.3f\t%s\t%s\t%s\t%s", entry.at, entry.kind, entry.id,
-					entry.duration and string_format("%.3f", entry.duration) or "-", entry.context or "-");
+					entry.duration and string_format("%.3f", entry.duration) or "-", context or "-");
 			end
 		end
 	end
