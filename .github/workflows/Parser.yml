@@ -5,21 +5,40 @@ on:
   # Triggers the workflow on each push event
   push:
     branches:
-      - '*' # Trigger on all branches
+      - '**' # Trigger on all branches, including names containing '/'
     tags-ignore:
       - '*' # Ignore all tags
     paths:
       - '.contrib/.db/**'
+      - '.contrib/src/Parser/**'
+      - '.contrib/.tools/**'
+      - '**/*.lua'
+      - '**/*.xml'
+      - '**/*.toc'
+      - '.pkgmeta'
+      - '.github/scripts/**'
+      - 'tests/**'
       - '.github/workflows/Parser.yml'
+      - '.github/workflows/Release.yml'
   # Triggers the workflow on each pull request event
   pull_request:
     paths:
       - '.contrib/.db/**'
+      - '.contrib/src/Parser/**'
+      - '.contrib/.tools/**'
+      - '**/*.lua'
+      - '**/*.xml'
+      - '**/*.toc'
+      - '.pkgmeta'
+      - '.github/scripts/**'
+      - 'tests/**'
       - '.github/workflows/Parser.yml'
+      - '.github/workflows/Release.yml'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
+  contents: read
   pull-requests: read
 
 jobs:
@@ -41,7 +60,29 @@ jobs:
             non_forever:
               - '.contrib/.db/**'
               - '!.contrib/.db/forever/**'
+              - '.contrib/src/Parser/**'
+              - '.contrib/.tools/**'
+              - '**/*.lua'
+              - '**/*.xml'
+              - '**/*.toc'
+              - '.pkgmeta'
+              - '.github/scripts/**'
+              - 'tests/**'
               - '.github/workflows/Parser.yml'
+              - '.github/workflows/Release.yml'
+            parser_source:
+              - '.contrib/src/Parser/**'
+
+      - name: Build changed Parser sources
+        if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.parser_source == 'true'
+        shell: pwsh
+        run: |
+          nuget restore ../src/Parser/packages.config -PackagesDirectory ../src/Parser/packages
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $msbuild = & "${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find 'MSBuild/**/Bin/MSBuild.exe' | Select-Object -First 1
+          if (-not $msbuild) { throw 'MSBuild was not found' }
+          & $msbuild ../src/Parser/Parser.csproj /p:Configuration=Release /p:Platform=x64
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - parallel:
         - name: Database Parser for Retail
@@ -152,3 +193,33 @@ jobs:
           name: db  # Artifact name
           path: db/  # File path to upload
           retention-days: 7
+
+  validate-package:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 300
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: db
+          path: db
+
+      - name: Install Lua 5.1
+        run: sudo apt-get update && sudo apt-get install -y lua5.1
+
+      - name: Test package validation
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Package without publishing
+        uses: BigWigsMods/packager@457c47679b7b454dcf7ca44127c647116bc31dd8
+        with:
+          args: -d
+
+      - name: Validate final ZIPs
+        run: python3 .github/scripts/validate-package.py .release/*.zip
