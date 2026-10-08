@@ -529,8 +529,6 @@ root(ROOTS.Unsorted, {
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
-			i(276622),	-- De-cryption Amulet
-			i(276624),	-- Overflowing Hash'ura Trove
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
 			i(277266),	-- The First Troll Legend
@@ -694,7 +692,6 @@ root(ROOTS.Unsorted, {
 			i(279623),	-- Nebulous Voidcache: Murder Row
 			i(279624),	-- Nebulous Voidcache:Temple of Sethraliss
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
-			i(280131),	-- Nebulous Voidcache: Prey
 			i(280102),	-- Handful of Corrosive Coins
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum

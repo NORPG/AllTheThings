@@ -140,6 +140,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276104, {	-- Aspiring Preyhunter's Chest
 							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
 						}),
+						-- Bonus roll
+						i(280131, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Prey
 					}),
 					-- Weekly Bonus Reputations
 					-- Season 2 Prey

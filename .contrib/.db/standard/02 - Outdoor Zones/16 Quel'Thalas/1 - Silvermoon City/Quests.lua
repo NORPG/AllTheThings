@@ -146,6 +146,33 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_1_0 },
 				["qi"] = 265695,	-- Elementary Voidcore Shard (QI!)
 			}),
+			q(97981, {	-- Umbral Blessings of the Catalyst
+				["sourceQuest"] = 97978,	-- Prismatic Potential
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(98016, {	-- Nebulous Voidcores: Gold
+				["sourceQuest"] = 97981,	-- Umbral Blessings of the Catalyst
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["repeatable"] = true,
+			}),
+			q(98012, {	-- Nebulous Voidcores: Veteran Mistcrest
+				["sourceQuest"] = 97981,	-- Umbral Blessings of the Catalyst
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["repeatable"] = true,
+			}),
+			q(98015, {	-- Nebulous Voidcores: Voidlight Marl
+				["sourceQuest"] = 97981,	-- Umbral Blessings of the Catalyst
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["repeatable"] = true,
+			}),
 		}),
 		-- PVP 4 Part Quest
 		n(QUESTS, sharedData({
