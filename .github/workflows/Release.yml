@@ -167,9 +167,19 @@ jobs:
 
       # once cloned, we just run the GitHub Action for the packager project
       - name: Package and release
+        id: package
         uses: BigWigsMods/packager@master
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
           #WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
           WAGO_API_TOKEN: ${{ secrets.WAGO_API_KEY }}
+
+      - name: Verify GitHub release assets
+        id: verify_github_assets
+        if: always() && steps.package.outcome != 'skipped' && startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 .github/scripts/verify-release-assets.py --release-directory .release --tag "$RELEASE_TAG" --repository "$GITHUB_REPOSITORY"
