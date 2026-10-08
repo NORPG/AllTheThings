@@ -2811,9 +2811,7 @@ root(ROOTS.Unsorted, {
 			i(165879),	-- Briny Salt \\ Alkalescent Salt
 			i(165881),	-- Outpost Upgrade
 			i(165882),	-- Mission Report
-			i(165945),	-- Investigation Results
 			i(166231),	-- Player Experience
-			i(166243),	-- Investigation Results
 			i(166246),	-- Highborne Relic
 			i(166252),	-- Looted Titan Relic
 			i(166253),	-- Mana Crystal

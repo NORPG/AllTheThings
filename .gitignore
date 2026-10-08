@@ -44,4 +44,4 @@ __pycache__
 .contrib/.tools/Wago/
 SavedVariables.lua
 .contrib/.tools/ATT-ERROR-FILE.txt
-.contrib/.tools/log_debug.txt
+.contrib/.tools/**/*debug.txt

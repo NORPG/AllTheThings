@@ -3910,7 +3910,8 @@ namespace ATT
                         {
                             if (!questSource.TryGetValue("qss", out object qssObj) || !qssObj.AsTypedEnumerable<long>().Contains(itemID))
                             {
-                                LogDebugWarn($"Quest {questID} is Sourced in ATT but does not have Item {itemID} listed as a Quest Starter (qs).", data);
+                                LogDebug($"INFO: Adding Item {itemID} as a Quest Starter (qs) for Quest {questID} due to Item SpellEffect {ToJSON(spellEffect)}", data);
+                                Objects.Merge(questSource, "qs", itemID);
                             }
                         }
 

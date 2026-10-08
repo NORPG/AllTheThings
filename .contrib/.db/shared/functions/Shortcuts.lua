@@ -1094,7 +1094,7 @@ end
 bubbleDownRepSkip = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
-		groups = bubbleDown({["minReputation"] = {rep, i+3}}, groups)
+		groups = bubbleDownFiltered({["minReputation"] = {rep, i+3}},FILTERFUNC_NoheaderID,groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
@@ -1108,7 +1108,7 @@ end
 bubbleDownRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
-		groups = bubbleDown({["minReputation"] = {rep, i}}, groups)
+		groups = bubbleDownFiltered({["minReputation"] = {rep, i}},FILTERFUNC_NoheaderID,groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
@@ -1129,7 +1129,7 @@ local classicRepsMap = {
 bubbleDownClassicRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
-		groups = bubbleDown({["minReputation"] = {rep, classicRepsMap[i]}}, groups)
+		groups = bubbleDownFiltered({["minReputation"] = {rep, classicRepsMap[i]}},FILTERFUNC_NoheaderID,groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
