@@ -75,6 +75,16 @@ local function GetCatalystIcon(data, iconOnly)
 		return L[iconOnly and "CATALYST_ICON" or "CATALYST_TEXT"];
 	end
 end
+local UnavailableQuestIcon = "|T" .. app.asset("status-unobtainable") .. ":0|t"
+---Return the quest's character availability status for a row or tooltip.
+---@param data { unavailableReason: ATTQuestUnavailableReason? } Quest whose character availability is being displayed.
+---@param iconOnly boolean? Whether to return only the status icon.
+---@return string? availabilityStatus Localized status text or icon, or nil when the quest is available.
+local function GetUnavailableQuestIcon(data, iconOnly)
+	if data.unavailableReason == app.QuestUnavailableReason.CompletedByOtherCharacter then
+		return iconOnly and UnavailableQuestIcon or L.QUEST_UNAVAILABLE_ON_CHARACTER
+	end
+end
 local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		local collected = data.collected
@@ -176,11 +186,11 @@ local function GetProgressTextForRow(data, forceTracking)
 	if statistic then
 		__Text[#__Text + 1] = "["..statistic.."]"
 	end
-	-- Collectible
-	local stateIcon = GetCollectibleIcon(data, true)
+	-- Character availability, then collection
+	local stateIcon = GetUnavailableQuestIcon(data, true) or GetCollectibleIcon(data, true)
 	if stateIcon then
 		__Text[#__Text + 1] = stateIcon
-		-- don't need to force tracking icon since it's a collectible Thing directly
+		-- Availability and collection states already describe this Thing
 		forceTracking = nil
 	end
 	-- Container
@@ -237,13 +247,14 @@ local function GetProgressTextForTooltip(data)
 	if icon then
 		__Text[#__Text + 1] = icon
 	end
-	-- Collectible
-	local stateIcon = GetCollectibleIcon(data, iconOnly)
+	-- Character availability, then collection
+	local unavailableIcon = GetUnavailableQuestIcon(data, iconOnly)
+	local stateIcon = unavailableIcon or GetCollectibleIcon(data, iconOnly)
 	if stateIcon then
 		__Text[#__Text + 1] = stateIcon
 	end
 	-- Saved (only certain data types)
-	if data.npcID then
+	if data.npcID and not unavailableIcon then
 		stateIcon = GetTrackableIcon(data, iconOnly, true)
 		if stateIcon then
 			__Text[#__Text + 1] = stateIcon
