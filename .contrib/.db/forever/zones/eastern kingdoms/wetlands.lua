@@ -67,6 +67,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(98190, {	-- A Friend of the Family
+				["sourceQuest"] = 98189,	-- Return the Statuette (2/2)
+				["qg"] = 2104,	-- Captain Stoutfist
+				["qi"] = 279595,	-- Menethil Statuette
+				["coord"] = { 9.8, 57.4, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+			}),
 			q(304, {	-- A Grim Task
 				["qg"] = 1071,	-- Longbraid the Grim
 				["coord"] = { 49.8, 18.3, MAP.WETLANDS },
@@ -135,17 +145,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2263),	-- Phytoblade
 				},
 			}),
-			q(98208, {	-- Bloom of the Heavens
+			q(98208, {	-- Bloom of the Heavens (1/2)
 				["qg"] = 270844,	-- Sylessa Duskwhisper
 				["coord"] = { 8.0, 55.9, MAP.WETLANDS },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["lvl"] = 22,
 				["groups"] = {
 					objective(1, {	-- Nord'el
-						["provider"] = { "i", 279915 },	-- Nord'el
+						["providers"] = {
+							{ "i", 279915 },	-- Nord'el
+							{ "o", 670962 },	-- Nord'el
+						},
+						["coord"] = { 12.2, 63.8, MAP.WETLANDS },
 					}),
 					i(281318),	-- Bouquet of Auberdine Flowers
 				},
+			}),
+			q(98209, {	-- Bloom of the Heavens (2/2)
+				["sourceQuest"] = 98208,	-- Bloom of the Heavens (1/2)
+				["qg"] = 270844,	-- Sylessa Duskwhisper
+				["qi"] = 279924,	-- Nord'el
+				["coord"] = { 8.0, 55.9, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.DARKSHORE },
+				["lvl"] = 22,
 			}),
 			q(279, {	-- Claws from the Deep
 				["qg"] = 1242,	-- Karl Boran
@@ -415,27 +438,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 23,
 			}),
-			q(98197, {	-- Spoils of War
-				["qg"] = 2086,	-- Valstag Ironjaw
-				["coord"] = { 10.1, 56.8, MAP.WETLANDS },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 18,
-				["groups"] = {
-					objective(1, {	-- 0/6 Khaz Modan Timber
-						["provider"] = { "i", 279821 },	-- Khaz Modan Timber
-					}),
-					objective(2, {	-- 0/30 Khaz Modan Iron
-						["provider"] = { "i", 279822 },	-- Khaz Modan Iron
-					}),
-				},
-			}),
-			q(286, {	-- Return the Statuette
+			q(286, {	-- Return the Statuette (1/2)
 				["sourceQuest"] = 285,	-- Search More Hovels
-				["providers"] = {
-					{ "o", 259 },	-- Half-buried Barrel
-					{ "i", 2625 },	-- Menethil Statuette
-				},
+				["provider"] = { "o", 259 },	-- Half-buried Barrel
+				["qi"] = 2625,	-- Menethil Statuette
 				["coord"] = { 14.0, 34.8, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
@@ -444,12 +450,44 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2949),	-- Mariner Boots
 				},
 			}),
+			q(98189, {	-- Return the Statuette (2/2)
+				["sourceQuest"] = 286,	-- Return the Statuette (1/2)
+				["qg"] = 1242,	-- Karl Boran
+				["qi"] = 279589,	-- Menethil Statuette
+				["coord"] = { 8.4, 58.6, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+			}),
 			q(285, {	-- Search More Hovels
 				["sourceQuest"] = 284,	-- The Search Continues
 				["provider"] = { "o", 142151 },	-- Sealed Barrel
 				["coord"] = { 13.6, 38.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
+			}),
+			q(98197, {	-- Spoils of War
+				["qg"] = 2086,	-- Valstag Ironjaw
+				["coord"] = { 10.1, 56.8, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/6 Khaz Modan Timber
+						["providers"] = {
+							{ "i", 279821 },	-- Khaz Modan Timber
+							{ "o", 670771 },	-- Khaz Modan Timber
+						},
+						["coord"] = { 6.1, 61.8, MAP.WETLANDS },
+					}),
+					objective(2, {	-- 0/30 Khaz Modan Iron
+						["providers"] = {
+							{ "i", 279822 },	-- Khaz Modan Iron
+							{ "o", 670774 },	-- Khaz Modan Iron
+						},
+						["coord"] = { 4.9, 52.6, MAP.WETLANDS },
+					}),
+				},
 			}),
 			q(943, {	-- The Absent Minded Prospector (5/5)
 				["sourceQuest"] = 942,	-- The Absent Minded Prospector (4/5) (Darnassus)
