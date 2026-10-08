@@ -2066,9 +2066,9 @@ app.AddEventHandler("OnLoad", function()
 		end
 	end
 
-	---Add the recorded once-per-account completion to a quest tooltip.
+	---Add once-per-account completion and current-character availability to a quest tooltip.
 	---@param tooltipData any Information-type context supplied by the tooltip builder.
-	---@param reference {questID: QuestID?} Quest record being described.
+	---@param reference ATTQuestAvailabilityContext Quest record being described.
 	---@param tooltipInfo {left: string, right: string?, color: string?, wrap: boolean?}[] Tooltip lines to append.
 	local function AddOncePerAccountQuestInfo(tooltipData, reference, tooltipInfo)
 		if not reference.questID then return end
@@ -2079,6 +2079,12 @@ app.AddEventHandler("OnLoad", function()
 				left = L.QUEST_ONCE_PER_ACCOUNT,
 				right = L.COMPLETED_BY:format(completingCharacter and completingCharacter.text or UNKNOWN),
 			}
+			if reference.unavailableReason == QuestUnavailableReason.CompletedByOtherCharacter then
+				tooltipInfo[#tooltipInfo + 1] = {
+					left = L.QUEST_UNAVAILABLE_ON_CHARACTER_TOOLTIP,
+					wrap = true,
+				}
+			end
 		elseif completingCharacterGUID == false then
 			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.QUEST_ONCE_PER_ACCOUNT,
