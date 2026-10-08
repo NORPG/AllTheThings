@@ -2,6 +2,15 @@
 -- Search Module
 local _, app = ...;
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeSearchBuild = Profiler.RegisterScope("search.build", "search", 1, "time", "Build a targeted ATT search hierarchy.", "top-level results");
+local ScopeSearchCandidates = Profiler.RegisterScope("search.candidates", "search", 2, "time", "Find and clone matching search candidates.", "input groups");
+local ScopeSearchFilter = Profiler.RegisterScope("search.filter", "search", 2, "time", "Apply final recursive filtering to a cloned search hierarchy.", "top-level results before filtering");
+local ScopeSearchCache = Profiler.RegisterScope("search.route.cache", "search", 3, "counter", "Search builds using indexed field-cache candidates.");
+local ScopeSearchRecursive = Profiler.RegisterScope("search.route.recursive", "search", 3, "counter", "Search builds discovering candidates recursively.");
+local ScopeSearchResults = Profiler.RegisterScope("search.results", "search", 3, "counter", "Top-level result groups returned by hierarchy searches.");
+
 -- Concepts:
 -- Encapsulates the functionality for performing and handling 'search' type capabilities in ATT
 -- Module Dependencies:
@@ -516,6 +525,7 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	local UseCached = groups == MainRoot
 	if groups.g then groups = groups.g end
 	if #groups == 0 then app.PrintDebug("BuildTargettedSearchResponse.FAIL - No groups available") return end
+	local profileStart, profileSession = Profiler.Begin(ScopeSearchBuild);
 	-- make sure each set of search results goes into a new container
 	-- otherwise two searches within the same window will replace the first set
 	ClonedHierarchyGroups = {}
@@ -539,7 +549,9 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	-- app.PrintTable(SearchCriteria)
 	-- app.PrintTable(SearchValueCriteria)
 	-- can only do cache searches if there isn't custom criteria provided if we are actually searching MainRoot
+	local phaseStart, phaseSession = Profiler.Begin(ScopeSearchCandidates);
 	local cacheContainer = not criteria and UseCached and app.GetRawFieldContainer(field)
+	Profiler.CountScope(cacheContainer and ScopeSearchCache or ScopeSearchRecursive, 1, profileSession);
 	if cacheContainer then
 		BuildSearchResponseViaCacheContainer(cacheContainer, value);
 	elseif value ~= nil then
@@ -557,11 +569,17 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 		AddSearchGroupsByField(groups, field);
 		BuildClonedHierarchy(SearchGroups);
 	end
+	Profiler.Finish(ScopeSearchCandidates, phaseStart, phaseSession, #groups);
 	-- app.PrintDebug("BSR:PreFilter",#ClonedHierarchyGroups)
 	-- Perform a final filtering pass if necessary
 	if Eval_RecursiveFilterCriteria ~= app.ReturnTrue then
+		local filterStart, filterSession = Profiler.Begin(ScopeSearchFilter);
+		local beforeFilter = #ClonedHierarchyGroups;
 		RunRecursiveFilterCriteria(ClonedHierarchyGroups)
+		Profiler.Finish(ScopeSearchFilter, filterStart, filterSession, beforeFilter);
 	end
+	Profiler.CountScope(ScopeSearchResults, #ClonedHierarchyGroups, profileSession);
+	Profiler.Finish(ScopeSearchBuild, profileStart, profileSession, #ClonedHierarchyGroups);
 	return ClonedHierarchyGroups;
 end
 

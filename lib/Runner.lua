@@ -14,6 +14,20 @@ local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall
 --- @type function,function,function,function,
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local CoroutineScope = Profiler.RegisterScope("coroutine.work", "runner", 2, "time", "Coroutine execution segments; waits excluded.");
+local CoroutineSliceScope = Profiler.RegisterScope("coroutine.slice", "runner", 1, "time", "StartCoroutine resume durations; waits excluded.");
+-- Stable built-in names retain their existing overview IDs. Dynamic window
+-- suffixes and external Runner names share a fixed fallback instead of expanding the registry.
+local ProfileRunnerModules = {
+	default = "runner", events = "events", update = "collection", collection = "collection",
+	costs = "costs", cost_collector = "costs", upgrade = "upgrade", inventory = "inventory",
+	reagent_collector = "costs", search = "search", vignette = "runner", contributor = "runner",
+	waypoint = "runner", dynamic = "collection", quests = "collection",
+};
+---@type table<thread, ATTProfilerScope>
+local CoroutineScopes = {};
 
 local function wipearray(t, max)
 	local c = math_max(#t, max or 0)
@@ -140,7 +154,12 @@ local PushQueue = setmetatable({}, {
 			-- Check the status of the coroutine
 			-- app.PrintDebug("PUSH:Run",pushfunc,"=>",co)
 			if co and c_status(co) ~= "dead" then
+				local scope = CoroutineScopes[co] or CoroutineScope;
+				local profileStart, profileSession = Profiler.Begin(scope);
+				local sliceStart, sliceSession = Profiler.Begin(CoroutineSliceScope);
 				local ok, err = c_resume(co);
+				Profiler.Finish(scope, profileStart, profileSession);
+				Profiler.Finish(CoroutineSliceScope, sliceStart, sliceSession);
 				if ok then
 					if err == false then
 						-- This means the coroutine signals completion by returning false
@@ -151,6 +170,9 @@ local PushQueue = setmetatable({}, {
 						return true;
 					end
 				else app.PrintError(err, "CO:resume", co) end
+			end
+			if co then
+				CoroutineScopes[co] = nil;
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			_PushQueue[#_PushQueue + 1] = pushfunc;
@@ -163,12 +185,18 @@ local PushQueue = setmetatable({}, {
 	end
 });
 -- Allows running a function on a coroutine until it completes
-local function StartCoroutine(name, func, delay)
+---Queue a pooled coroutine, optionally assigning a registered scope to its resume slices.
+---@param name string|any Existing coroutine deduplication key; kept out of metric IDs.
+---@param func function Coroutine function; its return and yield behavior are unchanged.
+---@param delay number? Delay in seconds before the first push; nil starts on the next frame.
+---@param profileScope ATTProfilerScope? Stable work label; nil uses the generic coroutine scope.
+local function StartCoroutine(name, func, delay, profileScope)
 	if not func or CoroutineCache[name] then return; end
 	-- app.PrintDebug("CO:Prep",name);
 
 	local co = GetCoroutine(func, name);
 	local pusher = PushQueue.Next;
+	if profileScope then CoroutineScopes[co] = profileScope; end
 
 	if delay and delay > 0 then
 		-- app.PrintDebug("CO:Delay",delay,name,pusher,co);
@@ -182,12 +210,35 @@ app.StartCoroutine = StartCoroutine;
 
 -- Iterative Function Runner
 -- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
-local function CreateRunner(name)
+local function CreateRunner(name, profileModule)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
+	---@type table<integer, ATTProfilerScope>
+	local ProfileScopeQueue = {};
 	local OnStart, OnReset
 	local Name = "Runner:"..name;
-	local ProfileSliceID = "runner."..name..".slice";
-	local QueueIndex, RunIndex = 1, 1
+	local knownModule = ProfileRunnerModules[name];
+	local module = knownModule or (profileModule == "windows" and "windows" or "runner");
+	local scopeName = knownModule and name or (module == "windows" and "windows" or "other");
+	local ProfileSliceScope = Profiler.RegisterScope("runner."..scopeName..".slice", "runner", 1, "time", "Runner resume durations; waits excluded.");
+	local ProfileWorkScope = Profiler.RegisterScope("runner."..scopeName..".work", module, 2, "time", "Runner function execution segments; waits excluded.");
+	local ProfileCallsScope = Profiler.RegisterScope("runner."..scopeName..".calls", module, 3, "counter", "Functions actually invoked by this Runner.");
+	---@type table<ATTProfilerScope, ATTProfilerScope>
+	local ProfileCallScopes = {};
+	---@type ATTProfilerScope?, number?, integer?
+	local ActiveScope, ActiveStart, ActiveSession;
+	local RunnerCoroutine;
+	local QueueIndex, RunIndex = 1, 1;
+	---Resume timing for the active function after a between-frame wait.
+	local function BeginActive()
+		---@cast ActiveScope ATTProfilerScope
+		ActiveStart, ActiveSession = Profiler.Begin(ActiveScope);
+	end
+	---Close the current execution segment without including later scheduling waits.
+	local function PauseActive()
+		---@cast ActiveScope ATTProfilerScope
+		Profiler.Finish(ActiveScope, ActiveStart, ActiveSession);
+		ActiveStart, ActiveSession = nil, nil;
+	end
 	local Pushed, perFrame
 	local function SetPerFrame(count)
 		Config.PerFrame = math_max(1, tonumber(count) or 1);
@@ -204,6 +255,7 @@ local function CreateRunner(name)
 		wipearray(FunctionQueue, QueueIndex - 1)
 		wipearray(ParameterBucketQueue, QueueIndex - 1)
 		wipearray(ParameterSingleQueue, QueueIndex - 1)
+		wipearray(ProfileScopeQueue, QueueIndex - 1)
 		FunctionQueue[0] = nil
 		QueueIndex = 1
 	end
@@ -212,7 +264,6 @@ local function CreateRunner(name)
 	end
 
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
-	local RunnerCoroutine
 	local function err(msg)
 		app.PrintError(msg, "Runner."..name, RunnerCoroutine)
 	end
@@ -231,6 +282,9 @@ local function CreateRunner(name)
 				if OnStart then OnStart() end
 				while func do
 					perFrame = perFrame - 1;
+					ActiveScope = ProfileScopeQueue[RunIndex] or ProfileWorkScope;
+					Profiler.CountScope(ProfileCallScopes[ActiveScope] or ProfileCallsScope);
+					BeginActive();
 					params = ParameterBucketQueue[RunIndex];
 					if params then
 						-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
@@ -239,6 +293,9 @@ local function CreateRunner(name)
 						-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
 						xpcall(func, err, ParameterSingleQueue[RunIndex]);
 					end
+					PauseActive();
+					ProfileScopeQueue[RunIndex] = nil;
+					ActiveScope = nil;
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
 						-- app.PrintDebug("FRC.Yield."..name,"Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
@@ -280,14 +337,11 @@ local function CreateRunner(name)
 	local function StackRun()
 		-- app.PrintDebug("Stack.Run",Name)
 		if c_status(RunnerCoroutine) == "dead" then SetRunnerCoroutine() end
-		---@type ATTProfiler
-		local profiler = app.Profiler;
-		local profileStart = profiler and profiler.Enabled and GetTimePreciseSec();
-		local profileSession = profileStart and profiler.SessionID;
+		local profileStart, profileSession = Profiler.Begin(ProfileSliceScope);
+		if ActiveScope then BeginActive(); end
 		local ok, err = c_resume(RunnerCoroutine);
-		if profileStart and profiler.Enabled and profiler.SessionID == profileSession then
-			profiler.Record(ProfileSliceID, (GetTimePreciseSec() - profileStart) * 1000);
-		end
+		if ActiveScope then PauseActive(); end
+		Profiler.Finish(ProfileSliceScope, profileStart, profileSession);
 		if ok then
 			if err == false then
 				-- app.PrintDebug("Stack.Run.Complete",Name)
@@ -299,24 +353,27 @@ local function CreateRunner(name)
 		else app.PrintError(err, Name, RunnerCoroutine) end
 	end
 
+	---Append original function arguments and optional observation metadata to parallel queues.
+	---@param func function Function to enqueue; invalid types preserve existing validation errors.
+	---@param scope ATTProfilerScope? Explicit work scope; nil selects this Runner's stable fallback.
+	---@param ... any Original arguments, stored using the existing single/bucket convention.
+	local function QueueFunction(func, scope, ...)
+		if type(func) ~= "function" then error("Must be a 'function' type!"); end
+		FunctionQueue[QueueIndex] = func;
+		ProfileScopeQueue[QueueIndex] = scope;
+		local arrs = select("#", ...);
+		if arrs == 1 then ParameterSingleQueue[QueueIndex] = ...;
+		elseif arrs > 1 then ParameterBucketQueue[QueueIndex] = { ... }; end
+		QueueIndex = QueueIndex + 1;
+	end
+
 	-- Provides a utility which will process a given number of functions each frame in a Queue
 	local Runner = {
 		-- Adds a function to be run with any necessary parameters
 		-- Can be called with no parameters to simply begin the Runner's queue
 		Run = function(func, ...)
 			if func then
-				if type(func) ~= "function" then
-					error("Must be a 'function' type!")
-				end
-				FunctionQueue[QueueIndex] = func;
-				-- app.PrintDebug("FR.Run."..name,QueueIndex,...)
-				local arrs = select("#", ...);
-				if arrs == 1 then
-					ParameterSingleQueue[QueueIndex] = ...;
-				elseif arrs > 1 then
-					ParameterBucketQueue[QueueIndex] = { ... };
-				end
-				QueueIndex = QueueIndex + 1;
+				QueueFunction(func, nil, ...);
 			end
 			-- Only push the coroutine onto the Stack once until it is completed
 			if Pushed then return; end
@@ -325,18 +382,7 @@ local function CreateRunner(name)
 		end,
 		-- Adds a function with any necessary parameters but does not Run it yet
 		Queue = function(func, ...)
-			if type(func) ~= "function" then
-				error("Must be a 'function' type!")
-			end
-			FunctionQueue[QueueIndex] = func;
-			-- app.PrintDebug("FR.Queue."..name,QueueIndex,...)
-			local arrs = select("#", ...);
-			if arrs == 1 then
-				ParameterSingleQueue[QueueIndex] = ...;
-			elseif arrs > 1 then
-				ParameterBucketQueue[QueueIndex] = { ... };
-			end
-			QueueIndex = QueueIndex + 1;
+			QueueFunction(func, nil, ...);
 		end,
 		-- Set a function to be run once the queue is empty. This function takes no parameters.
 		OnEnd = function(func)
@@ -361,6 +407,27 @@ local function CreateRunner(name)
 		-- Allows adding/removing timing tracking into PrintDebug messages for this Runner
 		ToggleDebugFrameTime = function() Config.DebugFrameTime = not Config.DebugFrameTime; return Config.DebugFrameTime end,
 	};
+	---Queue labeled work without wrapping its function or changing forwarded arguments.
+	---@param scope ATTProfilerScope Stable work scope used for execution-segment timing.
+	---@param func function Function to add; must satisfy the existing Queue function validation.
+	---@param ... any Arguments forwarded using the Runner's existing single/bucket storage convention.
+	function Runner.QueueProfiled(scope, func, ...)
+		QueueFunction(func, scope, ...);
+	end
+	---Queue labeled work and start the Runner using its existing Run behavior.
+	---@param scope ATTProfilerScope Stable work scope used for execution-segment timing.
+	---@param func function Function to execute through the Runner.
+	---@param ... any Arguments forwarded using the Runner's existing single/bucket storage convention.
+	function Runner.RunProfiled(scope, func, ...)
+		Runner.QueueProfiled(scope, func, ...);
+		Runner.Run();
+	end
+	---Attach an optional invocation counter to a stable work label before queueing it.
+	---@param scope ATTProfilerScope Registered timing scope used by RunProfiled or QueueProfiled.
+	---@param invocationCounter ATTProfilerScope Registered counter incremented once at function entry, excluding later resumes.
+	function Runner.RegisterProfiledScope(scope, invocationCounter)
+		ProfileCallScopes[scope] = invocationCounter;
+	end
 	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
 	Runner.SetPerFrame = function(count, instant)
 		if instant then
@@ -380,8 +447,12 @@ local function CreateRunner(name)
 	return Runner;
 end
 -- Retrieves an existing or creates a new Runner with the provided name
-app.CreateRunner = function(name)
-	return app.Runners[name] or CreateRunner(name)
+---Retrieve or create a Runner, with a fixed profiler fallback for dynamic window names.
+---@param name string Existing Runner lookup key; never used as a new metric ID unless it is a built-in name.
+---@param profileModule 'windows'? Assign unknown Runner names to the windows module; nil uses the generic runner module.
+---@return table runner Existing or newly constructed Runner with unchanged Run/Queue behavior.
+app.CreateRunner = function(name, profileModule)
+	return app.Runners[name] or CreateRunner(name, profileModule)
 end
 app.Runners = {}
 app.FunctionRunner = CreateRunner("default");

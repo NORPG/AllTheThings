@@ -193,6 +193,50 @@ end, {
 	"Allows resetting the tracking of displayed Dialog reports such that duplicate reports can be repeated in the same game session.",
 })
 -- Capture a short-lived performance profile using explicit ATT instrumentation.
+do
+local ProfileOptionKeys = {
+	include = "include", exclude = "exclude", metrics = "metricBudget",
+}
+---Parse duration, level, and named capture options without changing capture state.
+---Positional arguments precede options; duplicate or unknown keys are rejected.
+---@param args string[] Parsed arguments including the start or nextlogin action.
+---@return boolean valid True when the argument structure is accepted; values are validated by the capture service.
+---@return string? seconds Optional duration argument; nil selects the service default.
+---@return string? level Optional level one through three or its name; nil selects Overview.
+---@return ATTProfilerOptions|string options Capture options on success; a readable argument error on failure.
+local function ParseProfileCaptureArgs(args)
+	local options, seen = {}, {}
+	local seconds, level
+	local position, hasOptions = 0, false
+	for i = 2, #args do
+		local argument = args[i]
+		local key, value = argument:match("^([%a]+)=(.*)$")
+		if key then
+			key = key:lower()
+			local optionKey = ProfileOptionKeys[key]
+			if not optionKey or seen[key] or value == "" then
+				return false, nil, nil, "Unknown, duplicate, or empty profile option: "..key
+			end
+			seen[key], hasOptions = true, true
+			if key == "include" or key == "exclude" then
+				options[optionKey] = value
+			else
+				local numericValue = tonumber(value)
+				if not numericValue then
+					return false, nil, nil, "Profile option must be numeric: "..key
+				end
+				options[optionKey] = numericValue
+			end
+		elseif argument ~= "" then
+			position = position + 1
+			if hasOptions or position > 2 then
+				return false, nil, nil, "Usage: /att profile start|nextlogin [seconds] [level] [key=value ...]"
+			end
+			if position == 1 then seconds = argument else level = argument end
+		end
+	end
+	return true, seconds, level, options
+end
 app.ChatCommands.Add("profile",
 ---Starts, stops, reports, clears, or schedules a capture; prints usage for invalid arguments.
 ---Reporting opens a copyable snapshot and leaves an active capture running.
@@ -203,25 +247,30 @@ function(args)
 	---@type ATTProfiler
 	local profiler = app.Profiler
 	if action == "start" then
-		if args[3] then return app.ChatCommands.PrintHelp("profile") end
-		local ok, result = profiler.Start(args[2])
+		local valid, seconds, level, options = ParseProfileCaptureArgs(args)
+		if not valid then app.print(options); return true end
+		---@cast options ATTProfilerOptions
+		local ok, result = profiler.Start(seconds, level, options)
 		if ok then
-			app.print("ATT profile started for", result, "seconds. Use /att profile report to view it.")
+			app.print("ATT profile started for", result, "seconds at level", profiler.GetLevel(), ". Use /att profile report to view it.")
 		else
 			app.print(result)
 		end
 	elseif action == "nextlogin" then
-		if args[3] then return app.ChatCommands.PrintHelp("profile") end
 		if args[2] and args[2]:lower() == "cancel" then
+			if args[3] then return app.ChatCommands.PrintHelp("profile") end
 			if profiler.CancelNextLogin() then
 				app.print("ATT next-login profile canceled.")
 			else
 				app.print("No ATT next-login profile is scheduled.")
 			end
 		else
-			local ok, result = profiler.ScheduleNextLogin(args[2])
+			local valid, seconds, level, options = ParseProfileCaptureArgs(args)
+			if not valid then app.print(options); return true end
+			---@cast options ATTProfilerOptions
+			local ok, result = profiler.ScheduleNextLogin(seconds, level, options)
 			if ok then
-				app.print("ATT profile scheduled for", result, "seconds at the next login or /reload.")
+				app.print("ATT profile scheduled for", result, "seconds at level", level or 1, "at the next login or /reload.")
 			else
 				app.print(result)
 			end
@@ -242,12 +291,18 @@ function(args)
 	end
 	return true
 end, {
-	"Usage : /att profile start [seconds] (default 30, maximum 300)",
-	"Usage : /att profile nextlogin [seconds] | cancel (one-shot, includes /reload)",
+	"Usage : /att profile start [seconds] [level] [key=value ...] (default 30 seconds, level 1)",
+	"Usage : /att profile nextlogin [seconds] [level] [key=value ...] | cancel (one-shot, includes /reload)",
 	"The next character login or /reload consumes the request; cancel removes it.",
 	"Usage : /att profile stop | report | reset",
-	"Captures ATT's instrumented timings and counters in memory for a short session."
+	"Levels: 1 overview, 2 components, 3 workload.",
+	"Include/exclude selects module details; Overview remains global.",
+	"Modules: runner, events, startup, collection, transmog, costs, search, tooltip, windows, cache, inventory, upgrade.",
+	"Options: include, exclude, metrics.",
+	"Example: /att profile start 10 workload include=events,costs metrics=128",
+	"Captures ATT's instrumented work in memory; deeper levels add measurement overhead."
 })
+end
 -- Allows a user to use /att debug-print
 -- to enable Debug Printing of any PrintDebug messages
 app.ChatCommands.Add("debug-print", function(args)

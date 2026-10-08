@@ -1,6 +1,13 @@
 local _, app = ...
 local L = app.L
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeCollectionBatch = Profiler.RegisterScope("collection.batch", "collection", 1, "time", "Apply an account or character collection-state batch.", "IDs visited");
+local ScopeCollectionChanged = Profiler.RegisterScope("collection.batch.changed", "collection", 2, "time", "Track character state changes and changed ID output.", "IDs visited");
+local ScopeCollectionIDs = Profiler.RegisterScope("collection.batch.ids", "collection", 3, "counter", "Collection IDs visited by state batches.");
+local ScopeCollectionChanges = Profiler.RegisterScope("collection.batch.changes", "collection", 3, "counter", "Character collection states changed by batches.");
+
 -- Dependencies: Locales, Modules.RetrievingData
 
 local pairs,type
@@ -215,27 +222,47 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
 	local function SetBatchAccountCached(field, ids, state)
 		-- app.PrintDebug("SBAC:A",field,state)
+		local profileStart, profileSession = Profiler.Begin(ScopeCollectionBatch);
+		local trackWork = ScopeCollectionIDs.enabled;
+		local visited = 0;
 		local container = accountWideData[field]
 		for id,_ in pairs(ids) do
 			container[id] = state
+			if trackWork then visited = visited + 1; end
 		end
+		if trackWork then Profiler.CountScope(ScopeCollectionIDs, visited, profileSession); end
+		Profiler.Finish(ScopeCollectionBatch, profileStart, profileSession, trackWork and visited or nil);
 	end
 	-- Allows directly saving a cached state for a table of ids for a given field.
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
 	local function SetBatchCached(field, ids, state)
 		-- app.PrintDebug("SBC",field,state)
+		local profileStart, profileSession = Profiler.Begin(ScopeCollectionBatch);
+		local trackWork = ScopeCollectionIDs.enabled;
+		local visited, changed = 0, 0;
 		local container = currentCharacter[field]
 		local anyNew = false;
 		for id,_ in pairs(ids) do
 			if container[id] ~= state then
 				container[id] = state;
 				anyNew = true;
+				if trackWork then changed = changed + 1; end
 			end
+			if trackWork then visited = visited + 1; end
 		end
 		if anyNew then UpdateTimestampForField(field); end
+		if trackWork then
+			Profiler.CountScope(ScopeCollectionIDs, visited, profileSession);
+			Profiler.CountScope(ScopeCollectionChanges, changed, profileSession);
+		end
+		Profiler.Finish(ScopeCollectionBatch, profileStart, profileSession, trackWork and visited or nil);
 	end
 	local function SetBatchCachedAndTrackChanges(field, ids, changes, state)
 		-- app.PrintDebug("SBC",field,state)
+		local profileStart, profileSession = Profiler.Begin(ScopeCollectionBatch);
+		local phaseStart, phaseSession = Profiler.Begin(ScopeCollectionChanged);
+		local trackWork = ScopeCollectionIDs.enabled;
+		local visited, changed = 0, 0;
 		local container = currentCharacter[field]
 		local anyChanges = false;
 		for id,_ in pairs(ids) do
@@ -243,12 +270,18 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 				container[id] = state;
 				changes[#changes + 1] = id;
 				anyChanges = true;
+				if trackWork then changed = changed + 1; end
 			end
+			if trackWork then visited = visited + 1; end
 		end
-		if anyChanges then
-			UpdateTimestampForField(field);
-			return true;
+		if anyChanges then UpdateTimestampForField(field); end
+		if trackWork then
+			Profiler.CountScope(ScopeCollectionIDs, visited, profileSession);
+			Profiler.CountScope(ScopeCollectionChanges, changed, profileSession);
 		end
+		Profiler.Finish(ScopeCollectionChanged, phaseStart, phaseSession, trackWork and visited or nil);
+		Profiler.Finish(ScopeCollectionBatch, profileStart, profileSession, trackWork and visited or nil);
+		if anyChanges then return true; end
 	end
 	-- TODO: replace uses with SetThingCollected
 	local function SetCollected(t, field, id, collected, settingKey)
