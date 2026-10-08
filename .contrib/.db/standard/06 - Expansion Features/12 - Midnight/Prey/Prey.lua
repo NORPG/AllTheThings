@@ -772,12 +772,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
-			-- 1k seasonal journey lockout, weekly
-			q(95000, name(HEADERS.Faction, 2764)),	-- 1st per week
-			q(95001, name(HEADERS.Faction, 2764)),	-- 2nd per week
-			q(95002, name(HEADERS.Faction, 2764)),	-- 3rd per week
-			q(95003, name(HEADERS.Faction, 2764)),	-- 4th per week
-
 			q(93872),	-- Prey completed, 1st per week
 			q(93873),	-- Prey completed, 2nd per week
 			q(93874),	-- Prey completed, 3rd per week
@@ -798,10 +792,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97115),	-- First Preference Killing of the week
 
 			-- 12.1
-			q(98547, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 1st per week
-			q(98548, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 2nd per week
-			q(98549, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 3rd per week
-			q(98550, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 4th per week
 			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
 			--q(98508),	-- prey completion, nightmare, 1st of week, coiled isle
 		})),
