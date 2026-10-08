@@ -516,11 +516,8 @@ root(ROOTS.Unsorted, {
 			i(276912),	-- Middle Fragment of Ulantu's Log
 			i(276914),	-- End Fragment of Ulantu's Log
 			i(277525),	-- Ulantu's Belongings
-			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
-			i(275571),	-- [PH] Broomstick Spice - Grey
 			i(275572),	-- [PH] Broomstick Spice - Hallow
-			i(275573),	-- [PH] Broomstick Spice - Pink
 			i(275574),	-- [PH] Broomstick Spice - Red
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
@@ -536,7 +533,6 @@ root(ROOTS.Unsorted, {
 			i(276624),	-- Overflowing Hash'ura Trove
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
-			i(277261),	-- [PH] Pygmy Owl
 			i(277266),	-- The First Troll Legend
 			i(277270),	-- Kirin Tor Kitty
 			i(277318),	-- Catsramas
@@ -626,14 +622,6 @@ root(ROOTS.Unsorted, {
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
-			i(279013),	-- [ph] SpiceWitch Chest - Blue
-			i(279014),	-- [ph] SpiceWitch Feet - Blue
-			i(279015),	-- [ph] SpiceWitch Waist - Blue
-			i(279016),	-- [ph] SpiceWitch Gloves- Blue
-			i(279017),	-- [ph] SpiceWitch Legs - Blue
-			i(279018),	-- [ph] SpiceWitch Head - Blue
-			i(279019),	-- [ph] SpiceWitch Shoulders - Blue
-			i(279022),	-- [ph] Ensemble: SpiceWitch Blue Attire
 			i(279056),	-- [ph] SpiceWitch Chest - Green
 			i(279057),	-- [ph] SpiceWitch Feet - Green
 			i(279058),	-- [ph] SpiceWitch Waist - Green
@@ -642,17 +630,7 @@ root(ROOTS.Unsorted, {
 			i(279062),	-- [ph] SpiceWitch Head - Green
 			i(279063),	-- [ph] SpiceWitch Shoulders - Green
 			i(279065),	-- [ph] Ensemble: SpiceWitch Green Attire
-			i(279066),	-- [ph] SpiceWitch Chest - Grey
-			i(279070),	-- [ph] SpiceWitch Head - Blue (Hair Vis)
 			i(279071),	-- [ph] SpiceWitch Head - Green (Hair Vis)
-			i(279072),	-- [ph] SpiceWitch Feet - Grey
-			i(279074),	-- [ph] SpiceWitch Waist - Grey
-			i(279075),	-- [ph] SpiceWitch Gloves- Grey
-			i(279076),	-- [ph] SpiceWitch Legs - Grey
-			i(279077),	-- [ph] SpiceWitch Head - Grey
-			i(279078),	-- [ph] SpiceWitch Head - Grey(Hair Vis)
-			i(279079),	-- [ph] SpiceWitch Shoulders - Grey
-			i(279080),	-- [ph] Ensemble: SpiceWitch Grey Attire
 			i(279081),	-- [ph] SpiceWitch Chest - Hallow
 			i(279083),	-- [ph] SpiceWitch Feet - Hallow
 			i(279084),	-- [ph] SpiceWitch Waist - Hallow
@@ -662,45 +640,15 @@ root(ROOTS.Unsorted, {
 			i(279088),	-- [ph] SpiceWitch Head - Hallow (Hair Vis)
 			i(279089),	-- [ph] SpiceWitch Shoulders - Hallow
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
-			i(279095),	-- [ph] SpiceWitch Chest - Orange
-			i(279096),	-- [ph] SpiceWitch Feet - Orange
-			i(279097),	-- [ph] SpiceWitch Waist - Orange
-			i(279098),	-- [ph] SpiceWitch Gloves- Orange
-			i(279099),	-- [ph] SpiceWitch Legs - Orange
-			i(279101),	-- [ph] SpiceWitch Head - Orange
-			i(279102),	-- [ph] SpiceWitch Head - Orange (Hair Vis)
-			i(279103),	-- [ph] SpiceWitch Shoulders - Orange
-			i(279104),	-- [ph] Ensemble: SpiceWitch Orange Attire
-			i(279107),	-- [ph] SpiceWitch Chest - Pink
-			i(279108),	-- [ph] SpiceWitch Feet - Pink
-			i(279109),	-- [ph] SpiceWitch Waist - Pink
-			i(279110),	-- [ph] SpiceWitch Gloves- Pink
-			i(279111),	-- [ph] SpiceWitch Legs - Pink
-			i(279114),	-- [ph] SpiceWitch Head - Pink
-			i(279133),	-- [ph] SpiceWitch Head - Pink (Hair Vis)
-			i(279134),	-- [ph] SpiceWitch Shoulders - Pink
-			i(279135),	-- [ph] Ensemble: SpiceWitch Pink Attire
-			i(279136),	-- [ph] SpiceWitch Shoulders 02 - Blue
 			i(279137),	-- [ph] SpiceWitch Shoulders 02 - Green
-			i(279138),	-- [ph] SpiceWitch Shoulders 02 - Grey
 			i(279139),	-- [ph] SpiceWitch Shoulders 02 - Hallow
-			i(279140),	-- [ph] SpiceWitch Shoulders 02 - Orange
-			i(279141),	-- [ph] SpiceWitch Shoulders 02 - Pink
 			i(279142),	-- Intact Spine Segment
 			i(279143),	-- Elongated Viscera
 			i(279147),	-- Unrecognizable bone
-			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
-			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
-			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
-			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
 			i(279159),	-- [ph] SpiceWitch Head 02 - Hallow
 			i(279161),	-- [ph] SpiceWitch Head 02 - Hallow (Hair Vis)
-			i(279162),	-- [ph] SpiceWitch Head 02 - Orange
-			i(279163),	-- [ph] SpiceWitch Head 02 - Orange (Hair Vis)
-			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
-			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
@@ -748,7 +696,6 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(280131),	-- Nebulous Voidcache: Prey
 			i(280102),	-- Handful of Corrosive Coins
-			i(280581),	-- Wintry Witchwick's Rider
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(274677),	-- Sky Blue Riverside Room Plans
