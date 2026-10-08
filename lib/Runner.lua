@@ -27,12 +27,14 @@ local ProfileRunnerModules = {
 	reagent_collector = "costs", search = "search", vignette = "runner", contributor = "runner",
 	waypoint = "runner", dynamic = "collection", quests = "collection",
 };
----@type table<thread, ATTProfilerScope>, table<thread, ATTProfilerJob>
-local CoroutineScopes, CoroutineJobs = {}, {};
+---@type table<thread, ATTProfilerScope>, table<thread, ATTProfilerJob>?
+local CoroutineScopes, CoroutineJobs = {}, nil;
+local UpdateCoroutineCapture;
 ---@class ATTRunnerProfileState
----@field jobs table<integer, ATTProfilerJob> Optional records parallel to real queued functions.
+---@field jobs table<integer, ATTProfilerJob>? Lazily allocated records parallel to real queued functions.
 ---@field activeJob ATTProfilerJob? Job associated with the currently executing or suspended function.
 ---@field reset fun() Release observations without changing real Runner work.
+---@field update fun() Select private execution paths from the current capture policy.
 ---@type table<ATTRunnerProfileState, boolean>
 local RunnerProfileStates = setmetatable({}, { __mode = "k" });
 
@@ -41,11 +43,15 @@ local function wipearray(t, max)
 	for i=1,c do t[i] = nil end
 end
 Profiler.AddSessionListener(function(event)
-	if event ~= "reset" then return; end
+	if event ~= "start" and event ~= "stop" and event ~= "reset" then return; end
 	-- This single listener weakly observes Runner state. It never owns dynamic
 	-- Runner lifetimes or keeps their queued functions and parameters alive.
-	CoroutineJobs = {};
-	for state in pairs(RunnerProfileStates) do state.reset(); end
+	if event ~= "start" then
+		CoroutineJobs = nil;
+		for state in pairs(RunnerProfileStates) do state.reset(); end
+	end
+	UpdateCoroutineCapture();
+	for state in pairs(RunnerProfileStates) do state.update(); end
 end);
 
 local Stack = {};
@@ -150,6 +156,59 @@ local function ReturnCoroutine(co)
 	CoroutineCache[name] = nil
 	InUse[co] = nil
 end
+---Acquire and label a pooled coroutine only when scheduling observations are enabled.
+---@param func function Function already validated by the public coroutine entry point.
+---@param name any Existing pooled-coroutine deduplication key.
+---@param scope ATTProfilerScope Stable scope retained independently of capture state.
+---@return thread coroutine Coroutine acquired using the existing cache and collision behavior.
+local function GetProfiledCoroutine(func, name, scope)
+	local co = GetCoroutine(func, name);
+	if scope.jobsEnabled then
+		local job = ProfileJobs.Enqueue(scope);
+		if job then
+			if not CoroutineJobs then CoroutineJobs = {}; end
+			CoroutineJobs[co] = job;
+		end
+	end
+	return co;
+end
+
+---Resume a pooled coroutine with only observations accepted by the current policy.
+---@param co thread Existing coroutine whose actual yields and errors are unchanged.
+---@return boolean succeeded Whether the native resume succeeded.
+---@return any result First yielded/returned value, or the existing coroutine error.
+local function ResumeProfiledCoroutine(co)
+	local scope = CoroutineScopes[co] or CoroutineScope;
+	local job;
+	if scope.jobsEnabled then
+		job = ProfileJobs.Begin(CoroutineJobs and CoroutineJobs[co], scope, co);
+		if job then
+			if not CoroutineJobs then CoroutineJobs = {}; end
+			CoroutineJobs[co] = job;
+		end
+	end
+	local profileStart, profileSession, sliceStart, sliceSession;
+	if scope.enabled then profileStart, profileSession = Profiler.Begin(scope); end
+	if CoroutineSliceScope.enabled then sliceStart, sliceSession = Profiler.Begin(CoroutineSliceScope); end
+	local ok, result = c_resume(co);
+	if profileStart and profileSession == Profiler.SessionID and Profiler.Enabled then
+		Profiler.Finish(scope, profileStart, profileSession);
+	end
+	if sliceStart and sliceSession == Profiler.SessionID and Profiler.Enabled then
+		Profiler.Finish(CoroutineSliceScope, sliceStart, sliceSession);
+	end
+	if job and job.sessionID == Profiler.SessionID and Profiler.Enabled then
+		ProfileJobs.Pause(job, not ok and "failed" or (result == false and "completed" or nil));
+	end
+	return ok, result;
+end
+local AcquireCoroutine, ResumeCoroutine = GetCoroutine, c_resume;
+UpdateCoroutineCapture = function()
+	AcquireCoroutine = Profiler.Enabled and Profiler.GetLevel() >= 4 and GetProfiledCoroutine or GetCoroutine;
+	ResumeCoroutine = Profiler.Enabled and ResumeProfiledCoroutine or c_resume;
+end;
+UpdateCoroutineCapture();
+
 -- We will make this a weak-value cache, such that the Push methods can be cleaned up/recreated if needed
 local _PushQueue = setmetatable({}, {__mode = "v",})
 -- Represents a small set of Push functions which are used to allow the Stack to handle coroutine processing. As these functions have no bearing
@@ -168,15 +227,7 @@ local PushQueue = setmetatable({}, {
 			-- Check the status of the coroutine
 			-- app.PrintDebug("PUSH:Run",pushfunc,"=>",co)
 			if co and c_status(co) ~= "dead" then
-				local scope = CoroutineScopes[co] or CoroutineScope;
-				local job = ProfileJobs.Begin(CoroutineJobs[co], scope, co);
-				CoroutineJobs[co] = job;
-				local profileStart, profileSession = Profiler.Begin(scope);
-				local sliceStart, sliceSession = Profiler.Begin(CoroutineSliceScope);
-				local ok, err = c_resume(co);
-				Profiler.Finish(scope, profileStart, profileSession);
-				Profiler.Finish(CoroutineSliceScope, sliceStart, sliceSession);
-				ProfileJobs.Pause(job, not ok and "failed" or (err == false and "completed" or nil));
+				local ok, err = ResumeCoroutine(co);
 				if ok then
 					if err == false then
 						-- This means the coroutine signals completion by returning false
@@ -189,8 +240,12 @@ local PushQueue = setmetatable({}, {
 				else app.PrintError(err, "CO:resume", co) end
 			end
 			if co then
-				ProfileJobs.Cancel(CoroutineJobs[co]);
-				CoroutineScopes[co], CoroutineJobs[co] = nil, nil;
+				if CoroutineJobs then
+					local job = CoroutineJobs[co];
+					if job and Profiler.Enabled then ProfileJobs.Cancel(job); end
+					CoroutineJobs[co] = nil;
+				end
+				CoroutineScopes[co] = nil;
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			_PushQueue[#_PushQueue + 1] = pushfunc;
@@ -212,11 +267,10 @@ local function StartCoroutine(name, func, delay, profileScope)
 	if not func or CoroutineCache[name] then return; end
 	-- app.PrintDebug("CO:Prep",name);
 
-	local co = GetCoroutine(func, name);
-	local pusher = PushQueue.Next;
 	local scope = profileScope or CoroutineScope;
+	local co = AcquireCoroutine(func, name, scope);
+	local pusher = PushQueue.Next;
 	if profileScope then CoroutineScopes[co] = scope; end
-	CoroutineJobs[co] = ProfileJobs.Enqueue(scope);
 
 	if delay and delay > 0 then
 		-- app.PrintDebug("CO:Delay",delay,name,pusher,co);
@@ -232,9 +286,9 @@ app.StartCoroutine = StartCoroutine;
 -- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
 local function CreateRunner(name, profileModule)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
-	---@type table<integer, ATTProfilerScope>, table<integer, ATTProfilerJob>
-	local ProfileScopeQueue, ProfileJobQueue = {}, {};
-	local ProfileState = { jobs = ProfileJobQueue };
+	---@type table<integer, ATTProfilerScope>, table<integer, ATTProfilerJob>?
+	local ProfileScopeQueue, ProfileJobQueue = {}, nil;
+	local ProfileState = {};
 	---@cast ProfileState ATTRunnerProfileState
 	local OnStart, OnReset
 	local Name = "Runner:"..name;
@@ -253,21 +307,26 @@ local function CreateRunner(name, profileModule)
 	---Resume timing for the active function after a between-frame wait.
 	local function BeginActive()
 		---@cast ActiveScope ATTProfilerScope
-		ProfileState.activeJob = ProfileJobs.Begin(ProfileState.activeJob, ActiveScope, RunnerCoroutine);
-		ActiveStart, ActiveSession = Profiler.Begin(ActiveScope);
+		if ActiveScope.jobsEnabled then
+			ProfileState.activeJob = ProfileJobs.Begin(ProfileState.activeJob, ActiveScope, RunnerCoroutine);
+		end
+		if ActiveScope.enabled then ActiveStart, ActiveSession = Profiler.Begin(ActiveScope); end
 	end
 	---Close the current execution segment without including later scheduling waits.
 	---@param status ATTProfilerJobStatus? Completion/error state; nil indicates a yielded segment.
 	local function PauseActive(status)
 		---@cast ActiveScope ATTProfilerScope
-		Profiler.Finish(ActiveScope, ActiveStart, ActiveSession);
-		ProfileJobs.Pause(ProfileState.activeJob, status);
+		if ActiveStart and ActiveSession == Profiler.SessionID and Profiler.Enabled then
+			Profiler.Finish(ActiveScope, ActiveStart, ActiveSession);
+		end
+		local job = ProfileState.activeJob;
+		if job and job.sessionID == Profiler.SessionID and Profiler.Enabled then ProfileJobs.Pause(job, status); end
 		ActiveStart, ActiveSession = nil, nil;
 	end
 	ProfileState.reset = function()
 		-- Observation references must not keep successive session budgets alive
 		-- in long-lived queues. The real functions, arguments, and labels survive.
-		wipearray(ProfileJobQueue, QueueIndex - 1);
+		ProfileJobQueue, ProfileState.jobs = nil, nil;
 		ProfileState.activeJob, ActiveStart, ActiveSession = nil, nil, nil;
 	end;
 	RunnerProfileStates[ProfileState] = true;
@@ -282,7 +341,9 @@ local function CreateRunner(name, profileModule)
 		-- app.PrintDebug("FR:Reset."..name,Pushed and "RUNNING" or "STOPPED","Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
 		if OnReset then OnReset() end
 		-- Reset clears pending entries; it cannot interrupt the Lua function already running.
-		for _, job in pairs(ProfileJobQueue) do if job ~= ProfileState.activeJob then ProfileJobs.Cancel(job); end end
+		if ProfileJobQueue and Profiler.Enabled then
+			for _, job in pairs(ProfileJobQueue) do if job ~= ProfileState.activeJob then ProfileJobs.Cancel(job); end end
+		end
 		SetPerFrame(Config.PerFrameDefault or 1)
 		-- when done with all functions in the queue, reset the indexes and clear the queues of data
 		RunIndex = Pushed and 0 or 1	-- reset while running will resume and continue at index 1
@@ -290,7 +351,7 @@ local function CreateRunner(name, profileModule)
 		wipearray(ParameterBucketQueue, QueueIndex - 1)
 		wipearray(ParameterSingleQueue, QueueIndex - 1)
 		wipearray(ProfileScopeQueue, QueueIndex - 1)
-		wipearray(ProfileJobQueue, QueueIndex - 1)
+		if ProfileJobQueue then wipearray(ProfileJobQueue, QueueIndex - 1); end
 		FunctionQueue[0] = nil
 		QueueIndex = 1
 	end
@@ -302,6 +363,52 @@ local function CreateRunner(name, profileModule)
 	local function err(msg)
 		app.PrintError(msg, "Runner."..name, RunnerCoroutine)
 	end
+	---Invoke original arguments and finalize a segment adopted on a later resume.
+	---@param func function Original queued function, without an observation wrapper.
+	---@param params table? Existing argument bucket; nil selects the single-argument convention.
+	---@param single any Original single argument, including nil when no argument was queued.
+	local function InvokePlain(func, params, single)
+		local succeeded;
+		if params then succeeded = xpcall(func, err, unpack(params));
+		else succeeded = xpcall(func, err, single); end
+		-- An invocation entered while capture was off can yield, then be adopted
+		-- by a measured resume. Its original continuation still owns completion.
+		if ActiveStart or ProfileState.activeJob then PauseActive(succeeded and "completed" or "failed"); end
+	end
+	---Observe entry once; resumed segments are measured at the scheduler boundary.
+	---@param func function Queued function whose public argument behavior is unchanged.
+	---@param params table? Existing argument bucket; nil forwards the original single argument.
+	---@param single any Original single argument, including nil.
+	local function InvokeProfiled(func, params, single)
+		ProfileState.activeJob = ProfileJobQueue and ProfileJobQueue[RunIndex];
+		local counter = ProfileCallScopes[ActiveScope] or ProfileCallsScope;
+		if counter.enabled then Profiler.CountScope(counter); end
+		BeginActive();
+		InvokePlain(func, params, single);
+	end
+	---Measure one native resume, excluding time spent waiting for its next frame.
+	---@param co thread Existing Runner coroutine; no new protected call is introduced.
+	---@return boolean succeeded Whether the native resume succeeded.
+	---@return any result First yielded/returned value or the existing coroutine error.
+	local function ResumeProfiled(co)
+		local profileStart, profileSession;
+		if ProfileSliceScope.enabled then profileStart, profileSession = Profiler.Begin(ProfileSliceScope); end
+		if ActiveScope then BeginActive(); end
+		local ok, result = c_resume(co);
+		if ActiveStart or ProfileState.activeJob then PauseActive(not ok and "failed" or nil); end
+		if profileStart and profileSession == Profiler.SessionID and Profiler.Enabled then
+			Profiler.Finish(ProfileSliceScope, profileStart, profileSession);
+		end
+		return ok, result;
+	end
+	local InvokeFunction, ResumeRunner = InvokePlain, c_resume;
+	local QueueFunction, QueuePlain, QueueProfiled;
+	ProfileState.update = function()
+		InvokeFunction = Profiler.Enabled and InvokeProfiled or InvokePlain;
+		ResumeRunner = Profiler.Enabled and ResumeProfiled or c_resume;
+		QueueFunction = Profiler.Enabled and Profiler.GetLevel() >= 4 and QueueProfiled or QueuePlain;
+	end;
+
 	local SetRunnerCoroutine = function()
 		RunnerCoroutine = c_create(function()
 			local FunctionQueue = FunctionQueue
@@ -318,20 +425,10 @@ local function CreateRunner(name, profileModule)
 				while func do
 					perFrame = perFrame - 1;
 					ActiveScope = ProfileScopeQueue[RunIndex] or ProfileWorkScope;
-					ProfileState.activeJob = ProfileJobQueue[RunIndex];
-					Profiler.CountScope(ProfileCallScopes[ActiveScope] or ProfileCallsScope);
-					BeginActive();
 					params = ParameterBucketQueue[RunIndex];
-					local succeeded;
-					if params then
-						-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
-						succeeded = xpcall(func, err, unpack(params));
-					else
-						-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
-						succeeded = xpcall(func, err, ParameterSingleQueue[RunIndex]);
-					end
-					PauseActive(succeeded and "completed" or "failed");
-					ProfileJobQueue[RunIndex], ProfileScopeQueue[RunIndex] = nil, nil;
+					InvokeFunction(func, params, ParameterSingleQueue[RunIndex]);
+					if ProfileJobQueue then ProfileJobQueue[RunIndex] = nil; end
+					ProfileScopeQueue[RunIndex] = nil;
 					ActiveScope, ProfileState.activeJob = nil, nil;
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
@@ -374,11 +471,12 @@ local function CreateRunner(name, profileModule)
 	local function StackRun()
 		-- app.PrintDebug("Stack.Run",Name)
 		if c_status(RunnerCoroutine) == "dead" then SetRunnerCoroutine() end
-		local profileStart, profileSession = Profiler.Begin(ProfileSliceScope);
-		if ActiveScope then BeginActive(); end
-		local ok, err = c_resume(RunnerCoroutine);
-		if ActiveScope then PauseActive(not ok and "failed" or nil); end
-		Profiler.Finish(ProfileSliceScope, profileStart, profileSession);
+		local ok, err = ResumeRunner(RunnerCoroutine);
+		-- Start can occur inside a native resume. Close any later instrumented
+		-- function before its yield returns control to the frame scheduler.
+		if ActiveStart or (ProfileState.activeJob and ProfileState.activeJob.sliceStart) then
+			PauseActive(not ok and "failed" or nil);
+		end
 		if ok then
 			if err == false then
 				-- app.PrintDebug("Stack.Run.Complete",Name)
@@ -394,16 +492,40 @@ local function CreateRunner(name, profileModule)
 	---@param func function Function to enqueue; invalid types preserve existing validation errors.
 	---@param scope ATTProfilerScope? Explicit work scope; nil selects this Runner's stable fallback.
 	---@param ... any Original arguments, stored using the existing single/bucket convention.
-	local function QueueFunction(func, scope, ...)
+	QueuePlain = function(func, scope, ...)
 		if type(func) ~= "function" then error("Must be a 'function' type!"); end
 		FunctionQueue[QueueIndex] = func;
 		ProfileScopeQueue[QueueIndex] = scope;
-		ProfileState.jobs[QueueIndex] = ProfileJobs.Enqueue(scope or ProfileWorkScope, nil, QueueIndex - RunIndex + 1);
 		local arrs = select("#", ...);
 		if arrs == 1 then ParameterSingleQueue[QueueIndex] = ...;
 		elseif arrs > 1 then ParameterBucketQueue[QueueIndex] = { ... }; end
 		QueueIndex = QueueIndex + 1;
 	end
+	---Append optional job observations only while a capture can accept them.
+	---@param func function Function whose execution and parameters remain in the original queues.
+	---@param scope ATTProfilerScope? Explicit work scope; nil selects the Runner fallback.
+	---@param ... any Original arguments using the unchanged single/bucket convention.
+	QueueProfiled = function(func, scope, ...)
+		if type(func) ~= "function" then error("Must be a 'function' type!"); end
+		FunctionQueue[QueueIndex] = func;
+		ProfileScopeQueue[QueueIndex] = scope;
+		local workScope = scope or ProfileWorkScope;
+		if workScope.jobsEnabled then
+			local job = ProfileJobs.Enqueue(workScope, nil, QueueIndex - RunIndex + 1);
+			if job then
+				if not ProfileJobQueue then
+					ProfileJobQueue = {};
+					ProfileState.jobs = ProfileJobQueue;
+				end
+				ProfileJobQueue[QueueIndex] = job;
+			end
+		end
+		local arrs = select("#", ...);
+		if arrs == 1 then ParameterSingleQueue[QueueIndex] = ...;
+		elseif arrs > 1 then ParameterBucketQueue[QueueIndex] = { ... }; end
+		QueueIndex = QueueIndex + 1;
+	end
+	ProfileState.update();
 
 	-- Provides a utility which will process a given number of functions each frame in a Queue
 	local Runner = {

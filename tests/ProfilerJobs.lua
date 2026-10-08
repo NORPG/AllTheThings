@@ -153,6 +153,43 @@ runner.Run(function() now = now + 0.002; p.Reset(); end);
 Frame(); Frame();
 Contains(p.Report(), "No capture yet");
 
+-- A protected invocation entered while stopped can be adopted on a later resume.
+-- Its original plain continuation must finalize that job before the next function.
+if canYieldProtected then
+	app = NewApp(); p, runner = app.Profiler, app.FunctionRunner;
+	local firstScope = p.RegisterScope("test.adopted.first", "runner", 2, "time", "Previously unobserved invocation.");
+	local secondScope = p.RegisterScope("test.adopted.second", "runner", 2, "time", "Later invocation.");
+	runner.SetPerFrameDefault(20);
+	runner.QueueProfiled(firstScope, function() coroutine.yield(); now = now + 0.005; end);
+	runner.QueueProfiled(secondScope, function() now = now + 0.007; end);
+	runner.Run(); Frame();
+	assert(clockReads == 0);
+	assert(p.Start(30, 4, { include = "runner" })); Frame(0.100); Frame();
+	report = p.Report();
+	Contains(report, "test.adopted.first\t1\t5.000");
+	Contains(report, "test.adopted.second\t1\t7.000");
+	Contains(report, "1\ttest.adopted.first\tunknown\t-\tcompleted\tyes\tunknown\t5.000");
+	Contains(report, "2\ttest.adopted.second\tunknown\t-\tcompleted\tyes\tunknown\t7.000");
+	Contains(report, "runner.default.calls\t1");
+	assert(p.GetCurrentContext() == nil);
+end
+
+-- Capture can begin during a native resume before a later protected function
+-- starts and yields on that same frame. Its first segment must close at that yield.
+if canYieldProtected then
+	app = NewApp(); p, runner = app.Profiler, app.FunctionRunner;
+	runner.SetPerFrameDefault(20);
+	runner.Queue(function() assert(p.Start(30, 5, { include = "runner" })); end);
+	runner.Queue(function() now = now + 0.003; coroutine.yield(); now = now + 0.005; end);
+	runner.Run(); Frame();
+	Contains(p.Report(), "runner.default.work\t1\t3.000");
+	Frame(0.100); Frame();
+	report = p.Report();
+	Contains(report, "runner.default.work\t2\t8.000");
+	Contains(report, "\tcompleted\tyes\tunknown\t8.000\t108.000\t2\tunknown");
+	assert(p.GetCurrentContext() == nil);
+end
+
 -- Capture stop freezes an incomplete job; later resumes cannot overwrite it.
 if canYieldProtected then
 app = NewApp(); p, runner = app.Profiler, app.FunctionRunner;
