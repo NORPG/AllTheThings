@@ -1,4 +1,4 @@
--- Run from the repository root: lua tests/Profiler.lua
+-- Run from the repository root with Lua 5.1: lua5.1 tests/Profiler.lua
 -- Standalone behavioral checks for ATT's opt-in profiler.
 local now = 100
 local timers = {}

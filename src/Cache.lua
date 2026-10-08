@@ -1,5 +1,12 @@
 local _, app = ...;
 
+---@type ATTProfiler
+local Profiler = app.Profiler;
+local ScopeCacheSearch = Profiler.RegisterScope("cache.search", "cache", 1, "time", "Search across established ATT field caches.", "cache lookups");
+local ScopeCacheLookups = Profiler.RegisterScope("cache.lookups", "cache", 3, "counter", "Field and ID cache lookups performed.");
+local ScopeCacheHits = Profiler.RegisterScope("cache.hits", "cache", 3, "counter", "Cache lookups returning at least one group.");
+local ScopeCacheMisses = Profiler.RegisterScope("cache.misses", "cache", 3, "counter", "Cache lookups returning no groups.");
+
 -- Global locals
 local next, rawget
 	= next, rawget
@@ -38,22 +45,50 @@ local ArrayAppend = app.ArrayAppend
 -- All Cache Searching
 app.SearchForFieldInAllCaches = function(field, id)
 	-- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
+	local profileStart, profileSession = Profiler.Begin(ScopeCacheSearch);
+	local trackWork = ScopeCacheLookups.enabled;
+	local lookups, hits = 0, 0;
 	local groups = {};
 	for _,cache in next,AllCaches do
-		ArrayAppend(groups, cache[field][id]);
+		local cached = cache[field][id];
+		ArrayAppend(groups, cached);
+		if trackWork then
+			lookups = lookups + 1;
+			if #cached > 0 then hits = hits + 1; end
+		end
 	end
+	if trackWork then
+		Profiler.CountScope(ScopeCacheLookups, lookups, profileSession);
+		Profiler.CountScope(ScopeCacheHits, hits, profileSession);
+		Profiler.CountScope(ScopeCacheMisses, lookups - hits, profileSession);
+	end
+	Profiler.Finish(ScopeCacheSearch, profileStart, profileSession, trackWork and lookups or nil);
 	return groups;
 end;
 app.SearchForManyInAllCaches = function(field, ids)
 	-- Returns: A table containing all groups which contain the provided each of the provided ids for a given field from all established data caches.
+	local profileStart, profileSession = Profiler.Begin(ScopeCacheSearch);
+	local trackWork = ScopeCacheLookups.enabled;
+	local lookups, hits = 0, 0;
 	local groups = {};
 	local fieldCache;
 	for _,cache in next,AllCaches do
 		fieldCache = cache[field];
 		for i=1,#ids do
-			ArrayAppend(groups, fieldCache[ids[i]]);
+			local cached = fieldCache[ids[i]];
+			ArrayAppend(groups, cached);
+			if trackWork then
+				lookups = lookups + 1;
+				if #cached > 0 then hits = hits + 1; end
+			end
 		end
 	end
+	if trackWork then
+		Profiler.CountScope(ScopeCacheLookups, lookups, profileSession);
+		Profiler.CountScope(ScopeCacheHits, hits, profileSession);
+		Profiler.CountScope(ScopeCacheMisses, lookups - hits, profileSession);
+	end
+	Profiler.Finish(ScopeCacheSearch, profileStart, profileSession, trackWork and lookups or nil);
 	return groups;
 end
 app.CreateDataCache = function(name)
