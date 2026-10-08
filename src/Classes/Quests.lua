@@ -523,6 +523,13 @@ local OtherCharacterCompletedQuests = setmetatable({}, {
 		-- app.PrintDebug("AnyCharacterCompletedQuests=false",key)
 	end
 })
+---Get the completion recorded under the active quest tracking settings.
+---@param quest {questID: QuestID} Quest record whose completion is being displayed.
+---@return integer? completion Existing character or account completion, or nil when none is recorded.
+local function CollectedAsQuest(quest)
+	return app.TypicalCharacterCollected(CACHE, quest.questID)
+end
+
 local IsPartySyncActive = false;
 local CollectibleAsQuest = function(t)
 	-- consolidated representation of whether a Thing can be collectible via QuestID
@@ -1661,9 +1668,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return "quest:"..t.questID
 	end,
 	collectible = CollectibleAsQuest,
-	collected = function(t)
-		return app.TypicalCharacterCollected(CACHE, t.questID)
-	end,
+	collected = CollectedAsQuest,
 	altcollected = function(t)
 		local altQuests = t.altQuests;
 		if altQuests then
