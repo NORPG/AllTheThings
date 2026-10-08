@@ -297,7 +297,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -893,7 +893,7 @@ s(187932,206275,{f=1,u=2}),
 s(187933,206276,{f=24,u=2}),
 s(187750,206005,{f=23,u=2})}})}),
 h(-541,{awp=110002,g={
-s(230544,233053,{awp=110005,description="Quest is only available with an US IP. Codes are useable worldwide.\n\nIn the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your transmog.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until the Crown of the Violet Rose is yours!\n\nPromotion is available from December 2nd, 2024 until December 9th, 2024 (11:59PM UTC).",f=2,loc=40,rwp=110005,u=2}),
+s(230544,233053,{awp=110005,f=2,loc=40,rwp=110005,u=2}),
 p(4615,{itemID=228758,npcID=229846,rwp=110002,spellID=463079,u=2}),
 s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000,u=2}),
 p(4975,{awp=120001,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from March 2nd, 2026 until March 16th, 2026.",itemID=264366,npcID=257493,rwp=120001,spellID=1271843,u=2})}}),
@@ -995,10 +995,10 @@ p(1639,{awp=60102,b=1,itemID=118518,npcID=91226,sharedDescription="Obtained by p
 ach(11425,{awp=70200,sharedDescription="Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",u=2}),
 mnt(232405,{awp=70200,b=1,itemID=143631,lvl=10,sharedDescription="Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",u=2})})}}),
 h(-546,{awp=11201,u=2,g={
-p(757,{b=1,itemID=19055,npcID=14755,spellID=23531,u=2}),
 p(124,{b=1,itemID=22781,npcID=16456,spellID=28505,u=2}),
-p(758,{b=1,itemID=19054,npcID=14756,spellID=23530,u=2}),
-p(1073,{itemID=22780,npcID=16445,spellID=28487,u=2})}}),
+p(1073,{itemID=22780,npcID=16445,spellID=28487,u=2}),
+p(757,{b=1,itemID=19055,npcID=14755,spellID=23531,u=2}),
+p(758,{b=1,itemID=19054,npcID=14756,spellID=23530,u=2})}}),
 h(-547,{
 s(7628,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,u=2}),
 p(244,{awp=30300,b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,npcID=36871,spellID=69452,u=3}),
@@ -1606,7 +1606,7 @@ toy(202862,{b=1}),
 toy(202865,{b=1})}})}}),
 q(72809,{cost={{"i",202162,1}},repeatable=1,g={
 i(202163,{spellID=398642})}}),
-q(75223,{repeatable=1,g={
+q(75223,{qss={202395},repeatable=1,g={
 i(202395,{spellID=405852})}}),
 q(73171,{cost={{"i",202395,1}},providers={{"o",384744}},g={
 crit(57983,{achID=17360,id=1})}}),

@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,hqt,hqtbr,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateHQTBonusRep,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
 x(2,{awp=20003,g={
@@ -34251,7 +34251,7 @@ q(72687,{coords={
 [2112]={{58.1,35.2}}},DisablePartySync=1,lc={1,"questID",72688},lvl=60,minReputation={2510,11},qgs={193015},rwp=110000,u=2,g={
 i(198868,{b=1,minReputation={2510,11}})}}),
 q(68794,{description="Spawns Anywhere on Dragon Isles.",lvl=36,maps={2022,2023,2024,2025,2112},minReputation={2510,12},qgs={197478}}),
-ah(67074,{icon=134319,minReputation={2510,12},type="q",g={
+ah(67074,{icon=134319,type="q",g={
 q(67074,{coords={
 [2112]={{58.5,35.7}}},lvl=36,minReputation={2510,12},qgs={187678},sourceQuests={68794},g={
 i(197845,{minReputation={2510,12}})}}),
@@ -34279,7 +34279,7 @@ q(67084,{coords={
 [2025]={{60.5,58.6}}},lvl=36,minReputation={2510,12},qgs={192496},sourceQuests={67081},g={
 i(201781,{b=1,f=55,minReputation={2510,12},spellID=394713}),
 crit(57037,{achID=16808,id=6})}})}}),
-ah(72440,{awp=100100,icon=4638415,minReputation={2510,12},type="q",g={
+ah(72440,{awp=100100,icon=4638415,type="q",g={
 q(72440,{coords={
 [2025]={{60.4,58.8}}},lvl=10,minReputation={2510,12},qgs={198941},sourceQuests={67084}}),
 q(72441,{coords={
@@ -34294,7 +34294,7 @@ i(204474,{minReputation={2510,12}})}}),
 q(72444,{coords={
 [20]={{42.1,85.7}}},lvl=10,minReputation={2510,12},qgs={200078},sourceQuests={72443},g={
 toy(204686,{b=1,minReputation={2510,12}})}})}}),
-ah(75632,{awp=100107,icon=5172995,minReputation={2510,12},type="q",g={
+ah(75632,{awp=100107,icon=5172995,type="q",g={
 q(75632,{coords={
 [2112]={{60.8,39.2}}},lvl=10,minReputation={2510,12},qgs={187669},sourceQuests={72444}}),
 q(75633,{coords={
@@ -34325,7 +34325,7 @@ q(75637,{coords={
 q(75638,{coords={
 [2025]={{60.4,58.9}}},lvl=10,minReputation={2510,12},qgs={204605},sourceQuests={75637},g={
 mm(208200,{b=1,minReputation={2510,12},providers={{"i",196967}},questID=69167})}})}}),
-ah(77339,{awp=100200,icon=5245774,minReputation={2510,12},type="q",g={
+ah(77339,{awp=100200,icon=5245774,type="q",g={
 q(77339,{coords={
 [2112]={{53.8,61}}},lvl=10,minReputation={2510,12},qgs={208703},sourceQuests={75638}}),
 q(77377,{coords={
@@ -34345,8 +34345,8 @@ mm(208550,{b=1,minReputation={2510,12},providers={{"i",197014}},questID=69214}),
 ach(18958,{minReputation={2510,12},g={
 title(516,{minReputation={2510,12}}),
 crit(64495,{achID=19463,awp=100206,id=3})}}),
-h(-39,{minReputation={2510,12},g={
-i(208826,{b=1,lvl=30,minReputation={2510,12}})}})}}),
+h(-39,{
+i(208826,{b=1,lvl=30,minReputation={2510,12}})})}}),
 q(77341,{lvl=10,maps={2025},minReputation={2510,12},qss={208826},sourceQuests={77344},g={
 s(189610,208199,{f=9,minReputation={2510,12}})}})}}),
 q(72688,{coords={
@@ -42461,7 +42461,11 @@ i(257023,{b=1,f=55,lvl=80,sym={{"select","symselector",13},{"pop"},{"where","hea
 i(257026,{b=1,f=55,lvl=80,sym={{"select","symselector",13},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",13},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
 i(262346,{b=1,f=55,lvl=80,sym={{"select","symselector",13},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",13},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
 i(268545,{f=55,sym={{"select","symselector",13},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",13},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
-i(269768,{awp=120005,u=2})}})}}),
+i(269768,{awp=120005,u=2})}}),
+hqtbr(95000,{isWeekly=1,maxReputation={2764,20},rwp=120001,u=2}),
+hqtbr(95001,{isWeekly=1,maxReputation={2764,20},rwp=120001,u=2}),
+hqtbr(95002,{isWeekly=1,maxReputation={2764,20},rwp=120001,u=2}),
+hqtbr(95003,{isWeekly=1,maxReputation={2764,20},rwp=120001,u=2})}}),
 h(-31,{u=2,g={
 faction(2764,{u=2})}})}}),
 h(-766,{awp=120100,rwp=120200,g={
@@ -42544,7 +42548,12 @@ i(275917,{f=55}),
 i(275918,{f=55,sym={{"select","symselector",14},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",14},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(275822,{f=55,sym={{"select","symselector",14},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",14},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(275726,{f=55,sym={{"select","symselector",14},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",14},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
-i(276104,{f=55,sym={{"select","symselector",14},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",14},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}})})}}),
+i(276104,{f=55,sym={{"select","symselector",14},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",14},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(280131)}),
+hqtbr(98547,{isWeekly=1,maxReputation={2808,20}}),
+hqtbr(98548,{isWeekly=1,maxReputation={2808,20}}),
+hqtbr(98549,{isWeekly=1,maxReputation={2808,20}}),
+hqtbr(98550,{isWeekly=1,maxReputation={2808,20}})}}),
 h(-31,{
 faction(2808)})}}),
 h(-12,{
@@ -43165,38 +43174,38 @@ h(-58,{
 n(258181,{coords={
 [2393]={{55.8,66}}},g={
 h(-679,{
-de(17518,{cost={{"c",3392,800}},itemID=265794,spellID=1277174}),
-de(17519,{cost={{"c",3392,1200}},itemID=265795,spellID=1277175}),
-de(17459,{cost={{"c",3392,800}},itemID=265700,spellID=1276774}),
-de(17443,{cost={{"c",3392,1200}},itemID=265685,spellID=1276755}),
-de(17458,{cost={{"c",3392,800}},itemID=265699,spellID=1276773}),
-de(17442,{cost={{"c",3392,1200}},itemID=265684,spellID=1276754}),
-de(17464,{cost={{"c",3392,800}},itemID=265703,spellID=1276777}),
-de(17447,{cost={{"c",3392,1200}},itemID=265688,spellID=1276758}),
-de(17465,{cost={{"c",3392,800}},itemID=265704,spellID=1276778}),
-de(17449,{cost={{"c",3392,1200}},itemID=265689,spellID=1276760}),
-de(17457,{cost={{"c",3392,800}},itemID=265698,spellID=1276772}),
-de(17441,{cost={{"c",3392,1200}},itemID=265683,spellID=1276753}),
-de(17523,{cost={{"c",3392,800}},itemID=265799,spellID=1277179}),
-de(17521,{cost={{"c",3392,1200}},itemID=265797,spellID=1277177}),
-de(17467,{cost={{"c",3392,800}},itemID=265705,spellID=1276779}),
-de(17450,{cost={{"c",3392,1200}},itemID=265690,spellID=1276761}),
-de(17455,{cost={{"c",3392,800}},itemID=265696,spellID=1276768}),
-de(17439,{cost={{"c",3392,1200}},itemID=265681,spellID=1276749}),
-de(17522,{cost={{"c",3392,800}},itemID=265798,spellID=1277178}),
-de(17520,{cost={{"c",3392,1200}},itemID=265796,spellID=1277176}),
-de(17460,{cost={{"c",3392,800}},itemID=265701,spellID=1276775}),
-de(17444,{cost={{"c",3392,1200}},itemID=265686,spellID=1276756}),
-de(17472,{cost={{"c",3392,800}},itemID=265707,spellID=1276783}),
-de(17453,{cost={{"c",3392,1200}},itemID=265692,spellID=1276765}),
-de(17456,{cost={{"c",3392,800}},itemID=265697,spellID=1276769}),
-de(17440,{cost={{"c",3392,1200}},itemID=265682,spellID=1276751}),
-de(17474,{cost={{"c",3392,800}},itemID=265708,spellID=1276785}),
-de(17454,{cost={{"c",3392,1200}},itemID=265694,spellID=1276766}),
-de(17462,{cost={{"c",3392,800}},itemID=265702,spellID=1276776}),
-de(17446,{cost={{"c",3392,1200}},itemID=265687,spellID=1276757}),
-de(17469,{cost={{"c",3392,800}},itemID=265706,spellID=1276780}),
-de(17452,{cost={{"c",3392,1200}},itemID=265691,spellID=1276763}),
+de(17518,{cost={{"c",3392,400}},itemID=265794,spellID=1277174}),
+de(17519,{cost={{"c",3392,600}},itemID=265795,spellID=1277175}),
+de(17459,{cost={{"c",3392,400}},itemID=265700,spellID=1276774}),
+de(17443,{cost={{"c",3392,600}},itemID=265685,spellID=1276755}),
+de(17458,{cost={{"c",3392,400}},itemID=265699,spellID=1276773}),
+de(17442,{cost={{"c",3392,600}},itemID=265684,spellID=1276754}),
+de(17464,{cost={{"c",3392,400}},itemID=265703,spellID=1276777}),
+de(17447,{cost={{"c",3392,600}},itemID=265688,spellID=1276758}),
+de(17465,{cost={{"c",3392,400}},itemID=265704,spellID=1276778}),
+de(17449,{cost={{"c",3392,600}},itemID=265689,spellID=1276760}),
+de(17457,{cost={{"c",3392,400}},itemID=265698,spellID=1276772}),
+de(17441,{cost={{"c",3392,600}},itemID=265683,spellID=1276753}),
+de(17523,{cost={{"c",3392,400}},itemID=265799,spellID=1277179}),
+de(17521,{cost={{"c",3392,600}},itemID=265797,spellID=1277177}),
+de(17467,{cost={{"c",3392,400}},itemID=265705,spellID=1276779}),
+de(17450,{cost={{"c",3392,600}},itemID=265690,spellID=1276761}),
+de(17455,{cost={{"c",3392,400}},itemID=265696,spellID=1276768}),
+de(17439,{cost={{"c",3392,600}},itemID=265681,spellID=1276749}),
+de(17522,{cost={{"c",3392,400}},itemID=265798,spellID=1277178}),
+de(17520,{cost={{"c",3392,600}},itemID=265796,spellID=1277176}),
+de(17460,{cost={{"c",3392,400}},itemID=265701,spellID=1276775}),
+de(17444,{cost={{"c",3392,600}},itemID=265686,spellID=1276756}),
+de(17472,{cost={{"c",3392,400}},itemID=265707,spellID=1276783}),
+de(17453,{cost={{"c",3392,600}},itemID=265692,spellID=1276765}),
+de(17456,{cost={{"c",3392,400}},itemID=265697,spellID=1276769}),
+de(17440,{cost={{"c",3392,600}},itemID=265682,spellID=1276751}),
+de(17474,{cost={{"c",3392,400}},itemID=265708,spellID=1276785}),
+de(17454,{cost={{"c",3392,600}},itemID=265694,spellID=1276766}),
+de(17462,{cost={{"c",3392,400}},itemID=265702,spellID=1276776}),
+de(17446,{cost={{"c",3392,600}},itemID=265687,spellID=1276757}),
+de(17469,{cost={{"c",3392,400}},itemID=265706,spellID=1276780}),
+de(17452,{cost={{"c",3392,600}},itemID=265691,spellID=1276763}),
 de(25286,{awp=120100,cost={{"c",3392,100}},itemID=278123,spellID=1303636}),
 de(25289,{awp=120100,cost={{"c",3392,100}},itemID=278126,spellID=1303639}),
 de(25274,{awp=120100,cost={{"c",3392,100}},itemID=278130,spellID=1303642}),
