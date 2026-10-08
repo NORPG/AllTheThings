@@ -1,6 +1,6 @@
 -- Run from the repository root: lua tests/ProfilerEvents.lua
 -- Real event dispatch, queue coalescing, handler ordering, and labeled timings.
-local now, timers, errors = 100, {}, {};
+local now, timers, errors, clockReads = 100, {}, {}, 0;
 unpack = table.unpack or unpack;
 tremove = table.remove;
 tinsert = table.insert;
@@ -13,7 +13,7 @@ if not canYieldProtected then
 		return nativeXpcall(function() return func(unpack(args, 1, args.n)); end, handler);
 	end;
 end
-GetTimePreciseSec = function() return now; end;
+GetTimePreciseSec = function() clockReads = clockReads + 1; return now; end;
 C_Timer = { After = function(seconds, callback) timers[#timers + 1] = { seconds, callback }; end };
 C_AddOnProfiler, Enum = nil, nil;
 local app = {
@@ -129,5 +129,113 @@ app.HandleEvent("QueuedFailure"); Drain();
 assert(#errors == 1 and errors[1]:find("queued event failure", 1, true));
 Contains(p.Report(), "\tfailed\tno\t");
 
+-- Stopped immediate dispatch and cached callbacks never invoke observer methods.
+assert(p.Stop());
+local cachedHandleEvent = app.HandleEvent;
+local inactiveOrder = {};
+app.DesignateImmediateEvent("InactiveObservers");
+app.DesignateImmediateEvent("OnSourcesCollected");
+app.AddEventHandler("InactiveObservers", function(...)
+	assert(select("#", ...) == 3);
+	local first, middle, last = ...;
+	assert(first == "first" and middle == nil and last == "last");
+	inactiveOrder[#inactiveOrder + 1] = "arguments";
+end, false, "arguments");
+app.AddEventHandler("OnSourcesCollected", function() inactiveOrder[#inactiveOrder + 1] = "callback"; end, false, "callback");
+local observerNames = { "Begin", "Finish", "Count", "CountScope" };
+local jobNames = { "Enqueue", "Begin", "Pause", "Cancel" };
+local savedObservers, savedJobs = {}, {};
+for _, name in ipairs(observerNames) do
+	savedObservers[name] = p[name];
+	p[name] = function() error("inactive event invoked Profiler." .. name); end;
+end
+for _, name in ipairs(jobNames) do
+	savedJobs[name] = app.ProfilerJobs[name];
+	app.ProfilerJobs[name] = function() error("inactive event invoked Jobs." .. name); end;
+end
+local readsBefore = clockReads;
+local inactiveOK, inactiveError = pcall(function()
+	cachedHandleEvent("InactiveObservers", "first", nil, "last");
+	cachedHandleEvent("OnSourcesCollected");
+	app.CallbackEvent("OnSourcesCollected"); Frame();
+end);
+for name, method in pairs(savedObservers) do p[name] = method; end
+for name, method in pairs(savedJobs) do app.ProfilerJobs[name] = method; end
+assert(inactiveOK, inactiveError);
+assert(clockReads == readsBefore, "inactive immediate event read the profile clock");
+assert(table.concat(inactiveOrder, ",") == "arguments,callback,callback");
+assert(app.HandleEvent == cachedHandleEvent, "capture transitions replaced the public event function");
+
+-- Deferred labels survive an inactive enqueue and become partial jobs at execution.
+p.Reset();
+app.DesignateRunnerEvent("QueuedBeforeCapture");
+app.AddEventHandler("QueuedBeforeCapture", function(value)
+	assert(value == "retained argument"); now = now + 0.004;
+end, false, "retained");
+cachedHandleEvent("QueuedBeforeCapture", "retained argument");
+assert(p.Start(30, 4, { include = "events" }));
+Drain(); report = p.Report();
+Contains(report, "event.handler.QueuedBeforeCapture.retained\t1\t4.000");
+Contains(report, "event.handler.QueuedBeforeCapture.retained.calls\t1");
+Contains(report, "\tcompleted\tyes\tunknown\t4.000");
+assert(not report:find("event.accepted.QueuedBeforeCapture", 1, true));
+
+-- A plain dispatch keeps its entry policy; nested dispatches see a newly started capture.
+p.Reset();
+app.DesignateImmediateEvent("StartDuringDispatch");
+app.DesignateImmediateEvent("NestedAfterStart");
+local startOnce = true;
+app.AddEventHandler("NestedAfterStart", function() now = now + 0.003; end, false, "nested");
+app.AddEventHandler("StartDuringDispatch", function()
+	if startOnce then
+		startOnce = false;
+		assert(p.Start(30, 3));
+		cachedHandleEvent("NestedAfterStart");
+	end
+end, false, "start");
+app.AddEventHandler("StartDuringDispatch", function() now = now + 0.002; end, false, "after");
+cachedHandleEvent("StartDuringDispatch"); report = p.Report();
+Contains(report, "event.handler.NestedAfterStart.nested\t1\t3.000");
+assert(not report:find("event.handler.StartDuringDispatch", 1, true), "plain dispatch adopted a mid-handler capture");
+cachedHandleEvent("StartDuringDispatch");
+Contains(p.Report(), "event.handler.StartDuringDispatch.after\t1\t2.000");
+
+-- Stop inside a measured handler freezes the report; remaining handlers run plainly.
+app.DesignateImmediateEvent("StopDuringDispatch");
+local stoppedInside;
+app.AddEventHandler("StopDuringDispatch", function()
+	now = now + 0.001; assert(p.Stop()); stoppedInside = p.Report();
+end, false, "stop");
+app.AddEventHandler("StopDuringDispatch", function() now = now + 0.004; end, false, "after");
+assert(p.Start(30, 3));
+cachedHandleEvent("StopDuringDispatch");
+assert(p.Report() == stoppedInside, "remaining handlers changed the stopped capture");
+assert(not stoppedInside:find("event.handler.StopDuringDispatch.after", 1, true));
+
+-- Reset and replacement Start invalidate the dispatch generation without swallowing work.
+app.DesignateImmediateEvent("ResetDuringDispatch");
+local resetAfter = 0;
+app.AddEventHandler("ResetDuringDispatch", function() p.Reset(); end, false, "reset");
+app.AddEventHandler("ResetDuringDispatch", function() resetAfter = resetAfter + 1; end, false, "after");
+assert(p.Start(30, 3)); cachedHandleEvent("ResetDuringDispatch");
+assert(resetAfter == 1); Contains(p.Report(), "No capture yet");
+app.DesignateImmediateEvent("ReplaceDuringDispatch");
+local replaceAfter = 0;
+app.AddEventHandler("ReplaceDuringDispatch", function() assert(p.Start(30, 3)); end, false, "replace");
+app.AddEventHandler("ReplaceDuringDispatch", function() replaceAfter = replaceAfter + 1; now = now + 0.004; end, false, "after");
+assert(p.Start(30, 3)); cachedHandleEvent("ReplaceDuringDispatch");
+assert(replaceAfter == 1); Contains(p.Report(), "No measurements captured.");
+assert(not p.Report():find("event.handler.ReplaceDuringDispatch", 1, true), "old dispatch wrote into the replacement capture");
+assert(app.HandleEvent == cachedHandleEvent);
+
+-- Once handlers preserve deferred removal and argument forwarding on the plain path.
+p.Reset();
+app.DesignateImmediateEvent("PlainOnce");
+local onceCalls = 0;
+app.AddEventHandlerOnce("PlainOnce", function(value) assert(value == "once argument"); onceCalls = onceCalls + 1; end, false, "once");
+cachedHandleEvent("PlainOnce", "once argument"); Drain();
+cachedHandleEvent("PlainOnce", "once argument");
+assert(onceCalls == 1, "plain dispatch changed one-shot handler removal");
+
 if not canYieldProtected then print("SKIP: stock Lua 5.1 cannot yield across xpcall; deferred-handler yield/resume is exercised on yieldable runtimes."); end
-print("PASS: event stage labels, ordering/removal, deferred invocation counts, coalescing, overview gates, and original error semantics");
+print("PASS: event labels, inactive observer bypass, capture transitions, queued-before-capture work, ordering/removal, coalescing, and original errors");

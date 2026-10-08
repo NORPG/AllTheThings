@@ -490,6 +490,56 @@ for event in pairs(ProfiledEventIDs) do
 	ProfiledAcceptedScopes[event] = Profiler.RegisterScope("event.accepted." .. event, "events", 3, "counter", "Accepted event dispatches, excluding coalesced requests.");
 	ProfiledCoalescedScopes[event] = Profiler.RegisterScope("event.coalesced." .. event, "events", 3, "counter", "Dispatch requests suppressed while the event is queued.");
 end
+---Call immediate handlers without any profiler work or per-handler capture checks.
+---@param handlers function[] Existing handler array; mutation behavior matches the original loop.
+---@param scopes ATTProfilerScope[]? Unused labels retained for the measured dispatch signature.
+---@param handlerCount integer Number of handlers observed when the dispatch began.
+---@param ... any Original event arguments, forwarded without packing or normalization.
+local function DispatchPlainHandlers(handlers, scopes, handlerCount, ...)
+	for i=1,handlerCount do handlers[i](...); end
+end
+
+---Observe one immediate dispatch using its entry generation and fixed handler count.
+---A capture transition inside a handler leaves the remaining handlers unobserved in
+---this dispatch; nested and subsequent dispatches use the newly selected policy.
+---@param handlers function[] Existing handler array, preserving direct errors and removal behavior.
+---@param scopes ATTProfilerScope[]? Parallel timing labels maintained by handler registration.
+---@param handlerCount integer Handler count captured before the first handler runs.
+---@param ... any Original arguments forwarded directly to each handler.
+local function DispatchMeasuredHandlers(handlers, scopes, handlerCount, ...)
+	local sessionID = Profiler.SessionID;
+	for i=1,handlerCount do
+		if not Profiler.Enabled or sessionID ~= Profiler.SessionID then
+			for j=i,handlerCount do handlers[j](...); end
+			return;
+		end
+		local scope = scopes and scopes[i];
+		local profileStart, profileSession;
+		if scope and scope.enabled then
+			local calls = HandlerCallScopes[scope];
+			if calls.enabled then Profiler.CountScope(calls, nil, sessionID); end
+			profileStart, profileSession = Profiler.Begin(scope);
+		end
+		handlers[i](...);
+		if profileStart then Profiler.Finish(scope, profileStart, profileSession); end
+	end
+end
+
+-- Only capture boundaries select the immediate handler path and request counters.
+-- app.HandleEvent and callbacks keep their original function identity.
+local DispatchHandlers = DispatchPlainHandlers;
+local ProfileRequests, ProfileCounters = false, false;
+---Refresh dispatch policy after scope gates have changed at a capture boundary.
+---@param event string Session event; stopping preserves the active policy until stop.
+local function UpdateDispatchCapture(event)
+	if event == "stopping" then return; end
+	ProfileRequests = Profiler.Enabled;
+	ProfileCounters = Profiler.IsLevelEnabled(3, "events");
+	DispatchHandlers = Profiler.IsLevelEnabled(2, "events") and DispatchMeasuredHandlers or DispatchPlainHandlers;
+end
+Profiler.AddSessionListener(UpdateDispatchCapture);
+UpdateDispatchCapture("start");
+
 ---Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
 ---are processed in the proper sequence and timing in conjunction with other events
 ---Profile counters count dispatch requests before queued requests are coalesced;
@@ -497,7 +547,8 @@ end
 ---@param eventName string ATT event whose registered handlers should run.
 ---@param ... any Arguments forwarded to each registered handler.
 local function HandleEvent(eventName, ...)
-	if Profiler and Profiler.Enabled then
+	local dispatchHandlers = DispatchHandlers;
+	if ProfileRequests then
 		local profileID = ProfiledEventIDs[eventName]
 		if profileID then Profiler.Count(profileID) end
 	end
@@ -511,13 +562,17 @@ local function HandleEvent(eventName, ...)
 	local useRunner = not ImmediateEvents[eventName] and (#SequenceEventsStack > 0 or RunnerEvents[eventName] or IsRunning())
 	if useRunner then
 		if QueuedEvents[eventName] then
-			local coalesced = ProfiledCoalescedScopes[eventName];
-			if coalesced then Profiler.CountScope(coalesced); end
+			if ProfileCounters then
+				local coalesced = ProfiledCoalescedScopes[eventName];
+				if coalesced then Profiler.CountScope(coalesced); end
+			end
 			return;
 		end
 		QueuedEvents[eventName] = true
-		local accepted = ProfiledAcceptedScopes[eventName];
-		if accepted then Profiler.CountScope(accepted); end
+		if ProfileCounters then
+			local accepted = ProfiledAcceptedScopes[eventName];
+			if accepted then Profiler.CountScope(accepted); end
+		end
 		-- DebugStartRunnerEvent(eventName,...)
 		-- Run(DebugRunnerEventStart, eventName, handlerCount, ...)
 		for i=1,handlerCount do
@@ -529,22 +584,13 @@ local function HandleEvent(eventName, ...)
 		end
 		Run(RunnerEventCompleted, eventName)
 	else
-		local accepted = ProfiledAcceptedScopes[eventName];
-		if accepted then Profiler.CountScope(accepted); end
+		if ProfileCounters then
+			local accepted = ProfiledAcceptedScopes[eventName];
+			if accepted then Profiler.CountScope(accepted); end
+		end
 		-- DebugEventTriggered(eventName, ...)
 		-- DebugEventStart(eventName, handlerCount, ...)
-		for i=1,handlerCount do
-			-- DebugStartHandler("Handler",i)
-			local scope = scopes and scopes[i];
-			local profileStart, profileSession;
-			if scope then
-				Profiler.CountScope(HandlerCallScopes[scope]);
-				profileStart, profileSession = Profiler.Begin(scope);
-			end
-			handlers[i](...)
-			if scope then Profiler.Finish(scope, profileStart, profileSession); end
-			-- DebugEndHandler("Handler",i,"Done")
-		end
+		dispatchHandlers(handlers, scopes, handlerCount, ...);
 		-- DebugEventDone(eventName)
 		if AwaitedEvents then
 			CheckAwaitedEvents(eventName)
