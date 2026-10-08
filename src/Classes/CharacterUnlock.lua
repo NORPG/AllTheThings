@@ -53,6 +53,7 @@ local CreateCharacterUnlockQuestItem = app.ExtendClass("Item", "CharacterUnlockQ
 	collectible = Collectible,
 	collected = CollectedAsQuest,
 	saved = SavedAsQuest,
+	unavailableReason = app.GetQuestUnavailableReason,
 	characterUnlock = app.ReturnTrue,
 	IsClassIsolated = true,
 	variants = {
