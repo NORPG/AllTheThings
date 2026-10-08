@@ -787,7 +787,7 @@ local function DetermineMaxATTSourceID()
 	app.MaxSourceID = maxSourceID;
 	-- app.PrintDebug("MaxSourceID",maxSourceID)
 end
----Query one source's ownership with optional sampled Level 6 timing.
+---Query one source's ownership through the sampled Level 6 API selected for this capture.
 ---@param sourceID number Modified appearance source ID passed to the Blizzard ownership query.
 ---@return boolean known True when the normalized source ownership query reports collection.
 local function GetProfiledSourceOwnership(sourceID)
@@ -797,7 +797,7 @@ local function GetProfiledSourceOwnership(sourceID)
 	return known;
 end
 
----Query one broken source's metadata with optional sampled Level 6 timing.
+---Query one broken source's metadata through the sampled Level 6 API selected for this capture.
 ---@param sourceID number Appearance source ID whose metadata is required by the Unique filter.
 ---@return AppearanceSourceInfo? sourceInfo Source metadata returned by Blizzard, or nil for an unavailable source.
 local function GetProfiledSourceInfo(sourceID)
@@ -806,6 +806,24 @@ local function GetProfiledSourceInfo(sourceID)
 	Profiler.Finish(ScopeSourceInfo, profileStart, profileSession, 1);
 	return sourceInfo;
 end
+
+local HasSource = C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance;
+local GetBrokenSourceInfo = C_TransmogCollection_GetSourceInfo;
+---Select diagnostic APIs at capture boundaries, preserving direct calls for ordinary sweeps.
+---The loops read these aliases on each call so an API callback changing capture policy
+---takes effect on the next source. Finish rejects a call started in an earlier capture.
+---@param event string Lifecycle event; start selects eligible diagnostics, while stop/reset restores original APIs.
+local function UpdateTransmogCapture(event)
+	if event == "start" then
+		HasSource = ScopeSourceKnown.enabled and GetProfiledSourceOwnership or C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance;
+		GetBrokenSourceInfo = ScopeSourceInfo.enabled and GetProfiledSourceInfo or C_TransmogCollection_GetSourceInfo;
+	elseif event == "stop" or event == "reset" then
+		HasSource = C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance;
+		GetBrokenSourceInfo = C_TransmogCollection_GetSourceInfo;
+	end
+end
+Profiler.AddSessionListener(UpdateTransmogCapture);
+UpdateTransmogCapture("start"); -- Adopt any capture already active when Transmog loads.
 
 ---Rebuilds Unique collection credit from known sources using the current filters.
 ---Records the synchronous sweep in the capture active at entry; Units is the
@@ -844,12 +862,11 @@ local function CollectUniqueAppearances()
 	if brokenUniqueSources then
 		local brokenStart, brokenSession = Profiler.Begin(ScopeUniqueBroken);
 		local brokenEntries = 0;
-		local GetSourceInfo = ScopeSourceInfo.enabled and GetProfiledSourceInfo or C_TransmogCollection_GetSourceInfo;
 		if brokenStart then
 			for sourceID,_ in pairs(brokenUniqueSources) do
 				brokenEntries = brokenEntries + 1;
 				if not AccountSources[sourceID] then
-					local sInfo = GetSourceInfo(sourceID);
+					local sInfo = GetBrokenSourceInfo(sourceID);
 					if ItemSourceFilter(sInfo) then AccountUniqueSources_ADD(sourceID) end
 				end
 			end
@@ -857,7 +874,7 @@ local function CollectUniqueAppearances()
 			for sourceID,_ in pairs(brokenUniqueSources) do
 				-- reverse-check unknown source IDs missing from their visual's source list
 				if not AccountSources[sourceID] then
-					local sInfo = GetSourceInfo(sourceID);
+					local sInfo = GetBrokenSourceInfo(sourceID);
 					if ItemSourceFilter(sInfo) then AccountUniqueSources_ADD(sourceID) end
 				end
 			end
@@ -881,7 +898,6 @@ local function RefreshAppearanceSources()
 	-- app.PrintDebug("Completionist Refresh")
 	local trackWork = ScopeKnownSources.enabled;
 	local known = 0;
-	local HasSource = ScopeSourceKnown.enabled and GetProfiledSourceOwnership or C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance;
 	if trackWork then
 		for sourceID=1,app.MaxSourceID do
 			if HasSource(sourceID) then

@@ -227,11 +227,21 @@ An absent or partial Blizzard section does not invalidate ATT's own capture. API
 
 ## Limits and measurement overhead
 
-Recording is disabled by default, but the profiler libraries, registered scopes, and Runner instrumentation still load. Disabled boundary calls return without timing samples, Blizzard profiler calls, or sample records; they still incur Lua calls and checks. Stopping a capture does not unload this instrumentation.
+Recording is disabled by default, but the profiler libraries, scope registry, and scheduler labels still load. Capture Start/Stop/Reset listeners select private execution functions while public ATT function identities remain unchanged. Outside recording, Runner and pooled-coroutine resumes call the native resume function, and immediate events use a plain handler loop. These paths bypass profiler and job observer calls. Other explicitly instrumented module boundaries still call disabled Begin/Finish methods, which return without reading the clock or retaining samples. Stopping a capture does not unload the libraries.
 
-Cache, collection batches, cost scheduling, and Transmog sweeps select their counting or ordinary loop once, rather than checking profiling on every iteration. The Costs module selects its original item-count API outside eligible diagnostic captures and restores it on stop/reset. Accepted aggregates are reused on registered scopes within one session, and fixed jobs/timeline gates are computed at capture or scope-registration boundaries. Jobs format their immutable context labels only when needed and reuse them during later resumes.
+Runner queueing at Levels 1–3 uses the ordinary queue function and does not allocate a parallel job-record queue or pooled-coroutine job map. Level 4 and above allocate those observation containers only when an eligible job is retained. Real queued functions, arguments, and stable scope labels remain available across captures so work queued before Start can be observed later. Maintaining those labels, private function dispatch, and completion guards still has a cost. The guards allow a function entered before capture to finish an execution segment adopted on a later resume; no new protected call is introduced.
 
-An enabled capture still adds clock reads, aggregation, and any selected job/timeline/stack work. Storage budgets limit retained observations, not execution time or temporary allocations: overwriting a timeline entry still creates a new entry. Filters and diagnostic sampling reduce selected observations, but boundary calls remain. Use consistent profiling settings when comparing runs.
+Immediate event dispatch fixes its private handler path, handler count, and capture generation at entry. A plain dispatch stays plain if a handler starts recording. If a measured handler stops, resets, or replaces its capture, the remaining handlers in that dispatch run plainly, and stale timings cannot enter the replacement capture. Nested and subsequent dispatches select the current policy. Original argument forwarding, handler order, and direct error behavior are preserved.
+
+Cache, collection batches, cost scheduling, and Transmog sweeps select their counting or ordinary loop once, rather than checking profiling on every iteration. Costs and Transmog select their original or sampled API aliases at capture boundaries, including when their module loads during a capture already in progress. These call sites invoke the original APIs outside eligible Level 6 captures. If an API callback changes the capture, the next API call in the same sweep uses the updated alias; the call already in progress retains its original timing generation. Accepted aggregates are reused on registered scopes within one session, and fixed jobs/timeline gates are computed at capture or scope-registration boundaries.
+
+### Shared timing boundaries and timeline storage
+
+Measurements sharing the same execution boundary reuse its timestamp. A pooled coroutine's work scope, resume slice, and observed job execution share the same start and end boundaries. A Runner slice covers the entire resume, while each queued function retains its own entry and completion boundary. On a resumed function's yield, work/job observations and the slice can share that exit timestamp. Lifecycle and slow-operation timeline records reuse available boundary timestamps instead of reading the clock again. These are inclusive measurements: shared boundaries do not make overlapping durations additive or separate native execution from observer work within the boundary. Supplied boundaries still pass public API validation and generation checks. Sharing clock reads can therefore add Lua bookkeeping, and enabled mock-clock workloads can take more CPU time even when their clock-read counts fall. Compare each workload under the same policy.
+
+The timeline allocates slots as the ring fills, then updates each overwritten slot in place. Entries retain bounded scalar context such as job ID, origin, and parent ID; they do not retain job records or coroutine/thread references. Report construction formats that retained context into the displayed text. This reduces repeated entry and context-string creation while preserving the independent job budget and the report's ordered recent window. Explicit context strings and optional caller-stack text still require bounded storage.
+
+An enabled capture still adds clock reads, aggregation, and any selected job/timeline/stack work. Storage budgets limit retained observations, not execution time: a full ring still requires updating a slot, and a slow threshold still requires timing eligible work. Filters and diagnostic sampling reduce selected observations, but explicit module boundary calls remain. Use consistent profiling settings when comparing runs.
 
 A capture stores at most 64 Overview metric IDs plus its configured detail-ID allowance. Metric IDs are limited to 96 bytes. After an allowance is reached, samples for additional IDs in that category are dropped; existing IDs continue accumulating. Detail IDs cannot consume the Overview allowance. Each timing scope keeps aggregates and a fixed histogram rather than retaining every sample. The load-time scope registry also has a fixed 512-handle limit; rejected registrations use a permanently disabled handle and are reported without aborting ATT.
 
@@ -255,22 +265,28 @@ Include the game variant and build, ATT revision and data version, character cla
 
 ## Local checks and runtime limits
 
-Standalone tests exercise the capture core, level policy, login requests, commands, module call sites, Runner jobs, and ATT events using mocked WoW APIs. The tested runtimes are stock Lua 5.1.5 and Lua 5.5.1. The changed production Lua also passes the Lua 5.1 syntax check. These checks establish local behavior under the fixtures; they do not validate actual client API availability, UI behavior, frame scheduling, or capture overhead.
+Local verification for these capture-path changes uses stock Lua 5.1.5 exclusively, including the standalone tests and production Lua syntax checks. The fixtures cover the capture core, level policy, login requests, commands, module call sites, Runner jobs, ATT events, capture transitions, shared timestamps, and bounded timeline storage using mocked WoW APIs. They establish behavior under those fixtures; actual client API availability, UI behavior, frame scheduling, and capture overhead remain unverified.
 
-The Lua 5.1 Runner/event fixtures include a test-only adapter for WoW-style `xpcall` argument forwarding. They explicitly skip cases that yield through protected Runner or deferred-handler calls, which stock Lua 5.1 cannot execute with WoW's runtime behavior. The Lua 5.5 fixtures exercise those protected-call yield cases; standalone pooled-coroutine yield cases run in both runtimes. Passing either fixture does not establish that the same paths work in a particular WoW client.
+The Runner/event fixtures use a test-only adapter for WoW-style `xpcall` argument forwarding. Stock Lua 5.1 cannot yield through those protected calls with WoW's runtime behavior, so the corresponding Runner/deferred-handler yield cases are skipped and remain unverified in this round. Pooled-coroutine yield cases without that protected-call boundary can run under Lua 5.1. Validate protected yields, transitions across resumes, and completion/error handling in the intended WoW clients before treating the Draft as ready.
 
 ### Repeat local observer benchmarks
 
-Run from this branch's repository root:
+Run from this branch's repository root with a Lua 5.1 executable. Replace `lua5.1` below with its installed path if needed:
 
 ```text
-lua tests/ProfilerBenchmark.lua
-lua tests/ProfilerBenchmark.lua /path/to/baseline-worktree
+lua5.1 tests/ProfilerBenchmark.lua . current
+lua5.1 tests/ProfilerBenchmark.lua /path/to/baseline-worktree baseline
+lua5.1 tests/ProfilerCaptureBenchmark.lua . current
+lua5.1 tests/ProfilerCaptureBenchmark.lua /path/to/baseline-worktree baseline
 ```
 
-The optional source root selects the production engine and module bodies; use the same benchmark script and Lua runtime for both revisions. The fixture uses mocked APIs and a fixed clock to isolate observer work, warms each workload, and reports repeated-run medians. It checks function results, API invocations, workload counters, and report coverage outside the timed batches. It includes stopped/active boundaries, histogram ranges, large module loops, diagnostic API selection, and repeated job resumes.
+Use the same script from this branch and the same Lua 5.1 executable for both source roots. The optional first argument selects the production source root, the second labels the output, and a third argument filters case names. Run baseline and current sequentially to avoid competing benchmark processes.
 
-These measurements compare local Lua bookkeeping under the supplied workloads. They do not establish WoW clock/API costs, frame scheduling, GC behavior in the client, or an FPS improvement. Some workloads may be unchanged or fluctuate within measurement noise; retain the runtime, inputs, and both outputs when reporting a comparison.
+`ProfilerBenchmark.lua` isolates observer work in source-span fixtures with mocked APIs and a fixed clock. It covers stopped/active boundaries, histogram ranges, large module loops, diagnostic API selection, and repeated job resumes. Function results, API invocations, workload counters, and report coverage are checked outside the timed batches.
+
+`ProfilerCaptureBenchmark.lua` loads the complete production Profiler, Jobs, Runner, and Events files. Its 14 cases exercise queued Runner functions and pooled `StartCoroutine` execution at disabled/Levels 1, 3, 4, and 5, plus immediate `OnWindowUpdated` dispatch at disabled/Levels 2, 3, and 5. It warms an independent fixture, then reports the median, minimum, and maximum CPU time across seven trials and the exact precise-clock call count for each workload. Queueing, mocked frame scheduling, and callback execution are timed; initialization, Start/Stop, reports, and validation are outside the measured batch. Checks cover argument/nil conventions, original error handling, callback counts/checksums, timing/counter coverage, and finite job/timeline capacities, including job-budget exhaustion and ring overwrite.
+
+These measurements compare local Lua bookkeeping under the supplied workloads. CPU time from `os.clock` and the number of mocked precise-clock calls are not FPS measurements. They do not establish WoW clock/API costs, frame scheduling, GC behavior in the client, or an FPS improvement. Some workloads may be unchanged or fluctuate within measurement noise; retain the runtime, inputs, source revisions, and both outputs when reporting a comparison.
 
 ## In-game validation pending
 
@@ -288,4 +304,4 @@ Before this Draft is considered ready, validate the following in the intended Wo
 
 ## AI assistance
 
-AI assistance was used with **gpt-6-sol** for the initial Profiler implementation and tests, and **gpt-6.1-sol** for the standalone branch, reviews, LuaLS/function documentation, login scheduling, capture levels, instrumentation, observer-cost optimization, benchmarks, tests, and this guide. The pull request lists the checks actually performed. Full in-game verification is pending; illustrative values do not substitute for client measurements.
+AI assistance was used with **gpt-6-sol** for the initial Profiler implementation and tests, and **gpt-6.1-sol** for the standalone branch, reviews, LuaLS/function documentation, login scheduling, capture levels, instrumentation, observer-cost optimization, private capture-path selection, shared timing boundaries, bounded timeline storage, benchmarks, tests, and this guide. The pull request lists the checks actually performed. Full in-game verification is pending; illustrative values do not substitute for client measurements.

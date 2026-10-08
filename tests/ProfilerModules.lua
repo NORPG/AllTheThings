@@ -146,12 +146,37 @@ Contains(cache.Profiler.Report(), "cache.lookups\t4")
 -- Actual transmog ownership/Unique sweeps: diagnostic gating must not change API counts.
 local transmog = NewApp()
 local ownershipCalls, infoCalls, expanded = 0, 0, 0
+local ownershipTransition, infoTransition, missingInfo, infoFailure
+local diagnosticBegins = 0
+local originalTransmogBegin = transmog.Profiler.Begin
+transmog.Profiler.Begin = function(scope)
+  if scope.minLevel == 6 then diagnosticBegins = diagnosticBegins + 1 end
+  return originalTransmogBegin(scope)
+end
 transmog.MaxSourceID, transmog.Class, transmog.Presets = 6, "Hunter", { Hunter = {} }
 transmog.Settings = { Get = function() return false end }
 transmog.ItemSourceFilter = function(info) return info and info.allowed end
 transmog.testSources, transmog.testUnique = {}, {}
-transmog.Ownership = function(id) ownershipCalls = ownershipCalls + 1; return id % 2 == 1 end
-transmog.Info = function(id) infoCalls = infoCalls + 1; return { sourceID = id, allowed = true } end
+transmog.Ownership = function(id)
+  ownershipCalls = ownershipCalls + 1
+  if ownershipTransition then
+    local transition = ownershipTransition
+    ownershipTransition = nil
+    transition()
+  end
+  return id % 2 == 1
+end
+transmog.Info = function(id)
+  infoCalls = infoCalls + 1
+  if infoTransition then
+    local transition = infoTransition
+    infoTransition = nil
+    transition()
+  end
+  if infoFailure then error(infoFailure) end
+  if id == missingInfo then return nil end
+  return { sourceID = id, allowed = true }
+end
 transmog.Mark = function() expanded = expanded + 1 end
 ATTAccountWideData = { BrokenUniqueSources = { [2] = true, [3] = true } }
 local transmogCode = "local app = ...\nlocal Profiler = app.Profiler\n"
@@ -163,14 +188,18 @@ local MarkUniqueCollectedSourcesBySource = app.Mark
 local function AccountUniqueSources_ADD(id) AccountUniqueSources[id] = true end
 ]]
   .. SourceSpan("src/Classes/Transmog.lua", "local function GetProfiledSourceOwnership", "-- These events are technically")
-  .. "return RefreshAppearanceSources, CollectUniqueAppearances\n"
-local refresh, unique = assert(Compile(transmogCode, "@src/Classes/Transmog.lua instrumented sweeps"))(transmog)
+  .. "return RefreshAppearanceSources, CollectUniqueAppearances, function() return HasSource, GetBrokenSourceInfo end\n"
+local refresh, unique, transmogAliases = assert(Compile(transmogCode, "@src/Classes/Transmog.lua instrumented sweeps"))(transmog)
+local ownershipAlias, sourceInfoAlias = transmogAliases()
+assert(ownershipAlias == transmog.Ownership and sourceInfoAlias == transmog.Info)
 before = clockReads
 refresh(); unique()
+assert(diagnosticBegins == 0)
 assert(ownershipCalls == 6 and expanded == 3 and infoCalls == 1 and clockReads == before)
 assert(transmog.testSources[1] == 1 and transmog.testSources[2] == nil and transmog.testUnique[2])
 assert(transmog.Profiler.Start(30, 1))
 refresh(); unique()
+assert(diagnosticBegins == 0)
 report = transmog.Profiler.Report()
 Contains(report, "transmog.sources.scan\t1")
 Contains(report, "transmog.unique.collect\t1")
@@ -178,6 +207,7 @@ Absent(report, "transmog.unique.known\t")
 Absent(report, "transmog.api.known\t")
 assert(transmog.Profiler.Start(30, 3))
 refresh(); unique()
+assert(diagnosticBegins == 0)
 report = transmog.Profiler.Report()
 Contains(report, "transmog.sources.known\t3")
 Contains(report, "transmog.unique.expanded\t3")
@@ -186,11 +216,16 @@ Absent(report, "transmog.api.known\t")
 assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 2 }))
 local oldCalls = ownershipCalls
 refresh()
-assert(ownershipCalls - oldCalls == 6)
+assert(ownershipCalls - oldCalls == 6 and diagnosticBegins == 6)
+ownershipAlias, sourceInfoAlias = transmogAliases()
+assert(ownershipAlias ~= transmog.Ownership and sourceInfoAlias ~= transmog.Info)
 report = transmog.Profiler.Report()
 Contains(report, "transmog.api.known\t3")
 assert(transmog.Profiler.Start(30, 6, { include = "search", sampleEvery = 1 }))
+ownershipAlias, sourceInfoAlias = transmogAliases()
+assert(ownershipAlias == transmog.Ownership and sourceInfoAlias == transmog.Info)
 refresh(); unique()
+assert(diagnosticBegins == 6)
 report = transmog.Profiler.Report()
 Contains(report, "transmog.sources.scan\t1")
 Absent(report, "transmog.api.known\t")
@@ -210,12 +245,107 @@ Contains(report, "transmog.unique.expanded\t3")
 local brokenRow = assert(report:match("transmog%.unique%.broken[^\n]+"))
 assert(brokenRow:match("\t2$") ~= nil, "broken Units must include both visited entries")
 
+-- Capture changes inside an ownership API callback affect the next source, while
+-- the API call already in flight keeps its original generation and return value.
+transmog.Profiler.Reset()
+ownershipTransition = function() assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 })) end
+local callsBefore, beginsBefore = ownershipCalls, diagnosticBegins
+refresh()
+assert(ownershipCalls - callsBefore == 6 and diagnosticBegins - beginsBefore == 5)
+Contains(transmog.Profiler.Report(), "transmog.api.known\t5")
+Absent(transmog.Profiler.Report(), "transmog.sources.scan\t")
+assert(transmog.testSources[1] == 1 and transmog.testSources[2] == nil)
+
+assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 }))
+ownershipTransition = function() assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 2 })) end
+beginsBefore = diagnosticBegins
+refresh()
+assert(diagnosticBegins - beginsBefore == 6)
+Contains(transmog.Profiler.Report(), "transmog.api.known\t3")
+Absent(transmog.Profiler.Report(), "transmog.sources.scan\t")
+
+-- Rejected starts preserve the already-selected diagnostic API and sampling policy.
+assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 }))
+ownershipTransition = function() assert(not transmog.Profiler.Start(0, 6)) end
+refresh()
+Contains(transmog.Profiler.Report(), "transmog.api.known\t6")
+
+for _, transition in ipairs({
+  function() assert(transmog.Profiler.Stop()) end,
+  function() transmog.Profiler.Reset() end,
+  function() assert(transmog.Profiler.Start(30, 3)) end,
+  function() assert(transmog.Profiler.Start(30, 6, { include = "search" })) end,
+}) do
+  assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 }))
+  ownershipTransition = transition
+  callsBefore, beginsBefore = ownershipCalls, diagnosticBegins
+  refresh()
+  assert(ownershipCalls - callsBefore == 6 and diagnosticBegins - beginsBefore == 1)
+  Absent(transmog.Profiler.Report(), "transmog.api.known\t")
+  ownershipAlias, sourceInfoAlias = transmogAliases()
+  assert(ownershipAlias == transmog.Ownership and sourceInfoAlias == transmog.Info)
+end
+
+-- Broken-source API selection also follows policy changes inside the current sweep.
+ATTAccountWideData.BrokenUniqueSources = { [2] = true, [4] = true }
+transmog.Profiler.Reset()
+missingInfo = 2
+infoTransition = function() assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 })) end
+callsBefore, beginsBefore = infoCalls, diagnosticBegins
+unique()
+assert(infoCalls - callsBefore == 2 and diagnosticBegins - beginsBefore == 1)
+assert(transmog.testUnique[2] == nil and transmog.testUnique[4])
+Contains(transmog.Profiler.Report(), "transmog.api.sourceinfo\t1")
+Absent(transmog.Profiler.Report(), "transmog.unique.collect\t")
+missingInfo = nil
+assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 }))
+infoTransition = function() assert(transmog.Profiler.Stop()) end
+beginsBefore = diagnosticBegins
+unique()
+assert(diagnosticBegins - beginsBefore == 1)
+Absent(transmog.Profiler.Report(), "transmog.api.sourceinfo\t")
+ownershipAlias, sourceInfoAlias = transmogAliases()
+assert(ownershipAlias == transmog.Ownership and sourceInfoAlias == transmog.Info)
+
+-- API errors propagate unchanged through both selected paths.
+infoFailure = {}
+local okInfo, failedInfo = pcall(unique)
+assert(not okInfo and failedInfo == infoFailure)
+assert(transmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 }))
+okInfo, failedInfo = pcall(unique)
+assert(not okInfo and failedInfo == infoFailure)
+infoFailure = nil
+unique()
+Contains(transmog.Profiler.Report(), "transmog.api.sourceinfo\t2")
+
+-- A module loaded during an eligible capture selects both wrappers immediately.
+local lateTransmog = NewApp()
+lateTransmog.MaxSourceID, lateTransmog.Class, lateTransmog.Presets = transmog.MaxSourceID, transmog.Class, transmog.Presets
+lateTransmog.Settings, lateTransmog.ItemSourceFilter = transmog.Settings, transmog.ItemSourceFilter
+lateTransmog.Ownership, lateTransmog.Info, lateTransmog.Mark = transmog.Ownership, transmog.Info, transmog.Mark
+lateTransmog.testSources, lateTransmog.testUnique = {}, {}
+assert(lateTransmog.Profiler.Start(30, 6, { include = "transmog", sampleEvery = 1 }))
+local lateRefresh, lateUnique, lateAliases = assert(Compile(transmogCode, "@src/Classes/Transmog.lua late capture load"))(lateTransmog)
+local lateOwnership, lateInfo = lateAliases()
+assert(lateOwnership ~= lateTransmog.Ownership and lateInfo ~= lateTransmog.Info)
+lateRefresh(); lateUnique()
+Contains(lateTransmog.Profiler.Report(), "transmog.api.known\t6")
+Contains(lateTransmog.Profiler.Report(), "transmog.api.sourceinfo\t2")
+lateTransmog.Profiler.Reset()
+lateOwnership, lateInfo = lateAliases()
+assert(lateOwnership == lateTransmog.Ownership and lateInfo == lateTransmog.Info)
+
 -- Actual cost API alias preserves arguments and changes only at capture boundaries.
 local costs = NewApp()
-local itemQueries, queryError = 0, nil
+local itemQueries, queryError, itemTransition = 0, nil, nil
 costs.GetItemCount = function(id, bank, uses, reagent, warband)
   assert(id == 123 and bank == true and uses == nil and reagent == true and warband == true)
   itemQueries = itemQueries + 1
+  if itemTransition then
+    local transition = itemTransition
+    itemTransition = nil
+    transition()
+  end
   if queryError then error(queryError) end
   return 7
 end
@@ -273,6 +403,33 @@ assert(lateItemCountAlias() ~= lateCosts.GetItemCount)
 assert(lateOwnedCount(123) == 7)
 Contains(lateCosts.Profiler.Report(), "costs.api.itemcount\t1")
 assert(lateCosts.Profiler.Stop() and lateItemCountAlias() == lateCosts.GetItemCount)
+
+-- A query that starts a new session cannot contribute its old timing to that session.
+assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 }))
+itemTransition = function() assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 })) end
+assert(ownedCount(123) == 7)
+Absent(costs.Profiler.Report(), "costs.api.itemcount\t")
+assert(ownedCount(123) == 7)
+Contains(costs.Profiler.Report(), "costs.api.itemcount\t1")
+for _, transition in ipairs({
+  function() assert(costs.Profiler.Stop()) end,
+  function() costs.Profiler.Reset() end,
+  function() assert(costs.Profiler.Start(30, 3)) end,
+  function() assert(costs.Profiler.Start(30, 6, { include = "search" })) end,
+}) do
+  assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 }))
+  itemTransition = transition
+  assert(ownedCount(123) == 7 and itemCountAlias() == costs.GetItemCount)
+  Absent(costs.Profiler.Report(), "costs.api.itemcount\t")
+  before = clockReads
+  assert(ownedCount(123) == 7 and clockReads == before)
+end
+costs.Profiler.Reset()
+itemTransition = function() assert(costs.Profiler.Start(30, 6, { include = "costs", sampleEvery = 1 })) end
+assert(ownedCount(123) == 7 and itemCountAlias() ~= costs.GetItemCount)
+Absent(costs.Profiler.Report(), "costs.api.itemcount\t")
+assert(ownedCount(123) == 7)
+Contains(costs.Profiler.Report(), "costs.api.itemcount\t1")
 
 -- Actual cost refresh orchestration queues identical work without executing it inline.
 local costWork = NewApp()
