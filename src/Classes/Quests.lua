@@ -2375,6 +2375,7 @@ local CreateNestedQuest = app.ExtendClass("Quest", "QuestNested", "questID", {
 	RefreshCollectionOnly = true,
 	IsClassIsolated = true,
 	collectible = function(t)
+		if t.unavailableReason then return false end
 		-- don't consider locked quests which have been skipped if not tracking locked quests
 		if t.locked and not app.Settings:Get("Thing:QuestsLocked") then
 			return
