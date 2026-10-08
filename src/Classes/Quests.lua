@@ -36,6 +36,15 @@ local RepeatableQuestIcon = app.asset("Interface_Questd");
 -- Module locals
 local OneTimeQuests, ATTCharacterData
 local AccountWideLockedQuestsCache = {}
+
+---Reasons a tracked quest cannot be completed by the current character.
+---@enum ATTQuestUnavailableReason
+local QuestUnavailableReason = {
+	---A different character already completed this once-per-account quest.
+	CompletedByOtherCharacter = "CompletedByOtherCharacter",
+}
+app.QuestUnavailableReason = QuestUnavailableReason
+
 local Runner = app.CreateRunner("quests")
 -- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
 Runner.SetPerFrameDefault(10)
@@ -523,6 +532,41 @@ local OtherCharacterCompletedQuests = setmetatable({}, {
 		-- app.PrintDebug("AnyCharacterCompletedQuests=false",key)
 	end
 })
+---Check whether a recorded once-per-account completion belongs to another character.
+---@param questID QuestID? Quest whose completing character is being checked.
+---@return boolean completedByOtherCharacter
+local function IsOncePerAccountQuestCompletedByOtherCharacter(questID)
+	local completingCharacterGUID = OneTimeQuests[questID]
+	if not completingCharacterGUID then
+		return false
+	end
+	return completingCharacterGUID ~= app.GUID
+end
+
+---Get the reason a tracked quest cannot be completed under this character's settings.
+---@param quest ATTQuestAvailabilityContext Quest record being displayed.
+---@return ATTQuestUnavailableReason? reason Nil when this restriction does not apply.
+local function GetQuestUnavailableReason(quest)
+	local accountSetting = quest.characterUnlock and "CharacterUnlocks" or "Quests"
+	local trackingSetting = quest.characterUnlock and "CharacterUnlocks" or quest.CollectibleType or "Quests"
+	if not app.Settings.Collectibles[trackingSetting] or app.Settings.AccountWide[accountSetting] then
+		return
+	end
+	if not IsOncePerAccountQuestCompletedByOtherCharacter(quest.questID) then
+		return
+	end
+	-- An active quest is still actionable, even if the saved completing GUID conflicts.
+	if C_QuestLog_IsOnQuest(quest.questID) then
+		return
+	end
+	-- Keep actual character and Blizzard-native account completion authoritative.
+	if app.TypicalCharacterCollected("Quests", quest.questID, accountSetting) then
+		return
+	end
+	return QuestUnavailableReason.CompletedByOtherCharacter
+end
+app.GetQuestUnavailableReason = GetQuestUnavailableReason
+
 ---Get the completion recorded under the active quest tracking settings.
 ---@param quest {questID: QuestID} Quest record whose completion is being displayed.
 ---@return integer? completion Existing character or account completion, or nil when none is recorded.
@@ -1669,6 +1713,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	collectible = CollectibleAsQuest,
 	collected = CollectedAsQuest,
+	unavailableReason = GetQuestUnavailableReason,
 	altcollected = function(t)
 		local altQuests = t.altQuests;
 		if altQuests then
@@ -2998,3 +3043,10 @@ app.IsQuestFlaggedCompletedForObject = function() app.print("IsQuestFlaggedCompl
 app.IsQuestReadyForTurnIn = C_QuestLog_ReadyForTurnIn;
 app.IsQuestSaved = IsQuestSaved;
 end
+
+---Quest-backed record whose availability depends on the active tracking settings.
+---@class ATTQuestAvailabilityContext
+---@field questID QuestID? Quest represented by this record.
+---@field characterUnlock boolean? Whether this record uses Character Unlock tracking.
+---@field CollectibleType string? Tracking category, such as Quests or QuestsHidden.
+---@field unavailableReason ATTQuestUnavailableReason? Reason this quest cannot be completed by this character.
