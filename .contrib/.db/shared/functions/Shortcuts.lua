@@ -62,15 +62,15 @@
 ---@alias ATTSym ATTSymCommand[] Ordered symbolic commands used to resolve referenced objects.
 --- Tagged item, NPC, object, or spell provider reference.
 ---@alias ATTProvider
----| { [1]: "i", [2]: ItemID|ModItemID } item
----| { [1]: "n", [2]: NPCID } creature
----| { [1]: "o", [2]: ObjectID } object
----| { [1]: "s", [2]: SpellID } spell
+---| { [1]: "i", [2]: ItemID|ModItemID } Item
+---| { [1]: "n", [2]: NPCID } Creature
+---| { [1]: "o", [2]: ObjectID } Object
+---| { [1]: "s", [2]: SpellID } Spell
 --- Tagged gold, item, or currency cost entry.
 ---@alias ATTCost
----| { [1]: "g", [2]: number } gold
----| { [1]: "i", [2]: ItemID|ModItemID, [3]: number } item
----| { [1]: "c", [2]: CurrencyID, [3]: number } currency
+---| { [1]: "g", [2]: number } Gold
+---| { [1]: "i", [2]: ItemID|ModItemID, [3]: number } Item
+---| { [1]: "c", [2]: CurrencyID, [3]: number } Currency
 ---@alias x_axis number Horizontal map coordinate, expressed as a percentage.
 ---@alias y_axis number Vertical map coordinate, expressed as a percentage.
 ---@alias ATTObjectArray ATTObject[] Ordered list of parser objects.
