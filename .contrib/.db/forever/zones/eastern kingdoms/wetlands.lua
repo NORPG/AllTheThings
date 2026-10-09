@@ -94,6 +94,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					i(2916),	-- Gold Lion Shield
 					i(2917),	-- Tranquil Ring
+					i(270050, {	-- Fury Ring
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(98282, {	-- Alchemical Hazards
@@ -264,6 +267,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
+			q(98313, {	-- For Further Study
+				["sourceQuest"] = 98310,	-- Gleaning Our Future
+				["qg"] = 1077,	-- Prospector Whelgar
+				["qi"] = 280403,	-- Whelgar Relic Package (PQI!)
+				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 24,
+			}),
 			q(98293, {	-- Forced Disarmament
 				["provider"] = { "o", 672330 },	-- Dragonmaw Armaments
 				["qg"] = 2104,	-- Captain Stoutfist
@@ -295,6 +308,40 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					objective(4, {	-- Attack Plan: Ironforge destroyed
 						["provider"] = { "o", 671487 },
 					}),
+				},
+			}),
+			q(98310, {	-- Gleaning Our Future
+				["sourceQuest"] = 98216,	-- Understanding Our Present
+				["qg"] = 1077,	-- Prospector Whelgar
+				["qi"] = 280394,	-- Goaz Stone (PQI!)
+				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 24,
+				["groups"] = {
+					objective(1, {	-- 0/1 Heart of Ados
+						["provider"] = { "i", 280395 },	-- Heart of Ados
+						["coord"] = { 77.2, 47.4, MAP.WETLANDS },
+						["cr"] = 271338,	-- Ados
+					}),
+					objective(2, {	-- 0/1 Heart of Modr
+						["provider"] = { "i", 280396 },	-- Heart of Modr
+						["coord"] = { 51.6, 17.2, MAP.WETLANDS },
+						["cr"] = 271460,	-- Modr
+					}),
+					objective(3, {	-- 0/1 Heart of Golm
+						["provider"] = { "i", 280397 },	-- Heart of Golm
+						["coord"] = { 67.6, 71.8, MAP.WETLANDS },
+						["cr"] = 271462,	-- Golm
+					}),
+					objective(4, {	-- 0/1 Heart of Neru
+						["provider"] = { "i", 280398 },	-- Heart of Neru
+						["coord"] = { 60.9, 21.7, MAP.WETLANDS },
+						["cr"] = 271458,	-- Neru
+					}),
+					i(281319),	-- Golem War Cloak
+					i(281320),	-- Rune-Etched Ring
+					i(281321),	-- Giantstone Medallion
 				},
 			}),
 			q(305, {	-- In Search of The Excavation Team (1/2)
@@ -689,7 +736,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["lvl"] = 21,
 				["groups"] = {
 					objective(1, {	-- 0/12 Perfect Razormaw Egg
-						["provider"] = { "i", 280132 },	-- Perfect Razormaw Egg
+						["providers"] = {
+							{ "i", 280132 },	-- Perfect Razormaw Egg
+							{ "o", 671892 },	-- Razormaw Eggs
+							{ "o", 671931 },	-- Razormaw Egg
+						},
+						["coord"] = { 35.5, 20.2, MAP.WETLANDS },
 					}),
 				},
 			}),
@@ -698,7 +750,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["qg"] = 1077,	-- Prospector Whelgar
 				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 25,
+				["lvl"] = 22,
 				["groups"] = {
 					objective(1, {	-- 0/1 Ados Fragment
 						["providers"] = {
@@ -725,6 +777,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						},
 					}),
 					i(2913),	-- Silk Mantle of Gamn
+				},
+			}),
+			q(98216, {	-- Understanding Our Present
+				["sourceQuest"] = 299,	-- Uncovering the Past
+				["qg"] = 1077,	-- Prospector Whelgar
+				["qi"] = 279996,	-- Goaz Stone (PQI!)
+				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 23,
+				["groups"] = {
+					objective(1, {	-- 0/1 Ados Fragment
+						["provider"] = { "i", 279993 },	-- Titanic Keystone
+						["coord"] = { 35.3, 47.0, MAP.WETLANDS },
+						["cr"] = 270892,	-- Goaz Warder
+					}),
+					i(281304),	-- Prospector's Signet
+					i(281305),	-- Excavation Cloak
 				},
 			}),
 			q(464, {	-- War Banners
