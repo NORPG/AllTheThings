@@ -165911,14 +165911,14 @@ de(9480,{cost=50000000,itemID=253603,sourceAchievements={42117},spellID=1256822}
 de(9495,{cost=50000000,itemID=253618,sourceAchievements={42117},spellID=1256837})}}),
 n(256828,{coords={
 [2393]={{51.1,56.5}}},description="This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",g={
-de(9151,{cost=100000000,itemID=252668,spellID=1254915}),
-de(9149,{cost=100000000,itemID=252666,spellID=1254913}),
-de(9150,{cost=100000000,itemID=252667,spellID=1254914}),
-de(9152,{cost=100000000,itemID=252669,spellID=1254916}),
-de(1458,{cost=250000000,itemID=244668,spellID=1237798}),
-de(2231,{cost=250000000,itemID=246414,spellID=1242068}),
-de(1894,{cost=250000000,itemID=245939,spellID=1240036}),
-de(4843,{cost=250000000,itemID=248809,spellID=1247795})}}),
+de(9151,{cost=50000000,itemID=252668,sourceAchievements={61402},spellID=1254915,u=3}),
+de(9149,{cost=50000000,itemID=252666,sourceAchievements={61402},spellID=1254913,u=3}),
+de(9150,{cost=50000000,itemID=252667,sourceAchievements={61402},spellID=1254914,u=3}),
+de(9152,{cost=50000000,itemID=252669,sourceAchievements={61402},spellID=1254916,u=3}),
+de(1458,{cost=150000000,itemID=244668,sourceAchievements={61402},spellID=1237798,u=3}),
+de(2231,{cost=150000000,itemID=246414,sourceAchievements={61402},spellID=1242068,u=3}),
+de(1894,{cost=150000000,itemID=245939,sourceAchievements={61402},spellID=1240036,u=3}),
+de(4843,{cost=150000000,itemID=248809,sourceAchievements={61402},spellID=1247795,u=3})}}),
 n(250982,{coords={
 [2393]={{52.5,47.2}}},g={
 de(1236,{cost={{"c",2815,3000}},itemID=245330,spellID=1238430}),
