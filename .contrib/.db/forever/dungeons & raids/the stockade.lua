@@ -74,6 +74,9 @@ root(ROOTS.Instances, {
 						}),
 						i(1264),	-- Headbasher
 						i(3562),	-- Belt of Vindication
+						i(270036, {	-- Magistrate's Pantaloons
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(391, {	-- The Stockade Riots

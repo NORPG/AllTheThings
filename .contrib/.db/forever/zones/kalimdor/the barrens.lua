@@ -3270,6 +3270,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 				["description"] = "Can drop from any mob in the Barrens.",
 			}),
+			i(250187, {	-- Recipe: Tasty Raptor Bites (RECIPE!)
+				["coord"] = { 56.2, 37.6, MAP.THE_BARRENS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 3255,	-- Sunscale Screecher
+			}),
 			i(5165, {	-- Sunscale Feather
 				["crs"] = {
 					3254,	-- Sunscale Lashtail
