@@ -67,7 +67,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 		}),
 		n(QUESTS, {
-			q(98190, {	-- A Friend of the Family
+			q(98190, {	-- A Friend of the Family (1/2)
 				["sourceQuest"] = 98189,	-- Return the Statuette (2/2)
 				["qg"] = 2104,	-- Captain Stoutfist
 				["qi"] = 279595,	-- Menethil Statuette
@@ -76,6 +76,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["maps"] = { MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
+			}),
+			q(98191, {	-- A Friend of the Family (2/2)
+				["sourceQuest"] = 98190,	-- A Friend of the Family (1/2)
+				["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				["qi"] = 269598,	-- Menethil Statuette
+				["coord"] = { 80.0, 38.6, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+				["groups"] = {
+					i(281296),	-- Knight's Lance
+					i(281297),	-- Royal Dagger
+				},
 			}),
 			q(304, {	-- A Grim Task
 				["qg"] = 1071,	-- Longbraid the Grim
@@ -341,13 +354,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(98293, {	-- Forced Disarmament
 				["provider"] = { "o", 672330 },	-- Dragonmaw Armaments
-				["qg"] = 2104,	-- Captain Stoutfist
+				["coord"] = { 58.8, 45.1, MAP.WETLANDS },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 22,
 				["groups"] = {
 					objective(1, {	-- 0/30 Dragonmaw Armaments
-						["provider"] = { "i", 280369 },	-- Dragonmaw Armaments
+						["providers"] = {
+							{ "i", 280369 },	-- Dragonmaw Armaments
+							{ "o", 672336 },	-- Dragonmaw Armaments
+							{ "o", 672334 },	-- Dragonmaw Armaments
+							{ "o", 672337 },	-- Dragonmaw Armaments
+						},
+						["coord"] = { 64.8, 46.2, MAP.WETLANDS },
 					}),
 				},
 			}),
@@ -771,6 +790,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 			}),
+			q(98219, {	-- The Shamed Lieutenant
+				["sourceQuest"] = 98191,	-- A Friend of the Family (2/2)
+				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+			}),
 			q(631, {	-- The Thandol Span (1/3)
 				["qg"] = 1075,	-- Rhag Garmason
 				["coord"] = { 49.9, 18.2, MAP.WETLANDS },
@@ -815,6 +843,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						["cr"] = 1464,	-- Innkeeper Helbrek <Innkeeper>
 					}),
 				},
+			}),
+			q(98230, {	-- This Land Was Their Land
+				["sourceQuest"] = 474,	-- Defeat Nek'rosh
+				["qg"] = 2104,	-- Captain Stoutfist
+				["coord"] = { 9.8, 57.4, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 22,
 			}),
 			q(276, {	-- Tramping Paws
 				["sourceQuest"] = 463,	-- The Greenwarden

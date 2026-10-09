@@ -192,8 +192,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["lvl"] = 35,
 				["groups"] = {
 					objective(1, {	-- 0/1 Defend Shakes O'Breen
-							["provider"] = { "n", 2610 },	-- Shakes O'Breen <Blackwater Raiders>
-							["provider"] = { "n", 2775 },	-- Daggerspine Marauder
+						["providers"] = {
+							{ "n", 2610 },    -- Shakes O'Breen <Blackwater Raiders>
+							{ "n", 2775 },    -- Daggerspine Marauder
+						},
 					}),
 					i(4550),	-- Coldwater Ring
 					i(4549),	-- Seafire Band

@@ -180,7 +180,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(1076, {	-- Devils in Westfall
 				["sourceQuest"] = 1075,	-- A Scroll from Mauren
 				["qg"] = 4078,	-- Collin Mauren
-				["coord"] = { 43.1, 80.3, MAP.STORMWIND_CITY },
+				["coord"] = { 53.0, 86.6, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 17,
 				["groups"] = {

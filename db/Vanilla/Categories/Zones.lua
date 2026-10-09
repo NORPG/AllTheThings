@@ -10608,7 +10608,7 @@ s(159415,9521,{b=1,f=22,q=2})}}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003}),
 q(667,{coords={
 [1417]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},g={
-qo(1,{providers={{"n",2775}}}),
+qo(1,{providers={{"n",2610},{"n",2775}}}),
 i(4550,{b=1,f=52,q=2}),
 i(4549,{b=1,f=52,q=2})}}),
 q(662,{coords={
