@@ -7,72 +7,74 @@
 -- Parser-side documentation types used by the shortcut functions below.
 -- These annotations are documentation-only and do not change runtime data.
 
----@alias FileID integer
----@alias ExpansionID integer
----@alias ObjectID integer
----@alias ItemID integer
----@alias ModID integer
----@alias ModItemID number
----@alias SourceID integer
----@alias BonusID integer
----@alias IllusionID integer
----@alias ArtifactID integer
----@alias AzeriteEssenceID integer
----@alias DecorID integer
----@alias CurrencyID integer
----@alias FilterID integer
----@alias MountID integer
----@alias QuestID integer
----@alias ObjectiveID integer
----@alias MissionID integer
----@alias SpellID integer
----@alias SkillID integer
----@alias RecipeID integer
----@alias CreatureID integer
+---@alias FileID integer WoW file data ID for an asset.
+---@alias ExpansionID integer Expansion identifier.
+---@alias ObjectID integer Interactable world object ID, such as a chest.
+---@alias ItemID integer Base item ID.
+---@alias ModID integer Item modifier ID selecting an item variant.
+---@alias ModItemID number Encoded item identifier for modifier, bonus, or appearance variants.
+---@alias SourceID integer Transmog appearance source ID.
+---@alias BonusID integer Item bonus ID selecting an item variant.
+---@alias IllusionID integer Weapon enchantment illusion source ID.
+---@alias ArtifactID integer Artifact weapon appearance ID.
+---@alias AzeriteEssenceID integer Azerite essence ID.
+---@alias DecorID integer Housing decor entry ID.
+---@alias CurrencyID integer Currency type ID.
+---@alias FilterID integer ATT filter/category ID.
+---@alias MountID integer Mount spell ID used by ATT.
+---@alias QuestID integer Quest ID.
+---@alias ObjectiveID integer Objective index within a quest.
+---@alias MissionID integer Garrison mission ID.
+---@alias SpellID integer Spell ID.
+---@alias SkillID integer Profession or skill line ID.
+---@alias RecipeID integer Crafting recipe spell ID.
+---@alias CreatureID integer Creature entry ID.
 ---@alias NPCID integer Interactive creatures are NPCs.
 ---@alias ATTHeaderID integer Negative NPC IDs are used as ATT Headers
----@alias FollowerID integer
----@alias GarrisonBuildingID integer
----@alias GarrisonTalentID integer
----@alias RaceID integer
----@alias ClassID integer
----@alias ChrSpecializationID integer
----@alias TitleID integer
----@alias AchievementID integer
----@alias AchievementCategoryID integer
----@alias CriteriaID integer
----@alias JournalEncounterID integer
----@alias DungeonEncounterID integer
----@alias BattlePetSpeciesID integer
----@alias BattlePetAbilityID integer
----@alias BattlePetTypeID integer
----@alias FactionID integer
----@alias UiMapID integer
----@alias MapID integer
----@alias JournalInstanceID integer
----@alias FlightPathID integer
----@alias ExplorationID integer
----@alias DifficultyID integer
----@alias EventID integer
----@alias ATTUnobtainableStatus integer|string|string[]
+---@alias FollowerID integer Garrison follower ID.
+---@alias GarrisonBuildingID integer Garrison building ID.
+---@alias GarrisonTalentID integer Garrison or order hall research talent ID.
+---@alias RaceID integer Character race ID.
+---@alias ClassID integer Character class ID.
+---@alias ChrSpecializationID integer Character specialization ID.
+---@alias TitleID integer Character title ID.
+---@alias AchievementID integer Achievement ID.
+---@alias AchievementCategoryID integer Achievement category ID.
+---@alias CriteriaID integer Achievement criterion ID or legacy criterion index.
+---@alias JournalEncounterID integer Encounter Journal encounter ID.
+---@alias DungeonEncounterID integer Dungeon encounter ID, distinct from Encounter Journal IDs.
+---@alias BattlePetSpeciesID integer Battle pet species ID.
+---@alias BattlePetAbilityID integer Battle pet ability ID.
+---@alias BattlePetTypeID integer Battle pet family/type ID.
+---@alias FactionID integer Reputation faction ID.
+---@alias UiMapID integer UI map ID used for zones and coordinates.
+---@alias MapID integer Internal world or instance map ID.
+---@alias JournalInstanceID integer Encounter Journal instance ID.
+---@alias FlightPathID integer Flight path taxi node ID.
+---@alias ExplorationID integer Exploration area ID.
+---@alias DifficultyID integer Instance difficulty ID, including parser multi-difficulty IDs.
+---@alias EventID integer Event or holiday identifier used by ATT schedules and filters.
+---@alias ATTUnobtainableStatus integer|string|string[] Unobtainable/Classic phase code or helper-supplied timeline event(s).
 ---@alias ATTIgnoredValue string Parser sentinel value assigned via `IGNORED_VALUE`.
----@alias Region "US"|"EU"|"KR"|"TW"|"CN"
----@alias ATTTimelineEvent string
----@alias ATTSymCommand table
----@alias ATTSym ATTSymCommand[]
+---@alias Region "US"|"EU"|"KR"|"TW"|"CN" WoW portal region code.
+---@alias ATTTimelineEvent string Patch change string using created, added, removed, or deleted plus a patch version.
+---@alias ATTSymCommand table Symbolic command table beginning with a command name and optional arguments.
+---@alias ATTSym ATTSymCommand[] Ordered symbolic commands used to resolve referenced objects.
+--- Tagged item, NPC, object, or spell provider reference.
 ---@alias ATTProvider
 ---| { [1]: "i", [2]: ItemID|ModItemID } item
 ---| { [1]: "n", [2]: NPCID } creature
 ---| { [1]: "o", [2]: ObjectID } object
 ---| { [1]: "s", [2]: SpellID } spell
+--- Tagged gold, item, or currency cost entry.
 ---@alias ATTCost
 ---| { [1]: "g", [2]: number } gold
 ---| { [1]: "i", [2]: ItemID|ModItemID, [3]: number } item
 ---| { [1]: "c", [2]: CurrencyID, [3]: number } currency
----@alias x_axis number
----@alias y_axis number
----@alias ATTObjectArray ATTObject[]
----@alias ATTObjectArrayArray ATTObjectArray[]
+---@alias x_axis number Horizontal map coordinate, expressed as a percentage.
+---@alias y_axis number Vertical map coordinate, expressed as a percentage.
+---@alias ATTObjectArray ATTObject[] Ordered list of parser objects.
+---@alias ATTObjectArrayArray ATTObjectArray[] Ordered list of parser-object groups.
 
 --- Intentionally non-exact: parser objects are an extensible data model and
 --- may carry module/flavor-specific fields outside this central shortcut schema.
