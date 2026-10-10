@@ -884,6 +884,9 @@ app.DataStyleExporters = DataStyleExporters
 -- funcs.afterData(data, depth)
 --   Optional. If returns a string, it is inserted after current data.
 --
+-- funcs.getSub(data)
+--   Optional. If returns a table, this table is considered the 'Sub' data for the current data (this defaults to data.g)
+--
 -- funcs.beforeSub(data, depth)
 --   Optional. If returns a string, it is inserted before descendants are processed.
 --
@@ -915,7 +918,7 @@ end
 local function ExportDataRecursively(data, styleFuncs, strings, depth)
 	if not data then return end
 	depth = depth or 0
-	local g = data.g
+	local g = styleFuncs.getSub and styleFuncs.getSub(data) or data.g
 	if not g or type(g) ~= "table" then
 		g = nil
 	end
@@ -995,4 +998,34 @@ function app:ExportStylizedData(window, style)
 	-- join each style string with a newline for readability
 	local out = app.TableConcat(DataStyleStrings, nil, nil, "\n")
 	app:ShowPopupDialogWithMultiLineEditBox(out)
+end
+
+function app:RenderStylizedRawData(data, style)
+	-- style must exist and window must have data
+	local styleFuncs = DataStyleExporters[style]
+	if not styleFuncs then
+		app.print("Export Style not defined!",style)
+		return
+	end
+	if not data then
+		app.print("data not defined!")
+		return
+	end
+	local DataStyleStrings = {}
+	if styleFuncs.beforeExport then
+		local str = styleFuncs.beforeExport(data)
+		if str then
+			DataStyleStrings[#DataStyleStrings + 1] = str
+		end
+	end
+	ExportDataRecursively(data, styleFuncs, DataStyleStrings)
+	if styleFuncs.afterExport then
+		local str = styleFuncs.afterExport(data)
+		if str then
+			DataStyleStrings[#DataStyleStrings + 1] = str
+		end
+	end
+	-- join each style string with a newline for readability
+	local out = app.TableConcat(DataStyleStrings, nil, nil, "\n")
+	return out
 end
