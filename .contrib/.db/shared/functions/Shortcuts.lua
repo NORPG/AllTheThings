@@ -186,6 +186,8 @@
 ---@field pb? boolean|ATTIgnoredValue Pet-battle filter flag.
 ---@field isDaily? boolean|ATTIgnoredValue Daily-reset flag.
 ---@field isWeekly? boolean|ATTIgnoredValue Weekly-reset flag.
+---@field isMonthly? boolean Monthly-reset flag.
+---@field isYearly? boolean Yearly-reset flag.
 ---@field isWorldQuest? boolean Marks a world quest.
 ---@field isBreadcrumb? boolean Marks a breadcrumb quest which can be skipped by its follow-up.
 ---@field isLocked? boolean Declared lock flag; no ATTObject handler currently consumes it.
@@ -200,6 +202,29 @@
 ---@field autoname? string Type-and-ID string used to generate a name for supported object types.
 ---@field OnInit? string Lua function source applied to the constructed object during addon initialization.
 ---@field IgnoreWarnings? boolean Suppresses warnings when applying shared or bubbled fields.
+---@field isLimited? boolean Limited quantity; ATT shows a limited-quantity tooltip line.
+---@field altQuests? QuestID[] Alternate quest IDs that stand in for this quest.
+---@field learnedAt? integer Skill level at which the recipe is learned.
+---@field lockCriteria? { [1]: integer, [integer]: string|integer } Lock criteria: a match count followed by key/value pairs, e.g. `{ 1, "questID", 12345 }`. Keys seen in data: questID, lvl, factionID, achID, spellID, sourceID, toyID, renownID, decorID.
+---@field OnUpdate? string Lua source of a `function(t)` stored as a string, e.g. `[[function(t) ... end]]`. Run when the group updates.
+---@field lore? string Lore text for the group.
+---@field allianceQuestData? table Alliance-specific quest data (short form: aqd).
+---@field hordeQuestData? table Horde-specific quest data (short form: hqd).
+---@field maps_disp? UiMapID[] Maps shown in the information line when `maps` is not set.
+---@field sourceAchievement? AchievementID Source achievement (cached as `sourceAchievementID`).
+---@field modelScale? number Scale applied to the model preview camera distance in the tooltip.
+---@field DisablePartySync? boolean Passed to the quest lock check to disable party sync handling.
+---@field nextRecipeID? RecipeID Next recipe in a recipe chain.
+---@field previousRecipeID? RecipeID Previous recipe in a recipe chain.
+---@field OnTooltip? string Lua source of a `function(t, tooltipInfo)` stored as a string, e.g. `[[function(t, tooltipInfo) ... end]]`.
+---@field sourceAchievements? AchievementID[] Source achievements (cached as `sourceAchievementID`).
+---@field skipFill? boolean|integer Skips Fill processing for this object (`true` in data; Symlink sets `2`).
+---@field classes_display? ClassID[] Class list used for display only (the parser maps it to `c_disp`).
+---@field petBattleLvl? integer Pet battle level shown in the information line.
+---@field allianceQuestID? QuestID Alliance-only version of the quest ID. Handled by the parser.
+---@field hordeQuestID? QuestID Horde-only version of the quest ID. Handled by the parser.
+---@field extraTransmogSetItems? table Extra transmog set items; the parser converts them to `extraTransmogSetSpells`.
+---@field isBounty? boolean Marks a bounty entry; the Bounty window searches this field.
 ---@field _drop? string[] Parser fields to remove after processing.
 ---@field _noautomation? boolean Disables parser automation for this object.
 ---@field _remove? boolean Marks the object for parser-side removal.
