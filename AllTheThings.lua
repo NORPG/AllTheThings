@@ -1038,12 +1038,12 @@ local function BuildSourceParent(group)
 				parents[#parents + 1] = CreateObject(thing)
 			elseif isAchievement or GroupMatchesParams(thing, groupKey, keyValue) then
 				---@class ATTTempParentObject
-				---@field key string
-				---@field hash string
-				---@field npcID number
-				---@field creatureID number
-				---@field _keepSource boolean
-				---@field parent ATTTempParentObject
+				---@field key string Name of the field that identifies the source parent object.
+				---@field hash string Object hash used to exclude the original group from its source list.
+				---@field npcID number NPC ID associated with this source parent.
+				---@field creatureID number Creature ID identifying this source parent.
+				---@field _keepSource boolean Source-retention flag declared for temporary parent objects.
+				---@field parent ATTTempParentObject Next ancestor to inspect when searching for a source parent.
 				parent = thing.parent;
 				while parent do
 					-- app.PrintDebug("parent",parent.text,parent.key)

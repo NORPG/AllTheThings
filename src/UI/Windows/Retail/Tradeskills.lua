@@ -604,7 +604,7 @@ app:CreateWindow("Tradeskills", {
 			if not self.cachedTSMFrame then
 				for i,child in ipairs({UIParent:GetChildren()}) do
 					---@class ATTChildFrameTemplate: Frame
-					---@field headerBgCenter any
+					---@field headerBgCenter any Header background element used to identify the TradeSkillMaster crafting frame.
 					local f = child;
 					if f.headerBgCenter then
 						self.cachedTSMFrame = f;

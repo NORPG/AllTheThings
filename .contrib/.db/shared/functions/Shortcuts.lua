@@ -90,88 +90,88 @@
 ---@field model? integer Display/model ID.
 ---@field displayID? integer Display ID.
 ---@field sourceID? SourceID Appearance/source ID.
----@field achievementCategoryID? AchievementCategoryID
----@field artifactID? ArtifactID
----@field azeriteessenceID? AzeriteEssenceID
----@field buildingID? GarrisonBuildingID
----@field campsiteID? integer
----@field categoryID? integer
+---@field achievementCategoryID? AchievementCategoryID Achievement category ID.
+---@field artifactID? ArtifactID Artifact weapon appearance ID.
+---@field azeriteessenceID? AzeriteEssenceID Azerite essence ID.
+---@field buildingID? GarrisonBuildingID Garrison building ID.
+---@field campsiteID? integer Warband campsite scene ID.
+---@field categoryID? integer ATT category ID used for localized names and icons.
 ---@field classID? number Class ID, optionally specialization-encoded as a decimal.
----@field decorID? DecorID
+---@field decorID? DecorID Housing decor entry ID.
 ---@field expansionID? number Expansion ID, optionally patch-encoded as a decimal.
----@field followerID? FollowerID
----@field illusionID? IllusionID
----@field objectiveID? ObjectiveID
----@field petAbilityID? BattlePetAbilityID
----@field petTypeID? BattlePetTypeID
----@field professionnodeID? integer
----@field pvpRankID? integer
----@field raceID? RaceID
----@field setID? integer
----@field setHeaderID? integer
----@field setSubHeaderID? integer
----@field talentID? GarrisonTalentID
+---@field followerID? FollowerID Garrison follower ID.
+---@field illusionID? IllusionID Weapon enchantment illusion source ID.
+---@field objectiveID? ObjectiveID Objective index within the parent quest.
+---@field petAbilityID? BattlePetAbilityID Battle pet ability ID.
+---@field petTypeID? BattlePetTypeID Battle pet family/type ID.
+---@field professionnodeID? integer Profession specialization path/node ID.
+---@field pvpRankID? integer Classic PvP rank ID.
+---@field raceID? RaceID Character race ID represented by this object.
+---@field setID? integer Transmog gear set ID.
+---@field setHeaderID? integer Gear set ID used to display its shared label as a header.
+---@field setSubHeaderID? integer Gear set ID used to display its description as a subheader.
+---@field talentID? GarrisonTalentID Garrison or order hall research talent ID.
 ---@field itemID? ItemID General item ID.
 ---@field qs? ItemID item grants or starts a quest.
 ---@field qss? ItemID[] items grant or start a quest.
 ---@field qi? ItemID item exists specifically for use in a quest.
 ---@field qis? ItemID[] items exist specifically for use in a quest.
----@field modItemID? ModItemID
----@field modID? ModID
----@field bonusID? BonusID
----@field questID? QuestID
+---@field modItemID? ModItemID Encoded item identifier for modifier, bonus, or appearance variants.
+---@field modID? ModID Item modifier ID selecting an item variant.
+---@field bonusID? BonusID Item bonus ID selecting an item variant.
+---@field questID? QuestID Quest ID.
 ---@field sourceQuest? QuestID Prerequisite/source quest.
 ---@field sourceQuests? QuestID[] Prerequisite/source quests.
 ---@field sourceQuestNumRequired? integer Number of source quests required.
----@field spellID? SpellID
----@field npcID? NPCID
----@field creatureID? CreatureID
----@field encounterID? JournalEncounterID
----@field achievementID? AchievementID
----@field allianceAchievementID? AchievementID
----@field hordeAchievementID? AchievementID
----@field altAchID? AchievementID
----@field criteriaID? CriteriaID
----@field factionID? FactionID
----@field mapID? UiMapID
+---@field spellID? SpellID Spell ID.
+---@field npcID? NPCID NPC ID.
+---@field creatureID? CreatureID Creature ID; also accepted as an NPC identifier.
+---@field encounterID? JournalEncounterID Encounter Journal encounter ID.
+---@field achievementID? AchievementID Achievement ID.
+---@field allianceAchievementID? AchievementID Alliance achievement ID paired with a Horde variant.
+---@field hordeAchievementID? AchievementID Horde achievement ID paired with an Alliance variant.
+---@field altAchID? AchievementID Alternate achievement ID used for the Horde variant.
+---@field criteriaID? CriteriaID Achievement criterion ID or legacy criterion index.
+---@field factionID? FactionID Reputation faction ID.
+---@field mapID? UiMapID UI map ID for a zone or map object.
 ---@field map? UiMapID Legacy singular map field.
----@field maps? UiMapID[]
----@field difficultyID? DifficultyID
----@field difficulties? DifficultyID[]
----@field skillID? SkillID
----@field professionID? SkillID
----@field requireSkill? SkillID|ATTIgnoredValue
----@field headerID? ATTHeaderID
----@field filterID? FilterID
----@field currencyID? CurrencyID
----@field speciesID? BattlePetSpeciesID
----@field flightpathID? FlightPathID
----@field explorationID? ExplorationID
----@field missionID? MissionID
----@field mountID? MountID
----@field titleID? TitleID
----@field recipeID? RecipeID
----@field instanceID? JournalInstanceID
----@field savedInstanceID? MapID
----@field firstcraftID? RecipeID
----@field objectID? ObjectID
----@field rank? integer
----@field cr? CreatureID
----@field crs? CreatureID[]
----@field qg? NPCID
----@field qgs? NPCID[]
----@field coord? Coord|ATTIgnoredValue
----@field coords? Coord[]
----@field provider? ATTProvider|ATTIgnoredValue
----@field providers? ATTProvider[]
+---@field maps? UiMapID[] UI map IDs associated with this object.
+---@field difficultyID? DifficultyID Instance difficulty ID, including parser multi-difficulty IDs.
+---@field difficulties? DifficultyID[] Instance difficulties associated with this object.
+---@field skillID? SkillID Associated profession or skill line ID.
+---@field professionID? SkillID Profession skill line ID represented by this object.
+---@field requireSkill? SkillID|ATTIgnoredValue Required profession or skill line ID, or the parser ignore sentinel.
+---@field headerID? ATTHeaderID ATT header identifier interpreted according to the header type.
+---@field filterID? FilterID Alias for the ATT filter/category field `f`.
+---@field currencyID? CurrencyID Currency type ID.
+---@field speciesID? BattlePetSpeciesID Battle pet species ID.
+---@field flightpathID? FlightPathID Flight path taxi node ID.
+---@field explorationID? ExplorationID Exploration area ID.
+---@field missionID? MissionID Garrison mission ID.
+---@field mountID? MountID Mount spell ID used by ATT.
+---@field titleID? TitleID Character title ID.
+---@field recipeID? RecipeID Crafting recipe spell ID.
+---@field instanceID? JournalInstanceID Encounter Journal instance ID.
+---@field savedInstanceID? MapID Internal instance map ID used to look up saved lockouts.
+---@field firstcraftID? RecipeID Recipe spell ID whose first craft is tracked.
+---@field objectID? ObjectID Interactable world object ID, such as a chest.
+---@field rank? integer Rank discriminator for ranked objects such as Azerite essences.
+---@field cr? CreatureID Single creature associated with the object.
+---@field crs? CreatureID[] Creatures associated with the object.
+---@field qg? NPCID Single NPC quest giver.
+---@field qgs? NPCID[] NPC quest givers.
+---@field coord? Coord|ATTIgnoredValue Single map-coordinate tuple.
+---@field coords? Coord[] Map-coordinate tuples.
+---@field provider? ATTProvider|ATTIgnoredValue Single typed reference providing this content.
+---@field providers? ATTProvider[] Typed references providing this content.
 ---@field cost? number|ATTCost[] Copper amount or a list of cost entries.
----@field timeline? ATTTimelineEvent[]|ATTIgnoredValue
+---@field timeline? ATTTimelineEvent[]|ATTIgnoredValue Patch events describing when the object is created, added, removed, or deleted.
 ---@field _defaulttimeline? ATTTimelineEvent[] Parser fallback timeline used when no explicit timeline is supplied.
 ---@field forcetimeline? ATTTimelineEvent[] Parser-only timeline override consumed during expansion processing.
 ---@field e? EventID Event association applied by `applyevent`.
 ---@field symselector? integer Symbolic-selector ID.
----@field sym? ATTSym
----@field u? ATTUnobtainableStatus
+---@field sym? ATTSym Symbolic commands used to resolve referenced objects.
+---@field u? ATTUnobtainableStatus Unobtainable status or Classic phase.
 ---@field up? number|string Encoded upgrade target or parser sentinel such as `IGNORED_VALUE`.
 ---@field r? RaceID Race restriction.
 ---@field races? RaceID[]|ATTIgnoredValue Race restrictions.
@@ -181,126 +181,126 @@
 ---@field lvl? integer|{ [1]: integer, [2]: integer? } Minimum level, or a level tuple with an optional maximum.
 ---@field minReputation? { [1]: FactionID, [2]: integer } Reputation requirement tuple.
 ---@field maxReputation? { [1]: FactionID, [2]: integer } Reputation requirement tuple.
----@field customCollect? string|string[]
+---@field customCollect? string|string[] Custom collection requirement key(s) for character-specific availability.
 ---@field pb? boolean|ATTIgnoredValue Pet-battle filter flag.
----@field isDaily? boolean|ATTIgnoredValue
----@field isWeekly? boolean|ATTIgnoredValue
----@field isWorldQuest? boolean
----@field isBreadcrumb? boolean
----@field isLocked? boolean
----@field isRaid? boolean
+---@field isDaily? boolean|ATTIgnoredValue Daily-reset flag.
+---@field isWeekly? boolean|ATTIgnoredValue Weekly-reset flag.
+---@field isWorldQuest? boolean Marks a world quest.
+---@field isBreadcrumb? boolean Marks a breadcrumb quest which can be skipped by its follow-up.
+---@field isLocked? boolean Declared lock flag; no ATTObject handler currently consumes it.
+---@field isRaid? boolean Marks raid content for display and quest filtering.
 ---@field collectible? boolean Whether the object is collectible.
 ---@field repeatable? boolean Whether the object is repeatable.
 ---@field gender? integer Gender restriction/variant ID.
 ---@field pvp? boolean PvP requirement/filter flag.
 ---@field cm? boolean Challenge-mode requirement/filter flag.
 ---@field sr? boolean Skyriding requirement/filter flag.
----@field ignoreBonus? boolean
----@field autoname? string
----@field OnInit? string
+---@field ignoreBonus? boolean Suppresses item modifier and bonus IDs during parser processing.
+---@field autoname? string Type-and-ID string used to generate a name for supported object types.
+---@field OnInit? string Lua function source applied to the constructed object during addon initialization.
 ---@field IgnoreWarnings? boolean Suppresses warnings when applying shared or bubbled fields.
 ---@field _drop? string[] Parser fields to remove after processing.
 ---@field _noautomation? boolean Disables parser automation for this object.
 ---@field _remove? boolean Marks the object for parser-side removal.
 ---@field _multiDifficultyID? DifficultyID Original multi-difficulty ID retained for parser/instance processing.
----@field _ignore? boolean
----@field _DATAGROUP? string
----@field _DATAGROUPS? string[]
+---@field _ignore? boolean Declared ignore flag; no parser handler currently consumes it.
+---@field _DATAGROUP? string Group key used by constructors to register the object in DATAGROUP and IDGROUP.
+---@field _DATAGROUPS? string[] Group keys used by constructors to register the object in DATAGROUP and IDGROUP.
 ---@field [integer] ATTObject Array-style group entries.
 
 ---@class ATTAchievementObject: ATTObject
----@field achievementID? AchievementID
----@field allianceAchievementID? AchievementID
----@field hordeAchievementID? AchievementID
+---@field achievementID? AchievementID Achievement ID represented by this object.
+---@field allianceAchievementID? AchievementID Alliance achievement ID for a faction-specific achievement pair.
+---@field hordeAchievementID? AchievementID Horde achievement ID for a faction-specific achievement pair.
 
 ---@class ATTAchievementCriteriaObject: ATTObject
----@field criteriaID CriteriaID
+---@field criteriaID CriteriaID Achievement criterion ID or legacy criterion index.
 
 ---@class ATTItemObject: ATTObject
----@field itemID ItemID
+---@field itemID ItemID Item ID represented by this object.
 
 ---@class ATTQuestObject: ATTObject
----@field questID QuestID
+---@field questID QuestID Quest ID represented by this object.
 
 ---@class ATTSpellObject: ATTObject
----@field spellID SpellID
+---@field spellID SpellID Spell ID represented by this object.
 
 ---@class ATTNPCObject: ATTObject
----@field npcID NPCID
+---@field npcID NPCID NPC ID represented by this object.
 
 ---@class ATTCreatureObject: ATTObject
----@field creatureID CreatureID
+---@field creatureID CreatureID Creature ID represented by this object.
 
 ---@class ATTEncounterObject: ATTObject
----@field encounterID JournalEncounterID
+---@field encounterID JournalEncounterID Encounter Journal encounter ID represented by this object.
 
 ---@class ATTFactionObject: ATTObject
----@field factionID FactionID
+---@field factionID FactionID Reputation faction ID represented by this object.
 
 ---@class ATTMapObject: ATTObject
----@field mapID UiMapID
+---@field mapID UiMapID UI map ID represented by this object.
 
 ---@class ATTCurrencyObject: ATTObject
----@field currencyID CurrencyID
+---@field currencyID CurrencyID Currency ID represented by this object.
 
 ---@class ATTDifficultyObject: ATTObject
----@field difficultyID DifficultyID
+---@field difficultyID DifficultyID Difficulty ID represented by this object, including parser multi-difficulty IDs.
 
 ---@class ATTHeaderObject: ATTObject
----@field headerID ATTHeaderID
+---@field headerID ATTHeaderID ATT header ID represented by this object.
 ---@field SortPriority? number Parser root-category sort priority.
 
 ---@class ATTProfessionObject: ATTObject
----@field professionID SkillID
+---@field professionID SkillID Profession skill ID represented by this object.
 
 ---@class ATTRecipeObject: ATTObject
----@field recipeID RecipeID
----@field requireSkill? SkillID|ATTIgnoredValue
+---@field recipeID RecipeID Recipe spell ID represented by this object.
+---@field requireSkill? SkillID|ATTIgnoredValue Required profession skill ID, or the parser ignore sentinel.
 ---@field _requireSkill? SkillID Parser-side recipe profession requirement cache.
 
 ---@class ATTInstanceObject: ATTObject
----@field instanceID JournalInstanceID
----@field savedInstanceID? MapID
+---@field instanceID JournalInstanceID Encounter Journal instance ID represented by this object.
+---@field savedInstanceID? MapID Instance map ID used to look up the character's saved lockouts.
 
 ---@class ATTFirstCraftObject: ATTObject
----@field firstcraftID RecipeID
----@field questID? QuestID
+---@field firstcraftID RecipeID Recipe spell ID whose first craft is tracked.
+---@field questID? QuestID Quest ID used to track completion of this first craft when available.
 
 ---@class ATTBattlePetObject: ATTObject
----@field speciesID BattlePetSpeciesID
+---@field speciesID BattlePetSpeciesID Battle-pet species ID represented by this object.
 
 ---@class ATTExplorationObject: ATTObject
----@field explorationID ExplorationID
+---@field explorationID ExplorationID Exploration area ID represented by this object.
 
 ---@class ATTFlightPathObject: ATTObject
----@field flightpathID FlightPathID
+---@field flightpathID FlightPathID Flight-path node ID represented by this object.
 
 ---@class ATTMissionObject: ATTObject
----@field missionID MissionID
+---@field missionID MissionID Garrison mission ID represented by this object.
 
 ---@class ATTMountObject: ATTObject
----@field mountID MountID
+---@field mountID MountID Mount spell ID represented by this object.
 
 ---@class ATTTitleObject: ATTObject
----@field titleID TitleID
+---@field titleID TitleID Character title ID represented by this object.
 
 ---@class Coord
----@field [1] x_axis
----@field [2] y_axis
----@field [3] UiMapID
+---@field [1] x_axis Horizontal map position expressed as a percentage.
+---@field [2] y_axis Vertical map position expressed as a percentage.
+---@field [3] UiMapID UI map ID on which the position is located.
 
 ---@class ATTLocalizationStringTable
----@field en string
----@field de? string
----@field es? string
----@field mx? string
----@field fr? string
----@field it? string
----@field ko? string
----@field pt? string
----@field ru? string
----@field cn? string
----@field tw? string
+---@field en string Default English text or programmatic localization token.
+---@field de? string German localized text (`deDE`).
+---@field es? string European Spanish localized text (`esES`).
+---@field mx? string Mexican Spanish localized text (`esMX`).
+---@field fr? string French localized text (`frFR`).
+---@field it? string Italian localized text (`itIT`).
+---@field ko? string Korean localized text (`koKR`).
+---@field pt? string Brazilian Portuguese localized text (`ptBR`).
+---@field ru? string Russian localized text (`ruRU`).
+---@field cn? string Simplified Chinese localized text (`zhCN`).
+---@field tw? string Traditional Chinese localized text (`zhTW`).
 
 ---@class ATTLocalizationStringData
 ---@field constant string Unique parser constant name.
@@ -317,23 +317,23 @@
 ---@field readable string Human-readable parser label.
 ---@field text string|ATTLocalizationStringTable Localized header text.
 ---@field constant? string Unique header constant.
----@field icon? string|FileID
----@field sort? number
----@field SortPriority? number
----@field eventID? EventID
----@field eventIDs? EventID[]
+---@field icon? string|FileID Header icon texture path or file ID.
+---@field sort? number Header child-sorting setting.
+---@field SortPriority? number Parser root-category sort priority.
+---@field eventID? EventID Primary event ID associated with this header.
+---@field eventIDs? EventID[] Additional event IDs remapped to this header's `eventID`.
 ---@field export? boolean Whether this header definition is exported to generated addon data.
 ---@field npcfill? boolean Whether sourced Things may be filled into matching NPC sources.
 
 --- Mutable header while its schedule and standalone flag are normalized.
 ---@class ATTHeaderProcessingDefinition: ATTHeaderDefinitionBase
----@field eventSchedule? number[]|string
----@field standalone? boolean
+---@field eventSchedule? number[]|string Numeric schedule input or its generated Lua schedule expression during processing.
+---@field standalone? boolean Whether this header may be retained without child groups; defaults to `false`.
 
 --- Raw definition accepted by `createHeader`.
 ---@class ATTHeaderInputDefinition: ATTHeaderDefinitionBase
 ---@field eventSchedule? number[] Numeric schedule definition consumed by `createHeader`.
----@field standalone? boolean
+---@field standalone? boolean Whether this header may be retained without child groups; defaults to `false`.
 
 --- Processed definition stored in `CustomHeaders`.
 ---@class ATTHeaderDefinition: ATTHeaderDefinitionBase
@@ -353,46 +353,46 @@
 ---| { year: integer, month: integer, day?: integer, monthDay: integer, hour?: integer, minute?: integer, weekday?: integer }
 
 ---@class ATTSymSelectorTable
----@field select fun(key: string): ATTSymCommand
+---@field select fun(key: string): ATTSymCommand Builds a symbolic `select` command for the named selector ID.
 ---@field [string] integer Selector IDs; the reserved `select` method is declared separately.
 
 --- Closed root-category registry; runtime rejects unknown keys via `__index`.
 ---@class (exact) ATTRootConstants
----@field AchievementDB string
----@field Achievements string
----@field Arcantina string
----@field BlackMarket string
----@field Character string
----@field Craftables string
----@field Delves string
----@field ExpansionFeatures string
----@field Factions string
----@field GroupFinder string
----@field HiddenAchievementTriggers string
----@field HiddenCurrencyTriggers string
----@field HiddenQuestTriggers string
----@field Holidays string
----@field Housing string
----@field InGameShop string
----@field Instances string
----@field ItemDB string
----@field ItemDBConditional string
----@field NeverImplemented string
----@field PVP string
----@field PetBattles string
----@field Professions string
----@field Promotions string
----@field RecipeDB string
----@field SeasonOfDiscovery string
----@field Secrets string
----@field Sourceless string
----@field TradingPost string
----@field Uncollectible string
----@field Unsorted string
----@field WorldDrops string
----@field WorldEvents string
----@field Zones string
----@field AprilFools string
+---@field AchievementDB string Root-category key for the achievement metadata database.
+---@field Achievements string Root-category key for achievement content.
+---@field Arcantina string Root-category key for Arcantina content.
+---@field BlackMarket string Root-category key for Black Market Auction House content.
+---@field Character string Root-category key for character-related content.
+---@field Craftables string Root-category key for crafted items.
+---@field Delves string Root-category key for Delve content.
+---@field ExpansionFeatures string Root-category key for expansion-specific features.
+---@field Factions string Root-category key for reputation faction content.
+---@field GroupFinder string Root-category key for Group Finder content.
+---@field HiddenAchievementTriggers string Root-category key for hidden achievement triggers.
+---@field HiddenCurrencyTriggers string Root-category key for hidden currency triggers.
+---@field HiddenQuestTriggers string Root-category key for hidden quest triggers.
+---@field Holidays string Root-category key for holiday content.
+---@field Housing string Root-category key for player housing content.
+---@field InGameShop string Root-category key for in-game shop content.
+---@field Instances string Root-category key for dungeon and raid instances.
+---@field ItemDB string Root-category key for the item metadata database.
+---@field ItemDBConditional string Root-category key for conditional item metadata.
+---@field NeverImplemented string Root-category key for content never implemented in the game.
+---@field PVP string Root-category key for player-versus-player content.
+---@field PetBattles string Root-category key for pet-battle content.
+---@field Professions string Root-category key for profession content.
+---@field Promotions string Root-category key for promotional content.
+---@field RecipeDB string Root-category key for the recipe metadata database.
+---@field SeasonOfDiscovery string Root-category key for Season of Discovery content.
+---@field Secrets string Root-category key for secret content.
+---@field Sourceless string Root-category key for existing content whose source is unknown.
+---@field TradingPost string Root-category key for Trading Post content.
+---@field Uncollectible string Root-category key for uncollectible item content.
+---@field Unsorted string Root-category key for content awaiting categorization.
+---@field WorldDrops string Root-category key for world-drop content.
+---@field WorldEvents string Root-category key for world-event content.
+---@field Zones string Root-category key for outdoor zone content.
+---@field AprilFools string Root-category key for April Fools content; resolves to `Special_AprilFools`.
 
 
 --- Generic constructor used by most shortcuts in this file.
