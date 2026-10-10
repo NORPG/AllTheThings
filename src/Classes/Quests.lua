@@ -713,62 +713,16 @@ end
 local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, checks)
 	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 	local info = {
-		infoText,
-		questChange..": \""..((questRef and questRef.name) or QuestNameFromID[id] or "???").."\"",
-		OBJREF = questRef,
+		reason=infoText,
+		questChange=questChange,
+		OBJREF=questRef,
 	};
 	if checks then
 		for k,v in pairs(checks) do
-			tinsert(info, k..":"..tostring(v))
+			info["Check-"..k]=v
 		end
 	end
-
-	if C_Covenants then	-- Covenants and Renown
-		local covInfo = "cov:";
-		local covID = C_Covenants.GetActiveCovenantID();
-		if covID and covID > 0 then
-			local covData = C_Covenants.GetCovenantData(covID);
-			if covData then
-				covInfo = covInfo .. covID..":"..covData.name;
-				local covRenown = C_CovenantSanctumUI.GetRenownLevel();
-				if covRenown then
-					covInfo = covInfo .. ":"..covRenown;
-				end
-			else
-				covInfo = covInfo .. "N/A";
-			end
-		else
-			covInfo = covInfo .. "N/A";
-		end
-		tinsert(info, covInfo);
-	end
-	if C_MajorFactions then
-		local MajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(10), {}, nil;
-		if MajorFactionIDs then
-			for _,factionID in ipairs(MajorFactionIDs) do
-				tinsert(majorFactionInfo, "|");
-				tinsert(majorFactionInfo, factionID);
-				data = C_MajorFactions.GetMajorFactionData(factionID);
-				if data then
-					tinsert(majorFactionInfo, ":");
-					tinsert(majorFactionInfo, data.name:sub(1,4));
-					tinsert(majorFactionInfo, ":");
-					tinsert(majorFactionInfo, data.renownLevel);
-				end
-			end
-			tinsert(info, "renown:"..app.TableConcat(majorFactionInfo));
-		end
-	end
-
-	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
-		local acctUnlocks = {
-			IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
-			IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
-			IsQuestFlaggedCompleted(79573) and "WW_CA" or "N",	-- The War Within Campaign Complete
-		}
-		tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "/"))
-	end
-	tinsert(info, "sq:"..GenerateSourceQuestString(questRef or id));
+	info.sq = GenerateSourceQuestString(questRef or id)
 	return info;
 end
 local function SearchForQuestData(questID)
