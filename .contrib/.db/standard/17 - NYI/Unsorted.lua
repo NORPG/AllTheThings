@@ -1081,8 +1081,6 @@ root(ROOTS.Unsorted, {
 				i(272400),	-- Fine Lynx Fur
 				i(272893),	-- Icy Harness
 				i(259472),	-- Lost Revantusk Possessions
-				i(267381),	-- Official G.G.R. Rehydration Container
-				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
 				i(262757),	-- "Greater Metamorph" Enhancement
 			}),
@@ -1102,7 +1100,6 @@ root(ROOTS.Unsorted, {
 			n(WEAPONS, {
 				-- These Exist but needs a source.
 				i(269972),	-- Arathi Miner's Pickaxe
-				i(269988),	-- Peacekeeper's Axe
 			}),
 		})),
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
@@ -2643,7 +2640,6 @@ root(ROOTS.Unsorted, {
 				i(161431),	-- Ancient Skinning Knife
 				i(163681),	-- Focus
 				i(164382),	-- Azerite Crystal
-				i(164622),	-- Grayson's Note
 			}),
 			-- Projectile?
 			i(151215),	-- Zandalari Blowgun Dart

@@ -1892,7 +1892,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			-- ["provider"] = { "n", xxxxx },	-- Auto-accept?
 			-- ["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81596, {	-- Delve Hunter
 			["sourceQuests"] = { 81595 },	-- Seasonal Start

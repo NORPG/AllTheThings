@@ -1531,42 +1531,37 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(47283, {	-- Chop, Chop
 									["races"] = HORDE_ONLY,
-									["groups"] = {
-										i(156531),	-- Freshly-Chopped Wood (QI!)
-										i(156514),	-- Sturdy Axe (QI!)
+									["qis"] = {
+										156531,	-- Freshly-Chopped Wood (QI!)
+										156514,	-- Sturdy Axe (QI!)
 									},
 								}),
 								q(52118, {	-- Cutting Out the Competition
 									["qg"] = 139446,	-- Lumbering Leo
 									["coord"] = { 36.5, 59.6, 1044 },	-- Arathi Highlands
 									["races"] = ALLIANCE_ONLY,
-									["groups"] = {
-										i(156531),	-- Freshly-Chopped Wood (QI!)
-										i(161130),	-- Sturdy Axe (QI!)
+									["qis"] = {
+										156531,	-- Freshly-Chopped Wood (QI!)
+										161130,	-- Sturdy Axe (QI!)
 									},
 								}),
 								q(53678, {	-- Establishing a Connection
 									["races"] = ALLIANCE_ONLY,
+									["qi"] = 164622,	-- Grayson's Note (QI!)
 								}),
 								q(53668, {	-- Flightgineer's Network
 									["races"] = HORDE_ONLY,
-									["groups"] = {
-										i(164598),	-- Krazzle's Scribbled Note (QI!)
-									},
+									["qi"] = 164598,	-- Krazzle's Scribbled Note (QI!)
 								}),
 								q(52439, {	-- Iron Stores
 									["races"] = ALLIANCE_ONLY,
-									["groups"] = {
-										i(159728),	-- Heavy Iron Key (QI!)
-									},
+									["qi"] = 159728,	-- Heavy Iron Key (QI!)
 								}),
 								q(51082, {	-- Iron Stores
 									["qg"] = 131750,	-- Lug'ruk
 									["coord"] = { 61.4, 25.6, 943 },
 									["races"] = HORDE_ONLY,
-									["groups"] = {
-										i(159728),	-- Heavy Iron Key (QI!)
-									},
+									["qi"] = 159728,	-- Heavy Iron Key (QI!)
 								}),
 								q(53672, {	-- Ready for Battle
 									["qg"] = 139727,	-- Sergeant Matthew Walker
