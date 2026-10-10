@@ -4169,3 +4169,51 @@ app.AddEventHandler("OnStartup", function()
 	Contribute(AllTheThingsSavedVariables.Contributor)
 	DebugPrinting = AllTheThingsSavedVariables.Contributor_DebugPrinting
 end)
+
+do	-- Data Serialization
+
+local IgnoredKeys = {
+	parent = true,
+	sourceParent = true,
+	__merge = true,
+	window = true,
+}
+local TableRefs = {}
+local function Serialize(v)
+	local t = type(v)
+	if t == "string" then
+		return (string.format("%q", v):gsub("\\\n", "\\n"))
+	elseif t == "number" or t == "boolean" then
+		return tostring(v)
+	elseif t == "table" then
+		if TableRefs[v] then
+			return "<REF>"
+		else
+			TableRefs[v] = true
+			local out, n = {}, #v
+			for i = 1, n do out[#out + 1] = Serialize(v[i]) end
+			local keys = {}
+			for k in pairs(v) do
+				if not IgnoredKeys[k] and not (type(k) == "number" and k % 1 == 0 and k >= 1 and k <= n) then
+					keys[#keys + 1] = k
+				end
+			end
+			table.sort(keys, function(a, b) return tostring(a) < tostring(b) end)
+			for _, k in ipairs(keys) do
+				local ks = (type(k) == "string" and k:match("^[%a_][%w_]*$")) and k or ("[" .. Serialize(k) .. "]")
+				out[#out + 1] = ks .. "=" .. Serialize(v[k])
+			end
+			return "{" .. table.concat(out, ",") .. "}"
+		end
+	elseif t == "function" then
+		return "<func>"
+	end
+	return "nil"
+end
+
+app:RegisterDataStyleExporter("Compact", {
+	main = function(data, depth) wipe(TableRefs) return Serialize(data) end,
+	getSub = function() return "" end,	-- Serialize handles the nesting so don't follow default Sub data
+})
+
+end
