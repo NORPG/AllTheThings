@@ -35,8 +35,8 @@ app.WOWAPI = lib;
 
 -- Priority API assigner.
 -- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper.
----@param name string
----@param ... function|nil
+---@param name string Name under which the selected function is stored in `app.WOWAPI`.
+---@param ... function|nil Candidate API functions in priority order; the first available function is selected.
 local function AssignAPIWrapper(name, ...)
 	for i = 1, select("#", ...) do
 		local api = select(i, ...)  -- Get API Function
