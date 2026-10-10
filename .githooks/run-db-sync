@@ -2,25 +2,8 @@
 
 # Git hooks must never make checkout, pull, merge, or rebase fail.
 root=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
-script="$root/.contrib/db-sync/sync_db.py"
-
-case "$(uname -s 2>/dev/null)" in
-  MINGW*|MSYS*|CYGWIN*)
-    if command -v py >/dev/null 2>&1; then
-      py -3 "$script" || true
-      exit 0
-    fi
-    ;;
-esac
-
-if command -v python3 >/dev/null 2>&1; then
-  python3 "$script" || true
-elif command -v python >/dev/null 2>&1; then
-  python "$script" || true
-elif command -v py >/dev/null 2>&1; then
-  py -3 "$script" || true
-else
-  echo "db sync: Python 3.8 or newer is not installed; skipping." >&2
-fi
-
+config=$(git rev-parse --git-path att-script-deploy.json 2>/dev/null) || exit 0
+case "$config" in /*) ;; *) config="$root/$config" ;; esac
+[ -f "$config" ] || { echo "ATT script deployment: configure and install stable hooks first; skipping." >&2; exit 0; }
+echo "ATT script deployment: stable external hooks require install-hooks; skipping." >&2
 exit 0
