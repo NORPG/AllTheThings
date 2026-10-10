@@ -11,6 +11,7 @@ local C_AddOns_GetAddOnMetadata
 	= C_AddOns.GetAddOnMetadata;
 local wipearray = app.wipearray
 
+--- Shared game tooltip extended with ATT icon, model, and reference display helpers.
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 local RETRIEVING_DATA = RETRIEVING_DATA;
@@ -1411,6 +1412,7 @@ local function CreateRow(container, rows, i)
 	i = tonumber(i)
 	if not i then return end
 
+	--- Interactive window row displaying an object, its icon, and collection progress.
 	---@class ATTRowClass: ATTButtonClass
 	local row = CreateFrame("Button", nil, container);
 	row.index = i - 1;
@@ -1458,6 +1460,7 @@ local function CreateRow(container, rows, i)
 	row.Background:SetTexture(136810);
 
 	-- Texture is the icon.
+	--- Object icon texture displayed in an ATT window row.
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
 	row.Texture:SetPoint("LEFT", row, "LEFT");
@@ -2348,6 +2351,7 @@ local function BuildWindow(suffix)
 	end
 
 	-- Create the window instance.
+	--- ATT content window with configurable behavior, scrolling rows, and saved display settings.
 	---@class ATTWindow: BackdropTemplate, ATTFrameClass
 	local window = CreateFrame("Frame", "ATTWindow"..suffix, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	window:SetClampedToScreen(true);
@@ -2684,6 +2688,7 @@ local function BuildWindow(suffix)
 	window.CloseButton = closeButton;
 
 	-- The Scroll Bar.
+	--- Slider controlling the first visible row in an ATT window.
 	---@class ATTWindowScrollBar: Slider
 	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
 	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
@@ -2709,6 +2714,7 @@ local function BuildWindow(suffix)
 	window.Grip = grip;
 
 	-- The Row Container. This contains all of the row frames.
+	--- Frame holding lazily created display rows for an ATT window.
 	---@class ATTRowContainer: Frame
 	local container = CreateFrame("Frame", nil, window);
 	window.Container = container;

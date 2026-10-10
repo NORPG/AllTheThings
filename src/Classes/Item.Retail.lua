@@ -557,6 +557,7 @@ if not app.Debugging then return end
 -- No reason to create all this for the avg user, and pretty sure none of this is typically used anyway
 local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
+--- Retail tooltip used in debug mode to harvest item metadata from tooltip text.
 ---@class ATTItemHarvesterForRetail: GameTooltip
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
 ItemHarvester.AllTheThingsIgnored = true;

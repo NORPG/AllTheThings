@@ -628,6 +628,7 @@ local SetATTTooltip = function(self, text)
 	end);
 end
 
+--- Frame prototype extended with ATT tooltip and coroutine helpers.
 ---@class ATTFrameClass: Frame
 local frameClass = getmetatable(frame).__index;
 frameClass.SetATTTooltip = SetATTTooltip;
@@ -638,6 +639,7 @@ app.StartATTCoroutine = function(self, ...)
 end
 
 local button = CreateFrame("Button", nil, frame);
+--- Button prototype extended with ATT tooltip and coroutine helpers.
 ---@class ATTButtonClass: Button
 local buttonClass = getmetatable(button).__index;
 buttonClass.StartATTCoroutine = StartATTCoroutine;	-- don't think this is used...
@@ -645,18 +647,21 @@ buttonClass.SetATTTooltip = SetATTTooltip;
 button:Hide();
 
 local checkbutton = CreateFrame("CheckButton", nil, frame);
+--- CheckButton prototype extended with ATT tooltip helpers.
 ---@class ATTCheckButtonClass: CheckButton
 local checkButtonClass = getmetatable(checkbutton).__index;
 checkButtonClass.SetATTTooltip = SetATTTooltip;
 checkbutton:Hide();
 
 local editbox = CreateFrame("EditBox", nil, frame);
+--- EditBox prototype extended with ATT tooltip helpers.
 ---@class ATTEditBoxClass: EditBox
 local editBoxClass = getmetatable(editbox).__index;
 editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
 
 local slider = CreateFrame("Slider", nil, frame);
+--- Slider prototype extended with ATT tooltip helpers.
 ---@class ATTEditBoxClass: Slider
 local sliderClass = getmetatable(slider).__index;
 sliderClass.SetATTTooltip = SetATTTooltip;
@@ -744,6 +749,7 @@ end
 function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 	local f = ATTEditBox;
 	if not f then
+		--- Movable, resizable popup dialog for displaying or editing multiline text.
 		---@class ATTEditBox: BackdropTemplate, Frame
 		f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
 		f:SetPoint("CENTER")
@@ -765,6 +771,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		f:SetScript("OnMouseUp", f.StopMovingOrSizing)
 
 		-- ScrollFrame
+		--- Scrollable viewport for the popup dialog's multiline text input.
 		---@class ATTEditBoxScrollFrame: ScrollFrame
 		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", f, "UIPanelScrollFrameTemplate")
 		---@diagnostic disable-next-line: undefined-field
@@ -789,6 +796,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		end
 
 		-- EditBox
+		--- Multiline text input whose contents are passed to the popup's submit callback.
 		---@class ATTEditBoxEditBox: EditBox
 		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", sf)
 		eb:SetSize(sf:GetSize())

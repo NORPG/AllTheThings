@@ -1037,6 +1037,7 @@ local function BuildSourceParent(group)
 			if isDirectSources then
 				parents[#parents + 1] = CreateObject(thing)
 			elseif isAchievement or GroupMatchesParams(thing, groupKey, keyValue) then
+				--- Ancestor object inspected when building a list of sources for a collectible.
 				---@class ATTTempParentObject
 				---@field key string Name of the field that identifies the source parent object.
 				---@field hash string Object hash used to exclude the original group from its source list.

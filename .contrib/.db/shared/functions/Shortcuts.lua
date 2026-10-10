@@ -76,6 +76,7 @@
 ---@alias ATTObjectArray ATTObject[] Ordered list of parser objects.
 ---@alias ATTObjectArrayArray ATTObjectArray[] Ordered list of parser-object groups.
 
+--- Parser data node containing identifiers, shared metadata, and optional child groups.
 --- Intentionally non-exact: parser objects are an extensible data model and
 --- may carry module/flavor-specific fields outside this central shortcut schema.
 ---@class ATTObject
@@ -208,87 +209,112 @@
 ---@field _DATAGROUPS? string[] Group keys used by constructors to register the object in DATAGROUP and IDGROUP.
 ---@field [integer] ATTObject Array-style group entries.
 
+--- Achievement parser object supporting a shared achievement ID or an Alliance/Horde pair.
 ---@class ATTAchievementObject: ATTObject
 ---@field achievementID? AchievementID Achievement ID represented by this object.
 ---@field allianceAchievementID? AchievementID Alliance achievement ID for a faction-specific achievement pair.
 ---@field hordeAchievementID? AchievementID Horde achievement ID for a faction-specific achievement pair.
 
+--- Achievement criterion parser object identified by a criterion ID or legacy index.
 ---@class ATTAchievementCriteriaObject: ATTObject
 ---@field criteriaID CriteriaID Achievement criterion ID or legacy criterion index.
 
+--- Item parser object identified by a base item ID, with optional modifier and bonus metadata.
 ---@class ATTItemObject: ATTObject
 ---@field itemID ItemID Item ID represented by this object.
 
+--- Quest parser object identified by a quest ID.
 ---@class ATTQuestObject: ATTObject
 ---@field questID QuestID Quest ID represented by this object.
 
+--- Spell parser object identified by a spell ID.
 ---@class ATTSpellObject: ATTObject
 ---@field spellID SpellID Spell ID represented by this object.
 
+--- NPC parser object used to group an NPC's sourced content.
 ---@class ATTNPCObject: ATTObject
 ---@field npcID NPCID NPC ID represented by this object.
 
+--- Creature parser object identified by a creature entry ID.
 ---@class ATTCreatureObject: ATTObject
 ---@field creatureID CreatureID Creature ID represented by this object.
 
+--- Encounter Journal encounter parser object containing encounter metadata and rewards.
 ---@class ATTEncounterObject: ATTObject
 ---@field encounterID JournalEncounterID Encounter Journal encounter ID represented by this object.
 
+--- Reputation faction parser object containing faction metadata and optional reward groups.
 ---@class ATTFactionObject: ATTObject
 ---@field factionID FactionID Reputation faction ID represented by this object.
 
+--- UI map parser object used to group content for a zone or map.
 ---@class ATTMapObject: ATTObject
 ---@field mapID UiMapID UI map ID represented by this object.
 
+--- Currency parser object identified by a currency type ID.
 ---@class ATTCurrencyObject: ATTObject
 ---@field currencyID CurrencyID Currency ID represented by this object.
 
+--- Instance difficulty parser object carrying difficulty-specific content.
 ---@class ATTDifficultyObject: ATTObject
 ---@field difficultyID DifficultyID Difficulty ID represented by this object, including parser multi-difficulty IDs.
 
+--- Header parser object grouping content under a custom or automatically named label.
 ---@class ATTHeaderObject: ATTObject
 ---@field headerID ATTHeaderID ATT header ID represented by this object.
 ---@field SortPriority? number Parser root-category sort priority.
 
+--- Profession parser object identified by a profession skill line.
 ---@class ATTProfessionObject: ATTObject
 ---@field professionID SkillID Profession skill ID represented by this object.
 
+--- Crafting recipe parser object carrying its spell ID and profession requirement.
 ---@class ATTRecipeObject: ATTObject
 ---@field recipeID RecipeID Recipe spell ID represented by this object.
 ---@field requireSkill? SkillID|ATTIgnoredValue Required profession skill ID, or the parser ignore sentinel.
 ---@field _requireSkill? SkillID Parser-side recipe profession requirement cache.
 
+--- Encounter Journal dungeon or raid instance parser object with optional lockout metadata.
 ---@class ATTInstanceObject: ATTObject
 ---@field instanceID JournalInstanceID Encounter Journal instance ID represented by this object.
 ---@field savedInstanceID? MapID Instance map ID used to look up the character's saved lockouts.
 
+--- Parser object tracking the first craft of a recipe, optionally through a completion quest.
 ---@class ATTFirstCraftObject: ATTObject
 ---@field firstcraftID RecipeID Recipe spell ID whose first craft is tracked.
 ---@field questID? QuestID Quest ID used to track completion of this first craft when available.
 
+--- Battle pet parser object identified by a species ID.
 ---@class ATTBattlePetObject: ATTObject
 ---@field speciesID BattlePetSpeciesID Battle-pet species ID represented by this object.
 
+--- Exploration area parser object used to track discovery of a named location.
 ---@class ATTExplorationObject: ATTObject
 ---@field explorationID ExplorationID Exploration area ID represented by this object.
 
+--- Flight path parser object used to track discovery of a taxi node.
 ---@class ATTFlightPathObject: ATTObject
 ---@field flightpathID FlightPathID Flight-path node ID represented by this object.
 
+--- Garrison mission parser object identified by a mission ID.
 ---@class ATTMissionObject: ATTObject
 ---@field missionID MissionID Garrison mission ID represented by this object.
 
+--- Mount parser object identified by its summoning spell ID.
 ---@class ATTMountObject: ATTObject
 ---@field mountID MountID Mount spell ID represented by this object.
 
+--- Character title parser object identified by a title ID.
 ---@class ATTTitleObject: ATTObject
 ---@field titleID TitleID Character title ID represented by this object.
 
+--- Map position tuple containing horizontal and vertical percentages and a UI map ID.
 ---@class Coord
 ---@field [1] x_axis Horizontal map position expressed as a percentage.
 ---@field [2] y_axis Vertical map position expressed as a percentage.
 ---@field [3] UiMapID UI map ID on which the position is located.
 
+--- Localized text or programmatic tokens indexed by ATT locale keys.
 ---@class ATTLocalizationStringTable
 ---@field en string Default English text or programmatic localization token.
 ---@field de? string German localized text (`deDE`).
@@ -302,6 +328,7 @@
 ---@field cn? string Simplified Chinese localized text (`zhCN`).
 ---@field tw? string Traditional Chinese localized text (`zhTW`).
 
+--- Localization definition registered by `createLocalizationString`, with a unique constant and localized text.
 ---@class ATTLocalizationStringData
 ---@field constant string Unique parser constant name.
 ---@field readable? string Human-readable label used in parser diagnostics.
@@ -341,6 +368,7 @@
 ---@field standalone boolean Normalized by `createHeader`; defaults to `false`.
 ---@field filepath? string Parser source file which registered this header.
 
+--- Custom world object definition registered by `createCustomObject` in `ObjectDB`.
 ---@class ATTCustomObjectDefinition: ATTObject
 ---@field readable string Human-readable parser label.
 ---@field text string|ATTLocalizationStringTable Localized object text.
@@ -352,6 +380,7 @@
 ---| { year: integer, month: integer, day: integer, monthDay?: integer, hour?: integer, minute?: integer, weekday?: integer }
 ---| { year: integer, month: integer, day?: integer, monthDay: integer, hour?: integer, minute?: integer, weekday?: integer }
 
+--- Registry of symbolic selector IDs with a `select` helper for building lookup commands.
 ---@class ATTSymSelectorTable
 ---@field select fun(key: string): ATTSymCommand Builds a symbolic `select` command for the named selector ID.
 ---@field [string] integer Selector IDs; the reserved `select` method is declared separately.
