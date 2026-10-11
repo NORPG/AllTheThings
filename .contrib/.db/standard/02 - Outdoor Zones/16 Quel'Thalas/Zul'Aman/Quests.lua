@@ -1475,6 +1475,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 253640,	-- Orweyna
 						["coord"] = { 45.4, 70.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
+					hqt(98541, {	-- Skipped 'Legacy of the Amani'
+						["name"] = "Chose to skip the 'Legacy of the Amani' chapter.",
+						["description"] = "Triggered when choosing the skip option from Orweyna after completing 'The Preparations Are Complete' (92897). Choosing the skip also completes every quest in this chapter.",
+						["sourceQuest"] = 92897,	-- The Preparations Are Complete
+						["qg"] = 253640,	-- Orweyna
+						["coord"] = { 45.4, 70.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
 					q(92899, {	-- History Lesson
 						["sourceQuest"] = 92895,	-- Hagar's Invitation
 						["qg"] = 253654,	-- Orweyna
