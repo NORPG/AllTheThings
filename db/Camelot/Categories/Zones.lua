@@ -2549,6 +2549,9 @@ crit(905,{achID=736,id=1})})}),
 h(-31,{awp=16001,g={
 faction(2787)}}),
 h(-45,{
+q(96294,{awp=16001,coords={
+[1412]={{33.4,22.4}}},lvl=23,providers={{"i",273658}},qgs={259118},r=1,g={
+qo(1,{providers={{"i",273659}}})}}),
 q(833,{coords={
 [1412]={{59.8,25.6}}},lvl=7,qgs={3233},r=1,g={
 qo(1,{providers={{"n",3232}}})}}),
@@ -2592,6 +2595,10 @@ r(1263425,{learnedAt=20,requireSkill=197,skillID=2948})}}),
 q(743,{coords={
 [1412]={{47.4,62}}},lvl=5,qgs={2985},r=1,g={
 qo(1,{crs={2962,2963},providers={{"i",4751}}})}}),
+q(96259,{awp=16001,coords={
+[1412]={{33.4,22.4}}},lvl=23,qgs={259118},r=1,g={
+qo(1,{providers={{"n",264079}}}),
+qo(2,{providers={{"n",264083}}})}}),
 q(746,{coords={
 [1412]={{47.5,60.2}}},lvl=6,qgs={2993},r=1,g={
 qo(1,{coords={
@@ -2644,6 +2651,12 @@ qo(1,{providers={{"n",2949}}}),
 qo(2,{providers={{"n",2950}}}),
 qo(3,{providers={{"n",2951}}}),
 i(4960,{f=37})}}),
+q(96260,{awp=16001,coords={
+[1412]={{32.4,20}}},lvl=23,qgs={264072},r=1,g={
+qo(1,{crs={264081},providers={{"i",273181}}}),
+i(276892,{b=1,f=113}),
+i(276891,{b=1,f=113}),
+s(308577,273654,{b=1,f=3,lvl=30})}}),
 q(765,{coords={
 [1412]={{54.4,60.4}}},lvl=5,qgs={2988},r=1,sourceQuests={751},g={
 qo(1,{coords={
@@ -2653,6 +2666,9 @@ s(157992,4964,{b=1,f=24,races={6}})}}),
 q(761,{coords={
 [1412]={{48.7,59.3}}},lvl=4,qgs={2947},r=1,g={
 qo(1,{crs={2969,2970},providers={{"i",4769}}})}}),
+q(96241,{awp=16001,coords={
+[1412]={{32.4,20.6}}},lvl=23,qgs={264074},qis={273015},r=1,g={
+qo(1,{crs={264096},description="Use the provided Toxin Extractor on Gnawed Corpses at Gloomrise.",providers={{"i",273001}}})}}),
 q(6061,{c={3},coords={
 [1412]={{47.8,55.6}}},lvl=10,qgs={3065},races={6},sourceQuests={6065,6066,6067},g={
 qo(1,{providers={{"i",15914},{"n",2956}}})}}),
@@ -2665,6 +2681,11 @@ qo(1,{providers={{"i",15916},{"n",2970}}}),
 r(883,{requireSkill=50}),
 r(2641,{requireSkill=50}),
 r(1515,{requireSkill=50})}}),
+q(96261,{awp=16001,coords={
+[1412]={{33.4,22.4}}},lvl=23,qgs={259118},r=1,g={
+qo(1,{coords={
+[1412]={{33.4,7.2},{33.6,6.8}}},providers={{"n",264082}}}),
+i(276895,{b=1,f=53,spellID=1301167})}}),
 q(770,{lvl=6,qss={4854},r=1,g={
 s(157997,4971,{b=1,f=23}),
 s(157131,3079,{b=1,f=31})}}),
@@ -2791,7 +2812,10 @@ r(1301526,{b=1,itemID=276976,learnedAt=185,minReputation={2787,3000},requireSkil
 r(1301527,{b=1,itemID=276977,learnedAt=185,minReputation={2787,3000},requireSkill=164,skillID=2938})}}),
 n(3081,{coords={
 [1412]={{46.2,58.2}}},r=1,g={
-r(6414,{itemID=5484,requireSkill=185})}})})}}),
+r(6414,{itemID=5484,requireSkill=185})}})}),
+h(-63,{awp=16001,g={
+i(273658,{b=1,coords={
+[1412]={{33.4,7.2},{33.6,6.8}}},crs={264082},lvl=30})}})}}),
 m(2652,{awp=16001,g={
 h(-12,{
 ach(63684,{
@@ -4819,7 +4843,8 @@ q(5534,{coords={
 [1447]={{53.4,21.8}}},lvl=47,qgs={8420},sourceQuests={3601},g={
 qo(1,{crs={6195,6196,7885,7886},providers={{"i",13815}}})}}),
 q(3141,{coords={
-[1447]={{60.8,66.4}}},lvl=45,qgs={7783},sourceQuests={2744}}),
+[1447]={{60.8,66.4}}},lvl=45,qgs={7783},sourceQuests={2744},g={
+qo(1,{providers={{"n",7783}}})}}),
 q(3562,{coords={
 [1456]={{70.2,30.8}}},lvl=45,qgs={4046},qis={10678},r=1,sourceQuests={3518}}),
 q(8250,_.ResolveQuestData({aqd=
@@ -14360,6 +14385,7 @@ s(165063,22745,{b=1,f=2,loc=46}),
 s(165062,22744,{b=1,f=2,loc=47})}})}}),
 q(3625,{coords={
 [1434]={{50.6,20.4}}},lvl=45,qgs={7802},sourceQuests={3621},g={
+qo(1,{providers={{"n",7802}}}),
 s(160123,10697,{b=1,f=20,spellID=12938}),
 s(160124,10698,{b=1,f=28,spellID=12938}),
 s(160122,10696,{b=1,f=25,spellID=12938})}}),
@@ -14971,7 +14997,8 @@ q(92911,{awp=16001,coords={
 i(277132,{b=1,requireSkill=202,spellID=1301683}),
 r(1302161,{b=1,itemID=277470,learnedAt=65,requireSkill=202,skillID=2941})}}),
 q(103,{coords={
-[1436]={{30,86}}},cost={{"i",814,5}},lvl=10,qgs={392}}),
+[1436]={{30,86}}},lvl=10,qgs={392},g={
+qo(1,{cost={{"i",814,5}}})}}),
 q(2359,{c={4},coords={
 [1436]={{68.5,70.2}}},lvl=20,qgs={7024},qis={8046},r=2,sourceQuests={2360},g={
 qo(1,{providers={{"i",7908}}}),
@@ -17767,7 +17794,8 @@ h(-45,{
 q(2801,_.ResolveQuestData({aqd=
 {sourceQuests={2783}},coords={
 [1435]={{34.3,66.2}}},hqd=
-{sourceQuests={2623}},lvl=45,qgs={7572}})),
+{sourceQuests={2623}},lvl=45,qgs={7572},g={
+qo(1,{providers={{"n",7572}}})}})),
 q(8417,_.ResolveQuestData({aqd=
 {coords={
 [1453]={{78.8,45.6}},
@@ -17798,7 +17826,8 @@ qo(1,{providers={{"n",1084}}}),
 qo(2,{providers={{"n",858}}}),
 qo(3,{providers={{"n",767}}})}}),
 q(2784,{coords={
-[1435]={{34.3,66.2}}},lvl=45,qgs={7572},r=1}),
+[1435]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,g={
+qo(1,{providers={{"n",7572}}})}}),
 q(1430,{coords={
 [1435]={{44.8,57.2}}},lvl=35,qgs={5591},r=1,g={
 qo(1,{crs={1088},providers={{"i",6184}}}),
@@ -17845,7 +17874,8 @@ q(1444,{coords={
 q(1429,{coords={
 [1435]={{64.2,20.8}}},lvl=38,maps={1425},qgs={1443},qis={6193},r=1,sourceQuests={1424}}),
 q(2744,{coords={
-[1435]={{34.3,66.2}}},lvl=45,maps={1447},qgs={7572},sourceQuests={2743}}),
+[1435]={{34.3,66.2}}},lvl=45,maps={1447},qgs={7572},sourceQuests={2743},g={
+qo(1,{providers={{"n",7783}}})}}),
 q(2621,{coords={
 [1435]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,sourceQuests={2784}}),
 q(1421,{coords={

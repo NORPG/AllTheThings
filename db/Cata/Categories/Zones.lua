@@ -6229,7 +6229,8 @@ qo(1,{crs={36680},providers={{"i",49540}}}),
 s(203075,53425,{b=1,f=3,q=2}),
 s(203063,53412,{b=1,f=5,loc=44,q=2})}}),
 q(3141,{coords={
-[1447]={{60.8,66.4}}},lvl=45,qgs={7783},rwp=40003,sourceQuests={2744},u=2}),
+[1447]={{60.8,66.4}}},lvl=45,qgs={7783},rwp=40003,sourceQuests={2744},u=2,g={
+qo(1,{providers={{"n",7783}},u=2})}}),
 q(3562,{coords={
 [1456]={{70.2,30.8}}},lvl=45,qgs={4046},qis={10678},r=1,rwp=40003,sourceQuests={3518},u=2}),
 q(8250,_.ResolveQuestData({aqd=
@@ -24843,12 +24844,12 @@ qo(3,{providers={{"n",2555},{"n",51633}}})}}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003,u=2}),
 q(667,{coords={
 [1417]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},u=2,g={
-qo(1,{providers={{"n",2775}},u=2}),
+qo(1,{providers={{"n",2610},{"n",2775}},u=2}),
 i(4550,{b=1,f=52,q=2,u=2}),
 i(4549,{b=1,f=52,q=2,u=2})}}),
 q(26628,{awp=40003,coords={
 [1417]={{25.9,83.8}}},qgs={2610},sourceQuests={26052},g={
-qo(1,{providers={{"n",2775}}}),
+qo(1,{providers={{"n",2610},{"n",2775}}}),
 s(206321,59212,{b=1,f=4,loc=42,q=2}),
 s(206322,59213,{b=1,f=5,loc=46,q=2}),
 s(206323,59214,{b=1,f=5,loc=43,q=2}),
@@ -35876,7 +35877,8 @@ h(-45,{
 q(2801,_.ResolveQuestData({aqd=
 {sourceQuests={2783},u=2},coords={
 [1435]={{34.3,66.2}}},hqd=
-{sourceQuests={2623},u=2},lvl=45,qgs={7572},rwp=40003,u=2})),
+{sourceQuests={2623},u=2},lvl=45,qgs={7572},rwp=40003,u=2,g={
+qo(1,{providers={{"n",7572}},u=2})}})),
 q(8417,_.ResolveQuestData({aqd=
 {coords={
 [1453]={{78.8,45.6}},
@@ -35954,7 +35956,8 @@ qo(1,{providers={{"n",1084}},u=2}),
 qo(2,{providers={{"n",858}},u=2}),
 qo(3,{providers={{"n",767}},u=2})}}),
 q(2784,{coords={
-[1435]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,rwp=40003,u=2}),
+[1435]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,rwp=40003,u=2,g={
+qo(1,{providers={{"n",7572}},u=2})}}),
 q(1430,{coords={
 [1435]={{44.8,57.2}}},lvl=35,qgs={5591},r=1,rwp=40003,u=2,g={
 qo(1,{crs={1088},providers={{"i",6184}},u=2}),
@@ -36130,7 +36133,8 @@ s(209135,64602,{b=1,f=5,loc=42,q=2}),
 s(209143,64611,{b=1,f=6,loc=40,q=2}),
 s(209150,64619,{b=1,f=7,loc=45,q=2})}}),
 q(2744,{coords={
-[1435]={{34.3,66.2}}},lvl=45,maps={1447},qgs={7572},rwp=40003,sourceQuests={2743},u=2}),
+[1435]={{34.3,66.2}}},lvl=45,maps={1447},qgs={7572},rwp=40003,sourceQuests={2743},u=2,g={
+qo(1,{providers={{"n",7783}},u=2})}}),
 q(2621,{coords={
 [1435]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,rwp=40003,sourceQuests={2784},u=2}),
 q(27869,{awp=40003,coords={
@@ -41128,7 +41132,8 @@ s(206121,58920,{b=1,f=6,loc=46,q=2}),
 s(206119,58918,{b=1,f=27,q=2}),
 s(206120,58919,{b=1,f=5,loc=46,q=2})}}),
 q(103,{coords={
-[1436]={{30,86}}},cost={{"i",814,5}},lvl=10,qgs={392},rwp=40003,u=2}),
+[1436]={{30,86}}},lvl=10,qgs={392},rwp=40003,u=2,g={
+qo(1,{cost={{"i",814,5}},u=2})}}),
 q(26347,{awp=40003,coords={
 [1436]={{30.5,85.6}}},qgs={392},r=2,g={
 qo(1,{coords={
