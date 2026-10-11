@@ -140,7 +140,15 @@ local function GenerateSourcePath(group, l)
 		if l < 1 then
 			return GenerateSourcePath(parent, l + 1);
 		else
-			return GenerateSourcePath(parent, l + 1) .. " > " .. (group.sourceText or group.text or RETRIEVING_DATA);
+			local prefix = GenerateSourcePath(parent, l + 1)
+			local text = group.sourceText or group.text or RETRIEVING_DATA
+			-- secret segments make the whole path secret, which can't be abbreviated later,
+			-- so abbreviate the plain prefix before appending one
+			local issecretvalue = app.WOWAPI.issecretvalue
+			if issecretvalue(text) and not issecretvalue(prefix) then
+				prefix = app.AbbreviateString(prefix)
+			end
+			return prefix .. " > " .. text;
 		end
 	end
 	return group.text or RETRIEVING_DATA;
