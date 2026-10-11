@@ -33,6 +33,9 @@ root(ROOTS.Instances, {
 						}),
 						i(2906),	-- Darkshire Mail Leggings
 						i(2033),	-- Ambassador's Boots
+						i(270029, {	-- Town Clerk's Mittens
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(387, {	-- Quell The Uprising
