@@ -670,6 +670,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["maps"] = { MAP.DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARRIOR },
+				["isBreadcrumb"] = true,
 				["lvl"] = 10,
 			}),
 			q(1581, {	-- Elixirs for the Bladeleafs
