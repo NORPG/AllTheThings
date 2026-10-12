@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168479, {	-- Troop Requisition (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["groups"] = {
 							follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
 								["collectible"] = false,
@@ -515,7 +515,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						["cost"] = { { "c", 1721, 50 } },	-- 50x Prismatic Manapearl
 					}),
 					i(168480, {	-- Troop Requisition (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["groups"] = {
 							follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
 								["collectible"] = false,

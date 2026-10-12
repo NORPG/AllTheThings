@@ -10,54 +10,54 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
-					i(245463, {	-- Lordaeron Banded Barrel (DECOR!)
-						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
-					}),
-					i(245467, {	-- Lordaeron Banded Crate (DECOR!)
-						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
-					}),
-					i(245483, {	-- Lordaeron Spiked Weapon Rack (DECOR!)
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
-					i(241062, {	-- Lordaeron Rectangular Rug (DECOR!)
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
-					i(239606, {	-- Forsaken Round Rug (DECOR!)
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
-					i(245465, {	-- Tirisfal Wooden Chair (DECOR!)
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
-					i(245466, {	-- Forsaken Spiked Chair (DECOR!)
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
-					i(245475, {	-- Forsaken Long Table (DECOR!)
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
-					}),
-					i(245473, {	-- Forsaken Studded Table (DECOR!)
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
-					}),
-					i(245469, {	-- Lordaeron Lantern (DECOR!)
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
-					}),
-					i(245470, {	-- Lordaeron Hanging Lantern (DECOR!)
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
-					}),
-					i(245478, {	-- Lordaeron Sconce (DECOR!)
-						["minReputation"] = { FACTION_THE_HONORBOUND, HONORED },
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
-					i(245480, {	-- Lordaeron Torch (DECOR!)
-						["minReputation"] = { FACTION_THE_HONORBOUND, HONORED },
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
-					}),
 					i(245479, {	-- Blightfire Sconce (DECOR!)
 						["minReputation"] = { FACTION_THE_HONORBOUND, REVERED },
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
 					}),
 					i(245481, {	-- Blightfire Torch (DECOR!)
 						["minReputation"] = { FACTION_THE_HONORBOUND, REVERED },
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
+					}),
+					i(245475, {	-- Forsaken Long Table (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
+					}),
+					i(239606, {	-- Forsaken Round Rug (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+					}),
+					i(245466, {	-- Forsaken Spiked Chair (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+					}),
+					i(245473, {	-- Forsaken Studded Table (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
+					}),
+					i(245463, {	-- Lordaeron Banded Barrel (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 150 } },
+					}),
+					i(245467, {	-- Lordaeron Banded Crate (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 150 } },
+					}),
+					i(245470, {	-- Lordaeron Hanging Lantern (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
+					}),
+					i(245469, {	-- Lordaeron Lantern (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
+					}),
+					i(241062, {	-- Lordaeron Rectangular Rug (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+					}),
+					i(245478, {	-- Lordaeron Sconce (DECOR!)
+						["minReputation"] = { FACTION_THE_HONORBOUND, HONORED },
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+					}),
+					i(245483, {	-- Lordaeron Spiked Weapon Rack (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+					}),
+					i(245480, {	-- Lordaeron Torch (DECOR!)
+						["minReputation"] = { FACTION_THE_HONORBOUND, HONORED },
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+					}),
+					i(245465, {	-- Tirisfal Wooden Chair (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
 					}),
 				},
 			}),

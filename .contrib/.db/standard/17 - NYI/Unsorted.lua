@@ -2102,7 +2102,6 @@ root(ROOTS.Unsorted, {
 				i(164263),	-- Steel Strongbox
 				i(164264),	-- Steel Strongbox
 				i(150546),	-- Dreadtick Larva
-				i(153574),	-- Plain Hat Box
 				i(155013),	-- REUSE ME (DNT)
 				i(155014),	-- REUSE ME (DNT)
 				i(155015),	-- REUSE ME (DNT)

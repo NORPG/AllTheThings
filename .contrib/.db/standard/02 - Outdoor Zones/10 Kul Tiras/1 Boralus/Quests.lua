@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar. You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["groups"] = {
 					i(165880, {	-- Outpost Upgrade: Arom's Stand (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165836, {	-- Outpost Upgrade: Brennadam (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165873, {	-- Outpost Upgrade: Castaway Point (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163043, {	-- Scouting Report: Grimwatt's Crash
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163044, {	-- Scouting Report: Mistvine Ledge
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -321,8 +321,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 										["groups"] = {
-											i(162645),	-- Mistvine Ledge (CI!)
 											i(162646),	-- Mission Report (QI!)
+											i(162645),	-- Mistvine Ledge (CI!)
 										},
 									}),
 								},
@@ -357,7 +357,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163047, {	-- Scouting Report: Mugamba Overlook
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163048, {	-- Scouting Report: Veiled Grotto
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -432,7 +432,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163046, {	-- Scouting Report: Verdant Hollow
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163041, {	-- Scouting Report: Vulture's Nest
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = ALLIANCE_ONLY,
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["groups"] = {

@@ -1721,16 +1721,11 @@ root(ROOTS.ExpansionFeatures,
 													i(166802),	-- Plaguebringer's Spellblade
 												}),
 												n(BACK, {
-													i(166762, {	-- Plaguebringer's Drape
-														-- ["classes"] = { MAGE, PRIEST, WARLOCK },
-														["description"] = "This might be only available as Cloth class.",
-													}),
+													i(166762),	-- Plaguebringer's Drape
 													i(166763, {	-- Deathstalker's Cloak
 														["description"] = "This might be only available as Leather class.",
 													}),
-													i(166764, {	-- Blightguard's Cloak
-														["description"] = "This might be only available as Mail class.",
-													}),
+													i(166764),	-- Blightguard's Cloak
 													i(166765, {	-- Deathguard's Greatcloak
 														["description"] = "This might be only available as Plate class.",
 													}),

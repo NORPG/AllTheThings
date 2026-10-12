@@ -1612,7 +1612,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								["cost"] = 13300000,	-- 1,330 gold
 							}),
 							i(174904, {	-- Troop Requisition: Ramkahen Lancer (CI!)
-								["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+								["cost"] = { { "c", WAR_RESOURCES, 500 } },
 								["groups"] = {
 									follower(1186, {	-- Ramkahen Lancer
 										["collectible"] = false,

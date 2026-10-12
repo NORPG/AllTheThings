@@ -1283,6 +1283,7 @@ local AccountWideQuestsDB = {
 	76620,	-- Paracausal Fragment of Azzinoth
 	76621,	-- Felstorm Dragon
 	76637,	-- Reins of the Ravenous Black Gryphon
+	76638,	-- Paracausal Fragment of Shalamayne
 	76640,	-- Warmonger's Skullcap
 	76642,	-- Warmonger's Leggings
 	76644,	-- Warmonger's Robe

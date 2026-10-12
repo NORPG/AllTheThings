@@ -692,7 +692,7 @@ root(ROOTS.PVP, {
 									moh(2, i(119853)),	-- Primal Combatant's Chain Spaulders (H)
 								}),
 								cl(MAGE, {
-									moh(12, i(138582)),	-- Ensemble: Primal Combatant's Silk Armor (H)
+									moh(12, iensemble(138582)),	-- Ensemble: Primal Combatant's Silk Armor (H)
 									moh(2, i(119877)),	-- Primal Combatant's Silk Amice (H)
 									moh(3, i(119874)),	-- Primal Combatant's Silk Cowl (H)
 									moh(2, i(119873)),	-- Primal Combatant's Silk Handguards (H)

@@ -270,6 +270,10 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(156641),	-- Zul's Saurid Ward
 				},
 			}),
+			n(129228, {	-- Habdash <Luxury Headwear>
+				["coord"] = { 54.8, 92.0, DAZARALOR },
+				["groups"] = { i(153574) },	-- Plain Hat Box
+			}),
 			n(141936, {	-- Hanul Swiftgale <Trade Supplies>
 				["coord"] = { 44.2, 32.2, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -565,31 +569,31 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(245472, {	-- Blightfire Hanging Lantern (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 150 } },
 					}),
 					i(245471, {	-- Blightfire Lantern (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 150 } },
 					}),
 					i(245474, {	-- Forsaken War Planning Table (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
 					}),
 					i(245464, {	-- Inert Blight Canister (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
 					}),
 					i(241067, {	-- Large Forsaken Spiked Brazier (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
 					}),
 					i(245476, {	-- Large Forsaken War Tent (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
 					}),
 					i(245477, {	-- Small Forsaken War Tent (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
 					}),
 				},
 			}),
@@ -633,7 +637,7 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(165719, {	-- Monelite Whetstone
-						["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
 					}),
 					i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -688,31 +692,31 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162533, {	-- Scouting Report: Hillcrest Pasture
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(162535, {	-- Scouting Report: Mudfisher Cove
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(162531, {	-- Scouting Report: Stonefist Watch
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(162534, {	-- Scouting Report: Stonetusk Watch
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(162536, {	-- Scouting Report: Swiftwind Post
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(162532, {	-- Scouting Report: Windfall Cavern
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(162530, {	-- Scouting Report: Wolf's Den
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(161512, {	-- Silent Stalker Belt
@@ -725,15 +729,15 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						["races"] = HORDE_ONLY,
 					}),
 					i(161501, {	-- Witch Doctor's Slippers
@@ -788,64 +792,64 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = bubbleDownClassicRep(FACTION_ZANDALARI_EMPIRE, {
 					{		-- Neutral
 						i(245417, {	-- Akunda the Tapestry (DECOR!)
-							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 400 } },
 						}),
 						i(245487, {	-- Bookcase of Gonk (DECOR!)
-							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						}),
 						i(245491, {	-- Bwonsamdi's Golden Gong (DECOR!)
-							["cost"] = { { "c", 1560, 600 } },	-- 600x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 600 } },
 						}),
 						i(245490, {	-- Dazar'alor Forge (DECOR!)
-							["cost"] = { { "c", 1560, 600 } },	-- 600x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 600 } },
 						}),
 						i(245497, {	-- Golden Loa's Altar (DECOR!)
-							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						}),
 						i(245485, {	-- Golden Zandalari Bed (DECOR!)
-							["cost"] = { { "c", 1560, 1000 } },	-- 1,000x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 1000 } },
 						}),
 						i(245522, {	-- Grand Mask of Bwonsamdi, Loa of Graves (DECOR!)
-							["cost"] = { { "c", 1560, 1200 } },	-- 1,200x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 1200 } },
 						}),
 						i(245494, {	-- Idol of Pa'ku, Master of Winds (DECOR!)
-							["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 200 } },
 						}),
 						i(245493, {	-- Idol of Rezan, Loa of Kings (DECOR!)
-							["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 200 } },
 						}),
 						i(245486, {	-- Tired Troll's Bench (DECOR!)
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 						i(244326, {	-- Zandalari Wall Shelf (DECOR!)
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 						i(245263, {	-- Zocalo Drinks (DECOR!)
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 						i(244325, {	-- Zuldazar Cook's Griddle (DECOR!)
-							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 400 } },
 						}),
 						i(245489, {	-- Zuldazar Stool (DECOR!)
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 					}, {	-- Friendly
 						i(245521, {	-- Stone Zandalari Lamp (DECOR!)
-							["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						}),
 					}, {	-- Honored
 						i(243113, {	-- Blue Dazar'alor Rug (DECOR!)
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 						i(243130, {	-- Zandalari Weapon Rack (DECOR!)
-							["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
 						}),
 					}, {	-- Revered
 						i(257399, {	-- Zandalari War Brazier (DECOR!)
-							["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
 						}),
 						i(256919, {	-- Zandalari War Chandelier (DECOR!)
-							["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
 						}),
 					}, {	-- Exalted
 					},

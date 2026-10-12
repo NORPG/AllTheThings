@@ -335,9 +335,9 @@ root(ROOTS.Zones, {
 							i(30932),	-- Akama's Sash
 							i(30999),	-- Ashtongue Blade
 							i(31000),	-- Bloodwarder's Rifle
-							i(30943),	-- Verdant Gloves
 							i(30984),	-- Spellbreaker's Buckler
 							i(31417),	-- Staff of the Ashtongue Deathsworn
+							i(30943),	-- Verdant Gloves
 						},
 					}),
 					q(11052, {	-- Akama's Promise
@@ -348,14 +348,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 						["maps"] = { SHATTRATH_CITY },
 						["lvl"] = lvlsquish(68, 68, 25),
-						["timeline"] = { REMOVED_3_0_2 },
+						--["timeline"] = { REMOVED_3_0_2 },
 						["groups"] = {
 							i(30932),	-- Akama's Sash
 							i(30999),	-- Ashtongue Blade
 							i(31000),	-- Bloodwarder's Rifle
-							i(30943),	-- Verdant Gloves
 							i(30984),	-- Spellbreaker's Buckler
 							i(31417),	-- Staff of the Ashtongue Deathsworn
+							i(30943),	-- Verdant Gloves
 						},
 					}),
 					q(10640, {	-- Altruis (The Aldor)

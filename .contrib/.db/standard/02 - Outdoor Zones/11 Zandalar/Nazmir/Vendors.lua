@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{		-- Neutral
 						i(245488, {	-- Zandalari Rickshaw (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						}),
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -57,15 +57,19 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(245413, {	-- Zandalari Sconce (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 						i(257394, {	-- Zandalari War Torch (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 150 } },	-- 150x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
 						}),
 					}, {	-- Revered
 						i(165242, {	-- Bracers of the Swamp Hunter
 							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(245495, {	-- Dazar'alor Market Tent (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", WAR_RESOURCES, 400 } },
 						}),
 						i(162762, {	-- Design: Tidal Amethyst Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
@@ -106,6 +110,10 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						i(162693, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
+						i(245500, {	-- Red Dazar'alor Tent (DECOR!)
+							["timeline"] = { ADDED_11_2_7 },
+							["cost"] = { { "c", WAR_RESOURCES, 400 } },
+						}),
 						i(162733, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
@@ -117,14 +125,6 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(163501, {	-- Tragg the Curious (PET!)
 							["cost"] = { { "i", POLISHED_PET_CHARM, 75 } },
-						}),
-						i(245495, {	-- Dazar'alor Market Tent (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
-						}),
-						i(245500, {	-- Red Dazar'alor Tent (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
 						}),
 					}, {	-- Exalted
 						i(165240, {	-- Hir'eek Hide Cuffs

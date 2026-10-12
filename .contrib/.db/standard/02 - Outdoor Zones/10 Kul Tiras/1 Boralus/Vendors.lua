@@ -329,19 +329,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 				["timeline"] = { ADDED_11_2_7 },
 				["groups"] = {
 					i(252390, {	-- Small Hull'n'Home Table (DECOR!)
-						["cost"] = { { "c", 1560, 450 } },	-- 450x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 450 } },
 					}),
 					i(252391, {	-- Large Hull'n'Home Table (DECOR!)
-						["cost"] = { { "c", 1560, 750 } },	-- 750x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 750 } },
 					}),
 					i(252393, {	-- Hull'n'Home Dresser (DECOR!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 					}),
 					i(252404, {	-- Hull'n'Home Chair (DECOR!)
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
 					}),
 					i(258765, {	-- Hull'n'Home Window (DECOR!)
-						["cost"] = { { "c", 1560, 175 } },	-- 175x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 175 } },
 					}),
 				},
 			}),
@@ -447,28 +447,28 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(252403, {	-- Admiral's Bed (DECOR!)
-						["cost"] = { { "c", 1560, 550 } },	-- 550x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 550 } },
 					}),
 					i(252386, {	-- Admiralty's Upholstered Chair (DECOR!)
-						["cost"] = { { "c", 1560, 400 } },	-- 400x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 400 } },
 					}),
 					i(252406, {	-- Green Boralus Market Tent (DECOR!)
-						["cost"] = { { "c", 1560, 375 } },	-- 375x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 375 } },
 					}),
 					i(245271, {	-- Old Salt's Fireplace (DECOR!)
-						["cost"] = { { "c", 1560, 800 } },	-- 800x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 800 } },
 					}),
 					i(252654, {	-- Proudmoore Green Drape (DECOR!)
-						["cost"] = { { "c", 1560, 300 } },	-- 300x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
 					}),
 					i(252754, {	-- Seaworthy Boralus Bell (DECOR!)
-						["cost"] = { { "c", 1560, 800 } },	-- 800x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 800 } },
 					}),
 					i(252400, {	-- Tiragarde Emblem (DECOR!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 500 } },
 					}),
 					i(252653, {	-- Tiragarde Treasure Chest (DECOR!)
-						["cost"] = { { "c", 1560, 650 } },	-- 650x War Resources
+						["cost"] = { { "c", WAR_RESOURCES, 650 } },
 					}),
 				},
 			}),
@@ -496,16 +496,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 					}, {	-- Friendly
 						i(252387, {	-- Boralus Fence (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 100 } },
 						}),
 						i(252388, {	-- Boralus Fencepost (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560,  50 } },	-- 50x War Resources
+							["cost"] = { { "c", WAR_RESOURCES,  50 } },
 						}),
 					}, {	-- Honored
 						i(246222, {	-- Boralus String Lights (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560,  75 } },	-- 75x War Resources
+							["cost"] = { { "c", WAR_RESOURCES,  75 } },
 						}),
 						i(163201, {	-- Gnoll Targetting Barrel (TOY!)
 							["cost"] = 11000000,	-- 1,100g
@@ -571,11 +571,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 						}),
 						i(252036, {	-- Tidesage's Bookcase (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 500 } },
 						}),
 						i(252402, {	-- Tidesage's Double Bookshelves (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "c", 1560, 450 } },	-- 450x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 450 } },
 						}),
 						i(161572, {	-- Yardarm Sharpshooter's Boots
 							["cost"] = 14000000,	-- 1,400g
@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(165720, {	-- Monelite Whetstone
-							["cost"] = { { "c", 1560, 200 } },	-- 200x War Resources
+							["cost"] = { { "c", WAR_RESOURCES, 200 } },
 						}),
 						i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
