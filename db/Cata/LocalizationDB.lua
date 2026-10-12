@@ -1905,25 +1905,25 @@ localize(L.EVENT_REMAPPING, {
 })
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(242, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=2,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
+	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=1,year=2025},{hour=10,minute=0,month=12,monthDay=7,weekday=1,year=2025}),
+	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=2,year=2026},{hour=10,minute=0,month=12,monthDay=7,weekday=2,year=2026}),
+	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=3,year=2027},{hour=10,minute=0,month=12,monthDay=7,weekday=3,year=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=5,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=1,["year"]=2028})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=3,year=2025},{hour=23,minute=59,month=3,monthDay=19,weekday=5,year=2026}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=4,year=2026},{hour=23,minute=59,month=3,monthDay=19,weekday=6,year=2027}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=5,year=2027},{hour=23,minute=59,month=3,monthDay=19,weekday=1,year=2028})
 })
 _.Modules.Events.SetEventInformation(133889, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=3,monthDay=20,weekday=5,year=2025},{hour=23,minute=59,month=9,monthDay=22,weekday=2,year=2025}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=3,monthDay=20,weekday=6,year=2026},{hour=23,minute=59,month=9,monthDay=22,weekday=3,year=2026}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=3,monthDay=20,weekday=7,year=2027},{hour=23,minute=59,month=9,monthDay=22,weekday=4,year=2027})
 })
 _.Modules.Events.SetEventInformation(1181, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=7,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=12,weekday=7,year=2026},{hour=0,minute=0,month=9,monthDay=13,weekday=1,year=2026})
 })
 _.Modules.Events.SetEventInformation(444, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=1,monthDay=14,weekday=3,year=2025},{hour=0,minute=0,month=2,monthDay=26,weekday=4,year=2025})
 })
 -- Filter Database Module
 _.FilterConstants = {

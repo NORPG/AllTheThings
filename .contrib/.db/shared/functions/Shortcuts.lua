@@ -3522,7 +3522,7 @@ local concatKeyPairs = function(t)
 		if i > 1 then
 			schedule = schedule .. ",";
 		end
-		schedule = schedule .. "[\"" .. key .. "\"]=" .. t[key];
+		schedule = schedule .. key .. "=" .. t[key];
 	end
 	return schedule .. "}";
 end
@@ -3716,7 +3716,7 @@ createHeader = function(data)
 					endTime.weekday = os.date("*t", endTimeStamp).wday;
 
 					-- Append the schedule
-					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{[\"remappedID\"]=" .. eventID .. "})";
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{remappedID=" .. eventID .. "})";
 
 					totalMonthOffset = totalMonthOffset + 1;
 					month = month + 1;
@@ -3791,7 +3791,7 @@ createHeader = function(data)
 						weekday=endTime.wday,
 						hour=0,
 						minute=0,
-					}) .. ",{[\"remappedID\"]=" .. eventIDs[(totalOffset % totalEventIDs) + 1] .. "})";
+					}) .. ",{remappedID=" .. eventIDs[(totalOffset % totalEventIDs) + 1] .. "})";
 
 					-- Adjust by 2 weeks.
 					startTimeStamp = startTimeStamp + SECONDS_IN_TWO_WEEKS;
@@ -3949,7 +3949,7 @@ createHeader = function(data)
 					endTime.weekday = os.date("*t", endTimeStamp).wday;
 
 					-- Append the schedule
-					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{[\"remappedID\"]=" .. eventID .. "})";
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{remappedID=" .. eventID .. "})";
 
 					totalMonthOffset = totalMonthOffset + 1;
 					month = month + 1;
