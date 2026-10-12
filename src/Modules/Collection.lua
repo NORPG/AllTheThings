@@ -3,18 +3,22 @@ local L = app.L
 
 -- Dependencies: Locales, Modules.RetrievingData
 
-local pairs,type
-	= pairs,type
+--- @type function,function,function,
+local pairs,type,tonumber
+	= pairs,type,tonumber
 
+--- @type function,
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local Runner = app.CreateRunner("collection")
 
+--- @type function,
 local SearchForObject
 app.AddEventHandler("OnLoad", function()
 	SearchForObject = app.SearchForObject
 end)
 
 -- Collection Events
+--- @type function,
 local Callback = app.CallbackHandlers.Callback
 local FanfareFunctions = setmetatable({
 	Mount = app.Audio.PlayMountFanfare
@@ -303,22 +307,20 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			app.PrintDebug("STC:NoCACHE",app:SearchLink(t), key, id, accountWide, collected)
 			return
 		end
-		-- make sure the correct ID for the cache is being updated, it may technically differ from the key/id provided
-		-- i.e. firstcraftswithquest
-		local cacheKeyID = t.keyval
-		local oldstate = (accountWide and IsAccountCached or IsCached)(cacheKey, cacheKeyID)
+		-- TODO: FirstCraftWithQuest needs to have a special workaround for this
+		local oldstate = (accountWide and IsAccountCached or IsCached)(cacheKey, id)
 		local accountCache = accountWideData[cacheKey]
-		-- app.PrintDebug("STC",app:SearchLink(t),key, id, accountWide, oldstate, "->", collected, cacheKey,"@",cacheKeyID)
+		-- app.PrintDebug("STC",app:SearchLink(t),key, id, accountWide, oldstate, "->", collected, cacheKey)
 		if collected then
 			if not oldstate then
 				DoCollection(t, true)
 			end
 			if not accountWide then
-				SetCached(cacheKey, cacheKeyID, 1)
-				accountCache[cacheKeyID] = 2
+				SetCached(cacheKey, id, 1)
+				accountCache[id] = 2
 			else
 				-- Achievements need to sometimes cache as 3 due to inconsistent Blizz API responses
-				accountCache[cacheKeyID] = tonumber(accountWide) or 1
+				accountCache[id] = tonumber(accountWide) or 1
 			end
 			return 1
 		end
@@ -326,13 +328,13 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			-- basically have to recalculate account data to know if this thing is still technically collected
 			-- via another character data, so clear it anyway
 			-- TODO: add a single key/val Account Recalculation method?
-			if accountCache[cacheKeyID] then
+			if accountCache[id] then
 				DoCollection(t, false)
-				accountCache[cacheKeyID] = nil
+				accountCache[id] = nil
 			end
 		end
-		if not accountWide then SetCached(cacheKey, cacheKeyID, nil) end
-		return accountCache[cacheKeyID] and 2 or nil
+		if not accountWide then SetCached(cacheKey, id, nil) end
+		return accountCache[id] and 2 or nil
 	end
 	app.SetThingCollected = SetThingCollected
 	app.SetCached = SetCached
