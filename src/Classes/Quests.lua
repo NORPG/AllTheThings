@@ -939,7 +939,7 @@ local RefreshQuestInfo = function(questID)
 	end
 end
 if C_QuestLog_GetAllCompletedQuestIDs then
-	local MAX = 999999;
+	local MAX = math.huge;
 	local UnflaggedQuests = {}
 	local FlaggedQuests = {}
 	local CompleteQuestSequence = {};
@@ -977,28 +977,38 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 		-- Dual Step tracking method
 		-- app.PrintDebug("DualStep")
 		local Ci, Ni = 1, 1
-		local c, n = CompleteQuestSequence[Ci] or MAX, freshCompletes[Ni] or MAX
-		while c ~= MAX or n ~= MAX do
-			-- same questID, complete and new, no change
+		local completeCount, freshCount = #CompleteQuestSequence, #freshCompletes
+
+		while Ci <= completeCount and Ni <= freshCount do
+			local c = CompleteQuestSequence[Ci]
+			local n = freshCompletes[Ni]
+
 			if c == n then
 				Ci = Ci + 1
 				Ni = Ni + 1
-				c, n = CompleteQuestSequence[Ci] or MAX, freshCompletes[Ni] or MAX
+			elseif c < n then
+				CompletedQuests[c] = nil
+				UnflaggedQuests[c] = true
+				Ci = Ci + 1
 			else
-				if c < n then
-					-- unflagged quest
-					CompletedQuests[c] = nil
-					UnflaggedQuests[c] = true
-					Ci = Ci + 1
-					c = CompleteQuestSequence[Ci] or MAX
-				else
-					-- new completed quest
-					CompletedQuests[n] = true
-					FlaggedQuests[n] = true
-					Ni = Ni + 1
-					n = freshCompletes[Ni] or MAX
-				end
+				CompletedQuests[n] = true
+				FlaggedQuests[n] = true
+				Ni = Ni + 1
 			end
+		end
+
+		while Ci <= completeCount do
+			local c = CompleteQuestSequence[Ci]
+			CompletedQuests[c] = nil
+			UnflaggedQuests[c] = true
+			Ci = Ci + 1
+		end
+
+		while Ni <= freshCount do
+			local n = freshCompletes[Ni]
+			CompletedQuests[n] = true
+			FlaggedQuests[n] = true
+			Ni = Ni + 1
 		end
 		CompleteQuestSequence = freshCompletes
 		-- app.PrintDebugPrior("---")
