@@ -1014,15 +1014,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["coord"] = { 80.7, 46.1, 2640 },	-- Blistering Terrace
 						["groups"] = {
 							o(660399, {	-- Experiment Notes
-								["coord"] = { 58.4, 23.3, 2640 },	-- Blistering Terrace
+								["coord"] = { 58.6, 28.1, 2640 },	-- Blistering Terrace
 								["groups"] = { i(276910) },	-- Lokago's Experiment Notes (QI!)
 							}),
 							o(660427, {	-- Lokago's Ledger
-								["coord"] = { 28.6, 41.3, 2640 },	-- Blistering Terrace
+								["coord"] = { 32.6, 36.9, 2640 },	-- Blistering Terrace
 								["groups"] = { i(276913) },	-- Lokago's Ledger (QI!)
 							}),
 							o(660407, {	-- Missive from Malacrass
-								["coord"] = { 41.5, 37.2, 2640 },	-- Blistering Terrace
+								["coord"] = { 36.0, 22.6, 2640 },	-- Blistering Terrace
 								["groups"] = { i(276911) },	-- Missive from Malacrass (QI!)
 							}),
 						},
