@@ -600,6 +600,7 @@ local function zoneTextNamesRunner(group, value)
 end
 local function zoneTextHeaderIDRunner(group, value)
 	value = L.HEADER_NAMES[value]
+	print("ZONE TEXT HEADER ID", value);
 	if value then zoneTextNamesRunner(group, { value }); end
 end
 app.MapRemapping = MapRemapping;
@@ -634,11 +635,6 @@ fieldConverters["zone-text-continent"] = function(group, value)
 		if mapID then
 			MapRemapping[mapID].isContinent = true;
 		end
-	end
-end
-fieldConverters["zone-text-headerID"] = function(group, value)
-	runners[#runners + 1] = function()
-		zoneTextHeaderIDRunner(group, value);
 	end
 end
 fieldConverters["zone-text-names"] = function(group, value)
