@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	applyclassicphase(WRATH_PHASE_ONE, m(NORTHREND, {
 		["lore"] = "Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",
 		["icon"] = 236812,
-		["zone-text-continent"] = true,
+		["isContinent"] = true,
 		["timeline"] = { ADDED_3_0_2 },	-- NOTE: This is the base patch for all of the content on this continent and does not need to be added to everything within it.
 		["groups"] = {
 			n(ACHIEVEMENTS, {

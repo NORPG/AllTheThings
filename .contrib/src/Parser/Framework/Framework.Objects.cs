@@ -1922,6 +1922,7 @@ end");
                     case "isBreadcrumb":
                     case "DisablePartySync":
                     case "isBounty":
+					case "isContinent":
                     case "isLimited":
                     case "isGuild":
                     case "isDaily":
@@ -1941,7 +1942,6 @@ end");
                     case "sort":
                     case "sourceIgnored":
                     case "nomerge":
-                    case "zone-text-continent":
                         MergeObjectField<bool>(item, field, value, WarnOnMergeDataChanges);
                         break;
 

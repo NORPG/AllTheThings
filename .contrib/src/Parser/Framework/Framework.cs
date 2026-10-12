@@ -1551,6 +1551,7 @@ namespace ATT
                 case "inventoryType":
                 case "isAquatic":
                 case "isBreadcrumb":
+				case "isContinent":
                 case "isFlying":
                 case "isGround":
                 case "isJumping":
@@ -1606,7 +1607,6 @@ namespace ATT
                 case "zone-artIDs":
                 case "zone-text-areaID":
                 case "zone-text-areas":
-                case "zone-text-continent":
                 case "zone-text-names":
 
                 // metadata parser tags

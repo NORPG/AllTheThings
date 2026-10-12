@@ -549,7 +549,7 @@ o(175856,{coords={
 [71]={{52.5,26.9}},
 [210]={{42,73.7}}},g={
 crit(3803,{achID=1244,id=43})}})}}),
-m(12,{icon=236807,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},["zone-text-continent"]=1,g={
+m(12,{icon=236807,isContinent=1,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},g={
 h(-12,{
 ach(43,{awp=30002,g={
 crit(95,{achID=46,id=2,u=30})}}),
@@ -18760,7 +18760,7 @@ s(129806,18957,{b=1,f=25,q=2}),
 i(9602,{b=1,collectible=false,f=26,q=2,rwp=11101,u=2})}}),
 q(1684,{altQuests={1638,1678,1679,9582},c={1},coords={
 [57]={{56.2,59.2}},
-[62]={{39,43.4}}},lvl=10,maps={89},qgs={2151,3598,3657},r=2,rwp=40003,u=2}),
+[62]={{39,43.4}}},isBreadcrumb=1,lvl=10,maps={89},nextQuests={1639,1678,1683,10350},qgs={2151,3598,3657},r=2,rwp=40003,u=2}),
 q(1581,{coords={
 [57]={{55.8,50.4}}},cost={{"i",5997,2},{"i",2454,6}},description="This quest becomes available at Alchemy skill level 20 when the character level requirement is met.",lvl=4,qgs={2083},r=2,requireSkill=171}),
 q(2259,{c={4},coords={
@@ -21629,7 +21629,7 @@ i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},q=1,
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,q=1}),
 i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
-m(13,{icon=236759,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},["zone-text-continent"]=1,g={
+m(13,{icon=236759,isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},g={
 h(-12,{
 ach(42,{awp=30002,g={
 crit(94,{achID=46,id=1,u=30})}}),
@@ -44790,7 +44790,7 @@ s(116977,756,{awp=100107,coords={
 h(-43,{awp=50004,pb=1,g={
 crit(21447,{achID=6613,id=24,pb=1}),
 crit(21560,{achID=6560,id=34,pb=1})}})}})}}),
-m(1467,{awp=20003,icon=236813,lore="Outland is the shattered floating remnants of the destroyed world of Draenor, the homeworld of the orcs and refuge of the draenei. After the sundering of Draenor, Outland was thrown partially towards the Twisting Nether, and is now in a constant state of degradation. It became the domain of the pitlord Magtheridon, who was eventually deposed and replaced by Illidan Stormrage until his death at the Black Temple.",u=17,["zone-text-continent"]=1,g={
+m(1467,{awp=20003,icon=236813,isContinent=1,lore="Outland is the shattered floating remnants of the destroyed world of Draenor, the homeworld of the orcs and refuge of the draenei. After the sundering of Draenor, Outland was thrown partially towards the Twisting Nether, and is now in a constant state of degradation. It became the domain of the pitlord Magtheridon, who was eventually deposed and replaced by Illidan Stormrage until his death at the Black Temple.",u=17,g={
 h(-12,{u=17,g={
 ach(1312,{awp=30002,u=17}),
 ach(1262,{u=17,g={
@@ -52878,7 +52878,7 @@ p(146,{awp=20100,crs={20197},description="This is an extremely rare drop.",itemI
 i(24330,{b=1,crs={18340},description="Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",f=55,lvl=59,q=1,u=17}),
 i(24449,{crs={18128,18129,18134,18135,18280,18281},q=1,u=17}),
 i(24401,{description="Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",q=1,u=17})}})}})}}),
-m(113,{awp=30002,icon=236812,lore="Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",u=30,["zone-text-continent"]=1,g={
+m(113,{awp=30002,icon=236812,isContinent=1,lore="Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",u=30,g={
 h(-12,{u=30,g={
 ach(2257,{u=30}),
 ach(41,{u=30,g={
@@ -65200,7 +65200,7 @@ s(202321,49245,{f=4,loc=43,q=1}),
 s(202322,49246,{f=4,loc=44,q=1}),
 s(202319,49243,{f=4,loc=46,q=1,r=1}),
 s(202317,49241,{f=4,loc=42,q=1})}})})}})}}),
-m(424,{awp=50004,icon=630786,lore="Pandaria is the homeland of the pandaren and birthplace of their ancient empire. Located in the southern part of Azeroth, Pandaria was shrouded by a magical mist by its last emperor after the Great Sundering ten thousand years ago, and thus disappeared into myth and legend. Only those pandaren who left their homeland on the back of the great turtle Shen-zin Su, including the renowned pandaren brewmasters, have been seen outside of their homeland since; some even came to the aid of the other races during the Third War.",u=50,["zone-text-continent"]=1,g={
+m(424,{awp=50004,icon=630786,isContinent=1,lore="Pandaria is the homeland of the pandaren and birthplace of their ancient empire. Located in the southern part of Azeroth, Pandaria was shrouded by a magical mist by its last emperor after the Great Sundering ten thousand years ago, and thus disappeared into myth and legend. Only those pandaren who left their homeland on the back of the great turtle Shen-zin Su, including the renowned pandaren brewmasters, have been seen outside of their homeland since; some even came to the aid of the other races during the Third War.",u=50,g={
 h(-12,{u=50,g={
 ach(6541,{u=50,g={
 crit(19386,{achID=7520,id=1})}}),

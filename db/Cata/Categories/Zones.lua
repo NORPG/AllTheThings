@@ -534,7 +534,7 @@ o(175856,{coords={
 [210]={{42,73.7}},
 [1446]={{52.5,26.9}}},g={
 crit(3803,{achID=1244,id=1})}})}}),
-m(1414,{icon=236807,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},["zone-text-continent"]=1,g={
+m(1414,{icon=236807,isContinent=1,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},g={
 h(-12,{awp=30002,g={
 ach(43,{
 crit(95,{achID=46,id=1,u=30})}),
@@ -17084,7 +17084,7 @@ s(129806,18957,{b=1,f=25,q=2}),
 i(9602,{b=1,collectible=false,f=26,q=2,rwp=11101,u=2})}}),
 q(1684,{altQuests={1638,1678,1679,9582},c={1},coords={
 [1438]={{56.2,59.2}},
-[1439]={{39,43.4}}},lvl=10,maps={1457},qgs={2151,3598,3657},r=2,rwp=40003,u=2}),
+[1439]={{39,43.4}}},isBreadcrumb=1,lvl=10,maps={1457},nextQuests={1639,1678,1683,10350},qgs={2151,3598,3657},r=2,rwp=40003,u=2}),
 q(1581,{coords={
 [1438]={{55.8,50.4}}},cost={{"i",5997,2},{"i",2454,6}},description="This quest becomes available at Alchemy skill level 20 when the character level requirement is met.",lvl=4,qgs={2083},r=2,requireSkill=171}),
 q(2259,{c={4},coords={
@@ -19815,7 +19815,7 @@ i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},q=1,
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,q=1}),
 i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
-m(1415,{icon=236759,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},["zone-text-continent"]=1,g={
+m(1415,{icon=236759,isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},g={
 h(-12,{awp=30002,g={
 ach(42,{
 crit(94,{achID=46,id=1,u=30})}),
@@ -41989,7 +41989,7 @@ p(58,{coords={
 [1437]={{67.3,47.2}}},crs={1016,1038,1111,4040,41132,41137,41145,41293,41342,41388,41389,41390,41391,41394,41400,41401,41419,41424,41425,42041,42042,42043,44116},description="Teaches you how to summon the pet Crimson Whelpling.\n\nThe best spot to farm this pet is near the border with The Twilight Highlands. There is a \"battle\" going on between Ebon Slavehunters and Dragonmaw Whelpstealers. Around four of them meet at this point to wage war with each other. They spawn roughly every 15 seconds and engage again, so you don't even have to move. Having skinning helps so you can clear the big Ebon Slavehunter corpses, but it isn't needed.",itemID=8499,npcID=7544,petTypeID=2,q=1,spellID=10697}),
 s(116977,756,{awp=100107,coords={
 [1437]={{48,18.6},{61.2,25.4}}},crs={1053},f=22,lvl=24,q=2,rwp=40003,u=2})})}})}}),
-m(1945,{awp=20003,icon=236813,lore="Outland is the shattered floating remnants of the destroyed world of Draenor, the homeworld of the orcs and refuge of the draenei. After the sundering of Draenor, Outland was thrown partially towards the Twisting Nether, and is now in a constant state of degradation. It became the domain of the pitlord Magtheridon, who was eventually deposed and replaced by Illidan Stormrage until his death at the Black Temple.",u=17,["zone-text-continent"]=1,g={
+m(1945,{awp=20003,icon=236813,isContinent=1,lore="Outland is the shattered floating remnants of the destroyed world of Draenor, the homeworld of the orcs and refuge of the draenei. After the sundering of Draenor, Outland was thrown partially towards the Twisting Nether, and is now in a constant state of degradation. It became the domain of the pitlord Magtheridon, who was eventually deposed and replaced by Illidan Stormrage until his death at the Black Temple.",u=17,g={
 h(-12,{u=17,g={
 ach(1312,{awp=30002,u=17}),
 ach(1262,{r=2,u=17,g={
@@ -50008,7 +50008,7 @@ p(146,{awp=20100,crs={20197},description="This is an extremely rare drop.",itemI
 i(24330,{b=1,crs={18340},description="Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",f=55,lvl=59,q=1,u=17}),
 i(24449,{crs={18128,18129,18134,18135,18280,18281},q=1,u=17}),
 i(24401,{description="Lauranna Thar'well in Cenarion Refugee will accept these and increase your reputation with Cenarion Expedition. The repeatable quest is only available until you become Honoured with the faction.",q=1,u=17})}})}})}}),
-m(113,{awp=30002,icon=236812,lore="Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",u=30,["zone-text-continent"]=1,g={
+m(113,{awp=30002,icon=236812,isContinent=1,lore="Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",u=30,g={
 h(-12,{u=30,g={
 ach(2257,{u=30}),
 ach(41,{r=2,u=30,g={
