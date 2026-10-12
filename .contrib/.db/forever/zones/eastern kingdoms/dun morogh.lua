@@ -5,8 +5,8 @@
 maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 	lore = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
 	maps = {
-		29,		-- The Grizzled Den
-		31,		-- Gol'Balar Quarry
+		29,	-- The Grizzled Den
+		31,	-- Gol'Balar Quarry
 	},
 	icon = 236755,
 	groups = {
@@ -358,7 +358,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(836, {	-- Durnan Furcutter
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{"select","itemID",
+						sym = {{"select", "itemID",
 							2122,	-- Cracked Leather Belt
 							2123,	-- Cracked Leather Boots
 							2124,	-- Cracked Leather Bracers
@@ -376,7 +376,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(1104, {	-- Grundel Harkin <Armorer>
 						coord = { 28.8, 67.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{"select","itemID",
+						sym = {{"select", "itemID",
 							2129,	-- Large Round Shield
 							17184,	-- Small Shield
 							2380,	-- Tarnished Chain Belt
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(945, {	-- Rybrad Coldbank
 						coord = { 28.7, 67.7, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{"select","itemID",
+						sym = {{"select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
 							2130,	-- Club
@@ -1639,7 +1639,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1238, {	-- Gamili Frosthide
 				coord = { 45.2, 51.9, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2122,	-- Cracked Leather Belt
 					2123,	-- Cracked Leather Boots
 					2124,	-- Cracked Leather Bracers
@@ -1669,7 +1669,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1273, {	-- Grawn Thromwyn
 				coord = { 45.3, 52.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2492,	-- Cudgel
 					2488,	-- Gladius
 					2491,	-- Large Axe
@@ -1690,7 +1690,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1243, {	-- Hegnar Rumbleshot <Gunsmith>
 				coord = { 40.7, 65.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
 				}},

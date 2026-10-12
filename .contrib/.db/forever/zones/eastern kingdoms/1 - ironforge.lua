@@ -565,7 +565,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(6974),	-- Fire hardened Gauntlets
 				},
 			}),
-			q(1880,	{	-- Mage-tastic Gizmonitor
+			q(1880, {	-- Mage-tastic Gizmonitor
 				sourceQuest = 1879,	-- Speak with Bink
 				altQuests = { 1861 },	-- Mirror Lake
 				qg = 5144,	-- Bink <Mage Trainer>
@@ -934,7 +934,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5152, {	-- Bingus
 				coord = { 23.2, 17.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2527,	-- Battle Staff
 					2532,	-- Morning Star
 					2524,	-- Truncheon
@@ -962,7 +962,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5120, {	-- Brenwyn Wintersteel
 				coord = { 61.8, 88.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2520,	-- Broadsword
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -983,7 +983,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5123, {	-- Bretta Goldfury
 				coord = { 72.8, 64.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					3024,	-- Bkp 2700 Enforcer
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss
@@ -993,7 +993,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5106, {	-- Bromiir Ormsen
 				coord = { 32.6, 58.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2392,	-- Light Mail Armor
 					2393,	-- Light Mail Belt
 					2395,	-- Light Mail Boots
@@ -1009,7 +1009,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5125, {	-- Dolkin Craghelm
 				coord = { 54.8, 88.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -1036,7 +1036,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5102, {	-- Dolman Steelfury
 				coord = { 36.6, 66.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2492,	-- Cudgel
 					2493,	-- Wooden Mallet
 				}},
@@ -1111,7 +1111,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5103, {	-- Grenil Steelfury
 				coord = { 36.4, 66.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2025,	-- Bearded Axe
 					1198,	-- Claymore
 					2029,	-- Cleaver
@@ -1154,7 +1154,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5133, {	-- Harick Boulderdrum
 				coord = { 22.8, 16.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					5239,	-- Blackbone Wand
 					5210,	-- Burning Wand
 					5236,	-- Combustible Wand
@@ -1168,7 +1168,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5119, {	-- Hegnar Swiftaxe
 				coord = { 61.8, 88.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2523,	-- Bullova
@@ -1184,7 +1184,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5170, {	-- Hjoldir Stoneblade
 				coord = { 45.8, 7.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2520,	-- Broadsword
 					2528,	-- Falchion
 					2521,	-- Flamberge
@@ -1196,7 +1196,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5155, {	-- Ingrys Stonebrow
 				coord = { 39.2, 5.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots
@@ -1222,7 +1222,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5121, {	-- Kelomir Ironhand
 				coord = { 61.4, 88.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2527,	-- Battle Staff
 					925,	-- Flail
 					1197,	-- Giant Mace
@@ -1245,7 +1245,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5129, {	-- Lissyphus Finespindle
 				coord = { 54.6, 88.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots
@@ -1277,7 +1277,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5156, {	-- Maeva Snowbraid
 				coord = { 38.8, 5.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -1316,7 +1316,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5126, {	-- Olthran Craghelm
 				coord = { 55.0, 88.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2424,	-- Brigandine Belt
 					2426,	-- Brigandine Boots
 					2427,	-- Brigandine Bracers
@@ -1365,7 +1365,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 				coord = { 32.6, 58.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Gray Shirt
 					16060,	-- Common White Shirt
@@ -1386,7 +1386,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5122, {	-- Skolmin Goldfury <Bow Merchant>
 				coord = { 71.6, 66.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
@@ -1448,7 +1448,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(7976, {	-- Thalgus Thunderfist
 				coord = { 61.8, 90.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					15905,	-- Brass Knuckles
 					15904,	-- Deadly Fist Blades
 					15808,	-- Fine Light Crossbow
@@ -1468,7 +1468,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 				coord = { 60.8, 44.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select","itemID",
+				sym = {{ "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -1485,7 +1485,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 31.8, 63.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				description = "This NPC is only available on July 4th.",
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					8626,	-- Blue Sparkler
 					8625,	-- White Sparkler
 					8624,	-- Red Sparkler

@@ -98,7 +98,7 @@ root(ROOTS.WorldDrops, {
 					11989,	-- Vanadium Loop
 				}},
 			}),
-			i(4634,	{	-- Iron Lockbox
+			i(4634, {	-- Iron Lockbox
 				sym = {{"select", "itemID",
 					11164,	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 					7449,	-- Pattern: Dusky Leather Leggings (RECIPE!)
@@ -137,7 +137,7 @@ root(ROOTS.WorldDrops, {
 					7989,	-- Plans: Mithril Spurs (RECIPE!)
 					12683,	-- Plans: Thorium Belt (RECIPE!)
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
-					3395 	-- Recipe: Limited Invulnerability Potion (RECIPE!)
+					3395,	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 				}},
 			}),
 			i(4637, {	-- Steel Lockbox
@@ -157,7 +157,7 @@ root(ROOTS.WorldDrops, {
 					8029,	-- Plans: Wicked Mithril Blade (RECIPE!)
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
 					10603,	-- Schematic: Catseye Ultra Goggles (RECIPE!)
-					10606	-- Schematic: Parachute Cloak (RECIPE!)
+					10606,	-- Schematic: Parachute Cloak (RECIPE!)
 				}},
 			}),
 			i(4636, {	-- Strong Iron Lockbox

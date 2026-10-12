@@ -45,7 +45,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 		}),
 		pickpocketing({
-			i(7923,	{	-- Defias Tower Key (QI!)
+			i(7923, {	-- Defias Tower Key (QI!)
 				description = "Can also be killed for the key, though hits hard for lower level rogues.",
 				coord = { 68.6, 72.2, MAP.WESTFALL },
 				cr = 7051,	-- Malformed Defias Drone
@@ -220,7 +220,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(4656),	-- Small Pumpkin
 				},
 			}),
-			q(22, {		-- Goretusk Liver Pie
+			q(22, {	-- Goretusk Liver Pie
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },
 				cost = { { "i", 723, 8 } },	-- Goretusk Liver
@@ -298,7 +298,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 					recipe(8681),	-- Instant Poison
 					recipe(2842),	-- Poisons
-					i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
+					i(7678, {	-- Recipe: Thistle Tea (RECIPE!)
 						timeline = { REMOVED_1_3_0 },
 					}),
 					i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
@@ -436,7 +436,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 			}),
-			q(48, {		-- Sweet Amber (1/5)
+			q(48, {	-- Sweet Amber (1/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
 				maps = { MAP.STRANGLETHORN_VALE },
@@ -452,7 +452,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(49, {		-- Sweet Amber (2/5)
+			q(49, {	-- Sweet Amber (2/5)
 				sourceQuest = 48,	-- Sweet Amber (1/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
@@ -483,7 +483,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(50, {		-- Sweet Amber (3/5)
+			q(50, {	-- Sweet Amber (3/5)
 				sourceQuest = 49,	-- Sweet Amber (2/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
@@ -491,7 +491,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
-			q(51, {		-- Sweet Amber (4/5)
+			q(51, {	-- Sweet Amber (4/5)
 				sourceQuest = 50,	-- Sweet Amber (3/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
@@ -506,7 +506,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(53, {		-- Sweet Amber (5/5)
+			q(53, {	-- Sweet Amber (5/5)
 				sourceQuest = 51,	-- Sweet Amber (4/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
@@ -576,7 +576,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(5240),	-- Torchlight Wand
 				},
 			}),
-			q(65, {		-- The Defias Brotherhood (1/7)
+			q(65, {	-- The Defias Brotherhood (1/7)
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
@@ -627,7 +627,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				lvl = 14,
 			}),
-			q(64, {		-- The Forgotten Heirloom
+			q(64, {	-- The Forgotten Heirloom
 				qg = 237,	-- Farmer Furlbrow
 				coord = { 60.0, 19.4, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
@@ -642,7 +642,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(9, {		-- The Killing Fields
+			q(9, {	-- The Killing Fields
 				qg = 233,	-- Farmer Saldean
 				coord = { 56.0, 31.2, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
@@ -658,7 +658,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(12, {		-- The People's Militia (1/3)
+			q(12, {	-- The People's Militia (1/3)
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
@@ -672,7 +672,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(13, {		-- The People's Militia (2/3)
+			q(13, {	-- The People's Militia (2/3)
 				sourceQuest = 12,	-- The People's Militia (1/3)
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.3, 47.6, MAP.WESTFALL },
@@ -687,7 +687,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 				},
 			}),
-			q(14, {		-- The People's Militia (3/3)
+			q(14, {	-- The People's Militia (3/3)
 				sourceQuest = 13,	-- The People's Militia (2/3)
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.3, 47.6, MAP.WESTFALL },
@@ -742,14 +742,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(1262),	-- Keg of Thunderbrew
 				},
 			}),
-			q(36, {		-- Westfall Stew (1/2)
+			q(36, {	-- Westfall Stew (1/2)
 				qg = 238,	-- Verna Furlbrow
 				qi = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
 				coord = { 60.0, 19.4, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 			}),
-			q(38, {		-- Westfall Stew (2/2)
+			q(38, {	-- Westfall Stew (2/2)
 				sourceQuest = 36,	-- Westfall Stew (1/2)
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },

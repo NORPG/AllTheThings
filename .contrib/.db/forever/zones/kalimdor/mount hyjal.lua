@@ -13,7 +13,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 		n(VENDORS, {
 			n(264797, {	-- Aisarra Nightmeadow <Keeper of Knowledge>
 				coord = { 71.0, 51.2, MAP.MOUNT_HYJAL },
-				groups = {-- Need to add cost//Braghe
+				groups = {	-- Need to add cost//Braghe
 					-- Paladin
 					i(273976),	-- Plans: Justice Leggings (RECIPE!)
 					i(273977),	-- Plans: Justice Gauntlets (RECIPE!)

@@ -59,18 +59,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(18650),	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 				},
 			}),
-			n(255897, { -- Friz Frazzlespark <Specialty Goods>
+			n(255897, {	-- Friz Frazzlespark <Specialty Goods>
 				coord = { 77.1, 52.9, MAP.RIVERGLADES },
 				sym = {{ "select", "itemID", 
 					-- Weapons
-					2520, -- Broadsword
-					2521, -- Flamberge
-					2522, -- Crescent Axe
-					2523, -- Bullova
-					2524, -- Truncheon
-					2525, -- War Hammer
-					2526, -- Main Gauche
-					2527, -- Battle Staff
+					2520,	-- Broadsword
+					2521,	-- Flamberge
+					2522,	-- Crescent Axe
+					2523,	-- Bullova
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+					2526,	-- Main Gauche
+					2527,	-- Battle Staff
 					-- Poison Supplies
 					-- Not included.
 				}},
@@ -78,48 +78,48 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					{	-- Neutral
 						
 					}, {	-- Friendly
-						i(276200), -- Crawler's Clackers
-						i(276202), -- Disengagement Ring
-						i(276201), -- Misplaced Pantaloons
+						i(276200),	-- Crawler's Clackers
+						i(276202),	-- Disengagement Ring
+						i(276201),	-- Misplaced Pantaloons
 					}, {	-- Honored
-						i(276203), -- Primitive Fishing Pole
-						i(276204), -- Thrash's Trash
+						i(276203),	-- Primitive Fishing Pole
+						i(276204),	-- Thrash's Trash
 					}, {	-- Revered
-						i(276199), -- Haughty Fellow's Monocle
+						i(276199),	-- Haughty Fellow's Monocle
 					}, {	-- Exalted
 					},
 				}),
 			}),
-			n(272435, { -- Goren Grayfellow <Armorer>
+			n(272435, {	-- Goren Grayfellow <Armorer>
 				coord = { 37.7, 76.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
-					2417, -- Augmented Chain Vest
-					2419, -- Augmented Chain Belt
-					2418, -- Augmented Chain Leggings
-					2420, -- Augmented Chain Boots
-					2421, -- Augmented Chain Bracers
-					2422, -- Augmented Chain Gloves
-					3891, -- Augmented Chain Helm
-					17189, -- Metal Buckler
-					2448, -- Heavy Pavise
-					2429, -- Russet Vest
-					3593, -- Russet Belt
-					2431, -- Russet Pants
-					2432, -- Russet Boots
-					3594, -- Russet Bracers
-					2434, -- Russet Gloves
-					3889, -- Russet Hat
-					2463, -- Studded Doublet
-					2464, -- Studded Belt
-					2465, -- Studded Pants
-					2467, -- Studded Boots
-					2468, -- Studded Bracers
-					2469, -- Studded Gloves
-					3890, -- Studded Hat
+					2417,	-- Augmented Chain Vest
+					2419,	-- Augmented Chain Belt
+					2418,	-- Augmented Chain Leggings
+					2420,	-- Augmented Chain Boots
+					2421,	-- Augmented Chain Bracers
+					2422,	-- Augmented Chain Gloves
+					3891,	-- Augmented Chain Helm
+					17189,	-- Metal Buckler
+					2448,	-- Heavy Pavise
+					2429,	-- Russet Vest
+					3593,	-- Russet Belt
+					2431,	-- Russet Pants
+					2432,	-- Russet Boots
+					3594,	-- Russet Bracers
+					2434,	-- Russet Gloves
+					3889,	-- Russet Hat
+					2463,	-- Studded Doublet
+					2464,	-- Studded Belt
+					2465,	-- Studded Pants
+					2467,	-- Studded Boots
+					2468,	-- Studded Bracers
+					2469,	-- Studded Gloves
+					3890,	-- Studded Hat
 				}},
 			}),
-			n(260487, { -- Gritta Chumwater <Fisherman>
+			n(260487, {	-- Gritta Chumwater <Fisherman>
 				coord = { 78.4, 55.1, MAP.RIVERGLADES },
 				groups = {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
@@ -172,63 +172,63 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
-			n(263384, { -- Mister Graphed <Agent of the Black Market>
+			n(263384, {	-- Mister Graphed <Agent of the Black Market>
 				coord = { 78.1, 51.9, MAP.RIVERGLADES },
 				groups = {
-					i(271871, { -- Gift of Galloping
+					i(271871, {	-- Gift of Galloping
 						cost = 1500000,	-- 150g
 					}),
-					i(12363), -- Arcane Crystal
-					i(249425), -- Bauxite
-					i(13468), -- Black Lotus
-					i(248822), -- Death Lotus
-					i(248819), -- Fel Crystal
-					i(249399), -- Frilled Lichen
-					i(249426), -- Pitchblende
-					i(249427), -- Pristine Leather
-					i(249428), -- Pristine Hide
-					i(249429), -- Pristine Scale
-					i(249391), -- Pyrite
-					i(249424), -- Rosecap
-					i(249274), -- Stranglevine
-					i(248820), -- Torbernite
+					i(12363),	-- Arcane Crystal
+					i(249425),	-- Bauxite
+					i(13468),	-- Black Lotus
+					i(248822),	-- Death Lotus
+					i(248819),	-- Fel Crystal
+					i(249399),	-- Frilled Lichen
+					i(249426),	-- Pitchblende
+					i(249427),	-- Pristine Leather
+					i(249428),	-- Pristine Hide
+					i(249429),	-- Pristine Scale
+					i(249391),	-- Pyrite
+					i(249424),	-- Rosecap
+					i(249274),	-- Stranglevine
+					i(248820),	-- Torbernite
 				},
 			}),
-			n(259861, { -- Paige Armstrong
+			n(259861, {	-- Paige Armstrong
 				coord = { 64.3, 82.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
-					2429, -- Russet Vest
-					3593, -- Russet Belt
-					2431, -- Russet Pants
-					2432, -- Russet Boots
-					3594, -- Russet Bracers
-					2434, -- Russet Gloves
-					3889, -- Russet Hat
-					2463, -- Studded Doublet
-					2464, -- Studded Belt
-					2465, -- Studded Pants
-					2467, -- Studded Boots
-					2468, -- Studded Bracers
-					2469, -- Studded Gloves
-					3890, -- Studded Hat
-					2417, -- Augmented Chain Vest
-					2419, -- Augmented Chain Belt
-					2418, -- Augmented Chain Leggings
-					2420, -- Augmented Chain Boots
-					2421, -- Augmented Chain Bracers
-					2422, -- Augmented Chain Gloves
-					3891, -- Augmented Chain Helm
-					17189, -- Metal Buckler
-					2448, -- Heavy Pavise
-					2520, -- Broadsword
-					2521, -- Flamberge
-					2522, -- Crescent Axe
-					2523, -- Bullova
-					2524, -- Truncheon
-					2525, -- War Hammer
-					2526, -- Main Gauche
-					2527, -- Battle Staff
+					2429,	-- Russet Vest
+					3593,	-- Russet Belt
+					2431,	-- Russet Pants
+					2432,	-- Russet Boots
+					3594,	-- Russet Bracers
+					2434,	-- Russet Gloves
+					3889,	-- Russet Hat
+					2463,	-- Studded Doublet
+					2464,	-- Studded Belt
+					2465,	-- Studded Pants
+					2467,	-- Studded Boots
+					2468,	-- Studded Bracers
+					2469,	-- Studded Gloves
+					3890,	-- Studded Hat
+					2417,	-- Augmented Chain Vest
+					2419,	-- Augmented Chain Belt
+					2418,	-- Augmented Chain Leggings
+					2420,	-- Augmented Chain Boots
+					2421,	-- Augmented Chain Bracers
+					2422,	-- Augmented Chain Gloves
+					3891,	-- Augmented Chain Helm
+					17189,	-- Metal Buckler
+					2448,	-- Heavy Pavise
+					2520,	-- Broadsword
+					2521,	-- Flamberge
+					2522,	-- Crescent Axe
+					2523,	-- Bullova
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+					2526,	-- Main Gauche
+					2527,	-- Battle Staff
 				}},
 			}),
 			n(6568, {	-- Vizzklick <Tailoring Supplies>

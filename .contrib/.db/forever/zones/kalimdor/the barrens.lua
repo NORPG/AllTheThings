@@ -501,7 +501,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(6637),	-- Water Sapta
 				},
 			}),
-			q(63, {		-- Call of Water (7/9)
+			q(63, {	-- Call of Water (7/9)
 				sourceQuest = 1534,	-- Call of Water (6/9)
 				qg = 5901,	-- Islen Waterseer
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
@@ -1739,7 +1739,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				repeatable = true,
 				lvl = 14,
 			}),
-			q(866,	{	-- Root Samples
+			q(866, {	-- Root Samples
 				description = "To access this quest, you must have at least 40 skill in Herbalism.",
 				qg = 3446,	-- Mebok Mizzyrix
 				coord = { 62.4, 37.6, MAP.THE_BARRENS },
@@ -2972,7 +2972,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3486, {	-- Halija Whitestrider <Clothier>
 				coord = { 52.2, 31.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt

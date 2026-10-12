@@ -1050,7 +1050,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1450, {	-- Brahnmar <Armorer>
 				coord = { 11.6, 59.9, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2446,	-- Kite Shield
 					2148,	-- Polished Scale Belt
 					2149,	-- Polished Scale Boots
@@ -1064,7 +1064,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1441, {	-- Brak Durnad <Weaponsmith>
 				coord = { 11.6, 59.5, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					926,	-- Battle Axe
 					922,	-- Dacian Falx
 					927,	-- Double Axe
@@ -1157,7 +1157,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1461, {	-- Murndan Derth <Gunsmith>
 				coord = { 11.3, 59.6, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					3024,	-- BKP 2700 "Enforcer"
 					3023,	-- Large Bore Blunderbuss
 				}},
@@ -1165,7 +1165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1459, {	-- Naela Trance <Bowyer>
 				coord = { 11.3, 58.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2507,	-- Laminated Recurve Bow
 					3026,	-- Reinforced Bow
 				}},

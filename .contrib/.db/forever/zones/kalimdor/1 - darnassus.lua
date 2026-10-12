@@ -534,7 +534,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4234, {	-- Andrus <Staff Merchant>
 				coord = { 54.6, 83.2, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2527,	-- Battle Staff
 					2535,	-- War Staff
 				}},
@@ -542,7 +542,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4172, {	-- Anadyia
 				coord = { 54.6, 83.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -555,7 +555,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4203, {	-- Ariyell Skyshadow
 				coord = { 56.6, 52.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 				-- all done
 					2025,	-- Bearded Axe
 					15905,	-- Brass Knuckles
@@ -593,7 +593,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4240, {	-- Caynrus
 				coord = { 55.4, 74.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2451,	-- Crested Heater Shield
 					1201,	-- Dull Heater Shield
 					2448,	-- Heavy Pavise
@@ -630,7 +630,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4164, {	-- Cylania
 				coord = { 56.8, 53.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
 					849,	-- Chainmail Boots
@@ -672,7 +672,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4236, {	-- Cyridan
 				coord = { 52.6, 77.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2142,	-- Cuirboulli Belt
 					2143,	-- Cuirboulli Boots
 					2144,	-- Cuirboulli Bracers
@@ -724,7 +724,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4180, {	-- Ealyshia Dewwhisper
 				coord = { 57.8, 71.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2523,	-- Bullova
 					2521,	-- Flamberge
 					2531,	-- Great Axe
@@ -759,7 +759,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4232, {	-- Glorandiir <Axe Merchant>
 				coord = { 64.2, 59.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2523,	-- Bullova
@@ -785,7 +785,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4231, {	-- Kieran <Weapon Merchant>
 				coord = { 61.0, 63.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					1194,	-- Bastard Sword
 					2025,	-- Bearded Axe
 					2479,	-- Broad Axe
@@ -826,7 +826,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4173, {	-- Landria <Bow Merchant>
 				coord = { 63.3, 66.3, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
@@ -865,7 +865,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4177, {	-- Melea
 				coord = { 55.6, 75.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -928,7 +928,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4171, {	-- Merelyssa
 				coord = { 61.6, 63.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 				-- added all
 					2520,	-- Broadsword
 					1198,	-- Claymore
@@ -948,7 +948,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4233, {	-- Mythidan
 				coord = { 60.4, 63.4, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -1022,7 +1022,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4228, {	-- Vaean <Enchanting Supplies>
 				coord = { 58.6, 14.7, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select","itemID",
+				sym = {{ "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -1033,7 +1033,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4175, {	-- Vinasia <Cloth Armor Merchant>
 				coord = { 60.7, 72.5, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = {{"select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots

@@ -582,7 +582,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				requireSkill = BLACKSMITHING,
 				lvl = 40,
 				groups = {
-					i(8703,	{	-- Signet of Expertise
+					i(8703, {	-- Signet of Expertise
 						i(8708, {	-- Hammer of Expertise
 							collectible = false,
 						}),

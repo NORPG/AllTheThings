@@ -479,7 +479,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Garrett Family Treasure
 						providers = {
-							{ "i",8026 },		-- Garrett Family Treasure
+							{ "i", 8026 },		-- Garrett Family Treasure
 							{ "o", 124388 },	-- Garrett Family Chest
 						},
 						coord = { 33.9, 93.0, MAP.LOCH_MODAN },

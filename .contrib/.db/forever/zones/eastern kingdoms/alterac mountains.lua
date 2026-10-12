@@ -695,7 +695,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 14.0, 63.2, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = bubbleDownClassicRep(FACTION_FOREVER_KIRIN_TOR, {
-					{		-- Neutral
+					{	-- Neutral
 					}, {	-- Friendly
 						i(276986),	-- Pattern: Azure Gustwoven Hood (RECIPE!)
 						i(276987),	-- Pattern: Azure Gustwoven Spaulders (RECIPE!)

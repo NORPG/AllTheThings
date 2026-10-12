@@ -3,7 +3,7 @@
 -------------
 ALCHEMY_RECIPES = {
 	APPRENTICE = {
-		r(2259,	{	-- Alchemy (Apprentice)
+		r(2259, {	-- Alchemy (Apprentice)
 			lvl = 5,
 			rank = 1,
 		}),
@@ -26,7 +26,7 @@ ALCHEMY_RECIPES = {
 		}),
 	};
 	JOURNEYMAN = {
-		r(3101,	{	-- Alchemy (Journeyman)
+		r(3101, {	-- Alchemy (Journeyman)
 			lvl = 10,
 			rank = 2,
 		}),
@@ -46,7 +46,7 @@ ALCHEMY_RECIPES = {
 		}),
 	};
 	EXPERT = {
-		r(3464,	{	-- Alchemy (Expert)
+		r(3464, {	-- Alchemy (Expert)
 			lvl = 20,
 			rank = 3,
 		}),

@@ -444,7 +444,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					}),
 				},
 			},
-			q(8827,{	-- Winter's Presents [A]
+			q(8827, {	-- Winter's Presents [A]
 				description = "This quest becomes available after the 25th.",
 				qg = 15732,	-- Wonderform Operator <Smokywood Pastures>
 				maps = {
@@ -578,4 +578,4 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 })));
 
 -- Remove the holiday flag.
-for i,o in ipairs(HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK) do o.u = nil; end
+for i, o in ipairs(HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK) do o.u = nil; end
