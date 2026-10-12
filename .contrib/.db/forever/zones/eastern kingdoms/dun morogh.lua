@@ -304,9 +304,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					q(96628, {	-- The Adventurer [Dun Morogh]
 						sourceQuest = 218,	-- The Stolen Journal
-						qg = 786,	-- Grelin Whitebeard
-						qi = 2619,	-- Grelin's Report (PQI!)
-						coord = { 25.0, 75.8, MAP.DUN_MOROGH },
+						qg = 1965,	-- Mountaineer Thalos
+						qi = 275019,	-- Supply Bundle (PQI!)
+						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
