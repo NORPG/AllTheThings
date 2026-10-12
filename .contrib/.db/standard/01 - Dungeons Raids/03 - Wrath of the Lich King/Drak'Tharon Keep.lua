@@ -2,6 +2,25 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local TROLLGORE = 588;
+local NOVOS = 589;
+local KING_DRED = 590;
+local THARONJA = 591;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[TROLLGORE] = { 26630 },	-- Trollgore
+	[NOVOS] = { 26631 },	-- Novos the Summoner
+	[KING_DRED] = { 27483 },	-- King Dred
+	[THARONJA] = { 26632 },	-- The Prophet Tharon'ja
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(273, {	-- Drak'Tharon Keep
 		["mapID"] = DRAKTHARON_KEEP,
@@ -11,75 +30,90 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(482, {	-- Drak'Tharon Keep
+					-- #if AFTER 7.3.5
 					crit(5443, {	-- Trollgore
-						["_encounter"] = { 588, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { TROLLGORE, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5444, {	-- Novos the Summoner
-						["_encounter"] = { 589, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { NOVOS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5445, {	-- King Dred
-						["_encounter"] = { 590, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { KING_DRED, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(9098, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { THARONJA, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
+					-- #else
+					crit(5443, {	-- Trollgore
+						["_encounter"] = { TROLLGORE, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5444, {	-- Novos the Summoner
+						["_encounter"] = { NOVOS, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5445, {	-- King Dred
+						["_encounter"] = { KING_DRED, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(9098, {	-- The Prophet Tharon'ja
+						["_encounter"] = { THARONJA, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17292, {	-- Defense Protocol Alpha: Drak'Tharon Keep
 					crit(57735, {	-- Trollgore
-						["_encounter"] = { 588, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { TROLLGORE, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57736, {	-- Novos the Summoner
-						["_encounter"] = { 589, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { NOVOS, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57737, {	-- King Dred
-						["_encounter"] = { 590, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { KING_DRED, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57738, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { THARONJA, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18594, {	-- Defense Protocol Beta: Drak'Tharon Keep
 					crit(60587, {	-- Trollgore
-						["_encounter"] = { 588, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { TROLLGORE, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60588, {	-- Novos the Summoner
-						["_encounter"] = { 589, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { NOVOS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60589, {	-- King Dred
-						["_encounter"] = { 590, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { KING_DRED, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60590, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { THARONJA, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19431, {	-- Defense Protocol Gamma: Drak'Tharon Keep
 					crit(63334, {	-- Trollgore
-						["_encounter"] = { 588, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { TROLLGORE, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63335, {	-- Novos the Summoner
-						["_encounter"] = { 589, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { NOVOS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63336, {	-- King Dred
-						["_encounter"] = { 590, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { KING_DRED, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63337, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { THARONJA, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(493, {	-- Heroic: Drak'Tharon Keep
 					crit(6813, {	-- Trollgore
-						["_encounter"] = { 588, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { TROLLGORE, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6814, {	-- Novos the Summoner
-						["_encounter"] = { 589, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { NOVOS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6815, {	-- King Dred
-						["_encounter"] = { 590, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { KING_DRED, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(9261, {	-- The Prophet Tharon'ja
-						["_encounter"] = { 591, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { THARONJA, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -153,275 +187,201 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
-				-- #if AFTER 7.3.5
-				i(37800),	-- Aviary Guardsman's Hauberk (7.3.5 - Used to be only Heroic Mode)
-				i(35639),	-- Brighthelm of Guarding (7.3.5 - Used to be only Normal Mode)
-				i(35640),	-- Darkweb Bindings (7.3.5 - Used to be only Normal Mode)
-				i(37799),	-- Reanimator's Cloak (7.3.5 - Used to be only Heroic Mode)
-				i(35641),	-- Scytheclaw Boots (7.3.5 - Used to be only Normal Mode)
-				i(37801),	-- Waistguard of the Risen Knight (7.3.5 - Used to be only Heroic Mode)
-				-- #endif
-				i(38303, {	-- Enduring Mojo
-					["crs"] = {
-						26620,	-- Drakkari Guardian
-						26639,	-- Drakkari Shaman
-						27431,	-- Drakkari Commander
-					},
-				}),
-			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				-- #if BEFORE 7.3.5
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
 				n(ZONE_DROPS, {
-					-- #if AFTER 7.3.5
-					i(37800),	-- Aviary Guardsman's Hauberk (7.3.5 - Used to be only Heroic Mode)
-					-- #endif
+					i(37800),	-- Aviary Guardsman's Hauberk
 					i(35639),	-- Brighthelm of Guarding
 					i(35640),	-- Darkweb Bindings
-					-- #if AFTER 7.3.5
-					i(37799),	-- Reanimator's Cloak (7.3.5 - Used to be only Heroic Mode)
-					-- #endif
+					i(38303, {	-- Enduring Mojo
+						["crs"] = {
+							27431,	-- Drakkari Commander
+							26620,	-- Drakkari Guardian
+							26639,	-- Drakkari Shaman
+						},
+					}),
+					i(37799),	-- Reanimator's Cloak
 					i(35641),	-- Scytheclaw Boots
-					-- #if AFTER 7.3.5
-					i(37801),	-- Waistguard of the Risen Knight (7.3.5 - Used to be only Heroic Mode)
-					-- #endif
+					i(37801),	-- Waistguard of the Risen Knight
 				}),
-				-- #endif
-				e(588, {	-- Trollgore
-					["creatureID"] = 26630,	-- Trollgore
-					["groups"] = {
-						i(35618),	-- Troll Butcherer
-						i(35620),	-- Berserker's Horns
-						-- #if AFTER 7.3.5
-						i(37715),	-- Cowl of the Dire Troll (7.3.5 - Used to be only Heroic Mode)
-						i(37714),	-- Batrider's Cord (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35619),	-- Infection Resistant Legguards
-						-- #if AFTER 7.3.5
-						i(37717),	-- Legs of Physical Regeneration (7.3.5 - Used to be only Heroic Mode)
-						i(37712),	-- Terrace Defence Boots (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(TROLLGORE, {
+					i(37714),	-- Batrider's Cord
+					i(35620),	-- Berserker's Horns
+					i(37715),	-- Cowl of the Dire Troll
+					i(35619),	-- Infection Resistant Legguards
+					i(37717),	-- Legs of Physical Regeneration
+					i(37712),	-- Terrace Defence Boots
+					i(35618),	-- Troll Butcherer
 				}),
-				e(589, {	-- Novos the Summoner
-					["creatureID"] = 26631,	-- Novos the Summoner
-					["groups"] = {
-						-- #if AFTER 7.3.5
-						i(37721),	-- Cursed Lich Blade (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35630),	-- Summoner's Stone Gavel
-						-- #if AFTER 7.3.5
-						i(37718),	-- Temple Crystal Fragment (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35631),	-- Crystal Pendant of Warding
-						i(157558, {	-- Shoddily Stitched Shoulderguards
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						-- #if AFTER 7.3.5
-						i(37722),	-- Breastplate of Undeath (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35632),	-- Robes of Novos
-						-- #if AFTER 7.3.5
-						i(40490),	-- Necromantic Wristguards (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(NOVOS, {
+					i(37722),	-- Breastplate of Undeath
+					i(35631),	-- Crystal Pendant of Warding
+					i(37721),	-- Cursed Lich Blade
+					i(40490),	-- Necromantic Wristguards
+					i(35632),	-- Robes of Novos
+					i(157558, { ["timeline"] = { ADDED_7_3_5 } }),	-- Shoddily Stitched Shoulderguards
+					i(35630),	-- Summoner's Stone Gavel
+					i(37718),	-- Temple Crystal Fragment
 				}),
-				e(590, {	-- King Dred
-					["creatureID"] = 27483,	-- King Dred
-					["groups"] = {
-						i(35633),	-- Staff of the Great Reptile
-						-- #if AFTER 7.3.5
-						i(37726),	-- King Dred's Helm (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35634),	-- Scabarous-Hide Helm
-						-- #if AFTER 7.3.5
-						i(37724),	-- Handler's Arm Strap (7.3.5 - Used to be only Heroic Mode)
-						i(37725),	-- Savage Wound Wrap (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(157561, {	-- Dino-Toothed Waistguard
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						i(35635),	-- Stable Master's Breeches
-						-- #if AFTER 7.3.5
-						i(37723),	-- Incisor Fragment (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(KING_DRED, {
+					i(157561, { ["timeline"] = { ADDED_7_3_5 } }),	-- Dino-Toothed Waistguard
+					i(37724),	-- Handler's Arm Strap
+					i(37723),	-- Incisor Fragment
+					i(37726),	-- King Dred's Helm
+					i(37725),	-- Savage Wound Wrap
+					i(35634),	-- Scabarous-Hide Helm
+					i(35635),	-- Stable Master's Breeches
+					i(35633),	-- Staff of the Great Reptile
 				}),
-				e(591, {	-- The Prophet Tharon'ja
-					["creatureID"] = 26632,	-- The Prophet Tharon'ja
-					["groups"] = {
-						-- #if AFTER 7.3.5
-						i(37733),	-- Mojo Masked Crusher (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35636),	-- Tharon'ja's Aegis
-						i(35638),	-- Helmet of Living Flesh
-						-- #if AFTER 7.3.5
-						i(37735),	-- Ziggurat Imprinted Chestguard (7.3.5 - Used to be only Heroic Mode)
-						i(37788),	-- Limb Regeneration Bracers (7.3.5 - Used to be only Heroic Mode)
-						i(37798),	-- Overlook Handguards (7.3.5 - Used to be only Heroic Mode)
-						i(37791),	-- Leggings of the Winged Serpent (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35637),	-- Muradin's Lost Greaves
-						-- #if AFTER 7.3.5
-						i(37784),	-- Keystone Great-Ring (7.3.5 - Used to be only Heroic Mode)
-						i(37732),	-- Spectral Seal of the Prophet (7.3.5 - Used to be only Heroic Mode)
-						i(37734),	-- Talisman of Troll Divinity (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(THARONJA, {
+					i(35638),	-- Helmet of Living Flesh
+					i(37784),	-- Keystone Great-Ring
+					i(37791),	-- Leggings of the Winged Serpent
+					i(37788),	-- Limb Regeneration Bracers
+					i(37733),	-- Mojo Masked Crusher
+					i(35637),	-- Muradin's Lost Greaves
+					i(37798),	-- Overlook Handguards
+					i(37732),	-- Spectral Seal of the Prophet
+					i(37734),	-- Talisman of Troll Divinity
+					i(35636),	-- Tharon'ja's Aegis
+					i(37735),	-- Ziggurat Imprinted Chestguard
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
-					-- #if BEFORE 7.3.5
-					n(ZONE_DROPS, {
-						i(37800),	-- Aviary Guardsman's Hauberk
-						-- #if AFTER 7.3.5
-						i(35639),	-- Brighthelm of Guarding (7.3.5 - Used to be only Normal Mode)
-						i(35640),	-- Darkweb Bindings (7.3.5 - Used to be only Normal Mode)
-						-- #endif
-						i(37799),	-- Reanimator's Cloak
-						-- #if AFTER 7.3.5
-						i(35641),	-- Scytheclaw Boots (7.3.5 - Used to be only Normal Mode)
-						-- #endif
-						i(37801),	-- Waistguard of the Risen Knight
-					}),
-					-- #endif
-					-- #if BEFORE CATA
-					n(COMMON_BOSS_DROPS, {
-						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-						}),
-					}),
-					-- #endif
-					e(588, {	-- Trollgore
-						["creatureID"] = 26630,	-- Trollgore
-						["groups"] = {
-							ach(2151),	-- Consumption Junction
-							-- #if AFTER 7.3.5
-							i(35618),	-- Troll Butcherer (7.3.5 - Used to be only Normal Mode)
-							i(35620),	-- Berserker's Horns (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37715),	-- Cowl of the Dire Troll
-							i(37714),	-- Batrider's Cord
-							-- #if AFTER 7.3.5
-							i(35619),	-- Infection Resistant Legguards (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37717),	-- Legs of Physical Regeneration
-							i(37712),	-- Terrace Defence Boots
-						},
-					}),
-					e(589, {	-- Novos the Summoner
-						["creatureID"] = 26631,	-- Novos the Summoner
-						["groups"] = {
-							ach(2057),	-- Oh Novos!
-							i(37721),	-- Cursed Lich Blade
-							-- #if AFTER 7.3.5
-							i(35630),	-- Summoner's Stone Gavel (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37718),	-- Temple Crystal Fragment
-							-- #if AFTER 7.3.5
-							i(35631),	-- Crystal Pendant of Warding (7.3.5 - Used to be only Normal Mode)
-							i(157558, {	-- Shoddily Stitched Shoulderguards
-								["timeline"] = { ADDED_7_3_5 },
-							}),
-							-- #endif
-							i(37722),	-- Breastplate of Undeath
-							-- #if AFTER 7.3.5
-							i(35632),	-- Robes of Novos (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(40490),	-- Necromantic Wristguards
-						},
-					}),
-					e(590, {	-- King Dred
-						["creatureID"] = 27483,	-- King Dred
-						["groups"] = {
-							ach(2039),	-- Better Off Dred
-							-- #if AFTER 7.3.5
-							i(35633),	-- Staff of the Great Reptile (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37726),	-- King Dred's Helm
-							-- #if AFTER 7.3.5
-							i(35634),	-- Scabarous-Hide Helm (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37724),	-- Handler's Arm Strap
-							i(37725),	-- Savage Wound Wrap
-							i(157561, {	-- Dino-Toothed Waistguard
-								["timeline"] = { ADDED_7_3_5 },
-							}),
-							-- #if AFTER 7.3.5
-							i(35635),	-- Stable Master's Breeches (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37723),	-- Incisor Fragment
-						},
-					}),
-					e(591, {	-- The Prophet Tharon'ja
-						["creatureID"] = 26632,	-- The Prophet Tharon'ja
-						["groups"] = {
-							ach(5099, {	-- Heroic: Drak'Tharon Keep Guild Run
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald (RECIPE!)
-								["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
-							}),
-							i(37733),	-- Mojo Masked Crusher
-							-- #if AFTER 7.3.5
-							i(35636),	-- Tharon'ja's Aegis (7.3.5 - Used to be only Normal Mode)
-							i(35638),	-- Helmet of Living Flesh (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37735),	-- Ziggurat Imprinted Chestguard
-							i(37788),	-- Limb Regeneration Bracers
-							i(37798),	-- Overlook Handguards
-							i(37791),	-- Leggings of the Winged Serpent
-							-- #if AFTER 7.3.5
-							i(35637),	-- Muradin's Lost Greaves (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37784),	-- Keystone Great-Ring
-							i(37732),	-- Spectral Seal of the Prophet
-							i(37734),	-- Talisman of Troll Divinity
-							-- #if BEFORE 4.0.1
-							i(43670),	-- Prophet's Enchanted Tiki
-							-- #endif
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				CommonBossDrops({
+					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(TROLLGORE, {
+					ach(2151),	-- Consumption Junction
+				}),
+				BossOnly(NOVOS, {
+					ach(2057),	-- Oh Novos!
+				}),
+				BossOnly(KING_DRED, {
+					ach(2039),	-- Better Off Dred
+				}),
+				BossOnly(THARONJA, {
+					i(43670, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Prophet's Enchanted Tiki (QI!)
+					--
+					ach(5099, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Drak'Tharon Keep Guild Run
+					i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+					}),
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(38303, {	-- Enduring Mojo
+						["crs"] = {
+							27431,	-- Drakkari Commander
+							26620,	-- Drakkari Guardian
+							26639,	-- Drakkari Shaman
+						},
+					}),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				n(ZONE_DROPS, {
+					i(35639),	-- Brighthelm of Guarding
+					i(35640),	-- Darkweb Bindings
+					i(35641),	-- Scytheclaw Boots
+				}),
+				BossOnly(TROLLGORE, {
+					i(35620),	-- Berserker's Horns
+					i(35619),	-- Infection Resistant Legguards
+					i(35618),	-- Troll Butcherer
+				}),
+				BossOnly(NOVOS, {
+					i(35631),	-- Crystal Pendant of Warding
+					i(35632),	-- Robes of Novos
+					i(35630),	-- Summoner's Stone Gavel
+				}),
+				BossOnly(KING_DRED, {
+					i(35634),	-- Scabarous-Hide Helm
+					i(35635),	-- Stable Master's Breeches
+					i(35633),	-- Staff of the Great Reptile
+				}),
+				BossOnly(THARONJA, {
+					i(35638),	-- Helmet of Living Flesh
+					i(35637),	-- Muradin's Lost Greaves
+					i(35636),	-- Tharon'ja's Aegis
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37800),	-- Aviary Guardsman's Hauberk
+					i(37799),	-- Reanimator's Cloak
+					i(37801),	-- Waistguard of the Risen Knight
+				}),
+				CommonBossDrops({
+					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(TROLLGORE, {
+					ach(2151),	-- Consumption Junction
+					i(37714),	-- Batrider's Cord
+					i(37715),	-- Cowl of the Dire Troll
+					i(37717),	-- Legs of Physical Regeneration
+					i(37712),	-- Terrace Defence Boots
+				}),
+				BossOnly(NOVOS, {
+					ach(2057),	-- Oh Novos!
+					i(37722),	-- Breastplate of Undeath
+					i(37721),	-- Cursed Lich Blade
+					i(40490),	-- Necromantic Wristguards
+					i(37718),	-- Temple Crystal Fragment
+				}),
+				BossOnly(KING_DRED, {
+					ach(2039),	-- Better Off Dred
+					i(37724),	-- Handler's Arm Strap
+					i(37723),	-- Incisor Fragment
+					i(37726),	-- King Dred's Helm
+					i(37725),	-- Savage Wound Wrap
+				}),
+				BossOnly(THARONJA, {
+					i(43670, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Prophet's Enchanted Tiki (QI!)
+					--
+					ach(5099, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Drak'Tharon Keep Guild Run
+					i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+					}),
+					i(37784),	-- Keystone Great-Ring
+					i(37791),	-- Leggings of the Winged Serpent
+					i(37788),	-- Limb Regeneration Bracers
+					i(37733),	-- Mojo Masked Crusher
+					i(37798),	-- Overlook Handguards
+					i(37732),	-- Spectral Seal of the Prophet
+					i(37734),	-- Talisman of Troll Divinity
+					i(37735),	-- Ziggurat Imprinted Chestguard
+				}),
+			}),
+			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394438, 413169, 424203),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(588, {	-- Trollgore
-						["creatureID"] = 26630,	-- Trollgore
-						["groups"] = {
-							i(39241),	-- Dark Shroud of the Scourge
-							i(39245),	-- Demise
-							i(39242),	-- Robes of Hoarse Breaths
-						},
+					BossOnly(TROLLGORE, {
+						i(39241),	-- Dark Shroud of the Scourge
+						i(39245),	-- Demise
+						i(39242),	-- Robes of Hoarse Breaths
 					}),
-					e(589, {	-- Novos the Summoner
-						["creatureID"] = 26631,	-- Novos the Summoner
-						["groups"] = {
-							i(39244),	-- Ring of the Fated
-							i(39236),	-- Trespasser's Boots
-							i(39237),	-- Spaulders of Resumed Battle
-						},
+					BossOnly(NOVOS, {
+						i(39244),	-- Ring of the Fated
+						i(39237),	-- Spaulders of Resumed Battle
+						i(39236),	-- Trespasser's Boots
 					}),
-					e(590, {	-- King Dred
-						["creatureID"] = 27483,	-- King Dred
-						["groups"] = {
-							i(39239),	-- Chestplate of the Risen Soldier
-							i(39240),	-- Noth's Curse
-							i(39243),	-- Handgrips of the Foredoomed
-						},
+					BossOnly(KING_DRED, {
+						i(39239),	-- Chestplate of the Risen Soldier
+						i(39243),	-- Handgrips of the Foredoomed
+						i(39240),	-- Noth's Curse
 					}),
-					e(591, {	-- The Prophet Tharon'ja
-						["creatureID"] = 26632,	-- The Prophet Tharon'ja
-						["groups"] = {
-							i(43995),	-- Enamored Cowl
-							i(39416),	-- Kel'Thuzad's Reach
-							i(43996),	-- Sabatons of Firmament
-						},
+					BossOnly(THARONJA, {
+						i(43995),	-- Enamored Cowl
+						i(39416),	-- Kel'Thuzad's Reach
+						i(43996),	-- Sabatons of Firmament
 					}),
 				},
 			})),
@@ -429,34 +389,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413169, 424203),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(588, {	-- Trollgore
-						["creatureID"] = 26630,	-- Trollgore
-						["groups"] = {
-							i(45697),	-- Shoulderguards of the Solemn Watch
-							i(45698),	-- Sabatons of the Iron Watcher
-						},
+					BossOnly(TROLLGORE, {
+						i(45698),	-- Sabatons of the Iron Watcher
+						i(45697),	-- Shoulderguards of the Solemn Watch
 					}),
-					e(589, {	-- Novos the Summoner
-						["creatureID"] = 26631,	-- Novos the Summoner
-						["groups"] = {
-							i(45687),	-- Helm of Veiled Energies
-							i(45703),	-- Spark of Hope
-						},
+					BossOnly(NOVOS, {
+						i(45687),	-- Helm of Veiled Energies
+						i(45703),	-- Spark of Hope
 					}),
-					e(590, {	-- King Dred
-						["creatureID"] = 27483,	-- King Dred
-						["groups"] = {
-							i(45975),	-- Cable of the Metrognome
-							i(45700),	-- Stoneguard
-						},
+					BossOnly(KING_DRED, {
+						i(45975),	-- Cable of the Metrognome
+						i(45700),	-- Stoneguard
 					}),
-					e(591, {	-- The Prophet Tharon'ja
-						["creatureID"] = 26632,	-- The Prophet Tharon'ja
-						["groups"] = {
-							i(45303),	-- Band of Draconic Guile
-							i(45972),	-- Pulse Baton
-							i(45974),	-- Shoulderguards of Assimilation
-						},
+					BossOnly(THARONJA, {
+						i(45303),	-- Band of Draconic Guile
+						i(45972),	-- Pulse Baton
+						i(45974),	-- Shoulderguards of Assimilation
 					}),
 				},
 			})),
@@ -464,30 +412,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424203),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(588, {	-- Trollgore
-						["creatureID"] = 26630,	-- Trollgore
-						["groups"] = {
-
-						},
-					}),
-					e(589, {	-- Novos the Summoner
-						["creatureID"] = 26631,	-- Novos the Summoner
-						["groups"] = {
-
-						},
-					}),
-					e(590, {	-- King Dred
-						["creatureID"] = 27483,	-- King Dred
-						["groups"] = {
-
-						},
-					}),
-					e(591, {	-- The Prophet Tharon'ja
-						["creatureID"] = 26632,	-- The Prophet Tharon'ja
-						["groups"] = {
-
-						},
-					}),
+					BossOnly(TROLLGORE),
+					BossOnly(NOVOS),
+					BossOnly(KING_DRED),
+					BossOnly(THARONJA),
 				},
 			})),
 			-- #endif

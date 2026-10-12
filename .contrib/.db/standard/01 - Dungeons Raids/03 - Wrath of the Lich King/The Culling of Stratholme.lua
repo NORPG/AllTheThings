@@ -40,16 +40,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					crit(5468, {	-- Chrono-Lord Epoch
 						["_encounter"] = { CHRONOLORD, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
-					-- #if ANYCLASSIC
-					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(6432, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DIFFICULTY.DUNGEON.NORMAL },
-					}),
-					-- #else
-					crit(6433, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
-					}),
-					-- #endif
 					-- #else
 					crit(5467, {	-- Meathook
 						["_encounter"] = { MEATHOOK, DIFFICULTY.DUNGEON.NORMAL },
@@ -247,6 +237,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(43951),	-- Bronze Drake (MOUNT!)
 				}),
 				BossOnly(MALGANIS, {
+					i(43697, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Artifact from the Nathrezim Homeworld (QI!)
+					--
 					ach(5106, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Culling of Stratholme Guild Run
 				}),
 			}),
@@ -328,6 +320,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(43951),	-- Bronze Drake (MOUNT!)
 				}),
 				BossOnly(MALGANIS, {
+					i(43697, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Artifact from the Nathrezim Homeworld (QI!)
+					--
 					ach(5106, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Culling of Stratholme Guild Run
 					i(37694),	-- Band of Guile
 					i(37693),	-- Greed
@@ -338,9 +332,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37696),	-- Plague-Infected Bracers
 					i(37690),	-- Pauldrons of Destiny
 					i(43085),	-- Royal Crest of Lordaeron
-					-- #if BEFORE 4.0.1
-					i(43697),	-- Artifact from the Nathrezim Homeworld
-					-- #endif
 				}),
 			}),
 			-- #endif
