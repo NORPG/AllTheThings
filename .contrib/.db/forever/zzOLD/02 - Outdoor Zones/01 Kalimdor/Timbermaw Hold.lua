@@ -53,7 +53,7 @@ ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 	end
 end]];
 
-root(ROOTS.Zones, m(MAP.KALIMDOR, {
+maproot(MAP.KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
 		zoneTextAreaID = 1769,
 		["maps"] = { MAP.FELWOOD, MAP.WINTERSPRING },
@@ -270,4 +270,4 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 		},
 	}),
-}));
+});
