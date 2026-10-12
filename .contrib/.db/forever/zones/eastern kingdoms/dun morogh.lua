@@ -481,10 +481,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(417, {	-- A Pilot's Revenge
 				sourceQuest = 419,	-- The Lost Pilot
-				providers = {
-					{ "o", 2059 },	-- A Dwarven Corpse
-					{ "i", 3117 },	-- Hildelve's Journal (PQI!)
-				},
+				provider = { "o", 2059 },	-- A Dwarven Corpse
+				qi = 3117,	-- Hildelve's Journal (PQI!)
 				coord = { 79.7, 36.2, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
@@ -567,10 +565,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						groups = {
 							q(311, {	-- Return to Marleth
 								sourceQuest = 310,	-- Bitter Rivals
-								providers = {
-									{ "o", 270 },	-- Unguarded Thunder Ale Barrel
-									{ "i", 2666 },	-- Barrel of Thunder Ale (QI!)
-								},
+								provider = { "o", 270 },	-- Unguarded Thunder Ale Barrel
+								qi = 2666,	-- Barrel of Thunder Ale (QI!)
 								coord = { 47.7, 52.7, MAP.DUN_MOROGH },
 								races = ALLIANCE_ONLY,
 								lvl = 2,

@@ -307,9 +307,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(248, {	-- Looking Further
 				sourceQuest = 94,	-- A Watchful Eye
+				qi = 1083,	-- Glyph of Azora (QI!)
 				providers = {
 					{ "o",   31 },	-- Old Lion Statue
-					{ "i", 1083 },	-- Glyph of Azora (QI!)
 					{ "o",   76 },	-- An Empty Jar
 				},
 				coord = { 79.2, 46.7, MAP.REDRIDGE_MOUNTAINS },

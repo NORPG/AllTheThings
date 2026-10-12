@@ -91,10 +91,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(6181, {	-- A Swift Message
-				providers = {
-					{ "n",   491 },	-- Quartermaster Lewis
-					{ "i", 15998 },	-- Lewis' Note (PQI!)
-				},
+				qg = 491,	-- Quartermaster Lewis
+				qi = 15998,	-- Lewis' Note (PQI!)
 				coord = { 56.9, 47.2, MAP.WESTFALL },
 				races = { HUMAN },
 				lvl = 10,
@@ -168,10 +166,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(6281, {	-- Continue to Stormwind
 				sourceQuest = 6181,	-- A Swift Message
-				providers = {
-					{ "n",   523 },	-- Thor
-					{ "i", 15998 },	-- Lewis' Note (PQI!)
-				},
+				qg = 523,	-- Thor
+				qi = 15998,	-- Lewis' Note (PQI!)
 				coord = { 56.4, 52.6, MAP.WESTFALL },
 				maps = { MAP.STORMWIND_CITY },
 				races = { HUMAN },
@@ -287,10 +283,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(2359, {	-- Klaven's Tower
 				sourceQuest = 2360,	-- Mathias and the Defias
-				providers = {
-					{ "n", 7024 },	-- Agent Kearnen
-					{ "i", 8046 },	-- Kearnen's Journal (PQI!)
-				},
+				qg = 7024,	-- Agent Kearnen
+				qi = 8046,	-- Kearnen's Journal (PQI!)
 				coord = { 68.5, 70.2, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -749,10 +743,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(36, {		-- Westfall Stew (1/2)
-				providers = {
-					{ "n",  238 },	-- Verna Furlbrow
-					{ "i", 2832 },	-- Verna's Westfall Stew Recipe (PQI!)
-				},
+				qg = 238,	-- Verna Furlbrow
+				qi = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
 				coord = { 60.0, 19.4, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,

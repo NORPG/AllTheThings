@@ -42,10 +42,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					558,	-- Jaina's Autograph [Alliance - Human] (removed)
 					4822,	-- You Scream, I Scream... [Alliance - Human] (removed)
 				},
-				providers = {
-					{ "i", 18598 },	-- Human Orphan Whistle
-					{ "n", 14305 },	-- Human Orphan
-				},
+				qg = 14305,	-- Human Orphan
+				qi = 18598,	-- Human Orphan Whistle
 				coord = { 56.3, 54.0, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
 				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				races = ALLIANCE_ONLY,
@@ -58,10 +56,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					925,	-- Cairne's Hoofprint [Horde - Orc] (removed)
 					915,	-- You Scream, I Scream... [Horde - Orc] (removed)
 				},
-				providers = {
-					{ "i", 18597 },	-- Orcish Orphan Whistle
-					{ "n", 14444 },	-- Orcish Orphan
-				},
+				qg = 14444,	-- Orcish Orphan
+				qi = 18597,	-- Orcish Orphan Whistle
 				coord = { 70.8, 25.6, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
 				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				races = HORDE_ONLY,
@@ -75,10 +71,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 					1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				},
-				providers = {
-					{ "i", 18597 },	-- Orcish Orphan Whistle
-					{ "n", 14444 },	-- Orcish Orphan
-				},
+				qg = 14444,	-- Orcish Orphan
+				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -112,10 +106,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(910, {	-- Down at the Docks [Horde - Orc] (removed)
 				sourceQuest = 172,	-- Children's Week [Horde - Orc]
-				providers = {
-					{ "i", 18597 },	-- Orcish Orphan Whistle
-					{ "n", 14444 },	-- Orcish Orphan
-				},
+				qg = 14444,	-- Orcish Orphan
+				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -129,10 +121,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(911, {	-- Gateway to the Frontier [Horde - Orc] (removed)
 				sourceQuest = 172,	-- Children's Week [Horde - Orc]
-				providers = {
-					{ "i", 18597 },	-- Orcish Orphan Whistle
-					{ "n", 14444 },	-- Orcish Orphan
-				},
+				qg = 14444,	-- Orcish Orphan
+				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -149,10 +139,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 					1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 				},
-				providers = {
-					{ "i", 18598 },	-- Human Orphan Whistle
-					{ "n", 14305 },	-- Human Orphan
-				},
+				qg = 14305,	-- Human Orphan
+				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -167,10 +155,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(1800, {	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				sourceQuest = 172,	-- Children's Week [Horde - Orc]
-				providers = {
-					{ "i", 18597 },	-- Orcish Orphan Whistle
-					{ "n", 14444 },	-- Orcish Orphan
-				},
+				qg = 14444,	-- Orcish Orphan
+				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -183,10 +169,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(1687, {	-- Spooky Lighthouse [Alliance - Human] (removed)
 				sourceQuest = 1468,	-- Children's Week [Alliance - Human]
-				providers = {
-					{ "i", 18598 },	-- Human Orphan Whistle
-					{ "n", 14305 },	-- Human Orphan
-				},
+				qg = 14305,	-- Human Orphan
+				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -200,10 +184,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(1479, {	-- The Bough of the Eternals [Alliance - Human] (removed)
 				sourceQuest = 1468,	-- Children's Week [Alliance - Human]
-				providers = {
-					{ "i", 18598 },	-- Human Orphan Whistle
-					{ "n", 14305 },	-- Human Orphan
-				},
+				qg = 14305,	-- Human Orphan
+				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -216,10 +198,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			}),
 			q(1558, {	-- The Stonewrought Dam [Alliance - Human] (removed)
 				sourceQuest = 1468,	-- Children's Week [Alliance - Human]
-				providers = {
-					{ "i", 18598 },	-- Human Orphan Whistle
-					{ "n", 14305 },	-- Human Orphan
-				},
+				qg = 14305,	-- Human Orphan
+				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -236,10 +216,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 					1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 				},
-				providers = {
-					{ "i", 18598 },	-- Human Orphan Whistle
-					{ "n", 14305 },	-- Human Orphan
-				},
+				qg = 14305,	-- Human Orphan
+				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -258,10 +236,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 					1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				},
-				providers = {
-					{ "i", 18597 },	-- Orcish Orphan Whistle
-					{ "n", 14444 },	-- Orcish Orphan
-				},
+				qg = 14444,	-- Orcish Orphan
+				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				isYearly = true,
