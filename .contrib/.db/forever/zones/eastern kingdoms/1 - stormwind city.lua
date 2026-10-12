@@ -219,7 +219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					objective(1, {	-- 0/1 Tear of Tilloa
 						providers = {
 							{ "i", 2779 },	-- Tear of Tilloa
-							{ "o", 321 },	-- Tear of Tilloa
+							{ "o", 706187 },	-- Tear of Tilloa
 						},
 						coord = { 78.5, 36.0, MAP.DUSKWOOD },
 					}),
