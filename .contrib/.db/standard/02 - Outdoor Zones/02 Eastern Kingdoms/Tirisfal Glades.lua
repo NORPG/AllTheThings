@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",
 				["icon"] = 236457,
 				-- #if BEFORE MOP
-				["zone-text-areas"] = {
+				["zoneTextAreaIDs"] = {
 					154,	-- Deathknell
 				},
 				-- #endif

@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	n(SILITHUS_THE_WOUND, {
 		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
 		-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
-		["zone-artIDs"] = { 962 },
+		["zoneTextArtIDs"] = { 962 },
 		["timeline"] = { ADDED_7_3_5 },
 		["maps"] = { SILITHUS },
 		["cr"] = 128607 ,	-- Zidormi

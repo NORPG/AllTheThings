@@ -15224,7 +15224,7 @@ i(98059,{awp=50300,b=1,f=113}),
 i(97990,{awp=50400,b=1,crs={70997,70999,71000,71001,71002,71006,71012,71141,71188},lvl=40,rwp=70003,u=2}),
 r(8240,{description="Can drop from any creature in the Barrens.",itemID=6663,requireSkill=171,skillID=2485}),
 r(8238,{description="Can drop from any creature in the Barrens.",itemID=6661,requireSkill=185,skillID=2548})})}}),
-h(-387,{awp=70305,crs={128607},description="The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",maps={81},["zone-artIDs"]={962},g={
+h(-387,{awp=70305,crs={128607},description="The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",maps={81},zoneTextArtIDs={962},g={
 m(1021,{awp=80001,coords={
 [81]={{43.2,44.5}}},icon=1869493,lore="The Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.",lvl=50,maps={1473,1538,1539,1604},providers={{"o",289521}},g={
 h(-12,{
@@ -20367,7 +20367,7 @@ h(-63,{
 s(312,1493,{awp=100107,coords={
 [64]={{86.4,49},{87.6,52},{88.6,46.8},{90.2,54.4}}},crs={40062},f=25,lvl=10}),
 r(6692,{crs={10760},itemID=5773,requireSkill=197,rwp=40003,skillID=2540,u=2})})}}),
-h(-388,{maps={77,83},["zone-text-areaID"]=1769,g={
+h(-388,{maps={77,83},zoneTextAreaID=1769,g={
 h(-12,{awp=30002,g={
 ach(944,{minReputation={576,42000}})}}),
 h(-31,{awp=30002,g={
@@ -53077,7 +53077,7 @@ p(1238,{awp=50300,coords={
 [121]={{24.35,64}},
 [127]={{17.8,57.25},{43.2,44.2},{68.1,49.2}}},description="This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",npcID=71163,pb=1})}}),
 m(125,{icon=237509,isRaid=1,lore="Dalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.",maps={501,502},g={
-m(126,{icon=460862,["zone-text-areaID"]=4560,g={
+m(126,{icon=460862,zoneTextAreaID=4560,g={
 h(-12,{
 ach(1958,{providers={{"i",43698}},requireSkill=356})}),
 prof(185,{
@@ -88647,7 +88647,7 @@ n(108628,{coords={
 [627]={{50.6,59.4},{55.4,54.2},{60.8,44.6}}},questID=42763}),
 n(108925,{coords={
 [627]={{44.2,36},{46.6,22.2},{49.4,29.8},{50.4,35.8},{60.8,44.6}}},crs={108938},questID=42813})})}}),
-m(628,{icon=460862,["zone-text-areaID"]=7594,g={
+m(628,{icon=460862,zoneTextAreaID=7594,g={
 h(-12,{
 ach(1958,{providers={{"i",43698}},requireSkill=356}),
 ach(11066,{cost={{"c",1149,20000}},g={

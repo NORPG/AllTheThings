@@ -2358,7 +2358,7 @@ r(17571,{awp=11101,coords={
 r(19794,{crs={6195},itemID=16045,learnedAt=270,q=2,requireSkill=202,rwp=40003}),
 i(10450,{crs={6375,6377,6378,6379,6380,6648},q=1,rwp=20300})})}}),
 m(75,{coords={
-[1446]={{65.9,49.4}}},icon=134156,lore="Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",maps={74},["zone-text-areaID"]=1941}),
+[1446]={{65.9,49.4}}},icon=134156,lore="Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",maps={74},zoneTextAreaID=1941}),
 m(1439,{icon=236739,lore="This rocky area stretches along Kalimdor's north coast. Rains, winds and rocky beaches make the place inhospitable. Old night elf ruins stand crumbling on the cliffs, and murlocs and naga lurk within. The night elf village of Auberdine serves as a friendly trading post.",g={
 h(-12,{
 ach(844,{
@@ -3105,7 +3105,7 @@ s(156925,2620,{awp=100107,coords={
 [1443]={{48.2,75.8},{52.2,83.6},{53.2,71}}},crs={4684},f=4,loc=40,lvl=34,q=2,rwp=40003}),
 i(6074,{crs={4654,4655,4656,4657,4658,4659,6069,6070},f=55,q=1,rwp=40003})})}}),
 m(1411,{icon=236756,lore="Once the home of the savage quilboar, the Horde arrived on Kalimdor's shore and, in the aftermath of the Third War, drove the quilboar from the land and established this region as its own. Warchief Thrall named the new nation after his father, Durotan, and rules ably. Horde settlements are scattered throughout the rocky land, which is only marginally more fertile than the Barrens.\n\nThe Horde's greatest city is Orgrimmar, a warrior city that symbolizes the greatness of the orcs and their allies. Much of Durotar remains wild, and the orcs continually fend off centaur and quilboar as they attempt to tame the land.",maps={3,4,5,6},g={
-m(461,{icon=236452,lore="The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",maps={2},["zone-text-areas"]={363,364,365},g={
+m(461,{icon=236452,lore="The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",maps={2},zoneTextAreaIDs={363,364,365},g={
 h(-45,{
 q(77582,{c={1},coords={
 [1411]={{42.8,69.4}}},lvl=2,qgs={3153},races={2},rwp=20001,u=1605,g={
@@ -5088,7 +5088,7 @@ n(12029,{coords={
 [1450]={{53.2,42.6}}},g={
 s(160250,11308,{f=32,isLimited=1,lvl=44,q=2})}})})}}),
 m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",maps={8,9},g={
-m(462,{icon=236454,lore="Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",["zone-text-areas"]={221},g={
+m(462,{icon=236454,lore="Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",zoneTextAreaIDs={221},g={
 h(-45,{
 q(752,{coords={
 [1412]={{44.2,76}}},isBreadcrumb=1,nextQuests={753},qgs={2981},r=1,rwp=40003}),
@@ -6888,7 +6888,7 @@ i(9249,{description="Unlocks the Captain's Chest located in one of the ships har
 s(159303,9359,{description="This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",f=23,lvl=40,q=3})}}),
 i(8483,{crs={5615,5616,5617,5618,5623,7805},q=1})})}}),
 m(1438,{icon=236740,lore="In the past few years, the night elves have moved their capital to an island off northwest Kalimdor. Here, the Circle of the Ancients and the wise druids pooled their power to create a great tree akin to the World Tree, but on a smaller scale.\n\nThey called this tree Teldrassil, meaning “Crown of the Earth,” and built their city of Darnassus atop it. The island takes the name of the tree as well, and a twilite forest now covers it.",maps={59,60,61},g={
-m(460,{icon=236449,lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",maps={58},["zone-text-areas"]={188,256,257},g={
+m(460,{icon=236449,lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",maps={58},zoneTextAreaIDs={188,256,257},g={
 h(-45,{
 q(3519,{coords={
 [1438]={{54.6,33}}},lvl=2,qgs={8584},r=2,rwp=40003,sourceQuests={4495}}),
@@ -8645,7 +8645,7 @@ h(-63,{
 s(156338,1493,{awp=100107,coords={
 [1441]={{20.6,22.2},{44.6,33.6}}},crs={4099},f=25,lvl=22,q=3,rwp=40003}),
 i(729,{crs={4154,4158},q=1,rwp=40003})})}}),
-h(-388,{maps={1448,1452},["zone-text-areaID"]=1769,g={
+h(-388,{maps={1448,1452},zoneTextAreaID=1769,g={
 h(-12,{
 ach(944,{minReputation={576,42000}})}),
 h(-31,{
@@ -9752,7 +9752,7 @@ r(196,{c={1,2,3,7}}),
 r(198,{c={1,2,4,5,7,11}}),
 r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end}),
 r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end})}})}})}}),
-m(1453,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",["zone-text-areas"]={1519,2918},g={
+m(1453,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",zoneTextAreaIDs={1519,2918},g={
 h(-30,{
 exp(5150,{collectible=false}),
 exp(6292,{collectible=false}),
@@ -12306,7 +12306,7 @@ s(157820,4616,{collectible=false,crs={2739,2740,2743},f=2,q=1,rwp=40003}),
 i(4640,{crs={2944},q=1,rwp=40003}),
 s(156929,2624,{awp=80001,coords={
 [1418]={{9.4,85.4},{9.6,78.6}}},crs={2718},f=4,loc=40,lvl=37,q=2,rwp=40003})})}}),
-m(33,{icon=254649,lore="Blackrock Mountain is a zone between the Burning Steppes and the Searing Gorge, linking the two regions. This zone is deceptively small and appears empty when first entered - however, it is among the most dangerous places in Azeroth. It was hotly contested between the forces of Ragnaros and his Dark Iron servants on one side and the black dragon Nefarian and his orc minions on the other. This is one of the most important areas in World of Warcraft lore.",lvl=40,maps={34,35},["zone-text-areaID"]=25,g={
+m(33,{icon=254649,lore="Blackrock Mountain is a zone between the Burning Steppes and the Searing Gorge, linking the two regions. This zone is deceptively small and appears empty when first entered - however, it is among the most dangerous places in Azeroth. It was hotly contested between the forces of Ragnaros and his Dark Iron servants on one side and the black dragon Nefarian and his orc minions on the other. This is one of the most important areas in World of Warcraft lore.",lvl=40,maps={34,35},zoneTextAreaID=25,g={
 h(-46,{
 n(9026,{coords={
 [35]={{36.2,36.2},{37,28.2},{40.6,37.8}}},g={
@@ -12688,14 +12688,14 @@ n(218920,{coords={
 i(216941,{b=1,f=53,q=2,u=1606})}})}),
 h(-63,{
 r(20010,{crs={7372},itemID=16246,learnedAt=295,q=2,requireSkill=333})})}}),
-m(499,{icon=133861,lore="The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",["zone-text-areaID"]=2257,g={
+m(499,{icon=133861,lore="The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",zoneTextAreaID=2257,g={
 h(-45,{
 q(6661,{lvl=10,qgs={12997},r=2,g={
 qo(1,{crs={13016},providers={{"i",17117}}})}}),
 q(6662,{lvl=10,qgs={12997},qis={17118},r=2,sourceQuests={6661},g={
 i(17119,{f=55,lvl=5,q=1})}})})}}),
 m(1426,{icon=236755,lore="Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",maps={29,31,469,470},g={
-m(427,{icon=236444,lore="Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",maps={28,428},["zone-text-areas"]={132,800,77},g={
+m(427,{icon=236444,lore="Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",maps={28,428},zoneTextAreaIDs={132,800,77},g={
 h(-45,{
 q(170,{coords={
 [1426]={{29.6,71.2}}},qgs={713},r=2,rwp=40003,sourceQuests={179},g={
@@ -14278,7 +14278,7 @@ i(12811,{crs={12339},description="Can drop from any Scarlet Crusade member in St
 r(19833,{awp=11101,coords={
 [1423]={{65.4,22.6},{68.8,20.6},{72.8,15.2}}},crs={8561},description="Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",itemID=16056,learnedAt=300,q=2,requireSkill=202,rwp=40003})})}}),
 m(1429,{icon=236761,lore="Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",g={
-m(425,{icon=236447,lore="Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",["zone-text-areas"]={9,59,24,34},g={
+m(425,{icon=236447,lore="Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",zoneTextAreaIDs={9,59,24,34},g={
 h(-45,{
 q(783,{coords={
 [1429]={{48.1,42.9}}},qgs={823},r=2,rwp=40003}),
@@ -17966,7 +17966,7 @@ i(9259,{description="Can drop from any troll in The Hinterlands.",q=1,rwp=40003}
 i(8153,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale.",q=1}),
 i(221261,{awp=11502,b=1,description="Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",q=2,u=1607})})}}),
 m(1420,{icon=236849,lore="On the northern coast of Lordaeron lies the eerie Tirisfal Glades. The unofficial kingdom to the Forsaken, servants of the Banshee Queen Sylvanas Windrunner, the wooded hills are seeped through with the curse of the Lich King's plague. The sky over Tirisfal is eternally gloomy and tinted a blighted green, and the trees and other flora desperately cling to their last shreds of life.\n\nAlthough tainted and melancholy, Tirisfal still very much has its own unique, haunting beauty, particularly in such areas as the stony North Coast, the village of Brill, and the deep atmosphere of the ruined Agamand Mills.\n\nTirisfal Glades is home not only to the Forsaken, but to their enemies as well. The Scarlet Crusade has several outposts here, including the seat of their religious faith, the Scarlet Monastery. The minions of the Scourge are also ever present, tainting the derelict farmsteads and dilapidated mills with their foul presence.",g={
-m(465,{icon=236457,lore="Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",["zone-text-areas"]={154},g={
+m(465,{icon=236457,lore="Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",zoneTextAreaIDs={154},g={
 h(-45,{
 q(8,{coords={
 [1420]={{38.2,56.6}}},qgs={6784},qis={7628},r=1,rwp=40003}),

@@ -627,22 +627,22 @@ fieldConverters.isContinent = function(group, value)
 		end
 	end
 end
-fieldConverters["zone-artIDs"] = function(group, value)
+fieldConverters.zoneTextArtIDs = function(group, value)
 	runners[#runners + 1] = function()
 		zoneArtIDRunner(group, value);
 	end
 end
-fieldConverters["zone-text-areaID"] = function(group, value)
+fieldConverters.zoneTextAreaID = function(group, value)
 	runners[#runners + 1] = function()
 		zoneTextAreasRunner(group, { value });
 	end
 end
-fieldConverters["zone-text-areas"] = function(group, value)
+fieldConverters.zoneTextAreaIDs = function(group, value)
 	runners[#runners + 1] = function()
 		zoneTextAreasRunner(group, value);
 	end
 end
-fieldConverters["zone-text-names"] = function(group, value)
+fieldConverters.zoneTextNames = function(group, value)
 	runners[#runners + 1] = function()
 		zoneTextNamesRunner(group, value);
 	end

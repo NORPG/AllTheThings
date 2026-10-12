@@ -10799,7 +10799,7 @@ q(39004,{awp=60200,coords={
 q(39019,{lvl=40,u=2}),
 q(39018,{lvl=40,u=2}),
 q(39022,{lvl=40,u=2})}}),
-h(-423,{awp=60002,crs={88206},maps={17},["zone-artIDs"]={628},g={
+h(-423,{awp=60002,crs={88206},maps={17},zoneTextArtIDs={628},g={
 h(-12,{
 ach(9618,{rwp=60003,sourceQuests={36940,36941},u=2,g={
 title(289,{u=2})}})}),
@@ -21175,7 +21175,7 @@ follower(1178,{u=5}),
 follower(1179,{u=5}),
 follower(1184,{u=5}),
 follower(1185,{u=5})}),
-m(62,{awp=80100,crs={141489},icon=236739,["zone-artIDs"]={1176},petBattleLvl=3,petBattleLvl=3,lvl=5,g={
+m(62,{awp=80100,crs={141489},icon=236739,zoneTextArtIDs={1176},petBattleLvl=3,petBattleLvl=3,lvl=5,g={
 h(-61,{isRaid=1,g={
 e(2345,{coords={
 [62]={{41.47,35.97}}},isRaid=1,isWeekly=1,isWorldQuest=1,npcID=148295,questID=54895,r=2,g={
@@ -22109,7 +22109,7 @@ s(101700,165489,{b=1,f=7,loc=47,lvl=50,modID=3,r=1})})}})}}),
 h(-43,{awp=50004,pb=1,g={
 crit(21452,{achID=6612,id=5,pb=1}),
 crit(21536,{achID=6560,id=8,pb=1})}})}}),
-m(14,{crs={141649},icon=236712,["zone-artIDs"]={1137},petBattleLvl=7,lvl=10,g={
+m(14,{crs={141649},icon=236712,zoneTextArtIDs={1137},petBattleLvl=7,lvl=10,g={
 h(-61,{isRaid=1,g={
 e(2213,{coords={
 [14]={{37.8,40.2}}},isRaid=1,isWeekly=1,npcID=138122,questID=52847,r=2,g={

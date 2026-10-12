@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	inst(261, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
 		-- #if BEFORE MOP
-		["zone-text-areaID"] = 3715,	-- The Steamvault
+		["zoneTextAreaID"] = 3715,	-- The Steamvault
 		-- #endif
 		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["maps"] = {

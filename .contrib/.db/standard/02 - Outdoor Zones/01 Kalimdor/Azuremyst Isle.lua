@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				["lore"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",
 				["icon"] = 135756,
 				-- #if BEFORE MOP
-				["zone-text-areas"] = {
+				["zoneTextAreaIDs"] = {
 					3526,	-- Ammen Vale
 					3560,	-- Ammen Fields
 					3527,	-- Crash Site

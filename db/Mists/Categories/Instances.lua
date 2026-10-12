@@ -831,7 +831,7 @@ i(17082,{b=1,f=53,lvl=60,q=4}),
 i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,q=4,rwp=40003,u=2})}})}}),
 inst(760,{coords={
-[70]={{52.3,76.2}}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,["zone-text-areaID"]=2159,g={
+[70]={{52.3,76.2}}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,zoneTextAreaID=2159,g={
 h(-45,{
 q(24428,{awp=30300,lvl=80,maps={84},qss={49644},r=2,u=32,g={
 i(49486,{b=1,f=52,q=4,u=32}),
@@ -3635,7 +3635,7 @@ s(132606,22207,{b=1,f=6,loc=45,lvl=51,q=3,u=15}),
 i(11934,{b=1,f=52,lvl=51,q=3}),
 i(11815,{b=1,f=53,lvl=51,q=3}),
 i(12033,{q=1})}})})}}),
-inst(229,{lvl=50,maps={250,251,252,253,254,255},savedInstanceID=229,["zone-text-areaID"]=1583,g={
+inst(229,{lvl=50,maps={250,251,252,253,254,255},savedInstanceID=229,zoneTextAreaID=1583,g={
 h(-45,{
 q(27470,{awp=40003,coords={
 [32]={{38.1,26.9}}},isBreadcrumb=1,lvl=57,nextQuests={27440,27444,27445},qgs={14625}}),
@@ -4120,7 +4120,7 @@ i(13098,{b=1,f=52,lvl=55,q=3}),
 i(22268,{b=1,f=53,lvl=55,q=3,u=15})}})})}}),
 inst(63,{coords={
 [52]={{42.6,71.8}},
-[55]={{25.6,51}}},lvl=10,mapID=291,maps={292},savedInstanceID=36,["zone-text-areaID"]=1581,g={
+[55]={{25.6,51}}},lvl=10,mapID=291,maps={292},savedInstanceID=36,zoneTextAreaID=1581,g={
 h(-45,{
 q(168,{coords={
 [84]={{70.2,40.8}}},lvl=14,qgs={656},r=2,rwp=40003,u=2,g={
@@ -4892,7 +4892,7 @@ r(3960,{itemID=4414,learnedAt=165,q=2,requireSkill=202}),
 r(3940,{itemID=4410,learnedAt=120,q=2,requireSkill=202}),
 r(3933,{itemID=4409,learnedAt=100,q=2,requireSkill=202})}})}}),
 inst(232,{coords={
-[66]={{35.7,55.5}}},lvl=30,mapID=280,maps={67,68,281},savedInstanceID=349,["zone-text-areaID"]=2100,g={
+[66]={{35.7,55.5}}},lvl=30,mapID=280,maps={67,68,281},savedInstanceID=349,zoneTextAreaID=2100,g={
 h(-45,{
 q(27697,{awp=40003,lvl=32,qgs={12238},g={
 qo(1,{providers={{"n",12236}}})}}),
@@ -5138,7 +5138,7 @@ s(269409,82888,{b=1,f=28,lvl=13,q=3}),
 s(269405,82883,{b=1,f=25,lvl=13,q=3}),
 s(269408,82886,{b=1,f=6,loc=47,lvl=13,q=3})}})}}),
 inst(233,{coords={
-[64]={{43.5,25.2}}},lvl=35,mapID=300,savedInstanceID=129,["zone-text-areaID"]=722,g={
+[64]={{43.5,25.2}}},lvl=35,mapID=300,savedInstanceID=129,zoneTextAreaID=722,g={
 h(-45,{
 q(6626,{coords={
 [10]={{49,94}}},lvl=28,qgs={12866},rwp=40003,u=2,g={
@@ -5236,7 +5236,7 @@ s(123963,10764,{b=1,f=6,loc=42,lvl=40,q=3}),
 s(123961,10762,{b=1,f=4,loc=42,lvl=40,q=3}),
 s(123964,10765,{b=1,f=5,loc=44,lvl=40,q=3})}})}}),
 inst(234,{coords={
-[199]={{41,94.6}}},lvl=25,mapID=301,savedInstanceID=47,["zone-text-areaID"]=491,g={
+[199]={{41,94.6}}},lvl=25,mapID=301,savedInstanceID=47,zoneTextAreaID=491,g={
 h(-45,{
 q(1102,{coords={
 [88]={{36.2,59.8}}},lvl=29,qgs={4451},r=1,rwp=40003,u=2,g={
@@ -6333,7 +6333,7 @@ s(283759,105039,{b=1,f=4,loc=47,lvl=90,q=4,u=5401}),
 i(104967,{b=1,f=51,lvl=90,q=4,u=5401}),
 s(283738,105012,{b=1,f=7,loc=43,lvl=90,q=4,u=5401})}})}}))}}),
 inst(64,{coords={
-[21]={{44.79,67.82}}},lvl=14,maps={310,311,312,313,314,315,316},savedInstanceID=33,["zone-text-areaID"]=209,g={
+[21]={{44.79,67.82}}},lvl=14,maps={310,311,312,313,314,315,316},savedInstanceID=33,zoneTextAreaID=209,g={
 h(-45,{
 q(27355,{awp=40003,c={9},coords={
 [84]={{39.4,84.8}}},lvl=20,qgs={461},r=2,sourceQuests={27272},g={
@@ -6750,7 +6750,7 @@ h(-66,{awp=40003,lvl=85,u=41,g={
 e(100,{npcID=46964,u=41,g={
 ach(41147,{u=41,g={
 crit(71212,{achID=41148,awp=40200,id=8,u=41})}})}})}}))}}),
-inst(236,{lvl=37,savedInstanceID=329,["zone-text-areaID"]=2017,g={
+inst(236,{lvl=37,savedInstanceID=329,zoneTextAreaID=2017,g={
 h(-12,{
 ach(646,{providers={{"n",10813}},g={
 crit(3957,{achID=1283,awp=30002,id=20})}}),
@@ -7653,7 +7653,7 @@ s(121269,6461,{b=1,f=4,loc=41,lvl=16,q=3}),
 s(121428,6627,{b=1,f=6,loc=42,lvl=16,q=3}),
 i(6463,{b=1,f=52,lvl=20,q=3})}})}}),
 inst(241,{coords={
-[71]={{39.2,21.3}}},lvl=39,mapID=219,savedInstanceID=209,["zone-text-areaID"]=978,g={
+[71]={{39.2,21.3}}},lvl=39,mapID=219,savedInstanceID=209,zoneTextAreaID=978,g={
 h(-45,{
 q(27070,{awp=40003,lvl=44,qgs={7407},g={
 qo(1,{providers={{"i",9234}}}),

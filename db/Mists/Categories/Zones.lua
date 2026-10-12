@@ -9276,7 +9276,7 @@ s(118103,2620,{awp=100107,coords={
 [66]={{48.2,75.8},{52.2,83.6},{53.2,71}}},crs={4684},f=4,loc=40,lvl=34,q=2,rwp=40003,u=2}),
 i(6074,{crs={4654,4655,4656,4657,4658,4659,6069,6070},f=55,q=1,rwp=40003,u=2})})}}),
 m(1,{icon=236756,lore="Durotar is the Horde starting zone for orcs and trolls. Thrall chose this land for the orcs to settle in, naming it Durotar after his father, Durotan. After the Shattering, more of the zone is flooded from the Southfury River, and the quests reflect Hellscream's new military rule.",maps={3,4,5,6},g={
-m(463,{awp=40003,icon=236456,lore="The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.",maps={464},["zone-text-areas"]={368},g={
+m(463,{awp=40003,icon=236456,lore="The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.",maps={464},zoneTextAreaIDs={368},g={
 h(-45,{
 q(24767,{c={11},coords={
 [463]={{58,54}}},qgs={38243},r=1,sourceQuests={24765}}),
@@ -9430,7 +9430,7 @@ q(24626,{c={1,3,4,5,7,8,9,10,11},coords={
 [463]={{45.1,85.5}}},qgs={37969},r=1,sourceQuests={24623,24624,24625},g={
 s(202792,52882,{b=1,f=6,loc=43,q=1,r=1}),
 s(202788,52877,{b=1,f=5,loc=45,q=1,r=1})}})})}}),
-m(461,{icon=236452,lore="The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",maps={2},["zone-text-areas"]={363,364,365},g={
+m(461,{icon=236452,lore="The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",maps={2},zoneTextAreaIDs={363,364,365},g={
 h(-45,{
 q(25149,{awp=40003,c={8},qgs={39206},races={2},rwp=70003,sourceQuests={25138}}),
 q(25130,{awp=40003,coords={
@@ -18540,7 +18540,7 @@ h(-43,{awp=50004,pb=1,g={
 crit(21464,{achID=6612,id=17,pb=1}),
 crit(21533,{achID=6560,id=13,pb=1})}})}}),
 m(57,{icon=236740,lore="Teldrassil is the starter zone for the night elves. Players learn how times have changed since Malfurion Stormrage has returned to Darnassus and how Fandrel Staghelm was corrupted. It is a lush spiritual zone, set high on an island that is also a great tree. It is home to the elven capital of Darnassus.",maps={59,60,61},g={
-m(460,{icon=236449,lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",maps={58},["zone-text-areas"]={188,256,257},g={
+m(460,{icon=236449,lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",maps={58},zoneTextAreaIDs={188,256,257},g={
 flt(101,{awp=50004,pb=1,sym={{"select","speciesID",447}},g={
 p(507,{npcID=62242,pb=1,g={
 crit(22540,{achID=6585,id=16,pb=1})}})}}),
@@ -19768,7 +19768,7 @@ h(-63,{
 s(117367,1493,{awp=100107,coords={
 [64]={{20.6,22.2},{44.6,33.6}}},crs={4099},f=25,lvl=22,q=3,rwp=40003,u=2}),
 r(6692,{crs={10760},itemID=5773,learnedAt=150,q=2,requireSkill=197,rwp=40003,u=2})})}}),
-h(-388,{maps={77,83},["zone-text-areaID"]=1769,g={
+h(-388,{maps={77,83},zoneTextAreaID=1769,g={
 h(-12,{awp=30002,g={
 ach(944,{minReputation={576,42000}})}}),
 h(-31,{awp=30002,g={
@@ -52918,7 +52918,7 @@ p(1238,{awp=50300,coords={
 [121]={{24.35,64}},
 [127]={{17.8,57.25},{43.2,44.2},{68.1,49.2}}},description="This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",npcID=71163,pb=1,u=30})}}),
 m(125,{icon=237509,isRaid=1,lore="Dalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.",lvl=58,maps={501,502},u=30,g={
-m(126,{icon=460862,u=30,["zone-text-areaID"]=4560,g={
+m(126,{icon=460862,u=30,zoneTextAreaID=4560,g={
 h(-12,{u=30,g={
 ach(1958,{providers={{"i",43698}},requireSkill=356,u=30})}}),
 prof(185,{u=30,g={

@@ -5,7 +5,7 @@
 local TRIAL_OF_STYLE_TOKEN = 151134;
 
 root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
-	["zone-text-areaID"] = 8712,
+	["zoneTextAreaID"] = 8712,
 	["groups"] = {
 		n(SCENARIO_COMPLETION, {
 			i(TRIAL_OF_STYLE_TOKEN),

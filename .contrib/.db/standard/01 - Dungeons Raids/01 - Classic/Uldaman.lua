@@ -15,7 +15,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lore"] = "Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",
 		-- #endif
 		-- #if BEFORE WRATH
-		["zone-text-areaID"] = 1337,	-- Uldaman
+		["zoneTextAreaID"] = 1337,	-- Uldaman
 		-- #endif
 		["mapID"] = ULDAMAN,
 		["coords"] = {

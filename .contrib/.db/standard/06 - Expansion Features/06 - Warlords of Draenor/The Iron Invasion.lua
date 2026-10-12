@@ -31,7 +31,7 @@ local IRON_INVASION = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	n(IRON_INVASION, {
 		-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
-		["zone-artIDs"] = { 628 },
+		["zoneTextArtIDs"] = { 628 },
 		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { BLASTED_LANDS },
 		["cr"] = 88206,	-- Zidormi

@@ -810,7 +810,7 @@ root(ROOTS.Zones, {
 			["lvl"] = 58,
 			["groups"] = {
 				m(NORTHREND_THE_UNDERBELLY, {
-					["zone-text-areaID"] = 4560,	-- The Underbelly
+					["zoneTextAreaID"] = 4560,	-- The Underbelly
 					["icon"] = 460862,
 					["groups"] = {
 						n(ACHIEVEMENTS, {

@@ -59,10 +59,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["description"] = "Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northern Stranglethorn.",	-- The teleporter was removed from Booty Bay with 4.0.3, and returned to the game with 4.0.6.
 		-- #endif
 		-- #if BEFORE CATA
-		["zone-text-areaID"] = 133,	-- Gnomeregan
+		["zoneTextAreaID"] = 133,	-- Gnomeregan
 		-- #elseif BEFORE MOP
-		["zone-text-areaID"] = 5495,	-- Gnomeregan
-		["zone-text-names"] = {
+		["zoneTextAreaID"] = 5495,	-- Gnomeregan
+		["zoneTextNames"] = {
 			"Workshop Entrance",
 		},
 		-- #endif

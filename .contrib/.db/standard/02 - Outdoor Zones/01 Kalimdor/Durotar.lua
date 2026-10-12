@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["icon"] = 236456,
 				-- #if BEFORE 6.0.0
 				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
-				["zone-text-areas"] = {
+				["zoneTextAreaIDs"] = {
 					368,	-- Echo Isles
 				},
 				-- #endif
@@ -985,7 +985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["icon"] = 236452,
 				-- #if BEFORE 6.0.0
 				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
-				["zone-text-areas"] = {
+				["zoneTextAreaIDs"] = {
 					363,	-- Valley of Trials
 					364,	-- The Den
 					365,	-- Burning Blade Coven

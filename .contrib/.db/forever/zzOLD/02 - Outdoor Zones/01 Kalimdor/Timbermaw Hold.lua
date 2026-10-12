@@ -55,7 +55,7 @@ end]];
 
 root(ROOTS.Zones, m(MAP.KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
-		["zone-text-areaID"] = 1769,
+		zoneTextAreaID = 1769,
 		["maps"] = { MAP.FELWOOD, MAP.WINTERSPRING },
 		["groups"] = {
 			n(FACTIONS, {

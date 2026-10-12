@@ -1620,9 +1620,9 @@ end");
                         case "isRaid":
                         case "mapID":
                         case "races":
-                        case "zone-artIDs":
-                        case "zone-text-areaID":
-                        case "zone-text-areas":
+                        case "zoneTextArtIDs":
+                        case "zoneTextAreaID":
+                        case "zoneTextAreaIDs":
                             npcData[pair.Key] = pair.Value;
                             break;
 
@@ -2035,7 +2035,7 @@ end");
                     case "questIDA":
                     case "questIDH":
                     case "sqreq":
-                    case "zone-text-areaID":
+                    case "zoneTextAreaID":
                     case "savedInstanceID":
                     case "rwp":
                     case "awp":
@@ -2066,8 +2066,8 @@ end");
                     case "races_disp":
                     case "maps":
                     case "maps_disp":
-                    case "zone-artIDs":
-                    case "zone-text-areas":
+                    case "zoneTextArtIDs":
+                    case "zoneTextAreaIDs":
                     case "_quests":
                     case "_npcs":
                     case "_objects":
@@ -2122,7 +2122,7 @@ end");
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "customCollect":
-                    case "zone-text-names":
+                    case "zoneTextNames":
                         {
                             MergeStringArrayData(item, field, value);
                             break;

@@ -51,7 +51,7 @@ UPPER_BLACKROCK_SPIRE = createHeader({
 
 BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 	["lore"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
-	["zone-text-areaID"] = 1583,	-- Blackrock Spire
+	zoneTextAreaID = 1583,	-- Blackrock Spire
 	["mapID"] = MAP.BLACKROCK_SPIRE,
 	["lvl"] = 50,
 	["groups"] = {

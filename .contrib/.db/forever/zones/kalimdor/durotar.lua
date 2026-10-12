@@ -9,7 +9,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 		m(VALLEY_OF_TRIALS, {
 			lore = "The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",
 			icon = 236452,
-			["zone-text-areas"] = {
+			zoneTextAreaIDs = {
 				363,	-- Valley of Trials
 				364,	-- The Den
 				365,	-- Burning Blade Coven

@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",
 				["icon"] = 236447,
 				-- #if BEFORE MOP
-				["zone-text-areas"] = {
+				["zoneTextAreaIDs"] = {
 					9,	-- Northshire Valley
 					59,	-- Northshire Vineyards
 					24,	-- Northshire Abbey

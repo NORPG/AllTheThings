@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["icon"] = 236449,
 				-- #if BEFORE 6.0.0
 				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
-				["zone-text-areas"] = {
+				["zoneTextAreaIDs"] = {
 					188,	-- Shadowglen
 					256,	-- Aldrassil
 					257,	-- Shadowthread Cave

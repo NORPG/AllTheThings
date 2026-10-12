@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures,
 		n(WAR_EFFORT, {
 			m(ARATHI_HIGHLANDS, {	-- Outdoor Warfront-Phased Content
 				-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
-				["zone-artIDs"] = {
+				["zoneTextArtIDs"] = {
 					1137,	-- Alliance and during an Alliance Controlled day
 				},
 				["icon"] = 236712,

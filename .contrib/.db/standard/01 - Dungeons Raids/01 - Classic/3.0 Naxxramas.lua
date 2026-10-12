@@ -49,7 +49,7 @@ applyclassicphase(PHASE_SIX,
 		["description"] = "[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",
 		-- #endif
 		-- #if BEFORE WRATH
-		["zone-text-areaID"] = 3456,	-- Naxxramas
+		["zoneTextAreaID"] = 3456,	-- Naxxramas
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		-- #endif
 		["mapID"] = NAXXRAMAS,

@@ -4,7 +4,7 @@
 root(ROOTS.Instances, {
 	inst(63, {	-- Deadmines
 		lore = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
-		["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
+		zoneTextAreaID = 1581,	-- "The Deadmines" now points to the Deadmines.
 		mapID = MAP.DEADMINES,
 		coord = { 42.2, 82.6, MAP.WESTFALL },
 		icon = 136332,

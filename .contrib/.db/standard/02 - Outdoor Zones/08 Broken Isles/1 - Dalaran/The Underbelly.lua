@@ -9,7 +9,7 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			m(LEGION_THE_UNDERBELLY, {
-				["zone-text-areaID"] = 7594,	-- The Underbelly
+				["zoneTextAreaID"] = 7594,	-- The Underbelly
 				["icon"] = 460862,
 				["groups"] = {
 					n(ACHIEVEMENTS, {

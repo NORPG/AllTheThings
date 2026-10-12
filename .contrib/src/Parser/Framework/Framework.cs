@@ -1604,10 +1604,10 @@ namespace ATT
                 case "titleID":
                 case "text":
                 case "visualID":
-                case "zone-artIDs":
-                case "zone-text-areaID":
-                case "zone-text-areas":
-                case "zone-text-names":
+                case "zoneTextArtIDs":
+                case "zoneTextAreaID":
+                case "zoneTextAreaIDs":
+                case "zoneTextNames":
 
                 // metadata parser tags
                 case "_area":

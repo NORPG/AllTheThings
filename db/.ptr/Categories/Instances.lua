@@ -778,7 +778,7 @@ i(17082,{b=1,f=53,lvl=25}),
 i(17982,{b=1,f=52,lvl=25,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,rwp=40003,u=2})}})}}),
 inst(760,{coords={
-[70]={{52.3,76.2}}},isLockoutShared=1,isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",mapID=248,savedInstanceID=249,["zone-text-areaID"]=2159,g={
+[70]={{52.3,76.2}}},isLockoutShared=1,isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",mapID=248,savedInstanceID=249,zoneTextAreaID=2159,g={
 h(-45,{
 q(24428,{awp=30300,lvl=30,maps={84},qss={49644},r=2,g={
 i(49486,{b=1,f=52}),
@@ -3545,7 +3545,7 @@ i(11815,{b=1,f=53,lvl=22,spellID=15600}),
 i(12033)}})})}}),
 inst(63,{coords={
 [52]={{42.6,71.8}},
-[55]={{25.6,51}}},mapID=291,maps={292},savedInstanceID=36,["zone-text-areaID"]=1581,g={
+[55]={{25.6,51}}},mapID=291,maps={292},savedInstanceID=36,zoneTextAreaID=1581,g={
 h(-45,{
 q(168,{coords={
 [84]={{70.2,40.8}}},qgs={656},qis={1894},r=2,rwp=40003,u=2,g={
@@ -4784,7 +4784,7 @@ s(4766,13142,{b=1,f=7,loc=45,lvl=23,u=2}),
 i(13098,{b=1,f=52,lvl=23,u=2}),
 i(22268,{b=1,f=53,lvl=23,spellID=27675,u=2})}})})}}),
 inst(232,{coords={
-[66]={{35.7,55.5}}},mapID=280,maps={67,68,281},savedInstanceID=349,["zone-text-areaID"]=2100,g={
+[66]={{35.7,55.5}}},mapID=280,maps={67,68,281},savedInstanceID=349,zoneTextAreaID=2100,g={
 h(-45,{
 q(27697,{awp=40003,crs={12236},lvl=10,qgs={12238}}),
 q(7065,{coords={
@@ -5015,7 +5015,7 @@ s(89428,151425,{awp=70300,b=1,f=6,loc=44,lvl=6}),
 s(89427,151424,{awp=70300,b=1,f=5,loc=45,lvl=6}),
 s(42168,82886,{b=1,f=7,loc=47,lvl=6})}})}}),
 inst(233,{coords={
-[64]={{43.5,25.2}}},mapID=300,savedInstanceID=129,["zone-text-areaID"]=722,g={
+[64]={{43.5,25.2}}},mapID=300,savedInstanceID=129,zoneTextAreaID=722,g={
 h(-45,{
 q(6626,{coords={
 [10]={{49,94}}},crs={7872,7873,7874},qgs={12866},rwp=40003,u=2}),
@@ -5111,7 +5111,7 @@ s(4073,10764,{b=1,f=6,loc=42,lvl=17}),
 s(4071,10762,{b=1,f=4,loc=42,lvl=17}),
 s(4074,10765,{b=1,f=5,loc=44,lvl=17})}})}}),
 inst(234,{coords={
-[199]={{41,94.6}}},mapID=301,savedInstanceID=47,["zone-text-areaID"]=491,g={
+[199]={{41,94.6}}},mapID=301,savedInstanceID=47,zoneTextAreaID=491,g={
 h(-45,{
 q(1102,{coords={
 [88]={{36.2,59.8}}},qgs={4451},qis={5793},r=1,rwp=40003,u=2,g={
@@ -6147,7 +6147,7 @@ ach(6916,{u=2,g={
 cs(131232,{u=2})}})}}),
 d(24,{sym={{"sub","tw_instance",246}}})}}),
 inst(64,{coords={
-[21]={{44.79,67.82}}},maps={310,311,312,313,314,315,316},savedInstanceID=33,["zone-text-areaID"]=209,g={
+[21]={{44.79,67.82}}},maps={310,311,312,313,314,315,316},savedInstanceID=33,zoneTextAreaID=209,g={
 h(-45,{
 q(27355,{awp=40003,c={9},coords={
 [84]={{79.5,69.9}}},lvl=8,qgs={164942},qis={60873,60875,60882},r=2,sourceQuests={27272},g={
@@ -6496,7 +6496,7 @@ s(31819,63458,{b=1,f=7,loc=42,lvl=32,modID=2}),
 s(93803,157617,{awp=70305,b=1,f=5,loc=42,lvl=32,modID=2}),
 s(31818,63457,{b=1,f=7,loc=43,lvl=32,modID=2}),
 s(31824,63464,{b=1,f=7,loc=46,lvl=32,modID=2})}})}})}}),
-inst(236,{savedInstanceID=329,["zone-text-areaID"]=2017,g={
+inst(236,{savedInstanceID=329,zoneTextAreaID=2017,g={
 h(-12,{
 ach(646,{
 crit(550,{achID=646,id=2,providers={{"n",10813}}}),
@@ -7366,7 +7366,7 @@ s(2422,6461,{b=1,f=4,loc=41,lvl=8}),
 s(2542,6627,{b=1,f=7,loc=42,lvl=8}),
 i(6463,{b=1,f=52,lvl=8})}})}}),
 inst(241,{coords={
-[71]={{39.2,21.3}}},mapID=219,savedInstanceID=209,["zone-text-areaID"]=978,g={
+[71]={{39.2,21.3}}},mapID=219,savedInstanceID=209,zoneTextAreaID=978,g={
 h(-45,{
 q(27070,{awp=40003,lvl=15,qgs={7407},qis={8707,9234},g={
 s(33323,65954,{b=1,f=5,loc=45}),
