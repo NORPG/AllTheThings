@@ -2610,6 +2610,10 @@ q(5655,{altQuests={5652,5654,5656,5657},c={5},coords={
 r(9035,{rank=1,requireSkill=78})}}),
 q(775,{coords={
 [1412]={{61.4,21}}},lvl=3,maps={1456},qgs={2994},r=1,sourceQuests={773}}),
+q(99411,{awp=16001,coords={
+[1412]={{47.2,57.6}}},lvl=5,qgs={277182},r=1,g={
+qo(1,{coords={
+[1412]={{46.2,63.2}}},crs={2956,2957,3068},providers={{"i",287505},{"n",277154}}})}}),
 q(766,{coords={
 [1412]={{47,57}}},lvl=5,qgs={3055},r=1,g={
 qo(1,{crs={2958,2959,2960},providers={{"i",4804}}}),
@@ -3014,7 +3018,7 @@ s(163742,18957,{b=1,f=25}),
 i(9602,{b=1,collectible=false,f=26,rwp=11101,u=2})}}),
 q(1684,{altQuests={1638,1678,1679},c={1},coords={
 [1438]={{56.2,59.2}},
-[1439]={{39,43.4}}},lvl=10,maps={1457},qgs={2151,3598,3657},r=2}),
+[1439]={{39,43.4}}},isBreadcrumb=1,lvl=10,maps={1457},nextQuests={1639,1678,1683},qgs={2151,3598,3657},r=2}),
 q(1581,{coords={
 [1438]={{56,57.8}}},cost={{"i",5997,2},{"i",2454,6}},description="This quest becomes available at Alchemy skill level 20 when the character level requirement is met.\n\nTODO: Check that this is true in Forever.",learnedAt=20,lvl=4,qgs={2083},r=2,requireSkill=171}),
 q(2259,{c={4},coords={
@@ -14525,7 +14529,7 @@ q(593,{coords={
 [1434]={{39,58.2}}},cost={{"i",3912,1}},qgs={2530},repeatable=1,g={
 qo(1,{providers={{"i",3913}},questID=592})}}),
 s(157689,4134,{b=1,f=28}),
-i(6723,{f=51})}}),
+i(6723,{f=51,spellID=1324578})}}),
 q(606,{coords={
 [1434]={{27.78,77.07}}},lvl=30,qgs={2501},g={
 qo(1,{crs={1557},providers={{"i",3919}}})}}),
@@ -14775,7 +14779,7 @@ n(265575,{awp=16001,coords={
 s(308972,274745,{b=1,f=6,loc=44,lvl=30,minReputation={21,3000}}),
 i(274746,{b=1,f=52,lvl=30,minReputation={21,3000}}),
 s(308965,274747,{b=1,f=4,loc=47,lvl=30,minReputation={21,3000},spellID=1295267}),
-s(308973,274748,{b=1,f=31,lvl=30,minReputation={21,9000},spellID=1295313}),
+s(308973,274748,{b=1,f=31,lvl=30,minReputation={21,9000}}),
 i(274749,{b=1,f=51,lvl=30,minReputation={21,9000}}),
 s(308983,274022,{b=1,f=2,loc=40,minReputation={21,21000}})}}),
 n(2848,{coords={
@@ -16164,9 +16168,9 @@ q(70,{coords={
 qo(1,{coords={
 [1429]={{44.2,65.8}}},providers={{"i",910},{"o",1560}}})}}),
 q(72,{coords={
-[1453]={{29.6,61.9}}},lvl=22,qgs={297},r=2,sourceQuests={70}}),
+[1453]={{42.6,72.2}}},lvl=22,qgs={297},r=2,sourceQuests={70}}),
 q(74,{coords={
-[1453]={{29.6,61.9}}},lvl=22,maps={1429},providers={{"o",1561}},qis={916},r=2,sourceQuests={72}}),
+[1453]={{42.6,72.2}}},lvl=22,maps={1429},providers={{"o",1561}},qis={916},r=2,sourceQuests={72}}),
 q(75,{coords={
 [1429]={{84.6,69.3}}},lvl=22,qgs={294},r=2,sourceQuests={74},g={
 qo(1,{coords={
@@ -17016,14 +17020,9 @@ s(157442,3754,{b=1,f=5,loc=44}),
 r(3399,{itemID=3736}),
 i(3728,{f=55,lvl=25,spellID=1248391})}}),
 q(545,{coords={
-[1424]={{61.6,20.85}}},lvl=30,maps={1416,2959},nextQuests={92434},qgs={2410},r=1,sourceQuests={544},g={
+[1424]={{61.6,20.85}}},lvl=30,maps={1416},qgs={2410},r=1,sourceQuests={544},g={
 qo(1,{providers={{"n",2358}}}),
 qo(2,{providers={{"n",2359}}})}}),
-q(93680,{coords={
-[1416]={{21.8,89.9}}},lvl=30,maps={1416,2959},nextQuests={92434},qgs={2410},r=1,g={
-qo(1,{coords={[1416]={{21.8,89.9}}},providers={{"i",279469}}})}}),
-q(92434,{lvl=30,maps={1416,2959},nextQuests={96984},qgs={2410},r=1,sourceQuests={545,93680},g={
-qo(1,{providers={{"i",279469}}})}}),
 q(567,{coords={
 [1424]={{62.56,19.69}}},lvl=19,providers={{"o",2008}},r=1,g={
 qo(1,{coords={
@@ -17112,7 +17111,7 @@ qo(1,{crs={2252,2253,2254,2255,2256,2287,2416},providers={{"i",3658}}}),
 qo(2,{coords={
 [1416]={{38.5,46.5}}},providers={{"i",3659},{"o",1760}}})}}),
 q(544,{coords={
-[1424]={{61.6,20.85}},[1416]={{21.8,89.9}}},lvl=30,maps={1416,2959},qgs={2410},r=1,nextQuests={545},g={
+[1424]={{61.6,20.85}}},lvl=30,maps={1416},qgs={2410},r=1,g={
 qo(1,{coords={
 [1416]={{19.4,86}}},crs={2413},providers={{"i",3691}}}),
 qo(2,{coords={
