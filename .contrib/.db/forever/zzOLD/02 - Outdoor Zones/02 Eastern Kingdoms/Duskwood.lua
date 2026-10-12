@@ -54,6 +54,37 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 			}),
+			q(98372, {	-- An Unfortunate End
+				["qg"] = 271866,	-- Night Watch Guard <The Night Watch>
+				["coords"] = {
+					{ 23.6, 33.2, MAP.DUSKWOOD },
+					{ 17.2, 54.4, MAP.DUSKWOOD },
+					{ 47.6, 59.6, MAP.DUSKWOOD },
+					{ 45.6, 79.0, MAP.DUSKWOOD },
+					{ 66.0, 33.8, MAP.DUSKWOOD },
+					{ 68.8, 69.6, MAP.DUSKWOOD },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					i(280612),	-- Night Watchman's Torch
+				},
+			}),
+			q(99267, {	-- An Unfortunate End (2/2)
+				["qg"] = 271866,	-- Night Watch Guard <The Night Watch>
+				["coords"] = {
+					{ 23.6, 33.2, MAP.DUSKWOOD },
+					{ 17.2, 54.4, MAP.DUSKWOOD },
+					{ 47.6, 59.6, MAP.DUSKWOOD },
+					{ 45.6, 79.0, MAP.DUSKWOOD },
+					{ 66.0, 33.8, MAP.DUSKWOOD },
+					{ 68.8, 69.6, MAP.DUSKWOOD },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["repeatable"] = true,
+				["groups"] = {
+					i(280612),	-- Night Watchman's Torch
+				},
+			}),
 			q(1044, {	-- Answered Questions
 				["sourceQuest"] = 1043,	-- The Scythe of Elune
 				["qg"] = 661,	-- Jonathan Carevin
@@ -488,6 +519,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 			}),
+			q(79363, {	-- Silvia's Sword
+				["aqd"] = {
+					["qg"] = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				["hqd"] = {
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				["qs"] = 281145,	-- Silvia's Sword (QS!)
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/7 Defias Night Blade slain
+						["provider"] = { "n", 909 },	-- Defias Night Blade
+					}),
+					objective(2, {	-- 0/2 Defias Enchanter slain
+						["provider"] = { "n", 910 },	-- Defias Enchanter
+					}),
+				},
+			}),
 			q(1395, {	-- Supplies for Nethergarde
 				["sourceQuest"] = 1477,	-- Vital Supplies
 				["providers"] = {
@@ -674,6 +726,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					}),
 					i(2044),	-- Crescent of Forlorn Spirits
 					i(2043),	-- Ring of Forlorn Spirits
+					i(270053, {	-- Ring of Ruin
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(56, {	-- The Night Watch (1/3)
@@ -794,6 +849,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 						},
 					}),
 					i(1131),	-- Totem of Infliction
+				},
+			}),
+			q(96139, {	-- The Valor Family (1/2)
+				["qg"] = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+				["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/1 Raven Hill Tome
+						["providers"] = {
+							{ "i", 281046 },	-- Raven Hill Tome
+							{ "o", 673515 },	-- Memory of Valor
+						},
+						["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+					}),
+					i(281149),	-- Memories of Valor
 				},
 			}),
 			q(225, {	-- The Weathered Grave
@@ -1304,6 +1376,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 64.8, 46.2, MAP.DUSKWOOD },
 				},
 				["cr"] = 533,	-- Nightbane Shadow Weaver
+			}),
+			i(281145, {	-- Silvia's Sword
+				["coords"] = {
+					{ 74.0, 51.8, MAP.DUSKWOOD },
+					{ 50.2, 74.2, MAP.DUSKWOOD },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 272284,	-- Lost Defender
 			}),
 			i(2018, {	-- Skeletal Longsword
 				["coords"] = {
