@@ -541,8 +541,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							822,	-- Young Forest Bear
 						},
 					}),
-					-- CRIEVE NOTE: Check this.
-					i(286733),	-- Fightin' Fish
+					i(286733, { collectible = false }),	-- Fightin' Fish
 				},
 			}),
 			q(91736, {	-- Applejack Still
