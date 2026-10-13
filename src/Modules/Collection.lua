@@ -307,7 +307,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			app.PrintDebug("STC:NoCACHE",app:SearchLink(t), key, id, accountWide, collected)
 			return
 		end
-		-- TODO: FirstCraftWithQuest needs to have a special workaround for this
+		-- in the event a Thing is possible to detect collection via one key/id but actually caches its collection state based on a different key, the class can assign that via CACHEDKEY (ref. FirstCraft type)
+		local cachedKey = t.CACHEDKEY
+		if cachedKey then
+			app.PrintDebug("Collection swapping to CachedKey",id,"=>",cachedKey,":",t[cachedKey],"for cache",cacheKey)
+			id = t[cachedKey]
+		end
 		local oldstate = (accountWide and IsAccountCached or IsCached)(cacheKey, id)
 		local accountCache = accountWideData[cacheKey]
 		-- app.PrintDebug("STC",app:SearchLink(t),key, id, accountWide, oldstate, "->", collected, cacheKey)
