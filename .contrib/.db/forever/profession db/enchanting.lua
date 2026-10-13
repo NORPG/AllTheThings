@@ -75,12 +75,12 @@ i(0, 7421);			-- Runed Copper Rod
 i(0, 13628);		-- Runed Golden Rod
 i(0, 7795);			-- Runed Silver Rod
 i(0, 13702);		-- Runed Truesilver Rod
-
+--- QUEST ---
+i(0, 1230643);		-- Enchanted Lute
 --- ITEM ---
 i(273103, 1263056);	-- Arcane Salvager
 i(249537, 1248650);	-- Brilliant Wand
 i(249507, 1249064);	-- Dreamstaff
-i(22392, 27837);	-- Enchant 2H Weapon - Agility
 i(6349, 7793);		-- Enchant 2H Weapon - Lesser Intellect
 i(11038, 13380);	-- Enchant 2H Weapon - Lesser Spirit
 i(16249, 20036);	-- Enchant 2H Weapon - Major Intellect
@@ -147,7 +147,6 @@ i(11168, 13689);	-- Enchant Shield - Lesser Block
 i(11081, 13464);	-- Enchant Shield - Lesser Protection
 i(11202, 13817);	-- Enchant Shield - Stamina
 i(16222, 20016);	-- Enchant Shield - Superior Spirit
-i(19445, 23800);	-- Enchant Weapon - Agility
 i(16252, 20034);	-- Enchant Weapon - Crusader
 i(11208, 13915);	-- Enchant Weapon - Demonslaying
 i(11207, 13898);	-- Enchant Weapon - Fiery Weapon
@@ -183,8 +182,6 @@ i(249532, 1249154);	-- Totem of Thunder
 i(249508, 1249069);	-- Truesilver Conduit
 i(249509, 1249070);	-- Twisting Essence Jar
 i(17725, 21931);	-- Winter's Might
---- QUEST ---
-i(0, 1230643);		-- Enchanted Lute
 --- UNKNOWN ---
 --[[
 i(249475),	-- Formula: Enchant Bracer - Minor Healing Power
@@ -230,18 +227,23 @@ i(279298),	-- Formula: Totem of Urgency
 i(279299),	-- Formula: Idol of Swiftness
 i(279300),	-- Formula: Idol of the Ursine Twins
 --- UNRELEASED CONTENT ---
--- mc
+-- BRD
+i(19444, 23799);	-- Enchant Weapon - Strength
+-- BRD P3
+i(19448, 23803);	-- Enchant Weapon - Mighty Spirit
+i(19449, 23804);	-- Enchant Weapon - Mighty Intellect
+-- MC
 i(18260, 22750);	-- Enchant Weapon - Healing Power
 i(18259, 22749);	-- Enchant Weapon - Spell Power
--- P4?? Uncofirmed
+-- Argent Dawn P3
+i(19446, 23801);	-- Enchant Bracer - Mana Regeneration
+i(19447, 23802);	-- Enchant Bracer - Healing Power
+-- Timbermaw P3
+i(22392, 27837);	-- Enchant 2H Weapon - Agility
+i(19445, 23800);	-- Enchant Weapon - Agility
+-- Silithus P4
 i(20754, 25127);	-- Lesser Mana Oil
 i(20755, 25128);	-- Wizard Oil
--- p3?
-i(19446, 23801);	-- Enchant Bracer - Mana Regeneration
-i(19444, 23799);	-- Enchant Weapon - Strength
-i(19447, 23802);	-- Enchant Bracer - Healing Power
-i(19449, 23804);	-- Enchant Weapon - Mighty Intellect
-i(19448, 23803);	-- Enchant Weapon - Mighty Spirit
 -- ZG
 i(20757, 25130);	-- Brilliant Mana Oil
 i(20756, 25129);	-- Brilliant Wizard Oil

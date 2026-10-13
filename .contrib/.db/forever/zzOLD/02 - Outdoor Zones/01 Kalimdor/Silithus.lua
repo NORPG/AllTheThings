@@ -1977,10 +1977,10 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					},
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 					["groups"] = {
+						--[[Commented out until confirmed
 						i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
 						i(20548),	-- Pattern: Runed Stygian Belt (RECIPE!)
 						i(20546),	-- Pattern: Runed Stygian Leggings (RECIPE!)
-						--[[Commented out until confirmed
 						i(20554),	-- Plans: Darkrune Breastplate (RECIPE!)
 						i(20553),	-- Plans: Darkrune Gauntlets (RECIPE!)
 						i(20555),	-- Plans: Darkrune Helm (RECIPE!)
@@ -2100,8 +2100,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					i(20733),	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
 					i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
 					i(20755),	-- Formula: Wizard Oil (RECIPE!)
-					--]]
 					i(22308),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
+					--]]
 				},
 			}),
 			n(15175, {	-- Khur Hornstriker <Reagent Vendor>
@@ -2117,23 +2117,22 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			n(15179, {	-- Mishta <General Trade Goods Vendor>
 				["coord"] = { 49.8, 36.4, MAP.SILITHUS },
+				--[[Commented out until confirmed
 				["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(22310),	-- Pattern: Cenarion Herb Bag (RECIPE!)
-						--i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
-						--}),
+						i(22772),	-- Pattern: Sylvan Shoulders (RECIPE!)
 					}, {	-- Honored
-						--i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
-						--}),
+						i(22773),	-- Pattern: Sylvan Crown (RECIPE!)
 					}, {	-- Revered
-						--i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
+						i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
 						i(22312),	-- Pattern: Satchel of Cenarius (RECIPE!)
-						i(22774,	{	-- Pattern: Sylvan Vest (RECIPE!)
-						}),
+						i(22774),	-- Pattern: Sylvan Vest (RECIPE!)
 					}, {	-- Exalted
 					},
 				}),
+				--]]
 			}),
 			n(15176, {	-- Vargus <Blacksmith>
 				["coord"] = { 51.2, 38.8, MAP.SILITHUS },
@@ -2141,15 +2140,15 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					-- Commented out recipes, does not seem to be on vendor on beta
 					{		-- Neutral
 					}, {	-- Friendly
-						i(275601),	-- Plans: Clutchlord's Grips
-						i(275598),	-- Plans: Goregasher Grips
+						i(275601, {timeline = {TIMELINE.ADDED_1_60_1}}),-- Plans: Clutchlord's Grips
+						i(275598, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Goregasher Grips
 						--i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 						--i(22768),	-- Plans: Ironvine Belt (RECIPE!)
 					}, {	-- Honored
-						i(275603),	-- Plans: Clutchlord's Stompers
-						i(275602),	-- Plans: Clutchlord's Support
-						i(275600),	-- Plans: Goregasher Stompers
-						i(275599),	-- Plans: Goregasher Support
+						i(275603, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Clutchlord's Stompers
+						i(275602, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Clutchlord's Support
+						i(275600, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Goregasher Stompers
+						i(275599, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Goregasher Support
 						--i(22767),	-- Plans: Ironvine Gloves (RECIPE!)
 						--i(22214),	-- Plans: Light Obsidian Belt (RECIPE!)
 					}, {	-- Revered

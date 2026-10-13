@@ -3775,14 +3775,6 @@ local phases = {
 		description = "|cFFAAFFAAThis Thing is available in the Trading Post.|r",
 		state = 3,
 	},
-	[1101] = {
-		name = "Dire Maul",
-		description = "|cFFAAFFAAThis became available with the Dire Maul Phase Release of WoW Classic.|r",
-		lore = "|cFFFFAAAAIncluded Dire Maul.|r",
-		minimumBuildVersion = 11301,
-		buildVersion = 11301,
-		state = 2,
-	},
 	[13] = {
 		name = "Phase 3",
 		description = "|cFFAAFFAAThis was not available until Phase 3 of WoW Classic.|r",
@@ -3813,14 +3805,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Naxxramas, which was heralded by the Scourge Invasion.|r",
 		minimumBuildVersion = 11301,
 		buildVersion = 11306,
-		state = 2,
-	},
-	[17] = {
-		name = "Phase 1",
-		description = "|cFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r",
-		lore = "|cFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r",
-		minimumBuildVersion = 20501,
-		buildVersion = 20505,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -5043,7 +5027,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
 	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
-	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 })
 do phases[key].description = value; end
 end
@@ -6231,7 +6214,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
 	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
-	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -6717,7 +6699,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
 	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
-	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -7602,7 +7583,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
-	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -9166,7 +9146,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
 	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
-	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -10009,7 +9988,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
 	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
-	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
 end
@@ -11691,12 +11669,10 @@ for key,value in pairs({
 	[4] = "PvP Elite/Gladiador",
 	[5] = "No aprendible",
 	[7] = "Puesto comercial",
-	[1101] = "La masacre",
 	[13] = "Fase 3",
 	[14] = "Fase 4",
 	[15] = "Fase 5",
 	[16] = "Fase 6",
-	[17] = "Fase 1",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -11706,22 +11682,18 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAAEsto ya no se puede comprar ni desbloquear como transfiguración a menos que tengas el título PvP requerido, la calificación PvP requerida o estés en el porcentaje superior de esa temporada.|r",
 	[5] = "|cFFFFAAAAEsto no se puede recolectar, aprender ni usar para transfiguración de forma permanente.|r",
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto comercial.|r",
-	[1101] = "|cFFAAFFAAEsto estuvo disponible con el lanzamiento de la fase La masacre de WoW Classic.|r",
 	[13] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de WoW Classic.|r",
 	[14] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de WoW Classic.|r",
-	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 1 de TBC Classic.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAAFomentar el uso de dinero real en cualquier versión del juego está ampliamente mal visto. Participa en este contenido bajo tu propia responsabilidad.|r",
-	[1101] = "|cFFFFAAAAIncluye La masacre|r",
 	[13] = "|cFFFFAAAAIncluidos Guarida de Alanegra y la finalización de Trueno furioso|r",
 	[14] = "|cFFFFAAAAIncluidos Zul'Gurub y los dragones del mundo.|r",
 	[15] = "|cFFFFAAAASe incluyó Ahn'Qiraj, que fue precedido por un evento de apertura único.|r",
 	[16] = "|cFFFFAAAASe Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.|r",
-	[17] = "|cFFFFAAAAIncluye Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -13967,12 +13939,10 @@ for key,value in pairs({
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
 	[7] = "商栈",
-	[1101] = "厄运之槌",
 	[13] = "阶段3",
 	[14] = "阶段4",
 	[15] = "阶段5",
 	[16] = "阶段6",
-	[17] = "阶段1",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -13982,22 +13952,18 @@ for key,value in pairs({
 	[4] = "|cFFFFAAAA除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
 	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
 	[7] = "|cFFAAFFAA该物品可在商栈购买。|r",
-	[1101] = "|cFFAAFFAA这在 厄运之槌 的 经典旧世 阶段发布时可用了。|r",
 	[13] = "|cFFAAFFAA该功能直到 阶段3 的 经典旧世 才可用。|r",
 	[14] = "|cFFAAFFAA该功能直到 阶段4 的 经典旧世 才可用。|r",
 	[15] = "|cFFAAFFAA该功能直到 阶段5 的 经典旧世 才可用。|r",
 	[16] = "|cFFAAFFAA该功能直到 阶段6 的 经典旧世 才可用。|r",
-	[17] = "|cFFAAFFAA该功能直到 阶段1 的 燃烧的远征 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在游戏的任何版本中，鼓励使用真实货币的行为均不受认可。参与此类内容需自行承担风险。|r",
-	[1101] = "|cFFFFAAAA包含厄运之槌。|r",
 	[13] = "|cFFFFAAAA包含黑翼之巢和完成的雷霆之怒。|r",
 	[14] = "|cFFFFAAAA包含祖尔格拉布和世界巨龙。|r",
 	[15] = "|cFFFFAAAA包含安其拉，其前身举办了一场独特的开幕活动。|r",
 	[16] = "|cFFFFAAAA包含纳克萨玛斯，它以天灾入侵为标志。|r",
-	[17] = "|cFFFFAAAA包括卡拉赞、玛瑟里顿巢穴和格鲁尔的巢穴。|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -15245,7 +15211,6 @@ for key,value in pairs({
 	[4] = "PvP 精良/鬥士",
 	[5] = "不可學",
 	[7] = "貿易站",
-	[17] = "第1階段",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -15259,7 +15224,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[17] = "|cFFAAFFAA該功能直到 第1階段 的 TBC Classic 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({

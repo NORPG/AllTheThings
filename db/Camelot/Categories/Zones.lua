@@ -4539,6 +4539,8 @@ s(157908,4786,{f=4,isLimited=1,loc=45,lvl=15})}}),
 n(3490,{coords={
 [1413]={{51.4,30.2}}},r=1,g={
 r(7255,{b=1,isLimited=1,itemID=6053,learnedAt=130,requireSkill=171,skillID=2937})}}),
+n(3491,{coords={
+[1413]={{62.2,37.4}}},sym={{"select","itemID",2025,2029,2024,2030,2028,2208,2026,2027}}}),
 n(248202,{awp=16001,coords={
 [1413]={{49.6,29.6}}},r=1,g={
 r(1257372,{b=1,cost={{"c",3402,30}},itemID=253894,learnedAt=85,minReputation={2587,0},requireSkill=197,skillID=2948}),
@@ -6565,7 +6567,6 @@ i(20768,{crs={7092,7093,14345},sym={{"select","itemID",20769}}}),
 r(19078,{coords={
 [1448]={{61.6,7.4},{62.6,12.6}}},crs={7158},itemID=15752,learnedAt=280,requireSkill=10658,skillID=2945}),
 r(19065,{crs={7112},itemID=15739,learnedAt=270,requireSkill=165,skillID=2945}),
-i(15754,{crs={7156,7158}}),
 r(19071,{crs={7107},itemID=15744,learnedAt=275,requireSkill=165,skillID=2945}),
 r(17571,{coords={
 [1448]={{33.8,66.6},{38.6,69.6}}},crs={7106},itemID=13491,learnedAt=295,requireSkill=171,skillID=2937})})}}),
@@ -7739,9 +7740,6 @@ i(20432,{cost={{"i",4625,5},{"i",20520,1},{"i",20531,1}}}),
 i(20433,{cost={{"i",7069,5},{"i",20520,1},{"i",20532,1}}}),
 i(20436,{cost={{"i",4791,5},{"i",20520,1},{"i",20535,1}}}),
 i(20469,{b=1,cost={{"i",20404,10}},description="This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",sourceQuests={8323,8324},g={
-r(24903,{itemID=20547,learnedAt=300,requireSkill=197,skillID=2948}),
-r(24902,{itemID=20548}),
-r(24901,{itemID=20546}),
 i(20527,{spellID=24887}),
 i(20518,{spellID=24874}),
 i(20526,{spellID=24885}),
@@ -7799,16 +7797,12 @@ n(15293,{coords={
 n(15174,{coords={
 [1451]={{51.8,39}}}}),
 n(15419,{coords={
-[1451]={{52,39.7}}},sym={{"select","itemID",20753,20752,20758,22307,6342}},g={
-r(27659,{itemID=22308,requireSkill=197})}}),
+[1451]={{52,39.7}}},sym={{"select","itemID",20753,20752,20758,22307,6342}}}),
 n(15175,{coords={
 [1451]={{48.8,37}}}}),
 n(15179,{coords={
-[1451]={{49.8,36.4}}},g={
-r(27724,{b=1,itemID=22310,minReputation={609,3000},requireSkill=197}),
-r(27725,{b=1,itemID=22312,minReputation={609,21000},requireSkill=197}),
-r(28480,{b=1,itemID=22774,minReputation={609,21000},requireSkill=197})}}),
-n(15176,{coords={
+[1451]={{49.8,36.4}}}}),
+n(15176,{awp=16001,coords={
 [1451]={{51.2,38.8}}},g={
 r(1297141,{b=1,itemID=275601,learnedAt=290,minReputation={609,3000},requireSkill=164,skillID=2938}),
 r(1297138,{b=1,itemID=275598,learnedAt=290,minReputation={609,3000},requireSkill=164,skillID=2938}),
@@ -8896,18 +8890,9 @@ s(163057,16768,{b=1,f=1,spellID=20631}),
 s(163058,16769,{b=1,f=23,lvl=47})}}),
 n(11557,{coords={
 [1448]={{65.6,2.8}}},g={
-r(27837,{b=1,itemID=22392,learnedAt=310,minReputation={576,3000},requireSkill=333,skillID=2940}),
-r(19068,{b=1,itemID=20253,learnedAt=270,minReputation={576,3000},requireSkill=10660,skillID=2945}),
-r(19080,{b=1,itemID=20254,learnedAt=280,minReputation={576,3000},requireSkill=10660,skillID=2945}),
-r(17561,{b=1,itemID=13484,learnedAt=275,minReputation={576,3000},requireSkill=171,skillID=2937}),
-r(23800,{b=1,itemID=19445,learnedAt=310,minReputation={576,9000},requireSkill=333,skillID=2940}),
-r(23703,{b=1,itemID=19326,learnedAt=285,minReputation={576,9000},requireSkill=165,skillID=2945}),
-r(23662,{b=1,itemID=19215,minReputation={576,9000},requireSkill=197}),
 r(1252367,{awp=16001,b=1,itemID=251470,learnedAt=320,minReputation={576,9000},requireSkill=164,skillID=2938}),
-r(23628,{b=1,itemID=19202,learnedAt=285,minReputation={576,9000},requireSkill=165,skillID=2945}),
 r(1252366,{awp=16001,b=1,itemID=251469,learnedAt=320,minReputation={576,9000},requireSkill=164,skillID=2938}),
-r(23704,{b=1,itemID=19327,learnedAt=315,minReputation={576,21000},requireSkill=165,skillID=2945}),
-r(23629,{b=1,itemID=19204,learnedAt=300,minReputation={576,21000},requireSkill=165,skillID=2945})}})})}}),
+r(23629,{b=1,itemID=19204,minReputation={576,21000},requireSkill=165})}})})}}),
 m(1449,{icon=236850,lore="Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",g={
 h(-12,{awp=16001,g={
 ach(854,{
@@ -17466,7 +17451,6 @@ i(18169,{b=1,description="You must have first completed 'Mantles of the Dawn' in
 i(18170,{b=1,description="You must have first completed 'Mantles of the Dawn' in order to purchase this.",minReputation={529,21000},sourceQuests={5504,5507,5513},spellID=22594}),
 i(18172,{b=1,description="You must have first completed 'Mantles of the Dawn' in order to purchase this.",minReputation={529,21000},sourceQuests={5504,5507,5513},spellID=22597}),
 i(18173,{b=1,description="You must have first completed 'Mantles of the Dawn' in order to purchase this.",minReputation={529,21000},sourceQuests={5504,5507,5513},spellID=22596}),
-r(23706,{b=1,itemID=19329,learnedAt=315,minReputation={529,21000},requireSkill=165,skillID=2945}),
 i(13810,{b=1,f=55,lvl=45,minReputation={529,21000},spellID=18124}),
 i(13813,{b=1,f=55,lvl=45,minReputation={529,21000},spellID=18140}),
 i(18182,{b=1,description="You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",minReputation={529,42000},sourceQuests={5517,5521,5524},spellID=22599})}})}),

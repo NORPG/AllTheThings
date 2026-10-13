@@ -38,8 +38,9 @@ root(ROOTS.Craftables, {
 	prof(COOKING, {
 		i(20452),	-- Smoked Desert Dumplings
 	}),
+	--[[
 	prof(FIRST_AID, {
-		--i(19440),	-- Powerful Anti-Venom
+		i(19440),	-- Powerful Anti-Venom
 	}),
 	prof(LEATHERWORKING, {
 		i(19048),	-- Heavy Timbermaw Boots
@@ -55,7 +56,7 @@ root(ROOTS.Craftables, {
 		n(ARMOR, {
 			filter(LEATHER, {
 				i(19052),	-- Dawn Treaders
-				--i(19058),	-- Golden Mantle of the Dawn
+				i(19058),	-- Golden Mantle of the Dawn
 				i(19149),	-- Lava Belt
 				i(19044),	-- Might of the Timbermaw
 				i(19049),	-- Timbermaw Brawlers
@@ -75,4 +76,5 @@ root(ROOTS.Craftables, {
 			i(19047),	-- Wisdom of the Timbermaw
 		}),
 	}),
+	--]]
 });

@@ -3,6 +3,7 @@
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added with the release of Phase 2 and Blackwing Lair.
 root(ROOTS.Craftables, {
+	--[[
 	prof(MINING, {
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(17771, {	-- Enchanted / Elementium Bar
@@ -15,4 +16,5 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}),
+	--]]
 });

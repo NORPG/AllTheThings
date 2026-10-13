@@ -46,6 +46,9 @@ i(0, 1249633);		-- Sulfuric Acid
 i(0, 1244648);		-- Superior Discolored Healing Potion
 i(0, 7841);			-- Swim Speed Potion
 i(0, 1249632);		-- Viridian Dye
+--- QUEST ---
+i(0, 1230564);		-- Mana Well
+i(0, 11452);		-- Restorative Potion
 --- ITEM ---
 i(250995, 1251749);	-- Caustic Smog Potion
 i(250996, 1251750);	-- Disorienting Smog Potion
@@ -146,9 +149,6 @@ i(2555, 2335);		-- Swiftness Potion
 i(13482, 17559);	-- Transmute: Air to Fire
 i(12958, 17187);	-- Transmute: Arcanite
 i(13489, 17566);	-- Transmute: Earth to Life
-i(13484, 17561);	-- Transmute: Earth to Water
-i(20761, 25146);	-- Transmute: Elemental Fire
-i(13483, 17560);	-- Transmute: Fire to Earth
 i(9304, 11479);		-- Transmute: Iron to Gold
 i(13488, 17565);	-- Transmute: Life to Earth
 i(9305, 11480);		-- Transmute: Mithril to Truesilver
@@ -157,9 +157,6 @@ i(13485, 17562);	-- Transmute: Water to Air
 i(13487, 17564);	-- Transmute: Water to Undeath
 i(3831, 3451);		-- Troll's Blood Elixir
 i(9294, 11458);		-- Wildvine Potion
---- QUEST ---
-i(0, 1230564);		-- Mana Well
-i(0, 11452);		-- Restorative Potion
 --[[
 --- UNKNOWN ---
 r(1250795),	-- Elixir of Spirit
@@ -196,9 +193,14 @@ i(274278, 1293560);	-- Flask of Natural Aggression
 i(274279, 1293561);	-- Flask of Natural Precision
 i(274280, 1293562);	-- Flask of Natural Swiftness
 --- UNRELEASED CONTENT ---
+-- BRD
+i(20761, 25146);	-- Transmute: Elemental Fire
+i(13483, 17560);	-- Transmute: Fire to Earth
+-- Timbermaw P3
+i(13484, 17561);	-- Transmute: Earth to Water
 -- MC
 i(18257, 22732);	-- Major Rejuvenation Potion
---ZG
+-- ZG
 i(20012, 24366);	-- Greater Dreamless Sleep Potion
 i(20011, 24365);	-- Mageblood Elixir
 i(20013, 24367);	-- Living Action Potion

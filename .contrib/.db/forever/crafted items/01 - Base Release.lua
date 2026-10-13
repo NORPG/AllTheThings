@@ -112,10 +112,8 @@ root(ROOTS.Craftables, {
 		}),
 		prof(ARMORSMITH, {
 			i(17014),	-- Dark Iron Bracers
-			i(17013),	-- Dark Iron Leggings
 			i(11604),	-- Dark Iron Plate
 			i(12628),	-- Demon Forged Breastplate
-			i(16989),	-- Fiery Chain Girdle
 			i(16988),	-- Fiery Chain Shoulders
 			i(12631),	-- Fiery Plate Gauntlets
 			i(12640),	-- Lionheart Helm
@@ -123,13 +121,19 @@ root(ROOTS.Craftables, {
 			i(7939),	-- Truesilver Breastplate
 			i(7938),	-- Truesilver Gauntlets
 			i(12633),	-- Whitesoul Helm
+			--[[BRD
+			i(16989),	-- Fiery Chain Girdle
+			i(17013),	-- Dark Iron Leggings
+			--]]
 		}),
 		prof(WEAPONSMITH, {
 			prof(MASTER_AXESMITH, {
 				i(12798),	-- Annihilator
 				i(12784),	-- Arcanite Reaper
-				i(17016),	-- Dark Iron Destroyer
 				i(12774),	-- Dawn's Edge
+				--[[BRD
+				i(17016),	-- Dark Iron Destroyer
+				--]]
 			}),
 			prof(MASTER_HAMMERSMITH, {
 				i(12776),	-- Enchanted Battlehammer
@@ -141,8 +145,10 @@ root(ROOTS.Craftables, {
 				i(12790),	-- Arcanite Champion
 				i(12777),	-- Blazing Rapier
 				i(12782),	-- Corruption
-				i(17015),	-- Dark Iron Reaver
 				i(12797),	-- Frostguard
+				--[[BRD
+				i(17015),	-- Dark Iron Reaver
+				--]]
 			}),
 			n(WEAPONS, {
 				i(7959),	-- Blight
@@ -2243,8 +2249,6 @@ root(ROOTS.Craftables, {
 		}),
 		prof(DRAGONSCALE_LEATHERWORKING, {
 			filter(MAIL, {
-				i(16984),	-- Black Dragonscale Boots
-				i(15050),	-- Black Dragonscale Breastplate
 				i(15052),	-- Black Dragonscale Leggings
 				i(15051),	-- Black Dragonscale Shoulders
 				i(15048),	-- Blue Dragonscale Breastplate
@@ -2255,7 +2259,11 @@ root(ROOTS.Craftables, {
 				i(15045),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046),	-- Green Dragonscale Leggings
-				i(15047),	-- Red Dragonscale Breastplate
+				i(15047),	-- Red Dragonscale Breastplate'
+				--[[BRD
+				i(15050),	-- Black Dragonscale Breastplate
+				i(16984),	-- Black Dragonscale Boots
+				--]]
 			}),
 		}),
 		prof(ELEMENTAL_LEATHERWORKING, {
@@ -2271,9 +2279,11 @@ root(ROOTS.Craftables, {
 				i(15053),	-- Volcanic Breastplate
 				i(15054),	-- Volcanic Leggings
 				i(15055),	-- Volcanic Shoulders
-				-- unsure
+				--[[BRD
 				i(16983),	-- Molten Helm
+				-- Ele Invasion
 				i(21278),	-- Stormshroud Gloves
+				--]]
 			}),
 			filter(MAIL, {
 				i(12641),	-- Invulnerable Mail
@@ -2295,11 +2305,13 @@ root(ROOTS.Craftables, {
 				i(15068),	-- Frostsaber Tunic
 				i(15066),	-- Ironfeather Breastplate
 				i(15067),	-- Ironfeather Shoulders
+				i(8345),	-- Wolfshead Helm
+				--[[BRD
+				i(16982),	-- Corehound Boots
+				-- Timbermaw
 				i(15064),	-- Warbear Harness
 				i(15065),	-- Warbear Woolies
-				i(8345),	-- Wolfshead Helm
-
-				i(16982),	-- Corehound Boots ??? maybe
+				--]]
 			}),
 			filter(MAIL, {
 				i(12636),	-- Helm of the Great Chief
@@ -3786,9 +3798,9 @@ root(ROOTS.Craftables, {
 				i(14130),	-- Wizardweave Turban
 				i(2583),	-- Woolen Boots
 			}),
-			-- maybe
-			i(16980),	-- Flarecore Mantle
+			-- BRD
 			i(16979),	-- Flarecore Gloves
+			i(16980),	-- Flarecore Mantle
 		}),
 		filter(BAGS, {
 			i(5765),	-- Black Silk Pack

@@ -6,6 +6,7 @@ root(ROOTS.Craftables, {
 	prof(COOKING, {
 		i(18254),	-- Runn Tum Tuber Surprise
 	}),
+	--[[
 	prof(ENGINEERING, {
 		filter(TRINKET_F, {
 			i(18637),	-- Major Recombobulator
@@ -47,4 +48,5 @@ root(ROOTS.Craftables, {
 			i(18258),	-- Gordok Ogre Suit
 		}),
 	}),
+	--]]
 });

@@ -83,6 +83,30 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
+			cl(PALADIN, {
+				i(273914),	-- Justice Epaulets
+				i(273909),	-- Justice Gauntlets
+				i(273913),	-- Justice Gloves
+				i(273911),	-- Justice Greaves
+				i(273917),	-- Justice Handguards
+				i(273908),	-- Justice Leggings
+				i(273916),	-- Justice Legguards
+				i(273912),	-- Justice Legplates
+				i(273918),	-- Justice Pauldrons
+				i(273919),	-- Justice Sabatons
+				i(273910),	-- Justice Spaulders
+				i(273915),	-- Justice Treads
+			}),
+			cl(WARRIOR, {
+				i(273945),	-- Gauntlets of Glory
+				i(273947),	-- Greaves of Glory
+				i(273949),	-- Handguards of Glory
+				i(273948),	-- Legguards of Glory
+				i(273944),	-- Legplates of Glory
+				i(273946),	-- Shoulders of Glory
+				i(273951),	-- Sabatons of Glory
+				i(273950),	-- Pauldrons of Glory
+			}),
 			i(250506),	-- Acolyte's Boots
 			i(250516),	-- Acolyte's Chain Belt
 			i(250501),	-- Acolyte's Chain Helm
@@ -122,13 +146,11 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250522),	-- Crusader's Silvered Chain Shirt
 			i(250595),	-- Enriched Thorium Breastplate
 			i(250597),	-- Enriched Thorium Helm
-			i(273945),	-- Gauntlets of Glory
 			i(250620),	-- Gemmed Copper Boots
 			i(250482),	-- Glowing Copper Boots
 			i(275622),	-- Goregasher Grips
 			i(275624),	-- Goregasher Stompers
 			i(275623),	-- Goregasher Support
-			i(273947),	-- Greaves of Glory
 			i(250504),	-- Guard's Boots
 			i(250514),	-- Guard's Chain Belt
 			i(250499),	-- Guard's Chain Helm
@@ -137,7 +159,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250529),	-- Guard's Silvered Chain Helm
 			i(250524),	-- Guard's Silvered Chain Leggings
 			i(250519),	-- Guard's Silvered Chain Shirt
-			i(273949),	-- Handguards of Glory
 			i(250538),	-- Hard Gold Gauntlet
 			i(250550),	-- Justicar's Boots
 			i(250570),	-- Justicar's Gauntlet
@@ -145,27 +166,12 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250565),	-- Justicar's Sabatons
 			i(250575),	-- Justicar's Waistguard
 			i(250585),	-- Justicar's Wristguards
-			i(273914),	-- Justice Epaulets
-			i(273909),	-- Justice Gauntlets
-			i(273913),	-- Justice Gloves
-			i(273911),	-- Justice Greaves
-			i(273917),	-- Justice Handguards
-			i(273908),	-- Justice Leggings
-			i(273916),	-- Justice Legguards
-			i(273912),	-- Justice Legplates
-			i(273918),	-- Justice Pauldrons
-			i(273919),	-- Justice Sabatons
-			i(273910),	-- Justice Spaulders
-			i(273915),	-- Justice Treads
-			i(273948),	-- Legguards of Glory
-			i(273944),	-- Legplates of Glory
 			i(250546),	-- Officer's Boots
 			i(250566),	-- Officer's Gauntlet
 			i(250576),	-- Officer's Pauldrons
 			i(250561),	-- Officer's Sabatons
 			i(250571),	-- Officer's Waistguard
 			i(250581),	-- Officer's Wristguards
-			i(273950),	-- Pauldrons of Glory
 			i(250549),	-- Prefect's Boots
 			i(250569),	-- Prefect's Gauntlet
 			i(250579),	-- Prefect's Pauldrons
@@ -181,7 +187,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250530),	-- Protector's Silvered Chain Helm
 			i(250525),	-- Protector's Silvered Chain Leggings
 			i(250520),	-- Protector's Silvered Chain Shirt
-			i(273951),	-- Sabatons of Glory
 			i(250547),	-- Sentinel's Boots
 			i(250567),	-- Sentinel's Gauntlet
 			i(250577),	-- Sentinel's Pauldrons
@@ -190,7 +195,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250582),	-- Sentinel's Wristguards
 			i(250543),	-- Shining Mithril Helm
 			i(250544),	-- Shining Mithril Pants
-			i(273946),	-- Shoulders of Glory
 			i(250483),	-- Sterling Silver Boots
 			i(250487),	-- Sterling Silver Breastplate
 			i(250485),	-- Sterling Silver Gauntlet
@@ -454,6 +458,50 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
+			cl(DRUID, {
+				i(273895),	-- Grovekeeper Boots
+				i(273897),	-- Grovekeeper Gauntlets
+				i(273885),	-- Grovekeeper Grips
+				i(273893),	-- Grovekeeper Handguards
+				i(273888),	-- Grovekeeper Kilt
+				i(273896),	-- Grovekeeper Leggings
+				i(273892),	-- Grovekeeper Legguards
+				i(273890),	-- Grovekeeper Mantle
+				i(273889),	-- Grovekeeper Mitts
+				i(273894),	-- Grovekeeper Pauldrons
+				i(273891),	-- Grovekeeper Sandals
+				i(273886),	-- Grovekeeper Shoulderpads
+				i(273898),	-- Grovekeeper Spaulders
+				i(273887),	-- Grovekeeper Stompers
+				i(273899),	-- Grovekeeper Treads
+				i(273884),	-- Grovekeeper Trousers
+			}),
+			cl(HUNTER, {
+				i(273901),	-- Wildstalker's Gauntlets
+				i(273903),	-- Wildstalker's Greaves
+				i(273900),	-- Wildstalker's Legguards
+				i(273902),	-- Wildstalker's Spaulders
+			}),
+			cl(ROGUE, {
+				i(273931),	-- Grimstitch Boots
+				i(273929),	-- Grimstitch Gloves
+				i(273928),	-- Grimstitch Pants
+				i(273930),	-- Grimstitch Spaulders
+			}),
+			cl(SHAMAN, {
+				i(276541),	-- Spiritcaller Boots
+				i(273938),	-- Spiritcaller Epaulets
+				i(273937),	-- Spiritcaller Gauntlets
+				i(276539),	-- Spiritcaller Gloves
+				i(273939),	-- Spiritcaller Greaves
+				i(273933),	-- Spiritcaller Grips
+				i(276538),	-- Spiritcaller Kilt
+				i(273932),	-- Spiritcaller Leggings
+				i(276540),	-- Spiritcaller Mantle
+				i(273936),	-- Spiritcaller Pants
+				i(273934),	-- Spiritcaller Spaulders
+				i(273935),	-- Spiritcaller Treads
+			}),
 			filter(LEATHER, {
 					i(277025),	-- Azure Gustwoven Belt
 					i(277027),	-- Azure Gustwoven Boots
@@ -499,26 +547,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 					i(252447),	-- Defender's Leather Hood
 					i(252457),	-- Defender's Leather Kilt
 					i(252450),	-- Defender's Leather Tunic
-					i(273931),	-- Grimstitch Boots
-					i(273929),	-- Grimstitch Gloves
-					i(273928),	-- Grimstitch Pants
-					i(273930),	-- Grimstitch Spaulders
-					i(273895),	-- Grovekeeper Boots
-					i(273897),	-- Grovekeeper Gauntlets
-					i(273885),	-- Grovekeeper Grips
-					i(273893),	-- Grovekeeper Handguards
-					i(273888),	-- Grovekeeper Kilt
-					i(273896),	-- Grovekeeper Leggings
-					i(273892),	-- Grovekeeper Legguards
-					i(273890),	-- Grovekeeper Mantle
-					i(273889),	-- Grovekeeper Mitts
-					i(273894),	-- Grovekeeper Pauldrons
-					i(273891),	-- Grovekeeper Sandals
-					i(273886),	-- Grovekeeper Shoulderpads
-					i(273898),	-- Grovekeeper Spaulders
-					i(273887),	-- Grovekeeper Stompers
-					i(273899),	-- Grovekeeper Treads
-					i(273884),	-- Grovekeeper Trousers
 					i(252449),	-- Hillman's Leather Boots
 					i(252472),	-- Mender's Leather Boots
 					i(252543),	-- Mender's Leather Bracers
@@ -618,7 +646,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 					i(252479),	-- Wicked Leather Boots
 					i(252556),	-- Wicked Leather Shoulder
 					i(252499),	-- Wisdom's Leather Gloves
-
 			}),
 			filter(MAIL, {
 				i(252591),	-- Mender's Mail Belt
@@ -633,26 +660,10 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252571),	-- Skycaller's Mail Bracers
 				i(252577),	-- Skycaller's Mail Sabatons
 				i(252567),	-- Skycaller's Mail Shoulder
-				i(276541),	-- Spiritcaller Boots
-				i(273938),	-- Spiritcaller Epaulets
-				i(273937),	-- Spiritcaller Gauntlets
-				i(276539),	-- Spiritcaller Gloves
-				i(273939),	-- Spiritcaller Greaves
-				i(273933),	-- Spiritcaller Grips
-				i(276538),	-- Spiritcaller Kilt
-				i(273932),	-- Spiritcaller Leggings
-				i(276540),	-- Spiritcaller Mantle
-				i(273936),	-- Spiritcaller Pants
-				i(273934),	-- Spiritcaller Spaulders
-				i(273935),	-- Spiritcaller Treads
 				i(252588),	-- Stalker's Mail Belt
 				i(252570),	-- Stalker's Mail Bracers
 				i(252576),	-- Stalker's Mail Sabatons
 				i(252566),	-- Stalker's Mail Shoulder
-				i(273901),	-- Wildstalker's Gauntlets
-				i(273903),	-- Wildstalker's Greaves
-				i(273900),	-- Wildstalker's Legguards
-				i(273902),	-- Wildstalker's Spaulders
 				-- Unknown
 				i(252605),	-- Black Dragonscale Helm
 				i(252604),	-- Blue Dragonscale Helm

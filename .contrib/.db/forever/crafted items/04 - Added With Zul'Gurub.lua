@@ -34,7 +34,6 @@ root(ROOTS.Craftables, {
 			i(19998),	-- Bloodvine Lens
 		}),
 	}),
-		--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {
@@ -53,4 +52,5 @@ root(ROOTS.Craftables, {
 			i(19682),	-- Bloodvine Vest
 		}),
 	}),
+	--]]
 });

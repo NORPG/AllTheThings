@@ -3472,6 +3472,7 @@ root(ROOTS.WorldDrops, {
 		i(1973),	-- Orb of Deception (TOY!)
 	}),
 	filter(RECIPES, {
+		-- Sort away Blueprints to dungeons
 		prof(ALCHEMY, {
 			i(273085, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Fermenter (RECIPE!)
 			i(13518),	-- Flask of Petrification (RECIPE!)
@@ -3661,7 +3662,7 @@ root(ROOTS.WorldDrops, {
 			i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
-			i(15742),	-- Pattern: Warbear Harness (RECIPE!)
+			--i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
 			i(15757),	-- Pattern: Wicked Leather Pants (RECIPE!)
 			i(12691),	-- Pattern: Wildthorn Mail (RECIPE!)
@@ -3722,6 +3723,8 @@ root(ROOTS.WorldDrops, {
 			i(6391),	-- Pattern: Stylish Green Shirt (RECIPE!)
 			i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
+
+			--[[Sort out later to dungeons?]]
 			i(253976),	-- Pattern: Filigreed Pristine Circlet
 			i(253978),	-- Pattern: Filigreed Silky Circlet
 			i(253980),	-- Pattern: Filigreed Flame Circlet

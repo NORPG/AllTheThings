@@ -47,5 +47,6 @@ r(1259345),	-- Powerful Poultice
 i(273118),	-- Blueprint: Plague Doctor's Laboratory
 r(1263001),	-- Plague Doctor's Laboratory
 --- UNRELEASED CONTENT ---
+-- Argent Dawn P3
 i(19442, 23787);	-- Powerful Anti-Venom
 --]]

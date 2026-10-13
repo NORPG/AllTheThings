@@ -418,8 +418,6 @@ r(1306539),	-- Azerothium Legplates
 i(279314),	-- Plans: Azerothium Legplates
 r(1306537),	-- Depleted Thorium Sabatons
 i(279312),	-- Plans: Depleted Thorium Sabatons
---]]
---[[
 --- UNRELEASED CONTENT ---
 -- MC
 i(18264, 22757);	-- Elemental Sharpening Stone
@@ -428,60 +426,60 @@ i(18592, 21161);	-- Sulfuron Hammer
 i(19776, 24136);	-- Bloodsoul Breastplate
 i(19778, 24138);	-- Bloodsoul Gauntlets
 i(19777, 24137);	-- Bloodsoul Shoulders
-i(20553, 24912);	-- Darkrune Gauntlets
 i(19779, 24139);	-- Darksoul Breastplate
 i(19780, 24140);	-- Darksoul Leggings
 i(19781, 24141);	-- Darksoul Shoulders
--- AQ
-i(22220, 27589);	-- Black Grasp of the Destroyer
-i(20554, 24914);	-- Darkrune Breastplate
-i(20555, 24913);	-- Darkrune Helm
-i(22209, 27585);	-- Heavy Obsidian Belt
-i(22219, 27586);	-- Jagged Obsidian Shield
-i(22214, 27588);	-- Light Obsidian Belt
-i(22221, 27590);	-- Obsidian Mail Tunic
-i(22222, 27587);	-- Thick Obsidian Breastplate
--- P3
+-- Argent Dawn P3
 i(19203, 23632);	-- Girdle of the Dawn
 i(19205, 23633);	-- Gloves of the Dawn
+-- Silithus P4
+i(20554, 24914);	-- Darkrune Breastplate
+i(20555, 24913);	-- Darkrune Helm
+i(20553, 24912);	-- Darkrune Gauntlets
+-- P5
+i(22209, 27585);	-- Heavy Obsidian Belt
+i(22214, 27588);	-- Light Obsidian Belt
+-- AQ
+i(22220, 27589);	-- Black Grasp of the Destroyer
+i(22219, 27586);	-- Jagged Obsidian Shield
+i(22221, 27590);	-- Obsidian Mail Tunic
+i(22222, 27587);	-- Thick Obsidian Breastplate
+-- Silithus P6
+i(22768, 28463);	-- Ironvine Belt
+i(22766, 28461);	-- Ironvine Breastplate
+i(22767, 28462);	-- Ironvine Gloves
 -- NAXX
 i(0, 28244);		-- Icebane Bracers
 i(0, 28242);		-- Icebane Breastplate
 i(0, 28243);		-- Icebane Gauntlets
-i(22768, 28463);	-- Ironvine Belt
-i(22766, 28461);	-- Ironvine Breastplate
-i(22767, 28462);	-- Ironvine Gloves
 --]]
 --- ARMORSMITH ---
 i(0, ARMORSMITH, nil, ARMORSMITH);	-- Armorsmith
 i(0, 9974, nil, ARMORSMITH);		-- Truesilver Breastplate
 i(0, 9954, nil, ARMORSMITH);		-- Truesilver Gauntlets
-i(17051, 20874, nil, ARMORSMITH);	-- Dark Iron Bracers
-i(17052, 20876, nil, ARMORSMITH);	-- Dark Iron Leggings
 i(11612, 15296, nil, ARMORSMITH);	-- Dark Iron Plate
 i(12696, 16667, nil, ARMORSMITH);	-- Demon Forged Breastplate
-
-i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
-i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
 i(12699, 16655, nil, ARMORSMITH);	-- Fiery Plate Gauntlets
 i(12717, 16729, nil, ARMORSMITH);	-- Lionheart Helm
 i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
 i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
 --[[
 --- UNRELEASED CONTENT ---
-
---- BWL/DM
+-- BRD
+i(17051, 20874, nil, ARMORSMITH);	-- Dark Iron Bracers
+i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
+i(17052, 20876, nil, ARMORSMITH);	-- Dark Iron Leggings
+i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
+--- DM
 i(12727, 16745, nil, ARMORSMITH);	-- Enchanted Thorium Breastplate
 i(12725, 16742, nil, ARMORSMITH);	-- Enchanted Thorium Helm
 i(12726, 16744, nil, ARMORSMITH);	-- Enchanted Thorium Leggings
-
-
-i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
+-- BRD P3
 i(19206, 23636, nil, ARMORSMITH);	-- Dark Iron Helm
-
-
--- P4
+i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
+-- BRD P4
 i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
+-- WD P4
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
 --]]
 --- WEAPONSMITH ---
@@ -493,10 +491,9 @@ i(0, 10015, nil, WEAPONSMITH);		-- Truesilver Champion
 i(11610, 15292, nil, WEAPONSMITH);	-- Dark Iron Pulverizer
 i(11611, 15294, nil, WEAPONSMITH);	-- Dark Iron Sunderer
 i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
-
 --[[
 --- UNRELEASED CONTENT ---
---- BWL
+--- BRD P3
 i(19208, 23638, nil, WEAPONSMITH);	-- Black Amnesty
 i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 --]]
@@ -504,11 +501,13 @@ i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 i(0, MASTER_AXESMITH, nil, MASTER_AXESMITH);	-- Master Axesmith
 i(12835, 16991, nil, MASTER_AXESMITH);	-- Annihilator
 i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reape
-i(17060, 20897, nil, MASTER_AXESMITH);	-- Dark Iron Destroyer
+
 i(12821, 16970, nil, MASTER_AXESMITH);	-- Dawn's Edger
 --[[
 --- UNRELEASED CONTENT ---
--- BWL
+-- BRD
+i(17060, 20897, nil, MASTER_AXESMITH);	-- Dark Iron Destroyer
+-- BRD P3
 i(19212, 23653, nil, MASTER_AXESMITH);	-- Nightfall
 --]]
 --- HAMMERSMITH ---
@@ -519,9 +518,9 @@ i(12837, 16993, nil, MASTER_HAMMERSMITH);	-- Masterwork Stormhammer
 i(12827, 16983, nil, MASTER_HAMMERSMITH);	-- Serenity
 --[[
 --- UNRELEASED CONTENT ---
--- BWL
+-- BRD P3
 i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
--- Later
+-- WD P4
 i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
 --]]
 --- SWORDSMITH ---
@@ -529,12 +528,13 @@ i(0, MASTER_SWORDSMITH, nil, MASTER_SWORDSMITH);		-- Master Swordsmith
 i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcani
 i(12825, 16978, nil, MASTER_SWORDSMITH);	-- Blazing Rapier
 i(12830, 16985, nil, MASTER_SWORDSMITH);	-- Corruption
-i(17059, 20890, nil, MASTER_SWORDSMITH);	-- Dark Iron Reaver
 i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguardte Champion
 --[[
 --- UNRELEASED CONTENT ---
--- BWL
+-- BRD
+i(17059, 20890, nil, MASTER_SWORDSMITH);	-- Dark Iron Reaver
+-- BRD P3
 i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard
--- Later?
+-- WD P4
 i(22389, 27832, nil, MASTER_SWORDSMITH);	-- Sageblade
 --]]

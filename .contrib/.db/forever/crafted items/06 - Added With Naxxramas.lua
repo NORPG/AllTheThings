@@ -11,7 +11,6 @@ root(ROOTS.Craftables, {
 			i(22670),	-- Icebane Gauntlets
 		}),
 	}),
-	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {
@@ -34,4 +33,5 @@ root(ROOTS.Craftables, {
 			i(22655),	-- Glacial Wrists
 		}),
 	}),
+	--]]
 });

@@ -11,7 +11,6 @@ root(ROOTS.Craftables, {
 			i(22763),	-- Ironvine Gloves
 		}),
 	}),
-	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {
@@ -29,4 +28,5 @@ root(ROOTS.Craftables, {
 			i(22756),	-- Sylvan Vest
 		}),
 	}),
+	--]]
 });

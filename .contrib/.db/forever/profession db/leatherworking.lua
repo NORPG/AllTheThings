@@ -81,6 +81,9 @@ i(0, 10511);		-- Turtle Scale Breastplate
 i(0, 10552);		-- Turtle Scale Helm
 i(0, 10556);		-- Turtle Scale Leggings
 i(0, 1255088);		-- Wisdom's Leather Helm
+--- QUEST ---
+i(0, 1229432);	-- Camp Tent
+i(0, 19093);	-- Onyxia Scale Cloak
 --- ITEM ---
 i(276961, 1301454);	-- Azure Gustwoven Belt
 i(276963, 1301456);	-- Azure Gustwoven Boots
@@ -334,61 +337,6 @@ i(252782, 1255125);	-- Wisdom's Leather Gloves
 i(252803, 1255104);	-- Wisdom's Leather Hood
 i(252825, 1255082);	-- Wisdom's Leather Leggings
 i(252810, 1255097);	-- Wisdom's Leather Tunic
---- QUEST ---
-i(0, 1229432);	-- Camp Tent
-i(0, 19093);	-- Onyxia Scale Cloak
-
--- Dire Maul
-i(18514, 22921);	-- Girdle of Insight
-i(18515, 22922);	-- Mongoose Boots
-i(18516, 22923);	-- Swift Flight Bracers
--- p2?
-
--- p3?
-i(19327, 23704);	-- Timbermaw Brawlers
-i(19202, 23628);	-- Heavy Timbermaw Belt
-i(19326, 23703);	-- Might of the Timbermaw
-i(19330, 23707);	-- Lava Belt
-i(19204, 23629);	-- Heavy Timbermaw Boots
--- P6
-i(22771, 28472);	-- Bramblewood Helm
--- p5
-i(20511, 24851);	-- Sandstalker Breastplate
-i(20508, 24848);	-- Spitfire Breastplate
-i(20509, 24849);	-- Sandstalker Bracers
-i(20506, 24846);	-- Spitfire Bracers
-i(20507, 24847);	-- Spitfire Gauntlets
-i(20510, 24850);	-- Sandstalker Gauntlets
-i(22769, 28474);	-- Bramblewood Belt
-i(22770, 28473);	-- Bramblewood Boots
--- p3
-i(19329, 23706);	-- Golden Mantle of the Dawn
-i(19328, 23705);	-- Dawn Treaders
--- p2?
-
-
--- ZULGURUB
-i(19773, 24125);	-- Blood Tiger Shoulders
-i(19772, 24124);	-- Blood Tiger Breastplate
-i(19769, 24121);	-- Primal Batskin Jerkin
-i(19771, 24123);	-- Primal Batskin Bracers
-i(19770, 24122);	-- Primal Batskin Gloves
--- naxx
-i(0, 28222);		-- Icy Scale Breastplate
-i(22696, 0);		-- Icy Scale Breastplate
-i(0, 28219);		-- Polar Tunic
-i(22692, 0);		-- Polar Tunic
-i(0, 28224);		-- Icy Scale Bracers
-i(22698, 0);		-- Icy Scale Bracers
-i(0, 28221);		-- Polar Bracers
-i(22695, 0);		-- Polar Bracers
-i(0, 28220);		-- Polar Gloves
-i(22694, 0);		-- Polar Gloves
-i(22697, 0);		-- Icy Scale Gauntlets
-i(0, 28223);		-- Icy Scale Gauntlets
-
--- Mc
-i(18252, 22727);	-- Core Armor Kit
 --- UNKNOWN ---
 --[[
 r(1254968),	-- Black Dragonscale Helm
@@ -553,97 +501,137 @@ i(279304),	-- Pattern: Eternity Pauldrons
 i(279306),	-- Pattern: Mourning Handguards
 i(279305),	-- Pattern: Tranquil Wristguards
 r(1306530),	-- Tranquil Wristguards
-
 r(1263079),	-- Sewing Machine
 i(273121),	-- Blueprint: Sewing Machine
+--- UNRELEASED CONTENT ---
+-- Dire Maul
+i(0, 22815);		-- Gordok Ogre Suit
+i(18514, 22921);	-- Girdle of Insight
+i(18515, 22922);	-- Mongoose Boots
+i(18516, 22923);	-- Swift Flight Bracers
+-- BRD P3
+i(19330, 23707);	-- Lava Belt
+-- Argent Dawn P3
+i(19328, 23705);	-- Dawn Treaders
+i(19329, 23706);	-- Golden Mantle of the Dawn
+-- Timbermaw P3
+i(19327, 23704);	-- Timbermaw Brawlers
+i(19202, 23628);	-- Heavy Timbermaw Belt
+i(19326, 23703);	-- Might of the Timbermaw
+i(19204, 23629);	-- Heavy Timbermaw Boots
+-- Silithus P4
+i(20511, 24851);	-- Sandstalker Breastplate
+i(20508, 24848);	-- Spitfire Breastplate
+i(20509, 24849);	-- Sandstalker Bracers
+i(20506, 24846);	-- Spitfire Bracers
+i(20507, 24847);	-- Spitfire Gauntlets
+i(20510, 24850);	-- Sandstalker Gauntlets
+-- Silithus P6
+i(22771, 28472);	-- Bramblewood Helm
+i(22769, 28474);	-- Bramblewood Belt
+i(22770, 28473);	-- Bramblewood Boots
+-- ZULGURUB
+i(19773, 24125);	-- Blood Tiger Shoulders
+i(19772, 24124);	-- Blood Tiger Breastplate
+i(19769, 24121);	-- Primal Batskin Jerkin
+i(19771, 24123);	-- Primal Batskin Bracers
+i(19770, 24122);	-- Primal Batskin Gloves
+-- naxx
+i(0, 28222);		-- Icy Scale Breastplate
+i(22696, 0);		-- Icy Scale Breastplate
+i(0, 28219);		-- Polar Tunic
+i(22692, 0);		-- Polar Tunic
+i(0, 28224);		-- Icy Scale Bracers
+i(22698, 0);		-- Icy Scale Bracers
+i(0, 28221);		-- Polar Bracers
+i(22695, 0);		-- Polar Bracers
+i(0, 28220);		-- Polar Gloves
+i(22694, 0);		-- Polar Gloves
+i(22697, 0);		-- Icy Scale Gauntlets
+i(0, 28223);		-- Icy Scale Gauntlets
+-- MC
+i(18252, 22727);	-- Core Armor Kit
 --]]
-
-
-
-
-
-
-
 --- DRAGONSCALE ---
 i(0, DRAGONSCALE_LEATHERWORKING, nil, DRAGONSCALE_LEATHERWORKING);	-- Dragonscale Leatherworking
-i(0, 10619, nil, DRAGONSCALE_LEATHERWORKING);	-- Dragonscale Gauntlets
-i(0, 24655, nil, DRAGONSCALE_LEATHERWORKING);	-- Green Dragonscale Gauntlets
 i(0, 24654, nil, DRAGONSCALE_LEATHERWORKING);	-- Blue Dragonscale Leggings
 i(0, 10650, nil, DRAGONSCALE_LEATHERWORKING);	-- Dragonscale Breastplate
+i(0, 10619, nil, DRAGONSCALE_LEATHERWORKING);	-- Dragonscale Gauntlets
+i(0, 24655, nil, DRAGONSCALE_LEATHERWORKING);	-- Green Dragonscale Gauntlets
+i(15781, 19107, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Leggings
 i(15770, 19094, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Shoulders
+i(15751, 19077, nil, DRAGONSCALE_LEATHERWORKING);	-- Blue Dragonscale Breastplate
 i(15763, 19089, nil, DRAGONSCALE_LEATHERWORKING);	-- Blue Dragonscale Shoulders
 i(15726, 19050, nil, DRAGONSCALE_LEATHERWORKING);	-- Green Dragonscale Breastplate
-i(15751, 19077, nil, DRAGONSCALE_LEATHERWORKING);	-- Blue Dragonscale Breastplate
-i(15759, 19085, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Breastplate
-i(15730, 19054, nil, DRAGONSCALE_LEATHERWORKING);	-- Red Dragonscale Breastplate
 i(15733, 19060, nil, DRAGONSCALE_LEATHERWORKING);	-- Green Dragonscale Leggings
-i(15781, 19107, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Leggings
+i(15730, 19054, nil, DRAGONSCALE_LEATHERWORKING);	-- Red Dragonscale Breastplate
+--[[
+--- UNRELEASED CONTENT ---
 -- Dire Maul
 i(18517, 22926, nil, DRAGONSCALE_LEATHERWORKING);	-- Chromatic Cloak
-
--- maybe?
-
+-- BRD
 i(17025, 20855, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Boots
--- p5
-i(20382, 24703, nil, DRAGONSCALE_LEATHERWORKING);	-- Dreamscale Breastplate
--- p3
+i(15759, 19085, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Breastplate
+-- BRD P3
 i(19331, 23708, nil, DRAGONSCALE_LEATHERWORKING);	-- Chromatic Gauntlets
-
-
+-- Silithus P4
+i(20382, 24703, nil, DRAGONSCALE_LEATHERWORKING);	-- Dreamscale Breastplate
+--]]
 --- ELEMENTAL ---
 i(0, ELEMENTAL_LEATHERWORKING, nil, ELEMENTAL_LEATHERWORKING);	-- Elemental Leatherworking
-i(0, 10632, nil, ELEMENTAL_LEATHERWORKING);	-- Helm of Fire
 i(0, 10630, nil, ELEMENTAL_LEATHERWORKING);	-- Gauntlets of the Sea
-i(15734, 19061, nil, ELEMENTAL_LEATHERWORKING);	-- Living Shoulders
-i(15764, 19090, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Shoulders
-i(15775, 19101, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Shoulders
-i(15753, 19079, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Armor
-i(15749, 19076, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Breastplate
-i(15771, 19095, nil, ELEMENTAL_LEATHERWORKING);	-- Living Breastplate
+i(0, 10632, nil, ELEMENTAL_LEATHERWORKING);	-- Helm of Fire
 i(12728, 16746, nil, ELEMENTAL_LEATHERWORKING);	-- Invulnerable Mail
-i(12703, 16661, nil, ELEMENTAL_LEATHERWORKING);	-- Storm Gauntlets
-i(15732, 19059, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Leggings
-i(15741, 19067, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Pants
+i(15771, 19095, nil, ELEMENTAL_LEATHERWORKING);	-- Living Breastplate
 i(15752, 19078, nil, ELEMENTAL_LEATHERWORKING);	-- Living Leggings
+i(15734, 19061, nil, ELEMENTAL_LEATHERWORKING);	-- Living Shoulders
+i(12703, 16661, nil, ELEMENTAL_LEATHERWORKING);	-- Storm Gauntlets
+i(15753, 19079, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Armor
+i(15741, 19067, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Pants
+i(15764, 19090, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Shoulders
+i(15749, 19076, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Breastplate
+i(15732, 19059, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Leggings
+i(15775, 19101, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Shoulders
+--[[
+--- UNRELEASED CONTENT ---
 -- Dire Maul
 i(18519, 22928, nil, ELEMENTAL_LEATHERWORKING);	-- Shifting Cloak
--- unsure
+-- BRD
 i(17023, 20854, nil, ELEMENTAL_LEATHERWORKING);	-- Molten Helm
-
-i(21548, 26279, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Gloves
--- bwl
+-- BRD P3
 i(19333, 23710, nil, ELEMENTAL_LEATHERWORKING);	-- Molten Belt
-
+-- Elemental Invasion
+i(21548, 26279, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Gloves
+--]]
 
 --- TRIBAL ---
 i(0, TRIBAL_LEATHERWORKING, nil, TRIBAL_LEATHERWORKING);	-- Tribal Leatherworking
-i(0, 10621, nil, TRIBAL_LEATHERWORKING);	-- Wolfshead Helm
 i(0, 10647, nil, TRIBAL_LEATHERWORKING);	-- Feathered Breastplate
+i(0, 10621, nil, TRIBAL_LEATHERWORKING);	-- Wolfshead Helm
+i(15737, 19063, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Boots
+i(15729, 19053, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Gloves
+i(15746, 19073, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Leggings
+i(15755, 19081, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Vest
+i(15758, 19084, nil, TRIBAL_LEATHERWORKING);	-- Devilsaur Gauntlets
+i(15772, 19097, nil, TRIBAL_LEATHERWORKING);	-- Devilsaur Leggings
+i(15740, 19066, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Boots
+i(15761, 19087, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Gloves
+i(15747, 19074, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Leggings
+i(15779, 19104, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Tunic
+i(12716, 16728, nil, TRIBAL_LEATHERWORKING);	-- Helm of the Great Chief
+i(15760, 19086, nil, TRIBAL_LEATHERWORKING);	-- Ironfeather Breastplate
 i(15735, 19062, nil, TRIBAL_LEATHERWORKING);	-- Ironfeather Shoulders
 i(12691, 16650, nil, TRIBAL_LEATHERWORKING);	-- Wildthorn Mail
-i(12716, 16728, nil, TRIBAL_LEATHERWORKING);	-- Helm of the Great Chief
-i(15742, 19068, nil, TRIBAL_LEATHERWORKING);	-- Warbear Harness
-i(20253, 19068, nil, TRIBAL_LEATHERWORKING);	-- Warbear Harness
-i(15755, 19081, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Vest
-i(15760, 19086, nil, TRIBAL_LEATHERWORKING);	-- Ironfeather Breastplate
-i(15779, 19104, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Tunic
-i(15729, 19053, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Gloves
-i(15758, 19084, nil, TRIBAL_LEATHERWORKING);	-- Devilsaur Gauntlets
-i(15761, 19087, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Gloves
-i(15737, 19063, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Boots
-i(15740, 19066, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Boots
-i(15746, 19073, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Leggings
-i(15747, 19074, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Leggings
-i(20254, 19080, nil, TRIBAL_LEATHERWORKING);	-- Warbear Woolies
-i(15772, 19097, nil, TRIBAL_LEATHERWORKING);	-- Devilsaur Leggings
+--[[
+--- UNRELEASED CONTENT ---
 -- Dire Maul
 i(18518, 22927, nil, TRIBAL_LEATHERWORKING);	-- Hide of the Wild
--- maybe?
-
+-- BRD
 i(17022, 20853, nil, TRIBAL_LEATHERWORKING);	-- Corehound Boots
--- bwl
+-- BRD P3
 i(19332, 23709, nil, TRIBAL_LEATHERWORKING);	-- Corehound Belt
-
---- SPECIAL ---
--- unclear
-i(0, 22815);		-- Gordok Ogre Suit
+-- Timbermaw P3
+i(15742, 19068, nil, TRIBAL_LEATHERWORKING);	-- Warbear Harness
+i(20253, 19068, nil, TRIBAL_LEATHERWORKING);	-- Warbear Harness
+i(20254, 19080, nil, TRIBAL_LEATHERWORKING);	-- Warbear Woolies
+--]]
