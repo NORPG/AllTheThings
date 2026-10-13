@@ -46,6 +46,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				["lvl"] = 28,
 				["groups"] = {
 					i(2000),	-- Archeus
+					i(270051, {	-- Ladimore Heirloom Ring
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(337, {	-- An Old History Book
@@ -141,6 +144,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					}),
 					i(3560),	-- Mantle of Honor
 					i(6223),	-- Crest of Darkshire
+					i(270044, {	-- Darkshire Shoulderguards
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(157, {	-- Deliver the Thread
@@ -249,6 +255,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					}),
 				},
 			}),
+			q(79362, {	-- Grant's Shield
+				["aqd"] = {
+					["qg"] = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				["hqd"] = {
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				["qs"] = 281147,	-- Grant's Shield (QS!)
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/1 Grant's Mace
+						["provider"] = { "i", 281146 },	-- Grant's Mace
+						["crs"] = {
+							787,	-- Skeletal Healer
+							202,	-- Skeletal Horror
+							531,	-- Skeletal Fiend
+						},
+					}),
+				},
+			}),
 			q(266, {	-- Inquire at the Inn
 				["sourceQuest"] = 265,	-- The Shadowy Search Continues
 				["providers"] = {
@@ -258,6 +287,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
+			}),
+			q(96137, {	-- Ira's Dagger
+				["aqd"] = {
+					["qg"] = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				["hqd"] = {
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				["qs"] = 281143,	-- Ira's Dagger (QS!)
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/10 Young Black Ravager slain
+						["provider"] = { "n", 923 },	-- Young Black Ravager
+					}),
+					objective(2, {	-- 0/7 Black Ravager slain
+						["provider"] = { "n", 628 },	-- Black Ravager
+					}),
+				},
 			}),
 			q(5, {	-- Jitters' Growling Gut
 				["sourceQuest"] = 163,	-- Raven Hill
@@ -318,6 +368,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					}),
 					i(7107),	-- Belt of the Stars
 					i(7106),	-- Zodiac Gloves
+				},
+			}),
+			q(96138, {	-- Merrick's Bow
+				["aqd"] = {
+					["qg"] = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				["hqd"] = {
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				["qs"] = 281142,	-- Merrick's Bow (QS!)
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/8 Splinter Fist Warrior slain
+						["provider"] = { "n", 212 },	-- Splinter Fist Warrior
+					}),
+					objective(2, {	-- 0/4 Splinter Fist Taskmaster slain
+						["provider"] = { "n", 892 },	-- Splinter Fist Taskmaster
+					}),
 				},
 			}),
 			q(228, {	-- Mor'Ladim
@@ -868,6 +939,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					i(281149),	-- Memories of Valor
 				},
 			}),
+			q(98447, {	-- The Valor Family (2/2)
+				["sourceQuests"] = {
+					79362,	-- Grant's Shield
+					96137,	-- Ira's Dagger
+					96138,	-- Merrick's Bow
+					79363,	-- Silvia's Sword
+				},
+				["qg"] = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+				["coord"] = { 72.6, 47.6, MAP.DUSKWOOD },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- Raven Hill investigated
+						["provider"] = { "n", 272450 },	-- Ol' Sandy
+						["coord"] = { 17.4, 54.0, MAP.DUSKWOOD },
+					}),
+				},
+			}),
 			q(225, {	-- The Weathered Grave
 				["provider"] = { "o", 61 },	-- A Weathered Grave
 				["coord"] = { 17.7, 29.2, MAP.DUSKWOOD },
@@ -1268,6 +1358,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					910,	-- Defias Enchanter
 				},
 			}),
+			i(281147, {	-- Grant's Shield
+				["coords"] = {
+					{ 15.8, 35.3, MAP.DUSKWOOD },
+					{ 24.6, 32.4, MAP.DUSKWOOD },
+					{ 80.3, 57.8, MAP.DUSKWOOD },
+					{ 78.3, 71.5, MAP.DUSKWOOD },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 272291,	-- Lost Knight
+			}),
 			i(2021, {	-- Green Carapace Shield
 				["coords"] = {
 					{ 72.8, 21.6, MAP.DUSKWOOD },
@@ -1308,6 +1408,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					539,	-- Pygmy Venom Web Spider
 				},
 			}),
+			i(281143, {	-- Ira's Dagger
+				["coords"] = {
+					{ 32.0, 43.0, MAP.DUSKWOOD },
+					{ 41.0, 21.0, MAP.DUSKWOOD },
+					{ 11.0, 53.0, MAP.DUSKWOOD },
+					{ 49.0, 63.0, MAP.DUSKWOOD },
+					{ 51.0, 62.0, MAP.DUSKWOOD },
+					{ 10.0, 37.0, MAP.DUSKWOOD },
+					{ 67.9, 31.1, MAP.DUSKWOOD },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 272260,	-- Lost Stalker
+			}),
 			i(911, {	-- Ironwood Treebranch
 				["coords"] = {
 					{ 38.4, 72.2, MAP.DUSKWOOD },
@@ -1339,6 +1452,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 21.8, 71.8, MAP.DUSKWOOD },
 					{ 50.2, 77.2, MAP.DUSKWOOD },
 				},
+			}),
+			i(281142, {	-- Merrick's Bow
+				["coords"] = {
+					{ 16.0, 62.8, MAP.DUSKWOOD },
+					{ 19.8, 62.6, MAP.DUSKWOOD },
+					{ 30.6, 60.6, MAP.DUSKWOOD },
+					{ 38.6, 74.0, MAP.DUSKWOOD },
+					{ 43.0, 66.2, MAP.DUSKWOOD },
+					{ 62.8, 65.4, MAP.DUSKWOOD },
+					{ 76.0, 22.8, MAP.DUSKWOOD },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 272273,	-- Lost Watcher
 			}),
 			i(2234, {	-- Nightwalker Armor
 				["coords"] = {
