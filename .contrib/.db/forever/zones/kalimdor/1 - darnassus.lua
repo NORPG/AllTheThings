@@ -22,6 +22,13 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					groups = ALCHEMY_RECIPES.EXPERT,
 				}),
 			}),
+			prof(LEATHERWORKING, {
+				n(4212, {	-- Telonis <Artisan Leatherworker>
+					coord = { 64.6, 21.6, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					groups = LEATHERWORKING_RECIPES.EXPERT,
+				}),
+			}),
 		}),
 		n(QUESTS, {
 			q(7799, {	-- A Donation of Mageweave
@@ -981,6 +988,21 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					}),
 					i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 						isLimited = true,
+					}),
+					i(252812, {	-- Pattern: Forceful Heavy Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(252784, {	-- Pattern: Forceful Medium Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(277716, {	-- Pattern: Light Leather Reagent Bag (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(252811, {	-- Pattern: Mystic Heavy Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(252783, {	-- Pattern: Mystic Medium Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),

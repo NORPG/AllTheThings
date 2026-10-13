@@ -22,8 +22,8 @@ ENGINEERING_RECIPES = {
 		filter(REAGENTS, {
 			r(3918),	-- Rough Blasting Powder
 			r(3922),	-- Handful of Copper Bolts
-			r(3924, {timeline = {REMOVED_4_3_0}}),	-- Copper Tube
-			r(3926, {timeline = {REMOVED_4_3_0}}),	-- Copper Modulator
+			r(3924),	-- Copper Tube
+			r(3926),	-- Copper Modulator
 			r(3929),	-- Coarse Blasting Powder
 		}),
 		n(WEAPONS, {
@@ -134,7 +134,7 @@ ENGINEERING_RECIPES = {
 		}),
 	};
 	GNOMISH_ENGINEERING = {
-		r(20219),	-- Gnomish Engineer
+		r(GNOMISH_ENGINEERING),
 		n(ARMOR, {
 			r(12897),	-- Gnomish Goggles
 			r(12903),	-- Gnomish Harm Prevention Belt
@@ -152,7 +152,7 @@ ENGINEERING_RECIPES = {
 		}),
 	};
 	GOBLIN_ENGINEERING = {
-		r(20222),	-- Goblin Engineer
+		r(GOBLIN_ENGINEERING),
 		n(ARMOR, {
 			r(12718),	-- Goblin Construction Helmet
 			r(12717),	-- Goblin Mining Helmet

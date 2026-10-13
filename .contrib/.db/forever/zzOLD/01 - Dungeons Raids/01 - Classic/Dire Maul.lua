@@ -913,7 +913,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							["requireSkill"] = TAILORING,
 						}),
 						r(22815, {	-- Gordok Ogre Suit
-							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = LEATHERWORKING,
 						}),
 						i(18258, {	-- Gordok Ogre Suit
@@ -1829,6 +1828,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
+							-- maybe?
 							i(18517, {	-- Pattern: Chromatic Cloak (RECIPE!)
 								-- #if SEASON_OF_DISCOVERY
 								["timeline"] = { REMOVED_1_15_3 },
@@ -1841,11 +1841,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
-							i(18514, {	-- Pattern: Girdle of Insight (RECIPE!)
-								-- #if SEASON_OF_DISCOVERY
-								["timeline"] = { REMOVED_1_15_3 },
-								-- #endif
-							}),
+							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
 							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
 							i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
 							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)

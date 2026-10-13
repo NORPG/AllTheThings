@@ -103,10 +103,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			prof(LEATHERWORKING, {
+				n(11096, {	-- Randal Worth <Journeyman Leatherworker>
+					coord = { 72.4, 62.2, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = LEATHERWORKING_RECIPES.APPRENTICE,
+				}),
 				n(5564, {	-- Simon Tanner <Expert Leatherworker>
 					coord = { 71.8, 62.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					groups = LEATHERWORKING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 			prof(MINING, {

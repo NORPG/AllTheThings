@@ -842,7 +842,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10384,	-- Spectral Citizen
 						}),
 						i(15777, {	-- Pattern: Runic Leather Shoulders (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
 							["cr"] = 10425,	-- Crimson Battle Mage
 						}),
 						i(18658, {	-- Schematic: Ultra-Flash Shadow Reflector (RECIPE!)
@@ -1451,7 +1450,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
 						i(15768, {	-- Pattern: Wicked Leather Belt (RECIPE!)
-							["timeline"] = { REMOVED_2_0_5 },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
 						-- #if SEASON_OF_DISCOVERY

@@ -77,12 +77,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
 					["coord"] = { 89.4, 46.4, MAP.FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_TBC_TRIBAL,
+					["groups"] = LEATHERWORKING_RECIPES.TRIBAL,
 				}),
 				n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
 					["coord"] = { 74.4, 43.0, MAP.FERALAS },
 					["races"] = HORDE_ONLY,
-					["groups"] = EXPERT_ARTISAN_LEATHERWORKING,
+					["groups"] = LEATHERWORKING_RECIPES.ARTISAN,
 				}),
 			}),
 		}),

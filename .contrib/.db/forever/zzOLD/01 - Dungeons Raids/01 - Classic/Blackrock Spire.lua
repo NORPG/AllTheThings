@@ -1403,26 +1403,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, i(227906, {	-- Pattern: Masterwork Volcanic Breastplate (RECIPE!)
-					["timeline"] = { ADDED_1_15_3 },
-					["cr"] = 9259,	-- Firebrand Grunt
-				})),
-				applyclassicphase(SOD_PHASE_FOUR, i(227907, {	-- Pattern: Masterwork Volcanic Shoulders (RECIPE!)
-					["timeline"] = { ADDED_1_15_3 },
-					["cr"] = 9260,	-- Firebrand Legionnaire
-				})),
-				-- #endif
 				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					["timeline"] = { REMOVED_1_15_3 },
-					-- #endif
 					["cr"] = 9259,	-- Firebrand Grunt
 				}),
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					["timeline"] = { REMOVED_1_15_3 },
-					-- #endif
 					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
 				i(13494, {	-- Recipe: Greater Fire Protection Potion (RECIPE!)
@@ -2235,12 +2219,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 					})),
-					-- #if AFTER 5.0.4
-					i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2 },
-						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
-					}),
-					-- #endif
 					-- #if BEFORE 6.0.2
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, i(228593, {	-- Wind Dancer Boots

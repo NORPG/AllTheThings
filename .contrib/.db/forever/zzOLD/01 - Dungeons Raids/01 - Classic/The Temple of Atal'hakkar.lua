@@ -63,15 +63,7 @@ local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 			5259,	-- Atal'ai Witch Doctor
 		},
 	}),
-	i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
-		["timeline"] = { ADDED_4_3_0 },
-	}),
-	i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
-		["timeline"] = { REMOVED_4_0_3 },
-	}),
-	i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version) (RECIPE!)
-		["timeline"] = { ADDED_4_3_0 },
-	}),
+	i(15733),	-- Pattern: Green Dragonscale Leggings (RECIPE!)
 	i(10627),	-- Bludgeon of the Grinning Dog
 	i(10628),	-- Deathblow
 	i(10626),	-- Ragehammer

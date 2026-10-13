@@ -59,7 +59,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
 					["coord"] = { 37.6, 65.4, MAP.AZSHARA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_TBC_DRAGONSCALE,
+					["groups"] = LEATHERWORKING_RECIPES.DRAGONSCALE,
 				}),
 			}),
 		}),
@@ -744,7 +744,6 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			-- Originally a zone drop of Azshara, was moved to Winterspring after.
 			i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 				["cr"] = 6201,	-- Legashi Rogue
 			}),
@@ -756,7 +755,6 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					{ 80.6, 18.6, MAP.AZSHARA },
 					{ 70.4, 17.6, MAP.AZSHARA },
 				},
-				-- Zonedrop, can drop from any mob now
 			}),
 			i(14473, {	-- Pattern: Ghostweave Belt (RECIPE!)
 				["cr"] = 7864,	-- Lingering Highborne

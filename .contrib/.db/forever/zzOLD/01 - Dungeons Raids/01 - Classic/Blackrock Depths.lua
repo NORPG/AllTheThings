@@ -950,9 +950,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						--[[Commented out until confirmed
 						i(19444),	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						--]]
-						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
+						--i(17022),	-- Pattern: Corehound Boots (RECIPE!)
 						i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
-						i(17023),	-- Pattern: Molten Helm (RECIPE!)
+						--i(17023),	-- Pattern: Molten Helm (RECIPE!)
 						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
 						i(20761),	-- Recipe: Transmute Elemental Fire (RECIPE!)
 					},
@@ -974,7 +974,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						i(17017),	-- Pattern: Flarecore Mantle (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
-						applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
+						--applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
 						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
@@ -1222,10 +1222,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
 						--]]
-						applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
-						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
+						--applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
+						--applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings (RECIPE!)
-						applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
+						--applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
 
 						--[[ BWL Removed until confirmed
 						applyclassicphase(PHASE_THREE_RECIPES, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
@@ -1246,16 +1246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				n(9499, {	-- Plugger Spazzring
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, i(227902, {	-- Pattern: Hardened Black Dragonscale Breastplate (RECIPE!)
-						["timeline"] = { ADDED_1_15_3 },
-					})),
-					-- #endif
-					i(15759, {	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_3 },
-						-- #endif
-					}),
+					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
 					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),
@@ -1280,27 +1271,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(15781, {	-- Pattern: Black Dragonscale Leggings (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					["timeline"] = { REMOVED_1_15_3 },
-					-- #endif
 					["cr"] = 8903,	-- Anvilrage Captain
 				}),
 				i(15770, {	-- Pattern: Black Dragonscale Shoulders (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					["timeline"] = { REMOVED_1_15_3 },
-					-- #endif
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, i(227903, {	-- Pattern: Hardened Black Dragonscale Leggings (RECIPE!)
-					["timeline"] = { ADDED_1_15_3 },
-					["cr"] = 8903,	-- Anvilrage Captain
-				})),
-				applyclassicphase(SOD_PHASE_FOUR, i(227904, {	-- Pattern: Hardened Black Dragonscale Shoulders (RECIPE!)
-					["timeline"] = { ADDED_1_15_3 },
-					["cr"] = 8898,	-- Anvilrage Marshal
-				})),
-				-- #endif
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
 					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans

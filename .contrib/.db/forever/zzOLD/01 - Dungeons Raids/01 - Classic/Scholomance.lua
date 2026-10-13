@@ -749,17 +749,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
 		i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)
-			-- #if AFTER 4.0.3
-			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
-			-- #endif
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 11582,	-- Scholomance Dark Summoner
 		}),
 		i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
-			-- #if AFTER 4.0.3
-			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
-			-- #endif
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
 		applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments

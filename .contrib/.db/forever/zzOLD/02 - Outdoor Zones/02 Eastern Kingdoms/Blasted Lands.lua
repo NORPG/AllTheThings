@@ -436,9 +436,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				["description"] = "A rare zone drop from any creature in the zone.",
 			}),
 			i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
-				["timeline"] = { ADDED_1_11_1 },
 				["cr"] = 5981,	-- Portal Seeker
-				-- added to burning steps in 10.1.5
 			}),
 			i(8393, {	-- Scorpok Pincer
 				["crs"] = {

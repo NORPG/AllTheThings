@@ -516,7 +516,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ 34.8, 36.3, MAP.BURNING_STEPPES },
 					{ 36.0, 36.6, MAP.BURNING_STEPPES },
 				},
-				["timeline"] = { ADDED_1_11_1 },
 				["crs"] = {
 					7025,	-- Blackrock Soldier
 				},
@@ -526,7 +525,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ 34.8, 36.3, MAP.BURNING_STEPPES },
 					{ 36.0, 36.6, MAP.BURNING_STEPPES },
 				},
-				["timeline"] = { ADDED_1_11_1 },
 				["crs"] = {
 					7027,	-- Blackrock Slayer
 				},
@@ -536,7 +534,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ 34.8, 36.3, MAP.BURNING_STEPPES },
 					{ 36.0, 36.6, MAP.BURNING_STEPPES },
 				},
-				["timeline"] = { ADDED_1_11_1 },
 				["crs"] = {
 					7029,	-- Blackrock Battlemaster
 				},

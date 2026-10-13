@@ -3111,6 +3111,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			n(248201, {	-- Pawani <Leatherworker>
+				coord = { 49.6, 29.6, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = LEATHERWORKING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
+			}),
 			n(3684, {	-- Pizznukle <Leather Armor Merchant>
 				coord = { 41.8, 38.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,

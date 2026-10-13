@@ -176,7 +176,7 @@ i(277470, 1302161);	-- Harvester Override Signalcaster
 i(0, 1230656);		-- Reagent Bot
 i(0, 26011);		-- Tranquil Mechanical Yeti
 -- Gnomish Engineering
-i(0, 20219, nil, GNOMISH_ENGINEERING);	-- Gnomish Engineer
+i(0, GNOMISH_ENGINEERING, nil, GNOMISH_ENGINEERING);	-- Gnomish Engineer
 i(18654, 23096, nil, GNOMISH_ENGINEERING);	-- Gnomish Alarm-o-Bot
 i(0, 12906, nil, GNOMISH_ENGINEERING);	-- Gnomish Battle Chicken
 i(0, 12759, nil, GNOMISH_ENGINEERING);	-- Gnomish Death Ray
@@ -191,7 +191,7 @@ i(11827, 15633, nil, GNOMISH_ENGINEERING);	-- Lil' Smoky
 i(0, 23489, nil, GNOMISH_ENGINEERING);	-- Ultrasafe Transporter - Gadgetzan
 i(18661, 23129, nil, GNOMISH_ENGINEERING);	-- World Enlarger
 -- Goblin Engineering
-i(0, 20222, nil, GOBLIN_ENGINEERING);	-- Goblin Engineer
+i(0, GOBLIN_ENGINEERING, nil, GOBLIN_ENGINEERING);	-- Goblin Engineer
 i(0, 23486, nil, GOBLIN_ENGINEERING);	-- Dimensional Ripper - Everlook
 i(0, 12755, nil, GOBLIN_ENGINEERING);	-- Goblin Bomb Dispenser
 i(0, 12718, nil, GOBLIN_ENGINEERING);	-- Goblin Construction Helmet

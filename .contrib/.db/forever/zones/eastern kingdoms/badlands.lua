@@ -51,7 +51,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				n(7867, {	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>
 					coord = { 62.6, 57.6, MAP.BADLANDS },
 					races = HORDE_ONLY,
-					groups = CLASSIC_TBC_DRAGONSCALE,
+					groups = LEATHERWORKING_RECIPES.DRAGONSCALE,
 				}),
 			}),
 		}),

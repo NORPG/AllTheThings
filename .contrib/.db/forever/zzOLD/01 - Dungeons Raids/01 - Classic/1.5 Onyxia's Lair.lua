@@ -494,9 +494,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						recipe(19093, {	-- Onyxia Scale Cloak
 							["timeline"] = ADDED_WITH_RERELEASE,
 						}),
-						i(15769, {	-- Pattern: Onyxia Scale Cloak (RECIPE!)
-							["timeline"] = REMOVED_WITH_RERELEASE,
-						}),
 					},
 				}),
 				q(7493, {	-- The Journey Has Just Begun (H)
@@ -521,9 +518,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						recipe(19093, {	-- Onyxia Scale Cloak
 							["timeline"] = ADDED_WITH_RERELEASE,
-						}),
-						i(15769, {	-- Pattern: Onyxia Scale Cloak (RECIPE!)
-							["timeline"] = REMOVED_WITH_RERELEASE,
 						}),
 					},
 				}),

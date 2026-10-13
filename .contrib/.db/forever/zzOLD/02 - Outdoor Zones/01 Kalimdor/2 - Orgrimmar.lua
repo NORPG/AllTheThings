@@ -124,10 +124,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				}),
 			}),
 			prof(LEATHERWORKING, {
-				n(3365, {	-- Karolek <Leatherworking Trainer>
+				n(5811, {	-- Kamari <Journeyman Leatherworker>
+					["coord"] = { 63.2, 44.4, MAP.ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = LEATHERWORKING_RECIPES.APPRENTICE,
+				}),
+				n(3365, {	-- Karolek <Expert Leatherworker>
 					["coord"] = { 62.8, 44.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					["groups"] = LEATHERWORKING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 			prof(MINING, {
@@ -265,6 +270,25 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
 						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 					}),
+				},
+			}),
+			q(96875, {	-- Beasts of Thunder Ridge
+				["qg"] = 5811,	-- Kamari <Journeyman Leatherworker>
+				["coord"] = { 63.2, 44.4, MAP.ORGRIMMAR },
+				["cost"] = { { "i", 4231, 2 } },	-- 2x Cured Light Hide
+				["races"] = HORDE_ONLY,
+				["requireSkill"] = LEATHERWORKING,
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					objective(1, {	-- 0/5 Rough Lizard Hide
+						["provider"] = { "i", 275720 },	-- Rough Lizard Hide
+						["crs"] = {
+							3131,	-- Lightning Hide
+							3130,	-- Thunder Lizard
+						},
+						["coord"] = { 40.0, 24.1, MAP.DUROTAR },
+					}),
+					i(277716),	-- Pattern: Light Leather Reagent Bag (RECIPE!)
 				},
 			}),
 			q(1508, {	-- Blind Cazul

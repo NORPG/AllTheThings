@@ -37,6 +37,46 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					i(274017),	-- Plans: Handguards of Glory (RECIPE!)
 					i(274018),	-- Plans: Pauldrons of Glory (RECIPE!)
 					i(274019),	-- Plans: Sabatons of Glory (RECIPE!)
+
+					-- Rogue
+					i(273999),	-- Pattern: Grimstitch Boots
+					i(273997),	-- Pattern: Grimstitch Gloves
+					i(273996),	-- Pattern: Grimstitch Pants
+					i(273998),	-- Pattern: Grimstitch Spaulders
+
+					-- Druid
+					i(273963),	-- Pattern: Grovekeeper Boots
+					i(273965),	-- Pattern: Grovekeeper Gauntlets
+					i(273953),	-- Pattern: Grovekeeper Grips
+					i(273961),	-- Pattern: Grovekeeper Handguards
+					i(273956),	-- Pattern: Grovekeeper Kilt
+					i(273964),	-- Pattern: Grovekeeper Leggings
+					i(273960),	-- Pattern: Grovekeeper Legguards
+					i(273958),	-- Pattern: Grovekeeper Mantle
+					i(273957),	-- Pattern: Grovekeeper Mitts
+					i(273962),	-- Pattern: Grovekeeper Pauldrons
+					i(273959),	-- Pattern: Grovekeeper Sandals
+					i(273954),	-- Pattern: Grovekeeper Shoulderpads
+					i(273966),	-- Pattern: Grovekeeper Spaulders
+					i(273955),	-- Pattern: Grovekeeper Stompers
+					i(273967),	-- Pattern: Grovekeeper Treads
+					i(273952),	-- Pattern: Grovekeeper Trousers
+
+					-- Shaman
+					i(274006),	-- Pattern: Spiritcaller Epaulets
+					i(274005),	-- Pattern: Spiritcaller Gauntlets
+					i(274007),	-- Pattern: Spiritcaller Greaves
+					i(274001),	-- Pattern: Spiritcaller Grips
+					i(274000),	-- Pattern: Spiritcaller Leggings
+					i(274004),	-- Pattern: Spiritcaller Pants
+					i(274002),	-- Pattern: Spiritcaller Spaulders
+					i(274003),	-- Pattern: Spiritcaller Treads
+
+					-- Hunter
+					i(273969),	-- Pattern: Wildstalker's Gauntlets
+					i(273971),	-- Pattern: Wildstalker's Greaves
+					i(273968),	-- Pattern: Wildstalker's Legguards
+					i(273970),	-- Pattern: Wildstalker's Spaulders
 				},
 			}),
 			n(266901, {	-- Pexmit <Someone's Minion>

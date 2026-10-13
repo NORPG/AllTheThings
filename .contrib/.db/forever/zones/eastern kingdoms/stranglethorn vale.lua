@@ -172,7 +172,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 					coord = { 36.6, 34.2, MAP.STRANGLETHORN_VALE },
 					races = HORDE_ONLY,
-					groups = CLASSIC_TBC_TRIBAL,
+					groups = LEATHERWORKING_RECIPES.TRIBAL,
 				}),
 			}),
 		}),

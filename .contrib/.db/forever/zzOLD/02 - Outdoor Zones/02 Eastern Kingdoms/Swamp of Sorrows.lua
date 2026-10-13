@@ -662,9 +662,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				["coord"] = { 26.5, 31.4, MAP.SWAMP_OF_SORROWS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(15726, {	-- Pattern: Green Dragonscale Breastplate (RECIPE!)
-						-- The new version (78346) drops in the Sunken Temple
-					}),
+					i(15726),	-- Pattern: Green Dragonscale Breastplate (RECIPE!)
 					i(12253, {	-- Brilliant Red Cloak
 						["isLimited"] = true,
 					}),

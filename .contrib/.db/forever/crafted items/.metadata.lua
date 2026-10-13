@@ -43,13 +43,13 @@ root(ROOTS.Craftables, {
 		description = "It is beneficial to gather all herbs in the area even if you only need specific herbs because the node spawns are often connected.",
 	}),
 	prof(LEATHERWORKING, {
-		prof(10656, {	-- Dragonscale Leatherworking
+		prof(DRAGONSCALE_LEATHERWORKING, {
 			description = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 		}),
-		prof(10658, {	-- Elemental Leatherworking
+		prof(ELEMENTAL_LEATHERWORKING, {
 			description = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 		}),
-		prof(10660, {	-- Tribal Leatherworking
+		prof(TRIBAL_LEATHERWORKING, {
 			description = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 		}),
 	}),

@@ -21,6 +21,15 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				["races"] = HORDE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(LEATHERWORKING, {
+				n(3007, {	-- Una <Artisan Leatherworker>
+					["coord"] = { 41.8, 42.6, MAP.THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["groups"] = LEATHERWORKING_RECIPES.EXPERT,
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(6361, {	-- A Bundle of Hides
 				["providers"] = {
@@ -637,10 +646,22 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					4496,	-- Small Brown Pouch
 				}},
 			}),
-			n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+			n(3005, {	-- Mahu <Leatherworking & Tailoring Supplies>
 				["coord"] = { 43.8, 45.1, MAP.THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
+					i(252812, {	-- Pattern: Forceful Heavy Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(252784, {	-- Pattern: Forceful Medium Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(252811, {	-- Pattern: Mystic Heavy Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(252783, {	-- Pattern: Mystic Medium Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 						["isLimited"] = true,
 					}),

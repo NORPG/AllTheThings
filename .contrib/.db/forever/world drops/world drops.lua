@@ -3623,14 +3623,7 @@ root(ROOTS.WorldDrops, {
 		prof(FIRST_AID, {
 			i(6454),	-- Manual: Strong Anti-Venom (RECIPE!)
 		}),
-		--[[ Until profession complete
 		prof(LEATHERWORKING, {
-			-- Moved to Leatherworking
-			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
-			i(12728),	-- Plans: Invulnerable Mail (RECIPE!)
-			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
-			i(12691),	-- Plans: Wildthorn Mail (RECIPE!)
-
 			i(4301),	-- Pattern: Barbaric Belt (RECIPE!)
 			i(4297),	-- Pattern: Barbaric Gloves (RECIPE!)
 			i(8390),	-- Pattern: Big Voodoo Cloak (RECIPE!)
@@ -3657,26 +3650,24 @@ root(ROOTS.WorldDrops, {
 			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
 			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
+			i(252804, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
+			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
-			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
-			}),
-			i(15731, {	-- Pattern: Runic Leather Gauntlets (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
-			}),
-			i(15765, {	-- Pattern: Runic Leather Pants (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
-			}),
+			i(15745),	-- Pattern: Runic Leather Belt (RECIPE!)
+			i(15731),	-- Pattern: Runic Leather Gauntlets (RECIPE!)
+			i(15765),	-- Pattern: Runic Leather Pants (RECIPE!)
+			i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
-			i(15757, {	-- Pattern: Wicked Leather Pants (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
-			}),
+			i(15757),	-- Pattern: Wicked Leather Pants (RECIPE!)
+			i(12691),	-- Pattern: Wildthorn Mail (RECIPE!)
+			i(12716),	-- Pattern: Helm of the Great Chief (RECIPE!)
 		}),
+		--[[ Until profession complete
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY

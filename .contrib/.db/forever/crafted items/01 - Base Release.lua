@@ -2228,101 +2228,83 @@ root(ROOTS.Craftables, {
 	}),
 	prof(LEATHERWORKING, {
 		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				{
-					i(4289, {	-- Salt
-						description = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
-						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-						--[[["providers"] = {
-							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
-							{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
-							{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
-							{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
-							{ "n", 3366},	-- Tamar <Leatherworking Supplies>
-							{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-						},]]
-					}),
-				},
-				sharedData({
-					description = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-					--[[["providers"] = {
-						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
-						{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
-						{ "n", 3364},	-- Borya <Tailoring Supplies>
-						{ "n", 4168},	-- Elynna <Tailoring Supplies>
-						{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
-						{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
-						{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-						{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
-						{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
-						{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
-						{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
-						{ "n", 3366},	-- Tamar <Leatherworking Supplies>
-					},]]
-				}, {
-					i(2325),	-- Black Dye
-					i(6260),	-- Blue Dye
-					i(2605),	-- Green Dye
-					i(4340),	-- Grey Dye
-					i(4342),	-- Purple Dye
-					i(2604),	-- Red Dye
-					i(2320),	-- Coarse Thread
-					i(2321),	-- Fine Thread
-					i(4291),	-- Silken Thread
-					i(8343),	-- Heavy Silken Thread
-					i(14341),	-- Rune Thread
-				})
-			)
+			i(2325),	-- Black Dye
+			i(6260),	-- Blue Dye
+			i(2320),	-- Coarse Thread
+			i(2321),	-- Fine Thread
+			i(2605),	-- Green Dye
+			i(4340),	-- Grey Dye
+			i(8343),	-- Heavy Silken Thread
+			i(4342),	-- Purple Dye
+			i(2604),	-- Red Dye
+			i(14341),	-- Rune Thread
+			i(4289),	-- Salt
+			i(4291),	-- Silken Thread
 		}),
-		prof(10656, {	-- Dragonscale Leatherworking
-			i(16984),	-- Black Dragonscale Boots
-			i(15050),	-- Black Dragonscale Breastplate
-			i(15052),	-- Black Dragonscale Leggings
-			i(15051),	-- Black Dragonscale Shoulders
-			i(15048),	-- Blue Dragonscale Breastplate
-			i(20295),	-- Blue Dragonscale Leggings
-			i(15049),	-- Blue Dragonscale Shoulders
-			i(8367),	-- Dragonscale Breastplate
-			i(8347),	-- Dragonscale Gauntlets
-			i(15045),	-- Green Dragonscale Breastplate
-			i(20296),	-- Green Dragonscale Gauntlets
-			i(15046),	-- Green Dragonscale Leggings
-			i(15047),	-- Red Dragonscale Breastplate
+		prof(DRAGONSCALE_LEATHERWORKING, {
+			filter(MAIL, {
+				i(16984),	-- Black Dragonscale Boots
+				i(15050),	-- Black Dragonscale Breastplate
+				i(15052),	-- Black Dragonscale Leggings
+				i(15051),	-- Black Dragonscale Shoulders
+				i(15048),	-- Blue Dragonscale Breastplate
+				i(20295),	-- Blue Dragonscale Leggings
+				i(15049),	-- Blue Dragonscale Shoulders
+				i(8367),	-- Dragonscale Breastplate
+				i(8347),	-- Dragonscale Gauntlets
+				i(15045),	-- Green Dragonscale Breastplate
+				i(20296),	-- Green Dragonscale Gauntlets
+				i(15046),	-- Green Dragonscale Leggings
+				i(15047),	-- Red Dragonscale Breastplate
+			}),
 		}),
-		prof(10658, {	-- Elemental Leatherworking
-			i(8346),	-- Gauntlets of the Sea
-			i(8348),	-- Helm of Fire
-			i(15059),	-- Living Breastplate
-			i(15060),	-- Living Leggings
-			i(15061),	-- Living Shoulders
-			i(16983),	-- Molten Helm
-			i(15056),	-- Stormshroud Armor
-			i(21278),	-- Stormshroud Gloves
-			i(15057),	-- Stormshroud Pants
-			i(15058),	-- Stormshroud Shoulders
-			i(15053),	-- Volcanic Breastplate
-			i(15054),	-- Volcanic Leggings
-			i(15055),	-- Volcanic Shoulders
+		prof(ELEMENTAL_LEATHERWORKING, {
+			filter(LEATHER, {
+				i(8346),	-- Gauntlets of the Sea
+				i(8348),	-- Helm of Fire
+				i(15059),	-- Living Breastplate
+				i(15060),	-- Living Leggings
+				i(15061),	-- Living Shoulders
+				i(15056),	-- Stormshroud Armor
+				i(15057),	-- Stormshroud Pants
+				i(15058),	-- Stormshroud Shoulders
+				i(15053),	-- Volcanic Breastplate
+				i(15054),	-- Volcanic Leggings
+				i(15055),	-- Volcanic Shoulders
+				-- unsure
+				i(16983),	-- Molten Helm
+				i(21278),	-- Stormshroud Gloves
+			}),
+			filter(MAIL, {
+				i(12641),	-- Invulnerable Mail
+				i(12632),	-- Storm Gauntlets
+			}),
 		}),
-		prof(10660, {	-- Tribal Leatherworking
-			i(15073),	-- Chimeric Boots
-			i(15074),	-- Chimeric Gloves
-			i(15072),	-- Chimeric Leggings
-			i(15075),	-- Chimeric Vest
-			i(16982),	-- Corehound Boots
-			i(15063),	-- Devilsaur Gauntlets
-			i(15062),	-- Devilsaur Leggings
-			i(8349),	-- Feathered Breastplate
-			i(15071),	-- Frostsaber Boots
-			i(15070),	-- Frostsaber Gloves
-			i(15069),	-- Frostsaber Leggings
-			i(15068),	-- Frostsaber Tunic
-			i(15066),	-- Ironfeather Breastplate
-			i(15067),	-- Ironfeather Shoulders
-			i(15064),	-- Warbear Harness
-			i(15065),	-- Warbear Woolies
-			i(8345),	-- Wolfshead Helm
+		prof(TRIBAL_LEATHERWORKING, {
+			filter(LEATHER, {
+				i(15073),	-- Chimeric Boots
+				i(15074),	-- Chimeric Gloves
+				i(15072),	-- Chimeric Leggings
+				i(15075),	-- Chimeric Vest
+				i(15063),	-- Devilsaur Gauntlets
+				i(15062),	-- Devilsaur Leggings
+				i(8349),	-- Feathered Breastplate
+				i(15071),	-- Frostsaber Boots
+				i(15070),	-- Frostsaber Gloves
+				i(15069),	-- Frostsaber Leggings
+				i(15068),	-- Frostsaber Tunic
+				i(15066),	-- Ironfeather Breastplate
+				i(15067),	-- Ironfeather Shoulders
+				i(15064),	-- Warbear Harness
+				i(15065),	-- Warbear Woolies
+				i(8345),	-- Wolfshead Helm
+
+				i(16982),	-- Corehound Boots ??? maybe
+			}),
+			filter(MAIL, {
+				i(12636),	-- Helm of the Great Chief
+				i(12624),	-- Wildthorn Mail
+			}),
 		}),
 		n(ARMOR, {
 			n(BACK, {
@@ -2364,16 +2346,17 @@ root(ROOTS.Craftables, {
 				i(7378),	-- Dusky Bracers
 				i(7374),	-- Dusky Leather Armor
 				i(7373),	-- Dusky Leather Leggings
+				i(7352),	-- Earthen Leather Shoulders
 				i(2309),	-- Embossed Leather Boots
 				i(4239),	-- Embossed Leather Gloves
 				i(4242),	-- Embossed Leather Pants
 				i(2300),	-- Embossed Leather Vest
-				i(7352),	-- Earthen Leather Shoulders
 				i(4246),	-- Fine Leather Belt
 				i(2307),	-- Fine Leather Boots
 				i(2312),	-- Fine Leather Gloves
 				i(5958),	-- Fine Leather Pants
 				i(4243),	-- Fine Leather Tunic
+				i(7348),	-- Fletcher's Gloves
 				i(4262),	-- Gem-Studded Leather Belt
 				i(17721),	-- Gloves of the Greatfather
 				i(4255),	-- Green Leather Armor
@@ -2410,12 +2393,8 @@ root(ROOTS.Craftables, {
 				i(8175),	-- Nightscape Tunic
 				i(7285),	-- Nimble Leather Gloves
 				i(7358),	-- Pilferer's Gloves
-				i(4456, {	-- Raptor Hide Belt
-					races = ALLIANCE_ONLY,
-				}),
-				i(4455, {	-- Raptor Hide Harness
-					races = HORDE_ONLY,
-				}),
+				i(4456),	-- Raptor Hide Belt
+				i(4455),	-- Raptor Hide Harness
 				i(7284),	-- Red Whelp Gloves
 				i(7280),	-- Rugged Leather Pants
 				i(15090),	-- Runic Leather Armor
@@ -2444,12 +2423,11 @@ root(ROOTS.Craftables, {
 				i(8211),	-- Wild Leather Vest
 			}),
 			filter(MAIL, {
-				i(7348),	-- Fletcher's Gloves
 				i(15082),	-- Heavy Scorpid Belt
 				i(15077),	-- Heavy Scorpid Bracers
 				i(15078),	-- Heavy Scorpid Gauntlets
-				i(15079),	-- Heavy Scorpid Leggings
 				i(15080),	-- Heavy Scorpid Helm
+				i(15079),	-- Heavy Scorpid Leggings
 				i(15081),	-- Heavy Scorpid Shoulders
 				i(15076),	-- Heavy Scorpid Vest
 				i(8209),	-- Tough Scorpid Boots
@@ -2466,36 +2444,37 @@ root(ROOTS.Craftables, {
 				i(8185),	-- Turtle Scale Leggings
 			}),
 		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(4265),	-- Heavy Armor Kit
+			i(2304),	-- Light Armor Kit
+			i(2313),	-- Medium Armor Kit
+			i(15564),	-- Rugged Armor Kit
+			i(8173),	-- Thick Armor Kit
+		}),
+		filter(BAGS, {
+			i(7372),	-- Heavy Leather Ammo Pouch
+			i(7371),	-- Heavy Quiver
+			i(5081),	-- Kodo Hide Bag
+			i(7278),	-- Light Leather Quiver
+			i(8217),	-- Quickdraw Quiver
+			i(7279),	-- Small Leather Ammo Pouch
+			i(8218),	-- Thick Leather Ammo Pouch
+		}),
 		filter(MISC, {
+			i(18662),	-- Heavy Leather Ball
+		}),
+		filter(REAGENTS, {
 			i(4236),	-- Cured Heavy Hide
 			i(4231),	-- Cured Light Hide
 			i(4233),	-- Cured Medium Hide
 			i(15407),	-- Cured Rugged Hide
 			i(8172),	-- Cured Thick Hide
-			i(4265),	-- Heavy Armor Kit
 			i(4234),	-- Heavy Leather
-			i(7372),	-- Heavy Leather Ammo Pouch
-			i(18662),	-- Heavy Leather Ball
-			i(7371),	-- Heavy Quiver
-			i(5081),	-- Kodo Hide Bag
-			i(2304),	-- Light Armor Kit
 			i(2318),	-- Light Leather
-			i(7278),	-- Light Leather Quiver
-			i(2313),	-- Medium Armor Kit
 			i(2319),	-- Medium Leather
-			i(8217),	-- Quickdraw Quiver
-			i(15564),	-- Rugged Armor Kit
 			i(8170),	-- Rugged Leather
-			i(7279),	-- Small Leather Ammo Pouch
-			i(8173),	-- Thick Armor Kit
 			i(4304),	-- Thick Leather
-			i(8218),	-- Thick Leather Ammo Pouch
 		}),
-		-- Moved to Leatherworking
-		i(12636),	-- Helm of the Great Chief
-		i(12641),	-- Invulnerable Mail
-		i(12632),	-- Storm Gauntlets
-		i(12624),	-- Wildthorn Mail
 	}),
 	prof(MINING, {
 		spell(2575, {	-- Mining

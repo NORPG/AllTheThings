@@ -530,14 +530,3 @@ i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard
 -- Later?
 i(22389, 27832, nil, MASTER_SWORDSMITH);	-- Sageblade
 --]]
-
-
---[[
---- LEATHERWORKING!---
-i(12716, 16728, nil, ARMORSMITH);	-- Helm of the Great Chief
-i(12728, 16746, nil, ARMORSMITH);	-- Invulnerable Mail
-i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets
-i(12691, 16650, nil, ARMORSMITH);	-- Wildthorn Mail
-i(19202, 23628);	-- Heavy Timbermaw Belt
-i(19204, 23629);	-- Heavy Timbermaw Boots
---]]

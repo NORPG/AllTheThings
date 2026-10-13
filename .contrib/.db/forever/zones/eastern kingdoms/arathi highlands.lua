@@ -66,7 +66,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 					coord = { 28.2, 45.0, MAP.ARATHI_HIGHLANDS },
 					races = HORDE_ONLY,
-					groups = CLASSIC_TBC_ELEMENTAL,
+					groups = LEATHERWORKING_RECIPES.ELEMENTAL,
 				}),
 			}),
 			prof(MINING, {

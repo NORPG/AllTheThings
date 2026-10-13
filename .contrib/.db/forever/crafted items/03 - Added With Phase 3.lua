@@ -31,7 +31,7 @@ root(ROOTS.Craftables, {
 			i(19051),	-- Girdle of the Dawn
 			i(19057),	-- Gloves of the Dawn
 			i(19043),	-- Heavy Timbermaw Belt
-			i(19048),	-- Heavy Timbermaw Boots
+			
 		}),
 	}),
 	--]]
@@ -42,19 +42,20 @@ root(ROOTS.Craftables, {
 		--i(19440),	-- Powerful Anti-Venom
 	}),
 	prof(LEATHERWORKING, {
-		prof(10656, {	-- Dragonscale Leatherworking
+		i(19048),	-- Heavy Timbermaw Boots
+		prof(DRAGONSCALE_LEATHERWORKING, {
 			i(19157),	-- Chromatic Gauntlets
 		}),
-		prof(10658, {	-- Elemental Leatherworking
+		prof(ELEMENTAL_LEATHERWORKING, {
 			i(19163),	-- Molten Belt
 		}),
-		prof(10660, {	-- Tribal Leatherworking
+		prof(TRIBAL_LEATHERWORKING, {
 			i(19162),	-- Corehound Belt
 		}),
 		n(ARMOR, {
 			filter(LEATHER, {
 				i(19052),	-- Dawn Treaders
-				i(19058),	-- Golden Mantle of the Dawn
+				--i(19058),	-- Golden Mantle of the Dawn
 				i(19149),	-- Lava Belt
 				i(19044),	-- Might of the Timbermaw
 				i(19049),	-- Timbermaw Brawlers

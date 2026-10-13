@@ -450,4 +450,280 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		i(255718),	-- Superior Poultice
 		i(255722),	-- Surgical Tourniquet
 	}),
+	prof(LEATHERWORKING, {
+		n(ARMOR, {
+			filter(LEATHER, {
+					i(277025),	-- Azure Gustwoven Belt
+					i(277027),	-- Azure Gustwoven Boots
+					i(277023),	-- Azure Gustwoven Bracers
+					i(277024),	-- Azure Gustwoven Gloves
+					i(277022),	-- Azure Gustwoven Harness
+					i(277050),	-- Azure Gustwoven Hood
+					i(277051),	-- Azure Gustwoven Spaulders
+					i(277026),	-- Azure Gustwoven Trousers
+					i(277021),	-- Azure Skyforged Greaves
+					i(277037),	-- Azure Stormsewn Cord
+					i(277035),	-- Azure Stormsewn Cuffs
+					i(277036),	-- Azure Stormsewn Handwraps
+					i(277038),	-- Azure Stormsewn Leggings
+					i(277039),	-- Azure Stormsewn Shoes
+					i(277034),	-- Azure Stormsewn Vest
+					i(277029),	-- Azure Windraveled Armguards
+					i(277052),	-- Azure Windraveled Cover
+					i(277053),	-- Azure Windraveled Drapes
+					i(277033),	-- Azure Windraveled Footwraps
+					i(277028),	-- Azure Windraveled Jerkin
+					i(277030),	-- Azure Windraveled Mitts
+					i(277032),	-- Azure Windraveled Pants
+					i(277031),	-- Azure Windraveled Strap
+					i(252424),	-- Black Whelp Slippers
+					i(252428),	-- Brawler's Leather Belt
+					i(252439),	-- Brawler's Leather Boots
+					i(252504),	-- Brawler's Leather Hood
+					i(252516),	-- Brawler's Leather Legguards
+					i(252508),	-- Brawler's Leather Tunic
+					i(277001),	-- Cloudy Gustwoven Belt
+					i(277003),	-- Cloudy Gustwoven Boots
+					i(276999),	-- Cloudy Gustwoven Bracers
+					i(277000),	-- Cloudy Gustwoven Gloves
+					i(276998),	-- Cloudy Gustwoven Harness
+					i(277042),	-- Cloudy Gustwoven Hood
+					i(277043),	-- Cloudy Gustwoven Spaulders
+					i(277002),	-- Cloudy Gustwoven Trousers
+					i(277013),	-- Cloudy Stormsewn Cord
+					i(277011),	-- Cloudy Stormsewn Cuffs
+					i(277012),	-- Cloudy Stormsewn Handwraps
+					i(277014),	-- Cloudy Stormsewn Leggings
+					i(277015),	-- Cloudy Stormsewn Shoes
+					i(277010),	-- Cloudy Stormsewn Vest
+					i(277005),	-- Cloudy Windraveled Armguards
+					i(277044),	-- Cloudy Windraveled Cover
+					i(277045),	-- Cloudy Windraveled Drapes
+					i(277009),	-- Cloudy Windraveled Footwraps
+					i(277004),	-- Cloudy Windraveled Jerkin
+					i(277006),	-- Cloudy Windraveled Mitts
+					i(277008),	-- Cloudy Windraveled Pants
+					i(277007),	-- Cloudy Windraveled Strap
+					i(252425),	-- Dark Leather Boots
+					i(252430),	-- Defender's Leather Belt
+					i(252441),	-- Defender's Leather Boots
+					i(252447),	-- Defender's Leather Hood
+					i(252457),	-- Defender's Leather Kilt
+					i(252450),	-- Defender's Leather Tunic
+					i(273931),	-- Grimstitch Boots
+					i(273929),	-- Grimstitch Gloves
+					i(273928),	-- Grimstitch Pants
+					i(273930),	-- Grimstitch Spaulders
+					i(273895),	-- Grovekeeper Boots
+					i(273897),	-- Grovekeeper Gauntlets
+					i(273885),	-- Grovekeeper Grips
+					i(273893),	-- Grovekeeper Handguards
+					i(273888),	-- Grovekeeper Kilt
+					i(273896),	-- Grovekeeper Leggings
+					i(273892),	-- Grovekeeper Legguards
+					i(273890),	-- Grovekeeper Mantle
+					i(273889),	-- Grovekeeper Mitts
+					i(273894),	-- Grovekeeper Pauldrons
+					i(273891),	-- Grovekeeper Sandals
+					i(273886),	-- Grovekeeper Shoulderpads
+					i(273898),	-- Grovekeeper Spaulders
+					i(273887),	-- Grovekeeper Stompers
+					i(273899),	-- Grovekeeper Treads
+					i(273884),	-- Grovekeeper Trousers
+					i(252449),	-- Hillman's Leather Boots
+					i(252472),	-- Mender's Leather Boots
+					i(252543),	-- Mender's Leather Bracers
+					i(252530),	-- Mender's Leather Gloves
+					i(252538),	-- Mender's Leather Shoulder
+					i(252477),	-- Mender's Leather Waistguard
+					i(252427),	-- Moonglow Boots
+					i(252426),	-- Murloc Scale Shoes
+					i(252468),	-- Prowler's Leather Boots
+					i(252539),	-- Prowler's Leather Bracers
+					i(252524),	-- Prowler's Leather Gloves
+					i(252534),	-- Prowler's Leather Shoulder
+					i(252473),	-- Prowler's Leather Waistguard
+					i(252528),	-- Skirmisher's Leather Gloves
+					i(252469),	-- Skulker's Leather Boots
+					i(252540),	-- Skulker's Leather Bracers
+					i(252525),	-- Skulker's Leather Gloves
+					i(252535),	-- Skulker's Leather Shoulder
+					i(252474),	-- Skulker's Leather Waistguard
+					i(252471),	-- Skycaller's Leather Boots
+					i(252542),	-- Skycaller's Leather Bracers
+					i(252529),	-- Skycaller's Leather Gloves
+					i(252537),	-- Skycaller's Leather Shoulder
+					i(252476),	-- Skycaller's Leather Waistguard
+					i(252526),	-- Stalker's Leather Gloves
+					i(252432),	-- Stormrider's Leather Belt
+					i(252443),	-- Stormrider's Leather Boots
+					i(252506),	-- Stormrider's Leather Hood
+					i(252518),	-- Stormrider's Leather Kilt
+					i(252510),	-- Stormrider's Leather Tunic
+					i(252552),	-- Tooled Leather Armor
+					i(252431),	-- Totemic Leather Belt
+					i(252442),	-- Totemic Leather Boots
+					i(252448),	-- Totemic Leather Hood
+					i(252458),	-- Totemic Leather Leggings
+					i(252451),	-- Totemic Leather Tunic
+					i(252429),	-- Trapper's Leather Belt
+					i(252440),	-- Trapper's Leather Boots
+					i(252505),	-- Trapper's Leather Hood
+					i(252517),	-- Trapper's Leather Legguards
+					i(252509),	-- Trapper's Leather Tunic
+					i(252470),	-- Warden's Leather Boots
+					i(252541),	-- Warden's Leather Bracers
+					i(252527),	-- Warden's Leather Gloves
+					i(252536),	-- Warden's Leather Shoulder
+					i(252475),	-- Warden's Leather Waistguard
+					i(252433),	-- Wisdom's Leather Belt
+					i(252444),	-- Wisdom's Leather Boots
+					i(252507),	-- Wisdom's Leather Hood
+					i(252519),	-- Wisdom's Leather Leggings
+					i(252511),	-- Wisdom's Leather Tunic
+					-- Unknown
+					i(275612),	-- Bileblister Boots
+					i(275610),	-- Bileblister Claws
+					i(275611),	-- Bileblister Girdle
+					i(252480),	-- Blue Suede Armor
+					i(252481),	-- Blue Suede Belt
+					i(252559),	-- Blue Suede Bracers
+					i(252546),	-- Blue Suede Gloves
+					i(252482),	-- Blue Suede Hat
+					i(252478),	-- Blue Suede Pants
+					i(252467),	-- Blue Suede Shoes
+					i(252554),	-- Blue Suede Shoulder
+					i(252494),	-- Brawler's Leather Gloves
+					i(252483),	-- Dawn Armor
+					i(252496),	-- Defender's Leather Gloves
+					i(279254),	-- Elderwild Pants
+					i(279252),	-- Elderwild Waistcord
+					i(275615),	-- Hivethrasher's Boots
+					i(275613),	-- Hivethrasher's Claws
+					i(275614),	-- Hivethrasher's Girdle
+					i(252486),	-- Ironfeather Leggings
+					i(252561),	-- Living Crown
+					i(252551),	-- Mender's Leather Gauntlets
+					i(252533),	-- Mender's Leather Shoes
+					i(279253),	-- Outlaw's Collar
+					i(252547),	-- Prowler's Leather Gauntlets
+					i(252465),	-- Prowler's Leather Shoes
+					i(252548),	-- Skulker's Leather Gauntlets
+					i(252531),	-- Skulker's Leather Shoes
+					i(252550),	-- Skycaller's Leather Gauntlets
+					i(252532),	-- Skycaller's Leather Shoes
+					i(252498),	-- Stormrider's Leather Gloves
+					i(252484),	-- Timbermaw Tunic
+					i(252544),	-- Tooled Leather Belt
+					i(252545),	-- Tooled Leather Boots
+					i(252557),	-- Tooled Leather Bracers
+					i(252555),	-- Tooled Leather Crown
+					i(252558),	-- Tooled Leather Epaulets
+					i(252553),	-- Tooled Leather Gauntlets
+					i(252560),	-- Tooled Leather Pants
+					i(252497),	-- Totemic Leather Gloves
+					i(252495),	-- Trapper's Leather Gloves
+					i(252485),	-- Warbear Helm
+					i(252549),	-- Warden's Leather Gauntlets
+					i(252466),	-- Warden's Leather Shoes
+					i(252479),	-- Wicked Leather Boots
+					i(252556),	-- Wicked Leather Shoulder
+					i(252499),	-- Wisdom's Leather Gloves
+
+			}),
+			filter(MAIL, {
+				i(252591),	-- Mender's Mail Belt
+				i(252573),	-- Mender's Mail Bracers
+				i(252579),	-- Mender's Mail Sabatons
+				i(252569),	-- Mender's Mail Shoulder
+				i(252590),	-- Skirmisher's Mail Belt
+				i(252572),	-- Skirmisher's Mail Bracers
+				i(252578),	-- Skirmisher's Mail Sabatons
+				i(252568),	-- Skirmisher's Mail Shoulder
+				i(252589),	-- Skycaller's Mail Belt
+				i(252571),	-- Skycaller's Mail Bracers
+				i(252577),	-- Skycaller's Mail Sabatons
+				i(252567),	-- Skycaller's Mail Shoulder
+				i(276541),	-- Spiritcaller Boots
+				i(273938),	-- Spiritcaller Epaulets
+				i(273937),	-- Spiritcaller Gauntlets
+				i(276539),	-- Spiritcaller Gloves
+				i(273939),	-- Spiritcaller Greaves
+				i(273933),	-- Spiritcaller Grips
+				i(276538),	-- Spiritcaller Kilt
+				i(273932),	-- Spiritcaller Leggings
+				i(276540),	-- Spiritcaller Mantle
+				i(273936),	-- Spiritcaller Pants
+				i(273934),	-- Spiritcaller Spaulders
+				i(273935),	-- Spiritcaller Treads
+				i(252588),	-- Stalker's Mail Belt
+				i(252570),	-- Stalker's Mail Bracers
+				i(252576),	-- Stalker's Mail Sabatons
+				i(252566),	-- Stalker's Mail Shoulder
+				i(273901),	-- Wildstalker's Gauntlets
+				i(273903),	-- Wildstalker's Greaves
+				i(273900),	-- Wildstalker's Legguards
+				i(273902),	-- Wildstalker's Spaulders
+				-- Unknown
+				i(252605),	-- Black Dragonscale Helm
+				i(252604),	-- Blue Dragonscale Helm
+				i(275620),	-- Broodwatcher's Belt
+				i(275619),	-- Broodwatcher's Clenchers
+				i(275621),	-- Broodwatcher's Treaders
+				i(252575),	-- Charged Scorpid Belt
+				i(252602),	-- Charged Scorpid Boots
+				i(252593),	-- Charged Scorpid Bracers
+				i(252596),	-- Charged Scorpid Gauntlets
+				i(252581),	-- Charged Scorpid Helm
+				i(252600),	-- Charged Scorpid Leggings
+				i(252583),	-- Charged Scorpid Shoulder
+				i(252598),	-- Charged Scorpid Vest
+				i(279255),	-- Eternity Pauldrons
+				i(252594),	-- Heavy Scorpid Boots
+				i(252565),	-- Mender's Mail Boots
+				i(252587),	-- Mender's Mail Gauntlets
+				i(279257),	-- Mourning Handguards
+				i(252606),	-- Pristine Scorpid Leggings
+				i(252603),	-- Red Dragonscale Leggings
+				i(275617),	-- Scalegut Belt
+				i(275616),	-- Scalegut Clenchers
+				i(275618),	-- Scalegut Treaders
+				i(252564),	-- Skirmisher's Mail Boots
+				i(252586),	-- Skirmisher's Mail Gauntlets
+				i(252563),	-- Skycaller's Mail Boots
+				i(252585),	-- Skycaller's Mail Gauntlets
+				i(252562),	-- Stalker's Mail Boots
+				i(252584),	-- Stalker's Mail Gauntlets
+				i(252595),	-- Supple Scorpid Belt
+				i(252574),	-- Supple Scorpid Boots
+				i(252582),	-- Supple Scorpid Bracers
+				i(252597),	-- Supple Scorpid Helm
+				i(252580),	-- Supple Scorpid Leggings
+				i(252601),	-- Supple Scorpid Sabatons
+				i(252592),	-- Supple Scorpid Shoulder
+				i(252599),	-- Supple Scorpid Vest
+				i(279256),	-- Tranquil Wristguards
+			}),
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(252453),	-- Forceful Heavy Armor Kit
+			i(252437),	-- Forceful Medium Armor Kit
+			i(252463),	-- Forceful Thick Armor Kit
+			i(252452),	-- Mystic Heavy Armor Kit
+			i(252436),	-- Mystic Medium Armor Kit
+			i(252487),	-- Mystic Rugged Armor Kit
+			i(252462),	-- Mystic Thick Armor Kit
+			-- Unknown
+			i(252488),	-- Forceful Rugged Armor Kit
+			i(279258),	-- Wild Leather Armor Kit
+		}),
+		filter(BAGS, {
+			i(277715),	-- Light Leather Reagent Bag
+		}),
+		filter(MISC, {
+			i(279978),	-- Camp Tent
+			i(279943),	-- Spinning Wheel
+			i(279941),	-- Tanning Rack
+		}),
+	}),
 }));

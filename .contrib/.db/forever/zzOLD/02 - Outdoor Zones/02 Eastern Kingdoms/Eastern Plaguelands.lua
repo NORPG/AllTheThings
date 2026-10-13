@@ -1364,7 +1364,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 						i(19446),	-- Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
 						--]]
 						i(19216),	-- Pattern: Argent Boots (RECIPE!)
-						i(19328),	-- Pattern: Dawn Treaders (RECIPE!)
+						--i(19328),	-- Pattern: Dawn Treaders (RECIPE!)
 						--[[Commented out until confirmed
 						i(19203),	-- Plans: Girdle of the Dawn (RECIPE!)
 						i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)

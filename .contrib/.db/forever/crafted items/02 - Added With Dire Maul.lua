@@ -13,13 +13,13 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		prof(10656, {	-- Dragonscale Leatherworking
+		prof(DRAGONSCALE_LEATHERWORKING, {
 			i(18509),	-- Chromatic Cloak
 		}),
-		prof(10658, {	-- Elemental Leatherworking
+		prof(ELEMENTAL_LEATHERWORKING, {
 			i(18511),	-- Shifting Cloak
 		}),
-		prof(10660, {	-- Tribal Leatherworking
+		prof(TRIBAL_LEATHERWORKING, {
 			i(18510),	-- Hide of the Wild
 		}),
 		n(ARMOR, {

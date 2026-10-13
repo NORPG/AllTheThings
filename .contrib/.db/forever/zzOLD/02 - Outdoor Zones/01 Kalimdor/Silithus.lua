@@ -2061,6 +2061,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 		n(VENDORS, {
 			n(15293, {	-- Aendel Windspear
 				["coord"] = { 62.6, 49.8, MAP.SILITHUS },
+				--[[
 				["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 					{		-- Neutral
 					}, {	-- Friendly
@@ -2079,6 +2080,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 						i(20382),	-- Pattern: Dreamscale Breastplate (RECIPE!)
 					},
 				}),
+				--]]
 			}),
 			n(15174, {	-- Calandrath <Innkeeper>
 				["coord"] = { 51.8, 39.0, MAP.SILITHUS },

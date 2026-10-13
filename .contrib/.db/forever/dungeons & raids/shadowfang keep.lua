@@ -123,6 +123,9 @@ root(ROOTS.Instances, {
 				i(932),	-- Fel Steed Saddlebags
 			}),
 			n(3886, {	-- Razorclaw the Butcher
+				i(273096, {	-- Blueprint: Tanning Rack (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				i(1292),	-- Butcher's Cleaver
 				i(6633),	-- Butcher's Slicer
 				i(6226),	-- Bloody Apron

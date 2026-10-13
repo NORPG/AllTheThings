@@ -66,7 +66,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>
 					["coord"] = { 13.4, 43.4, MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = EXPERT_ARTISAN_LEATHERWORKING,
+					["groups"] = LEATHERWORKING_RECIPES.ARTISAN,
 				}),
 			}),
 		}),

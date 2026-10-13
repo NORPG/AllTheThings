@@ -1289,7 +1289,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				["cr"] = 7112,	-- Jaedenar Cultist
 			}),
 			i(15754, {	-- Pattern: Warbear Woolies (RECIPE!)
-				["timeline"] = { REMOVED_1_11_1 },
 				["crs"] = {
 					7158,	-- Deadwood Shaman
 					7156,	-- Deadwood Den Watcher
@@ -1303,7 +1302,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					{ 38.6, 69.6, MAP.FELWOOD },
 					{ 33.8, 66.6, MAP.FELWOOD },
 				},
-				["timeline"] = { ADDED_1_11_1 },	-- ATT Discord 05.09.2023
 				["cr"] = 7106,	-- Jadefire Rogue
 			}),
 		}),
