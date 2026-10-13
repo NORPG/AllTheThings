@@ -3151,6 +3151,19 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			n(3491, {	-- Ironzar <Weaponsmith>
+				coord = { 62.2, 37.4, MAP.THE_BARRENS },
+				sym = {{ "select", "itemID",
+					2025,	-- Bearded Axe
+					2029,	-- Cleaver
+					2024,	-- Espadon
+					2030,	-- Gnarled Staff
+					2028,	-- Hammer
+					2208,	-- Poniard
+					2026,	-- Rock Hammer
+					2027,	-- Scimitar
+				}},
+			}),
 			n(248202, {	-- Jim'bek <Tailor>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
