@@ -796,7 +796,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1214, {	-- Aldren Cordon <Clothier>
 				coord = { 64.8, 66.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt
@@ -822,7 +822,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1687, {	-- Cliff Hadin <Bowyer>
 				coord = { 83.0, 63.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2507,	-- Laminated Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
@@ -842,7 +842,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1686, {	-- Irene Sureshot <Gunsmith>
 				coord = { 83.2, 63.5, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
 				}},
@@ -850,7 +850,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(954, {	-- Kat Sampson <Leather Armor Merchant>
 				coord = { 82.6, 64.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					1843,	-- Tanned Leather Belt
 					843,	-- Tanned Leather Boots
 					1844,	-- Tanned Leather Bracers
@@ -879,7 +879,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1362, {	-- Gothor Brumn <Armorer>
 				coord = { 24.1, 18.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
 					849,	-- Chainmail Boots
@@ -891,7 +891,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(167, {	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
 					849,	-- Chainmail Boots
@@ -911,7 +911,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(222, {	-- Nillen Andemar <Macecrafter>
 				coord = { 43.0, 10.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2492,	-- Cudgel
 					1197,	-- Giant Mace
 					852,	-- Mace
@@ -941,7 +941,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1469, {	-- Vrok Blunderblast <Gunsmith>
 				coord = { 25.3, 42.5, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2511,	-- Hunter's Boomstick
 					2509,	-- Ornate Blunderbuss
 				}},

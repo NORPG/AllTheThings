@@ -4,7 +4,7 @@
 root(ROOTS.Character, {
 	n(FACTIONS, sharedData({
 		sharedDescription = "This is a hidden reputation. It might not count towards reputation achievements.",
-	},{
+	}, {
 		-- CRIEVE NOTE: It is actually possible to max these out over several years.
 		faction(469, {	-- Alliance
 			icon = 374217,

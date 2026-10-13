@@ -168,7 +168,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.4, 68.8, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { PRIEST },
-						lvl = 5
+						lvl = 5,
 					}),
 					q(5441, {	-- Lazy Peons
 						qg = 11378,	-- Foreman Thazz'ril
@@ -365,27 +365,27 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 		explorationHeader({
 			-- #if AFTER CATA
 			exploration(374),	-- Bladefist Bay
-			visit_exploration(365,{coord={54.50,19.20,VALLEY_OF_TRIALS}}),	-- Burning Blade Coven
-			visit_exploration(393,{coord={61.20,65.50,MAP.DUROTAR}}),	-- Darkspear Strand
+			visit_exploration(365, {coord={54.50, 19.20, VALLEY_OF_TRIALS}}),	-- Burning Blade Coven
+			visit_exploration(393, {coord={61.20, 65.50, MAP.DUROTAR}}),	-- Darkspear Strand
 			exploration(4865),	-- Darkspear Training Grounds
-			visit_exploration(375,{coord={58.70,25.40,MAP.DUROTAR}}),	-- Deadeye Shore
+			visit_exploration(375, {coord={58.70, 25.40, MAP.DUROTAR}}),	-- Deadeye Shore
 			exploration(370),	-- Drygulch Ravine
 			exploration(6453),	-- Echo Isles
 			exploration(368),	-- Echo Isles
-			visit_exploration(1297,{coord={50.40,19.00,MAP.DUROTAR}}),	-- Jaggedswine Farm
+			visit_exploration(1297, {coord={50.40, 19.00, MAP.DUROTAR}}),	-- Jaggedswine Farm
 			exploration(366),	-- Northwatch Foothold
 			exploration(1637),	-- Orgrimmar
 			exploration(362),	-- Razor Hill
-			visit_exploration(6747,{coord={52.50,45.50,MAP.DUROTAR}}),	-- Razor Hill Outskirts
-			visit_exploration(6750,{coord={50.30,39.50,MAP.DUROTAR}}),	-- Razor Hill Watchtower
+			visit_exploration(6747, {coord={52.50, 45.50, MAP.DUROTAR}}),	-- Razor Hill Outskirts
+			visit_exploration(6750, {coord={50.30, 39.50, MAP.DUROTAR}}),	-- Razor Hill Watchtower
 			exploration(816),	-- Razormane Grounds
 			exploration(410),	-- Razorwind Canyon
-			visit_exploration(1296,{coord={43.20,16.20,MAP.DUROTAR}}),	-- Rocktusk Farm
-			visit_exploration(373,{coord={60.60,61.10,MAP.DUROTAR}}),	-- Scuttle Coast
+			visit_exploration(1296, {coord={43.20, 16.20, MAP.DUROTAR}}),	-- Rocktusk Farm
+			visit_exploration(373, {coord={60.60, 61.10, MAP.DUROTAR}}),	-- Scuttle Coast
 			exploration(367),	-- Sen'jin Village
-			visit_exploration(6748,{coord={59.20,72.00,MAP.DUROTAR}}),	-- Sen'jin Village Outskirts
+			visit_exploration(6748, {coord={59.20, 72.00, MAP.DUROTAR}}),	-- Sen'jin Village Outskirts
 			exploration(817),	-- Skull Rock
-			visit_exploration(879,{coord={37.80,20.70,MAP.DUROTAR}}),	-- Southfury River
+			visit_exploration(879, {coord={37.80, 20.70, MAP.DUROTAR}}),	-- Southfury River
 			exploration(4981),	-- Southfury Watershed
 			visit_exploration(4982),	-- The Dranosh'ar Blockade
 			exploration(369),	-- Thunder Ridge
@@ -1061,7 +1061,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 834,	-- Winds in the Desert
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+				--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/12 Dustwind Savage
@@ -1362,7 +1362,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(786, {	-- Thwarting Kolkar Aggression
-				-- ["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
+				--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
 				qg = 3140,	-- Lar Prowltusk
 				coord = { 54.52, 75.20, MAP.DUROTAR },
 				races = HORDE_ONLY,
@@ -1442,7 +1442,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(834, {	-- Winds in the Desert
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				-- ["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+				--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/5 Sack of Supplies
@@ -1613,7 +1613,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					5823,	-- Death Flayer
 					3127,	-- Venomtail Scorpid
 				},
-				description = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials."
+				description = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",
 			}),
 		}),
 	},

@@ -370,7 +370,7 @@ i(19772, 24124);	-- Blood Tiger Breastplate
 i(19769, 24121);	-- Primal Batskin Jerkin
 i(19771, 24123);	-- Primal Batskin Bracers
 i(19770, 24122);	-- Primal Batskin Gloves
---naxx
+-- naxx
 i(0, 28222);		-- Icy Scale Breastplate
 i(22696, 0);		-- Icy Scale Breastplate
 i(0, 28219);		-- Polar Tunic
@@ -575,12 +575,12 @@ i(15759, 19085, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Breastpla
 i(15730, 19054, nil, DRAGONSCALE_LEATHERWORKING);	-- Red Dragonscale Breastplate
 i(15733, 19060, nil, DRAGONSCALE_LEATHERWORKING);	-- Green Dragonscale Leggings
 i(15781, 19107, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Leggings
---maybe?
+-- maybe?
 i(18517, 22926, nil, DRAGONSCALE_LEATHERWORKING);	-- Chromatic Cloak
 i(17025, 20855, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Boots
 -- p5
 i(20382, 24703, nil, DRAGONSCALE_LEATHERWORKING);	-- Dreamscale Breastplate
---p3
+-- p3
 i(19331, 23708, nil, DRAGONSCALE_LEATHERWORKING);	-- Chromatic Gauntlets
 
 

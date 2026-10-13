@@ -294,7 +294,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			exploration(4836),	-- Stonetalon Pass
 			-- #endif
 			exploration(820),	-- The Golden Plains
-			visit_exploration(821,{coord={61.9,64.1,MAP.MULGORE}}),	-- The Rolling Plains
+			visit_exploration(821, {coord={61.9, 64.1, MAP.MULGORE}}),	-- The Rolling Plains
 			exploration(360),	-- The Venture Co. Mine
 			exploration(1638),	-- Thunder Bluff
 			exploration(397),	-- Thunderhorn Water Well

@@ -22,7 +22,7 @@ root(ROOTS.WorldDrops, {
 					i(2567),	-- Evocator's Blade
 					i(5756),	-- Sliverblade
 				},
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					11968,	-- Amber Hoop
 					4999,	-- Azora's Will
 					11984,	-- Cobalt Ring
@@ -54,13 +54,13 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(5760, {	-- Eternium Lockbox
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					12058,	-- Demonic Bone Ring
 				}},
 			}),
 			i(4633),	-- Heavy Bronze Lockbox
 			i(16885, {	-- Heavy Junkbox
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					1728,	-- Teebu's Blazing Longsword (Does not currently load on beta)
 					16215,	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
 					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -99,7 +99,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(4634, {	-- Iron Lockbox
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					11164,	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 					7449,	-- Pattern: Dusky Leather Leggings (RECIPE!)
 					5774,	-- Pattern: Green Silk Pack (RECIPE!)
@@ -120,7 +120,7 @@ root(ROOTS.WorldDrops, {
 			i(5758),	-- Mithril Lockbox,
 			i(4632),	-- Ornate Bronze Lockbox
 			i(4638, {	-- Reinforced Steel Lockbox
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					16215,	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					11225,	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -141,7 +141,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(4637, {	-- Steel Lockbox
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					11204,	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 					11202,	-- Formula: Enchant Shield - Stamina (RECIPE!)
 					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
@@ -161,7 +161,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(4636, {	-- Strong Iron Lockbox
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					11167,	-- Formula: Enchant Boots - Lesser Spirit (RECIPE!)
 					11165,	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 					7085,	-- Pattern: Azure Shoulders (RECIPE!)
@@ -180,7 +180,7 @@ root(ROOTS.WorldDrops, {
 					4416,	-- Schematic: Goblin Land Mine (RECIPE!)
 					4417,	-- Schematic: Large Seaforium Charge (RECIPE!)
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
-					4414	-- Schematic: Portable Bronze Mortar (RECIPE!)
+					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
 				}},
 			}),
 			i(5759),	-- Thorium Lockbox
@@ -3770,12 +3770,12 @@ root(ROOTS.WorldDrops, {
 	}),
 	filter(REAGENTS, {
 		-- Table of Content:
-		-- 	Cloth + Silk
-		-- 	Elemental reagents
-		-- 	Clams
-		-- 	Cooking reagents
-		-- 	Sacks of Gems
-		-- 	Other reagents
+		-- Cloth + Silk
+		-- Elemental reagents
+		-- Clams
+		-- Cooking reagents
+		-- Sacks of Gems
+		-- Other reagents
 		-- _______________________________
 		--
 		-- Cloth:
@@ -4798,7 +4798,7 @@ root(ROOTS.WorldDrops, {
 		i(17963),	-- Green Sack of Gems
 		i(17965),	-- Yellow Sack of Gems
 		-- Other reagents:
-		i(11754, {maps = { MAP.BLACKROCK_DEPTHS }, }),	-- Black Diamond
+		i(11754, { maps = { MAP.BLACKROCK_DEPTHS }, }),	-- Black Diamond
 		i(7191),	-- Fused Wiring
 		i(19441, {	-- Huge Venom Sac
 			description = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",

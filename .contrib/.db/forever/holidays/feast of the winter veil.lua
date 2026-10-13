@@ -5,7 +5,7 @@
 -- WoWHead doesn't list specific colors on all of the vendors, but if you visit on the opposite faction, they sell both. It's based on the character's faction. Putting this in here in case its different and we need two separate distinctions.
 local HOLIDAY_VENDOR_GROUPS_GREEN = {
 	-- Nothing yet
-}
+};
 local HOLIDAY_VENDOR_GROUPS_RED = {
 	-- Nothing yet
 };
@@ -397,7 +397,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				lvl = 10,
-				groups = { i(17735)	},	-- The Feast of Winter Veil (QI!)
+				groups = { i(17735) },	-- The Feast of Winter Veil (QI!)
 			}),
 			q(6964, {	-- The Reason for the Season (Horde)
 				qg = 9550,	-- Furmund
@@ -405,24 +405,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				races = HORDE_ONLY,
 				isYearly = true,
 				lvl = 10,
-				groups = { i(17735)	},	-- The Feast of Winter Veil (QI!)
+				groups = { i(17735) },	-- The Feast of Winter Veil (QI!)
 			}),
 			{	-- Treats for Greatfather Winter
 				allianceQuestData = q(7025, {	-- Treats for Greatfather Winter (Alliance)
-					-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
-					-- 	7022,	-- Greatfather Winter is Here! (Alliance)
-					-- 	7023,	-- Greatfather Winter is Here! (Alliance)
-					-- },
+					--["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
+					--7022,	-- Greatfather Winter is Here! (Alliance)
+					--7023,	-- Greatfather Winter is Here! (Alliance)
+					--},
 					qg = 13444,	-- Greatfather Winter
 					coord = { 33.2, 65.8, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
 				}),
 				hordeQuestData = q(6962, {	-- Treats for Great-father Winter (Horde)
-					-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
-					-- 	6961,	-- Great-father Winter is Here! (Horde)
-					-- 	7021,	-- Great-father Winter is Here! (Horde)
-					-- 	7024,	-- Great-father Winter is Here! (Horde)
-					-- },
+					--["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
+					--6961,	-- Great-father Winter is Here! (Horde)
+					--7021,	-- Great-father Winter is Here! (Horde)
+					--7024,	-- Great-father Winter is Here! (Horde)
+					--},
 					qg = 13445,	-- Great-father Winter
 					coord = { 49.9, 78.4, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,

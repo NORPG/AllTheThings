@@ -479,7 +479,7 @@ i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
 --]]
 --- WEAPONSMITH ---
-i(0, WEAPONSMITH, nil, WEAPONSMITH);-- Weaponsmith
+i(0, WEAPONSMITH, nil, WEAPONSMITH);	-- Weaponsmith
 i(0, 10011, nil, WEAPONSMITH);		-- Blight
 i(0, 10007, nil, WEAPONSMITH);		-- Phantom Blade
 i(0, 10003, nil, WEAPONSMITH);		-- The Shatterer

@@ -1086,7 +1086,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					3630,	-- Gnome Engineering
 					3632,	-- Gnome Engineering
 					3633,	-- Goblin Engineering
-					-- 3634,	-- Gnome Engineering
+					--3634,	-- Gnome Engineering
 					3635,	-- Gnome Engineering
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
@@ -1108,7 +1108,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					3633,	-- Goblin Engineering
 					3634,	-- Gnome Engineering
 					3635,	-- Gnome Engineering
-					-- 3637,	-- Gnome Engineering
+					--3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
@@ -1125,7 +1125,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					3629,	-- Goblin Engineering
 					3630,	-- Gnome Engineering
 					3632,	-- Gnome Engineering
-					-- 3633,	-- Goblin Engineering
+					--3633,	-- Goblin Engineering
 					3634,	-- Gnome Engineering
 					3635,	-- Gnome Engineering
 					3637,	-- Gnome Engineering
@@ -1415,7 +1415,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(277718),	-- Reins of the Spectral Bear (MOUNT!)
 				},
 			}),
-			]]--
+			]]-- 
 			q(1060, {	-- Letter to Jin'Zil
 				sourceQuest = 876,	-- Serena Bloodfeather
 				qg = 3449,	-- Darsok Swiftdagger
@@ -3114,7 +3114,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3486, {	-- Halija Whitestrider <Clothier>
 				coord = { 52.2, 31.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt
@@ -3279,18 +3279,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
 				coord = { 62.2, 38.4, MAP.THE_BARRENS },
 				sym = {{ "select", "itemID",
-					200, -- Thick Cloth Vest
-					3597, -- Thick Cloth Belt
-					201, -- Thick Cloth Pants
-					202, -- Thick Cloth Shoes
-					3598, -- Thick Cloth Bracers
-					203, -- Thick Cloth Gloves
-					236, -- Cured Leather Armor
-					1849, -- Cured Leather Belt
-					237, -- Cured Leather Pants
-					238, -- Cured Leather Boots
-					1850, -- Cured Leather Bracers
-					239, -- Cured Leather Gloves
+					200,	-- Thick Cloth Vest
+					3597,	-- Thick Cloth Belt
+					201,	-- Thick Cloth Pants
+					202,	-- Thick Cloth Shoes
+					3598,	-- Thick Cloth Bracers
+					203,	-- Thick Cloth Gloves
+					236,	-- Cured Leather Armor
+					1849,	-- Cured Leather Belt
+					237,	-- Cured Leather Pants
+					238,	-- Cured Leather Boots
+					1850,	-- Cured Leather Bracers
+					239,	-- Cured Leather Gloves
 				}},
 				groups = {
 					i(4795, {	-- Bear Bracers

@@ -34,7 +34,7 @@ root(ROOTS.Craftables, {
 			i(18283),	-- Biznicks 247x128 Accurascope
 		}),
 	}),
-		]]--
+		]]-- 
 	prof(LEATHERWORKING, {
 		filter(MISC, {
 			i(18251),	-- Core Armor Kit

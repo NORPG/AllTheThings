@@ -358,7 +358,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(836, {	-- Durnan Furcutter
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{"select", "itemID",
+						sym = {{ "select", "itemID",
 							2122,	-- Cracked Leather Belt
 							2123,	-- Cracked Leather Boots
 							2124,	-- Cracked Leather Bracers
@@ -376,7 +376,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(1104, {	-- Grundel Harkin <Armorer>
 						coord = { 28.8, 67.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{"select", "itemID",
+						sym = {{ "select", "itemID",
 							2129,	-- Large Round Shield
 							17184,	-- Small Shield
 							2380,	-- Tarnished Chain Belt
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(945, {	-- Rybrad Coldbank
 						coord = { 28.7, 67.7, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{"select", "itemID",
+						sym = {{ "select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
 							2130,	-- Club
@@ -875,7 +875,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						provider = { "i", 267414 },	-- Pristine Leopard Pelt
 						cr = 260157,	-- Elder Snow Leopard
 					}),
-				}
+				},
 			}),
 			q(96390, {	-- Nip 'Em in the Bud
 				sourceQuest = 96392,	-- Farsen's Watch
@@ -888,7 +888,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					objective(1, {	-- 0/10 Dark Iron Spy slain
 						provider = { "n", 6123 },	-- Dark Iron Spy
 					}),
-				}
+				},
 			}),
 			q(2239, {	-- Onin's Report
 				sourceQuest = 2238,	-- Simple Subterfugin'
@@ -1640,7 +1640,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1238, {	-- Gamili Frosthide
 				coord = { 45.2, 51.9, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2122,	-- Cracked Leather Belt
 					2123,	-- Cracked Leather Boots
 					2124,	-- Cracked Leather Bracers
@@ -1670,7 +1670,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1273, {	-- Grawn Thromwyn
 				coord = { 45.3, 52.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2492,	-- Cudgel
 					2488,	-- Gladius
 					2491,	-- Large Axe
@@ -1691,7 +1691,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1243, {	-- Hegnar Rumbleshot <Gunsmith>
 				coord = { 40.7, 65.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
 				}},

@@ -1970,7 +1970,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 		n(VENDORS, {
 			n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 				coord = { 28.2, 77.5, MAP.STRANGLETHORN_VALE },
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
 					5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
 				}},
@@ -2149,7 +2149,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
 				coord = { 28.2, 77.6, MAP.STRANGLETHORN_VALE },
-				sym = {{"select","itemID",
+				sym = {{ "select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots

@@ -477,7 +477,7 @@ root(ROOTS.Craftables, {
 			i(10938, {	-- Lesser Magic Essence
 				description = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
 			}),
-			i(11135, {	-- Greater Mystic Essence 
+			i(11135, {	-- Greater Mystic Essence
 				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
 			}),
 			i(11134, {	-- Lesser Mystic Essence
@@ -781,7 +781,7 @@ root(ROOTS.Craftables, {
 			i(10546),	-- Deadly Scope
 			i(10548),	-- Sniper Scope
 			i(4406),	-- Standard Scope
-		}),	
+		}),
 	}),
 	prof(FIRST_AID, {
 		i(6452),	-- Anti-Venom
@@ -824,7 +824,7 @@ root(ROOTS.Craftables, {
 				{ "n", 4222 },	-- Voloren <Fishing Supplies>
 			},]]
 		}, {
-			i(6533, {isLimited = true, }),	-- Aquadynamic Fish Attractor
+			i(6533, { isLimited = true, }),	-- Aquadynamic Fish Attractor
 			i(6532),	-- Bright Baubles
 			i(6256),	-- Fishing Pole
 			i(6530),	-- Nightcrawlers
@@ -1271,7 +1271,7 @@ root(ROOTS.Craftables, {
 				MAP.THE_HINTERLANDS,
 			},
 		}),
-		-- i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
+		--i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		i(13760, {	-- Raw Sunscale Salmon
 			description = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
 			coord = { 60.6, 71.7, MAP.SILITHUS },
@@ -1296,7 +1296,7 @@ root(ROOTS.Craftables, {
 			},
 			provider = { "o", 180712 },	-- Stonescale Eel Swarm
 		}),
-		-- i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
+		--i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		-- Fish schools:
 		o(180683, {	-- Firefin Snapper School
 			description = "Can be found on the seaside.",
@@ -1482,7 +1482,7 @@ root(ROOTS.Craftables, {
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
 				learnedAt = 70,
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(1622, {	-- Bruiseweed
@@ -1502,7 +1502,7 @@ root(ROOTS.Craftables, {
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
 				learnedAt = 100,
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(2044, {	-- Dragon's Teeth [CATA+] / Wintersbite
@@ -1698,7 +1698,7 @@ root(ROOTS.Craftables, {
 				-- Note: This node get replaced by o(1620) at an unknown point between MOP and TWW.
 				learnedAt = 50,
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(176586, {	-- Mountain Silversage
@@ -1734,7 +1734,7 @@ root(ROOTS.Craftables, {
 			o(3724, {	-- Peacebloom (The Barrens)
 				-- Note: This node get replaced by o(1618) at an unknown point between MOP and TWW.
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(142140, {	-- Purple Lotus
@@ -1765,7 +1765,7 @@ root(ROOTS.Craftables, {
 			o(3725, {	-- Silverleaf (The Barrens)
 				-- Note: This node get replaced by o(1617) at an unknown point between MOP and TWW.
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(176587, {	-- Sorrowmoss [CATA+] / Plaguebloom
@@ -2784,7 +2784,7 @@ root(ROOTS.Craftables, {
 							MAP.TIRISFAL_GLADES,
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
-							MAP.ZEPHRAS_ISLE
+							MAP.ZEPHRAS_ISLE,
 						},
 						provider = { "o", 1731 },	-- Copper Vein
 					}),
@@ -2852,7 +2852,7 @@ root(ROOTS.Craftables, {
 							MAP.TIRISFAL_GLADES,
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
-							MAP.ZEPHRAS_ISLE
+							MAP.ZEPHRAS_ISLE,
 						},
 						provider = { "o", 1731 },	-- Copper Vein
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3002,9 +3002,9 @@ root(ROOTS.Craftables, {
 					--
 					-- Not Ore --
 					-- Elements with unviably low droprate:
-					-- i(7067),	-- Elemental Earth
-					-- i(7068),	-- Elemental Fire
-					-- i(7076),	-- Essence of Earth
+					--i(7067),	-- Elemental Earth
+					--i(7068),	-- Elemental Fire
+					--i(7076),	-- Essence of Earth
 					-- Misc:
 					i(12363, {	-- Arcane Crystal
 						description = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
@@ -3565,7 +3565,7 @@ root(ROOTS.Craftables, {
 				description = "Can be skinned from scorpids in the level bracket 50-60.",
 				maps_disp = {
 					MAP.BURNING_STEPPES,
-					MAP.SILITHUS
+					MAP.SILITHUS,
 				},
 			}),
 			i(15414, {	-- Red Dragonscale
@@ -3787,7 +3787,7 @@ root(ROOTS.Craftables, {
 				i(14130),	-- Wizardweave Turban
 				i(2583),	-- Woolen Boots
 			}),
-			--maybe
+			-- maybe
 			i(16980),	-- Flarecore Mantle
 			i(16979),	-- Flarecore Gloves
 		}),

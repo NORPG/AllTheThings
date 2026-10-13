@@ -122,7 +122,7 @@ local _MAP = setmetatable({
 }, mapMetatable);
 
 -- Temporary solution forces the map globals to exist. Also apply to the MAP constant from shared
-for mapConst,mapID in pairs(_MAP) do
+for mapConst, mapID in pairs(_MAP) do
 	_G[mapConst] = mapID;
-	MAP[mapConst] = mapID
+	MAP[mapConst] = mapID;
 end

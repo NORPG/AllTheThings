@@ -15,7 +15,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			exploration(109),	-- Furlbrow's Pumpkin Farm
 			exploration(113),	-- Gold Coast Quarry
 			exploration(111),	-- Jangolode Mine
-			visit_exploration(2,	{coord={58.4,9.4,MAP.WESTFALL}}),	-- Longshore
+			visit_exploration(2, {coord={58.4, 9.4, MAP.WESTFALL}}),	-- Longshore
 			exploration(20),	-- Moonbrook
 			exploration(107),	-- Saldean's Farm
 			exploration(108),	-- Sentinel Hill

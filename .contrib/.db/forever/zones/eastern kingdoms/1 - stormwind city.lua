@@ -42,12 +42,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				n(957, {	-- Dane Lindgren <Journeyman Blacksmith>
 					coord = { 64.0, 37.2, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.APPRENTICE
+					groups = BLACKSMITHING_RECIPES.APPRENTICE,
 				}),
 				n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 					coord = { 63.8, 37.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.JOURNEYMAN
+					groups = BLACKSMITHING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 			prof(COOKING, {
@@ -375,7 +375,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(1665, {	-- Bartleby's Mug
 				sourceQuest = 1640,	-- Beat Bartleby
 				altQuests = {
-					-- 1665,	-- Bartleby's Mug
+					--1665,	-- Bartleby's Mug
 					1678,	-- Vejrek
 					1683,	-- Vorlus Vilehoof
 				},
@@ -729,7 +729,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				altQuests = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
-					-- 3630,	-- Gnome Engineering
+					--3630,	-- Gnome Engineering
 					3632,	-- Gnome Engineering
 					3633,	-- Goblin Engineering
 					3634,	-- Gnome Engineering
@@ -748,7 +748,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(3629, {	-- Goblin Engineering [A]
 				altQuests = {
 					3526,	-- Goblin Engineering
-					-- 3629,	-- Goblin Engineering
+					--3629,	-- Goblin Engineering
 					3630,	-- Gnome Engineering
 					3632,	-- Gnome Engineering
 					3633,	-- Goblin Engineering
@@ -1895,7 +1895,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1310, {	-- Evan Larson
 				coord = { 52.5, 83.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					3889,	-- Russet Hat
 					3890,	-- Studded Hat
 					3891,	-- Augmented Chain Helm
@@ -1941,7 +1941,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1349, {	-- Agustus Moulaine <Mail Armor Merchant>
 				coord = { 53.6, 57.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -1997,7 +1997,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1319, {	-- Bryan Cross <Shield Merchant>
 				coord = { 69.6, 57.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2451,	-- Crested Heater Shield
 					2448,	-- Heavy Pavise
 					2446,	-- Kite Shield
@@ -2396,7 +2396,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1303, {	-- Felicia Gump <Herbalism Supplier>
 				coord = { 64.2, 60.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					3422,	-- Beautiful Wildflowers
 					3420,	-- Black Rose
 					3424,	-- Bouquet Of Black Roses
@@ -2408,7 +2408,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 				coord = { 58.6, 69.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
@@ -2439,7 +2439,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1348, {	-- Gregory Ardus <Staff & Mace Merchant>
 				coord = { 48.2, 54.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -2537,7 +2537,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(5509, {	-- Kathrum Axehand <Axe Merchant>
 				coord = { 59.6, 34.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2523,	-- Bullova
 					2531,	-- Great Axe
 				}},
@@ -2649,7 +2649,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1287, {	-- Marda Weller <Weapons Merchant>
 				coord = { 64.0, 68.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
@@ -2682,7 +2682,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(9301, {isLimited = true}),	-- Recipe: Elixir of Shadow Power (RECIPE!)
+					i(9301, { isLimited = true }),	-- Recipe: Elixir of Shadow Power (RECIPE!)
 				},
 			}),
 			n(12781, {	-- Master Sergeant Biggins <Officer Accessories Quartermaster>
@@ -2793,7 +2793,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1323, {	-- Osric Strang <Heavy Armor Merchant>
 				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -2846,7 +2846,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1320, {	-- Seoman Griffith <Leather Armor Merchant>
 				coord = { 72.0, 62.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2471,	-- Reinforced Leather Belt
 					2473,	-- Reinforced Leather Boots
 					2474,	-- Reinforced Leather Bracers
@@ -2879,7 +2879,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(5510, {	-- Thulman Flintcrag <Guns Vendor>
 				coord = { 61.8, 36.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2509,	-- Ornate Blunderbuss
 				}},
 				groups = {
@@ -2889,7 +2889,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 				coord = { 77.2, 61.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2148,	-- Polished Scale Belt
 					2149,	-- Polished Scale Boots
 					2150,	-- Polished Scale Bracers
@@ -2907,7 +2907,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1309, {	-- Wynne Larson <Robe Merchant>
 				coord = { 52.0, 83.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes

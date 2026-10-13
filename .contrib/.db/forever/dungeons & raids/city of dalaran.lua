@@ -24,7 +24,7 @@ root(ROOTS.Instances, {
 						i(),	-- 
 					},
 				}),
-				]]--
+				]]-- 
 				q(92456, {	-- A Green Sample
 					qg = 5502,	-- Shylamiir
 					coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
@@ -261,7 +261,7 @@ root(ROOTS.Instances, {
 					i(),	-- 
 					i(),	-- 
 					i(),	-- 
-					]]--
+					]]-- 
 				},
 			}),
 			e(3302, {	-- Unstable Sentinel

@@ -19,7 +19,7 @@ profession(ENGINEERING, {
 			["provider"] = { "i", 10790 },	-- Gnome Engineer Membership Card
 			["groups"] = {
 				i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
-				i(11827, {["requireSkill"] = IGNORED_VALUE}),	-- Schematic: Lil' Smoky (RECIPE!)
+				i(11827, { ["requireSkill"] = IGNORED_VALUE }),	-- Schematic: Lil' Smoky (RECIPE!)
 				i(10606),	-- Schematic: Parachute Cloak(RECIPE!)
 			},
 		}),
@@ -29,7 +29,7 @@ profession(ENGINEERING, {
 			["groups"] = {
 				i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 				i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
-				i(11828, {["requireSkill"] = IGNORED_VALUE}),	-- Schematic: Pet Bombling (RECIPE!)
+				i(11828, { ["requireSkill"] = IGNORED_VALUE }),	-- Schematic: Pet Bombling (RECIPE!)
 			},
 		}),
 	}),

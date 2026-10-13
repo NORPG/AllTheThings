@@ -10,5 +10,5 @@ for i, mapID in ipairs({
 })
 do table.insert(FlightPathMapIDs, mapID); end
 ExportDB._Compressed.FlightPathDB = true
-ExportDB.FlightPathDB = {FlightPathMapIDs = FlightPathMapIDs}
+ExportDB.FlightPathDB = { FlightPathMapIDs = FlightPathMapIDs }
 end

@@ -169,7 +169,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.HILLSBRAD_FOOTHILLS,
 					MAP.SILVERPINE_FOREST,
 					MAP.WESTFALL,
-					MAP.WETLANDS
+					MAP.WETLANDS,
 				},
 				groups = {
 					objective(1, {	-- Flame of Hillsbrad

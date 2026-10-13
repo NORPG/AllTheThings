@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, {
 			filter(SHIRTS, {
 				
 			}),
-			]]--
+			]]-- 
 			filter(TABARDS, {
 				i(23705),	-- Tabard of Flame
 			}),

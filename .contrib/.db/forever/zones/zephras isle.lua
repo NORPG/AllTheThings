@@ -1632,7 +1632,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251364, {	-- Destin Thriceforged
 				coord = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
 					2130,	-- Club
@@ -1686,7 +1686,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251965, {	-- Fevrath Skyhammer
 				coord = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2129,	-- Large Round Shield
 					17184,	-- Small Shield
 					2380,	-- Tarnished Chain Belt
@@ -1710,7 +1710,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251365, {	-- Jolee Brightmeadows
 				coord = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2122,	-- Cracked Leather Belt
 					2123,	-- Cracked Leather Boots
 					2124,	-- Cracked Leather Bracers
@@ -1739,7 +1739,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(257422, {	-- Railee Thriceforged
 				coord = { 59.0, 75.5, MAP.ZEPHRAS_ISLE },
-				sym = {{"select", "itemID",
+				sym = {{ "select", "itemID",
 					2488,	-- Gladius
 					2489,	-- Two-handed Sword
 					2490,	-- Tomahawk
