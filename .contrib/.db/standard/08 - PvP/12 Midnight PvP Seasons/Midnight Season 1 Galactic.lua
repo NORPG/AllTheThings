@@ -778,17 +778,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
 				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					i(260441, {	-- Galactic Gladiator's Tabard
-						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = HORDE_ONLY,
-						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
-					}),
-					i(264164, {	-- Galactic Gladiator's Tabard
-						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = ALLIANCE_ONLY,
-						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
-					}),
+				["groups"] = appendGroups(sharedData({
+					["sourceAchievements"] = { 61187 },	-- Duelist: Midnight Season 1
+				}, {
 					moh(10, i(265630)),	-- Galactic Gladiator's Battlestaff
 					moh(10, i(265625)),	-- Galactic Gladiator's Blaster
 					moh(10, i(265616)),	-- Galactic Gladiator's Bow
@@ -806,7 +798,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 					moh(5, i(265629)),	-- Galactic Gladiator's Sword
 					moh(5, i(265618)),	-- Galactic Gladiator's Tome
 					moh(5, i(265613)),	-- Galactic Gladiator's Warglaive
-				},
+				}), {
+					i(260441, {	-- Galactic Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
+						["races"] = HORDE_ONLY,
+						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
+					}),
+					i(264164, {	-- Galactic Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
+						["races"] = ALLIANCE_ONLY,
+						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
+					}),
+				}),
 			}),
 		})),
 		n(REWARDS, {

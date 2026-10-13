@@ -655,17 +655,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }, ["bonusID"] = 7532 }, {
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
 				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
-					i(272005, {	-- Venomous Gladiator's Tabard
-						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = ALLIANCE_ONLY,
-						["sourceAchievement"] = 62931,	-- Elite: Midnight Season 2
-					}),
-					i(272006, {	-- Venomous Gladiator's Tabard
-						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = HORDE_ONLY,
-						["sourceAchievement"] = 62931,	-- Elite: Midnight Season 2
-					}),
+				["groups"] = appendGroups(sharedData({
+					["sourceAchievements"] = { 62929 },	-- Duelist: Midnight Season 2
+				}, {
 					moh(5, i(277312)),	-- Venomous Gladiator's Axe
 					moh(10, i(277306)),	-- Venomous Gladiator's Barb
 					moh(5, i(277307)),	-- Venomous Gladiator's Basher
@@ -683,7 +675,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 					moh(10, i(277304)),	-- Venomous Gladiator's Smasher
 					moh(5, i(277305)),	-- Venomous Gladiator's Sword
 					moh(5, i(277293)),	-- Venomous Gladiator's Warglaive
-				},
+				}), {
+					i(272005, {	-- Venomous Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
+						["races"] = ALLIANCE_ONLY,
+						["sourceAchievements"] = { 62931 },	-- Elite: Midnight Season 2
+					}),
+					i(272006, {	-- Venomous Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
+						["races"] = HORDE_ONLY,
+						["sourceAchievements"] = { 62931 },	-- Elite: Midnight Season 2
+					}),
+				}),
 			}),
 		})),
 		n(REWARDS, {
