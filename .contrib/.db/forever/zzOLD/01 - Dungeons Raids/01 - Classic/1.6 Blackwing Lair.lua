@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+--[=[
 local SOD_REMOVED_1_15_4 = {
 	-- #if SEASON_OF_DISCOVERY
 	["timeline"] = { REMOVED_1_15_4 },
@@ -1135,3 +1135,4 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 		},
 	}),
 }))));
+--]=]

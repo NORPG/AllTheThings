@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+--[=[
 local ANACHRONOS_COORD;
 -- #if AFTER TBC
 ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
@@ -2428,3 +2428,4 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 		},
 	}),
 }))));
+--]=]

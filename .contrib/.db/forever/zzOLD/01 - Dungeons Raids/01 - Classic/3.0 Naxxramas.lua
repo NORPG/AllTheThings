@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+--[=[
 THE_FOUR_HORSEMEN = createHeader({
 	readable = "The Four Horsemen",
 	icon = 132264,
@@ -4568,3 +4568,4 @@ applyclassicphase(PHASE_SIX,
 )
 -- #endif
 ));
+--]=]
