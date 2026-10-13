@@ -64,7 +64,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["qg"] = 219885,	-- Anduin Wrynn
 					["coord"] = { 72.6, 57.7, 2307 },	-- Quest Dalaran
 					["groups"] = {
-						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
 						i(224455),	-- City Guard's Chainmail
 						i(224453),	-- City Guard's Coronet
 						i(224456),	-- City Guard's Greaves

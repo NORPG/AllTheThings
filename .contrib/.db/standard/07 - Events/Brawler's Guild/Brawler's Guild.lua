@@ -1053,6 +1053,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						{ 43.0, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 						-- #endif
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(92851, {	-- Questionable Qualifications
 					["sourceQuest"] = 92845,	-- By Invitation Only?
@@ -1082,6 +1083,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						{ 51.4, 40.1, DORNOGAL },
 						{ 46.0, 60.8, ORGRIMMAR },
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(92740, {	-- Questionable Qualifications
 					["sourceQuest"] = 92715,	-- By Invitation Only?

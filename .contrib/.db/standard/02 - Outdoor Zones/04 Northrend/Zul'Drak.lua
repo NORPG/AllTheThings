@@ -279,22 +279,19 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.0, 72.4, ZULDRAK },
 					}),
 					q(12604, {	-- Congratulations!
+						["description"] = "Complete Troll Patrol within 20 minutes to access.",
 						["qg"] = 28039,	-- Commander Kunz
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
-						-- #if NOT ANYCLASSIC
-						["lockCriteria"] = { 1, "factionID", 1106.8 },	-- Argent Crusade, Exalted
-						-- #endif
 						["isDaily"] = true,
-						-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
 						["groups"] = {
 							i(43556, {	-- Patroller's Pack
 								["description"] = "Small chance to contain listed items.",
 								["groups"] = {
+									i(43555),	-- Deputy Pa'trolla Badge
 									i(36335),	-- Grizzlemaw Helm
 									i(36003),	-- Icemist Sash
 									i(36128),	-- Muradin Pants
-									i(43555),	-- Deputy Pa'trolla Badge
 								},
 							}),
 						},

@@ -112,9 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["provider"] = { "n", 155099 },	-- High Priest Amet
 							["coord"] = { 54.6, 32.8, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(173956),	-- Coalesced Corruption (QI!)
-							},
+							["qi"] = 173956,	-- Coalesced Corruption (QI!)
 						}),
 						q(57737, {	-- Ramkahen Rescue
 							["sourceQuest"] = 56472,	-- The Uldum Accord
@@ -135,9 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["provider"] = { "n", 155099 },	-- High Priest Amet
 							["coord"] = { 54.6, 32.8, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(173954),	-- Maddened Writings (QI!)
-							},
+							["qi"] = 173954,	-- Maddened Writings (QI!)
 						}),
 					})),
 					n(RARES, sharedData({
@@ -375,9 +371,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			q(55350, {	-- Assault: Amathet Advance
 				["isWorldQuest"] = true,
 				["isWeekly"] = true,
+				["qis"] = {
+					168257,	-- Artificer's Keystone (QI!)
+					168043,	-- Titan Artifact (QI!)
+				},
 				["groups"] = {
-					i(168257),	-- Artificer's Keystone (QI!)
-					i(168043),	-- Titan Artifact (QI!)
 					n(QUESTS, {
 						-- Assault questline
 						q(58636, {	-- Eyes on the Amathet
@@ -400,9 +398,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 							["coord"] = { 68.9, 57.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								i(174450),	-- Amathet Artifact (QI!)
-							},
+							["qi"] = 174450,	-- Amathet Artifact (QI!)
 						}),
 						q(58646, {	-- Chew On This!
 							["sourceQuest"] = 58638,	-- A Deeper Dive
@@ -433,7 +429,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							},
 							["coord"] = { 72.9, 48.4, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = { i(174451) },	-- Sun King's Decree (QI!)
+							["qi"] = 174451,	-- Sun King's Decree (QI!)
 						}),
 						q(58642, {	-- Shared Goals
 							["sourceQuest"] = 58641,	-- Seekers of Corruption
@@ -469,18 +465,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["coord"] = { 54.8, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-							},
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58281, {	-- Ancient Armaments
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["coord"] = { 54.8, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-								i(173985),	-- Amathet Armor (QI!)
-							},
+							["qi"] = 173985,	-- Amathet Armor (QI!)
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58283, {	-- Blind Leading the Blind
 							["sourceQuest"] = 56472,	-- The Uldum Accord
@@ -492,9 +484,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["coord"] = { 54.8, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-							},
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58282, {	-- Down From the Sky
 							["sourceQuest"] = 56472,	-- The Uldum Accord
@@ -507,62 +497,48 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["provider"] = { "n", 160957 },	-- Arianna Swiftsand
 							["coord"] = { 54.6, 34.0, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								i(174008),	-- Rugged Hyena Pelt (QI!)
-							},
+							["qi"] = 174008,	-- Rugged Hyena Pelt (QI!)
 						}),
 						q(58286, {	-- Far From Home
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["provider"] = { "n", 155095 },	-- King Phaoris
 							["coord"] = { 54.9, 32.7, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-							},
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58289, {	-- Guarded Secrets
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["coord"] = { 54.9, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-							},
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58288, {	-- The Sun King's Chosen
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["coord"] = { 54.8, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-							},
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58321, {	-- Uncommon Core
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["provider"] = { "n", 155095 },	-- King Phaoris
 							["coord"] = { 54.9, 32.7, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-								i(174009),	-- Titanic Core (QI!)
-							},
+							["qi"] = 174009,	-- Titanic Core (QI!)
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 						q(58285, {	-- Unearthed Artifacts
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["coord"] = { 54.9, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								i(168043),	-- Titan Artifact (QI!)
-							},
+							["qi"] = 168043,	-- Titan Artifact (QI!)
 						}),
 						q(58284, {	-- Writs of the Sun King
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["coord"] = { 54.9, 32.9, NZOTH_ASSAULT_ULDUM },
 							["lvl"] = 120,
-							["groups"] = {
-								currency(1755),	-- Coalescing Visions
-								i(173986),	-- Writ of the Sun King (QI!)
-							},
+							["qi"] = 173986,	-- Writ of the Sun King (QI!)
+							["groups"] = { currency(1755) },	-- Coalescing Visions
 						}),
 					})),
 					n(RARES, sharedData({
@@ -752,8 +728,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			q(56308, {	-- Assault: Aqir Unearthed
 				["isWorldQuest"] = true,
 				["isWeekly"] = true,
+				["qi"] = 169432,	-- Wastewander Coin (QI!)
 				["groups"] = {
-					i(169432),	-- Wastewander Coin (QI!)
 					n(QUESTS, {
 						-- Assault questline
 						q(57873, {	-- Word from Orsis
@@ -774,17 +750,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174323),	-- Torch (QI!)
-							},
+							["qi"] = 174323,	-- Torch (QI!)
 						}),
 						q(57956, {	-- Wastewander Hosts
 							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174325),	-- Fire Bomb (QI!)
-							},
+							["qi"] = 174325,	-- Fire Bomb (QI!)
 						}),
 						q(57971, {	-- Ruins of Ammon
 							["sourceQuests"] = {
@@ -798,9 +770,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
 							["provider"] = { "n", 164196 },	-- H'partho Ardoros
 							["coord"] = { 27.9, 63.3, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174356),	-- Aqir Bits (QI!)
-							},
+							["qi"] = 174356,	-- Aqir Bits (QI!)
 						}),
 						q(57970, {	-- Ruinator Xok'nixx
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
@@ -811,9 +781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
 							["coord"] = { 28.0, 63.5, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174326),	-- Rough Burlap Bandages (QI!)
-							},
+							["qi"] = 174326,	-- Rough Burlap Bandages (QI!)
 						}),
 						q(57990, {	-- Obelisk of the Sun
 							["sourceQuests"] = {
@@ -828,9 +796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 57990,	-- Obelisk of the Sun
 							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 							["coord"] = { 42.4, 55.9, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(173366),	-- Fuel Canister (QI!)
-							},
+							["qi"] = 173366,	-- Fuel Canister (QI!)
 						}),
 						q(56576, {	-- Aqir Extermination
 							["sourceQuest"] = 57990,	-- Obelisk of the Sun
@@ -853,16 +819,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						q(56550, {	-- Corpse Cleanup
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174323),	-- Torch (QI!)
-							},
+							["qi"] = 174323,	-- Torch (QI!)
 						}),
 						q(58778, {	-- Getting Ahead
 							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 							["coord"] = { 40.0, 21.2, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174776),	-- Goliath Trophy (QI!)
-							}
+							["qi"] = 174776,	-- Goliath Trophy (QI!)
 						}),
 						q(58776, {	-- Hatching Problems
 							["provider"] = { "n", 154443 },	-- Captain Navid Sandstone
@@ -876,9 +838,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							["sourceQuest"] = 58606,	-- A Bit of Investigation
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174356),	-- Aqir Bits (QI!)
-							},
+							["qi"] = 174356,	-- Aqir Bits (QI!)
 						}),
 						q(58777, {	-- Put Your Foot Down
 							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
@@ -899,24 +859,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						q(58782, {	-- Things Left Behind
 							["provider"] = { "n", 159544 },	-- Arik Scorpidsting
 							["coord"] = { 40.1, 21.3, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174774),	-- Wastewander Supplies (QI!)
-							}
+							["qi"] = 174774,	-- Wastewander Supplies (QI!)
 						}),
 						q(56402, {	-- Wastewander Coins
 							["sourceQuest"] = 57915,	-- Search for Survivors
 							["provider"] = { "n", 159560 },	-- Outrider Lashan
 							["coord"] = { 39.9, 45.2, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(169432),	-- Wastewander Coin (QI!)
-							},
+							["qi"] = 169432,	-- Wastewander Coin (QI!)
 						}),
 						q(56889, {	-- Wounded Wastewanderers
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
 							["coord"] = { 28.0, 63.5, NZOTH_ASSAULT_ULDUM },
-							["groups"] = {
-								i(174326),	-- Rough Burlap Bandages (QI!)
-							},
+							["qi"] = 174326,	-- Rough Burlap Bandages (QI!)
 						}),
 					})),
 					-- Common Items
@@ -1176,7 +1130,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["groups"] = {
-							i(174993),	-- Crystallized Void (QI!)
+							o_repeated({	-- Crystallized Void
+								o(343615),	-- Crystallized Void
+								o(343589),	-- Crystallized Void
+								i(174993),	-- Crystallized Void (QI!)
+							}),
 						},
 					}),
 					q(58809, {	-- A Shocking Technique
@@ -1190,9 +1148,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
-						["groups"] = {
-							i(175003),	-- Zan-tien Generator Part (QI!)
-						},
+						["qi"] = 175003,	-- Zan-tien Generator Part (QI!)
 					}),
 					q(58808, {	-- Encased in Amber (Mantid assault)
 						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
@@ -1205,9 +1161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
-						["groups"] = {
-							i(175002),	-- Amber Incubator (QI!)
-						},
+						["qi"] = 175002,	-- Amber Incubator (QI!)
 					}),
 					q(58806, {	-- Warmth of the Sun (Amathet assault)
 						["description"] = "Can appear during Amathet invasions in Uldum.",
@@ -1220,9 +1174,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
-						["groups"] = {
-							i(174996),	-- Solar Emanator (QI!)
-						},
+						["qi"] = 174996,	-- Solar Emanator (QI!)
 					}),
 					q(58807, {	-- Wrapping Up (Aqir assault)
 						["description"] = "Can appear during Aqir invasions in Uldum.",
@@ -1235,9 +1187,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
-						["groups"] = {
-							i(175001),	-- Aqir Webbing (QI!)
-						},
+						["qi"] = 175001,	-- Aqir Webbing (QI!)
 					}),
 					q(58805, {	-- Continued Incubation
 						["sourceQuest"] = 58804,	-- Void Incubation
@@ -1245,7 +1195,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["isDaily"] = true,
 						["groups"] = {
-							i(174993),	-- Crystallized Void (QI!)
+							o_repeated({	-- Crystallized Void
+								o(343615),	-- Crystallized Void
+								o(343589),	-- Crystallized Void
+								i(174993),	-- Crystallized Void (QI!)
+							}),
 						},
 					}),
 					q(58810, {	-- Coming Out of His Shell
@@ -1253,33 +1207,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["sourceQuest"] = 58805,	-- Continued Incubation
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175063),	-- Aqir Egg Cluster (TOY!)
-						},
+						["qi"] = 175063,	-- Aqir Egg Cluster (TOY!)
 					}),
 					q(58811, {	-- A Balanced Diet
 						["sourceQuest"] = 58810,	-- Coming Out of His Shell
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175014),	-- Chunk of Meat (QI!)
-						},
+						["qi"] = 175014,	-- Chunk of Meat (QI!)
 					}),
 					q(58812, {	-- Meat Alternatives
 						["sourceQuest"] = 58811,	-- A Balanced Diet
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175015),	-- Insectoid Meat (QI!)
-						},
+						["qi"] = 175015,	-- Insectoid Meat (QI!)
 					}),
 					q(58813, {	-- Fetid Filets
 						["sourceQuest"] = 58812,	-- Meat Alternatives
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175016),	-- Corrupted Flesh (QI!)
-						},
+						["qi"] = 175016,	-- Corrupted Flesh (QI!)
 					}),
 					q(58826, {	-- A Bloody Treat
 						["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
@@ -1292,9 +1238,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
-						["groups"] = {
-							i(175023),	-- Vial of Purified Anima (QI!)
-						},
+						["qi"] = 175023,	-- Vial of Purified Anima (QI!)
 					}),
 					q(58817, {	-- Action Figures
 						["description"] = "Can appear during Amathet invasions in Uldum.",
@@ -1307,9 +1251,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
-						["groups"] = {
-							i(175020),	-- Amathet Figurine (QI!)
-						},
+						["qi"] = 175020,	-- Amathet Figurine (QI!)
 					}),
 					q(58818, {	-- Bug Buddies
 						["description"] = "Can appear during Aqir invasions in Uldum.",
@@ -1345,26 +1287,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["isDaily"] = true,
-						["groups"] = {
-							i(175016),	-- Corrupted Flesh (QI!)
-						},
+						["qi"] = 175016,	-- Corrupted Flesh (QI!)
 					}),
 					q(58829, {	-- They Grow So Fast
 						["description"] = "Must reach 5000/5000 with the larva's progress bar.",
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175049),	-- Shadowbarb Hatchling (PET!)
-						},
+						["groups"] = { i(175049) },	-- Shadowbarb Hatchling (PET!)
 					}),
 					q(58830, {	-- Aqir Instincts
 						["sourceQuest"] = 58829,	-- They Grow So Fast
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175055),	-- H'partho's Whistle (QI!)
-						},
+						["qi"] = 175055,	-- H'partho's Whistle (QI!)
 					}),
 					q(58860, {	-- Big Bad Beetle
 						["description"] = "Can appear during Aqir invasions in Uldum.",
@@ -1419,9 +1355,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["isDaily"] = true,
-						["groups"] = {
-							i(175055),	-- H'partho's Whistle (QI!)
-						},
+						["qi"] = 175055,	-- H'partho's Whistle (QI!)
 					}),
 					q(58863, {	-- A Custom Order
 						["description"] = "Must reach 5000/5000 with the hatchling's progress bar.",
@@ -1433,18 +1367,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["sourceQuest"] = 58863,	-- A Custom Order
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(175058),	-- Black Empire Armament (QI!)
-						},
+						["qi"] = 175058,	-- Black Empire Armament (QI!)
 					}),
 					q(58866, {	-- My Own Drone
 						["sourceQuest"] = 58865,	-- Otherworldly Armaments
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
-						["groups"] = {
-							i(174771),	-- Shadowbarb Drone (MOUNT!)
-							i(175059),	-- Otherworldly Saddle (QI!)
-						},
+						["qi"] = 175059,	-- Otherworldly Saddle (QI!)
+						["groups"] = { i(174771) },	-- Shadowbarb Drone (MOUNT!)
 					}),
 					q(56377, {	-- Forging Onward
 						["description"] = "Granted upon entering the Seat of Ramkahen.",

@@ -3884,12 +3884,14 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			q(40787, {	-- The Smoldering Ember (A)
 				["qs"] = 133378,	-- Smoldering Timewarped Ember (QS!)
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 30,
 				["isWeekly"] = true,
 				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),
 			q(40786, {	-- The Smoldering Ember (H)
 				["qs"] = 133377,	-- Smoldering Timewarped Ember (QS!)
 				["races"] = HORDE_ONLY,
+				["lvl"] = 30,
 				["isWeekly"] = true,
 				["groups"] = { currency(TIMEWARPED_BADGE) },
 			}),

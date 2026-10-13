@@ -436,9 +436,16 @@ root(ROOTS.Zones, {
 								["qg"] = 97644,	-- Kor'vas Bloodthorn
 								["coord"] = { 24.4, 55.8, 679 },
 								["groups"] = {
-									i(138970, { ["races"] = ALLIANCE_ONLY }),	-- Helm of Reaffirmed Purpose
-									i(141650, { ["races"] = HORDE_ONLY }),	-- Helm of Reaffirmed Purpose
+									a(i(138970)),	-- Helm of Reaffirmed Purpose
+									h(i(141650)),	-- Helm of Reaffirmed Purpose
 								},
+							}),
+							q(95215, {	-- A New Direction
+								["sourceQuests"] = { 39686 },	-- All The Way Up
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
+								["coord"] = { 24.4, 55.8, 679 },
+								["timeline"] = { ADDED_12_0_0 },
+								["qi"] = 268551,	-- Scroll of Reflection (QI!)
 							}),
 							q(39688, {	-- Between Us and Freedom / Nightelf [Havoc]
 								["sourceQuests"] = { 40373 },	-- A New Direction

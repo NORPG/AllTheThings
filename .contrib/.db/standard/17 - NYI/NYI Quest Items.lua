@@ -868,7 +868,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(243295),	-- Letter from Rhonin
 			i(249005),	-- Rhonin's Focus
 			i(246152),	-- Saptor Frill
-			i(268551),	-- Scroll of Reflection
 			i(253210),	-- Soothsayer's Signet
 			i(243294),	-- Staff of Rhonin
 			i(248723),	-- Stolen Documents

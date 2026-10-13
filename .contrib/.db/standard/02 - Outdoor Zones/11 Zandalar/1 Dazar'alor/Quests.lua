@@ -1028,13 +1028,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 58.5, 62.6, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
 			}),
+			-- TODO: Once Per Account
 			q(75874, {	-- Time to Fly
 				["description"] = "Reaching Level 30 will make this quest pop up.",
-				["timeline"] = { ADDED_10_1_5 },
+				["lvl"] = 30,
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(206566),	-- Scarlet Pterrordax (MOUNT!)
-				},
+				["timeline"] = { ADDED_10_1_5 },
+				["groups"] = { i(206566) },	-- Scarlet Pterrordax (MOUNT!)
 			}),
 		}),
 	}),

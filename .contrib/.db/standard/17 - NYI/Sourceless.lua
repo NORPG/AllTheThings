@@ -526,7 +526,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(56742),	--
 				q(56744),	--
 				q(56844),	--
-				q(56898),	--
+				q(56898),	-- In Nazjatar
 				q(57193),	--
 				q(57408),	--
 			})),
@@ -564,13 +564,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62578),	--
 				q(62687),	--
 				q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
-				q(60693),	-- After q(59781)
+				q(60693),	-- After q(59781), in Maldraxxus
 			})),
 
 			-- 9.0.2
 			expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
 				q(57537),	-- Covering our Tracks
-				q(63219),	-- @ 73.5,91.6,STORMWIND_CITY L6 NE Druid, 2022-07-30 // 52.5, 88.1 Orgrimmar 2023-07-03 Goblin Hunter L9
+				q(63219),	-- Happened after picking the skip when arriving in Stormwind after completing Exile's Reach
 			})),
 
 			-- 9.1.0
@@ -578,7 +578,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(64110),	--
 				q(64115),	--
 				q(64116),	-- Obtained in The Maw
-				q(64117),	--
+				q(64117),	-- Tormentors of Torghast related
 				q(64118),	--
 				q(64119),	-- Tormentors of Torghast related
 				q(64192),	--
@@ -655,6 +655,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		expansion(EXPANSION.TWW, {
 			-- 11.0.0
 			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+				q(79187),	-- Looting "Blueprint Bundle" in Hallowfall, 2 Radiant Remnants
 				q(81466),	-- Obtained in Valdrakken
 				q(81696),	-- Report to the Trading Post (D)
 				q(83214),	-- Obtained in Hallowfall
@@ -664,29 +665,42 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
+				q(84584),	-- rappelling anchor in ringing deeps
 			})),
 
 			-- 11.0.5
 			expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-				q(84611, {["isRepeatable"] = true}),	-- Marked as repeatable because of Inaccurate Unflagged Quests report
+				q(84611, {["isRepeatable"] = true}),	-- bonus quest in Hallowfall after "Rise of the Colossals", Marked as repeatable because of Inaccurate Unflagged Quests report
+			})),
+
+			-- 11.0.7
+			expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+				q(86230),	-- Plunderstore related
+				q(86237),	-- Plunderstore related
+				q(86238),	-- Plunderstore related
+				q(86239),	-- Plunderstore related
 			})),
 
 			-- 11.1.7
 			expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
-				q(87560),	--
+				q(87560),	-- Exile's Reach + Chromie Time related
 				q(91029),	--
 			})),
 
 			-- 11.2.0
-			expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
-				q(92487),	--
+			expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+				q(92487),	-- opened a Pinnacle Cache
 				q(92813),	--
+			})),
+
+			-- 11.2.5
+			expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
+				q(93516),	--
 			})),
 
 			-- 11.2.7
 			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
 				q(84833),	-- Obtained in The Waking Shores
-				q(94780),	-- Obtained in Highmountain
 			})),
 		}),
 		expansion(EXPANSION.MID, {
