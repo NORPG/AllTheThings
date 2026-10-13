@@ -24,7 +24,7 @@ root(ROOTS.Promotions, {
 	cnONLY(n(CN_PROMOTIONS_RETAIL, {
 		["groups"] = {
 			ach(40910, {	-- Successfully Stress Test CN Realms
-				["description"] = "Rewarded for the Aid in the stress testing of the realms in China.",
+				["description"] = "Rewarded for aiding in the stress testing of the realms in China.",
 				["timeline"] = { ADDED_11_0_0, REMOVED_11_0_5 },
 			}),
 			i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
@@ -57,10 +57,11 @@ root(ROOTS.Promotions, {
 			i(235378, {	-- Landro's Loot Box (CN Only)
 				-- #if AFTER 11.0.2
 				-- #if BEFORE 12.0.0
-				["description"] = "Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",
+				["description"] = "Can be bought for ¥200 RMB (~$27 USD) in the in-game shop for a limited time.",
 				-- #endif
 				-- #endif
-				["timeline"] = { ADDED_11_0_7,  "removed 11.1.0.59425" },	-- Removed February 27th, 2025
+				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
+				["u"] = REAL_MONEY,
 				["groups"] = {
 					i(227362),	-- Golden Ashes of Al'ar (MOUNT!) (CN Only)
 					i(49284),	-- Reins of the Swift Spectral Tiger (MOUNT!)
@@ -97,7 +98,7 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(QUICKSAND_SECRET_TREASURE_VAULT, sharedDataSelf({
-				["timeline"] = { "added 11.2.5", "removed 11.2.7", "added 12.0.1", "removed 12.0.5", "added 12.1.0", "removed 12.1.5",  },	-- Nov 18 2025 - Sep 11 2026 (three separate runs)
+				["timeline"] = { "added 11.2.5", "removed 11.2.7", "added 12.0.1", "removed 12.0.5", "added 12.1.0", "removed 12.1.5" },	-- Nov 18 2025 - Sep 11 2026 (three separate runs)
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
@@ -105,7 +106,7 @@ root(ROOTS.Promotions, {
 					i(220766, { ["timeline"] = { ADDED_12_1_0 } }),	-- August Phoenix (MOUNT!) (August 2026)
 					i(38576),	-- Big Battle Bear (MOUNT!)
 					i(93671),	-- Ghastly Charger's Skull (MOUNT!)
-					i(229128),	-- Harmonious Salutations Bear (PET!)
+					i(229128),	-- Harmonious Salutations Bear (MOUNT!)
 					i(211087),	-- Hateforged Blazecycle (MOUNT!)
 					i(204091),	-- Rocket Shredder 9001 (MOUNT!)
 					i(89783, { ["timeline"] = { ADDED_12_1_0 } }),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
@@ -157,7 +158,7 @@ root(ROOTS.Promotions, {
 						i(258136),	-- Azure Thunder Coil Pillar (TOY!)
 					}),
 					i(235343),	-- Topsy Turvy Joker's Mask (COSMETIC!)
-					-- Piramid Gacha Golden Landro box
+					-- Pyramid Gacha Golden Landro box
 					i(269743, {	-- Landro's Golden Loot Box
 						-- #if AFTER 12.0.0
 						-- #if BEFORE 12.0.1
@@ -287,7 +288,7 @@ root(ROOTS.Promotions, {
 				["u"] = REAL_MONEY,
 			}, {
 				["groups"] = {
-					iensemble(272335),	-- Ensemble: Varian's Azure Dragon Attire (TRANSMOG!)
+					iensemble(272335),	-- Ensemble: Varian's Azure Dragon Attire (COSMETIC!)
 					i(274967),	-- Varian's Dragon Throne (TOY!)
 					i(273655),	-- Sunflare Driftmoth (MOUNT!)
 					i(247848),	-- Astral Aurochs (MOUNT!)
@@ -393,15 +394,15 @@ root(ROOTS.Promotions, {
 					i(276245),	-- Shadow Spirehawk (MOUNT!)
 				},
 			})),
-			n(CN_WOW_ANNIVERSARY_TWENTYONE, {	-- Yes CN is 1year Behind and celebrates 21st Bday 2026
+			n(CN_WOW_ANNIVERSARY_TWENTYONE, {	-- Yes CN is 1 year behind and celebrates the 21st Bday in 2026
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_7 },	-- Ends Dec 2 2026
 				["groups"] = {
 					-- Login giveaway
 					i(264273),	-- Fel Spirehawk (MOUNT!) (retail)
 					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!) (retail)
 					i(246917, {	-- Thunder-Ridged Elekk (MOUNT!)
-						-- #if BEFORE 12.2.0
 						-- #if AFTER 12.1.0
+						-- #if BEFORE 12.2.0
 						["description"] = "Rewarded from completing the quiz.",
 						-- #endif
 						-- #endif
