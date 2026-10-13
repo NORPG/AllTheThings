@@ -663,7 +663,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(270, {	-- The Doomed Fleet
 				["sourceQuest"] = 269,	-- Seeking Wisdom
 				["qg"] = 1212,	-- Bishop Farthing
-				["coord"] = { 39.3, 27.9, MAP.STORMWIND_CITY },
+				["coord"] = { 50.0, 46.0, MAP.STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 			}),

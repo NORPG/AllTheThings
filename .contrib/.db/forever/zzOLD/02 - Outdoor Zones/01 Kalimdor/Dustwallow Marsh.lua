@@ -302,7 +302,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 			q(1301, {	-- James Hyal (1/2)
 				["qg"] = 5081,	-- Connor Rivers
-				["coord"] = { 40.4, 91.6, MAP.STORMWIND_CITY },
+				["coord"] = { 51.1, 95.5, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
