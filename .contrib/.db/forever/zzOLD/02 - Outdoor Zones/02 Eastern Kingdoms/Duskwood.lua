@@ -940,6 +940,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 			q(98447, {	-- The Valor Family (2/2)
+				["description"] = "NOTE: No one currently knows how to get this quest. It may not be in the game yet. If you manage to finish it, please @crieve on Discord!",
 				["sourceQuests"] = {
 					79362,	-- Grant's Shield
 					96137,	-- Ira's Dagger
