@@ -1842,6 +1842,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spwaned
 			q(97628),	-- Looted Afflicted Soul
 			q(97637),	-- Looted Tormented Soul
+			q(98044, name(HEADERS.Item, 268969, {isWeekly=true})),	-- Nebulous Voidcache: Delver's Trove
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),
 	})),

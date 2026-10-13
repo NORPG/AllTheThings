@@ -297,13 +297,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 	}),
 }))
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+--[[root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, {
 		m(LABYRINTH_KINDOJAN, {
 			["timeline"] = { ADDED_12_1_5 },
 			["groups"] = {
-				q(98044),	-- Triggered on 'Nebulous Voidcache: Delver's Trove' roll
 			},
 		}),
 	}),
-}))
+}))--]]
