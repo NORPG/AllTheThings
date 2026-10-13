@@ -3650,7 +3650,7 @@ root(ROOTS.WorldDrops, {
 			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
 			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
-			i(252804, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
+			i(252804, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
@@ -3774,75 +3774,29 @@ root(ROOTS.WorldDrops, {
 		}),
 		--]]
 		cl(DRUID, {
-			{
-				itemID = 17682,	-- Book: Gift of the Wild
+			i(17682, {	-- Book: Gift of the Wild
 				spellID = 21849,	-- Gift of the Wild
 				rank = 1,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
-			},
-			{
-				itemID = 17683,	-- Book: Gift of the Wild II
+			}),
+			i(17683, {	-- Book: Gift of the Wild II
 				spellID = 21850,	-- Gift of the Wild II
 				rank = 2,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
-			},
+			}),
 		}),
 		cl(MAGE, {
-			{
-				itemID = 18600,	-- Tome of Arcane Brilliance
+			i(18600, {	-- Tome of Arcane Brilliance
 				spellID = 23028,	-- Arcane Brilliance
 				rank = 1,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
-			},
-			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
-				itemID = 22890,	-- Tome of Frost Ward V [Phase 6]
-				spellID = 28609,	-- Frost Ward V
-				rank = 5,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
 			}),
 		}),
 		cl(PRIEST, {
-			{
-				itemID = 17413,	-- Codex: Prayer of Fortitude
+			i(17413, {	-- Codex: Prayer of Fortitude
 				spellID = 21562,	-- Prayer of Fortitude
 				rank = 1,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
-			},
-			{
-				itemID = 17414,	-- Codex: Prayer of Fortitude II
+			}),
+			i(17414, {	-- Codex: Prayer of Fortitude II
 				spellID = 21564,	-- Prayer of Fortitude II
 				rank = 2,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
-			},
-			applyclassicphase(PHASE_FIVE_RECIPES, {
-				itemID = 22393,	-- Codex: Prayer of Shadow Protection [Phase 5]
-				spellID = 27683,	-- Prayer of Shadow Protection
-				rank = 1,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
-			}),
-		}),
-		cl(WARLOCK, {
-			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
-				itemID = 22891,	-- Grimoire of Shadow Ward IV [Phase 6]
-				spellID = 28610,	-- Shadow Ward IV
-				rank = 4,
-				-- #if AFTER CATA
-				collectible = false,
-				-- #endif
 			}),
 		}),
 	}),
