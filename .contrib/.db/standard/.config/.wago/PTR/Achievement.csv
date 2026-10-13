@@ -14085,7 +14085,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty while in a guild group.","Heroic: Nymrissa Wavecaller Guild Run",,63687,2987,-1,0,15570,0,10,28672,17,3012069,0,232204,0,0,0,0
 "Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty while in a guild group.","Mythic: Nymrissa Wavecaller Guild Run",,63688,2987,-1,0,15570,0,10,28672,18,3012069,0,232206,0,0,0,0
 ,"[DNT]Midnight Keystone Myth: Season 2 Personal Achievement",,63689,-1,-1,0,15272,0,0,9437188,251,136243,0,232359,0,0,0,0
-"Attain a Mythic+ Rating of at least [PH] during Midnight Season 2.","Midnight Keystone Myth: Season 2","Title: The Venomous Contender & Item: Timelost Saddle",63690,-1,-1,62449,15272,0,0,395264,250,648753,0,232362,0,0,0,0
+"Attain a Mythic+ Rating of at least 3600 during Midnight Season 2.","Midnight Keystone Myth: Season 2","Title: The Venomous Contender & Item: Timelost Saddle",63690,-1,-1,62449,15272,0,0,395264,250,648753,0,232362,0,0,0,0
 "Defeat Kith'ix in The Unbinding of Kith'ix on any difficulty.",Kith'ix,,63692,3095,-1,0,15566,0,10,131072,32,8214194,0,232471,0,0,0,0
 "Defeat Kith'ix in The Unbinding of Kith'ix on Heroic difficulty.","Heroic: Kith'ix",,63693,3095,-1,63692,15566,0,10,131072,34,8214194,0,232473,0,0,0,0
 "Defeat Kith'ix in The Unbinding of Kith'ix on Mythic difficulty.","Mythic: Kith'ix",,63694,3095,-1,63693,15566,0,10,131072,35,8214194,0,232475,0,0,0,0
@@ -14106,8 +14106,8 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete 9 Chambers within a single run of Kindo'jan's Labyrinth on Tier 11.","Whose Labyrinth?","Title: Maze Runner",63722,-1,-1,0,15522,0,10,0,38,1786405,0,233079,0,0,0,0
 "Complete a total of 100 Chambers within Kindo'jan's Labyrinth.","My Labyrinth",,63723,-1,-1,0,15522,0,10,131200,39,237388,0,233081,0,0,0,0
 "Enter Kindo'jan's Labyrinth for the first time.","Knock Knock",,63724,-1,-1,0,15522,0,5,131072,40,6025441,0,233092,0,0,0,0
-"Loot 10 Mislaid Oddities within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,42,7298691,0,233083,0,0,0,0
-"Loot 50 Mislaid Oddities within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
+"Loot 10 Mislaid Treasures within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,42,7298691,0,233083,0,0,0,0
+"Loot 50 Mislaid Treasures within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
 ,"Total Kindo'jan's Labyrinth Chambers completed",,63730,-1,-1,0,15533,0,0,1,18,136243,0,233094,0,0,0,0
 ,"Total Kindo'jan Kills",,63731,-1,-1,0,15533,0,0,1,19,136243,0,233096,0,0,0,0
 "Owner of the Sporebearer Fungal Strider mount, sold in Harandar during Midnight.","Fungal Not Frugal",,63830,-1,-1,0,15269,0,0,133120,73,8262534,0,233492,0,0,0,0

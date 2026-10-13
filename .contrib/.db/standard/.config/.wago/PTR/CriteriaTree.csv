@@ -114840,8 +114840,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225233,"Repel the Vilebranch",225232,100,9,0,0,32
 225234,,225233,20,0,113636,0,0
 225235,,225233,8,0,113637,1,0
-225236,,225233,4,0,113639,2,0
-225237,,225233,2,0,113638,3,0
+225236,,225233,4,0,113639,3,0
+225237,,225233,2,0,113638,2,0
 225238,"Select a Combat Role for Valeera Sanguinar",0,1,8,0,0,12290
 225239,,225238,0,0,113640,0,0
 225240,,225238,0,0,113641,1,0
@@ -119197,7 +119197,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232356,"Curse Surges defeated",0,5,5,0,0,8193
 232357,,232356,0,0,116980,0,0
 232359,"Achievement - Keystone Myth: Midnight Dungeons Season 2",0,0,4,0,0,0
-232360,"Rating Requirement",232359,3400,0,116981,0,2
+232360,"Rating Requirement",232359,3600,0,116981,0,2
 232361,,232359,0,1,116984,1,0
 232363,,232362,1,0,116983,0,0
 232364,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill - TSH",0,0,4,0,0,1
@@ -119530,24 +119530,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233096,"Total Kindo'jan Kills",0,0,4,0,0,0
 233097,,233096,0,0,117162,0,0
 233098,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233099,"Undead Trollbunal slain",233098,1,0,117235,0,0
+233099,"Undead Trollbunal slain",233098,1,0,117099,0,0
 233100,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233101,"Undead Trollbunal slain",233100,1,0,117235,0,0
+233101,"Undead Trollbunal slain",233100,1,0,117099,0,0
 233663,"Kith'ix defeated",233662,1,0,117530,0,0
 233102,"12.1.5 Labyrinth - Chamber 2b - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233103,"Undead Trollbunal slain",233102,1,0,117235,0,0
+233103,"Undead Trollbunal slain",233102,1,0,117099,0,0
 233104,"12.1.5 Labyrinth - Chamber 2c - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233105,"Undead Trollbunal slain",233104,1,0,117235,0,0
+233105,"Undead Trollbunal slain",233104,1,0,117099,0,0
 233106,"12.1.5 Labyrinth - Chamber 3a - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233107,"Undead Trollbunal slain",233106,1,0,117235,0,0
+233107,"Undead Trollbunal slain",233106,1,0,117099,0,0
 233108,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233109,"Undead Trollbunal slain",233108,1,0,117235,0,0
+233109,"Undead Trollbunal slain",233108,1,0,117099,0,0
 233110,"12.1.5 Labyrinth - Chamber 3c - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233111,"Undead Trollbunal slain",233110,1,0,117235,0,0
+233111,"Undead Trollbunal slain",233110,1,0,117099,0,0
 233112,"12.1.5 Labyrinth - Chamber 3d - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233113,"Undead Trollbunal slain",233112,1,0,117235,0,0
+233113,"Undead Trollbunal slain",233112,1,0,117099,0,0
 233114,"12.1.5 Labyrinth - Chamber 3e - Scenario I - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233115,"Undead Trollbunal slain",233114,1,0,117235,0,0
+233115,"Undead Trollbunal slain",233114,1,0,117099,0,0
 233135,"Venom Tornado",230454,1,8,0,6,8192
 233136,,233135,4,0,117226,0,0
 233137,"Dusty Totem",230454,1,8,0,7,8192
@@ -119684,7 +119684,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234282,,234279,1,0,117840,2,2
 234283,,234279,1,0,117841,3,2
 234284,,234279,1,0,117842,4,2
-234285,"Mislaid Oddities looted.",0,1,5,0,0,8193
+234285,"Mislaid Treasure looted.",0,1,5,0,0,8193
 234286,,234285,0,0,117836,0,0
 234287,"Chambers completed.",0,3,5,0,0,8193
 234288,,234287,0,0,117837,0,0
