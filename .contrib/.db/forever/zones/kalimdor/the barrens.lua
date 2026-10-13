@@ -2204,7 +2204,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1719, {	-- The Affray
 				sourceQuest = 1718,	-- The Islander
 				qg = 6236,	-- Klannoc Macleod
-				coord = { 66.6, 49.0, MAP.THE_BARRENS },
+				coord = { 68.6, 49.0, MAP.THE_BARRENS },
 				classes = { WARRIOR },
 				lvl = 30,
 				groups = {
@@ -2212,6 +2212,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						provider = { "n", 6238 },	-- Big Will
 						coord = { 68.6, 48.6, MAP.THE_BARRENS },
 					}),
+					recipe(2458, { _drop = { "requireSkill" }}),	-- Berserker Stance
+					--recipe(20252, { _drop = { "requireSkill" }}),	-- Intercept (Rank 1)
 				},
 			}),
 			q(905, {	-- The Angry Scytheclaws
