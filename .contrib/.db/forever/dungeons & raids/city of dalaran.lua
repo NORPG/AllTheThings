@@ -208,62 +208,50 @@ root(ROOTS.Instances, {
 				e(3310, {	-- Lyn the Ignored
 					creatureID = 247032,	-- Lyn the Ignored
 					groups = {
-						--[[
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						]]--
+						i(273053),	-- Tendonscraper Dagger
+						i(273055),	-- Bonepile Gaze
+						i(273054),	-- Cartilage Shapers
 					},
 				}),
 			}),
 			e(3311, {	-- Atrexis the Grave Knight
 				creatureID = 247126,	-- Atrexis the Grave Knight
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273033),	-- Gravespike Repeater
+					i(273036),	-- Graveweave Bindings
+					i(273032),	-- Bonebinder's Signet
 				},
 			}),
 			e(3298, {	-- Arcane Anomaly
 				creatureID = 245999,	-- Arcane Anomaly
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273034),	-- Ephemeral Grips
+					i(273035),	-- Mana-Warped Chain Shirt
+					i(273031),	-- Runemender's Seal
 				},
 			}),
 			e(3299, {	-- Fel Ancient
 				creatureID = 246003,	-- Fel Ancient
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273037),	-- Felbough Arm
+					i(273039),	-- Blightleaf Rope
+					i(273038),	-- Garb of Fallen Felbark
 				},
 			}),
-			e(3301, {	-- Mana Elemental
-				creatureID = 14689,	-- Mana Elemental
+			e(3301, {	-- Arcanic Enigma
+				creatureID = 246016,	-- Arcanic Enigma
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273045),	-- Drape of Shifting Energy
+					i(273044),	-- Violet Sorcerer's Robes
+					i(273043),	-- Wand of Mana Concentration
 				},
 			}),
 			e(3300, {	-- Mana Devourer
 				creatureID = 246008,	-- Mana Devourer
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273040),	-- Spine of the Devourer
+					i(273042),	-- Manascale Treads
+					i(273041),	-- Slitherwrap Girdle
 				},
 			}),
 			e(3312, {	-- Mana Wraith
@@ -279,21 +267,19 @@ root(ROOTS.Instances, {
 			e(3302, {	-- Unstable Sentinel
 				creatureID = 246017,	-- Unstable Sentinel
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273046),	-- Guardian's Dualblade
+					i(273048),	-- Refractory Scaleguards
+					i(273047),	-- Unstable Crystalline Shoulderpads
+					i(273099),	-- Blueprint: Spinning Wheel
 				},
 			}),
 			e(3303, {	-- Shade of the Archmage
 				creatureID = 246020,	-- Shade of the Archmage
 				groups = {
-					--[[
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
-					]]--
+					i(273052),	-- Ponderous Orb
+					i(273051),	-- Violet Sorcerer's Mantle
+					i(273049),	-- Archmagister's Faceted Pendant
+					i(273103),	-- Blueprint: Arcane Salvager
 				},
 			}),
 		},
