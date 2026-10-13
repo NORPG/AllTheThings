@@ -338,9 +338,12 @@ i(252810, 1255097);	-- Wisdom's Leather Tunic
 i(0, 1229432);	-- Camp Tent
 i(0, 19093);	-- Onyxia Scale Cloak
 
-
--- p2?
+-- Dire Maul
 i(18514, 22921);	-- Girdle of Insight
+i(18515, 22922);	-- Mongoose Boots
+i(18516, 22923);	-- Swift Flight Bracers
+-- p2?
+
 -- p3?
 i(19327, 23704);	-- Timbermaw Brawlers
 i(19202, 23628);	-- Heavy Timbermaw Belt
@@ -362,8 +365,8 @@ i(22770, 28473);	-- Bramblewood Boots
 i(19329, 23706);	-- Golden Mantle of the Dawn
 i(19328, 23705);	-- Dawn Treaders
 -- p2?
-i(18516, 22923);	-- Swift Flight Bracers
-i(18515, 22922);	-- Mongoose Boots
+
+
 -- ZULGURUB
 i(19773, 24125);	-- Blood Tiger Shoulders
 i(19772, 24124);	-- Blood Tiger Breastplate
@@ -575,8 +578,11 @@ i(15759, 19085, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Breastpla
 i(15730, 19054, nil, DRAGONSCALE_LEATHERWORKING);	-- Red Dragonscale Breastplate
 i(15733, 19060, nil, DRAGONSCALE_LEATHERWORKING);	-- Green Dragonscale Leggings
 i(15781, 19107, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Leggings
--- maybe?
+-- Dire Maul
 i(18517, 22926, nil, DRAGONSCALE_LEATHERWORKING);	-- Chromatic Cloak
+
+-- maybe?
+
 i(17025, 20855, nil, DRAGONSCALE_LEATHERWORKING);	-- Black Dragonscale Boots
 -- p5
 i(20382, 24703, nil, DRAGONSCALE_LEATHERWORKING);	-- Dreamscale Breastplate
@@ -599,9 +605,11 @@ i(12703, 16661, nil, ELEMENTAL_LEATHERWORKING);	-- Storm Gauntlets
 i(15732, 19059, nil, ELEMENTAL_LEATHERWORKING);	-- Volcanic Leggings
 i(15741, 19067, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Pants
 i(15752, 19078, nil, ELEMENTAL_LEATHERWORKING);	-- Living Leggings
+-- Dire Maul
+i(18519, 22928, nil, ELEMENTAL_LEATHERWORKING);	-- Shifting Cloak
 -- unsure
 i(17023, 20854, nil, ELEMENTAL_LEATHERWORKING);	-- Molten Helm
-i(18519, 22928, nil, ELEMENTAL_LEATHERWORKING);	-- Shifting Cloak
+
 i(21548, 26279, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Gloves
 -- bwl
 i(19333, 23710, nil, ELEMENTAL_LEATHERWORKING);	-- Molten Belt
@@ -628,8 +636,10 @@ i(15746, 19073, nil, TRIBAL_LEATHERWORKING);	-- Chimeric Leggings
 i(15747, 19074, nil, TRIBAL_LEATHERWORKING);	-- Frostsaber Leggings
 i(20254, 19080, nil, TRIBAL_LEATHERWORKING);	-- Warbear Woolies
 i(15772, 19097, nil, TRIBAL_LEATHERWORKING);	-- Devilsaur Leggings
--- maybe?
+-- Dire Maul
 i(18518, 22927, nil, TRIBAL_LEATHERWORKING);	-- Hide of the Wild
+-- maybe?
+
 i(17022, 20853, nil, TRIBAL_LEATHERWORKING);	-- Corehound Boots
 -- bwl
 i(19332, 23709, nil, TRIBAL_LEATHERWORKING);	-- Corehound Belt

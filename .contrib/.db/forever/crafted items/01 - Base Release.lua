@@ -3720,7 +3720,6 @@ root(ROOTS.Craftables, {
 				i(15802),	-- Mooncloth Boots
 				i(14140),	-- Mooncloth Circlet
 				i(14137),	-- Mooncloth Leggings
-				i(18486),	-- Mooncloth Robe
 				i(14139),	-- Mooncloth Shoulders
 				i(14138),	-- Mooncloth Vest
 				i(10056),	-- Orange Mageweave Shirt

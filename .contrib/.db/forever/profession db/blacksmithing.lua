@@ -460,7 +460,7 @@ i(17051, 20874, nil, ARMORSMITH);	-- Dark Iron Bracers
 i(17052, 20876, nil, ARMORSMITH);	-- Dark Iron Leggings
 i(11612, 15296, nil, ARMORSMITH);	-- Dark Iron Plate
 i(12696, 16667, nil, ARMORSMITH);	-- Demon Forged Breastplate
-i(12726, 16744, nil, ARMORSMITH);	-- Enchanted Thorium Leggings
+
 i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
 i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
 i(12699, 16655, nil, ARMORSMITH);	-- Fiery Plate Gauntlets
@@ -469,11 +469,17 @@ i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
 i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
 --[[
 --- UNRELEASED CONTENT ---
---BWL
-i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
-i(19206, 23636, nil, ARMORSMITH);	-- Dark Iron Helm
+
+--- BWL/DM
 i(12727, 16745, nil, ARMORSMITH);	-- Enchanted Thorium Breastplate
 i(12725, 16742, nil, ARMORSMITH);	-- Enchanted Thorium Helm
+i(12726, 16744, nil, ARMORSMITH);	-- Enchanted Thorium Leggings
+
+
+i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
+i(19206, 23636, nil, ARMORSMITH);	-- Dark Iron Helm
+
+
 -- P4
 i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings

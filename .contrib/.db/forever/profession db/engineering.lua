@@ -205,8 +205,12 @@ i(0, 12760, nil, GOBLIN_ENGINEERING);	-- Goblin Sapper Charge
 i(11828, 15628, nil, GOBLIN_ENGINEERING);	-- Pet Bombling
 i(0, 12754, nil, GOBLIN_ENGINEERING);	-- The Big One
 --- UNSURE ---
-i(18655, 23079);	-- Major Recombobulator
+
 i(22729, 28327);	-- Steam Tonk Controller
+
+
+-- Dire Maul
+i(18655, 23079);	-- Major Recombobulator
 --- UNKNOWN ---
 --[[
 r(1293088),	-- 9-60 Battery Pack

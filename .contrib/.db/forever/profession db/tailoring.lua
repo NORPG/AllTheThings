@@ -436,20 +436,31 @@ r(1297122),	-- Venomspew Footpads
 r(1297123),	-- Swarmtender's Gloves
 r(1297124),	-- Swarmtender's Cord
 r(1297125),	-- Swarmtender's Footpads
--- maybe
-i(17017, 20848);	-- Flarecore Mantle
+-- Dire Maul
+i(18414, 22866);	-- Belt of the Archmage
 i(18418, 22870);	-- Cloak of Warding
 i(18415, 22867);	-- Felcloth Gloves
 i(18416, 22868);	-- Inferno Gloves
 i(18417, 22869);	-- Mooncloth Gloves
+i(18487, 22902);	-- Mooncloth Robe
+-- P5
+i(22309, 27660);	-- Big Bag of Enchantment
+
+
+-- maybe
+i(17017, 20848);	-- Flarecore Mantle
+
+
+
+
 i(17018, 20849);	-- Flarecore Gloves
 i(19215, 23662);	-- Wisdom of the Timbermaw
-i(18414, 22866);	-- Belt of the Archmage
+
 i(19216, 23664);	-- Argent Boots
-i(18487, 22902);	-- Mooncloth Robe
+
 i(22310, 27724);	-- Cenarion Herb Bag
 i(22308, 27659);	-- Enchanted Runecloth Bag
-i(22309, 27660);	-- Big Bag of Enchantment
+
 i(22312, 27725);	-- Satchel of Cenarius
 -- mc
 i(18265, 22759);	-- Flarecore Wraps

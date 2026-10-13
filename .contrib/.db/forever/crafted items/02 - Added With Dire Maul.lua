@@ -8,7 +8,6 @@ root(ROOTS.Craftables, {
 	}),
 	prof(ENGINEERING, {
 		filter(TRINKET_F, {
-			-- Maybe??
 			i(18637),	-- Major Recombobulator
 		}),
 	}),
@@ -42,6 +41,7 @@ root(ROOTS.Craftables, {
 			i(18407),	-- Felcloth Gloves
 			i(18408),	-- Inferno Gloves
 			i(18409),	-- Mooncloth Gloves
+			i(18486),	-- Mooncloth Robe
 		}),
 		filter(MISC, {
 			i(18258),	-- Gordok Ogre Suit
