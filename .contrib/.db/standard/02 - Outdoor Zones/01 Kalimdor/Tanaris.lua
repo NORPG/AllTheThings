@@ -16,6 +16,7 @@ local OnTooltipForGadgetzhan = [[function(t, tooltipInfo)
 end]];
 -- #endif
 
+-- #if ANYCLASSIC
 local BLOODTHIRSTY_GROUPS = {
 	cl(DEATHKNIGHT, {
 		moh(12, iensemble(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -910,6 +911,7 @@ local RUTHLESS_GROUPS = {
 		moh(2, i(70321)),	-- Ruthless Gladiator's Warboots of Cruelty
 	}),
 };
+-- #endif
 
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(TANARIS, {
@@ -3708,7 +3710,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
-					["groups"] = VICIOUS_GROUPS,
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vicious Gladiator's Set
 				}),
 				-- #endif
 				n(8131, {	-- Blizrik Buckshot <Gunsmith>
@@ -3728,7 +3730,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
-					["groups"] = CATACLYSMIC_GROUPS,
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Cataclysmic Gladiator's Set
 				}),
 				-- #endif
 				n(40589, {	-- Dirge Quikcleave <Butcher>
@@ -3926,14 +3928,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
-					["groups"] = RUTHLESS_GROUPS,
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Ruthless Gladiator's Set
 				}),
 				n(20278, {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
 					-- #if AFTER 7.3.5
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
 					-- #endif
-					["groups"] = BLOODTHIRSTY_GROUPS,
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR },{"merge"},{"pop"}},	-- Bloodthirsty Gladiator's Set
 				}),
 				-- #endif
 				n(6568, {	-- Vizzklick <Tailoring Supplies>
