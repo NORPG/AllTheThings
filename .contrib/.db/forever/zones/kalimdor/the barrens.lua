@@ -669,6 +669,42 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(4953),	-- Trogg Brew
 				},
 			}),
+			q(97005, {	-- Chol'aruk the Ravener (A)
+				qg = 267309,	-- Bainham
+				coord = { 61.8, 39.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 15,
+				groups = {
+					objective(1, {	-- 0/1 Chol'aruk's Head
+						provider = { "i", 276070 },	-- Chol'aruk's Head
+						coord = { 57.4, 27.2, MAP.THE_BARRENS },
+						cr = 267307,	-- Chol'aruk <The Ravener>
+					}),
+					i(276886),	-- Chol'aruk's Trophy Sword
+					i(276887),	-- Big Bad Basher
+					i(276888),	-- Quilboar Toothpick
+					i(276889),	-- Thornwoven Shield
+				},
+			}),
+			q(97003, {	-- Chol'aruk the Ravener (H)
+				qg = 267310,	-- Gur'ak
+				coord = { 52.6, 29.0, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 15,
+				groups = {
+					objective(1, {	-- 0/1 Chol'aruk's Head
+						provider = { "i", 276070 },	-- Chol'aruk's Head
+						coord = { 57.4, 27.2, MAP.THE_BARRENS },
+						cr = 267307,	-- Chol'aruk <The Ravener>
+					}),
+					i(276886),	-- Chol'aruk's Trophy Sword
+					i(276887),	-- Big Bad Basher
+					i(276888),	-- Quilboar Toothpick
+					i(276889),	-- Thornwoven Shield
+				},
+			}),
 			q(4961, {	-- Cleansing of the Orb of Orahil
 				sourceQuest = 1799,	-- Fragments of the Orb of Orahil
 				qg = 6546,	-- Tabetha
@@ -1559,6 +1595,22 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				cr = 3473,	-- Owatanka
 				lvl = 10,
+			}),
+			q(97253, {	-- Parts and Pieces
+				qg = 7161,	-- Wrenix the Wretched
+				coord = { 63.0, 36.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 9,
+				groups = {
+					objective(1, {	-- 0/5 Handful of Complicated Parts
+						providers = {
+							{ "i", 277331 },	-- Handful of Complicated Parts
+							{ "o", 660930 },	-- Pile of Complicated Parts
+						},
+						coord = { 62.2, 47.4, MAP.THE_BARRENS },
+					}),
+					i(277332),	-- Scuffed Shipping Crate
+				},
 			}),
 			q(1040, {	-- Passage to Booty Bay
 				sourceQuest = 1039,	-- The Barrens Port(Darnassus)
@@ -2612,6 +2664,19 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			q(92706, {	-- WANTED: Bruuz
+				provider = { "o", 3972 },	-- WANTED
+				coord = { 62.59, 37.47, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 15,
+				groups = {
+					objective(1, {	-- 0/1 Bruuz's Dorsal Fin
+						provider = { "i", 253710 },	-- Bruuz's Dorsal Fin
+						coord = { 64.7, 39.0, MAP.THE_BARRENS },
+						cr = 209797,	-- Bruuz
+					}),
+				},
+			}),
 			q(885, {	-- Washte Pawne
 				provider = { "i", 5103 },	-- Washte Pawne's Feather
 				coord = { 44.8, 78.8, MAP.THE_BARRENS },
@@ -2950,21 +3015,38 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 				cost = { { "i", 5020, 1 } },	-- Kolkar Booty Key
 			}),
+			o(407566, {	-- Goblin Tome
+				coord = { 62.7, 36.3, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(208800),	-- Baxtan: On Destructive Magics
+				},
+			}),
+			o(409700, {	-- Manual
+				coord = { 56.3, 8.8, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(209847),	-- Arcanic Systems Manual
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(248196, {	-- Apothecary Durelle <Alchemist>
 				coord = { 49.8, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(248199, {	-- Beneris <Enchanting>
 				coord = { 49.6, 29.8, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(248200, {	-- Fizzlefuse <Opportunist Engineer>
 				coord = { 49.8, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3495, {	-- Gagsprocket <Engineering Goods>
@@ -2975,9 +3057,29 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			n(256384, {	-- Gishah <Supply Officer>
+				coord = { 49.4, 29.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				groups = {
+					i(270887, {	-- Advertising License Application
+						minReputation = { 2587, HONORED },	-- Durotar Supply and Logistics, Honored.
+						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
+					}),
+					i(262764, {	-- Durotar Supply and Logistics Tabard
+						minReputation = { 2587, EXALTED },	-- Durotar Supply and Logistics, Exalted.
+						cost = { { "c", 3402, 200 } },	-- x200 Merchant's Favor
+					}),
+					i(284664, {	-- Packmule Treat
+						minReputation = { 2587, REVERED },	-- Durotar Supply and Logistics, Revered.
+						cost = { { "c", 3402, 1500 } },	-- x1500 Merchant's Favor
+					}),
+				},
+			}),
 			n(248197, {	-- Gor'mak <Blacksmith>
 				coord = { 49.8, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
@@ -3050,6 +3152,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(248202, {	-- Jim'bek <Tailor>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3683, {	-- Kiknikle <Stylish Clothier>
@@ -3119,6 +3222,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(248201, {	-- Pawani <Leatherworker>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = LEATHERWORKING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3684, {	-- Pizznukle <Leather Armor Merchant>
@@ -3174,6 +3278,20 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
 				coord = { 62.2, 38.4, MAP.THE_BARRENS },
+				sym = {{ "select", "itemID",
+					200, -- Thick Cloth Vest
+					3597, -- Thick Cloth Belt
+					201, -- Thick Cloth Pants
+					202, -- Thick Cloth Shoes
+					3598, -- Thick Cloth Bracers
+					203, -- Thick Cloth Gloves
+					236, -- Cured Leather Armor
+					1849, -- Cured Leather Belt
+					237, -- Cured Leather Pants
+					238, -- Cured Leather Boots
+					1850, -- Cured Leather Bracers
+					239, -- Cured Leather Gloves
+				}},
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
@@ -3218,6 +3336,25 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						isLimited = true,
 					}),
 				},
+			}),
+			n(265574, {	-- Winklespark <Ratchet Quartermaster>
+				coord = { 62.6, 37.6, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = bubbleDownClassicRep(FACTION_RATCHET, {
+					{	-- Neutral
+						
+					}, {	-- Friendly
+						i(274740),	-- Quilted Cloak
+						i(274741),	-- Rumpled Kilt
+						i(274742),	-- Ratchet Wristwraps
+					}, {	-- Honored
+						i(274744),	-- Barrens Basher
+						i(274743),	-- Defective Samophlange
+					}, {	-- Revered
+						i(274021),	-- Barrens Headband
+					}, {	-- Exalted
+					},
+				}),
 			}),
 			n(3485, {	-- Wrahk <Tailoring Supplies>
 				coord = { 52.2, 31.6, MAP.THE_BARRENS },

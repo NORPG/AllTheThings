@@ -1567,6 +1567,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				["coord"] = { 83.2, 68.2, MAP.TIRISFAL_GLADES },
 				["sym"] = {{ "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 			}),
+			n(2116, {	-- Blacksmith Rand <Apprentice Armorer>
+				["coord"] = { 32.4, 66.2, MAP.TIRISFAL_GLADES },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(2386),	-- Rusted Chain Vest
+					i(2387),	-- Rusted Chain Belt
+					i(2388),	-- Rusted Chain Leggings
+					i(2389),	-- Rusted Chain Boots
+					i(2390),	-- Rusted Chain Bracers
+					i(2391),	-- Rusted Chain Gloves
+					i(17183),	-- Dented Buckler
+					i(1200),	-- Large Wooden Shield
+				},
+			}),
 			n(3522, {	-- Constance Brisboise <Apprentice Clothier>
 				["coord"] = { 52.6, 55.6, MAP.TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,

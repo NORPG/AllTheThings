@@ -1234,6 +1234,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					}),
 				},
 			}),
+			n(1672, {	-- Lohgan Eva <Tailoring Supplies>
+				["coord"] = { 75.7, 44.7, MAP.DUSKWOOD },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(253665, {	-- Pattern: Linen Reagent Bag (RECIPE!)
+						["isLimited"] = true,
+					}),
+					i(253668, {	-- Pattern: Woolen Reagent Bag (RECIPE!)
+						["isLimited"] = true,
+					}),
+				},
+			}),
 			n(226, {	-- Morg Gnarltree <Armorer>
 				["coord"] = { 73.8, 48.6, MAP.DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,

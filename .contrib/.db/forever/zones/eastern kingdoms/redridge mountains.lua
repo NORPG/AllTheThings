@@ -824,7 +824,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(256732, {	-- Alynsia
+			n(256732, {	-- Alynsia <Enchanter>
 				coord = { 11.1, 71.6, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -877,7 +877,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(256734, {	-- Daniel Stitchsong
+			n(256734, {	-- Daniel Stitchsong <Leatherworker>
 				coord = { 10.0, 72.6, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -916,7 +916,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(256733, {	-- Fritz Fizzle
+			n(256733, {	-- Fritz Fizzle <Engineer>
 				coord = { 10.4, 74.4, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -957,7 +957,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(256731, {	-- Kalsey Sanden
+			n(256731, {	-- Kalsey Sanden <Chef>
 				coord = { 10.8, 72.8, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -987,25 +987,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(256735, {	-- Mivin Shadowweave
+			n(256735, {	-- Mivin Shadowweave <Tailor>
 				coord = { 10.0, 72.8, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
-			n(256729, {	-- Nina Surefire
+			n(256729, {	-- Nina Surefire <Alchemist>
 				coord = { 10.8, 72.6, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
-			n(256730, {	-- Stondry Darkhammer
+			n(256730, {	-- Stondry Darkhammer <Blacksmith>
 				coord = { 10.4, 74.6, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				groups = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
-			n(256389, {	-- Tamelyn Aldridge
+			n(256389, {	-- Tamelyn Aldridge <Supply Officer>
 				coord = { 10.5, 71.3, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,

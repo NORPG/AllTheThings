@@ -1883,17 +1883,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 		}),
 		n(VENDORS, {
-			n(1301, {	-- Julia Gallina
-				coord = { 59.8, 77.4, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(2723),	-- Bottle of Dalaran Noir
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2596),	-- Skin of Dwarven Stout
-					i(2594),	-- Flagon of Dwarven Honeymead
-					i(2595),	-- Jug of Badlands Bourbon
-				},
-			}),
 			n(258568, {	-- Antonio Bolero
 				coord = { 53.5, 81.8, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -2512,6 +2501,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 53.0, 74.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = ENCHANTING_RECIPES.COMMON_RECIPES,
+			}),
+			n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
+				coord = { 71.7, 62.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(252783, {	-- Pattern: Mystic Medium Armor Kit (RECIPE!)
+						isLimited = true,
+					}),
+					i(252784, {	-- Pattern: Forceful Medium Armor Kit (RECIPE!)
+						isLimited = true,
+					}),
+				},
+			}),
+			n(1301, {	-- Julia Gallina
+				coord = { 59.8, 77.4, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(2723),	-- Bottle of Dalaran Noir
+					i(2593),	-- Flask of Stormwind Tawny
+					i(2596),	-- Skin of Dwarven Stout
+					i(2594),	-- Flagon of Dwarven Honeymead
+					i(2595),	-- Jug of Badlands Bourbon
+				},
 			}),
 			n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
 				coord = { 63.2, 37.6, MAP.STORMWIND_CITY },
