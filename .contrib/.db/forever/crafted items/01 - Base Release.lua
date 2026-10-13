@@ -477,7 +477,7 @@ root(ROOTS.Craftables, {
 			i(10938, {	-- Lesser Magic Essence
 				description = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
 			}),
-			i(11135, {	-- Greater Mystic Essence 
+			i(11135, {	-- Greater Mystic Essence
 				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
 			}),
 			i(11134, {	-- Lesser Mystic Essence
@@ -781,7 +781,7 @@ root(ROOTS.Craftables, {
 			i(10546),	-- Deadly Scope
 			i(10548),	-- Sniper Scope
 			i(4406),	-- Standard Scope
-		}),	
+		}),
 	}),
 	prof(FIRST_AID, {
 		i(6452),	-- Anti-Venom
