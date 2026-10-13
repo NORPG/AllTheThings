@@ -45,11 +45,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					faction(FACTION_AQIR_RESEARCH_ENCLAVE),
 					n(ACHIEVEMENTS, {
 						ach(63657, {	-- Aqir Research Associate
-							["minReputation"] = { FACTION_AQIR_RESEARCH_ENCLAVE, 20 },	-- Aqir Research Enclave, Renown 20
+							["minReputation"] = { FACTION_AQIR_RESEARCH_ENCLAVE, 5 },
 						}),
 					}),
-					--[[title(XXX, {	-- 
-						["minReputation"] = { FACTION_AQIR_RESEARCH_ENCLAVE, 20 },	-- Aqir Research Enclave, Renown 20
+					--[[title(XXX, {	--
+						["minReputation"] = { FACTION_AQIR_RESEARCH_ENCLAVE, 5 },
 					}),
 					n(QUESTS, sharedData({
 						["provider"] = { "n", 266188 },	-- Estelia Archtender <Aqir Researcher>
@@ -138,6 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["sourceQuest"] = 95533,	-- The Aqir Swarm
 							["qg"] = 235787,	-- Lor'themar Theron
 							["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["maps"] = { 2605 },	-- Silvermoon City, Falconwing Square (Aqir Invasion scenario)
 						}),
 						q(95190, {	-- Double-Edged Swords
 							["sourceQuest"] = 95187,	-- All Along the Watchtowers

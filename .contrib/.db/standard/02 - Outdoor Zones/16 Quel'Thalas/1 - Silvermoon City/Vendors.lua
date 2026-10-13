@@ -62,6 +62,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			n(276366, {	-- Amani Representative <Renown Quartermaster>
+				["coord"] = { 39.4, 80.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["sym"] = { { "sub", "common_vendor", 240279 } },	-- Magovu <Renown Quartermaster>
+				["timeline"] = { ADDED_12_1_5 },
+			}),
 			n(259722, {	-- Andra <Thalassian Finery>
 				["coord"] = { 41.7, 66.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = bubbleDownFiltered({
@@ -396,6 +401,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			n(276362, {	-- Hara'ti Representative <Renown Quartermaster>
+				["coord"] = { 39.2, 80.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["sym"] = { { "sub", "common_vendor", 240407 } },	-- Naynar <Renown Quartermaster>
+				["timeline"] = { ADDED_12_1_5 },
+			}),
 			n(252916, {	-- Hesta Forlath <Apprentice>
 				["coord"] = { 44.1, 62.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
@@ -452,6 +462,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- No achievement file for silvermoon, not sure if one is needed
 					i(274731),	-- Prized Orb of Azeroth (DECOR!)
 				},
+			}),
+			n(276365, {	-- Silvermoon Court Representative <Renown Quartermaster>
+				["coord"] = { 39.3, 80.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["sym"] = { { "sub", "common_vendor", 240838 } },	-- Caeris Fairdawn <Renown Quartermaster>
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			n(276364, {	-- Singularity Representative <Renown Quartermaster>
+				["coord"] = { 39.3, 79.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["sym"] = { { "sub", "common_vendor", 248328 } },	-- Void Researcher Anomander <Renown Quartermaster>
+				["timeline"] = { ADDED_12_1_5 },
 			}),
 			n(245180, {	-- Sleyin <Weapon Merchant>
 				["coord"] = { 55.0, 49.8, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -597,6 +617,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(188152),	-- Gateway Control Shard
 				},
+			}),
+			n(276363, {	-- Zul'jarra's Forces Representative <Renown Quartermaster>
+				["coord"] = { 39.5, 80.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["sym"] = { { "sub", "common_vendor", 268228 } },	-- Jan'sari the Watchful <Renown Quartermaster>
+				["timeline"] = { ADDED_12_1_5 },
 			}),
 		}),
 	}),

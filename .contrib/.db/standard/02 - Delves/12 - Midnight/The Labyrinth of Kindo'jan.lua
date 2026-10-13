@@ -135,10 +135,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(99306, {	-- The Labyrinth of Kindo'jan
 					["provider"] = { "o", 701639 },	-- Amani Tablet
 					["coord"] = { 62.9, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["isBreadcrumb"] = true,
 				}),
 				q(98831, {	-- The Labyrinth
-					["qg"] = 265173,	-- Kul'amara the Fierce
-					["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["sourceQuest"] = 99306,	-- The Labyrinth of Kindo'jan
+					["qgs"] = {
+						265173,	-- Kul'amara the Fierce
+						277031,	-- Kul'amara the Fierce
+					},
+					["coords"] = {
+						{ 33.4, 25.5, MAP.MIDNIGHT.ZULAMAN },
+						{ 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+					},
 				}),
 				q(98832, {	-- Dangers Untold and Hardships Unnumbered
 					["sourceQuest"] = 98831,	-- The Labyrinth

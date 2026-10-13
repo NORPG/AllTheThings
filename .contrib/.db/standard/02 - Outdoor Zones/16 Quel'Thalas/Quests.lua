@@ -822,6 +822,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuest"] = 88942,	-- The Elves are Going to War
 					["qg"] = 240267,	-- Arator
 					["coord"] = { 45.9, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["maps"] = { 2443 },	-- Silvermoon City, The Bazaar (The Battle of the Bridge scenario)
 					["groups"] = {
 						i(258122),	-- Emerald Hatchling (PET!)
 						i(260233),	-- Emerald Hawkstrider (MOUNT!)

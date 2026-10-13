@@ -2932,6 +2932,7 @@ local AccountWideQuestsDB = {
 	97983,	-- Ula'tek
 	98014,	-- Ensemble: Venom-Cursed Dragonhawk's Rainment
 	98022,	-- Ensemble: Venom-Cursed Bear's Guard
+	98044,	-- Nebulous Voidcache: Delver's Trove
 	98097,	-- The Coiled Altar
 	98217,	-- Insidious Venomstone
 	98337,	-- Quest #98337*
