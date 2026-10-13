@@ -1895,8 +1895,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- In TWW, They changed how the dice works, you fight bosses related to the achievement "The Best There Is"
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
-						-- #if BEFORE 11.2.7
 						["groups"] = {
+						-- #if BEFORE 11.2.7
 							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
 							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9177, {	-- Deck Your Collection [Season 2]
@@ -2006,8 +2006,90 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 									i(144372),	-- Hide of the Murderaffe
 								}),
 							}),
-						},
+						-- #else
+							i(144376, {	-- Agile Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144367) },	-- Observer's Shirt
+							}),
+							i(144377, {	-- Beginning Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144370) },	-- Croc-Tooth Harness
+							}),
+							i(151224, {	-- Bitten Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98082) },	-- Undisputed Champion's Shirt
+							}),
+							i(151233, {	-- Blingin' Brawler's Bag
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98091) },	-- Last Seasons Shirt
+							}),
+							i(151223, {	-- Booming Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98081) },	-- The Boomshirt
+							}),
+							i(151231, {	-- Brawler's Egg
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98086) },	-- Tuxedo-Like Shirt
+							}),
+							i(151229, {	-- Brawler's Music Box
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98079) },	-- Floot-Tooter's Tunic
+							}),
+							i(151232, {	-- Brawler's Package
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98087) },	-- Paper Shirt
+							}),
+							i(144373, {	-- Claw-Marked Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144365) },	-- The Very Best Shirt
+							}),
+							i(151264, {	-- Clunky Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(151263) },	-- Electrified Compression Shirt
+							}),
+							i(151230, {	-- Croc-Skin Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98085) },	-- Brucehide Jersey
+							}),
+							i(151238, {	-- Dark Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98093) },	-- Sightless MAntle
+							}),
+							i(144375, {	-- Feathered Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144368) },	-- Felfeather Jersey
+							}),
+							i(151235, {	-- Filthy Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98092) },	-- Digmaster's Bodysleeve
+							}),
+							i(151221, {	-- Gooey Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98084) },	-- Ooze-Soaked Shirt
+							}),
+							i(144378, {	-- Gorestained Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144371) },	-- Gorestained Tunic
+							}),
+							i(144374, {	-- Groovy Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144366) },	-- Dubvest
+							}),
+							i(151222, {	-- Leather Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98080) },	-- Gorgeous Blouse
+							}),
+							i(144379, {	-- Murderous Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144372) },	-- Hide of the Murderaffe
+							}),
+							i(151225, {	-- Wet Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98083) },	-- Sharkskin Tunic
+							}),
+							i(98543, { ["timeline"] = { REMOVED_9_0_2_LAUNCH } }),	-- Wraps of the Blood-Soaked Brawler
 						-- #endif
+						},
 					}),
 					i(142317, {	-- Blood-Soaked Angel Figurine
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
@@ -2074,8 +2156,8 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- In TWW, They changed how the dice works, you fight bosses related to the achievement "The Best There Is"
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", BRAWLERS_GOLD, 100 } },
-						-- #if BEFORE 11.2.7
 						["groups"] = {
+						-- #if BEFORE 11.2.7
 							-- Wouter NOTE: during Seasons 3 + 4, you could use Bag of Chipped Dice to activate random brawl mode to fight Season 2 bosses and earn their achievement + shirt
 							--		Source: checked a vast amount of Wowhead comments on these shirts
 							ach(9176, {	-- Deck Your Collection [Season 2]
@@ -2185,8 +2267,90 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 									i(144372),	-- Hide of the Murderaffe
 								}),
 							}),
-						},
+						-- #else
+							i(144376, {	-- Agile Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144367) },	-- Observer's Shirt
+							}),
+							i(144377, {	-- Beginning Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144370) },	-- Croc-Tooth Harness
+							}),
+							i(151224, {	-- Bitten Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98082) },	-- Undisputed Champion's Shirt
+							}),
+							i(151233, {	-- Blingin' Brawler's Bag
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98091) },	-- Last Seasons Shirt
+							}),
+							i(151223, {	-- Booming Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98081) },	-- The Boomshirt
+							}),
+							i(151231, {	-- Brawler's Egg
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98086) },	-- Tuxedo-Like Shirt
+							}),
+							i(151229, {	-- Brawler's Music Box
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98079) },	-- Floot-Tooter's Tunic
+							}),
+							i(151232, {	-- Brawler's Package
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98087) },	-- Paper Shirt
+							}),
+							i(144373, {	-- Claw-Marked Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144365) },	-- The Very Best Shirt
+							}),
+							i(151264, {	-- Clunky Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(151263) },	-- Electrified Compression Shirt
+							}),
+							i(151230, {	-- Croc-Skin Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98085) },	-- Brucehide Jersey
+							}),
+							i(151238, {	-- Dark Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98093) },	-- Sightless MAntle
+							}),
+							i(144375, {	-- Feathered Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144368) },	-- Felfeather Jersey
+							}),
+							i(151235, {	-- Filthy Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98092) },	-- Digmaster's Bodysleeve
+							}),
+							i(151221, {	-- Gooey Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98084) },	-- Ooze-Soaked Shirt
+							}),
+							i(144378, {	-- Gorestained Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144371) },	-- Gorestained Tunic
+							}),
+							i(144374, {	-- Groovy Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144366) },	-- Dubvest
+							}),
+							i(151222, {	-- Leather Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98080) },	-- Gorgeous Blouse
+							}),
+							i(144379, {	-- Murderous Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(144372) },	-- Hide of the Murderaffe
+							}),
+							i(151225, {	-- Wet Brawler's Purse
+								["timeline"] = { REMOVED_9_0_2_LAUNCH },
+								["groups"] = { i(98083) },	-- Sharkskin Tunic
+							}),
+							i(98543, { ["timeline"] = { REMOVED_9_0_2_LAUNCH } }),	-- Wraps of the Blood-Soaked Brawler
 						-- #endif
+						},
 					}),
 					i(143761, {	-- Blood-Soaked Angel Figurine
 						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
