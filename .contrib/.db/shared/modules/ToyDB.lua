@@ -59,6 +59,11 @@ i(228502);	-- Piccolo of the Flaming Fire (Blizzard... Why did you duplicate thi
 -- #endif
 
 -----------------
+--   FOREVER   --
+-----------------
+i(276236);	-- Holstered Replica Ironforge Air Rifle
+
+-----------------
 -- PATCH 2.0.1 --
 -----------------
 -- #if ANYCLASSIC

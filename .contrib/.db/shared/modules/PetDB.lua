@@ -1150,6 +1150,7 @@ i(13343, 0);		-- Pet Stone
 -----------------
 i(282047, 5162);	-- Baby Crocolisk
 i(275682, 5075);	-- Excitable Slime
+i(277714, 5122);	-- Spectral Bear Cub
 i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
 i(249898, 0);	-- Wilted Lashling Bud [TODO: Find the speciesID]
 -- #if FOREVER

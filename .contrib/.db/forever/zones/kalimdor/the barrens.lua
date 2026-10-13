@@ -1340,6 +1340,46 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				cr = 3474,	-- Lakota'mani
 				lvl = 10,
 			}),
+			q(96339, {	-- Legacy Reward: Replica Ironforge Air Rifle
+				description = "Requires you to earn a total of 15 Legacy Points.",
+				qg = 6791,	-- Innkeeper Wiley <Innkeeper>
+				coord = { 62.0, 39.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(276236),	-- Holstered Replica Ironforge Air Rifle
+					i(281060, { collectible = false }),	-- Replica Ironforge Air Rifle
+				},
+			}),
+			q(96383, {	-- Legacy Reward: Spectral Bear Cub
+				description = "Requires you to earn a total of 25 Legacy Points.",
+				qg = 6791,	-- Innkeeper Wiley <Innkeeper>
+				coord = { 62.0, 39.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(277714),	-- Spectral Bear Cub (PET!)
+				},
+			}),
+			--[[
+			-- CRIEVE NOTE: These are known rewards, there'll be another set of quests for these.
+			q(, {	-- Legacy Reward: Spectral Bear Tabard
+				description = "Requires you to earn a total of 40 Legacy Points.",
+				qg = 6791,	-- Innkeeper Wiley <Innkeeper>
+				coord = { 62.0, 39.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(277717),	-- Spectral Bear Tabard
+				},
+			}),
+			q(, {	-- Legacy Reward: Reins of the Spectral Bear
+				description = "Requires you to earn a total of 55 Legacy Points.",
+				qg = 6791,	-- Innkeeper Wiley <Innkeeper>
+				coord = { 62.0, 39.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(277718),	-- Reins of the Spectral Bear (MOUNT!)
+				},
+			}),
+			]]--
 			q(1060, {	-- Letter to Jin'Zil
 				sourceQuest = 876,	-- Serena Bloodfeather
 				qg = 3449,	-- Darsok Swiftdagger

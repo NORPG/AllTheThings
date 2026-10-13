@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,crit,cu,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
+local ach,ah,crit,cu,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.Zones=
 h(-732,{mapID=947,SortPriority=10,g={
 m(1414,{icon=236807,isContinent=1,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},g={
@@ -3724,6 +3724,13 @@ qo(1,{coords={
 [1413]={{42.8,23.6}}},crs={3394},providers={{"i",5022}}})}}),
 q(883,{coords={
 [1413]={{47.6,51.6}}},crs={3474},lvl=10,qss={5099},r=1}),
+q(96339,{awp=16001,coords={
+[1413]={{62,39.4}}},description="Requires you to earn a total of 15 Legacy Points.",qgs={6791},g={
+toy(276236,{b=1}),
+s(311708,281060,{b=1,collectible=false,spellID=1312745})}}),
+q(96383,{awp=16001,coords={
+[1413]={{62,39.4}}},description="Requires you to earn a total of 25 Legacy Points.",qgs={6791},g={
+p(5122,{b=1,itemID=277714,npcID=268840,spellID=1302650})}}),
 q(1060,{coords={
 [1413]={{51.62,30.9}}},lvl=15,qgs={3449},qis={5594},r=1,sourceQuests={876}}),
 q(4921,{coords={
@@ -16413,7 +16420,7 @@ qo(1,{coords={
 [1431]={{72.6,47.6}}},providers={{"i",281046},{"o",673515}}}),
 i(281149,{b=1})}}),
 q(98447,{awp=16001,coords={
-[1431]={{72.6,47.6}}},lvl=18,qgs={268},r=2,sourceQuests={79362,79363,96137,96138},g={
+[1431]={{72.6,47.6}}},description="NOTE: No one currently knows how to get this quest. It may not be in the game yet. If you manage to finish it, please @crieve on Discord!",lvl=18,qgs={268},r=2,sourceQuests={79362,79363,96137,96138},g={
 qo(1,{coords={
 [1431]={{17.4,54}}},providers={{"n",272450}}})}}),
 q(225,{coords={
