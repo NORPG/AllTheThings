@@ -4,8 +4,8 @@
 TAILORING_RECIPES = {
 	APPRENTICE = {
 		r(3908, {	-- Tailoring (Apprentice)
-			["lvl"] = 5,
-			["rank"] = 1,
+			lvl = 5,
+			rank = 1,
 		}),
 		n(ARMOR, {
 			r(2395),	-- Barbaric Linen Vest
@@ -44,8 +44,8 @@ TAILORING_RECIPES = {
 	};
 	JOURNEYMAN = {
 		r(3909, {	-- Tailoring (Journeyman)
-			["lvl"] = 10,
-			["rank"] = 2,
+			lvl = 10,
+			rank = 2,
 		}),
 		n(ARMOR, {
 			r(8760),	-- Azure Silk Hood
@@ -81,8 +81,8 @@ TAILORING_RECIPES = {
 	};
 	EXPERT = {
 		r(3910, {	-- Tailoring (Expert)
-			["lvl"] = 20,
-			["rank"] = 3,
+			lvl = 20,
+			rank = 3,
 		}),
 		n(ARMOR, {
 			r(8766),	-- Azure Silk Belt
@@ -116,8 +116,8 @@ TAILORING_RECIPES = {
 	};
 	ARTISAN = {
 		r(12180, {	-- Tailoring (Artisan)
-			["lvl"] = 35,
-			["rank"] = 4,
+			lvl = 35,
+			rank = 4,
 		}),
 		n(ARMOR, {
 			r(12073),	-- Black Mageweave Boots

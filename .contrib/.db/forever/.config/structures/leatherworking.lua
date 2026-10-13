@@ -4,12 +4,12 @@
 LEATHERWORKING_RECIPES = {
 	APPRENTICE = {
 		r(2108, {	-- Leatherworking (Apprentice)
-			["lvl"] = 5,
-			["rank"] = 1,
+			lvl = 5,
+			rank = 1,
 		}),
 		n(ARMOR, {
-			r(1255146, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Black Whelp Slippers
-			r(1255145, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Dark Leather Boots
+			r(1255146, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Black Whelp Slippers
+			r(1255145, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Dark Leather Boots
 			r(2161),	-- Embossed Leather Boots
 			r(2162),	-- Embossed Leather Cloak
 			r(3756),	-- Embossed Leather Gloves
@@ -22,8 +22,8 @@ LEATHERWORKING_RECIPES = {
 			r(2153),	-- Handstitched Leather Pants
 			r(7126),	-- Handstitched Leather Vest
 			r(9065),	-- Light Leather Bracers
-			r(1255143, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Moonglow Boots
-			r(1255144, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Murloc Scale Shoes
+			r(1255143, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Moonglow Boots
+			r(1255144, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Murloc Scale Shoes
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			r(2152),	-- Light Armor Kit
@@ -39,16 +39,16 @@ LEATHERWORKING_RECIPES = {
 	};
 	JOURNEYMAN = {
 		r(3104, {	-- Leatherworking (Journeyman)
-			["lvl"] = 10,
-			["rank"] = 2,
+			lvl = 10,
+			rank = 2,
 		}),
 		n(ARMOR, {
-			r(1255093, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Brawler's Leather Helm
+			r(1255093, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Brawler's Leather Helm
 			r(3766),	-- Dark Leather Belt
 			r(2167),	-- Dark Leather Boots
 			r(2168),	-- Dark Leather Cloak
 			r(7135),	-- Dark Leather Pants
-			r(1255091, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Defender's Leather Helm
+			r(1255091, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Defender's Leather Helm
 			r(3763),	-- Fine Leather Belt
 			r(2159),	-- Fine Leather Cloak
 			r(3761),	-- Fine Leather Tunic
@@ -57,20 +57,20 @@ LEATHERWORKING_RECIPES = {
 			r(3764),	-- Hillman's Leather Gloves
 			r(3768),	-- Hillman's Shoulders
 			r(9068),	-- Light Leather Pants
-			r(1255075, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Mender's Leather Belt
+			r(1255075, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Mender's Leather Belt
 			r(9074),	-- Nimble Leather Gloves
-			r(1255081, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Prowler's Leather Belt
-			r(1255077, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Skirmisher's Leather Belt
-			r(1255080, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Skulker's Leather Belt
-			r(1255076, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Skycaller's Leather Belt
-			r(1255079, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Stalker's Leather Belt
-			r(1255089, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Stormrider's Leather Helm
-			r(1255090, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Totemic Leather Helm
+			r(1255081, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Prowler's Leather Belt
+			r(1255077, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Skirmisher's Leather Belt
+			r(1255080, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Skulker's Leather Belt
+			r(1255076, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Skycaller's Leather Belt
+			r(1255079, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Stalker's Leather Belt
+			r(1255089, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Stormrider's Leather Helm
+			r(1255090, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Totemic Leather Helm
 			r(2166),	-- Toughened Leather Armor
 			r(3770),	-- Toughened Leather Gloves
-			r(1255092, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Trapper's Leather Helm
-			r(1255078, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Warden's Leather Belt
-			r(1255088, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Wisdom's Leather Helm
+			r(1255092, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Trapper's Leather Helm
+			r(1255078, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Warden's Leather Belt
+			r(1255088, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Wisdom's Leather Helm
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			r(3780),	-- Heavy Armor Kit
@@ -89,8 +89,8 @@ LEATHERWORKING_RECIPES = {
 	};
 	EXPERT = {
 		r(3811, {	-- Leatherworking (Expert)
-			["lvl"] = 20,
-			["rank"] = 3,
+			lvl = 20,
+			rank = 3,
 		}),
 		n(ARMOR, {
 			r(6661),	-- Barbaric Harness
@@ -122,8 +122,8 @@ LEATHERWORKING_RECIPES = {
 	};
 	ARTISAN = {
 		r(10662, {	-- Leatherworking (Artisan)
-			["lvl"] = 35,
-			["rank"] = 4,
+			lvl = 35,
+			rank = 4,
 		}),
 		n(ARMOR, {
 			r(10558),	-- Nightscape Boots

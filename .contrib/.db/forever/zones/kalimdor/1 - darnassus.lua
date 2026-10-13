@@ -990,19 +990,19 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 						isLimited = true,
 					}),
 					i(252812, {	-- Pattern: Forceful Heavy Armor Kit (RECIPE!)
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(252784, {	-- Pattern: Forceful Medium Armor Kit (RECIPE!)
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(277716, {	-- Pattern: Light Leather Reagent Bag (RECIPE!)
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(252811, {	-- Pattern: Mystic Heavy Armor Kit (RECIPE!)
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(252783, {	-- Pattern: Mystic Medium Armor Kit (RECIPE!)
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),
