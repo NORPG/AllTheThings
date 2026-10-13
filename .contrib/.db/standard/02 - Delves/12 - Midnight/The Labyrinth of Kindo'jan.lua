@@ -137,7 +137,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 62.9, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 				q(98831, {	-- The Labyrinth
-					["sourceQuest"] = 99306,	-- The Labyrinth of Kindo'jan
 					["qg"] = 265173,	-- Kul'amara the Fierce
 					["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),

@@ -36,7 +36,6 @@ root(ROOTS.Unsorted, {
 			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
 			i(280563),	-- Ancient Hash'ey Battle Art: Falco Strikes
-			i(280678),	-- Primordial Venom Mote
 			i(280820),	-- Loa-Blessed Victory
 			i(280821),	-- Trail of Halazzi
 			i(280822),	-- Nalorakk's Strength Charm
