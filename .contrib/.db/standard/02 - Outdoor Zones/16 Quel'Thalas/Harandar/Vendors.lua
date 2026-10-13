@@ -140,6 +140,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					})),
 					-- Exo Note: AH and Transmog Module CAN be bought even after 13.0.0 Launches however, I is no point in adding the REMOVED timeline only on the mount if only those that bought the mount can buy and use the Modules
 					filter(MISC, bubbleDownSelf({ ["timeline"] = { REMOVED_13_0_0 } }, {	-- TODO: Timeline out correctly
+						i(284189),	-- Unlock Mail Carrier (CI!)	--* Unlocked by Default
+						i(284190),	-- Unlock Repair Services (CI!)	--* Unlocked by Default
 						i(284186, {	-- Unlock Auction House (CI!)
 							["cost"] = 15000000000,	-- 1,500,000g
 						}),

@@ -319,8 +319,6 @@ root(ROOTS.Unsorted, {
 			i(284134),	-- Incineratus Grass Patch
 			i(284180),	-- Loa-Touched Deltoid
 			i(284182),	-- Loa-Touched Visage
-			i(284189),	-- Unlock Mail Carrier
-			i(284190),	-- Unlock Repair Services
 			i(284194),	-- Everbloom Forest Floor
 			i(284212),	-- Technique: Apple Bobbing Bucket
 			i(284213),	-- Pattern: Spidery Witch Hat

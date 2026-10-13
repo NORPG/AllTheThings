@@ -1070,8 +1070,10 @@ iq(279289)							-- Well Urned Rest
 ------------------
 -- PATCH 12.1.5 --
 ------------------
-iq(284186, 98740);				-- Unlock Auction House [Sporebearer Fungal Strider]
-iq(284191, 98743);				-- Unlock Transmogrifier [Sporebearer Fungal Strider]
+iq(284186, 98740);					-- Unlock Auction House [Sporebearer Fungal Strider]
+iq(284189, 98741);					-- Unlock Mail Carrier [Sporebearer Fungal Strider]
+iq(284190, 98742);					-- Unlock Repair Services [Sporebearer Fungal Strider]
+iq(284191, 98743);					-- Unlock Transmogrifier [Sporebearer Fungal Strider]
 
 ------------
 -- UNUSED --

@@ -2969,8 +2969,8 @@ local AccountWideQuestsDB = {
 	98638,	-- Ancient Chest [The Labyrinth of Kindo'jan]
 	98649,	-- Ancient Chest [The Labyrinth of Kindo'jan]
 	98740,	-- Unlock Auction House [Sporebearer Fungal Strider]
-	98741,	-- Sporebearer Fungal Strider
-	98742,	-- (Related to Sporebearer Fungal Strider)
+	98741,	-- Unlock Mail Carrier [Sporebearer Fungal Strider]
+	98742,	-- Unlock Repair Services [Sporebearer Fungal Strider]
 	98743,	-- Unlock Transmogrifier [Sporebearer Fungal Strider]
 	98787,	-- Quest #98787*
 	98831,	-- The Labyrinth
