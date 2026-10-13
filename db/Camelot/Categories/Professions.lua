@@ -1,11 +1,19 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local cat,h,i,prof,q,r=_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe;
+local ach,cat,h,i,prof,q,r=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe;
 categories.Professions=
 h(-44,{SortPriority=25,g={
-prof(171),
+prof(171,{awp=16001,g={
+h(-12,{requireSkill=171,g={
+ach(62014,{requireSkill=171}),
+ach(62013,{requireSkill=171}),
+ach(62012,{requireSkill=171})}})}}),
 prof(164,{
+h(-12,{awp=16001,requireSkill=164,g={
+ach(62017,{requireSkill=164}),
+ach(62016,{requireSkill=164}),
+ach(62015,{requireSkill=164})}}),
 prof(9788,{description="These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={5283,5301},g={
 cat(218,{requireSkill=164,g={
 r(23636,{learnedAt=320,requireSkill=9788,skillID=2938,u=13}),
@@ -88,8 +96,16 @@ q(5284,{altQuests={5283,5301,5302},coords={
 q(5302,{altQuests={5283,5284,5301},coords={
 [1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164})}})}),
 prof(185),
-prof(333),
+prof(333,{awp=16001,g={
+h(-12,{requireSkill=333,g={
+ach(62020,{requireSkill=333}),
+ach(62019,{requireSkill=333}),
+ach(62018,{requireSkill=333})}})}}),
 prof(202,{
+h(-12,{awp=16001,requireSkill=202,g={
+ach(62023,{requireSkill=202}),
+ach(62022,{requireSkill=202}),
+ach(62021,{requireSkill=202})}}),
 h(-47,{requireSkill=202,g={
 i(11423,{description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},requireSkill=202,g={
 r(12607,{itemID=10603,learnedAt=240,requireSkill=202,skillID=2941}),
@@ -103,6 +119,10 @@ prof(129),
 prof(356),
 prof(182),
 prof(165,{
+h(-12,{awp=16001,requireSkill=165,g={
+ach(62026,{requireSkill=165}),
+ach(62025,{requireSkill=165}),
+ach(62024,{requireSkill=165})}}),
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
 cat(252,{requireSkill=165,g={
 r(19094,{learnedAt=310,requireSkill=10656,skillID=2945}),
@@ -192,5 +212,9 @@ q(5148,{altQuests={5145,5146},coords={
 [1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}),
 prof(186),
 prof(393),
-prof(197)}})
+prof(197,{awp=16001,g={
+h(-12,{requireSkill=197,g={
+ach(62030,{requireSkill=197}),
+ach(62029,{requireSkill=197}),
+ach(62028,{requireSkill=197})}})}})}})
 end)

@@ -670,7 +670,24 @@ ach(62049,{r=1}),
 ach(64029,{r=2})}),
 h(-31,{
 faction(2798,{r=1}),
-faction(2799,{r=2})})}}),
+faction(2799,{r=2})}),
+h(-45,{
+q(98888,{coords={
+[1413]={{46.6,8.6}},
+[1416]={{63,59.8}},
+[1417]={{73.6,29.2}},
+[1454]={{80.6,30.6}},
+[1456]={{57.8,76.8}},
+[1458]={{58.2,97.6}}},cost={{"i",274895,3}},lvl=30,qgs={15350},r=1}),
+q(98895,{coords={
+[1416]={{39.4,82.2}},
+[1417]={{45.6,45.8}},
+[1440]={{61.8,83.8}},
+[1453]={{83.4,33.8}},
+[1455]={{69.8,90.6}},
+[1457]={{58,34.4}}},cost={{"i",274895,3}},lvl=30,qgs={15351},r=2})}),
+h(-47,{
+i(274895,{b=1,f=55})})}}),
 m(1460,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",g={
 h(-12,{
 ach(62048),
