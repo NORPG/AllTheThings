@@ -168,7 +168,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.4, 68.8, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { PRIEST },
-						lvl = 5
+						lvl = 5,
 					}),
 					q(5441, {	-- Lazy Peons
 						qg = 11378,	-- Foreman Thazz'ril
@@ -1613,7 +1613,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					5823,	-- Death Flayer
 					3127,	-- Venomtail Scorpid
 				},
-				description = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials."
+				description = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",
 			}),
 		}),
 	},

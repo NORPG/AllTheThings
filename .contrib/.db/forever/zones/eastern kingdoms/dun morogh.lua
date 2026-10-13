@@ -875,7 +875,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						provider = { "i", 267414 },	-- Pristine Leopard Pelt
 						cr = 260157,	-- Elder Snow Leopard
 					}),
-				}
+				},
 			}),
 			q(96390, {	-- Nip 'Em in the Bud
 				sourceQuest = 96392,	-- Farsen's Watch
@@ -888,7 +888,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					objective(1, {	-- 0/10 Dark Iron Spy slain
 						provider = { "n", 6123 },	-- Dark Iron Spy
 					}),
-				}
+				},
 			}),
 			q(2239, {	-- Onin's Report
 				sourceQuest = 2238,	-- Simple Subterfugin'

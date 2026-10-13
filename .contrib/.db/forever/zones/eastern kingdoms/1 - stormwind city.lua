@@ -42,12 +42,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				n(957, {	-- Dane Lindgren <Journeyman Blacksmith>
 					coord = { 64.0, 37.2, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.APPRENTICE
+					groups = BLACKSMITHING_RECIPES.APPRENTICE,
 				}),
 				n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 					coord = { 63.8, 37.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.JOURNEYMAN
+					groups = BLACKSMITHING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 			prof(COOKING, {

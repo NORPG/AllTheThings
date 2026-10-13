@@ -1482,7 +1482,7 @@ root(ROOTS.Craftables, {
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
 				learnedAt = 70,
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(1622, {	-- Bruiseweed
@@ -1502,7 +1502,7 @@ root(ROOTS.Craftables, {
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
 				learnedAt = 100,
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(2044, {	-- Dragon's Teeth [CATA+] / Wintersbite
@@ -1698,7 +1698,7 @@ root(ROOTS.Craftables, {
 				-- Note: This node get replaced by o(1620) at an unknown point between MOP and TWW.
 				learnedAt = 50,
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(176586, {	-- Mountain Silversage
@@ -1734,7 +1734,7 @@ root(ROOTS.Craftables, {
 			o(3724, {	-- Peacebloom (The Barrens)
 				-- Note: This node get replaced by o(1618) at an unknown point between MOP and TWW.
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(142140, {	-- Purple Lotus
@@ -1765,7 +1765,7 @@ root(ROOTS.Craftables, {
 			o(3725, {	-- Silverleaf (The Barrens)
 				-- Note: This node get replaced by o(1617) at an unknown point between MOP and TWW.
 				maps = {
-					MAP.THE_BARRENS
+					MAP.THE_BARRENS,
 				},
 			}),
 			o(176587, {	-- Sorrowmoss [CATA+] / Plaguebloom
@@ -2273,7 +2273,7 @@ root(ROOTS.Craftables, {
 					i(8343),	-- Heavy Silken Thread
 					i(14341),	-- Rune Thread
 				})
-			)
+			),
 		}),
 		prof(10656, {	-- Dragonscale Leatherworking
 			i(16984),	-- Black Dragonscale Boots
@@ -2805,7 +2805,7 @@ root(ROOTS.Craftables, {
 							MAP.TIRISFAL_GLADES,
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
-							MAP.ZEPHRAS_ISLE
+							MAP.ZEPHRAS_ISLE,
 						},
 						provider = { "o", 1731 },	-- Copper Vein
 					}),
@@ -2873,7 +2873,7 @@ root(ROOTS.Craftables, {
 							MAP.TIRISFAL_GLADES,
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
-							MAP.ZEPHRAS_ISLE
+							MAP.ZEPHRAS_ISLE,
 						},
 						provider = { "o", 1731 },	-- Copper Vein
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3586,7 +3586,7 @@ root(ROOTS.Craftables, {
 				description = "Can be skinned from scorpids in the level bracket 50-60.",
 				maps_disp = {
 					MAP.BURNING_STEPPES,
-					MAP.SILITHUS
+					MAP.SILITHUS,
 				},
 			}),
 			i(15414, {	-- Red Dragonscale
@@ -3846,7 +3846,7 @@ root(ROOTS.Craftables, {
 					i(10290),	-- Pink Dye (Only used in Tailoring)
 					i(4341),	-- Yellow Dye (Only used in Tailoring)
 				})
-			)
+			),
 		}),
 		filter(REAGENTS, {
 			i(2996),	-- Bolt of Linen Cloth

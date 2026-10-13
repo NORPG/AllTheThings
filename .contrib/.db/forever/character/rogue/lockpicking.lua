@@ -67,5 +67,5 @@ root(ROOTS.Character, { cl(ROGUE, { lockpicking({
 		recipe(921, {	-- Pick Pocket
 			classes = { ROGUE },
 		}),
-	}
+	},
 })})});

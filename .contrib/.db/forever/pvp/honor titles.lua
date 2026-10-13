@@ -8,7 +8,7 @@ root(ROOTS.PVP, {
 			MAP.ALTERAC_VALLEY,
 			MAP.ARATHI_BASIN,
 			MAP.WARSONG_GULCH,
-			MAP.DARKSPEAR_ISLANDS
+			MAP.DARKSPEAR_ISLANDS,
 		},
 		groups = {
 			pvprank(1),	-- Private / Scout

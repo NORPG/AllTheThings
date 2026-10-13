@@ -180,7 +180,7 @@ root(ROOTS.WorldDrops, {
 					4416,	-- Schematic: Goblin Land Mine (RECIPE!)
 					4417,	-- Schematic: Large Seaforium Charge (RECIPE!)
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
-					4414	-- Schematic: Portable Bronze Mortar (RECIPE!)
+					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
 				}},
 			}),
 			i(5759),	-- Thorium Lockbox

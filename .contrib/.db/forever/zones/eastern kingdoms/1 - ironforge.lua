@@ -356,7 +356,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						},
 						coord = { 26.3, 41.2, DUN_MOROGH },
 					}),
-				}
+				},
 			}),
 			q(5639, {	-- Desperate Prayer
 				altQuests = {
