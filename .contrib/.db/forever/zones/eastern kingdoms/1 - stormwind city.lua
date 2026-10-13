@@ -136,15 +136,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			prof(TAILORING, {
-				n(1346, {	-- Georgio Bolero <Tailoring Trainer>
+				n(1346, {	-- Georgio Bolero <Artisan Tailor>
 					coord = { 53.2, 81.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_TAILORING,
+					groups = TAILORING_RECIPES.EXPERT,
 				}),
 				n(9584, {	-- Jalane Ayrole <Master Shadoweave Tailor>
 					coord = { 40.6, 83.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = SHADOWEAVE_TAILORING_CLASSIC,
+					groups = TAILORING_RECIPES.SHADOWEAVE,
+				}),
+				n(1300, {	-- Lawrence Schneider <Journeyman Tailor>
+					coord = { 53.6, 81.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = TAILORING_RECIPES.APPRENTICE,
+				}),
+				n(5567, {	-- Sellandus <Expert Tailor>
+					coord = { 52.2, 83.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = TAILORING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 		}),

@@ -2307,7 +2307,7 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 		n(ARMOR, {
-			n(BACK, {
+			filter(CLOAKS, {
 				i(8216),	-- Big Voodoo Cloak
 				i(7283),	-- Black Whelp Cloak
 				i(2316),	-- Dark Leather Cloak
@@ -3589,196 +3589,212 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(TAILORING, {
+		n(COMMON_VENDOR_ITEMS, {
+			i(2325),	-- Black Dye
+			i(2324),	-- Bleach
+			i(6260),	-- Blue Dye
+			i(2320),	-- Coarse Thread
+			i(2321),	-- Fine Thread
+			i(2605),	-- Green Dye
+			i(4340),	-- Grey Dye
+			i(8343),	-- Heavy Silken Thread
+			i(6261),	-- Orange Dye
+			i(10290),	-- Pink Dye
+			i(4342),	-- Purple Dye
+			i(2604),	-- Red Dye
+			i(14341),	-- Rune Thread
+			i(4291),	-- Silken Thread
+			i(4341),	-- Yellow Dye
+		}),
 		n(ARMOR, {
-			i(10030),	-- Admiral's Hat
-			i(7060),	-- Azure Shoulders
-			i(7052),	-- Azure Silk Belt
-			i(7053),	-- Azure Silk Cloak
-			i(4319),	-- Azure Silk Gloves
-			i(7048),	-- Azure Silk Hood
-			i(7046),	-- Azure Silk Pants
-			i(4324),	-- Azure Silk Vest
-			i(2578),	-- Barbaric Linen Vest
-			i(10026),	-- Black Mageweave Boots
-			i(10003),	-- Black Mageweave Gloves
-			i(10024),	-- Black Mageweave Headband
-			i(9999),	-- Black Mageweave Leggings
-			i(10001),	-- Black Mageweave Robe
-			i(10027),	-- Black Mageweave Shoulders
-			i(9998),	-- Black Mageweave Vest
-			i(4336),	-- Black Swashbuckler's Shirt
-			i(6242),	-- Blue Linen Robe
-			i(2577),	-- Blue Linen Shirt
-			i(6240),	-- Blue Linen Vest
-			i(6263),	-- Blue Overalls
-			i(4325),	-- Boots of the Enchanter
-			i(4332),	-- Bright Yellow Shirt
-			i(14103),	-- Brightcloth Cloak
-			i(14101),	-- Brightcloth Gloves
-			i(14104),	-- Brightcloth Pants
-			i(14100),	-- Brightcloth Robe
-			i(4343),	-- Brown Linen Pants
-			i(6238),	-- Brown Linen Robe
-			i(4344),	-- Brown Linen Shirt
-			i(2568),	-- Brown Linen Vest
-			i(10044),	-- Cindercloth Boots
-			i(14044),	-- Cindercloth Cloak
-			i(14043),	-- Cindercloth Gloves
-			i(14045),	-- Cindercloth Pants
-			i(10042),	-- Cindercloth Robe
-			i(14042),	-- Cindercloth Vest
-			i(14134),	-- Cloak of Fire
-			i(10048),	-- Colorful Kilt
-			i(7055),	-- Crimson Silk Belt
-			i(7056),	-- Crimson Silk Cloak
-			i(7064),	-- Crimson Silk Gloves
-			i(7062),	-- Crimson Silk Pantaloons
-			i(7063),	-- Crimson Silk Robe
-			i(7059),	-- Crimson Silk Shoulders
-			i(7058),	-- Crimson Silk Vest
-			i(4333),	-- Dark Silk Shirt
-			i(4314),	-- Double-stitched Woolen Shoulders
-			i(10041),	-- Dreamweave Circlet
-			i(10019),	-- Dreamweave Gloves
-			i(10021),	-- Dreamweave Vest
-			i(7061),	-- Earthen Silk Belt
-			i(7051),	-- Earthen Vest
-			i(4322),	-- Enchanter's Cowl
-			i(14108),	-- Felcloth Boots
-			i(14111),	-- Felcloth Hood
-			i(14107),	-- Felcloth Pants
-			i(14106),	-- Felcloth Robe
-			i(14112),	-- Felcloth Shoulders
-			i(21154),	-- Festival Dress
-			i(21542),	-- Festival Suit
-			i(16979),	-- Flarecore Gloves
+			cl(MAGE, {
+				i(14152),	-- Robe of the Archmage
+			}),
+			cl(PRIEST, {
+				i(14154),	-- Truefaith Vestments
+			}),
+			cl(WARLOCK, {
+				i(14153),	-- Robe of the Void
+			}),
+			filter(CLOAKS, {
+				i(7053),	-- Azure Silk Cloak
+				i(14103),	-- Brightcloth Cloak
+				i(14044),	-- Cindercloth Cloak
+				i(14134),	-- Cloak of Fire
+				i(7056),	-- Crimson Silk Cloak
+				i(4311),	-- Heavy Woolen Cloak
+				i(4327),	-- Icy Cloak
+				i(2570),	-- Linen Cloak
+				i(4326),	-- Long Silken Cloak
+				i(5542),	-- Pearl-Clasped Cloak
+				i(2580),	-- Reinforced Linen Cape
+				i(13860),	-- Runecloth Cloak
+				i(2584),	-- Woolen Cape
+			}),
+			filter(CLOTH, {
+				i(10030),	-- Admiral's Hat
+				i(7060),	-- Azure Shoulders
+				i(7052),	-- Azure Silk Belt
+				i(4319),	-- Azure Silk Gloves
+				i(7048),	-- Azure Silk Hood
+				i(7046),	-- Azure Silk Pants
+				i(4324),	-- Azure Silk Vest
+				i(2578),	-- Barbaric Linen Vest
+				i(10026),	-- Black Mageweave Boots
+				i(10003),	-- Black Mageweave Gloves
+				i(10024),	-- Black Mageweave Headband
+				i(9999),	-- Black Mageweave Leggings
+				i(10001),	-- Black Mageweave Robe
+				i(10027),	-- Black Mageweave Shoulders
+				i(9998),	-- Black Mageweave Vest
+				i(4336),	-- Black Swashbuckler's Shirt
+				i(6242),	-- Blue Linen Robe
+				i(2577),	-- Blue Linen Shirt
+				i(6240),	-- Blue Linen Vest
+				i(6263),	-- Blue Overalls
+				i(4325),	-- Boots of the Enchanter
+				i(4332),	-- Bright Yellow Shirt
+				i(14101),	-- Brightcloth Gloves
+				i(14104),	-- Brightcloth Pants
+				i(14100),	-- Brightcloth Robe
+				i(4343),	-- Brown Linen Pants
+				i(6238),	-- Brown Linen Robe
+				i(4344),	-- Brown Linen Shirt
+				i(2568),	-- Brown Linen Vest
+				i(10044),	-- Cindercloth Boots
+				i(14043),	-- Cindercloth Gloves
+				i(14045),	-- Cindercloth Pants
+				i(10042),	-- Cindercloth Robe
+				i(14042),	-- Cindercloth Vest
+				i(10048),	-- Colorful Kilt
+				i(7055),	-- Crimson Silk Belt
+				i(7064),	-- Crimson Silk Gloves
+				i(7062),	-- Crimson Silk Pantaloons
+				i(7063),	-- Crimson Silk Robe
+				i(7059),	-- Crimson Silk Shoulders
+				i(7058),	-- Crimson Silk Vest
+				i(4333),	-- Dark Silk Shirt
+				i(4314),	-- Double-stitched Woolen Shoulders
+				i(10041),	-- Dreamweave Circlet
+				i(10019),	-- Dreamweave Gloves
+				i(10021),	-- Dreamweave Vest
+				i(7061),	-- Earthen Silk Belt
+				i(7051),	-- Earthen Vest
+				i(4322),	-- Enchanter's Cowl
+				i(14108),	-- Felcloth Boots
+				i(14111),	-- Felcloth Hood
+				i(14107),	-- Felcloth Pants
+				i(14106),	-- Felcloth Robe
+				i(14112),	-- Felcloth Shoulders
+				i(21154),	-- Festival Dress
+				i(21542),	-- Festival Suit
+				i(4334),	-- Formal White Shirt
+				i(13870),	-- Frostweave Gloves
+				i(13871),	-- Frostweave Pants
+				i(13868),	-- Frostweave Robe
+				i(13869),	-- Frostweave Tunic
+				i(14143),	-- Ghostweave Belt
+				i(14142),	-- Ghostweave Gloves
+				i(14144),	-- Ghostweave Pants
+				i(14141),	-- Ghostweave Vest
+				i(4318),	-- Gloves of Meditation
+				i(14146),	-- Gloves of Spell Mastery
+				i(2585),	-- Gray Woolen Robe
+				i(2587),	-- Gray Woolen Shirt
+				i(6264),	-- Greater Adept's Robe
+				i(17723),	-- Green Holiday Shirt
+				i(4308),	-- Green Linen Bracers
+				i(2579),	-- Green Linen Shirt
+				i(7065),	-- Green Silk Armor
+				i(7057),	-- Green Silken Shoulders
+				i(2582),	-- Green Woolen Vest
+				i(7047),	-- Hands of Darkness
+				i(4309),	-- Handstitched Linen Britches
+				i(4307),	-- Heavy Linen Gloves
+				i(4310),	-- Heavy Woolen Gloves
+				i(4316),	-- Heavy Woolen Pants
+				i(10054),	-- Lavender Mageweave Shirt
+				i(5766),	-- Lesser Wizard's Robe
+				i(7026),	-- Linen Belt
+				i(2569),	-- Linen Boots
+				i(15802),	-- Mooncloth Boots
+				i(14140),	-- Mooncloth Circlet
+				i(14137),	-- Mooncloth Leggings
+				i(18486),	-- Mooncloth Robe
+				i(14139),	-- Mooncloth Shoulders
+				i(14138),	-- Mooncloth Vest
+				i(10056),	-- Orange Mageweave Shirt
+				i(10052),	-- Orange Martial Shirt
+				i(4331),	-- Phoenix Gloves
+				i(4317),	-- Phoenix Pants
+				i(10055),	-- Pink Mageweave Shirt
+				i(2572),	-- Red Linen Robe
+				i(2575),	-- Red Linen Shirt
+				i(6239),	-- Red Linen Vest
+				i(10018),	-- Red Mageweave Gloves
+				i(10033),	-- Red Mageweave Headband
+				i(10009),	-- Red Mageweave Pants
+				i(10029),	-- Red Mageweave Shoulders
+				i(10007),	-- Red Mageweave Vest
+				i(6796),	-- Red Swashbuckler's Shirt
+				i(4313),	-- Red Woolen Boots
+				i(4315),	-- Reinforced Woolen Shoulders
+				i(4335),	-- Rich Purple Silk Shirt
+				i(7054),	-- Robe of Power
+				i(14136),	-- Robe of Winter Night
+				i(5770),	-- Robes of Arcana
+				i(13856),	-- Runecloth Belt
+				i(13864),	-- Runecloth Boots
+				i(13863),	-- Runecloth Gloves
+				i(13866),	-- Runecloth Headband
+				i(13865),	-- Runecloth Pants
+				i(13858),	-- Runecloth Robe
+				i(13867),	-- Runecloth Shoulders
+				i(13857),	-- Runecloth Tunic
+				i(4323),	-- Shadow Hood
+				i(10031),	-- Shadoweave Boots
+				i(10023),	-- Shadoweave Gloves
+				i(10025),	-- Shadoweave Mask
+				i(10002),	-- Shadoweave Pants
+				i(10004),	-- Shadoweave Robe
+				i(10028),	-- Shadoweave Shoulders
+				i(7050),	-- Silk Headband
+				i(10053),	-- Simple Black Dress
+				i(6786),	-- Simple Dress
+				i(10047),	-- Simple Kilt
+				i(10046),	-- Simple Linen Boots
+				i(10045),	-- Simple Linen Pants
+				i(4312),	-- Soft-Soled Linen Boots
+				i(4328),	-- Spider Belt
+				i(4321),	-- Spider Silk Slippers
+				i(4320),	-- Spidersilk Boots
+				i(4329),	-- Star Belt
+				i(6384),	-- Stylish Blue Shirt
+				i(6385),	-- Stylish Green Shirt
+				i(4330),	-- Stylish Red Shirt
+				i(7049),	-- Truefaith Gloves
+				i(10036),	-- Tuxedo Jacket
+				i(10035),	-- Tuxedo Pants
+				i(10034),	-- Tuxedo Shirt
+				i(10008),	-- White Bandit Mask
+				i(6241),	-- White Linen Robe
+				i(2576),	-- White Linen Shirt
+				i(6795),	-- White Swashbuckler's Shirt
+				i(10040),	-- White Wedding Dress
+				i(6787),	-- White Woolen Dress
+				i(14132),	-- Wizardweave Leggings
+				i(14128),	-- Wizardweave Robe
+				i(14130),	-- Wizardweave Turban
+				i(2583),	-- Woolen Boots
+			}),
+			--maybe
 			i(16980),	-- Flarecore Mantle
-			i(4334),	-- Formal White Shirt
-			i(13870),	-- Frostweave Gloves
-			i(13871),	-- Frostweave Pants
-			i(13868),	-- Frostweave Robe
-			i(13869),	-- Frostweave Tunic
-			i(14143),	-- Ghostweave Belt
-			i(14142),	-- Ghostweave Gloves
-			i(14144),	-- Ghostweave Pants
-			i(14141),	-- Ghostweave Vest
-			i(4318),	-- Gloves of Meditation
-			i(14146),	-- Gloves of Spell Mastery
-			i(2585),	-- Gray Woolen Robe
-			i(2587),	-- Gray Woolen Shirt
-			i(6264),	-- Greater Adept's Robe
-			i(17723),	-- Green Holiday Shirt
-			i(4308),	-- Green Linen Bracers
-			i(2579),	-- Green Linen Shirt
-			i(7065),	-- Green Silk Armor
-			i(7057),	-- Green Silken Shoulders
-			i(2582),	-- Green Woolen Vest
-			i(7047),	-- Hands of Darkness
-			i(4309),	-- Handstitched Linen Britches
-			i(4307),	-- Heavy Linen Gloves
-			i(4311),	-- Heavy Woolen Cloak
-			i(4310),	-- Heavy Woolen Gloves
-			i(4316),	-- Heavy Woolen Pants
-			i(4327),	-- Icy Cloak
-			i(10054),	-- Lavender Mageweave Shirt
-			i(5766),	-- Lesser Wizard's Robe
-			i(7026),	-- Linen Belt
-			i(2569),	-- Linen Boots
-			i(2570),	-- Linen Cloak
-			i(4326),	-- Long Silken Cloak
-			i(15802),	-- Mooncloth Boots
-			i(14140),	-- Mooncloth Circlet
-			i(14137),	-- Mooncloth Leggings
-			i(18486),	-- Mooncloth Robe
-			i(14139),	-- Mooncloth Shoulders
-			i(14138),	-- Mooncloth Vest
-			i(10056),	-- Orange Mageweave Shirt
-			i(10052),	-- Orange Martial Shirt
-			i(5542),	-- Pearl-Clasped Cloak
-			i(4331),	-- Phoenix Gloves
-			i(4317),	-- Phoenix Pants
-			i(10055),	-- Pink Mageweave Shirt
-			i(2572),	-- Red Linen Robe
-			i(2575),	-- Red Linen Shirt
-			i(6239),	-- Red Linen Vest
-			i(10018),	-- Red Mageweave Gloves
-			i(10033),	-- Red Mageweave Headband
-			i(10009),	-- Red Mageweave Pants
-			i(10029),	-- Red Mageweave Shoulders
-			i(10007),	-- Red Mageweave Vest
-			i(6796),	-- Red Swashbuckler's Shirt
-			i(4313),	-- Red Woolen Boots
-			i(2580),	-- Reinforced Linen Cape
-			i(4315),	-- Reinforced Woolen Shoulders
-			i(4335),	-- Rich Purple Silk Shirt
-			i(7054, {	-- Robe of Power
-				requireSkill = TAILORING,
-			}),
-			i(14152, {	-- Robe of the Archmage
-				classes = { MAGE },
-				requireSkill = TAILORING,
-			}),
-			i(14153, {	-- Robe of the Void
-				classes = { WARLOCK },
-				requireSkill = TAILORING,
-			}),
-			i(14136),	-- Robe of Winter Night
-			i(5770),	-- Robes of Arcana
-			i(13856),	-- Runecloth Belt
-			i(13864),	-- Runecloth Boots
-			i(13860),	-- Runecloth Cloak
-			i(13863),	-- Runecloth Gloves
-			i(13866),	-- Runecloth Headband
-			i(13865),	-- Runecloth Pants
-			i(13858),	-- Runecloth Robe
-			i(13867),	-- Runecloth Shoulders
-			i(13857),	-- Runecloth Tunic
-			i(4323),	-- Shadow Hood
-			i(10031),	-- Shadoweave Boots
-			i(10023),	-- Shadoweave Gloves
-			i(10025),	-- Shadoweave Mask
-			i(10002),	-- Shadoweave Pants
-			i(10004),	-- Shadoweave Robe
-			i(10028),	-- Shadoweave Shoulders
-			i(7050),	-- Silk Headband
-			i(10053),	-- Simple Black Dress
-			i(6786),	-- Simple Dress
-			i(10047),	-- Simple Kilt
-			i(10046),	-- Simple Linen Boots
-			i(10045),	-- Simple Linen Pants
-			i(4312),	-- Soft-Soled Linen Boots
-			i(4328),	-- Spider Belt
-			i(4321),	-- Spider Silk Slippers
-			i(4320),	-- Spidersilk Boots
-			i(4329),	-- Star Belt
-			i(6384),	-- Stylish Blue Shirt
-			i(6385),	-- Stylish Green Shirt
-			i(4330),	-- Stylish Red Shirt
-			i(7049),	-- Truefaith Gloves
-			i(14154, {	-- Truefaith Vestments
-				classes = { PRIEST },
-				requireSkill = TAILORING,
-			}),
-			i(10036),	-- Tuxedo Jacket
-			i(10035),	-- Tuxedo Pants
-			i(10034),	-- Tuxedo Shirt
-			i(10008),	-- White Bandit Mask
-			i(6241),	-- White Linen Robe
-			i(2576),	-- White Linen Shirt
-			i(6795),	-- White Swashbuckler's Shirt
-			i(10040),	-- White Wedding Dress
-			i(6787),	-- White Woolen Dress
-			i(14132),	-- Wizardweave Leggings
-			i(14128),	-- Wizardweave Robe
-			i(14130),	-- Wizardweave Turban
-			i(2583),	-- Woolen Boots
-			i(2584),	-- Woolen Cape
+			i(16979),	-- Flarecore Gloves
 		}),
 		filter(BAGS, {
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			i(22246),	-- Enchanted Mageweave Pouch
-			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
 			i(4238),	-- Linen Bag
@@ -3791,41 +3807,8 @@ root(ROOTS.Craftables, {
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
-		}),
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				{	-- Danny Donkey: These are shared with Leatherworking.
-					i(2325),	-- Black Dye
-					i(6260),	-- Blue Dye
-					i(2605),	-- Green Dye
-					i(4340),	-- Grey Dye
-					i(4342),	-- Purple Dye
-					i(2604),	-- Red Dye
-					i(2320),	-- Coarse Thread
-					i(2321),	-- Fine Thread
-					i(4291),	-- Silken Thread
-					i(8343),	-- Heavy Silken Thread
-					i(14341),	-- Rune Thread
-				},
-				sharedData({
-					description = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-					--[[["providers"] = {
-						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
-						{ "n", 3364},	-- Borya <Tailoring Supplies>
-						{ "n", 4168},	-- Elynna <Tailoring Supplies>
-						{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-						{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
-						{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
-						{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
-					},]]
-				}, {
-					i(2324),	-- Bleach (Only sold by Tailoring Suppliers)
-					i(6261),	-- Orange Dye (Only used in Tailoring)
-					i(10290),	-- Pink Dye (Only used in Tailoring)
-					i(4341),	-- Yellow Dye (Only used in Tailoring)
-				})
-			)
+			-- maybe?
+			i(21341),	-- Felcloth Bag
 		}),
 		filter(REAGENTS, {
 			i(2996),	-- Bolt of Linen Cloth

@@ -76,7 +76,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				n(11052, {	-- Timothy Worthington <Master Tailor>
 					["coord"] = { 66.2, 51.6, MAP.DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = ARTISAN_TAILORING,
+					["groups"] = TAILORING_RECIPES.ARTISAN,
 				}),
 			}),
 		}),

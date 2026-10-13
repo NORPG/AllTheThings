@@ -5,7 +5,6 @@ i(221315),	-- Traveler's Symbols
 i(269900),	-- Centaur Banner Deployment Device
 i(270868),	-- Dwarven Tradeskill Signpost
 i(270870),	-- Orcish Tradeskill Signpost
-i(276236),	-- Holstered Replica Ironforge Air Rifle
 i(276896),	-- Everlasting Silvermoon Shimmerwine
 i(279471),	--
 i(279519),	--
@@ -25,7 +24,6 @@ i(22728),	-- Steam Tonk Controller
 i(269900),	-- Centaur Banner Deployment Device
 i(270868),	-- Dwarven Tradeskill Signpost
 i(270870),	-- Orcish Tradeskill Signpost
-i(276236),	-- Holstered Replica Ironforge Air Rifle
 i(276896),	-- Everlasting Silvermoon Shimmerwine
 i(279471),	--
 i(279519),	--

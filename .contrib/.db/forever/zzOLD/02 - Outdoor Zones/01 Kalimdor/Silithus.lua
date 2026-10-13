@@ -2121,13 +2121,13 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(22310),	-- Pattern: Cenarion Herb Bag (RECIPE!)
-						i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
-						}),
+						--i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
+						--}),
 					}, {	-- Honored
-						i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
-						}),
+						--i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
+						--}),
 					}, {	-- Revered
-						i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
+						--i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
 						i(22312),	-- Pattern: Satchel of Cenarius (RECIPE!)
 						i(22774,	{	-- Pattern: Sylvan Vest (RECIPE!)
 						}),

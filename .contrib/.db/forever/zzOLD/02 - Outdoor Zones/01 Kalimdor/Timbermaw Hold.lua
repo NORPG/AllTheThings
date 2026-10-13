@@ -260,7 +260,7 @@ maproot(MAP.KALIMDOR, {
 								timeline = { TIMELINE.ADDED_1_60_1 },
 							}),
 						}, {	-- Revered
-							i(19218),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
+							--i(19218),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
 							i(19327),	-- Pattern: Timbermaw Brawlers (RECIPE!)
 							i(19204),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 						}, {	-- Exalted

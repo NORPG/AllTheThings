@@ -1397,10 +1397,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
 				i(14513, {	-- Pattern: Robe of the Archmage (RECIPE!)
-					-- #if TBC
-					-- During TBC this was made exclusively usable by Mages, then that change was reverted with Wrath.
-					["classes"] = { MAGE },
-					-- #endif
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
 				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)

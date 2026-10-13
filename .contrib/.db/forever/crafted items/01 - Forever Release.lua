@@ -95,6 +95,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(277019),	-- Azure Skyforged Chain
 			i(277016),	-- Azure Skyforged Chainmail
 			i(277018),	-- Azure Skyforged Gauntlets
+			i(277021),	-- Azure Skyforged Greaves
 			i(277048),	-- Azure Skyforged Helm
 			i(277020),	-- Azure Skyforged Legguards
 			i(277049),	-- Azure Skyforged Pauldrons
@@ -102,6 +103,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(276995),	-- Cloudy Skyforged Chain
 			i(276992),	-- Cloudy Skyforged Chainmail
 			i(276994),	-- Cloudy Skyforged Gauntlets
+			i(276997),	-- Cloudy Skyforged Greaves
 			i(277040),	-- Cloudy Skyforged Helm
 			i(276996),	-- Cloudy Skyforged Legguards
 			i(277041),	-- Cloudy Skyforged Pauldrons
@@ -461,13 +463,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 					i(277050),	-- Azure Gustwoven Hood
 					i(277051),	-- Azure Gustwoven Spaulders
 					i(277026),	-- Azure Gustwoven Trousers
-					i(277021),	-- Azure Skyforged Greaves
-					i(277037),	-- Azure Stormsewn Cord
-					i(277035),	-- Azure Stormsewn Cuffs
-					i(277036),	-- Azure Stormsewn Handwraps
-					i(277038),	-- Azure Stormsewn Leggings
-					i(277039),	-- Azure Stormsewn Shoes
-					i(277034),	-- Azure Stormsewn Vest
 					i(277029),	-- Azure Windraveled Armguards
 					i(277052),	-- Azure Windraveled Cover
 					i(277053),	-- Azure Windraveled Drapes
@@ -490,12 +485,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 					i(277042),	-- Cloudy Gustwoven Hood
 					i(277043),	-- Cloudy Gustwoven Spaulders
 					i(277002),	-- Cloudy Gustwoven Trousers
-					i(277013),	-- Cloudy Stormsewn Cord
-					i(277011),	-- Cloudy Stormsewn Cuffs
-					i(277012),	-- Cloudy Stormsewn Handwraps
-					i(277014),	-- Cloudy Stormsewn Leggings
-					i(277015),	-- Cloudy Stormsewn Shoes
-					i(277010),	-- Cloudy Stormsewn Vest
 					i(277005),	-- Cloudy Windraveled Armguards
 					i(277044),	-- Cloudy Windraveled Cover
 					i(277045),	-- Cloudy Windraveled Drapes
@@ -722,8 +711,217 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 		filter(MISC, {
 			i(279978),	-- Camp Tent
-			i(279943),	-- Spinning Wheel
 			i(279941),	-- Tanning Rack
+		}),
+	}),
+	prof(TAILORING, {
+		n(ARMOR, {
+			cl(WARLOCK, {
+				i(273943),	-- Demonheart Boots
+				i(273941),	-- Demonheart Gloves
+				i(273940),	-- Demonheart Leggings
+				i(273942),	-- Demonheart Spaulders
+			}),
+			cl(MAGE, {
+				i(273907),	-- Manaflare Boots
+				i(273905),	-- Manaflare Gloves
+				i(273906),	-- Manaflare Mantle
+				i(273904),	-- Manaflare Pants
+			}),
+			cl(PRIEST, {
+				i(273927),	-- Boots of Conviction
+				i(273921),	-- Gloves of Conviction
+				i(273925),	-- Handguards of Conviction
+				i(273924),	-- Leggings of Conviction
+				i(273922),	-- Mantle of Conviction
+				i(273920),	-- Pants of Conviction
+				i(273926),	-- Pauldrons of Conviction
+				i(273923),	-- Treads of Conviction
+			}),
+			filter(CLOAKS, {
+				-- Unknown
+				i(279270),	-- Cloak of Earth and Sky
+				i(279269),	-- Fel Cape
+			}),
+			filter(CLOTH, {
+				i(277037),	-- Azure Stormsewn Cord
+				i(277054),	-- Azure Stormsewn Cowl
+				i(277035),	-- Azure Stormsewn Cuffs
+				i(277055),	-- Azure Stormsewn Epaulets
+				i(277036),	-- Azure Stormsewn Handwraps
+				i(277038),	-- Azure Stormsewn Leggings
+				i(277039),	-- Azure Stormsewn Shoes
+				i(277034),	-- Azure Stormsewn Vest
+				i(254027),	-- Black Handwraps
+				i(254113),	-- Black Sandals
+				i(254007),	-- Black Slippers
+				i(254087),	-- Black Waistcord
+				i(277013),	-- Cloudy Stormsewn Cord
+				i(277046),	-- Cloudy Stormsewn Cowl
+				i(277011),	-- Cloudy Stormsewn Cuffs
+				i(277047),	-- Cloudy Stormsewn Epaulets
+				i(277012),	-- Cloudy Stormsewn Handwraps
+				i(277014),	-- Cloudy Stormsewn Leggings
+				i(277015),	-- Cloudy Stormsewn Shoes
+				i(277010),	-- Cloudy Stormsewn Vest
+				i(254025),	-- Fiery Handwraps
+				i(254111),	-- Fiery Sandals
+				i(254005),	-- Fiery Slippers
+				i(254085),	-- Fiery Waistcord
+				i(253979),	-- Filigreed Flame Circlet
+				i(253905),	-- Filigreed Flame Gown
+				i(253941),	-- Filigreed Flame Leggings
+				i(253983),	-- Filigreed Pearly Circlet
+				i(253909),	-- Filigreed Pearly Gown
+				i(253945),	-- Filigreed Pearly Leggings
+				i(253975),	-- Filigreed Pristine Circlet
+				i(253901),	-- Filigreed Pristine Gown
+				i(253937),	-- Filigreed Pristine Leggings
+				i(253981),	-- Filigreed Shadow Circlet
+				i(253907),	-- Filigreed Shadow Gown
+				i(253943),	-- Filigreed Shadow Leggings
+				i(253985),	-- Filigreed Shining Circlet
+				i(253911),	-- Filigreed Shining Gown
+				i(253947),	-- Filigreed Shining Leggings
+				i(253977),	-- Filigreed Silky Circlet
+				i(253903),	-- Filigreed Silky Gown
+				i(253939),	-- Filigreed Silky Leggings
+				i(253893),	-- Flame Boots
+				i(253953),	-- Flame Circlet
+				i(253917),	-- Flame Gloves
+				i(253965),	-- Flame Gown
+				i(253991),	-- Flame Leggings
+				i(253929),	-- Flame Sash
+				i(254023),	-- Frothing Handwraps
+				i(254109),	-- Frothing Sandals
+				i(254003),	-- Frothing Slippers
+				i(254083),	-- Frothing Waistcord
+				i(254107),	-- Gilded Sandals
+				i(254001),	-- Gilded Slippers
+				i(254081),	-- Gilded Waistcord
+				i(254029),	-- Golden Handwraps
+				i(254115),	-- Golden Sandals
+				i(254009),	-- Golden Slippers
+				i(254089),	-- Golden Waistcord
+				i(254065),	-- Netherflame Cuffs
+				i(254053),	-- Netherflame Shoulders
+				i(254063),	-- Netherfroth Cuffs
+				i(254051),	-- Netherfroth Shoulders
+				i(254061),	-- Nethergeld Cuffs
+				i(254049),	-- Nethergeld Shoulders
+				i(254071),	-- Netherlight Cuffs
+				i(254059),	-- Netherlight Shoulders
+				i(254067),	-- Netherpearl Cuffs
+				i(254055),	-- Netherpearl Shoulders
+				i(254069),	-- Nethershine Cuffs
+				i(254057),	-- Nethershine Shoulders
+				i(253885),	-- Novice Arcanist's Sash
+				i(253887),	-- Novice Ardent's Sash
+				i(253897),	-- Pearly Boots
+				i(253957),	-- Pearly Circlet
+				i(253921),	-- Pearly Gloves
+				i(253969),	-- Pearly Gown
+				i(253995),	-- Pearly Leggings
+				i(253933),	-- Pearly Sash
+				i(253889),	-- Pristine Boots
+				i(253949),	-- Pristine Circlet
+				i(253913),	-- Pristine Gloves
+				i(253961),	-- Pristine Gown
+				i(253987),	-- Pristine Leggings
+				i(253925),	-- Pristine Sash
+				i(254031),	-- Radiant Handwraps
+				i(254117),	-- Radiant Sandals
+				i(254011),	-- Radiant Slippers
+				i(254091),	-- Radiant Waistcord
+				i(254123),	-- Runecloth Cuffs
+				i(253895),	-- Shadow Boots
+				i(253955),	-- Shadow Circlet
+				i(253919),	-- Shadow Gloves
+				i(253967),	-- Shadow Gown
+				i(253993),	-- Shadow Leggings
+				i(253931),	-- Shadow Sash
+				i(253899),	-- Shining Boots
+				i(253959),	-- Shining Circlet
+				i(253923),	-- Shining Gloves
+				i(253971),	-- Shining Gown
+				i(253997),	-- Shining Leggings
+				i(253935),	-- Shining Sash
+				i(253891),	-- Silky Boots
+				i(253951),	-- Silky Circlet
+				i(253915),	-- Silky Gloves
+				i(253963),	-- Silky Gown
+				i(253989),	-- Silky Leggings
+				i(253927),	-- Silky Sash
+				-- Unknown
+				i(254043),	-- Black Cord
+				i(254101),	-- Black Gloves
+				i(253999),	-- Earthen Leggings
+				i(254019),	-- Earthen Silk Cuffs
+				i(254017),	-- Earthen Silk Gloves
+				i(254015),	-- Earthen Silk Hood
+				i(254033),	-- Earthen Silk Shoulders
+				i(254013),	-- Earthen Silk Slippers
+				i(254093),	-- Earthenweave Boots
+				i(254077),	-- Earthenweave Cord
+				i(254137),	-- Earthenweave Crown
+				i(254131),	-- Earthenweave Cuffs
+				i(254075),	-- Earthenweave Gloves
+				i(254125),	-- Earthenweave Leggings
+				i(254119),	-- Earthenweave Mantle
+				i(254121),	-- Earthenweave Vest
+				i(254041),	-- Fiery Cord
+				i(254099),	-- Fiery Gloves
+				i(254039),	-- Frothing Cord
+				i(254097),	-- Frothing Gloves
+				i(254129),	-- Ghostweave Boots
+				i(254073),	-- Ghostweave Cord
+				i(254135),	-- Ghostweave Hood
+				i(254127),	-- Ghostweave Mantle
+				i(254037),	-- Gilded Cord
+				i(254095),	-- Gilded Gloves
+				i(254021),	-- Gilded Handwraps
+				i(254045),	-- Golden Cord
+				i(254103),	-- Golden Gloves
+				i(279267),	-- Mana-infused Cord
+				i(254047),	-- Radiant Cord
+				i(254105),	-- Radiant Gloves
+				i(279268),	-- Rime-encrusted Boots
+				i(279266),	-- Robes of Fiery Devastation
+				i(275608),	-- Swarmtender's Cord
+				i(275609),	-- Swarmtender's Footpads
+				i(275607),	-- Swarmtender's Gloves
+				i(275605),	-- Venomspew Cord
+				i(275606),	-- Venomspew Footpads
+				i(275604),	-- Venomspew Gloves
+				-- Unknown (Changed.... But was NYI in classic)
+				i(10039),	-- Stormcloth Boots
+				i(10011),	-- Stormcloth Gloves
+				i(10032),	-- Stormcloth Headband
+				i(10010),	-- Stormcloth Pants
+				i(10038),	-- Stormcloth Shoulders
+				i(10020),	-- Stormcloth Vest
+			}),
+		}),
+		filter(BAGS, {
+			i(253664),	-- Linen Reagent Bag
+			i(254035),	-- Mageweave Reagent Bag
+			i(254079),	-- Runecloth Reagent Bag
+			i(253973),	-- Silk Reagent Bag
+			i(253667),	-- Woolen Reagent Bag
+			-- Unknown
+			i(254139),	-- Bottomless Reagent Bag
+			i(279271),	-- Felblood Soul Bag
+			i(254133),	-- Mooncloth Reagent Bag
+		}),
+		filter(MISC, {
+			i(279973, {	-- Faction Banner [A]
+				races = ALLIANCE_ONLY,
+			}),
+			i(279972, {	-- Faction Banner [H]
+				races = HORDE_ONLY,
+			}),
+			i(279959),	-- Loom
+			i(279943),	-- Spinning Wheel
 		}),
 	}),
 }));

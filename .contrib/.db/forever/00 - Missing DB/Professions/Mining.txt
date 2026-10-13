@@ -3,6 +3,7 @@ r(2577),	-- Mining
 r(2578),	-- Mining
 r(2579),	-- Mining
 r(8388),	-- Find Minerals
+r(22967),	-- Smelt Elementium
 r(1213638),	-- Smelt Obsidian-Infused Thorium Bar
 r(1235230),	-- Mining
 r(1240951),	-- Mining

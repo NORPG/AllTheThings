@@ -1733,12 +1733,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				["provider"] = { "i", 12846 },	-- Argent Dawn Commission
 				["timeline"] = { ADDED_10_1_5 },
 			}),
-			i(14514, {	-- Pattern: Robe of the Void (RECIPE!)
-				-- #if TBC
-				-- During TBC this was made exclusively usable by Warlocks, then that change was reverted with Wrath.
-				["classes"] = { WARLOCK },
-				-- #endif
-			}),
+			i(14514),	-- Pattern: Robe of the Void (RECIPE!)
 			i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228022, {	-- Headmaster's Charge

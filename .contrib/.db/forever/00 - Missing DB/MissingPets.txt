@@ -31,7 +31,6 @@ pet(5047),	-- Child of By'zaali
 pet(5069),	-- Wild Chicken
 pet(5094),	-- Bitter Baitling
 pet(5121),	-- Prairie Wolf Pup
-pet(5122),	-- Spectral Bear Cub
 pet(5135),	-- Shadowgale Squirrel
 pet(5136),	-- Weevil K. Neevil
 pet(5138),	-- Pachimari
@@ -84,7 +83,6 @@ pet(5047),	-- Child of By'zaali
 pet(5069),	-- Wild Chicken
 pet(5094),	-- Bitter Baitling
 pet(5121),	-- Prairie Wolf Pup
-pet(5122),	-- Spectral Bear Cub
 pet(5135),	-- Shadowgale Squirrel
 pet(5136),	-- Weevil K. Neevil
 pet(5138),	-- Pachimari

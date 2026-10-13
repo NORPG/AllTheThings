@@ -22,7 +22,13 @@ mount(17461),	-- Black Ram
 mount(18363),	-- Riding Kodo
 mount(18991),	-- Green Kodo
 mount(18992),	-- Teal Kodo
+mount(24242),	-- Swift Razzashi Raptor
+mount(24252),	-- Swift Zulian Tiger
 mount(25863),	-- Summon Black Qiraji Battle Tank
+mount(25953),	-- Summon Blue Qiraji Battle Tank
+mount(26054),	-- Summon Red Qiraji Battle Tank
+mount(26055),	-- Summon Yellow Qiraji Battle Tank
+mount(26056),	-- Summon Green Qiraji Battle Tank
 mount(26655),	-- Summon Black Qiraji Battle Tank
 mount(30174),	-- Riding Turtle
 mount(64659),	-- Venomhide Ravasaur

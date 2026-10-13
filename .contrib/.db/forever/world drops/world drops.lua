@@ -3667,63 +3667,25 @@ root(ROOTS.WorldDrops, {
 			i(12691),	-- Pattern: Wildthorn Mail (RECIPE!)
 			i(12716),	-- Pattern: Helm of the Great Chief (RECIPE!)
 		}),
-		--[[ Until profession complete
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter (RECIPE!)
-			i(4352, {	-- Pattern: Boots of the Enchanter (RECIPE!)
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
-			-- #else
 			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
-			-- #endif
 			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
-			i(14484, {	-- Pattern: Brightcloth Cloak (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
-			}),
-			i(14479, {	-- Pattern: Brightcloth Gloves (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
-			}),
+			i(14484),	-- Pattern: Brightcloth Cloak (RECIPE!)
+			i(14479),	-- Pattern: Brightcloth Gloves (RECIPE!)
 			i(14494),	-- Pattern: Brightcloth Pants (RECIPE!)
-			i(14478, {	-- Pattern: Brightcloth Robe (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
-			}),
+			i(14478),	-- Pattern: Brightcloth Robe (RECIPE!)
 			i(10316),	-- Pattern: Colorful Kilt (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217251, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			i(7084, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			-- #else
 			i(7084),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217249, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			i(7086, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			-- #else
 			i(7086),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			-- #endif
-			i(14492, {	-- Pattern: Felcloth Boots (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14496, {	-- Pattern: Felcloth Hood (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14506, {	-- Pattern: Felcloth Robe (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14508, {	-- Pattern: Felcloth Shoulders (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14474, {	-- Pattern: Frostweave Gloves (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
-			}),
-			i(14489, {	-- Pattern: Frostweave Pants (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
-			}),
+			i(14492),	-- Pattern: Felcloth Boots (RECIPE!)
+			i(14496),	-- Pattern: Felcloth Hood (RECIPE!)
+			i(14506),	-- Pattern: Felcloth Robe (RECIPE!)
+			i(14508),	-- Pattern: Felcloth Shoulders (RECIPE!)
+			i(14474),	-- Pattern: Frostweave Gloves (RECIPE!)
+			i(14489),	-- Pattern: Frostweave Pants (RECIPE!)
 			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
-			i(14466, {	-- Pattern: Frostweave Tunic (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
-			}),
+			i(14466),	-- Pattern: Frostweave Tunic (RECIPE!)
 			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
 			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
 			i(7090),	-- Pattern: Green Silk Armor (RECIPE!)
@@ -3731,9 +3693,6 @@ root(ROOTS.WorldDrops, {
 			i(4292),	-- Pattern: Green Woolen Bag (RECIPE!)
 			i(7092),	-- Pattern: Hands of Darkness (RECIPE!)
 			i(4346),	-- Pattern: Heavy Woolen Cloak (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228318, {["timeline"] = {ADDED_1_15_3}})),	-- Pattern: Incandescent Mooncloth Leggings (RECIPE!)
-			-- #endif
 			i(14499),	-- Pattern: Mooncloth Bag (RECIPE!)
 			i(14509),	-- Pattern: Mooncloth Circlet (RECIPE!)
 			i(14497),	-- Pattern: Mooncloth Leggings (RECIPE!)
@@ -3751,18 +3710,10 @@ root(ROOTS.WorldDrops, {
 			i(4345),	-- Pattern: Red Woolen Boots (RECIPE!)
 			i(4347),	-- Pattern: Reinforced Woolen Shoulders (RECIPE!)
 			i(4354),	-- Pattern: Rich Purple Silk Shirt (RECIPE!)
-			i(14498, {	-- Pattern: Runecloth Headband (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14491, {	-- Pattern: Runecloth Pants (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14504, {	-- Pattern: Runecloth Shoulders (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(14470, {	-- Pattern: Runecloth Tunic (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
+			i(14498),	-- Pattern: Runecloth Headband (RECIPE!)
+			i(14491),	-- Pattern: Runecloth Pants (RECIPE!)
+			i(14504),	-- Pattern: Runecloth Shoulders (RECIPE!)
+			i(14470),	-- Pattern: Runecloth Tunic (RECIPE!)
 			i(4351),	-- Pattern: Shadow Hood (RECIPE!)
 			i(4353),	-- Pattern: Spider Belt (RECIPE!)
 			i(4350),	-- Pattern: Spider Silk Slippers (RECIPE!)
@@ -3771,8 +3722,25 @@ root(ROOTS.WorldDrops, {
 			i(6391),	-- Pattern: Stylish Green Shirt (RECIPE!)
 			i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
+			i(253976),	-- Pattern: Filigreed Pristine Circlet
+			i(253978),	-- Pattern: Filigreed Silky Circlet
+			i(253980),	-- Pattern: Filigreed Flame Circlet
+			i(253982),	-- Pattern: Filigreed Shadow Circlet
+			i(253984),	-- Pattern: Filigreed Pearly Circlet
+			i(253986),	-- Pattern: Filigreed Shining Circlet
+			i(253938),	-- Pattern: Filigreed Pristine Leggings
+			i(253940),	-- Pattern: Filigreed Silky Leggings
+			i(253942),	-- Pattern: Filigreed Flame Leggings
+			i(253944),	-- Pattern: Filigreed Shadow Leggings
+			i(253946),	-- Pattern: Filigreed Pearly Leggings
+			i(253948),	-- Pattern: Filigreed Shining Leggings
+			i(253902),	-- Pattern: Filigreed Pristine Gown
+			i(253904),	-- Pattern: Filigreed Silky Gown
+			i(253906),	-- Pattern: Filigreed Flame Gown
+			i(253912),	-- Pattern: Filigreed Shining Gown
+			i(253910),	-- Pattern: Filigreed Pearly Gown
+			i(253908),	-- Pattern: Filigreed Shadow Gown
 		}),
-		--]]
 		cl(DRUID, {
 			i(17682, {	-- Book: Gift of the Wild
 				spellID = 21849,	-- Gift of the Wild

@@ -1058,6 +1058,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					i(269903),	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
 					i(269901),	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
 					i(252833),	-- Pattern: Mystic Thick Armor Kit (RECIPE!)
+					i(253974),	-- Pattern: Silk Reagent Bag (RECIPE!)
 				},
 			}),
 			n(253140, {	-- Molkar <Gelkis Clan Quartermaster>
@@ -1073,6 +1074,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					i(269903),	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
 					i(269901),	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
 					i(252833),	-- Pattern: Mystic Thick Armor Kit (RECIPE!)
+					i(253974),	-- Pattern: Silk Reagent Bag (RECIPE!)
 				},
 			}),
 			n(12045, {	-- Hae'Wilani <Axecrafter>

@@ -1363,7 +1363,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 						--[[Commented out until confirmed
 						i(19446),	-- Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
 						--]]
-						i(19216),	-- Pattern: Argent Boots (RECIPE!)
+						--i(19216),	-- Pattern: Argent Boots (RECIPE!)
 						--i(19328),	-- Pattern: Dawn Treaders (RECIPE!)
 						--[[Commented out until confirmed
 						i(19203),	-- Plans: Girdle of the Dawn (RECIPE!)
@@ -1419,7 +1419,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 						--[[Commented out until confirmed
 						i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						--]]
-						i(19217),	-- Pattern: Argent Shoulders (RECIPE!)
+						--i(19217),	-- Pattern: Argent Shoulders (RECIPE!)
 						i(19329),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						--[[Commented out until confirmed
 						i(19205),	-- Plans: Gloves of the Dawn (RECIPE!)

@@ -666,7 +666,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ 19.4, 36.6, MAP.SEARING_GORGE },
 					{ 25.4, 25.4, MAP.SEARING_GORGE },
 				},
-				["timeline"] = { ADDED_1_11_1 },
 				["cr"] = 5861,	-- Twilight Fire Guard
 			}),
 			i(14471, {	-- Pattern: Cindercloth Vest (RECIPE!)

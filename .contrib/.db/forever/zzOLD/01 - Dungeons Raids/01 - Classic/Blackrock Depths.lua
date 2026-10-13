@@ -951,7 +951,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(19444),	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						--]]
 						--i(17022),	-- Pattern: Corehound Boots (RECIPE!)
-						i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
+						--i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
 						--i(17023),	-- Pattern: Molten Helm (RECIPE!)
 						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
 						i(20761),	-- Recipe: Transmute Elemental Fire (RECIPE!)
@@ -972,7 +972,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19448)),	-- Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						--]]
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
-						i(17017),	-- Pattern: Flarecore Mantle (RECIPE!)
+						--i(17017),	-- Pattern: Flarecore Mantle (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
 						--applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)

@@ -8,19 +8,33 @@ r(9942),	-- Mithril Plate Gloves
 r(9945),	-- Ornate Mithril Pants
 r(9950),	-- Ornate Mithril Gloves
 r(11643),	-- Golden Scale Gauntlets
+r(16660),	-- Dawnbringer Shoulders
+r(16742),	-- Enchanted Thorium Helm
+r(16745),	-- Enchanted Thorium Breastplate
 r(16960),	-- Thorium Greatsword
+r(16965),	-- Bleakwood Hew
 r(16967),	-- Inlaid Thorium Hammer
 r(16980),	-- Rune Edge
+r(16986),	-- Blood Talon
+r(16987),	-- Darkspear
 r(21161),	-- Sulfuron Hammer
 r(22757),	-- Elemental Sharpening Stone
 r(23632),	-- Girdle of the Dawn
 r(23633),	-- Gloves of the Dawn
+r(23636),	-- Dark Iron Helm
+r(23637),	-- Dark Iron Gauntlets
+r(23638),	-- Black Amnesty
+r(23639),	-- Blackfury
+r(23650),	-- Ebon Hand
+r(23652),	-- Blackguard
+r(23653),	-- Nightfall
 r(24136),	-- Bloodsoul Breastplate
 r(24137),	-- Bloodsoul Shoulders
 r(24138),	-- Bloodsoul Gauntlets
 r(24139),	-- Darksoul Breastplate
 r(24140),	-- Darksoul Leggings
 r(24141),	-- Darksoul Shoulders
+r(24399),	-- Dark Iron Boots
 r(24912),	-- Darkrune Gauntlets
 r(24913),	-- Darkrune Helm
 r(24914),	-- Darkrune Breastplate
@@ -30,6 +44,12 @@ r(27587),	-- Thick Obsidian Breastplate
 r(27588),	-- Light Obsidian Belt
 r(27589),	-- Black Grasp of the Destroyer
 r(27590),	-- Obsidian Mail Tunic
+r(27829),	-- Titanic Leggings
+r(27830),	-- Persuader
+r(27832),	-- Sageblade
+r(28242),	-- Icebane Breastplate
+r(28243),	-- Icebane Gauntlets
+r(28244),	-- Icebane Bracers
 r(28461),	-- Ironvine Breastplate
 r(28462),	-- Ironvine Gloves
 r(28463),	-- Ironvine Belt
@@ -165,8 +185,6 @@ r(1253002),	-- Earthweaver's Adaptive Links
 r(1253003),	-- Earthweaver's Adaptive Waistguard
 r(1263073),	-- Master Forge
 r(1277780),	--
-r(1301426),	-- Cloudy Skyforged Greaves
-r(1301450),	-- Azure Skyforged Greaves
 r(1301534),	-- Azure Skyforged Helm
 r(1302598),	-- Rough Copper Chain Boots
 r(1306533),	-- Ironwood Blade
@@ -339,8 +357,6 @@ r(1253002),	-- Earthweaver's Adaptive Links
 r(1253003),	-- Earthweaver's Adaptive Waistguard
 r(1263073),	-- Master Forge
 r(1277780),	--
-r(1301426),	-- Cloudy Skyforged Greaves
-r(1301450),	-- Azure Skyforged Greaves
 r(1301534),	-- Azure Skyforged Helm
 r(1302598),	-- Rough Copper Chain Boots
 r(1306533),	-- Ironwood Blade

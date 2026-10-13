@@ -3,7 +3,11 @@ ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
 ach(15329),	-- Has Died
 ach(15330),	-- Survivor of the Firelord
 ach(15332),	-- Survivor
+ach(15333),	-- Survivor of the Shadow Flame
+ach(15334),	-- Survivor of the Old God
+ach(15335),	-- Survivor of the Damned
 ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
+ach(15637),	-- The Immortal
 ach(19563),	-- UNUSED Bael'Gar Defeated (Daily)
 ach(20129),	-- [DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
 ach(20130),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
@@ -28,26 +32,6 @@ ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
 ach(42133),	-- [DNT] Balnazzar Defeated
 ach(42186),	-- [DNT] Balnazzar Defeated (Backup Achievement)
 ach(61515),	-- 1.60.0 - Lost Ones Tracking Achievement <HIDDEN>
-ach(62012),	-- Journeyman Alchemist
-ach(62013),	-- Expert Alchemist
-ach(62014),	-- Artisan Alchemist
-ach(62015),	-- Journeyman Blacksmith
-ach(62016),	-- Expert Blacksmith
-ach(62017),	-- Artisan Blacksmith
-ach(62018),	-- Journeyman Enchanter
-ach(62019),	-- Expert Enchanter
-ach(62020),	-- Artisan Enchanter
-ach(62021),	-- Journeyman Engineer
-ach(62022),	-- Expert Engineer
-ach(62023),	-- Artisan Engineer
-ach(62024),	-- Journeyman Leatherworker
-ach(62025),	-- Expert Leatherworker
-ach(62026),	-- Artisan Leatherworker
-ach(62028),	-- Journeyman Tailor
-ach(62029),	-- Expert Tailor
-ach(62030),	-- Artisan Tailor
-ach(62034),	-- Conqueror of the Wilds \\ Conquerer of the Wilds
-ach(62035),	-- Conqueror of the Deeps \\ Conquerer of the Deeps
 ach(63969),	-- Novice Warrior
 ach(63970),	-- Experienced Warrior
 ach(63971),	-- Master Warrior

@@ -56,7 +56,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				n(2399, {	-- Daryl Stack <Master Tailor>
 					["coord"] = { 63.6, 20.8, MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["groups"] = ARTISAN_TAILORING,
+					["groups"] = TAILORING_RECIPES.ARTISAN,
 				}),
 			}),
 		}),

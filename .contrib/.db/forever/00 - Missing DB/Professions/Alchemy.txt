@@ -12,6 +12,7 @@ r(17579),	-- Greater Holy Protection Potion
 r(17632),	-- Alchemist's Stone
 r(22430),	-- Refined Scale of Onyxia
 r(22732),	-- Major Rejuvenation Potion
+r(24266),	-- Gurubashi Mojo Madness
 r(24365),	-- Mageblood Elixir
 r(24366),	-- Greater Dreamless Sleep Potion
 r(24367),	-- Living Action Potion
@@ -63,9 +64,15 @@ r(1317279),	-- Transmute: Legionite
 Missing in Alchemy
 
 1.60.1.69876
+r(2330),	--
+r(2337),	--
 r(2365),	-- Draught of Tongues
+r(3447),	--
 r(6619),	--
+r(7181),	--
 r(11447),	-- Draught of Water Walking
+r(11457),	--
+r(17556),	--
 r(17579),	-- Greater Holy Protection Potion
 r(17632),	-- Alchemist's Stone
 r(22430),	-- Refined Scale of Onyxia

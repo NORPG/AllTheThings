@@ -87,6 +87,7 @@ faction(209),	-- Nethergarde
 faction(229),	-- Wailing Caverns
 faction(249),	-- Silithid
 faction(269),	-- Silvermoon Remnant
+faction(270),	-- Zandalar Tribe
 faction(289),	-- Blacksmithing - Weaponsmithing
 faction(309),	-- Scorpid
 faction(310),	-- Beast - Bat
@@ -111,6 +112,7 @@ faction(572),	-- Troll, Vilebranch
 faction(573),	-- Southsea Freebooters
 faction(574),	-- Caer Darrow
 faction(575),	-- Furbolg, Uncorrupted
+faction(609),	-- Cenarion Circle
 faction(629),	-- Shatterspear Trolls
 faction(630),	-- Ravasaur Trainers
 faction(649),	-- Majordomo Executus
@@ -138,6 +140,7 @@ faction(829),	-- Ogre (Captain Kromcrush)
 faction(849),	-- Spirit Guide - Horde
 faction(869),	-- Jaedenar
 faction(893),	-- Revantusk Trolls
+faction(910),	-- Brood of Nozdormu
 faction(912),	-- Might of Kalimdor
 faction(915),	-- Armies of C'Thun
 faction(916),	-- Silithid Attackers

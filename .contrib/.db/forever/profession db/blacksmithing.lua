@@ -108,6 +108,7 @@ i(273086, 1263041);	-- Anvil
 i(276955, 1301448);	-- Azure Skyforged Chain
 i(276952, 1301445);	-- Azure Skyforged Chainmail
 i(276954, 1301447);	-- Azure Skyforged Gauntlets
+i(276957, 1301450);	-- Azure Skyforged Greaves
 i(276984, 301534);	-- Azure Skyforged Helm
 i(276956, 1301449);	-- Azure Skyforged Legguards
 i(276985, 1301535);	-- Azure Skyforged Pauldrons
@@ -123,6 +124,7 @@ i(251454, 1252351);	-- Brass Knuckles
 i(276931, 1301424);	-- Cloudy Skyforged Chain
 i(276928, 1301421);	-- Cloudy Skyforged Chainmail
 i(276930, 1301423);	-- Cloudy Skyforged Gauntlets
+i(276933, 1301426);	-- Cloudy Skyforged Greaves
 i(276976, 1301526);	-- Cloudy Skyforged Helm
 i(276932, 1301425);	-- Cloudy Skyforged Legguards
 i(276977, 1301527);	-- Cloudy Skyforged Pauldrons

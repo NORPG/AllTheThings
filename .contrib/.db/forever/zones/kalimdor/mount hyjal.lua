@@ -77,6 +77,28 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					i(273971),	-- Pattern: Wildstalker's Greaves
 					i(273968),	-- Pattern: Wildstalker's Legguards
 					i(273970),	-- Pattern: Wildstalker's Spaulders
+
+					-- Warlock
+					i(273972),	-- Pattern: Manaflare Pants
+					i(273973),	-- Pattern: Manaflare Gloves
+					i(273974),	-- Pattern: Manaflare Mantle
+					i(273975),	-- Pattern: Manaflare Boots
+
+					-- Priest
+					i(273988),	-- Pattern: Pants of Conviction
+					i(273989),	-- Pattern: Gloves of Conviction
+					i(273990),	-- Pattern: Mantle of Conviction
+					i(273991),	-- Pattern: Treads of Conviction
+					i(273992),	-- Pattern: Leggings of Conviction
+					i(273993),	-- Pattern: Handguards of Conviction
+					i(273994),	-- Pattern: Pauldrons of Conviction
+					i(273995),	-- Pattern: Boots of Conviction
+
+					-- Warlock
+					i(274008),	-- Pattern: Demonheart Leggings
+					i(274009),	-- Pattern: Demonheart Gloves
+					i(274010),	-- Pattern: Demonheart Spaulders
+					i(274011),	-- Pattern: Demonheart Boots
 				},
 			}),
 			n(266901, {	-- Pexmit <Someone's Minion>

@@ -30,10 +30,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				}),
 			}),
 			prof(TAILORING, {
+				n(4576, {	-- Josef Gregorian <Artisan Tailor>
+					["coord"] = { 70.8, 29.2, MAP.UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = TAILORING_RECIPES.EXPERT,
+				}),
 				n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
 					["coord"] = { 87.0, 20.8, MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = SHADOWEAVE_TAILORING_CLASSIC,
+					["groups"] = TAILORING_RECIPES.SHADOWEAVE,
 				}),
 			}),
 		}),

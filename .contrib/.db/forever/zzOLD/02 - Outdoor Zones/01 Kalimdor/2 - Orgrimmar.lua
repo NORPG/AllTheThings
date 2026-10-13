@@ -157,10 +157,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				}),
 			}),
 			prof(TAILORING, {
-				n(3363, {	-- Magar <Tailoring Trainer>
+				n(3363, {	-- Magar <Expert Tailor>
 					["coord"] = { 63.6, 50.0, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = CLASSIC_TAILORING,
+					["groups"] = TAILORING_RECIPES.JOURNEYMAN,
+				}),
+				n(2855, {	-- Snang <Journeyman Tailor>
+					["coord"] = { 63.0, 49.6, MAP.ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = TAILORING_RECIPES.APPRENTICE,
 				}),
 			}),
 		}),

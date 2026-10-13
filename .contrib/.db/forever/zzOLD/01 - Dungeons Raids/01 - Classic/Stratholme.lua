@@ -838,7 +838,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10422,	-- Crimson Sorcerer / Risen Sorcerer [CATA+]
 						}),
 						i(14495, {	-- Pattern: Ghostweave Pants (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainer
 							["cr"] = 10384,	-- Spectral Citizen
 						}),
 						i(15777, {	-- Pattern: Runic Leather Shoulders (RECIPE!)
@@ -1254,12 +1253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["crs"] = { 10812 },	-- Grand Crusader Dathrohan
 						["groups"] = {
 							i(13250),	-- Head of Balnazzar
-							i(14512, {	-- Pattern: Truefaith Vestments (RECIPE!)
-								-- #if TBC
-								-- During TBC this was made exclusively usable by Priests, then that change was reverted with Wrath.
-								["classes"] = { PRIEST },
-								-- #endif
-							}),
+							i(14512),	-- Pattern: Truefaith Vestments (RECIPE!)
 							i(13520),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(13348),	-- Demonshear
 							-- #if SEASON_OF_DISCOVERY

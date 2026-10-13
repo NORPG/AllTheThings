@@ -3047,6 +3047,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			n(248202, {	-- Jim'bek <Tailor>
+				coord = { 49.6, 29.6, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
+			}),
 			n(3683, {	-- Kiknikle <Stylish Clothier>
 				coord = { 41.8, 38.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,

@@ -114,6 +114,8 @@ r(13166),	-- Battle Chicken
 r(13240),	-- The Mortar: Reloaded
 r(13258),	-- Summon Goblin Bomb
 r(19804),	-- Arcanite Dragonling
+r(20219),	-- Gnomish Engineer
+r(20222),	-- Goblin Engineer
 r(431362),	-- Soul Vessel
 r(435956),	-- Polished Truesilver Gears
 r(435958),	-- Whirling Truesilver Gearwall

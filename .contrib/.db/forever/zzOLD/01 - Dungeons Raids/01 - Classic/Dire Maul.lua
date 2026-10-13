@@ -909,7 +909,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 56,
 					["groups"] = {
 						r(22813, {	-- Gordok Ogre Suit
-							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = TAILORING,
 						}),
 						r(22815, {	-- Gordok Ogre Suit
