@@ -554,12 +554,14 @@ root(ROOTS.Instances, {
 					},
 					lvl = 56,
 					groups = {
+						--[[
 						r(22813, {	-- Gordok Ogre Suit
 							requireSkill = TAILORING,
 						}),
 						r(22815, {	-- Gordok Ogre Suit
 							requireSkill = LEATHERWORKING,
 						}),
+						--]]
 						i(18258, {	-- Gordok Ogre Suit
 							description = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
 						}),
