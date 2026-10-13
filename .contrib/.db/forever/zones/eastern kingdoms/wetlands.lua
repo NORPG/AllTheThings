@@ -618,6 +618,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 			}),
+			q(87491, {	-- Spark of Freedom
+				qg = 271481,	-- Captive Fire Elemental
+				coord = { 45.7, 16.6, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 27,
+			}),
 			q(98197, {	-- Spoils of War
 				qg = 2086,	-- Valstag Ironjaw
 				coord = { 10.1, 56.8, MAP.WETLANDS },
