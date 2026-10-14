@@ -118,7 +118,7 @@ root(ROOTS.Instances, {
 				q(1198, {	-- In Search of Thaelrid
 					description = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 					qg = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
-					coord = { 28.7, 52.1, MAP.DARNASSUS },
+					coord = { 55.4, 25.0, MAP.DARNASSUS },
 					isBreadcrumb = true,
 					lvl = 18,
 				}),
@@ -202,7 +202,7 @@ root(ROOTS.Instances, {
 				}),
 				q(1199, {	-- Twilight Falls
 					qg = 4784,	-- Argent Guard Manados <The Argent Dawn>
-					coord = { 38.3, 43.0, MAP.DARNASSUS },
+					coord = { 55.2, 24.0, MAP.DARNASSUS },
 					races = ALLIANCE_ONLY,
 					lvl = 20,
 					groups = {
