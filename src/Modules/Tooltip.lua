@@ -45,7 +45,7 @@ local function OnLoad_CacheObjectNames()
 	end
 end
 local GetBestObjectIDForName;
-if app.IsRetail then
+if app.IsRetail and not app.IsForever then
 	local InGame = app.Modules.Filter.Filters.InGame
 	GetBestObjectIDForName = function(name)
 		-- Account for Blizzard Shenanigans
