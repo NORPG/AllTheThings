@@ -7,7 +7,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		["lore"] = "An ancient Amani funeral complex previously sealed for centuries. Once again opened, the complex is combed by looters and Vilebranch for relics while the interred spirits defend it with deadly force.",
 		["icon"] = 3601564,
 		["coord"] = { 63.0, 72.2, MAP.MIDNIGHT.EVERSONG_WOODS },
-		--["maps"] = {  },
+		["maps"] = {
+			2648,	-- De Empire's Rest
+		},
 		["timeline"] = { ADDED_12_1_5 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -78,6 +80,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(285807),	-- Heroic Soul Fragment
 				i(285875),	-- Kindo'jan (Tier 8+)
 				i(285876),	-- Zah'ran (Tier 6+)
+				i(285877),	-- Zah'ran (Tier ??)
 			}),
 			n(FACTIONS, {
 				faction(2836),	-- Kindo'jan's Labyrinth
@@ -176,13 +179,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 44.4, 84.6, LABYRINTH_KINDOJAN },
 					["groups"] = { i(286643) },	-- Kinduru's Spiriting Quill (TOY!)
 				}),
+				q(98951, {	-- Akil'zon's Roost
+					["qg"] = 264886,	-- Wah'du <Servant of de Loa>
+					["coord"] = { 44.4, 79.4, LABYRINTH_KINDOJAN },
+					["groups"] = { i(285065) },	-- Mythical Soul Fragment
+				}),
 				filter(MISC, {
+					i(271135),	-- Dusty Loa Totem
 					i(271156),	-- Stolen Artifact
 				}),
 			}),
 			n(REWARDS, {
 				i(285801),	-- Heroic Soul Fragment
-				i(279284),	-- Nebulous Voidcache: Delver's Trove (It is doubtful that this has appeared only here. This may belong in S2 Delve file)
 			}),
 			n(TREASURES, {
 				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries
@@ -256,6 +264,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 47.7, 42.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98649,
 					}),
+					o(676646, {	-- Ancient Chest
+						["coord"] = { 30.7, 15.6, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280823) },	-- Feathers of Akil'zon (TOY!)
+					}),
+					o(676632, {	-- Ancient Chest
+						["coord"] = { 27.8, 34.6, LABYRINTH_KINDOJAN },
+						["questID"] = 98615,
+						["groups"] = { i(283996) },	-- Ancient Hash'ey Battle Art: Heat Wave
+					}),
 					o(676622, {	-- Sturdy Chest
 						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
 						["coord"] = { 38.8, 83.4, LABYRINTH_KINDOJAN },
@@ -270,6 +287,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 38.0, 83.5, LABYRINTH_KINDOJAN },
 						["questID"] = 98606,
 						["groups"] = { i(284181) },	-- Loa-Touched Spine (COSMETIC!)
+					}),
+					o(676658, {	-- Sturdy Chest
+						["coord"] = { 89.0, 77.7, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280563) },	-- Ancient Hash'ey Battle Art: Falco Strikes
+					}),
+					o(676630, {	-- Sturdy Chest
+						["coord"] = { 27.4, 33.1, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame
+					}),
+					o(676642, {	-- Sturdy Chest
+						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
+					}),
+					o(676641, {	-- Sturdy Chest
+						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
 					}),
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
@@ -286,6 +317,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				o(677411, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
+				o(705929, {	-- Mislaid Treasure
 				}),
 				o(705955, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",

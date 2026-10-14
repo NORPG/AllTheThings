@@ -46,6 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		["coord"] = { 73.3, 8.6, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
 		["maps"] = {
 			2669,	-- The Unbinding of Kith'ix
+			2670,	-- The Tomb of Ula'tek
 		},
 		["isRaid"] = true,
 		["timeline"] = { ADDED_12_1_5 },
@@ -54,6 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(KITHIX, {
 					ach(63692),	-- Kith'ix
 					i(281213),	-- Kith'ix's Seal (DECOR!)
+					i(286019, { ["timeline"] = { REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Kith'ix
 					i(281615),	-- Shadeweaver's Hearthstone (TOY!)
 				}),
 			}),

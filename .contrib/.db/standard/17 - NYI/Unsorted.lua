@@ -35,12 +35,9 @@ root(ROOTS.Unsorted, {
 			i(277898),	-- Duskhallow Vanguard Greaves
 			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
-			i(280563),	-- Ancient Hash'ey Battle Art: Falco Strikes
 			i(280820),	-- Loa-Blessed Victory
 			i(280821),	-- Trail of Halazzi
 			i(280822),	-- Nalorakk's Strength Charm
-			i(280823),	-- Feathers of Akil'zon
-			i(280825),	-- Rite of Jan'alai's Flame
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat
 			i(281171),	-- Executive Chef's Gloves
@@ -258,7 +255,6 @@ root(ROOTS.Unsorted, {
 			i(283993),	-- Cherry Lollibop
 			i(283994),	-- Spearmint Lollibop
 			i(283995),	-- Lemon Lollibop
-			i(283996),	-- Ancient Hash'ey Battle Art: Heat Wave
 			i(283997),	-- Ancient Hash'ey Battle Art: Ursine's Ironhide
 			i(283998),	-- Ancient Hash'ey Battle Art: Eye of the Lynx
 			i(283999),	-- Wood Haunter's Belt
@@ -402,12 +398,10 @@ root(ROOTS.Unsorted, {
 			i(284568),	-- Sinfall Dining Table
 			i(284570),	-- Small Darkhaven Window
 			i(284576),	-- Chitin Plate
-			i(284577),	-- Fluorescent Fluid
 			i(284578),	-- Preserved Stinger
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament
-			i(285065),	-- Mythical Soul Fragment
 			i(285179),	-- Ritual Embaari Arch
 			i(285221),	-- Baker's Sapphire Bulwark
 			i(285222),	-- Baker's Emerald Bulwark
@@ -418,13 +412,11 @@ root(ROOTS.Unsorted, {
 			i(285334),	-- Embered Reversed Pauldrons
 			i(285335),	-- Ice-Walker's Reversed Pauldrons
 			i(285336),	-- Wood Haunter's Reversed Pauldrons
-			i(285877),	-- Zah'ran
 			i(285942),	-- Spirited Tidesage Manse
 			i(285956),	-- Ice Walker's Bell-Crook
 			i(285957),	-- Wood Haunter's Bell-Crook
 			i(285958),	-- Frost Revenant's Bell-Crook
 			i(285959),	-- Embered Bell-Crook
-			i(286019),	-- Nebulous Voidcache: Kith'ix
 		})),
 		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			i(169391),	-- Bubble-Eyed Rolly
@@ -455,7 +447,6 @@ root(ROOTS.Unsorted, {
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
-			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar

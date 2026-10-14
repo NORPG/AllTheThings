@@ -254,8 +254,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						--}),
 						--
 					}),
-					--header(HEADERS.AchCriteria, 63519.02, {	-- To the Faithful
-					--}),
+					header(HEADERS.AchCriteria, 63519.02, {	-- To the Faithful
+						q(95811, {	-- In Victory, Grief
+							["sourceQuest"] = 95211,	-- The Unbinding of Kith'ix
+							["maps"] = { 2669, 2670 },
+							["groups"] = { i(274937) },	-- Shield of the Blood Knight Matriarch (COSMETIC!)
+						}),
+						q(95808, {	-- To the Faithful
+							["sourceQuest"] = 95811,	-- In Victory, Grief
+							["qg"] = 262755,	-- Lor'themar Theron
+							["coord"] = { 30.6, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+						}),
+						q(95812, {	-- Last Wishes
+							["sourceQuest"] = 95808,	-- To the Faithful
+							["qg"] = 262758,	-- Zul'jarra
+							["coord"] = { 32.0, 69.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+						}),
+						q(95813, {	-- What the World sees
+							["sourceQuest"] = 95812,	-- Last Wishes
+							["qg"] = 262877,	-- Orweyna
+							["coord"] = { 27.6, 10.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["groups"] = { i(274934) },	-- Blade of the Blood Knight Matriarch (COSMETIC!)
+						}),
+						--TODO: bugged questchain
+					}),
 				}),
 			}),
 		},
