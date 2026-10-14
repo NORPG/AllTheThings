@@ -33,6 +33,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			exploration(496),	-- Brackenwall Village
 			exploration(499),	-- Darkmist Cavern
 			exploration(518),	-- Dreadmurk Shore
+			exploration(516),	-- Dustwallow Bay
 			exploration(504),	-- North Point Tower
 			exploration(503),	-- Sentry Point
 			exploration(403),	-- Shady Rest Inn

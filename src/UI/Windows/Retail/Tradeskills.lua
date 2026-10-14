@@ -42,6 +42,10 @@ do -- TradeSkill Functionality
 		for _,skillID in ipairs(app.SkillDB.AlwaysAvailable) do
 			cache[skillID] = 1
 		end
+		-- Hunter Only (Beast Training)
+		if app.ClassIndex == 3 then
+			cache[5149] = 1;
+		end
 		-- app.PrintDebug("RefreshTradeSkillCache");
 		local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 		for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do

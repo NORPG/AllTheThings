@@ -163,7 +163,7 @@ qo(1,{coords={
 qo(2,{coords={
 [1439]={{31.6,44.8}}},crs={6133},providers={{"i",6809}}})}}),
 q(2519,{coords={
-[1457]={{29,45.4}}},isBreadcrumb=1,lvl=5,nextQuests={2518},qgs={7316},r=2}),
+[1457]={{29,45.4}}},isBreadcrumb=1,lvl=5,nextQuests={2518},qgs={7316},r=2,sourceQuests={98391}}),
 q(730,{coords={
 [1457]={{31.2,84.2}}},isBreadcrumb=1,lvl=14,nextQuests={729},qgs={2912},r=2}),
 q(3764,{coords={
@@ -2142,6 +2142,9 @@ q(3082,{c={3},coords={
 q(4402,{coords={
 [1411]={{42.6,67.2}}},qgs={9796},r=1,sourceQuests={788},g={
 qo(1,{providers={{"i",11583},{"o",171938}}}),
+i(247840,{b=1,f=55,spellID=1245608}),
+i(247841,{b=1,f=55,spellID=1245609}),
+i(247846,{b=1,f=55,spellID=1245610}),
 i(11584,{f=55,spellID=5004})}}),
 q(3086,{c={8},coords={
 [1411]={{42,68.4}}},qgs={3143},qis={9575},races={8},sourceQuests={788}}),
@@ -2639,7 +2642,10 @@ m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore i
 m(462,{icon=236454,lore="Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",zoneTextAreaIDs={221},g={
 h(-45,{
 q(752,{coords={
-[1412]={{44.2,76}}},isBreadcrumb=1,nextQuests={753},qgs={2981},r=1}),
+[1412]={{44.2,76}}},qgs={2981},r=1,g={
+i(247840,{b=1,f=55,spellID=1245608}),
+i(247841,{b=1,f=55,spellID=1245609}),
+i(247846,{b=1,f=55,spellID=1245610})}}),
 q(753,{coords={
 [1412]={{50,81}}},qgs={2991},r=1,sourceQuests={752},g={
 qo(1,{coords={
@@ -3126,7 +3132,10 @@ s(158296,6058,{b=1,f=5,loc=45})}}),
 q(97979,{awp=16001,coords={
 [1438]={{59.2,40.4}}},qgs={3595},races={4}}),
 q(458,{coords={
-[1438]={{59.8,42.4}}},qgs={2077},r=2}),
+[1438]={{59.8,42.4}}},qgs={2077},r=2,g={
+i(247840,{b=1,f=55,spellID=1245608}),
+i(247841,{b=1,f=55,spellID=1245609}),
+i(247846,{b=1,f=55,spellID=1245610})}}),
 q(459,{coords={
 [1438]={{57.8,45}}},qgs={1992},r=2,sourceQuests={458},g={
 qo(1,{crs={1988,1989},providers={{"i",3297}}}),
@@ -3180,6 +3189,8 @@ exp(260,{
 crit(1305,{achID=842,id=1})}),
 exp(264,{
 crit(1306,{achID=842,id=1})}),
+exp(1662),
+exp(1660),
 exp(266,{
 crit(1307,{achID=842,id=1})}),
 exp(265)}),
@@ -3341,8 +3352,9 @@ qo(1,{providers={{"i",15923},{"n",1996}}}),
 r(883,{requireSkill=50}),
 r(2641,{requireSkill=50}),
 r(1515,{requireSkill=50})}}),
-q(940,{coords={
-[1438]={{37,34.1},{38.2,34.4}}},lvl=6,providers={{"o",673378}},qgs={3519},qis={5219},r=2,sourceQuests={98398}}),
+q(940,{awp=16001,coords={
+[1438]={{37,34.1},{38.2,34.4}}},lvl=6,providers={{"o",673378}},qgs={3519},qis={5219},r=2,sourceQuests={98398},g={
+s(311845,281250,{b=1,f=3})}}),
 q(2241,{c={4},coords={
 [1438]={{56.4,60.1}}},lvl=10,qgs={3599},qis={7735},r=2}),
 q(2941,{coords={
@@ -3402,6 +3414,8 @@ q(487,{coords={
 qo(1,{providers={{"n",2152}}})}}),
 q(931,{coords={
 [1438]={{34.7,28.8}}},lvl=4,providers={{"o",6752}},qis={5190},r=2}),
+q(98391,{awp=16001,coords={
+[1438]={{55.6,56.8}}},isBreadcrumb=1,lvl=5,maps={1457},nextQuests={2519},qgs={3600},r=2}),
 q(2541,{coords={
 [1438]={{45,61.4}}},lvl=3,qgs={7317},r=2,g={
 qo(1,{crs={2009},providers={{"i",8363}}})}}),
@@ -3455,14 +3469,17 @@ i(5457,{b=1,f=55,spellID=8277})}})}),
 h(-46,{
 n(3535,{coords={
 [1438]={{40.8,39.6},{42.8,25.8},{42.8,38.6},{43,31},{43.6,36.6},{43.8,33.2},{44,39.6},{44.6,27.6},{46,30.4}}},g={
-i(5179,{b=1,description="This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",lvl=5,r=2})}}),
-n(14430,{coords={
-[1438]={{51.2,77.8},{53.4,77.2},{54.6,75.8},{54.8,77.4},{58,75.8},{58.8,76.6},{60.6,76.2},{61,74.4}}}}),
+i(5179,{b=1,description="This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",lvl=5,r=2}),
+s(316073,284167,{awp=16001,f=4,loc=42,lvl=10})}}),
+n(14430,{awp=16001,coords={
+[1438]={{51.2,77.8},{53.4,77.2},{54.6,75.8},{54.8,77.4},{58,75.8},{58.8,76.6},{60.6,76.2},{61,74.4}}},g={
+s(316071,284165,{f=5,loc=42,lvl=6})}}),
 n(14431,{coords={
 [1438]={{34.8,34.4},{36,37.8},{36.4,42.4},{38,39},{38,44},{38.2,34.8},{39,41.4}}},g={
 s(163620,18612,{f=6,loc=47,lvl=5})}}),
-n(14429,{coords={
-[1438]={{40.2,80.6},{41.6,78.6}}}}),
+n(14429,{awp=16001,coords={
+[1438]={{40.2,80.6},{41.6,78.6}}},g={
+s(316072,284166,{f=28,lvl=8})}}),
 n(14432,{coords={
 [1438]={{51.2,50.8},{52,50.6},{52.6,52.4}}},g={
 s(163618,18610,{f=25,lvl=3})}}),
@@ -5850,6 +5867,7 @@ exp(496,{
 crit(1363,{achID=850,id=1})}),
 exp(499),
 exp(518),
+exp(516),
 exp(504),
 exp(503),
 exp(403),

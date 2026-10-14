@@ -378,14 +378,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			exploration(478),	-- Pools of Arlithrien
 			exploration(702),	-- Rut'theran Village
 			exploration(188),	-- Shadowglen
-			-- #if AFTER CATA
-			exploration(257),	-- Shadowthread Cave
-			-- #endif
 			exploration(260),	-- Starbreeze Village
-			-- #if AFTER CATA
-			exploration(263),	-- The Cleft
-			-- #endif
 			exploration(264),	-- The Oracle Glade
+			exploration(1662),	-- Tradesmen's Terrace
+			exploration(1660),	-- Warrior's Terrace
 			exploration(266),	-- Wellspring Lake
 			exploration(265),	-- Wellspring River
 		}),
@@ -1016,6 +1012,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 6,
+				groups = {
+					i(281250, {	-- Forest Oracle's Cloak
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			q(2241, {	-- The Apple Falls
 				qg = 3599,	-- Jannok Breezesong
@@ -1246,6 +1247,15 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
+			q(98391, {	-- The Sisterhood of Elune
+				qg = 3600,	-- Laurna Morninglight <Priest Trainer>
+				coord = { 55.6, 56.8, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 5,
+			}),
 			q(2541, {	-- The Sleeping Druid
 				qg = 7317,	-- Oben Rageclaw
 				coord = { 45.0, 61.4, MAP.TELDRASSIL },
@@ -1444,6 +1454,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						description = "This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",
 						races = ALLIANCE_ONLY,
 					}),
+					i(284167, {	-- Blackmoss Robes
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14430, {	-- Duskstalker
@@ -1456,6 +1469,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					{ 58.8, 76.6, MAP.TELDRASSIL },
 					{ 60.6, 76.2, MAP.TELDRASSIL },
 					{ 61.0, 74.4, MAP.TELDRASSIL },
+				},
+				groups = {
+					i(284165, {	-- Duskstalker's Hide
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14431, {	-- Fury Shelda
@@ -1476,6 +1494,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coords = {
 					{ 41.6, 78.6, MAP.TELDRASSIL },
 					{ 40.2, 80.6, MAP.TELDRASSIL },
+				},
+				groups = {
+					i(284166, {	-- Gnarlpine War Staff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14432, {	-- Threggil

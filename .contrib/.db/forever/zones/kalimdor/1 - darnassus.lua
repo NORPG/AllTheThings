@@ -430,6 +430,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				},
 			}),
 			q(2519, {	-- The Temple of the Moon
+				sourceQuest = 98391,	-- The Sisterhood of Elune
 				qg = 7316,	-- Sister Aquinne
 				coord = { 29.0, 45.4, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
