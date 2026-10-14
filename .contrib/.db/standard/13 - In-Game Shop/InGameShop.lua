@@ -909,6 +909,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(190636, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
+		i(282657, {	-- Ashen Dreadglider (MOUNT!)
+			["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		-- #if ANYCLASSIC
 		mount(440915, {	-- Auspicious Arborwyrm (MOUNT!)
 			["timeline"] = { ADDED_3_4_3 },
@@ -948,6 +952,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
+		i(278743, {	-- Giant Grrloc (MOUNT!)
+			["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),

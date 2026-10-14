@@ -2571,7 +2571,9 @@ i(276550, 1299962);	-- Wind Serpent - White
 ------------------
 -- PATCH 12.1.5 --
 ------------------
+i(282657, 1314189);	-- Ashen Dreadglider
 i(276926, 1301331);	-- Corrupted Swarmer
+i(278743, 1305612);	-- Giant Grrloc
 i(283363, 1314715);	-- Loa-Blessed Wayfarer
 i(282414, 1313788);	-- Sporebearer Fungal Strider
 --- Unsorted ---
