@@ -306,7 +306,7 @@ root(ROOTS.Zones, m(ARCANTINA, {
 		}),
 		n(TREASURES, bubbleDownFiltered({
 			["isDaily"] = true,
-			["timeline"] = { REMOVED_12_1_0, ADDED_12_1_5 },
+			["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_1_5 },
 		},FILTERFUNC_questID,{
 			o_repeated({	-- Giant Growth Potion
 				i(6662),	-- Elixir of Giant Growth
