@@ -1448,17 +1448,17 @@ SOD_PHASE_EIGHT = createClassicPhaseForSOD({
 		tw = "第8階段",
 	},
 	lore = {
-		en = "Included Classic+?",
+		en = "Included the Scarlet Enclave raid, new outdoor and profession content in New Avalon, and a new Legendary weapon questline.",
 		-- TODO: de = "",
-		es = "Incluye Classic+?",
-		mx = "Incluye Classic+?",
+		-- TODO: es = "",
+		-- TODO: mx = "",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "包含经典+？",
-		-- TODO: tw = "",
+		-- TODO: cn = "",
+		tw = "包含血色領區團隊副本、新亞法隆的全新戶外與專業技能內容，以及全新的傳說武器任務線。",
 	},
 });
 -- #if SEASON_OF_DISCOVERY
