@@ -399,6 +399,33 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
+			q(490, {	-- Bounty: Gnarlpine Furbolg
+				qg = 2155,	-- Sentinel Shayla Nightbreeze
+				coord = { 38.4, 54.0, MAP.TELDRASSIL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/15 Gnarlpine Fang
+						provider = { "i", 5220 },	-- Gnarlpine Fang
+						crs = {
+							2006,	-- Gnarlpine Ursa
+							2007,	-- Gnarlpine Gardener
+							2008,	-- Gnarlpine Warrior
+							2152,	-- Gnarlpine Ambusher
+							2010,	-- Gnarlpine Defender
+							2012,	-- Gnarlpine Pathfinder
+							2009,	-- Gnarlpine Shaman
+							2011,	-- Gnarlpine Augur
+							2013,	-- Gnarlpine Avenger
+							7235,	-- Gnarlpine Mystic
+							2014,	-- Gnarlpine Totemic
+							14428,	-- Uruson
+							14429,	-- Grimmaw
+						},
+					}),
+				},
+			}),
 			q(97938, {	-- Camping 101: Alchemy [Teldrassil]
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
@@ -550,7 +577,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qi = 279291,	-- Drained Vessel
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF },
+				races = ALLIANCE_ONLY,
 			}),
 			q(98065, {	-- Crown of the Earth (2/2) [Forever]
 				sourceQuest = 98046,	-- Crown of the Earth (1/2) [Forever]
@@ -558,7 +585,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qi = 279331,	-- Moonwell Remnants
 				coord = { 40.2, 88.2, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF },
+				races = ALLIANCE_ONLY,
 			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				sourceQuest = 928,	-- Crown of the Earth (2/6)
@@ -591,7 +618,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(7383, {	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
-				altQuests = { 934 },	-- Crown of the Earth (5/6)
 				sourceQuest = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
 				qg = 3515,	-- Corithras Moonrage
 				coord = { 56.2, 61.7, MAP.TELDRASSIL },
@@ -1566,4 +1592,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 		}),
 	},
+});
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(934, {	-- Crown of the Earth (5/6)
+		["description"] = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
+		["races"] = ALLIANCE_ONLY,
+	}),
 });

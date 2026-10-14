@@ -3200,6 +3200,9 @@ fp(27,{coords={
 h(-45,{
 q(475,{coords={
 [1438]={{56,57.4}}},lvl=4,qgs={2078},r=2}),
+q(490,{awp=16001,coords={
+[1438]={{38.4,54}}},lvl=5,qgs={2155},r=2,g={
+qo(1,{crs={2006,2007,2008,2009,2010,2011,2012,2013,2014,2152,7235,14428,14429},providers={{"i",5220}}})}}),
 q(97938,{awp=16001,coords={
 [1438]={{57.6,56.6}}},lvl=4,qgs={265811},r=2,requireSkill=171,sourceQuests={96630},g={
 r(1230564,{learnedAt=20,requireSkill=171,skillID=2937})}}),
@@ -3236,9 +3239,9 @@ q(97950,{awp=16001,coords={
 [1438]={{57.6,56.6}}},lvl=4,maps={1457},qgs={265811},r=2,requireSkill=197,sourceQuests={96630},g={
 r(1263425,{learnedAt=20,requireSkill=197,skillID=2948})}}),
 q(98046,{awp=16001,coords={
-[1457]={{34.8,8.8}}},qgs={3516},qis={279291},races={4},sourceQuests={935}}),
+[1457]={{34.8,8.8}}},qgs={3516},qis={279291},r=2,sourceQuests={935}}),
 q(98065,{awp=16001,coords={
-[1457]={{40.2,88.2}}},qgs={4092},qis={279331},races={4},sourceQuests={98046}}),
+[1457]={{40.2,88.2}}},qgs={4092},qis={279331},r=2,sourceQuests={98046}}),
 q(929,{coords={
 [1438]={{56.2,61.7}}},qgs={3515},r=2,sourceQuests={928},g={
 qo(1,{coords={
@@ -3247,7 +3250,7 @@ q(933,{coords={
 [1438]={{56.2,61.7}}},qgs={3515},r=2,sourceQuests={929},g={
 qo(1,{coords={
 [1438]={{42,67}}},providers={{"i",5621},{"i",5645}}})}}),
-q(7383,{altQuests={934},coords={
+q(7383,{coords={
 [1438]={{56.2,61.7}}},qgs={3515},r=2,sourceQuests={933},g={
 qo(1,{coords={
 [1438]={{38,34}}},providers={{"i",18151},{"i",18152}}})}}),

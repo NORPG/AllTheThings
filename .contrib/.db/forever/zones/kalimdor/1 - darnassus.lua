@@ -560,8 +560,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2618,	-- Silver Dress Robes
 				}},
 			}),
-			n(4203, {	-- Ariyell Skyshadow
-				coord = { 56.6, 52.8, MAP.DARNASSUS },
+			n(4203, {	-- Ariyell Skyshadow <Weapon Merchant>
+				coord = { 58.8, 44.5, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
 				-- all done

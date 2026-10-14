@@ -382,12 +382,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 	}),
 	n(QUESTS, {	-- These are or were completable. Most of these are HQTs.
-		expansion(EXPANSION.CLASSIC, {
-			-- 1.x.x
-			n(P1xx, {
-				q(934),	-- Crown of the Earth
-			}),
-		}),
 		expansion(EXPANSION.CATA, {
 			-- 4.x.x
 			n(P4xx, {
