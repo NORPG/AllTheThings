@@ -416,6 +416,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(6659),	-- Scarab Trousers
 				},
 			}),
+			q(97914, {	-- Expanding Horizons
+				qg = 3649,	-- Thundris Windweaver
+				qi = 279045,	-- Thundris' Letter (PQI!)
+				coord = { 37.4, 40.2, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.STORMWIND_CITY },
+				lvl = 13,
+			}),
 			q(963, {	-- For Love Eternal
 				qg = 3644,	-- Cerellean Whiteclaw
 				coord = { 35.8, 43.7, MAP.DARKSHORE },
@@ -547,6 +555,17 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					objective(2, {	-- 0/5 Blackwood Windtalker slain
 						provider = { "n", 2324 },	-- Blackwood Windtalker
 					}),
+				},
+			}),
+			q(97926, {	-- Making Do
+				sourceQuest = 97914,	-- Expanding Horizons
+				qg = 1646,	-- Baros Alexston <City Architect>
+				qi = 279048,	-- Alexston's Reply (PQI!)
+				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 13,
+				groups = {
+					i(282286),	-- Shipwright's Satchel
 				},
 			}),
 			q(951, {	-- Mathystra Relics
@@ -942,6 +961,21 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(5315),	-- Timberland Armguards
 				},
 			}),
+			q(98025, {	-- WANTED: Jai'vhanel
+				provider = { "o", 175320 },	-- WANTED: Murkdeep!
+				coord = { 37.2, 44.2, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 15,
+				groups = {
+					objective(1, {	-- 0/1 Feather of Jai'vhanel
+						provider = { "i", 281038 },	-- Feather of Jai'vhanel
+						coord = { 45.2, 58.4, MAP.DARKSHORE },
+						cr = 270196,	-- Jai'vhanel
+					}),
+					i(281289),	-- Swordfeather Cloak
+				},
+			}),
 			q(3524, {	-- Washed Ashore (1/2)
 				qg = 10219,	-- Gwennyth Bly'Leggonde
 				coord = { 36.6, 45.6, MAP.DARKSHORE },
@@ -1074,6 +1108,20 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(5786),	-- Pattern: Murloc Scale Belt (RECIPE!)
 					i(5787),	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 				},
+			}),
+			n(4183, {	-- Naram Longclaw <Weaponsmith>
+				coord = { 37.6, 40.4, MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					851,	-- Cutlass
+					852,	-- Mace
+					853,	-- Hatchet
+					854,	-- Quarter Staff
+					1196,	-- Tabar
+					1197,	-- Giant Mace
+					1198,	-- Claymore
+					2207,	-- Jambiya
+				}},
 			}),
 			n(4189, {	-- Valdaron <Tailoring Supplies>
 				coord = { 38.1, 40.6, MAP.DARKSHORE },

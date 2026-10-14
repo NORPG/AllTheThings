@@ -564,7 +564,7 @@ s(158748,7002,{f=8}),
 s(158747,7001,{f=27}),
 s(304885,270031,{awp=16001,b=1,f=5,loc=46})}}),
 q(1198,{coords={
-[1457]={{28.7,52.1}}},description="This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",isBreadcrumb=1,lvl=18,nextQuests={1200},qgs={4786}}),
+[1457]={{55.4,25}}},description="This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",isBreadcrumb=1,lvl=18,nextQuests={1200},qgs={4786}}),
 q(971,{coords={
 [1455]={{50.8,5.6}}},lvl=10,qgs={2786},r=2,sourceQuests={968},g={
 qo(1,{description="Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",providers={{"i",5359},{"o",13949}}}),
@@ -583,7 +583,7 @@ qo(1,{providers={{"i",16784},{"o",178184},{"o",178185},{"o",178186}}})}}),
 q(6562,{coords={
 [1442]={{47.3,64.4}}},isBreadcrumb=1,lvl=17,maps={1440},nextQuests={6563},qgs={11862},r=1}),
 q(1199,{coords={
-[1457]={{38.3,43}}},lvl=20,qgs={4784},r=2,g={
+[1457]={{55.2,24}}},lvl=20,qgs={4784},r=2,g={
 qo(1,{crs={4809,4810,4811,4812,4813,4814},providers={{"i",5879}}}),
 s(158746,7000,{b=1,f=5,loc=45}),
 s(158745,6998,{b=1,f=4,loc=47}),
