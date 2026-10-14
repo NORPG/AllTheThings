@@ -81,7 +81,6 @@ root(ROOTS.Unsorted, {
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
 			i(281220),	-- Ensemble: Head Chef's Uniform
 			i(281670),	-- Anima-Infused Dreamcatcher
-			i(282024),	-- Decorative Lightforged Holo-Screen
 			i(282051),	-- Simple Hallow's End Candle
 			i(282072),	-- Enchanted Hallow's End Candle
 			i(282075),	-- Heartsbane Candle
@@ -94,29 +93,11 @@ root(ROOTS.Unsorted, {
 			i(282095),	-- Ominous Heartsbane Banner
 			i(282098),	-- Elaborate Heartsbane Doom Catcher
 			i(282100),	-- Heartsbane Doom Catcher
-			i(282111),	-- Hanging Lightforged Standard
-			i(282113),	-- Lightforged Holo-Tower
-			i(282115),	-- Lightforged Holo-Barricade
-			i(282117),	-- Lightforged Holo-Parapet
-			i(282119),	-- Lightforged Holo-Shield
-			i(282122),	-- Gilded Stonework Altar
 			i(282124),	-- Gleaming Lightforge
 			i(282126),	-- Hanging Argunite Lamp
-			i(282128),	-- Argunite Sconce
-			i(282130),	-- Standing Argunite Lamp
 			i(282132),	-- Eredath Artisan's Workbench
-			i(282134),	-- Argunite Crystal Storage
-			i(282136),	-- Raw Argunite Supply
-			i(282138),	-- Carved Argunite Supply
 			i(282140),	-- Shimmering Lightforged Canister
-			i(282142),	-- Gleaming Lightforged Grindstone
 			i(282144),	-- Lightforged Recall Beacon
-			i(282146),	-- Lightforged Control Console
-			i(282148),	-- Replica Crown of the Triumvirate
-			i(282150),	-- Golden Argunite Crystal
-			i(282152),	-- Celadon Argunite Crystal
-			i(282154),	-- Amethyst Argunite Crystal
-			i(282156),	-- Reinforced Empyrium Tile
 			i(282158),	-- Decorative Lightweave Bolt
 			i(282164),	-- Eredath Worktable
 			i(282184),	-- Spidery Witch Hat
