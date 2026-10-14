@@ -397,8 +397,6 @@ root(ROOTS.Unsorted, {
 			i(284566),	-- Venthyr Fencepost
 			i(284568),	-- Sinfall Dining Table
 			i(284570),	-- Small Darkhaven Window
-			i(284576),	-- Chitin Plate
-			i(284578),	-- Preserved Stinger
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament
