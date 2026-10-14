@@ -935,10 +935,6 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(990, {	-- Trek to Ashenvale
 				description = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
-				sourceQuests = {
-					994,	-- Escape Through Force
-					995,	-- Escape Through Stealth
-				},
 				qg = 3694,	-- Sentinel Selarin
 				coord = { 39.3, 43.5, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
