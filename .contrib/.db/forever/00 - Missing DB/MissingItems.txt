@@ -10714,7 +10714,6 @@ i(280729),	-- Shen'dorei Tabard
 i(280740),	-- Shen'dorei Windwell
 i(280794),	-- Brown Ground Squirrel Whistle
 i(280795),	-- Red Ground Squirrel Whistle
-i(280803),	-- Eagle Owl
 i(280806),	-- Stolen Explosives
 i(280839),	-- Blackrock Supplies \\ Stolen Supplies
 i(280841),	-- Stolen Weapon

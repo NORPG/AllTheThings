@@ -52,7 +52,6 @@ pet(5153),	-- Jungle Boa
 pet(5154),	-- Brown Ground Squirrel
 pet(5155),	-- Red Ground Squirrel
 pet(5157),	-- Brown Rabbit
-pet(5158),	-- Eagle Owl
 pet(5159),	-- Panda Cub
 pet(5160),	-- Zergling
 pet(5161),	-- Mini Diablo
@@ -104,7 +103,6 @@ pet(5153),	-- Jungle Boa
 pet(5154),	-- Brown Ground Squirrel
 pet(5155),	-- Red Ground Squirrel
 pet(5157),	-- Brown Rabbit
-pet(5158),	-- Eagle Owl
 pet(5159),	-- Panda Cub
 pet(5160),	-- Zergling
 pet(5161),	-- Mini Diablo

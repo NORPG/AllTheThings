@@ -278,7 +278,8 @@ n(5191,{coords={
 n(8665,{coords={
 [1457]={{69.8,45.4}}},r=2,g={
 p(68,{itemID=8500,npcID=7553,spellID=10707}),
-p(67,{itemID=8501,npcID=7555,spellID=10706})}}),
+p(67,{itemID=8501,npcID=7555,spellID=10706}),
+p(5158,{awp=16001,itemID=280803,npcID=7556,spellID=10705})}}),
 n(4235,{coords={
 [1457]={{62.7,65.6}}},r=2,g={
 s(160461,12247,{f=20,isLimited=1,lvl=27})}}),

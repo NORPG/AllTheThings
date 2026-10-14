@@ -1017,6 +1017,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				groups = {
 					i(8500),	-- Great Horned Owl (PET!)
 					i(8501),	-- Hawk Owl (PET!)
+					i(280803, {	-- Eagle Owl (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(4235, {	-- Turian <Thrown Weapons Merchant>
