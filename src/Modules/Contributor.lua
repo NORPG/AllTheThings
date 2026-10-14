@@ -216,47 +216,49 @@ local function DoReport(reporttype, id)
 		reportData[#reportData + 1] = "Skills: "..(app.TableConcat(skills) or "")
 	end
 
-	if C_Covenants then	-- Covenants
-		local covInfo = "";
-		local covID = C_Covenants.GetActiveCovenantID();
-		if covID and covID > 0 then
-			local covData = C_Covenants.GetCovenantData(covID);
-			if covData then
-				covInfo = covInfo .. covID..":"..covData.name;
-				local covRenown = C_CovenantSanctumUI.GetRenownLevel();
-				if covRenown then
-					covInfo = covInfo .. ":"..covRenown;
-				end
-			else
-				covInfo = covInfo .. "N/A";
-			end
-		else
-			covInfo = covInfo .. "N/A";
-		end
-		reportData[#reportData + 1] = ReportLineFormats.Info:format("cov",covInfo)
-	end
-	if C_MajorFactions then	-- Renown
-		local data = {}
-		-- DF/TWW/MD
-		for i=9,11 do
-			local exp = {}
-			data[i==9 and "DF" or i==10 and "TWW" or i==11 and "MD" or i] = exp
-			for _,factionID in ipairs(C_MajorFactions.GetMajorFactionIDs(i)) do
-				local renown = C_MajorFactions.GetMajorFactionData(factionID);
-				exp[factionID] = renown and renown.renownLevel or "?"
-			end
-		end
-		reportData[#reportData + 1] = ReportLineFormats.Info:format("renown",app:RenderStylizedRawData(data, "Compact"))
-	end
+	---- Removing Covenants/Renowns/Unlocks info in Reports for now, hasn't been useful in any recent reports
 
-	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
-		local acctUnlocks = {
-			app.IsQuestFlaggedCompleted(72366) and "DF_CA:Y" or "DF_CA:N",	-- Dragonflight Campaign Complete
-			app.IsQuestFlaggedCompleted(75658) and "DF_ZC:Y" or "DF_ZC:N",	-- Dragonflight Zaralek Caverns Complete
-			app.IsQuestFlaggedCompleted(79573) and "WW_CA:Y" or "WW_CA:N",	-- The War Within Campaign Complete
-		}
-		reportData[#reportData + 1] = ReportLineFormats.Info:format("unlocks",app.TableConcat(acctUnlocks, nil, nil, "/"))
-	end
+	-- if C_Covenants then	-- Covenants
+	-- 	local covInfo = "";
+	-- 	local covID = C_Covenants.GetActiveCovenantID();
+	-- 	if covID and covID > 0 then
+	-- 		local covData = C_Covenants.GetCovenantData(covID);
+	-- 		if covData then
+	-- 			covInfo = covInfo .. covID..":"..covData.name;
+	-- 			local covRenown = C_CovenantSanctumUI.GetRenownLevel();
+	-- 			if covRenown then
+	-- 				covInfo = covInfo .. ":"..covRenown;
+	-- 			end
+	-- 		else
+	-- 			covInfo = covInfo .. "N/A";
+	-- 		end
+	-- 	else
+	-- 		covInfo = covInfo .. "N/A";
+	-- 	end
+	-- 	reportData[#reportData + 1] = ReportLineFormats.Info:format("cov",covInfo)
+	-- end
+	-- if C_MajorFactions then	-- Renown
+	-- 	local data = {}
+	-- 	-- DF/TWW/MD
+	-- 	for i=9,11 do
+	-- 		local exp = {}
+	-- 		data[i==9 and "DF" or i==10 and "TWW" or i==11 and "MD" or i] = exp
+	-- 		for _,factionID in ipairs(C_MajorFactions.GetMajorFactionIDs(i)) do
+	-- 			local renown = C_MajorFactions.GetMajorFactionData(factionID);
+	-- 			exp[factionID] = renown and renown.renownLevel or "?"
+	-- 		end
+	-- 	end
+	-- 	reportData[#reportData + 1] = ReportLineFormats.Info:format("renown",app:RenderStylizedRawData(data, "Compact"))
+	-- end
+
+	-- if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
+	-- 	local acctUnlocks = {
+	-- 		app.IsQuestFlaggedCompleted(72366) and "DF_CA:Y" or "DF_CA:N",	-- Dragonflight Campaign Complete
+	-- 		app.IsQuestFlaggedCompleted(75658) and "DF_ZC:Y" or "DF_ZC:N",	-- Dragonflight Zaralek Caverns Complete
+	-- 		app.IsQuestFlaggedCompleted(79573) and "WW_CA:Y" or "WW_CA:N",	-- The War Within Campaign Complete
+	-- 	}
+	-- 	reportData[#reportData + 1] = ReportLineFormats.Info:format("unlocks",app.TableConcat(acctUnlocks, nil, nil, "/"))
+	-- end
 	reportData[#reportData + 1] = ReportLineFormats.ATT:format(app.Version,app.GameBuildVersion,date("!%Y-%m-%dT%H:%M:%SZ", time()))
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
