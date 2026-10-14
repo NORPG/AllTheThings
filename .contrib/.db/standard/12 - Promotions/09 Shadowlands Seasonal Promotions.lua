@@ -21,6 +21,7 @@ SHADOWLANDS_SEASONAL_PROMOTIONS = createHeader({
 	description = {
 		en = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",
 		cn = "这些促销活动均发生在《暗影国度》作为最新内容的时期，时间为2020年10月13日至2022年10月25日。\n\n以下按活动首次出现的时间顺序列出。",
+		tw = "這些促銷活動均發生在《暗影之境》作為最新資料片的時期，時間為2020年10月13日至2022年10月25日。\n\n以下按活動首次出現的時間順序列出。",
 	},
 });
 

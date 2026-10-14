@@ -21,6 +21,7 @@ DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 	description = {
 		en = "These promotions happened during the time Dragonflight was the most recent expansion between 25th October 2022 & 24th July 2024.\n\nThey are listed in the order of their first appearance.",
 		cn = "这些促销活动均发生在《巨龙时代》作为最新资料片的时期，时间为2022年10月25日至2024年7月24日。\n\n以下按活动首次出现的时间顺序列出。",
+		tw = "這些促銷活動均發生在《巨龍崛起》作為最新資料片的時期，時間為2022年10月25日至2024年7月24日。\n\n以下按活動首次出現的時間順序列出。",
 	},
 });
 

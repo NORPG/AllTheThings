@@ -23,6 +23,7 @@ MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 		es = "Estas promociones tuvieron lugar durante el tiempo en que Midnight era la expansión más reciente.\n\nSe enumeran en el orden en que aparecieron por primera vez.",
 		mx = "Estas promociones sucedieron durante el tiempo en que Midnight era la expansión más reciente.\n\nSe listan en el orden en que aparecieron por primera vez.",
 		cn = "这些促销活动均发生在《至暗之夜》作为最新资料片的时期。以下按活动首次出现的时间顺序列出。",
+		tw = "這些促銷活動均發生在《至暗之夜》作為最新資料片的時期。以下按活動首次出現的時間順序列出。",
 	},
 });
 RAZER = createHeader({

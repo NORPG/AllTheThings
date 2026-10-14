@@ -23,6 +23,7 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 		es = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe enumeran en el orden de su primera aparición.",
 		mx = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe listan en el orden de su primera aparición.",
 		cn = "这些促销活动均发生在《地心之战》作为最新资料片的时期。\n\n以下按活动首次出现的时间顺序列出。",
+		tw = "這些促銷活動均發生在《地心之戰》作為最新資料片的時期。\n\n以下按活動首次出現的時間順序列出。",
 	},
 });
 STEELSERIES = createHeader({
