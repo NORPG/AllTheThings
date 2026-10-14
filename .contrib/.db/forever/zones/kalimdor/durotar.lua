@@ -144,6 +144,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 									{ "o", 171938 },	-- Cactus Apple
 								},
 							}),
+							i(247840),	-- Mining for Dummies
+							i(247841),	-- Wild Harvest
+							i(247846),	-- Pelt Collecting for Beginners
 							i(11584),	-- Cactus Apple Surprise
 						},
 					}),

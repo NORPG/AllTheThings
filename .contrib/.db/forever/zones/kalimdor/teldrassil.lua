@@ -237,6 +237,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						qg = 2077,	-- Melithar Staghelm
 						coord = { 59.8, 42.4, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
+						groups = {
+							i(247840),	-- Mining for Dummies
+							i(247841),	-- Wild Harvest
+							i(247846),	-- Pelt Collecting for Beginners
+						},
 					}),
 					q(459, {	-- The Woodland Protector (2/2)
 						sourceQuest = 458,	-- The Woodland Protector (1/2)

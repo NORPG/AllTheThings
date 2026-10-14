@@ -18,7 +18,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						qg = 2981,	-- Chief Hawkwind
 						coord = { 44.2, 76.0, MAP.MULGORE },
 						races = HORDE_ONLY,
-						isBreadcrumb = true,
+						groups = {
+							i(247840),	-- Mining for Dummies
+							i(247841),	-- Wild Harvest
+							i(247846),	-- Pelt Collecting for Beginners
+						},
 					}),
 					q(753, {	-- A Humble Task (2/2)
 						sourceQuest = 752,	-- A Humble Task (1/2)
