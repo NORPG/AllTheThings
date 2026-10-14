@@ -10,5 +10,26 @@
         "string": "disable",
         "table": "disable",
         "utf8": "disable"
-    }
+    },
+    "workspace.ignoreDir": [
+        ".vscode",
+        "db",
+        ".config/.exports",
+        ".contrib/src",
+        ".contrib/.source",
+        ".contrib/.raw/ItemDB",
+        ".contrib/.db/standard/00 - Item DB",
+        ".contrib/.db/standard/00 - DB/AssetDB",
+        ".contrib/.db/shared/objects/ObjectDB.lua",
+        ".contrib/.db/standard/00 - DB/ReagentsDB.Retail.lua",
+        "Debugging/"
+    ],
+    "diagnostics.disable": [
+        "duplicate-index",
+        "undefined-global"
+    ],
+    "diagnostics.globals": [],
+    "diagnostics.enable": false,
+    "diagnostics.ignoredFiles": "Disable",
+    "diagnostics.libraryFiles": "Disable"
 }
