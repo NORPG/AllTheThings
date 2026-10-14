@@ -657,7 +657,43 @@ root(ROOTS.Housing, {
 		},
 		["groups"] = {
 			i(280335),	-- Brewfest Crate (DECOR!)
+			i(282086, {	-- Buckled Witch Hat (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282081, {	-- Candlelit Smiling Jack-o'-Lantern (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282098, {	-- Elaborate Heartsbane Doom Catcher (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282072, {	-- Enchanted Hallow's End Candle (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282090, {	-- Eternally Powered Glowskull (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282075, {	-- Heartsbane Candle (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282100, {	-- Heartsbane Doom Catcher (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282092, {	-- Heartsbane Ritual Markings (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282095, {	-- Ominous Heartsbane Banner (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282051, {	-- Simple Hallow's End Candle (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
+			i(282077, {	-- Spooky Scarecrow (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
 			i(248101),	-- Traditional Brewfest Stein (DECOR!)
+			i(282083, {	-- Unlit Smiling Jack-o'-Lantern (DECOR!)
+				["timeline"] = { ADDED_12_1_5 },
+			}),
 		},
 	}),
 	n(VENDORS, {
