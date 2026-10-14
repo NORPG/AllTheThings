@@ -116,6 +116,9 @@ if app.IsRetail and not app.IsForever then
 	end
 else
 	GetBestObjectIDForName = function(name)
+		-- Account for Blizzard Shenanigans
+		if issecretvalue(name) then return; end
+		
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		--print("GetBestObjectIDForName:", "'" .. (name or RETRIEVING_DATA) .. "'");
