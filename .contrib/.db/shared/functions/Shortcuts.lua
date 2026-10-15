@@ -88,7 +88,7 @@
 ---@field name? string Display name.
 ---@field readable? string Human-readable parser label.
 ---@field icon? string|FileID Icon path/file ID.
----@field model? integer Display/model ID.
+---@field model? FileID Model file data ID.
 ---@field displayID? integer Display ID.
 ---@field sourceID? SourceID Appearance/source ID.
 ---@field achievementCategoryID? AchievementCategoryID Achievement category ID.
