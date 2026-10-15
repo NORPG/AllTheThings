@@ -184,6 +184,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					["groups"] = { i(285065) },	-- Mythical Soul Fragment
 				}),
+				q(97241, {	-- Voices of Stone
+					["providers"] = {
+						{ "o", 649924 },	-- Small Loa Figurine
+						{ "o", 649937 },	-- Small Loa Figurine
+						{ "o", 649938 },	-- Small Loa Figurine
+						{ "o", 649939 },	-- Small Loa Figurine
+						{ "o", 649940 },	-- Small Loa Figurine
+					},
+					["coords"] = {
+						{ 77.9, 62.7, LABYRINTH_KINDOJAN },
+						{ 79.7, 55.2, LABYRINTH_KINDOJAN },
+						{ 78.0, 51.4, LABYRINTH_KINDOJAN },
+						{ 84.3, 54.1, LABYRINTH_KINDOJAN },
+						{ 82.9, 65.6, LABYRINTH_KINDOJAN },
+					},
+				}),
 				filter(MISC, {
 					i(271135),	-- Dusty Loa Totem
 					i(271156),	-- Stolen Artifact
@@ -302,8 +318,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					o(676641, {	-- Sturdy Chest
 						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
 					}),
-
-
 					o(676651, {	-- Sturdy Chest
 						["coord"] = { 61.2, 44.8, LABYRINTH_KINDOJAN },
 						["questID"] = 98631,
@@ -312,10 +326,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98619,
 						["groups"] = {
-							-- maybe zone rewards but all from this one chest at once for me
-							i(244349),	-- Ruined Amani Ritual Urn
-							i(284357),	-- Ancient Amani Mural
-							i(264486),	-- Brown Amani Tapestry
+							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
+							i(284357),	-- Ancient Amani Mural (DECOR!)
+							i(264486),	-- Brown Amani Tapestry (DECOR!)
 						},
 					}),
 					o(676621, {	-- Sturdy Chest

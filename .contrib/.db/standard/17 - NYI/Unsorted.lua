@@ -17,20 +17,14 @@ root(ROOTS.Unsorted, {
 			i(275733),	-- A Rat-Sized Portion of Mushroom
 			i(275734),	-- A Rat-Sized Portion of Honey
 			i(275756),	-- Living Heartsbane Cauldron
-			i(277876),	-- Sacrosanct Thirstspire
 			i(277879),	-- Whisperthorn Ritual Knife
 			i(277880),	-- Runic Moonbrand
 			i(277882),	-- Feral Gloombranch
 			i(277883),	-- Duskmantle Spiteglass
-			i(277888),	-- Veil of the Feral Rite
 			i(277889),	-- Fanged Riftrazor
 			i(277890),	-- Wildwarden's Guise
-			i(277891),	-- Leviathan Bracerbands
 			i(277893),	-- Emberveil Ritual Knife
-			i(277895),	-- Veilweaver's Shadowgown
 			i(277896),	-- Bloodtide Hauberk
-			i(277898),	-- Duskhallow Vanguard Greaves
-			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
 			i(280820),	-- Loa-Blessed Victory
 			i(280821),	-- Trail of Halazzi
@@ -177,30 +171,22 @@ root(ROOTS.Unsorted, {
 			i(283271),	-- Blooming Celestial Dreamleaf
 			i(283273),	-- Fae Moonbough Table
 			i(283275),	-- Small Shimmering Moonvine
-			i(283277),	-- Wooden Vulpera Caravan
-			i(283279),	-- Damaged Nomad's Makeshift Barricade
 			i(283281),	-- Wildgrove Leaf Pile
 			i(283283),	-- Fae Moonbough Cocoon
 			i(283285),	-- Lush Wildgrove Fern
 			i(283287),	-- Nomad's Warped Water Gourd
-			i(283289),	-- Nomad's Steel Lantern
 			i(283291),	-- Nomad's Campfire Grill
 			i(283293),	-- Nomad's Serving Sundries
 			i(283295),	-- Long Red Vulpera Cushion
-			i(283297),	-- Vulpera Postbox
 			i(283299),	-- Nomad's Round Cushion
 			i(283301),	-- Fae Moonbough Scroll
 			i(283303),	-- Nomad's Steel Forge
-			i(283305),	-- Fortified Nomad's Makeshift Barricade
 			i(283307),	-- Nomad's Mortar and Pestle
 			i(283309),	-- Nomad's Covered Serving Bowl
 			i(283311),	-- Nomad's Serving Bowl
 			i(283313),	-- Nomad's Stone Pitcher
 			i(283315),	-- Nomad's Bowl Set
-			i(283317),	-- Reinforced Nomad's Makeshift Barricade
-			i(283319),	-- Vacant Buzzard Roost
 			i(283321),	-- Closed Vulpera Scroll
-			i(283323),	-- Nomad's Wooden Lamppost
 			i(283325),	-- Nomad's Worn Water Gourd
 			i(283327),	-- Nomad's Water Gourd
 			i(283329),	-- Nomad's Wooden Table
@@ -212,7 +198,6 @@ root(ROOTS.Unsorted, {
 			i(283341),	-- Dormant Wildseed
 			i(283343),	-- Ornate Vulpera Caravan
 			i(283345),	-- Hanging Wildseed
-			i(283365),	-- Caravan Smith's Anvil
 			i(283370),	-- Fae Moonbough Gate
 			i(283376),	-- Leaning Wildgrove Tree
 			i(283379),	-- Hanging Wildgrove Ivy
@@ -291,7 +276,6 @@ root(ROOTS.Unsorted, {
 			i(284212),	-- Technique: Apple Bobbing Bucket
 			i(284213),	-- Pattern: Spidery Witch Hat
 			i(284216),	-- Mysterious Imported Piranha
-			i(284219),	-- Granite Ritual Cuirass
 			i(284223),	-- "Pride of Stormwind" Statue
 			i(284233),	-- Baker's Sapphire Tray
 			i(284234),	-- Baker's Emerald Tray

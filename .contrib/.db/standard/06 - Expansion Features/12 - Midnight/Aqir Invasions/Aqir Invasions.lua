@@ -45,21 +45,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						filter(CLOTH, {
 							i(277885),	-- Veilweaver Trousers
+							i(277895),	-- Veilweaver's Shadowgown
 						}),
 						filter(FINGER_F, {
 						}),
 						filter(LEATHER, {
+							i(277888),	-- Veil of the Feral Rite
 						}),
 						filter(MAIL, {
+							i(277891),	-- Leviathan Bracerbands
 						}),
 						filter(NECK_F, {
 						}),
 						filter(PLATE, {
+							i(277898),	-- Duskhallow Vanguard Greaves
+							i(284219),	-- Granite Ritual Cuirass
 						}),
 						filter(TRINKET_F, {
 						}),
 					}),
 					n(WEAPONS, {
+						i(277899),	-- Fangwarden's Shardspine Bow
+						i(277876),	-- Sacrosanct Thirstspire
 					}),
 				}),
 				i(286563),	-- Aqir Research Token
