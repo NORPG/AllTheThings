@@ -5,9 +5,7 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
-			i(244349),	-- Ruined Amani Ritual Urn
 			i(244350),	-- Shattered Amani Ritual Urn
-			i(264486),	-- Brown Amani Tapestry
 			i(265331),	-- Draenei Holo-Junction
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
@@ -314,7 +312,6 @@ root(ROOTS.Unsorted, {
 			i(284260),	-- Overflowing Voidspire
 			i(284263),	-- Pattern: Beloved Murloc Plushie
 			i(284264),	-- "Gnoma Lisa" Painting
-			i(284357),	-- Ancient Amani Mural
 			i(284384),	-- Boralus Swill Bottle
 			i(284402),	-- Valdrakken Resupply Coin
 			i(284462),	-- Arching Crimson Ivy

@@ -266,6 +266,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676646, {	-- Ancient Chest
 						["coord"] = { 30.7, 15.6, LABYRINTH_KINDOJAN },
+						["questID"] = 98626,
 						["groups"] = { i(280823) },	-- Feathers of Akil'zon (TOY!)
 					}),
 					o(676632, {	-- Ancient Chest
@@ -277,10 +278,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
 						["coord"] = { 38.8, 83.4, LABYRINTH_KINDOJAN },
 						["questID"] = 98605,
-						["groups"] = {
-							i(282424),	-- Akil'zon's Swiftness
-							i(284359),	-- Corroded Amani Sconce (DECOR!)
-						},
+						["groups"] = { i(282424) },	-- Akil'zon's Swiftness
 					}),
 					o(676623, {	-- Sturdy Chest
 						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
@@ -303,6 +301,37 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676641, {	-- Sturdy Chest
 						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
+					}),
+
+
+					o(676651, {	-- Sturdy Chest
+						["coord"] = { 61.2, 44.8, LABYRINTH_KINDOJAN },
+						["questID"] = 98631,
+					}),
+					o(676637, {	-- Sturdy Chest
+						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98619,
+						["groups"] = {
+							-- maybe zone rewards but all from this one chest at once for me
+							i(244349),	-- Ruined Amani Ritual Urn
+							i(284357),	-- Ancient Amani Mural
+							i(264486),	-- Brown Amani Tapestry
+						},
+					}),
+					o(676621, {	-- Sturdy Chest
+						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98619,
+					}),
+					-- o(???, {	-- Sturdy Chest (2nd from the left)
+					-- 	["coord"] = { 61.5, 43.6, LABYRINTH_KINDOJAN },
+					-- 	["questID"] = 98640,
+					-- }),
+					o(676631, {	-- Sturdy Chest
+						["coord"] = { 61.1, 43.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98614,
+					}),
+					o(676647, {	-- Sturdy Chest
+						["coord"] = { 30.6, 14.9, LABYRINTH_KINDOJAN },
 					}),
 				}),
 				o(689304, {	-- Ancestral Bounty
@@ -341,6 +370,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(284052),	-- Amani Effigy (COSMETIC!)
 				i(252044),	-- Amani Horn Cup (DECOR!)
 				i(264484),	-- Blue Amani Tapestry (DECOR!)
+				i(284359),	-- Corroded Amani Sconce (DECOR!)
 				i(284057),	-- Effigy of Corrosion (COSMETIC!)
 				i(263321),	-- Frayed Amani Offering Basket (DECOR!)
 				i(284051),	-- Hexbearer's Pauldrons (COSMETIC!)
