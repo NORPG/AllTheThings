@@ -41246,7 +41246,7 @@ s(306760,271465,{bonusID=6894,c={2},f=7,loc=40})}),
 cl(7,{
 s(306888,271481,{bonusID=6894,c={7},f=6,loc=41}),
 s(306904,271483,{bonusID=6894,c={7},f=6,loc=40})})})}})}})}),
-h(-790,{awp=120105,g={
+h(-790,{awp=120105,maps={2395,2437},g={
 h(-12,{
 ach(63659,{
 title(793)}),
@@ -41257,7 +41257,24 @@ crit(116681,{achID=63659,id=2})}),
 ach(63519,{
 title(780)})}),
 h(-29,{
-i(277283,{f=55}),
+i(277283,{f=55,g={
+h(-88,{
+flt(4,{
+s(310167,277885,{f=4,loc=46}),
+s(310174,277895,{f=4,loc=42})}),
+flt(52),
+flt(5,{
+s(310168,277888,{f=5,loc=40})}),
+flt(6,{
+s(310171,277891,{f=6,loc=43})}),
+flt(51),
+flt(7,{
+s(310176,277898,{f=7,loc=46}),
+s(316088,284219,{f=7,loc=42})}),
+flt(53)}),
+h(-101,{
+s(310177,277899,{f=32}),
+s(310161,277876,{f=29})})}}),
 i(286563,{f=55})}),
 ah(2838,{icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
 faction(2838),

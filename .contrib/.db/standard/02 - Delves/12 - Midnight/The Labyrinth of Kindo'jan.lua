@@ -135,19 +135,27 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				fp(3329, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
 			}),
 			n(QUESTS, {
+				q(99312, {	-- On the Trail of Kindo'jan
+					["description"] = "This quest is obtained from Any Delve. In order not to lose Quest Completion, go back to the Labyrinth entrance and pick up the Quest from the Tablet.",
+					["provider"] = { "i", 287078 },	-- Ancient Amani Tablet (QS!)
+					["isBreadcrumb"] = true,
+				}),
 				q(99306, {	-- The Labyrinth of Kindo'jan
 					["provider"] = { "o", 701639 },	-- Amani Tablet
 					["coord"] = { 62.9, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["isBreadcrumb"] = true,
 				}),
 				q(98831, {	-- The Labyrinth
-					["sourceQuest"] = 99306,	-- The Labyrinth of Kindo'jan
+					["sourceQuests"] = {	-- There are 2 breadcrumb quests. One from the Labyrinth Entrance, One from the Delves (QS!) Item. Only 1 of them is required but, sourceQuestNumRequired is not used because we want to warn users of both of them.
+						99312,	-- On the Trail of Kindo'jan
+						99306,	-- The Labyrinth of Kindo'jan
+					},
 					["qgs"] = {
 						265173,	-- Kul'amara the Fierce
 						277031,	-- Kul'amara the Fierce
 					},
 					["coords"] = {
-						{ 33.4, 25.5, MAP.MIDNIGHT.ZULAMAN },
+						{ 33.2, 25.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						{ 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 					},
 				}),
@@ -157,8 +165,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 62.8, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
 						o(693668, {	-- Broken Tablet
-							-- Exo Note: This is here so that tooltip from object 294114 does not bleed onto this one. If someone has a better way to resolve it, please do.
-							-- IF that gets resolved and/or WHEN WoWhead gets the data for this object parsed, remove Kindo'jan TEMP.lua file from .db\shared\objects\Dynamic\
+							-- Exo Note: This is here so that tooltip from object 294114 does not bleed onto this one.
 							["coord"] = { 44.5, 68.8, LABYRINTH_KINDOJAN },
 						}),
 					},
