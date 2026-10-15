@@ -1331,6 +1331,7 @@ _.HeaderConstants = {
 	SHIPPING_AND_HANDLING = -412,
 	SHOULDER = -98,
 	SPECIAL = -55,
+	TALEBOUND = -801,
 	THE_GREAT_GNOMEREGAN_RUN_HEADER = -589,
 	THOUSAND_BOAT_BASH_HEADER = -590,
 	TIER_14_RAIDS = -478,
@@ -2020,6 +2021,7 @@ localize(L.HEADER_NAMES, {
 	[-797] = "World of Warcraft: Forever",
 	[-798] = select(2,GetAchievementInfo(63714)),
 	[-800] = "Alliance Outrunners",
+	[-801] = "Talebound",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2155,6 +2157,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-795] = "These rewards are available to anyone who purchased Warcraft Forever Collection or physical equivalents.",
 	[-797] = "These rewards are available to anyone who purchased a World of Warcraft: Forever upgrade.",
 	[-800] = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
+	[-801] = "The village of Quillgrave awaits, and the stories are far from finished. The Storyteller is waiting, and the fire is lit. Gather around the campfire and prepare to lose yourself in Talebound’s macabre tales.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2803,6 +2806,7 @@ localize(L.HEADER_ICONS, {
 	[-797] = 1120721,
 	[-798] = 133783,
 	[-800] = 236449,
+	[-801] = 7815705,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
