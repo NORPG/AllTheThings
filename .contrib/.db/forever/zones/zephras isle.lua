@@ -100,6 +100,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94493, {	-- A Sacrifice in Vain
+				altQuests = { 94484 },
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
@@ -255,6 +256,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93797, {	-- Boughs in the Wind
+				sourceQuest = 93791,
 				qg = 256507,	-- Belann Windwood
 				coord = { 62.8, 77.4, MAP.ZEPHRAS_ISLE },
 				classes = { MAGE },
@@ -296,6 +298,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92466, {	-- Call of Earth
+				altQuests = { 1516, 1519 },
 				qg = 251374,	-- Windshaper Boro
 				coord = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
@@ -356,6 +359,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(97963, {	-- Camping 101: Alchemy
+				lockCriteria = { 1, "spellID", 1230564 },
+				altQuests = { 96045, 97899, 97915, 97927, 97938, 97951 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -364,6 +369,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230564), },
 			}),
 			q(97964, {	-- Camping 101: Blacksmithing
+				lockCriteria = { 1, "spellID", 1230171 },
+				altQuests = { 96044, 97900, 97916, 97928, 97939, 97952 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -372,14 +379,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230171), },
 			}),
 			q(96646, {	-- Camping 101: Cooking
+				altQuests = { 96626, 96629, 96634, 96655, 96658, 96661 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 			}),
 			q(98284, {	-- Camping 101: Enchanting
+				lockCriteria = { 1, "spellID", 1230643 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				altQuests = { 98286 },
+				altQuests = { 96059, 97901, 97917, 97929, 97940, 97953, 98286 },
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENCHANTING,
@@ -388,8 +397,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230643), },
 			}),
 			q(98286, {	-- Camping 101: Enchanting
+				lockCriteria = { 1, "spellID", 1230643 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				altQuests = { 98284 },
+				altQuests = { 96059, 97901, 97917, 97929, 97940, 97953, 98284 },
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENCHANTING,
@@ -398,6 +408,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230643), },
 			}),
 			q(98285, {	-- Camping 101: Engineering
+				lockCriteria = { 1, "spellID", 1230656 },
+				altQuests = { 96058, 97902, 97918, 97930, 97941, 97954, 98287 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -406,6 +418,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230656), },
 			}),
 			q(97965, {	-- Camping 101: First Aid
+				lockCriteria = { 1, "spellID", 1230117 },
+				altQuests = { 96047, 97903, 97919, 97931, 97942, 97955 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -414,6 +428,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230117), },
 			}),
 			q(97967, {	-- Camping 101: Fishing
+				lockCriteria = { 1, "spellID", 1229745 },
+				altQuests = { 96050, 97904, 97920, 97932, 97943, 97956 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -422,6 +438,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229745), },
 			}),
 			q(97968, {	-- Camping 101: Herbalism
+				lockCriteria = { 1, "spellID", 1229705 },
+				altQuests = { 96055, 97905, 97921, 97933, 97944, 97957 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -430,6 +448,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229705), },
 			}),
 			q(97969, {	-- Camping 101: Leatherworking
+				lockCriteria = { 1, "spellID", 1229432 },
+				altQuests = { 96031, 97906, 97922, 97934, 97946, 97958 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -438,6 +458,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229432), },
 			}),
 			q(97970, {	-- Camping 101: Mining
+				lockCriteria = { 1, "spellID", 1230161 },
+				altQuests = { 96046, 97907, 97923, 97935, 97948, 97959 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -446,6 +468,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230161), },
 			}),
 			q(97971, {	-- Camping 101: Skinning
+				lockCriteria = { 1, "spellID", 1229517 },
+				altQuests = { 96056, 97908, 97924, 97936, 97949, 97960 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -454,8 +478,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229517), },
 			}),
 			q(97972, {	-- Camping 101: Tailoring
+				lockCriteria = { 1, "spellID", 1229504 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				altQuests = { 97973 },	-- Camping 101: Tailoring
+				altQuests = { 96057, 96102, 97925, 97937, 97950, 97961, 97973 },
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = TAILORING,
@@ -466,8 +491,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(97973, {	-- Camping 101: Tailoring
+				lockCriteria = { 1, "spellID", 1263425 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				altQuests = { 97972 },	-- Camping 101: Tailoring
+				altQuests = { 96057, 96102, 97925, 97937, 97950, 97961, 97972 },
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = TAILORING,
@@ -555,7 +581,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93948, {	-- Deliver the Signet
-				sourceQuest = 92550,	-- Havoc in the Highlands
+				sourceQuests = { 92550, 93927 },
+
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
@@ -595,6 +622,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92464, {	-- Elemental Unrest
+				nextQuests = { 92465 },
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
@@ -909,6 +937,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 7,
 			}),
 			q(92597, {	-- Reading the Ley Lines
+				sourceQuest = 92461,
 				qg = 251371,	-- Falorne Fallwind
 				coord = { 43.3, 24.9, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE },
@@ -953,6 +982,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94490, {	-- Ripped Missive
+				sourceQuests = { 94485, 94486, 94487 },
 				provider = { "i", 265476 },	-- Ripped Missive
 				cr = 253622,	-- Commander Haalien
 				coord = { 65.4, 36.2, MAP.ZEPHRAS_ISLE },
@@ -1015,6 +1045,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 10,
 			}),
 			q(94013, {	-- Taming the Beast
+				sourceQuest = 94979,
 				qg = 252389,	-- Quel'ana Quickgale
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
@@ -1029,6 +1060,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 10,
 			}),
 			q(94979, {	-- Taming the Beast
+				sourceQuest = 94978,
 				qg = 252389,	-- Quel'ana Quickgale
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
@@ -1047,6 +1079,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(96638, {	-- The Adventurer [Zephras Isle]
+				nextQuests = { 96101 },
+				isBreadcrumb = true,
+				altQuests = { 96627, 96628, 96630, 96652, 96656, 96659 },
 				sourceQuest = 92470,	-- Foul Matriarch
 				qg = 251366,	-- Aetheen of the Gales
 				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
@@ -1186,6 +1221,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(96101, {	-- The Great Outdoors [Zephras Isle]
+				altQuests = { 95998, 96604, 96605, 96606, 96607, 96608 },
 				sourceQuest = 96638,	-- The Adventurer [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -1324,6 +1360,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(94488, {	-- The Ties That Bind
+				sourceQuests = { 94485, 94486, 94487 },
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
@@ -1362,12 +1399,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(94489, {	-- The Wounds of Betrayal
+				sourceQuests = { 94485, 94486, 94487 },
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 			}),
 			q(92579, {	-- To Valanaar
-				sourceQuest = 92550,	-- Havoc in the Highlands
+				sourceQuests = { 92550, 93927 },
+
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
@@ -1380,7 +1419,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92701, {	-- To Valanaar
-				sourceQuest = 92550,	-- Havoc in the Highlands
+				sourceQuests = { 92550, 93927 },
+
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
@@ -1409,6 +1449,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94050, {	-- Training the Beast
+				sourceQuest = 94013,
 				qg = 252389,	-- Quel'ana Quickgale
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
@@ -1428,6 +1469,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94484, {	-- Unnerving Silence
+				altQuests = { 94493 },
 				qg = 252359,	-- Lotheluum Starbreeze
 				coord = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
