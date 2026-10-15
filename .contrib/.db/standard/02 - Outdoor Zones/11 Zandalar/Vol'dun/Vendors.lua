@@ -173,6 +173,80 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 			}),
+			n(143325, {	-- Jeni <Decor Specialist>
+				["coord"] = { 56.4, 50.4, VOLDUN },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(283337, {	-- Black Vulpera Cushion (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283335, {	-- Blue Vulpera Cushion (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283295, {	-- Long Red Vulpera Cushion (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283315, {	-- Nomad's Bowl Set (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283309, {	-- Nomad's Covered Serving Bowl (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283307, {	-- Nomad's Mortar and Pestle (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283333, {	-- Nomad's Refreshment Set (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283311, {	-- Nomad's Serving Bowl (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283293, {	-- Nomad's Serving Sundries (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 100 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283313, {	-- Nomad's Stone Pitcher (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283331, {	-- Nomad's Stone Urn (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283287, {	-- Nomad's Warped Water Gourd (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283327, {	-- Nomad's Water Gourd (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283329, {	-- Nomad's Wooden Table (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 200 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283325, {	-- Nomad's Worn Water Gourd (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 50 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283343, {	-- Ornate Vulpera Caravan (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 400 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(283269, {	-- Vulpera War Banner (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 300 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+				},
+			}),
 			n(135400, {	-- Jenoh
 				["sourceQuests"] = { 50818 },	-- A Lost Flute
 				["coord"] = { 29.5, 59.4, VOLDUN },

@@ -716,6 +716,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 					}),
 				},
 			}),
+			n(143244, {	-- Victor Esquivias <Bottle Trader>
+				["coord"] = { 74.4, 15.2, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(284384, {	-- Boralus Swill Bottle (DECOR!)
+						["cost"] = { { "c", WAR_RESOURCES, 150 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+				},
+			}),
 			n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary>
 				["coord"] = { 69.3, 24.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,

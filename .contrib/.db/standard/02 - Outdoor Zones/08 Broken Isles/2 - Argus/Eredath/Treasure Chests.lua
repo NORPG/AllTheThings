@@ -101,12 +101,13 @@ root(ROOTS.Zones, {
 							i(153334),	-- Eredath Lightseeker's Spaulders
 							i(153337),	-- Eredath Lightseeker's Treads
 							i(153333),	-- Eredath Lightseeker's Waistplate
+							i(282164, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eredath Worktable (DECOR!)
 							i(153276),	-- Forgotten Conservatory Amice
 							i(153272),	-- Forgotten Conservatory Gloves
 							i(153271),	-- Forgotten Conservatory Helm
 							i(153273),	-- Forgotten Conservatory Leggings
 							i(153288),	-- Forgotten Conservatory Robes
-							i(153270),	-- Forgotten Conservatory Sash* — confirmed on Discord
+							i(153270),	-- Forgotten Conservatory Sash*
 							i(153275),	-- Forgotten Conservatory Slippers
 							i(153277),	-- Forgotten Conservatory Wristwraps
 						},sharedData({	-- Common Objects

@@ -475,6 +475,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155415),	-- Resilient Outcast's Vambraces
 					i(159983),	-- Scorching Sands Handwraps
 					i(155416),	-- Scorching Sands Wristwraps
+					i(283269, { ["timeline"] = { ADDED_12_1_5 } }),	-- Vulpera War Banner (DECOR!)
 					--
 					a(i(158694)),	-- Darkwater Grips
 					a(i(158695)),	-- Dread Corsair Handguards

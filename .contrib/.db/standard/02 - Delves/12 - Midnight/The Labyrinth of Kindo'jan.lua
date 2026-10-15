@@ -84,6 +84,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			}),
 			n(FACTIONS, {
 				faction(2836),	-- Kindo'jan's Labyrinth
+				title(803, {	-- <Name> of the Labyrinth
+					["minReputation"] = { 2836, 9 },	-- Kindo'jan's Labyrinth, Rank 9
+				}),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(3300, {	-- Chamber of Rites
@@ -333,9 +336,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98619,
 						["groups"] = {
-							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
 							i(284357),	-- Ancient Amani Mural (DECOR!)
 							i(264486),	-- Brown Amani Tapestry (DECOR!)
+							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
 						},
 					}),
 					o(676621, {	-- Sturdy Chest
@@ -352,6 +355,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676647, {	-- Sturdy Chest
 						["coord"] = { 30.6, 14.9, LABYRINTH_KINDOJAN },
+					}),
+					o(676636, {	-- Sturdy Chest
+						["coord"] = { 10.5, 55.0, LABYRINTH_KINDOJAN },
+						["groups"] = { i(284182) },	-- Loa-Touched Visage (COSMETIC!)
+					}),
+					o(676664, {	-- Sturdy Chest
+						["coord"] = { 66.6, 51.5, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280821) },	-- Trail of Halazzi (TOY!)
+					}),
+					o(676627, {	-- Sturdy Chest
+						["coord"] = { 26.9, 80.9, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280822) },	-- Nalorakk's Strength Charm (TOY!)
 					}),
 				}),
 				o(689304, {	-- Ancestral Bounty

@@ -51,6 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						filter(LEATHER, {
 							i(277888),	-- Veil of the Feral Rite
+							i(277890),	-- Wildwarden's Guise
 						}),
 						filter(MAIL, {
 							i(277891),	-- Leviathan Bracerbands
@@ -66,6 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					n(WEAPONS, {
 						i(277899),	-- Fangwarden's Shardspine Bow
+						i(277880),	-- Runic Moonbrand
 						i(277876),	-- Sacrosanct Thirstspire
 					}),
 				}),

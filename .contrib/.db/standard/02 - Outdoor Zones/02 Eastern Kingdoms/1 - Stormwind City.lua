@@ -4962,76 +4962,80 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = bubbleDownClassicRep(FACTION_STORMWIND, {
 						{		-- Neutral
 						}, {	-- Friendly
+							i(284223, {	-- "Pride of Stormwind" Statue (DECOR!)
+								["cost"] = { { "g", 2500000 } },	-- 250g
+								["timeline"] = { ADDED_12_1_5 },
+							}),
 							i(248797, {	-- City Wanderer's Candleholder (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 500000 } },	-- 50g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(253168, {	-- Earthen Storage Crate (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248794, {	-- Elwynn Fence (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 500000 } },	-- 50g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248795, {	-- Elwynn Fencepost (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 950000 } },	-- 95g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248938, {	-- Hooded Iron Lantern (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 1900000 } },	-- 190g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248662, {	-- Jewelcrafter's Tent (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 5000000 } },	-- 500g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248798, {	-- Northshire Barrel (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 2550000 } },	-- 255g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248621, {	-- Stormwind Arched Trellis (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 3800000 } },	-- 380g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(256673, {	-- Stormwind Forge (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 10000000 } },	-- 1000g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(45574, {	-- Stormwind Tabard
 								["timeline"] = { ADDED_3_1_0 },
 							}),
 							i(248801, {	-- Stormwind Weapon Rack (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 1000000 } },	-- 100g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248336, {	-- Stormwind Wooden Table (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 3800000 } },	-- 380g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248618, {	-- Westfall Woven Basket (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 2550000 } },	-- 255g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Honored
 							i(248939, {	-- Stormwind Lamppost (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 1300000 } },	-- 130g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248333, {	-- Stormwind Large Wooden Table (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 1300000 } },	-- 130g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Revered
 							i(248617, {	-- Stormwind Keg Stand (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 1900000 } },	-- 190g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(67531, {	-- Stormwind Satchel
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(248620, {	-- Stormwind Trellis and Basin (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 1900000 } },	-- 190g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						}, {	-- Exalted
 							i(64902, {	-- Cape of Stormwind
@@ -5044,12 +5048,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(248619, {	-- Stormwind Gazebo (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 3150000 } },	-- 315g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 							i(248665, {	-- Stormwind Peddler's Cart (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "g", 3150000 } },	-- 315g
+								["timeline"] = { ADDED_11_2_7 },
 							}),
 						},
 					}),

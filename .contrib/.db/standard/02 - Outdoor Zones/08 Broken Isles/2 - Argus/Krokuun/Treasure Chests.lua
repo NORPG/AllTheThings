@@ -49,6 +49,7 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = appendAllGroups({	-- Shared Rewards
 							i(152857),	-- Chipped Man'ari Blade
+							i(282164, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eredath Worktable (DECOR!)
 						},
 						sharedData({	-- Common Objects
 							["isDaily"] = true,
