@@ -24,7 +24,6 @@ root(ROOTS.Unsorted, {
 			i(277880),	-- Runic Moonbrand
 			i(277882),	-- Feral Gloombranch
 			i(277883),	-- Duskmantle Spiteglass
-			i(277885),	-- Veilweaver Trousers
 			i(277888),	-- Veil of the Feral Rite
 			i(277889),	-- Fanged Riftrazor
 			i(277890),	-- Wildwarden's Guise
@@ -274,10 +273,6 @@ root(ROOTS.Unsorted, {
 			i(284032),	-- Frost Revenant's Gloves
 			i(284033),	-- Frost Revenant's Cloak
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
-			i(284051),	-- Hexbearer's Pauldrons
-			i(284052),	-- Amani Effigy
-			i(284054),	-- Hexdrinker's Shoulders
-			i(284057),	-- Effigy of Corrosion
 			i(284106),	-- Nagrand Clover Cluster
 			i(284108),	-- Nagrand Wild Wheat
 			i(284110),	-- Young Sentinel Tree
@@ -293,7 +288,6 @@ root(ROOTS.Unsorted, {
 			i(284130),	-- Nagrand Heart Ivy
 			i(284132),	-- Skysong Sentinel Tree
 			i(284134),	-- Incineratus Grass Patch
-			i(284180),	-- Loa-Touched Deltoid
 			i(284182),	-- Loa-Touched Visage
 			i(284194),	-- Everbloom Forest Floor
 			i(284212),	-- Technique: Apple Bobbing Bucket
@@ -323,7 +317,6 @@ root(ROOTS.Unsorted, {
 			i(284357),	-- Ancient Amani Mural
 			i(284384),	-- Boralus Swill Bottle
 			i(284402),	-- Valdrakken Resupply Coin
-			i(284460),	-- Kyrian Waymarker Plaque
 			i(284462),	-- Arching Crimson Ivy
 			i(284464),	-- Twisted Crimson Root
 			i(284466),	-- Drustvar Glowcap Cluster
@@ -347,27 +340,6 @@ root(ROOTS.Unsorted, {
 			i(284502),	-- Maldraxxi Horned Beast Skull
 			i(284504),	-- Levitating Lich Library
 			i(284506),	-- Suspended Lich Scroll
-			i(284508),	-- Lush Elysian Lotus
-			i(284510),	-- Elysian Heart-Lotus
-			i(284512),	-- Verdant Elysian Crownblossom
-			i(284514),	-- Sparse Elysian Pondweed
-			i(284516),	-- Windswept Elysian Skyplume
-			i(284518),	-- Windswept Elysian Shrub
-			i(284520),	-- Hanging Elysian Skyvy
-			i(284522),	-- Lush Elysian Bellflower Bush
-			i(284524),	-- Elysian Bulbflower
-			i(284526),	-- Lush Elysian Lily
-			i(284528),	-- Windswept Elysian Willow
-			i(284530),	-- Winged Elysian Spiralbloom
-			i(284532),	-- Radiant Elysian Water Lily
-			i(284534),	-- Windswept Elysian Grass
-			i(284536),	-- Elysian Skyfrond
-			i(284538),	-- Anima-Powered Kyrian Oven
-			i(284540),	-- Narrow Kyrian Drapes
-			i(284542),	-- Kyrian Steward Effigy
-			i(284544),	-- Kyrian Waymarker
-			i(284548),	-- Ceremonial Kyrian Standard
-			i(284550),	-- Ornate Kyrian Glass Platform
 			i(284552),	-- Venthyr Alchemy Rack
 			i(284554),	-- Confessor's Anima Jar
 			i(284556),	-- Sinfall Arched Bookcase

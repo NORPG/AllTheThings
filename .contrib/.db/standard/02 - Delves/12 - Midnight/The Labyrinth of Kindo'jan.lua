@@ -294,19 +294,29 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676630, {	-- Sturdy Chest
 						["coord"] = { 27.4, 33.1, LABYRINTH_KINDOJAN },
-						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame
+						["questID"] = 98613,
+						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame (TOY!)
 					}),
 					o(676642, {	-- Sturdy Chest
 						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
+						["groups"] = { i(284180) },	-- Loa-Touched Deltoid (COSMETIC!)
 					}),
 					o(676641, {	-- Sturdy Chest
 						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
 					}),
 				}),
+				o(689304, {	-- Ancestral Bounty
+				}),
 				o(676583, {	-- Ancient Keyper's Bag
 					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
 					["cr"] = 273788,	-- Keeper of the Key
 					["groups"] = { i(282402) },	-- Archaic Amani Key
+				}),
+				o(673143, {	-- Bountiful Heavy Trunk
+				}),
+				o(673144, {	-- Bountiful Heavy Trunk
+				}),
+				o(673138, {	-- Gilded Stash
 				}),
 				o(696116, {	-- Impressive Treasure Chest
 					["description"] = "Spawns after finishing 'Dundun' event.",
@@ -327,10 +337,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			--n(VENDORS, {
 			--}),
 			n(ZONE_REWARDS, {
-				-- From Ancient Chests AND Mislaid Treasures, drop chance random
+				-- From Ancient Chests, Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
+				i(284052),	-- Amani Effigy (COSMETIC!)
 				i(252044),	-- Amani Horn Cup (DECOR!)
 				i(264484),	-- Blue Amani Tapestry (DECOR!)
+				i(284057),	-- Effigy of Corrosion (COSMETIC!)
 				i(263321),	-- Frayed Amani Offering Basket (DECOR!)
+				i(284051),	-- Hexbearer's Pauldrons (COSMETIC!)
+				i(284054),	-- Hexdrinker's Shoulders (COSMETIC!)
 				i(264256),	-- Wall-Mounted Amani Animal Trophy (DECOR!)
 			}),
 		},

@@ -23,6 +23,10 @@ AQIR_INVASIONS = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(AQIR_INVASIONS, {
 		["timeline"] = { ADDED_12_1_5 },
+		["maps"] = {
+			MAP.MIDNIGHT.EVERSONG_WOODS,
+			MAP.MIDNIGHT.ZULAMAN,
+		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(63659, {	-- Bane of the Swarm
@@ -35,7 +39,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 			}),
 			n(EVENT_COMPLETION, {
-				i(277283),	-- Aqir Research Satchel
+				i(277283, {	-- Aqir Research Satchel
+					n(ARMOR, {
+						n(BACK, {
+						}),
+						filter(CLOTH, {
+							i(277885),	-- Veilweaver Trousers
+						}),
+						filter(FINGER_F, {
+						}),
+						filter(LEATHER, {
+						}),
+						filter(MAIL, {
+						}),
+						filter(NECK_F, {
+						}),
+						filter(PLATE, {
+						}),
+						filter(TRINKET_F, {
+						}),
+					}),
+					n(WEAPONS, {
+					}),
+				}),
 				i(286563),	-- Aqir Research Token
 			}),
 			header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
