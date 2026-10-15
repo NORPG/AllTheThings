@@ -7389,7 +7389,6 @@ i(139594,{b=1,f=55,spellID=220972}),
 i(114120,{awp=60002,b=1,f=55,lvl=40,rwp=70003,spellID=168180,u=2,g={
 s(17270,36533,{f=26,lvl=27,u=2}),
 s(17340,36603,{f=29,lvl=27,u=2}),
-i(67051,{f=51,lvl=31,u=2}),
 s(10282,25285,{f=27,lvl=25,u=2}),
 s(17312,36575,{f=21,lvl=27,u=2}),
 s(27234,55631,{f=6,loc=45,lvl=32,u=2}),
@@ -21925,9 +21924,9 @@ s(102075,165610,{b=1,f=20,lvl=50,modID=6,r=1}),
 s(102078,165613,{b=1,f=29,lvl=50,modID=6,r=1}),
 s(103114,166802,{b=1,f=25,lvl=50,modID=6,r=1})}),
 h(-89,{
-s(103107,166762,{b=1,description="This might be only available as Cloth class.",f=3,lvl=50,modID=6,r=1}),
+s(103107,166762,{b=1,f=3,lvl=50,modID=6,r=1}),
 s(103108,166763,{b=1,description="This might be only available as Leather class.",f=3,lvl=50,modID=6,r=1}),
-s(103102,166764,{b=1,description="This might be only available as Mail class.",f=3,lvl=50,modID=6,r=1}),
+s(103102,166764,{b=1,f=3,lvl=50,modID=6,r=1}),
 s(103104,166765,{b=1,description="This might be only available as Plate class.",f=3,lvl=50,modID=6,r=1})}),
 flt(4,{
 s(102948,165467,{b=1,f=4,loc=40,lvl=50,modID=6,r=1}),
@@ -23449,8 +23448,7 @@ q(57774,{coords={
 q(58232,{coords={
 [1527]={{54.8,32.9}}},isDaily=1,lvl=50,qgs={155096},sourceQuests={56472}}),
 q(58234,{coords={
-[1527]={{54.6,32.8}}},isDaily=1,lvl=50,qgs={155099},sourceQuests={56472},g={
-i(173956)}}),
+[1527]={{54.6,32.8}}},isDaily=1,lvl=50,qgs={155099},qis={173956},sourceQuests={56472}}),
 q(57737,{coords={
 [1527]={{54.9,32.7}}},isDaily=1,lvl=50,qgs={155095},sourceQuests={56472}}),
 q(58236,{coords={
@@ -23458,8 +23456,7 @@ q(58236,{coords={
 q(58233,{coords={
 [1527]={{54.6,32.8}}},isDaily=1,lvl=50,qgs={155099},sourceQuests={56472}}),
 q(58231,{coords={
-[1527]={{54.6,32.8}}},isDaily=1,lvl=50,qgs={155099},sourceQuests={56472},g={
-i(173954)}})}),
+[1527]={{54.6,32.8}}},isDaily=1,lvl=50,qgs={155099},qis={173954},sourceQuests={56472}})}),
 h(-46,{
 n(158557,{coords={
 [1527]={{66.8,74.3}}},isDaily=1,questID=57669}),
@@ -23552,24 +23549,20 @@ h(-63,{
 i(170553,{b=1,description="The fastest way is to farm them inside Lesser Vision."})}),
 i(173372,{b=1,f=55}),
 crit(47203,{achID=14153,id=3})}}),
-q(55350,{isWeekly=1,isWorldQuest=1,poiIDs={6487},g={
-i(168257),
-i(168043),
+q(55350,{isWeekly=1,isWorldQuest=1,poiIDs={6487},qis={168043,168257},g={
 h(-45,{
 q(58636,{coords={
 [1527]={{54.9,32.9}}},lvl=50,qgs={155102},sourceQuests={56472}}),
 q(58638,{coords={
 [1527]={{54.9,32.9}}},lvl=50,qgs={155102},sourceQuests={58636}}),
 q(58639,{coords={
-[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58638},g={
-i(174450)}}),
+[1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},qis={174450},sourceQuests={58638}}),
 q(58646,{coords={
 [1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58638}}),
 q(58640,{coords={
 [1527]={{68.9,57.9}}},lvl=50,qgs={155102,161938},sourceQuests={58639,58646}}),
 q(58641,{coords={
-[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58640},g={
-i(174451)}}),
+[1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},qis={174451},sourceQuests={58640}}),
 q(58642,{coords={
 [1527]={{72.9,48.4}}},lvl=50,qgs={155102,161938},sourceQuests={58641}}),
 q(58643,{coords={
@@ -23580,9 +23573,8 @@ q(58287,{coords={
 [1527]={{54.8,32.9}}},isDaily=1,lvl=50,qgs={155096},sourceQuests={56472},g={
 cu(1755)}}),
 q(58281,{coords={
-[1527]={{54.8,32.9}}},isDaily=1,lvl=50,qgs={155096},g={
-cu(1755),
-i(173985)}}),
+[1527]={{54.8,32.9}}},isDaily=1,lvl=50,qgs={155096},qis={173985},g={
+cu(1755)}}),
 q(58283,{coords={
 [1527]={{54.6,32.8}}},isDaily=1,lvl=50,qgs={155099},sourceQuests={56472}}),
 q(58290,{coords={
@@ -23591,8 +23583,7 @@ cu(1755)}}),
 q(58282,{coords={
 [1527]={{54.8,32.9}}},isDaily=1,lvl=50,qgs={155096},sourceQuests={56472}}),
 q(58291,{coords={
-[1527]={{54.6,34}}},isDaily=1,lvl=50,qgs={160957},sourceQuests={56472},g={
-i(174008)}}),
+[1527]={{54.6,34}}},isDaily=1,lvl=50,qgs={160957},qis={174008},sourceQuests={56472}}),
 q(58286,{coords={
 [1527]={{54.9,32.7}}},isDaily=1,lvl=50,qgs={155095},sourceQuests={56472},g={
 cu(1755)}}),
@@ -23603,16 +23594,13 @@ q(58288,{coords={
 [1527]={{54.8,32.9}}},isDaily=1,lvl=50,qgs={155096},g={
 cu(1755)}}),
 q(58321,{coords={
-[1527]={{54.9,32.7}}},isDaily=1,lvl=50,qgs={155095},sourceQuests={56472},g={
-cu(1755),
-i(174009)}}),
+[1527]={{54.9,32.7}}},isDaily=1,lvl=50,qgs={155095},qis={174009},sourceQuests={56472},g={
+cu(1755)}}),
 q(58285,{coords={
-[1527]={{54.9,32.9}}},isDaily=1,lvl=50,qgs={155102},sourceQuests={56472},g={
-i(168043)}}),
+[1527]={{54.9,32.9}}},isDaily=1,lvl=50,qgs={155102},qis={168043},sourceQuests={56472}}),
 q(58284,{coords={
-[1527]={{54.9,32.9}}},isDaily=1,lvl=50,qgs={155102},g={
-cu(1755),
-i(173986)}})}),
+[1527]={{54.9,32.9}}},isDaily=1,lvl=50,qgs={155102},qis={173986},g={
+cu(1755)}})}),
 h(-46,{
 n(157170,{coords={
 [1527]={{64.5,25.6}}},isDaily=1,questID=57281}),
@@ -23696,8 +23684,7 @@ i(174765,{b=1,cost={{"i",174764,6}},spellID=316392}),
 i(174764,{b=1,spellID=316372})}),
 i(174961,{b=1,f=55}),
 crit(47201,{achID=14153,id=1})}}),
-q(56308,{isWeekly=1,isWorldQuest=1,poiIDs={6488},g={
-i(169432),
+q(56308,{isWeekly=1,isWorldQuest=1,poiIDs={6488},qis={169432},g={
 h(-45,{
 q(57873,{coords={
 [1527]={{40.1,21.3}}},lvl=50,qgs={159544}}),
@@ -23706,43 +23693,35 @@ q(57915,{coords={
 q(57955,{coords={
 [1527]={{39.9,45.2}}},lvl=50,qgs={159560},sourceQuests={57915}}),
 q(57954,{coords={
-[1527]={{24.5,55.2}}},lvl=50,qgs={159682},sourceQuests={57955},g={
-i(174323,{spellID=302242})}}),
+[1527]={{24.5,55.2}}},lvl=50,qgs={159682},qis={174323},sourceQuests={57955}}),
 q(57956,{coords={
-[1527]={{24.5,55.2}}},lvl=50,qgs={159682},sourceQuests={57955},g={
-i(174325,{b=1,f=55,spellID=314806})}}),
+[1527]={{24.5,55.2}}},lvl=50,qgs={159682},qis={174325},sourceQuests={57955}}),
 q(57971,{coords={
 [1527]={{24.4,55.2}}},lvl=50,qgs={159682},sourceQuests={57954,57956}}),
 q(58606,{coords={
-[1527]={{27.9,63.3}}},lvl=50,qgs={164196},sourceQuests={57971},g={
-i(174356)}}),
+[1527]={{27.9,63.3}}},lvl=50,qgs={164196},qis={174356},sourceQuests={57971}}),
 q(57970,{coords={
 [1527]={{28,63.5}}},lvl=50,qgs={159820},sourceQuests={57971}}),
 q(57969,{coords={
-[1527]={{28,63.5}}},lvl=50,qgs={159820},sourceQuests={57971},g={
-i(174326,{b=4,spellID=303713})}}),
+[1527]={{28,63.5}}},lvl=50,qgs={159820},qis={174326},sourceQuests={57971}}),
 q(57990,{coords={
 [1527]={{28,63.5}}},lvl=50,qgs={159820},sourceQuests={57969,57970,58606}}),
 q(58008,{coords={
-[1527]={{42.4,55.9}}},lvl=50,qgs={159920},sourceQuests={57990},g={
-i(173366)}}),
+[1527]={{42.4,55.9}}},lvl=50,qgs={159920},qis={173366},sourceQuests={57990}}),
 q(56576,{coords={
 [1527]={{42.4,55.9}}},lvl=50,qgs={159920},sourceQuests={57990}}),
 q(58009,{coords={
 [1527]={{42.4,55.9}}},lvl=50,qgs={159920},sourceQuests={56576,58008}}),
 q(56550,{coords={
-[1527]={{24.5,55.2}}},isDaily=1,lvl=50,qgs={159682},g={
-i(174323,{spellID=302242})}}),
+[1527]={{24.5,55.2}}},isDaily=1,lvl=50,qgs={159682},qis={174323}}),
 q(58778,{coords={
-[1527]={{40,21.2}}},isDaily=1,lvl=50,qgs={159920},g={
-i(174776)}}),
+[1527]={{40,21.2}}},isDaily=1,lvl=50,qgs={159920},qis={174776}}),
 q(58776,{coords={
 [1527]={{40,21.3}}},isDaily=1,lvl=50,qgs={154443}}),
 q(58780,{coords={
 [1527]={{40,21.3}}},isDaily=1,lvl=50,qgs={154443}}),
 q(58010,{coords={
-[1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},sourceQuests={58606},g={
-i(174356)}}),
+[1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},qis={174356},sourceQuests={58606}}),
 q(58777,{coords={
 [1527]={{40,21.3}}},isDaily=1,lvl=50,qgs={159920}}),
 q(58779,{coords={
@@ -23752,14 +23731,11 @@ q(58781,{coords={
 q(57968,{coords={
 [1527]={{24.5,55.3}}},isDaily=1,lvl=50,qgs={159682}}),
 q(58782,{coords={
-[1527]={{40.1,21.3}}},isDaily=1,lvl=50,qgs={159544},g={
-i(174774)}}),
+[1527]={{40.1,21.3}}},isDaily=1,lvl=50,qgs={159544},qis={174774}}),
 q(56402,{coords={
-[1527]={{39.9,45.2}}},isDaily=1,lvl=50,qgs={159560},sourceQuests={57915},g={
-i(169432)}}),
+[1527]={{39.9,45.2}}},isDaily=1,lvl=50,qgs={159560},qis={169432},sourceQuests={57915}}),
 q(56889,{coords={
-[1527]={{28,63.5}}},isDaily=1,lvl=50,qgs={159820},g={
-i(174326,{b=4,spellID=303713})}})}),
+[1527]={{28,63.5}}},isDaily=1,lvl=50,qgs={159820},qis={174326}})}),
 h(-46,{
 h(-19,{crs={154576,154578,154604,155531,155703,156078,162140,162141,162142,162147,162163,162170,162171,162172,162173,162196},g={
 s(108404,174224,{f=26,lvl=50}),
@@ -23857,40 +23833,37 @@ q(58803,{coords={
 [1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58802}}),
 q(58804,{coords={
 [1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58803},g={
-i(174993)}}),
+o(343615,{type="AsGenericObjectContainer",g={
+o(343615,{type="AsSubGenericObject"}),
+o(343589,{type="AsSubGenericObject"}),
+i(174993)}})}}),
 q(58809,{altQuests={58806,58807,58808},coords={
-[1527]={{55.6,35.3}}},description="Can appear during Mogu invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58804},g={
-i(175003)}}),
+[1527]={{55.6,35.3}}},description="Can appear during Mogu invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},qis={175003},sourceQuests={58804}}),
 q(58808,{altQuests={58806,58807,58809},coords={
-[1527]={{55.6,35.3}}},description="Can appear during Mantid invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58804},g={
-i(175002)}}),
+[1527]={{55.6,35.3}}},description="Can appear during Mantid invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},qis={175002},sourceQuests={58804}}),
 q(58806,{altQuests={58807,58808,58809},coords={
-[1527]={{55.6,35.3}}},description="Can appear during Amathet invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58804},g={
-i(174996)}}),
+[1527]={{55.6,35.3}}},description="Can appear during Amathet invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},qis={174996},sourceQuests={58804}}),
 q(58807,{altQuests={58806,58808,58809},coords={
-[1527]={{55.6,35.3}}},description="Can appear during Aqir invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58804},g={
-i(175001)}}),
+[1527]={{55.6,35.3}}},description="Can appear during Aqir invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},qis={175001},sourceQuests={58804}}),
 q(58805,{coords={
 [1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},sourceQuests={58804},g={
-i(174993)}}),
+o(343615,{type="AsGenericObjectContainer",g={
+o(343615,{type="AsSubGenericObject"}),
+o(343589,{type="AsSubGenericObject"}),
+i(174993)}})}}),
 q(58810,{coords={
-[1527]={{55.6,35.3}}},description="Must reach 5000/5000 with the egg's progress bar.",lvl=50,qgs={161738},sourceQuests={58805},g={
+[1527]={{55.6,35.3}}},description="Must reach 5000/5000 with the egg's progress bar.",lvl=50,qgs={161738},qis={175063},sourceQuests={58805},g={
 toy(175063,{b=1})}}),
 q(58811,{coords={
-[1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58810},g={
-i(175014,{spellID=318170})}}),
+[1527]={{55.6,35.3}}},lvl=50,qgs={161738},qis={175014},sourceQuests={58810}}),
 q(58812,{coords={
-[1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58811},g={
-i(175015,{spellID=318173})}}),
+[1527]={{55.6,35.3}}},lvl=50,qgs={161738},qis={175015},sourceQuests={58811}}),
 q(58813,{coords={
-[1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58812},g={
-i(175016,{spellID=318180})}}),
+[1527]={{55.6,35.3}}},lvl=50,qgs={161738},qis={175016},sourceQuests={58812}}),
 q(58826,{altQuests={58817,58818,58825},coords={
-[1527]={{55.6,35.3}}},description="Can appear during Mogu invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58813},g={
-i(175023,{spellID=318180})}}),
+[1527]={{55.6,35.3}}},description="Can appear during Mogu invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},qis={175023},sourceQuests={58813}}),
 q(58817,{altQuests={58818,58825,58826},coords={
-[1527]={{55.6,35.3}}},description="Can appear during Amathet invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58813},g={
-i(175020,{spellID=318180})}}),
+[1527]={{55.6,35.3}}},description="Can appear during Amathet invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},qis={175020},sourceQuests={58813}}),
 q(58818,{altQuests={58817,58825,58826},coords={
 [1527]={{55.6,35.3}}},description="Can appear during Aqir invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58813}}),
 q(58825,{altQuests={58817,58818,58826},coords={
@@ -23898,14 +23871,12 @@ q(58825,{altQuests={58817,58818,58826},coords={
 o(343668,{
 i(175022)})}}),
 q(58858,{coords={
-[1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},sourceQuests={58813},g={
-i(175016,{spellID=318180})}}),
+[1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},qis={175016},sourceQuests={58813}}),
 q(58829,{coords={
 [1527]={{55.6,35.3}}},description="Must reach 5000/5000 with the larva's progress bar.",lvl=50,qgs={161738},sourceQuests={58813},g={
 p(2872,{b=1,itemID=175049,npcID=163646,spellID=318300})}}),
 q(58830,{coords={
-[1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58829},g={
-i(175055,{spellID=318333})}}),
+[1527]={{55.6,35.3}}},lvl=50,qgs={161738},qis={175055},sourceQuests={58829}}),
 q(58860,{altQuests={58859,58861,58862},coords={
 [1527]={{55.6,35.3}}},description="Can appear during Aqir invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58830}}),
 q(58862,{altQuests={58859,58860,58861},coords={
@@ -23915,17 +23886,14 @@ q(58861,{altQuests={58859,58860,58862},coords={
 q(58859,{altQuests={58860,58861,58862},coords={
 [1527]={{55.6,35.3}}},description="Can appear during Amathet invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58830}}),
 q(58831,{coords={
-[1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},sourceQuests={58830},g={
-i(175055,{spellID=318333})}}),
+[1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},qis={175055},sourceQuests={58830}}),
 q(58863,{coords={
 [1527]={{55.6,35.3}}},description="Must reach 5000/5000 with the hatchling's progress bar.",lvl=50,qgs={161738},sourceQuests={58830}}),
 q(58865,{coords={
-[1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58863},g={
-i(175058,{spellID=318180})}}),
+[1527]={{55.6,35.3}}},lvl=50,qgs={161738},qis={175058},sourceQuests={58863}}),
 q(58866,{coords={
-[1527]={{55.6,35.3}}},lvl=50,qgs={161738},sourceQuests={58865},g={
-mnt(316339,{b=1,itemID=174771}),
-i(175059,{spellID=318180})}}),
+[1527]={{55.6,35.3}}},lvl=50,qgs={161738},qis={175059},sourceQuests={58865},g={
+mnt(316339,{b=1,itemID=174771})}}),
 q(56377,{coords={
 [1527]={{54.9,33.1}}},description="Granted upon entering the Seat of Ramkahen.",lvl=50,sourceQuests={56376}}),
 q(57222,{coords={
@@ -41278,7 +41246,7 @@ s(306760,271465,{bonusID=6894,c={2},f=7,loc=40})}),
 cl(7,{
 s(306888,271481,{bonusID=6894,c={7},f=6,loc=41}),
 s(306904,271483,{bonusID=6894,c={7},f=6,loc=40})})})}})}})}),
-h(-790,{awp=120105,g={
+h(-790,{awp=120105,maps={2395,2437},g={
 h(-12,{
 ach(63659,{
 title(793)}),
@@ -41287,15 +41255,33 @@ crit(116853,{achID=63659,id=3})}}),
 ach(63658,{
 crit(116681,{achID=63659,id=2})}),
 ach(63519,{
-title(780),
-crit(116097,{achID=63519,id=2,questID=95813})})}),
+title(780)})}),
 h(-29,{
-i(277283,{f=55}),
+i(277283,{f=55,g={
+h(-88,{
+flt(4,{
+s(310167,277885,{f=4,loc=46}),
+s(310174,277895,{f=4,loc=42})}),
+flt(52),
+flt(5,{
+s(310168,277888,{f=5,loc=40}),
+s(310170,277890,{f=5,loc=41})}),
+flt(6,{
+s(310171,277891,{f=6,loc=43})}),
+flt(51),
+flt(7,{
+s(310176,277898,{f=7,loc=46}),
+s(316088,284219,{f=7,loc=42})}),
+flt(53)}),
+h(-101,{
+s(310177,277899,{f=32}),
+s(310163,277880,{f=21}),
+s(310161,277876,{f=29})})}}),
 i(286563,{f=55})}),
 ah(2838,{icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
 faction(2838),
 h(-12,{
-ach(63657,{minReputation={2838,20},g={
+ach(63657,{minReputation={2838,5},g={
 crit(116680,{achID=63659,id=1})}})}),
 h(-58,{
 n(266188,{coords={
@@ -41326,7 +41312,7 @@ q(95533,{coords={
 [2393]={{45.4,70.3}}},qgs={235787},g={
 de(27216,{itemID=280050,spellID=1307620})}}),
 q(95187,{coords={
-[2393]={{45.4,70.3}}},qgs={235787},sourceQuests={95533}}),
+[2393]={{45.4,70.3}}},maps={2605},qgs={235787},sourceQuests={95533}}),
 q(95190,{coords={
 [2395]={{60.3,81.4}}},qgs={260155},sourceQuests={95187}}),
 q(95192,{coords={
@@ -41368,7 +41354,19 @@ q(95211,{coords={
 i(277897,{f=52}),
 toy(281136),
 i(277886,{f=51}),
-crit(116096,{achID=63519,id=1})}})}})}})})}}),
+crit(116096,{achID=63519,id=1})}})}}),
+ah(63519.02,{type="crit",g={
+q(95811,{coords={
+[2613]={{63.8,32.2}}},maps={2669,2670},qgs={264992},sourceQuests={95211},g={
+s(309078,274937)}}),
+q(95808,{coords={
+[2393]={{30.6,70.3}}},qgs={262755},sourceQuests={95811}}),
+q(95812,{coords={
+[2393]={{32,69.2}}},qgs={262758},sourceQuests={95808}}),
+q(95813,{coords={
+[2393]={{27.6,10.9}}},qgs={262877},sourceQuests={95812},g={
+s(309077,274934),
+crit(116097,{achID=63519,id=2})}})}})}})})}}),
 h(-758,{awp=120005,g={
 h(-742,{
 faction(2792),

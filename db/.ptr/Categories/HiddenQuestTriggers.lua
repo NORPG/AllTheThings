@@ -4,6 +4,7 @@ _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,cl,cu,faction,gb,h,hqt,i,inst,m,n,o,prof,x=_.CreateHeader,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFaction,_.CreateGarrisonBuilding,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{awp=10100,g={
+hqt(934,{r=2,rwp=10700,u=2}),
 m(13,{awp=11101,g={
 m(210,{petBattleLvl=9,lvl=10,g={
 hqt(7908,{awp=11201}),
@@ -2393,7 +2394,7 @@ hqt(42741),
 hqt(46733,{awp=70200}),
 hqt(40658,{repeatable=1}),
 hqt(40768),
-hqt(40616),
+hqt(40616,{repeatable=1}),
 hqt(40521),
 hqt(8237),
 hqt(43806),
@@ -6240,8 +6241,8 @@ hqt(83014,{an="i:71628"}),
 hqt(83004,{an="i:72161"}),
 hqt(83012,{an="i:69215"})}),
 h(-553,{awp=100107,g={
-hqt(75712),
-hqt(75713),
+hqt(75712,{qss={202395}}),
+hqt(75713,{qss={202395}}),
 hqt(73102),
 hqt(73380),
 hqt(73369),
@@ -7035,7 +7036,8 @@ hqt(93243,{e=447,u=2}),
 hqt(93195,{e=447,isDaily=1,u=2}),
 hqt(94420,{e=447,isDaily=1,u=2}),
 hqt(94421,{e=447,u=2}),
-hqt(94422,{e=447,u=2})}}),
+hqt(94422,{e=447,u=2}),
+hqt(94780,{e=447,u=2})}}),
 h(-106,{awp=110105,g={
 hqt(86695,{an="i:235054",isDaily=1}),
 hqt(90134),
@@ -7343,12 +7345,11 @@ hqt(95716,{an="m:2633",awp=120100,isDaily=1}),
 hqt(97064,{an="o:658087",awp=120100,isDaily=1,isWeekly=1}),
 hqt(97628,{awp=120100,isDaily=1}),
 hqt(97637,{awp=120100,isDaily=1}),
+hqt(98044,{an="i:268969",awp=120100,isDaily=1,isWeekly=1}),
 hqt(98501,{an="o:584514",awp=120100,isDaily=1,isWeekly=1})}),
 hqt(93935,{isWeekly=1}),
 hqt(93936,{isWeekly=1}),
-hqt(93937,{isWeekly=1}),
-m(2647,{awp=120105,g={
-hqt(98044)}})}),
+hqt(93937,{isWeekly=1})}),
 m(2537,{lvl=80,g={
 m(2405,{maps={2444,2526,2527},lvl=88,g={
 h(-45,{
@@ -7372,7 +7373,7 @@ hqt(95244)})}),
 h(-56,{
 hqt(94005),
 hqt(93569)})}}),
-m(2393,{maps={2443,2605},g={
+m(2393,{
 h(-45,{
 hqt(93067),
 hqt(93275,{an="i:232875",isWeekly=1,rwp=120100,u=2}),
@@ -7382,7 +7383,7 @@ hqt(94419,{rwp=120100,u=2}),
 hqt(94410),
 hqt(93742,{an="cu:3378"}),
 hqt(96662,{awp=120100}),
-hqt(98541,{awp=120100})})}}),
+hqt(98541,{awp=120100})})}),
 m(2395,{lvl=80,g={
 h(-45,{
 hqt(93818),

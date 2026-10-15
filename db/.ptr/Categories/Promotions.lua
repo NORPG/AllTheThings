@@ -145,11 +145,10 @@ p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to
 de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2}),
 toy(272339,{awp=120007,description="Break the Meta: Midnight Season 1\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on July 14th at 8:00 AM PDT and lasts for 1 week.\nFor more details & requirements check out: raider.io/events/break-the-meta-midnight-season-1/event-info-rules",rwp=120007,u=2}),
 de(16813,{awp=120007,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between June 16th, 10:00 a.m. & July 14th, 10:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265389,rwp=120007,spellID=1275765,u=2}),
-mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscription since Patch 12.0.7.",itemID=273655,u=3}),
 en(257974,{awp=120100,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=93324,rwp=120100,spellID=1262585,tmogSetID=5340,u=2,g={
 s(301329,257782,{f=3}),
 s(301311,257762,{f=2,loc=40})}}),
-s(297815,250293,{awp=120100,description="McDonald's Australia promotion. Available until 22nd January 2027.\n\nItem is redeemable for 2000 points in the McDonald's Australia app.",f=3,rwp=120107,u=3}),
+s(297815,250293,{awp=120100,description="McDonald's Australia promotion. Available until 22nd January 2027.\n\nItem is redeemable for 2000 points in the McDonald's Australia app.",f=3,rwp=120107,u=2}),
 p(4893,{awp=120100,description="Available with the purchase of an Emrrrgl Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=251038,npcID=250776,spellID=1251934,u=3}),
 s(302524,262840,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=45,rwp=120100,u=2}),
 s(302506,262822,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=46,rwp=120100,u=2}),
@@ -635,9 +634,9 @@ s(310901,279177,{f=2,loc=43}),
 s(310902,279178,{f=2,loc=44}),
 s(310903,279179,{f=3})}}),
 mnt(1309376,{itemID=280599,u=3})}}),
-h(-795,{rwp=120107,u=3,g={
-de(27076,{itemID=280554,spellID=1309251,u=3}),
-de(27077,{itemID=280556,spellID=1309253,u=3})}})}})}}),
+h(-795,{rwp=120107,u=2,g={
+de(27076,{itemID=280554,spellID=1309251,u=2}),
+de(27077,{itemID=280556,spellID=1309253,u=2})}})}})}}),
 h(-538,{
 h(-539,{awp=70100,maps={47},u=2,g={
 h(-63,{u=2,g={
@@ -1607,7 +1606,7 @@ toy(202862,{b=1}),
 toy(202865,{b=1})}})}}),
 q(72809,{cost={{"i",202162,1}},repeatable=1,g={
 i(202163,{spellID=398642})}}),
-q(75223,{repeatable=1,g={
+q(75223,{qss={202395},repeatable=1,g={
 i(202395,{spellID=405852})}}),
 q(73171,{cost={{"i",202395,1}},providers={{"o",384744}},g={
 crit(57983,{achID=17360,id=1})}}),
@@ -1685,7 +1684,7 @@ o(405584,{coords={
 o(387722,{coords={
 [2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 h(-780,{
-ach(40910,{awp=110000,description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2}),
+ach(40910,{awp=110000,description="Rewarded for aiding in the stress testing of the realms in China.",rwp=110005,u=2}),
 mnt(366962,{awp=110000,itemID=190231,lvl=10,u=2}),
 p(4286,{awp=110000,b=1,itemID=210409,npcID=211942,spellID=425472,u=2}),
 mnt(464443,{awp=110000,b=1,description="Rewarded for returning to World of Warcraft in 2024. China Only.",itemID=229128,lvl=10,u=2}),
@@ -1937,11 +1936,11 @@ mm(205876,{b=1,providers={{"i",206955}},questID=75967,u=3}),
 mm(201790,{b=1,questID=72367,u=3}),
 mm(210536,{b=1,questID=78451,u=3}),
 mnt(1299156,{itemID=276245,u=3})}}),
-h(-781,{awp=120100,rwp=120107,g={
-mnt(1271549,{itemID=264273,lvl=10}),
-mnt(127158,{b=1,itemID=87771,lvl=10}),
-mnt(1244247,{b=1,description="Rewarded from completing the quiz.",itemID=246917}),
-en(272335,{questID=96144,spellID=1290952,tmogSetID=5705,g={
+h(-781,{awp=120100,rwp=120107,u=2,g={
+mnt(1271549,{itemID=264273,lvl=10,u=2}),
+mnt(127158,{b=1,itemID=87771,lvl=10,u=2}),
+mnt(1244247,{b=1,description="Rewarded from completing the quiz.",itemID=246917,u=2}),
+en(272335,{questID=96144,spellID=1290952,tmogSetID=5705,u=2,g={
 s(307929,272326,{f=2,loc=40}),
 s(307934,272331,{f=2,loc=41}),
 s(307931,272328,{f=2,loc=42}),
@@ -1951,5 +1950,5 @@ s(307930,272327,{f=2,loc=47}),
 s(307932,272329,{f=2,loc=44}),
 s(307935,272332,{f=3}),
 s(316222,284862,{f=2,loc=41})}}),
-toy(274967)}})}))}})
+toy(274967,{u=2})}})}))}})
 end)
