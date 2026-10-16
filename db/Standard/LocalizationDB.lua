@@ -60690,6 +60690,7 @@ localize(ObjectNames, {
 	[656397] = "Barril na Conta",
 	[656402] = "Barril na Conta",
 	[656403] = "Barril na Conta",
+	[656486] = "Barril na Conta",
 	[656489] = "Depósito de Azta'rec",
 	[658087] = "Baú Pesado de Abundância Redobrada",
 	[658088] = "Baú Pesado de Abundância Redobrada",

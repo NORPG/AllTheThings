@@ -18,15 +18,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(801),	-- <Name>, Fabled Vanquisher of Kindo'jan
 				})),
 				ach(63720, {	-- Happy Hexmask Collector
+					["description"] = "Each run randomly selects three out of five special rooms as spawn points for Hexmasks and one for the special 'Locked Room'. The final room will be empty.",
 					["providers"] = {
 						{ "o", 672624 },	-- Fiery Hexmask
 						{ "o", 672785 },	-- Frozen Hexmask
 						{ "o", 672788 },	-- Thundering Hexmask
 					},
-					["coords"] = {	-- Coordinates are always the same, Hexmasks rotate
-						{ 18.4, 20.5, LABYRINTH_KINDOJAN },
-						{ 50.3, 85.3, LABYRINTH_KINDOJAN },
-						{ 88.4, 53.9, LABYRINTH_KINDOJAN },
+					["coords"] = {
+						{ 56.8, 17.8, LABYRINTH_KINDOJAN },	-- Akil'zon's Roost
+						{ 50.3, 82.6, LABYRINTH_KINDOJAN },	-- Chamber of Rites
+						{ 18.8, 18.2, LABYRINTH_KINDOJAN },	-- Jan'alai's Refuge
+						{ 58.5, 21.7, LABYRINTH_KINDOJAN },	-- Nalorakk's Rest
+						{ 88.5, 51.5, LABYRINTH_KINDOJAN },	-- The Cave Towers
 					},
 				}),
 				ach(63717, {	-- Kindo'jan's Labyrinth Discoveries
@@ -37,16 +40,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
 				}),
 				ach(63718, {	-- Lock and Key
-					["coords"] = {	-- Potential Coordinates of Locked Doors
-						{ 50.4, 78.5, LABYRINTH_KINDOJAN },
-						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
+					["description"] = "Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty.",
+					["coords"] = {
+						{ 56.8, 17.8, LABYRINTH_KINDOJAN },	-- Akil'zon's Roost
+						{ 50.3, 82.6, LABYRINTH_KINDOJAN },	-- Chamber of Rites
+						{ 18.8, 18.2, LABYRINTH_KINDOJAN },	-- Jan'alai's Refuge
+						{ 58.5, 21.7, LABYRINTH_KINDOJAN },	-- Nalorakk's Rest
+						{ 88.5, 51.5, LABYRINTH_KINDOJAN },	-- The Cave Towers
 					},
 					["cost"] = { { "i", 282402, 1 } },	-- 1x Archaic Amani Key
 				}),
 				ach(63719, {	-- Lock and Key Master
-					["coords"] = {	-- Potential Coordinates of Locked Doors
-						{ 50.4, 78.5, LABYRINTH_KINDOJAN },
-						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
+					["description"] = "Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty.",
+					["coords"] = {
+						{ 56.8, 17.8, LABYRINTH_KINDOJAN },	-- Akil'zon's Roost
+						{ 50.3, 82.6, LABYRINTH_KINDOJAN },	-- Chamber of Rites
+						{ 18.8, 18.2, LABYRINTH_KINDOJAN },	-- Jan'alai's Refuge
+						{ 58.5, 21.7, LABYRINTH_KINDOJAN },	-- Nalorakk's Rest
+						{ 88.5, 51.5, LABYRINTH_KINDOJAN },	-- The Cave Towers
 					},
 					["cost"] = { { "i", 282402, 20 } },	-- 20x Archaic Amani Key
 					["groups"] = { title(798) },	-- Lockpickin' <Name>
@@ -233,89 +244,99 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			}),
 			n(TREASURES, {
 				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries
-					o(659517, {	-- Ancient Chest
+					o(659517, {	-- Sturdy Chest
 						["coord"] = { 46.9, 67.0, LABYRINTH_KINDOJAN },
 						["questID"] = 97131,
 					}),
-					o(676585, {	-- Ancient Chest
+					o(676585, {	-- Sturdy Chest
 						["coord"] = { 36.9, 72.5, LABYRINTH_KINDOJAN },
 						["questID"] = 98602,
 					}),
-					o(676624, {	-- Ancient Chest
+					o(676586, {	-- Sturdy Chest
+						["coord"] = { 21.4, 36.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98603,
+					}),
+					o(676624, {	-- Sturdy Chest
 						["coord"] = { 21.7, 71.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98607,
-						["groups"] = {
-							i(263517),	-- Ancient Text (JUNK!)
-						},
 					}),
-					o(676625, {	-- Ancient Chest
+					o(676625, {	-- Sturdy Chest
 						["coord"] = { 29.9, 77.4, LABYRINTH_KINDOJAN },
 						["questID"] = 98608,
 					}),
-					o(676628, {	-- Ancient Chest
+					o(676628, {	-- Sturdy Chest
 						["coord"] = { 13.9, 37.8, LABYRINTH_KINDOJAN },
 						["questID"] = 98611,
 					}),
-					o(676629, {	-- Ancient Chest
+					o(676629, {	-- Sturdy Chest
 						["coord"] = { 26.5, 43.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98612,
 					}),
-					o(676639, {	-- Ancient Chest
-						["coord"] = { 28.7, 25.8, LABYRINTH_KINDOJAN },
+					o(676639, {	-- Sturdy Chest
+						["coord"] = { 28.7, 23.1, LABYRINTH_KINDOJAN },
 						["questID"] = 98620,
 					}),
-					o(676640, {	-- Ancient Chest
-						["coord"] = { 22.1, 32.2, LABYRINTH_KINDOJAN },
+					o(676640, {	-- Sturdy Chest
+						["coord"] = { 22.1, 29.5, LABYRINTH_KINDOJAN },
 						["questID"] = 98621,
 					}),
-					o(676645, {	-- Ancient Chest
-						["coord"] = { 40.6, 23.0, LABYRINTH_KINDOJAN },
+					o(676645, {	-- Sturdy Chest
+						["coord"] = { 40.6, 20.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98625,
 					}),
-					o(676648, {	-- Ancient Chest
-						["coord"] = { 68.2, 36.7, LABYRINTH_KINDOJAN },
+					o(676648, {	-- Sturdy Chest
+						["coord"] = { 68.2, 34.1, LABYRINTH_KINDOJAN },
 						["questID"] = 98628,
 					}),
-					o(676649, {	-- Ancient Chest
-						["coord"] = { 67.9, 30.3, LABYRINTH_KINDOJAN },
+					o(676649, {	-- Sturdy Chest
+						["coord"] = { 67.9, 27.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98629,
 					}),
-					o(676653, {	-- Ancient Chest
-						["coord"] = { 81.3, 57.7, LABYRINTH_KINDOJAN },
+					o(676653, {	-- Sturdy Chest
+						["coord"] = { 81.3, 55.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98633,
 					}),
-					o(676657, {	-- Ancient Chest
-						["coord"] = { 86.9, 65.9, LABYRINTH_KINDOJAN },
+					o(676657, {	-- Sturdy Chest
+						["coord"] = { 86.9, 63.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98634,
 					}),
-					o(676661, {	-- Ancient Chest
-						["coord"] = { 72.4, 68.6, LABYRINTH_KINDOJAN },
-						["questID"] = 98637,
-						["groups"] = {
-							i(263519),	-- Snake Oil (JUNK!)
-						},
+					o(676658, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 89.0, 78.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98635,
+						["groups"] = { i(280563) },	-- Ancient Hash'ey Battle Art: Falco Strikes
 					}),
-					o(676663, {	-- Ancient Chest
-						["coord"] = { 69.2, 73.7, LABYRINTH_KINDOJAN },
+					o(676660, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 88.5, 77.3, LABYRINTH_KINDOJAN },
+						["questID"] = 98636,
+					}),
+					o(676661, {	-- Sturdy Chest
+						["coord"] = { 72.4, 65.9, LABYRINTH_KINDOJAN },
+						["questID"] = 98637,
+					}),
+					o(676663, {	-- Sturdy Chest
+						["coord"] = { 69.2, 71.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98638,
 					}),
-					o(676760, {	-- Ancient Chest
+					o(676760, {	-- Sturdy Chest
 						["coord"] = { 47.7, 40.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98649,
 					}),
-					o(676646, {	-- Ancient Chest
-						["coord"] = { 30.7, 15.6, LABYRINTH_KINDOJAN },
+					o(676646, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 30.6, 15.6, LABYRINTH_KINDOJAN },
 						["questID"] = 98626,
 						["groups"] = { i(280823) },	-- Feathers of Akil'zon (TOY!)
 					}),
-					o(676632, {	-- Ancient Chest
+					o(676632, {	-- Sturdy Chest
 						["coord"] = { 27.8, 34.6, LABYRINTH_KINDOJAN },
 						["questID"] = 98615,
 						["groups"] = { i(283996) },	-- Ancient Hash'ey Battle Art: Heat Wave
 					}),
 					o(676622, {	-- Sturdy Chest
 						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
-						["coord"] = { 38.8, 83.4, LABYRINTH_KINDOJAN },
+						["coord"] = { 38.8, 83.5, LABYRINTH_KINDOJAN },
 						["questID"] = 98605,
 						["groups"] = { i(282424) },	-- Akil'zon's Swiftness
 					}),
@@ -324,11 +345,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 38.0, 83.5, LABYRINTH_KINDOJAN },
 						["questID"] = 98606,
 						["groups"] = { i(284181) },	-- Loa-Touched Spine (COSMETIC!)
-					}),
-					o(676658, {	-- Sturdy Chest
-						["coord"] = { 89.0, 77.7, LABYRINTH_KINDOJAN },
-						["questID"] = 98635,
-						["groups"] = { i(280563) },	-- Ancient Hash'ey Battle Art: Falco Strikes
 					}),
 					o(676630, {	-- Sturdy Chest
 						["coord"] = { 27.4, 33.1, LABYRINTH_KINDOJAN },
@@ -350,10 +366,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{ 61.2, 44.8, LABYRINTH_KINDOJAN },	-- Sturdy Chest
 						},
 						["questID"] = 98631,
-					}),
-					o(676660, {	-- Sturdy Chest
-						["coord"] = { 88.5, 77.3, LABYRINTH_KINDOJAN },
-						["questID"] = 98636,
 					}),
 					o(676637, {	-- Sturdy Chest
 						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
@@ -393,7 +405,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 98614,
 					}),
 					o(676647, {	-- Sturdy Chest
-						["coord"] = { 30.6, 14.9, LABYRINTH_KINDOJAN },
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 30.6, 15.1, LABYRINTH_KINDOJAN },
+						["questID"] = 98627,
 					}),
 					o(676636, {	-- Sturdy Chest
 						["coord"] = { 10.5, 55.0, LABYRINTH_KINDOJAN },
@@ -447,6 +461,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["description"] = "Spawns after finishing 'Dundun' event.",
 					["coord"] = { 44.3, 73.3, LABYRINTH_KINDOJAN },	-- TODO: Does this happen only at the start in the Chamber of Rites?
 				}),
+				o(654950, {	-- Impressive Treasure Trove
+					["description"] = "Spawns after finishing 'Jan'alai's' event.",
+					["coord"] = { 24.8, 22.5, LABYRINTH_KINDOJAN },
+					-- Triggers hqt(86371),	-- Trovehunter's Bounty
+				}),
 				o(676747, {	-- Mislaid Treasure
 					["description"] = "Spawns randomly throughout the Labyrinth.",
 				}),
@@ -458,11 +477,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(705955, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
+				o(705957, {	-- Mislaid Treasure
+					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
 			}),
 			--n(VENDORS, {
 			--}),
 			n(ZONE_REWARDS, {
-				-- From Ancient Chests, Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
+				-- From Sturdy Chests, Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
 				i(284052),	-- Amani Effigy (COSMETIC!)
 				i(252044),	-- Amani Horn Cup (DECOR!)
 				i(264484),	-- Blue Amani Tapestry (DECOR!)

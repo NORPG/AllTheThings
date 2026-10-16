@@ -2946,6 +2946,8 @@ i(279145);	-- Vial of Venom
 ------------------
 -- PATCH 12.1.5 --
 ------------------
+i(263517);	-- Ancient Text
 i(284576);	-- Cracked Mask
+i(263519);	-- Snake Oil
 i(284577);	-- Stinging Nettle
 i(284578);	-- Untainted Wicker
