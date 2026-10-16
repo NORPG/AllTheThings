@@ -94,7 +94,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			}),
 			n(FLIGHT_PATHS, sharedData({
 				minReputation = { 2836, 4 },	-- Kindo'jan's Labyrinth, Rank 4
-			},{
+			}, {
 				fp(3300, {	-- Chamber of Rites
 					["coord"] = { 44.4, 72.1, LABYRINTH_KINDOJAN },
 					["cr"] = 273261,	-- Kinduru <Herald of de Loa>
@@ -136,7 +136,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			n(FLIGHT_PATHS, sharedData({
 				-- Exo Note: These show up on the Flight Map as places where you can land. They are not actual Flight Path collectibles.
 				collectible = false,
-			},{
+			}, {
 				fp(3301),	-- Entrance to The Reliquary
 				fp(3305),	-- Entrance to Halazzi's Lair
 				fp(3307),	-- Entrance to The Central Chamber
@@ -300,7 +300,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 98638,
 					}),
 					o(676760, {	-- Ancient Chest
-						["coord"] = { 47.7, 42.7, LABYRINTH_KINDOJAN },
+						["coord"] = { 47.7, 40.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98649,
 					}),
 					o(676646, {	-- Ancient Chest
@@ -344,7 +344,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
 					}),
 					o(676651, {	-- Sturdy Chest
-						["coord"] = { 61.2, 44.8, LABYRINTH_KINDOJAN },
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.2, 44.8, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
 						["questID"] = 98631,
 					}),
 					o(676660, {	-- Sturdy Chest
@@ -352,24 +356,40 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 98636,
 					}),
 					o(676637, {	-- Sturdy Chest
-						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.5, 44.7, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
 						["questID"] = 98619,
-						["groups"] = {
+						["groups"] = {	-- Exo: Loot confirmed. All 3 decor pieces.
 							i(284357),	-- Ancient Amani Mural (DECOR!)
 							i(264486),	-- Brown Amani Tapestry (DECOR!)
 							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
 						},
 					}),
 					o(676621, {	-- Sturdy Chest
-						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
-						["questID"] = 98619,
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.7, 44.2, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
+						["questID"] = 98604,
 					}),
-					-- o(???, {	-- Sturdy Chest (2nd from the left)
-					-- 	["coord"] = { 61.5, 43.6, LABYRINTH_KINDOJAN },
-					-- 	["questID"] = 98640,
-					-- }),
+					o(676666, {	-- Sturdy Chest
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.5, 43.6, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
+						["questID"] = 98640,
+					}),
 					o(676631, {	-- Sturdy Chest
-						["coord"] = { 61.1, 43.5, LABYRINTH_KINDOJAN },
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.1, 43.5, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
 						["questID"] = 98614,
 					}),
 					o(676647, {	-- Sturdy Chest
@@ -394,6 +414,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					o(676641, {	-- Sturdy Chest
 						["coord"] = { 22.5, 12.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98622,
+					}),
+					o(676759, {	-- Sturdy Chest
+						["description"] = "Below the pathway.",
+						["coord"] = { 40.6, 45.4, LABYRINTH_KINDOJAN },
+						["questID"] = 98648,
+					}),
+					o(676761, {	-- Sturdy Chest
+						["coord"] = { 46.0, 48.3, LABYRINTH_KINDOJAN },
+						["questID"] = 98650,
 					}),
 				}),
 				o(689304, {	-- Ancestral Bounty

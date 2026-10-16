@@ -57,7 +57,7 @@ app.ResolveQuestData = function(t)
 			otherQuestData = aqd;
 		else
 			questData = aqd;
-			questData.races = ALLIANCE_ONLY
+			questData.races = ALLIANCE_ONLY;
 			otherQuestData = hqd;
 		end
 
