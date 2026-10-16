@@ -378,6 +378,16 @@ do
 	end
 end
 
+--- Existing tooltip rows and the marker used to avoid duplicate source sections.
+---@class ATTQuestSourceTooltipInfo
+---@field [integer] ATTTooltipLine Formatted source rows in display order.
+---@field hasSourceLocations? boolean Whether a source section was appended.
+
+--- Appends source paths after per-occurrence display and existing tooltip filters.
+---@param tooltipInfo ATTQuestSourceTooltipInfo Existing information rows to append to.
+---@param paramA string Thing key selecting the existing source searcher.
+---@param paramB number Thing identifier, including encoded modItemID values.
+---@return true|nil working True while a source name is still being retrieved.
 local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- Create a list of sources
 	-- app.PrintDebug("SourceLocations",paramA,paramB,SourceLocationSettingsKey[paramA])
@@ -403,8 +413,13 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	for i=1,#allReferences do
 		j = allReferences[i]
 		parent = directSources and j or j.parent
+		local rewardVisibility
+		if paramA == "itemID" and not directSources then
+			rewardVisibility = app.Modules.QuestRewardVisibility.GetSourceVisibility(j)
+		end
 		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j))
-		if parent and parent.parent and (showCompleted or not app.IsComplete(j)) then
+		if parent and parent.parent and rewardVisibility ~= false
+			and (rewardVisibility or showCompleted or not app.IsComplete(j)) then
 			text = GenerateSourcePath(parent, parent.objectiveID and 0 or 1);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or issecretvalue(text) or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
