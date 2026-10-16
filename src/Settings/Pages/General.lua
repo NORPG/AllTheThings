@@ -1168,7 +1168,6 @@ local checkboxQuestRewardConsumables = child:CreateCheckBox(L.SHOW_QUEST_REWARD_
 	---@return nil
 	function(self)
 		settings:Set("Show:QuestRewardConsumables", self:GetChecked())
-		settings:UpdateMode("FORCE")
 	end)
 checkboxQuestRewardConsumables:SetATTTooltip(L.SHOW_QUEST_REWARD_CONSUMABLES_CHECKBOX_TOOLTIP)
 checkboxQuestRewardConsumables:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoSkillLevelFilter or checkboxNoLevelFilter)

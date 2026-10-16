@@ -3,6 +3,10 @@
 local _, app = ...
 local floor = math.floor
 
+--- Existing native window contract used only to refresh its source rows.
+---@class ATTQuestRewardSourceWindow
+---@field Update fun(self: ATTQuestRewardSourceWindow, force?: boolean): boolean? Rebuild visible rows, or mark a hidden window pending.
+
 --- Read-only input to the consumable source classifier.
 ---@class ATTQuestConsumableSource
 ---@field __type? string Existing runtime class name.
@@ -22,6 +26,7 @@ local floor = math.floor
 ---@field npcID? NPCID Acquisition NPC.
 ---@field objectID? ObjectID Acquisition object.
 ---@field cost? number|ATTCost[] Acquisition cost.
+---@field window? ATTQuestRewardSourceWindow Existing window assigned to a popout root by SetData.
 
 ---@alias ATTQuestRewardReferenceDecisions { [ATTQuestConsumableSource]: boolean }
 ---@alias ATTQuestRewardReferencesByQuest { [QuestID]: ATTQuestConsumableSource[] }
@@ -79,6 +84,13 @@ function QuestRewardConsumable:IsQuestReward(item)
 	return false
 end
 
+--- Reads a memoized occurrence decision while rechecking mutable container structure.
+---@param item ATTQuestConsumableSource Original occurrence, not a merged source or display clone.
+---@return boolean reward Whether this original is still an ordinary one-time quest reward.
+function QuestRewardConsumable:IsRewardReference(item)
+	return self.rewards[item] == true and self:IsOrdinary(item) and not (item.g and #item.g > 0)
+end
+
 --- A merged quest source is controlled only when every matching original is a reward.
 ---@param questID QuestID Quest represented by the source copy, never a clone's parent chain.
 ---@return boolean reward Whether hiding this quest preserves all other acquisition relationships.
@@ -88,7 +100,7 @@ function QuestRewardConsumable:IsQuestSource(questID)
 	for i=1,#references do
 		local item = references[i]
 		-- Filling may add children without replacing the source array.
-		if not self.rewards[item] or not self:IsOrdinary(item) or (item.g and #item.g > 0) then return false end
+		if not self:IsRewardReference(item) then return false end
 	end
 	return true
 end
@@ -142,16 +154,33 @@ end
 ---@class ATTQuestSourceVisibility
 ---@field itemID ItemID Item whose original occurrences classify quest sources.
 ---@field sources ATTQuestSourceDecisions Candidate copy hashes mapped to quests or unconditional preservation.
+---@field window? ATTQuestRewardSourceWindow Popout window owning these display decisions.
 local QuestSourceVisibility = {}
 QuestSourceVisibility.__index = QuestSourceVisibility
 
 ---@class ATTQuestRewardVisibilityAPI
 ---@field Get fun(itemID?: number): ATTQuestRewardConsumable?
+---@field GetSourceVisibility fun(item: ATTQuestConsumableSource): boolean?
 ---@field CreateSourceFilter fun(group: ATTQuestConsumableSource): ATTQuestSourceVisibility?
 local api = {}
 app.Modules.QuestRewardVisibility = api
 ---@type ATTQuestRewardConsumablesByItem
 local consumables = {}
+--- Weak keys do not retain discarded native popouts.
+---@type { [ATTQuestRewardSourceWindow]: true }
+local sourceWindows = setmetatable({}, { __mode = "k" })
+
+--- Refreshes only registered item source windows when their display setting changes.
+---@param context string Settings container whose value was written.
+---@param setting string Changed setting key; all unrelated keys are ignored.
+---@return nil
+local function RefreshSourceWindows(context, setting)
+	if context ~= "General" or setting ~= "Show:QuestRewardConsumables" then return end
+	app.WipeSearchCache()
+	for window in pairs(sourceWindows) do window:Update(true) end
+	app.HandleEvent("QuestRewardConsumablesChanged")
+end
+app.AddEventHandler("Settings.OnSet", RefreshSourceWindows)
 
 --- Clears independent records after loading or refreshing settings.
 ---@return nil
@@ -173,6 +202,17 @@ function api.Get(itemID)
 		consumables[itemID] = consumable
 	end
 	return consumable
+end
+
+--- Overrides only original one-time reward paths; nil preserves all other tooltip rules.
+---@param item ATTQuestConsumableSource Original occurrence returned by the item source searcher.
+---@return boolean? visible The setting for a qualifying reward, or nil for an uncontrolled source.
+function api.GetSourceVisibility(item)
+	if item.f ~= 55 then return end
+	local consumable = api.Get(item.itemID)
+	if consumable and consumable:IsRewardReference(item) then
+		return not not app.Settings:Get("Show:QuestRewardConsumables")
+	end
 end
 
 --- Records candidates before merging; an uncontrolled duplicate always wins.
@@ -221,6 +261,7 @@ function QuestSourceVisibility:Apply(sourceGroup)
 		end
 	end
 	if not controlled then return end
+	if self.window then sourceWindows[self.window] = true end
 	local onSetVisibility = sourceGroup.OnSetVisibility
 	---@param header ATTQuestSourceView Sources header being refreshed.
 	---@return true|nil handled Skip the header when every final source is gated off.
@@ -253,6 +294,6 @@ end
 function api.CreateSourceFilter(group)
 	local consumable = group.f == 55 and api.Get(group.itemID)
 	if consumable and consumable:IsOrdinary(group) then
-		return setmetatable({ itemID = consumable.itemID, sources = {} }, QuestSourceVisibility)
+		return setmetatable({ itemID = consumable.itemID, sources = {}, window = group.window }, QuestSourceVisibility)
 	end
 end
