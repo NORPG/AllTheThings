@@ -878,6 +878,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["provider"] = { "i", 243304 },	-- Jubilant Snowman Costume (TOY!)
 			["timeline"] = { ADDED_11_2_7 },
 		}),
+		ach(64174, {	-- Bow Go
+			--["provider"] = { "i", 286660 },	-- Throw Bow (TOY!)
+			["timeline"] = { ADDED_12_1_7 },
+		}),
+		ach(64175, {	-- Let's Put A Bow On It
+			["timeline"] = { ADDED_12_1_7 },
+		}),
 	}),
 	-- #if AFTER 7.3.0.24727
 	filter(BATTLE_PETS, {

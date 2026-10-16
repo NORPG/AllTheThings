@@ -2589,6 +2589,7 @@ i(275756, 1297808);	-- Living Heartsbane Cauldron
 ------------------
 -- PATCH 12.1.7 --
 ------------------
+i(287513, 1323203);	-- Markeet of the Infinite
 --- UNSORTED ---
 i(274262, 1293485);	-- [PH] Dino Size Test
 i(286632, 1320798);	-- [PH] Stegodon - Black
@@ -2596,7 +2597,6 @@ i(286633, 1320801);	-- [PH] Stegodon - Blue
 i(286634, 1320802);	-- [PH] Stegodon - Green
 i(286635, 1320803);	-- [PH] Stegodon - Purple
 i(282272, 1313284);	-- Autumn Dream Jumper
-i(287513, 1323203);	-- Markeet of the Infinite
 i(288214, 1325226);	-- Reanimated Skeletal Raptor
 i(275255, 1296315);	-- Shadowbound Storybook
 i(282278, 1313363);	-- Shadowpaw Wood Watcher

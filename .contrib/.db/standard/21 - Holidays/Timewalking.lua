@@ -110,6 +110,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
 				["groups"] = { i(258884) },	-- Spawn of Vyranoth (MOUNT!)
 			})),
+			ach(64207, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_7, REMOVED_12_2_0 } }, {	-- Master of the Turbulent Timeways VI (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(287513) },	-- Markeet of the Infinite (MOUNT!)
+			})),
 		}),
 		n(COMMON_BOSS_DROPS, {
 			currency(TIMEWARPED_BADGE),

@@ -27,9 +27,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					61583,	-- Voidstorm Glyph Hunter
 					61581,	-- Zul'Aman Glyph Hunter
 				}},
-				["groups"] = {
-					i(257145),	-- Crimson Dragonhawk (MOUNT!)
-				}
+				["groups"] = { i(257145) },	-- Crimson Dragonhawk (MOUNT!)
 			})),
 			ach(62104),	-- Midnight Lore Hunter
 			ach(61839, {	-- Midnight Pathfinder
@@ -42,8 +40,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61910, {	-- Mrglgrgl of Grglmrgl
 				title(766, {["timeline"] = { ADDED_12_0_5 }}),	-- <Name>, Mrglgrgl of Grglmrgl
 			}),
-			ach(60891, {	-- The Crimson Rogue
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
+			ach(60891, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- The Crimson Rogue
+			ach(63713, {	-- The Coreway Advance
+				["timeline"] = { ADDED_12_1_7 },
+				--["groups"] = { i(XXXXXX) },	-- TBD
 			}),
 			ach(61854, {	-- The Midnight Explorer
 				-- Meta Achievement

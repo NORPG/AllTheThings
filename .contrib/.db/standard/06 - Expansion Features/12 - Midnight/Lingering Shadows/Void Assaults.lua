@@ -59,6 +59,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = { i(276083) },	-- Sunstrider Omnium Simulacrum (DECOR!)
 						}),
 						ach(62513),	-- Outstanding in the Field
+						ach(64290, {	-- The Power of Stories
+							["timeline"] = { ADDED_12_1_7 },
+							["maps"] = {
+								MAP.MIDNIGHT.EVERSONG_WOODS,
+								MAP.MIDNIGHT.ISLE_OF_QUELDANAS,
+								MAP.MIDNIGHT.SILVERMOON_CITY,
+							},
+						}),
 						ach(62569),	-- Traces in the Dark
 						ach(62606, {	-- The Sunstrider Omnium
 							["timeline"] = { ADDED_12_0_7 },
