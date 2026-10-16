@@ -2167,6 +2167,127 @@ e(3496,{npcID=261319,g={
 s(305019,270260,{b=1,f=5,loc=46,lvl=13}),
 s(305018,270256,{b=1,f=21,lvl=13}),
 s(305020,270261,{b=1,f=4,loc=42,lvl=13})}})}}),
+inst(232,{coords={
+[1443]={{35.7,55.5}}},icon=136345,lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,zoneTextAreaID=2100,g={
+h(-45,{
+q(7065,{coords={
+[1443]={{63.8,10.6}}},lvl=45,qgs={13698},r=2,g={
+qo(1,{providers={{"n",12201}}}),
+s(163374,17705,{b=1,f=25}),
+s(163395,17743,{b=1,f=28}),
+s(163403,17753,{b=1,f=32})}}),
+q(7064,{coords={
+[1443]={{26.9,77.7}}},lvl=45,qgs={13699},r=1,g={
+qo(1,{providers={{"n",12201}}}),
+s(163374,17705,{b=1,f=25}),
+s(163395,17743,{b=1,f=28}),
+s(163403,17753,{b=1,f=32})}}),
+q(7044,{coords={
+[1443]={{32.1,64}}},lvl=41,qgs={13697},g={
+qo(1,{providers={{"i",17703}}}),
+qo(2,{providers={{"i",17702}}})}}),
+q(7066,{description="This quest becomes available after you defeat Princess Theradras.",lvl=39,maps={1450},qgs={12238},qis={17760}}),
+q(7070,{coords={
+[1445]={{66.4,49.3}}},lvl=39,qgs={4967},r=2,g={
+qo(1,{crs={11777,11778},providers={{"i",17756}}}),
+i(17773,{f=51}),
+i(17772,{f=51})}}),
+q(7068,{coords={
+[1454]={{39.2,86.3}}},lvl=39,qgs={7311},r=1,g={
+qo(1,{crs={11777,11778},providers={{"i",17756}}}),
+i(17773,{f=51}),
+i(17772,{f=51})}}),
+q(7067,{coords={
+[1443]={{50.5,86.7}}},lvl=39,qgs={13717},qis={17781},g={
+qo(1,{cost={{"i",17765,1},{"i",17764,1},{"i",17763,1},{"i",17762,1},{"i",17761,1},{"i",17757,1}},providers={{"i",17758}}}),
+i(17757,{coords={
+[1443]={{28.1,62.4}}},crs={13718},spellID=21960}),
+i(17761,{b=1,coords={
+[1443]={{29.7,60.5}}},crs={12240,13742},description="Kolk is standing by the little room where you create the portal for Inner Maraudon, in the middle part.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
+i(17762,{b=1,coords={
+[1443]={{29.4,56.9}}},crs={12239,13741},description="Gelk is located outside the portal of the purple path, hanging with snakes and rock elementals. He is almost just below the portal (use the stairs to get to him).\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
+i(17763,{b=1,coords={
+[1443]={{35.8,60.4}}},crs={12241,13740},description="Magra is located outside the portal of the orange path. He is in the stairs area.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
+i(17764,{b=1,crs={12242,13739},description="Maraudos is located inside the purple path of Maraudon, wandering not too far away from the entrance.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
+i(17765,{b=1,crs={12243,13738},description="Veng is located inside the orange path of Maraudon, wandering by the end of the path.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
+i(17774,{f=53,spellID=21969})}}),
+q(7046,{lvl=41,qgs={13716},sourceQuests={7044},g={
+i(17191,{b=1,description="This item is used to open the portal to the Inner Falls just after Celebras the Cursed in Maraudon.",spellID=21127})}}),
+q(7028,{coords={
+[1443]={{62.2,39.6}}},lvl=41,qgs={13656},g={
+qo(1,{providers={{"i",17684}}}),
+s(163410,17776,{f=5,loc=40}),
+s(163413,17779,{f=7,loc=41}),
+s(163409,17775,{f=4,loc=42}),
+s(163411,17777,{f=6,loc=42})}}),
+q(7041,{coords={
+[1443]={{68.4,8.8}}},lvl=41,qgs={11715},r=2,g={
+qo(1,{cost={{"i",17696,1}},description="Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",providers={{"n",13696}}}),
+i(17696,{coords={
+[1443]={{38,58}}},cost={{"i",17693,1}},description="Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",spellID=21885}),
+s(163408,17770,{f=7,loc=44}),
+s(163412,17778,{f=5,loc=45}),
+i(17768,{f=52})}}),
+q(7029,{coords={
+[1443]={{23.2,70.3}}},lvl=41,qgs={11823},r=1,g={
+qo(1,{cost={{"i",17696,1}},description="Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",providers={{"n",13696}}}),
+i(17696,{coords={
+[1443]={{38,58}}},cost={{"i",17693,1}},description="Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",spellID=21885}),
+s(163408,17770,{f=7,loc=44}),
+s(163412,17778,{f=5,loc=45}),
+i(17768,{f=52})}})}),
+h(-63,{
+i(17684)}),
+h(-359,{
+e(423,{npcID=13282,g={
+i(17702),
+s(163396,17745,{f=27}),
+s(163397,17746,{f=7,loc=43}),
+i(17744,{f=53,spellID=21954})}}),
+e(424,{npcID=12258,g={
+s(163399,17749,{f=5,loc=41}),
+s(163400,17750,{f=4,loc=45}),
+s(163401,17751,{f=5,loc=46}),
+s(163398,17748,{f=4,loc=47})}})}),
+h(-360,{
+e(427,{npcID=12236,g={
+i(17703),
+s(163402,17752,{f=20}),
+s(163405,17755,{f=4,loc=45}),
+s(163404,17754,{f=6,loc=46,spellID=1294769})}}),
+n(12237,{coords={
+[280]={{24,75}}},description="This is a Rare Creature and, as such, is not always present.",g={
+s(163393,17741,{f=4,loc=42}),
+s(163394,17742,{f=5,loc=42}),
+s(163407,17767,{f=6,loc=40})}})}),
+h(-358,{cost={{"i",17191,1}},sourceQuests={7046},g={
+e(428,{npcID=12225,g={
+s(163390,17738,{f=34}),
+s(163392,17740,{f=5,loc=40}),
+s(163391,17739,{f=3,spellID=1294786})}}),
+e(429,{npcID=12203,g={
+s(163417,17943,{f=23,spellID=1294794}),
+s(163389,17737,{f=1}),
+s(163387,17734,{f=7,loc=40}),
+s(163388,17736,{f=6,loc=44})}}),
+e(425,{npcID=13601,g={
+s(163381,17719,{f=25}),
+s(163379,17717,{f=31}),
+s(163380,17718,{f=8})}}),
+e(430,{modelScale=1.5,npcID=13596,g={
+s(163385,17730,{f=22}),
+s(163386,17732,{f=4,loc=41}),
+s(163384,17728,{f=5,loc=47})}}),
+e(431,{modelScale=2,npcID=12201,g={
+s(163414,17780,{f=20,spellID=21978}),
+s(163375,17710,{f=20}),
+s(163406,17766,{f=24}),
+s(163378,17715,{f=4,loc=40}),
+i(17707,{f=51}),
+s(163377,17714,{f=6,loc=43}),
+s(163376,17711,{f=7,loc=46}),
+i(17713,{f=52}),
+crit(18532,{achID=62033,awp=16001,id=4})}})}})}}),
 inst(226,{coords={
 [1454]={{50.6,51.6}}},icon=136350,lore="Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",lvl=13,mapID=213,zoneTextAreaID=2437,g={
 h(-45,{
@@ -2778,128 +2899,6 @@ s(158613,6627,{b=1,f=6,loc=42,lvl=18}),
 i(6463,{b=1,f=52,lvl=19}),
 crit(18524,{achID=62031,awp=16001,id=3})}})}}),
 x(1,{awp=10100,g={
-inst(232,{coords={
-[1443]={{35.7,55.5}}},lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,zoneTextAreaID=2100,g={
-h(-45,{
-q(7065,{coords={
-[1443]={{63.8,10.6}}},lvl=45,qgs={13698},r=2,rwp=40003,g={
-qo(1,{providers={{"n",12201}}}),
-s(163374,17705,{b=1,f=25}),
-s(163395,17743,{b=1,f=28}),
-s(163403,17753,{b=1,f=32})}}),
-q(7064,{coords={
-[1443]={{26.9,77.7}}},lvl=45,qgs={13699},r=1,rwp=40003,g={
-qo(1,{providers={{"n",12201}}}),
-s(163374,17705,{b=1,f=25}),
-s(163395,17743,{b=1,f=28}),
-s(163403,17753,{b=1,f=32})}}),
-q(7044,{coords={
-[1443]={{32.1,64}}},lvl=41,qgs={13697},rwp=40003,g={
-qo(1,{providers={{"i",17703}}}),
-qo(2,{providers={{"i",17702}}})}}),
-q(7066,{description="This quest becomes available after you defeat Princess Theradras.",lvl=39,maps={1450},qgs={12238},qis={17760},rwp=40003}),
-q(7070,{coords={
-[1445]={{66.4,49.3}}},lvl=39,qgs={4967},r=2,rwp=40003,g={
-qo(1,{crs={11777,11778},providers={{"i",17756}}}),
-i(17773,{f=51}),
-i(17772,{f=51})}}),
-q(7068,{coords={
-[1454]={{39.2,86.3}}},lvl=39,qgs={7311},r=1,rwp=40003,g={
-qo(1,{crs={11777,11778},providers={{"i",17756}}}),
-i(17773,{f=51}),
-i(17772,{f=51})}}),
-q(7067,{coords={
-[1443]={{50.5,86.7}}},lvl=39,qgs={13717},qis={17781},rwp=40003,g={
-qo(1,{cost={{"i",17765,1},{"i",17764,1},{"i",17763,1},{"i",17762,1},{"i",17761,1},{"i",17757,1}},providers={{"i",17758}}}),
-i(17757,{coords={
-[1443]={{28.1,62.4}}},crs={13718},spellID=21960}),
-i(17761,{b=1,coords={
-[1443]={{29.7,60.5}}},crs={12240,13742},description="Kolk is standing by the little room where you create the portal for Inner Maraudon, in the middle part.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
-i(17762,{b=1,coords={
-[1443]={{29.4,56.9}}},crs={12239,13741},description="Gelk is located outside the portal of the purple path, hanging with snakes and rock elementals. He is almost just below the portal (use the stairs to get to him).\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
-i(17763,{b=1,coords={
-[1443]={{35.8,60.4}}},crs={12241,13740},description="Magra is located outside the portal of the orange path. He is in the stairs area.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
-i(17764,{b=1,crs={12242,13739},description="Maraudos is located inside the purple path of Maraudon, wandering not too far away from the entrance.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
-i(17765,{b=1,crs={12243,13738},description="Veng is located inside the orange path of Maraudon, wandering by the end of the path.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",spellID=21957}),
-i(17774,{f=53,spellID=21969})}}),
-q(7046,{lvl=41,qgs={13716},rwp=40003,sourceQuests={7044},g={
-i(17191,{b=1,description="This item is used to open the portal to the Inner Falls just after Celebras the Cursed in Maraudon.",spellID=21127})}}),
-q(7028,{coords={
-[1443]={{62.2,39.6}}},lvl=41,qgs={13656},rwp=40003,g={
-qo(1,{providers={{"i",17684}}}),
-s(163410,17776,{f=5,loc=40}),
-s(163413,17779,{f=7,loc=41}),
-s(163409,17775,{f=4,loc=42}),
-s(163411,17777,{f=6,loc=42})}}),
-q(7041,{coords={
-[1443]={{68.4,8.8}}},lvl=41,qgs={11715},r=2,rwp=40003,g={
-qo(1,{cost={{"i",17696,1}},description="Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",providers={{"n",13696}}}),
-i(17696,{coords={
-[1443]={{38,58}}},cost={{"i",17693,1}},description="Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",spellID=21885}),
-s(163408,17770,{f=7,loc=44}),
-s(163412,17778,{f=5,loc=45}),
-i(17768,{f=52})}}),
-q(7029,{coords={
-[1443]={{23.2,70.3}}},lvl=41,qgs={11823},r=1,rwp=40003,g={
-qo(1,{cost={{"i",17696,1}},description="Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",providers={{"n",13696}}}),
-i(17696,{coords={
-[1443]={{38,58}}},cost={{"i",17693,1}},description="Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",spellID=21885}),
-s(163408,17770,{f=7,loc=44}),
-s(163412,17778,{f=5,loc=45}),
-i(17768,{f=52})}})}),
-h(-63,{
-i(17684)}),
-h(-359,{
-e(423,{npcID=13282,g={
-i(17702),
-s(163396,17745,{f=27}),
-s(163397,17746,{f=7,loc=43}),
-i(17744,{f=53,spellID=21954})}}),
-e(424,{npcID=12258,g={
-s(163399,17749,{f=5,loc=41}),
-s(163400,17750,{f=4,loc=45}),
-s(163401,17751,{f=5,loc=46}),
-s(163398,17748,{f=4,loc=47})}})}),
-h(-360,{
-e(427,{npcID=12236,g={
-i(17703),
-s(163402,17752,{f=20}),
-s(163405,17755,{f=4,loc=45}),
-s(163404,17754,{f=6,loc=46,spellID=1294769})}}),
-n(12237,{coords={
-[280]={{24,75}}},description="This is a Rare Creature and, as such, is not always present.",g={
-s(163393,17741,{f=4,loc=42}),
-s(163394,17742,{f=5,loc=42}),
-s(163407,17767,{f=6,loc=40})}})}),
-h(-358,{cost={{"i",17191,1}},sourceQuests={7046},g={
-e(428,{npcID=12225,g={
-s(163390,17738,{f=34}),
-s(163392,17740,{f=5,loc=40}),
-s(163391,17739,{f=3,spellID=1294786})}}),
-e(429,{npcID=12203,g={
-s(163417,17943,{f=23,spellID=1294794}),
-s(163389,17737,{f=1}),
-s(163387,17734,{f=7,loc=40}),
-s(163388,17736,{f=6,loc=44})}}),
-e(425,{npcID=13601,g={
-s(163381,17719,{f=25}),
-s(163379,17717,{f=31}),
-s(163380,17718,{f=8})}}),
-e(430,{modelScale=1.5,npcID=13596,g={
-s(163385,17730,{f=22}),
-s(163386,17732,{f=4,loc=41}),
-s(163384,17728,{f=5,loc=47})}}),
-e(431,{modelScale=2,npcID=12201,g={
-ach(640),
-s(163414,17780,{f=20,spellID=21978}),
-s(163375,17710,{f=20}),
-s(163406,17766,{f=24}),
-s(163378,17715,{f=4,loc=40}),
-i(17707,{f=51}),
-s(163377,17714,{f=6,loc=43}),
-s(163376,17711,{f=7,loc=46}),
-i(17713,{f=52}),
-crit(18532,{achID=62033,awp=16001,id=4})}})}})}}),
 inst(233,{coords={
 [1413]={{50,92}}},lore="Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",lvl=35,mapID=300,zoneTextAreaID=722,g={
 h(-45,{
