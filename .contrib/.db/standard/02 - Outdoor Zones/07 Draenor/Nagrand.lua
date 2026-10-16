@@ -2489,6 +2489,28 @@ root(ROOTS.Zones, {
 							i(44693),	-- Wound Dressing
 						},
 					}),
+					n(274291, {	-- Botanist Gril'ka <Decor Specialist>
+						["coord"] = { 82.0, 44.6, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_12_1_5 },
+						["groups"] = {
+							i(284126, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Aborius Pod Plant (DECOR!)
+							i(284128, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Gordawg Mossy Rock (DECOR!)
+							i(284112, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Highmaul Sentinel Tree (DECOR!)
+							i(284134, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Incineratus Grass Patch (DECOR!)
+							i(284124, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Kalandrios Lily (DECOR!)
+							i(284116, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Mature Spiritwood Oak (DECOR!)
+							i(284106, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Nagrand Clover Cluster (DECOR!)
+							i(284130, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Nagrand Heart Ivy (DECOR!)
+							i(284108, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Nagrand Wild Wheat (DECOR!)
+							i(284120, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Sentinel Tree Root (DECOR!)
+							i(284132, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Skysong Sentinel Tree (DECOR!)
+							i(284118, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Spiritwood Oak Stump (DECOR!)
+							i(284122, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Stonecrag Sentinel Tree (DECOR!)
+							i(284114, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Wandering Sentinel Tree (DECOR!)
+							i(284110, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Young Sentinel Tree (DECOR!)
+						},
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(113109, {	-- Frostwolf Axe

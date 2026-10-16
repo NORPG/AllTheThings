@@ -3654,6 +3654,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(955, {	-- Sergeant De Vries <Morale Officer>
+					["coord"] = { 24.0, 73.0, ELWYNN_FOREST },
+					-- #if AFTER 12.1.5
+					["sym"] = {{ "select", "itemID",
+						284223,	-- "Pride of Stormwind" Statue (DECOR!)
+					}},
+					-- #endif
+				}),
 				n(66, {	-- Tharynn Bouden <Trade Supplies>
 					["coord"] = { 41.8, 67.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,

@@ -1249,9 +1249,16 @@ root(ROOTS.Zones, {
 				n(112716, {	-- Rasil Fireborne <Art Dealer>
 					["coord"] = { 43.1, 49.1, LEGION_DALARAN },
 					["groups"] = {
+						i(284264, {	-- "Gnoma Lisa" Painting (DECOR!)
+							["cost"] = {
+								{ "c", ORDER_RESOURCES, 500 },
+								{ "g", 10000000 },	-- 1,000g
+							},
+							["timeline"] = { ADDED_12_1_5 },
+						}),
 						i(246851, {	-- "Raising Your Eyes" Painting (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = 150000000,	-- 15,000g
+							["timeline"] = { ADDED_11_2_7 },
 						}),
 					},
 				}),

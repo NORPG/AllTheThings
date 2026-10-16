@@ -54,6 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(277890),	-- Wildwarden's Guise
 						}),
 						filter(MAIL, {
+							i(277896),	-- Bloodtide Hauberk
 							i(277891),	-- Leviathan Bracerbands
 						}),
 						filter(NECK_F, {
@@ -66,6 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					}),
 					n(WEAPONS, {
+						i(277893),	-- Emberveil Ritual Knife
 						i(277899),	-- Fangwarden's Shardspine Bow
 						i(277880),	-- Runic Moonbrand
 						i(277876),	-- Sacrosanct Thirstspire

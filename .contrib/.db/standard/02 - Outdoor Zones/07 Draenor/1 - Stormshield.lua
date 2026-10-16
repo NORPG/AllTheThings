@@ -1169,35 +1169,39 @@ root(ROOTS.Zones, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(251483, {	-- Draenethyst Lantern (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 									i(118665, {	-- Exarch Elixir
 										["cost"] = { { "c", APEXIS_CRYSTAL, 1 } },
 									}),
-									i(245423, {	-- Spherical Draenic Topiary (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
+									i(285179, {	-- Ritual Embaari Arch (DECOR!))
 										["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
+										["timeline"] = { ADDED_12_1_5 },
+									}),
+									i(245423, {	-- Spherical Draenic Topiary (DECOR!)
+										["cost"] = { { "c", GARRISON_RESOURCES, 250 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 								}, {	-- Honored
 									i(251481, {	-- Elodor Armory Rack (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 									i(115472, {	-- Permanent Time Bubble (TOY!)
 										["cost"] = 10000000,	-- 1,000g
 									}),
 									i(251493, {	-- Small Karabor Fountain (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 									i(118680, {	-- Tranquility of the Exarchs
 										["cost"] = 5000000,	-- 500g
 									}),
 								}, {	-- Revered
 									i(251484, {	-- "Dawning Hope" Mosaic (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 									i(119162, {	-- Contract: Cleric Maluuf
 										["cost"] = 50000000,	-- 5,000g
@@ -1210,8 +1214,8 @@ root(ROOTS.Zones, {
 										},
 									}),
 									i(251476, {	-- Embroidered Embaari Tent (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 									i(118663, {	-- Relic of Karabor
 										["cost"] = 25000000,	-- 2,500g
@@ -1225,12 +1229,12 @@ root(ROOTS.Zones, {
 										},
 									}),
 									i(251551, {	-- Grand Draenethyst Lamp (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 1500 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 									i(251479, {	-- Shadowmoon Greenhouse (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
 										["cost"] = { { "c", GARRISON_RESOURCES, 1500 } },
+										["timeline"] = { ADDED_11_2_7 },
 									}),
 								},
 							}),

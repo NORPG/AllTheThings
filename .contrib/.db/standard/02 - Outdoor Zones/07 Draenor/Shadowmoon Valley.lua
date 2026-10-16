@@ -1779,9 +1779,31 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(257349, {	-- Naaru Crystal Icon (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = { { "c", GARRISON_RESOURCES, 300 } },
+								["timeline"] = { ADDED_11_2_7 },
 							}),
+						},
+					}),
+					n(274250, {	-- Botanist Taania <Decor Specialist>
+						["coord"] = { 58.0, 26.6, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_12_1_5 },
+						["groups"] = {
+							i(283234, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Curved Karabor Hedge (DECOR!)
+							i(283236, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Elaborate Karabor Hedge (DECOR!)
+							i(283228, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Embaari Beech Tree (DECOR!)
+							i(283242, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Gloomshade Glowpod (DECOR!)
+							i(283232, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Huddled Nightmarsh Blossom (DECOR!)
+							i(283244, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Karabor Beech Tree (DECOR!)
+							i(283238, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Karabor Hedge (DECOR!)
+							i(283248, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Lunarfall Beech Tree (DECOR!)
+							i(283226, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Mature Star Lily (DECOR!)
+							i(283222, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Overgrown Valuun Shrub (DECOR!)
+							i(283230, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Pale Shadowmoon Willow (DECOR!)
+							i(283240, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Shadow Lily Bloom (DECOR!)
+							i(283220, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Small Shadowmoon Shadebrush (DECOR!)
+							i(283224, { ["cost"] = { { "c", GARRISON_RESOURCES, 200 } } }),	-- Verdant Mire Scale-Leaf (DECOR!)
+							i(283246, { ["cost"] = { { "c", GARRISON_RESOURCES, 400 } } }),	-- Verdant Shadowmoon Willow (DECOR!)
 						},
 					}),
 					n(84074, {	-- Merchant Derrook

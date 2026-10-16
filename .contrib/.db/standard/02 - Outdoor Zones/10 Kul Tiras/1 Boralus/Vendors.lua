@@ -833,6 +833,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 			}),
 			n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(158205),	-- Acacia Powder
 					i(158186),	-- Distilled Water

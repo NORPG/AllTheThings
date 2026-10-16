@@ -20,8 +20,6 @@ root(ROOTS.Unsorted, {
 			i(277882),	-- Feral Gloombranch
 			i(277883),	-- Duskmantle Spiteglass
 			i(277889),	-- Fanged Riftrazor
-			i(277893),	-- Emberveil Ritual Knife
-			i(277896),	-- Bloodtide Hauberk
 			i(279396),	-- Timelost Saddle
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat
@@ -142,21 +140,6 @@ root(ROOTS.Unsorted, {
 			i(282697),	-- Nathrian Rubyroot Growth
 			i(282714),	-- Fae Anima Wall Lantern
 			i(282718),	-- Halazzi's Shroud
-			i(283220),	-- Small Shadowmoon Shadebrush
-			i(283222),	-- Overgrown Valuun Shrub
-			i(283224),	-- Verdant Mire Scale-Leaf
-			i(283226),	-- Mature Star Lily
-			i(283228),	-- Embaari Beech Tree
-			i(283230),	-- Pale Shadowmoon Willow
-			i(283232),	-- Huddled Nightmarsh Blossom
-			i(283234),	-- Curved Karabor Hedge
-			i(283236),	-- Elaborate Karabor Hedge
-			i(283238),	-- Karabor Hedge
-			i(283240),	-- Shadow Lily Bloom
-			i(283242),	-- Gloomshade Glowpod
-			i(283244),	-- Karabor Beech Tree
-			i(283246),	-- Verdant Shadowmoon Willow
-			i(283248),	-- Lunarfall Beech Tree
 			i(283260),	-- Anima-Powered Anvil
 			i(283265),	-- Fae Lantern Blossom
 			i(283267),	-- Celestial Grovebush
@@ -232,21 +215,6 @@ root(ROOTS.Unsorted, {
 			i(284032),	-- Frost Revenant's Gloves
 			i(284033),	-- Frost Revenant's Cloak
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
-			i(284106),	-- Nagrand Clover Cluster
-			i(284108),	-- Nagrand Wild Wheat
-			i(284110),	-- Young Sentinel Tree
-			i(284112),	-- Highmaul Sentinel Tree
-			i(284114),	-- Wandering Sentinel Tree
-			i(284116),	-- Mature Spiritwood Oak
-			i(284118),	-- Spiritwood Oak Stump
-			i(284120),	-- Sentinel Tree Root
-			i(284122),	-- Stonecrag Sentinel Tree
-			i(284124),	-- Kalandrios Lily
-			i(284126),	-- Aborius Pod Plant
-			i(284128),	-- Gordawg Mossy Rock
-			i(284130),	-- Nagrand Heart Ivy
-			i(284132),	-- Skysong Sentinel Tree
-			i(284134),	-- Incineratus Grass Patch
 			i(284194),	-- Everbloom Forest Floor
 			i(284212),	-- Technique: Apple Bobbing Bucket
 			i(284213),	-- Pattern: Spidery Witch Hat
@@ -269,7 +237,6 @@ root(ROOTS.Unsorted, {
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
 			i(284263),	-- Pattern: Beloved Murloc Plushie
-			i(284264),	-- "Gnoma Lisa" Painting
 			i(284402),	-- Valdrakken Resupply Coin
 			i(284462),	-- Arching Crimson Ivy
 			i(284464),	-- Twisted Crimson Root
@@ -307,7 +274,6 @@ root(ROOTS.Unsorted, {
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament
-			i(285179),	-- Ritual Embaari Arch
 			i(285221),	-- Baker's Sapphire Bulwark
 			i(285222),	-- Baker's Emerald Bulwark
 			i(285223),	-- Baker's Morganite Bulwark
