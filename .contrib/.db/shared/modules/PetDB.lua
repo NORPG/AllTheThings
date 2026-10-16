@@ -4711,4 +4711,17 @@ i(279197, 5129);	-- Slitherfang
 i(276927, 5100);	-- Aqir Razorwing
 i(274923, 5066);	-- Aqir Scuttler
 i(274927, 5068);	-- Aqir Wingreaver
---- Unsorted ---
+
+------------------
+-- PATCH 12.1.7 --
+------------------
+--- UNSORTED ---
+i(286652, 5184);	-- Baby Stegodon (Black)
+i(286653, 5185);	-- Baby Stegodon (Blue)
+i(286654, 5186);	-- Baby Stegodon (Green)
+i(286655, 5187);	-- Baby Stegodon (Purple)
+i(284094, 5170);	-- Hex-Cursed Manifestation
+i(283378, 5169);	-- Inquisitor's Messenger
+i(286661, 5188);	-- Petite Snow Buddy
+i(283375, 5168);	-- Slayer's Faithful Tracker
+i(284103, 5171);	-- Zyg'ee <The Hadorable Tyrant>

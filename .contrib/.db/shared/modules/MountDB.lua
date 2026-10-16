@@ -2576,7 +2576,7 @@ i(276926, 1301331);	-- Corrupted Swarmer
 i(278743, 1305612);	-- Giant Grrloc
 i(283363, 1314715);	-- Loa-Blessed Wayfarer
 i(282414, 1313788);	-- Sporebearer Fungal Strider
---- Unsorted ---
+--- UNSORTED ---
 i(280521, 1309112);	-- [PH] Brown Cat Mount
 i(280520, 1309110);	-- [PH] Purple Cat Mount
 i(280522, 1309114);	-- [PH] White Blue Cat Mount
@@ -2585,3 +2585,20 @@ i(282647, 1314166);	-- Hot Motocross Bunmover 4200
 i(282648, 1314168);	-- Hot Motocross Bunmover 4400
 i(282649, 1314169);	-- Hot Motocross Bunmover 4600
 i(275756, 1297808);	-- Living Heartsbane Cauldron
+
+------------------
+-- PATCH 12.1.7 --
+------------------
+--- UNSORTED ---
+i(274262, 1293485);	-- [PH] Dino Size Test
+i(286632, 1320798);	-- [PH] Stegodon - Black
+i(286633, 1320801);	-- [PH] Stegodon - Blue
+i(286634, 1320802);	-- [PH] Stegodon - Green
+i(286635, 1320803);	-- [PH] Stegodon - Purple
+i(282272, 1313284);	-- Autumn Dream Jumper
+i(287513, 1323203);	-- Markeet of the Infinite
+i(288214, 1325226);	-- Reanimated Skeletal Raptor
+i(275255, 1296315);	-- Shadowbound Storybook
+i(282278, 1313363);	-- Shadowpaw Wood Watcher
+i(282271, 1313280);	-- Stone-Carved Crusher
+i(287092, 1321944);	-- Winterrrgl's Pine-Powered Candy Cane Contraption
