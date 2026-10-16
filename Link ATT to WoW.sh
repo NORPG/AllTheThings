@@ -8,6 +8,7 @@ link_wowfolder() {
         link_expansion "$1/_classic_beta_"
         link_expansion "$1/_classic_ptr_"
         link_expansion "$1/_classic_era_ptr_"
+        link_expansion "$1/_forever_"
         link_expansion "$1/_retail_"
         link_beta "$1/_beta_"
         link_ptr "$1/_ptr_"

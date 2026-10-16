@@ -67,6 +67,7 @@ if exist "%~1\" (
     call :link_expansion "%~1\_classic_beta_"
     call :link_expansion "%~1\_classic_ptr_"
     call :link_expansion "%~1\_classic_era_ptr_"
+    call :link_expansion "%~1\_forever_"
     call :link_expansion "%~1\_retail_"
     call :link_beta "%~1\_beta_"
     call :link_ptr "%~1\_ptr_"
