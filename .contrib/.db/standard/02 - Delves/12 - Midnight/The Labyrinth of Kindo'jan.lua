@@ -155,10 +155,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					},
 					["qgs"] = {
 						265173,	-- Kul'amara the Fierce
+						276329,	-- Kul'amara the Fierce
 						277031,	-- Kul'amara the Fierce
 					},
 					["coords"] = {
 						{ 33.2, 25.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
+						{ 34.5, 17.0, MAP.MIDNIGHT.ZULAMAN },
 						{ 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 					},
 				}),

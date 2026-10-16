@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(95191, {	-- The Slumbering Swarm
 							["sourceQuest"] = 95187,	-- All Along the Watchtowers
 							["qg"] = 260160,	-- Lor'themar Theron
-							["coord"] = { 60.3, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["coord"] = { 62.5, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						q(95193, {	-- The Amani Impasse
 							["sourceQuests"] = {
@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								95191,	-- The Slumbering Swarm
 							},
 							["qg"] = 260160,	-- Lor'themar Theron
-							["coord"] = { 62.5, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["coord"] = { 60.3, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 							["groups"] = {
 								i(280036),	-- Veilshroud Gauntlets
 								i(280033),	-- Veilshroud Grips
@@ -207,7 +207,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(95197, {	-- The Long Way Around
 							["sourceQuest"] = 95193,	-- The Amani Impasse
 							["qg"] = 260155,	-- Lady Liadrin
-							["coord"] = { 62.4, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["coord"] = { 60.3, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						q(95199, {	-- Tenuous Alliances
 							["sourceQuest"] = 95197,	-- The Long Way Around
