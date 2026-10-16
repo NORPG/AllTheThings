@@ -1,9 +1,9 @@
--- Lua 5.1 regression tests for ordinary consumable source windows.
+-- Lua 5.1 regression tests for ordinary consumable source windows and tooltip paths.
 -- Run: lua5.1 tests/quest-reward-consumables.lua [repository-root]
 -- Loads the real classifier, source builder, source searcher, object cloning/merging,
 -- active UpdateGroups/TopLevelUpdateGroup, search processing, popout entry points and checkbox.
 -- Native UI, cache indexing and collection switches are fixture services.
--- Item 3382 and all acquisition relationships below are synthetic test data.
+-- Source-window relationships are synthetic; tooltip cases load actual Camelot quest/item payloads.
 
 ---@class ATTQuestWindowTestNode: ATTQuestSourceView
 ---@field hash? string Raw fixture inputs omit this field; the constructed base class computes it lazily.
@@ -33,13 +33,14 @@
 ---@field type? string Specialized item class selector.
 ---@field qItemID? ItemID Quest-start item association.
 ---@field spellID? SpellID Spell association.
+---@field sourceID? SourceID Appearance source carried by the unrelated quest reward.
 ---@field recipeID? RecipeID Crafting source identifier.
 ---@field characterUnlock? boolean Specialized collection marker.
 ---@field nomerge? boolean Existing unique-hash flag.
 ---@field rank? number Existing hash rank.
 ---@field IgnorePopout? boolean Existing row-click guard.
 ---@field OnPopout? fun(self: ATTQuestWindowTestNode): ATTQuestWindowTestNode Existing popout replacement.
----@alias ATTQuestWindowTestValue nil|boolean|number|string|ATTQuestWindowTestNode|ATTQuestWindowTestNode[]|ATTProvider[]|ATTCost[]|CreatureID[]|string[]|ATTQuestWindowTestVariant[]|ATTQuestSourceUpdate|ATTQuestSourceSetVisibility
+---@alias ATTQuestWindowTestValue nil|boolean|number|string|ATTQuestWindowTestWindow|ATTQuestWindowTestNode|ATTQuestWindowTestNode[]|ATTProvider[]|ATTCost[]|CreatureID[]|string[]|ATTQuestWindowTestVariant[]|ATTQuestSourceUpdate|ATTQuestSourceSetVisibility
 ---@alias ATTQuestWindowTestGetter fun(node: ATTQuestWindowTestNode): ATTQuestWindowTestValue
 ---@alias ATTQuestWindowTestClassMember ATTQuestWindowTestValue|ATTQuestWindowTestGetter
 ---@alias ATTQuestWindowTestFields { [string]: ATTQuestWindowTestClassMember }
@@ -53,7 +54,7 @@
 ---@alias ATTQuestWindowTestSources { [ItemID]: ATTQuestWindowTestNode[] }
 ---@alias ATTQuestWindowTestObjects { [string]: ATTQuestWindowTestNode }
 ---@alias ATTQuestWindowTestEvents { [string]: ATTQuestWindowTestEvent[] }
----@alias ATTQuestWindowTestEvent fun(...: boolean|ATTQuestWindowTestNode): nil
+---@alias ATTQuestWindowTestEvent fun(...: boolean|string|ATTQuestWindowTestNode): nil
 ---@alias ATTQuestWindowTestWindows { [string]: ATTQuestWindowTestWindow }
 ---@alias ATTQuestWindowTestSearch fun(search: string): ATTQuestWindowTestNode[]?, string?, number?
 ---@alias ATTQuestWindowTestModule fun(addonName: string, app: ATTQuestWindowTestApp): nil
@@ -62,14 +63,16 @@
 ---@alias ATTQuestWindowTestClickFactory fun(): ATTQuestWindowTestClick
 ---@alias ATTQuestWindowTestWindowChunk fun(window: ATTQuestWindowTestWindow): nil
 ---@alias ATTQuestWindowTestCheckboxChunk fun(child: ATTQuestWindowTestCheckboxParent, settings: ATTQuestWindowTestSettings, labels: ATTQuestWindowTestLabels): nil
----@alias ATTQuestWindowTestChunk ATTQuestWindowTestModule|ATTQuestWindowTestResetFactory|ATTQuestWindowTestClickFactory|ATTQuestWindowTestWindowChunk|ATTQuestWindowTestCheckboxChunk
+---@alias ATTQuestWindowTestChunk ATTQuestTooltipTestLeaveFactory|ATTQuestTooltipTestSettingsChunk|ATTQuestTooltipTestSetDataFactory|ATTQuestTooltipTestPayloadChunk|ATTQuestTooltipTestAttachFactory|ATTQuestWindowTestModule|ATTQuestWindowTestResetFactory|ATTQuestWindowTestClickFactory|ATTQuestWindowTestWindowChunk|ATTQuestWindowTestCheckboxChunk
 
 ---@class ATTQuestWindowTestSettings
 ---@field Collectibles ATTQuestWindowTestFlags Existing tracking toggles.
 ---@field Get fun(self: ATTQuestWindowTestSettings, key: string): boolean? General switch.
----@field GetTooltipSetting fun(self: ATTQuestWindowTestSettings, key: string): boolean? Expansion setting.
+---@field GetTooltipSetting fun(self: ATTQuestWindowTestSettings, key: string): boolean|number|nil Tooltip switch or location limit.
+---@field Refresh fun(self: ATTQuestWindowTestSettings): nil Settings-page refresh boundary.
+---@field CreateInformationType? fun(name: string, definition: ATTQuestTooltipTestInformation): nil Captures the real source-location processor.
 ---@field Set fun(self: ATTQuestWindowTestSettings, key: string, value?: boolean): nil Sets the general switch.
----@field UpdateMode fun(self: ATTQuestWindowTestSettings, mode: string): nil Simulates completed settings recomputation, then real window refresh dispatch.
+---@field UpdateMode fun(self: ATTQuestWindowTestSettings, mode: string): nil Forbidden global collection-mode refresh spy.
 
 ---@class ATTQuestWindowTestWindow
 ---@field Suffix string Existing window identity.
@@ -78,7 +81,7 @@
 ---@field updates integer Number of actual data updates.
 ---@field Toggle fun(self: ATTQuestWindowTestWindow): nil Toggles the existing frame.
 ---@field SetVisible fun(self: ATTQuestWindowTestWindow, visible: boolean): nil Frame visibility mock.
----@field SetData fun(self: ATTQuestWindowTestWindow, node: ATTQuestWindowTestNode): nil Data assignment mock.
+---@field SetData fun(self: ATTQuestWindowTestWindow, node: ATTQuestWindowTestNode): nil Real root/window association.
 ---@field AssignChildren fun(self: ATTQuestWindowTestWindow): nil Uses fixture parent assignment.
 ---@field ExpandData fun(self: ATTQuestWindowTestWindow, expanded: boolean): nil No-op native display expansion.
 ---@field Update fun(self: ATTQuestWindowTestWindow, force?: boolean): nil Runs actual UpdateGroups for this root.
@@ -88,14 +91,22 @@
 ---@field OnLoad? fun(window: ATTQuestWindowTestWindow, settings: ATTQuestWindowTestFlags): nil Not executed by the fixture frame.
 
 ---@class ATTQuestWindowTestLabels
+---@field UNSORTED? string Unsorted-source path marker.
+---@field HIDDEN_QUEST_TRIGGERS? string Hidden-source path marker.
+---@field AND_OTHER_SOURCES? string Source overflow summary format.
+---@field UNOBTAINABLE_ITEM_TEXTURES? { [integer]: string } Source availability textures.
 ---@field SOURCES? string Source header label.
 ---@field SOURCES_DESC? string Source description.
 ---@field SHOW_QUEST_REWARD_CONSUMABLES_CHECKBOX? string Setting label.
 ---@field SHOW_QUEST_REWARD_CONSUMABLES_CHECKBOX_TOOLTIP? string Setting tooltip.
 
+---@class ATTQuestWindowTestFilters
+---@field ItemUnbound fun(): false Existing binding filter.
+---@field InGame? fun(node: ATTQuestWindowTestNode): true Tooltip fixture's availability filter.
 ---@class ATTQuestWindowTestModules
 ---@field QuestRewardVisibility ATTQuestRewardVisibilityAPI Actual feature API.
----@field Filter {Set: {ItemUnbound: fun(active?: boolean): nil}, Get: {ItemUnbound: fun(): false}, Filters: {ItemUnbound: fun(): false}} UpdateGroups dependencies; category behavior is outside this source-window fixture.
+---@field Filter {Set: {ItemUnbound: fun(active?: boolean): nil}, Get: {ItemUnbound: fun(): false}, Filters: ATTQuestWindowTestFilters} UpdateGroups dependencies; category behavior is outside this source-window fixture.
+---@field Reagent {GetReagentCollector: fun(group: ATTQuestWindowTestNode, info: ATTQuestWindowTestNode): nil} Unused asynchronous collector boundary.
 ---@field Upgrade {CollectibleAsUpgrade?: ATTQuestWindowTestPredicate} Getter imported by real Item declarations but not executed here.
 ---@field Item {CleanLink: fun(link: string): string} Plain item command normalization.
 ---@field Color? {Colorize: fun(text: string): string} Absent; actual UpdateGroups installs its fallback.
@@ -121,7 +132,10 @@
 ---@field CreateVisualHeaderWithGroups fun(node: ATTQuestWindowTestNode): ATTQuestWindowTestNode Identity map-header mock.
 ---@field CreateHash fun(node: ATTQuestWindowTestNode): string Actual production hash generator.
 ---@field AddEventHandler fun(event: string, callback: ATTQuestWindowTestEvent, immediate?: boolean): nil Registers handlers without running them.
----@field HandleEvent fun(event: string, ...: boolean|ATTQuestWindowTestNode): nil Dispatches captured handlers.
+---@field HandleEvent fun(event: string, ...: boolean|string|ATTQuestWindowTestNode): nil Dispatches captured handlers.
+---@field WipeSearchCache fun(): nil Actual search/tooltip cache invalidation.
+---@field WipeTooltipInfoCache fun(): nil Actual tooltip cache reset, or no-op before loading tooltip cases.
+---@field GetCachedData fun(key: string, method: ATTQuestTooltipTestSearchBuilder, ...: ATTQuestTooltipTestSearchArgument): ATTQuestWindowTestNode?, boolean? Actual search-result cache.
 ---@field GetRawField fun(field: string, id: number): ATTQuestWindowTestNode[]? Original occurrence lookup.
 ---@field SearchForObject fun(field: string, id: number, mode?: string, all?: boolean): ATTQuestWindowTestNode|ATTQuestWindowTestNode[]|nil Fixture search index.
 ---@field SearchForField fun(field: string, id: number): ATTQuestWindowTestNode[]? Fixture raw-index lookup.
@@ -146,8 +160,8 @@
 ---@field GetSourceID fun(link: string): nil Synthetic items have no transmog source.
 ---@field SetSkipLevel fun(level: integer): nil No-op fill scheduling boundary.
 ---@field ImportRawLink fun(node: ATTQuestWindowTestNode, link: string): nil No-op native-link decorator.
----@field Sort fun(nodes?: ATTQuestWindowTestNode[], order?: string): nil No-op native presentation sorting.
----@field SortDefaults {Global: string} Sort descriptor placeholder.
+---@field Sort fun(nodes?: ATTQuestWindowTestNode[]|string[], order?: string|ATTQuestTooltipTestSourceOrder): nil Native presentation sorting boundary; lexical tooltip source order is executed.
+---@field SortDefaults {Global: string, Strings?: fun(left: string, right: string): boolean} Sort descriptor placeholder.
 ---@field EmptyFunction fun(): nil Production merge no-op callback.
 ---@field ReturnTrue fun(): true Constant true helper.
 ---@field ReturnFalse fun(): false Constant false helper.
@@ -184,6 +198,7 @@
 ---@field api ATTQuestRewardVisibilityAPI Actual independent classifier API.
 ---@field values ATTQuestWindowTestFlags General option backing store.
 ---@field references ATTQuestWindowTestSources Original item-index arrays.
+---@field qItemSources ATTQuestWindowTestSources Quest-start-item direct source fallback.
 ---@field objects ATTQuestWindowTestObjects Additional source lookup objects.
 ---@field windows ATTQuestWindowTestWindows Created native frame mocks.
 ---@field item ATTQuestWindowTestConstructor Actual Item-class constructor with default f55.
@@ -207,6 +222,66 @@
 ---@class ATTQuestWindowTestCheckboxParent
 ---@field CreateCheckBox fun(self: ATTQuestWindowTestCheckboxParent, text: string?, refresh: ATTQuestWindowTestCheckboxCallback, click: ATTQuestWindowTestCheckboxCallback): ATTQuestWindowTestCheckbox Retains actual callbacks.
 
+
+---@alias ATTQuestTooltipTestSourceOrder fun(left: string, right: string): boolean
+---@alias ATTQuestTooltipTestSearchArgument string|number|ATTQuestWindowTestSearch|{SkipFill?: boolean, IgnoreCache?: boolean}
+---@alias ATTQuestTooltipTestSearchBuilder fun(...: ATTQuestTooltipTestSearchArgument): ATTQuestWindowTestNode?, boolean?
+---@alias ATTQuestTooltipTestSettingsChunk fun(addonName: string, app: ATTQuestWindowTestApp, values: ATTQuestWindowTestFlags): nil
+---@alias ATTQuestTooltipTestSetData fun(window: ATTQuestWindowTestWindow, data?: ATTQuestWindowTestNode): nil
+---@alias ATTQuestTooltipTestSetDataFactory fun(): ATTQuestTooltipTestSetData
+---@alias ATTQuestTooltipTestPayloadChunk fun(): ATTQuestWindowTestNode
+---@alias ATTQuestTooltipTestAttach fun(tooltip: ATTQuestTooltipTestTooltip, method: ATTQuestWindowTestSearch, search: string): nil
+---@alias ATTQuestTooltipTestAttachFactory fun(addonName: string, app: ATTQuestTooltipTestApp): ATTQuestTooltipTestAttach
+---@alias ATTQuestTooltipTestLeaveFactory fun(): ATTQuestTooltipTestEnter
+---@alias ATTQuestTooltipTestEnter fun(row: ATTQuestTooltipTestRow): nil
+---@class ATTQuestTooltipTestInformation
+---@field Process fun(self: ATTQuestTooltipTestInformation, reference: ATTQuestWindowTestNode, info: ATTQuestSourceTooltipInfo): nil Actual source-location processor.
+---@class ATTQuestTooltipTestTooltip
+---@field lines string[] Native rendered lines, cleared independently of the addon cache.
+---@field owner? ATTQuestTooltipTestRow Native owner; external tooltips have no ATT row.
+---@field visible boolean Native visibility.
+---@field ATT_AttachComplete? boolean Native ATT attachment marker.
+---@field ATT_IsRefreshing? boolean Native refresh marker.
+---@field ATT_IsModifierKeyDown? boolean Native modifier marker.
+---@field AddLine fun(self: ATTQuestTooltipTestTooltip, text: string, ...: number): nil Native text rendering boundary.
+---@field AddDoubleLine fun(self: ATTQuestTooltipTestTooltip, text: string, right: string, ...: number): nil Native text rendering boundary.
+---@field NumLines fun(self: ATTQuestTooltipTestTooltip): integer Native rendered-line count.
+---@field ClearLines fun(self: ATTQuestTooltipTestTooltip): nil Native clearing boundary.
+---@field ClearATTReferenceTexture fun(self: ATTQuestTooltipTestTooltip): nil Texture boundary.
+---@field Hide fun(self: ATTQuestTooltipTestTooltip): nil Native hiding boundary.
+---@field IsVisible fun(self: ATTQuestTooltipTestTooltip): boolean Native visibility query.
+---@field GetOwner fun(self: ATTQuestTooltipTestTooltip): ATTQuestTooltipTestRow? Native owner query.
+---@class ATTQuestTooltipTestRow
+---@field ref ATTQuestWindowTestNode Displayed reference.
+---@field enter ATTQuestTooltipTestEnter Fixture native OnEnter boundary invoking the actual source processor.
+---@field leave ATTQuestTooltipTestEnter Actual RowOnLeave.
+---@field GetScript fun(self: ATTQuestTooltipTestRow, script: string): ATTQuestTooltipTestEnter Native script lookup.
+---@class ATTQuestTooltipTestState
+---@field processCalls integer Source processor invocations, exposing cache hits.
+---@field rawCalls integer Feature raw-index lookups.
+---@field tooltipSettings { [string]: boolean|number } Existing tooltip controls.
+---@field info ATTQuestTooltipTestInformation Actual source-location definition.
+---@field attach ATTQuestTooltipTestAttach Actual external cache/render path.
+---@class ATTQuestTooltipTestApp: ATTQuestWindowTestApp
+---@field print fun(status: boolean, message: string): nil Tooltip search-error assertion boundary.
+---@field FillGroups fun(node: ATTQuestWindowTestNode): nil No-op unrelated symlink/cost filling boundary.
+---@field EmptyTable ATTQuestWindowTestNode[] Empty search fallback.
+---@field WOWAPI {issecretvalue: fun(text: string): false} Plain fixture strings.
+---@field MODE_DEBUG? boolean Existing debug display setting.
+---@field IsComplete fun(node: ATTQuestWindowTestNode): boolean|integer|nil Actual completion helper.
+---@field ArrayAppend fun(target: string[], ...: string[]): nil Source-bucket concatenation.
+---@field GetRelativeGroup fun(node: ATTQuestWindowTestNode, field: string, expected: boolean): ATTQuestWindowTestNode? No event/unobtainable ancestors in these fixtures.
+---@field AbbreviateString fun(text: string): string Display abbreviation boundary.
+---@field CloneDictionary fun(original: ATTQuestWindowTestFlags, overrides: ATTQuestWindowTestFlags): ATTQuestWindowTestFlags Source-key allowlist.
+---@field ProcessInformationTypesForExternalTooltips fun(rows: ATTQuestSourceTooltipInfo, reference: ATTQuestWindowTestNode): nil Calls the captured actual SourceLocations processor.
+---@field ActiveRowReference? ATTQuestWindowTestNode Native active-row reference.
+---@class ATTQuestTooltipTestEnvironment: ATTQuestWindowTestEnvironment
+---@field GameTooltip? ATTQuestTooltipTestTooltip Native tooltip frame.
+---@field q ATTQuestWindowTestConstructor Quest payload constructor.
+---@field i ATTQuestWindowTestConstructor Item payload constructor.
+---@field qo ATTQuestWindowTestConstructor Objective payload constructor.
+---@field s fun(sourceID: SourceID, itemID: ItemID, fields: ATTQuestWindowTestNode): ATTQuestWindowTestNode Unrelated appearance constructor boundary.
+
 assert(_VERSION == "Lua 5.1", "Run these tests with Lua 5.1")
 local root = arg[1] or "."
 ---@param path string Repository-relative source path.
@@ -226,7 +301,7 @@ local function section(path, first, last)
 	return source:sub(start, finish - 1)
 end
 ---@param source string Lua 5.1 production snippet.
----@param env ATTQuestWindowTestEnvironment|_G Supplied native/cache services.
+---@param env ATTQuestWindowTestEnvironment|ATTQuestTooltipTestEnvironment|_G Supplied native/cache services.
 ---@param name string Diagnostic name identifying the source region.
 ---@return ATTQuestWindowTestChunk chunk Callable with one of the concrete region contracts.
 local function compile(source, env, name)
@@ -275,6 +350,8 @@ string.split = split
 local function fixture()
 	---@type ATTQuestWindowTestEvents, ATTQuestWindowTestSources, ATTQuestWindowTestObjects, ATTQuestWindowTestWindows
 	local events, references, objects, windows = {}, {}, {}, {}
+	---@type ATTQuestWindowTestSources
+	local qItemSources = {}
 	local values, debugVisibility = { ["Show:QuestRewardConsumables"] = false }, {active = false}
 	local app
 	---@param node ATTQuestWindowTestNode Node whose containing metadata is queried.
@@ -326,7 +403,7 @@ local function fixture()
 	---@return ATTQuestWindowTestConstructor constructor Source constructor using the fixture base fields.
 	local function constructor(name, key) return createClass(name, key, {}) end
 	app = {
-		Modules = { Upgrade = {}, Filter = {Set = {ItemUnbound = noop}, Get = {ItemUnbound = no},
+		Modules = { Upgrade = {}, Reagent = {GetReagentCollector = noop}, Filter = {Set = {ItemUnbound = noop}, Get = {ItemUnbound = no},
 			Filters = {ItemUnbound = no}}, Item = {
 			---@param link string Native link or plain command.
 			---@return string link Unchanged plain fixture command.
@@ -336,7 +413,7 @@ local function fixture()
 		GlobalVariants = {AndLockCriteria = {}, AndFactionBonus = {}},
 		---@return ATTQuestWindowTestRunner runner Captured placeholder; scheduling is not exercised.
 		CreateRunner = function() return {} end, CreateClass = createClass, ReturnTrue = yes, ReturnFalse = no,
-		EmptyFunction = noop, GetRelativeValue = relative, Sort = noop, SortDefaults = {Global = "global"},
+		EmptyFunction = noop, WipeTooltipInfoCache = noop, GetRelativeValue = relative, Sort = noop, SortDefaults = {Global = "global"},
 		SetSkipLevel = noop, ImportRawLink = noop, GetSourceID = noop,
 		---@param node ATTQuestWindowTestNode Map header source.
 		---@return ATTQuestWindowTestNode node Same fixture display object.
@@ -360,33 +437,26 @@ local function fixture()
 		events[event] = events[event] or {}; events[event][#events[event]+1] = action
 	end
 	---@param event string Event name.
-	---@param ... boolean|ATTQuestWindowTestNode Event payload.
+	---@param ... boolean|string|ATTQuestWindowTestNode Event payload.
 	---@return nil
 	app.HandleEvent = function(event, ...) for _,action in ipairs(events[event] or {}) do action(...) end end
-	app.Settings = { Collectibles = {Quests = false, Loot = false},
+	app.Settings = { Collectibles = {Quests = false, Loot = false}, Set = noop, -- Replaced by actual Settings.Set below.
 		---@param self ATTQuestWindowTestSettings Unused settings receiver.
 		---@param key string General setting key.
 		---@return boolean? value Current value.
 		Get = function(self, key) return values[key] end,
 		GetTooltipSetting = no,
-		---@param self ATTQuestWindowTestSettings Unused settings receiver.
-		---@param key string General setting key.
-		---@param value? boolean Requested state.
+		Refresh = noop,
+		---@param _ ATTQuestWindowTestSettings Unused settings receiver.
+		---@param mode string Any global collection-mode refresh is a regression.
 		---@return nil
-		Set = function(self, key, value) values[key] = value end,
-		---@param self ATTQuestWindowTestSettings Unused settings receiver.
-		---@param mode string Forced refresh requested by the actual checkbox.
-		---@return nil
-		UpdateMode = function(self, mode)
-			equal(mode, "FORCE", "Checkbox requests full refresh")
-			app.HandleEvent("OnSettingsRefreshed"); app.HandleEvent("OnRefreshComplete")
-		end }
+		UpdateMode = function(_, mode) error("Source setting must not recompute collection modes: "..mode) end }
 	---@return boolean? collectible Existing quest collection switch.
 	app.CollectibleAsQuest = function() return app.Settings.Collectibles.Quests end
 	---@param field string Indexed field; itemID is populated by fixtures.
 	---@param id number Indexed identifier.
 	---@return ATTQuestWindowTestNode[]? sources Original occurrence array.
-	app.GetRawField = function(field, id) return field == "itemID" and references[id] or nil end
+	app.GetRawField = function(field, id) return (field == "itemID" and references[id]) or (field == "qItemID" and qItemSources[id]) or nil end
 	app.SearchForField = app.GetRawField
 	---@param field string Identifier to search.
 	---@param id number Identifier value.
@@ -444,6 +514,13 @@ local function fixture()
 		GetTimePreciseSec = function() return 0 end }, {__index = _G})
 	---@cast env ATTQuestWindowTestEnvironment
 	local prefix = "local _, app = ...\n"
+	;(compile(prefix.."local settings, RawSettings = app.Settings, {General = select(3, ...)}\n"..
+		section("src/Settings/Settings.lua", "settings.Set = function", "settings.SetValue = function"), env,
+		"Settings.Set") --[[@as ATTQuestTooltipTestSettingsChunk]])("ATT", app, values)
+	;(compile(prefix.."local IsRetrieving = app.ReturnFalse\n"..
+		read("src/Modules/RetrievingData.lua"):sub((assert(read("src/Modules/RetrievingData.lua"):find("local searchCache, working", 1, true)))), env,
+		"Search cache") --[[@as ATTQuestWindowTestModule]])("ATT", app)
+
 	;(compile(prefix.."local GetRelativeValue = app.GetRelativeValue\n"..
 		section("src/Classes/base.lua", "local returnZero", "-- Helper Functions"), env, "CreateHash")
 		--[[@as ATTQuestWindowTestModule]])("ATT", app)
@@ -518,6 +595,8 @@ local function fixture()
 		"Root slash dispatch") --[[@as ATTQuestWindowTestModule]])("ATT", app)
 	;(compile(prefix..section("src/Cache.lua", "local function GenerateSourceHash", "-- Hash-Based Searching"), env,
 		"Source path hashes") --[[@as ATTQuestWindowTestModule]])("ATT", app)
+	local setData = (compile("return "..section(ui, "SetData = function", "\tExpandData = function"):match("= (.*),%s*$"), env,
+		"Window.SetData") --[[@as ATTQuestTooltipTestSetDataFactory]])()
 	---@param self ATTQuestWindowTestApp Addon receiver.
 	---@param suffix string Existing source hash.
 	---@return ATTQuestWindowTestWindow? window Matching frame, if created.
@@ -535,10 +614,7 @@ local function fixture()
 			---@param visible boolean New frame visibility.
 			---@return nil
 			SetVisible = function(self, visible) self.visible = visible end,
-			---@param self ATTQuestWindowTestWindow Native frame receiver.
-			---@param node ATTQuestWindowTestNode Root assigned by real OnInitForPopout.
-			---@return nil
-			SetData = function(self, node) self.data = node end,
+			SetData = setData,
 			---@param self ATTQuestWindowTestWindow Native frame receiver.
 			---@return nil
 			AssignChildren = function(self) app.AssignChildren(self.data) end,
@@ -592,7 +668,7 @@ local function fixture()
 		references[id] = references[id] or {}; references[id][#references[id]+1] = item; return item
 	end
 	return { app = app, api = app.Modules.QuestRewardVisibility, values = values, references = references, objects = objects,
-		windows = windows, item = item, quest = quest, link = link, addSource = addSource,
+		windows = windows, qItemSources = qItemSources, item = item, quest = quest, link = link, addSource = addSource,
 		rightClick = rightClick, slash = slash, env = env, debug = debugVisibility }
 end
 
@@ -614,8 +690,7 @@ end
 ---@param enabled boolean New feature state.
 ---@return nil
 local function toggle(f, enabled)
-	f.values["Show:QuestRewardConsumables"] = enabled
-	f.app.HandleEvent("OnSettingsRefreshed"); f.app.HandleEvent("OnRefreshComplete")
+	f.app.Settings:Set("Show:QuestRewardConsumables", enabled)
 end
 
 ---@param f ATTQuestWindowTestFixture Fixture containing initialized windows.
@@ -647,7 +722,7 @@ local originalHeader = header
 local initialUpdates = window.updates
 toggle(f, true)
 equal(sources(window), originalHeader, "Settings refresh updates the existing source tree")
-equal(window.updates > initialUpdates, true, "Actual OnRefreshComplete dispatch updates the existing frame")
+equal(window.updates > initialUpdates, true, "Scoped Settings.OnSet updates the existing source frame")
 equal(row(header, "questID", 100).visible, true, "ON restores one-time source with Quest and Loot tracking off")
 equal(window.data.total, 0, "ON does not add a collection denominator")
 f.rightClick({index = 1}, window.data)
@@ -670,6 +745,7 @@ equal(row(sources(clickWindow), "questID", 110).visible, true, "ON restores righ
 clicked.app.Settings.Collectibles.Quests = true
 clicked.app.Settings.Collectibles.Loot = true
 clicked.debug.active = true
+clicked.app.HandleEvent("OnSettingsRefreshed")
 toggle(clicked, false)
 equal(sources(clickWindow).visible, nil, "OFF beats collectible, Loot and default/debug visibility")
 equal(row(sources(clickWindow), "questID", 110).visible, nil, "Hidden-only header also clears a previously visible source row")
@@ -875,4 +951,269 @@ checkbox.checked = false; checkbox:OnClick()
 equal(row(header, "questID", 100).visible, nil, "Actual checkbox hides source in the same existing window")
 equal(window.data.total, 0, "Checkbox never changes collection denominator")
 equal(window.data.progress, 0, "Checkbox never changes collection numerator")
-print("PASS: "..checks.." quest consumable source-window checks")
+
+
+-- Tooltip coverage loads actual Camelot payloads, the native SourceLocations processor,
+-- search cache, tooltip cache/rendering, and row redraw/leave callbacks. Native frame
+-- methods and OnEnter's unrelated information types remain fixture boundaries.
+---@param sourceFixture ATTQuestWindowTestFixture Source fixture extended with actual tooltip code.
+---@return ATTQuestTooltipTestState state Tooltip controls, actual processor and external attachment function.
+local function tooltipFixture(sourceFixture)
+	local app = sourceFixture.app --[[@as ATTQuestTooltipTestApp]]
+	local env = sourceFixture.env --[[@as ATTQuestTooltipTestEnvironment]]
+	local state = {processCalls = 0, rawCalls = 0, tooltipSettings = {
+		SourceLocations = true, ["SourceLocations:Things"] = true,
+		["SourceLocations:Completed"] = true, ["SourceLocations:Unsorted"] = true,
+		["SourceLocations:Wrapping"] = true, Locations = 20,
+	}}
+	---@cast state ATTQuestTooltipTestState
+	---@param _ ATTQuestWindowTestSettings Unused settings receiver.
+	---@param key string Tooltip setting key.
+	---@return boolean|number|nil value Existing tooltip control.
+	app.Settings.GetTooltipSetting = function(_, key) return state.tooltipSettings[key] end
+	---@param _ string Information-type name.
+	---@param definition ATTQuestTooltipTestInformation Actual processor registration.
+	---@return nil
+	app.Settings.CreateInformationType = function(_, definition) state.info = definition end
+	---@param _ boolean Failed pcall result.
+	---@param message string Search error, surfaced instead of silently swallowing a fixture omission.
+	---@return nil
+	app.print = function(_, message) error(message) end
+	app.FillGroups = noop
+	app.EmptyTable, app.WOWAPI = {}, {issecretvalue = no}
+	app.Modules.Filter.Filters.InGame = yes
+	app.GetRelativeGroup = noop
+	---@param text string Display text.
+	---@return string text Same fixture label.
+	app.AbbreviateString = function(text) return text end
+	---@param target string[] Destination source bucket.
+	---@param ... string[] Additional source buckets.
+	---@return nil
+	app.ArrayAppend = function(target, ...)
+		for _,values in ipairs({...}) do for _,value in ipairs(values) do target[#target+1] = value end end
+	end
+	---@param registry ATTQuestWindowTestFlags Existing thing-key registry.
+	---@param overrides ATTQuestWindowTestFlags Per-information-type overrides.
+	---@return ATTQuestWindowTestFlags copy Independent key registry.
+	app.CloneDictionary = function(registry, overrides)
+		local copy = {}; for key,value in pairs(registry) do copy[key] = value end
+		for key,value in pairs(overrides) do copy[key] = value end; return copy
+	end
+	---@param values? ATTQuestWindowTestNode[]|string[] Display nodes or source paths.
+	---@param order? string|ATTQuestTooltipTestSourceOrder Node sorting descriptor or actual lexical comparator.
+	---@return nil
+	app.Sort = function(values, order) if values and type(order) == "function" then table.sort(values, order) end end
+	---@param left string Left source path.
+	---@param right string Right source path.
+	---@return boolean before Whether the first source sorts before the second.
+	app.SortDefaults.Strings = function(left, right) return left < right end
+	app.L.UNSORTED, app.L.HIDDEN_QUEST_TRIGGERS = "UNSORTED", "HIDDEN_QUEST_TRIGGERS"
+	app.L.AND_OTHER_SOURCES, app.L.UNOBTAINABLE_ITEM_TEXTURES = "and %d others", {[0] = "other", [1] = "unobtainable"}
+	local prefix = "local _, app = ...\nlocal L = app.L\n"
+	;(compile(prefix..section("src/base.lua", "app.IsComplete = function", "\nend").."\nend", env,
+		"IsComplete") --[[@as ATTQuestWindowTestModule]])("ATT", app)
+	;(compile(prefix..section("AllTheThings.lua", "local SourceLocationSettingsKey", "local function AddContainsData")..
+		"local SourceSearcher = app.SourceSearcher\nlocal IsRetrieving = app.ReturnFalse\nlocal GetUnobtainableTexture = app.EmptyFunction\nlocal DESCRIPTION_SEPARATOR = ' :: '\n"..
+		section("AllTheThings.lua", "local function AddSourceLinesForTooltip", "local unpack = unpack"), env,
+		"SourceLocations formatter and registration") --[[@as ATTQuestWindowTestModule]])("ATT", app)
+	app.HandleEvent("OnLoad")
+	---@param info ATTQuestSourceTooltipInfo Tooltip lines awaiting rendering.
+	---@param reference ATTQuestWindowTestNode Displayed item or search root.
+	---@return nil
+	app.ProcessInformationTypesForExternalTooltips = function(info, reference)
+		state.processCalls = state.processCalls + 1; state.info:Process(reference, info)
+	end
+	local loadAttach = compile(prefix.."local wipe = wipe\n"..
+		section("src/Modules/Tooltip.lua", "local function AttachTooltipInformationEntry", "local CanAttachTooltips")..
+		section("src/Modules/Tooltip.lua", "local TooltipInfoCache", "local AttachTypicalSearchResults")..
+		"\nreturn AttachTooltipSearchResults", env, "External tooltip cache and rendering")
+	---@cast loadAttach ATTQuestTooltipTestAttachFactory
+	state.attach = loadAttach("ATT", app)
+	return state
+end
+
+---@return ATTQuestTooltipTestTooltip tooltip Native frame boundary with observable rendered lines.
+local function tooltipFrame()
+	return {lines = {}, visible = true,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@param text string Native line text.
+		---@return nil
+		AddLine = function(self, text) self.lines[#self.lines+1] = text end,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@param text string Native left text.
+		---@param right string Native right text.
+		---@return nil
+		AddDoubleLine = function(self, text, right) self.lines[#self.lines+1] = text.." | "..right end,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@return integer count Native line count.
+		NumLines = function(self) return #self.lines end,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@return nil
+		ClearLines = function(self) self.lines = {} end,
+		ClearATTReferenceTexture = noop,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@return nil
+		Hide = function(self) self.visible = false end,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@return boolean visible Native visibility.
+		IsVisible = function(self) return self.visible end,
+		---@param self ATTQuestTooltipTestTooltip Tooltip receiver.
+		---@return ATTQuestTooltipTestRow? owner Native owner.
+		GetOwner = function(self) return self.owner end,
+	}
+end
+
+local tooltipSources = fixture()
+local tooltipState = tooltipFixture(tooltipSources)
+local tooltipApp = tooltipSources.app --[[@as ATTQuestTooltipTestApp]]
+local tooltipEnv = tooltipSources.env --[[@as ATTQuestTooltipTestEnvironment]]
+tooltipEnv.q, tooltipEnv.i = tooltipSources.quest, tooltipSources.item
+tooltipEnv.qo = tooltipApp.CreateClass("Objective", "objectiveID", {})
+---@param sourceID SourceID Unrelated appearance source from actual quest payload.
+---@param itemID ItemID Appearance item from the payload.
+---@param fields ATTQuestWindowTestNode Appearance metadata.
+---@return ATTQuestWindowTestNode item Unrelated non-consumable node retained in its actual quest.
+tooltipEnv.s = function(sourceID, itemID, fields) fields.sourceID = sourceID; return tooltipApp.CreateItem(itemID, fields) end
+for _,markers in ipairs({{"q(367,{", "q(368,{"}, {"q(92840,{", "q(92460,{"}}) do
+	local payload = section("db/Camelot/Categories/Zones.lua", markers[1], markers[2]):gsub(",%s*$", "")
+	local questSource = (compile("return "..payload, tooltipEnv, "Actual Camelot quest payload")
+		--[[@as ATTQuestTooltipTestPayloadChunk]])()
+	questSource.text = "quest:"..assert(questSource.questID)
+	local zone = {text = "Zone", g = {questSource}}
+	tooltipApp.AssignChildren(zone)
+	for _,item in ipairs(questSource.g or {}) do
+		if item.itemID == 3382 then
+			tooltipSources.references[3382] = tooltipSources.references[3382] or {}
+			table.insert(tooltipSources.references[3382], item)
+		end
+	end
+end
+local craftPayload = assert(read("db/Camelot/Categories/Craftables.lua"):match("i%(3382,%b{}%)"))
+local loadCraft = compile("return "..craftPayload, tooltipEnv, "Actual Camelot crafting payload")
+---@cast loadCraft ATTQuestTooltipTestPayloadChunk
+local crafted = loadCraft()
+local alchemy = tooltipSources.link({text = "Craftables"}, {text = "Alchemy"})
+tooltipSources.addSource(crafted, alchemy)
+local tooltipReference = tooltipSources.item(3382, {text = "item:3382"})
+---@return ATTQuestSourceTooltipInfo info Actual ATT-row source processor result.
+local function sourceInfo()
+	local info = {}; tooltipState.info:Process(tooltipReference, info); return info
+end
+local offInfo = sourceInfo()
+equal(#offInfo, 1, "OFF tooltip preserves actual crafting source and omits both actual Camelot quest rewards")
+equal(offInfo[1].left:find("Alchemy", 1, true) ~= nil, true, "OFF tooltip retains Alchemy path")
+toggle(tooltipSources, true)
+equal(#sourceInfo(), 3, "ON tooltip includes both actual Camelot quest reward paths and Alchemy")
+tooltipState.tooltipSettings["SourceLocations:Completed"] = false
+equal(#sourceInfo(), 2, "ON independently displays ordinary rewards while completed setting still hides Alchemy")
+toggle(tooltipSources, false)
+equal(#sourceInfo(), 0, "OFF cannot restore ordinary completed paths when completed setting is disabled")
+tooltipState.tooltipSettings["SourceLocations:Completed"] = true
+for _,key in ipairs({"SourceLocations", "SourceLocations:Things"}) do
+	toggle(tooltipSources, true); tooltipState.tooltipSettings[key] = false
+	equal(#sourceInfo(), 0, "Feature respects tooltip "..key.." master/type setting")
+	tooltipState.tooltipSettings[key] = true
+end
+tooltipState.tooltipSettings.Locations = 1
+equal(#sourceInfo(), 2, "Existing tooltip location cap adds its normal overflow summary")
+tooltipState.tooltipSettings.Locations = 20
+tooltipApp.MODE_DEBUG = true; toggle(tooltipSources, false)
+equal(#sourceInfo(), 1, "Debug source fallback cannot restore hidden one-time reward paths")
+local ordinaryRecord = assert(tooltipSources.api.Get(3382))
+equal(ordinaryRecord:IsQuestSource(367), true, "Actual q367 payload preserves original reward containment")
+equal(ordinaryRecord:IsQuestSource(92840), true, "Actual q92840 payload preserves original reward containment")
+local rawLookup = tooltipApp.GetRawField
+---@param field string Source field.
+---@param id number Item identifier.
+---@return ATTQuestWindowTestNode[]? references Original sources.
+tooltipApp.GetRawField = function(field, id) tooltipState.rawCalls = tooltipState.rawCalls + 1; return rawLookup(field, id) end
+local beforeRaw = tooltipState.rawCalls
+equal(tooltipSources.api.GetSourceVisibility(tooltipSources.item(980, {f = 100})), nil, "Other item categories remain uncontrolled")
+equal(tooltipState.rawCalls, beforeRaw, "Other item categories never create a feature raw-source cache record")
+
+-- Distinct original occurrences remain independent even when they share a quest/item ID.
+local mixedTooltip = fixture()
+local mixedState = tooltipFixture(mixedTooltip)
+local mixedQuest = mixedTooltip.link({text = "Zone"}, mixedTooltip.quest(3000, {text = "One-time quest"}))
+local mixedReward = mixedTooltip.addSource(mixedTooltip.item(3000), mixedQuest)
+local objective = mixedTooltip.link(mixedQuest, {key = "objectiveID", objectiveID = 1, text = "Requirement"})
+local mixedRequirement = mixedTooltip.addSource(mixedTooltip.item(3000), objective)
+local dailyQuest = mixedTooltip.link({text = "Zone"}, mixedTooltip.quest(3001, {text = "Daily quest", isDaily = true}))
+mixedTooltip.addSource(mixedTooltip.item(3000), dailyQuest)
+local vendor = mixedTooltip.link({text = "Zone"}, mixedTooltip.app.CreateNPC(3002, {text = "Vendor"}))
+mixedTooltip.addSource(mixedTooltip.item(3000), vendor)
+local mixedReference = mixedTooltip.item(3000)
+local mixedInfo = {}; mixedState.info:Process(mixedReference, mixedInfo)
+equal(#mixedInfo, 3, "OFF tooltip preserves same-quest requirement, repeatable quest and vendor paths")
+equal(mixedTooltip.api.GetSourceVisibility(mixedReward), false, "OFF controls only the direct reward occurrence")
+equal(mixedTooltip.api.GetSourceVisibility(mixedRequirement), nil, "Same-quest requirement occurrence remains uncontrolled")
+toggle(mixedTooltip, true)
+local mixedOn = {}; mixedState.info:Process(mixedReference, mixedOn)
+equal(#mixedOn, 3, "ON keeps existing source-path deduplication for reward plus requirement")
+local specialQuest = mixedTooltip.link({text = "Zone"}, mixedTooltip.quest(3003, {text = "Special collection quest"}))
+local specialItem = mixedTooltip.addSource(mixedTooltip.item(3003, {collectible = true}), specialQuest)
+toggle(mixedTooltip, false)
+equal(mixedTooltip.api.GetSourceVisibility(specialItem), nil, "Special collectible consumable keeps its existing source rules")
+local specialInfo = {}; mixedState.info:Process(mixedTooltip.item(3003), specialInfo)
+equal(#specialInfo, 1, "OFF tooltip retains specialized consumable source")
+local starterQuest = mixedTooltip.link({text = "Zone"}, mixedTooltip.quest(3004, {text = "Quest-start source", qItemID = 3004}))
+mixedTooltip.qItemSources[3004] = {starterQuest}
+local starterInfo = {}; mixedState.info:Process(mixedTooltip.item(3004), starterInfo)
+equal(#starterInfo, 1, "Actual qItemID directSources fallback remains visible OFF")
+equal(starterInfo[1].left:find("Quest-start source", 1, true) ~= nil, true, "Quest-start fallback retains its original source path")
+
+-- Native search and tooltip caches must be invalidated before the settings-triggered redraw.
+local external = tooltipFrame()
+---@return nil
+local function externalHover()
+	external:ClearLines(); external:AddLine("native item line")
+	tooltipState.attach(external, tooltipApp.SearchForLink, "item:3382")
+end
+externalHover(); equal(#external.lines, 2, "External OFF hover renders only Alchemy after its native item line")
+local cachedCalls = tooltipState.processCalls
+externalHover(); equal(tooltipState.processCalls, cachedCalls, "Repeated hover reuses real tooltip cache")
+toggle(tooltipSources, true); externalHover()
+equal(#external.lines, 4, "External ON rehover sees rebuilt search/tooltip caches")
+toggle(tooltipSources, false); externalHover()
+equal(#external.lines, 2, "External OFF rehover removes old quest lines without appending duplicates")
+
+local activeTooltip = tooltipFrame()
+tooltipEnv.GameTooltip = activeTooltip
+local ui = "src/UI/Window Definitions.lua"
+local leave = (compile(section(ui, "local function RowOnLeave", "local function CreateRow").."\nreturn RowOnLeave", tooltipEnv,
+	"Actual row leave") --[[@as ATTQuestTooltipTestLeaveFactory]])()
+local activeRow = {ref = tooltipReference, leave = leave,
+	---@param ownerRow ATTQuestTooltipTestRow Native row invoking actual SourceLocations processing.
+	---@return nil
+	enter = function(ownerRow)
+		activeTooltip.visible = true; activeTooltip.owner = ownerRow
+		activeTooltip:AddLine("native row line")
+		for _,entry in ipairs(sourceInfo()) do activeTooltip:AddLine(entry.left) end
+		activeTooltip.ATT_AttachComplete = true
+	end,
+	---@param self ATTQuestTooltipTestRow Native owner receiver.
+	---@param script string Requested native event script.
+	---@return ATTQuestTooltipTestEnter callback Captured row script.
+	GetScript = function(self, script) return script == "OnLeave" and self.leave or self.enter end,
+}
+---@cast activeRow ATTQuestTooltipTestRow
+;(compile("local _, app = ...\n"..section(ui, "local function RedrawRowTooltip", "local function StopMovingOrSizing"), tooltipEnv,
+	"Actual row tooltip redraw event") --[[@as ATTQuestWindowTestModule]])("ATT", tooltipApp)
+activeRow:enter(); equal(#activeTooltip.lines, 2, "Current ATT row starts with OFF tooltip paths")
+local collection = f.app:CreateWindow("Collection fixture", {OnInit = noop})
+collection:SetData({key = "headerID", total = 7, progress = 3})
+local collectionUpdates, itemUpdates = collection.updates, window.updates
+checkbox.checked = true; checkbox:OnClick()
+equal(collection.updates, collectionUpdates, "Actual checkbox does not update unrelated collection windows")
+equal(window.updates > itemUpdates, true, "Actual checkbox still updates registered source windows")
+equal(collection.data.total, 7, "Actual checkbox preserves unrelated collection total")
+equal(collection.data.progress, 3, "Actual checkbox preserves unrelated collection progress")
+-- The row belongs to the independent tooltip fixture; its own actual Settings.Set event rebuilds it.
+toggle(tooltipSources, true)
+equal(#activeTooltip.lines, 4, "Current ATT row immediately rebuilds ON with both quest paths")
+toggle(tooltipSources, false)
+equal(#activeTooltip.lines, 2, "Current ATT row immediately clears old quest lines OFF")
+equal(activeTooltip.ATT_AttachComplete, true, "Row redraw completes through real RowOnLeave and fixture OnEnter")
+equal(tooltipReference.total, nil, "Tooltip source display never adds collection totals to its item")
+equal(tooltipReference.collectible, nil, "Tooltip source display never marks its item collectible")
+print("PASS: "..checks.." quest consumable source-window/tooltip checks")
