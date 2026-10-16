@@ -56,6 +56,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(796),	-- Loa-Blessed <Name>
 				}),
 				ach(63721),	-- The Labyrinth of Kindo'jan
+				-- TODO: do these actually not exist or just no credit from higher tiers?
 				ach(63863),	-- The Labyrinth of Kindo'jan: Tier 1
 				ach(63864),	-- The Labyrinth of Kindo'jan: Tier 2
 				ach(63865),	-- The Labyrinth of Kindo'jan: Tier 3
@@ -66,7 +67,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				ach(63850),	-- The Labyrinth of Kindo'jan: Tier 8
 				ach(63851),	-- The Labyrinth of Kindo'jan: Tier 9
 				ach(63852),	-- The Labyrinth of Kindo'jan: Tier 10
-				ach(63853),	-- The Labyrinth of Kindo'jan: Tier 11
+				ach(63853),	-- The Labyrinth of Kindo'jan: Tier 11 (confirmed)
 				ach(64118, bubbleDownSelf({ ["timeline"] = { REMOVED_12_1_7 } }, {	-- The Labyrinth of Kindo'jan: One-Champion Army
 					title(802),	-- Lone Raider <Name>
 				})),
@@ -75,6 +76,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				ach(63722, {	-- Who's Labyrinth?
 					title(799),	-- Maze Runner <Name>
 				}),
+			}),
+			n(266500,{	-- Kindo'jan
+				questID = 98967,	-- TODO: verify if repeatable etc. or maybe this indicates something else
 			}),
 			n(DELVE_COMPLETION, {	-- UI Elements
 				i(285807),	-- Heroic Soul Fragment
@@ -88,7 +92,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["minReputation"] = { 2836, 9 },	-- Kindo'jan's Labyrinth, Rank 9
 				}),
 			}),
-			n(FLIGHT_PATHS, {
+			n(FLIGHT_PATHS, sharedData({
+				minReputation = { 2836, 4 },	-- Kindo'jan's Labyrinth, Rank 4
+			},{
 				fp(3300, {	-- Chamber of Rites
 					["coord"] = { 44.4, 72.1, LABYRINTH_KINDOJAN },
 					["cr"] = 273261,	-- Kinduru <Herald of de Loa>
@@ -99,8 +105,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				fp(3306, {	-- Halazzi's Lair
 					["coord"] = { 20.2, 46.8, LABYRINTH_KINDOJAN },
-					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
+					["cr"] = 273571,	-- Kinduru <Herald of de Loa>
 				}),
+				-- TODO: is this bugged, i cannot unlock it. no connected FPs kek
 				fp(3308, {	-- Central Chamber
 					["coord"] = { 44.1, 46.8, LABYRINTH_KINDOJAN },
 					["cr"] = 273569,	-- Kinduru <Herald of de Loa>
@@ -125,18 +132,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 65.2, 32.2, LABYRINTH_KINDOJAN },
 					["cr"] = 273574,	-- Kinduru <Herald of de Loa>
 				}),
+			})),
+			n(FLIGHT_PATHS, sharedData({
 				-- Exo Note: These show up on the Flight Map as places where you can land. They are not actual Flight Path collectibles.
-				fp(3301, { ["collectible"] = false } ),	-- Entrance to The Reliquary
-				fp(3305, { ["collectible"] = false } ),	-- Entrance to Halazzi's Lair
-				fp(3307, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
-				fp(3309, { ["collectible"] = false } ),	-- Entrance to The Catacombs
-				fp(3311, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
-				fp(3312, { ["collectible"] = false } ),	-- Entrance to The Cave Towers
-				fp(3314, { ["collectible"] = false } ),	-- Entrance to Jan'alai's Refuge
-				fp(3316, { ["collectible"] = false } ),	-- Entrance to Akil'zon's Roost
-				fp(3318, { ["collectible"] = false } ),	-- Entrance to Nalorakk's Den
-				fp(3329, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
-			}),
+				collectible = false,
+			},{
+				fp(3301),	-- Entrance to The Reliquary
+				fp(3305),	-- Entrance to Halazzi's Lair
+				fp(3307),	-- Entrance to The Central Chamber
+				fp(3309),	-- Entrance to The Catacombs
+				fp(3311),	-- Entrance to The Central Chamber
+				fp(3312),	-- Entrance to The Cave Towers
+				fp(3314),	-- Entrance to Jan'alai's Refuge
+				fp(3316),	-- Entrance to Akil'zon's Roost
+				fp(3318),	-- Entrance to Nalorakk's Den
+				fp(3329),	-- Entrance to The Central Chamber
+			})),
 			n(QUESTS, {
 				q(99312, {	-- On the Trail of Kindo'jan
 					["description"] = "This quest is obtained from Any Delve. In order not to lose Quest Completion, go back to the Labyrinth entrance and pick up the Quest from the Tablet.",
@@ -316,6 +327,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676658, {	-- Sturdy Chest
 						["coord"] = { 89.0, 77.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98635,
 						["groups"] = { i(280563) },	-- Ancient Hash'ey Battle Art: Falco Strikes
 					}),
 					o(676630, {	-- Sturdy Chest
@@ -325,6 +337,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676642, {	-- Sturdy Chest
 						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98623,
 						["groups"] = { i(284180) },	-- Loa-Touched Deltoid (COSMETIC!)
 					}),
 					o(676641, {	-- Sturdy Chest
@@ -333,6 +346,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					o(676651, {	-- Sturdy Chest
 						["coord"] = { 61.2, 44.8, LABYRINTH_KINDOJAN },
 						["questID"] = 98631,
+					}),
+					o(676660, {	-- Sturdy Chest
+						["coord"] = { 88.5, 77.3, LABYRINTH_KINDOJAN },
+						["questID"] = 98636,
 					}),
 					o(676637, {	-- Sturdy Chest
 						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
@@ -370,8 +387,21 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 26.9, 80.9, LABYRINTH_KINDOJAN },
 						["groups"] = { i(280822) },	-- Nalorakk's Strength Charm (TOY!)
 					}),
+					-- o(???, {	-- Sturdy Chest
+					-- 	["coord"] = { 21.4, 36.7, LABYRINTH_KINDOJAN },
+					-- 	["questID"] = 98603,
+					-- }),
+					o(676641, {	-- Sturdy Chest
+						["coord"] = { 22.5, 12.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98622,
+					}),
 				}),
 				o(689304, {	-- Ancestral Bounty
+					questID = 98758,
+					isWeekly = true,	-- assumed
+					groups = {
+						i(280820),	-- Loa-Blessed Victory
+					},
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
 					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
@@ -412,18 +442,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(263321),	-- Frayed Amani Offering Basket (DECOR!)
 				i(284051),	-- Hexbearer's Pauldrons (COSMETIC!)
 				i(284054),	-- Hexdrinker's Shoulders (COSMETIC!)
+				i(244350),	-- Shattered Amani Ritual Urn (DECOR!)
 				i(264256),	-- Wall-Mounted Amani Animal Trophy (DECOR!)
 			}),
 		},
 	}),
 }))
 
---[[root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, {
 		m(LABYRINTH_KINDOJAN, {
 			["timeline"] = { ADDED_12_1_5 },
 			["groups"] = {
+				q(98842),	-- completion of 9 chambers in one run
 			},
 		}),
 	}),
-}))--]]
+}))

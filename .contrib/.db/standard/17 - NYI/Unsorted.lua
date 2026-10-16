@@ -5,7 +5,6 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
-			i(244350),	-- Shattered Amani Ritual Urn
 			i(265331),	-- Draenei Holo-Junction
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
@@ -24,7 +23,6 @@ root(ROOTS.Unsorted, {
 			i(277893),	-- Emberveil Ritual Knife
 			i(277896),	-- Bloodtide Hauberk
 			i(279396),	-- Timelost Saddle
-			i(280820),	-- Loa-Blessed Victory
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat
 			i(281171),	-- Executive Chef's Gloves

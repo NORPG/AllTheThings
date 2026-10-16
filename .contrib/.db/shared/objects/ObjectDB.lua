@@ -348139,6 +348139,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Bar Tab Barrel",
 			mx = "Barril de la cuenta del bar",
+			pt = "Barril na Conta",
 		},
 	},
 	[656489] = {
