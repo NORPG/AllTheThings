@@ -147,6 +147,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(257046),	-- Boralus Bottle Lamp (DECOR!)
+			i(283321, { ["timeline"] = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll (DECOR!)
 			i(257047),	-- Zandalari Bottle Shipment (DECOR!)
 		})),
 		filter(MISC, {

@@ -58,8 +58,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 61.9, 73.8, THE_WAKING_SHORES },
 				["groups"] = {
 					i(246863, {	-- Open Tome of the Dragon's Dedication (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
 						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+						["timeline"] = { ADDED_11_2_7 },
+					}),
+				},
+			}),
+			n(193955, {	-- Lillistrasza
+				["coord"] = { 59.8, 70.4, THE_WAKING_SHORES },
+				["groups"] = {
+					i(284250, {	-- Pattern: Lillistrasza's Lucky Duck Plushie (RECIPE!)
+						["sourceQuest"] = 70058,	-- Friend on the Mend,
+						["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
+						["timeline"] = { ADDED_12_1_5 }
 					}),
 				},
 			}),

@@ -2032,3 +2032,13 @@ i(275338, 1296512);	-- Twilight's Blade Bedroll
 i(275342, 1296514);	-- Tortollan Slingsack
 --- NYI ---
 i(0, 1296513);	-- Traveled Murloc Plushie
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+--- TRAINER ---
+i(0, 1315757);	-- Beloved Plush Doll
+i(0, 1315465);	-- Closed Vulpera Scroll
+--- ITEM ---
+i(284263, 1315766);	-- Beloved Murloc Plushie
+i(284250, 1315691);	-- Lillistrasza's Lucky Duck Plushie

@@ -3263,6 +3263,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(248121),	-- Draconic Circular Rug (DECOR!)
+			i(284244, { ["timeline"] = { ADDED_12_1_5 } }),	-- Lillistrasza's Lucky Duck Plushie (DECOR!)
 			i(257053),	-- Tapestry of the Five Flights (DECOR!)
 		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({

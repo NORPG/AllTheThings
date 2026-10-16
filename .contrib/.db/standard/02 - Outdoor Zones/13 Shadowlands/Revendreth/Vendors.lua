@@ -195,40 +195,38 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 50.4, 81.4, REVENDRETH },
 				["groups"] = {
 					i(183977, {	-- House Renathal Ceremonial Dagger
-						["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 1750 } },
 						["customCollect"] = "SL_COV_VEN",
 					}),
 					i(183982, {	-- Devourer Mite Sticker
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183980, {	-- Kyrian Gladius
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183981, {	-- Kyrian Greatblade
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183985, {	-- Maldraxxian Bonesaw
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183984, {	-- Maldraxxian Shortblade
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183983, {	-- Rogue Ritualist's Spellblade
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183979, {	-- Standard Fenser's Rapier
-						["cost"] = { { "c", ANIMA, 3000 } },	-- 3,000x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3000 } },
 					}),
 					i(183968, {	-- Venthyr Ritualist's Kris
-						["cost"] = { { "c", ANIMA, 3500 } },	-- 3,500x Reservoir Anima
+						["cost"] = { { "c", ANIMA, 3500 } },
 					}),
 				},
 			}),
 			n(160091, {	-- Ta'ruca
 				["coord"] = { 51.1, 78.5, REVENDRETH },
-				["groups"] = {
-					i(180774),	-- Preserved Berries
-				},
+				["groups"] = { i(180774) },	-- Preserved Berries
 			}),
 			n(171808, {	-- Ta'tru
 				["coord"] = { 51.1, 78.8, REVENDRETH },

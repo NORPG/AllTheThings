@@ -255,21 +255,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					i(187254, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Arrangement of Anima
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							currency(ANIMA),	-- Reservoir Anima
-						},
+						["groups"] = { currency(ANIMA) },
 					})),
 					i(191302, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							i(188957),	-- Genesis Mote
-						},
+						["groups"] = { i(188957) },	-- Genesis Mote
 					})),
 					i(187503, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bundle of Archived Research
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							currency(1931),	-- Cataloged Research
-						},
+						["groups"] = { currency(1931) },	-- Cataloged Research
 					})),
 					i(191300, {	-- Certified Vouchsafe
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
@@ -277,9 +271,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(191030, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							currency(2009),	-- Cosmic Flux
-						},
+						["groups"] = { currency(2009) },	-- Cosmic Flux
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 6 } },
@@ -291,16 +283,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
-						["groups"] = {
-							i(186017),	-- Korthite Crystal
-						},
+						["groups"] = { i(186017) },	-- Korthite Crystal
 					})),
 					i(187817, {	-- Korthite Crystal Geode
 						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = { { "c", VALOR, 1500 } },
-						["groups"] = {
-							i(186017),	-- Korthite Crystal
-						},
+						["groups"] = { i(186017) },	-- Korthite Crystal
 					}),
 					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
@@ -312,40 +300,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(185832, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", VALOR, 750 } },
-						["groups"] = {
-							i(171833),	-- Elethium Ore
-						},
+						["groups"] = { i(171833) },	-- Elethium Ore
 					})),
 					i(185765, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Heavy Callous Hide
 						["cost"] = { { "c", VALOR, 750 } },
-						["groups"] = {
-							i(172097),	-- Heavy Callous Hide
-						},
+						["groups"] = { i(172097) },	-- Heavy Callous Hide
 					})),
 					i(185833, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Lightless Silk
 						["cost"] = { { "c", VALOR, 750 } },
-						["groups"] = {
-							i(173204),	-- Lightless Silk
-						},
+						["groups"] = { i(173204) },	-- Lightless Silk
 					})),
 					i(187221, {	-- Soul Ash Cache
 						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							currency(1828),	-- Soul Ash
-						},
+						["groups"] = { currency(1828) },	-- Soul Ash
 					}),
 					i(187222, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							currency(1767),	-- Stygia
-						},
+						["groups"] = { currency(1767) },	-- Stygia
 					})),
 					i(191301, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["groups"] = {
-							currency(1979),	-- Cyphers of the First Ones
-						},
+						["groups"] = { currency(1979) },	-- Cyphers of the First Ones
 					})),
 					i(191299, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Tribute of the Enlightened
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },

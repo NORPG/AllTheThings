@@ -211,6 +211,7 @@ ARTISAN_TAILORING = {
 		r(12079),	-- Red Mageweave Bag
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1315757, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Plush Doll
 		r(1261695),	-- Dwarven District Banner
 		r(1261688),	-- Elder Rise Rug
 	})),
@@ -766,6 +767,10 @@ COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({
 		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 		["timeline"] = { ADDED_11_2_7 },
 	}),
+	i(284263, {	-- Pattern: Beloved Murloc Plushie (RECIPE!)
+		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		["timeline"] = { ADDED_12_1_5 },
+	}),
 	i(257110, {	-- Pattern: Karabor Bed (RECIPE!)
 		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 		["timeline"] = { ADDED_11_2_7 },
@@ -894,6 +899,7 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(257126),	-- Deep Sea Bag [Rank 2]
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1315465, { ["timeline"] = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll
 		r(1260458),	-- Red Dazar'alor Rug
 		r(1260475),	-- Zanchuli Tapestry
 	})),

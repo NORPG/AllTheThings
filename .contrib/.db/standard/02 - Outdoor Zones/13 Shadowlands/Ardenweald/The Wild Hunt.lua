@@ -40,71 +40,91 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{		-- Neutral
 								i(190644, {	-- Vessel of Profound Possibilities (CI!)
 									["sourceAchievement"] = 14834,	-- Bound with Purpose
-									["timeline"] = { ADDED_9_2_0 },
 									["cost"] = { { "c", 2009, 10000 } },	-- 10,000 Cosmic Flux
+									["timeline"] = { ADDED_9_2_0 },
 									["sym"] = SYM.SHADOWLANDS.ALL_CONDUITS,
 								}),
 							}, {	-- Friendly
-								i(180641, {	-- Floofa (PET!)
-									["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
+								i(283265, {	-- Fae Lantern Blossom (DECOR!)
+									["cost"] = { { "c", ANIMA, 200 } },
+									["timeline"] = { ADDED_12_1_5 },
+								}),
+								i(180641, { ["cost"] = { { "i", POLISHED_PET_CHARM, 250 } } }),	-- Floofa (PET!)
+								i(283376, {	-- Leaning Wildgrove Tree (DECOR!)
+									["cost"] = { { "c", ANIMA, 500 } },
+									["timeline"] = { ADDED_12_1_5 },
 								}),
 							}, {	-- Honored
+								i(283271, {	-- Blooming Celestial Dreamleaf (DECOR!)
+									["cost"] = { { "c", ANIMA, 200 } },
+									["timeline"] = { ADDED_12_1_5 },
+								}),
+								n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+									i(182168, { ["cost"] = { { "c", ANIMA, 1500 } } }),	-- Crane Soul (SS!)
+								})),
 								i(183096),	-- Formula: Sacred Shard (RECIPE!)
 								i(184754),	-- Glitterwing Scarf
-								i(183100),	-- Pattern: Heavy Desolate Armor Kit (RECIPE!)
-								n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
-									i(182168, {	-- Crane Soul (SS!)
-										["cost"] = { { "c", ANIMA, 1500 } },
-									}),
-								})),
-								i(217594, {	-- Glyph of Shifting Power
-									["timeline"] = { ADDED_10_2_6 },
-									["classes"] = { MAGE },
-								}),
 								i(217588, {	-- Glyph of Blessing of the Seasons
-									["timeline"] = { ADDED_10_2_6 },
 									["classes"] = { PALADIN },
+									["timeline"] = { ADDED_10_2_6 },
 								}),
 								i(217585, {	-- Glyph of Convoke the Spirits
-									["timeline"] = { ADDED_10_2_6 },
 									["classes"] = { DRUID },
+									["timeline"] = { ADDED_10_2_6 },
 								}),
 								i(217494, {	-- Glyph of Faeline Stomp
-									["timeline"] = { ADDED_10_2_6 },
 									["classes"] = { MONK },
+									["timeline"] = { ADDED_10_2_6 },
 								}),
 								i(217583, {	-- Glyph of Sepsis
-									["timeline"] = { ADDED_10_2_6 },
 									["classes"] = { ROGUE },
+									["timeline"] = { ADDED_10_2_6 },
+								}),
+								i(217594, {	-- Glyph of Shifting Power
+									["classes"] = { MAGE },
+									["timeline"] = { ADDED_10_2_6 },
 								}),
 								i(217600, {	-- Glyph of Soul Rot
-									["timeline"] = { ADDED_10_2_6 },
 									["classes"] = { WARLOCK },
+									["timeline"] = { ADDED_10_2_6 },
 								}),
 								i(217590, {	-- Glyph of the Hunt
-									["timeline"] = { ADDED_10_2_6 },
 									["classes"] = { DEMONHUNTER },
+									["timeline"] = { ADDED_10_2_6 },
 								}),
+								i(283345, {	-- Hanging Wildseed (DECOR!)
+									["cost"] = { { "c", ANIMA, 200 } },
+									["timeline"] = { ADDED_12_1_5 },
+								}),
+								i(183100),	-- Pattern: Heavy Desolate Armor Kit (RECIPE!)
 							}, {	-- Revered
+								i(283283, {	-- Fae Moonbough Cocoon (DECOR!)
+									["cost"] = { { "c", ANIMA, 500 } },
+									["timeline"] = { ADDED_12_1_5 },
+								}),
+								n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+									i(181309, { ["cost"] = { { "c", ANIMA, 3500 } } }),	-- Faewoven Pack
+								})),
 								i(184747),	-- Gamekeeper's Slippers
 								i(184749),	-- Gametender's Bramblewards
 								i(184746),	-- Gametender's Muckstompers
 								i(184748),	-- Gametender's Wading Boots
 								i(183242),	-- Memory of Eonar
 								i(183106),	-- Recipe: Eternal Cauldron (RECIPE!)
-								i(183093),	-- Technique: Contract: The Wild Hunt (RECIPE!)
-								i(187883, {	-- Technique: Mark of the Twilight Runestag (RECIPE!)
-									["timeline"] = { ADDED_9_1_5 },
+								i(283275, {	-- Small Shimmering Moonvine (DECOR!)
+									["cost"] = { { "c", ANIMA, 200 } },
+									["timeline"] = { ADDED_12_1_5 },
 								}),
-								n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
-									i(181309, {	-- Faewoven Pack
-										["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
-									}),
-								})),
+								i(183093),	-- Technique: Contract: The Wild Hunt (RECIPE!)
+								i(187883, { ["timeline"] = { ADDED_9_1_5 } }),	-- Technique: Mark of the Twilight Runestag (RECIPE!)
 							}, {	-- Exalted
 								i(184750),	-- Amber-Plated Legguards
 								i(184751),	-- Cycle-Tender's Pantaloons
 								i(180729),	-- Duskflutter Ardenmoth (MOUNT!)
+								i(283370, {	-- Fae Moonbough Gate (DECOR!)
+									["cost"] = { { "c", ANIMA, 650 } },
+									["timeline"] = { ADDED_12_1_5 },
+								}),
 								i(184752),	-- Gormscale Leggings
 								i(183134),	-- Illusion: Hunt's Favor (ILLUSION!)
 								i(178336),	-- Tabard of the Wild Hunt

@@ -527,20 +527,12 @@ root(ROOTS.Housing, {
 		},
 		["groups"] = {
 			i(248338),	-- Flat Boulder (DECOR!)
+			i(266443, { ["timeline"] = { ADDED_12_0_0 } }),	-- Granite Cobblestone Long Path (DECOR!)
+			i(266444, { ["timeline"] = { ADDED_12_0_0 } }),	-- Granite Cobblestone Path (DECOR!)
+			i(266245, { ["timeline"] = { ADDED_12_0_0 } }),	-- Granite Cobblestone Path Arc (DECOR!)
+			i(266244, { ["timeline"] = { ADDED_12_0_0 } }),	-- Granite Cobblestone Path Corner (DECOR!)
 			i(248339),	-- Hilltop Boulder (DECOR!)
 			i(248337),	-- Round-Top Boulder (DECOR!)
-			i(266245, {	-- Granite Cobblestone Path Arc (DECOR!)
-				["timeline"] = { ADDED_12_0_0 },
-			}),
-			i(266244, {	-- Granite Cobblestone Path Corner (DECOR!)
-				["timeline"] = { ADDED_12_0_0 },
-			}),
-			i(266443, {	-- Granite Cobblestone Long Path (DECOR!)
-				["timeline"] = { ADDED_12_0_0 },
-			}),
-			i(266444, {	-- Granite Cobblestone Path (DECOR!)
-				["timeline"] = { ADDED_12_0_0 },
-			}),
 		},
 	}),
 	n_CommonVendorItems({
@@ -657,43 +649,19 @@ root(ROOTS.Housing, {
 		},
 		["groups"] = {
 			i(280335),	-- Brewfest Crate (DECOR!)
-			i(282086, {	-- Buckled Witch Hat (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282081, {	-- Candlelit Smiling Jack-o'-Lantern (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282098, {	-- Elaborate Heartsbane Doom Catcher (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282072, {	-- Enchanted Hallow's End Candle (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282090, {	-- Eternally Powered Glowskull (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282075, {	-- Heartsbane Candle (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282100, {	-- Heartsbane Doom Catcher (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282092, {	-- Heartsbane Ritual Markings (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282095, {	-- Ominous Heartsbane Banner (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282051, {	-- Simple Hallow's End Candle (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
-			i(282077, {	-- Spooky Scarecrow (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
+			i(282086, { ["timeline"] = { ADDED_12_1_5 } }),	-- Buckled Witch Hat (DECOR!)
+			i(282081, { ["timeline"] = { ADDED_12_1_5 } }),	-- Candlelit Smiling Jack-o'-Lantern (DECOR!)
+			i(282098, { ["timeline"] = { ADDED_12_1_5 } }),	-- Elaborate Heartsbane Doom Catcher (DECOR!)
+			i(282072, { ["timeline"] = { ADDED_12_1_5 } }),	-- Enchanted Hallow's End Candle (DECOR!)
+			i(282090, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eternally Powered Glowskull (DECOR!)
+			i(282075, { ["timeline"] = { ADDED_12_1_5 } }),	-- Heartsbane Candle (DECOR!)
+			i(282100, { ["timeline"] = { ADDED_12_1_5 } }),	-- Heartsbane Doom Catcher (DECOR!)
+			i(282092, { ["timeline"] = { ADDED_12_1_5 } }),	-- Heartsbane Ritual Markings (DECOR!)
+			i(282095, { ["timeline"] = { ADDED_12_1_5 } }),	-- Ominous Heartsbane Banner (DECOR!)
+			i(282051, { ["timeline"] = { ADDED_12_1_5 } }),	-- Simple Hallow's End Candle (DECOR!)
+			i(282077, { ["timeline"] = { ADDED_12_1_5 } }),	-- Spooky Scarecrow (DECOR!)
 			i(248101),	-- Traditional Brewfest Stein (DECOR!)
-			i(282083, {	-- Unlit Smiling Jack-o'-Lantern (DECOR!)
-				["timeline"] = { ADDED_12_1_5 },
-			}),
+			i(282083, { ["timeline"] = { ADDED_12_1_5 } }),	-- Unlit Smiling Jack-o'-Lantern (DECOR!)
 		},
 	}),
 	n(VENDORS, {
@@ -720,8 +688,8 @@ root(ROOTS.Housing, {
 			["coord"] = { 41.6, 61.8, FOUNDERS_POINT },
 			["timeline"] = { ADDED_11_2_7 },
 			["groups"] = {
-				i(262562),	-- Bolt of Pressed Linen
 				i(262563),	-- Bolt of Elegant Silk
+				i(262562),	-- Bolt of Pressed Linen
 				i(262564),	-- Bolt of Soft Wool
 				i(262565),	-- Spool of Thread
 			},

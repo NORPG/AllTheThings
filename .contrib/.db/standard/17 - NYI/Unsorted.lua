@@ -63,7 +63,6 @@ root(ROOTS.Unsorted, {
 			i(281218),	-- Ensemble: Pastry Chef's Uniform
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
 			i(281220),	-- Ensemble: Head Chef's Uniform
-			i(281670),	-- Anima-Infused Dreamcatcher
 			i(282051),	-- Simple Hallow's End Candle
 			i(282072),	-- Enchanted Hallow's End Candle
 			i(282075),	-- Heartsbane Candle
@@ -99,7 +98,6 @@ root(ROOTS.Unsorted, {
 			i(282276),	-- Frost Revenant's Frost Fetish
 			i(282277),	-- Wood Haunter's Frost Fetish
 			i(282289),	-- Horrific Head of the Horseman
-			i(282327),	-- Fae Animashroom
 			i(282427),	-- Nalorakk's Ferocity
 			i(282563),	-- Ice Walker's Bell-Scythe
 			i(282564),	-- Embered Bell-Scythe
@@ -138,31 +136,12 @@ root(ROOTS.Unsorted, {
 			i(282693),	-- Pale Nathrian Rose
 			i(282695),	-- Large Nathrian Bladebush
 			i(282697),	-- Nathrian Rubyroot Growth
-			i(282714),	-- Fae Anima Wall Lantern
 			i(282718),	-- Halazzi's Shroud
 			i(283260),	-- Anima-Powered Anvil
-			i(283265),	-- Fae Lantern Blossom
-			i(283267),	-- Celestial Grovebush
-			i(283271),	-- Blooming Celestial Dreamleaf
-			i(283273),	-- Fae Moonbough Table
-			i(283275),	-- Small Shimmering Moonvine
-			i(283281),	-- Wildgrove Leaf Pile
-			i(283283),	-- Fae Moonbough Cocoon
-			i(283285),	-- Lush Wildgrove Fern
 			i(283291),	-- Nomad's Campfire Grill
 			i(283299),	-- Nomad's Round Cushion
 			i(283301),	-- Fae Moonbough Scroll
 			i(283303),	-- Nomad's Steel Forge
-			i(283321),	-- Closed Vulpera Scroll
-			i(283339),	-- Starseed Sapling
-			i(283341),	-- Dormant Wildseed
-			i(283345),	-- Hanging Wildseed
-			i(283370),	-- Fae Moonbough Gate
-			i(283376),	-- Leaning Wildgrove Tree
-			i(283379),	-- Hanging Wildgrove Ivy
-			i(283381),	-- Lush Celestial Moonbough
-			i(283383),	-- Leaning Celestial Orchid
-			i(283385),	-- Fae Animashroom Circle
 			i(283388),	-- Blessed Loa Armament
 			i(283472),	-- Steel-Plated Cushion Boots
 			i(283481),	-- Baker's Frosty Cookbook
@@ -224,19 +203,14 @@ root(ROOTS.Unsorted, {
 			i(284235),	-- Baker's Morganite Tray
 			i(284236),	-- Baker's Amethyst Tray
 			i(284237),	-- Baker's Citrine Tray
-			i(284238),	-- Beloved Murloc Plushie
 			i(284240),	-- Beloved Ottuk Plushie
 			i(284242),	-- Beloved Ottuuuuuuk Plushie
-			i(284244),	-- Lillistrasza's Lucky Duck Plushie
-			i(284246),	-- Beloved Plush Doll
 			i(284249),	-- Duck-Eye Glass Bead
-			i(284250),	-- Pattern: Lillistrasza's Lucky Duck Plushie
 			i(284255),	-- Pattern: Beloved Ottuk Plushie
 			i(284256),	-- Pattern: Beloved Ottuuuuuuk Plushie
 			i(284258),	-- Tailwind Conduit
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
-			i(284263),	-- Pattern: Beloved Murloc Plushie
 			i(284402),	-- Valdrakken Resupply Coin
 			i(284462),	-- Arching Crimson Ivy
 			i(284464),	-- Twisted Crimson Root
@@ -561,11 +535,6 @@ root(ROOTS.Unsorted, {
 					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
 					i(273062),	-- Coiled Snake-Eye+
 					i(273063),	-- Coiled Snake-Eye++
-				}),
-				prof(JEWELCRAFTING, {
-					i(273067),	-- Design: Polished Ammolite (RECIPE!)
-					i(273065),	-- Polished Ammolite+
-					i(273066),	-- Polished Ammolite++
 				}),
 				prof(LEATHERWORKING, {
 					i(273068),	-- Adorned Fang+

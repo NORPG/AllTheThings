@@ -8573,6 +8573,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(246685),	-- Dwarven District Banner (DECOR!)
 			i(243336),	-- Elder Rise Rug (DECOR!)
+			i(284246, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Plush Doll (DECOR!)
 		})),
 		filter(MISC, {
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 }})),	-- Gordok Ogre Suit

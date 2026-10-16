@@ -1037,6 +1037,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(251546),	-- Argussian Circular Rug (DECOR!)
 			i(258303),	-- Beloved Elekk Plushie (DECOR!)
+			i(284238, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Murloc Plushie (DECOR!)
 			i(245421),	-- Karabor Bed (DECOR!)
 		})),
 		filter(MISC, {

@@ -1203,11 +1203,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 193955 },	-- Lillistazsa
 				["coord"] = { 59.9, 70.4, THE_WAKING_SHORES },
-				["groups"] = {
-					i(198345),	-- Glass Bead (QI!)
-					i(198857),	-- Lucky Duck (TOY!)
-					i(198344),	-- Scrap of Fabric (QI!)
-					i(198343),	-- Soft Ruby Feather (QI!)
+				["qis"] = {
+					198345,	-- Glass Bead (QI!)
+					198857,	-- Lucky Duck (TOY!)
+					198344,	-- Scrap of Fabric (QI!)
+					198343,	-- Soft Ruby Feather (QI!)
 				},
 			}),
 			q(66101, {	-- From Such Great Heights

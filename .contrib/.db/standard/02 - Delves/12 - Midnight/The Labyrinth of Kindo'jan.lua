@@ -440,7 +440,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					questID = 98758,
 					isWeekly = true,	-- assumed
 					groups = {
-						i(280820),	-- Loa-Blessed Victory
+						i(280820),	-- Loa-Blessed Victory (TOY!)
+						i(273067),	-- Design: Polished Ammolite (RECIPE!)
 					},
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
@@ -449,8 +450,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["groups"] = { i(282402) },	-- Archaic Amani Key
 				}),
 				o(673143, {	-- Bountiful Heavy Trunk
+					["sym"] = {{"select","itemID",
+						273067,	-- Design: Polished Ammolite (RECIPE!)
+					}},
 				}),
 				o(673144, {	-- Bountiful Heavy Trunk
+					["sym"] = {{"select","itemID",
+						273067,	-- Design: Polished Ammolite (RECIPE!)
+					}},
 				}),
 				o(673138, {	-- Gilded Stash
 				}),

@@ -1918,6 +1918,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 		filter(REAGENTS, {
 			i(240974),	-- Kaleidoscopic Prism+
 			i(240975),	-- Kaleidoscopic Prism++
+			i(273065, { ["timeline"] = { ADDED_12_1_5 } }),	-- Polished Ammolite+
+			i(273066, { ["timeline"] = { ADDED_12_1_5 } }),	-- Polished Ammolite++
 			i(251487),	-- Prismatic Focusing Iris+
 			i(251488),	-- Prismatic Focusing Iris++
 			i(240972),	-- Sin'dorei Lens+
@@ -2321,8 +2323,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			i(262591),	-- Luxurious Silvermoon Lounge Cushion (DECOR!)
 			i(262592),	-- Plush Silvermoon Bed (DECOR!)
 			i(262599),	-- Silvermoon Curtains (DECOR!)
-			i(279353, {["timeline"] = { ADDED_12_1_0 }}),	-- Tortollan Slingsack (DECOR!)
-			i(279350, {["timeline"] = { ADDED_12_1_0 }}),	-- Twilight's Blade Bedroll (DECOR!)
+			i(279353, { ["timeline"] = { ADDED_12_1_0 } }),	-- Tortollan Slingsack (DECOR!)
+			i(279350, { ["timeline"] = { ADDED_12_1_0 } }),	-- Twilight's Blade Bedroll (DECOR!)
 			i(262611),	-- Voidstrider Saddlebag (DECOR!)
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
