@@ -2418,7 +2418,8 @@ i(10290,{description="Can be bought from Tailoring Suppliers, as well as some Tr
 i(4341,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world."})}),
 h(-679,{awp=110207,g={
 de(2452,{itemID=246685,spellID=1243353}),
-de(1282,{itemID=243336,spellID=1235455})}}),
+de(1282,{itemID=243336,spellID=1235455}),
+de(26711,{awp=120105,itemID=284246,spellID=1315676})}}),
 flt(50,{
 i(18258,{awp=100105,spellID=22736}),
 i(2581,{f=55,spellID=1159}),
@@ -8765,6 +8766,7 @@ p(1426,{b=1,itemID=113216,npcID=82464,spellID=166071})}),
 h(-679,{awp=110207,g={
 de(8237,{itemID=251546,spellID=1252647}),
 de(11946,{itemID=258303,spellID=1263127}),
+de(26479,{awp=120105,itemID=284238,spellID=1315668}),
 de(929,{itemID=245421,spellID=1238551})}}),
 flt(50,{
 i(111603,{f=55,lvl=35,spellID=161255}),
@@ -9535,6 +9537,7 @@ i(168500,{awp=80200,f=55,lvl=40,spellID=298154}),
 i(168501,{awp=80200,f=55,lvl=40,spellID=298155})}),
 h(-679,{awp=110207,g={
 de(11381,{itemID=257046,spellID=1261096}),
+de(28457,{awp=120105,itemID=283321,spellID=1314666}),
 de(11382,{itemID=257047,spellID=1261097})}}),
 flt(50,{
 i(165744,{f=55,spellID=276183}),
@@ -14246,6 +14249,7 @@ s(180675,193509,{b=1,f=4,loc=42,lvl=70}),
 s(180676,193510,{b=1,f=4,loc=43,lvl=70})}),
 h(-679,{awp=110207,g={
 de(4177,{itemID=248121,spellID=1246285}),
+de(27220,{awp=120105,itemID=284244,spellID=1315674}),
 de(11388,{itemID=257053,spellID=1261103})}}),
 h(-244,{
 fc(376556,{providers={{"s",376556}},questID=71842,requireSkill=197}),
@@ -18533,6 +18537,8 @@ i(246525,{b=1,f=57,lvl=68,requireSkill=773,spellID=1234160})}),
 flt(56,{
 i(240974),
 i(240975),
+i(273065,{awp=120105}),
+i(273066,{awp=120105}),
 i(251487),
 i(251488),
 i(240972),

@@ -8,6 +8,7 @@ h(-61,{
 hqt(78650)}),
 inst(760,{isRaid=1,savedInstanceID=249,g={
 hqt(76175)}}),
+hqt(934,{r=2,rwp=10700,u=2}),
 m(1415,{awp=11101,maps={1463},g={
 m(210,{maps={224},g={
 hqt(7908,{awp=11201}),

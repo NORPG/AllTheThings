@@ -614,6 +614,7 @@ L.LOOT_SPEC_DESC_2 = "In Personal Loot dungeons, raids, and outdoor encounters, 
 L.LOOT_SPEC_UNKNOWN = "Loot Specialization Unknown"
 L.LOOT_TABLE_CHANCE = "Loot Table Chance"
 L.LORE = "Lore"
+L.LOWER = "Lower"
 L.MAIN_LIST = "Main List"
 L.MAIN_LIST_REQUIRES_REFRESH = "[Click to Update Progress]"
 L.MAIN_LIST_SCALE_TOOLTIP = "Use this to customize the scale of the Main List.\n\nDefault: 1"
@@ -1145,6 +1146,7 @@ L.UPGRADE_ICON = "|T" .. _.asset("Interface_Upgrade") .. ":0|t"
 L.UPGRADE_TEXT = "|T" .. _.asset("Interface_Upgrade") .. ":0|t |cff62e37e" .. UPGRADE .. "|r"
 L.UPON_COMPLETION = "Upon Completion"
 L.UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below."
+L.UPPER = "Upper"
 L.VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache."
 L.VISUAL_ID = "Visual ID"
 L.WAGO_BUTTON_LABEL = "Wago.io"
@@ -4330,7 +4332,7 @@ local phases = {
 	[1612] = {
 		name = "Phase 8",
 		description = "|cFFAAFFAAThis was not available until Phase 8 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIncluded Classic+?|r",
+		lore = "|cFFFFAAAAIncluded the Scarlet Enclave raid, new outdoor and profession content in New Avalon, and a new Legendary weapon questline.|r",
 		minimumBuildVersion = 11500,
 		buildVersion = 11507,
 		state = 2,
@@ -12582,6 +12584,10 @@ L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch
 localize(_.CategoryNames, {
 	[2] = "Verbrauchsgegenstand",
 	[3] = "Tarotkarten",
+	[106] = "Karte",
+	[221] = "Stulpen",
+	[224] = "Beinkleider",
+	[259] = "Umhänge",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Neuer Charakter",
@@ -15228,9 +15234,12 @@ L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour
 L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(_.CategoryNames, {
-	[2] = "consommable",
+	[2] = "Consommable",
 	[3] = "Jeu de tarot",
-	[106] = "Carte",
+	[106] = "Cartes",
+	[221] = "Gantelets",
+	[224] = "Jambes",
+	[259] = "Capes",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Nouveau personnage",
@@ -17640,7 +17649,10 @@ L.TITLES_CHECKBOX = "Titoli"
 localize(_.CategoryNames, {
 	[2] = "Consumabile",
 	[3] = "Mazzo di Tarocchi",
-	[106] = "Carta",
+	[106] = "Carte",
+	[221] = "Guanti Lunghi",
+	[224] = "Gambe",
+	[259] = "Mantelli",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuovo personaggio",
@@ -18253,6 +18265,9 @@ localize(_.CategoryNames, {
 	[2] = "Consumível",
 	[3] = "Baralho de Tarô",
 	[106] = "Carta",
+	[221] = "Manoplas",
+	[224] = "Pernas",
+	[259] = "Mantos",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Novo personagem",
@@ -21108,7 +21123,10 @@ L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!"
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках."
 localize(_.CategoryNames, {
 	[3] = "карт Таро",
-	[106] = "Карты",
+	[106] = "Карта",
+	[221] = "Рукавицы",
+	[224] = "Поножи",
+	[259] = "Плащи",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Новый персонаж",
@@ -23592,9 +23610,10 @@ L.TITLES_CHECKBOX = "칭호"
 localize(_.CategoryNames, {
 	[2] = "소모품",
 	[3] = "카드 묶음",
-	[221] = "손",
-	[224] = "다리",
-	[259] = "등",
+	[106] = "카드",
+	[221] = "건틀릿",
+	[224] = "다리보호구",
+	[259] = "망토",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "새로운 캐릭터",
@@ -26713,7 +26732,7 @@ L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basad
 localize(_.CategoryNames, {
 	[2] = "Consumible",
 	[3] = "Baraja de Tarot",
-	[106] = "Carta",
+	[106] = "Tarot",
 	[221] = "Guanteletes",
 	[224] = "Piernas",
 	[259] = "Capas",
@@ -27780,7 +27799,6 @@ for key,value in pairs({
 	[1609] = "|cFFFFAAAAIncluye Guarida de Alanegra, Zul'Gurub, y la nueva banda Vega de Cristal.|r",
 	[1610] = "|cFFFFAAAAIncluye Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
 	[1611] = "|cFFFFAAAAIncluye Naxxramas, y la nueva mazmorra Las Criptas de Karazhan|r",
-	[1612] = "|cFFFFAAAAIncluye Classic+?|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -29335,7 +29353,6 @@ L.WAGO_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace del addo
 L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso"
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(_.CategoryNames, {
-	[2] = "Objeto Consumible",
 	[3] = "Naipe de Tarot",
 })
 localize(L.HEADER_NAMES, {
@@ -32534,7 +32551,6 @@ for key,value in pairs({
 	[1609] = "|cFFFFAAAA包括黑翼之巢、祖尔格拉布和新的水晶谷团队副本。|r",
 	[1610] = "|cFFFFAAAA包括安其拉和新的梦魇林地团队副本|r",
 	[1611] = "|cFFFFAAAA包括纳克萨玛斯和新的卡拉赞地牢地下城|r",
-	[1612] = "|cFFFFAAAA包含经典+？|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -34601,7 +34617,8 @@ L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按�
 L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。"
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。"
 localize(_.CategoryNames, {
-	[106] = "卡片",
+	[221] = "護手",
+	[259] = "披風",
 })
 localize(L.HEADER_NAMES, {
 	[-19] = "首領共通掉落",
@@ -35243,6 +35260,7 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在遊戲的任何版本中，鼓勵使用真實貨幣的行為均不受認可。參與此類內容需自行承擔風險。|r",
+	[1612] = "|cFFFFAAAA包含血色領區團隊副本、新亞法隆的全新戶外與專業技能內容，以及全新的傳說武器任務線。|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({

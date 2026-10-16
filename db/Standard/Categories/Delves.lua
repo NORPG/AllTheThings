@@ -3822,38 +3822,89 @@ o(659517,{coords={
 [2647]={{46.9,67}}},questID=97131,g={
 crit(117163,{achID=63717,id=1})}}),
 o(676585,{coords={
-[2647]={{36.9,72.5}}},questID=98602,g={
+[2647]={{36.9,69.9}}},questID=98602,g={
 crit(117164,{achID=63717,id=2})}}),
 o(676586,{coords={
 [2647]={{21.4,36.7}}},questID=98603,g={
 crit(118145,{achID=63717,id=44})}}),
+o(676621,{coords={
+[2647]={{56.7,44.1},{61.7,44.2}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98604,g={
+crit(117437,{achID=63717,id=39})}}),
+o(676622,{coords={
+[2647]={{38.8,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98605,g={
+i(282424,{f=55,spellID=1313862}),
+crit(117165,{achID=63717,id=3})}}),
+o(676623,{coords={
+[2647]={{38,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98606,g={
+s(316078,284181,{f=3}),
+crit(117166,{achID=63717,id=4})}}),
 o(676624,{coords={
-[2647]={{21.7,71.3}}},questID=98607,g={
+[2647]={{21.7,68.6}}},questID=98607,g={
 crit(117167,{achID=63717,id=5})}}),
 o(676625,{coords={
-[2647]={{29.9,77.4}}},questID=98608,g={
+[2647]={{29.9,74.7}}},questID=98608,g={
 crit(117168,{achID=63717,id=6})}}),
+o(676627,{coords={
+[2647]={{26.9,80.9}}},g={
+toy(280822)}}),
 o(676628,{coords={
 [2647]={{13.9,37.8}}},questID=98611,g={
 crit(117171,{achID=63717,id=9})}}),
 o(676629,{coords={
-[2647]={{26.5,43}}},questID=98612,g={
+[2647]={{26.4,40.3}}},questID=98612,g={
 crit(117172,{achID=63717,id=10})}}),
+o(676630,{coords={
+[2647]={{27.4,33.1}}},questID=98613,g={
+toy(280825),
+crit(117173,{achID=63717,id=11})}}),
+o(676631,{coords={
+[2647]={{56.7,44.1},{61.1,43.5}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98614,g={
+crit(117436,{achID=63717,id=40})}}),
+o(676632,{coords={
+[2647]={{27.8,34.6}}},questID=98615,g={
+i(283996,{f=55,spellID=1315083}),
+crit(117174,{achID=63717,id=12})}}),
+o(676636,{coords={
+[2647]={{10.5,55}}},g={
+s(316079,284182,{f=2,loc=40})}}),
+o(676637,{coords={
+[2647]={{56.7,44.1},{61.5,44.7}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98619,g={
+de(27458,{itemID=284357,spellID=1315979}),
+de(15750,{itemID=264486,spellID=1272049}),
+de(1432,{itemID=244349,spellID=1237030}),
+crit(117438,{achID=63717,id=41})}}),
 o(676639,{coords={
 [2647]={{28.7,23.1}}},questID=98620,g={
 crit(117178,{achID=63717,id=16})}}),
 o(676640,{coords={
-[2647]={{22.1,29.5}}},questID=98621,g={
+[2647]={{22.1,29.6}}},questID=98621,g={
 crit(117179,{achID=63717,id=17})}}),
+o(676641,{coords={
+[2647]={{22.7,12.2}}},questID=98622,g={
+crit(117180,{achID=63717,id=18})}}),
+o(676642,{coords={
+[2647]={{22.9,12}}},questID=98623,g={
+s(316077,284180,{f=2,loc=41}),
+crit(117181,{achID=63717,id=19})}}),
 o(676645,{coords={
 [2647]={{40.6,20.3}}},questID=98625,g={
 crit(117183,{achID=63717,id=21})}}),
+o(676646,{coords={
+[2647]={{30.6,15.6}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98626,g={
+toy(280823),
+crit(117184,{achID=63717,id=22})}}),
+o(676647,{coords={
+[2647]={{30.6,15.1}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98627,g={
+crit(117185,{achID=63717,id=23})}}),
 o(676648,{coords={
 [2647]={{68.2,34.1}}},questID=98628,g={
 crit(117186,{achID=63717,id=24})}}),
 o(676649,{coords={
 [2647]={{67.9,27.7}}},questID=98629,g={
 crit(117187,{achID=63717,id=25})}}),
+o(676651,{coords={
+[2647]={{56.7,44.1},{61.2,44.8}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98631,g={
+crit(117439,{achID=63717,id=42})}}),
 o(676653,{coords={
 [2647]={{81.3,55}}},questID=98633,g={
 crit(117190,{achID=63717,id=28})}}),
@@ -3873,88 +3924,41 @@ crit(117194,{achID=63717,id=32})}}),
 o(676663,{coords={
 [2647]={{69.2,71}}},questID=98638,g={
 crit(117195,{achID=63717,id=33})}}),
-o(676760,{coords={
-[2647]={{47.7,40}}},questID=98649,g={
-crit(117199,{achID=63717,id=37})}}),
-o(676646,{coords={
-[2647]={{30.6,15.6}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98626,g={
-toy(280823),
-crit(117184,{achID=63717,id=22})}}),
-o(676632,{coords={
-[2647]={{27.8,34.6}}},questID=98615,g={
-i(283996,{f=55,spellID=1315083}),
-crit(117174,{achID=63717,id=12})}}),
-o(676622,{coords={
-[2647]={{38.8,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98605,g={
-i(282424,{f=55,spellID=1313862}),
-crit(117165,{achID=63717,id=3})}}),
-o(676623,{coords={
-[2647]={{38,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98606,g={
-s(316078,284181,{f=3}),
-crit(117166,{achID=63717,id=4})}}),
-o(676630,{coords={
-[2647]={{27.4,33.1}}},questID=98613,g={
-toy(280825),
-crit(117173,{achID=63717,id=11})}}),
-o(676642,{coords={
-[2647]={{22.9,12}}},questID=98623,g={
-s(316077,284180,{f=2,loc=41}),
-crit(117181,{achID=63717,id=19})}}),
-o(676641,{coords={
-[2647]={{22.5,12},{22.7,12.2}}},questID=98622,g={
-crit(117180,{achID=63717,id=18})}}),
-o(676651,{coords={
-[2647]={{56.7,44.1},{61.2,44.8}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98631,g={
-crit(117439,{achID=63717,id=42})}}),
-o(676637,{coords={
-[2647]={{56.7,44.1},{61.5,44.7}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98619,g={
-de(27458,{itemID=284357,spellID=1315979}),
-de(15750,{itemID=264486,spellID=1272049}),
-de(1432,{itemID=244349,spellID=1237030}),
-crit(117438,{achID=63717,id=41})}}),
-o(676621,{coords={
-[2647]={{56.7,44.1},{61.7,44.2}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98604,g={
-crit(117437,{achID=63717,id=39})}}),
-o(676666,{coords={
-[2647]={{56.7,44.1},{61.5,43.6}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98640,g={
-crit(117440,{achID=63717,id=43})}}),
-o(676631,{coords={
-[2647]={{56.7,44.1},{61.1,43.5}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98614,g={
-crit(117436,{achID=63717,id=40})}}),
-o(676647,{coords={
-[2647]={{30.6,15.1}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98627,g={
-crit(117185,{achID=63717,id=23})}}),
-o(676636,{coords={
-[2647]={{10.5,55}}},g={
-s(316079,284182,{f=2,loc=40})}}),
 o(676664,{coords={
 [2647]={{66.6,51.5}}},g={
 toy(280821)}}),
-o(676627,{coords={
-[2647]={{26.9,80.9}}},g={
-toy(280822)}}),
+o(676666,{coords={
+[2647]={{56.7,44.1},{61.5,43.6}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98640,g={
+crit(117440,{achID=63717,id=43})}}),
 o(676759,{coords={
 [2647]={{40.6,45.4}}},description="Below the pathway.",questID=98648,g={
 crit(117198,{achID=63717,id=36})}}),
+o(676760,{coords={
+[2647]={{47.7,40}}},questID=98649,g={
+crit(117199,{achID=63717,id=37})}}),
 o(676761,{coords={
 [2647]={{46,48.3}}},questID=98650,g={
 crit(117200,{achID=63717,id=38})}})}}),
 o(689304,{isWeekly=1,questID=98758,g={
-toy(280820)}}),
+toy(280820),
+r(1291690,{itemID=273067,requireSkill=755,skillID=2914})}}),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
-o(673143),
-o(673144),
+o(673143,{sym={{"select","itemID",273067}}}),
+o(673144,{sym={{"select","itemID",273067}}}),
 o(673138),
 o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
 o(654950,{coords={
 [2647]={{24.8,22.5}}},description="Spawns after finishing 'Jan'alai's' event."}),
+o(677414,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(677418,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(676747,{description="Spawns randomly throughout the Labyrinth."}),
 o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(705929),
 o(705955,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
-o(705957,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
+o(705957,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(705959,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
 h(-64,{
 s(316034,284052,{f=3}),
 de(8992,{itemID=252044,spellID=1254109}),

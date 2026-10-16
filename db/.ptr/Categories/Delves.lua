@@ -3707,7 +3707,7 @@ h(-12,{
 ach(64039,{rwp=120105,u=2,g={
 title(801,{u=2})}}),
 ach(63720,{coords={
-[2647]={{18.4,20.5},{50.3,85.3},{88.4,53.9}}},providers={{"o",672624},{"o",672785},{"o",672788}}}),
+[2647]={{18.8,18.2},{50.3,82.6},{56.8,17.8},{58.5,21.7},{88.5,51.5}}},description="Each run randomly selects three out of five special rooms as spawn points for Hexmasks and one for the special 'Locked Room'. The final room will be empty.",providers={{"o",672624},{"o",672785},{"o",672788}}}),
 ach(63717,{
 title(797),
 crit(117169,{achID=63717,id=7,questID=98609,u=1}),
@@ -3715,28 +3715,18 @@ crit(117170,{achID=63717,id=8,questID=98610,u=1}),
 crit(117175,{achID=63717,id=13,questID=98616,u=1}),
 crit(117176,{achID=63717,id=14,questID=98617,u=1}),
 crit(117177,{achID=63717,id=15,questID=98618,u=1}),
-crit(117180,{achID=63717,id=18,questID=98622,u=1}),
-crit(117181,{achID=63717,id=19,questID=98623,u=1}),
 crit(117182,{achID=63717,id=20,questID=98624,u=1}),
-crit(117185,{achID=63717,id=23,questID=98627,u=1}),
 crit(117188,{achID=63717,id=26,questID=98630,u=1}),
 crit(117189,{achID=63717,id=27,questID=98632,u=1}),
-crit(117192,{achID=63717,id=30,questID=98635,u=1}),
-crit(117193,{achID=63717,id=31,questID=98636,u=1}),
 crit(117196,{achID=63717,id=34,questID=98639,u=1}),
-crit(117197,{achID=63717,id=35,questID=98641,u=1}),
-crit(117198,{achID=63717,id=36,questID=98648,u=1}),
-crit(117200,{achID=63717,id=38,questID=98650,u=1}),
-crit(117437,{achID=63717,id=39,questID=98604,u=1}),
-crit(117440,{achID=63717,id=43,questID=98640,u=1}),
-crit(118145,{achID=63717,id=44,questID=98603,u=1})}),
+crit(117197,{achID=63717,id=35,questID=98641,u=1})}),
 ach(63724,{providers={{"s",1315026}}}),
 ach(63715,{
 mnt(1314715,{itemID=283363})}),
 ach(63718,{coords={
-[2647]={{50.4,78.5},{59.3,26.9}}},cost={{"i",282402,1}}}),
+[2647]={{18.8,18.2},{50.3,82.6},{56.8,17.8},{58.5,21.7},{88.5,51.5}}},cost={{"i",282402,1}},description="Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty."}),
 ach(63719,{coords={
-[2647]={{50.4,78.5},{59.3,26.9}}},cost={{"i",282402,20}},g={
+[2647]={{18.8,18.2},{50.3,82.6},{56.8,17.8},{58.5,21.7},{88.5,51.5}}},cost={{"i",282402,20}},description="Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty.",g={
 title(798)}}),
 ach(63723),
 ach(63716,{
@@ -3759,6 +3749,7 @@ ach(63727,{providers={{"s",1314984}}}),
 ach(63728,{providers={{"s",1314984}}}),
 ach(63722,{providers={{"s",1314979}},g={
 title(799)}})}),
+n(266500,{questID=98967}),
 h(-24,{
 i(285807),
 i(285875),
@@ -3769,23 +3760,23 @@ faction(2836),
 title(803,{minReputation={2836,9}})}),
 h(-32,{
 fp(3300,{coords={
-[2647]={{44.4,72.1}}},crs={273261}}),
+[2647]={{44.4,72.1}}},crs={273261},minReputation={2836,4}}),
 fp(3304,{coords={
-[2647]={{28.5,67.4}}},crs={273515}}),
+[2647]={{28.5,67.4}}},crs={273515},minReputation={2836,4}}),
 fp(3306,{coords={
-[2647]={{20.2,46.8}}}}),
+[2647]={{20.2,46.8}}},crs={273571},minReputation={2836,4}}),
 fp(3308,{coords={
-[2647]={{44.1,46.8}}},crs={273569}}),
+[2647]={{44.1,46.8}}},crs={273569},minReputation={2836,4}}),
 fp(3310,{coords={
-[2647]={{60.2,68.7}}},crs={273570}}),
+[2647]={{60.2,68.7}}},crs={273570},minReputation={2836,4}}),
 fp(3313,{coords={
-[2647]={{83.2,93.8}}},crs={273575}}),
+[2647]={{83.2,93.8}}},crs={273575},minReputation={2836,4}}),
 fp(3315,{coords={
-[2647]={{25.7,26.8}}},crs={273572}}),
+[2647]={{25.7,26.8}}},crs={273572},minReputation={2836,4}}),
 fp(3317,{coords={
-[2647]={{25.7,26.8}}},crs={273572}}),
+[2647]={{25.7,26.8}}},crs={273572},minReputation={2836,4}}),
 fp(3319,{coords={
-[2647]={{65.2,32.2}}},crs={273574}}),
+[2647]={{65.2,32.2}}},crs={273574},minReputation={2836,4}}),
 fp(3301,{collectible=false}),
 fp(3305,{collectible=false}),
 fp(3307,{collectible=false}),
@@ -3801,8 +3792,9 @@ q(99312,{description="This quest is obtained from Any Delve. In order not to los
 q(99306,{coords={
 [2395]={{62.9,72}}},isBreadcrumb=1,nextQuests={98831},providers={{"o",701639}}}),
 q(98831,{coords={
+[2437]={{34.5,17}},
 [2512]={{57.9,46.7}},
-[2536]={{33.2,25.5}}},qgs={265173,277031},sourceQuests={99306,99312}}),
+[2536]={{33.2,25.5}}},qgs={265173,276329,277031},sourceQuests={99306,99312}}),
 q(98832,{coords={
 [2395]={{62.8,72}}},qgs={274915},sourceQuests={98831},g={
 o(693668,{coords={
@@ -3830,118 +3822,143 @@ o(659517,{coords={
 [2647]={{46.9,67}}},questID=97131,g={
 crit(117163,{achID=63717,id=1})}}),
 o(676585,{coords={
-[2647]={{36.9,72.5}}},questID=98602,g={
+[2647]={{36.9,69.9}}},questID=98602,g={
 crit(117164,{achID=63717,id=2})}}),
-o(676624,{coords={
-[2647]={{21.7,71.3}}},questID=98607,g={
-i(263517),
-crit(117167,{achID=63717,id=5})}}),
-o(676625,{coords={
-[2647]={{29.9,77.4}}},questID=98608,g={
-crit(117168,{achID=63717,id=6})}}),
-o(676628,{coords={
-[2647]={{13.9,37.8}}},questID=98611,g={
-crit(117171,{achID=63717,id=9})}}),
-o(676629,{coords={
-[2647]={{26.5,43}}},questID=98612,g={
-crit(117172,{achID=63717,id=10})}}),
-o(676639,{coords={
-[2647]={{28.7,25.8}}},questID=98620,g={
-crit(117178,{achID=63717,id=16})}}),
-o(676640,{coords={
-[2647]={{22.1,32.2}}},questID=98621,g={
-crit(117179,{achID=63717,id=17})}}),
-o(676645,{coords={
-[2647]={{40.6,23}}},questID=98625,g={
-crit(117183,{achID=63717,id=21})}}),
-o(676648,{coords={
-[2647]={{68.2,36.7}}},questID=98628,g={
-crit(117186,{achID=63717,id=24})}}),
-o(676649,{coords={
-[2647]={{67.9,30.3}}},questID=98629,g={
-crit(117187,{achID=63717,id=25})}}),
-o(676653,{coords={
-[2647]={{81.3,57.7}}},questID=98633,g={
-crit(117190,{achID=63717,id=28})}}),
-o(676657,{coords={
-[2647]={{86.9,65.9}}},questID=98634,g={
-crit(117191,{achID=63717,id=29})}}),
-o(676661,{coords={
-[2647]={{72.4,68.6}}},questID=98637,g={
-i(263519),
-crit(117194,{achID=63717,id=32})}}),
-o(676663,{coords={
-[2647]={{69.2,73.7}}},questID=98638,g={
-crit(117195,{achID=63717,id=33})}}),
-o(676760,{coords={
-[2647]={{47.7,42.7}}},questID=98649,g={
-crit(117199,{achID=63717,id=37})}}),
-o(676646,{coords={
-[2647]={{30.7,15.6}}},questID=98626,g={
-toy(280823),
-crit(117184,{achID=63717,id=22})}}),
-o(676632,{coords={
-[2647]={{27.8,34.6}}},questID=98615,g={
-i(283996,{f=55,spellID=1315083}),
-crit(117174,{achID=63717,id=12})}}),
+o(676586,{coords={
+[2647]={{21.4,36.7}}},questID=98603,g={
+crit(118145,{achID=63717,id=44})}}),
+o(676621,{coords={
+[2647]={{56.7,44.1},{61.7,44.2}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98604,g={
+crit(117437,{achID=63717,id=39})}}),
 o(676622,{coords={
-[2647]={{38.8,83.4}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98605,g={
+[2647]={{38.8,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98605,g={
 i(282424,{f=55,spellID=1313862}),
 crit(117165,{achID=63717,id=3})}}),
 o(676623,{coords={
 [2647]={{38,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98606,g={
 s(316078,284181,{f=3}),
 crit(117166,{achID=63717,id=4})}}),
-o(676658,{coords={
-[2647]={{89,77.7}}},g={
-i(280563,{f=55,spellID=1314402})}}),
+o(676624,{coords={
+[2647]={{21.7,68.6}}},questID=98607,g={
+crit(117167,{achID=63717,id=5})}}),
+o(676625,{coords={
+[2647]={{29.9,74.7}}},questID=98608,g={
+crit(117168,{achID=63717,id=6})}}),
+o(676627,{coords={
+[2647]={{26.9,80.9}}},g={
+toy(280822)}}),
+o(676628,{coords={
+[2647]={{13.9,37.8}}},questID=98611,g={
+crit(117171,{achID=63717,id=9})}}),
+o(676629,{coords={
+[2647]={{26.4,40.3}}},questID=98612,g={
+crit(117172,{achID=63717,id=10})}}),
 o(676630,{coords={
 [2647]={{27.4,33.1}}},questID=98613,g={
 toy(280825),
 crit(117173,{achID=63717,id=11})}}),
-o(676642,{coords={
-[2647]={{22.9,12}}},g={
-s(316077,284180,{f=2,loc=41})}}),
-o(676641,{coords={
-[2647]={{22.7,12.2}}}}),
-o(676651,{coords={
-[2647]={{61.2,44.8}}},questID=98631,g={
-crit(117439,{achID=63717,id=42})}}),
+o(676631,{coords={
+[2647]={{56.7,44.1},{61.1,43.5}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98614,g={
+crit(117436,{achID=63717,id=40})}}),
+o(676632,{coords={
+[2647]={{27.8,34.6}}},questID=98615,g={
+i(283996,{f=55,spellID=1315083}),
+crit(117174,{achID=63717,id=12})}}),
+o(676636,{coords={
+[2647]={{10.5,55}}},g={
+s(316079,284182,{f=2,loc=40})}}),
 o(676637,{coords={
-[2647]={{61.5,44.7}}},questID=98619,g={
+[2647]={{56.7,44.1},{61.5,44.7}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98619,g={
 de(27458,{itemID=284357,spellID=1315979}),
 de(15750,{itemID=264486,spellID=1272049}),
 de(1432,{itemID=244349,spellID=1237030}),
 crit(117438,{achID=63717,id=41})}}),
-o(676621,{coords={
-[2647]={{61.5,44.7}}},questID=98619,g={
-crit(117438,{achID=63717,id=41})}}),
-o(676631,{coords={
-[2647]={{61.1,43.5}}},questID=98614,g={
-crit(117436,{achID=63717,id=40})}}),
+o(676639,{coords={
+[2647]={{28.7,23.1}}},questID=98620,g={
+crit(117178,{achID=63717,id=16})}}),
+o(676640,{coords={
+[2647]={{22.1,29.6}}},questID=98621,g={
+crit(117179,{achID=63717,id=17})}}),
+o(676641,{coords={
+[2647]={{22.7,12.2}}},questID=98622,g={
+crit(117180,{achID=63717,id=18})}}),
+o(676642,{coords={
+[2647]={{22.9,12}}},questID=98623,g={
+s(316077,284180,{f=2,loc=41}),
+crit(117181,{achID=63717,id=19})}}),
+o(676645,{coords={
+[2647]={{40.6,20.3}}},questID=98625,g={
+crit(117183,{achID=63717,id=21})}}),
+o(676646,{coords={
+[2647]={{30.6,15.6}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98626,g={
+toy(280823),
+crit(117184,{achID=63717,id=22})}}),
 o(676647,{coords={
-[2647]={{30.6,14.9}}}}),
-o(676636,{coords={
-[2647]={{10.5,55}}},g={
-s(316079,284182,{f=2,loc=40})}}),
+[2647]={{30.6,15.1}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98627,g={
+crit(117185,{achID=63717,id=23})}}),
+o(676648,{coords={
+[2647]={{68.2,34.1}}},questID=98628,g={
+crit(117186,{achID=63717,id=24})}}),
+o(676649,{coords={
+[2647]={{67.9,27.7}}},questID=98629,g={
+crit(117187,{achID=63717,id=25})}}),
+o(676651,{coords={
+[2647]={{56.7,44.1},{61.2,44.8}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98631,g={
+crit(117439,{achID=63717,id=42})}}),
+o(676653,{coords={
+[2647]={{81.3,55}}},questID=98633,g={
+crit(117190,{achID=63717,id=28})}}),
+o(676657,{coords={
+[2647]={{86.9,63.3}}},questID=98634,g={
+crit(117191,{achID=63717,id=29})}}),
+o(676658,{coords={
+[2647]={{89,78}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98635,g={
+i(280563,{f=55,spellID=1314402}),
+crit(117192,{achID=63717,id=30})}}),
+o(676660,{coords={
+[2647]={{88.5,77.3}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98636,g={
+crit(117193,{achID=63717,id=31})}}),
+o(676661,{coords={
+[2647]={{72.4,65.9}}},questID=98637,g={
+crit(117194,{achID=63717,id=32})}}),
+o(676663,{coords={
+[2647]={{69.2,71}}},questID=98638,g={
+crit(117195,{achID=63717,id=33})}}),
 o(676664,{coords={
 [2647]={{66.6,51.5}}},g={
 toy(280821)}}),
-o(676627,{coords={
-[2647]={{26.9,80.9}}},g={
-toy(280822)}})}}),
-o(689304),
+o(676666,{coords={
+[2647]={{56.7,44.1},{61.5,43.6}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98640,g={
+crit(117440,{achID=63717,id=43})}}),
+o(676759,{coords={
+[2647]={{40.6,45.4}}},description="Below the pathway.",questID=98648,g={
+crit(117198,{achID=63717,id=36})}}),
+o(676760,{coords={
+[2647]={{47.7,40}}},questID=98649,g={
+crit(117199,{achID=63717,id=37})}}),
+o(676761,{coords={
+[2647]={{46,48.3}}},questID=98650,g={
+crit(117200,{achID=63717,id=38})}})}}),
+o(689304,{isWeekly=1,questID=98758,g={
+toy(280820),
+r(1291690,{itemID=273067,requireSkill=755,skillID=2914})}}),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
-o(673143),
-o(673144),
+o(673143,{sym={{"select","itemID",273067}}}),
+o(673144,{sym={{"select","itemID",273067}}}),
 o(673138),
 o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
+o(654950,{coords={
+[2647]={{24.8,22.5}}},description="Spawns after finishing 'Jan'alai's' event."}),
+o(677414,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(677418,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(676747,{description="Spawns randomly throughout the Labyrinth."}),
 o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(705929),
-o(705955,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
+o(705955,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(705957,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(705959,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
 h(-64,{
 s(316034,284052,{f=3}),
 de(8992,{itemID=252044,spellID=1254109}),
@@ -3951,6 +3968,7 @@ s(316038,284057,{f=3}),
 de(15161,{itemID=263321,spellID=1270384}),
 s(316033,284051,{f=2,loc=41}),
 s(316035,284054,{f=2,loc=41}),
+de(1433,{itemID=244350,spellID=1237031}),
 de(15491,{itemID=264256,spellID=1271501})})}})}}),
 h(-12,{awp=110002,g={
 ach(40817,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452,2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},providers={{"s",460818}}}),

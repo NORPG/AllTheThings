@@ -1542,7 +1542,7 @@ toy(202862,{b=1}),
 toy(202865,{b=1})}})}}),
 q(72809,{cost={{"i",202162,1}},repeatable=1,g={
 i(202163,{spellID=398642})}}),
-q(75223,{repeatable=1,g={
+q(75223,{qss={202395},repeatable=1,g={
 i(202395,{spellID=405852})}}),
 q(73171,{cost={{"i",202395,1}},providers={{"o",384744}},g={
 crit(57983,{achID=17360,id=1})}}),
@@ -1620,7 +1620,7 @@ o(405584,{coords={
 o(387722,{coords={
 [2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 h(-780,{
-ach(40910,{awp=110000,description="Rewarded for the Aid in the stress testing of the realms in China.",rwp=110005,u=2}),
+ach(40910,{awp=110000,description="Rewarded for aiding in the stress testing of the realms in China.",rwp=110005,u=2}),
 mnt(366962,{awp=110000,itemID=190231,lvl=10,u=2}),
 p(4286,{awp=110000,b=1,itemID=210409,npcID=211942,spellID=425472,u=2}),
 mnt(464443,{awp=110000,b=1,description="Rewarded for returning to World of Warcraft in 2024. China Only.",itemID=229128,lvl=10,u=2}),

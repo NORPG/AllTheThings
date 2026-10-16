@@ -7047,10 +7047,6 @@ q(933,{coords={
 [1438]={{56.2,61.7}}},qgs={3515},r=2,sourceQuests={929},g={
 qo(1,{coords={
 [1438]={{42,67}}},providers={{"i",5621},{"i",5645}}})}}),
-q(934,{coords={
-[1438]={{56.2,61.7}}},description="This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",qgs={3515},r=2,rwp=10700,sourceQuests={933},u=2,g={
-qo(1,{coords={
-[1438]={{38,34}}},providers={{"i",18151},{"i",18152}},u=2})}}),
 q(7383,{awp=10700,coords={
 [1438]={{56.2,61.7}}},qgs={3515},r=2,sourceQuests={933},g={
 qo(1,{coords={
@@ -14709,6 +14705,8 @@ n(959,{coords={
 n(1198,{coords={
 [1429]={{83.2,66}}},r=2,g={
 s(160245,11303,{f=32,isLimited=1,lvl=11,q=2})}}),
+n(955,{coords={
+[1429]={{24,73}}}}),
 n(66,{coords={
 [1429]={{41.8,67}}},r=2,g={
 r(7630,{isLimited=1,itemID=6270,learnedAt=55,q=1,requireSkill=197}),

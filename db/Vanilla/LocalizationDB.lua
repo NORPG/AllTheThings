@@ -614,6 +614,7 @@ L.LOOT_SPEC_DESC_2 = "In Personal Loot dungeons, raids, and outdoor encounters, 
 L.LOOT_SPEC_UNKNOWN = "Loot Specialization Unknown"
 L.LOOT_TABLE_CHANCE = "Loot Table Chance"
 L.LORE = "Lore"
+L.LOWER = "Lower"
 L.MAIN_LIST = "Main List"
 L.MAIN_LIST_REQUIRES_REFRESH = "[Click to Update Progress]"
 L.MAIN_LIST_SCALE_TOOLTIP = "Use this to customize the scale of the Main List.\n\nDefault: 1"
@@ -1145,6 +1146,7 @@ L.UPGRADE_ICON = "|T" .. _.asset("Interface_Upgrade") .. ":0|t"
 L.UPGRADE_TEXT = "|T" .. _.asset("Interface_Upgrade") .. ":0|t |cff62e37e" .. UPGRADE .. "|r"
 L.UPON_COMPLETION = "Upon Completion"
 L.UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below."
+L.UPPER = "Upper"
 L.VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache."
 L.VISUAL_ID = "Visual ID"
 L.WAGO_BUTTON_LABEL = "Wago.io"
@@ -11990,6 +11992,10 @@ L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch
 localize(_.CategoryNames, {
 	[2] = "Verbrauchsgegenstand",
 	[3] = "Tarotkarten",
+	[106] = "Karte",
+	[221] = "Stulpen",
+	[224] = "Beinkleider",
+	[259] = "Umhänge",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Neuer Charakter",
@@ -14461,9 +14467,12 @@ L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour
 L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(_.CategoryNames, {
-	[2] = "consommable",
+	[2] = "Consommable",
 	[3] = "Jeu de tarot",
-	[106] = "Carte",
+	[106] = "Cartes",
+	[221] = "Gantelets",
+	[224] = "Jambes",
+	[259] = "Capes",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Nouveau personnage",
@@ -16694,7 +16703,10 @@ L.TITLES_CHECKBOX = "Titoli"
 localize(_.CategoryNames, {
 	[2] = "Consumabile",
 	[3] = "Mazzo di Tarocchi",
-	[106] = "Carta",
+	[106] = "Carte",
+	[221] = "Guanti Lunghi",
+	[224] = "Gambe",
+	[259] = "Mantelli",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuovo personaggio",
@@ -17283,6 +17295,9 @@ localize(_.CategoryNames, {
 	[2] = "Consumível",
 	[3] = "Baralho de Tarô",
 	[106] = "Carta",
+	[221] = "Manoplas",
+	[224] = "Pernas",
+	[259] = "Mantos",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Novo personagem",
@@ -20053,7 +20068,10 @@ L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!"
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках."
 localize(_.CategoryNames, {
 	[3] = "карт Таро",
-	[106] = "Карты",
+	[106] = "Карта",
+	[221] = "Рукавицы",
+	[224] = "Поножи",
+	[259] = "Плащи",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Новый персонаж",
@@ -22389,9 +22407,10 @@ L.TITLES_CHECKBOX = "칭호"
 localize(_.CategoryNames, {
 	[2] = "소모품",
 	[3] = "카드 묶음",
-	[221] = "손",
-	[224] = "다리",
-	[259] = "등",
+	[106] = "카드",
+	[221] = "건틀릿",
+	[224] = "다리보호구",
+	[259] = "망토",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "새로운 캐릭터",
@@ -25380,7 +25399,7 @@ L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basad
 localize(_.CategoryNames, {
 	[2] = "Consumible",
 	[3] = "Baraja de Tarot",
-	[106] = "Carta",
+	[106] = "Tarot",
 	[221] = "Guanteletes",
 	[224] = "Piernas",
 	[259] = "Capas",
@@ -27879,7 +27898,6 @@ L.WAGO_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace del addo
 L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso"
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(_.CategoryNames, {
-	[2] = "Objeto Consumible",
 	[3] = "Naipe de Tarot",
 })
 localize(L.HEADER_NAMES, {
@@ -33028,7 +33046,8 @@ L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按�
 L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。"
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。"
 localize(_.CategoryNames, {
-	[106] = "卡片",
+	[221] = "護手",
+	[259] = "披風",
 })
 localize(L.HEADER_NAMES, {
 	[-19] = "首領共通掉落",
