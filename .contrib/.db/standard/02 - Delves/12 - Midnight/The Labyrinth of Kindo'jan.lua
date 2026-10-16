@@ -249,20 +249,44 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 97131,
 					}),
 					o(676585, {	-- Sturdy Chest
-						["coord"] = { 36.9, 72.5, LABYRINTH_KINDOJAN },
+						["coord"] = { 36.9, 69.9, LABYRINTH_KINDOJAN },
 						["questID"] = 98602,
 					}),
 					o(676586, {	-- Sturdy Chest
 						["coord"] = { 21.4, 36.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98603,
 					}),
+					o(676621, {	-- Sturdy Chest
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.7, 44.2, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
+						["questID"] = 98604,
+					}),
+					o(676622, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 38.8, 83.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98605,
+						["groups"] = { i(282424) },	-- Akil'zon's Swiftness
+					}),
+					o(676623, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 38.0, 83.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98606,
+						["groups"] = { i(284181) },	-- Loa-Touched Spine (COSMETIC!)
+					}),
 					o(676624, {	-- Sturdy Chest
-						["coord"] = { 21.7, 71.3, LABYRINTH_KINDOJAN },
+						["coord"] = { 21.7, 68.6, LABYRINTH_KINDOJAN },
 						["questID"] = 98607,
 					}),
 					o(676625, {	-- Sturdy Chest
-						["coord"] = { 29.9, 77.4, LABYRINTH_KINDOJAN },
+						["coord"] = { 29.9, 74.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98608,
+					}),
+					o(676627, {	-- Sturdy Chest
+						["coord"] = { 26.9, 80.9, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280822) },	-- Nalorakk's Strength Charm (TOY!)
 					}),
 					o(676628, {	-- Sturdy Chest
 						["coord"] = { 13.9, 37.8, LABYRINTH_KINDOJAN },
@@ -272,6 +296,41 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 26.5, 43.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98612,
 					}),
+					o(676630, {	-- Sturdy Chest
+						["coord"] = { 27.4, 33.1, LABYRINTH_KINDOJAN },
+						["questID"] = 98613,
+						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame (TOY!)
+					}),
+					o(676631, {	-- Sturdy Chest
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.1, 43.5, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
+						["questID"] = 98614,
+					}),
+					o(676632, {	-- Sturdy Chest
+						["coord"] = { 27.8, 34.6, LABYRINTH_KINDOJAN },
+						["questID"] = 98615,
+						["groups"] = { i(283996) },	-- Ancient Hash'ey Battle Art: Heat Wave
+					}),
+					o(676636, {	-- Sturdy Chest
+						["coord"] = { 10.5, 55.0, LABYRINTH_KINDOJAN },
+						["groups"] = { i(284182) },	-- Loa-Touched Visage (COSMETIC!)
+					}),
+					o(676637, {	-- Sturdy Chest
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.5, 44.7, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
+						["questID"] = 98619,
+						["groups"] = {	-- Exo: Loot confirmed. All 3 decor pieces.
+							i(284357),	-- Ancient Amani Mural (DECOR!)
+							i(264486),	-- Brown Amani Tapestry (DECOR!)
+							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
+						},
+					}),
 					o(676639, {	-- Sturdy Chest
 						["coord"] = { 28.7, 23.1, LABYRINTH_KINDOJAN },
 						["questID"] = 98620,
@@ -280,9 +339,29 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 22.1, 29.5, LABYRINTH_KINDOJAN },
 						["questID"] = 98621,
 					}),
+					o(676641, {	-- Sturdy Chest
+						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
+						["questID"] = 98622,
+					}),
+					o(676642, {	-- Sturdy Chest
+						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98623,
+						["groups"] = { i(284180) },	-- Loa-Touched Deltoid (COSMETIC!)
+					}),
 					o(676645, {	-- Sturdy Chest
 						["coord"] = { 40.6, 20.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98625,
+					}),
+					o(676646, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 30.6, 15.6, LABYRINTH_KINDOJAN },
+						["questID"] = 98626,
+						["groups"] = { i(280823) },	-- Feathers of Akil'zon (TOY!)
+					}),
+					o(676647, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 30.6, 15.1, LABYRINTH_KINDOJAN },
+						["questID"] = 98627,
 					}),
 					o(676648, {	-- Sturdy Chest
 						["coord"] = { 68.2, 34.1, LABYRINTH_KINDOJAN },
@@ -291,6 +370,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					o(676649, {	-- Sturdy Chest
 						["coord"] = { 67.9, 27.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98629,
+					}),
+					o(676651, {	-- Sturdy Chest
+						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
+						["coords"] = {
+							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
+							{ 61.2, 44.8, LABYRINTH_KINDOJAN },	-- Sturdy Chest
+						},
+						["questID"] = 98631,
 					}),
 					o(676653, {	-- Sturdy Chest
 						["coord"] = { 81.3, 55.0, LABYRINTH_KINDOJAN },
@@ -319,74 +406,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 69.2, 71.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98638,
 					}),
-					o(676760, {	-- Sturdy Chest
-						["coord"] = { 47.7, 40.0, LABYRINTH_KINDOJAN },
-						["questID"] = 98649,
-					}),
-					o(676646, {	-- Sturdy Chest
-						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
-						["coord"] = { 30.6, 15.6, LABYRINTH_KINDOJAN },
-						["questID"] = 98626,
-						["groups"] = { i(280823) },	-- Feathers of Akil'zon (TOY!)
-					}),
-					o(676632, {	-- Sturdy Chest
-						["coord"] = { 27.8, 34.6, LABYRINTH_KINDOJAN },
-						["questID"] = 98615,
-						["groups"] = { i(283996) },	-- Ancient Hash'ey Battle Art: Heat Wave
-					}),
-					o(676622, {	-- Sturdy Chest
-						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
-						["coord"] = { 38.8, 83.5, LABYRINTH_KINDOJAN },
-						["questID"] = 98605,
-						["groups"] = { i(282424) },	-- Akil'zon's Swiftness
-					}),
-					o(676623, {	-- Sturdy Chest
-						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
-						["coord"] = { 38.0, 83.5, LABYRINTH_KINDOJAN },
-						["questID"] = 98606,
-						["groups"] = { i(284181) },	-- Loa-Touched Spine (COSMETIC!)
-					}),
-					o(676630, {	-- Sturdy Chest
-						["coord"] = { 27.4, 33.1, LABYRINTH_KINDOJAN },
-						["questID"] = 98613,
-						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame (TOY!)
-					}),
-					o(676642, {	-- Sturdy Chest
-						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
-						["questID"] = 98623,
-						["groups"] = { i(284180) },	-- Loa-Touched Deltoid (COSMETIC!)
-					}),
-					o(676641, {	-- Sturdy Chest
-						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
-					}),
-					o(676651, {	-- Sturdy Chest
-						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
-						["coords"] = {
-							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
-							{ 61.2, 44.8, LABYRINTH_KINDOJAN },	-- Sturdy Chest
-						},
-						["questID"] = 98631,
-					}),
-					o(676637, {	-- Sturdy Chest
-						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
-						["coords"] = {
-							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
-							{ 61.5, 44.7, LABYRINTH_KINDOJAN },	-- Sturdy Chest
-						},
-						["questID"] = 98619,
-						["groups"] = {	-- Exo: Loot confirmed. All 3 decor pieces.
-							i(284357),	-- Ancient Amani Mural (DECOR!)
-							i(264486),	-- Brown Amani Tapestry (DECOR!)
-							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
-						},
-					}),
-					o(676621, {	-- Sturdy Chest
-						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
-						["coords"] = {
-							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
-							{ 61.7, 44.2, LABYRINTH_KINDOJAN },	-- Sturdy Chest
-						},
-						["questID"] = 98604,
+					o(676664, {	-- Sturdy Chest
+						["coord"] = { 66.6, 51.5, LABYRINTH_KINDOJAN },
+						["groups"] = { i(280821) },	-- Trail of Halazzi (TOY!)
 					}),
 					o(676666, {	-- Sturdy Chest
 						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
@@ -396,48 +418,23 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 						["questID"] = 98640,
 					}),
-					o(676631, {	-- Sturdy Chest
-						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
-						["coords"] = {
-							{ 56.7, 44.1, LABYRINTH_KINDOJAN },	-- Secret Passage Entrance
-							{ 61.1, 43.5, LABYRINTH_KINDOJAN },	-- Sturdy Chest
-						},
-						["questID"] = 98614,
-					}),
-					o(676647, {	-- Sturdy Chest
-						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
-						["coord"] = { 30.6, 15.1, LABYRINTH_KINDOJAN },
-						["questID"] = 98627,
-					}),
-					o(676636, {	-- Sturdy Chest
-						["coord"] = { 10.5, 55.0, LABYRINTH_KINDOJAN },
-						["groups"] = { i(284182) },	-- Loa-Touched Visage (COSMETIC!)
-					}),
-					o(676664, {	-- Sturdy Chest
-						["coord"] = { 66.6, 51.5, LABYRINTH_KINDOJAN },
-						["groups"] = { i(280821) },	-- Trail of Halazzi (TOY!)
-					}),
-					o(676627, {	-- Sturdy Chest
-						["coord"] = { 26.9, 80.9, LABYRINTH_KINDOJAN },
-						["groups"] = { i(280822) },	-- Nalorakk's Strength Charm (TOY!)
-					}),
-					-- o(???, {	-- Sturdy Chest
-					-- 	["coord"] = { 21.4, 36.7, LABYRINTH_KINDOJAN },
-					-- 	["questID"] = 98603,
-					-- }),
-					o(676641, {	-- Sturdy Chest
-						["coord"] = { 22.5, 12.0, LABYRINTH_KINDOJAN },
-						["questID"] = 98622,
-					}),
 					o(676759, {	-- Sturdy Chest
 						["description"] = "Below the pathway.",
 						["coord"] = { 40.6, 45.4, LABYRINTH_KINDOJAN },
 						["questID"] = 98648,
 					}),
+					o(676760, {	-- Sturdy Chest
+						["coord"] = { 47.7, 40.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98649,
+					}),
 					o(676761, {	-- Sturdy Chest
 						["coord"] = { 46.0, 48.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98650,
 					}),
+					--o(???, {	-- Sturdy Chest
+					--	["coord"] = { 21.4, 36.7, LABYRINTH_KINDOJAN },
+					--	["questID"] = 98603,
+					--}),
 				}),
 				o(689304, {	-- Ancestral Bounty
 					questID = 98758,
@@ -484,7 +481,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			--n(VENDORS, {
 			--}),
 			n(ZONE_REWARDS, {
-				-- From Sturdy Chests, Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
+				-- From Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
 				i(284052),	-- Amani Effigy (COSMETIC!)
 				i(252044),	-- Amani Horn Cup (DECOR!)
 				i(264484),	-- Blue Amani Tapestry (DECOR!)
