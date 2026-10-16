@@ -179,14 +179,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 					coord = { 33.4, 67.0, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					lvl = lvlsquish(30, 30, 10),
+					lvl = 30,
 				}),
 				hordeQuestData = q(6984, {	-- A Smokywood Pastures' Thank You! (Horde)
 					sourceQuest = 6983,	-- You're a Mean One... (Horde)
 					qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 					coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					lvl = lvlsquish(30, 30, 10),
+					lvl = 30,
 				}),
 				isYearly = true,
 				groups = {

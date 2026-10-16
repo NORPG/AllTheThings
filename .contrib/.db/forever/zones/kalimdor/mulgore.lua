@@ -1022,7 +1022,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 2947,	-- Harken Windtotem
 				coord = { 48.7, 59.3, MAP.MULGORE },
 				races = HORDE_ONLY,
-				lvl = lvlsquish(4, 4, 1),
+				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/8 Trophy Swoop Quill
 						provider = { "i", 4769 },	-- Swoop Hunting

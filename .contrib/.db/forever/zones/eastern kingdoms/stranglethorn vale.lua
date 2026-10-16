@@ -534,7 +534,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2546,	-- Fleet Master Firallon
 				coord = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
 				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
-				lvl = lvlsquish(49, 49, 10),
+				lvl = 49,
 				groups = {
 					i(22746, {	-- Buccaneer's Uniform
 						i(22742),	-- Bloodsail Shirt
