@@ -67,13 +67,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(796),	-- Loa-Blessed <Name>
 				}),
 				ach(63721),	-- The Labyrinth of Kindo'jan
-				-- TODO: do these actually not exist or just no credit from higher tiers?
-				ach(63863),	-- The Labyrinth of Kindo'jan: Tier 1
-				ach(63864),	-- The Labyrinth of Kindo'jan: Tier 2
-				ach(63865),	-- The Labyrinth of Kindo'jan: Tier 3
+				-- Runaway TODO: do these actually not exist or just no credit from higher tiers?
+				-- Exo Note: These seem to be Hidden Achievement Triggers. Will add an annotation as I play along and confirm them
+				ach(63863),	-- The Labyrinth of Kindo'jan: Tier 1 (HAT!)
+				ach(63864),	-- The Labyrinth of Kindo'jan: Tier 2 (HAT!)
+				ach(63865),	-- The Labyrinth of Kindo'jan: Tier 3 (HAT!)
 				ach(63846),	-- The Labyrinth of Kindo'jan: Tier 4
 				ach(63847),	-- The Labyrinth of Kindo'jan: Tier 5
-				ach(63848),	-- The Labyrinth of Kindo'jan: Tier 6
+				ach(63848),	-- The Labyrinth of Kindo'jan: Tier 6 (HAT!)
 				ach(63849),	-- The Labyrinth of Kindo'jan: Tier 7
 				ach(63850),	-- The Labyrinth of Kindo'jan: Tier 8
 				ach(63851),	-- The Labyrinth of Kindo'jan: Tier 9
@@ -293,7 +294,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 98611,
 					}),
 					o(676629, {	-- Sturdy Chest
-						["coord"] = { 26.5, 43.0, LABYRINTH_KINDOJAN },
+						["coord"] = { 26.4, 40.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98612,
 					}),
 					o(676630, {	-- Sturdy Chest
@@ -336,7 +337,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 98620,
 					}),
 					o(676640, {	-- Sturdy Chest
-						["coord"] = { 22.1, 29.5, LABYRINTH_KINDOJAN },
+						["coord"] = { 22.1, 29.6, LABYRINTH_KINDOJAN },
 						["questID"] = 98621,
 					}),
 					o(676641, {	-- Sturdy Chest
@@ -431,10 +432,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 46.0, 48.3, LABYRINTH_KINDOJAN },
 						["questID"] = 98650,
 					}),
-					--o(???, {	-- Sturdy Chest
-					--	["coord"] = { 21.4, 36.7, LABYRINTH_KINDOJAN },
-					--	["questID"] = 98603,
-					--}),
 				}),
 				o(689304, {	-- Ancestral Bounty
 					questID = 98758,
@@ -470,6 +467,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 24.8, 22.5, LABYRINTH_KINDOJAN },
 					-- Triggers hqt(86371),	-- Trovehunter's Bounty
 				}),
+				o(677414, {	-- Mislaid Curiosity
+					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
+				o(677418, {	-- Mislaid Curiosity
+					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
 				o(676747, {	-- Mislaid Treasure
 					["description"] = "Spawns randomly throughout the Labyrinth.",
 				}),
@@ -482,6 +485,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
 				o(705957, {	-- Mislaid Treasure
+					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
+				o(705959, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
 			}),

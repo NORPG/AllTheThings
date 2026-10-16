@@ -328,7 +328,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1426),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn01.m2
 			rawdecor(1427),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02.m2
 			rawdecor(1432),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn04_Destroyed01.m2
-			rawdecor(1433),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02_Destroyed01.m2
 			rawdecor(1441),	-- [DNT] Small String of Schmancy Goblin Lights - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 11GO_Goblin_Lighting_Stringlights02.m2
 			rawdecor(1642),	-- [DNT] 12PH_NightElf_INE01_Partition_Pillar.wmo - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_NightElf_INE01_Partition_Pillar.wmo
 			rawdecor(1643),	-- [DNT] 12PH_NightElf_INE01_Partition_W_S.wmo - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_NightElf_INE01_Partition_W_S.wmo
