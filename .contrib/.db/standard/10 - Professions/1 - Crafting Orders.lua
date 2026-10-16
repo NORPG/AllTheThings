@@ -1,14 +1,14 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-CRAFTING_ORDERS = createHeader({
+local CRAFTING_ORDERS = createHeader({
 	readable = "Crafting Orders",
 	icon = 4557373,
 	text = {
 		en = [[~PROFESSIONS_CRAFTING_ORDERS_TAB_NAME]],
 	},
 });
-PATRON_REWARDS = createHeader({
+local PATRON_REWARDS = createHeader({
 	readable = "Patron Rewards",
 	icon = 4557373,
 	text = {

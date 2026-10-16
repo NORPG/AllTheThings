@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-HORRIFIC_VISIONS_REVISITED = createHeader({
+local HORRIFIC_VISIONS_REVISITED = createHeader({
 	readable = "Horrific Visions Revisited",
 	icon = [[~_.asset("Feature_Horrific Visions")]],
 	text = {

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-THOUSAND_BOAT_BASH_HEADER = createHeader({
+local THOUSAND_BOAT_BASH_HEADER = createHeader({
 	readable = "Thousand Boat Bash",
 	constant = "THOUSAND_BOAT_BASH_HEADER",
 	-- icon = ,

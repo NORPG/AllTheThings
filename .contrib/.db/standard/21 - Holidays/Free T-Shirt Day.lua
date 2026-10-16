@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-FREE_T_SHIRT_DAY_HEADER = createHeader({
+local FREE_T_SHIRT_DAY_HEADER = createHeader({
 	readable = "Free T-Shirt Day",
 	constant = "FREE_T_SHIRT_DAY_HEADER",
 	icon = [[~_.asset("Holiday_Tshirt")]],

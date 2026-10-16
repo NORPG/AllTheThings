@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-TWILIGHT_ASSIST = createHeader({
+local TWILIGHT_ASSIST = createHeader({
 	readable = "Twilight Assist",
 	icon = 236469,
 	text = {
@@ -23,7 +23,7 @@ TWILIGHT_ASSIST = createHeader({
 		cn = "在3条暮光幼龙中至少1条存活的情况下与萨塔里奥交战，然后将其击败。",
 	},
 });
-TWILIGHT_DUO = createHeader({
+local TWILIGHT_DUO = createHeader({
 	readable = "Twilight Duo",
 	icon = 236473,
 	text = {
@@ -44,7 +44,7 @@ TWILIGHT_DUO = createHeader({
 		cn = "在3条暮光幼龙中至少2条存活的情况下与萨塔里奥交战，然后将其击败。",
 	},
 });
-TWILIGHT_ZONE = createHeader({
+local TWILIGHT_ZONE = createHeader({
 	readable = "Twilight Zone",
 	icon = 236471,
 	text = {

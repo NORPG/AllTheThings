@@ -23,7 +23,7 @@ APPRENTICE = createHeader({
 		cn = "3名学徒中只有1名可被选中挑战。",
 	},
 });
-OPERA_OF_MALEDICTION = createHeader({
+local OPERA_OF_MALEDICTION = createHeader({
 	readable = "Opera of Malediction",
 	text = {
 		en = "Opera of Malediction",

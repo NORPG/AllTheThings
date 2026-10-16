@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-ELEMENTAL_BONDS = createHeader({
+local ELEMENTAL_BONDS = createHeader({
 	readable = "Elemental Bonds",
 	icon = 516313,
 	text = {

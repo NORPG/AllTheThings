@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
+local DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Dragonflight Seasonal Promotions",
 	icon = [[~_.asset("Expansion_DF")]],
 	text = {

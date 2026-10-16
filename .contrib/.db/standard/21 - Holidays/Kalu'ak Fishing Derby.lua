@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-KALUAK_FISHING_DERBY_HEADER = createHeader({
+local KALUAK_FISHING_DERBY_HEADER = createHeader({
 	readable = "Kalu'ak Fishing Derby",
 	icon = 132933,
 	eventID = EVENTS.KALUAK_FISHING_DERBY,

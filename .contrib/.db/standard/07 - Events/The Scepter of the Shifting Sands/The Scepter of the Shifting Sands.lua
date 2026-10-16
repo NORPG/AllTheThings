@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
+local THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 	readable = "The Scepter of the Shifting Sands",
 	icon = 133062,
 	text = {

@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-SHADOWLANDS_SEASONAL_PROMOTIONS = createHeader({
+local SHADOWLANDS_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Shadowlands Seasonal Promotions",
 	icon = [[~_.asset("Expansion_SL")]],
 	text = {

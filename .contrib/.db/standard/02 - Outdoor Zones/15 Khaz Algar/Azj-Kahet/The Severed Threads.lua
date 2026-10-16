@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-SEVERED_THREADS_PACT = createHeader({
+local SEVERED_THREADS_PACT = createHeader({
 	readable = "Severed Threads Pact",
 	icon = 5409320,
 	text = {

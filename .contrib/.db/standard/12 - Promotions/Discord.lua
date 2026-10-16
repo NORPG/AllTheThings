@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-DISCORD_PROMOTION = createHeader({
+local DISCORD_PROMOTION = createHeader({
 	readable = "Discord Promotion",
 	icon = 133014,
 	text = {

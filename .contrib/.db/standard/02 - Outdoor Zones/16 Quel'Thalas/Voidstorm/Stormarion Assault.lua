@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-STORMARION_ASSAULT = createHeader({
+local STORMARION_ASSAULT = createHeader({
 	readable = "Stormarion Assault",
 	icon = 7431083,
 	text = {

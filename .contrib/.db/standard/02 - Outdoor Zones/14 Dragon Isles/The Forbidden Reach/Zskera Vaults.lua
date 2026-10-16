@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-ZSKERA_VAULTS = createHeader({
+local ZSKERA_VAULTS = createHeader({
 	readable = "Zskera Vaults",
 	icon = 4638590,
 	text = {

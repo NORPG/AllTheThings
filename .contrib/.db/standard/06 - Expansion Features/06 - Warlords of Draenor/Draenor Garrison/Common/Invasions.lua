@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-GARRISON_INVASIONS = createHeader({
+local GARRISON_INVASIONS = createHeader({
 	readable = "Garrison Invasions",
 	icon = 236351,
 	text = {

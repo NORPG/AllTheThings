@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-AMAZON_PRIME_GAMING = createHeader({
+local AMAZON_PRIME_GAMING = createHeader({
 	readable = "Amazon Prime Gaming",
 	icon = 136101,
 	text = {
@@ -107,7 +107,7 @@ root(ROOTS.Promotions, {
 				-- #endif
 				["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },
 			}),
-			i(23709, {	-- Tabard of Frost 
+			i(23709, {	-- Tabard of Frost
 				-- #if AFTER 10.0.2
 				-- #if BEFORE 11.0.2
 				["description"] = "Amazon Prime Gaming reward from February 27th 2024 till March 26th 2024.",

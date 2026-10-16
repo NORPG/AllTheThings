@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-SHIPPING_AND_HANDLING = createHeader({
+local SHIPPING_AND_HANDLING = createHeader({
 	readable = "Shipping & Handling",
 	constant = "SHIPPING_AND_HANDLING",
 	icon = 6383558,

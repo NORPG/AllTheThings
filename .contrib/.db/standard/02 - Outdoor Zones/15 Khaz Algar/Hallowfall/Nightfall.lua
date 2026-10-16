@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-NIGHTFALL = createHeader({
+local NIGHTFALL = createHeader({
 	readable = "Nightfall",
 	icon = 6694197,
 	text = {

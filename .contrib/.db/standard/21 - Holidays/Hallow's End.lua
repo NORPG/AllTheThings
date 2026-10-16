@@ -512,7 +512,7 @@ local CANDY_BUCKET_OBJECT_DATA = {
 	},
 };
 local ObjectDB = ObjectDB;
-function candybucket(questID, t)
+local function candybucket(questID, t)
 	t = q(questID, t);
 	t._drop = { "g" };
 	t.isYearly = true;
@@ -1016,7 +1016,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #elseif AFTER 7.2.5
 					98,
 					-- #else
-					nil,	
+					nil,
 					-- #endif
 				["groups"] = {
 					-- #if BEFORE 10.1.7

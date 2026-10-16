@@ -2,21 +2,21 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-MOTH_RENOWN2 = createHeader({
+local MOTH_RENOWN2 = createHeader({
 	readable = "Renown 2: Moth Watching I",
 	icon = 5015301,
 	text = {
 		en = [[~COVENANT_SANCTUM_TAB_RENOWN.." 2"]],
 	},
 });
-MOTH_RENOWN4 = createHeader({
+local MOTH_RENOWN4 = createHeader({
 	readable = "Renown 4: Big Moth Hunter I",
 	icon = 5015301,
 	text = {
 		en = [[~COVENANT_SANCTUM_TAB_RENOWN.." 4"]],
 	},
 });
-MOTH_RENOWN9 = createHeader({
+local MOTH_RENOWN9 = createHeader({
 	readable = "Renown 9: Big Moth Hunter II",
 	icon = 5015301,
 	text = {

@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-MISCELLANEOUS_PROMOTIONS = createHeader({
+local MISCELLANEOUS_PROMOTIONS = createHeader({
 	readable = "Miscellaneous",
 	icon = 135999,
 	text = {

@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-HEROES_OF_THE_STORM = createHeader({
+local HEROES_OF_THE_STORM = createHeader({
 	readable = "Heroes of the Storm",
 	icon = 132314,
 	text = {

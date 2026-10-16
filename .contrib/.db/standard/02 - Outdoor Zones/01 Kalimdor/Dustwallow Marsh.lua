@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-ALCAZ_ISLAND = createHeader({
+local ALCAZ_ISLAND = createHeader({
 	readable = "Alcaz Island",
 	icon = 132996,
 	text = {

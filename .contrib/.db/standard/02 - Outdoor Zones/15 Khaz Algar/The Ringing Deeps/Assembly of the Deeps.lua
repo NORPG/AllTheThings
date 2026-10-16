@@ -4,7 +4,7 @@
 
 local FIRELIGHT_RUBY = 224642;
 
-AWAKENING_THE_MACHINE = createHeader({
+local AWAKENING_THE_MACHINE = createHeader({
 	readable = "Awakening The Machine",
 	icon = 5768149,
 	text = {
@@ -21,7 +21,7 @@ AWAKENING_THE_MACHINE = createHeader({
 		tw = "甦醒機械",
 	},
 });
-SNUFFLING = createHeader({
+local SNUFFLING = createHeader({
 	readable = "Snuffling",
 	icon = 648644,
 	text = {

@@ -1,4 +1,4 @@
-TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
+local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(WARRIOR, {
 		-- DPS
 		i(60325, {	-- Earthen Helmet
@@ -215,7 +215,7 @@ TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 		i(60278),	-- Stormrider's Legwraps
 	}),
 };
-TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
+local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(WARRIOR, {
 		-- DPS
 		i(65266, {	-- Earthen Helmet
@@ -717,7 +717,7 @@ TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 		}),
 	}),
 };
-TIER_ELEVEN_COMMON_GROUPS = {
+local TIER_ELEVEN_COMMON_GROUPS = {
 	i(65001, {	-- Crown of the Forlorn Conqueror
 		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),

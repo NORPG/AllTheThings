@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-WARCRAFT_RUMBLE = createHeader({
+local WARCRAFT_RUMBLE = createHeader({
 	readable = "Warcraft Rumble",
 	icon = 4226119,
 	text = {

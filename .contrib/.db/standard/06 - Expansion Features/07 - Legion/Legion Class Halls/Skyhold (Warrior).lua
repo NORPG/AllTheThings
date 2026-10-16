@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-GREAT_ODYN_AND_THE_FIRELORD = createHeader({
+local GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 	readable = "Great Odyn and the Firelord",
 	icon = 237446,
 	text = {
@@ -19,7 +19,7 @@ GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_WANDERER_AND_THE_SERPENT = createHeader({
+local THE_WANDERER_AND_THE_SERPENT = createHeader({
 	readable = "The Wanderer and the Serpent",
 	icon = 237446,
 	text = {
@@ -36,7 +36,7 @@ THE_WANDERER_AND_THE_SERPENT = createHeader({
 		-- TODO: tw = "",
 	},
 });
-HALLS_OF_GOLD_AND_GLORY = createHeader({
+local HALLS_OF_GOLD_AND_GLORY = createHeader({
 	readable = "Halls of Gold and Glory",
 	icon = 237446,
 	text = {
@@ -53,7 +53,7 @@ HALLS_OF_GOLD_AND_GLORY = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_KEEPERS_EYE = createHeader({
+local THE_KEEPERS_EYE = createHeader({
 	readable = "The Keeper's Eye",
 	icon = 237446,
 	text = {
@@ -70,7 +70,7 @@ THE_KEEPERS_EYE = createHeader({
 		-- TODO: tw = "",
 	},
 });
-FIRST_OF_THE_VALKYR = createHeader({
+local FIRST_OF_THE_VALKYR = createHeader({
 	readable = "First of the Val'kyr",
 	icon = 237446,
 	text = {
@@ -87,7 +87,7 @@ FIRST_OF_THE_VALKYR = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
+local THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 	readable = "The Sealing of the Halls of Valor",
 	icon = 237446,
 	text = {
@@ -104,7 +104,7 @@ THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 		-- TODO: tw = "",
 	},
 });
-HIS_NAME_IS_DRAGONBLOOD = createHeader({
+local HIS_NAME_IS_DRAGONBLOOD = createHeader({
 	readable = "His Name Is Dragonblood",
 	icon = 237446,
 	text = {
@@ -121,7 +121,7 @@ HIS_NAME_IS_DRAGONBLOOD = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
+local THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 	readable = "The Last Words of Asgrim the Dreadkiller",
 	icon = 237446,
 	text = {
@@ -138,7 +138,7 @@ THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 		-- TODO: tw = "",
 	},
 });
-A_SHIELDMAIDENS_CREED = createHeader({
+local A_SHIELDMAIDENS_CREED = createHeader({
 	readable = "A Shieldmaiden's Creed",
 	icon = 237446,
 	text = {
@@ -155,7 +155,7 @@ A_SHIELDMAIDENS_CREED = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
+local THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 	readable = "The Prophecy of Rythas the Oracle",
 	icon = 237446,
 	text = {
@@ -172,7 +172,7 @@ THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_LESSONS_OF_THE_BLACKFIST = createHeader({
+local THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 	readable = "The Lessons of the Blackfist",
 	icon = 237446,
 	text = {
@@ -189,7 +189,7 @@ THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 		-- TODO: tw = "",
 	},
 });
-VOLUNDS_FOLLY = createHeader({
+local VOLUNDS_FOLLY = createHeader({
 	readable = "Volund's Folly",
 	icon = 237446,
 	text = {

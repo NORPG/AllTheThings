@@ -2,14 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-DETENTION_BLOCK = createHeader({
+local DETENTION_BLOCK = createHeader({
 	readable = "Detention Block",
 	icon = 236718,
 	text = {
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS1]],
 	},
 });
-SHADOWFORGE_CITY = createHeader({
+local SHADOWFORGE_CITY = createHeader({
 	readable = "Shadowforge City",
 	icon = 236718,
 	text = {

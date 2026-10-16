@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-COLLECTORS_EDITION = createHeader({
+local COLLECTORS_EDITION = createHeader({
 	readable = "Collector's Edition",
 	icon = [[~_.asset("Promotion_Collector")]],
 	text = {
@@ -19,7 +19,7 @@ COLLECTORS_EDITION = createHeader({
 		tw = "典藏版",
 	},
 });
-HEROIC_EDITION = createHeader({
+local HEROIC_EDITION = createHeader({
 	readable = "Heroic Edition",
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
@@ -36,7 +36,7 @@ HEROIC_EDITION = createHeader({
 		tw = "英雄版",
 	},
 });
-EPIC_EDITION = createHeader({
+local EPIC_EDITION = createHeader({
 	readable = "Epic Edition",
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {
@@ -55,7 +55,7 @@ EPIC_EDITION = createHeader({
 });
 -- NOTE: Released on May 18, 2021.
 -- NOTE: No longer available on the store since August 30, 2022.
-TBC_CLASSIC_DELUXE_EDITION = createHeader({
+local TBC_CLASSIC_DELUXE_EDITION = createHeader({
 	readable = "TBC Classic Deluxe Edition",
 	icon = [[~_.asset("Expansion_TBC")]],
 	text = {
@@ -73,7 +73,7 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 	},
 });
 -- NOTE: Released on November 18, 2025.
-TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE = createHeader({
+local TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE = createHeader({
 	readable = "TBC Classic Anniversary Edition - Outland Upgrade",
 	icon = [[~_.asset("Expansion_TBC")]],
 	text = {
@@ -92,7 +92,7 @@ TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE = createHeader({
 });
 -- NOTE: Released on August 30, 2022.
 -- NOTE: No longer available on the store since 3 November, 2023.
-WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
+local WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 	readable = "WotLK Classic Northrend Upgrade",
 	icon = [[~_.asset("Expansion_WOTLK")]],
 	text = {
@@ -111,7 +111,7 @@ WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 });
 -- NOTE: Released on November 3, 2023.
 -- NOTE: No longer available on the store since 25 September, 2025.
-CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
+local CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 	readable = "Cata Classic Blazing Upgrade",
 	icon = [[~_.asset("Expansion_CATA")]],
 	text = {
@@ -129,7 +129,7 @@ CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 	},
 });
 -- NOTE: Released on February 20, 2025.
-MOP_CLASSIC_HEROIC_PACK = createHeader({
+local MOP_CLASSIC_HEROIC_PACK = createHeader({
 	readable = "MoP Classic Sha-Infused Heroic Pack",
 	icon = [[~_.asset("Expansion_MOP")]],
 	text = {
@@ -146,7 +146,7 @@ MOP_CLASSIC_HEROIC_PACK = createHeader({
 		tw = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
 	},
 });
-WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
+local WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 	readable = "WoW 15th Anniversary Collector's Edition",
 	icon = [[~_.asset("Expansion_CLASSIC")]],
 	text = {
@@ -176,7 +176,7 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 		tw = "這些獎勵是提供給購買了魔獸世界15週年典藏版的玩家的。",
 	},
 });
-DIABLO_III = createHeader({
+local DIABLO_III = createHeader({
 	readable = "Diablo III",
 	icon = 1529348,
 	text = {
@@ -198,7 +198,7 @@ DIABLO_III = createHeader({
 		tw = "這些獎勵是提供給購買了暗黑破壞神III典藏版的玩家的。",
 	},
 });
-DIABLO_III_REAPER_OF_SOULS = createHeader({
+local DIABLO_III_REAPER_OF_SOULS = createHeader({
 	readable = "Diablo III: Reaper of Souls",
 	icon = 1529348,
 	text = {
@@ -242,7 +242,7 @@ DIABLO_IV = createHeader({
 		tw = "這些獎勵是提供給購買了暗黑破壞神IV基礎版的玩家的。",
 	},
 });
-DIABLO_IV_LORD_OF_HATRED = createHeader({
+local DIABLO_IV_LORD_OF_HATRED = createHeader({
 	readable = "Diablo IV: Lord of Hatred",
 	icon = 1529348,
 	text = {
@@ -264,7 +264,7 @@ DIABLO_IV_LORD_OF_HATRED = createHeader({
 		tw = "這些獎勵是提供給購買了暗黑破壞神IV：憎恨之王標準版的玩家的。",
 	},
 });
-DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK = createHeader({
+local DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK = createHeader({
 	readable = "Diablo II: Resurrected - Reign of Warlock",
 	icon = 1529348,
 	text = {
@@ -286,7 +286,7 @@ DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK = createHeader({
 		tw = "這些獎勵是提供給購買了暗黑破壞神II：獄火重生 ─ 術士軍臨的玩家的。",
 	},
 });
-OVERWATCH_ORIGINS = createHeader({
+local OVERWATCH_ORIGINS = createHeader({
 	readable = "Overwatch: Origins",
 	icon = 1303199,
 	text = {
@@ -308,7 +308,7 @@ OVERWATCH_ORIGINS = createHeader({
 		tw = "這些獎勵是提供給購買了鬥陣特攻：啟元版的玩家的。",
 	},
 });
-STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
+local STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
 	readable = "Starcraft II: Wings of Liberty",
 	icon = 254885,
 	text = {
@@ -330,7 +330,7 @@ STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
 		tw = "這些獎勵是提供給購買了星海爭霸II：自由之翼典藏版的玩家的。",
 	},
 });
-STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
+local STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
 	readable = "Starcraft II: Heart of the Swarm",
 	icon = 656595,
 	text = {
@@ -352,7 +352,7 @@ STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
 		tw = "這些獎勵是提供給購買了星海爭霸II：蟲族之心典藏版的玩家的。",
 	},
 });
-STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
+local STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
 	readable = "Starcraft II: Legacy of the Void",
 	icon = 1125916,
 	text = {
@@ -374,7 +374,7 @@ STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
 		tw = "這些獎勵是提供給購買了星海爭霸II：虛空之遺典藏版的玩家的。",
 	},
 });
-WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
+local WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 	readable = "Warcraft III Spoils of War Edition",
 	icon = 1041991,
 	text = {
@@ -430,7 +430,7 @@ WORLD_OF_WARCRAFT_FOREVER_COLLECTORS = createHeader({
 });
 -- NOTE: Released on September 12, 2026. (BlizzCon 2026)
 -- NOTE: No longer available on the store since January 11, 2027.
-WARCRAFT_FOREVER_COLLECTION = createHeader({
+local WARCRAFT_FOREVER_COLLECTION = createHeader({
 	readable = "Warcraft Forever Collection",
 	icon = 1120721,
 	text = {

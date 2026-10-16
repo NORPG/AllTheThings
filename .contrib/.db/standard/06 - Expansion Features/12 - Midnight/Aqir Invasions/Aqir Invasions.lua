@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-AQIR_INVASIONS = createHeader({
+local AQIR_INVASIONS = createHeader({
 	readable = "Aqir Invasions",
 	icon = 463478,
 	text = {

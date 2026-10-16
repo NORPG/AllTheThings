@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-CHETT = createHeader({
+local CHETT = createHeader({
 	readable = "C.H.E.T.T.",
 	constant = "CHETT",
 	icon = 134391,

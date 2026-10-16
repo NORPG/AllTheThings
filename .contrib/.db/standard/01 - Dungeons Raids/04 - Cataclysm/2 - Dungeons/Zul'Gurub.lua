@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache of Madness.
+local CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache of Madness.
 	readable = "Cache of Madness",
 	icon = 441139,
 	text = {

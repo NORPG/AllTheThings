@@ -1,7 +1,7 @@
 -------------------------------------
 --     T R A D I N G   P O S T     --
 -------------------------------------
-TRADING_POST_CATEGORY = createHeader({
+local TRADING_POST_CATEGORY = createHeader({
 	readable = "Trading Post",
 	icon = [[~_.asset("Category_TradingPost")]],
 	constant = "TRADING_POST_CATEGORY",
@@ -26,7 +26,7 @@ assignRootCategoryHeader(95, ROOTS.TradingPost, TRADING_POST_CATEGORY, {
 	isMinilistHeader = true,
 });
 
-FILLED_TRAVELERS_LOG = createHeader({
+local FILLED_TRAVELERS_LOG = createHeader({
 	readable = "Filled Travelers Log",
 	icon = 4696085,
 	text = {

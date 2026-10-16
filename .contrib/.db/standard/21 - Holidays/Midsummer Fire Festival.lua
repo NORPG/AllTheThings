@@ -72,7 +72,7 @@ local HORDE_BONFIRE_OBJECT_DATA = {
 };
 
 local ObjectDB = ObjectDB;
-function abonfire(questID, t)
+local function abonfire(questID, t)
 	t = q(questID, t);
 	t.races = ALLIANCE_ONLY;
 	t.isYearly = true;
@@ -87,7 +87,7 @@ function abonfire(questID, t)
 	end
 	return t;
 end
-function hbonfire(questID, t)
+local function hbonfire(questID, t)
 	t = q(questID, t);
 	t.races = HORDE_ONLY;
 	t.isYearly = true;
@@ -102,7 +102,7 @@ function hbonfire(questID, t)
 	end
 	return t;
 end
-function honortheflame(questID, t)
+local function honortheflame(questID, t)
 	t = q(questID, t);
 	t.isYearly = true;
 	return t;

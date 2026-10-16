@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-THE_GREAT_GNOMEREGAN_RUN_HEADER = createHeader({
+local THE_GREAT_GNOMEREGAN_RUN_HEADER = createHeader({
 	readable = "The Great Gnomeregan Run",
 	constant = "THE_GREAT_GNOMEREGAN_RUN_HEADER",
 	icon = [[~_.asset("Holiday_GnomeRun")]],

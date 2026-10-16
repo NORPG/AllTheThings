@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-WARPWOOD_QUARTER = createHeader({
+local WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
 	icon = 236292,
 	text = {
@@ -22,7 +22,7 @@ WARPWOOD_QUARTER = createHeader({
 		tw = "副本的這部分可以從最東邊的傳送門進入。（右側）",
 	},
 });
-GORDOK_COMMONS = createHeader({
+local GORDOK_COMMONS = createHeader({
 	readable = "Gordok Commons",
 	icon = 236695,
 	text = {
@@ -42,7 +42,7 @@ GORDOK_COMMONS = createHeader({
 		tw = "副本的這部分可以從最北邊的傳送門進入。",
 	},
 });
-CAPITAL_GARDENS = createHeader({
+local CAPITAL_GARDENS = createHeader({
 	readable = "Capital Gardens",
 	icon = 134162,
 	text = {

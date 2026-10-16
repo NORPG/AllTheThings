@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- #if AFTER 7.1.0.22908
-DIABLO_EVENTS = createHeader({
+local DIABLO_EVENTS = createHeader({
 	readable = "Diablo Events",
 	icon = 1529348,
 	text = {
@@ -20,7 +20,7 @@ DIABLO_EVENTS = createHeader({
 		tw = "暗黑破壞神活動",
 	},
 });
-DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
+local DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
 	readable = "Diablo 20th Anniversary",
 	icon = 1529344,
 	text = {
@@ -37,7 +37,7 @@ DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
 		tw = "《暗黑破壞神》20週年慶",
 	},
 });
-GREEDY_EMISSARY_EVENT = createHeader({
+local GREEDY_EMISSARY_EVENT = createHeader({
 	readable = "A Greedy Emissary",
 	icon = 5160585,
 	eventID = EVENTS.A_GREEDY_EMISSARY,

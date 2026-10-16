@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-TITANFORGED_PROMOTIONS = createHeader({
+local TITANFORGED_PROMOTIONS = createHeader({
 	readable = "Titanforged Promotions",
 	icon = [[~_.asset("Expansion_MN")]],
 	text = {
@@ -25,7 +25,7 @@ TITANFORGED_PROMOTIONS = createHeader({
 	--	cn = "这些促销活动均发生在《至暗之夜》作为最新资料片的时期。以下按活动首次出现的时间顺序列出",
 	},
 });
-CN_PROMOTIONS_CLASSIC = createHeader({
+local CN_PROMOTIONS_CLASSIC = createHeader({
 	readable = "CN Promotions (Classic)",
 	icon = [[~_.asset("Expansion_WOTLK")]],
 	text = {

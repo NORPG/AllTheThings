@@ -4,7 +4,7 @@
 -- #if BEFORE 4.0.3
 -- CRIEVE NOTE: This document is only relevant to Classic.
 -- I wanted to add Weapon Masters to the zones without polluting the main files.
-WEAPON_SKILL_BOWS = {
+local WEAPON_SKILL_BOWS = {
 	["recipeID"] = 264,	-- Bows
 	["classes"] = {
 		HUNTER,
@@ -12,7 +12,7 @@ WEAPON_SKILL_BOWS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_CROSSBOWS = {
+local WEAPON_SKILL_CROSSBOWS = {
 	["recipeID"] = 5011,	-- Crossbows
 	["classes"] = {
 		HUNTER,
@@ -20,7 +20,7 @@ WEAPON_SKILL_CROSSBOWS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_DAGGERS = {
+local WEAPON_SKILL_DAGGERS = {
 	["recipeID"] = 1180,	-- Daggers
 	["classes"] = {
 		DRUID,
@@ -33,7 +33,7 @@ WEAPON_SKILL_DAGGERS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_FIST_WEAPONS = {
+local WEAPON_SKILL_FIST_WEAPONS = {
 	["recipeID"] = 15590,	-- Fist Weapons
 	["classes"] = {
 		DEMONHUNTER,
@@ -45,7 +45,7 @@ WEAPON_SKILL_FIST_WEAPONS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_GUNS = {
+local WEAPON_SKILL_GUNS = {
 	["recipeID"] = 266,	-- Guns
 	["classes"] = {
 		HUNTER,
@@ -53,7 +53,7 @@ WEAPON_SKILL_GUNS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_ONE_HANDED_AXES = {
+local WEAPON_SKILL_ONE_HANDED_AXES = {
 	["recipeID"] = 196,	-- One-Handed Axes
 	["classes"] = {
 		DEATHKNIGHT,
@@ -68,7 +68,7 @@ WEAPON_SKILL_ONE_HANDED_AXES = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_ONE_HANDED_MACES = {
+local WEAPON_SKILL_ONE_HANDED_MACES = {
 	["recipeID"] = 198,	-- One-Handed Maces
 	["classes"] = {
 		DEATHKNIGHT,
@@ -81,7 +81,7 @@ WEAPON_SKILL_ONE_HANDED_MACES = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_ONE_HANDED_SWORDS = {
+local WEAPON_SKILL_ONE_HANDED_SWORDS = {
 	["recipeID"] = 201,	-- One-Handed Swords
 	["classes"] = {
 		DEATHKNIGHT,
@@ -95,7 +95,7 @@ WEAPON_SKILL_ONE_HANDED_SWORDS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_POLEARMS = {
+local WEAPON_SKILL_POLEARMS = {
 	["recipeID"] = 200,	-- Polearms
 	["classes"] = {
 		DEATHKNIGHT,
@@ -108,7 +108,7 @@ WEAPON_SKILL_POLEARMS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_STAVES = {
+local WEAPON_SKILL_STAVES = {
 	["recipeID"] = 227,	-- Staves
 	["classes"] = {
 		DRUID,
@@ -121,7 +121,7 @@ WEAPON_SKILL_STAVES = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_THROWN = {
+local WEAPON_SKILL_THROWN = {
 	["recipeID"] = 2567,	-- Thrown
 	["classes"] = {
 		HUNTER,
@@ -129,7 +129,7 @@ WEAPON_SKILL_THROWN = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_TWO_HANDED_AXES = {
+local WEAPON_SKILL_TWO_HANDED_AXES = {
 	["recipeID"] = 197,	-- Two-Handed Axes
 	["classes"] = {
 		DEATHKNIGHT,
@@ -149,7 +149,7 @@ WEAPON_SKILL_TWO_HANDED_AXES = {
 	end]],
 	-- #endif
 };
-WEAPON_SKILL_TWO_HANDED_MACES = {
+local WEAPON_SKILL_TWO_HANDED_MACES = {
 	["recipeID"] = 199,	-- Two-Handed Maces
 	["classes"] = {
 		DEATHKNIGHT,
@@ -169,7 +169,7 @@ WEAPON_SKILL_TWO_HANDED_MACES = {
 	end]],
 	-- #endif
 };
-WEAPON_SKILL_TWO_HANDED_SWORDS = {
+local WEAPON_SKILL_TWO_HANDED_SWORDS = {
 	["recipeID"] = 202,	-- Two-Handed Swords
 	["classes"] = {
 		DEATHKNIGHT,
@@ -178,7 +178,7 @@ WEAPON_SKILL_TWO_HANDED_SWORDS = {
 		WARRIOR,
 	},
 };
-WEAPON_SKILL_WANDS = {
+local WEAPON_SKILL_WANDS = {
 	["recipeID"] = 5009,	-- Wands
 	["classes"] = {
 		MAGE,

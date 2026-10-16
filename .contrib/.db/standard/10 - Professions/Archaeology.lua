@@ -1,4 +1,4 @@
-ARCHAEOLOGY_ARAKKOA = createHeader({
+local ARCHAEOLOGY_ARAKKOA = createHeader({
 	readable = "Archaeology: Arakkoa",
 	icon = 441139,
 	text = {
@@ -6,7 +6,7 @@ ARCHAEOLOGY_ARAKKOA = createHeader({
 		cn = "考古学：鸦人",
 	},
 });
-ARCHAEOLOGY_DEMONIC = createHeader({
+local ARCHAEOLOGY_DEMONIC = createHeader({
 	readable = "Archaeology: Demonic",
 	icon = 441139,
 	text = {
@@ -14,7 +14,7 @@ ARCHAEOLOGY_DEMONIC = createHeader({
 		cn = "考古学：恶魔",
 	},
 });
-ARCHAEOLOGY_DRAENORCLANS = createHeader({
+local ARCHAEOLOGY_DRAENORCLANS = createHeader({
 	readable = "Archaeology: Draenor Clans",
 	icon = 441139,
 	text = {
@@ -22,7 +22,7 @@ ARCHAEOLOGY_DRAENORCLANS = createHeader({
 		cn = "考古学：德拉诺氏族",
 	},
 });
-ARCHAEOLOGY_DRUST = createHeader({
+local ARCHAEOLOGY_DRUST = createHeader({
 	readable = "Archaeology: Drust",
 	icon = 441139,
 	text = {
@@ -30,7 +30,7 @@ ARCHAEOLOGY_DRUST = createHeader({
 		cn = "考古学：德鲁斯特",
 	},
 });
-ARCHAEOLOGY_HIGHBORNE = createHeader({
+local ARCHAEOLOGY_HIGHBORNE = createHeader({
 	readable = "Archaeology: Highborne",
 	icon = 441139,
 	text = {
@@ -38,7 +38,7 @@ ARCHAEOLOGY_HIGHBORNE = createHeader({
 		cn = "考古学：上层精灵",
 	},
 });
-ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
+local ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
 	readable = "Archaeology: Highmountain",
 	icon = 441139,
 	text = {
@@ -46,7 +46,7 @@ ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
 		cn = "考古学：至高岭牛头人",
 	},
 });
-ARCHAEOLOGY_MANTID = createHeader({
+local ARCHAEOLOGY_MANTID = createHeader({
 	readable = "Archaeology: Mantid",
 	icon = 441139,
 	text = {
@@ -54,7 +54,7 @@ ARCHAEOLOGY_MANTID = createHeader({
 		cn = "考古学：螳螂妖",
 	},
 });
-ARCHAEOLOGY_MOGU = createHeader({
+local ARCHAEOLOGY_MOGU = createHeader({
 	readable = "Archaeology: Mogu",
 	icon = 441139,
 	text = {
@@ -62,7 +62,7 @@ ARCHAEOLOGY_MOGU = createHeader({
 		cn = "考古学：魔古",
 	},
 });
-ARCHAEOLOGY_OGRE = createHeader({
+local ARCHAEOLOGY_OGRE = createHeader({
 	readable = "Archaeology: Ogre",
 	icon = 441139,
 	text = {
@@ -70,7 +70,7 @@ ARCHAEOLOGY_OGRE = createHeader({
 		cn = "考古学：食人魔",
 	},
 });
-ARCHAEOLOGY_PANDAREN = createHeader({
+local ARCHAEOLOGY_PANDAREN = createHeader({
 	readable = "Archaeology: Pandaren",
 	icon = 441139,
 	text = {
@@ -78,7 +78,7 @@ ARCHAEOLOGY_PANDAREN = createHeader({
 		cn = "考古学：熊猫人",
 	},
 });
-ARCHAEOLOGY_ZANDALARI = createHeader({
+local ARCHAEOLOGY_ZANDALARI = createHeader({
 	readable = "Archaeology: Zandalari",
 	icon = 441139,
 	text = {

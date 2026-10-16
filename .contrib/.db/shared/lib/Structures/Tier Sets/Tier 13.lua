@@ -1,4 +1,4 @@
-TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
+local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 	cl(WARRIOR, {
 		-- DPS
 		i(78783, {	-- Colossal Dragonplate Helmet
@@ -329,7 +329,7 @@ TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		}),
 	}),
 };
-TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
+local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 	cl(WARRIOR, {
 		-- DPS
 		i(76983, {	-- Colossal Dragonplate Helmet
@@ -660,7 +660,7 @@ TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		}),
 	}),
 };
-TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
+local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 	cl(WARRIOR, {
 		-- DPS
 		i(78688, {	-- Colossal Dragonplate Helmet
@@ -991,7 +991,7 @@ TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		}),
 	}),
 };
-TIER_THIRTEEN_COMMON_GROUPS = {
+local TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77162),	-- Arrowflick Gauntlets
 	i(77109),	-- Band of Reconstruction
 	i(77095),	-- Batwing Cloak

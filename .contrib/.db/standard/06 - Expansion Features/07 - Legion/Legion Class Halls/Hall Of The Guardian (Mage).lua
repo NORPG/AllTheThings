@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-DAILY_EVENT_ROLL = createHeader({
+local DAILY_EVENT_ROLL = createHeader({
 	readable = "Daily Event Roll",
 	icon = 1031536,
 	text = {

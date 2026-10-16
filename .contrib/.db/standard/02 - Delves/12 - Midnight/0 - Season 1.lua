@@ -2,7 +2,7 @@
 --          D E L V E S      M O D U L E         --
 ---------------------------------------------------
 
-DELVES_MID_S1 = createHeader({
+local DELVES_MID_S1 = createHeader({
 	readable = "Delves MID S1",
 	icon = 1604168,
 	text = {

@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-PLUNDERSTORM = createHeader({
+local PLUNDERSTORM = createHeader({
 	readable = "Plunderstorm",
 	-- #if AFTER 8.0.1
 	icon = 2055032,
@@ -38,7 +38,7 @@ PLUNDERSTORM = createHeader({
 	},
 });
 
-PLUNDERSTORE = createHeader({
+local PLUNDERSTORE = createHeader({
 	readable = "Plunderstore",
 	-- #if AFTER 11.0.7
 	icon = 6255014,

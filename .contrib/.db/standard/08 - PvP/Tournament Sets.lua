@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-TOURNAMENT_GEAR = createHeader({
+local TOURNAMENT_GEAR = createHeader({
 	readable = "Tournament Gear",
 	icon = 1582146,
 	text = {

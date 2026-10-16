@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-ABYSS_ANGLERS = createHeader({
+local ABYSS_ANGLERS = createHeader({
 	readable = "Abyss Anglers",
 	icon = 2027958,
 	text = {

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-DECOR_DUEL = createHeader({
+local DECOR_DUEL = createHeader({
 	readable = "Decor Duel",
 	icon = 1392559,
 	text = {

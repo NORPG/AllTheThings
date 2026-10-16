@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-EON_FRINGE = createHeader({
+local EON_FRINGE = createHeader({
 	readable = "Eon's Fringe",
 	icon = 2026009,
 	text = {

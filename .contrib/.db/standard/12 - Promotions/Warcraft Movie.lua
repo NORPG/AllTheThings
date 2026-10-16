@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-WARCRAFT_MOVIE = createHeader({
+local WARCRAFT_MOVIE = createHeader({
 	readable = "Warcraft Movie",
 	icon = 133885,
 	text = {

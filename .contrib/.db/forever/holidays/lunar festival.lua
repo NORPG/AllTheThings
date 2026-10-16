@@ -4,7 +4,7 @@
 
 -- https://www.wowhead.com/event=327/lunar-festival
 -- Since we can't use achievement headers for pre-3.0.2 period, we use these
-ELDERS_OF_EASTERN_KINGDOMS = createHeader({
+local ELDERS_OF_EASTERN_KINGDOMS = createHeader({
 	readable = "Elders of Eastern Kingdoms",
 	icon = 135982,	-- Elders of... Achievement icon
 	text = {
@@ -21,7 +21,7 @@ ELDERS_OF_EASTERN_KINGDOMS = createHeader({
 		tw = "東部王國的長者",
 	},
 });
-ELDERS_OF_KALIMDOR = createHeader({
+local ELDERS_OF_KALIMDOR = createHeader({
 	readable = "Elders of Kalimdor",
 	icon = 135982,	-- Elders of... Achievement icon
 	text = {
@@ -38,7 +38,7 @@ ELDERS_OF_KALIMDOR = createHeader({
 		tw = "卡林多的長者",
 	},
 });
-ELDERS_OF_THE_ALLIANCE = createHeader({
+local ELDERS_OF_THE_ALLIANCE = createHeader({
 	readable = "Elders of the Alliance",
 	icon = 135982,	-- Elders of... Achievement icon
 	text = {
@@ -55,7 +55,7 @@ ELDERS_OF_THE_ALLIANCE = createHeader({
 		tw = "聯盟的長者",
 	},
 });
-ELDERS_OF_THE_DUNGEONS = createHeader({
+local ELDERS_OF_THE_DUNGEONS = createHeader({
 	readable = "Elders of the Dungeons",
 	icon = 135982,	-- Elders of... Achievement icon
 	text = {
@@ -72,7 +72,7 @@ ELDERS_OF_THE_DUNGEONS = createHeader({
 		tw = "地城中的長者",
 	},
 });
-ELDERS_OF_THE_HORDE = createHeader({
+local ELDERS_OF_THE_HORDE = createHeader({
 	readable = "Elders of the Horde",
 	icon = 135982,	-- Elders of... Achievement icon
 	text = {

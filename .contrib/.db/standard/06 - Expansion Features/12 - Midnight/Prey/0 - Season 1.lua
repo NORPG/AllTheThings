@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-PREY_MID_S1 = createHeader({
+local PREY_MID_S1 = createHeader({
 	readable = "Prey MID S1",
 	icon = [[~_.asset("Category_Prey")]],
 	text = {

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-GRAND_HUNTS = createHeader({
+local GRAND_HUNTS = createHeader({
 	readable = "Grand Hunts",
 	icon = 4622465,
 	text = {

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-BURDEN_OF_ETERNITY = createHeader({
+local BURDEN_OF_ETERNITY = createHeader({
 	readable = "Burden of Eternity",
 	icon = 775461,
 	text = {

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-MAIN_GATE = createHeader({
+local MAIN_GATE = createHeader({
 	readable = "Main Gate",
 	icon = 134503,
 	text = {
@@ -29,7 +29,7 @@ MAIN_GATE = createHeader({
 		cn = "斯坦索姆分为两侧。\n\n这一侧通常被称为“活人”侧或“血色”侧，现已被血色十字军占据。",
 	},
 });
-SERVICE_ENTRANCE = createHeader({
+local SERVICE_ENTRANCE = createHeader({
 	readable = "Service Entrance",
 	icon = 134247,
 	text = {

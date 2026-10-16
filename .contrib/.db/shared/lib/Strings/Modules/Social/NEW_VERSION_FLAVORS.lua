@@ -1,6 +1,6 @@
 -- Build a list of all of the Version Flavors and provide localization for each line.
 local textData = {};
-function addVersionFlavor(localeData)
+local function addVersionFlavor(localeData)
 	for locale,data in pairs(localeData) do
 		local str = "\"" .. data .. "\"";
 		local flavor = textData[locale];

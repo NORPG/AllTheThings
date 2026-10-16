@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-CALL_OF_THE_SCARAB_HEADER = createHeader({
+local CALL_OF_THE_SCARAB_HEADER = createHeader({
 	readable = "Call of the Scarab",
 	constant = "CALL_OF_THE_SCARAB_HEADER",
 	icon = [[~_.asset("Holiday_call_of_the_scarab")]],

@@ -6,7 +6,7 @@ local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
 
-DF_RARE_ROTATION = createHeader({
+local DF_RARE_ROTATION = createHeader({
 	readable = "DF Rare Rotation",
 	icon = 237274,
 	text = {

@@ -1,4 +1,4 @@
-COMMON_BFA_PVP_RECIPES_S1 = pvp(applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+local COMMON_BFA_PVP_RECIPES_S1 = pvp(applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	i(163024, {	-- Design: Honorable Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 		["cost"] = {{ "i", MOH, 2 }},
 	}),
@@ -204,7 +204,7 @@ COMMON_BFA_PVP_RECIPES_S1 = pvp(applyclassicphase(BFA_PHASE_ONE, sharedData({ ["
 		["cost"] = {{ "i", MOH, 4 }},
 	}),
 })));
-COMMON_BFA_PVP_RECIPES_S2 = pvp(applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_1_0 } }, {
+local COMMON_BFA_PVP_RECIPES_S2 = pvp(applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_1_0 } }, {
 	i(165308, {	-- Design: Sinister Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 		["cost"] = {{ "i", MOH, 2 }},
 	}),

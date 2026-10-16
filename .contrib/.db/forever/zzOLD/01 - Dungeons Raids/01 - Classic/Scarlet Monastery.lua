@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
+local SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
 	readable = "Graveyard",
 	icon = 133730,
 	text = {
@@ -19,7 +19,7 @@ SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
 		tw = "墓地",
 	},
 });
-SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
+local SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
 	readable = "Library",
 	icon = 133745,
 	text = {
@@ -36,7 +36,7 @@ SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
 		tw = "圖書館",
 	},
 });
-SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
+local SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
 	readable = "Armory",
 	icon = 133127,
 	text = {
@@ -53,7 +53,7 @@ SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
 		tw = "武器庫",
 	},
 });
-SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
+local SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 	readable = "Cathedral",
 	icon = 133101,
 	text = {

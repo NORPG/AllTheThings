@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-ZALAZANES_FALL = createHeader({
+local ZALAZANES_FALL = createHeader({
 	readable = "Zalazane's Fall",
 	icon = 255135,
 	text = {

@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-THE_OPENING_OF_THE_DARK_PORTAL = createHeader({
+local THE_OPENING_OF_THE_DARK_PORTAL = createHeader({
 	readable = "The Opening of the Dark Portal",
 	icon = 255348,
 	text = {

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-SNIFFENSEEKING = createHeader({
+local SNIFFENSEEKING = createHeader({
 	readable = "Sniffenseeking",
 	icon = 648644,
 	text = {

@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-THE_AHNQIRAJ_WAR_EFFORT = createHeader({
+local THE_AHNQIRAJ_WAR_EFFORT = createHeader({
 	readable = "The Ahn'Qiraj War Effort",
 	icon = 132594,
 	text = {

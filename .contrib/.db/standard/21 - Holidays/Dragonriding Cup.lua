@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-DRAGONRIDING_CUP_ROOT = createHeader({
+local DRAGONRIDING_CUP_ROOT = createHeader({
 	readable = "Dragonriding Cup",
 	constant = "DRAGONRIDING_CUP_HEADER",
 	icon = [[~_.asset("Holiday_RaceCup")]],
@@ -34,7 +34,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 		tw = "天空騎術競速",
 	},
 });
-BROKEN_ISLES_CUP_HEADER = createHeader({
+local BROKEN_ISLES_CUP_HEADER = createHeader({
 	readable = "Broken Isles Cup",
 	constant = "BROKEN_ISLES_HEADER",
 	icon = [[~_.asset("Holiday_BrokenCup")]],
@@ -53,7 +53,7 @@ BROKEN_ISLES_CUP_HEADER = createHeader({
 		tw = "破碎群島杯",
 	},
 });
-EASTERN_KINGDOMS_CUP_HEADER = createHeader({
+local EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	readable = "Eastern Kingdoms Cup",
 	constant = "EASTERN_KINGDOMS_CUP_HEADER",
 	icon = [[~_.asset("Holiday_EastCup")]],
@@ -72,7 +72,7 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 		tw = "東部王國杯",
 	},
 });
-KALIMDOR_CUP_HEADER = createHeader({
+local KALIMDOR_CUP_HEADER = createHeader({
 	readable = "Kalimdor Cup",
 	constant = "KALIMDOR_CUP_HEADER",
 	icon = [[~_.asset("Holiday_KalCup")]],
@@ -91,7 +91,7 @@ KALIMDOR_CUP_HEADER = createHeader({
 		tw = "卡林多杯",
 	},
 });
-NORTHREND_CUP_HEADER = createHeader({
+local NORTHREND_CUP_HEADER = createHeader({
 	readable = "Northrend Cup",
 	constant = "NORTHREND_CUP_HEADER",
 	icon = [[~_.asset("Holiday_NorthCup")]],
@@ -110,7 +110,7 @@ NORTHREND_CUP_HEADER = createHeader({
 		tw = "北裂境杯",
 	},
 });
-OUTLAND_CUP_HEADER = createHeader({
+local OUTLAND_CUP_HEADER = createHeader({
 	readable = "Outland Cup",
 	constant = "OUTLAND_CUP_HEADER",
 	icon = [[~_.asset("Holiday_OutCup")]],
@@ -129,7 +129,7 @@ OUTLAND_CUP_HEADER = createHeader({
 		tw = "外域杯",
 	},
 });
-PANDARIA_CUP_HEADER = createHeader({
+local PANDARIA_CUP_HEADER = createHeader({
 	readable = "Pandaria Cup",
 	constant = "PANDARIA_CUP_HEADER",
 	icon = [[~_.asset("Holiday_PandaCup")]],

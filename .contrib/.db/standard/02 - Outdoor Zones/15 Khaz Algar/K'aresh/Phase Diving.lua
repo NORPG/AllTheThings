@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-PHASE_CONDUITS = createHeader({
+local PHASE_CONDUITS = createHeader({
 	readable = "Phase Conduits",
 	icon = 6654410,
 	text = {

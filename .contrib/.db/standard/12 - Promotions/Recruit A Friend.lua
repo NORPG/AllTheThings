@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- #if AFTER 2.3.0
-RECRUIT_A_FRIEND = createHeader({
+local RECRUIT_A_FRIEND = createHeader({
 	readable = "Recruit A Friend",
 	icon = 236688,
 	text = {

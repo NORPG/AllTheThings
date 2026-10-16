@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-PEAK_OF_SERENITY = createHeader({
+local PEAK_OF_SERENITY = createHeader({
 	readable = "Peak of Serenity",
 	icon = 606547,
 	text = {

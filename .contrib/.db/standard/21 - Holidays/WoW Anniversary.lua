@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- #if AFTER 3.0.2
-WOW_ANNIVERSARY_ROOT = createHeader({
+local WOW_ANNIVERSARY_ROOT = createHeader({
 	readable = "WoW's Anniversary",
 	icon = 133783,
 	eventID = EVENTS.WOW_ANNIVERSARY,
@@ -39,7 +39,7 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 		tw = "這是一個每年重複的活動，發生在十一月初到年底之間。",
 	},
 });
-GUEST_RELATIONS = createHeader({
+local GUEST_RELATIONS = createHeader({
 	readable = "Guest Relations",
 	constant = "GUEST_RELATIONS",
 	icon = [[~_.asset("Holiday_SecretsAz")]],
@@ -57,7 +57,7 @@ GUEST_RELATIONS = createHeader({
 		tw = "公關",
 	},
 });
-WOW_ANNIVERSARY_FOUR = createHeader({
+local WOW_ANNIVERSARY_FOUR = createHeader({
 	readable = "WoW's 4th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
@@ -65,7 +65,7 @@ WOW_ANNIVERSARY_FOUR = createHeader({
 		en = WOWAPI_GetAchievementName(2398),
 	},
 });
-WOW_ANNIVERSARY_FIVE = createHeader({
+local WOW_ANNIVERSARY_FIVE = createHeader({
 	readable = "WoW's 5th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
@@ -73,7 +73,7 @@ WOW_ANNIVERSARY_FIVE = createHeader({
 		en = WOWAPI_GetAchievementName(4400),
 	},
 });
-WOW_ANNIVERSARY_SIX = createHeader({
+local WOW_ANNIVERSARY_SIX = createHeader({
 	readable = "WoW's 6th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
@@ -81,7 +81,7 @@ WOW_ANNIVERSARY_SIX = createHeader({
 		en = WOWAPI_GetAchievementName(5512),
 	},
 });
-WOW_ANNIVERSARY_SEVEN = createHeader({
+local WOW_ANNIVERSARY_SEVEN = createHeader({
 	readable = "WoW's 7th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
@@ -89,7 +89,7 @@ WOW_ANNIVERSARY_SEVEN = createHeader({
 		en = WOWAPI_GetAchievementName(5863),
 	},
 });
-WOW_ANNIVERSARY_EIGHT = createHeader({
+local WOW_ANNIVERSARY_EIGHT = createHeader({
 	readable = "WoW's 8th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
@@ -97,7 +97,7 @@ WOW_ANNIVERSARY_EIGHT = createHeader({
 		en = WOWAPI_GetAchievementName(6131),
 	},
 });
-WOW_ANNIVERSARY_NINE = createHeader({
+local WOW_ANNIVERSARY_NINE = createHeader({
 	readable = "WoW's 9th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
@@ -105,7 +105,7 @@ WOW_ANNIVERSARY_NINE = createHeader({
 		en = WOWAPI_GetAchievementName(7853),
 	},
 });
-WOW_ANNIVERSARY_TEN = createHeader({
+local WOW_ANNIVERSARY_TEN = createHeader({
 	readable = "WoW's 10th Anniversary",
 	icon = 133783,
 	eventID = 514,
@@ -118,7 +118,7 @@ WOW_ANNIVERSARY_TEN = createHeader({
 		en = WOWAPI_GetAchievementName(8820),
 	},
 });
-WOW_ANNIVERSARY_ELEVEN = createHeader({
+local WOW_ANNIVERSARY_ELEVEN = createHeader({
 	readable = "WoW's 11th Anniversary",
 	icon = 133783,
 	eventID = 566,
@@ -131,7 +131,7 @@ WOW_ANNIVERSARY_ELEVEN = createHeader({
 		en = WOWAPI_GetAchievementName(10058),
 	},
 });
-WOW_ANNIVERSARY_TWELVE = createHeader({
+local WOW_ANNIVERSARY_TWELVE = createHeader({
 	readable = "WoW's 12th Anniversary",
 	icon = 133783,
 	eventID = 589,
@@ -144,7 +144,7 @@ WOW_ANNIVERSARY_TWELVE = createHeader({
 		en = WOWAPI_GetAchievementName(10741),
 	},
 });
-WOW_ANNIVERSARY_THIRTEEN = createHeader({
+local WOW_ANNIVERSARY_THIRTEEN = createHeader({
 	readable = "WoW's 13th Anniversary",
 	icon = 133783,
 	eventID = 693,
@@ -157,7 +157,7 @@ WOW_ANNIVERSARY_THIRTEEN = createHeader({
 		en = WOWAPI_GetAchievementName(11848),
 	},
 });
-WOW_ANNIVERSARY_FOURTEEN = createHeader({
+local WOW_ANNIVERSARY_FOURTEEN = createHeader({
 	readable = "WoW's 14th Anniversary",
 	icon = 133783,
 	eventID = 807,
@@ -170,7 +170,7 @@ WOW_ANNIVERSARY_FOURTEEN = createHeader({
 		en = WOWAPI_GetAchievementName(12827),
 	},
 });
-WOW_ANNIVERSARY_FIFTEEN = createHeader({
+local WOW_ANNIVERSARY_FIFTEEN = createHeader({
 	readable = "WoW's 15th Anniversary",
 	icon = 133783,
 	eventID = 808,
@@ -183,7 +183,7 @@ WOW_ANNIVERSARY_FIFTEEN = createHeader({
 		en = WOWAPI_GetAchievementName(13917),
 	},
 });
-WOW_ANNIVERSARY_SIXTEEN = createHeader({
+local WOW_ANNIVERSARY_SIXTEEN = createHeader({
 	readable = "WoW's 16th Anniversary",
 	icon = 133783,
 	eventID = 1181,
@@ -196,7 +196,7 @@ WOW_ANNIVERSARY_SIXTEEN = createHeader({
 		en = WOWAPI_GetAchievementName(14271),
 	},
 });
-WOW_ANNIVERSARY_SEVENTEEN = createHeader({
+local WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 	readable = "WoW's 17th Anniversary",
 	icon = 133783,
 	eventID = 1225,
@@ -209,7 +209,7 @@ WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 		en = WOWAPI_GetAchievementName(14942),
 	},
 });
-WOW_ANNIVERSARY_EIGHTEEN = createHeader({
+local WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 	readable = "WoW's 18th Anniversary",
 	icon = 133783,
 	eventID = 1262,
@@ -222,7 +222,7 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 		en = WOWAPI_GetAchievementName(15218),
 	},
 });
-WOW_ANNIVERSARY_NINETEEN = createHeader({
+local WOW_ANNIVERSARY_NINETEEN = createHeader({
 	readable = "WoW's 19th Anniversary",
 	icon = 133783,
 	eventID = 1397,
@@ -235,7 +235,7 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 		en = WOWAPI_GetAchievementName(18702),
 	},
 });
-WOW_ANNIVERSARY_TWENTY = createHeader({
+local WOW_ANNIVERSARY_TWENTY = createHeader({
 	readable = "WoW's 20th Anniversary",
 	icon = 133783,
 	eventID = 1509,

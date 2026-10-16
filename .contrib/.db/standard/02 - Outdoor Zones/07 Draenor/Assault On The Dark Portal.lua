@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-ASSAULT_ON_THE_DARK_PORTAL = createHeader({
+local ASSAULT_ON_THE_DARK_PORTAL = createHeader({
 	readable = "Assault on the Dark Portal",
 	icon = 255348,
 	text = {

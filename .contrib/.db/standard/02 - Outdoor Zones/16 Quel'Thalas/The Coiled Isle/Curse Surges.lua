@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-CURSE_SURGES = createHeader({
+local CURSE_SURGES = createHeader({
 	readable = "Curse Surges",
 	icon = 5764921,
 	text = {

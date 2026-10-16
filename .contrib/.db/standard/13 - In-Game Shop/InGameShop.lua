@@ -2,7 +2,7 @@
 --     I N - G A M E   S H O P     --
 -------------------------------------
 -- #if AFTER 2.0.1
-IN_GAME_SHOP = createHeader({
+local IN_GAME_SHOP = createHeader({
 	readable = "In-Game Shop",
 	constant = "IN_GAME_SHOP",
 	icon = [[~_.asset("Category_InGameShop")]],

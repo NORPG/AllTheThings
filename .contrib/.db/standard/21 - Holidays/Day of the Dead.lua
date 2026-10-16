@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-DAY_OF_THE_DEAD_HEADER = createHeader({
+local DAY_OF_THE_DEAD_HEADER = createHeader({
 	readable = "Day of the Dead",
 	constant = "DAY_OF_THE_DEAD_HEADER",
 	icon = [[~_.asset("Holiday_Day_of_the_Dead")]],

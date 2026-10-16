@@ -1,7 +1,7 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-WARBAND = createHeader({
+local WARBAND = createHeader({
 	readable = "Warband",
 	icon = 4203076,
 	text = {

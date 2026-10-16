@@ -1,7 +1,7 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-PET_BATTLE_DUNGEONS = createHeader({
+local PET_BATTLE_DUNGEONS = createHeader({
 	readable = "Pet Battle Dungeons",
 	icon = [[~_.asset("Pet_Dungeon")]],
 	text = {

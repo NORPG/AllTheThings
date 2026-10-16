@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-ELEMENTAL_INVASIONS = createHeader({
+local ELEMENTAL_INVASIONS = createHeader({
 	readable = "Elemental Invasions",
 	icon = 135793,
 	text = {

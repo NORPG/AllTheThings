@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- #if NOT CLASSIC_ANNIVERSARY
-SPIRIT_OF_COMPETITION = createHeader({
+local SPIRIT_OF_COMPETITION = createHeader({
 	readable = "Spirit of Competition",
 	icon = 133278,
 	text = {

@@ -2,7 +2,7 @@
 --     S E C R E T S  M O D U L E       --
 --------------------------------------------
 
-SECRETS_OF_AZEROTH_HEADER = createHeader({
+local SECRETS_OF_AZEROTH_HEADER = createHeader({
 	readable = "Secrets of Azeroth",
 	constant = "SECRETS_OF_AZEROTH_HEADER",
 	icon = [[~_.asset("Holiday_SecretsAz")]],
@@ -21,7 +21,7 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 		tw = "艾澤拉斯秘聞",
 	},
 });
-COMMUNITY_CLUES_HEADER = createHeader({
+local COMMUNITY_CLUES_HEADER = createHeader({
 	readable = "Community Clues",
 	constant = "COMMUNITY_CLUES_HEADER",
 	icon = [[~_.asset("Holiday_SecretsAz")]],

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-DIVERGENT = createHeader({
+local DIVERGENT = createHeader({
 	readable = "Divergent",
 	icon = 4630469,
 	text = {

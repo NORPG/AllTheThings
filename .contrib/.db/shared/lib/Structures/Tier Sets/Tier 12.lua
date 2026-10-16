@@ -1,4 +1,4 @@
-TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
+local TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 	cl(WARRIOR, {
 		-- DPS
 		i(71070),	-- Helmet of the Molten Giant
@@ -139,7 +139,7 @@ TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 		i(71104),	-- Obsidian Arborweave Legwraps
 	}),
 };
-TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
+local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(WARRIOR, {
 		-- DPS
 		i(71599, {	-- Helmet of the Molten Giant
@@ -641,7 +641,7 @@ TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 		}),
 	}),
 };
-TIER_TWELVE_COMMON_GROUPS = {
+local TIER_TWELVE_COMMON_GROUPS = {
 	i(71213),	-- Amulet of Burning Brilliance
 	i(71264),	-- Bracers of Forked Lightning
 	i(71260),	-- Bracers of Imperious Truths

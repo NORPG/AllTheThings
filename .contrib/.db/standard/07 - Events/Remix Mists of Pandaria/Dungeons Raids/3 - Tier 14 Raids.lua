@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-TIER_14_RAIDS = createHeader({
+local TIER_14_RAIDS = createHeader({
 	readable = "Tier 14 Raids",
 	constant = "TIER_14_RAIDS",
 	minilist_ignore = true,

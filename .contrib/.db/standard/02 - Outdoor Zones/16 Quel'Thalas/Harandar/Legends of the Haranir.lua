@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-LEGENDS_OF_THE_HARANIR = createHeader({
+local LEGENDS_OF_THE_HARANIR = createHeader({
 	readable = "Legends of the Haranir",
 	icon = 7491037,
 	text = {

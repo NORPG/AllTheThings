@@ -15,7 +15,7 @@ RAID_FINDER_VENDOR = createHeader({
 		tw = "隨機團隊商人",
 	},
 });
-RAID_FLEXIBLE_VENDOR = createHeader({
+local RAID_FLEXIBLE_VENDOR = createHeader({
 	readable = "Flexible Raid Vendor",
 	icon = [[~_.asset("Category_CommonBossDrop")]],
 	text = {
@@ -66,7 +66,7 @@ RAID_HEROIC_VENDOR = createHeader({
 		tw = "英雄模式商人",
 	},
 });
-RAID_MYTHIC_VENDOR = createHeader({
+local RAID_MYTHIC_VENDOR = createHeader({
 	readable = "Mythic Raid Vendor",
 	icon = 311237,
 	text = {

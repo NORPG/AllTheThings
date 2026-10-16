@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
+local STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	readable = "Stranglethorn Fishing Extravaganza",
 	icon = [[_.asset("Holiday_STV_Fishing")]],
 	eventID = EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA,

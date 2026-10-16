@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-WHELP_DAYCARE = createHeader({
+local WHELP_DAYCARE = createHeader({
 	readable = "Little Scales Daycare",
 	constant = "WHELP_DAYCARE",
 	export = true,

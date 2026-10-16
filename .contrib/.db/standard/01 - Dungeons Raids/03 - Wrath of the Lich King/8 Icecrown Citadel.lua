@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-STORMING_THE_CITADEL = createHeader({
+local STORMING_THE_CITADEL = createHeader({
 	readable = "Storming the Citadel",
 	icon = 343640,
 	text = {
@@ -19,7 +19,7 @@ STORMING_THE_CITADEL = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_PLAGUEWORKS = createHeader({
+local THE_PLAGUEWORKS = createHeader({
 	readable = "The Plagueworks",
 	icon = 342919,
 	text = {
@@ -36,14 +36,14 @@ THE_PLAGUEWORKS = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_CRIMSON_HALLS = createHeader({
+local THE_CRIMSON_HALLS = createHeader({
 	readable = "The Crimson Halls",
 	icon = 341981,
 	text = {
 		en = [[~C_Map.GetAreaInfo(4892)]],
 	},
 });
-THE_FROSTWING_HALLS = createHeader({
+local THE_FROSTWING_HALLS = createHeader({
 	readable = "The Frostwing Halls",
 	icon = 343638,
 	text = {

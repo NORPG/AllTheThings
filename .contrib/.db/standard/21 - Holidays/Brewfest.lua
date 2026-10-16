@@ -3,7 +3,7 @@
 --------------------------------------------
 
 -- #if AFTER 2.2.2
-BREWFEST_HEADER = createHeader({
+local BREWFEST_HEADER = createHeader({
 	readable = "Brewfest",
 	constant = "BREWFEST_HEADER",
 	icon = [[~_.asset("Holiday_brewfest")]],
@@ -33,7 +33,7 @@ BREWFEST_HEADER = createHeader({
 		-- #endif
 	},
 });
-BREWFEST_BANQUET = createHeader({
+local BREWFEST_BANQUET = createHeader({
 	readable = "Brewfest Banquet",
 	constant = "BREWFEST_BANQUET",
 	icon = [[~_.asset("Holiday_brewfest")]],

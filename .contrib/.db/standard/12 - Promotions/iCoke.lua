@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-ICOKE_PROMOTION = createHeader({
+local ICOKE_PROMOTION = createHeader({
 	readable = "iCoke",
 	-- #if AFTER 5.4.2
 	icon = 461806,

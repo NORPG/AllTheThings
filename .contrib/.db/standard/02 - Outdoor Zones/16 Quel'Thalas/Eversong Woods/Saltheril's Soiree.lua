@@ -5,7 +5,7 @@
 local LATENT_ARCANA = 3394;
 local BRIMMING_ARCANA = 3379;
 
-SALTHERILS_HAVEN = createHeader({
+local SALTHERILS_HAVEN = createHeader({
 	readable = "Saltheril's Soiree",
 	icon = 132809,
 	text = {

@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-HEARTHSTONE = createHeader({
+local HEARTHSTONE = createHeader({
 	readable = "Hearthstone",
 	icon = 134414,
 	text = {
@@ -23,7 +23,7 @@ HEARTHSTONE = createHeader({
 		cn = "在《炉石传说》中赢得3场比赛即可获得这些奖励的资格。\n\n这款游戏是免费的，快去下载吧！\n\n注意：这要感谢 IceQ1337！",
 	},
 });
-HEARTHSTONE_MERCENARIES_MODE = createHeader({
+local HEARTHSTONE_MERCENARIES_MODE = createHeader({
 	readable = "Hearthstone Mercenaries",
 	icon = 134414,
 	text = {
@@ -44,7 +44,7 @@ HEARTHSTONE_MERCENARIES_MODE = createHeader({
 		cn = "完成《炉石传说》佣兵战纪模式的教学，并派遣你的队伍执行一次任务，即可获得此奖励。",
 	},
 });
-HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
+local HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 	readable = "Hearthstone's 10th Anniversary",
 	icon = 134414,
 	text = {

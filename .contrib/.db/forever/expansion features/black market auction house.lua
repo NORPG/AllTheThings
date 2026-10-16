@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --     B L A C K   M A R K E T   A U C T I O N   H O U S E       --
 -------------------------------------------------------------------
-BLACK_MARKET_AUCTION_HOUSE = createHeader({
+local BLACK_MARKET_AUCTION_HOUSE = createHeader({
 	readable = "Black Market Auction House",
 	icon = [[~_.asset("Category_Blackmarket")]],
 	constant = "BLACK_MARKET_AUCTION_HOUSE",
@@ -53,12 +53,12 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			--[[
 			filter(MOUNTS, {
-				
+
 			}),
 			filter(SHIRTS, {
-				
+
 			}),
-			]]-- 
+			]]--
 			filter(TABARDS, {
 				i(23705),	-- Tabard of Flame
 			}),

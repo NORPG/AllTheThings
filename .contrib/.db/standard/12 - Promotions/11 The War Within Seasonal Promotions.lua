@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
+local THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 	readable = "The War Within Seasonal Promotions",
 	icon = [[~_.asset("Expansion_TWW")]],
 	text = {
@@ -26,7 +26,7 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 		tw = "這些促銷活動均發生在《地心之戰》作為最新資料片的時期。\n\n以下按活動首次出現的時間順序列出。",
 	},
 });
-STEELSERIES = createHeader({
+local STEELSERIES = createHeader({
 	readable = "SteelSeries",
 	icon = 133015,
 	text = {
@@ -49,7 +49,7 @@ STEELSERIES = createHeader({
 		cn = "赛睿《魔兽世界》限量版系列促销活动。",
 	},
 });
-RAZER = createHeader({
+local RAZER = createHeader({
 	readable = "Razer",
 	icon = 132529,
 	text = {

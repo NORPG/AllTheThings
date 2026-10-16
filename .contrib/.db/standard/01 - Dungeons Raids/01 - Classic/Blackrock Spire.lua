@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-LOWER_BLACKROCK_SPIRE = createHeader({
+local LOWER_BLACKROCK_SPIRE = createHeader({
 	readable = "Hordemar City (Lower)",
 	icon = 236429,
 	text = {
@@ -15,7 +15,7 @@ LOWER_BLACKROCK_SPIRE = createHeader({
 		cn = "又称黑石塔下层。",
 	},
 });
-UPPER_BLACKROCK_SPIRE = createHeader({
+local UPPER_BLACKROCK_SPIRE = createHeader({
 	readable = "Dragonspire Hall (Upper)",
 	icon = 134153,
 	text = {

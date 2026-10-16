@@ -2,7 +2,7 @@
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
 
-MAIL_DELIVERY_RACES = createHeader({
+local MAIL_DELIVERY_RACES = createHeader({
 	readable = "Mail Delivery Races",
 	icon = 413580,
 	text = {

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-DAILY_DREAMWAY_EVENT_ROLL = createHeader({
+local DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	readable = "Daily Dreamway Event Roll",
 	standalone = true,
 	icon = 1128042,
@@ -33,7 +33,7 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 		-- TODO: tw = "",
 	},
 });
-DUSKWOOD_ACTIVE = createHeader({
+local DUSKWOOD_ACTIVE = createHeader({
 	readable = "Duskwood Active",
 	standalone = true,
 	icon = 236757,
@@ -64,7 +64,7 @@ DUSKWOOD_ACTIVE = createHeader({
 		-- TODO: tw = "",
 	},
 });
-FERALAS_ACTIVE = createHeader({
+local FERALAS_ACTIVE = createHeader({
 	readable = "Feralas Active",
 	standalone = true,
 	icon = 236764,
@@ -95,7 +95,7 @@ FERALAS_ACTIVE = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_HINTERLANDS_ACTIVE = createHeader({
+local THE_HINTERLANDS_ACTIVE = createHeader({
 	readable = "The Hinterlands Active",
 	standalone = true,
 	icon = 236780,
@@ -126,7 +126,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 		-- TODO: tw = "",
 	},
 });
-DUSKWOOD_ACTIVATED = createHeader({
+local DUSKWOOD_ACTIVATED = createHeader({
 	readable = "Duskwood Activated",
 	standalone = true,
 	icon = 236757,
@@ -157,7 +157,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 		-- TODO: tw = "",
 	},
 });
-FERALAS_ACTIVATED = createHeader({
+local FERALAS_ACTIVATED = createHeader({
 	readable = "Feralas Activated",
 	standalone = true,
 	icon = 236764,
@@ -188,7 +188,7 @@ FERALAS_ACTIVATED = createHeader({
 		-- TODO: tw = "",
 	},
 });
-THE_HINTERLANDS_ACTIVATED = createHeader({
+local THE_HINTERLANDS_ACTIVATED = createHeader({
 	readable = "The Hinterlands Activated",
 	icon = 236780,
 	standalone = true,

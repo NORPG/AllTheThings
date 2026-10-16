@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-TIMBERMAW_HOLD = createHeader({
+local TIMBERMAW_HOLD = createHeader({
 	readable = "Timbermaw Hold",
 	icon = 236696,
 	text = {

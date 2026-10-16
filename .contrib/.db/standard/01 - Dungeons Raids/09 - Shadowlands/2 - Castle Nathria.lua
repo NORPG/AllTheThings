@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-LEECHING_VAULTS_HEADER = createHeader({
+local LEECHING_VAULTS_HEADER = createHeader({
 	readable = "Leeching Vaults",
 	icon = 3614361,
 	text = {
@@ -14,7 +14,7 @@ LEECHING_VAULTS_HEADER = createHeader({
 		cn = "随机团队副本第一区，以猎手阿尔迪莫、饥饿的毁灭者和伊涅瓦·暗脉女勋爵为特色首领。",
 	},
 });
-RELIQUARY_OF_OPULENCE_HEADER = createHeader({
+local RELIQUARY_OF_OPULENCE_HEADER = createHeader({
 	readable = "Reliquary of Opulence",
 	icon = 3614361,
 	text = {
@@ -26,7 +26,7 @@ RELIQUARY_OF_OPULENCE_HEADER = createHeader({
 		cn = "随机团队副本第二区，以圣物匠赛·墨克斯、太阳之王的救赎和猩红议会为特色首领。",
 	},
 });
-BLOOD_FROM_STONE_HEADER = createHeader({
+local BLOOD_FROM_STONE_HEADER = createHeader({
 	readable = "Blood from Stone",
 	icon = 3614361,
 	text = {
@@ -38,7 +38,7 @@ BLOOD_FROM_STONE_HEADER = createHeader({
 		cn = "随机团队副本第三区，其中的首领包括啸翼、泥拳以及顽石军团干将。",
 	},
 });
-AUDIENCE_WITH_ARROGANCE_HEADER = createHeader({
+local AUDIENCE_WITH_ARROGANCE_HEADER = createHeader({
 	readable = "Audience with Arrogance",
 	icon = 3614361,
 	text = {

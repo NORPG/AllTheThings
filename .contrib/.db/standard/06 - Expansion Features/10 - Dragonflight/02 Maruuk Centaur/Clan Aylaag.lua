@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-CLAN_AYLAAG = createHeader({
+local CLAN_AYLAAG = createHeader({
 	readable = "Clan Aylaag",
 	icon = 3193420,
 	text = {

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-PILGRIMS_BOUNTY_HEADER = createHeader({
+local PILGRIMS_BOUNTY_HEADER = createHeader({
 	readable = "Pilgrim's Bounty",
 	constant = "PILGRIMS_BOUNTY_HEADER",
 	icon = [[~_.asset("Holiday_Pilgrim")]],

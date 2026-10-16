@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- #if NOT ANYCLASSIC
-SCROLL_OF_RESURRECTION = createHeader({
+local SCROLL_OF_RESURRECTION = createHeader({
 	readable = "Scroll of Resurrection",
 	icon = [[~_.asset("Promotion_Scroll_of_Rez")]],
 	text = {

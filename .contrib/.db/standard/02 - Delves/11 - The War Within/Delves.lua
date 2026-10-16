@@ -16,7 +16,7 @@ CURIO = createHeader({
 		en = WOWAPI_GetSpellName(456522),
 	},
 });
-DELVES_TWW_S1 = createHeader({
+local DELVES_TWW_S1 = createHeader({
 	readable = "Delves TWW S1",
 	icon = 1604168,
 	text = {
@@ -33,7 +33,7 @@ DELVES_TWW_S1 = createHeader({
 		tw = "地心之戰探究第一季",
 	},
 });
-DELVES_TWW_S2 = createHeader({
+local DELVES_TWW_S2 = createHeader({
 	readable = "Delves TWW S2",
 	icon = 1604168,
 	text = {
@@ -50,7 +50,7 @@ DELVES_TWW_S2 = createHeader({
 		tw = "地心之戰探究第二季",
 	},
 });
-DELVES_TWW_S3 = createHeader({
+local DELVES_TWW_S3 = createHeader({
 	readable = "Delves TWW S3",
 	icon = 1604168,
 	text = {

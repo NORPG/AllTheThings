@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-BLIZZCON = createHeader({
+local BLIZZCON = createHeader({
 	readable = "BlizzCon",
 	icon = [[~_.asset("Promotion_Blizzcon")]],
 	eventID = 1181,

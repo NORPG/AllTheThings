@@ -15,7 +15,7 @@ local function BarterCost(bricks, boulders)
 	};
 end
 
-BARTERING = createHeader({
+local BARTERING = createHeader({
 	readable = "Bartering",
 	icon = 413570,
 	text = {

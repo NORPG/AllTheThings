@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-MINIGAMES_HEADER = createHeader({
+local MINIGAMES_HEADER = createHeader({
 	readable = "Minigames",
 	icon = 134481,
 	text = {
@@ -32,7 +32,7 @@ MINIGAMES_HEADER = createHeader({
 		-- TODO: tw = "",
 	},
 });
-DARKMOON_DANCE_HEADER = createHeader({
+local DARKMOON_DANCE_HEADER = createHeader({
 	readable = "Darkmoon Dance",
 	icon = 348567,
 	text = {
@@ -62,7 +62,7 @@ DARKMOON_DANCE_HEADER = createHeader({
 		-- TODO: tw = "",
 	},
 });
-FIREBIRDS_CHALLENGE_HEADER = createHeader({
+local FIREBIRDS_CHALLENGE_HEADER = createHeader({
 	readable = "Firebird's Challenge",
 	icon = 514340,
 	text = {
@@ -92,7 +92,7 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 		-- TODO: tw = "",
 	},
 });
-SHOOTING_GALLERY_HEADER = createHeader({
+local SHOOTING_GALLERY_HEADER = createHeader({
 	readable = "Shooting Gallery",
 	icon = 135610,
 	text = {
@@ -122,7 +122,7 @@ SHOOTING_GALLERY_HEADER = createHeader({
 		-- TODO: tw = "",
 	},
 });
-WHACK_A_GNOLL_HEADER = createHeader({
+local WHACK_A_GNOLL_HEADER = createHeader({
 	readable = "Whack-a-Gnoll",
 	icon = 537060,
 	text = {

@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-THE_SCOURGE_INVASION = createHeader({
+local THE_SCOURGE_INVASION = createHeader({
 	readable = "The Scourge Invasion",
 	icon = 135228,
 	text = {

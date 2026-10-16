@@ -2,14 +2,14 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-HORRIFIC_VISIONS = createHeader({
+local HORRIFIC_VISIONS = createHeader({
 	readable = "Horrific Visions",
 	icon = [[~_.asset("Feature_Horrific Visions")]],
 	text = {
 		en = [[~SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE]],
 	},
 });
-LOST_AREA = createHeader({
+local LOST_AREA = createHeader({
 	readable = "Lost Area",
 	icon = 537021,
 	text = {
@@ -26,7 +26,7 @@ LOST_AREA = createHeader({
 		-- TODO: tw = "",
 	},
 });
-CORRUPTED_AREA = createHeader({
+local CORRUPTED_AREA = createHeader({
 	readable = "Corrupted Area",
 	icon = 136202,
 	text = {

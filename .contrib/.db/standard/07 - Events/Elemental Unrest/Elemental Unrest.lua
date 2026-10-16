@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-ELEMENTAL_UNREST = createHeader({
+local ELEMENTAL_UNREST = createHeader({
 	readable = "Elemental Unrest",
 	icon = [[~_.asset("Expansion_CATA")]],
 	text = {

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-PIRATES_DAY_HEADER = createHeader({
+local PIRATES_DAY_HEADER = createHeader({
 	readable = "Pirates' Day",
 	constant = "PIRATES_DAY_HEADER",
 	icon = [[~_.asset("Holiday_Pirate")]],

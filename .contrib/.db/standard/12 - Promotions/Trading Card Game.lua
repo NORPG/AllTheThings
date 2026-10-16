@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-TRADING_CARD_GAME = createHeader({
+local TRADING_CARD_GAME = createHeader({
 	readable = "Trading Card Game",
 	-- #if AFTER CATA
 	icon = 418250,

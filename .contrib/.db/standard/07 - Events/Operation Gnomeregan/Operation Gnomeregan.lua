@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-OPERATION_GNOMEREGAN = createHeader({
+local OPERATION_GNOMEREGAN = createHeader({
 	readable = "Operation: Gnomeregan",
 	icon = 255139,
 	text = {

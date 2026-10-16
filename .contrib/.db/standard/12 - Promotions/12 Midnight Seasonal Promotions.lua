@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
+local MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 	readable = "Midnight Seasonal Promotions",
 	icon = [[~_.asset("Expansion_MN")]],
 	text = {
@@ -26,7 +26,7 @@ MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 		tw = "這些促銷活動均發生在《至暗之夜》作為最新資料片的時期。以下按活動首次出現的時間順序列出。",
 	},
 });
-RAZER = createHeader({
+local RAZER = createHeader({
 	readable = "Razer Giveaway",
 	icon = 132529,
 	text = {
@@ -40,7 +40,7 @@ RAZER = createHeader({
 		cn = "雷蛇 ×《魔兽世界》坐骑抽奖活动，活动时间：2025年1月21日太平洋时间上午10:00至2026年1月31日太平洋时间晚上11:59，无需购买即可参与。",
 	},
 });
-FANTA = createHeader({
+local FANTA = createHeader({
 	readable = "Fanta Giveaway",
 	icon = 4672182,
 	text = {

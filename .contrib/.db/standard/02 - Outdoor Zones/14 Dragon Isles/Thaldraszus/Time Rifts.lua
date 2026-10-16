@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-TIME_RIFTS = createHeader({
+local TIME_RIFTS = createHeader({
 	readable = "Time Rift",
 	icon = 2026009,
 	text = {

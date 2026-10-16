@@ -2,7 +2,7 @@
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
 
-ENDEAVOR = createHeader({
+local ENDEAVOR = createHeader({
 	readable = "Endeavor",
 	icon = 134495,
 	text = {
@@ -10,7 +10,7 @@ ENDEAVOR = createHeader({
 		cn = "文化节",
 	},
 });
-AMANI_ENDEAVOR = createHeader({
+local AMANI_ENDEAVOR = createHeader({
 	readable = "Amani Endeavor",
 	icon = 7672957,
 	text = {
@@ -18,7 +18,7 @@ AMANI_ENDEAVOR = createHeader({
 		cn = "阿曼尼文化",
 	},
 });
-DRACONIC_ENDEAVOR = createHeader({
+local DRACONIC_ENDEAVOR = createHeader({
 	readable = "Draconic Endeavor",
 	icon = 7301738,
 	text = {
@@ -26,7 +26,7 @@ DRACONIC_ENDEAVOR = createHeader({
 		cn = "巨龙文化",
 	},
 });
-GRUMMLE_ENDEAVOR = createHeader({
+local GRUMMLE_ENDEAVOR = createHeader({
 	readable = "Grummle Endeavor",
 	icon = 7301740,
 	text = {
@@ -34,7 +34,7 @@ GRUMMLE_ENDEAVOR = createHeader({
 		cn = "土地精文化",
 	},
 });
-KARESHI_ENDEAVOR = createHeader({
+local KARESHI_ENDEAVOR = createHeader({
 	readable = "K'areshi Endeavor",
 	icon = 7413585,
 	text = {
@@ -42,7 +42,7 @@ KARESHI_ENDEAVOR = createHeader({
 		cn = "卡雷什文化",
 	},
 });
-KOBOLD_ENDEAVOR = createHeader({
+local KOBOLD_ENDEAVOR = createHeader({
 	readable = "Kobold Endeavor",
 	icon = 2061718,
 	text = {
@@ -50,7 +50,7 @@ KOBOLD_ENDEAVOR = createHeader({
 		cn = "狗头人文化",
 	},
 });
-MARUUKAI_ENDEAVOR = createHeader({
+local MARUUKAI_ENDEAVOR = createHeader({
 	readable = "Maruukai Endeavor",
 	icon = 4578413,
 	text = {
@@ -58,7 +58,7 @@ MARUUKAI_ENDEAVOR = createHeader({
 		cn = "马鲁凯文化",
 	},
 });
-MECHAGNOME_ENDEAVOR = createHeader({
+local MECHAGNOME_ENDEAVOR = createHeader({
 	readable = "Mechagnome Endeavor",
 	icon = 7301741,
 	text = {
@@ -66,7 +66,7 @@ MECHAGNOME_ENDEAVOR = createHeader({
 		cn = "机械侏儒文化",
 	},
 });
-NIFFEN_ENDEAVOR = createHeader({
+local NIFFEN_ENDEAVOR = createHeader({
 	readable = "Niffen Endeavor",
 	icon = 7413586,
 	text = {
@@ -74,7 +74,7 @@ NIFFEN_ENDEAVOR = createHeader({
 		cn = "鼹鼠人文化",
 	},
 });
-SINDOREI_ENDEAVOR = createHeader({
+local SINDOREI_ENDEAVOR = createHeader({
 	readable = "Sin'dorei Endeavor",
 	icon = 7301737,
 	text = {
@@ -82,7 +82,7 @@ SINDOREI_ENDEAVOR = createHeader({
 		cn = "辛多雷文化"
 	},
 });
-TORTOLLAN_ENDEAVOR = createHeader({
+local TORTOLLAN_ENDEAVOR = createHeader({
 	readable = "Tortollan Endeavor",
 	icon = 2065576,
 	text = {

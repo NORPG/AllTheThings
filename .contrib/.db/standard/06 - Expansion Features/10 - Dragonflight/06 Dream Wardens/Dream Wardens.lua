@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 local CURRENCY_DREAM_INFUSION = 2777;
-DREAM_INFUSION = createHeader({
+local DREAM_INFUSION = createHeader({
 	readable = "Dream Infusion",
 	icon = 1394953,
 	text = {

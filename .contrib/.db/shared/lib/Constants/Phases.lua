@@ -900,7 +900,7 @@ PHASE_FIVE_WAR = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "如果您的服务器上已开启安其拉之门，只需将其关闭即可。",		
+		cn = "如果您的服务器上已开启安其拉之门，只需将其关闭即可。",
 		-- TODO: tw = "",
 	},
 });

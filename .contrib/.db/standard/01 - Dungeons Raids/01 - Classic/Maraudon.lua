@@ -2,14 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-MARAUDON_PORTAL = createHeader({
+local MARAUDON_PORTAL = createHeader({
 	readable = "Maraudon Portal",
 	icon = 135743,
 	text = {
 		en = WOWAPI_GetSpellName(21127),
 	},
 });
-FOULSPORE_CAVERN = createHeader({
+local FOULSPORE_CAVERN = createHeader({
 	readable = "Foulspore Cavern",
 	icon = 134116,
 	text = {
@@ -21,7 +21,7 @@ FOULSPORE_CAVERN = createHeader({
 			-- #endif
 	},
 });
-WICKED_GROTTO = createHeader({
+local WICKED_GROTTO = createHeader({
 	readable = "The Wicked Grotto",
 	icon = 134075,
 	text = {

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-LEGENDARY_THE_BLACK_PRINCE = createHeader({
+local LEGENDARY_THE_BLACK_PRINCE = createHeader({
 	readable = "Legendary: The Black Prince",
 	icon = 656543,
 	text = {

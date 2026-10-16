@@ -163,7 +163,7 @@ local ZoneDropLoot = {
 	i(168798),	-- Trajectory Analysis
 };
 
-MECHAGON_JUNKYARD = createHeader({
+local MECHAGON_JUNKYARD = createHeader({
 	readable = "Junkyard",
 	icon = 321487,
 	text = {
@@ -180,7 +180,7 @@ MECHAGON_JUNKYARD = createHeader({
 		-- TODO: tw = "",
 	},
 });
-MECHAGON_WORKSHOP = createHeader({
+local MECHAGON_WORKSHOP = createHeader({
 	readable = "Workshop",
 	icon = 134240,
 	text = {

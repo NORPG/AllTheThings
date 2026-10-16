@@ -2,7 +2,7 @@
 --   P R O M O T I O N S   ( R E T A I L )   --
 -----------------------------------------------------
 
-CN_PROMOTIONS_RETAIL = createHeader({
+local CN_PROMOTIONS_RETAIL = createHeader({
 	readable = "CN Promotions (Retail)",
 	icon = [[~_.asset("Expansion_TWW")]],
 	text = {
@@ -19,6 +19,7 @@ CN_PROMOTIONS_RETAIL = createHeader({
 		cn = "这些促销活动仅限于中国服务器。",
 	},
 });
+
 root(ROOTS.Promotions, {
 	-- #if NOT ANYCLASSIC
 	cnONLY(n(CN_PROMOTIONS_RETAIL, {
