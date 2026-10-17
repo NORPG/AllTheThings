@@ -97,6 +97,9 @@ app:CreateWindow("Tradeskills", {
 	AllowCompleteSound = true,
 	HideFromSettings = true,
 	Preload = true,
+	Defaults = {
+		movable = false,
+	},
 	OnInit = function(self, handlers)
 		local C_TradeSkillUI_IsTradeSkillLinked, C_TradeSkillUI_IsTradeSkillGuild
 			= C_TradeSkillUI.IsTradeSkillLinked, C_TradeSkillUI.IsTradeSkillGuild

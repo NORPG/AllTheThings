@@ -95,6 +95,9 @@ app:CreateWindow("Tradeskills", {
 	AllowCompleteSound = true,
 	HideFromSettings = true,
 	Preload = true,
+	Defaults = {
+		movable = false,
+	},
 	OnInit = function(self, handlers)
 		self:SetMovable(false);
 		self:SetClampedToScreen(false);
