@@ -144,6 +144,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(271133, { ["timeline"] = { ADDED_12_1_5 } }),	-- Viperwind Idol
 				--Utility
 				i(249227),	-- Dundun's Favor
+				i(271135, { ["timeline"] = { ADDED_12_1_5 } }),	-- Dusty Loa Totem
 				i(249228),	-- Soul-Cracking Dreamcatcher
 				i(271130),	-- Venom Infusion
 			}),

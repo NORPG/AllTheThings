@@ -236,7 +236,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					},
 				}),
 				filter(MISC, {
-					i(271135),	-- Dusty Loa Totem
 					i(271156),	-- Stolen Artifact
 				}),
 			}),
@@ -284,6 +283,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					o(676625, {	-- Sturdy Chest
 						["coord"] = { 29.9, 74.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98608,
+					}),
+					o(676626, {	-- Sturdy Chest
+						["coord"] = { 27.3, 80.9, LABYRINTH_KINDOJAN },
+						["questID"] = 98609,
 					}),
 					o(676627, {	-- Sturdy Chest
 						["coord"] = { 26.9, 80.9, LABYRINTH_KINDOJAN },
@@ -372,6 +375,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 67.9, 27.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98629,
 					}),
+					o(676650, {	-- Sturdy Chest
+						["coord"] = { 65.4, 42.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98630,
+						["groups"] = { i(282427) },	-- Nalorakk's Ferocity
+					}),
 					o(676651, {	-- Sturdy Chest
 						["description"] = "This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",
 						["coords"] = {
@@ -379,6 +387,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{ 61.2, 44.8, LABYRINTH_KINDOJAN },	-- Sturdy Chest
 						},
 						["questID"] = 98631,
+					}),
+					o(676652, {	-- Sturdy Chest
+						["coord"] = { 64.7, 42.9, LABYRINTH_KINDOJAN },
+						["questID"] = 98632,
+						["groups"] = { i(283997) },	-- Ancient Hash'ey Battle Art: Ursine's Ironhide
 					}),
 					o(676653, {	-- Sturdy Chest
 						["coord"] = { 81.3, 55.0, LABYRINTH_KINDOJAN },

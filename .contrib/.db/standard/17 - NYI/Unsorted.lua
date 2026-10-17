@@ -75,7 +75,6 @@ root(ROOTS.Unsorted, {
 			i(282276),	-- Frost Revenant's Frost Fetish
 			i(282277),	-- Wood Haunter's Frost Fetish
 			i(282289),	-- Horrific Head of the Horseman
-			i(282427),	-- Nalorakk's Ferocity
 			i(282563),	-- Ice Walker's Bell-Scythe
 			i(282564),	-- Embered Bell-Scythe
 			i(282565),	-- Frost Revenant's Bell-Scythe
@@ -109,7 +108,6 @@ root(ROOTS.Unsorted, {
 			i(283993),	-- Cherry Lollibop
 			i(283994),	-- Spearmint Lollibop
 			i(283995),	-- Lemon Lollibop
-			i(283997),	-- Ancient Hash'ey Battle Art: Ursine's Ironhide
 			i(283998),	-- Ancient Hash'ey Battle Art: Eye of the Lynx
 			i(283999),	-- Wood Haunter's Belt
 			i(284000),	-- Wood Haunter's Helm
@@ -147,7 +145,6 @@ root(ROOTS.Unsorted, {
 			i(284032),	-- Frost Revenant's Gloves
 			i(284033),	-- Frost Revenant's Cloak
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
-			i(284194),	-- Everbloom Forest Floor
 			i(284212),	-- Technique: Apple Bobbing Bucket
 			i(284213),	-- Pattern: Spidery Witch Hat
 			i(284216),	-- Mysterious Imported Piranha
@@ -161,21 +158,6 @@ root(ROOTS.Unsorted, {
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
 			i(284402),	-- Valdrakken Resupply Coin
-			i(284462),	-- Arching Crimson Ivy
-			i(284464),	-- Twisted Crimson Root
-			i(284466),	-- Drustvar Glowcap Cluster
-			i(284468),	-- Short Crimson Oak Stump
-			i(284470),	-- Withered Barrow-weed
-			i(284472),	-- Drustvar Shelfcap
-			i(284474),	-- Snowbound Highroad Pine
-			i(284476),	-- Lush Drustvar Witchfern
-			i(284478),	-- Withered Crimson Oak
-			i(284480),	-- Tall Crimson Oak
-			i(284482),	-- Scarlet Drustvar Oak
-			i(284484),	-- Scarlet Drustvar Thornwood
-			i(284486),	-- Short Drustvar Oak Stump
-			i(284488),	-- Drustvar Leaf Patch
-			i(284490),	-- Drustvar Leaf Clump
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament

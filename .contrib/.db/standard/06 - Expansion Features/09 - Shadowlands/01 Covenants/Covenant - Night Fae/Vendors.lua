@@ -940,25 +940,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
 				["coord"] = { 49.4, 54.4, THE_ROOTS },
 			}),
-			n(175419, {	-- Lunelle <Decor Specialist>
-				["coord"] = { 46.6, 56.6, THE_TRUNK },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_12_1_5 } }, {
-					i(281670, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Anima-Infused Dreamcatcher (DECOR!)
-					i(283267, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Celestial Grovebush (DECOR!)
-					i(283341, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Dormant Wildseed (DECOR!)
-					i(282714, { ["cost"] = { { "c", ANIMA, 300 } } }),	-- Fae Anima Wall Lantern (DECOR!)
-					i(282327, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Fae Animashroom (DECOR!)
-					i(283385, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Fae Animashroom Circle (DECOR!)
-					i(283273, { ["cost"] = { { "c", ANIMA, 300 } } }),	-- Fae Moonbough Table (DECOR!)
-					i(283379, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Hanging Wildgrove Ivy (DECOR!)
-					i(283383, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Leaning Celestial Orchid (DECOR!)
-					i(283381, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Lush Celestial Moonbough (DECOR!)
-					i(283285, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Lush Wildgrove Fern (DECOR!)
-					i(283262, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Restored Night Fae Sigil (DECOR!)
-					i(283339, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Starseed Sapling (DECOR!)
-					i(283281, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Wildgrove Leaf Pile (DECOR!)
-				}),
-			}),
 			n(175418, {	-- Mar'lan <Night Fae Armor Trader>
 				["coord"] = { 45.9, 56.4, THE_TRUNK },
 				["sym"] = { { "select", "itemID",

@@ -21,6 +21,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155814),	-- Timmy Gene Sunrise Pork
 				},
 			}),
+			n(274690, {	-- Fenwir <Botanist>
+				["coord"] = { 37.8, 49.0, DRUSTVAR },
+				["timeline"] = { ADDED_12_1_5 },
+				["groups"] = {
+					i(284462, { ["cost"] = { { "c", WAR_RESOURCES, 100 } } }),	-- Arching Crimson Ivy (DECOR!)
+					i(284466, { ["cost"] = { { "c", WAR_RESOURCES, 100 } } }),	-- Drustvar Glowcap Cluster (DECOR!)
+					i(284490, { ["cost"] = { { "c", WAR_RESOURCES, 10 } } }),	-- Drustvar Leaf Clump (DECOR!)
+					i(284488, { ["cost"] = { { "c", WAR_RESOURCES, 10 } } }),	-- Drustvar Leaf Patch (DECOR!)
+					i(284472, { ["cost"] = { { "c", WAR_RESOURCES, 10 } } }),	-- Drustvar Shelfcap (DECOR!)
+					i(284476, { ["cost"] = { { "c", WAR_RESOURCES, 150 } } }),	-- Lush Drustvar Witchfern (DECOR!)
+					i(284482, { ["cost"] = { { "c", WAR_RESOURCES, 150 } } }),	-- Scarlet Drustvar Oak (DECOR!)
+					i(284484, { ["cost"] = { { "c", WAR_RESOURCES, 150 } } }),	-- Scarlet Drustvar Thornwood (DECOR!)
+					i(284468, { ["cost"] = { { "c", WAR_RESOURCES, 100 } } }),	-- Short Crimson Oak Stump (DECOR!)
+					i(284486, { ["cost"] = { { "c", WAR_RESOURCES, 100 } } }),	-- Short Drustvar Oak Stump (DECOR!)
+					i(284474, { ["cost"] = { { "c", WAR_RESOURCES, 150 } } }),	-- Snowbound Highroad Pine (DECOR!)
+					i(284480, { ["cost"] = { { "c", WAR_RESOURCES, 150 } } }),	-- Tall Crimson Oak (DECOR!)
+					i(284464, { ["cost"] = { { "c", WAR_RESOURCES, 100 } } }),	-- Twisted Crimson Root (DECOR!)
+					i(284470, { ["cost"] = { { "c", WAR_RESOURCES, 75 } } }),	-- Withered Barrow-weed (DECOR!)
+					i(284478, { ["cost"] = { { "c", WAR_RESOURCES, 150 } } }),	-- Withered Crimson Oak (DECOR!)
+				},
+			}),
 			n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 				["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
 				["coord"] = { 52.2, 31.6, DRUSTVAR },

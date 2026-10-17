@@ -79,6 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(ARCHMAGE),
 				BossOnly(YALNU, {
 					ach(9044),	-- The Everbloom
+					i(284194, { ["timeline"] = { ADDED_12_1_5 } }),	-- Everbloom Forest Floor (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
