@@ -36,9 +36,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(797),	-- Treasure Hound <Name>
 				}),
 				ach(63724),	-- Knock Knock
-				ach(63715, {	-- Let Me Solo Him: Kindo'jan
+				ach(63715, bubbleDownSelf({ ["timeline"] = { "removed 12.1.5.99999" } }, {	-- Let Me Solo Him: Kindo'jan
 					i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
-				}),
+				})),
 				ach(63718, {	-- Lock and Key
 					["description"] = "Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty.",
 					["coords"] = {
